@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "source_commit": "0975ed5e42dede34661d001da88a3441cea1c7cc",
+  "source_commit": "14a4908e5af5562cd997c8b65277b811248c9f0c",
   "working_tree_dirty": true,
-  "generated_at": "2026-09-23T06:33:04Z",
-  "generation_id": "f7127959363ca3939c4c0ff3a6c88fe3fad9d8901d0df41182101874ebd2567d",
+  "generated_at": "2026-09-24T01:30:30Z",
+  "generation_id": "20637f7c7fbd5c938f945a9fcf91399c59480cfdccfd02e1098abd15deb0a8a7",
   "analysis": {
     "version": "syntax-1",
     "digest": "277e322054c030f72811f774ad4e959bcf8d1244bfb70c076e298cf824ccdc3c"
@@ -1089,15 +1089,15 @@
         "path": "apps/local-server/src/providers/chatgptResponsesImageExecutor.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "ddc6263363ee26d7841ecf6b50ca3e59263a061f92a07865ed998b40a165cd69",
-        "size": 17415
+        "digest": "b12117b7aa3ea2e764393b10b6b70f28c528132ecb5c3c2d46e1c0203ff37762",
+        "size": 17587
       },
       {
         "path": "apps/local-server/src/providers/codexProvider.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "aab8f84c496703191c7cc22062bed80b382d428e4dcb29eca3e548a4763b631e",
-        "size": 12971
+        "digest": "243f91acb30b7f8744afa60ab3e44a4ac2a714bdd145a847d2ee2ef73c75d48f",
+        "size": 14515
       },
       {
         "path": "apps/local-server/src/providers/codexProvider.ts",
@@ -1320,8 +1320,8 @@
         "path": "apps/local-server/src/providers/openaiImageInput.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "38300ae865ce445b276de7f5ba6c3f88679c24645c32e42bd6513b23377398bf",
-        "size": 5344
+        "digest": "ce019fc4e94595bf153c570f6fdbfca0bd8294ebad5a865fddbf172bda1bd77b",
+        "size": 5417
       },
       {
         "path": "apps/local-server/src/providers/providerExecutionDefaults.test.ts",
@@ -2300,8 +2300,8 @@
         "path": "components/recipes/StyleCollectionsLandingSurface.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "efb393ef90ee8e388057e453924e8a9a94e97f360cc2435eace9c7e12de9ad23",
-        "size": 48914
+        "digest": "7099c9223c93fea2d96ffd18ba13d9542de68d836fe3eca9b121e349bcd7fed6",
+        "size": 48930
       },
       {
         "path": "components/recipes/StylePresetCardSurface.test.tsx",
@@ -2321,8 +2321,8 @@
         "path": "components/recipes/StylePresetCatalogSearchSurface.test.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "cee1fd5c42d9b04de93cd59586434018bd93b6dc0fc40a5c5a5b6b0567e36f45",
-        "size": 4673
+        "digest": "21e46ccb4a7d844e843bdcfffbeabb193449135bfc39a4cfb88fe644c1d9300d",
+        "size": 4809
       },
       {
         "path": "components/recipes/StylePresetCatalogSearchSurface.tsx",
@@ -2342,8 +2342,8 @@
         "path": "components/recipes/StylesBrowser.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "39e8fc9d96734e1e22dea58be785f49007113ff2b543284e5166bbc3d5125801",
-        "size": 110870
+        "digest": "977e381a39e45cf8814a2a2ef4e89d7ba7569eccc0fa0c357599b07e2c771468",
+        "size": 118213
       },
       {
         "path": "components/recipes/StylesRecipe.tsx",
@@ -2372,6 +2372,13 @@
         "state": "present",
         "digest": "f83a9b30f052a6f373c20d6a2455f2d06942c2c0b4b302629370573c855825bc",
         "size": 273
+      },
+      {
+        "path": "components/recipes/archivedStylePresets.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "1b68bd64e04882e506d0670f236328c83577e6ca7b8b422a9247fd9493f3652c",
+        "size": 6371
       },
       {
         "path": "components/recipes/compactStyleCatalog.test.ts",
@@ -2447,8 +2454,8 @@
         "path": "components/recipes/styleCurationBoundary.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "52c9aa6e69c36bb3e47e5946cd289f0fa4b98c980443d2dd95b9e8435ddcd64c",
-        "size": 7580
+        "digest": "c38f8089ea515b3e75eb7a577ae9ee65971a623ef9c01cab8f52268da4d1601f",
+        "size": 9059
       },
       {
         "path": "components/recipes/styleGridVirtualization.test.ts",
@@ -2619,11 +2626,25 @@
         "size": 634
       },
       {
+        "path": "components/recipes/stylePresetCatalogData.pack_22.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "fae07270a827a11b570131dd4493e487afce638fd0886020721453565b457da1",
+        "size": 634
+      },
+      {
+        "path": "components/recipes/stylePresetCatalogData.pack_23.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "bdcf70b691874b86a1f988901e188203a61128fb51dbdd934e65ffe7d05aac20",
+        "size": 634
+      },
+      {
         "path": "components/recipes/stylePresetCatalogData.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "00fa737c633880b8d8c0e5cf50f801d813313dac110b07acc027ca88dc017668",
-        "size": 5635
+        "digest": "050b053ba707336402bd3151fde1986b23d3287e85a513a5bb2d6e68b8cb7cb0",
+        "size": 5931
       },
       {
         "path": "components/recipes/stylePresetCatalogSearchData.ts",
@@ -2636,15 +2657,15 @@
         "path": "components/recipes/stylePresetCatalogYaml.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "81e1463b2c5b2ab02eeca35bbc17378502d83e45ea2cd55e784f5f40a8aed4ef",
-        "size": 2403
+        "digest": "ba11985ec3322820d63daab18c8c6ed99ba7b45fe992a7960520301b306d0202",
+        "size": 2478
       },
       {
         "path": "components/recipes/stylePresetManifests.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "b16cdfc966c764113fa5a379e08adb9b73f9d47f9f4b797ee7a1d6e3d142d122",
-        "size": 21742
+        "digest": "a6b8ade7db7c9209105037a731b39d5760043297afc4bfc1bccd7e87c8efd13b",
+        "size": 23501
       },
       {
         "path": "components/recipes/stylePresetManifests.ts",
@@ -2664,8 +2685,8 @@
         "path": "components/recipes/styleRuntimeData.generated.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "c3891f449b73cdba1c01e2636cbc96d2df8066ea5b6e0c6271dd970ee822fab3",
-        "size": 8873
+        "digest": "4d7f7aeda1df1b409d214d40c473977ff8dc5db82371cf41acc193f20819d82a",
+        "size": 9882
       },
       {
         "path": "components/recipes/styleRuntimePackRequirements.test.ts",
@@ -2755,8 +2776,8 @@
         "path": "components/recipes/styleRuntimePacks.generated/pack_02/caricature-and-cartoon-styles-6.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "6d01f40b439b5da9fcbba669e9ae555ba2235fd68ef67cb35af9a2506c7a1dd0",
-        "size": 177950
+        "digest": "eba1dcebb5848e9dc18792859126f16b5001898474562ea4080baba6a230bcd2",
+        "size": 99325
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_02/film-genres-1.ts",
@@ -2783,8 +2804,8 @@
         "path": "components/recipes/styleRuntimePacks.generated/pack_02/photography-eras-4.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "ac74e34570763023478d3a872192086e241706acc75ac2f954b4f4770843e25b",
-        "size": 59094
+        "digest": "f6619a6094fd6944c0240d7c8c6eb8c7e9a4650f1a2af1f707c186c7d8b4915d",
+        "size": 61538
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_02/sensor-and-technical-imaging-7.ts",
@@ -2923,36 +2944,36 @@
         "path": "components/recipes/styleRuntimePacks.generated/pack_05/action-motion-setpieces-5.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "48977652fe703f5c02dc24c5548e9628fd3d92c8030078c725651c56e3923116",
-        "size": 30842
+        "digest": "543dee47b1a4c08f09ebea7aec33300630bf0090978566c121580de0e779f758",
+        "size": 14742
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_05/dark-fantasy-and-seinen-4.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "85d8315a9e624601597eeac6e11bcf4fda3969acd8065afcd57705258df3c928",
-        "size": 165855
+        "digest": "2703a29554db6a3b3db06967101e83a26cc351b3baa8a83943faf51c1a38823f",
+        "size": 141050
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_05/isekai-and-high-fantasy-3.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "7d2a537faf947f2b5f77b8a5772b4cc949de82ccc5b11e98497f6d8dbfd0ae1a",
-        "size": 181232
+        "digest": "6d1237ee257d50b1dc0a7c46b6ccfdfc2b48fc89e088ddab9e30bbd0c50de3a5",
+        "size": 62474
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_05/mecha-and-cyberpunk-2.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "32e3ff32b64ffe6f7590f2c2e3ae2a5b57e355410fde598f5d3cb8ec614bc4e2",
-        "size": 161868
+        "digest": "77f77c0b6ef75c45c370c618b0802ce0498853e2df439a009aee861aec5f004c",
+        "size": 68257
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_05/modern-shonen-and-action-1.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "45140a04163859dfe93bfa2b58d73f18ed87fe41be0b0119b678295984f75731",
-        "size": 238111
+        "digest": "dbdf5ff50ac6cd97372c21164b5d694ad1e93b4b69b3249677ce8387d04478ec",
+        "size": 139917
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_06.ts",
@@ -3091,8 +3112,8 @@
         "path": "components/recipes/styleRuntimePacks.generated/pack_08/fantasy-sci-fi-costume-4.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "d54b5bc7b70905869e53c99186598953dc5e1bd5d958aa68ba8fceffd2abcfb2",
-        "size": 96220
+        "digest": "59893479254973be2e56ea0e30671d18346c469f72a3b729bda65973415db812",
+        "size": 44754
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_08/historical-and-fantasy-3.ts",
@@ -3350,8 +3371,8 @@
         "path": "components/recipes/styleRuntimePacks.generated/pack_13/anime-style-spectrum-5.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "8988da1d722675f5c1c6cac6242ad717c5c2572d727cbbe4086235e125d3c937",
-        "size": 193202
+        "digest": "600ee35f05f9362c9505afee1ba43e8ac80438ae721954882ad2f5137591738d",
+        "size": 109761
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_13/core-anime-1.ts",
@@ -3364,15 +3385,15 @@
         "path": "components/recipes/styleRuntimePacks.generated/pack_13/shojo-magical-girl-and-visionary-classics-3.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "f64f9d96e9267466cf766ec8e4ad72e1daed873d8f728ec44266525872d57c18",
-        "size": 187909
+        "digest": "2d114d1f321fcd0394ad64995bbe03031f69b1747f865ca55326e3f264c7ec40",
+        "size": 77856
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_13/slice-of-life-and-moe-4.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "7765aabfbeaef024c93e7b2d74d91d0836c26244fe284c4be1476ea8d983d5ee",
-        "size": 130409
+        "digest": "954e4db0d6fb45e400738df8cfb37d26dbe8f5d075b46f52b35498626f88841e",
+        "size": 65218
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_13/slice-of-life-school-and-music-2.ts",
@@ -3385,148 +3406,211 @@
         "path": "components/recipes/styleRuntimePacks.generated/pack_14.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "d0852dc35a2dfe45b8a7fde80b9209fc12e5ad311fe2d1fca01a29b7454d343b",
-        "size": 1718
+        "digest": "9c827ec240ba643ea773b5ec778822b6096eb73638d0343835b1536ec533e40b",
+        "size": 1717
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_14/akan-mythology-anansi-6.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "fe97fe86643b4c50046b2f3821a8f12d047904b34fbc6e2f331b240550bd3bb7",
+        "size": 3419
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_14/egyptian-mythology-7.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "a4871e3c5c06be3adf74934aecb1026e2931e4c9fc9966dd05bc39b5f88ccb37",
+        "size": 3356
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_14/greek-mythology-epic-noir-1.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "895eba52f07dc59eb0c9da9f798b1c32767b46203101cd5aad822a5a6228ae37",
+        "size": 3583
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_14/japanese-mythology-kami-and-yokai-2.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "5741380706b7f83ca30992a952796a707dde40069658fbde053da45589d9abfb",
+        "size": 3842
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_14/mande-oral-epic-4.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "57e58a0c640cf6b96f666a7748fb4e42806cad12e8ab94952c2ad20b8c0055b4",
+        "size": 3642
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_14/maya-mythology-8.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "f92508aa38e737120e0d273031a12144561e1a551d00e1855dce3e4f4bff2216",
+        "size": 3763
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_14/mexica-mythology-9.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "51366392890019fc4acf604aff4dbeee80bde5a2883b6156ca2edb5ba5e9b654",
+        "size": 3724
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_14/mythic-african-cosmologies-6.ts",
         "origin": "tracked",
-        "state": "present",
-        "digest": "0e850719e70fe69e3ae0b5123a125e07ececeff84d4cfdc20360c001f8aa692b",
-        "size": 99708
+        "state": "missing",
+        "digest": null,
+        "size": 0
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_14/mythic-cosmology-and-omens-4.ts",
         "origin": "tracked",
-        "state": "present",
-        "digest": "d32e8989704214f35df674812ce926f29cd8a3a6f1026d668c9b13ab8cdda025",
-        "size": 98397
+        "state": "missing",
+        "digest": null,
+        "size": 0
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_14/mythic-greek-epics-5.ts",
         "origin": "tracked",
-        "state": "present",
-        "digest": "4cbf3611f09c1527812bf5da653cd482961e3f186e41ef23c629c73929357c79",
-        "size": 99213
+        "state": "missing",
+        "digest": null,
+        "size": 0
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_14/mythic-japanese-yokai-and-kami-7.ts",
         "origin": "tracked",
-        "state": "present",
-        "digest": "1e8441e071d10f554ed52a7d6cb3323cc1b2d3a65ae15003621334f5b5b11ebc",
-        "size": 98549
+        "state": "missing",
+        "digest": null,
+        "size": 0
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_14/mythic-mesoamerican-suns-9.ts",
         "origin": "tracked",
-        "state": "present",
-        "digest": "ace4b6cd8f96ed30f402df91a8195d4ffcd87a9e249e97c9807738d8fb87e335",
-        "size": 19932
+        "state": "missing",
+        "digest": null,
+        "size": 0
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_14/mythic-norse-sagas-8.ts",
         "origin": "tracked",
-        "state": "present",
-        "digest": "4d1c2128e7348c7e010a183f987a0bccc8576fd75c2ede9086b2e261535badfe",
-        "size": 100052
+        "state": "missing",
+        "digest": null,
+        "size": 0
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_14/mythic-pantheons-and-legends-3.ts",
         "origin": "tracked",
-        "state": "present",
-        "digest": "e017198cd60b19375d8e364cf158fc2c2b078f41e08fa94e5c9614bc3c0f28bc",
-        "size": 99340
+        "state": "missing",
+        "digest": null,
+        "size": 0
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_14/mythic-ritual-noir-2.ts",
         "origin": "tracked",
-        "state": "present",
-        "digest": "63cfa70b7bf789f98f6dc0342c7cffcfe9ec8d404a5a2c5aa1966745475a30dd",
-        "size": 99870
+        "state": "missing",
+        "digest": null,
+        "size": 0
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_14/mythic-symbolism-1.ts",
         "origin": "tracked",
+        "state": "missing",
+        "digest": null,
+        "size": 0
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_14/norse-mythology-sagas-3.ts",
+        "origin": "untracked",
         "state": "present",
-        "digest": "5f0f6a1b71b40f19fac2963ff433809c21e45f5545345a4b1321bbbd74d4a991",
-        "size": 99611
+        "digest": "26668fcd4dff79843edac74950ac70b4e5a7743a42614124e85f2738da433a5b",
+        "size": 3677
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_14/yoruba-mythology-orisha-5.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "b9a54cf5551ef930cef21719043201b37a209e4d8f6368ce6d40d0206a15db95",
+        "size": 3651
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_15.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "46d3d3576d29f866755ca8358b8879de11aed4716bdaeb4caf46fc33965cf364",
-        "size": 2056
+        "digest": "0d118c67f7c99360ea4f8cf2d3a13734e509074160b4fc77d598fdac7957d8fa",
+        "size": 1986
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_15/bio-myco-and-body-punks-4.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "58192ac566e68ba1cf5ab542425c7c3db90ed3f68f519e5464ed64b439b1ca86",
-        "size": 44715
+        "digest": "bddad7a00d69120e7c59a037511100e8e903da67ae6f88f31c88ff7e10171b19",
+        "size": 7515
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_15/classic-industrial-punks-1.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "15167b80632d394b53e9643c0c0c3a996132b6f22ed2e3ae0ffde0ccfc7a726e",
-        "size": 43074
+        "digest": "0fd2d0027e5904b41d749755a4c8b8a299c0e6dfcd4ab2f2be41f26ce895689d",
+        "size": 7802
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_15/eco-repair-and-climate-punks-3.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "dac897363cb6e35bdfe5e9e962b363e4c4fd36d64c6b936fa43094d2ce2df3d6",
-        "size": 44764
+        "digest": "f72c6eaa80b5811ab6894460780d1f00735e9dc5b9528b283e774a0558e4221c",
+        "size": 7481
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_15/media-vapor-and-glitch-punks-7.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "670b68689dd3ee59d8f4721a7a56426ad482232232606cf5ec444327e4747ba9",
-        "size": 43064
+        "digest": "e3d7e3a4fad37bf114a8a75b2c37b2e003b2d50c52789bf141d15ada99e09f46",
+        "size": 8772
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_15/neon-net-and-signal-punks-2.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "20c3f3c27b1fa976f1aaa983b1fac4ccaa177af04ecf610b5f1208785924d999",
-        "size": 45358
+        "digest": "4f416bc23c63411e7b7418d0c256c5530ad740d966d8fe8a7314e2df47c65e1a",
+        "size": 5279
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_15/occult-myth-and-gothic-punks-8.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "025835e637addbbe7d96a3e966dca904d91122ad3c624fbead8cc150b4f5c84d",
-        "size": 43970
+        "digest": "f2b4238498a2b17197f5bd6172b31931cd76094209f5d49d55255216ff2f5f08",
+        "size": 14390
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_15/ocean-ice-and-terrain-punks-5.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "a3bc88827d2a3cb40ab7693aa773d5b4080a1067c040950d2aabbdee65ab73e9",
-        "size": 45022
+        "digest": "d8962b9624cd4724a4e8f516f7bf4dae449996812a0bdc912b116b9f4ba3c4c7",
+        "size": 4944
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_15/primitive-stone-and-salvage-punks-10.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "aa7b0653d83c9367463c3870a3f9dfd20b1a056ee039f283cf4080cb8f1afb50",
-        "size": 45262
+        "digest": "7ce78a03e1f93c8574c9c236e903c659280e2aa08bab4f2e1bd9a323288d53c7",
+        "size": 4097
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_15/space-atomic-and-ray-punks-9.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "9bcd74410ee4daaaa4f8594c8903fb8a40de80fbc3a0c6cf7937a7117c778704",
-        "size": 43689
+        "digest": "1fee831de4b1dcdf91777e83c355b0166cd32f9386b5742506c49bb7f0dd0449",
+        "size": 8050
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_15/street-riot-and-diy-punks-6.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "8b4be1477d0694f34e195db6b9b8899902203e57eef2e11e0710ef0b0b0c0920",
-        "size": 44612
+        "digest": "b5ac9040f3fe2613ec0d5761968f5cc30f5f788ccbc99df6760dcb8cf2fc8117",
+        "size": 13095
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_16.ts",
@@ -3539,22 +3623,22 @@
         "path": "components/recipes/styleRuntimePacks.generated/pack_16/2000s-classics-3.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "ccb06bfdade2224fda34686a90a8b9370fbb5087a157cfd9507bf6324a3067af",
-        "size": 130258
+        "digest": "efc9add86cae44e513e235be5df9332b636e9bc075d9d81d708b86baabc1fea2",
+        "size": 41435
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_16/70s-and-80s-retro-anime-1.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "f9dd91cadd62333595c7cfac07dfd5237e05fc06fa3cd82056f47714b62f64d3",
-        "size": 194099
+        "digest": "c0f996e7915d41a39435fee21f44ddabf2cd33762155566a5b0b1a6b300a7e29",
+        "size": 102856
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_16/90s-golden-era-2.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "e723b6abfb0d401e685b7d8befc4112ff5fa58527503a8afc10284f9516c3c87",
-        "size": 129729
+        "digest": "4bde0f7a56d142c67131b4965fdc2bf4bf122ad30ceaa9d3cc51282137766bec",
+        "size": 50380
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_16/horror-7.ts",
@@ -3581,8 +3665,8 @@
         "path": "components/recipes/styleRuntimePacks.generated/pack_16/studio-masterpieces-4.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "692d68e29dc763a1f2632e4365db339ed1e8d8e6df7a96421a798bf6de09194a",
-        "size": 197157
+        "digest": "5ca96a225fe5db5e9592e267a3f39ce54f18d5fc0b9e3692681325a081d1617f",
+        "size": 71411
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_17.ts",
@@ -3595,8 +3679,8 @@
         "path": "components/recipes/styleRuntimePacks.generated/pack_17/dark-fantasy-and-gothic-courts-1.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "6b2a8190340ca4719a9a8c821583164b8482de0df5fbf1ad7d033c62e517f69f",
-        "size": 59111
+        "digest": "18ce3c4f50028df77c8b23ea14a2f5704ca239cb6ddee74316e53ef31622c523",
+        "size": 61784
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_17/dungeon-zine-and-risograph-prints-2.ts",
@@ -3630,43 +3714,246 @@
         "path": "components/recipes/styleRuntimePacks.generated/pack_19.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "699a4a2c545627a974959c6151e252e225f8893f384895285af471521be0966f",
-        "size": 849
+        "digest": "918b6a76414f55b2f22699da2a774b14f9f1e92ef6612eb2f2b63a889e0d314b",
+        "size": 888
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_19/ink-structures-1.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "af6140bf1d287e2aac83892d622fa089d6e0d127c092e5da9ee610fd31608677",
-        "size": 7127
+        "digest": "5e0b4b562553fd8fb9b5cc1a3fd4f69d5a0ec79dec422fc3ca35c234665ce844",
+        "size": 6999
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_20.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "26fdc10cffdc88682d8a491ba8fa839a5166d55667761b1799033bfdc410f1a3",
-        "size": 851
+        "digest": "1dab61f3b6bcacc91929853b6ce6230b79da74c4d3ef36635fc100f7aa678230",
+        "size": 890
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_20/print-registers-1.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "e7524c80c47a437af23ed3ce202cd873b5d083ff946ca15e875be082e3d54178",
-        "size": 6805
+        "digest": "6b30e9c6fbeca7949a39d2bc4076f77bc28adaf5d9325160864782d50d0d1c82",
+        "size": 6677
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_21.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "a8c9bb16406b397cb1886d79364fb36e5d98e6f664e3b1875255d9d2ff4e41d5",
-        "size": 853
+        "digest": "a2df27bc235e48dc4ceca94fcab52396f8cb527ddf2c080489328ee71416e72d",
+        "size": 892
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_21/paper-and-pigment-1.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "e02d903ef261c23e6e9095b532222e579faf7d6f39139356451f19c175bdcb9f",
-        "size": 6885
+        "digest": "e1b2febfd864d15abb2f0603fa08f7a5c5ae3fb9f5b5e9b00107b1ac953edaff",
+        "size": 6757
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_22.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "ebc2ac01cc5dccdd6ebad7f02c2ebe905c4a48605318ddcbcb58b24beba02fdf",
+        "size": 2592
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_22/anime-illustration-6.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "0ad373c9aa6ae9dca5a35116150504508db9b819d3aac12e12ae04148c3d3742",
+        "size": 15390
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_22/character-and-readable-forms-5.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "233acbce4bf6b447fe4a871fefc8ca38680ed21fd26610848c5aafe16659bbcc",
+        "size": 14726
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_22/comic-and-cartoon-illustration-9.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "59f9cdb6362ba835865ae316f25e8cb1c49206601acdae9b032aaf58df145d28",
+        "size": 14851
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_22/crafted-materials-and-miniatures-12.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "5fa1fb124fe164a9b3a2108acac7ba213a766ee911f04ff0e9629d669721c6c4",
+        "size": 15238
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_22/digital-rendering-methods-15.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "bdf627de3ff5f73b45914162e4fd272883d0cd49e89f7c5fa0b7ef01fead82ae",
+        "size": 15265
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_22/epic-digital-painting-2.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "9e44d77fd6012c39542a2e10ad1a8a17292ccb4a5605eb16595a83fa0ecad14b",
+        "size": 14561
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_22/manga-ink-and-impact-7.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "8e634cdb8c7550c32f171108f3c684724e0d0faa3404c486dc0e95e18213a6cd",
+        "size": 14997
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_22/ornament-and-symbolic-illustration-11.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "2ef31b10d6998850df9af70e04be22f3b78b93baef2fa6a02947d884ae1ea33e",
+        "size": 15317
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_22/printmaking-and-reproduction-10.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "d2e211009a47c1baec83248b4d8a1286a342f846196543b94b75a9d1c24cc6cc",
+        "size": 15123
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_22/storybook-and-animation-4.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "30d360b42bd4ae5aaed1e00de2f075c92b07e584986b9a53705afa08231f6568",
+        "size": 14564
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_22/strange-ink-and-paint-3.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "bb92127642eb4bc0c82d6e34d2ae343c6650349883d92f4a1205fc50b24b9579",
+        "size": 15912
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_22/symbolic-graphic-illustration-14.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "325e988f7c335a062c677cbdb63cd4359c20987ed306f6a812d1c05d5dfdacbb",
+        "size": 14948
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_22/technical-illustration-8.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "d763955a613618bc5bcccd2e1a77dea916d1e7fcace931b3659edd8718e2b109",
+        "size": 15053
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_22/vintage-collectible-illustration-13.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "48cdf92fff336bc435a07bdb698de0bf6f151a9401a2dc7fab7139dbf5818546",
+        "size": 16255
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_22/workshop-painting-1.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "13faf6e2ffb45a26246c0743fccf3a5e856b717b673c034d0bd857706e028e95",
+        "size": 14435
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_23.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "9ea133e93232a559e14f38d241995a6656c884a6bb699a90ccc6f14d376c51d1",
+        "size": 2203
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_23/classic-rpg-visual-studies-6.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "58207c71b061dea390fcc9f268be7529cb3eef2e0548237213872ee10547ccc3",
+        "size": 9838
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_23/hybrid-visual-studies-12.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "4e3092ccc259c114c7f7d609d4ce164ca666a9ebb144a6f76712ed0f2a45b216",
+        "size": 12111
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_23/indexed-raster-language-7.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "2b1a2725fee18daa351ebd23489e1c2a330352c1ea8e0beefa23b856b4c6881a",
+        "size": 9538
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_23/manuscript-visual-systems-1.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "861f3584febdcb8a8b495bc59a2ae5c3e9bbe14433809db1de05a97a22ef765c",
+        "size": 11520
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_23/medieval-material-studies-3.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "fc34d5e6fe3bf47e7f7d784de0b3ddffc559fb2a8b8e54aa45836fcdeec64623",
+        "size": 10601
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_23/modern-visual-techniques-11.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "ccc7db0ef07c8c9c95cc39b4800d6f6a4d0124ef4c03f37b3967648540912ef6",
+        "size": 11774
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_23/painted-rpg-and-tactics-9.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "595a8f75115cbd1c26d26fe25dad943e2725be215f81e768cbc5b02a2a815411",
+        "size": 10165
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_23/print-and-engraving-2.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "121ad3ef64e5f88d9d1f6aaf4c51631612c11857bc046a99eea133250d6dd517",
+        "size": 11359
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_23/regional-manuscript-traditions-4.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "f658944f242575766d7b78778bb56b3cae35f422813cd2d359fd8a940e15434a",
+        "size": 9715
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_23/retro-3d-visual-studies-8.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "2a4b6fa8324a916045de417973e5eb4bd31d4555374f71f3c457018a21a592fc",
+        "size": 7216
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_23/revival-and-storybook-illustration-5.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "4587d8a4f31f5a4afedd78092b9ab756987a046ef13fd2fe4674b85167aed690",
+        "size": 9308
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_23/tabletop-illustration-studies-10.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "2699ec13ffe7fc5f367a1fa2bebe80da90a03bf82e6f695d67475e00c43655c1",
+        "size": 10850
       },
       {
         "path": "components/recipes/styleSearchProjection.test.ts",
@@ -3697,11 +3984,18 @@
         "size": 2132
       },
       {
+        "path": "components/recipes/styles/TcgPendingCatalog.tsx",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "2cce6972e655ae55512a93837434df5fefe534b2126f7d133692f19ecb5de822",
+        "size": 3559
+      },
+      {
         "path": "components/recipes/styles/collections/categoryDisplayNames.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "c73117e4362f85834b789508f508cc1b1603859959e16dfc60891d8def9a6fe7",
-        "size": 7803
+        "digest": "f00b5b313bacf2c8170b966892e2802f345dfbdb1896c92bcb3d12db9905b39a",
+        "size": 9739
       },
       {
         "path": "components/recipes/styles/collections/index.ts",
@@ -3714,8 +4008,8 @@
         "path": "components/recipes/styles/collections/styleCollectionDefinitions.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "7c83bd639faf20a07a88da5d8fa13592e472c7681a623920fc69227d2deb5ff5",
-        "size": 27720
+        "digest": "1ef620c9158abdda4ff04f37a3aab40636793da3601a579a1482af5251e7191e",
+        "size": 28491
       },
       {
         "path": "components/recipes/styles/collections/styleCollectionFacets.test.ts",
@@ -5457,15 +5751,15 @@
         "path": "lib/recipeProviderDirectives.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "685ce8a3c66d234e1ea1e399298566258cb714af91bc8cf789a6212077c023ec",
-        "size": 10810
+        "digest": "9b8f2225ffef10bac7cb73becfb8cdc956e32eb2109bf784841f51ac4889ffe4",
+        "size": 11738
       },
       {
         "path": "lib/recipeProviderDirectives.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "cc69bcc4123a102db2cd610e0ec9601acb51a249f4622e72a435348ad2a6ef7d",
-        "size": 22970
+        "digest": "9807e9197fbf9826f7ddff222b7d1d8eb7d5a39897fbec530efabe64424a707b",
+        "size": 24223
       },
       {
         "path": "lib/recipeRouteModules.ts",
@@ -5751,22 +6045,22 @@
         "path": "lib/styleDefaultAssetPipeline.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "b87c3c1ea24160657b8795f49bed1cc43572613d2005f40826b72270811c260d",
-        "size": 5637
+        "digest": "8197040d111b4068a28969e20c50859d09e7d2eab2e7edda7152ce60a3d34990",
+        "size": 6361
       },
       {
         "path": "lib/styleDefaultAssetPipeline.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "6ca3b77538a74681a6552fb532a99a0e42d02d2131116a00e48d209b52b01d1f",
-        "size": 8608
+        "digest": "f7c4c15f96c4e64794439e418f712bdcd0489dd297943771a5a161cc745d15bc",
+        "size": 8735
       },
       {
         "path": "lib/styleLandingFolderIndex.generated.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "b76e4cf750d23fb5fe6afeaafa7da34812910c04617d93412e1f4c7871741b77",
-        "size": 11027
+        "digest": "b5f4012f1b3515ba968306827f059f29a6c32a5f5a4b6c218ad7ec903896a07d",
+        "size": 11897
       },
       {
         "path": "lib/stylePresetVisuals.test.ts",
@@ -5786,141 +6080,176 @@
         "path": "lib/styleThumbnailCatalog.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "c5994d4c0b3f732172ccd761bfc80089928b51b254600fcfef662834ac85883d",
-        "size": 1820
+        "digest": "3978d546e710a3ad9caf8ec3336238200baaa65a529cc1473508d8b482ed629e",
+        "size": 1945
       },
       {
         "path": "lib/styleThumbnailCatalog.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "74869d9867acd5d72cabc0f2a043cce83147e68123591d89acde357f1339f741",
-        "size": 3306
+        "digest": "d8b6ae331f808fd89d97e762bbd8bb1337a83c447f011166b04ac69d0f0eb6f3",
+        "size": 3452
       },
       {
         "path": "lib/styleThumbnailPacks.generated/index.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "fbe6f87afbce07db761979e0fbaa17f5f32148fbede3883b54545f9c48705390",
-        "size": 2370
+        "digest": "63a73fa81fa2fceb026117e0dceb77039e4e0f17a262dac06858904195deaefb",
+        "size": 2955
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_01.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "f470444f7852ae2aa8531dcc93aad9b8e49591bdaf09fc91c1d5175a4159466e",
-        "size": 27753
+        "digest": "57b3d2b258a3d1c374e97a12266420f854d706212d6827c279d846a2ac21d5dc",
+        "size": 41499
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_02.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "89b6d5be46f2b4ba953b80a76cbdeb9ae28fd51001845ec4bc8765848289f62f",
-        "size": 41106
+        "digest": "954a68e3b0edc26a94a1ee3b79b79a23ce9cf8efd86746d5a62a7391597b51f0",
+        "size": 60831
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_03.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "410820d1cba919a2004061ef3387260e7f4fce2a8b3dfb1f4a44ce762a3549d6",
-        "size": 34357
+        "digest": "4f528d60aa752dc83152a8bb0715ea5f38f51c58316378f2aeed4d6fb92e9798",
+        "size": 46997
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_04.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "ff22a9fc95a7bd66795e94d97f793ea0bd1c08974e0d6cb02fb954fb9f9d1017",
-        "size": 44960
+        "digest": "1837e8ea528418f38003d75f36f3e3e4d8736d2eacfe7a133bfd89d96b3aa644",
+        "size": 60920
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_05.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "0cad08c4f9cc6decb26a40d3f2c74413e9ea101fa245f680e792881c28f597e8",
-        "size": 52994
+        "digest": "2b0b874bf5efd6a6b05c7602186ff681251763a09c00738a3ef0f9cb2d6f64ae",
+        "size": 74452
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_06.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "cbd98faac79516ac82a93e1c4b6cc1d93c06048747668971d023dd9cf5e25acb",
-        "size": 33814
+        "digest": "4f9a1826ae4fd378b12c1ab153dd3230577fa91165f471420430af20800a03a3",
+        "size": 52774
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_07.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "31179fb6dcddfaef6025ef4bcfaf175e992b7c0a88ff272326481ef9b1b2e909",
-        "size": 24031
+        "digest": "1b5314875f78ab5beb207d9748bdf6b91baf5897ea024fd9ed10d4e3ecdbf551",
+        "size": 36687
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_08.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "66602d21ac82530d56c1811d81763647345ae891b71c309110c8db6a529709d6",
-        "size": 23917
+        "digest": "a55f184081b512a4f119b8ce8872d077d1a58a179c2b362d1afa32155f7a1413",
+        "size": 36083
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_09.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "87c4f4db44a01e5ad5cd02bba68d29f5f02f02aa16d2d0e7a9a867461977a452",
-        "size": 22986
+        "digest": "db209ab05143ac4eb3cac417261fefad4d7ff5e99fa498bfa8578b6b9f01ad6b",
+        "size": 34994
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_10.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "d391642c47060b69b6bd1b515979c219de2f98d113c3e2f4555e7871bc3af68b",
-        "size": 22948
+        "digest": "69861812973908907da5228bb88ce171fdcb6c4383da88680825d4fbea29bb65",
+        "size": 35272
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_11.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "0da1c19e2b004d2c85563b3a10dc55085d8ebd70228cb7289de7b718c055c42f",
-        "size": 22964
+        "digest": "0d587991552443608cc09560be30ea79c2c00be6756fb6b399a9f461860c33c3",
+        "size": 35288
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_12.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "285c2cdc26571193c4490cd8ba29300dda4803e2d3d6296f5837a94475bed3bb",
-        "size": 37927
+        "digest": "1af2dd54c9f72be9f0ee94680ad1c2e78069b6d57411fdefa04b26fe62f911af",
+        "size": 50567
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_13.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "d7bf4d80159da6f43cfe5930e82b4e50a56525ccdcf0bc3a51e58d65208b116f",
-        "size": 37178
+        "digest": "c25c03a83e18b44783ff09723a9185bb39c5eca199379bd7276aada9c240d89a",
+        "size": 57876
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_14.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "716ab5d0b7679705c08288276c297fe6a1cf97e37cbf37177d7e2e97a462500d",
-        "size": 33820
+        "digest": "c63131d0df43718437fa66a9e38273526097abe675b3b8d37e14414445719b54",
+        "size": 60876
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_15.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "0cd35255d2f12d42f0f3234eaf8a40dedb51c1706a5d8f65d7adbf0b98ccb975",
-        "size": 22081
+        "digest": "b4da91b49ed16bd30f44e3efd15714518564268afb8ce67efe425f42d9434f4f",
+        "size": 53512
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_16.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "392fcf821390cbc6d132c0d6bb70bed9d7a5d2a2124eb6686bdbc7d33b9dcd94",
-        "size": 39133
+        "digest": "5bdb8993986c10852e1bf5ce4a67e183f5f7f563123cd01f1cc99b324998c74a",
+        "size": 61386
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_17.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "a4409888c43a5cd2f733eb5bba9a7f4847d4b11a788c7ed50060fdb29ca2ca25",
-        "size": 27124
+        "digest": "43c42eddad801914548e968330234538d4c5a1cdf9ae1df22d5f000315253e5b",
+        "size": 38713
+      },
+      {
+        "path": "lib/styleThumbnailPacks.generated/thumbnail_group_18.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "8f236aa70820878f5994894206d6c6c23f4aad127ebfaeb32deacc44facf1c9a",
+        "size": 773
+      },
+      {
+        "path": "lib/styleThumbnailPacks.generated/thumbnail_group_19.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "3a606380810733adf7a040fcb8ce960c6b23ad9b7aa0486a78c39badf0434fc8",
+        "size": 773
+      },
+      {
+        "path": "lib/styleThumbnailPacks.generated/thumbnail_group_20.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "a168955ab7d267958a977825ba338dc81ffa2b584e980ce5cf057120eea18c8a",
+        "size": 773
+      },
+      {
+        "path": "lib/styleThumbnailPacks.generated/thumbnail_group_21.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "9404667ee1f4e0ffda4f350636de586661a5ff988705199a497acd6554fddee0",
+        "size": 34410
+      },
+      {
+        "path": "lib/styleThumbnailPacks.generated/thumbnail_group_22.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "fba30d55da13310bcdfacb06468ab79ad2dc51c36c3ce9463fd9474317d560b1",
+        "size": 16434
       },
       {
         "path": "lib/stylesBrowserGate.test.ts",
@@ -6017,8 +6346,8 @@
         "path": "package.json",
         "origin": "tracked",
         "state": "present",
-        "digest": "b2203286a83b35426283ff74898ec516a7a01e73cd30423cf0cfd78f2806cb04",
-        "size": 9443
+        "digest": "336eb93de602ab7bd9fb874f1c81262121c9d093c3f83209d900564142874b35",
+        "size": 9463
       },
       {
         "path": "packages/shared/src/animationSequenceContracts.test.ts",
@@ -6171,15 +6500,15 @@
         "path": "packages/shared/src/recipeProviderDirectives.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "9c59609862646cafd70584689b0bbc527c34c330bf26286d2499e4719030bf18",
-        "size": 1146
+        "digest": "919d9b52540d052094586c615d4d63c67c7e453394724a3b7392cc58a6cdff26",
+        "size": 1846
       },
       {
         "path": "packages/shared/src/recipeProviderDirectives.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "d7ee0133a92b65e7af83df5f4d456522c2081f87a7eefaeb8f9d6d8c11b6b6ac",
-        "size": 2998
+        "digest": "ca663c6abb19b97e58b40aac40c321be6349a672fb80db2850fa992b1c3b60cd",
+        "size": 3044
       },
       {
         "path": "packages/shared/src/spriteAtlasContracts.test.ts",
@@ -6255,8 +6584,8 @@
         "path": "packages/shared/src/styles/intentional-v1/compiler.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "30d3f84167d78928c5ea300fe97065dff5f9f464af3bdee1b1f92a72de5fe79b",
-        "size": 11812
+        "digest": "310c91506a5f15c9320186b68c4934829984a4f602e9b995640031e66689a51c",
+        "size": 12429
       },
       {
         "path": "packages/shared/src/styles/intentional-v1/composition.ts",
@@ -6276,8 +6605,8 @@
         "path": "packages/shared/src/styles/intentional-v1/intentionalV1.core.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "4f193e9148c713bd5731331ea9b761bc31c3073b22388ac908dbf66a48fb785b",
-        "size": 24468
+        "digest": "de2c80d1b0af8da80e9ba0aa677fb0545bcdb7ba18421dbe17a932514e146515",
+        "size": 24960
       },
       {
         "path": "packages/shared/src/styles/intentional-v1/legacyAdapter.ts",
@@ -6304,7 +6633,7 @@
         "path": "packages/shared/src/styles/intentional-v1/types.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "5cbdaa1114a067e8c06142094009c186fdca64d1c62c2fbf51300ef3a4986d8c",
+        "digest": "21881265eb9dda4312ce0ef739ee45750312e133a207e72cf71aa90a126ca8ca",
         "size": 3485
       },
       {
@@ -6500,7 +6829,7 @@
         "path": "scripts/audit-style-curation.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "378e0ac8c5299d588a5c6819eb068de71ea969b7e6cf3ea5bdceff96c5f0ec36",
+        "digest": "7d93f38208f3536bec8b1c69f7250c6c322c2683e3b9ecaaa337c399630bca8d",
         "size": 3762
       },
       {
@@ -6577,8 +6906,8 @@
         "path": "scripts/build-style-pack-card-thumbnails.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "210d0443bd638daf63630ed2370abf795e2fde2a371b7f8de676b99a8643b5e4",
-        "size": 6752
+        "digest": "9ca3f306592ff8ff55e5f53e048ede5f03473022d2f1533022e1544b2196cdf0",
+        "size": 7160
       },
       {
         "path": "scripts/catalog-first-source-audit.test.ts",
@@ -6745,29 +7074,29 @@
         "path": "scripts/generate-style-curation-review-doc.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "5ac8fe9f61f22ad72d42bc030c7558c697455d5ca52fa178d00da5d120d7eabe",
-        "size": 3209
+        "digest": "935fff9593a033cd084dbd24bf0504d28e613fe1b654fe32b1d19090144da832",
+        "size": 3314
       },
       {
         "path": "scripts/generate-style-defaults.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "2f63cae9dbce3ba2897b606a20261d7384309e662c0416f1175521edfd7d0c58",
-        "size": 1107699
+        "digest": "dd4f0112851c362e95248ce2c8235599c08c0e7a905b10dc2cbbb0323a0b1fcf",
+        "size": 1126204
       },
       {
         "path": "scripts/generate-style-runtime-data.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "d91dd138bb1b2e63dfeb535aad63a3a302039adaedd9d4f57c3a3ad346abeb2f",
-        "size": 16147
+        "digest": "db79a9e3baf13c649b2b8499f815d73856e30caebac5935a123df7e83963e4a1",
+        "size": 16874
       },
       {
         "path": "scripts/generate-style-thumbnail-projections.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "60afac6a78c7497b6713ed7483352bb2e735f629d95e48ec93bc53673079d777",
-        "size": 14646
+        "digest": "c041206a946a181cbac61884cde9da2770d13a980c2fdb78e98c874f7c228eec",
+        "size": 15750
       },
       {
         "path": "scripts/interface-handoff/export.ts",
@@ -7004,7 +7333,7 @@
         "path": "scripts/report-style-render-budget.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "fe582bf55f97b07df9cf0969d87e2bf88a604065891fbfb3e5b17c3d86956de5",
+        "digest": "b18a4141d835cc9834f3517b22700bde5c8de09556fd753815cb32ce616f35db",
         "size": 3567
       },
       {
@@ -7134,6 +7463,62 @@
         "size": 723
       },
       {
+        "path": "scripts/style-curation/legacy-card-briefs-packs02-06.test.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "cfb1afd0b6d86858deb2b8c4b0d661f7532ce23052012db57f23d58283c16546",
+        "size": 16703
+      },
+      {
+        "path": "scripts/style-curation/legacy-card-briefs-packs02-06.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "d2dc4874de40531daea7f6c6f31e0582d5e8b8595d1e08284dd0f82ec90ce7be",
+        "size": 156416
+      },
+      {
+        "path": "scripts/style-curation/legacy-card-briefs-packs07-11.test.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "43c7ee18aa6fd30abbafe31acc008c722128186a7bb93cf576982215a5013c95",
+        "size": 6795
+      },
+      {
+        "path": "scripts/style-curation/legacy-card-briefs-packs07-11.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "6e678e413baba05e242eba203b061f124071554aae2c6cfcabf37b8214a696d2",
+        "size": 79619
+      },
+      {
+        "path": "scripts/style-curation/legacy-card-briefs-packs12-17.test.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "3804bffe3bce90e77774b8d3232711664eab15e29800079e5a58a98155b9767a",
+        "size": 4678
+      },
+      {
+        "path": "scripts/style-curation/legacy-card-briefs-packs12-17.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "8090ee0f8e60c09620e287ea95510e01a4be234c14e0f4647820b9385458852c",
+        "size": 62925
+      },
+      {
+        "path": "scripts/style-curation/legacy-card-briefs.test.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "a7dcc0f85ff7d68f3d7a1811e36e9073b285d630173c0eb0100f0181416640f3",
+        "size": 2306
+      },
+      {
+        "path": "scripts/style-curation/legacy-card-briefs.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "0cc2c3ad58bb49169ceb63feb505169510bb712d53adf3692c4fd9f0842383a5",
+        "size": 22165
+      },
+      {
         "path": "scripts/style-default-image-state.test.ts",
         "origin": "tracked",
         "state": "present",
@@ -7151,15 +7536,15 @@
         "path": "scripts/style-default-utils.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "25e3aa916caf74eaaaa774dd071b66a973ca59d9659cadd1922e7b894635ce85",
-        "size": 3005
+        "digest": "95137bbc3b39d1eb5321f7d0c059fd5696a846bb3285a4c531573cddb0bf12e4",
+        "size": 5240
       },
       {
         "path": "scripts/style-default-utils.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "a1c44b375f0b5d25eb2446179ee63c9fb981e4e1bfc205dc7613f6880de8eb06",
-        "size": 11960
+        "digest": "e4372a2c83421e9d18e51326fc87b178ca3db87a1caa61eea2043c6b5f1a2c4c",
+        "size": 13434
       },
       {
         "path": "scripts/style-manifest-files.test.ts",
@@ -7269,16 +7654,16 @@
       {
         "path": "scripts/style-migration/enrich-pack-14-mythic-noir-dna.ts",
         "origin": "tracked",
-        "state": "present",
-        "digest": "c919ed1c1dbe8b77e75ee9c1d1e3db86be93f923f7a97497ae92dea44d31d0e9",
-        "size": 71250
+        "state": "missing",
+        "digest": null,
+        "size": 0
       },
       {
         "path": "scripts/style-migration/enrich-pack-15-punk-spectrum-dna.ts",
         "origin": "tracked",
-        "state": "present",
-        "digest": "54ce540157ab10c0c5368e82d043ffc07dc25fd908a0cec02c1bad7b86a66b51",
-        "size": 27654
+        "state": "missing",
+        "digest": null,
+        "size": 0
       },
       {
         "path": "scripts/style-migration/enrich-pack-16-anime-prestige-dna.ts",
@@ -7298,15 +7683,15 @@
         "path": "scripts/styleThumbnailProjection.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "894d61c7762c25b8e2ebef0eab06685284b6c141cd450b24935e2d5ec42ca1e7",
-        "size": 2617
+        "digest": "2596839dd93c62155be50e4c4e56a8960999a5d6c70b84723d541b7559841a5c",
+        "size": 2794
       },
       {
         "path": "scripts/styleThumbnailProjection.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "f7a077587ec63708d52f84d30b6ef25701b3d9785379bdbf74789a920e9187aa",
-        "size": 3101
+        "digest": "98218fcede9518e67986dd23b35677c5e05df8df4d7cd0d8864c336bcf907baa",
+        "size": 3218
       },
       {
         "path": "scripts/sync-style-default-manifests.ts",
@@ -7795,8 +8180,8 @@
         "path": "vite.config.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "fae73eea00f146f30eb947d057e4bb64a81f7173c7fb62929020fe25bb39e593",
-        "size": 2405
+        "digest": "375e8d0058d56e429cf9a8c3626d3238551068ed6393c22adac6d9bf3154f352",
+        "size": 3206
       },
       {
         "path": "vite.handoff.config.ts",
@@ -7813,12 +8198,12 @@
         "size": 710
       }
     ],
-    "digest": "387ef62fb9dd3c85c5849235855395975d4d5aefa46567acfc0aca6a963c45be"
+    "digest": "d1def51df7ab98619f83906a0c75b85827bc1b2a56b25d36917005fd4d86db37"
   },
-  "source_digest": "b57278e4ef0ce16c2d6c7b7933ed853171acd16b0b4a0c710187d0074809bd20",
+  "source_digest": "8be7e2d3586c5b8aba418ff646602a3a3156464d1eb87e0d38da1af2ffed1d11",
   "artifact_hashes": {
-    "codemap.json": "40bb13a111942ae66d744bfbe8be3a58de1b0b462a50a882d3cfe58603c4f822",
-    "codemap.md": "6912f6dac2a0edac4b3858413fe8b304ab524d10e90d383cede142cc9f7946bb",
-    "codemap.html": "71fed80fcffc9c7215ce55be5a7ea1cddaf2230c5a30ecd1ed1cb4bdfef61db9"
+    "codemap.json": "209afb9afc998a03679317aca457335aa2510b74250210b94f145312d9f6d766",
+    "codemap.md": "61772e16d9773586a833b40fc6e525a43790e05e4b5fa0b4e89d0ece8e293125",
+    "codemap.html": "854bf6a65fccf7da20150de2fed80d57d68927b625a142c335bc605b9e134ca4"
   }
 }

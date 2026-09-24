@@ -1,0 +1,96 @@
+schemaVersion: 1
+id: SP22-109
+packId: pack_22
+name: Carved Impasto
+category: 2. Epic Digital Painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - epic-digital-painting
+  - carved-impasto
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Digital painting builds form through broad, carved-looking marks whose direction follows compact
+    planes; any sense of paint relief remains a pictorial effect.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Describe large forms with directional
+    strokes and readable facets while keeping defining contours clear.
+  color_and_tone: >-
+    Favor a few broad value groups with a rich range of intermediate color. Retain the requested palette
+    and local color relationships.
+  lighting_and_shadow: >-
+    Follow the requested light direction and contrast. Use broad brush planes to express its transitions
+    without adding a new light source or unsupported highlights.
+  texture_and_material: >-
+    Suggest painted buildup through stroke direction and selective edge breaks. Do not impose plastic
+    gloss, a canvas pattern or a change to the represented material.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and element placement. Do not restage the image to
+    emphasize brushwork.
+  atmosphere_and_mood: >-
+    Keep the requested tone. Broad strokes and faceted forms do not add an epic setting, event or pose.
+  rendering_and_quality: >-
+    Prioritize silhouette, major value masses and stroke direction. Keep facets distinct, and reserve
+    smaller marks for details that support form or identity.
+avoidRules:
+  - plastic-like gloss
+  - uniform high-frequency detail
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-109.webp
+attributes:
+  negativePrompt: plastic-like gloss, uniform high-frequency detail
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: painting
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: painting
+    avoidRules:
+      - text: plastic-like gloss
+        field: texture_and_material
+      - text: uniform high-frequency detail
+        field: rendering_and_quality
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S009
+    sourceTitle: Carved Impasto
+    referenceIds:
+      - S50
+      - S51
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: epic-digital-painting
+  categoryName: 2. Epic Digital Painting
+  tags:
+    - trading-card-illustration
+    - epic-digital-painting
+    - carved-impasto
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

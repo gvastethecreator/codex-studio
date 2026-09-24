@@ -1,0 +1,96 @@
+schemaVersion: 1
+id: SP15-086
+packId: pack_15
+name: Signalpunk
+category: 2. Neon, Net & Signal Punks
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - neon-net-and-signal-punks
+visualDna:
+  aesthetic: >-
+    Signalpunk turns transmission into visible geometry: spaced pulse bands, nested arcs and clean
+    interruptions at insulated gaps organize the existing form.
+  subject_treatment: >-
+    Preserve the requested subject, proportions, action and part connections. Map signal arcs or pulse
+    intervals onto compatible contours; do not require a coil device, token or ritual object.
+  color_and_tone: >-
+    Keep the user's palette in control, with copper or warm metal contrasted against ceramic-like light
+    planes and a limited electric-blue accent where suitable. Keep pulse marks distinct from shadow
+    values.
+  lighting_and_shadow: >-
+    Follow the stated lighting. Add controlled luminous-looking edges only to the signal shapes already
+    requested; do not invent a corona source or time of day.
+  texture_and_material: >-
+    Preserve material identity. Where present, contrast smooth ceramic insulation with clean copper
+    conductor marks; keep surfaces mostly quiet so the pulse geometry remains clear.
+  camera_and_composition: >-
+    Preserve camera and placement. Use nested or offset arcs and measured gaps only where they fit the
+    composition; do not force a central radial arrangement.
+  atmosphere_and_mood: >-
+    Create a charged, anticipatory rhythm through pulse spacing and contrast while retaining the
+    requested mood; do not turn signal geometry into ceremony or lore.
+  rendering_and_quality: >-
+    Use precise line bands, crisp breaks and restrained edge bloom over broad quiet shapes. Avoid blurred
+    coronas, dense wiring and decorative text.
+avoidRules:
+  - Do not add a ritual, signal token or literal coil apparatus unless requested.
+  - Avoid all-over electric corona, blurred glow and dense wire bundles.
+  - Do not add readable glyphs or interface text when the prompt does not request them.
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-086.webp
+attributes:
+  negativePrompt: >-
+    Do not add a ritual, signal token or literal coil apparatus unless requested., Avoid all-over
+    electric corona, blurred glow and dense wire bundles., Do not add readable glyphs or interface text
+    when the prompt does not request them.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: Do not add a ritual, signal token or literal coil apparatus unless requested.
+        field: rendering_and_quality
+      - text: Avoid all-over electric corona, blurred glow and dense wire bundles.
+        field: rendering_and_quality
+      - text: Do not add readable glyphs or interface text when the prompt does not request them.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-014
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: neon-net-and-signal-punks
+  categoryName: 2. Neon, Net & Signal Punks
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - neon-net-and-signal-punks
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

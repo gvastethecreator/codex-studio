@@ -16,79 +16,36 @@ tags:
   - 90s-golden-era
 visualDna:
   aesthetic: >-
-    Dusty Space-Western Absurdity Style acts as a transferable anime-prestige router: a dusty anime
-    direction shaped by era-aware line economy and genre tone, alongside a space anime direction
-    shaped by era-aware line economy and genre tone; fuse it with 90s golden-era anime direction
-    with sharp cel shadows, dramatic closeups, aura effects, urban melancholy, and high-contrast
-    compositing; it routes era, genre, line economy, cel or digital finish, and performance tone
-    without locking prompt content to the source title or sample image.
+    A dusty 90s cel style pairs relaxed, elongated contour strokes with abrupt angular accents and
+    sun-worn color. Its absurdity lives in elastic timing and uneven scale, not a western or space
+    setting.
   subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through contours paced by
-    dusty tension, readable pose energy, and silhouette discipline, alongside contours paced by
-    space tension, readable pose energy, and silhouette discipline; identity should remain readable
-    through anime contour, expression economy, pose energy, shape simplification, and effect
-    hierarchy instead of a required canon character or title scene.
+    Keep the requested subject and proportions. Give existing gestures an easy, slightly elastic
+    contour rhythm; do not add a cowboy, vehicle, weapon or comic gag.
   color_and_tone: >-
-    Map color through dust-warm ochres, faded reds, and sun-bleached blacks, alongside space black,
-    star white, violet, and analog cockpit accents and dust gold, faded red, and sun-baked shadow;
-    anchor it in deep night blues, saturated aura color, jewel accents, warm skin cel tones, smoke
-    grays, and VHS-era contrast; keep value separation clean, cel flats intentional, accents
-    purposeful, and palette behavior attached to the requested content.
+    When color is open, contrast dusty ochre and faded coral with cool blue-violet shadow. Preserve
+    requested hues and keep saturation uneven rather than uniformly bright.
   lighting_and_shadow: >-
-    Use starfield glints, monitor glow, and vacuum-like rim light, alongside a dusty light logic
-    using cel rim, glow behavior, and blocked shadow; combine it with hard-edged rim light, aura
-    bloom, neon spill, twilight gradients, speed-flash cuts, and moody cel shadow blocks; shadows
-    should read as anime light design, rims should clarify form, and glow or effects should support
-    the prompt rather than replacing it.
+    Use broad warm-cool value separation and crisp cel shadow shapes. Follow the requested light
+    without adding a desert sun or artificial rim.
   texture_and_material: >-
-    Render film dust, desert-like haze as texture, and worn cloth grain, alongside cel paint and ink
-    grain tuned to space material contrast; anchor surfaces in painted cels, compositing grain,
-    inked speed marks, smoke layers, leather or metal highlights, and analog scan softness; cel
-    edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay
-    coherent across people, objects, environments, action, and abstractions.
+    Use painted fills with dry, dusty grain and a few rough ink accents. Keep material response
+    faithful and avoid coating everything in dust.
   camera_and_composition: >-
-    Frame around lonely scale, cockpit density, and orbital emptiness, alongside wide standoffs and
-    absurdist horizon pressure without fixed cowboy casting, then extend it with cinematic closeups,
-    speed-line vectors, dramatic low angles, layered profile cuts, and compressed emotional space;
-    the style should support portraits, props, machines, performances, landscapes, symbols, and full
-    scenes through reusable anime staging grammar instead of one fixed card layout.
+    Allow an off-kilter balance and a long directional sweep within the requested framing. Preserve
+    camera and layout; do not add a horizon, vehicle or western staging.
   atmosphere_and_mood: >-
-    Carry mood through dusty emotional pressure and genre-specific tone, alongside space emotional
-    pressure and genre-specific tone; braid it with heightened rivalry, melancholy cool, occult
-    romance, existential drift, heroic escalation, and serious adult tone; the preset can become
-    funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while
-    preserving the chosen anime lineage.
+    Create a wry, loose rhythm only through contour and spacing. Keep the requested emotional register
+    instead of inserting a joke or outlaw plot.
   rendering_and_quality: >-
-    Finish with clean anime finishing that keeps dusty identity readable without noisy denoise,
-    alongside clean anime finishing that keeps space identity readable without noisy denoise;
-    enforce premium 90s cel finish with crisp anatomy, readable effects, denoised grain, and no
-    cheap anime-filter smear; prioritize clean denoise, stable anatomy or object structure, readable
-    effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or
-    3D-render drift.
+    Combine clean cel separation with selective edge roughness and restrained background detail. Avoid
+    uniform VHS damage or smeared motion.
   key_features: >-
-    a dusty anime direction shaped by era-aware line economy and genre tone, alongside a space anime
-    direction shaped by era-aware line economy and genre tone; contours paced by dusty tension,
-    readable pose energy, and silhouette discipline, alongside contours paced by space tension,
-    readable pose energy, and silhouette discipline; film dust, desert-like haze as texture, and
-    worn cloth grain, alongside cel paint and ink grain tuned to space material contrast; starfield
-    glints, monitor glow, and vacuum-like rim light, alongside a dusty light logic using cel rim,
-    glow behavior, and blocked shadow; lonely scale, cockpit density, and orbital emptiness,
-    alongside wide standoffs and absurdist horizon pressure without fixed cowboy casting
+    elongated relaxed contours with abrupt angular accents; dusty warm-cool contrast; playful visual
+    timing without literal gags
   creative_brief: >-
-    Apply Dusty Space-Western Absurdity Style after prompt X as a transferable anime-prestige layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a
-    dusty anime direction shaped by era-aware line economy and genre tone, alongside a space anime
-    direction shaped by era-aware line economy and genre tone, alongside contours paced by dusty
-    tension, readable pose energy, and silhouette discipline, alongside contours paced by space
-    tension, readable pose energy, and silhouette discipline; dust-warm ochres, faded reds, and
-    sun-bleached blacks, alongside space black, star white, violet, and analog cockpit accents and
-    dust gold, faded red, and sun-baked shadow; starfield glints, monitor glow, and vacuum-like rim
-    light, alongside a dusty light logic using cel rim, glow behavior, and blocked shadow; film
-    dust, desert-like haze as texture, and worn cloth grain, alongside cel paint and ink grain tuned
-    to space material contrast and lonely scale, cockpit density, and orbital emptiness, alongside
-    wide standoffs and absurdist horizon pressure without fixed cowboy casting, finish discipline,
-    and negative controls without requiring a fixed canon cast, title scene, prop bundle, location,
-    sport, instrument, weapon, or card composition.
+    Restyle the requested content with dusty cel color, elastic line rhythm and an off-center sweep.
+    Preserve its identity, action, environment and camera; add no western, spacecraft or outlaw props.
 avoidRules:
   - realistic
   - 3d render
@@ -100,7 +57,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - flat modern moe
   - generic shonen screenshot
@@ -111,15 +67,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-018.webp
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS
-    noise, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise, readable text
+    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
+    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
+    prompt-literal card, muddy cel noise
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

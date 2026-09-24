@@ -4,6 +4,8 @@ export function presetIdFromThumbnailAssetKey(key: string) {
   const normalized = key.trim();
   const grokMatch = normalized.match(/^(SP\d{2}-\d+)-grok$/i);
   if (grokMatch) return grokMatch[1];
+  const previousMatch = normalized.match(/^(SP\d{2}-\d+)-previous$/i);
+  if (previousMatch) return previousMatch[1];
   const variantMatch = normalized.match(/^(SP\d{2}-\d+)-\d{2}$/i);
   if (variantMatch) return variantMatch[1];
   const exactMatch = normalized.match(/^(SP\d{2}-\d+)$/i);

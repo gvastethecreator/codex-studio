@@ -1,0 +1,111 @@
+schemaVersion: 1
+id: SP23-029
+packId: pack_23
+name: Planar Patina
+category: 6. Classic RPG Visual Studies
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - classic-rpg-visual-studies
+  - compact-painted-volumes
+  - selective-edges
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Compact digital-paint forms, selective edges and controlled material texture create clear local
+    contrast without uniform grime. These techniques apply to the requested subject without
+    importing any setting, lore or game imagery.
+  subject_treatment: >-
+    Preserve the requested subject, identity, count, pose, action, proportions and function. Clarify
+    existing forms with compact painted volumes and selective edge definition; do not add planar
+    beings, corpses, symbols, faction marks or other lore-specific content.
+  color_and_tone: >-
+    Preserve explicit palette choices and tonal relationships. If the palette is unspecified, a
+    restrained earthy tendency may support the study, but no copper accent, fixed hue range or dark
+    fantasy palette is required.
+  lighting_and_shadow: >-
+    Follow the requested light and shadow structure. Use controlled value shifts to separate the
+    existing forms without adding dramatic planar illumination, colored magic or an assumed setting.
+  texture_and_material: >-
+    Keep texture deliberate, local and specific to the materials actually depicted. Preserve surface
+    identity and avoid uniform patina, corrosion or grime as a shortcut to atmosphere.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, orientation, scale and arrangement. Do not impose an
+    isometric angle, planar-city composition, interface, map or game-screen layout.
+  atmosphere_and_mood: >-
+    Preserve the user's setting and mood. Compact painted volumes do not prescribe an era,
+    genre, planar setting or fantasy narrative.
+  rendering_and_quality: >-
+    Keep volumes compact, edges selective and surfaces legible through controlled contrast. Distribute
+    detail by material and form; do not cover the image in dirt, scratches or ornamental symbols.
+avoidRules:
+  - unrequested planar city, corpse, symbol, faction emblem or game interface
+  - fixed isometric camera or game-world layout
+  - mandatory copper, fixed earthy palette or uniform grime
+  - false attribution as historical medieval art or exact game reproduction
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-029.webp
+attributes:
+  negativePrompt: >-
+    unrequested planar city, corpse, symbol, faction emblem or game interface, fixed isometric camera
+    or game-world layout, mandatory copper, fixed earthy palette or uniform grime, false attribution
+    as historical medieval art or exact game reproduction
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: compact-digital-painting-with-selective-edges
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: compact-volumes-selective-edges-controlled-material-texture
+    avoidRules:
+      - text: unrequested planar city, corpse, symbol, faction emblem or game interface
+        field: global
+      - text: fixed isometric camera or game-world layout
+        field: camera_and_composition
+      - text: mandatory copper, fixed earthy palette or uniform grime
+        field: color_and_tone
+      - text: false attribution as historical medieval art or exact game reproduction
+        field: atmosphere_and_mood
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: CR-04
+    sourceTitle: Planar Patina
+    historicalScope: 'Fantasía planar · referencia CRPG'
+    referenceIds:
+      - S28
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: classic-rpg-visual-studies
+  categoryName: 6. Classic RPG Visual Studies
+  tags:
+    - curation-v2
+    - classic-rpg-visual-studies
+    - compact-painted-volumes
+    - selective-edges
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

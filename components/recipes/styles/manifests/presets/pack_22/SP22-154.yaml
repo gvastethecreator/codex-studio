@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP22-154
+packId: pack_22
+name: Impact Cel
+category: 7. Manga Ink & Impact
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - manga-ink-and-impact
+  - hard-shadow-cel
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Clean colored drawing uses strong contours and a few sharply separated shadow planes to make existing
+    forms feel sculptural and immediately readable.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Clarify the given structure with
+    decisive light and shadow divisions instead of adding dramatic gestures or effects.
+  color_and_tone: >-
+    Retain the requested local palette and emphasize its existing dominant colors with clear value
+    separation; avoid imposing unrelated accent colors.
+  lighting_and_shadow: >-
+    Follow the specified light direction and let it determine each hard-edged shadow plane; do not add a
+    new source, rim flash or glow.
+  texture_and_material: >-
+    Keep filled color areas smooth and clearly separated. Preserve material differences through the
+    requested colors and shapes rather than a blanket surface texture.
+  camera_and_composition: >-
+    Hold the requested viewpoint, crop, framing and placement. Strong value grouping must not alter the
+    arrangement or turn the subject into a different pose.
+  atmosphere_and_mood: >-
+    Maintain the requested tone and setting; contrast comes from the drawing and does not require an
+    explosion, beam or heightened event.
+  rendering_and_quality: >-
+    Use a firm contour, broad local color and a small number of crisp shadow shapes. Keep edges clean and
+    avoid gradients that soften the cel divisions.
+avoidRules:
+  - unrequested energy rays or explosions
+  - extra details that alter identity or function
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-154.webp
+attributes:
+  negativePrompt: unrequested energy rays or explosions, extra details that alter identity or function
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: drawing
+    avoidRules:
+      - text: unrequested energy rays or explosions
+        field: atmosphere_and_mood
+      - text: extra details that alter identity or function
+        field: subject_treatment
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S054
+    sourceTitle: Impact Cel
+    referenceIds:
+      - S26
+      - S32
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: manga-ink-and-impact
+  categoryName: 7. Manga Ink & Impact
+  tags:
+    - trading-card-illustration
+    - manga-ink-and-impact
+    - hard-shadow-cel
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

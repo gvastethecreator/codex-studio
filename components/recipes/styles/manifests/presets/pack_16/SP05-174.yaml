@@ -16,78 +16,35 @@ tags:
   - 90s-golden-era
 visualDna:
   aesthetic: >-
-    Iron Ruin Tragedy Style acts as a transferable anime-prestige router: a iron anime direction
-    shaped by era-aware line economy and genre tone, alongside a ruin anime direction shaped by
-    era-aware line economy and genre tone; fuse it with 90s golden-era anime direction with sharp
-    cel shadows, dramatic closeups, aura effects, urban melancholy, and high-contrast compositing;
-    it routes era, genre, line economy, cel or digital finish, and performance tone without locking
-    prompt content to the source title or sample image.
+    A rough 90s cel finish uses heavy broken ink, chiseled shadow planes and sparse iron-gray or
+    rust-red accents. Its ruin signal is distressed rendering texture, not a ruined setting.
   subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through contours paced by
-    iron tension, readable pose energy, and silhouette discipline, alongside contours paced by ruin
-    tension, readable pose energy, and silhouette discipline; identity should remain readable
-    through anime contour, expression economy, pose energy, shape simplification, and effect
-    hierarchy instead of a required canon character or title scene.
+    Preserve the requested identity and construction. Emphasize existing edges with rough angular line
+    and dense shadow; do not damage, armor or age the subject.
   color_and_tone: >-
-    Map color through iron gray, smoke black, and rust-red accents, alongside a ruin accent system
-    held inside disciplined cel values; anchor it in deep night blues, saturated aura color, jewel
-    accents, warm skin cel tones, smoke grays, and VHS-era contrast; keep value separation clean,
-    cel flats intentional, accents purposeful, and palette behavior attached to the requested
-    content.
+    When color is open, use soot black, iron gray and a restrained rust red. Honor requested hues and
+    keep muted contrast rather than adding blood or fire.
   lighting_and_shadow: >-
-    Use a iron light logic using cel rim, glow behavior, and blocked shadow, alongside a ruin light
-    logic using cel rim, glow behavior, and blocked shadow; combine it with hard-edged rim light,
-    aura bloom, neon spill, twilight gradients, speed-flash cuts, and moody cel shadow blocks;
-    shadows should read as anime light design, rims should clarify form, and glow or effects should
-    support the prompt rather than replacing it.
+    Use broad, hard shadow masses with irregular but readable boundaries. Keep the supplied light
+    direction and avoid dramatic flames or backlight.
   texture_and_material: >-
-    Render worn metal, soot, chipped paint, and heavy mechanical planes, alongside cel paint and ink
-    grain tuned to ruin material contrast; anchor surfaces in painted cels, compositing grain, inked
-    speed marks, smoke layers, leather or metal highlights, and analog scan softness; cel edges,
-    painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent
-    across people, objects, environments, action, and abstractions.
+    Layer dry ink, sparse crosshatching and chipped-looking paint marks as surface rendering. Do not
+    make intact objects physically broken or corroded.
   camera_and_composition: >-
-    Frame around iron converted into reusable framing rhythm and anime timing, alongside ruin
-    converted into reusable framing rhythm and anime timing, then extend it with cinematic closeups,
-    speed-line vectors, dramatic low angles, layered profile cuts, and compressed emotional space;
-    the style should support portraits, props, machines, performances, landscapes, symbols, and full
-    scenes through reusable anime staging grammar instead of one fixed card layout.
+    Use weighty diagonal shapes and dense focal grouping within the existing composition. Preserve the
+    requested camera and location.
   atmosphere_and_mood: >-
-    Carry mood through iron emotional pressure and genre-specific tone, alongside ruin emotional
-    pressure and genre-specific tone; braid it with heightened rivalry, melancholy cool, occult
-    romance, existential drift, heroic escalation, and serious adult tone; the preset can become
-    funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while
-    preserving the chosen anime lineage.
+    Let gravity come from visual weight and rough edges only when it fits the prompt. Do not impose
+    tragedy, war or desolation.
   rendering_and_quality: >-
-    Finish with clean anime finishing that keeps iron identity readable without noisy denoise,
-    alongside clean anime finishing that keeps ruin identity readable without noisy denoise; enforce
-    premium 90s cel finish with crisp anatomy, readable effects, denoised grain, and no cheap
-    anime-filter smear; prioritize clean denoise, stable anatomy or object structure, readable
-    effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or
-    3D-render drift.
+    Keep the silhouette legible beneath heavy blacks; vary line pressure and confine hatching to
+    selected planes. Avoid muddy grain.
   key_features: >-
-    a iron anime direction shaped by era-aware line economy and genre tone, alongside a ruin anime
-    direction shaped by era-aware line economy and genre tone; contours paced by iron tension,
-    readable pose energy, and silhouette discipline, alongside contours paced by ruin tension,
-    readable pose energy, and silhouette discipline; worn metal, soot, chipped paint, and heavy
-    mechanical planes, alongside cel paint and ink grain tuned to ruin material contrast; a iron
-    light logic using cel rim, glow behavior, and blocked shadow, alongside a ruin light logic using
-    cel rim, glow behavior, and blocked shadow; iron converted into reusable framing rhythm and
-    anime timing, alongside ruin converted into reusable framing rhythm and anime timing
+    broken heavy ink; chiseled shadow planes; iron-gray and rust-red accents with selective
+    crosshatching
   creative_brief: >-
-    Apply Iron Ruin Tragedy Style after prompt X as a transferable anime-prestige layer: prompt X
-    supplies subject, action, setting, tone, and intensity, while this preset supplies a iron anime
-    direction shaped by era-aware line economy and genre tone, alongside a ruin anime direction
-    shaped by era-aware line economy and genre tone, alongside contours paced by iron tension,
-    readable pose energy, and silhouette discipline, alongside contours paced by ruin tension,
-    readable pose energy, and silhouette discipline; iron gray, smoke black, and rust-red accents,
-    alongside a ruin accent system held inside disciplined cel values; a iron light logic using cel
-    rim, glow behavior, and blocked shadow, alongside a ruin light logic using cel rim, glow
-    behavior, and blocked shadow; worn metal, soot, chipped paint, and heavy mechanical planes,
-    alongside cel paint and ink grain tuned to ruin material contrast and iron converted into
-    reusable framing rhythm and anime timing, alongside ruin converted into reusable framing rhythm
-    and anime timing, finish discipline, and negative controls without requiring a fixed canon cast,
-    title scene, prop bundle, location, sport, instrument, weapon, or card composition.
+    Apply distressed cel linework and weighty shadow planes to the requested content. Preserve its
+    identity, materials, action and setting; add no ruin, armor, battle or damage.
 avoidRules:
   - realistic
   - 3d render
@@ -99,7 +56,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - flat modern moe
   - generic shonen screenshot
@@ -110,15 +66,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-174.webp
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS
-    noise, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise, readable text
+    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
+    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
+    prompt-literal card, muddy cel noise
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

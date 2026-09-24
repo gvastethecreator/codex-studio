@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP22-107
+packId: pack_22
+name: Dry Pastel Masses
+category: 1. Workshop Painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - workshop-painting
+  - dry-pastel
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Dry-pastel rendering joins broad, soft masses with grain-edged transitions and compact drawing
+    accents.
+  subject_treatment: >-
+    Preserve requested identity, proportions, pose and action. Describe existing forms with connected
+    masses while keeping defining contours and details legible.
+  color_and_tone: >-
+    Dry pastel names the drawing material, not a pastel color palette. Use the requested colors with
+    broad tonal transitions and local contrast.
+  lighting_and_shadow: >-
+    Follow the requested light and shadow pattern. Broad tonal marks may soften transitions without
+    changing the scene lighting or adding a glow.
+  texture_and_material: >-
+    Concentrate grain at pigment transitions and broken edges rather than spreading uniform noise.
+    Do not force a paper-colored background or obscure the requested surface.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and element placement. Do not add a study-sheet
+    arrangement, card border or empty display space unless requested.
+  atmosphere_and_mood: >-
+    Keep the requested mood. Dry pastel and soft marks do not require a mythic subject, nostalgia
+    or a gentle mood.
+  rendering_and_quality: >-
+    Maintain large readable shapes and use compact accents selectively. Keep the grain attached to
+    pigment transitions instead of turning it into a screen-wide texture.
+avoidRules:
+  - uniform surface noise
+  - broad smears that obscure form
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-107.webp
+attributes:
+  negativePrompt: uniform surface noise, broad smears that obscure form
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: drawing
+    avoidRules:
+      - text: uniform surface noise
+        field: rendering_and_quality
+      - text: broad smears that obscure form
+        field: rendering_and_quality
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S007
+    sourceTitle: Pastel Myth
+    referenceIds:
+      - S07
+      - S15
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: workshop-painting
+  categoryName: 1. Workshop Painting
+  tags:
+    - trading-card-illustration
+    - workshop-painting
+    - dry-pastel
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

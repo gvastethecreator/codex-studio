@@ -38,10 +38,10 @@ avoidRules:
   - airbrushed gradients
   - unrequested page borders
   - indiscriminate halftone overlay
-assets: {}
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP20-002.webp
 attributes:
   negativePrompt: airbrushed gradients, unrequested page borders, indiscriminate halftone overlay
-  previewStatus: pending
   intentionalPolicy:
     schemaVersion: 1
     kind: full_style
@@ -67,7 +67,6 @@ attributes:
       - text: indiscriminate halftone overlay
         field: rendering_and_quality
   ui:
-    previewStatus: pending
     kind: full_style
     derivedFrom:
       - SP04-045
@@ -86,4 +85,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

@@ -1,0 +1,120 @@
+schemaVersion: 1
+id: SP16-001
+packId: pack_16
+name: Analog Cel Craft
+category: 1. 70s & 80s Retro Anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - anime-cel
+  - retro-cel-craft
+  - portable-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Drawn anime built with the graphic economy of limited animation: economical ink contours,
+    opaque cel-color shapes and separately painted background planes. Use stable held-shape clarity,
+    variable line weight and a small hierarchy of flat values rather than modeled 3D volume.
+  subject_treatment: >-
+    Preserve the requested identity, anatomy, pose, action, clothing and expression. Translate forms
+    into expressive but economical anime contours; simplify small interior details into legible
+    shapes while keeping the requested gesture and role unchanged.
+  color_and_tone: >-
+    Respect the requested palette and saturation. Organize it into distinct cel-paint regions with
+    clear neighboring values and restrained shadow colors; choose supporting pigments from the
+    depicted scene instead of imposing a fixed era palette.
+  lighting_and_shadow: >-
+    Follow the requested light sources, direction and intensity. Where shading is present, group it
+    into clean-edged cel shapes; use a soft airbrush transition only when the described light calls
+    for one, without inventing another light source or changing the described lighting.
+  texture_and_material: >-
+    Keep paint fields mostly flat, with restrained pigment variation, fine film grain and slight
+    transfer softness across the image. Use airbrush gradients only where the requested image calls
+    for them; keep this image-level texture separate from the depicted materials.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, layout and spatial relationships. Keep ink, paint and
+    background planes legible within that composition without restaging it.
+  atmosphere_and_mood: >-
+    Preserve the requested emotional register and narrative. The production-era treatment changes
+    drawing and paint, not the scene's genre or emotional intention.
+  rendering_and_quality: >-
+    Finish as a legible hand-drawn 2D cel illustration with stable contours, bounded shadow masses
+    and restrained analog softness. Keep grain and edge variation subtle enough to preserve detail;
+    do not shift the image toward 3D rendering or photorealism.
+avoidRules:
+  - unrequested pioneer or hero archetype
+  - unrequested heist, space drama, or source-title plot
+  - fixed canon character or franchise scene
+  - unrequested uniform, weapon, spacecraft, or prop bundle
+  - unrequested heroic diagonal or title-card layout
+  - heavy scratches, dust, or frame damage obscuring linework
+  - 3d render
+  - photorealism
+  - watermark
+  - signature
+  - unrequested text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP16-001.webp
+attributes:
+  negativePrompt: >-
+    unrequested pioneer or hero archetype, unrequested heist, space drama, or source-title plot,
+    fixed canon character or franchise scene, unrequested uniform, weapon, spacecraft, or prop bundle,
+    unrequested heroic diagonal or title-card layout, heavy scratches, dust, or frame damage obscuring
+    linework, 3d render, photorealism, watermark, signature, unrequested text
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: cel animation
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: cel animation
+    avoidRules:
+      - text: unrequested pioneer or hero archetype, or fixed protagonist
+        field: global
+      - text: unrequested heist, space drama, or source-title plot
+        field: global
+      - text: unrequested uniform, weapon, spacecraft, or story-prop bundle
+        field: global
+      - text: unrequested heroic diagonal or title-card layout
+        field: camera_and_composition
+      - text: heavy scratches, dust, or frame damage obscuring linework
+        field: rendering_and_quality
+      - text: 3d render or photorealism
+        field: rendering_and_quality
+      - text: unrequested text, watermark, or signature
+        field: global
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP05-001
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_16
+  packName: Anime Classics & Prestige
+  categoryId: 70s-and-80s-retro-anime
+  categoryName: 1. 70s & 80s Retro Anime
+  tags:
+    - curation-v2
+    - anime-cel
+    - retro-cel-craft
+    - portable-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

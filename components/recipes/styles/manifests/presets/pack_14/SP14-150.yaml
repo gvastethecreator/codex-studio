@@ -1,0 +1,105 @@
+schemaVersion: 1
+id: SP14-150
+packId: pack_14
+name: Mexica Mythic Noir
+version: 1
+supportedTasks: &id002
+  - image_generate
+  - image_edit
+  - style_preset_card
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-150.webp
+attributes:
+  negativePrompt: >-
+    Do not flatten Mexica, Maya, Mixtec and Inca identities into one generic civilization. Do not force sacrifice,
+    gore, a feathered warrior or a sun disk into every subject. Avoid mosaic wallpaper, arbitrary glyphs and floating
+    symbolic props unrelated to the design. Avoid emissive turquoise, circuit-like linework and glossy technological
+    product finishes; keep turquoise opaque and design cues localized to one existing contour or join.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: Do not flatten Mexica, Maya, Mixtec and Inca identities into one generic civilization.
+        field: rendering_and_quality
+      - text: Do not force sacrifice, gore, a feathered warrior or a sun disk into every subject.
+        field: rendering_and_quality
+      - text: Avoid mosaic wallpaper, arbitrary glyphs and floating symbolic props unrelated to the design.
+        field: rendering_and_quality
+      - text:
+          Avoid emissive turquoise, circuit-like linework and glossy technological product finishes; keep turquoise
+          opaque and design cues localized to one existing contour or join.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+    derivedFrom:
+      - SP14-032
+category: Mexica Mythology
+tags: &id001
+  - curation-v2
+  - identity-reviewed
+  - visual-evaluation-pending
+  - mexica-mythology
+visualDna:
+  aesthetic: >-
+    Mexica-inspired mythic illustration uses compact silhouettes, stepped planes and strong dark-light tension.
+    Choose one cue for the image: a serpent-like curve following an existing joint, or a feather rhythm shaping
+    one existing contour. Render the chosen cue in opaque, matte pigment or fitted stone-like color; a small
+    turquoise inset may support it, but not carry the identity by color alone.
+  subject_treatment:
+    Retain the requested subject, action and recognizable identity. Rework unspecified equipment,
+    garment structure or built forms through stepped joints and the single selected serpent or feather cue,
+    integrated into one existing edge or connection. Keep the original geometry legible; do not add a literal snake,
+    feathers, emblem or other object.
+  color_and_tone:
+    Set brilliant turquoise against near-black planes, warm red accents and restrained pale highlights. Keep the
+    chromatic center concentrated around the selected design detail. Preserve explicitly requested base colors;
+    where the palette is open, use turquoise as opaque pigment or a small matte inset, never as an emissive glow.
+  lighting_and_shadow:
+    Preserve the requested light direction and time. Use decisive painted light and shadow planes with restrained
+    matte highlights; avoid polished specular glints and emissive turquoise. Keep the focal silhouette readable and
+    retain detail in dark surfaces without introducing technological lighting.
+  texture_and_material:
+    Contrast one small fitted, opaque mosaic or feather-rhythm detail with matte dark planes and restrained pale
+    accents. Keep stone-like tesserae in a single bounded inset or join on an existing element and let them follow
+    its construction; do not make tile lines resemble circuitry or trace every edge, leg or surface.
+  camera_and_composition:
+    Keep requested viewpoint and staging. Build a strong primary mass with one counter-direction
+    and a limited number of coiling or stepped supporting rhythms. Leave negative space around the subject;
+    do not impose a calendar disk, temple front or central mask.
+  atmosphere_and_mood:
+    Intense, poised and cosmically charged, expressed through compressed shapes, precise
+    ornament and strong value tension. Do not equate the culture with gore or automatic sacrifice scenes.
+  rendering_and_quality:
+    Render as graphic narrative illustration with opaque painted shadows, confident cut contours and one selective
+    mosaic or feather detail. Simplify non-focal forms and reserve intricate workmanship for the chosen construction
+    cue; avoid a polished sci-fi product render. No pseudo-writing, stock fantasy
+    armor or decorative border is needed.
+avoidRules:
+  - Do not flatten Mexica, Maya, Mixtec and Inca identities into one generic civilization.
+  - Do not force sacrifice, gore, a feathered warrior or a sun disk into every subject.
+  - Avoid mosaic wallpaper, arbitrary glyphs and floating symbolic props unrelated to the design.
+  - Avoid emissive turquoise, circuit-like linework and glossy technological product finishes; keep turquoise opaque
+    and design cues localized to one existing contour or join.
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mexica-mythology
+  categoryName: Mexica Mythology
+  tags: *id001
+  supportedTasks: *id002
+  hasDefaultImage: true

@@ -1,0 +1,103 @@
+schemaVersion: 1
+id: SP22-180
+packId: pack_22
+name: Drypoint Veil
+category: 10. Printmaking & Reproduction
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - printmaking-and-reproduction
+  - velvet-intaglio-line
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Velvet-edged intaglio drawing uses fine directional lines and softly accumulated shadow, with
+    a slightly diffused edge that stays distinct from sharp burin engraving.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Let softness follow the line
+    marks without blurring the subject or changing its features.
+  color_and_tone: >-
+    Keep the requested palette and value relationships. Use gentle tonal density with localized darks
+    rather than imposing muted colors or monochrome.
+  lighting_and_shadow: >-
+    Follow the requested light direction and contrast. Build soft shadow density along existing forms
+    while retaining clean highlights and original light placement.
+  texture_and_material: >-
+    Suggest a velvety ink edge through restrained, directional softness. Preserve material distinction
+    and avoid global blur, wash or unrequested surface aging.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, pose, crop and placement. A softer line does not add a page,
+    border, lettering or card layout.
+  atmosphere_and_mood: >-
+    Keep the requested setting and mood. Intaglio line softness changes the mark, not the depicted
+    scene.
+  rendering_and_quality: >-
+    Establish silhouette and large values first, then layer fine lines with gentle density changes.
+    Keep edges soft but controlled, not blurred.
+avoidRules:
+  - global blur or watercolor-like wash
+  - forced muted palette or unrequested surface aging
+  - unrequested page, border, lettering, or period motifs
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-180.webp
+attributes:
+  negativePrompt: >-
+    global blur or watercolor-like wash, forced muted palette or unrequested surface aging, unrequested page,
+    border, lettering, or period motifs
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: drawing
+    avoidRules:
+      - text: global blur or watercolor-like wash
+        field: rendering_and_quality
+      - text: forced muted palette or unrequested surface aging
+        field: color_and_tone
+      - text: unrequested page, border, lettering, or period motifs
+        field: global
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S080
+    sourceTitle: Drypoint Veil
+    referenceIds:
+      - S61
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    derivedFrom:
+      - TCG-S080
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: printmaking-and-reproduction
+  categoryName: 10. Printmaking & Reproduction
+  tags:
+    - trading-card-illustration
+    - printmaking-and-reproduction
+    - velvet-intaglio-line
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

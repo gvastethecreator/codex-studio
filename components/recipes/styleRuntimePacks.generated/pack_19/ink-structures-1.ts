@@ -28,7 +28,6 @@ export const GENERATED_STYLE_PRESETS = [
         'Maintain crisp carved boundaries, confident solid blacks and selective marks. Do not cover the whole image with uniform distress.',
     },
     ui: {
-      previewStatus: 'pending',
       kind: 'full_style',
       derivedFrom: ['SP04-061'],
       visualEvaluation: 'pending',
@@ -59,7 +58,6 @@ export const GENERATED_STYLE_PRESETS = [
         'Resolve important contours cleanly while allowing secondary lines to remain open. Keep joints, overlaps and tangencies readable.',
     },
     ui: {
-      previewStatus: 'pending',
       kind: 'full_style',
       derivedFrom: ['SP06-018'],
       visualEvaluation: 'pending',
@@ -90,7 +88,6 @@ export const GENERATED_STYLE_PRESETS = [
         'Use decisive stroke groups, clean focal edges and restrained surface noise. Avoid a generic grunge layer applied equally everywhere.',
     },
     ui: {
-      previewStatus: 'pending',
       kind: 'full_style',
       derivedFrom: ['SP06-008'],
       visualEvaluation: 'pending',
@@ -120,7 +117,6 @@ export const GENERATED_STYLE_PRESETS = [
         'Maintain a clear difference between controlled pooling and accidental stains. Avoid uniform watercolor texture on every surface.',
     },
     ui: {
-      previewStatus: 'pending',
       kind: 'full_style',
       derivedFrom: ['SP06-008'],
       visualEvaluation: 'pending',

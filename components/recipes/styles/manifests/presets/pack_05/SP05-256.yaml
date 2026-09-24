@@ -16,74 +16,32 @@ tags:
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: >-
-    Inuyasha - Shrine-Well Sengoku Pursuit acts as a transferable anime-battle/worlds router:
-    Inuyasha - Shrine-Well Sengoku Pursuit, folklore-threshold romance style grammar with talisman
-    color, temporal nostalgia, purifying aura, and mythic dusk motion; combine it with isekai and
-    high-fantasy anime grammar with magic-system readability, quest-world texture, luminous
-    adventure, and character-independent fantasy routing; named titles, studios, or lineage words
-    may guide style, but they must not require canon cast, title-scene replication, screenshots,
-    logos, or one fixed card concept.
+    Folkloric painted cel language with tapered ink contours, warm red accents, and faded indigo
+    dusk values.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Inuyasha
-    - Shrine-Well Sengoku Pursuit, folklore-threshold romance style grammar with talisman color,
-    temporal nostalgia, purifying aura, and mythic dusk motion as portable contour, motion grammar,
-    surface language, and emotional pressure without requiring canon elements or a default action
-    setup.
+    Keep the requested subject and action; use flowing tapered marks to describe existing movement,
+    not a pursuit.
   color_and_tone: >-
-    Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens,
-    parchment neutrals, magical violets, and controlled pastel or dark contrast; let Inuyasha -
-    Shrine-Well Sengoku Pursuit, folklore-threshold romance style grammar with talisman color,
-    temporal nostalgia, purifying aura, and mythic dusk motion choose accent intensity, value
-    contrast, emotional temperature, and power-system separation while staying attached to prompt X.
+    Vermilion, cream, muted indigo, and charcoal create nostalgic contrast; defer to requested
+    colors.
   lighting_and_shadow: >-
-    Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and
-    clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Inuyasha - Shrine-Well Sengoku Pursuit, folklore-threshold romance
-    style grammar with talisman color, temporal nostalgia, purifying aura, and mythic dusk motion
-    without replacing prompt X with a stock anime frame.
+    Soft dusk-like shadow and restrained edge light retain warmth without requiring night or a new
+    light source.
   texture_and_material: >-
-    Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel
-    glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Inuyasha
-    - Shrine-Well Sengoku Pursuit, folklore-threshold romance style grammar with talisman color,
-    temporal nostalgia, purifying aura, and mythic dusk motion controlled, denoised, and coherent
-    across bodies, objects, environments, abstractions, and action.
+    Faded color, tapering brush lines, and subtle grain give the cel finish a timeworn feel.
   camera_and_composition: >-
-    Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed
-    cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook
-    scale; convert Inuyasha - Shrine-Well Sengoku Pursuit, folklore-threshold romance style grammar
-    with talisman color, temporal nostalgia, purifying aura, and mythic dusk motion into reusable
-    perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style
-    sample layout.
+    Preserve the requested framing; use gentle horizontal rhythm and flowing contours without adding
+    a threshold.
   atmosphere_and_mood: >-
-    Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional
-    craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic,
-    comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while
-    keeping the anime-battle lineage readable.
+    Nostalgic and mythic in tone, with no imposed folklore or conflict.
   rendering_and_quality: >-
-    Finish with clean fantasy-anime finish with stable anatomy and creature/object structure,
-    controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize
-    stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy
-    darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+    Keep the focal silhouette sharp enough to read through soft color fade and low-contrast detail.
   key_features: >-
-    Inuyasha - Shrine-Well Sengoku Pursuit, folklore-threshold romance style grammar with talisman
-    color, temporal nostalgia, purifying aura, and mythic dusk motion; clear fantasy silhouettes,
-    spell-effect hierarchy, surface simplification, creature or object readability, and portal-like
-    transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food
-    steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals,
-    transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic
-    magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with
-    stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic
-    text, and no generic isekai gloss
+    Tapered ink, vermilion accents, indigo fade, and restrained luminous edges carry a wistful
+    motion.
   creative_brief: >-
-    Apply Inuyasha - Shrine-Well Sengoku Pursuit after prompt X as a transferable
-    anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity,
-    while this preset supplies Inuyasha - Shrine-Well Sengoku Pursuit, folklore-threshold romance
-    style grammar with talisman color, temporal nostalgia, purifying aura, and mythic dusk motion,
-    isekai and high-fantasy anime grammar with magic-system readability, quest-world texture,
-    luminous adventure, and character-independent fantasy routing, finish discipline, and negative
-    controls without forcing canon cast, title scene, screenshot, card pose, default monster,
-    default combat prop, or prompt-literal card.
+    Apply the nostalgic cel palette and flowing ink contours to the requested content without adding
+    talismans, shrines, or a portal.
 avoidRules:
   - realistic
   - 3d render
@@ -95,7 +53,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - named franchise likeness
   - red-robed character copy
@@ -113,7 +70,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -121,11 +77,10 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, named franchise likeness, red-robed character copy,
-    shrine hallway, sword, demon attack, readable talisman text, well prop lock, RPG UI, readable
-    magic text, generic isekai wallpaper, fixed canon character, title scene replication, required
-    source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo,
-    muddy noisy darks
+    artifacts, watermark, signature, named franchise likeness, red-robed character copy, shrine
+    hallway, sword, demon attack, readable talisman text, well prop lock, RPG UI, readable magic
+    text, generic isekai wallpaper, fixed canon character, title scene replication, required
+    source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

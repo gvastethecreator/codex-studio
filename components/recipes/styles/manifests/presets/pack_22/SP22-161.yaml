@@ -1,0 +1,104 @@
+schemaVersion: 1
+id: SP22-161
+packId: pack_22
+name: Schematic Ink
+category: 8. Technical Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - technical-illustration
+  - schematic-ink-lines
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Illustrative ink organizes visible structure through a clear line hierarchy: a defining contour,
+    lighter interior marks and restrained shadow.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Describe only visible forms and
+    relationships; do not invent hidden construction.
+  color_and_tone: >-
+    Preserve the requested palette. Use measured darker line accents while keeping local colors
+    distinct instead of forcing monochrome.
+  lighting_and_shadow: >-
+    Follow the requested light direction and contrast. Keep shading sparse and tied to visible form
+    without adding technical markings.
+  texture_and_material: >-
+    Keep the surface clean with little or no paper texture. Retain material cues from the request
+    rather than converting everything into a diagram.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, pose, crop and placement. Do not add dimensions, labels, text,
+    frame or card layout.
+  atmosphere_and_mood: >-
+    Keep the requested setting and tone. Line hierarchy describes the image; it does not add a scene,
+    backdrop or explanatory narrative.
+  rendering_and_quality: >-
+    Establish the outer contour, then use fewer interior lines for visible joins and details. Keep
+    line weight legible and omit annotations or unsupported precision.
+avoidRules:
+  - invented hidden parts or engineering precision
+  - unrequested dimensions, labels, or technical text
+  - unrequested frame or card layout
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-161.webp
+attributes:
+  negativePrompt: >-
+    invented hidden parts or engineering precision, unrequested dimensions, labels, or technical text,
+    unrequested frame or card layout
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: drawing
+    avoidRules:
+      - text: invented hidden parts or engineering precision
+        field: subject_treatment
+      - text: unrequested dimensions, labels, or technical text
+        field: global
+      - text: unrequested frame or card layout
+        field: global
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S061
+    sourceTitle: Schematic Ink
+    referenceIds:
+      - S46
+      - S60
+    evidenceStatus: reuse_review
+  ui:
+    kind: full_style
+    derivedFrom:
+      - TCG-S061
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: technical-illustration
+  categoryName: 8. Technical Illustration
+  tags:
+    - trading-card-illustration
+    - technical-illustration
+    - schematic-ink-lines
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -108,6 +108,8 @@ describe('Style catalog loading', () => {
   });
 
   it('ignores a late rejection from the previous pack scope', async () => {
+    // The pack picker mounts this panel with React.lazy; resolve it before the race assertion.
+    await import('../ui/GsapDropdown');
     let rejectInitial!: (error: Error) => void;
     vi.mocked(loadStylePresetCatalogSearchIndex).mockImplementationOnce(
       () =>

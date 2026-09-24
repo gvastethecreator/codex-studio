@@ -16,74 +16,32 @@ tags:
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: >-
-    The Vision of Escaflowne - Windblown Tarot Fantasy acts as a transferable anime-battle/worlds
-    router: The Vision of Escaflowne - Windblown Tarot Fantasy, windblown prophecy romance style
-    grammar with carmine sky, angular destiny shapes, and emotional forward motion; combine it with
-    isekai and high-fantasy anime grammar with magic-system readability, quest-world texture,
-    luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage
-    words may guide style, but they must not require canon cast, title-scene replication,
-    screenshots, logos, or one fixed card concept.
+    Dynamic painted cel language with sharp angular shapes, carmine accents, and fast directional
+    linework.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply The
-    Vision of Escaflowne - Windblown Tarot Fantasy, windblown prophecy romance style grammar with
-    carmine sky, angular destiny shapes, and emotional forward motion as portable contour, motion
-    grammar, surface language, and emotional pressure without requiring canon elements or a default
-    action setup.
+    Preserve the requested action; let contours follow its existing motion, using sharp turns and
+    tapered strokes.
   color_and_tone: >-
-    Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens,
-    parchment neutrals, magical violets, and controlled pastel or dark contrast; let The Vision of
-    Escaflowne - Windblown Tarot Fantasy, windblown prophecy romance style grammar with carmine sky,
-    angular destiny shapes, and emotional forward motion choose accent intensity, value contrast,
-    emotional temperature, and power-system separation while staying attached to prompt X.
+    Carmine and warm red marks cut through cool blue-gray values; retain any explicit palette.
   lighting_and_shadow: >-
-    Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and
-    clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from The Vision of Escaflowne - Windblown Tarot Fantasy, windblown
-    prophecy romance style grammar with carmine sky, angular destiny shapes, and emotional forward
-    motion without replacing prompt X with a stock anime frame.
+    Directional edge light and crisp shadow breaks strengthen existing movement without creating a
+    new event.
   texture_and_material: >-
-    Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel
-    glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in The
-    Vision of Escaflowne - Windblown Tarot Fantasy, windblown prophecy romance style grammar with
-    carmine sky, angular destiny shapes, and emotional forward motion controlled, denoised, and
-    coherent across bodies, objects, environments, abstractions, and action.
+    Smooth painted fills with narrow dry-brush accents give surfaces energy without changing their
+    material.
   camera_and_composition: >-
-    Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed
-    cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook
-    scale; convert The Vision of Escaflowne - Windblown Tarot Fantasy, windblown prophecy romance
-    style grammar with carmine sky, angular destiny shapes, and emotional forward motion into
-    reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one
-    fixed style sample layout.
+    Keep the requested camera; use angled overlaps and directional emphasis inside the existing
+    frame.
   atmosphere_and_mood: >-
-    Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional
-    craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic,
-    comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while
-    keeping the anime-battle lineage readable.
+    Emotionally forward and dramatic, with intensity tuned to the prompt.
   rendering_and_quality: >-
-    Finish with clean fantasy-anime finish with stable anatomy and creature/object structure,
-    controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize
-    stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy
-    darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+    Hold silhouettes clear through crisp edges, controlled contrast, and a few tapered marks.
   key_features: >-
-    The Vision of Escaflowne - Windblown Tarot Fantasy, windblown prophecy romance style grammar
-    with carmine sky, angular destiny shapes, and emotional forward motion; clear fantasy
-    silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and
-    portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture,
-    stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path
-    diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues,
-    symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish
-    with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic
-    text, and no generic isekai gloss
+    Carmine accents, angular contour, slanted spacing, and quick light shifts create a forceful
+    sense of motion.
   creative_brief: >-
-    Apply The Vision of Escaflowne - Windblown Tarot Fantasy after prompt X as a transferable
-    anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity,
-    while this preset supplies The Vision of Escaflowne - Windblown Tarot Fantasy, windblown
-    prophecy romance style grammar with carmine sky, angular destiny shapes, and emotional forward
-    motion, isekai and high-fantasy anime grammar with magic-system readability, quest-world
-    texture, luminous adventure, and character-independent fantasy routing, finish discipline, and
-    negative controls without forcing canon cast, title scene, screenshot, card pose, default
-    monster, default combat prop, or prompt-literal card.
+    Restyle the requested scene through angular cel drawing and carmine motion accents; keep its
+    location and action as specified.
 avoidRules:
   - realistic
   - 3d render
@@ -95,7 +53,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - named franchise likeness
   - tarot card
@@ -111,7 +68,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -119,10 +75,10 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, named franchise likeness, tarot card, mecha copy,
-    weapon-first pose, readable symbol, RPG UI, readable magic text, generic isekai wallpaper, fixed
-    canon character, title scene replication, required source-frame look, cosplay, generic anime
-    filter, prompt-required card, readable text, logo, muddy noisy darks
+    artifacts, watermark, signature, named franchise likeness, tarot card, mecha copy, weapon-first
+    pose, readable symbol, RPG UI, readable magic text, generic isekai wallpaper, fixed canon
+    character, title scene replication, required source-frame look, cosplay, generic anime filter,
+    prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -1,0 +1,3637 @@
+{
+  "date": "2026-09-23",
+  "oldPresets": [
+    {
+      "id": "SP14-001",
+      "sha256": "92b67c31131cd681a8837627744fabf601d47c4dd62115f679181be903eec43b",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-001.yaml"
+    },
+    {
+      "id": "SP14-002",
+      "sha256": "a80174f93675e7072cf374d5f3f0400e935f8488e49e984785b506831fc7ac94",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-002.yaml"
+    },
+    {
+      "id": "SP14-003",
+      "sha256": "ebff29a3d56d313c4b06372e93189ead7563a18bf3a6b3ff5c4aa4e7759a97f5",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-003.yaml"
+    },
+    {
+      "id": "SP14-004",
+      "sha256": "e2fc27546a3dbf62489e1b5ce593d7f4908736016d8ed27770f74c5cae238e62",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-004.yaml"
+    },
+    {
+      "id": "SP14-005",
+      "sha256": "658c70cbe4d047ebecce8cc1c8f3cfdb101d66a1a9cf066a65b32c588016e6c8",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-005.yaml"
+    },
+    {
+      "id": "SP14-006",
+      "sha256": "8b638c3acf0c9ff4cb4f7cddf338f2b6de7206f23fca199567ac9ecab05b05a6",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-006.yaml"
+    },
+    {
+      "id": "SP14-007",
+      "sha256": "10df78f256e1cb6b6154ead051e7bcb58c49961a950b3392cd6cf3d978d3931a",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-007.yaml"
+    },
+    {
+      "id": "SP14-008",
+      "sha256": "c63d15257a49f4e6876a8ce1bcecee657fe9ff62299452503bfedd4f45da93bc",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-008.yaml"
+    },
+    {
+      "id": "SP14-009",
+      "sha256": "bc605c8e086690cf0fddc2e654a9fb4cf4d91eff54cf8a5dfeb88abfeb2b9ee2",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-009.yaml"
+    },
+    {
+      "id": "SP14-010",
+      "sha256": "a4cc23027af79aa21743364cbfb4f8514584991301530b14d7e79af6b360d5c5",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-010.yaml"
+    },
+    {
+      "id": "SP14-011",
+      "sha256": "007984b7979be67466f4e9569fae74444049d98578e54785130468ae6ad51ba5",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-011.yaml"
+    },
+    {
+      "id": "SP14-012",
+      "sha256": "dd86c0b9a5141b7310dd3af9f172d2b4e8ff30f35821299b08ca20c56aaf7e85",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-012.yaml"
+    },
+    {
+      "id": "SP14-013",
+      "sha256": "6b5d36053fee350a716abe47638e860fc4fbcb601e68e069f3bdc32a3a50f541",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-013.yaml"
+    },
+    {
+      "id": "SP14-014",
+      "sha256": "ff2efb3bd74d5ffaac7251292969cb2b5870a1ee2ea010fc1dd0b778c13d3e0a",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-014.yaml"
+    },
+    {
+      "id": "SP14-015",
+      "sha256": "a2e4d6351a98337c00601da638bac65d5a65e623f783692720a635a4fb5be344",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-015.yaml"
+    },
+    {
+      "id": "SP14-016",
+      "sha256": "7da00cf3b24982d41931317d7816cc3b09e2128b98d83c619023d522de8d633b",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-016.yaml"
+    },
+    {
+      "id": "SP14-017",
+      "sha256": "fc08a356671ea928f1eaba4ce050c9d91d218c3a1f057893968b2fb43fbe997a",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-017.yaml"
+    },
+    {
+      "id": "SP14-018",
+      "sha256": "ebe809d1d79a2fdce9fc72f97c312c024a4ac2d38e08b566442c3da9981b5794",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-018.yaml"
+    },
+    {
+      "id": "SP14-019",
+      "sha256": "144a1bd87a21502dbc738bd2488b5a7d5e0f5c9b00572e099cd0ed2b9af4a7a5",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-019.yaml"
+    },
+    {
+      "id": "SP14-020",
+      "sha256": "f9a75d82c2acf9efc27a15a82923dabb849d13be651db6768153ad9c4058963f",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-020.yaml"
+    },
+    {
+      "id": "SP14-021",
+      "sha256": "b9ed7c8d9c6e224d6f9aa3d8b475f02c782c70ef47855d0b6ef4ccff5f333f01",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-021.yaml"
+    },
+    {
+      "id": "SP14-022",
+      "sha256": "8395bf285330996ee2333d6fdabd4b5a54b87c5512960477bdf8218a52c63d7d",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-022.yaml"
+    },
+    {
+      "id": "SP14-023",
+      "sha256": "ad1d8500fc7b32f7c03466c6472a0bace094aeb87548ec946f17f44b1432a812",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-023.yaml"
+    },
+    {
+      "id": "SP14-024",
+      "sha256": "8239532cb35b29e20de0a28419c1ae1ade165115319ba51ebf0168dea1f5c4c3",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-024.yaml"
+    },
+    {
+      "id": "SP14-025",
+      "sha256": "77f4f76a8e28d6c7a52940edb8df499802331d7f807ba851e48c5e848869ce77",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-025.yaml"
+    },
+    {
+      "id": "SP14-026",
+      "sha256": "1582511ee95a154fb599a7102e1b0d52329853070a804ee8330cfebd742622d7",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-026.yaml"
+    },
+    {
+      "id": "SP14-027",
+      "sha256": "9ae8da4c7d9aa9d5a0d3c74bb58ef141227ba63e9820b3cb4465cb0741257b91",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-027.yaml"
+    },
+    {
+      "id": "SP14-028",
+      "sha256": "3f98ec5be6a12c8f044eb70ecea3bb5f790cd33a56846391681ae19b8b834ae5",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-028.yaml"
+    },
+    {
+      "id": "SP14-029",
+      "sha256": "0a631e12f8c738cb1029f35fd0aa0225f001d1d958bfcc79aa63c1872f1ce549",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-029.yaml"
+    },
+    {
+      "id": "SP14-030",
+      "sha256": "db1563d5115c3911d6e503bf6466cf7408f9fb6305d817921fcc43f56137e1df",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-030.yaml"
+    },
+    {
+      "id": "SP14-031",
+      "sha256": "8b0149a3d9ff10cfad252f44dbfbaafcb5da840dd78b8e5019b409e404af238a",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-031.yaml"
+    },
+    {
+      "id": "SP14-032",
+      "sha256": "bf2f9923f18d89eb450698b92cf01a0681581b5ad989f10586c3825ab94f95b4",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-032.yaml"
+    },
+    {
+      "id": "SP14-033",
+      "sha256": "ba24610500d25674c0f62826d4c6f0c5624a326e56047b8d0a338f40eab3b804",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-033.yaml"
+    },
+    {
+      "id": "SP14-034",
+      "sha256": "b0a2ebb08ce7e43937de0ba44940136eac0975119c7f607d9887f16730ca6315",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-034.yaml"
+    },
+    {
+      "id": "SP14-035",
+      "sha256": "bbd302974bb277349f7321d980275be1ee197ddde8ab4e26e98a7dcc209adfb7",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-035.yaml"
+    },
+    {
+      "id": "SP14-036",
+      "sha256": "ff72501c590ad29a3733444147813288063366af18fef1faed54910952aabcd1",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-036.yaml"
+    },
+    {
+      "id": "SP14-037",
+      "sha256": "cee5dcd2f16c8d3fba54aa31ac3d30fd617d1d4510c04b8ddf146b066175db8e",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-037.yaml"
+    },
+    {
+      "id": "SP14-038",
+      "sha256": "e2e3fb4cef6f94ae5608600c34f1a9e66d08ee03eb42b91842971449b4324bf8",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-038.yaml"
+    },
+    {
+      "id": "SP14-039",
+      "sha256": "d22bd1716be3721df66232a90918a6c84b45652993e9441cc469c60128eb43ee",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-039.yaml"
+    },
+    {
+      "id": "SP14-040",
+      "sha256": "c46e076f8589fd2ea3799cfb045424e094ccb09a86ef345ab8409032138314af",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-040.yaml"
+    },
+    {
+      "id": "SP14-041",
+      "sha256": "0117ced53dd122763b1dc5958d19af1777c1d7bd8558071f54549fbd7da20237",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-041.yaml"
+    },
+    {
+      "id": "SP14-042",
+      "sha256": "bf769f59969249bf57d37b00417e65a7ebd6cefedf7b4e2b52cf8b3519819db3",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-042.yaml"
+    },
+    {
+      "id": "SP14-043",
+      "sha256": "1c0a75fc689953f78ae4cb5394908a36675440955d1a98ac87aec17af783778f",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-043.yaml"
+    },
+    {
+      "id": "SP14-044",
+      "sha256": "ae76c1185e273822d3d8b2533fb3a69d7f363eef673da43652c7f0c6527e7f85",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-044.yaml"
+    },
+    {
+      "id": "SP14-045",
+      "sha256": "be30aed4cff3a1dbdd529991a4cde799d9613b77a7f2249d38fa042f86f381b9",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-045.yaml"
+    },
+    {
+      "id": "SP14-046",
+      "sha256": "c1509dac295b8bf5ddb4170fe9411fb654eaf889e218a8f6393667192fcecc5c",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-046.yaml"
+    },
+    {
+      "id": "SP14-047",
+      "sha256": "c0b1a362340f112b71d3cdab6703c1fd02403464c82f7b6cecfe9123bf8981e8",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-047.yaml"
+    },
+    {
+      "id": "SP14-048",
+      "sha256": "ebef27f4e0e64c083dc7cebb3f39d3983d64cc49ca1eee1300f1eb119637650f",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-048.yaml"
+    },
+    {
+      "id": "SP14-049",
+      "sha256": "aa7cd19407dac4c133b18204ee7611e8810ef510b97d505ca46d023c5bd723f4",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-049.yaml"
+    },
+    {
+      "id": "SP14-050",
+      "sha256": "e67201a0497c6174cbc017a3f47fcca2c7b70bed579ad8962bd65937dc734908",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-050.yaml"
+    },
+    {
+      "id": "SP14-051",
+      "sha256": "19c07a5f315ca8b1ed6c6152f9c87be9d7c070abaadf7d85e642790533a8ebf3",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-051.yaml"
+    },
+    {
+      "id": "SP14-052",
+      "sha256": "1a01e16da162ea09481f997182fa14ec61632bc17fd881c616f311a50c1150db",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-052.yaml"
+    },
+    {
+      "id": "SP14-053",
+      "sha256": "9744bd33e38240d08e0bb9e00f117b6040e19cd216b551675ac8527e85df4730",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-053.yaml"
+    },
+    {
+      "id": "SP14-054",
+      "sha256": "23e1d2003b7a4ee69ab1ecd6dccacc89d777467972fd2d27df0712ee6591a400",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-054.yaml"
+    },
+    {
+      "id": "SP14-055",
+      "sha256": "4d0d6b51c50731b2d0c25f1bcdb5f39a263dd45bcda623acb2f3b20769b84a56",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-055.yaml"
+    },
+    {
+      "id": "SP14-056",
+      "sha256": "1b248781218928c743892487cff6a54572b875da621e042524b20fff9733d27c",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-056.yaml"
+    },
+    {
+      "id": "SP14-057",
+      "sha256": "3d3a82b7abe994576f699810dd02cc4687195b049ffbe9866d42c739dfeb8677",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-057.yaml"
+    },
+    {
+      "id": "SP14-058",
+      "sha256": "33ebdb25cba68b9a0f4f5584a39745de60c72193a44c84e14a875894345304b8",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-058.yaml"
+    },
+    {
+      "id": "SP14-059",
+      "sha256": "a04a3c16fb4d974d98d3b7f1802e1eef55f072411e8b469b7b3b35e95ddfd2b8",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-059.yaml"
+    },
+    {
+      "id": "SP14-060",
+      "sha256": "7728babb78224d44c5f06c70690cad4a2b0f25777a9bc49294d9d9b3e80ed148",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-060.yaml"
+    },
+    {
+      "id": "SP14-061",
+      "sha256": "90e7c7d32eac17845269f6b26e139962f527c9db678973e8ef4c6b4e2910a1cd",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-061.yaml"
+    },
+    {
+      "id": "SP14-062",
+      "sha256": "5d9cb381dba129a31ce454b7c8434f3665af332ffe0ec1c17784d1ba4ca61c88",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-062.yaml"
+    },
+    {
+      "id": "SP14-063",
+      "sha256": "0be8069432dc856aeff53b62b540c4acddd4be153a0265a256a11b2fd1a377b0",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-063.yaml"
+    },
+    {
+      "id": "SP14-064",
+      "sha256": "5663244d0eb32b68a2c3aaed300e95851c39526f3c84911c5ab3dc7a2202efe6",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-064.yaml"
+    },
+    {
+      "id": "SP14-065",
+      "sha256": "b50605f839060f8257653531a29193cca1e86162fd64dec2a36e1005b95926e6",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-065.yaml"
+    },
+    {
+      "id": "SP14-066",
+      "sha256": "f6b44103381d08ae36667cbc8ed18d6d01ef2f88e2b933a2efbf6990d9e3f73d",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-066.yaml"
+    },
+    {
+      "id": "SP14-067",
+      "sha256": "24813d9c11e0825adbeff25d18e18738b31a724e557894143b3575d6ee0f5059",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-067.yaml"
+    },
+    {
+      "id": "SP14-068",
+      "sha256": "0e9a32ab34f092f70bd0bd5a4c091eece8721ec8b866c4ab112a7a537a466458",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-068.yaml"
+    },
+    {
+      "id": "SP14-069",
+      "sha256": "20b4ab3cb16e73c745bde411a87ea721bde7a46738178986ac4fc81cf836399d",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-069.yaml"
+    },
+    {
+      "id": "SP14-070",
+      "sha256": "3dbfcb70bdb254ea747f23b240f7a55a73666889d68ea0cf0f72904fec831a2a",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-070.yaml"
+    },
+    {
+      "id": "SP14-071",
+      "sha256": "6b82d4f2d7f331f7f94f3870f09cf5a3f204d84f432c398fb0a254e35eec525d",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-071.yaml"
+    },
+    {
+      "id": "SP14-072",
+      "sha256": "bf123c62339d7b88b7050d7fd6e16f2aec4e92b35f4dae8a8c14339c0b08e5d1",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-072.yaml"
+    },
+    {
+      "id": "SP14-073",
+      "sha256": "2c39c79ccbe1f64a03659b269f8d1e34a795df9334b9ce3262253c289c954caa",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-073.yaml"
+    },
+    {
+      "id": "SP14-074",
+      "sha256": "8d439073e3333a77463621a7c5b301d00f92d52e42bec614f8181cbbca85d0c0",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-074.yaml"
+    },
+    {
+      "id": "SP14-075",
+      "sha256": "a0159e198a864677003e1f1395b410e936924f28a687e5783288e5d63930f977",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-075.yaml"
+    },
+    {
+      "id": "SP14-076",
+      "sha256": "f89f2d3ca2c36b3240fa680109a9c0c7dec930f5045a7cee7c85fd2e0b3c1543",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-076.yaml"
+    },
+    {
+      "id": "SP14-077",
+      "sha256": "b98b1b548d07e8cf0665f8b24bbc0c6ab948ad9858267a7194feff714a3c7c30",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-077.yaml"
+    },
+    {
+      "id": "SP14-078",
+      "sha256": "3ae1ee125dc59e5f15bf7f1bdce929a0787ff686236f9a3e94b2870f7aed44ad",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-078.yaml"
+    },
+    {
+      "id": "SP14-079",
+      "sha256": "eb7290e07e04b048d27846f01fda60d8263d6971f69bd9104e73b75c403c574b",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-079.yaml"
+    },
+    {
+      "id": "SP14-080",
+      "sha256": "920fad694940ca029bad28f2e1d4d5687e74a6f00f9f604aafc49dc186cc08ed",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-080.yaml"
+    },
+    {
+      "id": "SP14-081",
+      "sha256": "1238fd2aae56551339a67fb910b25ac0422e93283c257a6f5be0071f246b7f09",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-081.yaml"
+    },
+    {
+      "id": "SP14-082",
+      "sha256": "4e951d6238e3772773753ad35432e86931547dffae4c32c36b349b651dbb4835",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-082.yaml"
+    },
+    {
+      "id": "SP14-083",
+      "sha256": "fd61d393ff27c8e0e4c3c35ee781899106b8dc7904863c393291e1d6ccd1f06d",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-083.yaml"
+    },
+    {
+      "id": "SP14-084",
+      "sha256": "b4047eeb626c444fd2d4f0e2b34c31dd0708ee4acfefdb5d389bfd32dcd47e09",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-084.yaml"
+    },
+    {
+      "id": "SP14-085",
+      "sha256": "fbb323f6a11babc213a5ad8200b8a0eeb76f4f7bc93d73f343a5c6dc6a1e5a28",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-085.yaml"
+    },
+    {
+      "id": "SP14-086",
+      "sha256": "dd6786ce26a76bfbe263e2b33a1b392d0efea58ef1a8a1da8870eba3789342a1",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-086.yaml"
+    },
+    {
+      "id": "SP14-087",
+      "sha256": "45905f8d5bae86708192b4c1a7f5468c08fc66502b5b7597647c855d72d30841",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-087.yaml"
+    },
+    {
+      "id": "SP14-088",
+      "sha256": "2e940fc9accea79537fa81fd8e1010a7c40f6c5988e3699b94a90cbed180f3af",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-088.yaml"
+    },
+    {
+      "id": "SP14-089",
+      "sha256": "7d62200469f4fa87aed8ba7806b4c35519f4404d21175367c18025e1927d9ef0",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-089.yaml"
+    },
+    {
+      "id": "SP14-090",
+      "sha256": "a3987ea5e3253ce191b3a26b66e764d0dfa7bda1151c782356f5b6137aca8421",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-090.yaml"
+    },
+    {
+      "id": "SP14-091",
+      "sha256": "915826888a251b972906599b6a75555f200edbbed83b67383614e9ed45b154f6",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-091.yaml"
+    },
+    {
+      "id": "SP14-092",
+      "sha256": "a2bfa120393000ca4f414c9547bfec928c73ec5005a15ae7e442135a56a5b743",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-092.yaml"
+    },
+    {
+      "id": "SP14-093",
+      "sha256": "ca5e2dafa25dd8c7d411cada7e8702bd05367de9a0b72cfee6952d04b77c9f62",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-093.yaml"
+    },
+    {
+      "id": "SP14-094",
+      "sha256": "b0358a908058a5c455f93440df671def860e13f4ea607a37f9b369aaee82f6da",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-094.yaml"
+    },
+    {
+      "id": "SP14-095",
+      "sha256": "27b59d69b13f044990088d4e8c0aad85a81f726706c6c7574d895fa42d383067",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-095.yaml"
+    },
+    {
+      "id": "SP14-096",
+      "sha256": "3adeb4ad013258d30bf5f17e3c8c373a952fc82998cf265bf2e02cb5ed6dd92d",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-096.yaml"
+    },
+    {
+      "id": "SP14-097",
+      "sha256": "e5cdcbb4d825406d2dd0ed97cb515d65840303a8de75b822334f02e77e81adaf",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-097.yaml"
+    },
+    {
+      "id": "SP14-098",
+      "sha256": "5d743269ab2083d74ed48e7ff66140b01d14ed5be86b887d0aebcb1ad600483f",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-098.yaml"
+    },
+    {
+      "id": "SP14-099",
+      "sha256": "183a2dd8e290341680fadf8a12bc780da144580bc2ddc424638878bf6a4395a1",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-099.yaml"
+    },
+    {
+      "id": "SP14-100",
+      "sha256": "0e0f379bfc52077533c1d6760d1d841348b4747e36d48d5ee367570977b7dca4",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-100.yaml"
+    },
+    {
+      "id": "SP14-101",
+      "sha256": "43fd00247038dd9a979448f31fa230345c557fdcdc6059382fef613e80a002d7",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-101.yaml"
+    },
+    {
+      "id": "SP14-102",
+      "sha256": "6241fa9b5eebda21b15a1c7b6291b8e579e9029fa73150835daf794ce73f13fc",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-102.yaml"
+    },
+    {
+      "id": "SP14-103",
+      "sha256": "ad3e3082fe8db695640388f8c9b3e0a357286339673cfb924503ff59bbd34306",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-103.yaml"
+    },
+    {
+      "id": "SP14-104",
+      "sha256": "d2ec486e88f2ca5c151b8d86b3fee269dfb4c63c0d92652f5cb361980945e277",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-104.yaml"
+    },
+    {
+      "id": "SP14-105",
+      "sha256": "67a5701f233780a7549c7ff423c607047430c94ba792024f4a931ba4da666153",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-105.yaml"
+    },
+    {
+      "id": "SP14-106",
+      "sha256": "1288786dbce2b0b1826ab5f852a5e67119a353b6ec60dcaca04bcdaecac16946",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-106.yaml"
+    },
+    {
+      "id": "SP14-107",
+      "sha256": "50f75bc1e76bb93d69ba1bc07d7c2085ebcd9ecb292ca592248d85e2d2fb9c6a",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-107.yaml"
+    },
+    {
+      "id": "SP14-108",
+      "sha256": "e557e14219f268d598efe12caa80b759c77a1e1987fc1b4348c37a72892e8e9c",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-108.yaml"
+    },
+    {
+      "id": "SP14-109",
+      "sha256": "dd76ad80c5fb9d70d423f3b5201d62f087f41aefe2d6c3ca19ef280e1eaf1af9",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-109.yaml"
+    },
+    {
+      "id": "SP14-110",
+      "sha256": "0c5fc7b9fa3ec6019ecab33ad1c63ccafead8ddc812625074050435436f7dc3e",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-110.yaml"
+    },
+    {
+      "id": "SP14-111",
+      "sha256": "030e15ad4bb90668b9bdbe20ce2970035705977d3c58dd72946d87efed75f0da",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-111.yaml"
+    },
+    {
+      "id": "SP14-112",
+      "sha256": "f7cc2aa1972a5e9141cb00ff19a0ba5a65dc373eae5eb24e66be248d76074546",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-112.yaml"
+    },
+    {
+      "id": "SP14-113",
+      "sha256": "f1f3ac6245f2f3ee4636e26070c4b7bd3dd6ef0e15217ee6885efcfa769e8dae",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-113.yaml"
+    },
+    {
+      "id": "SP14-114",
+      "sha256": "f87bab5690bf22308fadb0884c9ae0e571af24a5fa882e3210ce723ce62037f9",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-114.yaml"
+    },
+    {
+      "id": "SP14-115",
+      "sha256": "abbe613bf484a10f6549d6ffe3f7ed1c5803feca56be7ed437fd4c99567ee2f6",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-115.yaml"
+    },
+    {
+      "id": "SP14-116",
+      "sha256": "455a9783273b72fb28343d422b5a48ef8f4e3e4148e3c0e61cb476c5742462c6",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-116.yaml"
+    },
+    {
+      "id": "SP14-117",
+      "sha256": "cc79f68abea8afa149b4323e24eb649b4da1253b428d244c0cab43f2c0be01da",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-117.yaml"
+    },
+    {
+      "id": "SP14-118",
+      "sha256": "021573993abe6f6996bb54c3838ed20d440b80a0bf1c97c3c2a2b6a8e9fe6109",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-118.yaml"
+    },
+    {
+      "id": "SP14-119",
+      "sha256": "d00f677df9825e78582cef5cce7397ce3dd565e7948f400fca73dbd09b2b4f08",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-119.yaml"
+    },
+    {
+      "id": "SP14-120",
+      "sha256": "1dda09636eeab7f34aad787140593201cb11a5695c6484ceb28decf2bb87e785",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-120.yaml"
+    },
+    {
+      "id": "SP14-121",
+      "sha256": "da8de7b91e967f60d922d3fd9e913b4a25d9ddf0d173f6ab9f16d75859fd712e",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-121.yaml"
+    },
+    {
+      "id": "SP14-122",
+      "sha256": "af9c813cb54dfa9151d97ff0230cfca1a5a8f0cc1494fc2ee1fcafb0be3df66c",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-122.yaml"
+    },
+    {
+      "id": "SP14-123",
+      "sha256": "81edbc655c168203a6ad33b5112fde6c3de5fa7b230c4334cf2fe87c2eb10a29",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_14/SP14-123.yaml"
+    },
+    {
+      "id": "SP15-001",
+      "sha256": "f4b444774b8e75ad6433fc3045d06b3efb255d550ba96c35b184b1a475d4f113",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-001.yaml"
+    },
+    {
+      "id": "SP15-002",
+      "sha256": "7e2c5f761be12be06cbe45f4f57e297460876a88543f1159ad967c1810abae08",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-002.yaml"
+    },
+    {
+      "id": "SP15-003",
+      "sha256": "31fd4a5c5ad9fd8b1cf29921ace135f426b78b56d6afa04473d73cefb166d482",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-003.yaml"
+    },
+    {
+      "id": "SP15-004",
+      "sha256": "2d0f1797d057df67fc3084946605e4a1ccd0bfcb5f3456529f6b873b4a2dca2f",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-004.yaml"
+    },
+    {
+      "id": "SP15-005",
+      "sha256": "61ef52a39129e8b99e531b08e7ca327ff66e51769a29720b268e5b7d28289253",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-005.yaml"
+    },
+    {
+      "id": "SP15-006",
+      "sha256": "fe9e82126b5d6f03ee05f4c333400b13fea34a38a5e9229b00332ec96f9242e1",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-006.yaml"
+    },
+    {
+      "id": "SP15-007",
+      "sha256": "32669876309f5f9ab9141d88d1ed4ca96f046c852b89cbaf7a6a00fae9c5f417",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-007.yaml"
+    },
+    {
+      "id": "SP15-008",
+      "sha256": "0757397c42bc0013edf96758ecdd286b20589e8fa5af3a94a59d7271ab5f748a",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-008.yaml"
+    },
+    {
+      "id": "SP15-009",
+      "sha256": "96dc067eef1c6141a801035a5ed4c1acd1a71de472b12ee286a14b8dccb6844d",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-009.yaml"
+    },
+    {
+      "id": "SP15-010",
+      "sha256": "b583377a8e62b040b7ee37e9014abb6b4802e704cfc12f74a9d8e1d69bf30220",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-010.yaml"
+    },
+    {
+      "id": "SP15-011",
+      "sha256": "09201c7e00c48c07d4e48cbd2132edc8f99061ef9fb7975d69c8c6404900739d",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-011.yaml"
+    },
+    {
+      "id": "SP15-012",
+      "sha256": "6aeba334fb31634caf055b29a6165dedbb308731b474c80ef5599f2ad1c23de2",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-012.yaml"
+    },
+    {
+      "id": "SP15-013",
+      "sha256": "63a23eccf71f9cecb2b0f5d97acfe48186c0f8e4ca24a8069dd09c69de3a0d26",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-013.yaml"
+    },
+    {
+      "id": "SP15-014",
+      "sha256": "58a4e620555a445ae9e5f25773a85df55f1b4a70bfbd0d3159c5e22d71ff17b2",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-014.yaml"
+    },
+    {
+      "id": "SP15-015",
+      "sha256": "0aeda2f1f32cfa2eb636b695ecff2247f7b8b7ead854a7117ecc1890f6ab4c9d",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-015.yaml"
+    },
+    {
+      "id": "SP15-016",
+      "sha256": "06517f291bc5af3fa58b4f95866ee754da13841a7b11b01e721608931a42934e",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-016.yaml"
+    },
+    {
+      "id": "SP15-017",
+      "sha256": "120710eb288c80b09f279c09a482ca213f32f74e4438635db69f2f0483336743",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-017.yaml"
+    },
+    {
+      "id": "SP15-018",
+      "sha256": "ae36457be18a142a09a5b324c3da892c8f78399ed71e4c266b88199019367246",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-018.yaml"
+    },
+    {
+      "id": "SP15-019",
+      "sha256": "e5c23c82568105e2bbd1bcafcd5e13f0f04871562d2d9489ce86e5725c6163d1",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-019.yaml"
+    },
+    {
+      "id": "SP15-020",
+      "sha256": "c420dedfc5605863af9798bd276fd1dc416c9d2d1b7696479e9f6776af104fd0",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-020.yaml"
+    },
+    {
+      "id": "SP15-021",
+      "sha256": "c81fb5fa2a0e811b61323324f31a9c7d7c5ffaaa9c00029d62ca8f151f110dd2",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-021.yaml"
+    },
+    {
+      "id": "SP15-022",
+      "sha256": "8e3be0476e56d56464d7c976209419f1e610c2318a4c564b39b7573b74b9c05d",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-022.yaml"
+    },
+    {
+      "id": "SP15-023",
+      "sha256": "38c78d27e10171e8875aa1b326d4ce670bd3e5da346e68b5db3520abeac70f56",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-023.yaml"
+    },
+    {
+      "id": "SP15-024",
+      "sha256": "c7b36b86bcfd383d85a88e884a1cfcbbdccfe9a83563d3bfdf56abdc97f3bcda",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-024.yaml"
+    },
+    {
+      "id": "SP15-025",
+      "sha256": "9e082528b445844da3dccfc4f1d8154ee36fb6a1fc5b429c69af3e771422b25f",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-025.yaml"
+    },
+    {
+      "id": "SP15-026",
+      "sha256": "a211b6be7e9ee394500a1a14010a705d51bc38ae11817b674d37b42908c0e329",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-026.yaml"
+    },
+    {
+      "id": "SP15-027",
+      "sha256": "2fc88bd259073441bff86f541d4f5af491a7417908e29628eb5a8ac07c0489cc",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-027.yaml"
+    },
+    {
+      "id": "SP15-028",
+      "sha256": "bade0e33d5ee9ccada0c19fdcd10d13847e9ab890d0f9db8eaded947bce77a12",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-028.yaml"
+    },
+    {
+      "id": "SP15-029",
+      "sha256": "59c7fd5d7dfe8edf2f8995db6731298c97ebf5aa5d7bd58333ff58e7d6b05d0c",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-029.yaml"
+    },
+    {
+      "id": "SP15-030",
+      "sha256": "80e7ec254e0d61d4efa966d761269716ec505dde0ad2424a67461a976dc6f12e",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-030.yaml"
+    },
+    {
+      "id": "SP15-031",
+      "sha256": "18288090a6054a96878da002b974f9dd5741355af758a90fa9f8222bdedbb221",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-031.yaml"
+    },
+    {
+      "id": "SP15-032",
+      "sha256": "ebf70f2fb07745fc4ae1dbb8a510a9a7b6c4eb7c1d7846b19659ec3baf17fd58",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-032.yaml"
+    },
+    {
+      "id": "SP15-033",
+      "sha256": "00a905ae4510b890e1f392ae1c7fd867d5c6e31de5b7cf547669010881a3a65e",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-033.yaml"
+    },
+    {
+      "id": "SP15-034",
+      "sha256": "39b3e624f4065d7012b7ea5b1de6d16cc86db1878c345dd59fe9441c50502648",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-034.yaml"
+    },
+    {
+      "id": "SP15-035",
+      "sha256": "7474ab6e405e12dbcb4d27e599bd87bdad4b5149335e1824c6c50318f5215952",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-035.yaml"
+    },
+    {
+      "id": "SP15-036",
+      "sha256": "68a624a1fcb0d18c02e9885e555d2df3dbaa604c9591987fe114712edbfea702",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-036.yaml"
+    },
+    {
+      "id": "SP15-037",
+      "sha256": "6856d4692b4466c3014a8bb77ab7a51962311e1eb726e2e6d3a501551bb04409",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-037.yaml"
+    },
+    {
+      "id": "SP15-038",
+      "sha256": "18969c2d82b108e49bde2f667ec100d9cc2c3785959aa7b204bfb1377df22271",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-038.yaml"
+    },
+    {
+      "id": "SP15-039",
+      "sha256": "83880c54a5ba61f1bc6176adbc50a11b5beab3b96b6257b07b281ab49e1c16f3",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-039.yaml"
+    },
+    {
+      "id": "SP15-040",
+      "sha256": "ccef6c383af77f114323e05ac61477b9c2d59753544505775c1baa1895638b4b",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-040.yaml"
+    },
+    {
+      "id": "SP15-041",
+      "sha256": "00417ebd88b617abe10603645218be403805930308137b0e07e0cc8f422a841c",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-041.yaml"
+    },
+    {
+      "id": "SP15-042",
+      "sha256": "d603816d4a91a30592de4d2ac4c46d4663ea2d0cc717f26957290b35236ed833",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-042.yaml"
+    },
+    {
+      "id": "SP15-043",
+      "sha256": "daa51c967c5a90697357ca397fbd420b5b62af4a0a64a83d2c83f6a843d71ed2",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-043.yaml"
+    },
+    {
+      "id": "SP15-044",
+      "sha256": "14abee55e9a6c6b35006c2c254f9206d881fa7523cfbcc5480e61a7043e0d8b7",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-044.yaml"
+    },
+    {
+      "id": "SP15-045",
+      "sha256": "9cf532b28ee968ff5c2e484ab828a5e3970fe8f6cd85390cb5d2e4be0b143056",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-045.yaml"
+    },
+    {
+      "id": "SP15-046",
+      "sha256": "23cb8b1d44aee675da45dd003bc4d58717e9cc384a1e517963b0902ec23f8699",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-046.yaml"
+    },
+    {
+      "id": "SP15-047",
+      "sha256": "dc21d5691d4a3505ebb64196c66246670ba60d79f519b26dd4b67b3372f03051",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-047.yaml"
+    },
+    {
+      "id": "SP15-048",
+      "sha256": "0efa8f12880710ed8955cf77278bba35b836efcf49c538e96a68f8cd2660aa30",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-048.yaml"
+    },
+    {
+      "id": "SP15-049",
+      "sha256": "160107a9a93c0f40e0435d61b3e841ed6a789db85f3cf9dea055a1210c4a2279",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-049.yaml"
+    },
+    {
+      "id": "SP15-050",
+      "sha256": "271f0c73c5031fbbcb3c4bbf927707c0188964f358b729ee0ff34e067a8830df",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-050.yaml"
+    },
+    {
+      "id": "SP15-051",
+      "sha256": "51d24cbe1e21bae3a8c733661875ea1e63fe166b0f958041eab331b727c9401b",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-051.yaml"
+    },
+    {
+      "id": "SP15-052",
+      "sha256": "c3da761de42954a0c1004d89d9f298671e27d426643d45d9a877995a41db0b2f",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-052.yaml"
+    },
+    {
+      "id": "SP15-053",
+      "sha256": "17a2d7bf127570010310a1e7c2aec6085eb6f82c83ade7c37d26ddf2ec7ee16f",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-053.yaml"
+    },
+    {
+      "id": "SP15-054",
+      "sha256": "78a96bc136b4513ab9668e54869cc2e816537249b7ce88c437537f08541d73e9",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-054.yaml"
+    },
+    {
+      "id": "SP15-055",
+      "sha256": "76dc1b150e223408d1555bde0f5db85231f82f5a837a7ef445dcfcce41f5638d",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-055.yaml"
+    },
+    {
+      "id": "SP15-056",
+      "sha256": "e5f7a7719f15ddc3bc4e6afe530f425158977ea302769bc7f795b749ae19e9f5",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-056.yaml"
+    },
+    {
+      "id": "SP15-057",
+      "sha256": "b009c4a78376a8f6ce0b6c42cded6763dc417e56885db1cf0e20e1a4903ab1b3",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-057.yaml"
+    },
+    {
+      "id": "SP15-058",
+      "sha256": "15f5eacb04337126a1cc3d22bfacedef985f324d3e4c5893250c24b87a2950ca",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-058.yaml"
+    },
+    {
+      "id": "SP15-059",
+      "sha256": "98f999050e202440e62b654c3e3fbc22fb45c75d0f9db533d744865c8d59748f",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-059.yaml"
+    },
+    {
+      "id": "SP15-060",
+      "sha256": "83dd81ec5f28f127d5c839977fdcc9414f77bd17679e2d85cbd3abafaafd60f9",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-060.yaml"
+    },
+    {
+      "id": "SP15-061",
+      "sha256": "60d96ff5a99ee69e369db7751a41faa96790c97078a079d4036b95f690d9e3e3",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-061.yaml"
+    },
+    {
+      "id": "SP15-062",
+      "sha256": "bd31d99b491f259aaae75580c8278e029a071e26b569a5c2227622e5e259598b",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-062.yaml"
+    },
+    {
+      "id": "SP15-063",
+      "sha256": "11f6155b75c725f9d798e926da90a2239ce6708c1d8ed46b108e7e33b2409367",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-063.yaml"
+    },
+    {
+      "id": "SP15-064",
+      "sha256": "c4b77e7709bcc5f356776df99bbc22cc1b8826b1c2f6f17791ab54dd38bf4441",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-064.yaml"
+    },
+    {
+      "id": "SP15-065",
+      "sha256": "ba7fe7799d2ab30bb6172f03251a7cf664494a2848c6abd0d0d2e79599a00a35",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-065.yaml"
+    },
+    {
+      "id": "SP15-066",
+      "sha256": "a11f1e6bf25c6f6728050d851ce7308aa1e221f5e7a5a6a64cd55d6f28154f71",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-066.yaml"
+    },
+    {
+      "id": "SP15-067",
+      "sha256": "aa410325492cf3648718c4db9d2eae24823942f4e7fdb70d5b1e3a93348b1665",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-067.yaml"
+    },
+    {
+      "id": "SP15-068",
+      "sha256": "d7d9b79e2357532132340b57bb9629a47a3d256f6791f6ee3a6d5304e9653f01",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-068.yaml"
+    },
+    {
+      "id": "SP15-069",
+      "sha256": "e8e91c96f3d60d80b14b6c455c17ab27f068c4db41ed902bcd394d9978b912e6",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-069.yaml"
+    },
+    {
+      "id": "SP15-070",
+      "sha256": "ea2fe92a608f832f1b33777c7e8d50f4ea27f1eeeb571fd5a20fb48d70f573e9",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-070.yaml"
+    },
+    {
+      "id": "SP15-071",
+      "sha256": "d5723688024627fab4889cda09fe879979a92612f2e4c5da73493c1ce09769dd",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-071.yaml"
+    },
+    {
+      "id": "SP15-072",
+      "sha256": "5200380c121ec521d12a690b7c2b3693cf8135423dbc97d0d5580cee24a9fbfa",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-072.yaml"
+    },
+    {
+      "id": "SP15-073",
+      "sha256": "932f29595edc69064f351b3fd475d1a9657aed6100e9584612da94462bdf61e4",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-073.yaml"
+    },
+    {
+      "id": "SP15-074",
+      "sha256": "08b091ef6e264ff5434beb1a6a58b49614e6ee9ab5756fe7cf3ccf9f0f8b5fb5",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-074.yaml"
+    },
+    {
+      "id": "SP15-075",
+      "sha256": "1d016c4a68cc275a1a6c5b7e68c65354446011b1563e0aa4a0f4559a96ffa65a",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-075.yaml"
+    },
+    {
+      "id": "SP15-076",
+      "sha256": "ce70704286934ebaeef11ab5cc450853f4ae4eb85beb08275ab231635b648859",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-076.yaml"
+    },
+    {
+      "id": "SP15-077",
+      "sha256": "dca46ab7553fd2924b8158b3b99a54a9609cb96e07a7ab7d9c3c3a1e507cd290",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-077.yaml"
+    },
+    {
+      "id": "SP15-078",
+      "sha256": "363d992da6165c9b8bf05ceddf1543e0a8edd980788b61ec2d3d6208435193c3",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-078.yaml"
+    },
+    {
+      "id": "SP15-079",
+      "sha256": "a42295fc6de2fe96c0c7577e744d5a0f8c26a54ecfb82788a7e16e93b328ad49",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-079.yaml"
+    },
+    {
+      "id": "SP15-080",
+      "sha256": "24e1c64efb7df04fd055965a7ce004f25ecda9f3269ee0a180df56fde42d829a",
+      "archive": "components/recipes/styles/manifests/archive/conceptual-refactor-20260923/presets/pack_15/SP15-080.yaml"
+    }
+  ],
+  "newPresets": [
+    {
+      "id": "SP14-124",
+      "packId": "pack_14",
+      "name": "Broken Symmetry",
+      "sourceIds": [
+        "SP14-001",
+        "SP14-095",
+        "SP14-099",
+        "SP14-100",
+        "SP14-102",
+        "SP14-104",
+        "SP14-105"
+      ],
+      "rationale": "These originals share orbital occlusion, solar or halo axes, interrupted circular balance, and segmented cipher spacing. The proposal retains those compositional mechanics while dropping eclipse, relic, and cipher situations as required content. Consolidated overlapping proposal: Boundary & Negative Space."
+    },
+    {
+      "id": "SP14-125",
+      "packId": "pack_14",
+      "name": "Optical Dislocation",
+      "sourceIds": ["SP14-004", "SP14-011", "SP14-012", "SP14-016", "SP14-096", "SP14-101"],
+      "rationale": "Obsidian edge reflections, mirror refraction, and black-water ripple distortion all alter a surface image through reflectance and offset echoes. They can share one optical treatment without requiring a mask, oracle, water setting, or archive scene. Consolidated overlapping proposal: Hard-Surface Refraction."
+    },
+    {
+      "id": "SP14-126",
+      "packId": "pack_14",
+      "name": "Scale Contrast",
+      "sourceIds": [
+        "SP14-005",
+        "SP14-009",
+        "SP14-014",
+        "SP14-097",
+        "SP14-098",
+        "SP14-103",
+        "SP14-106",
+        "SP14-117",
+        "SP14-118",
+        "SP14-119",
+        "SP14-120",
+        "SP14-121",
+        "SP14-123"
+      ],
+      "rationale": "Severe social spacing, coiling line logic, authority-bearing contour, sigil loops, and vertical marker placement share a scale-and-interval hierarchy. Grouping them by rhythm keeps the original banquet, serpent, crown, salt-bone, and stone narratives out of the reusable visual style. Consolidated overlapping proposal: Monumental Scale & Negative Space."
+    },
+    {
+      "id": "SP14-127",
+      "packId": "pack_14",
+      "name": "Absorbed Light",
+      "sourceIds": ["SP14-002", "SP14-006", "SP14-107", "SP14-111", "SP14-112"],
+      "rationale": "Velvet absorption, ash falloff, candle compression, collective absence, and guarded page shadows all rely on compacting light and preserving legible dark planes. The proposal separates that tonal mechanism from the relic, decree, choir, candle, or book scenarios."
+    },
+    {
+      "id": "SP14-128",
+      "packId": "pack_14",
+      "name": "Measured Illumination",
+      "sourceIds": ["SP14-010", "SP14-108", "SP14-114", "SP14-115"],
+      "rationale": "Gear repetition, processional warning intervals, accounting columns, and bordered verdict spacing share an ordered sequence of light and shadow. This extracts that structure while leaving clockwork, omen, ledger, and seal narratives optional."
+    },
+    {
+      "id": "SP14-129",
+      "packId": "pack_14",
+      "name": "Branching Contours",
+      "sourceIds": ["SP14-008", "SP14-015", "SP14-017", "SP14-122"],
+      "rationale": "Petal layering, branching root mass, ascending feather contours, and coiling lines with generational bands share scale-changing structural flow. The proposal avoids cultural or narrative claims and keeps the repeated form independent from the original rose, root, afterlife, and serpent contexts."
+    },
+    {
+      "id": "SP14-130",
+      "packId": "pack_14",
+      "name": "Orbital Rhythm",
+      "sourceIds": [
+        "SP14-082",
+        "SP14-083",
+        "SP14-084",
+        "SP14-089",
+        "SP14-091",
+        "SP14-092",
+        "SP14-094"
+      ],
+      "rationale": "Meridian cuts, zodiac intervals, orbital pull, nested instrument rings, descending recurrence, equalized halves, and state-secret alignment share repeated rotational geometry. Unlike category 1's broken emblem enclosure, this proposal uses changing interval and motion direction rather than a closed icon."
+    },
+    {
+      "id": "SP14-131",
+      "packId": "pack_14",
+      "name": "Bounded Luminescence",
+      "sourceIds": ["SP14-085", "SP14-086", "SP14-087", "SP14-090"],
+      "rationale": "Diffuse nebula glow, contained impact reflection, lunar reading surfaces, and spectral containment all use localized light or reflection fields against a quieter surrounding value. This focuses on bounded color transitions rather than hard-surface refraction or narrow edge glints."
+    },
+    {
+      "id": "SP14-132",
+      "packId": "pack_14",
+      "name": "Incised Contour",
+      "sourceIds": [
+        "SP14-018",
+        "SP14-019",
+        "SP14-020",
+        "SP14-045",
+        "SP14-046",
+        "SP14-047",
+        "SP14-048",
+        "SP14-049",
+        "SP14-050",
+        "SP14-051",
+        "SP14-052",
+        "SP14-053",
+        "SP14-054",
+        "SP14-055",
+        "SP14-056"
+      ],
+      "rationale": "Replaces situational prescriptions in 5. Mythic — Greek Epics with an independent formal treatment. The archived sources document the editorial replacement; this is not a claim of historical or cultural derivation."
+    },
+    {
+      "id": "SP14-133",
+      "packId": "pack_14",
+      "name": "Mineral Color Planes",
+      "sourceIds": [
+        "SP14-018",
+        "SP14-019",
+        "SP14-020",
+        "SP14-045",
+        "SP14-046",
+        "SP14-047",
+        "SP14-048",
+        "SP14-049",
+        "SP14-050",
+        "SP14-051",
+        "SP14-052",
+        "SP14-053",
+        "SP14-054",
+        "SP14-055",
+        "SP14-056"
+      ],
+      "rationale": "Replaces situational prescriptions in 5. Mythic — Greek Epics with an independent formal treatment. The archived sources document the editorial replacement; this is not a claim of historical or cultural derivation."
+    },
+    {
+      "id": "SP14-134",
+      "packId": "pack_14",
+      "name": "Staccato Color Rhythm",
+      "sourceIds": [
+        "SP14-013",
+        "SP14-021",
+        "SP14-022",
+        "SP14-023",
+        "SP14-057",
+        "SP14-058",
+        "SP14-059",
+        "SP14-060",
+        "SP14-061",
+        "SP14-062",
+        "SP14-063",
+        "SP14-064",
+        "SP14-065",
+        "SP14-066",
+        "SP14-067",
+        "SP14-068",
+        "SP14-081",
+        "SP14-088",
+        "SP14-093"
+      ],
+      "rationale": "Replaces situational prescriptions in 6. Mythic — African Cosmologies with an independent formal treatment. The archived sources document the editorial replacement; this is not a claim of historical or cultural derivation. Consolidated overlapping proposal: Directional Signal & Trajectory."
+    },
+    {
+      "id": "SP14-135",
+      "packId": "pack_14",
+      "name": "Porous Ink Fields",
+      "sourceIds": [
+        "SP14-021",
+        "SP14-022",
+        "SP14-023",
+        "SP14-057",
+        "SP14-058",
+        "SP14-059",
+        "SP14-060",
+        "SP14-061",
+        "SP14-062",
+        "SP14-063",
+        "SP14-064",
+        "SP14-065",
+        "SP14-066",
+        "SP14-067",
+        "SP14-068"
+      ],
+      "rationale": "Replaces situational prescriptions in 6. Mythic — African Cosmologies with an independent formal treatment. The archived sources document the editorial replacement; this is not a claim of historical or cultural derivation."
+    },
+    {
+      "id": "SP14-136",
+      "packId": "pack_14",
+      "name": "Capillary Ink",
+      "sourceIds": [
+        "SP14-024",
+        "SP14-025",
+        "SP14-026",
+        "SP14-033",
+        "SP14-034",
+        "SP14-035",
+        "SP14-036",
+        "SP14-037",
+        "SP14-038",
+        "SP14-039",
+        "SP14-040",
+        "SP14-041",
+        "SP14-042",
+        "SP14-043",
+        "SP14-044"
+      ],
+      "rationale": "Replaces situational prescriptions in 7. Mythic — Japanese Yokai & Kami with an independent formal treatment. The archived sources document the editorial replacement; this is not a claim of historical or cultural derivation."
+    },
+    {
+      "id": "SP14-137",
+      "packId": "pack_14",
+      "name": "Veiled Color Layers",
+      "sourceIds": [
+        "SP14-024",
+        "SP14-025",
+        "SP14-026",
+        "SP14-033",
+        "SP14-034",
+        "SP14-035",
+        "SP14-036",
+        "SP14-037",
+        "SP14-038",
+        "SP14-039",
+        "SP14-040",
+        "SP14-041",
+        "SP14-042",
+        "SP14-043",
+        "SP14-044"
+      ],
+      "rationale": "Replaces situational prescriptions in 7. Mythic — Japanese Yokai & Kami with an independent formal treatment. The archived sources document the editorial replacement; this is not a claim of historical or cultural derivation."
+    },
+    {
+      "id": "SP14-138",
+      "packId": "pack_14",
+      "name": "Fractured Value",
+      "sourceIds": [
+        "SP14-027",
+        "SP14-028",
+        "SP14-029",
+        "SP14-069",
+        "SP14-070",
+        "SP14-071",
+        "SP14-072",
+        "SP14-073",
+        "SP14-074",
+        "SP14-075",
+        "SP14-076",
+        "SP14-077",
+        "SP14-078",
+        "SP14-079",
+        "SP14-080"
+      ],
+      "rationale": "Replaces situational prescriptions in 8. Mythic — Norse Sagas with an independent formal treatment. The archived sources document the editorial replacement; this is not a claim of historical or cultural derivation."
+    },
+    {
+      "id": "SP14-139",
+      "packId": "pack_14",
+      "name": "Tension Lattice",
+      "sourceIds": [
+        "SP14-027",
+        "SP14-028",
+        "SP14-029",
+        "SP14-069",
+        "SP14-070",
+        "SP14-071",
+        "SP14-072",
+        "SP14-073",
+        "SP14-074",
+        "SP14-075",
+        "SP14-076",
+        "SP14-077",
+        "SP14-078",
+        "SP14-079",
+        "SP14-080"
+      ],
+      "rationale": "Replaces situational prescriptions in 8. Mythic — Norse Sagas with an independent formal treatment. The archived sources document the editorial replacement; this is not a claim of historical or cultural derivation."
+    },
+    {
+      "id": "SP14-140",
+      "packId": "pack_14",
+      "name": "Matte and Gloss Contrast",
+      "sourceIds": [
+        "SP14-003",
+        "SP14-007",
+        "SP14-030",
+        "SP14-031",
+        "SP14-032",
+        "SP14-109",
+        "SP14-110",
+        "SP14-113",
+        "SP14-116"
+      ],
+      "rationale": "Replaces situational prescriptions in 9. Mythic — Mesoamerican Suns with an independent formal treatment. The archived sources document the editorial replacement; this is not a claim of historical or cultural derivation. Consolidated overlapping proposal: Selective Edge Glints."
+    },
+    {
+      "id": "SP14-141",
+      "packId": "pack_14",
+      "name": "Chromatic Shear",
+      "sourceIds": ["SP14-030", "SP14-031", "SP14-032"],
+      "rationale": "Replaces situational prescriptions in 9. Mythic — Mesoamerican Suns with an independent formal treatment. The archived sources document the editorial replacement; this is not a claim of historical or cultural derivation."
+    },
+    {
+      "id": "SP15-081",
+      "packId": "pack_15",
+      "name": "Steampunk",
+      "sourceIds": ["SP15-001", "SP15-003", "SP15-006", "SP15-008"],
+      "rationale": "SP15-001, SP15-003 and SP15-006 identify as steampunk; their civic machinery, automata and print-foundry setups are situational variants over shared gear, pressure and hand-assembled metal language. SP15-008 adds generic industrial ribs, weld seams and rivet arcs, but no separate punk-type mechanism; fold that structural vocabulary into steampunk and drop its ritual-workshop context."
+    },
+    {
+      "id": "SP15-082",
+      "packId": "pack_15",
+      "name": "Dieselpunk",
+      "sourceIds": ["SP15-002", "SP15-004", "SP15-007"],
+      "rationale": "SP15-002 and SP15-004 are dieselpunk rail and radio-convoy treatments; SP15-007 is a diesel-steam airship-logistics treatment. Their distinct locomotives, broadcasts and aircraft are scenario content, while heavy engine mass, industrial plate geometry and signal contrast form one portable dieselpunk identity."
+    },
+    {
+      "id": "SP15-083",
+      "packId": "pack_15",
+      "name": "Clockpunk",
+      "sourceIds": ["SP15-005"],
+      "rationale": "SP15-005 is the category's only clockpunk source and its synchronized escapement rhythm is a distinct visual mechanism rather than merely a clocktower or labor-rally scene. Keep this type standalone while removing those required story settings."
+    },
+    {
+      "id": "SP15-084",
+      "packId": "pack_15",
+      "name": "Cyberpunk",
+      "sourceIds": ["SP15-009", "SP15-010", "SP15-012", "SP15-013", "SP15-015", "SP15-016"],
+      "rationale": "SP15-009, 010, 012, 013, 015 and 016 are cyberpunk or med-cyberpunk scene variants: rain glass, meshwear, defense, black ice, drone painting and clinical care. Their seven non-aesthetic DNA fields are identical, and none defines a separate visual mechanism; consolidate them as Cyberpunk while retaining signal segmentation, controlled neon contrast and reflective surfaces as portable treatment."
+    },
+    {
+      "id": "SP15-085",
+      "packId": "pack_15",
+      "name": "Netpunk",
+      "sourceIds": ["SP15-011"],
+      "rationale": "SP15-011 is explicitly tagged Netpunk and its improvised repeater cues can be distilled into a distinct topology: irregular, patched, decentralized node-to-node links. Keep that mechanism separate from Cyberpunk's reflective neon segmentation, while dropping the pirate-radio and rooftop scenario."
+    },
+    {
+      "id": "SP15-086",
+      "packId": "pack_15",
+      "name": "Signalpunk",
+      "sourceIds": ["SP15-014"],
+      "rationale": "SP15-014 is tagged Signalpunk and its ceramic-insulator breaks, copper arcs and electric-blue corona form a recognizable signal-propagation mechanism distinct from Cyberpunk surfaces and Netpunk node topology. Retain that visual grammar without preserving the source's rite framing."
+    },
+    {
+      "id": "SP15-087",
+      "packId": "pack_15",
+      "name": "Solarpunk",
+      "sourceIds": ["SP15-017", "SP15-018"],
+      "rationale": "SP15-017 and SP15-018 share the Solarpunk type and a usable light-and-adaptive-structure language. Their civic agriculture, canopy and vertical service-system settings are separate situations, so consolidate both sources as one Solarpunk style."
+    },
+    {
+      "id": "SP15-088",
+      "packId": "pack_15",
+      "name": "Repairpunk",
+      "sourceIds": ["SP15-019", "SP15-048"],
+      "rationale": "SP15-019 is Repairpunk, and SP15-048 CommonsPunk is being merged here under the provided cross-category direction because mutual aid and commons are its scenario while functional repair is the shared visual mechanism. Keep the repair joins and layered utility; remove the social venue and activity as requirements."
+    },
+    {
+      "id": "SP15-089",
+      "packId": "pack_15",
+      "name": "Windpunk",
+      "sourceIds": ["SP15-020"],
+      "rationale": "SP15-020 is tagged Windpunk. Its distinctive potential is kinetic shape grammar—tensioned curves and swept planes—not the source's domestic rooftop or windcatcher apparatus, so keep it as one abstract type."
+    },
+    {
+      "id": "SP15-090",
+      "packId": "pack_15",
+      "name": "Seedpunk",
+      "sourceIds": ["SP15-021"],
+      "rationale": "SP15-021 is explicitly Seedpunk. Nested seed-scale geometry and dispersed growth marks provide a distinct form mechanism; the archive drawers, packets and community celebration in its source are settings and props, not requirements."
+    },
+    {
+      "id": "SP15-091",
+      "packId": "pack_15",
+      "name": "Desertpunk",
+      "sourceIds": ["SP15-022"],
+      "rationale": "SP15-022 is tagged Desertpunk. Its useful mechanism is dry, sparse value organization around shade and cooling contrast; the condenser towers, filters and bloom in the source are scenario imagery, not a separate machine type."
+    },
+    {
+      "id": "SP15-092",
+      "packId": "pack_15",
+      "name": "Rainpunk",
+      "sourceIds": ["SP15-023"],
+      "rationale": "SP15-023 is tagged Rainpunk. Its channel arcs and repeated flow rhythm are a distinct way to depict movement and reflection; the source's gutters, cisterns and rain hydraulics are not needed to define the type."
+    },
+    {
+      "id": "SP15-093",
+      "packId": "pack_15",
+      "name": "Mangrovepunk",
+      "sourceIds": ["SP15-024"],
+      "rationale": "SP15-024 is tagged Mangrovepunk; its branching forms, lifted planes and brackish reflections support a distinct amphibious shape grammar beyond generic rain flow. Retain those abstract mechanics while dropping the source's platform and boat-paint setting."
+    },
+    {
+      "id": "SP15-094",
+      "packId": "pack_15",
+      "name": "Biopunk",
+      "sourceIds": ["SP15-026", "SP15-029", "SP15-030", "SP15-031", "SP15-032"],
+      "rationale": "SP15-026, 030 and 031 are tagged Biopunk; SP15-029 bioarchitecture and SP15-032 bio-urbanism add structural and urban settings, not separate punk mechanisms. Consolidate symbiosis, organic circuitry and living-surface transitions under Biopunk while removing required architecture, apothecary and horror scenarios."
+    },
+    {
+      "id": "SP15-095",
+      "packId": "pack_15",
+      "name": "Mycopunk",
+      "sourceIds": ["SP15-025", "SP15-028"],
+      "rationale": "SP15-025 and SP15-028 are both Mycopunk. Transit routing and spore messaging are scene variations over distinct fungal branching and spore-scale rhythm, so preserve that mechanism as one Mycopunk identity."
+    },
+    {
+      "id": "SP15-096",
+      "packId": "pack_15",
+      "name": "Bodypunk",
+      "sourceIds": ["SP15-027"],
+      "rationale": "SP15-027 is explicitly Bodypunk and its nerve-like fiber loom gives it a distinct body-oriented surface mechanism. Keep it separate from general Biopunk, but preserve identity and anatomy unless the user explicitly requests a physical transformation."
+    },
+    {
+      "id": "SP15-097",
+      "packId": "pack_15",
+      "name": "Seapunk",
+      "sourceIds": ["SP15-033", "SP15-034", "SP15-035", "SP15-036"],
+      "rationale": "SP15-033 through SP15-036 present marina, transit, arcade and pier situations, but share tideglass pressure lines, level bands, shell forms and restrained reef accents. Consolidate these scene variants under Seapunk with a portable surface and value language."
+    },
+    {
+      "id": "SP15-098",
+      "packId": "pack_15",
+      "name": "Icepunk",
+      "sourceIds": ["SP15-037", "SP15-038"],
+      "rationale": "SP15-037 and SP15-038 use harbor warmth and data-refuge settings as different scenes over the same frost-plane, pressure and cold-value language. Keep one Icepunk type while removing ship, refuge and lantern requirements."
+    },
+    {
+      "id": "SP15-099",
+      "packId": "pack_15",
+      "name": "Saltpunk",
+      "sourceIds": ["SP15-039"],
+      "rationale": "SP15-039 is the category's saltpunk source. Its salt-crust planes and wind-cut triangular shadows give it a specific dry mineral mechanism, independent of the kite-industry scene and distinct from the broader desert palette."
+    },
+    {
+      "id": "SP15-100",
+      "packId": "pack_15",
+      "name": "Swamppunk",
+      "sourceIds": ["SP15-040"],
+      "rationale": "SP15-040 is explicitly Swamppunk; moss drapes, wet shadow pools and interrupted signal traces provide a distinct damp-organic mechanism beyond the radio-workshop situation. Retain that visual identity without requiring a mast, stilts or wetland scene."
+    },
+    {
+      "id": "SP15-101",
+      "packId": "pack_15",
+      "name": "Zinepunk",
+      "sourceIds": ["SP15-041"],
+      "rationale": "Keeps SP15-041 for its distinctive torn-edge overlap and blunt print-color mechanism, separate from Streetpunk flat offset layers."
+    },
+    {
+      "id": "SP15-102",
+      "packId": "pack_15",
+      "name": "Skatepunk",
+      "sourceIds": ["SP15-042"],
+      "rationale": "Retains SP15-042 as Skatepunk through its curved acceleration and rising diagonal rhythm, translated away from generator blocks and indicator details."
+    },
+    {
+      "id": "SP15-103",
+      "packId": "pack_15",
+      "name": "Synthpunk",
+      "sourceIds": ["SP15-043"],
+      "rationale": "Retains SP15-043 as Synthpunk because hard rectangular divisions and paired voltage bands differ from Skatepunk motion curves."
+    },
+    {
+      "id": "SP15-104",
+      "packId": "pack_15",
+      "name": "Streetpunk",
+      "sourceIds": ["SP15-045"],
+      "rationale": "Keeps SP15-045 distinct through crisp flat overlays and intentional offsets, unlike Zinepunk fibrous cut edges."
+    },
+    {
+      "id": "SP15-105",
+      "packId": "pack_15",
+      "name": "Ravepunk",
+      "sourceIds": ["SP15-046"],
+      "rationale": "Keeps SP15-046 for its light-driven flowing-band rhythm, which differs from Skatepunk directional acceleration."
+    },
+    {
+      "id": "SP15-106",
+      "packId": "pack_15",
+      "name": "Crustpunk",
+      "sourceIds": ["SP15-047"],
+      "rationale": "Retains SP15-047 as Crustpunk through coarse patchwork, seam weight, and localized abrasion without making apparel the required subject."
+    },
+    {
+      "id": "SP15-107",
+      "packId": "pack_15",
+      "name": "Vaporpunk",
+      "sourceIds": ["SP15-049", "SP15-050", "SP15-055"],
+      "rationale": "Merges SP15-049, SP15-050, and SP15-055 because checker geometry, shallow reflections, cathode-like glow, and washed color are their shared mechanism; settings are variants."
+    },
+    {
+      "id": "SP15-108",
+      "packId": "pack_15",
+      "name": "Cassette Futurism",
+      "sourceIds": ["SP15-051"],
+      "rationale": "Retains SP15-051 because paired circles, nested rounded forms, and linked ribbon curves form a distinct analog construction language."
+    },
+    {
+      "id": "SP15-109",
+      "packId": "pack_15",
+      "name": "Broadcastpunk",
+      "sourceIds": ["SP15-052", "SP15-053", "SP15-056"],
+      "rationale": "Merges SP15-052, SP15-053, and SP15-056 because their shared mechanism is layered analog signal, scanline rhythm, and localized phosphor static; crowd, devotional, and solitude settings are situational."
+    },
+    {
+      "id": "SP15-110",
+      "packId": "pack_15",
+      "name": "Glitchpunk",
+      "sourceIds": ["SP15-054"],
+      "rationale": "Keeps SP15-054 distinct because localized chromatic displacement and warped secondary contours are a clear digital mechanism."
+    },
+    {
+      "id": "SP15-111",
+      "packId": "pack_15",
+      "name": "Witchpunk",
+      "sourceIds": ["SP15-057", "SP15-058"],
+      "rationale": "Consolidates SP15-057 and SP15-058: both use occult-coded electrical geometry, luminous current, and pressure-defined shapes. The witch and tarot casting are motif variants; geometry and current are the shared transferable mechanism."
+    },
+    {
+      "id": "SP15-112",
+      "packId": "pack_15",
+      "name": "Gothpunk",
+      "sourceIds": ["SP15-059", "SP15-063"],
+      "rationale": "Merges SP15-059 and SP15-063: both rely on pointed gothic contours, dark velvet-like fields, sparse red light, and fine signal-like linework. Relay and vampire imagery are contextual motifs rather than separate mechanisms."
+    },
+    {
+      "id": "SP15-113",
+      "packId": "pack_15",
+      "name": "Bonepunk",
+      "sourceIds": ["SP15-060", "SP15-076"],
+      "rationale": "Merges SP15-060 and SP15-076 into one Bonepunk type: bone-white forms, hide-like surfaces, and tensioned repeated lines are shared construction cues. Signal horns and hide-sail rigging are different subjects using that mechanism."
+    },
+    {
+      "id": "SP15-114",
+      "packId": "pack_15",
+      "name": "Necropunk",
+      "sourceIds": ["SP15-061"],
+      "rationale": "Retains SP15-061 because its recurring waveform, pale resin-like surfaces, and copper ring rhythm form a distinct signal-based mechanism, separate from Bonepunk's chalky organic planes. Root replaced the scene-derived waveform with a distinct erasure/restoration mechanism."
+    },
+    {
+      "id": "SP15-115",
+      "packId": "pack_15",
+      "name": "Mythpunk",
+      "sourceIds": ["SP15-062"],
+      "rationale": "Keeps SP15-062 as Mythpunk because its broad painted surfaces and repeated ornamental curves create a distinct emblematic mechanism; civic silhouettes and the named engine rite are optional content rather than requirements."
+    },
+    {
+      "id": "SP15-116",
+      "packId": "pack_15",
+      "name": "Folk Horror Punk",
+      "sourceIds": ["SP15-064"],
+      "rationale": "Keeps SP15-064 distinct because its coarse organic strokes against taut linear marks create a recognizable folk-horror signal contrast, unlike Witchpunk's geometric current or Mythpunk's ornamental repetition."
+    },
+    {
+      "id": "SP15-117",
+      "packId": "pack_15",
+      "name": "Atompunk",
+      "sourceIds": ["SP15-065", "SP15-066"],
+      "rationale": "Merges SP15-065 and SP15-066: both use isotope-like glow, smooth circular geometry, enamel color blocks, and clean futuristic surfaces. Civic display and reactor leisure are situational themes, not separate Atompunk mechanisms."
+    },
+    {
+      "id": "SP15-118",
+      "packId": "pack_15",
+      "name": "Raypunk",
+      "sourceIds": ["SP15-067", "SP15-068", "SP15-070"],
+      "rationale": "Merges SP15-067, SP15-068, and SP15-070: orbit chrome wedges, rocket-fin forms, and plasma rails share tapered geometry, broad arcs, and directional motion. They are situational uses of one streamlined Raypunk mechanism."
+    },
+    {
+      "id": "SP15-119",
+      "packId": "pack_15",
+      "name": "Salvagepunk",
+      "sourceIds": ["SP15-069", "SP15-079", "SP15-080", "SP15-044"],
+      "rationale": "Merges SP15-069, SP15-079, and SP15-080: tethered fragments, patched canvas, salt-weathered wood, lashings, and local heat all express reuse through mismatched surfaces and visible repairs. Space, coastal, and windcraft settings are variants of one Salvagepunk construction logic. Root merged Junkpunk: both used the same repaired, mismatched assemblage mechanism."
+    },
+    {
+      "id": "SP15-120",
+      "packId": "pack_15",
+      "name": "Lunarpunk",
+      "sourceIds": ["SP15-071", "SP15-072"],
+      "rationale": "Merges SP15-071 and SP15-072: both use pale lunar values, broad arcs, quiet glow, and sparse green or gold accents. Agriculture and acoustic ritual are different story uses of the same spacious, resonant Lunarpunk visual language."
+    },
+    {
+      "id": "SP15-121",
+      "packId": "pack_15",
+      "name": "Stonepunk",
+      "sourceIds": ["SP15-073", "SP15-074", "SP15-075"],
+      "rationale": "Consolidates SP15-073, SP15-074, and SP15-075, all tagged Stonepunk. Carved gears, wheels, and timing channels are different subjects built from the shared mechanism of coarse stone shaping and precise repeated cuts."
+    },
+    {
+      "id": "SP15-122",
+      "packId": "pack_15",
+      "name": "Low-Tech Punk",
+      "sourceIds": ["SP15-077", "SP15-078"],
+      "rationale": "Groups SP15-077 and SP15-078 as Low-Tech Punk: rope-driven mechanics and earth-tech cells share handmade, resource-limited construction, chunky modules, and visible connecting paths. Their specific power sources are situational, not separate visual mechanisms."
+    }
+  ],
+  "provenanceMeaning": "Editorial source coverage, not a legacy-ID redirect. Existing saved layers retain their captured DNA.",
+  "identityRepair": {
+    "date": "2026-09-23",
+    "reason": "The user rejected generic operators and identity-erasing restrictions. Mythic Noir represents cultures and mythologies; X-punk styles retain characteristic design elements adapted to the requested subject.",
+    "retiredPresets": [
+      {
+        "id": "SP14-124",
+        "sha256": "36ea35c5102832eb347f33f6852776cb1c81ab7161c608b6ceb311ede0a441d3",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_14/SP14-124.yaml"
+      },
+      {
+        "id": "SP14-125",
+        "sha256": "627dc81d1a96815c7126cf13ba3867b866ff4c6a658a6f221449c1bb81ddfe97",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_14/SP14-125.yaml"
+      },
+      {
+        "id": "SP14-126",
+        "sha256": "3a966922fc17f5bf20d80ad2d7298bd1e3ae0772923d09f15e0c8e559da84d1c",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_14/SP14-126.yaml"
+      },
+      {
+        "id": "SP14-127",
+        "sha256": "1f847d40c5d93733b8092febf32273d8b3e0c3acfe5257ba73088e94fd0f51c5",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_14/SP14-127.yaml"
+      },
+      {
+        "id": "SP14-128",
+        "sha256": "eac4d0b1a79ef1937c33b6708e09c20409f4cd4636bc6addbb818c36ae0f1228",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_14/SP14-128.yaml"
+      },
+      {
+        "id": "SP14-129",
+        "sha256": "a053bb13e236cf6a0b52e135f2f69ca4a29f7f81a737ae88a4fc1a9b567c2c05",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_14/SP14-129.yaml"
+      },
+      {
+        "id": "SP14-130",
+        "sha256": "476bdfefd2b4c0c59693473b53dc70251e80e482f53cc4ab332becfde8875bbb",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_14/SP14-130.yaml"
+      },
+      {
+        "id": "SP14-131",
+        "sha256": "e104415b5cb9e5a030359bf9bbd9a7fdc70609db64c1b088b42e7c1040da6eea",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_14/SP14-131.yaml"
+      },
+      {
+        "id": "SP14-132",
+        "sha256": "ea3b6793df9d6b7c48583d44a8a5f6f5e496c7f1c24feb9eaca45bc49bfd480d",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_14/SP14-132.yaml"
+      },
+      {
+        "id": "SP14-133",
+        "sha256": "fe96a175e2070eae6eba7c3af69e2913096e68934e87526674a4ae4e689ae2a6",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_14/SP14-133.yaml"
+      },
+      {
+        "id": "SP14-134",
+        "sha256": "9efc17f8202f3e49d76f6af9657450c271e9448cd942e1b4a60e7d81d4fec22e",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_14/SP14-134.yaml"
+      },
+      {
+        "id": "SP14-135",
+        "sha256": "b83126aee2dbbaef20ee4976cb20cd1d4d34a16321a841c38b70196a948b3272",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_14/SP14-135.yaml"
+      },
+      {
+        "id": "SP14-136",
+        "sha256": "f9dc4dd0962e1b998bf5152022f9eddeb13ac2790ca44b0acab2a7f38cc36e26",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_14/SP14-136.yaml"
+      },
+      {
+        "id": "SP14-137",
+        "sha256": "3bcd9fd79a1001cd9dc239eddfadec235e65ccdfab6564a1b099d47d8ac29f0c",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_14/SP14-137.yaml"
+      },
+      {
+        "id": "SP14-138",
+        "sha256": "5b0eca3ac852645e3b9b119e7ef712adcaa212a8822915f9e430bbd235db15c2",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_14/SP14-138.yaml"
+      },
+      {
+        "id": "SP14-139",
+        "sha256": "559e3337cc2b4428efee322e1fc70225d4d897875fa60f962c2b4c78f91a645e",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_14/SP14-139.yaml"
+      },
+      {
+        "id": "SP14-140",
+        "sha256": "615008c5b4531531a3c18de6eaf7d4e16e12916501ff23145821c637c09172de",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_14/SP14-140.yaml"
+      },
+      {
+        "id": "SP14-141",
+        "sha256": "49bd461e8579d7daaf1fb9f6ca044e40dc437eda2e365a44b4863e09685bb0d2",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_14/SP14-141.yaml"
+      },
+      {
+        "id": "SP15-086",
+        "sha256": "a123fc5947ee2670cd60b2c31915c8420a2fae3afc553d7e0d1aac0687528c27",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_15/SP15-086.yaml"
+      },
+      {
+        "id": "SP15-089",
+        "sha256": "ad8831667e3e6c6d7191617a621aee8239ea085b9895f19fd23ce58f10203aa2",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_15/SP15-089.yaml"
+      },
+      {
+        "id": "SP15-090",
+        "sha256": "f606409a6757620f00f3f9ed5422ca83e6f05213a393ee318f1024efbd239bb8",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_15/SP15-090.yaml"
+      },
+      {
+        "id": "SP15-092",
+        "sha256": "eea8a5936a96f7166c62359940184321c817c3fdb13d1afea0ba887a0d51365e",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_15/SP15-092.yaml"
+      },
+      {
+        "id": "SP15-093",
+        "sha256": "e51aaaa1db211a82186c62314583394a87d415e9666664ecb14dabb1b3771b30",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_15/SP15-093.yaml"
+      },
+      {
+        "id": "SP15-099",
+        "sha256": "00702f12bcba18958df5d178a4a875e663de461493b793f4644abe43ea4e2e6c",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_15/SP15-099.yaml"
+      },
+      {
+        "id": "SP15-100",
+        "sha256": "ef5a72917031d0a8eac0765f852a09af8c76b17701cbaf0dd18d51d24f8fe9a7",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/presets/pack_15/SP15-100.yaml"
+      }
+    ],
+    "revisedPresets": [
+      {
+        "id": "SP15-081",
+        "sha256": "86c732b74f8feb25626096422e091f58504b97553f0614b6e7cae48e14438c4e",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-081.yaml"
+      },
+      {
+        "id": "SP15-082",
+        "sha256": "11dd274f556b2b84bff716e60b7adb6902867058b35eb88a5fc54dc9e037daa3",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-082.yaml"
+      },
+      {
+        "id": "SP15-083",
+        "sha256": "94c1cc9c4697e916d225f6b28becf695e3828031770f6aa8022e7a35a696ee23",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-083.yaml"
+      },
+      {
+        "id": "SP15-084",
+        "sha256": "9a4507d41fdac4209f0425607b3166e7c34c0bd006c9b2b2f78b3d9a9a7e7986",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-084.yaml"
+      },
+      {
+        "id": "SP15-085",
+        "sha256": "c1cf07753127a5366a2ce60733650b0505fe7f08b0995ba08f200debeb1afaa6",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-085.yaml"
+      },
+      {
+        "id": "SP15-087",
+        "sha256": "6926dabc937c7cb7695d85f8e5bda3b9ef7278b6da4f7d7b39080f93c5297aa2",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-087.yaml"
+      },
+      {
+        "id": "SP15-088",
+        "sha256": "7c83f61e08ef7edb63a79e9f819d33dfc05a8cedba067a3376fff7813cd90935",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-088.yaml"
+      },
+      {
+        "id": "SP15-091",
+        "sha256": "9b3f35ecbba2cfa0328d7aa078e6d9f2329f4f06a9c8243932d27ee51d2e7f5f",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-091.yaml"
+      },
+      {
+        "id": "SP15-094",
+        "sha256": "a5bb0a13ba01c4bb948a04bfdaa3ad98c0d87e3af529e980ed72fb2635465932",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-094.yaml"
+      },
+      {
+        "id": "SP15-095",
+        "sha256": "7a9e1afbc8450d2ca496241a0bf006aa11bcb56f98ef59d234fd199e58aa0bb2",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-095.yaml"
+      },
+      {
+        "id": "SP15-096",
+        "sha256": "925a2aae4763446bf34d6656ffa357ca49a81322b7ec937e00f5884e2d4603c9",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-096.yaml"
+      },
+      {
+        "id": "SP15-097",
+        "sha256": "82cb52135b98140cf7bf737391463b5ae106e2d52150052189e83771b06cbd20",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-097.yaml"
+      },
+      {
+        "id": "SP15-098",
+        "sha256": "c4a796b0fa493843f460cef80df2997864b036da46a924b81a8fb2b54ec14edf",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-098.yaml"
+      },
+      {
+        "id": "SP15-101",
+        "sha256": "1bb97002292f7bb9a656389eb3f83c93e97a332baf3756236e96b9ea50b9885b",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-101.yaml"
+      },
+      {
+        "id": "SP15-102",
+        "sha256": "499a99d17d8394e75ae4e05e7553e90b465d3a2bdba8d41756bcce9515b7a4a4",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-102.yaml"
+      },
+      {
+        "id": "SP15-103",
+        "sha256": "f0450d69ab92e8d6d953be9cbd9ca894d322b7072e0ef17db31193712c981773",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-103.yaml"
+      },
+      {
+        "id": "SP15-104",
+        "sha256": "584db42ffb8c229574d22f7fab94d4e83ae9f4bc977c3d5bdb65bc3afd0356f1",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-104.yaml"
+      },
+      {
+        "id": "SP15-105",
+        "sha256": "6334f7e2f259371a1e4b258d0cd029bb89388173b3b1db5c68a6385a63e2f61e",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-105.yaml"
+      },
+      {
+        "id": "SP15-106",
+        "sha256": "3eb01555525c82e096533cd787b483c1d8e5ea6a706537c2ee66fac901ec88bd",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-106.yaml"
+      },
+      {
+        "id": "SP15-107",
+        "sha256": "8cf3d8f20cae909d7f9a63782ff457037ecea2759c64a05f5991c576e9d7faaa",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-107.yaml"
+      },
+      {
+        "id": "SP15-108",
+        "sha256": "1cc9d0c7368eb69d2d7991a1bb889b896a3c0f483751b913d8f79e942504a11b",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-108.yaml"
+      },
+      {
+        "id": "SP15-109",
+        "sha256": "0a1bd525f0b1974e7974a914ec6ff5adcb12f9e3b92fcf0dee21d01d5115d427",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-109.yaml"
+      },
+      {
+        "id": "SP15-110",
+        "sha256": "bfafdaf3d90620eee041c755c3ed35d8b5397bdba01a1e4ba34b5b46abbb59a2",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-110.yaml"
+      },
+      {
+        "id": "SP15-111",
+        "sha256": "34b8033ff0631c23e0f0bbfee6328bba03e8e1c0c5ec35e0461ff74b8202f05a",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-111.yaml"
+      },
+      {
+        "id": "SP15-112",
+        "sha256": "393e66d9f3d4760d18947c07d22eabca7d310ccf5687afe70977a243b68de67f",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-112.yaml"
+      },
+      {
+        "id": "SP15-113",
+        "sha256": "f822f0736c158862953c2d53080948faff5b6ada8294f2fa8bb1b2127741cbd5",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-113.yaml"
+      },
+      {
+        "id": "SP15-114",
+        "sha256": "158b7c6e64fa22468a8e903d8f0ad17b63b822c6cbc90a557e448fbbd0f68d31",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-114.yaml"
+      },
+      {
+        "id": "SP15-115",
+        "sha256": "7f8f087180b0edf1f1f4fc65e82315e0a903d8d3cd6fd87d587125ba90da24a4",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-115.yaml"
+      },
+      {
+        "id": "SP15-116",
+        "sha256": "4e7536ddb4516f42318c186e64c285ee252acfad60b2f9a99b3c374047832a45",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-116.yaml"
+      },
+      {
+        "id": "SP15-117",
+        "sha256": "d927da0c5896bb178bf8220c6eba85089705f4f964f1afdae8144566337e7fa2",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-117.yaml"
+      },
+      {
+        "id": "SP15-118",
+        "sha256": "892c30198d6f1b2659a3aaaf67578e0769ecce8553b1ccd930b25204c5640080",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-118.yaml"
+      },
+      {
+        "id": "SP15-119",
+        "sha256": "2da52767a6105412586a3cd6e1ad3906ee6cc229638a204d950afc9a4e4acb91",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-119.yaml"
+      },
+      {
+        "id": "SP15-120",
+        "sha256": "fab45d0b859f1c3102c6a5e8ad44781fb19099581988a294bf46a15f7b21b3be",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-120.yaml"
+      },
+      {
+        "id": "SP15-121",
+        "sha256": "5951e36ad5f3620676e169df35054b16180ea2854aaae94bd340898ed3f5939a",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-121.yaml"
+      },
+      {
+        "id": "SP15-122",
+        "sha256": "2482814efec62f56b7786efff9daef3000383d90eea9131255ede66dc89f65d4",
+        "archive": "components/recipes/styles/manifests/archive/identity-repair-20260923/prior-versions/pack_15/SP15-122.yaml"
+      }
+    ],
+    "newPresets": [
+      {
+        "id": "SP14-142",
+        "packId": "pack_14",
+        "version": 1,
+        "name": "Hellenic Epic Noir",
+        "sourceIds": ["SP14-132", "SP14-133"],
+        "rationale": "The archived Greek Epics lineage and The Met's documentation of black-/red-figure silhouette, incision, clay ground, bronze and animal/figural ornament support an identifiable visual identity. The creative proposal applies those features to unspecified design elements without changing locked identity or requiring a Greek character, vessel, temple, or scene.",
+        "sources": [
+          "https://www.metmuseum.org/toah/hd/vase/ho_17.230.14a%2Cb%3B27.16.htm",
+          "https://www.metmuseum.org/en/essays/ancient-greek-bronze-vessels"
+        ],
+        "archivedSourceIds": [
+          "SP14-018",
+          "SP14-019",
+          "SP14-020",
+          "SP14-045",
+          "SP14-046",
+          "SP14-047",
+          "SP14-048",
+          "SP14-049",
+          "SP14-050",
+          "SP14-051",
+          "SP14-052",
+          "SP14-053",
+          "SP14-054",
+          "SP14-055",
+          "SP14-056"
+        ]
+      },
+      {
+        "id": "SP14-143",
+        "packId": "pack_14",
+        "version": 1,
+        "name": "Japanese Kami & Yokai Myth-Noir",
+        "sourceIds": ["SP14-136", "SP14-137"],
+        "rationale": "The archived family explicitly supplies kami/yokai, wet ink, lacquer, sealed cord, masks, rain, and threshold motifs. Kyoto National Museum documents ink-and-color emaki, and the British Museum documents a Noh spirit mask; the proposal uses these as concrete design resources, not as one universal Japanese style or a required shrine scene.",
+        "sources": [
+          "https://www.kyohaku.go.jp/eng/collection/meihin/emaki/",
+          "https://www.britishmuseum.org/exhibitions/samurai/samurai-large-print-guide"
+        ],
+        "archivedSourceIds": [
+          "SP14-024",
+          "SP14-025",
+          "SP14-026",
+          "SP14-033",
+          "SP14-034",
+          "SP14-035",
+          "SP14-036",
+          "SP14-037",
+          "SP14-038",
+          "SP14-039",
+          "SP14-040",
+          "SP14-041",
+          "SP14-042",
+          "SP14-043",
+          "SP14-044"
+        ]
+      },
+      {
+        "id": "SP14-144",
+        "packId": "pack_14",
+        "version": 1,
+        "name": "Norse Saga Noir",
+        "sourceIds": ["SP14-138", "SP14-139"],
+        "rationale": "The archived Norse Sagas group names iron, ash, frost, oath, world-tree, saga rhythm, and runic animal contours. A Swedish History Museum runestone record documents an inscription following an animal-shaped ornament. The proposal makes interlace and material craft available to unspecified design elements while keeping Viking subjects and locations optional.",
+        "sources": [
+          "https://historiska.se/en/exhibitions/the-viking-world/",
+          "https://vikingar.historiska.se/object_details.php?l=en&object=354B0D85-7867-4AB1-BA57-6E168566D84B"
+        ],
+        "archivedSourceIds": [
+          "SP14-027",
+          "SP14-028",
+          "SP14-029",
+          "SP14-069",
+          "SP14-070",
+          "SP14-071",
+          "SP14-072",
+          "SP14-073",
+          "SP14-074",
+          "SP14-075",
+          "SP14-076",
+          "SP14-077",
+          "SP14-078",
+          "SP14-079",
+          "SP14-080"
+        ]
+      },
+      {
+        "id": "SP14-145",
+        "packId": "pack_14",
+        "version": 1,
+        "name": "Mande Epic & Griot",
+        "sourceIds": ["SP14-134", "SP14-135"],
+        "rationale": "The archive's Griot Star Memory Ring and UNESCO's Manden heritage record of griots recounting Sundiata in the Kamablon context anchor this family. Ringed roof bands, woven lineage borders, and star-memory accents are creative design translations of those documented story and architectural associations, not assertions of a universal Mande art canon.",
+        "sources": [
+          "https://ich.unesco.org/doc/src/06859-ES.pdf",
+          "https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_393a67e4-60c1-4324-9a70-b2682fe54680?_=184287engo.pdf"
+        ],
+        "archivedSourceIds": ["SP14-021"]
+      },
+      {
+        "id": "SP14-146",
+        "packId": "pack_14",
+        "version": 1,
+        "name": "Yoruba Orisha Myth-Noir",
+        "sourceIds": ["SP14-134", "SP14-135"],
+        "rationale": "Root widened the single-emblem draft into coherent selectable Orisha design vocabularies, informed by Yoruba beadwork and Ogun-associated sword ornament at The Met and Orisha attributes described by the Fowler Museum. Motifs are contemporary adaptation, not reconstruction.",
+        "sources": [
+          "https://www.metmuseum.org/art/collection/search/314326",
+          "https://www.metmuseum.org/art/collection/search/844643",
+          "https://www.metmuseum.org/art/collection/search/316824",
+          "https://fowler.ucla.edu/wp-content/uploads/2022/03/Fowler_PR_YorubaSacredArts.pdf"
+        ],
+        "archivedSourceIds": ["SP14-022"]
+      },
+      {
+        "id": "SP14-147",
+        "packId": "pack_14",
+        "version": 1,
+        "name": "Akan Anansi Trickster",
+        "sourceIds": ["SP14-134", "SP14-135"],
+        "rationale": "SP14-023 names Anansi and fate-weave. British Museum records document Asante/Akan textile design and identify Ananse Ntontan (spider web) with cunning, intelligence, and creativity. The proposal uses the named woven motif and trickster logic on fitting design surfaces, while keeping the requested subject itself intact.",
+        "sources": [
+          "https://www.britishmuseum.org/collection/object/E_Af1935-1005-2",
+          "https://www.britishmuseum.org/collection/object/E_2011-2002-73"
+        ],
+        "archivedSourceIds": ["SP14-023"]
+      },
+      {
+        "id": "SP14-148",
+        "packId": "pack_14",
+        "version": 1,
+        "name": "Egyptian Mythic Noir",
+        "sourceIds": [],
+        "rationale": "New cultural direction, not a renamed generic formal operator. Contemporary mythic illustration informed by Egyptian plant forms and material contrast; not a historical reconstruction.",
+        "sources": [
+          "https://www.metmuseum.org/art/collection/search/567690",
+          "https://www.metmuseum.org/art/collection/search/554770"
+        ]
+      },
+      {
+        "id": "SP14-149",
+        "packId": "pack_14",
+        "version": 1,
+        "name": "Maya Mythic Noir",
+        "sourceIds": ["SP14-030", "SP14-031"],
+        "rationale": "A new coherent Maya direction inspired by documented maize imagery and ceramic color; the listed legacy records are editorial lineage, not proof that their old mixture was culturally specific.",
+        "sources": [
+          "https://www.metmuseum.org/art/collection/search/312915",
+          "https://www.metmuseum.org/fr/exhibitions/gods-divinity-maya-art/visiting-guide"
+        ]
+      },
+      {
+        "id": "SP14-150",
+        "packId": "pack_14",
+        "version": 1,
+        "name": "Mexica Mythic Noir",
+        "sourceIds": ["SP14-032"],
+        "rationale": "Distinct from Maya through compact angular construction and turquoise mosaic/serpent design. Contemporary interpretation grounded in documented Mexica-associated works; not a claim that mosaic craft belonged exclusively to one culture.",
+        "sources": [
+          "https://www.britishmuseum.org/collection/object/E_Am1894-634",
+          "https://www.britishmuseum.org/collection/object/E_Am1987-Q-3"
+        ]
+      },
+      {
+        "id": "SP15-081",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Steampunk",
+        "sourceIds": ["SP15-001", "SP15-003", "SP15-006", "SP15-008"],
+        "rationale": "The positive DNA and Brass Gear, Pressure Lace, Print Foundry and Rivet Ritual sources promise gears, pressure, steam and bronze; current bans suppress those signatures."
+      },
+      {
+        "id": "SP15-082",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Dieselpunk",
+        "sourceIds": ["SP15-002", "SP15-004", "SP15-007"],
+        "rationale": "Current bans on vehicles conflict with archived Railworks, Radio Convoy and Airship Logistics sources; retain heavy mechanics without forcing their scenes."
+      },
+      {
+        "id": "SP15-083",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Clockpunk",
+        "sourceIds": ["SP15-005"],
+        "rationale": "The escapement mechanism is strong, but bans on clock imagery and scenes risk removing its identity; restore working timekeeping logic without requiring a clock subject."
+      },
+      {
+        "id": "SP15-084",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Cyberpunk",
+        "sourceIds": ["SP15-009", "SP15-010", "SP15-012", "SP15-013", "SP15-015", "SP15-016"],
+        "rationale": "The current avoid rules exclude characteristic technology and settings, leaving mainly signal accents; archived Meshlight, Firewall, Black Ice, Drone Graffiti and Neon Care support a high-tech/low-life language without a mandatory cybercity."
+      },
+      {
+        "id": "SP15-085",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Netpunk",
+        "sourceIds": ["SP15-011", "SP15-014"],
+        "rationale": "Netpunk topology and Signalpunk pulse bands/gaps are compatible scales of communication. Merge 086 into 085 while preserving both archived lineages."
+      },
+      {
+        "id": "SP15-087",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Solarpunk",
+        "sourceIds": ["SP15-017", "SP15-018", "SP15-020", "SP15-021", "SP15-023"],
+        "rationale": "Solarpunk currently suppresses environmental systems while Windpunk, Seedpunk and Rainpunk isolate compatible renewable mechanisms; merge 089/090/092 into one visible sustainable-future identity."
+      },
+      {
+        "id": "SP15-088",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Repairpunk",
+        "sourceIds": ["SP15-019", "SP15-048"],
+        "rationale": "SP15-088 has a functional repair mechanism; archive source 048 adds mutual-aid context. Keep it distinct from irregular Junkpunk salvage."
+      },
+      {
+        "id": "SP15-091",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Desertpunk",
+        "sourceIds": ["SP15-022", "SP15-039"],
+        "rationale": "Desertpunk and Saltpunk share climate/resource cues, while 099 risks reading as crust texture; merge saltworks into climate-responsive Desertpunk."
+      },
+      {
+        "id": "SP15-094",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Biopunk",
+        "sourceIds": ["SP15-026", "SP15-029", "SP15-030", "SP15-031", "SP15-032"],
+        "rationale": "The engineered-organic mechanism is sound but preserve-only language suppresses visible redesign; restore bioengineering while keeping transformation and clinical narrative optional."
+      },
+      {
+        "id": "SP15-095",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Mycopunk",
+        "sourceIds": ["SP15-025", "SP15-028"],
+        "rationale": "Mycopunk's fungal growth and mycelial structure are distinct from Biopunk engineering, so retain it as an independent design identity."
+      },
+      {
+        "id": "SP15-096",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Bodypunk",
+        "sourceIds": ["SP15-027"],
+        "rationale": "The nerve/fiber mechanism is distinct from Biopunk organisms, but blanket bans on modification and horror make the identity timid; keep transformation optional and prompt-led. Root strengthened embodied design through external sensory interfaces and second-skin construction so anatomy preservation does not reduce the style to a nerve-texture overlay."
+      },
+      {
+        "id": "SP15-097",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Seapunk",
+        "sourceIds": ["SP15-024", "SP15-033", "SP15-034", "SP15-035", "SP15-036"],
+        "rationale": "The active entry reads as marine-industrial texture; Coral Circuit, Tideglass, Kelp Arcade and Shell Metro source identities support a synthetic/digital aquatic style. Fold Mangrovepunk into it."
+      },
+      {
+        "id": "SP15-098",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Icepunk",
+        "sourceIds": ["SP15-037", "SP15-038"],
+        "rationale": "Facets and fracture seams are useful but currently read mainly as surface effect; Icebreaker and Glacier Data sources support cold-adapted engineering as a transferable language."
+      },
+      {
+        "id": "SP15-101",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Zinepunk",
+        "sourceIds": ["SP15-101"],
+        "rationale": "Repair SP15-101 around the actual archive lineage SP15-041, Zine Paste Graphics: pasted sheets, tape, cut paper, and photocopy contrast are the identity, not generic layered geometry."
+      },
+      {
+        "id": "SP15-102",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Skatepunk",
+        "sourceIds": ["SP15-102"],
+        "rationale": "Keep the active Skatepunk identity, but rebuild it around characteristic board-art, grip, urethane, plywood, and kinetic geometry. Its archived source SP15-042 supplied DIY generator/ramp motion but did not substantiate a skate identity, so this proposal is a deliberate visual correction rather than a faithful extraction."
+      },
+      {
+        "id": "SP15-103",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Synthpunk",
+        "sourceIds": ["SP15-103"],
+        "rationale": "SP15-103 descends from SP15-043, Synth Barricade Voltage. Restore patchable synth and amplifier construction as its identifying design language; keep it distinct from Cassette Futurism's molded media hardware and Broadcastpunk's transmitted picture layers."
+      },
+      {
+        "id": "SP15-104",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Streetpunk",
+        "sourceIds": ["SP15-104"],
+        "rationale": "SP15-104 descends from SP15-045, Sticker Signal Layers, but keeping only stickers and wheatpaste made it too close to Zinepunk. Restore a streetpunk clothing/equipment silhouette—tartan, patched leather, studs, and improvised fastenings—with graphics as a secondary layer."
+      },
+      {
+        "id": "SP15-105",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Ravepunk",
+        "sourceIds": ["SP15-105"],
+        "rationale": "SP15-105 comes from SP15-046, Rave Care Systems. Keep rave's participatory light and reflective-fabric language, including care as an available mood, while removing the current DNA's generic flowing-band-only treatment."
+      },
+      {
+        "id": "SP15-106",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Crustpunk",
+        "sourceIds": ["SP15-106"],
+        "rationale": "SP15-106 descends from SP15-047, Patch Jacket Pressure. Restore patchwork clothing and practical hardware as cultural design language; keep it distinct from Salvagepunk's repaired machines and structures."
+      },
+      {
+        "id": "SP15-107",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Vaporpunk",
+        "sourceIds": ["SP15-107"],
+        "rationale": "SP15-107 consolidates the cathode-reflection, checker-playfield, and mallsoft lineages (archived SP15-049/050/055). Retain pastel tile, chrome, and reflective nostalgia without fixing a venue."
+      },
+      {
+        "id": "SP15-108",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Cassette Futurism",
+        "sourceIds": ["SP15-108"],
+        "rationale": "SP15-108 descends from SP15-051, Cassette Weather Instruments. Retain its cassette, reel, dial, and field-instrument design vocabulary while making it a transferable visual style rather than a product still life."
+      },
+      {
+        "id": "SP15-109",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Broadcastpunk",
+        "sourceIds": ["SP15-109"],
+        "rationale": "SP15-109 draws from pirate-TV, CRT-static, and tape-listening sources (archived SP15-052/053/056). Its identity is transmitted analog media and layered signal framing, distinct from Synthpunk's sound-generating hardware and Glitchpunk's digital displacement."
+      },
+      {
+        "id": "SP15-110",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Glitchpunk",
+        "sourceIds": ["SP15-110"],
+        "rationale": "SP15-110 descends from SP15-054, Glitch Commerce Distortion. Keep the deliberate digital displacement identity while separating it from Broadcastpunk's stable analog transmission frames."
+      },
+      {
+        "id": "SP15-111",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Witchpunk",
+        "sourceIds": ["SP15-111"],
+        "rationale": "SP15-111 consolidates the former neon-current and tarot-circuit lineage, but its current neon/sigil definition erases the craft identity. Restore hand-built magical objects and material ingenuity; use electronic glow as an optional accent rather than the entire style."
+      },
+      {
+        "id": "SP15-112",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Gothpunk",
+        "sourceIds": ["SP15-112"],
+        "rationale": "SP15-112 consolidates pointed relay arches and antique-screen nocturne sources (archived SP15-059/063). Restore recognizable goth clothing, silhouette, and material language while allowing the prompt's setting and mood to lead."
+      },
+      {
+        "id": "SP15-113",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Bonepunk",
+        "sourceIds": ["SP15-113"],
+        "rationale": "SP15-113 descends from bone-lime signal horns and bone-signal rigging (archived SP15-060/076). The defining material must be engineered bone structure, not merely ivory color or generic corded technology."
+      },
+      {
+        "id": "SP15-114",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Necropunk",
+        "sourceIds": ["SP15-114"],
+        "rationale": "SP15-114 descends from SP15-061, Necrophone Repair Craft, but the current fade-and-restore operator is not a necromantic identity. Expand the source's repaired receiver into a broader visual system of skeletal articulation, funerary interfaces, relic power, and integrated decay/regeneration."
+      },
+      {
+        "id": "SP15-115",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Mythpunk",
+        "sourceIds": ["SP15-115"],
+        "rationale": "SP15-115's current civic wood-and-brass definition is arbitrary scene dressing. Rebuild Mythpunk around deliberate subversion of myth and fairytale forms through contemporary DIY intervention; preserve the selected myth's own visual logic."
+      },
+      {
+        "id": "SP15-116",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Folk Horror Punk",
+        "sourceIds": ["SP15-116"],
+        "rationale": "SP15-116 descends from SP15-064, Folk Horror Line Hum, but a ceramic-insulator/signal-line treatment is not enough to communicate folk horror. Restore handmade effigy, binding, and weathered folk ornament with punk defiance, without fixing a single rural scene."
+      },
+      {
+        "id": "SP15-117",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Atompunk",
+        "sourceIds": ["SP15-117"],
+        "rationale": "SP15-117 comes from SP15-065/066: enamel, chrome, atomic orbit graphics, and optimistic civic futurism. Those recognizable anchors distinguish it from Raypunk's pulp adventure shapes."
+      },
+      {
+        "id": "SP15-118",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Raypunk",
+        "sourceIds": ["SP15-118"],
+        "rationale": "SP15-118 consolidates the archived orbit-chrome, rocket-fin, and plasma-rail sources (SP15-067/068/070). A pulp illustration language ties their fins, beams, and motion together and remains visibly distinct from Atompunk."
+      },
+      {
+        "id": "SP15-119",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Salvagepunk",
+        "sourceIds": ["SP15-119"],
+        "rationale": "SP15-119 consolidates scrapbike, comet-tether, sail, and turbine lineages (archived SP15-044/069/079/080). Their coherent shared identity is visible adaptation and repair, not any single vehicle or setting; distinguish this from Low-Tech Punk's simple load-path construction."
+      },
+      {
+        "id": "SP15-120",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Lunarpunk",
+        "sourceIds": ["SP15-120"],
+        "rationale": "SP15-120 consolidates lunar cultivation and acoustic-relay lineages (archived SP15-071/072). Restore ecological stewardship, pale habitat forms, and calm earthlight rather than reducing Lunarpunk to circles and pastel planes."
+      },
+      {
+        "id": "SP15-121",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Stonepunk",
+        "sourceIds": ["SP15-121"],
+        "rationale": "SP15-121 consolidates archived Stonepunk sources SP15-073/074/075. The common identity is carved stone engineering and tool precision; this keeps it distinct from Low-Tech Punk's rope, wood, and visible load-path construction."
+      },
+      {
+        "id": "SP15-122",
+        "packId": "pack_15",
+        "version": 2,
+        "name": "Low-Tech Punk",
+        "sourceIds": ["SP15-122"],
+        "rationale": "SP15-122 descends from rope-generation and mud-brick energy sources (archived SP15-077/078). Define Low-Tech Punk by transparent function and simple construction, distinct from Stonepunk's carved mechanics and Salvagepunk's mismatched recovered repairs."
+      }
+    ],
+    "visualValidation": "pending",
+    "representativeCards": {
+      "reviewDate": "2026-09-23",
+      "provider": "chatgpt",
+      "transport": "http",
+      "count": 44,
+      "scope": "Representative compositions reviewed. Matched cross-subject pilots covered Hellenic/Egyptian mythic and Steam/Clock punk pairs on two everyday subjects; all other styles await cross-subject validation and human acceptance.",
+      "corrections": [
+        {
+          "id": "SP15-082",
+          "reason": "Historical tractor lacked speculative diesel-age identity; replaced with a functional walking harvester.",
+          "previousImagePreserved": true
+        }
+      ],
+      "reviewResolutions": [
+        {
+          "id": "SP15-102",
+          "reviewerConcern": "Illustration medium appeared too photographic.",
+          "primaryDecision": "Accepted after full-resolution inspection: painted planes in sky, arms, clothing and concrete, bold board graphics and compressed perspective are visible. No repeat submission."
+        }
+      ],
+      "cards": [
+        {
+          "id": "SP14-142",
+          "file": "assets/recipes/styles/defaults/SP14-142.webp",
+          "jobId": "7e4042de-b341-42db-ad8d-4c254595a2bc",
+          "model": "gpt-5.5",
+          "sha256": "bbc684acbd7d77177ff6d5efca08e7415a70f73af428046ef94917fab4ee87db",
+          "review": "representative-card-reviewed-by-primary-agent-after-cross-subject-pilot"
+        },
+        {
+          "id": "SP14-143",
+          "file": "assets/recipes/styles/defaults/SP14-143.webp",
+          "jobId": "4cb0554c-6fbf-4477-9a0c-fe847f2fc011",
+          "model": "gpt-5.5",
+          "sha256": "704a71a4bc7fe7dc0083d051c44b6f39ad0ae2ff3b7319d32523d50b0db1bc85",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP14-144",
+          "file": "assets/recipes/styles/defaults/SP14-144.webp",
+          "jobId": "67809bb5-8139-4429-96eb-66911c4924ee",
+          "model": "gpt-5.5",
+          "sha256": "9e9cfe68a2ad0b55a0960b4cc0116c4d39365a19ad0d35c863c1cf163d0dabcd",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP14-145",
+          "file": "assets/recipes/styles/defaults/SP14-145.webp",
+          "jobId": "e7201fdc-b9ca-4e15-9689-7e8a4f178bf1",
+          "model": "gpt-5.5",
+          "sha256": "d50f715818c3d3e3795db6dab09fec26d6ab0973ee047cdff25554a19d213444",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP14-146",
+          "file": "assets/recipes/styles/defaults/SP14-146.webp",
+          "jobId": "7c61d2d7-d29b-41ba-8e76-f7b07d8959d5",
+          "model": "gpt-5.5",
+          "sha256": "a1fec3198ea13bfaa641e339fc2e98256d3125f982207090f1539f2d0010c259",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP14-147",
+          "file": "assets/recipes/styles/defaults/SP14-147.webp",
+          "jobId": "c7b7a649-5cb5-4bbc-be04-ff54569cefc2",
+          "model": "gpt-5.5",
+          "sha256": "6f0180c02f0d11759a29a4509a299c4c608f91d875e01a607cef67e1f26d9f7d",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP14-148",
+          "file": "assets/recipes/styles/defaults/SP14-148.webp",
+          "jobId": "27e1bedc-5be7-4839-8542-7e865aecfb0b",
+          "model": "gpt-5.5",
+          "sha256": "99ddbde3f572b34465fb8260d5c12f1706fad743893ebcd9c34088f3644f2483",
+          "review": "representative-card-reviewed-by-primary-agent-after-cross-subject-pilot"
+        },
+        {
+          "id": "SP14-149",
+          "file": "assets/recipes/styles/defaults/SP14-149.webp",
+          "jobId": "382224fd-c332-4352-8a04-bf94344d4df8",
+          "model": "gpt-5.5",
+          "sha256": "4b826e4c33fe68c1b37b3c269cc03889eb0542b82dbc9d2baf0648b570a72483",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP14-150",
+          "file": "assets/recipes/styles/defaults/SP14-150.webp",
+          "jobId": "17c537dd-205e-4281-ae3e-1a1976beb67e",
+          "model": "gpt-5.5",
+          "sha256": "ce33d822c420826a6efaa324f5ba4162d848a8dd0af4816cd35dbaa4ad980836",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-081",
+          "file": "assets/recipes/styles/defaults/SP15-081.webp",
+          "jobId": "e7687847-9915-4524-ab71-729a35001d26",
+          "model": "gpt-5.5",
+          "sha256": "b1bfabf18b16c46466b1556b7b6c76c152c72b51dbc3ecf9017beee18d65fe7e",
+          "review": "representative-card-reviewed-by-primary-agent-after-cross-subject-pilot"
+        },
+        {
+          "id": "SP15-082",
+          "file": "assets/recipes/styles/defaults/SP15-082.webp",
+          "jobId": "a6d2412b-de60-482f-b5cc-23da6fc0a6df",
+          "model": "gpt-5.5",
+          "sha256": "9f170136bc4d3de821891c4af2282e2df6059e7036e67746a7368cd210f9c823",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-083",
+          "file": "assets/recipes/styles/defaults/SP15-083.webp",
+          "jobId": "6cce5f5d-1246-4460-9a58-31c9b873cf75",
+          "model": "gpt-5.5",
+          "sha256": "44ccb88915a520882c6e831fcfca9d58a3a1d6a60b4cc3534e16fb2fab937fde",
+          "review": "representative-card-reviewed-by-primary-agent-after-cross-subject-pilot"
+        },
+        {
+          "id": "SP15-084",
+          "file": "assets/recipes/styles/defaults/SP15-084.webp",
+          "jobId": "9ff3b4cd-547e-4cfc-9a32-0ce67039c995",
+          "model": "gpt-5.5",
+          "sha256": "599dbf70ced949225554301f166638111f29644d5a93f1e02d5f7700e8007419",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-085",
+          "file": "assets/recipes/styles/defaults/SP15-085.webp",
+          "jobId": "4be42878-9a6b-4f16-acd0-7dab37e6341e",
+          "model": "gpt-5.5",
+          "sha256": "3e1fd610122ff60c899a5a25b8ea42b8077b6541fb345a574107f8c6d23acc77",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-087",
+          "file": "assets/recipes/styles/defaults/SP15-087.webp",
+          "jobId": "292bae50-896e-4305-9a83-6319d7d71346",
+          "model": "gpt-5.5",
+          "sha256": "94afa5b9c086591e2d63d8c4d59031db20e482495a4f33c70c9448748428dffa",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-088",
+          "file": "assets/recipes/styles/defaults/SP15-088.webp",
+          "jobId": "4c447fdf-56fb-432f-b548-581b4bc7a1b2",
+          "model": "gpt-5.5",
+          "sha256": "2e1fd4397a771804e604b83f73b9229d1c9cdcd0951f4a7d03f181b74e9e055f",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-091",
+          "file": "assets/recipes/styles/defaults/SP15-091.webp",
+          "jobId": "b1ee8566-be76-4813-bc85-8bf2e84f532a",
+          "model": "gpt-5.5",
+          "sha256": "0aa3635e06f41f749cc9cb4402f054262785dc5d27ae7acd440c610d6ce0dba5",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-094",
+          "file": "assets/recipes/styles/defaults/SP15-094.webp",
+          "jobId": "15647553-4315-4a9f-ab21-813ad22a1462",
+          "model": "gpt-5.5",
+          "sha256": "d25fc301419362fda7ac8079645d660543e4494a8e67e0ebdd919ad6c28d66bf",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-095",
+          "file": "assets/recipes/styles/defaults/SP15-095.webp",
+          "jobId": "1bc693f6-bdf5-4a77-b57d-20cbb34888cf",
+          "model": "gpt-5.5",
+          "sha256": "48b6068f8e5a0adc60760b9cc0507504b646f842d29e335e92b2d4412816faf1",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-096",
+          "file": "assets/recipes/styles/defaults/SP15-096.webp",
+          "jobId": "ceaa80c8-6aaf-40f2-b2da-a0e84dce68f7",
+          "model": "gpt-5.5",
+          "sha256": "05548f872500633a5c836c2f8ba862685d45dcdc535e740112b9703b506dcdd4",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-097",
+          "file": "assets/recipes/styles/defaults/SP15-097.webp",
+          "jobId": "8df98d53-d832-46ca-a608-98c825101854",
+          "model": "gpt-5.5",
+          "sha256": "dcc9d6f78cbeccddd23f76d142d51e0bae0698a9d1c55f179d60e696f5f4efec",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-098",
+          "file": "assets/recipes/styles/defaults/SP15-098.webp",
+          "jobId": "f82c6eb7-1812-4827-b8d6-beb1033f46a5",
+          "model": "gpt-5.5",
+          "sha256": "3235e363ac152436688165977e191988c5b5f88a8d43614d01de72d90ec2fbd4",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-101",
+          "file": "assets/recipes/styles/defaults/SP15-101.webp",
+          "jobId": "13a31c13-0a38-4405-ad29-7fb4b55c4c9d",
+          "model": "gpt-5.5",
+          "sha256": "cd564333850be3a94a861f5ceec66fa71a41e32eb581fd0521b93c13585bd3de",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-102",
+          "file": "assets/recipes/styles/defaults/SP15-102.webp",
+          "jobId": "c78bb612-516a-46e9-9163-0f13b2eff77c",
+          "model": "gpt-5.5",
+          "sha256": "3d0c48de85d2849a148d7b0c6cdb9969a4b5077303bf7e5db5eb2850e20f1ddb",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-103",
+          "file": "assets/recipes/styles/defaults/SP15-103.webp",
+          "jobId": "174d0b31-3d03-415f-8e0b-700347e30a07",
+          "model": "gpt-5.5",
+          "sha256": "7179b4a51fb31fab796e8cf0c302600ab9810f889f902160a6dce17faa2fd83b",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-104",
+          "file": "assets/recipes/styles/defaults/SP15-104.webp",
+          "jobId": "41816c46-0292-4976-8011-8d7882631861",
+          "model": "gpt-5.5",
+          "sha256": "92f747a9802df5e6dc0cbb23e0f76132d9825e8487e19bedbe52e5d0c3d68039",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-105",
+          "file": "assets/recipes/styles/defaults/SP15-105.webp",
+          "jobId": "bd7ad922-a77d-49aa-a441-e8e92e338beb",
+          "model": "gpt-5.5",
+          "sha256": "0002cdaff0081a2060c572bffc24aaa4e408ba1296ccdd888e4ceaf794337d3f",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-106",
+          "file": "assets/recipes/styles/defaults/SP15-106.webp",
+          "jobId": "5c956006-696f-45be-8179-3c9c737223b8",
+          "model": "gpt-5.5",
+          "sha256": "6d57cfca155364c7abc1669b47e35f1dfd93aa30c8dfee2b0760e98aaed7371f",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-107",
+          "file": "assets/recipes/styles/defaults/SP15-107.webp",
+          "jobId": "a6a63147-dd95-4b90-93fb-c963b20e5cd4",
+          "model": "gpt-5.5",
+          "sha256": "6dbe762b5f8236ee6bd6052a875e3486c77ec385c94c50aa3cbf2c426b951402",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-108",
+          "file": "assets/recipes/styles/defaults/SP15-108.webp",
+          "jobId": "0a1fe51e-a33a-49af-b22f-d1612574f4e7",
+          "model": "gpt-5.5",
+          "sha256": "1e3693a2f6c81f708354e4f652add1c124dedf2d46f65d238c43e3754d746d00",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-109",
+          "file": "assets/recipes/styles/defaults/SP15-109.webp",
+          "jobId": "cc468c92-bc92-41ee-889f-a64fa9a85365",
+          "model": "gpt-5.5",
+          "sha256": "a5c7a2efe33c98c0fc3c4ac57fded91e4c2f7d700d4b5c04821f46995e8ab556",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-110",
+          "file": "assets/recipes/styles/defaults/SP15-110.webp",
+          "jobId": "47625e86-d7af-4007-b7fa-27a2504c61cf",
+          "model": "gpt-5.5",
+          "sha256": "66cfdc3eca5e6b8795b405e4651744b780622f12db9345a8fa07b8fd6ed4153f",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-111",
+          "file": "assets/recipes/styles/defaults/SP15-111.webp",
+          "jobId": "4be9b3dc-da9d-4832-b742-129cf1f35e61",
+          "model": "gpt-5.5",
+          "sha256": "a2eda1ab47be1c56c16ba858d5276deb7af97fc9f29198e5c29d4a27762a6094",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-112",
+          "file": "assets/recipes/styles/defaults/SP15-112.webp",
+          "jobId": "0673f6bb-d524-4117-84a4-c5a4b3732609",
+          "model": "gpt-5.5",
+          "sha256": "f32579e478e398ac9ba36b0c815c0a4786e6f2087fe095601c2c530777d24667",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-113",
+          "file": "assets/recipes/styles/defaults/SP15-113.webp",
+          "jobId": "9e2fa3b8-4eae-4ec4-960b-97b393ebb2f5",
+          "model": "gpt-5.5",
+          "sha256": "b3b0e6cf0fd0060af284df954a6d9f1f8f9b88d5e1810e3e9f840c3e5e3dd9e9",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-114",
+          "file": "assets/recipes/styles/defaults/SP15-114.webp",
+          "jobId": "2ea2a0bf-0b5e-4412-b11f-c832256aabd6",
+          "model": "gpt-5.5",
+          "sha256": "cf6948a72c34343ed950b158181c48e1601b7f9d4155909e6c76c24808ac0cdb",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-115",
+          "file": "assets/recipes/styles/defaults/SP15-115.webp",
+          "jobId": "02c5c617-f01d-4f53-a50a-46c741c1a009",
+          "model": "gpt-5.5",
+          "sha256": "45efefff43c20d0ce7d77c13d2e3b8e9eddbb8500bc9041a4effebaedb3d32e0",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-116",
+          "file": "assets/recipes/styles/defaults/SP15-116.webp",
+          "jobId": "a6377199-bccb-4dbd-8a75-c16b36de3344",
+          "model": "gpt-5.5",
+          "sha256": "914adbafc9f9476135c497257b73ab4b5b77f3c6104574381bc3809e74201051",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-117",
+          "file": "assets/recipes/styles/defaults/SP15-117.webp",
+          "jobId": "ff95514e-a67b-40ac-93b1-3171b411c2e0",
+          "model": "gpt-5.5",
+          "sha256": "e2b3b5382d0b6d10c83b976b50a821779db9437ca34bfdb7cfceaabf10934bd2",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-118",
+          "file": "assets/recipes/styles/defaults/SP15-118.webp",
+          "jobId": "21414a17-8b70-4398-a9d9-611c4bdcbf94",
+          "model": "gpt-5.5",
+          "sha256": "f1a27b23ad65d8c0c11de6623b0df5ea82d19b7581053c73557e0f0df44e6685",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-119",
+          "file": "assets/recipes/styles/defaults/SP15-119.webp",
+          "jobId": "e435627c-733a-4dcc-a35b-aa2df5a2ced4",
+          "model": "gpt-5.5",
+          "sha256": "00b05009cea95555c1db72403eb64710c6fe0204ce7809521b1f8c034985f1b7",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-120",
+          "file": "assets/recipes/styles/defaults/SP15-120.webp",
+          "jobId": "5ac0f262-a88d-4aaa-b63b-ea04a7b9a3fd",
+          "model": "gpt-5.5",
+          "sha256": "58faf24942ba4c05eac55928a999cc25074fa0a46e73fbc39451d878ec08050d",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-121",
+          "file": "assets/recipes/styles/defaults/SP15-121.webp",
+          "jobId": "b6911dbf-533a-450f-a3ba-452a76de2b83",
+          "model": "gpt-5.5",
+          "sha256": "b5718a2954a5587b8d7b063772299139a9da7b467ce9829bd830a1bd223f7507",
+          "review": "representative-card-reviewed-by-primary-agent"
+        },
+        {
+          "id": "SP15-122",
+          "file": "assets/recipes/styles/defaults/SP15-122.webp",
+          "jobId": "9705d621-b3d9-45cd-aa97-b4d8e8dc3395",
+          "model": "gpt-5.5",
+          "sha256": "085d21a873372702deaef863508c8f0ae8a90204cba1710ba5d7d1240b8549c7",
+          "review": "representative-card-reviewed-by-primary-agent"
+        }
+      ],
+      "preservedPreviousPrimaries": [
+        {
+          "id": "SP15-081",
+          "file": "assets/recipes/styles/defaults/variants/SP15-081-02.webp",
+          "sha256": "e2f2e03990cb7f8ab340cf97712187313bfa6793d5270cb22a1710e9b2d12f4c",
+          "jobId": "c53c4d34-479a-44f6-aebd-cc2745041a8e"
+        },
+        {
+          "id": "SP15-082",
+          "file": "assets/recipes/styles/defaults/variants/SP15-082-01.webp",
+          "sha256": "de257f0444d80c9e274fd05e51dc0725d6cd914acd2e34b2bf684d06fe18cb4d",
+          "jobId": "d5ca7123-693e-431e-b6cb-27a110d1fde6"
+        },
+        {
+          "id": "SP15-083",
+          "file": "assets/recipes/styles/defaults/variants/SP15-083-01.webp",
+          "sha256": "e1eef7be974a741225e26a44ad2b1536ffa5e776898b7ed6bd496c20df6dac04",
+          "jobId": "7620f862-815c-4a13-9c44-f0e663c4100c"
+        },
+        {
+          "id": "SP15-084",
+          "file": "assets/recipes/styles/defaults/variants/SP15-084-01.webp",
+          "sha256": "c243c2b9e00e39f54864c87a1c3d6deb163080eab8c59ebb8258688d58b3450e",
+          "jobId": "351c579f-821c-4213-ad53-1991b7f1fc1e"
+        },
+        {
+          "id": "SP15-085",
+          "file": "assets/recipes/styles/defaults/variants/SP15-085-01.webp",
+          "sha256": "d5f3fd60e82d7c407d05ef5465c69eef6d565db36a64ca17bcc19e0d9710f458",
+          "jobId": "55010ccf-3d00-4f9d-a3de-61fe5052d0c5"
+        },
+        {
+          "id": "SP15-087",
+          "file": "assets/recipes/styles/defaults/variants/SP15-087-02.webp",
+          "sha256": "e9827f0ca06d0a51379fa50fa770d31d1fab69c1583bae40d16303dbb2d0b14b",
+          "jobId": "87495219-04bc-442b-933c-57271012a70e"
+        },
+        {
+          "id": "SP15-088",
+          "file": "assets/recipes/styles/defaults/variants/SP15-088-02.webp",
+          "sha256": "625362f38cf911e8ebfd12d3ddcd136d811a4876765e0f8368ac6cacafc0d200",
+          "jobId": "930850de-4f3e-442e-8c73-c052d305b37c"
+        },
+        {
+          "id": "SP15-091",
+          "file": "assets/recipes/styles/defaults/variants/SP15-091-02.webp",
+          "sha256": "229275240ff1876fed9d56d98fecfe63ca33284c9b7996b8140ea567d65abdcc",
+          "jobId": "c03848c3-6119-4b1d-a531-8700177a1f87"
+        },
+        {
+          "id": "SP15-094",
+          "file": "assets/recipes/styles/defaults/variants/SP15-094-01.webp",
+          "sha256": "48fbfe72e8542e978f4131710cdb60214cec24a541dd49694d65930e260829a2",
+          "jobId": "eeac7fd2-dffd-405a-9f13-5eea1486b3d2"
+        },
+        {
+          "id": "SP15-095",
+          "file": "assets/recipes/styles/defaults/variants/SP15-095-01.webp",
+          "sha256": "052d7fa5d9d2a5b65f62f046c5690cac3ec7bdd2db77871c8e5cce668fc7827c",
+          "jobId": "cb5a96aa-b931-4fc8-9218-faddc33d45c5"
+        },
+        {
+          "id": "SP15-096",
+          "file": "assets/recipes/styles/defaults/variants/SP15-096-01.webp",
+          "sha256": "978b1cc067bd6e5db74775534b00dc0bf1b03c17a6ad0110b855d287e30cdaea",
+          "jobId": "7aacb70b-4ef8-4130-99c4-5c756759756b"
+        },
+        {
+          "id": "SP15-097",
+          "file": "assets/recipes/styles/defaults/variants/SP15-097-01.webp",
+          "sha256": "8a8db3aafe722e61cd36206842ed286edb685ea3ad97ed33206bde1a835382b9",
+          "jobId": "a2cc54c4-1c9b-42f0-8f90-97d5e1bbebb0"
+        },
+        {
+          "id": "SP15-098",
+          "file": "assets/recipes/styles/defaults/variants/SP15-098-01.webp",
+          "sha256": "8948003603781604dc3e378d3de401a613eec7dd22310177c1d25c183684c06e",
+          "jobId": "5c459441-ac9a-4f8b-9060-6522d3c9dbc5"
+        },
+        {
+          "id": "SP15-101",
+          "file": "assets/recipes/styles/defaults/variants/SP15-101-02.webp",
+          "sha256": "1c9c6b82c934446d2529968bacbb5bc835bfdc50320da2e8e0c20474a4f8049f",
+          "jobId": "3d6143f0-2150-42c8-b679-920fc9501dc6"
+        },
+        {
+          "id": "SP15-102",
+          "file": "assets/recipes/styles/defaults/variants/SP15-102-03.webp",
+          "sha256": "520ed0c8e9fbfed02e6ca97bb359414ef56c656dba0666f78f7a001da52c12da",
+          "jobId": "f634a044-0fe7-4508-b7f5-2e674443b948"
+        },
+        {
+          "id": "SP15-103",
+          "file": "assets/recipes/styles/defaults/variants/SP15-103-02.webp",
+          "sha256": "034064b24e1e473226fe28615f6bdb41da261367c0bd08839eb10ce707a2b8c3",
+          "jobId": "769ab2e2-f515-465b-ba37-1a2c8adf75b0"
+        },
+        {
+          "id": "SP15-104",
+          "file": "assets/recipes/styles/defaults/variants/SP15-104-02.webp",
+          "sha256": "2c294bf7b11ac9cfc3009c99280e8ef0d9a1586aac5b3147730fa9bbea8c20dc",
+          "jobId": "46887dca-3f3e-447b-b4c6-27b872dfa79b"
+        },
+        {
+          "id": "SP15-105",
+          "file": "assets/recipes/styles/defaults/variants/SP15-105-03.webp",
+          "sha256": "3e73dfe549cce4a1a901e0f794991d91d58a6d36889b3a2af2b5206d802e3d7d",
+          "jobId": "8e43c64f-85a6-4f1e-8e30-15c1dd490384"
+        },
+        {
+          "id": "SP15-106",
+          "file": "assets/recipes/styles/defaults/variants/SP15-106-03.webp",
+          "sha256": "c9947963486c153d05624c19d710d971ce4a9fd3eac26dff1f0c1a7537409412",
+          "jobId": "7426fcca-dafa-4397-8fd1-e6145151fa3d"
+        },
+        {
+          "id": "SP15-107",
+          "file": "assets/recipes/styles/defaults/variants/SP15-107-01.webp",
+          "sha256": "af9e7e59ab854fc9bca82f4b97580982f6577a62d82a7a10c3d3eb8dfc41ab17",
+          "jobId": "758cfd22-5e34-485b-9057-28fa90cf6031"
+        },
+        {
+          "id": "SP15-108",
+          "file": "assets/recipes/styles/defaults/variants/SP15-108-02.webp",
+          "sha256": "0f84a809eca09a2706445672bbf2c8deeee7acf78871cc0070eef6942c124f8c",
+          "jobId": "555ab7e6-0c73-46e3-99da-e248e3200ffa"
+        },
+        {
+          "id": "SP15-109",
+          "file": "assets/recipes/styles/defaults/variants/SP15-109-02.webp",
+          "sha256": "ae19e93bfeb85a3f5e4ccd44eef9f77ba25e47e68fe7adced738df348f345852",
+          "jobId": "9e572488-ce5e-4da8-a31a-1eea4dd451c0"
+        },
+        {
+          "id": "SP15-110",
+          "file": "assets/recipes/styles/defaults/variants/SP15-110-01.webp",
+          "sha256": "809059174cc859ceb1a773625eac399d645ffd1c2856018c6424293e2dfa6496",
+          "jobId": "994d9a18-2384-4935-8ed9-dcb688307fe2"
+        },
+        {
+          "id": "SP15-111",
+          "file": "assets/recipes/styles/defaults/variants/SP15-111-01.webp",
+          "sha256": "14128cb58260c185bb1b6420dccc7a30aa9c6e3b9ee4f9b88fbade20da2725b9",
+          "jobId": "53fbb127-2b81-4a31-9a2c-801bed894050"
+        },
+        {
+          "id": "SP15-112",
+          "file": "assets/recipes/styles/defaults/variants/SP15-112-01.webp",
+          "sha256": "abac6d1607ee5d0148188d761af58316e5fa99caea71798f27447327ee6e423d",
+          "jobId": "2274c7bd-33f1-4e2b-8f39-2147eb7dfb02"
+        },
+        {
+          "id": "SP15-113",
+          "file": "assets/recipes/styles/defaults/variants/SP15-113-01.webp",
+          "sha256": "3cf4a24e5d38c201e4042e1224fe566418551883913af83e923e2a5e53e5dc53",
+          "jobId": "897013f6-c2fd-4c0f-a209-b402aa509c8b"
+        },
+        {
+          "id": "SP15-114",
+          "file": "assets/recipes/styles/defaults/variants/SP15-114-01.webp",
+          "sha256": "728f8e39c36bdefc47c38fd0fb175a1aec80e3fa934517f6a4a270a97af64202",
+          "jobId": "d4c2fd2c-09c4-44f3-9596-c435db9f94de"
+        },
+        {
+          "id": "SP15-115",
+          "file": "assets/recipes/styles/defaults/variants/SP15-115-01.webp",
+          "sha256": "10b2b7a6b922b1d82af135e3937811a1aa732603429c3ee48cc317ade00b56ce",
+          "jobId": "c1340adc-9b44-4a8c-a6d3-9a0d556b9d35"
+        },
+        {
+          "id": "SP15-116",
+          "file": "assets/recipes/styles/defaults/variants/SP15-116-01.webp",
+          "sha256": "6bf7164c63373640295c8f43643ccdaf246e7885c286e127eb6918b3ab4399e0",
+          "jobId": "5eaaf01a-446f-45fe-9e8c-737daf3b4483"
+        },
+        {
+          "id": "SP15-117",
+          "file": "assets/recipes/styles/defaults/variants/SP15-117-01.webp",
+          "sha256": "986b8cbf79602b86217ef5043c9acb6e2ae79c0ea0b4ab08b734ee5011809937",
+          "jobId": "c879ad54-49e1-4cef-a253-b20b655d71af"
+        },
+        {
+          "id": "SP15-118",
+          "file": "assets/recipes/styles/defaults/variants/SP15-118-01.webp",
+          "sha256": "508347ed346a82150e1817511163486d39efd33318916491a78e1562d07c2f38",
+          "jobId": "2cb054b7-ee88-420b-b294-1e845e7a0ff1"
+        },
+        {
+          "id": "SP15-119",
+          "file": "assets/recipes/styles/defaults/variants/SP15-119-01.webp",
+          "sha256": "8fd101e3de2d92c927f887360edb948bd5d4ae0568293886210f474fa66e5a9e",
+          "jobId": "626ba2a7-c30c-4529-874d-eb1faa30e61f"
+        },
+        {
+          "id": "SP15-120",
+          "file": "assets/recipes/styles/defaults/variants/SP15-120-01.webp",
+          "sha256": "e66ee00b26ca81f986fbe60011b71d432c4cc2918f071525827fb7ed7d8881dc",
+          "jobId": "cc756d24-69f9-45ff-903d-0f3904cee78d"
+        },
+        {
+          "id": "SP15-121",
+          "file": "assets/recipes/styles/defaults/variants/SP15-121-01.webp",
+          "sha256": "7aa4c732fb038b4b3ea7572c492cf07b42dc948fe6156ceef4300c70e1141947",
+          "jobId": "b2e59b45-e669-46dc-9136-091732fcd2a9"
+        },
+        {
+          "id": "SP15-122",
+          "file": "assets/recipes/styles/defaults/variants/SP15-122-01.webp",
+          "sha256": "657e77a827516d88733c347c312b083f42715407fb0ae0f6832c90fa31bd3d50",
+          "jobId": "cce6d243-3929-4ea9-b4c0-6533e53c88e6"
+        },
+        {
+          "id": "SP15-082",
+          "file": "assets/recipes/styles/defaults/variants/SP15-082-02.webp",
+          "sha256": "0f4b548e36e74d8f5815316f47bb751434402f51e0aa129933cece0bf5f36468",
+          "jobId": "78daeb1b-b45a-4f13-a075-c4d3bbb7a606"
+        },
+        {
+          "id": "SP14-142",
+          "file": "assets/recipes/styles/defaults/variants/SP14-142-01.webp",
+          "sha256": "1bd71491094b929f23be79996aac8d9ab945474a7874047db71ea7755f1d1471",
+          "jobId": "c8da9048-0eb2-4817-820c-ccbfa191cf81"
+        },
+        {
+          "id": "SP14-148",
+          "file": "assets/recipes/styles/defaults/variants/SP14-148-01.webp",
+          "sha256": "bdfa46eef5ba72b58199777463fbd9a78ff4615087301b4f44d53e3ba1191e19",
+          "jobId": "66f3c435-8991-4c81-bb98-b05b2c704d47"
+        },
+        {
+          "id": "SP15-081",
+          "file": "assets/recipes/styles/defaults/variants/SP15-081-03.webp",
+          "sha256": "5b26aab6217fffbfcd8b3127226ffb87b58c605c22020d522892f499fa56a72a",
+          "jobId": "6cc1b2b9-3a7b-486f-aa43-732edec3ba8e"
+        },
+        {
+          "id": "SP15-083",
+          "file": "assets/recipes/styles/defaults/variants/SP15-083-02.webp",
+          "sha256": "b8992085eb15edbfd2a615236eee404df98fa047a054982163204c0824209ba8",
+          "jobId": "25ae219e-f43a-44b2-aeae-be852b46d764"
+        }
+      ]
+    },
+    "cardRecomposition": {
+      "date": "2026-09-24",
+      "provider": "chatgpt",
+      "transport": "http",
+      "maximumConcurrentRequests": 4,
+      "scope": "All 44 reviewed Mythic Noir and Punk Spectrum cards were recomposed as finished scenes; Anansi and Necropunk received one additional correction. Cards are representative previews, not cross-subject acceptance.",
+      "corrections": ["SP14-147", "SP15-114"],
+      "cards": [
+        {
+          "id": "SP14-142",
+          "file": "assets/recipes/styles/defaults/SP14-142.webp",
+          "jobId": "caf24985-fa4b-4b70-8fbe-9e2e4e0bcdd9",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:42:08.239Z",
+          "sha256": "84b5f5ff812b5c79029a39ef39863ae02c9177be56a60c186bb0531f9110de2d"
+        },
+        {
+          "id": "SP14-143",
+          "file": "assets/recipes/styles/defaults/SP14-143.webp",
+          "jobId": "180067ac-ca99-4de4-8d72-4da66b8b331d",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:42:30.788Z",
+          "sha256": "b648b4c4e9d7f30b76fbc2da987dcf5eb4e023d8d97b1b9c9dc08ab1f31c6c91"
+        },
+        {
+          "id": "SP14-144",
+          "file": "assets/recipes/styles/defaults/SP14-144.webp",
+          "jobId": "59ec1ca3-e25d-433e-ac00-144ed283d008",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:42:50.813Z",
+          "sha256": "33dbeed80f561d53d4149c4c18a66d26b30696f017b1d666166098899492a95a"
+        },
+        {
+          "id": "SP14-145",
+          "file": "assets/recipes/styles/defaults/SP14-145.webp",
+          "jobId": "5049393f-253b-4a06-bc87-0cfa2ddb6dab",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:42:37.946Z",
+          "sha256": "49bc65b4a1395713e2d88b2ad91aa9007926785f1c5006edc5fc818ed776dd94"
+        },
+        {
+          "id": "SP14-146",
+          "file": "assets/recipes/styles/defaults/SP14-146.webp",
+          "jobId": "897d7f5e-37a5-464c-8097-0db28202b316",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:42:49.750Z",
+          "sha256": "163c031929293cb91f9cd783e477208994e4891707ced0d240694577e69570d4"
+        },
+        {
+          "id": "SP14-147",
+          "file": "assets/recipes/styles/defaults/SP14-147.webp",
+          "jobId": "373f5567-f17d-4208-a01b-33dd3a55fc3d",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T01:05:02.863Z",
+          "sha256": "a938331602d304db7f4b82527123732263e741cd7795d35cca1da5c18335efb7"
+        },
+        {
+          "id": "SP14-148",
+          "file": "assets/recipes/styles/defaults/SP14-148.webp",
+          "jobId": "ab6a6ddf-d61b-4962-b308-f6144186676d",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:43:14.322Z",
+          "sha256": "71c9da01c1f182c024c4d3188f386870034c001e9f4886bbed3e19806c1e3b00"
+        },
+        {
+          "id": "SP14-149",
+          "file": "assets/recipes/styles/defaults/SP14-149.webp",
+          "jobId": "9ed23a6a-5969-4ed1-bfa4-8935e2486a46",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:43:29.695Z",
+          "sha256": "f0cc0273e7b8d8d6911445585de0f98f48130ece3ae9622d013237acc2dcb4d6"
+        },
+        {
+          "id": "SP14-150",
+          "file": "assets/recipes/styles/defaults/SP14-150.webp",
+          "jobId": "17fba250-c067-446c-9e7a-c7e809796344",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:43:35.448Z",
+          "sha256": "29e63c921e739dbfb0f280ca6a9b966be73aea00acf3aea475a09217fae561ba"
+        },
+        {
+          "id": "SP15-081",
+          "file": "assets/recipes/styles/defaults/SP15-081.webp",
+          "jobId": "00d38ed0-6d0b-437d-8c6a-d7fc0ad23d89",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:43:59.601Z",
+          "sha256": "c05e5b0fc864b8193af81d0c8476fa1916e94dd53316082b5e100ea508bc2852"
+        },
+        {
+          "id": "SP15-082",
+          "file": "assets/recipes/styles/defaults/SP15-082.webp",
+          "jobId": "e2afba9c-6ec4-467d-8c70-a8854011bdcd",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:44:09.425Z",
+          "sha256": "f1989a161edd7aaf3c481c9fafe9790dec0dd0287296a75a8d23ea7caf774d66"
+        },
+        {
+          "id": "SP15-083",
+          "file": "assets/recipes/styles/defaults/SP15-083.webp",
+          "jobId": "ecbb91d1-197c-4b33-815f-cdb29331db50",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:44:27.021Z",
+          "sha256": "2586f67a929f687e69256d81a2bda321a9a5018e17c4ef60ed72527d90926fc4"
+        },
+        {
+          "id": "SP15-084",
+          "file": "assets/recipes/styles/defaults/SP15-084.webp",
+          "jobId": "29c90e0a-778b-4728-b909-85386d0dd4e1",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:44:29.430Z",
+          "sha256": "74158c2cf528954398c3a5e144e6443cfe7807ba114b59ecc3191d75082f1d13"
+        },
+        {
+          "id": "SP15-085",
+          "file": "assets/recipes/styles/defaults/SP15-085.webp",
+          "jobId": "255bec26-bdbc-476a-896b-8bdd7eec150c",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:44:54.614Z",
+          "sha256": "4a4402205565d449994cdc1f3f38901b749d5ba28937600ca6e486386b3a4e90"
+        },
+        {
+          "id": "SP15-087",
+          "file": "assets/recipes/styles/defaults/SP15-087.webp",
+          "jobId": "8ee8e2c8-54ca-4031-bbeb-7981990878b8",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:45:08.873Z",
+          "sha256": "7b0755559867adc5d83fc64944dfe6cd72538e407d4d4c4f2715c1b2e1dc901d"
+        },
+        {
+          "id": "SP15-088",
+          "file": "assets/recipes/styles/defaults/SP15-088.webp",
+          "jobId": "ec03b612-ab0f-4fe3-88fb-c227df53ff48",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:45:18.087Z",
+          "sha256": "a005b1da34ec95ef491078e57aeb816c77c6b98daa4dae571ead34bf83f107aa"
+        },
+        {
+          "id": "SP15-091",
+          "file": "assets/recipes/styles/defaults/SP15-091.webp",
+          "jobId": "6c6f54b4-a605-4f10-b19c-cc0fb59851ec",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:45:25.213Z",
+          "sha256": "4976d5f2cf64ba34d36cb2ea3635b47dfc68be3ce69aa63e6292cbe32e037c84"
+        },
+        {
+          "id": "SP15-094",
+          "file": "assets/recipes/styles/defaults/SP15-094.webp",
+          "jobId": "13a0fb08-d0d3-4704-93e2-a77660eca208",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:45:53.280Z",
+          "sha256": "f7a174f5c7901036e5c5c30b54f91a2623da1f55a590bebdb179bc535f373f8d"
+        },
+        {
+          "id": "SP15-095",
+          "file": "assets/recipes/styles/defaults/SP15-095.webp",
+          "jobId": "1d06865e-cbc5-497e-be10-0248e14d2579",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:46:03.016Z",
+          "sha256": "5926c699d3b79cfe76df22c73d6a6bc16c9fe197d39c62bfc0f9a51f0726a84a"
+        },
+        {
+          "id": "SP15-096",
+          "file": "assets/recipes/styles/defaults/SP15-096.webp",
+          "jobId": "78f1921b-5ffc-40de-8fda-bafed54f95e7",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:46:09.569Z",
+          "sha256": "922feefc8e8a56faa20cf9bf768adc3f048565ecff8332b5b93836b6c37f262c"
+        },
+        {
+          "id": "SP15-097",
+          "file": "assets/recipes/styles/defaults/SP15-097.webp",
+          "jobId": "24ba57f5-1251-4a8b-a69e-7407f528409a",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:46:22.115Z",
+          "sha256": "a216117f67cdd8e109beecbe54c87953ac9b1d1db329aa63224135ea134015ef"
+        },
+        {
+          "id": "SP15-098",
+          "file": "assets/recipes/styles/defaults/SP15-098.webp",
+          "jobId": "b2163ce5-8fcb-442b-af94-597a43abbb1a",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:46:26.526Z",
+          "sha256": "dcbb0caf7e5759a83469697a3c27b81e9a1e856a5a7ed751e995f23fda3b19ce"
+        },
+        {
+          "id": "SP15-101",
+          "file": "assets/recipes/styles/defaults/SP15-101.webp",
+          "jobId": "23ac5203-7fc7-431d-9b32-574ee4019832",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:46:53.673Z",
+          "sha256": "b818502ebd3d24666951f654fdb899fa92f2dc5f4dc4655fcbc2cceecaab770d"
+        },
+        {
+          "id": "SP15-102",
+          "file": "assets/recipes/styles/defaults/SP15-102.webp",
+          "jobId": "5750e781-e547-4397-9873-c5d2ce83a143",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:46:47.538Z",
+          "sha256": "a16826a95c171433ba70a93e9ba13b9fbae126b2c45d36378f415c8394073e0f"
+        },
+        {
+          "id": "SP15-103",
+          "file": "assets/recipes/styles/defaults/SP15-103.webp",
+          "jobId": "c9e3435c-12fb-4c69-a182-d412b3455885",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:47:13.656Z",
+          "sha256": "78d58060cdb4baa33e7c5dc0cee2bdbe29376dbb1ae4239d9446ac13e8802c4e"
+        },
+        {
+          "id": "SP15-104",
+          "file": "assets/recipes/styles/defaults/SP15-104.webp",
+          "jobId": "67724672-d6f9-4a91-ab6f-a4029b54e385",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:47:20.699Z",
+          "sha256": "74f796d16f6471a406d1a03c578f4540c0791b78b5460bd69d2eca634ee51834"
+        },
+        {
+          "id": "SP15-105",
+          "file": "assets/recipes/styles/defaults/SP15-105.webp",
+          "jobId": "8d510992-fcbc-4b74-8897-6b6a915b853d",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:47:52.591Z",
+          "sha256": "7a34144ddf4fcc7d67fbe5b66fd65c2ce5dac6dc954666baab6de200f191825a"
+        },
+        {
+          "id": "SP15-106",
+          "file": "assets/recipes/styles/defaults/SP15-106.webp",
+          "jobId": "d1c92cb4-3e0d-421b-8836-da3c6eaa4d7e",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:47:48.554Z",
+          "sha256": "e61bca0163f9852d83f9d87f04fff6932be31051db3baca5add5c6c321e45b84"
+        },
+        {
+          "id": "SP15-107",
+          "file": "assets/recipes/styles/defaults/SP15-107.webp",
+          "jobId": "18f58bf0-1c9a-42dc-ab8d-971abc1bf18c",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:48:07.676Z",
+          "sha256": "595eafbc814fcad41406f168a4bde6b6a027bcafe968b8f686962a78018c3ae2"
+        },
+        {
+          "id": "SP15-108",
+          "file": "assets/recipes/styles/defaults/SP15-108.webp",
+          "jobId": "ff32f75a-af60-4316-b5f9-0030fb987205",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:48:19.100Z",
+          "sha256": "e9b57bdc49989cd1abe8efb341932f0cd1905c8cdb1585604452316aa4391e0b"
+        },
+        {
+          "id": "SP15-109",
+          "file": "assets/recipes/styles/defaults/SP15-109.webp",
+          "jobId": "1d02963b-4db1-4f94-8e1e-edb33300c8bf",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:49:37.503Z",
+          "sha256": "798f2598f35565b57753e890fd377328275a854fe3153988774a1fc6b6ef06b3"
+        },
+        {
+          "id": "SP15-110",
+          "file": "assets/recipes/styles/defaults/SP15-110.webp",
+          "jobId": "da8e0018-b6ce-408d-834e-f380167e74be",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:49:31.486Z",
+          "sha256": "3c432466f72cc88d98915112273bf89573edfb4ecbbd272175b23153ca487d3e"
+        },
+        {
+          "id": "SP15-111",
+          "file": "assets/recipes/styles/defaults/SP15-111.webp",
+          "jobId": "1b3031ac-cb2e-433b-81d0-b6a1b033b7ab",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:49:37.368Z",
+          "sha256": "267812cda6cf2340aa9cec35828260d0d7e058d9eab0f46664315086d0c6d021"
+        },
+        {
+          "id": "SP15-112",
+          "file": "assets/recipes/styles/defaults/SP15-112.webp",
+          "jobId": "0c30c84e-8c2d-4e84-83b5-6e83661d0df1",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:49:37.231Z",
+          "sha256": "ce57d2b6352cff1fddcc1b8b9a7f0999434df6279693f6937aee77f6412ad475"
+        },
+        {
+          "id": "SP15-113",
+          "file": "assets/recipes/styles/defaults/SP15-113.webp",
+          "jobId": "ba725944-3551-4641-b283-a4407dd15fa6",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:50:19.576Z",
+          "sha256": "13593149c5f8f276227449e01436cfdc4f9b162b38555c4375d2c3042e573240"
+        },
+        {
+          "id": "SP15-114",
+          "file": "assets/recipes/styles/defaults/SP15-114.webp",
+          "jobId": "dfde101f-7b1e-4f35-a8b7-a65c3b76da2e",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T01:08:41.942Z",
+          "sha256": "e2968e1faad9c87aaf5d68faff85c758bab4d1652bf456250098ab3db5803768"
+        },
+        {
+          "id": "SP15-115",
+          "file": "assets/recipes/styles/defaults/SP15-115.webp",
+          "jobId": "279a25f0-0811-4e90-aa94-07032813e689",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:50:12.907Z",
+          "sha256": "cad369a933c259cd5fef200eef81e450a3c6510714095958125d748bbebb0d1d"
+        },
+        {
+          "id": "SP15-116",
+          "file": "assets/recipes/styles/defaults/SP15-116.webp",
+          "jobId": "5d000703-6c73-42d4-bdd9-afb8deac771d",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:50:34.152Z",
+          "sha256": "1406841005a27619682003439c495be0d40c1dee57e32c413d13ab36f1121e83"
+        },
+        {
+          "id": "SP15-117",
+          "file": "assets/recipes/styles/defaults/SP15-117.webp",
+          "jobId": "514a7c1e-7cdf-4f1d-a85b-c14e02f34325",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:51:09.794Z",
+          "sha256": "a3be8910e04aafc739a80a3cfcebebab08b7ebb01a26b4b7c2476b6e9a1ed575"
+        },
+        {
+          "id": "SP15-118",
+          "file": "assets/recipes/styles/defaults/SP15-118.webp",
+          "jobId": "8970af5f-8b47-4aab-9a2e-c3340611de64",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:51:00.034Z",
+          "sha256": "c47430593cabbbafd3699f6b941b87a0ea5bb3ef3399a0b936f246ce882594f1"
+        },
+        {
+          "id": "SP15-119",
+          "file": "assets/recipes/styles/defaults/SP15-119.webp",
+          "jobId": "4c2869e2-2db5-4578-aeb4-b8f0f7f5f984",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:51:29.954Z",
+          "sha256": "1f5807d0c07527ad68ef339c0b0d345c658d09d49c6d9d7fa4014e539fab91e7"
+        },
+        {
+          "id": "SP15-120",
+          "file": "assets/recipes/styles/defaults/SP15-120.webp",
+          "jobId": "7eead486-c53c-4c15-b420-bd4ac546dafb",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:51:27.487Z",
+          "sha256": "75d93de7d60c7238c3df99d438a91f46e71dced30281975e3ff109dadfa4927c"
+        },
+        {
+          "id": "SP15-121",
+          "file": "assets/recipes/styles/defaults/SP15-121.webp",
+          "jobId": "fdb451aa-aba1-4521-8fe9-8ec3c98336fb",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:52:00.786Z",
+          "sha256": "2dc18f59fead3a313807a30fa1ce908d85285df39082799b7043d2f3a8048cb0"
+        },
+        {
+          "id": "SP15-122",
+          "file": "assets/recipes/styles/defaults/SP15-122.webp",
+          "jobId": "9bdd0363-0b0c-470d-95ca-749cfcd6c9c5",
+          "model": "gpt-5.5",
+          "generatedAt": "2026-09-24T00:52:06.118Z",
+          "sha256": "49f70de8d2bb85880a74a82c8f01db6bbff408b955d787a1bb3627f0203918eb"
+        }
+      ],
+      "previousPrimariesAsAlternates": [
+        {
+          "id": "SP14-142",
+          "file": "assets/recipes/styles/defaults/variants/SP14-142-02.webp",
+          "jobId": "7e4042de-b341-42db-ad8d-4c254595a2bc",
+          "sha256": "bbc684acbd7d77177ff6d5efca08e7415a70f73af428046ef94917fab4ee87db"
+        },
+        {
+          "id": "SP14-143",
+          "file": "assets/recipes/styles/defaults/variants/SP14-143-01.webp",
+          "jobId": "4cb0554c-6fbf-4477-9a0c-fe847f2fc011",
+          "sha256": "704a71a4bc7fe7dc0083d051c44b6f39ad0ae2ff3b7319d32523d50b0db1bc85"
+        },
+        {
+          "id": "SP14-144",
+          "file": "assets/recipes/styles/defaults/variants/SP14-144-01.webp",
+          "jobId": "67809bb5-8139-4429-96eb-66911c4924ee",
+          "sha256": "9e9cfe68a2ad0b55a0960b4cc0116c4d39365a19ad0d35c863c1cf163d0dabcd"
+        },
+        {
+          "id": "SP14-145",
+          "file": "assets/recipes/styles/defaults/variants/SP14-145-01.webp",
+          "jobId": "e7201fdc-b9ca-4e15-9689-7e8a4f178bf1",
+          "sha256": "d50f715818c3d3e3795db6dab09fec26d6ab0973ee047cdff25554a19d213444"
+        },
+        {
+          "id": "SP14-146",
+          "file": "assets/recipes/styles/defaults/variants/SP14-146-01.webp",
+          "jobId": "7c61d2d7-d29b-41ba-8e76-f7b07d8959d5",
+          "sha256": "a1fec3198ea13bfaa641e339fc2e98256d3125f982207090f1539f2d0010c259"
+        },
+        {
+          "id": "SP14-147",
+          "file": "assets/recipes/styles/defaults/variants/SP14-147-01.webp",
+          "jobId": "c7b7a649-5cb5-4bbc-be04-ff54569cefc2",
+          "sha256": "6f0180c02f0d11759a29a4509a299c4c608f91d875e01a607cef67e1f26d9f7d"
+        },
+        {
+          "id": "SP14-148",
+          "file": "assets/recipes/styles/defaults/variants/SP14-148-02.webp",
+          "jobId": "27e1bedc-5be7-4839-8542-7e865aecfb0b",
+          "sha256": "99ddbde3f572b34465fb8260d5c12f1706fad743893ebcd9c34088f3644f2483"
+        },
+        {
+          "id": "SP14-149",
+          "file": "assets/recipes/styles/defaults/variants/SP14-149-01.webp",
+          "jobId": "382224fd-c332-4352-8a04-bf94344d4df8",
+          "sha256": "4b826e4c33fe68c1b37b3c269cc03889eb0542b82dbc9d2baf0648b570a72483"
+        },
+        {
+          "id": "SP14-150",
+          "file": "assets/recipes/styles/defaults/variants/SP14-150-01.webp",
+          "jobId": "17c537dd-205e-4281-ae3e-1a1976beb67e",
+          "sha256": "ce33d822c420826a6efaa324f5ba4162d848a8dd0af4816cd35dbaa4ad980836"
+        },
+        {
+          "id": "SP15-081",
+          "file": "assets/recipes/styles/defaults/variants/SP15-081-04.webp",
+          "jobId": "e7687847-9915-4524-ab71-729a35001d26",
+          "sha256": "b1bfabf18b16c46466b1556b7b6c76c152c72b51dbc3ecf9017beee18d65fe7e"
+        },
+        {
+          "id": "SP15-082",
+          "file": "assets/recipes/styles/defaults/variants/SP15-082-03.webp",
+          "jobId": "a6d2412b-de60-482f-b5cc-23da6fc0a6df",
+          "sha256": "9f170136bc4d3de821891c4af2282e2df6059e7036e67746a7368cd210f9c823"
+        },
+        {
+          "id": "SP15-083",
+          "file": "assets/recipes/styles/defaults/variants/SP15-083-03.webp",
+          "jobId": "6cce5f5d-1246-4460-9a58-31c9b873cf75",
+          "sha256": "44ccb88915a520882c6e831fcfca9d58a3a1d6a60b4cc3534e16fb2fab937fde"
+        },
+        {
+          "id": "SP15-084",
+          "file": "assets/recipes/styles/defaults/variants/SP15-084-02.webp",
+          "jobId": "9ff3b4cd-547e-4cfc-9a32-0ce67039c995",
+          "sha256": "599dbf70ced949225554301f166638111f29644d5a93f1e02d5f7700e8007419"
+        },
+        {
+          "id": "SP15-085",
+          "file": "assets/recipes/styles/defaults/variants/SP15-085-02.webp",
+          "jobId": "4be42878-9a6b-4f16-acd0-7dab37e6341e",
+          "sha256": "3e1fd610122ff60c899a5a25b8ea42b8077b6541fb345a574107f8c6d23acc77"
+        },
+        {
+          "id": "SP15-087",
+          "file": "assets/recipes/styles/defaults/variants/SP15-087-03.webp",
+          "jobId": "292bae50-896e-4305-9a83-6319d7d71346",
+          "sha256": "94afa5b9c086591e2d63d8c4d59031db20e482495a4f33c70c9448748428dffa"
+        },
+        {
+          "id": "SP15-088",
+          "file": "assets/recipes/styles/defaults/variants/SP15-088-03.webp",
+          "jobId": "4c447fdf-56fb-432f-b548-581b4bc7a1b2",
+          "sha256": "2e1fd4397a771804e604b83f73b9229d1c9cdcd0951f4a7d03f181b74e9e055f"
+        },
+        {
+          "id": "SP15-091",
+          "file": "assets/recipes/styles/defaults/variants/SP15-091-03.webp",
+          "jobId": "b1ee8566-be76-4813-bc85-8bf2e84f532a",
+          "sha256": "0aa3635e06f41f749cc9cb4402f054262785dc5d27ae7acd440c610d6ce0dba5"
+        },
+        {
+          "id": "SP15-094",
+          "file": "assets/recipes/styles/defaults/variants/SP15-094-02.webp",
+          "jobId": "15647553-4315-4a9f-ab21-813ad22a1462",
+          "sha256": "d25fc301419362fda7ac8079645d660543e4494a8e67e0ebdd919ad6c28d66bf"
+        },
+        {
+          "id": "SP15-095",
+          "file": "assets/recipes/styles/defaults/variants/SP15-095-02.webp",
+          "jobId": "1bc693f6-bdf5-4a77-b57d-20cbb34888cf",
+          "sha256": "48b6068f8e5a0adc60760b9cc0507504b646f842d29e335e92b2d4412816faf1"
+        },
+        {
+          "id": "SP15-096",
+          "file": "assets/recipes/styles/defaults/variants/SP15-096-02.webp",
+          "jobId": "ceaa80c8-6aaf-40f2-b2da-a0e84dce68f7",
+          "sha256": "05548f872500633a5c836c2f8ba862685d45dcdc535e740112b9703b506dcdd4"
+        },
+        {
+          "id": "SP15-097",
+          "file": "assets/recipes/styles/defaults/variants/SP15-097-02.webp",
+          "jobId": "8df98d53-d832-46ca-a608-98c825101854",
+          "sha256": "dcc9d6f78cbeccddd23f76d142d51e0bae0698a9d1c55f179d60e696f5f4efec"
+        },
+        {
+          "id": "SP15-098",
+          "file": "assets/recipes/styles/defaults/variants/SP15-098-02.webp",
+          "jobId": "f82c6eb7-1812-4827-b8d6-beb1033f46a5",
+          "sha256": "3235e363ac152436688165977e191988c5b5f88a8d43614d01de72d90ec2fbd4"
+        },
+        {
+          "id": "SP15-101",
+          "file": "assets/recipes/styles/defaults/variants/SP15-101-03.webp",
+          "jobId": "13a31c13-0a38-4405-ad29-7fb4b55c4c9d",
+          "sha256": "cd564333850be3a94a861f5ceec66fa71a41e32eb581fd0521b93c13585bd3de"
+        },
+        {
+          "id": "SP15-102",
+          "file": "assets/recipes/styles/defaults/variants/SP15-102-04.webp",
+          "jobId": "c78bb612-516a-46e9-9163-0f13b2eff77c",
+          "sha256": "3d0c48de85d2849a148d7b0c6cdb9969a4b5077303bf7e5db5eb2850e20f1ddb"
+        },
+        {
+          "id": "SP15-103",
+          "file": "assets/recipes/styles/defaults/variants/SP15-103-03.webp",
+          "jobId": "174d0b31-3d03-415f-8e0b-700347e30a07",
+          "sha256": "7179b4a51fb31fab796e8cf0c302600ab9810f889f902160a6dce17faa2fd83b"
+        },
+        {
+          "id": "SP15-104",
+          "file": "assets/recipes/styles/defaults/variants/SP15-104-03.webp",
+          "jobId": "41816c46-0292-4976-8011-8d7882631861",
+          "sha256": "92f747a9802df5e6dc0cbb23e0f76132d9825e8487e19bedbe52e5d0c3d68039"
+        },
+        {
+          "id": "SP15-105",
+          "file": "assets/recipes/styles/defaults/variants/SP15-105-04.webp",
+          "jobId": "bd7ad922-a77d-49aa-a441-e8e92e338beb",
+          "sha256": "0002cdaff0081a2060c572bffc24aaa4e408ba1296ccdd888e4ceaf794337d3f"
+        },
+        {
+          "id": "SP15-106",
+          "file": "assets/recipes/styles/defaults/variants/SP15-106-04.webp",
+          "jobId": "5c956006-696f-45be-8179-3c9c737223b8",
+          "sha256": "6d57cfca155364c7abc1669b47e35f1dfd93aa30c8dfee2b0760e98aaed7371f"
+        },
+        {
+          "id": "SP15-107",
+          "file": "assets/recipes/styles/defaults/variants/SP15-107-02.webp",
+          "jobId": "a6a63147-dd95-4b90-93fb-c963b20e5cd4",
+          "sha256": "6dbe762b5f8236ee6bd6052a875e3486c77ec385c94c50aa3cbf2c426b951402"
+        },
+        {
+          "id": "SP15-108",
+          "file": "assets/recipes/styles/defaults/variants/SP15-108-03.webp",
+          "jobId": "0a1fe51e-a33a-49af-b22f-d1612574f4e7",
+          "sha256": "1e3693a2f6c81f708354e4f652add1c124dedf2d46f65d238c43e3754d746d00"
+        },
+        {
+          "id": "SP15-109",
+          "file": "assets/recipes/styles/defaults/variants/SP15-109-03.webp",
+          "jobId": "cc468c92-bc92-41ee-889f-a64fa9a85365",
+          "sha256": "a5c7a2efe33c98c0fc3c4ac57fded91e4c2f7d700d4b5c04821f46995e8ab556"
+        },
+        {
+          "id": "SP15-110",
+          "file": "assets/recipes/styles/defaults/variants/SP15-110-02.webp",
+          "jobId": "47625e86-d7af-4007-b7fa-27a2504c61cf",
+          "sha256": "66cfdc3eca5e6b8795b405e4651744b780622f12db9345a8fa07b8fd6ed4153f"
+        },
+        {
+          "id": "SP15-111",
+          "file": "assets/recipes/styles/defaults/variants/SP15-111-02.webp",
+          "jobId": "4be9b3dc-da9d-4832-b742-129cf1f35e61",
+          "sha256": "a2eda1ab47be1c56c16ba858d5276deb7af97fc9f29198e5c29d4a27762a6094"
+        },
+        {
+          "id": "SP15-112",
+          "file": "assets/recipes/styles/defaults/variants/SP15-112-02.webp",
+          "jobId": "0673f6bb-d524-4117-84a4-c5a4b3732609",
+          "sha256": "f32579e478e398ac9ba36b0c815c0a4786e6f2087fe095601c2c530777d24667"
+        },
+        {
+          "id": "SP15-113",
+          "file": "assets/recipes/styles/defaults/variants/SP15-113-02.webp",
+          "jobId": "9e2fa3b8-4eae-4ec4-960b-97b393ebb2f5",
+          "sha256": "b3b0e6cf0fd0060af284df954a6d9f1f8f9b88d5e1810e3e9f840c3e5e3dd9e9"
+        },
+        {
+          "id": "SP15-114",
+          "file": "assets/recipes/styles/defaults/variants/SP15-114-02.webp",
+          "jobId": "2ea2a0bf-0b5e-4412-b11f-c832256aabd6",
+          "sha256": "cf6948a72c34343ed950b158181c48e1601b7f9d4155909e6c76c24808ac0cdb"
+        },
+        {
+          "id": "SP15-115",
+          "file": "assets/recipes/styles/defaults/variants/SP15-115-02.webp",
+          "jobId": "02c5c617-f01d-4f53-a50a-46c741c1a009",
+          "sha256": "45efefff43c20d0ce7d77c13d2e3b8e9eddbb8500bc9041a4effebaedb3d32e0"
+        },
+        {
+          "id": "SP15-116",
+          "file": "assets/recipes/styles/defaults/variants/SP15-116-02.webp",
+          "jobId": "a6377199-bccb-4dbd-8a75-c16b36de3344",
+          "sha256": "914adbafc9f9476135c497257b73ab4b5b77f3c6104574381bc3809e74201051"
+        },
+        {
+          "id": "SP15-117",
+          "file": "assets/recipes/styles/defaults/variants/SP15-117-02.webp",
+          "jobId": "ff95514e-a67b-40ac-93b1-3171b411c2e0",
+          "sha256": "e2b3b5382d0b6d10c83b976b50a821779db9437ca34bfdb7cfceaabf10934bd2"
+        },
+        {
+          "id": "SP15-118",
+          "file": "assets/recipes/styles/defaults/variants/SP15-118-02.webp",
+          "jobId": "21414a17-8b70-4398-a9d9-611c4bdcbf94",
+          "sha256": "f1a27b23ad65d8c0c11de6623b0df5ea82d19b7581053c73557e0f0df44e6685"
+        },
+        {
+          "id": "SP15-119",
+          "file": "assets/recipes/styles/defaults/variants/SP15-119-02.webp",
+          "jobId": "e435627c-733a-4dcc-a35b-aa2df5a2ced4",
+          "sha256": "00b05009cea95555c1db72403eb64710c6fe0204ce7809521b1f8c034985f1b7"
+        },
+        {
+          "id": "SP15-120",
+          "file": "assets/recipes/styles/defaults/variants/SP15-120-02.webp",
+          "jobId": "5ac0f262-a88d-4aaa-b63b-ea04a7b9a3fd",
+          "sha256": "58faf24942ba4c05eac55928a999cc25074fa0a46e73fbc39451d878ec08050d"
+        },
+        {
+          "id": "SP15-121",
+          "file": "assets/recipes/styles/defaults/variants/SP15-121-02.webp",
+          "jobId": "b6911dbf-533a-450f-a3ba-452a76de2b83",
+          "sha256": "b5718a2954a5587b8d7b063772299139a9da7b467ce9829bd830a1bd223f7507"
+        },
+        {
+          "id": "SP15-122",
+          "file": "assets/recipes/styles/defaults/variants/SP15-122-02.webp",
+          "jobId": "9705d621-b3d9-45cd-aa97-b4d8e8dc3395",
+          "sha256": "085d21a873372702deaef863508c8f0ae8a90204cba1710ba5d7d1240b8549c7"
+        },
+        {
+          "id": "SP14-147",
+          "file": "assets/recipes/styles/defaults/variants/SP14-147-02.webp",
+          "jobId": "69b4f460-40bc-48f9-a921-f31a377e55c6",
+          "sha256": "47b413569b51b746ace9b9638930e0a352fbb7b0c452e75365d676d857ffb460"
+        },
+        {
+          "id": "SP15-114",
+          "file": "assets/recipes/styles/defaults/variants/SP15-114-03.webp",
+          "jobId": "d3ac7598-66be-402b-ac55-c49f8e94a906",
+          "sha256": "fc2b5ddd3326fff4c39e3db6c31671c8cf8c9a5474d8915886813c272d84b069"
+        }
+      ],
+      "crossSubjectReview": {
+        "initialJobs": 18,
+        "broadCategoryJobs": 80,
+        "outputMediumJobs": 6,
+        "transportJobs": 4,
+        "finalSourceJobs": 16,
+        "route": "ChatGPT HTTP; each checked job completed with a saved image and no Codex turn",
+        "visualValidation": "pending",
+        "observedLimitations": "Some outputs remain photo/CG-like; two final Punk interiors lost one of three requested chairs; one Mexica stool acquired a technological-looking join."
+      }
+    }
+  }
+}

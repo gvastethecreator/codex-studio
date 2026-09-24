@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP22-166
+packId: pack_22
+name: Painterly Shape Illustration
+category: 9. Comic & Cartoon Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - comic-and-cartoon-illustration
+  - painterly-shape-illustration
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Painterly forms use confident medium-scale brushwork, weighty volume and a deliberate mix of soft
+    edges with precise accents.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Simplify secondary detail while keeping
+    the subject's defining shapes and features recognizable.
+  color_and_tone: >-
+    Preserve the requested hues and relationships, organizing them into a cohesive palette with clear
+    contrast rather than imposing a fixed adventure-color scheme.
+  lighting_and_shadow: >-
+    Follow the requested illumination and model volume with broad painted transitions; do not add danger,
+    dramatic effects or an unsupported light source.
+  texture_and_material: >-
+    Show medium-scale brush texture selectively and retain the depicted materials; combine painted edges
+    with a few precise accents instead of a uniform ink outline.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and placement. Edge softness changes rendering, not
+    the arrangement or visual hierarchy of the scene.
+  atmosphere_and_mood: >-
+    Keep the requested setting and emotional tone. A painterly finish does not imply a story genre or
+    additional narrative detail.
+  rendering_and_quality: >-
+    Build large forms and value structure before smaller accents; keep the brushwork visible but controlled
+    so the image remains legible at reduced size.
+avoidRules:
+  - unrequested weapons, danger or narrative cues
+  - extra details that alter identity or function
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-166.webp
+attributes:
+  negativePrompt: unrequested weapons, danger or narrative cues, extra details that alter identity or function
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: drawing
+    avoidRules:
+      - text: unrequested weapons, danger or narrative cues
+        field: atmosphere_and_mood
+      - text: extra details that alter identity or function
+        field: subject_treatment
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S066
+    sourceTitle: Painterly Pulp
+    referenceIds:
+      - S57
+      - S45
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: comic-and-cartoon-illustration
+  categoryName: 9. Comic & Cartoon Illustration
+  tags:
+    - trading-card-illustration
+    - comic-and-cartoon-illustration
+    - painterly-shape-illustration
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

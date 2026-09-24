@@ -16,74 +16,32 @@ tags:
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: >-
-    Ranking of Kings - Storybook Crown Courage acts as a transferable anime-battle/worlds router:
-    Ranking of Kings - Storybook Crown Courage, storybook courage fantasy style grammar with soft
-    scale, simple crown motif, moral warmth, vulnerable bravery, and clear fable shapes; combine it
-    with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture,
-    luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage
-    words may guide style, but they must not require canon cast, title-scene replication,
-    screenshots, logos, or one fixed card concept.
+    Fable-like cel painting with simplified clear forms, warm emotional color, and soft, vulnerable
+    silhouettes.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Ranking
-    of Kings - Storybook Crown Courage, storybook courage fantasy style grammar with soft scale,
-    simple crown motif, moral warmth, vulnerable bravery as portable contour, motion grammar,
-    surface language, and emotional pressure without requiring canon elements or a default action
-    setup.
+    Keep the requested subject and action; use rounded forms and spare contours without changing its
+    age or identity.
   color_and_tone: >-
-    Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens,
-    parchment neutrals, magical violets, and controlled pastel or dark contrast; let Ranking of
-    Kings - Storybook Crown Courage, storybook courage fantasy style grammar with soft scale, simple
-    crown motif, moral warmth, vulnerable bravery choose accent intensity, value contrast, emotional
-    temperature, and power-system separation while staying attached to prompt X.
+    Warm ochre, soft coral, and gentle blue-green shadows create human warmth; respect specified
+    colors.
   lighting_and_shadow: >-
-    Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and
-    clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Ranking of Kings - Storybook Crown Courage, storybook courage
-    fantasy style grammar with soft scale, simple crown motif, moral warmth, vulnerable bravery
-    without replacing prompt X with a stock anime frame.
+    Soft broad light and gentle shadow keep the forms open, with no heroic spotlight.
   texture_and_material: >-
-    Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel
-    glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Ranking
-    of Kings - Storybook Crown Courage, storybook courage fantasy style grammar with soft scale,
-    simple crown motif, moral warmth, vulnerable bravery controlled, denoised, and coherent across
-    bodies, objects, environments, abstractions, and action.
+    Use smooth painted fills, faint pigment texture, and clean value grouping for an approachable
+    finish.
   camera_and_composition: >-
-    Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed
-    cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook
-    scale; convert Ranking of Kings - Storybook Crown Courage, storybook courage fantasy style
-    grammar with soft scale, simple crown motif, moral warmth, vulnerable bravery into reusable
-    perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style
-    sample layout.
+    Keep the original composition; clarify focal scale and spacing through simple forms rather than
+    a storybook scene.
   atmosphere_and_mood: >-
-    Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional
-    craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic,
-    comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while
-    keeping the anime-battle lineage readable.
+    Tender and quietly brave, while the prompt determines what is happening.
   rendering_and_quality: >-
-    Finish with clean fantasy-anime finish with stable anatomy and creature/object structure,
-    controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize
-    stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy
-    darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+    Use simple silhouettes and restrained detail; keep the softness without losing structure.
   key_features: >-
-    Ranking of Kings - Storybook Crown Courage, storybook courage fantasy style grammar with soft
-    scale, simple crown motif, moral warmth, vulnerable bravery; clear fantasy silhouettes,
-    spell-effect hierarchy, surface simplification, creature or object readability, and portal-like
-    transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food
-    steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals,
-    transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic
-    magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with
-    stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic
-    text, and no generic isekai gloss
+    Clear fable shapes, soft scale, warm value grouping, and vulnerable contour create an earnest,
+    readable image.
   creative_brief: >-
-    Apply Ranking of Kings - Storybook Crown Courage after prompt X as a transferable
-    anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity,
-    while this preset supplies Ranking of Kings - Storybook Crown Courage, storybook courage fantasy
-    style grammar with soft scale, simple crown motif, moral warmth, vulnerable bravery, and clear
-    fable shapes, isekai and high-fantasy anime grammar with magic-system readability, quest-world
-    texture, luminous adventure, and character-independent fantasy routing, finish discipline, and
-    negative controls without forcing canon cast, title scene, screenshot, card pose, default
-    monster, default combat prop, or prompt-literal card.
+    Restyle the requested subject through simple fable-like shapes and warm cel color without adding
+    a crown, royal setting, or quest.
 avoidRules:
   - realistic
   - 3d render
@@ -95,7 +53,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - named franchise likeness
   - child-copy design
@@ -111,7 +68,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -119,10 +75,10 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, named franchise likeness, child-copy design, castle
-    hallway, royal portrait, readable emblem, RPG UI, readable magic text, generic isekai wallpaper,
-    fixed canon character, title scene replication, required source-frame look, cosplay, generic
-    anime filter, prompt-required card, readable text, logo, muddy noisy darks
+    artifacts, watermark, signature, named franchise likeness, child-copy design, castle hallway,
+    royal portrait, readable emblem, RPG UI, readable magic text, generic isekai wallpaper, fixed
+    canon character, title scene replication, required source-frame look, cosplay, generic anime
+    filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

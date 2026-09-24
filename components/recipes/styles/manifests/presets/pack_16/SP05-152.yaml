@@ -16,81 +16,35 @@ tags:
   - 2000s-classics
 visualDna:
   aesthetic: >-
-    Anachronistic Deadpan Mayhem Style acts as a transferable anime-prestige router: a anachronistic
-    anime direction shaped by era-aware line economy and genre tone, alongside a deadpan anime
-    direction shaped by era-aware line economy and genre tone; fuse it with 2000s anime classic
-    grammar with cel-digital hybrid polish, genre contrast, sharper compositing, and stylized
-    emotional escalation; it routes era, genre, line economy, cel or digital finish, and performance
-    tone without locking prompt content to the source title or sample image.
+    A deadpan anime rhythm made from minimal expression shifts, restrained contour and
+    contrast between stillness and sudden emphasis.
   subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through minimal
-    expression shift and timing-led humor, alongside contours paced by anachronistic tension,
-    readable pose energy, and silhouette discipline; identity should remain readable through anime
-    contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of
-    a required canon character or title scene.
+    Preserve the subject and action. Keep expression changes small and gesture economical,
+    aligned with the requested tone.
   color_and_tone: >-
-    Map color through a anachronistic accent system held inside disciplined cel values, alongside a
-    deadpan accent system held inside disciplined cel values; anchor it in clean digital flats,
-    gothic reds, cool clinical blues, warm romance pastels, pop accents, and deliberate contrast
-    keys; keep value separation clean, cel flats intentional, accents purposeful, and palette
-    behavior attached to the requested content.
+    Use the prompt's colors. With no palette specified, maintain even color grouping and
+    reserve stronger contrast for the focal change.
   lighting_and_shadow: >-
-    Use a anachronistic light logic using cel rim, glow behavior, and blocked shadow, alongside a
-    deadpan light logic using cel rim, glow behavior, and blocked shadow; combine it with digital
-    cel rim, bloom accents, dramatic night cuts, clinical overheads, magical glows, and clean
-    compositing separation; shadows should read as anime light design, rims should clarify form, and
-    glow or effects should support the prompt rather than replacing it.
+    Keep lighting straightforward and shapes readable. Use shadow blocks only to direct
+    attention, not to add spectacle.
   texture_and_material: >-
-    Render cel paint and ink grain tuned to anachronistic material contrast, alongside cel paint and
-    ink grain tuned to deadpan material contrast; anchor surfaces in digital ink edges, subtle
-    gradient fills, polished cloth and hair shapes, screen-like glow, and controlled texture
-    overlays; cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere
-    must stay coherent across people, objects, environments, action, and abstractions.
+    Use clean digital ink and limited surface noise; follow the materials actually depicted
+    and keep background painting softly integrated.
   camera_and_composition: >-
-    Frame around anachronistic converted into reusable framing rhythm and anime timing, alongside
-    deadpan converted into reusable framing rhythm and anime timing, then extend it with
-    opening-sequence energy, split-second action framing, romcom reaction spacing, gothic symmetry,
-    and readable effect geometry; the style should support portraits, props, machines, performances,
-    landscapes, symbols, and full scenes through reusable anime staging grammar instead of one fixed
-    card layout.
+    Respect the supplied camera and layout. A composed hold followed by a visual beat may
+    express timing within that frame.
   atmosphere_and_mood: >-
-    Carry mood through dry absurdity and anachronistic cool, alongside anachronistic emotional
-    pressure and genre-specific tone; braid it with genre fluency: deadpan comedy, gothic danger,
-    romance friction, rebellion, paranoia, elegance, and pop unreality; the preset can become funny,
-    sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving
-    the chosen anime lineage.
+    Dry understatement or absurd contrast may appear when requested; otherwise follow the
+    prompt's tone and emotional stakes.
   rendering_and_quality: >-
-    Finish with clean anime finishing that keeps anachronistic identity readable without noisy
-    denoise, alongside clean anime finishing that keeps deadpan identity readable without noisy
-    denoise; enforce clean 2000s cel-digital finish with strong design readability, controlled
-    effects, and no muddy low-resolution artifacting; prioritize clean denoise, stable anatomy or
-    object structure, readable effects, controlled grain, no watermark, no fake text, no signature,
-    and no photoreal or 3D-render drift.
+    Maintain stable linework and clear silhouettes; reserve effects for the prompted action
+    and keep small expression details crisp.
   key_features: >-
-    a anachronistic anime direction shaped by era-aware line economy and genre tone, alongside a
-    deadpan anime direction shaped by era-aware line economy and genre tone; minimal expression
-    shift and timing-led humor, alongside contours paced by anachronistic tension, readable pose
-    energy, and silhouette discipline; cel paint and ink grain tuned to anachronistic material
-    contrast, alongside cel paint and ink grain tuned to deadpan material contrast; a anachronistic
-    light logic using cel rim, glow behavior, and blocked shadow, alongside a deadpan light logic
-    using cel rim, glow behavior, and blocked shadow; anachronistic converted into reusable framing
-    rhythm and anime timing, alongside deadpan converted into reusable framing rhythm and anime
-    timing
+    Minimal expression shift; economical gesture; stillness contrasted with a sudden visual
+    beat; clean ink and controlled value emphasis.
   creative_brief: >-
-    Apply Anachronistic Deadpan Mayhem Style after prompt X as a transferable anime-prestige layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a
-    anachronistic anime direction shaped by era-aware line economy and genre tone, alongside a
-    deadpan anime direction shaped by era-aware line economy and genre tone, alongside minimal
-    expression shift and timing-led humor, alongside contours paced by anachronistic tension,
-    readable pose energy, and silhouette discipline; a anachronistic accent system held inside
-    disciplined cel values, alongside a deadpan accent system held inside disciplined cel values; a
-    anachronistic light logic using cel rim, glow behavior, and blocked shadow, alongside a deadpan
-    light logic using cel rim, glow behavior, and blocked shadow; cel paint and ink grain tuned to
-    anachronistic material contrast, alongside cel paint and ink grain tuned to deadpan material
-    contrast and anachronistic converted into reusable framing rhythm and anime timing, alongside
-    deadpan converted into reusable framing rhythm and anime timing, finish discipline, and negative
-    controls without requiring a fixed canon cast, title scene, prop bundle, location, sport,
-    instrument, weapon, or card composition.
+    Use restrained acting and timing contrast while preserving the given subject, action,
+    setting and camera; let the prompt set the tone.
 avoidRules:
   - realistic
   - 3d render
@@ -102,7 +56,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - generic isekai gloss
   - plastic digital anime
@@ -113,15 +66,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-152.webp
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy
-    effects clutter, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise, readable text
+    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
+    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
+    filter, prompt-literal card, muddy cel noise
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

@@ -1,0 +1,100 @@
+schemaVersion: 1
+id: SP22-216
+packId: pack_22
+name: Voxel Surface Modeling
+category: 15. Digital Rendering Methods
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - digital-rendering-methods
+  - voxel-surface-modeling
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Build readable three-dimensional forms from consistent discrete volume blocks, with stepped contours
+    and restrained bevels that follow the structure.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, count, pose, action and function. Arrange blocks to
+    describe existing parts rather than adding loose cubes or changing the subject.
+  color_and_tone: >-
+    Preserve the requested palette and separate planes with block-level values; do not impose a fixed
+    game palette or arbitrary color variation.
+  lighting_and_shadow: >-
+    Respect the requested light direction and use coherent block-face values to express it without
+    adding a new source or unsupported glow.
+  texture_and_material: >-
+    Keep block size consistent at the chosen scale and the surface compact. Distinguish the volume-based
+    construction from flat pixel clusters and avoid unrelated material changes.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, projection, crop, framing and placement. Do not force an isometric
+    view or a game scene.
+  atmosphere_and_mood: >-
+    Retain the requested setting and tone; volumetric blocks are a construction method, not a required
+    digital world.
+  rendering_and_quality: >-
+    Resolve the overall silhouette and major volumes before block details. Use bevels only when they
+    clarify an edge, and keep essential structure recognizable.
+avoidRules:
+  - detached decorative cubes
+  - block detail that obscures the subject's structure
+  - details that alter identity or function
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-216.webp
+attributes:
+  negativePrompt: detached decorative cubes, block detail that obscures the subject's structure, details that alter identity or function
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: voxel-volume-rendering
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: voxel-volume-rendering
+    avoidRules:
+      - text: detached decorative cubes
+        field: subject_treatment
+      - text: block detail that obscures the subject's structure
+        field: rendering_and_quality
+      - text: details that alter identity or function
+        field: subject_treatment
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S116
+    sourceTitle: Voxel Bevel
+    referenceIds:
+      - S49
+      - S53
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: digital-rendering-methods
+  categoryName: 15. Digital Rendering Methods
+  tags:
+    - trading-card-illustration
+    - digital-rendering-methods
+    - voxel-surface-modeling
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

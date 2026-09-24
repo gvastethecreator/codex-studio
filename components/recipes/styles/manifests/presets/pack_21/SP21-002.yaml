@@ -40,10 +40,10 @@ avoidRules:
   - uniform resist scribble
   - opaque muddy washes
   - unmotivated decorative symbols
-assets: {}
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP21-002.webp
 attributes:
   negativePrompt: uniform resist scribble, opaque muddy washes, unmotivated decorative symbols
-  previewStatus: pending
   intentionalPolicy:
     schemaVersion: 1
     kind: full_style
@@ -69,7 +69,6 @@ attributes:
       - text: unmotivated decorative symbols
         field: rendering_and_quality
   ui:
-    previewStatus: pending
     kind: full_style
     derivedFrom:
       - SP04-017
@@ -88,4 +87,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

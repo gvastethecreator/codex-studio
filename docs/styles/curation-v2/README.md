@@ -1,118 +1,56 @@
-# Style curation v2 — review and implementation
+# Style curation v2 — consolidated catalogue
 
-## What this change does
+## Scope and intent
 
-This is a category-by-category **source/text review plus executable prompt and navigation corrections**, not a claim that 1,689 image styles have been visually certified. The 1,677 original manifests are unchanged. Their names, IDs, source categories, reference metadata, favorites and saved drafts remain recoverable. No user library or generated image is modified. No provider execution or paid generation is part of the validation.
+The active source catalogue has 22 packs, 148 categories and 1,711 presets. Of the 1,677 original IDs, 1,474 remain active and 203 superseded pack 14 and 15 records are preserved under `components/recipes/styles/manifests/archive/conceptual-refactor-20260923/`. The consolidated set also includes three earlier authored studies, twelve portable studies in packs 19–21, 120 visual TCG styles in pack 22, 58 Medieval Atlas proposals in pack 23, nine cultural Mythic styles at `SP14-142`–`SP14-150`, and 35 Punk styles within `SP15-081`–`SP15-122`. The other 42 TCG atlas records (finishes, layouts and crossover recipes) remain visible as pending catalogue entries, not executable visual presets.
 
-Baseline: main `d70601886e64ef13859b367e6cc5a85983c9ca6f`. The repository source snapshot at `f9182951b628c3ba693daaa8401d4cbe67dc7d53` contains the same catalogue source.
+The [conceptual refactor record](./conceptual-refactor-20260923.json) preserves the 203 archived IDs with source hashes and maps their coverage to the new records through `sourceIds`. These references document editorial provenance; they are not ID aliases or redirects. Existing saved layers retain their captured DNA, and Studio Library entries and historical generation jobs are not rewritten by this source consolidation.
 
-| Scope                                          | Before | This branch |
-| ---------------------------------------------- | -----: | ----------: |
-| Manifest packs                                 |     17 |          20 |
-| Source categories                              |    118 |         121 |
-| Presets                                        |  1,677 |       1,689 |
-| Original presets deleted or overwritten        |      — |           0 |
-| New text-authored studies                      |      — |          12 |
-| Categories with image acceptance still pending |      — |         121 |
+The review separates transferable visual language from requested content. A style can change marks, value grouping, palette response, material finish and composition rhythm without silently adding a protagonist, prop or title scene. This is not a universal ban on concrete subjects. Costume themes, camera/output profiles and material modifiers retain their explicit functions; their scope must stay clear to the user. The category decision register is [`scripts/style-curation/category-reviews.json`](../../../scripts/style-curation/category-reviews.json), and its generated reader view is [CATEGORY-REVIEW.md](./CATEGORY-REVIEW.md).
 
-The catalogue is large because it mixes visual language, material/light modifiers, deliberate camera/output profiles and thematic directions. These are distinct purposes, not proof of low quality. A profile should keep its intentional viewpoint; a material modifier should keep its material identity. Universal removal of every concrete noun would destroy useful capabilities.
+For Mythic Noir, the intended identities are distinct cultures and mythologies. For Punk Spectrum, they are distinct X-punk aesthetics. Keep their characteristic shapes, materials, motifs and design logic: Steampunk includes gears, steam and bronze used as purposeful parts of the design. Removing a fixed scene must not remove the style's identity. Adapt these elements to the requested subject and respect explicit preservation choices; do not reduce them to generic surface treatments or attach the same props to every subject.
 
-## Implemented corrections
+The user rejected the first pack 14/15 conceptual refactor on 2026-09-23. Its formal operators and restrictive rules erased the intended identities. The replacement source definitions above have been reviewed by category and corrected by the primary agent. All 44 representative cards (nine Mythic and 35 Punk) were recomposed through ChatGPT HTTP on 2026-09-24, with four concurrent requests. The primary agent inspected the full images and the cards in Studio. Anansi and Necropunk received one further targeted correction each. Every replaced primary remains in the numbered alternatives; image hashes and job provenance are recorded in `conceptual-refactor-20260923.json`. Representative cards show finished compositions, not texture swatches. A card does not prove that its style transfers to another subject.
 
-### 1. A provider-facing metadata boundary
+Matched cross-subject pilots tested ordinary people, furniture and rooms rather than the representative card scenes. The earlier 18 jobs, a later 80-job category pass, six medium checks, four transport checks and a final 16-job source pass all completed through ChatGPT HTTP with saved images and no Codex turns. The compiler now sends the full Intentional Style Plan with a separate output-medium directive, preserves its line breaks, and reinforces explicit subject and quantity locks. The ChatGPT route no longer receives a Codex-only denoise instruction. These changes improved several illustrations and kept most requested subjects, but they did not make the provider deterministic: some results still look photographic, two final Punk rooms show two chairs instead of the requested three, and one Mexica stool acquired a technological-looking join. The source and visual review remain pending; the pilot results are diagnostic evidence, not acceptance of all 44 styles.
 
-`styleLayerComposer.ts` retains name, displayName, search aliases, source pack and original brief as metadata, but emits neutral layer labels. The final serializer in `packages/shared/src/styles/legacyStylePrompt.ts` admits only the eight known active visual fields. `lib/recipeContextBuilders/styles.ts` reconstructs legacy context at the last boundary, ignoring historical cached names, briefs, role instructions and diversity text.
+The repair archive at `components/recipes/styles/manifests/archive/identity-repair-20260923/` retains the rejected 18 formal Mythic operators and seven merged or retired Punk entries. These remain resolvable for existing favorites. It also retains the exact earlier versions of the 35 revised Punk definitions under `prior-versions/`; these snapshots do not re-enter the catalogue or override active favorites. Mythic now covers Greek, Japanese, Norse, Mande, Yoruba, Akan, Egyptian, Maya and Mexica directions. Renewable-system variants are consolidated in Solarpunk; Signalpunk, Saltpunk and Mangrovepunk are incorporated into the corresponding retained directions. No Studio Library images, saved layers or job contracts were rewritten.
 
-Renaming a preset or its pack no longer changes the legacy image prompt when the active DNA is unchanged. This applies to normal generation, copied prompts and newly saved blend field values. Existing search aliases remain searchable. Old user-authored DNA containing names is **not rewritten in place**.
+## Runtime boundaries
 
-**Important limit:** an enabled DNA field can still describe a motel, monster or ruin. The serializer cannot prove whether that language is stylistic or narrative. This PR does not use a regex to silently rewrite all 1,677 presets. The category review identifies the targeted editorial work; the new studies demonstrate what a portable derivative looks like.
+`styleLayerComposer.ts` keeps names, aliases, packs and references as searchable metadata while emitting neutral layer labels. The serializer in `packages/shared/src/styles/legacyStylePrompt.ts` admits only the known visual fields. `lib/recipeContextBuilders/styles.ts` reconstructs legacy context at the final boundary, ignoring cached names and briefs. Text inside an enabled visual field still matters, so category-specific curation removes scene and franchise pressure at the source rather than relying on a regex at generation time.
 
-### 2. Preserve references unless reinterpretation is selected
+With image references, preserve mode suppresses the active camera/composition field without mutating the saved preset or mask. Reinterpret mode restores that field when the user chooses structural change. The registered plan and dispatched plan stay aligned. An all-disabled or effectively empty style plan cannot dispatch.
 
-Legacy style generation no longer chooses random camera, gesture, lighting or palette instructions on each click. The registered plan and the dispatched plan are the same. With image references, preserve mode suppresses the camera/composition field without mutating the original selection or saved mask. An explicit preserve/reinterpret control is available when references exist. Reinterpretation allows the active camera field again; it does not force unrelated scene content.
+Outside the explicit pack 14/15 refactor, original category keys and IDs remain stable. Retired IDs keep their exact source definitions in the archive and resolve only for existing favorites; they do not re-enter the active catalog or global search. Saved drafts keep their captured data, and collection references follow the active categories. Display labels may be shorter. Ownership is derived from `packId`, never inferred from the `SP` ID prefix: packs 13 and 16 legitimately contain older `SP05` IDs.
 
-All-disabled layers and camera-only layers suppressed by preservation cannot dispatch an empty style plan. The UI count reflects effective legacy layers. Strength values remain relative language-level priorities, not calibrated image-space percentages.
+## Cards and source records
 
-The existing `intentional-v1` path and its saved request contract are retained. Twelve new policies are derived from the new YAML manifests and validated through its existing schema; the prior registry is not replaced.
+Default cards are generated through ChatGPT HTTP, with a maximum of four concurrent requests in the current workflow. Each accepted image has a manifest row with its actual provider, model, job and timestamp. On a reviewed refresh of an old GPT Image primary, the original bytes are copied once to `assets/recipes/styles/defaults/providers/previous-gpt-image/` and displayed last among its alternatives. The 44 pack 14/15 recompositions and two later corrections preserve their earlier primaries in numbered `assets/recipes/styles/defaults/variants/` slots. Uncertain jobs remain available for reconciliation; they are not automatically resubmitted or switched to another provider.
 
-### 3. Preserve identity, shorten presentation
+Card briefs are representative samples, not instructions to force that subject during normal style application. They should make the treatment legible on varied people, objects and settings. Reviewing a representative card evaluates that image; it is not cross-subject certification. Cross-subject validation remains pending until the style is compared on varied subjects and settings under matched provider conditions. Pending studies must have no fabricated `defaultImage`; once a card exists, its source asset, taxonomy and preview status must agree. Generated runtime, search, thumbnail, collection and policy files are projections of reviewed manifests.
 
-All 118 original source-category keys remain unchanged. Short display labels are resolved using **actual pack ownership**, never by guessing from an `SP05` prefix: anime packs 13 and 16 legitimately contain legacy SP05 identifiers.
+The 12 pack 19–21 studies cover ink structures, print registers and paper/pigment behavior. Their `derivedFrom` references preserve provenance without replacing the originals. Pack 22 implements the 120 TCG visual styles; the 42 nonvisual TCG records stay explicitly pending. Pack 23 carries the 58 Medieval Atlas proposals. The imported atlas data is research context, not an instruction to agents or an image acceptance certificate.
 
-The collection projection and both grouped catalogue surfaces use the short labels. Canonical group keys, routes and thumbnail identities remain stable. Global indexed search and loaded-pack search accept the new labels as additional aliases. Existing collection IDs remain valid. Collection and family titles are shorter; `portable_visual_studies` is a new cross-pack collection. No old collection is hidden or deleted in this pass.
+## Review and acceptance
 
-### 4. Explicitly pending previews
+`styles:curation:verify` checks category ownership, expected counts, source hashes, evidence IDs and exact duplicate DNA. A changed hash requires editorial review of that category; the hash alone is not approval. The register distinguishes source/text review from visual acceptance. Its `visualValidation` remains pending until actual cross-subject images are assessed. Historic [validation records](./VALIDATION.md) describe earlier commits with 20 packs and 1,689 presets; they must not be cited as current verification of this 22-pack tree.
 
-New studies have `assets: {}`, `taxonomy.hasDefaultImage: false`, and matching `attributes.previewStatus` / `attributes.ui.previewStatus: pending`. Cards show **Preview pending**, not an unrelated legacy thumbnail. Other missing images show **No preview**.
+For a portable style, compare the same ordinary object, person, interior, exterior and graphic composition under the same supported provider settings. Include a conflicting request for light, camera, text or supplied composition. Check requested-content preservation, unrequested additions, recognizable treatment across subjects, distinctness from nearby presets and preview-to-runtime correspondence. A specialized profile should be tested against its declared function rather than judged as a universal appearance filter. Do not mark a category visually passed from a single attractive card.
 
-Manifest validation rejects a fabricated default URL for a pending study and rejects inconsistent status fields. Provider-variant verification exempts only explicitly pending studies from missing-image requirements; it still validates variants that actually exist and still requires existing non-pending presets. No global incomplete-assets bypass is introduced.
+## Reproducible checks
 
-### 5. Reproducible category coverage
-
-[`CATEGORY-REVIEW.md`](./CATEGORY-REVIEW.md) contains one diagnostic section for each of the 118 original categories, with specific problems, things to retain, proposed action, cross-subject acceptance check and representative source excerpts.
-
-`scripts/style-curation/category-reviews.json` tracks all 121 categories, source counts, source-text hashes, explicit ownership and evidence IDs. `styles:curation:verify` fails on unreviewed categories, duplicate reviews, invalid evidence, count changes or source-text drift. A source edit requires revisiting the corresponding review; changing a hash alone is not editorial approval.
-
-Identical normalized eight-field DNA is reported as a comparison candidate, not an automatic deletion. The initial 1,677-source inventory had zero such exact groups. This does **not** prove there are no semantic or visual duplicates. Different negative rules, intended scope and rendered results must be compared before consolidation.
-
-## New authoring studies
-
-These are derivatives, not replacements. Their `attributes.ui.derivedFrom` points to existing references, while their IDs and source ownership are independent. Pack 18 is deliberately not reused: an earlier intentional registry already reserves SP18 identifiers.
-
-| Pack                 | Study           | Visual mechanism                                             |
-| -------------------- | --------------- | ------------------------------------------------------------ |
-| 19 — Ink Structures  | Dry Cut         | Solid relief ink and deliberate carved negative gaps         |
-|                      | Elastic Contour | Pressure-responsive contours with selective internal drawing |
-|                      | Bristle Rhythm  | Directional dry-brush marks with quiet unpainted intervals   |
-|                      | Pooled Ink      | Absorbent ink edges and grouped tonal pools                  |
-| 20 — Print Registers | Offset Drift    | Controlled registration displacement on graphic color planes |
-|                      | Stencil Duotone | Two printable ink layers with deliberate overprint           |
-|                      | Toner Blocks    | Toner aggregation and selective reproduction breakup         |
-|                      | Engraved Tone   | Directional engraved lines building form and value           |
-| 21 — Paper & Pigment | Stacked Paper   | Cut shapes, layer thickness and bounded contact shadows      |
-|                      | Resist Wash     | Transparent washes interrupted by protected light shapes     |
-|                      | Opaque Planes   | Opaque pigment, deliberate edges and flattened value planes  |
-|                      | Pressed Relief  | Shallow paper deformation and restrained raking light        |
-
-Each has eight authored visual fields, explicit negative rules, provenance, a validated intentional policy and a visible pending-preview state. None has been promoted on the basis of a fabricated image comparison.
-
-## Editorial decisions still pending
-
-The category table is deliberately a **decision register**, not a destructive migration. Follow its category-specific action when doing the next authoring pass. In particular:
-
-- Keep capture/gameplay and technical-output profiles useful; extract transferable derivatives rather than stripping their camera or HUD grammar indiscriminately.
-- Keep material, wardrobe and environment transformations explicit; do not disguise content changes as a universal style.
-- Compare ink/print/pixel/anime overlaps using the same requested subjects before turning near-duplicates into variants.
-- Separate reference-only names and sample descriptions from runtime DNA in targeted versioned derivatives.
-- Add reversible visibility/archive controls and redirect manifests only after selecting actual merge/archive candidates. They are not implemented by this PR, and nothing is secretly archived.
-
-## Image acceptance protocol
-
-Use the same five requested subjects across candidates: an ordinary object, a person doing a mundane action, an interior, an exterior and a graphic composition. Keep provider/model/settings identical where supported; compare repeated outputs and fixed seeds only where the provider actually exposes them. Include one conflicting request such as an explicit camera, daylight, requested text or supplied composition.
-
-Record (1) requested-content preservation, (2) unrequested props/scenery/pose, (3) recognizable visual identity across subjects, (4) genuinely distinct behavior relative to the nearest existing candidate and (5) preview-to-runtime correspondence. A beautiful single card is not acceptance. Save actual results separately from the authoring manifest and never count textual review as image validation.
-
-Preserve mode additionally requires identical subject intent and framing, no automatic restaging and no reintroduced camera field. Reinterpret mode should make structural changes only within the requested scope. Negative prompts must not contradict explicitly requested media or content unnoticed.
-
-## Verification
-
-Use Bun and the repository lockfile. No dependency or package-manager changes are required.
+Use Bun and the repository lockfile. Run the affected focused checks while editing, then the broad gates at integration:
 
 ```bash
-bun install --frozen-lockfile
-bun run styles:runtime
-bun run styles:thumbnails
-bun run styles:curation:verify
-bun run styles:runtime:check
-bun run styles:thumbnails:check
-bun run test -- components/recipes/styleLayerComposer.test.ts components/recipes/styleCurationBoundary.test.ts components/recipes/userStyleDraftBuilders.test.ts components/recipes/styles/collections/styleCollectionProjection.test.ts packages/shared/src/styles/legacyStylePrompt.test.ts scripts/audit-style-curation.test.ts
+bun scripts/audit-style-curation.ts --verify
+bun scripts/generate-style-curation-review-doc.ts --check
+bun scripts/style-curation/agent-kit.mjs verify
+bun run styles:verify
 bun run test
 bun run check
 bun run build
+bun run providers:verify
 ```
 
-The PR and workflow artifacts must record the **actual exit status** of these commands. A running or skipped job is not a pass. Source coverage, unit tests and a production build do not replace the image acceptance protocol.
-
-## Rollback and compatibility
-
-Revert this PR to restore previous prompt and presentation behavior. There are no database migrations, deletion operations, workspace rewrites or destructive archive operations. Generated runtime/search/thumbnail/policy files are projections of checked-in sources and can be regenerated. Original IDs and records remain intact throughout. Any composition using a new SP19/SP20/SP21 study depends on those new IDs and should be exported before rolling back their introduction.
+Record the exit status of this tree's checks separately from historical CI reports. Source and test passes do not replace visual review in the running app. Preserve all four `docs/codemap/codemap.{json,md,html,lock}` outputs together when source boundaries or major flows change.

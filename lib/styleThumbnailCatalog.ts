@@ -95,6 +95,9 @@ export function resolveStyleDefaultImageVariantThumbnails(
   const grokSrc = getThumbnail(`${presetId}-grok`);
   if (grokSrc) variants.push({ src: grokSrc, label: 'Grok' });
 
+  const previousSrc = getThumbnail(`${presetId}-previous`);
+  if (previousSrc) variants.push({ src: previousSrc, label: 'Previous GPT Image' });
+
   return variants;
 }
 

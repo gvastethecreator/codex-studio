@@ -1,0 +1,84 @@
+schemaVersion: 1
+id: SP15-103
+packId: pack_15
+name: Synthpunk
+category: 6. Street, Riot & DIY Punks
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - street-riot-and-diy-punks
+visualDna:
+  aesthetic: >-
+    Organize hard-edged planes into a compact rectangular rhythm, with paired voltage-color bands and a
+    few deliberate looping lines.
+  subject_treatment: >-
+    Preserve the requested subject and pose; apply modular divisions and color bands to its existing
+    shapes instead of adding music equipment.
+  color_and_tone: >-
+    Set magenta against cobalt or cyan with charcoal and a small cream reserve; maintain clear value
+    steps.
+  lighting_and_shadow: Use short edge highlights and bounded color fields, keeping illumination localized.
+  texture_and_material: Contrast matte planes with smooth saturated bands; avoid mechanical surface detail.
+  camera_and_composition: Preserve framing; use stacked rectangles and controlled loops without requiring a stage layout.
+  atmosphere_and_mood: Feel amplified and experimental through repeated blocks, sharp contrast, and visual pulse.
+  rendering_and_quality: Keep divisions crisp, loops untangled, and bright bands secondary to the subject.
+avoidRules:
+  - all-over neon glow
+  - lines that tangle or obscure the main silhouette
+  - equipment silhouettes used as a substitute for the requested subject
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-103.webp
+attributes:
+  negativePrompt: >-
+    all-over neon glow, lines that tangle or obscure the main silhouette, equipment silhouettes used as a
+    substitute for the requested subject
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: all-over neon glow
+        field: rendering_and_quality
+      - text: lines that tangle or obscure the main silhouette
+        field: rendering_and_quality
+      - text: equipment silhouettes used as a substitute for the requested subject
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-043
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: street-riot-and-diy-punks
+  categoryName: 6. Street, Riot & DIY Punks
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - street-riot-and-diy-punks
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

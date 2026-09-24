@@ -90,15 +90,15 @@
     "pack_13::3. Shojo, Magical Girl & Visionary Classics": "anime",
     "pack_13::4. Slice Of Life & Moe": "anime",
     "pack_13::5. Anime Style Spectrum": "anime",
-    "pack_14::1. Mythic — Symbolism": "cultural-theme",
-    "pack_14::2. Mythic — Ritual Noir": "cultural-theme",
-    "pack_14::3. Mythic — Pantheons & Legends": "cultural-theme",
-    "pack_14::4. Mythic — Cosmology & Omens": "cultural-theme",
-    "pack_14::5. Mythic — Greek Epics": "cultural-theme",
-    "pack_14::6. Mythic — African Cosmologies": "cultural-theme",
-    "pack_14::7. Mythic — Japanese Yokai & Kami": "cultural-theme",
-    "pack_14::8. Mythic — Norse Sagas": "cultural-theme",
-    "pack_14::9. Mythic — Mesoamerican Suns": "cultural-theme",
+    "pack_14::Greek Mythology — Epic Noir": "theme-render",
+    "pack_14::Japanese Mythology — Kami & Yokai": "theme-render",
+    "pack_14::Norse Mythology — Sagas": "theme-render",
+    "pack_14::Mande Oral Epic": "theme-render",
+    "pack_14::Yoruba Mythology — Orisha": "theme-render",
+    "pack_14::Akan Mythology — Anansi": "theme-render",
+    "pack_14::Egyptian Mythology": "theme-render",
+    "pack_14::Maya Mythology": "theme-render",
+    "pack_14::Mexica Mythology": "theme-render",
     "pack_15::1. Classic Industrial Punks": "theme-render",
     "pack_15::2. Neon, Net & Signal Punks": "theme-render",
     "pack_15::3. Eco, Repair & Climate Punks": "theme-render",
@@ -123,7 +123,34 @@
     "pack_17::5. Grimdark Game Systems & Tabletop": "game-profile",
     "pack_19::1. Ink Structures": "drawing",
     "pack_20::1. Print Registers": "print",
-    "pack_21::1. Paper & Pigment": "paint"
+    "pack_21::1. Paper & Pigment": "paint",
+    "pack_22::1. Workshop Painting": "paint",
+    "pack_22::2. Epic Digital Painting": "paint",
+    "pack_22::3. Strange Ink & Paint": "drawing",
+    "pack_22::4. Storybook & Animation": "drawing",
+    "pack_22::5. Character & Readable Forms": "drawing",
+    "pack_22::6. Anime Illustration": "anime",
+    "pack_22::7. Manga Ink & Impact": "drawing",
+    "pack_22::8. Technical Illustration": "diagram",
+    "pack_22::9. Comic & Cartoon Illustration": "drawing",
+    "pack_22::10. Printmaking & Reproduction": "print",
+    "pack_22::11. Ornament & Symbolic Illustration": "drawing",
+    "pack_22::12. Crafted Materials & Miniatures": "craft",
+    "pack_22::13. Vintage Collectible Illustration": "print",
+    "pack_22::14. Symbolic Graphic Illustration": "drawing",
+    "pack_22::15. Digital Rendering Methods": "render",
+    "pack_23::1. Manuscript Visual Systems": "drawing",
+    "pack_23::2. Print & Engraving": "print",
+    "pack_23::3. Medieval Material Studies": "material",
+    "pack_23::4. Regional Manuscript Traditions": "drawing",
+    "pack_23::5. Revival & Storybook Illustration": "drawing",
+    "pack_23::6. Classic RPG Visual Studies": "game-profile",
+    "pack_23::7. Indexed Raster Language": "pixel",
+    "pack_23::8. Retro 3D Visual Studies": "render",
+    "pack_23::9. Painted RPG & Tactics": "paint",
+    "pack_23::10. Tabletop Illustration Studies": "deliverable",
+    "pack_23::11. Modern Visual Techniques": "diagram",
+    "pack_23::12. Hybrid Visual Studies": "craft"
   },
   "playbooks": {
     "photo": {
@@ -456,21 +483,6 @@
         "El derivado debe conservar el sujeto; la receta puede requerir comida."
       ],
       "extraBenchmark": "neutral-graphic"
-    },
-    "cultural-theme": {
-      "title": "Mito y procedencia",
-      "decision": "Mantener contenido cultural específico como dirección explícita; separar medio visual.",
-      "preserve": ["Procedencia documentada, contexto concreto y motivos pedidos."],
-      "doNot": [
-        "No fusionar culturas por paleta o por una etiqueta continental.",
-        "No inventar una tradición, significado de símbolo o validación histórica."
-      ],
-      "steps": [
-        "Clasificar nombres y motivos como contexto, no instrucciones universales.",
-        "Derivar técnica visual sin presentarla como representación auténtica de una cultura.",
-        "Si falta fuente, registrar needs-source y no rellenar historia con inferencias."
-      ],
-      "extraBenchmark": "neutral-object"
     },
     "theme-render": {
       "title": "Tema frente a representación",

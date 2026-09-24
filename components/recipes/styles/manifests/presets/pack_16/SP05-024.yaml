@@ -16,81 +16,34 @@ tags:
   - 2000s-classics
 visualDna:
   aesthetic: >-
-    Alchemical Moral Geometry Style acts as a transferable anime-prestige router: alchemical diagram
-    logic and moral transmutation, alongside symbolic geometry and rule-bound visual pressure; fuse
-    it with 2000s anime classic grammar with cel-digital hybrid polish, genre contrast, sharper
-    compositing, and stylized emotional escalation; it routes era, genre, line economy, cel or
-    digital finish, and performance tone without locking prompt content to the source title or
-    sample image.
+    Digital anime linework organized by repeated geometry, measured axes and controlled
+    value contrast.
   subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through contours paced by
-    alchemical tension, readable pose energy, and silhouette discipline, alongside contours paced by
-    moral tension, readable pose energy, and silhouette discipline; identity should remain readable
-    through anime contour, expression economy, pose energy, shape simplification, and effect
-    hierarchy instead of a required canon character or title scene.
+    Preserve the requested subject and action. Use abstract diagram-like contours only where
+    they clarify existing forms.
   color_and_tone: >-
-    Map color through a alchemical accent system held inside disciplined cel values, alongside a
-    moral accent system held inside disciplined cel values; anchor it in clean digital flats, gothic
-    reds, cool clinical blues, warm romance pastels, pop accents, and deliberate contrast keys; keep
-    value separation clean, cel flats intentional, accents purposeful, and palette behavior attached
-    to the requested content.
+    Retain explicit hues; if none are given, rely on value separation and one restrained
+    accent.
   lighting_and_shadow: >-
-    Use a alchemical light logic using cel rim, glow behavior, and blocked shadow, alongside a moral
-    light logic using cel rim, glow behavior, and blocked shadow; combine it with digital cel rim,
-    bloom accents, dramatic night cuts, clinical overheads, magical glows, and clean compositing
-    separation; shadows should read as anime light design, rims should clarify form, and glow or
-    effects should support the prompt rather than replacing it.
+    Use a defined rim, compact glow and blocked shadow to clarify form; keep effects
+    subordinate to the subject.
   texture_and_material: >-
-    Render etched circles, chalk grain, metal, paper, and formula-like marks without readable text,
-    alongside inked lines, paper texture, lacquer edges, and graphic cuts; anchor surfaces in
-    digital ink edges, subtle gradient fills, polished cloth and hair shapes, screen-like glow, and
-    controlled texture overlays; cel edges, painted surfaces, grain, cloth, metal, water, sweat,
-    smoke, or atmosphere must stay coherent across people, objects, environments, action, and
-    abstractions.
+    Fine etched or chalk-like marks may describe existing surfaces; keep them nonverbal and
+    subordinate to the subject.
   camera_and_composition: >-
-    Frame around geometric circles, equivalent exchange symmetry, and rule-bound framing, alongside
-    hard axes, repeated shapes, and measured ritual spacing, then extend it with opening-sequence
-    energy, split-second action framing, romcom reaction spacing, gothic symmetry, and readable
-    effect geometry; the style should support portraits, props, machines, performances, landscapes,
-    symbols, and full scenes through reusable anime staging grammar instead of one fixed card
-    layout.
+    Retain the requested camera; measured axes, repetition or symmetry may organize existing
+    shapes when compatible.
   atmosphere_and_mood: >-
-    Carry mood through alchemical emotional pressure and genre-specific tone, alongside moral
-    emotional pressure and genre-specific tone; braid it with genre fluency: deadpan comedy, gothic
-    danger, romance friction, rebellion, paranoia, elegance, and pop unreality; the preset can
-    become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it
-    while preserving the chosen anime lineage.
+    Use visual constraint and spacing to support the mood requested in the prompt.
   rendering_and_quality: >-
-    Finish with clean anime finishing that keeps alchemical identity readable without noisy denoise,
-    alongside clean anime finishing that keeps moral identity readable without noisy denoise;
-    enforce clean 2000s cel-digital finish with strong design readability, controlled effects, and
-    no muddy low-resolution artifacting; prioritize clean denoise, stable anatomy or object
-    structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no
-    photoreal or 3D-render drift.
+    Balance crisp geometry and ink edges with softly painted backgrounds; preserve
+    readability and limit glow.
   key_features: >-
-    alchemical diagram logic and moral transmutation, alongside symbolic geometry and rule-bound
-    visual pressure; contours paced by alchemical tension, readable pose energy, and silhouette
-    discipline, alongside contours paced by moral tension, readable pose energy, and silhouette
-    discipline; etched circles, chalk grain, metal, paper, and formula-like marks without readable
-    text, alongside inked lines, paper texture, lacquer edges, and graphic cuts; a alchemical light
-    logic using cel rim, glow behavior, and blocked shadow, alongside a moral light logic using cel
-    rim, glow behavior, and blocked shadow; geometric circles, equivalent exchange symmetry, and
-    rule-bound framing, alongside hard axes, repeated shapes, and measured ritual spacing
+    Repeated geometry; measured axes; rule-like spacing; fine nonverbal marks; rim light and
+    compact glow.
   creative_brief: >-
-    Apply Alchemical Moral Geometry Style after prompt X as a transferable anime-prestige layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
-    alchemical diagram logic and moral transmutation, alongside symbolic geometry and rule-bound
-    visual pressure, alongside contours paced by alchemical tension, readable pose energy, and
-    silhouette discipline, alongside contours paced by moral tension, readable pose energy, and
-    silhouette discipline; a alchemical accent system held inside disciplined cel values, alongside
-    a moral accent system held inside disciplined cel values; a alchemical light logic using cel
-    rim, glow behavior, and blocked shadow, alongside a moral light logic using cel rim, glow
-    behavior, and blocked shadow; etched circles, chalk grain, metal, paper, and formula-like marks
-    without readable text, alongside inked lines, paper texture, lacquer edges, and graphic cuts and
-    geometric circles, equivalent exchange symmetry, and rule-bound framing, alongside hard axes,
-    repeated shapes, and measured ritual spacing, finish discipline, and negative controls without
-    requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or
-    card composition.
+    Apply geometric line organization and restrained light to existing forms. Preserve the
+    prompt's content and frame; markings remain abstract and nonverbal.
 avoidRules:
   - realistic
   - 3d render
@@ -102,7 +55,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - generic isekai gloss
   - plastic digital anime
@@ -113,15 +65,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-024.webp
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy
-    effects clutter, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise, readable text
+    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
+    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
+    filter, prompt-literal card, muddy cel noise
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

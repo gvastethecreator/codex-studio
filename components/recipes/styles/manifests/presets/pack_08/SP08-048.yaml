@@ -13,67 +13,36 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: >-
-    Zombie Survivor operates as a portable fashion-costume router: combine Distressed outbreak
-    utilitywear with patched survival layers, field repair logic and emergency pragmatism with
-    speculative costume logic with armor, suit engineering, magical garment behavior, alien
-    proportion, and character-readability design, so the preset supplies styling behavior rather
-    than a fixed outfit card, required wearer, or literal garment sample.
+    Distressed utilitywear with patched layers, field-repair seams and practical bulk;
+    damage is carried by the garments rather than the wearer or setting.
   subject_treatment: >-
-    Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak,
-    illuminate, conceal, mutate, modularize, ritualize, or engineer through Dirty layers, scavenged
-    onion bulk, duct-tape reinforcement, wrapped-forearm binding and boot-cut pragmatism; identity
-    stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling
-    hierarchy shift into this preset.
+    Rebuild existing clothes with worn hems, reinforced patches, wrapped cuffs and layered
+    denim or flannel. Preserve the person's face, anatomy, pose and role; show no wounds or
+    zombie transformation.
   color_and_tone: >-
-    Map color through speculative material color, neon accents, abyssal values, royal metals,
-    survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents
-    intentional, material color believable, and palette behavior attached to the subject instead of
-    pasted wardrobe decoration.
+    Use muted, worn cloth values with a small emergency-orange accent only when it suits the
+    prompt; keep the original palette and scene intact.
   lighting_and_shadow: >-
-    Use Gritty overcast grey, dust-haze shadow, emergency-orange rim and dirty practical light plus
-    rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or
-    sci-fi display light as the styling light contract, revealing cut, drape, surface response,
-    trim, transparency, or armor structure without erasing prompt readability.
+    Respect the requested location and light. Reveal fabric wear with soft contrast; do not
+    create overcast gloom, dust haze or emergency lighting.
   texture_and_material: >-
-    Render Dirt-embedded denim, duct-tape patches, torn flannel, sweat-worn cotton, abraded leather
-    and dried emergency stains plus armor plates, spandex, robes, leather, rubber, chrome, biotic
-    surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers,
-    shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the
-    whole prompt.
+    Use abraded denim, cotton, flannel, leather and cloth or tape patches. Show fraying and
+    repair with no blood, gore or bodily damage.
   camera_and_composition: >-
-    Compose with Layered protection bulk, patched seam interruptions and improvised field-repair
-    asymmetry plus character-design readability, suit silhouette, power-shape hierarchy, modular
-    gear rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits,
-    objects, creatures, environments, action, and abstract prompts to inherit styling without one
-    required pose.
+    Keep the requested crop, viewpoint and pose. Make patched seams and protective layering
+    legible without adding gear outside the frame.
   atmosphere_and_mood: >-
-    Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth,
-    spectacle, or mythic futurism; the tone should feel specific to Zombie Survivor while still
-    obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+    Communicate improvised resilience through repairs and layered construction, without
+    declaring an outbreak, survivor role or danger.
   rendering_and_quality: >-
-    Finish with believable costume engineering, clean edge logic, strong silhouette, readable
-    material physics, and no generic cosplay blur; prioritize clean style recognition, believable
-    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
-    accidental UI.
+    Vary scuffs, seams and patch edges with control; distinguish fabric wear from stains and
+    keep the original subject readable.
   key_features: >-
-    Distressed outbreak utilitywear with patched survival layers, field repair logic and emergency
-    pragmatism; Dirty layers, scavenged onion bulk, duct-tape reinforcement, wrapped-forearm binding
-    and boot-cut pragmatism; Dirt-embedded denim, duct-tape patches, torn flannel, sweat-worn
-    cotton, abraded leather and dried emergency stains; Gritty overcast grey, dust-haze shadow,
-    emergency-orange rim and dirty practical light; Layered protection bulk, patched seam
-    interruptions and improvised field-repair asymmetry
+    Patched denim and flannel; taped repair seams; wrapped cuffs; layered protective bulk.
   creative_brief: >-
-    Use Zombie Survivor after prompt X as a transferable fashion/costume layer: prompt X supplies
-    subject, motion, setting, tone, and intensity, while the preset supplies Distressed outbreak
-    utilitywear with patched survival layers, field repair logic and emergency pragmatism, Dirty
-    layers, scavenged onion bulk, duct-tape reinforcement, wrapped-forearm binding and boot-cut
-    pragmatism, Dirt-embedded denim, duct-tape patches, torn flannel, sweat-worn cotton, abraded
-    leather and dried emergency stains, Gritty overcast grey, dust-haze shadow, emergency-orange rim
-    and dirty practical light, Layered protection bulk, patched seam interruptions and improvised
-    field-repair asymmetry plus paneling, harnesses, armor modules, robe systems, implant seams,
-    luminous channels, survival layers, and invented fastenings, palette behavior, light response,
-    material treatment, silhouette grammar, and finish discipline without requiring one body type,
-    fixed outfit, venue, prop bundle, or card composition.
+    Turn the requested clothing into repaired utilitywear with patched fabric, taped seams
+    and wrapped cuffs. Preserve wearer, identity, anatomy, pose, role, scene and framing;
+    add no wounds, weapons, zombies or outbreak setting.
 avoidRules:
   - clean
   - gore

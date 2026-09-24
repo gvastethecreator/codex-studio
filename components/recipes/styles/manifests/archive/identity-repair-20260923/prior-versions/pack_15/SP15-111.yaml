@@ -1,0 +1,89 @@
+schemaVersion: 1
+id: SP15-111
+packId: pack_15
+name: Witchpunk
+category: 8. Occult, Myth & Gothic Punks
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - occult-myth-and-gothic-punks
+visualDna:
+  aesthetic: >-
+    Intersect crisp occult geometry with angular arcs of luminous current; balance precise marks against
+    asymmetric dark masses.
+  subject_treatment: >-
+    Carry the requested subject and action through sharp contour accents and controlled geometric
+    overlays, without replacing them with ritual props.
+  color_and_tone: >-
+    Set a concentrated electric hue and a small warm metallic accent against deep, legible shadows;
+    retain requested colors where specified.
+  lighting_and_shadow: Use compact luminous rims and hard shadow planes, keeping glow contained around the visual focus.
+  texture_and_material: >-
+    Contrast flat matte fields with sparse etched lines and selective gloss; keep marks clean and
+    purposeful.
+  camera_and_composition: >-
+    Preserve the requested crop; use intersecting arcs and geometric panels to direct attention without
+    imposing a card layout.
+  atmosphere_and_mood: Build charged, ceremonial tension through angular rhythm, contrast, and contained light.
+  rendering_and_quality: Keep the geometry crisp, glow restrained, and fine detail subordinate to large readable shapes.
+avoidRules:
+  - literal tarot-card framing
+  - random sigils unrelated to the requested subject
+  - glow that erases contour clarity
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-111.webp
+attributes:
+  negativePrompt: >-
+    literal tarot-card framing, random sigils unrelated to the requested subject, glow that erases
+    contour clarity
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: literal tarot-card framing
+        field: rendering_and_quality
+      - text: random sigils unrelated to the requested subject
+        field: rendering_and_quality
+      - text: glow that erases contour clarity
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-057
+      - SP15-058
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: occult-myth-and-gothic-punks
+  categoryName: 8. Occult, Myth & Gothic Punks
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - occult-myth-and-gothic-punks
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

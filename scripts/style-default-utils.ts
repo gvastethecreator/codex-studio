@@ -1,4 +1,5 @@
-import { copyFile, mkdir, rename, rm, stat } from 'node:fs/promises';
+import { copyFile, link, mkdir, readFile, rename, rm, stat, unlink } from 'node:fs/promises';
+import { constants } from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
 import { Effect } from 'effect';
@@ -38,10 +39,29 @@ export function repoRelative(filePath: string) {
   return path.relative(rootDir, filePath).replaceAll(path.sep, '/');
 }
 
+export async function preservePreviousStyleDefault(sourcePath: string, alternatePath: string) {
+  await mkdir(path.dirname(alternatePath), { recursive: true });
+  try {
+    await copyFile(sourcePath, alternatePath, constants.COPYFILE_EXCL);
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code !== 'EEXIST') throw error;
+    const [source, existing] = await Promise.all([readFile(sourcePath), readFile(alternatePath)]);
+    if (!source.equals(existing)) {
+      throw new Error(`Previous default alternate already differs: ${alternatePath}`);
+    }
+  }
+}
+
+export async function preserveReviewedChatgptLock(lockPath: string, evidencePath: string) {
+  await mkdir(path.dirname(evidencePath), { recursive: true });
+  await link(lockPath, evidencePath);
+  await unlink(lockPath);
+}
+
 export async function writeRepoWebpAsset(
   sourcePath: string,
   destinationPath: string,
-  options: { archive?: boolean } = {},
+  options: { archive?: boolean; exclusive?: boolean } = {},
 ) {
   const finalDestination = withRecipeAssetExtension(destinationPath);
   const archive = options.archive ?? true;
@@ -65,8 +85,13 @@ export async function writeRepoWebpAsset(
 
   try {
     await sharp(sourcePath).webp({ quality: 92, effort: 6 }).toFile(tempDestination);
-    await rm(finalDestination, { force: true });
-    await rename(tempDestination, finalDestination);
+    if (options.exclusive) {
+      await copyFile(tempDestination, finalDestination, constants.COPYFILE_EXCL);
+      await rm(tempDestination, { force: true });
+    } else {
+      await rm(finalDestination, { force: true });
+      await rename(tempDestination, finalDestination);
+    }
   } catch (error) {
     await rm(tempDestination, { force: true }).catch(() => {});
     throw error;
@@ -170,32 +195,49 @@ export async function loadPacks(packFilter?: string) {
   return loadPacksFromGranularManifests(packFilter);
 }
 
-export async function request<T>(pathName: string, init?: RequestInit): Promise<T> {
+export class HttpStatusError extends Error {
+  constructor(
+    public readonly status: number,
+    message: string,
+  ) {
+    super(message);
+    this.name = 'HttpStatusError';
+  }
+}
+
+export async function request<T>(
+  pathName: string,
+  init?: RequestInit,
+  options: { attempts?: number } = {},
+): Promise<T> {
   const apiBase = process.env.STUDIO_API_BASE || 'http://127.0.0.1:17223';
-  const attempts = Number(process.env.STUDIO_API_RETRY_ATTEMPTS || 24);
+  const attempts = options.attempts ?? Number(process.env.STUDIO_API_RETRY_ATTEMPTS || 24);
 
-  return runWithScriptRetry(
-    () =>
-      Effect.tryPromise(async () => {
-        const headers = new Headers(init?.headers);
-        headers.set('Content-Type', 'application/json');
+  const send = async () => {
+    const headers = new Headers(init?.headers);
+    headers.set('Content-Type', 'application/json');
 
-        const response = await fetch(`${apiBase}${pathName}`, {
-          ...init,
-          headers,
-        });
-        if (!response.ok) {
-          throw new Error(
-            `${init?.method || 'GET'} ${pathName} failed: ${response.status} ${await response.text()}`,
-          );
-        }
-        return response.json() as Promise<T>;
-      }),
-    {
-      attempts,
-      delayMs: 5_000,
-    },
-  );
+    const response = await fetch(`${apiBase}${pathName}`, {
+      ...init,
+      headers,
+    });
+    if (!response.ok) {
+      throw new HttpStatusError(
+        response.status,
+        `${init?.method || 'GET'} ${pathName} failed: ${response.status} ${await response.text()}`,
+      );
+    }
+    return response.json() as Promise<T>;
+  };
+
+  // A single-attempt job intake must preserve the HTTP status for definite
+  // rejection handling; Effect.tryPromise wraps it in a FiberFailure.
+  if (attempts === 1) return send();
+
+  return runWithScriptRetry(() => Effect.tryPromise(send), {
+    attempts,
+    delayMs: 5_000,
+  });
 }
 
 function dataUrlFromBytes(bytes: Uint8Array, mimeType = 'image/png') {

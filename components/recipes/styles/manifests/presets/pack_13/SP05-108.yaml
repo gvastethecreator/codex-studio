@@ -13,90 +13,59 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Fairy-Tale Storybook Soft operates as a portable anime-lifestyle router: combine Fairy Tale
-    Storybook Soft identity cues through Floating floral particles; sparkle dust; lace pattern
-    borders; ribbon like framing devices; transformation glow softness; Fairy Tale Storybook Soft
-    anime style cues with broad anime style spectrum grammar with experimental line, material
-    specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible
-    art direction, so the preset supplies anime style behavior after prompt X rather than a required
-    scene, character, franchise image, or card composition.
+    Use curved fine contours, pastel gouache glaze and lace-like edge rhythm to soften existing
+    forms; do not add flowers, ribbons or sparkle props.
   subject_treatment: >-
-    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
-    style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic
-    surface logic, and prompt-preserving silhouette discipline; subjects may be characters,
-    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
-    prompt.
+    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
+    treatment to the existing forms without substituting subjects, adding accessories or changing
+    their function.
   color_and_tone: >-
-    Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop,
-    thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values
-    readable, accent roles intentional, skin or material midtones stable, and palette behavior
-    attached to the prompt instead of pasted anime decoration.
+    Palette defaults apply only where the prompt leaves color open: use softly layered pastel colors
+    with enough value contrast to keep forms clear; honor requested dark or saturated palettes.
   lighting_and_shadow: >-
-    Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze,
-    speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression,
-    silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or
-    screenshot-like flatness.
+    Favor diffused light and gentle edge bloom only when consistent with the prompt's lighting.
   texture_and_material: >-
-    Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map
-    pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile,
-    glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy
-    surface chatter.
+    Combine fine ink contours, translucent gouache and light paper tooth; keep the depicted material
+    identifiable.
   camera_and_composition: >-
-    Compose through auteur-aware framing, material seams, impact vectors, postcard freezes,
-    distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as
-    reusable anime framing grammar, allowing close acting, objects, performances, action,
-    environments, or abstract prompts without one required pose or location.
+    Let soft curves guide the eye through the given layout; preserve crop, pose and structural
+    detail.
   atmosphere_and_mood: >-
-    Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance,
-    tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become
-    cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while
-    preserving its anime lineage.
+    Storybook softness is a surface quality, not a requirement for innocence or a happy ending.
   rendering_and_quality: >-
-    Finish with clean experimental anime finish with strong style recognition, stable subject
-    structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss;
-    prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no
-    fake readable text, no UI, and no generic AI anime gloss.
+    Apply the soft rendering to any subject and mood without adding a fairy, flower, ribbon, costume
+    or storybook scene. Keep important silhouettes and joins legible; no watermark, unrequested text
+    or interface.
   key_features: >-
-    Floating floral particles; sparkle dust; lace pattern borders; ribbon like framing devices;
-    transformation glow softness; Fairy Tale Storybook Soft anime style cues
+    Curved contour; pastel gouache glaze; lace-like edge rhythm; soft light; fine paper tooth.
   creative_brief: >-
-    Use Fairy-Tale Storybook Soft after prompt X as a transferable anime character/lifestyle layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies
-    Floating floral particles, sparkle dust, lace pattern borders, ribbon like framing devices,
-    transformation glow softness, Fairy Tale Storybook Soft anime style cues, color logic, lighting,
-    material finish, composition rhythm, mood pressure, and quality controls without requiring a
-    fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.
+    Apply this visual treatment to the requested content: Curved contour; pastel gouache glaze;
+    lace-like edge rhythm; soft light; fine paper tooth. Preserve its identity, action, materials,
+    composition and requested tone; introduce no persona, scene, franchise cue or extra motif.
 avoidRules:
-  - hard
-  - sharp
-  - dark
-  - gritty
-  - realistic
-  - horror
-  - violent
-  - cruel cynicism
-  - explicit gore
-  - generic AI anime gloss
-  - auteur copycat
-  - fixed source scene
-  - canon character copy
-  - title scene copy
-  - literal sample card setup
-  - fixed anime cast
-  - generic anime filter
-  - prompt literal card reuse
+  - photoreal cosplay rendering
+  - 3D render look
+  - plastic airbrush gloss obscuring the style's defining marks
+  - undifferentiated anime filter erasing the preset's signature mechanics
+  - unrequested default-image characters, costume details, props or setting
+  - unrequested default-image framing
+  - garbled pseudo-text
+  - unrequested interface overlay
   - watermark
-  - readable text
-  - fake UI
+  - unrequested logo or signature artifact
+  - hard unmodulated edges cutting through gouache glaze
+  - plastic sheen obscuring paper and pigment texture
+  - contour loss obscuring subject identity
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-108.webp
 attributes:
   negativePrompt: >-
-    hard, sharp, dark, gritty, realistic, horror, violent, cruel cynicism, explicit gore, generic AI
-    anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal
-    sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark,
-    readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo,
-    signature
+    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
+    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
+    unrequested default-image characters, costume details, props or setting, unrequested
+    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
+    unrequested logo or signature artifact, hard unmodulated edges cutting through gouache glaze,
+    plastic sheen obscuring paper and pigment texture, contour loss obscuring subject identity
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

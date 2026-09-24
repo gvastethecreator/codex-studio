@@ -3,7 +3,7 @@
     {
       "id": "pack_17",
       "name": "Medieval Fantasy & Dungeon Zine",
-      "presetCount": 72
+      "presetCount": 73
     }
   ],
   "presets": [
@@ -25,6 +25,18 @@
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp17-001 ashen relic fantasy ashen soulslike ruins 1. dark fantasy & gothic courts matte dark fantasy medieval fantasy pack_17 medieval fantasy & dungeon zine dark-fantasy-and-gothic-courts medieval-fantasy-and-dungeon-zine dark-fantasy-and-gothic-courts medieval-fantasy"
+    },
+    {
+      "id": "SP17-073",
+      "name": "Soot-Softened Planes",
+      "ref": "pack_17/SP17-073.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-and-gothic-courts",
+      "categoryName": "1. Dark Fantasy & Gothic Courts",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "dark-fantasy-and-gothic-courts"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-073 soot-softened planes 1. dark fantasy & gothic courts matte dark fantasy pack_17 medieval fantasy & dungeon zine dark-fantasy-and-gothic-courts medieval-fantasy-and-dungeon-zine dark-fantasy-and-gothic-courts"
     },
     {
       "id": "SP17-002",
@@ -1386,5 +1398,5 @@
       "searchableText": "sp17-072 endless war gothic endless modern war gothic fantasy trench cathedral grimdark 5. grimdark game systems & tabletop game & tabletop formats modern endless war gothic fantasy pack_17 medieval fantasy & dungeon zine grimdark-game-systems-and-tabletop medieval-fantasy-and-dungeon-zine grimdark-game-systems-and-tabletop modern-endless-war-gothic-fantasy"
     }
   ],
-  "totalPresetCount": 72
+  "totalPresetCount": 73
 }

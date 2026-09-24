@@ -1,0 +1,111 @@
+schemaVersion: 1
+id: SP23-019
+packId: pack_23
+name: Ilkhanid Painted Space
+category: 4. Regional Manuscript Traditions
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - regional-manuscript-traditions
+  - painted-contour-and-overlap
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Painted contours and bounded pigment areas describe depth through overlap, relative scale and
+    clear spatial layers rather than photographic blur. This study refers specifically to the
+    Ilkhanid-period Great Mongol Shahnama corpus, not Persian or Islamic painting as a whole.
+  subject_treatment: >-
+    Preserve requested identity, proportions, count, action and relationships. Keep existing forms
+    readable as painted planes; do not truncate them, extend them beyond the frame or restage the scene.
+  color_and_tone: >-
+    Preserve the requested palette and value range. Separate overlapping forms with clear pigment
+    boundaries without requiring gold, a fixed historical palette or saturated colors.
+  lighting_and_shadow: >-
+    Follow the requested illumination and shadow direction. Use overlap and relative scale to clarify
+    depth without adding atmospheric haze, a new light source or photographic depth of field.
+  texture_and_material: >-
+    Use clean, intentional pigment boundaries and distribute detail by spatial plane. Preserve the
+    depicted materials; do not add paper grain, carpet texture or other material cues unless requested.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, orientation and arrangement. Layered space does not
+    authorize a different camera, panoramic layout or forms extending past the frame.
+  atmosphere_and_mood: >-
+    Keep the requested setting and mood. The historical reference is a specific Ilkhanid manuscript
+    tradition with cross-cultural artistic exchange; do not infer a Persian or Mongol story, costume,
+    architecture, carpet or script from the style label.
+  rendering_and_quality: >-
+    Keep contours legible and depth cues deliberate. Avoid photographic blur and prevent detail in one
+    plane from overwhelming the requested subject or spatial relationships.
+avoidRules:
+  - unrequested Persian or Mongol narrative, costume or architecture
+  - unrequested carpet, calligraphy or paper texture
+  - photographic depth of field or global blur
+  - unrequested panoramic restaging or forms beyond the frame
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-019.webp
+attributes:
+  negativePrompt: >-
+    unrequested Persian or Mongol narrative, costume or architecture, unrequested carpet, calligraphy
+    or paper texture, photographic depth of field or global blur, unrequested panoramic restaging or
+    forms beyond the frame
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: ilkhanid-manuscript-painting
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: painted-contour-and-overlap-depth
+      - field: atmosphere_and_mood
+        group: source-scope
+        value: great-mongol-shahnama-ilkhanid-corpus-only
+    avoidRules:
+      - text: unrequested Persian or Mongol narrative, costume or architecture
+        field: global
+      - text: unrequested carpet, calligraphy or paper texture
+        field: texture_and_material
+      - text: photographic depth of field or global blur
+        field: rendering_and_quality
+      - text: unrequested panoramic restaging or forms beyond the frame
+        field: camera_and_composition
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: TR-02
+    sourceTitle: Ilkhanid Painted Space
+    historicalScope: 'Pintura de libro ilkánida · siglo XIV'
+    referenceIds:
+      - S18
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: regional-manuscript-traditions
+  categoryName: 4. Regional Manuscript Traditions
+  tags:
+    - curation-v2
+    - regional-manuscript-traditions
+    - painted-contour-and-overlap
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

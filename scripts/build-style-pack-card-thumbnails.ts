@@ -1,4 +1,4 @@
-import { mkdir, readdir, rm, stat, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, readdir, rm, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
 
@@ -200,11 +200,18 @@ async function main() {
 
   const packFilter = argValue('pack');
   const concurrency = parseConcurrency();
+  const aliases = JSON.parse(
+    await readFile(path.join(rootDir, 'scripts', 'style-thumbnail-aliases.json'), 'utf8'),
+  ) as Array<{ alias: string }>;
+  // Aliases already resolve preserved images; recreating their files breaks projection identity.
+  const aliasKeys = new Set(aliases.map(({ alias }) => alias));
   const allJobs = [
     ...(await collectCategoryJobs()),
     ...(await collectDefaultJobs()),
     ...(await collectVariantJobs()),
-  ].sort((left, right) => left.outputName.localeCompare(right.outputName));
+  ]
+    .filter((job) => !aliasKeys.has(path.basename(job.outputName, '.webp')))
+    .sort((left, right) => left.outputName.localeCompare(right.outputName));
   const jobs = packFilter ? allJobs.filter((job) => job.packId === packFilter) : allJobs;
 
   await mkdir(outputDir, { recursive: true });

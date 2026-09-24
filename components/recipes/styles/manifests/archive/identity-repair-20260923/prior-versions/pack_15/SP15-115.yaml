@@ -1,0 +1,86 @@
+schemaVersion: 1
+id: SP15-115
+packId: pack_15
+name: Mythpunk
+category: 8. Occult, Myth & Gothic Punks
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - occult-myth-and-gothic-punks
+visualDna:
+  aesthetic: Combine broad painted planes with repeated ornamental curves and balanced, emblematic spacing.
+  subject_treatment: >-
+    Preserve the requested content; echo its existing contours with bounded ornament and repeated color
+    shapes rather than adding figures or banners.
+  color_and_tone: >-
+    Set warm brass and painted earth tones against one clear turquoise accent; keep the palette flexible
+    when the request specifies colors.
+  lighting_and_shadow: Use warm highlights on selected edges and clean shadows that separate the ornamental layers.
+  texture_and_material: >-
+    Pair painted wood-like matte color with restrained metallic sheen, keeping each material response
+    distinct.
+  camera_and_composition: >-
+    Respect the requested framing; organize the image around repeated arcs and a calm central balance
+    rather than a civic procession.
+  atmosphere_and_mood: Give forms a ceremonial, legendary weight through repetition, symmetry, and warm-cool contrast.
+  rendering_and_quality: Keep ornament sparse, edges clean, and broad color planes dominant over small surface marks.
+avoidRules:
+  - a required public ceremony or procession
+  - ornament repeated so densely that it becomes a texture field
+  - extra figures or banners added only to signal myth
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-115.webp
+attributes:
+  negativePrompt: >-
+    a required public ceremony or procession, ornament repeated so densely that it becomes a texture
+    field, extra figures or banners added only to signal myth
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: a required public ceremony or procession
+        field: rendering_and_quality
+      - text: ornament repeated so densely that it becomes a texture field
+        field: rendering_and_quality
+      - text: extra figures or banners added only to signal myth
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-062
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: occult-myth-and-gothic-punks
+  categoryName: 8. Occult, Myth & Gothic Punks
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - occult-myth-and-gothic-punks
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

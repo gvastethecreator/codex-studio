@@ -4,235 +4,93 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP15-001',
-    name: 'Brass Gear Commons',
+    id: 'SP15-081',
+    name: 'Steampunk',
     category: '1. Classic Industrial Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, Victorian interior-system lock, fixed punk venue, required mascot, required sample-card setup, repeated prop bundle, readable text, prompt-required card reuse, generic cyberpunk wallpaper, literal sample-card setup, prompt-literal card reuse',
+      'Do not replace the requested subject with a machine or make an unrelated boiler the focal point., Do not require a Victorian room, factory, airship, guild or labor narrative., Keep gears functional and steam subordinate to the requested action.',
     style: {
       aesthetic:
-        'Brass Gear Commons operates as a portable punk-spectrum router: combine Brass Gear Commons identity cues through brass commons; valve glyphs; visible civic silhouettes; gear shadows; civic machine scale; large gear and valve silhouettes with industrial-retrofuture punk grammar with visible labor systems, mechanical silhouettes, public engineering, soot-softened graphic planes, and utility-first rebellion, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'An authored sepia-lithograph and matte-gouache adventure illustration using Victorian mechanical design vocabulary: working gear trains, articulated housings and warm bronze/brass against soot-dark iron. Use pressure routes and steam valves only where the requested subject already supports them; no period setting is required.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through gear-scale massing, valve rhythm, rivet restraint, belt or rail geometry, worker-poster contour, and machine-adjacent costume or surface logic; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve the requested subject, action and explicit locks. Restyle open forms with purposeful gear-driven joins and bronze hardware. Add pressure fittings or gauges only to a subject that already uses pressure. If it has a steam outlet or pressure-release port, show one small visible wisp from that outlet; otherwise do not invent a steam source, gauge or piping.',
       color_and_tone:
-        'Map color through smoky brass, tarnished copper, oil umber, rail black, aged ivory, pressure red, and warm cream value blocks; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Use brass, bronze and patinated copper against iron, soot and aged ivory, with a restrained enamel accent. Preserve explicit palettes and clear focal, support and shadow values.',
       lighting_and_shadow:
-        "Use amber machine glow, steam-diffused shadow, furnace rim, gauge-color pinpoints, and posterized industrial bounce; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Honor specified light direction and sources. When unspecified, use warm metal highlights against cool soot shadows; invent no glowing source and let no steam obscure the subject.',
       texture_and_material:
-        'Render brass plates, cast iron, leather belts, enamel gauges, soot washes, heavy paper grain, glass dots, and controlled worn edges; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Distinguish brass, bronze, copper, cast iron, enamel, leather and paper through tactile planes and controlled wear. Translate open material choices into a mechanical finish.',
       camera_and_composition:
-        'Compose through large readable machinery rhythm, labor-poster spacing, civic scale cues, diagonal belt paths, and open negative space around the requested subject as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Keep requested crop and viewpoint. Arrange functioning gears at existing joints and pressure routes only along an existing pressure mechanism; do not add equipment to an ordinary object or require a workshop, airship or foundry.',
       atmosphere_and_mood:
-        'Carry mood through defiant craft, collective utility, late-shift pressure, practical optimism, machine reverence, and civic invention; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Convey ingenious, hand-built pressure and craft while following the requested emotion. Period ornament informs design, not a mandatory historical story.',
       rendering_and_quality:
-        'Finish with screenprint-to-gouache industrial illustration with denoised soot, clean dark-gray shadows, broad shapes, and no rivet-noise overload; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'brass commons; valve glyphs; visible civic silhouettes; gear shadows; civic machine scale; large gear and valve silhouettes',
-      creative_brief:
-        'Use Brass Gear Commons after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies brass commons, valve glyphs, visible civic silhouettes, gear shadows, civic machine scale, large gear and valve silhouettes, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Render as an ink-and-gouache illustration with matte planes, engraved contours and firm shadows, not a polished photograph or product render. Make a few working signatures read at thumbnail scale; avoid gear wallpaper, unreadable gauges and obscuring steam.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-001', 'SP15-003', 'SP15-006', 'SP15-008'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-002',
-    name: 'Coal Fog Railworks',
+    id: 'SP15-082',
+    name: 'Dieselpunk',
     category: '1. Classic Industrial Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, skull emblem, faction insignia, political flag, handheld lantern hero, military staging, station officer portrait, rail guard portrait, close-up noir protagonist, near-plane uniformed worker portrait, realistic military coat, realistic trenchcoat hero, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, Victorian interior-system lock, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'Do not force a train, convoy, airship, uniform, military insignia or wartime plot., Do not require night, fog, searchlights or a fixed signal system., Avoid dense grime and micro-rivets; add no text or signage unless requested.',
     style: {
       aesthetic:
-        'Coal Fog Railworks operates as a portable punk-spectrum router: combine Coal Fog Railworks identity cues through headlamp cones; rail silhouettes; semaphore lights; heavy engines; worker clusters; Dieselpunk rail-signal poster language built from locomotive mass with industrial-retrofuture punk grammar with visible labor systems, mechanical silhouettes, public engineering, soot-softened graphic planes, and utility-first rebellion, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'A heavy interwar industrial-retro language of compact engine masses, pressed steel, piston rhythm, exhaust routes, riveted plate and stark signal marks; mechanical force is not a required war story.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through gear-scale massing, valve rhythm, rivet restraint, belt or rail geometry, worker-poster contour, and machine-adjacent costume or surface logic; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve requested identity, action and locked form. Restyle open structures with compact engine housings, plate-built contours, bolted joints and purposeful exhaust or fuel lines. Keep the mechanical cue integrated into an existing subject or fixture rather than adding a factory set or separate machinery. When no mechanism exists, convey engine mass through blocky silhouettes and print rhythm instead of inventing equipment; vehicles and military subjects remain optional.',
       color_and_tone:
-        'Map color through smoky brass, tarnished copper, oil umber, rail black, aged ivory, pressure red, and warm cream value blocks; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Build charcoal, iron and worn-steel masses with muted olive, tobacco, aged cream and a small warning accent. Preserve palette locks and separate silhouette from shadow.',
       lighting_and_shadow:
-        "Use amber machine glow, steam-diffused shadow, furnace rim, gauge-color pinpoints, and posterized industrial bounce; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Respect specified lighting and sources. Use broad cut shadows and hard-surface highlights; when open, favor smoky contrast without forcing night, searchlights or fog.',
       texture_and_material:
-        'Render brass plates, cast iron, leather belts, enamel gauges, soot washes, heavy paper grain, glass dots, and controlled worn edges; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Distinguish pressed steel, cast iron, rubber, canvas and worn lacquer with scuffed paint and oil-dark recesses. Give open material choices a heavy finish without uniform grime.',
       camera_and_composition:
-        'Compose through large readable machinery rhythm, labor-poster spacing, civic scale cues, diagonal belt paths, and open negative space around the requested subject as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Preserve viewpoint and crop. Use compact volumes and purposeful diagonals without imposing a train, convoy, airship, street or poster layout.',
       atmosphere_and_mood:
-        'Carry mood through defiant craft, collective utility, late-shift pressure, practical optimism, machine reverence, and civic invention; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Suggest industrial urgency, endurance or speed through mass and mechanical rhythm while retaining the requested tone. Wartime drama and noir are optional.',
       rendering_and_quality:
-        'Finish with screenprint-to-gouache industrial illustration with denoised soot, clean dark-gray shadows, broad shapes, and no rivet-noise overload; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'headlamp cones; rail silhouettes; semaphore lights; heavy engines; worker clusters; Dieselpunk rail-signal poster language built from locomotive mass',
-      creative_brief:
-        'Use Coal Fog Railworks after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies headlamp cones, rail silhouettes, semaphore lights, heavy engines, worker clusters, Dieselpunk rail-signal poster language built from locomotive mass, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Use bold screenprint/lithograph masses, hard contours, reduced shadows and selective scuffed-print variation. Keep engine structure readable; do not invent text or signage unless requested.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-002', 'SP15-004', 'SP15-007'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-003',
-    name: 'Pressure Lace Automata',
+    id: 'SP15-083',
+    name: 'Clockpunk',
     category: '1. Classic Industrial Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, Victorian interior-system lock, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'Do not turn the subject into a clock face or impose a clocktower, guild or public assembly., Do not add dial numerals or a radial layout unless requested., Keep escapement and spring details large enough to read.',
     style: {
       aesthetic:
-        'Pressure Lace Automata operates as a portable punk-spectrum router: combine Pressure Lace Automata identity cues through lace struts; pressure gauges; articulated hands; porcelain faces; brass needlework; Steampunk automata poster language built from porcelain planes with industrial-retrofuture punk grammar with visible labor systems, mechanical silhouettes, public engineering, soot-softened graphic planes, and utility-first rebellion, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'A folio-drawn precision-clockwork illustration with fine ink construction lines, visible escapements, spring tension, repeated tooth intervals and measured joints, distinct from Steampunk pressure machinery.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through gear-scale massing, valve rhythm, rivet restraint, belt or rail geometry, worker-poster contour, and machine-adjacent costume or surface logic; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        "Preserve the requested subject and function. Redesign open forms around one focal clock-regulated mechanism: a readable escapement or balance wheel, wound spring and regular tooth intervals linked to the subject's motion. Where no moving mechanism fits, use measured linkages on an existing form. Avoid broad pressure fittings or decorative gearwork.",
       color_and_tone:
-        'Map color through smoky brass, tarnished copper, oil umber, rail black, aged ivory, pressure red, and warm cream value blocks; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Lead with blued steel, graphite ink and aged ivory; use brass only at small pivots and add one restrained vermilion or enamel accent. Keep explicit colors and separate repeated parts by value.',
       lighting_and_shadow:
-        "Use amber machine glow, steam-diffused shadow, furnace rim, gauge-color pinpoints, and posterized industrial bounce; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Honor specified lighting. Use narrow accents to reveal moving parts and crisp overlap shadows; add no clock-like glow or new source.',
       texture_and_material:
-        'Render brass plates, cast iron, leather belts, enamel gauges, soot washes, heavy paper grain, glass dots, and controlled worn edges; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Separate machined teeth, wound springs, enamel, porcelain and steel through fine engraving and clean wear. Translate open materials into precision craft.',
       camera_and_composition:
-        'Compose through large readable machinery rhythm, labor-poster spacing, civic scale cues, diagonal belt paths, and open negative space around the requested subject as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Preserve view and placement. Let measured intervals and interlocking arcs organize the form without imposing a dial, tower or radial layout.',
       atmosphere_and_mood:
-        'Carry mood through defiant craft, collective utility, late-shift pressure, practical optimism, machine reverence, and civic invention; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Create measured tension, ingenuity or precision through controlled repetition. Keep the requested mood; public strikes, guilds and clockmakers are optional.',
       rendering_and_quality:
-        'Finish with screenprint-to-gouache industrial illustration with denoised soot, clean dark-gray shadows, broad shapes, and no rivet-noise overload; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'lace struts; pressure gauges; articulated hands; porcelain faces; brass needlework; Steampunk automata poster language built from porcelain planes',
-      creative_brief:
-        'Use Pressure Lace Automata after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies lace struts, pressure gauges, articulated hands, porcelain faces, brass needlework, Steampunk automata poster language built from porcelain planes, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Render as a technical folio illustration with precise black engraving and translucent watercolor planes, not a photoreal product shot. Keep one legible escapement and a few clear fine teeth; avoid unreadable micro-gears, random dials and mechanical noise.',
     },
-  },
-  {
-    id: 'SP15-004',
-    name: 'Iron Radio Convoy',
-    category: '1. Classic Industrial Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, soldier, guard, officer, uniform hero, faction coat, political flag, red flag, handheld lantern hero, checkpoint scene, weapon, military staging, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, Victorian interior-system lock, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Iron Radio Convoy operates as a portable punk-spectrum router: combine Iron Radio Convoy identity cues through antenna canopies; map boards; field radios; route-light wedges; mud tracks; Dieselpunk civilian radio-convoy poster language built from mobile broadcast silhouettes with industrial-retrofuture punk grammar with visible labor systems, mechanical silhouettes, public engineering, soot-softened graphic planes, and utility-first rebellion, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through gear-scale massing, valve rhythm, rivet restraint, belt or rail geometry, worker-poster contour, and machine-adjacent costume or surface logic; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through smoky brass, tarnished copper, oil umber, rail black, aged ivory, pressure red, and warm cream value blocks; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use amber machine glow, steam-diffused shadow, furnace rim, gauge-color pinpoints, and posterized industrial bounce; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render brass plates, cast iron, leather belts, enamel gauges, soot washes, heavy paper grain, glass dots, and controlled worn edges; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through large readable machinery rhythm, labor-poster spacing, civic scale cues, diagonal belt paths, and open negative space around the requested subject as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through defiant craft, collective utility, late-shift pressure, practical optimism, machine reverence, and civic invention; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with screenprint-to-gouache industrial illustration with denoised soot, clean dark-gray shadows, broad shapes, and no rivet-noise overload; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'antenna canopies; map boards; field radios; route-light wedges; mud tracks; Dieselpunk civilian radio-convoy poster language built from mobile broadcast silhouettes',
-      creative_brief:
-        'Use Iron Radio Convoy after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies antenna canopies, map boards, field radios, route-light wedges, mud tracks, Dieselpunk civilian radio-convoy poster language built from mobile broadcast silhouettes, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-005',
-    name: 'Clocktower Strike Assembly',
-    category: '1. Classic Industrial Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, Victorian interior-system lock, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Clocktower Strike Assembly operates as a portable punk-spectrum router: combine Clocktower Strike Assembly identity cues through escapement symbols; strike posters; clock shadows; guild coats; public stairs; Clockpunk civic-assembly poster language built from synchronized escapements with industrial-retrofuture punk grammar with visible labor systems, mechanical silhouettes, public engineering, soot-softened graphic planes, and utility-first rebellion, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through gear-scale massing, valve rhythm, rivet restraint, belt or rail geometry, worker-poster contour, and machine-adjacent costume or surface logic; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through smoky brass, tarnished copper, oil umber, rail black, aged ivory, pressure red, and warm cream value blocks; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use amber machine glow, steam-diffused shadow, furnace rim, gauge-color pinpoints, and posterized industrial bounce; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render brass plates, cast iron, leather belts, enamel gauges, soot washes, heavy paper grain, glass dots, and controlled worn edges; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through large readable machinery rhythm, labor-poster spacing, civic scale cues, diagonal belt paths, and open negative space around the requested subject as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through defiant craft, collective utility, late-shift pressure, practical optimism, machine reverence, and civic invention; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with screenprint-to-gouache industrial illustration with denoised soot, clean dark-gray shadows, broad shapes, and no rivet-noise overload; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'escapement symbols; strike posters; clock shadows; guild coats; public stairs; Clockpunk civic-assembly poster language built from synchronized escapements',
-      creative_brief:
-        'Use Clocktower Strike Assembly after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies escapement symbols, strike posters, clock shadows, guild coats, public stairs, Clockpunk civic-assembly poster language built from synchronized escapements, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-006',
-    name: 'Pneumatic Print Foundry',
-    category: '1. Classic Industrial Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, Victorian interior-system lock, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Pneumatic Print Foundry operates as a portable punk-spectrum router: combine Pneumatic Print Foundry identity cues through pneumatic tubes; hot-type trays; print rollers; unreadable paper blocks; inked hand shapes; ink rollers with industrial-retrofuture punk grammar with visible labor systems, mechanical silhouettes, public engineering, soot-softened graphic planes, and utility-first rebellion, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through gear-scale massing, valve rhythm, rivet restraint, belt or rail geometry, worker-poster contour, and machine-adjacent costume or surface logic; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through smoky brass, tarnished copper, oil umber, rail black, aged ivory, pressure red, and warm cream value blocks; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use amber machine glow, steam-diffused shadow, furnace rim, gauge-color pinpoints, and posterized industrial bounce; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render brass plates, cast iron, leather belts, enamel gauges, soot washes, heavy paper grain, glass dots, and controlled worn edges; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through large readable machinery rhythm, labor-poster spacing, civic scale cues, diagonal belt paths, and open negative space around the requested subject as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through defiant craft, collective utility, late-shift pressure, practical optimism, machine reverence, and civic invention; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with screenprint-to-gouache industrial illustration with denoised soot, clean dark-gray shadows, broad shapes, and no rivet-noise overload; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'pneumatic tubes; hot-type trays; print rollers; unreadable paper blocks; inked hand shapes; ink rollers',
-      creative_brief:
-        'Use Pneumatic Print Foundry after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies pneumatic tubes, hot-type trays, print rollers, unreadable paper blocks, inked hand shapes, ink rollers, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-007',
-    name: 'Smogline Airship Logistics',
-    category: '1. Classic Industrial Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, near-plane dock worker, gas-mask worker hero, rope-pulling character closeup, realistic dock scene, dense scaffold grid, rendered metal realism, volumetric fog realism, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, floating palace, castle corridor, lamp hero, airship-only postcard, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, Victorian interior-system lock, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Smogline Airship Logistics operates as a portable punk-spectrum router: combine Smogline Airship Logistics identity cues through mooring lines; beacon dots; gantry silhouettes; ground crew scale; hazy airship mass; Diesel-steam airship logistics poster language built from smoggy sky mass with industrial-retrofuture punk grammar with visible labor systems, mechanical silhouettes, public engineering, soot-softened graphic planes, and utility-first rebellion, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through gear-scale massing, valve rhythm, rivet restraint, belt or rail geometry, worker-poster contour, and machine-adjacent costume or surface logic; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through smoky brass, tarnished copper, oil umber, rail black, aged ivory, pressure red, and warm cream value blocks; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use amber machine glow, steam-diffused shadow, furnace rim, gauge-color pinpoints, and posterized industrial bounce; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render brass plates, cast iron, leather belts, enamel gauges, soot washes, heavy paper grain, glass dots, and controlled worn edges; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through large readable machinery rhythm, labor-poster spacing, civic scale cues, diagonal belt paths, and open negative space around the requested subject as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through defiant craft, collective utility, late-shift pressure, practical optimism, machine reverence, and civic invention; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with screenprint-to-gouache industrial illustration with denoised soot, clean dark-gray shadows, broad shapes, and no rivet-noise overload; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'mooring lines; beacon dots; gantry silhouettes; ground crew scale; hazy airship mass; Diesel-steam airship logistics poster language built from smoggy sky mass',
-      creative_brief:
-        'Use Smogline Airship Logistics after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies mooring lines, beacon dots, gantry silhouettes, ground crew scale, hazy airship mass, Diesel-steam airship logistics poster language built from smoggy sky mass, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-008',
-    name: 'Rivet Ritual Workshop',
-    category: '1. Classic Industrial Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, rendered metal realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, chapel corridor, literal church, stained glass hero, clergy, altar interior-system, rivet carpet, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, Victorian interior-system lock, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Rivet Ritual Workshop operates as a portable punk-spectrum router: combine Rivet Ritual Workshop identity cues through vertical machine ribs; welding halos; broad rivet arcs; tool plinths; worker silhouettes; Industrial sacred-machinery poster language where riveted machines form monumental craft geometry with industrial-retrofuture punk grammar with visible labor systems, mechanical silhouettes, public engineering, soot-softened graphic planes, and utility-first rebellion, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through gear-scale massing, valve rhythm, rivet restraint, belt or rail geometry, worker-poster contour, and machine-adjacent costume or surface logic; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through smoky brass, tarnished copper, oil umber, rail black, aged ivory, pressure red, and warm cream value blocks; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use amber machine glow, steam-diffused shadow, furnace rim, gauge-color pinpoints, and posterized industrial bounce; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render brass plates, cast iron, leather belts, enamel gauges, soot washes, heavy paper grain, glass dots, and controlled worn edges; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through large readable machinery rhythm, labor-poster spacing, civic scale cues, diagonal belt paths, and open negative space around the requested subject as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through defiant craft, collective utility, late-shift pressure, practical optimism, machine reverence, and civic invention; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with screenprint-to-gouache industrial illustration with denoised soot, clean dark-gray shadows, broad shapes, and no rivet-noise overload; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'vertical machine ribs; welding halos; broad rivet arcs; tool plinths; worker silhouettes; Industrial sacred-machinery poster language where riveted machines form monumental craft geometry',
-      creative_brief:
-        'Use Rivet Ritual Workshop after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies vertical machine ribs, welding halos, broad rivet arcs, tool plinths, worker silhouettes, Industrial sacred-machinery poster language where riveted machines form monumental craft geometry, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-005'],
+      visualEvaluation: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

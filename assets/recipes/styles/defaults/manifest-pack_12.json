@@ -6,12 +6,13 @@
     "packName": "Video Game Originals Vault",
     "category": "1. Neon Urban & Night Ops",
     "file": "assets/recipes/styles/defaults/SP12-001.webp",
-    "jobId": "ff7143f5-32e5-4d30-91be-906a1ec4d62e",
+    "jobId": "df0ea7e0-a60b-4785-a788-40c54bbc2d9c",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-001.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:16:23.010Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:52:20.329Z"
   },
   {
     "presetId": "SP12-002",
@@ -20,12 +21,13 @@
     "packName": "Video Game Originals Vault",
     "category": "6. Wilderness Hunts & Harsh Frontiers",
     "file": "assets/recipes/styles/defaults/SP12-002.webp",
-    "jobId": "1c3e9028-1cd6-41b7-952d-b17ee0878b29",
+    "jobId": "e966cb86-44e3-4f83-a4bd-2f3bdbc4191f",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-002.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:17:41.979Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:52:19.658Z"
   },
   {
     "presetId": "SP12-003",
@@ -34,12 +36,13 @@
     "packName": "Video Game Originals Vault",
     "category": "3. Sci-Fi Frontiers & Mech Zones",
     "file": "assets/recipes/styles/defaults/SP12-003.webp",
-    "jobId": "d7673907-c944-485f-ad14-6f7ab761a907",
+    "jobId": "5ba07a17-35b6-4e0a-992f-76c3e49b3d48",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-003.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:15:10.003Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:52:20.557Z"
   },
   {
     "presetId": "SP12-004",
@@ -48,12 +51,13 @@
     "packName": "Video Game Originals Vault",
     "category": "8. Puzzle Chambers & Adventure Setpieces",
     "file": "assets/recipes/styles/defaults/SP12-004.webp",
-    "jobId": "f95d1415-ea9c-47eb-b593-5c05afa9827b",
+    "jobId": "29946221-0dac-4a01-a86c-6734cf90442e",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-004.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:16:38.024Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:53:16.753Z"
   },
   {
     "presetId": "SP12-005",
@@ -62,12 +66,13 @@
     "packName": "Video Game Originals Vault",
     "category": "3. Sci-Fi Frontiers & Mech Zones",
     "file": "assets/recipes/styles/defaults/SP12-005.webp",
-    "jobId": "0fd78fd3-fd0c-43ae-a24e-7223f0063b5b",
+    "jobId": "a836f540-bd7a-48e2-ae9a-95171ec677f8",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-005.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:17:57.242Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:53:31.215Z"
   },
   {
     "presetId": "SP12-006",
@@ -76,12 +81,13 @@
     "packName": "Video Game Originals Vault",
     "category": "2. Arcane Temples & Mythic Realms",
     "file": "assets/recipes/styles/defaults/SP12-006.webp",
-    "jobId": "9372e63d-f5a7-4cc2-a618-ae732b27624c",
+    "jobId": "8608a86f-128b-42c8-b6c7-f46dfb2d836f",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-006.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:19:48.997Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:53:33.690Z"
   },
   {
     "presetId": "SP12-007",
@@ -90,12 +96,13 @@
     "packName": "Video Game Originals Vault",
     "category": "4. Sieges, Warfronts & Last Stands",
     "file": "assets/recipes/styles/defaults/SP12-007.webp",
-    "jobId": "cad1076d-68e5-4e60-871a-b8c8287b8b4b",
+    "jobId": "00849aab-4b35-4f7e-a6bc-d1f386c5d6df",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-007.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:21:24.738Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:53:17.448Z"
   },
   {
     "presetId": "SP12-008",
@@ -104,12 +111,13 @@
     "packName": "Video Game Originals Vault",
     "category": "5. Speed, Sport & Competitive Arenas",
     "file": "assets/recipes/styles/defaults/SP12-008.webp",
-    "jobId": "f415f718-23f8-4912-91a5-9c422896d112",
+    "jobId": "fda7726f-1372-4ee6-91ba-433a4e76d3a1",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-008.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:23:22.326Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:54:07.946Z"
   },
   {
     "presetId": "SP12-009",
@@ -118,12 +126,13 @@
     "packName": "Video Game Originals Vault",
     "category": "4. Sieges, Warfronts & Last Stands",
     "file": "assets/recipes/styles/defaults/SP12-009.webp",
-    "jobId": "88c05235-1335-4513-bd7a-0f4420d61f47",
+    "jobId": "22fde6ed-bcff-4e3d-a2e9-5ae1361f5e91",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-009.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:24:59.316Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:54:15.980Z"
   },
   {
     "presetId": "SP12-010",
@@ -132,12 +141,13 @@
     "packName": "Video Game Originals Vault",
     "category": "6. Wilderness Hunts & Harsh Frontiers",
     "file": "assets/recipes/styles/defaults/SP12-010.webp",
-    "jobId": "313522a5-78a1-4677-a76e-23ab28d107a7",
+    "jobId": "61587a36-79cf-4840-aacd-be04b8ce1540",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-010.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:28:19.908Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:54:41.970Z"
   },
   {
     "presetId": "SP12-011",
@@ -146,12 +156,13 @@
     "packName": "Video Game Originals Vault",
     "category": "3. Sci-Fi Frontiers & Mech Zones",
     "file": "assets/recipes/styles/defaults/SP12-011.webp",
-    "jobId": "de7eefa1-2441-4ef8-9cd0-959ef26e38a5",
+    "jobId": "801f55ed-3f50-49a2-a8b6-5f8b25b93e0a",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-011.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:30:06.196Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:54:41.724Z"
   },
   {
     "presetId": "SP12-012",
@@ -160,12 +171,13 @@
     "packName": "Video Game Originals Vault",
     "category": "8. Puzzle Chambers & Adventure Setpieces",
     "file": "assets/recipes/styles/defaults/SP12-012.webp",
-    "jobId": "0b24fcee-a8b3-4345-b4fc-180b8e9c8de3",
+    "jobId": "ac1baa25-5087-42d1-92d4-9991d9c79717",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-012.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:31:57.785Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:55:20.943Z"
   },
   {
     "presetId": "SP12-013",
@@ -174,12 +186,13 @@
     "packName": "Video Game Originals Vault",
     "category": "2. Arcane Temples & Mythic Realms",
     "file": "assets/recipes/styles/defaults/SP12-013.webp",
-    "jobId": "d718e073-f0dc-4224-b59d-a0c0d1d8fc3b",
+    "jobId": "1e0226ef-1d99-47dc-921e-31144fbc8e90",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-013.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:33:21.272Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:54:55.112Z"
   },
   {
     "presetId": "SP12-014",
@@ -188,12 +201,13 @@
     "packName": "Video Game Originals Vault",
     "category": "1. Neon Urban & Night Ops",
     "file": "assets/recipes/styles/defaults/SP12-014.webp",
-    "jobId": "7fcc2e34-f376-4d29-8625-e8e2d38daa08",
+    "jobId": "437f54b3-ff70-45fc-8109-34c87138f358",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-014.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:35:15.150Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:55:28.565Z"
   },
   {
     "presetId": "SP12-015",
@@ -202,12 +216,13 @@
     "packName": "Video Game Originals Vault",
     "category": "2. Arcane Temples & Mythic Realms",
     "file": "assets/recipes/styles/defaults/SP12-015.webp",
-    "jobId": "7a7eccf7-1fff-4607-8887-946f1f2b1e9b",
+    "jobId": "4e604e9e-0e6d-40b8-982f-ac72fe9cbf72",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-015.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:37:22.169Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:55:34.300Z"
   },
   {
     "presetId": "SP12-016",
@@ -216,12 +231,13 @@
     "packName": "Video Game Originals Vault",
     "category": "7. Heists, Horror & Underworld Runs",
     "file": "assets/recipes/styles/defaults/SP12-016.webp",
-    "jobId": "ab3efa38-a4f7-4772-92fc-265ed1fb027f",
+    "jobId": "b85afe85-7d4b-44ed-9f62-c7444e90b89d",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-016.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:38:49.145Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:55:55.225Z"
   },
   {
     "presetId": "SP12-017",
@@ -230,12 +246,13 @@
     "packName": "Video Game Originals Vault",
     "category": "5. Speed, Sport & Competitive Arenas",
     "file": "assets/recipes/styles/defaults/SP12-017.webp",
-    "jobId": "e40fe032-8652-46a5-bf0b-caec1d8e1e26",
+    "jobId": "b2d8b427-0602-40be-892c-ef09d6239ba4",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-017.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:41:28.019Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:56:09.078Z"
   },
   {
     "presetId": "SP12-018",
@@ -244,12 +261,13 @@
     "packName": "Video Game Originals Vault",
     "category": "3. Sci-Fi Frontiers & Mech Zones",
     "file": "assets/recipes/styles/defaults/SP12-018.webp",
-    "jobId": "d6107079-8533-48d0-86d9-e33923232fc7",
+    "jobId": "ac06a110-d811-478a-af0c-4ea86031bbf7",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-018.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:45:46.892Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:56:17.713Z"
   },
   {
     "presetId": "SP12-019",
@@ -258,12 +276,13 @@
     "packName": "Video Game Originals Vault",
     "category": "7. Heists, Horror & Underworld Runs",
     "file": "assets/recipes/styles/defaults/SP12-019.webp",
-    "jobId": "076e7948-0d9b-4dd5-8264-8643a246d217",
+    "jobId": "f9824a34-1063-4a9a-9506-ac871662b605",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-019.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:43:59.097Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:56:12.865Z"
   },
   {
     "presetId": "SP12-020",
@@ -272,12 +291,13 @@
     "packName": "Video Game Originals Vault",
     "category": "2. Arcane Temples & Mythic Realms",
     "file": "assets/recipes/styles/defaults/SP12-020.webp",
-    "jobId": "769be31d-3a6e-4a36-9c70-270f0165adfa",
+    "jobId": "f711e789-6f9e-4564-b24e-272d72821b0c",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-020.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:48:22.148Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:56:54.357Z"
   },
   {
     "presetId": "SP12-021",
@@ -286,12 +306,13 @@
     "packName": "Video Game Originals Vault",
     "category": "5. Speed, Sport & Competitive Arenas",
     "file": "assets/recipes/styles/defaults/SP12-021.webp",
-    "jobId": "f47a3c3f-980e-4c40-80c5-9cf24e4f4cf7",
+    "jobId": "e8f445d2-2d3c-4988-b8c7-f5f298dd94f1",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-021.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T17:30:16.315Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:56:53.889Z"
   },
   {
     "presetId": "SP12-022",
@@ -300,12 +321,13 @@
     "packName": "Video Game Originals Vault",
     "category": "6. Wilderness Hunts & Harsh Frontiers",
     "file": "assets/recipes/styles/defaults/SP12-022.webp",
-    "jobId": "843de5ec-0a72-49ae-a30c-81b03acff3d7",
+    "jobId": "b04d862d-05ba-48cd-9592-27571fe0f4cc",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-022.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:49:58.490Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:57:00.843Z"
   },
   {
     "presetId": "SP12-023",
@@ -314,12 +336,13 @@
     "packName": "Video Game Originals Vault",
     "category": "3. Sci-Fi Frontiers & Mech Zones",
     "file": "assets/recipes/styles/defaults/SP12-023.webp",
-    "jobId": "3a1f9fc1-b479-4242-b69b-cfa37ec7f85f",
+    "jobId": "f8f7e4fd-f1d3-4a4d-a407-b28ba3dbea3c",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-023.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:57:10.793Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:57:20.212Z"
   },
   {
     "presetId": "SP12-024",
@@ -328,12 +351,13 @@
     "packName": "Video Game Originals Vault",
     "category": "7. Heists, Horror & Underworld Runs",
     "file": "assets/recipes/styles/defaults/SP12-024.webp",
-    "jobId": "58664437-38fe-4a42-bdbd-1e1041492a98",
+    "jobId": "62c35089-d786-466e-a5f2-35909001e053",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-024.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:54:05.392Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:57:50.150Z"
   },
   {
     "presetId": "SP12-025",
@@ -342,12 +366,13 @@
     "packName": "Video Game Originals Vault",
     "category": "1. Neon Urban & Night Ops",
     "file": "assets/recipes/styles/defaults/SP12-025.webp",
-    "jobId": "265a8241-7d4e-45e7-8d41-f3a2e4001564",
+    "jobId": "f0b3ca4e-d519-471b-b042-17585380bdc1",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-025.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:55:22.518Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:57:42.739Z"
   },
   {
     "presetId": "SP12-026",
@@ -356,12 +381,13 @@
     "packName": "Video Game Originals Vault",
     "category": "4. Sieges, Warfronts & Last Stands",
     "file": "assets/recipes/styles/defaults/SP12-026.webp",
-    "jobId": "620a5dc0-c4bf-4c72-8338-c4e04dfd50ff",
+    "jobId": "587cd680-4984-49b6-8faa-0336d0d13146",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-026.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:58:45.289Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:58:02.529Z"
   },
   {
     "presetId": "SP12-027",
@@ -370,12 +396,13 @@
     "packName": "Video Game Originals Vault",
     "category": "6. Wilderness Hunts & Harsh Frontiers",
     "file": "assets/recipes/styles/defaults/SP12-027.webp",
-    "jobId": "403c3386-7d01-4a62-9cf5-10543400a758",
+    "jobId": "6386f503-5222-4755-904b-330191379147",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-027.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:00:17.492Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:58:24.671Z"
   },
   {
     "presetId": "SP12-028",
@@ -384,12 +411,13 @@
     "packName": "Video Game Originals Vault",
     "category": "2. Arcane Temples & Mythic Realms",
     "file": "assets/recipes/styles/defaults/SP12-028.webp",
-    "jobId": "897fdf01-4754-4549-aa01-29f7512ff47b",
+    "jobId": "7e62bdbf-7772-477e-9a36-78b1c80e797b",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-028.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:01:51.755Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:58:50.393Z"
   },
   {
     "presetId": "SP12-029",
@@ -398,12 +426,13 @@
     "packName": "Video Game Originals Vault",
     "category": "6. Wilderness Hunts & Harsh Frontiers",
     "file": "assets/recipes/styles/defaults/SP12-029.webp",
-    "jobId": "09a52298-70b8-4e3b-89eb-23775df48e42",
+    "jobId": "43378418-c7d5-4b50-ada3-25749f583941",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-029.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:03:23.114Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:58:36.503Z"
   },
   {
     "presetId": "SP12-030",
@@ -412,12 +441,13 @@
     "packName": "Video Game Originals Vault",
     "category": "7. Heists, Horror & Underworld Runs",
     "file": "assets/recipes/styles/defaults/SP12-030.webp",
-    "jobId": "77957751-0cc3-400c-bb9c-ff71eae17038",
+    "jobId": "62db8c4d-bc07-4673-917a-93d2e109cd4e",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-030.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:04:50.413Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:59:24.604Z"
   },
   {
     "presetId": "SP12-031",
@@ -426,12 +456,13 @@
     "packName": "Video Game Originals Vault",
     "category": "5. Speed, Sport & Competitive Arenas",
     "file": "assets/recipes/styles/defaults/SP12-031.webp",
-    "jobId": "00b4ce84-bbe4-4c04-8aba-e721bbbd53a7",
+    "jobId": "8ba791d0-83a3-4c76-89da-9155ee130083",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-031.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:06:15.161Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:59:31.794Z"
   },
   {
     "presetId": "SP12-032",
@@ -440,12 +471,13 @@
     "packName": "Video Game Originals Vault",
     "category": "1. Neon Urban & Night Ops",
     "file": "assets/recipes/styles/defaults/SP12-032.webp",
-    "jobId": "84059791-3975-4e91-9882-7d44bb7eb529",
+    "jobId": "1ff205ce-6dbf-4861-b6f0-5f7f3ebade6b",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-032.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:08:16.544Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T14:59:31.679Z"
   },
   {
     "presetId": "SP12-033",
@@ -454,12 +486,13 @@
     "packName": "Video Game Originals Vault",
     "category": "3. Sci-Fi Frontiers & Mech Zones",
     "file": "assets/recipes/styles/defaults/SP12-033.webp",
-    "jobId": "24d0fd55-2bf0-47ba-a4b2-8356910b83c8",
+    "jobId": "33f28b0c-078e-4426-9d16-15fe2d6d0527",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-033.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:09:44.601Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:00:00.959Z"
   },
   {
     "presetId": "SP12-034",
@@ -468,12 +501,13 @@
     "packName": "Video Game Originals Vault",
     "category": "6. Wilderness Hunts & Harsh Frontiers",
     "file": "assets/recipes/styles/defaults/SP12-034.webp",
-    "jobId": "9cf44da9-00da-4bc6-97ee-0224633a5fae",
+    "jobId": "c7420589-4dea-42e7-9312-089ca630058a",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-034.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:11:05.537Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:00:17.849Z"
   },
   {
     "presetId": "SP12-035",
@@ -482,12 +516,13 @@
     "packName": "Video Game Originals Vault",
     "category": "4. Sieges, Warfronts & Last Stands",
     "file": "assets/recipes/styles/defaults/SP12-035.webp",
-    "jobId": "28890765-d541-4fd3-9fa1-71ad5e5a234e",
+    "jobId": "a7b98220-a713-4983-a1c0-88d27396cfbf",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-035.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:12:40.900Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:00:43.881Z"
   },
   {
     "presetId": "SP12-036",
@@ -496,12 +531,13 @@
     "packName": "Video Game Originals Vault",
     "category": "8. Puzzle Chambers & Adventure Setpieces",
     "file": "assets/recipes/styles/defaults/SP12-036.webp",
-    "jobId": "2b64fa33-ae7d-4901-abb7-2327736cfc05",
+    "jobId": "e36e120c-90ec-4683-9f7a-0178c308fc72",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-036.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:14:37.714Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:00:14.994Z"
   },
   {
     "presetId": "SP12-037",
@@ -510,12 +546,13 @@
     "packName": "Video Game Originals Vault",
     "category": "8. Puzzle Chambers & Adventure Setpieces",
     "file": "assets/recipes/styles/defaults/SP12-037.webp",
-    "jobId": "8f9da0f8-765e-414c-bef6-12240cb89db2",
+    "jobId": "5f54001a-9ae5-4c16-a3ae-6139ffbab8fe",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-037.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:16:16.862Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:01:34.916Z"
   },
   {
     "presetId": "SP12-038",
@@ -524,12 +561,13 @@
     "packName": "Video Game Originals Vault",
     "category": "4. Sieges, Warfronts & Last Stands",
     "file": "assets/recipes/styles/defaults/SP12-038.webp",
-    "jobId": "32dff146-2e5f-44f4-865e-f2709872ed7b",
+    "jobId": "b7e924f4-74a6-4e98-b12b-2cebd8aa92f0",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-038.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:17:54.584Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:01:23.223Z"
   },
   {
     "presetId": "SP12-039",
@@ -538,12 +576,13 @@
     "packName": "Video Game Originals Vault",
     "category": "5. Speed, Sport & Competitive Arenas",
     "file": "assets/recipes/styles/defaults/SP12-039.webp",
-    "jobId": "6ddb31d2-555e-42ef-b5aa-e86a33f75ca9",
+    "jobId": "5845994e-dded-4a88-8f17-d3c55fe97c0c",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-039.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:19:39.269Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:01:31.900Z"
   },
   {
     "presetId": "SP12-040",
@@ -552,12 +591,13 @@
     "packName": "Video Game Originals Vault",
     "category": "6. Wilderness Hunts & Harsh Frontiers",
     "file": "assets/recipes/styles/defaults/SP12-040.webp",
-    "jobId": "6bf59f75-73ba-4270-81a8-8ab591d9a04b",
+    "jobId": "1d8c1f75-55f7-466a-b2e1-ae3f2a9d6ec0",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-040.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T17:30:13.244Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:01:38.951Z"
   },
   {
     "presetId": "SP12-041",
@@ -566,12 +606,13 @@
     "packName": "Video Game Originals Vault",
     "category": "6. Wilderness Hunts & Harsh Frontiers",
     "file": "assets/recipes/styles/defaults/SP12-041.webp",
-    "jobId": "81b82251-91c9-406b-8e40-44257b884cdd",
+    "jobId": "5b452053-a3dd-4e85-aa78-15c9e5e83ec1",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-041.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:23:34.163Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:02:09.154Z"
   },
   {
     "presetId": "SP12-042",
@@ -580,12 +621,13 @@
     "packName": "Video Game Originals Vault",
     "category": "3. Sci-Fi Frontiers & Mech Zones",
     "file": "assets/recipes/styles/defaults/SP12-042.webp",
-    "jobId": "1cc78ad6-4fe2-4d90-ad12-cfb3e62de3b4",
+    "jobId": "2acec907-02e6-440b-9eba-678755259df5",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-042.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:26:50.577Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:02:21.480Z"
   },
   {
     "presetId": "SP12-043",
@@ -594,12 +636,13 @@
     "packName": "Video Game Originals Vault",
     "category": "1. Neon Urban & Night Ops",
     "file": "assets/recipes/styles/defaults/SP12-043.webp",
-    "jobId": "6b29761b-e044-4786-bd86-a4df768165b3",
+    "jobId": "8353f05b-f462-491d-ae34-0215d2168abf",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-043.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:28:12.870Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:02:39.884Z"
   },
   {
     "presetId": "SP12-044",
@@ -608,12 +651,13 @@
     "packName": "Video Game Originals Vault",
     "category": "2. Arcane Temples & Mythic Realms",
     "file": "assets/recipes/styles/defaults/SP12-044.webp",
-    "jobId": "4f37ee4a-ec81-459a-a237-55075f0d08e0",
+    "jobId": "b30887d9-bac7-4def-a3fe-9a74e3d1e661",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-044.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:29:26.465Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:02:28.136Z"
   },
   {
     "presetId": "SP12-045",
@@ -622,12 +666,13 @@
     "packName": "Video Game Originals Vault",
     "category": "3. Sci-Fi Frontiers & Mech Zones",
     "file": "assets/recipes/styles/defaults/SP12-045.webp",
-    "jobId": "9a5351d1-9bee-473f-b0dc-6e894faa4f8e",
+    "jobId": "05e49382-7827-477f-8d4b-0bf394b811ba",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-045.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:31:14.047Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:03:05.204Z"
   },
   {
     "presetId": "SP12-046",
@@ -636,12 +681,13 @@
     "packName": "Video Game Originals Vault",
     "category": "3. Sci-Fi Frontiers & Mech Zones",
     "file": "assets/recipes/styles/defaults/SP12-046.webp",
-    "jobId": "d613237a-e5dd-443c-af54-0090cfab1f2d",
+    "jobId": "3c9c47f4-b2a0-48ca-88b0-fccafa12d1b2",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-046.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:32:29.854Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:03:02.197Z"
   },
   {
     "presetId": "SP12-047",
@@ -650,12 +696,13 @@
     "packName": "Video Game Originals Vault",
     "category": "5. Speed, Sport & Competitive Arenas",
     "file": "assets/recipes/styles/defaults/SP12-047.webp",
-    "jobId": "cbc533c2-52b0-47b8-af93-5297f374f17a",
+    "jobId": "4d2220b3-ea5e-4846-9d8b-c891cbc16c0c",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-047.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:34:11.352Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:03:32.422Z"
   },
   {
     "presetId": "SP12-048",
@@ -664,12 +711,13 @@
     "packName": "Video Game Originals Vault",
     "category": "1. Neon Urban & Night Ops",
     "file": "assets/recipes/styles/defaults/SP12-048.webp",
-    "jobId": "83bebfce-f876-4285-8f55-8beade144569",
+    "jobId": "5597f11f-6e7c-4539-b9a3-2578215a8e4f",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-048.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:35:58.248Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:03:51.337Z"
   },
   {
     "presetId": "SP12-049",
@@ -678,12 +726,13 @@
     "packName": "Video Game Originals Vault",
     "category": "7. Heists, Horror & Underworld Runs",
     "file": "assets/recipes/styles/defaults/SP12-049.webp",
-    "jobId": "5d6fb5eb-3a8d-4c2e-b3f6-8a663ac097b3",
+    "jobId": "0b6e6c37-695d-4de9-a85c-43b66bc20839",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-049.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:37:22.905Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:03:53.786Z"
   },
   {
     "presetId": "SP12-050",
@@ -692,12 +741,13 @@
     "packName": "Video Game Originals Vault",
     "category": "7. Heists, Horror & Underworld Runs",
     "file": "assets/recipes/styles/defaults/SP12-050.webp",
-    "jobId": "1344517f-3cdb-4fae-b0a9-e51239a2e5b6",
+    "jobId": "19a1d21f-dad7-4d56-9f47-9f89ef6f8655",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-050.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:38:52.404Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:03:53.988Z"
   },
   {
     "presetId": "SP12-051",
@@ -706,12 +756,13 @@
     "packName": "Video Game Originals Vault",
     "category": "8. Puzzle Chambers & Adventure Setpieces",
     "file": "assets/recipes/styles/defaults/SP12-051.webp",
-    "jobId": "e591a9f8-f24f-4dcb-bced-804367ba24e6",
+    "jobId": "da5a58f8-efdb-4cf5-b232-324455db2a2f",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-051.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:40:29.395Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:04:48.581Z"
   },
   {
     "presetId": "SP12-052",
@@ -720,12 +771,13 @@
     "packName": "Video Game Originals Vault",
     "category": "4. Sieges, Warfronts & Last Stands",
     "file": "assets/recipes/styles/defaults/SP12-052.webp",
-    "jobId": "fd90c1b5-44a4-495c-a9f6-f9ab08155844",
+    "jobId": "9018133e-c04b-4d9e-89c1-93466cef1b0c",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-052.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:43:31.344Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:04:55.116Z"
   },
   {
     "presetId": "SP12-053",
@@ -734,12 +786,13 @@
     "packName": "Video Game Originals Vault",
     "category": "2. Arcane Temples & Mythic Realms",
     "file": "assets/recipes/styles/defaults/SP12-053.webp",
-    "jobId": "33823b92-1675-4f33-a756-33ebf4991c04",
+    "jobId": "1dba5039-8608-46bc-8753-79235572579e",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-053.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:45:01.211Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:05:00.556Z"
   },
   {
     "presetId": "SP12-054",
@@ -748,12 +801,13 @@
     "packName": "Video Game Originals Vault",
     "category": "7. Heists, Horror & Underworld Runs",
     "file": "assets/recipes/styles/defaults/SP12-054.webp",
-    "jobId": "1239238d-cf3b-417c-b34d-df5736ce98a1",
+    "jobId": "fae67ea2-f189-456c-afc5-ea48bf000db2",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-054.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:46:22.070Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:04:31.119Z"
   },
   {
     "presetId": "SP12-055",
@@ -762,12 +816,13 @@
     "packName": "Video Game Originals Vault",
     "category": "2. Arcane Temples & Mythic Realms",
     "file": "assets/recipes/styles/defaults/SP12-055.webp",
-    "jobId": "87a95e74-c257-4762-95d2-30ae9455477d",
+    "jobId": "69d26b71-47eb-461e-9363-065e70ac00d1",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-055.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:47:53.734Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:05:26.234Z"
   },
   {
     "presetId": "SP12-056",
@@ -776,12 +831,13 @@
     "packName": "Video Game Originals Vault",
     "category": "1. Neon Urban & Night Ops",
     "file": "assets/recipes/styles/defaults/SP12-056.webp",
-    "jobId": "86083a87-3b7b-4ceb-8001-a8931f6177ed",
+    "jobId": "51c8506a-f919-41b6-92bd-12dcba802c94",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-056.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:49:20.543Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:05:36.618Z"
   },
   {
     "presetId": "SP12-057",
@@ -790,12 +846,13 @@
     "packName": "Video Game Originals Vault",
     "category": "7. Heists, Horror & Underworld Runs",
     "file": "assets/recipes/styles/defaults/SP12-057.webp",
-    "jobId": "dcb572b1-e1b4-4947-9ded-05bccd5b545b",
+    "jobId": "902bd790-9563-447d-97a8-b0daad184e71",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-057.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:50:47.535Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:05:59.160Z"
   },
   {
     "presetId": "SP12-058",
@@ -804,12 +861,13 @@
     "packName": "Video Game Originals Vault",
     "category": "8. Puzzle Chambers & Adventure Setpieces",
     "file": "assets/recipes/styles/defaults/SP12-058.webp",
-    "jobId": "e7e067d4-2818-4487-8f32-e0b42e795fe2",
+    "jobId": "072bec1c-6087-42fc-abed-89e87a9515b1",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-058.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:52:21.507Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:06:08.382Z"
   },
   {
     "presetId": "SP12-059",
@@ -818,12 +876,13 @@
     "packName": "Video Game Originals Vault",
     "category": "5. Speed, Sport & Competitive Arenas",
     "file": "assets/recipes/styles/defaults/SP12-059.webp",
-    "jobId": "86aaec29-a03e-4b28-8d79-1c33f6afd825",
+    "jobId": "c4d2bb00-31c6-4f70-bbb8-51a77577d705",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-059.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:54:09.647Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:06:44.392Z"
   },
   {
     "presetId": "SP12-060",
@@ -832,12 +891,13 @@
     "packName": "Video Game Originals Vault",
     "category": "4. Sieges, Warfronts & Last Stands",
     "file": "assets/recipes/styles/defaults/SP12-060.webp",
-    "jobId": "c2e1a991-1dc5-4537-a2fe-12044b34448c",
+    "jobId": "83fc9db0-7eca-4a79-8276-23e0d0533609",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-060.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:55:24.724Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:06:19.238Z"
   },
   {
     "presetId": "SP12-061",
@@ -846,12 +906,13 @@
     "packName": "Video Game Originals Vault",
     "category": "2. Arcane Temples & Mythic Realms",
     "file": "assets/recipes/styles/defaults/SP12-061.webp",
-    "jobId": "227668c2-205a-4464-b836-9aa4c4411808",
+    "jobId": "1b0a6c67-c4d9-4b79-846c-4f8237799da1",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-061.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:56:45.309Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:06:52.569Z"
   },
   {
     "presetId": "SP12-062",
@@ -860,12 +921,13 @@
     "packName": "Video Game Originals Vault",
     "category": "1. Neon Urban & Night Ops",
     "file": "assets/recipes/styles/defaults/SP12-062.webp",
-    "jobId": "cabe39c2-c37e-412d-b302-05e96079bd22",
+    "jobId": "782674f6-3bc2-43d1-ab10-f5c6df32d6f3",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-062.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:58:02.331Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:07:10.333Z"
   },
   {
     "presetId": "SP12-063",
@@ -874,12 +936,13 @@
     "packName": "Video Game Originals Vault",
     "category": "5. Speed, Sport & Competitive Arenas",
     "file": "assets/recipes/styles/defaults/SP12-063.webp",
-    "jobId": "7b253471-069b-4513-b696-a6b22a8e7784",
+    "jobId": "cf3c7041-28a7-4768-9765-fd2d34278c41",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-063.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:59:16.911Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:07:04.842Z"
   },
   {
     "presetId": "SP12-064",
@@ -888,12 +951,13 @@
     "packName": "Video Game Originals Vault",
     "category": "4. Sieges, Warfronts & Last Stands",
     "file": "assets/recipes/styles/defaults/SP12-064.webp",
-    "jobId": "e7a32b2d-5053-411b-867f-9b7d14622ac5",
+    "jobId": "109ed1f0-3e60-4283-bee5-69fe6346e03f",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-064.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T17:00:44.979Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:07:40.977Z"
   },
   {
     "presetId": "SP12-065",
@@ -902,12 +966,13 @@
     "packName": "Video Game Originals Vault",
     "category": "5. Speed, Sport & Competitive Arenas",
     "file": "assets/recipes/styles/defaults/SP12-065.webp",
-    "jobId": "d842bf7d-4880-4dc2-9f7a-6ba3902dd5e5",
+    "jobId": "0db193e1-785b-4637-b5c0-8155739df0c5",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-065.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T17:02:01.505Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:07:33.573Z"
   },
   {
     "presetId": "SP12-066",
@@ -916,12 +981,13 @@
     "packName": "Video Game Originals Vault",
     "category": "7. Heists, Horror & Underworld Runs",
     "file": "assets/recipes/styles/defaults/SP12-066.webp",
-    "jobId": "8d2a8b38-2aa6-4191-9706-c20e21854e42",
+    "jobId": "5da1924c-6372-4d0d-a291-1daf7de923d1",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-066.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T17:03:25.786Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:07:41.495Z"
   },
   {
     "presetId": "SP12-067",
@@ -930,12 +996,13 @@
     "packName": "Video Game Originals Vault",
     "category": "6. Wilderness Hunts & Harsh Frontiers",
     "file": "assets/recipes/styles/defaults/SP12-067.webp",
-    "jobId": "d9beb37c-70d6-403c-a0db-fb4b9b83279e",
+    "jobId": "ac685cbd-e467-44a1-bc16-64c91a2d2f24",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-067.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T17:04:53.745Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:07:57.130Z"
   },
   {
     "presetId": "SP12-068",
@@ -944,12 +1011,13 @@
     "packName": "Video Game Originals Vault",
     "category": "3. Sci-Fi Frontiers & Mech Zones",
     "file": "assets/recipes/styles/defaults/SP12-068.webp",
-    "jobId": "ba0c763c-2142-4088-b39d-94ab893f8b61",
+    "jobId": "22926e91-28ad-4eed-888f-25466a27f79a",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-068.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T17:06:24.067Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:08:24.590Z"
   },
   {
     "presetId": "SP12-069",
@@ -958,12 +1026,13 @@
     "packName": "Video Game Originals Vault",
     "category": "7. Heists, Horror & Underworld Runs",
     "file": "assets/recipes/styles/defaults/SP12-069.webp",
-    "jobId": "5815292b-e1a0-4abe-bafb-3c0f06596758",
+    "jobId": "03abf78d-f1e9-4a43-9edf-2e73b3395d39",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-069.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T17:39:30.472Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:08:51.606Z"
   },
   {
     "presetId": "SP12-070",
@@ -972,12 +1041,13 @@
     "packName": "Video Game Originals Vault",
     "category": "2. Arcane Temples & Mythic Realms",
     "file": "assets/recipes/styles/defaults/SP12-070.webp",
-    "jobId": "25e13347-ceaf-429b-8b67-8c58e24ac95c",
+    "jobId": "43bdc57e-a03f-4afe-9228-faf8dee4f40e",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-070.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T17:08:56.569Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:08:50.549Z"
   },
   {
     "presetId": "SP12-071",
@@ -986,12 +1056,13 @@
     "packName": "Video Game Originals Vault",
     "category": "1. Neon Urban & Night Ops",
     "file": "assets/recipes/styles/defaults/SP12-071.webp",
-    "jobId": "09484a2d-256f-40f4-9e14-027cf84ac29e",
+    "jobId": "7af453b8-e34b-40da-b1c4-972f077eacb5",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-071.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T17:31:52.305Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:08:45.983Z"
   },
   {
     "presetId": "SP12-072",
@@ -1000,12 +1071,13 @@
     "packName": "Video Game Originals Vault",
     "category": "8. Puzzle Chambers & Adventure Setpieces",
     "file": "assets/recipes/styles/defaults/SP12-072.webp",
-    "jobId": "25ed2b26-4944-42ef-9d5b-7de64bc8116f",
+    "jobId": "5e992dfc-979a-47e4-bf8e-d9d67169d0f0",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-072.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T17:12:54.944Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:09:10.494Z"
   },
   {
     "presetId": "SP12-073",
@@ -1014,12 +1086,13 @@
     "packName": "Video Game Originals Vault",
     "category": "6. Wilderness Hunts & Harsh Frontiers",
     "file": "assets/recipes/styles/defaults/SP12-073.webp",
-    "jobId": "553a0b84-1145-451f-99a0-12dd0536ff69",
+    "jobId": "512a79f7-f23e-4d38-8b86-0534a66a00db",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-073.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T17:15:35.380Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:09:52.397Z"
   },
   {
     "presetId": "SP12-074",
@@ -1028,12 +1101,13 @@
     "packName": "Video Game Originals Vault",
     "category": "8. Puzzle Chambers & Adventure Setpieces",
     "file": "assets/recipes/styles/defaults/SP12-074.webp",
-    "jobId": "c009d6bf-1391-4472-a6d7-6709ec3f3e21",
+    "jobId": "22211b66-5883-4687-b8b7-c6664b3018f8",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-074.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T17:16:50.836Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:09:59.538Z"
   },
   {
     "presetId": "SP12-075",
@@ -1042,12 +1116,13 @@
     "packName": "Video Game Originals Vault",
     "category": "5. Speed, Sport & Competitive Arenas",
     "file": "assets/recipes/styles/defaults/SP12-075.webp",
-    "jobId": "6a3f6d12-5209-4c4f-9735-edb24dc97859",
+    "jobId": "0ac962cb-2661-4bd0-8099-3a464f887544",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-075.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T17:18:18.697Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:09:33.335Z"
   },
   {
     "presetId": "SP12-076",
@@ -1056,12 +1131,13 @@
     "packName": "Video Game Originals Vault",
     "category": "4. Sieges, Warfronts & Last Stands",
     "file": "assets/recipes/styles/defaults/SP12-076.webp",
-    "jobId": "a38cfc32-83ee-43e5-8426-78e1e91cf03b",
+    "jobId": "d0f47992-a001-4df4-befa-e6628bc1d52f",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-076.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T17:19:46.006Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:10:30.758Z"
   },
   {
     "presetId": "SP12-077",
@@ -1070,12 +1146,13 @@
     "packName": "Video Game Originals Vault",
     "category": "8. Puzzle Chambers & Adventure Setpieces",
     "file": "assets/recipes/styles/defaults/SP12-077.webp",
-    "jobId": "21b416b7-fa03-4c91-94c4-b11d47883ff8",
+    "jobId": "ca81e521-1805-4770-9fa1-a287e1c0e6b4",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-077.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T17:21:05.341Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:10:17.226Z"
   },
   {
     "presetId": "SP12-078",
@@ -1084,12 +1161,13 @@
     "packName": "Video Game Originals Vault",
     "category": "1. Neon Urban & Night Ops",
     "file": "assets/recipes/styles/defaults/SP12-078.webp",
-    "jobId": "c7262ff9-4d70-4f27-94af-fb0f672a0afd",
+    "jobId": "a018603b-28b6-4b5c-97aa-4f924d624ebe",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-078.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T17:22:33.875Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:10:38.592Z"
   },
   {
     "presetId": "SP12-079",
@@ -1098,12 +1176,13 @@
     "packName": "Video Game Originals Vault",
     "category": "4. Sieges, Warfronts & Last Stands",
     "file": "assets/recipes/styles/defaults/SP12-079.webp",
-    "jobId": "aa8f8b5f-4785-4cc9-89d6-5ddaf83e76f2",
+    "jobId": "ff6b44c8-7617-43bf-92fc-d869bb0fe3df",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-079.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T17:23:53.060Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:11:04.536Z"
   },
   {
     "presetId": "SP12-080",
@@ -1112,11 +1191,12 @@
     "packName": "Video Game Originals Vault",
     "category": "8. Puzzle Chambers & Adventure Setpieces",
     "file": "assets/recipes/styles/defaults/SP12-080.webp",
-    "jobId": "485ef2b6-bfc5-48cd-a443-4c675b4a8195",
+    "jobId": "72a4907e-cde0-4a41-b900-2c8cb9c4a786",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-080.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T17:25:40.061Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:11:11.701Z"
   }
 ]

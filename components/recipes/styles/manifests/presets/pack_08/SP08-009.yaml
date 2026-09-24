@@ -13,71 +13,41 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: >-
-    Steampunk Engineering Attire operates as a portable fashion-costume router: combine Victorian
-    retrofuturist attire, clockwork expedition romance, pressure-built regalia with speculative
-    costume logic with armor, suit engineering, magical garment behavior, alien proportion, and
-    character-readability design, so the preset supplies styling behavior rather than a fixed outfit
-    card, required wearer, or literal garment sample.
+    Victorian-inspired mechanical tailoring: layered waistcoat or corset structure, precise
+    fastenings, chain accents and restrained gearwork, with craft carried by the garments.
   subject_treatment: >-
-    Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak,
-    illuminate, conceal, mutate, modularize, ritualize, or engineer through Gearwork articulation,
-    goggle-casing geometry, waistcoat-or-corset structure, chain drape, vertical hat logic,
-    bustle-back volume; identity stays readable as silhouette, fit, layering, body-volume logic,
-    edge behavior, and styling hierarchy shift into this preset.
+    Shape the existing clothes with a fitted waist, structured lapels, articulated seams and
+    pocket-watch scale details. Hats and goggles are optional accessories, not assumptions
+    about the wearer or occupation.
   color_and_tone: >-
-    Map color through speculative material color, neon accents, abyssal values, royal metals,
-    survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents
-    intentional, material color believable, and palette behavior attached to the subject instead of
-    pasted wardrobe decoration.
+    Warm brass, leather and tweed relationships support the period craft; adapt hues and
+    metal finish to explicit color requests rather than locking the palette.
   lighting_and_shadow: >-
-    Use Sepia tone, steam-softened gaslight warmth, amber glow, brass reflection plus rim light,
-    emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi display
-    light as the styling light contract, revealing cut, drape, surface response, trim, transparency,
-    or armor structure without erasing prompt readability.
+    Use warm, crisp highlights on engraved metal and glass while preserving the prompt's
+    actual light and location. Do not introduce gas lamps, smoke or machinery as scene
+    elements.
   texture_and_material: >-
-    Render Full-grain leather, engraved brass, Harris tweed, clockwork gears, riveted copper,
-    pocket-watch crystal plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface,
-    hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine,
-    opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole
-    prompt.
+    Pair full-grain leather, woven tweed, polished or aged brass, fine chain and small glass
+    accents. Show controlled wear and careful joinery, not a pile of loose gears.
   camera_and_composition: >-
-    Compose with character-design readability, suit silhouette, power-shape hierarchy, modular gear
-    rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits,
-    objects, creatures, environments, action, and abstract prompts to inherit styling without one
-    required pose.
+    Preserve the requested crop, angle and pose. Keep the waist shaping, layered front and
+    hanging fasteners readable wherever they fall in frame.
   atmosphere_and_mood: >-
-    Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth,
-    spectacle, or mythic futurism; the tone should feel specific to Steampunk Engineering Attire
-    while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
-    supplied.
+    Convey inventive, slightly theatrical craft through tailored lines and precise metal
+    details; do not assign a tinkerer, explorer or aristocratic role.
   rendering_and_quality: >-
-    Finish with believable costume engineering, clean edge logic, strong silhouette, readable
-    material physics, and no generic cosplay blur; prioritize clean style recognition, believable
-    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
-    accidental UI.
+    Render crisp engraved edges, tactile woven cloth and small metal reflections with
+    controlled detail. Keep tailoring coherent and avoid cluttering the silhouette.
   key_features: >-
-    Victorian retrofuturist attire, clockwork expedition romance, pressure-built regalia; Gearwork
-    articulation, goggle-casing geometry, waistcoat-or-corset structure, chain drape, vertical hat
-    logic, bustle-back volume; Full-grain leather, engraved brass, Harris tweed, clockwork gears,
-    riveted copper, pocket-watch crystal; Sepia tone, steam-softened gaslight warmth, amber glow,
-    brass reflection; character-design readability, suit silhouette, power-shape hierarchy, modular
-    gear rhythm, and transformation focus
+    Victorian panel layering; gear-like fastener accents; brass against leather and tweed;
+    vertical tailored lines.
   creative_brief: >-
-    Use Steampunk Engineering Attire after prompt X as a transferable fashion/costume layer: prompt
-    X supplies subject, motion, setting, tone, and intensity, while the preset supplies Victorian
-    retrofuturist attire, clockwork expedition romance, pressure-built regalia, Gearwork
-    articulation, goggle-casing geometry, waistcoat-or-corset structure, chain drape, vertical hat
-    logic, bustle-back volume, Full-grain leather, engraved brass, Harris tweed, clockwork gears,
-    riveted copper, pocket-watch crystal, Sepia tone, steam-softened gaslight warmth, amber glow,
-    brass reflection, character-design readability, suit silhouette, power-shape hierarchy, modular
-    gear rhythm, and transformation focus plus paneling, harnesses, armor modules, robe systems,
-    implant seams, luminous channels, survival layers, and invented fastenings, palette behavior,
-    light response, material treatment, silhouette grammar, and finish discipline without requiring
-    one body type, fixed outfit, venue, prop bundle, or card composition.
+    Reinterpret the requested wardrobe as Victorian mechanical tailoring with structured
+    waist layers, fine brass fasteners, chain accents and woven cloth. Preserve wearer,
+    role, pose, scene and framing; do not add a workshop, machine, hat or goggles unless
+    requested.
 avoidRules:
-  - modern
   - plastic
-  - digital
   - generic cosplay
   - plastic toy armor
   - muddy fantasy outfit
@@ -92,9 +62,9 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-009.webp
 attributes:
   negativePrompt: >-
-    modern, plastic, digital, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed
-    outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise,
-    watermark, readable text
+    plastic, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required
+    body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
+    readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

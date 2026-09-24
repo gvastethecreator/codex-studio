@@ -1,0 +1,112 @@
+schemaVersion: 1
+id: SP23-028
+packId: pack_23
+name: Dungeon Gouache Raster
+category: 6. Classic RPG Visual Studies
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - classic-rpg-visual-studies
+  - painterly-raster-translation
+  - quantized-soft-contours
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Painterly color is translated into short raster ramps, softly drawn but quantized contours and
+    a few defined highlights. Use this color and edge language independently of any game scene.
+  subject_treatment: >-
+    Preserve the requested subject, identity, count, pose, action and proportions. Model its existing
+    shapes with painterly color transitions constrained to crisp raster groupings; do not introduce
+    a corridor, monster, player hands or another game-specific subject.
+  color_and_tone: >-
+    Preserve the requested palette and tonal relationships. Maintain varied color within compact
+    ramps instead of assigning fixed dungeon colors, a prescribed darkness or an unrelated game
+    palette.
+  lighting_and_shadow: >-
+    Follow the requested source, direction and contrast of light. Keep highlights shaped and limited
+    to existing forms, and build their transitions with quantized steps rather than photographic
+    blur or smooth gradient wash.
+  texture_and_material: >-
+    Preserve the actual material cues already requested. Let painted variation enrich existing
+    surfaces while keeping raster edges controlled; do not add distressed stone, grime or material
+    effects simply to signal a fantasy setting.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, orientation and spatial arrangement. Do not impose a
+    first-person corridor, gameplay framing, interface or sequel-specific camera convention.
+  atmosphere_and_mood: >-
+    Keep the user's setting and mood. The rendering treatment does not add a dungeon, monster,
+    player viewpoint or historical-medieval setting.
+  rendering_and_quality: >-
+    Keep contour softness subordinate to clear raster structure. Retain color variety, concise ramps
+    and intentional highlights without photographic smoothing or noisy pixels.
+avoidRules:
+  - unrequested corridor, monster, player hands or dungeon scene
+  - unrequested sequel-specific visual treatment
+  - photographic blur or smooth gradients that erase quantized raster contours
+  - fixed game palette, first-person camera or interface
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-028.webp
+attributes:
+  negativePrompt: >-
+    unrequested corridor, monster, player hands or dungeon scene, unrequested sequel-specific visual
+    treatment, photographic blur or smooth gradients that erase quantized raster contours, fixed
+    game palette, first-person camera or interface
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: painterly-quantized-raster-illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: painterly-color-short-ramps-soft-quantized-contours-defined-highlights
+    avoidRules:
+      - text: unrequested corridor, monster, player hands or dungeon scene
+        field: global
+      - text: unrequested sequel-specific visual treatment
+        field: global
+      - text: photographic blur or smooth gradients that erase quantized raster contours
+        field: rendering_and_quality
+      - text: fixed game palette, first-person camera or interface
+        field: global
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: CR-03
+    sourceTitle: Dungeon Gouache Raster
+    historicalScope: 'Relectura digital · primer Lands of Lore'
+    referenceIds:
+      - S27
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: classic-rpg-visual-studies
+  categoryName: 6. Classic RPG Visual Studies
+  tags:
+    - curation-v2
+    - classic-rpg-visual-studies
+    - painterly-raster-translation
+    - quantized-soft-contours
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

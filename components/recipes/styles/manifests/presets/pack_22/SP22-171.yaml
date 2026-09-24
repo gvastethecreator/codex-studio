@@ -1,0 +1,96 @@
+schemaVersion: 1
+id: SP22-171
+packId: pack_22
+name: Fine-Line Decorative Pop
+category: 9. Comic & Cartoon Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - comic-and-cartoon-illustration
+  - fine-line-decorative-pop
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Light fine-line detail adds a controlled decorative rhythm around clearly dominant shapes, with a
+    simple outer contour and clean areas of separation.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Keep small marks subordinate to the
+    main forms and do not attach new motifs or faces to unrelated objects.
+  color_and_tone: >-
+    Preserve the specified palette and use bright color areas with intentional open spaces; do not require
+    sweets, candy hues or a fixed pastel scheme.
+  lighting_and_shadow: >-
+    Follow the requested light and retain clear value separation. Decorative marks should not obscure
+    shadows or introduce additional light effects.
+  texture_and_material: >-
+    Keep fills clean and use thin, precise strokes for localized details; preserve represented materials
+    instead of applying a uniform ornamental texture.
+  camera_and_composition: >-
+    Maintain the requested crop, viewpoint, framing and element placement. Fine detail should support the
+    main silhouette without filling empty regions or changing the layout.
+  atmosphere_and_mood: >-
+    Retain the requested tone and setting. A lively detail rhythm does not add hearts, sweets or another
+    narrative motif by default.
+  rendering_and_quality: >-
+    Establish large forms and a simple exterior contour first, then add only enough fine-line detail to
+    enrich the subject while preserving small-scale clarity.
+avoidRules:
+  - unrequested hearts, sweets or anthropomorphic faces
+  - ornament that obscures the main silhouette
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-171.webp
+attributes:
+  negativePrompt: unrequested hearts, sweets or anthropomorphic faces, ornament that obscures the main silhouette
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: drawing
+    avoidRules:
+      - text: unrequested hearts, sweets or anthropomorphic faces
+        field: subject_treatment
+      - text: ornament that obscures the main silhouette
+        field: rendering_and_quality
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S071
+    sourceTitle: Candy Detail Pop
+    referenceIds:
+      - S49
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: comic-and-cartoon-illustration
+  categoryName: 9. Comic & Cartoon Illustration
+  tags:
+    - trading-card-illustration
+    - comic-and-cartoon-illustration
+    - fine-line-decorative-pop
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

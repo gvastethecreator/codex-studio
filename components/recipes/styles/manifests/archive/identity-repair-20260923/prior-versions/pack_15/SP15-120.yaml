@@ -1,0 +1,89 @@
+schemaVersion: 1
+id: SP15-120
+packId: pack_15
+name: Lunarpunk
+category: 9. Space, Atomic & Ray Punks
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - space-atomic-and-ray-punks
+visualDna:
+  aesthetic: >-
+    Use pale, quiet planes, shallow circular arcs, and slow wave contours with generous intervals of
+    negative space.
+  subject_treatment: >-
+    Preserve the requested content; let existing edges pick up soft arcs and subtle resonant curves
+    without adding crops, dishes, or ritual robes.
+  color_and_tone: >-
+    Set moonlit cream and cool gray against restrained leaf green or soft gold; keep contrast gentle
+    while preserving silhouette clarity.
+  lighting_and_shadow: >-
+    Use broad cool bounce and thin earth-warm highlights, with soft shadow transitions rather than
+    high-gloss glare.
+  texture_and_material: Favor matte pale surfaces and fine fabric-like grain, with sparse translucent or metallic accents.
+  camera_and_composition: >-
+    Preserve the requested framing; use open spacing and a few broad arcs to create a quiet, spacious
+    rhythm.
+  atmosphere_and_mood: Convey calm, ecological optimism through soft repetition, low contrast, and measured breathing room.
+  rendering_and_quality: Keep contours soft but distinct, highlights restrained, and delicate lines visible at small scale.
+avoidRules:
+  - a required greenhouse, dish, or lunar landscape
+  - dense star fields that compete with the negative space
+  - glossy reflections that harden the quiet palette
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-120.webp
+attributes:
+  negativePrompt: >-
+    a required greenhouse, dish, or lunar landscape, dense star fields that compete with the negative
+    space, glossy reflections that harden the quiet palette
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: a required greenhouse, dish, or lunar landscape
+        field: rendering_and_quality
+      - text: dense star fields that compete with the negative space
+        field: rendering_and_quality
+      - text: glossy reflections that harden the quiet palette
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-071
+      - SP15-072
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: space-atomic-and-ray-punks
+  categoryName: 9. Space, Atomic & Ray Punks
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - space-atomic-and-ray-punks
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

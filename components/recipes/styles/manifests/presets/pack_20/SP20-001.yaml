@@ -40,10 +40,10 @@ avoidRules:
   - large ghost duplicates
   - uncontrolled color fringing
   - invented poster typography
-assets: {}
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP20-001.webp
 attributes:
   negativePrompt: large ghost duplicates, uncontrolled color fringing, invented poster typography
-  previewStatus: pending
   intentionalPolicy:
     schemaVersion: 1
     kind: full_style
@@ -69,7 +69,6 @@ attributes:
       - text: invented poster typography
         field: rendering_and_quality
   ui:
-    previewStatus: pending
     kind: full_style
     derivedFrom:
       - SP04-015
@@ -88,4 +87,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

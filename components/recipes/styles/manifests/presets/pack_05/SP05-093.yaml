@@ -13,74 +13,33 @@ tags:
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: >-
-    Mushoku Tensei – Wandering Mage Chronicle acts as a transferable anime-battle/worlds router:
-    Mushoku Tensei – Wandering Mage Chronicle, wandering mage chronicle style grammar with weathered
-    travel relic, mana contour lines, parchment grain, and open sky curiosity; combine it with
-    isekai and high-fantasy anime grammar with magic-system readability, quest-world texture,
-    luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage
-    words may guide style, but they must not require canon cast, title-scene replication,
-    screenshots, logos, or one fixed card concept.
+    Hand-painted cel work with dry contour accents, weathered pigment grain, and spacious
+    atmospheric washes.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Mushoku
-    Tensei – Wandering Mage Chronicle, wandering mage chronicle style grammar with weathered travel
-    relic, mana contour lines, parchment grain, and open sky curiosity as portable contour, motion
-    grammar, surface language, and emotional pressure without requiring canon elements or a default
-    action setup.
+    Preserve the requested forms and action; use lightly worn outlines and spare contour lines to
+    clarify shape.
   color_and_tone: >-
-    Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens,
-    parchment neutrals, magical violets, and controlled pastel or dark contrast; let Mushoku Tensei
-    – Wandering Mage Chronicle, wandering mage chronicle style grammar with weathered travel relic,
-    mana contour lines, parchment grain, and open sky curiosity choose accent intensity, value
-    contrast, emotional temperature, and power-system separation while staying attached to prompt X.
+    Earthy sepia, moss, and ink blue sit beneath open pale values; adapt them to explicit color
+    direction.
   lighting_and_shadow: >-
-    Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and
-    clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Mushoku Tensei – Wandering Mage Chronicle, wandering mage
-    chronicle style grammar with weathered travel relic, mana contour lines, parchment grain, and
-    open sky curiosity without replacing prompt X with a stock anime frame.
+    Diffused light opens the image through broad value shifts while respecting the depicted
+    lighting.
   texture_and_material: >-
-    Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel
-    glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Mushoku
-    Tensei – Wandering Mage Chronicle, wandering mage chronicle style grammar with weathered travel
-    relic, mana contour lines, parchment grain, and open sky curiosity controlled, denoised, and
-    coherent across bodies, objects, environments, abstractions, and action.
+    Dry pigment breaks, paperlike grain, and transparent wash edges texture the rendering, not the
+    depicted objects.
   camera_and_composition: >-
-    Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed
-    cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook
-    scale; convert Mushoku Tensei – Wandering Mage Chronicle, wandering mage chronicle style grammar
-    with weathered travel relic, mana contour lines, parchment grain, and open sky curiosity into
-    reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one
-    fixed style sample layout.
+    Keep the supplied composition; use airy depth and uncluttered value layers to give its forms
+    breathing room.
   atmosphere_and_mood: >-
-    Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional
-    craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic,
-    comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while
-    keeping the anime-battle lineage readable.
+    Curious, reflective, and quietly expansive, adjustable to the requested mood.
   rendering_and_quality: >-
-    Finish with clean fantasy-anime finish with stable anatomy and creature/object structure,
-    controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize
-    stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy
-    darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+    Soft painted planes and selective dry lines keep detail natural, tactile, and readable.
   key_features: >-
-    Mushoku Tensei – Wandering Mage Chronicle, wandering mage chronicle style grammar with weathered
-    travel relic, mana contour lines, parchment grain, and open sky curiosity; clear fantasy
-    silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and
-    portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture,
-    stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path
-    diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues,
-    symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish
-    with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic
-    text, and no generic isekai gloss
+    Weathered contour, fine grain, earthy washes, and open value separation give the cel image a
+    traveled feel.
   creative_brief: >-
-    Apply Mushoku Tensei – Wandering Mage Chronicle after prompt X as a transferable
-    anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity,
-    while this preset supplies Mushoku Tensei – Wandering Mage Chronicle, wandering mage chronicle
-    style grammar with weathered travel relic, mana contour lines, parchment grain, and open sky
-    curiosity, isekai and high-fantasy anime grammar with magic-system readability, quest-world
-    texture, luminous adventure, and character-independent fantasy routing, finish discipline, and
-    negative controls without forcing canon cast, title scene, screenshot, card pose, default
-    monster, default combat prop, or prompt-literal card.
+    Translate the requested content through dry ink contours, fine grain, earthy washes, and open
+    tonal depth, without adding travel or spell props.
 avoidRules:
   - realistic
   - 3d render
@@ -92,7 +51,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - readable map labels
   - staff-wielding protagonist
@@ -108,7 +66,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -116,10 +73,10 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, readable map labels, staff-wielding protagonist, school
+    artifacts, watermark, signature, readable map labels, staff-wielding protagonist, school
     uniform, harem cue, road party, RPG UI, readable magic text, generic isekai wallpaper, fixed
     canon character, title scene replication, required source-frame look, cosplay, generic anime
-    filter, prompt-required card, readable text, logo, muddy noisy darks
+    filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

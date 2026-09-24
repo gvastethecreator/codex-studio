@@ -40,10 +40,10 @@ avoidRules:
   - unrequested toy proportions
   - inconsistent layer shadows
   - excessive edge fibers
-assets: {}
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP21-001.webp
 attributes:
   negativePrompt: unrequested toy proportions, inconsistent layer shadows, excessive edge fibers
-  previewStatus: pending
   intentionalPolicy:
     schemaVersion: 1
     kind: full_style
@@ -69,7 +69,6 @@ attributes:
       - text: excessive edge fibers
         field: rendering_and_quality
   ui:
-    previewStatus: pending
     kind: full_style
     derivedFrom:
       - SP04-018
@@ -88,4 +87,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

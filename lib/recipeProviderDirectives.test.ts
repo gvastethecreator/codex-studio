@@ -33,6 +33,24 @@ describe('recipeProviderDirectives', () => {
     expect(serialized).not.toContain('SP09-006');
   });
 
+  it('makes an intentional illustration medium a separate whole-image directive', () => {
+    const styles = getRecipeModule('styles');
+    const directives =
+      styles &&
+      buildRecipeProviderDirectives(styles, {
+        compilerVersion: 'intentional-styles/1.0.1',
+        styleRequestHash: 'a-reviewed-request',
+        effectivePrompt:
+          'STYLE APPLICATION CONTRACT\nOutput medium: illustration. Render the whole image in this medium, not just its surface details.\nUSER PROMPT one stool',
+      });
+    const serialized = directives ? serializeRecipeProviderDirectives(directives) : '';
+    expect(serialized).toContain(
+      '- Required Output Medium: Illustration across the entire subject and setting',
+    );
+    expect(serialized).toContain('Avoid a photographic, live-action or glossy CGI finish.');
+    expect(serialized).toContain('STYLE APPLICATION CONTRACT\nOutput medium: illustration.');
+  });
+
   it('includes selected style slots and strengths in style directives', () => {
     const styles = getRecipeModule('styles');
     const directives =

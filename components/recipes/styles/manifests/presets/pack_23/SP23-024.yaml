@@ -1,0 +1,109 @@
+schemaVersion: 1
+id: SP23-024
+packId: pack_23
+name: Rootline Wash
+category: 5. Revival & Storybook Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - revival-and-storybook-illustration
+  - sinuous-ink-and-watercolor
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Sinuous linework of varied density works with delicate transparent watercolor to describe existing
+    joints, volume and movement. This study is anchored to Arthur Rackham's 1910 pen-and-ink and
+    watercolor illustration, not to medieval art or its pictured story.
+  subject_treatment: >-
+    Preserve requested identity, function, proportions, count and action. Let curved lines follow the
+    existing structure without adding roots, creatures, trees or changing a subject's anatomy.
+  color_and_tone: >-
+    Preserve the requested palette. Use restrained transparent washes and protected light areas without
+    imposing woodland greens, browns or a muted fantasy palette.
+  lighting_and_shadow: >-
+    Follow the requested light direction and shadow pattern. Vary line density to describe existing
+    volume without inventing a dramatic scene or a new light source.
+  texture_and_material: >-
+    Keep hatching local to joints, contours and volume. Preserve the depicted material whether metal,
+    fabric, ceramic or another surface; do not apply a global paper grain or convert objects to wood.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, orientation and spatial relationships. Do not add a forest,
+    landscape, frame or storybook page around the subject.
+  atmosphere_and_mood: >-
+    Preserve the user's setting and mood. The source is a specific early-twentieth-century British
+    illustrator's work, not a medieval style attribution or an instruction to depict fantasy.
+  rendering_and_quality: >-
+    Keep line rhythm distinct from wash edges and preserve important contours. Use color delicately and
+    leave enough clear space for the requested form to remain immediately recognizable.
+avoidRules:
+  - unrequested roots, trees, forest or dragon
+  - unrequested storybook setting or page frame
+  - imposed woodland palette or aged paper texture
+  - false attribution of the 1910 source as medieval art
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-024.webp
+attributes:
+  negativePrompt: >-
+    unrequested roots, trees, forest or dragon, unrequested storybook setting or page frame, imposed
+    woodland palette or aged paper texture, false attribution of the 1910 source as medieval art
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: pen-ink-and-watercolor-on-paper
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: sinuous-variable-density-ink-and-transparent-wash
+      - field: atmosphere_and_mood
+        group: source-scope
+        value: arthur-rackham-british-1910-ink-watercolor-not-medieval
+    avoidRules:
+      - text: unrequested roots, trees, forest or dragon
+        field: global
+      - text: unrequested storybook setting or page frame
+        field: camera_and_composition
+      - text: imposed woodland palette or aged paper texture
+        field: color_and_tone
+      - text: false attribution of the 1910 source as medieval art
+        field: atmosphere_and_mood
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: RV-03
+    sourceTitle: Rootline Wash
+    historicalScope: 'Tinta y acuarela · referencia de principios del siglo XX'
+    referenceIds:
+      - S23
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: revival-and-storybook-illustration
+  categoryName: 5. Revival & Storybook Illustration
+  tags:
+    - curation-v2
+    - revival-and-storybook-illustration
+    - sinuous-ink-and-watercolor
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

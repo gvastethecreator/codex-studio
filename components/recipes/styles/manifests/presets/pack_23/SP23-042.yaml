@@ -1,0 +1,109 @@
+schemaVersion: 1
+id: SP23-042
+packId: pack_23
+name: High-Contrast Overprint
+category: 10. Tabletop Illustration Studies
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - tabletop-illustration-studies
+  - dark-mass-light-contour
+  - localized-reproduction-grain
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Balance broad dark value masses, light or reversed contours and a few assertive color planes.
+    Allow localized grain and slight edge offsets only where they strengthen visual hierarchy, without
+    simulating a particular printing process.
+  subject_treatment: >-
+    Preserve the requested subject, identity, count, pose, action, proportions and function. Use contour
+    contrast to clarify existing forms; do not add narrative content, decorative symbols or lettering.
+  color_and_tone: >-
+    Preserve the requested palette and tonal relationships. When they allow it, organize values into
+    bold dark and light groups with a small number of confident accents; no specific hue is required.
+  lighting_and_shadow: >-
+    Follow the requested lighting and shadows. Separate existing value groups with graphic contrast
+    rather than inventing a new light source or darkening the image to force a mood.
+  texture_and_material: >-
+    Keep grain and small reproduction irregularities local and subordinate to actual material cues.
+    Preserve the depicted surfaces and avoid blanket distress or uniform noise.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, orientation, arrangement and negative space. Do not impose
+    additional framing or a layout that changes the requested composition.
+  atmosphere_and_mood: >-
+    Preserve the user's setting and tone. High contrast and reversed contours are graphic choices, not
+    a requirement for a particular genre or narrative.
+  rendering_and_quality: >-
+    Keep broad masses, fine contours and accent planes distinct and readable. Apply grain or edge
+    variation selectively so the subject remains recognizable without text or iconography.
+avoidRules:
+  - unrequested lettering, symbols, borders or framing
+  - fixed accent hue or forced dark overall palette
+  - uniform grain, distress or edge wear across the image
+  - unrequested thematic or narrative additions
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-042.webp
+attributes:
+  negativePrompt: >-
+    unrequested lettering, symbols, borders or framing, fixed accent hue or forced dark
+    overall palette, uniform grain, distress or edge wear across the image, unrequested thematic or
+    narrative additions
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: high-contrast-graphic-illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: broad-value-masses-reversed-contours-confident-color-planes-localized-grain
+    avoidRules:
+      - text: unrequested lettering, symbols, borders or framing
+        field: global
+      - text: fixed accent hue or forced dark overall palette
+        field: color_and_tone
+      - text: uniform grain, distress or edge wear across the image
+        field: texture_and_material
+      - text: unrequested thematic or narrative additions
+        field: global
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: TB-01
+    sourceTitle: Acid Overprint
+    historicalScope: 'Diseño editorial contemporáneo · referencia MÖRK BORG'
+    referenceIds:
+      - S43
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: tabletop-illustration-studies
+  categoryName: 10. Tabletop Illustration Studies
+  tags:
+    - curation-v2
+    - tabletop-illustration-studies
+    - dark-mass-light-contour
+    - localized-reproduction-grain
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -4,235 +4,63 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP15-009',
-    name: 'Rain Kernel Glass',
+    id: 'SP15-084',
+    name: 'Cyberpunk',
     category: '2. Neon, Net & Signal Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, kneeling figure, hooded tech priest, crystal hero, obelisk hero, single object hero, HDR lens realism, mirror-wet realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, readable signage, readable UI, hacker workstation, phone portrait, handheld device hero, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, empty neon corridor, vanishing hallway, dense window-panel grid, cable lattice carpet, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, fake readable UI, server-interior-system dependency, generic cyberpunk urban passage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'Do not replace the subject with a device, screen or generic hacker., Do not force a city, rain, corporate villain, dystopian plot or body modification., Honor lighting locks; keep integrated emitters local rather than flooding the image with neon., Do not add invented posters, slogans, signs or readable text unless requested.',
     style: {
       aesthetic:
-        'Rain Kernel Glass operates as a portable punk-spectrum router: combine Rain Kernel Glass identity cues through kernel glow; cable gutters; rain glass; layered reflection blocks; non-readable signal panels; Wet cyberpunk glass-and-signal poster language built from rain-slick reflections with network punk grammar with mesh communication, neon signal pressure, hacker-adjacent DIY systems, rain glass, drones, and cooperative circuitry, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'A high-tech, street-adapted language of asymmetric modular design, embedded interfaces, hacked circuitry and selective emissive color, with polished synthetic surfaces against worn everyday materials.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through signal bands, cable paths, antenna arcs, mesh-node grouping, rain-slick contour, improvised electronics, and data-lit body or object edges; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve identity, action and explicit locks. Redesign open clothing, tools and surfaces with segmented techwear cuts, modular panels, embedded paths and integrated emitters; augmentation is optional.',
       color_and_tone:
-        'Map color through cyan rain, magenta signal, black ice, acid green, electric blue, violet shadow, wet concrete gray, and small safety-color accents; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Use dark neutrals with sharp cyan, magenta, violet or acid-green signals and warm counterpoints. Respect locked colors; treat neon as placed information, not a wash.',
       lighting_and_shadow:
-        "Use neon spill, monitor glow, rain reflection, signal pulse, drone LEDs, firewall bloom, and cold rim separation; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Honor explicit lighting and time. Where unspecified, allow motivated emissive seams and tight bloom on integrated sources with crisp colored reflections; do not force rain, night or signs.',
       texture_and_material:
-        'Render glass, wet plastic, taped circuit boards, cable bundles, matte rubber, spray paint, antenna metal, and soft digital bloom; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Contrast coated metal, polymer, glass, rubber, fabric and worn analogue surfaces. Restyle open materials as synthetic or hand-modified without turning everything to wet chrome.',
       camera_and_composition:
-        'Compose through mesh-like spacing, compressed signal lanes, overhead cable arcs, node clusters, and readable subject dominance without forced urban passage or server-interior-system staging as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Preserve view and placement. Separate subject from technology with layered planes and directional signals; a skyline, street, server room or screen is not required.',
       atmosphere_and_mood:
-        'Carry mood through paranoid speed, illicit coordination, humid intimacy, cooperative defense, cold precision, and electric public-style-level pressure; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Suggest tension, intimacy, speed or mutual aid through advanced technology meeting everyday wear. Follow requested mood; dystopia and corporate oppression are optional.',
       rendering_and_quality:
-        'Finish with clean neon-punk illustration with controlled glow, readable circuitry, denoised rain texture, and no fake readable UI; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'kernel glow; cable gutters; rain glass; layered reflection blocks; non-readable signal panels; Wet cyberpunk glass-and-signal poster language built from rain-slick reflections',
-      creative_brief:
-        'Use Rain Kernel Glass after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies kernel glow, cable gutters, rain glass, layered reflection blocks, non-readable signal panels, Wet cyberpunk glass-and-signal poster language built from rain-slick reflections, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Use crisp graphic contours, hard-edged regions, selective reflections and restrained digital bloom. Keep interface marks purposeful; avoid pseudo-text, invented posters, slogans or signs unless requested, smeared glow and circuitry wallpaper.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-009', 'SP15-010', 'SP15-012', 'SP15-013', 'SP15-015', 'SP15-016'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-010',
-    name: 'Meshlight Signal Exchange',
+    id: 'SP15-085',
+    name: 'Netpunk',
     category: '2. Neon, Net & Signal Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, near-plane vendor portrait, device demo, phone, single machine trade setup hero, realistic bazaar scene, HDR lens realism, mirror-wet realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, readable signage, readable UI, phone demo, handheld device hero, food-trade setup postcard, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, generic commerce-system aisle, unmotivated library aisle, fantasy corridor, dense cable lattice, cable spiderweb, tiny neon speckle field, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, fake readable UI, server-interior-system dependency, generic cyberpunk urban passage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'Do not substitute a network diagram or device for the requested subject., Do not force hacker, server-room or surveillance narratives., Keep routes connected and purposeful on the requested subject and directly pertinent objects; leave unrelated background surfaces free of network lines., Add no invented slogans, labels, signs or pseudo-text unless requested.',
     style: {
       aesthetic:
-        'Meshlight Signal Exchange operates as a portable punk-spectrum router: combine Meshlight Signal Exchange identity cues through mesh antennas; modded coats; canopy silhouettes; wearable nodes; steam color layers; Mesh-network cyberpunk poster language built from antenna canopies with network punk grammar with mesh communication, neon signal pressure, hacker-adjacent DIY systems, rain glass, drones, and cooperative circuitry, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'A decentralized network language: linked nodes, branching routes, redundant paths, packet-like blocks and pulse intervals organize forms as connected systems rather than isolated devices.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through signal bands, cable paths, antenna arcs, mesh-node grouping, rain-slick contour, improvised electronics, and data-lit body or object edges; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve subject, action and locks. Translate open structure, clothing or surfaces into a readable node-and-route hierarchy. Anchor routes to the requested subject and directly pertinent objects; leave unrelated decor, plants, walls and floors free of network lines. Retain Signalpunk pulses and insulated gaps as network expressions.',
       color_and_tone:
-        'Map color through cyan rain, magenta signal, black ice, acid green, electric blue, violet shadow, wet concrete gray, and small safety-color accents; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Use ink, graphite or deep indigo with high-contrast cyan, mint, signal red or cream at key nodes. Respect palette locks and reserve accents for connection hierarchy.',
       lighting_and_shadow:
-        "Use neon spill, monitor glow, rain reflection, signal pulse, drone LEDs, firewall bloom, and cold rim separation; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Follow specified sources and direction. Where open, use small node glints or restrained pulse accents as part of the network, not independent glow.',
       texture_and_material:
-        'Render glass, wet plastic, taped circuit boards, cable bundles, matte rubber, spray paint, antenna metal, and soft digital bloom; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Combine matte structures with clean printed traces, insulated breaks and small luminous or reflective nodes. Preserve locked materials while making open surfaces network-readable.',
       camera_and_composition:
-        'Compose through mesh-like spacing, compressed signal lanes, overhead cable arcs, node clusters, and readable subject dominance without forced urban passage or server-interior-system staging as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Preserve view and crop. Use connected paths to guide the eye through the existing composition; do not force a screen, diagram, server room or hub.',
       atmosphere_and_mood:
-        'Carry mood through paranoid speed, illicit coordination, humid intimacy, cooperative defense, cold precision, and electric public-style-level pressure; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Suggest exchange, resilience, secrecy or collective intelligence through connectivity and redundancy, aligned to the requested tone.',
       rendering_and_quality:
-        'Finish with clean neon-punk illustration with controlled glow, readable circuitry, denoised rain texture, and no fake readable UI; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'mesh antennas; modded coats; canopy silhouettes; wearable nodes; steam color layers; Mesh-network cyberpunk poster language built from antenna canopies',
-      creative_brief:
-        'Use Meshlight Signal Exchange after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies mesh antennas, modded coats, canopy silhouettes, wearable nodes, steam color layers, Mesh-network cyberpunk poster language built from antenna canopies, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Use precise routing, distinct node sizes and clean packet-like blocks. Keep the network legible, sparse and restricted to the requested subject and directly pertinent objects; leave unrelated background surfaces clear; avoid tangled meshes and decorative circuit wallpaper. Add no invented slogans, labels or pseudo-text unless requested.',
     },
-  },
-  {
-    id: 'SP15-011',
-    name: 'Pirate Mesh Relay',
-    category: '2. Neon, Net & Signal Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, laptop hero, readable screen, surveillance camera, realistic rooftop scene, dense cable spiderweb, HDR lens realism, mirror-wet realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, fake readable UI, server-interior-system dependency, generic cyberpunk urban passage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Pirate Mesh Relay operates as a portable punk-spectrum router: combine Pirate Mesh Relay identity cues through antenna arrays; battery blocks; signal beams; taped hardware; windbreaker silhouettes; Netpunk infrastructure-rebellion poster language built from improvised repeaters with network punk grammar with mesh communication, neon signal pressure, hacker-adjacent DIY systems, rain glass, drones, and cooperative circuitry, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through signal bands, cable paths, antenna arcs, mesh-node grouping, rain-slick contour, improvised electronics, and data-lit body or object edges; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through cyan rain, magenta signal, black ice, acid green, electric blue, violet shadow, wet concrete gray, and small safety-color accents; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use neon spill, monitor glow, rain reflection, signal pulse, drone LEDs, firewall bloom, and cold rim separation; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render glass, wet plastic, taped circuit boards, cable bundles, matte rubber, spray paint, antenna metal, and soft digital bloom; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through mesh-like spacing, compressed signal lanes, overhead cable arcs, node clusters, and readable subject dominance without forced urban passage or server-interior-system staging as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through paranoid speed, illicit coordination, humid intimacy, cooperative defense, cold precision, and electric public-style-level pressure; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with clean neon-punk illustration with controlled glow, readable circuitry, denoised rain texture, and no fake readable UI; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'antenna arrays; battery blocks; signal beams; taped hardware; windbreaker silhouettes; Netpunk infrastructure-rebellion poster language built from improvised repeaters',
-      creative_brief:
-        'Use Pirate Mesh Relay after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies antenna arrays, battery blocks, signal beams, taped hardware, windbreaker silhouettes, Netpunk infrastructure-rebellion poster language built from improvised repeaters, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-012',
-    name: 'Cooperative Firewall Bloom',
-    category: '2. Neon, Net & Signal Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, dashboard wall, readable UI, corporate operations center, office cubicles, phone demo, realistic interior-system render, dense cable braid, HDR lens realism, mirror-wet realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, fake readable UI, server-interior-system dependency, generic cyberpunk urban passage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Cooperative Firewall Bloom operates as a portable punk-spectrum router: combine Cooperative Firewall Bloom identity cues through shield blooms; terminal rings; cable braids; civic color fields; collaborative silhouettes; Commons cyberdefense poster language built from shield-like light blooms with network punk grammar with mesh communication, neon signal pressure, hacker-adjacent DIY systems, rain glass, drones, and cooperative circuitry, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through signal bands, cable paths, antenna arcs, mesh-node grouping, rain-slick contour, improvised electronics, and data-lit body or object edges; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through cyan rain, magenta signal, black ice, acid green, electric blue, violet shadow, wet concrete gray, and small safety-color accents; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use neon spill, monitor glow, rain reflection, signal pulse, drone LEDs, firewall bloom, and cold rim separation; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render glass, wet plastic, taped circuit boards, cable bundles, matte rubber, spray paint, antenna metal, and soft digital bloom; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through mesh-like spacing, compressed signal lanes, overhead cable arcs, node clusters, and readable subject dominance without forced urban passage or server-interior-system staging as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through paranoid speed, illicit coordination, humid intimacy, cooperative defense, cold precision, and electric public-style-level pressure; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with clean neon-punk illustration with controlled glow, readable circuitry, denoised rain texture, and no fake readable UI; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'shield blooms; terminal rings; cable braids; civic color fields; collaborative silhouettes; Commons cyberdefense poster language built from shield-like light blooms',
-      creative_brief:
-        'Use Cooperative Firewall Bloom after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies shield blooms, terminal rings, cable braids, civic color fields, collaborative silhouettes, Commons cyberdefense poster language built from shield-like light blooms, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-013',
-    name: 'Black Ice Vector',
-    category: '2. Neon, Net & Signal Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, mirror-wet realism, empty corridor, realistic chase scene, weapon pose, near-plane portrait, readable markings, dense shard noise, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, fake readable UI, server-interior-system dependency, generic cyberpunk urban passage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Black Ice Vector operates as a portable punk-spectrum router: combine Black Ice Vector identity cues through black ice shards; red security beams; reflective coat shapes; cyan rim blocks; data lane rhythm; High-contrast black-ice cyberpunk poster language built from frozen interface shards with network punk grammar with mesh communication, neon signal pressure, hacker-adjacent DIY systems, rain glass, drones, and cooperative circuitry, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through signal bands, cable paths, antenna arcs, mesh-node grouping, rain-slick contour, improvised electronics, and data-lit body or object edges; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through cyan rain, magenta signal, black ice, acid green, electric blue, violet shadow, wet concrete gray, and small safety-color accents; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use neon spill, monitor glow, rain reflection, signal pulse, drone LEDs, firewall bloom, and cold rim separation; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render glass, wet plastic, taped circuit boards, cable bundles, matte rubber, spray paint, antenna metal, and soft digital bloom; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through mesh-like spacing, compressed signal lanes, overhead cable arcs, node clusters, and readable subject dominance without forced urban passage or server-interior-system staging as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through paranoid speed, illicit coordination, humid intimacy, cooperative defense, cold precision, and electric public-style-level pressure; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with clean neon-punk illustration with controlled glow, readable circuitry, denoised rain texture, and no fake readable UI; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'black ice shards; red security beams; reflective coat shapes; cyan rim blocks; data lane rhythm; High-contrast black-ice cyberpunk poster language built from frozen interface shards',
-      creative_brief:
-        'Use Black Ice Vector after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies black ice shards, red security beams, reflective coat shapes, cyan rim blocks, data lane rhythm, High-contrast black-ice cyberpunk poster language built from frozen interface shards, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-014',
-    name: 'Signal Coil Rite',
-    category: '2. Neon, Net & Signal Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, fantasy shrine, candles, altar interior-system, service-lamp hero, fence-grid overload, realistic utility yard, rendered metal realism, HDR lens realism, mirror-wet realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, fake readable UI, server-interior-system dependency, generic cyberpunk urban passage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Signal Coil Rite operates as a portable punk-spectrum router: combine Signal Coil Rite identity cues through coil halos; signal tokens; ceramic insulators; copper arcs; electric-blue corona; ceramic insulator blocks with network punk grammar with mesh communication, neon signal pressure, hacker-adjacent DIY systems, rain glass, drones, and cooperative circuitry, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through signal bands, cable paths, antenna arcs, mesh-node grouping, rain-slick contour, improvised electronics, and data-lit body or object edges; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through cyan rain, magenta signal, black ice, acid green, electric blue, violet shadow, wet concrete gray, and small safety-color accents; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use neon spill, monitor glow, rain reflection, signal pulse, drone LEDs, firewall bloom, and cold rim separation; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render glass, wet plastic, taped circuit boards, cable bundles, matte rubber, spray paint, antenna metal, and soft digital bloom; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through mesh-like spacing, compressed signal lanes, overhead cable arcs, node clusters, and readable subject dominance without forced urban passage or server-interior-system staging as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through paranoid speed, illicit coordination, humid intimacy, cooperative defense, cold precision, and electric public-style-level pressure; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with clean neon-punk illustration with controlled glow, readable circuitry, denoised rain texture, and no fake readable UI; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'coil halos; signal tokens; ceramic insulators; copper arcs; electric-blue corona; ceramic insulator blocks',
-      creative_brief:
-        'Use Signal Coil Rite after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies coil halos, signal tokens, ceramic insulators, copper arcs, electric-blue corona, ceramic insulator blocks, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-015',
-    name: 'Drone Graffiti Kinetics',
-    category: '2. Neon, Net & Signal Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, readable graffiti text, readable tags, logo tag, camera drone hero, bird-like drones, photoreal underpass, corridor tunnel, dense projection mist, HDR lens realism, mirror-wet realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, fake readable UI, server-interior-system dependency, generic cyberpunk urban passage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Drone Graffiti Kinetics operates as a portable punk-spectrum router: combine Drone Graffiti Kinetics identity cues through paint drones; projection mist; abstract spray blocks; crew gesture echoes; hacked lights; Drone-graffiti cyberpunk poster language built from small tool-drones with network punk grammar with mesh communication, neon signal pressure, hacker-adjacent DIY systems, rain glass, drones, and cooperative circuitry, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through signal bands, cable paths, antenna arcs, mesh-node grouping, rain-slick contour, improvised electronics, and data-lit body or object edges; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through cyan rain, magenta signal, black ice, acid green, electric blue, violet shadow, wet concrete gray, and small safety-color accents; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use neon spill, monitor glow, rain reflection, signal pulse, drone LEDs, firewall bloom, and cold rim separation; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render glass, wet plastic, taped circuit boards, cable bundles, matte rubber, spray paint, antenna metal, and soft digital bloom; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through mesh-like spacing, compressed signal lanes, overhead cable arcs, node clusters, and readable subject dominance without forced urban passage or server-interior-system staging as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through paranoid speed, illicit coordination, humid intimacy, cooperative defense, cold precision, and electric public-style-level pressure; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with clean neon-punk illustration with controlled glow, readable circuitry, denoised rain texture, and no fake readable UI; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'paint drones; projection mist; abstract spray blocks; crew gesture echoes; hacked lights; Drone-graffiti cyberpunk poster language built from small tool-drones',
-      creative_brief:
-        'Use Drone Graffiti Kinetics after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies paint drones, projection mist, abstract spray blocks, crew gesture echoes, hacked lights, Drone-graffiti cyberpunk poster language built from small tool-drones, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-016',
-    name: 'Neon Care Circuit',
-    category: '2. Neon, Net & Signal Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, gore, blood spill, exposed organs, surgery table closeup, syringe hero, fetish vinyl pose, horror corridor, readable medical UI, photoreal wet skin, HDR lens realism, mirror-wet realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, fake readable UI, server-interior-system dependency, generic cyberpunk urban passage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Neon Care Circuit operates as a portable punk-spectrum router: combine Neon Care Circuit identity cues through clinical glow; tool-tray planes; polymer accents; compact monitors; rainlit edge planes; Underground med-cyberpunk poster language built from humane care silhouettes with network punk grammar with mesh communication, neon signal pressure, hacker-adjacent DIY systems, rain glass, drones, and cooperative circuitry, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through signal bands, cable paths, antenna arcs, mesh-node grouping, rain-slick contour, improvised electronics, and data-lit body or object edges; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through cyan rain, magenta signal, black ice, acid green, electric blue, violet shadow, wet concrete gray, and small safety-color accents; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use neon spill, monitor glow, rain reflection, signal pulse, drone LEDs, firewall bloom, and cold rim separation; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render glass, wet plastic, taped circuit boards, cable bundles, matte rubber, spray paint, antenna metal, and soft digital bloom; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through mesh-like spacing, compressed signal lanes, overhead cable arcs, node clusters, and readable subject dominance without forced urban passage or server-interior-system staging as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through paranoid speed, illicit coordination, humid intimacy, cooperative defense, cold precision, and electric public-style-level pressure; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with clean neon-punk illustration with controlled glow, readable circuitry, denoised rain texture, and no fake readable UI; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'clinical glow; tool-tray planes; polymer accents; compact monitors; rainlit edge planes; Underground med-cyberpunk poster language built from humane care silhouettes',
-      creative_brief:
-        'Use Neon Care Circuit after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies clinical glow, tool-tray planes, polymer accents, compact monitors, rainlit edge planes, Underground med-cyberpunk poster language built from humane care silhouettes, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-011', 'SP15-014'],
+      visualEvaluation: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

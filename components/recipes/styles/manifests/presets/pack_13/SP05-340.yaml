@@ -13,90 +13,60 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Velvet Lash Refined Tension operates as a portable anime-lifestyle router: combine Velvet Lash
-    Refined Tension identity cues through Velvet Lash Refined Tension anime style cues, style
-    specific contour, material transformation, motion grammar, abstraction pressure, symbolic
-    surface logic, and prompt preserving silhouette discipline with broad anime style spectrum
-    grammar with experimental line, material specific finish, auteur adjacent motion, graphic
-    abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style
-    behavior after prompt X rather than a required scene, character, franchise image, or card
-    composition.
+    Use fine tapered contours, delicate line-weight changes and restrained soft shadow to create
+    refined tension; do not apply lash or facial detail to non-facial forms.
   subject_treatment: >-
-    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
-    style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic
-    surface logic, and prompt-preserving silhouette discipline; subjects may be characters,
-    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
-    prompt.
+    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
+    treatment to the existing forms without substituting subjects, adding accessories or changing
+    their function.
   color_and_tone: >-
-    Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop,
-    thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values
-    readable, accent roles intentional, skin or material midtones stable, and palette behavior
-    attached to the prompt instead of pasted anime decoration.
+    Palette defaults apply only where the prompt leaves color open: choose muted, rich color and
+    controlled contrast; honor requested colors without defaulting to monochrome.
   lighting_and_shadow: >-
-    Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze,
-    speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression,
-    silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or
-    screenshot-like flatness.
+    Keep light soft and local, with a crisp accent only at existing focal edges.
   texture_and_material: >-
-    Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map
-    pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile,
-    glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy
-    surface chatter.
+    Use smooth fine ink and soft tonal transitions; avoid plush texture that obscures the underlying
+    material.
   camera_and_composition: >-
-    Compose through auteur-aware framing, material seams, impact vectors, postcard freezes,
-    distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as
-    reusable anime framing grammar, allowing close acting, objects, performances, action,
-    environments, or abstract prompts without one required pose or location.
+    Guide attention with elegant taper and quiet spacing while preserving the original crop and
+    layout.
   atmosphere_and_mood: >-
-    Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance,
-    tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become
-    cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while
-    preserving its anime lineage.
+    Refinement is carried by control and line rhythm; follow the prompted mood and avoid forced
+    sensuality.
   rendering_and_quality: >-
-    Finish with clean experimental anime finish with strong style recognition, stable subject
-    structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss;
-    prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no
-    fake readable text, no UI, and no generic AI anime gloss.
+    Transfer the contour method to any form without adding eyelashes, eyes, makeup, pose or persona.
+    Keep important silhouettes and joins legible; no watermark, unrequested text or interface.
   key_features: >-
-    Velvet Lash Refined Tension anime style cues; style specific contour; material transformation;
-    motion grammar; abstraction pressure; symbolic surface logic
+    Tapered contour; delicate line weight; restrained shadow; muted richness; quiet refined tension.
   creative_brief: >-
-    Use Velvet Lash Refined Tension after prompt X as a transferable anime character/lifestyle
-    layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset
-    supplies Velvet Lash Refined Tension anime style cues, style specific contour, material
-    transformation, motion grammar, abstraction pressure, symbolic surface logic, color logic,
-    lighting, material finish, composition rhythm, mood pressure, and quality controls without
-    requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card
-    composition.
+    Apply this visual treatment to the requested content: Tapered contour; delicate line weight;
+    restrained shadow; muted richness; quiet refined tension. Preserve its identity, action,
+    materials, composition and requested tone; introduce no persona, scene, franchise cue or extra
+    motif.
 avoidRules:
-  - crude action pose
-  - rough sketch dirt
-  - flat office lighting
-  - low glam casual realism
-  - neon glitch clutter
-  - comic chibi proportions
-  - plastic 3d render
-  - generic AI anime gloss
-  - auteur copycat
-  - fixed source scene
-  - canon character copy
-  - title scene copy
-  - literal sample card setup
-  - fixed anime cast
-  - generic anime filter
-  - prompt literal card reuse
+  - photoreal cosplay rendering
+  - 3D render look
+  - plastic airbrush gloss obscuring the style's defining marks
+  - undifferentiated anime filter erasing the preset's signature mechanics
+  - unrequested default-image characters, costume details, props or setting
+  - unrequested default-image framing
+  - garbled pseudo-text
+  - unrequested interface overlay
   - watermark
-  - readable text
-  - fake UI
+  - unrequested logo or signature artifact
+  - thick contours obscuring delicate taper
+  - highlights flattening line-weight variation
+  - tangled marks obscuring source form
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-340.webp
 attributes:
   negativePrompt: >-
-    crude action pose, rough sketch dirt, flat office lighting, low glam casual realism, neon glitch
-    clutter, comic chibi proportions, plastic 3d render, generic AI anime gloss, auteur copycat,
-    fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed
-    anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI,
-    photoreal cosplay, 3D render look, copied franchise costume, logo, signature
+    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
+    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
+    unrequested default-image characters, costume details, props or setting, unrequested
+    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
+    unrequested logo or signature artifact, thick contours obscuring delicate taper, highlights
+    flattening line-weight variation, tangled marks obscuring source form
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

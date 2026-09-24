@@ -1,0 +1,98 @@
+schemaVersion: 1
+id: SP15-085
+packId: pack_15
+name: Netpunk
+category: 2. Neon, Net & Signal Punks
+version: 2
+supportedTasks: &id002
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags: &id001
+  - curation-v2
+  - identity-reviewed
+  - visual-evaluation-pending
+  - neon-net-and-signal-punks
+visualDna:
+  aesthetic:
+    'A decentralized network language: linked nodes, branching routes, redundant paths, packet-like
+    blocks and pulse intervals organize forms as connected systems rather than isolated devices.'
+  subject_treatment:
+    Preserve subject, action and locks. Translate open structure, clothing or surfaces into
+    a readable node-and-route hierarchy. Anchor routes to the requested subject and directly pertinent objects;
+    leave unrelated decor, plants, walls and floors free of network lines. Retain Signalpunk pulses and insulated
+    gaps as network expressions.
+  color_and_tone:
+    Use ink, graphite or deep indigo with high-contrast cyan, mint, signal red or cream at key
+    nodes. Respect palette locks and reserve accents for connection hierarchy.
+  lighting_and_shadow:
+    Follow specified sources and direction. Where open, use small node glints or restrained
+    pulse accents as part of the network, not independent glow.
+  texture_and_material:
+    Combine matte structures with clean printed traces, insulated breaks and small luminous
+    or reflective nodes. Preserve locked materials while making open surfaces network-readable.
+  camera_and_composition:
+    Preserve view and crop. Use connected paths to guide the eye through the existing
+    composition; do not force a screen, diagram, server room or hub.
+  atmosphere_and_mood:
+    Suggest exchange, resilience, secrecy or collective intelligence through connectivity
+    and redundancy, aligned to the requested tone.
+  rendering_and_quality:
+    Use precise routing, distinct node sizes and clean packet-like blocks. Keep the network
+    legible, sparse and restricted to the requested subject and directly pertinent objects; leave unrelated
+    background surfaces clear; avoid tangled meshes and decorative circuit wallpaper.
+    Add no invented slogans, labels or pseudo-text unless requested.
+avoidRules:
+  - Do not substitute a network diagram or device for the requested subject.
+  - Do not force hacker, server-room or surveillance narratives.
+  - Keep routes connected and purposeful on the requested subject and directly pertinent objects; leave unrelated background surfaces free of network lines.
+  - Add no invented slogans, labels, signs or pseudo-text unless requested.
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-085.webp
+attributes:
+  negativePrompt:
+    Do not substitute a network diagram or device for the requested subject., Do not force hacker,
+    server-room or surveillance narratives., Keep routes connected and purposeful on the requested subject
+    and directly pertinent objects; leave unrelated background surfaces free of network lines.,
+    Add no invented slogans, labels, signs or pseudo-text
+    unless requested.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: Do not substitute a network diagram or device for the requested subject.
+        field: rendering_and_quality
+      - text: Do not force hacker, server-room or surveillance narratives.
+        field: rendering_and_quality
+      - text: Keep routes connected and purposeful on the requested subject and directly pertinent objects; leave unrelated background surfaces free of network lines.
+        field: rendering_and_quality
+      - text: Add no invented slogans, labels, signs or pseudo-text unless requested.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-011
+      - SP15-014
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: neon-net-and-signal-punks
+  categoryName: 2. Neon, Net & Signal Punks
+  tags: *id001
+  supportedTasks: *id002
+  hasDefaultImage: true

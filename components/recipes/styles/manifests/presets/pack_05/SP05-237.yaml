@@ -13,61 +13,33 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Monumental Ignition Sacrifice acts as a transferable anime-battle/worlds router: Monumental
-    Ignition Sacrifice; combine it with mecha and cyberpunk anime grammar with engineered
-    silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion
-    tension; named titles, studios, or lineage words may guide style, but they must not require
-    canon cast, title-scene replication, screenshots, logos, or one fixed card concept.
+    Monumental high-contrast graphics with broad beveled planes, a warm flare-like accent, and deep shadow.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply
-    Monumental Ignition Sacrifice as portable contour, motion grammar, surface language, and
-    emotional pressure without requiring canon elements or a default action setup.
+    Keep the prompt’s subject and silhouette recognizable. Emphasize its existing planes with
+    bold contour cuts and directional highlights; add no heroic gear or weapon.
   color_and_tone: >-
-    Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile
-    white, coral glow, and disciplined emissive accents; let Monumental Ignition Sacrifice choose
-    accent intensity, value contrast, emotional temperature, and power-system separation while
-    staying attached to prompt X.
+    Contrast ember red, gold, and pale cream with ink black and charcoal; reserve the hottest
+    values for a few focal edges.
   lighting_and_shadow: >-
-    Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow,
-    and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Monumental Ignition Sacrifice without replacing prompt X with a
-    stock anime frame.
+    Use hard cel shadows against a sweeping warm highlight, treated as graphic color rather than
+    a required flame or source.
   texture_and_material: >-
-    Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust,
-    circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Monumental
-    Ignition Sacrifice controlled, denoised, and coherent across bodies, objects, environments,
-    abstractions, and action.
+    Respect the original material while adding clean bevel-like highlights, sparse scuffs, and
+    large smooth color planes.
   camera_and_composition: >-
-    Frame through scale compression, machinery diagonals, grid overlays without readable UI,
-    service-bay density, orbital symmetry, and high-speed hardware lanes; convert Monumental
-    Ignition Sacrifice into reusable perspective, timing, rhythm, scale, cut-in, and negative-space
-    rules instead of one fixed style sample layout.
+    Honor the requested framing and scale. Use broad value masses and open darks to carry
+    presence without changing the subject's pose or viewpoint.
   atmosphere_and_mood: >-
-    Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine
-    grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic,
-    tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping
-    the anime-battle lineage readable.
+    Create intensity and resolve through scale contrast, warm light, and deliberate empty darks,
+    without a sacrifice narrative.
   rendering_and_quality: >-
-    Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic
-    3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object
-    structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no
-    fake readable text, no signature, no photoreal or 3D-render drift.
+    Keep outlines crisp, shadows decisive, highlight shapes broad and clean, and glow tightly
+    controlled.
   key_features: >-
-    Monumental Ignition Sacrifice; armored contour, mechanical massing, modular joints, engineered
-    surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted
-    alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain
-    sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without
-    readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium
-    mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no
-    cockpit/control-room dependency
+    Broad beveled planes; warm flare highlights; ember-red and gold accents; deep cel shadows.
   creative_brief: >-
-    Apply Monumental Ignition Sacrifice after prompt X as a transferable anime-battle/worlds layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
-    Monumental Ignition Sacrifice, mecha and cyberpunk anime grammar with engineered silhouettes,
-    hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish
-    discipline, and negative controls without forcing canon cast, title scene, screenshot, card
-    pose, default monster, default combat prop, or prompt-literal card.
+    Preserve the specified subject, action, and composition. Apply bold beveled highlights,
+    ember-gold accents, and deep shadows; add no weapon, flames, or heroic pose.
 avoidRules:
   - realistic
   - 3d render
@@ -79,7 +51,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - plastic 3d robot render
   - cockpit source-frame look
@@ -90,7 +61,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -98,9 +68,9 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, plastic 3d robot render, cockpit source-frame look,
-    readable UI panel, fixed canon character, title scene replication, required source-frame look,
-    cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks
+    artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI
+    panel, fixed canon character, title scene replication, required source-frame look, cosplay,
+    generic anime filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -13,75 +13,35 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Pop-Signal Engineered Romance acts as a transferable anime-battle/worlds router: Pop-Signal
-    Engineered Romance, pop-signal engineered-motion style grammar with human-scale signal
-    silhouette, cyan-pink contrail calligraphy, alloy panel rhythm, and hopeful gold edge light;
-    combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic,
-    neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios,
-    or lineage words may guide style, but they must not require canon cast, title-scene replication,
-    screenshots, logos, or one fixed card concept.
+    An optimistic signal style combining human-scale contour rhythm, flowing cyan-pink strokes,
+    and orderly panel-like divisions with a warm gold edge.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply
-    Pop-Signal Engineered Romance, pop-signal engineered-motion style grammar with human-scale
-    signal silhouette, cyan-pink contrail calligraphy, alloy panel rhythm, and hopeful gold edge
-    light as portable contour, motion grammar, surface language, and emotional pressure without
-    requiring canon elements or a default action setup.
+    Retain the requested subject’s shape and identity. Use rhythmic contour breaks and smooth,
+    sweeping accents on its existing forms, without adding people or machinery.
   color_and_tone: >-
-    Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile
-    white, coral glow, and disciplined emissive accents; let Pop-Signal Engineered Romance,
-    pop-signal engineered-motion style grammar with human-scale signal silhouette, cyan-pink
-    contrail calligraphy, alloy panel rhythm, and hopeful gold edge light choose accent intensity,
-    value contrast, emotional temperature, and power-system separation while staying attached to
-    prompt X.
+    Center cyan and pink with a warm gold highlight, balancing vivid accents against clear
+    neutral values.
   lighting_and_shadow: >-
-    Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow,
-    and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Pop-Signal Engineered Romance, pop-signal engineered-motion style
-    grammar with human-scale signal silhouette, cyan-pink contrail calligraphy, alloy panel rhythm,
-    and hopeful gold edge light without replacing prompt X with a stock anime frame.
+    Use clean cel-shadow shapes and a gentle gold rim on selected edges; keep glow narrow and
+    controlled.
   texture_and_material: >-
-    Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust,
-    circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Pop-Signal
-    Engineered Romance, pop-signal engineered-motion style grammar with human-scale signal
-    silhouette, cyan-pink contrail calligraphy, alloy panel rhythm, and hopeful gold edge light
-    controlled, denoised, and coherent across bodies, objects, environments, abstractions, and
-    action.
+    Preserve the original materials. Add smooth painted highlight bands, fine engineered line
+    rhythms, and minimal surface grain.
   camera_and_composition: >-
-    Frame through scale compression, machinery diagonals, grid overlays without readable UI,
-    service-bay density, orbital symmetry, and high-speed hardware lanes; convert Pop-Signal
-    Engineered Romance, pop-signal engineered-motion style grammar with human-scale signal
-    silhouette, cyan-pink contrail calligraphy, alloy panel rhythm, and hopeful gold edge light into
-    reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one
-    fixed style sample layout.
+    Respect the prompt’s crop and perspective. Let flowing strokes echo the existing gesture and
+    use panel-like spacing to organize detail.
   atmosphere_and_mood: >-
-    Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine
-    grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic,
-    tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping
-    the anime-battle lineage readable.
+    Keep the image buoyant and affectionate through open spacing, warm edge light, and fluid
+    marks, without staging romance or performance.
   rendering_and_quality: >-
-    Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic
-    3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object
-    structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no
-    fake readable text, no signature, no photoreal or 3D-render drift.
+    Use crisp contours, polished color separation, soft restrained glow, and readable details at
+    multiple scales.
   key_features: >-
-    Pop-Signal Engineered Romance, pop-signal engineered-motion style grammar with human-scale
-    signal silhouette, cyan-pink contrail calligraphy, alloy panel rhythm, and hopeful gold edge
-    light; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale
-    cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor,
-    scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom
-    layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay
-    density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with
-    readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency
+    Cyan-pink signal strokes; warm gold edge light; rhythmic panel divisions; optimistic contour
+    flow.
   creative_brief: >-
-    Apply Pop-Signal Engineered Romance after prompt X as a transferable anime-battle/worlds layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
-    Pop-Signal Engineered Romance, pop-signal engineered-motion style grammar with human-scale
-    signal silhouette, cyan-pink contrail calligraphy, alloy panel rhythm, and hopeful gold edge
-    light, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon
-    atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and
-    negative controls without forcing canon cast, title scene, screenshot, card pose, default
-    monster, default combat prop, or prompt-literal card.
+    Keep the requested subject and action intact. Apply flowing cyan-pink accents, orderly
+    contour breaks, and a soft gold rim; add no performer, robot, or stage.
 avoidRules:
   - realistic
   - 3d render
@@ -93,7 +53,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - idol portrait
   - cockpit closeup
@@ -111,7 +70,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -119,11 +77,10 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, idol portrait, cockpit closeup, concert stage, missile
-    barrage, readable UI, crowd, robot face closeup, plastic 3d robot render, cockpit source-frame
-    look, readable UI panel, fixed canon character, title scene replication, required source-frame
-    look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy
-    darks
+    artifacts, watermark, signature, idol portrait, cockpit closeup, concert stage, missile barrage,
+    readable UI, crowd, robot face closeup, plastic 3d robot render, cockpit source-frame look,
+    readable UI panel, fixed canon character, title scene replication, required source-frame look,
+    cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

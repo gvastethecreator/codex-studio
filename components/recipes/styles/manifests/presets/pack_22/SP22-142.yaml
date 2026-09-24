@@ -1,0 +1,104 @@
+schemaVersion: 1
+id: SP22-142
+packId: pack_22
+name: Pearl Anime Paint
+category: 6. Anime Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - anime-illustration
+  - pearl-anime-paint
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Anime painting combines soft modeled forms and fine, partly integrated linework with small
+    drawn highlights and restrained pearlescent shifts.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Integrate line into painted edges
+    selectively while keeping defining features legible.
+  color_and_tone: >-
+    Retain the requested palette. Keep any iridescent color shift subtle and inside existing hues;
+    do not introduce a new dominant color or apply sheen across the image.
+  lighting_and_shadow: >-
+    Follow the requested light direction and contrast. Place small highlights only where that light
+    already meets a surface; do not create another source or a glow effect.
+  texture_and_material: >-
+    Distinguish polished surfaces through their existing material cues, with smooth paint transitions
+    and selective drawn reflections. Avoid a uniform metallic or foil-like finish.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, pose, crop and placement. Do not add a card frame, lettering
+    or layout.
+  atmosphere_and_mood: >-
+    Keep the requested setting and mood. Pearlescent variation is a paint behavior and does not
+    change the scene or narrative.
+  rendering_and_quality: >-
+    Build soft volume first, then use a few small, material-specific highlights. Keep the line and
+    painted edges subordinate to the requested subject rather than polishing every surface equally.
+avoidRules:
+  - all-over metallic sheen or foil-like finish
+  - highlights that introduce new dominant hues
+  - unrequested card frame or lettering
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-142.webp
+attributes:
+  negativePrompt: >-
+    all-over metallic sheen or foil-like finish, highlights that introduce new dominant hues,
+    unrequested card frame or lettering
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: painting
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: painting
+    avoidRules:
+      - text: all-over metallic sheen or foil-like finish
+        field: texture_and_material
+      - text: highlights that introduce new dominant hues
+        field: color_and_tone
+      - text: unrequested card frame or lettering
+        field: global
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S042
+    sourceTitle: Pearl Anime Paint
+    referenceIds:
+      - S02
+      - S30
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    derivedFrom:
+      - TCG-S042
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: anime-illustration
+  categoryName: 6. Anime Illustration
+  tags:
+    - trading-card-illustration
+    - anime-illustration
+    - pearl-anime-paint
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

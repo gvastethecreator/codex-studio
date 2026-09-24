@@ -19,7 +19,7 @@ Codex Studio is a local image studio. You create, review, and organize AI images
 
 The app runs on your machine. The UI is React/Vite. The API is Bun/Hono. Choose a provider for each image job: **ChatGPT** uses direct subscription HTTP (GPT Image 2.5 Flare, GPT Image 2.5 Sunburst, or GPT Image 2 when available), while **Codex** uses local `codex app-server`. ChatGPT does not require the Codex executable or its model catalog and does not create Codex threads.
 
-The main Codex path does not need `OPENAI_API_KEY`. Assets, job history, logs, and SQLite state live in your Studio Library, not in this repo.
+The ChatGPT subscription and Codex paths do not need `OPENAI_API_KEY`. Assets, job history, logs, and SQLite state live in your Studio Library, not in this repo.
 
 - Generate and edit images in the studio UI.
 - Browse workspaces, recipes, recent jobs, and assets in one place.
@@ -33,6 +33,8 @@ Create pairs a freeform text/image workspace and composer on the left with compa
 
 Library search queries the whole workspace catalog. Jobs separates active work, results needing review, and history; the inspector shows returned images before technical details. Animation frames show linked job status separately from attached frames. Sprite Atlas labels fixture checks separately from validation of imported art.
 
+Styles includes the Medieval and TCG visual catalogs. The 42 TCG finish, layout, and crossover research entries are visible as pending and cannot be applied as styles yet.
+
 | Catalog and persistent jobs                                                                                         | Studio Settings                                                                                                                |
 | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | <img src="docs/assets/screenshots/studio.webp" alt="Codex Studio catalog beside the persistent generation queue" /> | <img src="docs/assets/screenshots/settings.webp" alt="Codex Studio Settings with the local library path hidden for privacy" /> |
@@ -44,16 +46,15 @@ Library search queries the whole workspace catalog. Jobs separates active work, 
 You need:
 
 - Bun on `PATH`. Install it yourself from <https://bun.sh/docs/installation>. Codex Studio never silent-installs Bun.
-- Codex CLI from <https://github.com/openai/codex> only for the Codex provider
-- Codex CLI with `codex login` for the local app-server route.
-- Optional ChatGPT subscription login through Studio Settings Sign in for the HTTP route. That login is not bundled.
+- For ChatGPT HTTP: a ChatGPT subscription login through Studio Settings Sign in. That login is not bundled.
+- For Codex app-server: Codex CLI from <https://github.com/openai/codex> with `codex login`.
 - A modern browser
 
 The first-run surface is a detect, consent, mutate, stream, re-validate loop. One primary button follows this order:
 
 1. Missing Bun: open the official Bun installer.
 2. Missing Codex CLI and no Studio ChatGPT Sign in: open the Codex install docs.
-3. ChatGPT login missing: Sign in from Studio Settings, or open a visible `codex login` terminal.
+3. Login missing: use Studio Settings Sign in for ChatGPT HTTP, or open a visible `codex login` terminal for Codex app-server.
 4. Studio Library or Bootstrap Configuration missing: in-app Setup, or `bun run studio:onboard --setup`.
 5. Everything else ready except Codex Product Runtime, and Studio ChatGPT Sign in is not ready: Start app-server.
 6. Ready: Open Studio.
@@ -115,7 +116,7 @@ Then open:
 ## First minute
 
 1. Start the app with `bun run dev`.
-2. Make sure that the toolbar shows the local backend and the Codex session as ready.
+2. Make sure that the local backend is ready and the selected provider is connected.
 3. Choose a workspace or create one.
 4. Open `Recipes` for guided workflows, or stay in `Studio` for direct prompts.
 5. Generate. Then review results in the grid and the queue.

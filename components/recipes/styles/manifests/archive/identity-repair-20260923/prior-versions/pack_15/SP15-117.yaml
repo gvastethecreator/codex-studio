@@ -1,0 +1,93 @@
+schemaVersion: 1
+id: SP15-117
+packId: pack_15
+name: Atompunk
+category: 9. Space, Atomic & Ray Punks
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - space-atomic-and-ray-punks
+visualDna:
+  aesthetic: >-
+    Organize smooth orbital loops and counter-curves around broad, balanced planes with polished,
+    enamel-like color blocks.
+  subject_treatment: >-
+    Preserve the requested content; echo existing contours with rounded loops and clean, stable geometry
+    without adding a reactor or civic display.
+  color_and_tone: >-
+    Use a crisp light-dark foundation with one luminous cool or isotope-like accent and a small warm
+    counterpoint; honor explicitly requested colors.
+  lighting_and_shadow: >-
+    Keep highlights controlled and broad enough to read as polished surfaces; separate planes with clean,
+    uncluttered shadows.
+  texture_and_material: >-
+    Favor smooth enamel-like color, selective chrome sheen, and sparse terrazzo-like flecks rather than
+    busy panel detail.
+  camera_and_composition: >-
+    Preserve the requested crop; arrange curved geometry in a calm, balanced rhythm around the existing
+    focal area.
+  atmosphere_and_mood: Suggest optimistic retro-futurism through clarity, measured symmetry, and bright-dark contrast.
+  rendering_and_quality: >-
+    Keep surfaces clean, curves continuous, and luminous accents contained so the large forms stay
+    legible.
+avoidRules:
+  - radiation symbols or safety markings unless requested
+  - glow that washes out the surface planes
+  - excessive chrome reflections that obscure shape
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-117.webp
+attributes:
+  negativePrompt: >-
+    radiation symbols or safety markings unless requested, glow that washes out the surface planes,
+    excessive chrome reflections that obscure shape
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: radiation symbols or safety markings unless requested
+        field: rendering_and_quality
+      - text: glow that washes out the surface planes
+        field: rendering_and_quality
+      - text: excessive chrome reflections that obscure shape
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-065
+      - SP15-066
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: space-atomic-and-ray-punks
+  categoryName: 9. Space, Atomic & Ray Punks
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - space-atomic-and-ray-punks
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

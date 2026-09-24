@@ -1,0 +1,103 @@
+schemaVersion: 1
+id: SP22-163
+packId: pack_22
+name: Hard-Surface Spectral
+category: 8. Technical Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - technical-illustration
+  - localized-spectral-reflection
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Crisp technical painting uses geometric reflections inside existing forms, with clean boundaries
+    that describe surface orientation rather than adding graphic overlays.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Apply reflected color only where
+    the represented material already supports it; do not convert the subject's materials.
+  color_and_tone: >-
+    Keep the requested palette. Localize any chromatic reflection within its existing hues and the
+    existing surface instead of spreading a rainbow effect across the image.
+  lighting_and_shadow: >-
+    Follow the requested light direction and contrast. Tie each defined reflection to that light and
+    the existing surface orientation without adding another source.
+  texture_and_material: >-
+    Use sharp, contained reflection shapes and keep material changes visible. Treat the effect as
+    painted color, not a physical foil or print surface.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, pose, crop and placement. Reflections stay inside forms and do
+    not become labels, a frame or a card layout.
+  atmosphere_and_mood: >-
+    Keep the requested setting and mood. Local reflected color does not add a scene or ambient effect.
+  rendering_and_quality: >-
+    Establish the major planes first, then place limited geometric reflections where material and
+    light warrant them. Keep contours and defining details crisp.
+avoidRules:
+  - rainbow or spectral effects across every surface
+  - reflections that change the requested material or palette
+  - unrequested labels, frame or card layout
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-163.webp
+attributes:
+  negativePrompt: >-
+    rainbow or spectral effects across every surface, reflections that change the requested material
+    or palette, unrequested labels, frame or card layout
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: painting
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: painting
+    avoidRules:
+      - text: rainbow or spectral effects across every surface
+        field: texture_and_material
+      - text: reflections that change the requested material or palette
+        field: color_and_tone
+      - text: unrequested labels, frame or card layout
+        field: global
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S063
+    sourceTitle: Hard-Surface Spectral
+    referenceIds:
+      - S03
+      - S35
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    derivedFrom:
+      - TCG-S063
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: technical-illustration
+  categoryName: 8. Technical Illustration
+  tags:
+    - trading-card-illustration
+    - technical-illustration
+    - localized-spectral-reflection
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

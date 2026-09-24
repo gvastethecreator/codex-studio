@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP22-134
+packId: pack_22
+name: Biomorphic Brush
+category: 5. Character & Readable Forms
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - character-and-readable-forms
+  - volume-following-brushwork
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Organic surface painting models existing curvature with brush marks that follow each volume, using
+    softer edges within a mass and firmer edges where forms overlap.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Let brushwork follow the subject's
+    existing forms without turning machines or other objects into flesh.
+  color_and_tone: >-
+    Allow local color variation within the requested palette while keeping value groups clear. Avoid
+    excess shine or a color cast that changes the represented materials.
+  lighting_and_shadow: >-
+    Follow the requested light direction and shadow pattern. Express volume through mark direction and
+    overlap without adding a new light source or glow.
+  texture_and_material: >-
+    Adapt texture and stroke direction to each requested material. Keep the mark-making tied to volume
+    rather than making every surface look organic or skin-like.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and element placement. Organic brushwork does not
+    require a creature, close-up or rearrangement.
+  atmosphere_and_mood: >-
+    Keep the requested mood and setting. The name describes a brush behavior, not a biological subject
+    or a required scene.
+  rendering_and_quality: >-
+    Build soft transitions within larger masses and use crisp edges to clarify overlap. Keep strokes
+    directional and selective so the underlying structure remains legible.
+avoidRules:
+  - flesh-like transformation of represented materials
+  - unrelated surface-wide texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-134.webp
+attributes:
+  negativePrompt: flesh-like transformation of represented materials, unrelated surface-wide texture
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: painting
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: painting
+    avoidRules:
+      - text: flesh-like transformation of represented materials
+        field: texture_and_material
+      - text: unrelated surface-wide texture
+        field: texture_and_material
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S034
+    sourceTitle: Biomorphic Brush
+    referenceIds:
+      - S25
+      - S34
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: character-and-readable-forms
+  categoryName: 5. Character & Readable Forms
+  tags:
+    - trading-card-illustration
+    - character-and-readable-forms
+    - volume-following-brushwork
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

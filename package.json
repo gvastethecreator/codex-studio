@@ -2,7 +2,7 @@
   "name": "codex-studio",
   "version": "0.0.0",
   "private": true,
-  "description": "Local-first studio to generate and manage images with Codex/ChatGPT via codex app-server.",
+  "description": "Local-first studio to generate and manage images through ChatGPT HTTP, Codex app-server, and other providers.",
   "keywords": [
     "bun",
     "chatgpt",

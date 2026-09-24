@@ -1,0 +1,89 @@
+schemaVersion: 1
+id: SP15-104
+packId: pack_15
+name: Streetpunk
+category: 6. Street, Riot & DIY Punks
+version: 2
+supportedTasks: &id002
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags: &id001
+  - curation-v2
+  - identity-reviewed
+  - visual-evaluation-pending
+  - street-riot-and-diy-punks
+visualDna:
+  aesthetic:
+    'Build a streetpunk identity from defiant clothing and equipment: tartan panels, patched leather,
+    studs or spikes, improvised fastenings, and hand-marked street graphics form a tough, visibly assembled
+    silhouette.'
+  subject_treatment:
+    Preserve the requested subject and action; style compatible unspecified clothing, gear,
+    and surfaces with DIY fastenings, tartan, patched leather, or a few stickers and stencil marks without
+    adding a protest scene.
+  color_and_tone:
+    Use black, worn leather brown, tartan red or green, and sharp cyan or amber street accents;
+    let clothing and equipment provide the main graphic blocks, with street marks secondary.
+  lighting_and_shadow:
+    Use direct streetlight or daylight to reveal garment layers, fastenings, leather edges,
+    and a few graphic marks; keep form dimensional rather than flattening it into a paper collage.
+  texture_and_material:
+    Separate patched leather, tartan cloth, metal studs, stitched joins, and occasional
+    painted or adhesive marks; concentrate wear at seams and contact points.
+  camera_and_composition:
+    Keep the subject's silhouette and clothing/equipment shapes prominent; use a few
+    angular street-graphic accents for rhythm while preserving depth and requested camera.
+  atmosphere_and_mood:
+    Feel immediate, public, and self-organized, with a defiant or convivial tone determined
+    by the requested content.
+  rendering_and_quality:
+    Make studs, fastenings, tartan patches, and leather silhouettes legible at thumbnail
+    scale; keep street graphics bold but secondary and avoid legible slogans or branded tags.
+avoidRules:
+  - a required protest, alley, or poster wall
+  - unrequested readable slogans or logos
+  - flattening the whole image into pasted paper
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-104.webp
+attributes:
+  negativePrompt:
+    a required protest, alley, or poster wall, unrequested readable slogans or logos, flattening
+    the whole image into pasted paper
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: a required protest, alley, or poster wall
+        field: rendering_and_quality
+      - text: unrequested readable slogans or logos
+        field: rendering_and_quality
+      - text: flattening the whole image into pasted paper
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-104
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: street-riot-and-diy-punks
+  categoryName: 6. Street, Riot & DIY Punks
+  tags: *id001
+  supportedTasks: *id002
+  hasDefaultImage: true

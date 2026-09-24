@@ -1,0 +1,108 @@
+schemaVersion: 1
+id: SP22-117
+packId: pack_22
+name: Thorn Etching
+category: 3. Strange Ink & Paint
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - strange
+  - angular-etching
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Build the drawing from dry-pen strokes, angular crosshatching and broken contours. Let line
+    direction and narrow unmarked gaps describe volume through the ink itself.
+  subject_treatment: >-
+    Preserve the requested identity, proportions and function. Keep the main contour open where
+    appropriate, and add measured internal branches only where they clarify the existing form.
+  color_and_tone: >-
+    Respect the requested palette. Use hatch density and reserved gaps to separate dark and light
+    values without imposing monochrome when colors are specified.
+  lighting_and_shadow: >-
+    Follow the requested light direction and intensity. Translate shadow into line direction and
+    density; keep the lit areas open without adding a new light source or setting.
+  texture_and_material: >-
+    Keep the dry, slightly broken quality inside the pen strokes. Let hatching follow the drawn
+    structure rather than adding uniform grain over the depicted materials.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, pose, crop and arrangement. Keep the existing silhouettes and
+    negative spaces readable within that composition.
+  atmosphere_and_mood: >-
+    Preserve the requested mood and narrative. Angular line rhythm is a drawing behavior and does
+    not set the scene's genre or emotional intensity.
+  rendering_and_quality: >-
+    Establish the silhouette and broad value groups before small marks. Keep open gaps visible at
+    reduced size; stop hatching before it closes the form or obscures identity.
+avoidRules:
+  - unrequested thorn, monster, or vegetation motifs
+  - internal branches that alter the subject's identity or function
+  - hatch density that closes important light gaps
+  - unrequested horror or violence
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-117.webp
+attributes:
+  negativePrompt: >-
+    unrequested thorn, monster, or vegetation motifs, internal branches that alter the subject's
+    identity or function, hatch density that closes important light gaps, unrequested horror or
+    violence
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: etching
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: etching
+    avoidRules:
+      - text: unrequested thorn, monster, or vegetation motifs
+        field: global
+      - text: internal branches that alter the subject's identity or function
+        field: subject_treatment
+      - text: hatch density that closes important light gaps
+        field: rendering_and_quality
+      - text: unrequested horror or violence
+        field: global
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S017
+    sourceTitle: Thorn Etching
+    referenceIds:
+      - S15
+      - S61
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    derivedFrom:
+      - TCG-S017
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: strange-ink-and-paint
+  categoryName: 3. Strange Ink & Paint
+  tags:
+    - trading-card-illustration
+    - strange
+    - angular-etching
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

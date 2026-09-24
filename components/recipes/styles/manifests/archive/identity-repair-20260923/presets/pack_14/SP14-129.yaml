@@ -1,0 +1,95 @@
+schemaVersion: 1
+id: SP14-129
+packId: pack_14
+name: Branching Contours
+category: Organic Contours
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - organic-contours
+visualDna:
+  aesthetic: >-
+    Build layered forms from separate contours that branch, curl, or taper at changing scales. Emphasize
+    growth direction and nested silhouette hierarchy without requiring a particular plant, animal, or
+    cultural motif.
+  subject_treatment: >-
+    Preserve the prompt's subject and action. Use existing anatomy or structure to guide the layered
+    contours; do not substitute petals, roots, feathers, or scales for the requested form.
+  color_and_tone: >-
+    Retain the requested hues and distinguish overlapping layers by value or temperature. Choose accents
+    for the subject at hand rather than imposing a fixed dark, floral, or metallic palette.
+  lighting_and_shadow: >-
+    Follow the stated light. Let broad shadows separate the main form from secondary layers, with small
+    edge highlights only where they clarify depth.
+  texture_and_material: >-
+    Use texture at the scale of the represented surface, whether soft, fibrous, plated, or metallic. Keep
+    adjacent layers distinct and avoid a uniform engraved pattern.
+  camera_and_composition: >-
+    Preserve the requested view and placement. If the composition is open, use a core-to-edge flow or
+    branching silhouette while keeping the subject's proportions recognizable.
+  atmosphere_and_mood: >-
+    Suggest motion, inheritance, or endurance through the direction and spacing of layers, as appropriate
+    to the prompt. Do not impose elegy, prophecy, or ancestral meaning.
+  rendering_and_quality: >-
+    Separate layers with clear overlap cues and varied scale. Keep contours individually readable; do not
+    weave them together or let dense detail obscure the focal form.
+avoidRules:
+  - Do not weave separate contours into a ribbon or lattice.
+  - Do not add a plant, serpent, feather, or lineage motif when the prompt does not request it.
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-129.webp
+attributes:
+  negativePrompt: >-
+    Do not weave separate contours into a ribbon or lattice., Do not add a plant, serpent, feather, or
+    lineage motif when the prompt does not request it.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: Do not weave separate contours into a ribbon or lattice.
+        field: rendering_and_quality
+      - text: Do not add a plant, serpent, feather, or lineage motif when the prompt does not request it.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP14-008
+      - SP14-015
+      - SP14-017
+      - SP14-122
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: organic-contours
+  categoryName: Organic Contours
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - organic-contours
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

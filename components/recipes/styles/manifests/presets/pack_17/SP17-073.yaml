@@ -1,0 +1,119 @@
+schemaVersion: 1
+id: SP17-073
+packId: pack_17
+name: Soot-Softened Planes
+category: 1. Dark Fantasy & Gothic Courts
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - dark-fantasy-and-gothic-courts
+  - portable-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: Dark illustration built from broad charcoal and cool ash value planes, selective soot-softened edges, and a quiet matte finish.
+  subject_treatment: >-
+    Keep each requested subject, function, count, proportions, pose, and distinguishing details.
+    Shape recognition with a clear silhouette, selective edge loss, and restrained internal
+    linework; do not add relic-like accessories, costumes, or anatomy changes.
+  color_and_tone: >-
+    Honor explicitly requested colors. When unspecified, use a restrained cool ash gray, bone
+    white, and soot black range with a clear value hierarchy; use muted ember orange or tarnished
+    brass only when compatible with the requested palette.
+  lighting_and_shadow: >-
+    Preserve the requested light source and direction. Organize shadows into open, broad masses;
+    use cool rim separation or a small warm accent only when it fits the stated lighting without
+    inventing a source.
+  texture_and_material: >-
+    Render surfaces with quiet matte shading, softly soot-like edge transitions, and sparse wear
+    at structural boundaries. Keep the depicted material identity intact and microtexture rare.
+  camera_and_composition: >-
+    Respect the requested camera, crop, and object placement. Use value grouping and clear planes
+    to keep silhouettes legible inside that composition; add no low angle, diagonal staging, or
+    fixed negative-space layout.
+  atmosphere_and_mood: >-
+    Follow the requested tone. Express weight, tension, or restraint through contrast and spacing,
+    without adding medieval or funerary lore, sacred symbols, ruins, or dramatic events.
+  rendering_and_quality: >-
+    Use dark digital illustration with a clear contour hierarchy, crisp material planes, open
+    shadow detail, and low, controlled microtexture. Apply restrained edge loss; avoid
+    indiscriminate denoising, muddiness, or heavy noise.
+avoidRules:
+  - unrequested medieval props including relics or runes or skulls or armor or ruins or court symbols
+  - literal ash or soot coating when another material is specified
+  - forced funerary or sacred narrative
+  - invented ember or other lighting sources
+  - forced low angle framing or diagonal staging or fixed negative space layout
+  - uniform soot speckle
+  - scratchy high-frequency line texture
+  - indiscriminate cracking or erosion
+  - collapsed muddy shadows
+  - glossy plastic finish
+  - watermark
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-073.webp
+attributes:
+  negativePrompt: unrequested medieval props including relics or runes or skulls or armor or ruins or court symbols, literal ash or soot coating when another material is specified, forced funerary or sacred narrative, invented ember or other lighting sources, forced low angle framing or diagonal staging or fixed negative space layout, uniform soot speckle, scratchy high-frequency line texture, indiscriminate cracking or erosion, collapsed muddy shadows, glossy plastic finish, watermark
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: unrequested medieval props including relics or runes or skulls or armor or ruins or court symbols
+        field: global
+      - text: literal ash or soot coating when another material is specified
+        field: global
+      - text: forced funerary or sacred narrative
+        field: atmosphere_and_mood
+      - text: invented ember or other lighting sources
+        field: lighting_and_shadow
+      - text: forced low angle framing or diagonal staging or fixed negative space layout
+        field: camera_and_composition
+      - text: uniform soot speckle
+        field: texture_and_material
+      - text: scratchy high-frequency line texture
+        field: rendering_and_quality
+      - text: indiscriminate cracking or erosion
+        field: texture_and_material
+      - text: collapsed muddy shadows
+        field: rendering_and_quality
+      - text: glossy plastic finish
+        field: texture_and_material
+      - text: watermark
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP17-001
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dark-fantasy-and-gothic-courts
+  categoryName: 1. Dark Fantasy & Gothic Courts
+  tags:
+    - curation-v2
+    - dark-fantasy-and-gothic-courts
+    - portable-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

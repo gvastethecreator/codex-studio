@@ -1,0 +1,104 @@
+schemaVersion: 1
+id: SP22-157
+packId: pack_22
+name: Mechanical Cel
+category: 8. Technical Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - technical-illustration
+  - mechanical-cel
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Clean cel rendering separates existing forms with solid color planes and small contact shadows.
+    The outer contour stays clear while interior lines carry less weight.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Clarify only overlaps and changes
+    of form already visible in the requested subject.
+  color_and_tone: >-
+    Keep the requested palette and color relationships. Use solid fills and small flat reflections
+    within the existing colors without adding detail to the subject.
+  lighting_and_shadow: >-
+    Follow the requested light direction and contrast. Use restrained contact shadows to separate
+    existing forms without adding a light source or extra shadow shapes.
+  texture_and_material: >-
+    Keep fills clean and preserve each requested material. Do not invent surface engraving or
+    technical detail that is not in the content.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, pose, crop and placement. Do not add labels, a frame, or a
+    card layout.
+  atmosphere_and_mood: >-
+    Keep the requested setting and tone. Cel rendering describes the marks and values, not a new
+    subject, scene or narrative.
+  rendering_and_quality: >-
+    Establish silhouette and large color planes before contact shadows. Keep internal lines lighter
+    and limited to details needed to read the existing form.
+avoidRules:
+  - invented components or surface detailing
+  - heavy interior linework that competes with the silhouette
+  - unrequested labels, frame or card layout
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-157.webp
+attributes:
+  negativePrompt: >-
+    invented components or surface detailing, heavy interior linework that competes with the
+    silhouette, unrequested labels, frame or card layout
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: invented components or surface detailing
+        field: subject_treatment
+      - text: heavy interior linework that competes with the silhouette
+        field: rendering_and_quality
+      - text: unrequested labels, frame or card layout
+        field: global
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S057
+    sourceTitle: Mechanical Cel
+    referenceIds:
+      - S35
+      - S25
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    derivedFrom:
+      - TCG-S057
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: technical-illustration
+  categoryName: 8. Technical Illustration
+  tags:
+    - trading-card-illustration
+    - technical-illustration
+    - mechanical-cel
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -13,91 +13,63 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Kinetic Impact-Line Choreography operates as a portable anime-lifestyle router: combine Kinetic
-    Impact Line Choreography identity cues through Speed line forests; impact burst radials;
-    afterimage trails; aura deformation; kinetic fracture geometry; and readable force direction
-    with broad anime style spectrum grammar with experimental line, material specific finish, auteur
-    adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the
-    preset supplies anime style behavior after prompt X rather than a required scene, character,
-    franchise image, or card composition.
+    Use radial speed lines, afterimage trails and impact bursts only to describe motion or force
+    already present; keep the vectors directional and the subject readable.
   subject_treatment: >-
-    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
-    style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic
-    surface logic, and prompt-preserving silhouette discipline; subjects may be characters,
-    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
-    prompt.
+    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
+    treatment to the existing forms without substituting subjects, adding accessories or changing
+    their function.
   color_and_tone: >-
-    Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop,
-    thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values
-    readable, accent roles intentional, skin or material midtones stable, and palette behavior
-    attached to the prompt instead of pasted anime decoration.
+    Palette defaults apply only where the prompt leaves color open: preserve the prompt palette and
+    reserve high-contrast accents for force paths and contact points.
   lighting_and_shadow: >-
-    Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze,
-    speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression,
-    silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or
-    screenshot-like flatness.
+    Use sharp value bursts and brief edge highlights to clarify the existing vector; do not add an
+    energy aura by default.
   texture_and_material: >-
-    Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map
-    pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile,
-    glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy
-    surface chatter.
+    Keep speed marks fine and directional, with sparse afterimages; avoid filling the whole frame
+    with line noise.
   camera_and_composition: >-
-    Compose through auteur-aware framing, material seams, impact vectors, postcard freezes,
-    distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as
-    reusable anime framing grammar, allowing close acting, objects, performances, action,
-    environments, or abstract prompts without one required pose or location.
+    Align radiating marks to the prompted movement or impact while preserving pose, camera and
+    layout.
   atmosphere_and_mood: >-
-    Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance,
-    tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become
-    cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while
-    preserving its anime lineage.
+    Kinetic intensity is a graphic rendering of the requested action, not permission to invent
+    action.
   rendering_and_quality: >-
-    Finish with clean experimental anime finish with strong style recognition, stable subject
-    structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss;
-    prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no
-    fake readable text, no UI, and no generic AI anime gloss.
+    For still subjects, retain a still composition and use line rhythm only as a subtle graphic
+    treatment; add no aura or impact event. Keep important silhouettes and joins legible; no
+    watermark, unrequested text or interface.
   key_features: >-
-    Speed line forests; impact burst radials; afterimage trails; aura deformation; kinetic fracture
-    geometry; and readable force direction
+    Directional speed-line forests; impact radials; restrained afterimage trails; force vectors;
+    clear silhouette.
   creative_brief: >-
-    Use Kinetic Impact-Line Choreography after prompt X as a transferable anime character/lifestyle
-    layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset
-    supplies Speed line forests, impact burst radials, afterimage trails, aura deformation, kinetic
-    fracture geometry, and readable force direction, color logic, lighting, material finish,
-    composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed
-    venue, fixed prop bundle, title screenshot, or sample-card composition.
+    Apply this visual treatment to the requested content: Directional speed-line forests; impact
+    radials; restrained afterimage trails; force vectors; clear silhouette. Preserve its identity,
+    action, materials, composition and requested tone; introduce no persona, scene, franchise cue or
+    extra motif.
 avoidRules:
-  - still
-  - calm
-  - static
-  - peaceful
-  - gentle
-  - slow
-  - quiet
-  - subtle
-  - restrained
-  - realistic movement
-  - generic AI anime gloss
-  - auteur copycat
-  - fixed source scene
-  - canon character copy
-  - title scene copy
-  - literal sample card setup
-  - fixed anime cast
-  - generic anime filter
-  - prompt literal card reuse
+  - photoreal cosplay rendering
+  - 3D render look
+  - plastic airbrush gloss obscuring the style's defining marks
+  - undifferentiated anime filter erasing the preset's signature mechanics
+  - unrequested default-image characters, costume details, props or setting
+  - unrequested default-image framing
+  - garbled pseudo-text
+  - unrequested interface overlay
   - watermark
-  - readable text
-  - fake UI
+  - unrequested logo or signature artifact
+  - speed lines unrelated to prompted motion
+  - afterimage trails detached from moving forms
+  - impact radials obscuring silhouette
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-109.webp
 attributes:
   negativePrompt: >-
-    still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement,
-    generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene
-    copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card
-    reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise
-    costume, logo, signature
+    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
+    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
+    unrequested default-image characters, costume details, props or setting, unrequested
+    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
+    unrequested logo or signature artifact, speed lines unrelated to prompted motion, afterimage
+    trails detached from moving forms, impact radials obscuring silhouette
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

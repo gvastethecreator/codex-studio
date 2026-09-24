@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP22-106
+packId: pack_22
+name: Crosshatched Tempera
+category: 1. Workshop Painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - workshop-painting
+  - tempera-painting
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Fine-stroke opaque tempera painting models form with legible short crosshatched marks and
+    disciplined tonal transitions.
+  subject_treatment: >-
+    Preserve requested identity, proportions, pose and action. Build volume with small strokes that
+    follow existing forms without adding unrequested ornament, costume or historical motifs.
+  color_and_tone: >-
+    Enrich nearby values with restrained color variation inside the requested palette. Do not impose
+    jewel hues, metallic gold or any other fixed accent color.
+  lighting_and_shadow: >-
+    Respect the requested light and shadow. Use controlled opaque transitions rather than adding
+    a bright rim, reflective object or new illumination.
+  texture_and_material: >-
+    Keep the paint surface subtly satiny and detail selective while preserving the requested material
+    appearance of the represented subject.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and element placement. Do not impose a miniature,
+    icon or decorative border layout unless one is requested.
+  atmosphere_and_mood: >-
+    Retain the requested atmosphere. Fine crosshatching does not imply jewelry, ceremony, antiquity
+    or a storybook scene.
+  rendering_and_quality: >-
+    Let short strokes remain legible where they turn form, but limit microdetail to selected areas.
+    Keep edges controlled without making every boundary equally sharp.
+avoidRules:
+  - decorative crosshatching unrelated to form
+  - uniform microdetail
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-106.webp
+attributes:
+  negativePrompt: decorative crosshatching unrelated to form, uniform microdetail
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: painting
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: painting
+    avoidRules:
+      - text: decorative crosshatching unrelated to form
+        field: rendering_and_quality
+      - text: uniform microdetail
+        field: rendering_and_quality
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S006
+    sourceTitle: Tempera Jewel
+    referenceIds:
+      - S15
+      - S54
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: workshop-painting
+  categoryName: 1. Workshop Painting
+  tags:
+    - trading-card-illustration
+    - workshop-painting
+    - tempera-painting
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

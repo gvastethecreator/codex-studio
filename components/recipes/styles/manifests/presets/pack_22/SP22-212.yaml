@@ -1,0 +1,100 @@
+schemaVersion: 1
+id: SP22-212
+packId: pack_22
+name: Glyph-Free Graphic Reduction
+category: 14. Symbolic Graphic Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - symbolic-graphic-illustration
+  - glyph-free-graphic-reduction
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Thick, consistent marks reduce secondary detail into compact graphic shapes while preserving the
+    recognizable silhouette and major value contrasts.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose, action and function. Summarize visual details as
+    shapes only; never turn them into writing, codes or a new subject.
+  color_and_tone: >-
+    Preserve the requested palette, grouping it into a small number of clear values without imposing a
+    fixed color scheme.
+  lighting_and_shadow: >-
+    Follow the requested lighting and simplify its existing shadow pattern; do not add a halo, glow or
+    unsupported light source.
+  texture_and_material: >-
+    Keep the graphic finish uniform and clean; preserve material cues in the silhouette and requested
+    palette without adding texture as a substitute for identity.
+  camera_and_composition: >-
+    Retain the requested viewpoint, crop, framing and placement. Simplification does not convert the image
+    into an icon sheet, emblem or layout.
+  atmosphere_and_mood: >-
+    Maintain the requested setting and tone. Compact graphic marks carry no required language, religion,
+    symbolic meaning or cultural theme.
+  rendering_and_quality: >-
+    Use clear thick lines, simple shape masses and strong separation; keep defining features recognizable
+    while avoiding accidental letter-like marks.
+avoidRules:
+  - invented alphabets, readable text or functional codes
+  - unrequested emblems, religious or cultural symbols
+  - extra details that alter identity or function
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-212.webp
+attributes:
+  negativePrompt: invented alphabets, readable text or functional codes, unrequested emblems, religious or cultural symbols, extra details that alter identity or function
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: drawing
+    avoidRules:
+      - text: invented alphabets, readable text or functional codes
+        field: global
+      - text: unrequested emblems, religious or cultural symbols
+        field: atmosphere_and_mood
+      - text: extra details that alter identity or function
+        field: subject_treatment
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S112
+    sourceTitle: Glyphic Reduction
+    referenceIds:
+      - S56
+      - S41
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: symbolic-graphic-illustration
+  categoryName: 14. Symbolic Graphic Illustration
+  tags:
+    - trading-card-illustration
+    - symbolic-graphic-illustration
+    - glyph-free-graphic-reduction
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

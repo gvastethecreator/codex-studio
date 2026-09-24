@@ -1,15 +1,59 @@
-import { existsSync, mkdtempSync, rmSync } from 'node:fs';
+import { existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import sharp from 'sharp';
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 
 import {
   IMAGEGEN_DENOISE_SUFFIX,
+  HttpStatusError,
+  preserveReviewedChatgptLock,
+  preservePreviousStyleDefault,
+  request,
   removeStyleDefaultFailuresForPreset,
   sanitizeStylePromptName,
   writeRepoWebpAsset,
 } from './style-default-utils';
+
+describe('single-attempt job intake', () => {
+  it('preserves a definite HTTP 400 rejection for lock cleanup', async () => {
+    let calls = 0;
+    vi.stubGlobal('fetch', async () => {
+      calls += 1;
+      return new Response('{"code":"invalid_request_body"}', { status: 400 });
+    });
+
+    try {
+      await expect(
+        request('/api/jobs', { method: 'POST', body: '{}' }, { attempts: 1 }),
+      ).rejects.toMatchObject({ status: 400, name: HttpStatusError.name });
+      expect(calls).toBe(1);
+    } finally {
+      vi.unstubAllGlobals();
+    }
+  });
+
+  it('moves only the reviewed per-preset lock to job evidence without overwriting it', async () => {
+    const directory = mkdtempSync(path.join(tmpdir(), 'codex-studio-style-lock-'));
+    const lockPath = path.join(directory, 'SP01-001.chatgpt.lock');
+    const evidencePath = path.join(directory, 'SP01-001.reviewed-job.chatgpt.lock');
+
+    try {
+      writeFileSync(lockPath, 'prior uncertain request');
+      await preserveReviewedChatgptLock(lockPath, evidencePath);
+
+      expect(existsSync(lockPath)).toBe(false);
+      expect(readFileSync(evidencePath, 'utf8')).toBe('prior uncertain request');
+
+      writeFileSync(lockPath, 'current lock');
+      await expect(preserveReviewedChatgptLock(lockPath, evidencePath)).rejects.toThrow();
+      expect(readFileSync(lockPath, 'utf8')).toBe('current lock');
+      expect(readFileSync(evidencePath, 'utf8')).toBe('prior uncertain request');
+    } finally {
+      rmSync(directory, { recursive: true, force: true });
+    }
+  });
+});
 
 describe('sanitizeStylePromptName', () => {
   it('keeps ordinary preset names intact', () => {
@@ -71,6 +115,15 @@ describe('writeRepoWebpAsset', () => {
 
       expect(existsSync(destinationPath)).toBe(true);
       expect(existsSync(archivePath)).toBe(false);
+      const firstCard = readFileSync(destinationPath);
+      const previousAlternate = path.join(directory, 'previous', 'output.webp');
+      await preservePreviousStyleDefault(destinationPath, previousAlternate);
+      expect(readFileSync(previousAlternate)).toEqual(firstCard);
+      await preservePreviousStyleDefault(destinationPath, previousAlternate);
+      await expect(
+        writeRepoWebpAsset(sourcePath, destinationPath, { archive: false, exclusive: true }),
+      ).rejects.toThrow();
+      expect(readFileSync(destinationPath)).toEqual(firstCard);
     } finally {
       if (previousArchivePath === undefined) delete process.env.STYLE_DEFAULT_CARD_ARCHIVE_DIR;
       else process.env.STYLE_DEFAULT_CARD_ARCHIVE_DIR = previousArchivePath;

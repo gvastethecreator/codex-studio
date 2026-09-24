@@ -1,0 +1,91 @@
+schemaVersion: 1
+id: SP15-083
+packId: pack_15
+name: Clockpunk
+category: 1. Classic Industrial Punks
+version: 3
+supportedTasks: &id002
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags: &id001
+  - curation-v2
+  - identity-reviewed
+  - visual-evaluation-pending
+  - classic-industrial-punks
+visualDna:
+  aesthetic:
+    A folio-drawn precision-clockwork illustration with fine ink construction lines, visible escapements,
+    spring tension, repeated tooth intervals and measured joints, distinct from Steampunk pressure machinery.
+  subject_treatment: >-
+    Preserve the requested subject and function. Redesign open forms around one focal clock-regulated mechanism:
+    a readable escapement or balance wheel, wound spring and regular tooth intervals linked to the subject's
+    motion. Where no moving mechanism fits, use measured linkages on an existing form. Avoid broad pressure
+    fittings or decorative gearwork.
+  color_and_tone:
+    Lead with blued steel, graphite ink and aged ivory; use brass only at small pivots and add one restrained
+    vermilion or enamel accent. Keep explicit colors and separate repeated parts by value.
+  lighting_and_shadow:
+    Honor specified lighting. Use narrow accents to reveal moving parts and crisp overlap
+    shadows; add no clock-like glow or new source.
+  texture_and_material:
+    Separate machined teeth, wound springs, enamel, porcelain and steel through fine engraving
+    and clean wear. Translate open materials into precision craft.
+  camera_and_composition:
+    Preserve view and placement. Let measured intervals and interlocking arcs organize
+    the form without imposing a dial, tower or radial layout.
+  atmosphere_and_mood:
+    Create measured tension, ingenuity or precision through controlled repetition. Keep
+    the requested mood; public strikes, guilds and clockmakers are optional.
+  rendering_and_quality:
+    Render as a technical folio illustration with precise black engraving and translucent watercolor planes,
+    not a photoreal product shot. Keep one legible escapement and a few clear fine teeth; avoid unreadable
+    micro-gears, random dials and mechanical noise.
+avoidRules:
+  - Do not turn the subject into a clock face or impose a clocktower, guild or public assembly.
+  - Do not add dial numerals or a radial layout unless requested.
+  - Keep escapement and spring details large enough to read.
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-083.webp
+attributes:
+  negativePrompt:
+    Do not turn the subject into a clock face or impose a clocktower, guild or public assembly.,
+    Do not add dial numerals or a radial layout unless requested., Keep escapement and spring details large
+    enough to read.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: Do not turn the subject into a clock face or impose a clocktower, guild or public assembly.
+        field: rendering_and_quality
+      - text: Do not add dial numerals or a radial layout unless requested.
+        field: rendering_and_quality
+      - text: Keep escapement and spring details large enough to read.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-005
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: classic-industrial-punks
+  categoryName: 1. Classic Industrial Punks
+  tags: *id001
+  supportedTasks: *id002
+  hasDefaultImage: true

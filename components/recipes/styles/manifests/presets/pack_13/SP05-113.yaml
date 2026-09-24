@@ -13,90 +13,63 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Leaded Jewel-Light Segmentation operates as a portable anime-lifestyle router: combine Leaded
-    Jewel Light Segmentation identity cues through Lead came segmentation; jewel translucency;
-    backlit glow; rosette rhythm; glass imperfection; and illuminated color panes with broad anime
-    style spectrum grammar with experimental line, material specific finish, auteur adjacent motion,
-    graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies
-    anime style behavior after prompt X rather than a required scene, character, franchise image, or
-    card composition.
+    Segment existing forms with dark lead-like seams and luminous color panes; suggest transmitted
+    light without converting every object into literal glass.
   subject_treatment: >-
-    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
-    style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic
-    surface logic, and prompt-preserving silhouette discipline; subjects may be characters,
-    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
-    prompt.
+    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
+    treatment to the existing forms without substituting subjects, adding accessories or changing
+    their function.
   color_and_tone: >-
-    Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop,
-    thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values
-    readable, accent roles intentional, skin or material midtones stable, and palette behavior
-    attached to the prompt instead of pasted anime decoration.
+    Palette defaults apply only where the prompt leaves color open: use jewel-toned panes and clean
+    boundaries while retaining prompt-critical color and local material cues.
   lighting_and_shadow: >-
-    Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze,
-    speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression,
-    silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or
-    screenshot-like flatness.
+    Let light pass through pane-like color regions and catch seam edges; preserve the actual
+    lighting setup.
   texture_and_material: >-
-    Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map
-    pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile,
-    glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy
-    surface chatter.
+    Draw strong seam contours, small glass-like imperfections and rosette rhythms only when the
+    source geometry supports them.
   camera_and_composition: >-
-    Compose through auteur-aware framing, material seams, impact vectors, postcard freezes,
-    distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as
-    reusable anime framing grammar, allowing close acting, objects, performances, action,
-    environments, or abstract prompts without one required pose or location.
+    Use segmentation to clarify existing shape planes; keep crop, silhouette and spatial layout
+    intact.
   atmosphere_and_mood: >-
-    Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance,
-    tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become
-    cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while
-    preserving its anime lineage.
+    Illuminated color feels crafted and quiet; honor requested darkness or subtlety by lowering
+    glow, not deleting seams.
   rendering_and_quality: >-
-    Finish with clean experimental anime finish with strong style recognition, stable subject
-    structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss;
-    prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no
-    fake readable text, no UI, and no generic AI anime gloss.
+    Render the pane logic as a visual treatment while preserving material identity; add no window,
+    rosette or stained-glass object. Keep important silhouettes and joins legible; no watermark,
+    unrequested text or interface.
   key_features: >-
-    Lead came segmentation; jewel translucency; backlit glow; rosette rhythm; glass imperfection;
-    and illuminated color panes
+    Leaded segmentation; jewel translucency; transmitted color; seam highlights; controlled glass
+    imperfection.
   creative_brief: >-
-    Use Leaded Jewel-Light Segmentation after prompt X as a transferable anime character/lifestyle
-    layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset
-    supplies Lead came segmentation, jewel translucency, backlit glow, rosette rhythm, glass
-    imperfection, and illuminated color panes, color logic, lighting, material finish, composition
-    rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed
-    prop bundle, title screenshot, or sample-card composition.
+    Apply this visual treatment to the requested content: Leaded segmentation; jewel translucency;
+    transmitted color; seam highlights; controlled glass imperfection. Preserve its identity,
+    action, materials, composition and requested tone; introduce no persona, scene, franchise cue or
+    extra motif.
 avoidRules:
-  - flat
-  - opaque
-  - subtle
-  - muted
-  - dark
-  - realistic render
-  - soft lighting
-  - smooth gradient
-  - simple
-  - generic AI anime gloss
-  - auteur copycat
-  - fixed source scene
-  - canon character copy
-  - title scene copy
-  - literal sample card setup
-  - fixed anime cast
-  - generic anime filter
-  - prompt literal card reuse
+  - photoreal cosplay rendering
+  - 3D render look
+  - plastic airbrush gloss obscuring the style's defining marks
+  - undifferentiated anime filter erasing the preset's signature mechanics
+  - unrequested default-image characters, costume details, props or setting
+  - unrequested default-image framing
+  - garbled pseudo-text
+  - unrequested interface overlay
   - watermark
-  - readable text
-  - fake UI
+  - unrequested logo or signature artifact
+  - pane fill hiding lead-like seam boundaries
+  - bloom washing out segmentation
+  - unprompted rosette geometry
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-113.webp
 attributes:
   negativePrompt: >-
-    flat, opaque, subtle, muted, dark, realistic render, soft lighting, smooth gradient, simple,
-    generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene
-    copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card
-    reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise
-    costume, logo, signature
+    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
+    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
+    unrequested default-image characters, costume details, props or setting, unrequested
+    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
+    unrequested logo or signature artifact, pane fill hiding lead-like seam boundaries, bloom
+    washing out segmentation, unprompted rosette geometry
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

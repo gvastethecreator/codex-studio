@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP22-165
+packId: pack_22
+name: Modeled Contour Ink
+category: 9. Comic & Cartoon Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - comic-and-cartoon-illustration
+  - modeled-contour-ink
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Clear variable-weight ink contours carry the form, while solid shadow masses and selective interior
+    marks add firm volume without depending on color.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Use interior lines only to clarify
+    existing structure; do not invent anatomy, costume or emblem details.
+  color_and_tone: >-
+    Keep the requested palette intact. Let black ink and open reserves establish contrast, with color
+    rendered in flat or briefly modeled areas beneath the linework.
+  lighting_and_shadow: >-
+    Follow the requested light direction and contrast, translating shadow into solid ink groups without
+    adding a new source, glow or highlight.
+  texture_and_material: >-
+    Keep ink areas solid and surfaces clean; preserve distinct material cues through shape and line rather
+    than an added paper texture.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and placement. Line weight supports the given forms
+    without changing the pose or arrangement.
+  atmosphere_and_mood: >-
+    Retain the requested setting and tone. Graphic confidence comes from the ink structure, not an added
+    character role or narrative cue.
+  rendering_and_quality: >-
+    Establish the silhouette and broad values first, then use selective interior marks and clear contour
+    closures; keep the subject readable at reduced size.
+avoidRules:
+  - unrequested anatomy, costume or emblem changes
+  - extra details that alter identity or function
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-165.webp
+attributes:
+  negativePrompt: unrequested anatomy, costume or emblem changes, extra details that alter identity or function
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: drawing
+    avoidRules:
+      - text: unrequested anatomy, costume or emblem changes
+        field: subject_treatment
+      - text: extra details that alter identity or function
+        field: subject_treatment
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S065
+    sourceTitle: Superhero Ink
+    referenceIds:
+      - S57
+      - S49
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: comic-and-cartoon-illustration
+  categoryName: 9. Comic & Cartoon Illustration
+  tags:
+    - trading-card-illustration
+    - comic-and-cartoon-illustration
+    - modeled-contour-ink
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

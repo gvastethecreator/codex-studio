@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP22-153
+packId: pack_22
+name: Kinetic Dry Ink
+category: 7. Manga Ink & Impact
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - manga-ink-and-impact
+  - directional-dry-ink
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Long, broken dry-ink strokes follow the structure of the existing form, creating direction and
+    texture through uneven ink load rather than added action marks.
+  subject_treatment: >-
+    Preserve the requested identity, pose and action. Direct dry marks along the subject's existing
+    structure and keep facial or identifying features intact.
+  color_and_tone: >-
+    Use dense ink and open reserves to separate values while retaining any requested color accents and
+    their original relationships.
+  lighting_and_shadow: >-
+    Respect the requested illumination; vary stroke density and reserved areas to describe its shadows
+    without adding light sources or speed streaks.
+  texture_and_material: >-
+    Build linear drag, broken edges and irregular ink pickup with visible dry-brush skips. Avoid digital
+    noise and retain material cues that distinguish the depicted surfaces.
+  camera_and_composition: >-
+    Preserve the stated angle, framing, crop and placement. Mark direction should reinforce existing
+    structure, not imply movement or alter the composition.
+  atmosphere_and_mood: >-
+    Keep the requested setting and mood; dry, directional mark-making adds surface energy without
+    changing the event or emotional intent.
+  rendering_and_quality: >-
+    Balance rough outer marks with clear silhouette breaks and preserved interior reserves; use larger
+    strokes for structure and sparse short cuts for detail.
+avoidRules:
+  - unrequested speed lines or action marks
+  - extra details that alter identity or function
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-153.webp
+attributes:
+  negativePrompt: unrequested speed lines or action marks, extra details that alter identity or function
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: drawing
+    avoidRules:
+      - text: unrequested speed lines or action marks
+        field: subject_treatment
+      - text: extra details that alter identity or function
+        field: subject_treatment
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S053
+    sourceTitle: Kinetic Dry Ink
+    referenceIds:
+      - S24
+      - S26
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: manga-ink-and-impact
+  categoryName: 7. Manga Ink & Impact
+  tags:
+    - trading-card-illustration
+    - manga-ink-and-impact
+    - directional-dry-ink
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

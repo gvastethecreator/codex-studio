@@ -1,0 +1,102 @@
+schemaVersion: 1
+id: SP23-040
+packId: pack_23
+name: Contour and Flat-Shadow Painting
+category: 9. Painted RPG & Tactics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - painted-rpg-and-tactics
+  - decisive-contour-flat-shadows
+  - portable-visual-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Use decisive contours, broad matte planes and shadows built from a few clear shapes. Separate
+    silhouettes by value and keep secondary texture subordinate at a consistent scale.
+  subject_treatment: >-
+    Preserve the requested identity, function, count, pose, action and proportions. Contours clarify
+    the existing subject without imposing a regional theme or redesigning its features.
+  color_and_tone: >-
+    Retain the requested palette and color meaning. Organize it into broad, readable planes without
+    forcing particular colors or a narrow range of hues.
+  lighting_and_shadow: >-
+    Follow the requested light direction and contrast. Express shadows through a few deliberate forms
+    while keeping the light logic consistent.
+  texture_and_material: >-
+    Keep broad surfaces matte and reserve texture for secondary areas. Preserve material differences
+    instead of applying one texture across the image.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, scale and spatial relationships. Contour and shadow
+    treatment does not prescribe a camera or alter the arrangement.
+  atmosphere_and_mood: >-
+    Preserve the user's setting and mood. Graphic planes change the rendering, not the period,
+    location or narrative.
+  rendering_and_quality: >-
+    Maintain clear contours, broad matte planes and a small number of shadow shapes. Keep secondary
+    texture at a coherent scale and avoid visual noise.
+avoidRules:
+  - unrequested regional or narrative content
+  - excessive texture, noisy contours or added shadow complexity
+  - unrequested lettering, symbols, borders, interface or layout
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-040.webp
+attributes:
+  negativePrompt: >-
+    unrequested regional or narrative content, excessive texture, noisy contours or added shadow
+    complexity, unrequested lettering, symbols, borders, interface or layout
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: contour-and-flat-shadow-painting
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: decisive-contour-broad-matte-planes-few-shape-shadows
+    avoidRules:
+      - text: unrequested regional or narrative content
+        field: global
+      - text: excessive texture, noisy contours or added shadow complexity
+        field: rendering_and_quality
+      - text: unrequested lettering, symbols, borders, interface or layout
+        field: global
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: PA-04
+    sourceTitle: Nordic Contour
+    historicalScope: 'Dibujo pintado contemporáneo · referencia The Banner Saga'
+    referenceIds:
+      - S41
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: painted-rpg-and-tactics
+  categoryName: 9. Painted RPG & Tactics
+  tags:
+    - curation-v2
+    - painted-rpg-and-tactics
+    - decisive-contour-flat-shadows
+    - portable-visual-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

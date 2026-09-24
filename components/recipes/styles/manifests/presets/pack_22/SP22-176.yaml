@@ -1,0 +1,104 @@
+schemaVersion: 1
+id: SP22-176
+packId: pack_22
+name: Soft Lithograph
+category: 10. Printmaking & Reproduction
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - printmaking-and-reproduction
+  - drawn-lithographic-grain
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Soft lithographic drawing builds continuous modeled transitions with hand-drawn grain and edges
+    that vary in density rather than using a universal screen.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Let drawn transitions describe
+    existing form without losing small defining details.
+  color_and_tone: >-
+    Keep the requested palette and color relationships. Use smooth transitions within the specified
+    colors without limiting their number or imposing a monochrome palette.
+  lighting_and_shadow: >-
+    Follow the requested light direction and contrast. Shape gradual transitions around existing
+    light and shadow without adding a new source or uniform tone overlay.
+  texture_and_material: >-
+    Keep grain hand-drawn and selective, varied with the form. Avoid mechanical halftone dots and
+    any global aged-paper surface.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, pose, crop and placement. Soft transitions do not add a page,
+    border, lettering or card layout.
+  atmosphere_and_mood: >-
+    Keep the requested setting and mood. Drawn grain changes the surface treatment without changing
+    content or context.
+  rendering_and_quality: >-
+    Establish large forms and contours, then use gradual drawn transitions with variable edge density.
+    Keep small marks crisp enough to retain their identity.
+avoidRules:
+  - universal mechanical halftone or CMYK dots
+  - forced monochrome or unrequested surface aging
+  - unrequested page, border, lettering, or period motifs
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-176.webp
+attributes:
+  negativePrompt: >-
+    universal mechanical halftone or CMYK dots, forced monochrome or unrequested surface aging, unrequested
+    page, border, lettering, or period motifs
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: lithography
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: lithography
+    avoidRules:
+      - text: universal mechanical halftone or CMYK dots
+        field: texture_and_material
+      - text: forced monochrome or unrequested surface aging
+        field: global
+      - text: unrequested page, border, lettering, or period motifs
+        field: global
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S076
+    sourceTitle: Soft Lithograph
+    referenceIds:
+      - S54
+      - S55
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    derivedFrom:
+      - TCG-S076
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: printmaking-and-reproduction
+  categoryName: 10. Printmaking & Reproduction
+  tags:
+    - trading-card-illustration
+    - printmaking-and-reproduction
+    - drawn-lithographic-grain
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

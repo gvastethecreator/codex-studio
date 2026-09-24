@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP23-004
+packId: pack_23
+name: Sculptural Grisaille
+category: 1. Manuscript Visual Systems
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - manuscript-visual-systems
+  - portable-visual-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Fine ink contours and short translucent gray washes build softly sculpted volumes, with
+    occasional opaque white accents and no generalized black fill.
+  subject_treatment: >-
+    Clarify the requested forms through small value transitions and selective line. Preserve their
+    original material and identity rather than turning every surface into stone.
+  color_and_tone: >-
+    Use a restrained neutral-gray tonal range with selective white accents. Retain any explicitly
+    requested colors as limited accents rather than overriding them.
+  lighting_and_shadow: >-
+    Describe existing light with short, separated washes and soft value transitions. Keep whites
+    local and shadows readable; do not introduce a new light source.
+  texture_and_material: >-
+    Keep support texture very subtle and distinct from the depicted material. Use wash edges and
+    fine ink to model form rather than stamping stone grain onto surfaces.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and spatial relationships. Let tonal modeling
+    explain volume within the existing arrangement.
+  atmosphere_and_mood: >-
+    Keep the requested emotional tone. Sculptural gray modeling does not imply statues, buildings,
+    solemnity or a particular historical scene.
+  rendering_and_quality: >-
+    Retain short wash transitions, fine line and restrained white accents. Avoid broad, uniform
+    black masses and preserve clear separation between adjacent forms.
+avoidRules:
+  - turning depicted materials into stone
+  - generalized black fill that erases form
+  - unrequested statues or architecture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-004.webp
+attributes:
+  negativePrompt: turning depicted materials into stone, generalized black fill that erases form, unrequested statues or architecture
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: grisaille-wash-and-ink
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: grisaille-wash-and-ink
+    avoidRules:
+      - text: turning depicted materials into stone
+        field: texture_and_material
+      - text: generalized black fill that erases form
+        field: rendering_and_quality
+      - text: unrequested statues or architecture
+        field: subject_treatment
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: MA-04
+    sourceTitle: Sculptural Grisaille
+    referenceIds:
+      - S04
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: manuscript-visual-systems
+  categoryName: 1. Manuscript Visual Systems
+  tags:
+    - curation-v2
+    - manuscript-visual-systems
+    - portable-visual-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

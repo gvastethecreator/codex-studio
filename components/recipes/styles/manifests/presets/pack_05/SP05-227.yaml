@@ -13,61 +13,34 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Rust-Wire Descent acts as a transferable anime-battle/worlds router: Rust-Wire Descent; combine
-    it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon
-    atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or
-    lineage words may guide style, but they must not require canon cast, title-scene replication,
-    screenshots, logos, or one fixed card concept.
+    A wiry, weathered line style using thin tangled contours, rust-like stains, descending
+    diagonals, and cool signal glints against industrial darks.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply
-    Rust-Wire Descent as portable contour, motion grammar, surface language, and emotional pressure
-    without requiring canon elements or a default action setup.
+    Preserve the requested subject and pose. Thread fine broken lines along its existing edges
+    and use sparse scratch marks; add no cables, harness, or person.
   color_and_tone: >-
-    Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile
-    white, coral glow, and disciplined emissive accents; let Rust-Wire Descent choose accent
-    intensity, value contrast, emotional temperature, and power-system separation while staying
-    attached to prompt X.
+    Pair oxidized orange and brown with slate, black, and cold cyan; keep the brightest accents
+    small and isolated.
   lighting_and_shadow: >-
-    Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow,
-    and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Rust-Wire Descent without replacing prompt X with a stock anime
-    frame.
+    Use firm dark shadows, thin cool edge highlights, and muted warm reflections; avoid adding a
+    visible neon source.
   texture_and_material: >-
-    Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust,
-    circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Rust-Wire
-    Descent controlled, denoised, and coherent across bodies, objects, environments, abstractions,
-    and action.
+    Retain the depicted material with dry scratches, fine wire-like marks, and scattered
+    rust-colored wear as surface treatment only.
   camera_and_composition: >-
-    Frame through scale compression, machinery diagonals, grid overlays without readable UI,
-    service-bay density, orbital symmetry, and high-speed hardware lanes; convert Rust-Wire Descent
-    into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of
-    one fixed style sample layout.
+    Keep the requested camera. Use slanting line rhythms and uneven detail density within the
+    existing composition; do not imply falling.
   atmosphere_and_mood: >-
-    Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine
-    grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic,
-    tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping
-    the anime-battle lineage readable.
+    Create a tense, worn quiet through brittle lines, downward visual cadence, and subdued color
+    rather than a descent scene.
   rendering_and_quality: >-
-    Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic
-    3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object
-    structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no
-    fake readable text, no signature, no photoreal or 3D-render drift.
+    Balance delicate contour threads with substantial shadow blocks; keep surface grain
+    selective and shapes readable.
   key_features: >-
-    Rust-Wire Descent; armored contour, mechanical massing, modular joints, engineered surface
-    rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy,
-    ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and
-    digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI,
-    service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime
-    finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room
-    dependency
+    Wiry broken contours; rust and slate palette; descending line cadence; cold cyan glints.
   creative_brief: >-
-    Apply Rust-Wire Descent after prompt X as a transferable anime-battle/worlds layer: prompt X
-    supplies subject, action, setting, tone, and intensity, while this preset supplies Rust-Wire
-    Descent, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon
-    atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and
-    negative controls without forcing canon cast, title scene, screenshot, card pose, default
-    monster, default combat prop, or prompt-literal card.
+    Retain the prompt’s subject, pose, and setting. Apply wiry contours, rust-toned surface
+    marks, and cold glints; add no cable, harness, falling figure, or industrial scene.
 avoidRules:
   - realistic
   - 3d render
@@ -79,7 +52,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - plastic 3d robot render
   - cockpit source-frame look
@@ -90,7 +62,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -98,9 +69,9 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, plastic 3d robot render, cockpit source-frame look,
-    readable UI panel, fixed canon character, title scene replication, required source-frame look,
-    cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks
+    artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI
+    panel, fixed canon character, title scene replication, required source-frame look, cosplay,
+    generic anime filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

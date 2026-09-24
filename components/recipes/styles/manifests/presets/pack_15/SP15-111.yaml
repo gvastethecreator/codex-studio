@@ -1,0 +1,96 @@
+schemaVersion: 1
+id: SP15-111
+packId: pack_15
+name: Witchpunk
+category: 8. Occult, Myth & Gothic Punks
+version: 2
+supportedTasks: &id002
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags: &id001
+  - curation-v2
+  - identity-reviewed
+  - visual-evaluation-pending
+  - occult-myth-and-gothic-punks
+visualDna:
+  aesthetic:
+    'Make witchcraft feel handmade and defiantly improvised through hand-cut arcane marks, knotted
+    seams, wax-like pigment, and colored thread integrated into a few existing surfaces rather than
+    through added props or a ritual setting.'
+  subject_treatment:
+    Preserve the requested subject, action, setting, and framing; apply repaired bindings or one coherent
+    hand-cut mark to compatible existing clothing or surfaces. Do not add pouches, tools, devices, or a
+    witch/spellcasting identity unless requested.
+  color_and_tone:
+    Balance wax red, herb green, soot, parchment, and tarnished copper; use a small electric
+    glow only as a deliberate sign of active magic, not as the defining palette.
+  lighting_and_shadow:
+    Preserve the requested light source, direction, and time of day; use at most a small warm or colored
+    accent on the mark itself, without implying a candle or darkening the room.
+  texture_and_material:
+    Render wax-like pigment, dyed thread, patched cloth, or worn leather only where those materials already
+    fit the subject; keep marks personal and visibly handmade rather than adding plant bundles or devices.
+  camera_and_composition:
+    Keep any knot or mark attached to an existing form; preserve open space and the requested framing
+    instead of adding a standalone talisman, altar, or prop arrangement.
+  atmosphere_and_mood:
+    Carry resourceful, intimate occult defiance through the handmade marks themselves; let the requested
+    setting and emotional tone remain in control.
+  rendering_and_quality:
+    Keep handmade edges and material joins legible, reserve luminous effects for purposeful
+    magic, and maintain a clear subject silhouette.
+avoidRules:
+  - a required witch, altar, or spellcasting action
+  - mixing unrelated symbol systems into one visual vocabulary
+  - a fixed bundle of herbs, seals, charms, and devices in every image
+  - effects that erase the focal silhouette
+  - unrequested candles, herb bundles, altar dressing, or ritual-room architecture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-111.webp
+attributes:
+  negativePrompt:
+    a required witch, altar, or spellcasting action, mixing unrelated symbol systems into one
+    visual vocabulary, a fixed bundle of herbs, seals, charms, and devices in every image, effects that erase
+    the focal silhouette, unrequested candles, herb bundles, altar dressing, or ritual-room architecture
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: a required witch, altar, or spellcasting action
+        field: rendering_and_quality
+      - text: mixing unrelated symbol systems into one visual vocabulary
+        field: rendering_and_quality
+      - text: a fixed bundle of herbs, seals, charms, and devices in every image
+        field: rendering_and_quality
+      - text: effects that erase the focal silhouette
+        field: rendering_and_quality
+      - text: unrequested candles, herb bundles, altar dressing, or ritual-room architecture
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-111
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: occult-myth-and-gothic-punks
+  categoryName: 8. Occult, Myth & Gothic Punks
+  tags: *id001
+  supportedTasks: *id002
+  hasDefaultImage: true

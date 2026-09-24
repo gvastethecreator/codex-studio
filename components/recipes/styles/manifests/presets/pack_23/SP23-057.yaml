@@ -1,0 +1,103 @@
+schemaVersion: 1
+id: SP23-057
+packId: pack_23
+name: Faceted Opaque Color Planes
+category: 12. Hybrid Visual Studies
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - hybrid-visual-studies
+  - faceted-opaque-color-planes
+  - portable-visual-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Describe existing forms with simple faceted color planes, opaque fills and selective narrow edge
+    accents. Keep facets aligned to the original geometry rather than reshaping the subject.
+  subject_treatment: >-
+    Preserve the requested identity, function, count, pose, action, proportions and geometry. Use
+    plane boundaries to clarify form without adding ornaments or changing what it is made of.
+  color_and_tone: >-
+    Retain the requested palette and color relationships. Organize existing colors into opaque fields
+    and use restrained edge accents drawn from that palette.
+  lighting_and_shadow: >-
+    Follow the requested light direction and contrast. Faceted values should support existing form
+    and shadows without adding metallic shine or a new light source.
+  texture_and_material: >-
+    Preserve represented materials. Use clean color fields and selective edge accents as drawing
+    choices, not as a demand to convert surfaces into a different physical material.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, scale and spatial relationships. Faceting follows current
+    perspective and does not create new geometry or graphic elements.
+  atmosphere_and_mood: >-
+    Preserve the requested setting and mood. Faceted color treatment changes visual construction,
+    not the scene, period or narrative.
+  rendering_and_quality: >-
+    Keep plane scale and edge accents consistent across the image. Avoid uniform metallic outlines,
+    excessive facets or changes to the original silhouette.
+avoidRules:
+  - unrequested geometry or material changes
+  - uniform metallic edging, excess facets or forced hues
+  - unrequested ornament, lettering or added graphic elements
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-057.webp
+attributes:
+  negativePrompt: >-
+    unrequested geometry or material changes, uniform metallic edging, excess facets or forced hues,
+    unrequested ornament, lettering or added graphic elements
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: faceted-opaque-color-illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: form-following-facets-opaque-color-fields-selective-edges
+    avoidRules:
+      - text: unrequested geometry or material changes
+        field: subject_treatment
+      - text: uniform metallic edging, excess facets or forced hues
+        field: texture_and_material
+      - text: unrequested ornament, lettering or added graphic elements
+        field: global
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: HY-05
+    sourceTitle: Enamel Lowpoly
+    historicalScope: Propuesta original contemporánea
+    referenceIds:
+      - S15
+      - S37
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: hybrid-visual-studies
+  categoryName: 12. Hybrid Visual Studies
+  tags:
+    - curation-v2
+    - hybrid-visual-studies
+    - faceted-opaque-color-planes
+    - portable-visual-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

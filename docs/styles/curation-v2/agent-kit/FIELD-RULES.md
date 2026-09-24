@@ -6,6 +6,14 @@ Antes de editar, marcar cada instrucción del original como mecanismo visual, ob
 
 Para un derivado portable, el pedido conserva sujeto, acción, entorno y texto. Para un perfil o tema seleccionado, anotar qué decisiones adicionales se autorizaron. Si hay choque con un bloqueo explícito, no combinar instrucciones contrarias: conservar el bloqueo y registrar la incompatibilidad. No inventar un parser semántico nuevo para ocultar una mala decisión editorial.
 
+### Culturas, mitologías y estéticas X-punk
+
+Elegir una de estas direcciones selecciona también su vocabulario visual característico. Quitar una escena obligatoria no significa prohibir ese vocabulario. Steampunk puede incorporar bronce, engranajes funcionales y vapor; una dirección nórdica puede incorporar bestias entrelazadas, madera tallada y herrajes. Aplicar esos elementos a las decisiones de diseño que el pedido deja abiertas, con una función y una jerarquía claras. No exigir que el usuario vuelva a pedir cada rasgo por separado.
+
+Conservar la identidad del sujeto, su acción y las restricciones explícitas. No tratar todo detalle sin especificar como si estuviera bloqueado: eso reduce las culturas a paletas y las estéticas a texturas. Tampoco sustituir el sujeto por una escena típica, cambiar la identidad étnica de una persona ni pegar una lista de símbolos sin relación con el diseño. Una motocicleta nórdica puede seguir siendo una motocicleta; no necesita convertirse en un barco vikingo.
+
+En Mythic Noir, distinguir culturas y mitologías concretas. En Punk Spectrum, conservar una identidad reconocible por cada X-punk; un cambio de clima, color o material aislado no basta para crear otro estilo. La tarjeta debe mostrar una composición terminada que exprese esa identidad. Revisar por separado definición, adaptación al sujeto e imagen representativa.
+
 ## Los ocho campos
 
 ### aesthetic

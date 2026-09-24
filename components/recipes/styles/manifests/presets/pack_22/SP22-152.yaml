@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP22-152
+packId: pack_22
+name: Marker Splash
+category: 7. Manga Ink & Impact
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - manga-ink-and-impact
+  - layered-marker-ink
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Broad marker passes establish the main color planes, with finer ink drawing layered over them to
+    define form and selective detail.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Build the existing forms with broad
+    color strokes and fine ink accents without adding motion or props.
+  color_and_tone: >-
+    Retain the requested palette in distinct marker layers; allow darker overlaps to deepen where passes
+    cross without introducing arbitrary accent colors.
+  lighting_and_shadow: >-
+    Follow the requested light direction and represent its shadow planes through controlled marker
+    layering; do not add bursts or dramatic light effects.
+  texture_and_material: >-
+    Show discreet, directional marker bands and slight overlap accumulation. Keep the strokes deliberate,
+    with no random splatter, and preserve the depicted material cues.
+  camera_and_composition: >-
+    Keep the requested viewpoint, crop and arrangement. Tool marks should follow existing shapes without
+    shifting or crowding the composition.
+  atmosphere_and_mood: >-
+    Preserve the requested environment and emotional tone. The hand-rendered marker surface does not
+    imply an explosion, impact scene or extra background event.
+  rendering_and_quality: >-
+    Separate broad marker masses from fine ink accents; maintain clean focal features and controlled
+    overlaps so the layered process remains clear at card scale.
+avoidRules:
+  - unrequested explosive backgrounds or splashes over focal features
+  - extra details that alter identity or function
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-152.webp
+attributes:
+  negativePrompt: unrequested explosive backgrounds or splashes over focal features, extra details that alter identity or function
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: drawing
+    avoidRules:
+      - text: unrequested explosive backgrounds or splashes over focal features
+        field: atmosphere_and_mood
+      - text: extra details that alter identity or function
+        field: subject_treatment
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S052
+    sourceTitle: Marker Splash
+    referenceIds:
+      - S24
+      - S49
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: manga-ink-and-impact
+  categoryName: 7. Manga Ink & Impact
+  tags:
+    - trading-card-illustration
+    - manga-ink-and-impact
+    - layered-marker-ink
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

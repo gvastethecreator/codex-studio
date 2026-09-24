@@ -13,67 +13,42 @@ tags:
   - caricature-and-cartoon-styles
 visualDna:
   aesthetic: >-
-    Cow and Chicken - Loud Primary Derangement acts as a transferable cinematic-media router: start
-    from Shouting primary-color lunacy, absurd slapstick, huge scale mismatch, anti-subtle cartoon
-    vulgarity, exaggerated rubbery ugliness, jagged gross comedy, Primary-color saturation, giant
-    shape accents, screaming graphic bursts, rubbery scale mismatch, vulgar slapstick timing and
-    caricature and cartoon system built from exaggeration rules, line instability, body-shape
-    grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media
-    behavior to prompt X instead of recreating a fixed demo image.
+    Use this drawing language: Loud primary-color cartoon with thick crude contour, rubbery
+    scale contrast, jagged graphic bursts, compressed poses, and blunt visual impact. Apply it
+    to the supplied content without requiring a particular cast, place, or story.
   subject_treatment: >-
-    Transform any prompt subject through Thick crude contours, jagged gross-comedy marks, rubbery
-    stretch, blunt graphic impact; preserve the requested subject while exaggerating proportion,
-    contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according
-    to the preset, keeping the requested identity, silhouette, action, object function, or setting
-    legible.
+    Apply thick crude contours, jagged graphic marks, rubbery stretch, and blunt shape impact to
+    the supplied subject while preserving its identity, silhouette, requested action, actual
+    material, and function. Change the drawn treatment, not the underlying content.
   color_and_tone: >-
-    Build color with Shouting red, chicken-yellow, electric blue, toxic green, black outline, cheap
-    poster white; use color through loud primaries, beige suburban anxiety, marker flats, mucus
-    greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure,
-    with deliberate value grouping, accent control, and process-specific limits rather than generic
-    color wash.
+    Use saturated red, bright yellow, electric blue, toxic green, black contour, and poster
+    white as style colors while honoring any explicit color requirements in the request.
   lighting_and_shadow: >-
-    Handle light through Flat poster illumination, no atmosphere, maximum readability, anti-subtle
-    exposure; shape light minimally through flat cartoon value, poster contrast, marker fill,
-    gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and
-    shadow structure support the media process without overwriting the requested content.
+    Use flat, high-key values for bold readable color as a visual treatment, while respecting
+    any lighting instructions in the request.
   texture_and_material: >-
-    Render Poster-paint cel fill, cheap TV scan softness, sticky marker edge, rubbery gross surface;
-    surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line,
-    doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact
-    scale coherent and avoiding noisy filler texture.
+    Render poster-paint fill, soft scan grain, sticky-looking marker edges, and graphic gloss
+    accents as drawn or printed surface marks over the existing material; do not change the
+    subject's actual substance or function.
   camera_and_composition: >-
-    Structure the image through Giant accent shapes, tiny support masses, rubbery scale mismatch,
-    compressed slapstick poses; compose through readable gag timing, grotesque close-up, slouch
-    geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a
-    named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style
-    work.
+    Use scale clashes, saturated color blocks, and blunt poses for visual energy; align
+    expressive timing with the request.
   atmosphere_and_mood: >-
-    Keep the mood Loud, shameless, unruly, ridiculous, mood carried by Cow and Chicken - Loud
-    Primary Derangement media process, signal pressure, and visual restraint; derive mood from adult
-    absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or
-    anti-polish personality, letting the media style alter interpretation without demanding a
-    specific story, location, or actor.
+    Unruly, shameless, and ridiculous; keep the visual punch separate from any forced gag.
   rendering_and_quality: >-
-    Finish with Loud primary-color TV cartoon, vulgar slapstick, anti-subtle comedic aggression;
-    finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact
-    character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised
-    surfaces where appropriate, and enough process evidence to make the style recognizable.
+    Finish with thick outline, flat poster-like color, rough fill, and bold shape separation.
   key_features: >-
-    Shouting primary-color lunacy, absurd slapstick, huge scale mismatch, anti-subtle cartoon
-    vulgarity, exaggerated rubbery ugliness, jagged gross comedy; Primary-color saturation, giant
-    shape accents, screaming graphic bursts, rubbery scale mismatch, vulgar slapstick timing;
-    Shouting red, chicken-yellow, electric blue, toxic green, black outline, cheap poster white;
-    Poster-paint cel fill, cheap TV scan softness, sticky marker edge, rubbery gross surface; Giant
-    accent shapes, tiny support masses, rubbery scale mismatch, compressed slapstick poses
+    thick crude contour; rubbery stretch; jagged graphic bursts; primary-color blocks; blunt
+    impact
   creative_brief: >-
-    Apply Cow and Chicken - Loud Primary Derangement as a cinematic-media preset over prompt X:
-    preserve the user's requested subject, then route lens behavior, palette, light, signal or film
-    texture, composition, mood, and final media craft through Shouting primary-color lunacy, absurd
-    slapstick, huge scale mismatch, anti-subtle cartoon vulgarity, exaggerated rubbery ugliness,
-    jagged gross comedy, Primary-color saturation, giant shape accents, screaming graphic bursts,
-    rubbery scale mismatch, vulgar slapstick timing, Poster-paint cel fill, cheap TV scan softness,
-    sticky marker edge, rubbery gross surface without requiring the card image's original subject.
+    Render the supplied content with thick crude contours, jagged graphic marks, rubbery
+    stretch, and blunt shape impact. Use saturated red, bright yellow, electric blue, toxic
+    green, black contour, and poster white as style colors while honoring any explicit color
+    instructions. Apply poster-paint fill, soft scan grain, sticky-looking marker edges, and
+    graphic gloss accents as drawn or printed marks over the existing material, without changing
+    what the subject is made of or how it functions. Preserve the requested subject, action, and
+    setting; follow the supplied composition and add no unrequested cast, location, lettering,
+    or gag.
 avoidRules:
   - digital
   - HD

@@ -1,0 +1,62 @@
+[
+  {
+    "presetId": "SP19-001",
+    "presetName": "Dry Cut",
+    "packId": "pack_19",
+    "packName": "Ink Structures",
+    "category": "1. Ink Structures",
+    "file": "assets/recipes/styles/defaults/SP19-001.webp",
+    "jobId": "8c50004e-1152-405d-99b7-a2a35f806693",
+    "sourceAsset": "assets/recipes/styles/defaults/SP19-001.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:16:44.561Z"
+  },
+  {
+    "presetId": "SP19-002",
+    "presetName": "Elastic Contour",
+    "packId": "pack_19",
+    "packName": "Ink Structures",
+    "category": "1. Ink Structures",
+    "file": "assets/recipes/styles/defaults/SP19-002.webp",
+    "jobId": "03dda5d4-5842-4409-89b9-1f9bb5971c64",
+    "sourceAsset": "assets/recipes/styles/defaults/SP19-002.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T17:39:35.206Z"
+  },
+  {
+    "presetId": "SP19-003",
+    "presetName": "Bristle Rhythm",
+    "packId": "pack_19",
+    "packName": "Ink Structures",
+    "category": "1. Ink Structures",
+    "file": "assets/recipes/styles/defaults/SP19-003.webp",
+    "jobId": "29057bfd-4d6b-4f16-bc22-e7602d41ae3e",
+    "sourceAsset": "assets/recipes/styles/defaults/SP19-003.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T17:39:43.722Z"
+  },
+  {
+    "presetId": "SP19-004",
+    "presetName": "Pooled Ink",
+    "packId": "pack_19",
+    "packName": "Ink Structures",
+    "category": "1. Ink Structures",
+    "file": "assets/recipes/styles/defaults/SP19-004.webp",
+    "jobId": "10e47175-51d8-4636-b9f2-d75c07bb5f6a",
+    "sourceAsset": "assets/recipes/styles/defaults/SP19-004.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T17:40:20.655Z"
+  }
+]

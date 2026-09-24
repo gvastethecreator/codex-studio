@@ -1,0 +1,96 @@
+schemaVersion: 1
+id: SP22-132
+packId: pack_22
+name: Pulp Story Poster
+category: 4. Storybook & Animation
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - storybook-and-animation
+  - painted-poster-illustration
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Painted poster illustration condenses volume into highly readable shapes, decisive brush marks and
+    contrast-led contours, with a restrained suggestion of print reproduction.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Simplify secondary forms while keeping
+    the main subject's structure and defining features clear.
+  color_and_tone: >-
+    Establish focal and secondary color areas with clear value hierarchy. Respect the requested palette
+    rather than imposing a fixed poster scheme.
+  lighting_and_shadow: >-
+    Follow the requested lighting. Use contrast to organize readable forms without adding dramatic light
+    or changing the depicted time and mood.
+  texture_and_material: >-
+    Use painted marks with moderate, restrained print-like variation. Do not impose a paper stock, border
+    finish or physical card treatment.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and element placement. Do not impose lettering, a
+    poster layout, dramatic diagonals or multiple scenes unless requested.
+  atmosphere_and_mood: >-
+    Keep the requested tone and setting. Poster-like clarity does not add a cast, story beat or dramatic
+    atmosphere.
+  rendering_and_quality: >-
+    Keep the focal forms highly legible with decisive brushwork and contrast edges. Simplify secondary
+    areas without introducing typographic or layout elements into the illustration.
+avoidRules:
+  - unrequested poster lettering or credits
+  - unrequested multi-scene restaging
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-132.webp
+attributes:
+  negativePrompt: unrequested poster lettering or credits, unrequested multi-scene restaging
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: painting
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: painting
+    avoidRules:
+      - text: unrequested poster lettering or credits
+        field: camera_and_composition
+      - text: unrequested multi-scene restaging
+        field: camera_and_composition
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S032
+    sourceTitle: Pulp Story Poster
+    referenceIds:
+      - S19
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: storybook-and-animation
+  categoryName: 4. Storybook & Animation
+  tags:
+    - trading-card-illustration
+    - storybook-and-animation
+    - painted-poster-illustration
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

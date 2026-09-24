@@ -16,78 +16,35 @@ tags:
   - 90s-golden-era
 visualDna:
   aesthetic: >-
-    Rose Ritual Symbolism Style acts as a transferable anime-prestige router: formal rite pressure
-    and ceremonial anime severity, alongside a rose anime direction shaped by era-aware line economy
-    and genre tone; fuse it with 90s golden-era anime direction with sharp cel shadows, dramatic
-    closeups, aura effects, urban melancholy, and high-contrast compositing; it routes era, genre,
-    line economy, cel or digital finish, and performance tone without locking prompt content to the
-    source title or sample image.
+    A rose-ritual 90s cel style uses poised symmetry, repeated radial line accents and a deep
+    garnet-violet value range. Its symbolism is formal visual repetition, not a required flower or
+    ceremony.
   subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through contours paced by
-    rose tension, readable pose energy, and silhouette discipline, alongside contours paced by
-    ritual tension, readable pose energy, and silhouette discipline; identity should remain readable
-    through anime contour, expression economy, pose energy, shape simplification, and effect
-    hierarchy instead of a required canon character or title scene.
+    Keep the requested subject, count and proportions. Emphasize existing forms with measured symmetry
+    and fine ornamental contours; do not add a rose, emblem or ritual object.
   color_and_tone: >-
-    Map color through a rose accent system held inside disciplined cel values, alongside a ritual
-    accent system held inside disciplined cel values; anchor it in deep night blues, saturated aura
-    color, jewel accents, warm skin cel tones, smoke grays, and VHS-era contrast; keep value
-    separation clean, cel flats intentional, accents purposeful, and palette behavior attached to
-    the requested content.
+    When color is open, combine rose, garnet, wine and violet with small pale highlights. Preserve
+    requested colors and avoid turning the palette into a mandatory flower motif.
   lighting_and_shadow: >-
-    Use a rose light logic using cel rim, glow behavior, and blocked shadow, alongside a ritual
-    light logic using cel rim, glow behavior, and blocked shadow; combine it with hard-edged rim
-    light, aura bloom, neon spill, twilight gradients, speed-flash cuts, and moody cel shadow
-    blocks; shadows should read as anime light design, rims should clarify form, and glow or effects
-    should support the prompt rather than replacing it.
+    Use clean cel shadows and carefully placed rim accents to clarify the central rhythm. Respect
+    supplied light and avoid candles or stage lighting.
   texture_and_material: >-
-    Render wax, cloth, ash, lacquer, paper, and restrained blood-red marks, alongside cel paint and
-    ink grain tuned to rose material contrast; anchor surfaces in painted cels, compositing grain,
-    inked speed marks, smoke layers, leather or metal highlights, and analog scan softness; cel
-    edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay
-    coherent across people, objects, environments, action, and abstractions.
+    Pair smooth painted areas with delicate ink ornament and a few etched details. Apply marks to
+    existing forms and preserve their actual materials.
   camera_and_composition: >-
-    Frame around rite intervals, axial pauses, and symbolic repetition, alongside rose converted
-    into reusable framing rhythm and anime timing, then extend it with cinematic closeups,
-    speed-line vectors, dramatic low angles, layered profile cuts, and compressed emotional space;
-    the style should support portraits, props, machines, performances, landscapes, symbols, and full
-    scenes through reusable anime staging grammar instead of one fixed card layout.
+    Use axial balance and repeated spacing within the supplied composition. Preserve camera and
+    arrangement; do not force a portrait, altar or symmetrical new scene.
   atmosphere_and_mood: >-
-    Carry mood through taboo formality and controlled spiritual pressure, alongside rose emotional
-    pressure and genre-specific tone; braid it with heightened rivalry, melancholy cool, occult
-    romance, existential drift, heroic escalation, and serious adult tone; the preset can become
-    funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while
-    preserving the chosen anime lineage.
+    Create solemn formality through rhythm and restraint when the requested mood allows it. Do not
+    impose ritual, romance or spiritual meaning.
   rendering_and_quality: >-
-    Finish with clean anime finishing that keeps rose identity readable without noisy denoise,
-    alongside clean anime finishing that keeps ritual identity readable without noisy denoise;
-    enforce premium 90s cel finish with crisp anatomy, readable effects, denoised grain, and no
-    cheap anime-filter smear; prioritize clean denoise, stable anatomy or object structure, readable
-    effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or
-    3D-render drift.
+    Keep fine lines crisp against broad dark shapes; use ornament selectively and maintain clear focal
+    hierarchy.
   key_features: >-
-    formal rite pressure and ceremonial anime severity, alongside a rose anime direction shaped by
-    era-aware line economy and genre tone; contours paced by rose tension, readable pose energy, and
-    silhouette discipline, alongside contours paced by ritual tension, readable pose energy, and
-    silhouette discipline; wax, cloth, ash, lacquer, paper, and restrained blood-red marks,
-    alongside cel paint and ink grain tuned to rose material contrast; a rose light logic using cel
-    rim, glow behavior, and blocked shadow, alongside a ritual light logic using cel rim, glow
-    behavior, and blocked shadow; rite intervals, axial pauses, and symbolic repetition, alongside
-    rose converted into reusable framing rhythm and anime timing
+    axial balance; repeated radial ornament; deep rose-garnet and violet cel values with refined ink
   creative_brief: >-
-    Apply Rose Ritual Symbolism Style after prompt X as a transferable anime-prestige layer: prompt
-    X supplies subject, action, setting, tone, and intensity, while this preset supplies formal rite
-    pressure and ceremonial anime severity, alongside a rose anime direction shaped by era-aware
-    line economy and genre tone, alongside contours paced by rose tension, readable pose energy, and
-    silhouette discipline, alongside contours paced by ritual tension, readable pose energy, and
-    silhouette discipline; a rose accent system held inside disciplined cel values, alongside a
-    ritual accent system held inside disciplined cel values; a rose light logic using cel rim, glow
-    behavior, and blocked shadow, alongside a ritual light logic using cel rim, glow behavior, and
-    blocked shadow; wax, cloth, ash, lacquer, paper, and restrained blood-red marks, alongside cel
-    paint and ink grain tuned to rose material contrast and rite intervals, axial pauses, and
-    symbolic repetition, alongside rose converted into reusable framing rhythm and anime timing,
-    finish discipline, and negative controls without requiring a fixed canon cast, title scene, prop
-    bundle, location, sport, instrument, weapon, or card composition.
+    Apply the formal cel symmetry, radial line rhythm and rose-garnet accents to the requested
+    content. Preserve its identity and composition; add no flower, emblem, altar or ceremony.
 avoidRules:
   - realistic
   - 3d render
@@ -99,7 +56,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - flat modern moe
   - generic shonen screenshot
@@ -110,15 +66,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-175.webp
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS
-    noise, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise, readable text
+    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
+    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
+    prompt-literal card, muddy cel noise
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

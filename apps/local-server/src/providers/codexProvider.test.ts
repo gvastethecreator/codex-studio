@@ -9,6 +9,9 @@ import {
   compileCodexImagegenInput,
   createCodexGenerationProvider,
 } from './codexProvider';
+import { compileChatgptImageInput } from './openaiImageInput';
+import { buildGenerationTaskSpecFromRecipe } from '../../../../lib/recipeModules';
+import { DEFAULT_GENERATION_CONFIG } from '../../../../constants';
 import type { CodexTurn, TurnParams, TurnResult } from '../codex/turn';
 import { SubscriptionHttpError } from './subscriptionHttpError';
 
@@ -111,6 +114,40 @@ describe('codex generation provider', () => {
     expect(compiled.payload.text).toContain('Recipe directives:');
     expect(compiled.payload.text).toContain('- Core Aesthetic: polished glass');
     expect(compiled.payload.text).not.toContain('legacy context should stay out');
+  });
+
+  it('passes the compiled Intentional style plan into a new ChatGPT HTTP job', () => {
+    const sourceSpec = buildGenerationTaskSpecFromRecipe({
+      id: 'spec-intentional-style',
+      providerId: 'chatgpt',
+      config: {
+        ...DEFAULT_GENERATION_CONFIG,
+        prompt: 'A blue bicycle outside a grocery.',
+        recipeId: 'styles',
+        recipeParams: {
+          presetId: 'SP15-081',
+          presetName: 'Steampunk',
+          compilerVersion: 'intentional-styles/1.0.0',
+          styleRequestHash: 'test-hash',
+          effectivePrompt:
+            'Keep the blue bicycle. Use functional brass gearing and subordinate steam vents.',
+          selectedStyles: [{ presetId: 'SP15-081', presetName: 'Steampunk' }],
+        },
+      },
+    });
+    const compiled = compileChatgptImageInput({
+      id: 'job-intentional-style',
+      workspaceId: 'workspace-1',
+      prompt: sourceSpec.prompt,
+      execution: null,
+      sourceSpec,
+    });
+
+    expect(compiled.payload.text).toContain('functional brass gearing');
+    expect(compiled.payload.text).toContain('Keep the blue bicycle.');
+    expect(compiled.payload.text).toContain('Recipe directives:');
+    expect(compiled.payload.text).not.toContain(CODEX_IMAGEGEN_DENOISE_INSTRUCTION);
+    expect(compiled.payload.text).not.toContain('Style Slot 1');
   });
 
   it('keeps image-guided style transfer prompts compact and free of legacy recipe context', () => {

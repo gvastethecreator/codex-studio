@@ -1,0 +1,94 @@
+schemaVersion: 1
+id: SP15-089
+packId: pack_15
+name: Windpunk
+category: 3. Eco, Repair & Climate Punks
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - eco-repair-and-climate-punks
+visualDna:
+  aesthetic: >-
+    Windpunk expresses motion as tensioned arcs, swept planes and tapered contours whose spacing suggests
+    force moving through a form.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and connections. Apply directional curves or
+    tension lines to existing contours where they fit; do not convert the subject into a turbine or kite.
+  color_and_tone: >-
+    Preserve requested colors and organize them into airy light fields with a few grounded mineral or
+    signal accents. Keep enough contrast to read the swept silhouette.
+  lighting_and_shadow: >-
+    Follow the requested light. Use elongated shadow planes to support direction and tension without
+    adding wind streaks, a new light source or weather.
+  texture_and_material: >-
+    Respect actual materials. Use flexible, matte surface variation only where fabric, rope or another
+    pliant material is present; do not turn unrelated surfaces into cloth.
+  camera_and_composition: >-
+    Preserve viewpoint and crop. Let a few sweeping forms lead through the existing composition without
+    imposing a rooftop, sky horizon or wind-capture device.
+  atmosphere_and_mood: >-
+    Suggest momentum and adaptation through curve, spacing and tension while keeping the requested mood
+    and setting.
+  rendering_and_quality: >-
+    Use clean tapered contours, broad flowing color planes and restrained line accents. Preserve part
+    connections and avoid cluttered motion trails.
+avoidRules:
+  - Do not add a windcatcher tower, kite turbine, rooftop or windmill unless requested.
+  - Avoid decorative wind streaks that obscure the subject.
+  - Do not force a cloth or rope material onto existing forms.
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-089.webp
+attributes:
+  negativePrompt: >-
+    Do not add a windcatcher tower, kite turbine, rooftop or windmill unless requested., Avoid decorative
+    wind streaks that obscure the subject., Do not force a cloth or rope material onto existing forms.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: Do not add a windcatcher tower, kite turbine, rooftop or windmill unless requested.
+        field: rendering_and_quality
+      - text: Avoid decorative wind streaks that obscure the subject.
+        field: rendering_and_quality
+      - text: Do not force a cloth or rope material onto existing forms.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-020
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: eco-repair-and-climate-punks
+  categoryName: 3. Eco, Repair & Climate Punks
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - eco-repair-and-climate-punks
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

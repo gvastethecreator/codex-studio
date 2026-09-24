@@ -1,0 +1,113 @@
+schemaVersion: 1
+id: SP23-018
+packId: pack_23
+name: Cilician Jewelwork
+category: 4. Regional Manuscript Traditions
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - regional-manuscript-traditions
+  - fine-line-compact-color
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Fine, disciplined contours and compact color fields carry the main forms, with small-scale
+    geometric rhythm used only where ornament is explicitly allowed. This study is scoped to the
+    cited thirteenth-century Armenian-Cilician manuscript reference associated with T'oros Roslin;
+    it is not a universal Armenian or Cilician style label.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, count, action and details. Keep the main reading
+    ahead of fine ornament, and use geometric detail only on existing surfaces that the user permits
+    for ornament; do not add motifs or reshape forms.
+  color_and_tone: >-
+    Preserve the requested palette and value relationships. Use compact color areas and measured
+    contrast without imposing a fixed manuscript palette, gold accents or jewel colors.
+  lighting_and_shadow: >-
+    Preserve the requested lighting and shadows. Fine line and color organization do not imply gem
+    highlights, candlelight or a new source of illumination.
+  texture_and_material: >-
+    Keep ornament within user-permitted areas and render it as a graphic detail system. Preserve the
+    actual materials of depicted subjects; do not turn them into jewelry, gemstones or a manuscript
+    page.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, scale and arrangement. Do not add a folio, border, frame or
+    illuminated-page layout.
+  atmosphere_and_mood: >-
+    Keep the requested mood and setting. The regional reference identifies a specific Armenian-Cilician
+    corpus and does not authorize religious imagery, historical characters or a sacred scene.
+  rendering_and_quality: >-
+    Keep the principal subject legible before adding fine detail. Use crisp lines and restrained
+    geometric accents without micro-pattern noise, decorative clutter or unrequested surface coverage.
+avoidRules:
+  - unrequested Armenian lettering, crosses or religious symbols
+  - unrequested motifs borrowed from other cultural traditions
+  - ornament on surfaces the user has not permitted
+  - unrequested folio border or illuminated-page layout
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-018.webp
+attributes:
+  negativePrompt: >-
+    unrequested Armenian lettering, crosses or religious symbols, unrequested motifs borrowed from
+    other cultural traditions, ornament on surfaces the user has not permitted, unrequested folio
+    border or illuminated-page layout
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: armenian-manuscript-illumination
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: fine-contour-compact-color-and-permitted-geometric-detail
+      - field: atmosphere_and_mood
+        group: source-scope
+        value: t-oros-roslin-cilician-armenian-corpus-only-not-universal-style
+    avoidRules:
+      - text: unrequested Armenian lettering, crosses or religious symbols
+        field: global
+      - text: unrequested motifs borrowed from other cultural traditions
+        field: global
+      - text: ornament on surfaces the user has not permitted
+        field: texture_and_material
+      - text: unrequested folio border or illuminated-page layout
+        field: camera_and_composition
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: TR-01
+    sourceTitle: Cilician Jewelwork
+    historicalScope: 'Iluminación armenia · T’oros Roslin, siglo XIII'
+    referenceIds:
+      - S17
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: regional-manuscript-traditions
+  categoryName: 4. Regional Manuscript Traditions
+  tags:
+    - curation-v2
+    - regional-manuscript-traditions
+    - fine-line-compact-color
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

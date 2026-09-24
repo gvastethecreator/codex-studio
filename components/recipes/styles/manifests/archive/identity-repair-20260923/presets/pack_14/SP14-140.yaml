@@ -1,0 +1,98 @@
+schemaVersion: 1
+id: SP14-140
+packId: pack_14
+name: Matte and Gloss Contrast
+category: Reflectance & Interference
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - reflectance-and-interference
+visualDna:
+  aesthetic: >-
+    Broad matte areas meet narrow controlled reflective accents, creating a contrast in surface response
+    while keeping form and silhouette simple.
+  subject_treatment: >-
+    Keep the requested subject, identity, anatomy, action and setting. Apply the visual treatment to its
+    existing shapes; do not replace it with an emblem, ritual, character or prop from a sample card.
+  color_and_tone: >-
+    Preserve the requested colors. Distinguish surface response with restrained highlight values rather
+    than forcing black stone, gold or jade.
+  lighting_and_shadow: >-
+    Follow the requested light source. Place compact reflections only on materials that support them; do
+    not add luminous outlines.
+  texture_and_material: >-
+    Keep each requested material intact. Express the contrast through its existing roughness and
+    reflectance rather than coating every object in lacquer.
+  camera_and_composition: >-
+    Keep the requested viewpoint, crop and spatial arrangement. Keep the requested framing; concentrate
+    reflectance near existing changes of plane and leave large low-detail areas.
+  atmosphere_and_mood: Cool precision and tactile contrast without imposing sacred objects, rituals or menace.
+  rendering_and_quality: >-
+    Balance clean matte masses and few crisp glints. Avoid wet-look skin, chrome everywhere and uniform
+    sparkling detail.
+avoidRules:
+  - all-over lacquer coating
+  - wet-look skin
+  - uniform sparkle
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-140.webp
+attributes:
+  negativePrompt: all-over lacquer coating, wet-look skin, uniform sparkle
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: all-over lacquer coating
+        field: rendering_and_quality
+      - text: wet-look skin
+        field: rendering_and_quality
+      - text: uniform sparkle
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP14-003
+      - SP14-007
+      - SP14-030
+      - SP14-031
+      - SP14-032
+      - SP14-109
+      - SP14-110
+      - SP14-113
+      - SP14-116
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: reflectance-and-interference
+  categoryName: Reflectance & Interference
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - reflectance-and-interference
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -1,0 +1,113 @@
+schemaVersion: 1
+id: SP23-026
+packId: pack_23
+name: VGA Chronicle
+category: 6. Classic RPG Visual Studies
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - classic-rpg-visual-studies
+  - deliberate-low-resolution-raster
+  - short-tonal-ramps
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    A deliberately authored low-resolution raster illustration builds forms from purposeful pixel
+    clusters, short tonal ramps, drawn contours, sparse hand-shaped hatching and broad, subdued color
+    masses. Treat these as transferable rendering choices rather than a fixed palette or resolution.
+  subject_treatment: >-
+    Preserve the requested subject, identity, count, pose, action, proportions and functional details.
+    Make the silhouette and major value groups readable before adding small pixel clusters; do not
+    introduce a game character, portrait or event to demonstrate the technique.
+  color_and_tone: >-
+    Preserve the requested palette and color relationships. When the palette is open, use restrained
+    related color masses and short ramps rather than a presumed DOS or VGA hardware palette.
+  lighting_and_shadow: >-
+    Follow the requested light sources and shadow direction. Build existing value transitions with
+    compact stepped ramps and selective hatching; do not invent torchlight, dramatic darkness or a
+    game-scene light source.
+  texture_and_material: >-
+    Use intentional pixel clusters and limited hatching to describe the actual materials already
+    present. Keep texture local and varied by material; do not replace drawn structure with uniform
+    noise, grain or a faux screenshot filter.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, orientation, aspect ratio and arrangement. Do not recast
+    the image as a game screen, title frame, HUD or fixed retro display format.
+  atmosphere_and_mood: >-
+    Keep the user's setting and mood. The raster treatment does not prescribe an era, genre,
+    historical scene or combat narrative.
+  rendering_and_quality: >-
+    Let pixel placement organize form at the intended output size. Keep cluster edges deliberate,
+    tonal ramps compact and broad color masses calm; avoid arbitrary pixel reduction or decorative
+    noise that weakens legibility.
+avoidRules:
+  - unrequested game HUD, DOS frame or title screen
+  - unrequested character portrait, combat or game-world scene
+  - fixed hardware palette, resolution or aspect ratio borrowed from a game
+  - uniform pixel noise replacing deliberate clusters
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-026.webp
+attributes:
+  negativePrompt: >-
+    unrequested game HUD, DOS frame or title screen, unrequested character portrait, combat or
+    game-world scene, fixed hardware palette, resolution or aspect ratio borrowed from a game,
+    uniform pixel noise replacing deliberate clusters
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: deliberate-low-resolution-raster-illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: purposeful-pixel-clusters-short-ramps-drawn-contours
+    avoidRules:
+      - text: unrequested game HUD, DOS frame or title screen
+        field: camera_and_composition
+      - text: unrequested character portrait, combat or game-world scene
+        field: global
+      - text: fixed hardware palette, resolution or aspect ratio borrowed from a game
+        field: global
+      - text: uniform pixel noise replacing deliberate clusters
+        field: texture_and_material
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: CR-01
+    sourceTitle: VGA Chronicle
+    historicalScope: 'Relectura digital · CRPG clásico'
+    referenceIds:
+      - S25
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: classic-rpg-visual-studies
+  categoryName: 6. Classic RPG Visual Studies
+  tags:
+    - curation-v2
+    - classic-rpg-visual-studies
+    - deliberate-low-resolution-raster
+    - short-tonal-ramps
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -13,61 +13,35 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Punitive Neon Vice Texture acts as a transferable anime-battle/worlds router: Punitive Neon Vice
-    Texture; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware
-    logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles,
-    studios, or lineage words may guide style, but they must not require canon cast, title-scene
-    replication, screenshots, logos, or one fixed card concept.
+    Abrasive neon-noir rendering with distressed ink, dense crosshatch, hard surface glints, and
+    saturated signals cutting through shadow.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Punitive
-    Neon Vice Texture as portable contour, motion grammar, surface language, and emotional pressure
-    without requiring canon elements or a default action setup.
+    Keep the requested subject and silhouette intact. Use rough hatch clusters and precise neon
+    edge accents on existing contours; add no weapon or costume.
   color_and_tone: >-
-    Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile
-    white, coral glow, and disciplined emissive accents; let Punitive Neon Vice Texture choose
-    accent intensity, value contrast, emotional temperature, and power-system separation while
-    staying attached to prompt X.
+    Set toxic green, hot red, and magenta against black and smoky gray; keep the vivid color
+    concentrated in small areas.
   lighting_and_shadow: >-
-    Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow,
-    and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Punitive Neon Vice Texture without replacing prompt X with a stock
-    anime frame.
+    Use hard cel-shadow blocks with clipped red or green highlights; avoid creating neon signs
+    or a nighttime street.
   texture_and_material: >-
-    Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust,
-    circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Punitive
-    Neon Vice Texture controlled, denoised, and coherent across bodies, objects, environments,
-    abstractions, and action.
+    Respect each depicted material while adding scratched ink, worn patches, and coarse hatching
+    in selected regions.
   camera_and_composition: >-
-    Frame through scale compression, machinery diagonals, grid overlays without readable UI,
-    service-bay density, orbital symmetry, and high-speed hardware lanes; convert Punitive Neon Vice
-    Texture into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules
-    instead of one fixed style sample layout.
+    Respect the prompt’s camera. Use abrupt contrast shifts and angled detail clusters within
+    the frame, not forced close-ups.
   atmosphere_and_mood: >-
-    Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine
-    grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic,
-    tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping
-    the anime-battle lineage readable.
+    Make the image feel tense and abrasive through compressed values, irregular marks, and sharp
+    color interruptions, not criminal subject matter.
   rendering_and_quality: >-
-    Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic
-    3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object
-    structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no
-    fake readable text, no signature, no photoreal or 3D-render drift.
+    Keep rough texture controlled against clean silhouette edges; separate colors clearly and
+    prevent darks from filling with noise.
   key_features: >-
-    Punitive Neon Vice Texture; armored contour, mechanical massing, modular joints, engineered
-    surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted
-    alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain
-    sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without
-    readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium
-    mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no
-    cockpit/control-room dependency
+    Distressed crosshatch; toxic green and hot red; sharp surface glints; compressed noir
+    shadows.
   creative_brief: >-
-    Apply Punitive Neon Vice Texture after prompt X as a transferable anime-battle/worlds layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
-    Punitive Neon Vice Texture, mecha and cyberpunk anime grammar with engineered silhouettes,
-    hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish
-    discipline, and negative controls without forcing canon cast, title scene, screenshot, card
-    pose, default monster, default combat prop, or prompt-literal card.
+    Retain the requested subject, action, and setting. Apply distressed ink, sparse toxic-neon
+    accents, and hard shadow blocks; add no weapon, costume, signage, or street.
 avoidRules:
   - realistic
   - 3d render
@@ -79,7 +53,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - plastic 3d robot render
   - cockpit source-frame look
@@ -90,7 +63,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -98,9 +70,9 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, plastic 3d robot render, cockpit source-frame look,
-    readable UI panel, fixed canon character, title scene replication, required source-frame look,
-    cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks
+    artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI
+    panel, fixed canon character, title scene replication, required source-frame look, cosplay,
+    generic anime filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

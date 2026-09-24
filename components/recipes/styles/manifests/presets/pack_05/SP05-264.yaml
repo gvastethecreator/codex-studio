@@ -16,61 +16,64 @@ tags:
   - dark-fantasy-and-seinen
 visualDna:
   aesthetic: >-
-    Clinical Innocence Rupture Style acts as a transferable anime-battle/worlds router: Clinical
-    Innocence Rupture Style; combine it with dark fantasy and seinen anime grammar with moral
-    pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual
-    restraint; named titles, studios, or lineage words may guide style, but they must not require
-    canon cast, title-scene replication, screenshots, logos, or one fixed card concept.
+    A transferable ink-led illustrated treatment built around precise hairline
+    boundaries across broad pale planes, with one controlled interruption in the contour
+    rhythm. For color and surface, protect the prompt palette while favoring
+    porcelain white, cool gray, and a tiny coral or vermilion note. Fragility can come
+    from the contrast between calm precision and one small irregularity; keep the
+    requested emotion intact
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Clinical
-    Innocence Rupture Style as portable contour, motion grammar, surface language, and emotional
-    pressure without requiring canon elements or a default action setup.
+    Preserve the requested subject, action, count, pose, expression, setting, and
+    material identity. Restyle its contours through precise hairline boundaries across
+    broad pale planes, with one controlled interruption in the contour rhythm; use
+    detail selectively and keep the actual form easy to read. Add no unrequested subject
+    or action.
   color_and_tone: >-
-    Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty
-    gold, and disciplined blood-or-danger accents; let Clinical Innocence Rupture Style choose
-    accent intensity, value contrast, emotional temperature, and power-system separation while
-    staying attached to prompt X.
+    Respect the prompt's colors and emotional temperature; protect the prompt palette
+    while favoring porcelain white, cool gray, and a tiny coral or vermilion note. Keep
+    values legible across the prompted light and dark range; do not crush midtones or
+    dim a bright request.
   lighting_and_shadow: >-
-    Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim,
-    and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or
-    magic, material depth, and mood from Clinical Innocence Rupture Style without replacing prompt X
-    with a stock anime frame.
+    Respect the stated light source, direction, and time; keep illumination clear and
+    diffuse, then use a small hard highlight at the point where the line treatment
+    breaks. Keep shadow detail and material transitions visible.
   texture_and_material: >-
-    Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral
-    fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Clinical
-    Innocence Rupture Style controlled, denoised, and coherent across bodies, objects, environments,
-    abstractions, and action.
+    Preserve each material's identity; pair smooth matte fields with extremely fine
+    paper grain; confine the accent mark instead of spreading stains. Keep texture
+    subordinate to form and avoid a uniform grime overlay.
   camera_and_composition: >-
-    Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive
-    diagonals, compressed civic space, and slow fatal closeups; convert Clinical Innocence Rupture
-    Style into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead
-    of one fixed style sample layout.
+    Preserve the requested framing, perspective, subject placement, and count; preserve
+    the original arrangement and let broad quiet areas contrast with tightly resolved
+    edges. Use the mark rhythm inside the supplied composition rather than replacing it.
   atmosphere_and_mood: >-
-    Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence,
-    loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal,
-    erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it
-    while keeping the anime-battle lineage readable.
+    Follow the prompt's requested mood first. Fragility can come from the contrast
+    between calm precision and one small irregularity; keep the requested emotion
+    intact. Darkness and tension are optional tonal pressure, never a requirement to add
+    danger or rewrite the scene.
   rendering_and_quality: >-
-    Finish with mature seinen finish with controlled darkness, stable structure, restrained texture,
-    no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or
-    object structure, readable effects, controlled grain, heavy denoise for noisy darks, no
-    watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+    Use clean, stable illustrated forms and precise hairline boundaries across broad
+    pale planes, with one controlled interruption in the contour rhythm; keep focal
+    edges crisp, texture controlled, and dark values legible. Avoid photoreal or
+    3D-render drift, watermark, logo, and fake readable text.
   key_features: >-
-    Clinical Innocence Rupture Style; scarred contour, restrained deformation, severe silhouettes,
-    vulnerable posture, occult or noir edge language, and readable psychological pressure;
-    crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture,
-    blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual
-    symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen
-    finish with controlled darkness, stable structure, restrained texture, no splatter-only horror,
-    no photoreal grime, and no watermark/text
+    precise hairline boundaries across broad pale planes, with one controlled
+    interruption in the contour rhythm; protect the prompt palette while favoring
+    porcelain white, cool gray, and a tiny coral or vermilion note; keep illumination
+    clear and diffuse, then use a small hard highlight at the point where the line
+    treatment breaks; pair smooth matte fields with extremely fine paper grain; confine
+    the accent mark instead of spreading stains; and preserve the original arrangement
+    and let broad quiet areas contrast with tightly resolved edges. The five cues should
+    read as one mark-and-value system, not as extra scene content.
   creative_brief: >-
-    Apply Clinical Innocence Rupture Style after prompt X as a transferable anime-battle/worlds
-    layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset
-    supplies Clinical Innocence Rupture Style, dark fantasy and seinen anime grammar with moral
-    pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual
-    restraint, finish discipline, and negative controls without forcing canon cast, title scene,
-    screenshot, card pose, default monster, default combat prop, or prompt-literal card.
+    Apply this style after the prompt while locking its subject, action, count, pose,
+    camera, context, and requested mood. Use precise hairline boundaries across broad
+    pale planes, with one controlled interruption in the contour rhythm, protect the
+    prompt palette while favoring porcelain white, cool gray, and a tiny coral or
+    vermilion note, keep illumination clear and diffuse, then use a small hard highlight
+    at the point where the line treatment breaks, and pair smooth matte fields with
+    extremely fine paper grain; confine the accent mark instead of spreading stains; the
+    prompt supplies all scene content. Do not add unrequested characters, objects,
+    source-specific lore, readable symbols, or a default action.
 avoidRules:
   - realistic
   - 3d render
@@ -82,7 +85,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - splatter-only horror
   - photoreal grime
@@ -93,7 +95,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -101,9 +102,9 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare,
-    fixed canon character, title scene replication, required source-frame look, cosplay, generic
-    anime filter, prompt-required card, readable text, logo, muddy noisy darks
+    artifacts, watermark, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed
+    canon character, title scene replication, required source-frame look, cosplay, generic anime
+    filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -16,74 +16,46 @@ tags:
   - modern-shonen-and-action
 visualDna:
   aesthetic: >-
-    Grand Pirate Adventure acts as a transferable anime-battle/worlds router: Grand Pirate
-    Adventure, elastic-adventure anime style grammar: bright open-sky palette, nautical cloth
-    rhythm, exaggerated expression geometry, rope-like motion arcs, and carnival-scale freedom
-    around one non-famous adventurer/object emblem; combine it with modern action anime grammar with
-    power-system clarity, impact frames, elastic motion, expressive line economy, and
-    high-readability spectacle; named titles, studios, or lineage words may guide style, but they
-    must not require canon cast, title-scene replication, screenshots, logos, or one fixed card
-    concept.
+    Build the graphic anime treatment from bold rounded outlines with elastic internal strokes and
+    broad, flexible forms with exaggerated curves and clear openings. Let looping arcs that
+    stretch and spring back set its rhythm; use clear bright blue, warm red and gold, clean white,
+    and dark outlines for color and clean flat color with lightly softened pigment edges for
+    finish.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Grand
-    Pirate Adventure, elastic-adventure anime style grammar: bright open-sky palette, nautical cloth
-    rhythm, exaggerated expression geometry, rope-like motion arcs as portable contour, motion
-    grammar, surface language, and emotional pressure without requiring canon elements or a default
-    action setup.
+    Preserve the requested content and framing. Use bold rounded outlines with elastic internal
+    strokes for edge work, broad, flexible forms with exaggerated curves and clear openings for
+    form simplification, and looping arcs that stretch and spring back only where movement is
+    already requested.
   color_and_tone: >-
-    Map color through saturated action accents, clean dark-light value separation, aura color,
-    bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts;
-    let Grand Pirate Adventure, elastic-adventure anime style grammar: bright open-sky palette,
-    nautical cloth rhythm, exaggerated expression geometry, rope-like motion arcs choose accent
-    intensity, value contrast, emotional temperature, and power-system separation while staying
-    attached to prompt X.
+    Build value groups with clear bright blue, warm red and gold, clean white, and dark outlines.
+    Place the strongest contrast on the requested focal area and preserve explicit color
+    instructions.
   lighting_and_shadow: >-
-    Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights,
-    and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Grand Pirate Adventure, elastic-adventure anime style grammar:
-    bright open-sky palette, nautical cloth rhythm, exaggerated expression geometry, rope-like
-    motion arcs without replacing prompt X with a stock anime frame.
+    Treat lighting graphically: broad pale highlights against clear cel-shadow groups. Keep
+    shadows grouped and respect any light direction already requested.
   texture_and_material: >-
-    Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted
-    debris, and controlled effect overlays; keep the tactile or effect cues in Grand Pirate
-    Adventure, elastic-adventure anime style grammar: bright open-sky palette, nautical cloth
-    rhythm, exaggerated expression geometry, rope-like motion arcs controlled, denoised, and
-    coherent across bodies, objects, environments, abstractions, and action.
+    Render existing surfaces with clean flat color with lightly softened pigment edges, preserving
+    depicted materials and adding no props or effects.
   camera_and_composition: >-
-    Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels,
-    compressed depth, and readable near-to-far force paths; convert Grand Pirate Adventure,
-    elastic-adventure anime style grammar: bright open-sky palette, nautical cloth rhythm,
-    exaggerated expression geometry, rope-like motion arcs into reusable perspective, timing,
-    rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.
+    Within the requested camera and crop, use roomy visual balance with flexible diagonals and
+    generous negative space to organize existing forms; preserve location and action.
   atmosphere_and_mood: >-
-    Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and
-    heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet,
-    grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle
-    lineage readable.
+    Let line weight, spacing, and value convey playful openness and generous momentum, while
+    preserving the prompt's emotional intent.
   rendering_and_quality: >-
-    Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp
-    silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or
-    object structure, readable effects, controlled grain, heavy denoise for noisy darks, no
-    watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+    Finish with vivid flat colors, legible outlines, and little small-scale detail; keep detail
+    selective and accents attached to existing forms.
   key_features: >-
-    Grand Pirate Adventure, elastic-adventure anime style grammar: bright open-sky palette, nautical
-    cloth rhythm, exaggerated expression geometry, rope-like motion arcs; dynamic contour,
-    force-transfer anatomy, readable power effects, sharp costume or surface simplification, and
-    emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat
-    highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact
-    crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths;
-    clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no
-    manga-panel text, and no cheap AI anime smear
+    bold rounded outlines with elastic internal strokes; broad, flexible forms with exaggerated
+    curves and clear openings; clear bright blue, warm red and gold, clean white, and dark
+    outlines; looping arcs that stretch and spring back; clean flat color with lightly softened
+    pigment edges; roomy visual balance with flexible diagonals and generous negative space.
   creative_brief: >-
-    Apply Grand Pirate Adventure after prompt X as a transferable anime-battle/worlds layer: prompt
-    X supplies subject, action, setting, tone, and intensity, while this preset supplies Grand
-    Pirate Adventure, elastic-adventure anime style grammar: bright open-sky palette, nautical cloth
-    rhythm, exaggerated expression geometry, rope-like motion arcs, and carnival-scale freedom
-    around one non-famous adventurer/object emblem, modern action anime grammar with power-system
-    clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle,
-    finish discipline, and negative controls without forcing canon cast, title scene, screenshot,
-    card pose, default monster, default combat prop, or prompt-literal card.
+    Keep the requested subject, action, location, and crop. Render them with bold rounded outlines
+    with elastic internal strokes, broad, flexible forms with exaggerated curves and clear
+    openings, and clear bright blue, warm red and gold, clean white, and dark outlines; use
+    looping arcs that stretch and spring back only where movement is already present, and apply
+    clean flat color with lightly softened pigment edges as the drawing finish.
 avoidRules:
   - realistic
   - 3d render
@@ -95,7 +67,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - pirate skull flag
   - straw-hat likeness
@@ -112,7 +83,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -120,11 +90,11 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, pirate skull flag, straw-hat likeness, copied crew
-    outfit, ship mast scene lock, treasure-map cliche, franchise insignia, photoreal cosplay,
-    western superhero comic, generic shonen source-frame look, fixed canon character, title scene
-    replication, required source-frame look, cosplay, generic anime filter, prompt-required card,
-    readable text, logo, muddy noisy darks
+    artifacts, watermark, signature, pirate skull flag, straw-hat likeness, copied crew outfit, ship
+    mast scene lock, treasure-map cliche, franchise insignia, photoreal cosplay, western superhero
+    comic, generic shonen source-frame look, fixed canon character, title scene replication,
+    required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy
+    noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

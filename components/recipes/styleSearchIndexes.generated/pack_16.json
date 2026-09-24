@@ -3,7 +3,7 @@
     {
       "id": "pack_16",
       "name": "Anime 03 — Anime Classics & Prestige",
-      "presetCount": 140
+      "presetCount": 141
     }
   ],
   "presets": [
@@ -18,6 +18,18 @@
       "tags": ["anime-03-anime-classics-and-prestige", "70s-and-80s-retro-anime"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp05-001 retro pioneer hero 1. 70s & 80s retro anime retro cel craft pack_16 anime 03 — anime classics & prestige 70s-and-80s-retro-anime anime-03-anime-classics-and-prestige 70s-and-80s-retro-anime"
+    },
+    {
+      "id": "SP16-001",
+      "name": "Analog Cel Craft",
+      "ref": "pack_16/SP16-001.yaml",
+      "packId": "pack_16",
+      "packName": "Anime 03 — Anime Classics & Prestige",
+      "categoryId": "70s-and-80s-retro-anime",
+      "categoryName": "1. 70s & 80s Retro Anime",
+      "tags": ["anime-03-anime-classics-and-prestige", "70s-and-80s-retro-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp16-001 analog cel craft 1. 70s & 80s retro anime retro cel craft pack_16 anime 03 — anime classics & prestige 70s-and-80s-retro-anime anime-03-anime-classics-and-prestige 70s-and-80s-retro-anime"
     },
     {
       "id": "SP05-311",
@@ -1964,5 +1976,5 @@
       "searchableText": "sp13-035 demonic ritual mask geometry demonic ritual mask geometry style 7. horror horror animation pack_16 anime 03 — anime classics & prestige horror anime-03-anime-classics-and-prestige horror"
     }
   ],
-  "totalPresetCount": 140
+  "totalPresetCount": 141
 }

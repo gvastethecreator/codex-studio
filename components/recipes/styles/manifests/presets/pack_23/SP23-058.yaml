@@ -1,0 +1,103 @@
+schemaVersion: 1
+id: SP23-058
+packId: pack_23
+name: Shallow Relief and Fine Marks
+category: 12. Hybrid Visual Studies
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - hybrid-visual-studies
+  - shallow-relief-fine-marks
+  - portable-visual-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Suggest shallow modeled depth with restrained highlights and shadows, then add fine drawing marks
+    and dry-pigment accents to existing forms. Keep the relief cue subtle and integrated.
+  subject_treatment: >-
+    Preserve the requested identity, function, count, pose, action, proportions and geometry. Relief
+    shading follows existing forms; drawn accents add no writing, symbols or new content.
+  color_and_tone: >-
+    Retain the requested palette and color relationships. Use restrained opaque accents within those
+    colors without imposing a fixed pigment or material color.
+  lighting_and_shadow: >-
+    Follow the requested light direction. Use shallow value changes to clarify existing form without
+    inventing relief, new shadows or a new light source.
+  texture_and_material: >-
+    Preserve the materials already depicted. Keep dry-pigment marks fine and local to existing
+    surfaces rather than turning the full image into a new material.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, scale and spatial relationships. Relief cues only affect
+    rendering; they do not add elements or alter the requested arrangement.
+  atmosphere_and_mood: >-
+    Preserve the requested scene and mood. Low-relief modeling and fine marks change image treatment
+    only; they do not add a setting, period or narrative.
+  rendering_and_quality: >-
+    Keep the relief restrained, drawing marks legible and pigment accents selective. Avoid raised
+    edges that distort the silhouette or marks that resemble lettering.
+avoidRules:
+  - unrequested changes to geometry or depicted material
+  - excessive relief, noisy pigment or mark-like lettering
+  - unrequested symbols or lettering that create new content
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-058.webp
+attributes:
+  negativePrompt: >-
+    unrequested changes to geometry or depicted material, excessive relief, noisy pigment or
+    mark-like lettering, unrequested symbols or lettering that create new content
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: shallow-relief-drawing-with-dry-pigment-marks
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: subtle-relief-modeling-fine-drawing-marks-selective-pigment
+    avoidRules:
+      - text: unrequested changes to geometry or depicted material
+        field: subject_treatment
+      - text: excessive relief, noisy pigment or mark-like lettering
+        field: rendering_and_quality
+      - text: unrequested symbols or lettering that create new content
+        field: global
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: HY-06
+    sourceTitle: Clay Codex
+    historicalScope: Propuesta original contemporánea
+    referenceIds:
+      - S51
+      - S07
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: hybrid-visual-studies
+  categoryName: 12. Hybrid Visual Studies
+  tags:
+    - curation-v2
+    - hybrid-visual-studies
+    - shallow-relief-fine-marks
+    - portable-visual-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

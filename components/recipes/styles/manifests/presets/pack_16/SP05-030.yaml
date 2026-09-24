@@ -16,79 +16,33 @@ tags:
   - 2000s-classics
 visualDna:
   aesthetic: >-
-    Gothic Soul-Pop Action Style acts as a transferable anime-prestige router: gothic anime elegance
-    and ornate shadow discipline, alongside precision action timing and clear impact grammar; fuse
-    it with 2000s anime classic grammar with cel-digital hybrid polish, genre contrast, sharper
-    compositing, and stylized emotional escalation; it routes era, genre, line economy, cel or
-    digital finish, and performance tone without locking prompt content to the source title or
-    sample image.
+    Ornamental shadow shapes meet crisp graphic accents and clear motion
+    contours.
   subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through motion-ready
-    contour and readable force transfer, alongside contours paced by gothic tension, readable pose
-    energy, and silhouette discipline; identity should remain readable through anime contour,
-    expression economy, pose energy, shape simplification, and effect hierarchy instead of a
-    required canon character or title scene.
+    Preserve the prompted subject and action. Use motion-ready contours and visible force
+    transfer within the existing gesture.
   color_and_tone: >-
-    Map color through black, crimson, bone white, violet, and polished gold accents, alongside
-    bright pop flats, candy accents, and high-key cel contrast; anchor it in clean digital flats,
-    gothic reds, cool clinical blues, warm romance pastels, pop accents, and deliberate contrast
-    keys; keep value separation clean, cel flats intentional, accents purposeful, and palette
-    behavior attached to the requested content.
+    If palette is open, use black, crimson, bone, violet and occasional polished-gold
+    accents. Retain all explicit colors.
   lighting_and_shadow: >-
-    Use candle-like glow, hard rim, and velvet shadow, alongside clean graphic highlights and
-    playful glow and impact flashes and clean rim separation; combine it with digital cel rim, bloom
-    accents, dramatic night cuts, clinical overheads, magical glows, and clean compositing
-    separation; shadows should read as anime light design, rims should clarify form, and glow or
-    effects should support the prompt rather than replacing it.
+    Use localized warm glow, hard rim and deep velvet-like shadow, keeping the source
+    consistent with the prompt.
   texture_and_material: >-
-    Render lace, polished metal, dark cloth, stained glass color, and inked ornament, alongside cel
-    paint and ink grain tuned to soul material contrast; anchor surfaces in digital ink edges,
-    subtle gradient fills, polished cloth and hair shapes, screen-like glow, and controlled texture
-    overlays; cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere
-    must stay coherent across people, objects, environments, action, and abstractions.
+    Render ornamental ink and polished-to-matte contrast only on surfaces already present.
   camera_and_composition: >-
-    Frame around attack vectors, recoil spacing, and sharp action lanes, alongside gothic converted
-    into reusable framing rhythm and anime timing, then extend it with opening-sequence energy,
-    split-second action framing, romcom reaction spacing, gothic symmetry, and readable effect
-    geometry; the style should support portraits, props, machines, performances, landscapes,
-    symbols, and full scenes through reusable anime staging grammar instead of one fixed card
-    layout.
+    Keep the requested camera. When action is present, clarify attack direction, recoil
+    spacing and motion lanes without inventing action.
   atmosphere_and_mood: >-
-    Carry mood through buoyant unreality and fast visual confidence, alongside momentum, danger, and
-    controlled spectacle; braid it with genre fluency: deadpan comedy, gothic danger, romance
-    friction, rebellion, paranoia, elegance, and pop unreality; the preset can become funny,
-    sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving
-    the chosen anime lineage.
+    Let the requested tone set the balance of elegance, danger or spectacle.
   rendering_and_quality: >-
-    Finish with clean anime finishing that keeps gothic identity readable without noisy denoise,
-    alongside clean anime finishing that keeps soul identity readable without noisy denoise; enforce
-    clean 2000s cel-digital finish with strong design readability, controlled effects, and no muddy
-    low-resolution artifacting; prioritize clean denoise, stable anatomy or object structure,
-    readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal
-    or 3D-render drift.
+    Keep impact contours crisp, shadows grouped and background painting integrated without
+    obscuring motion.
   key_features: >-
-    gothic anime elegance and ornate shadow discipline, alongside precision action timing and clear
-    impact grammar; motion-ready contour and readable force transfer, alongside contours paced by
-    gothic tension, readable pose energy, and silhouette discipline; lace, polished metal, dark
-    cloth, stained glass color, and inked ornament, alongside cel paint and ink grain tuned to soul
-    material contrast; candle-like glow, hard rim, and velvet shadow, alongside clean graphic
-    highlights and playful glow and impact flashes and clean rim separation; attack vectors, recoil
-    spacing, and sharp action lanes, alongside gothic converted into reusable framing rhythm and
-    anime timing
+    Ornamental shadow shapes; hard rim over deep soft shadow; bright graphic accents;
+    readable force-transfer lines.
   creative_brief: >-
-    Apply Gothic Soul-Pop Action Style after prompt X as a transferable anime-prestige layer: prompt
-    X supplies subject, action, setting, tone, and intensity, while this preset supplies gothic
-    anime elegance and ornate shadow discipline, alongside precision action timing and clear impact
-    grammar, alongside motion-ready contour and readable force transfer, alongside contours paced by
-    gothic tension, readable pose energy, and silhouette discipline; black, crimson, bone white,
-    violet, and polished gold accents, alongside bright pop flats, candy accents, and high-key cel
-    contrast; candle-like glow, hard rim, and velvet shadow, alongside clean graphic highlights and
-    playful glow and impact flashes and clean rim separation; lace, polished metal, dark cloth,
-    stained glass color, and inked ornament, alongside cel paint and ink grain tuned to soul
-    material contrast and attack vectors, recoil spacing, and sharp action lanes, alongside gothic
-    converted into reusable framing rhythm and anime timing, finish discipline, and negative
-    controls without requiring a fixed canon cast, title scene, prop bundle, location, sport,
-    instrument, weapon, or card composition.
+    Combine ornamental shadow, optional dark accents and clear action contours only as the
+    prompt allows. Keep its scene, palette and framing.
 avoidRules:
   - realistic
   - 3d render
@@ -100,7 +54,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - generic isekai gloss
   - plastic digital anime
@@ -111,15 +64,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-030.webp
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy
-    effects clutter, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise, readable text
+    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
+    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
+    filter, prompt-literal card, muddy cel noise
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

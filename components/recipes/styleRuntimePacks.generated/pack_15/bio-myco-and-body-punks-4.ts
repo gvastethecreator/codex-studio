@@ -4,235 +4,93 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP15-025',
-    name: 'Mycelial Route Veins',
+    id: 'SP15-094',
+    name: 'Biopunk',
     category: '4. Bio, Myco & Body Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, subway corridor, readable transit map, readable text, horror fungus infection, body horror, slimy membrane microdetail, photoreal dampness, empty platform, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, gore shock, body horror only, random tentacle clutter, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'Do not impose a lab, clinic, greenhouse, organism or body transformation as the default scene., Respect anatomy and material locks; do not add unrequested gore or anatomical change., Avoid uniform biological glow and circuitry unrelated to living function.',
     style: {
       aesthetic:
-        'Mycelial Route Veins operates as a portable punk-spectrum router: combine Mycelial Route Veins identity cues through mycelial ribs; glowing route veins; cap-like shade forms; damp clay planes; maintenance baskets; non-readable route veins with bio/myco/body punk grammar with symbiosis, living infrastructure, care-tech unease, spore weather, organic circuitry, and soft mutation discipline, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'An engineered-living language where cell lattices, membrane structures, symbiotic components and precise bio-circuit traces interlock as intentional systems, not organic texture alone.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through root-vein routing, mycelial branching, rib-like supports, nerve loom lines, chloroplast panels, surgical care cues, and living-surface transformation; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve identity, anatomy and explicit locks. Restyle open forms, materials and clothing with grown joins, cellular panels, living polymer and technical traces; use biology as active design vocabulary. In ordinary settings, apply cell/membrane cues to existing garments or materials and connect a precise bio-circuit to a function; keep the room layout intact and add no organisms, plants or wall text as set dressing unless requested.',
       color_and_tone:
-        'Map color through mycelium cream, chlorophyll green, nerve pink, surgical teal, graphite, damp umber, spore gold, and soft white contrasts; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Let explicit palette lead, balancing mineral or synthetic values with living accents. Separate translucent, opaque and engineered regions; avoid fixed green glow.',
       lighting_and_shadow:
-        "Use bioluminescent underglow, clinic-soft fill, fungal halo, canopy-filtered light, wet specular points, and careful tissue-safe rim; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Follow specified light and sources. Use internal transitions only within translucent forms; body horror and clinical drama remain optional.',
       texture_and_material:
-        'Render mycelium mats, translucent membranes, living ribs, nerve fibers, wet bark, petri-glass accents, spores, and organic circuit lattices; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Distinguish membrane, living polymer, plant composite, bone-like material, glass and metal through translucency, fiber direction and grain; surfaces feel intentionally fabricated.',
       camera_and_composition:
-        'Compose through branching growth paths, care-procedure spacing, symbiotic halos, living scaffold rhythm, and body/object integration without gore dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Preserve viewpoint and placement. Use organic planes and technical traces within the requested composition; a lab, greenhouse or close-up is not required.',
       atmosphere_and_mood:
-        'Carry mood through uncanny compassion, humid care, biological intimacy, ecological intelligence, soft dread, and experimental tenderness; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Create curiosity, unease or wonder through living growth and engineered order while following requested tone.',
       rendering_and_quality:
-        'Finish with denoised biopunk illustration with controlled organic texture, readable anatomy or object structure, and no gore-shock shortcut; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'mycelial ribs; glowing route veins; cap-like shade forms; damp clay planes; maintenance baskets; non-readable route veins',
-      creative_brief:
-        'Use Mycelial Route Veins after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies mycelial ribs, glowing route veins, cap-like shade forms, damp clay planes, maintenance baskets, non-readable route veins, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Use clean organic contours, precise technical ink and broad translucent planes, with detail at functional interfaces. Avoid random tendril or circuit clutter.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-026', 'SP15-029', 'SP15-030', 'SP15-031', 'SP15-032'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-026',
-    name: 'Symbiont Canopy Exchange',
+    id: 'SP15-095',
+    name: 'Mycopunk',
     category: '4. Bio, Myco & Body Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, exposed organs, blood, surgery table, severed limbs, fetish body display, generic commerce-system aisle, readable labels, wet skin realism, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, gore shock, body horror only, random tentacle clutter, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'Do not replace the subject with a mushroom or impose a forest floor., Do not add floating spores, bioluminescence or decomposition as defaults., Keep hyphae structural or connective rather than decorative wallpaper.',
     style: {
       aesthetic:
-        'Symbiont Canopy Exchange operates as a portable punk-spectrum router: combine Symbiont Canopy Exchange identity cues through living canopy planes; symbiont tools; wet pod shapes; woven fiber blocks; wearable graft forms; seed-pod shapes with bio/myco/body punk grammar with symbiosis, living infrastructure, care-tech unease, spore weather, organic circuitry, and soft mutation discipline, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'A fungal design language built from load-bearing mycelial branching, woven hyphae, layered cap-and-gill rhythms, pore clusters and spore-bearing forms; growth supplies structure.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through root-vein routing, mycelial branching, rib-like supports, nerve loom lines, chloroplast panels, surgical care cues, and living-surface transformation; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve subject and locks. Redesign open structures through branching supports, fibrous joins, nested lamellae and porous grown composites, adapting fungal architecture instead of adding a mushroom prop. Keep existing silhouettes and functions recognizable; use load-bearing hyphae, pores and gill rhythms on existing forms rather than cap-shaped furniture or decor unless requested.',
       color_and_tone:
-        'Map color through mycelium cream, chlorophyll green, nerve pink, surgical teal, graphite, damp umber, spore gold, and soft white contrasts; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Use mycelium ivory, umber, rust, bruise violet and muted spore hues with value separation. Respect explicit palettes; avoid automatic toxic green.',
       lighting_and_shadow:
-        "Use bioluminescent underglow, clinic-soft fill, fungal halo, canopy-filtered light, wet specular points, and careful tissue-safe rim; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Honor specified lighting. Let gills, pores or spore veils catch light when present; do not invent glow or floating spores.',
       texture_and_material:
-        'Render mycelium mats, translucent membranes, living ribs, nerve fibers, wet bark, petri-glass accents, spores, and organic circuit lattices; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Contrast woven hyphae, velvety caps, fine gills, porous rind and spore dust with controlled marks. Apply fungal material logic to open choices, not as a surface filter.',
       camera_and_composition:
-        'Compose through branching growth paths, care-procedure spacing, symbiotic halos, living scaffold rhythm, and body/object integration without gore dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Preserve view and scale. Arrange branching supports and nested growth rhythms around the focal form; no forest, mushroom cluster or macro view is required.',
       atmosphere_and_mood:
-        'Carry mood through uncanny compassion, humid care, biological intimacy, ecological intelligence, soft dread, and experimental tenderness; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Suggest interdependence, persistence, abundance or uncanny growth according to requested tone; woodland fantasy is not implied.',
       rendering_and_quality:
-        'Finish with denoised biopunk illustration with controlled organic texture, readable anatomy or object structure, and no gore-shock shortcut; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'living canopy planes; symbiont tools; wet pod shapes; woven fiber blocks; wearable graft forms; seed-pod shapes',
-      creative_brief:
-        'Use Symbiont Canopy Exchange after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies living canopy planes, symbiont tools, wet pod shapes, woven fiber blocks, wearable graft forms, seed-pod shapes, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Use branching linework, matte planes and crisp radial lamellae with sparse pore accents. Keep structure legible; avoid spore noise and generic biotech circuitry.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-025', 'SP15-028'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-027',
-    name: 'Nerve Loom Carecraft',
+    id: 'SP15-096',
+    name: 'Bodypunk',
     category: '4. Bio, Myco & Body Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic near-plane portrait, anime glamour portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, surgery, blood, exposed tissue, severed hand, fetish medical pose, thread-web clutter, readable medical UI, photoreal skin, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, gore shock, body horror only, random tentacle clutter, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'Do not impose a clinic, procedure, body modification or injury narrative., Respect anatomy locks; do not add unrequested grafts, exposed anatomy or gore., Avoid nerve wiring that obscures body structure.',
     style: {
       aesthetic:
-        'Nerve Loom Carecraft operates as a portable punk-spectrum router: combine Nerve Loom Carecraft identity cues through nerve looms; prosthetic-sensation cues; fiber arcs; polymer shapes; compact monitors; Bodypunk carecraft poster language built from nerve-like fiber looms with bio/myco/body punk grammar with symbiosis, living infrastructure, care-tech unease, spore weather, organic circuitry, and soft mutation discipline, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'Bodypunk illustration treats the body as the meeting point of agency and designed technology: fitted sensory wearables, tendon-like cable routes, second-skin panels and articulated external supports. Make a purposeful interface between living form and constructed design, not a layer of nerve-pattern texture.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through root-vein routing, mycelial branching, rib-like supports, nerve loom lines, chloroplast panels, surgical care cues, and living-surface transformation; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve requested identity, action and explicit anatomy or reference locks. Design unspecified clothing, equipment or surfaces as fitted second skins, sensory bands, articulated supports and flexible interfaces that follow movement. Keep new external components functionally connected; changing supplied anatomy or adding invasive grafts requires that transformation to be requested. In a scene without a person, express body contact through one fitted seam or tactile sensory surface integrated into an existing seat, back or armrest; preserve familiar furniture and room context without requiring a new cable.',
       color_and_tone:
-        'Map color through mycelium cream, chlorophyll green, nerve pink, surgical teal, graphite, damp umber, spore gold, and soft white contrasts; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Use supplied skin, fabric or material colors with selective mineral red, electric blue, ivory or amber sensory accents. Respect palette and localize signals.',
       lighting_and_shadow:
-        "Use bioluminescent underglow, clinic-soft fill, fungal halo, canopy-filtered light, wet specular points, and careful tissue-safe rim; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Follow specified light and sources. Use gentle soft-form transitions and crisp contour shadows; do not impose clinical glare or dramatic glow.',
       texture_and_material:
-        'Render mycelium mats, translucent membranes, living ribs, nerve fibers, wet bark, petri-glass accents, spores, and organic circuit lattices; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Distinguish skin from flexible polymer, woven sensor bands, soft padding and articulated hard supports. Place tactile fibers and translucent interfaces at purposeful contact points; do not coat the whole body in the same synthetic membrane.',
       camera_and_composition:
-        'Compose through branching growth paths, care-procedure spacing, symbiotic halos, living scaffold rhythm, and body/object integration without gore dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Preserve view and subject placement. Let contour paths guide the eye without forcing portrait, examination or close-up.',
       atmosphere_and_mood:
-        'Carry mood through uncanny compassion, humid care, biological intimacy, ecological intelligence, soft dread, and experimental tenderness; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Suggest sensory awareness, vulnerability, strength or care through tactile contrast; retain requested mood, including horror when specifically requested.',
       rendering_and_quality:
-        'Finish with denoised biopunk illustration with controlled organic texture, readable anatomy or object structure, and no gore-shock shortcut; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'nerve looms; prosthetic-sensation cues; fiber arcs; polymer shapes; compact monitors; Bodypunk carecraft poster language built from nerve-like fiber looms',
-      creative_brief:
-        'Use Nerve Loom Carecraft after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies nerve looms, prosthetic-sensation cues, fiber arcs, polymer shapes, compact monitors, Bodypunk carecraft poster language built from nerve-like fiber looms, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Use contour-following fibers, restrained translucent layers and clear separation between marks and anatomy. Use medical detail only when called for.',
     },
-  },
-  {
-    id: 'SP15-028',
-    name: 'Spore Signal Weather',
-    category: '4. Bio, Myco & Body Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, bird flock, lantern fixation, readable glyphs, letter-like glyphs, readable marks, readable text, corridor spectacle, horror spores, gas-mask soldier, dense particle noise, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, gore shock, body horror only, random tentacle clutter, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Spore Signal Weather operates as a portable punk-spectrum router: combine Spore Signal Weather identity cues through spore towers; message clouds; woven mask shapes; circular signal rhythm; non-readable glyphs; Fungal communication-network poster language built from spore tower silhouettes with bio/myco/body punk grammar with symbiosis, living infrastructure, care-tech unease, spore weather, organic circuitry, and soft mutation discipline, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through root-vein routing, mycelial branching, rib-like supports, nerve loom lines, chloroplast panels, surgical care cues, and living-surface transformation; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through mycelium cream, chlorophyll green, nerve pink, surgical teal, graphite, damp umber, spore gold, and soft white contrasts; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use bioluminescent underglow, clinic-soft fill, fungal halo, canopy-filtered light, wet specular points, and careful tissue-safe rim; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render mycelium mats, translucent membranes, living ribs, nerve fibers, wet bark, petri-glass accents, spores, and organic circuit lattices; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through branching growth paths, care-procedure spacing, symbiotic halos, living scaffold rhythm, and body/object integration without gore dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through uncanny compassion, humid care, biological intimacy, ecological intelligence, soft dread, and experimental tenderness; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with denoised biopunk illustration with controlled organic texture, readable anatomy or object structure, and no gore-shock shortcut; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'spore towers; message clouds; woven mask shapes; circular signal rhythm; non-readable glyphs; Fungal communication-network poster language built from spore tower silhouettes',
-      creative_brief:
-        'Use Spore Signal Weather after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies spore towers, message clouds, woven mask shapes, circular signal rhythm, non-readable glyphs, Fungal communication-network poster language built from spore tower silhouettes, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-029',
-    name: 'Living Rib Infrastructure',
-    category: '4. Bio, Myco & Body Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, realistic environment concept art, deep cinematic vista, photobash polish, realistic material rendering, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, palace bridge, empty monumental architecture, rib-cage horror, wet organic gore, photoreal bark texture, dense root spaghetti, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, gore shock, body horror only, random tentacle clutter, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Living Rib Infrastructure operates as a portable punk-spectrum router: combine Living Rib Infrastructure identity cues through root cables; repair pods; rib arches; sap-lit seams; woven rail arcs; Bioarchitecture infrastructure poster language built from living ribs with bio/myco/body punk grammar with symbiosis, living infrastructure, care-tech unease, spore weather, organic circuitry, and soft mutation discipline, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through root-vein routing, mycelial branching, rib-like supports, nerve loom lines, chloroplast panels, surgical care cues, and living-surface transformation; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through mycelium cream, chlorophyll green, nerve pink, surgical teal, graphite, damp umber, spore gold, and soft white contrasts; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use bioluminescent underglow, clinic-soft fill, fungal halo, canopy-filtered light, wet specular points, and careful tissue-safe rim; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render mycelium mats, translucent membranes, living ribs, nerve fibers, wet bark, petri-glass accents, spores, and organic circuit lattices; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through branching growth paths, care-procedure spacing, symbiotic halos, living scaffold rhythm, and body/object integration without gore dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through uncanny compassion, humid care, biological intimacy, ecological intelligence, soft dread, and experimental tenderness; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with denoised biopunk illustration with controlled organic texture, readable anatomy or object structure, and no gore-shock shortcut; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'root cables; repair pods; rib arches; sap-lit seams; woven rail arcs; Bioarchitecture infrastructure poster language built from living ribs',
-      creative_brief:
-        'Use Living Rib Infrastructure after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies root cables, repair pods, rib arches, sap-lit seams, woven rail arcs, Bioarchitecture infrastructure poster language built from living ribs, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-030',
-    name: 'Gene Hack Microcraft',
-    category: '4. Bio, Myco & Body Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, detailed shop interior, photobash polish, realistic material rendering, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, readable labels, text on vials, sterile mega-lab, random object still life, syringe hero, drug-store shelf, work-lamp fixation, photoreal glass clutter, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, gore shock, body horror only, random tentacle clutter, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Gene Hack Microcraft operates as a portable punk-spectrum router: combine Gene Hack Microcraft identity cues through coded plants; incubator warmth; blank vial shapes; rubber tubing arcs; patched coat blocks; coded plant patterns with bio/myco/body punk grammar with symbiosis, living infrastructure, care-tech unease, spore weather, organic circuitry, and soft mutation discipline, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through root-vein routing, mycelial branching, rib-like supports, nerve loom lines, chloroplast panels, surgical care cues, and living-surface transformation; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through mycelium cream, chlorophyll green, nerve pink, surgical teal, graphite, damp umber, spore gold, and soft white contrasts; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use bioluminescent underglow, clinic-soft fill, fungal halo, canopy-filtered light, wet specular points, and careful tissue-safe rim; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render mycelium mats, translucent membranes, living ribs, nerve fibers, wet bark, petri-glass accents, spores, and organic circuit lattices; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through branching growth paths, care-procedure spacing, symbiotic halos, living scaffold rhythm, and body/object integration without gore dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through uncanny compassion, humid care, biological intimacy, ecological intelligence, soft dread, and experimental tenderness; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with denoised biopunk illustration with controlled organic texture, readable anatomy or object structure, and no gore-shock shortcut; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'coded plants; incubator warmth; blank vial shapes; rubber tubing arcs; patched coat blocks; coded plant patterns',
-      creative_brief:
-        'Use Gene Hack Microcraft after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies coded plants, incubator warmth, blank vial shapes, rubber tubing arcs, patched coat blocks, coded plant patterns, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-031',
-    name: 'Organic Circuit Lattice',
-    category: '4. Bio, Myco & Body Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, exposed organs, bloody membrane, fleshy body parts, wet horror wall, erotic body-horror pose, realistic greenhouse render, glasshouse archviz, corridor, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, gore shock, body horror only, random tentacle clutter, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Organic Circuit Lattice operates as a portable punk-spectrum router: combine Organic Circuit Lattice identity cues through organic circuit veins; glass ribs; membrane panels; gold traces; polished bone shapes; Elegant unsettling biotech poster language where organic circuits with bio/myco/body punk grammar with symbiosis, living infrastructure, care-tech unease, spore weather, organic circuitry, and soft mutation discipline, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through root-vein routing, mycelial branching, rib-like supports, nerve loom lines, chloroplast panels, surgical care cues, and living-surface transformation; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through mycelium cream, chlorophyll green, nerve pink, surgical teal, graphite, damp umber, spore gold, and soft white contrasts; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use bioluminescent underglow, clinic-soft fill, fungal halo, canopy-filtered light, wet specular points, and careful tissue-safe rim; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render mycelium mats, translucent membranes, living ribs, nerve fibers, wet bark, petri-glass accents, spores, and organic circuit lattices; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through branching growth paths, care-procedure spacing, symbiotic halos, living scaffold rhythm, and body/object integration without gore dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through uncanny compassion, humid care, biological intimacy, ecological intelligence, soft dread, and experimental tenderness; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with denoised biopunk illustration with controlled organic texture, readable anatomy or object structure, and no gore-shock shortcut; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'organic circuit veins; glass ribs; membrane panels; gold traces; polished bone shapes; Elegant unsettling biotech poster language where organic circuits',
-      creative_brief:
-        'Use Organic Circuit Lattice after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies organic circuit veins, glass ribs, membrane panels, gold traces, polished bone shapes, Elegant unsettling biotech poster language where organic circuits, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-032',
-    name: 'Chloroplast Panel Stack',
-    category: '4. Bio, Myco & Body Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, leaf-logo emblem, eco badge, generic glass utopia, greenhouse tower, resort balcony render, commerce-system aisle, photoreal facade, dense pipe spaghetti, luxury eco archviz, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, gore shock, body horror only, random tentacle clutter, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Chloroplast Panel Stack operates as a portable punk-spectrum router: combine Chloroplast Panel Stack identity cues through chloroplast panels; algae-glass blocks; concrete planes; pipe loops; cellular glow; Plant-cell urban biotech poster language built from chloroplast panel tiles with bio/myco/body punk grammar with symbiosis, living infrastructure, care-tech unease, spore weather, organic circuitry, and soft mutation discipline, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through root-vein routing, mycelial branching, rib-like supports, nerve loom lines, chloroplast panels, surgical care cues, and living-surface transformation; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through mycelium cream, chlorophyll green, nerve pink, surgical teal, graphite, damp umber, spore gold, and soft white contrasts; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use bioluminescent underglow, clinic-soft fill, fungal halo, canopy-filtered light, wet specular points, and careful tissue-safe rim; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render mycelium mats, translucent membranes, living ribs, nerve fibers, wet bark, petri-glass accents, spores, and organic circuit lattices; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through branching growth paths, care-procedure spacing, symbiotic halos, living scaffold rhythm, and body/object integration without gore dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through uncanny compassion, humid care, biological intimacy, ecological intelligence, soft dread, and experimental tenderness; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with denoised biopunk illustration with controlled organic texture, readable anatomy or object structure, and no gore-shock shortcut; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'chloroplast panels; algae-glass blocks; concrete planes; pipe loops; cellular glow; Plant-cell urban biotech poster language built from chloroplast panel tiles',
-      creative_brief:
-        'Use Chloroplast Panel Stack after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies chloroplast panels, algae-glass blocks, concrete planes, pipe loops, cellular glow, Plant-cell urban biotech poster language built from chloroplast panel tiles, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-027'],
+      visualEvaluation: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

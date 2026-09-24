@@ -16,79 +16,36 @@ tags:
   - 90s-golden-era
 visualDna:
   aesthetic: >-
-    Engine-Trail Outlaw Adventure Style acts as a transferable anime-prestige router: a engine anime
-    direction shaped by era-aware line economy and genre tone, alongside a trail anime direction
-    shaped by era-aware line economy and genre tone; fuse it with 90s golden-era anime direction
-    with sharp cel shadows, dramatic closeups, aura effects, urban melancholy, and high-contrast
-    compositing; it routes era, genre, line economy, cel or digital finish, and performance tone
-    without locking prompt content to the source title or sample image.
+    A kinetic 90s cel treatment uses sharp contour cuts, directional engine-like trails and strongly
+    angled color streaks. Its outlaw energy is speed and visual thrust, not a vehicle or western
+    subject.
   subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through contours paced by
-    engine tension, readable pose energy, and silhouette discipline, alongside contours paced by
-    trail tension, readable pose energy, and silhouette discipline; identity should remain readable
-    through anime contour, expression economy, pose energy, shape simplification, and effect
-    hierarchy instead of a required canon character or title scene.
+    Keep the requested identity and action. Attach a few trailing lines to existing movement and
+    preserve static forms without streaks; add no rider, machine or weapon.
   color_and_tone: >-
-    Map color through a engine accent system held inside disciplined cel values, alongside a trail
-    accent system held inside disciplined cel values; anchor it in deep night blues, saturated aura
-    color, jewel accents, warm skin cel tones, smoke grays, and VHS-era contrast; keep value
-    separation clean, cel flats intentional, accents purposeful, and palette behavior attached to
-    the requested content.
+    When open, contrast deep navy with selective red, electric blue and warm highlights. Keep
+    requested colors and use the brightest streak only to clarify motion.
   lighting_and_shadow: >-
-    Use a engine light logic using cel rim, glow behavior, and blocked shadow, alongside a trail
-    light logic using cel rim, glow behavior, and blocked shadow; combine it with hard-edged rim
-    light, aura bloom, neon spill, twilight gradients, speed-flash cuts, and moody cel shadow
-    blocks; shadows should read as anime light design, rims should clarify form, and glow or effects
-    should support the prompt rather than replacing it.
+    Build crisp cel shadows and bright edge accents around existing moving forms. Preserve the
+    requested illumination; do not invent headlights or explosions.
   texture_and_material: >-
-    Render cel paint and ink grain tuned to engine material contrast, alongside cel paint and ink
-    grain tuned to trail material contrast; anchor surfaces in painted cels, compositing grain,
-    inked speed marks, smoke layers, leather or metal highlights, and analog scan softness; cel
-    edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay
-    coherent across people, objects, environments, action, and abstractions.
+    Combine clean ink contours, painted color blocks and narrow speed traces. Keep marks directional
+    and do not smear surface detail.
   camera_and_composition: >-
-    Frame around engine converted into reusable framing rhythm and anime timing, alongside trail
-    converted into reusable framing rhythm and anime timing, then extend it with cinematic closeups,
-    speed-line vectors, dramatic low angles, layered profile cuts, and compressed emotional space;
-    the style should support portraits, props, machines, performances, landscapes, symbols, and full
-    scenes through reusable anime staging grammar instead of one fixed card layout.
+    Use a strong diagonal or receding line of movement inside the supplied framing. Preserve camera
+    and existing action; do not add a road or chase.
   atmosphere_and_mood: >-
-    Carry mood through engine emotional pressure and genre-specific tone, alongside trail emotional
-    pressure and genre-specific tone; braid it with heightened rivalry, melancholy cool, occult
-    romance, existential drift, heroic escalation, and serious adult tone; the preset can become
-    funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while
-    preserving the chosen anime lineage.
+    Communicate momentum through line angle and color separation. Keep the requested emotional tone
+    instead of adding outlaw bravado or adventure.
   rendering_and_quality: >-
-    Finish with clean anime finishing that keeps engine identity readable without noisy denoise,
-    alongside clean anime finishing that keeps trail identity readable without noisy denoise;
-    enforce premium 90s cel finish with crisp anatomy, readable effects, denoised grain, and no
-    cheap anime-filter smear; prioritize clean denoise, stable anatomy or object structure, readable
-    effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or
-    3D-render drift.
+    Keep moving edges sharp with selective streaks and static edges crisp. Avoid broad blur, excessive
+    debris and action effects unrelated to the prompt.
   key_features: >-
-    a engine anime direction shaped by era-aware line economy and genre tone, alongside a trail
-    anime direction shaped by era-aware line economy and genre tone; contours paced by engine
-    tension, readable pose energy, and silhouette discipline, alongside contours paced by trail
-    tension, readable pose energy, and silhouette discipline; cel paint and ink grain tuned to
-    engine material contrast, alongside cel paint and ink grain tuned to trail material contrast; a
-    engine light logic using cel rim, glow behavior, and blocked shadow, alongside a trail light
-    logic using cel rim, glow behavior, and blocked shadow; engine converted into reusable framing
-    rhythm and anime timing, alongside trail converted into reusable framing rhythm and anime timing
+    directional engine-like trails; sharp contour cuts; navy cel masses with selective red and
+    electric-blue streaks
   creative_brief: >-
-    Apply Engine-Trail Outlaw Adventure Style after prompt X as a transferable anime-prestige layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a
-    engine anime direction shaped by era-aware line economy and genre tone, alongside a trail anime
-    direction shaped by era-aware line economy and genre tone, alongside contours paced by engine
-    tension, readable pose energy, and silhouette discipline, alongside contours paced by trail
-    tension, readable pose energy, and silhouette discipline; a engine accent system held inside
-    disciplined cel values, alongside a trail accent system held inside disciplined cel values; a
-    engine light logic using cel rim, glow behavior, and blocked shadow, alongside a trail light
-    logic using cel rim, glow behavior, and blocked shadow; cel paint and ink grain tuned to engine
-    material contrast, alongside cel paint and ink grain tuned to trail material contrast and engine
-    converted into reusable framing rhythm and anime timing, alongside trail converted into reusable
-    framing rhythm and anime timing, finish discipline, and negative controls without requiring a
-    fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or card
-    composition.
+    Apply the kinetic cel lines and selective trail accents to movement already present in the
+    request. Preserve its identity, setting and composition; add no vehicle, rider, chase or weapon.
 avoidRules:
   - realistic
   - 3d render
@@ -100,7 +57,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - flat modern moe
   - generic shonen screenshot
@@ -111,15 +67,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-167.webp
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS
-    noise, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise, readable text
+    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
+    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
+    prompt-literal card, muddy cel noise
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

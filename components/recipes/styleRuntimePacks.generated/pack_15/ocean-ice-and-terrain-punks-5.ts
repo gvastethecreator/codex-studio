@@ -4,235 +4,63 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP15-033',
-    name: 'Coral Circuit Pylons',
+    id: 'SP15-097',
+    name: 'Seapunk',
     category: '5. Ocean, Ice & Terrain Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, mermaid, tropical resort, empty ocean postcard, cyberpunk nightclub pier, photoreal wet reflections, readable buoy labels, anchor logo, leaf logo, wave logo, dense rope clutter, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, generic underwater fantasy, dark noisy texture mesh, empty seascape postcard, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'Do not reduce Seapunk to mariner equipment, industrial pressure lines or a blue filter., Do not require vessel, reef, underwater scene, settlement or marine animal., Avoid all-over wet gloss, unrelated circuitry and unsupported glow.',
     style: {
       aesthetic:
-        'Coral Circuit Pylons operates as a portable punk-spectrum router: combine Coral Circuit Pylons identity cues through coral pylons; neon buoy dots; circuit reefs; rope arcs; neoprene color blocks; Seapunk circuit-pylon poster language built from coral ceramic shapes with oceanic, glacial, and terrain punk grammar with pressure systems, tidal infrastructure, cold data shelters, moss signal craft, and weather-built engineering, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'An aquatic synthetic/digital language: electric turquoise and coral accents, liquid-glass gradients, pearlescent surfaces, bubble lenses and coral-like circuitry make forms fluid, virtual and marine.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through coral circuitry, pressure-line contour, shell canopy rhythm, kelp signage, ice-glass facets, salt-kite rigging, moss radio texture, and brackish edges; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve subject and locks. Restyle open silhouettes, surfaces and interfaces with flowing synthetic curves, tidal bands, iridescent modules or coral-circuit branching; keep it aquatic-digital, not merely nautical. Integrate bubble-lens and coral-circuit details into existing forms; do not add posters, slogans or separate aquatic decor unless requested.',
       color_and_tone:
-        'Map color through coral pink, tideglass blue, shell white, kelp green, glacier cobalt, salt white, rust, slate, and deep water shadow; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Use saturated aqua, cyan, teal and sea-glass with coral pink, violet or acid-lime accents and deep-blue contrast. Respect palette; where it is open, reserve saturated accents for selected existing surfaces and keep large room planes light or neutral to avoid a blue wash.',
       lighting_and_shadow:
-        "Use underwater caustics, lantern warmth, shell-filtered daylight, glacier bounce, tide reflection, salt glare, and cold data glow; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Honor stated light and sources. Where unspecified, use luminous gradients and tight pearlescent highlights on synthetic surfaces, not forced underwater rays or glow.',
       texture_and_material:
-        'Render coral ceramic, wet rope, shell laminate, kelp plastic, ice crust, salt film, moss felt, brass pipe, and worn marine metal; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Distinguish liquid glass, iridescent polymer, translucent shell composites and matte digital panels. Apply wet gloss selectively.',
       camera_and_composition:
-        'Compose through pressure-line diagonals, tide-level bands, canopy arcs, shelter-depth layering, wind-rig rhythm, and stable subject clarity as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Preserve viewpoint and placement. Let tide bands and digital geometry guide the eye without requiring ocean, vessel, reef or sea creature.',
       atmosphere_and_mood:
-        'Carry mood through brackish civic motion, remote discipline, storm resilience, wind-driven invention, cold refuge, and tidal resourcefulness; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Convey fluidity, playful synthetic futurism, depth or electronic calm in the requested tone. Mangrove structures remain one possible ecological expression.',
       rendering_and_quality:
-        'Finish with clean terrain-punk illustration with readable weather materials, controlled wet highlights, and no noisy dark texture mesh; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'coral pylons; neon buoy dots; circuit reefs; rope arcs; neoprene color blocks; Seapunk circuit-pylon poster language built from coral ceramic shapes',
-      creative_brief:
-        'Use Coral Circuit Pylons after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies coral pylons, neon buoy dots, circuit reefs, rope arcs, neoprene color blocks, Seapunk circuit-pylon poster language built from coral ceramic shapes, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Use smooth graphic gradients, crisp digital contours and high-contrast synthetic details. Make aquatic-digital character read at thumbnail scale without reef clutter.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-024', 'SP15-033', 'SP15-034', 'SP15-035', 'SP15-036'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-034',
-    name: 'Tideglass Pressure Lines',
+    id: 'SP15-098',
+    name: 'Icepunk',
     category: '5. Ocean, Ice & Terrain Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, long subway corridor, vanishing tunnel, empty platform, horror aquarium, underwater city vista, photoreal glass caustics, photoreal water caustics, readable station signage, UI map, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, generic underwater fantasy, dark noisy texture mesh, empty seascape postcard, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'Do not require ship, harbor, lantern, polar landscape or exploration equipment., Do not frost materials that are not ice or explicitly compatible., Avoid dense crack networks and automatic blue light.',
     style: {
       aesthetic:
-        'Tideglass Pressure Lines operates as a portable punk-spectrum router: combine Tideglass Pressure Lines identity cues through tideglass blocks; pressure doors; reef-lit strips; wet tile planes; seaweed shadows; pressure-door geometry with oceanic, glacial, and terrain punk grammar with pressure systems, tidal infrastructure, cold data shelters, moss signal craft, and weather-built engineering, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'A cold-adapted engineering language of pressure-bearing crystal facets, layered thermal shells, insulated joints, fracture boundaries and compact shelter forms, not frost on surfaces alone.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through coral circuitry, pressure-line contour, shell canopy rhythm, kelp signage, ice-glass facets, salt-kite rigging, moss radio texture, and brackish edges; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve subject and locks. Restyle open structures with faceted load paths, thermal layers, sealed joins and ice-glass or cold-rated components; do not turn every subject into a ship. Make one insulated joint or cold-rated material transition visible on an existing element while keeping the requested room and familiar furniture forms.',
       color_and_tone:
-        'Map color through coral pink, tideglass blue, shell white, kelp green, glacier cobalt, salt white, rust, slate, and deep water shadow; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Use glacier white, blue-gray, deep ink and clear ice values, with a restrained warm signal accent. Respect palette and distinguish planes.',
       lighting_and_shadow:
-        "Use underwater caustics, lantern warmth, shell-filtered daylight, glacier bounce, tide reflection, salt glare, and cold data glow; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Honor stated lighting. Use crisp cool shadows and controlled translucent edges; no automatic lantern, glow or polar night.',
       texture_and_material:
-        'Render coral ceramic, wet rope, shell laminate, kelp plastic, ice crust, salt film, moss felt, brass pipe, and worn marine metal; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Distinguish matte ice grain, pressure-polished facets, frost insulation, metal and fabric locally. Preserve locked materials unless redesign is open.',
       camera_and_composition:
-        'Compose through pressure-line diagonals, tide-level bands, canopy arcs, shelter-depth layering, wind-rig rhythm, and stable subject clarity as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Preserve viewpoint, crop and the requested room context. Arrange compressed planes and diagonal stress paths on existing structures rather than presenting furniture as an isolated product lineup; do not add a polar landscape or expedition view unless requested.',
       atmosphere_and_mood:
-        'Carry mood through brackish civic motion, remote discipline, storm resilience, wind-driven invention, cold refuge, and tidal resourcefulness; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Suggest cold resilience, pressure, clarity or shelter while retaining requested tone; survival and isolation are optional stories.',
       rendering_and_quality:
-        'Finish with clean terrain-punk illustration with readable weather materials, controlled wet highlights, and no noisy dark texture mesh; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'tideglass blocks; pressure doors; reef-lit strips; wet tile planes; seaweed shadows; pressure-door geometry',
-      creative_brief:
-        'Use Tideglass Pressure Lines after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies tideglass blocks, pressure doors, reef-lit strips, wet tile planes, seaweed shadows, pressure-door geometry, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Use large readable planes, crisp fractures and precise insulation details. Avoid fine crack webs, all-over frost and detail that vanishes at thumbnail scale.',
     },
-  },
-  {
-    id: 'SP15-035',
-    name: 'Kelp Arcade Glow',
-    category: '5. Ocean, Ice & Terrain Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, readable screen UI, game title text, logos, mascot poster, object-only arcade cabinet, long boardwalk corridor, commerce-system pier, photoreal wet reflections, dense cable kelp spaghetti, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, generic underwater fantasy, dark noisy texture mesh, empty seascape postcard, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Kelp Arcade Glow operates as a portable punk-spectrum router: combine Kelp Arcade Glow identity cues through kelp cables; cabinet color blocks; neon fish shapes; salt marks; painted wood planes; Playful seapunk arcade poster language built from kelp-cable arcs with oceanic, glacial, and terrain punk grammar with pressure systems, tidal infrastructure, cold data shelters, moss signal craft, and weather-built engineering, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through coral circuitry, pressure-line contour, shell canopy rhythm, kelp signage, ice-glass facets, salt-kite rigging, moss radio texture, and brackish edges; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through coral pink, tideglass blue, shell white, kelp green, glacier cobalt, salt white, rust, slate, and deep water shadow; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use underwater caustics, lantern warmth, shell-filtered daylight, glacier bounce, tide reflection, salt glare, and cold data glow; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render coral ceramic, wet rope, shell laminate, kelp plastic, ice crust, salt film, moss felt, brass pipe, and worn marine metal; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through pressure-line diagonals, tide-level bands, canopy arcs, shelter-depth layering, wind-rig rhythm, and stable subject clarity as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through brackish civic motion, remote discipline, storm resilience, wind-driven invention, cold refuge, and tidal resourcefulness; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with clean terrain-punk illustration with readable weather materials, controlled wet highlights, and no noisy dark texture mesh; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'kelp cables; cabinet color blocks; neon fish shapes; salt marks; painted wood planes; Playful seapunk arcade poster language built from kelp-cable arcs',
-      creative_brief:
-        'Use Kelp Arcade Glow after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies kelp cables, cabinet color blocks, neon fish shapes, salt marks, painted wood planes, Playful seapunk arcade poster language built from kelp-cable arcs, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-036',
-    name: 'Shell Metro Systems',
-    category: '5. Ocean, Ice & Terrain Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, fantasy palace shells, mall terminal, cathedral station hall, long pier corridor, readable signage, logo badges, luxury resort dock, photoreal wet concrete, overcrowded crowd texture, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, generic underwater fantasy, dark noisy texture mesh, empty seascape postcard, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Shell Metro Systems operates as a portable punk-spectrum router: combine Shell Metro Systems identity cues through shell panels; service machines; tidal gates; ferry-rope curves; salt metal planes; Shell-built civic seapunk poster language built from shell ceramic panels with oceanic, glacial, and terrain punk grammar with pressure systems, tidal infrastructure, cold data shelters, moss signal craft, and weather-built engineering, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through coral circuitry, pressure-line contour, shell canopy rhythm, kelp signage, ice-glass facets, salt-kite rigging, moss radio texture, and brackish edges; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through coral pink, tideglass blue, shell white, kelp green, glacier cobalt, salt white, rust, slate, and deep water shadow; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use underwater caustics, lantern warmth, shell-filtered daylight, glacier bounce, tide reflection, salt glare, and cold data glow; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render coral ceramic, wet rope, shell laminate, kelp plastic, ice crust, salt film, moss felt, brass pipe, and worn marine metal; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through pressure-line diagonals, tide-level bands, canopy arcs, shelter-depth layering, wind-rig rhythm, and stable subject clarity as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through brackish civic motion, remote discipline, storm resilience, wind-driven invention, cold refuge, and tidal resourcefulness; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with clean terrain-punk illustration with readable weather materials, controlled wet highlights, and no noisy dark texture mesh; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'shell panels; service machines; tidal gates; ferry-rope curves; salt metal planes; Shell-built civic seapunk poster language built from shell ceramic panels',
-      creative_brief:
-        'Use Shell Metro Systems after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies shell panels, service machines, tidal gates, ferry-rope curves, salt metal planes, Shell-built civic seapunk poster language built from shell ceramic panels, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-037',
-    name: 'Icebreaker Lantern Warmth',
-    category: '5. Ocean, Ice & Terrain Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, snowflake emblem, heraldic badge, faction symbol, flag logo, banner symbol, readable marks, empty glacier, polar explorer portrait, cozy cabin postcard, lighthouse hero, fantasy winter village, aurora-photo spectacle, lantern-only still life, photoreal snow haze, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, generic underwater fantasy, dark noisy texture mesh, empty seascape postcard, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Icebreaker Lantern Warmth operates as a portable punk-spectrum router: combine Icebreaker Lantern Warmth identity cues through icebreaker silhouettes; lantern clusters; wool color fields; sled machines; frost planes; sled-machine shapes with oceanic, glacial, and terrain punk grammar with pressure systems, tidal infrastructure, cold data shelters, moss signal craft, and weather-built engineering, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through coral circuitry, pressure-line contour, shell canopy rhythm, kelp signage, ice-glass facets, salt-kite rigging, moss radio texture, and brackish edges; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through coral pink, tideglass blue, shell white, kelp green, glacier cobalt, salt white, rust, slate, and deep water shadow; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use underwater caustics, lantern warmth, shell-filtered daylight, glacier bounce, tide reflection, salt glare, and cold data glow; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render coral ceramic, wet rope, shell laminate, kelp plastic, ice crust, salt film, moss felt, brass pipe, and worn marine metal; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through pressure-line diagonals, tide-level bands, canopy arcs, shelter-depth layering, wind-rig rhythm, and stable subject clarity as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through brackish civic motion, remote discipline, storm resilience, wind-driven invention, cold refuge, and tidal resourcefulness; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with clean terrain-punk illustration with readable weather materials, controlled wet highlights, and no noisy dark texture mesh; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'icebreaker silhouettes; lantern clusters; wool color fields; sled machines; frost planes; sled-machine shapes',
-      creative_brief:
-        'Use Icebreaker Lantern Warmth after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies icebreaker silhouettes, lantern clusters, wool color fields, sled machines, frost planes, sled-machine shapes, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-038',
-    name: 'Glacier Data Refuge',
-    category: '5. Ocean, Ice & Terrain Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, exterior ice doorway, cargo doors, empty bunker entrance, crane, oil platform, snowflake emblem, heraldic badge, faction symbol, server logo, robe insignia, readable marks, literal altar, cross, religious icon, cathedral corridor, hooded monk portrait, blue server hallway, UI panels, readable screens, cable spaghetti, photoreal ice cave, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, generic underwater fantasy, dark noisy texture mesh, empty seascape postcard, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Glacier Data Refuge operates as a portable punk-spectrum router: combine Glacier Data Refuge identity cues through dark vented rectangles; frost vents; cable braids; ice planes; amber human light; Icepunk data-refuge poster language built from glacier-white planes with oceanic, glacial, and terrain punk grammar with pressure systems, tidal infrastructure, cold data shelters, moss signal craft, and weather-built engineering, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through coral circuitry, pressure-line contour, shell canopy rhythm, kelp signage, ice-glass facets, salt-kite rigging, moss radio texture, and brackish edges; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through coral pink, tideglass blue, shell white, kelp green, glacier cobalt, salt white, rust, slate, and deep water shadow; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use underwater caustics, lantern warmth, shell-filtered daylight, glacier bounce, tide reflection, salt glare, and cold data glow; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render coral ceramic, wet rope, shell laminate, kelp plastic, ice crust, salt film, moss felt, brass pipe, and worn marine metal; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through pressure-line diagonals, tide-level bands, canopy arcs, shelter-depth layering, wind-rig rhythm, and stable subject clarity as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through brackish civic motion, remote discipline, storm resilience, wind-driven invention, cold refuge, and tidal resourcefulness; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with clean terrain-punk illustration with readable weather materials, controlled wet highlights, and no noisy dark texture mesh; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'dark vented rectangles; frost vents; cable braids; ice planes; amber human light; Icepunk data-refuge poster language built from glacier-white planes',
-      creative_brief:
-        'Use Glacier Data Refuge after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies dark vented rectangles, frost vents, cable braids, ice planes, amber human light, Icepunk data-refuge poster language built from glacier-white planes, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-039',
-    name: 'Salt Kite Industry',
-    category: '5. Ocean, Ice & Terrain Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, desert oasis, generic solar farm, empty salt landscape, near-plane goggle portrait, kite festival, fantasy desert city, windmill farm wallpaper, photoreal glare, photoreal heat shimmer, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, generic underwater fantasy, dark noisy texture mesh, empty seascape postcard, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Salt Kite Industry operates as a portable punk-spectrum router: combine Salt Kite Industry identity cues through kite turbines; salt-crust planes; mineral cart blocks; rust frames; hard kite shadows; Saltpunk wind-industry poster language built from kite-turbine triangles with oceanic, glacial, and terrain punk grammar with pressure systems, tidal infrastructure, cold data shelters, moss signal craft, and weather-built engineering, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through coral circuitry, pressure-line contour, shell canopy rhythm, kelp signage, ice-glass facets, salt-kite rigging, moss radio texture, and brackish edges; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through coral pink, tideglass blue, shell white, kelp green, glacier cobalt, salt white, rust, slate, and deep water shadow; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use underwater caustics, lantern warmth, shell-filtered daylight, glacier bounce, tide reflection, salt glare, and cold data glow; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render coral ceramic, wet rope, shell laminate, kelp plastic, ice crust, salt film, moss felt, brass pipe, and worn marine metal; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through pressure-line diagonals, tide-level bands, canopy arcs, shelter-depth layering, wind-rig rhythm, and stable subject clarity as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through brackish civic motion, remote discipline, storm resilience, wind-driven invention, cold refuge, and tidal resourcefulness; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with clean terrain-punk illustration with readable weather materials, controlled wet highlights, and no noisy dark texture mesh; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'kite turbines; salt-crust planes; mineral cart blocks; rust frames; hard kite shadows; Saltpunk wind-industry poster language built from kite-turbine triangles',
-      creative_brief:
-        'Use Salt Kite Industry after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies kite turbines, salt-crust planes, mineral cart blocks, rust frames, hard kite shadows, Saltpunk wind-industry poster language built from kite-turbine triangles, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-040',
-    name: 'Moss Radio Signalworks',
-    category: '5. Ocean, Ice & Terrain Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, fantasy swamp corridor, horror bayou monster, lantern hero, witch hut, dense vine curtain, dense moss curtain, long dock corridor, readable radio signage, logo badges, photoreal mud, photoreal water, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, generic underwater fantasy, dark noisy texture mesh, empty seascape postcard, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Moss Radio Signalworks operates as a portable punk-spectrum router: combine Moss Radio Signalworks identity cues through stilt silhouettes; radio masts; moss drapes; sparse wire arcs; lantern dots; Swamppunk radio-signal poster language built from stilt-structure silhouettes with oceanic, glacial, and terrain punk grammar with pressure systems, tidal infrastructure, cold data shelters, moss signal craft, and weather-built engineering, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through coral circuitry, pressure-line contour, shell canopy rhythm, kelp signage, ice-glass facets, salt-kite rigging, moss radio texture, and brackish edges; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through coral pink, tideglass blue, shell white, kelp green, glacier cobalt, salt white, rust, slate, and deep water shadow; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use underwater caustics, lantern warmth, shell-filtered daylight, glacier bounce, tide reflection, salt glare, and cold data glow; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render coral ceramic, wet rope, shell laminate, kelp plastic, ice crust, salt film, moss felt, brass pipe, and worn marine metal; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through pressure-line diagonals, tide-level bands, canopy arcs, shelter-depth layering, wind-rig rhythm, and stable subject clarity as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through brackish civic motion, remote discipline, storm resilience, wind-driven invention, cold refuge, and tidal resourcefulness; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with clean terrain-punk illustration with readable weather materials, controlled wet highlights, and no noisy dark texture mesh; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'stilt silhouettes; radio masts; moss drapes; sparse wire arcs; lantern dots; Swamppunk radio-signal poster language built from stilt-structure silhouettes',
-      creative_brief:
-        'Use Moss Radio Signalworks after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies stilt silhouettes, radio masts, moss drapes, sparse wire arcs, lantern dots, Swamppunk radio-signal poster language built from stilt-structure silhouettes, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-037', 'SP15-038'],
+      visualEvaluation: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

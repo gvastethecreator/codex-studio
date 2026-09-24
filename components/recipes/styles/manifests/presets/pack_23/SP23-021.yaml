@@ -1,0 +1,110 @@
+schemaVersion: 1
+id: SP23-021
+packId: pack_23
+name: Emaki Inkflow
+category: 4. Regional Manuscript Traditions
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - regional-manuscript-traditions
+  - rhythmic-ink-and-wash
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Rhythmic brush contours and contained washes move between dense and open areas, describing motion
+    and overlap through line. This is a technique study scoped to the cited medieval Japanese emaki
+    corpus, not a request for a handscroll format or continuous story.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, count, action and pose. Use contour rhythm to clarify
+    existing movement and overlapping forms without adding actors, events or changing the action.
+  color_and_tone: >-
+    Preserve the requested colors and tonal range. Keep washes contained and value transitions legible
+    without forcing pale antique paper, gold, flames or a fixed palette.
+  lighting_and_shadow: >-
+    Follow the requested light and shadow pattern. Brush rhythm can describe form but does not create
+    photographic depth of field, a dramatic light source or a new setting.
+  texture_and_material: >-
+    Keep brush marks and washes local to contours and color areas. Preserve the actual materials in the
+    image; do not add scroll-paper texture or aging across the full surface.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, orientation and composition, including vertical or square
+    formats. Do not extend the scene into a horizontal handscroll or continuous narrative.
+  atmosphere_and_mood: >-
+    Keep the requested mood and setting. The historical scope is the cited medieval Japanese emaki
+    source; do not infer a Japanese location, samurai, palace, battle or calligraphy from that label.
+  rendering_and_quality: >-
+    Keep brush contours purposeful, washes contained and empty areas deliberate. Preserve edge clarity
+    without photographic blur or broad pigment bleed that obscures the requested subject.
+avoidRules:
+  - unrequested horizontal handscroll or continuous narrative
+  - unrequested Japanese architecture, samurai or battle scene
+  - unrequested calligraphy, flames or aged paper
+  - photographic depth of field or global blur
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-021.webp
+attributes:
+  negativePrompt: >-
+    unrequested horizontal handscroll or continuous narrative, unrequested Japanese architecture,
+    samurai or battle scene, unrequested calligraphy, flames or aged paper, photographic depth of
+    field or global blur
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: japanese-emaki-ink-and-wash
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: rhythmic-brush-contour-and-contained-wash
+      - field: atmosphere_and_mood
+        group: source-scope
+        value: cited-medieval-japanese-emaki-corpus-only-not-scroll-layout
+    avoidRules:
+      - text: unrequested horizontal handscroll or continuous narrative
+        field: camera_and_composition
+      - text: unrequested Japanese architecture, samurai or battle scene
+        field: global
+      - text: unrequested calligraphy, flames or aged paper
+        field: global
+      - text: photographic depth of field or global blur
+        field: rendering_and_quality
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: TR-04
+    sourceTitle: Emaki Inkflow
+    historicalScope: 'Japón medieval · corpus de rollos narrativos'
+    referenceIds:
+      - S20
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: regional-manuscript-traditions
+  categoryName: 4. Regional Manuscript Traditions
+  tags:
+    - curation-v2
+    - regional-manuscript-traditions
+    - rhythmic-ink-and-wash
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

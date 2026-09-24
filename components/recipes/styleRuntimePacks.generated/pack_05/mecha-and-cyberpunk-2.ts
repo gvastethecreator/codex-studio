@@ -8,28 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Geometric Ignition Urgency',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, Gurren-like drill face, firefighting disaster scene, real emergency logo, burning people, gore, weapon, readable text, franchise robot, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, Gurren-like drill face, firefighting disaster scene, real emergency logo, burning people, gore, weapon, franchise robot, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Geometric Ignition Urgency acts as a transferable anime-battle/worlds router: Geometric Ignition Urgency, geometric ignition urgency style grammar with flat flame vectors, angular rescue-machine fragments, pastel-neon heat, and optimistic motion geometry; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Bright vector illustration using flat angular shapes, crisp contour cuts, and forward-leaning color wedges; its heat and optimism are graphic cues, not literal flames.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Geometric Ignition Urgency, geometric ignition urgency style grammar with flat flame vectors, angular rescue-machine fragments, pastel-neon heat, and optimistic motion geometry as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep the requested form and identity intact. Simplify its existing edges into clean angular planes and lively directional strokes; add no rescue gear or vehicle parts.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Geometric Ignition Urgency, geometric ignition urgency style grammar with flat flame vectors, angular rescue-machine fragments, pastel-neon heat, and optimistic motion geometry choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Mix warm coral, apricot, and yellow with clean cyan or lavender accents. Keep hues bright but clearly separated.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Geometric Ignition Urgency, geometric ignition urgency style grammar with flat flame vectors, angular rescue-machine fragments, pastel-neon heat, and optimistic motion geometry without replacing prompt X with a stock anime frame.',
+        'Use flat, hard-edged cel shadows and simple warm highlights; avoid realistic firelight or an implied flame source.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Geometric Ignition Urgency, geometric ignition urgency style grammar with flat flame vectors, angular rescue-machine fragments, pastel-neon heat, and optimistic motion geometry controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Keep the original material legible beneath smooth color blocks, precise edge lines, and a few dry-brush accents.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Geometric Ignition Urgency, geometric ignition urgency style grammar with flat flame vectors, angular rescue-machine fragments, pastel-neon heat, and optimistic motion geometry into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Respect the requested view. Carry momentum with angled marks and offset color planes inside the existing silhouette and crop.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Make the image feel urgent yet buoyant through quick directional strokes, open color, and uncluttered spacing.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Favor vector-clean edges, decisive shadow cuts, limited gradients, and readable shapes at a glance.',
       key_features:
-        'Geometric Ignition Urgency, geometric ignition urgency style grammar with flat flame vectors, angular rescue-machine fragments, pastel-neon heat, and optimistic motion geometry; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Flat angular vectors; warm pastel-neon accents; forward motion wedges; crisp cel shadows.',
       creative_brief:
-        'Apply Geometric Ignition Urgency after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Geometric Ignition Urgency, geometric ignition urgency style grammar with flat flame vectors, angular rescue-machine fragments, pastel-neon heat, and optimistic motion geometry, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Keep the specified subject, action, and setting. Apply angular color planes, warm bright accents, and quick directional linework; add no flames, rescue machines, or gear.',
     },
   },
   {
@@ -37,28 +37,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Municipal Machine Procedure',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, cockpit UI, drone weapon, robot battle, readable paperwork, garage corridor lock, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, cockpit UI, drone weapon, robot battle, readable paperwork, garage corridor lock, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Municipal Machine Procedure acts as a transferable anime-battle/worlds router: Municipal Machine Procedure, civic machine procedure style grammar with maintenance grids, utility color, practical engineering, wet asphalt reflections, and procedural humor; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Practical technical illustration with maintenance-like line discipline, utility color blocks, wet-looking reflected accents, and a lightly offbeat rhythm.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Municipal Machine Procedure, civic machine procedure style grammar with maintenance grids, utility color, practical engineering, wet asphalt reflections as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Preserve the requested subject and proportions. Clarify its existing construction with functional contour lines and small, deliberate detail clusters; add no tools or vehicles.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Municipal Machine Procedure, civic machine procedure style grammar with maintenance grids, utility color, practical engineering, wet asphalt reflections choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Use utility teal, signal amber, concrete gray, and off-white in clear, economical blocks; keep bright color functional and sparse.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Municipal Machine Procedure, civic machine procedure style grammar with maintenance grids, utility color, practical engineering, wet asphalt reflections without replacing prompt X with a stock anime frame.',
+        'Set firm cel-shadow planes against narrow reflected highlights, using wet-looking accents only where they suit the depicted material.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Municipal Machine Procedure, civic machine procedure style grammar with maintenance grids, utility color, practical engineering, wet asphalt reflections controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Keep each material recognizable; add fine scuffs, tidy seams, and restrained reflective streaks without turning surfaces into pavement or machinery.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Municipal Machine Procedure, civic machine procedure style grammar with maintenance grids, utility color, practical engineering, wet asphalt reflections into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Honor the requested camera. Use measured alignment and slight rhythm breaks within the frame to give the drawing practical order and dry wit.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Convey procedural calm with a subtle comic lift through exact spacing and small visual offsets, without introducing civic props.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Favor clean technical contours, flat shadow groups, concise texture, and legible utility-color separation.',
       key_features:
-        'Municipal Machine Procedure, civic machine procedure style grammar with maintenance grids, utility color, practical engineering, wet asphalt reflections; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Maintenance-grid line discipline; teal and amber utility palette; neat surface marks; subtle offbeat spacing.',
       creative_brief:
-        'Apply Municipal Machine Procedure after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Municipal Machine Procedure, civic machine procedure style grammar with maintenance grids, utility color, practical engineering, wet asphalt reflections, and procedural humor, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Preserve the specified subject, setting, and framing. Apply practical contour lines, restrained teal-and-amber blocks, and tidy reflected accents; add no tools, vehicles, or street scene.',
     },
   },
   {
@@ -66,28 +66,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sterile Arcology Severity',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Sterile Arcology Severity acts as a transferable anime-battle/worlds router: Sterile Arcology Severity; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'A severe, orderly style defined by precise orthogonal contours, pale architectural value planes, and small signal accents; structure comes from linework, not added buildings.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Sterile Arcology Severity as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Preserve the subject’s identity and proportions. Emphasize its existing straight edges and divisions with clean, measured contours; do not reshape it into architecture.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Sterile Arcology Severity choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Use white, cool gray, pale steel, and deep blue shadow, with a very small cyan or red accent.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Sterile Arcology Severity without replacing prompt X with a stock anime frame.',
+        'Separate forms with crisp, cool cel shadows and broad even highlights; keep emissive accents thin and localized.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Sterile Arcology Severity controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Maintain the requested material with smooth, clean surfaces, subtle panel-like divisions, and almost no incidental grain.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Sterile Arcology Severity into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Respect the requested camera and layout. Echo existing lines with parallel spacing and deliberate negative space, without imposing a vertical city view.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Convey severity through exact alignment, cool restraint, and quiet emptiness rather than a sterile urban setting.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Favor immaculate contour precision, flat shadow bands, clean whites, and restrained detail; preserve silhouette clarity.',
       key_features:
-        'Sterile Arcology Severity; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Orthogonal line precision; cool-white planes; deep blue shadows; minimal signal accents.',
       creative_brief:
-        'Apply Sterile Arcology Severity after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sterile Arcology Severity, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Keep the specified subject, scale, and setting. Apply clean orthogonal contours, cool-white color separation, and precise shadows; add no buildings, corridors, or city.',
     },
   },
   {
@@ -95,28 +95,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'White Machine Elegy',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, humanoid robot copy, hangar corridor, weapon, readable serial marks, cockpit UI, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, humanoid robot copy, hangar corridor, weapon, readable serial marks, cockpit UI, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'White Machine Elegy acts as a transferable anime-battle/worlds router: White Machine Elegy, pale machine elegy style grammar with worn enamel, dust silence, lonely synthetic grace, and white mechanical fragments; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Quiet pale rendering with worn enamel-like highlights, dust-softened edges, delicate synthetic line rhythms, and generous white space.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply White Machine Elegy, pale machine elegy style grammar with worn enamel, dust silence, lonely synthetic grace, and white mechanical fragments as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep the requested subject recognizable. Draw fine, graceful contours and a few carefully worn edges on its existing forms; add no robot or machine fragments.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let White Machine Elegy, pale machine elegy style grammar with worn enamel, dust silence, lonely synthetic grace, and white mechanical fragments choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Stay mostly in bone, soft white, silver, and pale blue-gray, reserving darker values for essential contour and structure.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from White Machine Elegy, pale machine elegy style grammar with worn enamel, dust silence, lonely synthetic grace, and white mechanical fragments without replacing prompt X with a stock anime frame.',
+        'Use soft, cool cel shadows and diffuse white highlights, with limited contrast and no visible light source.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in White Machine Elegy, pale machine elegy style grammar with worn enamel, dust silence, lonely synthetic grace, and white mechanical fragments controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Preserve material identity while suggesting enamel through smooth highlight bands, faint dust grain, and small worn flecks.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert White Machine Elegy, pale machine elegy style grammar with worn enamel, dust silence, lonely synthetic grace, and white mechanical fragments into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Honor the given framing. Let spare negative space and quiet line spacing carry the composition without shrinking the subject.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Build elegiac calm through pale values, delicate marks, and stillness, without adding a lonely landscape or character.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Keep outlines fine but stable, shadow edges soft, whites clean, and texture sparse enough to retain clarity.',
       key_features:
-        'White Machine Elegy, pale machine elegy style grammar with worn enamel, dust silence, lonely synthetic grace, and white mechanical fragments; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Pale enamel-like highlights; dust-softened detail; fine contours; quiet white and blue-gray palette.',
       creative_brief:
-        'Apply White Machine Elegy after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies White Machine Elegy, pale machine elegy style grammar with worn enamel, dust silence, lonely synthetic grace, and white mechanical fragments, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Preserve the specified subject and composition. Apply pale tonal bands, delicate contours, and faint worn texture; add no robot, landscape, or isolated character.',
     },
   },
   {
@@ -124,28 +124,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Compact Attrition Hardware',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, gun near-plane, tank copy, soldier portrait, battlefield gore, readable markings, garage corridor lock, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, gun near-plane, tank copy, soldier portrait, battlefield gore, readable markings, garage corridor lock, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Compact Attrition Hardware acts as a transferable anime-battle/worlds router: Compact Attrition Hardware, compact attrition hardware style grammar with low utility chassis logic, mud-rust texture, compressed machine mass, and pragmatic survival materiality; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Compact, blunt industrial drawing with dense silhouette masses, short functional seam lines, mud-rust wear, and pragmatic low-saturation color.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Compact Attrition Hardware, compact attrition hardware style grammar with low utility chassis logic, mud-rust texture, compressed machine mass, and pragmatic survival materiality as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep the requested subject’s identity and proportions. Make its existing forms read with blunt contour weight and compact shadows; do not add chassis or armor.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Compact Attrition Hardware, compact attrition hardware style grammar with low utility chassis logic, mud-rust texture, compressed machine mass, and pragmatic survival materiality choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Use iron gray, dark olive, earth brown, and oxidized orange, with small pale highlights and little saturation.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Compact Attrition Hardware, compact attrition hardware style grammar with low utility chassis logic, mud-rust texture, compressed machine mass, and pragmatic survival materiality without replacing prompt X with a stock anime frame.',
+        'Group forms into firm, close-set cel shadows with minimal rim light; let wear and structure read without dramatic effects.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Compact Attrition Hardware, compact attrition hardware style grammar with low utility chassis logic, mud-rust texture, compressed machine mass, and pragmatic survival materiality controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Preserve each material while adding compressed scuffs, rubbed edges, and restrained mud-like marks only where appropriate.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Compact Attrition Hardware, compact attrition hardware style grammar with low utility chassis logic, mud-rust texture, compressed machine mass, and pragmatic survival materiality into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Honor the requested crop and scale. Keep detail dense near the existing focal form and avoid enlarging or compressing the subject.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Convey practical endurance with close value grouping, muted color, and minimal flourish.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Use sturdy contours, compact shadow planes, subtle surface wear, and clear separation despite dense detail.',
       key_features:
-        'Compact Attrition Hardware, compact attrition hardware style grammar with low utility chassis logic, mud-rust texture, compressed machine mass, and pragmatic survival materiality; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Blunt compact contours; dense shadow groups; mud-rust wear; low-saturation utility palette.',
       creative_brief:
-        'Apply Compact Attrition Hardware after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Compact Attrition Hardware, compact attrition hardware style grammar with low utility chassis logic, mud-rust texture, compressed machine mass, and pragmatic survival materiality, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Preserve the requested subject and scale. Apply blunt contour weight, close-set shadows, and muted worn color; add no chassis, armor, or survival equipment.',
     },
   },
   {
@@ -153,28 +153,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Tokusatsu Digital Grid Scale',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Tokusatsu Digital Grid Scale acts as a transferable anime-battle/worlds router: Tokusatsu Digital Grid Scale; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Digital action graphics with precise grid-like contour breaks, exaggerated but clean value separation, and clear depth cues that never dictate the subject’s scale.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Tokusatsu Digital Grid Scale as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Preserve the requested subject and proportions. Clarify its existing geometry with precise digital line divisions and bold edge accents; add no giant armor or figure.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Tokusatsu Digital Grid Scale choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Use steel, navy, white, and signal red or cyan in sharply separated blocks; keep the primary silhouette distinct from its surroundings.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Tokusatsu Digital Grid Scale without replacing prompt X with a stock anime frame.',
+        'Use firm cel shadows, crisp rim accents, and controlled luminous bands; make every highlight serve form rather than spectacle.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Tokusatsu Digital Grid Scale controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Retain the depicted material with clean digital edge marks, restrained panel-like divisions, and minimal surface noise.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Tokusatsu Digital Grid Scale into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Respect the prompt’s view and scale. Use clear near-to-far value steps and grid-like alignment within the established layout.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Suggest screen-era action energy through clean rhythm, scale cues, and bright accents, without adding a city or battle.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Use stable ink contours, graphic shadow planes, precise color blocks, and restrained glow; keep detail legible at reduced size.',
       key_features:
-        'Tokusatsu Digital Grid Scale; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Digital grid contours; clear depth steps; crisp cel shadows; steel, navy, and signal-color blocks.',
       creative_brief:
-        'Apply Tokusatsu Digital Grid Scale after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tokusatsu Digital Grid Scale, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Keep the specified subject, setting, and scale. Apply precise digital contours, clear value steps, and controlled signal accents; add no giant figure, city, or battle.',
     },
   },
   {
@@ -182,28 +182,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Tri-Fire Riot Geometry',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Tri-Fire Riot Geometry acts as a transferable anime-battle/worlds router: Tri-Fire Riot Geometry; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Triadic riot graphics using sharp triangular cuts, three-part color rhythm, angular contours, and tightly controlled high-energy contrast.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Tri-Fire Riot Geometry as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep the requested subject and silhouette. Carry its existing divisions through crisp triangular line accents and directional marks without adding weapons or armor.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Tri-Fire Riot Geometry choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Organize ember orange, hot yellow, and electric cyan as distinct accents over charcoal and neutral midtones; avoid mixing them into mud.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Tri-Fire Riot Geometry without replacing prompt X with a stock anime frame.',
+        'Use hard cel-shadow wedges with clean warm and cool edge highlights; do not create literal fire or energy weapons.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Tri-Fire Riot Geometry controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Respect the original material; add sharp painted facets, fine scratches, and brief color slashes without changing its substance.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Tri-Fire Riot Geometry into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Keep the requested framing. Use triangular visual paths and counter-slanting marks within it rather than forcing a battle pose.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Create rebellious energy through asymmetry, clipped accents, and a quick three-beat rhythm, independent of subject matter.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Favor crisp edges, strong cel-shadow separation, bounded color fields, and minimal glow for a clean graphic finish.',
       key_features:
-        'Tri-Fire Riot Geometry; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Triadic accent palette; triangular contour cuts; hard shadow wedges; counter-slanting rhythm.',
       creative_brief:
-        'Apply Tri-Fire Riot Geometry after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tri-Fire Riot Geometry, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Retain the specified subject, action, and setting. Use three-part color accents, triangular line cuts, and crisp shadows; add no fire, weapon, armor, or battle pose.',
     },
   },
   {
@@ -211,28 +211,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Neon Kinetic Alloy Sprint',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named cyborg heroine likeness, roller-blade weapon feet, gore, police logo, readable UI, full body fan-art pose, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named cyborg heroine likeness, roller-blade weapon feet, gore, police logo, readable UI, full body fan-art pose, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Neon Kinetic Alloy Sprint acts as a transferable anime-battle/worlds router: Neon Kinetic Alloy Sprint, neon kinetic alloy sprint style grammar with reflective prosthetic-like geometry, speed ribbons, alloy panels, and engineered motion around cropped limbs/mech fragments; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Fast, precise illustration built from segmented contours, tapered motion strokes, reflective edge accents, and alloy-like panel rhythm; speed comes from the marks, not added machinery.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Neon Kinetic Alloy Sprint, neon kinetic alloy sprint style grammar with reflective prosthetic-like geometry, speed ribbons, alloy panels, and engineered motion around cropped limbs/mech fragments as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep the requested anatomy and object shape intact. Clarify its existing edges with clean contour breaks and swept strokes; add no prostheses, armor, or mechanical limbs.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Neon Kinetic Alloy Sprint, neon kinetic alloy sprint style grammar with reflective prosthetic-like geometry, speed ribbons, alloy panels, and engineered motion around cropped limbs/mech fragments choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Set cyan and fuchsia against graphite and pearl, with a restrained warning-red accent. Reserve the brightest color for existing focal edges and motion.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Neon Kinetic Alloy Sprint, neon kinetic alloy sprint style grammar with reflective prosthetic-like geometry, speed ribbons, alloy panels, and engineered motion around cropped limbs/mech fragments without replacing prompt X with a stock anime frame.',
+        'Separate forms with crisp cel-shadow planes; trace selected edges with narrow cool reflections and hot glints, without requiring a new light source.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Neon Kinetic Alloy Sprint, neon kinetic alloy sprint style grammar with reflective prosthetic-like geometry, speed ribbons, alloy panels, and engineered motion around cropped limbs/mech fragments controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Preserve each requested material. Suggest polished alloy through painted highlight bands and fine scuffs rather than replacing the subject’s surface.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Neon Kinetic Alloy Sprint, neon kinetic alloy sprint style grammar with reflective prosthetic-like geometry, speed ribbons, alloy panels, and engineered motion around cropped limbs/mech fragments into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Honor the requested view and crop. Use diagonal strokes, tapered repeats, and varied line lengths to imply speed inside the existing composition.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Create urgency through forward line flow, compressed values, and bright accents while leaving the prompt’s emotional direction intact.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Use sharp ink boundaries, a few decisive cel-shadow values, controlled glow, and clean detail hierarchy; keep textures crisp rather than noisy.',
       key_features:
-        'Neon Kinetic Alloy Sprint, neon kinetic alloy sprint style grammar with reflective prosthetic-like geometry, speed ribbons, alloy panels, and engineered motion around cropped limbs/mech fragments; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Segmented precision contours; cyan-fuchsia edge accents; reflective glints; diagonal speed rhythm.',
       creative_brief:
-        'Apply Neon Kinetic Alloy Sprint after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon Kinetic Alloy Sprint, neon kinetic alloy sprint style grammar with reflective prosthetic-like geometry, speed ribbons, alloy panels, and engineered motion around cropped limbs/mech fragments, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Preserve the specified subject, action, and setting. Apply segmented contours, cyan-fuchsia accents, and tapered motion marks to existing forms; add no prostheses, armor, or machinery.',
     },
   },
   {
@@ -240,28 +240,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Surveillance Verdict Grid',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, readable UI text, police badge, real-world law enforcement, gun, crime scene gore, celebrity likeness, Psycho-Pass-specific weapon/device, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, readable UI text, police badge, real-world law enforcement, gun, crime scene gore, celebrity likeness, Psycho-Pass-specific weapon/device, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Surveillance Verdict Grid acts as a transferable anime-battle/worlds router: Surveillance Verdict Grid, surveillance verdict grid style grammar with cold institutional scanning planes, anonymous silhouettes, forensic blue panels, barcode-like non-text marks, and judgment geometry; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'A cool, forensic graphic style using precise scan bands, rectilinear divisions, and measured contour lines; abstract marks suggest analysis without becoming readable interface graphics.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Surveillance Verdict Grid, surveillance verdict grid style grammar with cold institutional scanning planes, anonymous silhouettes, forensic blue panels, barcode-like non-text marks as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Retain the subject’s identity and proportions. Clarify its structure with aligned planes and fine technical contours, without adding uniforms, devices, or anonymous figures.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Surveillance Verdict Grid, surveillance verdict grid style grammar with cold institutional scanning planes, anonymous silhouettes, forensic blue panels, barcode-like non-text marks choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Use slate, deep blue, and icy cyan with small, deliberate red signals. Keep saturation low and separate important forms by value.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Surveillance Verdict Grid, surveillance verdict grid style grammar with cold institutional scanning planes, anonymous silhouettes, forensic blue panels, barcode-like non-text marks without replacing prompt X with a stock anime frame.',
+        'Pair broad, hard shadow shapes with thin cool scan-like highlights along existing edges; avoid implying a monitor or other light source.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Surveillance Verdict Grid, surveillance verdict grid style grammar with cold institutional scanning planes, anonymous silhouettes, forensic blue panels, barcode-like non-text marks controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Keep materials recognizable beneath restrained glassy overlays, fine hatch marks, and sparse etched lines; use no labels or literal data.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Surveillance Verdict Grid, surveillance verdict grid style grammar with cold institutional scanning planes, anonymous silhouettes, forensic blue panels, barcode-like non-text marks into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Respect the requested framing. Repeat measured horizontal and vertical alignments within the subject, leaving clear space around its key outline.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Make the image feel controlled and questioning through still spacing, cool contrast, and exact marks rather than a surveillance scene.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Favor clean technical line weights, flat cel shadows, crisp color boundaries, and legible nonverbal marks; keep overlays sparse.',
       key_features:
-        'Surveillance Verdict Grid, surveillance verdict grid style grammar with cold institutional scanning planes, anonymous silhouettes, forensic blue panels, barcode-like non-text marks; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Forensic blue planes; scan-band accents; aligned technical contours; quiet red signals.',
       creative_brief:
-        'Apply Surveillance Verdict Grid after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Surveillance Verdict Grid, surveillance verdict grid style grammar with cold institutional scanning planes, anonymous silhouettes, forensic blue panels, barcode-like non-text marks, and judgment geometry, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Keep the requested subject, action, and setting. Render its existing forms with cool scan bands, measured blue planes, and fine technical contours; add no agents, screens, or readable data.',
     },
   },
   {
@@ -269,28 +269,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Luminous Beam Opera',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, beam saber, Gundam-like faceplate, cockpit hero portrait, named mecha likeness, laser weapon focus, readable UI, war gore, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, beam saber, Gundam-like faceplate, cockpit hero portrait, named mecha likeness, laser weapon focus, readable UI, war gore, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Luminous Beam Opera acts as a transferable anime-battle/worlds router: Luminous Beam Opera, luminous beam opera style grammar with radiant diagonal energy, sleek space-opera machinery, colored light hierarchy, and melodramatic scale; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Operatic light-and-line illustration with sleek contours, radiant diagonals, and carefully tiered color fields; scale comes from contrast and sweeping direction, not added spacecraft.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Luminous Beam Opera, luminous beam opera style grammar with radiant diagonal energy, sleek space-opera machinery, colored light hierarchy, and melodramatic scale as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep the requested subject recognizable. Sharpen its existing outline and use a few luminous directional strokes to guide attention without changing its shape.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Luminous Beam Opera, luminous beam opera style grammar with radiant diagonal energy, sleek space-opera machinery, colored light hierarchy, and melodramatic scale choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Contrast deep cobalt and ink with ivory, warm gold, and a chosen saturated accent. Separate colors into clear, dramatic bands.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Luminous Beam Opera, luminous beam opera style grammar with radiant diagonal energy, sleek space-opera machinery, colored light hierarchy, and melodramatic scale without replacing prompt X with a stock anime frame.',
+        'Set broad cel shadows against clean, radiant highlight paths. Let light sweep across existing forms without inventing beams, engines, or spotlights.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Luminous Beam Opera, luminous beam opera style grammar with radiant diagonal energy, sleek space-opera machinery, colored light hierarchy, and melodramatic scale controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Render the subject’s actual materials with smooth painted gradients, fine metallic glints, and minimal grain; keep every surface distinct.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Luminous Beam Opera, luminous beam opera style grammar with radiant diagonal energy, sleek space-opera machinery, colored light hierarchy, and melodramatic scale into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Honor the requested framing. Arrange highlights and contour rhythm along strong diagonals while preserving the subject’s scale and placement.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Create grandeur through luminous contrast, elegant spacing, and deliberate visual cadence, whether the prompt calls for calm or action.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Use precise outlines, clean color separation, controlled bloom, and a small number of bold shadow shapes; avoid muddy glow.',
       key_features:
-        'Luminous Beam Opera, luminous beam opera style grammar with radiant diagonal energy, sleek space-opera machinery, colored light hierarchy, and melodramatic scale; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Radiant diagonal highlights; sleek contour lines; cobalt and ivory contrast; dramatic color hierarchy.',
       creative_brief:
-        'Apply Luminous Beam Opera after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Luminous Beam Opera, luminous beam opera style grammar with radiant diagonal energy, sleek space-opera machinery, colored light hierarchy, and melodramatic scale, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Keep the specified subject, action, and setting. Apply sleek contours, radiant diagonal accents, and operatic color separation; add no spacecraft, engines, or staged light beams.',
     },
   },
   {
@@ -298,28 +298,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Gothic Tech Existential Dread',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, Eva-like giant, crucifix pose, exposed organs, gore, hospital tube body, franchise robot silhouette, religious icon copy, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, Eva-like giant, crucifix pose, exposed organs, gore, hospital tube body, franchise robot silhouette, religious icon copy, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Gothic Tech Existential Dread acts as a transferable anime-battle/worlds router: Gothic Tech Existential Dread, gothic tech dread style grammar with sacred industrial verticality, black-metal shell forms, bio-synthetic unease, restrained menace, and cathedral-like machine rhythm; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Severe gothic-industrial drawing with nested pointed contours, finely etched seams, and dark shell-like value shapes; its unease comes from line rhythm, not invented architecture.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Gothic Tech Existential Dread, gothic tech dread style grammar with sacred industrial verticality, black-metal shell forms, bio-synthetic unease, restrained menace as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Retain the subject’s recognizable anatomy and outline. Use narrow, nested contours and restrained pointed accents only where its existing forms support them.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Gothic Tech Existential Dread, gothic tech dread style grammar with sacred industrial verticality, black-metal shell forms, bio-synthetic unease, restrained menace choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Favor black, charcoal, bone, and muted violet, with a small blood-red or cold-cyan accent. Keep luminous color scarce.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Gothic Tech Existential Dread, gothic tech dread style grammar with sacred industrial verticality, black-metal shell forms, bio-synthetic unease, restrained menace without replacing prompt X with a stock anime frame.',
+        'Cut large, hard shadow masses against thin rim highlights; let small accents emerge from darkness without adding lamps or windows.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Gothic Tech Existential Dread, gothic tech dread style grammar with sacred industrial verticality, black-metal shell forms, bio-synthetic unease, restrained menace controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Preserve the subject’s materials while adding etched linework, fine stippling, and selective dry-brush texture to existing surfaces.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Gothic Tech Existential Dread, gothic tech dread style grammar with sacred industrial verticality, black-metal shell forms, bio-synthetic unease, restrained menace into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Keep the requested camera. Use tall contour rhythms and compressed negative space within the existing frame, without building a hall or tower.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Carry dread through stillness, deep values, and intricate edge detail rather than religious symbols or a gothic setting.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Balance ornate fine lines with simple cel-shadow masses; keep the silhouette clear and highlights sparse.',
       key_features:
-        'Gothic Tech Existential Dread, gothic tech dread style grammar with sacred industrial verticality, black-metal shell forms, bio-synthetic unease, restrained menace; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Pointed nested contours; etched industrial detail; deep black shadow; restrained violet and red accents.',
       creative_brief:
-        'Apply Gothic Tech Existential Dread after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gothic Tech Existential Dread, gothic tech dread style grammar with sacred industrial verticality, black-metal shell forms, bio-synthetic unease, restrained menace, and cathedral-like machine rhythm, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Preserve the requested subject and setting. Use etched contours, pointed line rhythms, and broad dark shadows on existing forms; add no cathedral, shell, or ritual objects.',
     },
   },
   {
@@ -327,28 +327,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sleek Collapse Romance',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, Darling-like couple pose, sexualized bodysuit, exposed skin focus, cockpit romance scene, franchise plugsuit, readable UI, ruined city cliche, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, Darling-like couple pose, sexualized bodysuit, exposed skin focus, cockpit romance scene, franchise plugsuit, readable UI, ruined city cliche, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Sleek Collapse Romance acts as a transferable anime-battle/worlds router: Sleek Collapse Romance, sleek collapse romance style grammar with polished suit fragments, sunset ruins, floral-tech melancholy, soft alarms, and engineered tenderness; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'A refined, wistful style pairing sleek broken contours, delicate curved line accents, and polished highlight bands with softened edges and gentle color transitions.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Sleek Collapse Romance, sleek collapse romance style grammar with polished suit fragments, sunset ruins, floral-tech melancholy, soft alarms as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Preserve the subject’s identity and proportions. Let its existing contours alternate between clean, sleek edges and a few delicate, interrupted lines.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Sleek Collapse Romance, sleek collapse romance style grammar with polished suit fragments, sunset ruins, floral-tech melancholy, soft alarms choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Blend muted rose, apricot, pale gold, and blue-gray, keeping dark values soft and the warm-cool balance delicate.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Sleek Collapse Romance, sleek collapse romance style grammar with polished suit fragments, sunset ruins, floral-tech melancholy, soft alarms without replacing prompt X with a stock anime frame.',
+        'Use soft-edged cel shadows with thin sunset-like highlights across existing forms; do not introduce ruins or a literal sunset.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Sleek Collapse Romance, sleek collapse romance style grammar with polished suit fragments, sunset ruins, floral-tech melancholy, soft alarms controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Retain the requested materials. Suggest polish with restrained luminous streaks, fine surface lines, and gentle tonal transitions.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Sleek Collapse Romance, sleek collapse romance style grammar with polished suit fragments, sunset ruins, floral-tech melancholy, soft alarms into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Keep the prompt’s camera and layout. Use graceful curves and a slight offset in detail density to create a tender, unsettled rhythm.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Express melancholy through softened contrast, quiet spacing, and delicate interruptions, without adding flowers, alarms, or a romance scene.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Combine precise silhouettes with soft shadow edges, clean gradients, and sparse fine detail; avoid glossy over-rendering.',
       key_features:
-        'Sleek Collapse Romance, sleek collapse romance style grammar with polished suit fragments, sunset ruins, floral-tech melancholy, soft alarms; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Sleek interrupted contours; soft cel shadows; rose-apricot and blue-gray palette; delicate polished glints.',
       creative_brief:
-        'Apply Sleek Collapse Romance after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sleek Collapse Romance, sleek collapse romance style grammar with polished suit fragments, sunset ruins, floral-tech melancholy, soft alarms, and engineered tenderness, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Preserve the specified subject and setting. Apply refined contours, gentle rose-and-blue transitions, and sparse polished highlights; add no suit, ruins, flowers, or alarm devices.',
     },
   },
   {
@@ -356,28 +356,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Remote Command Grief',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, child soldier exploitation, gun, cockpit UI text, real military insignia, drone strike gore, readable maps, franchise uniform, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, child soldier exploitation, gun, cockpit UI text, real military insignia, drone strike gore, readable maps, franchise uniform, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Remote Command Grief acts as a transferable anime-battle/worlds router: Remote Command Grief, remote command grief style grammar with distant control geometry, drone-like machine silhouettes, muted tactical panels, youth burden shown through posture, and cold blue-gray systems; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'A restrained, distant visual language built from quiet blue-gray planes, fine system-like lines, and generous negative space; emotional weight comes from separation, not added screens.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Remote Command Grief, remote command grief style grammar with distant control geometry, drone-like machine silhouettes, muted tactical panels, youth burden shown through posture as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep the subject’s identity and requested pose. Reduce interior detail and place precise accents along existing edges, without adding a pilot, drone, or uniform.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Remote Command Grief, remote command grief style grammar with distant control geometry, drone-like machine silhouettes, muted tactical panels, youth burden shown through posture choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Use desaturated steel blue, fog gray, muted navy, and a small cold-white highlight. Keep contrast subdued except at the focal outline.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Remote Command Grief, remote command grief style grammar with distant control geometry, drone-like machine silhouettes, muted tactical panels, youth burden shown through posture without replacing prompt X with a stock anime frame.',
+        'Use broad cool shadows, softened distant light, and a few narrow edge glints; avoid visible monitors or control-room lighting.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Remote Command Grief, remote command grief style grammar with distant control geometry, drone-like machine silhouettes, muted tactical panels, youth burden shown through posture controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Maintain each material’s character with fine grain, subtle scuffs, and sparse technical line accents rather than tactical equipment.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Remote Command Grief, remote command grief style grammar with distant control geometry, drone-like machine silhouettes, muted tactical panels, youth burden shown through posture into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Preserve the given framing. Let existing forms sit against open space and use thin aligned strokes to suggest distance without changing scale.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Suggest quiet burden and detachment through muted values, restrained detail, and open spacing; do not imply a specific age or story.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Keep contours calm and exact, shadows broad but soft-edged, and grain faint; prevent the image from collapsing into uniform blue.',
       key_features:
-        'Remote Command Grief, remote command grief style grammar with distant control geometry, drone-like machine silhouettes, muted tactical panels, youth burden shown through posture; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Muted blue-gray systems; fine aligned lines; distant spacing; restrained edge highlights.',
       creative_brief:
-        'Apply Remote Command Grief after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Remote Command Grief, remote command grief style grammar with distant control geometry, drone-like machine silhouettes, muted tactical panels, youth burden shown through posture, and cold blue-gray systems, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Retain the requested subject, pose, and setting. Use quiet blue-gray values, fine system-like contours, and open spacing; add no pilot, drone, uniform, or control room.',
     },
   },
   {
@@ -385,28 +385,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Tactical Network Cognition',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, readable UI text, brand logo, celebrity spy likeness, real institution badge, gun, camera prop, surveillance screen wall, franchise cyber-police device, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, readable UI text, brand logo, celebrity spy likeness, real institution badge, gun, camera prop, surveillance screen wall, franchise cyber-police device, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Tactical Network Cognition acts as a transferable anime-battle/worlds router: Tactical Network Cognition, tactical network cognition style grammar with translucent data layers, modular overlay geometry, anonymous agent silhouette fragments, optical glass planes, and calm investigative tension; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Precise layered illustration with translucent planes, modular line divisions, and optical-glass clarity; data-like geometry remains abstract and never becomes readable interface content.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Tactical Network Cognition, tactical network cognition style grammar with translucent data layers, modular overlay geometry, anonymous agent silhouette fragments, optical glass planes as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Preserve the subject and its proportions. Clarify its existing structure with fine layered contours and selected transparent-looking accents, not agent silhouettes or devices.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Tactical Network Cognition, tactical network cognition style grammar with translucent data layers, modular overlay geometry, anonymous agent silhouette fragments, optical glass planes choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Use cool teal, glass green, slate, and silver-white, with modest contrast and carefully separated transparent-looking color layers.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Tactical Network Cognition, tactical network cognition style grammar with translucent data layers, modular overlay geometry, anonymous agent silhouette fragments, optical glass planes without replacing prompt X with a stock anime frame.',
+        'Pair clear cel-shadow shapes with thin refracted highlights along existing edges; keep the light even and technical.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Tactical Network Cognition, tactical network cognition style grammar with translucent data layers, modular overlay geometry, anonymous agent silhouette fragments, optical glass planes controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Retain the depicted materials, adding delicate double lines, polished edge glints, and sparse etched geometry without covering the surface.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Tactical Network Cognition, tactical network cognition style grammar with translucent data layers, modular overlay geometry, anonymous agent silhouette fragments, optical glass planes into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Respect the specified view. Repeat modular alignments within the composition and keep overlays subordinate to the subject.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Create calm analytical tension with ordered spacing, fine detail, and restrained tonal shifts; introduce no investigation scene.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Use crisp line weights, clean translucent color fields, stable shadow bands, and sparse nonverbal marks; omit legible text.',
       key_features:
-        'Tactical Network Cognition, tactical network cognition style grammar with translucent data layers, modular overlay geometry, anonymous agent silhouette fragments, optical glass planes; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Translucent color layers; modular contours; optical edge glints; calm teal and glass-green palette.',
       creative_brief:
-        'Apply Tactical Network Cognition after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tactical Network Cognition, tactical network cognition style grammar with translucent data layers, modular overlay geometry, anonymous agent silhouette fragments, optical glass planes, and calm investigative tension, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Keep the subject, action, and setting specified by the prompt. Apply translucent color layers, modular contours, and optical edge glints; add no agent, device, or readable interface.',
     },
   },
   {
@@ -414,28 +414,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Orbital Rivalry Symmetry',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named orbital mecha likeness, beam weapon, cockpit portrait, real national flags, space battle gore, readable insignia, weapon-first duel, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named orbital mecha likeness, beam weapon, cockpit portrait, real national flags, space battle gore, readable insignia, weapon-first duel, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Orbital Rivalry Symmetry acts as a transferable anime-battle/worlds router: Orbital Rivalry Symmetry, orbital rivalry symmetry style grammar with crystalline seams, high-altitude arcs, suspended mecha fragments, paired abstract silhouettes, and elegant strategic tension; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Elegant crystalline rendering defined by precise facet seams, long orbital arcs, and balanced counter-direction; tension comes from geometry, not a required pair of subjects.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Orbital Rivalry Symmetry, orbital rivalry symmetry style grammar with crystalline seams, high-altitude arcs, suspended mecha fragments, paired abstract silhouettes as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep the requested subject’s identity and proportions. Trace its existing planes with crisp facet lines and fine curved accents without multiplying or redesigning it.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Orbital Rivalry Symmetry, orbital rivalry symmetry style grammar with crystalline seams, high-altitude arcs, suspended mecha fragments, paired abstract silhouettes choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Set deep blue and violet against glacial white, with a small warm gold signal; preserve clean value separation between facets.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Orbital Rivalry Symmetry, orbital rivalry symmetry style grammar with crystalline seams, high-altitude arcs, suspended mecha fragments, paired abstract silhouettes without replacing prompt X with a stock anime frame.',
+        'Use hard-edged cel shadows with cool rim glints and a few bright facet reflections; avoid requiring a spacecraft or light source.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Orbital Rivalry Symmetry, orbital rivalry symmetry style grammar with crystalline seams, high-altitude arcs, suspended mecha fragments, paired abstract silhouettes controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Keep each material recognizable while adding crystalline line breaks, polished highlights, and smooth, controlled gradients.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Orbital Rivalry Symmetry, orbital rivalry symmetry style grammar with crystalline seams, high-altitude arcs, suspended mecha fragments, paired abstract silhouettes into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Honor the requested view. Balance visual weight with opposing diagonals and spare arcs, without forcing symmetry or multiple subjects.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Suggest strategic tension through poised counter-rhythms, cool light, and careful spacing rather than combat or rivalry staging.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Use fine accurate seams, clean facet color blocks, restrained glow, and crisp silhouette edges.',
       key_features:
-        'Orbital Rivalry Symmetry, orbital rivalry symmetry style grammar with crystalline seams, high-altitude arcs, suspended mecha fragments, paired abstract silhouettes; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Crystalline seam lines; orbital arcs; blue-violet and glacial-white contrast; balanced counter-motion.',
       creative_brief:
-        'Apply Orbital Rivalry Symmetry after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Orbital Rivalry Symmetry, orbital rivalry symmetry style grammar with crystalline seams, high-altitude arcs, suspended mecha fragments, paired abstract silhouettes, and elegant strategic tension, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Preserve the specified subject and framing. Apply crystalline seams, spare orbital arcs, and cool facet shading; do not add a second subject, craft, or battle.',
     },
   },
   {
@@ -443,28 +443,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Pop-Signal Engineered Romance',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, idol portrait, cockpit closeup, concert stage, missile barrage, readable UI, crowd, robot face closeup, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, idol portrait, cockpit closeup, concert stage, missile barrage, readable UI, crowd, robot face closeup, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Pop-Signal Engineered Romance acts as a transferable anime-battle/worlds router: Pop-Signal Engineered Romance, pop-signal engineered-motion style grammar with human-scale signal silhouette, cyan-pink contrail calligraphy, alloy panel rhythm, and hopeful gold edge light; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'An optimistic signal style combining human-scale contour rhythm, flowing cyan-pink strokes, and orderly panel-like divisions with a warm gold edge.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Pop-Signal Engineered Romance, pop-signal engineered-motion style grammar with human-scale signal silhouette, cyan-pink contrail calligraphy, alloy panel rhythm, and hopeful gold edge light as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Retain the requested subject’s shape and identity. Use rhythmic contour breaks and smooth, sweeping accents on its existing forms, without adding people or machinery.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Pop-Signal Engineered Romance, pop-signal engineered-motion style grammar with human-scale signal silhouette, cyan-pink contrail calligraphy, alloy panel rhythm, and hopeful gold edge light choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Center cyan and pink with a warm gold highlight, balancing vivid accents against clear neutral values.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Pop-Signal Engineered Romance, pop-signal engineered-motion style grammar with human-scale signal silhouette, cyan-pink contrail calligraphy, alloy panel rhythm, and hopeful gold edge light without replacing prompt X with a stock anime frame.',
+        'Use clean cel-shadow shapes and a gentle gold rim on selected edges; keep glow narrow and controlled.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Pop-Signal Engineered Romance, pop-signal engineered-motion style grammar with human-scale signal silhouette, cyan-pink contrail calligraphy, alloy panel rhythm, and hopeful gold edge light controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Preserve the original materials. Add smooth painted highlight bands, fine engineered line rhythms, and minimal surface grain.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Pop-Signal Engineered Romance, pop-signal engineered-motion style grammar with human-scale signal silhouette, cyan-pink contrail calligraphy, alloy panel rhythm, and hopeful gold edge light into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Respect the prompt’s crop and perspective. Let flowing strokes echo the existing gesture and use panel-like spacing to organize detail.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Keep the image buoyant and affectionate through open spacing, warm edge light, and fluid marks, without staging romance or performance.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Use crisp contours, polished color separation, soft restrained glow, and readable details at multiple scales.',
       key_features:
-        'Pop-Signal Engineered Romance, pop-signal engineered-motion style grammar with human-scale signal silhouette, cyan-pink contrail calligraphy, alloy panel rhythm, and hopeful gold edge light; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Cyan-pink signal strokes; warm gold edge light; rhythmic panel divisions; optimistic contour flow.',
       creative_brief:
-        'Apply Pop-Signal Engineered Romance after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pop-Signal Engineered Romance, pop-signal engineered-motion style grammar with human-scale signal silhouette, cyan-pink contrail calligraphy, alloy panel rhythm, and hopeful gold edge light, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Keep the requested subject and action intact. Apply flowing cyan-pink accents, orderly contour breaks, and a soft gold rim; add no performer, robot, or stage.',
     },
   },
   {
@@ -472,28 +472,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Armored Chrome Noir Elegance',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Armored Chrome Noir Elegance acts as a transferable anime-battle/worlds router: Armored Chrome Noir Elegance; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Noir surface rendering with razor-clean contours, mirror-bright edge glints, deep black value masses, and composed chrome-like reflections.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Armored Chrome Noir Elegance as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep the requested subject recognizable and unchanged in form. Give its existing silhouette a few sharp reflective edges and broad, elegant shadow shapes.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Armored Chrome Noir Elegance choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Build a restrained range of black, pewter, silver, and smoke, punctuated by tiny magenta or cyan reflections.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Armored Chrome Noir Elegance without replacing prompt X with a stock anime frame.',
+        'Use hard cel shadows and precise specular accents; concentrate highlights along existing edges instead of adding neon sources.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Armored Chrome Noir Elegance controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Respect the depicted material while suggesting a polished finish through narrow highlight bands, clean reflections, and minimal scuffing.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Armored Chrome Noir Elegance into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Keep the given framing. Balance dark masses with narrow reflective lines and leave negative space around the main silhouette.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Create poised noir elegance through controlled contrast, stillness, and sparse color glints rather than a city-at-night setting.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Use smooth value transitions, crisp boundaries, a few hard shadow planes, and clean highlights; keep reflections graphic and legible.',
       key_features:
-        'Armored Chrome Noir Elegance; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Mirror-like edge glints; deep noir shadows; pewter and smoke values; sparse neon reflections.',
       creative_brief:
-        'Apply Armored Chrome Noir Elegance after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Armored Chrome Noir Elegance, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Retain the prompt’s subject, action, and setting. Use crisp reflective accents, pewter values, and deep noir shadows; add no armor, city, or neon signage.',
     },
   },
   {
@@ -501,28 +501,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Scrap Velocity Resilience',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, robot duel, weapon arm, cockpit UI, scrapyard corridor, readable decals, gore, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, robot duel, weapon arm, cockpit UI, scrapyard corridor, readable decals, gore, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Scrap Velocity Resilience acts as a transferable anime-battle/worlds router: Scrap Velocity Resilience, scrap-velocity resilience style grammar with dented alloy, spark trails, compact fast motion, and rough human-made machine grit; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Rough kinetic illustration with dented-edge marks, short spark-like strokes, compact directional forms, and visible hand-worked grit.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Scrap Velocity Resilience, scrap-velocity resilience style grammar with dented alloy, spark trails, compact fast motion, and rough human-made machine grit as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Retain the requested subject and silhouette. Use broken contours, localized dents, and quick directional hatching on existing forms; add no scrap parts or tools.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Scrap Velocity Resilience, scrap-velocity resilience style grammar with dented alloy, spark trails, compact fast motion, and rough human-made machine grit choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Combine iron, dusty ochre, rust, and charcoal, with small bright amber accents against muted values.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Scrap Velocity Resilience, scrap-velocity resilience style grammar with dented alloy, spark trails, compact fast motion, and rough human-made machine grit without replacing prompt X with a stock anime frame.',
+        'Cut firm shadows beneath edges and use brief warm glints to sharpen movement; do not require sparks or a welding source.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Scrap Velocity Resilience, scrap-velocity resilience style grammar with dented alloy, spark trails, compact fast motion, and rough human-made machine grit controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Keep the original material readable while layering scuffs, scratches, rubbed paint, and uneven hand-drawn marks in focused areas.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Scrap Velocity Resilience, scrap-velocity resilience style grammar with dented alloy, spark trails, compact fast motion, and rough human-made machine grit into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Keep the requested crop. Carry speed with compact diagonals and short repeated strokes inside the existing layout.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Express resilience through rough but controlled mark-making, warm accents, and persistent forward rhythm.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Mix firm cel shadows with scratchy line texture; maintain a clear contour and avoid uniform distress or visual noise.',
       key_features:
-        'Scrap Velocity Resilience, scrap-velocity resilience style grammar with dented alloy, spark trails, compact fast motion, and rough human-made machine grit; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Dented-edge marks; compact motion strokes; iron and rust palette; hand-worked surface grit.',
       creative_brief:
-        'Apply Scrap Velocity Resilience after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scrap Velocity Resilience, scrap-velocity resilience style grammar with dented alloy, spark trails, compact fast motion, and rough human-made machine grit, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Preserve the prompt’s subject and framing. Apply scratched contours, compact directional strokes, and muted iron-and-rust color; add no scrap, tools, or sparks.',
     },
   },
   {
@@ -530,28 +530,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cyber-Goth Mausoleum Dread',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Cyber-Goth Mausoleum Dread acts as a transferable anime-battle/worlds router: Cyber-Goth Mausoleum Dread; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Cyber-gothic rendering with pointed contour rhythms, fine ornamental etching, monumental value shapes, and a stark red accent against cold darks.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Cyber-Goth Mausoleum Dread as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep the subject’s identity and outline. Trace existing forms with pointed, nested lines and restrained etched detail without adding statues, robes, or architecture.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Cyber-Goth Mausoleum Dread choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Use black, blue-gray, bone, and muted violet, with a narrow crimson signal; keep the palette dark but distinct.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Cyber-Goth Mausoleum Dread without replacing prompt X with a stock anime frame.',
+        'Set deep cel-shadow masses against slim cold highlights and occasional red edge light; do not imply candles or a mausoleum.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Cyber-Goth Mausoleum Dread controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Preserve the subject’s material. Add delicate engraved marks and worn speckling sparingly, keeping ornament subordinate to the form.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Cyber-Goth Mausoleum Dread into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Honor the requested view. Use tall, pointed line rhythms and large shadow shapes within the existing crop, without building a hall.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Convey solemn dread through negative space, severe contrast, and fine ornamental lines rather than funerary props.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Pair precise etching with broad, clean cel shadows; keep highlights sparse, silhouettes legible, and dark detail controlled.',
       key_features:
-        'Cyber-Goth Mausoleum Dread; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Pointed gothic contours; fine etched detail; black and blue-gray masses; narrow crimson accents.',
       creative_brief:
-        'Apply Cyber-Goth Mausoleum Dread after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cyber-Goth Mausoleum Dread, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Keep the requested subject, action, and setting. Apply pointed contour rhythms, restrained etching, and severe shadow; add no mausoleum, statues, robes, or candles.',
     },
   },
   {
@@ -559,28 +559,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Punitive Neon Vice Texture',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Punitive Neon Vice Texture acts as a transferable anime-battle/worlds router: Punitive Neon Vice Texture; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Abrasive neon-noir rendering with distressed ink, dense crosshatch, hard surface glints, and saturated signals cutting through shadow.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Punitive Neon Vice Texture as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep the requested subject and silhouette intact. Use rough hatch clusters and precise neon edge accents on existing contours; add no weapon or costume.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Punitive Neon Vice Texture choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Set toxic green, hot red, and magenta against black and smoky gray; keep the vivid color concentrated in small areas.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Punitive Neon Vice Texture without replacing prompt X with a stock anime frame.',
+        'Use hard cel-shadow blocks with clipped red or green highlights; avoid creating neon signs or a nighttime street.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Punitive Neon Vice Texture controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Respect each depicted material while adding scratched ink, worn patches, and coarse hatching in selected regions.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Punitive Neon Vice Texture into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Respect the prompt’s camera. Use abrupt contrast shifts and angled detail clusters within the frame, not forced close-ups.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Make the image feel tense and abrasive through compressed values, irregular marks, and sharp color interruptions, not criminal subject matter.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Keep rough texture controlled against clean silhouette edges; separate colors clearly and prevent darks from filling with noise.',
       key_features:
-        'Punitive Neon Vice Texture; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Distressed crosshatch; toxic green and hot red; sharp surface glints; compressed noir shadows.',
       creative_brief:
-        'Apply Punitive Neon Vice Texture after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Punitive Neon Vice Texture, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Retain the requested subject, action, and setting. Apply distressed ink, sparse toxic-neon accents, and hard shadow blocks; add no weapon, costume, signage, or street.',
     },
   },
   {
@@ -588,28 +588,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Terminal Megastructure Silence',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Terminal Megastructure Silence acts as a transferable anime-battle/worlds router: Terminal Megastructure Silence; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Monumental graphic rendering built from long structural lines, blocky value masses, broad voids, and rare cold highlights; scale is a visual relation, not a required setting.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Terminal Megastructure Silence as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Preserve the subject’s identity and proportions. Clarify its existing structure with long clean contours and large shadow groupings without enlarging or replacing it.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Terminal Megastructure Silence choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Use charcoal, slate, blue-black, and steel, with very sparse cyan or white highlights.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Terminal Megastructure Silence without replacing prompt X with a stock anime frame.',
+        'Set large hard cel-shadow shapes against a few cold edge glints; keep illuminated areas broad, quiet, and subordinate.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Terminal Megastructure Silence controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Keep existing materials legible. Limit texture to precise seams, faint wear, and controlled grain against expansive simple areas.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Terminal Megastructure Silence into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Keep the requested view and scale. Use long aligned contours and open negative space within the established framing.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Create silence and scale through still spacing, strong value grouping, and minimal accents, without adding a megastructure or vessel.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Use clean block shadows, sharp silhouettes, disciplined line density, and a low glow threshold to preserve quiet.',
       key_features:
-        'Terminal Megastructure Silence; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Long structural contours; broad dark masses; open negative space; sparse cold highlights.',
       creative_brief:
-        'Apply Terminal Megastructure Silence after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Terminal Megastructure Silence, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Keep the specified subject, scale, and setting. Use long structural lines, broad shadow masses, and sparse cold glints; add no megastructure, vessel, or space scene.',
     },
   },
   {
@@ -617,28 +617,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Coral Resonance Liturgy',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, cockpit UI, weapon, angel/robot copy, cathedral corridor, readable glyphs, body-horror gore, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, cockpit UI, weapon, angel/robot copy, cathedral corridor, readable glyphs, body-horror gore, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Coral Resonance Liturgy acts as a transferable anime-battle/worlds router: Coral Resonance Liturgy, coral resonance liturgy style grammar with abyssal blue, coral biomechanical geometry, sonic halo symmetry, and sacred machine scale; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Rhythmic luminous illustration with branching contour patterns, concentric halo-like curves, and bioluminescent color accents over deep blue values.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Coral Resonance Liturgy, coral resonance liturgy style grammar with abyssal blue, coral biomechanical geometry, sonic halo symmetry, and sacred machine scale as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Retain the subject’s identity and proportions. Echo its existing divisions with branching lines and repeated arcs, without changing it into coral or machinery.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Coral Resonance Liturgy, coral resonance liturgy style grammar with abyssal blue, coral biomechanical geometry, sonic halo symmetry, and sacred machine scale choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Anchor the palette in abyssal blue and teal, with coral pink, pale aqua, and soft pearl highlights.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Coral Resonance Liturgy, coral resonance liturgy style grammar with abyssal blue, coral biomechanical geometry, sonic halo symmetry, and sacred machine scale without replacing prompt X with a stock anime frame.',
+        'Use layered cel shadows with smooth luminous edges and circular highlight rhythms; keep the glow attached to existing forms.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Coral Resonance Liturgy, coral resonance liturgy style grammar with abyssal blue, coral biomechanical geometry, sonic halo symmetry, and sacred machine scale controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Preserve the original surface while adding fine branching lines, soft stipple, and controlled translucent accents.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Coral Resonance Liturgy, coral resonance liturgy style grammar with abyssal blue, coral biomechanical geometry, sonic halo symmetry, and sacred machine scale into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Honor the requested framing. Repeat arcs and branching marks to create rhythm without imposing a halo or centered layout.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Suggest resonance and reverence through repeated curves, deep color, and measured glow, not religious symbols or an underwater scene.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
-      key_features:
-        'Coral Resonance Liturgy, coral resonance liturgy style grammar with abyssal blue, coral biomechanical geometry, sonic halo symmetry, and sacred machine scale; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Combine precise fine lines with clean shadow bands and soft controlled bloom; maintain clear separation between marks.',
+      key_features: 'Branching contours; concentric rhythms; abyssal blues; coral and aqua glow.',
       creative_brief:
-        'Apply Coral Resonance Liturgy after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Coral Resonance Liturgy, coral resonance liturgy style grammar with abyssal blue, coral biomechanical geometry, sonic halo symmetry, and sacred machine scale, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Preserve the prompt’s subject and setting. Apply branching line rhythms, deep blue values, and restrained coral-aqua glows; add no coral growth, ocean, or sacred symbols.',
     },
   },
   {
@@ -646,28 +645,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Dustfront Drone Lament',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Dustfront Drone Lament acts as a transferable anime-battle/worlds router: Dustfront Drone Lament; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Soft, dusty illustration with muted layered values, drifting particulate marks, sparse mechanical line accents, and a restrained amber signal.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Dustfront Drone Lament as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep the requested subject recognizable. Soften secondary edges and retain crisp line accents only on its existing focal details; add no drone or pilot.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Dustfront Drone Lament choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Use sand, smoke gray, faded olive, and dusty blue, with a small amber highlight against subdued values.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Dustfront Drone Lament without replacing prompt X with a stock anime frame.',
+        'Layer broad soft shadows with narrow, pale edge light; keep haze subtle and avoid a forced sunset or dust storm.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Dustfront Drone Lament controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Retain the subject’s material with fine dust grain, rubbed edges, and sparse particulate specks rather than coating it uniformly.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Dustfront Drone Lament into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Preserve the requested crop and view. Leave breathing room around the subject and let a few drifting marks create depth.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Carry a quiet, lamenting mood through subdued contrast and suspended detail, without a desert or military narrative.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Blend soft atmospheric layers with crisp focal contours; keep grain fine, color separation clear, and highlights restrained.',
       key_features:
-        'Dustfront Drone Lament; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Dust-softened layers; sparse crisp contours; sand and slate palette; small amber signals.',
       creative_brief:
-        'Apply Dustfront Drone Lament after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dustfront Drone Lament, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Keep the specified subject, pose, and setting. Use dust-softened values, sparse particulate marks, and quiet amber accents; add no drone, pilot, desert, or storm.',
     },
   },
   {
@@ -675,28 +674,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Vacuum-Fortress Survival Discipline',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Vacuum-Fortress Survival Discipline acts as a transferable anime-battle/worlds router: Vacuum-Fortress Survival Discipline; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Disciplined survival graphics with sealed angular divisions, compact high-contrast shapes, exact seam lines, and restrained caution-color accents.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Vacuum-Fortress Survival Discipline as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Preserve the requested form and identity. Emphasize its existing structural divisions with thick clean outlines and compact shadow planes; add no suit or equipment.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Vacuum-Fortress Survival Discipline choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Pair cold white, steel, charcoal, and deep blue with a small amber caution accent; keep the palette practical and controlled.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Vacuum-Fortress Survival Discipline without replacing prompt X with a stock anime frame.',
+        'Use crisp cel-shadow bands and hard edge highlights to separate surfaces; avoid suggesting vacuum lighting or a sealed chamber.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Vacuum-Fortress Survival Discipline controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Keep depicted materials recognizable while adding fine scuffs, tight seam marks, and limited grain in protected areas.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Vacuum-Fortress Survival Discipline into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Honor the requested camera. Group existing contours compactly and maintain clear separation between forms without forcing a survival layout.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Suggest disciplined endurance through compact values, exact linework, and restrained accents rather than peril or confinement.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Use stable outlines, hard shadow separation, minimal glow, and carefully rationed surface detail.',
       key_features:
-        'Vacuum-Fortress Survival Discipline; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Sealed angular divisions; compact value groups; cool steel palette; restrained amber signals.',
       creative_brief:
-        'Apply Vacuum-Fortress Survival Discipline after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vacuum-Fortress Survival Discipline, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Preserve the requested subject and composition. Apply compact angular contours, crisp shadow bands, and restrained caution accents; add no spacesuit, equipment, or chamber.',
     },
   },
   {
@@ -704,28 +703,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Extinction Interface Command',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Extinction Interface Command acts as a transferable anime-battle/worlds router: Extinction Interface Command; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Command-like graphic precision using modular divisions, sparse signal bars, rigid alignment, and stark cel-shadow blocks; keep all data-like marks abstract.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Extinction Interface Command as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep the subject’s identity and outline. Divide its existing forms with clean modular contours and small signal accents, not interface panels or weapons.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Extinction Interface Command choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Set black, cool gray, and deep blue against cyan or red signal accents; keep bright marks few and highly legible.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Extinction Interface Command without replacing prompt X with a stock anime frame.',
+        'Use hard shadow blocks and thin localized highlights to create a severe, controlled read without visible displays.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Extinction Interface Command controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Preserve existing material qualities; add fine digital-looking breaks and edge marks sparingly, with no labels or text.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Extinction Interface Command into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Respect the requested framing. Use measured grid alignment within existing forms and keep the main silhouette dominant.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Create command tension through strict spacing, deliberate interruption, and quiet contrast rather than an extinction event.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Favor precise line weights, flat value blocks, clean signal-color boundaries, and minimal texture.',
       key_features:
-        'Extinction Interface Command; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Modular contour divisions; abstract signal marks; stark cel shadows; black, blue, and cyan-red accents.',
       creative_brief:
-        'Apply Extinction Interface Command after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Extinction Interface Command, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Keep the specified subject, action, and setting intact. Apply modular line divisions, abstract signal accents, and stark shadows; add no display, weapon, text, or catastrophe.',
     },
   },
   {
@@ -733,28 +732,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Pop-Cyber Simulation Gloss',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Pop-Cyber Simulation Gloss acts as a transferable anime-battle/worlds router: Pop-Cyber Simulation Gloss; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Glossy pop-cyber illustration combining clean vector contours, bright synthetic color, smooth highlight bands, and tiny controlled pixel-like interruptions.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Pop-Cyber Simulation Gloss as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Preserve the requested subject and proportions. Use smooth, clean contour lines and glossy color accents on its existing forms, without adding avatars or devices.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Pop-Cyber Simulation Gloss choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Use vivid pink, cyan, violet, and a small lime accent against clean dark or pale neutrals; keep colors distinct and buoyant.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Pop-Cyber Simulation Gloss without replacing prompt X with a stock anime frame.',
+        'Pair smooth highlight bands with sharply separated cel shadows; keep shine graphic rather than photoreal.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Pop-Cyber Simulation Gloss controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Maintain the depicted material beneath polished edge glints, clean gradients, and occasional tiny digital breaks.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Pop-Cyber Simulation Gloss into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Keep the requested view. Use lively color offsets and crisp graphic edges within the existing framing, without adding a simulated screen.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Make the image feel playful and synthetic through buoyant color, clean spacing, and a few controlled glitches.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Use vector-clean outlines, smooth color transitions, precise shadow bands, and sparse pixel accents; avoid noisy effects.',
       key_features:
-        'Pop-Cyber Simulation Gloss; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Glossy vector contours; vivid pop colors; smooth highlights; tiny pixel-like breaks.',
       creative_brief:
-        'Apply Pop-Cyber Simulation Gloss after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pop-Cyber Simulation Gloss, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Retain the prompt’s subject and setting. Apply glossy vector edges, vivid pop color, and a few pixel-like breaks; add no avatar, device, or screen.',
     },
   },
   {
@@ -762,28 +761,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Monumental Ignition Sacrifice',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Monumental Ignition Sacrifice acts as a transferable anime-battle/worlds router: Monumental Ignition Sacrifice; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Monumental high-contrast graphics with broad beveled planes, a warm flare-like accent, and deep shadow.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Monumental Ignition Sacrifice as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep the prompt’s subject and silhouette recognizable. Emphasize its existing planes with bold contour cuts and directional highlights; add no heroic gear or weapon.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Monumental Ignition Sacrifice choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Contrast ember red, gold, and pale cream with ink black and charcoal; reserve the hottest values for a few focal edges.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Monumental Ignition Sacrifice without replacing prompt X with a stock anime frame.',
+        'Use hard cel shadows against a sweeping warm highlight, treated as graphic color rather than a required flame or source.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Monumental Ignition Sacrifice controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Respect the original material while adding clean bevel-like highlights, sparse scuffs, and large smooth color planes.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Monumental Ignition Sacrifice into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        "Honor the requested framing and scale. Use broad value masses and open darks to carry presence without changing the subject's pose or viewpoint.",
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Create intensity and resolve through scale contrast, warm light, and deliberate empty darks, without a sacrifice narrative.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Keep outlines crisp, shadows decisive, highlight shapes broad and clean, and glow tightly controlled.',
       key_features:
-        'Monumental Ignition Sacrifice; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Broad beveled planes; warm flare highlights; ember-red and gold accents; deep cel shadows.',
       creative_brief:
-        'Apply Monumental Ignition Sacrifice after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Monumental Ignition Sacrifice, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Preserve the specified subject, action, and composition. Apply bold beveled highlights, ember-gold accents, and deep shadows; add no weapon, flames, or heroic pose.',
     },
   },
   {
@@ -791,28 +790,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bubblegum Cosmic Overdrive',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, cockpit, weapon, mecha battle, readable UI, toy-logo composition, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, cockpit, weapon, mecha battle, readable UI, toy-logo composition, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Bubblegum Cosmic Overdrive acts as a transferable anime-battle/worlds router: Bubblegum Cosmic Overdrive, bubblegum cosmic scale style grammar with elastic pop geometry, huge joyful color, cosmic flare, and sincere chaos; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Elastic pop rendering with rounded graphic contours, joyful saturated color, sweeping flare-like shapes, and lively shifts in scale and rhythm.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Bubblegum Cosmic Overdrive, bubblegum cosmic scale style grammar with elastic pop geometry, huge joyful color, cosmic flare, and sincere chaos as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep the requested subject recognizable. Soften selected contours and apply rounded color shapes to existing forms without turning them into toys or characters.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Bubblegum Cosmic Overdrive, bubblegum cosmic scale style grammar with elastic pop geometry, huge joyful color, cosmic flare, and sincere chaos choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Use vivid bubblegum pink, cyan, lemon yellow, and violet against clear dark anchors; keep color joyful and strongly separated.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Bubblegum Cosmic Overdrive, bubblegum cosmic scale style grammar with elastic pop geometry, huge joyful color, cosmic flare, and sincere chaos without replacing prompt X with a stock anime frame.',
+        'Set soft luminous gradients against crisp cel shadows, with broad bright accents that follow existing forms rather than adding cosmic effects.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Bubblegum Cosmic Overdrive, bubblegum cosmic scale style grammar with elastic pop geometry, huge joyful color, cosmic flare, and sincere chaos controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Preserve the subject’s material beneath smooth gradients, clean highlight bands, and a few playful grain or sparkle-like marks.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Bubblegum Cosmic Overdrive, bubblegum cosmic scale style grammar with elastic pop geometry, huge joyful color, cosmic flare, and sincere chaos into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Honor the requested view. Use energetic curves and varied color scale inside the existing composition without adding planets or burst shapes.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Keep the mood buoyant, expansive, and sincere through saturated color, elastic line rhythm, and open spacing.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Combine smooth gradients, firm outlines, clear shadow blocks, and controlled bloom; prevent color from obscuring the silhouette.',
       key_features:
-        'Bubblegum Cosmic Overdrive, bubblegum cosmic scale style grammar with elastic pop geometry, huge joyful color, cosmic flare, and sincere chaos; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Elastic rounded contours; joyful saturated color; smooth flare-like gradients; lively scale rhythm.',
       creative_brief:
-        'Apply Bubblegum Cosmic Overdrive after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bubblegum Cosmic Overdrive, bubblegum cosmic scale style grammar with elastic pop geometry, huge joyful color, cosmic flare, and sincere chaos, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Preserve the prompt’s subject and setting. Apply rounded contours, joyful pop colors, and smooth luminous gradients; add no toy, planet, or cosmic scene.',
     },
   },
   {
@@ -820,28 +819,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rust-Wire Descent',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Rust-Wire Descent acts as a transferable anime-battle/worlds router: Rust-Wire Descent; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'A wiry, weathered line style using thin tangled contours, rust-like stains, descending diagonals, and cool signal glints against industrial darks.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Rust-Wire Descent as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Preserve the requested subject and pose. Thread fine broken lines along its existing edges and use sparse scratch marks; add no cables, harness, or person.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Rust-Wire Descent choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Pair oxidized orange and brown with slate, black, and cold cyan; keep the brightest accents small and isolated.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Rust-Wire Descent without replacing prompt X with a stock anime frame.',
+        'Use firm dark shadows, thin cool edge highlights, and muted warm reflections; avoid adding a visible neon source.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Rust-Wire Descent controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Retain the depicted material with dry scratches, fine wire-like marks, and scattered rust-colored wear as surface treatment only.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Rust-Wire Descent into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Keep the requested camera. Use slanting line rhythms and uneven detail density within the existing composition; do not imply falling.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Create a tense, worn quiet through brittle lines, downward visual cadence, and subdued color rather than a descent scene.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Balance delicate contour threads with substantial shadow blocks; keep surface grain selective and shapes readable.',
       key_features:
-        'Rust-Wire Descent; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Wiry broken contours; rust and slate palette; descending line cadence; cold cyan glints.',
       creative_brief:
-        'Apply Rust-Wire Descent after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rust-Wire Descent, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Retain the prompt’s subject, pose, and setting. Apply wiry contours, rust-toned surface marks, and cold glints; add no cable, harness, falling figure, or industrial scene.',
     },
   },
   {
@@ -849,28 +848,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Hydraulic Attrition Mass',
     category: '2. Mecha & Cyberpunk',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, tank, firearm, battlefield, soldier, real military insignia, franchise mech likeness, gore, weapon-first composition, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, tank, firearm, battlefield, soldier, real military insignia, franchise mech likeness, gore, weapon-first composition, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Hydraulic Attrition Mass acts as a transferable anime-battle/worlds router: Hydraulic Attrition Mass, hydraulic attrition mass style grammar with scarred armor plates, piston clusters, mud-heavy mechanical joints, load-bearing silhouettes, and worn industrial grime; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Weighty industrial rendering defined by broad overlapping planes, load-bearing contours, chipped edges, and dense shadow blocks; imply strain through surface wear rather than new parts.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Hydraulic Attrition Mass, hydraulic attrition mass style grammar with scarred armor plates, piston clusters, mud-heavy mechanical joints, load-bearing silhouettes as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Preserve the subject’s identity and silhouette. Give existing forms a heavier read with thick contour accents and layered value planes; do not attach armor or pistons.',
       color_and_tone:
-        'Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile white, coral glow, and disciplined emissive accents; let Hydraulic Attrition Mass, hydraulic attrition mass style grammar with scarred armor plates, piston clusters, mud-heavy mechanical joints, load-bearing silhouettes choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Build from iron gray, dirty olive, muted clay, and rust, with small pale highlights. Keep the palette grounded and low in saturation.',
       lighting_and_shadow:
-        'Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow, and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Hydraulic Attrition Mass, hydraulic attrition mass style grammar with scarred armor plates, piston clusters, mud-heavy mechanical joints, load-bearing silhouettes without replacing prompt X with a stock anime frame.',
+        'Use hard, deep shadows under overlaps and broad worn highlights across exposed surfaces; let weight read through value grouping.',
       texture_and_material:
-        'Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Hydraulic Attrition Mass, hydraulic attrition mass style grammar with scarred armor plates, piston clusters, mud-heavy mechanical joints, load-bearing silhouettes controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Retain the depicted material while adding sparse chips, rubbed edges, grime streaks, and coarse painted wear in controlled patches.',
       camera_and_composition:
-        'Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Hydraulic Attrition Mass, hydraulic attrition mass style grammar with scarred armor plates, piston clusters, mud-heavy mechanical joints, load-bearing silhouettes into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Keep the requested angle and scale. Group marks into compact masses and let weight settle toward the lower part of the existing frame.',
       atmosphere_and_mood:
-        'Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Convey endurance and strain through dense shadows, worn edges, and restrained color, without staging a battlefield or repair scene.',
       rendering_and_quality:
-        'Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Use decisive cel-shadow blocks, thick-to-thin contours, and purposeful abrasion; preserve enough clean area to keep forms readable.',
       key_features:
-        'Hydraulic Attrition Mass, hydraulic attrition mass style grammar with scarred armor plates, piston clusters, mud-heavy mechanical joints, load-bearing silhouettes; armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency',
+        'Load-bearing silhouette; broad shadow masses; chipped surface accents; iron, olive, and rust palette.',
       creative_brief:
-        'Apply Hydraulic Attrition Mass after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hydraulic Attrition Mass, hydraulic attrition mass style grammar with scarred armor plates, piston clusters, mud-heavy mechanical joints, load-bearing silhouettes, and worn industrial grime, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Preserve the specified subject and framing. Apply heavy contour accents, layered shadows, and restrained worn marks to its existing forms; add no armor, pistons, or battlefield props.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

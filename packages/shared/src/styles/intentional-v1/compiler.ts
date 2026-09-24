@@ -229,6 +229,7 @@ export async function compileStyleRequest(raw: RequestInput): Promise<CompiledRe
     'STYLE APPLICATION CONTRACT',
     `Mode: ${input.mode}.`,
     'The user prompt supplies the subject, setting, requested text and action. Style layers do not silently add subjects, props, HUD or framing.',
+    'Keep explicit quantities, room layout, viewpoint and lighting from the user prompt unless the user asks to change them.',
     'Layer influence and field weights are language-level priorities, not calibrated pixel percentages or native provider parameters.',
     ...Object.entries(input.locks)
       .filter(([, enabled]) => enabled)
@@ -278,6 +279,21 @@ export async function compileStyleRequest(raw: RequestInput): Promise<CompiledRe
     lines.push(
       `STYLE LAYER ${index + 1} — requested influence ${layer.strength.toFixed(2)} (${strengthWords(layer.strength)})`,
     );
+    const media = [
+      ...new Set(
+        layer.snapshot.policy.constraints
+          .filter(
+            (constraint) =>
+              constraint.group === 'medium' &&
+              fields.some((field) => field.field === constraint.field),
+          )
+          .map((constraint) => constraint.value),
+      ),
+    ];
+    if (media.length)
+      lines.push(
+        `Output medium: ${media.join(' + ')}. Render the whole image in this medium, not just its surface details.`,
+      );
     for (const f of fields)
       lines.push(`${f.field} [field priority ${f.weight.toFixed(2)}]: ${f.text}`);
   }

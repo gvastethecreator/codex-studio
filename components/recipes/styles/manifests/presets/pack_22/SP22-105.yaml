@@ -1,0 +1,100 @@
+schemaVersion: 1
+id: SP22-105
+packId: pack_22
+name: Directional Dry Brush
+category: 1. Workshop Painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - workshop-painting
+  - dry-brush-painting
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Opaque dry-brush paint builds form through directional pigment drag, interstitial gaps and
+    selectively scraped lights.
+  subject_treatment: >-
+    Preserve requested identity, proportions, pose and action. Align dry strokes to the existing
+    surface and planes; break an edge only where the depleted brush deposit naturally thins.
+  color_and_tone: >-
+    Organize the requested colors into clear value groups, using scraped light marks only on planes
+    already lit by the requested scene.
+  lighting_and_shadow: >-
+    Honor the specified lighting and shadow pattern. Broken coverage may describe those planes but
+    must not add a new highlight source or change the time of day.
+  texture_and_material: >-
+    Keep opaque dry deposits and small gaps local to the form. Let bristle drag follow its direction;
+    do not turn the whole image into dirt or random screen-wide scratches.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and element placement. Do not add an unrequested
+    card frame or shift the subject to imitate a printed object.
+  atmosphere_and_mood: >-
+    Keep the requested mood. Dry pigment marks do not imply a relic, decay, age or a historical
+    setting.
+  rendering_and_quality: >-
+    Maintain grouped values and a readable silhouette, with broken contours limited to the marks
+    that lose pigment. Avoid a generic erosion or grunge layer.
+avoidRules:
+  - unmotivated brush marks unrelated to form
+  - global dirt overlay
+  - random screen-wide scratches
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-105.webp
+attributes:
+  negativePrompt: unmotivated brush marks unrelated to form, global dirt overlay, random screen-wide scratches
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: painting
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: painting
+    avoidRules:
+      - text: unmotivated brush marks unrelated to form
+        field: rendering_and_quality
+      - text: global dirt overlay
+        field: rendering_and_quality
+      - text: random screen-wide scratches
+        field: rendering_and_quality
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S005
+    sourceTitle: Drybrush Relic
+    referenceIds:
+      - S15
+      - S40
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: workshop-painting
+  categoryName: 1. Workshop Painting
+  tags:
+    - trading-card-illustration
+    - workshop-painting
+    - dry-brush-painting
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

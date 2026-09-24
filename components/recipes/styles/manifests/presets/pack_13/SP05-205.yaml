@@ -12,58 +12,16 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: >-
-    Breezy Brush-Reinvention Summer operates as a portable anime-lifestyle router: combine Breezy
-    Brush Reinvention Summer identity cues through Brush energy; summer air; self reinvention tone;
-    loose comedy; paper texture; and bright sincerity with slice of life and moe grammar with soft
-    acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world
-    specificity, so the preset supplies anime style behavior after prompt X rather than a required
-    scene, character, franchise image, or card composition.
-  subject_treatment: >-
-    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
-    rounded shape language, micro-expression timing, soft body or object posture, simple
-    costume/surface detail, and charm through small repeated gestures; subjects may be characters,
-    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
-    prompt.
-  color_and_tone: >-
-    Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal
-    greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin
-    or material midtones stable, and palette behavior attached to the prompt instead of pasted anime
-    decoration.
-  lighting_and_shadow: >-
-    Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim,
-    and flat comedy brightness; lighting should clarify expression, silhouette, material, and
-    emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
-  texture_and_material: >-
-    Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft
-    marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper,
-    sensor, grain, or effect textures controlled enough to route style without noisy surface
-    chatter.
-  camera_and_composition: >-
-    Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational
-    crops, and comfort-scale depth without required school setting as reusable anime framing
-    grammar, allowing close acting, objects, performances, action, environments, or abstract prompts
-    without one required pose or location.
-  atmosphere_and_mood: >-
-    Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph,
-    awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute,
-    sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving
-    its anime lineage.
-  rendering_and_quality: >-
-    Finish with soft high readability anime finish with stable proportions, gentle denoise, clean
-    pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object
-    structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no
-    generic AI anime gloss.
-  key_features: >-
-    Brush energy; summer air; self reinvention tone; loose comedy; paper texture; and bright
-    sincerity
-  creative_brief: >-
-    Use Breezy Brush-Reinvention Summer after prompt X as a transferable anime character/lifestyle
-    layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset
-    supplies Brush energy, summer air, self reinvention tone, loose comedy, paper texture, and
-    bright sincerity, color logic, lighting, material finish, composition rhythm, mood pressure, and
-    quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title
-    screenshot, or sample-card composition.
+  aesthetic: 'Loose brush contours, open paper gaps, and simple geometric underpainting give forms a fresh hand-painted energy.'
+  subject_treatment: 'Preserve the prompted design, proportions, pose, and action; vary stroke edges without reshaping the figure or object.'
+  color_and_tone: 'Balance a light base with a few confident saturated accents; let the user set the hue and avoid a fixed seasonal palette.'
+  lighting_and_shadow: 'Use broad light planes with broken brush shadow edges; follow the described source and keep depth readable.'
+  texture_and_material: 'Show dry-brush skips and sparse pencil grain as surface treatment; render existing materials recognizably beneath the marks.'
+  camera_and_composition: 'Keep exact framing, viewpoint, scale, and count; use asymmetry within existing shapes without rearranging the composition.'
+  atmosphere_and_mood: 'Preserve the requested feeling; loose marks describe brushwork, not a required emotion.'
+  rendering_and_quality: 'Leave a controlled handmade edge while keeping anatomy and object boundaries legible; avoid a uniformly rough finish.'
+  key_features: 'Loose directional brushwork; geometric underpainting; visible paper gaps; broken shadow edges; selective pencil grain.'
+  creative_brief: 'Combine confident brush edges with simple color geometry and visible gaps. Keep the original subject, action, count, camera, and mood unchanged.'
 avoidRules:
   - realistic
   - 3d render
@@ -75,7 +33,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - generic moe wallpaper
   - infantilized styling
@@ -86,17 +43,16 @@ avoidRules:
   - fixed anime cast
   - generic anime filter
   - prompt literal card reuse
-  - readable text
   - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-205.webp
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only
-    lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast,
-    generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D
-    render look, copied franchise costume, logo
+    artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock,
+    canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic
+    anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied
+    franchise costume, logo
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

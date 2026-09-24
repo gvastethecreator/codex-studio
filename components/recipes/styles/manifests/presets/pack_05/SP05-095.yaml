@@ -13,75 +13,34 @@ tags:
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: >-
-    Frieren – Afterquest Melancholy Fantasy acts as a transferable anime-battle/worlds router:
-    Frieren – Afterquest Melancholy Fantasy, afterquest melancholy fantasy style grammar with relic
-    meadow memory motes, soft horizon light, quiet spell traces, and time-softened grief; combine it
-    with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture,
-    luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage
-    words may guide style, but they must not require canon cast, title-scene replication,
-    screenshots, logos, or one fixed card concept.
+    Soft painted cel work with fading contours, delicate speckled texture, and light that spreads
+    across broad planes.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Frieren
-    – Afterquest Melancholy Fantasy, afterquest melancholy fantasy style grammar with relic meadow
-    memory motes, soft horizon light, quiet spell traces, and time-softened grief as portable
-    contour, motion grammar, surface language, and emotional pressure without requiring canon
-    elements or a default action setup.
+    Preserve the requested subject and gesture; soften secondary edges while keeping the focal
+    silhouette precise.
   color_and_tone: >-
-    Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens,
-    parchment neutrals, magical violets, and controlled pastel or dark contrast; let Frieren –
-    Afterquest Melancholy Fantasy, afterquest melancholy fantasy style grammar with relic meadow
-    memory motes, soft horizon light, quiet spell traces, and time-softened grief choose accent
-    intensity, value contrast, emotional temperature, and power-system separation while staying
-    attached to prompt X.
+    Muted sage, pale amber, and blue-gray carry gentle contrast; use the requested colors when
+    specified.
   lighting_and_shadow: >-
-    Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and
-    clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Frieren – Afterquest Melancholy Fantasy, afterquest melancholy
-    fantasy style grammar with relic meadow memory motes, soft horizon light, quiet spell traces,
-    and time-softened grief without replacing prompt X with a stock anime frame.
+    Wide, soft-edged light and gradual shadow transitions create a quiet sense of distance without
+    adding a source.
   texture_and_material: >-
-    Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel
-    glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Frieren
-    – Afterquest Melancholy Fantasy, afterquest melancholy fantasy style grammar with relic meadow
-    memory motes, soft horizon light, quiet spell traces, and time-softened grief controlled,
-    denoised, and coherent across bodies, objects, environments, abstractions, and action.
+    Fine pigment grain and translucent layers soften surfaces without changing what they are made
+    of.
   camera_and_composition: >-
-    Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed
-    cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook
-    scale; convert Frieren – Afterquest Melancholy Fantasy, afterquest melancholy fantasy style
-    grammar with relic meadow memory motes, soft horizon light, quiet spell traces, and
-    time-softened grief into reusable perspective, timing, rhythm, scale, cut-in, and negative-space
-    rules instead of one fixed style sample layout.
+    Keep the requested viewpoint; distribute detail from clear focal forms to quieter, more open
+    surroundings.
   atmosphere_and_mood: >-
-    Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional
-    craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic,
-    comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while
-    keeping the anime-battle lineage readable.
+    Wistful and still, with no imposed grief or backstory.
   rendering_and_quality: >-
-    Finish with clean fantasy-anime finish with stable anatomy and creature/object structure,
-    controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize
-    stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy
-    darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+    Let contours recede selectively under smooth tonal fades; keep anatomy and object structure
+    stable.
   key_features: >-
-    Frieren – Afterquest Melancholy Fantasy, afterquest melancholy fantasy style grammar with relic
-    meadow memory motes, soft horizon light, quiet spell traces, and time-softened grief; clear
-    fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object
-    readability, and portal-like transformation logic; cloth, leather, polished armor, parchment,
-    herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces;
-    quest-path diagonals, transition thresholds, group-scale spacing without fixed cast,
-    adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale;
-    clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow,
-    no RPG UI, no readable magic text, and no generic isekai gloss
+    Soft horizon-like gradients, faded line edges, fine flecks, and restrained light preserve a
+    reflective calm.
   creative_brief: >-
-    Apply Frieren – Afterquest Melancholy Fantasy after prompt X as a transferable
-    anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity,
-    while this preset supplies Frieren – Afterquest Melancholy Fantasy, afterquest melancholy
-    fantasy style grammar with relic meadow memory motes, soft horizon light, quiet spell traces,
-    and time-softened grief, isekai and high-fantasy anime grammar with magic-system readability,
-    quest-world texture, luminous adventure, and character-independent fantasy routing, finish
-    discipline, and negative controls without forcing canon cast, title scene, screenshot, card
-    pose, default monster, default combat prop, or prompt-literal card.
+    Give the requested content a time-softened cel finish through fading contours, quiet color, and
+    gentle light, without adding memory objects or a fantasy scene.
 avoidRules:
   - realistic
   - 3d render
@@ -93,7 +52,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - named elf mage likeness
   - party lineup
@@ -109,7 +67,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -117,10 +74,10 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, named elf mage likeness, party lineup, road scene, ritual
+    artifacts, watermark, signature, named elf mage likeness, party lineup, road scene, ritual
     circle, franchise costume copy, RPG UI, readable magic text, generic isekai wallpaper, fixed
     canon character, title scene replication, required source-frame look, cosplay, generic anime
-    filter, prompt-required card, readable text, logo, muddy noisy darks
+    filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

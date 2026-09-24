@@ -16,78 +16,36 @@ tags:
   - 90s-golden-era
 visualDna:
   aesthetic: >-
-    Wired Identity Dissolution Style acts as a transferable anime-prestige router: a wired anime
-    direction shaped by era-aware line economy and genre tone, alongside a identity anime direction
-    shaped by era-aware line economy and genre tone; fuse it with 90s golden-era anime direction
-    with sharp cel shadows, dramatic closeups, aura effects, urban melancholy, and high-contrast
-    compositing; it routes era, genre, line economy, cel or digital finish, and performance tone
-    without locking prompt content to the source title or sample image.
+    A wired 90s cel look fragments selected contours into offset exposures and interrupted horizontal
+    bands. Identity feels unstable through registration shifts, not through adding another character.
   subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through unstable
-    self-image and mirrored expression logic, alongside contours paced by wired tension, readable
-    pose energy, and silhouette discipline; identity should remain readable through anime contour,
-    expression economy, pose energy, shape simplification, and effect hierarchy instead of a
-    required canon character or title scene.
+    Preserve the requested identity and number of forms. Use a few offset contour fragments as a
+    printing or signal echo; never duplicate the subject or alter its defining features.
   color_and_tone: >-
-    Map color through a wired accent system held inside disciplined cel values, alongside a identity
-    accent system held inside disciplined cel values; anchor it in deep night blues, saturated aura
-    color, jewel accents, warm skin cel tones, smoke grays, and VHS-era contrast; keep value
-    separation clean, cel flats intentional, accents purposeful, and palette behavior attached to
-    the requested content.
+    When color is open, set electric blue or violet accents against ink black and muted neutrals.
+    Preserve requested hues and keep color shifts narrow and purposeful.
   lighting_and_shadow: >-
-    Use a wired light logic using cel rim, glow behavior, and blocked shadow, alongside a identity
-    light logic using cel rim, glow behavior, and blocked shadow; combine it with hard-edged rim
-    light, aura bloom, neon spill, twilight gradients, speed-flash cuts, and moody cel shadow
-    blocks; shadows should read as anime light design, rims should clarify form, and glow or effects
-    should support the prompt rather than replacing it.
+    Use clean cel shadows with small displaced edge lights and occasional line interruptions. Retain
+    the requested lighting; do not add a screen or neon source.
   texture_and_material: >-
-    Render cel paint and ink grain tuned to wired material contrast, alongside cel paint and ink
-    grain tuned to identity material contrast; anchor surfaces in painted cels, compositing grain,
-    inked speed marks, smoke layers, leather or metal highlights, and analog scan softness; cel
-    edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay
-    coherent across people, objects, environments, action, and abstractions.
+    Add sparse scanline breaks and slight color-registration slips over otherwise solid painted fills.
+    Keep the effect graphic and prevent noise from obscuring material.
   camera_and_composition: >-
-    Frame around reflection cuts, doubled profiles, and fractured self-framing, alongside wired
-    converted into reusable framing rhythm and anime timing, then extend it with cinematic closeups,
-    speed-line vectors, dramatic low angles, layered profile cuts, and compressed emotional space;
-    the style should support portraits, props, machines, performances, landscapes, symbols, and full
-    scenes through reusable anime staging grammar instead of one fixed card layout.
+    Use repeated edge fragments within the existing framing to suggest disorientation. Preserve camera
+    and form placement; do not multiply the scene.
   atmosphere_and_mood: >-
-    Carry mood through dissociation and psychological suspense, alongside wired emotional pressure
-    and genre-specific tone; braid it with heightened rivalry, melancholy cool, occult romance,
-    existential drift, heroic escalation, and serious adult tone; the preset can become funny,
-    sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving
-    the chosen anime lineage.
+    Create unease through alignment changes and empty intervals only when compatible with the prompt.
+    Preserve its requested tone and avoid a digital-world narrative.
   rendering_and_quality: >-
-    Finish with clean anime finishing that keeps wired identity readable without noisy denoise,
-    alongside clean anime finishing that keeps identity identity readable without noisy denoise;
-    enforce premium 90s cel finish with crisp anatomy, readable effects, denoised grain, and no
-    cheap anime-filter smear; prioritize clean denoise, stable anatomy or object structure, readable
-    effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or
-    3D-render drift.
+    Keep one primary silhouette completely readable; limit offsets to short bands and edges. Avoid
+    severe glitch breakup or soft double exposure.
   key_features: >-
-    a wired anime direction shaped by era-aware line economy and genre tone, alongside a identity
-    anime direction shaped by era-aware line economy and genre tone; unstable self-image and
-    mirrored expression logic, alongside contours paced by wired tension, readable pose energy, and
-    silhouette discipline; cel paint and ink grain tuned to wired material contrast, alongside cel
-    paint and ink grain tuned to identity material contrast; a wired light logic using cel rim, glow
-    behavior, and blocked shadow, alongside a identity light logic using cel rim, glow behavior, and
-    blocked shadow; reflection cuts, doubled profiles, and fractured self-framing, alongside wired
-    converted into reusable framing rhythm and anime timing
+    offset contour fragments; interrupted horizontal scan bands; electric blue-violet registration
+    accents
   creative_brief: >-
-    Apply Wired Identity Dissolution Style after prompt X as a transferable anime-prestige layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a
-    wired anime direction shaped by era-aware line economy and genre tone, alongside a identity
-    anime direction shaped by era-aware line economy and genre tone, alongside unstable self-image
-    and mirrored expression logic, alongside contours paced by wired tension, readable pose energy,
-    and silhouette discipline; a wired accent system held inside disciplined cel values, alongside a
-    identity accent system held inside disciplined cel values; a wired light logic using cel rim,
-    glow behavior, and blocked shadow, alongside a identity light logic using cel rim, glow
-    behavior, and blocked shadow; cel paint and ink grain tuned to wired material contrast,
-    alongside cel paint and ink grain tuned to identity material contrast and reflection cuts,
-    doubled profiles, and fractured self-framing, alongside wired converted into reusable framing
-    rhythm and anime timing, finish discipline, and negative controls without requiring a fixed
-    canon cast, title scene, prop bundle, location, sport, instrument, weapon, or card composition.
+    Restyle the requested content with sparse registration shifts and fragmented cel contours.
+    Preserve its identity, count, setting and composition; do not create duplicates, screens or a
+    digital narrative.
 avoidRules:
   - realistic
   - 3d render
@@ -99,7 +57,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - flat modern moe
   - generic shonen screenshot
@@ -110,15 +67,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-169.webp
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS
-    noise, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise, readable text
+    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
+    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
+    prompt-literal card, muddy cel noise
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

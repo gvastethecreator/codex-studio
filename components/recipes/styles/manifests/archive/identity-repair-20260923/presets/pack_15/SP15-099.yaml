@@ -1,0 +1,95 @@
+schemaVersion: 1
+id: SP15-099
+packId: pack_15
+name: Saltpunk
+category: 5. Ocean, Ice & Terrain Punks
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - ocean-ice-and-terrain-punks
+visualDna:
+  aesthetic: >-
+    Saltpunk pairs brittle mineral crust and efflorescent edges with wind-cut triangular planes and
+    sparse rust-dark structure.
+  subject_treatment: >-
+    Preserve the requested subject and silhouette; use localized salt bloom and wind-shaped geometry
+    without turning it into a kite, mine or industrial machine.
+  color_and_tone: >-
+    Follow the requested palette; separate chalk, mineral gray and oxidized iron with hard value
+    contrast, avoiding a fixed desert-orange scheme.
+  lighting_and_shadow: >-
+    Respect the specified light; use directional hard-edged shadows to clarify dry planes without adding
+    a sun or storm.
+  texture_and_material: >-
+    Preserve surface identity; use granular crystal deposits on compatible surfaces and keep metal matte,
+    worn and distinct.
+  camera_and_composition: >-
+    Keep the requested crop and perspective; balance fractured mineral planes with angular negative space
+    without requiring terrain or machinery.
+  atmosphere_and_mood: >-
+    Convey dryness and erosion through brittle edges and open spacing, preserving the requested emotional
+    tone.
+  rendering_and_quality: >-
+    Make crust edges and triangular shadows broad enough to read small; avoid uniform salt coverage,
+    noisy grains and decorative rust clutter.
+avoidRules:
+  - Do not add turbines, kites, carts, mines or desert scenery unless requested.
+  - Keep salt crystallization localized to compatible surfaces.
+  - Avoid orange desert lighting and fine grain that muddies the silhouette.
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-099.webp
+attributes:
+  negativePrompt: >-
+    Do not add turbines, kites, carts, mines or desert scenery unless requested., Keep salt
+    crystallization localized to compatible surfaces., Avoid orange desert lighting and fine grain that
+    muddies the silhouette.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: Do not add turbines, kites, carts, mines or desert scenery unless requested.
+        field: rendering_and_quality
+      - text: Keep salt crystallization localized to compatible surfaces.
+        field: rendering_and_quality
+      - text: Avoid orange desert lighting and fine grain that muddies the silhouette.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-039
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: ocean-ice-and-terrain-punks
+  categoryName: 5. Ocean, Ice & Terrain Punks
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - ocean-ice-and-terrain-punks
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

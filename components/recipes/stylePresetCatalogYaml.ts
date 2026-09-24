@@ -31,7 +31,9 @@ function normalizePresetAssetAvailability(
   thumbnailProjection?: Record<string, string>,
 ): StylePresetManifest {
   const resolvedDefaultImage =
-    thumbnailProjection?.[preset.id] ?? resolveStyleDefaultImageThumbnail(preset.id);
+    preset.attributes?.previewStatus === 'pending'
+      ? undefined
+      : (thumbnailProjection?.[preset.id] ?? resolveStyleDefaultImageThumbnail(preset.id));
   const defaultImageExists = Boolean(resolvedDefaultImage);
   return {
     ...preset,

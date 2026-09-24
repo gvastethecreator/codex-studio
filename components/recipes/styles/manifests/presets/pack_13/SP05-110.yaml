@@ -13,91 +13,63 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Surreal Dream Logic operates as a portable anime-lifestyle router: combine Surreal Dream Logic
-    identity cues through Impossible architecture; floating disconnected elements; morphing dream
-    transitions; contradictory light sources; infinite spatial loops; Surreal Dream Logic anime
-    style cues with broad anime style spectrum grammar with experimental line, material specific
-    finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art
-    direction, so the preset supplies anime style behavior after prompt X rather than a required
-    scene, character, franchise image, or card composition.
+    Create a limited spatial contradiction among existing planes, alignments or light cues; keep the
+    dream effect legible and do not add disconnected objects.
   subject_treatment: >-
-    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
-    style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic
-    surface logic, and prompt-preserving silhouette discipline; subjects may be characters,
-    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
-    prompt.
+    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
+    treatment to the existing forms without substituting subjects, adding accessories or changing
+    their function.
   color_and_tone: >-
-    Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop,
-    thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values
-    readable, accent roles intentional, skin or material midtones stable, and palette behavior
-    attached to the prompt instead of pasted anime decoration.
+    Palette defaults apply only where the prompt leaves color open: retain a coherent base palette
+    with selective shifts at the contradictory plane; preserve prompt colors.
   lighting_and_shadow: >-
-    Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze,
-    speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression,
-    silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or
-    screenshot-like flatness.
+    Keep the original light cues and introduce only a subtle mismatch where the prompt's own forms
+    meet.
   texture_and_material: >-
-    Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map
-    pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile,
-    glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy
-    surface chatter.
+    Use clean edges with localized soft transitions to make one relationship feel impossible; retain
+    material and silhouette.
   camera_and_composition: >-
-    Compose through auteur-aware framing, material seams, impact vectors, postcard freezes,
-    distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as
-    reusable anime framing grammar, allowing close acting, objects, performances, action,
-    environments, or abstract prompts without one required pose or location.
+    Keep the source camera and content stable while gently disturbing perspective or adjacency; no
+    infinite loops by default.
   atmosphere_and_mood: >-
-    Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance,
-    tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become
-    cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while
-    preserving its anime lineage.
+    Dream logic comes from one precise mismatch, not a new dreamscape; preserve requested mood.
   rendering_and_quality: >-
-    Finish with clean experimental anime finish with strong style recognition, stable subject
-    structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss;
-    prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no
-    fake readable text, no UI, and no generic AI anime gloss.
+    Apply the spatial treatment to any subject without adding architecture, floating objects,
+    duplicate forms or a new setting. Keep important silhouettes and joins legible; no watermark,
+    unrequested text or interface.
   key_features: >-
-    Impossible architecture; floating disconnected elements; morphing dream transitions;
-    contradictory light sources; infinite spatial loops; Surreal Dream Logic anime style cues
+    Offset planes; contradictory alignment or light; restrained spatial loop; stable recognizable
+    forms.
   creative_brief: >-
-    Use Surreal Dream Logic after prompt X as a transferable anime character/lifestyle layer: prompt
-    X supplies subject, action, setting, tone, and intensity, while the preset supplies Impossible
-    architecture, floating disconnected elements, morphing dream transitions, contradictory light
-    sources, infinite spatial loops, Surreal Dream Logic anime style cues, color logic, lighting,
-    material finish, composition rhythm, mood pressure, and quality controls without requiring a
-    fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.
+    Apply this visual treatment to the requested content: Offset planes; contradictory alignment or
+    light; restrained spatial loop; stable recognizable forms. Preserve its identity, action,
+    materials, composition and requested tone; introduce no persona, scene, franchise cue or extra
+    motif.
 avoidRules:
-  - realistic
-  - logical
-  - grounded
-  - physical
-  - coherent
-  - normal
-  - straightforward
-  - literal
-  - linear
-  - ordinary
-  - generic AI anime gloss
-  - auteur copycat
-  - fixed source scene
-  - canon character copy
-  - title scene copy
-  - literal sample card setup
-  - fixed anime cast
-  - generic anime filter
-  - prompt literal card reuse
+  - photoreal cosplay rendering
+  - 3D render look
+  - plastic airbrush gloss obscuring the style's defining marks
+  - undifferentiated anime filter erasing the preset's signature mechanics
+  - unrequested default-image characters, costume details, props or setting
+  - unrequested default-image framing
+  - garbled pseudo-text
+  - unrequested interface overlay
   - watermark
-  - readable text
-  - fake UI
+  - unrequested logo or signature artifact
+  - spatial contradiction making the subject unreadable
+  - unrequested floating or duplicate forms
+  - perspective discontinuity unrelated to existing geometry
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-110.webp
 attributes:
   negativePrompt: >-
-    realistic, logical, grounded, physical, coherent, normal, straightforward, literal, linear,
-    ordinary, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy,
-    title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt
-    literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied
-    franchise costume, logo, signature
+    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
+    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
+    unrequested default-image characters, costume details, props or setting, unrequested
+    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
+    unrequested logo or signature artifact, spatial contradiction making the subject unreadable,
+    unrequested floating or duplicate forms, perspective discontinuity unrelated to existing
+    geometry
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

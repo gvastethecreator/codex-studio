@@ -13,69 +13,35 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    White Machine Elegy acts as a transferable anime-battle/worlds router: White Machine Elegy, pale
-    machine elegy style grammar with worn enamel, dust silence, lonely synthetic grace, and white
-    mechanical fragments; combine it with mecha and cyberpunk anime grammar with engineered
-    silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion
-    tension; named titles, studios, or lineage words may guide style, but they must not require
-    canon cast, title-scene replication, screenshots, logos, or one fixed card concept.
+    Quiet pale rendering with worn enamel-like highlights, dust-softened edges, delicate
+    synthetic line rhythms, and generous white space.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply White
-    Machine Elegy, pale machine elegy style grammar with worn enamel, dust silence, lonely synthetic
-    grace, and white mechanical fragments as portable contour, motion grammar, surface language, and
-    emotional pressure without requiring canon elements or a default action setup.
+    Keep the requested subject recognizable. Draw fine, graceful contours and a few carefully
+    worn edges on its existing forms; add no robot or machine fragments.
   color_and_tone: >-
-    Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile
-    white, coral glow, and disciplined emissive accents; let White Machine Elegy, pale machine elegy
-    style grammar with worn enamel, dust silence, lonely synthetic grace, and white mechanical
-    fragments choose accent intensity, value contrast, emotional temperature, and power-system
-    separation while staying attached to prompt X.
+    Stay mostly in bone, soft white, silver, and pale blue-gray, reserving darker values for
+    essential contour and structure.
   lighting_and_shadow: >-
-    Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow,
-    and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from White Machine Elegy, pale machine elegy style grammar with worn
-    enamel, dust silence, lonely synthetic grace, and white mechanical fragments without replacing
-    prompt X with a stock anime frame.
+    Use soft, cool cel shadows and diffuse white highlights, with limited contrast and no
+    visible light source.
   texture_and_material: >-
-    Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust,
-    circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in White
-    Machine Elegy, pale machine elegy style grammar with worn enamel, dust silence, lonely synthetic
-    grace, and white mechanical fragments controlled, denoised, and coherent across bodies, objects,
-    environments, abstractions, and action.
+    Preserve material identity while suggesting enamel through smooth highlight bands, faint
+    dust grain, and small worn flecks.
   camera_and_composition: >-
-    Frame through scale compression, machinery diagonals, grid overlays without readable UI,
-    service-bay density, orbital symmetry, and high-speed hardware lanes; convert White Machine
-    Elegy, pale machine elegy style grammar with worn enamel, dust silence, lonely synthetic grace,
-    and white mechanical fragments into reusable perspective, timing, rhythm, scale, cut-in, and
-    negative-space rules instead of one fixed style sample layout.
+    Honor the given framing. Let spare negative space and quiet line spacing carry the
+    composition without shrinking the subject.
   atmosphere_and_mood: >-
-    Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine
-    grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic,
-    tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping
-    the anime-battle lineage readable.
+    Build elegiac calm through pale values, delicate marks, and stillness, without adding a
+    lonely landscape or character.
   rendering_and_quality: >-
-    Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic
-    3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object
-    structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no
-    fake readable text, no signature, no photoreal or 3D-render drift.
+    Keep outlines fine but stable, shadow edges soft, whites clean, and texture sparse enough to
+    retain clarity.
   key_features: >-
-    White Machine Elegy, pale machine elegy style grammar with worn enamel, dust silence, lonely
-    synthetic grace, and white mechanical fragments; armored contour, mechanical massing, modular
-    joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any
-    subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust,
-    circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid
-    overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware
-    lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D
-    render, and no cockpit/control-room dependency
+    Pale enamel-like highlights; dust-softened detail; fine contours; quiet white and blue-gray
+    palette.
   creative_brief: >-
-    Apply White Machine Elegy after prompt X as a transferable anime-battle/worlds layer: prompt X
-    supplies subject, action, setting, tone, and intensity, while this preset supplies White Machine
-    Elegy, pale machine elegy style grammar with worn enamel, dust silence, lonely synthetic grace,
-    and white mechanical fragments, mecha and cyberpunk anime grammar with engineered silhouettes,
-    hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish
-    discipline, and negative controls without forcing canon cast, title scene, screenshot, card
-    pose, default monster, default combat prop, or prompt-literal card.
+    Preserve the specified subject and composition. Apply pale tonal bands, delicate contours,
+    and faint worn texture; add no robot, landscape, or isolated character.
 avoidRules:
   - realistic
   - 3d render
@@ -87,7 +53,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - named franchise likeness
   - humanoid robot copy
@@ -104,7 +69,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -112,11 +76,10 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, named franchise likeness, humanoid robot copy, hangar
-    corridor, weapon, readable serial marks, cockpit UI, plastic 3d robot render, cockpit
-    source-frame look, readable UI panel, fixed canon character, title scene replication, required
-    source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo,
-    muddy noisy darks
+    artifacts, watermark, signature, named franchise likeness, humanoid robot copy, hangar corridor,
+    weapon, readable serial marks, cockpit UI, plastic 3d robot render, cockpit source-frame look,
+    readable UI panel, fixed canon character, title scene replication, required source-frame look,
+    cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

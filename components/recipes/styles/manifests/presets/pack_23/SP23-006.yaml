@@ -1,0 +1,91 @@
+schemaVersion: 1
+id: SP23-006
+packId: pack_23
+name: Scriptorium Page
+category: 1. Manuscript Visual Systems
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - manuscript-visual-systems
+  - editorial-page-profile
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Optional editorial page composition for material intentionally requested in a page format,
+    separate from any manuscript illustration technique.
+  subject_treatment: >-
+    Preserve each supplied subject, image, caption and annotation. Do not add figures or reinterpret
+    content to fit a historical manuscript motif.
+  color_and_tone: >-
+    Preserve the supplied palette and tonal relationships. Do not force parchment, gold, sepia or
+    another historical color treatment.
+  lighting_and_shadow: >-
+    Retain the requested lighting within each supplied image. The page layout does not add a room,
+    a light source or shadows from unrequested objects.
+  texture_and_material: >-
+    Preserve supplied material cues. Keep the page support neutral unless a paper material or surface
+    treatment is explicitly requested.
+  camera_and_composition: >-
+    When this profile is explicitly selected, organize the supplied content on one page with a
+    primary field and secondary zones only for provided annotations or miniatures. Scale the layout
+    to the actual content and preserve the requested wording and relationships.
+  atmosphere_and_mood: >-
+    Preserve the requested mood. Editorial hierarchy alone does not imply age, religion, solemnity
+    or a historical setting.
+  rendering_and_quality: >-
+    Keep supplied text exact and legible, with a clear hierarchy and spacing. Never create filler
+    writing, invented glyphs or decorative marks to occupy unused space.
+avoidRules:
+  - fabricated text or glyphs
+  - unrequested secondary illustrations or decorative framing
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-006.webp
+attributes:
+  negativePrompt: fabricated text or glyphs, unrequested secondary illustrations or decorative framing
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: representation_profile
+    defaultFields:
+      - aesthetic
+      - camera_and_composition
+      - rendering_and_quality
+    requires: structure
+    medium: representation
+    constraints:
+      - field: camera_and_composition
+        group: format
+        value: selected-single-page-layout
+    avoidRules:
+      - text: fabricated text or glyphs
+        field: rendering_and_quality
+      - text: unrequested secondary illustrations or decorative framing
+        field: camera_and_composition
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: MA-06
+    sourceTitle: Scriptorium Page
+    referenceIds:
+      - S07
+    evidenceStatus: textual-research-only
+  ui:
+    kind: representation_profile
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: manuscript-visual-systems
+  categoryName: 1. Manuscript Visual Systems
+  tags:
+    - curation-v2
+    - manuscript-visual-systems
+    - editorial-page-profile
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

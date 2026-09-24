@@ -1,0 +1,93 @@
+schemaVersion: 1
+id: SP15-096
+packId: pack_15
+name: Bodypunk
+category: 4. Bio, Myco & Body Punks
+version: 2
+supportedTasks: &id002
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags: &id001
+  - curation-v2
+  - identity-reviewed
+  - visual-evaluation-pending
+  - bio-myco-and-body-punks
+visualDna:
+  aesthetic:
+    'Bodypunk illustration treats the body as the meeting point of agency and designed technology:
+    fitted sensory wearables, tendon-like cable routes, second-skin panels and articulated external supports.
+    Make a purposeful interface between living form and constructed design, not a layer of nerve-pattern texture.'
+  subject_treatment:
+    Preserve requested identity, action and explicit anatomy or reference locks. Design unspecified
+    clothing, equipment or surfaces as fitted second skins, sensory bands, articulated supports and flexible
+    interfaces that follow movement. Keep new external components functionally connected; changing supplied
+    anatomy or adding invasive grafts requires that transformation to be requested. In a scene without a person,
+    express body contact through one fitted seam or tactile sensory surface integrated into an existing seat,
+    back or armrest; preserve familiar furniture and room context without requiring a new cable.
+  color_and_tone:
+    Use supplied skin, fabric or material colors with selective mineral red, electric blue, ivory
+    or amber sensory accents. Respect palette and localize signals.
+  lighting_and_shadow:
+    Follow specified light and sources. Use gentle soft-form transitions and crisp contour
+    shadows; do not impose clinical glare or dramatic glow.
+  texture_and_material:
+    Distinguish skin from flexible polymer, woven sensor bands, soft padding and articulated
+    hard supports. Place tactile fibers and translucent interfaces at purposeful contact points; do not coat
+    the whole body in the same synthetic membrane.
+  camera_and_composition:
+    Preserve view and subject placement. Let contour paths guide the eye without forcing
+    portrait, examination or close-up.
+  atmosphere_and_mood:
+    Suggest sensory awareness, vulnerability, strength or care through tactile contrast;
+    retain requested mood, including horror when specifically requested.
+  rendering_and_quality:
+    Use contour-following fibers, restrained translucent layers and clear separation between
+    marks and anatomy. Use medical detail only when called for.
+avoidRules:
+  - Do not impose a clinic, procedure, body modification or injury narrative.
+  - Respect anatomy locks; do not add unrequested grafts, exposed anatomy or gore.
+  - Avoid nerve wiring that obscures body structure.
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-096.webp
+attributes:
+  negativePrompt:
+    Do not impose a clinic, procedure, body modification or injury narrative., Respect anatomy
+    locks; do not add unrequested grafts, exposed anatomy or gore., Avoid nerve wiring that obscures body structure.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: Do not impose a clinic, procedure, body modification or injury narrative.
+        field: rendering_and_quality
+      - text: Respect anatomy locks; do not add unrequested grafts, exposed anatomy or gore.
+        field: rendering_and_quality
+      - text: Avoid nerve wiring that obscures body structure.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-027
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: bio-myco-and-body-punks
+  categoryName: 4. Bio, Myco & Body Punks
+  tags: *id001
+  supportedTasks: *id002
+  hasDefaultImage: true

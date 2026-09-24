@@ -1,5 +1,6 @@
 import { getStyleCategoryDisplayName } from './styles/collections/categoryDisplayNames';
 import { PagedStyleCatalog } from './PagedStyleCatalog';
+import { runtimeLogger } from '../../utils/runtimeLogger';
 import { AnimatePresence } from '../../lib/gsapMotion';
 import { useWorkspaceState } from '../../contexts/GlobalContext';
 import {
@@ -93,6 +94,7 @@ import {
   type StyleRuntimePack,
   type StyleRuntimePreset,
 } from './stylesData';
+import type { ArchivedStylePresetEntry } from './archivedStylePresets';
 import { resolveStyleRuntimePackLoadRequest } from './styleRuntimePackRequirements';
 import type { StyleCollection } from './styles/collections';
 import {
@@ -125,6 +127,10 @@ import type {
   StylePresetSourceProvenance,
   StylePresetVisualState,
 } from './StylePresetCardSurface';
+
+const TcgPendingCatalog = React.lazy(() =>
+  import('./styles/TcgPendingCatalog').then((module) => ({ default: module.TcgPendingCatalog })),
+);
 
 export interface StylesBrowserProps {
   config: ImageGenerationConfig;
@@ -381,18 +387,22 @@ function createStylePresetVisualState({
   presetPackId,
   presetPackName,
   images,
+  archived = false,
 }: {
   preset: StyleRuntimePreset;
   presetPackId: string;
   presetPackName: string;
   images: GeneratedImageWithConfig[];
+  archived?: boolean;
 }): StylePresetVisualState {
   const resultImages = images
     .filter((img) => hasStylePresetIdentity(img.config, preset.id))
     .sort((a, b) => b.createdAt - a.createdAt);
-  const defaultImageStale = isStyleDefaultImageStale(preset.id);
-  const defaultImage = resolveStyleDefaultImageThumbnail(preset.id);
-  const defaultImageVariants = resolveStyleDefaultImageVariantThumbnails(preset.id);
+  const defaultImageStale = archived ? false : isStyleDefaultImageStale(preset.id);
+  const defaultImage = archived
+    ? `/assets/recipes/styles/defaults/${preset.id}.webp`
+    : resolveStyleDefaultImageThumbnail(preset.id);
+  const defaultImageVariants = archived ? [] : resolveStyleDefaultImageVariantThumbnails(preset.id);
   const categoryImage = preset.category
     ? (getStyleThumbnail(styleCategoryImageKey(presetPackId, preset.category)) ??
       getStyleCategoryImage(styleCategoryImageKey(presetPackId, preset.category)))
@@ -888,6 +898,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
   intentionalStylesV1 = false,
 }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const [tcgCatalogView, setTcgCatalogView] = useState<'visual' | 'pending'>('visual');
   const referenceImages = config.attachments.slice(0, MAX_STYLE_REFERENCE_IMAGES);
   const referenceSlotsRemaining = Math.max(0, MAX_STYLE_REFERENCE_IMAGES - referenceImages.length);
   const grokGenerateBlock = resolveGrokImagineGenerateBlock({
@@ -1458,25 +1469,83 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
     return packIdByPresetId;
   }, [orderedLoadedStylePacks]);
 
+  const retiredFavoriteIds = useMemo(() => {
+    if (currentPackId !== FAVORITES_PACK_ID || normalizedStyleSearchQuery) return [];
+    return favorites.filter(
+      (presetId) => !presetPackIdById.has(presetId) && /^SP(?:14|15)-\d{3}$/.test(presetId),
+    );
+  }, [currentPackId, favorites, normalizedStyleSearchQuery, presetPackIdById]);
+  const [archivedFavoriteEntries, setArchivedFavoriteEntries] = useState<
+    ArchivedStylePresetEntry[]
+  >([]);
+
+  useEffect(() => {
+    let cancelled = false;
+    if (retiredFavoriteIds.length === 0) {
+      setArchivedFavoriteEntries([]);
+      return;
+    }
+
+    void import('./archivedStylePresets')
+      .then(({ loadArchivedStylePresetsByIds }) =>
+        loadArchivedStylePresetsByIds(retiredFavoriteIds),
+      )
+      .then((entries) => {
+        if (!cancelled) setArchivedFavoriteEntries(entries);
+      })
+      .catch((error: unknown) => {
+        if (cancelled) return;
+        runtimeLogger.error('Could not load archived style favorites.', error);
+        setArchivedFavoriteEntries([]);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [retiredFavoriteIds]);
+
+  const archivedFavoriteById = useMemo(
+    () => new Map(archivedFavoriteEntries.map((entry) => [entry.preset.id, entry])),
+    [archivedFavoriteEntries],
+  );
+  const unsearchedFavoritesRoute =
+    currentPackId === FAVORITES_PACK_ID && normalizedStyleSearchQuery.length === 0;
+  const archivedFavoritePresets = useMemo(() => {
+    if (!unsearchedFavoritesRoute) return [];
+    const favoriteIds = new Set(favorites);
+    return archivedFavoriteEntries
+      .filter((entry) => favoriteIds.has(entry.preset.id))
+      .map((entry) => entry.preset);
+  }, [archivedFavoriteEntries, favorites, unsearchedFavoritesRoute]);
+  const onlyArchivedFavoritesSelected =
+    unsearchedFavoritesRoute &&
+    favorites.length > 0 &&
+    favorites.every((presetId) => archivedFavoriteById.has(presetId));
+
   const favoritePresets = useMemo(() => {
     const presetById = new Map<string, StyleRuntimePreset>();
     for (const pack of orderedLoadedStylePacks) {
       for (const preset of pack.presets) presetById.set(preset.id, preset);
     }
     return favorites.flatMap((presetId) => {
-      const preset = presetById.get(presetId);
+      const preset =
+        presetById.get(presetId) ??
+        (currentPackId === FAVORITES_PACK_ID
+          ? archivedFavoriteById.get(presetId)?.preset
+          : undefined);
       return preset ? [preset] : [];
     });
-  }, [favorites, orderedLoadedStylePacks]);
+  }, [archivedFavoriteById, currentPackId, favorites, orderedLoadedStylePacks]);
 
   const getPackIdForPreset = React.useCallback(
     (preset: StyleRuntimePreset) => {
       return (
         presetPackIdById.get(preset.id) ??
+        archivedFavoriteById.get(preset.id)?.packId ??
         (currentPackId !== FAVORITES_PACK_ID ? currentPackId : activePack.id)
       );
     },
-    [activePack.id, currentPackId, presetPackIdById],
+    [activePack.id, archivedFavoriteById, currentPackId, presetPackIdById],
   );
 
   const getPackNameForId = useCallback(
@@ -1601,6 +1670,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
   const getPresetVisualState = useCallback(
     (preset: StyleRuntimePreset) => {
       const presetPackId = getPackIdForPreset(preset);
+      const archivedEntry = archivedFavoriteById.get(preset.id);
       const presetPack =
         presetPackId === USER_STYLE_PACK_ID
           ? userStylePack
@@ -1608,11 +1678,19 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
       return createStylePresetVisualState({
         preset,
         presetPackId,
-        presetPackName: presetPack.name,
+        presetPackName: archivedEntry ? `Archived · ${archivedEntry.packName}` : presetPack.name,
         images: resultImagesByPresetId.get(preset.id) ?? EMPTY_IMAGES,
+        archived: Boolean(archivedEntry),
       });
     },
-    [activePack, getPackIdForPreset, loadedStylePacksById, resultImagesByPresetId, userStylePack],
+    [
+      activePack,
+      archivedFavoriteById,
+      getPackIdForPreset,
+      loadedStylePacksById,
+      resultImagesByPresetId,
+      userStylePack,
+    ],
   );
 
   const eagerPresetVisualStateById = useMemo(() => {
@@ -1658,10 +1736,14 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
   }, [stylePreviewPreloadSources]);
 
   const handleSelectStyle = useCallback(
-    (preset: StyleRuntimePreset, presetPackIdOverride?: string) => {
+    (
+      preset: StyleRuntimePreset,
+      presetPackIdOverride?: string,
+      presetPackNameOverride?: string,
+    ) => {
       const packId = presetPackIdOverride ?? getPackIdForPreset(preset);
       setInteractionState((prev) => ({ ...prev, activePresetId: preset.id }));
-      toggleStyle(preset, packId, getPackNameForId(packId));
+      toggleStyle(preset, packId, presetPackNameOverride ?? getPackNameForId(packId));
     },
     [getPackIdForPreset, getPackNameForId, toggleStyle],
   );
@@ -1825,11 +1907,18 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
   const renderPresetCard = React.useCallback(
     (preset: StyleRuntimePreset) => {
       const presetPackId = getPackIdForPreset(preset);
+      const archivedEntry = archivedFavoriteById.get(preset.id);
+      const displayedPreset = archivedEntry
+        ? {
+            ...preset,
+            displayName: `Archived · ${getStyleRuntimePresetDisplayName(preset)}`,
+          }
+        : preset;
       const presetTheme = PACK_THEMES[presetPackId] || activeTheme;
       return (
         <StylePresetCard
           key={preset.id}
-          preset={preset}
+          preset={displayedPreset}
           packId={presetPackId}
           sourceProvenance={styleSourceByPresetId.get(preset.id)}
           visualState={eagerPresetVisualStateById.get(preset.id) ?? getPresetVisualState(preset)}
@@ -1841,9 +1930,9 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
           favorite={favorites.includes(preset.id)}
           theme={presetTheme}
           FadeImageComponent={StyleFadeImage}
-          onApply={(selectedPreset) => handleApplyStyleRef.current(selectedPreset, presetPackId)}
-          onCopy={handleCopyStylePrompt}
-          onUsePrompt={handleUseStylePrompt}
+          onApply={() => handleApplyStyleRef.current(preset, presetPackId, archivedEntry?.packName)}
+          onCopy={(event) => handleCopyStylePrompt(event, preset)}
+          onUsePrompt={() => handleUseStylePrompt(preset)}
           onToggleFavorite={toggleFavorite}
           onHoverPreviewChange={handleHoverPreviewChange}
         />
@@ -1856,6 +1945,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
       favorites,
       activeTheme,
       styleSourceByPresetId,
+      archivedFavoriteById,
       getPackIdForPreset,
       toggleFavorite,
       eagerPresetVisualStateById,
@@ -2421,23 +2511,47 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                       </div>
                     </div>
 
-                    {styleRuntimePackLoadRequest.loadAll ? (
-                      <PagedStyleCatalog
-                        query={searchQuery}
-                        sortOrder={sortOrder}
-                        favorites={favorites}
-                        favoritesOnly={showFavoritesOnly || currentPackId === FAVORITES_PACK_ID}
-                        extraIndex={userSearchIndex}
-                        loadedPacks={{
-                          ...loadedStylePacksById,
-                          [USER_STYLE_PACK_ID]: userStylePack,
-                        }}
-                        loadPacks={loadStyleRuntimePacks}
-                        renderCard={renderPresetCard}
-                        columns={gridColumns}
-                        onWidthChange={setStyleScrollWidth}
-                        grouped={activeStyleViewMode === 'grouped'}
-                      />
+                    {styleRuntimePackLoadRequest.loadAll && !onlyArchivedFavoritesSelected ? (
+                      <div className="flex min-h-0 min-w-0 flex-1 flex-col">
+                        {unsearchedFavoritesRoute && archivedFavoritePresets.length > 0 ? (
+                          <div
+                            ref={styleScrollRootRef}
+                            data-style-archived-favorites
+                            className="max-h-[38vh] min-h-0 shrink-0 overflow-y-auto px-4 pb-3"
+                          >
+                            <StylePresetGroupSection
+                              groupKey="archived-favorites"
+                              title="Archived favorites"
+                              presets={archivedFavoritePresets}
+                              gridColumns={gridColumns}
+                              scrollRootRef={styleScrollRootRef}
+                              scrollContainerWidth={styleScrollWidth}
+                              initiallyVisible
+                              headerClassName=""
+                              accentClassName="bg-amber-500"
+                              titleClassName="text-[color:var(--wb-muted)]"
+                              dividerClassName="bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]"
+                              renderPresetCard={renderPresetCard}
+                            />
+                          </div>
+                        ) : null}
+                        <PagedStyleCatalog
+                          query={searchQuery}
+                          sortOrder={sortOrder}
+                          favorites={favorites}
+                          favoritesOnly={showFavoritesOnly || currentPackId === FAVORITES_PACK_ID}
+                          extraIndex={userSearchIndex}
+                          loadedPacks={{
+                            ...loadedStylePacksById,
+                            [USER_STYLE_PACK_ID]: userStylePack,
+                          }}
+                          loadPacks={loadStyleRuntimePacks}
+                          renderCard={renderPresetCard}
+                          columns={gridColumns}
+                          onWidthChange={setStyleScrollWidth}
+                          grouped={activeStyleViewMode === 'grouped'}
+                        />
+                      </div>
                     ) : (
                       <div
                         className={`style-folder-layout grid min-h-0 min-w-0 flex-1 gap-4 px-4 py-3 sm:px-5 2xl:px-6 ${
@@ -2492,136 +2606,166 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                             }
                           >
                             <div className="w-full space-y-6 pb-20">
-                              {/* FAVORITES SECTION (If any exist in current filter and not in favorites tab) */}
-                              {processedData.favorites.length > 0 &&
-                                currentPackId !== FAVORITES_PACK_ID && (
-                                  <StylePresetGroupSection
-                                    key={`favorites:${gridColumns}:${styleScrollWidth}:${processedData.favorites.length}`}
-                                    groupKey="favorites"
-                                    title="Pinned / Favorites"
-                                    presets={processedData.favorites}
-                                    gridColumns={gridColumns}
-                                    scrollRootRef={styleScrollRootRef}
-                                    scrollContainerWidth={styleScrollWidth}
-                                    initiallyVisible
-                                    headerClassName="opacity-100"
-                                    accentClassName="bg-rose-500"
-                                    titleClassName="text-[color:var(--wb-danger)]"
-                                    dividerClassName="bg-linear-to-r from-rose-500/20 to-transparent"
-                                    renderPresetCard={renderPresetCard}
-                                  />
-                                )}
-
-                              {visibleStyleGroupEntries.map(([groupKey, presets], index) => {
-                                const isFlatStyleGroup =
-                                  activeStyleViewMode === 'flat' &&
-                                  groupKey === STYLE_BROWSER_FLAT_GROUP_KEY;
-                                const categoryIdentity = isFlatStyleGroup
-                                  ? null
-                                  : resolveStyleCategoryIdentity(currentPackId, groupKey);
-                                return (
-                                  <StylePresetGroupSection
-                                    key={`${groupKey}:${gridColumns}:${styleScrollWidth}:${presets.length}`}
-                                    groupKey={groupKey}
-                                    title={
-                                      isFlatStyleGroup
-                                        ? 'All Styles'
-                                        : presets[0]
-                                          ? `${groupKey.includes(' / ') ? `${getPackNameForId(getPackIdForPreset(presets[0]))} / ` : ''}${getStyleCategoryDisplayName(getPackIdForPreset(presets[0]), presets[0].category || 'General')}`
-                                          : groupKey
-                                    }
-                                    icon={
-                                      isFlatStyleGroup || !categoryIdentity ? (
-                                        <LayoutGrid size={12} />
-                                      ) : (
-                                        <StyleCategoryGlyph
-                                          iconId={categoryIdentity.iconId}
-                                          size={12}
-                                        />
-                                      )
-                                    }
-                                    presets={presets}
-                                    gridColumns={gridColumns}
-                                    scrollRootRef={styleScrollRootRef}
-                                    scrollContainerWidth={styleScrollWidth}
-                                    initiallyVisible={index < styleCategoryEagerBudget}
-                                    headerClassName=""
-                                    accentClassName={
-                                      categoryIdentity?.accentClassName ?? activeTheme.bg
-                                    }
-                                    titleClassName={
-                                      categoryIdentity?.titleClassName ??
-                                      'text-[color:var(--wb-ink)]'
-                                    }
-                                    dividerClassName="bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]"
-                                    renderPresetCard={renderPresetCard}
-                                  />
-                                );
-                              })}
-
-                              {filteredStylePresets.length === 0 && (
-                                <div className="h-64 flex flex-col items-center justify-center text-[color:var(--wb-dim)] gap-4">
-                                  {currentPackId !== USER_STYLE_PACK_ID && styleRuntimeError ? (
-                                    <>
-                                      <Filter size={32} className="opacity-20" />
-                                      <span className="text-xs font-bold tracking-normal">
-                                        Could not load this style pack
-                                      </span>
-                                      <button
-                                        type="button"
-                                        onClick={retryStylePacks}
-                                        className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
-                                      >
-                                        <Wand2 size={13} />
-                                        Retry
-                                      </button>
-                                    </>
-                                  ) : currentPackId === USER_STYLE_PACK_ID && userStyleError ? (
-                                    <>
-                                      <Filter size={32} className="opacity-20" />
-                                      <span className="text-xs font-bold tracking-normal">
-                                        Could not load styles
-                                      </span>
-                                      <button
-                                        type="button"
-                                        onClick={() => void refreshUserStyles()}
-                                        className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
-                                      >
-                                        <Wand2 size={13} />
-                                        Retry
-                                      </button>
-                                    </>
-                                  ) : currentPackId === USER_STYLE_PACK_ID &&
-                                    !isLoadingUserStyles &&
-                                    normalizedStyleSearchQuery.length === 0 ? (
-                                    <>
-                                      <Sparkles
-                                        size={32}
-                                        className="opacity-30 text-[color:var(--wb-info)] "
-                                      />
-                                      <span className="text-xs font-bold tracking-normal text-[color:var(--wb-muted)]">
-                                        No custom styles yet
-                                      </span>
-                                      <button
-                                        type="button"
-                                        onClick={handleCreateUserStyle}
-                                        className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-sky-400/2 bg-sky-500/10 px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-info)]  transition-colors hover:bg-sky-500/16"
-                                      >
-                                        <Plus size={13} />
-                                        Create Style
-                                      </button>
-                                    </>
-                                  ) : (
-                                    <>
-                                      <Filter size={32} className="opacity-20" />
-                                      <span className="text-xs font-bold tracking-normal">
-                                        {isLoadingUserStyles || isLoadingStylePacks
-                                          ? 'Loading styles'
-                                          : 'No styles found matching criteria'}
-                                      </span>
-                                    </>
-                                  )}
+                              {currentPackId === 'pack_22' ? (
+                                <div
+                                  className="flex w-fit flex-wrap gap-1 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-1"
+                                  role="group"
+                                  aria-label="Trading card atlas sections"
+                                >
+                                  <button
+                                    type="button"
+                                    onClick={() => setTcgCatalogView('visual')}
+                                    aria-pressed={tcgCatalogView === 'visual'}
+                                    className="rounded-[var(--wb-radius)] px-3 py-1.5 text-xs font-semibold text-[color:var(--wb-ink)] transition-colors aria-pressed:bg-[color-mix(in_srgb,var(--wb-ink)_12%,transparent)]"
+                                  >
+                                    Visual styles
+                                  </button>
+                                  <button
+                                    type="button"
+                                    onClick={() => setTcgCatalogView('pending')}
+                                    aria-pressed={tcgCatalogView === 'pending'}
+                                    className="rounded-[var(--wb-radius)] px-3 py-1.5 text-xs font-semibold text-[color:var(--wb-ink)] transition-colors aria-pressed:bg-[color-mix(in_srgb,var(--wb-ink)_12%,transparent)]"
+                                  >
+                                    Pending components · 42
+                                  </button>
                                 </div>
+                              ) : null}
+                              {currentPackId === 'pack_22' && tcgCatalogView === 'pending' ? (
+                                <TcgPendingCatalog query={searchQuery} />
+                              ) : (
+                                <>
+                                  {/* FAVORITES SECTION (If any exist in current filter and not in favorites tab) */}
+                                  {processedData.favorites.length > 0 &&
+                                    currentPackId !== FAVORITES_PACK_ID && (
+                                      <StylePresetGroupSection
+                                        key={`favorites:${gridColumns}:${styleScrollWidth}:${processedData.favorites.length}`}
+                                        groupKey="favorites"
+                                        title="Pinned / Favorites"
+                                        presets={processedData.favorites}
+                                        gridColumns={gridColumns}
+                                        scrollRootRef={styleScrollRootRef}
+                                        scrollContainerWidth={styleScrollWidth}
+                                        initiallyVisible
+                                        headerClassName="opacity-100"
+                                        accentClassName="bg-rose-500"
+                                        titleClassName="text-[color:var(--wb-danger)]"
+                                        dividerClassName="bg-linear-to-r from-rose-500/20 to-transparent"
+                                        renderPresetCard={renderPresetCard}
+                                      />
+                                    )}
+
+                                  {visibleStyleGroupEntries.map(([groupKey, presets], index) => {
+                                    const isFlatStyleGroup =
+                                      activeStyleViewMode === 'flat' &&
+                                      groupKey === STYLE_BROWSER_FLAT_GROUP_KEY;
+                                    const categoryIdentity = isFlatStyleGroup
+                                      ? null
+                                      : resolveStyleCategoryIdentity(currentPackId, groupKey);
+                                    return (
+                                      <StylePresetGroupSection
+                                        key={`${groupKey}:${gridColumns}:${styleScrollWidth}:${presets.length}`}
+                                        groupKey={groupKey}
+                                        title={
+                                          isFlatStyleGroup
+                                            ? 'All Styles'
+                                            : presets[0]
+                                              ? `${groupKey.includes(' / ') ? `${getPackNameForId(getPackIdForPreset(presets[0]))} / ` : ''}${getStyleCategoryDisplayName(getPackIdForPreset(presets[0]), presets[0].category || 'General')}`
+                                              : groupKey
+                                        }
+                                        icon={
+                                          isFlatStyleGroup || !categoryIdentity ? (
+                                            <LayoutGrid size={12} />
+                                          ) : (
+                                            <StyleCategoryGlyph
+                                              iconId={categoryIdentity.iconId}
+                                              size={12}
+                                            />
+                                          )
+                                        }
+                                        presets={presets}
+                                        gridColumns={gridColumns}
+                                        scrollRootRef={styleScrollRootRef}
+                                        scrollContainerWidth={styleScrollWidth}
+                                        initiallyVisible={index < styleCategoryEagerBudget}
+                                        headerClassName=""
+                                        accentClassName={
+                                          categoryIdentity?.accentClassName ?? activeTheme.bg
+                                        }
+                                        titleClassName={
+                                          categoryIdentity?.titleClassName ??
+                                          'text-[color:var(--wb-ink)]'
+                                        }
+                                        dividerClassName="bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]"
+                                        renderPresetCard={renderPresetCard}
+                                      />
+                                    );
+                                  })}
+
+                                  {filteredStylePresets.length === 0 && (
+                                    <div className="h-64 flex flex-col items-center justify-center text-[color:var(--wb-dim)] gap-4">
+                                      {currentPackId !== USER_STYLE_PACK_ID && styleRuntimeError ? (
+                                        <>
+                                          <Filter size={32} className="opacity-20" />
+                                          <span className="text-xs font-bold tracking-normal">
+                                            Could not load this style pack
+                                          </span>
+                                          <button
+                                            type="button"
+                                            onClick={retryStylePacks}
+                                            className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+                                          >
+                                            <Wand2 size={13} />
+                                            Retry
+                                          </button>
+                                        </>
+                                      ) : currentPackId === USER_STYLE_PACK_ID && userStyleError ? (
+                                        <>
+                                          <Filter size={32} className="opacity-20" />
+                                          <span className="text-xs font-bold tracking-normal">
+                                            Could not load styles
+                                          </span>
+                                          <button
+                                            type="button"
+                                            onClick={() => void refreshUserStyles()}
+                                            className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+                                          >
+                                            <Wand2 size={13} />
+                                            Retry
+                                          </button>
+                                        </>
+                                      ) : currentPackId === USER_STYLE_PACK_ID &&
+                                        !isLoadingUserStyles &&
+                                        normalizedStyleSearchQuery.length === 0 ? (
+                                        <>
+                                          <Sparkles
+                                            size={32}
+                                            className="opacity-30 text-[color:var(--wb-info)] "
+                                          />
+                                          <span className="text-xs font-bold tracking-normal text-[color:var(--wb-muted)]">
+                                            No custom styles yet
+                                          </span>
+                                          <button
+                                            type="button"
+                                            onClick={handleCreateUserStyle}
+                                            className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-sky-400/2 bg-sky-500/10 px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-info)]  transition-colors hover:bg-sky-500/16"
+                                          >
+                                            <Plus size={13} />
+                                            Create Style
+                                          </button>
+                                        </>
+                                      ) : (
+                                        <>
+                                          <Filter size={32} className="opacity-20" />
+                                          <span className="text-xs font-bold tracking-normal">
+                                            {isLoadingUserStyles || isLoadingStylePacks
+                                              ? 'Loading styles'
+                                              : 'No styles found matching criteria'}
+                                          </span>
+                                        </>
+                                      )}
+                                    </div>
+                                  )}
+                                </>
                               )}
                             </div>
                           </React.Suspense>

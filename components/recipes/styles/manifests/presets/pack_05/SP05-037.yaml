@@ -16,75 +16,48 @@ tags:
   - modern-shonen-and-action
 visualDna:
   aesthetic: >-
-    Impact Frame Comedy Hero acts as a transferable anime-battle/worlds router: Impact Frame Comedy
-    lead-form, impact-frame comedy anime style grammar with deadpan gag protagonist, absurdly calm
-    posture, blank reaction geometry, dust-cloud rings, shattered graphic debris, and satirical
-    overpowered energy. Keep crisp cel comedy timing and simple readable shapes; combine it with
-    modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive
-    line economy, and high-readability spectacle; named titles, studios, or lineage words may guide
-    style, but they must not require canon cast, title-scene replication, screenshots, logos, or one
-    fixed card concept.
+    Build the graphic anime treatment from sparse crisp outlines that gain weight on emphasis
+    beats and simple forms staged against open fields, radial outlines, and graphic fragments. Let
+    long restraint followed by a brief, disproportionate punctuation set its rhythm; use mostly
+    black and white with muted color and one bright warm accent for color and smooth cel fills and
+    clean untouched negative space for finish.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Impact
-    Frame Comedy lead-form, impact-frame comedy anime style grammar with deadpan gag protagonist,
-    absurdly calm posture, blank reaction geometry, dust-cloud rings as portable contour, motion
-    grammar, surface language, and emotional pressure without requiring canon elements or a default
-    action setup.
+    Preserve the requested content and framing. Use sparse crisp outlines that gain weight on
+    emphasis beats for edge work, simple forms staged against open fields, radial outlines, and
+    graphic fragments for form simplification, and long restraint followed by a brief,
+    disproportionate punctuation only where movement is already requested.
   color_and_tone: >-
-    Map color through saturated action accents, clean dark-light value separation, aura color,
-    bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts;
-    let Impact Frame Comedy lead-form, impact-frame comedy anime style grammar with deadpan gag
-    protagonist, absurdly calm posture, blank reaction geometry, dust-cloud rings choose accent
-    intensity, value contrast, emotional temperature, and power-system separation while staying
-    attached to prompt X.
+    Build value groups with mostly black and white with muted color and one bright warm accent.
+    Place the strongest contrast on the requested focal area and preserve explicit color
+    instructions.
   lighting_and_shadow: >-
-    Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights,
-    and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Impact Frame Comedy lead-form, impact-frame comedy anime style
-    grammar with deadpan gag protagonist, absurdly calm posture, blank reaction geometry, dust-cloud
-    rings without replacing prompt X with a stock anime frame.
+    Treat lighting graphically: clean silhouette separation with exaggerated light-dark contrast.
+    Keep shadows grouped and respect any light direction already requested.
   texture_and_material: >-
-    Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted
-    debris, and controlled effect overlays; keep the tactile or effect cues in Impact Frame Comedy
-    lead-form, impact-frame comedy anime style grammar with deadpan gag protagonist, absurdly calm
-    posture, blank reaction geometry, dust-cloud rings controlled, denoised, and coherent across
-    bodies, objects, environments, abstractions, and action.
+    Render existing surfaces with smooth cel fills and clean untouched negative space, preserving
+    depicted materials and adding no props or effects.
   camera_and_composition: >-
-    Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels,
-    compressed depth, and readable near-to-far force paths; convert Impact Frame Comedy lead-form,
-    impact-frame comedy anime style grammar with deadpan gag protagonist, absurdly calm posture,
-    blank reaction geometry, dust-cloud rings into reusable perspective, timing, rhythm, scale,
-    cut-in, and negative-space rules instead of one fixed style sample layout.
+    Within the requested camera and crop, use a simple focal stage with broad empty areas and
+    oversized graphic punctuation to organize existing forms; preserve location and action.
   atmosphere_and_mood: >-
-    Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and
-    heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet,
-    grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle
-    lineage readable.
+    Let line weight, spacing, and value convey dry deadpan humor and gentle absurdity, while
+    preserving the prompt's emotional intent.
   rendering_and_quality: >-
-    Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp
-    silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or
-    object structure, readable effects, controlled grain, heavy denoise for noisy darks, no
-    watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+    Finish with simple legible shapes, precise timing, and minimal background detail; keep detail
+    selective and accents attached to existing forms.
   key_features: >-
-    Impact Frame Comedy lead-form, impact-frame comedy anime style grammar with deadpan gag
-    protagonist, absurdly calm posture, blank reaction geometry, dust-cloud rings; dynamic contour,
-    force-transfer anatomy, readable power effects, sharp costume or surface simplification, and
-    emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat
-    highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact
-    crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths;
-    clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no
-    manga-panel text, and no cheap AI anime smear
+    sparse crisp outlines that gain weight on emphasis beats; simple forms staged against open
+    fields, radial outlines, and graphic fragments; mostly black and white with muted color and
+    one bright warm accent; long restraint followed by a brief, disproportionate punctuation;
+    smooth cel fills and clean untouched negative space; a simple focal stage with broad empty
+    areas and oversized graphic punctuation.
   creative_brief: >-
-    Apply Impact Frame Comedy Hero after prompt X as a transferable anime-battle/worlds layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
-    Impact Frame Comedy lead-form, impact-frame comedy anime style grammar with deadpan gag
-    protagonist, absurdly calm posture, blank reaction geometry, dust-cloud rings, shattered graphic
-    debris, and satirical overpowered energy. Keep crisp cel comedy timing and simple readable
-    shapes, modern action anime grammar with power-system clarity, impact frames, elastic motion,
-    expressive line economy, and high-readability spectacle, finish discipline, and negative
-    controls without forcing canon cast, title scene, screenshot, card pose, default monster,
-    default combat prop, or prompt-literal card.
+    Keep the requested subject, action, location, and crop. Render them with sparse crisp outlines
+    that gain weight on emphasis beats, simple forms staged against open fields, radial outlines,
+    and graphic fragments, and mostly black and white with muted color and one bright warm accent;
+    use long restraint followed by a brief, disproportionate punctuation only where movement is
+    already present, and apply smooth cel fills and clean untouched negative space as the drawing
+    finish.
 avoidRules:
   - realistic
   - 3d render
@@ -96,7 +69,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - bald caped hero likeness
   - yellow suit
@@ -116,7 +88,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -124,11 +95,11 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, bald caped hero likeness, yellow suit, red gloves, punch
+    artifacts, watermark, signature, bald caped hero likeness, yellow suit, red gloves, punch
     contact, gore, destroyed city panorama, franchise face, dense forest, noisy rubble storm,
     photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon
     character, title scene replication, required source-frame look, cosplay, generic anime filter,
-    prompt-required card, readable text, logo, muddy noisy darks
+    prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

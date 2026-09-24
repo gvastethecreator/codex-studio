@@ -1,0 +1,103 @@
+schemaVersion: 1
+id: SP23-054
+packId: pack_23
+name: Directional Hatch Raster
+category: 12. Hybrid Visual Studies
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - hybrid-visual-studies
+  - directional-hatch-raster
+  - portable-visual-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Model volume with directional hatching, then quantize each stroke into a consistent raster
+    rhythm. Preserve clean open areas and keep the direction of every cluster tied to form.
+  subject_treatment: >-
+    Preserve requested identity, function, count, pose, action and proportions. Let hatch direction
+    follow existing forms without reshaping them or adding detail.
+  color_and_tone: >-
+    Retain the requested palette and value relationships. Keep light areas clear and use existing
+    colors or values for rasterized strokes without imposing a monochrome palette.
+  lighting_and_shadow: >-
+    Follow the requested lighting. Vary hatch direction and density to describe existing volume and
+    shadows without creating a new light source or contrast pattern.
+  texture_and_material: >-
+    Keep raster edges coherent while preserving the material distinctions already shown. Avoid
+    artificial print wear, coarse resolution or undirected pixel noise.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, scale and spatial relationships. Rasterizing strokes
+    does not change perspective or the requested arrangement.
+  atmosphere_and_mood: >-
+    Preserve the requested setting and mood. Directional hatching and quantization affect mark-making
+    only; they do not add a period or narrative.
+  rendering_and_quality: >-
+    Keep stroke direction visible at the final viewing size, with clean gaps and deliberate clusters.
+    Avoid random dithering, uniform hatch bands and detail loss from coarse pixels.
+avoidRules:
+  - undirected raster noise or random dithering
+  - unrequested print aging, coarse resolution or palette restriction
+  - unrequested lettering or added graphic elements
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-054.webp
+attributes:
+  negativePrompt: >-
+    undirected raster noise or random dithering, unrequested print aging, coarse resolution or
+    palette restriction, unrequested lettering or added graphic elements
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: directional-hatching-with-raster-quantization
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: form-following-hatches-with-consistent-raster-rhythm
+    avoidRules:
+      - text: undirected raster noise or random dithering
+        field: rendering_and_quality
+      - text: unrequested print aging, coarse resolution or palette restriction
+        field: texture_and_material
+      - text: unrequested lettering or added graphic elements
+        field: global
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: HY-02
+    sourceTitle: Burin Pixels
+    historicalScope: Propuesta original contemporánea
+    referenceIds:
+      - S09
+      - S31
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: hybrid-visual-studies
+  categoryName: 12. Hybrid Visual Studies
+  tags:
+    - curation-v2
+    - hybrid-visual-studies
+    - directional-hatch-raster
+    - portable-visual-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

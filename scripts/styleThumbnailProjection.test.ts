@@ -21,9 +21,11 @@ describe('style thumbnail projection helpers', () => {
 
     expect(presetIdFromThumbnailAssetKey('SP05-001-01')).toBe('SP05-001');
     expect(presetIdFromThumbnailAssetKey('SP05-001-grok')).toBe('SP05-001');
+    expect(presetIdFromThumbnailAssetKey('SP05-001-previous')).toBe('SP05-001');
     expect(resolveThumbnailAssetPackId('SP05-001', packIdByPresetId)).toBe('pack_16');
     expect(resolveThumbnailAssetPackId('SP05-001-01', packIdByPresetId)).toBe('pack_16');
     expect(resolveThumbnailAssetPackId('SP05-001-grok', packIdByPresetId)).toBe('pack_16');
+    expect(resolveThumbnailAssetPackId('SP05-001-previous', packIdByPresetId)).toBe('pack_16');
     expect(resolveThumbnailAssetPackId('SP05-034', packIdByPresetId)).toBe('pack_05');
     expect(resolveThumbnailAssetPackId('SP13-026', packIdByPresetId)).toBe('pack_16');
     expect(resolveThumbnailAssetPackId('pack_16__70s_and_80s_retro_anime', packIdByPresetId)).toBe(

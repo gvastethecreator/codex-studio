@@ -16,65 +16,33 @@ tags:
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: >-
-    The Ancient Magus' Bride - Thorn Cottage Enchantment acts as a transferable anime-battle/worlds
-    router: The Ancient Magus' Bride - Thorn Cottage Enchantment; combine it with isekai and
-    high-fantasy anime grammar with magic-system readability, quest-world texture, luminous
-    adventure, and character-independent fantasy routing; named titles, studios, or lineage words
-    may guide style, but they must not require canon cast, title-scene replication, screenshots,
-    logos, or one fixed card concept.
+    Luminous botanical cel language with intricate branching contours, lilac highlights, and
+    deep-to-soft value transitions.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply The
-    Ancient Magus' Bride - Thorn Cottage Enchantment as portable contour, motion grammar, surface
-    language, and emotional pressure without requiring canon elements or a default action setup.
+    Keep the requested subject and action; fine branching strokes may echo existing contours but
+    must not add plants.
   color_and_tone: >-
-    Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens,
-    parchment neutrals, magical violets, and controlled pastel or dark contrast; let The Ancient
-    Magus' Bride - Thorn Cottage Enchantment choose accent intensity, value contrast, emotional
-    temperature, and power-system separation while staying attached to prompt X.
+    Cool lilac and muted greens sit against warm cream and deep brown; adapt them to specified
+    colors.
   lighting_and_shadow: >-
-    Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and
-    clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from The Ancient Magus' Bride - Thorn Cottage Enchantment without
-    replacing prompt X with a stock anime frame.
+    Small warm highlights emerge from cool shadow, keeping the light soft and the focal edges clear.
   texture_and_material: >-
-    Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel
-    glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in The
-    Ancient Magus' Bride - Thorn Cottage Enchantment controlled, denoised, and coherent across
-    bodies, objects, environments, abstractions, and action.
+    Fine line detail, delicate grain, and soft painted color build richness without changing
+    depicted materials.
   camera_and_composition: >-
-    Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed
-    cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook
-    scale; convert The Ancient Magus' Bride - Thorn Cottage Enchantment into reusable perspective,
-    timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample
-    layout.
+    Respect the requested framing; use layered depth and edge contrast without adding a cottage or
+    garden.
   atmosphere_and_mood: >-
-    Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional
-    craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic,
-    comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while
-    keeping the anime-battle lineage readable.
+    Romantic and quietly uncanny, while the requested content determines the actual mood.
   rendering_and_quality: >-
-    Finish with clean fantasy-anime finish with stable anatomy and creature/object structure,
-    controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize
-    stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy
-    darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+    Contrast detailed contours with softly painted distance; maintain precise focal form and
+    restrained glow.
   key_features: >-
-    The Ancient Magus' Bride - Thorn Cottage Enchantment; clear fantasy silhouettes, spell-effect
-    hierarchy, surface simplification, creature or object readability, and portal-like
-    transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food
-    steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals,
-    transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic
-    magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with
-    stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic
-    text, and no generic isekai gloss
+    Branching line rhythms, lilac glints, deep framing values, and gentle painted depth carry the
+    signature.
   creative_brief: >-
-    Apply The Ancient Magus' Bride - Thorn Cottage Enchantment after prompt X as a transferable
-    anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity,
-    while this preset supplies The Ancient Magus' Bride - Thorn Cottage Enchantment, isekai and
-    high-fantasy anime grammar with magic-system readability, quest-world texture, luminous
-    adventure, and character-independent fantasy routing, finish discipline, and negative controls
-    without forcing canon cast, title scene, screenshot, card pose, default monster, default combat
-    prop, or prompt-literal card.
+    Apply the detailed, luminous cel treatment to the requested subject and setting without adding a
+    cottage, spell, or botanical object.
 avoidRules:
   - realistic
   - 3d render
@@ -86,7 +54,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - RPG UI
   - readable magic text
@@ -97,7 +64,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -105,9 +71,9 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, RPG UI, readable magic text, generic isekai wallpaper,
-    fixed canon character, title scene replication, required source-frame look, cosplay, generic
-    anime filter, prompt-required card, readable text, logo, muddy noisy darks
+    artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed
+    canon character, title scene replication, required source-frame look, cosplay, generic anime
+    filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

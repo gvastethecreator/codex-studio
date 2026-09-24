@@ -1,14 +1,15 @@
-# Category review — 118 legacy categories
+# Category review — 148 categories
 
-Source: `d70601886e64ef13859b367e6cc5a85983c9ca6f`. Generated from the category decision register and current source evidence.
+Generated from `scripts/style-curation/category-reviews.json` and current source manifests.
 
-**Scope:** source/text review with representative evidence for every original category, not 1,677 live image evaluations. Actions are proposals unless listed as implemented in README.md. No original preset is deleted, re-IDed, silently merged or rewritten by this table.
+**Scope:** source/text decisions covering 1,711 presets, including legacy categories, authored studies and the imported atlases. Each entry separates editorial state from cross-subject image validation. Representative evidence describes the source; generated cards alone do not certify transfer across subjects. Implementation details are recorded in README.md.
 
 Types: style = visual language; modifier = scoped treatment; profile = deliberate output/camera format; theme = content/design/world direction; mixed = individual presets need separation.
 
 ## pack_01 / 1. Portrait And Studio
 
 **Display:** Portrait & studio · **Scope:** mixed · **Presets:** 18
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Portrait treatment is mixed with passport, mugshot and school-photo output rules.
 **Retain:** Facial value separation and restrained retouching.
@@ -21,6 +22,7 @@ Evidence [SP01-010](../../../components/recipes/styles/manifests/presets/pack_01
 ## pack_01 / 2. Lighting Techniques
 
 **Display:** Light studies · **Scope:** modifier · **Presets:** 15
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Golden-hour and neon labels combine light, time and implied surroundings.
 **Retain:** Direction, softness, falloff and color relationships.
@@ -33,6 +35,7 @@ Evidence [SP01-038](../../../components/recipes/styles/manifests/presets/pack_01
 ## pack_01 / 3. Film And Analog Process
 
 **Display:** Film response · **Scope:** modifier · **Presets:** 13
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Film-stock anchors and process artifacts are coupled to sample-camera presentation.
 **Retain:** Grain scale, contrast curve and highlight behavior.
@@ -45,6 +48,7 @@ Evidence [SP01-017](../../../components/recipes/styles/manifests/presets/pack_01
 ## pack_01 / 4. Documentary And Street
 
 **Display:** Documentary & camera · **Scope:** mixed · **Presets:** 9
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** GoPro and drone viewpoints share a category with events and documentary subjects.
 **Retain:** Observational framing and camera-specific geometry.
@@ -57,6 +61,7 @@ Evidence [SP01-060](../../../components/recipes/styles/manifests/presets/pack_01
 ## pack_01 / 5. Commercial And Product
 
 **Display:** Commercial imaging · **Scope:** mixed · **Presets:** 14
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Product, architecture, flat lay and food combine domains with incompatible framing rules.
 **Retain:** Material clarity and controlled commercial lighting.
@@ -69,6 +74,7 @@ Evidence [SP01-071](../../../components/recipes/styles/manifests/presets/pack_01
 ## pack_01 / 6. Nature And Wildlife
 
 **Display:** Nature imaging · **Scope:** mixed · **Presets:** 6
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Landscape, wildlife and macro can substitute expected subjects for the requested content.
 **Retain:** Depth handling, fine-detail scale and tonal separation.
@@ -81,6 +87,7 @@ Evidence [SP01-054](../../../components/recipes/styles/manifests/presets/pack_01
 ## pack_01 / 7. Technical And Specialist Imaging
 
 **Display:** Technical capture · **Scope:** mixed · **Presets:** 12
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Sensor simulation, camera installation and specialist output are grouped together.
 **Retain:** Distinct sensor transfer curves and acquisition artifacts.
@@ -93,6 +100,7 @@ Evidence [SP01-059](../../../components/recipes/styles/manifests/presets/pack_01
 ## pack_02 / 1. Film Genres
 
 **Display:** Cinema languages · **Scope:** mixed · **Presets:** 16
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Genre names also carry wardrobe, sets and expected story situations.
 **Retain:** Contrast design, shot rhythm and photographic finish.
@@ -105,6 +113,7 @@ Evidence [SP02-009](../../../components/recipes/styles/manifests/presets/pack_02
 ## pack_02 / 2. TV And Broadcast
 
 **Display:** Broadcast formats · **Scope:** profile · **Presets:** 23
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Broadcast layouts and TV looks can impose hosts, captions, weather or sports subjects.
 **Retain:** Signal cadence, set-light grammar and broadcast framing.
@@ -117,6 +126,7 @@ Evidence [SP02-028](../../../components/recipes/styles/manifests/presets/pack_02
 ## pack_02 / 3. Animation Styles
 
 **Display:** Animation craft · **Scope:** style · **Presets:** 15
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Studio references combine recognizable character design with medium-specific rendering.
 **Retain:** Line economy, cel boundaries, painted backgrounds and stop-motion cues.
@@ -128,19 +138,22 @@ Evidence [SP02-038](../../../components/recipes/styles/manifests/presets/pack_02
 
 ## pack_02 / 4. Photography Eras
 
-**Display:** Historic photo processes · **Scope:** modifier · **Presets:** 12
+**Display:** Historic photo processes · **Scope:** modifier · **Presets:** 13
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Historical process labels can add period clothing, aging props and card framing.
 **Retain:** Emulsion response, tonal range and process-specific surfaces.
-**Proposed action:** Separate image chemistry from era/world styling and photographic mount format.
+**Proposed action:** SP02-129 derives a silver-plate tonal modifier from SP02-046 without era staging; compare images before considering promotion or overlap.
 **Image acceptance check:** A modern appliance remains modern under a historical photo process.
 
 Evidence [SP02-046](../../../components/recipes/styles/manifests/presets/pack_02/SP02-046.yaml) — Daguerreotype (1840s): `Structure the image through Long-exposure drift, breath ghost, mirrored plate depth; compose through period camera distance, portrait stillness, casual snapshot crop, square instant frame, pinhole drift, or documentary era framing without requiring period cost`…
 Evidence [SP02-052](../../../components/recipes/styles/manifests/presets/pack_02/SP02-052.yaml) — Lomography: `Structure the image through Vignette blur, edge falloff, tunnel softness; compose through period camera distance, portrait stillness, casual snapshot crop, square instant frame, pinhole drift, or documentary era framing without requiring period costumes, with `…
+Evidence [SP02-129](../../../components/recipes/styles/manifests/presets/pack_02/SP02-129.yaml) — Silver Plate Tonality: `Preserve the requested camera, lens perspective, framing, crop, subject scale and spatial arrangement. Do not add a vignette, double exposure, decorative mount or border.`
 
 ## pack_02 / 5. Lighting And Atmosphere
 
 **Display:** Cinematic lighting · **Scope:** modifier · **Presets:** 20
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Many light names overlap photo lighting while atmospheric wording adds environmental cues.
 **Retain:** Cinematic contrast ratios and motivated light direction.
@@ -153,18 +166,20 @@ Evidence [SP02-071](../../../components/recipes/styles/manifests/presets/pack_02
 ## pack_02 / 6. Caricature And Cartoon Styles
 
 **Display:** Cartoon & caricature · **Scope:** mixed · **Presets:** 33
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
-**Problem:** Caricature languages include named setting/cast cues and tonal stereotypes.
+**Problem:** The former cartoon DNA bundled drawing mechanics with named cast, setting and gag cues; the active fields have been separated from those cues.
 **Retain:** Shape exaggeration, line character and comedic visual timing.
-**Proposed action:** Extract drawing behavior; retain social or narrative themes as optional context, not mandatory scenes.
+**Proposed action:** Keep the distinct drawing behavior and let the request supply social context, cast and narrative; visually recheck the refreshed cards after targeted replacements.
 **Image acceptance check:** A household object can use caricature without becoming a named character or topical scene.
 
-Evidence [SP02-081](../../../components/recipes/styles/manifests/presets/pack_02/SP02-081.yaml) — Grotesque Exaggeration Cartoon: `Structure the image through Inflated proportions, mismatched feature scales, bulging forms, impossible curve stress; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure wi`…
-Evidence [SP02-103](../../../components/recipes/styles/manifests/presets/pack_02/SP02-103.yaml) — Aaahh!!! Real Monsters - Sewer Kid Grotesque: `Structure the image through Mismatched extensions, stacked feature logic, torso-like blobs, lumpy asymmetry; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without co`…
+Evidence [SP02-081](../../../components/recipes/styles/manifests/presets/pack_02/SP02-081.yaml) — Grotesque Exaggeration Cartoon: `Use inflated scale and mismatched contours for hierarchy; crop tightly only when the requested content benefits from it, and preserve enough space to read the original form.`
+Evidence [SP02-103](../../../components/recipes/styles/manifests/presets/pack_02/SP02-103.yaml) — Aaahh!!! Real Monsters - Sewer Kid Grotesque: `Stack irregular shapes and off-center details against clear space; grime is a contour or surface treatment, not a location.`
 
 ## pack_02 / 7. Sensor And Technical Imaging
 
 **Display:** Sensor looks · **Scope:** profile · **Presets:** 3
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Three sensor looks overlap specialist imaging and CGI technical shaders.
 **Retain:** X-ray, thermal and low-light signal differences.
@@ -177,6 +192,7 @@ Evidence [SP02-059](../../../components/recipes/styles/manifests/presets/pack_02
 ## pack_02 / 8. Hand-Drawn And DIY Media
 
 **Display:** DIY drawing surfaces · **Scope:** mixed · **Presets:** 6
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Whiteboard, cave and skateboard imply different supports and output objects.
 **Retain:** Tool marks, surface resistance and limited-color drawing.
@@ -189,6 +205,7 @@ Evidence [SP02-096](../../../components/recipes/styles/manifests/presets/pack_02
 ## pack_03 / 1. Render Engines
 
 **Display:** CGI rendering · **Scope:** style · **Presets:** 10
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Renderer names are being used as style identity without isolating observable differences.
 **Retain:** Sampling finish, specular handling, bounce-light and edge behavior.
@@ -201,6 +218,7 @@ Evidence [SP03-006](../../../components/recipes/styles/manifests/presets/pack_03
 ## pack_03 / 2. Materials
 
 **Display:** CGI material response · **Scope:** modifier · **Presets:** 13
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Glass, liquid and subsurface effects mix physical material changes with rendering behavior.
 **Retain:** Refraction, scattering, roughness and specular response.
@@ -213,6 +231,7 @@ Evidence [SP03-018](../../../components/recipes/styles/manifests/presets/pack_03
 ## pack_03 / 3. Lighting And Atmosphere
 
 **Display:** CGI light · **Scope:** modifier · **Presets:** 8
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Atmospheric and environment-map terms may add fog or a new environment unintentionally.
 **Retain:** Global illumination, shadow softness and light-volume behavior.
@@ -225,6 +244,7 @@ Evidence [SP03-037](../../../components/recipes/styles/manifests/presets/pack_03
 ## pack_03 / 4. 3D Styles
 
 **Display:** Stylized 3D · **Scope:** mixed · **Presets:** 20
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Clay, voxel and low-poly media sit beside isometric camera and cutaway profiles.
 **Retain:** Mesh simplification and stylized surface construction.
@@ -237,6 +257,7 @@ Evidence [SP03-040](../../../components/recipes/styles/manifests/presets/pack_03
 ## pack_03 / 5. Hard Surface And Product CGI
 
 **Display:** Hard-surface production · **Scope:** mixed · **Presets:** 11
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Game assets, product shots and architecture impose different delivery formats.
 **Retain:** Edge treatment, contact shadows and manufactured construction.
@@ -249,6 +270,7 @@ Evidence [SP03-053](../../../components/recipes/styles/manifests/presets/pack_03
 ## pack_03 / 6. Organic Character And Bio CGI
 
 **Display:** Organic CGI · **Scope:** mixed · **Presets:** 7
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** T-pose, medical illustration, food and collectible-avatar formats constrain subject identity.
 **Retain:** Organic shading, soft volumes and anatomical readability.
@@ -261,6 +283,7 @@ Evidence [SP03-057](../../../components/recipes/styles/manifests/presets/pack_03
 ## pack_03 / 7. Environment And Worldbuilding
 
 **Display:** Environment directions · **Scope:** theme · **Presets:** 9
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** City, forest, VR and scientific entries prescribe worlds rather than only render appearance.
 **Retain:** Depth organization and environment-specific material logic.
@@ -273,6 +296,7 @@ Evidence [SP03-060](../../../components/recipes/styles/manifests/presets/pack_03
 ## pack_03 / 8. Sensor And Technical Shaders
 
 **Display:** Technical shaders · **Scope:** profile · **Presets:** 2
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Sensor-like shaders overlap photography but use different simulated geometry.
 **Retain:** Shader transfer functions and hidden-surface representation.
@@ -285,6 +309,7 @@ Evidence [SP03-044](../../../components/recipes/styles/manifests/presets/pack_03
 ## pack_04 / 1. Comic Book Styles
 
 **Display:** Comics · **Scope:** style · **Presets:** 14
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Comic language sometimes imports page structure, heroes or franchise-era content.
 **Retain:** Inking, shadow mass, halftone and contour hierarchy.
@@ -297,6 +322,7 @@ Evidence [SP04-008](../../../components/recipes/styles/manifests/presets/pack_04
 ## pack_04 / 2. Children's Illustration
 
 **Display:** Storybook illustration · **Scope:** mixed · **Presets:** 14
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Child-oriented rendering mixes body-proportion changes with watercolor and cut-paper media.
 **Retain:** Accessible silhouettes, shape simplification and medium handling.
@@ -309,6 +335,7 @@ Evidence [SP04-024](../../../components/recipes/styles/manifests/presets/pack_04
 ## pack_04 / 3. Editorial And Poster
 
 **Display:** Editorial & posters · **Scope:** mixed · **Presets:** 17
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Print techniques and named design traditions share mandatory poster/layout conventions.
 **Retain:** Graphic hierarchy, ink layers and surface reproduction.
@@ -321,6 +348,7 @@ Evidence [SP04-038](../../../components/recipes/styles/manifests/presets/pack_04
 ## pack_04 / 4. Concept Art
 
 **Display:** Concept development · **Scope:** mixed · **Presets:** 29
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Speedpainting shares a category with sheets, iterations, environments and product concepts.
 **Retain:** Economical value studies and readable design exploration.
@@ -333,6 +361,7 @@ Evidence [SP04-082](../../../components/recipes/styles/manifests/presets/pack_04
 ## pack_04 / 5. Ink And Print
 
 **Display:** Ink & print · **Scope:** style · **Presets:** 20
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Related print techniques recur elsewhere and share broad quality boilerplate.
 **Retain:** Differences in cut, bite, pressure, hatching and negative space.
@@ -345,6 +374,7 @@ Evidence [SP04-070](../../../components/recipes/styles/manifests/presets/pack_04
 ## pack_04 / 6. Technical And Reference Sheets
 
 **Display:** Reference layouts · **Scope:** profile · **Presets:** 6
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Blueprints, HUDs and anatomy sheets require structural conventions, not generic free composition.
 **Retain:** Views, callout hierarchy and diagram readability.
@@ -357,66 +387,72 @@ Evidence [SP04-094](../../../components/recipes/styles/manifests/presets/pack_04
 ## pack_05 / 1. Modern Shonen & Action
 
 **Display:** Action drawing · **Scope:** mixed · **Presets:** 40
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
-**Problem:** School, assassin and battle wording keeps steering a large set toward action scenes.
+**Problem:** The former DNA steered many styles toward school, assassin and battle scenes; the active fields now describe transferable drawing mechanics.
 **Retain:** Contour energy, value blocks and motion emphasis.
-**Proposed action:** Separate action direction from transferable drawing; compare per-preset differences hidden by common prose.
+**Proposed action:** Keep each preset's distinct contour, value, palette and motion grammar, and visually recheck all cards after rerendering with the revised DNA.
 **Image acceptance check:** An ordinary quiet activity keeps its action and location under the drawing style.
 
-Evidence [SP05-021](../../../components/recipes/styles/manifests/presets/pack_05/SP05-021.yaml) — Kinetic Ninja Shonen: `Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Headband Ninja Journey, youth-adventure anime style grammar: one energetic but non-famous subject design si`…
-Evidence [SP05-125](../../../components/recipes/styles/manifests/presets/pack_05/SP05-125.yaml) — Civic Monster Response Unit: `Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Kaiju No. 8 - Civic Monster Response Unit, civic colossal-response action style grammar with municipal haza`…
+Evidence [SP05-021](../../../components/recipes/styles/manifests/presets/pack_05/SP05-021.yaml) — Kinetic Ninja Shonen: `Within the requested camera and crop, use open diagonal flow with rising arcs and unblocked negative space to organize existing forms; preserve location and action.`
+Evidence [SP05-125](../../../components/recipes/styles/manifests/presets/pack_05/SP05-125.yaml) — Civic Monster Response Unit: `Within the requested camera and crop, use abstract grid intervals that clarify scale among existing forms without prescribing a location to organize existing forms; preserve location and action.`
 
 ## pack_05 / 2. Mecha & Cyberpunk
 
 **Display:** Mechanical anime · **Scope:** mixed · **Presets:** 30
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
-**Problem:** Mecha/cyber settings and character types are intertwined with linework and cel rendering.
+**Problem:** The former DNA mixed robots, hangars and battles with mechanical linework; the active fields now describe transferable rendering instead.
 **Retain:** Mechanical line precision, hard shadows and color separation.
-**Proposed action:** Extract line/render systems; keep mecha and urban-tech concepts as thematic directions.
+**Proposed action:** Retain each preset's distinct line, highlight, shadow and palette mechanics, and visually recheck the refreshed cards after the category is rerendered.
 **Image acceptance check:** A requested plant remains a plant rather than becoming a robot or hangar scene.
 
-Evidence [SP05-051](../../../components/recipes/styles/manifests/presets/pack_05/SP05-051.yaml) — Neon Kinetic Alloy Sprint: `Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Neon Kinetic Alloy Sprint, neon kinetic alloy sprint style grammar with reflective prosthetic`…
-Evidence [SP05-226](../../../components/recipes/styles/manifests/presets/pack_05/SP05-226.yaml) — Cyber-Goth Mausoleum Dread: `Frame through scale compression, machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; convert Cyber-Goth Mausoleum Dread into reusable perspective, timing, rhythm, scale, cut-in, and nega`…
+Evidence [SP05-051](../../../components/recipes/styles/manifests/presets/pack_05/SP05-051.yaml) — Neon Kinetic Alloy Sprint: `Honor the requested view and crop. Use diagonal strokes, tapered repeats, and varied line lengths to imply speed inside the existing composition.`
+Evidence [SP05-226](../../../components/recipes/styles/manifests/presets/pack_05/SP05-226.yaml) — Cyber-Goth Mausoleum Dread: `Honor the requested view. Use tall, pointed line rhythms and large shadow shapes within the existing crop, without building a hall.`
 
 ## pack_05 / 3. Isekai & High Fantasy
 
 **Display:** Fantasy anime · **Scope:** mixed · **Presets:** 30
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
-**Problem:** Named journeys, cooking and fantasy worlds introduce subjects through aliases and DNA.
+**Problem:** The former DNA steered named journeys, cooking and fantasy worlds toward fixed scenes; the active fields now describe transferable painted and cel mechanics.
 **Retain:** Painted atmosphere, cel softness and material stylization.
-**Proposed action:** Remove journey/food/world nouns from portable derivatives; retain them in optional world direction.
+**Proposed action:** Retain distinct light, palette, texture and contour treatment; rerender all cards against neutral briefs and review the results for literal scenes.
 **Image acceptance check:** A neutral household task must not become a fantasy quest or cooking vignette.
 
-Evidence [SP05-091](../../../components/recipes/styles/manifests/presets/pack_05/SP05-091.yaml) — Sword Art Online – Glowing VR Adventure: `Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Sword Art Online – Glowing VR Adventure, glowing virtual-fant`…
-Evidence [SP05-246](../../../components/recipes/styles/manifests/presets/pack_05/SP05-246.yaml) — Labyrinth Jewel Caravan: `Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Magi - Labyrinth Jewel Caravan, amber-turquoise arabesque adv`…
+Evidence [SP05-091](../../../components/recipes/styles/manifests/presets/pack_05/SP05-091.yaml) — Sword Art Online – Glowing VR Adventure: `Retain the requested framing; suggest depth through clear overlapping planes, open spacing, and calm perspective.`
+Evidence [SP05-246](../../../components/recipes/styles/manifests/presets/pack_05/SP05-246.yaml) — Labyrinth Jewel Caravan: `Preserve the requested composition; use curved transitions and flowing spacing without adding a route or landscape.`
 
 ## pack_05 / 4. Dark Fantasy & Seinen
 
 **Display:** Dark anime · **Scope:** mixed · **Presets:** 30
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Dark narrative descriptors, violence and world identity share repeated visual templates.
 **Retain:** Value compression, sharpness hierarchy and controlled unease.
 **Proposed action:** Split mood from story; author distinct rendering mechanics rather than another no-fixed-scene disclaimer.
 **Image acceptance check:** A gentle prompt remains gentle in content while its visual treatment changes.
 
-Evidence [SP05-061](../../../components/recipes/styles/manifests/presets/pack_05/SP05-061.yaml) — Crosshatched Doom Weight: `Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Crosshatched Doom Weight Style, crosshatched doom-weight style grammar with scar-dense ink hatching, ec`…
-Evidence [SP05-266](../../../components/recipes/styles/manifests/presets/pack_05/SP05-266.yaml) — Black Particle Fugitive: `Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Black Particle Fugitive Style into reusable perspective, timing, rhythm, scale, cut-in, and negative-sp`…
+Evidence [SP05-061](../../../components/recipes/styles/manifests/presets/pack_05/SP05-061.yaml) — Crosshatched Doom Weight: `Preserve the requested framing, perspective, subject placement, and count; keep the original framing, using existing empty areas as counterweight without enlarging architecture or subjects. Use the mark rhythm inside the supplied composition rather than replac`…
+Evidence [SP05-266](../../../components/recipes/styles/manifests/presets/pack_05/SP05-266.yaml) — Black Particle Fugitive: `Preserve the requested framing, perspective, subject placement, and count; preserve pose, crop, and direction; place any particulate rhythm along the motion already present in the prompt. Use the mark rhythm inside the supplied composition rather than replacin`…
 
 ## pack_05 / 5. Action Motion Setpieces
 
 **Display:** Action staging · **Scope:** profile · **Presets:** 5
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
-**Problem:** These entries intentionally prescribe motion and staging, so making them universal would erase their purpose.
+**Problem:** These entries intentionally guide motion and staging; the former shared router forced danger, opponents and stock action scenes.
 **Retain:** Directional energy and clear action hierarchy.
-**Proposed action:** Retain as action/composition profiles; offer drawing-only derivatives rather than suppressing all staging.
-**Image acceptance check:** Use a requested action and verify that staging improves it without inventing unrelated opponents.
+**Proposed action:** Retain five distinct action/composition profiles, conditioning camera and motion changes on the requested action while preserving subject, count, props and tone.
+**Image acceptance check:** Use a requested action and verify that its staging improves without inventing opponents, sports gear, extra props or danger.
 
-Evidence [SP13-021](../../../components/recipes/styles/manifests/presets/pack_05/SP13-021.yaml) — Action Burst Alley Rush: `Frame through forced perspective, vertigo angles, vector discharge, monumental impact scale, upward momentum, and compressed depth lanes; convert Action Burst Alley Rush, Action Burst Alley Rush acts as a transferable anime-battle/worlds router: Action Burst A`…
-Evidence [SP13-023](../../../components/recipes/styles/manifests/presets/pack_05/SP13-023.yaml) — Neon Vector Discharge: `Frame through forced perspective, vertigo angles, vector discharge, monumental impact scale, upward momentum, and compressed depth lanes; convert Neon Vector Discharge Style, Neon Vector Discharge Style acts as a transferable anime-battle/worlds router: Neon V`…
+Evidence [SP13-021](../../../components/recipes/styles/manifests/presets/pack_05/SP13-021.yaml) — Action Burst Alley Rush: `When the requested camera leaves room for interpretation, use close foreshortening, compressed depth, and converging diagonals to carry the requested movement forward. Preserve an explicitly requested viewpoint and do not impose an alley or other setting.`
+Evidence [SP13-023](../../../components/recipes/styles/manifests/presets/pack_05/SP13-023.yaml) — Neon Vector Discharge: `When the requested camera leaves room for interpretation, use a controlled oblique view, clean plane separation, and directional paths that trace the requested action. Preserve the stated viewpoint and do not impose a setting or technical equipment.`
 
 ## pack_06 / 1. Traditional Painting
 
 **Display:** Painting · **Scope:** style · **Presets:** 15
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Different pigments are expanded with interchangeable quality language.
 **Retain:** Brush load, edge transitions, opacity and layering.
@@ -429,6 +465,7 @@ Evidence [SP06-008](../../../components/recipes/styles/manifests/presets/pack_06
 ## pack_06 / 2. Drawing & Sketching
 
 **Display:** Drawing · **Scope:** style · **Presets:** 15
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Tool names can be diluted by shared sketch/quality prose.
 **Retain:** Pressure, line continuity, erasure, smudge and paper response.
@@ -441,6 +478,7 @@ Evidence [SP06-023](../../../components/recipes/styles/manifests/presets/pack_06
 ## pack_06 / 3. Printmaking
 
 **Display:** Printmaking · **Scope:** style · **Presets:** 15
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Print families recur in packs_04,10,11,17 with overlapping naming.
 **Retain:** Ink transfer, plate marks, registration and substrate behavior.
@@ -453,6 +491,7 @@ Evidence [SP06-038](../../../components/recipes/styles/manifests/presets/pack_06
 ## pack_06 / 4. Digital Art
 
 **Display:** Digital media · **Scope:** mixed · **Presets:** 15
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Digital painting and vector looks are mixed with concept outputs and low-poly construction.
 **Retain:** Edge economy, fill logic and digital mark handling.
@@ -465,6 +504,7 @@ Evidence [SP06-053](../../../components/recipes/styles/manifests/presets/pack_06
 ## pack_06 / 5. Mixed Media
 
 **Display:** Mixed media · **Scope:** mixed · **Presets:** 20
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Embroidery, assemblage and photo overlays mix surface treatment with object construction.
 **Retain:** Layer order, adhesion, stitch and substrate interaction.
@@ -477,6 +517,7 @@ Evidence [SP06-071](../../../components/recipes/styles/manifests/presets/pack_06
 ## pack_06 / 6. Retro Game Visual Systems
 
 **Display:** Pixel constraints · **Scope:** mixed · **Presets:** 20
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Hardware references mix palette/cluster limits with camera effects such as Mode 7.
 **Retain:** Pixel clusters, palette allocation, dithering and deliberate resolution.
@@ -489,6 +530,7 @@ Evidence [SP06-091](../../../components/recipes/styles/manifests/presets/pack_06
 ## pack_06 / 7. Game Art Directions & UI
 
 **Display:** Game art & interfaces · **Scope:** mixed · **Presets:** 20
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Game rendering, tile representation, parallax and HUD design compete in one group.
 **Retain:** Readability at game scale and coherent interface/asset construction.
@@ -501,6 +543,7 @@ Evidence [SP06-111](../../../components/recipes/styles/manifests/presets/pack_06
 ## pack_07 / 1. Interior Design Systems
 
 **Display:** Interior systems · **Scope:** theme · **Presets:** 16
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Interior directions specify furnishing and construction, not a universally portable image style.
 **Retain:** Spatial material palettes and furniture/construction vocabulary.
@@ -513,6 +556,7 @@ Evidence [SP07-013](../../../components/recipes/styles/manifests/presets/pack_07
 ## pack_07 / 2. Architectural Movements And Vernaculars
 
 **Display:** Architectural systems · **Scope:** theme · **Presets:** 13
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Architectural identities imply structural changes that conflict with strict reference preservation.
 **Retain:** Massing, facade rhythm and construction logic.
@@ -525,6 +569,7 @@ Evidence [SP07-024](../../../components/recipes/styles/manifests/presets/pack_07
 ## pack_07 / 3. Civic Infrastructure And Specialty Spaces
 
 **Display:** Specialty spaces · **Scope:** theme · **Presets:** 9
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Transit, conservatory and library concepts force a place through euphemistic names.
 **Retain:** Patina, circulation and domain-specific spatial organization.
@@ -537,6 +582,7 @@ Evidence [SP07-036](../../../components/recipes/styles/manifests/presets/pack_07
 ## pack_07 / 4. Landscape And Garden Systems
 
 **Display:** Garden systems · **Scope:** theme · **Presets:** 10
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Garden styles prescribe site organization and plant groupings.
 **Retain:** Ground-plane rhythm, planting density and path hierarchy.
@@ -549,6 +595,7 @@ Evidence [SP07-046](../../../components/recipes/styles/manifests/presets/pack_07
 ## pack_07 / 5. Fantasy And Mythic Architecture
 
 **Display:** Imagined architecture · **Scope:** theme · **Presets:** 13
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Fantasy architectural names still encode forge, sanctuary or fortress subjects.
 **Retain:** Scale relationships, silhouettes and construction motifs.
@@ -561,6 +608,7 @@ Evidence [SP07-057](../../../components/recipes/styles/manifests/presets/pack_07
 ## pack_07 / 6. Toy Craft And Miniature Architecture
 
 **Display:** Miniature construction · **Scope:** mixed · **Presets:** 10
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Miniature media are tied to architecture and toy systems.
 **Retain:** Seams, paper thickness, scale cues and handmade construction.
@@ -573,6 +621,7 @@ Evidence [SP07-070](../../../components/recipes/styles/manifests/presets/pack_07
 ## pack_07 / 7. Megastructure And Impossible Space
 
 **Display:** Impossible space · **Scope:** profile · **Presets:** 9
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Pod, orbital and cloud worlds are mixed with genuine spatial paradoxes.
 **Retain:** Repetition, circulation and deliberate geometric discontinuity.
@@ -585,6 +634,7 @@ Evidence [SP07-076](../../../components/recipes/styles/manifests/presets/pack_07
 ## pack_08 / 1. Contemporary Fashion
 
 **Display:** Contemporary clothing · **Scope:** theme · **Presets:** 9
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Fashion silhouettes are presented alongside general image styles.
 **Retain:** Cut, proportion, garment construction and fabric behavior.
@@ -597,6 +647,7 @@ Evidence [SP08-016](../../../components/recipes/styles/manifests/presets/pack_08
 ## pack_08 / 2. Subcultures
 
 **Display:** Subcultural clothing · **Scope:** theme · **Presets:** 15
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Subcultural names bundle attire, lifestyle props and scenery.
 **Retain:** Garment layering, utility and material combinations.
@@ -609,6 +660,7 @@ Evidence [SP08-023](../../../components/recipes/styles/manifests/presets/pack_08
 ## pack_08 / 3. Historical & Fantasy
 
 **Display:** Historical clothing · **Scope:** theme · **Presets:** 11
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Historical costume entries can replace both the outfit and the surrounding era.
 **Retain:** Garment structure and recognizable construction references.
@@ -621,18 +673,20 @@ Evidence [SP08-034](../../../components/recipes/styles/manifests/presets/pack_08
 ## pack_08 / 4. Fantasy Sci-Fi Costume
 
 **Display:** Speculative costume · **Scope:** theme · **Presets:** 19
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Space, fantasy and craft clothing directions can dictate character roles.
 **Retain:** Fastening, silhouette, protective layers and constructed detail.
-**Proposed action:** Apply design/wardrobe permission; avoid adding a mission, species or fixed profession.
+**Proposed action:** Transfer distinct garment construction and material behavior while preserving the requested wearer, role and setting; rerender the category to check identity retention.
 **Image acceptance check:** A new outfit preserves identity, pose and requested role.
 
-Evidence [SP08-006](../../../components/recipes/styles/manifests/presets/pack_08/SP08-006.yaml) — Technical Modular Outerwear: `Compose with Optional hooded volume or layered collar geometry plus character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits, objects, creatures,`…
-Evidence [SP08-045](../../../components/recipes/styles/manifests/presets/pack_08/SP08-045.yaml) — Superhero Spandex: `Compose with character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit `…
+Evidence [SP08-006](../../../components/recipes/styles/manifests/presets/pack_08/SP08-006.yaml) — Technical Modular Outerwear: `Keep the requested crop, viewpoint and pose. Clarify the modular panel rhythm and layer depth inside that framing; do not require a full-body view.`
+Evidence [SP08-045](../../../components/recipes/styles/manifests/presets/pack_08/SP08-045.yaml) — Superhero Spandex: `Preserve requested framing, perspective, pose and gesture. Let the suit's panel rhythm read in that view; do not force a full-body poster or frontal stance.`
 
 ## pack_08 / 5. Fabric & Texture Focus
 
 **Display:** Fabric studies · **Scope:** mixed · **Presets:** 26
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Fabric modifiers share a group with full-body material transformations such as stone.
 **Retain:** Weave, drape, gloss and surface response.
@@ -645,6 +699,7 @@ Evidence [SP08-064](../../../components/recipes/styles/manifests/presets/pack_08
 ## pack_09 / 1. Natural Materials
 
 **Display:** Natural surfaces · **Scope:** modifier · **Presets:** 23
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Material properties retain literal samples and habitat cues in rendering text.
 **Retain:** Grain, pores, scale, reflectance and surface irregularity.
@@ -657,6 +712,7 @@ Evidence [SP09-012](../../../components/recipes/styles/manifests/presets/pack_09
 ## pack_09 / 2. Man-Made Materials
 
 **Display:** Manufactured surfaces · **Scope:** modifier · **Presets:** 24
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Wall, tire and panel nouns mix source objects with finish behavior.
 **Retain:** Manufacturing marks, seams, roughness and directional finish.
@@ -669,6 +725,7 @@ Evidence [SP09-042](../../../components/recipes/styles/manifests/presets/pack_09
 ## pack_09 / 3. Weathering And Decay
 
 **Display:** Wear & weathering · **Scope:** modifier · **Presets:** 13
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Weathering templates bundle corrosion, collapse and abandonment beyond surface finish.
 **Retain:** Local wear, deposition, staining and age gradients.
@@ -681,6 +738,7 @@ Evidence [SP09-036](../../../components/recipes/styles/manifests/presets/pack_09
 ## pack_09 / 4. Tactile Surfaces
 
 **Display:** Tactile response · **Scope:** modifier · **Presets:** 8
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Textiles, frost and chalk share compress/fuzz/smear boilerplate despite different mechanics.
 **Retain:** Fibers, dry particle response and frost behavior.
@@ -693,6 +751,7 @@ Evidence [SP09-050](../../../components/recipes/styles/manifests/presets/pack_09
 ## pack_09 / 5. Elemental And FX
 
 **Display:** Elemental effects · **Scope:** modifier · **Presets:** 12
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Emission, fluid, particles and confetti can add an entire event or environment.
 **Retain:** Boundary behavior, motion direction and local light contribution.
@@ -705,6 +764,7 @@ Evidence [SP09-057](../../../components/recipes/styles/manifests/presets/pack_09
 ## pack_10 / 1. Geometric Abstraction
 
 **Display:** Geometric abstraction · **Scope:** style · **Presets:** 10
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Distinct visual systems share a generic flatten/tessellate/rotate template.
 **Retain:** Plane relationships, repetition and hierarchy of geometric units.
@@ -717,6 +777,7 @@ Evidence [SP10-006](../../../components/recipes/styles/manifests/presets/pack_10
 ## pack_10 / 2. Fluid & Organic
 
 **Display:** Fluid abstraction · **Scope:** mixed · **Presets:** 10
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Alcohol ink, smoke and liquid imagery mix surface media with literal fluid subjects.
 **Retain:** Flow boundaries, pooling, diffusion and layering.
@@ -729,6 +790,7 @@ Evidence [SP10-016](../../../components/recipes/styles/manifests/presets/pack_10
 ## pack_10 / 3. Digital Glitch & Noise
 
 **Display:** Digital artifacts · **Scope:** modifier · **Presets:** 10
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Glitch, CRT, ASCII and halftone use different representation units but share noise language.
 **Retain:** Block displacement, scan structure, glyph density and dot placement.
@@ -741,6 +803,7 @@ Evidence [SP10-026](../../../components/recipes/styles/manifests/presets/pack_10
 ## pack_10 / 4. Surrealism & Dream
 
 **Display:** Surreal systems · **Scope:** mixed · **Presets:** 15
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Dream moods, world genres and perspective distortions are pooled together.
 **Retain:** Unexpected formal relationships and controlled ambiguity.
@@ -753,6 +816,7 @@ Evidence [SP10-038](../../../components/recipes/styles/manifests/presets/pack_10
 ## pack_10 / 5. Textile & Ornamental Patterns
 
 **Display:** Pattern systems · **Scope:** modifier · **Presets:** 13
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Textile motifs mix surface tiling with garment and embroidery construction.
 **Retain:** Repeat, motif scale, orientation and border behavior.
@@ -765,6 +829,7 @@ Evidence [SP10-053](../../../components/recipes/styles/manifests/presets/pack_10
 ## pack_10 / 6. Material Surface Textures
 
 **Display:** Surface transformations · **Scope:** modifier · **Presets:** 11
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Wood, carbon, rust and other surfaces overlap the material catalogue.
 **Retain:** Coherent material response and macro-to-micro scale.
@@ -777,6 +842,7 @@ Evidence [SP10-060](../../../components/recipes/styles/manifests/presets/pack_10
 ## pack_10 / 7. Diagram And Data Systems
 
 **Display:** Diagram languages · **Scope:** profile · **Presets:** 5
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Blueprint, QR and circuit looks imply valid technical or machine-readable information.
 **Retain:** Line hierarchy, routing and modular information structure.
@@ -789,6 +855,7 @@ Evidence [SP10-069](../../../components/recipes/styles/manifests/presets/pack_10
 ## pack_10 / 8. Point, Mosaic And Glass Systems
 
 **Display:** Unit-based illustration · **Scope:** style · **Presets:** 3
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Pointillism, mosaic and stained glass share a template despite different units and joins.
 **Retain:** Dot mixing, tesserae boundaries and leaded-cell structure.
@@ -801,6 +868,7 @@ Evidence [SP10-073](../../../components/recipes/styles/manifests/presets/pack_10
 ## pack_10 / 9. Print And Light Finishes
 
 **Display:** Print & light finish · **Scope:** mixed · **Presets:** 3
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Neon tubes, foil and letterpress combine emissive and physical print effects.
 **Retain:** Glow confinement, metallic transfer and shallow impression.
@@ -813,6 +881,7 @@ Evidence [SP10-079](../../../components/recipes/styles/manifests/presets/pack_10
 ## pack_11 / 1. Toys And Crafts
 
 **Display:** Craft & miniatures · **Scope:** mixed · **Presets:** 18
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Toy brands, construction media and collectible proportions are bundled.
 **Retain:** Joints, seams, material scale and handmade irregularity.
@@ -825,6 +894,7 @@ Evidence [SP11-021](../../../components/recipes/styles/manifests/presets/pack_11
 ## pack_11 / 2. Artistic Mediums
 
 **Display:** Specialist illustration · **Scope:** mixed · **Presets:** 7
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Chalkboard, tattoo, stained glass and broadcast craft are grouped as a miscellaneous remainder.
 **Retain:** Support-specific marks and image hierarchy.
@@ -837,6 +907,7 @@ Evidence [SP11-019](../../../components/recipes/styles/manifests/presets/pack_11
 ## pack_11 / 3. Aesthetics
 
 **Display:** Digital aesthetics · **Scope:** mixed · **Presets:** 17
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Emoji, pixel constraints and world aesthetics have incompatible scopes.
 **Retain:** Palette, clustering and coherent digital finish.
@@ -849,6 +920,7 @@ Evidence [SP11-037](../../../components/recipes/styles/manifests/presets/pack_11
 ## pack_11 / 4. Food And Drink
 
 **Display:** Food imagery · **Scope:** mixed · **Presets:** 11
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Platter, candy world and commercial lighting mix subject recipes and portable treatments.
 **Retain:** Food-light response and editorial surface detail.
@@ -861,6 +933,7 @@ Evidence [SP11-050](../../../components/recipes/styles/manifests/presets/pack_11
 ## pack_11 / 5. Micro Macro
 
 **Display:** Scale & microscopy · **Scope:** profile · **Presets:** 24
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Scale, sensor style and literal specimen content are conflated.
 **Retain:** Depth cues, detail scale and sensor-specific appearance.
@@ -873,6 +946,7 @@ Evidence [SP11-069](../../../components/recipes/styles/manifests/presets/pack_11
 ## pack_11 / 6. Sensor And Technical Imaging
 
 **Display:** Technical imaging · **Scope:** profile · **Presets:** 2
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Two technical entries overlap both sensor capture and CGI shader groups.
 **Retain:** Different sensor-style representations.
@@ -885,6 +959,7 @@ Evidence [SP11-035](../../../components/recipes/styles/manifests/presets/pack_11
 ## pack_11 / 7. Diagram And Technical Drawing
 
 **Display:** Blueprint drawing · **Scope:** profile · **Presets:** 1
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** A single blueprint entry duplicates navigation, not necessarily identical behavior.
 **Retain:** Blueprint linework and output conventions.
@@ -897,6 +972,7 @@ Evidence [SP11-033](../../../components/recipes/styles/manifests/presets/pack_11
 ## pack_12 / 1. Neon Urban & Night Ops
 
 **Display:** Urban game capture · **Scope:** profile · **Presets:** 10
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Named game captures require routes, enemies, rooms and HUD cues, despite transferable wording.
 **Retain:** Game-scale pixel/render readability and camera conventions.
@@ -909,6 +985,7 @@ Evidence [SP12-048](../../../components/recipes/styles/manifests/presets/pack_12
 ## pack_12 / 2. Arcane Temples & Mythic Realms
 
 **Display:** Mythic game capture · **Scope:** profile · **Presets:** 10
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Library, pilgrimage and temple setpieces remain embedded in the visual fields.
 **Retain:** Capture finish, depth organization and playable silhouettes.
@@ -921,6 +998,7 @@ Evidence [SP12-044](../../../components/recipes/styles/manifests/presets/pack_12
 ## pack_12 / 3. Sci-Fi Frontiers & Mech Zones
 
 **Display:** Sci-fi game capture · **Scope:** profile · **Presets:** 10
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Carrier, freight and defense scenarios substitute missions for style.
 **Retain:** Hard-surface material hierarchy and strategy/action camera logic.
@@ -933,6 +1011,7 @@ Evidence [SP12-033](../../../components/recipes/styles/manifests/presets/pack_12
 ## pack_12 / 4. Sieges, Warfronts & Last Stands
 
 **Display:** Tactical game capture · **Scope:** profile · **Presets:** 10
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Battle formations and siege narratives are built into category templates.
 **Retain:** Unit scale, terrain readability and tactical framing.
@@ -945,6 +1024,7 @@ Evidence [SP12-052](../../../components/recipes/styles/manifests/presets/pack_12
 ## pack_12 / 5. Speed, Sport & Competitive Arenas
 
 **Display:** Speed & arena capture · **Scope:** profile · **Presets:** 10
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Racing, sport and tactical references prescribe unrelated activity types.
 **Retain:** Motion readability and competitive-space framing.
@@ -957,6 +1037,7 @@ Evidence [SP12-047](../../../components/recipes/styles/manifests/presets/pack_12
 ## pack_12 / 6. Wilderness Hunts & Harsh Frontiers
 
 **Display:** Frontier game capture · **Scope:** profile · **Presets:** 10
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Hunt, forge, survival and extraction scenarios impose location and danger.
 **Retain:** Terrain value grouping and game-engine atmosphere.
@@ -969,6 +1050,7 @@ Evidence [SP12-034](../../../components/recipes/styles/manifests/presets/pack_12
 ## pack_12 / 7. Heists, Horror & Underworld Runs
 
 **Display:** Stealth & horror capture · **Scope:** profile · **Presets:** 10
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Stealth missions, traps and boss scenes mix story content with engine finish.
 **Retain:** Occlusion, visibility hierarchy and controlled environmental contrast.
@@ -981,6 +1063,7 @@ Evidence [SP12-050](../../../components/recipes/styles/manifests/presets/pack_12
 ## pack_12 / 8. Puzzle Chambers & Adventure Setpieces
 
 **Display:** Adventure game capture · **Scope:** profile · **Presets:** 10
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Puzzle rooms and adventure hubs dictate puzzle props or specific traversal spaces.
 **Retain:** Spatial legibility, interaction scale and distinct render families.
@@ -993,6 +1076,7 @@ Evidence [SP12-058](../../../components/recipes/styles/manifests/presets/pack_12
 ## pack_13 / 1. Core Anime
 
 **Display:** Cel fundamentals · **Scope:** mixed · **Presets:** 15
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Foundational anime entries still use city, hangar and shrine story nouns.
 **Retain:** Cel value grouping, edge hierarchy and restrained stylization.
@@ -1005,6 +1089,7 @@ Evidence [SP13-010](../../../components/recipes/styles/manifests/presets/pack_13
 ## pack_13 / 2. Slice Of Life, School And Music
 
 **Display:** Everyday anime · **Scope:** mixed · **Presets:** 5
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** School, music and cafe contexts prescribe activities instead of just intimate visual treatment.
 **Retain:** Small gestures, soft light and everyday-scale staging.
@@ -1017,318 +1102,99 @@ Evidence [SP13-013](../../../components/recipes/styles/manifests/presets/pack_13
 ## pack_13 / 3. Shojo, Magical Girl & Visionary Classics
 
 **Display:** Expressive anime · **Scope:** mixed · **Presets:** 40
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Studio-era and magical-character references blend visual grammar with iconic narrative markers.
 **Retain:** Line elasticity, cel polish and expressive staging.
 **Proposed action:** Document references separately and derive transferable rendering; transformations remain explicit profiles.
 **Image acceptance check:** No fixed costume, character or magical sequence is imported solely through a name.
 
-Evidence [SP05-013](../../../components/recipes/styles/manifests/presets/pack_13/SP05-013.yaml) — Psychological Biomech Drama: `Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action,`…
-Evidence [SP05-181](../../../components/recipes/styles/manifests/presets/pack_13/SP05-181.yaml) — Fruits Basket - Zodiac Warmth and Grief: `Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action,`…
+Evidence [SP05-013](../../../components/recipes/styles/manifests/presets/pack_13/SP05-013.yaml) — Psychological Biomech Drama: `Respect camera; clipped diagonals and bounded negative space carry tension without added walls.`
+Evidence [SP05-181](../../../components/recipes/styles/manifests/presets/pack_13/SP05-181.yaml) — Fruits Basket - Zodiac Warmth and Grief: `Maintain composition; overlaps and closeness follow only requested relationships.`
 
 ## pack_13 / 4. Slice Of Life & Moe
 
 **Display:** Quiet character animation · **Scope:** mixed · **Presets:** 30
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Shared warmth, school and hobby templates reduce distinctive styles to similar cozy scenes.
 **Retain:** Microacting, proportion rhythm and soft edge control.
-**Proposed action:** Preserve subtle drawing differences; remove activity/venue defaults and compare with neutral actions.
+**Proposed action:** Transfer distinct line, shadow, texture and color mechanics without imposing activities or venues; compare neutral actions after rerendering.
 **Image acceptance check:** Different styles remain distinguishable without changing the activity to a hobby vignette.
 
-Evidence [SP05-081](../../../components/recipes/styles/manifests/presets/pack_13/SP05-081.yaml) — KyoAni Shared-Warmth Microacting: `Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments,`…
-Evidence [SP05-206](../../../components/recipes/styles/manifests/presets/pack_13/SP05-206.yaml) — Everyday-Care Gesture Intimacy: `Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments,`…
+Evidence [SP05-081](../../../components/recipes/styles/manifests/presets/pack_13/SP05-081.yaml) — KyoAni Shared-Warmth Microacting: `Preserve the requested crop, viewpoint, scale, spacing, and count; create separation through contour overlap and a quiet detail hierarchy within the frame.`
+Evidence [SP05-206](../../../components/recipes/styles/manifests/presets/pack_13/SP05-206.yaml) — Everyday-Care Gesture Intimacy: `Keep the exact crop, viewpoint, scale, spacing, and count; contact detail works at any distance and must not force a close-up.`
 
 ## pack_13 / 5. Anime Style Spectrum
 
 **Display:** Anime rendering spectrum · **Scope:** mixed · **Presets:** 42
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Many differently named entries repeat the same broad template and motion vocabulary.
 **Retain:** Specific contour, shading and compositional decisions.
-**Proposed action:** Prioritize pairwise visual tests; group minor variants only after preserving distinct mechanics.
+**Proposed action:** Keep the distinct drawing mechanics, with requested-content preservation and defect-specific negatives. Compare the regenerated cards and cross-subject images before grouping adjacent variants.
 **Image acceptance check:** Blind comparisons should reveal the rendering difference rather than the renamed scene.
 
-Evidence [SP05-101](../../../components/recipes/styles/manifests/presets/pack_13/SP05-101.yaml) — Abstract Fluid Painterly Anime: `Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, a`…
-Evidence [SP05-322](../../../components/recipes/styles/manifests/presets/pack_13/SP05-322.yaml) — Celestial Vertical Ornament: `Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, a`…
-
-## pack_14 / 1. Mythic — Symbolism
-
-**Display:** Symbolic composition · **Scope:** theme · **Presets:** 15
-
-**Problem:** Processions, masks and relics are encoded as recurring object bundles.
-**Retain:** Symbol placement, value hierarchy and disciplined ornament.
-**Proposed action:** Keep symbolic direction distinct from visual treatment; move required props into optional examples.
-**Image acceptance check:** A requested ordinary object is not replaced by a relic procession.
-
-Evidence [SP14-001](../../../components/recipes/styles/manifests/presets/pack_14/SP14-001.yaml) — Eclipse Reliquary Processional: `Frame with orbital occlusion, circular tension, and darkened central gravity, small sacred containment and frontal icon pressure plus slow processional rhythm, repeated intervals, and ceremonial forward weight plus icon axes, seal geometry, threshold spacing, `…
-Evidence [SP14-099](../../../components/recipes/styles/manifests/presets/pack_14/SP14-099.yaml) — Underworld Lantern Threshold: `Frame with threshold division, guarded negative space, and transition lines, underworld converted into repeatable spatial rhythm and symbolic hierarchy plus lantern converted into repeatable spatial rhythm and symbolic hierarchy plus icon axes, seal geometry, `…
-
-## pack_14 / 2. Mythic — Ritual Noir
-
-**Display:** Ritual noir · **Scope:** theme · **Presets:** 15
-
-**Problem:** Ritual roles and noir scenarios are bundled with lighting and material finish.
-**Retain:** Controlled darkness, reflective accents and ceremonial hierarchy.
-**Proposed action:** Extract noir illumination; retain ritual content only as an explicitly selected theme.
-**Image acceptance check:** No ritual role or sacred object is introduced by a lighting-only style.
-
-Evidence [SP14-002](../../../components/recipes/styles/manifests/presets/pack_14/SP14-002.yaml) — Velvet Relic Conservation Noir: `Frame with velvet converted into repeatable spatial rhythm and symbolic hierarchy, relic converted into repeatable spatial rhythm and symbolic hierarchy plus conservation converted into repeatable spatial rhythm and symbolic hierarchy plus interrogation axes, `…
-Evidence [SP14-109](../../../components/recipes/styles/manifests/presets/pack_14/SP14-109.yaml) — Blackwater Confessional Reflection: `Frame with blackwater converted into repeatable spatial rhythm and symbolic hierarchy, confessional converted into repeatable spatial rhythm and symbolic hierarchy plus reflection converted into repeatable spatial rhythm and symbolic hierarchy plus interrogati`…
-
-## pack_14 / 3. Mythic — Pantheons & Legends
-
-**Display:** Legends & myth · **Scope:** theme · **Presets:** 15
-
-**Problem:** Named beings and narrative domains can dictate the entire subject.
-**Retain:** Distinct material palettes and form language within each source direction.
-**Proposed action:** Preserve contextual provenance; separate character/world concepts from rendering instructions.
-**Image acceptance check:** User subject identity survives visual-only transfer; a legend theme remains explicitly thematic.
-
-Evidence [SP14-004](../../../components/recipes/styles/manifests/presets/pack_14/SP14-004.yaml) — Glass-Thorn Warden Botany: `Frame with glass converted into repeatable spatial rhythm and symbolic hierarchy, thorn converted into repeatable spatial rhythm and symbolic hierarchy plus warden converted into repeatable spatial rhythm and symbolic hierarchy plus frieze rhythm, ring authori`…
-Evidence [SP14-017](../../../components/recipes/styles/manifests/presets/pack_14/SP14-017.yaml) — Feathered Scale Afterlife Verdict: `Frame with ascending feather rhythm and layered contour, weighing symmetry and moral balance plus verdict hierarchy, weighing lines, and finality marks plus frieze rhythm, ring authority, mirrored duality, oath-path diagonals, heraldic massing, and mythic scal`…
-
-## pack_14 / 4. Mythic — Cosmology & Omens
-
-**Display:** Cosmic symbolism · **Scope:** theme · **Presets:** 15
-
-**Problem:** Omens, verdicts and archives imply events, objects and explanatory meaning.
-**Retain:** Celestial color relationships and diagrammatic rhythm.
-**Proposed action:** Separate cosmic motif direction from optical/palette treatment and narrative interpretation.
-**Image acceptance check:** A cosmic palette does not add an omen object or explanatory text.
-
-Evidence [SP14-013](../../../components/recipes/styles/manifests/presets/pack_14/SP14-013.yaml) — Grave Bell Astral Warning: `Frame with ringing circles and alarm-like spacing plus celestial spacing and measured orbit arcs plus orbital spirals, meridian cuts, radial verdicts, balance axes, archive grids, and measured cosmic compression; the style should support portraits, objects, ar`…
-Evidence [SP14-087](../../../components/recipes/styles/manifests/presets/pack_14/SP14-087.yaml) — Lunar Salt Divination: `Frame with lunar converted into repeatable spatial rhythm and symbolic hierarchy, salt converted into repeatable spatial rhythm and symbolic hierarchy plus divination converted into repeatable spatial rhythm and symbolic hierarchy plus orbital spirals, meridia`…
-
-## pack_14 / 5. Mythic — Greek Epics
-
-**Display:** Epic motifs · **Scope:** theme · **Presets:** 15
-
-**Problem:** Mythic roles and named narrative devices stand in for a visual style.
-**Retain:** Specific ornamental and material vocabulary in each preset.
-**Proposed action:** Keep source context and requested motifs; derive medium-only variants without universalizing the mythology.
-**Image acceptance check:** A non-mythic subject does not become an epic scene under a material treatment.
-
-Evidence [SP14-018](../../../components/recipes/styles/manifests/presets/pack_14/SP14-018.yaml) — Aegis Storm Command: `Frame with directive axes and forceful visual hierarchy, aegis converted into repeatable spatial rhythm and symbolic hierarchy plus storm converted into repeatable spatial rhythm and symbolic hierarchy plus frieze order, labyrinth logic, oath-line diagonals, p`…
-Evidence [SP14-049](../../../components/recipes/styles/manifests/presets/pack_14/SP14-049.yaml) — Chariot Sun Transit: `Frame with solar transit diagonals and wheel-like momentum plus movement arc, solar route, and timed passage plus frieze order, labyrinth logic, oath-line diagonals, public-measure spacing, and monument-like silhouette balance; the style should support portrai`…
-
-## pack_14 / 6. Mythic — African Cosmologies
-
-**Display:** Cosmology references · **Scope:** theme · **Presets:** 15
-
-**Problem:** Distinct named traditions share broad ritual and celestial templates.
-**Retain:** Specific reference context and each preset's stated visual mechanics.
-**Proposed action:** Do not collapse traditions into a generic exotic look; separate provenance, requested motifs and representation.
-**Image acceptance check:** Only explicitly requested motifs appear; no unsupported cultural interpretation is asserted.
-
-Evidence [SP14-021](../../../components/recipes/styles/manifests/presets/pack_14/SP14-021.yaml) — Griot Star Memory Ring: `Frame with story-ring rhythm and mnemonic repetition, constellation spacing and navigational points plus mnemonic rings, echo repeats, and archived spacing plus council rings, lineage bands, relay rhythm, navigation arcs, mask-plane balance, and communal autho`…
-Evidence [SP14-061](../../../components/recipes/styles/manifests/presets/pack_14/SP14-061.yaml) — Savannah Eclipse Civic Law: `Frame with orbital occlusion, circular tension, and darkened central gravity plus civic spacing, measured hierarchy, and orderly procession plus council rings, lineage bands, relay rhythm, navigation arcs, mask-plane balance, and communal authority spacing; th`…
-
-## pack_14 / 7. Mythic — Japanese Yokai & Kami
-
-**Display:** Folklore references · **Scope:** theme · **Presets:** 15
-
-**Problem:** Named folklore entities and ritual actions are embedded across rendering fields.
-**Retain:** Specific shape, lighting and surface decisions for each reference.
-**Proposed action:** Keep folklore content explicit; extract rendering without automatically introducing named entities.
-**Image acceptance check:** A neutral subject does not become a folklore creature merely from the visual treatment.
-
-Evidence [SP14-024](../../../components/recipes/styles/manifests/presets/pack_14/SP14-024.yaml) — Whispering Foxfire Threshold: `Frame with close negative-space pauses and overheard visual rhythm, small flame points and sly boundary crossings plus threshold division, guarded negative space, and transition lines plus asymmetric seal placement, crossing lines, boundary panels, kagura moti`…
-Evidence [SP14-037](../../../components/recipes/styles/manifests/presets/pack_14/SP14-037.yaml) — Moon Carp Vow Crossing: `Frame with curved crossing motion and reflective arcs, binding diagonals and repeated oath marks plus threshold lines, diagonal passage, and divided value fields plus asymmetric seal placement, crossing lines, boundary panels, kagura motion arcs, vow-path rhyt`…
-
-## pack_14 / 8. Mythic — Norse Sagas
-
-**Display:** Saga motifs · **Scope:** theme · **Presets:** 15
-
-**Problem:** Forges, trees and authority roles create repeated cold ceremonial scenes.
-**Retain:** Cold-warm value separation and distinct carved/metal surfaces.
-**Proposed action:** Separate narrative motif from palette and surface handling; preserve documented source context.
-**Image acceptance check:** A cool material treatment does not require a forge, rune object or saga character.
-
-Evidence [SP14-027](../../../components/recipes/styles/manifests/presets/pack_14/SP14-027.yaml) — Ashen Worldtree Threshold: `Frame with world-axis verticality and ash-branch division plus threshold division, guarded negative space, and transition lines plus saga-panel rhythm, runic axes, oath-line diagonals, worldtree verticality, weighing symmetry, and last-stand mass pressure; the`…
-Evidence [SP14-073](../../../components/recipes/styles/manifests/presets/pack_14/SP14-073.yaml) — Wolf Oath Momentum: `Frame with oath-line diagonals and binding intervals, wolf converted into repeatable spatial rhythm and symbolic hierarchy plus momentum converted into repeatable spatial rhythm and symbolic hierarchy plus saga-panel rhythm, runic axes, oath-line diagonals, wo`…
-
-## pack_14 / 9. Mythic — Mesoamerican Suns
-
-**Display:** Solar motifs · **Scope:** theme · **Presets:** 3
-
-**Problem:** The small group combines specific places, solar narratives and object symbolism.
-**Retain:** Jade/obsidian-like surface contrast as described by the presets.
-**Proposed action:** Keep cultural context explicit; do not infer missing traditions from a tiny sample or merge by palette alone.
-**Image acceptance check:** Only requested motifs transfer; ordinary content remains intact in visual-only derivatives.
-
-Evidence [SP14-030](../../../components/recipes/styles/manifests/presets/pack_14/SP14-030.yaml) — Feathered Eclipse Continuity: `Frame with ascending feather rhythm and layered contour, orbital occlusion, circular tension, and darkened central gravity plus cycle bands and repeated solar intervals plus calendar-like cycles, stepped geometry, continuity bands, solar axes, echo rings, and `…
-Evidence [SP14-031](../../../components/recipes/styles/manifests/presets/pack_14/SP14-031.yaml) — Jade Cenote Echo Reading: `Frame with repeated rings, delayed silhouettes, and memory-return spacing plus interpreted marks, echo rings, and careful scanning order plus calendar-like cycles, stepped geometry, continuity bands, solar axes, echo rings, and oath-weighted symmetry; the styl`…
-
-## pack_15 / 1. Classic Industrial Punks
-
-**Display:** Industrial futures · **Scope:** theme · **Presets:** 8
-
-**Problem:** Gear, rail and convoy subjects are wrapped in nearly identical worldbuilding boilerplate.
-**Retain:** Assembly language, mechanical density and material contrast.
-**Proposed action:** Split world direction from metal/patina/lighting modifiers; retain meaningful industrial variants.
-**Image acceptance check:** A surface modifier must not add a railway, convoy or machinery bundle.
-
-Evidence [SP15-001](../../../components/recipes/styles/manifests/presets/pack_15/SP15-001.yaml) — Brass Gear Commons: `Compose through large readable machinery rhythm, labor-poster spacing, civic scale cues, diagonal belt paths, and open negative space around the requested subject as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, `…
-Evidence [SP15-005](../../../components/recipes/styles/manifests/presets/pack_15/SP15-005.yaml) — Clocktower Strike Assembly: `Compose through large readable machinery rhythm, labor-poster spacing, civic scale cues, diagonal belt paths, and open negative space around the requested subject as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, `…
-
-## pack_15 / 2. Neon, Net & Signal Punks
-
-**Display:** Signal futures · **Scope:** theme · **Presets:** 8
-
-**Problem:** Network concepts impose city/infrastructure scenes through metaphorical names.
-**Retain:** Signal hierarchy, emissive accents and surface segmentation.
-**Proposed action:** Extract graphic/light systems; keep networks and urban systems in a separate theme.
-**Image acceptance check:** A neutral object does not acquire an entire networked city scene.
-
-Evidence [SP15-009](../../../components/recipes/styles/manifests/presets/pack_15/SP15-009.yaml) — Rain Kernel Glass: `Compose through mesh-like spacing, compressed signal lanes, overhead cable arcs, node clusters, and readable subject dominance without forced urban passage or server-interior-system staging as reusable framing grammar for characters, creatures, objects, vehicl`…
-Evidence [SP15-013](../../../components/recipes/styles/manifests/presets/pack_15/SP15-013.yaml) — Black Ice Vector: `Compose through mesh-like spacing, compressed signal lanes, overhead cable arcs, node clusters, and readable subject dominance without forced urban passage or server-interior-system staging as reusable framing grammar for characters, creatures, objects, vehicl`…
-
-## pack_15 / 3. Eco, Repair & Climate Punks
-
-**Display:** Repair futures · **Scope:** theme · **Presets:** 8
-
-**Problem:** Community, climate and repair directions prescribe buildings and social activity.
-**Retain:** Repair joins, layered utility and restrained organic integration.
-**Proposed action:** Separate speculative world content from material repair and environmental lighting.
-**Image acceptance check:** A repair finish changes the target's surface, not its society or location.
-
-Evidence [SP15-017](../../../components/recipes/styles/manifests/presets/pack_15/SP15-017.yaml) — Solar Commons Canopy: `Compose through civic repair hierarchy, canopy rhythm, modular infrastructure, readable maintenance paths, and generous space around the prompt subject as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full sce`…
-Evidence [SP15-021](../../../components/recipes/styles/manifests/presets/pack_15/SP15-021.yaml) — Seed Archive Commons: `Compose through civic repair hierarchy, canopy rhythm, modular infrastructure, readable maintenance paths, and generous space around the prompt subject as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full sce`…
-
-## pack_15 / 4. Bio, Myco & Body Punks
-
-**Display:** Biological futures · **Scope:** theme · **Presets:** 8
-
-**Problem:** Biological networks and body concepts mix ornament with physical transformation.
-**Retain:** Branching rhythm, translucency and living-surface gradients.
-**Proposed action:** Require explicit design/material transformation; separate visual motifs from changes to anatomy.
-**Image acceptance check:** Human identity/anatomy stays intact unless a biological transformation is requested.
-
-Evidence [SP15-025](../../../components/recipes/styles/manifests/presets/pack_15/SP15-025.yaml) — Mycelial Route Veins: `Compose through branching growth paths, care-procedure spacing, symbiotic halos, living scaffold rhythm, and body/object integration without gore dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or ful`…
-Evidence [SP15-029](../../../components/recipes/styles/manifests/presets/pack_15/SP15-029.yaml) — Living Rib Infrastructure: `Compose through branching growth paths, care-procedure spacing, symbiotic halos, living scaffold rhythm, and body/object integration without gore dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or ful`…
-
-## pack_15 / 5. Ocean, Ice & Terrain Punks
-
-**Display:** Terrain futures · **Scope:** theme · **Presets:** 8
-
-**Problem:** Ocean, ice and terrain titles require habitat-specific structures and machinery.
-**Retain:** Pressure, erosion and terrain-related material response.
-**Proposed action:** Keep habitat world direction; derive surface and light modifiers without scenery requirements.
-**Image acceptance check:** An object treatment does not add an underwater settlement or polar expedition.
-
-Evidence [SP15-033](../../../components/recipes/styles/manifests/presets/pack_15/SP15-033.yaml) — Coral Circuit Pylons: `Compose through pressure-line diagonals, tide-level bands, canopy arcs, shelter-depth layering, wind-rig rhythm, and stable subject clarity as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without `…
-Evidence [SP15-037](../../../components/recipes/styles/manifests/presets/pack_15/SP15-037.yaml) — Icebreaker Lantern Warmth: `Compose through pressure-line diagonals, tide-level bands, canopy arcs, shelter-depth layering, wind-rig rhythm, and stable subject clarity as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without `…
-
-## pack_15 / 6. Street, Riot & DIY Punks
-
-**Display:** DIY futures · **Scope:** theme · **Presets:** 8
-
-**Problem:** Street scenes and event narratives overwhelm the printed/assembled visual language.
-**Retain:** Paste-up, exposed construction and limited-color graphics.
-**Proposed action:** Extract DIY graphic media; preserve contextual scene direction as optional content.
-**Image acceptance check:** A zine treatment does not invent a crowd, barricade or social event.
-
-Evidence [SP15-041](../../../components/recipes/styles/manifests/presets/pack_15/SP15-041.yaml) — Zine Paste Graphics: `Compose through layered poster rhythm, improvised equipment paths, tight public pressure, cargo diagonals, and bold subject hierarchy without crowd dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or f`…
-Evidence [SP15-045](../../../components/recipes/styles/manifests/presets/pack_15/SP15-045.yaml) — Sticker Signal Layers: `Compose through layered poster rhythm, improvised equipment paths, tight public pressure, cargo diagonals, and bold subject hierarchy without crowd dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or f`…
-
-## pack_15 / 7. Media, Vapor & Glitch Punks
-
-**Display:** Media futures · **Scope:** mixed · **Presets:** 8
-
-**Problem:** Signal artifacts, retro palettes and media-world concepts reuse the same templates.
-**Retain:** Scan structure, video bleed and layered graphic reproduction.
-**Proposed action:** Separate medium artifacts from worldbuilding; compare against pack_10 and analog video.
-**Image acceptance check:** A VHS treatment preserves content and does not add a television studio.
-
-Evidence [SP15-049](../../../components/recipes/styles/manifests/presets/pack_15/SP15-049.yaml) — Cathode Reflection Reverie: `Compose through bold signal framing, checker or scanline depth, one clear subject anchor, offset broadcast stacks, and synthetic negative space as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes with`…
-Evidence [SP15-053](../../../components/recipes/styles/manifests/presets/pack_15/SP15-053.yaml) — CRT Static Devotion: `Compose through bold signal framing, checker or scanline depth, one clear subject anchor, offset broadcast stacks, and synthetic negative space as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes with`…
-
-## pack_15 / 8. Occult, Myth & Gothic Punks
-
-**Display:** Occult futures · **Scope:** theme · **Presets:** 8
-
-**Problem:** Tarot, witches and ritual machinery form recurring prop bundles.
-**Retain:** Contrast of geometric signal marks and ornamental curves.
-**Proposed action:** Keep occult content as an explicit theme; extract line/material behavior without mandatory symbols.
-**Image acceptance check:** A line treatment does not introduce occult props or characters.
-
-Evidence [SP15-057](../../../components/recipes/styles/manifests/presets/pack_15/SP15-057.yaml) — Neon Witch Current: `Compose through ritual symmetry, gothic arch rhythm, signal-device spacing, card-like emblem balance, and severe subject clarity without altar dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full s`…
-Evidence [SP15-061](../../../components/recipes/styles/manifests/presets/pack_15/SP15-061.yaml) — Necrophone Repair Craft: `Compose through ritual symmetry, gothic arch rhythm, signal-device spacing, card-like emblem balance, and severe subject clarity without altar dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full s`…
-
-## pack_15 / 9. Space, Atomic & Ray Punks
-
-**Display:** Atomic & orbital futures · **Scope:** theme · **Presets:** 8
-
-**Problem:** Space, reactor and rocket concepts impose period hardware and locations.
-**Retain:** Streamlined geometry, specular rhythm and saturated accent organization.
-**Proposed action:** Separate design/world transformation from render/palette modifiers.
-**Image acceptance check:** A palette change does not transform the requested scene into an orbital facility.
-
-Evidence [SP15-065](../../../components/recipes/styles/manifests/presets/pack_15/SP15-065.yaml) — Neon Isotope Civic Glow: `Compose through orbit curves, ray-age wedges, sleek public transit rhythm, spherical depth cues, and confident subject spacing without diner or vehicle dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, `…
-Evidence [SP15-069](../../../components/recipes/styles/manifests/presets/pack_15/SP15-069.yaml) — Comet Salvage Tether: `Compose through orbit curves, ray-age wedges, sleek public transit rhythm, spherical depth cues, and confident subject spacing without diner or vehicle dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, `…
-
-## pack_15 / 10. Primitive, Stone & Salvage Punks
-
-**Display:** Primitive & salvage futures · **Scope:** theme · **Presets:** 8
-
-**Problem:** Stone, bone and salvage infrastructure are both material and narrative prescriptions.
-**Retain:** Assembly constraints, tool marks and coarse material transitions.
-**Proposed action:** Require target/design scope; extract material finish without reconstructing the world.
-**Image acceptance check:** The requested object is not replaced by a primitive machine or settlement.
-
-Evidence [SP15-073](../../../components/recipes/styles/manifests/presets/pack_15/SP15-073.yaml) — Basalt Gear Mechanics: `Compose through compact engine rhythm, lash-and-wheel diagonals, windcraft arcs, ritual timing channels, and clear subject scale without commerce-system or trade setup lock as reusable framing grammar for characters, creatures, objects, vehicles, environments,`…
-Evidence [SP15-077](../../../components/recipes/styles/manifests/presets/pack_15/SP15-077.yaml) — Rope Kinetic Generator: `Compose through compact engine rhythm, lash-and-wheel diagonals, windcraft arcs, ritual timing channels, and clear subject scale without commerce-system or trade setup lock as reusable framing grammar for characters, creatures, objects, vehicles, environments,`…
+Evidence [SP05-101](../../../components/recipes/styles/manifests/presets/pack_13/SP05-101.yaml) — Abstract Fluid Painterly Anime: `Keep the source layout stable while washes flow within existing forms; do not turn abstractions into new objects.`
+Evidence [SP05-322](../../../components/recipes/styles/manifests/presets/pack_13/SP05-322.yaml) — Celestial Vertical Ornament: `Use vertical spacing and slender accents inside the given composition; preserve aspect, crop and subject proportions.`
 
 ## pack_16 / 1. 70s & 80s Retro Anime
 
-**Display:** Retro cel craft · **Scope:** mixed · **Presets:** 30
+**Display:** Retro cel craft · **Scope:** mixed · **Presets:** 31
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Era and source-title cues prescribe pioneers, heists and space drama.
 **Retain:** Cel edge behavior, painted backdrops and restrained frame-era artifacts.
-**Proposed action:** Describe craft differences without reproducing source scenarios; preserve references for discovery.
+**Proposed action:** Keep the SP16-001 study and the distinct legacy cel treatments; compare rerendered subjects before grouping adjacent variants.
 **Image acceptance check:** A contemporary subject stays contemporary under a retro cel treatment.
 
-Evidence [SP05-001](../../../components/recipes/styles/manifests/presets/pack_16/SP05-001.yaml) — Retro Pioneer Hero: `Frame around retro converted into reusable framing rhythm and anime timing, alongside pioneer converted into reusable framing rhythm and anime timing, then extend it with bold television framing, heroic diagonals, theatrical inserts, readable action lanes, and`…
-Evidence [SP05-306](../../../components/recipes/styles/manifests/presets/pack_16/SP05-306.yaml) — Adult Domestic Warmth: `Frame around adult converted into reusable framing rhythm and anime timing, alongside domestic converted into reusable framing rhythm and anime timing, then extend it with bold television framing, heroic diagonals, theatrical inserts, readable action lanes, an`…
+Evidence [SP05-001](../../../components/recipes/styles/manifests/presets/pack_16/SP05-001.yaml) — Retro Pioneer Hero: `Preserve the requested viewpoint, crop, layout and spatial relationships. Use clear diagonals and held-shape pauses inside the requested arrangement; add no inset, border or staging.`
+Evidence [SP05-306](../../../components/recipes/styles/manifests/presets/pack_16/SP05-306.yaml) — Adult Domestic Warmth: `Preserve the requested viewpoint, crop, layout and spatial relationships. Use human-scale intervals and uncomplicated layers within the original crop; add no inset, border or staging.`
+Evidence [SP16-001](../../../components/recipes/styles/manifests/presets/pack_16/SP16-001.yaml) — Analog Cel Craft: `Preserve the requested viewpoint, crop, layout and spatial relationships. Keep ink, paint and background planes legible within that composition without restaging it.`
 
 ## pack_16 / 2. 90s Golden Era
 
 **Display:** Nineties cel craft · **Scope:** mixed · **Presets:** 20
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Character archetypes and iconic genres dominate despite renamed display labels.
 **Retain:** Shadow group count, lineweight and color separation.
-**Proposed action:** Extract era-specific rendering mechanics and compare related entries before grouping variants.
+**Proposed action:** Keep contour echoes, cel-value grouping, line rhythm and material-aware highlights without mandatory characters or scenes. Remove bare text bans; compare regenerated subjects before grouping variants.
 **Image acceptance check:** Keep action, setting and identity constant across the comparison set.
 
-Evidence [SP05-011](../../../components/recipes/styles/manifests/presets/pack_16/SP05-011.yaml) — Generational Aura Clash: `Frame around generational converted into reusable framing rhythm and anime timing, alongside aura converted into reusable framing rhythm and anime timing, then extend it with cinematic closeups, speed-line vectors, dramatic low angles, layered profile cuts, an`…
-Evidence [SP05-165](../../../components/recipes/styles/manifests/presets/pack_16/SP05-165.yaml) — Spirit Pressure Rivalry: `Frame around opposed diagonals, stare-down spacing, and pressure lanes, alongside spirit converted into reusable framing rhythm and anime timing, then extend it with cinematic closeups, speed-line vectors, dramatic low angles, layered profile cuts, and compres`…
+Evidence [SP05-011](../../../components/recipes/styles/manifests/presets/pack_16/SP05-011.yaml) — Generational Aura Clash: `Use opposing diagonals and a tight focal rhythm inside the requested framing. Keep the camera and layout; do not require a close-up, arena or city.`
+Evidence [SP05-165](../../../components/recipes/styles/manifests/presets/pack_16/SP05-165.yaml) — Spirit Pressure Rivalry: `Let the existing contour echo create depth around the focal form within the supplied frame. Preserve camera and placement; do not add a landscape or oversized figure.`
 
 ## pack_16 / 3. 2000s Classics
 
 **Display:** Early digital anime · **Scope:** mixed · **Presets:** 20
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Romance, clan comedy and specific narrative beats are mixed with digital-era appearance.
 **Retain:** Compositing softness, cel line handling and background integration.
-**Proposed action:** Separate narrative tone from visual production characteristics.
+**Proposed action:** Keep the documented line, timing, value and compositing mechanics without mandatory story beats. SP05-156 has no distinct technical mechanism in its source; leave its distinctness pending comparison instead of inventing one from the name.
 **Image acceptance check:** A neutral task must not become a romance or clan-comedy scene.
 
-Evidence [SP05-024](../../../components/recipes/styles/manifests/presets/pack_16/SP05-024.yaml) — Alchemical Moral Geometry: `Frame around geometric circles, equivalent exchange symmetry, and rule-bound framing, alongside hard axes, repeated shapes, and measured ritual spacing, then extend it with opening-sequence energy, split-second action framing, romcom reaction spacing, gothic s`…
-Evidence [SP05-151](../../../components/recipes/styles/manifests/presets/pack_16/SP05-151.yaml) — Pop Reality Bend: `Frame around pop converted into reusable framing rhythm and anime timing, alongside reality converted into reusable framing rhythm and anime timing, then extend it with opening-sequence energy, split-second action framing, romcom reaction spacing, gothic symme`…
+Evidence [SP05-024](../../../components/recipes/styles/manifests/presets/pack_16/SP05-024.yaml) — Alchemical Moral Geometry: `Retain the requested camera; measured axes, repetition or symmetry may organize existing shapes when compatible.`
+Evidence [SP05-151](../../../components/recipes/styles/manifests/presets/pack_16/SP05-151.yaml) — Pop Reality Bend: `Retain the requested viewpoint and layout. Use contrast and visual rhythm within that frame; do not introduce distortion or new objects.`
 
 ## pack_16 / 4. Studio Masterpieces
 
 **Display:** Authored animation · **Scope:** mixed · **Presets:** 30
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Many auteur-like titles share long templates, masking their actual visual differences.
 **Retain:** Specific layout, edge, color and background relationships.
-**Proposed action:** Compare neutral subjects blind; keep references as provenance and author distinct mechanics.
+**Proposed action:** Preserve distinct contour, value, timing and background mechanics without forcing source scenes; rerender neutral subjects and compare the resulting styles.
 **Image acceptance check:** The difference is observable without iconic scenes or remembered characters.
 
-Evidence [SP05-071](../../../components/recipes/styles/manifests/presets/pack_16/SP05-071.yaml) — Warm Liminal Reverie Fantasy: `Frame around in-between spacing, empty pauses, and transition lines, alongside warm converted into reusable framing rhythm and anime timing, then extend it with feature-film blocking, environmental scale, poetic negative space, quiet inserts, dream logic, and `…
-Evidence [SP05-286](../../../components/recipes/styles/manifests/presets/pack_16/SP05-286.yaml) — Seasonal Intimacy Realism: `Frame around seasonal converted into reusable framing rhythm and anime timing, alongside intimacy converted into reusable framing rhythm and anime timing, then extend it with feature-film blocking, environmental scale, poetic negative space, quiet inserts, dre`…
+Evidence [SP05-071](../../../components/recipes/styles/manifests/presets/pack_16/SP05-071.yaml) — Warm Liminal Reverie Fantasy: `Preserve the requested viewpoint, relative placement, and crop. Use existing negative gaps and transitions as intervals without adding doorways or borders.`
+Evidence [SP05-286](../../../components/recipes/styles/manifests/presets/pack_16/SP05-286.yaml) — Seasonal Intimacy Realism: `Preserve the requested viewpoint, relative placement, and crop. Cluster detail at already legible focal areas and soften secondary values without reframing.`
 
 ## pack_16 / 5. Sports, Competition & Performance
 
 **Display:** Performance drawing · **Scope:** mixed · **Presets:** 30
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Sport, competition and team narratives are mandatory in many entries.
 **Retain:** Anatomical gesture, speed cues and performance readability.
@@ -1341,6 +1207,7 @@ Evidence [SP05-358](../../../components/recipes/styles/manifests/presets/pack_16
 ## pack_16 / 6. Samurai & Medieval
 
 **Display:** Period action · **Scope:** mixed · **Presets:** 5
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Medieval and samurai content is coupled to motion and solemn framing.
 **Retain:** Gesture timing, line economy and group-value design.
@@ -1353,6 +1220,7 @@ Evidence [SP13-028](../../../components/recipes/styles/manifests/presets/pack_16
 ## pack_16 / 7. Horror
 
 **Display:** Horror animation · **Scope:** mixed · **Presets:** 5
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Horror samples prescribe institutions, puppets or cosmic events.
 **Retain:** Negative-space tension, contour control and restrained contrast.
@@ -1364,19 +1232,22 @@ Evidence [SP13-033](../../../components/recipes/styles/manifests/presets/pack_16
 
 ## pack_17 / 1. Dark Fantasy & Gothic Courts
 
-**Display:** Matte dark fantasy · **Scope:** mixed · **Presets:** 20
+**Display:** Matte dark fantasy · **Scope:** mixed · **Presets:** 21
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Ashen and gothic entries retain funerary/medieval nouns after display-name changes.
 **Retain:** Heavy value planes, matte finish and controlled edge loss.
-**Proposed action:** Derive visual-only treatments; retain ceremonial/world direction separately and preserve originals.
+**Proposed action:** SP17-073 derives value-plane and edge treatment from SP17-001 while retaining the original ceremonial direction; compare with atlas CR-04 before promotion.
 **Image acceptance check:** An everyday object keeps its function and setting without becoming a relic.
 
 Evidence [SP17-001](../../../components/recipes/styles/manifests/presets/pack_17/SP17-001.yaml) — Ashen Relic Fantasy: `Low, weighty framing with broad negative space, diagonal massing, large readable silhouette planes, and depth cues driven by light, scale, and shadow, adaptable to the user's composition.`
 Evidence [SP17-011](../../../components/recipes/styles/manifests/presets/pack_17/SP17-011.yaml) — Fogbound Witch Gothic: `Circular accusation pressure, low fog bands, off-center moral tension, claustrophobic medieval spacing, and witness-like silhouettes only as optional depth shapes.`
+Evidence [SP17-073](../../../components/recipes/styles/manifests/presets/pack_17/SP17-073.yaml) — Soot-Softened Planes: `Respect the requested camera, crop, and object placement. Use value grouping and clear planes to keep silhouettes legible inside that composition; add no low angle, diagonal staging, or fixed negative-space layout.`
 
 ## pack_17 / 2. Dungeon Zine & Risograph Prints
 
 **Display:** Zine reproduction · **Scope:** mixed · **Presets:** 11
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Print media are tied to dungeon, necromancy and monster-manual content.
 **Retain:** Registration, spot inks, photocopy breakup and paper contrast.
@@ -1389,6 +1260,7 @@ Evidence [SP17-018](../../../components/recipes/styles/manifests/presets/pack_17
 ## pack_17 / 3. Ink, Tarot & Bestiary Plates
 
 **Display:** Ink & plate formats · **Scope:** mixed · **Presets:** 18
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Tarot, bestiary and icon layouts are mixed with reusable ink techniques.
 **Retain:** Contour hierarchy, solid blacks and sparse line detail.
@@ -1401,6 +1273,7 @@ Evidence [SP17-042](../../../components/recipes/styles/manifests/presets/pack_17
 ## pack_17 / 4. Rune-Tech & Apocalyptic Warfronts
 
 **Display:** Techno-fantasy design · **Scope:** theme · **Presets:** 14
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Armor, citadels and warfronts prescribe design and world content.
 **Retain:** Material contrast, layered construction and controlled emissive details.
@@ -1413,6 +1286,7 @@ Evidence [SP17-026](../../../components/recipes/styles/manifests/presets/pack_17
 ## pack_17 / 5. Grimdark Game Systems & Tabletop
 
 **Display:** Game & tabletop formats · **Scope:** profile · **Presets:** 9
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
 
 **Problem:** Isometric ARPG, 2.5D spaces and portrait output have deliberate but incompatible layout scopes.
 **Retain:** Game readability, camera conventions and portrait massing.
@@ -1421,3 +1295,652 @@ Evidence [SP17-026](../../../components/recipes/styles/manifests/presets/pack_17
 
 Evidence [SP17-064](../../../components/recipes/styles/manifests/presets/pack_17/SP17-064.yaml) — Monochrome Dungeon Pixels: `Vertical card crop that can show a sprite portrait, isometric tile fragment, side-view scenelet, or symbolic pixel object with no interface.`
 Evidence [SP17-068](../../../components/recipes/styles/manifests/presets/pack_17/SP17-068.yaml) — Rusted Vault Grimdark: `Vertical grimdark card or sourcebook crop with one strong symbolic focal subject and background survival architecture as support.`
+
+## pack_19 / 1. Ink Structures
+
+**Display:** Ink Structures · **Scope:** style · **Presets:** 4
+**Editorial state:** text-authored · **Cross-subject image validation:** pending
+
+**Problem:** Representative cards are available; the authored derivatives still need cross-subject visual validation.
+**Retain:** Subject identity, requested pose, framing and scene content.
+**Proposed action:** Publish authored studies with representative cards; compare with recorded source presets across subjects before promoting or consolidating.
+**Image acceptance check:** Test an object, ordinary action, interior, exterior and graphic composition with fixed requested content.
+
+Evidence [SP19-001](../../../components/recipes/styles/manifests/presets/pack_19/SP19-001.yaml) — Dry Cut: `Preserve requested camera and framing. Use scale hierarchy and open gaps between adjacent silhouettes to keep the existing composition legible.`
+Evidence [SP19-002](../../../components/recipes/styles/manifests/presets/pack_19/SP19-002.yaml) — Elastic Contour: `Keep the requested viewpoint and placement. Establish hierarchy through stroke weight and omission of secondary edges.`
+Evidence [SP19-003](../../../components/recipes/styles/manifests/presets/pack_19/SP19-003.yaml) — Bristle Rhythm: `Preserve the user composition. Direct mark flow around its focal structure rather than adding diagonals or changing the camera.`
+Evidence [SP19-004](../../../components/recipes/styles/manifests/presets/pack_19/SP19-004.yaml) — Pooled Ink: `Respect the existing frame and viewpoint. Organize wet and dry edge transitions around the requested focal hierarchy.`
+
+## pack_20 / 1. Print Registers
+
+**Display:** Print Registers · **Scope:** style · **Presets:** 4
+**Editorial state:** text-authored · **Cross-subject image validation:** pending
+
+**Problem:** Representative cards are available; the authored derivatives still need cross-subject visual validation.
+**Retain:** Subject identity, requested pose, framing and scene content.
+**Proposed action:** Publish authored studies with representative cards; compare with recorded source presets across subjects before promoting or consolidating.
+**Image acceptance check:** Test an object, ordinary action, interior, exterior and graphic composition with fixed requested content.
+
+Evidence [SP20-001](../../../components/recipes/styles/manifests/presets/pack_20/SP20-001.yaml) — Offset Drift: `Preserve framing, pose and camera. The registration shift belongs to the print layers, not to the depicted geometry.`
+Evidence [SP20-002](../../../components/recipes/styles/manifests/presets/pack_20/SP20-002.yaml) — Stencil Duotone: `Keep user framing and placement. Balance solid areas against open support without adding a page border or fixed layout.`
+Evidence [SP20-003](../../../components/recipes/styles/manifests/presets/pack_20/SP20-003.yaml) — Toner Blocks: `Preserve camera and composition. Toner breakup is a reproduction property, not permission to crop the subject or invent a zine page.`
+Evidence [SP20-004](../../../components/recipes/styles/manifests/presets/pack_20/SP20-004.yaml) — Engraved Tone: `Honor requested framing and viewpoint. Vary detail density around the existing focal hierarchy without adding a specimen plate or labels.`
+
+## pack_21 / 1. Paper & Pigment
+
+**Display:** Paper & Pigment · **Scope:** style · **Presets:** 4
+**Editorial state:** text-authored · **Cross-subject image validation:** pending
+
+**Problem:** Representative cards are available; the authored derivatives still need cross-subject visual validation.
+**Retain:** Subject identity, requested pose, framing and scene content.
+**Proposed action:** Publish authored studies with representative cards; compare with recorded source presets across subjects before promoting or consolidating.
+**Image acceptance check:** Test an object, ordinary action, interior, exterior and graphic composition with fixed requested content.
+
+Evidence [SP21-001](../../../components/recipes/styles/manifests/presets/pack_21/SP21-001.yaml) — Stacked Paper: `Preserve requested viewpoint, pose and frame. Depth comes from the illustration layers rather than a new isometric camera.`
+Evidence [SP21-002](../../../components/recipes/styles/manifests/presets/pack_21/SP21-002.yaml) — Resist Wash: `Respect requested framing and camera. Use the resist pattern to guide attention within the existing arrangement.`
+Evidence [SP21-003](../../../components/recipes/styles/manifests/presets/pack_21/SP21-003.yaml) — Opaque Planes: `Preserve user viewpoint and placement. Alternate found and lost edges around the requested focal hierarchy.`
+Evidence [SP21-004](../../../components/recipes/styles/manifests/presets/pack_21/SP21-004.yaml) — Pressed Relief: `Preserve the requested composition and viewpoint within the illustration. Do not tilt the entire image into a product mockup unless requested.`
+
+## pack_22 / 1. Workshop Painting
+
+**Display:** Workshop Painting · **Scope:** style · **Presets:** 8
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Medium cues can collapse into a generic painted object.
+**Retain:** Distinct glaze, acrylic, wash and drawing mark behavior.
+**Proposed action:** Keep the medium process active and let the request select the subject.
+**Image acceptance check:** Apply each process to the same contemporary bicycle without changing its parts.
+
+Evidence [SP22-101](../../../components/recipes/styles/manifests/presets/pack_22/SP22-101.yaml) — Layered Oil Glaze: `Preserve the requested viewpoint, crop, framing and element placement. Do not reframe to make room for an unrequested card layout.`
+Evidence [SP22-102](../../../components/recipes/styles/manifests/presets/pack_22/SP22-102.yaml) — Opaque Acrylic Overlap: `Preserve the requested viewpoint, crop, framing and element placement. Do not reframe to make room for an unrequested card layout.`
+Evidence [SP22-104](../../../components/recipes/styles/manifests/presets/pack_22/SP22-104.yaml) — Structural Pen and Wash: `Preserve the requested viewpoint, crop, framing and element placement. Do not add a card panel or recompose around a border that was not requested.`
+Evidence [SP22-108](../../../components/recipes/styles/manifests/presets/pack_22/SP22-108.yaml) — Tonal Graphite with Color Accents: `Preserve the requested viewpoint, crop, framing and element placement. Do not convert the image into a sketch sheet or add an annotation layout unless requested.`
+
+## pack_22 / 2. Epic Digital Painting
+
+**Display:** Epic Digital Painting · **Scope:** style · **Presets:** 8
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Epic labels can force heroic figures or fantasy backdrops.
+**Retain:** Edge control, pigment-like volume and grouped painted values.
+**Proposed action:** Express scale through paint handling rather than a required heroic scene.
+**Image acceptance check:** A quiet domestic plant still shows the chosen paint treatment.
+
+Evidence [SP22-109](../../../components/recipes/styles/manifests/presets/pack_22/SP22-109.yaml) — Carved Impasto: `Preserve the requested viewpoint, crop, framing and element placement. Do not restage the image to emphasize brushwork.`
+Evidence [SP22-110](../../../components/recipes/styles/manifests/presets/pack_22/SP22-110.yaml) — Velvet Realism: `Preserve the requested viewpoint, crop, framing and element placement. Soft rendering does not require a tighter portrait crop or altered focus plane.`
+
+## pack_22 / 3. Strange Ink & Paint
+
+**Display:** Strange Ink & Paint · **Scope:** style · **Presets:** 8
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Dark media labels can add horror content that was never requested.
+**Retain:** Thorn-like incision, soot wash and broken pigment surfaces.
+**Proposed action:** Transfer unsettling mark behavior without adding violence or monsters.
+**Image acceptance check:** A plain streetlamp can carry the mark treatment without becoming a horror scene.
+
+Evidence [SP22-117](../../../components/recipes/styles/manifests/presets/pack_22/SP22-117.yaml) — Thorn Etching: `Preserve the requested viewpoint, pose, crop and arrangement. Keep the existing silhouettes and negative spaces readable within that composition.`
+Evidence [SP22-118](../../../components/recipes/styles/manifests/presets/pack_22/SP22-118.yaml) — Soot Wash: `Preserve the requested viewpoint, crop, pose and arrangement. Keep the major light reserves and wash shapes inside the existing composition.`
+
+## pack_22 / 4. Storybook & Animation
+
+**Display:** Storybook & Animation · **Scope:** style · **Presets:** 8
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Narrative names can become a fixed fairytale setting.
+**Retain:** Gouache planes, cel edges and controlled volume simplification.
+**Proposed action:** Keep animation and storybook rendering separate from story content.
+**Image acceptance check:** A modern tram retains its form under each rendering language.
+
+Evidence [SP22-125](../../../components/recipes/styles/manifests/presets/pack_22/SP22-125.yaml) — Tapestry Gouache: `Preserve the requested viewpoint, crop, framing and element placement. Do not add a decorative frame or rearrange the image to imitate a book page.`
+Evidence [SP22-126](../../../components/recipes/styles/manifests/presets/pack_22/SP22-126.yaml) — Animation Cel: `Preserve the requested viewpoint, crop, framing and element placement. A cel-rendered image does not require an animation layout or a new pose.`
+
+## pack_22 / 5. Character & Readable Forms
+
+**Display:** Character & Readable Forms · **Scope:** style · **Presets:** 8
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Creature-card origins can pull every subject toward a creature design.
+**Retain:** Contour economy, readable silhouette and controlled proportions.
+**Proposed action:** Apply form design to the supplied subject without inventing a new character.
+**Image acceptance check:** A chair remains a chair while its shape language changes.
+
+Evidence [SP22-133](../../../components/recipes/styles/manifests/presets/pack_22/SP22-133.yaml) — Classic Creature Contour: `Preserve the requested viewpoint, crop, framing and element placement. Clear contours do not require a specimen pose or a changed arrangement.`
+Evidence [SP22-134](../../../components/recipes/styles/manifests/presets/pack_22/SP22-134.yaml) — Biomorphic Brush: `Preserve the requested viewpoint, crop, framing and element placement. Organic brushwork does not require a creature, close-up or rearrangement.`
+
+## pack_22 / 6. Anime Illustration
+
+**Display:** Anime Illustration · **Scope:** style · **Presets:** 8
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Game and collection provenance can be mistaken for a required franchise character or costume.
+**Retain:** Line density, cel modeling, highlight rhythm and painted finish.
+**Proposed action:** Retain technical differences while keeping game and collection provenance out of the portable visual rules.
+**Image acceptance check:** An original adult gardener stays identifiable across all eight treatments.
+
+Evidence [SP22-141](../../../components/recipes/styles/manifests/presets/pack_22/SP22-141.yaml) — Clean Fantasy Cel: `Preserve the requested viewpoint, pose, crop and placement. Do not add a card frame, lettering or layout.`
+Evidence [SP22-142](../../../components/recipes/styles/manifests/presets/pack_22/SP22-142.yaml) — Pearl Anime Paint: `Preserve the requested viewpoint, pose, crop and placement. Do not add a card frame, lettering or layout.`
+
+## pack_22 / 7. Manga Ink & Impact
+
+**Display:** Manga Ink & Impact · **Scope:** style · **Presets:** 8
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Impact language can force combat where the request has none.
+**Retain:** Brush pressure, screen tone and crisp black-white value structure.
+**Proposed action:** Use action marks only for requested motion; preserve quiet subjects.
+**Image acceptance check:** A stationary train platform gains manga mark language without an invented fight.
+
+Evidence [SP22-149](../../../components/recipes/styles/manifests/presets/pack_22/SP22-149.yaml) — Brush Action Ink: `Preserve the requested viewpoint, crop, framing and placement. Stroke energy does not require a new angle, pose or arrangement.`
+Evidence [SP22-150](../../../components/recipes/styles/manifests/presets/pack_22/SP22-150.yaml) — Screen-Tone Manga: `Preserve the requested viewpoint, crop and element placement. Tone placement follows the existing forms and does not create panels or a new layout.`
+
+## pack_22 / 8. Technical Illustration
+
+**Display:** Technical Illustration · **Scope:** style · **Presets:** 8
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Mechanical drafting can turn unrelated subjects into robots or products.
+**Retain:** Boundaries and contact shadows of existing parts, restrained facet shading and industrial airbrush transitions.
+**Proposed action:** Separate diagram framing from portable surface and line treatment.
+**Image acceptance check:** A ceramic flowerpot keeps its material and function under the style.
+
+Evidence [SP22-157](../../../components/recipes/styles/manifests/presets/pack_22/SP22-157.yaml) — Mechanical Cel: `Preserve the requested viewpoint, pose, crop and placement. Do not add labels, a frame, or a card layout.`
+Evidence [SP22-158](../../../components/recipes/styles/manifests/presets/pack_22/SP22-158.yaml) — Industrial Airbrush: `Preserve the requested viewpoint, pose, crop and placement. Do not restage the subject as a product shot or add a frame, labels or layout.`
+Evidence [SP22-159](../../../components/recipes/styles/manifests/presets/pack_22/SP22-159.yaml) — Facet Enamel: `Preserve the requested viewpoint, pose, crop and placement. Faceted color does not add seams, labels, a frame or a card layout.`
+
+## pack_22 / 9. Comic & Cartoon Illustration
+
+**Display:** Comic & Cartoon Illustration · **Scope:** style · **Presets:** 8
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Superhero and comic references can import a cast or panel story.
+**Retain:** Contour weight, flat color, modeled ink and expressive simplification.
+**Proposed action:** Make drawing grammar transferable without obligatory panels or heroes.
+**Image acceptance check:** A city bicycle can use the ink and color system without a costume.
+
+Evidence [SP22-165](../../../components/recipes/styles/manifests/presets/pack_22/SP22-165.yaml) — Modeled Contour Ink: `Preserve the requested viewpoint, crop, framing and placement. Line weight supports the given forms without changing the pose or arrangement.`
+Evidence [SP22-166](../../../components/recipes/styles/manifests/presets/pack_22/SP22-166.yaml) — Painterly Shape Illustration: `Preserve the requested viewpoint, crop, framing and placement. Edge softness changes rendering, not the arrangement or visual hierarchy of the scene.`
+
+## pack_22 / 10. Printmaking & Reproduction
+
+**Display:** Printmaking & Reproduction · **Scope:** style · **Presets:** 8
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Print variants can collapse into the same paper-distress overlay.
+**Retain:** Different carved, engraved, overprinted and registration marks.
+**Proposed action:** Keep each reproduction process visibly distinct at card scale.
+**Image acceptance check:** The same bird silhouette shows a different mark construction in each process.
+
+Evidence [SP22-173](../../../components/recipes/styles/manifests/presets/pack_22/SP22-173.yaml) — Bold Woodcut: `Preserve the requested viewpoint, pose, crop and placement. Do not add margins, a page, border, lettering or card layout.`
+Evidence [SP22-174](../../../components/recipes/styles/manifests/presets/pack_22/SP22-174.yaml) — Burin Microhatch: `Preserve the requested viewpoint, pose, crop and placement. Line density does not require a page, border, lettering or card layout.`
+
+## pack_22 / 11. Ornament & Symbolic Illustration
+
+**Display:** Ornament & Symbolic Illustration · **Scope:** mixed · **Presets:** 8
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Ornamental references can force a card border or literal symbol.
+**Retain:** Leaded segments, geometric planes and flowing interior ornament.
+**Proposed action:** Apply image-wide ornament styles to existing forms; keep filigree, gilding, porcelain and enamel effects local and frames optional.
+**Image acceptance check:** A plain lamp shows the color-cell or line treatment without a border.
+
+Evidence [SP22-181](../../../components/recipes/styles/manifests/presets/pack_22/SP22-181.yaml) — Leaded Color Segments: `Retain the requested viewpoint, framing, crop and element placement. Segment boundaries follow the existing forms rather than creating a border or alternate layout.`
+Evidence [SP22-182](../../../components/recipes/styles/manifests/presets/pack_22/SP22-182.yaml) — Deco Geometric Planes: `Preserve the requested viewpoint, crop, framing and placement. Geometric rhythm follows the existing composition without forming a frame or page layout.`
+Evidence [SP22-183](../../../components/recipes/styles/manifests/presets/pack_22/SP22-183.yaml) — Flowing Ornamental Lines: `Retain the requested viewpoint, framing, crop and placement. Curving rhythms adapt to the existing composition instead of changing pose or adding a decorative border.`
+
+## pack_22 / 12. Crafted Materials & Miniatures
+
+**Display:** Crafted Materials & Miniatures · **Scope:** style · **Presets:** 8
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Craft sources can replace the requested object with a toy or unrelated diorama.
+**Retain:** Clay, thread and paper construction cues with physical depth.
+**Proposed action:** Apply the selected crafted rendering language while retaining the requested object's identity and real materials.
+**Image acceptance check:** A requested bicycle remains a bicycle when rendered as cut paper or clay.
+
+Evidence [SP22-189](../../../components/recipes/styles/manifests/presets/pack_22/SP22-189.yaml) — Clay Garden: `Preserve the requested viewpoint, pose, crop and placement. Do not add a base, frame, lettering or display arrangement.`
+Evidence [SP22-190](../../../components/recipes/styles/manifests/presets/pack_22/SP22-190.yaml) — Crochet Macro: `Preserve the requested viewpoint, pose, crop and placement. Stitch texture does not add a display base, frame, lettering or layout.`
+Evidence [SP22-192](../../../components/recipes/styles/manifests/presets/pack_22/SP22-192.yaml) — Cut-Paper Layers: `Preserve the requested viewpoint, pose, crop and placement. Layered edges do not create a page, frame, lettering or layout.`
+
+## pack_22 / 13. Vintage Collectible Illustration
+
+**Display:** Vintage Collectible Illustration · **Scope:** style · **Presets:** 8
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Historical card references can force obsolete labels, frames or nostalgia props.
+**Retain:** Lithographic overlap, airbrush transitions and wax-pencil direction.
+**Proposed action:** Use print-era techniques independently of collectible layout.
+**Image acceptance check:** A modern houseplant carries the medium without a caption or trading-card frame.
+
+Evidence [SP22-197](../../../components/recipes/styles/manifests/presets/pack_22/SP22-197.yaml) — Layered Color Lithograph: `Preserve the requested viewpoint, crop, pose and placement. Do not add a card frame, typography, logo or layout.`
+Evidence [SP22-198](../../../components/recipes/styles/manifests/presets/pack_22/SP22-198.yaml) — Smooth Airbrush Painting: `Preserve the requested viewpoint, framing, pose and placement. Do not add dramatic perspective, framing devices or layout.`
+Evidence [SP22-199](../../../components/recipes/styles/manifests/presets/pack_22/SP22-199.yaml) — Directional Wax Pencil: `Preserve the requested viewpoint, crop, pose and placement. The drawn treatment does not alter composition or add borders, labels or layout.`
+
+## pack_22 / 14. Symbolic Graphic Illustration
+
+**Display:** Symbolic Graphic Illustration · **Scope:** style · **Presets:** 8
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Emblematic composition can turn every subject into a logo.
+**Retain:** Flat color, positive-negative balance and line hierarchy.
+**Proposed action:** Retain graphic economy while respecting the requested object and framing.
+**Image acceptance check:** A dog portrait stays a portrait, not a badge, under the style.
+
+Evidence [SP22-205](../../../components/recipes/styles/manifests/presets/pack_22/SP22-205.yaml) — Compact Flat-Color Print: `Preserve the requested viewpoint, crop, framing and placement. The printed treatment does not require a deck layout, frame, border or recropping.`
+Evidence [SP22-206](../../../components/recipes/styles/manifests/presets/pack_22/SP22-206.yaml) — Positive-Negative Silhouette: `Retain the requested viewpoint, crop, framing and placement. Do not enclose the image in a badge, shield or other container shape.`
+
+## pack_22 / 15. Digital Rendering Methods
+
+**Display:** Digital Rendering Methods · **Scope:** mixed · **Presets:** 8
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Digital method names can become a generic retro or glossy filter.
+**Retain:** Pixel clustering, selective dithering and measured polygon planes.
+**Proposed action:** Keep each sampling or polygon style distinct; confine glass and displacement modifiers to their requested targets.
+**Image acceptance check:** The same street scene exposes distinct pixel, dither and facet methods.
+
+Evidence [SP22-213](../../../components/recipes/styles/manifests/presets/pack_22/SP22-213.yaml) — Logical Pixel Clusters: `Preserve the requested viewpoint, crop, framing and placement. The pixel grid does not prescribe a game view, interface or layout.`
+Evidence [SP22-214](../../../components/recipes/styles/manifests/presets/pack_22/SP22-214.yaml) — Selective Dither Painting: `Preserve the requested viewpoint, crop, framing and placement. Quantized shading does not authorize a new crop, layout or arrangement.`
+Evidence [SP22-215](../../../components/recipes/styles/manifests/presets/pack_22/SP22-215.yaml) — Matte Polygonal Rendering: `Preserve the requested viewpoint, perspective, crop, framing and placement. An isometric camera or game-like setting is not implied.`
+Evidence [SP22-219](../../../components/recipes/styles/manifests/presets/pack_22/SP22-219.yaml) — Targeted Glass Rendering: `Preserve the requested viewpoint, crop, framing and placement; the material treatment does not add a container, display stand or new composition.`
+
+## pack_23 / 1. Manuscript Visual Systems
+
+**Display:** Manuscript Visual Systems · **Scope:** mixed · **Presets:** 6
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Medieval labels can add parchment, page frames and religious motifs by default.
+**Retain:** Opaque pigment planes, value bands, interlace and controlled manuscript line.
+**Proposed action:** Transfer the five image styles without an automatic codex page; use Scriptorium Page layout only when its structure profile is selected.
+**Image acceptance check:** A contemporary radio keeps its identity under the image styles; the page profile adds structure only when selected.
+
+Evidence [SP23-001](../../../components/recipes/styles/manifests/presets/pack_23/SP23-001.yaml) — Insular Interlace: `Preserve the requested viewpoint, scale, crop, placement and spatial relationships. Let compact silhouettes read within that frame without creating a page or border.`
+Evidence [SP23-002](../../../components/recipes/styles/manifests/presets/pack_23/SP23-002.yaml) — Beatus Chromatic: `Preserve the requested viewpoint, crop, framing and element placement. Make silhouettes clear inside that composition without imposing a page format.`
+Evidence [SP23-006](../../../components/recipes/styles/manifests/presets/pack_23/SP23-006.yaml) — Scriptorium Page: `When this profile is explicitly selected, organize the supplied content on one page with a primary field and secondary zones only for provided annotations or miniatures. Scale the layout to the actual content and preserve the requested wording and relationship`…
+
+## pack_23 / 2. Print & Engraving
+
+**Display:** Print & Engraving · **Scope:** mixed · **Presets:** 6
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Relief and intaglio methods can be flattened into one antique-paper texture.
+**Retain:** Blockcut mass, burin weave and etched line direction.
+**Proposed action:** Keep each physical print style distinct from aged-paper decoration; apply relief and intaglio modifiers only to requested accents over an existing base.
+**Image acceptance check:** The same leaf displays different relief and incision marks; disabling an accent modifier leaves the selected base intact.
+
+Evidence [SP23-007](../../../components/recipes/styles/manifests/presets/pack_23/SP23-007.yaml) — Blockcut Bold: `Preserve the requested viewpoint, crop, scale and spatial arrangement. Keep cut marks within the existing composition without adding a frame or print margin.`
+Evidence [SP23-008](../../../components/recipes/styles/manifests/presets/pack_23/SP23-008.yaml) — Burin Weave: `Preserve the requested viewpoint, crop, framing and placement. Linework supports existing depth without turning the image into a map, plate or diagram.`
+Evidence [SP23-011](../../../components/recipes/styles/manifests/presets/pack_23/SP23-011.yaml) — Hand-Tinted Relief: `Preserve the base image framing, crop, scale and placement exactly. This modifier does not alter composition.`
+
+## pack_23 / 3. Medieval Material Studies
+
+**Display:** Medieval Material Studies · **Scope:** style · **Presets:** 5
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Textile, fresco, enamel and stained-glass references can import liturgical objects or architecture.
+**Retain:** Woven planes, wool outlines, mineral pigment, enamel cells and leaded-light structure.
+**Proposed action:** Apply the selected rendering technique to the requested form without importing its source object, building or use.
+**Image acceptance check:** A modern coat keeps its cut under each material study; switching techniques changes the marks, not the garment's use.
+
+Evidence [SP23-013](../../../components/recipes/styles/manifests/presets/pack_23/SP23-013.yaml) — Woven Planes: `Preserve the requested viewpoint, crop, scale and spatial relationships. Do not add a textile border, display setting or ornamental frame.`
+Evidence [SP23-014](../../../components/recipes/styles/manifests/presets/pack_23/SP23-014.yaml) — Wool Outline: `Preserve requested viewpoint, crop, scale and arrangement. Do not impose a horizontal frieze or side-view layout.`
+Evidence [SP23-015](../../../components/recipes/styles/manifests/presets/pack_23/SP23-015.yaml) — Mineral Fresco: `Preserve the requested viewpoint, crop, scale and placement. Do not introduce an apse, architectural frame or mural boundary.`
+Evidence [SP23-016](../../../components/recipes/styles/manifests/presets/pack_23/SP23-016.yaml) — Champlevé Fields: `Preserve the requested viewpoint, crop, scale and arrangement. Do not turn an object into a roundel, medallion or framed display.`
+Evidence [SP23-017](../../../components/recipes/styles/manifests/presets/pack_23/SP23-017.yaml) — Leaded Light: `Preserve viewpoint, crop, scale and layout. Do not add an architectural opening, arch or circular composition around the image.`
+
+## pack_23 / 4. Regional Manuscript Traditions
+
+**Display:** Regional Manuscript Traditions · **Scope:** style · **Presets:** 4
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Regional names risk becoming a generic exotic ornament.
+**Retain:** Specific color-cell, spatial and geometric drawing structures.
+**Proposed action:** Keep provenance visible in metadata and active rules technically precise.
+**Image acceptance check:** An ordinary animal retains its identity while each tradition differs in mark and space for reasons supported by its recorded source corpus.
+
+Evidence [SP23-018](../../../components/recipes/styles/manifests/presets/pack_23/SP23-018.yaml) — Cilician Jewelwork: `Preserve the requested viewpoint, crop, scale and arrangement. Do not add a folio, border, frame or illuminated-page layout.`
+Evidence [SP23-019](../../../components/recipes/styles/manifests/presets/pack_23/SP23-019.yaml) — Ilkhanid Painted Space: `Preserve the requested viewpoint, crop, orientation and arrangement. Layered space does not authorize a different camera, panoramic layout or forms extending past the frame.`
+
+## pack_23 / 5. Revival & Storybook Illustration
+
+**Display:** Revival & Storybook Illustration · **Scope:** style · **Presets:** 4
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Revival illustration can be conflated with its medieval sources.
+**Retain:** Dense shape masses, reserved light, ornamental line within existing forms and illustrated wash as distinct treatments.
+**Proposed action:** Name the revival period accurately and avoid automatic fairytale scenes.
+**Image acceptance check:** A current-day garden tool shows revival drawing without a costume or story.
+
+Evidence [SP23-022](../../../components/recipes/styles/manifests/presets/pack_23/SP23-022.yaml) — Kelmscott Density: `Preserve the requested viewpoint, crop, orientation and arrangement. Do not convert the image into a book page or add margins, typography, a floral border or printer's marks.`
+Evidence [SP23-023](../../../components/recipes/styles/manifests/presets/pack_23/SP23-023.yaml) — Ornamental Fairytale: `Preserve the requested viewpoint, crop, orientation and arrangement. Do not impose a vertical page, frame, border or poster layout.`
+
+## pack_23 / 6. Classic RPG Visual Studies
+
+**Display:** Classic RPG Visual Studies · **Scope:** style · **Presets:** 4
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Game references blend portrait, sprite, environment, HUD and camera obligations.
+**Retain:** Era-specific raster, gouache and interface craft.
+**Proposed action:** Keep content and camera guardrails explicit within each style, and transfer its rendering without inventing HUD or dungeon-map output.
+**Image acceptance check:** A requested portrait does not become a HUD or dungeon map unless selected.
+
+Evidence [SP23-026](../../../components/recipes/styles/manifests/presets/pack_23/SP23-026.yaml) — VGA Chronicle: `Preserve the requested viewpoint, crop, orientation, aspect ratio and arrangement. Do not recast the image as a game screen, title frame, HUD or fixed retro display format.`
+Evidence [SP23-027](../../../components/recipes/styles/manifests/presets/pack_23/SP23-027.yaml) — Dense Pixel Craft: `Preserve the requested viewpoint, crop, orientation, perspective and layout. Do not impose an oblique or isometric view, inventory arrangement, map grid or gameplay frame.`
+
+## pack_23 / 7. Indexed Raster Language
+
+**Display:** Indexed Raster Language · **Scope:** style · **Presets:** 4
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Retro pixels can degrade into a uniform mosaic filter.
+**Retain:** Intentional palette limits, cluster shape and selective dither.
+**Proposed action:** Keep cluster construction distinct per preset and avoid noisy upscaling.
+**Image acceptance check:** The same bird keeps its silhouette under all four distinct raster rules.
+
+Evidence [SP23-030](../../../components/recipes/styles/manifests/presets/pack_23/SP23-030.yaml) — Sculpted Indexed Clusters: `Preserve the requested viewpoint, crop, orientation, aspect ratio and arrangement. Do not turn the image into a retro game screen, tile map, interface or framed display.`
+Evidence [SP23-031](../../../components/recipes/styles/manifests/presets/pack_23/SP23-031.yaml) — Luminous Contrast Clusters: `Preserve the requested viewpoint, crop, orientation, aspect ratio and arrangement. Do not impose a top-down world map, grid, inventory, gameplay layout or interface.`
+
+## pack_23 / 8. Retro 3D Visual Studies
+
+**Display:** Retro 3D Visual Studies · **Scope:** style · **Presets:** 3
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Retro 3D can force a game camera or first-person composition.
+**Retain:** Facet shading, angular planes and painted low-resolution texture.
+**Proposed action:** Transfer geometry and texture treatment independently of viewpoint.
+**Image acceptance check:** A tabletop radio preserves the requested camera and gains low-poly treatment.
+
+Evidence [SP23-034](../../../components/recipes/styles/manifests/presets/pack_23/SP23-034.yaml) — Controlled Facet Shading: `Preserve the requested viewpoint, crop, perspective and arrangement. Do not impose a first-person camera, perspective distortion, interface or weapon-in-view framing.`
+Evidence [SP23-035](../../../components/recipes/styles/manifests/presets/pack_23/SP23-035.yaml) — Angular Painted Planes: `Preserve the requested viewpoint, crop, perspective, scale and arrangement. Do not impose a game landscape, floating-island composition, horizon or interface.`
+
+## pack_23 / 9. Painted RPG & Tactics
+
+**Display:** Painted RPG & Tactics · **Scope:** style · **Presets:** 5
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** RPG origins can require a combat grid or heroic party.
+**Retain:** Transparent wash, opaque gouache, layered planes and compact pixel clusters.
+**Proposed action:** Transfer each paint or pixel construction method while leaving game layout optional.
+**Image acceptance check:** The same quiet bicycle retains its viewpoint and parts under both painted and pixel treatments, without a tactical grid.
+
+Evidence [SP23-037](../../../components/recipes/styles/manifests/presets/pack_23/SP23-037.yaml) — Transparent Watercolor Wash: `Preserve the requested viewpoint, crop, scale, pose and spatial relationships. The painting treatment does not add borders or change the layout.`
+Evidence [SP23-038](../../../components/recipes/styles/manifests/presets/pack_23/SP23-038.yaml) — Opaque Gouache Painting: `Preserve the requested viewpoint, crop, scale and arrangement. Simplified edges do not change perspective, pose or spatial relationships.`
+Evidence [SP23-041](../../../components/recipes/styles/manifests/presets/pack_23/SP23-041.yaml) — Compact Pixel-Cluster Illustration: `Preserve the requested viewpoint, apparent scale, crop and spatial arrangement. Pixel clusters refine the existing image without setting a new perspective or layout.`
+
+## pack_23 / 10. Tabletop Illustration Studies
+
+**Display:** Tabletop Illustration Studies · **Scope:** style · **Presets:** 5
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Tabletop art, editorial layout and reproduction wear can be conflated.
+**Retain:** Ink mass, painted shape and selective print wear.
+**Proposed action:** Apply image styles without adding captions, card layout or statistics, which are not profiles in this category.
+**Image acceptance check:** A plain original creature portrait carries the style without a game card frame.
+
+Evidence [SP23-042](../../../components/recipes/styles/manifests/presets/pack_23/SP23-042.yaml) — High-Contrast Overprint: `Preserve the requested viewpoint, crop, orientation, arrangement and negative space. Do not impose additional framing or a layout that changes the requested composition.`
+Evidence [SP23-043](../../../components/recipes/styles/manifests/presets/pack_23/SP23-043.yaml) — Selective Reproduction Wear: `Preserve the requested viewpoint, crop, orientation, composition and negative space. Do not impose additional framing or layout.`
+
+## pack_23 / 11. Modern Visual Techniques
+
+**Display:** Modern Visual Techniques · **Scope:** mixed · **Presets:** 6
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Reference-sheet and raster techniques can add fabricated labels or forced props.
+**Retain:** Flat planes, data-bounded diagrams and tactile raster modeling.
+**Proposed action:** Keep the five image styles on the requested content and composition; only the selected Data-Bounded Reference Sheet profile may impose a sheet layout, and its facts must be supplied.
+**Image acceptance check:** A simple shoe diagram uses only legible supplied facts and no filler measurements.
+
+Evidence [SP23-047](../../../components/recipes/styles/manifests/presets/pack_23/SP23-047.yaml) — Layered Flat-Plane Rendering: `Preserve the requested viewpoint, crop, framing, scale and placement. Layered rendering does not require a front-facing pose, vignette or display base.`
+Evidence [SP23-048](../../../components/recipes/styles/manifests/presets/pack_23/SP23-048.yaml) — Data-Bounded Reference Sheet: `Only when this profile is explicitly selected, organize supplied content around a primary image and add secondary zones only for user-provided details or annotations. Scale the arrangement to the available information and preserve the requested wording and spa`…
+
+## pack_23 / 12. Hybrid Visual Studies
+
+**Display:** Hybrid Visual Studies · **Scope:** mixed · **Presets:** 6
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** Combining media can erase the dominant technique, while a local pigment modifier can spread without a requested material target.
+**Retain:** A primary medium with one controlled secondary accent.
+**Proposed action:** State which process leads in each image style; apply the pigment modifier only to a named compatible target over its base.
+**Image acceptance check:** A single bird keeps form under the five image styles; toggling the pigment modifier changes only the selected material accent.
+
+Evidence [SP23-053](../../../components/recipes/styles/manifests/presets/pack_23/SP23-053.yaml) — Opaque Plane and Raster Accents: `Preserve the requested viewpoint, crop, scale and spatial relationships. This rendering method does not alter the requested composition or add graphic elements.`
+Evidence [SP23-054](../../../components/recipes/styles/manifests/presets/pack_23/SP23-054.yaml) — Directional Hatch Raster: `Preserve the requested viewpoint, crop, scale and spatial relationships. Rasterizing strokes does not change perspective or the requested arrangement.`
+Evidence [SP23-056](../../../components/recipes/styles/manifests/presets/pack_23/SP23-056.yaml) — Selective Pigment Surface Modifier: `Preserve the base image viewpoint, crop, scale and placement exactly. This modifier does not alter composition or add elements.`
+
+## pack_14 / Greek Mythology — Epic Noir
+
+**Display:** Greek Mythology — Epic Noir · **Scope:** style · **Presets:** 1
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** The rejected refactor removed recognizable identity or duplicated one aesthetic as material and situation variants.
+**Retain:** Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.
+**Proposed action:** Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities.
+**Image acceptance check:** A matched blue bicycle and modern-person pilot retained both subjects and made one narrow meander or incised motif legible; the refreshed composition was reviewed. Further subjects and user acceptance remain pending.
+
+Evidence [SP14-142](../../../components/recipes/styles/manifests/presets/pack_14/SP14-142.yaml) — Hellenic Epic Noir: `Honor the requested view, staging and place category. Build any frieze-like rhythm from the requested subject and existing geometry, never from invented colonnades, temple fronts or a decorative frame.`
+
+## pack_14 / Japanese Mythology — Kami & Yokai
+
+**Display:** Japanese Mythology — Kami & Yokai · **Scope:** style · **Presets:** 1
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** The rejected refactor removed recognizable identity or duplicated one aesthetic as material and situation variants.
+**Retain:** Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.
+**Proposed action:** Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities.
+**Image acceptance check:** Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.
+
+Evidence [SP14-143](../../../components/recipes/styles/manifests/presets/pack_14/SP14-143.yaml) — Japanese Kami & Yokai Myth-Noir: `Honor the requested camera and staging. Anchor the single folded-paper and cord cue at one existing seam or crossing, with clear surrounding space. Do not repeat it over matching surfaces or impose a shrine, scroll, or ritual layout.`
+
+## pack_14 / Norse Mythology — Sagas
+
+**Display:** Norse Mythology — Sagas · **Scope:** style · **Presets:** 1
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** The rejected refactor removed recognizable identity or duplicated one aesthetic as material and situation variants.
+**Retain:** Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.
+**Proposed action:** Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities.
+**Image acceptance check:** Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.
+
+Evidence [SP14-144](../../../components/recipes/styles/manifests/presets/pack_14/SP14-144.yaml) — Norse Saga Noir: `Preserve the requested view and action. A branching line or weighted diagonal may organize the existing composition only when its forms support it; do not impose a world tree, rune stone, ship, border, or period interior.`
+
+## pack_14 / Mande Oral Epic
+
+**Display:** Mande Oral Epic · **Scope:** style · **Presets:** 1
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** The rejected refactor removed recognizable identity or duplicated one aesthetic as material and situation variants.
+**Retain:** Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.
+**Proposed action:** Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities.
+**Image acceptance check:** Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.
+
+Evidence [SP14-145](../../../components/recipes/styles/manifests/presets/pack_14/SP14-145.yaml) — Mande Epic & Griot: `Honor the requested camera and scene. Let the parallel lines and one woven area form a brief visual cadence only where an existing form supports it; otherwise leave the area open. Do not force a circular or ceremonial composition or repeat a border on each obj`…
+
+## pack_14 / Yoruba Mythology — Orisha
+
+**Display:** Yoruba Mythology — Orisha · **Scope:** style · **Presets:** 1
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** The rejected refactor removed recognizable identity or duplicated one aesthetic as material and situation variants.
+**Retain:** Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.
+**Proposed action:** Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities.
+**Image acceptance check:** Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.
+
+Evidence [SP14-146](../../../components/recipes/styles/manifests/presets/pack_14/SP14-146.yaml) — Yoruba Orisha Myth-Noir: `Preserve the requested view, pose and action. Balance a clear main mass with rhythmic supporting shapes and a purposeful asymmetry. Motifs should follow the subject rather than requiring a frontal icon, staff, shrine or repeated twin-axe composition.`
+
+## pack_14 / Akan Mythology — Anansi
+
+**Display:** Akan Mythology — Anansi · **Scope:** style · **Presets:** 1
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** The rejected refactor removed recognizable identity or duplicated one aesthetic as material and situation variants.
+**Retain:** Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.
+**Proposed action:** Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities.
+**Image acceptance check:** Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.
+
+Evidence [SP14-147](../../../components/recipes/styles/manifests/presets/pack_14/SP14-147.yaml) — Akan Anansi Trickster: `Honor the requested scene. A clever line reversal or crossing path may guide attention toward the focal action. Place the selected web sign only where an existing textile or fitting supports it; do not require a literal spider web, repeated medallions, or a ce`…
+
+## pack_14 / Egyptian Mythology
+
+**Display:** Egyptian Mythology · **Scope:** style · **Presets:** 1
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** The rejected refactor removed recognizable identity or duplicated one aesthetic as material and situation variants.
+**Retain:** Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.
+**Proposed action:** Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities.
+**Image acceptance check:** A matched blue bicycle and modern-person pilot retained both subjects with a restrained primary Egyptian motif; the refreshed composition was reviewed. Further subjects and user acceptance remain pending.
+
+Evidence [SP14-148](../../../components/recipes/styles/manifests/presets/pack_14/SP14-148.yaml) — Egyptian Mythic Noir: `Honor the requested view, framing and ordinary scale. Establish one clear focal silhouette and balanced supporting masses within the existing scene; do not impose columns, a grand facade, side-on procession, border or temple.`
+
+## pack_14 / Maya Mythology
+
+**Display:** Maya Mythology · **Scope:** style · **Presets:** 1
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** The rejected refactor removed recognizable identity or duplicated one aesthetic as material and situation variants.
+**Retain:** Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.
+**Proposed action:** Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities.
+**Image acceptance check:** Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.
+
+Evidence [SP14-149](../../../components/recipes/styles/manifests/presets/pack_14/SP14-149.yaml) — Maya Mythic Noir: `Retain the requested camera and layout. Let the localized fold and parallel lines guide the eye toward the main gesture, with clear empty intervals. Avoid decorative curves that become volutes, mandatory pyramids, symmetrical deity portraits or ornamental card`…
+
+## pack_14 / Mexica Mythology
+
+**Display:** Mexica Mythology · **Scope:** style · **Presets:** 1
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** The rejected refactor removed recognizable identity or duplicated one aesthetic as material and situation variants.
+**Retain:** Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.
+**Proposed action:** Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities.
+**Image acceptance check:** Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.
+
+Evidence [SP14-150](../../../components/recipes/styles/manifests/presets/pack_14/SP14-150.yaml) — Mexica Mythic Noir: `Keep requested viewpoint and staging. Build a strong primary mass with one counter-direction and a limited number of coiling or stepped supporting rhythms. Leave negative space around the subject; do not impose a calendar disk, temple front or central mask.`
+
+## pack_15 / 1. Classic Industrial Punks
+
+**Display:** Industrial futures · **Scope:** style · **Presets:** 3
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** The rejected refactor removed recognizable identity or duplicated one aesthetic as material and situation variants.
+**Retain:** Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.
+**Proposed action:** Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities.
+**Image acceptance check:** Matched bicycle and espresso-machine pilots differentiated Steam pressure hardware from Clock escapement. Later ordinary-subject pairs included Dieselpunk. Representative cards were reviewed; transfer fidelity and visual acceptance remain pending.
+
+Evidence [SP15-081](../../../components/recipes/styles/manifests/presets/pack_15/SP15-081.yaml) — Steampunk: `Keep requested crop and viewpoint. Arrange functioning gears at existing joints and pressure routes only along an existing pressure mechanism; do not add equipment to an ordinary object or require a workshop, airship or foundry.`
+Evidence [SP15-083](../../../components/recipes/styles/manifests/presets/pack_15/SP15-083.yaml) — Clockpunk: `Preserve view and placement. Let measured intervals and interlocking arcs organize the form without imposing a dial, tower or radial layout.`
+
+## pack_15 / 2. Neon, Net & Signal Punks
+
+**Display:** Signal futures · **Scope:** style · **Presets:** 2
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** The rejected refactor removed recognizable identity or duplicated one aesthetic as material and situation variants.
+**Retain:** Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.
+**Proposed action:** Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities.
+**Image acceptance check:** Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.
+
+Evidence [SP15-084](../../../components/recipes/styles/manifests/presets/pack_15/SP15-084.yaml) — Cyberpunk: `Preserve view and placement. Separate subject from technology with layered planes and directional signals; a skyline, street, server room or screen is not required.`
+Evidence [SP15-085](../../../components/recipes/styles/manifests/presets/pack_15/SP15-085.yaml) — Netpunk: `Preserve view and crop. Use connected paths to guide the eye through the existing composition; do not force a screen, diagram, server room or hub.`
+
+## pack_15 / 3. Eco, Repair & Climate Punks
+
+**Display:** Repair futures · **Scope:** style · **Presets:** 3
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** The rejected refactor removed recognizable identity or duplicated one aesthetic as material and situation variants.
+**Retain:** Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.
+**Proposed action:** Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities.
+**Image acceptance check:** Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.
+
+Evidence [SP15-087](../../../components/recipes/styles/manifests/presets/pack_15/SP15-087.yaml) — Solarpunk: `Preserve crop and viewpoint. Use modular overlaps and open circulation; do not require a city, farm, greenhouse or utopian skyline.`
+Evidence [SP15-091](../../../components/recipes/styles/manifests/presets/pack_15/SP15-091.yaml) — Desertpunk: `Preserve view and crop. Use shade bands and resource routes to organize the subject; do not require dunes, caravan or settlement.`
+
+## pack_15 / 4. Bio, Myco & Body Punks
+
+**Display:** Biological futures · **Scope:** style · **Presets:** 3
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** The rejected refactor removed recognizable identity or duplicated one aesthetic as material and situation variants.
+**Retain:** Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.
+**Proposed action:** Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities.
+**Image acceptance check:** Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.
+
+Evidence [SP15-094](../../../components/recipes/styles/manifests/presets/pack_15/SP15-094.yaml) — Biopunk: `Preserve viewpoint and placement. Use organic planes and technical traces within the requested composition; a lab, greenhouse or close-up is not required.`
+Evidence [SP15-096](../../../components/recipes/styles/manifests/presets/pack_15/SP15-096.yaml) — Bodypunk: `Preserve view and subject placement. Let contour paths guide the eye without forcing portrait, examination or close-up.`
+
+## pack_15 / 5. Ocean, Ice & Terrain Punks
+
+**Display:** Terrain futures · **Scope:** style · **Presets:** 2
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** The rejected refactor removed recognizable identity or duplicated one aesthetic as material and situation variants.
+**Retain:** Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.
+**Proposed action:** Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities.
+**Image acceptance check:** Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.
+
+Evidence [SP15-097](../../../components/recipes/styles/manifests/presets/pack_15/SP15-097.yaml) — Seapunk: `Preserve viewpoint and placement. Let tide bands and digital geometry guide the eye without requiring ocean, vessel, reef or sea creature.`
+Evidence [SP15-098](../../../components/recipes/styles/manifests/presets/pack_15/SP15-098.yaml) — Icepunk: `Preserve viewpoint, crop and the requested room context. Arrange compressed planes and diagonal stress paths on existing structures rather than presenting furniture as an isolated product lineup; do not add a polar landscape or expedition view unless requested`…
+
+## pack_15 / 6. Street, Riot & DIY Punks
+
+**Display:** DIY futures · **Scope:** style · **Presets:** 6
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** The rejected refactor removed recognizable identity or duplicated one aesthetic as material and situation variants.
+**Retain:** Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.
+**Proposed action:** Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities.
+**Image acceptance check:** Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.
+
+Evidence [SP15-101](../../../components/recipes/styles/manifests/presets/pack_15/SP15-101.yaml) — Zinepunk: `Keep the source framing and dominant subject; use one strong diagonal or asymmetric pasted strip to create zine energy, with supporting fragments kept subordinate.`
+Evidence [SP15-106](../../../components/recipes/styles/manifests/presets/pack_15/SP15-106.yaml) — Crustpunk: `Let garment construction and hand-marked patches support the requested focal subject; favor grounded, slightly rough contours without forcing a boot-level portrait.`
+
+## pack_15 / 7. Media, Vapor & Glitch Punks
+
+**Display:** Media futures · **Scope:** style · **Presets:** 4
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** The rejected refactor removed recognizable identity or duplicated one aesthetic as material and situation variants.
+**Retain:** Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.
+**Proposed action:** Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities.
+**Image acceptance check:** Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.
+
+Evidence [SP15-107](../../../components/recipes/styles/manifests/presets/pack_15/SP15-107.yaml) — Vaporpunk: `Use receding tile divisions or gentle reflective bands to lead toward the subject; preserve the requested setting and keep the background subordinate.`
+Evidence [SP15-110](../../../components/recipes/styles/manifests/presets/pack_15/SP15-110.yaml) — Glitchpunk: `Preserve the requested camera and silhouette; use a few short horizontal or stepped disruptions, with negative space around the focal form.`
+
+## pack_15 / 8. Occult, Myth & Gothic Punks
+
+**Display:** Occult futures · **Scope:** style · **Presets:** 6
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** The rejected refactor removed recognizable identity or duplicated one aesthetic as material and situation variants.
+**Retain:** Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.
+**Proposed action:** Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities.
+**Image acceptance check:** Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.
+
+Evidence [SP15-111](../../../components/recipes/styles/manifests/presets/pack_15/SP15-111.yaml) — Witchpunk: `Keep any knot or mark attached to an existing form; preserve open space and the requested framing instead of adding a standalone talisman, altar, or prop arrangement.`
+Evidence [SP15-116](../../../components/recipes/styles/manifests/presets/pack_15/SP15-116.yaml) — Folk Horror Punk: `Preserve the requested camera, subject placement, and environment; use asymmetry and local spacing in the existing composition without prescribing a field, forest, cottage, or ritual arrangement.`
+
+## pack_15 / 9. Space, Atomic & Ray Punks
+
+**Display:** Atomic & orbital futures · **Scope:** style · **Presets:** 4
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** The rejected refactor removed recognizable identity or duplicated one aesthetic as material and situation variants.
+**Retain:** Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.
+**Proposed action:** Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities.
+**Image acceptance check:** Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.
+
+Evidence [SP15-117](../../../components/recipes/styles/manifests/presets/pack_15/SP15-117.yaml) — Atompunk: `Balance rounded masses around the subject with orbit or radial accents; preserve requested framing and use the atomic-age geometry to direct the eye, not to replace the subject.`
+Evidence [SP15-120](../../../components/recipes/styles/manifests/presets/pack_15/SP15-120.yaml) — Lunarpunk: `Let a few arcs or habitat curves lead around the subject while plant forms stay subordinate; preserve requested crop and avoid forcing a dome or relay dish.`
+
+## pack_15 / 10. Primitive, Stone & Salvage Punks
+
+**Display:** Primitive & salvage futures · **Scope:** style · **Presets:** 2
+**Editorial state:** text-reviewed · **Cross-subject image validation:** pending
+
+**Problem:** The rejected refactor removed recognizable identity or duplicated one aesthetic as material and situation variants.
+**Retain:** Requested subject, action, explicit reference locks and meaningful culture or X-punk design signatures.
+**Proposed action:** Apply reviewed characteristic motifs and construction to unspecified design choices; retain history and archive retired identities.
+**Image acceptance check:** Primary agent reviewed source DNA and representative cards. Two matched everyday-subject images per active style were generated through ChatGPT HTTP; visual acceptance remains pending because some outputs changed requested counts or rendered as photo/CG.
+
+Evidence [SP15-121](../../../components/recipes/styles/manifests/presets/pack_15/SP15-121.yaml) — Stonepunk: `Organize forms as stepped masses and interlocking arcs with open intervals; preserve the subject's established focal hierarchy rather than building a fixed mechanism diagram.`
+Evidence [SP15-122](../../../components/recipes/styles/manifests/presets/pack_15/SP15-122.yaml) — Low-Tech Punk: `Arrange modules and lines with open intervals so load paths and cause-and-effect stay readable; preserve the requested crop and focal hierarchy.`

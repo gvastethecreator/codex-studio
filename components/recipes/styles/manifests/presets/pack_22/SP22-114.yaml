@@ -1,0 +1,96 @@
+schemaVersion: 1
+id: SP22-114
+packId: pack_22
+name: Mineral Realism
+category: 2. Epic Digital Painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - epic-digital-painting
+  - material-aware-grain
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Material-aware digital painting combines clear planes with restrained granular variation that
+    follows the actual surface rather than becoming a global texture effect.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Add pores, fractures or grain only
+    where they fit the represented material; do not turn skin, fabric or manufactured forms to stone.
+  color_and_tone: >-
+    Distinguish materials through value and local color relationships instead of noisy contrast. Keep the
+    palette requested by the user.
+  lighting_and_shadow: >-
+    Follow the requested lighting. Let value describe surface differences without adding sparkle, harsh
+    glints or unsupported sources of light.
+  texture_and_material: >-
+    Keep grain at a controlled scale within each material and vary it only where the surface warrants it.
+    Preserve smooth and rough areas as distinct instead of covering them uniformly.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and element placement. Material texture does not
+    require a close-up or altered arrangement.
+  atmosphere_and_mood: >-
+    Keep the requested mood. Granular surfaces do not imply age, decay, geology or a fantasy setting.
+  rendering_and_quality: >-
+    Keep major forms clear and texture subordinate to them. Make surface variation legible at a useful
+    scale without letting noise replace edges or material boundaries.
+avoidRules:
+  - texture noise that ignores material boundaries
+  - stone-like conversion of unrelated surfaces
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-114.webp
+attributes:
+  negativePrompt: texture noise that ignores material boundaries, stone-like conversion of unrelated surfaces
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: painting
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: painting
+    avoidRules:
+      - text: texture noise that ignores material boundaries
+        field: texture_and_material
+      - text: stone-like conversion of unrelated surfaces
+        field: texture_and_material
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S014
+    sourceTitle: Mineral Realism
+    referenceIds:
+      - S48
+      - S47
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: epic-digital-painting
+  categoryName: 2. Epic Digital Painting
+  tags:
+    - trading-card-illustration
+    - epic-digital-painting
+    - material-aware-grain
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

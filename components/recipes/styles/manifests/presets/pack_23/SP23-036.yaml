@@ -1,0 +1,110 @@
+schemaVersion: 1
+id: SP23-036
+packId: pack_23
+name: Painted Facet Textures
+category: 8. Retro 3D Visual Studies
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - retro-3d-visual-studies
+  - visible-geometric-facets
+  - short-painted-ramps
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Keep geometric facets visible while using small painted textures to carry volume information.
+    Reinforce existing folds and surfaces with short tonal ramps, bounded soft shading and clear
+    polygonal contours.
+  subject_treatment: >-
+    Preserve the requested subject, identity, anatomy, count, pose, action and proportions. Clarify
+    existing forms through painted texture and visible facets without adding a protagonist, changing
+    clothing or introducing armor.
+  color_and_tone: >-
+    Preserve requested colors and value relationships. Keep painted ramps short and consistent with
+    the supplied palette; do not apply a fixed historical or game-derived color grade.
+  lighting_and_shadow: >-
+    Follow the requested lighting and shadow. Allow limited softness within existing forms while
+    keeping facet boundaries legible; do not introduce dramatic angles of view, aberration or glow.
+  texture_and_material: >-
+    Use small painted texture to describe the actual surfaces and folds already present. Keep texture
+    material-specific and subordinate to form; do not add costume, armor or aging effects.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, perspective, orientation and arrangement. Do not impose an
+    upward-looking view, ruined city, cinematic frame or video artifact.
+  atmosphere_and_mood: >-
+    Preserve the user's setting and mood. Faceted 3D construction is a rendering approach, not a
+    request for fantasy, ruin, combat or a period setting.
+  rendering_and_quality: >-
+    Balance clearly readable polygons with volume-bearing surface detail. Keep soft shading limited,
+    ramps short and contours geometric; avoid aberration, blur and featureless low-poly reduction.
+avoidRules:
+  - unrequested upward-looking camera, ruined city or cinematic scene
+  - unrequested protagonist, armor or costume change
+  - video aberration, chromatic fringing or simulated signal damage
+  - texture that hides facet boundaries or changes material identity
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-036.webp
+attributes:
+  negativePrompt: >-
+    unrequested upward-looking camera, ruined city or cinematic scene, unrequested protagonist, armor
+    or costume change, video aberration, chromatic fringing or simulated signal damage, texture that
+    hides facet boundaries or changes material identity
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: three-dimensional-faceted-rendering-with-painted-texture
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: visible-geometric-facets-small-painted-volume-textures-short-ramps
+    avoidRules:
+      - text: unrequested upward-looking camera, ruined city or cinematic scene
+        field: camera_and_composition
+      - text: unrequested protagonist, armor or costume change
+        field: subject_treatment
+      - text: video aberration, chromatic fringing or simulated signal damage
+        field: global
+      - text: texture that hides facet boundaries or changes material identity
+        field: texture_and_material
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: D3-03
+    sourceTitle: Painted Facets
+    historicalScope: 'PlayStation / fantasía 3D · referencia Vagrant Story'
+    referenceIds:
+      - S37
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: retro-3d-visual-studies
+  categoryName: 8. Retro 3D Visual Studies
+  tags:
+    - curation-v2
+    - retro-3d-visual-studies
+    - visible-geometric-facets
+    - short-painted-ramps
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

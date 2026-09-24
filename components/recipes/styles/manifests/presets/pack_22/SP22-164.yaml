@@ -1,0 +1,104 @@
+schemaVersion: 1
+id: SP22-164
+packId: pack_22
+name: Toybox Render
+category: 8. Technical Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - technical-illustration
+  - simplified-synthetic-render
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Stylized dimensional rendering simplifies major volumes and differentiates surfaces with subtle
+    painted material cues and softly controlled edges.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Apply dimensional simplification
+    to the existing subject without changing what it is or how it functions.
+  color_and_tone: >-
+    Retain the requested palette and use clear local colors. Avoid adding plastic-like color or
+    changing material appearance beyond what the request supports.
+  lighting_and_shadow: >-
+    Follow the requested light direction and contrast. Use broad, controlled shading without adding
+    a new light source or environment.
+  texture_and_material: >-
+    Keep matte or satin cues only where the depicted material supports them. Preserve visible details
+    and avoid smoothing every surface into plastic.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, pose, crop and placement. Add no pedestal, assembly joints,
+    lettering, frame or card layout.
+  atmosphere_and_mood: >-
+    Keep the requested setting and tone. Dimensional rendering does not alter the narrative or
+    create new background context.
+  rendering_and_quality: >-
+    Simplify broad volume transitions while keeping edges slightly softened, not melted. Retain the
+    small details and silhouette that identify the original subject.
+avoidRules:
+  - redesigning the subject as a toy or model
+  - unrequested plastic surfaces, joints, or display props
+  - unrequested lettering, frame or card layout
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-164.webp
+attributes:
+  negativePrompt: >-
+    redesigning the subject as a toy or model, unrequested plastic surfaces, joints, or display props,
+    unrequested lettering, frame or card layout
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: redesigning the subject as a toy or model
+        field: subject_treatment
+      - text: unrequested plastic surfaces, joints, or display props
+        field: texture_and_material
+      - text: unrequested lettering, frame or card layout
+        field: global
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S064
+    sourceTitle: Toybox Render
+    referenceIds:
+      - S25
+      - S43
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    derivedFrom:
+      - TCG-S064
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: technical-illustration
+  categoryName: 8. Technical Illustration
+  tags:
+    - trading-card-illustration
+    - technical-illustration
+    - simplified-synthetic-render
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -1,0 +1,107 @@
+schemaVersion: 1
+id: SP23-017
+packId: pack_23
+name: Leaded Light
+category: 3. Medieval Material Studies
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - medieval-material-studies
+  - leaded-glass-panels
+  - material-target-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Translucent colored panes, value-separated structural divisions and painted detail within each
+    pane form a leaded-glass image with moderate internal luminosity and no unrequested bloom, applied
+    only to the explicitly authorized glass target.
+  subject_treatment: >-
+    Preserve requested identity, proportions, count, action and arrangement. Use the glass-panel
+    structure only on the surface the user explicitly names as the material target; leave other
+    subjects and materials unchanged.
+  color_and_tone: >-
+    Retain the requested palette. Use pane translucency and structural divisions to separate existing
+    color areas, choosing dark divisions only when compatible with that palette; do not force saturated
+    colors, circular symmetry or a halo.
+  lighting_and_shadow: >-
+    Follow the requested lighting and shadow direction. Allow restrained transmitted light within the
+    authorized glass target without adding a window, unrequested backlight source or bloom effect.
+  texture_and_material: >-
+    Require an explicit material target before rendering it as colored glass with structural lead
+    divisions and contained painted details. Keep luminosity moderate and preserve all non-target
+    materials as requested.
+  camera_and_composition: >-
+    Preserve viewpoint, crop, scale and layout. Do not add an architectural opening, arch or circular
+    composition around the image.
+  atmosphere_and_mood: >-
+    Preserve the requested atmosphere and setting. Colored glass alone does not imply a church, saint,
+    sacred scene or historical location.
+  rendering_and_quality: >-
+    Keep pane boundaries legible and painted details contained within them. Distinguish transmitted
+    color from opaque enamel by restrained inner light, not an unrequested luminous outline or broad
+    bloom.
+avoidRules:
+  - unrequested window, arch, church, saint or halo
+  - unrequested circular symmetry
+  - unrequested invasive bloom or backlight source
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-017.webp
+attributes:
+  negativePrompt: >-
+    unrequested window, arch, church, saint or halo, unrequested circular symmetry, unrequested
+    invasive bloom or backlight source
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: materialTarget
+    medium: leaded-colored-glass
+    constraints:
+      - field: texture_and_material
+        group: materialTarget
+        value: user-authorized-leaded-glass-target
+    avoidRules:
+      - text: unrequested window, arch, church, saint or halo
+        field: global
+      - text: unrequested circular symmetry
+        field: camera_and_composition
+      - text: unrequested invasive bloom or backlight source
+        field: lighting_and_shadow
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: MT-05
+    sourceTitle: Leaded Light
+    historicalScope: 'Vidriera medieval'
+    referenceIds:
+      - S16
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: medieval-material-studies
+  categoryName: 3. Medieval Material Studies
+  tags:
+    - curation-v2
+    - medieval-material-studies
+    - leaded-glass-panels
+    - material-target-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

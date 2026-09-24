@@ -1,0 +1,82 @@
+schemaVersion: 1
+id: SP15-104
+packId: pack_15
+name: Streetpunk
+category: 6. Street, Riot & DIY Punks
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - street-riot-and-diy-punks
+visualDna:
+  aesthetic: >-
+    Overlap flat rectangular and slanted color slabs with deliberate offsets, crisp edges, and sparse
+    bright interruptions.
+  subject_treatment: >-
+    Preserve requested content and function; translate existing planes into layered color shapes without
+    adding signage or a public event.
+  color_and_tone: Use charcoal and cream with cyan and one hard red or amber accent; keep each layer distinct.
+  lighting_and_shadow: Use simple contact shadows between selected planes and contain any glow to a small area.
+  texture_and_material: Favor matte flat color and smooth edges; keep torn fibers from becoming the main surface.
+  camera_and_composition: Preserve the requested crop; offset a few planes around the focal subject and leave open gaps.
+  atmosphere_and_mood: Feel direct and alert through clean signal contrast and abrupt layer changes.
+  rendering_and_quality: Keep the color hierarchy immediate and layers crisp without invented marks.
+avoidRules:
+  - layers collapsing into torn-paper collage
+  - glow spread across every surface
+  - logo-like marks added without request
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-104.webp
+attributes:
+  negativePrompt: >-
+    layers collapsing into torn-paper collage, glow spread across every surface, logo-like marks added
+    without request
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: layers collapsing into torn-paper collage
+        field: rendering_and_quality
+      - text: glow spread across every surface
+        field: rendering_and_quality
+      - text: logo-like marks added without request
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-045
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: street-riot-and-diy-punks
+  categoryName: 6. Street, Riot & DIY Punks
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - street-riot-and-diy-punks
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

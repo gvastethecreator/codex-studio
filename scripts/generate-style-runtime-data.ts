@@ -1,4 +1,4 @@
-import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
+import { mkdir, open, readFile, readdir, rename, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import {
@@ -209,27 +209,44 @@ function buildStaleDefaultImagesSource(staleDefaultImageIds: string[]) {
   ].join('\n');
 }
 
+async function writeFile(filePath: string, source: string, encoding: 'utf8') {
+  // Replace complete projections atomically; mapped Windows files may resist truncation.
+  const temporaryPath = `${filePath}.${process.pid}.writing`;
+  const temporaryFile = await open(temporaryPath, 'wx');
+  try {
+    try {
+      await temporaryFile.writeFile(source, encoding);
+    } finally {
+      await temporaryFile.close();
+    }
+    await rename(temporaryPath, filePath);
+  } finally {
+    await rm(temporaryPath, { force: true });
+  }
+}
+
 async function formatGeneratedFiles(filePaths: string[]) {
-  // Check mode can generate hundreds of temp files; formatting them one by one
-  // makes `styles:runtime:check` effectively unusable in large repos.
-  const batchSize = 20;
+  // Stream content so the formatter never truncates a file mapped by Bun on Windows.
+  // Bound concurrent formatter processes while retaining the repository's CLI config.
+  const batchSize = 4;
   for (let index = 0; index < filePaths.length; index += batchSize) {
     const batch = filePaths.slice(index, index + batchSize);
-    const formatter = Bun.spawn(['bunx', 'vp', 'fmt', '--threads', '4', ...batch], {
-      stdout: 'pipe',
-      stderr: 'pipe',
-    });
-    const [stdout, stderr, exitCode] = await Promise.all([
-      new Response(formatter.stdout).text(),
-      new Response(formatter.stderr).text(),
-      formatter.exited,
-    ]);
-
-    if (stdout.trim()) console.log(stdout.trim());
-    if (stderr.trim()) console.error(stderr.trim());
-    if (exitCode !== 0) {
-      throw new Error(`vp fmt exited with code ${exitCode}`);
-    }
+    await Promise.all(
+      batch.map(async (filePath) => {
+        const formatter = Bun.spawn(
+          ['bunx', 'vp', 'fmt', '--threads', '1', '--stdin-filepath', filePath],
+          { stdin: await readFile(filePath), stdout: 'pipe', stderr: 'pipe' },
+        );
+        const [stdout, stderr, exitCode] = await Promise.all([
+          new Response(formatter.stdout).text(),
+          new Response(formatter.stderr).text(),
+          formatter.exited,
+        ]);
+        if (stderr.trim()) console.error(stderr.trim());
+        if (exitCode !== 0) throw new Error(`vp fmt exited with code ${exitCode}: ${filePath}`);
+        await writeFile(filePath, stdout, 'utf8');
+      }),
+    );
   }
 }
 

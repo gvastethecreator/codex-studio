@@ -1,0 +1,98 @@
+schemaVersion: 1
+id: SP15-097
+packId: pack_15
+name: Seapunk
+category: 5. Ocean, Ice & Terrain Punks
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - ocean-ice-and-terrain-punks
+visualDna:
+  aesthetic: >-
+    Seapunk combines pressure-line diagonals, tide-level bands and shell-like curves with layered marine
+    values and sparse reef-color accents.
+  subject_treatment: >-
+    Preserve the requested subject and material; apply flow bands or shell-like geometry only where
+    compatible, without converting it into marine architecture or fauna.
+  color_and_tone: >-
+    Follow the requested palette; use cool depth shifts and pearly highlights as local accents rather
+    than a fixed blue glow.
+  lighting_and_shadow: >-
+    Respect the stated light direction; separate shallow and deep planes with broad value changes, adding
+    wet reflections only to surfaces that support them.
+  texture_and_material: >-
+    Preserve actual materials; distinguish tideglass, shell, ceramic and salt-metal locally without
+    making every surface wet or iridescent.
+  camera_and_composition: >-
+    Keep the requested view and placement; use horizontal tide bands and a few pressure arcs without
+    requiring an underwater scene.
+  atmosphere_and_mood: >-
+    Suggest fluid pressure and depth through layered values and open flow paths while retaining the
+    requested mood.
+  rendering_and_quality: >-
+    Keep bands and arcs clean and readable, with selective translucent planes and restrained highlights;
+    avoid tiny reef-like clutter.
+avoidRules:
+  - Do not add settlements, vessels, marine animals or reef structures unless requested.
+  - Do not impose a blue glow or wet gloss on unrelated materials.
+  - Keep small light accents subordinate to the main silhouette.
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-097.webp
+attributes:
+  negativePrompt: >-
+    Do not add settlements, vessels, marine animals or reef structures unless requested., Do not impose a
+    blue glow or wet gloss on unrelated materials., Keep small light accents subordinate to the main
+    silhouette.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: Do not add settlements, vessels, marine animals or reef structures unless requested.
+        field: rendering_and_quality
+      - text: Do not impose a blue glow or wet gloss on unrelated materials.
+        field: rendering_and_quality
+      - text: Keep small light accents subordinate to the main silhouette.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-033
+      - SP15-034
+      - SP15-035
+      - SP15-036
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: ocean-ice-and-terrain-punks
+  categoryName: 5. Ocean, Ice & Terrain Punks
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - ocean-ice-and-terrain-punks
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

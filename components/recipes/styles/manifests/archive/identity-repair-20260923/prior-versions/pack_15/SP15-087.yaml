@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP15-087
+packId: pack_15
+name: Solarpunk
+category: 3. Eco, Repair & Climate Punks
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - eco-repair-and-climate-punks
+visualDna:
+  aesthetic: >-
+    Solarpunk illustration uses broad sun-catch planes, modular structure and restrained organic
+    integration; light and value geometry carry the identity without requiring an idealized setting.
+  subject_treatment: >-
+    Preserve the requested identity, silhouette, proportions, action and part connections. Fit layered
+    shade shapes, reused-material joins or organic contours into existing forms where they belong; do not
+    add solar panels or plants by default.
+  color_and_tone: >-
+    Let the requested palette lead, with warm solar ochres, mineral neutrals and restrained leaf or water
+    accents where compatible. Keep value groups clear and avoid an all-green eco palette.
+  lighting_and_shadow: >-
+    Follow the requested light direction and time. Use broad, clean value planes to describe existing
+    surfaces; do not impose bright daylight or a new sun source.
+  texture_and_material: >-
+    Preserve each requested material. Where present, separate reused metal, ceramic, clay and textile
+    through local surface marks and purposeful joins; avoid universal patina or a glass-utopia finish.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop and placement. Use open layered planes and readable overlaps
+    only within the supplied composition; do not require civic architecture or a garden.
+  atmosphere_and_mood: >-
+    Express practical optimism through adaptable forms, clear space and considered material contrast.
+    Keep the requested tone and do not prescribe a community or utopian narrative.
+  rendering_and_quality: >-
+    Use matte painted color fields, crisp silhouette edges and selective organic detail. Keep surfaces
+    varied but quiet, with enough negative space for thumbnail legibility.
+avoidRules:
+  - Do not add a canopy, city, garden, farm or solar-panel system unless requested.
+  - Avoid glass-utopia clichés and an all-green eco mood board.
+  - Do not replace the requested subject with sustainable infrastructure.
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-087.webp
+attributes:
+  negativePrompt: >-
+    Do not add a canopy, city, garden, farm or solar-panel system unless requested., Avoid glass-utopia
+    clichés and an all-green eco mood board., Do not replace the requested subject with sustainable
+    infrastructure.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: Do not add a canopy, city, garden, farm or solar-panel system unless requested.
+        field: rendering_and_quality
+      - text: Avoid glass-utopia clichés and an all-green eco mood board.
+        field: rendering_and_quality
+      - text: Do not replace the requested subject with sustainable infrastructure.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-017
+      - SP15-018
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: eco-repair-and-climate-punks
+  categoryName: 3. Eco, Repair & Climate Punks
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - eco-repair-and-climate-punks
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

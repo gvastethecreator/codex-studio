@@ -1,0 +1,104 @@
+schemaVersion: 1
+id: SP22-201
+packId: pack_22
+name: Resolved Ink Sketch
+category: 13. Vintage Collectible Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - vintage-collectible-illustration
+  - controlled-ink-line
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Render with resolved pen or marker lines, controlled exploratory strokes and concise shadow
+    masses. Keep the drawing intentional and readable rather than rough or unfinished.
+  subject_treatment: >-
+    Preserve requested identity, proportions, pose, action and scene. Let line weight clarify the
+    existing forms without adding construction props, gestures or anatomy.
+  color_and_tone: >-
+    Retain requested colors and value relationships. Ink may dominate where the source image is
+    line-led, with limited accents only when they fit the requested palette.
+  lighting_and_shadow: >-
+    Follow the requested light direction and contrast. Use brief ink shadow masses to describe the
+    current forms without changing the lighting or obscuring key details.
+  texture_and_material: >-
+    Keep the drawn support clean and let pen or marker strokes remain visible. Avoid stains, artificial
+    aging and texture that changes the represented material.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, pose and placement. Do not add captions, layout marks,
+    borders or signatures.
+  atmosphere_and_mood: >-
+    Keep the requested atmosphere and setting. Economy of ink changes the drawing language without
+    making the scene unfinished or altering its story.
+  rendering_and_quality: >-
+    Vary contour weight and keep construction marks minimal and purposeful. Resolve essential forms
+    while avoiding invented author marks, dedications or labels.
+avoidRules:
+  - invented signatures, dedications, labels or author marks
+  - unfinished construction lines or shadow masses that obscure the subject
+  - unrequested frame, lettering or layout
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-201.webp
+attributes:
+  negativePrompt: >-
+    invented signatures, dedications, labels or author marks, unfinished construction lines or
+    shadow masses that obscure the subject, unrequested frame, lettering or layout
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: pen-and-marker illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: pen-and-marker illustration
+    avoidRules:
+      - text: invented signatures, dedications, labels or author marks
+        field: global
+      - text: unfinished construction lines or shadow masses that obscure the subject
+        field: rendering_and_quality
+      - text: unrequested frame, lettering or layout
+        field: global
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S101
+    sourceTitle: Ink Sketch Insert
+    referenceIds:
+      - S58
+      - S52
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    derivedFrom:
+      - TCG-S101
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: vintage-collectible-illustration
+  categoryName: 13. Vintage Collectible Illustration
+  tags:
+    - trading-card-illustration
+    - vintage-collectible-illustration
+    - controlled-ink-line
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

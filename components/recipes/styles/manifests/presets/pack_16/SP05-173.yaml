@@ -16,78 +16,35 @@ tags:
   - 90s-golden-era
 visualDna:
   aesthetic: >-
-    Dust-Warm Pacifist Melancholy Style acts as a transferable anime-prestige router: a dust anime
-    direction shaped by era-aware line economy and genre tone, alongside a warm anime direction
-    shaped by era-aware line economy and genre tone; fuse it with 90s golden-era anime direction
-    with sharp cel shadows, dramatic closeups, aura effects, urban melancholy, and high-contrast
-    compositing; it routes era, genre, line economy, cel or digital finish, and performance tone
-    without locking prompt content to the source title or sample image.
+    A dust-warm 90s cel style joins softly painted background planes, simple clean contours and muted
+    amber-cool contrast. Its named restraint comes from quiet spacing and low visual force, not a
+    pacifist narrative.
   subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through contours paced by
-    dust tension, readable pose energy, and silhouette discipline, alongside contours paced by warm
-    tension, readable pose energy, and silhouette discipline; identity should remain readable
-    through anime contour, expression economy, pose energy, shape simplification, and effect
-    hierarchy instead of a required canon character or title scene.
+    Keep the requested identity, gesture and proportions. Use gentle contour emphasis and economical
+    interior marks; do not add companions, an airship or a peaceful event.
   color_and_tone: >-
-    Map color through warm cel skin tones, amber interiors, and soft golden bounce, alongside dusky
-    blues, muted violets, and warm lonely accents; anchor it in deep night blues, saturated aura
-    color, jewel accents, warm skin cel tones, smoke grays, and VHS-era contrast; keep value
-    separation clean, cel flats intentional, accents purposeful, and palette behavior attached to
-    the requested content.
+    When color is open, pair dusty amber, muted brown and soft blue-green. Preserve requested hues and
+    keep saturation low with a few warm focal notes.
   lighting_and_shadow: >-
-    Use warm bounce and gentle rim separation, alongside a dust light logic using cel rim, glow
-    behavior, and blocked shadow; combine it with hard-edged rim light, aura bloom, neon spill,
-    twilight gradients, speed-flash cuts, and moody cel shadow blocks; shadows should read as anime
-    light design, rims should clarify form, and glow or effects should support the prompt rather
-    than replacing it.
+    Use broad, soft-edged light transitions and uncomplicated cel shadows. Preserve requested lighting
+    and avoid imposing sunset or golden-hour light.
   texture_and_material: >-
-    Render cel paint and ink grain tuned to dust material contrast, alongside cel paint and ink
-    grain tuned to warm material contrast; anchor surfaces in painted cels, compositing grain, inked
-    speed marks, smoke layers, leather or metal highlights, and analog scan softness; cel edges,
-    painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent
-    across people, objects, environments, action, and abstractions.
+    Use softly brushed background paint with clean foreground fills and subtle dust-like grain. Keep
+    the grain in the rendering, not on the subject's material.
   camera_and_composition: >-
-    Frame around dust converted into reusable framing rhythm and anime timing, alongside warm
-    converted into reusable framing rhythm and anime timing, then extend it with cinematic closeups,
-    speed-line vectors, dramatic low angles, layered profile cuts, and compressed emotional space;
-    the style should support portraits, props, machines, performances, landscapes, symbols, and full
-    scenes through reusable anime staging grammar instead of one fixed card layout.
+    Favor open spacing and gentle horizontal rhythm within the existing framing. Preserve viewpoint
+    and placement; do not widen the scene or add landscape.
   atmosphere_and_mood: >-
-    Carry mood through human warmth, memory, and calm emotional access, alongside romantic
-    melancholy and reflective distance; braid it with heightened rivalry, melancholy cool, occult
-    romance, existential drift, heroic escalation, and serious adult tone; the preset can become
-    funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while
-    preserving the chosen anime lineage.
+    Let quietness emerge from held gestures, sparse detail and warm-cool balance. Preserve the
+    requested action and mood; do not require pacifism or melancholy.
   rendering_and_quality: >-
-    Finish with clean anime finishing that keeps dust identity readable without noisy denoise,
-    alongside clean anime finishing that keeps warm identity readable without noisy denoise; enforce
-    premium 90s cel finish with crisp anatomy, readable effects, denoised grain, and no cheap
-    anime-filter smear; prioritize clean denoise, stable anatomy or object structure, readable
-    effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or
-    3D-render drift.
+    Keep edges clean on focal forms and softer in background planes, with restrained detail and no
+    motion effects.
   key_features: >-
-    a dust anime direction shaped by era-aware line economy and genre tone, alongside a warm anime
-    direction shaped by era-aware line economy and genre tone; contours paced by dust tension,
-    readable pose energy, and silhouette discipline, alongside contours paced by warm tension,
-    readable pose energy, and silhouette discipline; cel paint and ink grain tuned to dust material
-    contrast, alongside cel paint and ink grain tuned to warm material contrast; warm bounce and
-    gentle rim separation, alongside a dust light logic using cel rim, glow behavior, and blocked
-    shadow; dust converted into reusable framing rhythm and anime timing, alongside warm converted
-    into reusable framing rhythm and anime timing
+    softly painted backgrounds; dust-muted amber and blue-green; open spacing with quiet cel contours
   creative_brief: >-
-    Apply Dust-Warm Pacifist Melancholy Style after prompt X as a transferable anime-prestige layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a
-    dust anime direction shaped by era-aware line economy and genre tone, alongside a warm anime
-    direction shaped by era-aware line economy and genre tone, alongside contours paced by dust
-    tension, readable pose energy, and silhouette discipline, alongside contours paced by warm
-    tension, readable pose energy, and silhouette discipline; warm cel skin tones, amber interiors,
-    and soft golden bounce, alongside dusky blues, muted violets, and warm lonely accents; warm
-    bounce and gentle rim separation, alongside a dust light logic using cel rim, glow behavior, and
-    blocked shadow; cel paint and ink grain tuned to dust material contrast, alongside cel paint and
-    ink grain tuned to warm material contrast and dust converted into reusable framing rhythm and
-    anime timing, alongside warm converted into reusable framing rhythm and anime timing, finish
-    discipline, and negative controls without requiring a fixed canon cast, title scene, prop
-    bundle, location, sport, instrument, weapon, or card composition.
+    Restyle the requested content with low-saturation cel color, gentle background paint and quiet
+    spacing. Preserve its subject, action, setting and framing; add no airship, companion or sunset.
 avoidRules:
   - realistic
   - 3d render
@@ -99,7 +56,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - flat modern moe
   - generic shonen screenshot
@@ -110,15 +66,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-173.webp
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS
-    noise, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise, readable text
+    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
+    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
+    prompt-literal card, muddy cel noise
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

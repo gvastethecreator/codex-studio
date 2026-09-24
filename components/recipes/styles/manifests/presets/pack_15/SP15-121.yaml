@@ -1,0 +1,88 @@
+schemaVersion: 1
+id: SP15-121
+packId: pack_15
+name: Stonepunk
+category: 10. Primitive, Stone & Salvage Punks
+version: 2
+supportedTasks: &id002
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags: &id001
+  - curation-v2
+  - identity-reviewed
+  - visual-evaluation-pending
+  - primitive-stone-and-salvage-punks
+visualDna:
+  aesthetic:
+    'Make stoneworking and carved mechanics the signature: broad basalt and flint masses, incised
+    channels, wheel-like interlocks, and precise repeated tool cuts express a deliberately engineered stone-age
+    future.'
+  subject_treatment:
+    Preserve the requested subject and action; translate unspecified structure into faceted
+    stone planes, carved joints, or compact gear-like contours without replacing the subject with a machine.
+  color_and_tone:
+    Center basalt charcoal, flint gray, chalk, and clay or ochre accents; allow the requested
+    palette to lead and keep carved cuts distinct from surrounding stone.
+  lighting_and_shadow:
+    Use broad neutral or fire-warm highlights against cool deep incisions so mass and carved
+    depth remain clear; avoid crushing the dark planes.
+  texture_and_material:
+    Contrast coarse matte stone with a few polished obsidian-like faces and chalk-cut details;
+    vary grain scale and keep it subordinate to the carved design.
+  camera_and_composition:
+    Organize forms as stepped masses and interlocking arcs with open intervals; preserve
+    the subject's established focal hierarchy rather than building a fixed mechanism diagram.
+  atmosphere_and_mood:
+    Suggest patient ingenuity, weight, and durable craft, with the requested emotional tone
+    intact.
+  rendering_and_quality:
+    Use crisp incisions, broad stone grain, and simplified joints; ensure the engineered
+    cuts read at thumbnail scale.
+avoidRules:
+  - a required gear machine or timing device
+  - illegible runic writing
+  - dust and micro-grain that bury carved edges
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-121.webp
+attributes:
+  negativePrompt:
+    a required gear machine or timing device, illegible runic writing, dust and micro-grain that
+    bury carved edges
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: a required gear machine or timing device
+        field: rendering_and_quality
+      - text: illegible runic writing
+        field: rendering_and_quality
+      - text: dust and micro-grain that bury carved edges
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-121
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: primitive-stone-and-salvage-punks
+  categoryName: 10. Primitive, Stone & Salvage Punks
+  tags: *id001
+  supportedTasks: *id002
+  hasDefaultImage: true

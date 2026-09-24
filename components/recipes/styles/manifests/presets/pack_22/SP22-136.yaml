@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP22-136
+packId: pack_22
+name: Naturalist Detail
+category: 5. Character & Readable Forms
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - character-and-readable-forms
+  - descriptive-naturalist-illustration
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Descriptive illustration uses precise proportions, fine contours and selective surface detail while
+    keeping the silhouette continuous and readable.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Describe surface features accurately
+    without turning the subject into a labeled specimen or changing its stance.
+  color_and_tone: >-
+    Use the requested local colors and small value changes to distinguish forms. Keep color observation
+    specific without inventing a standard specimen palette.
+  lighting_and_shadow: >-
+    Respect the requested light direction and contrast. Use small shadows to describe form without adding
+    a display light, spotlight or new source.
+  texture_and_material: >-
+    Keep fine marks subordinate to the silhouette and match them to the represented material. Avoid
+    separating every part with a hard outline or texture patch.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and element placement. Do not impose a catalog pose,
+    isolated display, blank backdrop or label layout.
+  atmosphere_and_mood: >-
+    Keep the requested setting and mood. Descriptive detail does not imply a collection, examination
+    scene or formal display.
+  rendering_and_quality: >-
+    Spend detail selectively where it clarifies identity or material, and keep smaller marks subordinate
+    to the full silhouette. Do not add a base, plate, label or diagram.
+avoidRules:
+  - unrequested specimen display elements
+  - surface detail that fragments the silhouette
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-136.webp
+attributes:
+  negativePrompt: unrequested specimen display elements, surface detail that fragments the silhouette
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: unrequested specimen display elements
+        field: camera_and_composition
+      - text: surface detail that fragments the silhouette
+        field: rendering_and_quality
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S036
+    sourceTitle: Naturalist Detail
+    referenceIds:
+      - S54
+      - S55
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: character-and-readable-forms
+  categoryName: 5. Character & Readable Forms
+  tags:
+    - trading-card-illustration
+    - character-and-readable-forms
+    - descriptive-naturalist-illustration
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

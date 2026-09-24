@@ -1,0 +1,62 @@
+[
+  {
+    "presetId": "SP20-001",
+    "presetName": "Offset Drift",
+    "packId": "pack_20",
+    "packName": "Print Registers",
+    "category": "1. Print Registers",
+    "file": "assets/recipes/styles/defaults/SP20-001.webp",
+    "jobId": "8a736809-31d4-4432-ad6c-5a8019908aa1",
+    "sourceAsset": "assets/recipes/styles/defaults/SP20-001.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:17:41.443Z"
+  },
+  {
+    "presetId": "SP20-002",
+    "presetName": "Stencil Duotone",
+    "packId": "pack_20",
+    "packName": "Print Registers",
+    "category": "1. Print Registers",
+    "file": "assets/recipes/styles/defaults/SP20-002.webp",
+    "jobId": "9fdb6674-f392-49ad-aadc-c8f7373b6d04",
+    "sourceAsset": "assets/recipes/styles/defaults/SP20-002.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:17:30.606Z"
+  },
+  {
+    "presetId": "SP20-003",
+    "presetName": "Toner Blocks",
+    "packId": "pack_20",
+    "packName": "Print Registers",
+    "category": "1. Print Registers",
+    "file": "assets/recipes/styles/defaults/SP20-003.webp",
+    "jobId": "1a2430c7-6715-4ba4-8fa0-092ca5c08a75",
+    "sourceAsset": "assets/recipes/styles/defaults/SP20-003.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:17:20.999Z"
+  },
+  {
+    "presetId": "SP20-004",
+    "presetName": "Engraved Tone",
+    "packId": "pack_20",
+    "packName": "Print Registers",
+    "category": "1. Print Registers",
+    "file": "assets/recipes/styles/defaults/SP20-004.webp",
+    "jobId": "e7cb2265-eb23-44b0-bd6f-5500df951399",
+    "sourceAsset": "assets/recipes/styles/defaults/SP20-004.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:17:29.114Z"
+  }
+]

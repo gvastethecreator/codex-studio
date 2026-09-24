@@ -16,76 +16,25 @@ tags:
   - 70s-and-80s-retro-anime
 visualDna:
   aesthetic: >-
-    Jazzy Rogue Heist Rhythm Style acts as a transferable anime-prestige router: jazz-cut anime cool
-    and syncopated caper rhythm, alongside caper timing and elegant outlaw anime cool; fuse it with
-    analog cel-era anime craft with bold contour economy, painted backgrounds, limited-animation
-    rhythm, and theatrical genre clarity; it routes era, genre, line economy, cel or digital finish,
-    and performance tone without locking prompt content to the source title or sample image.
+    A hand-inked cel look built around alternating thick and hairline ink strokes with clipped, syncopated curves; relaxed contour turns, carefully placed interior marks and no imposed gesture. Keep its identity in contour, paint grouping and restrained analog transfer.
   subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through sleek outlaw
-    silhouette and relaxed but dangerous gesture, alongside contours paced by jazzy tension,
-    readable pose energy, and silhouette discipline; identity should remain readable through anime
-    contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of
-    a required canon character or title scene.
+    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use relaxed contour turns, carefully placed interior marks and no imposed gesture; do not assign a role or add props.
   color_and_tone: >-
-    Map color through smoky blues, amber club warmth, black ink, and brass highlights, alongside a
-    rogue accent system held inside disciplined cel values; anchor it in warm cel paint, poster-like
-    primaries, faded film blacks, airbrushed skies, mechanical grays, and controlled neon accents;
-    keep value separation clean, cel flats intentional, accents purposeful, and palette behavior
-    attached to the requested content.
+    Keep explicitly requested colors and saturation. If none are specified, use ink navy, smoky slate, warm amber and a small brass-like accent. Separate neighboring hues into readable flat cel regions.
   lighting_and_shadow: >-
-    Use spotlight slashes, smoky bounce, and amber rim light, alongside a rogue light logic using
-    cel rim, glow behavior, and blocked shadow; combine it with painted key light, hard cel shadows,
-    rim highlights on inked edges, practical glow, and film-era exposure falloff; shadows should
-    read as anime light design, rims should clarify form, and glow or effects should support the
-    prompt rather than replacing it.
+    Follow the requested light sources, direction and intensity. Shape shadows as narrow hard cel slices following the stated key light, with no added spotlight; do not add a source or glow.
   texture_and_material: >-
-    Render cel paint and ink grain tuned to jazzy material contrast, alongside cel paint and ink
-    grain tuned to rogue material contrast; anchor surfaces in acetate cel grain, dry-brush
-    background texture, airbrush gradients, analog dust, painted metal, and hand-inked edges; cel
-    edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay
-    coherent across people, objects, environments, action, and abstractions.
+    Keep depicted materials and their condition unchanged. Apply dry ink edges over softly brushed matte color fields as image-level treatment only, without hiding small details.
   camera_and_composition: >-
-    Frame around syncopated cuts, off-beat diagonals, and stylish negative space, alongside
-    sneak-path diagonals, object beats, and jazz-cut pacing, then extend it with bold television
-    framing, heroic diagonals, theatrical inserts, readable action lanes, and graphic silhouette
-    staging; the style should support portraits, props, machines, performances, landscapes, symbols,
-    and full scenes through reusable anime staging grammar instead of one fixed card layout.
+    Preserve the requested viewpoint, crop, layout and spatial relationships. Use short and long marks alternating around existing shapes, leaving clear negative gaps; add no inset, border or staging.
   atmosphere_and_mood: >-
-    Carry mood through cool improvisation and adult mischief, alongside caper cool and mischievous
-    confidence and witty danger and stylish improvisation; braid it with romantic pulp, operatic
-    melancholy, mechanical grandeur, outlaw cool, slapstick timing, and analog adventure confidence;
-    the preset can become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X
-    asks for it while preserving the chosen anime lineage.
+    Preserve the requested context and mood. Express its visual rhythm through syncopated line pace and small intervals; do not add a narrative beat.
   rendering_and_quality: >-
-    Finish with clean anime finishing that keeps jazzy identity readable without noisy denoise,
-    alongside clean anime finishing that keeps rogue identity readable without noisy denoise;
-    enforce clean retro-anime finish with visible cel craft, restrained grain, stable linework, and
-    no modern 3D or photoreal drift; prioritize clean denoise, stable anatomy or object structure,
-    readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal
-    or 3D-render drift.
+    Finish as hand-drawn 2D cel illustration. Use lively contour timing with clean, bounded shadows and restrained grain; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
   key_features: >-
-    jazz-cut anime cool and syncopated caper rhythm, alongside caper timing and elegant outlaw anime
-    cool; sleek outlaw silhouette and relaxed but dangerous gesture, alongside contours paced by
-    jazzy tension, readable pose energy, and silhouette discipline; cel paint and ink grain tuned to
-    jazzy material contrast, alongside cel paint and ink grain tuned to rogue material contrast;
-    spotlight slashes, smoky bounce, and amber rim light, alongside a rogue light logic using cel
-    rim, glow behavior, and blocked shadow; syncopated cuts, off-beat diagonals, and stylish
-    negative space, alongside sneak-path diagonals, object beats, and jazz-cut pacing
+    alternating thick and hairline ink strokes with clipped, syncopated curves; relaxed contour turns, carefully placed interior marks and no imposed gesture; narrow hard cel slices following the stated key light, with no added spotlight; dry ink edges over softly brushed matte color fields.
   creative_brief: >-
-    Apply Jazzy Rogue Heist Rhythm Style after prompt X as a transferable anime-prestige layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
-    jazz-cut anime cool and syncopated caper rhythm, alongside caper timing and elegant outlaw anime
-    cool, alongside sleek outlaw silhouette and relaxed but dangerous gesture, alongside contours
-    paced by jazzy tension, readable pose energy, and silhouette discipline; smoky blues, amber club
-    warmth, black ink, and brass highlights, alongside a rogue accent system held inside disciplined
-    cel values; spotlight slashes, smoky bounce, and amber rim light, alongside a rogue light logic
-    using cel rim, glow behavior, and blocked shadow; cel paint and ink grain tuned to jazzy
-    material contrast, alongside cel paint and ink grain tuned to rogue material contrast and
-    syncopated cuts, off-beat diagonals, and stylish negative space, alongside sneak-path diagonals,
-    object beats, and jazz-cut pacing, finish discipline, and negative controls without requiring a
-    fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or card
-    composition.
+    Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use alternating thick and hairline ink strokes with clipped, syncopated curves; relaxed contour turns, carefully placed interior marks and no imposed gesture; narrow hard cel slices following the stated key light, with no added spotlight; dry ink edges over softly brushed matte color fields. Add no unrequested content or composition changes.
 avoidRules:
   - realistic
   - 3d render
@@ -97,7 +46,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - modern 3d anime render
   - photoreal cosplay
@@ -108,15 +56,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-003.webp
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, modern 3d anime render, photoreal cosplay, western comic
+    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
     inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise, readable text
+    filter, prompt-literal card, muddy cel noise
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

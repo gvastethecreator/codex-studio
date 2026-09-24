@@ -13,92 +13,63 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Hiroyuki Okiura - Quiet Human Naturalism operates as a portable anime-lifestyle router: combine
-    Hiroyuki Okiura - Quiet Human Naturalism identity cues through Quiet Human Naturalism with
-    Hiroyuki Okiura lineage used only as style reference, style specific contour, material
-    transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt
-    preserving silhouette discipline with broad anime style spectrum grammar with experimental line,
-    material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre
-    flexible art direction; Hiroyuki Okiura may guide line economy, acting, color, and period flavor
-    but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies
-    anime style behavior after prompt X rather than a required scene, character, franchise image, or
-    card composition.
+    Treat the named lineage as a technique reference: observational naturalism, believable weight,
+    quiet contour economy and environmental detail integrated into the same visual space.
   subject_treatment: >-
-    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
-    style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic
-    surface logic, and prompt-preserving silhouette discipline; subjects may be characters,
-    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
-    prompt.
+    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
+    treatment to the existing forms without substituting subjects, adding accessories or changing
+    their function.
   color_and_tone: >-
-    Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop,
-    thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values
-    readable, accent roles intentional, skin or material midtones stable, and palette behavior
-    attached to the prompt instead of pasted anime decoration.
+    Palette defaults apply only where the prompt leaves color open: use restrained, natural color
+    and nuanced values; keep skin, object and setting colors faithful to the prompt.
   lighting_and_shadow: >-
-    Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze,
-    speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression,
-    silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or
-    screenshot-like flatness.
+    Favor plausible ambient daylight and soft contact shadows; follow the stated source and time of
+    day.
   texture_and_material: >-
-    Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map
-    pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile,
-    glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy
-    surface chatter.
+    Use fine, economical line and small grounded texture; detail the environment only where it is
+    already present.
   camera_and_composition: >-
-    Compose through auteur-aware framing, material seams, impact vectors, postcard freezes,
-    distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as
-    reusable anime framing grammar, allowing close acting, objects, performances, action,
-    environments, or abstract prompts without one required pose or location.
+    Compose with patient observation and natural spacing; do not force a human-centered shot or
+    landscape.
   atmosphere_and_mood: >-
-    Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance,
-    tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become
-    cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while
-    preserving its anime lineage.
+    Quiet realism comes from observed form and weight; preserve the requested tone rather than
+    making every subject solemn.
   rendering_and_quality: >-
-    Finish with clean experimental anime finish with strong style recognition, stable subject
-    structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss;
-    prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no
-    fake readable text, no UI, and no generic AI anime gloss.
+    Apply the drawing and observation method to any subject; do not copy a character, shot, costume
+    or scene from the referenced artist. Keep important silhouettes and joins legible; no watermark,
+    unrequested text or interface.
   key_features: >-
-    Quiet Human Naturalism with Hiroyuki Okiura lineage used only as style reference; style specific
-    contour; material transformation; motion grammar; abstraction pressure; symbolic surface logic
+    Observational naturalism; economical contour; believable weight; quiet environmental
+    integration; nuanced light.
   creative_brief: >-
-    Use Hiroyuki Okiura - Quiet Human Naturalism after prompt X as a transferable anime
-    character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity,
-    while the preset supplies Quiet Human Naturalism with Hiroyuki Okiura lineage used only as style
-    reference, style specific contour, material transformation, motion grammar, abstraction
-    pressure, symbolic surface logic, color logic, lighting, material finish, composition rhythm,
-    mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop
-    bundle, title screenshot, or sample-card composition.
+    Apply this visual treatment to the requested content: Observational naturalism; economical
+    contour; believable weight; quiet environmental integration; nuanced light. Preserve its
+    identity, action, materials, composition and requested tone; introduce no persona, scene,
+    franchise cue or extra motif.
 avoidRules:
-  - exaggerated action pose
-  - glossy fantasy effects
-  - chibi simplification
-  - neon spectacle
-  - cinematic explosions
-  - idealized glamour anatomy
-  - plastic 3d render
-  - generic AI anime gloss
-  - auteur copycat
-  - fixed source scene
-  - canon character copy
-  - title scene copy
-  - literal sample card setup
-  - fixed anime cast
-  - generic anime filter
-  - prompt literal card reuse
+  - photoreal cosplay rendering
+  - 3D render look
+  - plastic airbrush gloss obscuring the style's defining marks
+  - undifferentiated anime filter erasing the preset's signature mechanics
+  - unrequested default-image characters, costume details, props or setting
+  - unrequested default-image framing
+  - garbled pseudo-text
+  - unrequested interface overlay
   - watermark
-  - readable text
-  - fake UI
+  - unrequested logo or signature artifact
+  - distorted proportions obscuring observed weight
+  - decorative effects concealing naturalistic contour
+  - surface glare masking material cues
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-333.webp
 attributes:
   negativePrompt: >-
-    exaggerated action pose, glossy fantasy effects, chibi simplification, neon spectacle, cinematic
-    explosions, idealized glamour anatomy, plastic 3d render, generic AI anime gloss, auteur
-    copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup,
-    fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text,
-    fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature
+    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
+    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
+    unrequested default-image characters, costume details, props or setting, unrequested
+    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
+    unrequested logo or signature artifact, distorted proportions obscuring observed weight,
+    decorative effects concealing naturalistic contour, surface glare masking material cues
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

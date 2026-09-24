@@ -1,0 +1,110 @@
+schemaVersion: 1
+id: SP23-035
+packId: pack_23
+name: Angular Painted Planes
+category: 8. Retro 3D Visual Studies
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - retro-3d-visual-studies
+  - angular-low-detail-geometry
+  - painterly-raster-texture
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Combine angular, low-detail geometry with painterly raster textures and clear color separation
+    between planes. Use simple shadows and a handcrafted surface finish instead of glossy physically
+    based rendering.
+  subject_treatment: >-
+    Preserve the requested subject, identity, count, pose, action, proportions and function. Let planar
+    changes in color and texture clarify existing form; do not introduce floating landforms, oversized
+    fungi, extraterrestrial scenery or other unrequested content.
+  color_and_tone: >-
+    Preserve the requested palette and its relationships. Separate adjacent forms through the user's
+    colors and restrained value contrast; do not require psychedelic hues, red skies or a fixed grade.
+  lighting_and_shadow: >-
+    Follow the requested light direction and shadow shape. Keep shadows simple and local to existing
+    forms without changing the time of day, adding unusual skies or creating an alien atmosphere.
+  texture_and_material: >-
+    Use painterly raster texture in controlled, material-aware areas. Keep the low-resolution brushwork
+    visible without applying it uniformly or replacing the depicted material.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, perspective, scale and arrangement. Do not impose a game
+    landscape, floating-island composition, horizon or interface.
+  atmosphere_and_mood: >-
+    Preserve the user's setting and mood. Angular geometry and painted textures do not require an
+    extraterrestrial world, fantasy content or a specific color atmosphere.
+  rendering_and_quality: >-
+    Balance distinct polygonal planes with expressive raster texture and simple shadow shapes. Keep
+    highlights restrained and surfaces matte; avoid polished PBR gloss or uniform texture coverage.
+avoidRules:
+  - unrequested floating islands, oversized fungi or extraterrestrial scenery
+  - fixed psychedelic palette, red sky or alien atmosphere
+  - unrequested landscape composition, horizon or interface
+  - glossy PBR finish or uniform painterly texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-035.webp
+attributes:
+  negativePrompt: >-
+    unrequested floating islands, oversized fungi or extraterrestrial scenery, fixed psychedelic palette,
+    red sky or alien atmosphere, unrequested landscape composition, horizon or interface, glossy PBR
+    finish or uniform painterly texture
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: low-poly-rendering-with-painterly-raster-texture
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: angular-low-detail-geometry-painted-raster-texture-color-separated-planes
+    avoidRules:
+      - text: unrequested floating islands, oversized fungi or extraterrestrial scenery
+        field: global
+      - text: fixed psychedelic palette, red sky or alien atmosphere
+        field: color_and_tone
+      - text: unrequested landscape composition, horizon or interface
+        field: camera_and_composition
+      - text: glossy PBR finish or uniform painterly texture
+        field: texture_and_material
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: D3-02
+    sourceTitle: Chromatic Lowpoly
+    historicalScope: 'Retro 3D contemporáneo · referencia Dread Delusion'
+    referenceIds:
+      - S36
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: retro-3d-visual-studies
+  categoryName: 8. Retro 3D Visual Studies
+  tags:
+    - curation-v2
+    - retro-3d-visual-studies
+    - angular-low-detail-geometry
+    - painterly-raster-texture
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

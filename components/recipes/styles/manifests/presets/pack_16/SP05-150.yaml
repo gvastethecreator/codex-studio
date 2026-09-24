@@ -16,80 +16,33 @@ tags:
   - 2000s-classics
 visualDna:
   aesthetic: >-
-    Crimson Threshold Embers Style acts as a transferable anime-prestige router: a crimson anime
-    direction shaped by era-aware line economy and genre tone, alongside a threshold anime direction
-    shaped by era-aware line economy and genre tone; fuse it with 2000s anime classic grammar with
-    cel-digital hybrid polish, genre contrast, sharper compositing, and stylized emotional
-    escalation; it routes era, genre, line economy, cel or digital finish, and performance tone
-    without locking prompt content to the source title or sample image.
+    High-contrast digital anime organized around a clear division of value.
   subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through contours paced by
-    crimson tension, readable pose energy, and silhouette discipline, alongside contours paced by
-    threshold tension, readable pose energy, and silhouette discipline; identity should remain
-    readable through anime contour, expression economy, pose energy, shape simplification, and
-    effect hierarchy instead of a required canon character or title scene.
+    Keep the prompted identity, gesture and context. Use contour emphasis at existing
+    boundaries.
   color_and_tone: >-
-    Map color through crimson accents over black, bone, and smoky violet, alongside a threshold
-    accent system held inside disciplined cel values; anchor it in clean digital flats, gothic reds,
-    cool clinical blues, warm romance pastels, pop accents, and deliberate contrast keys; keep value
-    separation clean, cel flats intentional, accents purposeful, and palette behavior attached to
-    the requested content.
+    If no palette is given, use crimson against black, bone and smoky violet as restrained
+    accents; explicit colors override this scheme.
   lighting_and_shadow: >-
-    Use red omen glow and ember rim cuts, alongside a threshold light logic using cel rim, glow
-    behavior, and blocked shadow; combine it with digital cel rim, bloom accents, dramatic night
-    cuts, clinical overheads, magical glows, and clean compositing separation; shadows should read
-    as anime light design, rims should clarify form, and glow or effects should support the prompt
-    rather than replacing it.
+    Use red edge glow or ember-like highlights as light treatment on existing forms.
   texture_and_material: >-
-    Render cel paint and ink grain tuned to crimson material contrast, alongside cel paint and ink
-    grain tuned to threshold material contrast; anchor surfaces in digital ink edges, subtle
-    gradient fills, polished cloth and hair shapes, screen-like glow, and controlled texture
-    overlays; cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere
-    must stay coherent across people, objects, environments, action, and abstractions.
+    Keep digital ink and cel-like fills controlled; match grain and gloss to the materials
+    already depicted.
   camera_and_composition: >-
-    Frame around liminal division, doorway-like value breaks converted into abstract spacing,
-    alongside crimson converted into reusable framing rhythm and anime timing, then extend it with
-    opening-sequence energy, split-second action framing, romcom reaction spacing, gothic symmetry,
-    and readable effect geometry; the style should support portraits, props, machines, performances,
-    landscapes, symbols, and full scenes through reusable anime staging grammar instead of one fixed
-    card layout.
+    Preserve the camera. A division between light and dark can organize existing shapes
+    within the supplied composition.
   atmosphere_and_mood: >-
-    Carry mood through hesitation before emotional or supernatural transition, alongside crimson
-    emotional pressure and genre-specific tone; braid it with genre fluency: deadpan comedy, gothic
-    danger, romance friction, rebellion, paranoia, elegance, and pop unreality; the preset can
-    become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it
-    while preserving the chosen anime lineage.
+    Suspense may come from a pause across contrasting value zones when requested; otherwise
+    follow the prompt's tone.
   rendering_and_quality: >-
-    Finish with clean anime finishing that keeps crimson identity readable without noisy denoise,
-    alongside clean anime finishing that keeps threshold identity readable without noisy denoise;
-    enforce clean 2000s cel-digital finish with strong design readability, controlled effects, and
-    no muddy low-resolution artifacting; prioritize clean denoise, stable anatomy or object
-    structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no
-    photoreal or 3D-render drift.
+    Keep the crimson edge accents crisp, value zones readable and background transitions
+    integrated.
   key_features: >-
-    a crimson anime direction shaped by era-aware line economy and genre tone, alongside a threshold
-    anime direction shaped by era-aware line economy and genre tone; contours paced by crimson
-    tension, readable pose energy, and silhouette discipline, alongside contours paced by threshold
-    tension, readable pose energy, and silhouette discipline; cel paint and ink grain tuned to
-    crimson material contrast, alongside cel paint and ink grain tuned to threshold material
-    contrast; red omen glow and ember rim cuts, alongside a threshold light logic using cel rim,
-    glow behavior, and blocked shadow; liminal division, doorway-like value breaks converted into
-    abstract spacing, alongside crimson converted into reusable framing rhythm and anime timing
+    Optional crimson accent; red edge glow on existing forms; clear light-dark
+    division; controlled digital contour.
   creative_brief: >-
-    Apply Crimson Threshold Embers Style after prompt X as a transferable anime-prestige layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a
-    crimson anime direction shaped by era-aware line economy and genre tone, alongside a threshold
-    anime direction shaped by era-aware line economy and genre tone, alongside contours paced by
-    crimson tension, readable pose energy, and silhouette discipline, alongside contours paced by
-    threshold tension, readable pose energy, and silhouette discipline; crimson accents over black,
-    bone, and smoky violet, alongside a threshold accent system held inside disciplined cel values;
-    red omen glow and ember rim cuts, alongside a threshold light logic using cel rim, glow
-    behavior, and blocked shadow; cel paint and ink grain tuned to crimson material contrast,
-    alongside cel paint and ink grain tuned to threshold material contrast and liminal division,
-    doorway-like value breaks converted into abstract spacing, alongside crimson converted into
-    reusable framing rhythm and anime timing, finish discipline, and negative controls without
-    requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or
-    card composition.
+    Apply optional crimson edge light and divided value fields to the prompt's existing
+    forms. Keep its scene, camera and palette intent.
 avoidRules:
   - realistic
   - 3d render
@@ -101,7 +54,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - generic isekai gloss
   - plastic digital anime
@@ -112,15 +64,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-150.webp
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy
-    effects clutter, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise, readable text
+    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
+    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
+    filter, prompt-literal card, muddy cel noise
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

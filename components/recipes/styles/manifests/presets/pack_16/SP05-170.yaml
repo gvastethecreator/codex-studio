@@ -16,80 +16,34 @@ tags:
   - 90s-golden-era
 visualDna:
   aesthetic: >-
-    Storybook Seal Magic Style acts as a transferable anime-prestige router: a storybook anime
-    direction shaped by era-aware line economy and genre tone, alongside a seal anime direction
-    shaped by era-aware line economy and genre tone; fuse it with 90s golden-era anime direction
-    with sharp cel shadows, dramatic closeups, aura effects, urban melancholy, and high-contrast
-    compositing; it routes era, genre, line economy, cel or digital finish, and performance tone
-    without locking prompt content to the source title or sample image.
+    A storybook 90s cel treatment pairs hand-drawn ink with small nested loops, seal-like ornament and
+    restrained luminous accents. The magic signal is ornamental line rhythm, not a required spell.
   subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through contours paced by
-    storybook tension, readable pose energy, and silhouette discipline, alongside contours paced by
-    seal tension, readable pose energy, and silhouette discipline; identity should remain readable
-    through anime contour, expression economy, pose energy, shape simplification, and effect
-    hierarchy instead of a required canon character or title scene.
+    Preserve the requested forms and proportions. Let small interlocking marks follow existing
+    contours; do not add a talisman, inscription, costume or magical object.
   color_and_tone: >-
-    Map color through a storybook accent system held inside disciplined cel values, alongside a seal
-    accent system held inside disciplined cel values; anchor it in deep night blues, saturated aura
-    color, jewel accents, warm skin cel tones, smoke grays, and VHS-era contrast; keep value
-    separation clean, cel flats intentional, accents purposeful, and palette behavior attached to
-    the requested content.
+    When open, balance deep blue-violet with parchment, warm gold and a small clear accent. Preserve
+    specified colors and avoid filling every surface with ornament.
   lighting_and_shadow: >-
-    Use a storybook light logic using cel rim, glow behavior, and blocked shadow, alongside a seal
-    light logic using cel rim, glow behavior, and blocked shadow; combine it with hard-edged rim
-    light, aura bloom, neon spill, twilight gradients, speed-flash cuts, and moody cel shadow
-    blocks; shadows should read as anime light design, rims should clarify form, and glow or effects
-    should support the prompt rather than replacing it.
+    Combine crisp cel shadows with tiny warm or cool glints on existing edges. Respect the requested
+    light; do not invent a glowing seal or spell source.
   texture_and_material: >-
-    Render cel paint and ink grain tuned to storybook material contrast, alongside cel paint and ink
-    grain tuned to seal material contrast; anchor surfaces in painted cels, compositing grain, inked
-    speed marks, smoke layers, leather or metal highlights, and analog scan softness; cel edges,
-    painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent
-    across people, objects, environments, action, and abstractions.
+    Use fine hand-inked ornament over smooth painted fills, with slight paper-like grain only when
+    compatible with the depicted material.
   camera_and_composition: >-
-    Frame around storybook converted into reusable framing rhythm and anime timing, alongside seal
-    converted into reusable framing rhythm and anime timing, then extend it with cinematic closeups,
-    speed-line vectors, dramatic low angles, layered profile cuts, and compressed emotional space;
-    the style should support portraits, props, machines, performances, landscapes, symbols, and full
-    scenes through reusable anime staging grammar instead of one fixed card layout.
+    Keep the requested framing and layout. Use nested line motifs to guide attention inside the
+    composition rather than adding a circular diagram or symbol.
   atmosphere_and_mood: >-
-    Carry mood through storybook emotional pressure and genre-specific tone, alongside seal
-    emotional pressure and genre-specific tone; braid it with heightened rivalry, melancholy cool,
-    occult romance, existential drift, heroic escalation, and serious adult tone; the preset can
-    become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it
-    while preserving the chosen anime lineage.
+    Give the finish a crafted, storybook cadence through detail and luminous restraint. Preserve the
+    requested tone; do not force fantasy or whimsy.
   rendering_and_quality: >-
-    Finish with clean anime finishing that keeps storybook identity readable without noisy denoise,
-    alongside clean anime finishing that keeps seal identity readable without noisy denoise; enforce
-    premium 90s cel finish with crisp anatomy, readable effects, denoised grain, and no cheap
-    anime-filter smear; prioritize clean denoise, stable anatomy or object structure, readable
-    effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or
-    3D-render drift.
+    Keep ornamental marks small, distinct and subordinate to the main form. Avoid clutter, excessive
+    sparkle and generic fantasy glow.
   key_features: >-
-    a storybook anime direction shaped by era-aware line economy and genre tone, alongside a seal
-    anime direction shaped by era-aware line economy and genre tone; contours paced by storybook
-    tension, readable pose energy, and silhouette discipline, alongside contours paced by seal
-    tension, readable pose energy, and silhouette discipline; cel paint and ink grain tuned to
-    storybook material contrast, alongside cel paint and ink grain tuned to seal material contrast;
-    a storybook light logic using cel rim, glow behavior, and blocked shadow, alongside a seal light
-    logic using cel rim, glow behavior, and blocked shadow; storybook converted into reusable
-    framing rhythm and anime timing, alongside seal converted into reusable framing rhythm and anime
-    timing
+    hand-drawn cel contour; small nested seal-like loops; restrained gold and blue-violet glints
   creative_brief: >-
-    Apply Storybook Seal Magic Style after prompt X as a transferable anime-prestige layer: prompt X
-    supplies subject, action, setting, tone, and intensity, while this preset supplies a storybook
-    anime direction shaped by era-aware line economy and genre tone, alongside a seal anime
-    direction shaped by era-aware line economy and genre tone, alongside contours paced by storybook
-    tension, readable pose energy, and silhouette discipline, alongside contours paced by seal
-    tension, readable pose energy, and silhouette discipline; a storybook accent system held inside
-    disciplined cel values, alongside a seal accent system held inside disciplined cel values; a
-    storybook light logic using cel rim, glow behavior, and blocked shadow, alongside a seal light
-    logic using cel rim, glow behavior, and blocked shadow; cel paint and ink grain tuned to
-    storybook material contrast, alongside cel paint and ink grain tuned to seal material contrast
-    and storybook converted into reusable framing rhythm and anime timing, alongside seal converted
-    into reusable framing rhythm and anime timing, finish discipline, and negative controls without
-    requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or
-    card composition.
+    Apply storybook cel linework and restrained seal-like ornament to the requested content. Preserve
+    its identity, action and composition; add no literal seal, spell, costume or fantasy prop.
 avoidRules:
   - realistic
   - 3d render
@@ -101,7 +55,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - flat modern moe
   - generic shonen screenshot
@@ -112,15 +65,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-170.webp
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS
-    noise, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise, readable text
+    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
+    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
+    prompt-literal card, muddy cel noise
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

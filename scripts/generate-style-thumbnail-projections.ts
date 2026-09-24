@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, readdir, rename, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
 import { composeStyleRuntimePacksFromManifests } from '../components/recipes/stylePresetManifests';
@@ -26,6 +26,7 @@ const stylesAssetDir = path.join(rootDir, 'assets', 'recipes', 'styles');
 const thumbnailDirName = 'style-card-thumbnails';
 const defaultsDirName = 'defaults';
 const grokVariantsDirName = 'defaults/providers/grok';
+const previousDefaultsDirName = 'defaults/providers/previous-gpt-image';
 const outputDir = path.join(rootDir, 'lib', 'styleThumbnailPacks.generated');
 const landingOutputPath = path.join(rootDir, 'lib', 'styleLandingFolderIndex.generated.ts');
 const aliasesPath = path.join(import.meta.dir, 'style-thumbnail-aliases.json');
@@ -242,6 +243,11 @@ const grokVariantFiles = (
 )
   .filter((fileName) => /^SP\d{2}-\d{3}\.webp$/i.test(fileName))
   .sort((a, b) => a.localeCompare(b));
+const previousDefaultFiles = (
+  await readdir(path.join(stylesAssetDir, previousDefaultsDirName)).catch(() => [])
+)
+  .filter((fileName) => /^SP\d{2}-\d{3}\.webp$/i.test(fileName))
+  .sort((a, b) => a.localeCompare(b));
 const assetsByKey = new Map<string, ThumbnailAsset>();
 for (const fileName of defaultFiles) {
   const key = assetKey(fileName);
@@ -254,6 +260,10 @@ for (const fileName of thumbnailFiles) {
 for (const fileName of grokVariantFiles) {
   const key = `${assetKey(fileName)}-grok`;
   assetsByKey.set(key, { key, fileName, sourceDirName: grokVariantsDirName });
+}
+for (const fileName of previousDefaultFiles) {
+  const key = `${assetKey(fileName)}-previous`;
+  assetsByKey.set(key, { key, fileName, sourceDirName: previousDefaultsDirName });
 }
 const aliases = JSON.parse(await readFile(aliasesPath, 'utf8')) as ThumbnailAlias[];
 for (const alias of aliases) {
@@ -391,25 +401,42 @@ if (checkMode) {
 
 await rm(outputDir, { recursive: true, force: true });
 await mkdir(outputDir, { recursive: true });
-await Promise.all(
-  [...expected].map(([fileName, source]) =>
-    writeFile(path.join(outputDir, fileName), source, 'utf8'),
-  ),
-);
-const formatter = Bun.spawn(['bunx', 'vp', 'fmt', outputDir], {
-  cwd: rootDir,
-  stdout: 'inherit',
-  stderr: 'inherit',
-});
-await writeFile(landingOutputPath, landingSource, 'utf8');
-if ((await formatter.exited) !== 0) throw new Error('Could not format thumbnail projections');
-const landingFormatter = Bun.spawn(['bunx', 'vp', 'fmt', landingOutputPath], {
-  cwd: rootDir,
-  stdout: 'inherit',
-  stderr: 'inherit',
-});
-if ((await landingFormatter.exited) !== 0) {
-  throw new Error('Could not format landing folder index');
+async function formatAndWriteProjection(filePath: string, source: string) {
+  const formatter = Bun.spawn(
+    ['bunx', 'vp', 'fmt', '--threads', '1', '--stdin-filepath', filePath],
+    {
+      cwd: rootDir,
+      stdin: new Blob([source]),
+      stdout: 'pipe',
+      stderr: 'pipe',
+    },
+  );
+  const [formatted, error, exitCode] = await Promise.all([
+    new Response(formatter.stdout).text(),
+    new Response(formatter.stderr).text(),
+    formatter.exited,
+  ]);
+  if (exitCode !== 0) throw new Error(`Could not format ${filePath}: ${error}`);
+  // Bun may map current projections on Windows. Replace them instead of truncating them.
+  const temporaryPath = `${filePath}.${process.pid}.writing`;
+  try {
+    await writeFile(temporaryPath, formatted, { encoding: 'utf8', flag: 'wx' });
+    await rename(temporaryPath, filePath);
+  } finally {
+    await rm(temporaryPath, { force: true });
+  }
+}
+const projections = [...expected].map(([fileName, source]) => [
+  path.join(outputDir, fileName),
+  source,
+]);
+projections.push([landingOutputPath, landingSource]);
+for (let index = 0; index < projections.length; index += 4) {
+  await Promise.all(
+    projections
+      .slice(index, index + 4)
+      .map(([filePath, source]) => formatAndWriteProjection(filePath, source)),
+  );
 }
 console.log(
   `[styles:thumbnails] packs=${packIds.length} thumbnails=${assets.length} landing written`,

@@ -1,0 +1,96 @@
+schemaVersion: 1
+id: SP22-125
+packId: pack_22
+name: Tapestry Gouache
+category: 4. Storybook & Animation
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - storybook-and-animation
+  - tapestry-gouache
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Flat gouache illustration interlaces curved and geometric shapes, reserving decorative complexity
+    for selected areas instead of filling every surface with pattern.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Fit curved and geometric rhythms
+    inside existing forms while keeping the subject's silhouette and defining features legible.
+  color_and_tone: >-
+    Use rich, distinct color blocks with little dependence on gradients. Retain the requested palette
+    and preserve the relationships among local colors.
+  lighting_and_shadow: >-
+    Follow the requested light direction and contrast. Express value changes with opaque shapes without
+    adding a new light source or time of day.
+  texture_and_material: >-
+    Keep the pigment opaque and mostly matte, with slight variation within painted areas. Do not impose
+    a paper, canvas or physical card finish.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and element placement. Do not add a decorative frame
+    or rearrange the image to imitate a book page.
+  atmosphere_and_mood: >-
+    Keep the requested mood and setting. Decorative shape rhythms do not add scenic motifs or a storybook
+    world.
+  rendering_and_quality: >-
+    Use clean, visibly drawn contours with alternating scale and subordinate detail. Keep ornament
+    selective and connected to the forms already requested.
+avoidRules:
+  - unrequested storybook setting motifs
+  - decorative frame or border
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-125.webp
+attributes:
+  negativePrompt: unrequested storybook setting motifs, decorative frame or border
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: painting
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: painting
+    avoidRules:
+      - text: unrequested storybook setting motifs
+        field: atmosphere_and_mood
+      - text: decorative frame or border
+        field: rendering_and_quality
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S025
+    sourceTitle: Tapestry Gouache
+    referenceIds:
+      - S18
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: storybook-and-animation
+  categoryName: 4. Storybook & Animation
+  tags:
+    - trading-card-illustration
+    - storybook-and-animation
+    - tapestry-gouache
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -22,8 +22,11 @@ graph TD
     PROVIDERS --> CODEX["Codex Product Runtime"]
     CODEX --> CX["codex app-server ws://127.0.0.1:17224"]
     CX --> TURN["Codex image turns"]
+    PROVIDERS --> CHATGPT["ChatGPT subscription HTTP adapter"]
+    CHATGPT --> RESPONSE["HTTP request + SSE image response"]
     PROVIDERS --> GROK["Grok Imagine adapter"]
-    GROK --> GCLI["Authenticated Grok Build CLI"]
+    GROK --> GHTTP["Authenticated xAI HTTP"]
+    GROK --> GCLI["Grok Build CLI under fallback policy"]
     PROVIDERS --> FAL["fal.ai hosted API"]
     PROVIDERS --> GOOGLE["Google Gemini image API"]
     PROVIDERS --> COMFY["ComfyUI local runtime"]
@@ -94,7 +97,7 @@ graph TD
 3. The runner resolves Recipe Module data, builds provider-independent Generation Task Specs, and creates Persistent Jobs.
 4. The backend prepares every batch item, captures its Library Context and execution policy, then commits the requested count, ordered membership, and all jobs in one SQLite transaction before dispatch.
 5. The Provider Boundary compiles the Generation Task Spec into provider-specific input.
-6. The Codex provider uses the transport captured at intake: `codex app-server` or subscription HTTP. Grok Imagine runs one bounded headless Grok Build session per Job. Other providers run only when concrete preflight passes.
+6. New Codex jobs capture `codex app-server`; new ChatGPT jobs capture subscription HTTP. Historical Codex jobs retain their captured HTTP or app-server contract. Grok Imagine selects its HTTP or CLI executor under its preflight and fallback policy. Other providers run only when concrete preflight passes.
 7. Completed jobs write Local Assets, Catalog Entries, transcripts, and logs into the Studio Library.
 8. The UI refreshes `/api/catalog` by job id and shows catalog-derived images.
 9. The legacy workspace JSON shape is derived from current Catalog Entries only when the user exports it.
@@ -168,9 +171,14 @@ Generation Tasks and Generation Providers stay separate:
 
 Current concrete adapters:
 
-- **Codex:** the composer, Settings, intake, and adapter share `codexExecutionContract.ts`.
-  Accepted jobs retain their transport, model, image size, quality, and supported options.
-  Studio's subscription HTTP adapter currently exposes `gpt-5.5`, GPT Image 2.5 Flare, GPT Image 2.5
+- **Codex:** new jobs use app-server and `providerOptions.codex`.
+  The composer, Settings, intake, and adapter share `codexExecutionContract.ts`.
+  Historical jobs retain their captured transport and supported options.
+  Explicit Standard speed on an accepted CLI job remains Standard when global defaults change.
+- **ChatGPT:** new jobs use subscription HTTP and `providerOptions.chatgpt`, independently of the
+  local Codex executable and model catalog. The private credential store retains its internal
+  `codex` identifier so existing Studio sign-ins remain connected.
+  Studio's HTTP adapter currently exposes `gpt-5.5`, GPT Image 2.5 Flare, GPT Image 2.5
   Sunburst, and GPT Image 2 when available, with medium quality,
   and provider-managed reasoning and speed. This is Studio's supported contract, not a claim
   about every option offered by the public API. ChatGPT HTTP image jobs can request 1K, 2K, or
@@ -183,12 +191,10 @@ Current concrete adapters:
   HTTP persists a submission marker before its single POST. A lost acknowledgement or restart
   moves the job to review without a second POST or CLI fallback. Only confirmed rejection permits
   a fresh retry. Jobs predating the captured contract require a new, reviewed request.
-  Explicit Standard speed on an accepted CLI job remains Standard when global defaults change.
-- **Grok Imagine:** optional local-agent executor through the signed-in Grok Build CLI.
-  Each image Job uses a fresh strict headless session and an exact `image_gen` or `image_edit` allowlist.
-  There is no automatic retry.
-  The executor copies the verified session image into the captured Studio Library.
-  It needs no Studio-managed Provider Secret.
+- **Grok Imagine:** uses authenticated xAI HTTP when ready. The signed-in Grok Build CLI remains
+  available when HTTP is unavailable or the explicit HTTP fallback policy allows it.
+  The CLI executor uses a fresh bounded headless session and an exact `image_gen` or `image_edit`
+  allowlist. Both paths import verified images into the captured Studio Library.
 - **fal.ai:** hosted executor using `FAL_KEY` or `FAL_API_KEY` from backend env only.
 - **Google Gemini image API:** hosted executor using `GOOGLE_API_KEY`, `GEMINI_API_KEY`, or `NANO_BANANA_API_KEY` from backend env only.
 - **ComfyUI:** local executor using `COMFY_API_URL` or `COMFYUI_API_URL` plus `COMFY_WORKFLOW_TEMPLATE_PATH`.
@@ -266,7 +272,7 @@ Storage Repair Plans are dry-run or read-only until a guarded write adapter is s
 
 ## Open-source architecture goals
 
-- Keep setup local-first and Codex-first.
+- Keep setup local-first, with independent ChatGPT HTTP and Codex app-server readiness.
 - Keep user assets and runtime state outside the repo.
 - Keep provider secrets out of catalog metadata, logs, transcripts, screenshots, and docs.
 - Prefer deep seams with small interfaces over shallow pass-through modules.

@@ -11,25 +11,25 @@ export const GENERATED_STYLE_PRESETS = [
       'modern sleek, readable agency logo, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
       aesthetic:
-        'Space Suit (Retro) operates as a portable fashion-costume router: combine Retro EVA suit language, archival space-age optimism and beta-cloth engineering with speculative costume logic with armor, suit engineering, magical garment behavior, alien proportion, and character-readability design, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Retro pressure-suit tailoring with rounded volume, gasketed openings and archival space-age construction; the suit design does not require a space mission.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak, illuminate, conceal, mutate, modularize, ritualize, or engineer through Bulky pressurized segmentation, hose-connector geometry, glove-gasket bulk and backpack-box volume; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        'Shape the existing clothing with padded segments, sealed cuffs, connector details and a compact equipment-like panel. A bubble helmet, hose or pack is optional and must not obscure the requested wearer.',
       color_and_tone:
-        'Map color through speculative material color, neon accents, abyssal values, royal metals, survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Use warm off-white, canvas neutrals and reflective metal accents as one possible period palette; honor specified colors and keep any insignia unreadable or absent.',
       lighting_and_shadow:
-        'Use Harsh vacuum-like key light, unfiltered solar glare, helmet-interior bounce and gold-visor reflection plus rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi display light as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        "Use clean directional highlights on visor-like surfaces and rubber seals while matching the prompt's light. Do not add vacuum glare, a planet or an exterior setting.",
       texture_and_material:
-        'Render Beta cloth, gold-film visor, rubber gaskets, aluminum connectors, nylon webbing and Velcro patch texture plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Render beta-cloth-like canvas, nylon webbing, rubber gaskets and restrained gold-film or aluminum details with sturdy stitched construction.',
       camera_and_composition:
-        'Compose with Compose for Space Suit (Retro) using its key spatial cues: Bubble helmet geometry, gold visor reflection, gasket rings, umbilical-hose rhythm and moon-boot mass plus character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Preserve the requested crop, angle and pose. Keep suit volume and seal details clear in frame; never require a helmet or full-body astronaut view.',
       atmosphere_and_mood:
-        "Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth, spectacle, or mythic futurism; the tone should feel specific to Space Suit (Retro) while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Suggest optimistic engineered design through rounded forms and practical fastenings, without assigning an astronaut role, agency or mission.',
       rendering_and_quality:
-        'Finish with believable costume engineering, clean edge logic, strong silhouette, readable material physics, and no generic cosplay blur; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Use convincing padded volume, rubber-to-cloth transitions and readable closures. Keep markings non-legible and avoid overloading the suit with equipment.',
       key_features:
-        'Retro EVA suit language, archival space-age optimism and beta-cloth engineering; Bulky pressurized segmentation, hose-connector geometry, glove-gasket bulk and backpack-box volume; Beta cloth, gold-film visor, rubber gaskets, aluminum connectors, nylon webbing and Velcro patch texture; Harsh vacuum-like key light, unfiltered solar glare, helmet-interior bounce and gold-visor reflection; Compose for Space Suit (Retro) using its key spatial cues: Bubble helmet geometry, gold visor reflection, gasket rings, umbilical-hose rhythm and moon-boot mass',
+        'Rounded pressure-suit volume; gasketed cuffs and collar; beta-cloth texture; compact retro hardware accents.',
       creative_brief:
-        'Use Space Suit (Retro) after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Retro EVA suit language, archival space-age optimism and beta-cloth engineering, Bulky pressurized segmentation, hose-connector geometry, glove-gasket bulk and backpack-box volume, Beta cloth, gold-film visor, rubber gaskets, aluminum connectors, nylon webbing and Velcro patch texture, Harsh vacuum-like key light, unfiltered solar glare, helmet-interior bounce and gold-visor reflection, Compose for Space Suit (Retro) using its key spatial cues: Bubble helmet geometry, gold visor reflection, gasket rings, umbilical-hose rhythm and moon-boot mass plus paneling, harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and invented fastenings, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        'Restyle the requested outfit as a retro pressure suit with padded segments, gasketed joins and archival canvas-and-metal detailing. Preserve wearer, pose, role, setting and frame; make helmet, tether and pack optional, with no agency logo or mission scene.',
     },
   },
   {
@@ -37,28 +37,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Convention Craft Costume',
     category: '4. Fantasy Sci-Fi Costume',
     negativePrompt:
-      'licensed-character replica, low-effort costume, flat convention snapshot, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'licensed-character replica, low-effort costume, flat convention snapshot, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
       aesthetic:
-        'Convention Craft Costume operates as a portable fashion-costume router: combine Convention-grade costume craft, stylized transformation energy, handmade fabrication spectacle with speculative costume logic with armor, suit engineering, magical garment behavior, alien proportion, and character-readability design, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Hand-fabricated performance costume with bold foam-built facets, thermoplastic edgework and visibly assembled trim; the finish celebrates precise making.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak, illuminate, conceal, mutate, modularize, ritualize, or engineer through Exaggerated contour blocking, modular trim logic, foam-armor segmentation, accessory-scale geometry; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        'Translate the requested outfit into shaped panels, clean foam segmentation, joined edges and modular accessories at a scale suited to the original wearer. Keep wigs, masks and props optional.',
       color_and_tone:
-        'Map color through speculative material color, neon accents, abyssal values, royal metals, survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Use clear color blocking that separates base fabric, armor-like forms and painted edges. Follow the prompt's palette; do not default to a licensed character's colors.",
       lighting_and_shadow:
-        'Use Controlled craft lighting, colored gel accents, fabrication highlights and theatrical rim plus rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi display light as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Use even directional light that reveals bevels, seams and material changes. Keep the actual scene and light sources; no stage, convention hall or colored gels are required.',
       texture_and_material:
-        'Render Heat-resistant wig fiber, EVA foam armor with Worbla overlay, thermoplastic detailing, holographic spandex plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Make EVA foam and thermoplastic read as carefully sealed craft surfaces beside stretch fabric and synthetic fibers. Show cut edges, bonded joins and controlled paint, never toy-like plastic.',
       camera_and_composition:
-        'Compose with Compose for Convention Craft Costume using its key spatial cues: Styled fiber sheen, foam seam lines, thermoplastic edgework, modular accessory detailing plus character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Preserve the requested crop, angle and pose. Show useful seam and edge detail without turning the image into a fabrication demo or event photograph.',
       atmosphere_and_mood:
-        "Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth, spectacle, or mythic futurism; the tone should feel specific to Convention Craft Costume while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Express playful spectacle through silhouette and crafted details, without assigning a convention, performance, fandom or character identity.',
       rendering_and_quality:
-        'Finish with believable costume engineering, clean edge logic, strong silhouette, readable material physics, and no generic cosplay blur; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Keep bevels, edge paint and joins clean and believable at the chosen scale. Distinguish fabricated forms from cloth, with no blurry or flat costume surfaces.',
       key_features:
-        'Convention-grade costume craft, stylized transformation energy, handmade fabrication spectacle; Exaggerated contour blocking, modular trim logic, foam-armor segmentation, accessory-scale geometry; Heat-resistant wig fiber, EVA foam armor with Worbla overlay, thermoplastic detailing, holographic spandex; Controlled craft lighting, colored gel accents, fabrication highlights and theatrical rim; Compose for Convention Craft Costume using its key spatial cues: Styled fiber sheen, foam seam lines, thermoplastic edgework, modular accessory detailing',
+        'Foam-faceted panels; thermoplastic edgework; bonded and painted seam joins; modular trim with crafted scale.',
       creative_brief:
-        'Use Convention Craft Costume after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Convention-grade costume craft, stylized transformation energy, handmade fabrication spectacle, Exaggerated contour blocking, modular trim logic, foam-armor segmentation, accessory-scale geometry, Heat-resistant wig fiber, EVA foam armor with Worbla overlay, thermoplastic detailing, holographic spandex, Controlled craft lighting, colored gel accents, fabrication highlights and theatrical rim, Compose for Convention Craft Costume using its key spatial cues: Styled fiber sheen, foam seam lines, thermoplastic edgework, modular accessory detailing plus paneling, harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and invented fastenings, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        'Rebuild the requested clothing as a hand-fabricated performance costume using shaped foam, thermoplastic trims and precise joined panels. Preserve wearer, pose, role, scene and framing; add no licensed likeness, convention setting, wig, mask or prop unless requested.',
     },
   },
   {
@@ -66,28 +66,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ethereal Fantasy',
     category: '4. Fantasy Sci-Fi Costume',
     negativePrompt:
-      'heavy, dark, solid, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
       aesthetic:
-        'Ethereal Fantasy operates as a portable fashion-costume router: combine Ethereal Fantasy styling cues and speculative costume logic with armor, suit engineering, magical garment behavior, alien proportion, and character-readability design, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Airy fantasy formalwear built from translucent layers, fine silvered embroidery and long fluid lines; its identity comes from delicate fabric construction, not a new character type.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak, illuminate, conceal, mutate, modularize, ritualize, or engineer through paneling, harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and invented fastenings; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        "Restyle the existing garments with sheer sleeves, light over-layers, floating hems and small glass-like trims. Preserve the wearer's face, anatomy, pose and role; do not add wings, horns or a crown.",
       color_and_tone:
-        'Map color through speculative material color, neon accents, abyssal values, royal metals, survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Favor luminous, pale value relationships with soft silver or pearl accents, while honoring requested hues and maintaining natural skin and facial detail.',
       lighting_and_shadow:
-        'Use rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi display light as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        "Use broad, gentle light and fine edge transmission to reveal translucent cloth. Match the prompt's lighting and setting; do not create a supernatural glow source or scene.",
       texture_and_material:
-        'Render armor plates, spandex, robes, leather, rubber, chrome, biotic surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Use chiffon, organza, fine gauze, satin and delicate metallic thread. Keep each sheer layer distinct from skin and neighboring fabric, with light embroidery rather than hard armor.',
       camera_and_composition:
-        'Compose with character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Preserve the requested crop, viewpoint and pose. Let sleeve transparency, long drape and light hem detail read within the available frame.',
       atmosphere_and_mood:
-        "Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth, spectacle, or mythic futurism; the tone should feel specific to Ethereal Fantasy while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Create a quiet, weightless impression through soft layers and restrained ornament, without declaring the wearer angelic, royal or magical.',
       rendering_and_quality:
-        'Finish with believable costume engineering, clean edge logic, strong silhouette, readable material physics, and no generic cosplay blur; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Keep fabric edges translucent but defined, embroidery fine and highlights subdued. Preserve face, anatomy and garment seams without washing them into a white silhouette.',
       key_features:
-        'Ethereal Fantasy styling cues and speculative costume logic with armor, suit engineering, magical garment behavior, alien proportion, and character-readability design; paneling, harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and invented fastenings; armor plates, spandex, robes, leather, rubber, chrome, biotic surface, hologram, smoke, shadow, gel, and luminous seams; rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi display light; character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus',
+        'Airy sheer over-layers; long floating hems; fine silver-thread seams; delicate glass-like trim.',
       creative_brief:
-        'Use Ethereal Fantasy after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Ethereal Fantasy styling cues and speculative costume logic with armor, suit engineering, magical garment behavior, alien proportion, and character-readability design, paneling, harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and invented fastenings, armor plates, spandex, robes, leather, rubber, chrome, biotic surface, hologram, smoke, shadow, gel, and luminous seams, rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi display light, character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        'Transform the requested wardrobe into airy fantasy formalwear with translucent sleeves, layered drape, fine silvered stitching and light trims. Preserve identity, anatomy, pose, role, scene and framing; do not add wings, horns, crown or magical events.',
     },
   },
   {
@@ -95,28 +95,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Steampunk Engineering Attire',
     category: '4. Fantasy Sci-Fi Costume',
     negativePrompt:
-      'modern, plastic, digital, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'plastic, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
       aesthetic:
-        'Steampunk Engineering Attire operates as a portable fashion-costume router: combine Victorian retrofuturist attire, clockwork expedition romance, pressure-built regalia with speculative costume logic with armor, suit engineering, magical garment behavior, alien proportion, and character-readability design, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Victorian-inspired mechanical tailoring: layered waistcoat or corset structure, precise fastenings, chain accents and restrained gearwork, with craft carried by the garments.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak, illuminate, conceal, mutate, modularize, ritualize, or engineer through Gearwork articulation, goggle-casing geometry, waistcoat-or-corset structure, chain drape, vertical hat logic, bustle-back volume; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        'Shape the existing clothes with a fitted waist, structured lapels, articulated seams and pocket-watch scale details. Hats and goggles are optional accessories, not assumptions about the wearer or occupation.',
       color_and_tone:
-        'Map color through speculative material color, neon accents, abyssal values, royal metals, survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Warm brass, leather and tweed relationships support the period craft; adapt hues and metal finish to explicit color requests rather than locking the palette.',
       lighting_and_shadow:
-        'Use Sepia tone, steam-softened gaslight warmth, amber glow, brass reflection plus rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi display light as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        "Use warm, crisp highlights on engraved metal and glass while preserving the prompt's actual light and location. Do not introduce gas lamps, smoke or machinery as scene elements.",
       texture_and_material:
-        'Render Full-grain leather, engraved brass, Harris tweed, clockwork gears, riveted copper, pocket-watch crystal plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Pair full-grain leather, woven tweed, polished or aged brass, fine chain and small glass accents. Show controlled wear and careful joinery, not a pile of loose gears.',
       camera_and_composition:
-        'Compose with character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Preserve the requested crop, angle and pose. Keep the waist shaping, layered front and hanging fasteners readable wherever they fall in frame.',
       atmosphere_and_mood:
-        "Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth, spectacle, or mythic futurism; the tone should feel specific to Steampunk Engineering Attire while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Convey inventive, slightly theatrical craft through tailored lines and precise metal details; do not assign a tinkerer, explorer or aristocratic role.',
       rendering_and_quality:
-        'Finish with believable costume engineering, clean edge logic, strong silhouette, readable material physics, and no generic cosplay blur; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Render crisp engraved edges, tactile woven cloth and small metal reflections with controlled detail. Keep tailoring coherent and avoid cluttering the silhouette.',
       key_features:
-        'Victorian retrofuturist attire, clockwork expedition romance, pressure-built regalia; Gearwork articulation, goggle-casing geometry, waistcoat-or-corset structure, chain drape, vertical hat logic, bustle-back volume; Full-grain leather, engraved brass, Harris tweed, clockwork gears, riveted copper, pocket-watch crystal; Sepia tone, steam-softened gaslight warmth, amber glow, brass reflection; character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus',
+        'Victorian panel layering; gear-like fastener accents; brass against leather and tweed; vertical tailored lines.',
       creative_brief:
-        'Use Steampunk Engineering Attire after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Victorian retrofuturist attire, clockwork expedition romance, pressure-built regalia, Gearwork articulation, goggle-casing geometry, waistcoat-or-corset structure, chain drape, vertical hat logic, bustle-back volume, Full-grain leather, engraved brass, Harris tweed, clockwork gears, riveted copper, pocket-watch crystal, Sepia tone, steam-softened gaslight warmth, amber glow, brass reflection, character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus plus paneling, harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and invented fastenings, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        'Reinterpret the requested wardrobe as Victorian mechanical tailoring with structured waist layers, fine brass fasteners, chain accents and woven cloth. Preserve wearer, role, pose, scene and framing; do not add a workshop, machine, hat or goggles unless requested.',
     },
   },
   {
@@ -124,28 +124,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Technical Modular Outerwear',
     category: '4. Fantasy Sci-Fi Costume',
     negativePrompt:
-      'vintage, natural, soft, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
       aesthetic:
-        'Technical Modular Outerwear operates as a portable fashion-costume router: combine Cyberpunk technical utility, modular outerwear systems, rain-slicked futurewear with speculative costume logic with armor, suit engineering, magical garment behavior, alien proportion, and character-readability design, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Technical outerwear shaped by sealed shell layers, modular paneling and strap-fed utility; crisp construction makes the clothing itself the speculative design.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak, illuminate, conceal, mutate, modularize, ritualize, or engineer through Straps, buckles, pockets, articulated knee darts, webbing harness geometry, asymmetrical zip lines; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        "Re-cut the existing wardrobe with offset zips, articulated seams, webbing harness lines and clipped pocket modules. A hood or raised collar is optional. Preserve the wearer's identity, anatomy, pose and requested role.",
       color_and_tone:
-        'Map color through speculative material color, neon accents, abyssal values, royal metals, survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Use functional contrast between shell, reinforcement and small signal accents. Let the prompt set the palette; neon or amber details stay restrained and never imply a mission.',
       lighting_and_shadow:
-        'Use Neon edge spill, wet-surface reflections, sodium-vapor amber, holographic accent light plus rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi display light as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Follow the requested scene lighting. Use narrow edge glints and a controlled damp sheen only on surfaces that would catch light; do not add rain, neon signs or a new setting.',
       texture_and_material:
-        'Render Waterproof technical fabric, waterproof membrane, UHMWPE composite panels, laser-cut nylon, bonded seam tape plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Combine matte waterproof membrane, ripstop or coated textile, seam tape, dense webbing and molded composite inserts. Keep stitching, fasteners and panel boundaries legible.',
       camera_and_composition:
-        'Compose with Optional hooded volume or layered collar geometry plus character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Keep the requested crop, viewpoint and pose. Clarify the modular panel rhythm and layer depth inside that framing; do not require a full-body view.',
       atmosphere_and_mood:
-        "Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth, spectacle, or mythic futurism; the tone should feel specific to Technical Modular Outerwear while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Suggest preparedness through orderly construction and compact utility details, without assigning combat, rescue, travel or other work.',
       rendering_and_quality:
-        'Finish with believable costume engineering, clean edge logic, strong silhouette, readable material physics, and no generic cosplay blur; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Separate soft textile, hard inserts and reflective piping with precise edges and believable folds. Avoid muddy noise and decorative hardware that obscures the cut.',
       key_features:
-        'Cyberpunk technical utility, modular outerwear systems, rain-slicked futurewear; Straps, buckles, pockets, articulated knee darts, webbing harness geometry, asymmetrical zip lines; Waterproof technical fabric, waterproof membrane, UHMWPE composite panels, laser-cut nylon, bonded seam tape; Neon edge spill, wet-surface reflections, sodium-vapor amber, holographic accent light; Optional hooded volume or layered collar geometry',
+        'Water-sealed shell layers; offset zip paths; webbing and clipped pocket modules; restrained signal piping.',
       creative_brief:
-        'Use Technical Modular Outerwear after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Cyberpunk technical utility, modular outerwear systems, rain-slicked futurewear, Straps, buckles, pockets, articulated knee darts, webbing harness geometry, asymmetrical zip lines, Waterproof technical fabric, waterproof membrane, UHMWPE composite panels, laser-cut nylon, bonded seam tape, Neon edge spill, wet-surface reflections, sodium-vapor amber, holographic accent light, Optional hooded volume or layered collar geometry plus paneling, harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and invented fastenings, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        'Transform the requested clothing into technical modular outerwear with sealed layers, offset seams, webbing and compact pocket modules. Preserve wearer, pose, role, scene and framing; keep hood, armor inserts and signal lights optional, and add no mission or props.',
     },
   },
   {
@@ -156,25 +156,25 @@ export const GENERATED_STYLE_PRESETS = [
       'fully opaque normal fabric, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
       aesthetic:
-        'Refractive Concealment Veil operates as a portable fashion-costume router: combine Partially invisible, refraction-mirage wonder, optical concealment mystery with speculative costume logic with armor, suit engineering, magical garment behavior, alien proportion, and character-readability design, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Refractive veil design uses transparent fabric, lens-like bending and prismatic edge shifts to create concealment cues while retaining a present, readable wearer.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak, illuminate, conceal, mutate, modularize, ritualize, or engineer through Distortion edge, partially-missing contour, refractive-bend silhouette, glass-lens warp, suspended concealment shape; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        'Apply optical distortion to requested veil or garment panels, bending the visible background through their surface. Keep face, pose and overall contour readable unless complete concealment is explicitly requested.',
       color_and_tone:
-        'Map color through speculative material color, neon accents, abyssal values, royal metals, survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Keep the material mostly transparent with small spectral edge colors; adapt the refraction hue to the prompt and avoid tinting unrelated surfaces.',
       lighting_and_shadow:
-        'Use Refraction, lens-warp caustics, glass-bend highlights, environmental-pass light, chromatic-shift edge plus rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi display light as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        "Preserve the scene's light and use localized lens glints or caustic edges on refractive fabric. Do not warp the whole environment or add a stealth scene.",
       texture_and_material:
-        'Render Glass-like, lens-distortion surface, heat-shimmer wave, refractive-prism, liquid-crystal, adaptive-camo plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Use sheer organza, fine refractive film or liquid-crystal-like layers with heat-shimmer ripples and glass-like edge highlights, never a rigid glass shell by default.',
       camera_and_composition:
-        'Compose with character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Preserve crop, viewpoint and pose. Keep transparent panels aligned to the garment and subject; do not make the wearer vanish or change camera perspective.',
       atmosphere_and_mood:
-        "Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth, spectacle, or mythic futurism; the tone should feel specific to Refractive Concealment Veil while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Suggest elusive elegance through a slight contour break and refracted color, without assigning camouflage, espionage or a hidden identity.',
       rendering_and_quality:
-        'Finish with believable costume engineering, clean edge logic, strong silhouette, readable material physics, and no generic cosplay blur; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Keep distortion localized and internally consistent; preserve facial and fabric detail around the refractive edge.',
       key_features:
-        'Partially invisible, refraction-mirage wonder, optical concealment mystery; Distortion edge, partially-missing contour, refractive-bend silhouette, glass-lens warp, suspended concealment shape; Glass-like, lens-distortion surface, heat-shimmer wave, refractive-prism, liquid-crystal, adaptive-camo; Refraction, lens-warp caustics, glass-bend highlights, environmental-pass light, chromatic-shift edge; character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus',
+        'Transparent veil panels; lens-bent contour edges; localized background displacement; fine prismatic fringe.',
       creative_brief:
-        'Use Refractive Concealment Veil after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Partially invisible, refraction-mirage wonder, optical concealment mystery, Distortion edge, partially-missing contour, refractive-bend silhouette, glass-lens warp, suspended concealment shape, Glass-like, lens-distortion surface, heat-shimmer wave, refractive-prism, liquid-crystal, adaptive-camo, Refraction, lens-warp caustics, glass-bend highlights, environmental-pass light, chromatic-shift edge, character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus plus paneling, harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and invented fastenings, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        'Add refractive veil surfaces to the requested clothing with transparent panels, subtle lens bending and prismatic edges. Preserve wearer, identity, pose, role, scene and frame; keep concealment localized unless total invisibility is explicitly requested.',
     },
   },
   {
@@ -185,25 +185,25 @@ export const GENERATED_STYLE_PRESETS = [
       'franchise icon, helmet visor, neon vehicle, grid arena, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
       aesthetic:
-        'Neon Light Suit operates as a portable fashion-costume router: combine Neon grid suiting, electroluminescent circuit couture, digital frontier energy with speculative costume logic with armor, suit engineering, magical garment behavior, alien proportion, and character-readability design, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Illuminated technical suiting pairs narrow circuit paths and modular matte panels with restrained emissive accents; the suit remains distinct from its environment.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak, illuminate, conceal, mutate, modularize, ritualize, or engineer through Glowing linework, hex-circuit geometry, modular panel segmentation, emitter plates and luminescent contour breaks; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        'Place luminous piping, branching circuit seams and occasional hexagonal nodes along existing garments. Keep emitter discs and helmets optional; preserve the wearer, anatomy, pose and role.',
       color_and_tone:
-        'Map color through speculative material color, neon accents, abyssal values, royal metals, survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Use a clear contrast between base cloth and light paths; choose glow colors from the prompt rather than requiring cyan, black or a fixed grid pattern.',
       lighting_and_shadow:
-        'Use Self-illuminated, emissive-glow bloom, dark-grid contrast, disc-edge rim light plus rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi display light as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Let garment lights cast a small, controlled local glow while preserving the actual scene. Avoid arena grids, vehicles, display walls and broad neon spill.',
       texture_and_material:
-        'Render Light, electroluminescent panel, matte neoprene, polycarbonate plate, luminous-flex circuit, silicone grip plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Mix matte neoprene, luminous flex circuits, polycarbonate details and silicone grip surfaces. Separate emitting lines from stitched seams and hard plates.',
       camera_and_composition:
-        'Compose with Compose for Neon Light Suit using its key spatial cues: Cyan circuit tracery, illuminated piping, matte black panels, emitter-disc accents and modular EL seams plus character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Keep the requested crop, angle and pose. Let illuminated seams trace the suit without demanding an arena, helmet or full-body stance.',
       atmosphere_and_mood:
-        "Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth, spectacle, or mythic futurism; the tone should feel specific to Neon Light Suit while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Suggest precise electric energy through contained light patterns, without assigning a game, race, vehicle or mission.',
       rendering_and_quality:
-        'Finish with believable costume engineering, clean edge logic, strong silhouette, readable material physics, and no generic cosplay blur; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Control bloom so each circuit line stays crisp and attached to the garment; preserve fabric texture and the underlying silhouette.',
       key_features:
-        'Neon grid suiting, electroluminescent circuit couture, digital frontier energy; Glowing linework, hex-circuit geometry, modular panel segmentation, emitter plates and luminescent contour breaks; Light, electroluminescent panel, matte neoprene, polycarbonate plate, luminous-flex circuit, silicone grip; Self-illuminated, emissive-glow bloom, dark-grid contrast, disc-edge rim light; Compose for Neon Light Suit using its key spatial cues: Cyan circuit tracery, illuminated piping, matte black panels, emitter-disc accents and modular EL seams',
+        'Luminous flex-circuit paths; hexagonal junctions; matte technical panels; restrained local emissive glow.',
       creative_brief:
-        'Use Neon Light Suit after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Neon grid suiting, electroluminescent circuit couture, digital frontier energy, Glowing linework, hex-circuit geometry, modular panel segmentation, emitter plates and luminescent contour breaks, Light, electroluminescent panel, matte neoprene, polycarbonate plate, luminous-flex circuit, silicone grip, Self-illuminated, emissive-glow bloom, dark-grid contrast, disc-edge rim light, Compose for Neon Light Suit using its key spatial cues: Cyan circuit tracery, illuminated piping, matte black panels, emitter-disc accents and modular EL seams plus paneling, harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and invented fastenings, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        'Restyle the requested wardrobe as a neon circuit suit with illuminated seam paths over matte technical panels. Preserve wearer, body, role, pose, scene and framing; colors follow the prompt, with no grid arena, vehicle or default helmet.',
     },
   },
   {
@@ -214,25 +214,25 @@ export const GENERATED_STYLE_PRESETS = [
       'solid, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
       aesthetic:
-        'Hologram operates as a portable fashion-costume router: combine Monochrome sci-fi hologram, distant-transmission shimmer, long-range signal urgency with speculative costume logic with armor, suit engineering, magical garment behavior, alien proportion, and character-readability design, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Holographic signal treatment built from translucent bands, scanline structure and restrained interference; it changes the requested appearance without inventing a transmission story.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak, illuminate, conceal, mutate, modularize, ritualize, or engineer through Scanlines, horizontal-interlaced banding, ghost-flicker edge, translucent signal contour, projection-field taper; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        'Apply horizontal scanlines, broken contour bands and a faint ghost edge to the requested wearer or clothing while keeping identity and pose recognizable. Do not replace them with a separate entity.',
       color_and_tone:
-        'Map color through speculative material color, neon accents, abyssal values, royal metals, survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Use a cohesive monochrome signal palette, with cool cyan only as a default option; honor any requested hue and preserve enough contrast to read the subject.',
       lighting_and_shadow:
-        'Use Self-lit emissive-blue glow, projection-cone light, low-distant-plane contrast and flicker-instability pulse plus rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi display light as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        "Use a contained self-lit edge and transparency contrast integrated with the prompt's scene. Do not add a projector, cone, sender or destination.",
       texture_and_material:
-        'Render Light interference, scanline-grid pattern, signal-degradation static, transparency-fade, projection-grain, chromatic-fringe plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Layer fine interference, scanline grain, slight transparency fade and minimal chromatic fringe; keep glitch density low enough to retain garment and facial structure.',
       camera_and_composition:
-        'Compose with character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        "Preserve requested framing, angle and pose. Keep the figure's contour and key clothing shapes aligned through the bands; do not turn it into an abstract screen.",
       atmosphere_and_mood:
-        "Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth, spectacle, or mythic futurism; the tone should feel specific to Hologram while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Create a fragile digital presence through controlled signal breakup, without implying a message, remote caller or mission.',
       rendering_and_quality:
-        'Finish with believable costume engineering, clean edge logic, strong silhouette, readable material physics, and no generic cosplay blur; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Keep scanline spacing deliberate, edge ghosts subtle and any distortion tied to the subject; use no fake text or interface graphics.',
       key_features:
-        'Monochrome sci-fi hologram, distant-transmission shimmer, long-range signal urgency; Scanlines, horizontal-interlaced banding, ghost-flicker edge, translucent signal contour, projection-field taper; Light interference, scanline-grid pattern, signal-degradation static, transparency-fade, projection-grain, chromatic-fringe; Self-lit emissive-blue glow, projection-cone light, low-distant-plane contrast and flicker-instability pulse; character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus',
+        'Translucent monochrome bands; horizontal scanline grain; restrained ghost contours; localized signal breakup.',
       creative_brief:
-        'Use Hologram after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Monochrome sci-fi hologram, distant-transmission shimmer, long-range signal urgency, Scanlines, horizontal-interlaced banding, ghost-flicker edge, translucent signal contour, projection-field taper, Light interference, scanline-grid pattern, signal-degradation static, transparency-fade, projection-grain, chromatic-fringe, Self-lit emissive-blue glow, projection-cone light, low-distant-plane contrast and flicker-instability pulse, character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus plus paneling, harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and invented fastenings, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        'Render the requested wearer and clothing with a holographic signal surface: translucent bands, scanlines and subtle interference. Preserve identity, pose, role, scene and framing; do not add a sender, message, projector, portal or transmission destination.',
     },
   },
   {
@@ -240,28 +240,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Shadow Form',
     category: '4. Fantasy Sci-Fi Costume',
     negativePrompt:
-      'bright cheerful lighting, fully illuminated surface, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, featureless wearer, body dissolved into smoke',
     style: {
       aesthetic:
-        'Shadow Form operates as a portable fashion-costume router: combine Shadow-form materiality, void-edge mystery, darkness-as-surface presence with speculative costume logic with armor, suit engineering, magical garment behavior, alien proportion, and character-readability design, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Shadow couture treats cloth as light-absorbing dark material with soft smoke-like edges and selective rim separation; the wearer remains a person, not a void-creature.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak, illuminate, conceal, mutate, modularize, ritualize, or engineer through Blurry, undefined-edge silhouette, smoke-like boundary, absence-contour, negative-space shape; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        'Restyle clothing as layered near-black fabric with softly fading hems and a clear silhouette. Preserve face, anatomy, pose and role; do not dissolve the wearer into smoke or alter species.',
       color_and_tone:
-        'Map color through speculative material color, neon accents, abyssal values, royal metals, survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Build depth from near-black values and sparse edge highlights, while retaining any explicitly requested color accents and enough contrast for recognition.',
       lighting_and_shadow:
-        'Use Minimal rim separation, light-absence void, negative-fill darkness, silhouette-against-light, rim-light-only edge plus rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi display light as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        "Follow the prompt's light, using restrained rim separation to distinguish fabric from its surroundings. Do not extinguish the entire scene or add a new light source.",
       texture_and_material:
-        'Render Darkness, light-absorbent void, shadow-cast density, absence-of-matter, velvety-black, depth-without-surface plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Suggest velvety light absorption, matte folds and smoke-soft garment edges through surface treatment; smoke remains a visual edge effect, not a prop or body.',
       camera_and_composition:
-        'Compose with shadow-form materiality: light-absorbing void, velvety black depth, rim edge, smoke-edge texture, silhouette contour and absence as surface plus character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        "Preserve requested crop, viewpoint and pose. Keep the subject's contour legible against the actual background, without forcing a silhouette-only composition.",
       atmosphere_and_mood:
-        "Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth, spectacle, or mythic futurism; the tone should feel specific to Shadow Form while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Create quiet, otherworldly gravity through negative space and low sheen, without assigning a ghost, monster or supernatural role.',
       rendering_and_quality:
-        'Finish with believable costume engineering, clean edge logic, strong silhouette, readable material physics, and no generic cosplay blur; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Balance soft outer edges with readable seams and folds. Retain face and garment structure instead of collapsing the subject into a featureless black shape.',
       key_features:
-        'Shadow-form materiality, void-edge mystery, darkness-as-surface presence; Blurry, undefined-edge silhouette, smoke-like boundary, absence-contour, negative-space shape; Darkness, light-absorbent void, shadow-cast density, absence-of-matter, velvety-black, depth-without-surface; Minimal rim separation, light-absence void, negative-fill darkness, silhouette-against-light, rim-light-only edge; shadow-form materiality: light-absorbing void, velvety black depth, rim edge, smoke-edge texture, silhouette contour and absence as surface',
+        'Light-absorbing near-black cloth; smoke-soft garment edges; selective rim separation; legible negative-space silhouette.',
       creative_brief:
-        'Use Shadow Form after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Shadow-form materiality, void-edge mystery, darkness-as-surface presence, Blurry, undefined-edge silhouette, smoke-like boundary, absence-contour, negative-space shape, Darkness, light-absorbent void, shadow-cast density, absence-of-matter, velvety-black, depth-without-surface, Minimal rim separation, light-absence void, negative-fill darkness, silhouette-against-light, rim-light-only edge, shadow-form materiality: light-absorbing void, velvety black depth, rim edge, smoke-edge texture, silhouette contour and absence as surface plus paneling, harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and invented fastenings, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        'Transform the requested wardrobe into shadow couture using velvety dark fabric, soft-edged hems and restrained rim detail. Preserve identity, anatomy, pose, role, scene and framing; do not create a ghost, smoke-body, void or new setting.',
     },
   },
   {
@@ -269,28 +269,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Wizard Robes',
     category: '4. Fantasy Sci-Fi Costume',
     negativePrompt:
-      'literal school uniform, modern streetwear, prop-only wizard cliche, library scene lock, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'literal school uniform, prop-only wizard cliche, library scene lock, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
       aesthetic:
-        'Wizard Robes operates as a portable fashion-costume router: combine Classic mage regalia, arcane scholar mystique and spellcraft textile language with speculative costume logic with armor, suit engineering, magical garment behavior, alien proportion, and character-readability design, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Mage-inspired robe design built around long vertical columns, layered hems, deep cowl folds and fine celestial embroidery; the clothes carry the fantasy.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak, illuminate, conceal, mutate, modularize, ritualize, or engineer through Flowing robe columns, bell-sleeve drape, hooded-cowl depth, layered hems and occasional apex geometry; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        'Transform the existing wardrobe into flowing robes with bell-sleeve drape, optional hood or cowl, and stitched ornamental marks. Preserve wearer, anatomy, pose and role; add no wand or book.',
       color_and_tone:
-        'Map color through speculative material color, neon accents, abyssal values, royal metals, survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Use a rich cloth base with fine silver or jewel-thread accents, adapting the palette to the prompt and keeping ornament subordinate to the garment.',
       lighting_and_shadow:
-        'Use Arcane glow, silver rim, warm scholarly glow, jewel luminescence and embroidered highlight glints plus rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi display light as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Follow the requested scene lighting; reveal velvet depth and embroidery with restrained glints. Do not add a magical glow, candlelit library or star field.',
       texture_and_material:
-        'Render Velvet, silver-thread embroidery, astrological silk, crystal beads, aged leather, moonstone inlay plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Combine velvet, silk, metallic thread, crystal-like beads and small leather fastenings. Keep embroidery ornamental rather than readable text or a printed spell.',
       camera_and_composition:
-        'Compose with Draped-column elongation, constellation-stitch rhythm and cowl-shadow depth compression plus character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Preserve the requested crop, angle and pose. Keep the long robe lines, cowl depth and sleeve shape readable without demanding a full-length portrait.',
       atmosphere_and_mood:
-        "Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth, spectacle, or mythic futurism; the tone should feel specific to Wizard Robes while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Suggest arcane scholarship through drape and celestial stitch motifs, without making the wearer a wizard or adding spellcasting.',
       rendering_and_quality:
-        'Finish with believable costume engineering, clean edge logic, strong silhouette, readable material physics, and no generic cosplay blur; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Render deep folds, fine stitches and layered hems with clear textile weight. Keep ornament crisp and prevent prop-driven wizard cliches.',
       key_features:
-        'Classic mage regalia, arcane scholar mystique and spellcraft textile language; Flowing robe columns, bell-sleeve drape, hooded-cowl depth, layered hems and occasional apex geometry; Velvet, silver-thread embroidery, astrological silk, crystal beads, aged leather, moonstone inlay; Arcane glow, silver rim, warm scholarly glow, jewel luminescence and embroidered highlight glints; Draped-column elongation, constellation-stitch rhythm and cowl-shadow depth compression',
+        'Long robe columns; deep cowl folds; bell-sleeve drape; fine celestial stitchwork.',
       creative_brief:
-        'Use Wizard Robes after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Classic mage regalia, arcane scholar mystique and spellcraft textile language, Flowing robe columns, bell-sleeve drape, hooded-cowl depth, layered hems and occasional apex geometry, Velvet, silver-thread embroidery, astrological silk, crystal beads, aged leather, moonstone inlay, Arcane glow, silver rim, warm scholarly glow, jewel luminescence and embroidered highlight glints, Draped-column elongation, constellation-stitch rhythm and cowl-shadow depth compression plus paneling, harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and invented fastenings, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        'Reinterpret the requested clothing as mage-inspired robes with vertical drape, layered hems, cowl folds and fine celestial embroidery. Preserve identity, anatomy, role, pose, scene and frame; keep hood optional and add no spell, wand, book or school setting.',
     },
   },
   {
@@ -301,25 +301,25 @@ export const GENERATED_STYLE_PRESETS = [
       'clean, gore, visible wound, weapon focus, zombie form, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
       aesthetic:
-        'Zombie Survivor operates as a portable fashion-costume router: combine Distressed outbreak utilitywear with patched survival layers, field repair logic and emergency pragmatism with speculative costume logic with armor, suit engineering, magical garment behavior, alien proportion, and character-readability design, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Distressed utilitywear with patched layers, field-repair seams and practical bulk; damage is carried by the garments rather than the wearer or setting.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak, illuminate, conceal, mutate, modularize, ritualize, or engineer through Dirty layers, scavenged onion bulk, duct-tape reinforcement, wrapped-forearm binding and boot-cut pragmatism; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        "Rebuild existing clothes with worn hems, reinforced patches, wrapped cuffs and layered denim or flannel. Preserve the person's face, anatomy, pose and role; show no wounds or zombie transformation.",
       color_and_tone:
-        'Map color through speculative material color, neon accents, abyssal values, royal metals, survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Use muted, worn cloth values with a small emergency-orange accent only when it suits the prompt; keep the original palette and scene intact.',
       lighting_and_shadow:
-        'Use Gritty overcast grey, dust-haze shadow, emergency-orange rim and dirty practical light plus rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi display light as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Respect the requested location and light. Reveal fabric wear with soft contrast; do not create overcast gloom, dust haze or emergency lighting.',
       texture_and_material:
-        'Render Dirt-embedded denim, duct-tape patches, torn flannel, sweat-worn cotton, abraded leather and dried emergency stains plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Use abraded denim, cotton, flannel, leather and cloth or tape patches. Show fraying and repair with no blood, gore or bodily damage.',
       camera_and_composition:
-        'Compose with Layered protection bulk, patched seam interruptions and improvised field-repair asymmetry plus character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Keep the requested crop, viewpoint and pose. Make patched seams and protective layering legible without adding gear outside the frame.',
       atmosphere_and_mood:
-        "Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth, spectacle, or mythic futurism; the tone should feel specific to Zombie Survivor while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Communicate improvised resilience through repairs and layered construction, without declaring an outbreak, survivor role or danger.',
       rendering_and_quality:
-        'Finish with believable costume engineering, clean edge logic, strong silhouette, readable material physics, and no generic cosplay blur; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Vary scuffs, seams and patch edges with control; distinguish fabric wear from stains and keep the original subject readable.',
       key_features:
-        'Distressed outbreak utilitywear with patched survival layers, field repair logic and emergency pragmatism; Dirty layers, scavenged onion bulk, duct-tape reinforcement, wrapped-forearm binding and boot-cut pragmatism; Dirt-embedded denim, duct-tape patches, torn flannel, sweat-worn cotton, abraded leather and dried emergency stains; Gritty overcast grey, dust-haze shadow, emergency-orange rim and dirty practical light; Layered protection bulk, patched seam interruptions and improvised field-repair asymmetry',
+        'Patched denim and flannel; taped repair seams; wrapped cuffs; layered protective bulk.',
       creative_brief:
-        'Use Zombie Survivor after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Distressed outbreak utilitywear with patched survival layers, field repair logic and emergency pragmatism, Dirty layers, scavenged onion bulk, duct-tape reinforcement, wrapped-forearm binding and boot-cut pragmatism, Dirt-embedded denim, duct-tape patches, torn flannel, sweat-worn cotton, abraded leather and dried emergency stains, Gritty overcast grey, dust-haze shadow, emergency-orange rim and dirty practical light, Layered protection bulk, patched seam interruptions and improvised field-repair asymmetry plus paneling, harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and invented fastenings, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        'Turn the requested clothing into repaired utilitywear with patched fabric, taped seams and wrapped cuffs. Preserve wearer, identity, anatomy, pose, role, scene and framing; add no wounds, weapons, zombies or outbreak setting.',
     },
   },
   {
@@ -330,25 +330,25 @@ export const GENERATED_STYLE_PRESETS = [
       'plain everyday minimalwear, contemporary Earth-uniform literalism, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
       aesthetic:
-        'Space Opera Royal operates as a portable fashion-costume router: combine Operatic space-court couture, sovereign nebular regality, diplomatic authority with speculative costume logic with armor, suit engineering, magical garment behavior, alien proportion, and character-readability design, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Ceremonial space-opera couture uses vertical grandeur, sculpted waistlines and flowing fabric architecture; it signals formality without assigning rank.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak, illuminate, conceal, mutate, modularize, ritualize, or engineer through Elaborate cranial halo, ceremonial train sweep, corseted architecture, bell-sleeve drama, court-pageant verticality; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        'Re-cut existing garments with an architectural bodice, sweeping sleeve or train proportions and fine beadwork. Halo-like headwear and elaborate trains remain optional; preserve identity, pose and stated role.',
       color_and_tone:
-        'Map color through speculative material color, neon accents, abyssal values, royal metals, survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Use luminous jewel or iridescent accents against a deliberate base, following requested hues rather than requiring nebular colors, white feathers or metallics.',
       lighting_and_shadow:
-        'Use Dramatic ceremonial glow, stained-glass fantasy light, diplomatic backlight plus rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi display light as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        "Preserve the prompt's setting and light. Allow organza and beads to catch soft highlights; do not add stained-glass beams, stars or a ceremonial venue.",
       texture_and_material:
-        'Render Rare off-world fabric, iridescent organza, feather-trim, beaded net, liquid-metal threads, luminescent silk plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Layer organza, beaded net, feather-like trim, metallic thread and luminous silk as textile choices, with clean seams and controlled ornament.',
       camera_and_composition:
-        'Compose with character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Keep requested framing, angle and pose. Let vertical drape and sculptural sleeves read in the existing crop; do not force a full-body pageant portrait.',
       atmosphere_and_mood:
-        "Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth, spectacle, or mythic futurism; the tone should feel specific to Space Opera Royal while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Create ceremony through garment scale and ornamental rhythm, without conferring royalty, diplomatic office, species or a court setting.',
       rendering_and_quality:
-        'Finish with believable costume engineering, clean edge logic, strong silhouette, readable material physics, and no generic cosplay blur; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Balance ornate details with a clean silhouette; separate translucent cloth, beadwork and metallic thread without turning fabric into hard armor.',
       key_features:
-        'Operatic space-court couture, sovereign nebular regality, diplomatic authority; Elaborate cranial halo, ceremonial train sweep, corseted architecture, bell-sleeve drama, court-pageant verticality; Rare off-world fabric, iridescent organza, feather-trim, beaded net, liquid-metal threads, luminescent silk; Dramatic ceremonial glow, stained-glass fantasy light, diplomatic backlight; character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus',
+        'Architectural waist shaping; vertical sleeve and train lines; beaded or luminous textile layers; optional halo-like headpiece.',
       creative_brief:
-        'Use Space Opera Royal after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Operatic space-court couture, sovereign nebular regality, diplomatic authority, Elaborate cranial halo, ceremonial train sweep, corseted architecture, bell-sleeve drama, court-pageant verticality, Rare off-world fabric, iridescent organza, feather-trim, beaded net, liquid-metal threads, luminescent silk, Dramatic ceremonial glow, stained-glass fantasy light, diplomatic backlight, character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus plus paneling, harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and invented fastenings, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        'Restyle the requested outfit as ceremonial space-opera couture with sculpted tailoring, flowing textile architecture and fine luminous ornament. Preserve wearer, role, pose, location and framing; do not imply royal rank or add a court, throne or species.',
     },
   },
   {
@@ -359,25 +359,25 @@ export const GENERATED_STYLE_PRESETS = [
       'loose clothes, franchise icon, bodybuilder anatomy, muscle shading, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
       aesthetic:
-        'Superhero Spandex operates as a portable fashion-costume router: combine Four-color heroic costume language, emblematic idealism and panel-breaking dynamism with speculative costume logic with armor, suit engineering, magical garment behavior, alien proportion, and character-readability design, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Graphic heroic suit tailoring built from close-fit performance fabric, decisive color panels and angular seam flow; it uses comic clarity without a franchise template.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak, illuminate, conceal, mutate, modularize, ritualize, or engineer through Cape-sweep drama, emblem-balanced geometry, gauntlet-to-boot rhythm and bold seam blocking; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        'Re-cut the existing wardrobe as a streamlined stretch suit with bold panel breaks and controlled gauntlet-to-boot transitions. A cape or chest emblem is optional only when requested; preserve anatomy, identity, pose and role.',
       color_and_tone:
-        'Map color through speculative material color, neon accents, abyssal values, royal metals, survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Use high-contrast blocks drawn from the prompt's palette. Never default to a familiar blue-and-red combination or invent a chest symbol, crest or franchise mark.",
       lighting_and_shadow:
-        'Use Rim light, heroic edge-highlight, two-source drama and comic-ink contrast plus rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi display light as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        "Use clean edge highlights and crisp value separation on the suit while preserving the scene's lighting. Do not add action effects, comic panels or a heroic stage.",
       texture_and_material:
-        'Render Matte performance knit, printed color blocking, vinyl cape, rubber sole and metallic accents plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Favor matte performance knit, reinforced stitching, coated accents and rubberized trim. Keep stretch fabric distinct from hard guards; cape fabric is included only if requested.',
       camera_and_composition:
-        'Compose with character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        "Preserve requested framing, perspective, pose and gesture. Let the suit's panel rhythm read in that view; do not force a full-body poster or frontal stance.",
       atmosphere_and_mood:
-        "Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth, spectacle, or mythic futurism; the tone should feel specific to Superhero Spandex while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Convey graphic confidence through clean geometry and contrast without assigning hero, villain, powers or a mission.',
       rendering_and_quality:
-        'Finish with believable costume engineering, clean edge logic, strong silhouette, readable material physics, and no generic cosplay blur; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Keep panel edges sharp, knit texture subtle and joints believable. Avoid muscle shading, anatomy changes and decorative marks that resemble a known franchise.',
       key_features:
-        'Four-color heroic costume language, emblematic idealism and panel-breaking dynamism; Cape-sweep drama, emblem-balanced geometry, gauntlet-to-boot rhythm and bold seam blocking; Matte performance knit, printed color blocking, vinyl cape, rubber sole and metallic accents; Rim light, heroic edge-highlight, two-source drama and comic-ink contrast; character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus',
+        'Close-fit performance knit; bold angular panel blocking; gauntlet-to-boot seam rhythm; optional cape or emblem by request.',
       creative_brief:
-        'Use Superhero Spandex after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Four-color heroic costume language, emblematic idealism and panel-breaking dynamism, Cape-sweep drama, emblem-balanced geometry, gauntlet-to-boot rhythm and bold seam blocking, Matte performance knit, printed color blocking, vinyl cape, rubber sole and metallic accents, Rim light, heroic edge-highlight, two-source drama and comic-ink contrast, character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus plus paneling, harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and invented fastenings, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        'Transform the requested clothing into a graphic heroic suit with matte stretch fabric and bold, original panel geometry. Preserve wearer, anatomy, pose, role, scene, palette and framing; add no default cape, emblem, franchise colors, powers or mission.',
     },
   },
   {
@@ -388,25 +388,25 @@ export const GENERATED_STYLE_PRESETS = [
       'ordinary casualwear, designer reference, franchise likeness, space terminal, humanoid alien body lock, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
       aesthetic:
-        'Alien Fashion operates as a portable fashion-costume router: combine Xeno-couture editorial logic with late-90s sci-fi energy, synthetic rebellion and artificial glamour with speculative costume logic with armor, suit engineering, magical garment behavior, alien proportion, and character-readability design, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Avant-garde synthetic fashion built from asymmetrical paneling, deliberate cutouts and strap lattices; alien inspiration remains an editorial clothing language, not a species.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak, illuminate, conceal, mutate, modularize, ritualize, or engineer through Strange cutouts, geometric-negative-space, structural strap lattice, asymmetrical paneling, tab-constructed sleeves; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        'Re-cut the existing outfit with geometric negative space, tabbed sleeves, intersecting straps and a few utility rings. Preserve anatomy, identity, pose, requested coverage and role.',
       color_and_tone:
-        'Map color through speculative material color, neon accents, abyssal values, royal metals, survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Use sharp contrast and synthetic accents from the prompt's palette; chrome or orange may appear as material choices but are never mandatory.",
       lighting_and_shadow:
-        'Use Bright sci-fi editorial glow, chrome-reflection bounce, sterile overhead, neon-advertisement spill plus rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi display light as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Use clean fashion-like highlights on reflective surfaces while matching the supplied scene. Do not add advertising neon, signage or a space terminal.',
       texture_and_material:
-        'Render Orange rubber, clear plastic, chrome vinyl, white elastic webbing, molded neoprene, holographic PVC plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Combine molded neoprene, clear film, chrome-coated vinyl and woven elastic with careful joins. Keep translucent sections controlled and avoid toy-like plastic.',
       camera_and_composition:
-        'Compose with Compose for Alien Fashion using its key spatial cues: Straps, lattice harness cues, cutout geometry, contrast stitching, utility ring plus character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Preserve the requested crop, angle and pose. Make cutout geometry and strap crossings readable without requiring a runway or fashion-editorial framing.',
       atmosphere_and_mood:
-        "Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth, spectacle, or mythic futurism; the tone should feel specific to Alien Fashion while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Feel experimental through unexpected garment geometry and material contrast; do not assign an alien body, planet or futuristic occupation.',
       rendering_and_quality:
-        'Finish with believable costume engineering, clean edge logic, strong silhouette, readable material physics, and no generic cosplay blur; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        "Keep cutout edges, stitching and reflections precise, preserving the prompt's body and clothing coverage.",
       key_features:
-        'Xeno-couture editorial logic with late-90s sci-fi energy, synthetic rebellion and artificial glamour; Strange cutouts, geometric-negative-space, structural strap lattice, asymmetrical paneling, tab-constructed sleeves; Orange rubber, clear plastic, chrome vinyl, white elastic webbing, molded neoprene, holographic PVC; Bright sci-fi editorial glow, chrome-reflection bounce, sterile overhead, neon-advertisement spill; Compose for Alien Fashion using its key spatial cues: Straps, lattice harness cues, cutout geometry, contrast stitching, utility ring',
+        'Geometric cutouts; asymmetrical tabbed panels; strap-lattice construction; molded synthetic surfaces.',
       creative_brief:
-        'Use Alien Fashion after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Xeno-couture editorial logic with late-90s sci-fi energy, synthetic rebellion and artificial glamour, Strange cutouts, geometric-negative-space, structural strap lattice, asymmetrical paneling, tab-constructed sleeves, Orange rubber, clear plastic, chrome vinyl, white elastic webbing, molded neoprene, holographic PVC, Bright sci-fi editorial glow, chrome-reflection bounce, sterile overhead, neon-advertisement spill, Compose for Alien Fashion using its key spatial cues: Straps, lattice harness cues, cutout geometry, contrast stitching, utility ring plus paneling, harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and invented fastenings, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        'Reinterpret the requested clothes as avant-garde synthetic fashion with geometric cutouts, asymmetrical panels and strap lattices. Preserve wearer, anatomy, coverage, role, pose, setting and frame; add no alien species, terminal or franchise design.',
     },
   },
   {
@@ -414,28 +414,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Post-Apocalyptic Scavenger',
     category: '4. Fantasy Sci-Fi Costume',
     negativePrompt:
-      'clean, new, franchise likeness, chase vehicle, weapon focus, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'franchise likeness, chase vehicle, weapon focus, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, unweathered survival gear',
     style: {
       aesthetic:
-        'Post-Apocalyptic Scavenger operates as a portable fashion-costume router: combine Scavenged wasteland utility couture with oxidized survival layers, fuel-scarcity grit and chrome myth with speculative costume logic with armor, suit engineering, magical garment behavior, alien proportion, and character-readability design, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Scavenged survivalwear assembled from mismatched protective layers, visible repairs and practical asymmetry; wear and repair define the clothing.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak, illuminate, conceal, mutate, modularize, ritualize, or engineer through Rags, armor, scavenged-layer chaos, shoulder-pad bulk, wrapped-limb binding and improvised asymmetry; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        'Rework the existing outfit with patched panels, wrapped cuffs, uneven hems, reinforced shoulders and salvaged fasteners. Preserve the wearer, anatomy, pose and requested role; add no weapon or vehicle.',
       color_and_tone:
-        'Map color through speculative material color, neon accents, abyssal values, royal metals, survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Use dusty, muted cloth values with selective rust or repair-orange accents, adapting to explicit color directions instead of imposing wasteland browns.',
       lighting_and_shadow:
-        'Use Harsh sun, heat-shimmer distortion, dust diffusion, repair-fire orange accents and wind-haze plus rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi display light as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Follow the requested environment and time of day. Let rough edges and layered cloth create texture; do not add dust haze, heat shimmer, firelight or a wasteland.',
       texture_and_material:
-        'Render Dirty canvas, torn leather, salvaged tire rubber, oxidized chain texture, scrap-panel armor, gauze wraps, weathered denim plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Combine worn canvas, denim, torn leather, rubber and patched fabric, showing abrasion, frayed edges and deliberate repairs without blood or injury.',
       camera_and_composition:
-        'Compose with Scavenged-layer asymmetry, strapped compression, heat-haze edges and armor-fragment silhouette breaks plus character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Preserve the supplied framing, viewpoint and pose. Make mismatched layers and repair seams legible within the original crop.',
       atmosphere_and_mood:
-        "Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth, spectacle, or mythic futurism; the tone should feel specific to Post-Apocalyptic Scavenger while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Suggest resourcefulness through asymmetry and repeated repairs, without declaring the wearer a survivor or inventing an apocalypse.',
       rendering_and_quality:
-        'Finish with believable costume engineering, clean edge logic, strong silhouette, readable material physics, and no generic cosplay blur; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Keep distressed surfaces varied but controlled; distinguish fabric, rubber and metal scraps, and retain readable garment construction.',
       key_features:
-        'Scavenged wasteland utility couture with oxidized survival layers, fuel-scarcity grit and chrome myth; Rags, armor, scavenged-layer chaos, shoulder-pad bulk, wrapped-limb binding and improvised asymmetry; Dirty canvas, torn leather, salvaged tire rubber, oxidized chain texture, scrap-panel armor, gauze wraps, weathered denim; Harsh sun, heat-shimmer distortion, dust diffusion, repair-fire orange accents and wind-haze; Scavenged-layer asymmetry, strapped compression, heat-haze edges and armor-fragment silhouette breaks',
+        'Mismatched protective layers; wrapped cuffs; patched canvas and denim; salvaged fasteners and shoulder panels.',
       creative_brief:
-        'Use Post-Apocalyptic Scavenger after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Scavenged wasteland utility couture with oxidized survival layers, fuel-scarcity grit and chrome myth, Rags, armor, scavenged-layer chaos, shoulder-pad bulk, wrapped-limb binding and improvised asymmetry, Dirty canvas, torn leather, salvaged tire rubber, oxidized chain texture, scrap-panel armor, gauze wraps, weathered denim, Harsh sun, heat-shimmer distortion, dust diffusion, repair-fire orange accents and wind-haze, Scavenged-layer asymmetry, strapped compression, heat-haze edges and armor-fragment silhouette breaks plus paneling, harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and invented fastenings, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        'Turn the requested clothing into repaired scavenged survivalwear with mismatched layers, wrapped cuffs, patched cloth and salvaged fasteners. Preserve wearer, role, pose, scene and framing; add no weapon, vehicle, injury or apocalypse.',
     },
   },
   {
@@ -443,28 +443,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Vampire Lord',
     category: '4. Fantasy Sci-Fi Costume',
     negativePrompt:
-      'modern, messy, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
       aesthetic:
-        'Vampire Lord operates as a portable fashion-costume router: combine Gothic nocturnal aristocracy, immortal-danger elegance, old-world menace with speculative costume logic with armor, suit engineering, magical garment behavior, alien proportion, and character-readability design, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Gothic aristocratic tailoring defined by a high collar, tapered longline coat, rich lining and restrained signet detail; it evokes the style without changing species or rank.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak, illuminate, conceal, mutate, modularize, ritualize, or engineer through High collar, cape-volume sweep, tailcoat-waist taper, cravat-neck precision, heraldic signet accents; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        'Shape existing clothes into a precise waist, raised collar, layered lapels and coat tails. A cape, medallion or crimson lining is optional only when requested; preserve identity, anatomy, pose and role.',
       color_and_tone:
-        'Map color through speculative material color, neon accents, abyssal values, royal metals, survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Use deep value contrast and rich lining accents while honoring the prompt's palette; black, crimson and silver are options, not requirements.",
       lighting_and_shadow:
-        'Use Moonlight silver rim, low amber flicker, fog-diffused ambiance, deep gothic shadow contrast plus rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi display light as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Keep the real scene lighting, adding a fine rim on velvet or satin and controlled metal glints only. Do not add moonlight, fog, candles or a manor.',
       texture_and_material:
-        'Render Velvet, silk satin lining, brocade vest, starched wing collar, onyx ring, opera cape wool plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Contrast velvet, satin lining, brocade, fine wool and polished metal ornament with disciplined tailoring and visible fabric weight.',
       camera_and_composition:
-        'Compose with Compose for Vampire Lord using its key spatial cues: Opera cape, high collar, medallion, heraldic signet, crimson lining plus character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Preserve the supplied crop, angle and pose. Keep collar height and tapered coat lines readable without forcing a full-length portrait.',
       atmosphere_and_mood:
-        "Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth, spectacle, or mythic futurism; the tone should feel specific to Vampire Lord while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Suggest composed nocturnal elegance through silhouette and fabric contrast, without fangs, blood, undead features or a villain role.',
       rendering_and_quality:
-        'Finish with believable costume engineering, clean edge logic, strong silhouette, readable material physics, and no generic cosplay blur; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Keep lapels, lining edges and brocade detail crisp; maintain natural facial features and avoid horror props or costume clutter.',
       key_features:
-        'Gothic nocturnal aristocracy, immortal-danger elegance, old-world menace; High collar, cape-volume sweep, tailcoat-waist taper, cravat-neck precision, heraldic signet accents; Velvet, silk satin lining, brocade vest, starched wing collar, onyx ring, opera cape wool; Moonlight silver rim, low amber flicker, fog-diffused ambiance, deep gothic shadow contrast; Compose for Vampire Lord using its key spatial cues: Opera cape, high collar, medallion, heraldic signet, crimson lining',
+        'Raised sculptural collar; tapered longline tailoring; velvet and satin contrast; optional cape and signet ornaments.',
       creative_brief:
-        'Use Vampire Lord after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Gothic nocturnal aristocracy, immortal-danger elegance, old-world menace, High collar, cape-volume sweep, tailcoat-waist taper, cravat-neck precision, heraldic signet accents, Velvet, silk satin lining, brocade vest, starched wing collar, onyx ring, opera cape wool, Moonlight silver rim, low amber flicker, fog-diffused ambiance, deep gothic shadow contrast, Compose for Vampire Lord using its key spatial cues: Opera cape, high collar, medallion, heraldic signet, crimson lining plus paneling, harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and invented fastenings, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        'Restyle the requested wardrobe with gothic longline tailoring, a high collar, rich lining and measured ornament. Preserve wearer, identity, role, pose, scene and frame; cape, medallion and crimson are optional, with no vampire anatomy or manor.',
     },
   },
   {
@@ -475,25 +475,25 @@ export const GENERATED_STYLE_PRESETS = [
       'casual, latex body read, cockpit lock, franchise suit, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
       aesthetic:
-        'Mech Pilot Suit operates as a portable fashion-costume router: combine Biomech interfacewear, sync-signal shine and pressure-system readiness with speculative costume logic with armor, suit engineering, magical garment behavior, alien proportion, and character-readability design, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Mech-interface suiting built from sealed support bands, capsule-shaped seam paths and compact connector hardware; it reads as wearable engineering, not a pilot identity.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak, illuminate, conceal, mutate, modularize, ritualize, or engineer through Armored panel lines, capsule-contour geometry, sealed-edge bands, connector plates and ergonomic seam maps; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        'Rework the existing outfit with ergonomic panel maps, reinforced collar or cuffs and a few connector details. Preserve anatomy, pose and role; do not add a cockpit, machine or neural port by default.',
       color_and_tone:
-        'Map color through speculative material color, neon accents, abyssal values, royal metals, survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Separate dense suit fabric from hard connectors, using the prompt's palette and only small status accents where requested.",
       lighting_and_shadow:
-        'Use Amber system glow, display backlight, capsule bioluminescence and sync-alert rim plus rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi display light as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Follow the supplied scene lighting and let hard surfaces catch controlled highlights. Do not invent a display, alarm glow or cockpit light.',
       texture_and_material:
-        'Render Molded polymer, neoprene support, carbon-fiber panel, rubberized connector plates and memory-foam inner pads plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Pair molded polymer, neoprene support, carbon weave, rubberized connectors and dense technical knit, with sealed edges and credible fit.',
       camera_and_composition:
-        'Compose with Compose for Mech Pilot Suit using its key spatial cues: Connector collar cues, neural-port-like detailing, pilot-panel seams and sealed support bands plus character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Keep the requested crop, angle and pose. Make collar seals, support bands and seam maps visible only where the framing allows.',
       atmosphere_and_mood:
-        "Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth, spectacle, or mythic futurism; the tone should feel specific to Mech Pilot Suit while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Suggest engineered readiness through fit and connector placement without assigning a pilot, cockpit, machine bond or mission.',
       rendering_and_quality:
-        'Finish with believable costume engineering, clean edge logic, strong silhouette, readable material physics, and no generic cosplay blur; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Use orderly panel transitions and compact hardware, preserving comfortable garment fit and recognizable face and body.',
       key_features:
-        'Biomech interfacewear, sync-signal shine and pressure-system readiness; Armored panel lines, capsule-contour geometry, sealed-edge bands, connector plates and ergonomic seam maps; Molded polymer, neoprene support, carbon-fiber panel, rubberized connector plates and memory-foam inner pads; Amber system glow, display backlight, capsule bioluminescence and sync-alert rim; Compose for Mech Pilot Suit using its key spatial cues: Connector collar cues, neural-port-like detailing, pilot-panel seams and sealed support bands',
+        'Capsule-contour seam map; sealed support bands; reinforced collar connectors; polymer and neoprene transitions.',
       creative_brief:
-        'Use Mech Pilot Suit after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Biomech interfacewear, sync-signal shine and pressure-system readiness, Armored panel lines, capsule-contour geometry, sealed-edge bands, connector plates and ergonomic seam maps, Molded polymer, neoprene support, carbon-fiber panel, rubberized connector plates and memory-foam inner pads, Amber system glow, display backlight, capsule bioluminescence and sync-alert rim, Compose for Mech Pilot Suit using its key spatial cues: Connector collar cues, neural-port-like detailing, pilot-panel seams and sealed support bands plus paneling, harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and invented fastenings, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        'Turn the requested clothes into a mech-interface suit with ergonomic seam maps, sealed support bands and compact connectors. Preserve wearer, pose, role, scene and framing; add no cockpit, machine, neural port or mission.',
     },
   },
   {
@@ -504,25 +504,25 @@ export const GENERATED_STYLE_PRESETS = [
       'unmodified plain surface, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
       aesthetic:
-        'Cybernetic Implant operates as a portable fashion-costume router: combine Cyborg couture, transhuman evolution and precision augmentation grammar without requiring a human host with speculative costume logic with armor, suit engineering, magical garment behavior, alien proportion, and character-readability design, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Cybernetic couture integrates precision augmentation cues into tailored surfaces, using contour channels and small interface hardware while respecting the existing body.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak, illuminate, conceal, mutate, modularize, ritualize, or engineer through Interface seams, implant-ridge channels, carbon-fiber contour bands, graft plates and modular prosthetic breaks; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        'Place implant-like seams, carbon contour bands, graft-shaped panels and discreet interface nodes along clothing or explicitly requested augmentations. Do not replace limbs or alter anatomy by default.',
       color_and_tone:
-        'Map color through speculative material color, neon accents, abyssal values, royal metals, survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Set brushed-metal, graphite and silicone values against the prompt's palette; use a small LED accent only when it supports the requested colors.",
       lighting_and_shadow:
-        'Use Sterile key light, ring-reflection highlights, cold overhead spill and pinpoint LED status glow plus rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi display light as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Preserve the actual scene lighting and add crisp reflections only on alloy, glass or status details. Do not invent a clinic, display or procedure light.',
       texture_and_material:
-        'Render Brushed titanium, carbon-fiber weave, medical silicone, polycarbonate, bio-gel interface and anodized alloy plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Combine brushed titanium, carbon weave, medical silicone, polycarbonate and anodized details with visible transitions between fabric and hardware.',
       camera_and_composition:
-        'Compose with Optional modular augmentation break or replacement logic plus character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Keep the requested crop, angle and pose. Place interface detail along visible garment seams without forcing a close-up or exposing more body.',
       atmosphere_and_mood:
-        "Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth, spectacle, or mythic futurism; the tone should feel specific to Cybernetic Implant while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Read as precise, advanced couture rather than a diagnosis or procedure; do not assign a patient, cyborg identity or technical occupation.',
       rendering_and_quality:
-        'Finish with believable costume engineering, clean edge logic, strong silhouette, readable material physics, and no generic cosplay blur; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Make small hardware clean and integrated, with disciplined seam paths and material contrast. Preserve recognizable anatomy and avoid random exposed circuitry.',
       key_features:
-        'Cyborg couture, transhuman evolution and precision augmentation grammar without requiring a human host; Interface seams, implant-ridge channels, carbon-fiber contour bands, graft plates and modular prosthetic breaks; Brushed titanium, carbon-fiber weave, medical silicone, polycarbonate, bio-gel interface and anodized alloy; Sterile key light, ring-reflection highlights, cold overhead spill and pinpoint LED status glow; Optional modular augmentation break or replacement logic',
+        'Implant-like seam channels; carbon contour bands; titanium and silicone transitions; discreet interface nodes.',
       creative_brief:
-        'Use Cybernetic Implant after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Cyborg couture, transhuman evolution and precision augmentation grammar without requiring a human host, Interface seams, implant-ridge channels, carbon-fiber contour bands, graft plates and modular prosthetic breaks, Brushed titanium, carbon-fiber weave, medical silicone, polycarbonate, bio-gel interface and anodized alloy, Sterile key light, ring-reflection highlights, cold overhead spill and pinpoint LED status glow, Optional modular augmentation break or replacement logic plus paneling, harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and invented fastenings, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        'Add cybernetic couture detail to the requested wardrobe through contour seams, carbon panels and discreet interface hardware. Preserve identity, anatomy, pose, role, scene and framing; perform no surgery or limb replacement unless explicitly requested.',
     },
   },
   {
@@ -533,25 +533,25 @@ export const GENERATED_STYLE_PRESETS = [
       'dry casualwear, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
       aesthetic:
-        'Pelagic Tail Couture operates as a portable fashion-costume router: combine Pelagic fantasy couture, deep-ocean enchantment, tidal iridescence with speculative costume logic with armor, suit engineering, magical garment behavior, alien proportion, and character-readability design, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Pelagic couture uses scalloped scale lattices, fin-like seam rhythms and fluid textile drape; aquatic references stay in garment design, not wearer anatomy.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak, illuminate, conceal, mutate, modularize, ritualize, or engineer through Scale lattices, fin-ridge undulation, tidal-flare geometry, liquid drape, floating-curve rhythm; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        'Rework garments with tapered flowing panels, pearlescent scale details and fin-shaped hems. A fishtail line may be a skirt or train, never anatomy unless requested; preserve identity, body and pose.',
       color_and_tone:
-        'Map color through speculative material color, neon accents, abyssal values, royal metals, survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Use tidal iridescence or reef-like hues as options, following explicit palette requests and keeping luminous accents controlled.',
       lighting_and_shadow:
-        'Use Caustic-light dapple, surface-sunbeam shafts, bioluminescent glow, reef-filtered turquoise plus rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi display light as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Preserve the real scene and lighting; use localized caustic-like reflections on glossy cloth without adding water, sunbeams or an underwater setting.',
       texture_and_material:
-        'Render Iridescent scales, wet-look silicone, pearlescent finish, shell texture, liquid organza, nacre sheen plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Mix nacre-like sheen, fine scale embroidery, satin, organza and smooth silicone-like finishes. Keep textile folds and seam direction visible beneath the iridescence.',
       camera_and_composition:
-        'Compose with character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Preserve requested framing, angle and pose. Let scale rhythm and flowing hem construction read in the existing crop.',
       atmosphere_and_mood:
-        "Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth, spectacle, or mythic futurism; the tone should feel specific to Pelagic Tail Couture while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Suggest fluid, ceremonial elegance through curve and shimmer without assigning a mermaid or other aquatic species.',
       rendering_and_quality:
-        'Finish with believable costume engineering, clean edge logic, strong silhouette, readable material physics, and no generic cosplay blur; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Control reflective detail so scales, fabric and transparent layers remain distinct; avoid turning the outfit into a literal creature body.',
       key_features:
-        'Pelagic fantasy couture, deep-ocean enchantment, tidal iridescence; Scale lattices, fin-ridge undulation, tidal-flare geometry, liquid drape, floating-curve rhythm; Iridescent scales, wet-look silicone, pearlescent finish, shell texture, liquid organza, nacre sheen; Caustic-light dapple, surface-sunbeam shafts, bioluminescent glow, reef-filtered turquoise; character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus',
+        'Scalloped scale lattice; fin-like garment seams; fluid tapered panels; nacre and organza sheen.',
       creative_brief:
-        'Use Pelagic Tail Couture after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Pelagic fantasy couture, deep-ocean enchantment, tidal iridescence, Scale lattices, fin-ridge undulation, tidal-flare geometry, liquid drape, floating-curve rhythm, Iridescent scales, wet-look silicone, pearlescent finish, shell texture, liquid organza, nacre sheen, Caustic-light dapple, surface-sunbeam shafts, bioluminescent glow, reef-filtered turquoise, character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus plus paneling, harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and invented fastenings, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        'Transform the requested wardrobe into pelagic couture with scale-patterned panels, fin-like hems and fluid iridescent cloth. Preserve wearer, anatomy, pose, role, scene and frame; any fishtail line belongs to the garment, with no species or underwater setting.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -17,6 +17,7 @@ import {
 } from './stylePresetManifests';
 import { loadStylePresetCatalog } from './stylePresetCatalogData';
 import { loadStylePresetIndex } from './stylesData';
+import { loadArchivedStylePresetsByIds } from './archivedStylePresets';
 
 describe('stylePresetManifests', () => {
   it('normalizes legacy style packs into granular preset manifests and lightweight pack manifests', () => {
@@ -645,8 +646,8 @@ describe('stylePresetManifests', () => {
     );
 
     expect(catalog.graph.errors).toEqual([]);
-    expect(catalog.packManifests).toHaveLength(20);
-    expect(catalog.presetManifests).toHaveLength(1689);
+    expect(catalog.packManifests).toHaveLength(22);
+    expect(catalog.presetManifests).toHaveLength(1711);
     expect(composedPresetCount).toBe(catalog.presetManifests.length);
     expect(
       runtimeIndex.packs.map((pack) => ({
@@ -665,5 +666,53 @@ describe('stylePresetManifests', () => {
     );
     expect(runtimeIndex.presetById.get('SP01-001')?.name).toBeTruthy();
     expect(runtimeIndex.presetPackIdById.get('SP01-001')).toBe('pack_01');
+    expect(runtimeIndex.packs.find((pack) => pack.id === 'pack_23')?.name).toBe(
+      'Medieval Visual Atlas',
+    );
+
+    const archivedFavorites = await loadArchivedStylePresetsByIds([
+      'SP14-001',
+      'SP15-001',
+      'SP14-124',
+      'SP15-086',
+      'SP14-142',
+      'SP15-081',
+    ]);
+    const archivedById = new Map(archivedFavorites.map((entry) => [entry.preset.id, entry]));
+    expect(archivedFavorites.map((entry) => entry.preset.id)).toEqual([
+      'SP14-001',
+      'SP15-001',
+      'SP14-124',
+      'SP15-086',
+    ]);
+    expect(archivedById.get('SP14-124')?.preset.name).toBe('Broken Symmetry');
+    expect(archivedById.get('SP15-086')?.preset.name).toBe('Signalpunk');
+    expect(catalog.presetManifests.some((preset) => archivedById.has(preset.id))).toBe(false);
+    expect(archivedById.get('SP14-001')).toMatchObject({
+      packId: 'pack_14',
+      preset: {
+        name: 'Eclipse Reliquary Processional',
+        style: {
+          aesthetic: expect.stringContaining(
+            'Eclipse Reliquary Processional acts as a transferable mythic-noir router',
+          ),
+          subject_treatment: expect.stringContaining(
+            "Keep the user's prompt subject, action, and context intact",
+          ),
+        },
+      },
+    });
+    expect(archivedById.get('SP15-001')).toMatchObject({
+      packId: 'pack_15',
+      preset: {
+        name: 'Brass Gear Commons',
+        style: {
+          aesthetic: expect.stringContaining(
+            'Brass Gear Commons operates as a portable punk-spectrum router',
+          ),
+          camera_and_composition: expect.stringContaining('large readable machinery rhythm'),
+        },
+      },
+    });
   }, 120_000);
 });

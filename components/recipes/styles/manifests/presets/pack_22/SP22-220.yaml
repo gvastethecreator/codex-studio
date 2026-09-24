@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP22-220
+packId: pack_22
+name: Masked Digital Displacement
+category: 15. Digital Rendering Methods
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - digital-rendering-methods
+  - masked-digital-displacement
+  - localized-effect-modifier
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Apply restrained digital displacement only within an explicitly requested local accent region,
+    keeping the primary image structure and larger contours stable.
+  subject_treatment: >-
+    Preserve identity, proportions, count, pose, action and function. Displace only existing secondary
+    detail in the authorized area; do not duplicate, remove or invent parts.
+  color_and_tone: >-
+    Preserve the requested palette and value hierarchy. Keep any channel separation or color offset
+    localized and do not introduce unrequested hues.
+  lighting_and_shadow: >-
+    Retain the requested illumination and shadow structure. Digital displacement does not create a new
+    light source or exposure shift.
+  texture_and_material: >-
+    Keep the effect mask-bound and visually controlled rather than adding all-over noise or changing the
+    depicted material.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and placement. Local displacement must not move the
+    overall silhouette or reorganize the image.
+  atmosphere_and_mood: >-
+    Retain the requested setting and tone. A localized digital artifact does not add interface graphics,
+    a screen environment or a new narrative.
+  rendering_and_quality: >-
+    Establish clean major forms first, then apply small bounded shifts to secondary marks while keeping
+    essential details identifiable and any requested lettering intact.
+avoidRules:
+  - global glitch or displacement of the main silhouette
+  - lost, duplicated or invented essential details
+  - unrequested digital noise or interface graphics
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-220.webp
+attributes:
+  negativePrompt: global glitch or displacement of the main silhouette, lost, duplicated or invented essential details, unrequested digital noise or interface graphics
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: modifier
+    defaultFields:
+      - aesthetic
+      - color_and_tone
+      - texture_and_material
+      - rendering_and_quality
+    requires: accent
+    medium: localized-digital-displacement
+    constraints:
+      - field: texture_and_material
+        group: accent
+        value: explicitly-requested-local-displacement-area
+    avoidRules:
+      - text: global glitch or displacement of the main silhouette
+        field: camera_and_composition
+      - text: lost, duplicated or invented essential details
+        field: subject_treatment
+      - text: unrequested digital noise or interface graphics
+        field: global
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S120
+    sourceTitle: Datamosh Ink
+    referenceIds:
+      - S46
+      - S49
+    evidenceStatus: experiment
+  ui:
+    kind: modifier
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: digital-rendering-methods
+  categoryName: 15. Digital Rendering Methods
+  tags:
+    - trading-card-illustration
+    - digital-rendering-methods
+    - masked-digital-displacement
+    - localized-effect-modifier
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

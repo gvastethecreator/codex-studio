@@ -16,78 +16,25 @@ tags:
   - 70s-and-80s-retro-anime
 visualDna:
   aesthetic: >-
-    Adult Domestic Warmth Style acts as a transferable anime-prestige router: mature domestic anime
-    restraint, alongside a domestic anime direction shaped by era-aware line economy and genre tone;
-    fuse it with analog cel-era anime craft with bold contour economy, painted backgrounds,
-    limited-animation rhythm, and theatrical genre clarity; it routes era, genre, line economy, cel
-    or digital finish, and performance tone without locking prompt content to the source title or
-    sample image.
+    A hand-inked cel look built around quiet fine-weight contours with slight emphasis around expressive features; understated interior marks that retain subtle expression, identity and material clues. Keep its identity in contour, paint grouping and restrained analog transfer.
   subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through contours paced by
-    adult tension, readable pose energy, and silhouette discipline, alongside contours paced by
-    domestic tension, readable pose energy, and silhouette discipline; identity should remain
-    readable through anime contour, expression economy, pose energy, shape simplification, and
-    effect hierarchy instead of a required canon character or title scene.
+    Preserve the requested subject count, identity, anatomy, clothing, pose and action. Use understated interior marks that retain subtle expression, identity and material clues; do not assign a role or add props.
   color_and_tone: >-
-    Map color through warm indoor neutrals and lived-in cel tones, alongside a domestic accent
-    system held inside disciplined cel values; anchor it in warm cel paint, poster-like primaries,
-    faded film blacks, airbrushed skies, mechanical grays, and controlled neon accents; keep value
-    separation clean, cel flats intentional, accents purposeful, and palette behavior attached to
-    the requested content.
+    Keep explicitly requested colors and saturation. If none are specified, use warm gray, faded umber, muted rose and cream. Separate neighboring hues into readable flat cel regions.
   lighting_and_shadow: >-
-    Use a adult light logic using cel rim, glow behavior, and blocked shadow, alongside a domestic
-    light logic using cel rim, glow behavior, and blocked shadow; combine it with painted key light,
-    hard cel shadows, rim highlights on inked edges, practical glow, and film-era exposure falloff;
-    shadows should read as anime light design, rims should clarify form, and glow or effects should
-    support the prompt rather than replacing it.
+    Follow the requested light sources, direction and intensity. Shape shadows as broad soft value pools bounded by simple cel edges and matched to the stated light; do not add a source or glow.
   texture_and_material: >-
-    Render soft cloth, lived-in interiors as texture logic, and warm cel paint, alongside cel paint
-    and ink grain tuned to adult material contrast; anchor surfaces in acetate cel grain, dry-brush
-    background texture, airbrush gradients, analog dust, painted metal, and hand-inked edges; cel
-    edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay
-    coherent across people, objects, environments, action, and abstractions.
+    Keep depicted materials and their condition unchanged. Apply matte pigment, delicate paper grain and low-intensity airbrush transitions as image-level treatment only, without hiding small details.
   camera_and_composition: >-
-    Frame around adult converted into reusable framing rhythm and anime timing, alongside domestic
-    converted into reusable framing rhythm and anime timing, then extend it with bold television
-    framing, heroic diagonals, theatrical inserts, readable action lanes, and graphic silhouette
-    staging; the style should support portraits, props, machines, performances, landscapes, symbols,
-    and full scenes through reusable anime staging grammar instead of one fixed card layout.
+    Preserve the requested viewpoint, crop, layout and spatial relationships. Use human-scale intervals and uncomplicated layers within the original crop; add no inset, border or staging.
   atmosphere_and_mood: >-
-    Carry mood through adult intimacy, fatigue, and gentle realism, alongside domestic warmth, adult
-    care, and quiet humor; braid it with romantic pulp, operatic melancholy, mechanical grandeur,
-    outlaw cool, slapstick timing, and analog adventure confidence; the preset can become funny,
-    sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving
-    the chosen anime lineage.
+    Preserve the requested context and mood. Express its visual rhythm through softened edges and subtle value changes; do not add a narrative beat.
   rendering_and_quality: >-
-    Finish with clean anime finishing that keeps adult identity readable without noisy denoise,
-    alongside clean anime finishing that keeps domestic identity readable without noisy denoise;
-    enforce clean retro-anime finish with visible cel craft, restrained grain, stable linework, and
-    no modern 3D or photoreal drift; prioritize clean denoise, stable anatomy or object structure,
-    readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal
-    or 3D-render drift.
+    Finish as hand-drawn 2D cel illustration. Use observed, restrained linework with stable colors and no photographic modeling; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
   key_features: >-
-    mature domestic anime restraint, alongside a domestic anime direction shaped by era-aware line
-    economy and genre tone; contours paced by adult tension, readable pose energy, and silhouette
-    discipline, alongside contours paced by domestic tension, readable pose energy, and silhouette
-    discipline; soft cloth, lived-in interiors as texture logic, and warm cel paint, alongside cel
-    paint and ink grain tuned to adult material contrast; a adult light logic using cel rim, glow
-    behavior, and blocked shadow, alongside a domestic light logic using cel rim, glow behavior, and
-    blocked shadow; adult converted into reusable framing rhythm and anime timing, alongside
-    domestic converted into reusable framing rhythm and anime timing
+    quiet fine-weight contours with slight emphasis around expressive features; understated interior marks that retain subtle expression, identity and material clues; broad soft value pools bounded by simple cel edges and matched to the stated light; matte pigment, delicate paper grain and low-intensity airbrush transitions.
   creative_brief: >-
-    Apply Adult Domestic Warmth Style after prompt X as a transferable anime-prestige layer: prompt
-    X supplies subject, action, setting, tone, and intensity, while this preset supplies mature
-    domestic anime restraint, alongside a domestic anime direction shaped by era-aware line economy
-    and genre tone, alongside contours paced by adult tension, readable pose energy, and silhouette
-    discipline, alongside contours paced by domestic tension, readable pose energy, and silhouette
-    discipline; warm indoor neutrals and lived-in cel tones, alongside a domestic accent system held
-    inside disciplined cel values; a adult light logic using cel rim, glow behavior, and blocked
-    shadow, alongside a domestic light logic using cel rim, glow behavior, and blocked shadow; soft
-    cloth, lived-in interiors as texture logic, and warm cel paint, alongside cel paint and ink
-    grain tuned to adult material contrast and adult converted into reusable framing rhythm and
-    anime timing, alongside domestic converted into reusable framing rhythm and anime timing, finish
-    discipline, and negative controls without requiring a fixed canon cast, title scene, prop
-    bundle, location, sport, instrument, weapon, or card composition.
+    Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use quiet fine-weight contours with slight emphasis around expressive features; understated interior marks that retain subtle expression, identity and material clues; broad soft value pools bounded by simple cel edges and matched to the stated light; matte pigment, delicate paper grain and low-intensity airbrush transitions. Add no unrequested content or composition changes.
 avoidRules:
   - realistic
   - 3d render
@@ -99,7 +46,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - modern 3d anime render
   - photoreal cosplay
@@ -110,15 +56,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-306.webp
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, modern 3d anime render, photoreal cosplay, western comic
+    artifacts, watermark, signature, modern 3d anime render, photoreal cosplay, western comic
     inking, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise, readable text
+    filter, prompt-literal card, muddy cel noise
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

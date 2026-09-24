@@ -47,7 +47,7 @@ export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack>
     id: 'pack_15',
     name: 'Punk Spectrum Vault',
     description:
-      'A curated spectrum of punk visual languages: industrial retrofutures, network streets, climate repair, biotech mutation, ocean terrain, DIY rebellion, media ghosts, occult machinery, space age kitsch, and primitive salvage systems.',
+      'Recognizable X-punk aesthetics with characteristic materials, technology, craft and motifs integrated into the requested design; one identity per punk direction.',
     presets: categoryPresets.flat(),
   };
 }

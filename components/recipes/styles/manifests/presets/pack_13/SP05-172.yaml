@@ -13,60 +13,29 @@ tags:
   - shojo-magical-girl-and-visionary-classics
 visualDna:
   aesthetic: >-
-    The Vision of Escaflowne - Tarot Mecha Fantasy operates as a portable anime-lifestyle router:
-    combine The Vision of Escaflowne - Tarot Mecha Fantasy identity cues through Tarot symbolism;
-    ceremonial silhouette flow; ornate mechanical motifs; sky heavy compositions; prophecy charged
-    focal tension; Tarot Mecha Fantasy with The Vision of Escaflowne lineage used only as style
-    reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance,
-    transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; The
-    Vision of Escaflowne may guide line economy, acting, color, and period flavor but must not force
-    canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior
-    after prompt X rather than a required scene, character, franchise image, or card composition.
+    Anime linework pairs fine engraved contours with crisp beveled planes and measured
+    geometry.
   subject_treatment: >-
-    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
-    delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion
-    silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures,
-    objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.
+    Retain subject and materials; mechanical detail only on shown mechanisms, no divination
+    symbols by default.
   color_and_tone: >-
-    Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky,
-    luminous gold, and softened emotional gradients; keep cel values readable, accent roles
-    intentional, skin or material midtones stable, and palette behavior attached to the prompt
-    instead of pasted anime decoration.
+    Slate, steel blue, muted gold, plum, warm neutral; metallic accents localized.
   lighting_and_shadow: >-
-    Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and
-    symbolic highlight placement; lighting should clarify expression, silhouette, material, and
-    emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
+    Precise edge highlights and firm cool shadows; gleam only on actual metal.
   texture_and_material: >-
-    Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical
-    particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or
-    effect textures controlled enough to route style without noisy surface chatter.
+    Restrained crosshatch and grain within selected planes; no synthetic metal texture.
   camera_and_composition: >-
-    Compose through romance-distance framing, transformation arcs, emblem balance, theatrical
-    diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable
-    anime framing grammar, allowing close acting, objects, performances, action, environments, or
-    abstract prompts without one required pose or location.
+    Keep viewpoint; balance existing forms with geometric space, no skyline or symbols.
   atmosphere_and_mood: >-
-    Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure,
-    tender healing, and adult melodrama when prompt X requests it; the preset can become cute,
-    sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving
-    its anime lineage.
+    Suspended tension only where prompt supports it; preserve the requested tone.
   rendering_and_quality: >-
-    Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised
-    sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or
-    object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI,
-    and no generic AI anime gloss.
+    Crisp edges, controlled facets, sparse line detail, no fake inscriptions.
   key_features: >-
-    Tarot symbolism; ceremonial silhouette flow; ornate mechanical motifs; sky heavy compositions;
-    prophecy charged focal tension; Tarot Mecha Fantasy with The Vision of Escaflowne lineage used
-    only as style reference
+    Engraved contour, beveled value planes, localized metal accents, restrained geometry
   creative_brief: >-
-    Use The Vision of Escaflowne - Tarot Mecha Fantasy after prompt X as a transferable anime
-    character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity,
-    while the preset supplies Tarot symbolism, ceremonial silhouette flow, ornate mechanical motifs,
-    sky heavy compositions, prophecy charged focal tension, Tarot Mecha Fantasy with The Vision of
-    Escaflowne lineage used only as style reference, color logic, lighting, material finish,
-    composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed
-    venue, fixed prop bundle, title screenshot, or sample-card composition.
+    Apply a visual treatment centered on engraved contour, beveled value planes, localized
+    metal accents, restrained geometry. Preserve the exact subject, action, count, age,
+    costume, setting, camera, and mood. Add nothing outside the prompt.
 avoidRules:
   - realistic
   - 3d render
@@ -78,7 +47,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - canon couple copy
   - readable magic text
@@ -89,17 +57,16 @@ avoidRules:
   - fixed anime cast
   - generic anime filter
   - prompt literal card reuse
-  - readable text
   - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-172.webp
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene
+    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
     reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal
-    cosplay, 3D render look, copied franchise costume, logo
+    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
+    look, copied franchise costume, logo
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

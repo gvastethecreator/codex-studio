@@ -11,6 +11,7 @@ categories:
     name: 1. Dark Fantasy & Gothic Courts
     presetRefs:
       - pack_17/SP17-001.yaml
+      - pack_17/SP17-073.yaml
       - pack_17/SP17-002.yaml
       - pack_17/SP17-003.yaml
       - pack_17/SP17-004.yaml
@@ -96,6 +97,7 @@ categories:
       - pack_17/SP17-072.yaml
 presetRefs:
   - pack_17/SP17-001.yaml
+  - pack_17/SP17-073.yaml
   - pack_17/SP17-002.yaml
   - pack_17/SP17-003.yaml
   - pack_17/SP17-004.yaml

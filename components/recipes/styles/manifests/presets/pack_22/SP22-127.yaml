@@ -1,0 +1,96 @@
+schemaVersion: 1
+id: SP22-127
+packId: pack_22
+name: Soft Volume Toon
+category: 4. Storybook & Animation
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - storybook-and-animation
+  - rounded-volume-cartoon
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Rounded-volume illustration uses smooth modeling, broad plane changes and restrained contour lines
+    to make forms feel soft without turning them glossy or plastic.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Keep facial and structural features
+    recognizable; do not enlarge the head or eyes unless the request asks for that change.
+  color_and_tone: >-
+    Build gentle shadow shapes and small material highlights from the requested lighting and palette.
+    Keep colors distinct without forcing a pastel or sugary scheme.
+  lighting_and_shadow: >-
+    Respect the requested light direction and contrast. Use soft transitions to describe round volume
+    without adding glow or sharp specular shine.
+  texture_and_material: >-
+    Use a clean matte finish and preserve the character of each represented material. Avoid plastic gloss
+    and do not smooth away important texture.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and element placement. Rounded volume does not require
+    a close-up, a simplified pose or changed proportions.
+  atmosphere_and_mood: >-
+    Keep the requested tone. Soft shapes do not require cuteness, childishness or a particular story.
+  rendering_and_quality: >-
+    Let large plane changes carry the contour, with drawn lines used sparingly. Maintain clean anatomy,
+    readable structure and restrained highlights.
+avoidRules:
+  - unrequested head or eye enlargement
+  - plastic gloss
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-127.webp
+attributes:
+  negativePrompt: unrequested head or eye enlargement, plastic gloss
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: unrequested head or eye enlargement
+        field: subject_treatment
+      - text: plastic gloss
+        field: texture_and_material
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S027
+    sourceTitle: Soft Volume Toon
+    referenceIds:
+      - S50
+      - S51
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: storybook-and-animation
+  categoryName: 4. Storybook & Animation
+  tags:
+    - trading-card-illustration
+    - storybook-and-animation
+    - rounded-volume-cartoon
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

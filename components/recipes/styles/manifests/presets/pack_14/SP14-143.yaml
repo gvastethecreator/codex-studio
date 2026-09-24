@@ -1,0 +1,122 @@
+schemaVersion: 1
+id: SP14-143
+packId: pack_14
+name: Japanese Kami & Yokai Myth-Noir
+version: 1
+supportedTasks: &id002
+  - image_generate
+  - image_edit
+  - style_preset_card
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-143.webp
+attributes:
+  negativePrompt: >-
+    Preserve explicit identity, ethnicity, costume, and action locks; do not assign Japanese identity to an unrelated
+    person. Do not force a specific kami, yokai, shrine, lantern scene, ritual, or separate mask; use one integrated
+    folded-paper or cord detail only on an existing form. Avoid chibi shorthand, indiscriminate neon, pseudo-calligraphy,
+    a literal handscroll layout, mottled ink bloom, camouflage-like distress, and repeating the selected fold or cord
+    across matching surfaces.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text:
+          Preserve explicit identity, ethnicity, costume, and action locks; do not assign Japanese identity
+          to an unrelated person.
+        field: rendering_and_quality
+      - text:
+          Do not force a specific kami, yokai, shrine, lantern scene, ritual, or separate mask; use one integrated
+          folded-paper or cord detail only on an existing form.
+        field: rendering_and_quality
+      - text:
+          Avoid chibi shorthand, indiscriminate neon, pseudo-calligraphy, a literal handscroll layout, mottled ink
+          bloom, camouflage-like distress, and repeating the selected fold or cord across matching surfaces.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+    derivedFrom:
+      - SP14-024
+      - SP14-025
+      - SP14-026
+      - SP14-033
+      - SP14-034
+      - SP14-035
+      - SP14-036
+      - SP14-037
+      - SP14-038
+      - SP14-039
+      - SP14-040
+      - SP14-041
+      - SP14-042
+      - SP14-043
+      - SP14-044
+category: Japanese Mythology — Kami & Yokai
+tags: &id001
+  - curation-v2
+  - identity-reviewed
+  - visual-evaluation-pending
+  - japanese-kami-yokai-noir
+visualDna:
+  aesthetic:
+    Japanese kami-and-yokai myth-noir uses ink-dark contours, folded-paper planes and restrained lacquer accents.
+    Give one existing edge or join a single layered paper fold secured by a short cord tie, adapted to that form
+    rather than added as an emblem. Use one vermilion or foxfire-blue accent within that localized cue, not as a
+    new object.
+  subject_treatment:
+    Preserve the requested subject, action, ethnicity, anatomy, and any explicit costume lock.
+    For unspecified details, translate the fold and short tie onto one existing seam, edge, or joint; keep the
+    subject's materials and construction recognizable. Never add a mask, kami, yokai, or other subject to signal
+    the style.
+  color_and_tone:
+    Use ink black, rain indigo, paper cream, wet vermilion, and a small moon-silver or foxfire-blue
+    accent. Keep values open enough to read the subject. Preserve named material colors; where
+    color is open, use ink or indigo in shadows and contours rather than recoloring the whole object.
+  lighting_and_shadow:
+    Preserve the requested light direction and time of day. Use the existing light to separate the folded plane
+    from its surroundings; keep any lacquer glint small and on that cue. Do not add a lantern or emitter, or change
+    day to night.
+  texture_and_material:
+    Distinguish the drawn paper fold, short cord tie, lacquer, carved wood, and patterned cloth only where those
+    elements are designed into the image. Keep the existing material and its color visible; use clean pigment
+    planes rather than mottled ink bloom, and do not coat every surface with gloss or paper grain.
+  camera_and_composition:
+    Honor the requested camera and staging. Anchor the single folded-paper and cord cue at one existing seam or
+    crossing, with clear surrounding space. Do not repeat it over matching surfaces or impose a shrine, scroll,
+    or ritual layout.
+  atmosphere_and_mood:
+    Carry uncanny courtesy, hidden intent, and ambiguous mercy through partial reveals and
+    weather-soft edges. Let the prompt choose whether the result is quiet, frightening, playful, or luminous.
+  rendering_and_quality:
+    Render as drawn ink-and-color illustration with assertive contours, broad opaque pigment planes, and limited
+    soft edges. Keep faces and action recognizable; use any lacquer glint only on the localized cue. Avoid
+    polished product-render lighting, mottled distress, calligraphy, and pseudo-text.
+avoidRules:
+  - Preserve explicit identity, ethnicity, costume, and action locks; do not assign Japanese identity to an unrelated
+    person.
+  - Do not force a specific kami, yokai, shrine, lantern scene, ritual, or separate mask; use one integrated folded-paper
+    or cord detail only on an existing form.
+  - Avoid chibi shorthand, indiscriminate neon, pseudo-calligraphy, a literal handscroll layout, mottled ink bloom,
+    camouflage-like distress, and repeating the selected fold or cord across matching surfaces.
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: japanese-kami-yokai-noir
+  categoryName: Japanese Mythology — Kami & Yokai
+  tags: *id001
+  supportedTasks: *id002
+  hasDefaultImage: true

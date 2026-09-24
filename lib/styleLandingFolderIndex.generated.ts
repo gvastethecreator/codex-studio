@@ -10,10 +10,22 @@ export interface StyleLandingFolderSummary {
 
 export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
+    id: 'tcg_visual_styles',
+    kind: 'collection',
+    presetCount: 120,
+    imageKeys: ['SP22-101', 'SP22-102', 'SP22-103', 'SP22-104', 'SP22-105', 'SP22-106'],
+  },
+  {
+    id: 'medieval_visual_styles',
+    kind: 'collection',
+    presetCount: 58,
+    imageKeys: ['SP23-001', 'SP23-002', 'SP23-003', 'SP23-004', 'SP23-005', 'SP23-006'],
+  },
+  {
     id: 'portable_visual_studies',
     kind: 'collection',
     presetCount: 12,
-    imageKeys: [],
+    imageKeys: ['SP19-001', 'SP19-002', 'SP19-003', 'SP19-004', 'SP20-001', 'SP20-002'],
   },
   {
     id: 'photography_camera',
@@ -31,7 +43,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'analog_film_process',
     kind: 'collection',
-    presetCount: 25,
+    presetCount: 26,
     imageKeys: [
       'pack_01__film_and_analog_process',
       'pack_02__photography_eras',
@@ -95,7 +107,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'anime_manga',
     kind: 'collection',
-    presetCount: 410,
+    presetCount: 411,
     imageKeys: ['SP05-034', 'SP05-133', 'SP05-134', 'SP05-032', 'SP05-035', 'SP05-036'],
   },
   {
@@ -221,25 +233,25 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'myth_folklore_ritual',
     kind: 'collection',
-    presetCount: 123,
-    imageKeys: ['SP14-001', 'SP14-002', 'SP14-003', 'SP14-004', 'SP14-005', 'SP14-006'],
+    presetCount: 9,
+    imageKeys: ['SP14-142', 'SP14-143', 'SP14-144', 'SP14-145', 'SP14-146', 'SP14-147'],
   },
   {
     id: 'dungeon_dark_fantasy_wargame',
     kind: 'collection',
-    presetCount: 72,
-    imageKeys: ['SP17-001', 'SP17-002', 'SP17-003', 'SP17-004', 'SP17-005', 'SP17-006'],
+    presetCount: 73,
+    imageKeys: ['SP17-001', 'SP17-073', 'SP17-002', 'SP17-003', 'SP17-004', 'SP17-005'],
   },
   {
     id: 'punk_alt_futures',
     kind: 'collection',
-    presetCount: 112,
-    imageKeys: ['pack_08__subcultures', 'SP15-001', 'SP15-002', 'SP15-003', 'SP15-004', 'SP15-005'],
+    presetCount: 67,
+    imageKeys: ['pack_08__subcultures', 'SP15-081', 'SP15-082', 'SP15-083', 'SP15-084', 'SP15-085'],
   },
   {
     id: 'surreal_dream_symbolic',
     kind: 'collection',
-    presetCount: 30,
+    presetCount: 15,
     imageKeys: [
       'pack_10__surrealism_and_dream',
       'SP10-031',
@@ -284,7 +296,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'pack_02',
     kind: 'source',
-    presetCount: 128,
+    presetCount: 129,
     imageKeys: [
       'pack_02__film_genres',
       'pack_02__tv_and_broadcast',
@@ -349,14 +361,14 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'pack_16',
     kind: 'source',
-    presetCount: 140,
+    presetCount: 141,
     imageKeys: [
       'pack_16__70s_and_80s_retro_anime',
       'pack_16__90s_golden_era',
       'pack_16__2000s_classics',
       'pack_16__studio_masterpieces',
       'SP05-001',
-      'SP05-311',
+      'SP16-001',
     ],
   },
   {
@@ -425,19 +437,19 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'pack_14',
     kind: 'source',
-    presetCount: 123,
-    imageKeys: ['SP14-001', 'SP14-002', 'SP14-003', 'SP14-004', 'SP14-005', 'SP14-006'],
+    presetCount: 9,
+    imageKeys: ['SP14-142', 'SP14-143', 'SP14-144', 'SP14-145', 'SP14-146', 'SP14-147'],
   },
   {
     id: 'pack_15',
     kind: 'source',
-    presetCount: 80,
-    imageKeys: ['SP15-001', 'SP15-002', 'SP15-003', 'SP15-004', 'SP15-005', 'SP15-006'],
+    presetCount: 35,
+    imageKeys: ['SP15-081', 'SP15-082', 'SP15-083', 'SP15-084', 'SP15-085', 'SP15-087'],
   },
   {
     id: 'pack_17',
     kind: 'source',
-    presetCount: 72,
+    presetCount: 73,
     imageKeys: [
       'pack_17__dark_fantasy_and_gothic_courts',
       'pack_17__dungeon_zine_and_risograph_prints',
@@ -451,19 +463,31 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
     id: 'pack_19',
     kind: 'source',
     presetCount: 4,
-    imageKeys: [],
+    imageKeys: ['SP19-001', 'SP19-002', 'SP19-003', 'SP19-004'],
   },
   {
     id: 'pack_20',
     kind: 'source',
     presetCount: 4,
-    imageKeys: [],
+    imageKeys: ['SP20-001', 'SP20-002', 'SP20-003', 'SP20-004'],
   },
   {
     id: 'pack_21',
     kind: 'source',
     presetCount: 4,
-    imageKeys: [],
+    imageKeys: ['SP21-001', 'SP21-002', 'SP21-003', 'SP21-004'],
+  },
+  {
+    id: 'pack_22',
+    kind: 'source',
+    presetCount: 120,
+    imageKeys: ['SP22-101', 'SP22-102', 'SP22-103', 'SP22-104', 'SP22-105', 'SP22-106'],
+  },
+  {
+    id: 'pack_23',
+    kind: 'source',
+    presetCount: 58,
+    imageKeys: ['SP23-001', 'SP23-002', 'SP23-003', 'SP23-004', 'SP23-005', 'SP23-006'],
   },
 ];
 

@@ -1,0 +1,106 @@
+schemaVersion: 1
+id: SP22-122
+packId: pack_22
+name: Spectral Scumble
+category: 3. Strange Ink & Paint
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - strange
+  - dry-scumble
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Build local highlights and form with dry, broken scumbles over the image's existing deeper
+    values. Let the brushed light emerge from pigment on the surface.
+  subject_treatment: >-
+    Preserve the requested identity, structure and material. Follow each existing surface with
+    scumbled marks without changing its shape.
+  color_and_tone: >-
+    Respect the requested palette and value range. Place brighter pigment locally where the described
+    light supports it.
+  lighting_and_shadow: >-
+    Follow the requested light sources, direction and intensity. Keep brighter scumbles local to
+    those lit areas and preserve the original shadow pattern.
+  texture_and_material: >-
+    Use directional dry-brush layers with the underlying paint visible between marks. Keep the
+    scumble texture on the image surface without replacing the depicted material.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, pose and arrangement. Keep the brighter brushwork within
+    the forms and regions already present in the composition.
+  atmosphere_and_mood: >-
+    Preserve the requested mood and narrative. Brushwork changes the rendering, not the story or
+    tone.
+  rendering_and_quality: >-
+    Keep luminous marks local and edges shaped by brushwork while preserving the silhouette.
+avoidRules:
+  - turning a solid subject into a ghost
+  - digital halo or continuous outer glow
+  - highlights unrelated to the requested light
+  - unrequested horror or violence
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-122.webp
+attributes:
+  negativePrompt: >-
+    turning a solid subject into a ghost, digital halo or continuous outer glow, highlights unrelated
+    to the requested light, unrequested horror or violence
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: scumble painting
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: scumble painting
+    avoidRules:
+      - text: turning a solid subject into a ghost
+        field: subject_treatment
+      - text: digital halo or continuous outer glow
+        field: rendering_and_quality
+      - text: highlights unrelated to the requested light
+        field: lighting_and_shadow
+      - text: unrequested horror or violence
+        field: global
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S022
+    sourceTitle: Spectral Scumble
+    referenceIds:
+      - S48
+      - S15
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    derivedFrom:
+      - TCG-S022
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: strange-ink-and-paint
+  categoryName: 3. Strange Ink & Paint
+  tags:
+    - trading-card-illustration
+    - strange
+    - dry-scumble
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

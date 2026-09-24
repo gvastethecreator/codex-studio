@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP22-139
+packId: pack_22
+name: Neon Maze Ink
+category: 5. Character & Readable Forms
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - character-and-readable-forms
+  - interwoven-ink-lines
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Fine ink lines weave through selected forms and break into readable reserves, with energetic strokes
+    over organized dark masses and localized saturated accents.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Guide line networks along existing
+    contours and surfaces without covering the silhouette in scribbles.
+  color_and_tone: >-
+    Keep dark and light areas clearly organized and place saturated accents locally. Preserve the
+    requested palette instead of requiring neon hues.
+  lighting_and_shadow: >-
+    Follow the requested light direction and shadow pattern. Drawn accents do not add glow, particles
+    or a new light source.
+  texture_and_material: >-
+    Use line detail as the surface mechanism and adapt its density to each material. Leave enough open
+    space to distinguish the represented surfaces.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and element placement. The line network does not
+    require a night scene, maze-like setting or altered pose.
+  atmosphere_and_mood: >-
+    Keep the requested mood and setting. The word neon does not require a futuristic environment or
+    luminous particles.
+  rendering_and_quality: >-
+    Concentrate fine lines in selected regions and interrupt them with clean reserves. Maintain a clear
+    silhouette and a deliberate balance between linework and dark masses.
+avoidRules:
+  - screen-wide scribbles that obscure the silhouette
+  - unrequested glow or light particles
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-139.webp
+attributes:
+  negativePrompt: screen-wide scribbles that obscure the silhouette, unrequested glow or light particles
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: drawing
+    avoidRules:
+      - text: screen-wide scribbles that obscure the silhouette
+        field: rendering_and_quality
+      - text: unrequested glow or light particles
+        field: lighting_and_shadow
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S039
+    sourceTitle: Neon Maze Ink
+    referenceIds:
+      - S08
+      - S09
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: character-and-readable-forms
+  categoryName: 5. Character & Readable Forms
+  tags:
+    - trading-card-illustration
+    - character-and-readable-forms
+    - interwoven-ink-lines
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

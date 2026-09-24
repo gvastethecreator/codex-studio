@@ -47,6 +47,30 @@ export const STYLE_COLLECTION_FAMILIES = [
 
 export const STYLE_COLLECTIONS = [
   {
+    id: 'tcg_visual_styles',
+    title: 'Trading Card Illustration',
+    familyId: 'illustration_art_media',
+    description:
+      'Portable illustration methods from the TCG atlas. Finishes, layouts and combinations are cataloged separately as pending components.',
+    icon: 'layers',
+    order: 4,
+    sourcePackIds: ['pack_22'],
+    entries: [{ id: 'tcg-visual-pack', kind: 'pack', packId: 'pack_22' }],
+    facets: { medium: ['illustration'], workflow: ['image', 'edit'] },
+  },
+  {
+    id: 'medieval_visual_styles',
+    title: 'Medieval Visual Atlas',
+    familyId: 'worlds_genres',
+    description:
+      'Medieval visual languages, workshop methods and historical references adapted for reusable styles.',
+    icon: 'book',
+    order: 4,
+    sourcePackIds: ['pack_23'],
+    entries: [{ id: 'medieval-visual-pack', kind: 'pack', packId: 'pack_23' }],
+    facets: { medium: ['illustration'], workflow: ['image', 'edit'] },
+  },
+  {
     id: 'portable_visual_studies',
     title: 'Portable Studies',
     familyId: 'illustration_art_media',
@@ -755,7 +779,8 @@ export const STYLE_COLLECTIONS = [
     id: 'myth_folklore_ritual',
     title: 'Myth & Folklore',
     familyId: 'worlds_genres',
-    description: 'Mythic symbolism, pantheons, rituals, omens, and folklore visual systems.',
+    description:
+      'Myth-informed visual treatments built through symbolism, form, light, texture, and composition.',
     icon: 'moon',
     order: 10,
     sourcePackIds: ['pack_14'],
@@ -808,20 +833,13 @@ export const STYLE_COLLECTIONS = [
     description: 'Surrealism, dream spaces, symbolism, liminal moods, and strange narrative logic.',
     icon: 'moon-stars',
     order: 40,
-    sourcePackIds: ['pack_10', 'pack_14'],
+    sourcePackIds: ['pack_10'],
     entries: [
       {
         id: 'surreal-dream',
         kind: 'category',
         packId: 'pack_10',
         categoryName: '4. Surrealism & Dream',
-      },
-      {
-        id: 'mythic-symbolism-cross',
-        kind: 'category',
-        packId: 'pack_14',
-        categoryName: '1. Mythic — Symbolism',
-        role: 'cross_link',
       },
     ],
     facets: { world: ['surreal', 'symbolic', 'dream'] },

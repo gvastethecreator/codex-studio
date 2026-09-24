@@ -16,65 +16,32 @@ tags:
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: >-
-    Saga of Tanya the Evil - Aerial War Mage Doctrine acts as a transferable anime-battle/worlds
-    router: Saga of Tanya the Evil - Aerial War Mage Doctrine; combine it with isekai and
-    high-fantasy anime grammar with magic-system readability, quest-world texture, luminous
-    adventure, and character-independent fantasy routing; named titles, studios, or lineage words
-    may guide style, but they must not require canon cast, title-scene replication, screenshots,
-    logos, or one fixed card concept.
+    Compact, forceful anime cel drawing with swept diagonals, crisp silhouettes, and clipped
+    high-key contrast.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Saga of
-    Tanya the Evil - Aerial War Mage Doctrine as portable contour, motion grammar, surface language,
-    and emotional pressure without requiring canon elements or a default action setup.
+    Preserve the requested pose and action; use compressed shapes and directional contours only
+    where motion is present.
   color_and_tone: >-
-    Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens,
-    parchment neutrals, magical violets, and controlled pastel or dark contrast; let Saga of Tanya
-    the Evil - Aerial War Mage Doctrine choose accent intensity, value contrast, emotional
-    temperature, and power-system separation while staying attached to prompt X.
+    Muted khaki, deep blue-gray, and clean pale highlights form a disciplined range; respect
+    supplied colors.
   lighting_and_shadow: >-
-    Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and
-    clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Saga of Tanya the Evil - Aerial War Mage Doctrine without
-    replacing prompt X with a stock anime frame.
+    Hard reflected light and short shadow breaks keep compact forms sharp and readable.
   texture_and_material: >-
-    Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel
-    glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Saga of
-    Tanya the Evil - Aerial War Mage Doctrine controlled, denoised, and coherent across bodies,
-    objects, environments, abstractions, and action.
+    Crisp filled shapes, restrained metallic glints, and a trace of painted grain keep the finish
+    controlled.
   camera_and_composition: >-
-    Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed
-    cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook
-    scale; convert Saga of Tanya the Evil - Aerial War Mage Doctrine into reusable perspective,
-    timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample
-    layout.
+    Hold the requested composition; use directional overlap and clear silhouette grouping without
+    adding aircraft or gear.
   atmosphere_and_mood: >-
-    Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional
-    craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic,
-    comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while
-    keeping the anime-battle lineage readable.
+    Tense and precise, with the emotional register set by the prompt.
   rendering_and_quality: >-
-    Finish with clean fantasy-anime finish with stable anatomy and creature/object structure,
-    controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize
-    stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy
-    darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+    Keep details economical, contours stable, and contrast strong without overloading the image.
   key_features: >-
-    Saga of Tanya the Evil - Aerial War Mage Doctrine; clear fantasy silhouettes, spell-effect
-    hierarchy, surface simplification, creature or object readability, and portal-like
-    transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food
-    steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals,
-    transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic
-    magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with
-    stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic
-    text, and no generic isekai gloss
+    Swept direction, compact form, crisp separation, and pale high-key accents give this cel work
+    its taut energy.
   creative_brief: >-
-    Apply Saga of Tanya the Evil - Aerial War Mage Doctrine after prompt X as a transferable
-    anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity,
-    while this preset supplies Saga of Tanya the Evil - Aerial War Mage Doctrine, isekai and
-    high-fantasy anime grammar with magic-system readability, quest-world texture, luminous
-    adventure, and character-independent fantasy routing, finish discipline, and negative controls
-    without forcing canon cast, title scene, screenshot, card pose, default monster, default combat
-    prop, or prompt-literal card.
+    Restyle the requested content with compact silhouettes, fast diagonal drawing, and clipped
+    contrast; add no military, flight, or spell scene.
 avoidRules:
   - realistic
   - 3d render
@@ -86,7 +53,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - RPG UI
   - readable magic text
@@ -97,7 +63,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -105,9 +70,9 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, RPG UI, readable magic text, generic isekai wallpaper,
-    fixed canon character, title scene replication, required source-frame look, cosplay, generic
-    anime filter, prompt-required card, readable text, logo, muddy noisy darks
+    artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed
+    canon character, title scene replication, required source-frame look, cosplay, generic anime
+    filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

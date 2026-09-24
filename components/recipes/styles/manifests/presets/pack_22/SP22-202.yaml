@@ -1,0 +1,104 @@
+schemaVersion: 1
+id: SP22-202
+packId: pack_22
+name: Analog Photocollage
+category: 13. Vintage Collectible Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - vintage-collectible-illustration
+  - restrained-photocollage
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Use a unified photographic response with selectively cut contours, coherent scale and minimal
+    overlap. Keep the collage legible and integrated rather than chaotic.
+  subject_treatment: >-
+    Preserve the identity and count of requested subjects and the existing scene. Apply cut edges only
+    along boundaries already supported by the composition; do not add people, objects or text.
+  color_and_tone: >-
+    Retain the requested palette and value relationships. Unify the photographic pieces gently
+    without forcing a faded print palette or color shift.
+  lighting_and_shadow: >-
+    Follow the requested light direction and contrast. Keep highlights and shadows consistent across
+    the existing elements without adding a new source or scene.
+  texture_and_material: >-
+    Keep photographic surfaces visually compatible, with discreet cut or overlap edges where they
+    clarify existing forms. Do not add a literal backing sheet or extra cutout props.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, pose and placement. Use only the requested elements and
+    keep overlaps minimal; do not rearrange them into a montage layout.
+  atmosphere_and_mood: >-
+    Keep the requested setting and mood. Collage cues change how existing image elements meet, not
+    the location, period or narrative.
+  rendering_and_quality: >-
+    Keep scale relationships coherent and edges selective. Avoid chaotic layering, newspaper scraps,
+    added captions or any invented source material.
+avoidRules:
+  - added people, objects, text or source material
+  - chaotic cutouts, incoherent scale or excessive overlap
+  - unrequested frame, backing sheet or layout
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-202.webp
+attributes:
+  negativePrompt: >-
+    added people, objects, text or source material, chaotic cutouts, incoherent scale or excessive
+    overlap, unrequested frame, backing sheet or layout
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: analog photographic collage
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: analog photographic collage
+    avoidRules:
+      - text: added people, objects, text or source material
+        field: subject_treatment
+      - text: chaotic cutouts, incoherent scale or excessive overlap
+        field: rendering_and_quality
+      - text: unrequested frame, backing sheet or layout
+        field: global
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S102
+    sourceTitle: Analog Photocollage
+    referenceIds:
+      - S54
+      - S57
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    derivedFrom:
+      - TCG-S102
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: vintage-collectible-illustration
+  categoryName: 13. Vintage Collectible Illustration
+  tags:
+    - trading-card-illustration
+    - vintage-collectible-illustration
+    - restrained-photocollage
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

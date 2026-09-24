@@ -1,0 +1,104 @@
+schemaVersion: 1
+id: SP14-133
+packId: pack_14
+name: Mineral Color Planes
+category: Incision & Planes
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - incision-and-planes
+visualDna:
+  aesthetic: >-
+    Opaque angular color planes meet along clean mineral-like boundaries, with large and small facets in
+    an unequal rhythm. Shapes remain continuous rather than shattered.
+  subject_treatment: >-
+    Keep the requested subject, identity, anatomy, action and setting. Apply the visual treatment to its
+    existing shapes; do not replace it with an emblem, ritual, character or prop from a sample card.
+  color_and_tone: >-
+    Keep requested colors and organize adjacent planes by subtle temperature shifts plus two clear value
+    levels; avoid an automatic brown or metallic palette.
+  lighting_and_shadow: >-
+    Use the requested light direction to choose broad plane values. Restrict highlights to real facing
+    surfaces without crystal glow.
+  texture_and_material: >-
+    Use compact chalky pigment variation inside selected planes. The mineral analogy describes paint
+    boundaries, not conversion of every object into stone.
+  camera_and_composition: >-
+    Keep the requested viewpoint, crop and spatial arrangement. Let plane sizes follow existing form and
+    depth, leaving uninterrupted areas around fine identifying features.
+  atmosphere_and_mood: Weight, stillness and measured tension without obligatory gloom or ruins.
+  rendering_and_quality: >-
+    Keep edges deliberate and silhouette readable; no random triangulation, faceted anatomy errors or
+    fine crystalline noise.
+avoidRules:
+  - random triangulation
+  - all-stone material conversion
+  - crystal glow
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-133.webp
+attributes:
+  negativePrompt: random triangulation, all-stone material conversion, crystal glow
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: random triangulation
+        field: rendering_and_quality
+      - text: all-stone material conversion
+        field: rendering_and_quality
+      - text: crystal glow
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP14-018
+      - SP14-019
+      - SP14-020
+      - SP14-045
+      - SP14-046
+      - SP14-047
+      - SP14-048
+      - SP14-049
+      - SP14-050
+      - SP14-051
+      - SP14-052
+      - SP14-053
+      - SP14-054
+      - SP14-055
+      - SP14-056
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: incision-and-planes
+  categoryName: Incision & Planes
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - incision-and-planes
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

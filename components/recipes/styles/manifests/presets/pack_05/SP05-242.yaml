@@ -16,61 +16,31 @@ tags:
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: >-
-    Smoke-Mud Vulnerability Style acts as a transferable anime-battle/worlds router: Smoke-Mud
-    Vulnerability Style; combine it with isekai and high-fantasy anime grammar with magic-system
-    readability, quest-world texture, luminous adventure, and character-independent fantasy routing;
-    named titles, studios, or lineage words may guide style, but they must not require canon cast,
-    title-scene replication, screenshots, logos, or one fixed card concept.
+    Atmospheric cel painting with softened edges, layered low contrast, and rough, earth-toned brush
+    texture.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply
-    Smoke-Mud Vulnerability Style as portable contour, motion grammar, surface language, and
-    emotional pressure without requiring canon elements or a default action setup.
+    Retain the requested forms and action; let secondary contours blur slightly while focal edges
+    stay clear.
   color_and_tone: >-
-    Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens,
-    parchment neutrals, magical violets, and controlled pastel or dark contrast; let Smoke-Mud
-    Vulnerability Style choose accent intensity, value contrast, emotional temperature, and
-    power-system separation while staying attached to prompt X.
+    Muted clay, olive, charcoal, and dusk blue create a subdued range; adapt to explicit palette
+    choices.
   lighting_and_shadow: >-
-    Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and
-    clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Smoke-Mud Vulnerability Style without replacing prompt X with a
-    stock anime frame.
+    Diffuse side light and broad shadows create gentle separation without inventing haze or a new
+    light source.
   texture_and_material: >-
-    Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel
-    glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in
-    Smoke-Mud Vulnerability Style controlled, denoised, and coherent across bodies, objects,
-    environments, abstractions, and action.
+    Smudged pigment, soft streaks, and uneven grain give the image a vulnerable, tactile finish.
   camera_and_composition: >-
-    Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed
-    cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook
-    scale; convert Smoke-Mud Vulnerability Style into reusable perspective, timing, rhythm, scale,
-    cut-in, and negative-space rules instead of one fixed style sample layout.
+    Honor the given viewpoint; use edge softness and tonal layering to separate existing planes.
   atmosphere_and_mood: >-
-    Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional
-    craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic,
-    comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while
-    keeping the anime-battle lineage readable.
+    Quiet and exposed, with vulnerability expressed through contrast rather than added narrative.
   rendering_and_quality: >-
-    Finish with clean fantasy-anime finish with stable anatomy and creature/object structure,
-    controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize
-    stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy
-    darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+    Keep the focal subject legible against loosely painted surroundings; avoid muddy detail.
   key_features: >-
-    Smoke-Mud Vulnerability Style; clear fantasy silhouettes, spell-effect hierarchy, surface
-    simplification, creature or object readability, and portal-like transformation logic; cloth,
-    leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke,
-    mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale
-    spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable
-    glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object
-    structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss
+    Earthy color, brushed softness, diffused contrast, and selectively lost edges create a gentle,
+    vulnerable mood.
   creative_brief: >-
-    Apply Smoke-Mud Vulnerability Style after prompt X as a transferable anime-battle/worlds layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
-    Smoke-Mud Vulnerability Style, isekai and high-fantasy anime grammar with magic-system
-    readability, quest-world texture, luminous adventure, and character-independent fantasy routing,
-    finish discipline, and negative controls without forcing canon cast, title scene, screenshot,
-    card pose, default monster, default combat prop, or prompt-literal card.
+    Carry the requested subject and place through muted, tactile color and softened brush edges
+    without adding smoke, mud, or a fantasy landscape.
 avoidRules:
   - realistic
   - 3d render
@@ -82,7 +52,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - RPG UI
   - readable magic text
@@ -93,7 +62,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -101,9 +69,9 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, RPG UI, readable magic text, generic isekai wallpaper,
-    fixed canon character, title scene replication, required source-frame look, cosplay, generic
-    anime filter, prompt-required card, readable text, logo, muddy noisy darks
+    artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed
+    canon character, title scene replication, required source-frame look, cosplay, generic anime
+    filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

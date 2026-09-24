@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP22-172
+packId: pack_22
+name: Controlled Caricature Paint
+category: 9. Comic & Cartoon Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - comic-and-cartoon-illustration
+  - controlled-caricature-paint
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Painted caricature balances a legible contour, controlled emphasis of selected forms and soft
+    illustration modeling, with localized surface details rather than a preset finish.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action by default. Exaggerate only features or
+    proportions the user explicitly asks to reinterpret; do not add grotesque traits.
+  color_and_tone: >-
+    Retain the requested palette and build readable color volume with clear values; do not force a palette,
+    sticker effect or surface finish.
+  lighting_and_shadow: >-
+    Follow the requested illumination and use soft modeled shadows to clarify the painted form without
+    adding a new source or unsupported highlights.
+  texture_and_material: >-
+    Apply localized painted surface detail where it supports the subject, preserving represented materials
+    without a global wear or sticker-edge treatment.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and placement. Caricature treatment does not require a
+    portrait pose, cutline, border or isolated background.
+  atmosphere_and_mood: >-
+    Keep the requested tone and setting. Grotesque, unpleasant or comic effects appear only when the user
+    specifically requests them.
+  rendering_and_quality: >-
+    Combine a clean readable contour with soft painted volume and localized detail; keep exaggeration
+    deliberate, limited and consistent with the requested identity.
+avoidRules:
+  - unrequested deformation, illness, fluids or grotesque details
+  - unrequested sticker cutlines or borders
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-172.webp
+attributes:
+  negativePrompt: unrequested deformation, illness, fluids or grotesque details, unrequested sticker cutlines or borders
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: drawing
+    avoidRules:
+      - text: unrequested deformation, illness, fluids or grotesque details
+        field: subject_treatment
+      - text: unrequested sticker cutlines or borders
+        field: camera_and_composition
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S072
+    sourceTitle: Grotesque Sticker Paint
+    referenceIds:
+      - S57
+      - S49
+    evidenceStatus: reuse_review
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: comic-and-cartoon-illustration
+  categoryName: 9. Comic & Cartoon Illustration
+  tags:
+    - trading-card-illustration
+    - comic-and-cartoon-illustration
+    - controlled-caricature-paint
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

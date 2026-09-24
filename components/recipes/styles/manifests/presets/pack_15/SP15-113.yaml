@@ -1,0 +1,93 @@
+schemaVersion: 1
+id: SP15-113
+packId: pack_15
+name: Bonepunk
+category: 8. Occult, Myth & Gothic Punks
+version: 2
+supportedTasks: &id002
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags: &id001
+  - curation-v2
+  - identity-reviewed
+  - visual-evaluation-pending
+  - occult-myth-and-gothic-punks
+visualDna:
+  aesthetic:
+    'Make bone an engineered material through a few articulated ivory plates, carved struts,
+    marrow-like channels, or tendon and hide bindings integrated into compatible existing forms; keep
+    bone construction distinctive without converting the whole scene.'
+  subject_treatment:
+    Preserve the requested subject, action, setting, and framing; apply bone construction to selected
+    compatible joints or structural accents while retaining the main material and architecture of the
+    requested scene. Do not rebuild all furniture or the room in bone.
+  color_and_tone:
+    Center chalk ivory, warm bone, smoke, rawhide, and muted earth, with dark joints or one cool
+    accent to separate construction layers; do not reduce bone identity to a cream palette alone.
+  lighting_and_shadow:
+    Use directional light and carved inner shadows to reveal wall thickness, joints, and
+    articulated overlaps; keep the silhouette clear against the background.
+  texture_and_material:
+    Show polished, carved, or weathered bone as a localized worked component alongside the existing
+    material, with tendon-like cord, hide, or sparse wood where compatible; keep anatomical detail stylized.
+  camera_and_composition:
+    Keep one or two braces or joints close to the focal form, with open intervals that show their support
+    function; preserve the requested focal hierarchy and room layout.
+  atmosphere_and_mood:
+    Suggest austere, uncanny ingenuity and a tactile relationship between organic material
+    and engineered form, while keeping the prompt's emotional tone.
+  rendering_and_quality:
+    Make bone joints, carved edges, and structural connections obvious at thumbnail scale;
+    avoid relying on pale coloring or fine texture alone.
+avoidRules:
+  - a compulsory signal horn, rigging scene, or anatomical skeleton subject
+  - bone color used as a substitute for visible bone construction
+  - gore where it is not requested
+  - unrequested full-scene conversion into bone architecture or all-bone furniture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-113.webp
+attributes:
+  negativePrompt:
+    a compulsory signal horn, rigging scene, or anatomical skeleton subject, bone color used
+    as a substitute for visible bone construction, gore where it is not requested, unrequested
+    full-scene conversion into bone architecture or all-bone furniture
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: a compulsory signal horn, rigging scene, or anatomical skeleton subject
+        field: rendering_and_quality
+      - text: bone color used as a substitute for visible bone construction
+        field: rendering_and_quality
+      - text: gore where it is not requested
+        field: rendering_and_quality
+      - text: unrequested full-scene conversion into bone architecture or all-bone furniture
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-113
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: occult-myth-and-gothic-punks
+  categoryName: 8. Occult, Myth & Gothic Punks
+  tags: *id001
+  supportedTasks: *id002
+  hasDefaultImage: true

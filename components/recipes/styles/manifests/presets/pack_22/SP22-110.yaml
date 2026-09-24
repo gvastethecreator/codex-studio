@@ -1,0 +1,96 @@
+schemaVersion: 1
+id: SP22-110
+packId: pack_22
+name: Velvet Realism
+category: 2. Epic Digital Painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - epic-digital-painting
+  - soft-transition-painting
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Digital painting models volume with dense, continuous tonal transitions and small, controlled brush
+    irregularities. Edge softness varies by form instead of blurring the whole image.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Keep shapes specific, soften selected
+    contours and concentrate crisp detail in identity-defining areas.
+  color_and_tone: >-
+    Build rich midtones while retaining separation in dark values. Respect the requested palette and
+    preserve distinct local colors.
+  lighting_and_shadow: >-
+    Follow the requested light and shadow pattern through gradual painted transitions. Keep the existing
+    direction and contrast; do not add glow or flatten shadows.
+  texture_and_material: >-
+    Use subtle brush irregularities without cosmetic smoothing. Preserve the differences between
+    represented materials rather than softening them into a uniform surface.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and element placement. Soft rendering does not
+    require a tighter portrait crop or altered focus plane.
+  atmosphere_and_mood: >-
+    Keep the requested mood. Soft transitions do not imply haze, romance, nostalgia or a dreamlike scene.
+  rendering_and_quality: >-
+    Connect broad forms with controlled transitions and limit the sharpest detail to focal identity
+    features. Avoid global blur while retaining a smooth painted finish.
+avoidRules:
+  - global blur
+  - material-erasing retouch
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-110.webp
+attributes:
+  negativePrompt: global blur, material-erasing retouch
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: painting
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: painting
+    avoidRules:
+      - text: global blur
+        field: rendering_and_quality
+      - text: material-erasing retouch
+        field: texture_and_material
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S010
+    sourceTitle: Velvet Realism
+    referenceIds:
+      - S48
+      - S23
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: epic-digital-painting
+  categoryName: 2. Epic Digital Painting
+  tags:
+    - trading-card-illustration
+    - epic-digital-painting
+    - soft-transition-painting
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

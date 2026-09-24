@@ -13,69 +13,44 @@ tags:
   - caricature-and-cartoon-styles
 visualDna:
   aesthetic: >-
-    SpongeBob Gross-Up Freeze Frame acts as a transferable cinematic-media router: start from
-    Cheerful cartoony setup smashed by hyper-detailed disgusting close-up, SpongeBob gross-up
-    freeze-frame as style anchor, deranged reaction insert, slapstick whiplash, Normal-to-gross
-    style contrast, close-up texture detail, reaction-frame jump scare, bright-to-revolting whiplash
-    and caricature and cartoon system built from exaggeration rules, line instability, body-shape
-    grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media
-    behavior to prompt X instead of recreating a fixed demo image.
+    Use this drawing language: Style-whiplash cartoon with cheerful flat color and simple
+    contour interrupted by a sharply detailed close-up or magnified surface when requested.
+    Apply it as a rendering treatment to user-provided content; let the user control subject and
+    context.
   subject_treatment: >-
-    Transform any prompt subject through Simple bright cartoon contours interrupted by
-    hyper-detailed gross-up brushwork; preserve the requested subject while exaggerating proportion,
-    contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according
-    to the preset, keeping the requested identity, silhouette, action, object function, or setting
-    legible.
+    Apply simple bright contours interrupted by hyper-detailed brush marks in limited areas to
+    the supplied subject while preserving its identity, silhouette, requested action, actual
+    material, and function. Change the drawn treatment, not the underlying content.
   color_and_tone: >-
-    Build color with Cheerful yellow-blue base, sickly pink close-up accents, pore red, greasy
-    beige, seafoam green; use color through loud primaries, beige suburban anxiety, marker flats,
-    mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette
-    pressure, with deliberate value grouping, accent control, and process-specific limits rather
-    than generic color wash.
+    Use cheerful yellow-blue base, sickly pink accents, red accents, greasy beige, and seafoam
+    green as style colors while honoring any explicit color requirements in the request.
   lighting_and_shadow: >-
-    Handle light through Flat happy setup light interrupted by cruel macro glare; shape light
-    minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or
-    uncanny cutout shadow when the style requires it, so exposure and shadow structure support the
-    media process without overwriting the requested content.
+    Use cheerful flat fill with localized highlight contrast on magnified details as a visual
+    treatment, while respecting any lighting instructions in the request.
   texture_and_material: >-
-    Render Cel fill colliding with pores, wrinkles, follicles, wet gloss, and painterly gross
-    texture; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle
-    line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping
-    artifact scale coherent and avoiding noisy filler texture.
+    Render cartoon fill with painterly micro-marks and gloss only where they suit the input
+    material as drawn or printed surface marks over the existing material; do not change the
+    subject's actual substance or function.
   camera_and_composition: >-
-    Structure the image through Crash-zoom proximity, sudden scale jump, normal-to-gross
-    transformation, invasive crop; compose through readable gag timing, grotesque close-up, slouch
-    geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a
-    named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style
-    work.
+    Keep the base form simple and bright; add one magnified detail only when it clarifies the
+    requested subject or material.
   atmosphere_and_mood: >-
-    Keep the mood Cheery, revolting, whiplash-funny, manic, mood carried by SpongeBob Gross-Up
-    Freeze Frame media process, signal pressure, and visual restraint; derive mood from adult
-    absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or
-    anti-polish personality, letting the media style alter interpretation without demanding a
-    specific story, location, or actor.
+    Cheerful and revolting in quick succession; let surface contrast create the whiplash.
   rendering_and_quality: >-
-    Finish with Style-whiplash freeze frame, bright cartoon plus revolting macro insert; finish with
-    clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness,
-    school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where
-    appropriate, and enough process evidence to make the style recognizable.
+    Finish with a clear contrast between flat cartoon fill and a limited area of painterly
+    surface detail.
   key_features: >-
-    Cheerful cartoony setup smashed by hyper-detailed disgusting close-up, SpongeBob gross-up
-    freeze-frame as style anchor, deranged reaction insert, slapstick whiplash; Normal-to-gross
-    style contrast, close-up texture detail, reaction-frame jump scare, bright-to-revolting
-    whiplash; Cheerful yellow-blue base, sickly pink close-up accents, pore red, greasy beige,
-    seafoam green; Cel fill colliding with pores, wrinkles, follicles, wet gloss, and painterly
-    gross texture; Crash-zoom proximity, sudden scale jump, normal-to-gross transformation, invasive
-    crop
+    flat cheerful fill; simple contour; localized painterly detail; macro contrast when
+    requested; source-led texture
   creative_brief: >-
-    Apply SpongeBob Gross-Up Freeze Frame as a cinematic-media preset over prompt X: preserve the
-    user's requested subject, then route lens behavior, palette, light, signal or film texture,
-    composition, mood, and final media craft through Cheerful cartoony setup smashed by
-    hyper-detailed disgusting close-up, SpongeBob gross-up freeze-frame as style anchor, deranged
-    reaction insert, slapstick whiplash, Normal-to-gross style contrast, close-up texture detail,
-    reaction-frame jump scare, bright-to-revolting whiplash, Cel fill colliding with pores,
-    wrinkles, follicles, wet gloss, and painterly gross texture without requiring the card image's
-    original subject.
+    Render the supplied content with simple bright contours interrupted by hyper-detailed brush
+    marks in limited areas. Use cheerful yellow-blue base, sickly pink accents, red accents,
+    greasy beige, and seafoam green as style colors while honoring any explicit color
+    instructions. Apply cartoon fill with painterly micro-marks and gloss only where they suit
+    the input material as drawn or printed marks over the existing material, without changing
+    what the subject is made of or how it functions. Preserve the requested subject, action, and
+    setting; follow the supplied composition and add no unrequested cast, location, lettering,
+    or gag.
 avoidRules:
   - digital
   - HD

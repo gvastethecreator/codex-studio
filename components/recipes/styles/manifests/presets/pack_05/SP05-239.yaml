@@ -13,69 +13,35 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Bubblegum Cosmic Overdrive acts as a transferable anime-battle/worlds router: Bubblegum Cosmic
-    Overdrive, bubblegum cosmic scale style grammar with elastic pop geometry, huge joyful color,
-    cosmic flare, and sincere chaos; combine it with mecha and cyberpunk anime grammar with
-    engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and
-    machine-emotion tension; named titles, studios, or lineage words may guide style, but they must
-    not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.
+    Elastic pop rendering with rounded graphic contours, joyful saturated color, sweeping
+    flare-like shapes, and lively shifts in scale and rhythm.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply
-    Bubblegum Cosmic Overdrive, bubblegum cosmic scale style grammar with elastic pop geometry, huge
-    joyful color, cosmic flare, and sincere chaos as portable contour, motion grammar, surface
-    language, and emotional pressure without requiring canon elements or a default action setup.
+    Keep the requested subject recognizable. Soften selected contours and apply rounded color
+    shapes to existing forms without turning them into toys or characters.
   color_and_tone: >-
-    Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile
-    white, coral glow, and disciplined emissive accents; let Bubblegum Cosmic Overdrive, bubblegum
-    cosmic scale style grammar with elastic pop geometry, huge joyful color, cosmic flare, and
-    sincere chaos choose accent intensity, value contrast, emotional temperature, and power-system
-    separation while staying attached to prompt X.
+    Use vivid bubblegum pink, cyan, lemon yellow, and violet against clear dark anchors; keep
+    color joyful and strongly separated.
   lighting_and_shadow: >-
-    Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow,
-    and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Bubblegum Cosmic Overdrive, bubblegum cosmic scale style grammar
-    with elastic pop geometry, huge joyful color, cosmic flare, and sincere chaos without replacing
-    prompt X with a stock anime frame.
+    Set soft luminous gradients against crisp cel shadows, with broad bright accents that follow
+    existing forms rather than adding cosmic effects.
   texture_and_material: >-
-    Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust,
-    circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Bubblegum
-    Cosmic Overdrive, bubblegum cosmic scale style grammar with elastic pop geometry, huge joyful
-    color, cosmic flare, and sincere chaos controlled, denoised, and coherent across bodies,
-    objects, environments, abstractions, and action.
+    Preserve the subject’s material beneath smooth gradients, clean highlight bands, and a few
+    playful grain or sparkle-like marks.
   camera_and_composition: >-
-    Frame through scale compression, machinery diagonals, grid overlays without readable UI,
-    service-bay density, orbital symmetry, and high-speed hardware lanes; convert Bubblegum Cosmic
-    Overdrive, bubblegum cosmic scale style grammar with elastic pop geometry, huge joyful color,
-    cosmic flare, and sincere chaos into reusable perspective, timing, rhythm, scale, cut-in, and
-    negative-space rules instead of one fixed style sample layout.
+    Honor the requested view. Use energetic curves and varied color scale inside the existing
+    composition without adding planets or burst shapes.
   atmosphere_and_mood: >-
-    Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine
-    grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic,
-    tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping
-    the anime-battle lineage readable.
+    Keep the mood buoyant, expansive, and sincere through saturated color, elastic line rhythm,
+    and open spacing.
   rendering_and_quality: >-
-    Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic
-    3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object
-    structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no
-    fake readable text, no signature, no photoreal or 3D-render drift.
+    Combine smooth gradients, firm outlines, clear shadow blocks, and controlled bloom; prevent
+    color from obscuring the silhouette.
   key_features: >-
-    Bubblegum Cosmic Overdrive, bubblegum cosmic scale style grammar with elastic pop geometry, huge
-    joyful color, cosmic flare, and sincere chaos; armored contour, mechanical massing, modular
-    joints, engineered surface rhythm, scale cues, and human-machine pressure translated onto any
-    subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust,
-    circuitry, rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid
-    overlays without readable UI, service-bay density, orbital symmetry, and high-speed hardware
-    lanes; premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D
-    render, and no cockpit/control-room dependency
+    Elastic rounded contours; joyful saturated color; smooth flare-like gradients; lively scale
+    rhythm.
   creative_brief: >-
-    Apply Bubblegum Cosmic Overdrive after prompt X as a transferable anime-battle/worlds layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
-    Bubblegum Cosmic Overdrive, bubblegum cosmic scale style grammar with elastic pop geometry, huge
-    joyful color, cosmic flare, and sincere chaos, mecha and cyberpunk anime grammar with engineered
-    silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion
-    tension, finish discipline, and negative controls without forcing canon cast, title scene,
-    screenshot, card pose, default monster, default combat prop, or prompt-literal card.
+    Preserve the prompt’s subject and setting. Apply rounded contours, joyful pop colors, and
+    smooth luminous gradients; add no toy, planet, or cosmic scene.
 avoidRules:
   - realistic
   - 3d render
@@ -87,7 +53,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - named franchise likeness
   - cockpit
@@ -104,7 +69,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -112,10 +76,10 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, named franchise likeness, cockpit, weapon, mecha battle,
+    artifacts, watermark, signature, named franchise likeness, cockpit, weapon, mecha battle,
     readable UI, toy-logo composition, plastic 3d robot render, cockpit source-frame look, readable
     UI panel, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, readable text, logo, muddy noisy darks
+    generic anime filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

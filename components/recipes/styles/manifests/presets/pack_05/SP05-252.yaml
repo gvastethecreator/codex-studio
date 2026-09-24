@@ -16,78 +16,33 @@ tags:
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: >-
-    Campfire Cooking in Another World - Merchant Road Stew acts as a transferable
-    anime-battle/worlds router: Campfire Cooking in Another World - Merchant Road Stew, warm
-    travel-comfort fantasy style grammar with steam glow, generous road-camp calm, rounded
-    hospitality shapes, and food warmth as atmosphere; combine it with isekai and high-fantasy anime
-    grammar with magic-system readability, quest-world texture, luminous adventure, and
-    character-independent fantasy routing; named titles, studios, or lineage words may guide style,
-    but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed
-    card concept.
+    Softly glowing cel painting with rounded contours, blended amber light, and a calm warm-to-cool
+    balance.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Campfire
-    Cooking in Another World - Merchant Road Stew, warm travel-comfort fantasy style grammar with
-    steam glow, generous road-camp calm, rounded hospitality shapes, and food warmth as atmosphere
-    as portable contour, motion grammar, surface language, and emotional pressure without requiring
-    canon elements or a default action setup.
+    Keep the requested subject and gesture; soften transitions and use rounded shape rhythm without
+    adding companions or food.
   color_and_tone: >-
-    Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens,
-    parchment neutrals, magical violets, and controlled pastel or dark contrast; let Campfire
-    Cooking in Another World - Merchant Road Stew, warm travel-comfort fantasy style grammar with
-    steam glow, generous road-camp calm, rounded hospitality shapes, and food warmth as atmosphere
-    choose accent intensity, value contrast, emotional temperature, and power-system separation
-    while staying attached to prompt X.
+    Amber, pale cream, and twilight blue create welcoming contrast; adapt the palette when the
+    prompt specifies colors.
   lighting_and_shadow: >-
-    Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and
-    clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Campfire Cooking in Another World - Merchant Road Stew, warm
-    travel-comfort fantasy style grammar with steam glow, generous road-camp calm, rounded
-    hospitality shapes, and food warmth as atmosphere without replacing prompt X with a stock anime
-    frame.
+    Gentle warm highlights dissolve into cooler shadows, with atmospheric softness contained around
+    existing forms.
   texture_and_material: >-
-    Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel
-    glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Campfire
-    Cooking in Another World - Merchant Road Stew, warm travel-comfort fantasy style grammar with
-    steam glow, generous road-camp calm, rounded hospitality shapes, and food warmth as atmosphere
-    controlled, denoised, and coherent across bodies, objects, environments, abstractions, and
-    action.
+    Smooth washes, faint grain, and diffused highlights give a cozy finish while preserving
+    represented materials.
   camera_and_composition: >-
-    Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed
-    cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook
-    scale; convert Campfire Cooking in Another World - Merchant Road Stew, warm travel-comfort
-    fantasy style grammar with steam glow, generous road-camp calm, rounded hospitality shapes, and
-    food warmth as atmosphere into reusable perspective, timing, rhythm, scale, cut-in, and
-    negative-space rules instead of one fixed style sample layout.
+    Respect the original viewpoint; use relaxed spacing and broad value flow without introducing an
+    outdoor scene.
   atmosphere_and_mood: >-
-    Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional
-    craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic,
-    comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while
-    keeping the anime-battle lineage readable.
+    Comforting and generous in tone, without requiring hospitality or a gathering.
   rendering_and_quality: >-
-    Finish with clean fantasy-anime finish with stable anatomy and creature/object structure,
-    controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize
-    stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy
-    darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+    Retain clear focal edges inside the soft light; keep gradients smooth and restrained.
   key_features: >-
-    Campfire Cooking in Another World - Merchant Road Stew, warm travel-comfort fantasy style
-    grammar with steam glow, generous road-camp calm, rounded hospitality shapes, and food warmth as
-    atmosphere; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature
-    or object readability, and portal-like transformation logic; cloth, leather, polished armor,
-    parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted
-    fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed
-    cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook
-    scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled
-    glow, no RPG UI, no readable magic text, and no generic isekai gloss
+    Amber glow, rounded contours, twilight blue, and soft transitions create a calm, welcoming cel
+    atmosphere.
   creative_brief: >-
-    Apply Campfire Cooking in Another World - Merchant Road Stew after prompt X as a transferable
-    anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity,
-    while this preset supplies Campfire Cooking in Another World - Merchant Road Stew, warm
-    travel-comfort fantasy style grammar with steam glow, generous road-camp calm, rounded
-    hospitality shapes, and food warmth as atmosphere, isekai and high-fantasy anime grammar with
-    magic-system readability, quest-world texture, luminous adventure, and character-independent
-    fantasy routing, finish discipline, and negative controls without forcing canon cast, title
-    scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.
+    Use warm atmospheric light and gentle cel contours on the requested content without adding a
+    meal, camp, or travel scene.
 avoidRules:
   - realistic
   - 3d render
@@ -99,7 +54,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - named franchise likeness
   - market corridor
@@ -115,7 +69,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -123,10 +76,10 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, named franchise likeness, market corridor, tavern
-    clutter, readable sign, banquet table lock, RPG UI, readable magic text, generic isekai
-    wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, readable text, logo, muddy noisy darks
+    artifacts, watermark, signature, named franchise likeness, market corridor, tavern clutter,
+    readable sign, banquet table lock, RPG UI, readable magic text, generic isekai wallpaper, fixed
+    canon character, title scene replication, required source-frame look, cosplay, generic anime
+    filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

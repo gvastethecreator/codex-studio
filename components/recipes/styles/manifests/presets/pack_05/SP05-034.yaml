@@ -16,75 +16,44 @@ tags:
   - modern-shonen-and-action
 visualDna:
   aesthetic: >-
-    Bright Hero Academy acts as a transferable anime-battle/worlds router: Bright lead-form Academy,
-    bright lead-form-academy anime style grammar with optimistic trainee protagonist, bold
-    expressive pose, emblem-like but unreadable costume shapes, upbeat motion arcs, civic color
-    blocks, and aspirational cel polish. Favor clean broadcast anime, simple readable distant-plane;
-    combine it with modern action anime grammar with power-system clarity, impact frames, elastic
-    motion, expressive line economy, and high-readability spectacle; named titles, studios, or
-    lineage words may guide style, but they must not require canon cast, title-scene replication,
-    screenshots, logos, or one fixed card concept.
+    Build the graphic anime treatment from clean broadcast contours with selective line-weight
+    changes and friendly bold geometry divided into simple color zones. Let open arcs that buoy
+    the existing gesture set its rhythm; use clear primary colors, white, and a strong dark
+    outline for color and smooth broadcast-cel fills with almost no surface noise for finish.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Bright
-    lead-form Academy, bright lead-form-academy anime style grammar with optimistic trainee
-    protagonist, bold expressive pose, emblem-like but unreadable costume shapes, upbeat motion arcs
-    as portable contour, motion grammar, surface language, and emotional pressure without requiring
-    canon elements or a default action setup.
+    Preserve the requested content and framing. Use clean broadcast contours with selective
+    line-weight changes for edge work, friendly bold geometry divided into simple color zones for
+    form simplification, and open arcs that buoy the existing gesture only where movement is
+    already requested.
   color_and_tone: >-
-    Map color through saturated action accents, clean dark-light value separation, aura color,
-    bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts;
-    let Bright lead-form Academy, bright lead-form-academy anime style grammar with optimistic
-    trainee protagonist, bold expressive pose, emblem-like but unreadable costume shapes, upbeat
-    motion arcs choose accent intensity, value contrast, emotional temperature, and power-system
-    separation while staying attached to prompt X.
+    Build value groups with clear primary colors, white, and a strong dark outline. Place the
+    strongest contrast on the requested focal area and preserve explicit color instructions.
   lighting_and_shadow: >-
-    Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights,
-    and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Bright lead-form Academy, bright lead-form-academy anime style
-    grammar with optimistic trainee protagonist, bold expressive pose, emblem-like but unreadable
-    costume shapes, upbeat motion arcs without replacing prompt X with a stock anime frame.
+    Treat lighting graphically: bright even value separation with uncomplicated cel shadows. Keep
+    shadows grouped and respect any light direction already requested.
   texture_and_material: >-
-    Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted
-    debris, and controlled effect overlays; keep the tactile or effect cues in Bright lead-form
-    Academy, bright lead-form-academy anime style grammar with optimistic trainee protagonist, bold
-    expressive pose, emblem-like but unreadable costume shapes, upbeat motion arcs controlled,
-    denoised, and coherent across bodies, objects, environments, abstractions, and action.
+    Render existing surfaces with smooth broadcast-cel fills with almost no surface noise,
+    preserving depicted materials and adding no props or effects.
   camera_and_composition: >-
-    Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels,
-    compressed depth, and readable near-to-far force paths; convert Bright lead-form Academy, bright
-    lead-form-academy anime style grammar with optimistic trainee protagonist, bold expressive pose,
-    emblem-like but unreadable costume shapes, upbeat motion arcs into reusable perspective, timing,
-    rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.
+    Within the requested camera and crop, use clear focal hierarchy, simplified depth planes, and
+    uncluttered margins to organize existing forms; preserve location and action.
   atmosphere_and_mood: >-
-    Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and
-    heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet,
-    grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle
-    lineage readable.
+    Let line weight, spacing, and value convey optimism and forward-looking clarity, while
+    preserving the prompt's emotional intent.
   rendering_and_quality: >-
-    Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp
-    silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or
-    object structure, readable effects, controlled grain, heavy denoise for noisy darks, no
-    watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+    Finish with polished flat fills, stable outlines, and readable distant forms; keep detail
+    selective and accents attached to existing forms.
   key_features: >-
-    Bright lead-form Academy, bright lead-form-academy anime style grammar with optimistic trainee
-    protagonist, bold expressive pose, emblem-like but unreadable costume shapes, upbeat motion
-    arcs; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface
-    simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke,
-    sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack
-    lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable
-    near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy,
-    crisp silhouettes, no manga-panel text, and no cheap AI anime smear
+    clean broadcast contours with selective line-weight changes; friendly bold geometry divided
+    into simple color zones; clear primary colors, white, and a strong dark outline; open arcs
+    that buoy the existing gesture; smooth broadcast-cel fills with almost no surface noise; clear
+    focal hierarchy, simplified depth planes, and uncluttered margins.
   creative_brief: >-
-    Apply Bright Hero Academy after prompt X as a transferable anime-battle/worlds layer: prompt X
-    supplies subject, action, setting, tone, and intensity, while this preset supplies Bright
-    lead-form Academy, bright lead-form-academy anime style grammar with optimistic trainee
-    protagonist, bold expressive pose, emblem-like but unreadable costume shapes, upbeat motion
-    arcs, civic color blocks, and aspirational cel polish. Favor clean broadcast anime, simple
-    readable distant-plane, modern action anime grammar with power-system clarity, impact frames,
-    elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and
-    negative controls without forcing canon cast, title scene, screenshot, card pose, default
-    monster, default combat prop, or prompt-literal card.
+    Keep the requested subject, action, location, and crop. Render them with clean broadcast
+    contours with selective line-weight changes, friendly bold geometry divided into simple color
+    zones, and clear primary colors, white, and a strong dark outline; use open arcs that buoy the
+    existing gesture only where movement is already present, and apply smooth broadcast-cel fills
+    with almost no surface noise as the drawing finish.
 avoidRules:
   - realistic
   - 3d render
@@ -96,7 +65,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - school uniform copy
   - superhero franchise likeness
@@ -116,7 +84,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -124,11 +91,11 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, school uniform copy, superhero franchise likeness,
-    green-haired hero, numbered hero suit, cape-logo copy, classroom scene, readable badges, dense
-    forest, rubble field, photoreal cosplay, western superhero comic, generic shonen source-frame
-    look, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, readable text, logo, muddy noisy darks
+    artifacts, watermark, signature, school uniform copy, superhero franchise likeness, green-haired
+    hero, numbered hero suit, cape-logo copy, classroom scene, readable badges, dense forest, rubble
+    field, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon
+    character, title scene replication, required source-frame look, cosplay, generic anime filter,
+    prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

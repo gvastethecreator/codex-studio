@@ -1,0 +1,95 @@
+schemaVersion: 1
+id: SP15-097
+packId: pack_15
+name: Seapunk
+category: 5. Ocean, Ice & Terrain Punks
+version: 2
+supportedTasks: &id002
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags: &id001
+  - curation-v2
+  - identity-reviewed
+  - visual-evaluation-pending
+  - ocean-ice-and-terrain-punks
+visualDna:
+  aesthetic:
+    'An aquatic synthetic/digital language: electric turquoise and coral accents, liquid-glass gradients,
+    pearlescent surfaces, bubble lenses and coral-like circuitry make forms fluid, virtual and marine.'
+  subject_treatment:
+    Preserve subject and locks. Restyle open silhouettes, surfaces and interfaces with flowing
+    synthetic curves, tidal bands, iridescent modules or coral-circuit branching; keep it aquatic-digital,
+    not merely nautical. Integrate bubble-lens and coral-circuit details into existing forms; do not add posters,
+    slogans or separate aquatic decor unless requested.
+  color_and_tone:
+    Use saturated aqua, cyan, teal and sea-glass with coral pink, violet or acid-lime accents
+    and deep-blue contrast. Respect palette; where it is open, reserve saturated accents for selected existing
+    surfaces and keep large room planes light or neutral to avoid a blue wash.
+  lighting_and_shadow:
+    Honor stated light and sources. Where unspecified, use luminous gradients and tight
+    pearlescent highlights on synthetic surfaces, not forced underwater rays or glow.
+  texture_and_material:
+    Distinguish liquid glass, iridescent polymer, translucent shell composites and matte
+    digital panels. Apply wet gloss selectively.
+  camera_and_composition:
+    Preserve viewpoint and placement. Let tide bands and digital geometry guide the eye
+    without requiring ocean, vessel, reef or sea creature.
+  atmosphere_and_mood:
+    Convey fluidity, playful synthetic futurism, depth or electronic calm in the requested
+    tone. Mangrove structures remain one possible ecological expression.
+  rendering_and_quality:
+    Use smooth graphic gradients, crisp digital contours and high-contrast synthetic details.
+    Make aquatic-digital character read at thumbnail scale without reef clutter.
+avoidRules:
+  - Do not reduce Seapunk to mariner equipment, industrial pressure lines or a blue filter.
+  - Do not require vessel, reef, underwater scene, settlement or marine animal.
+  - Avoid all-over wet gloss, unrelated circuitry and unsupported glow.
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-097.webp
+attributes:
+  negativePrompt:
+    Do not reduce Seapunk to mariner equipment, industrial pressure lines or a blue filter.,
+    Do not require vessel, reef, underwater scene, settlement or marine animal., Avoid all-over wet gloss,
+    unrelated circuitry and unsupported glow.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: Do not reduce Seapunk to mariner equipment, industrial pressure lines or a blue filter.
+        field: rendering_and_quality
+      - text: Do not require vessel, reef, underwater scene, settlement or marine animal.
+        field: rendering_and_quality
+      - text: Avoid all-over wet gloss, unrelated circuitry and unsupported glow.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-024
+      - SP15-033
+      - SP15-034
+      - SP15-035
+      - SP15-036
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: ocean-ice-and-terrain-punks
+  categoryName: 5. Ocean, Ice & Terrain Punks
+  tags: *id001
+  supportedTasks: *id002
+  hasDefaultImage: true

@@ -8,28 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'KyoAni Shared-Warmth Microacting',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'KyoAni Shared-Warmth Microacting operates as a portable anime-lifestyle router: combine KyoAni Shared Warmth Microacting identity cues through Microacting clusters; warm shared focus cues; tea toned comfort fields; soft domestic tactility; and gentle ensemble rhythm; KyoAni Shared Warmth Microacting anime style cues with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Rounded 2D animation contours taper to fine ends and settle into compact cel shadows; expression reads through precise facial marks rather than caricature.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Keep the prompted identity, age, proportions, costume, and action; use minute eyelid, brow, and mouth accents only to carry the supplied expression.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Separate gentle warm neutrals from cool accents in clear value groups; let the requested palette set the hues and reserve saturation for existing focal forms.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use broad soft light, shallow cel shadows, and a thin clean highlight edge; follow the stated direction without adding a bounce source.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Favor smooth painted fills with sparse fine marks on surfaces already present; keep texture subordinate to contour and preserve each prompted material.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Preserve the requested crop, viewpoint, scale, spacing, and count; create separation through contour overlap and a quiet detail hierarchy within the frame.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Keep the requested mood; make subtle expression legible without turning a neutral scene shy, comforting, or cheerful.',
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Use clean closed contours, stable proportions, readable facial features, and restrained soft transitions; avoid a glossy digital finish.',
       key_features:
-        'Microacting clusters; warm shared focus cues; tea toned comfort fields; soft domestic tactility; and gentle ensemble rhythm; KyoAni Shared Warmth Microacting anime style cues',
+        'Fine tapered contours; minute facial marks; compact soft cel shadows; gentle warm and cool separation; sparse surface detail.',
       creative_brief:
-        'Use KyoAni Shared-Warmth Microacting after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Microacting clusters, warm shared focus cues, tea toned comfort fields, soft domestic tactility, and gentle ensemble rhythm, KyoAni Shared Warmth Microacting anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Build expression from tiny facial shifts and tapered linework over soft cel planes. Preserve the subject, action, count, camera, and mood from the request; add no scene props.',
     },
   },
   {
@@ -37,28 +37,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Market-Festival Community Softness',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Community-Festival Community Softness operates as a portable anime-lifestyle router: combine Market Festival Community Softness identity cues through Community rhythm; food craft softness; paper accents; warm local light; rounded social composition; and affectionate bustle with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Rounded contours and modular color shapes overlap with slight edge variation like layered print, creating graphic rhythm across existing forms.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Retain each prompted silhouette, pose, and count; soften contour joins without making figures childlike or adding a group.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Arrange warm and cool local colors in alternating blocks; use a pale paper tint only when it fits the supplied palette.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Keep illumination diffuse and forms readable; use simple overlapping shadow planes while following the stated light.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Add restrained paper grain and lightly uneven pigment edges to existing surfaces; retain the named material underneath.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Hold crop, viewpoint, spacing, and count; let repeated color shapes support the supplied arrangement without changing it.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Follow the requested mood; rounded shape rhythm contributes graphic structure without prescribing emotion.',
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Use clean color separations with soft layered overlaps; preserve crisp edges where the prompt requires precision.',
       key_features:
-        'Community rhythm; food craft softness; paper accents; warm local light; rounded social composition; and affectionate bustle',
+        'Rounded ink joins; modular color blocks; layered print edges; alternating warm and cool accents; light surface grain.',
       creative_brief:
-        'Use Community-Festival Community Softness after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Community rhythm, food craft softness, paper accents, warm local light, rounded social composition, and affectionate bustle, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Use overlapping color shapes and rounded contour joins to create a gentle graphic rhythm. Keep the requested subject, action, count, camera, and mood.',
     },
   },
   {
@@ -66,28 +66,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Beginner-Made DIY Glow',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Beginner-Made DIY Glow operates as a portable anime-lifestyle router: combine Beginner Made DIY Glow identity cues through DIY material traces; beginner imperfection; warm process light; assembled contours; and collaborative making energy; Beginner Made DIY Glow anime style cues with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Hand-drawn outlines wobble slightly and color fills meet them with small irregularities, suggesting assembled shapes without losing clarity.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve identity, proportions, gesture, and count; use gentle line variation rather than misshapen anatomy or altered design.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Keep a clear base palette with lightly mixed accents and visible color variation; explicit user colors take precedence.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use broad simple light and soft-edged shadows; follow the specified lighting without adding a glow.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Show sparse dry-brush strokes, uneven pigment edges, and overlapping passes while retaining the actual material.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Keep crop, viewpoint, scale, spacing, and count; let irregular line edges create a handmade feel without changing layout.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Preserve the requested mood; imperfect surface marks describe the drawing process and do not limit quality or emotion.',
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Keep structure carefully readable beneath imperfect edges; this is intentionally hand-drawn, not low-resolution or careless.',
       key_features:
-        'DIY material traces; beginner imperfection; warm process light; assembled contours; and collaborative making energy; Beginner Made DIY Glow anime style cues',
+        'Slightly wavering ink; irregular fill edges; overlapping pigment passes; broad simple shadows; clear assembled silhouettes.',
       creative_brief:
-        'Use Beginner-Made DIY Glow after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies DIY material traces, beginner imperfection, warm process light, assembled contours, and collaborative making energy, Beginner Made DIY Glow anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Use controlled line wobble and uneven pigment at the surface while keeping forms structurally sound. Keep subject, action, count, camera, and mood from the request.',
     },
   },
   {
@@ -95,28 +95,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cold-Warm Restorative Comfort',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Cold-Warm Restorative Comfort operates as a portable anime-lifestyle router: combine Cold Warm Restorative Comfort identity cues through Thermal dialogue; layered comfort; practical use cues; soft vapor; cold ambient space; and unhurried companionship rhythm with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Rounded ink contours and broad color planes are separated by cool ambient values and warmer local highlights, creating depth through temperature.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        "Preserve each subject's identity, pose, proportion, and action; use soft edge accents and clear silhouette breaks without adding expression or contact.",
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Contrast cool blue-gray or green neutrals with limited warm accents where the palette permits; do not impose an emotional cast through color.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Keep the stated light source and direction; use a broad soft key and warmer bounce only when existing light supports it.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Favor matte color and fine material-specific strokes; texture describes only surfaces specified in the request.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Maintain crop, viewpoint, spacing, and count; use warm and cool planes to separate existing layers, not rearrange them.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Preserve the requested tone; color temperature is a visual relationship, not an emotional instruction.',
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Use smooth fill transitions, rounded contour joins, and soft-edged shadows with readable value boundaries.',
       key_features:
-        'Thermal dialogue; layered comfort; practical use cues; soft vapor; cold ambient space; and unhurried companionship rhythm',
+        'Cool ambient planes against warm accents; rounded contour joins; soft value transitions; clear layered separation; matte finish.',
       creative_brief:
-        'Use Cold-Warm Restorative Comfort after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Thermal dialogue, layered comfort, practical use cues, soft vapor, cold ambient space, and unhurried companionship rhythm, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Build separation with cool ambient color and measured warm accents while following the supplied light. Keep subject, action, count, camera, and mood unchanged.',
     },
   },
   {
@@ -124,28 +124,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Deadline-Cheer Workflow Density',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Deadline-Cheer Workflow Density operates as a portable anime-lifestyle router: combine Deadline Cheer Workflow Density identity cues through Checklist logic; production clutter; team chaos coherence; panel geometry; deadline compression; and hopeful work warmth with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Ordered clusters of thin marks alternate with open flat color areas, giving the drawing a dense but controlled working rhythm.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Retain the exact prompted forms and action; concentrate detail on surfaces already present and add no clutter or participants.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Use a disciplined base with a small number of brighter accents; keep explicit colors and maintain clear separation.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Keep one coherent light direction and simple contact shadows; avoid urgency lighting or a time-of-day cue.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Vary density through short repeated strokes and clean patches; marks follow described surfaces and never introduce new content.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Preserve view, crop, scale, spacing, and count; create dense-to-open rhythm within the layout without panels or camera movement.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        "Keep the prompt's mood; organized detail density does not prescribe an emotional state.",
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Separate detailed and quiet areas decisively; keep contours legible and avoid scribbles that resemble text.',
       key_features:
-        'Checklist logic; production clutter; team chaos coherence; panel geometry; deadline compression; and hopeful work warmth',
+        'Alternating dense and open mark fields; ordered thin strokes; restrained bright accents; coherent shadows; crisp boundaries.',
       creative_brief:
-        'Use Deadline-Cheer Workflow Density after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Checklist logic, production clutter, team chaos coherence, panel geometry, deadline compression, and hopeful work warmth, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Vary detail density across existing forms to create a deliberate working rhythm. Preserve content and camera; add no new content or frame marks.',
     },
   },
   {
@@ -153,28 +153,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Utilitarian Quiet-Freedom Minimalism',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Utilitarian Quiet-Freedom Minimalism operates as a portable anime-lifestyle router: combine Utilitarian Quiet Freedom Minimalism identity cues through Utilitarian silhouettes; spare open framing; practical material detail; mechanical quietude; and subtle emotional expansion; Utilitarian Quiet Freedom Minimalism anime style cues with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Structural contours, broad quiet color fields, and a small number of crisp value boundaries create an economical graphic finish.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve all prompted forms, proportions, and meaningful details; simplify surface marks only, never remove structural information.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Use a restrained range of neutral or cool values with an accent drawn from the prompt; do not default to gray.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Keep the stated light direction and organize shadows into a few clear shapes; retain nuance when requested.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Use matte fills with material-specific edge marks in small doses; avoid implying a new material from the finish.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Keep crop, viewpoint, perspective, spacing, and count; separate existing forms rather than adding negative space.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Let the prompt set the emotion; sparse rendering does not impose a mood.',
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Use deliberate line breaks, clean shape edges, and enough contrast for each form to remain identifiable.',
       key_features:
-        'Utilitarian silhouettes; spare open framing; practical material detail; mechanical quietude; and subtle emotional expansion; Utilitarian Quiet Freedom Minimalism anime style cues',
+        'Structural contours; broad quiet fills; few clear shadow groups; limited surface noise; precise material accents.',
       creative_brief:
-        'Use Utilitarian Quiet-Freedom Minimalism after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Utilitarian silhouettes, spare open framing, practical material detail, mechanical quietude, and subtle emotional expansion, Utilitarian Quiet Freedom Minimalism anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Reduce surface noise and organize values around the structure of existing forms. Preserve subject, action, count, camera, and mood without adding props.',
     },
   },
   {
@@ -182,28 +182,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Looped-Routine Healing Pastel',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Looped-Routine Healing Pastel operates as a portable anime-lifestyle router: combine Looped Routine Healing Pastel identity cues through Loop motifs; repeated care rhythm; soft outdoor texture; inherited routine; reflective calm; and close emotional spacing with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Repeated small contour and value motifs create a visual cycle across existing forms, paired with smooth color transitions.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve subject, proportions, action, and count; repeat a mark or tonal cue only, never an object, pose, or image sequence.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Rotate a small set of related accents through the prompted palette; do not impose pastel hues or soften requested contrast.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Keep one consistent source and repeat its highlight shape only on surfaces that already receive it.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Use matte fills with recurring fine grain or line rhythms; respect material differences and keep treatment specific to each surface.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Keep camera and layout exact; rhythm comes from marks inside the supplied composition, not repeated panels or scenes.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        "Retain the prompt's emotional tone; a recurring visual motif does not prescribe a mood.",
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Balance repeated accents with clear breaks so subjects stay distinct; maintain legible details and stable forms.',
       key_features:
-        'Loop motifs; repeated care rhythm; soft outdoor texture; inherited routine; reflective calm; and close emotional spacing',
+        'Recurring line motifs; repeated highlight shapes; limited color rotation; smooth matte fills; clear rhythm with visual breaks.',
       creative_brief:
-        'Use Looped-Routine Healing Pastel after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Loop motifs, repeated care rhythm, soft outdoor texture, inherited routine, reflective calm, and close emotional spacing, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Echo line and color motifs across existing forms without repeating depicted content. Preserve subject, action, count, camera, and mood.',
     },
   },
   {
@@ -211,28 +211,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bundled Warmth Pocket',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Bundled Warmth Pocket operates as a portable anime-lifestyle router: combine Bundled Warmth Pocket identity cues through Bundled contours; cold warm contrast; warmth pockets; practical textile cues; crisp air; and quiet friendship light with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Soft substantial outer contours surround finely drawn interior folds and edges, creating two scales of line texture with warm and cool balance.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Keep identity, proportions, pose, materials, and count; vary line weight without changing the depicted forms.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Set cool neutral planes against small warm accents only where suitable; preserve the exact palette if specified.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use a soft broad source with a narrow highlight boundary; do not add warmth or cold as a lighting scenario.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Use short interwoven strokes only on prompted woven surfaces; keep other materials smooth and distinct.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Preserve crop, viewpoint, perspective, spacing, and count; use line weight to separate existing depth layers.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Follow the requested mood; line softness and color temperature do not assign an emotion.',
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Keep heavy outer contours clean and interior marks sparse; prevent the two line scales from muddying small details.',
       key_features:
-        'Bundled contours; cold warm contrast; warmth pockets; practical textile cues; crisp air; and quiet friendship light',
+        'Soft substantial outline; fine interior marks; cool and warm separation; localized textile strokes; clear depth boundaries.',
       creative_brief:
-        'Use Bundled Warmth Pocket after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Bundled contours, cold warm contrast, warmth pockets, practical textile cues, crisp air, and quiet friendship light, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Contrast a rounded outer line with finer internal strokes and measured color temperature. Keep subject, action, count, camera, and mood user-defined.',
     },
   },
   {
@@ -240,28 +240,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rough-Ideation Motion Overlay',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Rough-Ideation Motion Overlay operates as a portable anime-lifestyle router: combine Rough Ideation Motion Overlay identity cues through Sketch overlays; concept cutaways; annotation rhythm; build from scratch energy; rough draft texture; and motion imagination with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'An intentionally unfinished concept drawing combines visible construction lines, loose contour passes, and sparse action-tracing marks over restrained flat color.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve subject, pose, action, and count; rough guide strokes and brief contour replays may track the same silhouette but do not create a second pose or figure.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Use mostly open linework and quiet fill with a limited marker-like accent; retain user colors and avoid decorative bursts.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Keep lighting simple and diagrammatic, following the prompt; define form with line and a few shadow planes rather than polished glow.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Show pencil or ink stroke grain, unfinished edge variation, and sparse hatching; keep depicted materials readable.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Maintain the requested main crop, viewpoint, scale, and count; keep study marks within the same frame and tied to the same forms and prompted action.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        "Preserve the supplied mood; an ideation surface does not change the action's energy or emotional tone.",
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Leave guide marks visible where they trace the same forms; keep the underlying silhouette clear and avoid lettering, interface marks, or watermarks.',
       key_features:
-        'Sketch overlays; concept cutaways; annotation rhythm; build from scratch energy; rough draft texture; and motion imagination',
+        'Visible construction lines; contour replays on the same forms; sparse gesture ticks tied to requested motion; restrained flat color; unfinished edges.',
       creative_brief:
-        'Use Rough-Ideation Motion Overlay after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Sketch overlays, concept cutaways, annotation rhythm, build from scratch energy, rough draft texture, and motion imagination, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Keep concept-stage linework visible around the same clear drawing; guide strokes trace prompted forms and motion only. Preserve subject, action, count, main camera, and mood; add no scene or words.',
     },
   },
   {
@@ -269,28 +269,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Deadpan-Explosion Absurd Timing',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Deadpan-Explosion Absurd Timing operates as a portable anime-lifestyle router: combine Deadpan Explosion Absurd Timing identity cues through Deadpan baseline; explosive deformation; elastic reaction faces; sudden scale jumps; and punchline focused composition; Deadpan Explosion Absurd Timing anime style cues with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'A two-tempo ink drawing keeps steady thin contours at rest and switches to sharp wedges or localized elastic arcs at action peaks already present in the request.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Keep identity, anatomy, and silhouette; bend only existing contour segments when the requested gesture supports it, never duplicating or resizing the subject.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Use a quiet middle-value base with brief high-chroma accents on existing forms; the prompt controls the palette and its emotional meaning.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Set flat cel planes against crisp hard shadow cuts; keep contrast local and invent no additional light source.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Keep fills smooth and edges clean; add a few short gesture marks only along movement the prompt already describes.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Lock crop, viewpoint, scale, spacing, and count; create impact through local contrast rather than a new angle, insert, or zoom.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Preserve the source mood; sharpen a requested comic beat through line timing without making neutral action comedic.',
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Keep resting forms stable and readable; confine elastic distortion to small contour accents and return immediately to the original shape.',
       key_features:
-        'Deadpan baseline; explosive deformation; elastic reaction faces; sudden scale jumps; and punchline focused composition; Deadpan Explosion Absurd Timing anime style cues',
+        'Steady resting line against sharp gesture marks; localized elastic arcs; short action accents; flat shadows with abrupt value contrast.',
       creative_brief:
-        'Use Deadpan-Explosion Absurd Timing after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Deadpan baseline, explosive deformation, elastic reaction faces, sudden scale jumps, and punchline focused composition, Deadpan Explosion Absurd Timing anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Use still contours and quick elastic marks to distinguish existing action peaks. Preserve subject, action, count, camera, and mood; add no punchline prop, duplicate, or forced expression.',
     },
   },
   {
@@ -298,28 +298,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Low-Stakes Banter Flatness',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Low-Stakes Banter Flatness operates as a portable anime-lifestyle router: combine Low Stakes Banter Flatness identity cues through Banter pacing; low contrast calm; tiny reaction shifts; talk circle composition; and relaxed social continuity; Low Stakes Banter Flatness anime style cues with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Thin, even contour lines and flat low-contrast cel fields give forms a calm, economical finish; expression changes stay small and clearly drawn.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Retain the requested design and pose; keep facial features restrained and proportionate, with no added reactions or assumed relationships.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Choose a narrow, muted range with neighboring hues and gentle value steps; preserve explicit colors and avoid a fixed pastel scheme.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use broad even illumination and only shallow shadow shapes; preserve harder shadows when the prompt calls for them.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Keep surfaces smooth and detail sparse, with faint grain only where it does not obscure the original material.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Keep the exact requested framing and count; support readable spacing inside the layout the user supplies.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Let the requested emotion set facial intensity and contrast; low-key rendering must not flatten a strong expression.',
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Favor precise line closure, simple shadow grouping, and consistent edge weight; retain enough detail to identify every prompted form.',
       key_features:
-        'Banter pacing; low contrast calm; tiny reaction shifts; talk circle composition; and relaxed social continuity; Low Stakes Banter Flatness anime style cues',
+        'Uniform fine contours; low-contrast color blocks; shallow shadow shapes; restrained feature marks; relaxed detail density.',
       creative_brief:
-        'Use Low-Stakes Banter Flatness after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Banter pacing, low contrast calm, tiny reaction shifts, talk circle composition, and relaxed social continuity, Low Stakes Banter Flatness anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Render with quiet line weight and narrow value steps, letting small feature changes carry expression. Preserve the prompted subject, action, count, camera, and mood.',
     },
   },
   {
@@ -327,28 +327,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ordinary-Cosmic Whimsy Pivot',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Ordinary-Cosmic Whimsy Pivot operates as a portable anime-lifestyle router: combine Ordinary Cosmic Whimsy Pivot identity cues through Ordinary to cosmic contrast; social reaction dynamics; anomaly glow; playful chaos cues; and reality pivot staging; Ordinary Cosmic Whimsy Pivot anime style cues with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Precisely inked forms sit in clean planar color, with selective luminous edges and a clear value break attached to forms already in the image.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Keep the prompted subject and proportions intact; apply light or edge contrast only to existing forms, without adding another form.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Balance grounded midtones with a limited vivid accent; any unusual hue belongs to a prompted element and never replaces explicit colors.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Separate flat cel shadows from soft localized light; use a glow only when the source content or prompt supplies a luminous element.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Use smooth, controlled fills with a fine line edge and restrained halo where justified; avoid grain that changes the material.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Preserve crop, viewpoint, scale, count, and spacing; express a visual pivot through value and color contrast inside the requested frame.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Follow the requested mood; let contrast affect visual emphasis only, not the emotional reading.',
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Keep forms crisp beside a soft light accent when one is requested; add no new graphic event.',
       key_features:
-        'Ordinary to cosmic contrast; social reaction dynamics; anomaly glow; playful chaos cues; and reality pivot staging; Ordinary Cosmic Whimsy Pivot anime style cues',
+        'Precise contour; flat color planes; selective edge luminosity; localized value pivot; restrained effects.',
       creative_brief:
-        'Use Ordinary-Cosmic Whimsy Pivot after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Ordinary to cosmic contrast, social reaction dynamics, anomaly glow, playful chaos cues, and reality pivot staging, Ordinary Cosmic Whimsy Pivot anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Contrast stable inked shapes with a small, justified luminous accent. Preserve subject, action, count, camera, and mood; add no narrative event.',
     },
   },
   {
@@ -356,28 +356,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Pastoral Breathing-Room Stillness',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Pastoral Breathing-Interior Stillness operates as a portable anime-lifestyle router: combine Pastoral Breathing Room Stillness identity cues through Open negative space; tiny ritual focus; summer air softness; small gesture economy; and pastoral tonal calm; Pastoral Breathing Room Stillness anime style cues with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Fine unbroken outlines, broad pale color washes, and low surface-detail density give the image an airy hand-painted finish without changing layout.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Retain the exact prompted design and gesture; keep internal marks selective and never simplify away a meaningful feature or material.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Use open, lightly saturated color relationships with clear focal values; greens, creams, or blues appear only when the requested palette allows.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        "Render broad diffuse light with soft shadow edges and clear contact points; follow the prompt's stated conditions.",
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Concentrate subtle grain and fine strokes on existing focal surfaces; keep secondary areas quiet without removing their forms.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        "Preserve framing, viewpoint, scale, spacing, and count; maintain the input's negative space instead of enlarging it or moving the subject.",
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Keep the requested mood; stillness comes from sparse marks and gentle contrast, not an imposed setting or emotion.',
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Use clean edge control, softened distance only where present, and enough local detail to keep all prompted elements distinct.',
       key_features:
-        'Open negative space; tiny ritual focus; summer air softness; small gesture economy; and pastoral tonal calm; Pastoral Breathing Room Stillness anime style cues',
+        'Fine contour; broad light washes; low detail density; diffuse shadow edges; selective focal texture.',
       creative_brief:
-        'Use Pastoral Breathing-Interior Stillness after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Open negative space, tiny ritual focus, summer air softness, small gesture economy, and pastoral tonal calm, Pastoral Breathing Room Stillness anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        "Let pale washes and spare surface marks provide breathing room within the user's composition. Preserve the requested subject, action, count, camera, and mood.",
     },
   },
   {
@@ -385,28 +385,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Memory-Washed Melodrama Softness',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Memory-Washed Melodrama Softness operates as a portable anime-lifestyle router: combine Memory Washed Melodrama Softness identity cues through Soft eyed emotion; memory haze; gentle backlight; warm faded palette; and vulnerable stillness; Memory Washed Melodrama Softness anime style cues with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Soft ink contours sit under translucent tonal veils, with selected focal edges kept crisp against gentler color transitions.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve identity, proportions, expression, and action; soften contour edges and shadow transitions, never age, pose, or facial structure.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Use subdued warm and cool midtones with gently faded transitions; retain explicit colors and avoid an automatic vintage cast.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Follow the requested light direction and soften shadow boundaries without changing their source or adding backlight.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Layer smooth color glazing over subtle pencil grain; preserve the texture and reflectance of each described material.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Hold crop, viewpoint, distance, and count; create depth with tonal softness rather than an added vignette or focal object.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Keep the requested mood and intensity; haze changes edge softness, not the story or emotional reading.',
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Blend shadows gently while maintaining decisive contours and readable values; avoid blur over the whole image.',
       key_features:
-        'Soft eyed emotion; memory haze; gentle backlight; warm faded palette; and vulnerable stillness; Memory Washed Melodrama Softness anime style cues',
+        'Translucent tonal veils; faded but prompt-led color; selective crisp contours; soft shadow transitions; faint pencil grain.',
       creative_brief:
-        'Use Memory-Washed Melodrama Softness after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Soft eyed emotion, memory haze, gentle backlight, warm faded palette, and vulnerable stillness, Memory Washed Melodrama Softness anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        "Use translucent color and softened edges around a few decisive lines. Preserve the user's subject, action, count, camera, and emotional tone without adding a narrative filter.",
     },
   },
   {
@@ -414,28 +414,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Tea-Light Observational Mystery',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Tea-Light Observational Mystery operates as a portable anime-lifestyle router: combine Tea Light Observational Mystery identity cues through Clue focused framing; tea light warmth; observational stillness; precise microgestures; and intellectual hush; Tea Light Observational Mystery anime style cues with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Observational linework uses fine, precise contours and sharply resolved microdetails against quieter color fields, without changing the point of attention.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Keep every prompted form and action; clarify small features already present without adding narrative symbols or gestures.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Use neutral midtones with one measured warm or cool accent; retain stated colors and keep small details from becoming oversaturated.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Follow the actual light source; use compact highlights and contact shadows to define existing details.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Vary mark scale by material: smooth where clean, fine grain where rough, and no implied object from a texture cue.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Preserve crop, viewpoint, scale, and count; strengthen the existing focal hierarchy without moving it or requiring close-up framing.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Keep the requested mood; line precision should not alter the emotional reading.',
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Separate thin contour, local detail, and background values cleanly; keep extra graphic marks sparse and nonverbal.',
       key_features:
-        'Clue focused framing; tea light warmth; observational stillness; precise microgestures; and intellectual hush; Tea Light Observational Mystery anime style cues',
+        'Precise fine contours; selectively sharp microdetail; quiet supporting color fields; compact highlights; material-specific mark scale.',
       creative_brief:
-        'Use Tea-Light Observational Mystery after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Clue focused framing, tea light warmth, observational stillness, precise microgestures, and intellectual hush, Tea Light Observational Mystery anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Give existing focal details crisp line priority against calmer surrounding marks. Preserve subject, camera, and mood; add no extra graphic motif.',
     },
   },
   {
@@ -443,28 +443,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Reflective Breeze Healing Reverie',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Reflective Breeze Healing Reverie operates as a portable anime-lifestyle router: combine Reflective Breeze Healing Reverie identity cues through Reflection softness; slow conversation pacing; waterlike light; kindness aura; and buoyant negative space; Reflective Breeze Healing Reverie anime style cues with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Transparent glaze layers and softly echoed values create a fluid finish while every depicted shape stays single and sharply identifiable.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Keep the original identity, pose, and count; soften selected edge transitions but never mirror, duplicate, or rearrange forms.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Blend nearby cool and warm values through translucent layers; honor explicit colors and avoid imposing a blue or restorative palette.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Follow the supplied source with soft tonal echoes; do not duplicate forms or add a light source.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Use fine wash granulation and delicate brush edges over existing materials; keep each material distinct rather than applying one surface treatment everywhere.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Preserve crop, viewpoint, scale, and spacing; use soft value echoes inside the frame without shifting the focal point.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        "Maintain the requested emotion; fluid transitions affect surface and value only, not the scene's emotional reading.",
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Keep one decisive contour on focal forms and softer transitions elsewhere; no full-frame blur or duplicated reflection.',
       key_features:
-        'Reflection softness; slow conversation pacing; waterlike light; kindness aura; and buoyant negative space; Reflective Breeze Healing Reverie anime style cues',
+        'Translucent glazing; soft value echoes; fine wash grain; selective decisive contours; single readable silhouettes.',
       creative_brief:
-        'Use Reflective Breeze Healing Reverie after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Reflection softness, slow conversation pacing, waterlike light, kindness aura, and buoyant negative space, Reflective Breeze Healing Reverie anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Layer soft tonal echoes around clear forms using transparency, without duplicating shapes. Keep the prompted subject, action, count, camera, and mood.',
     },
   },
   {
@@ -472,28 +472,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Breezy Brush-Reinvention Summer',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Breezy Brush-Reinvention Summer operates as a portable anime-lifestyle router: combine Breezy Brush Reinvention Summer identity cues through Brush energy; summer air; self reinvention tone; loose comedy; paper texture; and bright sincerity with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Loose brush contours, open paper gaps, and simple geometric underpainting give forms a fresh hand-painted energy.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the prompted design, proportions, pose, and action; vary stroke edges without reshaping the figure or object.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Balance a light base with a few confident saturated accents; let the user set the hue and avoid a fixed seasonal palette.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use broad light planes with broken brush shadow edges; follow the described source and keep depth readable.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Show dry-brush skips and sparse pencil grain as surface treatment; render existing materials recognizably beneath the marks.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Keep exact framing, viewpoint, scale, and count; use asymmetry within existing shapes without rearranging the composition.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Preserve the requested feeling; loose marks describe brushwork, not a required emotion.',
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Leave a controlled handmade edge while keeping anatomy and object boundaries legible; avoid a uniformly rough finish.',
       key_features:
-        'Brush energy; summer air; self reinvention tone; loose comedy; paper texture; and bright sincerity',
+        'Loose directional brushwork; geometric underpainting; visible paper gaps; broken shadow edges; selective pencil grain.',
       creative_brief:
-        'Use Breezy Brush-Reinvention Summer after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Brush energy, summer air, self reinvention tone, loose comedy, paper texture, and bright sincerity, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Combine confident brush edges with simple color geometry and visible gaps. Keep the original subject, action, count, camera, and mood unchanged.',
     },
   },
   {
@@ -501,28 +501,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Everyday-Care Gesture Intimacy',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Everyday-Care Gesture Intimacy operates as a portable anime-lifestyle router: combine Everyday Care Gesture Intimacy identity cues through Caregiving gestures; small practical details; patient pauses; close spacing; and emotional sincerity; Everyday Care Gesture Intimacy anime style cues with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Fine contour detail concentrates where existing forms touch, while neighboring edges remain soft and economical.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        "Keep the user's subjects, relation, gesture, age, and count; render existing contact points without changing their intent.",
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        "Use natural midtones and restrained warm highlights balanced by the prompt's other colors; avoid an exclusively pastel cast.",
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Give overlapping forms clear contact shadows under the supplied light; keep the edge soft where forms separate.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Add small tactile strokes only for materials already specified; do not suggest other materials.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Keep the exact crop, viewpoint, scale, spacing, and count; contact detail works at any distance and must not force a close-up.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        "Follow the requested emotional intensity; delicate detail must not change the scene's emotional reading.",
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Keep fine local edges crisp while broad forms stay smooth; maintain readable overlaps when they exist.',
       key_features:
-        'Caregiving gestures; small practical details; patient pauses; close spacing; and emotional sincerity; Everyday Care Gesture Intimacy anime style cues',
+        'Fine contact-point contours; precise overlap shadows; smooth broad forms; restrained warm accents; material-specific tactile marks.',
       creative_brief:
-        'Use Everyday-Care Gesture Intimacy after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Caregiving gestures, small practical details, patient pauses, close spacing, and emotional sincerity, Everyday Care Gesture Intimacy anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Focus line detail at contact points already present in the image, keeping all relations user-defined. Preserve subject, action, count, camera, and mood.',
     },
   },
   {
@@ -530,28 +530,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sugar-Cotton Hospitality Miniature',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Sugar-Cotton Hospitality Miniature operates as a portable anime-lifestyle router: combine Sugar Cotton Hospitality Miniature identity cues through Lace delicacy; dessertlike softness; plush texture; compact symmetry; and hospitality rhythm; Sugar Cotton Hospitality Miniature anime style cues with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Delicate contour lines and tiny, controlled highlight points give existing forms a finely finished, compact surface detail.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Keep exact proportions, age, silhouette, and count; render small details finely without shrinking the subject or changing its character.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Use gentle tonal steps and a restrained light palette only when the prompt allows; preserve explicit colors and strong contrast.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use smooth highlights and soft shadow transitions with precise contact edges; follow the actual light direction.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Use fine grain and small highlights only to describe materials named in the prompt.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Preserve view, crop, scale, spacing, and count; apply compact detail within the image, not a miniature camera or symmetric layout.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Retain the requested feeling; delicate rendering does not assign an emotional tone.',
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Use crisp microdetail, clean contours, and small highlight accents without overdecorating the frame.',
       key_features:
-        'Lace delicacy; dessertlike softness; plush texture; compact symmetry; and hospitality rhythm; Sugar Cotton Hospitality Miniature anime style cues',
+        'Delicate contour; tiny highlights; fine material detail; gentle tonal steps; compact precision without scale change.',
       creative_brief:
-        'Use Sugar-Cotton Hospitality Miniature after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Lace delicacy, dessertlike softness, plush texture, compact symmetry, and hospitality rhythm, Sugar Cotton Hospitality Miniature anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Make fine surface marks and small highlights carry the detail without miniaturizing forms. Preserve subject, action, count, camera, and mood.',
     },
   },
   {
@@ -559,28 +559,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Immaculate Social-Jitter Comedy',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Immaculate Social-Jitter Comedy operates as a portable anime-lifestyle router: combine Immaculate Social Jitter Comedy identity cues through Pristine order; silent pressure; chalk dust motifs; social jitter beats; beauty comedy contrast; and polite empty space with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Evenly weighted fine outlines and immaculate flat planes are interrupted by one tiny alignment shift in an existing edge or repeated mark.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Retain every prompted form, pose, expression, and count; jitter stays at a contour or color edge, never in anatomy or action.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Keep relationships orderly and mostly restrained, with one limited accent where the prompt allows it.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use even fill and compact crisp shadows; preserve supplied lighting without inventing another source.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Favor clean polished fills; add fine grain only when an existing material calls for it.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Preserve crop, viewpoint, scale, spacing, and count; create tension through tiny internal misalignment, not a new layout.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Keep the requested mood; a small visual stutter does not set the emotional reading.',
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Maintain sharp boundaries, smooth fields, and one deliberate irregularity; avoid unprompted surface marks.',
       key_features:
-        'Pristine order; silent pressure; chalk dust motifs; social jitter beats; beauty comedy contrast; and polite empty space',
+        'Even contour weight; immaculate color planes; crisp compact shadows; localized alignment shift; limited accent color.',
       creative_brief:
-        'Use Immaculate Social-Jitter Comedy after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Pristine order, silent pressure, chalk dust motifs, social jitter beats, beauty comedy contrast, and polite empty space, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Set precise, clean drawing against a single restrained edge irregularity. Keep subject, action, count, camera, and mood; add no new motif.',
     },
   },
   {
@@ -588,28 +588,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Shift-Comedy Choreography Warmth',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Shift-Comedy Choreography Warmth operates as a portable anime-lifestyle router: combine Shift Comedy Choreography Warmth identity cues through Handoff choreography; coworker chemistry; practical warmth; service rhythm; comic reaction beats; and clear blocking with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Clear action contours follow existing overlaps, with rounded ink joins and distinct planes that make the depicted motion easy to read.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the exact action, identity, anatomy, and count; clarify existing overlaps without inventing a handoff, interaction, or gesture.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Use distinct local colors and moderate saturation to separate forms; follow explicit palette and avoid mandatory warmth.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Keep contact shadows clear under the provided source; use clean value edges where forms overlap.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Use smooth fills with brief material-specific brush marks; imply no new material or object.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Keep framing, viewpoint, scale, spacing, and count; guide the eye along movement already in the prompt without changing blocking.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Retain the requested mood; kinetic linework does not assign an emotional tone or relationship.',
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Keep contours continuous where needed and motion accents sparse; maintain clear object boundaries.',
       key_features:
-        'Handoff choreography; coworker chemistry; practical warmth; service rhythm; comic reaction beats; and clear blocking',
+        'Directional action contours; rounded joins; clear overlap planes; moderate color separation; sparse material marks.',
       creative_brief:
-        'Use Shift-Comedy Choreography Warmth after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Handoff choreography, coworker chemistry, practical warmth, service rhythm, comic reaction beats, and clear blocking, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Clarify movement and overlaps already present with directional linework and readable color planes. Preserve scene, count, camera, and mood; add no new interaction.',
     },
   },
   {
@@ -617,28 +617,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Breeze-Drift Beautiful Inertia',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Breeze-Drift Beautiful Inertia operates as a portable anime-lifestyle router: combine Breeze Drift Beautiful Inertia identity cues through Low energy posture; breeze effects; negative space; pause centric timing; minimal exertion comedy; and soft light with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Long fluid contours and low-frequency color transitions give the image a light drifting surface while forms remain as still or active as requested.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Keep the original pose, proportions, action, and count; soften line cadence and tonal edges without changing posture or direction.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Use gentle neighboring hues and low contrast where allowed; preserve strong or saturated colors explicitly requested.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use broad soft transitions while maintaining the stated light direction and enough shadow structure to describe form.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Keep surfaces smooth with thin brush trails along existing edges; do not imply movement that is absent from the prompt.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        "Preserve crop, viewpoint, scale, spacing, and count; maintain the input's balance without forcing open space or a paused composition.",
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        "Follow the requested emotional intensity; softness does not alter the scene's energy.",
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Keep essential boundaries crisp beneath gentle transitions; avoid a uniform blur or low-detail wash.',
       key_features:
-        'Low energy posture; breeze effects; negative space; pause centric timing; minimal exertion comedy; and soft light',
+        'Long fluid contours; neighboring color shifts; broad soft transitions; sparse edge trails; stable form boundaries.',
       creative_brief:
-        'Use Breeze-Drift Beautiful Inertia after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Low energy posture, breeze effects, negative space, pause centric timing, minimal exertion comedy, and soft light, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply gentle contour flow and tonal drift without changing pose or motion. Keep subject, action, count, camera, and mood as requested.',
     },
   },
   {
@@ -646,28 +646,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Incremental-Ascent Confidence Light',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Incremental-Ascent Confidence Light operates as a portable anime-lifestyle router: combine Incremental Ascent Confidence Light identity cues through Upward rhythm; incremental confidence; supportive gestures; crisp daylight; practical texture; and reveal lighting with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Clean geometric color planes shift in measured brightness along existing contours, with precise lit edges and controlled gradients.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Retain the exact forms, proportions, gesture, and count; sharpen edges of existing focal shapes without changing posture.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        "Build gradual value steps from darker support to brighter accents using requested hues; preserve the prompt's palette and contrast.",
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Follow the source direction and create progression of light across existing planes; add no beam or new source.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Use smooth fills and compact material details; preserve surface qualities named in the prompt.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Keep crop, viewpoint, scale, spacing, and count; create hierarchy through tonal progression, not upward framing or a reveal.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Preserve the requested emotional tone; directional light does not assign a new one.',
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Keep light boundaries crisp and gradients subtle; separate forms without excessive glow.',
       key_features:
-        'Upward rhythm; incremental confidence; supportive gestures; crisp daylight; practical texture; and reveal lighting',
+        'Geometric color planes; progressive value steps; crisp lit edges; controlled gradients; clear focal hierarchy.',
       creative_brief:
-        'Use Incremental-Ascent Confidence Light after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Upward rhythm, incremental confidence, supportive gestures, crisp daylight, practical texture, and reveal lighting, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Use a measured light-to-shadow progression along existing shapes to build hierarchy. Preserve subject, action, count, camera, and mood without shifting composition.',
     },
   },
   {
@@ -675,28 +675,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mundane Absurdist Theater',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Mundane Absurdist Theater operates as a portable anime-lifestyle router: combine Mundane Absurdist Theater identity cues through Deadpan commitment; banal stage framing; reaction pops; low budget absurdism; ensemble rhythm; and awkward silence with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Plain graphic planes, thin even contours, and blunt shadow shapes give the drawing restrained flat clarity.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve identity, proportions, pose, action, and count; stylize shadow edges without distorting expression or altering count.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Use simple color relationships and controlled contrast; the prompt sets hue and saturation rather than a fixed palette.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Keep stated lighting direction; define one or two firm shadow shapes without inventing another light source.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Favor smooth color fields and minimal surface grain; retain material detail needed to recognize each form.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Keep camera, crop, scale, spacing, and count; clarity comes from plane separation within the given arrangement.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Follow the requested mood; understated graphics do not prescribe an emotional tone.',
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Use clean shapes and limited shadow edges with no unfinished marks or added glow.',
       key_features:
-        'Deadpan commitment; banal stage framing; reaction pops; low budget absurdism; ensemble rhythm; and awkward silence',
+        'Thin even contour; plain color planes; blunt shadow shapes; low surface grain; restrained flat clarity.',
       creative_brief:
-        'Use Mundane Absurdist Theater after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Deadpan commitment, banal stage framing, reaction pops, low budget absurdism, ensemble rhythm, and awkward silence, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Separate forms with plain color planes and deliberate shadows. Keep subject, action, count, camera, and mood as requested; add no new motif.',
     },
   },
   {
@@ -704,28 +704,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Observational Watercolor Drift',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Observational Watercolor Drift operates as a portable anime-lifestyle router: combine Observational Watercolor Drift identity cues through Tiny noticing; watercolor softness; warm afternoon drift; still life balance; gentle curiosity; and minimal narrative demand with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Transparent watercolor washes, soft pigment blooms, and paper-tooth granulation sit beneath selective pencil or ink contours.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve identity, proportions, pose, and count; let wash edges soften surfaces without losing the requested silhouette or action.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        "Layer diluted color with visible overlap and natural edge variation; honor the user's palette and avoid a fixed seasonal cast.",
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Follow stated light through transparent washes and soft-edged shadows; do not add sunlight or haze as a scene cue.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Show pigment granulation and watercolor blooms as the image medium; keep depicted material texture separate and recognizable.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Preserve crop, viewpoint, scale, spacing, and count; vary wash density without defocusing or rearranging content.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Retain the requested mood; watercolor softness does not assign an emotional tone.',
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Keep focal contours crisp enough to read, with organic wash boundaries and no digital blur across the whole image.',
       key_features:
-        'Tiny noticing; watercolor softness; warm afternoon drift; still life balance; gentle curiosity; and minimal narrative demand',
+        'Transparent washes; pigment blooms; paper-tooth granulation; selective ink edges; diluted layered color.',
       creative_brief:
-        'Use Observational Watercolor Drift after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Tiny noticing, watercolor softness, warm afternoon drift, still life balance, gentle curiosity, and minimal narrative demand, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Use visible watercolor texture and transparent overlapping washes while retaining crisp focal contours. Preserve subject, action, count, camera, and mood; add no new content or light source.',
     },
   },
   {
@@ -733,28 +733,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Domestic-Fantasy Scale Chaos',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Domestic-Fantasy Scale Chaos operates as a portable anime-lifestyle router: combine Domestic Fantasy Scale Chaos identity cues through Everyday scale contrast; cozy magical interruption; ensemble warmth; creature adjacent accents; and routine chaos rhythm; Domestic Fantasy Scale Chaos anime style cues with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Large clear silhouettes contrast with tiny internal marks and fine edge details; scale variation belongs to line weight and detail density, not object size.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Keep proportions, silhouettes, ages, and counts as requested; use small detail against simple forms without adding new forms or changing scale.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Set a restrained base against a limited bright accent on an existing focal form; the prompt controls hue and saturation.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Separate flat ambient values from a crisp rim or highlight only when supported by the supplied light.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Contrast smooth broad fills with precise fine strokes on existing surfaces; avoid glow unless the prompt requests light effects.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Keep crop, viewpoint, perspective, spacing, and count; create scale contrast through mark size and detail, not framing or proportion changes.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Follow the requested feeling; contrast affects visual emphasis only and does not assign a new tone.',
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Preserve clear silhouette edges while keeping microdetail sparse; do not blur or ornament the whole image.',
       key_features:
-        'Everyday scale contrast; cozy magical interruption; ensemble warmth; creature adjacent accents; and routine chaos rhythm; Domestic Fantasy Scale Chaos anime style cues',
+        'Bold simplified silhouette; tiny internal line detail; restrained bright accent; clean layers; scale contrast through mark density.',
       creative_brief:
-        'Use Domestic-Fantasy Scale Chaos after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Everyday scale contrast, cozy magical interruption, ensemble warmth, creature adjacent accents, and routine chaos rhythm, Domestic Fantasy Scale Chaos anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Juxtapose broad clean shapes with fine marks to create visual scale tension. Do not enlarge or add anything; preserve subject, action, count, camera, and mood.',
     },
   },
   {
@@ -762,28 +762,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sunshine-Scribble Soft Geometry',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Sunshine-Scribble Soft Geometry operates as a portable anime-lifestyle router: combine Sunshine Scribble Soft Geometry identity cues through Sketchbook tactility; soft geometric fields; warm paper light; playful abstraction; and low pressure creative ritual; Sunshine Scribble Soft Geometry anime style cues with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Soft geometric color patches sit beneath loose colored-pencil contours and short scribbled accents, balancing structure with hand-drawn variation.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Keep the requested silhouette, anatomy, pose, and count; let sketch marks sit on existing edges without changing the design.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Use a light paper-like base and a few soft geometric color areas; the requested palette and contrast remain in control.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Favor flat, lightly tinted planes with clear contact shadows; follow the requested light without implying sunshine.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Show pencil grain, short cross marks, and uneven color boundaries selectively; avoid making every material look like paper.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Hold framing, viewpoint, scale, and count; integrate color patches into existing forms without decorative shapes or sketch panels.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Keep the supplied emotional tone; loose line texture does not require a particular activity or feeling.',
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Retain clean silhouettes under rough accents; keep sketch detail intentional and geometry soft but stable.',
       key_features:
-        'Sketchbook tactility; soft geometric fields; warm paper light; playful abstraction; and low pressure creative ritual; Sunshine Scribble Soft Geometry anime style cues',
+        'Loose pencil contour; soft geometric underpainting; short scribble marks; paper-like tonal base; stable readable silhouettes.',
       creative_brief:
-        'Use Sunshine-Scribble Soft Geometry after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Sketchbook tactility, soft geometric fields, warm paper light, playful abstraction, and low pressure creative ritual, Sunshine Scribble Soft Geometry anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Place loose pencil marks over gentle geometric color fields, tying both to forms already present. Preserve subject, action, count, camera, and mood.',
     },
   },
   {
@@ -791,28 +791,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Anxiety-Glitch Catharsis Comedy',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Anxiety-Glitch Catharsis Comedy operates as a portable anime-lifestyle router: combine Anxiety Glitch Catharsis Comedy identity cues through Mode switching; panic inserts; glitch texture; awkward microacting; collapse/release contrast; and cathartic color bursts with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Stable anime contours are interrupted by small broken segments and offset color edges; graphic disregistration sits on the surface rather than replacing the form.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve identity, anatomy, expression, and count; confine offsets to the same silhouette so they never read as another pose or duplicate subject.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Pair quiet base values with abrupt saturated patches attached to existing shapes; keep the requested palette and contrast.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use clean flat shadows and hard-edged color blocks; follow the given light without adding a burst.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Add sparse pixel-like breaks and misregistered pigment edges over smooth fills; preserve the surface material beneath them.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Keep the supplied crop, viewpoint, scale, layout, and count; vary edge density locally without creating panels, insets, or objects.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Retain the requested emotional state; graphic interruptions are a drawing treatment, not an instruction to prescribe a new emotion.',
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Keep the base drawing clean and readable beneath controlled edge breaks; avoid marks resembling text, interface elements, or watermarks.',
       key_features:
-        'Mode switching; panic inserts; glitch texture; awkward microacting; collapse/release contrast; and cathartic color bursts',
+        'Broken contour segments; slight color registration offsets; sparse pixel-like marks; saturated patches against stable base values.',
       creative_brief:
-        'Use Anxiety-Glitch Catharsis Comedy after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Mode switching, panic inserts, glitch texture, awkward microacting, collapse/release contrast, and cathartic color bursts, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Layer controlled misregistration over a legible drawing, keeping each offset attached to an existing form. Preserve subject, action, count, camera, and mood; add no text or props.',
     },
   },
   {
@@ -820,28 +820,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Soft-Surreal Deadpan Drift',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Soft-Surreal Deadpan Drift operates as a portable anime-lifestyle router: combine Soft Surreal Deadpan Drift identity cues through Deadpan reactions; calm baseline; soft surreal inserts; understated timing; gentle deformation; and everyday continuity with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Smooth ink contours drift by a fraction at selected edges, while main forms and shadow masses remain calm, complete, and legible.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        "Keep the user's exact forms, anatomy, pose, and count; allow a slight edge echo without warping proportions or duplicating a shape.",
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        "Use quiet middle values with a narrow cool or warm tint at the edges; honor the prompt's colors and avoid automatic desaturation.",
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Keep light direction stable and shadows soft-edged; edge echoes must not read as a second light source or reflected object.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Use smooth matte fills with a few irregular boundary marks; do not apply the same distortion across every surface.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Maintain framing, viewpoint, scale, and spacing; make slight dislocation a contour event, not a camera or layout change.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Preserve the requested emotion; quiet line drift may feel unusual without forcing deadpan humor or surreal content.',
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Keep silhouettes and focal details crisp; use small controlled edge variation against otherwise stable drawing.',
       key_features:
-        'Deadpan reactions; calm baseline; soft surreal inserts; understated timing; gentle deformation; and everyday continuity',
+        'Calm continuous silhouettes; slight contour drift; soft shadow edges; localized boundary irregularity; stable interior forms.',
       creative_brief:
-        'Use Soft-Surreal Deadpan Drift after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Deadpan reactions, calm baseline, soft surreal inserts, understated timing, gentle deformation, and everyday continuity, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Introduce restrained contour drift while leaving shapes intact and readable. Keep subject, action, count, camera, and mood from the prompt; add no surreal object or duplicate.',
     },
   },
   {
@@ -849,28 +849,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Horizon-Forward Youth Momentum',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Horizon-Forward Youth Momentum operates as a portable anime-lifestyle router: combine Horizon Forward Youth Momentum identity cues through Sky heavy optimism; forward motion; practical readiness; friendship momentum; bright horizon expansion; and sincere courage with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Tapered contours and broad clean gradients give existing forms forward visual direction, with bright edge accents following supplied pose or motion.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through rounded shape language, micro-expression timing, soft body or object posture, simple costume/surface detail, and charm through small repeated gestures; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve identity, body proportions, action, and count; direct line accents along movement already shown without changing the gesture.',
       color_and_tone:
-        'Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Use clear high values and a limited bright accent against cooler or neutral mids; follow the requested hues.',
       lighting_and_shadow:
-        'Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim, and flat comedy brightness; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Keep the stated light direction and place crisp highlights on existing edges; use smooth gradients without adding sunbeams.',
       texture_and_material:
-        'Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Keep surfaces clean with a few long brushlike strokes aligned to existing contours; add no atmospheric scenery.',
       camera_and_composition:
-        'Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational crops, and comfort-scale depth without required school setting as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Preserve framing, perspective, scale, and count; create momentum inside the original composition without changing crop or viewpoint.',
       atmosphere_and_mood:
-        'Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph, awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Retain the requested mood; directional energy does not set the emotional tone.',
       rendering_and_quality:
-        'Finish with soft high readability anime finish with stable proportions, gentle denoise, clean pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Keep gradients broad and controlled, contour ends sharp, and focal forms distinct from surrounding planes.',
       key_features:
-        'Sky heavy optimism; forward motion; practical readiness; friendship momentum; bright horizon expansion; and sincere courage',
+        'Tapered directional contours; broad clean gradients; crisp edge accents; bright value openings; motion aligned to existing forms.',
       creative_brief:
-        'Use Horizon-Forward Youth Momentum after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Sky heavy optimism, forward motion, practical readiness, friendship momentum, bright horizon expansion, and sincere courage, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Let directional linework and clear gradients follow movement already in the prompt. Preserve subject, action, count, camera, and mood; add no new motion or narrative beat.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

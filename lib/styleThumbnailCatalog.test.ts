@@ -37,15 +37,17 @@ describe('styleThumbnailCatalog', () => {
     expect(getStyleThumbnail('SP05-001')).toBeTruthy();
   });
 
-  it('appends a labeled Grok provider variant without occupying a numeric slot', () => {
+  it('places the previous default after the other image variants', () => {
     const catalog: Record<string, string> = {
       'SP99-001-01': '/thumbs/SP99-001-01.webp',
       'SP99-001-grok': '/thumbs/SP99-001-grok.webp',
+      'SP99-001-previous': '/thumbs/SP99-001-previous.webp',
     };
 
     expect(resolveStyleDefaultImageVariantThumbnails('SP99-001', (key) => catalog[key])).toEqual([
       { src: '/thumbs/SP99-001-01.webp', label: 'Variant 1' },
       { src: '/thumbs/SP99-001-grok.webp', label: 'Grok' },
+      { src: '/thumbs/SP99-001-previous.webp', label: 'Previous GPT Image' },
     ]);
   });
 });

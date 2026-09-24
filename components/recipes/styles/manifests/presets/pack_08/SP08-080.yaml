@@ -13,71 +13,38 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: >-
-    Shadow Form operates as a portable fashion-costume router: combine Shadow-form materiality,
-    void-edge mystery, darkness-as-surface presence with speculative costume logic with armor, suit
-    engineering, magical garment behavior, alien proportion, and character-readability design, so
-    the preset supplies styling behavior rather than a fixed outfit card, required wearer, or
-    literal garment sample.
+    Shadow couture treats cloth as light-absorbing dark material with soft smoke-like edges
+    and selective rim separation; the wearer remains a person, not a void-creature.
   subject_treatment: >-
-    Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak,
-    illuminate, conceal, mutate, modularize, ritualize, or engineer through Blurry, undefined-edge
-    silhouette, smoke-like boundary, absence-contour, negative-space shape; identity stays readable
-    as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into
-    this preset.
+    Restyle clothing as layered near-black fabric with softly fading hems and a clear
+    silhouette. Preserve face, anatomy, pose and role; do not dissolve the wearer into smoke
+    or alter species.
   color_and_tone: >-
-    Map color through speculative material color, neon accents, abyssal values, royal metals,
-    survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents
-    intentional, material color believable, and palette behavior attached to the subject instead of
-    pasted wardrobe decoration.
+    Build depth from near-black values and sparse edge highlights, while retaining any
+    explicitly requested color accents and enough contrast for recognition.
   lighting_and_shadow: >-
-    Use Minimal rim separation, light-absence void, negative-fill darkness,
-    silhouette-against-light, rim-light-only edge plus rim light, emissive channels, occult glow,
-    reflective armor, survival dust, void shadow, or sci-fi display light as the styling light
-    contract, revealing cut, drape, surface response, trim, transparency, or armor structure without
-    erasing prompt readability.
+    Follow the prompt's light, using restrained rim separation to distinguish fabric from
+    its surroundings. Do not extinguish the entire scene or add a new light source.
   texture_and_material: >-
-    Render Darkness, light-absorbent void, shadow-cast density, absence-of-matter, velvety-black,
-    depth-without-surface plus armor plates, spandex, robes, leather, rubber, chrome, biotic
-    surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers,
-    shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the
-    whole prompt.
+    Suggest velvety light absorption, matte folds and smoke-soft garment edges through
+    surface treatment; smoke remains a visual edge effect, not a prop or body.
   camera_and_composition: >-
-    Compose with shadow-form materiality: light-absorbing void, velvety black depth, rim edge,
-    smoke-edge texture, silhouette contour and absence as surface plus character-design readability,
-    suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus as
-    reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action,
-    and abstract prompts to inherit styling without one required pose.
+    Preserve requested crop, viewpoint and pose. Keep the subject's contour legible against
+    the actual background, without forcing a silhouette-only composition.
   atmosphere_and_mood: >-
-    Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth,
-    spectacle, or mythic futurism; the tone should feel specific to Shadow Form while still obeying
-    the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+    Create quiet, otherworldly gravity through negative space and low sheen, without
+    assigning a ghost, monster or supernatural role.
   rendering_and_quality: >-
-    Finish with believable costume engineering, clean edge logic, strong silhouette, readable
-    material physics, and no generic cosplay blur; prioritize clean style recognition, believable
-    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
-    accidental UI.
+    Balance soft outer edges with readable seams and folds. Retain face and garment
+    structure instead of collapsing the subject into a featureless black shape.
   key_features: >-
-    Shadow-form materiality, void-edge mystery, darkness-as-surface presence; Blurry, undefined-edge
-    silhouette, smoke-like boundary, absence-contour, negative-space shape; Darkness,
-    light-absorbent void, shadow-cast density, absence-of-matter, velvety-black,
-    depth-without-surface; Minimal rim separation, light-absence void, negative-fill darkness,
-    silhouette-against-light, rim-light-only edge; shadow-form materiality: light-absorbing void,
-    velvety black depth, rim edge, smoke-edge texture, silhouette contour and absence as surface
+    Light-absorbing near-black cloth; smoke-soft garment edges; selective rim separation;
+    legible negative-space silhouette.
   creative_brief: >-
-    Use Shadow Form after prompt X as a transferable fashion/costume layer: prompt X supplies
-    subject, motion, setting, tone, and intensity, while the preset supplies Shadow-form
-    materiality, void-edge mystery, darkness-as-surface presence, Blurry, undefined-edge silhouette,
-    smoke-like boundary, absence-contour, negative-space shape, Darkness, light-absorbent void,
-    shadow-cast density, absence-of-matter, velvety-black, depth-without-surface, Minimal rim
-    separation, light-absence void, negative-fill darkness, silhouette-against-light, rim-light-only
-    edge, shadow-form materiality: light-absorbing void, velvety black depth, rim edge, smoke-edge
-    texture, silhouette contour and absence as surface plus paneling, harnesses, armor modules, robe
-    systems, implant seams, luminous channels, survival layers, and invented fastenings, palette
-    behavior, light response, material treatment, silhouette grammar, and finish discipline without
-    requiring one body type, fixed outfit, venue, prop bundle, or card composition.
+    Transform the requested wardrobe into shadow couture using velvety dark fabric,
+    soft-edged hems and restrained rim detail. Preserve identity, anatomy, pose, role, scene
+    and framing; do not create a ghost, smoke-body, void or new setting.
 avoidRules:
-  - bright cheerful lighting
-  - fully illuminated surface
   - generic cosplay
   - plastic toy armor
   - muddy fantasy outfit
@@ -88,13 +55,15 @@ avoidRules:
   - muddy fabric noise
   - watermark
   - readable text
+  - featureless wearer
+  - body dissolved into smoke
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-080.webp
 attributes:
   negativePrompt: >-
-    bright cheerful lighting, fully illuminated surface, generic cosplay, plastic toy armor, muddy
-    fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog,
-    muddy fabric noise, watermark, readable text
+    generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body
+    type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
+    readable text, featureless wearer, body dissolved into smoke
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

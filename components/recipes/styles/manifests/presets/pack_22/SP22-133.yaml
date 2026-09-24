@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP22-133
+packId: pack_22
+name: Classic Creature Contour
+category: 5. Character & Readable Forms
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - character-and-readable-forms
+  - clear-line-soft-volume
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Clear-lined illustration pairs a continuous silhouette with restrained soft volume. The exterior
+    contour carries more weight than the interior marks, keeping the form distinct without excess detail.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Keep existing features recognizable;
+    do not add eyes, limbs or character traits to inanimate subjects.
+  color_and_tone: >-
+    Prioritize the requested local colors and use a small, soft shadow range. Preserve color relationships
+    and avoid letting shading replace the subject's actual palette.
+  lighting_and_shadow: >-
+    Follow the requested light direction and contrast. Keep shading soft and contained within forms
+    without adding a new source or unsupported highlights.
+  texture_and_material: >-
+    Keep surfaces clean and use small marks selectively. Preserve represented materials instead of
+    replacing them with a generic illustration texture.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and element placement. Clear contours do not require
+    a specimen pose or a changed arrangement.
+  atmosphere_and_mood: >-
+    Keep the requested tone and setting. A character-oriented contour style does not anthropomorphize
+    objects or add a narrative.
+  rendering_and_quality: >-
+    Use a heavier outer contour and lighter interior lines, with soft volume kept subordinate to shape.
+    Preserve a continuous silhouette and avoid uniform line weight.
+avoidRules:
+  - unrequested anthropomorphic features
+  - uniformly heavy interior linework
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-133.webp
+attributes:
+  negativePrompt: unrequested anthropomorphic features, uniformly heavy interior linework
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: drawing
+    avoidRules:
+      - text: unrequested anthropomorphic features
+        field: subject_treatment
+      - text: uniformly heavy interior linework
+        field: rendering_and_quality
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S033
+    sourceTitle: Classic Creature Contour
+    referenceIds:
+      - S43
+      - S07
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: character-and-readable-forms
+  categoryName: 5. Character & Readable Forms
+  tags:
+    - trading-card-illustration
+    - character-and-readable-forms
+    - clear-line-soft-volume
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

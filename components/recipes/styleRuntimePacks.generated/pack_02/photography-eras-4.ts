@@ -351,4 +351,34 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply Pinhole Camera as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Pinhole Camera historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts without requiring the card image's original subject.",
     },
   },
+  {
+    id: 'SP02-129',
+    name: 'Silver Plate Tonality',
+    category: '4. Photography Eras',
+    negativePrompt:
+      'unrequested period wardrobe or props, historical setting or scenery added without request, portrait sitter pose added without request, forced portrait or square crop, decorative mount, frame or border, vignette, double exposure or motion ghosting, sepia tint, blanket scratches, dust or plate damage, invented text, watermark or logo',
+    style: {
+      aesthetic:
+        'Apply a silver-plate photographic response to the requested image: neutral monochrome values, mirror-bright highlights and dense but legible shadows. Treat the process as image rendering, not as a historical scene or physical photographic object.',
+      subject_treatment:
+        'Preserve the requested subject, identity, anatomy, clothing, pose, action and objects. Render their existing forms through the photographic response without recasting them or adding props.',
+      color_and_tone:
+        'Translate the image into a neutral silver grayscale with distinct highlights, midtones and deep shadows. Do not add sepia, a color cast or a new accent.',
+      lighting_and_shadow:
+        'Preserve the requested light source, direction and time of day. Shape exposure with controlled reflective highlights and readable shadow detail; do not introduce a flash, studio light or long-exposure blur.',
+      texture_and_material:
+        'Keep surfaces photographic and mostly smooth. Add only a restrained, localized bloom around existing bright highlights; do not depict a metal plate, copper backing, scratches, dust or a blanket damage overlay.',
+      camera_and_composition:
+        'Preserve the requested camera, lens perspective, framing, crop, subject scale and spatial arrangement. Do not add a vignette, double exposure, decorative mount or border.',
+      atmosphere_and_mood:
+        'Preserve the requested mood and setting. Let the restrained tonal range carry the process character without adding period clothing, props, architecture or archival narrative.',
+      rendering_and_quality:
+        'Keep photographic detail legible with smooth tonal transitions, crisp subject edges and selective silver highlights. Avoid a generic vintage filter and retain any explicitly requested text as legible text.',
+    },
+    ui: {
+      kind: 'modifier',
+      derivedFrom: ['SP02-046'],
+      visualEvaluation: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

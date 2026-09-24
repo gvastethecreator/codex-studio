@@ -16,74 +16,32 @@ tags:
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: >-
-    The Twelve Kingdoms - Imperial Destiny Chronicle acts as a transferable anime-battle/worlds
-    router: The Twelve Kingdoms - Imperial Destiny Chronicle, jade-cinnabar ritual authority style
-    grammar with solemn vertical protocol, court textile geometry, and ceremonial calm; combine it
-    with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture,
-    luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage
-    words may guide style, but they must not require canon cast, title-scene replication,
-    screenshots, logos, or one fixed card concept.
+    Formal cel illustration shaped by tall visual rhythms, textile-inspired repeats, and carefully
+    balanced ornament.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply The
-    Twelve Kingdoms - Imperial Destiny Chronicle, jade-cinnabar ritual authority style grammar with
-    solemn vertical protocol, court textile geometry, and ceremonial calm as portable contour,
-    motion grammar, surface language, and emotional pressure without requiring canon elements or a
-    default action setup.
+    Keep the requested subject and gesture; use measured outlines and repeating internal marks
+    without adding ceremonial dress.
   color_and_tone: >-
-    Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens,
-    parchment neutrals, magical violets, and controlled pastel or dark contrast; let The Twelve
-    Kingdoms - Imperial Destiny Chronicle, jade-cinnabar ritual authority style grammar with solemn
-    vertical protocol, court textile geometry, and ceremonial calm choose accent intensity, value
-    contrast, emotional temperature, and power-system separation while staying attached to prompt X.
+    Muted indigo, parchment, and restrained cinnabar or gold create composed contrast; honor
+    specified colors.
   lighting_and_shadow: >-
-    Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and
-    clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from The Twelve Kingdoms - Imperial Destiny Chronicle, jade-cinnabar
-    ritual authority style grammar with solemn vertical protocol, court textile geometry, and
-    ceremonial calm without replacing prompt X with a stock anime frame.
+    Even, deliberate light reveals the main planes; small highlights keep ornamental details clear.
   texture_and_material: >-
-    Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel
-    glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in The
-    Twelve Kingdoms - Imperial Destiny Chronicle, jade-cinnabar ritual authority style grammar with
-    solemn vertical protocol, court textile geometry, and ceremonial calm controlled, denoised, and
-    coherent across bodies, objects, environments, abstractions, and action.
+    Fine repeated strokes and restrained fabric-like texture function as surface treatment, not as a
+    material change.
   camera_and_composition: >-
-    Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed
-    cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook
-    scale; convert The Twelve Kingdoms - Imperial Destiny Chronicle, jade-cinnabar ritual authority
-    style grammar with solemn vertical protocol, court textile geometry, and ceremonial calm into
-    reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one
-    fixed style sample layout.
+    Preserve the requested framing; use vertical spacing and visual symmetry without adding a court
+    or formal scene.
   atmosphere_and_mood: >-
-    Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional
-    craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic,
-    comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while
-    keeping the anime-battle lineage readable.
+    Solemn and poised, with no imposed ritual or destiny.
   rendering_and_quality: >-
-    Finish with clean fantasy-anime finish with stable anatomy and creature/object structure,
-    controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize
-    stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy
-    darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+    Keep ornament sparse, edge control clean, and detail scale consistent across the image.
   key_features: >-
-    The Twelve Kingdoms - Imperial Destiny Chronicle, jade-cinnabar ritual authority style grammar
-    with solemn vertical protocol, court textile geometry, and ceremonial calm; clear fantasy
-    silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and
-    portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture,
-    stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path
-    diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues,
-    symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish
-    with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic
-    text, and no generic isekai gloss
+    Tall rhythm, textile-like line repeats, measured symmetry, and composed color give the cel work
+    a formal calm.
   creative_brief: >-
-    Apply The Twelve Kingdoms - Imperial Destiny Chronicle after prompt X as a transferable
-    anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity,
-    while this preset supplies The Twelve Kingdoms - Imperial Destiny Chronicle, jade-cinnabar
-    ritual authority style grammar with solemn vertical protocol, court textile geometry, and
-    ceremonial calm, isekai and high-fantasy anime grammar with magic-system readability,
-    quest-world texture, luminous adventure, and character-independent fantasy routing, finish
-    discipline, and negative controls without forcing canon cast, title scene, screenshot, card
-    pose, default monster, default combat prop, or prompt-literal card.
+    Give the requested content a tall, ornamental visual rhythm and controlled cel finish, without
+    court, costume, or ceremony.
 avoidRules:
   - realistic
   - 3d render
@@ -95,7 +53,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - named franchise likeness
   - imperial costume copy
@@ -111,7 +68,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -119,10 +75,10 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, named franchise likeness, imperial costume copy,
-    throne-room lock, weapon, readable insignia, RPG UI, readable magic text, generic isekai
-    wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, readable text, logo, muddy noisy darks
+    artifacts, watermark, signature, named franchise likeness, imperial costume copy, throne-room
+    lock, weapon, readable insignia, RPG UI, readable magic text, generic isekai wallpaper, fixed
+    canon character, title scene replication, required source-frame look, cosplay, generic anime
+    filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -42,10 +42,10 @@ avoidRules:
   - uniform-width outlines
   - redundant tracing contours
   - unrequested facial exaggeration
-assets: {}
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP19-002.webp
 attributes:
   negativePrompt: uniform-width outlines, redundant tracing contours, unrequested facial exaggeration
-  previewStatus: pending
   intentionalPolicy:
     schemaVersion: 1
     kind: full_style
@@ -71,7 +71,6 @@ attributes:
       - text: unrequested facial exaggeration
         field: rendering_and_quality
   ui:
-    previewStatus: pending
     kind: full_style
     derivedFrom:
       - SP06-018
@@ -90,4 +89,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

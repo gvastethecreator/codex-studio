@@ -1,0 +1,100 @@
+schemaVersion: 1
+id: SP22-150
+packId: pack_22
+name: Screen-Tone Manga
+category: 7. Manga Ink & Impact
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - manga-ink-and-impact
+  - screen-tone-ink
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Clean manga linework and deliberately placed halftone fields shape the subject through a small number
+    of crisp, readable tonal steps.
+  subject_treatment: >-
+    Preserve the requested identity, pose and action. Use tonal patches to clarify existing planes and
+    features without redesigning or adding marks to the subject.
+  color_and_tone: >-
+    Preserve the requested palette while grouping values into a restrained hierarchy; use halftone within
+    those color families rather than replacing them with an imposed monochrome palette.
+  lighting_and_shadow: >-
+    Follow the requested light direction and reserve halftone for its corresponding shadow planes; avoid
+    decorative tone fields that contradict the stated lighting.
+  texture_and_material: >-
+    Use an even, intentional screen pattern with spacing large enough to remain distinct at final size.
+    Keep dot texture local to tonal areas rather than adding general grain.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop and element placement. Tone placement follows the existing
+    forms and does not create panels or a new layout.
+  atmosphere_and_mood: >-
+    Retain the requested mood and setting; let the crisp tonal rhythm support them without adding a
+    vignette or narrative device.
+  rendering_and_quality: >-
+    Combine a clean contour, solid shadow shapes and legible halftone areas; keep pattern frequency
+    controlled to avoid moiré and preserve small-scale readability.
+avoidRules:
+  - moiré or dots too small to read
+  - unrequested panels or vignettes
+  - extra details that alter identity or function
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-150.webp
+attributes:
+  negativePrompt: moiré or dots too small to read, unrequested panels or vignettes, extra details that alter identity or function
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: drawing
+    avoidRules:
+      - text: moiré or dots too small to read
+        field: texture_and_material
+      - text: unrequested panels or vignettes
+        field: camera_and_composition
+      - text: extra details that alter identity or function
+        field: subject_treatment
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S050
+    sourceTitle: Screen-Tone Manga
+    referenceIds:
+      - S24
+      - S32
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: manga-ink-and-impact
+  categoryName: 7. Manga Ink & Impact
+  tags:
+    - trading-card-illustration
+    - manga-ink-and-impact
+    - screen-tone-ink
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

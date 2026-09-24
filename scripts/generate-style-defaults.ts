@@ -1,5 +1,5 @@
 import { Database } from 'bun:sqlite';
-import { mkdir, readFile, rm, stat, writeFile } from 'node:fs/promises';
+import { lstat, mkdir, open, readFile, rm, stat, unlink, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import type { Asset, Job } from '../packages/shared/src';
 import { resolveLibraryPathFromRoot } from '../apps/local-server/src/library';
@@ -18,6 +18,7 @@ import {
 import {
   RECIPE_ASSET_EXTENSION,
   IMAGEGEN_DENOISE_SUFFIX,
+  HttpStatusError,
   appendImagegenDenoiseDirective,
   defaultCodexHome,
   defaultStudioLibraryDir,
@@ -27,6 +28,8 @@ import {
   rootDir,
   request,
   removeStyleDefaultFailuresForPreset,
+  preserveReviewedChatgptLock,
+  preservePreviousStyleDefault,
   sanitizeStylePromptName,
   sanitizeCategory,
   styleCategoryImageKey,
@@ -35,6 +38,7 @@ import {
 } from './style-default-utils';
 import { Effect } from 'effect';
 import { pollWithScriptTimeout, sleepWithEffect } from './runtimePolicy';
+import { legacyCardBrief } from './style-curation/legacy-card-briefs';
 
 interface PendingPreset {
   pack: StyleRuntimePack;
@@ -44,7 +48,7 @@ interface PendingPreset {
   variantSlot?: number;
 }
 
-type StyleCardProvider = 'codex' | 'grok';
+type StyleCardProvider = 'codex' | 'chatgpt' | 'grok';
 
 const IMAGEGEN_MODEL = process.env.CODEX_IMAGEGEN_MODEL || 'gpt-5.4-mini';
 const IMAGEGEN_REASONING_EFFORT = process.env.CODEX_IMAGEGEN_REASONING_EFFORT || 'low';
@@ -9577,6 +9581,42 @@ function buildProviderStylePrompt(
   variantSlot: number | undefined,
   provider: StyleCardProvider,
 ) {
+  if (provider === 'chatgpt') {
+    const cardBrief =
+      chatgptCardBriefs[preset.id]?.trim() ||
+      (refreshLegacy || (replaceReviewed && /^pack_(?:0[1-9]|1[0-7])$/.test(pack.id))
+        ? legacyCardBrief(pack, preset)
+        : '');
+    if (!cardBrief) {
+      throw new Error(`Missing representative card brief for ${preset.id} in card-briefs.json.`);
+    }
+    const fields = [
+      ['Aesthetic', preset.style.aesthetic],
+      ['Subject treatment', preset.style.subject_treatment],
+      ['Color and tone', preset.style.color_and_tone],
+      ['Lighting and shadow', preset.style.lighting_and_shadow],
+      ['Texture and material', preset.style.texture_and_material],
+      ['Camera and composition', preset.style.camera_and_composition],
+      ['Atmosphere and mood', preset.style.atmosphere_and_mood],
+      ['Rendering and quality', preset.style.rendering_and_quality],
+    ];
+    return [
+      `Create one portrait 3:4 style-preview image. Preview brief: ${cardBrief} This subject and composition are only for this card; they are not part of the reusable style definition.`,
+      pack.id === 'pack_14' || pack.id === 'pack_15'
+        ? 'Render the complete scene as a finished two-dimensional ink, paint, gouache or print illustration. Let deliberate drawn contours, pigment planes and the culture or X-punk-specific design language carry the image. Do not render it as a live-action photograph, cinematic still, glossy CGI or a photographed costume or product.'
+        : '',
+      'Apply the visual language below to the sample. Express technique through line, value, color, light, texture and finish. Do not add a scene, character, prop, symbol, text or narrative just because it appears in a style label or source reference.',
+      'Use only original subjects. If the style references a creator, franchise, or era, transfer its visual techniques without reproducing recognizable characters, costumes, props, or scene compositions.',
+      pack.id === 'pack_22' || pack.id === 'pack_23'
+        ? 'Make the specified rendering technique unmistakable at thumbnail size. This is an authored style illustration, not a plain photograph documenting the sample object. Show the requested drawing, painting, print, raster or crafted visual language through visible marks, edges, planes, relief or texture, even when the depicted subject is ordinary. Preserve the subject and its real material instead of turning it into a toy or unrelated craft object. For a localized modifier, keep the effect visibly confined to the requested material or accent.'
+        : '',
+      ...fields.map(([label, value]) => `${label}: ${value}`),
+      preset.negativePrompt ? `Avoid: ${preset.negativePrompt}` : '',
+      'Return only the image. Keep the sample subject recognizable and the full image readable at card size.',
+    ]
+      .filter(Boolean)
+      .join('\n\n');
+  }
   const prompt = buildStylePrompt(pack, preset, attempt, activeSessionSuffix, variantSlot);
   if (provider === 'codex') return prompt;
 
@@ -9652,6 +9692,37 @@ function readJobStatusFromSqlite(jobId: string) {
   }
 }
 
+function readPriorChatgptCardJobs(workspaceId: string) {
+  const db = new Database(studioDbPath, { readonly: true });
+  try {
+    const rows = db
+      .query(
+        `SELECT id, status, source_spec_json AS sourceSpecJson
+          FROM jobs
+          WHERE provider_id = 'chatgpt' AND kind = 'style_preset_card'
+            AND workspace_id = ?
+          ORDER BY created_at ASC, id ASC`,
+      )
+      .all(workspaceId) as Array<{ id: string; status: string; sourceSpecJson: string | null }>;
+    const byPreset = new Map<string, { id: string; status: string }>();
+    for (const row of rows) {
+      try {
+        const spec = JSON.parse(row.sourceSpecJson ?? 'null') as { stylePresetId?: string } | null;
+        if (typeof spec?.stylePresetId === 'string') {
+          byPreset.set(spec.stylePresetId, { id: row.id, status: row.status });
+        } else {
+          throw new Error(`ChatGPT style-card job ${row.id} has no identifiable preset.`);
+        }
+      } catch {
+        throw new Error(`Cannot safely identify the preset for ChatGPT style-card job ${row.id}.`);
+      }
+    }
+    return byPreset;
+  } finally {
+    db.close(false);
+  }
+}
+
 function readAssetForJobFromSqlite(jobId: string) {
   try {
     const db = new Database(studioDbPath, { readonly: true });
@@ -9673,6 +9744,15 @@ function readAssetForJobFromSqlite(jobId: string) {
     }
   } catch {
     return null;
+  }
+}
+
+function hasAnyAssetForJobFromSqlite(jobId: string) {
+  const db = new Database(studioDbPath, { readonly: true });
+  try {
+    return Boolean(db.query('SELECT 1 AS found FROM assets WHERE job_id = ? LIMIT 1').get(jobId));
+  } finally {
+    db.close(false);
   }
 }
 
@@ -9827,6 +9907,10 @@ function argValue(name: string) {
   return process.argv.find((arg) => arg.startsWith(`--${name}=`))?.split('=')[1];
 }
 
+function hasOption(name: string) {
+  return process.argv.some((arg) => arg === `--${name}` || arg.startsWith(`--${name}=`));
+}
+
 const limitArg = argValue('limit');
 const limit = limitArg ? Number(limitArg) : Number.POSITIVE_INFINITY;
 const failureLimitArg = argValue('failure-limit');
@@ -9835,11 +9919,73 @@ const packFilter = argValue('pack');
 const sessionSuffix = argValue('session-suffix');
 const categoryFilterArg = argValue('category');
 const presetFilterArg = argValue('preset');
-const providerArg = argValue('provider') ?? 'codex';
+const providerArg = argValue('provider');
+if (!providerArg) {
+  throw new Error(
+    'Specify --provider=chatgpt, --provider=codex or --provider=grok explicitly; no provider runs by default.',
+  );
+}
+const workspaceId = argValue('workspace-id') ?? 'default';
 const variantSlotArg = argValue('variant-slot');
 const variantSlotsArg = argValue('variant-slots');
 const variantCountArg = argValue('variant-count');
 const retryFailures = process.argv.includes('--retry-failures');
+const reviewedReplacementsFile = argValue('reviewed-replacements-file');
+const reviewedUncertainJobsFile = argValue('reviewed-uncertain-jobs-file');
+if (hasOption('reviewed-replacements-file') && !reviewedReplacementsFile?.trim()) {
+  throw new Error('--reviewed-replacements-file requires a JSON file path.');
+}
+if (hasOption('reviewed-uncertain-jobs-file') && !reviewedUncertainJobsFile?.trim()) {
+  throw new Error('--reviewed-uncertain-jobs-file requires a JSON file path.');
+}
+const replaceReviewed =
+  process.argv.includes('--replace-reviewed') || Boolean(reviewedReplacementsFile);
+const refreshLegacy = process.argv.includes('--refresh-legacy');
+const reviewedJobId = argValue('reviewed-job-id');
+const reviewedReplacementJobs = new Map<string, string>();
+if (reviewedReplacementsFile) {
+  const parsed = JSON.parse(
+    await readFile(path.resolve(reviewedReplacementsFile), 'utf8'),
+  ) as unknown;
+  if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
+    throw new Error('--reviewed-replacements-file must contain a preset-to-completed-job object.');
+  }
+  for (const [presetId, jobId] of Object.entries(parsed)) {
+    if (
+      !/^SP\d{2}-\d{3}$/.test(presetId) ||
+      typeof jobId !== 'string' ||
+      !/^[0-9a-f-]{36}$/i.test(jobId)
+    ) {
+      throw new Error(`Invalid reviewed replacement entry for ${presetId}.`);
+    }
+    reviewedReplacementJobs.set(presetId, jobId);
+  }
+  if (reviewedReplacementJobs.size === 0) throw new Error('Reviewed replacement file is empty.');
+}
+const reviewedUncertainJobs = new Map<string, string>();
+if (reviewedUncertainJobsFile) {
+  const parsed = JSON.parse(
+    await readFile(path.resolve(reviewedUncertainJobsFile), 'utf8'),
+  ) as unknown;
+  if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
+    throw new Error(
+      '--reviewed-uncertain-jobs-file must contain a preset-to-needs_review-job object.',
+    );
+  }
+  for (const [presetId, jobId] of Object.entries(parsed)) {
+    if (
+      !/^SP\d{2}-\d{3}$/.test(presetId) ||
+      typeof jobId !== 'string' ||
+      !/^[0-9a-f-]{36}$/i.test(jobId)
+    ) {
+      throw new Error(`Invalid reviewed uncertain job entry for ${presetId}.`);
+    }
+    reviewedUncertainJobs.set(presetId, jobId);
+  }
+  if (reviewedUncertainJobs.size === 0) {
+    throw new Error('Reviewed uncertain jobs file is empty.');
+  }
+}
 const printPrompts =
   process.argv.includes('--print-prompts') ||
   process.argv.includes('--dry-run-prompts') ||
@@ -9867,18 +10013,39 @@ const presetFilters = new Set(
     return trimmed ? [trimmed] : [];
   }),
 );
+if (reviewedReplacementsFile) {
+  if (presetFilterArg || reviewedJobId || limitArg) {
+    throw new Error(
+      '--reviewed-replacements-file cannot be combined with --preset, --reviewed-job-id or --limit.',
+    );
+  }
+  for (const presetId of reviewedReplacementJobs.keys()) presetFilters.add(presetId);
+}
+if (reviewedUncertainJobsFile) {
+  for (const presetId of reviewedUncertainJobs.keys()) presetFilters.add(presetId);
+}
 const force = process.argv.includes('--force');
 const parallel = Math.max(1, Number(argValue('parallel') || 1));
 const lockDir = path.join(defaultsDir, '.locks');
 const variantDefaultsDir = path.join(defaultsDir, 'variants');
 const providerDefaultsRoot = path.join(defaultsDir, 'providers');
 
+function reviewedUncertainLockEvidencePath(presetId: string, jobId: string) {
+  return path.join(lockDir, `${presetId}.${jobId}.reviewed.chatgpt.lock`);
+}
+
 function parseProvider(value: string): StyleCardProvider {
-  if (value === 'codex' || value === 'grok') return value;
-  throw new Error('--provider must be codex or grok');
+  if (value === 'codex' || value === 'chatgpt' || value === 'grok') return value;
+  throw new Error('--provider must be codex, chatgpt or grok');
 }
 
 const providerId = parseProvider(providerArg);
+const chatgptCardBriefs =
+  providerId === 'chatgpt'
+    ? (JSON.parse(
+        await readFile(path.join(rootDir, 'scripts', 'style-curation', 'card-briefs.json'), 'utf8'),
+      ) as Record<string, string>)
+    : {};
 const writesProviderVariants = providerId === 'grok';
 const providerDefaultsDir = path.join(providerDefaultsRoot, providerId);
 const activeOutputDir = writesProviderVariants ? providerDefaultsDir : defaultsDir;
@@ -9922,16 +10089,68 @@ const writesVariants = variantSlots.length > 0;
 if (writesProviderVariants && writesVariants) {
   throw new Error('Grok provider variants cannot be combined with numeric variant-slot flags.');
 }
+if (reviewedUncertainJobsFile) {
+  if (
+    providerId !== 'chatgpt' ||
+    !argValue('workspace-id') ||
+    hasOption('force') ||
+    hasOption('refresh-legacy') ||
+    hasOption('retry-failures') ||
+    hasOption('replace-reviewed') ||
+    hasOption('limit') ||
+    hasOption('failure-limit') ||
+    hasOption('preset') ||
+    hasOption('reviewed-job-id') ||
+    hasOption('reviewed-replacements-file') ||
+    hasOption('variant-slot') ||
+    hasOption('variant-slots') ||
+    hasOption('variant-count')
+  ) {
+    throw new Error(
+      'Reviewed uncertain jobs require ChatGPT and an explicit --workspace-id; do not combine this mode with preset, limit, force, refresh, replacement, retry or variant flags.',
+    );
+  }
+}
 if (writesProviderVariants && (force || retryFailures)) {
   throw new Error(
     'Grok provider variants do not allow --force or --retry-failures because a prior call may already be billable. Select only missing presets.',
+  );
+}
+if (providerId === 'chatgpt' && (force || retryFailures || writesVariants)) {
+  throw new Error(
+    'ChatGPT style cards use missing primary assets only; --force, --retry-failures and variant slots can resubmit an uncertain job.',
+  );
+}
+if (replaceReviewed) {
+  if (
+    providerId !== 'chatgpt' ||
+    (!reviewedReplacementsFile &&
+      (!presetFilterArg || presetFilterArg.includes('|') || !reviewedJobId)) ||
+    (reviewedReplacementsFile && process.argv.includes('--replace-reviewed'))
+  ) {
+    throw new Error(
+      'Reviewed replacement requires ChatGPT and either one --preset with --reviewed-job-id or --reviewed-replacements-file.',
+    );
+  }
+}
+if (
+  refreshLegacy &&
+  (providerId !== 'chatgpt' || replaceReviewed || force || retryFailures || writesVariants)
+) {
+  throw new Error(
+    '--refresh-legacy requires ChatGPT and cannot be combined with replacement, force, retry or variant flags.',
+  );
+}
+if (providerId === 'chatgpt' && !printPrompts && !argValue('workspace-id')) {
+  throw new Error(
+    'ChatGPT style cards require --workspace-id to keep results in the intended workspace.',
   );
 }
 
 await mkdir(defaultsDir, { recursive: true });
 if (writesVariants) await mkdir(variantDefaultsDir, { recursive: true });
 if (writesProviderVariants) await mkdir(providerDefaultsDir, { recursive: true });
-await mkdir(lockDir, { recursive: true });
+if (!printPrompts) await mkdir(lockDir, { recursive: true });
 
 const packs = (await loadPacks(packFilter || undefined)).filter(
   (pack) => !packFilter || pack.id === packFilter,
@@ -9967,7 +10186,8 @@ const resolvedPresetFilters = retryFailures
       limit: failureLimit,
     })
   : presetFilters;
-const effectiveForce = force || retryFailures;
+const effectiveForce =
+  force || retryFailures || replaceReviewed || refreshLegacy || Boolean(reviewedUncertainJobsFile);
 
 if (retryFailures) {
   console.log(
@@ -9978,6 +10198,7 @@ if (retryFailures) {
 }
 
 const existingDefaultFiles = new Set<string>();
+const refreshLegacyPresetIds = new Set<string>();
 function variantDestinationForPreset(presetId: string, slot: number) {
   return path.join(
     variantDefaultsDir,
@@ -10001,6 +10222,12 @@ for (const pack of packs) {
     }
 
     const destinationExists = await exists(destination);
+    if (refreshLegacy && destinationExists) {
+      const previous = manifestByPack.get(pack.id)?.get(preset.id);
+      // Some tracked legacy cards predate manifests. Preserve their bytes as an
+      // alternate and give the refreshed primary a current manifest entry.
+      if (previous?.providerId !== 'chatgpt') refreshLegacyPresetIds.add(preset.id);
+    }
     if (
       writesProviderVariants &&
       destinationExists &&
@@ -10024,12 +10251,35 @@ const plannedTargets = createStyleDefaultTargets({
   force: effectiveForce,
   categoryFilters,
   presetFilters: resolvedPresetFilters,
-  limit,
+  limit: refreshLegacy ? Number.POSITIVE_INFINITY : limit,
   defaultsDir: activeOutputDir,
   assetExtension: RECIPE_ASSET_EXTENSION,
 });
 
-for (const target of plannedTargets) {
+const eligibleTargets = refreshLegacy
+  ? plannedTargets.filter((target) => refreshLegacyPresetIds.has(target.preset.id)).slice(0, limit)
+  : plannedTargets;
+
+if (reviewedReplacementsFile) {
+  const selectedIds = new Set(eligibleTargets.map((target) => target.preset.id));
+  const missingIds = [...reviewedReplacementJobs.keys()].filter((id) => !selectedIds.has(id));
+  if (missingIds.length) {
+    throw new Error(
+      `Reviewed replacement presets are not selected by this catalog: ${missingIds.join(', ')}`,
+    );
+  }
+}
+if (reviewedUncertainJobsFile) {
+  const selectedIds = new Set(eligibleTargets.map((target) => target.preset.id));
+  const missingIds = [...reviewedUncertainJobs.keys()].filter((id) => !selectedIds.has(id));
+  if (missingIds.length) {
+    throw new Error(
+      `Reviewed uncertain job presets are not selected by this catalog: ${missingIds.join(', ')}`,
+    );
+  }
+}
+
+for (const target of eligibleTargets) {
   if (!writesVariants) {
     targetPresets.push(target);
     continue;
@@ -10083,38 +10333,170 @@ if (printPrompts) {
   process.exit(0);
 }
 
-const health = await request<{ ok: boolean }>('/api/health');
-if (!health.ok) throw new Error('Local studio server is not healthy.');
+const chatgptRunLockPath = providerId === 'chatgpt' ? path.join(lockDir, 'chatgpt-run.lock') : null;
+if (chatgptRunLockPath) {
+  try {
+    const runLock = await open(chatgptRunLockPath, 'wx');
+    await runLock.close();
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code !== 'EEXIST') throw error;
+    throw new Error(
+      'Another ChatGPT card-generation run is active; inspect it before starting a second run.',
+    );
+  }
+}
 
-const workspaceId = 'default';
+try {
+  const health = await request<{ ok: boolean }>('/api/health');
+  if (!health.ok) throw new Error('Local studio server is not healthy.');
+  const priorChatgptCardJobs =
+    providerId === 'chatgpt' ? readPriorChatgptCardJobs(workspaceId) : new Map();
 
-async function processPreset(target: PendingPreset) {
-  const { pack, preset, category, destination, variantSlot } = target;
-  const manifestByPreset = manifestByPack.get(pack.id);
-  if (!manifestByPreset) throw new Error(`Missing manifest map for pack ${pack.id}`);
-
-  const variantLabel = variantSlot
-    ? ` / variant-${String(variantSlot).padStart(2, '0')}`
-    : writesProviderVariants
-      ? ` / provider-${providerId}`
-      : '';
-  console.log(`[txt2img] ${preset.id}${variantLabel} ${pack.name} / ${category} / ${preset.name}`);
-  let lastError: string | null = null;
-  const totalAttempts = writesProviderVariants ? 1 : IMAGE_RETRY_ATTEMPTS + 1;
-
-  for (let attempt = 1; attempt <= totalAttempts; attempt += 1) {
-    try {
-      if (attempt > 1) {
-        console.log(
-          `[txt2img-retry] ${preset.id} ${pack.name} / ${category} / ${preset.name} (${attempt}/${IMAGE_RETRY_ATTEMPTS + 1})`,
+  if (reviewedReplacementsFile) {
+    for (const target of targetPresets) {
+      const id = target.preset.id;
+      const reviewedId = reviewedReplacementJobs.get(id);
+      const prior = priorChatgptCardJobs.get(id);
+      const recorded = manifestByPack.get(target.pack.id)?.get(id);
+      if (
+        !reviewedId ||
+        prior?.id !== reviewedId ||
+        prior.status !== 'completed' ||
+        recorded?.jobId !== reviewedId ||
+        recorded.providerId !== 'chatgpt' ||
+        !(await exists(target.destination))
+      ) {
+        throw new Error(
+          `${id}: reviewed replacement must match the latest completed ChatGPT job, manifest and existing card.`,
         );
       }
+    }
+  }
 
-      const created = await request<Job>('/api/jobs', {
-        method: 'POST',
-        body: JSON.stringify(
+  if (reviewedUncertainJobsFile) {
+    for (const target of targetPresets) {
+      const id = target.preset.id;
+      const reviewedId = reviewedUncertainJobs.get(id);
+      const prior = priorChatgptCardJobs.get(id);
+      if (!reviewedId || prior?.id !== reviewedId || prior.status !== 'needs_review') {
+        throw new Error(
+          `${id}: reviewed uncertain job must match the latest needs_review ChatGPT card job in workspace ${workspaceId}.`,
+        );
+      }
+      if (hasAnyAssetForJobFromSqlite(reviewedId)) {
+        throw new Error(
+          `${id}: reviewed uncertain job ${reviewedId} already has an associated asset.`,
+        );
+      }
+    }
+
+    for (const target of targetPresets) {
+      const reviewedId = reviewedUncertainJobs.get(target.preset.id)!;
+      const lockPath = path.join(lockDir, `${target.preset.id}.chatgpt.lock`);
+      const evidencePath = reviewedUncertainLockEvidencePath(target.preset.id, reviewedId);
+      const lockStat = await lstat(lockPath).catch((error) => {
+        if ((error as NodeJS.ErrnoException).code === 'ENOENT') return null;
+        throw error;
+      });
+      if (!lockStat?.isFile()) {
+        throw new Error(
+          `${target.preset.id}: reviewed uncertain job has no prior per-preset ChatGPT lock.`,
+        );
+      }
+      const evidenceStat = await lstat(evidencePath).catch((error) => {
+        if ((error as NodeJS.ErrnoException).code === 'ENOENT') return null;
+        throw error;
+      });
+      if (evidenceStat) {
+        throw new Error(
+          `${target.preset.id}: lock evidence already exists for reviewed job ${reviewedId}.`,
+        );
+      }
+    }
+  }
+
+  async function processPreset(target: PendingPreset) {
+    const { pack, preset, category, destination, variantSlot } = target;
+    const manifestByPreset = manifestByPack.get(pack.id);
+    if (!manifestByPreset) throw new Error(`Missing manifest map for pack ${pack.id}`);
+
+    const priorJob =
+      replaceReviewed || reviewedUncertainJobsFile
+        ? readPriorChatgptCardJobs(workspaceId).get(preset.id)
+        : priorChatgptCardJobs.get(preset.id);
+    const expectedReviewedJobId = reviewedReplacementsFile
+      ? reviewedReplacementJobs.get(preset.id)
+      : reviewedJobId;
+    if (
+      replaceReviewed &&
+      (!priorJob || priorJob.id !== expectedReviewedJobId || priorJob.status !== 'completed')
+    ) {
+      throw new Error(`${preset.id}: reviewed job must match a completed ChatGPT card job.`);
+    }
+    const reviewedUncertainJobId = reviewedUncertainJobs.get(preset.id);
+    if (
+      reviewedUncertainJobsFile &&
+      (!reviewedUncertainJobId ||
+        !priorJob ||
+        priorJob.id !== reviewedUncertainJobId ||
+        priorJob.status !== 'needs_review' ||
+        hasAnyAssetForJobFromSqlite(reviewedUncertainJobId))
+    ) {
+      throw new Error(`${preset.id}: reviewed uncertain job changed after preflight.`);
+    }
+    if (priorJob && !replaceReviewed && !reviewedUncertainJobsFile) {
+      skipped += 1;
+      console.warn(
+        `[txt2img-already-submitted] ${preset.id} job=${priorJob.id} status=${priorJob.status}; inspect it before another submission.`,
+      );
+      return;
+    }
+    const chatgptLockPath = path.join(lockDir, `${preset.id}.chatgpt.lock`);
+    if (providerId === 'chatgpt') {
+      if (reviewedUncertainJobId) {
+        await preserveReviewedChatgptLock(
+          chatgptLockPath,
+          reviewedUncertainLockEvidencePath(preset.id, reviewedUncertainJobId),
+        );
+      }
+      try {
+        const lock = await open(chatgptLockPath, 'wx');
+        await lock.close();
+      } catch (error) {
+        if ((error as NodeJS.ErrnoException).code !== 'EEXIST') throw error;
+        skipped += 1;
+        console.warn(
+          `[txt2img-already-locked] ${preset.id}; inspect the prior job before retrying.`,
+        );
+        return;
+      }
+    }
+
+    const variantLabel = variantSlot
+      ? ` / variant-${String(variantSlot).padStart(2, '0')}`
+      : writesProviderVariants
+        ? ` / provider-${providerId}`
+        : '';
+    console.log(
+      `[txt2img] ${preset.id}${variantLabel} ${pack.name} / ${category} / ${preset.name}`,
+    );
+    let lastError: string | null = null;
+    let requestSubmitted = false;
+    let intakeAccepted = false;
+    const totalAttempts =
+      providerId === 'chatgpt' || writesProviderVariants ? 1 : IMAGE_RETRY_ATTEMPTS + 1;
+
+    for (let attempt = 1; attempt <= totalAttempts; attempt += 1) {
+      try {
+        if (attempt > 1) {
+          console.log(
+            `[txt2img-retry] ${preset.id} ${pack.name} / ${category} / ${preset.name} (${attempt}/${IMAGE_RETRY_ATTEMPTS + 1})`,
+          );
+        }
+
+        const requestBody = JSON.stringify(
           createStyleDefaultJobRequest({
-            workspaceId: 'default',
+            workspaceId,
             providerId,
             presetId: preset.id,
             prompt: buildProviderStylePrompt(
@@ -10126,114 +10508,177 @@ async function processPreset(target: PendingPreset) {
               providerId,
             ),
           }),
-        ),
-      });
-
-      await waitForJob(created.id);
-      const asset = await newestAssetForJob(created.id);
-      if (!asset) throw new Error(`Completed job ${created.id} has no asset in /api/assets`);
-
-      await writeRepoWebpAsset(asset.filePath, destination, {
-        archive: !writesProviderVariants,
-      });
-      if (!writesProviderVariants) {
-        await cleanupExternalJobArtifacts(created.id, asset.filePath);
-      }
-      const repoFile = repoRelative(destination);
-      if (!variantSlot) {
-        manifestByPreset.set(
-          preset.id,
-          createStyleDefaultManifestEntry({
-            pack,
-            preset,
-            category,
-            file: repoFile,
-            jobId: created.id,
-            sourceAsset: repoFile,
-            providerId,
-            model:
-              created.execution?.model ??
-              (writesProviderVariants ? GROK_IMAGEGEN_MODEL : IMAGEGEN_MODEL),
-            reasoningEffort:
-              created.execution?.reasoningEffort ??
-              (writesProviderVariants ? GROK_IMAGEGEN_REASONING_EFFORT : IMAGEGEN_REASONING_EFFORT),
-            generatedAt: new Date().toISOString(),
-          }),
         );
-        await saveManifest(pack.id, Array.from(manifestByPreset.values()));
-      }
-      const previousFailures = failuresByPack.get(pack.id);
-      if (Array.isArray(previousFailures)) {
-        const unresolvedFailures = removeStyleDefaultFailuresForPreset(previousFailures, preset.id);
-        if (unresolvedFailures.length !== previousFailures.length) {
-          failuresByPack.set(pack.id, unresolvedFailures);
-          await saveFailures(pack.id, unresolvedFailures);
+        requestSubmitted = true;
+        const created = await request<Job>(
+          '/api/jobs',
+          {
+            method: 'POST',
+            body: requestBody,
+          },
+          providerId === 'chatgpt' ? { attempts: 1 } : undefined,
+        );
+        intakeAccepted = true;
+
+        await waitForJob(created.id);
+        const asset = await newestAssetForJob(created.id);
+        if (!asset) throw new Error(`Completed job ${created.id} has no asset in /api/assets`);
+
+        if (
+          reviewedUncertainJobsFile &&
+          manifestByPreset.get(preset.id)?.providerId !== 'chatgpt' &&
+          (await exists(destination))
+        ) {
+          await preservePreviousStyleDefault(
+            destination,
+            path.join(providerDefaultsRoot, 'previous-gpt-image', path.basename(destination)),
+          );
         }
-      }
-      generated += 1;
-      lastError = null;
-      return;
-    } catch (error) {
-      const message = error instanceof Error ? error.message : String(error);
-      lastError = message;
+        if (refreshLegacy) {
+          await preservePreviousStyleDefault(
+            destination,
+            path.join(providerDefaultsRoot, 'previous-gpt-image', path.basename(destination)),
+          );
+        }
+        await writeRepoWebpAsset(asset.filePath, destination, {
+          archive:
+            providerId === 'codex' ||
+            replaceReviewed ||
+            refreshLegacy ||
+            Boolean(reviewedUncertainJobsFile),
+          exclusive:
+            providerId === 'chatgpt' &&
+            !replaceReviewed &&
+            !refreshLegacy &&
+            !reviewedUncertainJobsFile,
+        });
+        if (providerId === 'codex') {
+          await cleanupExternalJobArtifacts(created.id, asset.filePath);
+        }
+        const repoFile = repoRelative(destination);
+        if (!variantSlot) {
+          manifestByPreset.set(
+            preset.id,
+            createStyleDefaultManifestEntry({
+              pack,
+              preset,
+              category,
+              file: repoFile,
+              jobId: created.id,
+              sourceAsset: repoFile,
+              providerId,
+              model:
+                created.execution?.model ??
+                (providerId === 'chatgpt'
+                  ? 'unknown'
+                  : writesProviderVariants
+                    ? GROK_IMAGEGEN_MODEL
+                    : IMAGEGEN_MODEL),
+              reasoningEffort:
+                created.execution?.reasoningEffort ??
+                (providerId === 'chatgpt'
+                  ? 'unknown'
+                  : writesProviderVariants
+                    ? GROK_IMAGEGEN_REASONING_EFFORT
+                    : IMAGEGEN_REASONING_EFFORT),
+              generatedAt: new Date().toISOString(),
+            }),
+          );
+          await saveManifest(pack.id, Array.from(manifestByPreset.values()));
+        }
+        const previousFailures = failuresByPack.get(pack.id);
+        if (Array.isArray(previousFailures)) {
+          const unresolvedFailures = removeStyleDefaultFailuresForPreset(
+            previousFailures,
+            preset.id,
+          );
+          if (unresolvedFailures.length !== previousFailures.length) {
+            failuresByPack.set(pack.id, unresolvedFailures);
+            await saveFailures(pack.id, unresolvedFailures);
+          }
+        }
+        generated += 1;
+        if (providerId === 'chatgpt') {
+          await unlink(chatgptLockPath).catch((error) => {
+            console.warn(`[txt2img-lock] ${preset.id}: ${String(error)}`);
+          });
+        }
+        lastError = null;
+        return;
+      } catch (error) {
+        const message = error instanceof Error ? error.message : String(error);
+        lastError = message;
+        if (
+          providerId === 'chatgpt' &&
+          (!requestSubmitted ||
+            (!intakeAccepted && error instanceof HttpStatusError && error.status === 400))
+        ) {
+          await unlink(chatgptLockPath).catch((lockError) => {
+            console.warn(`[txt2img-lock] ${preset.id}: ${String(lockError)}`);
+          });
+        }
 
-      if (
-        writesProviderVariants ||
-        !message.includes('status needs_review') ||
-        attempt > IMAGE_RETRY_ATTEMPTS
-      ) {
-        break;
-      }
+        if (
+          providerId === 'chatgpt' ||
+          writesProviderVariants ||
+          !message.includes('status needs_review') ||
+          attempt > IMAGE_RETRY_ATTEMPTS
+        ) {
+          break;
+        }
 
-      console.warn(
-        `[txt2img-retry-needed] ${preset.id} ${pack.name} / ${category} / ${preset.name}: ${message}`,
+        console.warn(
+          `[txt2img-retry-needed] ${preset.id} ${pack.name} / ${category} / ${preset.name}: ${message}`,
+        );
+        await sleepWithEffect(RETRY_RETRY_DELAY_MS);
+      }
+    }
+
+    failed += 1;
+    console.error(
+      `[txt2img-failed] ${preset.id} ${pack.name} / ${category} / ${preset.name}: ${lastError}`,
+    );
+    const failures = failuresByPack.get(pack.id);
+    if (Array.isArray(failures)) {
+      const unresolvedFailures = removeStyleDefaultFailuresForPreset(failures, preset.id);
+      unresolvedFailures.push(
+        createStyleDefaultFailureEntry({
+          pack,
+          preset,
+          category,
+          error: lastError || 'unknown',
+          failedAt: new Date().toISOString(),
+        }),
       );
-      await sleepWithEffect(RETRY_RETRY_DELAY_MS);
+      failuresByPack.set(pack.id, unresolvedFailures);
+      await saveFailures(pack.id, unresolvedFailures);
     }
   }
 
-  failed += 1;
-  console.error(
-    `[txt2img-failed] ${preset.id} ${pack.name} / ${category} / ${preset.name}: ${lastError}`,
+  async function worker() {
+    while (cursor < targetPresets.length) {
+      const target = targetPresets[cursor];
+      cursor += 1;
+      attempted += 1;
+      await processPreset(target);
+    }
+  }
+
+  await Promise.all(
+    Array.from({ length: Math.min(parallel, targetPresets.length || 1) }, () => worker()),
   );
-  const failures = failuresByPack.get(pack.id);
-  if (Array.isArray(failures)) {
-    const unresolvedFailures = removeStyleDefaultFailuresForPreset(failures, preset.id);
-    unresolvedFailures.push(
-      createStyleDefaultFailureEntry({
-        pack,
-        preset,
-        category,
-        error: lastError || 'unknown',
-        failedAt: new Date().toISOString(),
-      }),
-    );
-    failuresByPack.set(pack.id, unresolvedFailures);
-    await saveFailures(pack.id, unresolvedFailures);
+
+  for (const [packId, manifest] of manifestByPack) {
+    if (manifest.size > 0) await saveManifest(packId, Array.from(manifest.values()));
   }
-}
 
-async function worker() {
-  while (cursor < targetPresets.length) {
-    const target = targetPresets[cursor];
-    cursor += 1;
-    attempted += 1;
-    await processPreset(target);
+  for (const [packId, failures] of failuresByPack) {
+    await saveFailures(packId, failures);
   }
+
+  console.log(
+    `[done] provider=${providerId} generated=${generated} attempted=${attempted} skipped=${skipped} failed=${failed} packs=${packs.map((pack) => pack.id).join(',') || 'none'}`,
+  );
+} finally {
+  if (chatgptRunLockPath) await unlink(chatgptRunLockPath).catch(() => {});
 }
-
-await Promise.all(
-  Array.from({ length: Math.min(parallel, targetPresets.length || 1) }, () => worker()),
-);
-
-for (const [packId, manifest] of manifestByPack) {
-  if (manifest.size > 0) await saveManifest(packId, Array.from(manifest.values()));
-}
-
-for (const [packId, failures] of failuresByPack) {
-  await saveFailures(packId, failures);
-}
-
-console.log(
-  `[done] provider=${providerId} generated=${generated} attempted=${attempted} skipped=${skipped} failed=${failed} packs=${packs.map((pack) => pack.id).join(',') || 'none'}`,
-);

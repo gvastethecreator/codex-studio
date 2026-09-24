@@ -13,61 +13,33 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Terminal Megastructure Silence acts as a transferable anime-battle/worlds router: Terminal
-    Megastructure Silence; combine it with mecha and cyberpunk anime grammar with engineered
-    silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion
-    tension; named titles, studios, or lineage words may guide style, but they must not require
-    canon cast, title-scene replication, screenshots, logos, or one fixed card concept.
+    Monumental graphic rendering built from long structural lines, blocky value masses, broad
+    voids, and rare cold highlights; scale is a visual relation, not a required setting.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Terminal
-    Megastructure Silence as portable contour, motion grammar, surface language, and emotional
-    pressure without requiring canon elements or a default action setup.
+    Preserve the subject’s identity and proportions. Clarify its existing structure with long
+    clean contours and large shadow groupings without enlarging or replacing it.
   color_and_tone: >-
-    Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile
-    white, coral glow, and disciplined emissive accents; let Terminal Megastructure Silence choose
-    accent intensity, value contrast, emotional temperature, and power-system separation while
-    staying attached to prompt X.
+    Use charcoal, slate, blue-black, and steel, with very sparse cyan or white highlights.
   lighting_and_shadow: >-
-    Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow,
-    and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Terminal Megastructure Silence without replacing prompt X with a
-    stock anime frame.
+    Set large hard cel-shadow shapes against a few cold edge glints; keep illuminated areas
+    broad, quiet, and subordinate.
   texture_and_material: >-
-    Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust,
-    circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Terminal
-    Megastructure Silence controlled, denoised, and coherent across bodies, objects, environments,
-    abstractions, and action.
+    Keep existing materials legible. Limit texture to precise seams, faint wear, and controlled
+    grain against expansive simple areas.
   camera_and_composition: >-
-    Frame through scale compression, machinery diagonals, grid overlays without readable UI,
-    service-bay density, orbital symmetry, and high-speed hardware lanes; convert Terminal
-    Megastructure Silence into reusable perspective, timing, rhythm, scale, cut-in, and
-    negative-space rules instead of one fixed style sample layout.
+    Keep the requested view and scale. Use long aligned contours and open negative space within
+    the established framing.
   atmosphere_and_mood: >-
-    Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine
-    grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic,
-    tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping
-    the anime-battle lineage readable.
+    Create silence and scale through still spacing, strong value grouping, and minimal accents,
+    without adding a megastructure or vessel.
   rendering_and_quality: >-
-    Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic
-    3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object
-    structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no
-    fake readable text, no signature, no photoreal or 3D-render drift.
+    Use clean block shadows, sharp silhouettes, disciplined line density, and a low glow
+    threshold to preserve quiet.
   key_features: >-
-    Terminal Megastructure Silence; armored contour, mechanical massing, modular joints, engineered
-    surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted
-    alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain
-    sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without
-    readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium
-    mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no
-    cockpit/control-room dependency
+    Long structural contours; broad dark masses; open negative space; sparse cold highlights.
   creative_brief: >-
-    Apply Terminal Megastructure Silence after prompt X as a transferable anime-battle/worlds layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
-    Terminal Megastructure Silence, mecha and cyberpunk anime grammar with engineered silhouettes,
-    hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish
-    discipline, and negative controls without forcing canon cast, title scene, screenshot, card
-    pose, default monster, default combat prop, or prompt-literal card.
+    Keep the specified subject, scale, and setting. Use long structural lines, broad shadow
+    masses, and sparse cold glints; add no megastructure, vessel, or space scene.
 avoidRules:
   - realistic
   - 3d render
@@ -79,7 +51,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - plastic 3d robot render
   - cockpit source-frame look
@@ -90,7 +61,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -98,9 +68,9 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, plastic 3d robot render, cockpit source-frame look,
-    readable UI panel, fixed canon character, title scene replication, required source-frame look,
-    cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks
+    artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI
+    panel, fixed canon character, title scene replication, required source-frame look, cosplay,
+    generic anime filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

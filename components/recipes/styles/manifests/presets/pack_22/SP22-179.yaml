@@ -1,0 +1,104 @@
+schemaVersion: 1
+id: SP22-179
+packId: pack_22
+name: Photocopy Zine
+category: 10. Printmaking & Reproduction
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - printmaking-and-reproduction
+  - controlled-copy-texture
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Reproduction-inspired illustration uses strong grouped values and selectively broken edges,
+    with any loss of detail kept local and controlled.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Keep the main silhouette and
+    defining content intact as secondary marks simplify.
+  color_and_tone: >-
+    Preserve the requested palette and relationships. Simplify local values as needed without forcing
+    black and white or adding an unrequested accent color.
+  lighting_and_shadow: >-
+    Follow the requested light direction and contrast. Translate existing values into clear groups
+    without inventing extra shadow shapes.
+  texture_and_material: >-
+    Apply controlled reproduction wear only to selected edges or tonal areas. Avoid unrequested
+    surface marks or a uniform noisy overlay.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, pose, crop and placement. Do not turn the composition into a
+    page, flyer or layout; add no lettering or border.
+  atmosphere_and_mood: >-
+    Keep the requested setting and tone. Reproduction marks affect selected edges and values only,
+    not the subject or context.
+  rendering_and_quality: >-
+    Define the silhouette and large value groups first, then break only selected edges. Retain enough
+    detail for the original subject to remain clear at reduced size.
+avoidRules:
+  - unrequested surface marks or typography
+  - forced monochrome or unrequested accent ink
+  - unrequested page, border, lettering, or period motifs
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-179.webp
+attributes:
+  negativePrompt: >-
+    unrequested surface marks or typography, forced monochrome or unrequested accent ink,
+    unrequested page, border, lettering, or period motifs
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: mixed-media
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: mixed-media
+    avoidRules:
+      - text: unrequested surface marks or typography
+        field: texture_and_material
+      - text: forced monochrome or unrequested accent ink
+        field: color_and_tone
+      - text: unrequested page, border, lettering, or period motifs
+        field: global
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S079
+    sourceTitle: Photocopy Zine
+    referenceIds:
+      - S40
+      - S59
+    evidenceStatus: reuse_review
+  ui:
+    kind: full_style
+    derivedFrom:
+      - TCG-S079
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: printmaking-and-reproduction
+  categoryName: 10. Printmaking & Reproduction
+  tags:
+    - trading-card-illustration
+    - printmaking-and-reproduction
+    - controlled-copy-texture
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

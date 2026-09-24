@@ -1,0 +1,104 @@
+schemaVersion: 1
+id: SP14-136
+packId: pack_14
+name: Capillary Ink
+category: Flow & Dissolution
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - flow-and-dissolution
+visualDna:
+  aesthetic: >-
+    Pigment gathers in dark tide lines and softly branches into lighter washes. Selected edges bleed
+    while a few dry contours anchor the image.
+  subject_treatment: >-
+    Keep the requested subject, identity, anatomy, action and setting. Apply the visual treatment to its
+    existing shapes; do not replace it with an emblem, ritual, character or prop from a sample card.
+  color_and_tone: >-
+    Keep the requested palette; concentrate existing hues at wet boundaries and let their lighter values
+    open outward without adding a fixed blue-black grade.
+  lighting_and_shadow: >-
+    Preserve requested lighting. Model volume through wash density and clear reserves, not atmospheric
+    glow.
+  texture_and_material: >-
+    Show localized pigment migration at illustrated edges, preserving the depicted material and avoiding
+    a global aged-paper overlay.
+  camera_and_composition: >-
+    Keep the requested viewpoint, crop and spatial arrangement. Guide the bleed along existing form
+    boundaries; keep focal features and any requested text sharp.
+  atmosphere_and_mood: Quiet instability and organic flow; no obligatory spirit, water scene, snow or supernatural event.
+  rendering_and_quality: >-
+    Control wet and dry edges at a readable scale. Keep silhouettes coherent instead of dissolving the
+    whole subject.
+avoidRules:
+  - global blur
+  - aged-paper overlay
+  - new supernatural elements
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-136.webp
+attributes:
+  negativePrompt: global blur, aged-paper overlay, new supernatural elements
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: global blur
+        field: rendering_and_quality
+      - text: aged-paper overlay
+        field: rendering_and_quality
+      - text: new supernatural elements
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP14-024
+      - SP14-025
+      - SP14-026
+      - SP14-033
+      - SP14-034
+      - SP14-035
+      - SP14-036
+      - SP14-037
+      - SP14-038
+      - SP14-039
+      - SP14-040
+      - SP14-041
+      - SP14-042
+      - SP14-043
+      - SP14-044
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: flow-and-dissolution
+  categoryName: Flow & Dissolution
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - flow-and-dissolution
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

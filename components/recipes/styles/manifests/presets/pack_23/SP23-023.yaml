@@ -1,0 +1,111 @@
+schemaVersion: 1
+id: SP23-023
+packId: pack_23
+name: Ornamental Fairytale
+category: 5. Revival & Storybook Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - revival-and-storybook-illustration
+  - elegant-contour-and-decorative-planes
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Elegant silhouettes, delicate contours, decorative planes and small, controlled highlights create
+    an ornamental illustration treatment. The source scope is Kay Nielsen's early-twentieth-century
+    Danish book illustration, not a request for a fairy-tale plot or character archetype.
+  subject_treatment: >-
+    Preserve the requested subject, identity, pose, proportions, count and clothing. Refine contour
+    and simplify existing forms without reshaping anatomy, changing wardrobe or inventing characters.
+  color_and_tone: >-
+    Preserve the requested palette and tonal relationships. Use decorative planes to organize existing
+    colors without forcing pastel, jewel-tone or night palettes.
+  lighting_and_shadow: >-
+    Follow the requested lighting and shadows. Keep any fine highlight within existing forms; do not
+    add magical glow, stars or a new light source.
+  texture_and_material: >-
+    Keep decorative detail local to surfaces already present or explicitly selected by the user.
+    Preserve depicted material and function; do not turn objects into costumes, ornaments or props.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, orientation and arrangement. Do not impose a vertical
+    page, frame, border or poster layout.
+  atmosphere_and_mood: >-
+    Preserve the user's setting and mood. The historical reference is a specific Danish illustrator's
+    twentieth-century work; it does not authorize a princess, long gown, fairy-tale setting or universal
+    national style.
+  rendering_and_quality: >-
+    Keep contours precise, decorative planes clean and highlights small. Balance fine detail with broad
+    quiet areas so ornament does not replace the requested subject.
+avoidRules:
+  - unrequested princess, gown, stars or other storybook characters
+  - unrequested decorative frame or vertical page layout
+  - unrequested magical glow or fixed fantasy palette
+  - wardrobe or anatomy changes not requested by the user
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-023.webp
+attributes:
+  negativePrompt: >-
+    unrequested princess, gown, stars or other storybook characters, unrequested decorative frame or
+    vertical page layout, unrequested magical glow or fixed fantasy palette, wardrobe or anatomy
+    changes not requested by the user
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: ornamental-illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: elegant-contour-decorative-planes-and-restrained-highlights
+      - field: atmosphere_and_mood
+        group: source-scope
+        value: kay-nielsen-danish-twentieth-century-illustration-not-medieval
+    avoidRules:
+      - text: unrequested princess, gown, stars or other storybook characters
+        field: global
+      - text: unrequested decorative frame or vertical page layout
+        field: camera_and_composition
+      - text: unrequested magical glow or fixed fantasy palette
+        field: color_and_tone
+      - text: wardrobe or anatomy changes not requested by the user
+        field: subject_treatment
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: RV-02
+    sourceTitle: Ornamental Fairytale
+    historicalScope: 'Ilustración de cuento · siglo XX'
+    referenceIds:
+      - S22
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: revival-and-storybook-illustration
+  categoryName: 5. Revival & Storybook Illustration
+  tags:
+    - curation-v2
+    - revival-and-storybook-illustration
+    - elegant-contour-and-decorative-planes
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

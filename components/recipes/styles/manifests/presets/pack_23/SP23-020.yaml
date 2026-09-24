@@ -1,0 +1,113 @@
+schemaVersion: 1
+id: SP23-020
+packId: pack_23
+name: Haräg Geometry
+category: 4. Regional Manuscript Traditions
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - regional-manuscript-traditions
+  - compact-geometric-planes
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Crisp contour lines and compact geometric planes organize flat opaque areas through alternating
+    density and open reserve. The reference is specifically the Haräg ornament in the late-seventeenth-
+    century Baselyos-attributed Ethiopian manuscript corpus, not a universal Ethiopian style.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, count, action and silhouette. Let geometric divisions
+    follow existing forms or explicitly permitted ornament areas; do not add crosses, triangles, borders
+    or decorative shapes outside them.
+  color_and_tone: >-
+    Preserve the requested palette. Use a compact number of flat tones only when the supplied colors
+    allow it; do not impose the source's black, ochre, red and white palette or substitute colors.
+  lighting_and_shadow: >-
+    Preserve requested lighting and shadows. Build contrast with flat planes and line density rather
+    than realistic gradients, dramatic shading or a new light source.
+  texture_and_material: >-
+    Keep linework crisp and geometry bounded within the existing forms. Use dark contours only when
+    compatible with the requested palette; preserve depicted materials and avoid a blanket weave or
+    paper texture.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, orientation and arrangement. Do not create a manuscript
+    border or repeat ornament beyond the forms the user selected.
+  atmosphere_and_mood: >-
+    Keep the requested mood and setting. The regional scope is the cited Ethiopian manuscript corpus
+    attributed to Baselyos in the late seventeenth century; do not label it medieval, generalize it to
+    all Ethiopian art or add Orthodox religious imagery or Ge'ez writing.
+  rendering_and_quality: >-
+    Keep plane boundaries clean, line density intentional and negative spaces open. Avoid realistic
+    gradients, noise, automatic distress and patterns that obscure the requested subject.
+avoidRules:
+  - unrequested crosses, Ge'ez writing or religious iconography
+  - an imposed black, ochre, red and white palette
+  - ornament outside the forms or surfaces the user selected
+  - unrequested manuscript border or repeating frame
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-020.webp
+attributes:
+  negativePrompt: >-
+    unrequested crosses, Ge'ez writing or religious iconography, an imposed black, ochre, red and
+    white palette, ornament outside the forms or surfaces the user selected, unrequested manuscript
+    border or repeating frame
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: baselyos-attributed-ethiopian-manuscript-ornament
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: crisp-geometric-planes-with-open-reserve
+      - field: atmosphere_and_mood
+        group: source-scope
+        value: baselyos-attributed-late-seventeenth-century-ethiopian-corpus-only-not-medieval
+    avoidRules:
+      - text: unrequested crosses, Ge'ez writing or religious iconography
+        field: global
+      - text: an imposed black, ochre, red and white palette
+        field: color_and_tone
+      - text: ornament outside the forms or surfaces the user selected
+        field: texture_and_material
+      - text: unrequested manuscript border or repeating frame
+        field: camera_and_composition
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: TR-03
+    sourceTitle: Haräg Geometry
+    historicalScope: 'Etiopía · corpus de Baselyos, finales del siglo XVII'
+    referenceIds:
+      - S19
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: regional-manuscript-traditions
+  categoryName: 4. Regional Manuscript Traditions
+  tags:
+    - curation-v2
+    - regional-manuscript-traditions
+    - compact-geometric-planes
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

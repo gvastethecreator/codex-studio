@@ -2,6 +2,22 @@
   "schemaVersion": 1,
   "examples": [
     {
+      "id": "cel-everyday",
+      "playbook": "anime",
+      "status": "proposed-example-not-applied-not-image-validated",
+      "sourcePath": "components/recipes/styles/manifests/presets/pack_05/SP05-021.yaml",
+      "sourcePresetId": "SP05-021",
+      "sourcePackId": "pack_05",
+      "sourceSha256": "5a45728a94f56fe1dfd2e3561a10539fddc162773009123a80a1ae1fc9f5a75b",
+      "field": "subject_treatment",
+      "before": "Preserve the requested content and framing. Use tapered black-ink contours that thicken at turns and break into short speed ticks for edge work, compact rounded masses with clean cel edges and ribbonlike cutouts for form simplification, and long upward curves, brief flicks, and crisp pauses only where movement is already requested.",
+      "proposedKind": "style",
+      "after": "Conservar el contenido y encuadre pedidos. Simplificar las formas existentes en masas compactas y redondeadas, con bordes cel limpios y recortes alargados. Engrosar el contorno de tinta negra en los giros y afinar sus extremos. Usar curvas ascendentes y trazos breves de velocidad únicamente para el movimiento solicitado.",
+      "rationale": "La fuente ya separa dibujo y contenido. Este ejemplo conserva esa separación al condensar el campo; no vuelve a introducir uniforme, accesorios o combate por el nombre del preset.",
+      "wrongFix": "Reducirlo a anime high quality, imponer movimiento a un objeto quieto o reconstruir un personaje conocido.",
+      "scope": "Replacement of this ONE field in a proposed derivative/profile draft, not a complete manifest. Inspect all eight fields, negatives and policy before publishing."
+    },
+    {
       "id": "material-roble",
       "playbook": "material",
       "status": "proposed-example-not-applied-not-image-validated",
@@ -66,22 +82,6 @@
       "scope": "Replacement of this ONE field in a proposed derivative/profile draft, not a complete manifest. Inspect all eight fields, negatives and policy before publishing."
     },
     {
-      "id": "cel-everyday",
-      "playbook": "anime",
-      "status": "proposed-example-not-applied-not-image-validated",
-      "sourcePath": "components/recipes/styles/manifests/presets/pack_05/SP05-021.yaml",
-      "sourcePresetId": "SP05-021",
-      "sourcePackId": "pack_05",
-      "sourceSha256": "5c59a5f7e28d0af24387c20b3b5cf1ee08647270b6bd93de977266341b579cef",
-      "field": "subject_treatment",
-      "before": "Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Headband Ninja Journey, youth-adventure anime style grammar: one energetic but non-famous subject design silhouette or costume fragment with teal-orange cloth motion, training-scroll geometry, optimistic speed arcs, and clean cel shading as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.",
-      "proposedKind": "style",
-      "after": "Simplificar las formas solicitadas con contornos variables, sombras cel de límites definidos y detalle facial contenido. Conservar la acción y el vestuario pedidos.",
-      "rationale": "Evitar que aventura/ninja implique uniforme, ataque o accesorios.",
-      "wrongFix": "Reescribir todo anime como anime high quality sin diferencias propias.",
-      "scope": "Replacement of this ONE field in a proposed derivative/profile draft, not a complete manifest. Inspect all eight fields, negatives and policy before publishing."
-    },
-    {
       "id": "pigment-specific",
       "playbook": "paint",
       "status": "proposed-example-not-applied-not-image-validated",
@@ -130,19 +130,19 @@
       "scope": "Replacement of this ONE field in a proposed derivative/profile draft, not a complete manifest. Inspect all eight fields, negatives and policy before publishing."
     },
     {
-      "id": "cultural-context",
-      "playbook": "cultural-theme",
+      "id": "cultural-identity",
+      "playbook": "theme-render",
       "status": "proposed-example-not-applied-not-image-validated",
-      "sourcePath": "components/recipes/styles/manifests/presets/pack_14/SP14-021.yaml",
-      "sourcePresetId": "SP14-021",
+      "sourcePath": "components/recipes/styles/manifests/presets/pack_14/SP14-142.yaml",
+      "sourcePresetId": "SP14-142",
       "sourcePackId": "pack_14",
-      "sourceSha256": "b9ed7c8d9c6e224d6f9aa3d8b475f02c782c70ef47855d0b6ef4ccff5f333f01",
-      "field": "aesthetic",
-      "before": "Griot Star Memory Ring acts as a transferable mythic-noir router: oral-history authority and star-memory cadence plus astral witness logic and high-contrast memory points fused with African cosmology noir with oral-history rhythm, carved lineage, rain law, star memory, trickster wit, and civic myth; it carries symbol, omen, ritual authority, and mature editorial restraint without locking prompt content to its sample image.",
+      "sourceSha256": "3d67b229af41baa4e5813bfea3c884650e433dbf574f3ca53e5c5edbb9f7e54c",
+      "field": "subject_treatment",
+      "before": "Preserve the requested subject, action, ethnicity, anatomy, and every explicit costume or equipment lock. Keep requested contemporary clothing and objects contemporary. On one suitable existing edge or fitting, place one narrow meander or palmette with enough contrast to read at thumbnail size. When a long open edge exists, let the motif follow that edge without changing its material or silhouette; use incised contour and clay-black figure-ground elsewhere. Do not add Greek actors, deities, costume, laurel emblems or classical architecture as recognition shortcuts.",
       "proposedKind": "style",
-      "after": "Derivado gráfico de intervalos circulares, repetición de marcas y puntos claros sobre campos oscuros. No atribuirle autenticidad cultural.",
-      "rationale": "Procedencia y significados requieren fuente; un derivado formal no los demuestra.",
-      "wrongFix": "Inventar una tradición para justificar el nombre o mezclar culturas por paleta.",
+      "after": "Conservar el sujeto, la acción, la etnia y todos los bloqueos explícitos, incluso ropa y objetos contemporáneos. Aplicar un solo meandro estrecho o palmeta sobre un borde o herraje existente que lo admita; usar contorno inciso y masas de arcilla y negro sin añadir templo, vestuario griego ni personajes mitológicos.",
+      "rationale": "La identidad helénica debe leerse en el tratamiento visual y un motivo situado, sin convertir automáticamente el contenido moderno en una escena de época.",
+      "wrongFix": "Borrar toda señal helénica para preservar el sujeto, o imponer laureles, templos y atuendos clásicos para conseguir reconocimiento.",
       "scope": "Replacement of this ONE field in a proposed derivative/profile draft, not a complete manifest. Inspect all eight fields, negatives and policy before publishing."
     },
     {

@@ -16,74 +16,48 @@ tags:
   - modern-shonen-and-action
 visualDna:
   aesthetic: >-
-    Kaiju No. 8 - Civic Monster Response Unit acts as a transferable anime-battle/worlds router:
-    Kaiju No. 8 - Civic Monster Response Unit, civic colossal-response action style grammar with
-    municipal hazard color, infrastructure scale markers, response-grid clarity, and resilient
-    order; combine it with modern action anime grammar with power-system clarity, impact frames,
-    elastic motion, expressive line economy, and high-readability spectacle; named titles, studios,
-    or lineage words may guide style, but they must not require canon cast, title-scene replication,
-    screenshots, logos, or one fixed card concept.
+    Build the graphic anime treatment from sturdy dark contours with precise grid-like ticks and
+    existing shapes organized into broad size intervals. Let measured sweeping curves and orderly
+    directional lines set its rhythm; use high-visibility yellow, warm orange, deep blue-gray, and
+    pale neutral for color and matte color blocks with fine grain limited to dark areas for
+    finish.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Kaiju
-    No. 8 - Civic Monster Response Unit, civic colossal-response action style grammar with municipal
-    hazard color, infrastructure scale markers, response-grid clarity, and resilient order as
-    portable contour, motion grammar, surface language, and emotional pressure without requiring
-    canon elements or a default action setup.
+    Preserve the requested content and framing. Use sturdy dark contours with precise grid-like
+    ticks for edge work, existing shapes organized into broad size intervals for form
+    simplification, and measured sweeping curves and orderly directional lines only where movement
+    is already requested.
   color_and_tone: >-
-    Map color through saturated action accents, clean dark-light value separation, aura color,
-    bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts;
-    let Kaiju No. 8 - Civic Monster Response Unit, civic colossal-response action style grammar with
-    municipal hazard color, infrastructure scale markers, response-grid clarity, and resilient order
-    choose accent intensity, value contrast, emotional temperature, and power-system separation
-    while staying attached to prompt X.
+    Build value groups with high-visibility yellow, warm orange, deep blue-gray, and pale neutral.
+    Place the strongest contrast on the requested focal area and preserve explicit color
+    instructions.
   lighting_and_shadow: >-
-    Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights,
-    and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Kaiju No. 8 - Civic Monster Response Unit, civic colossal-response
-    action style grammar with municipal hazard color, infrastructure scale markers, response-grid
-    clarity, and resilient order without replacing prompt X with a stock anime frame.
+    Treat lighting graphically: even pale highlights and clearly separated shadow shapes. Keep
+    shadows grouped and respect any light direction already requested.
   texture_and_material: >-
-    Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted
-    debris, and controlled effect overlays; keep the tactile or effect cues in Kaiju No. 8 - Civic
-    Monster Response Unit, civic colossal-response action style grammar with municipal hazard color,
-    infrastructure scale markers, response-grid clarity, and resilient order controlled, denoised,
-    and coherent across bodies, objects, environments, abstractions, and action.
+    Render existing surfaces with matte color blocks with fine grain limited to dark areas,
+    preserving depicted materials and adding no props or effects.
   camera_and_composition: >-
-    Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels,
-    compressed depth, and readable near-to-far force paths; convert Kaiju No. 8 - Civic Monster
-    Response Unit, civic colossal-response action style grammar with municipal hazard color,
-    infrastructure scale markers, response-grid clarity, and resilient order into reusable
-    perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style
-    sample layout.
+    Within the requested camera and crop, use abstract grid intervals that clarify scale among
+    existing forms without prescribing a location to organize existing forms; preserve location
+    and action.
   atmosphere_and_mood: >-
-    Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and
-    heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet,
-    grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle
-    lineage readable.
+    Let line weight, spacing, and value convey measured resilience and visual steadiness, while
+    preserving the prompt's emotional intent.
   rendering_and_quality: >-
-    Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp
-    silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or
-    object structure, readable effects, controlled grain, heavy denoise for noisy darks, no
-    watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+    Finish with stable silhouettes, measured scale marks, and controlled color blocks; keep detail
+    selective and accents attached to existing forms.
   key_features: >-
-    Kaiju No. 8 - Civic Monster Response Unit, civic colossal-response action style grammar with
-    municipal hazard color, infrastructure scale markers, response-grid clarity, and resilient
-    order; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface
-    simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke,
-    sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack
-    lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable
-    near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy,
-    crisp silhouettes, no manga-panel text, and no cheap AI anime smear
+    sturdy dark contours with precise grid-like ticks; existing shapes organized into broad size
+    intervals; high-visibility yellow, warm orange, deep blue-gray, and pale neutral; measured
+    sweeping curves and orderly directional lines; matte color blocks with fine grain limited to
+    dark areas; abstract grid intervals that clarify scale among existing forms without
+    prescribing a location.
   creative_brief: >-
-    Apply Kaiju No. 8 - Civic Monster Response Unit after prompt X as a transferable
-    anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity,
-    while this preset supplies Kaiju No. 8 - Civic Monster Response Unit, civic colossal-response
-    action style grammar with municipal hazard color, infrastructure scale markers, response-grid
-    clarity, and resilient order, modern action anime grammar with power-system clarity, impact
-    frames, elastic motion, expressive line economy, and high-readability spectacle, finish
-    discipline, and negative controls without forcing canon cast, title scene, screenshot, card
-    pose, default monster, default combat prop, or prompt-literal card.
+    Keep the requested subject, action, location, and crop. Render them with sturdy dark contours
+    with precise grid-like ticks, existing shapes organized into broad size intervals, and
+    high-visibility yellow, warm orange, deep blue-gray, and pale neutral; use measured sweeping
+    curves and orderly directional lines only where movement is already present, and apply matte
+    color blocks with fine grain limited to dark areas as the drawing finish.
 avoidRules:
   - realistic
   - 3d render
@@ -95,7 +69,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - famous creature copy
   - no monster face closeup
@@ -111,7 +84,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -119,11 +91,10 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, famous creature copy, no monster face closeup, no armed
-    squad, no readable signage, no destruction aftermath, photoreal cosplay, western superhero
-    comic, generic shonen source-frame look, fixed canon character, title scene replication,
-    required source-frame look, cosplay, generic anime filter, prompt-required card, readable text,
-    logo, muddy noisy darks
+    artifacts, watermark, signature, famous creature copy, no monster face closeup, no armed squad,
+    no readable signage, no destruction aftermath, photoreal cosplay, western superhero comic,
+    generic shonen source-frame look, fixed canon character, title scene replication, required
+    source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

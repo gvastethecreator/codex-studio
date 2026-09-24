@@ -13,69 +13,46 @@ tags:
   - caricature-and-cartoon-styles
 visualDna:
   aesthetic: >-
-    Grotesque Meat Puppet acts as a transferable cinematic-media router: start from Body-horror
-    cartoon texture system, exposed inner-material logic, translucent flesh-like wrapping,
-    MeatCanyon aesthetic, Cronenberg-meets-SpongeBob, visceral wrongness with cartoon color palette,
-    Interior texture exposure, meat-fiber rendering, translucent wrapping, stretch tension lines,
-    surgical cartoon color and caricature and cartoon system built from exaggeration rules, line
-    instability, body-shape grammar, adult-comedy timing, texture economy, and expressive
-    deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.
+    Use this drawing language: Grotesque cartoon material study with soft bulges, stretched
+    surface tension, layered-looking marks, fine wrinkles, and sickly contrasting color cues.
+    Apply it to the supplied content without requiring anatomy, gore, a particular cast, place,
+    or story.
   subject_treatment: >-
-    Transform any prompt subject through Hyper-detailed anatomical horror on cartoon proportions,
-    sinew-like strands, meat-fiber linework; preserve the requested subject while exaggerating
-    proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up
-    detail according to the preset, keeping the requested identity, silhouette, action, object
-    function, or setting legible.
+    Apply stretched contour lines, layered surface marks, fine wrinkle strokes, and dense detail
+    where it suits the subject to the supplied subject while preserving its identity,
+    silhouette, requested action, actual material, and function. Change the drawn treatment, not
+    the underlying content.
   color_and_tone: >-
-    Build color with Raw meat red, exposed tendon white, vein-blue, jaundice yellow, pus-green,
-    fresh-bruise purple, surgical pink; use color through loud primaries, beige suburban anxiety,
-    marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly
-    palette pressure, with deliberate value grouping, accent control, and process-specific limits
-    rather than generic color wash.
+    Use deep red, pale ivory, cool blue, jaundiced yellow, acidic green, bruised purple, and
+    surgical pink accents as style colors while honoring any explicit color requirements in the
+    request.
   lighting_and_shadow: >-
-    Handle light through Clinical overhead, wet glistening surfaces catching light, meat-locker
-    fluorescence; shape light minimally through flat cartoon value, poster contrast, marker fill,
-    gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and
-    shadow structure support the media process without overwriting the requested content.
+    Use clinical overhead contrast with wet-looking highlights as a visual treatment, while
+    respecting any lighting instructions in the request.
   texture_and_material: >-
-    Render Wet muscle fiber, stretched translucent skin, exposed cartilage gleam, dental-enamel
-    hyper-detail; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout,
-    squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism,
-    keeping artifact scale coherent and avoiding noisy filler texture.
+    Render layered highlights, fiber-like strokes, translucent-looking edges, and fine
+    micro-marking as drawn or printed surface marks over the existing material; do not change
+    the subject's actual substance or function.
   camera_and_composition: >-
-    Structure the image through Opened structure beyond physical limits, bulging forms, visible
-    interior scaffold, flesh-puppet proportions; compose through readable gag timing, grotesque
-    close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure
-    without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy
-    doing the style work.
+    Use bulges, seams, and surface detail as hierarchy; magnify only when requested and retain
+    the original object's recognizable outline.
   atmosphere_and_mood: >-
-    Keep the mood Nauseating, fascinating revulsion, can't-look-away horror, deeply wrong yet
-    compelling; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor,
-    office boredom, toxic suburbia, or anti-polish personality, letting the media style alter
-    interpretation without demanding a specific story, location, or actor.
+    Visceral and uneasy; use surface detail for impact without requiring anatomy or gore.
   rendering_and_quality: >-
-    Finish with Visceral gross-out cartoon, anatomically-detailed horror comedy, MeatCanyon-style
-    grotesque, nightmare fuel; finish with clear cartoon grammar, bold silhouettes, controlled
-    roughness, and no exact character likeness, school-scene lock, readable gag text, or generic
-    cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the
-    style recognizable.
+    Finish with layered, wet-looking cartoon marks and distorted surface detail; preserve the
+    source material underneath.
   key_features: >-
-    Body-horror cartoon texture system, exposed inner-material logic, translucent flesh-like
-    wrapping, MeatCanyon aesthetic, Cronenberg-meets-SpongeBob, visceral wrongness with cartoon
-    color palette; Interior texture exposure, meat-fiber rendering, translucent wrapping, stretch
-    tension lines, surgical cartoon color; Raw meat red, exposed tendon white, vein-blue, jaundice
-    yellow, pus-green, fresh-bruise purple, surgical pink; Wet muscle fiber, stretched translucent
-    skin, exposed cartilage gleam, dental-enamel hyper-detail; Opened structure beyond physical
-    limits, bulging forms, visible interior scaffold, flesh-puppet proportions
+    soft bulges; stretched surface tension; fine wrinkle marks; layered highlights; sickly color
+    contrast
   creative_brief: >-
-    Apply Grotesque Meat Puppet as a cinematic-media preset over prompt X: preserve the user's
-    requested subject, then route lens behavior, palette, light, signal or film texture,
-    composition, mood, and final media craft through Body-horror cartoon texture system, exposed
-    inner-material logic, translucent flesh-like wrapping, MeatCanyon aesthetic,
-    Cronenberg-meets-SpongeBob, visceral wrongness with cartoon color palette, Interior texture
-    exposure, meat-fiber rendering, translucent wrapping, stretch tension lines, surgical cartoon
-    color, Wet muscle fiber, stretched translucent skin, exposed cartilage gleam, dental-enamel
-    hyper-detail without requiring the card image's original subject.
+    Render the supplied content with stretched contour lines, layered surface marks, fine
+    wrinkle strokes, and dense detail where it suits the subject. Use deep red, pale ivory, cool
+    blue, jaundiced yellow, acidic green, bruised purple, and surgical pink accents as style
+    colors while honoring any explicit color instructions. Apply layered highlights, fiber-like
+    strokes, translucent-looking edges, and fine micro-marking as drawn or printed marks over
+    the existing material, without changing what the subject is made of or how it functions.
+    Preserve the requested subject, action, and setting; follow the supplied composition and add
+    no unrequested cast, location, lettering, or gag.
 avoidRules:
   - smooth
   - clean

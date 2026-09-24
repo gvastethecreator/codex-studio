@@ -40,10 +40,10 @@ avoidRules:
   - uniform grunge overlay
   - random directional scratches
   - muddy disconnected shadow noise
-assets: {}
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP19-003.webp
 attributes:
   negativePrompt: uniform grunge overlay, random directional scratches, muddy disconnected shadow noise
-  previewStatus: pending
   intentionalPolicy:
     schemaVersion: 1
     kind: full_style
@@ -69,7 +69,6 @@ attributes:
       - text: muddy disconnected shadow noise
         field: rendering_and_quality
   ui:
-    previewStatus: pending
     kind: full_style
     derivedFrom:
       - SP06-008
@@ -88,4 +87,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

@@ -1,0 +1,101 @@
+schemaVersion: 1
+id: SP22-208
+packId: pack_22
+name: Ordered Engraving Lines
+category: 14. Symbolic Graphic Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - symbolic-graphic-illustration
+  - ordered-engraving-lines
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Fine, orderly hatching gives simplified forms a drawn value structure beneath a legible outer contour,
+    with occasional color kept secondary to the linework.
+  subject_treatment: >-
+    Preserve the requested identity, pose, action and function. Simplify interior forms without adding
+    numerals, cards, ritual marks or new symbolic content.
+  color_and_tone: >-
+    Preserve the specified colors; use line density and open paper areas for value, with optional restrained
+    accents only when they fit the requested palette.
+  lighting_and_shadow: >-
+    Follow the requested light direction and use directional hatching to describe its existing shadow
+    planes; do not add a new light source or dramatic glow.
+  texture_and_material: >-
+    Keep hatching controlled and the support discreet. Avoid blanket grain, dense crosshatching and
+    material changes to the depicted subject.
+  camera_and_composition: >-
+    Retain the requested viewpoint, crop, framing and placement. Engraved marks follow existing forms
+    without creating a panel, card or border.
+  atmosphere_and_mood: >-
+    Maintain the requested setting and tone. Fine linework does not imply divination, ritual, a historical
+    scene or a symbolic subject.
+  rendering_and_quality: >-
+    Establish silhouette and broad values first, then use spare directional lines for controlled detail;
+    keep line density readable at reduced size.
+avoidRules:
+  - unrequested numerals, divination cards or ritual signs
+  - dense crosshatching that obscures the subject
+  - extra details that alter identity or function
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-208.webp
+attributes:
+  negativePrompt: unrequested numerals, divination cards or ritual signs, dense crosshatching that obscures the subject, extra details that alter identity or function
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: drawing
+    avoidRules:
+      - text: unrequested numerals, divination cards or ritual signs
+        field: global
+      - text: dense crosshatching that obscures the subject
+        field: rendering_and_quality
+      - text: extra details that alter identity or function
+        field: subject_treatment
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S108
+    sourceTitle: Engraved Arcana
+    referenceIds:
+      - S30
+      - S41
+      - S60
+    evidenceStatus: reuse_review
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: symbolic-graphic-illustration
+  categoryName: 14. Symbolic Graphic Illustration
+  tags:
+    - trading-card-illustration
+    - symbolic-graphic-illustration
+    - ordered-engraving-lines
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

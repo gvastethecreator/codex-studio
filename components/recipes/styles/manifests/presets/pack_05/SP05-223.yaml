@@ -13,61 +13,35 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Armored Chrome Noir Elegance acts as a transferable anime-battle/worlds router: Armored Chrome
-    Noir Elegance; combine it with mecha and cyberpunk anime grammar with engineered silhouettes,
-    hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named
-    titles, studios, or lineage words may guide style, but they must not require canon cast,
-    title-scene replication, screenshots, logos, or one fixed card concept.
+    Noir surface rendering with razor-clean contours, mirror-bright edge glints, deep black
+    value masses, and composed chrome-like reflections.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Armored
-    Chrome Noir Elegance as portable contour, motion grammar, surface language, and emotional
-    pressure without requiring canon elements or a default action setup.
+    Keep the requested subject recognizable and unchanged in form. Give its existing silhouette
+    a few sharp reflective edges and broad, elegant shadow shapes.
   color_and_tone: >-
-    Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile
-    white, coral glow, and disciplined emissive accents; let Armored Chrome Noir Elegance choose
-    accent intensity, value contrast, emotional temperature, and power-system separation while
-    staying attached to prompt X.
+    Build a restrained range of black, pewter, silver, and smoke, punctuated by tiny magenta or
+    cyan reflections.
   lighting_and_shadow: >-
-    Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow,
-    and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Armored Chrome Noir Elegance without replacing prompt X with a
-    stock anime frame.
+    Use hard cel shadows and precise specular accents; concentrate highlights along existing
+    edges instead of adding neon sources.
   texture_and_material: >-
-    Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust,
-    circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Armored
-    Chrome Noir Elegance controlled, denoised, and coherent across bodies, objects, environments,
-    abstractions, and action.
+    Respect the depicted material while suggesting a polished finish through narrow highlight
+    bands, clean reflections, and minimal scuffing.
   camera_and_composition: >-
-    Frame through scale compression, machinery diagonals, grid overlays without readable UI,
-    service-bay density, orbital symmetry, and high-speed hardware lanes; convert Armored Chrome
-    Noir Elegance into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules
-    instead of one fixed style sample layout.
+    Keep the given framing. Balance dark masses with narrow reflective lines and leave negative
+    space around the main silhouette.
   atmosphere_and_mood: >-
-    Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine
-    grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic,
-    tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping
-    the anime-battle lineage readable.
+    Create poised noir elegance through controlled contrast, stillness, and sparse color glints
+    rather than a city-at-night setting.
   rendering_and_quality: >-
-    Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic
-    3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object
-    structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no
-    fake readable text, no signature, no photoreal or 3D-render drift.
+    Use smooth value transitions, crisp boundaries, a few hard shadow planes, and clean
+    highlights; keep reflections graphic and legible.
   key_features: >-
-    Armored Chrome Noir Elegance; armored contour, mechanical massing, modular joints, engineered
-    surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted
-    alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain
-    sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without
-    readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium
-    mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no
-    cockpit/control-room dependency
+    Mirror-like edge glints; deep noir shadows; pewter and smoke values; sparse neon
+    reflections.
   creative_brief: >-
-    Apply Armored Chrome Noir Elegance after prompt X as a transferable anime-battle/worlds layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
-    Armored Chrome Noir Elegance, mecha and cyberpunk anime grammar with engineered silhouettes,
-    hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish
-    discipline, and negative controls without forcing canon cast, title scene, screenshot, card
-    pose, default monster, default combat prop, or prompt-literal card.
+    Retain the prompt’s subject, action, and setting. Use crisp reflective accents, pewter
+    values, and deep noir shadows; add no armor, city, or neon signage.
 avoidRules:
   - realistic
   - 3d render
@@ -79,7 +53,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - plastic 3d robot render
   - cockpit source-frame look
@@ -90,7 +63,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -98,9 +70,9 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, plastic 3d robot render, cockpit source-frame look,
-    readable UI panel, fixed canon character, title scene replication, required source-frame look,
-    cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks
+    artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI
+    panel, fixed canon character, title scene replication, required source-frame look, cosplay,
+    generic anime filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

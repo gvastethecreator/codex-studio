@@ -16,75 +16,32 @@ tags:
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: >-
-    Tsukimichi - Moonlit Merchant Wanderer acts as a transferable anime-battle/worlds router:
-    Tsukimichi - Moonlit Merchant Wanderer, moonlit practical diplomacy fantasy style grammar with
-    restrained violet aura, trade-road poise, dry calm, and one sharp negotiation token; combine it
-    with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture,
-    luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage
-    words may guide style, but they must not require canon cast, title-scene replication,
-    screenshots, logos, or one fixed card concept.
+    Spare cel illustration with cool twilight contrast, one restrained violet accent, and economical
+    dry contours.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply
-    Tsukimichi - Moonlit Merchant Wanderer, moonlit practical diplomacy fantasy style grammar with
-    restrained violet aura, trade-road poise, dry calm, and one sharp negotiation token as portable
-    contour, motion grammar, surface language, and emotional pressure without requiring canon
-    elements or a default action setup.
+    Retain the requested subject and gesture; use minimal lines and composed shape breaks without
+    adding a token or prop.
   color_and_tone: >-
-    Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens,
-    parchment neutrals, magical violets, and controlled pastel or dark contrast; let Tsukimichi -
-    Moonlit Merchant Wanderer, moonlit practical diplomacy fantasy style grammar with restrained
-    violet aura, trade-road poise, dry calm, and one sharp negotiation token choose accent
-    intensity, value contrast, emotional temperature, and power-system separation while staying
-    attached to prompt X.
+    Cool slate, muted blue, and a single violet accent create quiet distinction; preserve specified
+    colors.
   lighting_and_shadow: >-
-    Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and
-    clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Tsukimichi - Moonlit Merchant Wanderer, moonlit practical
-    diplomacy fantasy style grammar with restrained violet aura, trade-road poise, dry calm, and one
-    sharp negotiation token without replacing prompt X with a stock anime frame.
+    Low, even light and one narrow highlight keep the image calm and sharply focused.
   texture_and_material: >-
-    Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel
-    glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in
-    Tsukimichi - Moonlit Merchant Wanderer, moonlit practical diplomacy fantasy style grammar with
-    restrained violet aura, trade-road poise, dry calm, and one sharp negotiation token controlled,
-    denoised, and coherent across bodies, objects, environments, abstractions, and action.
+    Dry line accents, smooth restrained fills, and subdued surface texture support a deliberate
+    finish.
   camera_and_composition: >-
-    Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed
-    cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook
-    scale; convert Tsukimichi - Moonlit Merchant Wanderer, moonlit practical diplomacy fantasy style
-    grammar with restrained violet aura, trade-road poise, dry calm, and one sharp negotiation token
-    into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of
-    one fixed style sample layout.
+    Keep the supplied composition; use balanced negative space and composed horizontal rhythm
+    without changing location.
   atmosphere_and_mood: >-
-    Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional
-    craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic,
-    comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while
-    keeping the anime-battle lineage readable.
+    Wry, poised, and quiet, with tone set by the subject.
   rendering_and_quality: >-
-    Finish with clean fantasy-anime finish with stable anatomy and creature/object structure,
-    controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize
-    stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy
-    darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+    Keep detail sparse, focal edges exact, and accents few enough to retain their weight.
   key_features: >-
-    Tsukimichi - Moonlit Merchant Wanderer, moonlit practical diplomacy fantasy style grammar with
-    restrained violet aura, trade-road poise, dry calm, and one sharp negotiation token; clear
-    fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object
-    readability, and portal-like transformation logic; cloth, leather, polished armor, parchment,
-    herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces;
-    quest-path diagonals, transition thresholds, group-scale spacing without fixed cast,
-    adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale;
-    clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow,
-    no RPG UI, no readable magic text, and no generic isekai gloss
+    Restrained violet, dry precision, composed spacing, and cool shadow values define its
+    understated character.
   creative_brief: >-
-    Apply Tsukimichi - Moonlit Merchant Wanderer after prompt X as a transferable
-    anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity,
-    while this preset supplies Tsukimichi - Moonlit Merchant Wanderer, moonlit practical diplomacy
-    fantasy style grammar with restrained violet aura, trade-road poise, dry calm, and one sharp
-    negotiation token, isekai and high-fantasy anime grammar with magic-system readability,
-    quest-world texture, luminous adventure, and character-independent fantasy routing, finish
-    discipline, and negative controls without forcing canon cast, title scene, screenshot, card
-    pose, default monster, default combat prop, or prompt-literal card.
+    Use the economical line, cool values, and single accent on the requested scene without adding
+    trade, travel, or moon imagery.
 avoidRules:
   - realistic
   - 3d render
@@ -96,7 +53,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - named franchise likeness
   - market aisle
@@ -112,7 +68,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -120,10 +75,10 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, named franchise likeness, market aisle, merchant stall
-    clutter, readable sign, map, RPG UI, readable magic text, generic isekai wallpaper, fixed canon
+    artifacts, watermark, signature, named franchise likeness, market aisle, merchant stall clutter,
+    readable sign, map, RPG UI, readable magic text, generic isekai wallpaper, fixed canon
     character, title scene replication, required source-frame look, cosplay, generic anime filter,
-    prompt-required card, readable text, logo, muddy noisy darks
+    prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

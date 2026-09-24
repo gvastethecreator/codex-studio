@@ -13,77 +13,33 @@ tags:
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: >-
-    No Game No Life – Hyper-Saturated Strategy Fantasy acts as a transferable anime-battle/worlds
-    router: No Game No Life – Hyper-Saturated Strategy Fantasy, hyper-saturated strategy fantasy
-    style grammar with candy-neon arena geometry, floating rule planes, impossible perspective, and
-    confident color logic; combine it with isekai and high-fantasy anime grammar with magic-system
-    readability, quest-world texture, luminous adventure, and character-independent fantasy routing;
-    named titles, studios, or lineage words may guide style, but they must not require canon cast,
-    title-scene replication, screenshots, logos, or one fixed card concept.
+    High-saturation cel illustration built from candy-bright color planes, angular rhythms, and
+    deliberately unstable perspective.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply No Game
-    No Life – Hyper-Saturated Strategy Fantasy, hyper-saturated strategy fantasy style grammar with
-    candy-neon arena geometry, floating rule planes, impossible perspective, and confident color
-    logic as portable contour, motion grammar, surface language, and emotional pressure without
-    requiring canon elements or a default action setup.
+    Keep subjects recognizable; sharpen their edges into clear geometric masses without adding game
+    pieces or symbols.
   color_and_tone: >-
-    Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens,
-    parchment neutrals, magical violets, and controlled pastel or dark contrast; let No Game No Life
-    – Hyper-Saturated Strategy Fantasy, hyper-saturated strategy fantasy style grammar with
-    candy-neon arena geometry, floating rule planes, impossible perspective, and confident color
-    logic choose accent intensity, value contrast, emotional temperature, and power-system
-    separation while staying attached to prompt X.
+    Use confident magenta, cyan, and yellow against dark violet values, while preserving any
+    explicit palette request.
   lighting_and_shadow: >-
-    Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and
-    clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from No Game No Life – Hyper-Saturated Strategy Fantasy,
-    hyper-saturated strategy fantasy style grammar with candy-neon arena geometry, floating rule
-    planes, impossible perspective, and confident color logic without replacing prompt X with a
-    stock anime frame.
+    Hard, clean highlights separate the color planes; emissive edges stay graphic and controlled.
   texture_and_material: >-
-    Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel
-    glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in No Game
-    No Life – Hyper-Saturated Strategy Fantasy, hyper-saturated strategy fantasy style grammar with
-    candy-neon arena geometry, floating rule planes, impossible perspective, and confident color
-    logic controlled, denoised, and coherent across bodies, objects, environments, abstractions, and
-    action.
+    Flat opaque color, polished accents, and crisp boundaries make the visual logic feel designed
+    rather than textured.
   camera_and_composition: >-
-    Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed
-    cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook
-    scale; convert No Game No Life – Hyper-Saturated Strategy Fantasy, hyper-saturated strategy
-    fantasy style grammar with candy-neon arena geometry, floating rule planes, impossible
-    perspective, and confident color logic into reusable perspective, timing, rhythm, scale, cut-in,
-    and negative-space rules instead of one fixed style sample layout.
+    Retain the requested framing while introducing selective perspective tension and angular
+    overlaps within the existing scene.
   atmosphere_and_mood: >-
-    Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional
-    craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic,
-    comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while
-    keeping the anime-battle lineage readable.
+    Bold, cerebral, and kinetic; let the requested subject determine the mood.
   rendering_and_quality: >-
-    Finish with clean fantasy-anime finish with stable anatomy and creature/object structure,
-    controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize
-    stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy
-    darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+    Maintain sharp silhouettes, clean color separation, and perspective that remains readable
+    despite distortion.
   key_features: >-
-    No Game No Life – Hyper-Saturated Strategy Fantasy, hyper-saturated strategy fantasy style
-    grammar with candy-neon arena geometry, floating rule planes, impossible perspective, and
-    confident color logic; clear fantasy silhouettes, spell-effect hierarchy, surface
-    simplification, creature or object readability, and portal-like transformation logic; cloth,
-    leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke,
-    mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale
-    spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable
-    glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object
-    structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss
+    Impossible angles, candy-neon contrast, and floating color relationships create a precise,
+    high-energy graphic finish.
   creative_brief: >-
-    Apply No Game No Life – Hyper-Saturated Strategy Fantasy after prompt X as a transferable
-    anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity,
-    while this preset supplies No Game No Life – Hyper-Saturated Strategy Fantasy, hyper-saturated
-    strategy fantasy style grammar with candy-neon arena geometry, floating rule planes, impossible
-    perspective, and confident color logic, isekai and high-fantasy anime grammar with magic-system
-    readability, quest-world texture, luminous adventure, and character-independent fantasy routing,
-    finish discipline, and negative controls without forcing canon cast, title scene, screenshot,
-    card pose, default monster, default combat prop, or prompt-literal card.
+    Apply the angular color logic and vivid cel finish to the requested content; do not turn it into
+    an arena, contest, or interface.
 avoidRules:
   - realistic
   - 3d render
@@ -95,7 +51,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - cards
   - chess pieces
@@ -113,7 +68,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -121,10 +75,10 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, cards, chess pieces, dice, numbers, readable symbols,
-    game UI, sibling character likeness, RPG UI, readable magic text, generic isekai wallpaper,
-    fixed canon character, title scene replication, required source-frame look, cosplay, generic
-    anime filter, prompt-required card, readable text, logo, muddy noisy darks
+    artifacts, watermark, signature, cards, chess pieces, dice, numbers, readable symbols, game UI,
+    sibling character likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon
+    character, title scene replication, required source-frame look, cosplay, generic anime filter,
+    prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

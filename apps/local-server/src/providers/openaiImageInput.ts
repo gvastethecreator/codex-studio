@@ -46,7 +46,7 @@ function compileOpenAiImageInput(
       providerId,
       prompt: job.prompt,
     });
-  const text = buildCodexPromptText(sourceSpec);
+  const text = buildCodexPromptText(sourceSpec, providerId);
   const imageInputs = buildCodexImageInputs(sourceSpec);
 
   return createCompiledProviderInput({
@@ -126,7 +126,7 @@ function buildCodexAssetLines(sourceSpec: GenerationTaskSpec) {
   });
 }
 
-function buildCodexPromptText(sourceSpec: GenerationTaskSpec) {
+function buildCodexPromptText(sourceSpec: GenerationTaskSpec, providerId: 'codex' | 'chatgpt') {
   const parts = [`Task: ${sourceSpec.task}`, '', 'Prompt:', sourceSpec.prompt];
   const recipeProviderDirectives = sourceSpec.metadata.recipeProviderDirectives;
   const recipeContext = sourceSpec.metadata.recipeContext;
@@ -171,7 +171,7 @@ function buildCodexPromptText(sourceSpec: GenerationTaskSpec) {
     parts.push(`Aspect ratio: ${sourceSpec.output.aspectRatio}`);
   }
 
-  parts.push('', CODEX_IMAGEGEN_DENOISE_INSTRUCTION);
+  if (providerId === 'codex') parts.push('', CODEX_IMAGEGEN_DENOISE_INSTRUCTION);
 
   return parts.join('\n');
 }

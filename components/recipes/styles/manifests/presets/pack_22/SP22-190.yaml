@@ -1,0 +1,103 @@
+schemaVersion: 1
+id: SP22-190
+packId: pack_22
+name: Crochet Macro
+category: 12. Crafted Materials & Miniatures
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - crafted-materials-and-miniatures
+  - scale-consistent-loop-texture
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Crochet-inspired marks use consistent loops and stitch direction to describe existing shapes,
+    with clean silhouettes and restrained surface fuzz.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Use stitch rhythm as a rendering
+    treatment without replacing the subject with a generic plush form.
+  color_and_tone: >-
+    Retain the requested palette and color relationships. Use thread-like value differences within
+    those colors rather than imposing a yarn palette.
+  lighting_and_shadow: >-
+    Follow the requested light direction and contrast. Let small shadows between marks describe form
+    without adding a new light source or environment.
+  texture_and_material: >-
+    Keep loop scale consistent and align stitch direction to each existing form. Avoid invasive fuzz
+    and preserve materials not designated for a stitched appearance.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, pose, crop and placement. Stitch texture does not add a display
+    base, frame, lettering or layout.
+  atmosphere_and_mood: >-
+    Keep the requested setting and mood. Loop marks describe surface rhythm and do not create a new
+    character, prop or scene.
+  rendering_and_quality: >-
+    Establish silhouette and large value groups before adding loops. Keep stitch size readable and
+    preserve the details that identify the original subject.
+avoidRules:
+  - replacing the subject with a generic plush shape
+  - oversized loops or fuzz that erase defining details
+  - unrequested frame, lettering or layout
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-190.webp
+attributes:
+  negativePrompt: >-
+    replacing the subject with a generic plush shape, oversized loops or fuzz that erase defining
+    details, unrequested frame, lettering or layout
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: textile illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: textile illustration
+    avoidRules:
+      - text: replacing the subject with a generic plush shape
+        field: subject_treatment
+      - text: oversized loops or fuzz that erase defining details
+        field: texture_and_material
+      - text: unrequested frame, lettering or layout
+        field: global
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S090
+    sourceTitle: Crochet Macro
+    referenceIds:
+      - S14
+    evidenceStatus: study_secondary
+  ui:
+    kind: full_style
+    derivedFrom:
+      - TCG-S090
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: crafted-materials-and-miniatures
+  categoryName: 12. Crafted Materials & Miniatures
+  tags:
+    - trading-card-illustration
+    - crafted-materials-and-miniatures
+    - scale-consistent-loop-texture
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

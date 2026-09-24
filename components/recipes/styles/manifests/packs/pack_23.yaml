@@ -1,0 +1,160 @@
+schemaVersion: 1
+id: pack_23
+name: Medieval Visual Atlas
+description: >-
+  Transferable medieval visual studies of manuscript, print, textile, regional and later fantasy
+  methods. Deliberate modifiers and representation profiles remain separate from full styles.
+categories:
+  - id: manuscript-visual-systems
+    name: 1. Manuscript Visual Systems
+    presetRefs:
+      - pack_23/SP23-001.yaml
+      - pack_23/SP23-002.yaml
+      - pack_23/SP23-003.yaml
+      - pack_23/SP23-004.yaml
+      - pack_23/SP23-005.yaml
+      - pack_23/SP23-006.yaml
+  - id: print-and-engraving
+    name: 2. Print & Engraving
+    presetRefs:
+      - pack_23/SP23-007.yaml
+      - pack_23/SP23-008.yaml
+      - pack_23/SP23-009.yaml
+      - pack_23/SP23-010.yaml
+      - pack_23/SP23-011.yaml
+      - pack_23/SP23-012.yaml
+  - id: medieval-material-studies
+    name: 3. Medieval Material Studies
+    presetRefs:
+      - pack_23/SP23-013.yaml
+      - pack_23/SP23-014.yaml
+      - pack_23/SP23-015.yaml
+      - pack_23/SP23-016.yaml
+      - pack_23/SP23-017.yaml
+  - id: regional-manuscript-traditions
+    name: 4. Regional Manuscript Traditions
+    presetRefs:
+      - pack_23/SP23-018.yaml
+      - pack_23/SP23-019.yaml
+      - pack_23/SP23-020.yaml
+      - pack_23/SP23-021.yaml
+  - id: revival-and-storybook-illustration
+    name: 5. Revival & Storybook Illustration
+    presetRefs:
+      - pack_23/SP23-022.yaml
+      - pack_23/SP23-023.yaml
+      - pack_23/SP23-024.yaml
+      - pack_23/SP23-025.yaml
+  - id: classic-rpg-visual-studies
+    name: 6. Classic RPG Visual Studies
+    presetRefs:
+      - pack_23/SP23-026.yaml
+      - pack_23/SP23-027.yaml
+      - pack_23/SP23-028.yaml
+      - pack_23/SP23-029.yaml
+  - id: indexed-raster-language
+    name: 7. Indexed Raster Language
+    presetRefs:
+      - pack_23/SP23-030.yaml
+      - pack_23/SP23-031.yaml
+      - pack_23/SP23-032.yaml
+      - pack_23/SP23-033.yaml
+  - id: retro-3d-visual-studies
+    name: 8. Retro 3D Visual Studies
+    presetRefs:
+      - pack_23/SP23-034.yaml
+      - pack_23/SP23-035.yaml
+      - pack_23/SP23-036.yaml
+  - id: painted-rpg-and-tactics
+    name: 9. Painted RPG & Tactics
+    presetRefs:
+      - pack_23/SP23-037.yaml
+      - pack_23/SP23-038.yaml
+      - pack_23/SP23-039.yaml
+      - pack_23/SP23-040.yaml
+      - pack_23/SP23-041.yaml
+  - id: tabletop-illustration-studies
+    name: 10. Tabletop Illustration Studies
+    presetRefs:
+      - pack_23/SP23-042.yaml
+      - pack_23/SP23-043.yaml
+      - pack_23/SP23-044.yaml
+      - pack_23/SP23-045.yaml
+      - pack_23/SP23-046.yaml
+  - id: modern-visual-techniques
+    name: 11. Modern Visual Techniques
+    presetRefs:
+      - pack_23/SP23-047.yaml
+      - pack_23/SP23-048.yaml
+      - pack_23/SP23-049.yaml
+      - pack_23/SP23-050.yaml
+      - pack_23/SP23-051.yaml
+      - pack_23/SP23-052.yaml
+  - id: hybrid-visual-studies
+    name: 12. Hybrid Visual Studies
+    presetRefs:
+      - pack_23/SP23-053.yaml
+      - pack_23/SP23-054.yaml
+      - pack_23/SP23-055.yaml
+      - pack_23/SP23-056.yaml
+      - pack_23/SP23-057.yaml
+      - pack_23/SP23-058.yaml
+presetRefs:
+  - pack_23/SP23-001.yaml
+  - pack_23/SP23-002.yaml
+  - pack_23/SP23-003.yaml
+  - pack_23/SP23-004.yaml
+  - pack_23/SP23-005.yaml
+  - pack_23/SP23-006.yaml
+  - pack_23/SP23-007.yaml
+  - pack_23/SP23-008.yaml
+  - pack_23/SP23-009.yaml
+  - pack_23/SP23-010.yaml
+  - pack_23/SP23-011.yaml
+  - pack_23/SP23-012.yaml
+  - pack_23/SP23-013.yaml
+  - pack_23/SP23-014.yaml
+  - pack_23/SP23-015.yaml
+  - pack_23/SP23-016.yaml
+  - pack_23/SP23-017.yaml
+  - pack_23/SP23-018.yaml
+  - pack_23/SP23-019.yaml
+  - pack_23/SP23-020.yaml
+  - pack_23/SP23-021.yaml
+  - pack_23/SP23-022.yaml
+  - pack_23/SP23-023.yaml
+  - pack_23/SP23-024.yaml
+  - pack_23/SP23-025.yaml
+  - pack_23/SP23-026.yaml
+  - pack_23/SP23-027.yaml
+  - pack_23/SP23-028.yaml
+  - pack_23/SP23-029.yaml
+  - pack_23/SP23-030.yaml
+  - pack_23/SP23-031.yaml
+  - pack_23/SP23-032.yaml
+  - pack_23/SP23-033.yaml
+  - pack_23/SP23-034.yaml
+  - pack_23/SP23-035.yaml
+  - pack_23/SP23-036.yaml
+  - pack_23/SP23-037.yaml
+  - pack_23/SP23-038.yaml
+  - pack_23/SP23-039.yaml
+  - pack_23/SP23-040.yaml
+  - pack_23/SP23-041.yaml
+  - pack_23/SP23-042.yaml
+  - pack_23/SP23-043.yaml
+  - pack_23/SP23-044.yaml
+  - pack_23/SP23-045.yaml
+  - pack_23/SP23-046.yaml
+  - pack_23/SP23-047.yaml
+  - pack_23/SP23-048.yaml
+  - pack_23/SP23-049.yaml
+  - pack_23/SP23-050.yaml
+  - pack_23/SP23-051.yaml
+  - pack_23/SP23-052.yaml
+  - pack_23/SP23-053.yaml
+  - pack_23/SP23-054.yaml
+  - pack_23/SP23-055.yaml
+  - pack_23/SP23-056.yaml
+  - pack_23/SP23-057.yaml
+  - pack_23/SP23-058.yaml

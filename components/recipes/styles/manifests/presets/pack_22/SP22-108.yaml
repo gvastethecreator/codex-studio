@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP22-108
+packId: pack_22
+name: Tonal Graphite with Color Accents
+category: 1. Workshop Painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - workshop-painting
+  - graphite-color
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Graphite-led tonal drawing builds volume through pencil pressure and stroke direction, with
+    limited color accents subordinate to the drawing.
+  subject_treatment: >-
+    Preserve requested identity, proportions, pose and action. Use clean exploratory contours without
+    ghosted duplicate silhouettes or changes to the subject.
+  color_and_tone: >-
+    Maintain a broad graphite value range and keep color accents subordinate within the requested
+    palette. Do not prescribe an accent hue or remove colors the user requested.
+  lighting_and_shadow: >-
+    Follow the requested lighting and shadows through pencil pressure and tonal grouping. Do not add
+    a new light source or alter the existing value direction.
+  texture_and_material: >-
+    Let the drawing support show through in light areas and around pencil marks without forcing an
+    off-white backdrop or changing represented materials.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and element placement. Do not convert the image
+    into a sketch sheet or add an annotation layout unless requested.
+  atmosphere_and_mood: >-
+    Keep the requested mood. Graphite marks do not add notes, labels, a classroom or a concept-art
+    presentation.
+  rendering_and_quality: >-
+    Group graphite values clearly, retain a clean primary contour and place color accents selectively.
+    Avoid construction ghosts and annotations not present in the request.
+avoidRules:
+  - ghosted duplicate contours
+  - unrequested sketch annotations
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-108.webp
+attributes:
+  negativePrompt: ghosted duplicate contours, unrequested sketch annotations
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: drawing
+    avoidRules:
+      - text: ghosted duplicate contours
+        field: rendering_and_quality
+      - text: unrequested sketch annotations
+        field: rendering_and_quality
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S008
+    sourceTitle: Graphite Colorstudy
+    referenceIds:
+      - S15
+      - S52
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: workshop-painting
+  categoryName: 1. Workshop Painting
+  tags:
+    - trading-card-illustration
+    - workshop-painting
+    - graphite-color
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

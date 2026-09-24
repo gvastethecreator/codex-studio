@@ -13,68 +13,42 @@ tags:
   - caricature-and-cartoon-styles
 visualDna:
   aesthetic: >-
-    Beavis and Butt-Head - Dumb Couch Slouch acts as a transferable cinematic-media router: start
-    from Mouth-breathing delinquent caricature, slouch nihilism, ugly low-rent interiors as style
-    anchor, cheap music-video culture, vacant deadbrain energy, pencil-neck stupidity, Slouch
-    geometry, deadbeat clutter texture, ugly profile-like shapes, cheap-TV ambience, vacant posture
-    and caricature and cartoon system built from exaggeration rules, line instability, body-shape
-    grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media
-    behavior to prompt X instead of recreating a fixed demo image.
+    Use this drawing language: Low-energy deadpan cartoon with slack contours, drooping
+    geometry, sparse features, muted TV colors, stale textures, and weight-heavy pose lines.
+    Apply it to the supplied content without requiring a particular cast, place, or story.
   subject_treatment: >-
-    Transform any prompt subject through Jagged slack contours, pencil-neck angles, ugly
-    profile-like construction, slow posture sag; preserve the requested subject while exaggerating
-    proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up
-    detail according to the preset, keeping the requested identity, silhouette, action, object
-    function, or setting legible.
+    Apply slack contours, sloped angles, slow sag, and sparse feature marks where the form
+    supports them to the supplied subject while preserving its identity, silhouette, requested
+    action, actual material, and function. Change the drawn treatment, not the underlying
+    content.
   color_and_tone: >-
-    Build color with Cheap TV beige, nicotine yellow, washed denim blue, dull brown, cathode green,
-    stale red; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens,
-    toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with
-    deliberate value grouping, accent control, and process-specific limits rather than generic color
-    wash.
+    Use TV beige, nicotine yellow, washed denim blue, dull brown, cathode green, and stale red
+    as style colors while honoring any explicit color requirements in the request.
   lighting_and_shadow: >-
-    Handle light through Flat cathode glow, low-rent interior volume ambience, no glamour, tired
-    exposure; shape light minimally through flat cartoon value, poster contrast, marker fill,
-    gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and
-    shadow structure support the media process without overwriting the requested content.
+    Use flat muted fill with a faint cathode-like glow as a visual treatment, while respecting
+    any lighting instructions in the request.
   texture_and_material: >-
-    Render Analog TV grain, stained fabric suggestion, cheap wall texture, rough ink edge; surface
-    detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle
-    grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale
-    coherent and avoiding noisy filler texture.
+    Render analog-TV grain, restrained wear-like marks, faint grime, and rough ink edges as
+    drawn or printed surface marks over the existing material; do not change the subject's
+    actual substance or function.
   camera_and_composition: >-
-    Structure the image through Gravity-heavy slouch, flattened posture, jagged head shapes,
-    underfed proportion logic; compose through readable gag timing, grotesque close-up, slouch
-    geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a
-    named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style
-    work.
+    Use drooping angles and lower visual weight only where the supplied form supports it; keep
+    the environment as requested.
   atmosphere_and_mood: >-
-    Keep the mood Idiotic, lazy, mean, vacant, mood carried by Beavis and Butt-Head - Dumb Couch
-    Slouch media process, signal pressure, and visual restraint; derive mood from adult absurdity,
-    nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish
-    personality, letting the media style alter interpretation without demanding a specific story,
-    location, or actor.
+    Slack, dry, and withdrawn; express the energy through contour, spacing, or posture suited to
+    the supplied subject.
   rendering_and_quality: >-
-    Finish with Ugly deadpan adult cartoon, low-energy slouch caricature, anti-glamour TV satire;
-    finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact
-    character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised
-    surfaces where appropriate, and enough process evidence to make the style recognizable.
+    Finish with rough ink edge, muted cel tones, and deliberately low-energy shape design.
   key_features: >-
-    Mouth-breathing delinquent caricature, slouch nihilism, ugly low-rent interiors as style anchor,
-    cheap music-video culture, vacant deadbrain energy, pencil-neck stupidity; Slouch geometry,
-    deadbeat clutter texture, ugly profile-like shapes, cheap-TV ambience, vacant posture; Cheap TV
-    beige, nicotine yellow, washed denim blue, dull brown, cathode green, stale red; Analog TV
-    grain, stained fabric suggestion, cheap wall texture, rough ink edge; Gravity-heavy slouch,
-    flattened posture, jagged head shapes, underfed proportion logic
+    slack contours; drooping geometry; sparse features; muted TV colors; weight-heavy shape cues
   creative_brief: >-
-    Apply Beavis and Butt-Head - Dumb Couch Slouch as a cinematic-media preset over prompt X:
-    preserve the user's requested subject, then route lens behavior, palette, light, signal or film
-    texture, composition, mood, and final media craft through Mouth-breathing delinquent caricature,
-    slouch nihilism, ugly low-rent interiors as style anchor, cheap music-video culture, vacant
-    deadbrain energy, pencil-neck stupidity, Slouch geometry, deadbeat clutter texture, ugly
-    profile-like shapes, cheap-TV ambience, vacant posture, Analog TV grain, stained fabric
-    suggestion, cheap wall texture, rough ink edge without requiring the card image's original
-    subject.
+    Render the supplied content with slack contours, sloped angles, slow sag, and sparse feature
+    marks where the form supports them. Use TV beige, nicotine yellow, washed denim blue, dull
+    brown, cathode green, and stale red as style colors while honoring any explicit color
+    instructions. Apply analog-TV grain, restrained wear-like marks, faint grime, and rough ink
+    edges as drawn or printed marks over the existing material, without changing what the
+    subject is made of or how it functions. Preserve the requested subject, action, and setting;
+    follow the supplied composition and add no unrequested cast, location, lettering, or gag.
 avoidRules:
   - digital
   - HD

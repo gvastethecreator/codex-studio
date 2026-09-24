@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP22-207
+packId: pack_22
+name: Balanced Flat-Line Illustration
+category: 14. Symbolic Graphic Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - symbolic-graphic-illustration
+  - balanced-flat-line-illustration
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Flat printed forms use even, controlled linework and clear color separations, with decorative curves
+    kept subordinate to the subject.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose, action and function. Keep interior detail
+    selective and do not duplicate, mirror or recast the subject.
+  color_and_tone: >-
+    Retain the requested palette in separated color fields with useful open reserves; do not impose fixed
+    inks or period colors.
+  lighting_and_shadow: >-
+    Respect the requested illumination and express it through simple flat-value changes rather than
+    photoreal shading or a new source.
+  texture_and_material: >-
+    Keep the graphic surface clean and flat. Preserve the materials represented in the requested image
+    rather than implying a physical card stock finish.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, frame and placement. Mirroring, doubled figures, symmetry and
+    card layout are separate choices and are not implied by this style.
+  atmosphere_and_mood: >-
+    Maintain the requested setting and tone; balanced linework does not create a court, deck or historical
+    story by itself.
+  rendering_and_quality: >-
+    Use steady outer contours with modest controlled variation, cleanly separated inks and reduced
+    interior marks so the full silhouette remains readable.
+avoidRules:
+  - automatic mirroring, duplication or symmetry
+  - unrequested card frames, lettering or period motifs
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-207.webp
+attributes:
+  negativePrompt: automatic mirroring, duplication or symmetry, unrequested card frames, lettering or period motifs
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: drawing
+    avoidRules:
+      - text: automatic mirroring, duplication or symmetry
+        field: camera_and_composition
+      - text: unrequested card frames, lettering or period motifs
+        field: atmosphere_and_mood
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S107
+    sourceTitle: Courtline Flatcolor
+    referenceIds:
+      - S56
+      - S30
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: symbolic-graphic-illustration
+  categoryName: 14. Symbolic Graphic Illustration
+  tags:
+    - trading-card-illustration
+    - symbolic-graphic-illustration
+    - balanced-flat-line-illustration
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

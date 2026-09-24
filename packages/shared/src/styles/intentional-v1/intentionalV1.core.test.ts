@@ -315,6 +315,18 @@ describe('intentional styles core', () => {
       (await core.compileStyleRequest(r)).issues.some((i) => i.code === 'MEDIUM_COMPETITION'),
     );
   });
+  it('sends active medium as an output instruction without leaking disabled medium fields', async () => {
+    const r = await request('SP17-001');
+    assert.match(
+      (await core.compileStyleRequest(r)).effectivePrompt,
+      /Output medium: illustration\. Render the whole image in this medium/,
+    );
+    r.layers[0].fields.aesthetic.enabled = false;
+    assert.doesNotMatch(
+      (await core.compileStyleRequest(r)).effectivePrompt,
+      /Output medium: illustration/,
+    );
+  });
   it('known negative-medium conflict blocks', async () => {
     const r = await request('SP06-001');
     r.baseAvoidRules = ['painting'];

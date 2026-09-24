@@ -1,0 +1,100 @@
+schemaVersion: 1
+id: SP23-047
+packId: pack_23
+name: Layered Flat-Plane Rendering
+category: 11. Modern Visual Techniques
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - modern-visual-techniques
+  - layered-flat-plane-rendering
+  - portable-visual-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Construct forms from flat painted planes with subtle edge thickness and short local occlusion, so
+    overlaps create depth without rounding the whole image into volumetric sculpture.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, count, pose, action and function. Separate existing
+    parts into readable planes without adding objects, changing their relationships or omitting detail.
+  color_and_tone: >-
+    Retain the requested palette and value relationships. Use distinct flat areas to clarify existing
+    forms without imposing a narrow or fixed color scheme.
+  lighting_and_shadow: >-
+    Follow the requested lighting and use brief occlusion at actual overlaps; do not invent a light
+    source, cast shadow or paper-fold effect.
+  texture_and_material: >-
+    Keep surfaces mostly flat and clean, with only fine edge thickness where a cut-plane helps explain
+    depth. Preserve the materials represented in the requested content.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing, scale and placement. Layered rendering does not
+    require a front-facing pose, vignette or display base.
+  atmosphere_and_mood: >-
+    Retain the requested setting and mood; shallow layer overlaps change the rendering, not the scene
+    or narrative.
+  rendering_and_quality: >-
+    Keep plane boundaries crisp and overlap shadows short. Maintain the original proportions and depth
+    cues without rounded 3D modeling or excessive layer separation.
+avoidRules:
+  - rounded modeling that erases the flat-plane construction
+  - unrequested display framing or layout
+  - details that alter identity or function
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-047.webp
+attributes:
+  negativePrompt: rounded modeling that erases the flat-plane construction, unrequested display framing or layout, details that alter identity or function
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: layered-flat-plane-illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: layered-flat-plane-illustration
+    avoidRules:
+      - text: rounded modeling that erases the flat-plane construction
+        field: rendering_and_quality
+      - text: unrequested display framing or layout
+        field: global
+      - text: details that alter identity or function
+        field: subject_treatment
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: MO-01
+    sourceTitle: Paper Theater
+    historicalScope: 'Papercraft digital · referencia Wildermyth'
+    referenceIds:
+      - S49
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: modern-visual-techniques
+  categoryName: 11. Modern Visual Techniques
+  tags:
+    - curation-v2
+    - modern-visual-techniques
+    - layered-flat-plane-rendering
+    - portable-visual-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

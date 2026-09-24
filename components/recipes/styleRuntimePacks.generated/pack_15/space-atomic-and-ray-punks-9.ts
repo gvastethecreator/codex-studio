@@ -4,235 +4,123 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP15-065',
-    name: 'Neon Isotope Civic Glow',
+    id: 'SP15-117',
+    name: 'Atompunk',
     category: '9. Space, Atomic & Ray Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, readable signs, radiation trefoil, hazard logo, flag emblem, brand logo, UI, numbers, text, luxury mall, photoreal chrome, glossy archviz, empty plaza postcard, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, glossy car ad, diner dependency, readable signage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'a mandatory reactor, atom icon, or laboratory, dystopian ruin replacing the optimistic design language, chrome reflections that obscure form',
     style: {
       aesthetic:
-        'Neon Isotope Civic Glow operates as a portable punk-spectrum router: combine Neon Isotope Civic Glow identity cues through isotope orbits; uranium glow; chrome curves; terrazzo blocks; polished enamel; atompunk civic neon that transfers isotope-orbit geometry with space/atomic/ray punk grammar with rocket-age curves, isotope glow, reactor leisure, orbit chrome, plasma transit, lunar cultivation, and optimistic danger, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'Use an optimistic atomic-age design language: streamlined mid-century silhouettes, orbit diagrams, radial starbursts, enamel panels, and terrazzo-like graphic blocks, applied as period-flavored form design rather than a required reactor scene.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through atomic signage, chrome arcs, rocket-fin wedges, pressure suit seams, lunar greenhouse edges, plasma rails, tether curves, and vacuum-clean silhouette; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve the requested subject and action; shape unspecified hardware, clothing, or architecture with smooth aerodynamic curves, rounded corners, and a few atomic orbit motifs.',
       color_and_tone:
-        'Map color through uranium green, coral red, chrome silver, cream, star blue, cherry red, moon white, brushed steel, and vacuum black; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Favor warm cream, turquoise, coral, leaf green, and polished chrome notes, with dark graphite used as a small structural counterweight; retain any explicitly requested palette.',
       lighting_and_shadow:
-        "Use reactor glow, blue-hour neon, observation-window light, plasma bloom, lunar bounce, panel glow, and chrome-reflection cuts; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Use clean bright key light, broad enamel highlights, and soft-edged shadows that keep the design buoyant and legible rather than ominous.',
       texture_and_material:
-        'Render chrome blocks, enamel panels, vinyl bands, glass blocks, brushed steel, coolant glass, vacuum fabric, and clean atomic decals without readable text; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Render smooth enamel, chrome trim, terrazzo chips, and molded plastics with restrained wear; keep material changes broad and graphic.',
       camera_and_composition:
-        'Compose through orbit curves, ray-age wedges, sleek public transit rhythm, spherical depth cues, and confident subject spacing without diner or vehicle dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Balance rounded masses around the subject with orbit or radial accents; preserve requested framing and use the atomic-age geometry to direct the eye, not to replace the subject.',
       atmosphere_and_mood:
-        'Carry mood through bright civic weirdness, touristic optimism, nocturnal fun, clinical danger, lunar fragility, and retrofuturist social energy; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Suggest confident public futurism and everyday invention; maintain an optimistic note without requiring a city, laboratory, or mid-century character.',
       rendering_and_quality:
-        'Finish with flat-to-painterly raypunk illustration with clean chrome shapes, denoised glow, matte blacks, and no glossy car-ad realism; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'isotope orbits; uranium glow; chrome curves; terrazzo blocks; polished enamel; atompunk civic neon that transfers isotope-orbit geometry',
-      creative_brief:
-        'Use Neon Isotope Civic Glow after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies isotope orbits, uranium glow, chrome curves, terrazzo blocks, polished enamel, atompunk civic neon that transfers isotope-orbit geometry, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Use polished illustration with clear contours, simplified reflective shapes, and a small number of crisp graphic accents; avoid realistic lens effects.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-117'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-066',
-    name: 'Reactor Coolant Leisure',
+    id: 'SP15-118',
+    name: 'Raypunk',
     category: '9. Space, Atomic & Ray Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, readable warning text, radiation trefoil, hazard logo, control panels, cockpit UI, numbered labels, flag emblem, brand logo, gas-mask soldier, photoreal glass, PBR metal, glossy archviz, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, glossy car ad, diner dependency, readable signage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'a required rocket, raygun, or battle, photorealistic space imagery, speed lines crossing over and obscuring the focal subject',
     style: {
       aesthetic:
-        'Reactor Coolant Leisure operates as a portable punk-spectrum router: combine Reactor Coolant Leisure identity cues through coolant glow; observation bands; suit silhouettes; enamel blocks; blank safety geometry; atomic leisure infrastructure that transfers coolant-blue glow with space/atomic/ray punk grammar with rocket-age curves, isotope glow, reactor leisure, orbit chrome, plasma transit, lunar cultivation, and optimistic danger, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'Draw on illustrated pulp space adventure: sharply tapered fins and wedges, ray-beam arcs, bold speed contours, and simplified cosmic machinery create directional energy rather than neutral orbital geometry.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through atomic signage, chrome arcs, rocket-fin wedges, pressure suit seams, lunar greenhouse edges, plasma rails, tether curves, and vacuum-clean silhouette; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve the requested subject, pose, and action; angle unspecified forms into streamlined silhouettes and add beam-like graphic accents only where they support the focal action.',
       color_and_tone:
-        'Map color through uranium green, coral red, chrome silver, cream, star blue, cherry red, moon white, brushed steel, and vacuum black; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Pair midnight blue or charcoal with oxide orange, cream, and a clear plasma accent such as red or cobalt; keep color planes bold and distinctly separated.',
       lighting_and_shadow:
-        "Use reactor glow, blue-hour neon, observation-window light, plasma bloom, lunar bounce, panel glow, and chrome-reflection cuts; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Use hard-edged beam light, warm reflected accents, and large graphic shadows; preserve dimensional form without a glossy 3D-render look.',
       texture_and_material:
-        'Render chrome blocks, enamel panels, vinyl bands, glass blocks, brushed steel, coolant glass, vacuum fabric, and clean atomic decals without readable text; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Combine matte painted metal, canvas, and enamel-like plates with sparse scuffs; use inked contour and selective crosshatch to carry the pulp illustration identity.',
       camera_and_composition:
-        'Compose through orbit curves, ray-age wedges, sleek public transit rhythm, spherical depth cues, and confident subject spacing without diner or vehicle dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Build a clear directional sweep through wedges, arcs, or speed lines; keep the focal subject dominant and treat any background as secondary within the requested setting.',
       atmosphere_and_mood:
-        'Carry mood through bright civic weirdness, touristic optimism, nocturnal fun, clinical danger, lunar fragility, and retrofuturist social energy; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        "Feel daring, inventive, and slightly strange, with the requested scene's stakes rather than mandatory danger or combat.",
       rendering_and_quality:
-        'Finish with flat-to-painterly raypunk illustration with clean chrome shapes, denoised glow, matte blacks, and no glossy car-ad realism; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'coolant glow; observation bands; suit silhouettes; enamel blocks; blank safety geometry; atomic leisure infrastructure that transfers coolant-blue glow',
-      creative_brief:
-        'Use Reactor Coolant Leisure after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies coolant glow, observation bands, suit silhouettes, enamel blocks, blank safety geometry, atomic leisure infrastructure that transfers coolant-blue glow, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Use decisive inked outlines, broad color planes, and restrained hatching; keep silhouette and action readable at small scale.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-118'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-067',
-    name: 'Orbit Chrome Curves',
+    id: 'SP15-119',
+    name: 'Salvagepunk',
     category: '9. Space, Atomic & Ray Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, readable signs, diner logo, brand logo, letters, numbers, menu boards, license plates, photoreal chrome, glossy car ad, empty car render, luxury mall, commerce-system aisle, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, diner dependency, readable signage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'a required spaceship, scrapbike, sail, or wreck, random junk piles without functional joins, uniform rust or grime hiding the repair logic',
     style: {
       aesthetic:
-        'Orbit Chrome Curves operates as a portable punk-spectrum router: combine Orbit Chrome Curves identity cues through blank orbit sign shapes; aerodynamic chrome wedges; chrome counter curves; vinyl blocks; matte midnight planes; vinyl color blocks with space/atomic/ray punk grammar with rocket-age curves, isotope glow, reactor leisure, orbit chrome, plasma transit, lunar cultivation, and optimistic danger, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'Make visible reuse the design signature: mismatched recovered panels, repurposed hardware, rope or cable tethers, patched canvas, and deliberate repair seams show how a form was adapted from what was available.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through atomic signage, chrome arcs, rocket-fin wedges, pressure suit seams, lunar greenhouse edges, plasma rails, tether curves, and vacuum-clean silhouette; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve the requested subject and action; translate unspecified structures or accessories into visibly reused components and practical repairs without changing the subject into a vehicle or scrap heap.',
       color_and_tone:
-        'Map color through uranium green, coral red, chrome silver, cream, star blue, cherry red, moon white, brushed steel, and vacuum black; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Pair weathered steel, canvas, oxide, wood, and charcoal with a few clean repair marks or weld-warm accents; retain enough unweathered color to keep the focal form clear.',
       lighting_and_shadow:
-        "Use reactor glow, blue-hour neon, observation-window light, plasma bloom, lunar bounce, panel glow, and chrome-reflection cuts; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Use directional light to reveal joins, layered panels, and patched edges; keep weld or signal glow small and functional.',
       texture_and_material:
-        'Render chrome blocks, enamel panels, vinyl bands, glass blocks, brushed steel, coolant glass, vacuum fabric, and clean atomic decals without readable text; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Distinguish rusted metal, tarred seams, salt wood, canvas, and replacement fasteners; concentrate weathering around contact and repair points.',
       camera_and_composition:
-        'Compose through orbit curves, ray-age wedges, sleek public transit rhythm, spherical depth cues, and confident subject spacing without diner or vehicle dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Let joins and tethers make readable diagonals around the subject; preserve the source framing and avoid dense junk accumulation.',
       atmosphere_and_mood:
-        'Carry mood through bright civic weirdness, touristic optimism, nocturnal fun, clinical danger, lunar fragility, and retrofuturist social energy; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Suggest resilience and inventive reuse, which can be hopeful, rough, cosmic, maritime, or urban as the prompt requires.',
       rendering_and_quality:
-        'Finish with flat-to-painterly raypunk illustration with clean chrome shapes, denoised glow, matte blacks, and no glossy car-ad realism; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'blank orbit sign shapes; aerodynamic chrome wedges; chrome counter curves; vinyl blocks; matte midnight planes; vinyl color blocks',
-      creative_brief:
-        'Use Orbit Chrome Curves after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies blank orbit sign shapes, aerodynamic chrome wedges, chrome counter curves, vinyl blocks, matte midnight planes, vinyl color blocks, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        "Use broad, clean material shapes and clearly drawn repair logic; keep scars subordinate to the subject's silhouette.",
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-119'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-068',
-    name: 'Rocket Fin Signal',
+    id: 'SP15-120',
+    name: 'Lunarpunk',
     category: '9. Space, Atomic & Ray Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, cross antenna, religious icon, altar, chapel interior, readable insignia, rocket logo, cockpit glow, cockpit UI, starfield wallpaper, heroic spaceship poster, raygun, weapon hero, photoreal rocket metal, dusty realism, generic soldier hero, guard pin-up, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, glossy car ad, diner dependency, readable signage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'a required moon base, dome, dish, or greenhouse, generic neon cyberpunk lighting, vegetation or glow obscuring the subject',
     style: {
       aesthetic:
-        'Rocket Fin Signal operates as a portable punk-spectrum router: combine Rocket Fin Signal identity cues through rocket fins; antenna arcs; oxide dust planes; canvas suit texture; sparse star dots; oxide-red dust planes with space/atomic/ray punk grammar with rocket-age curves, isotope glow, reactor leisure, orbit chrome, plasma transit, lunar cultivation, and optimistic danger, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'Express ecological futurism through quiet habitat curves, planted edges, responsive relay shapes, and moon-pale surfaces that coexist with living growth; use lunar light as a design mood, not a mandatory landscape.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through atomic signage, chrome arcs, rocket-fin wedges, pressure suit seams, lunar greenhouse edges, plasma rails, tether curves, and vacuum-clean silhouette; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve the requested subject and action; add sustainable joins, soft habitat geometry, or integrated plant forms only to compatible unspecified details without turning every scene into a greenhouse.',
       color_and_tone:
-        'Map color through uranium green, coral red, chrome silver, cream, star blue, cherry red, moon white, brushed steel, and vacuum black; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Use moon-white, cool gray, leaf green, earth gold, and muted blue with calm value steps; allow the requested palette to remain primary.',
       lighting_and_shadow:
-        "Use reactor glow, blue-hour neon, observation-window light, plasma bloom, lunar bounce, panel glow, and chrome-reflection cuts; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Use soft earthlight-like bounce and clear pale highlights with gentle but legible shadow; avoid hazy glow that erases structure.',
       texture_and_material:
-        'Render chrome blocks, enamel panels, vinyl bands, glass blocks, brushed steel, coolant glass, vacuum fabric, and clean atomic decals without readable text; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Combine matte ceramic or pale composite, woven growing surfaces, clear glass, and living foliage in deliberate balance; keep materials clean and repairable.',
       camera_and_composition:
-        'Compose through orbit curves, ray-age wedges, sleek public transit rhythm, spherical depth cues, and confident subject spacing without diner or vehicle dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Let a few arcs or habitat curves lead around the subject while plant forms stay subordinate; preserve requested crop and avoid forcing a dome or relay dish.',
       atmosphere_and_mood:
-        'Carry mood through bright civic weirdness, touristic optimism, nocturnal fun, clinical danger, lunar fragility, and retrofuturist social energy; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Feel restorative, communal, and quietly advanced, without assuming a lunar colony or utopian setting.',
       rendering_and_quality:
-        'Finish with flat-to-painterly raypunk illustration with clean chrome shapes, denoised glow, matte blacks, and no glossy car-ad realism; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'rocket fins; antenna arcs; oxide dust planes; canvas suit texture; sparse star dots; oxide-red dust planes',
-      creative_brief:
-        'Use Rocket Fin Signal after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies rocket fins, antenna arcs, oxide dust planes, canvas suit texture, sparse star dots, oxide-red dust planes, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Use simplified luminous contours, clear plant silhouettes, and restrained gradients; maintain strong focus at thumbnail scale.',
     },
-  },
-  {
-    id: 'SP15-069',
-    name: 'Comet Salvage Tether',
-    category: '9. Space, Atomic & Ray Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, spaceship hero, cockpit UI, weapon, explosion, readable satellite labels, NASA-like logo, hazard symbols, dense cable spaghetti, starfield wallpaper, photoreal metal, PBR panels, tiny debris field, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, glossy car ad, diner dependency, readable signage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Comet Salvage Tether operates as a portable punk-spectrum router: combine Comet Salvage Tether identity cues through tether arcs; comet ice; satellite panels; welding glow; scorched metal; space salvagepunk that transfers tether lines with space/atomic/ray punk grammar with rocket-age curves, isotope glow, reactor leisure, orbit chrome, plasma transit, lunar cultivation, and optimistic danger, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through atomic signage, chrome arcs, rocket-fin wedges, pressure suit seams, lunar greenhouse edges, plasma rails, tether curves, and vacuum-clean silhouette; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through uranium green, coral red, chrome silver, cream, star blue, cherry red, moon white, brushed steel, and vacuum black; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use reactor glow, blue-hour neon, observation-window light, plasma bloom, lunar bounce, panel glow, and chrome-reflection cuts; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render chrome blocks, enamel panels, vinyl bands, glass blocks, brushed steel, coolant glass, vacuum fabric, and clean atomic decals without readable text; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through orbit curves, ray-age wedges, sleek public transit rhythm, spherical depth cues, and confident subject spacing without diner or vehicle dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through bright civic weirdness, touristic optimism, nocturnal fun, clinical danger, lunar fragility, and retrofuturist social energy; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with flat-to-painterly raypunk illustration with clean chrome shapes, denoised glow, matte blacks, and no glossy car-ad realism; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'tether arcs; comet ice; satellite panels; welding glow; scorched metal; space salvagepunk that transfers tether lines',
-      creative_brief:
-        'Use Comet Salvage Tether after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies tether arcs, comet ice, satellite panels, welding glow, scorched metal, space salvagepunk that transfers tether lines, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-070',
-    name: 'Plasma Rail Arcs',
-    category: '9. Space, Atomic & Ray Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, long tunnel, corridor, readable station signs, route maps, UI panels, train logo, warning labels, numbers, cockpit, weapon, photoreal glass, photoreal steel, PBR metal, dense crowd texture, commerce-system aisle, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, glossy car ad, diner dependency, readable signage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Plasma Rail Arcs operates as a portable punk-spectrum router: combine Plasma Rail Arcs identity cues through plasma rail arcs; ray arches; cream tile slabs; brushed steel; orange motion lines; raypunk transit-motion style that transfers plasma-blue rails with space/atomic/ray punk grammar with rocket-age curves, isotope glow, reactor leisure, orbit chrome, plasma transit, lunar cultivation, and optimistic danger, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through atomic signage, chrome arcs, rocket-fin wedges, pressure suit seams, lunar greenhouse edges, plasma rails, tether curves, and vacuum-clean silhouette; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through uranium green, coral red, chrome silver, cream, star blue, cherry red, moon white, brushed steel, and vacuum black; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use reactor glow, blue-hour neon, observation-window light, plasma bloom, lunar bounce, panel glow, and chrome-reflection cuts; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render chrome blocks, enamel panels, vinyl bands, glass blocks, brushed steel, coolant glass, vacuum fabric, and clean atomic decals without readable text; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through orbit curves, ray-age wedges, sleek public transit rhythm, spherical depth cues, and confident subject spacing without diner or vehicle dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through bright civic weirdness, touristic optimism, nocturnal fun, clinical danger, lunar fragility, and retrofuturist social energy; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with flat-to-painterly raypunk illustration with clean chrome shapes, denoised glow, matte blacks, and no glossy car-ad realism; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'plasma rail arcs; ray arches; cream tile slabs; brushed steel; orange motion lines; raypunk transit-motion style that transfers plasma-blue rails',
-      creative_brief:
-        'Use Plasma Rail Arcs after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies plasma rail arcs, ray arches, cream tile slabs, brushed steel, orange motion lines, raypunk transit-motion style that transfers plasma-blue rails, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-071',
-    name: 'Lunar Relay Cultivation',
-    category: '9. Space, Atomic & Ray Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, realistic astronaut anatomy, detailed face, workers-only composition, anonymous worker crew, lens blur, bokeh, depth-of-field photo look, generic glass utopia, photoreal glass dome, realistic transparent glass, realistic reflections, luxury eco garden, UI panels, readable labels, logo, crowded greenhouse, commerce-system aisle, starfield wallpaper, PBR metal, hard-surface render, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, hyper-detailed concept art, watermark, text, generic style, over-abstract, interchangeable preset, duplicated motifs, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, glossy car ad, diner dependency, readable signage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Lunar Relay Cultivation operates as a portable punk-spectrum router: combine Lunar Relay Cultivation identity cues through relay dish arcs; dome-glow curves; pale hydroponic growth; earthlight; moon-white surfaces; leaf green with space/atomic/ray punk grammar with rocket-age curves, isotope glow, reactor leisure, orbit chrome, plasma transit, lunar cultivation, and optimistic danger, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through atomic signage, chrome arcs, rocket-fin wedges, pressure suit seams, lunar greenhouse edges, plasma rails, tether curves, and vacuum-clean silhouette; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through uranium green, coral red, chrome silver, cream, star blue, cherry red, moon white, brushed steel, and vacuum black; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use reactor glow, blue-hour neon, observation-window light, plasma bloom, lunar bounce, panel glow, and chrome-reflection cuts; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render chrome blocks, enamel panels, vinyl bands, glass blocks, brushed steel, coolant glass, vacuum fabric, and clean atomic decals without readable text; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through orbit curves, ray-age wedges, sleek public transit rhythm, spherical depth cues, and confident subject spacing without diner or vehicle dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through bright civic weirdness, touristic optimism, nocturnal fun, clinical danger, lunar fragility, and retrofuturist social energy; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with flat-to-painterly raypunk illustration with clean chrome shapes, denoised glow, matte blacks, and no glossy car-ad realism; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'relay dish arcs; dome-glow curves; pale hydroponic growth; earthlight; moon-white surfaces; leaf green',
-      creative_brief:
-        'Use Lunar Relay Cultivation after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies relay dish arcs, dome-glow curves, pale hydroponic growth, earthlight, moon-white surfaces, leaf green, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-072',
-    name: 'Lunar Acoustic Resonance',
-    category: '9. Space, Atomic & Ray Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, realistic astronaut anatomy, detailed face, workers-only composition, anonymous worker crew, lens blur, bokeh, depth-of-field photo look, flags, cross, religious icon, altar, readable marks, mission logo, UI, starfield wallpaper, fantasy temple, choir robe portrait, photoreal suit glass, realistic dish metal, PBR dishes, hard-surface render, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, glossy car ad, diner dependency, readable signage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Lunar Acoustic Resonance operates as a portable punk-spectrum router: combine Lunar Acoustic Resonance identity cues through resonant dishes; plain white fabric blocks; acoustic rigs; earthrise glow; signal gold; lunar acoustic-ritual style that transfers resonant dish shapes with space/atomic/ray punk grammar with rocket-age curves, isotope glow, reactor leisure, orbit chrome, plasma transit, lunar cultivation, and optimistic danger, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through atomic signage, chrome arcs, rocket-fin wedges, pressure suit seams, lunar greenhouse edges, plasma rails, tether curves, and vacuum-clean silhouette; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through uranium green, coral red, chrome silver, cream, star blue, cherry red, moon white, brushed steel, and vacuum black; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use reactor glow, blue-hour neon, observation-window light, plasma bloom, lunar bounce, panel glow, and chrome-reflection cuts; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render chrome blocks, enamel panels, vinyl bands, glass blocks, brushed steel, coolant glass, vacuum fabric, and clean atomic decals without readable text; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through orbit curves, ray-age wedges, sleek public transit rhythm, spherical depth cues, and confident subject spacing without diner or vehicle dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through bright civic weirdness, touristic optimism, nocturnal fun, clinical danger, lunar fragility, and retrofuturist social energy; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with flat-to-painterly raypunk illustration with clean chrome shapes, denoised glow, matte blacks, and no glossy car-ad realism; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'resonant dishes; plain white fabric blocks; acoustic rigs; earthrise glow; signal gold; lunar acoustic-ritual style that transfers resonant dish shapes',
-      creative_brief:
-        'Use Lunar Acoustic Resonance after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies resonant dishes, plain white fabric blocks, acoustic rigs, earthrise glow, signal gold, lunar acoustic-ritual style that transfers resonant dish shapes, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-120'],
+      visualEvaluation: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

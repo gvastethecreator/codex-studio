@@ -1,0 +1,62 @@
+[
+  {
+    "presetId": "SP21-001",
+    "presetName": "Stacked Paper",
+    "packId": "pack_21",
+    "packName": "Paper & Pigment",
+    "category": "1. Paper & Pigment",
+    "file": "assets/recipes/styles/defaults/SP21-001.webp",
+    "jobId": "4d6d1249-bf6d-4d41-b879-8ae3221aa0fd",
+    "sourceAsset": "assets/recipes/styles/defaults/SP21-001.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:18:05.972Z"
+  },
+  {
+    "presetId": "SP21-002",
+    "presetName": "Resist Wash",
+    "packId": "pack_21",
+    "packName": "Paper & Pigment",
+    "category": "1. Paper & Pigment",
+    "file": "assets/recipes/styles/defaults/SP21-002.webp",
+    "jobId": "fdea8013-e5c1-4a18-a9e3-9803fdd7e7d3",
+    "sourceAsset": "assets/recipes/styles/defaults/SP21-002.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:18:04.424Z"
+  },
+  {
+    "presetId": "SP21-003",
+    "presetName": "Opaque Planes",
+    "packId": "pack_21",
+    "packName": "Paper & Pigment",
+    "category": "1. Paper & Pigment",
+    "file": "assets/recipes/styles/defaults/SP21-003.webp",
+    "jobId": "34de4aec-863c-4136-b8c2-884f6adf345c",
+    "sourceAsset": "assets/recipes/styles/defaults/SP21-003.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:18:03.560Z"
+  },
+  {
+    "presetId": "SP21-004",
+    "presetName": "Pressed Relief",
+    "packId": "pack_21",
+    "packName": "Paper & Pigment",
+    "category": "1. Paper & Pigment",
+    "file": "assets/recipes/styles/defaults/SP21-004.webp",
+    "jobId": "75dee73b-1ca6-4d1b-a3f7-eb1907acb23a",
+    "sourceAsset": "assets/recipes/styles/defaults/SP21-004.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:18:15.025Z"
+  }
+]

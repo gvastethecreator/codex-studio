@@ -1,0 +1,100 @@
+schemaVersion: 1
+id: SP22-215
+packId: pack_22
+name: Matte Polygonal Rendering
+category: 15. Digital Rendering Methods
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - digital-rendering-methods
+  - matte-polygonal-rendering
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Describe existing forms with visible three-dimensional polygon planes, broad matte surfaces and
+    clean faceted transitions instead of laying a triangular filter over a finished image.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, count, pose, action and function. Simplify geometry
+    only as far as the defining silhouette and structural relationships remain clear.
+  color_and_tone: >-
+    Retain the requested palette and use restrained tonal shifts across planes; do not substitute a
+    fixed low-poly color scheme.
+  lighting_and_shadow: >-
+    Follow the requested light direction and let broad plane values describe it without adding a new
+    source, dramatic glow or unrequested cast shadow.
+  texture_and_material: >-
+    Use simple matte materials with low-frequency surface detail. Keep material identity legible and
+    avoid drawn outlines or high-frequency textures unless requested.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, perspective, crop, framing and placement. An isometric camera or
+    game-like setting is not implied.
+  atmosphere_and_mood: >-
+    Retain the requested environment and tone; faceted geometry does not add a game world or change the
+    scene.
+  rendering_and_quality: >-
+    Keep polygon planes coherent with the underlying volume and use enough facets to preserve identity;
+    avoid decorative triangles detached from the form.
+avoidRules:
+  - mandatory isometric camera or game setting
+  - triangular overlays detached from the depicted form
+  - details that alter identity or function
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-215.webp
+attributes:
+  negativePrompt: mandatory isometric camera or game setting, triangular overlays detached from the depicted form, details that alter identity or function
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: matte-faceted-3d-rendering
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: matte-faceted-3d-rendering
+    avoidRules:
+      - text: mandatory isometric camera or game setting
+        field: camera_and_composition
+      - text: triangular overlays detached from the depicted form
+        field: rendering_and_quality
+      - text: details that alter identity or function
+        field: subject_treatment
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S115
+    sourceTitle: Lowpoly Matte
+    referenceIds:
+      - S46
+      - S53
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: digital-rendering-methods
+  categoryName: 15. Digital Rendering Methods
+  tags:
+    - trading-card-illustration
+    - digital-rendering-methods
+    - matte-polygonal-rendering
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

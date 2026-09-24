@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP22-102
+packId: pack_22
+name: Opaque Acrylic Overlap
+category: 1. Workshop Painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - workshop-painting
+  - opaque-acrylic
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Opaque acrylic illustration formed by broad overlapping brush deposits, building volume through
+    paint coverage rather than transparent glazing.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Let covering strokes follow the
+    existing forms without changing their silhouette or simplifying away defining features.
+  color_and_tone: >-
+    Separate light, middle and dark value groups clearly within the requested colors. Do not impose
+    a fixed palette or add accent colors.
+  lighting_and_shadow: >-
+    Follow the requested illumination and shadow placement. Use opaque coverage and deliberate edge
+    changes to describe them without inventing gloss or a new light source.
+  texture_and_material: >-
+    Use short matte brush marks with discreet corrections where strokes overlap. Keep marks connected
+    to form rather than adding detached decorative strokes.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and element placement. Do not reframe to make
+    room for an unrequested card layout.
+  atmosphere_and_mood: >-
+    Retain the requested mood. Opaque paint coverage does not require a heroic, theatrical or staged
+    presentation.
+  rendering_and_quality: >-
+    Keep coverage opaque and value groups legible. Reserve visible brush texture for selected marks
+    instead of applying a uniform effect.
+avoidRules:
+  - decorative brush marks detached from form
+  - loose photographic shading
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-102.webp
+attributes:
+  negativePrompt: decorative brush marks detached from form, loose photographic shading
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: painting
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: painting
+    avoidRules:
+      - text: decorative brush marks detached from form
+        field: rendering_and_quality
+      - text: loose photographic shading
+        field: rendering_and_quality
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S002
+    sourceTitle: Opaque Acrylic
+    referenceIds:
+      - S17
+      - S15
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: workshop-painting
+  categoryName: 1. Workshop Painting
+  tags:
+    - trading-card-illustration
+    - workshop-painting
+    - opaque-acrylic
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

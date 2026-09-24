@@ -1,0 +1,115 @@
+schemaVersion: 1
+id: SP23-032
+packId: pack_23
+name: Matte Dithered Paint
+category: 7. Indexed Raster Language
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - indexed-raster-language
+  - compressed-painted-values
+  - selective-visible-dither
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    A matte, painted-image quality is translated into compressed values, selective detail and visible
+    dither. Keep the marks tied to form and lighting instead of applying a single noise texture over
+    the whole image.
+  subject_treatment: >-
+    Preserve the requested subject, identity, count, pose, anatomy, action and proportions. Simplify
+    existing forms through selective painted value groups without deforming anatomy, changing wardrobe
+    or adding a weapon, role or scene.
+  color_and_tone: >-
+    Preserve the requested palette and tonal relationships. Compress transitions into a modest set of
+    painted values while keeping all specified colors; do not impose monochrome or a fixed hardware
+    palette.
+  lighting_and_shadow: >-
+    Follow the requested light direction and shadow shape. Translate existing transitions into
+    visible, restrained dither and compressed painted values without inventing a new light source.
+  texture_and_material: >-
+    Keep a matte visual finish and selective surface detail. The paint-like treatment describes the
+    rendering, not a physical coating; preserve each requested material and avoid global grain or
+    uniform noise.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, orientation, scale and arrangement. Do not impose a game
+    screenshot, scene, interface or framing convention.
+  atmosphere_and_mood: >-
+    Preserve the user's setting and mood. This rendering treatment does not transfer any source
+    setting, period or narrative to an unrelated subject.
+  rendering_and_quality: >-
+    Ensure forms and volume remain intentional when residual dither is reduced. Keep detail selective,
+    values compact and texture subordinate to the subject rather than dissolving it into noise.
+avoidRules:
+  - unrequested anatomy or wardrobe changes
+  - unrequested weapons, characters or narrative setting
+  - forced monochrome or fixed historical palette
+  - global grain, noise or dither that obscures intentional form
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-032.webp
+attributes:
+  negativePrompt: >-
+    unrequested anatomy or wardrobe changes, unrequested weapons, characters or narrative setting,
+    forced monochrome or fixed historical palette, global grain, noise or dither that obscures
+    intentional form
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: matte-painted-raster-with-visible-dither
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: compressed-painted-values-selective-detail-form-led-visible-dither
+      - field: atmosphere_and_mood
+        group: source-scope
+        value: contemporary-visual-reading-of-source-game-not-its-region-or-narrative
+    avoidRules:
+      - text: unrequested anatomy or wardrobe changes
+        field: subject_treatment
+      - text: unrequested weapons, characters or narrative setting
+        field: global
+      - text: forced monochrome or fixed historical palette
+        field: color_and_tone
+      - text: global grain, noise or dither that obscures intentional form
+        field: texture_and_material
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: PX-03
+    sourceTitle: Dithered Tempera
+    historicalScope: 'Relectura contemporánea · referencia Felvidek'
+    referenceIds:
+      - S33
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: indexed-raster-language
+  categoryName: 7. Indexed Raster Language
+  tags:
+    - curation-v2
+    - indexed-raster-language
+    - compressed-painted-values
+    - selective-visible-dither
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

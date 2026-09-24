@@ -1,0 +1,106 @@
+schemaVersion: 1
+id: SP14-126
+packId: pack_14
+name: Scale Contrast
+category: Shape & Perception
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - shape-and-perception
+visualDna:
+  aesthetic: >-
+    Unequal scales of drawn marks, broad masses and fine accents establish a clear visual hierarchy.
+    Contrast comes from large quiet regions meeting compact detailed regions, without enlarging the
+    actual subject or adding miniature props.
+  subject_treatment: >-
+    Preserve the prompt's subject and action. Use scale contrast and selective contour repetition to
+    guide attention; do not reshape the subject into regalia or replace it with a sign.
+  color_and_tone: >-
+    Retain the requested palette and separate large masses from small accents by value. When color is
+    open, choose a compact relationship suited to the subject rather than defaulting to mineral gray or
+    gold.
+  lighting_and_shadow: >-
+    Respect the described source. Broad shadow masses establish scale, while small highlights or marks
+    clarify selected edges and repeated units.
+  texture_and_material: >-
+    Keep surface treatment tied to prompted materials. Vary edge and mark density locally; avoid a
+    uniform coating of ash, grain, or carved grooves.
+  camera_and_composition: >-
+    Keep the requested camera, crop and actual scale relationships. Use large-versus-small mark density
+    within the existing forms; when composition is open, balance one dominant mass with a few small
+    accents and generous space.
+  atmosphere_and_mood: >-
+    Use repetition and pause to set a measured or tense cadence. Keep emotional tone flexible; visual
+    order need not imply ritual, mourning, or authority.
+  rendering_and_quality: >-
+    Keep repeated marks distinct at card scale and reserve quiet areas around the focal form. Vary
+    spacing and size enough to avoid mechanical pattern fill or pseudo-script.
+avoidRules:
+  - Do not turn repeated marks into pseudo-writing or unreadable ornament.
+  - Do not repeat a single accent shape uniformly across every subject.
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-126.webp
+attributes:
+  negativePrompt: >-
+    Do not turn repeated marks into pseudo-writing or unreadable ornament., Do not repeat a single accent
+    shape uniformly across every subject.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: Do not turn repeated marks into pseudo-writing or unreadable ornament.
+        field: rendering_and_quality
+      - text: Do not repeat a single accent shape uniformly across every subject.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP14-005
+      - SP14-009
+      - SP14-014
+      - SP14-097
+      - SP14-098
+      - SP14-103
+      - SP14-106
+      - SP14-117
+      - SP14-118
+      - SP14-119
+      - SP14-120
+      - SP14-121
+      - SP14-123
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: shape-and-perception
+  categoryName: Shape & Perception
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - shape-and-perception
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

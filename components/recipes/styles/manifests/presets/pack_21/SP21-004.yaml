@@ -40,10 +40,10 @@ avoidRules:
   - deep extrusions
   - unrequested typography
   - conflicting relief shadows
-assets: {}
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP21-004.webp
 attributes:
   negativePrompt: deep extrusions, unrequested typography, conflicting relief shadows
-  previewStatus: pending
   intentionalPolicy:
     schemaVersion: 1
     kind: full_style
@@ -69,7 +69,6 @@ attributes:
       - text: conflicting relief shadows
         field: rendering_and_quality
   ui:
-    previewStatus: pending
     kind: full_style
     derivedFrom:
       - SP10-080
@@ -88,4 +87,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

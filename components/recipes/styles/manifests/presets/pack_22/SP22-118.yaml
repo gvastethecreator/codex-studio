@@ -1,0 +1,107 @@
+schemaVersion: 1
+id: SP22-118
+packId: pack_22
+name: Soot Wash
+category: 3. Strange Ink & Paint
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - strange
+  - ink-wash
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Let diluted ink washes build broad forms from transparent darks and clear reserves. Alternate
+    softened wash edges with a few loaded brush marks so the wash itself describes the subject.
+  subject_treatment: >-
+    Preserve the requested identity, action and defining details. Shape each form with localized
+    stains and open light areas instead of laying a separate cloud over the image.
+  color_and_tone: >-
+    Respect the requested colors and value relationships. Keep diluted darks transparent enough to
+    preserve separation between neighboring forms and the original palette.
+  lighting_and_shadow: >-
+    Follow the described lighting. Use unpainted reserves and wash density to express its existing
+    light and shadow without inventing fog, a new source or a time of day.
+  texture_and_material: >-
+    Show pigment pooling only in selected areas and vary washed edges with a small number of loaded
+    marks. Keep the pigment behavior distinct from the materials depicted.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, pose and arrangement. Keep the major light reserves and
+    wash shapes inside the existing composition.
+  atmosphere_and_mood: >-
+    Preserve the requested mood and narrative. Wash transparency describes paint and does not make
+    the subject ghostly or the setting misty.
+  rendering_and_quality: >-
+    Resolve silhouette and large value shapes first. Keep darks distinct and stop before neighboring
+    washes merge into a muddy field that hides the requested content.
+avoidRules:
+  - uniform wash laid over every shape
+  - muddy darks that erase value separation
+  - unrequested ghostly or fog effects
+  - unrequested horror or violence
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-118.webp
+attributes:
+  negativePrompt: >-
+    uniform wash laid over every shape, muddy darks that erase value separation, unrequested ghostly
+    or fog effects, unrequested horror or violence
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: ink wash
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: ink wash
+    avoidRules:
+      - text: uniform wash laid over every shape
+        field: rendering_and_quality
+      - text: muddy darks that erase value separation
+        field: color_and_tone
+      - text: unrequested ghostly or fog effects
+        field: global
+      - text: unrequested horror or violence
+        field: global
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S018
+    sourceTitle: Soot Wash
+    referenceIds:
+      - S47
+      - S15
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    derivedFrom:
+      - TCG-S018
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: strange-ink-and-paint
+  categoryName: 3. Strange Ink & Paint
+  tags:
+    - trading-card-illustration
+    - strange
+    - ink-wash
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

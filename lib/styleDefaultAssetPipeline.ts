@@ -97,7 +97,7 @@ export interface StyleDefaultFailureInput {
 export interface StyleDefaultJobRequestInput {
   workspaceId?: string;
   prompt: string;
-  providerId?: 'codex' | 'grok';
+  providerId?: 'codex' | 'chatgpt' | 'grok';
   presetId?: string;
 }
 
@@ -308,12 +308,12 @@ export function createStyleDefaultJobRequest({
   providerId = 'codex',
   presetId,
 }: StyleDefaultJobRequestInput): CreateJobRequest {
-  if (providerId === 'grok') {
+  if (providerId === 'grok' || providerId === 'chatgpt') {
     if (!presetId?.trim()) {
-      throw new Error('Grok style-card jobs require a presetId.');
+      throw new Error(`${providerId} style-card jobs require a presetId.`);
     }
     const sourceSpec = createGenerationTaskSpec({
-      id: `style-preset-card-grok-${presetId.toLowerCase()}`,
+      id: `style-preset-card-${providerId}-${presetId.toLowerCase()}`,
       task: 'style_preset_card',
       providerId,
       prompt,
@@ -326,10 +326,10 @@ export function createStyleDefaultJobRequest({
         requiresLocalAsset: true,
         requiresCatalogEntry: true,
       },
-      metadata: {
-        assetRole: 'style-preset-provider-variant',
-        variantProviderId: providerId,
-      },
+      metadata:
+        providerId === 'grok'
+          ? { assetRole: 'style-preset-provider-variant', variantProviderId: providerId }
+          : { assetRole: 'style-preset-default' },
     });
 
     return {

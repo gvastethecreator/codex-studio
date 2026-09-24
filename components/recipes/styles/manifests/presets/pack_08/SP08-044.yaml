@@ -13,70 +13,38 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: >-
-    Wizard Robes operates as a portable fashion-costume router: combine Classic mage regalia, arcane
-    scholar mystique and spellcraft textile language with speculative costume logic with armor, suit
-    engineering, magical garment behavior, alien proportion, and character-readability design, so
-    the preset supplies styling behavior rather than a fixed outfit card, required wearer, or
-    literal garment sample.
+    Mage-inspired robe design built around long vertical columns, layered hems, deep cowl
+    folds and fine celestial embroidery; the clothes carry the fantasy.
   subject_treatment: >-
-    Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak,
-    illuminate, conceal, mutate, modularize, ritualize, or engineer through Flowing robe columns,
-    bell-sleeve drape, hooded-cowl depth, layered hems and occasional apex geometry; identity stays
-    readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy
-    shift into this preset.
+    Transform the existing wardrobe into flowing robes with bell-sleeve drape, optional hood
+    or cowl, and stitched ornamental marks. Preserve wearer, anatomy, pose and role; add no
+    wand or book.
   color_and_tone: >-
-    Map color through speculative material color, neon accents, abyssal values, royal metals,
-    survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents
-    intentional, material color believable, and palette behavior attached to the subject instead of
-    pasted wardrobe decoration.
+    Use a rich cloth base with fine silver or jewel-thread accents, adapting the palette to
+    the prompt and keeping ornament subordinate to the garment.
   lighting_and_shadow: >-
-    Use Arcane glow, silver rim, warm scholarly glow, jewel luminescence and embroidered highlight
-    glints plus rim light, emissive channels, occult glow, reflective armor, survival dust, void
-    shadow, or sci-fi display light as the styling light contract, revealing cut, drape, surface
-    response, trim, transparency, or armor structure without erasing prompt readability.
+    Follow the requested scene lighting; reveal velvet depth and embroidery with restrained
+    glints. Do not add a magical glow, candlelit library or star field.
   texture_and_material: >-
-    Render Velvet, silver-thread embroidery, astrological silk, crystal beads, aged leather,
-    moonstone inlay plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface,
-    hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine,
-    opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole
-    prompt.
+    Combine velvet, silk, metallic thread, crystal-like beads and small leather fastenings.
+    Keep embroidery ornamental rather than readable text or a printed spell.
   camera_and_composition: >-
-    Compose with Draped-column elongation, constellation-stitch rhythm and cowl-shadow depth
-    compression plus character-design readability, suit silhouette, power-shape hierarchy, modular
-    gear rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits,
-    objects, creatures, environments, action, and abstract prompts to inherit styling without one
-    required pose.
+    Preserve the requested crop, angle and pose. Keep the long robe lines, cowl depth and
+    sleeve shape readable without demanding a full-length portrait.
   atmosphere_and_mood: >-
-    Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth,
-    spectacle, or mythic futurism; the tone should feel specific to Wizard Robes while still obeying
-    the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+    Suggest arcane scholarship through drape and celestial stitch motifs, without making the
+    wearer a wizard or adding spellcasting.
   rendering_and_quality: >-
-    Finish with believable costume engineering, clean edge logic, strong silhouette, readable
-    material physics, and no generic cosplay blur; prioritize clean style recognition, believable
-    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
-    accidental UI.
+    Render deep folds, fine stitches and layered hems with clear textile weight. Keep
+    ornament crisp and prevent prop-driven wizard cliches.
   key_features: >-
-    Classic mage regalia, arcane scholar mystique and spellcraft textile language; Flowing robe
-    columns, bell-sleeve drape, hooded-cowl depth, layered hems and occasional apex geometry;
-    Velvet, silver-thread embroidery, astrological silk, crystal beads, aged leather, moonstone
-    inlay; Arcane glow, silver rim, warm scholarly glow, jewel luminescence and embroidered
-    highlight glints; Draped-column elongation, constellation-stitch rhythm and cowl-shadow depth
-    compression
+    Long robe columns; deep cowl folds; bell-sleeve drape; fine celestial stitchwork.
   creative_brief: >-
-    Use Wizard Robes after prompt X as a transferable fashion/costume layer: prompt X supplies
-    subject, motion, setting, tone, and intensity, while the preset supplies Classic mage regalia,
-    arcane scholar mystique and spellcraft textile language, Flowing robe columns, bell-sleeve
-    drape, hooded-cowl depth, layered hems and occasional apex geometry, Velvet, silver-thread
-    embroidery, astrological silk, crystal beads, aged leather, moonstone inlay, Arcane glow, silver
-    rim, warm scholarly glow, jewel luminescence and embroidered highlight glints, Draped-column
-    elongation, constellation-stitch rhythm and cowl-shadow depth compression plus paneling,
-    harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and
-    invented fastenings, palette behavior, light response, material treatment, silhouette grammar,
-    and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card
-    composition.
+    Reinterpret the requested clothing as mage-inspired robes with vertical drape, layered
+    hems, cowl folds and fine celestial embroidery. Preserve identity, anatomy, role, pose,
+    scene and frame; keep hood optional and add no spell, wand, book or school setting.
 avoidRules:
   - literal school uniform
-  - modern streetwear
   - prop-only wizard cliche
   - library scene lock
   - generic cosplay
@@ -93,8 +61,8 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-044.webp
 attributes:
   negativePrompt: >-
-    literal school uniform, modern streetwear, prop-only wizard cliche, library scene lock, generic
-    cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card
+    literal school uniform, prop-only wizard cliche, library scene lock, generic cosplay,
+    plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card
     scene, generic fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08

@@ -140,7 +140,7 @@ const PACK_CARD_DESCRIPTIONS: Record<string, string> = {
   pack_11: 'Playful objects, food, toys, science curiosities.',
   pack_12: 'Game-native worlds, arenas, quests, encounter moods.',
   pack_13: 'Character anime, slice-of-life, shojo, magical moods.',
-  pack_14: 'Dark myth, elegant symbols, noir authorial looks.',
+  pack_14: 'Cultures and mythologies, expressive motifs, mythic illustration.',
   pack_15: 'Punk languages, DIY rebellion, biotech, media ghosts.',
   pack_16: 'Classic anime craft, prestige drama, retro eras.',
   pack_17: 'Fantasy zines, dungeons, bestiary, grim kingdoms.',

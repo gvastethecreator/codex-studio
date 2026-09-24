@@ -12,59 +12,16 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: >-
-    Low-Stakes Banter Flatness operates as a portable anime-lifestyle router: combine Low Stakes
-    Banter Flatness identity cues through Banter pacing; low contrast calm; tiny reaction shifts;
-    talk circle composition; and relaxed social continuity; Low Stakes Banter Flatness anime style
-    cues with slice of life and moe grammar with soft acting, comedy timing, healing pace, cozy
-    object care, pastel emotional rhythm, and small world specificity, so the preset supplies anime
-    style behavior after prompt X rather than a required scene, character, franchise image, or card
-    composition.
-  subject_treatment: >-
-    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
-    rounded shape language, micro-expression timing, soft body or object posture, simple
-    costume/surface detail, and charm through small repeated gestures; subjects may be characters,
-    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
-    prompt.
-  color_and_tone: >-
-    Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal
-    greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin
-    or material midtones stable, and palette behavior attached to the prompt instead of pasted anime
-    decoration.
-  lighting_and_shadow: >-
-    Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim,
-    and flat comedy brightness; lighting should clarify expression, silhouette, material, and
-    emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
-  texture_and_material: >-
-    Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft
-    marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper,
-    sensor, grain, or effect textures controlled enough to route style without noisy surface
-    chatter.
-  camera_and_composition: >-
-    Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational
-    crops, and comfort-scale depth without required school setting as reusable anime framing
-    grammar, allowing close acting, objects, performances, action, environments, or abstract prompts
-    without one required pose or location.
-  atmosphere_and_mood: >-
-    Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph,
-    awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute,
-    sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving
-    its anime lineage.
-  rendering_and_quality: >-
-    Finish with soft high readability anime finish with stable proportions, gentle denoise, clean
-    pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object
-    structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no
-    generic AI anime gloss.
-  key_features: >-
-    Banter pacing; low contrast calm; tiny reaction shifts; talk circle composition; and relaxed
-    social continuity; Low Stakes Banter Flatness anime style cues
-  creative_brief: >-
-    Use Low-Stakes Banter Flatness after prompt X as a transferable anime character/lifestyle layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies
-    Banter pacing, low contrast calm, tiny reaction shifts, talk circle composition, and relaxed
-    social continuity, Low Stakes Banter Flatness anime style cues, color logic, lighting, material
-    finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast,
-    fixed venue, fixed prop bundle, title screenshot, or sample-card composition.
+  aesthetic: 'Thin, even contour lines and flat low-contrast cel fields give forms a calm, economical finish; expression changes stay small and clearly drawn.'
+  subject_treatment: 'Retain the requested design and pose; keep facial features restrained and proportionate, with no added reactions or assumed relationships.'
+  color_and_tone: 'Choose a narrow, muted range with neighboring hues and gentle value steps; preserve explicit colors and avoid a fixed pastel scheme.'
+  lighting_and_shadow: 'Use broad even illumination and only shallow shadow shapes; preserve harder shadows when the prompt calls for them.'
+  texture_and_material: 'Keep surfaces smooth and detail sparse, with faint grain only where it does not obscure the original material.'
+  camera_and_composition: 'Keep the exact requested framing and count; support readable spacing inside the layout the user supplies.'
+  atmosphere_and_mood: 'Let the requested emotion set facial intensity and contrast; low-key rendering must not flatten a strong expression.'
+  rendering_and_quality: 'Favor precise line closure, simple shadow grouping, and consistent edge weight; retain enough detail to identify every prompted form.'
+  key_features: 'Uniform fine contours; low-contrast color blocks; shallow shadow shapes; restrained feature marks; relaxed detail density.'
+  creative_brief: 'Render with quiet line weight and narrow value steps, letting small feature changes carry expression. Preserve the prompted subject, action, count, camera, and mood.'
 avoidRules:
   - realistic
   - 3d render
@@ -76,7 +33,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - generic moe wallpaper
   - infantilized styling
@@ -87,17 +43,16 @@ avoidRules:
   - fixed anime cast
   - generic anime filter
   - prompt literal card reuse
-  - readable text
   - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-083.webp
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only
-    lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast,
-    generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D
-    render look, copied franchise costume, logo
+    artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock,
+    canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic
+    anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied
+    franchise costume, logo
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

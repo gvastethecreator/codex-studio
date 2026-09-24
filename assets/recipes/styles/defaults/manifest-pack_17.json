@@ -6,12 +6,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "1. Dark Fantasy & Gothic Courts",
     "file": "assets/recipes/styles/defaults/SP17-001.webp",
-    "jobId": "e8222e0e-4b2b-470b-ba7d-7c4fee54a4a2",
+    "jobId": "f2bce396-1174-4637-9385-9597cc53e282",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-001.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T16:36:21.105Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:59:02.829Z"
   },
   {
     "presetId": "SP17-002",
@@ -20,12 +21,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "1. Dark Fantasy & Gothic Courts",
     "file": "assets/recipes/styles/defaults/SP17-002.webp",
-    "jobId": "49949a37-ffb0-4d1e-bc95-06c273dbdbcd",
+    "jobId": "6b43cce7-4d4c-4a33-b396-c6866e133fda",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-002.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T14:23:30.252Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:59:02.481Z"
   },
   {
     "presetId": "SP17-003",
@@ -34,12 +36,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "1. Dark Fantasy & Gothic Courts",
     "file": "assets/recipes/styles/defaults/SP17-003.webp",
-    "jobId": "ded7d6e2-2980-463f-a178-d4399bf9afe0",
+    "jobId": "2b33e895-3c4c-4ec9-a488-3256acdacd4a",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-003.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T14:23:31.920Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:59:46.854Z"
   },
   {
     "presetId": "SP17-004",
@@ -48,12 +51,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "1. Dark Fantasy & Gothic Courts",
     "file": "assets/recipes/styles/defaults/SP17-004.webp",
-    "jobId": "03dcc817-5d24-4b8e-a3e4-91dda3218237",
+    "jobId": "05c106a0-0af3-41e7-8d65-8f01530b8810",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-004.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T16:07:00.210Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T15:59:55.643Z"
   },
   {
     "presetId": "SP17-005",
@@ -62,12 +66,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "1. Dark Fantasy & Gothic Courts",
     "file": "assets/recipes/styles/defaults/SP17-005.webp",
-    "jobId": "52bc06ee-3756-4bd9-991d-cdac3ecbdea5",
+    "jobId": "b58aa0d5-1826-4ae1-a027-74ee8d2ba4ed",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-005.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T14:25:38.079Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T17:35:59.695Z"
   },
   {
     "presetId": "SP17-006",
@@ -76,12 +81,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "1. Dark Fantasy & Gothic Courts",
     "file": "assets/recipes/styles/defaults/SP17-006.webp",
-    "jobId": "6fcf92f1-5845-4716-b568-943242eb18b0",
+    "jobId": "bfa8cee0-e6cf-461a-8486-4db7206ebbe5",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-006.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T14:27:08.640Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:00:01.132Z"
   },
   {
     "presetId": "SP17-007",
@@ -90,12 +96,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "1. Dark Fantasy & Gothic Courts",
     "file": "assets/recipes/styles/defaults/SP17-007.webp",
-    "jobId": "653bddd7-c6c3-45bb-860a-875dbd9f1610",
+    "jobId": "480bded0-21a5-42f3-873c-8eb7ffec37a8",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-007.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T14:28:58.162Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:00:32.126Z"
   },
   {
     "presetId": "SP17-008",
@@ -104,12 +111,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "1. Dark Fantasy & Gothic Courts",
     "file": "assets/recipes/styles/defaults/SP17-008.webp",
-    "jobId": "34bce6f6-dc72-48b3-8b96-016c1f7eab8b",
+    "jobId": "5e15db15-1df8-49f9-a872-bc4d95c03087",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-008.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T14:31:06.156Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:00:53.998Z"
   },
   {
     "presetId": "SP17-009",
@@ -118,12 +126,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "1. Dark Fantasy & Gothic Courts",
     "file": "assets/recipes/styles/defaults/SP17-009.webp",
-    "jobId": "1009c760-c478-4df4-bf28-003542608224",
+    "jobId": "6ddfa32b-38ee-49da-ba95-d0c71fe16f70",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-009.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T16:37:44.723Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:00:40.203Z"
   },
   {
     "presetId": "SP17-010",
@@ -132,12 +141,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "1. Dark Fantasy & Gothic Courts",
     "file": "assets/recipes/styles/defaults/SP17-010.webp",
-    "jobId": "e9fc6cb5-d7a5-409e-ada8-442548912cd1",
+    "jobId": "6b8b12c0-81be-475b-99aa-b1c4dd0f1631",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-010.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T16:09:17.234Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:00:45.711Z"
   },
   {
     "presetId": "SP17-011",
@@ -146,12 +156,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "1. Dark Fantasy & Gothic Courts",
     "file": "assets/recipes/styles/defaults/SP17-011.webp",
-    "jobId": "2b1cf1f8-48bb-4da5-b323-cf773eb0d78e",
+    "jobId": "c2cf1d5e-6c8c-41cd-b522-16036dbdd301",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-011.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T16:19:03.280Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:01:26.251Z"
   },
   {
     "presetId": "SP17-012",
@@ -160,12 +171,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "1. Dark Fantasy & Gothic Courts",
     "file": "assets/recipes/styles/defaults/SP17-012.webp",
-    "jobId": "d28b9ee4-00a5-478a-a985-3c443c3fedeb",
+    "jobId": "4b1b09db-89fa-4037-82dd-f8d539b71e87",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-012.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T16:20:20.654Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:01:38.235Z"
   },
   {
     "presetId": "SP17-013",
@@ -174,12 +186,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "2. Dungeon Zine & Risograph Prints",
     "file": "assets/recipes/styles/defaults/SP17-013.webp",
-    "jobId": "9472b1ba-9cec-49d0-b36d-1e9098369951",
+    "jobId": "951bf229-3cb6-4e87-bbc3-d9b99e3fc1c2",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-013.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T14:40:56.030Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:03:11.791Z"
   },
   {
     "presetId": "SP17-014",
@@ -188,12 +201,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "2. Dungeon Zine & Risograph Prints",
     "file": "assets/recipes/styles/defaults/SP17-014.webp",
-    "jobId": "2350de42-0634-48bb-870a-6ef5892108da",
+    "jobId": "e63e4dea-8c86-4b3e-b203-ec8463835214",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-014.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T14:43:01.820Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:03:07.291Z"
   },
   {
     "presetId": "SP17-015",
@@ -202,12 +216,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "2. Dungeon Zine & Risograph Prints",
     "file": "assets/recipes/styles/defaults/SP17-015.webp",
-    "jobId": "bfd803b7-278b-42af-88c9-02a21d399c7c",
+    "jobId": "ddfe2f0d-21e1-45ad-acec-53af200f0351",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-015.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T14:45:34.600Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:03:34.301Z"
   },
   {
     "presetId": "SP17-016",
@@ -216,12 +231,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "2. Dungeon Zine & Risograph Prints",
     "file": "assets/recipes/styles/defaults/SP17-016.webp",
-    "jobId": "cdec0fee-49cf-427c-8092-3c3374e272d9",
+    "jobId": "5c80367d-f2f8-448e-b072-3597008b1557",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-016.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T14:47:09.309Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:03:50.401Z"
   },
   {
     "presetId": "SP17-017",
@@ -230,12 +246,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "2. Dungeon Zine & Risograph Prints",
     "file": "assets/recipes/styles/defaults/SP17-017.webp",
-    "jobId": "62fdb351-f09f-4a15-9e0a-2abba850585b",
+    "jobId": "3fd801ae-7dc6-4544-9e35-3caecaaa21f9",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-017.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T14:49:00.415Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:03:51.885Z"
   },
   {
     "presetId": "SP17-018",
@@ -244,12 +261,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "2. Dungeon Zine & Risograph Prints",
     "file": "assets/recipes/styles/defaults/SP17-018.webp",
-    "jobId": "7965d958-e3de-4b53-aea1-7ffef4c4a611",
+    "jobId": "98f559c7-68d0-451e-bc8b-0deaedf2e55d",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-018.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T14:53:14.348Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:03:53.125Z"
   },
   {
     "presetId": "SP17-019",
@@ -258,12 +276,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "4. Rune-Tech & Apocalyptic Warfronts",
     "file": "assets/recipes/styles/defaults/SP17-019.webp",
-    "jobId": "6849c17d-e947-4503-aad2-7eb6c14bb15c",
+    "jobId": "e7c7871e-ebcf-488a-b98e-16bd0ef8b75b",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-019.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T16:39:21.875Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:08:59.492Z"
   },
   {
     "presetId": "SP17-020",
@@ -272,12 +291,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "4. Rune-Tech & Apocalyptic Warfronts",
     "file": "assets/recipes/styles/defaults/SP17-020.webp",
-    "jobId": "c358b86e-087f-496b-a550-b1a7ed853bc0",
+    "jobId": "c531edb4-5b4f-4b35-863b-e310ea8261a3",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-020.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T14:56:41.574Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:09:07.040Z"
   },
   {
     "presetId": "SP17-021",
@@ -286,12 +306,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "4. Rune-Tech & Apocalyptic Warfronts",
     "file": "assets/recipes/styles/defaults/SP17-021.webp",
-    "jobId": "f82c494b-a7e6-464e-a9e6-6b6b0921e070",
+    "jobId": "e54fda3d-9a71-4412-a11a-85fa381b9cb8",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-021.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T16:40:53.984Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:09:07.393Z"
   },
   {
     "presetId": "SP17-022",
@@ -300,12 +321,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "4. Rune-Tech & Apocalyptic Warfronts",
     "file": "assets/recipes/styles/defaults/SP17-022.webp",
-    "jobId": "6b4ae268-d6d4-44e9-98ec-c65874818614",
+    "jobId": "b18c6a92-c6df-4103-a73d-cefb2bfd35a2",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-022.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T15:00:15.275Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:09:07.920Z"
   },
   {
     "presetId": "SP17-023",
@@ -314,12 +336,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "4. Rune-Tech & Apocalyptic Warfronts",
     "file": "assets/recipes/styles/defaults/SP17-023.webp",
-    "jobId": "45a7910c-1e78-4294-8595-5ad7e516e90a",
+    "jobId": "fdca295d-a24d-4728-95d7-2fbaea3691ca",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-023.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T15:04:35.445Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:09:56.695Z"
   },
   {
     "presetId": "SP17-024",
@@ -328,12 +351,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "4. Rune-Tech & Apocalyptic Warfronts",
     "file": "assets/recipes/styles/defaults/SP17-024.webp",
-    "jobId": "0cc11c38-f99b-4bf9-a83b-f268c547f800",
+    "jobId": "e6cba7a3-74ef-4a61-a430-712829086ae6",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-024.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T15:07:12.104Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:10:05.263Z"
   },
   {
     "presetId": "SP17-025",
@@ -342,12 +366,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "4. Rune-Tech & Apocalyptic Warfronts",
     "file": "assets/recipes/styles/defaults/SP17-025.webp",
-    "jobId": "e54cdf7c-9a3b-46b8-8266-53f5c9825eee",
+    "jobId": "9c792ea3-877d-45ff-ac72-db2418e7b4d2",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-025.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T15:09:20.273Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:10:04.758Z"
   },
   {
     "presetId": "SP17-026",
@@ -356,12 +381,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "4. Rune-Tech & Apocalyptic Warfronts",
     "file": "assets/recipes/styles/defaults/SP17-026.webp",
-    "jobId": "858ede49-65a1-4413-bfc4-b8d9ea1a0633",
+    "jobId": "eb4aceb9-afdb-4563-91c8-f2690a4f9be4",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-026.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T15:14:09.618Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:09:58.093Z"
   },
   {
     "presetId": "SP17-027",
@@ -370,12 +396,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "4. Rune-Tech & Apocalyptic Warfronts",
     "file": "assets/recipes/styles/defaults/SP17-027.webp",
-    "jobId": "f4af6002-3f21-47f9-b32f-95facbe9583e",
+    "jobId": "f2be4890-beb0-4a9c-8391-3219995de20e",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-027.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T15:16:37.227Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:10:38.962Z"
   },
   {
     "presetId": "SP17-028",
@@ -384,12 +411,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "4. Rune-Tech & Apocalyptic Warfronts",
     "file": "assets/recipes/styles/defaults/SP17-028.webp",
-    "jobId": "ebb0d38d-d242-40b2-a02c-7d23863ef3ad",
+    "jobId": "8208fba9-fe74-41ff-ac83-4d865df76b52",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-028.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T15:19:00.788Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:10:47.300Z"
   },
   {
     "presetId": "SP17-029",
@@ -398,12 +426,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "4. Rune-Tech & Apocalyptic Warfronts",
     "file": "assets/recipes/styles/defaults/SP17-029.webp",
-    "jobId": "665f5151-a679-4e5f-8822-690188f95fa2",
+    "jobId": "1fabe55f-b85f-4fe0-a556-0b77d5e63807",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-029.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T15:21:55.327Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:11:06.882Z"
   },
   {
     "presetId": "SP17-030",
@@ -412,12 +441,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "4. Rune-Tech & Apocalyptic Warfronts",
     "file": "assets/recipes/styles/defaults/SP17-030.webp",
-    "jobId": "378f403a-97cd-41dc-be22-0c48128477d8",
+    "jobId": "a2c17199-b829-489d-88f8-66bd87ed5b8e",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-030.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T15:26:23.708Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:10:47.247Z"
   },
   {
     "presetId": "SP17-031",
@@ -426,12 +456,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "4. Rune-Tech & Apocalyptic Warfronts",
     "file": "assets/recipes/styles/defaults/SP17-031.webp",
-    "jobId": "97c83d03-c958-419b-ae8a-403bdb7fc2bf",
+    "jobId": "0577101b-2606-406e-9737-f13f5ad6a126",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-031.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T15:28:10.240Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:11:49.368Z"
   },
   {
     "presetId": "SP17-032",
@@ -440,12 +471,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "4. Rune-Tech & Apocalyptic Warfronts",
     "file": "assets/recipes/styles/defaults/SP17-032.webp",
-    "jobId": "bfc4b97a-4986-4492-9d5a-4bb242c570b1",
+    "jobId": "a89a9368-dd5e-4cd7-8caf-51a38d202829",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-032.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T15:29:28.533Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:11:32.622Z"
   },
   {
     "presetId": "SP17-033",
@@ -454,12 +486,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "3. Ink, Tarot & Bestiary Plates",
     "file": "assets/recipes/styles/defaults/SP17-033.webp",
-    "jobId": "b4d73d77-f39f-4ee8-8363-e7cc1d6643c9",
+    "jobId": "6b6be8c6-c806-4629-9e79-c25a0bb08be0",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-033.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T15:30:39.495Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:05:15.438Z"
   },
   {
     "presetId": "SP17-034",
@@ -468,12 +501,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "3. Ink, Tarot & Bestiary Plates",
     "file": "assets/recipes/styles/defaults/SP17-034.webp",
-    "jobId": "2ced7879-9f94-4256-8f5c-e7de80cf1803",
+    "jobId": "bd686f4a-5a2b-4263-a4ea-83f5ffd4be81",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-034.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T16:21:42.297Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:05:24.173Z"
   },
   {
     "presetId": "SP17-035",
@@ -482,12 +516,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "3. Ink, Tarot & Bestiary Plates",
     "file": "assets/recipes/styles/defaults/SP17-035.webp",
-    "jobId": "d68ec0ac-0196-4130-961b-bc23a9ddd89f",
+    "jobId": "b6d27cd8-6f57-498e-b382-ad57abd69bb9",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-035.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T15:34:23.103Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:05:24.288Z"
   },
   {
     "presetId": "SP17-036",
@@ -496,12 +531,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "3. Ink, Tarot & Bestiary Plates",
     "file": "assets/recipes/styles/defaults/SP17-036.webp",
-    "jobId": "ddb91f51-a244-4984-b5e3-f6f72d26a29f",
+    "jobId": "de209a69-006c-4bf6-8eb3-13c6bf6764de",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-036.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T16:23:04.072Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:06:03.653Z"
   },
   {
     "presetId": "SP17-037",
@@ -510,12 +546,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "3. Ink, Tarot & Bestiary Plates",
     "file": "assets/recipes/styles/defaults/SP17-037.webp",
-    "jobId": "f295710e-1133-418f-8250-4b7ade8b52ff",
+    "jobId": "1515c4d5-4dac-4e8a-8470-38d576581883",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-037.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T15:37:16.760Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:06:02.667Z"
   },
   {
     "presetId": "SP17-038",
@@ -524,12 +561,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "3. Ink, Tarot & Bestiary Plates",
     "file": "assets/recipes/styles/defaults/SP17-038.webp",
-    "jobId": "de9b6b33-b01b-4843-998e-827cea90cb6b",
+    "jobId": "f0a6ef7f-3997-41fd-827f-bd5ad0c73a48",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-038.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T15:38:45.015Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:06:01.595Z"
   },
   {
     "presetId": "SP17-039",
@@ -538,12 +576,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "3. Ink, Tarot & Bestiary Plates",
     "file": "assets/recipes/styles/defaults/SP17-039.webp",
-    "jobId": "1e681429-6dec-42b2-8542-662073527741",
+    "jobId": "69c08526-ab7a-4ed3-ab0a-7f12faf4fb0f",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-039.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T15:40:13.252Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:06:10.378Z"
   },
   {
     "presetId": "SP17-040",
@@ -552,12 +591,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "3. Ink, Tarot & Bestiary Plates",
     "file": "assets/recipes/styles/defaults/SP17-040.webp",
-    "jobId": "d16fe307-dcd2-4699-970f-0cde3818e609",
+    "jobId": "05b0fa97-150f-4008-bf53-77bdc97b31b6",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-040.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T15:41:43.000Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:06:49.314Z"
   },
   {
     "presetId": "SP17-041",
@@ -566,12 +606,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "3. Ink, Tarot & Bestiary Plates",
     "file": "assets/recipes/styles/defaults/SP17-041.webp",
-    "jobId": "50655b1a-ccce-4f90-a917-854586023706",
+    "jobId": "37d05d43-51ce-4917-b07b-cffec0601ae5",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-041.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T16:42:31.237Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:06:41.280Z"
   },
   {
     "presetId": "SP17-042",
@@ -580,12 +621,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "3. Ink, Tarot & Bestiary Plates",
     "file": "assets/recipes/styles/defaults/SP17-042.webp",
-    "jobId": "e3808041-cf7e-4103-90c5-1591f6f1b79c",
+    "jobId": "2fd65e05-8e65-4cfb-a36b-cd01b0022fcb",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-042.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T15:45:30.606Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:06:55.926Z"
   },
   {
     "presetId": "SP17-043",
@@ -594,12 +636,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "3. Ink, Tarot & Bestiary Plates",
     "file": "assets/recipes/styles/defaults/SP17-043.webp",
-    "jobId": "96d85761-d67f-415c-b112-cd01fa54d4ac",
+    "jobId": "fbeaa45d-6b52-4d71-a15a-39c34a8d7960",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-043.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T15:47:08.095Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:06:56.377Z"
   },
   {
     "presetId": "SP17-044",
@@ -608,12 +651,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "3. Ink, Tarot & Bestiary Plates",
     "file": "assets/recipes/styles/defaults/SP17-044.webp",
-    "jobId": "7bdc2d19-0b6c-4b03-a8fb-624e2ed03d5f",
+    "jobId": "845a7ea5-0b4a-4d32-8c17-e63018a7d3e7",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-044.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-19T15:48:58.020Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:07:24.999Z"
   },
   {
     "presetId": "SP17-045",
@@ -622,12 +666,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "1. Dark Fantasy & Gothic Courts",
     "file": "assets/recipes/styles/defaults/SP17-045.webp",
-    "jobId": "6792634e-735e-4b2b-b066-3305a648aa91",
+    "jobId": "1e2d90b7-b531-4ac6-8e35-93091b4eb412",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-045.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T07:34:59.719Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:01:27.672Z"
   },
   {
     "presetId": "SP17-046",
@@ -636,12 +681,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "1. Dark Fantasy & Gothic Courts",
     "file": "assets/recipes/styles/defaults/SP17-046.webp",
-    "jobId": "562f8fdc-40ba-4f4c-861d-b2cfb2b204d7",
+    "jobId": "9fa80362-828f-4389-82c4-6bf228e61caa",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-046.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T07:34:47.120Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:01:33.323Z"
   },
   {
     "presetId": "SP17-047",
@@ -650,12 +696,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "1. Dark Fantasy & Gothic Courts",
     "file": "assets/recipes/styles/defaults/SP17-047.webp",
-    "jobId": "b3172348-7d76-4f04-83b1-583b02e80e7d",
+    "jobId": "e856f361-f8c1-426b-8b7f-3d40455ea125",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-047.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T07:41:52.833Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:02:07.573Z"
   },
   {
     "presetId": "SP17-048",
@@ -664,12 +711,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "1. Dark Fantasy & Gothic Courts",
     "file": "assets/recipes/styles/defaults/SP17-048.webp",
-    "jobId": "12c539ef-5673-4eb1-994b-df6227c83795",
+    "jobId": "2fa8f799-00cc-4e4e-886d-b0485c6bfe83",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-048.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T07:37:02.195Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:02:15.531Z"
   },
   {
     "presetId": "SP17-049",
@@ -678,12 +726,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "1. Dark Fantasy & Gothic Courts",
     "file": "assets/recipes/styles/defaults/SP17-049.webp",
-    "jobId": "f51c8bad-abac-4c01-8c9f-caa5919034cb",
+    "jobId": "3ea21a9d-5274-4bb1-ba7b-cb71324ae36a",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-049.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T07:38:30.853Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:02:20.109Z"
   },
   {
     "presetId": "SP17-050",
@@ -692,12 +741,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "1. Dark Fantasy & Gothic Courts",
     "file": "assets/recipes/styles/defaults/SP17-050.webp",
-    "jobId": "a5803a17-4cdd-480b-8b6b-ce79dbfa242d",
+    "jobId": "5e290ad2-5c67-40ba-ac9b-e1c8f06959a8",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-050.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T07:40:10.903Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:02:19.399Z"
   },
   {
     "presetId": "SP17-051",
@@ -706,12 +756,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "1. Dark Fantasy & Gothic Courts",
     "file": "assets/recipes/styles/defaults/SP17-051.webp",
-    "jobId": "ec2ef3d6-2dbd-4c7d-934f-3f3958405728",
+    "jobId": "e0b782da-6c52-4644-8606-e552ae8264b9",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-051.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T07:43:51.622Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:02:46.665Z"
   },
   {
     "presetId": "SP17-052",
@@ -720,12 +771,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "1. Dark Fantasy & Gothic Courts",
     "file": "assets/recipes/styles/defaults/SP17-052.webp",
-    "jobId": "bca221dd-af84-457c-a37e-000965e1b785",
+    "jobId": "af6de071-bbfb-4826-81b9-ddf00781ad4a",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-052.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T07:45:19.865Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:03:04.135Z"
   },
   {
     "presetId": "SP17-053",
@@ -734,12 +786,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "3. Ink, Tarot & Bestiary Plates",
     "file": "assets/recipes/styles/defaults/SP17-053.webp",
-    "jobId": "823cf09c-4ce3-4d68-814e-001f34f5c460",
+    "jobId": "82041a23-9079-4dfc-a686-e427776b9bc5",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-053.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T22:42:56.042Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:08:09.693Z"
   },
   {
     "presetId": "SP17-054",
@@ -748,12 +801,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "3. Ink, Tarot & Bestiary Plates",
     "file": "assets/recipes/styles/defaults/SP17-054.webp",
-    "jobId": "e483576e-92d0-47a9-b4d8-9cdecffddd50",
+    "jobId": "3866746d-fb28-4dbf-a927-db985c9b7bdd",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-054.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T22:57:03.377Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T17:35:49.390Z"
   },
   {
     "presetId": "SP17-055",
@@ -762,12 +816,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "3. Ink, Tarot & Bestiary Plates",
     "file": "assets/recipes/styles/defaults/SP17-055.webp",
-    "jobId": "d0e878f0-f825-4acc-8cf4-2f08c0a8334e",
+    "jobId": "5467463f-c17c-4953-9c85-f97c77195540",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-055.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T22:58:22.843Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:07:37.387Z"
   },
   {
     "presetId": "SP17-056",
@@ -776,12 +831,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "3. Ink, Tarot & Bestiary Plates",
     "file": "assets/recipes/styles/defaults/SP17-056.webp",
-    "jobId": "f64714d3-c73e-4b5d-a9d9-e20290c5aa2d",
+    "jobId": "9dacc8d1-b031-4a78-b1a9-78fb2cf58b2f",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-056.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T22:59:37.525Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:08:18.522Z"
   },
   {
     "presetId": "SP17-057",
@@ -790,12 +846,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "3. Ink, Tarot & Bestiary Plates",
     "file": "assets/recipes/styles/defaults/SP17-057.webp",
-    "jobId": "d2298e31-65c7-4c64-853c-f32a2c28746d",
+    "jobId": "3899a3b2-57a0-4fc1-9167-91a7bf591350",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-057.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T23:00:36.361Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:08:21.998Z"
   },
   {
     "presetId": "SP17-058",
@@ -804,12 +861,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "3. Ink, Tarot & Bestiary Plates",
     "file": "assets/recipes/styles/defaults/SP17-058.webp",
-    "jobId": "7b73547c-71d5-43ff-b9c8-954586414449",
+    "jobId": "d04d48f2-1f34-4f74-b332-fd6077d22323",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-058.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T23:01:47.900Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:08:19.871Z"
   },
   {
     "presetId": "SP17-059",
@@ -818,12 +876,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "2. Dungeon Zine & Risograph Prints",
     "file": "assets/recipes/styles/defaults/SP17-059.webp",
-    "jobId": "c96c590e-d95a-4e1a-896e-bca346ad5d98",
+    "jobId": "1415eff0-8cb9-4a0d-a6af-4bee976e9957",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-059.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T23:44:05.251Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:04:28.542Z"
   },
   {
     "presetId": "SP17-060",
@@ -832,12 +891,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "2. Dungeon Zine & Risograph Prints",
     "file": "assets/recipes/styles/defaults/SP17-060.webp",
-    "jobId": "7f545f86-5e48-4546-ad20-72cb55f45306",
+    "jobId": "473b4196-f359-481f-902e-161b19429a73",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-060.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T23:45:45.016Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:04:38.192Z"
   },
   {
     "presetId": "SP17-061",
@@ -846,12 +906,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "2. Dungeon Zine & Risograph Prints",
     "file": "assets/recipes/styles/defaults/SP17-061.webp",
-    "jobId": "db294532-1408-42fa-ae09-102284150b8d",
+    "jobId": "0da4c608-3ea7-4a02-afca-2ceb1ace4e5d",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-061.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T23:47:24.237Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:04:37.352Z"
   },
   {
     "presetId": "SP17-062",
@@ -860,12 +921,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "2. Dungeon Zine & Risograph Prints",
     "file": "assets/recipes/styles/defaults/SP17-062.webp",
-    "jobId": "f4f93e71-aab2-4cb5-963b-1aa73f36f320",
+    "jobId": "b843ff16-84ee-4238-bbd2-8f9227811681",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-062.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T23:48:58.702Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:04:28.821Z"
   },
   {
     "presetId": "SP17-063",
@@ -874,12 +936,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "2. Dungeon Zine & Risograph Prints",
     "file": "assets/recipes/styles/defaults/SP17-063.webp",
-    "jobId": "e811e29e-4c2e-49a9-a7db-db68d6dfafcc",
+    "jobId": "38975775-2c2f-42ed-a1a9-3b35aeec6a15",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-063.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T23:50:44.710Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:05:24.465Z"
   },
   {
     "presetId": "SP17-064",
@@ -888,12 +951,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "5. Grimdark Game Systems & Tabletop",
     "file": "assets/recipes/styles/defaults/SP17-064.webp",
-    "jobId": "b555e4c8-26ab-4a52-b4a9-3df68bc0d9ea",
+    "jobId": "664f5635-0751-42c2-865f-d32eb9ed9da6",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-064.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T23:09:13.639Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:11:33.985Z"
   },
   {
     "presetId": "SP17-065",
@@ -902,12 +966,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "5. Grimdark Game Systems & Tabletop",
     "file": "assets/recipes/styles/defaults/SP17-065.webp",
-    "jobId": "d93e133b-9721-4cc1-8e21-af47eb03ae44",
+    "jobId": "f13d3aeb-d2e6-49a6-b180-d66fe3bef7cf",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-065.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T22:43:32.968Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:11:47.927Z"
   },
   {
     "presetId": "SP17-066",
@@ -916,12 +981,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "5. Grimdark Game Systems & Tabletop",
     "file": "assets/recipes/styles/defaults/SP17-066.webp",
-    "jobId": "cf37cd25-1cf2-473b-83b7-e9ae0cf11b76",
+    "jobId": "8b6de9bd-7f47-4475-ba21-eef0014640e0",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-066.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T23:11:15.284Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:12:13.027Z"
   },
   {
     "presetId": "SP17-067",
@@ -930,12 +996,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "5. Grimdark Game Systems & Tabletop",
     "file": "assets/recipes/styles/defaults/SP17-067.webp",
-    "jobId": "d54a4c32-c7db-4c61-a05d-5329b2856477",
+    "jobId": "5650cba1-c874-4cf7-864c-f866b430c797",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-067.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T23:13:26.036Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T17:36:21.471Z"
   },
   {
     "presetId": "SP17-068",
@@ -944,12 +1011,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "5. Grimdark Game Systems & Tabletop",
     "file": "assets/recipes/styles/defaults/SP17-068.webp",
-    "jobId": "fcfd7d45-dd63-4265-96c3-84cfad97c8bc",
+    "jobId": "dfa3c985-ea71-4146-a26a-c028eabb768a",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-068.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T23:14:57.047Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:12:37.873Z"
   },
   {
     "presetId": "SP17-069",
@@ -958,12 +1026,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "5. Grimdark Game Systems & Tabletop",
     "file": "assets/recipes/styles/defaults/SP17-069.webp",
-    "jobId": "643c2f29-280f-410c-86f8-7b399cd90ac0",
+    "jobId": "80e8fd20-3a61-4480-a8a1-6e081204b45f",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-069.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T23:16:46.832Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:12:33.255Z"
   },
   {
     "presetId": "SP17-070",
@@ -972,12 +1041,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "5. Grimdark Game Systems & Tabletop",
     "file": "assets/recipes/styles/defaults/SP17-070.webp",
-    "jobId": "eb4afcea-3de2-4f33-b3bf-ff076051bd5c",
+    "jobId": "d4f447ab-8150-4e09-a1eb-bde752196db6",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-070.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T23:18:30.844Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:12:57.649Z"
   },
   {
     "presetId": "SP17-071",
@@ -986,12 +1056,13 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "5. Grimdark Game Systems & Tabletop",
     "file": "assets/recipes/styles/defaults/SP17-071.webp",
-    "jobId": "ebcb2081-e9ff-44ec-89a5-825921b5dd04",
+    "jobId": "55f6f39d-fc58-4c4f-b03e-59d78d4a7839",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-071.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T23:20:02.157Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:13:01.096Z"
   },
   {
     "presetId": "SP17-072",
@@ -1000,11 +1071,27 @@
     "packName": "Medieval Fantasy & Dungeon Zine",
     "category": "5. Grimdark Game Systems & Tabletop",
     "file": "assets/recipes/styles/defaults/SP17-072.webp",
-    "jobId": "b39b201e-7114-4ea2-8bd5-1c80083648a5",
+    "jobId": "8c9facd6-d86e-4cd0-a916-b32723dd45b7",
     "sourceAsset": "assets/recipes/styles/defaults/SP17-072.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-07-06T23:21:52.854Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T16:13:20.231Z"
+  },
+  {
+    "presetId": "SP17-073",
+    "presetName": "Soot-Softened Planes",
+    "packId": "pack_17",
+    "packName": "Medieval Fantasy & Dungeon Zine",
+    "category": "1. Dark Fantasy & Gothic Courts",
+    "file": "assets/recipes/styles/defaults/SP17-073.webp",
+    "jobId": "aa617524-be8f-45e5-8da3-5366434be06d",
+    "sourceAsset": "assets/recipes/styles/defaults/SP17-073.webp",
+    "generationMode": "text-to-image",
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T07:30:26.056Z"
   }
 ]

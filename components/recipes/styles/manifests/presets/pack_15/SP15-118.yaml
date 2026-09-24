@@ -1,0 +1,87 @@
+schemaVersion: 1
+id: SP15-118
+packId: pack_15
+name: Raypunk
+category: 9. Space, Atomic & Ray Punks
+version: 2
+supportedTasks: &id002
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags: &id001
+  - curation-v2
+  - identity-reviewed
+  - visual-evaluation-pending
+  - space-atomic-and-ray-punks
+visualDna:
+  aesthetic:
+    'Draw on illustrated pulp space adventure: sharply tapered fins and wedges, ray-beam arcs, bold
+    speed contours, and simplified cosmic machinery create directional energy rather than neutral orbital geometry.'
+  subject_treatment:
+    Preserve the requested subject, pose, and action; angle unspecified forms into streamlined
+    silhouettes and add beam-like graphic accents only where they support the focal action.
+  color_and_tone:
+    Pair midnight blue or charcoal with oxide orange, cream, and a clear plasma accent such as
+    red or cobalt; keep color planes bold and distinctly separated.
+  lighting_and_shadow:
+    Use hard-edged beam light, warm reflected accents, and large graphic shadows; preserve
+    dimensional form without a glossy 3D-render look.
+  texture_and_material:
+    Combine matte painted metal, canvas, and enamel-like plates with sparse scuffs; use
+    inked contour and selective crosshatch to carry the pulp illustration identity.
+  camera_and_composition:
+    Build a clear directional sweep through wedges, arcs, or speed lines; keep the focal
+    subject dominant and treat any background as secondary within the requested setting.
+  atmosphere_and_mood:
+    Feel daring, inventive, and slightly strange, with the requested scene's stakes rather
+    than mandatory danger or combat.
+  rendering_and_quality:
+    Use decisive inked outlines, broad color planes, and restrained hatching; keep silhouette
+    and action readable at small scale.
+avoidRules:
+  - a required rocket, raygun, or battle
+  - photorealistic space imagery
+  - speed lines crossing over and obscuring the focal subject
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-118.webp
+attributes:
+  negativePrompt:
+    a required rocket, raygun, or battle, photorealistic space imagery, speed lines crossing
+    over and obscuring the focal subject
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: a required rocket, raygun, or battle
+        field: rendering_and_quality
+      - text: photorealistic space imagery
+        field: rendering_and_quality
+      - text: speed lines crossing over and obscuring the focal subject
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-118
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: space-atomic-and-ray-punks
+  categoryName: 9. Space, Atomic & Ray Punks
+  tags: *id001
+  supportedTasks: *id002
+  hasDefaultImage: true

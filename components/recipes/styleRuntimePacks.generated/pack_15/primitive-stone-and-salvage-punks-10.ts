@@ -4,235 +4,63 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP15-073',
-    name: 'Basalt Gear Mechanics',
+    id: 'SP15-121',
+    name: 'Stonepunk',
     category: '10. Primitive, Stone & Salvage Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, realistic human anatomy, detailed face, workers-only composition, anonymous worker crew, lens blur, bokeh, depth-of-field photo look, hanging cloth, tapestry, pendant, decorative near-plane tile, shrine plaque, deep perspective, scenic distant-plane, city ruins, cave vista, castle courtyard, shields, wall plaques, badges, emblems, cross shapes, heraldic symbols, long corridor, dungeon hallway, religious sanctuary, readable runes, glyph symbols, skulls, bones, gore, weapon, torch procession, photoreal stone, gritty cave realism, realistic carved rock, 3D masonry render, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, dusty photoreal survivalism, commerce-system trade setup lock, skull-and-bone cliche, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'a required gear machine or timing device, illegible runic writing, dust and micro-grain that bury carved edges',
     style: {
       aesthetic:
-        'Basalt Gear Mechanics operates as a portable punk-spectrum router: combine Basalt Gear Mechanics identity cues through basalt mass; carved gears; rope pulleys; ash planes; torch shadows; carved gear geometry with primitive/stone/salvage punk grammar with low-tech engines, carved mechanics, rope kinetics, mud-brick power, bone signal rigs, and windcraft reuse, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'Make stoneworking and carved mechanics the signature: broad basalt and flint masses, incised channels, wheel-like interlocks, and precise repeated tool cuts express a deliberately engineered stone-age future.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through flint planes, basalt massing, rope geometry, carved wheels, rawhide lashings, mud-brick modules, sailcloth patches, and hand-built power logic; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve the requested subject and action; translate unspecified structure into faceted stone planes, carved joints, or compact gear-like contours without replacing the subject with a machine.',
       color_and_tone:
-        'Map color through flint gray, clay red, rawhide tan, ochre, tar gray, storm blue, copper green, bone white, smoke black, and sea blue; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Center basalt charcoal, flint gray, chalk, and clay or ochre accents; allow the requested palette to lead and keep carved cuts distinct from surrounding stone.',
       lighting_and_shadow:
-        "Use firelight blocks, smoky daylight, polished stone glints, water reflections, storm rim, and warm clay bounce; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Use broad neutral or fire-warm highlights against cool deep incisions so mass and carved depth remain clear; avoid crushing the dark planes.',
       texture_and_material:
-        'Render flint facets, basalt blocks, hide, rope, carved wood, mud brick, driftwood, patched canvas, copper stains, and smoke-softened edges; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Contrast coarse matte stone with a few polished obsidian-like faces and chalk-cut details; vary grain scale and keep it subordinate to the carved design.',
       camera_and_composition:
-        'Compose through compact engine rhythm, lash-and-wheel diagonals, windcraft arcs, ritual timing channels, and clear subject scale without commerce-system or trade setup lock as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        "Organize forms as stepped masses and interlocking arcs with open intervals; preserve the subject's established focal hierarchy rather than building a fixed mechanism diagram.",
       atmosphere_and_mood:
-        'Carry mood through primal invention, tactile tradecraft, stark mobility, ancient precision, communal warmth, and rough salvage optimism; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Suggest patient ingenuity, weight, and durable craft, with the requested emotional tone intact.',
       rendering_and_quality:
-        'Finish with drawn salvage-punk illustration with clean matte surfaces, denoised smoke, low-to-moderate detail, and no dusty photoreal survivalism; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'basalt mass; carved gears; rope pulleys; ash planes; torch shadows; carved gear geometry',
-      creative_brief:
-        'Use Basalt Gear Mechanics after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies basalt mass, carved gears, rope pulleys, ash planes, torch shadows, carved gear geometry, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Use crisp incisions, broad stone grain, and simplified joints; ensure the engineered cuts read at thumbnail scale.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-121'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-074',
-    name: 'Flint Engine Tradecraft',
+    id: 'SP15-122',
+    name: 'Low-Tech Punk',
     category: '10. Primitive, Stone & Salvage Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, marketplace key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, realistic human anatomy, detailed face, workers-only composition, anonymous worker crew, lens blur, bokeh, depth-of-field photo look, deep perspective, scenic distant-plane, crowded marketplace, city urban passage, banner emblem, cloth symbols, shields, badges, jewelry-detail portrait, armored warrior, long commerce-system aisle, crowded bazaar corridor, readable price tags, signs, logos, skulls, real bones, gore, weapon trade setup, animal carcass, photoreal leather, dusty realism, realistic material render, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, dusty photoreal survivalism, commerce-system trade setup lock, skull-and-bone cliche, fixed punk venue, required mascot, required sample-card setup, repeated prop bundle, readable text, prompt-required card reuse, generic cyberpunk wallpaper, literal sample-card setup, prompt-literal card reuse',
+      'a required generator, battery, or cooling apparatus, tangled lines obscuring connections, dust or microtexture covering all materials',
     style: {
       aesthetic:
-        'Flint Engine Tradecraft operates as a portable punk-spectrum router: combine Flint Engine Tradecraft identity cues through flint planes; compact engine blocks; leather tool rolls; smoke plumes; carved wheels; carved wheel geometry with primitive/stone/salvage punk grammar with low-tech engines, carved mechanics, rope kinetics, mud-brick power, bone signal rigs, and windcraft reuse, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'Show ingenious appropriate technology through visible load paths: rope tension, wooden wheels, ceramic or clay modules, hand-built joints, and woven connections make energy or function understandable at a glance.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through flint planes, basalt massing, rope geometry, carved wheels, rawhide lashings, mud-brick modules, sailcloth patches, and hand-built power logic; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve the requested subject and action; translate unspecified structures into repairable hand-built components and visible connections without inventing a generator, cell array, or machine.',
       color_and_tone:
-        'Map color through flint gray, clay red, rawhide tan, ochre, tar gray, storm blue, copper green, bone white, smoke black, and sea blue; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Use wood, clay, stone, rawhide, and woven neutrals with one restrained blue or copper signal; keep functional components differentiated by value.',
       lighting_and_shadow:
-        "Use firelight blocks, smoky daylight, polished stone glints, water reflections, storm rim, and warm clay bounce; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Use broad natural or workshop light with warm edge highlights that reveal how pieces meet and where tension passes.',
       texture_and_material:
-        'Render flint facets, basalt blocks, hide, rope, carved wood, mud brick, driftwood, patched canvas, copper stains, and smoke-softened edges; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Keep timber, clay, woven fiber, rope, and sparse metal distinct and matte; use tool marks and join wear where construction requires them.',
       camera_and_composition:
-        'Compose through compact engine rhythm, lash-and-wheel diagonals, windcraft arcs, ritual timing channels, and clear subject scale without commerce-system or trade setup lock as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Arrange modules and lines with open intervals so load paths and cause-and-effect stay readable; preserve the requested crop and focal hierarchy.',
       atmosphere_and_mood:
-        'Carry mood through primal invention, tactile tradecraft, stark mobility, ancient precision, communal warmth, and rough salvage optimism; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Suggest resourcefulness, accessible craft, and practical independence rather than primitive savagery or generic survivalism.',
       rendering_and_quality:
-        'Finish with drawn salvage-punk illustration with clean matte surfaces, denoised smoke, low-to-moderate detail, and no dusty photoreal survivalism; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'flint planes; compact engine blocks; leather tool rolls; smoke plumes; carved wheels; carved wheel geometry',
-      creative_brief:
-        'Use Flint Engine Tradecraft after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies flint planes, compact engine blocks, leather tool rolls, smoke plumes, carved wheels, carved wheel geometry, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Favor simplified construction logic and crisp join silhouettes; keep small knots, cell details, and grain subordinate to the overall form.',
     },
-  },
-  {
-    id: 'SP15-075',
-    name: 'Obsidian Timing Channels',
-    category: '10. Primitive, Stone & Salvage Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, cinematic realism, AAA key art, American fantasy RPG hero, sourcebook hero art, superhero pose, YA adventure cover, centered full-body adventurer, young rugged protagonist, cloak and pouches, leather belt costume, boots hero pose, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, object-only card, workers-only composition, anonymous worker crew, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, cave still life, shrine corridor, altar hero, readable runes, wall glyphs, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny carved marks everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, dusty photoreal survivalism, commerce-system trade setup lock, skull-and-bone cliche, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Obsidian Timing Channels operates as a portable punk-spectrum router: combine Obsidian Timing Channels identity cues through obsidian channels; drip bowls; carved stone slabs; reflected fire; chalk marks; stone-age precision style that transfers obsidian timing channels with primitive/stone/salvage punk grammar with low-tech engines, carved mechanics, rope kinetics, mud-brick power, bone signal rigs, and windcraft reuse, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through flint planes, basalt massing, rope geometry, carved wheels, rawhide lashings, mud-brick modules, sailcloth patches, and hand-built power logic; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through flint gray, clay red, rawhide tan, ochre, tar gray, storm blue, copper green, bone white, smoke black, and sea blue; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use firelight blocks, smoky daylight, polished stone glints, water reflections, storm rim, and warm clay bounce; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render flint facets, basalt blocks, hide, rope, carved wood, mud brick, driftwood, patched canvas, copper stains, and smoke-softened edges; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through compact engine rhythm, lash-and-wheel diagonals, windcraft arcs, ritual timing channels, and clear subject scale without commerce-system or trade setup lock as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through primal invention, tactile tradecraft, stark mobility, ancient precision, communal warmth, and rough salvage optimism; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with drawn salvage-punk illustration with clean matte surfaces, denoised smoke, low-to-moderate detail, and no dusty photoreal survivalism; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'obsidian channels; drip bowls; carved stone slabs; reflected fire; chalk marks; stone-age precision style that transfers obsidian timing channels',
-      creative_brief:
-        'Use Obsidian Timing Channels after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies obsidian channels, drip bowls, carved stone slabs, reflected fire, chalk marks, stone-age precision style that transfers obsidian timing channels, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-076',
-    name: 'Bone Signal Rigging',
-    category: '10. Primitive, Stone & Salvage Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, cinematic realism, AAA key art, American fantasy RPG hero, sourcebook hero art, superhero pose, YA adventure cover, centered full-body adventurer, young rugged protagonist, cloak and pouches, leather belt costume, boots hero pose, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, object-only card, workers-only composition, anonymous worker crew, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, skull shrine, real bones, skulls, teeth, animal carcass, gore, tribal stereotype, battlefield banner, flag, emblem, readable glyphs, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, noisy fur detail, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, dusty photoreal survivalism, commerce-system trade setup lock, skull-and-bone cliche, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Bone Signal Rigging operates as a portable punk-spectrum router: combine Bone Signal Rigging identity cues through bone-like spars; hide sails; drum-code rhythm; rope lashings; storm-edge light; hide-sail translucency with primitive/stone/salvage punk grammar with low-tech engines, carved mechanics, rope kinetics, mud-brick power, bone signal rigs, and windcraft reuse, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through flint planes, basalt massing, rope geometry, carved wheels, rawhide lashings, mud-brick modules, sailcloth patches, and hand-built power logic; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through flint gray, clay red, rawhide tan, ochre, tar gray, storm blue, copper green, bone white, smoke black, and sea blue; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use firelight blocks, smoky daylight, polished stone glints, water reflections, storm rim, and warm clay bounce; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render flint facets, basalt blocks, hide, rope, carved wood, mud brick, driftwood, patched canvas, copper stains, and smoke-softened edges; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through compact engine rhythm, lash-and-wheel diagonals, windcraft arcs, ritual timing channels, and clear subject scale without commerce-system or trade setup lock as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through primal invention, tactile tradecraft, stark mobility, ancient precision, communal warmth, and rough salvage optimism; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with drawn salvage-punk illustration with clean matte surfaces, denoised smoke, low-to-moderate detail, and no dusty photoreal survivalism; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'bone-like spars; hide sails; drum-code rhythm; rope lashings; storm-edge light; hide-sail translucency',
-      creative_brief:
-        'Use Bone Signal Rigging after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies bone-like spars, hide sails, drum-code rhythm, rope lashings, storm-edge light, hide-sail translucency, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-077',
-    name: 'Rope Kinetic Generator',
-    category: '10. Primitive, Stone & Salvage Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, cinematic realism, AAA key art, American fantasy RPG hero, sourcebook hero art, superhero pose, YA adventure cover, centered full-body adventurer, young rugged protagonist, cloak and pouches, leather belt costume, boots hero pose, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, object-only card, workers-only composition, anonymous worker crew, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, long hallway perspective, endless bridge tunnel, fantasy temple, scenic jungle bridge, empty rope texture, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, photoreal rope fibers, tiny pulley clutter, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, dusty photoreal survivalism, commerce-system trade setup lock, skull-and-bone cliche, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Rope Kinetic Generator operates as a portable punk-spectrum router: combine Rope Kinetic Generator identity cues through rope tension; wooden generators; pulley stones; woven load paths; lantern lines; wooden generator wheels with primitive/stone/salvage punk grammar with low-tech engines, carved mechanics, rope kinetics, mud-brick power, bone signal rigs, and windcraft reuse, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through flint planes, basalt massing, rope geometry, carved wheels, rawhide lashings, mud-brick modules, sailcloth patches, and hand-built power logic; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through flint gray, clay red, rawhide tan, ochre, tar gray, storm blue, copper green, bone white, smoke black, and sea blue; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use firelight blocks, smoky daylight, polished stone glints, water reflections, storm rim, and warm clay bounce; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render flint facets, basalt blocks, hide, rope, carved wood, mud brick, driftwood, patched canvas, copper stains, and smoke-softened edges; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through compact engine rhythm, lash-and-wheel diagonals, windcraft arcs, ritual timing channels, and clear subject scale without commerce-system or trade setup lock as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through primal invention, tactile tradecraft, stark mobility, ancient precision, communal warmth, and rough salvage optimism; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with drawn salvage-punk illustration with clean matte surfaces, denoised smoke, low-to-moderate detail, and no dusty photoreal survivalism; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'rope tension; wooden generators; pulley stones; woven load paths; lantern lines; wooden generator wheels',
-      creative_brief:
-        'Use Rope Kinetic Generator after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies rope tension, wooden generators, pulley stones, woven load paths, lantern lines, wooden generator wheels, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-078',
-    name: 'Mud Brick Energy Cells',
-    category: '10. Primitive, Stone & Salvage Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, cinematic realism, AAA key art, American fantasy RPG hero, sourcebook hero art, superhero pose, YA adventure cover, centered full-body adventurer, young rugged protagonist, cloak and pouches, leather belt costume, boots hero pose, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, photoreal wet skin, pore detail, over-rendered muscle anatomy, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, object-only card, workers-only composition, anonymous worker crew, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, pottery shop still life, generic village commerce-system, crowded bazaar, readable jar labels, shop signs, wall signage, painted letters, number-like marks, geometric text panels, religious shrine, flags, symbols, logo-like battery icons, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny ceramic rows everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, dusty photoreal survivalism, commerce-system trade setup lock, skull-and-bone cliche, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Mud Brick Energy Cells operates as a portable punk-spectrum router: combine Mud Brick Energy Cells identity cues through mud-brick geometry; ceramic cells; copper jars; shade-blue cooling; woven mats; clay dust with primitive/stone/salvage punk grammar with low-tech engines, carved mechanics, rope kinetics, mud-brick power, bone signal rigs, and windcraft reuse, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through flint planes, basalt massing, rope geometry, carved wheels, rawhide lashings, mud-brick modules, sailcloth patches, and hand-built power logic; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through flint gray, clay red, rawhide tan, ochre, tar gray, storm blue, copper green, bone white, smoke black, and sea blue; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use firelight blocks, smoky daylight, polished stone glints, water reflections, storm rim, and warm clay bounce; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render flint facets, basalt blocks, hide, rope, carved wood, mud brick, driftwood, patched canvas, copper stains, and smoke-softened edges; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through compact engine rhythm, lash-and-wheel diagonals, windcraft arcs, ritual timing channels, and clear subject scale without commerce-system or trade setup lock as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through primal invention, tactile tradecraft, stark mobility, ancient precision, communal warmth, and rough salvage optimism; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with drawn salvage-punk illustration with clean matte surfaces, denoised smoke, low-to-moderate detail, and no dusty photoreal survivalism; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'mud-brick geometry; ceramic cells; copper jars; shade-blue cooling; woven mats; clay dust',
-      creative_brief:
-        'Use Mud Brick Energy Cells after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies mud-brick geometry, ceramic cells, copper jars, shade-blue cooling, woven mats, clay dust, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-079',
-    name: 'Salvage Sail Windcraft',
-    category: '10. Primitive, Stone & Salvage Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, cinematic realism, AAA key art, American fantasy RPG hero, sourcebook hero art, superhero pose, YA adventure cover, centered full-body adventurer, young rugged protagonist, cloak and pouches, leather belt costume, boots hero pose, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, object-only card, workers-only composition, anonymous worker crew, crew-only staging, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random junk collage, pirate costume portrait, harbor commerce-system, crowded dock, flags, banners, skull emblem, pirate logo, readable sail marks, weapons, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rope clutter, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, dusty photoreal survivalism, commerce-system trade setup lock, skull-and-bone cliche, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Salvage Sail Windcraft operates as a portable punk-spectrum router: combine Salvage Sail Windcraft identity cues through patched sails; hull curves; rope winches; tar seams; salt wood; coastal sailpunk salvage style that transfers patched canvas sails with primitive/stone/salvage punk grammar with low-tech engines, carved mechanics, rope kinetics, mud-brick power, bone signal rigs, and windcraft reuse, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through flint planes, basalt massing, rope geometry, carved wheels, rawhide lashings, mud-brick modules, sailcloth patches, and hand-built power logic; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through flint gray, clay red, rawhide tan, ochre, tar gray, storm blue, copper green, bone white, smoke black, and sea blue; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use firelight blocks, smoky daylight, polished stone glints, water reflections, storm rim, and warm clay bounce; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render flint facets, basalt blocks, hide, rope, carved wood, mud brick, driftwood, patched canvas, copper stains, and smoke-softened edges; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through compact engine rhythm, lash-and-wheel diagonals, windcraft arcs, ritual timing channels, and clear subject scale without commerce-system or trade setup lock as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through primal invention, tactile tradecraft, stark mobility, ancient precision, communal warmth, and rough salvage optimism; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with drawn salvage-punk illustration with clean matte surfaces, denoised smoke, low-to-moderate detail, and no dusty photoreal survivalism; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'patched sails; hull curves; rope winches; tar seams; salt wood; coastal sailpunk salvage style that transfers patched canvas sails',
-      creative_brief:
-        'Use Salvage Sail Windcraft after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies patched sails, hull curves, rope winches, tar seams, salt wood, coastal sailpunk salvage style that transfers patched canvas sails, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-080',
-    name: 'Driftwood Turbine Windcraft',
-    category: '10. Primitive, Stone & Salvage Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, cinematic realism, AAA key art, American fantasy RPG hero, sourcebook hero art, superhero pose, YA adventure cover, centered full-body adventurer, young rugged protagonist, cloak and pouches, leather belt costume, boots hero pose, generic sage portrait, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, object-only card, workers-only composition, anonymous worker crew, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, family-camp postcard, generic refugee camp, eco-symbol abstraction, object-only turbine render, logo-like leaf icon, logo-like wind icon, flags, faction marks, readable signs, crowded tents, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny scrap clutter, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, dusty photoreal survivalism, commerce-system trade setup lock, skull-and-bone cliche, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Driftwood Turbine Windcraft operates as a portable punk-spectrum router: combine Driftwood Turbine Windcraft identity cues through driftwood turbines; patched canvas; ember light; scrap blades; rope lashings; dust with primitive/stone/salvage punk grammar with low-tech engines, carved mechanics, rope kinetics, mud-brick power, bone signal rigs, and windcraft reuse, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through flint planes, basalt massing, rope geometry, carved wheels, rawhide lashings, mud-brick modules, sailcloth patches, and hand-built power logic; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through flint gray, clay red, rawhide tan, ochre, tar gray, storm blue, copper green, bone white, smoke black, and sea blue; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use firelight blocks, smoky daylight, polished stone glints, water reflections, storm rim, and warm clay bounce; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render flint facets, basalt blocks, hide, rope, carved wood, mud brick, driftwood, patched canvas, copper stains, and smoke-softened edges; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through compact engine rhythm, lash-and-wheel diagonals, windcraft arcs, ritual timing channels, and clear subject scale without commerce-system or trade setup lock as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through primal invention, tactile tradecraft, stark mobility, ancient precision, communal warmth, and rough salvage optimism; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with drawn salvage-punk illustration with clean matte surfaces, denoised smoke, low-to-moderate detail, and no dusty photoreal survivalism; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'driftwood turbines; patched canvas; ember light; scrap blades; rope lashings; dust',
-      creative_brief:
-        'Use Driftwood Turbine Windcraft after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies driftwood turbines, patched canvas, ember light, scrap blades, rope lashings, dust, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-122'],
+      visualEvaluation: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

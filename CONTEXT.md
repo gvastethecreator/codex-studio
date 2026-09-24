@@ -71,7 +71,7 @@ Provider-independent user intent executed by a Persistent Job, such as image gen
 _Avoid_: provider job kind, vendor-specific job type
 
 **Generation Provider**:
-Backend adapter selected through the Provider Boundary to execute a Generation Task through Codex or another image system.
+Backend adapter selected through the Provider Boundary to execute a Generation Task through ChatGPT HTTP, Codex app-server, or another supported image system.
 _Avoid_: engine, model, vendor route
 
 **Generation Task Spec**:
@@ -152,7 +152,7 @@ One `codex app-server` turn executed by the backend for a local image task.
 _Avoid_: generation step, rpc call
 
 **Local Codex Session**:
-Capability snapshot that says whether the user's local Codex CLI ChatGPT login can run Codex Studio jobs right now.
+Capability snapshot for the local Codex app-server route. ChatGPT HTTP has a separate sign-in and availability state; a connected session does not guarantee available quota.
 _Avoid_: account status, API key session, remote auth
 
 **App-Server Lifecycle**:
@@ -160,7 +160,7 @@ Backend supervision of `codex app-server`, including ensure reasons and the late
 _Avoid_: just process supervisor, websocket status
 
 **Provider Boundary**:
-Backend seam that lets non-Codex image systems satisfy the same local job, asset, metadata, log, and catalog contract without becoming the studio's product center.
+Backend seam that gives each Generation Provider its own execution path while sharing local job, asset, metadata, log, and catalog contracts.
 _Avoid_: multi-provider orchestrator, vendor switch, direct provider call
 
 ### Frontend seams
@@ -215,9 +215,8 @@ Frontend seam that materializes navigation, overlays, Studio Runtime state, and 
 _Avoid_: AppContent glue, root orchestrator
 
 **Studio Readiness**:
-Single non-secret ready-or-blocked product snapshot.
-It says whether local generation can run now and why.
-It is built from Studio Runtime, Studio Library, App-Server Lifecycle, and Local Codex Session facts.
+Non-secret snapshot of local runtime and setup facts.
+Its Codex diagnostics combine App-Server Lifecycle and Local Codex Session facts. Generation also checks the selected provider's availability; ChatGPT HTTP does not require the Codex runtime to be ready.
 _Avoid_: simple health boolean, account check, deep diagnostic command
 
 **Command Center**:
@@ -249,7 +248,7 @@ _Avoid_: direct repair command, secret-printing audit, destructive storage scan
 - An **External Output Source** can be discovered or registered, then imported into a **Studio Library** before destructive or catalog operations.
 - A **Catalog Page** contains many **Catalog Entries**.
 - **Catalog Entry Detail** completes one compact Catalog Entry only when a caller explicitly needs full generation or diagnostic metadata.
-- A generation-flavored **Persistent Job** executes one or more **Codex Turns**.
+- A **Persistent Job** on the Codex app-server route executes one or more **Codex Turns**. ChatGPT HTTP jobs do not create Codex turns or threads.
 - A **Persistent Job** has one **Generation Task** and one **Generation Provider** selected through the **Provider Boundary**.
 - **Persistent Job Intake** creates Persistent Jobs and checks the **Provider Capability Catalog** plus runtime preflight to keep Generation Task and Generation Provider policy explicit.
 - A **Recipe Module** produces a **Generation Task Spec** for a **Generation Task**.
@@ -273,10 +272,10 @@ _Avoid_: direct repair command, secret-printing audit, destructive storage scan
 - An **Image Grid Geometry Budget** keeps first-viewport Catalog thumbnails discoverable while off-viewport images remain lazy.
 - A **Route Preload Budget** lets the **Studio Shell** warm route surfaces by route and user intent without importing every **Recipe Module** surface on Home.
 - **Studio Shell** materializes **Studio Runtime**, navigation state, overlays, and **Catalog Entries** into the renderable app layout.
-- **Studio Readiness** depends on **Studio Runtime**, **Studio Library**, **App-Server Lifecycle**, and the **Local Codex Session**.
+- **Studio Readiness** exposes **Studio Runtime**, **Studio Library**, and Codex runtime diagnostics. Generation readiness is checked for the selected **Generation Provider**.
 - The **Command Center** exposes global status and commands, while deeper configuration and diagnostics open from it.
 - A **Demand-Mounted Surface** is opened from the **Command Center** or another explicit user action. The **Settings Surface** is the settings-specific demand-mounted surface.
-- The **Provider Boundary** is Codex-first: Codex remains the primary integration path, while external image systems plug into the same durable local contracts.
+- The **Provider Boundary** keeps ChatGPT HTTP and Codex app-server distinct. New jobs capture their selected route; a failed job never switches providers automatically.
 
 ## Example dialogue
 
@@ -284,7 +283,7 @@ _Avoid_: direct repair command, secret-printing audit, destructive storage scan
 > **Domain expert:** "Yes. The backend persists the **Catalog Entry**. **Local Studio Sync** refreshes the affected catalog scope. Then the grid materializes that entry directly."
 >
 > **Dev:** "So what actually blocks the user from generating?"
-> **Domain expert:** "**Studio Readiness** does. It combines backend health, the **Studio Library**, the **App-Server Lifecycle**, and the **Local Codex Session** into one answer."
+> **Domain expert:** "Backend and **Studio Library** readiness matter, then the selected **Generation Provider** must be available. Codex runtime diagnostics do not block an authenticated ChatGPT HTTP job."
 
 ## Flagged ambiguities
 
@@ -297,8 +296,8 @@ _Avoid_: direct repair command, secret-printing audit, destructive storage scan
 - **Studio Runtime** names the backend-resolution adapter. Readiness and onboarding status belong to **Studio Readiness**.
 - **Command Center** does not mean putting every control in the toolbar. Global controls live there or open from there instead of floating separately.
 - **Demand-Mounted Surface** is the default for heavy diagnostics, file views, activity panels, and visual effects that are not always visible.
-- **Local Codex Session** is the local ChatGPT-login capability snapshot. The phrase "account status" applies only to the compatibility endpoint `/api/codex/account`.
-- **Provider Boundary** does not mean the product becomes a generic provider router. It keeps a Codex-first studio while it allows external generation systems behind backend adapters.
+- **Local Codex Session** is the app-server capability snapshot for the local ChatGPT login. Studio shows the ChatGPT HTTP sign-in state separately. The phrase "account status" applies only to the compatibility endpoint `/api/codex/account`.
+- **Provider Boundary** does not mean the product becomes a generic provider router. ChatGPT HTTP and Codex app-server keep separate captured execution paths behind backend adapters.
 - **Generation Task** and **Generation Provider** are separate concepts. Task names do not encode provider names.
 - **Provider Capability Catalog** is a fixed build-time capability description, not runtime plugin machinery or a Provider Secret store.
 - **Persistent Job Intake** can accept compatibility aliases. New durable policy must preserve the **Generation Task** / **Generation Provider** split.

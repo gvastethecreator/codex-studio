@@ -1,0 +1,103 @@
+schemaVersion: 1
+id: SP22-173
+packId: pack_22
+name: Bold Woodcut
+category: 10. Printmaking & Reproduction
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - printmaking-and-reproduction
+  - bold-relief-cut
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Relief-print drawing builds recognizable forms from solid positive shapes and carved-looking
+    reserves, with broad cuts that vary naturally in direction and width.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Let cut marks follow existing
+    contours and planes without changing the subject's function or adding detail.
+  color_and_tone: >-
+    Retain the requested palette and color relationships. Use clear color blocks across the colors
+    requested instead of limiting the image to one or two inks.
+  lighting_and_shadow: >-
+    Follow the requested light direction and contrast. Organize light and shadow with positive shapes
+    and open reserves without imposing a high-contrast monochrome scheme.
+  texture_and_material: >-
+    Use broad, irregular cut marks within the forms. Keep marks tied to the drawing; do not overlay
+    wood grain or a uniform print texture on the image.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, pose, crop and placement. Do not add margins, a page, border,
+    lettering or card layout.
+  atmosphere_and_mood: >-
+    Keep the requested setting and mood. Relief marks affect shape and surface only; they do not
+    change the depicted world.
+  rendering_and_quality: >-
+    Establish large shapes and silhouette first, then place a few broad cuts that clarify form. Keep
+    edges distinct and legible at reduced size.
+avoidRules:
+  - wood-grain texture stamped across the whole image
+  - forced monochrome or restricted ink count
+  - unrequested page, border, lettering, or period motifs
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-173.webp
+attributes:
+  negativePrompt: >-
+    wood-grain texture stamped across the whole image, forced monochrome or restricted ink count,
+    unrequested page, border, lettering, or period motifs
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: relief printmaking
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: relief printmaking
+    avoidRules:
+      - text: wood-grain texture stamped across the whole image
+        field: texture_and_material
+      - text: forced monochrome or restricted ink count
+        field: color_and_tone
+      - text: unrequested page, border, lettering, or period motifs
+        field: global
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S073
+    sourceTitle: Bold Woodcut
+    referenceIds:
+      - S59
+    evidenceStatus: reuse_review
+  ui:
+    kind: full_style
+    derivedFrom:
+      - TCG-S073
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: printmaking-and-reproduction
+  categoryName: 10. Printmaking & Reproduction
+  tags:
+    - trading-card-illustration
+    - printmaking-and-reproduction
+    - bold-relief-cut
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -13,71 +13,34 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Coral Resonance Liturgy acts as a transferable anime-battle/worlds router: Coral Resonance
-    Liturgy, coral resonance liturgy style grammar with abyssal blue, coral biomechanical geometry,
-    sonic halo symmetry, and sacred machine scale; combine it with mecha and cyberpunk anime grammar
-    with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and
-    machine-emotion tension; named titles, studios, or lineage words may guide style, but they must
-    not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.
+    Rhythmic luminous illustration with branching contour patterns, concentric halo-like curves,
+    and bioluminescent color accents over deep blue values.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Coral
-    Resonance Liturgy, coral resonance liturgy style grammar with abyssal blue, coral biomechanical
-    geometry, sonic halo symmetry, and sacred machine scale as portable contour, motion grammar,
-    surface language, and emotional pressure without requiring canon elements or a default action
-    setup.
+    Retain the subject’s identity and proportions. Echo its existing divisions with branching
+    lines and repeated arcs, without changing it into coral or machinery.
   color_and_tone: >-
-    Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile
-    white, coral glow, and disciplined emissive accents; let Coral Resonance Liturgy, coral
-    resonance liturgy style grammar with abyssal blue, coral biomechanical geometry, sonic halo
-    symmetry, and sacred machine scale choose accent intensity, value contrast, emotional
-    temperature, and power-system separation while staying attached to prompt X.
+    Anchor the palette in abyssal blue and teal, with coral pink, pale aqua, and soft pearl
+    highlights.
   lighting_and_shadow: >-
-    Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow,
-    and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Coral Resonance Liturgy, coral resonance liturgy style grammar
-    with abyssal blue, coral biomechanical geometry, sonic halo symmetry, and sacred machine scale
-    without replacing prompt X with a stock anime frame.
+    Use layered cel shadows with smooth luminous edges and circular highlight rhythms; keep the
+    glow attached to existing forms.
   texture_and_material: >-
-    Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust,
-    circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Coral
-    Resonance Liturgy, coral resonance liturgy style grammar with abyssal blue, coral biomechanical
-    geometry, sonic halo symmetry, and sacred machine scale controlled, denoised, and coherent
-    across bodies, objects, environments, abstractions, and action.
+    Preserve the original surface while adding fine branching lines, soft stipple, and
+    controlled translucent accents.
   camera_and_composition: >-
-    Frame through scale compression, machinery diagonals, grid overlays without readable UI,
-    service-bay density, orbital symmetry, and high-speed hardware lanes; convert Coral Resonance
-    Liturgy, coral resonance liturgy style grammar with abyssal blue, coral biomechanical geometry,
-    sonic halo symmetry, and sacred machine scale into reusable perspective, timing, rhythm, scale,
-    cut-in, and negative-space rules instead of one fixed style sample layout.
+    Honor the requested framing. Repeat arcs and branching marks to create rhythm without
+    imposing a halo or centered layout.
   atmosphere_and_mood: >-
-    Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine
-    grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic,
-    tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping
-    the anime-battle lineage readable.
+    Suggest resonance and reverence through repeated curves, deep color, and measured glow, not
+    religious symbols or an underwater scene.
   rendering_and_quality: >-
-    Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic
-    3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object
-    structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no
-    fake readable text, no signature, no photoreal or 3D-render drift.
+    Combine precise fine lines with clean shadow bands and soft controlled bloom; maintain clear
+    separation between marks.
   key_features: >-
-    Coral Resonance Liturgy, coral resonance liturgy style grammar with abyssal blue, coral
-    biomechanical geometry, sonic halo symmetry, and sacred machine scale; armored contour,
-    mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine
-    pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass,
-    hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale
-    compression, machinery diagonals, grid overlays without readable UI, service-bay density,
-    orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable
-    hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency
+    Branching contours; concentric rhythms; abyssal blues; coral and aqua glow.
   creative_brief: >-
-    Apply Coral Resonance Liturgy after prompt X as a transferable anime-battle/worlds layer: prompt
-    X supplies subject, action, setting, tone, and intensity, while this preset supplies Coral
-    Resonance Liturgy, coral resonance liturgy style grammar with abyssal blue, coral biomechanical
-    geometry, sonic halo symmetry, and sacred machine scale, mecha and cyberpunk anime grammar with
-    engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and
-    machine-emotion tension, finish discipline, and negative controls without forcing canon cast,
-    title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal
-    card.
+    Preserve the prompt’s subject and setting. Apply branching line rhythms, deep blue values,
+    and restrained coral-aqua glows; add no coral growth, ocean, or sacred symbols.
 avoidRules:
   - realistic
   - 3d render
@@ -89,7 +52,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - named franchise likeness
   - cockpit UI
@@ -107,7 +69,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -115,11 +76,10 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, named franchise likeness, cockpit UI, weapon, angel/robot
-    copy, cathedral corridor, readable glyphs, body-horror gore, plastic 3d robot render, cockpit
+    artifacts, watermark, signature, named franchise likeness, cockpit UI, weapon, angel/robot copy,
+    cathedral corridor, readable glyphs, body-horror gore, plastic 3d robot render, cockpit
     source-frame look, readable UI panel, fixed canon character, title scene replication, required
-    source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo,
-    muddy noisy darks
+    source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

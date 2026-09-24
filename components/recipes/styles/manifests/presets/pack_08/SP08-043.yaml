@@ -13,66 +13,37 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: >-
-    Space Opera Royal operates as a portable fashion-costume router: combine Operatic space-court
-    couture, sovereign nebular regality, diplomatic authority with speculative costume logic with
-    armor, suit engineering, magical garment behavior, alien proportion, and character-readability
-    design, so the preset supplies styling behavior rather than a fixed outfit card, required
-    wearer, or literal garment sample.
+    Ceremonial space-opera couture uses vertical grandeur, sculpted waistlines and flowing
+    fabric architecture; it signals formality without assigning rank.
   subject_treatment: >-
-    Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak,
-    illuminate, conceal, mutate, modularize, ritualize, or engineer through Elaborate cranial halo,
-    ceremonial train sweep, corseted architecture, bell-sleeve drama, court-pageant verticality;
-    identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and
-    styling hierarchy shift into this preset.
+    Re-cut existing garments with an architectural bodice, sweeping sleeve or train
+    proportions and fine beadwork. Halo-like headwear and elaborate trains remain optional;
+    preserve identity, pose and stated role.
   color_and_tone: >-
-    Map color through speculative material color, neon accents, abyssal values, royal metals,
-    survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents
-    intentional, material color believable, and palette behavior attached to the subject instead of
-    pasted wardrobe decoration.
+    Use luminous jewel or iridescent accents against a deliberate base, following requested
+    hues rather than requiring nebular colors, white feathers or metallics.
   lighting_and_shadow: >-
-    Use Dramatic ceremonial glow, stained-glass fantasy light, diplomatic backlight plus rim light,
-    emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi display
-    light as the styling light contract, revealing cut, drape, surface response, trim, transparency,
-    or armor structure without erasing prompt readability.
+    Preserve the prompt's setting and light. Allow organza and beads to catch soft
+    highlights; do not add stained-glass beams, stars or a ceremonial venue.
   texture_and_material: >-
-    Render Rare off-world fabric, iridescent organza, feather-trim, beaded net, liquid-metal
-    threads, luminescent silk plus armor plates, spandex, robes, leather, rubber, chrome, biotic
-    surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers,
-    shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the
-    whole prompt.
+    Layer organza, beaded net, feather-like trim, metallic thread and luminous silk as
+    textile choices, with clean seams and controlled ornament.
   camera_and_composition: >-
-    Compose with character-design readability, suit silhouette, power-shape hierarchy, modular gear
-    rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits,
-    objects, creatures, environments, action, and abstract prompts to inherit styling without one
-    required pose.
+    Keep requested framing, angle and pose. Let vertical drape and sculptural sleeves read
+    in the existing crop; do not force a full-body pageant portrait.
   atmosphere_and_mood: >-
-    Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth,
-    spectacle, or mythic futurism; the tone should feel specific to Space Opera Royal while still
-    obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+    Create ceremony through garment scale and ornamental rhythm, without conferring royalty,
+    diplomatic office, species or a court setting.
   rendering_and_quality: >-
-    Finish with believable costume engineering, clean edge logic, strong silhouette, readable
-    material physics, and no generic cosplay blur; prioritize clean style recognition, believable
-    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
-    accidental UI.
+    Balance ornate details with a clean silhouette; separate translucent cloth, beadwork and
+    metallic thread without turning fabric into hard armor.
   key_features: >-
-    Operatic space-court couture, sovereign nebular regality, diplomatic authority; Elaborate
-    cranial halo, ceremonial train sweep, corseted architecture, bell-sleeve drama, court-pageant
-    verticality; Rare off-world fabric, iridescent organza, feather-trim, beaded net, liquid-metal
-    threads, luminescent silk; Dramatic ceremonial glow, stained-glass fantasy light, diplomatic
-    backlight; character-design readability, suit silhouette, power-shape hierarchy, modular gear
-    rhythm, and transformation focus
+    Architectural waist shaping; vertical sleeve and train lines; beaded or luminous textile
+    layers; optional halo-like headpiece.
   creative_brief: >-
-    Use Space Opera Royal after prompt X as a transferable fashion/costume layer: prompt X supplies
-    subject, motion, setting, tone, and intensity, while the preset supplies Operatic space-court
-    couture, sovereign nebular regality, diplomatic authority, Elaborate cranial halo, ceremonial
-    train sweep, corseted architecture, bell-sleeve drama, court-pageant verticality, Rare off-world
-    fabric, iridescent organza, feather-trim, beaded net, liquid-metal threads, luminescent silk,
-    Dramatic ceremonial glow, stained-glass fantasy light, diplomatic backlight, character-design
-    readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation
-    focus plus paneling, harnesses, armor modules, robe systems, implant seams, luminous channels,
-    survival layers, and invented fastenings, palette behavior, light response, material treatment,
-    silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue,
-    prop bundle, or card composition.
+    Restyle the requested outfit as ceremonial space-opera couture with sculpted tailoring,
+    flowing textile architecture and fine luminous ornament. Preserve wearer, role, pose,
+    location and framing; do not imply royal rank or add a court, throne or species.
 avoidRules:
   - plain everyday minimalwear
   - contemporary Earth-uniform literalism

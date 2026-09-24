@@ -16,81 +16,35 @@ tags:
   - 2000s-classics
 visualDna:
   aesthetic: >-
-    Clinical Nocturne Tactics Style acts as a transferable anime-prestige router: a clinical anime
-    direction shaped by era-aware line economy and genre tone, alongside a nocturne anime direction
-    shaped by era-aware line economy and genre tone; fuse it with 2000s anime classic grammar with
-    cel-digital hybrid polish, genre contrast, sharper compositing, and stylized emotional
-    escalation; it routes era, genre, line economy, cel or digital finish, and performance tone
-    without locking prompt content to the source title or sample image.
+    A measured digital anime treatment where precise edge separation and grouped
+    shadows create a controlled image.
   subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through contours paced by
-    clinical tension, readable pose energy, and silhouette discipline, alongside contours paced by
-    nocturne tension, readable pose energy, and silhouette discipline; identity should remain
-    readable through anime contour, expression economy, pose energy, shape simplification, and
-    effect hierarchy instead of a required canon character or title scene.
+    Retain the requested identity, pose and action. Clarify form with disciplined contours
+    and selective edge light.
   color_and_tone: >-
-    Map color through cool clinical blues, whites, and sterile shadow accents, alongside a nocturne
-    accent system held inside disciplined cel values; anchor it in clean digital flats, gothic reds,
-    cool clinical blues, warm romance pastels, pop accents, and deliberate contrast keys; keep value
-    separation clean, cel flats intentional, accents purposeful, and palette behavior attached to
-    the requested content.
+    If color is open, use cool blue and white accents against restrained dark neutrals.
+    Preserve explicit palette choices and keep values clearly separated.
   lighting_and_shadow: >-
-    Use overhead analysis light and precise rim separation, alongside a nocturne light logic using
-    cel rim, glow behavior, and blocked shadow; combine it with digital cel rim, bloom accents,
-    dramatic night cuts, clinical overheads, magical glows, and clean compositing separation;
-    shadows should read as anime light design, rims should clarify form, and glow or effects should
-    support the prompt rather than replacing it.
+    Pair broad, even illumination with a precise rim and compact shadow groups. Use
+    nocturnal contrast only when it suits the requested scene.
   texture_and_material: >-
-    Render cel paint and ink grain tuned to clinical material contrast, alongside cel paint and ink
-    grain tuned to nocturne material contrast; anchor surfaces in digital ink edges, subtle gradient
-    fills, polished cloth and hair shapes, screen-like glow, and controlled texture overlays; cel
-    edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay
-    coherent across people, objects, environments, action, and abstractions.
+    Keep digital ink fine, surfaces controlled and grain low. Add screen-like glow only to
+    luminous elements already present.
   camera_and_composition: >-
-    Frame around clinical converted into reusable framing rhythm and anime timing, alongside
-    nocturne converted into reusable framing rhythm and anime timing, then extend it with
-    opening-sequence energy, split-second action framing, romcom reaction spacing, gothic symmetry,
-    and readable effect geometry; the style should support portraits, props, machines, performances,
-    landscapes, symbols, and full scenes through reusable anime staging grammar instead of one fixed
-    card layout.
+    Keep the requested camera and staging. Establish order through clean separation and
+    spacing.
   atmosphere_and_mood: >-
-    Carry mood through tactical detachment and nocturnal unease, alongside nocturne emotional
-    pressure and genre-specific tone; braid it with genre fluency: deadpan comedy, gothic danger,
-    romance friction, rebellion, paranoia, elegance, and pop unreality; the preset can become funny,
-    sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving
-    the chosen anime lineage.
+    Detachment or unease may come from measured spacing and cool contrast when compatible
+    with the requested tone.
   rendering_and_quality: >-
-    Finish with clean anime finishing that keeps clinical identity readable without noisy denoise,
-    alongside clean anime finishing that keeps nocturne identity readable without noisy denoise;
-    enforce clean 2000s cel-digital finish with strong design readability, controlled effects, and
-    no muddy low-resolution artifacting; prioritize clean denoise, stable anatomy or object
-    structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no
-    photoreal or 3D-render drift.
+    Preserve clean line hierarchy, crisp silhouettes and soft background integration; avoid
+    bloom that obscures small forms.
   key_features: >-
-    a clinical anime direction shaped by era-aware line economy and genre tone, alongside a nocturne
-    anime direction shaped by era-aware line economy and genre tone; contours paced by clinical
-    tension, readable pose energy, and silhouette discipline, alongside contours paced by nocturne
-    tension, readable pose energy, and silhouette discipline; cel paint and ink grain tuned to
-    clinical material contrast, alongside cel paint and ink grain tuned to nocturne material
-    contrast; overhead analysis light and precise rim separation, alongside a nocturne light logic
-    using cel rim, glow behavior, and blocked shadow; clinical converted into reusable framing
-    rhythm and anime timing, alongside nocturne converted into reusable framing rhythm and anime
-    timing
+    Precise rim separation; broad even light with grouped shadows; controlled
+    digital surfaces; measured spacing and clean silhouettes.
   creative_brief: >-
-    Apply Clinical Nocturne Tactics Style after prompt X as a transferable anime-prestige layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a
-    clinical anime direction shaped by era-aware line economy and genre tone, alongside a nocturne
-    anime direction shaped by era-aware line economy and genre tone, alongside contours paced by
-    clinical tension, readable pose energy, and silhouette discipline, alongside contours paced by
-    nocturne tension, readable pose energy, and silhouette discipline; cool clinical blues, whites,
-    and sterile shadow accents, alongside a nocturne accent system held inside disciplined cel
-    values; overhead analysis light and precise rim separation, alongside a nocturne light logic
-    using cel rim, glow behavior, and blocked shadow; cel paint and ink grain tuned to clinical
-    material contrast, alongside cel paint and ink grain tuned to nocturne material contrast and
-    clinical converted into reusable framing rhythm and anime timing, alongside nocturne converted
-    into reusable framing rhythm and anime timing, finish discipline, and negative controls without
-    requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or
-    card composition.
+    Use cool value separation, precise edges and grouped shadows only where they fit the
+    prompt. Keep its camera, subject and intended mood.
 avoidRules:
   - realistic
   - 3d render
@@ -102,7 +56,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - generic isekai gloss
   - plastic digital anime
@@ -113,15 +66,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-154.webp
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy
-    effects clutter, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise, readable text
+    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
+    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
+    filter, prompt-literal card, muddy cel noise
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

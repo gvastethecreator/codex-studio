@@ -13,89 +13,59 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Folkloric Deadpan Ink Catalog operates as a portable anime-lifestyle router: combine Folkloric
-    Deadpan Ink Catalog identity cues through Folkloric Deadpan Ink Catalog anime style cues, style
-    specific contour, material transformation, motion grammar, abstraction pressure, symbolic
-    surface logic, and prompt preserving silhouette discipline with broad anime style spectrum
-    grammar with experimental line, material specific finish, auteur adjacent motion, graphic
-    abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style
-    behavior after prompt X rather than a required scene, character, franchise image, or card
-    composition.
+    Use dry, uneven ink, a compact flat palette, repeated small hatch marks and catalog-like
+    spacing; derive pattern only from forms already present.
   subject_treatment: >-
-    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
-    style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic
-    surface logic, and prompt-preserving silhouette discipline; subjects may be characters,
-    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
-    prompt.
+    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
+    treatment to the existing forms without substituting subjects, adding accessories or changing
+    their function.
   color_and_tone: >-
-    Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop,
-    thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values
-    readable, accent roles intentional, skin or material midtones stable, and palette behavior
-    attached to the prompt instead of pasted anime decoration.
+    Palette defaults apply only where the prompt leaves color open: keep colors flat and limited,
+    preserving prompt-critical hues and material identity.
   lighting_and_shadow: >-
-    Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze,
-    speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression,
-    silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or
-    screenshot-like flatness.
+    Use simple flat values and minimal shadow; do not add theatrical light.
   texture_and_material: >-
-    Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map
-    pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile,
-    glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy
-    surface chatter.
+    Show slightly irregular ink edges and a few repeated hatches; no labels or fabricated cultural
+    ornament.
   camera_and_composition: >-
-    Compose through auteur-aware framing, material seams, impact vectors, postcard freezes,
-    distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as
-    reusable anime framing grammar, allowing close acting, objects, performances, action,
-    environments, or abstract prompts without one required pose or location.
+    Separate existing forms with clear breathing room while preserving layout and count; do not
+    create a page or display.
   atmosphere_and_mood: >-
-    Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance,
-    tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become
-    cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while
-    preserving its anime lineage.
+    Deadpan folklore is carried by dry line and repetition, not by assigning a culture or mythology.
   rendering_and_quality: >-
-    Finish with clean experimental anime finish with strong style recognition, stable subject
-    structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss;
-    prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no
-    fake readable text, no UI, and no generic AI anime gloss.
+    Apply the mark system without inventing cultural motifs, labels, folk costume, props or a
+    catalog page. Keep important silhouettes and joins legible; no watermark, unrequested text or
+    interface.
   key_features: >-
-    Folkloric Deadpan Ink Catalog anime style cues; style specific contour; material transformation;
-    motion grammar; abstraction pressure; symbolic surface logic
+    Dry uneven ink; compact flats; repeated small hatch; catalog-like spacing; deadpan restraint.
   creative_brief: >-
-    Use Folkloric Deadpan Ink Catalog after prompt X as a transferable anime character/lifestyle
-    layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset
-    supplies Folkloric Deadpan Ink Catalog anime style cues, style specific contour, material
-    transformation, motion grammar, abstraction pressure, symbolic surface logic, color logic,
-    lighting, material finish, composition rhythm, mood pressure, and quality controls without
-    requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card
-    composition.
+    Apply this visual treatment to the requested content: Dry uneven ink; compact flats; repeated
+    small hatch; catalog-like spacing; deadpan restraint. Preserve its identity, action, materials,
+    composition and requested tone; introduce no persona, scene, franchise cue or extra motif.
 avoidRules:
-  - glossy digital polish
-  - photoreal creature rendering
-  - clean modern fantasy UI
-  - neon sci fi palette
-  - cute mascot simplification
-  - empty flat distant plane
-  - generic AI anime gloss
-  - auteur copycat
-  - fixed source scene
-  - canon character copy
-  - title scene copy
-  - literal sample card setup
-  - fixed anime cast
-  - generic anime filter
-  - prompt literal card reuse
+  - photoreal cosplay rendering
+  - 3D render look
+  - plastic airbrush gloss obscuring the style's defining marks
+  - undifferentiated anime filter erasing the preset's signature mechanics
+  - unrequested default-image characters, costume details, props or setting
+  - unrequested default-image framing
+  - garbled pseudo-text
+  - unrequested interface overlay
   - watermark
-  - readable text
-  - fake UI
+  - unrequested logo or signature artifact
+  - polished sheen erasing dry-ink irregularity
+  - hatch marks obscuring subject contours
+  - unrequested cultural motif or label
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-330.webp
 attributes:
   negativePrompt: >-
-    glossy digital polish, photoreal creature rendering, clean modern fantasy UI, neon sci fi
-    palette, cute mascot simplification, empty flat distant plane, generic AI anime gloss, auteur
-    copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup,
-    fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text,
-    fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature
+    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
+    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
+    unrequested default-image characters, costume details, props or setting, unrequested
+    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
+    unrequested logo or signature artifact, polished sheen erasing dry-ink irregularity, hatch
+    marks obscuring subject contours, unrequested cultural motif or label
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

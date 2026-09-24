@@ -40,10 +40,10 @@ avoidRules:
   - uniform crosshatch grid
   - unrequested specimen labels
   - random scratch noise
-assets: {}
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP20-004.webp
 attributes:
   negativePrompt: uniform crosshatch grid, unrequested specimen labels, random scratch noise
-  previewStatus: pending
   intentionalPolicy:
     schemaVersion: 1
     kind: full_style
@@ -69,7 +69,6 @@ attributes:
       - text: random scratch noise
         field: rendering_and_quality
   ui:
-    previewStatus: pending
     kind: full_style
     derivedFrom:
       - SP04-062
@@ -88,4 +87,4 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true

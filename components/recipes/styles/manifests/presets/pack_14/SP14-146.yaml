@@ -1,0 +1,102 @@
+schemaVersion: 1
+id: SP14-146
+packId: pack_14
+name: Yoruba Orisha Myth-Noir
+version: 1
+supportedTasks: &id002
+  - image_generate
+  - image_edit
+  - style_preset_card
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-146.webp
+attributes:
+  negativePrompt:
+    Do not change a requested person's identity or force an Orisha, ritual or shrine into the
+    scene., Do not mix unrelated divine attributes or flatten Yoruba visual culture into generic pan-African
+    decoration., Avoid all-over bead texture, repeated floating emblems and compulsory thunder or axe imagery.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: Do not change a requested person's identity or force an Orisha, ritual or shrine into the scene.
+        field: rendering_and_quality
+      - text:
+          Do not mix unrelated divine attributes or flatten Yoruba visual culture into generic pan-African
+          decoration.
+        field: rendering_and_quality
+      - text: Avoid all-over bead texture, repeated floating emblems and compulsory thunder or axe imagery.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+    derivedFrom:
+      - SP14-022
+category: Yoruba Mythology — Orisha
+tags: &id001
+  - curation-v2
+  - identity-reviewed
+  - visual-evaluation-pending
+  - yoruba-orisha
+visualDna:
+  aesthetic:
+    'Yoruba Orisha mythic illustration combines poised sculptural forms, rhythmic carved contours
+    and carefully fitted beadwork with a coherent Orisha vocabulary. For Sango, use paired balance in the spacing
+    of existing forms; for Ogun, forged diagonals that follow a joint; for Oshun, a flowing fan or water curve
+    that follows an existing contour. Choose the family that best fits the subject or named direction; do not
+    combine them or use beads as the only identity cue.'
+  subject_treatment:
+    Preserve the requested subject, action, identity and explicit design locks. Shape unspecified
+    garment panels, fittings or built details through one coherent Orisha motif family and
+    crafted bead bands. Let the paired, forged, or flowing form contribute to construction and gesture; keep the
+    cues integrated into the subject rather than adding an axe, tool, fan, shrine or deity as a new subject.
+  color_and_tone:
+    Set concentrated bead colors and pale highlights against dark wood, cloth or forged metal.
+    Select a compact palette that suits the chosen Orisha direction instead of claiming one universal sacred
+    color code; preserve explicit requested colors and a strong focal hierarchy.
+  lighting_and_shadow:
+    Use clear sculptural shadows and small bright reflections on beadwork, carved edges
+    and worked metal. Preserve the requested light direction and time; give the selected motif
+    emphasis through value and reflected light without requiring a thunderstorm or supernatural emitter.
+  texture_and_material:
+    Distinguish carved wood, layered cloth, glass-bead surfaces and forged or polished
+    metal where they belong in the design. Let beads follow a short fitted band near the
+    selected motif, carved forms carry silhouette, and metal express purposeful joints. Keep broad material planes
+    visible rather than beading every edge or repeated component.
+  camera_and_composition:
+    Preserve the requested view, pose and action. Balance a clear main mass with rhythmic
+    supporting shapes and a purposeful asymmetry. Motifs should follow the subject rather than requiring a
+    frontal icon, staff, shrine or repeated twin-axe composition.
+  atmosphere_and_mood:
+    Convey presence, agency and a relationship between human craft and divine forces. Let
+    the chosen mythic direction and requested emotion guide whether the image feels forceful, healing, contemplative
+    or celebratory.
+  rendering_and_quality:
+    Use authored sculptural illustration with confident drawn contours, differentiated
+    painted planes and selective bead highlights. Make the subject and its characteristic craft legible at
+    thumbnail size; keep fine marks near the chosen motif instead of rendering the whole object like a product.
+avoidRules:
+  - Do not change a requested person's identity or force an Orisha, ritual or shrine into the scene.
+  - Do not mix unrelated divine attributes or flatten Yoruba visual culture into generic pan-African decoration.
+  - Avoid all-over bead texture, repeated floating emblems and compulsory thunder or axe imagery.
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: yoruba-orisha
+  categoryName: Yoruba Mythology — Orisha
+  tags: *id001
+  supportedTasks: *id002
+  hasDefaultImage: true

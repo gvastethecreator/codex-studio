@@ -1,0 +1,113 @@
+schemaVersion: 1
+id: SP23-022
+packId: pack_23
+name: Kelmscott Density
+category: 5. Revival & Storybook Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - revival-and-storybook-illustration
+  - monochrome-mass-and-reserve
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    A monochrome drawing language balances assertive dark masses, open reserves and fine line detail.
+    Any vegetal abstraction stays within existing surfaces that the user permits for ornament. Scope
+    this study to Kelmscott Press and the nineteenth-century medieval revival; it is later book design,
+    not medieval source art.
+  subject_treatment: >-
+    Preserve requested identity, proportions, count, action and functional details. Keep the main form
+    legible before adding fine linework, and do not invent vegetation or ornament outside an existing
+    or explicitly permitted surface.
+  color_and_tone: >-
+    Preserve the user's palette. When monochrome is requested, organize value through dark masses and
+    open reserves; for a specified color palette, keep those hues and translate the same hierarchy
+    without replacing them with black and white.
+  lighting_and_shadow: >-
+    Preserve the requested lighting and shadows. Use line density to clarify existing value structure
+    without adding candlelight, a new light source or a dramatic setting.
+  texture_and_material: >-
+    Keep fine detail within existing permitted areas and preserve the actual materials of depicted
+    subjects. Dense linework does not call for a paper surface, print distress or all-over filigree.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, orientation and arrangement. Do not convert the image into
+    a book page or add margins, typography, a floral border or printer's marks.
+  atmosphere_and_mood: >-
+    Keep the user's setting and mood. The historical scope is the Victorian-era Kelmscott medieval
+    revival, not a request for a medieval scene, manuscript text or historical props.
+  rendering_and_quality: >-
+    Maintain a clear hierarchy between solid dark areas, reserved light and fine detail. Keep small
+    marks crisp and subordinate to the subject rather than filling every open area.
+avoidRules:
+  - unrequested book-page layout, typography or printer's marks
+  - unrequested floral border, garden or added vegetation
+  - ornament on surfaces the user has not permitted
+  - false attribution of Kelmscott revival design as medieval source art
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-022.webp
+attributes:
+  negativePrompt: >-
+    unrequested book-page layout, typography or printer's marks, unrequested floral border, garden or
+    added vegetation, ornament on surfaces the user has not permitted, false attribution of Kelmscott
+    revival design as medieval source art
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: monochrome-ornamental-drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: dark-mass-open-reserve-and-fine-line-hierarchy
+      - field: atmosphere_and_mood
+        group: source-scope
+        value: nineteenth-century-kelmscott-medieval-revival-not-medieval-source
+    avoidRules:
+      - text: unrequested book-page layout, typography or printer's marks
+        field: camera_and_composition
+      - text: unrequested floral border, garden or added vegetation
+        field: global
+      - text: ornament on surfaces the user has not permitted
+        field: texture_and_material
+      - text: false attribution of Kelmscott revival design as medieval source art
+        field: atmosphere_and_mood
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: RV-01
+    sourceTitle: Kelmscott Density
+    historicalScope: 'Revival medieval · siglo XIX'
+    referenceIds:
+      - S21
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: revival-and-storybook-illustration
+  categoryName: 5. Revival & Storybook Illustration
+  tags:
+    - curation-v2
+    - revival-and-storybook-illustration
+    - monochrome-mass-and-reserve
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

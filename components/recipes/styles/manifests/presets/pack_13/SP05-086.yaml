@@ -12,58 +12,16 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: >-
-    Cold-Warm Restorative Comfort operates as a portable anime-lifestyle router: combine Cold Warm
-    Restorative Comfort identity cues through Thermal dialogue; layered comfort; practical use cues;
-    soft vapor; cold ambient space; and unhurried companionship rhythm with slice of life and moe
-    grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional
-    rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X
-    rather than a required scene, character, franchise image, or card composition.
-  subject_treatment: >-
-    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
-    rounded shape language, micro-expression timing, soft body or object posture, simple
-    costume/surface detail, and charm through small repeated gestures; subjects may be characters,
-    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
-    prompt.
-  color_and_tone: >-
-    Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal
-    greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin
-    or material midtones stable, and palette behavior attached to the prompt instead of pasted anime
-    decoration.
-  lighting_and_shadow: >-
-    Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim,
-    and flat comedy brightness; lighting should clarify expression, silhouette, material, and
-    emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
-  texture_and_material: >-
-    Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft
-    marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper,
-    sensor, grain, or effect textures controlled enough to route style without noisy surface
-    chatter.
-  camera_and_composition: >-
-    Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational
-    crops, and comfort-scale depth without required school setting as reusable anime framing
-    grammar, allowing close acting, objects, performances, action, environments, or abstract prompts
-    without one required pose or location.
-  atmosphere_and_mood: >-
-    Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph,
-    awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute,
-    sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving
-    its anime lineage.
-  rendering_and_quality: >-
-    Finish with soft high readability anime finish with stable proportions, gentle denoise, clean
-    pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object
-    structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no
-    generic AI anime gloss.
-  key_features: >-
-    Thermal dialogue; layered comfort; practical use cues; soft vapor; cold ambient space; and
-    unhurried companionship rhythm
-  creative_brief: >-
-    Use Cold-Warm Restorative Comfort after prompt X as a transferable anime character/lifestyle
-    layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset
-    supplies Thermal dialogue, layered comfort, practical use cues, soft vapor, cold ambient space,
-    and unhurried companionship rhythm, color logic, lighting, material finish, composition rhythm,
-    mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop
-    bundle, title screenshot, or sample-card composition.
+  aesthetic: 'Rounded ink contours and broad color planes are separated by cool ambient values and warmer local highlights, creating depth through temperature.'
+  subject_treatment: "Preserve each subject's identity, pose, proportion, and action; use soft edge accents and clear silhouette breaks without adding expression or contact."
+  color_and_tone: 'Contrast cool blue-gray or green neutrals with limited warm accents where the palette permits; do not impose an emotional cast through color.'
+  lighting_and_shadow: 'Keep the stated light source and direction; use a broad soft key and warmer bounce only when existing light supports it.'
+  texture_and_material: 'Favor matte color and fine material-specific strokes; texture describes only surfaces specified in the request.'
+  camera_and_composition: 'Maintain crop, viewpoint, spacing, and count; use warm and cool planes to separate existing layers, not rearrange them.'
+  atmosphere_and_mood: 'Preserve the requested tone; color temperature is a visual relationship, not an emotional instruction.'
+  rendering_and_quality: 'Use smooth fill transitions, rounded contour joins, and soft-edged shadows with readable value boundaries.'
+  key_features: 'Cool ambient planes against warm accents; rounded contour joins; soft value transitions; clear layered separation; matte finish.'
+  creative_brief: 'Build separation with cool ambient color and measured warm accents while following the supplied light. Keep subject, action, count, camera, and mood unchanged.'
 avoidRules:
   - realistic
   - 3d render
@@ -75,7 +33,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - generic moe wallpaper
   - infantilized styling
@@ -86,17 +43,16 @@ avoidRules:
   - fixed anime cast
   - generic anime filter
   - prompt literal card reuse
-  - readable text
   - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-086.webp
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only
-    lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast,
-    generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D
-    render look, copied franchise costume, logo
+    artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock,
+    canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic
+    anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied
+    franchise costume, logo
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

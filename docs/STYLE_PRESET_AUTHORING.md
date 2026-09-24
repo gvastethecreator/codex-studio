@@ -32,19 +32,77 @@ If `--default-image` is omitted, the scaffold still points to `/assets/recipes/s
 
 ## Prompt specificity
 
-Batch generation prompts are pack-specific and category-specific.
-Before you run a new pack, extend `scripts/generate-style-defaults.ts` with distinct scene anchors and motif rules for that pack.
-Do not rely on the generic fallback.
-This keeps thumbnails from converging on the same generic props or staging.
+The historical Codex batch path has pack- and category-specific scene anchors. For the
+ChatGPT HTTP path, Atlas cards use authored representative briefs in
+`scripts/style-curation/card-briefs.json`; legacy packs 01–17 use the deterministic
+category briefs in `scripts/style-curation/legacy-card-briefs*.ts`. Both combine with
+the preset's eight visual fields. A brief controls only the preview image; do not copy
+its subject, setting or props into runtime DNA. The runtime style must remain usable
+on a different subject. Review generated cards by category before publishing a batch;
+jobs marked `needs_review` require inspection before another submission.
 
 `generate-style-defaults.ts` checkpoints `manifest-<pack>.json` and `failures-<pack>.json` after each preset.
-It polls job and asset completion from local Studio SQLite (`.studio/studio.sqlite`) instead of hammering HTTP list endpoints.
+It polls job and asset completion from the Studio Library SQLite database
+(`STUDIO_LIBRARY_DIR` or the configured default) instead of hammering HTTP list endpoints.
 If a long batch is interrupted, trust the `.webp` files on disk and the latest checkpoint files.
 Do not assume that the pack did not advance.
+
+## Atlas imports and card review
+
+The original Medieval and TCG research records are preserved in
+`components/recipes/styles/atlas/medieval-research.source.json` and
+`components/recipes/styles/atlas/tcg-catalog.source.json`. `pack_23` contains 58
+Medieval visual presets. `pack_22` contains 120 TCG visual presets; its other
+42 research records are visible as pending catalog entries and are not executable
+styles. Historical titles and references belong in `sourceMetadata`, not in
+reusable visual DNA. Card subjects belong in `card-briefs.json`, not in the preset.
+
+The card generator requires an explicit `--provider`; launching it without one
+stops before any request. It is an execution script, not a syntax-check command.
+Use `bun run check` for code checks, or `--dry-run` with an explicit provider to
+inspect prompts. Generate new cards through ChatGPT HTTP for the intended workspace:
+
+```bash
+bun scripts/generate-style-defaults.ts --provider=chatgpt --workspace-id=<workspace-id> --pack=pack_22 --parallel=4
+```
+
+This path submits each card once and refuses a second run for a prior ChatGPT
+card job. Visually review the saved image before setting its `assets.defaultImage`
+and removing `previewStatus: pending`. A failed composition may be replaced only
+after checking that its prior job completed. For one card, use
+`--preset=<id> --replace-reviewed --reviewed-job-id=<completed-job-id>`; for a
+reviewed batch, pass a JSON object mapping each preset ID to its latest completed
+job ID with `--reviewed-replacements-file=<path> --parallel=4`. A job in
+`needs_review` must be inspected before any new submission.
+
+After a human reviews an uncertain ChatGPT result, a single re-request is allowed
+only when the latest ChatGPT card job is still `needs_review` and has no associated
+asset. Pass a JSON object mapping each reviewed preset ID to that exact job ID with
+`--reviewed-uncertain-jobs-file=<path>`, plus an explicit `--workspace-id`. This
+mode rejects force, refresh, replacement, retry, variant, preset and limit flags;
+it moves each prior per-preset lock to
+`.locks/<preset>.<job-id>.reviewed.chatgpt.lock` before submitting once. A dry run
+prints the prompts without creating, moving or removing locks. Existing primary
+cards from another provider are also copied to
+`defaults/providers/previous-gpt-image/` before replacement; ChatGPT cards keep
+their prior file in the normal card archive. This is a reviewed recovery path,
+never an automatic retry.
+
+After the new packs are complete, `--refresh-legacy --parallel=4` generates new
+primary cards for presets whose current manifest names the previous provider.
+The prior primary file is preserved under `defaults/providers/previous-gpt-image/`
+and appears after the other alternates in Studio. Keep both the current primary
+and the previous alternate in the repository; do not rewrite historical Studio
+Library images or job metadata. Rebuild card thumbnails per affected pack with
+`bun scripts/build-style-pack-card-thumbnails.ts --pack=<pack_id>`, then run
+`bun run styles:thumbnails` to refresh the UI projection.
 
 Frontend style previews must trust existing `.webp` files on disk, not only manifest intent.
 If a preset points at a default image path that has not been generated yet, suppress the broken URL.
 Fall back to a real category or pack preview instead.
+An explicit `previewStatus: pending` keeps the catalog manifest unpublished even when an older
+thumbnail still exists. After reviewing the replacement, update both preview-status fields and
+the default-image metadata, then regenerate runtime data and thumbnail projections together.
 
 Anime packs have a deliberately finer split:
 
@@ -254,13 +312,32 @@ attributes:
 
 ## Default card regeneration
 
-Default cards are prompt-derived artifacts.
-`scripts/generate-style-defaults.ts` builds the image prompt from the current pack, category, preset `name`, `visualDna`, `negativePrompt`, and deterministic variation helpers.
+Default cards are prompt-derived artifacts. The ChatGPT HTTP path builds the prompt
+from the preset's active visual fields, negative rules and its authored card brief;
+the brief is for the card only, not part of the style definition. The historical
+Codex path retains its pack/category-specific prompt builder.
 Existing `.webp` files do not update when a manifest changes.
 
 If a preset changes `name`, `visualDna`, `avoidRules`, or `attributes.negativePrompt`, regenerate `assets/recipes/styles/defaults/<PRESET_ID>.webp` before visual work is complete.
 If you keep a local backlog for stale cards, put it in `.local/style-preset-card-regeneration-backlog.md`.
 `.local/` is ignored.
+
+For newly authored cards, identify the intended Studio workspace and inspect the
+dry-run prompt before submitting through ChatGPT HTTP:
+
+```bash
+bun run styles:defaults -- --provider=chatgpt --workspace-id=<workspace-id> --preset=<PRESET_ID> --parallel=4 --dry-run
+bun run styles:defaults -- --provider=chatgpt --workspace-id=<workspace-id> --preset=<PRESET_ID> --parallel=4
+```
+
+This path submits once per missing preset. It does not erase Studio Library job
+artifacts or overwrite an existing card. A prior ChatGPT card job, ambiguous result
+or retained lock requires inspection before any manual resubmission.
+To replace a visually reviewed card, use `--replace-reviewed` with one preset and
+`--reviewed-job-id=<completed-job-id>`, or pass a preset-to-job JSON object through
+`--reviewed-replacements-file=<path>` for a reviewed batch. Each entry must match
+the latest completed ChatGPT job and current card manifest. The previous WebP is
+archived locally, and both Studio jobs remain in the Library.
 
 ### Grok provider variants
 

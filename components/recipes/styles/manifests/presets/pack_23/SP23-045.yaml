@@ -1,0 +1,107 @@
+schemaVersion: 1
+id: SP23-045
+packId: pack_23
+name: Open Line and Color Fields
+category: 10. Tabletop Illustration Studies
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - tabletop-illustration-studies
+  - light-continuous-line
+  - open-color-fields
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Use a light, continuous line with flat color or gentle modulation and generous pauses in detail.
+    Keep formal oddness within shapes the user has already authorized; do not transform the content.
+  subject_treatment: >-
+    Preserve the requested subject, identity, count, pose, action, proportions and function. Use open
+    line and clean color areas to describe existing forms without adding content.
+  color_and_tone: >-
+    Preserve the user's palette and tonal relationships. Use flat areas or subtle shifts within the
+    specified colors; do not impose a particular color range or scheme.
+  lighting_and_shadow: >-
+    Follow the requested lighting and shadows. Keep modulation soft and limited where it fits the
+    request, without adding glow or a new light direction.
+  texture_and_material: >-
+    Preserve depicted materials while leaving broad areas visually quiet. Use surface detail sparingly
+    and do not add grain, synthetic textures or implied wear unless requested.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, orientation, arrangement and negative space. Do not impose
+    an unrequested layout or change the scene hierarchy.
+  atmosphere_and_mood: >-
+    Preserve the user's setting and mood. A clear line and open color fields do not require a particular
+    genre, narrative or imagined environment.
+  rendering_and_quality: >-
+    Keep line weight consistent, color edges clean and detail sparse enough to preserve open space.
+    Maintain the requested level of finish without gloss, blur or decorative layout.
+avoidRules:
+  - unrequested setting, content or formal distortion
+  - forced color scheme or atmosphere
+  - unrequested framing or layout
+  - added texture, glow or detail that closes open color fields
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-045.webp
+attributes:
+  negativePrompt: >-
+    unrequested setting, content or formal distortion, forced color scheme or atmosphere, unrequested
+    framing or layout, added texture, glow or detail that closes open color fields
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: open-line-flat-color-illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: light-continuous-line-flat-or-softly-modulated-color-open-detail-spacing
+    avoidRules:
+      - text: unrequested setting, content or formal distortion
+        field: global
+      - text: forced color scheme or atmosphere
+        field: color_and_tone
+      - text: unrequested framing or layout
+        field: camera_and_composition
+      - text: added texture, glow or detail that closes open color fields
+        field: texture_and_material
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: TB-04
+    sourceTitle: Fantascience Clearline
+    historicalScope: 'Ciencia-fantasía ilustrada · referencia UVG'
+    referenceIds:
+      - S47
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: tabletop-illustration-studies
+  categoryName: 10. Tabletop Illustration Studies
+  tags:
+    - curation-v2
+    - tabletop-illustration-studies
+    - light-continuous-line
+    - open-color-fields
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

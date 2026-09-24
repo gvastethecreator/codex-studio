@@ -1,0 +1,88 @@
+schemaVersion: 1
+id: SP15-116
+packId: pack_15
+name: Folk Horror Punk
+category: 8. Occult, Myth & Gothic Punks
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - occult-myth-and-gothic-punks
+visualDna:
+  aesthetic: >-
+    Juxtapose coarse branching, fibrous marks with thin, taut signal lines and long intervals of open
+    space.
+  subject_treatment: >-
+    Preserve the requested subject and setting; translate existing contours into rough organic marks and
+    measured linear interruptions without adding straw props.
+  color_and_tone: >-
+    Contrast dusk-muted earth tones with restrained amber or orange accents; keep warm marks sparse and
+    legible.
+  lighting_and_shadow: Use a low warm edge against broad cool shadow shapes, preserving detail inside dark areas.
+  texture_and_material: >-
+    Set ragged fiber-like strokes against clean metal-like lines; keep texture localized and
+    directionally consistent.
+  camera_and_composition: >-
+    Retain the requested crop; let a few long lines cross or frame the existing focal shape without
+    imposing a landscape.
+  atmosphere_and_mood: Create rural unease through sparse repetition, unresolved intervals, and organic-linear contrast.
+  rendering_and_quality: Keep the rough strokes and fine signal lines distinct at small scale; avoid generalized grime.
+avoidRules:
+  - a mandatory field, forest, scarecrow, or warning bundle
+  - random fibers spread evenly over every surface
+  - signal lines that flatten the focal form
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-116.webp
+attributes:
+  negativePrompt: >-
+    a mandatory field, forest, scarecrow, or warning bundle, random fibers spread evenly over every
+    surface, signal lines that flatten the focal form
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: a mandatory field, forest, scarecrow, or warning bundle
+        field: rendering_and_quality
+      - text: random fibers spread evenly over every surface
+        field: rendering_and_quality
+      - text: signal lines that flatten the focal form
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-064
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: occult-myth-and-gothic-punks
+  categoryName: 8. Occult, Myth & Gothic Punks
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - occult-myth-and-gothic-punks
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

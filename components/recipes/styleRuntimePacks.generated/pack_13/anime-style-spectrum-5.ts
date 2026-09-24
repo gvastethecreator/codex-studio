@@ -8,28 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Elastic Rom-Com Slapstick Timing',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'photoreal live action look, muted deadpan lighting, over detailed gritty textures, stiff static poses, heavy cinematic blur, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, identity-changing squash-and-stretch, smear trails detached from prompted motion, motion blur obscuring contour, grain obscuring the clean rounded line",
     style: {
       aesthetic:
-        'Elastic Rom-Com Slapstick Timing operates as a portable anime-lifestyle router: combine Elastic Rom Com Slapstick Timing identity cues through Comic smears; expressive reactions; slapstick timing; readable silhouettes; buoyant affection tension; and bright cartoon clarity with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Round, elastic contours pair with brief squash-and-stretch and short comic smears; make reaction timing and buoyant affection the drawing rhythm, without inventing a gag or relationship.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: bright, clean cel values with cheerful pastel accents and clear separation between subject and ground; keep the accent colors attached to the prompt.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use crisp cel shadow shapes and a small rim highlight to punctuate an existing expression or impact; do not turn stillness into motion.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Keep outlines smooth and rounded; reserve smear marks for motion already present, and keep fills clean rather than gritty.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Let contour compression and extension emphasize the existing pose; keep the prompted crop, silhouette and layout.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Playful timing and warm buoyancy come from the line rhythm; preserve whatever emotional register the prompt requests.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Keep deformation local and reversible: preserve recognizable identity and construction, and add no blush, hearts, props or reaction marks unless requested. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Comic smears; expressive reactions; slapstick timing; readable silhouettes; buoyant affection tension; and bright cartoon clarity',
+        'Comic smears; expressive reaction timing; controlled squash-and-stretch; readable rounded silhouettes; buoyant tension; bright cartoon clarity.',
       creative_brief:
-        'Use Elastic Rom-Com Slapstick Timing after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Comic smears, expressive reactions, slapstick timing, readable silhouettes, buoyant affection tension, and bright cartoon clarity, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Comic smears; expressive reaction timing; controlled squash-and-stretch; readable rounded silhouettes; buoyant tension; bright cartoon clarity. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -37,28 +37,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Prism-Glamour Transformation Polish',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'gritty realism, desaturated palettes, heavy mechanical armor focus, coarse rough inking, mundane flat lighting, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, coarse ink obscuring tapered contour, opaque overlays hiding prismatic facets, specular glare erasing edge detail",
     style: {
       aesthetic:
-        'Prism-Glamour Transformation Polish operates as a portable anime-lifestyle router: combine Prism Glamour Transformation Polish identity cues through Prismatic sparkle; fashion rhythm; ribbonlike motion; gem light accents; tender celestial framing; and polished shoujo glamour with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Fine tapered lines and layered translucent ribbons sweep around the subject; prismatic facets and polished shoujo glamour create the signature transformation sheen without requiring a transformation scene.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: use luminous jewel and pastel hues with small prismatic shifts at overlaps; retain explicit colors and avoid blanket sparkle.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Soft backlight and crisp glints belong at ribbon crossings and facets; respect the prompted light direction.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Keep ribbon-like forms as graphic line paths and translucent glazes, not new physical accessories; use fine clean contours and a polished surface.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Use flowing arcs to guide attention around the requested form; keep the original crop, pose and silhouette legible.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Tender celestial polish is conveyed by layered light and graceful rhythm; do not add a romantic relationship or magical event.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Apply the glow and flowing contour to any requested subject without adding jewelry, costume, stars, wings or transformation props. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Prismatic sparkle; fashion rhythm; ribbonlike motion; gem light accents; tender celestial framing; and polished shoujo glamour',
+        'Prismatic sparkle; tapered contour; ribbon-like motion; gem-light accents; layered translucent facets; polished shoujo finish.',
       creative_brief:
-        'Use Prism-Glamour Transformation Polish after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Prismatic sparkle, fashion rhythm, ribbonlike motion, gem light accents, tender celestial framing, and polished shoujo glamour, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Prismatic sparkle; tapered contour; ribbon-like motion; gem-light accents; layered translucent facets; polished shoujo finish. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -66,28 +66,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Chrome Impact Spectacle',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, shard accents obscuring the source silhouette, uniform chrome conversion replacing source materials, bloom erasing mirror-edge detail, impact vectors unrelated to prompted force",
     style: {
       aesthetic:
-        'Chrome Impact Spectacle operates as a portable anime-lifestyle router: combine Chrome Impact Spectacle identity cues through Chrome Impact Spectacle anime style cues, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt preserving silhouette discipline with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Angular cel cuts, mirror-edge glints and shard-like cyan/magenta accents give this style its high-contrast impact; keep chrome as a highlight language rather than changing every material to metal.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: anchor the palette in black, white and hard value cuts, with controlled cyan and magenta shards; preserve prompt-specified colors where they identify the subject.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use sharp specular edge glints only on surfaces that plausibly catch light; hard cel shadows carry impact without generic bloom.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Favor crisp angular contours, reflective edge accents and a few graphic shards; preserve the source material cues and avoid noisy metallic texture everywhere.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Use diagonal cuts and directional accents to energize the existing composition; do not add movement or reframe a quiet prompt as an action shot.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Spectacular tension comes from contrast and edge rhythm; honor a calm or restrained prompt when specified.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Retain the source pose, object structure and material identity; no forced chrome conversion, shards, explosion or speed lines. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Chrome Impact Spectacle anime style cues; style specific contour; material transformation; motion grammar; abstraction pressure; symbolic surface logic',
+        'Angular cel-shadow cuts; mirror-edge glints; black-and-white value blocks; cyan/magenta shards; high-impact contour.',
       creative_brief:
-        'Use Chrome Impact Spectacle after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Chrome Impact Spectacle anime style cues, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Angular cel-shadow cuts; mirror-edge glints; black-and-white value blocks; cyan/magenta shards; high-impact contour. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -95,28 +95,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Emergency Storyboard Tension',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, shadow masses merging into unreadable black, unstructured pencil noise obscuring contours, blurred action vectors",
     style: {
       aesthetic:
-        'Emergency Storyboard Tension operates as a portable anime-lifestyle router: combine Emergency Storyboard Tension identity cues through Emergency Storyboard Tension anime style cues, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt preserving silhouette discipline with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Rough graphite and brush contours break and restart around compressed shadow masses; a few cyan and rust-red accents create urgent storyboard tension without drawing literal panels.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        "Palette defaults apply only where the prompt leaves color open: restrict color to soot-dark values with sparse cyan and rust-red notes; follow the prompt's palette when color carries meaning.",
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use broad, compressed shadow blocks and selective hard light to clarify the existing focal action; respect requested light and exposure.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Show searching pencil, dry brush and uneven ink at contour breaks; let construction remain visible but keep it controlled.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Build pressure with tight value grouping and interrupted edges; preserve camera, crop and action rather than imposing a storyboard frame.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Urgency is carried by the shadow mass and broken line; do not add panic, danger or a new event to a quiet subject.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Use storyboard mark-making on any prompted subject without adding panels, captions, props or an emergency scenario. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Emergency Storyboard Tension anime style cues; style specific contour; material transformation; motion grammar; abstraction pressure; symbolic surface logic',
+        'Rough graphite/ink; compressed black masses; interrupted contours; sparse cyan/rust accents; storyboard-like economy.',
       creative_brief:
-        'Use Emergency Storyboard Tension after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Emergency Storyboard Tension anime style cues, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Rough graphite/ink; compressed black masses; interrupted contours; sparse cyan/rust accents; storyboard-like economy. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -124,28 +124,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Adult Suspense Microgesture',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'action spectacle, bright comedy palette, cute chibi design, glossy fantasy armor, neon cyberpunk glow, melodramatic speed lines, plastic 3d render, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, grain obscuring microgesture detail, overlapping contour detail merging forms, specular bloom flattening low-key values",
     style: {
       aesthetic:
-        'Adult Suspense Microgesture operates as a portable anime-lifestyle router: combine Adult Suspense Microgesture identity cues through Adult Suspense Microgesture anime style cues, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt preserving silhouette discipline with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Use restrained naturalistic contours and small, precise details only where the prompt provides them; suspense is carried by a minute shift in shape, gaze or spacing, not by a stock character.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: choose a muted, controlled palette with small value changes; preserve explicit color and avoid turning restraint into monochrome by default.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Soft practical light, modest shadow edges and precise local contrast reveal detail without melodramatic rim light.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Keep texture quiet and fine, with naturalistic line weight and no gritty overlay unless the prompt calls for it.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Let measured spacing and quiet negative space hold attention; preserve the requested view and avoid forced close-ups.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        "Adult suspense means controlled ambiguity in the rendering; retain the user's mood and do not presume age, gender or sexuality.",
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Place fine detail only on supplied forms; add no person, expression, threat, prop or implied narrative. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Adult Suspense Microgesture anime style cues; style specific contour; material transformation; motion grammar; abstraction pressure; symbolic surface logic',
+        'Restrained contour; microgesture-scale detail; muted values; quiet spacing; naturalistic observation; low-key suspense.',
       creative_brief:
-        'Use Adult Suspense Microgesture after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Adult Suspense Microgesture anime style cues, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Restrained contour; microgesture-scale detail; muted values; quiet spacing; naturalistic observation; low-key suspense. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -153,28 +153,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Reality-Slip Reflection Continuity',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'blunt horror gore, chaotic dream collage, flat sitcom framing, cartoon chibi acting, muddy low detail realism, fantasy ornament clutter, obvious literal symbolism, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, multiple reflection echoes obscuring source form, alignment slip altering subject identity, unrequested duplicate forms",
     style: {
       aesthetic:
-        'Reality-Slip Reflection Continuity operates as a portable anime-lifestyle router: combine Reality Slip Reflection Continuity identity cues through Reality Slip Reflection Continuity anime style cues, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt preserving silhouette discipline with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Create a small warm/cool edge echo across an existing reflective boundary or adjacent contour; a slight continuity slip should disturb a stable image without becoming a dream collage.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: keep the base palette coherent and shift only the echoed edge between warm and cool; preserve prompt color.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use controlled reflected highlights and a narrow offset glint; do not invent a light source or reflective surface.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Retain original materials; use a fine doubled edge or shifted reflection rather than blur, distortion or added objects.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Keep the composition stable while allowing a localized alignment drift at an existing boundary; preserve the original crop.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Uncanny continuity comes from a nearly correct reflection; do not add surreal events or chaos.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'If no reflective plane is present, use a subtle contour echo on an existing boundary; add no mirror, duplicate subject or collage. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Reality Slip Reflection Continuity anime style cues; style specific contour; material transformation; motion grammar; abstraction pressure; symbolic surface logic',
+        'Offset reflection edge; warm/cool echo; localized alignment slip; stable surrounding forms; restrained uncanny detail.',
       creative_brief:
-        'Use Reality-Slip Reflection Continuity after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Reality Slip Reflection Continuity anime style cues, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Offset reflection edge; warm/cool echo; localized alignment slip; stable surrounding forms; restrained uncanny detail. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -182,28 +182,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Hiroyuki Okiura - Quiet Human Naturalism',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'exaggerated action pose, glossy fantasy effects, chibi simplification, neon spectacle, cinematic explosions, idealized glamour anatomy, plastic 3d render, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, distorted proportions obscuring observed weight, decorative effects concealing naturalistic contour, surface glare masking material cues",
     style: {
       aesthetic:
-        'Hiroyuki Okiura - Quiet Human Naturalism operates as a portable anime-lifestyle router: combine Hiroyuki Okiura - Quiet Human Naturalism identity cues through Quiet Human Naturalism with Hiroyuki Okiura lineage used only as style reference, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt preserving silhouette discipline with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction; Hiroyuki Okiura may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Treat the named lineage as a technique reference: observational naturalism, believable weight, quiet contour economy and environmental detail integrated into the same visual space.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: use restrained, natural color and nuanced values; keep skin, object and setting colors faithful to the prompt.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Favor plausible ambient daylight and soft contact shadows; follow the stated source and time of day.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Use fine, economical line and small grounded texture; detail the environment only where it is already present.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Compose with patient observation and natural spacing; do not force a human-centered shot or landscape.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Quiet realism comes from observed form and weight; preserve the requested tone rather than making every subject solemn.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Apply the drawing and observation method to any subject; do not copy a character, shot, costume or scene from the referenced artist. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Quiet Human Naturalism with Hiroyuki Okiura lineage used only as style reference; style specific contour; material transformation; motion grammar; abstraction pressure; symbolic surface logic',
+        'Observational naturalism; economical contour; believable weight; quiet environmental integration; nuanced light.',
       creative_brief:
-        'Use Hiroyuki Okiura - Quiet Human Naturalism after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Quiet Human Naturalism with Hiroyuki Okiura lineage used only as style reference, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Observational naturalism; economical contour; believable weight; quiet environmental integration; nuanced light. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -211,28 +211,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Haruko Ichikawa - Mineral Void Serenity',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'noisy maximalism, cluttered environment, gritty horror texture, warm muddy palette, heavy outline cartooning, dense crowd staging, opaque plastic surfaces, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, opaque highlights hiding mineral edge transmission, muddy values collapsing pale planes, ornament crowding negative space",
     style: {
       aesthetic:
-        'Haruko Ichikawa - Mineral Void Serenity operates as a portable anime-lifestyle router: combine Haruko Ichikawa - Mineral Void Serenity identity cues through Mineral Void Serenity with Haruko Ichikawa lineage used only as style reference, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt preserving silhouette discipline with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction; Haruko Ichikawa may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Treat the named lineage as technique reference: fine fragile contours, pale mineral planes, translucent edge values and large areas of deliberate void.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: use cool pale mineral hues and clear light/dark separation; respect requested color and do not muddy the palette.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        "Let light pass along edges and through thin-looking planes; avoid opaque plastic shine and preserve the prompt's lighting.",
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Use fine line, softly faceted mineral shading and sparse surface detail; keep the depicted material recognizable.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Balance delicate forms against open negative space without changing the source crop or simplifying away requested elements.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        "Serenity comes from pale planes and empty space; keep the prompt's emotional meaning and avoid adding spiritual symbolism.",
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Keep the method subject-neutral and material-aware; do not turn a subject into crystal or copy a character or panel. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Mineral Void Serenity with Haruko Ichikawa lineage used only as style reference; style specific contour; material transformation; motion grammar; abstraction pressure; symbolic surface logic',
+        'Fine fragile contour; pale mineral planes; translucent edges; broad void; quiet faceting.',
       creative_brief:
-        'Use Haruko Ichikawa - Mineral Void Serenity after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Mineral Void Serenity with Haruko Ichikawa lineage used only as style reference, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Fine fragile contour; pale mineral planes; translucent edges; broad void; quiet faceting. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -240,28 +240,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Hiromu Arakawa - Mechanical Warmth Ensemble',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'sterile machine render, cold villainous armor, glossy sci fi UI, isolated product shot, flat generic workshop, weak mechanical detail, cynical grimdark tone, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, unreadable joins on constructed parts, sterile plastic sheen obscuring drawn contour, structural detail invented on unconstructed forms",
     style: {
       aesthetic:
-        'Hiromu Arakawa - Mechanical Warmth Ensemble operates as a portable anime-lifestyle router: combine Hiromu Arakawa - Mechanical Warmth Ensemble identity cues through Mechanical Warmth Ensemble with Hiromu Arakawa lineage used only as style reference, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt preserving silhouette discipline with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction; Hiromu Arakawa may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Treat the named lineage as technique reference: sturdy, hand-drawn contours, clearly articulated joins and practical mechanical detail balanced by human warmth.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        "Palette defaults apply only where the prompt leaves color open: use warm ochre, brass or earth accents where useful, while keeping the prompt's colors and material distinctions.",
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use readable cel shadows and warm reflected accents; maintain the light direction requested.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Give constructed parts clear seams, joints and wear only when those parts exist; keep linework sturdy rather than cold or clinical.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Use ensemble-like clarity to separate parts and figures already present; preserve count, placement and framing.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Mechanical warmth balances competence and approachability; do not force grimness, armor or sentiment into the prompt.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Apply the line and structural clarity to any subject; do not add armor, machinery, characters or a copied scene. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Mechanical Warmth Ensemble with Hiromu Arakawa lineage used only as style reference; style specific contour; material transformation; motion grammar; abstraction pressure; symbolic surface logic',
+        'Sturdy contour; articulated joins; practical mechanical detail; warm accents; readable ensemble staging.',
       creative_brief:
-        'Use Hiromu Arakawa - Mechanical Warmth Ensemble after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Mechanical Warmth Ensemble with Hiromu Arakawa lineage used only as style reference, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Sturdy contour; articulated joins; practical mechanical detail; warm accents; readable ensemble staging. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -269,28 +269,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Retrofuture Distance Melancholy',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'photoreal spaceship realism, hard sci fi UI clutter, comedic chibi tone, bright candy palette, grounded contemporary streetwear, shallow space scale, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, flattened depth obscuring layered distance, grain obscuring near-form contours, blur collapsing near/far separation",
     style: {
       aesthetic:
-        'Retrofuture Distance Melancholy operates as a portable anime-lifestyle router: combine Retrofuture Distance Melancholy identity cues through Retrofuture Distance Melancholy anime style cues, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt preserving silhouette discipline with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Layer cool, faded forms through analogue distance: soft atmospheric separation, muted retrofuture color and a restrained film-like grain, without requiring machines or a city.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: favor muted steel blue, cyan and violet with gentle value falloff; retain any prompt-specified focal color.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use diffused, low-contrast light and distant haze only where the scene supports depth; respect the prompted illumination.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Apply fine analogue grain and softened far contours, keeping near details and actual materials readable.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Create depth through layered value and edge softness, not added architecture or a forced wide shot.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        "Melancholy comes from distance and faded color; preserve the prompt's emotional register.",
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Transfer the distance treatment to any subject without adding technology, skyline, vehicle or retro props. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Retrofuture Distance Melancholy anime style cues; style specific contour; material transformation; motion grammar; abstraction pressure; symbolic surface logic',
+        'Muted retrofuture palette; analogue grain; layered distance; softened far contours; quiet atmospheric separation.',
       creative_brief:
-        'Use Retrofuture Distance Melancholy after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Retrofuture Distance Melancholy anime style cues, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Muted retrofuture palette; analogue grain; layered distance; softened far contours; quiet atmospheric separation. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -298,28 +298,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Kinetic Impact-Line Choreography',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, speed lines unrelated to prompted motion, afterimage trails detached from moving forms, impact radials obscuring silhouette",
     style: {
       aesthetic:
-        'Kinetic Impact-Line Choreography operates as a portable anime-lifestyle router: combine Kinetic Impact Line Choreography identity cues through Speed line forests; impact burst radials; afterimage trails; aura deformation; kinetic fracture geometry; and readable force direction with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Use radial speed lines, afterimage trails and impact bursts only to describe motion or force already present; keep the vectors directional and the subject readable.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: preserve the prompt palette and reserve high-contrast accents for force paths and contact points.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use sharp value bursts and brief edge highlights to clarify the existing vector; do not add an energy aura by default.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Keep speed marks fine and directional, with sparse afterimages; avoid filling the whole frame with line noise.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Align radiating marks to the prompted movement or impact while preserving pose, camera and layout.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Kinetic intensity is a graphic rendering of the requested action, not permission to invent action.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'For still subjects, retain a still composition and use line rhythm only as a subtle graphic treatment; add no aura or impact event. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Speed line forests; impact burst radials; afterimage trails; aura deformation; kinetic fracture geometry; and readable force direction',
+        'Directional speed-line forests; impact radials; restrained afterimage trails; force vectors; clear silhouette.',
       creative_brief:
-        'Use Kinetic Impact-Line Choreography after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Speed line forests, impact burst radials, afterimage trails, aura deformation, kinetic fracture geometry, and readable force direction, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Directional speed-line forests; impact radials; restrained afterimage trails; force vectors; clear silhouette. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -327,28 +327,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Takeshi Koike - Razorline Velocity Poster',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, slashes misaligned with requested action direction, black cutouts erasing subject-defining detail, hard color blocks merging adjacent forms",
     style: {
       aesthetic:
-        'Takeshi Koike - Razorline Velocity Poster operates as a portable anime-lifestyle router: combine Takeshi Koike - Razorline Velocity Poster identity cues through Razorline Velocity Poster with Takeshi Koike lineage used only as style reference, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt preserving silhouette discipline with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction; Takeshi Koike may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Treat the named lineage as technique reference: razor-edged silhouettes, long graphic slashes, dense black cutouts and a flat vermilion/cream/navy poster palette.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: use vermilion, cream, navy and decisive black masses; preserve prompt-critical colors and keep the palette flat.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Hard, graphic light and shadow carve planes; any glint or highlight follows the prompted material.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Favor sharp contour, clean flat fills and selective rough ink edges; no generic metallic gloss.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Use long diagonals to reinforce the existing direction of action; preserve crop and do not impose a racing angle.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Velocity is conveyed by slashing line and poster contrast; keep still or quiet prompts still when requested.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Apply graphic edge and palette logic to any subject; add no vehicle, weapon, action pose or copied frame. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Razorline Velocity Poster with Takeshi Koike lineage used only as style reference; style specific contour; material transformation; motion grammar; abstraction pressure; symbolic surface logic',
+        'Razorline silhouette; black cutout pools; vermilion/cream/navy blocks; long slashes; poster-value contrast.',
       creative_brief:
-        'Use Takeshi Koike - Razorline Velocity Poster after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Razorline Velocity Poster with Takeshi Koike lineage used only as style reference, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Razorline silhouette; black cutout pools; vermilion/cream/navy blocks; long slashes; poster-value contrast. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -356,28 +356,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Celestial Vertical Ornament',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'photoreal anatomy realism, short compact proportions, casual modern minimal outfits, muddy lighting, thick comic inking, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, ornamental geometry obscuring source silhouette, heavy contour overwhelming fine geometry, ornament altering source proportions",
     style: {
       aesthetic:
-        'Celestial Vertical Ornament operates as a portable anime-lifestyle router: combine Celestial Vertical Ornament identity cues through Extreme vertical elegance; ornate geometry; moonlit framing; jewel accents; poised emotional distance; Celestial Vertical Ornament anime style cues with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Elongate existing contour accents and use fine celestial geometry, silver/navy/gold detail and poised spacing; do not alter anatomy or force a portrait crop.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        "Palette defaults apply only where the prompt leaves color open: use silver, deep navy and restrained gold accents around the prompt's own palette.",
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Choose moonlike edge light only when compatible with the requested illumination; keep shadows delicate and legible.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Render ornament as fine line and small geometric marks, not extra jewelry, clothing or symbols.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Use vertical spacing and slender accents inside the given composition; preserve aspect, crop and subject proportions.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        "Poised distance comes from spacing and delicate ornament; retain the prompt's mood rather than enforcing aloofness.",
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Transfer the vertical line language to any subject without changing its proportions or adding a moon, halo or costume. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Extreme vertical elegance; ornate geometry; moonlit framing; jewel accents; poised emotional distance; Celestial Vertical Ornament anime style cues',
+        'Elongated contour accents; fine celestial geometry; silver/navy/gold; poised negative space; restrained ornament.',
       creative_brief:
-        'Use Celestial Vertical Ornament after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Extreme vertical elegance, ornate geometry, moonlit framing, jewel accents, poised emotional distance, Celestial Vertical Ornament anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Elongated contour accents; fine celestial geometry; silver/navy/gold; poised negative space; restrained ornament. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -385,28 +385,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ritual Allegory Icon System',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'literal realism, casual slice of life, unstyled modern room, flat documentary light, generic fantasy battle, low symbolism composition, random prop clutter, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, prompt-unrelated repeated symbols, mark clutter obscuring emblematic hierarchy, unrequested invented iconography",
     style: {
       aesthetic:
-        'Ritual Allegory Icon System operates as a portable anime-lifestyle router: combine Ritual Allegory Icon System identity cues through Ritual Allegory Icon System anime style cues, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt preserving silhouette discipline with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        "Organize the prompt's existing forms into a clear emblematic silhouette and repeat only shapes already present; use flat ink and gold to create allegorical hierarchy without inventing symbols.",
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: keep a compact ink, paper and gold palette, adapting it to explicit prompt colors.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use flat light/dark separation and restrained gold-like highlights; avoid cinematic lighting that obscures the emblematic read.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Favor flat areas, clean silhouette edges and repeated prompt-derived geometry; keep material cues legible.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Give existing forms ordered visual hierarchy and balanced spacing without adding altar, frame or icon.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        "Ritual tone is a compositional cadence, not a new belief system or story; preserve the user's meaning.",
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Use only geometry found in the supplied subject; add no religious sign, sigil, prop, label or ritual scene. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Ritual Allegory Icon System anime style cues; style specific contour; material transformation; motion grammar; abstraction pressure; symbolic surface logic',
+        'Emblematic silhouette; repeated prompt-derived shape; flat ink/gold contrast; ordered spacing; icon-like hierarchy.',
       creative_brief:
-        'Use Ritual Allegory Icon System after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Ritual Allegory Icon System anime style cues, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Emblematic silhouette; repeated prompt-derived shape; flat ink/gold contrast; ordered spacing; icon-like hierarchy. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -414,28 +414,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Technomagic Draftsmanship Burst',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, construction lines obscuring source contours, glow obscuring precise geometry, unrequested glyph-like marks",
     style: {
       aesthetic:
-        'Technomagic Draftsmanship Burst operates as a portable anime-lifestyle router: combine Technomagic Draftsmanship Burst identity cues through Technomagic Draftsmanship Burst anime style cues, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt preserving silhouette discipline with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Combine precise drafting contours with radial arcs, loose construction marks and a sparse glow; derive all technical or arcane geometry from prompt forms.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: use restrained dark/light contrast and a few luminous accents; keep prompt colors and avoid blanket neon.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Place a narrow glow on existing edges or focal intersections; respect source, direction and exposure.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Mix crisp construction lines with lightly sketched guides; do not turn effects into literal glyphs or interface.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Let arcs and guides follow the existing structure and perspective; keep framing and subject scale unchanged.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Wonder comes from the meeting of precise drawing and loose energy; do not invent magic, machinery or action.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Transfer the mark language to any subject without adding runes, diagrams, devices or a fantasy scenario. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Technomagic Draftsmanship Burst anime style cues; style specific contour; material transformation; motion grammar; abstraction pressure; symbolic surface logic',
+        'Drafting contours; radial arcs; loose construction marks; sparse edge glow; clean perspective.',
       creative_brief:
-        'Use Technomagic Draftsmanship Burst after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Technomagic Draftsmanship Burst anime style cues, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Drafting contours; radial arcs; loose construction marks; sparse edge glow; clean perspective. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -443,28 +443,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ukiyo-e Woodblock Anime',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      '3d, realistic, photo, smooth gradient, western, digital shading, soft shadows, modern, CGI, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, uncontrolled gradients erasing printed color boundaries, blurred contour erasing carved edges, hatching unrelated to the underlying form",
     style: {
       aesthetic:
-        'Ukiyo-e Woodblock Anime operates as a portable anime-lifestyle router: combine Ukiyo e Woodblock Anime identity cues through Woodblock line quality; bokashi gradient fields; flat decorative color planes; wave rhythm echoes; rain streak cadence; rice paper texture with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Use carved contour, flat decorative color planes, bokashi bands and parallel line rhythm as a printmaking language; do not require waves, rain or Japanese scenery.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: keep flat color separations and restrained bokashi gradients; preserve the prompt palette and cultural details.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use printed value bands and clean silhouette contrast rather than photographic light; obey requested lighting cues.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Simulate cut-line edges, slight ink variation and paper grain; keep hatching parallel and deliberate.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Arrange line and color rhythm around the existing forms; do not impose landscape, horizon or decorative border.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        "Print-like clarity is the style; retain the prompt's mood and subject without adding cultural motifs.",
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Apply the printmaking mechanics to any requested subject without adding waves, rain, costume or symbols. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Woodblock line quality; bokashi gradient fields; flat decorative color planes; wave rhythm echoes; rain streak cadence; rice paper texture',
+        'Woodblock contour; bokashi gradient fields; flat color planes; parallel carved marks; paper texture.',
       creative_brief:
-        'Use Ukiyo-e Woodblock Anime after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Woodblock line quality, bokashi gradient fields, flat decorative color planes, wave rhythm echoes, rain streak cadence, rice paper texture, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Woodblock contour; bokashi gradient fields; flat color planes; parallel carved marks; paper texture. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -472,28 +472,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Osamu Dezaki - Postcard Memory Freeze',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'casual snapshot, low drama realism, flat documentary lighting, cluttered distant plane, muddy color, weak focal emotion, generic modern polish, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, muddy value blocks hiding the held silhouette, distant-plane detail competing with focal form, rim highlights clipping the contour",
     style: {
       aesthetic:
-        'Osamu Dezaki - Postcard Memory Freeze operates as a portable anime-lifestyle router: combine Osamu Dezaki - Postcard Memory Freeze identity cues through Postcard Memory Freeze with Osamu Dezaki lineage used only as style reference, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt preserving silhouette discipline with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction; Osamu Dezaki may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Treat the named lineage as technique reference: hold the existing beat as a poster-like freeze with bold silhouette, grouped values, selective rim and light film grain.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: use a compact, emotionally clear palette with deliberate value groups; retain prompt-specific colors.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        "Add a selective rim only where the prompt's light supports it; keep shadow blocks broad and readable.",
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Use painterly poster edges and subtle grain, not a literal postcard surface or frame.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Emphasize the existing pose and pause; preserve requested camera, crop and surrounding content.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'A suspended beat carries memory; do not imply a past event or romantic scene absent from the prompt.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Apply the pause treatment to any subject without adding a postcard border, text, character or scene. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Postcard Memory Freeze with Osamu Dezaki lineage used only as style reference; style specific contour; material transformation; motion grammar; abstraction pressure; symbolic surface logic',
+        'Held-beat freeze; bold silhouette; poster-value grouping; selective rim; subtle film grain.',
       creative_brief:
-        'Use Osamu Dezaki - Postcard Memory Freeze after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Postcard Memory Freeze with Osamu Dezaki lineage used only as style reference, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Held-beat freeze; bold silhouette; poster-value grouping; selective rim; subtle film grain. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -501,28 +501,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Velvet Lash Refined Tension',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'crude action pose, rough sketch dirt, flat office lighting, low glam casual realism, neon glitch clutter, comic chibi proportions, plastic 3d render, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, thick contours obscuring delicate taper, highlights flattening line-weight variation, tangled marks obscuring source form",
     style: {
       aesthetic:
-        'Velvet Lash Refined Tension operates as a portable anime-lifestyle router: combine Velvet Lash Refined Tension identity cues through Velvet Lash Refined Tension anime style cues, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt preserving silhouette discipline with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Use fine tapered contours, delicate line-weight changes and restrained soft shadow to create refined tension; do not apply lash or facial detail to non-facial forms.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: choose muted, rich color and controlled contrast; honor requested colors without defaulting to monochrome.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Keep light soft and local, with a crisp accent only at existing focal edges.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Use smooth fine ink and soft tonal transitions; avoid plush texture that obscures the underlying material.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Guide attention with elegant taper and quiet spacing while preserving the original crop and layout.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Refinement is carried by control and line rhythm; follow the prompted mood and avoid forced sensuality.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Transfer the contour method to any form without adding eyelashes, eyes, makeup, pose or persona. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Velvet Lash Refined Tension anime style cues; style specific contour; material transformation; motion grammar; abstraction pressure; symbolic surface logic',
+        'Tapered contour; delicate line weight; restrained shadow; muted richness; quiet refined tension.',
       creative_brief:
-        'Use Velvet Lash Refined Tension after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Velvet Lash Refined Tension anime style cues, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Tapered contour; delicate line weight; restrained shadow; muted richness; quiet refined tension. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -530,28 +530,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Scratchy Concrete-Poetry Drift',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'clean glossy polish, perfect symmetry, sterile gradients, ultra smooth linework, fantasy ornament overuse, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, uniform smoothing erasing scraped-stroke texture, grain obscuring angled form direction, ornament covering the rough silhouette",
     style: {
       aesthetic:
-        'Scratchy Concrete-Poetry Drift operates as a portable anime-lifestyle router: combine Scratchy Concrete Poetry Drift identity cues through Scratchy concrete textures; tilted silhouettes; restless motion; rough civic iconography; sacred ugly weirdness; Scratchy Concrete Poetry Drift anime style cues with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Use coarse scraped marks, blocky angled lines and imperfect contour to create tactile graphic friction; let any tilt come from existing form rather than changing the composition.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: favor ash, charcoal and small rust accents while respecting prompt-specified colors.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use hard-edged value blocks and dusty reflected light; do not impose a city or night scene.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Layer rough dry marks and concrete-like grain as a surface treatment without replacing the depicted material.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Let line angles create drift inside the existing layout; maintain camera, silhouette and perspective.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Poetic unease comes from roughness and imbalance; preserve the requested emotional meaning.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Use the material marks on any subject; do not add civic icons, buildings, sacred imagery or urban props. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Scratchy concrete textures; tilted silhouettes; restless motion; rough civic iconography; sacred ugly weirdness; Scratchy Concrete Poetry Drift anime style cues',
+        'Scraped strokes; coarse grain; angled/blocky contour; ash and rust accents; tactile graphic friction.',
       creative_brief:
-        'Use Scratchy Concrete-Poetry Drift after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Scratchy concrete textures, tilted silhouettes, restless motion, rough civic iconography, sacred ugly weirdness, Scratchy Concrete Poetry Drift anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Scraped strokes; coarse grain; angled/blocky contour; ash and rust accents; tactile graphic friction. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -559,28 +559,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Backlit Contour Longing',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'dark, gloomy, muted, flat, grey, cloudy, indoor, harsh, detailed face, visible features, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, rim bloom washing out silhouette detail, flare crossing the focal contour, edge light conflicting with prompted light direction",
     style: {
       aesthetic:
-        'Backlit Contour Longing operates as a portable anime-lifestyle router: combine Backlit Contour Longing identity cues through Sky led framing; pure silhouette shapes; golden rim contours; flare haze; twilight color script; and posture like contour emotion with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        "Separate the subject from its ground with a warm rim contour and restrained flare haze; use silhouette only where the prompt's lighting supports it.",
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: build a warm-to-cool transition around the rim while retaining the prompted palette and readable interior values.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Keep backlight direction consistent with the prompt; use small bloom and soft falloff, not a forced sunset.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Use clean silhouette edges, delicate rim color and minimal haze; keep material texture visible.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Use sky-like negative space only when the source composition includes open background; do not add a horizon or reframe.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        "Longing is conveyed through separation and light falloff; preserve the prompt's mood and facial detail if requested.",
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Apply the backlight treatment to any requested form without forcing a sky, sunset, person or romantic pose. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Sky led framing; pure silhouette shapes; golden rim contours; flare haze; twilight color script; and posture like contour emotion',
+        'Warm rim contour; silhouette separation; restrained flare haze; twilight color transition; posture-led emphasis.',
       creative_brief:
-        'Use Backlit Contour Longing after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Sky led framing, pure silhouette shapes, golden rim contours, flare haze, twilight color script, and posture like contour emotion, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Warm rim contour; silhouette separation; restrained flare haze; twilight color transition; posture-led emphasis. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -588,28 +588,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Leaded Jewel-Light Segmentation',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'flat, opaque, subtle, muted, dark, realistic render, soft lighting, smooth gradient, simple, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, pane fill hiding lead-like seam boundaries, bloom washing out segmentation, unprompted rosette geometry",
     style: {
       aesthetic:
-        'Leaded Jewel-Light Segmentation operates as a portable anime-lifestyle router: combine Leaded Jewel Light Segmentation identity cues through Lead came segmentation; jewel translucency; backlit glow; rosette rhythm; glass imperfection; and illuminated color panes with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Segment existing forms with dark lead-like seams and luminous color panes; suggest transmitted light without converting every object into literal glass.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: use jewel-toned panes and clean boundaries while retaining prompt-critical color and local material cues.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Let light pass through pane-like color regions and catch seam edges; preserve the actual lighting setup.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Draw strong seam contours, small glass-like imperfections and rosette rhythms only when the source geometry supports them.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Use segmentation to clarify existing shape planes; keep crop, silhouette and spatial layout intact.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Illuminated color feels crafted and quiet; honor requested darkness or subtlety by lowering glow, not deleting seams.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Render the pane logic as a visual treatment while preserving material identity; add no window, rosette or stained-glass object. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Lead came segmentation; jewel translucency; backlit glow; rosette rhythm; glass imperfection; and illuminated color panes',
+        'Leaded segmentation; jewel translucency; transmitted color; seam highlights; controlled glass imperfection.',
       creative_brief:
-        'Use Leaded Jewel-Light Segmentation after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Lead came segmentation, jewel translucency, backlit glow, rosette rhythm, glass imperfection, and illuminated color panes, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Leaded segmentation; jewel translucency; transmitted color; seam highlights; controlled glass imperfection. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -617,28 +617,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Masaaki Yuasa - Rubber Reality Sprint',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, elastic distortion changing identity or construction, bent planes breaking requested perspective, brush noise obscuring silhouette",
     style: {
       aesthetic:
-        'Masaaki Yuasa - Rubber Reality Sprint operates as a portable anime-lifestyle router: combine Masaaki Yuasa - Rubber Reality Sprint identity cues through Rubber Reality Sprint with Masaaki Yuasa lineage used only as style reference; style specific contour; material transformation; motion grammar; abstraction pressure; symbolic surface logic with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction; Masaaki Yuasa may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        "Treat the named lineage as technique reference: loose, fluctuating contour, elastic drawing rhythm, bent planes and brushy spatial push/pull; preserve the subject's recognizable structure.",
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: use bold, simple color planes and flexible value shifts; retain the prompt palette.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Let shadow shapes bend with the existing pose and lighting; avoid adding a sprint or kinetic blur by default.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Alternate clean and rough brush edges with elastic contour changes; do not morph material identity.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Push and pull the existing forms within the given camera and layout; preserve count, pose intent and perspective.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Lively distortion belongs to the rendering, not a new action or character; follow the requested energy level.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'Rubber Reality Sprint with Masaaki Yuasa lineage used only as style reference; style specific contour; material transformation; motion grammar; abstraction pressure; symbolic surface logic',
+        'Apply controlled drawing elasticity to any subject; add no limbs, expressions, sprint, gag or copied scene. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
+      key_features: 'Elastic contour; bent plane rhythm; loose brush marks; graphic push/pull.',
       creative_brief:
-        'Use Masaaki Yuasa - Rubber Reality Sprint after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Rubber Reality Sprint with Masaaki Yuasa lineage used only as style reference, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Elastic contour; bent plane rhythm; loose brush marks; graphic push/pull. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -646,28 +645,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sumi-e Impact Brushstroke',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'detailed, filled, colorful, gradient, cel shaded, clean outlines, rendered, polished, busy, noisy, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, uniform fills erasing wet-pool and dry-bristle contrast, cel shading replacing pressure-variable strokes, weak value separation collapsing ink structure",
     style: {
       aesthetic:
-        'Sumi-e Impact Brushstroke operates as a portable anime-lifestyle router: combine Sumi e Impact Brushstroke identity cues through Sumi ink monochrome; pressure variable strokes; dry brush splinters; ink pool wetness; rice paper texture; and negative space impact with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Build form through pressure-variable ink strokes, wet pools, dry-bristle breaks and deliberate rice-paper negative space.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: keep ink monochrome by default, allowing only colors explicitly requested by the prompt.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        "Use the ink's density and paper reserve as light and shadow; do not add a separate cinematic light source.",
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Show absorbent paper edges, pooled ink and bristle drag; keep strokes few and purposeful.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Let negative space carry equal weight to the marked form; preserve the source composition.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        "Impact comes from the contrast of a decisive stroke and open paper; retain the prompt's meaning.",
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Translate any subject into ink value and stroke pressure without adding calligraphy, writing or a new gesture. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Sumi ink monochrome; pressure variable strokes; dry brush splinters; ink pool wetness; rice paper texture; and negative space impact',
+        'Pressure-variable sumi strokes; dry-bristle splinters; wet ink pools; rice-paper texture; negative-space impact.',
       creative_brief:
-        'Use Sumi-e Impact Brushstroke after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Sumi ink monochrome, pressure variable strokes, dry brush splinters, ink pool wetness, rice paper texture, and negative space impact, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Pressure-variable sumi strokes; dry-bristle splinters; wet ink pools; rice-paper texture; negative-space impact. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -675,28 +674,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Minimalist Indie Quiet',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'busy, detailed, complex, epic, flashy, saturated, dramatic, crowded, explosive, maximalist, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, decorative marks obscuring minimal contour hierarchy, negative space removing required subject detail, weak values merging essential forms",
     style: {
       aesthetic:
-        'Minimalist Indie Quiet operates as a portable anime-lifestyle router: combine Minimalist Indie Quiet identity cues through Negative space dominance; minimalist line count; single color atmospheres; scale humility; intentional silence; Minimalist Indie Quiet anime style cues with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Reduce contours to the smallest set that still identifies the requested form; use a broad quiet value field and one muted accent where it helps.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: favor restrained values and a single muted accent; preserve colors essential to the prompt.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use soft, broad value transitions and minimal shadow; keep requested lighting recognizable.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Keep surfaces clean and marks sparse, leaving deliberate negative space rather than adding decorative texture.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Preserve framing and scale; let empty space emerge around existing forms without deleting requested elements.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Quietness is visual economy, not a forced calm mood; honor the requested emotion.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Simplify rendering only; preserve identity, count, detail the prompt requires and all compositional relationships. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Negative space dominance; minimalist line count; single color atmospheres; scale humility; intentional silence; Minimalist Indie Quiet anime style cues',
+        'Minimal line count; broad value field; one muted accent; negative space; humble scale.',
       creative_brief:
-        'Use Minimalist Indie Quiet after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Negative space dominance, minimalist line count, single color atmospheres, scale humility, intentional silence, Minimalist Indie Quiet anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Minimal line count; broad value field; one muted accent; negative space; humble scale. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -704,28 +703,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Spray-Drip Wildstyle Anime',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'clean, polished, smooth, gallery art, finished, framed, subtle, gentle, indoors, white walls, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, uniform airbrush edges erasing stencil cuts, overspray obscuring source contours, gravity-inconsistent drips",
     style: {
       aesthetic:
-        'Spray-Drip Wildstyle Anime operates as a portable anime-lifestyle router: combine Spray Drip Wildstyle Anime identity cues through Spray drips; stencil sharp edges; overspray halos; rough surface grain; wildstyle composition; and large scale contour energy with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Combine sharp stencil edges, overspray halos, gravity-led drips and particulate grain; keep the marks energetic without introducing letters or tags.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: use punchy cyan/magenta accents where compatible, with prompt colors remaining readable.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use flat painted values with a soft overspray halo around selected edges; avoid simulated neon light unless requested.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Layer stencil-cut shapes, atomized pigment, drips and rough grain; keep these as rendering marks, not new objects.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Let the spray marks follow existing silhouettes and directional emphasis; do not force a mural wall or recompose the frame.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        "Wildstyle energy comes from edge and pigment contrast; preserve the prompt's tone, including gentle subjects.",
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Apply the spray technique to any subject without adding graffiti letters, wall, logo, tag or lettering. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Spray drips; stencil sharp edges; overspray halos; rough surface grain; wildstyle composition; and large scale contour energy',
+        'Stencil edge; overspray halo; paint drips; particulate grain; bold contour energy; cyan/magenta accents.',
       creative_brief:
-        'Use Spray-Drip Wildstyle Anime after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Spray drips, stencil sharp edges, overspray halos, rough surface grain, wildstyle composition, and large scale contour energy, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Stencil edge; overspray halo; paint drips; particulate grain; bold contour energy; cyan/magenta accents. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -733,28 +732,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Chalk-Dust Slate Sketch',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'digital, permanent, clean, polished, colorful, smooth, glossy, final, professional, printed, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, unbroken contours erasing chalk-stroke breaks, glossy highlights hiding powder texture, erasure smudges masking essential forms",
     style: {
       aesthetic:
-        'Chalk-Dust Slate Sketch operates as a portable anime-lifestyle router: combine Chalk Dust Slate Sketch identity cues through Powder halos; smudge ghosts; broken stroke cadence; erasure memory; slate grain; and fragile contour rhythm with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Use broken pale strokes, powder halos, smudge ghosts and erased traces against a dark slate-like value field.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: keep a limited pale-on-dark palette unless the prompt specifies other colors.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use chalk highlights and soft powder falloff to reveal form; avoid polished specular light.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Show chalk dust, drag, gaps and erasure memory; preserve the underlying material in the drawn form.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Let broken marks and open dark field shape the composition; maintain the requested crop and placement.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Fragile contour and erased traces suggest impermanence without adding a written message.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Use chalk mark behavior on any subject; add no letters, formulae, chalkboard or diagram. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Powder halos; smudge ghosts; broken stroke cadence; erasure memory; slate grain; and fragile contour rhythm',
+        'Broken chalk cadence; powder halo; smudge ghost; erasure trace; slate-grain field.',
       creative_brief:
-        'Use Chalk-Dust Slate Sketch after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Powder halos, smudge ghosts, broken stroke cadence, erasure memory, slate grain, and fragile contour rhythm, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Broken chalk cadence; powder halo; smudge ghost; erasure trace; slate-grain field. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -762,28 +761,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Gritty Realist Seinen',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'cute, kawaii, bright, clean, cel shaded, simple, colorful, moe, soft, round, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, generic grime obscuring material-specific wear, over-smoothed contours removing grounded structure, hatching merging important planes",
     style: {
       aesthetic:
-        'Gritty Realist Seinen operates as a portable anime-lifestyle router: combine Gritty Realist Seinen identity cues through Tired eye weight; age and labor detail; worn surfaces; practical harsh light; grounded material realism; and unsentimental framing with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Ground proportions and weight in fine wear, selective hatching and practical surface detail; do not add age, fatigue, injury or labor history.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        "Palette defaults apply only where the prompt leaves color open: keep colors subdued but preserve the prompt's palette and the natural color of important materials.",
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use practical hard light and grounded cast shadows, following the requested direction and exposure.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Add fine scuffs and hatching only where form or source material supports them; avoid generic grime.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Use unsentimental framing and stable perspective while preserving the supplied crop and focal point.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        "Realist restraint is a rendering choice, not a mandate for bleakness; keep the prompt's emotional register.",
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Apply physical clarity to any form without aging, distressing, masculinizing or injuring the subject. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Tired eye weight; age and labor detail; worn surfaces; practical harsh light; grounded material realism; and unsentimental framing',
+        'Grounded proportions; selective wear; fine hatching; practical hard light; material realism; composed restraint.',
       creative_brief:
-        'Use Gritty Realist Seinen after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Tired eye weight, age and labor detail, worn surfaces, practical harsh light, grounded material realism, and unsentimental framing, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Grounded proportions; selective wear; fine hatching; practical hard light; material realism; composed restraint. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -791,28 +790,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ether-Wisp Gothic Ornament',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'photorealism, heavy 3d shading, blunt contour lines, cluttered hard distant plane realism, modern streetwear styling, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, blunt contours obscuring pointed taper, ornamental hatching merging into silhouette, unrequested ornament competing with source forms",
     style: {
       aesthetic:
-        'Ether-Wisp Gothic Ornament operates as a portable anime-lifestyle router: combine Ether Wisp Gothic Ornament identity cues through Elongated silhouettes; decorative ink wisps; gilded accents; void rich composition; feathered ornamental detail; Ether Wisp Gothic Ornament anime style cues with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Stretch existing contours into pointed, elongated accents and add feathered ink wisps with sparse gilded detail against generous void.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: use ink-dark values and restrained gold; preserve prompt colors that identify the subject.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Let thin edge highlights emerge from the dark field; avoid adding a moon, candle or magical glow source.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Use fine ornamental hatching and tapering wisps; keep marks attached to existing shapes rather than adding motifs.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Balance pointed detail with open negative space inside the original framing; do not add gothic architecture.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        "Gothic tension comes from line, void and taper; preserve the prompt's tone and meaning.",
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Apply ornamental pressure to any requested subject without adding religious symbols, costume, architecture or sigils. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Elongated silhouettes; decorative ink wisps; gilded accents; void rich composition; feathered ornamental detail; Ether Wisp Gothic Ornament anime style cues',
+        'Elongated contours; decorative ink wisps; feathered ornament; sparse gold; void-rich composition.',
       creative_brief:
-        'Use Ether-Wisp Gothic Ornament after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Elongated silhouettes, decorative ink wisps, gilded accents, void rich composition, feathered ornamental detail, Ether Wisp Gothic Ornament anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Elongated contours; decorative ink wisps; feathered ornament; sparse gold; void-rich composition. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -820,28 +819,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Surreal Dream Logic',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'realistic, logical, grounded, physical, coherent, normal, straightforward, literal, linear, ordinary, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, spatial contradiction making the subject unreadable, unrequested floating or duplicate forms, perspective discontinuity unrelated to existing geometry",
     style: {
       aesthetic:
-        'Surreal Dream Logic operates as a portable anime-lifestyle router: combine Surreal Dream Logic identity cues through Impossible architecture; floating disconnected elements; morphing dream transitions; contradictory light sources; infinite spatial loops; Surreal Dream Logic anime style cues with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Create a limited spatial contradiction among existing planes, alignments or light cues; keep the dream effect legible and do not add disconnected objects.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: retain a coherent base palette with selective shifts at the contradictory plane; preserve prompt colors.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        "Keep the original light cues and introduce only a subtle mismatch where the prompt's own forms meet.",
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Use clean edges with localized soft transitions to make one relationship feel impossible; retain material and silhouette.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Keep the source camera and content stable while gently disturbing perspective or adjacency; no infinite loops by default.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Dream logic comes from one precise mismatch, not a new dreamscape; preserve requested mood.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Apply the spatial treatment to any subject without adding architecture, floating objects, duplicate forms or a new setting. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Impossible architecture; floating disconnected elements; morphing dream transitions; contradictory light sources; infinite spatial loops; Surreal Dream Logic anime style cues',
+        'Offset planes; contradictory alignment or light; restrained spatial loop; stable recognizable forms.',
       creative_brief:
-        'Use Surreal Dream Logic after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Impossible architecture, floating disconnected elements, morphing dream transitions, contradictory light sources, infinite spatial loops, Surreal Dream Logic anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Offset planes; contradictory alignment or light; restrained spatial loop; stable recognizable forms. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -849,28 +848,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Fairy-Tale Storybook Soft',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'hard, sharp, dark, gritty, realistic, horror, violent, cruel cynicism, explicit gore, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, hard unmodulated edges cutting through gouache glaze, plastic sheen obscuring paper and pigment texture, contour loss obscuring subject identity",
     style: {
       aesthetic:
-        'Fairy-Tale Storybook Soft operates as a portable anime-lifestyle router: combine Fairy Tale Storybook Soft identity cues through Floating floral particles; sparkle dust; lace pattern borders; ribbon like framing devices; transformation glow softness; Fairy Tale Storybook Soft anime style cues with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Use curved fine contours, pastel gouache glaze and lace-like edge rhythm to soften existing forms; do not add flowers, ribbons or sparkle props.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: use softly layered pastel colors with enough value contrast to keep forms clear; honor requested dark or saturated palettes.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        "Favor diffused light and gentle edge bloom only when consistent with the prompt's lighting.",
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Combine fine ink contours, translucent gouache and light paper tooth; keep the depicted material identifiable.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Let soft curves guide the eye through the given layout; preserve crop, pose and structural detail.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Storybook softness is a surface quality, not a requirement for innocence or a happy ending.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Apply the soft rendering to any subject and mood without adding a fairy, flower, ribbon, costume or storybook scene. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Floating floral particles; sparkle dust; lace pattern borders; ribbon like framing devices; transformation glow softness; Fairy Tale Storybook Soft anime style cues',
+        'Curved contour; pastel gouache glaze; lace-like edge rhythm; soft light; fine paper tooth.',
       creative_brief:
-        'Use Fairy-Tale Storybook Soft after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Floating floral particles, sparkle dust, lace pattern borders, ribbon like framing devices, transformation glow softness, Fairy Tale Storybook Soft anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Curved contour; pastel gouache glaze; lace-like edge rhythm; soft light; fine paper tooth. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -878,28 +877,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Deco-Inspired Geometric Anime',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'organic, round, soft, flowing, natural, irregular, curved, messy, sketchy, unplanned, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, ruler lines misaligned with source perspective, facets obscuring the original silhouette, forced symmetry changing the requested composition",
     style: {
       aesthetic:
-        'Deco-Inspired Geometric Anime operates as a portable anime-lifestyle router: combine Deco Inspired Geometric Anime identity cues through Geometric fan shapes; faceted jewel focal points; ruler straight lines; stained glass color separation; staged symmetry; Deco Inspired Geometric anime style cues with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Use fan-like geometry, ruler-straight lines and faceted color cells to articulate existing forms; preserve their natural asymmetry rather than staging symmetry.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: separate a compact set of jewel colors into clean cells while keeping prompt-specific colors.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use crisp value bands and small facet highlights; follow the actual light direction.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Keep edges clean and geometric with selective stained-glass-like separation; do not convert materials to glass.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Fit geometric accents to the supplied composition without adding a frame or changing viewpoint.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        "Deco poise comes from measured line and facet balance; keep the user's mood and subject.",
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Use geometric organization on any subject without adding architecture, ornament, costume or a symmetrical poster layout. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Geometric fan shapes; faceted jewel focal points; ruler straight lines; stained glass color separation; staged symmetry; Deco Inspired Geometric anime style cues',
+        'Geometric fan shapes; ruler-straight contour; faceted focal areas; jewel-color cells; asymmetry preserved.',
       creative_brief:
-        'Use Deco-Inspired Geometric Anime after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Geometric fan shapes, faceted jewel focal points, ruler straight lines, stained glass color separation, staged symmetry, Deco Inspired Geometric anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Geometric fan shapes; ruler-straight contour; faceted focal areas; jewel-color cells; asymmetry preserved. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -907,28 +906,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Folkloric Deadpan Ink Catalog',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'glossy digital polish, photoreal creature rendering, clean modern fantasy UI, neon sci fi palette, cute mascot simplification, empty flat distant plane, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, polished sheen erasing dry-ink irregularity, hatch marks obscuring subject contours, unrequested cultural motif or label",
     style: {
       aesthetic:
-        'Folkloric Deadpan Ink Catalog operates as a portable anime-lifestyle router: combine Folkloric Deadpan Ink Catalog identity cues through Folkloric Deadpan Ink Catalog anime style cues, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt preserving silhouette discipline with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Use dry, uneven ink, a compact flat palette, repeated small hatch marks and catalog-like spacing; derive pattern only from forms already present.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: keep colors flat and limited, preserving prompt-critical hues and material identity.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use simple flat values and minimal shadow; do not add theatrical light.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Show slightly irregular ink edges and a few repeated hatches; no labels or fabricated cultural ornament.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Separate existing forms with clear breathing room while preserving layout and count; do not create a page or display.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Deadpan folklore is carried by dry line and repetition, not by assigning a culture or mythology.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Apply the mark system without inventing cultural motifs, labels, folk costume, props or a catalog page. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Folkloric Deadpan Ink Catalog anime style cues; style specific contour; material transformation; motion grammar; abstraction pressure; symbolic surface logic',
+        'Dry uneven ink; compact flats; repeated small hatch; catalog-like spacing; deadpan restraint.',
       creative_brief:
-        'Use Folkloric Deadpan Ink Catalog after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Folkloric Deadpan Ink Catalog anime style cues, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Dry uneven ink; compact flats; repeated small hatch; catalog-like spacing; deadpan restraint. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -936,28 +935,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Threadbare Textile Patchwork',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'smooth, digital, clean, 3d, glossy, polished, sharp, solid, opaque, uniform, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, weave marks obscuring nontextile material cues, stitches detached from existing seams, fray replacing the source silhouette",
     style: {
       aesthetic:
-        'Threadbare Textile Patchwork operates as a portable anime-lifestyle router: combine Threadbare Textile Patchwork identity cues through Stitching trail contours; yarn bundle texture; fabric patchwork seams; embroidery hoop framing; frayed fabric edges; sashiko like patterns with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Use stitched contour accents, crosswise weave marks, seam breaks and frayed edges only where the source form supports a textile reading.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: retain the source palette and use thread-like accents sparingly; do not recolor every surface as cloth.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        "Use soft diffuse value and small seam shadows; respect the prompt's actual illumination.",
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Show thread, weave, stitch and fray as controlled mark vocabulary while preserving each depicted material.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Let seams clarify existing construction and boundaries; preserve camera, silhouette and arrangement.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Tactility comes from the stitch rhythm; do not turn every object into fabric or add a frame.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Transfer textile marks selectively to any subject without adding hoop, garment, cloth prop or embroidery motif. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Stitching trail contours; yarn bundle texture; fabric patchwork seams; embroidery hoop framing; frayed fabric edges; sashiko like patterns',
+        'Stitched contour; crosswise weave/hatch; patch seams; selective fray; sashiko-like rhythm only when source pattern supports it.',
       creative_brief:
-        'Use Threadbare Textile Patchwork after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Stitching trail contours, yarn bundle texture, fabric patchwork seams, embroidery hoop framing, frayed fabric edges, sashiko like patterns, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Stitched contour; crosswise weave/hatch; patch seams; selective fray; sashiko-like rhythm only when source pattern supports it. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -965,28 +964,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Spiral Panic Engraving',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, hatch arcs obscuring the focal contour, scratch marks unrelated to form direction, spiral-like distortion altering source geometry",
     style: {
       aesthetic:
-        'Spiral Panic Engraving operates as a portable anime-lifestyle router: combine Spiral Panic Engraving identity cues through Spiral Panic Engraving anime style cues, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt preserving silhouette discipline with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Use winding hatch arcs, scratched line and ink pools to build graphic pressure around an existing focal point; do not add a literal spiral or vortex.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: keep a compressed dark palette with controlled high-value accents; preserve requested colors.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Shape pressure with converging value and ink density, not invented light or flame.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Layer engraved hatch and scratch in arcs that follow existing forms; keep detail deliberate and readable.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        "Concentrate mark direction toward the prompt's existing focus while keeping the composition stable.",
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Unease comes from the engraving rhythm; keep panic at the level requested by the prompt.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Use the arc logic on any subject without adding spirals, eyes, a vortex, distortion or threat. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Spiral Panic Engraving anime style cues; style specific contour; material transformation; motion grammar; abstraction pressure; symbolic surface logic',
+        'Winding hatch arcs; scratched engraving; ink pools; directional pressure; focused dark/light contrast.',
       creative_brief:
-        'Use Spiral Panic Engraving after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Spiral Panic Engraving anime style cues, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Winding hatch arcs; scratched engraving; ink pools; directional pressure; focused dark/light contrast. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -994,28 +993,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Angular Combustion Iconography',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, ember glow obscuring angular shadow cuts, unprompted flame or smoke effects, angular cuts damaging subject-defining edges",
     style: {
       aesthetic:
-        'Angular Combustion Iconography operates as a portable anime-lifestyle router: combine Angular Combustion Iconography identity cues through Angular Combustion Iconography anime style cues, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt preserving silhouette discipline with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Use acute contour cuts, hard cel-shadow planes and restrained ember accents to suggest combustion through shape language without depicting fire.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: keep a high-contrast base with small ember colors; preserve prompt-specific color and avoid blanket orange.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use sharp shadow cuts and tiny hot-edge accents only where supported by the prompt light.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Keep fill surfaces clean and angular; do not melt, char or transform materials unless requested.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Align angular accents with existing forms and action; preserve layout and avoid an explosion composition.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Combustion is an angular visual rhythm, not an added event; honor calm or still prompts.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Apply the angular treatment to any subject without adding flames, smoke, melting, blast or damage. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Angular Combustion Iconography anime style cues; style specific contour; material transformation; motion grammar; abstraction pressure; symbolic surface logic',
+        'Acute angular cuts; hard cel shadows; restrained ember accents; icon-like contrast; crisp contour.',
       creative_brief:
-        'Use Angular Combustion Iconography after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Angular Combustion Iconography anime style cues, style specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Acute angular cuts; hard cel shadows; restrained ember accents; icon-like contrast; crisp contour. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -1023,28 +1022,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Textured Hand-Drawn Rough',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'digital clean, vector smooth, perfect, polished, cel shaded, crisp, sharp, sterile, computer generated, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, smoothed contours erasing graphite and pencil marks, smudges obscuring subject-defining details, registration marks intruding into the subject",
     style: {
       aesthetic:
-        'Textured Hand-Drawn Rough operates as a portable anime-lifestyle router: combine Textured Hand Drawn Rough identity cues through Pencil underdrawing visible; smudge marks; peg bar registration holes; rough construction lines; colored pencil fill; Textured Hand Drawn Rough anime style cues with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Retain visible graphite underdrawing, colored-pencil fill, paper tooth and occasional registration marks at the margins.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: use layered pencil color with slight unevenness; preserve the prompt palette.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use hand-built value with visible pencil direction; follow specified light and keep form readable.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Keep sketch, ink and pencil layers distinguishable; registration marks stay peripheral and sparse.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Preserve the source composition and perspective; show process texture without shifting objects or adding sheet borders.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Human irregularity comes from drawn marks; retain the requested polish and mood.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Apply the hand-drawn surface to any subject without adding extra figures, animation cels, peg bars or page labels. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Pencil underdrawing visible; smudge marks; peg bar registration holes; rough construction lines; colored pencil fill; Textured Hand Drawn Rough anime style cues',
+        'Graphite underdrawing; smudge marks; colored-pencil fill; paper tooth; sparse margin registration.',
       creative_brief:
-        'Use Textured Hand-Drawn Rough after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Pencil underdrawing visible, smudge marks, peg bar registration holes, rough construction lines, colored pencil fill, Textured Hand Drawn Rough anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Graphite underdrawing; smudge marks; colored-pencil fill; paper tooth; sparse margin registration. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -1052,28 +1051,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Abstract Fluid Painterly Anime',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'hard outlines, cel shading, flat colors, rigid, static, geometric, stiff, low detail, simple, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, uniform opaque fills erasing pigment blooms, continuous hard outlines enclosing every form, wash bleed obscuring the silhouette",
     style: {
       aesthetic:
-        'Abstract Fluid Painterly Anime operates as a portable anime-lifestyle router: combine Abstract Fluid Painterly Anime identity cues through Watercolor blooms; disappearing linework; ink pool negative space; pigment granulation; wet paper texture; Abstract Fluid Painterly anime style cues with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Let watercolor blooms, pigment granulation and wet-paper movement soften or dissolve selected contours; preserve the subject through value and silhouette.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: use translucent washes and natural pigment mixing; preserve prompt colors and avoid flattening everything into solid fills.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Allow blooms and edge loss where wash gathers; keep requested light direction and focal values legible.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Show paper tooth, ink pooling, granulation and selective disappearing linework; leave deliberate unpainted space.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Keep the source layout stable while washes flow within existing forms; do not turn abstractions into new objects.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        "Fluidity comes from pigment behavior and negative space; retain the prompt's mood and readability.",
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Apply the wet-media mechanics to any subject without adding water, scenery or abstract forms absent from the prompt. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Watercolor blooms; disappearing linework; ink pool negative space; pigment granulation; wet paper texture; Abstract Fluid Painterly anime style cues',
+        'Watercolor blooms; disappearing contour; ink pools; pigment granulation; wet-paper texture; negative space.',
       creative_brief:
-        'Use Abstract Fluid Painterly Anime after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Watercolor blooms, disappearing linework, ink pool negative space, pigment granulation, wet paper texture, Abstract Fluid Painterly anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Watercolor blooms; disappearing contour; ink pools; pigment granulation; wet-paper texture; negative space. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -1081,28 +1080,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ice-Crystal Refractive',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'warm, soft, organic, round, colorful, dark, muted, earthy, glowing, fiery, textured, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, refraction bloom obscuring facet boundaries, frost marks replacing source material cues, facets changing source geometry",
     style: {
       aesthetic:
-        'Ice-Crystal Refractive operates as a portable anime-lifestyle router: combine Ice Crystal Refractive identity cues through Faceted crystal contours; internal light refraction; prism rainbow splitting; ice blue monochrome spectrum; hexagonal ice symmetry; frost fern textures with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Use faceted contour shading, internal refraction and narrow prismatic edge splits as a cool refractive rendering; do not freeze or crystallize the subject.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: favor an icy blue range with small spectral accents while retaining colors necessary to identify the subject.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        "Use transmitted highlights and restrained refractive bloom; obey the prompt's light source and keep shadow detail.",
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Render crisp facets and fine frost-like branching as surface marks, not physical ice replacing the material.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Facet the existing planes without imposing hexagonal symmetry or changing camera and silhouette.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Cool clarity is the visual treatment; preserve warmth, darkness or texture requested by the prompt.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Apply refraction as a drawing effect while preserving material, temperature and identity; add no ice, snow or frozen setting. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Faceted crystal contours; internal light refraction; prism rainbow splitting; ice blue monochrome spectrum; hexagonal ice symmetry; frost fern textures',
+        'Faceted shading; internal refraction; icy blue bias; restrained prism edges; fine frost-like surface marks.',
       creative_brief:
-        'Use Ice-Crystal Refractive after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Faceted crystal contours, internal light refraction, prism rainbow splitting, ice blue monochrome spectrum, hexagonal ice symmetry, frost fern textures, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Faceted shading; internal refraction; icy blue bias; restrained prism edges; fine frost-like surface marks. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -1110,28 +1109,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Visceral Guro Horror',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'cute, clean, gentle, soft, kawaii, moe, pleasant, wholesome, safe, comfortable, beautiful, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, unrequested wound, blood or organ detail, anatomical patterning added where no anatomy is visible, dense cross-contour obscuring source silhouette",
     style: {
       aesthetic:
-        'Visceral Guro Horror operates as a portable anime-lifestyle router: combine Visceral Guro Horror identity cues through Anatomical pattern density; red black clinical dread; bone texture rendering; biological precision abstraction; spiral contamination motifs; Visceral Guro Horror anime style cues with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Use dense organic cross-contour, anatomical patterning and carmine/bone/black contrast only on visible forms; do not invent wounds, organs or gore.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        "Palette defaults apply only where the prompt leaves color open: keep carmine, bone and black as restrained graphic accents; preserve prompt colors and the depicted subject's material.",
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Use hard clinical value contrast with detail concentrated where anatomy or structure is already visible.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Build unease through tightly interwoven contour and fine organic marks, never through added injury or anatomy.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Keep the source pose, composition and amount of visible content; do not crop in to manufacture gore.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Visceral tension is a pattern and contrast language; preserve the requested content and intensity.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Use the pattern treatment without adding blood, wounds, dismemberment, organs or anatomical features to nonliving subjects. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Anatomical pattern density; red black clinical dread; bone texture rendering; biological precision abstraction; spiral contamination motifs; Visceral Guro Horror anime style cues',
+        'Dense organic cross-contour; anatomical pattern density; carmine/bone/black; biological precision; controlled dread.',
       creative_brief:
-        'Use Visceral Guro Horror after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Anatomical pattern density, red black clinical dread, bone texture rendering, biological precision abstraction, spiral contamination motifs, Visceral Guro Horror anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Dense organic cross-contour; anatomical pattern density; carmine/bone/black; biological precision; controlled dread. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -1139,28 +1138,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Phosphor Sensor-Vision Grain',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'colorful, bright, warm, daylight, natural light, smooth, clean, cinematic, stylized, soft, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, grain obscuring silhouette or fine details, vignette crushing important values, alignment marks resembling an unrequested interface",
     style: {
       aesthetic:
-        'Phosphor Sensor-Vision Grain operates as a portable anime-lifestyle router: combine Phosphor Sensor Vision Grain identity cues through Phosphor monochrome; intensifier grain; reticle like alignment; lens vignette; infrared points; and sensor mediated framing with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Render in high-gain monochrome with intensifier grain, lens vignette and a faint alignment echo; any reticle-like cue stays abstract and peripheral, never interface text.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: use phosphor monochrome with a restrained green or amber bias only if compatible with the prompt; no natural-color conversion.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Apply sensor-like edge bloom and luminance falloff without claiming an actual heat or infrared reading.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Use fine electronic grain, mild vignette and restrained edge echo; preserve the underlying material and silhouette.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Keep the original framing; suggest sensor mediation with peripheral alignment marks rather than a fake screen.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        "Surveillance-like distance comes from signal texture; retain the prompt's mood without inventing a device or operator.",
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Apply sensor texture to any subject without adding a camera, HUD, readable reticle, device or surveillance scene. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Phosphor monochrome; intensifier grain; reticle like alignment; lens vignette; infrared points; and sensor mediated framing',
+        'Phosphor monochrome; intensifier grain; lens vignette; faint alignment echo; restrained infrared-like points.',
       creative_brief:
-        'Use Phosphor Sensor-Vision Grain after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Phosphor monochrome, intensifier grain, reticle like alignment, lens vignette, infrared points, and sensor mediated framing, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: Phosphor monochrome; intensifier grain; lens vignette; faint alignment echo; restrained infrared-like points. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -1168,28 +1167,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Thermal-Heat-Signature Vision',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'muted, low contrast heat separation, natural color, realistic skin, normal lighting, daylight palette, non sensor rendering, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, thermal bands collapsing into indistinguishable values, bloom obscuring signal segmentation, unrequested HUD, labels or temperature claims",
     style: {
       aesthetic:
-        'Thermal-Heat-Signature Vision operates as a portable anime-lifestyle router: combine Thermal Heat Signature Vision identity cues through White hot to blue cold gradients; ironbow false color spectrum; thermal HUD marks; heat bloom halos; emissive only lighting; Thermal Heat Signature Vision anime style cues with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Map value into white-hot through red/amber to blue false-color bands with restrained bloom and sparse edge calibration ticks; this is a visual mapping, not factual temperature.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: use the thermal false-color ramp while preserving shape boundaries and prompt-critical identifiers.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Let bloom cluster around the brightest mapped areas; calibration marks stay thin and peripheral.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Keep the color bands clean, with slight sensor grain only; do not add emissive light to the depicted materials.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Preserve the original framing and form boundaries; do not imply a scanner or interface.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'The false-color image reads as a stylized signal; do not assert heat, health or material properties.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Apply the mapping to any subject without adding a HUD, scanner, labels or temperature claim. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'White hot to blue cold gradients; ironbow false color spectrum; thermal HUD marks; heat bloom halos; emissive only lighting; Thermal Heat Signature Vision anime style cues',
+        'White-hot to blue bands; ironbow false color; restrained heat bloom; sparse calibration ticks; clear segmentation.',
       creative_brief:
-        'Use Thermal-Heat-Signature Vision after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies White hot to blue cold gradients, ironbow false color spectrum, thermal HUD marks, heat bloom halos, emissive only lighting, Thermal Heat Signature Vision anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: White-hot to blue bands; ironbow false color; restrained heat bloom; sparse calibration ticks; clear segmentation. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
   {
@@ -1197,28 +1196,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Neon Hyperpop Anime',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      'muted, subtle, soft, vintage, film grain, dark, moody, restrained, traditional, quiet, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature',
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, RGB channels misregistered enough to duplicate the silhouette, glitch pixels obscuring subject details, spectral bloom washing out channel separation",
     style: {
       aesthetic:
-        'Neon Hyperpop Anime operates as a portable anime-lifestyle router: combine Neon Hyperpop Anime identity cues through Chromatic aberration edges; RGB channel split; holographic overlay; internet culture signal language; digital glitch artifacts; Neon Hyperpop anime style cues with broad anime style spectrum grammar with experimental line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        "Use RGB edge separation, small glitch pixels and spectral holographic sheen over crisp anime contours; keep the subject's identifying edges stable.",
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic surface logic, and prompt-preserving silhouette discipline; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
-        'Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop, thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Palette defaults apply only where the prompt leaves color open: use saturated neon and channel-split accents while preserving prompt-critical color and contrast.',
       lighting_and_shadow:
-        'Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze, speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Keep chromatic glow tight to edges and bright intersections; avoid flooding the frame with bloom.',
       texture_and_material:
-        'Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Use small digital offsets, clean gradients and limited glitch artifacts; do not add interface chrome.',
       camera_and_composition:
-        'Compose through auteur-aware framing, material seams, impact vectors, postcard freezes, distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Follow existing silhouette and motion direction with color-channel echoes; preserve crop and layout.',
       atmosphere_and_mood:
-        'Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance, tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Hyperpop energy comes from color and controlled signal noise; preserve quiet, dark or restrained moods when requested.',
       rendering_and_quality:
-        'Finish with clean experimental anime finish with strong style recognition, stable subject structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Apply digital color treatment to any subject without adding memes, text, UI, logos or stock internet imagery. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
       key_features:
-        'Chromatic aberration edges; RGB channel split; holographic overlay; internet culture signal language; digital glitch artifacts; Neon Hyperpop anime style cues',
+        'RGB channel split; chromatic edge aberration; small glitch pixels; spectral sheen; saturated but controlled color.',
       creative_brief:
-        'Use Neon Hyperpop Anime after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Chromatic aberration edges, RGB channel split, holographic overlay, internet culture signal language, digital glitch artifacts, Neon Hyperpop anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply this visual treatment to the requested content: RGB channel split; chromatic edge aberration; small glitch pixels; spectral sheen; saturated but controlled color. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

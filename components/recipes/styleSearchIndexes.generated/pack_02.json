@@ -3,7 +3,7 @@
     {
       "id": "pack_02",
       "name": "Cinematic & Media",
-      "presetCount": 128
+      "presetCount": 129
     }
   ],
   "presets": [
@@ -800,6 +800,18 @@
       "searchableText": "sp02-057 pinhole camera 4. photography eras historic photo processes pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
     },
     {
+      "id": "SP02-129",
+      "name": "Silver Plate Tonality",
+      "ref": "pack_02/SP02-129.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "photography-eras",
+      "categoryName": "4. Photography Eras",
+      "tags": ["cinematic-and-media", "photography-eras"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-129 silver plate tonality 4. photography eras historic photo processes pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
+    },
+    {
       "id": "SP02-061",
       "name": "Golden Hour",
       "ref": "pack_02/SP02-061.yaml",
@@ -1544,5 +1556,5 @@
       "searchableText": "sp02-099 punk zine cut-and-paste 8. hand-drawn and diy media diy drawing surfaces pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media"
     }
   ],
-  "totalPresetCount": 128
+  "totalPresetCount": 129
 }

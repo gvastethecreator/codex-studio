@@ -8,28 +8,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Frieren – Afterquest Melancholy Fantasy',
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named elf mage likeness, party lineup, road scene, ritual circle, franchise costume copy, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named elf mage likeness, party lineup, road scene, ritual circle, franchise costume copy, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Frieren – Afterquest Melancholy Fantasy acts as a transferable anime-battle/worlds router: Frieren – Afterquest Melancholy Fantasy, afterquest melancholy fantasy style grammar with relic meadow memory motes, soft horizon light, quiet spell traces, and time-softened grief; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Soft painted cel work with fading contours, delicate speckled texture, and light that spreads across broad planes.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Frieren – Afterquest Melancholy Fantasy, afterquest melancholy fantasy style grammar with relic meadow memory motes, soft horizon light, quiet spell traces, and time-softened grief as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Preserve the requested subject and gesture; soften secondary edges while keeping the focal silhouette precise.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let Frieren – Afterquest Melancholy Fantasy, afterquest melancholy fantasy style grammar with relic meadow memory motes, soft horizon light, quiet spell traces, and time-softened grief choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Muted sage, pale amber, and blue-gray carry gentle contrast; use the requested colors when specified.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Frieren – Afterquest Melancholy Fantasy, afterquest melancholy fantasy style grammar with relic meadow memory motes, soft horizon light, quiet spell traces, and time-softened grief without replacing prompt X with a stock anime frame.',
+        'Wide, soft-edged light and gradual shadow transitions create a quiet sense of distance without adding a source.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Frieren – Afterquest Melancholy Fantasy, afterquest melancholy fantasy style grammar with relic meadow memory motes, soft horizon light, quiet spell traces, and time-softened grief controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Fine pigment grain and translucent layers soften surfaces without changing what they are made of.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Frieren – Afterquest Melancholy Fantasy, afterquest melancholy fantasy style grammar with relic meadow memory motes, soft horizon light, quiet spell traces, and time-softened grief into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Keep the requested viewpoint; distribute detail from clear focal forms to quieter, more open surroundings.',
+      atmosphere_and_mood: 'Wistful and still, with no imposed grief or backstory.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Let contours recede selectively under smooth tonal fades; keep anatomy and object structure stable.',
       key_features:
-        'Frieren – Afterquest Melancholy Fantasy, afterquest melancholy fantasy style grammar with relic meadow memory motes, soft horizon light, quiet spell traces, and time-softened grief; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Soft horizon-like gradients, faded line edges, fine flecks, and restrained light preserve a reflective calm.',
       creative_brief:
-        'Apply Frieren – Afterquest Melancholy Fantasy after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Frieren – Afterquest Melancholy Fantasy, afterquest melancholy fantasy style grammar with relic meadow memory motes, soft horizon light, quiet spell traces, and time-softened grief, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Give the requested content a time-softened cel finish through fading contours, quiet color, and gentle light, without adding memory objects or a fantasy scene.',
     },
   },
   {
@@ -37,28 +36,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Shield Hero – Defensive Underdog Fantasy',
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, required shield, hero portrait, weapon, slave/collar cue, revenge scene, franchise likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, required shield, hero portrait, weapon, slave/collar cue, revenge scene, franchise likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Shield Hero – Defensive Underdog Fantasy acts as a transferable anime-battle/worlds router: Shield lead-form – Defensive Underdog Fantasy, defensive underdog fantasy style grammar with concentric barrier geometry, scarred bronze/stone relic, forward resilience, and hard-earned glow; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Resilient cel illustration organized by concentric contour rhythms, worn surfaces, and a forward-weighted silhouette.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Shield lead-form – Defensive Underdog Fantasy, defensive underdog fantasy style grammar with concentric barrier geometry, scarred bronze/stone relic, forward resilience, and hard-earned glow as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep the requested pose and action; use nested edge accents and firm contours without introducing a shield or barrier.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let Shield lead-form – Defensive Underdog Fantasy, defensive underdog fantasy style grammar with concentric barrier geometry, scarred bronze/stone relic, forward resilience, and hard-earned glow choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Aged bronze, stone gray, and a small amber accent build worn contrast; accommodate the requested palette.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Shield lead-form – Defensive Underdog Fantasy, defensive underdog fantasy style grammar with concentric barrier geometry, scarred bronze/stone relic, forward resilience, and hard-earned glow without replacing prompt X with a stock anime frame.',
+        'Directional highlights catch raised edges while deep shadow holds the larger forms together.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Shield lead-form – Defensive Underdog Fantasy, defensive underdog fantasy style grammar with concentric barrier geometry, scarred bronze/stone relic, forward resilience, and hard-earned glow controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Scuffed pigment and subdued metallic glints suggest wear as a rendering cue, without changing the depicted material.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Shield lead-form – Defensive Underdog Fantasy, defensive underdog fantasy style grammar with concentric barrier geometry, scarred bronze/stone relic, forward resilience, and hard-earned glow into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Preserve the requested camera; let nested curves and weighty diagonals guide attention within its composition.',
       atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Steadfast and hard-earned, with the mood following the subject rather than adding conflict.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Balance firm edges, textured midtones, and one controlled highlight so each form remains legible.',
       key_features:
-        'Shield lead-form – Defensive Underdog Fantasy, defensive underdog fantasy style grammar with concentric barrier geometry, scarred bronze/stone relic, forward resilience, and hard-earned glow; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Concentric line rhythm, weathered value contrast, bronze warmth, and restrained edge light carry a sense of resolve.',
       creative_brief:
-        'Apply Shield Hero – Defensive Underdog Fantasy after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Shield lead-form – Defensive Underdog Fantasy, defensive underdog fantasy style grammar with concentric barrier geometry, scarred bronze/stone relic, forward resilience, and hard-earned glow, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Apply the worn, resilient contour and value language to the requested content without adding armor, defense, or combat.',
     },
   },
   {
@@ -68,28 +67,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Delicious in Dungeon - Stove-Top Monster Cuisine'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, market stall, monster corpse, gore, banquet spread lock, readable recipe, kitchen clutter, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, market stall, monster corpse, gore, banquet spread lock, readable recipe, kitchen clutter, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Delicious in Dungeon - Stove-Top Monster Cuisine acts as a transferable anime-battle/worlds router: Delicious in Dungeon - Stove-Top Monster Cuisine, functional fantasy cuisine style grammar with warm craft process, ecological fantasy ingredients, communal utility, and cooking glow; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Tactile hand-painted cel work where form reads through small process details, organic textures, and practical clarity.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Delicious in Dungeon - Stove-Top Monster Cuisine, functional fantasy cuisine style grammar with warm craft process, ecological fantasy ingredients, communal utility, and cooking glow as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Preserve the requested subject and action; make functional shapes legible through deliberate contour and selective detail.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let Delicious in Dungeon - Stove-Top Monster Cuisine, functional fantasy cuisine style grammar with warm craft process, ecological fantasy ingredients, communal utility, and cooking glow choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Earthy green, ochre, and warm neutral accents create an organic range, adjusted to the requested palette.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Delicious in Dungeon - Stove-Top Monster Cuisine, functional fantasy cuisine style grammar with warm craft process, ecological fantasy ingredients, communal utility, and cooking glow without replacing prompt X with a stock anime frame.',
+        'Warm reflected light sits close to forms while cooler shadows retain clear separation.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Delicious in Dungeon - Stove-Top Monster Cuisine, functional fantasy cuisine style grammar with warm craft process, ecological fantasy ingredients, communal utility, and cooking glow controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Use layered, tactile pigment and carefully varied surface marks without changing what the objects are made of.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Delicious in Dungeon - Stove-Top Monster Cuisine, functional fantasy cuisine style grammar with warm craft process, ecological fantasy ingredients, communal utility, and cooking glow into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Keep the requested camera; organize detail around the focal task without adding a kitchen or meal.',
+      atmosphere_and_mood: 'Grounded and companionable, with warmth that does not require company.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Balance small material detail against broad clean shapes; keep the main action easy to read.',
       key_features:
-        'Delicious in Dungeon - Stove-Top Monster Cuisine, functional fantasy cuisine style grammar with warm craft process, ecological fantasy ingredients, communal utility, and cooking glow; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Organic texture, practical detail, warm reflected light, and careful process-like staging give this cel work its grounded quality.',
       creative_brief:
-        'Apply Delicious in Dungeon - Stove-Top Monster Cuisine after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Delicious in Dungeon - Stove-Top Monster Cuisine, functional fantasy cuisine style grammar with warm craft process, ecological fantasy ingredients, communal utility, and cooking glow, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Restyle the requested content with tactile surfaces and clear process-led detail, without introducing ingredients, cooking, or food.',
     },
   },
   {
@@ -99,28 +97,28 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Campfire Cooking in Another World - Merchant Road Stew'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, market corridor, tavern clutter, readable sign, banquet table lock, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, market corridor, tavern clutter, readable sign, banquet table lock, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Campfire Cooking in Another World - Merchant Road Stew acts as a transferable anime-battle/worlds router: Campfire Cooking in Another World - Merchant Road Stew, warm travel-comfort fantasy style grammar with steam glow, generous road-camp calm, rounded hospitality shapes, and food warmth as atmosphere; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Softly glowing cel painting with rounded contours, blended amber light, and a calm warm-to-cool balance.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Campfire Cooking in Another World - Merchant Road Stew, warm travel-comfort fantasy style grammar with steam glow, generous road-camp calm, rounded hospitality shapes, and food warmth as atmosphere as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep the requested subject and gesture; soften transitions and use rounded shape rhythm without adding companions or food.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let Campfire Cooking in Another World - Merchant Road Stew, warm travel-comfort fantasy style grammar with steam glow, generous road-camp calm, rounded hospitality shapes, and food warmth as atmosphere choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Amber, pale cream, and twilight blue create welcoming contrast; adapt the palette when the prompt specifies colors.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Campfire Cooking in Another World - Merchant Road Stew, warm travel-comfort fantasy style grammar with steam glow, generous road-camp calm, rounded hospitality shapes, and food warmth as atmosphere without replacing prompt X with a stock anime frame.',
+        'Gentle warm highlights dissolve into cooler shadows, with atmospheric softness contained around existing forms.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Campfire Cooking in Another World - Merchant Road Stew, warm travel-comfort fantasy style grammar with steam glow, generous road-camp calm, rounded hospitality shapes, and food warmth as atmosphere controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Smooth washes, faint grain, and diffused highlights give a cozy finish while preserving represented materials.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Campfire Cooking in Another World - Merchant Road Stew, warm travel-comfort fantasy style grammar with steam glow, generous road-camp calm, rounded hospitality shapes, and food warmth as atmosphere into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Respect the original viewpoint; use relaxed spacing and broad value flow without introducing an outdoor scene.',
       atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Comforting and generous in tone, without requiring hospitality or a gathering.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Retain clear focal edges inside the soft light; keep gradients smooth and restrained.',
       key_features:
-        'Campfire Cooking in Another World - Merchant Road Stew, warm travel-comfort fantasy style grammar with steam glow, generous road-camp calm, rounded hospitality shapes, and food warmth as atmosphere; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Amber glow, rounded contours, twilight blue, and soft transitions create a calm, welcoming cel atmosphere.',
       creative_brief:
-        'Apply Campfire Cooking in Another World - Merchant Road Stew after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Campfire Cooking in Another World - Merchant Road Stew, warm travel-comfort fantasy style grammar with steam glow, generous road-camp calm, rounded hospitality shapes, and food warmth as atmosphere, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Use warm atmospheric light and gentle cel contours on the requested content without adding a meal, camp, or travel scene.',
     },
   },
   {
@@ -130,28 +128,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Tsukimichi - Moonlit Merchant Wanderer'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, market aisle, merchant stall clutter, readable sign, map, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, market aisle, merchant stall clutter, readable sign, map, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Tsukimichi - Moonlit Merchant Wanderer acts as a transferable anime-battle/worlds router: Tsukimichi - Moonlit Merchant Wanderer, moonlit practical diplomacy fantasy style grammar with restrained violet aura, trade-road poise, dry calm, and one sharp negotiation token; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Spare cel illustration with cool twilight contrast, one restrained violet accent, and economical dry contours.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Tsukimichi - Moonlit Merchant Wanderer, moonlit practical diplomacy fantasy style grammar with restrained violet aura, trade-road poise, dry calm, and one sharp negotiation token as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Retain the requested subject and gesture; use minimal lines and composed shape breaks without adding a token or prop.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let Tsukimichi - Moonlit Merchant Wanderer, moonlit practical diplomacy fantasy style grammar with restrained violet aura, trade-road poise, dry calm, and one sharp negotiation token choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Cool slate, muted blue, and a single violet accent create quiet distinction; preserve specified colors.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Tsukimichi - Moonlit Merchant Wanderer, moonlit practical diplomacy fantasy style grammar with restrained violet aura, trade-road poise, dry calm, and one sharp negotiation token without replacing prompt X with a stock anime frame.',
+        'Low, even light and one narrow highlight keep the image calm and sharply focused.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Tsukimichi - Moonlit Merchant Wanderer, moonlit practical diplomacy fantasy style grammar with restrained violet aura, trade-road poise, dry calm, and one sharp negotiation token controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Dry line accents, smooth restrained fills, and subdued surface texture support a deliberate finish.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Tsukimichi - Moonlit Merchant Wanderer, moonlit practical diplomacy fantasy style grammar with restrained violet aura, trade-road poise, dry calm, and one sharp negotiation token into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Keep the supplied composition; use balanced negative space and composed horizontal rhythm without changing location.',
+      atmosphere_and_mood: 'Wry, poised, and quiet, with tone set by the subject.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Keep detail sparse, focal edges exact, and accents few enough to retain their weight.',
       key_features:
-        'Tsukimichi - Moonlit Merchant Wanderer, moonlit practical diplomacy fantasy style grammar with restrained violet aura, trade-road poise, dry calm, and one sharp negotiation token; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Restrained violet, dry precision, composed spacing, and cool shadow values define its understated character.',
       creative_brief:
-        'Apply Tsukimichi - Moonlit Merchant Wanderer after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tsukimichi - Moonlit Merchant Wanderer, moonlit practical diplomacy fantasy style grammar with restrained violet aura, trade-road poise, dry calm, and one sharp negotiation token, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Use the economical line, cool values, and single accent on the requested scene without adding trade, travel, or moon imagery.',
     },
   },
   {
@@ -161,28 +158,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Handyman Saitou in Another World - Toolbox Party Quest'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, toolbox pile, workshop table lock, weapon, readable label, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, toolbox pile, workshop table lock, weapon, readable label, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Handyman Saitou in Another World - Toolbox Party Quest acts as a transferable anime-battle/worlds router: Handyman Saitou in Another World - Toolbox Party Quest, utility craft party-quest style grammar with competent hands, small functional craft, warm tool-metal accents, and humble support energy; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Practical cel drawing with precise small details, grounded proportions, warm metallic glints, and modest scale.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Handyman Saitou in Another World - Toolbox Party Quest, utility craft party-quest style grammar with competent hands, small functional craft, warm tool-metal accents, and humble support energy as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Preserve the requested subject and task; use fine working lines to clarify existing structure without adding tools or hands.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let Handyman Saitou in Another World - Toolbox Party Quest, utility craft party-quest style grammar with competent hands, small functional craft, warm tool-metal accents, and humble support energy choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Warm brass notes and muted earth colors sit against clean neutral values; adapt to supplied colors.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Handyman Saitou in Another World - Toolbox Party Quest, utility craft party-quest style grammar with competent hands, small functional craft, warm tool-metal accents, and humble support energy without replacing prompt X with a stock anime frame.',
+        'Localized reflected highlights pick out small forms while broad shadows remain calm and readable.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Handyman Saitou in Another World - Toolbox Party Quest, utility craft party-quest style grammar with competent hands, small functional craft, warm tool-metal accents, and humble support energy controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Fine contour detail, subtle material grain, and small metallic accents preserve the depicted surfaces.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Handyman Saitou in Another World - Toolbox Party Quest, utility craft party-quest style grammar with competent hands, small functional craft, warm tool-metal accents, and humble support energy into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Respect the requested framing; organize detail around its focal task without making the scene a workshop.',
+      atmosphere_and_mood: 'Humble and capable, with no required helper or adventure narrative.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Keep the focal structure crisp and small details useful rather than decorative.',
       key_features:
-        'Handyman Saitou in Another World - Toolbox Party Quest, utility craft party-quest style grammar with competent hands, small functional craft, warm tool-metal accents, and humble support energy; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Precise working lines, modest scale, warm metal accents, and clear structure convey practical care.',
       creative_brief:
-        'Apply Handyman Saitou in Another World - Toolbox Party Quest after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Handyman Saitou in Another World - Toolbox Party Quest, utility craft party-quest style grammar with competent hands, small functional craft, warm tool-metal accents, and humble support energy, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Give the requested content a careful, functional drawing finish without adding tools, workshops, or a fantasy party.',
     },
   },
   {
@@ -192,28 +188,28 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Ranking of Kings - Storybook Crown Courage'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, child-copy design, castle hallway, royal portrait, readable emblem, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, child-copy design, castle hallway, royal portrait, readable emblem, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Ranking of Kings - Storybook Crown Courage acts as a transferable anime-battle/worlds router: Ranking of Kings - Storybook Crown Courage, storybook courage fantasy style grammar with soft scale, simple crown motif, moral warmth, vulnerable bravery, and clear fable shapes; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Fable-like cel painting with simplified clear forms, warm emotional color, and soft, vulnerable silhouettes.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Ranking of Kings - Storybook Crown Courage, storybook courage fantasy style grammar with soft scale, simple crown motif, moral warmth, vulnerable bravery as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep the requested subject and action; use rounded forms and spare contours without changing its age or identity.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let Ranking of Kings - Storybook Crown Courage, storybook courage fantasy style grammar with soft scale, simple crown motif, moral warmth, vulnerable bravery choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Warm ochre, soft coral, and gentle blue-green shadows create human warmth; respect specified colors.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Ranking of Kings - Storybook Crown Courage, storybook courage fantasy style grammar with soft scale, simple crown motif, moral warmth, vulnerable bravery without replacing prompt X with a stock anime frame.',
+        'Soft broad light and gentle shadow keep the forms open, with no heroic spotlight.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Ranking of Kings - Storybook Crown Courage, storybook courage fantasy style grammar with soft scale, simple crown motif, moral warmth, vulnerable bravery controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Use smooth painted fills, faint pigment texture, and clean value grouping for an approachable finish.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Ranking of Kings - Storybook Crown Courage, storybook courage fantasy style grammar with soft scale, simple crown motif, moral warmth, vulnerable bravery into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Keep the original composition; clarify focal scale and spacing through simple forms rather than a storybook scene.',
       atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Tender and quietly brave, while the prompt determines what is happening.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Use simple silhouettes and restrained detail; keep the softness without losing structure.',
       key_features:
-        'Ranking of Kings - Storybook Crown Courage, storybook courage fantasy style grammar with soft scale, simple crown motif, moral warmth, vulnerable bravery; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Clear fable shapes, soft scale, warm value grouping, and vulnerable contour create an earnest, readable image.',
       creative_brief:
-        'Apply Ranking of Kings - Storybook Crown Courage after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ranking of Kings - Storybook Crown Courage, storybook courage fantasy style grammar with soft scale, simple crown motif, moral warmth, vulnerable bravery, and clear fable shapes, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Restyle the requested subject through simple fable-like shapes and warm cel color without adding a crown, royal setting, or quest.',
     },
   },
   {
@@ -223,28 +219,28 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Princess Connect! Re:Dive - Banquet Quest Pastel'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, banquet-table lock, food spread as only subject, idol group pose, readable sign, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, banquet-table lock, food spread as only subject, idol group pose, readable sign, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Princess Connect! Re:Dive - Banquet Quest Pastel acts as a transferable anime-battle/worlds router: Princess Connect! Re:Dive - Banquet Quest Pastel, pastel companion quest style grammar with candy-clean light, shared joy, soft abundance, and camaraderie color; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Pastel cel illustration with candy-clean color, crisp soft-edged silhouettes, and smooth, luminous highlights.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Princess Connect! Re:Dive - Banquet Quest Pastel, pastel companion quest style grammar with candy-clean light, shared joy, soft abundance, and camaraderie color as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Preserve the requested forms and gesture; keep outlines clear while softening internal transitions.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let Princess Connect! Re:Dive - Banquet Quest Pastel, pastel companion quest style grammar with candy-clean light, shared joy, soft abundance, and camaraderie color choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Mint, blush, lilac, and buttery cream create a bright pastel range, yielding to requested colors.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Princess Connect! Re:Dive - Banquet Quest Pastel, pastel companion quest style grammar with candy-clean light, shared joy, soft abundance, and camaraderie color without replacing prompt X with a stock anime frame.',
+        'Broad, clean light and gentle bloom keep color vivid without adding a banquet or group scene.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Princess Connect! Re:Dive - Banquet Quest Pastel, pastel companion quest style grammar with candy-clean light, shared joy, soft abundance, and camaraderie color controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Smooth cel fills, satin-like glints, and minimal grain maintain a polished, airy finish.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Princess Connect! Re:Dive - Banquet Quest Pastel, pastel companion quest style grammar with candy-clean light, shared joy, soft abundance, and camaraderie color into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Keep the requested framing; balance broad color areas with clear spacing and readable shape groups.',
       atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        "Joyful and abundant in color, but responsive to the prompt's actual mood.",
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Maintain bright color separation, clean contours, and soft highlights without flattening form.',
       key_features:
-        'Princess Connect! Re:Dive - Banquet Quest Pastel, pastel companion quest style grammar with candy-clean light, shared joy, soft abundance, and camaraderie color; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Candy-clean pastels, polished light, simple contours, and soft color abundance give this finish its distinct brightness.',
       creative_brief:
-        'Apply Princess Connect! Re:Dive - Banquet Quest Pastel after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Princess Connect! Re:Dive - Banquet Quest Pastel, pastel companion quest style grammar with candy-clean light, shared joy, soft abundance, and camaraderie color, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Apply the bright pastel cel finish to the requested content without adding companions, food, or a celebratory scene.',
     },
   },
   {
@@ -252,28 +248,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sword Art Online – Glowing VR Adventure',
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named VR franchise likeness, readable HUD, UI panels, icons, swords, game menu, logo, character costume copy, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named VR franchise likeness, readable HUD, UI panels, icons, swords, game menu, logo, character costume copy, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, muddy noisy darks',
     style: {
       aesthetic:
-        'Sword Art Online – Glowing VR Adventure acts as a transferable anime-battle/worlds router: Sword Art Online – Glowing VR Adventure, glowing virtual-fantasy style grammar with crystalline portal depth, cyan atmosphere, soft romantic scale, and tactile digital light; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Airy digital cel painting built from crisp crystalline edges, translucent color planes, and soft cyan depth.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Sword Art Online – Glowing VR Adventure, glowing virtual-fantasy style grammar with crystalline portal depth, cyan atmosphere, soft romantic scale, and tactile digital light as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep the requested forms and action; define silhouettes with clean tapered contours, gentle edge bloom, and selective facet highlights.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let Sword Art Online – Glowing VR Adventure, glowing virtual-fantasy style grammar with crystalline portal depth, cyan atmosphere, soft romantic scale, and tactile digital light choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Favor cyan, ice blue, and pearl with a small blush accent, adapting saturation when the prompt supplies a palette.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Sword Art Online – Glowing VR Adventure, glowing virtual-fantasy style grammar with crystalline portal depth, cyan atmosphere, soft romantic scale, and tactile digital light without replacing prompt X with a stock anime frame.',
+        'Broad cool ambient light holds the planes together, with crisp refraction-like highlights and restrained bloom.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Sword Art Online – Glowing VR Adventure, glowing virtual-fantasy style grammar with crystalline portal depth, cyan atmosphere, soft romantic scale, and tactile digital light controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Blend smooth digital gradients with pinpoint glossy marks while preserving the represented material instead of turning it to glass.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Sword Art Online – Glowing VR Adventure, glowing virtual-fantasy style grammar with crystalline portal depth, cyan atmosphere, soft romantic scale, and tactile digital light into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Retain the requested framing; suggest depth through clear overlapping planes, open spacing, and calm perspective.',
+      atmosphere_and_mood: 'Luminous, tender, and spacious; follow the requested emotional tone.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Clean cel edges, soft transitions, sharp glints, and controlled glow keep forms legible.',
       key_features:
-        'Sword Art Online – Glowing VR Adventure, glowing virtual-fantasy style grammar with crystalline portal depth, cyan atmosphere, soft romantic scale, and tactile digital light; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Crystalline edge breaks, cyan depth, pearl highlights, and gentle romantic spacing over polished cel forms.',
       creative_brief:
-        'Apply Sword Art Online – Glowing VR Adventure after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sword Art Online – Glowing VR Adventure, glowing virtual-fantasy style grammar with crystalline portal depth, cyan atmosphere, soft romantic scale, and tactile digital light, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Keep the requested subject, action, and place intact; restyle them with translucent planes, crystalline highlights, cyan depth, and quiet romantic softness.',
     },
   },
   {
@@ -281,28 +276,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Re:Zero – Reset-Loop Dark Fantasy',
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named character, mansion/market location, death scene, gore, maid/cat-ear costume cue, franchise color pairing, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named character, mansion/market location, death scene, gore, maid/cat-ear costume cue, franchise color pairing, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Re:Zero – Reset-Loop Dark Fantasy acts as a transferable anime-battle/worlds router: Re:Zero – Reset-Loop Dark Fantasy, reset-loop dark fantasy style grammar with violet-silver spiral pressure, fragile relic ribbons, repeated light echoes, and ornate dread; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Ornate dark cel illustration shaped by looping contours, repeated light echoes, and fragile decorative accents.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Re:Zero – Reset-Loop Dark Fantasy, reset-loop dark fantasy style grammar with violet-silver spiral pressure, fragile relic ribbons, repeated light echoes, and ornate dread as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Retain the requested subject and gesture; let fine curling lines echo around existing forms without duplicating them.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let Re:Zero – Reset-Loop Dark Fantasy, reset-loop dark fantasy style grammar with violet-silver spiral pressure, fragile relic ribbons, repeated light echoes, and ornate dread choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Violet, slate, and silver organize deep values, with pale echoes kept delicate and any explicit colors respected.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Re:Zero – Reset-Loop Dark Fantasy, reset-loop dark fantasy style grammar with violet-silver spiral pressure, fragile relic ribbons, repeated light echoes, and ornate dread without replacing prompt X with a stock anime frame.',
+        'Narrow silver rims and faint repeated glints lift shadowed planes without introducing a new light source.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Re:Zero – Reset-Loop Dark Fantasy, reset-loop dark fantasy style grammar with violet-silver spiral pressure, fragile relic ribbons, repeated light echoes, and ornate dread controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Ribbon-fine brush lines, subtle grain, and translucent washes give surfaces a fragile, carefully layered finish.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Re:Zero – Reset-Loop Dark Fantasy, reset-loop dark fantasy style grammar with violet-silver spiral pressure, fragile relic ribbons, repeated light echoes, and ornate dread into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Hold the requested camera; nested curves and repeated spacing guide the eye without creating a spiral scene.',
       atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Subdued and ornate, with unease only when the requested subject calls for it.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Keep focal contours crisp against softly lost edges, measured grain, and restrained highlight repetition.',
       key_features:
-        'Re:Zero – Reset-Loop Dark Fantasy, reset-loop dark fantasy style grammar with violet-silver spiral pressure, fragile relic ribbons, repeated light echoes, and ornate dread; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Violet-silver echo, fine looping linework, ornate contours, and fragile transitions from light into shadow.',
       creative_brief:
-        'Apply Re:Zero – Reset-Loop Dark Fantasy after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Re:Zero – Reset-Loop Dark Fantasy, reset-loop dark fantasy style grammar with violet-silver spiral pressure, fragile relic ribbons, repeated light echoes, and ornate dread, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Apply the dark ornamental line and value language to the requested content while leaving its scene, action, and objects unchanged.',
     },
   },
   {
@@ -310,28 +305,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mushoku Tensei – Wandering Mage Chronicle',
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, readable map labels, staff-wielding protagonist, school uniform, harem cue, road party, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, readable map labels, staff-wielding protagonist, school uniform, harem cue, road party, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Mushoku Tensei – Wandering Mage Chronicle acts as a transferable anime-battle/worlds router: Mushoku Tensei – Wandering Mage Chronicle, wandering mage chronicle style grammar with weathered travel relic, mana contour lines, parchment grain, and open sky curiosity; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Hand-painted cel work with dry contour accents, weathered pigment grain, and spacious atmospheric washes.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Mushoku Tensei – Wandering Mage Chronicle, wandering mage chronicle style grammar with weathered travel relic, mana contour lines, parchment grain, and open sky curiosity as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Preserve the requested forms and action; use lightly worn outlines and spare contour lines to clarify shape.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let Mushoku Tensei – Wandering Mage Chronicle, wandering mage chronicle style grammar with weathered travel relic, mana contour lines, parchment grain, and open sky curiosity choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Earthy sepia, moss, and ink blue sit beneath open pale values; adapt them to explicit color direction.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Mushoku Tensei – Wandering Mage Chronicle, wandering mage chronicle style grammar with weathered travel relic, mana contour lines, parchment grain, and open sky curiosity without replacing prompt X with a stock anime frame.',
+        'Diffused light opens the image through broad value shifts while respecting the depicted lighting.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Mushoku Tensei – Wandering Mage Chronicle, wandering mage chronicle style grammar with weathered travel relic, mana contour lines, parchment grain, and open sky curiosity controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Dry pigment breaks, paperlike grain, and transparent wash edges texture the rendering, not the depicted objects.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Mushoku Tensei – Wandering Mage Chronicle, wandering mage chronicle style grammar with weathered travel relic, mana contour lines, parchment grain, and open sky curiosity into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Keep the supplied composition; use airy depth and uncluttered value layers to give its forms breathing room.',
       atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Curious, reflective, and quietly expansive, adjustable to the requested mood.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Soft painted planes and selective dry lines keep detail natural, tactile, and readable.',
       key_features:
-        'Mushoku Tensei – Wandering Mage Chronicle, wandering mage chronicle style grammar with weathered travel relic, mana contour lines, parchment grain, and open sky curiosity; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Weathered contour, fine grain, earthy washes, and open value separation give the cel image a traveled feel.',
       creative_brief:
-        'Apply Mushoku Tensei – Wandering Mage Chronicle after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mushoku Tensei – Wandering Mage Chronicle, wandering mage chronicle style grammar with weathered travel relic, mana contour lines, parchment grain, and open sky curiosity, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Translate the requested content through dry ink contours, fine grain, earthy washes, and open tonal depth, without adding travel or spell props.',
     },
   },
   {
@@ -339,28 +334,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Konosuba – Party-Quest Comedy',
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, fixed group, tavern, readable sign, lewd gag, canon costume, franchise party likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, fixed group, tavern, readable sign, lewd gag, canon costume, franchise party likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Konosuba – Party-Quest Comedy acts as a transferable anime-battle/worlds router: Konosuba – Party-Quest Comedy, party-quest comedy style grammar with bright anticlimax magic burst, elastic prop fragments, cheerful fantasy color, and comic timing; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Playful cel drawing with elastic contours, punchy shape breaks, and an anticlimactic burst-and-pause rhythm.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Konosuba – Party-Quest Comedy, party-quest comedy style grammar with bright anticlimax magic burst, elastic prop fragments, cheerful fantasy color, and comic timing as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep the requested action intact; use springy line accents and compressed-to-open shapes only around motion already present.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let Konosuba – Party-Quest Comedy, party-quest comedy style grammar with bright anticlimax magic burst, elastic prop fragments, cheerful fantasy color, and comic timing choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Cheerful yellow, coral, and aqua accents pop against clear midtones, while yielding to any specified palette.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Konosuba – Party-Quest Comedy, party-quest comedy style grammar with bright anticlimax magic burst, elastic prop fragments, cheerful fantasy color, and comic timing without replacing prompt X with a stock anime frame.',
+        'Use bright local highlights and quick value changes for lively emphasis, not a new burst or event.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Konosuba – Party-Quest Comedy, party-quest comedy style grammar with bright anticlimax magic burst, elastic prop fragments, cheerful fantasy color, and comic timing controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Favor smooth cel fills, brisk brush flicks, and crisp broken edges without turning surfaces into props.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Konosuba – Party-Quest Comedy, party-quest comedy style grammar with bright anticlimax magic burst, elastic prop fragments, cheerful fantasy color, and comic timing into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Preserve framing; place visual emphasis in uneven intervals and offbeat diagonals around the existing focal point.',
       atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Light, dry, and comic in timing, but let the prompt set the actual emotional register.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Keep forms simple and readable, with sharp accents, clean flats, and no excess effects.',
       key_features:
-        'Konosuba – Party-Quest Comedy, party-quest comedy style grammar with bright anticlimax magic burst, elastic prop fragments, cheerful fantasy color, and comic timing; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Springy contour, cheerful accents, clipped emphasis, and a quick pause after visual impact.',
       creative_brief:
-        'Apply Konosuba – Party-Quest Comedy after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Konosuba – Party-Quest Comedy, party-quest comedy style grammar with bright anticlimax magic burst, elastic prop fragments, cheerful fantasy color, and comic timing, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Restyle the requested scene with lively cel contours and playful color timing; do not invent a gag, action, character, or prop.',
     },
   },
   {
@@ -368,28 +363,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Slime Isekai – Monster-Nation Bright Fantasy',
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, required slime creature, banners with symbols, kingdom crowd, named ruler likeness, franchise species cue, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, required slime creature, banners with symbols, kingdom crowd, named ruler likeness, franchise species cue, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Slime Isekai – Monster-Nation Bright Fantasy acts as a transferable anime-battle/worlds router: Slime Isekai – Monster-Nation Bright Fantasy, optimistic civic fantasy style grammar with rounded growth motifs, gel-like blue accents, clean timber/stone harmony, and cooperative brightness; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Bright cel illustration with rounded silhouettes, simplified volume, and a clean, cooperative balance of warm and cool color.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Slime Isekai – Monster-Nation Bright Fantasy, optimistic civic fantasy style grammar with rounded growth motifs, gel-like blue accents, clean timber/stone harmony, and cooperative brightness as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Retain the requested forms and action; round transitions and group details into readable, friendly shapes.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let Slime Isekai – Monster-Nation Bright Fantasy, optimistic civic fantasy style grammar with rounded growth motifs, gel-like blue accents, clean timber/stone harmony, and cooperative brightness choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Clear blue accents pair with warm cream and softened earth tones; adapt the mix to specified colors.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Slime Isekai – Monster-Nation Bright Fantasy, optimistic civic fantasy style grammar with rounded growth motifs, gel-like blue accents, clean timber/stone harmony, and cooperative brightness without replacing prompt X with a stock anime frame.',
+        'Even diffuse light keeps forms open, with soft highlights that gently describe rounded volume.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Slime Isekai – Monster-Nation Bright Fantasy, optimistic civic fantasy style grammar with rounded growth motifs, gel-like blue accents, clean timber/stone harmony, and cooperative brightness controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Smooth cel shading and lightly satin highlights simplify surfaces while preserving their original material identity.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Slime Isekai – Monster-Nation Bright Fantasy, optimistic civic fantasy style grammar with rounded growth motifs, gel-like blue accents, clean timber/stone harmony, and cooperative brightness into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Respect the requested framing; use repeated rounded shapes and clear spacing to keep the focal area uncluttered.',
       atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Optimistic and generous in tone, without requiring a group or civic scene.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Use stable silhouettes, soft shadow edges, and clean color blocking with little surface noise.',
       key_features:
-        'Slime Isekai – Monster-Nation Bright Fantasy, optimistic civic fantasy style grammar with rounded growth motifs, gel-like blue accents, clean timber/stone harmony, and cooperative brightness; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Rounded form, clear blue accents, warm-cool harmony, and uncluttered cel shading give the image an easy brightness.',
       creative_brief:
-        'Apply Slime Isekai – Monster-Nation Bright Fantasy after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Slime Isekai – Monster-Nation Bright Fantasy, optimistic civic fantasy style grammar with rounded growth motifs, gel-like blue accents, clean timber/stone harmony, and cooperative brightness, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Keep the requested subject, action, and location; lend them rounded forms and cooperative color balance without adding a fantasy community.',
     },
   },
   {
@@ -397,28 +392,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'DanMachi – Dungeon Lantern Adventure',
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, dungeon corridor, lantern-as-only-prop, generic corridor adventurer, goddess/canon costume, monster, weapon, hallway perspective, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, dungeon corridor, lantern-as-only-prop, generic corridor adventurer, goddess/canon costume, monster, weapon, hallway perspective, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'DanMachi – Dungeon Lantern Adventure acts as a transferable anime-battle/worlds router: DanMachi – Dungeon Lantern Adventure, luminous ascent fantasy style grammar with warm crystal well, vertical mineral depth, hopeful glow, and mythic smallness; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Luminous cel painting built from vertical mineral-like planes, warm points of light, and layered depth.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply DanMachi – Dungeon Lantern Adventure, luminous ascent fantasy style grammar with warm crystal well, vertical mineral depth, hopeful glow, and mythic smallness as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Preserve the requested subject and gesture; articulate form with tall facet-like value shifts and small precise details.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let DanMachi – Dungeon Lantern Adventure, luminous ascent fantasy style grammar with warm crystal well, vertical mineral depth, hopeful glow, and mythic smallness choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Pair amber and pale gold with cool teal shadows; let a supplied palette take precedence.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from DanMachi – Dungeon Lantern Adventure, luminous ascent fantasy style grammar with warm crystal well, vertical mineral depth, hopeful glow, and mythic smallness without replacing prompt X with a stock anime frame.',
+        'Warm localized highlights sit against cooler ambient values, with glow kept soft and contained.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in DanMachi – Dungeon Lantern Adventure, luminous ascent fantasy style grammar with warm crystal well, vertical mineral depth, hopeful glow, and mythic smallness controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Use crisp faceted accents, subtle grain, and smooth color transitions while keeping the depicted materials intact.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert DanMachi – Dungeon Lantern Adventure, luminous ascent fantasy style grammar with warm crystal well, vertical mineral depth, hopeful glow, and mythic smallness into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Keep the requested framing; build depth through stacked vertical shapes and shifts of scale already present.',
+      atmosphere_and_mood: 'Hopeful and humble in mood, with no required adventure or setting.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Maintain clean cel edges, layered distance, and readable contrast without excessive bloom.',
       key_features:
-        'DanMachi – Dungeon Lantern Adventure, luminous ascent fantasy style grammar with warm crystal well, vertical mineral depth, hopeful glow, and mythic smallness; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Vertical depth, mineral facets, amber highlights, and cool shadow color make the composition feel quietly luminous.',
       creative_brief:
-        'Apply DanMachi – Dungeon Lantern Adventure after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies DanMachi – Dungeon Lantern Adventure, luminous ascent fantasy style grammar with warm crystal well, vertical mineral depth, hopeful glow, and mythic smallness, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Give the requested content a vertically layered, warmly lit cel finish; do not add a crystal cavern or fixed fantasy scene.',
     },
   },
   {
@@ -428,28 +422,28 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Systemic Cooperation Grid Style'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Systemic Cooperation Grid Style acts as a transferable anime-battle/worlds router: Systemic Cooperation Grid Style; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Precision cel illustration with modular alignment, repeated intervals, and a clear hierarchy of graphic accents.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Systemic Cooperation Grid Style as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep the requested subject and action; use measured internal spacing and grouped contour marks rather than adding symbols.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let Systemic Cooperation Grid Style choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Indigo, muted gold, and small cyan notes create crisp contrast, subject to the requested palette.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Systemic Cooperation Grid Style without replacing prompt X with a stock anime frame.',
+        'Bright accents sit cleanly against broader cool shadows, with no implied interface or light source.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Systemic Cooperation Grid Style controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Smooth fills and exact line breaks create a precise finish; retain each depicted material.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Systemic Cooperation Grid Style into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Preserve the requested composition; use alignment and spacing as drawing rhythm, never as a literal map.',
       atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Orderly and collaborative in feeling, while the requested subject sets the actual story.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Keep graphic marks sparse and balanced, with stable forms and clear focal priority.',
       key_features:
-        'Systemic Cooperation Grid Style; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Modular spacing, crisp groupings, measured line breaks, and restrained luminous accents give the drawing systemic order.',
       creative_brief:
-        'Apply Systemic Cooperation Grid Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Systemic Cooperation Grid Style, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Use precise intervals and grouped visual emphasis to restyle the requested content; add no board, map, route, or interface.',
     },
   },
   {
@@ -459,28 +453,28 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Smoke-Mud Vulnerability Style'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Smoke-Mud Vulnerability Style acts as a transferable anime-battle/worlds router: Smoke-Mud Vulnerability Style; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Atmospheric cel painting with softened edges, layered low contrast, and rough, earth-toned brush texture.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Smoke-Mud Vulnerability Style as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Retain the requested forms and action; let secondary contours blur slightly while focal edges stay clear.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let Smoke-Mud Vulnerability Style choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Muted clay, olive, charcoal, and dusk blue create a subdued range; adapt to explicit palette choices.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Smoke-Mud Vulnerability Style without replacing prompt X with a stock anime frame.',
+        'Diffuse side light and broad shadows create gentle separation without inventing haze or a new light source.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Smoke-Mud Vulnerability Style controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Smudged pigment, soft streaks, and uneven grain give the image a vulnerable, tactile finish.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Smoke-Mud Vulnerability Style into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Honor the given viewpoint; use edge softness and tonal layering to separate existing planes.',
       atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Quiet and exposed, with vulnerability expressed through contrast rather than added narrative.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Keep the focal subject legible against loosely painted surroundings; avoid muddy detail.',
       key_features:
-        'Smoke-Mud Vulnerability Style; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Earthy color, brushed softness, diffused contrast, and selectively lost edges create a gentle, vulnerable mood.',
       creative_brief:
-        'Apply Smoke-Mud Vulnerability Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Smoke-Mud Vulnerability Style, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Carry the requested subject and place through muted, tactile color and softened brush edges without adding smoke, mud, or a fantasy landscape.',
     },
   },
   {
@@ -490,28 +484,28 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Classic OVA Quest Tapestry Style'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, fixed ensemble lineup, weapon near-plane, readable banner, castle hallway lock, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, fixed ensemble lineup, weapon near-plane, readable banner, castle hallway lock, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Classic OVA Quest Tapestry Style acts as a transferable anime-battle/worlds router: Classic OVA Quest Tapestry Style, classic OVA quest tapestry style grammar with noble color blocks, painted epic light, and aged cel-fantasy depth; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Classic cel-painted illustration with confident color blocks, luminous directional paint, and subtle aged-film grain.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Classic OVA Quest Tapestry Style, classic OVA quest tapestry style grammar with noble color blocks, painted epic light, and aged cel-fantasy depth as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        "Preserve the prompt's subject and action; clarify their silhouettes through decisive contour and broad shape design.",
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let Classic OVA Quest Tapestry Style, classic OVA quest tapestry style grammar with noble color blocks, painted epic light, and aged cel-fantasy depth choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Use noble, balanced color blocks with warm highlights and cool shadows, yielding to named palette constraints.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Classic OVA Quest Tapestry Style, classic OVA quest tapestry style grammar with noble color blocks, painted epic light, and aged cel-fantasy depth without replacing prompt X with a stock anime frame.',
+        'Painted directional light gives each plane weight; keep its direction consistent with the requested scene.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Classic OVA Quest Tapestry Style, classic OVA quest tapestry style grammar with noble color blocks, painted epic light, and aged cel-fantasy depth controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Combine smooth cel fills with fine analog grain and softly worn color edges.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Classic OVA Quest Tapestry Style, classic OVA quest tapestry style grammar with noble color blocks, painted epic light, and aged cel-fantasy depth into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Keep the supplied framing; separate foreground and distance with layered color planes, not a tapestry layout.',
       atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        "Cinematic and earnest, yet responsive to the prompt's emotional register.",
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Use crisp contour, broad controlled shading, and restrained film grain for an aged but clean finish.',
       key_features:
-        'Classic OVA Quest Tapestry Style, classic OVA quest tapestry style grammar with noble color blocks, painted epic light, and aged cel-fantasy depth; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Bold color grouping, painted epic light, layered depth, and a gentle aged-cel texture define the image.',
       creative_brief:
-        'Apply Classic OVA Quest Tapestry Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Classic OVA Quest Tapestry Style, classic OVA quest tapestry style grammar with noble color blocks, painted epic light, and aged cel-fantasy depth, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Apply classic painted-cel color, directional light, and layered depth to the requested content without imposing a quest or fantasy scene.',
     },
   },
   {
@@ -521,28 +515,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['The Twelve Kingdoms - Imperial Destiny Chronicle'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, imperial costume copy, throne-room lock, weapon, readable insignia, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, imperial costume copy, throne-room lock, weapon, readable insignia, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'The Twelve Kingdoms - Imperial Destiny Chronicle acts as a transferable anime-battle/worlds router: The Twelve Kingdoms - Imperial Destiny Chronicle, jade-cinnabar ritual authority style grammar with solemn vertical protocol, court textile geometry, and ceremonial calm; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Formal cel illustration shaped by tall visual rhythms, textile-inspired repeats, and carefully balanced ornament.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply The Twelve Kingdoms - Imperial Destiny Chronicle, jade-cinnabar ritual authority style grammar with solemn vertical protocol, court textile geometry, and ceremonial calm as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep the requested subject and gesture; use measured outlines and repeating internal marks without adding ceremonial dress.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let The Twelve Kingdoms - Imperial Destiny Chronicle, jade-cinnabar ritual authority style grammar with solemn vertical protocol, court textile geometry, and ceremonial calm choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Muted indigo, parchment, and restrained cinnabar or gold create composed contrast; honor specified colors.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from The Twelve Kingdoms - Imperial Destiny Chronicle, jade-cinnabar ritual authority style grammar with solemn vertical protocol, court textile geometry, and ceremonial calm without replacing prompt X with a stock anime frame.',
+        'Even, deliberate light reveals the main planes; small highlights keep ornamental details clear.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in The Twelve Kingdoms - Imperial Destiny Chronicle, jade-cinnabar ritual authority style grammar with solemn vertical protocol, court textile geometry, and ceremonial calm controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Fine repeated strokes and restrained fabric-like texture function as surface treatment, not as a material change.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert The Twelve Kingdoms - Imperial Destiny Chronicle, jade-cinnabar ritual authority style grammar with solemn vertical protocol, court textile geometry, and ceremonial calm into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Preserve the requested framing; use vertical spacing and visual symmetry without adding a court or formal scene.',
+      atmosphere_and_mood: 'Solemn and poised, with no imposed ritual or destiny.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Keep ornament sparse, edge control clean, and detail scale consistent across the image.',
       key_features:
-        'The Twelve Kingdoms - Imperial Destiny Chronicle, jade-cinnabar ritual authority style grammar with solemn vertical protocol, court textile geometry, and ceremonial calm; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Tall rhythm, textile-like line repeats, measured symmetry, and composed color give the cel work a formal calm.',
       creative_brief:
-        'Apply The Twelve Kingdoms - Imperial Destiny Chronicle after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies The Twelve Kingdoms - Imperial Destiny Chronicle, jade-cinnabar ritual authority style grammar with solemn vertical protocol, court textile geometry, and ceremonial calm, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Give the requested content a tall, ornamental visual rhythm and controlled cel finish, without court, costume, or ceremony.',
     },
   },
   {
@@ -552,28 +545,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['The Vision of Escaflowne - Windblown Tarot Fantasy'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, tarot card, mecha copy, weapon-first pose, readable symbol, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, tarot card, mecha copy, weapon-first pose, readable symbol, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'The Vision of Escaflowne - Windblown Tarot Fantasy acts as a transferable anime-battle/worlds router: The Vision of Escaflowne - Windblown Tarot Fantasy, windblown prophecy romance style grammar with carmine sky, angular destiny shapes, and emotional forward motion; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Dynamic painted cel language with sharp angular shapes, carmine accents, and fast directional linework.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply The Vision of Escaflowne - Windblown Tarot Fantasy, windblown prophecy romance style grammar with carmine sky, angular destiny shapes, and emotional forward motion as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Preserve the requested action; let contours follow its existing motion, using sharp turns and tapered strokes.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let The Vision of Escaflowne - Windblown Tarot Fantasy, windblown prophecy romance style grammar with carmine sky, angular destiny shapes, and emotional forward motion choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Carmine and warm red marks cut through cool blue-gray values; retain any explicit palette.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from The Vision of Escaflowne - Windblown Tarot Fantasy, windblown prophecy romance style grammar with carmine sky, angular destiny shapes, and emotional forward motion without replacing prompt X with a stock anime frame.',
+        'Directional edge light and crisp shadow breaks strengthen existing movement without creating a new event.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in The Vision of Escaflowne - Windblown Tarot Fantasy, windblown prophecy romance style grammar with carmine sky, angular destiny shapes, and emotional forward motion controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Smooth painted fills with narrow dry-brush accents give surfaces energy without changing their material.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert The Vision of Escaflowne - Windblown Tarot Fantasy, windblown prophecy romance style grammar with carmine sky, angular destiny shapes, and emotional forward motion into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Keep the requested camera; use angled overlaps and directional emphasis inside the existing frame.',
+      atmosphere_and_mood: 'Emotionally forward and dramatic, with intensity tuned to the prompt.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Hold silhouettes clear through crisp edges, controlled contrast, and a few tapered marks.',
       key_features:
-        'The Vision of Escaflowne - Windblown Tarot Fantasy, windblown prophecy romance style grammar with carmine sky, angular destiny shapes, and emotional forward motion; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Carmine accents, angular contour, slanted spacing, and quick light shifts create a forceful sense of motion.',
       creative_brief:
-        'Apply The Vision of Escaflowne - Windblown Tarot Fantasy after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies The Vision of Escaflowne - Windblown Tarot Fantasy, windblown prophecy romance style grammar with carmine sky, angular destiny shapes, and emotional forward motion, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Restyle the requested scene through angular cel drawing and carmine motion accents; keep its location and action as specified.',
     },
   },
   {
@@ -583,28 +575,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Magi - Labyrinth Jewel Caravan'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, market aisle, caravan clutter, labyrinth corridor, readable sign, map, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, market aisle, caravan clutter, labyrinth corridor, readable sign, map, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Magi - Labyrinth Jewel Caravan acts as a transferable anime-battle/worlds router: Magi - Labyrinth Jewel Caravan, amber-turquoise arabesque adventure style grammar with jewel ornament, warm desert rhythm, and curved route energy; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Ornamented cel painting led by jewel color, warm curved contours, and smooth, flowing visual spacing.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Magi - Labyrinth Jewel Caravan, amber-turquoise arabesque adventure style grammar with jewel ornament, warm desert rhythm, and curved route energy as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Retain the requested forms and movement; use elegant arcs and small decorative line rhythms within existing shapes.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let Magi - Labyrinth Jewel Caravan, amber-turquoise arabesque adventure style grammar with jewel ornament, warm desert rhythm, and curved route energy choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Jewel blue, turquoise, and amber create a warm-cool balance without mandating a desert palette.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Magi - Labyrinth Jewel Caravan, amber-turquoise arabesque adventure style grammar with jewel ornament, warm desert rhythm, and curved route energy without replacing prompt X with a stock anime frame.',
+        'Soft warm light rolls across curved planes, with sharp jewel-like points kept sparse.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Magi - Labyrinth Jewel Caravan, amber-turquoise arabesque adventure style grammar with jewel ornament, warm desert rhythm, and curved route energy controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Layer smooth painted color with fine ornamental strokes; do not change the depicted materials.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Magi - Labyrinth Jewel Caravan, amber-turquoise arabesque adventure style grammar with jewel ornament, warm desert rhythm, and curved route energy into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Preserve the requested composition; use curved transitions and flowing spacing without adding a route or landscape.',
+      atmosphere_and_mood: 'Graceful and warm, with energy matched to the requested subject.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Keep color rich but controlled, and let delicate line detail sit over clear cel shapes.',
       key_features:
-        'Magi - Labyrinth Jewel Caravan, amber-turquoise arabesque adventure style grammar with jewel ornament, warm desert rhythm, and curved route energy; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Jewel accents, arabesque curves, warm rhythm, and smooth color flow give this finish a distinct ornamental motion.',
       creative_brief:
-        'Apply Magi - Labyrinth Jewel Caravan after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Magi - Labyrinth Jewel Caravan, amber-turquoise arabesque adventure style grammar with jewel ornament, warm desert rhythm, and curved route energy, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Use the curved linework and jewel-toned painted finish on the requested content, without adding a caravan, desert, or journey.',
     },
   },
   {
@@ -614,28 +605,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Ascendance of a Bookworm - Printing Press Devotion'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Ascendance of a Bookworm - Printing Press Devotion acts as a transferable anime-battle/worlds router: Ascendance of a Bookworm - Printing Press Devotion; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Print-influenced cel painting with inky blue blocks, fine hatchwork, paper grain, and crisp edge registration.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Ascendance of a Bookworm - Printing Press Devotion as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        "Keep the prompt's subject and action; simplify them into clear masses with selective etched line detail.",
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let Ascendance of a Bookworm - Printing Press Devotion choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Cream, deep indigo, and restrained amber create printlike contrast; preserve any explicit color direction.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Ascendance of a Bookworm - Printing Press Devotion without replacing prompt X with a stock anime frame.',
+        'Broad flat light and precise shadow shapes keep the image graphic, with small highlights used sparingly.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Ascendance of a Bookworm - Printing Press Devotion controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Fine hatch marks and paperlike grain add a printed finish without turning the subject into printed matter.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Ascendance of a Bookworm - Printing Press Devotion into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Respect the supplied framing; balance flat graphic masses and small details without adding pages or presses.',
+      atmosphere_and_mood: 'Quietly studious and composed, with mood set by the requested scene.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Use clean boundaries, controlled hatching, and subtle grain to keep the print influence legible.',
       key_features:
-        'Ascendance of a Bookworm - Printing Press Devotion; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Inky value blocks, cream highlights, fine hatching, and crisp registration shape a distinctive cel-print finish.',
       creative_brief:
-        'Apply Ascendance of a Bookworm - Printing Press Devotion after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ascendance of a Bookworm - Printing Press Devotion, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Give the requested content a tactile printlike cel treatment while keeping its existing objects, action, and location intact.',
     },
   },
   {
@@ -645,28 +635,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['The Faraway Paladin - Quiet Temple Quest'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, paladin armor copy, weapon, temple hallway, readable scripture, throne pose, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, paladin armor copy, weapon, temple hallway, readable scripture, throne pose, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'The Faraway Paladin - Quiet Temple Quest acts as a transferable anime-battle/worlds router: The Faraway Paladin - Quiet Temple Quest, quiet vow sacred-stone fantasy style grammar with ethical calm, soft vow light, and grounded holy geometry; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Quiet, icon-like cel painting with grounded geometry, broad gentle light, and restrained contour ornament.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply The Faraway Paladin - Quiet Temple Quest, quiet vow sacred-stone fantasy style grammar with ethical calm, soft vow light, and grounded holy geometry as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Retain the requested subject and pose; simplify secondary detail while keeping its defining structure.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let The Faraway Paladin - Quiet Temple Quest, quiet vow sacred-stone fantasy style grammar with ethical calm, soft vow light, and grounded holy geometry choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Natural earth colors, pale gold, and muted blue-gray keep contrast grounded; defer to specified colors.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from The Faraway Paladin - Quiet Temple Quest, quiet vow sacred-stone fantasy style grammar with ethical calm, soft vow light, and grounded holy geometry without replacing prompt X with a stock anime frame.',
+        'Broad soft light reveals form without dramatic rays, halos, or a new source.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in The Faraway Paladin - Quiet Temple Quest, quiet vow sacred-stone fantasy style grammar with ethical calm, soft vow light, and grounded holy geometry controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Use matte painted planes, fine grain, and clean edge transitions; preserve the original material cues.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert The Faraway Paladin - Quiet Temple Quest, quiet vow sacred-stone fantasy style grammar with ethical calm, soft vow light, and grounded holy geometry into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Keep the requested framing; let simple geometric balance steady the composition without adding architecture.',
+      atmosphere_and_mood: 'Calm and ethical in tone, with no imposed religion or solemn event.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Hold clean silhouettes, gentle shadows, and a modest amount of detail.',
       key_features:
-        'The Faraway Paladin - Quiet Temple Quest, quiet vow sacred-stone fantasy style grammar with ethical calm, soft vow light, and grounded holy geometry; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Grounded geometry, soft vow-like light, spare contours, and natural color make the image quietly composed.',
       creative_brief:
-        'Apply The Faraway Paladin - Quiet Temple Quest after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies The Faraway Paladin - Quiet Temple Quest, quiet vow sacred-stone fantasy style grammar with ethical calm, soft vow light, and grounded holy geometry, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Apply the understated cel light and grounded shapes to the requested content without adding a temple, vow, or quest.',
     },
   },
   {
@@ -676,28 +665,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ["The Saint's Magic Power Is Omnipotent - Herbarium Court Glow"],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, laboratory room lock, bookshelf, readable label, crowded table, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, laboratory room lock, bookshelf, readable label, crowded table, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        "The Saint's Magic Power Is Omnipotent - Herbarium Court Glow acts as a transferable anime-battle/worlds router: The Saint's Magic Power Is Omnipotent - Herbarium Court Glow, botanical healing fantasy style grammar with glass-green softness, herbarium glow, formal calm, and clean prepared surfaces; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.",
+        'Refined cel painting with glass-green translucence, delicate branching linework, and formal, clean color grouping.',
       subject_treatment:
-        "Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply The Saint's Magic Power Is Omnipotent - Herbarium Court Glow, botanical healing fantasy style grammar with glass-green softness, herbarium glow, formal calm, and clean prepared surfaces as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.",
+        'Preserve the requested forms; use fine veinlike strokes only to echo existing contours, never to add plants.',
       color_and_tone:
-        "Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let The Saint's Magic Power Is Omnipotent - Herbarium Court Glow, botanical healing fantasy style grammar with glass-green softness, herbarium glow, formal calm, and clean prepared surfaces choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.",
+        'Glass green, pale cream, and muted gold form a clear palette, subject to explicit color direction.',
       lighting_and_shadow:
-        "Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from The Saint's Magic Power Is Omnipotent - Herbarium Court Glow, botanical healing fantasy style grammar with glass-green softness, herbarium glow, formal calm, and clean prepared surfaces without replacing prompt X with a stock anime frame.",
+        'Soft high-key illumination and clean reflected highlights reveal form without requiring a glow source.',
       texture_and_material:
-        "Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in The Saint's Magic Power Is Omnipotent - Herbarium Court Glow, botanical healing fantasy style grammar with glass-green softness, herbarium glow, formal calm, and clean prepared surfaces controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.",
+        'Layer translucent color, fine detail, and tidy painted surfaces while keeping every depicted material intact.',
       camera_and_composition:
-        "Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert The Saint's Magic Power Is Omnipotent - Herbarium Court Glow, botanical healing fantasy style grammar with glass-green softness, herbarium glow, formal calm, and clean prepared surfaces into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.",
-      atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Keep the given framing; use orderly detail and calm spacing without adding a formal setting.',
+      atmosphere_and_mood: 'Serene and composed, with no imposed healing or ritual.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Keep thin contours crisp against transparent washes; avoid excess bloom and decorative clutter.',
       key_features:
-        "The Saint's Magic Power Is Omnipotent - Herbarium Court Glow, botanical healing fantasy style grammar with glass-green softness, herbarium glow, formal calm, and clean prepared surfaces; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss",
+        'Glass-green softness, fine branching detail, clean preparation of color, and formal calm define this finish.',
       creative_brief:
-        "Apply The Saint's Magic Power Is Omnipotent - Herbarium Court Glow after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies The Saint's Magic Power Is Omnipotent - Herbarium Court Glow, botanical healing fantasy style grammar with glass-green softness, herbarium glow, formal calm, and clean prepared surfaces, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.",
+        'Restyle the requested subject with translucent color and precise fine linework, without adding herbs, healing, or a court.',
     },
   },
   {
@@ -707,28 +695,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Fushigi Yuugi - Celestial Maiden Portal Epic'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, couple copy, school uniform, readable sigil, shrine hallway, tarot/card prop, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, couple copy, school uniform, readable sigil, shrine hallway, tarot/card prop, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Fushigi Yuugi - Celestial Maiden Portal Epic acts as a transferable anime-battle/worlds router: Fushigi Yuugi - Celestial Maiden Portal Epic, celestial romance omen style grammar with astral halos, constellar ornament, clean melodrama, and one symbolic portal glow; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Romantic cel illustration with ornamental arcs, halo-like value rings, and carefully spaced decorative linework.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Fushigi Yuugi - Celestial Maiden Portal Epic, celestial romance omen style grammar with astral halos, constellar ornament, clean melodrama, and one symbolic portal glow as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep the requested subject and action; let arc-shaped accents follow existing contours without adding symbols or portals.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let Fushigi Yuugi - Celestial Maiden Portal Epic, celestial romance omen style grammar with astral halos, constellar ornament, clean melodrama, and one symbolic portal glow choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Lavender, deep blue, and selective warm red create clean melodramatic contrast; honor named colors in the prompt.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Fushigi Yuugi - Celestial Maiden Portal Epic, celestial romance omen style grammar with astral halos, constellar ornament, clean melodrama, and one symbolic portal glow without replacing prompt X with a stock anime frame.',
+        'Soft rim light and luminous ringlike value accents remain graphic and restrained.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Fushigi Yuugi - Celestial Maiden Portal Epic, celestial romance omen style grammar with astral halos, constellar ornament, clean melodrama, and one symbolic portal glow controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Smooth cel fills and fine constellar-style marks add polish without changing depicted materials.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Fushigi Yuugi - Celestial Maiden Portal Epic, celestial romance omen style grammar with astral halos, constellar ornament, clean melodrama, and one symbolic portal glow into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Preserve the requested layout; use curved spacing and focal emphasis without opening a threshold or new scene.',
+      atmosphere_and_mood: 'Tender and dramatic, with its intensity guided by the prompt.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Maintain clear silhouettes, fine ornament, and controlled bloom around existing focal forms.',
       key_features:
-        'Fushigi Yuugi - Celestial Maiden Portal Epic, celestial romance omen style grammar with astral halos, constellar ornament, clean melodrama, and one symbolic portal glow; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Ornamental arcs, lavender light, clean melodramatic contrast, and restrained circular glow create a distinct finish.',
       creative_brief:
-        'Apply Fushigi Yuugi - Celestial Maiden Portal Epic after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fushigi Yuugi - Celestial Maiden Portal Epic, celestial romance omen style grammar with astral halos, constellar ornament, clean melodrama, and one symbolic portal glow, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Apply the romantic color and ornamental line language to the requested content; add no portal, celestial setting, or new symbol.',
     },
   },
   {
@@ -738,28 +725,28 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Magic Knight Rayearth - Gem-Engine Rescue Quest'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, magic-knight costume copy, group lineup, weapon near-plane, readable glyphs, logo, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, magic-knight costume copy, group lineup, weapon near-plane, readable glyphs, logo, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, muddy noisy darks',
     style: {
       aesthetic:
-        'Magic Knight Rayearth - Gem-Engine Rescue Quest acts as a transferable anime-battle/worlds router: Magic Knight Rayearth - Gem-Engine Rescue Quest, gem-engine cooperative magic style grammar with bright upward energy, chromatic teamwork, and rune-mechanical glow; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Bright kinetic cel illustration with upward-sweeping line accents, jewel color transitions, and precise luminous edges.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Magic Knight Rayearth - Gem-Engine Rescue Quest, gem-engine cooperative magic style grammar with bright upward energy, chromatic teamwork, and rune-mechanical glow as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Preserve the requested forms and action; let line accents follow existing motion instead of inventing teamwork or rescue.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let Magic Knight Rayearth - Gem-Engine Rescue Quest, gem-engine cooperative magic style grammar with bright upward energy, chromatic teamwork, and rune-mechanical glow choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Clear jewel hues and bright warm-cool transitions create lift; follow any explicit palette direction.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Magic Knight Rayearth - Gem-Engine Rescue Quest, gem-engine cooperative magic style grammar with bright upward energy, chromatic teamwork, and rune-mechanical glow without replacing prompt X with a stock anime frame.',
+        'Luminous edge highlights separate overlapping forms, with glow kept crisp and contained.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Magic Knight Rayearth - Gem-Engine Rescue Quest, gem-engine cooperative magic style grammar with bright upward energy, chromatic teamwork, and rune-mechanical glow controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Smooth cel fills, fine facet breaks, and bright accents give surfaces a polished, energetic treatment.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Magic Knight Rayearth - Gem-Engine Rescue Quest, gem-engine cooperative magic style grammar with bright upward energy, chromatic teamwork, and rune-mechanical glow into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Keep the requested camera; use rising diagonals within existing forms, not a new world or mechanical object.',
       atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Optimistic and energetic, without assigning a quest or group narrative.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Maintain sharp contours and bright color separation; reserve glow for small focal accents.',
       key_features:
-        'Magic Knight Rayearth - Gem-Engine Rescue Quest, gem-engine cooperative magic style grammar with bright upward energy, chromatic teamwork, and rune-mechanical glow; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Upward line energy, chromatic shifts, faceted highlights, and crisp glow give this image a buoyant rhythm.',
       creative_brief:
-        'Apply Magic Knight Rayearth - Gem-Engine Rescue Quest after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Magic Knight Rayearth - Gem-Engine Rescue Quest, gem-engine cooperative magic style grammar with bright upward energy, chromatic teamwork, and rune-mechanical glow, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Bring vivid color and luminous line accents to the requested subject, without adding runes, engines, or a rescue scene.',
     },
   },
   {
@@ -767,28 +754,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'No Game No Life – Hyper-Saturated Strategy Fantasy',
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, cards, chess pieces, dice, numbers, readable symbols, game UI, sibling character likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, cards, chess pieces, dice, numbers, readable symbols, game UI, sibling character likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'No Game No Life – Hyper-Saturated Strategy Fantasy acts as a transferable anime-battle/worlds router: No Game No Life – Hyper-Saturated Strategy Fantasy, hyper-saturated strategy fantasy style grammar with candy-neon arena geometry, floating rule planes, impossible perspective, and confident color logic; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'High-saturation cel illustration built from candy-bright color planes, angular rhythms, and deliberately unstable perspective.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply No Game No Life – Hyper-Saturated Strategy Fantasy, hyper-saturated strategy fantasy style grammar with candy-neon arena geometry, floating rule planes, impossible perspective, and confident color logic as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep subjects recognizable; sharpen their edges into clear geometric masses without adding game pieces or symbols.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let No Game No Life – Hyper-Saturated Strategy Fantasy, hyper-saturated strategy fantasy style grammar with candy-neon arena geometry, floating rule planes, impossible perspective, and confident color logic choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Use confident magenta, cyan, and yellow against dark violet values, while preserving any explicit palette request.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from No Game No Life – Hyper-Saturated Strategy Fantasy, hyper-saturated strategy fantasy style grammar with candy-neon arena geometry, floating rule planes, impossible perspective, and confident color logic without replacing prompt X with a stock anime frame.',
+        'Hard, clean highlights separate the color planes; emissive edges stay graphic and controlled.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in No Game No Life – Hyper-Saturated Strategy Fantasy, hyper-saturated strategy fantasy style grammar with candy-neon arena geometry, floating rule planes, impossible perspective, and confident color logic controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Flat opaque color, polished accents, and crisp boundaries make the visual logic feel designed rather than textured.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert No Game No Life – Hyper-Saturated Strategy Fantasy, hyper-saturated strategy fantasy style grammar with candy-neon arena geometry, floating rule planes, impossible perspective, and confident color logic into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Retain the requested framing while introducing selective perspective tension and angular overlaps within the existing scene.',
       atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Bold, cerebral, and kinetic; let the requested subject determine the mood.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Maintain sharp silhouettes, clean color separation, and perspective that remains readable despite distortion.',
       key_features:
-        'No Game No Life – Hyper-Saturated Strategy Fantasy, hyper-saturated strategy fantasy style grammar with candy-neon arena geometry, floating rule planes, impossible perspective, and confident color logic; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Impossible angles, candy-neon contrast, and floating color relationships create a precise, high-energy graphic finish.',
       creative_brief:
-        'Apply No Game No Life – Hyper-Saturated Strategy Fantasy after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies No Game No Life – Hyper-Saturated Strategy Fantasy, hyper-saturated strategy fantasy style grammar with candy-neon arena geometry, floating rule planes, impossible perspective, and confident color logic, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Apply the angular color logic and vivid cel finish to the requested content; do not turn it into an arena, contest, or interface.',
     },
   },
   {
@@ -798,28 +785,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Saga of Tanya the Evil - Aerial War Mage Doctrine'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Saga of Tanya the Evil - Aerial War Mage Doctrine acts as a transferable anime-battle/worlds router: Saga of Tanya the Evil - Aerial War Mage Doctrine; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Compact, forceful anime cel drawing with swept diagonals, crisp silhouettes, and clipped high-key contrast.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Saga of Tanya the Evil - Aerial War Mage Doctrine as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Preserve the requested pose and action; use compressed shapes and directional contours only where motion is present.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let Saga of Tanya the Evil - Aerial War Mage Doctrine choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Muted khaki, deep blue-gray, and clean pale highlights form a disciplined range; respect supplied colors.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Saga of Tanya the Evil - Aerial War Mage Doctrine without replacing prompt X with a stock anime frame.',
+        'Hard reflected light and short shadow breaks keep compact forms sharp and readable.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Saga of Tanya the Evil - Aerial War Mage Doctrine controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Crisp filled shapes, restrained metallic glints, and a trace of painted grain keep the finish controlled.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Saga of Tanya the Evil - Aerial War Mage Doctrine into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Hold the requested composition; use directional overlap and clear silhouette grouping without adding aircraft or gear.',
+      atmosphere_and_mood: 'Tense and precise, with the emotional register set by the prompt.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Keep details economical, contours stable, and contrast strong without overloading the image.',
       key_features:
-        'Saga of Tanya the Evil - Aerial War Mage Doctrine; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Swept direction, compact form, crisp separation, and pale high-key accents give this cel work its taut energy.',
       creative_brief:
-        'Apply Saga of Tanya the Evil - Aerial War Mage Doctrine after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Saga of Tanya the Evil - Aerial War Mage Doctrine, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Restyle the requested content with compact silhouettes, fast diagonal drawing, and clipped contrast; add no military, flight, or spell scene.',
     },
   },
   {
@@ -827,28 +813,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Overlord – Bone Throne Dark Dominion',
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, skeletal ruler, required throne, army, skull pile, cathedral copy, Nazi/fascist insignia, franchise likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, skeletal ruler, required throne, army, skull pile, cathedral copy, Nazi/fascist insignia, franchise likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Overlord – Bone Throne Dark Dominion acts as a transferable anime-battle/worlds router: Overlord – Bone Throne Dark Dominion, dark dominion style grammar with bone-ivory monolith, baroque symmetry, cold magical dust, and oppressive authority; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Monumental cel painting with baroque symmetry, heavy value planes, and a restrained, ornamental silhouette language.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Overlord – Bone Throne Dark Dominion, dark dominion style grammar with bone-ivory monolith, baroque symmetry, cold magical dust, and oppressive authority as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Preserve the requested subject; emphasize its major shapes with measured contour and balanced, weighty detail.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let Overlord – Bone Throne Dark Dominion, dark dominion style grammar with bone-ivory monolith, baroque symmetry, cold magical dust, and oppressive authority choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Bone ivory, charcoal, and muted brass establish a cold, limited range; follow explicit color direction when present.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Overlord – Bone Throne Dark Dominion, dark dominion style grammar with bone-ivory monolith, baroque symmetry, cold magical dust, and oppressive authority without replacing prompt X with a stock anime frame.',
+        'Cool, controlled light divides large planes and reserves narrow highlights for the focal forms.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Overlord – Bone Throne Dark Dominion, dark dominion style grammar with bone-ivory monolith, baroque symmetry, cold magical dust, and oppressive authority controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Combine matte shadow masses, smooth enamel-like accents, and faint powdery grain without changing depicted materials.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Overlord – Bone Throne Dark Dominion, dark dominion style grammar with bone-ivory monolith, baroque symmetry, cold magical dust, and oppressive authority into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+        'Keep the requested layout; use formal balance and broad negative space rather than adding architecture.',
       atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        "Severe and composed, with a sense of pressure that does not change the subject's story.",
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Hold detail within clean edges and deep values; let subtle grain soften the darkest areas.',
       key_features:
-        'Overlord – Bone Throne Dark Dominion, dark dominion style grammar with bone-ivory monolith, baroque symmetry, cold magical dust, and oppressive authority; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Baroque balance, ivory against charcoal, cold highlights, and monumental value grouping create a composed weight.',
       creative_brief:
-        'Apply Overlord – Bone Throne Dark Dominion after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Overlord – Bone Throne Dark Dominion, dark dominion style grammar with bone-ivory monolith, baroque symmetry, cold magical dust, and oppressive authority, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Restyle the requested subject through symmetry, deep values, and restrained ornament, without adding a throne, monument, or fantasy setting.',
     },
   },
   {
@@ -858,28 +844,28 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ["The Ancient Magus' Bride - Thorn Cottage Enchantment"],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        "The Ancient Magus' Bride - Thorn Cottage Enchantment acts as a transferable anime-battle/worlds router: The Ancient Magus' Bride - Thorn Cottage Enchantment; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.",
+        'Luminous botanical cel language with intricate branching contours, lilac highlights, and deep-to-soft value transitions.',
       subject_treatment:
-        "Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply The Ancient Magus' Bride - Thorn Cottage Enchantment as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.",
+        'Keep the requested subject and action; fine branching strokes may echo existing contours but must not add plants.',
       color_and_tone:
-        "Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let The Ancient Magus' Bride - Thorn Cottage Enchantment choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.",
+        'Cool lilac and muted greens sit against warm cream and deep brown; adapt them to specified colors.',
       lighting_and_shadow:
-        "Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from The Ancient Magus' Bride - Thorn Cottage Enchantment without replacing prompt X with a stock anime frame.",
+        'Small warm highlights emerge from cool shadow, keeping the light soft and the focal edges clear.',
       texture_and_material:
-        "Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in The Ancient Magus' Bride - Thorn Cottage Enchantment controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.",
+        'Fine line detail, delicate grain, and soft painted color build richness without changing depicted materials.',
       camera_and_composition:
-        "Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert The Ancient Magus' Bride - Thorn Cottage Enchantment into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.",
+        'Respect the requested framing; use layered depth and edge contrast without adding a cottage or garden.',
       atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Romantic and quietly uncanny, while the requested content determines the actual mood.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Contrast detailed contours with softly painted distance; maintain precise focal form and restrained glow.',
       key_features:
-        "The Ancient Magus' Bride - Thorn Cottage Enchantment; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss",
+        'Branching line rhythms, lilac glints, deep framing values, and gentle painted depth carry the signature.',
       creative_brief:
-        "Apply The Ancient Magus' Bride - Thorn Cottage Enchantment after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies The Ancient Magus' Bride - Thorn Cottage Enchantment, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.",
+        'Apply the detailed, luminous cel treatment to the requested subject and setting without adding a cottage, spell, or botanical object.',
     },
   },
   {
@@ -889,28 +875,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Inuyasha - Shrine-Well Sengoku Pursuit'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, red-robed character copy, shrine hallway, sword, demon attack, readable talisman text, well prop lock, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, red-robed character copy, shrine hallway, sword, demon attack, readable talisman text, well prop lock, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Inuyasha - Shrine-Well Sengoku Pursuit acts as a transferable anime-battle/worlds router: Inuyasha - Shrine-Well Sengoku Pursuit, folklore-threshold romance style grammar with talisman color, temporal nostalgia, purifying aura, and mythic dusk motion; combine it with isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
+        'Folkloric painted cel language with tapered ink contours, warm red accents, and faded indigo dusk values.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Inuyasha - Shrine-Well Sengoku Pursuit, folklore-threshold romance style grammar with talisman color, temporal nostalgia, purifying aura, and mythic dusk motion as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+        'Keep the requested subject and action; use flowing tapered marks to describe existing movement, not a pursuit.',
       color_and_tone:
-        'Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens, parchment neutrals, magical violets, and controlled pastel or dark contrast; let Inuyasha - Shrine-Well Sengoku Pursuit, folklore-threshold romance style grammar with talisman color, temporal nostalgia, purifying aura, and mythic dusk motion choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+        'Vermilion, cream, muted indigo, and charcoal create nostalgic contrast; defer to requested colors.',
       lighting_and_shadow:
-        'Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Inuyasha - Shrine-Well Sengoku Pursuit, folklore-threshold romance style grammar with talisman color, temporal nostalgia, purifying aura, and mythic dusk motion without replacing prompt X with a stock anime frame.',
+        'Soft dusk-like shadow and restrained edge light retain warmth without requiring night or a new light source.',
       texture_and_material:
-        'Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Inuyasha - Shrine-Well Sengoku Pursuit, folklore-threshold romance style grammar with talisman color, temporal nostalgia, purifying aura, and mythic dusk motion controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+        'Faded color, tapering brush lines, and subtle grain give the cel finish a timeworn feel.',
       camera_and_composition:
-        'Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; convert Inuyasha - Shrine-Well Sengoku Pursuit, folklore-threshold romance style grammar with talisman color, temporal nostalgia, purifying aura, and mythic dusk motion into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+        'Preserve the requested framing; use gentle horizontal rhythm and flowing contours without adding a threshold.',
+      atmosphere_and_mood: 'Nostalgic and mythic in tone, with no imposed folklore or conflict.',
       rendering_and_quality:
-        'Finish with clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+        'Keep the focal silhouette sharp enough to read through soft color fade and low-contrast detail.',
       key_features:
-        'Inuyasha - Shrine-Well Sengoku Pursuit, folklore-threshold romance style grammar with talisman color, temporal nostalgia, purifying aura, and mythic dusk motion; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss',
+        'Tapered ink, vermilion accents, indigo fade, and restrained luminous edges carry a wistful motion.',
       creative_brief:
-        'Apply Inuyasha - Shrine-Well Sengoku Pursuit after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Inuyasha - Shrine-Well Sengoku Pursuit, folklore-threshold romance style grammar with talisman color, temporal nostalgia, purifying aura, and mythic dusk motion, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture, luminous adventure, and character-independent fantasy routing, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
+        'Apply the nostalgic cel palette and flowing ink contours to the requested content without adding talismans, shrines, or a portal.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

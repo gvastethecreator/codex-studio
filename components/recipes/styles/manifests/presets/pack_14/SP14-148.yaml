@@ -1,0 +1,100 @@
+schemaVersion: 1
+id: SP14-148
+packId: pack_14
+name: Egyptian Mythic Noir
+version: 2
+supportedTasks: &id002
+  - image_generate
+  - image_edit
+  - style_preset_card
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-148.webp
+attributes:
+  negativePrompt:
+    Do not impose a pharaoh, pyramid, mummy or tomb as the subject., Do not replace requested
+    text with invented hieroglyphs or present decorative marks as authentic inscriptions., Avoid an all-gold
+    costume, all-over symbol wallpaper and generic desert fantasy without Egyptian design identity.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: Do not impose a pharaoh, pyramid, mummy or tomb as the subject.
+        field: rendering_and_quality
+      - text:
+          Do not replace requested text with invented hieroglyphs or present decorative marks as authentic
+          inscriptions.
+        field: rendering_and_quality
+      - text:
+          Avoid an all-gold costume, all-over symbol wallpaper and generic desert fantasy without Egyptian
+          design identity.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+    derivedFrom: []
+category: Egyptian Mythology
+tags: &id001
+  - curation-v2
+  - identity-reviewed
+  - visual-evaluation-pending
+  - egyptian-mythology
+visualDna:
+  aesthetic:
+    Egyptian mythic illustration with poised graphic silhouettes, lucid contour drawing and luminous faience
+    accents against mineral-dark masses. Use one primary lotus, papyrus or solar motif with at most one supporting
+    echo on an existing form. Suggest solar cycles through compact marks rather than adding a new sun or light
+    source. Build a complete image with spatial hierarchy, not a strip of hieroglyph-like texture.
+  subject_treatment:
+    Keep the requested subject identifiable and its action intact. Preserve contemporary clothing, accessories
+    and setting when specified. Put Egyptian design cues on one fitting existing edge, junction or surface;
+    avoid added jewelry, ceremonial collars, monumental architecture or a pharaonic reading unless requested.
+    Preserve explicit anatomy, identity and costume; do not turn every person into a pharaoh or animal into a deity.
+  color_and_tone:
+    Use blue-green faience and warm mineral ochres with ivory highlights and deep charcoal shadows.
+    Reserve brilliant gold or red for a focal accent; allow requested colors to occupy these value roles.
+  lighting_and_shadow:
+    Shape large quiet shadows with crisp illuminated edges and concentrated reflected light
+    on inlay. Keep faces, gesture and silhouette readable; dark mood should not obscure the composition or
+    require a night scene.
+  texture_and_material:
+    Contrast smooth blue-green inlay, worked metal, pale woven cloth and finely painted mineral surfaces. Place
+    lotus or papyrus ornament at one fitting existing edge or junction, with at most one secondary repetition.
+    Leave broad areas plain and keep requested skin, rubber, metal or painted frame material identifiable.
+  camera_and_composition:
+    Honor the requested view, framing and ordinary scale. Establish one clear focal silhouette and balanced
+    supporting masses within the existing scene; do not impose columns, a grand facade, side-on procession,
+    border or temple.
+  atmosphere_and_mood:
+    Solemn, luminous and uncanny, with a sense of cyclical renewal and latent divine presence.
+    Convey that through poised shapes and restrained radiance instead of mandatory tombs, mummies or death
+    scenes.
+  rendering_and_quality:
+    'Finish as authored contour-and-paint illustration: clean large shapes, modeled focal
+    planes, selective fine ornament and quiet supporting detail. Keep symbolic designs readable at thumbnail
+    size and avoid fabricated text or pseudo-inscriptions.'
+avoidRules:
+  - Do not impose a pharaoh, pyramid, mummy or tomb as the subject.
+  - Do not replace requested text with invented hieroglyphs or present decorative marks as authentic inscriptions.
+  - Avoid an all-gold costume, all-over symbol wallpaper and generic desert fantasy without Egyptian design identity.
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: egyptian-mythology
+  categoryName: Egyptian Mythology
+  tags: *id001
+  supportedTasks: *id002
+  hasDefaultImage: true

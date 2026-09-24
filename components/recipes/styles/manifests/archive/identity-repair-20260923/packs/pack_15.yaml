@@ -1,0 +1,122 @@
+schemaVersion: 1
+id: pack_15
+name: Punk Spectrum Vault
+description:
+  One reusable visual language per punk direction, expressed through shape, line, color and material
+  instead of situational scene variants.
+categories:
+  - id: classic-industrial-punks
+    name: 1. Classic Industrial Punks
+    presetRefs:
+      - pack_15/SP15-081.yaml
+      - pack_15/SP15-082.yaml
+      - pack_15/SP15-083.yaml
+  - id: neon-net-and-signal-punks
+    name: 2. Neon, Net & Signal Punks
+    presetRefs:
+      - pack_15/SP15-084.yaml
+      - pack_15/SP15-085.yaml
+      - pack_15/SP15-086.yaml
+  - id: eco-repair-and-climate-punks
+    name: 3. Eco, Repair & Climate Punks
+    presetRefs:
+      - pack_15/SP15-087.yaml
+      - pack_15/SP15-088.yaml
+      - pack_15/SP15-089.yaml
+      - pack_15/SP15-090.yaml
+      - pack_15/SP15-091.yaml
+      - pack_15/SP15-092.yaml
+      - pack_15/SP15-093.yaml
+  - id: bio-myco-and-body-punks
+    name: 4. Bio, Myco & Body Punks
+    presetRefs:
+      - pack_15/SP15-094.yaml
+      - pack_15/SP15-095.yaml
+      - pack_15/SP15-096.yaml
+  - id: ocean-ice-and-terrain-punks
+    name: 5. Ocean, Ice & Terrain Punks
+    presetRefs:
+      - pack_15/SP15-097.yaml
+      - pack_15/SP15-098.yaml
+      - pack_15/SP15-099.yaml
+      - pack_15/SP15-100.yaml
+  - id: street-riot-and-diy-punks
+    name: 6. Street, Riot & DIY Punks
+    presetRefs:
+      - pack_15/SP15-101.yaml
+      - pack_15/SP15-102.yaml
+      - pack_15/SP15-103.yaml
+      - pack_15/SP15-104.yaml
+      - pack_15/SP15-105.yaml
+      - pack_15/SP15-106.yaml
+  - id: media-vapor-and-glitch-punks
+    name: 7. Media, Vapor & Glitch Punks
+    presetRefs:
+      - pack_15/SP15-107.yaml
+      - pack_15/SP15-108.yaml
+      - pack_15/SP15-109.yaml
+      - pack_15/SP15-110.yaml
+  - id: occult-myth-and-gothic-punks
+    name: 8. Occult, Myth & Gothic Punks
+    presetRefs:
+      - pack_15/SP15-111.yaml
+      - pack_15/SP15-112.yaml
+      - pack_15/SP15-113.yaml
+      - pack_15/SP15-114.yaml
+      - pack_15/SP15-115.yaml
+      - pack_15/SP15-116.yaml
+  - id: space-atomic-and-ray-punks
+    name: 9. Space, Atomic & Ray Punks
+    presetRefs:
+      - pack_15/SP15-117.yaml
+      - pack_15/SP15-118.yaml
+      - pack_15/SP15-119.yaml
+      - pack_15/SP15-120.yaml
+  - id: primitive-stone-and-salvage-punks
+    name: 10. Primitive, Stone & Salvage Punks
+    presetRefs:
+      - pack_15/SP15-121.yaml
+      - pack_15/SP15-122.yaml
+presetRefs:
+  - pack_15/SP15-081.yaml
+  - pack_15/SP15-082.yaml
+  - pack_15/SP15-083.yaml
+  - pack_15/SP15-084.yaml
+  - pack_15/SP15-085.yaml
+  - pack_15/SP15-086.yaml
+  - pack_15/SP15-087.yaml
+  - pack_15/SP15-088.yaml
+  - pack_15/SP15-089.yaml
+  - pack_15/SP15-090.yaml
+  - pack_15/SP15-091.yaml
+  - pack_15/SP15-092.yaml
+  - pack_15/SP15-093.yaml
+  - pack_15/SP15-094.yaml
+  - pack_15/SP15-095.yaml
+  - pack_15/SP15-096.yaml
+  - pack_15/SP15-097.yaml
+  - pack_15/SP15-098.yaml
+  - pack_15/SP15-099.yaml
+  - pack_15/SP15-100.yaml
+  - pack_15/SP15-101.yaml
+  - pack_15/SP15-102.yaml
+  - pack_15/SP15-103.yaml
+  - pack_15/SP15-104.yaml
+  - pack_15/SP15-105.yaml
+  - pack_15/SP15-106.yaml
+  - pack_15/SP15-107.yaml
+  - pack_15/SP15-108.yaml
+  - pack_15/SP15-109.yaml
+  - pack_15/SP15-110.yaml
+  - pack_15/SP15-111.yaml
+  - pack_15/SP15-112.yaml
+  - pack_15/SP15-113.yaml
+  - pack_15/SP15-114.yaml
+  - pack_15/SP15-115.yaml
+  - pack_15/SP15-116.yaml
+  - pack_15/SP15-117.yaml
+  - pack_15/SP15-118.yaml
+  - pack_15/SP15-119.yaml
+  - pack_15/SP15-120.yaml
+  - pack_15/SP15-121.yaml
+  - pack_15/SP15-122.yaml

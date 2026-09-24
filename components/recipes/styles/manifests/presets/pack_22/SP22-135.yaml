@@ -1,0 +1,96 @@
+schemaVersion: 1
+id: SP22-135
+packId: pack_22
+name: Compact Shape Toon
+category: 5. Character & Readable Forms
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - character-and-readable-forms
+  - compact-shape-cartoon
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Cartoon illustration condenses forms into broad, easily distinguished shapes with simple defined
+    shadows and sparse small details.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Simplify detail without enlarging the
+    head, eyes or other features unless the request explicitly asks for that reinterpretation.
+  color_and_tone: >-
+    Organize color into a few clear value groups and place accents sparingly. Retain the requested palette
+    and the local colors needed to distinguish forms.
+  lighting_and_shadow: >-
+    Follow the requested lighting with concise shadow shapes. Keep the light direction clear without
+    adding a new source or unsupported glossy highlights.
+  texture_and_material: >-
+    Use smooth, mostly even color and preserve the character of represented materials. Do not add a
+    plastic sheen or a global texture layer.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and element placement. Compact shapes do not require
+    a changed pose, close crop or exaggerated proportions.
+  atmosphere_and_mood: >-
+    Keep the requested tone. Reduced detail does not make the subject childish, cute or comedic by default.
+  rendering_and_quality: >-
+    Make contours broad enough to read at small sizes and shadows simple enough to remain distinct.
+    Keep the original structure clear while reducing secondary detail.
+avoidRules:
+  - unrequested feature enlargement
+  - plastic gloss
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-135.webp
+attributes:
+  negativePrompt: unrequested feature enlargement, plastic gloss
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: unrequested feature enlargement
+        field: subject_treatment
+      - text: plastic gloss
+        field: texture_and_material
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S035
+    sourceTitle: Compact Shape Toon
+    referenceIds:
+      - S43
+      - S49
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: character-and-readable-forms
+  categoryName: 5. Character & Readable Forms
+  tags:
+    - trading-card-illustration
+    - character-and-readable-forms
+    - compact-shape-cartoon
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

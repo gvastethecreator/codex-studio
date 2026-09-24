@@ -8,28 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Psychological Biomech Drama',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Psychological Biomech Drama operates as a portable anime-lifestyle router: combine Psychological Biomech Drama identity cues through Techno organic silhouette fusion; diagnostic shadow logic; existential enclosure tension; trauma coded color architecture; Psychological Biomech Drama anime style cues; Biomech psychological drama style with existential tension with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Tapered anime contour joins organic curves to segmented engineered seams over compact cel planes.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Keep silhouette and proportions; segment only forms that support mechanical detail.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Iron charcoal, mineral teal, muted ochre; three clear value bands and one warm accent.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'One hard key, broad shadows, and narrow edge light only along existing contours.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Smooth cel fills with sparse etched seams and short hatch; no blanket noise.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Respect camera; clipped diagonals and bounded negative space carry tension without added walls.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Interrupted edges and compressed spacing suggest pressure; the requested mood leads.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Stable anatomy and crisp micro-detail, restrained cel bands, no gloss.',
       key_features:
-        'Techno organic silhouette fusion; diagnostic shadow logic; existential enclosure tension; trauma coded color architecture; Psychological Biomech Drama anime style cues; Biomech psychological drama style with existential tension',
+        'Organic-mechanical contours, compact cel shadows, mineral teal, compressed negative space',
       creative_brief:
-        'Use Psychological Biomech Drama after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Techno organic silhouette fusion, diagnostic shadow logic, existential enclosure tension, trauma coded color architecture, Psychological Biomech Drama anime style cues, Biomech psychological drama style with existential tension, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on organic-mechanical contours, compact cel shadows, mineral teal, compressed negative space. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -37,28 +37,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sailor Moon - Moonlit Ribbon Justice',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Sailor Moon - Moonlit Ribbon Justice operates as a portable anime-lifestyle router: combine Sailor Moon - Moonlit Ribbon Justice identity cues through Transformation symbolism; moon emblem light logic; jewel tone magic effects; multi silhouette choreography; Moonlit Ribbon Justice with Sailor Moon lineage used only as style reference; romantic justice energy with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Sailor Moon may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Classic anime transformation-profile drawing uses fluid arcs, crisp cel panels, and jewel-bright accents; stages are conditional on an explicit sequence request.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve identity, anatomy, age, and count; only for an explicit transformation show requested stages and change only named elements.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Amethyst, ivory, cobalt, emerald, warm gold; compact jewel accents, no fixed costume palette.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Halo-like edges and phased shadows only when the requested sequence or effect calls for them; otherwise match prompt light.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Smooth cel color with translucent motion accents; add no ribbons, particles, symbols, or effects unless requested.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Keep crop and viewpoint; show multiple stages only when asked, preserving sequence order and identity.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Use ceremonial lift only when the requested action supports it; otherwise retain prompt mood.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Stable outlines, distinct requested phases, clear materials, sparse effects, no lettering.',
       key_features:
-        'Transformation symbolism; moon emblem light logic; jewel tone magic effects; multi silhouette choreography; Moonlit Ribbon Justice with Sailor Moon lineage used only as style reference; romantic justice energy',
+        'Fluid transformation arcs when requested, continuous subject identity, jewel accents, clean cel phases',
       creative_brief:
-        'Use Sailor Moon - Moonlit Ribbon Justice after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Transformation symbolism, moon emblem light logic, jewel tone magic effects, multi silhouette choreography, Moonlit Ribbon Justice with Sailor Moon lineage used only as style reference, romantic justice energy, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a transformation-profile layer centered on fluid arcs, jewel accents, and clean cel phases. Preserve the exact subject, action, count, age, setting, camera, and mood. Only when a transformation sequence is explicitly requested, keep one identity through the requested stages and change only elements named in the prompt; otherwise draw one requested state. Add no unrequested costume, accessory, emblem, effect, place, prop, or text.',
     },
   },
   {
@@ -66,28 +66,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Neon Genesis Evangelion - Red Alert Psychological Collapse',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Neon Genesis Evangelion - Red Alert Psychological Collapse operates as a portable anime-lifestyle router: combine Neon Genesis Evangelion - Red Alert Psychological Collapse identity cues through Red alert overlays; pressure grid claustrophobia; cross shaped blasts; procedural interface geometry; isolated focal framing; Red Alert Psychological Collapse with Neon Genesis Evangelion lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Neon Genesis Evangelion may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'High-contrast anime cel illustration cuts silhouettes sharply and uses sparse technical accents and controlled red marks.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
-      color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Keep subject and proportions; use angular articulation without adding blasts, crosses, interfaces, or props.',
+      color_and_tone: 'Charcoal, blue gray, bone; signal red is a small focal accent.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Hard directional key, broken shadow blocks, sparse highlights, no screen glow.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
-      camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
-      atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Clean flat cels with fine hatch in selected dark planes; no grid overlay.',
+      camera_and_composition: 'Respect camera; pressure comes from compressed spacing, not panels.',
+      atmosphere_and_mood: 'Constrained visual pressure only when it suits the requested tone.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Crisp separation, readable mids, sparse red, precise lines, no fake UI text.',
       key_features:
-        'Red alert overlays; pressure grid claustrophobia; cross shaped blasts; procedural interface geometry; isolated focal framing; Red Alert Psychological Collapse with Neon Genesis Evangelion lineage used only as style reference',
+        'Hard-cut silhouette, compressed negative space, sparse signal red, precise cel shadows',
       creative_brief:
-        'Use Neon Genesis Evangelion - Red Alert Psychological Collapse after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Red alert overlays, pressure grid claustrophobia, cross shaped blasts, procedural interface geometry, isolated focal framing, Red Alert Psychological Collapse with Neon Genesis Evangelion lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on hard-cut silhouette, compressed negative space, sparse signal red, precise cel shadows. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -95,28 +92,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Slayers - Arcane Chaos Roadtrip',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Slayers - Arcane Chaos Roadtrip operates as a portable anime-lifestyle router: combine Slayers - Arcane Chaos Roadtrip identity cues through Spell circle bursts; flame color punctuation; comic reaction geometry; mischievous silhouette energy; fireball spectacle; Arcane Chaos Roadtrip with Slayers lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Slayers may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Elastic anime contour swings between broad rounded strokes and quick tapered marks over compact cel shadows.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Keep form and action; exaggerate only existing expression or movement, never add spells or flames.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Vermilion, cobalt, sunlit yellow, charcoal; distinct blocks and neutral mids.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Separate warm and cool planes with simple light; no flame-shaped lighting unless present.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Smooth flat fills, selective dry brush, radial marks only for requested effects.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
-      atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Preserve crop; off-center energy follows only motion already in the prompt.',
+      atmosphere_and_mood: 'Comic chaos only when requested; preserve any other emotional tone.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Separated forms, local effects, no particle noise or smeared shadows.',
       key_features:
-        'Spell circle bursts; flame color punctuation; comic reaction geometry; mischievous silhouette energy; fireball spectacle; Arcane Chaos Roadtrip with Slayers lineage used only as style reference',
+        'Elastic contour, warm-cool blocks, quick tapered marks, effects tied to requested action',
       creative_brief:
-        'Use Slayers - Arcane Chaos Roadtrip after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Spell circle bursts, flame color punctuation, comic reaction geometry, mischievous silhouette energy, fireball spectacle, Arcane Chaos Roadtrip with Slayers lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on elastic contour, warm-cool blocks, quick tapered marks, effects tied to requested action. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -124,28 +120,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'The Vision of Escaflowne - Tarot Mecha Fantasy',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'The Vision of Escaflowne - Tarot Mecha Fantasy operates as a portable anime-lifestyle router: combine The Vision of Escaflowne - Tarot Mecha Fantasy identity cues through Tarot symbolism; ceremonial silhouette flow; ornate mechanical motifs; sky heavy compositions; prophecy charged focal tension; Tarot Mecha Fantasy with The Vision of Escaflowne lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; The Vision of Escaflowne may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Anime linework pairs fine engraved contours with crisp beveled planes and measured geometry.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Retain subject and materials; mechanical detail only on shown mechanisms, no divination symbols by default.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Slate, steel blue, muted gold, plum, warm neutral; metallic accents localized.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Precise edge highlights and firm cool shadows; gleam only on actual metal.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Restrained crosshatch and grain within selected planes; no synthetic metal texture.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Keep viewpoint; balance existing forms with geometric space, no skyline or symbols.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Suspended tension only where prompt supports it; preserve the requested tone.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Crisp edges, controlled facets, sparse line detail, no fake inscriptions.',
       key_features:
-        'Tarot symbolism; ceremonial silhouette flow; ornate mechanical motifs; sky heavy compositions; prophecy charged focal tension; Tarot Mecha Fantasy with The Vision of Escaflowne lineage used only as style reference',
+        'Engraved contour, beveled value planes, localized metal accents, restrained geometry',
       creative_brief:
-        'Use The Vision of Escaflowne - Tarot Mecha Fantasy after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Tarot symbolism, ceremonial silhouette flow, ornate mechanical motifs, sky heavy compositions, prophecy charged focal tension, Tarot Mecha Fantasy with The Vision of Escaflowne lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on engraved contour, beveled value planes, localized metal accents, restrained geometry. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -153,28 +149,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Magic Knight Rayearth - Jewel Armor Quest',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Magic Knight Rayearth - Jewel Armor Quest operates as a portable anime-lifestyle router: combine Magic Knight Rayearth - Jewel Armor Quest identity cues through Jewel faceted silhouettes; monumental magic motifs; rune light effects; chromatic team partitioning; bright quest like motion; Jewel Armor Quest with Magic Knight Rayearth lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Magic Knight Rayearth may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Bold anime contour surrounds polygonal cel facets, with jewel-like accents confined to existing forms.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
-      color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Keep subject, anatomy, costume, and count; facet armor or surfaces only when requested.',
+      color_and_tone: 'Cerulean, turquoise, amber, muted coral, deep blue; facets clarify values.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Bright broad illumination and hard bevel highlights; add no magical light source.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Smooth cel planes with small facets; no runes, jewels, or effects unless requested.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Respect framing; diagonals may follow motion but never force a quest pose or team.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Forward momentum only when the specified action is dynamic; otherwise retain mood.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Bold outlines, few shadow bands, legible facets, localized highlights.',
       key_features:
-        'Jewel faceted silhouettes; monumental magic motifs; rune light effects; chromatic team partitioning; bright quest like motion; Jewel Armor Quest with Magic Knight Rayearth lineage used only as style reference',
+        'Polygonal cel facets, bold outline, cerulean-amber contrast, accents on existing surfaces',
       creative_brief:
-        'Use Magic Knight Rayearth - Jewel Armor Quest after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Jewel faceted silhouettes, monumental magic motifs, rune light effects, chromatic team partitioning, bright quest like motion, Jewel Armor Quest with Magic Knight Rayearth lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on polygonal cel facets, bold outline, cerulean-amber contrast, accents on existing surfaces. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -182,28 +177,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Martian Successor Nadesico - Cheerful Bridge-Deck Mecha',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Martian Successor Nadesico - Cheerful Bridge-Deck Mecha operates as a portable anime-lifestyle router: combine Martian Successor Nadesico - Cheerful Bridge Deck Mecha identity cues through Ensemble staging rhythm; mechanical sortie framing; retro UI accents; playful command energy; bright group body language geometry; Cheerful Bridge Deck Mecha with Martian Successor Nadesico lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Martian Successor Nadesico may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Precise anime line uses crisp mechanical geometry where relevant and clean silhouette hierarchy.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
-      color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Preserve forms, group size, and action; render machines only as supplied, add no bridge or interface.',
+      color_and_tone: 'Navy, warm white, orange, teal in distinct fields with neutral separation.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Broad cool fill and small warm edge accents; no control-panel glow or new source.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Smooth cel surfaces; parallel hatch only on hard surfaces already depicted.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Hold camera and count; rhythm comes from existing scale and spacing.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Playful cadence only if requested; preserve serious or quiet moods equally.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Exact contours, clean flats, legible hard surfaces, no UI or fake text.',
       key_features:
-        'Ensemble staging rhythm; mechanical sortie framing; retro UI accents; playful command energy; bright group body language geometry; Cheerful Bridge Deck Mecha with Martian Successor Nadesico lineage used only as style reference',
+        'Crisp mechanical line when relevant, navy-orange balance, smooth flats, spacing-led group rhythm',
       creative_brief:
-        'Use Martian Successor Nadesico - Cheerful Bridge-Deck Mecha after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Ensemble staging rhythm, mechanical sortie framing, retro UI accents, playful command energy, bright group body language geometry, Cheerful Bridge Deck Mecha with Martian Successor Nadesico lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on crisp mechanical line when relevant, navy-orange balance, smooth flats, spacing-led group rhythm. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -211,28 +205,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Blue Seed - Mythic Tokyo Purge',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Blue Seed - Mythic Tokyo Purge operates as a portable anime-lifestyle router: combine Blue Seed - Mythic Tokyo Purge identity cues through Ritual symbols; monster vine invasions; emergency framing; lineage pressure posture; occult tech contrast; Mythic Tokyo Purge with Blue Seed lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Blue Seed may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Inked anime forms combine organic contour flow, abrupt cross-lines, and separated color shapes.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve the depicted subject; fragment marks only forms that already contain that structure.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Pine green, blue green, burnt vermilion, parchment, charcoal; warm note compact.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Contained saturated accents over neutral shadows; imply no city, alarm, or night.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Irregular hatch on existing organic surfaces, smooth fills elsewhere; keep treatments distinct.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Respect layout; directional negative space within existing forms, no scenery.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Contour contrast suggests unease only when fitting; no threat narrative.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Local distortion, readable silhouettes, purposeful marks, no blanket fragmentation.',
       key_features:
-        'Ritual symbols; monster vine invasions; emergency framing; lineage pressure posture; occult tech contrast; Mythic Tokyo Purge with Blue Seed lineage used only as style reference',
+        'Organic-angular contour, pine-vermilion palette, localized hatch, controlled negative space',
       creative_brief:
-        'Use Blue Seed - Mythic Tokyo Purge after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Ritual symbols, monster vine invasions, emergency framing, lineage pressure posture, occult tech contrast, Mythic Tokyo Purge with Blue Seed lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on organic-angular contour, pine-vermilion palette, localized hatch, controlled negative space. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -240,28 +234,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Wired Existential Glitch',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Wired Existential Glitch operates as a portable anime-lifestyle router: combine Wired Existential Glitch identity cues through Signal noise dramaturgy; fragmented silhouette logic; analog digital tension; sparse emotional staging; interference led mood design; Wired Existential Glitch anime style cues with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Anime ink uses deliberate signal breaks, slight contour offsets, and small blank gaps.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Keep the original silhouette; displace only a thin local edge, never duplicate a subject.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Carbon black, steel blue, pale graphite, with sparse cyan or vermilion signal accents.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Level cool fill, isolated bright edges, and simple shadows without invented light sources.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Fine scanline-like grain and broken strokes stay local; large planes remain clean.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
-      atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Keep crop and viewpoint; asymmetric gaps suggest interference without panels or scenery.',
+      atmosphere_and_mood: 'Quiet interruption creates unease only when that tone is requested.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Readable forms, sparse signal artifacts, and no fake text or full-frame static.',
       key_features:
-        'Signal noise dramaturgy; fragmented silhouette logic; analog digital tension; sparse emotional staging; interference led mood design; Wired Existential Glitch anime style cues',
+        'Broken contour rhythm, local scanline grain, cyan signal accents, asymmetric pauses',
       creative_brief:
-        'Use Wired Existential Glitch after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Signal noise dramaturgy, fragmented silhouette logic, analog digital tension, sparse emotional staging, interference led mood design, Wired Existential Glitch anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on broken contour rhythm, local scanline grain, cyan signal accents, asymmetric pauses. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -269,28 +262,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Dream Card Enchanter',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Dream Card Enchanter operates as a portable anime-lifestyle router: combine Dream Card Enchanter identity cues through Emblematic ritual motifs; ribbon choreography; soft magical bloom; decorative pastel harmony; Dream Card Enchanter anime style cues; gentle enchantment with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Polished anime cel drawing combines continuous curves, emblem-like geometry, and soft peripheral glow.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Keep the prompted form; use fine internal motifs only on details already present.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Warm ivory, lavender, lapis, pale yellow; strong dark anchor, restrained pastel notes.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Broad soft highlight beside crisp cel shadows; bloom only on existing luminous details.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Smooth fills, translucent flecks, and curved marks; no added cards, ribbons, or particles.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Respect crop; existing forms may follow a calm radial rhythm without card framing.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Delicate wonder comes from ornament only when it fits the requested mood.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'Emblematic ritual motifs; ribbon choreography; soft magical bloom; decorative pastel harmony; Dream Card Enchanter anime style cues; gentle enchantment',
+        'Crisp silhouettes, restrained glow, legible ornament, clean flat color.',
+      key_features: 'Curved emblem line, soft local bloom, precise ornament, lapis and ivory',
       creative_brief:
-        'Use Dream Card Enchanter after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Emblematic ritual motifs, ribbon choreography, soft magical bloom, decorative pastel harmony, Dream Card Enchanter anime style cues, gentle enchantment, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on curved emblem line, soft local bloom, precise ornament, lapis and ivory. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -298,28 +290,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Kimi ni Todoke - Shy Hallway Bloom',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Kimi ni Todoke - Shy Distance Bloom operates as a portable anime-lifestyle router: combine Kimi ni Todoke - Shy Hallway Bloom identity cues through Near but not touching proximity; blush heavy acting; daylight warmth; friendship circle softness; delicate confession framing; Shy transition space Bloom with Kimi ni Todoke lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Kimi ni Todoke may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Fine anime contour favors rounded transitions, restrained interior marks, and soft cel shading.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve subject and count; detail visible faces only, never require a pair or hallway.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Pale aqua, clear blue, cream, graphite, restrained coral; natural cheeks and shadows.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Even diffuse illumination and short soft shadows; imply no room or time.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Smooth cel fill with slight wash at selected edges; minimal surface chatter.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Maintain framing; leave measured air around focal shapes only where layout allows.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
-      rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        "Gentleness through line softness only when compatible with the prompt's mood.",
+      rendering_and_quality: 'Clean edge hierarchy, low-noise detail, stable features, no bloom.',
       key_features:
-        'Near but not touching proximity; blush heavy acting; daylight warmth; friendship circle softness; delicate confession framing; Shy transition space Bloom with Kimi ni Todoke lineage used only as style reference',
+        'Fine rounded contour, pale aqua-blue, soft cel transitions, measured open space',
       creative_brief:
-        'Use Kimi ni Todoke - Shy Distance Bloom after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Near but not touching proximity, blush heavy acting, daylight warmth, friendship circle softness, delicate confession framing, Shy transition space Bloom with Kimi ni Todoke lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on fine rounded contour, pale aqua-blue, soft cel transitions, measured open space. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -327,28 +318,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ao Haru Ride - Clean Uniform Reunion Ache',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Ao Haru Ride - Clean Uniform Reunion Ache operates as a portable anime-lifestyle router: combine Ao Haru Ride - Clean Uniform Reunion Ache identity cues through Clean styling; reunion glances; cool silhouette contrast; airy negative space; heart stopping close ups; Clean Uniform Reunion Ache with Ao Haru Ride lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Ao Haru Ride may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Contemporary anime line is smooth and precise, with modest weight shifts and broad quiet values.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
-      color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Preserve identity, clothing, expression, pose; restrained detail without imposing a uniform.',
+      color_and_tone: 'Powder blue, charcoal, cream, compact ochre, neutral mids.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Broad neutral illumination and soft shadows; no sunrise or artificial source.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Matte surfaces, clean cel fills, slight paper softness; no lens blur or gloss.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
-      atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
-      rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Respect crop; open spacing only within requested arrangement, no forced close-up or pair.',
+      atmosphere_and_mood: 'Stay calm or intense as prompted; no reunion or romantic tension.',
+      rendering_and_quality: 'Two-to-three-band values, crisp contours, stable small details.',
       key_features:
-        'Clean styling; reunion glances; cool silhouette contrast; airy negative space; heart stopping close ups; Clean Uniform Reunion Ache with Ao Haru Ride lineage used only as style reference',
+        'Smooth precise contour, powder-blue neutrals, matte cel planes, context-led open spacing',
       creative_brief:
-        'Use Ao Haru Ride - Clean Uniform Reunion Ache after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Clean styling, reunion glances, cool silhouette contrast, airy negative space, heart stopping close ups, Clean Uniform Reunion Ache with Ao Haru Ride lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on smooth precise contour, powder-blue neutrals, matte cel planes, context-led open spacing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -356,28 +344,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Fruits Basket - Zodiac Warmth and Grief',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Fruits Basket - Zodiac Warmth and Grief operates as a portable anime-lifestyle router: combine Fruits Basket - Zodiac Warmth and Grief identity cues through Warm closeness; kind focal softness; zodiac motifs; springlike emotional haze; gentle symbolic embrace geometry; Zodiac Warmth and Grief with Fruits Basket lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Fruits Basket may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Gentle anime cel drawing uses rounded fine contours, understated shadows, and open focal detail.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve subject, action, count; soften requested edges without adding animals, symbols, or embraces.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Warm ochre, sky blue, moss green, cream, brick red; balance warm and cool mids.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Broad gentle light and low-contrast shadows; neutral unless prompt supplies a source.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Light pigment wash and fine pencil-like contour; no seasonal debris or sparkle.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Maintain composition; overlaps and closeness follow only requested relationships.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Compassion or grief only when present; softness is rendering, not plot.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Stable anatomy, delicate contours, distinct mids, no haze or oversoften.',
       key_features:
-        'Warm closeness; kind focal softness; zodiac motifs; springlike emotional haze; gentle symbolic embrace geometry; Zodiac Warmth and Grief with Fruits Basket lineage used only as style reference',
+        'Rounded fine contour, warm-cool values, subtle wash, closeness only when requested',
       creative_brief:
-        'Use Fruits Basket - Zodiac Warmth and Grief after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Warm closeness, kind focal softness, zodiac motifs, springlike emotional haze, gentle symbolic embrace geometry, Zodiac Warmth and Grief with Fruits Basket lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on rounded fine contour, warm-cool values, subtle wash, closeness only when requested. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -385,28 +373,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Nana - Black-Lace Apartment Heartbreak',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Nana - Black-Lace Apartment Heartbreak operates as a portable anime-lifestyle router: combine Nana - Black Lace Apartment Heartbreak identity cues through Fashion silhouettes; smoky intimacy; performance light accents; emotional confrontation framing; black lace detail; Black Lace Apartment Heartbreak with Nana lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Nana may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Expressive anime ink alternates dense black shapes with fine fashion-illustration strokes and edge accents.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Keep identity, pose, clothing; detail actual fabric and faces without adding a performer or companion.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Black, smoke violet, ivory, oxblood, cold blue; separate deep values from material mids.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Narrow warm highlights against cool shadows only where prompt lighting supports them.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Velvet or lace only on present materials; otherwise matte ink and sparse dry brush.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Respect camera and count; balance one focal area with open space, no interior setting.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Intimate tension only when requested; no automatic heartbreak, night, or confrontation.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Control blacks with thin highlights and clear mids; no gritty smears or costume injection.',
       key_features:
-        'Fashion silhouettes; smoky intimacy; performance light accents; emotional confrontation framing; black lace detail; Black Lace Apartment Heartbreak with Nana lineage used only as style reference',
+        'Dense expressive blacks, smoke-violet mids, selective fabric detail, precise highlights',
       creative_brief:
-        'Use Nana - Black-Lace Apartment Heartbreak after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Fashion silhouettes, smoky intimacy, performance light accents, emotional confrontation framing, black lace detail, Black Lace Apartment Heartbreak with Nana lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on dense expressive blacks, smoke-violet mids, selective fabric detail, precise highlights. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -414,28 +402,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ouran High School Host Club - Rose-Cloud Flirt Theater',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Ouran High School Host Club - Rose-Cloud Flirt Theater operates as a portable anime-lifestyle router: combine Ouran High School Host Club - Rose Cloud Flirt Theater identity cues through Rose effects; princely silhouette cues; ornate polish; ensemble comedy staging; tailored detail; Rose Cloud Flirt Theater with Ouran High School Host Club lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Ouran High School Host Club may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
-      color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Refined anime outlines and polished cel planes use small ornamental accents and clean graphic timing.',
+      subject_treatment: 'Retain subject and wardrobe; decorate only existing trim and surfaces.',
+      color_and_tone: 'Ivory, dark teal, gilded ochre, brick red; warm palette without pink wash.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Broad even illumination with one crisp accent; add no spotlight or artificial glow.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Smooth opaque surfaces; bead-like details only on materials already shown.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Respect camera and count; balance existing forms without a set or host cast.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Buoyant elegance only when requested; no automatic flirtation or comedy.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Precise edges, local decoration, uncluttered values, no decorative clouds.',
       key_features:
-        'Rose effects; princely silhouette cues; ornate polish; ensemble comedy staging; tailored detail; Rose Cloud Flirt Theater with Ouran High School Host Club lineage used only as style reference',
+        'Refined cel polish, ivory-teal contrast, local trim detail, clean graphic timing',
       creative_brief:
-        'Use Ouran High School Host Club - Rose-Cloud Flirt Theater after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Rose effects, princely silhouette cues, ornate polish, ensemble comedy staging, tailored detail, Rose Cloud Flirt Theater with Ouran High School Host Club lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on refined cel polish, ivory-teal contrast, local trim detail, clean graphic timing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -443,28 +429,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Paradise Kiss - Runway Heartbreak Chic',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Paradise Kiss - Runway Heartbreak Chic operates as a portable anime-lifestyle router: combine Paradise Kiss - Runway Heartbreak Chic identity cues through Runway silhouettes; stitch texture cues; fashion detail; angular romantic posing; night glamour polish; Runway Heartbreak Chic with Paradise Kiss lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Paradise Kiss may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Fashion-illustration anime line combines long angular strokes, crisp silhouette cuts, and narrow seam detail.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Keep figure, garment, and pose; draw seams only on clothing the prompt supplies.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Black, electric teal, acid lime, muted violet, silver; bright planes stay selective.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Hard specular accents against matte shadows; reflections only on supporting surfaces.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Fine stitches on existing textiles and matte treatment elsewhere; no wardrobe substitution.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Preserve crop; diagonal silhouette rhythm only where requested gesture allows.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Let line contrast suggest elegance or abrasion without imposing a runway scene.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Sharp edges, thin accents, controlled reflectance, no all-over gloss.',
       key_features:
-        'Runway silhouettes; stitch texture cues; fashion detail; angular romantic posing; night glamour polish; Runway Heartbreak Chic with Paradise Kiss lineage used only as style reference',
+        'Angular editorial line, selective stitch detail, electric accents, matte-gloss contrast',
       creative_brief:
-        'Use Paradise Kiss - Runway Heartbreak Chic after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Runway silhouettes, stitch texture cues, fashion detail, angular romantic posing, night glamour polish, Runway Heartbreak Chic with Paradise Kiss lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on angular editorial line, selective stitch detail, electric accents, matte-gloss contrast. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -472,28 +458,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Lovely Complex - Height-Gap Comedy Romance',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Lovely Complex - Height-Gap Comedy Romance operates as a portable anime-lifestyle router: combine Lovely Complex - Height Gap Comedy Romance identity cues through Scale contrast compositions; comic reaction faces; banter body language; bright youth color; loud to soft timing; Height Gap Comedy Romance with Lovely Complex lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Lovely Complex may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Comedic anime drawing varies contour weight and spacing for readable beats without changing scale.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Keep proportions and identity; exaggerate only requested expression or gesture, never height contrast.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
-      lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Sun yellow, turquoise, tomato red, ivory, charcoal in bold separated blocks.',
+      lighting_and_shadow: 'Bright even cel light and one dark anchor; no stage-like lighting.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Clean color surfaces with short accent hatch; no symbols without a prompt cue.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
-      atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Respect framing and count; alternate dense and open areas without resizing forms.',
+      atmosphere_and_mood: 'Humor only when requested; preserve quiet or serious moods when asked.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Crisp silhouette, squash limited to expression, no stars or excess effects.',
       key_features:
-        'Scale contrast compositions; comic reaction faces; banter body language; bright youth color; loud to soft timing; Height Gap Comedy Romance with Lovely Complex lineage used only as style reference',
+        'Variable contour rhythm, vivid color blocks, timing through space, expression without scale change',
       creative_brief:
-        'Use Lovely Complex - Height-Gap Comedy Romance after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Scale contrast compositions, comic reaction faces, banter body language, bright youth color, loud to soft timing, Height Gap Comedy Romance with Lovely Complex lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on variable contour rhythm, vivid color blocks, timing through space, expression without scale change. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -501,28 +485,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Skip Beat! - Revenge Idol Stardom Spark',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Skip Beat! - Revenge Idol Stardom Spark operates as a portable anime-lifestyle router: combine Skip Beat! - Revenge Idol Stardom Spark identity cues through Showbiz costume logic; performance space pressure; mask symbolism; revenge expression spikes; starburst comedic effects; Revenge Idol Stardom Spark with Skip Beat! lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Skip Beat! may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Performance-ready anime illustration sharpens contours and shadow cutouts, with precise glints on flat color.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
-      color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Preserve face, clothing, and action; increase edge contrast without masks or stage elements.',
+      color_and_tone: 'Ink violet, warm ivory, muted gold, compact red accent, clear neutral mids.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Narrow edge light only if prompt includes a source; simple shadows elsewhere.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Clean cel fills with few highlights; no stars or metallic texture by default.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Keep view and count; radiating marks only if requested action contains radiance.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Drama, confidence, or humor follow prompt; imply no fame or performance.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Hard contour, selective accents, stable details, no visual spectacle.',
       key_features:
-        'Showbiz costume logic; performance space pressure; mask symbolism; revenge expression spikes; starburst comedic effects; Revenge Idol Stardom Spark with Skip Beat! lineage used only as style reference',
+        'Sharp silhouette, ink-violet values, selective glints, radiance only when requested',
       creative_brief:
-        'Use Skip Beat! - Revenge Idol Stardom Spark after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Showbiz costume logic, performance space pressure, mask symbolism, revenge expression spikes, starburst comedic effects, Revenge Idol Stardom Spark with Skip Beat! lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on sharp silhouette, ink-violet values, selective glints, radiance only when requested. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -530,28 +513,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Boys Over Flowers - Elite Campus Melodrama',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Boys Over Flowers - Elite Campus Melodrama operates as a portable anime-lifestyle router: combine Boys Over Flowers - Elite Campus Melodrama identity cues through Elite status polish; social hierarchy staging; vertical confrontations; tailored detail; rain soaked dramatic beats; Elite Campus Melodrama with Boys Over Flowers lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Boys Over Flowers may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Polished anime drawing contrasts precise straight edges with rounded contours and quiet cel shadow.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
-      color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Retain subject, clothing, arrangement; show hierarchy through edge and value, not social role.',
+      color_and_tone: 'Deep indigo, graphite, warm ivory, muted brass, small burgundy note.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
-      texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Cool directional shadows and restrained pale edge; no rain or invented source.',
+      texture_and_material: 'Clean matte planes; fine trim only on existing ornament.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Respect camera and count; vertical alignment only if composition supports it.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
-      rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Formal restraint shapes line only; class tension and melodrama are optional.',
+      rendering_and_quality: 'Polished edges, modest contrast, reserved shine, no uniform cues.',
       key_features:
-        'Elite status polish; social hierarchy staging; vertical confrontations; tailored detail; rain soaked dramatic beats; Elite Campus Melodrama with Boys Over Flowers lineage used only as style reference',
+        'Precise edge hierarchy, indigo-brass palette, contextual vertical rhythm, restrained cel finish',
       creative_brief:
-        'Use Boys Over Flowers - Elite Campus Melodrama after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Elite status polish, social hierarchy staging, vertical confrontations, tailored detail, rain soaked dramatic beats, Elite Campus Melodrama with Boys Over Flowers lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on precise edge hierarchy, indigo-brass palette, contextual vertical rhythm, restrained cel finish. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -559,28 +539,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Orange - Sunset Regret Letter Drama',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Orange - Sunset Regret Letter Drama operates as a portable anime-lifestyle router: combine Orange - Sunset Regret Letter Drama identity cues through Message motifs; sunset gradients; ensemble tenderness; time memory framing; restrained confession pressure; Sunset Regret Letter Drama with Orange lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Orange may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Anime cel and watercolor hybrid softens selected contours into translucent overlap while focal lines stay clear.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve subject, action, number; repeat imagery only if memory or echo is explicitly requested.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
-      lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Warm ochre, dusty blue, faded lilac, muted coral, charcoal; gradients stay local.',
+      lighting_and_shadow: 'Warm-cool value drift within forms; no sunset or time-of-day light.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Diluted wash, subtle paper tooth, controlled pigment edges; keep major forms legible.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Keep camera; open space, no extra letters, clocks, or duplicate figures.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
-      rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'Message motifs; sunset gradients; ensemble tenderness; time memory framing; restrained confession pressure; Sunset Regret Letter Drama with Orange lineage used only as style reference',
+        'Wistfulness only when requested, through softened edges rather than story cues.',
+      rendering_and_quality: 'Clear focal contour, quiet layers, no global bloom or sepia.',
+      key_features: 'Translucent overlap, warm-cool wash, soft edge intervals, clear focal contour',
       creative_brief:
-        'Use Orange - Sunset Regret Letter Drama after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Message motifs, sunset gradients, ensemble tenderness, time memory framing, restrained confession pressure, Sunset Regret Letter Drama with Orange lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on translucent overlap, warm-cool wash, soft edge intervals, clear focal contour. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -588,28 +565,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Say I Love You - Night-Walk Intimacy',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Say I Love You - Night-Walk Intimacy operates as a portable anime-lifestyle router: combine Say I Love You - Night Walk Intimacy identity cues through Night pool lighting; modern casual softness; protective gesture language; realistic intimate spacing; trust building eye contact; Night Walk Intimacy with Say I Love You lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Say I Love You may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Anime line combines rounded contours, selectively pooled dark shapes, and small reflective accents.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Keep relationships, distance, pose, count; assume no couple, walk, or night scene.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Deep teal, amber, pewter blue, natural subject neutrals, restrained contrast.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Warm accents against cool values only when supported; otherwise retain prompt lighting.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Broken reflections only on wet or glossy surfaces already depicted; dry forms stay matte.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Preserve crop and spacing; neither close in nor separate subjects unless requested.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Intimacy only if requested; retain humor, action, or distance as intended.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Small highlights, open blacks, clean contours, no rain haze or cinematic blur.',
       key_features:
-        'Night pool lighting; modern casual softness; protective gesture language; realistic intimate spacing; trust building eye contact; Night Walk Intimacy with Say I Love You lineage used only as style reference',
+        'Rounded contour, teal-amber accent, localized reflections, spacing follows the prompt',
       creative_brief:
-        'Use Say I Love You - Night-Walk Intimacy after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Night pool lighting, modern casual softness, protective gesture language, realistic intimate spacing, trust building eye contact, Night Walk Intimacy with Say I Love You lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on rounded contour, teal-amber accent, localized reflections, spacing follows the prompt. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -617,28 +594,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Maid Sama! - Secret Uniform Double Life',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Maid Sama! - Secret Uniform Double Life operates as a portable anime-lifestyle router: combine Maid Sama! - Secret Uniform Double Life identity cues through Frill coded sparkle; strict to flustered acting; secret identity staging; authority costume contrast; playful dominance framing; Secret Uniform Double Life with Maid Sama! lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Maid Sama! may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Precise anime contour contrasts straight structured edges with small ruffle-like rhythms and cel shadows.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve age, identity, action, clothing; detail trim only when already present.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Black, ivory, plum, sharp red; contrast serves legibility, not a role change.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Clear directional light and smooth shadows; no split identity or spotlight.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Satin only where shown; otherwise matte fills and patterns confined to present surfaces.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Keep layout; distinguish existing shapes through value, not panels or staged duality.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Poise or playfulness follows the requested mood; impose no disguise or dominance.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Refined edges, prompt-led materials, sparse details, no costume motifs.',
       key_features:
-        'Frill coded sparkle; strict to flustered acting; secret identity staging; authority costume contrast; playful dominance framing; Secret Uniform Double Life with Maid Sama! lineage used only as style reference',
+        'Structured contour, ruffle rhythm, black-ivory-red values, contrast without wardrobe change',
       creative_brief:
-        'Use Maid Sama! - Secret Uniform Double Life after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Frill coded sparkle, strict to flustered acting, secret identity staging, authority costume contrast, playful dominance framing, Secret Uniform Double Life with Maid Sama! lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on structured contour, ruffle rhythm, black-ivory-red values, contrast without wardrobe change. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -646,28 +623,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rose of Versailles - Court Portrait Revolution',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Rose of Versailles - Court Portrait Revolution operates as a portable anime-lifestyle router: combine Rose of Versailles - Court Portrait Revolution identity cues through Baroque ornament; lace and martial contrast; court portrait poses; revolutionary tension; tear bright dramatic gazes; Court Portrait Revolution with Rose of Versailles lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Rose of Versailles may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Ornate anime ink layers fine engraved contours over broad black and pale cel planes.',
+      subject_treatment: 'Keep pose, garments, proportions; enrich only surfaces already present.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Black, bone, deep scarlet, antique gold, pale blue in distinct value-led blocks.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'High-contrast directional light with crisp boundaries; add no dramatic source.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Sparse hatch and polished highlights only where shown material supports them.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
-      atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
-      rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Preserve framing; use opposing diagonals inside existing forms, no forced portrait pose.',
+      atmosphere_and_mood: 'Boldness comes from line contrast, not a court or conflict scene.',
+      rendering_and_quality: 'Legible outer contour, sparse layered ornament, no decorative frame.',
       key_features:
-        'Baroque ornament; lace and martial contrast; court portrait poses; revolutionary tension; tear bright dramatic gazes; Court Portrait Revolution with Rose of Versailles lineage used only as style reference',
+        'Engraved contour, black-bone contrast, scarlet-gold accents, disciplined diagonals',
       creative_brief:
-        'Use Rose of Versailles - Court Portrait Revolution after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Baroque ornament, lace and martial contrast, court portrait poses, revolutionary tension, tear bright dramatic gazes, Court Portrait Revolution with Rose of Versailles lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on engraved contour, black-bone contrast, scarlet-gold accents, disciplined diagonals. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -675,28 +649,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Neighborhood Story - Harajuku Handmade Romance',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Neighborhood Story - Harajuku Handmade Romance operates as a portable anime-lifestyle router: combine Neighborhood Story - Harajuku Handmade Romance identity cues through Handmade accessories; Harajuku color; craft pattern cues; street fashion silhouettes; youthful romance staging; Harajuku Handmade Romance with Neighborhood Story lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Neighborhood Story may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Hand-drawn anime line uses elastic contours, hand-cut color blocks, and small pattern accents.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Retain age, clothing, accessories, action, count; pattern only existing surfaces.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Turquoise, sunshine yellow, cherry red, violet, charcoal in balanced groups.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Flat ambient values with crisp local highlights; imply no specific light source.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Textile pattern or marker grain only on fabric or surfaces named in prompt.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
-      atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Respect composition; stagger color masses within existing forms, add no group or accessories.',
+      atmosphere_and_mood: 'DIY energy is optional; match the requested mood and setting.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Crisp edges, slight hand-drawn irregularity, no distressed print wear.',
       key_features:
-        'Handmade accessories; Harajuku color; craft pattern cues; street fashion silhouettes; youthful romance staging; Harajuku Handmade Romance with Neighborhood Story lineage used only as style reference',
+        'Elastic hand-drawn contour, bright color blocks, local surface pattern, slight line irregularity',
       creative_brief:
-        'Use Neighborhood Story - Harajuku Handmade Romance after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Handmade accessories, Harajuku color, craft pattern cues, street fashion silhouettes, youthful romance staging, Harajuku Handmade Romance with Neighborhood Story lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on elastic hand-drawn contour, bright color blocks, local surface pattern, slight line irregularity. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -704,28 +677,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Honey and Clover - Art-School Spring Ache',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Honey and Clover - Art-School Spring Ache operates as a portable anime-lifestyle router: combine Honey and Clover - Art School Spring Ache identity cues through Sketchbook textures; spring light; quiet ensemble spacing; unspoken affection acting; analog creative warmth; Art School Spring Ache with Honey and Clover lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Honey and Clover may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Anime illustration combines visible pencil underdrawing, diluted gouache, and clear ink on warm paper.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve subject and action; sketch existing contours and materials, add no tools.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Paper cream, faded indigo, moss green, amber; quiet mids and one dark anchor.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Gentle warm-cool variation without implying spring, sunset, room, or window.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Pencil grain, transparent wash, selective dry edges; underlying form remains readable.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Keep framing; slight line asymmetry without rearranging subjects or scene.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        "Analog softness is surface only; preserve the prompt's tone and intensity.",
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Visible drawing marks, controlled washes, no overgloss or fake paper damage.',
       key_features:
-        'Sketchbook textures; spring light; quiet ensemble spacing; unspoken affection acting; analog creative warmth; Art School Spring Ache with Honey and Clover lineage used only as style reference',
+        'Pencil underdrawing, transparent gouache, warm paper, asymmetry within supplied framing',
       creative_brief:
-        'Use Honey and Clover - Art-School Spring Ache after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Sketchbook textures, spring light, quiet ensemble spacing, unspoken affection acting, analog creative warmth, Art School Spring Ache with Honey and Clover lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on pencil underdrawing, transparent gouache, warm paper, asymmetry within supplied framing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -733,28 +706,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Kamisama Kiss - Shrine Romance and Fox Familiar',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Kamisama Kiss - Ritual Romance and Fox Familiar operates as a portable anime-lifestyle router: combine Kamisama Kiss - Shrine Romance and Fox Familiar identity cues through Vermilion sacred motifs; fox motifs; moonlit vertical rhythm; divine contract details; playful supernatural intimacy; Shrine Romance and Fox Familiar with Kamisama Kiss lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Kamisama Kiss may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Bold anime ink meets flat mineral color and small seal-like marks on restrained paper.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
-      color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Preserve subject and design; add symbolic motifs only when prompt includes them.',
+      color_and_tone: 'Vermilion, pine, charcoal, warm ivory, muted brass with separated values.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'One clear highlight direction and firm shadows; imply no moonlight or sacred setting.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Dry-brush edges and slight paper grain; graphic marks sparse and non-symbolic by default.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Respect crop; vertical emphasis only if the supplied composition supports it.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
-      rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Mythic or playful mood follows prompt; no creature, contract, or ritual is implied.',
+      rendering_and_quality: 'Thick-to-thin line, crisp cel blocks, no invented iconography.',
       key_features:
-        'Vermilion sacred motifs; fox motifs; moonlit vertical rhythm; divine contract details; playful supernatural intimacy; Shrine Romance and Fox Familiar with Kamisama Kiss lineage used only as style reference',
+        'Bold mineral ink, vermilion-pine palette, restrained paper grain, symbols only when prompted',
       creative_brief:
-        'Use Kamisama Kiss - Ritual Romance and Fox Familiar after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Vermilion sacred motifs, fox motifs, moonlit vertical rhythm, divine contract details, playful supernatural intimacy, Shrine Romance and Fox Familiar with Kamisama Kiss lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on bold mineral ink, vermilion-pine palette, restrained paper grain, symbols only when prompted. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -762,28 +733,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Princess Jellyfish - Jelly-Color Otaku Makeover',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Princess Jellyfish - Jelly-Color Otaku Makeover operates as a portable anime-lifestyle router: combine Princess Jellyfish - Jelly Color Otaku Makeover identity cues through Jellyfish motifs; frilly fabric detail; cozy clutter density; makeover contrasts; sisterhood group energy; Jelly Color Otaku Makeover with Princess Jellyfish lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Princess Jellyfish may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Anime cel drawing uses translucent contour layers, pearly transitions, and delicate filament marks.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Keep silhouette and materials; transparency only on parts already described as translucent.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Sea-glass teal, violet, pearl, citron, deep blue; cool highlights and clear shadows.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Transmitted light only for depicted transparent forms; opaque parts use firm cel shadows.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Soft wash and fine accents locally; no tentacles, aquatic subjects, clutter, or makeover details.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Preserve camera; airy overlap only among shapes already in the prompt.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Wonder or playfulness follows prompt; surface treatment works on ordinary subjects too.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Separate translucent accents from opaque planes; avoid muddy gradients and excess ornament.',
       key_features:
-        'Jellyfish motifs; frilly fabric detail; cozy clutter density; makeover contrasts; sisterhood group energy; Jelly Color Otaku Makeover with Princess Jellyfish lineage used only as style reference',
+        'Pearly translucent layers, sea-glass-violet palette, local filament marks, clear opaque forms',
       creative_brief:
-        'Use Princess Jellyfish - Jelly-Color Otaku Makeover after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Jellyfish motifs, frilly fabric detail, cozy clutter density, makeover contrasts, sisterhood group energy, Jelly Color Otaku Makeover with Princess Jellyfish lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on pearly translucent layers, sea-glass-violet palette, local filament marks, clear opaque forms. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -791,28 +762,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sukitte Ii na yo - Rainy Umbrella Confession',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Sukitte Ii na yo - Rainy Umbrella Confession operates as a portable anime-lifestyle router: combine Sukitte Ii na yo - Rainy Umbrella Confession identity cues through Canopy framing; rain reflections; sodium lit intimacy; hesitant touch language; confession heavy close ups; Rainy Umbrella Confession with Sukitte Ii na yo lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Sukitte Ii na yo may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Anime linework layers smooth curved planes with refracted color accents and crisp cel edges.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
-      color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Keep subject, spacing, materials; reflections only on wet or glossy surfaces already present.',
+      color_and_tone: 'Deep teal, amber, pearl gray, muted burgundy, compact pale highlights.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Warm-cool contrast only when supported; otherwise follow prompt lighting without inventing night.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
-      camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Broken reflective strokes on existing glass or wet surfaces; dry forms stay matte.',
+      camera_and_composition: 'Preserve crop; curved overlaps come only from forms already shown.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Stillness or intimacy is never presumed; retain the requested mood and relationships.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Clear planes, small highlight masks, stable contours, no rain haze or blur.',
       key_features:
-        'Canopy framing; rain reflections; sodium lit intimacy; hesitant touch language; confession heavy close ups; Rainy Umbrella Confession with Sukitte Ii na yo lineage used only as style reference',
+        'Curved plane layering, deep-teal-amber contrast, local reflected strokes, prompt-led mood and spacing',
       creative_brief:
-        'Use Sukitte Ii na yo - Rainy Umbrella Confession after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Canopy framing, rain reflections, sodium lit intimacy, hesitant touch language, confession heavy close ups, Rainy Umbrella Confession with Sukitte Ii na yo lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on curved plane layering, deep-teal-amber contrast, local reflected strokes, prompt-led mood and spacing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -820,28 +789,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Snow White with the Red Hair - Herbal Courtship Fantasy',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Snow White with the Red Hair - Herbal Courtship Fantasy operates as a portable anime-lifestyle router: combine Snow White with the Red Hair - Herbal Courtship Fantasy identity cues through Botanical motifs; courtly warmth; red focal contrast; respectful body language; refined fantasy detail; Herbal Courtship Fantasy with Snow White with the Red Hair lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Snow White with the Red Hair may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Anime line blends clean tapered contours with fine botanical-style strokes and polished cel planes.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
-      color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Preserve subject and surfaces; vein-like marks only on existing plants or requested ornament.',
+      color_and_tone: 'Terracotta, sage, warm ivory, ink blue, muted gold, distinct dark anchor.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        "Warm highlights and cool shadows follow the prompt's actual light direction.",
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Transparent wash and paper softness over crisp edges; no added containers or botanicals.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Respect camera; curved line rhythm follows existing forms, no garden or court.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Warmth or courtesy follows prompt; botanical detail is technique, not content.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Local detail, crisp silhouettes, subdued pigment, no decorative clutter.',
       key_features:
-        'Botanical motifs; courtly warmth; red focal contrast; respectful body language; refined fantasy detail; Herbal Courtship Fantasy with Snow White with the Red Hair lineage used only as style reference',
+        'Tapered botanical-style line, terracotta-sage palette, crisp cel edges, details on existing forms',
       creative_brief:
-        'Use Snow White with the Red Hair - Herbal Courtship Fantasy after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Botanical motifs, courtly warmth, red focal contrast, respectful body language, refined fantasy detail, Herbal Courtship Fantasy with Snow White with the Red Hair lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on tapered botanical-style line, terracotta-sage palette, crisp cel edges, details on existing forms. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -849,28 +817,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Yona of the Dawn - Crimson Princess Resolve',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Yona of the Dawn - Crimson Princess Resolve operates as a portable anime-lifestyle router: combine Yona of the Dawn - Crimson Princess Resolve identity cues through Wind worn silhouettes; crimson focal points; wilderness to regal contrast; guardian like ensemble staging; heroic profile poses; Crimson Princess Resolve with Yona of the Dawn lineage used only as style reference with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction; Yona of the Dawn may guide line economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Anime drawing uses long tapered contours, weathered edge marks, and firm cel shadows for direction.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve silhouette, clothing, action, count; motion marks follow only stated gesture.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Burnt vermilion, sage, dusty blue, charcoal, ochre; earthy mids and one accent.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Separate warm and cool planes with neutral direction; imply no wilderness or sunset.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Dry-brush scuffs on selected edges only; smooth base color, no blanket wear.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
-      atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Keep view; directional balance without requiring profile pose or entourage.',
+      atmosphere_and_mood: 'Resolve only if called for; otherwise preserve emotional register.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Long clear contours, selective texture, readable action, no unrequested debris.',
       key_features:
-        'Wind worn silhouettes; crimson focal points; wilderness to regal contrast; guardian like ensemble staging; heroic profile poses; Crimson Princess Resolve with Yona of the Dawn lineage used only as style reference',
+        'Long directional contour, earthy cel planes, selective dry-brush, motion follows the prompt',
       creative_brief:
-        'Use Yona of the Dawn - Crimson Princess Resolve after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Wind worn silhouettes, crimson focal points, wilderness to regal contrast, guardian like ensemble staging, heroic profile poses, Crimson Princess Resolve with Yona of the Dawn lineage used only as style reference, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on long directional contour, earthy cel planes, selective dry-brush, motion follows the prompt. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -878,28 +845,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Airy First-Love Tenderness',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Airy First-Love Tenderness operates as a portable anime-lifestyle router: combine Airy First Love Tenderness identity cues through Blush soft emotional timing; tender micro expressions; hesitant proximity; pastel restraint; heartfelt gesture language; Airy First Love Tenderness anime style cues with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Airy anime linework uses light tapered strokes, open shapes, and softened focal transitions.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve expression, age, proportions, and relationships; do not force blush or romance.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Pale blue, warm cream, graphite anchors, restrained coral; clean highlights.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Broad soft illumination and small glints with enough shadow to read every form.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
-      camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
-      atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Smooth surfaces with slight wash-softening at selected edges; no glitter or bloom.',
+      camera_and_composition: 'Respect crop; leave air around forms only where composition allows.',
+      atmosphere_and_mood: 'Tenderness comes from pauses only when it matches the requested mood.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Sparse detail, clear contour hierarchy, quiet separation, no airbrushed structure.',
       key_features:
-        'Blush soft emotional timing; tender micro expressions; hesitant proximity; pastel restraint; heartfelt gesture language; Airy First Love Tenderness anime style cues',
+        'Feathered line, pale cool-warm balance, clean focal glints, controlled open spacing',
       creative_brief:
-        'Use Airy First-Love Tenderness after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Blush soft emotional timing, tender micro expressions, hesitant proximity, pastel restraint, heartfelt gesture language, Airy First Love Tenderness anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on feathered line, pale cool-warm balance, clean focal glints, controlled open spacing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -907,28 +872,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ornate Palace Shojo',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Ornate Palace Shojo operates as a portable anime-lifestyle router: combine Ornate Palace Shojo identity cues through Ornate Palace Shojo anime style cues; delicate linework; elongated gesture; ribbon or petal rhythm; jewel or occult accents; fashion silhouette with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Elegant anime cel illustration uses long tapered contours, fine ornamental turns, and nested shapes.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Keep anatomy and costume as prompted; place filigree only along existing edges or surfaces.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Warm ivory, peacock teal, jade, cobalt, antique gold; decisive dark anchors.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Broad even light with small warm edge notes and crisp separating shadows.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Fine line and matte cel fill; detail textiles or metals only when shown.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Maintain the camera; measured vertical rhythm and balanced space, no added architecture.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Refinement comes through poised line spacing; preserve the requested emotion.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Clean thin-to-thick contour, selective ornament, stable values, no crowded trim.',
       key_features:
-        'Ornate Palace Shojo anime style cues; delicate linework; elongated gesture; ribbon or petal rhythm; jewel or occult accents; fashion silhouette',
+        'Tapered ornamental contour, nested cel shapes, jade-cobalt accents, measured vertical balance',
       creative_brief:
-        'Use Ornate Palace Shojo after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Ornate Palace Shojo anime style cues, delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on tapered ornamental contour, nested cel shapes, jade-cobalt accents, measured vertical balance. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -936,28 +901,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Theatrical Duel Symbolism',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Theatrical Duel Symbolism operates as a portable anime-lifestyle router: combine Theatrical Duel Symbolism identity cues through Symbolic opposition framing; rose iconography grammar; stage space surrealism; ritual emotional choreography; Theatrical Duel Symbolism anime style cues; Symbolist theatrical shojo style with surreal stage architecture with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Graphic anime ink sets opposed forms against sharply divided planes and broad black contours.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
-      color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Preserve pose and form; sharpen existing angles without adding a duel, emblem, or prop.',
+      color_and_tone: 'Black, paper ivory, oxblood, small vermilion; value split leads over color.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Directional hard light and decisive shadow blocks; accents only on depicted surfaces.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Opaque cel masses with sparse engraved hatch; ornament only when already requested.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Respect framing; counterbalance existing shapes with diagonals, never a stage layout.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
-      rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        "Visual opposition and pauses add tension while preserving the prompt's mood.",
+      rendering_and_quality: 'Forceful contours, flat shadows, few accents, no decorative clutter.',
       key_features:
-        'Symbolic opposition framing; rose iconography grammar; stage space surrealism; ritual emotional choreography; Theatrical Duel Symbolism anime style cues; Symbolist theatrical shojo style with surreal stage architecture',
+        'Opposed value planes, emphatic ink, diagonal counterbalance, vermilion accents',
       creative_brief:
-        'Use Theatrical Duel Symbolism after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Symbolic opposition framing, rose iconography grammar, stage space surrealism, ritual emotional choreography, Theatrical Duel Symbolism anime style cues, Symbolist theatrical shojo style with surreal stage architecture, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on opposed value planes, emphatic ink, diagonal counterbalance, vermilion accents. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -965,28 +928,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Soft Healing Ensemble',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Soft Healing Ensemble operates as a portable anime-lifestyle router: combine Soft Healing Ensemble identity cues through Soft Healing Ensemble anime style cues, delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Soft anime illustration favors round contour turns, low-contrast cel planes, and matte edges.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Retain subject and count; soften selected contours while keeping structure and expression clear.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Sage, cream, cloudy blue, muted ochre; low saturation and one warm focal note.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Broad diffuse illumination and shallow shadows; imply no room or time of day.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Smooth matte fills with barely visible paper grain; no sparkle or wet shine.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Keep framing; open space and gentle overlap organize only subjects already present.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Reassurance comes from breathing room when compatible with the requested emotion.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Few readable value tiers, soft stable edges, sparse detail, no obscuring haze.',
       key_features:
-        'Soft Healing Ensemble anime style cues; delicate linework; elongated gesture; ribbon or petal rhythm; jewel or occult accents; fashion silhouette',
+        'Rounded contours, low-contrast cel values, sage-ochre palette, generous breathing room',
       creative_brief:
-        'Use Soft Healing Ensemble after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Soft Healing Ensemble anime style cues, delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on rounded contours, low-contrast cel values, sage-ochre palette, generous breathing room. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -994,28 +957,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Punk Romance Drama',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Punk Romance Drama operates as a portable anime-lifestyle router: combine Punk Romance Drama identity cues through Fashion emotion coupling; eyeliner contrast language; music scene visual cadence; close range expressive dramaturgy; Punk Romance Drama anime style cues; Punk romance editorial anime style balancing glam abrasion with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Expressive anime drawing mixes heavy variable ink, angular cuts, and short dry strokes.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Keep proportions and clothing; direct sharp marks along existing gesture, add no gear.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Coal black, electric blue, acid yellow, hot coral; bright color stays selective.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
-      texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Hard key, compact rim accents, broad dark masses; no performance lights.',
+      texture_and_material: 'Scuffed brush texture only at chosen edges; leave large fills clean.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Preserve crop and action; tilted spacing only follows existing gesture.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Intensity comes from line-weight shifts and color friction; mood stays prompt-led.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'Fashion emotion coupling; eyeliner contrast language; music scene visual cadence; close range expressive dramaturgy; Punk Romance Drama anime style cues; Punk romance editorial anime style balancing glam abrasion',
+        'Crisp silhouette, limited scratches, readable mids, no blanket distress.',
+      key_features: 'Heavy variable ink, angular cuts, electric accents, localized dry-brush',
       creative_brief:
-        'Use Punk Romance Drama after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Fashion emotion coupling, eyeliner contrast language, music scene visual cadence, close range expressive dramaturgy, Punk Romance Drama anime style cues, Punk romance editorial anime style balancing glam abrasion, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on heavy variable ink, angular cuts, electric accents, localized dry-brush. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -1023,28 +984,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rose-Petal Comedy Club',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Rose-Petal Comedy Club operates as a portable anime-lifestyle router: combine Rose Petal Comedy Club identity cues through Decorative comedy timing; lavish shojo polish; performance coded elegance; expressive eye detail; heartfelt farce; Rose Petal Comedy Club anime style cues with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Bright anime cel craft pairs refined outlines with elastic marks at expressive focal details.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve identity and proportions; vary existing expression without changing anatomy.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Golden cream, dark teal, brick red, plum; warm highlights against cool shadows.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Clear even illumination with short shadow snaps at focal edges, no spotlight.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Clean opaque fills and tiny decorative marks only where supported by the prompt.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
-      atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Respect frame and count; time the image with alternating open and dense space.',
+      atmosphere_and_mood: 'Humor appears only when the requested action is comic.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Polished edges, restrained ornament, stable structure, no automatic sparkle.',
       key_features:
-        'Decorative comedy timing; lavish shojo polish; performance coded elegance; expressive eye detail; heartfelt farce; Rose Petal Comedy Club anime style cues',
+        'Elastic focal marks, polished cel fill, warm-cool contrast, timing through space',
       creative_brief:
-        'Use Rose-Petal Comedy Club after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Decorative comedy timing, lavish shojo polish, performance coded elegance, expressive eye detail, heartfelt farce, Rose Petal Comedy Club anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on elastic focal marks, polished cel fill, warm-cool contrast, timing through space. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -1052,28 +1012,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Luminous Letter Drama',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Luminous Letter Drama operates as a portable anime-lifestyle router: combine Luminous Letter Drama identity cues through Epistolary gesture grammar; amber correspondence lighting; period fabric delicacy; longing through stillness framing; Luminous Letter Drama anime style cues; Epistolary romance shojo style with period elegance with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Fine anime ink contour sits over translucent watercolor wash with delicate interior strokes.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Keep subject, clothing, and gesture; describe existing folds without adding letters or props.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Muted amber, slate blue, warm ivory, faded indigo; soft mids and a dark anchor.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Warm-cool value drift across forms; broad shadows, no invented lamp or window.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Light paper tooth, diluted pigment edges, selective dry brush; no writing by default.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Maintain viewpoint; use quiet margins without letter-writing composition.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
-      rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
-      key_features:
-        'Epistolary gesture grammar; amber correspondence lighting; period fabric delicacy; longing through stillness framing; Luminous Letter Drama anime style cues; Epistolary romance shojo style with period elegance',
+        'Stillness comes through restrained contrast; the requested mood sets the tone.',
+      rendering_and_quality: 'Thin wash, legible ink, subtle paper texture; no global sepia haze.',
+      key_features: 'Fine ink contour, transparent pigment wash, amber-slate palette, open margins',
       creative_brief:
-        'Use Luminous Letter Drama after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Epistolary gesture grammar, amber correspondence lighting, period fabric delicacy, longing through stillness framing, Luminous Letter Drama anime style cues, Epistolary romance shojo style with period elegance, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on fine ink contour, transparent pigment wash, amber-slate palette, open margins. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -1081,28 +1039,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cozy Sign-Language Romance',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Cozy Sign-Language Romance operates as a portable anime-lifestyle router: combine Cozy Sign Language Romance identity cues through Tactile communication; careful hand gestures; soft winter warmth; tender micro expressions; close range emotional readability; Cozy Sign Language Romance anime style cues with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Responsive anime line gives small gestures crisp contours in a calm matte cel finish.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Keep action and count; clarify only existing gestures without forcing hands or a close view.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
-      lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Warm ivory, slate, mineral teal, muted copper; prioritize recognition and clear values.',
+      lighting_and_shadow: 'Neutral broad light, small clean highlights, simple readable shadows.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Smooth matte fills with tactile stipple only at relevant edges or surfaces.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
-      atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Preserve camera and layout; maintain gaps among existing forms without rearranging.',
+      atmosphere_and_mood: 'Attentive calm only when it fits; otherwise keep the requested mood.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Legible contours, uncluttered detail, even color, no blur or ornament.',
       key_features:
-        'Tactile communication; careful hand gestures; soft winter warmth; tender micro expressions; close range emotional readability; Cozy Sign Language Romance anime style cues',
+        'Gesture-readable contour, matte cel planes, teal-copper accents, clarity through spacing',
       creative_brief:
-        'Use Cozy Sign-Language Romance after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Tactile communication, careful hand gestures, soft winter warmth, tender micro expressions, close range emotional readability, Cozy Sign Language Romance anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on gesture-readable contour, matte cel planes, teal-copper accents, clarity through spacing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -1110,28 +1066,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Crimson Hair Quest Romance',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Crimson Hair Quest Romance operates as a portable anime-lifestyle router: combine Crimson Hair Quest Romance identity cues through Brave shojo resolve; crimson accent identity; loyalty warmth; wind swept romance; expressive eye detail; Crimson Hair Quest Romance anime style cues with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Decisive anime contours shift from firm outer strokes to fast tapered accents and cel shadows.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
-      color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Retain anatomy, costume, gesture; follow existing movement without adding adventure props.',
+      color_and_tone: 'Clay red, deep blue, sand, cool gray; red is an accent, not hair color.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Brisk directional light against firm cool shadows; reflections stay on visible surfaces.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Smooth opaque color with sparse dry-brush edges; no simulated wind or dust.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Preserve camera and count; use diagonals only when action supports them.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Resolve comes through a clear silhouette when appropriate; do not impose romance.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Legible action, crisp cel bands, sparse texture, no unrequested motion blur.',
       key_features:
-        'Brave shojo resolve; crimson accent identity; loyalty warmth; wind swept romance; expressive eye detail; Crimson Hair Quest Romance anime style cues',
+        'Decisive tapered line, clay-red accent, firm cel shadows, gesture-led diagonals',
       creative_brief:
-        'Use Crimson Hair Quest Romance after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Brave shojo resolve, crimson accent identity, loyalty warmth, wind swept romance, expressive eye detail, Crimson Hair Quest Romance anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on decisive tapered line, clay-red accent, firm cel shadows, gesture-led diagonals. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
   {
@@ -1139,28 +1094,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Velvet Gothic Academy',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
     style: {
       aesthetic:
-        'Velvet Gothic Academy operates as a portable anime-lifestyle router: combine Velvet Gothic Academy identity cues through Nocturnal longing; velvet lace materiality; moon silver contrast; gothic romantic restraint; expressive eye detail; Velvet Gothic Academy anime style cues with shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
+        'Nocturne-leaning anime illustration uses fine black contours, dense matte masses, and silver edges.',
       subject_treatment:
-        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
+        'Preserve subject and wardrobe; apply fabric detail only to textiles already present.',
       color_and_tone:
-        'Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky, luminous gold, and softened emotional gradients; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
+        'Black, plum, cool silver, muted sea green; distinguish darks from material mids.',
       lighting_and_shadow:
-        'Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and symbolic highlight placement; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
+        'Narrow edge highlights over quiet shadows; add no architectural or night setting.',
       texture_and_material:
-        'Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
+        'Velvet or lace detail only on those existing materials; otherwise matte ink and cel fill.',
       camera_and_composition:
-        'Compose through romance-distance framing, transformation arcs, emblem balance, theatrical diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+        'Respect camera; balance dense dark shapes with open space, no architectural frame.',
       atmosphere_and_mood:
-        'Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure, tender healing, and adult melodrama when prompt X requests it; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
+        'Severity through contrast only when requested; do not darken a light mood.',
       rendering_and_quality:
-        'Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
+        'Deliberate blacks, selective fine detail, open mids, no ornate border.',
       key_features:
-        'Nocturnal longing; velvet lace materiality; moon silver contrast; gothic romantic restraint; expressive eye detail; Velvet Gothic Academy anime style cues',
+        'Dense matte silhouette, cool silver edge, dark plum values, selective material ornament',
       creative_brief:
-        'Use Velvet Gothic Academy after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Nocturnal longing, velvet lace materiality, moon silver contrast, gothic romantic restraint, expressive eye detail, Velvet Gothic Academy anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
+        'Apply a visual treatment centered on dense matte silhouette, cool silver edge, dark plum values, selective material ornament. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -6,12 +6,13 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-001.webp",
-    "jobId": "6501b1e7-0045-461e-8504-fe09eb5d712a",
+    "jobId": "fbd3736d-9753-424e-bcb4-126746e01605",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-001.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:17:09.889Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:37:55.712Z"
   },
   {
     "presetId": "SP07-002",
@@ -20,12 +21,13 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-002.webp",
-    "jobId": "6832ea5d-7f3f-4435-a5ca-b2ffd315d5ca",
+    "jobId": "611cf25b-ddaa-4221-9155-6044951c4339",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-002.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:17:41.924Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:37:59.223Z"
   },
   {
     "presetId": "SP07-003",
@@ -34,12 +36,13 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-003.webp",
-    "jobId": "041f14fd-6a89-49d3-b6eb-50dedf12bbed",
+    "jobId": "9f0a1cc3-d462-414b-9abd-7174d3cde266",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-003.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:17:39.231Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:38:02.340Z"
   },
   {
     "presetId": "SP07-004",
@@ -48,12 +51,13 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-004.webp",
-    "jobId": "3dd4e7e7-a002-46fc-b88b-2228853a726c",
+    "jobId": "831f6727-a6bc-4f6f-ae1e-f4b47d63ef8e",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-004.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:17:35.167Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:37:57.453Z"
   },
   {
     "presetId": "SP07-005",
@@ -62,12 +66,13 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-005.webp",
-    "jobId": "fd9f0af2-60e3-4c49-9c74-937f1a7d08d2",
+    "jobId": "f3486abf-7f4c-4c91-a021-a14b628fc40f",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-005.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:17:46.077Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:39:20.829Z"
   },
   {
     "presetId": "SP07-006",
@@ -76,12 +81,13 @@
     "packName": "Architecture & Interior",
     "category": "2. Architectural Movements And Vernaculars",
     "file": "assets/recipes/styles/defaults/SP07-006.webp",
-    "jobId": "d5e633d4-6706-439a-a4ac-426611f5c968",
+    "jobId": "ad0401d4-31a0-41c2-b751-221946ea9789",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-006.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:17:47.736Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:41:23.632Z"
   },
   {
     "presetId": "SP07-007",
@@ -90,12 +96,13 @@
     "packName": "Architecture & Interior",
     "category": "2. Architectural Movements And Vernaculars",
     "file": "assets/recipes/styles/defaults/SP07-007.webp",
-    "jobId": "085d7d32-a9a3-40d5-b6c2-0d3eb1209d5b",
+    "jobId": "dbab030e-76c0-4030-99cd-c2d808f94a70",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-007.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:24:28.158Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:41:30.957Z"
   },
   {
     "presetId": "SP07-008",
@@ -104,12 +111,13 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-008.webp",
-    "jobId": "ef6005a5-7653-4fc0-add2-708c4c93bf24",
+    "jobId": "da395b21-e6e1-4967-b24b-d32a7958430d",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-008.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:17:39.268Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:39:06.938Z"
   },
   {
     "presetId": "SP07-009",
@@ -118,12 +126,13 @@
     "packName": "Architecture & Interior",
     "category": "2. Architectural Movements And Vernaculars",
     "file": "assets/recipes/styles/defaults/SP07-009.webp",
-    "jobId": "15ad18db-711d-4715-887d-18f8ec3f66e2",
+    "jobId": "aaf9e60c-b623-4c3c-993f-9b6e0f995e3c",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-009.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:24:17.694Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:41:31.419Z"
   },
   {
     "presetId": "SP07-010",
@@ -132,12 +141,13 @@
     "packName": "Architecture & Interior",
     "category": "7. Megastructure And Impossible Space",
     "file": "assets/recipes/styles/defaults/SP07-010.webp",
-    "jobId": "7e38927b-02fc-4723-b73e-6aac4714a397",
+    "jobId": "af9ba165-b90b-4d2e-9c4b-ff9a390f7820",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-010.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:23:53.150Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:51:50.175Z"
   },
   {
     "presetId": "SP07-011",
@@ -146,12 +156,13 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-011.webp",
-    "jobId": "4e8469f6-f8dc-4c79-a2e9-77c180669337",
+    "jobId": "e37e66df-f429-4736-8f53-4fb634d9d3ce",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-011.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:24:11.038Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:39:15.156Z"
   },
   {
     "presetId": "SP07-012",
@@ -160,12 +171,13 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-012.webp",
-    "jobId": "9011481c-9bed-406d-9e1b-f4259f7584e2",
+    "jobId": "2cfd3112-2f4e-4dd1-9c02-fd2f25f33437",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-012.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:26:31.697Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:39:15.309Z"
   },
   {
     "presetId": "SP07-013",
@@ -174,12 +186,13 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-013.webp",
-    "jobId": "5bf73c22-6c0c-41a7-9a6a-02dc31bd84d7",
+    "jobId": "60110205-89b5-4894-b1f4-d01d099d8702",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-013.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:26:42.917Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:39:46.967Z"
   },
   {
     "presetId": "SP07-014",
@@ -188,12 +201,13 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-014.webp",
-    "jobId": "19123d3a-91be-4c64-bbe8-3b3c8b208011",
+    "jobId": "6e789f0a-08e4-4542-a9ba-1d0fcc0da117",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-014.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:24:17.641Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:39:58.508Z"
   },
   {
     "presetId": "SP07-015",
@@ -202,12 +216,13 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-015.webp",
-    "jobId": "32ee25db-059f-418b-aeb6-b2d10c3c5606",
+    "jobId": "69b60b48-abcc-4c9d-9cc7-ed910e8af208",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-015.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T22:58:02.742Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:40:12.336Z"
   },
   {
     "presetId": "SP07-016",
@@ -216,12 +231,13 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-016.webp",
-    "jobId": "327f13b5-070e-483f-9cbb-2c956c41d3ad",
+    "jobId": "7647268d-483f-4bef-8b9c-c5faef92ec50",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-016.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:24:06.080Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:39:59.258Z"
   },
   {
     "presetId": "SP07-017",
@@ -230,12 +246,13 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-017.webp",
-    "jobId": "c2f49a1b-0e84-423f-bbf1-5ab4bef6ce61",
+    "jobId": "e1a2fcac-09d5-4fc3-865c-2a6393ffe5e9",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-017.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:30:23.603Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:40:52.031Z"
   },
   {
     "presetId": "SP07-018",
@@ -244,12 +261,13 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-018.webp",
-    "jobId": "43eb7878-e653-4701-a546-3534d39e730d",
+    "jobId": "3acc7d13-9ee4-4e08-89ea-da01f2494432",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-018.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:29:56.750Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:40:39.333Z"
   },
   {
     "presetId": "SP07-019",
@@ -258,12 +276,13 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-019.webp",
-    "jobId": "59435d4c-c0a0-4936-a15d-19245b0be2e2",
+    "jobId": "5d4b4308-bbbf-4c93-bef2-361f95d9d781",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-019.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:30:01.770Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:40:51.569Z"
   },
   {
     "presetId": "SP07-020",
@@ -272,12 +291,13 @@
     "packName": "Architecture & Interior",
     "category": "1. Interior Design Systems",
     "file": "assets/recipes/styles/defaults/SP07-020.webp",
-    "jobId": "e302b9b6-1bc2-43b9-b530-acfe5f6b9c1a",
+    "jobId": "583e6d75-47e8-4673-ad81-daeabb392394",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-020.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:29:42.779Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:40:58.168Z"
   },
   {
     "presetId": "SP07-021",
@@ -286,12 +306,13 @@
     "packName": "Architecture & Interior",
     "category": "2. Architectural Movements And Vernaculars",
     "file": "assets/recipes/styles/defaults/SP07-021.webp",
-    "jobId": "e7fe7e9a-74f0-4fcc-9708-e40f6bfb0e56",
+    "jobId": "ba853478-a14a-4ed0-93ea-fa0d824f8fc8",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-021.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:46:01.744Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:41:36.659Z"
   },
   {
     "presetId": "SP07-022",
@@ -300,12 +321,13 @@
     "packName": "Architecture & Interior",
     "category": "2. Architectural Movements And Vernaculars",
     "file": "assets/recipes/styles/defaults/SP07-022.webp",
-    "jobId": "bfb1ac9b-1190-4edf-a67e-5b271690341d",
+    "jobId": "07ef98f0-a9f2-4de2-8d2c-e7eae966aef2",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-022.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:46:01.779Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:42:13.688Z"
   },
   {
     "presetId": "SP07-023",
@@ -314,12 +336,13 @@
     "packName": "Architecture & Interior",
     "category": "2. Architectural Movements And Vernaculars",
     "file": "assets/recipes/styles/defaults/SP07-023.webp",
-    "jobId": "eef470b7-0932-4eed-8a88-e7db6b55c260",
+    "jobId": "5279134a-e74b-4924-a2b3-34e0586fcfb1",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-023.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:46:10.255Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:42:14.209Z"
   },
   {
     "presetId": "SP07-024",
@@ -328,12 +351,13 @@
     "packName": "Architecture & Interior",
     "category": "2. Architectural Movements And Vernaculars",
     "file": "assets/recipes/styles/defaults/SP07-024.webp",
-    "jobId": "c2d6eae6-1ae3-4e92-82ff-9d1a0c3eea65",
+    "jobId": "bd5189c2-b531-4048-9ec0-12d59a09ab8e",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-024.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:47:12.415Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:42:29.964Z"
   },
   {
     "presetId": "SP07-025",
@@ -342,12 +366,13 @@
     "packName": "Architecture & Interior",
     "category": "2. Architectural Movements And Vernaculars",
     "file": "assets/recipes/styles/defaults/SP07-025.webp",
-    "jobId": "5832c877-0a31-4480-bbdb-26c571542e5f",
+    "jobId": "799440eb-9046-4c6e-a8ea-72380a7e0584",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-025.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:45:58.428Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:42:29.489Z"
   },
   {
     "presetId": "SP07-026",
@@ -356,12 +381,13 @@
     "packName": "Architecture & Interior",
     "category": "2. Architectural Movements And Vernaculars",
     "file": "assets/recipes/styles/defaults/SP07-026.webp",
-    "jobId": "10613de3-d632-4888-bfca-b0a435636867",
+    "jobId": "970bab98-03a8-47f9-9db4-de35401c0c45",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-026.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:29:54.375Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:43:03.077Z"
   },
   {
     "presetId": "SP07-027",
@@ -370,12 +396,13 @@
     "packName": "Architecture & Interior",
     "category": "2. Architectural Movements And Vernaculars",
     "file": "assets/recipes/styles/defaults/SP07-027.webp",
-    "jobId": "bb9f421e-66c0-448f-b205-ec460517e8d0",
+    "jobId": "173afd12-a014-423c-9d39-90f7e9fb8c6a",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-027.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:45:59.549Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:43:11.403Z"
   },
   {
     "presetId": "SP07-028",
@@ -384,12 +411,13 @@
     "packName": "Architecture & Interior",
     "category": "2. Architectural Movements And Vernaculars",
     "file": "assets/recipes/styles/defaults/SP07-028.webp",
-    "jobId": "593044e6-fc9c-4f7c-8510-54a63afca86c",
+    "jobId": "e60d77dd-fe52-4540-8b7f-05425c3f8043",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-028.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:03:13.977Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:43:29.740Z"
   },
   {
     "presetId": "SP07-029",
@@ -398,12 +426,13 @@
     "packName": "Architecture & Interior",
     "category": "2. Architectural Movements And Vernaculars",
     "file": "assets/recipes/styles/defaults/SP07-029.webp",
-    "jobId": "1650cd7a-0e2b-422f-9a60-7ea0aa306e43",
+    "jobId": "8dc250f8-777d-41b4-aa84-e25ea9b2fb7d",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-029.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:30:01.771Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:43:11.095Z"
   },
   {
     "presetId": "SP07-030",
@@ -412,12 +441,13 @@
     "packName": "Architecture & Interior",
     "category": "2. Architectural Movements And Vernaculars",
     "file": "assets/recipes/styles/defaults/SP07-030.webp",
-    "jobId": "507d9149-5c05-4977-a8fb-b42bfd0859ea",
+    "jobId": "e3b2dd6f-58f0-40d1-b3ee-3745c41bb4e0",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-030.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:34:17.135Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:43:44.880Z"
   },
   {
     "presetId": "SP07-031",
@@ -426,12 +456,13 @@
     "packName": "Architecture & Interior",
     "category": "7. Megastructure And Impossible Space",
     "file": "assets/recipes/styles/defaults/SP07-031.webp",
-    "jobId": "0b01a790-3c5c-4b28-a164-d02339375ee6",
+    "jobId": "22c54c54-6c47-40f8-93fe-1d570cbadd05",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-031.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:03:16.443Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:51:49.394Z"
   },
   {
     "presetId": "SP07-032",
@@ -440,12 +471,13 @@
     "packName": "Architecture & Interior",
     "category": "3. Civic Infrastructure And Specialty Spaces",
     "file": "assets/recipes/styles/defaults/SP07-032.webp",
-    "jobId": "8ecf0349-8e89-4962-9e2a-f5068c4f2ea3",
+    "jobId": "0b739708-1dcc-4b83-86d1-cbc348b43517",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-032.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T22:59:29.827Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:44:07.518Z"
   },
   {
     "presetId": "SP07-033",
@@ -454,12 +486,13 @@
     "packName": "Architecture & Interior",
     "category": "3. Civic Infrastructure And Specialty Spaces",
     "file": "assets/recipes/styles/defaults/SP07-033.webp",
-    "jobId": "1cf51329-a76f-43a8-81d6-3d683cadcad9",
+    "jobId": "456ea7f7-fdb6-4e51-9c8c-04d7c8f4694b",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-033.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:03:18.791Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:43:56.475Z"
   },
   {
     "presetId": "SP07-034",
@@ -468,12 +501,13 @@
     "packName": "Architecture & Interior",
     "category": "3. Civic Infrastructure And Specialty Spaces",
     "file": "assets/recipes/styles/defaults/SP07-034.webp",
-    "jobId": "4a3585bc-49dc-4b55-9a58-8ee1d2d1735d",
+    "jobId": "10b09241-91e7-41f1-be5a-5d249becb0bd",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-034.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:07:41.915Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:44:11.015Z"
   },
   {
     "presetId": "SP07-035",
@@ -482,12 +516,13 @@
     "packName": "Architecture & Interior",
     "category": "3. Civic Infrastructure And Specialty Spaces",
     "file": "assets/recipes/styles/defaults/SP07-035.webp",
-    "jobId": "1f5ac3f8-990b-4b4d-b806-557a6278a43c",
+    "jobId": "f208b653-800d-45ea-be21-d4f9c7907b38",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-035.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T22:57:59.557Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:44:38.375Z"
   },
   {
     "presetId": "SP07-036",
@@ -496,12 +531,13 @@
     "packName": "Architecture & Interior",
     "category": "3. Civic Infrastructure And Specialty Spaces",
     "file": "assets/recipes/styles/defaults/SP07-036.webp",
-    "jobId": "fec5a6ed-7cbf-4fa4-9f28-ed4f14b401cd",
+    "jobId": "ad97d792-7762-4f49-ac81-c41d4e54e6ef",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-036.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:34:14.687Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:44:45.537Z"
   },
   {
     "presetId": "SP07-037",
@@ -510,12 +546,13 @@
     "packName": "Architecture & Interior",
     "category": "3. Civic Infrastructure And Specialty Spaces",
     "file": "assets/recipes/styles/defaults/SP07-037.webp",
-    "jobId": "da137848-1aff-4e46-837e-75c15bb5fb3f",
+    "jobId": "97fd1e61-5eb2-4e2f-9f6a-402833616d02",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-037.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:07:37.818Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:44:45.809Z"
   },
   {
     "presetId": "SP07-038",
@@ -524,12 +561,13 @@
     "packName": "Architecture & Interior",
     "category": "3. Civic Infrastructure And Specialty Spaces",
     "file": "assets/recipes/styles/defaults/SP07-038.webp",
-    "jobId": "c18b431d-f734-49f5-8e25-d00808b9c32c",
+    "jobId": "c19a8d4e-98e1-46f9-b2d5-a622a9c5260a",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-038.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T22:57:54.682Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:44:50.487Z"
   },
   {
     "presetId": "SP07-039",
@@ -538,12 +576,13 @@
     "packName": "Architecture & Interior",
     "category": "3. Civic Infrastructure And Specialty Spaces",
     "file": "assets/recipes/styles/defaults/SP07-039.webp",
-    "jobId": "1ddcb6c3-2e62-4699-946d-8c96c0fc6ad3",
+    "jobId": "4957e4bf-95b0-42e8-8862-c9e51a103531",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-039.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:03:37.151Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:45:38.446Z"
   },
   {
     "presetId": "SP07-040",
@@ -552,12 +591,13 @@
     "packName": "Architecture & Interior",
     "category": "3. Civic Infrastructure And Specialty Spaces",
     "file": "assets/recipes/styles/defaults/SP07-040.webp",
-    "jobId": "c7bf85c8-5f5a-4d57-aceb-516197c1e490",
+    "jobId": "4a69d872-c6f0-4be8-b996-dc9d19f9d803",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-040.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:18:31.890Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:45:29.067Z"
   },
   {
     "presetId": "SP07-041",
@@ -566,12 +606,13 @@
     "packName": "Architecture & Interior",
     "category": "4. Landscape And Garden Systems",
     "file": "assets/recipes/styles/defaults/SP07-041.webp",
-    "jobId": "7d4e7555-76ac-4d08-b935-80d51906a917",
+    "jobId": "af607277-2be3-449d-a40d-488ea3717ecf",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-041.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:18:31.238Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:45:21.292Z"
   },
   {
     "presetId": "SP07-042",
@@ -580,12 +621,13 @@
     "packName": "Architecture & Interior",
     "category": "4. Landscape And Garden Systems",
     "file": "assets/recipes/styles/defaults/SP07-042.webp",
-    "jobId": "f94d7bdb-274c-419f-9578-eb45dd696152",
+    "jobId": "3fb5bc30-8b27-49d0-bb8b-b3efbc65ed69",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-042.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:19:17.343Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:45:30.744Z"
   },
   {
     "presetId": "SP07-043",
@@ -594,12 +636,13 @@
     "packName": "Architecture & Interior",
     "category": "4. Landscape And Garden Systems",
     "file": "assets/recipes/styles/defaults/SP07-043.webp",
-    "jobId": "bdbd9134-db96-4069-b7b3-e268283e16be",
+    "jobId": "adffa1d9-918e-4fb7-b34b-e733afb181a8",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-043.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:34:18.066Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:46:01.176Z"
   },
   {
     "presetId": "SP07-044",
@@ -608,12 +651,13 @@
     "packName": "Architecture & Interior",
     "category": "4. Landscape And Garden Systems",
     "file": "assets/recipes/styles/defaults/SP07-044.webp",
-    "jobId": "0405ba3b-59cb-4f8f-a0bd-608b51c022fd",
+    "jobId": "e6e7c5a0-db73-4193-ae73-70ebc0c68669",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-044.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:18:31.873Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:46:16.519Z"
   },
   {
     "presetId": "SP07-045",
@@ -622,12 +666,13 @@
     "packName": "Architecture & Interior",
     "category": "4. Landscape And Garden Systems",
     "file": "assets/recipes/styles/defaults/SP07-045.webp",
-    "jobId": "c531ba9a-b5c1-4c9c-9267-d0111f77ddc5",
+    "jobId": "7394b057-6486-470b-bb89-49814b3a1347",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-045.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:33:45.435Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:46:10.247Z"
   },
   {
     "presetId": "SP07-046",
@@ -636,12 +681,13 @@
     "packName": "Architecture & Interior",
     "category": "4. Landscape And Garden Systems",
     "file": "assets/recipes/styles/defaults/SP07-046.webp",
-    "jobId": "d0513bea-db24-46f4-802d-199736751f98",
+    "jobId": "a4c13a12-720e-4dd7-a4e7-5d4b788ebca3",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-046.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:34:16.295Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:46:15.504Z"
   },
   {
     "presetId": "SP07-047",
@@ -650,12 +696,13 @@
     "packName": "Architecture & Interior",
     "category": "4. Landscape And Garden Systems",
     "file": "assets/recipes/styles/defaults/SP07-047.webp",
-    "jobId": "87505b20-935d-4d02-b9a7-65be711ea1f1",
+    "jobId": "0d311a61-fefa-4598-a95b-80cc0195e1ce",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-047.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:03:20.214Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:46:42.886Z"
   },
   {
     "presetId": "SP07-048",
@@ -664,12 +711,13 @@
     "packName": "Architecture & Interior",
     "category": "4. Landscape And Garden Systems",
     "file": "assets/recipes/styles/defaults/SP07-048.webp",
-    "jobId": "b8aa576a-aeec-40f3-ab80-9edeb8ec1f91",
+    "jobId": "54eecdde-604c-4a4b-b565-1053becf8cb7",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-048.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:34:17.156Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:46:51.272Z"
   },
   {
     "presetId": "SP07-049",
@@ -678,12 +726,13 @@
     "packName": "Architecture & Interior",
     "category": "4. Landscape And Garden Systems",
     "file": "assets/recipes/styles/defaults/SP07-049.webp",
-    "jobId": "27316832-f2ac-40f5-a138-1e96a6defa45",
+    "jobId": "5e33f4b7-1fd0-4f4f-bf52-e8ed962f2916",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-049.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:24:30.105Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:46:50.945Z"
   },
   {
     "presetId": "SP07-050",
@@ -692,12 +741,13 @@
     "packName": "Architecture & Interior",
     "category": "4. Landscape And Garden Systems",
     "file": "assets/recipes/styles/defaults/SP07-050.webp",
-    "jobId": "4ee86d05-b53f-451c-ae46-303e373d8b63",
+    "jobId": "81440dd4-51a9-42f1-bf76-1b00277d69d2",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-050.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:38:18.411Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:46:59.287Z"
   },
   {
     "presetId": "SP07-051",
@@ -706,12 +756,13 @@
     "packName": "Architecture & Interior",
     "category": "5. Fantasy And Mythic Architecture",
     "file": "assets/recipes/styles/defaults/SP07-051.webp",
-    "jobId": "8549604a-ec16-4e26-84ac-f64ecec1d8c5",
+    "jobId": "925d434f-4920-4e19-bbe7-df2d4270b223",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-051.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:33:00.423Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:47:33.462Z"
   },
   {
     "presetId": "SP07-052",
@@ -720,12 +771,13 @@
     "packName": "Architecture & Interior",
     "category": "5. Fantasy And Mythic Architecture",
     "file": "assets/recipes/styles/defaults/SP07-052.webp",
-    "jobId": "2c71ca35-1acd-4d39-b4cf-883b87960da4",
+    "jobId": "6eed73a9-c8c9-4b1c-b96c-b8bb0777df58",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-052.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:03:38.818Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:47:39.245Z"
   },
   {
     "presetId": "SP07-053",
@@ -734,12 +786,13 @@
     "packName": "Architecture & Interior",
     "category": "5. Fantasy And Mythic Architecture",
     "file": "assets/recipes/styles/defaults/SP07-053.webp",
-    "jobId": "a81df4af-ed68-4700-bcbe-a7d95f744711",
+    "jobId": "ddca2dbd-8dee-409a-8761-8418845ebe4a",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-053.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:32:47.906Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:47:39.434Z"
   },
   {
     "presetId": "SP07-054",
@@ -748,12 +801,13 @@
     "packName": "Architecture & Interior",
     "category": "5. Fantasy And Mythic Architecture",
     "file": "assets/recipes/styles/defaults/SP07-054.webp",
-    "jobId": "36e28487-e3f9-48db-a87e-204908dcd18a",
+    "jobId": "72fedc6d-a7b3-4b84-a59f-fca65d178d2b",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-054.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:38:19.913Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:47:45.064Z"
   },
   {
     "presetId": "SP07-055",
@@ -762,12 +816,13 @@
     "packName": "Architecture & Interior",
     "category": "5. Fantasy And Mythic Architecture",
     "file": "assets/recipes/styles/defaults/SP07-055.webp",
-    "jobId": "2093606c-5897-460d-848c-6ca848e00136",
+    "jobId": "fae985d4-2ed1-4fad-8fe1-2e66f272f7ba",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-055.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:38:29.717Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:48:18.839Z"
   },
   {
     "presetId": "SP07-056",
@@ -776,12 +831,13 @@
     "packName": "Architecture & Interior",
     "category": "5. Fantasy And Mythic Architecture",
     "file": "assets/recipes/styles/defaults/SP07-056.webp",
-    "jobId": "8233e6d2-cb40-457c-90bf-865e5fbed163",
+    "jobId": "82642d5c-8b36-4448-88e7-9a8c120016f7",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-056.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:38:24.821Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:48:25.146Z"
   },
   {
     "presetId": "SP07-057",
@@ -790,12 +846,13 @@
     "packName": "Architecture & Interior",
     "category": "5. Fantasy And Mythic Architecture",
     "file": "assets/recipes/styles/defaults/SP07-057.webp",
-    "jobId": "a7a4cfea-079e-49e6-9cf9-a90c4c4ba30f",
+    "jobId": "87ad1d09-25fa-4b8c-9a40-12526737c0b8",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-057.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:32:52.876Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:48:25.327Z"
   },
   {
     "presetId": "SP07-058",
@@ -804,12 +861,13 @@
     "packName": "Architecture & Interior",
     "category": "5. Fantasy And Mythic Architecture",
     "file": "assets/recipes/styles/defaults/SP07-058.webp",
-    "jobId": "b1fb99b8-0e91-43d6-a530-088ae74452a1",
+    "jobId": "24391008-2c42-4bb0-a1b6-f6b48a05eb77",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-058.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:32:57.183Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:48:29.472Z"
   },
   {
     "presetId": "SP07-059",
@@ -818,12 +876,13 @@
     "packName": "Architecture & Interior",
     "category": "5. Fantasy And Mythic Architecture",
     "file": "assets/recipes/styles/defaults/SP07-059.webp",
-    "jobId": "2701405d-970a-4b0c-8ed1-77fd6eb28368",
+    "jobId": "8e37a7d4-49b4-4677-ab4b-d0baa9f01665",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-059.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:32:59.570Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:49:00.270Z"
   },
   {
     "presetId": "SP07-060",
@@ -832,12 +891,13 @@
     "packName": "Architecture & Interior",
     "category": "5. Fantasy And Mythic Architecture",
     "file": "assets/recipes/styles/defaults/SP07-060.webp",
-    "jobId": "fe9e5540-517b-4598-9ee6-614da76666bc",
+    "jobId": "1307c5be-1815-42ec-b935-67fb931457cb",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-060.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:03:34.592Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:49:06.059Z"
   },
   {
     "presetId": "SP07-061",
@@ -846,12 +906,13 @@
     "packName": "Architecture & Interior",
     "category": "5. Fantasy And Mythic Architecture",
     "file": "assets/recipes/styles/defaults/SP07-061.webp",
-    "jobId": "e0b59760-29a5-4d82-be9d-20f547adc355",
+    "jobId": "12908fe4-9e11-4a86-aac6-827230fa548e",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-061.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:38:22.371Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:48:59.122Z"
   },
   {
     "presetId": "SP07-062",
@@ -860,12 +921,13 @@
     "packName": "Architecture & Interior",
     "category": "5. Fantasy And Mythic Architecture",
     "file": "assets/recipes/styles/defaults/SP07-062.webp",
-    "jobId": "22bda510-1394-4dfd-a287-dbd1552f3ea3",
+    "jobId": "31f1d4d5-c659-4e74-aea3-f149c5ad3ad9",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-062.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:38:41.166Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:49:31.526Z"
   },
   {
     "presetId": "SP07-063",
@@ -874,12 +936,13 @@
     "packName": "Architecture & Interior",
     "category": "5. Fantasy And Mythic Architecture",
     "file": "assets/recipes/styles/defaults/SP07-063.webp",
-    "jobId": "9547205c-d00f-4e03-9f3a-2fa521fa7942",
+    "jobId": "b043064a-b5cd-47d1-90e2-8f7ec37b1f87",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-063.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:45:12.127Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:49:39.977Z"
   },
   {
     "presetId": "SP07-064",
@@ -888,12 +951,13 @@
     "packName": "Architecture & Interior",
     "category": "7. Megastructure And Impossible Space",
     "file": "assets/recipes/styles/defaults/SP07-064.webp",
-    "jobId": "752373d4-d75f-4504-9293-193312a11bad",
+    "jobId": "a565b2bb-84ca-456e-87fb-c5910521f727",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-064.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:45:07.198Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:51:56.372Z"
   },
   {
     "presetId": "SP07-065",
@@ -902,12 +966,13 @@
     "packName": "Architecture & Interior",
     "category": "6. Toy Craft And Miniature Architecture",
     "file": "assets/recipes/styles/defaults/SP07-065.webp",
-    "jobId": "ba9e10bf-ae6b-4032-b90e-e75e1abe6919",
+    "jobId": "eb38c8d9-b147-4241-8e26-7be72b5074e2",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-065.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:45:06.337Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:49:43.133Z"
   },
   {
     "presetId": "SP07-066",
@@ -916,12 +981,13 @@
     "packName": "Architecture & Interior",
     "category": "6. Toy Craft And Miniature Architecture",
     "file": "assets/recipes/styles/defaults/SP07-066.webp",
-    "jobId": "a3d95a09-d278-47a1-8d76-4470975a2310",
+    "jobId": "77bbae61-df40-41a9-b4cd-585232cd0800",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-066.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:45:11.213Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:49:49.176Z"
   },
   {
     "presetId": "SP07-067",
@@ -930,12 +996,13 @@
     "packName": "Architecture & Interior",
     "category": "6. Toy Craft And Miniature Architecture",
     "file": "assets/recipes/styles/defaults/SP07-067.webp",
-    "jobId": "dee1596f-7d7a-43d8-9c27-f13af47dcec6",
+    "jobId": "8c50bd9c-5aa6-4192-9f52-e949aa169690",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-067.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:45:11.359Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:50:22.174Z"
   },
   {
     "presetId": "SP07-068",
@@ -944,12 +1011,13 @@
     "packName": "Architecture & Interior",
     "category": "6. Toy Craft And Miniature Architecture",
     "file": "assets/recipes/styles/defaults/SP07-068.webp",
-    "jobId": "bca6adab-a31b-466b-aec2-9b486368a6ef",
+    "jobId": "84e4bdef-179f-493e-aa57-9082693ad046",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-068.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:45:29.959Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:50:15.201Z"
   },
   {
     "presetId": "SP07-069",
@@ -958,12 +1026,13 @@
     "packName": "Architecture & Interior",
     "category": "6. Toy Craft And Miniature Architecture",
     "file": "assets/recipes/styles/defaults/SP07-069.webp",
-    "jobId": "fe959349-286d-4954-8965-ec3be327374c",
+    "jobId": "b6dcc3aa-819e-4814-89cb-1398d46c7226",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-069.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:44:50.157Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:50:22.321Z"
   },
   {
     "presetId": "SP07-070",
@@ -972,12 +1041,13 @@
     "packName": "Architecture & Interior",
     "category": "6. Toy Craft And Miniature Architecture",
     "file": "assets/recipes/styles/defaults/SP07-070.webp",
-    "jobId": "17c17120-d5c7-46f6-98e1-1d36d96ef490",
+    "jobId": "c5d0603a-704a-4ae1-a8ab-a4cf22a722c9",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-070.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:50:52.984Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:50:31.677Z"
   },
   {
     "presetId": "SP07-071",
@@ -986,12 +1056,13 @@
     "packName": "Architecture & Interior",
     "category": "6. Toy Craft And Miniature Architecture",
     "file": "assets/recipes/styles/defaults/SP07-071.webp",
-    "jobId": "0a51ad8f-0452-4714-bc74-bbb9ab7cfab3",
+    "jobId": "bb1965af-4096-46ac-b335-0f741de08b41",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-071.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:55:17.027Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:51:08.218Z"
   },
   {
     "presetId": "SP07-072",
@@ -1000,12 +1071,13 @@
     "packName": "Architecture & Interior",
     "category": "6. Toy Craft And Miniature Architecture",
     "file": "assets/recipes/styles/defaults/SP07-072.webp",
-    "jobId": "554a3315-f448-40b4-b113-f2e8f7bb264e",
+    "jobId": "f55f1f99-61c4-4d1e-aadc-454e362265f3",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-072.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:49:16.298Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:51:03.003Z"
   },
   {
     "presetId": "SP07-073",
@@ -1014,12 +1086,13 @@
     "packName": "Architecture & Interior",
     "category": "6. Toy Craft And Miniature Architecture",
     "file": "assets/recipes/styles/defaults/SP07-073.webp",
-    "jobId": "e669d679-963a-4247-bed8-45fdb24dcdf1",
+    "jobId": "0af059ba-832f-4a9c-8e02-2b20d185b6ec",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-073.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:11:10.564Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:51:01.836Z"
   },
   {
     "presetId": "SP07-074",
@@ -1028,12 +1101,13 @@
     "packName": "Architecture & Interior",
     "category": "6. Toy Craft And Miniature Architecture",
     "file": "assets/recipes/styles/defaults/SP07-074.webp",
-    "jobId": "96020363-340c-4e48-9241-9f83c33b7a93",
+    "jobId": "6da94c6f-2861-4daa-a2d3-3509aa684686",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-074.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:55:36.631Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:51:11.871Z"
   },
   {
     "presetId": "SP07-075",
@@ -1042,12 +1116,13 @@
     "packName": "Architecture & Interior",
     "category": "7. Megastructure And Impossible Space",
     "file": "assets/recipes/styles/defaults/SP07-075.webp",
-    "jobId": "f1ae91a5-b2d0-4ef2-993a-9e40aef621f9",
+    "jobId": "8097cb89-d2e2-404c-b38b-86e615ba2010",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-075.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:07:52.297Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:51:56.828Z"
   },
   {
     "presetId": "SP07-076",
@@ -1056,12 +1131,13 @@
     "packName": "Architecture & Interior",
     "category": "7. Megastructure And Impossible Space",
     "file": "assets/recipes/styles/defaults/SP07-076.webp",
-    "jobId": "25c18f74-4090-4bae-8d58-98a9bdc2b9f3",
+    "jobId": "647a0351-36ab-4a13-81f2-3d1398a043d3",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-076.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:55:27.867Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:52:37.671Z"
   },
   {
     "presetId": "SP07-077",
@@ -1070,12 +1146,13 @@
     "packName": "Architecture & Interior",
     "category": "7. Megastructure And Impossible Space",
     "file": "assets/recipes/styles/defaults/SP07-077.webp",
-    "jobId": "0be8a4f6-5660-4e33-a0c1-9810773d2273",
+    "jobId": "e772b45f-2fcd-4ee2-ab80-d9e7ba8cc874",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-077.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T00:55:37.519Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:52:40.905Z"
   },
   {
     "presetId": "SP07-078",
@@ -1084,12 +1161,13 @@
     "packName": "Architecture & Interior",
     "category": "7. Megastructure And Impossible Space",
     "file": "assets/recipes/styles/defaults/SP07-078.webp",
-    "jobId": "0599a90f-9b12-44d5-8da5-0ddc46e04b0f",
+    "jobId": "b694ff6b-1fcb-4f84-9469-9fc60e253f51",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-078.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:07:59.487Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:52:54.403Z"
   },
   {
     "presetId": "SP07-079",
@@ -1098,12 +1176,13 @@
     "packName": "Architecture & Interior",
     "category": "7. Megastructure And Impossible Space",
     "file": "assets/recipes/styles/defaults/SP07-079.webp",
-    "jobId": "ccdb65cf-1cde-457d-9b4b-94f21fea5e50",
+    "jobId": "ff832595-57b7-47de-ab86-f042f5d2e8d6",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-079.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-17T23:07:45.244Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:52:33.193Z"
   },
   {
     "presetId": "SP07-080",
@@ -1112,11 +1191,12 @@
     "packName": "Architecture & Interior",
     "category": "7. Megastructure And Impossible Space",
     "file": "assets/recipes/styles/defaults/SP07-080.webp",
-    "jobId": "4fe0bfdb-ff7b-444c-b13f-31f637e7b4c2",
+    "jobId": "a3aba4ca-8c69-4e88-93ac-82423c9dfa98",
     "sourceAsset": "assets/recipes/styles/defaults/SP07-080.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T03:49:20.656Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-23T10:53:16.774Z"
   }
 ]

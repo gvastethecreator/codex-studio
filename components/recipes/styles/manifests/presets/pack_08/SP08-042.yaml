@@ -13,71 +13,38 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: >-
-    Post-Apocalyptic Scavenger operates as a portable fashion-costume router: combine Scavenged
-    wasteland utility couture with oxidized survival layers, fuel-scarcity grit and chrome myth with
-    speculative costume logic with armor, suit engineering, magical garment behavior, alien
-    proportion, and character-readability design, so the preset supplies styling behavior rather
-    than a fixed outfit card, required wearer, or literal garment sample.
+    Scavenged survivalwear assembled from mismatched protective layers, visible repairs and
+    practical asymmetry; wear and repair define the clothing.
   subject_treatment: >-
-    Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak,
-    illuminate, conceal, mutate, modularize, ritualize, or engineer through Rags, armor,
-    scavenged-layer chaos, shoulder-pad bulk, wrapped-limb binding and improvised asymmetry;
-    identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and
-    styling hierarchy shift into this preset.
+    Rework the existing outfit with patched panels, wrapped cuffs, uneven hems, reinforced
+    shoulders and salvaged fasteners. Preserve the wearer, anatomy, pose and requested role;
+    add no weapon or vehicle.
   color_and_tone: >-
-    Map color through speculative material color, neon accents, abyssal values, royal metals,
-    survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents
-    intentional, material color believable, and palette behavior attached to the subject instead of
-    pasted wardrobe decoration.
+    Use dusty, muted cloth values with selective rust or repair-orange accents, adapting to
+    explicit color directions instead of imposing wasteland browns.
   lighting_and_shadow: >-
-    Use Harsh sun, heat-shimmer distortion, dust diffusion, repair-fire orange accents and wind-haze
-    plus rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or
-    sci-fi display light as the styling light contract, revealing cut, drape, surface response,
-    trim, transparency, or armor structure without erasing prompt readability.
+    Follow the requested environment and time of day. Let rough edges and layered cloth
+    create texture; do not add dust haze, heat shimmer, firelight or a wasteland.
   texture_and_material: >-
-    Render Dirty canvas, torn leather, salvaged tire rubber, oxidized chain texture, scrap-panel
-    armor, gauze wraps, weathered denim plus armor plates, spandex, robes, leather, rubber, chrome,
-    biotic surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams,
-    fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent
-    across the whole prompt.
+    Combine worn canvas, denim, torn leather, rubber and patched fabric, showing abrasion,
+    frayed edges and deliberate repairs without blood or injury.
   camera_and_composition: >-
-    Compose with Scavenged-layer asymmetry, strapped compression, heat-haze edges and armor-fragment
-    silhouette breaks plus character-design readability, suit silhouette, power-shape hierarchy,
-    modular gear rhythm, and transformation focus as reusable fashion framing grammar, allowing
-    portraits, objects, creatures, environments, action, and abstract prompts to inherit styling
-    without one required pose.
+    Preserve the supplied framing, viewpoint and pose. Make mismatched layers and repair
+    seams legible within the original crop.
   atmosphere_and_mood: >-
-    Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth,
-    spectacle, or mythic futurism; the tone should feel specific to Post-Apocalyptic Scavenger while
-    still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
-    supplied.
+    Suggest resourcefulness through asymmetry and repeated repairs, without declaring the
+    wearer a survivor or inventing an apocalypse.
   rendering_and_quality: >-
-    Finish with believable costume engineering, clean edge logic, strong silhouette, readable
-    material physics, and no generic cosplay blur; prioritize clean style recognition, believable
-    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
-    accidental UI.
+    Keep distressed surfaces varied but controlled; distinguish fabric, rubber and metal
+    scraps, and retain readable garment construction.
   key_features: >-
-    Scavenged wasteland utility couture with oxidized survival layers, fuel-scarcity grit and chrome
-    myth; Rags, armor, scavenged-layer chaos, shoulder-pad bulk, wrapped-limb binding and improvised
-    asymmetry; Dirty canvas, torn leather, salvaged tire rubber, oxidized chain texture, scrap-panel
-    armor, gauze wraps, weathered denim; Harsh sun, heat-shimmer distortion, dust diffusion,
-    repair-fire orange accents and wind-haze; Scavenged-layer asymmetry, strapped compression,
-    heat-haze edges and armor-fragment silhouette breaks
+    Mismatched protective layers; wrapped cuffs; patched canvas and denim; salvaged
+    fasteners and shoulder panels.
   creative_brief: >-
-    Use Post-Apocalyptic Scavenger after prompt X as a transferable fashion/costume layer: prompt X
-    supplies subject, motion, setting, tone, and intensity, while the preset supplies Scavenged
-    wasteland utility couture with oxidized survival layers, fuel-scarcity grit and chrome myth,
-    Rags, armor, scavenged-layer chaos, shoulder-pad bulk, wrapped-limb binding and improvised
-    asymmetry, Dirty canvas, torn leather, salvaged tire rubber, oxidized chain texture, scrap-panel
-    armor, gauze wraps, weathered denim, Harsh sun, heat-shimmer distortion, dust diffusion,
-    repair-fire orange accents and wind-haze, Scavenged-layer asymmetry, strapped compression,
-    heat-haze edges and armor-fragment silhouette breaks plus paneling, harnesses, armor modules,
-    robe systems, implant seams, luminous channels, survival layers, and invented fastenings,
-    palette behavior, light response, material treatment, silhouette grammar, and finish discipline
-    without requiring one body type, fixed outfit, venue, prop bundle, or card composition.
+    Turn the requested clothing into repaired scavenged survivalwear with mismatched layers,
+    wrapped cuffs, patched cloth and salvaged fasteners. Preserve wearer, role, pose, scene
+    and framing; add no weapon, vehicle, injury or apocalypse.
 avoidRules:
-  - clean
-  - new
   - franchise likeness
   - chase vehicle
   - weapon focus
@@ -91,13 +58,14 @@ avoidRules:
   - muddy fabric noise
   - watermark
   - readable text
+  - unweathered survival gear
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-042.webp
 attributes:
   negativePrompt: >-
-    clean, new, franchise likeness, chase vehicle, weapon focus, generic cosplay, plastic toy armor,
-    muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion
-    catalog, muddy fabric noise, watermark, readable text
+    franchise likeness, chase vehicle, weapon focus, generic cosplay, plastic toy armor,
+    muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic
+    fashion catalog, muddy fabric noise, watermark, readable text, unweathered survival gear
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

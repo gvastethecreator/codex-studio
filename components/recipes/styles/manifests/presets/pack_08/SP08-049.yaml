@@ -13,66 +13,38 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: >-
-    Pelagic Tail Couture operates as a portable fashion-costume router: combine Pelagic fantasy
-    couture, deep-ocean enchantment, tidal iridescence with speculative costume logic with armor,
-    suit engineering, magical garment behavior, alien proportion, and character-readability design,
-    so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or
-    literal garment sample.
+    Pelagic couture uses scalloped scale lattices, fin-like seam rhythms and fluid textile
+    drape; aquatic references stay in garment design, not wearer anatomy.
   subject_treatment: >-
-    Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak,
-    illuminate, conceal, mutate, modularize, ritualize, or engineer through Scale lattices,
-    fin-ridge undulation, tidal-flare geometry, liquid drape, floating-curve rhythm; identity stays
-    readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy
-    shift into this preset.
+    Rework garments with tapered flowing panels, pearlescent scale details and fin-shaped
+    hems. A fishtail line may be a skirt or train, never anatomy unless requested; preserve
+    identity, body and pose.
   color_and_tone: >-
-    Map color through speculative material color, neon accents, abyssal values, royal metals,
-    survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents
-    intentional, material color believable, and palette behavior attached to the subject instead of
-    pasted wardrobe decoration.
+    Use tidal iridescence or reef-like hues as options, following explicit palette requests
+    and keeping luminous accents controlled.
   lighting_and_shadow: >-
-    Use Caustic-light dapple, surface-sunbeam shafts, bioluminescent glow, reef-filtered turquoise
-    plus rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or
-    sci-fi display light as the styling light contract, revealing cut, drape, surface response,
-    trim, transparency, or armor structure without erasing prompt readability.
+    Preserve the real scene and lighting; use localized caustic-like reflections on glossy
+    cloth without adding water, sunbeams or an underwater setting.
   texture_and_material: >-
-    Render Iridescent scales, wet-look silicone, pearlescent finish, shell texture, liquid organza,
-    nacre sheen plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface,
-    hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine,
-    opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole
-    prompt.
+    Mix nacre-like sheen, fine scale embroidery, satin, organza and smooth silicone-like
+    finishes. Keep textile folds and seam direction visible beneath the iridescence.
   camera_and_composition: >-
-    Compose with character-design readability, suit silhouette, power-shape hierarchy, modular gear
-    rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits,
-    objects, creatures, environments, action, and abstract prompts to inherit styling without one
-    required pose.
+    Preserve requested framing, angle and pose. Let scale rhythm and flowing hem
+    construction read in the existing crop.
   atmosphere_and_mood: >-
-    Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth,
-    spectacle, or mythic futurism; the tone should feel specific to Pelagic Tail Couture while still
-    obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+    Suggest fluid, ceremonial elegance through curve and shimmer without assigning a mermaid
+    or other aquatic species.
   rendering_and_quality: >-
-    Finish with believable costume engineering, clean edge logic, strong silhouette, readable
-    material physics, and no generic cosplay blur; prioritize clean style recognition, believable
-    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
-    accidental UI.
+    Control reflective detail so scales, fabric and transparent layers remain distinct;
+    avoid turning the outfit into a literal creature body.
   key_features: >-
-    Pelagic fantasy couture, deep-ocean enchantment, tidal iridescence; Scale lattices, fin-ridge
-    undulation, tidal-flare geometry, liquid drape, floating-curve rhythm; Iridescent scales,
-    wet-look silicone, pearlescent finish, shell texture, liquid organza, nacre sheen; Caustic-light
-    dapple, surface-sunbeam shafts, bioluminescent glow, reef-filtered turquoise; character-design
-    readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation
-    focus
+    Scalloped scale lattice; fin-like garment seams; fluid tapered panels; nacre and organza
+    sheen.
   creative_brief: >-
-    Use Pelagic Tail Couture after prompt X as a transferable fashion/costume layer: prompt X
-    supplies subject, motion, setting, tone, and intensity, while the preset supplies Pelagic
-    fantasy couture, deep-ocean enchantment, tidal iridescence, Scale lattices, fin-ridge
-    undulation, tidal-flare geometry, liquid drape, floating-curve rhythm, Iridescent scales,
-    wet-look silicone, pearlescent finish, shell texture, liquid organza, nacre sheen, Caustic-light
-    dapple, surface-sunbeam shafts, bioluminescent glow, reef-filtered turquoise, character-design
-    readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation
-    focus plus paneling, harnesses, armor modules, robe systems, implant seams, luminous channels,
-    survival layers, and invented fastenings, palette behavior, light response, material treatment,
-    silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue,
-    prop bundle, or card composition.
+    Transform the requested wardrobe into pelagic couture with scale-patterned panels,
+    fin-like hems and fluid iridescent cloth. Preserve wearer, anatomy, pose, role, scene
+    and frame; any fishtail line belongs to the garment, with no species or underwater
+    setting.
 avoidRules:
   - dry casualwear
   - generic cosplay

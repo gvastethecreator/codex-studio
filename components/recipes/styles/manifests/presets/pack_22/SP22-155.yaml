@@ -1,0 +1,100 @@
+schemaVersion: 1
+id: SP22-155
+packId: pack_22
+name: Halftone Pop Manga
+category: 7. Manga Ink & Impact
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - manga-ink-and-impact
+  - colored-halftone-print
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Graphic flat color areas combine with designed colored halftones, making the print pattern part of
+    the palette and volume rather than an all-over surface effect.
+  subject_treatment: >-
+    Preserve the requested subject, identity, pose and action. Use clean graphic contours and sparse
+    interior detail to keep its existing features distinct.
+  color_and_tone: >-
+    Preserve the requested hues in a compact palette, assigning separate halftone fields to selected
+    color areas instead of converting the image to grayscale.
+  lighting_and_shadow: >-
+    Follow the requested illumination; use halftone to reinforce existing value groupings without
+    adding light bursts or changing the shadow direction.
+  texture_and_material: >-
+    Keep printing dots deliberate, regular and localized to chosen color areas; separate patterns cleanly
+    and avoid general grain or noise across the image.
+  camera_and_composition: >-
+    Maintain the requested viewpoint, crop and arrangement. Graphic tone stays inside the illustration
+    and does not create panels, signage or an alternate layout.
+  atmosphere_and_mood: >-
+    Preserve the requested setting and mood. The pop quality comes from color and print rhythm, not from
+    extra lettering or a new narrative cue.
+  rendering_and_quality: >-
+    Pair broad flat masses with a few crisp, legible halftone zones and minimal clean line details; keep
+    pattern scale controlled for small-format clarity.
+avoidRules:
+  - unrequested panels, signs or full comic layouts
+  - general grain or dots too small to read
+  - extra details that alter identity or function
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-155.webp
+attributes:
+  negativePrompt: unrequested panels, signs or full comic layouts, general grain or dots too small to read, extra details that alter identity or function
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: drawing
+    avoidRules:
+      - text: unrequested panels, signs or full comic layouts
+        field: camera_and_composition
+      - text: general grain or dots too small to read
+        field: texture_and_material
+      - text: extra details that alter identity or function
+        field: subject_treatment
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S055
+    sourceTitle: Halftone Pop Manga
+    referenceIds:
+      - S24
+      - S57
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: manga-ink-and-impact
+  categoryName: 7. Manga Ink & Impact
+  tags:
+    - trading-card-illustration
+    - manga-ink-and-impact
+    - colored-halftone-print
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

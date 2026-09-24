@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP15-088
+packId: pack_15
+name: Repairpunk
+category: 3. Eco, Repair & Climate Punks
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - eco-repair-and-climate-punks
+visualDna:
+  aesthetic: >-
+    Repairpunk makes functional repair visible through joined patches, layered replacement material,
+    exposed seams and clear before-and-after surface contrast.
+  subject_treatment: >-
+    Preserve the requested subject, structure, proportions and action. Add repair only where the form
+    supports a real join or replacement surface; do not break an intact subject to create repair detail.
+  color_and_tone: >-
+    Keep the base palette and use a small contrasting patch color to clarify repaired areas. Separate
+    original material, replacement and shadow without forcing a fixed warm palette.
+  lighting_and_shadow: >-
+    Respect the requested lighting. Use value contrast along existing seams and repaired joins; do not
+    invent a work light or dramatic workshop glow.
+  texture_and_material: >-
+    Keep original and replacement materials distinct. Show stitched, riveted, bonded or fitted repairs
+    with scale appropriate to the object; preserve the requested material rather than adding universal
+    rust or grime.
+  camera_and_composition: >-
+    Preserve the requested viewpoint and framing. Make the repaired relationship readable through
+    placement and overlap without inserting a workbench, tool set or repair scene.
+  atmosphere_and_mood: >-
+    Convey resourceful continuation through evidence that a repair works. Keep the requested tone; do not
+    require a union, commons, mutual-aid gathering or civic setting.
+  rendering_and_quality: >-
+    Use clear seam edges, controlled wear and a small number of strong patch shapes. Avoid random cracks,
+    ornamental damage and tiny hardware noise.
+avoidRules:
+  - Do not add a repair bench, tools, workshop, union banner or group of helpers unless requested.
+  - Do not damage intact forms merely to create a repair motif.
+  - Avoid uniform rust, random cracks and decorative patches without a functional join.
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-088.webp
+attributes:
+  negativePrompt: >-
+    Do not add a repair bench, tools, workshop, union banner or group of helpers unless requested., Do
+    not damage intact forms merely to create a repair motif., Avoid uniform rust, random cracks and
+    decorative patches without a functional join.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: Do not add a repair bench, tools, workshop, union banner or group of helpers unless requested.
+        field: rendering_and_quality
+      - text: Do not damage intact forms merely to create a repair motif.
+        field: rendering_and_quality
+      - text: Avoid uniform rust, random cracks and decorative patches without a functional join.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-019
+      - SP15-048
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: eco-repair-and-climate-punks
+  categoryName: 3. Eco, Repair & Climate Punks
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - eco-repair-and-climate-punks
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

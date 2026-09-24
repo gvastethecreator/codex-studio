@@ -1,0 +1,89 @@
+schemaVersion: 1
+id: SP15-108
+packId: pack_15
+name: Cassette Futurism
+category: 7. Media, Vapor & Glitch Punks
+version: 2
+supportedTasks: &id002
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags: &id001
+  - curation-v2
+  - identity-reviewed
+  - visual-evaluation-pending
+  - media-vapor-and-glitch-punks
+visualDna:
+  aesthetic:
+    Build a tactile late-analog design language from chunky rounded rectangles, cassette-window shapes,
+    paired reels, slider rows, and cable loops, with the geometry applied selectively to forms rather than
+    requiring a cassette as the subject.
+  subject_treatment:
+    Preserve the requested subject and action; give unspecified equipment, clothing panels,
+    or environmental edges molded analog contours, smoked windows, and a few mechanical controls without adding
+    a full control console.
+  color_and_tone:
+    Favor warm cream, amber, graphite, and restrained teal or blue-green indicators; keep the
+    large masses warm and quiet, with small colored signals providing contrast.
+  lighting_and_shadow:
+    Use broad panel highlights, soft amber lamp glow, and dark window recesses to reveal
+    molded depth; keep reflections graphic and localized instead of glossy product photography.
+  texture_and_material:
+    Contrast matte molded plastic, brushed metal edges, translucent smoked inserts, and
+    visible tape-like ribbons; use wear at corners and controls, not a blanket vintage filter.
+  camera_and_composition:
+    Organize the focal form through nested rounded frames and linked ribbons or cable
+    curves; preserve depth and action, and avoid arranging every image as a centered device catalog shot.
+  atmosphere_and_mood:
+    "Suggest an intimate, repairable analog future: practical, lived-in, and quietly optimistic,
+    with the source subject's own emotional tone intact."
+  rendering_and_quality:
+    Use clean illustrated surfaces, readable control silhouettes, and restrained grain;
+    separate large panel geometry from tiny buttons at thumbnail scale.
+avoidRules:
+  - a required cassette deck or weather station
+  - modern glossy touch-screen minimalism
+  - dense controls that collapse into noise
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-108.webp
+attributes:
+  negativePrompt:
+    a required cassette deck or weather station, modern glossy touch-screen minimalism, dense
+    controls that collapse into noise
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: a required cassette deck or weather station
+        field: rendering_and_quality
+      - text: modern glossy touch-screen minimalism
+        field: rendering_and_quality
+      - text: dense controls that collapse into noise
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-108
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: media-vapor-and-glitch-punks
+  categoryName: 7. Media, Vapor & Glitch Punks
+  tags: *id001
+  supportedTasks: *id002
+  hasDefaultImage: true

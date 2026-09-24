@@ -1,0 +1,113 @@
+schemaVersion: 1
+id: SP23-027
+packId: pack_23
+name: Dense Pixel Craft
+category: 6. Classic RPG Visual Studies
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - classic-rpg-visual-studies
+  - material-led-pixel-clusters
+  - compact-contours
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    A compact pixel-craft treatment describes existing forms and materials with small, consistent
+    clusters, tight contour groupings and moderate local contrast. These rendering choices remain
+    independent of any game's camera, interface or assets.
+  subject_treatment: >-
+    Preserve the requested subject, identity, count, pose, action, proportions and functional details.
+    Use cluster size and edge economy to clarify existing shapes and their material cues; do not
+    invent medieval objects, furniture or an adventuring role.
+  color_and_tone: >-
+    Preserve the requested palette and tonal relationships. Keep adjacent pixel groups readable with
+    measured local contrast; do not import a game-specific palette or darken colors to signal fantasy.
+  lighting_and_shadow: >-
+    Follow the requested lighting and shadow structure. Separate planes with compact value steps and
+    modest highlights only where the existing material and light support them; avoid polished,
+    glossy reflections that override the chosen surface.
+  texture_and_material: >-
+    Use small, consistent clusters to express the depicted material's real grain, weave, gloss or
+    softness. Keep surface detail functional and selective instead of spreading a game-tile texture
+    over every area.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, orientation, perspective and layout. Do not impose an
+    oblique or isometric view, inventory arrangement, map grid or gameplay frame.
+  atmosphere_and_mood: >-
+    Preserve the requested setting and mood. Pixel craft does not impose a medieval theme or
+    demand game-world scenery.
+  rendering_and_quality: >-
+    Keep cluster edges compact and coherent, with moderate contrast and enough open space for the
+    subject to read. Prefer controlled pixel groups to glossy gradients, arbitrary dithering or
+    uniform texture.
+avoidRules:
+  - unrequested inventory, map, gameplay overlay or screenshot border
+  - fixed oblique or isometric camera, tile grid or game layout
+  - unrequested medieval furniture or game-world scenery
+  - glossy rendering that replaces material-led pixel clusters
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-027.webp
+attributes:
+  negativePrompt: >-
+    unrequested inventory, map, gameplay overlay or screenshot border, fixed oblique or isometric
+    camera, tile grid or game layout, unrequested medieval furniture or game-world scenery, glossy
+    rendering that replaces material-led pixel clusters
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: material-led-pixel-illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: small-consistent-clusters-compact-contours-moderate-local-contrast
+    avoidRules:
+      - text: unrequested inventory, map, gameplay overlay or screenshot border
+        field: camera_and_composition
+      - text: fixed oblique or isometric camera, tile grid or game layout
+        field: camera_and_composition
+      - text: unrequested medieval furniture or game-world scenery
+        field: global
+      - text: glossy rendering that replaces material-led pixel clusters
+        field: texture_and_material
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: CR-02
+    sourceTitle: Dense Pixel Craft
+    historicalScope: 'Relectura digital · referencia Ultima VII'
+    referenceIds:
+      - S26
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: classic-rpg-visual-studies
+  categoryName: 6. Classic RPG Visual Studies
+  tags:
+    - curation-v2
+    - classic-rpg-visual-studies
+    - material-led-pixel-clusters
+    - compact-contours
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

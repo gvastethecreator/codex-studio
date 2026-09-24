@@ -1,0 +1,96 @@
+schemaVersion: 1
+id: SP14-127
+packId: pack_14
+name: Absorbed Light
+category: Light & Shadow
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - light-and-shadow
+visualDna:
+  aesthetic: >-
+    Group light into compact value fields, using absorption and occlusion to make a few shadow masses
+    feel dense without losing form. Noir is a contrast treatment, not a required time of day or story.
+  subject_treatment: >-
+    Preserve the requested subject, action, proportions, and identity. Simplify secondary surfaces into
+    readable shadow groups while keeping the key silhouette and distinguishing details intact.
+  color_and_tone: >-
+    Retain the requested hues and separate deep values from midtones. When the prompt leaves color open,
+    use a restrained palette fitted to the subject; do not default to black, crimson, or candle amber.
+  lighting_and_shadow: >-
+    Follow the stated source and compress ambient fill into selective lit areas, soft absorption, and one
+    or two narrow rim cuts. Keep the light source plausible to the prompt; do not make every image
+    nocturnal or candlelit.
+  texture_and_material: >-
+    Use light-absorbing texture only on materials that support it, such as pile, soot, paper, or powder.
+    Keep grain local and let metal, glass, and skin retain their distinct responses.
+  camera_and_composition: >-
+    Preserve the requested framing and placement. Tighten value grouping within the existing crop instead
+    of adding bands, stages, or a new ritual arrangement.
+  atmosphere_and_mood: >-
+    Build tension through the amount of visible information and the contrast between lit and withheld
+    areas. Follow the prompt's mood; shadow does not require mourning, secrecy, or dread.
+  rendering_and_quality: >-
+    Keep adjacent dark planes distinguishable and silhouettes readable at card size. Reserve the
+    strongest light for a small number of form-defining areas; avoid crushed blacks and broad glow haze.
+avoidRules:
+  - Do not swallow defining features in one undifferentiated black mass.
+  - Do not add candles, smoke, or night when the prompt does not call for them.
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-127.webp
+attributes:
+  negativePrompt: >-
+    Do not swallow defining features in one undifferentiated black mass., Do not add candles, smoke, or
+    night when the prompt does not call for them.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: Do not swallow defining features in one undifferentiated black mass.
+        field: rendering_and_quality
+      - text: Do not add candles, smoke, or night when the prompt does not call for them.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP14-002
+      - SP14-006
+      - SP14-107
+      - SP14-111
+      - SP14-112
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: light-and-shadow
+  categoryName: Light & Shadow
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - light-and-shadow
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

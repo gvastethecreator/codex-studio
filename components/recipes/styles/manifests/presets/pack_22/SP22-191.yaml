@@ -1,0 +1,103 @@
+schemaVersion: 1
+id: SP22-191
+packId: pack_22
+name: Paper Lightbox
+category: 12. Crafted Materials & Miniatures
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - crafted-materials-and-miniatures
+  - layered-transmitted-light
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Layered illustration suggests depth through separated planes and selective transmitted light,
+    keeping the existing subject and scene intact.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Use small value offsets to clarify
+    existing forms without cutting the subject into arbitrary layers.
+  color_and_tone: >-
+    Keep the requested palette and color relationships. Let light pass affect only selected areas and
+    do not add a glow or alter the overall color range.
+  lighting_and_shadow: >-
+    Follow the requested light direction and contrast. Translate it into restrained local transmission
+    and contact shadows without adding a backlight or light source.
+  texture_and_material: >-
+    Keep surfaces clean and use translucency only where the requested material supports it. Do not
+    convert the image into an all-paper scene or add a global glow.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, pose, crop and placement. Layer cues do not create a tunnel,
+    border, lettering or a new layout.
+  atmosphere_and_mood: >-
+    Keep the requested setting and mood. Selective light transmission is a rendering choice and does
+    not change the depicted world.
+  rendering_and_quality: >-
+    Establish silhouette and major planes first, then add subtle offsets and light transmission where
+    useful. Keep the subject clear without imposing a fixed depth arrangement.
+avoidRules:
+  - global screen glow or a tunnel effect
+  - arbitrary cutout layers across every object and surface
+  - unrequested frame, lettering or layout
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-191.webp
+attributes:
+  negativePrompt: >-
+    global screen glow or a tunnel effect, arbitrary cutout layers across every object and surface,
+    unrequested frame, lettering or layout
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: layered illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: layered illustration
+    avoidRules:
+      - text: global screen glow or a tunnel effect
+        field: lighting_and_shadow
+      - text: arbitrary cutout layers across every object and surface
+        field: texture_and_material
+      - text: unrequested frame, lettering or layout
+        field: global
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S091
+    sourceTitle: Paper Lightbox
+    referenceIds:
+      - S01
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    derivedFrom:
+      - TCG-S091
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: crafted-materials-and-miniatures
+  categoryName: 12. Crafted Materials & Miniatures
+  tags:
+    - trading-card-illustration
+    - crafted-materials-and-miniatures
+    - layered-transmitted-light
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -16,79 +16,34 @@ tags:
   - 2000s-classics
 visualDna:
   aesthetic: >-
-    Rose Elite Comedy Style acts as a transferable anime-prestige router: a rose anime direction
-    shaped by era-aware line economy and genre tone, alongside a elite anime direction shaped by
-    era-aware line economy and genre tone; fuse it with 2000s anime classic grammar with cel-digital
-    hybrid polish, genre contrast, sharper compositing, and stylized emotional escalation; it routes
-    era, genre, line economy, cel or digital finish, and performance tone without locking prompt
-    content to the source title or sample image.
+    Expressive anime comedy through elastic reaction shapes, quick timing and refined, clean
+    linework.
   subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through elastic
-    expression shifts and readable reaction shapes, alongside contours paced by rose tension,
-    readable pose energy, and silhouette discipline; identity should remain readable through anime
-    contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of
-    a required canon character or title scene.
+    Preserve each subject and action. Exaggerate expression and outer contour only enough to
+    make a reaction legible; do not change identity.
   color_and_tone: >-
-    Map color through a rose accent system held inside disciplined cel values, alongside a elite
-    accent system held inside disciplined cel values; anchor it in clean digital flats, gothic reds,
-    cool clinical blues, warm romance pastels, pop accents, and deliberate contrast keys; keep value
-    separation clean, cel flats intentional, accents purposeful, and palette behavior attached to
-    the requested content.
+    Retain the prompt's palette. If colors are open, use restrained accents and clear value
+    grouping.
   lighting_and_shadow: >-
-    Use a rose light logic using cel rim, glow behavior, and blocked shadow, alongside a elite light
-    logic using cel rim, glow behavior, and blocked shadow; combine it with digital cel rim, bloom
-    accents, dramatic night cuts, clinical overheads, magical glows, and clean compositing
-    separation; shadows should read as anime light design, rims should clarify form, and glow or
-    effects should support the prompt rather than replacing it.
+    Keep facial highlights and shadow shapes simple so a small expression change reads
+    immediately.
   texture_and_material: >-
-    Render cel paint and ink grain tuned to rose material contrast, alongside cel paint and ink
-    grain tuned to elite material contrast; anchor surfaces in digital ink edges, subtle gradient
-    fills, polished cloth and hair shapes, screen-like glow, and controlled texture overlays; cel
-    edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay
-    coherent across people, objects, environments, action, and abstractions.
+    Use clean ink and controlled digital fills; texture only surfaces present in the prompt.
   camera_and_composition: >-
-    Frame around setup-punchline spacing and quick-cut timing, alongside rose converted into
-    reusable framing rhythm and anime timing, then extend it with opening-sequence energy,
-    split-second action framing, romcom reaction spacing, gothic symmetry, and readable effect
-    geometry; the style should support portraits, props, machines, performances, landscapes,
-    symbols, and full scenes through reusable anime staging grammar instead of one fixed card
-    layout.
+    Use setup-pause-payoff spacing and quick visual beats within the requested frame and
+    cast.
   atmosphere_and_mood: >-
-    Carry mood through deadpan escalation and humane absurdity, alongside rose emotional pressure
-    and genre-specific tone; braid it with genre fluency: deadpan comedy, gothic danger, romance
-    friction, rebellion, paranoia, elegance, and pop unreality; the preset can become funny,
-    sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving
-    the chosen anime lineage.
+    Deadpan escalation and humane absurdity can support humor when asked; preserve other
+    requested tones.
   rendering_and_quality: >-
-    Finish with clean anime finishing that keeps rose identity readable without noisy denoise,
-    alongside clean anime finishing that keeps elite identity readable without noisy denoise;
-    enforce clean 2000s cel-digital finish with strong design readability, controlled effects, and
-    no muddy low-resolution artifacting; prioritize clean denoise, stable anatomy or object
-    structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no
-    photoreal or 3D-render drift.
+    Keep expression contours crisp and compositions readable; avoid clutter that competes
+    with the reaction.
   key_features: >-
-    a rose anime direction shaped by era-aware line economy and genre tone, alongside a elite anime
-    direction shaped by era-aware line economy and genre tone; elastic expression shifts and
-    readable reaction shapes, alongside contours paced by rose tension, readable pose energy, and
-    silhouette discipline; cel paint and ink grain tuned to rose material contrast, alongside cel
-    paint and ink grain tuned to elite material contrast; a rose light logic using cel rim, glow
-    behavior, and blocked shadow, alongside a elite light logic using cel rim, glow behavior, and
-    blocked shadow; setup-punchline spacing and quick-cut timing, alongside rose converted into
-    reusable framing rhythm and anime timing
+    Elastic expression; readable reaction contours; quick-pause timing; refined lines with
+    clear value grouping.
   creative_brief: >-
-    Apply Rose Elite Comedy Style after prompt X as a transferable anime-prestige layer: prompt X
-    supplies subject, action, setting, tone, and intensity, while this preset supplies a rose anime
-    direction shaped by era-aware line economy and genre tone, alongside a elite anime direction
-    shaped by era-aware line economy and genre tone, alongside elastic expression shifts and
-    readable reaction shapes, alongside contours paced by rose tension, readable pose energy, and
-    silhouette discipline; a rose accent system held inside disciplined cel values, alongside a
-    elite accent system held inside disciplined cel values; a rose light logic using cel rim, glow
-    behavior, and blocked shadow, alongside a elite light logic using cel rim, glow behavior, and
-    blocked shadow; cel paint and ink grain tuned to rose material contrast, alongside cel paint and
-    ink grain tuned to elite material contrast and setup-punchline spacing and quick-cut timing,
-    alongside rose converted into reusable framing rhythm and anime timing, finish discipline, and
-    negative controls without requiring a fixed canon cast, title scene, prop bundle, location,
-    sport, instrument, weapon, or card composition.
+    Use the elastic line and quick reaction rhythm where it supports the prompt. Preserve
+    its subjects, framing and chosen tone.
 avoidRules:
   - realistic
   - 3d render
@@ -100,7 +55,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - generic isekai gloss
   - plastic digital anime
@@ -111,15 +65,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-160.webp
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy
-    effects clutter, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise, readable text
+    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
+    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
+    filter, prompt-literal card, muddy cel noise
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

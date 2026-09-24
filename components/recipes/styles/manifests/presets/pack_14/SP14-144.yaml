@@ -1,0 +1,118 @@
+schemaVersion: 1
+id: SP14-144
+packId: pack_14
+name: Norse Saga Noir
+version: 1
+supportedTasks: &id002
+  - image_generate
+  - image_edit
+  - style_preset_card
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-144.webp
+attributes:
+  negativePrompt:
+    Preserve explicit identity, ethnicity, costume, and action locks; do not make a requested
+    person a Viking by default., Do not force a ship, horned helmet, battle, deity, snowfield, or world tree;
+    Norse knotwork, animal interlace, iron, wool, and wood remain available for coherent redesign., Avoid all-over
+    knotwork, generic cosplay, and pseudo-runes.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text:
+          Preserve explicit identity, ethnicity, costume, and action locks; do not make a requested person
+          a Viking by default.
+        field: rendering_and_quality
+      - text:
+          Do not force a ship, horned helmet, battle, deity, snowfield, or world tree; Norse knotwork, animal
+          interlace, iron, wool, and wood remain available for coherent redesign.
+        field: rendering_and_quality
+      - text: Avoid all-over knotwork, generic cosplay, and pseudo-runes.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+    derivedFrom:
+      - SP14-027
+      - SP14-028
+      - SP14-029
+      - SP14-069
+      - SP14-070
+      - SP14-071
+      - SP14-072
+      - SP14-073
+      - SP14-074
+      - SP14-075
+      - SP14-076
+      - SP14-077
+      - SP14-078
+      - SP14-079
+      - SP14-080
+category: Norse Mythology — Sagas
+tags: &id001
+  - curation-v2
+  - identity-reviewed
+  - visual-evaluation-pending
+  - norse-saga-noir
+visualDna:
+  aesthetic: Norse saga noir uses cold painterly value masses, carved interlace, and animal-terminal
+    contours integrated with wood-and-iron construction. A branching knot path or terminal line may follow an
+    existing joint or silhouette when the form supports it; suggest a remembered saga without turning an
+    ordinary setting into a longhouse or requiring a world tree.
+  subject_treatment:
+    Preserve the requested subject, action, ethnicity, anatomy, and any explicit identity
+    or costume lock, as well as the existing era and construction of objects and places. Where
+    a design detail is open, adapt an existing wood or iron edge with a knotwork join, woolen band, or animal-terminal
+    contour. Keep the mythic character in the form's construction rather than replacing its setting or function.
+  color_and_tone:
+    Use iron black, ash gray, frost blue, bone pale, yew green, rust, and a controlled ember
+    accent. Keep the light-dark structure strong while preserving explicitly named material colors;
+    use cold shadows and a warm accent to organize values rather than recoloring the object.
+  lighting_and_shadow:
+    Preserve the requested light direction and time. Use a cool edge and restrained warm
+    reflections on existing iron or wood; snow, night, and forge light are optional scene choices, never reasons
+    to change the setting.
+  texture_and_material:
+    Give wood, iron, wool, ash, ice, and bone distinct tactile treatments when those materials
+    fit the subject. Carve, weave, or cast interlace into a selected structural area, such as a
+    joint or a short rail. Keep other planes and repeated components quiet; do not paste knotwork over skin or
+    every chair, leg, or panel.
+  camera_and_composition:
+    Preserve the requested view and action. A branching line or weighted diagonal may
+    organize the existing composition only when its forms support it; do not impose a world tree, rune stone,
+    ship, border, or period interior.
+  atmosphere_and_mood:
+    Suggest endurance, oath, loss, and remembered consequence with room for courage, warmth,
+    humor, or tenderness. Do not default to battle or fatalism.
+  rendering_and_quality:
+    Use illustrated cold value masses, matte painted shadows, crisp hand-cut lines at
+    focal joins, and selective interwoven detail. Keep anatomy, existing materials, and focal hierarchy clear;
+    avoid polished architectural or product rendering and fabricated rune text.
+avoidRules:
+  - Preserve explicit identity, ethnicity, costume, and action locks; do not make a requested person a Viking
+    by default.
+  - Do not force a ship, horned helmet, battle, deity, snowfield, or world tree; Norse knotwork, animal interlace,
+    iron, wool, and wood remain available for coherent redesign.
+  - Avoid all-over knotwork, generic cosplay, and pseudo-runes.
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: norse-saga-noir
+  categoryName: Norse Mythology — Sagas
+  tags: *id001
+  supportedTasks: *id002
+  hasDefaultImage: true

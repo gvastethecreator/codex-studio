@@ -1,0 +1,104 @@
+schemaVersion: 1
+id: SP22-199
+packId: pack_22
+name: Directional Wax Pencil
+category: 13. Vintage Collectible Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - vintage-collectible-illustration
+  - directional-colored-pencil
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Build color with layered pencil strokes, varied pressure and directional crosshatching that
+    follows form. Keep the drawn surface tactile without making every area equally busy.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose, action and scene. Let pencil marks describe
+    the existing shapes without changing their construction or adding details.
+  color_and_tone: >-
+    Retain the requested palette and value relationships. Build them through layered pencil color
+    and small reserves of the underlying tone rather than imposing a colored-pencil palette.
+  lighting_and_shadow: >-
+    Follow the requested light and shadow pattern. Use stroke density and pressure to model the
+    existing volume without inventing highlights or a new light direction.
+  texture_and_material: >-
+    Show fine wax-pencil grain within colored areas, not photographic noise. Keep the represented
+    materials recognizable beneath the drawing texture.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, pose and placement. The drawn treatment does not alter
+    composition or add borders, labels or layout.
+  atmosphere_and_mood: >-
+    Keep the requested setting and mood. Pencil texture changes the mark-making, not the subject,
+    period, location or story.
+  rendering_and_quality: >-
+    Vary stroke direction and pressure with form; reserve crosshatching for areas where it describes
+    volume. Avoid uniform hatch bands and preserve a clear silhouette.
+avoidRules:
+  - uniform hatch bands unrelated to form
+  - photographic grain or pencil texture obscuring requested materials
+  - unrequested frame, lettering or layout
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-199.webp
+attributes:
+  negativePrompt: >-
+    uniform hatch bands unrelated to form, photographic grain or pencil texture obscuring requested
+    materials, unrequested frame, lettering or layout
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: colored-pencil illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: colored-pencil illustration
+    avoidRules:
+      - text: uniform hatch bands unrelated to form
+        field: rendering_and_quality
+      - text: photographic grain or pencil texture obscuring requested materials
+        field: texture_and_material
+      - text: unrequested frame, lettering or layout
+        field: global
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S099
+    sourceTitle: Wax Pencil Color
+    referenceIds:
+      - S58
+      - S54
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    derivedFrom:
+      - TCG-S099
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: vintage-collectible-illustration
+  categoryName: 13. Vintage Collectible Illustration
+  tags:
+    - trading-card-illustration
+    - vintage-collectible-illustration
+    - directional-colored-pencil
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

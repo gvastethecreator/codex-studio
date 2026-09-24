@@ -1,0 +1,95 @@
+schemaVersion: 1
+id: SP15-094
+packId: pack_15
+name: Biopunk
+category: 4. Bio, Myco & Body Punks
+version: 2
+supportedTasks: &id002
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags: &id001
+  - curation-v2
+  - identity-reviewed
+  - visual-evaluation-pending
+  - bio-myco-and-body-punks
+visualDna:
+  aesthetic:
+    An engineered-living language where cell lattices, membrane structures, symbiotic components and
+    precise bio-circuit traces interlock as intentional systems, not organic texture alone.
+  subject_treatment:
+    Preserve identity, anatomy and explicit locks. Restyle open forms, materials and clothing
+    with grown joins, cellular panels, living polymer and technical traces; use biology as active design vocabulary.
+    In ordinary settings, apply cell/membrane cues to existing garments or materials and connect a precise
+    bio-circuit to a function; keep the room layout intact and add no organisms, plants or wall text as set
+    dressing unless requested.
+  color_and_tone:
+    Let explicit palette lead, balancing mineral or synthetic values with living accents. Separate
+    translucent, opaque and engineered regions; avoid fixed green glow.
+  lighting_and_shadow:
+    Follow specified light and sources. Use internal transitions only within translucent
+    forms; body horror and clinical drama remain optional.
+  texture_and_material:
+    Distinguish membrane, living polymer, plant composite, bone-like material, glass and
+    metal through translucency, fiber direction and grain; surfaces feel intentionally fabricated.
+  camera_and_composition:
+    Preserve viewpoint and placement. Use organic planes and technical traces within
+    the requested composition; a lab, greenhouse or close-up is not required.
+  atmosphere_and_mood:
+    Create curiosity, unease or wonder through living growth and engineered order while
+    following requested tone.
+  rendering_and_quality:
+    Use clean organic contours, precise technical ink and broad translucent planes, with
+    detail at functional interfaces. Avoid random tendril or circuit clutter.
+avoidRules:
+  - Do not impose a lab, clinic, greenhouse, organism or body transformation as the default scene.
+  - Respect anatomy and material locks; do not add unrequested gore or anatomical change.
+  - Avoid uniform biological glow and circuitry unrelated to living function.
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-094.webp
+attributes:
+  negativePrompt:
+    Do not impose a lab, clinic, greenhouse, organism or body transformation as the default scene.,
+    Respect anatomy and material locks; do not add unrequested gore or anatomical change., Avoid uniform biological
+    glow and circuitry unrelated to living function.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: Do not impose a lab, clinic, greenhouse, organism or body transformation as the default scene.
+        field: rendering_and_quality
+      - text: Respect anatomy and material locks; do not add unrequested gore or anatomical change.
+        field: rendering_and_quality
+      - text: Avoid uniform biological glow and circuitry unrelated to living function.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-026
+      - SP15-029
+      - SP15-030
+      - SP15-031
+      - SP15-032
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: bio-myco-and-body-punks
+  categoryName: 4. Bio, Myco & Body Punks
+  tags: *id001
+  supportedTasks: *id002
+  hasDefaultImage: true

@@ -1,0 +1,94 @@
+schemaVersion: 1
+id: SP14-131
+packId: pack_14
+name: Bounded Luminescence
+category: Orbital & Chromatic Fields
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - orbital-and-chromatic-fields
+visualDna:
+  aesthetic: >-
+    Shape a few luminous or reflective color fields within clear boundaries. Gradients may soften inside
+    a region, while adjacent edges remain intentional and the focal form stays intact.
+  subject_treatment: >-
+    Preserve the requested subject and its silhouette. Light fields can surround or cross selected
+    surfaces but must not replace a subject or change its identity.
+  color_and_tone: >-
+    Use the colors requested; when open, choose a compact relationship with a muted spectral shift. Keep
+    the brightest color localized rather than filling the whole image with glow.
+  lighting_and_shadow: >-
+    Respect the stated source and direction. Contain diffuse light to selected zones and retain enough
+    shadow or neutral area to anchor the composition.
+  texture_and_material: >-
+    Keep any reflective or granular response attached to its surface. Do not use all-over haze, film
+    grain, or soft bleed to connect otherwise separate color regions.
+  camera_and_composition: >-
+    Preserve the requested camera and arrangement. Use large bounded fields and a clear focal region
+    without inventing a sky, horizon, basin, or explanatory diagram.
+  atmosphere_and_mood: >-
+    Let color concentration and open space set atmosphere while preserving the requested tone. A luminous
+    field does not automatically mean cosmic, ominous, or sacred.
+  rendering_and_quality: >-
+    Keep the focal contour crisp outside the softened light region. Control transition width and preserve
+    clear boundaries so the image remains readable at card size.
+avoidRules:
+  - Do not let a gradient become an invented landscape or replace the requested subject.
+  - Do not blur all edges or let color bleed beyond its intended field.
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-131.webp
+attributes:
+  negativePrompt: >-
+    Do not let a gradient become an invented landscape or replace the requested subject., Do not blur all
+    edges or let color bleed beyond its intended field.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: Do not let a gradient become an invented landscape or replace the requested subject.
+        field: rendering_and_quality
+      - text: Do not blur all edges or let color bleed beyond its intended field.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP14-085
+      - SP14-086
+      - SP14-087
+      - SP14-090
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: orbital-and-chromatic-fields
+  categoryName: Orbital & Chromatic Fields
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - orbital-and-chromatic-fields
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

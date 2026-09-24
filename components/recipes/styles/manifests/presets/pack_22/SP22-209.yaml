@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP22-209
+packId: pack_22
+name: Modular Geometric Illustration
+category: 14. Symbolic Graphic Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - symbolic-graphic-illustration
+  - modular-geometric-illustration
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Clean modular geometry and controlled curves simplify existing forms into flat shapes while keeping
+    their distinguishing silhouette and visual relationships recognizable.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose, action and function. Abstract only secondary
+    structure; do not replace the subject with a logo, badge or unrelated geometric sign.
+  color_and_tone: >-
+    Preserve the requested palette and use flat color areas with clear size hierarchy; do not impose a
+    fixed emblem palette.
+  lighting_and_shadow: >-
+    Follow the requested light and keep value organization simple and consistent; avoid adding realistic
+    shading, glow or a new source.
+  texture_and_material: >-
+    Use a clean vector-like surface without added texture. Keep the actual material identity clear through
+    the requested color and form.
+  camera_and_composition: >-
+    Retain the requested viewpoint, framing, crop and element placement. Geometric reduction does not
+    authorize a different arrangement or crop.
+  atmosphere_and_mood: >-
+    Preserve the requested setting and tone. Modular form is a rendering method, not a new theme or
+    symbolic message.
+  rendering_and_quality: >-
+    Use crisp edges, controlled-radius curves and a readable hierarchy of shape sizes; retain enough
+    distinctive detail to identify the subject at reduced size.
+avoidRules:
+  - unrequested logos, badges or symbolic marks
+  - abstraction that removes required identity or function
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-209.webp
+attributes:
+  negativePrompt: unrequested logos, badges or symbolic marks, abstraction that removes required identity or function
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: drawing
+    avoidRules:
+      - text: unrequested logos, badges or symbolic marks
+        field: subject_treatment
+      - text: abstraction that removes required identity or function
+        field: subject_treatment
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S109
+    sourceTitle: Geometric Emblem
+    referenceIds:
+      - S41
+      - S56
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: symbolic-graphic-illustration
+  categoryName: 14. Symbolic Graphic Illustration
+  tags:
+    - trading-card-illustration
+    - symbolic-graphic-illustration
+    - modular-geometric-illustration
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

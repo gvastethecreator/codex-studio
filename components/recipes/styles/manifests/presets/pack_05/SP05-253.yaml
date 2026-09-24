@@ -16,76 +16,32 @@ tags:
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: >-
-    The Saint's Magic Power Is Omnipotent - Herbarium Court Glow acts as a transferable
-    anime-battle/worlds router: The Saint's Magic Power Is Omnipotent - Herbarium Court Glow,
-    botanical healing fantasy style grammar with glass-green softness, herbarium glow, formal calm,
-    and clean prepared surfaces; combine it with isekai and high-fantasy anime grammar with
-    magic-system readability, quest-world texture, luminous adventure, and character-independent
-    fantasy routing; named titles, studios, or lineage words may guide style, but they must not
-    require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.
+    Refined cel painting with glass-green translucence, delicate branching linework, and formal,
+    clean color grouping.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply The
-    Saint's Magic Power Is Omnipotent - Herbarium Court Glow, botanical healing fantasy style
-    grammar with glass-green softness, herbarium glow, formal calm, and clean prepared surfaces as
-    portable contour, motion grammar, surface language, and emotional pressure without requiring
-    canon elements or a default action setup.
+    Preserve the requested forms; use fine veinlike strokes only to echo existing contours, never to
+    add plants.
   color_and_tone: >-
-    Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens,
-    parchment neutrals, magical violets, and controlled pastel or dark contrast; let The Saint's
-    Magic Power Is Omnipotent - Herbarium Court Glow, botanical healing fantasy style grammar with
-    glass-green softness, herbarium glow, formal calm, and clean prepared surfaces choose accent
-    intensity, value contrast, emotional temperature, and power-system separation while staying
-    attached to prompt X.
+    Glass green, pale cream, and muted gold form a clear palette, subject to explicit color
+    direction.
   lighting_and_shadow: >-
-    Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and
-    clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from The Saint's Magic Power Is Omnipotent - Herbarium Court Glow,
-    botanical healing fantasy style grammar with glass-green softness, herbarium glow, formal calm,
-    and clean prepared surfaces without replacing prompt X with a stock anime frame.
+    Soft high-key illumination and clean reflected highlights reveal form without requiring a glow
+    source.
   texture_and_material: >-
-    Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel
-    glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in The
-    Saint's Magic Power Is Omnipotent - Herbarium Court Glow, botanical healing fantasy style
-    grammar with glass-green softness, herbarium glow, formal calm, and clean prepared surfaces
-    controlled, denoised, and coherent across bodies, objects, environments, abstractions, and
-    action.
+    Layer translucent color, fine detail, and tidy painted surfaces while keeping every depicted
+    material intact.
   camera_and_composition: >-
-    Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed
-    cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook
-    scale; convert The Saint's Magic Power Is Omnipotent - Herbarium Court Glow, botanical healing
-    fantasy style grammar with glass-green softness, herbarium glow, formal calm, and clean prepared
-    surfaces into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules
-    instead of one fixed style sample layout.
+    Keep the given framing; use orderly detail and calm spacing without adding a formal setting.
   atmosphere_and_mood: >-
-    Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional
-    craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic,
-    comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while
-    keeping the anime-battle lineage readable.
+    Serene and composed, with no imposed healing or ritual.
   rendering_and_quality: >-
-    Finish with clean fantasy-anime finish with stable anatomy and creature/object structure,
-    controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize
-    stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy
-    darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+    Keep thin contours crisp against transparent washes; avoid excess bloom and decorative clutter.
   key_features: >-
-    The Saint's Magic Power Is Omnipotent - Herbarium Court Glow, botanical healing fantasy style
-    grammar with glass-green softness, herbarium glow, formal calm, and clean prepared surfaces;
-    clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or object
-    readability, and portal-like transformation logic; cloth, leather, polished armor, parchment,
-    herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces;
-    quest-path diagonals, transition thresholds, group-scale spacing without fixed cast,
-    adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook scale;
-    clean fantasy-anime finish with stable anatomy and creature/object structure, controlled glow,
-    no RPG UI, no readable magic text, and no generic isekai gloss
+    Glass-green softness, fine branching detail, clean preparation of color, and formal calm define
+    this finish.
   creative_brief: >-
-    Apply The Saint's Magic Power Is Omnipotent - Herbarium Court Glow after prompt X as a
-    transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and
-    intensity, while this preset supplies The Saint's Magic Power Is Omnipotent - Herbarium Court
-    Glow, botanical healing fantasy style grammar with glass-green softness, herbarium glow, formal
-    calm, and clean prepared surfaces, isekai and high-fantasy anime grammar with magic-system
-    readability, quest-world texture, luminous adventure, and character-independent fantasy routing,
-    finish discipline, and negative controls without forcing canon cast, title scene, screenshot,
-    card pose, default monster, default combat prop, or prompt-literal card.
+    Restyle the requested subject with translucent color and precise fine linework, without adding
+    herbs, healing, or a court.
 avoidRules:
   - realistic
   - 3d render
@@ -97,7 +53,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - named franchise likeness
   - laboratory room lock
@@ -113,7 +68,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -121,10 +75,10 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, named franchise likeness, laboratory room lock,
-    bookshelf, readable label, crowded table, RPG UI, readable magic text, generic isekai wallpaper,
-    fixed canon character, title scene replication, required source-frame look, cosplay, generic
-    anime filter, prompt-required card, readable text, logo, muddy noisy darks
+    artifacts, watermark, signature, named franchise likeness, laboratory room lock, bookshelf,
+    readable label, crowded table, RPG UI, readable magic text, generic isekai wallpaper, fixed
+    canon character, title scene replication, required source-frame look, cosplay, generic anime
+    filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

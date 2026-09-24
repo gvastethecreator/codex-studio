@@ -16,63 +16,44 @@ tags:
   - modern-shonen-and-action
 visualDna:
   aesthetic: >-
-    Solo Leveling - Shadow Monarch Raid Ascension acts as a transferable anime-battle/worlds router:
-    Solo Leveling - Shadow Monarch Raid Ascension; combine it with modern action anime grammar with
-    power-system clarity, impact frames, elastic motion, expressive line economy, and
-    high-readability spectacle; named titles, studios, or lineage words may guide style, but they
-    must not require canon cast, title-scene replication, screenshots, logos, or one fixed card
-    concept.
+    Build the graphic anime treatment from narrow dark contours with selective cold edge light and
+    vertical forms rising through deep layered shadow blocks. Let narrow vertical sweeps
+    punctuated by short bright accents set its rhythm; use black and indigo with cold cyan
+    highlights for color and smooth shadow gradients with crisp luminous edges for finish.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Solo
-    Leveling - Shadow Monarch Raid Ascension as portable contour, motion grammar, surface language,
-    and emotional pressure without requiring canon elements or a default action setup.
+    Preserve the requested content and framing. Use narrow dark contours with selective cold edge
+    light for edge work, vertical forms rising through deep layered shadow blocks for form
+    simplification, and narrow vertical sweeps punctuated by short bright accents only where
+    movement is already requested.
   color_and_tone: >-
-    Map color through saturated action accents, clean dark-light value separation, aura color,
-    bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts;
-    let Solo Leveling - Shadow Monarch Raid Ascension choose accent intensity, value contrast,
-    emotional temperature, and power-system separation while staying attached to prompt X.
+    Build value groups with black and indigo with cold cyan highlights. Place the strongest
+    contrast on the requested focal area and preserve explicit color instructions.
   lighting_and_shadow: >-
-    Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights,
-    and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Solo Leveling - Shadow Monarch Raid Ascension without replacing
-    prompt X with a stock anime frame.
+    Treat lighting graphically: deep value falloff with restrained cool rims. Keep shadows grouped
+    and respect any light direction already requested.
   texture_and_material: >-
-    Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted
-    debris, and controlled effect overlays; keep the tactile or effect cues in Solo Leveling -
-    Shadow Monarch Raid Ascension controlled, denoised, and coherent across bodies, objects,
-    environments, abstractions, and action.
+    Render existing surfaces with smooth shadow gradients with crisp luminous edges, preserving
+    depicted materials and adding no props or effects.
   camera_and_composition: >-
-    Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels,
-    compressed depth, and readable near-to-far force paths; convert Solo Leveling - Shadow Monarch
-    Raid Ascension into reusable perspective, timing, rhythm, scale, cut-in, and negative-space
-    rules instead of one fixed style sample layout.
+    Within the requested camera and crop, use tall stacked planes and strong vertical scale within
+    the existing frame to organize existing forms; preserve location and action.
   atmosphere_and_mood: >-
-    Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and
-    heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet,
-    grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle
-    lineage readable.
+    Let line weight, spacing, and value convey quiet awe and controlled intensity, while
+    preserving the prompt's emotional intent.
   rendering_and_quality: >-
-    Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp
-    silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or
-    object structure, readable effects, controlled grain, heavy denoise for noisy darks, no
-    watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+    Finish with dark tonal depth, thin cyan edges, and a clear vertical hierarchy; keep detail
+    selective and accents attached to existing forms.
   key_features: >-
-    Solo Leveling - Shadow Monarch Raid Ascension; dynamic contour, force-transfer anatomy, readable
-    power effects, sharp costume or surface simplification, and emotion-first pose energy; inked
-    speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and
-    controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst
-    panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish
-    with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI
-    anime smear
+    narrow dark contours with selective cold edge light; vertical forms rising through deep
+    layered shadow blocks; black and indigo with cold cyan highlights; narrow vertical sweeps
+    punctuated by short bright accents; smooth shadow gradients with crisp luminous edges; tall
+    stacked planes and strong vertical scale within the existing frame.
   creative_brief: >-
-    Apply Solo Leveling - Shadow Monarch Raid Ascension after prompt X as a transferable
-    anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity,
-    while this preset supplies Solo Leveling - Shadow Monarch Raid Ascension, modern action anime
-    grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and
-    high-readability spectacle, finish discipline, and negative controls without forcing canon cast,
-    title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal
-    card.
+    Keep the requested subject, action, location, and crop. Render them with narrow dark contours
+    with selective cold edge light, vertical forms rising through deep layered shadow blocks, and
+    black and indigo with cold cyan highlights; use narrow vertical sweeps punctuated by short
+    bright accents only where movement is already present, and apply smooth shadow gradients with
+    crisp luminous edges as the drawing finish.
 avoidRules:
   - realistic
   - 3d render
@@ -84,7 +65,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - photoreal cosplay
   - western superhero comic
@@ -95,7 +75,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -103,10 +82,9 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic
-    shonen source-frame look, fixed canon character, title scene replication, required source-frame
-    look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy
-    darks
+    artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen
+    source-frame look, fixed canon character, title scene replication, required source-frame look,
+    cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

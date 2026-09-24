@@ -1,0 +1,96 @@
+schemaVersion: 1
+id: SP22-151
+packId: pack_22
+name: Color Manga Print
+category: 7. Manga Ink & Impact
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - manga-ink-and-impact
+  - color-manga-print
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Drawn manga illustration is finished as a color print: linework remains primary while broad local
+    color areas carry a restrained, tactile ink character.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Use variable-weight contours and
+    restrained interior lines to clarify the given subject without animation-style redesign.
+  color_and_tone: >-
+    Preserve requested hues and relationships, organizing color in broad, separated local areas with
+    modest tonal variation instead of introducing an unrelated grading scheme.
+  lighting_and_shadow: >-
+    Keep the requested light direction and shadow structure. Translate it through printed color and
+    contained value shifts without cinematic glow or an extra source.
+  texture_and_material: >-
+    Allow slight ink variation along color boundaries while preserving the subject's stated materials;
+    do not add artificial age, stains or blanket paper wear.
+  camera_and_composition: >-
+    Retain the requested viewpoint, crop, framing and placement. Print treatment changes surface
+    rendering only, not the scene arrangement.
+  atmosphere_and_mood: >-
+    Preserve the requested setting and tone; use the drawn color-print finish without adding dialogue,
+    sound cues or a separate narrative moment.
+  rendering_and_quality: >-
+    Keep black contours variable in weight and interior marks economical; separate large color regions
+    cleanly so the result reads as an illustration rather than an animation frame.
+avoidRules:
+  - unrequested speech balloons or sound effects
+  - extra details that alter identity or function
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-151.webp
+attributes:
+  negativePrompt: unrequested speech balloons or sound effects, extra details that alter identity or function
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: drawing
+    avoidRules:
+      - text: unrequested speech balloons or sound effects
+        field: atmosphere_and_mood
+      - text: extra details that alter identity or function
+        field: subject_treatment
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S051
+    sourceTitle: Color Manga Print
+    referenceIds:
+      - S24
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: manga-ink-and-impact
+  categoryName: 7. Manga Ink & Impact
+  tags:
+    - trading-card-illustration
+    - manga-ink-and-impact
+    - color-manga-print
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

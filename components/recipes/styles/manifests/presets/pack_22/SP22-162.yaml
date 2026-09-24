@@ -1,0 +1,105 @@
+schemaVersion: 1
+id: SP22-162
+packId: pack_22
+name: Biomech Crosshatch
+category: 8. Technical Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - technical-illustration
+  - material-guided-crosshatch
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Directional crosshatching follows the existing curves and planes, with varied contour weight and
+    disciplined interior marks joining the value structure.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Keep separate materials and forms
+    distinct; do not merge them or add new internal structures.
+  color_and_tone: >-
+    Retain the requested palette and use hatch density to support its shadow values. Do not replace
+    existing colors with a monochrome treatment.
+  lighting_and_shadow: >-
+    Follow the requested light direction and contrast. Turn hatching with the existing form and keep
+    lit areas open without introducing another light source.
+  texture_and_material: >-
+    Use fine, directional marks that vary with each represented surface. Avoid photographic grain
+    and uniform hatch texture across the entire image.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, pose, crop and placement. Line density follows the existing
+    forms and does not add a frame, text or layout.
+  atmosphere_and_mood: >-
+    Keep the requested setting and mood. Crosshatching is a drawing method and does not change the
+    scene or combine unrelated forms.
+  rendering_and_quality: >-
+    Resolve silhouette and large values first, then apply selective hatching along existing curvature.
+    Keep lines sparse enough to preserve the subject's identity at reduced size.
+avoidRules:
+  - merging distinct materials or adding internal structures
+  - dense uniform hatching that obscures identity
+  - unrequested text, frame or card layout
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-162.webp
+attributes:
+  negativePrompt: >-
+    merging distinct materials or adding internal structures, dense uniform hatching that obscures
+    identity, unrequested text, frame or card layout
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: drawing
+    avoidRules:
+      - text: merging distinct materials or adding internal structures
+        field: subject_treatment
+      - text: dense uniform hatching that obscures identity
+        field: rendering_and_quality
+      - text: unrequested text, frame or card layout
+        field: global
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S062
+    sourceTitle: Biomech Crosshatch
+    referenceIds:
+      - S25
+      - S34
+      - S60
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    derivedFrom:
+      - TCG-S062
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: technical-illustration
+  categoryName: 8. Technical Illustration
+  tags:
+    - trading-card-illustration
+    - technical-illustration
+    - material-guided-crosshatch
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

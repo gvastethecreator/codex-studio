@@ -33,7 +33,7 @@ function isRecord(value: unknown): value is Record<string, unknown> {
 
 function cleanDirective(directive: RecipeProviderDirective) {
   const label = cleanString(directive.label);
-  const value = cleanString(directive.value);
+  const value = directive.value.split(/\r?\n/).map(cleanString).filter(Boolean).join('\n');
   return label && value ? { label, value } : null;
 }
 

@@ -1,0 +1,98 @@
+schemaVersion: 1
+id: SP14-124
+packId: pack_14
+name: Broken Symmetry
+category: Shape & Perception
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - shape-and-perception
+visualDna:
+  aesthetic: >-
+    Build graphic emphasis through partial enclosures, off-center axes, and deliberate interruptions.
+    Tension comes from how forms occlude one another, not from a prescribed emblem or lore.
+  subject_treatment: >-
+    Preserve the requested subject, action, proportions, and identity. Let cropped contours and
+    overlapping masses support its silhouette; keep defining features visible through the interruptions.
+  color_and_tone: >-
+    Retain the requested palette. If the prompt leaves color open, use two distinct value families and
+    one limited accent; avoid assigning every image the same dark-and-metallic colors.
+  lighting_and_shadow: >-
+    Use occlusion to shape abrupt, non-linear shadow changes around overlaps while respecting stated
+    light. Keep bright edges selective and attached to form; do not add a literal eclipse or new source.
+  texture_and_material: >-
+    Show local surface variation only where the requested material supports it. Keep surface variation
+    localized so the main value shapes stay clean.
+  camera_and_composition: >-
+    Preserve the requested viewpoint and arrangement. When composition is open, place the main mass
+    slightly off-axis and let a partial curve or crop establish hierarchy without requiring a circle,
+    halo, or frontal icon.
+  atmosphere_and_mood: >-
+    Create suspense through an interrupted visual rhythm or withheld closure. Follow the requested
+    emotional tone, including bright or playful treatments, without defaulting to grief or solemnity.
+  rendering_and_quality: >-
+    Keep the principal silhouette, overlap edges, and open spaces distinct at small size. Balance a few
+    hard shadow cuts with selective material detail; avoid muddy dark masses.
+avoidRules:
+  - Do not complete every open curve into a seal or halo.
+  - Do not let shadow or ornament close the main negative-space opening.
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-124.webp
+attributes:
+  negativePrompt: >-
+    Do not complete every open curve into a seal or halo., Do not let shadow or ornament close the main
+    negative-space opening.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: Do not complete every open curve into a seal or halo.
+        field: rendering_and_quality
+      - text: Do not let shadow or ornament close the main negative-space opening.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP14-001
+      - SP14-095
+      - SP14-099
+      - SP14-100
+      - SP14-102
+      - SP14-104
+      - SP14-105
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: shape-and-perception
+  categoryName: Shape & Perception
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - shape-and-perception
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

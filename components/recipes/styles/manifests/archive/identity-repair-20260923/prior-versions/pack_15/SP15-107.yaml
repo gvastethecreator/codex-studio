@@ -1,0 +1,92 @@
+schemaVersion: 1
+id: SP15-107
+packId: pack_15
+name: Vaporpunk
+category: 7. Media, Vapor & Glitch Punks
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - media-vapor-and-glitch-punks
+visualDna:
+  aesthetic: Blend checker or tile geometry with reflective planes, washed gradients, and soft cathode-like halos.
+  subject_treatment: >-
+    Preserve requested content and action; use reflection and haze as selective rendering cues instead of
+    adding a screen, arcade, or retail interior.
+  color_and_tone: >-
+    Mix aqua, magenta, peach, violet, and phosphor green against cream and charcoal, following any
+    specified palette.
+  lighting_and_shadow: >-
+    Contain glow around selected edges and reflected color; retain readable shadows and requested light
+    direction.
+  texture_and_material: >-
+    Contrast smooth reflective color planes, thin metallic glints, shallow reflections, and restrained
+    grain.
+  camera_and_composition: >-
+    Preserve requested framing; balance one broad geometric plane with a clear anchor and reflective
+    color band.
+  atmosphere_and_mood: >-
+    Let synthetic nostalgia or unease emerge from pastel color and reflection while following the
+    requested mood.
+  rendering_and_quality: Keep geometry crisp, reflections shallow, and haze subordinate to the forms.
+avoidRules:
+  - generic gradient without material structure
+  - bloom that erases the grid
+  - reflections that create a second scene
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-107.webp
+attributes:
+  negativePrompt: >-
+    generic gradient without material structure, bloom that erases the grid, reflections that create a
+    second scene
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: generic gradient without material structure
+        field: rendering_and_quality
+      - text: bloom that erases the grid
+        field: rendering_and_quality
+      - text: reflections that create a second scene
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-049
+      - SP15-050
+      - SP15-055
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: media-vapor-and-glitch-punks
+  categoryName: 7. Media, Vapor & Glitch Punks
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - media-vapor-and-glitch-punks
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -4,235 +4,183 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP15-057',
-    name: 'Neon Witch Current',
+    id: 'SP15-111',
+    name: 'Witchpunk',
     category: '8. Occult, Myth & Gothic Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, near-plane cloaked figure, pendant, pouch, costume detail, broom, pointed hat cliche, pentagram, magic circle glyphs, floor glyph circle, readable sigils, religious symbols, cable staff hero, wizard pose, fantasy chapel, transformer realism, dense power-grid maze, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, altar lock, candle-interior-system dependency, generic vampire portrait, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'a required witch, altar, or spellcasting action, mixing unrelated symbol systems into one visual vocabulary, a fixed bundle of herbs, seals, charms, and devices in every image, effects that erase the focal silhouette, unrequested candles, herb bundles, altar dressing, or ritual-room architecture',
     style: {
       aesthetic:
-        'Neon Witch Current operates as a portable punk-spectrum router: combine Neon Witch Current identity cues through high-voltage mass; plain neon oval glow; copper cable arcs; rubber-glove gesture; charged occult pressure; witchpunk electrical ritual that transfers neon current with occult/gothic punk grammar with ritual electronics, tarot circuitry, relay arches, necrophone craft, vampire data elegance, and folk-horror signal hum, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'Make witchcraft feel handmade and defiantly improvised through hand-cut arcane marks, knotted seams, wax-like pigment, and colored thread integrated into a few existing surfaces rather than through added props or a ritual setting.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through ritual-circuit framing, horn or arch silhouettes, bone-lime accents, black cable lace, divination geometry, antique device edges, and symbolic current; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve the requested subject, action, setting, and framing; apply repaired bindings or one coherent hand-cut mark to compatible existing clothing or surfaces. Do not add pouches, tools, devices, or a witch/spellcasting identity unless requested.',
       color_and_tone:
-        'Map color through velvet black, oxblood, tarnished silver, sickly green, saffron, ivory, turquoise, chrome, and cold white ritual accents; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Balance wax red, herb green, soot, parchment, and tarnished copper; use a small electric glow only as a deliberate sign of active magic, not as the defining palette.',
       lighting_and_shadow:
-        "Use candle-to-neon contrast, moon rim, phosphor glow, relay indicator beads, ritual warning light, and low antique-device illumination; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Preserve the requested light source, direction, and time of day; use at most a small warm or colored accent on the mark itself, without implying a candle or darkening the room.',
       texture_and_material:
-        'Render bakelite, tarnished wire, bone-lime ceramic, velvet blocks, straw, galvanized metal, carved wood, ribbon, and occult signal marks; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Render wax-like pigment, dyed thread, patched cloth, or worn leather only where those materials already fit the subject; keep marks personal and visibly handmade rather than adding plant bundles or devices.',
       camera_and_composition:
-        'Compose through ritual symmetry, gothic arch rhythm, signal-device spacing, card-like emblem balance, and severe subject clarity without altar dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Keep any knot or mark attached to an existing form; preserve open space and the requested framing instead of adding a standalone talisman, altar, or prop arrangement.',
       atmosphere_and_mood:
-        'Carry mood through romantic severity, analog haunt, tender repair, ceremonial machinery, decadent danger, and grounded superstition; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Carry resourceful, intimate occult defiance through the handmade marks themselves; let the requested setting and emotional tone remain in control.',
       rendering_and_quality:
-        'Finish with denoised gothic-punk illustration with disciplined darkness, readable symbolic current, and no candle-interior-system or altar lock; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'high-voltage mass; plain neon oval glow; copper cable arcs; rubber-glove gesture; charged occult pressure; witchpunk electrical ritual that transfers neon current',
-      creative_brief:
-        'Use Neon Witch Current after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies high-voltage mass, plain neon oval glow, copper cable arcs, rubber-glove gesture, charged occult pressure, witchpunk electrical ritual that transfers neon current, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Keep handmade edges and material joins legible, reserve luminous effects for purposeful magic, and maintain a clear subject silhouette.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-111'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-058',
-    name: 'Tarot Circuit Casting',
+    id: 'SP15-112',
+    name: 'Gothpunk',
     category: '8. Occult, Myth & Gothic Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, near-plane masked hero, realistic masked portrait, robe symbols, worker emblems, wall plaques with glyphs, readable card names, letters, zodiac signs, pentagram, cross, skull emblem, fortune-teller table, altar, cathedral corridor, foundry corridor, photoreal molten metal, tiny circuit filigree, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, altar lock, candle-interior-system dependency, generic vampire portrait, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'a required cathedral, cemetery, or funeral scene, all-black fill that hides form, overloaded lace and accessories obscuring the subject, global darkening that replaces requested daylight or exposure',
     style: {
       aesthetic:
-        'Tarot Circuit Casting operates as a portable punk-spectrum router: combine Tarot Circuit Casting identity cues through blank tarot geometry; machine-press shadows; molten circuit traces; soot; card panels; tarot-tech industrial occult that transfers blank card geometry with occult/gothic punk grammar with ritual electronics, tarot circuitry, relay arches, necrophone craft, vampire data elegance, and folk-horror signal hum, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        "Draw on goth subculture's deliberate silhouette and material drama: pointed lines, layered black fabrics, lace or mesh, silver hardware, sharp makeup-like graphic shapes, and selective oxblood accents.",
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through ritual-circuit framing, horn or arch silhouettes, bone-lime accents, black cable lace, divination geometry, antique device edges, and symbolic current; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve the requested subject and action; style unspecified clothing, trims, and silhouettes with goth tailoring and hardware without assigning a goth identity or costume to every subject.',
       color_and_tone:
-        'Map color through velvet black, oxblood, tarnished silver, sickly green, saffron, ivory, turquoise, chrome, and cold white ritual accents; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Use black, charcoal, cool gray, and oxblood as controlled accents on compatible clothing or surfaces, with pale highlights or silver used selectively; retain the requested environment palette and visibility.',
       lighting_and_shadow:
-        "Use candle-to-neon contrast, moon rim, phosphor glow, relay indicator beads, ritual warning light, and low antique-device illumination; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Preserve the requested light source, level, and time of day; use local cool edge light and open shadows to reveal fabric layering without darkening the whole scene.',
       texture_and_material:
-        'Render bakelite, tarnished wire, bone-lime ceramic, velvet blocks, straw, galvanized metal, carved wood, ribbon, and occult signal marks; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Contrast velvet-like matte cloth, lace, leather, polished silver, and small translucent accents; keep details structural rather than decorative noise.',
       camera_and_composition:
-        'Compose through ritual symmetry, gothic arch rhythm, signal-device spacing, card-like emblem balance, and severe subject clarity without altar dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        "Favor elongated verticals and asymmetrical negative space while preserving the prompt's framing; use one silhouette break or accessory as a focal accent.",
       atmosphere_and_mood:
-        'Carry mood through romantic severity, analog haunt, tender repair, ceremonial machinery, decadent danger, and grounded superstition; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Carry theatrical self-possession and dark romanticism that may be tender, bold, or playful, not automatically mournful.',
       rendering_and_quality:
-        'Finish with denoised gothic-punk illustration with disciplined darkness, readable symbolic current, and no candle-interior-system or altar lock; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'blank tarot geometry; machine-press shadows; molten circuit traces; soot; card panels; tarot-tech industrial occult that transfers blank card geometry',
-      creative_brief:
-        'Use Tarot Circuit Casting after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies blank tarot geometry, machine-press shadows, molten circuit traces, soot, card panels, tarot-tech industrial occult that transfers blank card geometry, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Keep silhouette, lace pattern, and hardware readable at small scale; use clear material separation and restrained highlights.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-112'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-059',
-    name: 'Goth Relay Arches',
+    id: 'SP15-113',
+    name: 'Bonepunk',
     category: '8. Occult, Myth & Gothic Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, cross, religious icon, skull emblem, altar, chapel corridor, stained-glass text, readable symbols, lace microdetail, black-on-black costume portrait, near-plane goth pinup, photoreal stone, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, altar lock, candle-interior-system dependency, generic vampire portrait, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'a compulsory signal horn, rigging scene, or anatomical skeleton subject, bone color used as a substitute for visible bone construction, gore where it is not requested, unrequested full-scene conversion into bone architecture or all-bone furniture',
     style: {
       aesthetic:
-        'Goth Relay Arches operates as a portable punk-spectrum router: combine Goth Relay Arches identity cues through pointed silhouettes; cable lace; red indicators; radio glow; velvet darkness; lace-like cable meshes with occult/gothic punk grammar with ritual electronics, tarot circuitry, relay arches, necrophone craft, vampire data elegance, and folk-horror signal hum, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'Make bone an engineered material through a few articulated ivory plates, carved struts, marrow-like channels, or tendon and hide bindings integrated into compatible existing forms; keep bone construction distinctive without converting the whole scene.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through ritual-circuit framing, horn or arch silhouettes, bone-lime accents, black cable lace, divination geometry, antique device edges, and symbolic current; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve the requested subject, action, setting, and framing; apply bone construction to selected compatible joints or structural accents while retaining the main material and architecture of the requested scene. Do not rebuild all furniture or the room in bone.',
       color_and_tone:
-        'Map color through velvet black, oxblood, tarnished silver, sickly green, saffron, ivory, turquoise, chrome, and cold white ritual accents; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Center chalk ivory, warm bone, smoke, rawhide, and muted earth, with dark joints or one cool accent to separate construction layers; do not reduce bone identity to a cream palette alone.',
       lighting_and_shadow:
-        "Use candle-to-neon contrast, moon rim, phosphor glow, relay indicator beads, ritual warning light, and low antique-device illumination; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Use directional light and carved inner shadows to reveal wall thickness, joints, and articulated overlaps; keep the silhouette clear against the background.',
       texture_and_material:
-        'Render bakelite, tarnished wire, bone-lime ceramic, velvet blocks, straw, galvanized metal, carved wood, ribbon, and occult signal marks; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Show polished, carved, or weathered bone as a localized worked component alongside the existing material, with tendon-like cord, hide, or sparse wood where compatible; keep anatomical detail stylized.',
       camera_and_composition:
-        'Compose through ritual symmetry, gothic arch rhythm, signal-device spacing, card-like emblem balance, and severe subject clarity without altar dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Keep one or two braces or joints close to the focal form, with open intervals that show their support function; preserve the requested focal hierarchy and room layout.',
       atmosphere_and_mood:
-        'Carry mood through romantic severity, analog haunt, tender repair, ceremonial machinery, decadent danger, and grounded superstition; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        "Suggest austere, uncanny ingenuity and a tactile relationship between organic material and engineered form, while keeping the prompt's emotional tone.",
       rendering_and_quality:
-        'Finish with denoised gothic-punk illustration with disciplined darkness, readable symbolic current, and no candle-interior-system or altar lock; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'pointed silhouettes; cable lace; red indicators; radio glow; velvet darkness; lace-like cable meshes',
-      creative_brief:
-        'Use Goth Relay Arches after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies pointed silhouettes, cable lace, red indicators, radio glow, velvet darkness, lace-like cable meshes, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Make bone joints, carved edges, and structural connections obvious at thumbnail scale; avoid relying on pale coloring or fine texture alone.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-113'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-060',
-    name: 'Bone Lime Signal Horns',
+    id: 'SP15-114',
+    name: 'Necropunk',
     category: '8. Occult, Myth & Gothic Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, flags, banners, crescent marks, circular emblems, clothing symbols, real bones, skulls, gore, teeth, animal carcass, readable glyphs, tribal emblem, religious altar, runic text, giant horn monster, fantasy cave, empty hill panorama, tiny lamp carpets, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, altar lock, candle-interior-system dependency, generic vampire portrait, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'a required corpse, graveyard, or antique telephone, decay rendered as uniform grime rather than integrated construction, unrequested gore that overwhelms the intended image, dominant bone construction, bone-built furniture, or bone architecture that makes the style read as Bonepunk, nonfunctional bone ornament without a visible operating funerary interface',
     style: {
       aesthetic:
-        'Bone Lime Signal Horns operates as a portable punk-spectrum router: combine Bone Lime Signal Horns identity cues through signal horns; limewash plates; rawhide straps; cold field glow; wind pressure; bonepunk signal ritual that transfers bone-white horn geometry with occult/gothic punk grammar with ritual electronics, tarot circuitry, relay arches, necrophone craft, vampire data elegance, and folk-horror signal hum, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'Differentiate necropunk by visible function: one connected funerary interface or relic-like mechanism on an existing fitting, joint, seam, or control area shows ongoing operation through a restrained signal and a small regrowth seam; keep bone secondary so the result does not read as Bonepunk.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through ritual-circuit framing, horn or arch silhouettes, bone-lime accents, black cable lace, divination geometry, antique device edges, and symbolic current; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve the requested subject, action, setting, and framing; give one compatible existing fitting, joint, seam, or control area a visible funerary function. Keep its controls or signal visibly connected to the host form; do not add a corpse, grave, new apparatus, or bone-built room.',
       color_and_tone:
-        'Map color through velvet black, oxblood, tarnished silver, sickly green, saffron, ivory, turquoise, chrome, and cold white ritual accents; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        "Use soot, tarnished metal, dried-earth tones, and a restrained green or ember signal on the active mechanism; reserve bone for a small component and retain the scene's other materials.",
       lighting_and_shadow:
-        "Use candle-to-neon contrast, moon rim, phosphor glow, relay indicator beads, ritual warning light, and low antique-device illumination; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Preserve the requested base illumination; confine any glow or ember to the operating interface so the mechanism reads without turning the room into a dark laboratory.',
       texture_and_material:
-        'Render bakelite, tarnished wire, bone-lime ceramic, velvet blocks, straw, galvanized metal, carved wood, ribbon, and occult signal marks; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Favor aged metal, worn enamel, binding cord, and a small renewed seam joined to the operating signal; if bone is used, keep it as one component, not the dominant material or architecture.',
       camera_and_composition:
-        'Compose through ritual symmetry, gothic arch rhythm, signal-device spacing, card-like emblem balance, and severe subject clarity without altar dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Show how the interface connects to and operates on an existing focal form; preserve the requested camera and action without adding a separate machine or rebuilding surrounding objects.',
       atmosphere_and_mood:
-        'Carry mood through romantic severity, analog haunt, tender repair, ceremonial machinery, decadent danger, and grounded superstition; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Carry the uncanny tension of death put to work and matter returning to function, while allowing the requested tone to range beyond horror.',
       rendering_and_quality:
-        'Finish with denoised gothic-punk illustration with disciplined darkness, readable symbolic current, and no candle-interior-system or altar lock; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'signal horns; limewash plates; rawhide straps; cold field glow; wind pressure; bonepunk signal ritual that transfers bone-white horn geometry',
-      creative_brief:
-        'Use Bone Lime Signal Horns after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies signal horns, limewash plates, rawhide straps, cold field glow, wind pressure, bonepunk signal ritual that transfers bone-white horn geometry, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Keep one connected control or joint, its operating signal, and its regrowth edge visually distinct; communicate death put to work without depending on bone construction, corpses, or extra iconography.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-114'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-061',
-    name: 'Necrophone Repair Craft',
+    id: 'SP15-115',
+    name: 'Mythpunk',
     category: '8. Occult, Myth & Gothic Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, crescent marks, wall emblems, clothing symbols, religious shapes, skull, ghost face, monster, gore, seance table, readable phone labels, shop signs, wall of tiny tools, bench-lamp hero, cluttered repair desk, haunted interior-system corridor, photoreal dust, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, altar lock, candle-interior-system dependency, generic vampire portrait, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      "a mandatory civic procession or shrine, incoherent mixing of mythic symbol systems, DIY ornament obscuring the subject's defining silhouette, generic folk-pattern decoration, unrequested creatures, or added mythic props",
     style: {
       aesthetic:
-        'Necrophone Repair Craft operates as a portable punk-spectrum router: combine Necrophone Repair Craft identity cues through antique receivers; bone-white resin; phosphor audio waves; copper coils; careful hand gestures; copper tuning coils with occult/gothic punk grammar with ritual electronics, tarot circuitry, relay arches, necrophone craft, vampire data elegance, and folk-horror signal hum, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'Rework a coherent story-derived silhouette or emblem through contemporary DIY defiance: hand-cut shapes, patched planes, and repurposed details make the narrative feel remade rather than reverently preserved; avoid generic folk-pattern decoration.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through ritual-circuit framing, horn or arch silhouettes, bone-lime accents, black cable lace, divination geometry, antique device edges, and symbolic current; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve the requested subject, action, setting, and framing; apply one coherent story-token as a hand-cut, patched, or repurposed mark on an existing compatible surface. Use named myths only when requested; otherwise keep the narrative motif invented, and do not add a creature or prop.',
       color_and_tone:
-        'Map color through velvet black, oxblood, tarnished silver, sickly green, saffron, ivory, turquoise, chrome, and cold white ritual accents; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Let the requested palette lead; use tactile contrasts such as ink, worn cloth, brass, or enamel only as local DIY accents, and preserve any named mythic reference without assigning it new meanings.',
       lighting_and_shadow:
-        "Use candle-to-neon contrast, moon rim, phosphor glow, relay indicator beads, ritual warning light, and low antique-device illumination; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Preserve the requested light source and time of day; use clear local contrast to make the story-token readable without adding magical lighting or changing the setting.',
       texture_and_material:
-        'Render bakelite, tarnished wire, bone-lime ceramic, velvet blocks, straw, galvanized metal, carved wood, ribbon, and occult signal marks; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Combine one coherent narrative motif with visible DIY alteration; avoid generic floral folk ornament, rural horror craft, or mixing cultural motifs. Keep named traditions coherent when the prompt identifies one.',
       camera_and_composition:
-        'Compose through ritual symmetry, gothic arch rhythm, signal-device spacing, card-like emblem balance, and severe subject clarity without altar dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Keep the existing subject and composition dominant; place the story-token within an existing surface rather than adding a creature, talisman object, shrine, procession, or altar.',
       atmosphere_and_mood:
-        'Carry mood through romantic severity, analog haunt, tender repair, ceremonial machinery, decadent danger, and grounded superstition; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Suggest a legend remixed in the present through its altered mark and repair language; let the prompt set the emotional tone and keep the scene contemporary when no other setting is requested.',
       rendering_and_quality:
-        'Finish with denoised gothic-punk illustration with disciplined darkness, readable symbolic current, and no candle-interior-system or altar lock; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'antique receivers; bone-white resin; phosphor audio waves; copper coils; careful hand gestures; copper tuning coils',
-      creative_brief:
-        'Use Necrophone Repair Craft after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies antique receivers, bone-white resin, phosphor audio waves, copper coils, careful hand gestures, copper tuning coils, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Keep folk-derived contours and punk interventions crisp and distinct; use decorative detail selectively so the transformed silhouette remains dominant.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-115'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-062',
-    name: 'Myth Engine Civic Rite',
+    id: 'SP15-116',
+    name: 'Folk Horror Punk',
     category: '8. Occult, Myth & Gothic Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, crescent marks, clothing symbols, flags, banners, cross, deity statue, altar, readable banner text, flag emblem, faction logo, holy icon, skull, crowded parade texture, commerce-system public-style, fantasy temple corridor, lantern carpet, photoreal brass, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, altar lock, candle-interior-system dependency, generic vampire portrait, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'a compulsory forest, field, scarecrow, or ritual, unrequested gore or horror intensity, folk ornament or fiber texture overwhelming the subject, a new shrine, cottage, or ritual room replacing the requested environment, unrequested warning text, logos, or readable symbols',
     style: {
       aesthetic:
-        'Myth Engine Civic Rite operates as a portable punk-spectrum router: combine Myth Engine Civic Rite identity cues through brass engine glow; cable garlands; blank cloth strips; painted wood; public silhouettes; turquoise accents with occult/gothic punk grammar with ritual electronics, tarot circuitry, relay arches, necrophone craft, vampire data elegance, and folk-horror signal hum, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'Root the style in handmade rural folk-horror craft through effigy-like contours, knotted bindings, weathered ornament, and localized punk repairs on existing forms; evoke inherited tension without constructing a new ritual object or setting.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through ritual-circuit framing, horn or arch silhouettes, bone-lime accents, black cable lace, divination geometry, antique device edges, and symbolic current; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve the requested subject, action, setting, and framing; apply rural craft marks, bindings, or effigy-like contour details to compatible existing forms. Do not add an effigy, scarecrow, warning text, cottage, or landscape unless requested.',
       color_and_tone:
-        'Map color through velvet black, oxblood, tarnished silver, sickly green, saffron, ivory, turquoise, chrome, and cold white ritual accents; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        "Use weathered earth, straw, rust, or faded cloth only as localized material accents; preserve the prompt's palette, base materials, and requested horror intensity rather than forcing muted dusk.",
       lighting_and_shadow:
-        "Use candle-to-neon contrast, moon rim, phosphor glow, relay indicator beads, ritual warning light, and low antique-device illumination; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Use directional light that reveals binding, carving, and weathered edges; sustain the requested mood, from daylight unease to explicit horror, without flattening details into darkness.',
       texture_and_material:
-        'Render bakelite, tarnished wire, bone-lime ceramic, velvet blocks, straw, galvanized metal, carved wood, ribbon, and occult signal marks; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Differentiate tied fiber, carved wood, aged cloth, clay, or weathered metal only where compatible with existing objects; localize craft wear instead of converting the room or applying blanket grit.',
       camera_and_composition:
-        'Compose through ritual symmetry, gothic arch rhythm, signal-device spacing, card-like emblem balance, and severe subject clarity without altar dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Preserve the requested camera, subject placement, and environment; use asymmetry and local spacing in the existing composition without prescribing a field, forest, cottage, or ritual arrangement.',
       atmosphere_and_mood:
-        'Carry mood through romantic severity, analog haunt, tender repair, ceremonial machinery, decadent danger, and grounded superstition; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Carry rural folklore, communal tension, and punk defiance through binding and weathered craft details; support explicit horror or gore only when requested, without changing the scene into a rural ritual.',
       rendering_and_quality:
-        'Finish with denoised gothic-punk illustration with disciplined darkness, readable symbolic current, and no candle-interior-system or altar lock; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'brass engine glow; cable garlands; blank cloth strips; painted wood; public silhouettes; turquoise accents',
-      creative_brief:
-        'Use Myth Engine Civic Rite after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies brass engine glow, cable garlands, blank cloth strips, painted wood, public silhouettes, turquoise accents, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Keep bindings, ornament, and folk-derived contours legible; balance uncanny material detail with clear subject reading at thumbnail scale.',
     },
-  },
-  {
-    id: 'SP15-063',
-    name: 'Vampire Data Nocturne',
-    category: '8. Occult, Myth & Gothic Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, blood, fangs, bite marks, wounds, gore, skull, coffin, bat swarm, readable screen UI, terminal text, logo, salon chair fixation, lamp fixation, unmotivated glamour-only poster, photoreal skin, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, altar lock, candle-interior-system dependency, generic vampire portrait, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Vampire Data Nocturne operates as a portable punk-spectrum router: combine Vampire Data Nocturne identity cues through velvet darkness; red data glass; antique screens; chrome glints; moonlit cuts; antique terminals with occult/gothic punk grammar with ritual electronics, tarot circuitry, relay arches, necrophone craft, vampire data elegance, and folk-horror signal hum, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through ritual-circuit framing, horn or arch silhouettes, bone-lime accents, black cable lace, divination geometry, antique device edges, and symbolic current; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through velvet black, oxblood, tarnished silver, sickly green, saffron, ivory, turquoise, chrome, and cold white ritual accents; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use candle-to-neon contrast, moon rim, phosphor glow, relay indicator beads, ritual warning light, and low antique-device illumination; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render bakelite, tarnished wire, bone-lime ceramic, velvet blocks, straw, galvanized metal, carved wood, ribbon, and occult signal marks; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through ritual symmetry, gothic arch rhythm, signal-device spacing, card-like emblem balance, and severe subject clarity without altar dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through romantic severity, analog haunt, tender repair, ceremonial machinery, decadent danger, and grounded superstition; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with denoised gothic-punk illustration with disciplined darkness, readable symbolic current, and no candle-interior-system or altar lock; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'velvet darkness; red data glass; antique screens; chrome glints; moonlit cuts; antique terminals',
-      creative_brief:
-        'Use Vampire Data Nocturne after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies velvet darkness, red data glass, antique screens, chrome glints, moonlit cuts, antique terminals, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-064',
-    name: 'Folk Horror Line Hum',
-    category: '8. Occult, Myth & Gothic Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, straw-mask portrait, scarecrow body, hanging figure, blood, gore, cult symbols, readable warning text, ribbon glyphs, religious icon, lantern carpet, birds as motif, fantasy forest, photoreal mud, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, altar lock, candle-interior-system dependency, generic vampire portrait, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Folk Horror Line Hum operates as a portable punk-spectrum router: combine Folk Horror Line Hum identity cues through ceramic insulators; straw warning bundles; blank ribbons; galvanized metal; orange electrical hum; dusk backlight with occult/gothic punk grammar with ritual electronics, tarot circuitry, relay arches, necrophone craft, vampire data elegance, and folk-horror signal hum, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through ritual-circuit framing, horn or arch silhouettes, bone-lime accents, black cable lace, divination geometry, antique device edges, and symbolic current; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through velvet black, oxblood, tarnished silver, sickly green, saffron, ivory, turquoise, chrome, and cold white ritual accents; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use candle-to-neon contrast, moon rim, phosphor glow, relay indicator beads, ritual warning light, and low antique-device illumination; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render bakelite, tarnished wire, bone-lime ceramic, velvet blocks, straw, galvanized metal, carved wood, ribbon, and occult signal marks; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through ritual symmetry, gothic arch rhythm, signal-device spacing, card-like emblem balance, and severe subject clarity without altar dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through romantic severity, analog haunt, tender repair, ceremonial machinery, decadent danger, and grounded superstition; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with denoised gothic-punk illustration with disciplined darkness, readable symbolic current, and no candle-interior-system or altar lock; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'ceramic insulators; straw warning bundles; blank ribbons; galvanized metal; orange electrical hum; dusk backlight',
-      creative_brief:
-        'Use Folk Horror Line Hum after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies ceramic insulators, straw warning bundles, blank ribbons, galvanized metal, orange electrical hum, dusk backlight, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-116'],
+      visualEvaluation: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

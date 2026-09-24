@@ -1,0 +1,94 @@
+schemaVersion: 1
+id: SP15-098
+packId: pack_15
+name: Icepunk
+category: 5. Ocean, Ice & Terrain Punks
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - ocean-ice-and-terrain-punks
+visualDna:
+  aesthetic: >-
+    Icepunk uses compressed frost planes, wind-cut facets and a few decisive fracture seams, balanced by
+    a small warm-cold value contrast.
+  subject_treatment: >-
+    Preserve the requested subject, shape and action; apply frost facets or fracture marks only where
+    compatible, without turning it into a ship or expedition.
+  color_and_tone: >-
+    Respect requested colors; favor glacier whites and blue-gray depth planes, with a restrained warm
+    accent only when it clarifies the composition.
+  lighting_and_shadow: Follow the requested light; use crisp cool shadow cuts and no added lantern or internal glow.
+  texture_and_material: >-
+    Keep materials distinct; reserve frosted translucency, matte ice grain and fracture edges for ice or
+    compatible surfaces.
+  camera_and_composition: >-
+    Preserve viewpoint and crop; arrange a few compressed facets and diagonal seams without requiring a
+    polar landscape.
+  atmosphere_and_mood: >-
+    Suggest pressure, cold resilience and quiet shelter through value compression while keeping the
+    requested tone.
+  rendering_and_quality: >-
+    Use large clear ice planes and a few controlled fractures; avoid fine crack webs, all-over frost and
+    detail that dissolves at thumbnail size.
+avoidRules:
+  - Do not add ships, harbors, lanterns or polar-exploration equipment unless requested.
+  - Do not frost materials that are not ice or explicitly compatible.
+  - Avoid dense crack networks and automatic blue light.
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-098.webp
+attributes:
+  negativePrompt: >-
+    Do not add ships, harbors, lanterns or polar-exploration equipment unless requested., Do not frost
+    materials that are not ice or explicitly compatible., Avoid dense crack networks and automatic blue
+    light.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: Do not add ships, harbors, lanterns or polar-exploration equipment unless requested.
+        field: rendering_and_quality
+      - text: Do not frost materials that are not ice or explicitly compatible.
+        field: rendering_and_quality
+      - text: Avoid dense crack networks and automatic blue light.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-037
+      - SP15-038
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: ocean-ice-and-terrain-punks
+  categoryName: 5. Ocean, Ice & Terrain Punks
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - ocean-ice-and-terrain-punks
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

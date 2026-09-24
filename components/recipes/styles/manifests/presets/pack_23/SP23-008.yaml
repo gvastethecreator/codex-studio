@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP23-008
+packId: pack_23
+name: Burin Weave
+category: 2. Print & Engraving
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - print-and-engraving
+  - burin-engraving
+  - portable-visual-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Fine, controlled engraved lines follow the turning forms; coherent cross-hatching builds tone
+    through line direction and spacing, with clean areas reserved for light.
+  subject_treatment: >-
+    Trace the requested forms and their volume with modulated line density. Preserve identity,
+    proportions, pose, action and the distinctions between adjacent forms.
+  color_and_tone: >-
+    Preserve the requested palette. Use its existing darker tones for engraved marks and leave
+    already-light regions open rather than converting the image to monochrome.
+  lighting_and_shadow: >-
+    Describe the existing light and shadow pattern through line direction and density. Keep the
+    requested light source and do not add a new one.
+  texture_and_material: >-
+    Keep strokes fine and deliberate, with cross-hatching that follows each surface. Do not replace
+    the depicted material with metal or add photographic grain.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and placement. Linework supports existing depth
+    without turning the image into a map, plate or diagram.
+  atmosphere_and_mood: >-
+    Let controlled line rhythm carry the engraving character while preserving the requested mood
+    and setting.
+  rendering_and_quality: >-
+    Keep hatch direction coherent within each form, vary density to separate volumes and retain
+    crisp open highlights. Do not let lines merge into a dark uniform patch.
+avoidRules:
+  - random scratch marks or photographic grain
+  - unrequested plate, border, diagram or legend
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-008.webp
+attributes:
+  negativePrompt: random scratch marks or photographic grain, unrequested plate, border, diagram or legend
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: burin-engraving
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: controlled-crosshatch-engraving
+    avoidRules:
+      - text: random scratch marks or photographic grain
+        field: texture_and_material
+      - text: unrequested plate, border, diagram or legend
+        field: camera_and_composition
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: PR-02
+    sourceTitle: Burin Weave
+    historicalScope: 'Grabado en metal · corpus temprano y posterior'
+    referenceIds:
+      - S09
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: print-and-engraving
+  categoryName: 2. Print & Engraving
+  tags:
+    - curation-v2
+    - print-and-engraving
+    - burin-engraving
+    - portable-visual-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

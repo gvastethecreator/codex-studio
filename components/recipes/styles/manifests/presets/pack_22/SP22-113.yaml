@@ -1,0 +1,96 @@
+schemaVersion: 1
+id: SP22-113
+packId: pack_22
+name: Rough Keypaint
+category: 2. Epic Digital Painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - epic-digital-painting
+  - expressive-key-painting
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Resolved sketch-painting compresses form into economical value masses and long expressive strokes
+    while retaining complete, intentional construction.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Simplify secondary marks, but finish
+    important anatomy, object structure and identifying details.
+  color_and_tone: >-
+    Let broad value blocks lead before smaller color details. Preserve the requested palette and keep
+    adjacent forms distinguishable.
+  lighting_and_shadow: >-
+    Follow the requested light and shadow pattern with a few clear painted groups. Open strokes do not
+    change the light direction or remove needed form information.
+  texture_and_material: >-
+    Use long, directional brush marks and selective visible corrections. Keep each mark tied to form;
+    avoid decorative strokes unrelated to the subject.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and element placement. An expressive finish does not
+    imply a new gesture or cropped composition.
+  atmosphere_and_mood: >-
+    Keep the requested tone. Visible brushwork does not make the image a loose study, unfinished scene
+    or dramatic event.
+  rendering_and_quality: >-
+    Leave strokes open only in secondary areas where identity and structure remain clear. Keep the image
+    complete, with deliberate corrections rather than missing construction.
+avoidRules:
+  - unfinished anatomy or structure
+  - decorative brushwork unrelated to form
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-113.webp
+attributes:
+  negativePrompt: unfinished anatomy or structure, decorative brushwork unrelated to form
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: painting
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: painting
+    avoidRules:
+      - text: unfinished anatomy or structure
+        field: subject_treatment
+      - text: decorative brushwork unrelated to form
+        field: texture_and_material
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S013
+    sourceTitle: Rough Keypaint
+    referenceIds:
+      - S52
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: epic-digital-painting
+  categoryName: 2. Epic Digital Painting
+  tags:
+    - trading-card-illustration
+    - epic-digital-painting
+    - expressive-key-painting
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

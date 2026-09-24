@@ -1,0 +1,103 @@
+schemaVersion: 1
+id: SP22-192
+packId: pack_22
+name: Cut-Paper Layers
+category: 12. Crafted Materials & Miniatures
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - crafted-materials-and-miniatures
+  - shallow-layer-overlap
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Shallow overlapping planes and small offset edges create a cut-paper visual rhythm, with compact
+    contact shadows and broad color shapes.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Use overlap cues only where existing
+    forms already meet; do not separate the subject into arbitrary cutouts.
+  color_and_tone: >-
+    Retain the requested palette and color relationships. Keep color areas broad and flat without
+    reducing the image to a few paper hues.
+  lighting_and_shadow: >-
+    Follow the requested external light direction and contrast. Use small contact shadows at existing
+    overlaps without adding a backlight or equal shadow beneath every form.
+  texture_and_material: >-
+    Keep fiber subtle and edges clean, with slight irregularity only where the drawn form calls for it.
+    Preserve depicted materials rather than turning every surface into paper.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, pose, crop and placement. Layered edges do not create a page,
+    frame, lettering or layout.
+  atmosphere_and_mood: >-
+    Keep the requested setting and mood. Overlap cues affect depth within the image without changing
+    the scene or introducing a display context.
+  rendering_and_quality: >-
+    Resolve silhouette and color areas first, then use thin edge offsets and contact shadows selectively.
+    Preserve fine identity details and avoid floating pieces.
+avoidRules:
+  - arbitrary layer separation or floating pieces
+  - uniform long shadows below every form
+  - unrequested frame, lettering or layout
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-192.webp
+attributes:
+  negativePrompt: >-
+    arbitrary layer separation or floating pieces, uniform long shadows below every form, unrequested
+    frame, lettering or layout
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: paper collage
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: paper collage
+    avoidRules:
+      - text: arbitrary layer separation or floating pieces
+        field: subject_treatment
+      - text: uniform long shadows below every form
+        field: lighting_and_shadow
+      - text: unrequested frame, lettering or layout
+        field: global
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S092
+    sourceTitle: Cut-Paper Layers
+    referenceIds:
+      - S01
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    derivedFrom:
+      - TCG-S092
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: crafted-materials-and-miniatures
+  categoryName: 12. Crafted Materials & Miniatures
+  tags:
+    - trading-card-illustration
+    - crafted-materials-and-miniatures
+    - shallow-layer-overlap
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

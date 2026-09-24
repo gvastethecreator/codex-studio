@@ -1,0 +1,105 @@
+schemaVersion: 1
+id: SP23-016
+packId: pack_23
+name: Champlevé Fields
+category: 3. Medieval Material Studies
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - medieval-material-studies
+  - opaque-enamel-fields
+  - material-target-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Opaque vitreous-color compartments, separated by contained metal divisions, create a shallow
+    champlevé surface with crisp boundaries and sparse, tight highlights on the explicitly authorized
+    material target.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, count, action and layout. Apply the enamel structure
+    only to the surface the user explicitly names as the material target; keep every other object and
+    material unchanged.
+  color_and_tone: >-
+    Preserve the requested palette and value relationships. Keep color fields opaque and resting on
+    their support; do not assume gold, add a fixed historic palette or make colors glow through it.
+  lighting_and_shadow: >-
+    Respect requested illumination and shadows. Use only restrained highlights on the authorized
+    target, without backlighting, bloom or a new light source.
+  texture_and_material: >-
+    Require an explicit material target before applying champlevé enamel on metal. Keep the colored
+    fields shallow, the metal divisions contained and the material response opaque; preserve all
+    non-target surfaces as requested.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, scale and arrangement. Do not turn an object into a
+    roundel, medallion or framed display.
+  atmosphere_and_mood: >-
+    Preserve the requested setting and mood. Enamel treatment alone does not imply a relic, sacred
+    image or medieval narrative.
+  rendering_and_quality: >-
+    Keep the opaque fields and fine metal boundaries distinct at the requested scale. Avoid glass-like
+    transmission, broad specular CGI reflections and decorative additions beyond the authorized target.
+avoidRules:
+  - unrequested reliquary, medallion, jewelry or religious icon
+  - translucent backlighting or stained-glass bloom
+  - automatic gold or palette substitution
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-016.webp
+attributes:
+  negativePrompt: >-
+    unrequested reliquary, medallion, jewelry or religious icon, translucent backlighting or
+    stained-glass bloom, automatic gold or palette substitution
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: materialTarget
+    medium: champleve-enamel-on-metal
+    constraints:
+      - field: texture_and_material
+        group: materialTarget
+        value: user-authorized-opaque-enamel-target
+    avoidRules:
+      - text: unrequested reliquary, medallion, jewelry or religious icon
+        field: global
+      - text: translucent backlighting or stained-glass bloom
+        field: texture_and_material
+      - text: automatic gold or palette substitution
+        field: color_and_tone
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: MT-04
+    sourceTitle: Champlevé Fields
+    historicalScope: 'Esmalte medieval sobre metal'
+    referenceIds:
+      - S15
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: medieval-material-studies
+  categoryName: 3. Medieval Material Studies
+  tags:
+    - curation-v2
+    - medieval-material-studies
+    - opaque-enamel-fields
+    - material-target-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

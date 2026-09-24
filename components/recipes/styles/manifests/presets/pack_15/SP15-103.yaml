@@ -1,0 +1,93 @@
+schemaVersion: 1
+id: SP15-103
+packId: pack_15
+name: Synthpunk
+category: 6. Street, Riot & DIY Punks
+version: 2
+supportedTasks: &id002
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags: &id001
+  - curation-v2
+  - identity-reviewed
+  - visual-evaluation-pending
+  - street-riot-and-diy-punks
+visualDna:
+  aesthetic:
+    'Make modular synthesis the graphic system through socket-like circles, grouped control ticks,
+    routed cable-like lines, compact waveforms, and sharp divisions drawn on compatible existing forms;
+    do not build new equipment or a control-room environment.'
+  subject_treatment:
+    Preserve the requested subject, action, setting, and framing; apply modular grids, cable paths, and
+    signal-color accents as localized marks on compatible existing surfaces. Do not replace a room with
+    control panels or add a synthesizer, instrument, or studio unless requested.
+  color_and_tone:
+    Use graphite, cream, cobalt, magenta, and cyan with small LED-like points; keep broad dark
+    and light masses distinct and use saturated color to mark active signal paths.
+  lighting_and_shadow:
+    Preserve the requested light source, direction, and intensity; keep any indicator-like glow small and
+    localized rather than turning the room into a lit control station or flooding it with neon.
+  texture_and_material:
+    Use panel-like divisions, cable-like strokes, and control marks only where existing surfaces support
+    them; preserve the scene's materials and keep wear at edges rather than applying a uniform filter.
+  camera_and_composition:
+    Route short repeated signal marks along existing forms while preserving the requested composition;
+    keep the focal subject separate from dense control detail.
+  atmosphere_and_mood:
+    Suggest experimental electronic energy and handmade technical confidence, without forcing
+    a performance venue or a specific era.
+  rendering_and_quality:
+    Keep panel geometry, cable paths, and waveforms crisp and simplified; maintain enough
+    negative space for the main subject to read at thumbnail scale.
+avoidRules:
+  - a required synthesizer or musician
+  - cassette-deck windows and reel motifs as the dominant language
+  - dense controls or cable tangles that obscure the subject
+  - control-panel walls or synth-studio architecture replacing the requested setting
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-103.webp
+attributes:
+  negativePrompt:
+    a required synthesizer or musician, cassette-deck windows and reel motifs as the dominant
+    language, dense controls or cable tangles that obscure the subject, control-panel walls or
+    synth-studio architecture replacing the requested setting
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: a required synthesizer or musician
+        field: rendering_and_quality
+      - text: cassette-deck windows and reel motifs as the dominant language
+        field: rendering_and_quality
+      - text: dense controls or cable tangles that obscure the subject
+        field: rendering_and_quality
+      - text: control-panel walls or synth-studio architecture replacing the requested setting
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-103
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: street-riot-and-diy-punks
+  categoryName: 6. Street, Riot & DIY Punks
+  tags: *id001
+  supportedTasks: *id002
+  hasDefaultImage: true

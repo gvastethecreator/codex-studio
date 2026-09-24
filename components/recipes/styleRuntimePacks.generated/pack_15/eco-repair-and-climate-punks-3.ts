@@ -4,235 +4,93 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP15-017',
-    name: 'Solar Commons Canopy',
+    id: 'SP15-087',
+    name: 'Solarpunk',
     category: '3. Eco, Repair & Climate Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, leaf-logo emblem, eco badge, green branding symbol, luxury eco resort, endless greenhouse, generic glass city, empty landscape postcard, photoreal garden render, commerce-system aisle, tiny leaf clutter, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, greenwashing postcard, beige eco mood board, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'Do not turn every subject into a city, garden, farm, seed archive or solar farm., Do not substitute a green wash or leaf wallpaper for ecological design., Respect explicit material, palette and lighting instructions., Do not add advocacy posters, slogans or extra eco-themed set dressing to ordinary interiors unless requested.',
     style: {
       aesthetic:
-        'Solar Commons Canopy operates as a portable punk-spectrum router: combine Solar Commons Canopy identity cues through solar shade planes; repair ladders; edible plant blocks; clay water accents; recycled metal; repair-ladder geometry with repair-climate punk grammar with civic stewardship, solar shade, recycled infrastructure, drought adaptation, seed archives, rain systems, and optimistic constraint, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'An optimistic ecological-future language of renewable energy, passive climate control, regenerative materials and shared, repairable systems; solar, wind, seed stewardship and rain capture are compatible expressions.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through repair seams, modular shade panels, civic tool marks, reused materials, plant-tech edges, condensation systems, and cooperative maintenance silhouettes; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve subject and locks. Restyle open forms with modular solar geometry, breathable shade, renewable mechanisms, repairable joins and living or reclaimed materials; choose systems that fit, not a garden. For ordinary interiors, preserve the requested room and existing props; show a visible passive-climate or renewable function on an existing element and a localized repairable or reclaimed join. Do not substitute advocacy posters, slogans or added eco-themed set dressing for working design unless requested.',
       color_and_tone:
-        'Map color through sun yellow, sage, white ceramic, recycled aluminum, dry ochre, leaf green, rain blue, and calm public-service neutrals; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Use sun-warmed ochre, clay, leaf, teal, recycled-metal neutrals and generous light as flexible relationships. Respect palettes and keep ecological details subordinate.',
       lighting_and_shadow:
-        "Use hard solar panels of light, greenhouse diffusion, rain reflections, condenser glow, shade-cloth cuts, and bright civic air; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Honor stated lighting. When unspecified, use broad daylight planes and clear shade geometry; add no sun disk, glow or fixed time of day.',
       texture_and_material:
-        'Render ceramic tile, repaired metal, woven shade cloth, seedlings, rain pipes, recycled plastic, aluminum frames, and chalky dust; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Favor recycled metal, solar glass, matte ceramics, durable fibers and repaired surfaces where compatible. Distinguish living, manufactured and reclaimed materials without leaf wallpaper.',
       camera_and_composition:
-        'Compose through civic repair hierarchy, canopy rhythm, modular infrastructure, readable maintenance paths, and generous space around the prompt subject as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Preserve crop and viewpoint. Use modular overlaps and open circulation; do not require a city, farm, greenhouse or utopian skyline.',
       atmosphere_and_mood:
-        'Carry mood through organized optimism, public care, dry resilience, communal invention, practical tenderness, and climate-aware patience; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Express practical optimism, collective agency or stewardship through working design while following requested tone. Community scenes are optional.',
       rendering_and_quality:
-        'Finish with bright solarpunk/repair illustration with clean surfaces, restrained texture, no beige sameness, and no generic glass-utopia gloss; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'solar shade planes; repair ladders; edible plant blocks; clay water accents; recycled metal; repair-ladder geometry',
-      creative_brief:
-        'Use Solar Commons Canopy after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies solar shade planes, repair ladders, edible plant blocks, clay water accents, recycled metal, repair-ladder geometry, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Use architectural illustration, matte print planes and selective hand-painted texture. Make sustainable mechanisms read at thumbnail scale without fine-detail clutter. In ordinary interiors, avoid invented advocacy posters, slogans and eco-themed set dressing unless requested.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-017', 'SP15-018', 'SP15-020', 'SP15-021', 'SP15-023'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-018',
-    name: 'Sunstack Civic Systems',
+    id: 'SP15-088',
+    name: 'Repairpunk',
     category: '3. Eco, Repair & Climate Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, leaf-logo emblem, eco badge, green branding symbol, orchard rows, glass-utopia tower, endless greenhouse fantasy, mall atrium, hotel lobby, photoreal archviz, luxury apartment render, tiny pipe clutter, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, greenwashing postcard, beige eco mood board, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'Do not make every design broken, distressed or patched., Do not impose a workshop, repair scene, poverty narrative or community plot., Tie each repair to a visible functional need., Preserve the requested scene; do not add repair slogans, posters, labels or workshop props unless requested.',
     style: {
       aesthetic:
-        'Sunstack Civic Systems operates as a portable punk-spectrum router: combine Sunstack Civic Systems identity cues through sunstack silhouettes; service platforms; reuse pipe loops; ceramic blocks; recycled aluminum; Dense civic solarpunk infrastructure poster language built from sunstack verticality with repair-climate punk grammar with civic stewardship, solar shade, recycled infrastructure, drought adaptation, seed archives, rain systems, and optimistic constraint, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'A functional repair language where renewed use is visible in load-bearing patches, replacement parts, stitched or bolted joins, reclaimed contrast and careful maintenance.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through repair seams, modular shade panels, civic tool marks, reused materials, plant-tech edges, condensation systems, and cooperative maintenance silhouettes; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve subject and locks. Redesign open structures with repairs following stress, wear and function: a replaced panel, reinforced seam, fitted splice or adapted part, not patchwork for its own sake.',
       color_and_tone:
-        'Map color through sun yellow, sage, white ceramic, recycled aluminum, dry ochre, leaf green, rain blue, and calm public-service neutrals; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Contrast original and replacement materials through restrained warm/cool or old/new values. Preserve palette; use small repair marks only where they clarify intervention.',
       lighting_and_shadow:
-        "Use hard solar panels of light, greenhouse diffusion, rain reflections, condenser glow, shade-cloth cuts, and bright civic air; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Respect specified lighting. Define added joins and repaired edges with local value separation; invent no work lamp or workshop glow.',
       texture_and_material:
-        'Render ceramic tile, repaired metal, woven shade cloth, seedlings, rain pipes, recycled plastic, aluminum frames, and chalky dust; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Show reused, mended and replacement materials through real differences: frayed textile beside stitching, oxidized metal beside a fitted plate, worn polish beside a new fastener.',
       camera_and_composition:
-        'Compose through civic repair hierarchy, canopy rhythm, modular infrastructure, readable maintenance paths, and generous space around the prompt subject as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Preserve crop and placement. Let repair paths support focal hierarchy; do not require a tabletop, repair bench or maker portrait.',
       atmosphere_and_mood:
-        'Carry mood through organized optimism, public care, dry resilience, communal invention, practical tenderness, and climate-aware patience; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Communicate care, adaptation and continued use without prescribing poverty, crisis or community action. Follow requested context.',
       rendering_and_quality:
-        'Finish with bright solarpunk/repair illustration with clean surfaces, restrained texture, no beige sameness, and no generic glass-utopia gloss; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'sunstack silhouettes; service platforms; reuse pipe loops; ceramic blocks; recycled aluminum; Dense civic solarpunk infrastructure poster language built from sunstack verticality',
-      creative_brief:
-        'Use Sunstack Civic Systems after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies sunstack silhouettes, service platforms, reuse pipe loops, ceramic blocks, recycled aluminum, Dense civic solarpunk infrastructure poster language built from sunstack verticality, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Use clean functional seams, tactile print texture and selective detail at repair junctions. Keep repairs plausible; avoid random patches and uniform distress. Preserve the requested scene; show repair through existing subjects and objects, without invented slogans, posters, labels or workshop props unless requested.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-019', 'SP15-048'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-019',
-    name: 'Repair Union Commons',
+    id: 'SP15-091',
+    name: 'Desertpunk',
     category: '3. Eco, Repair & Climate Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, readable union text, logo badge, work-lamp hero, crowded object pile, commerce-system aisle, photoreal river reflection, shiny utopia, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, greenwashing postcard, beige eco mood board, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'Do not require dunes, caravans, mines, kites, turbines or survival plot., Do not reduce the style to salt crust, dust or an orange filter., Connect resource systems to the design rather than scattering props.',
     style: {
       aesthetic:
-        'Repair Union Commons operates as a portable punk-spectrum router: combine Repair Union Commons identity cues through repair benches; turbine arcs; patched utility silhouettes; tarp planes; tool-steel accents; Repairpunk commons poster language built from hands-on tool culture with repair-climate punk grammar with civic stewardship, solar shade, recycled infrastructure, drought adaptation, seed archives, rain systems, and optimistic constraint, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'A dry-climate adaptation language shaped by heat management, scarce water, mineral resources, wind erosion and deliberate shade; resource logic reaches beyond dune palettes.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through repair seams, modular shade panels, civic tool marks, reused materials, plant-tech edges, condensation systems, and cooperative maintenance silhouettes; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve subject and locks. Restyle open forms with layered shade, water-saving channels, dust-ready seals, mineral surfaces and repairable resource systems. When compatible, make at least one resource route or dust seal visibly functional on an existing form; preserve the requested layout and do not add landscape or survival props unless requested.',
       color_and_tone:
-        'Map color through sun yellow, sage, white ceramic, recycled aluminum, dry ochre, leaf green, rain blue, and calm public-service neutrals; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Use sun-bleached mineral values, ochre, clay, salt-white, oxidized copper and deep shade flexibly. Respect palette; avoid mandatory orange monochrome.',
       lighting_and_shadow:
-        "Use hard solar panels of light, greenhouse diffusion, rain reflections, condenser glow, shade-cloth cuts, and bright civic air; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Honor stated lighting. Where unspecified, use strong light-to-shade organization for heat adaptation, without forcing sunset or a blazing sun.',
       texture_and_material:
-        'Render ceramic tile, repaired metal, woven shade cloth, seedlings, rain pipes, recycled plastic, aluminum frames, and chalky dust; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Distinguish porous ceramic, woven shade, stone, mineral crust and weathered metal with controlled abrasion. Treat salt-crust and kite-industry cues as resource expressions.',
       camera_and_composition:
-        'Compose through civic repair hierarchy, canopy rhythm, modular infrastructure, readable maintenance paths, and generous space around the prompt subject as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Preserve view and crop. Use shade bands and resource routes to organize the subject; do not require dunes, caravan or settlement.',
       atmosphere_and_mood:
-        'Carry mood through organized optimism, public care, dry resilience, communal invention, practical tenderness, and climate-aware patience; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Suggest resilience, ingenuity or exposure through environmental adaptation while following requested mood; do not force scarcity or survival drama.',
       rendering_and_quality:
-        'Finish with bright solarpunk/repair illustration with clean surfaces, restrained texture, no beige sameness, and no generic glass-utopia gloss; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'repair benches; turbine arcs; patched utility silhouettes; tarp planes; tool-steel accents; Repairpunk commons poster language built from hands-on tool culture',
-      creative_brief:
-        'Use Repair Union Commons after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies repair benches, turbine arcs, patched utility silhouettes, tarp planes, tool-steel accents, Repairpunk commons poster language built from hands-on tool culture, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Use broad dry planes, decisive shade silhouettes and sparse mineral grain. Make adaptation read at thumbnail scale; avoid cracks, haze and texture-only treatment.',
     },
-  },
-  {
-    id: 'SP15-020',
-    name: 'Windcatcher Domestic Systems',
-    category: '3. Eco, Repair & Climate Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, fantasy sky city, bird swarm, clothesline clutter, generic rooftop party, photoreal cityscape, dense rope web, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, greenwashing postcard, beige eco mood board, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Windcatcher Domestic Systems operates as a portable punk-spectrum router: combine Windcatcher Domestic Systems identity cues through windcatcher towers; kite turbines; rope arcs; cloth planes; brick silhouettes; kite-turbine arcs with repair-climate punk grammar with civic stewardship, solar shade, recycled infrastructure, drought adaptation, seed archives, rain systems, and optimistic constraint, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through repair seams, modular shade panels, civic tool marks, reused materials, plant-tech edges, condensation systems, and cooperative maintenance silhouettes; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through sun yellow, sage, white ceramic, recycled aluminum, dry ochre, leaf green, rain blue, and calm public-service neutrals; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use hard solar panels of light, greenhouse diffusion, rain reflections, condenser glow, shade-cloth cuts, and bright civic air; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render ceramic tile, repaired metal, woven shade cloth, seedlings, rain pipes, recycled plastic, aluminum frames, and chalky dust; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through civic repair hierarchy, canopy rhythm, modular infrastructure, readable maintenance paths, and generous space around the prompt subject as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through organized optimism, public care, dry resilience, communal invention, practical tenderness, and climate-aware patience; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with bright solarpunk/repair illustration with clean surfaces, restrained texture, no beige sameness, and no generic glass-utopia gloss; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'windcatcher towers; kite turbines; rope arcs; cloth planes; brick silhouettes; kite-turbine arcs',
-      creative_brief:
-        'Use Windcatcher Domestic Systems after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies windcatcher towers, kite turbines, rope arcs, cloth planes, brick silhouettes, kite-turbine arcs, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-021',
-    name: 'Seed Archive Commons',
-    category: '3. Eco, Repair & Climate Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, readable packet labels, posters with text, product packaging, sterile lab, commerce-system trade setup row, farmers commerce-system aisle, huge crowd clutter, paper lantern fixation, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, greenwashing postcard, beige eco mood board, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Seed Archive Commons operates as a portable punk-spectrum router: combine Seed Archive Commons identity cues through seed drawers; blank packet blocks; planter shapes; soil planes; marigold celebration dots; Seedpunk living-archive poster language built from seed-drawer geometry with repair-climate punk grammar with civic stewardship, solar shade, recycled infrastructure, drought adaptation, seed archives, rain systems, and optimistic constraint, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through repair seams, modular shade panels, civic tool marks, reused materials, plant-tech edges, condensation systems, and cooperative maintenance silhouettes; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through sun yellow, sage, white ceramic, recycled aluminum, dry ochre, leaf green, rain blue, and calm public-service neutrals; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use hard solar panels of light, greenhouse diffusion, rain reflections, condenser glow, shade-cloth cuts, and bright civic air; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render ceramic tile, repaired metal, woven shade cloth, seedlings, rain pipes, recycled plastic, aluminum frames, and chalky dust; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through civic repair hierarchy, canopy rhythm, modular infrastructure, readable maintenance paths, and generous space around the prompt subject as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through organized optimism, public care, dry resilience, communal invention, practical tenderness, and climate-aware patience; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with bright solarpunk/repair illustration with clean surfaces, restrained texture, no beige sameness, and no generic glass-utopia gloss; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'seed drawers; blank packet blocks; planter shapes; soil planes; marigold celebration dots; Seedpunk living-archive poster language built from seed-drawer geometry',
-      creative_brief:
-        'Use Seed Archive Commons after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies seed drawers, blank packet blocks, planter shapes, soil planes, marigold celebration dots, Seedpunk living-archive poster language built from seed-drawer geometry, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-022',
-    name: 'Dry Bloom Condensers',
-    category: '3. Eco, Repair & Climate Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, palm oasis, fantasy desert city, near-plane goggle portrait, survivalist weapon pose, water-bead microdetail, photoreal dust haze, commerce-system tent, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, greenwashing postcard, beige eco mood board, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Dry Bloom Condensers operates as a portable punk-spectrum router: combine Dry Bloom Condensers identity cues through condenser towers; shade cloth planes; copper pipe arcs; dust filters; sparse bloom accents; Dry-climate condenserpunk poster language built from water condenser silhouettes with repair-climate punk grammar with civic stewardship, solar shade, recycled infrastructure, drought adaptation, seed archives, rain systems, and optimistic constraint, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through repair seams, modular shade panels, civic tool marks, reused materials, plant-tech edges, condensation systems, and cooperative maintenance silhouettes; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through sun yellow, sage, white ceramic, recycled aluminum, dry ochre, leaf green, rain blue, and calm public-service neutrals; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use hard solar panels of light, greenhouse diffusion, rain reflections, condenser glow, shade-cloth cuts, and bright civic air; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render ceramic tile, repaired metal, woven shade cloth, seedlings, rain pipes, recycled plastic, aluminum frames, and chalky dust; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through civic repair hierarchy, canopy rhythm, modular infrastructure, readable maintenance paths, and generous space around the prompt subject as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through organized optimism, public care, dry resilience, communal invention, practical tenderness, and climate-aware patience; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with bright solarpunk/repair illustration with clean surfaces, restrained texture, no beige sameness, and no generic glass-utopia gloss; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'condenser towers; shade cloth planes; copper pipe arcs; dust filters; sparse bloom accents; Dry-climate condenserpunk poster language built from water condenser silhouettes',
-      creative_brief:
-        'Use Dry Bloom Condensers after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies condenser towers, shade cloth planes, copper pipe arcs, dust filters, sparse bloom accents, Dry-climate condenserpunk poster language built from water condenser silhouettes, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-023',
-    name: 'Rain Choir Hydraulics',
-    category: '3. Eco, Repair & Climate Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, water-drop logo, wave icon, badge symbol, emblem on clothing, symbol on wall, symbol on channel, empty rainy urban passage, lamp fixation, window fixation, photoreal rain reflections, umbrella crowd clutter, musical stage, readable signs, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, greenwashing postcard, beige eco mood board, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Rain Choir Hydraulics operates as a portable punk-spectrum router: combine Rain Choir Hydraulics identity cues through gutter-harp arcs; cistern blocks; ceramic channels; umbrella fabric; rain rhythm marks; ceramic water channels with repair-climate punk grammar with civic stewardship, solar shade, recycled infrastructure, drought adaptation, seed archives, rain systems, and optimistic constraint, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through repair seams, modular shade panels, civic tool marks, reused materials, plant-tech edges, condensation systems, and cooperative maintenance silhouettes; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through sun yellow, sage, white ceramic, recycled aluminum, dry ochre, leaf green, rain blue, and calm public-service neutrals; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use hard solar panels of light, greenhouse diffusion, rain reflections, condenser glow, shade-cloth cuts, and bright civic air; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render ceramic tile, repaired metal, woven shade cloth, seedlings, rain pipes, recycled plastic, aluminum frames, and chalky dust; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through civic repair hierarchy, canopy rhythm, modular infrastructure, readable maintenance paths, and generous space around the prompt subject as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through organized optimism, public care, dry resilience, communal invention, practical tenderness, and climate-aware patience; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with bright solarpunk/repair illustration with clean surfaces, restrained texture, no beige sameness, and no generic glass-utopia gloss; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'gutter-harp arcs; cistern blocks; ceramic channels; umbrella fabric; rain rhythm marks; ceramic water channels',
-      creative_brief:
-        'Use Rain Choir Hydraulics after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies gutter-harp arcs, cistern blocks, ceramic channels, umbrella fabric, rain rhythm marks, ceramic water channels, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-024',
-    name: 'Brackish Lift Cooperative',
-    category: '3. Eco, Repair & Climate Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, anchor logo, leaf icon, badge emblem, emblem on clothing, symbol on awning, symbol on boat, readable signage, generic green architecture, jungle fantasy, photoreal water reflection, deck-lamp hero, root spaghetti clutter, tourist resort boardwalk, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, greenwashing postcard, beige eco mood board, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Brackish Lift Cooperative operates as a portable punk-spectrum router: combine Brackish Lift Cooperative identity cues through rooted silhouettes; lift platforms; rope arcs; boat-paint blocks; brackish reflections; Brackish amphibious-commons poster language built from lift-platform geometry with repair-climate punk grammar with civic stewardship, solar shade, recycled infrastructure, drought adaptation, seed archives, rain systems, and optimistic constraint, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through repair seams, modular shade panels, civic tool marks, reused materials, plant-tech edges, condensation systems, and cooperative maintenance silhouettes; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through sun yellow, sage, white ceramic, recycled aluminum, dry ochre, leaf green, rain blue, and calm public-service neutrals; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use hard solar panels of light, greenhouse diffusion, rain reflections, condenser glow, shade-cloth cuts, and bright civic air; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render ceramic tile, repaired metal, woven shade cloth, seedlings, rain pipes, recycled plastic, aluminum frames, and chalky dust; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through civic repair hierarchy, canopy rhythm, modular infrastructure, readable maintenance paths, and generous space around the prompt subject as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through organized optimism, public care, dry resilience, communal invention, practical tenderness, and climate-aware patience; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with bright solarpunk/repair illustration with clean surfaces, restrained texture, no beige sameness, and no generic glass-utopia gloss; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'rooted silhouettes; lift platforms; rope arcs; boat-paint blocks; brackish reflections; Brackish amphibious-commons poster language built from lift-platform geometry',
-      creative_brief:
-        'Use Brackish Lift Cooperative after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies rooted silhouettes, lift platforms, rope arcs, boat-paint blocks, brackish reflections, Brackish amphibious-commons poster language built from lift-platform geometry, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-022', 'SP15-039'],
+      visualEvaluation: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

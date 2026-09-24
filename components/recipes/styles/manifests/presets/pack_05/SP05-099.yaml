@@ -13,76 +13,33 @@ tags:
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: >-
-    Shield Hero – Defensive Underdog Fantasy acts as a transferable anime-battle/worlds router:
-    Shield lead-form – Defensive Underdog Fantasy, defensive underdog fantasy style grammar with
-    concentric barrier geometry, scarred bronze/stone relic, forward resilience, and hard-earned
-    glow; combine it with isekai and high-fantasy anime grammar with magic-system readability,
-    quest-world texture, luminous adventure, and character-independent fantasy routing; named
-    titles, studios, or lineage words may guide style, but they must not require canon cast,
-    title-scene replication, screenshots, logos, or one fixed card concept.
+    Resilient cel illustration organized by concentric contour rhythms, worn surfaces, and a
+    forward-weighted silhouette.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Shield
-    lead-form – Defensive Underdog Fantasy, defensive underdog fantasy style grammar with concentric
-    barrier geometry, scarred bronze/stone relic, forward resilience, and hard-earned glow as
-    portable contour, motion grammar, surface language, and emotional pressure without requiring
-    canon elements or a default action setup.
+    Keep the requested pose and action; use nested edge accents and firm contours without
+    introducing a shield or barrier.
   color_and_tone: >-
-    Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens,
-    parchment neutrals, magical violets, and controlled pastel or dark contrast; let Shield
-    lead-form – Defensive Underdog Fantasy, defensive underdog fantasy style grammar with concentric
-    barrier geometry, scarred bronze/stone relic, forward resilience, and hard-earned glow choose
-    accent intensity, value contrast, emotional temperature, and power-system separation while
-    staying attached to prompt X.
+    Aged bronze, stone gray, and a small amber accent build worn contrast; accommodate the requested
+    palette.
   lighting_and_shadow: >-
-    Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and
-    clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Shield lead-form – Defensive Underdog Fantasy, defensive underdog
-    fantasy style grammar with concentric barrier geometry, scarred bronze/stone relic, forward
-    resilience, and hard-earned glow without replacing prompt X with a stock anime frame.
+    Directional highlights catch raised edges while deep shadow holds the larger forms together.
   texture_and_material: >-
-    Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel
-    glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Shield
-    lead-form – Defensive Underdog Fantasy, defensive underdog fantasy style grammar with concentric
-    barrier geometry, scarred bronze/stone relic, forward resilience, and hard-earned glow
-    controlled, denoised, and coherent across bodies, objects, environments, abstractions, and
-    action.
+    Scuffed pigment and subdued metallic glints suggest wear as a rendering cue, without changing
+    the depicted material.
   camera_and_composition: >-
-    Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed
-    cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook
-    scale; convert Shield lead-form – Defensive Underdog Fantasy, defensive underdog fantasy style
-    grammar with concentric barrier geometry, scarred bronze/stone relic, forward resilience, and
-    hard-earned glow into reusable perspective, timing, rhythm, scale, cut-in, and negative-space
-    rules instead of one fixed style sample layout.
+    Preserve the requested camera; let nested curves and weighty diagonals guide attention within
+    its composition.
   atmosphere_and_mood: >-
-    Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional
-    craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic,
-    comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while
-    keeping the anime-battle lineage readable.
+    Steadfast and hard-earned, with the mood following the subject rather than adding conflict.
   rendering_and_quality: >-
-    Finish with clean fantasy-anime finish with stable anatomy and creature/object structure,
-    controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize
-    stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy
-    darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+    Balance firm edges, textured midtones, and one controlled highlight so each form remains
+    legible.
   key_features: >-
-    Shield lead-form – Defensive Underdog Fantasy, defensive underdog fantasy style grammar with
-    concentric barrier geometry, scarred bronze/stone relic, forward resilience, and hard-earned
-    glow; clear fantasy silhouettes, spell-effect hierarchy, surface simplification, creature or
-    object readability, and portal-like transformation logic; cloth, leather, polished armor,
-    parchment, herbarium texture, stone, food steam, jewel glow, smoke, mud, and hand-painted
-    fantasy surfaces; quest-path diagonals, transition thresholds, group-scale spacing without fixed
-    cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook
-    scale; clean fantasy-anime finish with stable anatomy and creature/object structure, controlled
-    glow, no RPG UI, no readable magic text, and no generic isekai gloss
+    Concentric line rhythm, weathered value contrast, bronze warmth, and restrained edge light carry
+    a sense of resolve.
   creative_brief: >-
-    Apply Shield Hero – Defensive Underdog Fantasy after prompt X as a transferable
-    anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity,
-    while this preset supplies Shield lead-form – Defensive Underdog Fantasy, defensive underdog
-    fantasy style grammar with concentric barrier geometry, scarred bronze/stone relic, forward
-    resilience, and hard-earned glow, isekai and high-fantasy anime grammar with magic-system
-    readability, quest-world texture, luminous adventure, and character-independent fantasy routing,
-    finish discipline, and negative controls without forcing canon cast, title scene, screenshot,
-    card pose, default monster, default combat prop, or prompt-literal card.
+    Apply the worn, resilient contour and value language to the requested content without adding
+    armor, defense, or combat.
 avoidRules:
   - realistic
   - 3d render
@@ -94,7 +51,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - required shield
   - hero portrait
@@ -111,7 +67,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -119,10 +74,10 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, required shield, hero portrait, weapon, slave/collar cue,
+    artifacts, watermark, signature, required shield, hero portrait, weapon, slave/collar cue,
     revenge scene, franchise likeness, RPG UI, readable magic text, generic isekai wallpaper, fixed
     canon character, title scene replication, required source-frame look, cosplay, generic anime
-    filter, prompt-required card, readable text, logo, muddy noisy darks
+    filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

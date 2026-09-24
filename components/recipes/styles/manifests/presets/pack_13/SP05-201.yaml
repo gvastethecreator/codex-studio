@@ -12,59 +12,16 @@ tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
 visualDna:
-  aesthetic: >-
-    Tea-Light Observational Mystery operates as a portable anime-lifestyle router: combine Tea Light
-    Observational Mystery identity cues through Clue focused framing; tea light warmth;
-    observational stillness; precise microgestures; and intellectual hush; Tea Light Observational
-    Mystery anime style cues with slice of life and moe grammar with soft acting, comedy timing,
-    healing pace, cozy object care, pastel emotional rhythm, and small world specificity, so the
-    preset supplies anime style behavior after prompt X rather than a required scene, character,
-    franchise image, or card composition.
-  subject_treatment: >-
-    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
-    rounded shape language, micro-expression timing, soft body or object posture, simple
-    costume/surface detail, and charm through small repeated gestures; subjects may be characters,
-    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
-    prompt.
-  color_and_tone: >-
-    Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal
-    greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin
-    or material midtones stable, and palette behavior attached to the prompt instead of pasted anime
-    decoration.
-  lighting_and_shadow: >-
-    Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim,
-    and flat comedy brightness; lighting should clarify expression, silhouette, material, and
-    emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
-  texture_and_material: >-
-    Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft
-    marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper,
-    sensor, grain, or effect textures controlled enough to route style without noisy surface
-    chatter.
-  camera_and_composition: >-
-    Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational
-    crops, and comfort-scale depth without required school setting as reusable anime framing
-    grammar, allowing close acting, objects, performances, action, environments, or abstract prompts
-    without one required pose or location.
-  atmosphere_and_mood: >-
-    Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph,
-    awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute,
-    sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving
-    its anime lineage.
-  rendering_and_quality: >-
-    Finish with soft high readability anime finish with stable proportions, gentle denoise, clean
-    pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object
-    structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no
-    generic AI anime gloss.
-  key_features: >-
-    Clue focused framing; tea light warmth; observational stillness; precise microgestures; and
-    intellectual hush; Tea Light Observational Mystery anime style cues
-  creative_brief: >-
-    Use Tea-Light Observational Mystery after prompt X as a transferable anime character/lifestyle
-    layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset
-    supplies Clue focused framing, tea light warmth, observational stillness, precise microgestures,
-    and intellectual hush, Tea Light Observational Mystery anime style cues, color logic, lighting,
-    material finish, composition rhythm, mood pressure, and quality controls without requiring a
-    fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.
+  aesthetic: 'Observational linework uses fine, precise contours and sharply resolved microdetails against quieter color fields, without changing the point of attention.'
+  subject_treatment: 'Keep every prompted form and action; clarify small features already present without adding narrative symbols or gestures.'
+  color_and_tone: 'Use neutral midtones with one measured warm or cool accent; retain stated colors and keep small details from becoming oversaturated.'
+  lighting_and_shadow: 'Follow the actual light source; use compact highlights and contact shadows to define existing details.'
+  texture_and_material: 'Vary mark scale by material: smooth where clean, fine grain where rough, and no implied object from a texture cue.'
+  camera_and_composition: 'Preserve crop, viewpoint, scale, and count; strengthen the existing focal hierarchy without moving it or requiring close-up framing.'
+  atmosphere_and_mood: 'Keep the requested mood; line precision should not alter the emotional reading.'
+  rendering_and_quality: 'Separate thin contour, local detail, and background values cleanly; keep extra graphic marks sparse and nonverbal.'
+  key_features: 'Precise fine contours; selectively sharp microdetail; quiet supporting color fields; compact highlights; material-specific mark scale.'
+  creative_brief: 'Give existing focal details crisp line priority against calmer surrounding marks. Preserve subject, camera, and mood; add no extra graphic motif.'
 avoidRules:
   - realistic
   - 3d render
@@ -76,7 +33,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - generic moe wallpaper
   - infantilized styling
@@ -87,17 +43,16 @@ avoidRules:
   - fixed anime cast
   - generic anime filter
   - prompt literal card reuse
-  - readable text
   - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-201.webp
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only
-    lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast,
-    generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D
-    render look, copied franchise costume, logo
+    artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock,
+    canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic
+    anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied
+    franchise costume, logo
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

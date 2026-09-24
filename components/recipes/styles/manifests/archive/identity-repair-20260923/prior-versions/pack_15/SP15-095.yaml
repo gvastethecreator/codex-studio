@@ -1,0 +1,96 @@
+schemaVersion: 1
+id: SP15-095
+packId: pack_15
+name: Mycopunk
+category: 4. Bio, Myco & Body Punks
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - bio-myco-and-body-punks
+visualDna:
+  aesthetic: >-
+    Mycopunk builds organic rhythm from branching mycelial paths, repeated cap-like forms and sparse
+    spore-scale marks, combining network growth with soft material edges.
+  subject_treatment: >-
+    Preserve requested identity, shape, action and connections. Follow compatible contours with branching
+    or cellular marks; do not turn the subject into a fungus, transit system or weather scene.
+  color_and_tone: >-
+    Keep requested colors and values primary. Use muted clay, deep organic tones and small cool or
+    luminous accents only where they help separate the branching network.
+  lighting_and_shadow: >-
+    Respect stated light direction and contrast. Add no spore glow, weather effect or night setting
+    unless requested.
+  texture_and_material: >-
+    Preserve the actual surface. Use localized soft grain or velvety variation only where it fits; do not
+    make every material damp, fuzzy or spore-covered.
+  camera_and_composition: >-
+    Preserve viewpoint and arrangement. Let branching paths and repeated shapes follow existing space
+    without requiring a transit map, tower or growth landscape.
+  atmosphere_and_mood: >-
+    Suggest interconnection and gradual growth through branching rhythm and spacing while keeping the
+    requested mood; do not add a fungal signal network story.
+  rendering_and_quality: >-
+    Vary line scale between main branches and small spore marks, keeping the network open and legible.
+    Avoid random tendrils, dense dots and detail that merges into a mass.
+avoidRules:
+  - Do not add transit routes, spore towers, message clouds or fungal characters unless requested.
+  - Avoid random tendrils, all-over spores and forced dampness.
+  - Keep branch marks subordinate to the requested subject.
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-095.webp
+attributes:
+  negativePrompt: >-
+    Do not add transit routes, spore towers, message clouds or fungal characters unless requested., Avoid
+    random tendrils, all-over spores and forced dampness., Keep branch marks subordinate to the requested
+    subject.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: Do not add transit routes, spore towers, message clouds or fungal characters unless requested.
+        field: rendering_and_quality
+      - text: Avoid random tendrils, all-over spores and forced dampness.
+        field: rendering_and_quality
+      - text: Keep branch marks subordinate to the requested subject.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-025
+      - SP15-028
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: bio-myco-and-body-punks
+  categoryName: 4. Bio, Myco & Body Punks
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - bio-myco-and-body-punks
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -1,0 +1,100 @@
+schemaVersion: 1
+id: SP22-183
+packId: pack_22
+name: Flowing Ornamental Lines
+category: 11. Ornament & Symbolic Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - ornament-and-symbolic-illustration
+  - flowing-ornamental-lines
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Long, continuous curves and gently undulating interior rhythms carry the drawing, with a variable
+    contour and clean, print-like color areas.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose, action and function. Let ornamental curves follow
+    existing contours; do not add hair, flowers, figures or new motifs.
+  color_and_tone: >-
+    Preserve the requested hues and relationships, using flat color with restrained soft modeling rather
+    than introducing a fixed palette.
+  lighting_and_shadow: >-
+    Respect the requested illumination and keep soft modeling within existing forms; do not add a halo or
+    a new light source to support the curves.
+  texture_and_material: >-
+    Keep the printed illustration clean, with controlled line variation and limited surface effects;
+    preserve the materials already represented.
+  camera_and_composition: >-
+    Retain the requested viewpoint, framing, crop and placement. Curving rhythms adapt to the existing
+    composition instead of changing pose or adding a decorative border.
+  atmosphere_and_mood: >-
+    Maintain the requested setting and tone. Flowing ornament does not imply a floral, romantic or
+    historical theme.
+  rendering_and_quality: >-
+    Use continuous, varied-weight lines and restrained internal curves to guide form; keep the silhouette
+    clear and avoid dense detail that competes with the subject.
+avoidRules:
+  - unrequested flowers, flowing hair motifs or figures
+  - unrequested symbols or borders
+  - extra details that alter identity or function
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-183.webp
+attributes:
+  negativePrompt: unrequested flowers, flowing hair motifs or figures, unrequested symbols or borders, extra details that alter identity or function
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: drawing
+    avoidRules:
+      - text: unrequested flowers, flowing hair motifs or figures
+        field: subject_treatment
+      - text: unrequested symbols or borders
+        field: subject_treatment
+      - text: extra details that alter identity or function
+        field: subject_treatment
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S083
+    sourceTitle: Nouveau Flow
+    referenceIds:
+      - S20
+      - S05
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: ornament-and-symbolic-illustration
+  categoryName: 11. Ornament & Symbolic Illustration
+  tags:
+    - trading-card-illustration
+    - ornament-and-symbolic-illustration
+    - flowing-ornamental-lines
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

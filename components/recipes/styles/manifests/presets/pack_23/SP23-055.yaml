@@ -1,0 +1,103 @@
+schemaVersion: 1
+id: SP23-055
+packId: pack_23
+name: Directional Raster Interlock
+category: 12. Hybrid Visual Studies
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - hybrid-visual-studies
+  - directional-raster-interlock
+  - portable-visual-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Arrange directional mark groups that follow existing form, then use compact raster clusters to
+    define selected edges and color changes. Keep the image integrated, not fragmented.
+  subject_treatment: >-
+    Preserve requested identity, count, pose, action, proportions and scene. Mark direction follows
+    existing shapes without introducing patterns or changing the represented material.
+  color_and_tone: >-
+    Retain the requested palette and tonal relationships. Use raster clusters to clarify transitions
+    between existing colors without forcing a woven palette or adding hues.
+  lighting_and_shadow: >-
+    Follow the requested lighting. Let directional marks support the existing value structure and
+    avoid replacing it with an arbitrary repeated pattern.
+  texture_and_material: >-
+    Keep marks directional and restrained; preserve the materials already depicted. Do not turn the
+    full image into a textile surface or apply uniform grain.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop and arrangement. Quantized edges follow existing forms
+    without adding elements or changing the requested composition.
+  atmosphere_and_mood: >-
+    Preserve the requested mood and setting. The combination of directional marks and raster clusters
+    changes the rendering only, not the subject or story.
+  rendering_and_quality: >-
+    Keep the primary mark direction clear and raster groupings consistent. Avoid noisy dithering,
+    chaotic overlaps or pattern density that competes with form.
+avoidRules:
+  - unrequested patterns or changes to depicted material
+  - random dithering, noisy clusters or chaotic overlap
+  - unrequested lettering or added graphic elements
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-055.webp
+attributes:
+  negativePrompt: >-
+    unrequested patterns or changes to depicted material, random dithering, noisy clusters or chaotic
+    overlap, unrequested lettering or added graphic elements
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: directional-mark-and-raster-cluster-illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: form-following-mark-groups-with-selective-raster-edges
+    avoidRules:
+      - text: unrequested patterns or changes to depicted material
+        field: texture_and_material
+      - text: random dithering, noisy clusters or chaotic overlap
+        field: rendering_and_quality
+      - text: unrequested lettering or added graphic elements
+        field: global
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: HY-03
+    sourceTitle: Woven Dither
+    historicalScope: Propuesta original contemporánea
+    referenceIds:
+      - S13
+      - S26
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: hybrid-visual-studies
+  categoryName: 12. Hybrid Visual Studies
+  tags:
+    - curation-v2
+    - hybrid-visual-studies
+    - directional-raster-interlock
+    - portable-visual-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

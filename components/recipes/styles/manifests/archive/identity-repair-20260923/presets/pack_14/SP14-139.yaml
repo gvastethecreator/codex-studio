@@ -1,0 +1,104 @@
+schemaVersion: 1
+id: SP14-139
+packId: pack_14
+name: Tension Lattice
+category: Fracture & Tension
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - fracture-and-tension
+visualDna:
+  aesthetic: >-
+    Sparse taut lines cross broad matte shapes with alternating tight and open intervals. Their direction
+    follows existing structure, suggesting tension through graphic rhythm.
+  subject_treatment: >-
+    Keep the requested subject, identity, anatomy, action and setting. Apply the visual treatment to its
+    existing shapes; do not replace it with an emblem, ritual, character or prop from a sample card.
+  color_and_tone: >-
+    Preserve requested hues; use close-value lines in quiet areas and a few high-contrast crossings near
+    the focal form.
+  lighting_and_shadow: >-
+    Maintain requested lighting in the underlying masses; fine lines clarify structure without adding
+    luminous strings or cast shadows.
+  texture_and_material: >-
+    Line crossings remain drawing marks. Do not wrap subjects in ropes, add stitching or replace
+    materials with woven fabric.
+  camera_and_composition: >-
+    Keep the requested viewpoint, crop and spatial arrangement. Keep existing spatial relationships; vary
+    line spacing within those shapes rather than imposing a grid over the entire frame.
+  atmosphere_and_mood: Restrained pressure and poised balance, adaptable to the requested emotional tone.
+  rendering_and_quality: >-
+    Use crisp controlled strokes with clean crossings and broad quiet areas. Avoid moire, dense mesh and
+    ornamental knots.
+avoidRules:
+  - global grid or dense mesh
+  - added ropes or stitching
+  - ornamental knot motifs
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-139.webp
+attributes:
+  negativePrompt: global grid or dense mesh, added ropes or stitching, ornamental knot motifs
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: global grid or dense mesh
+        field: rendering_and_quality
+      - text: added ropes or stitching
+        field: rendering_and_quality
+      - text: ornamental knot motifs
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP14-027
+      - SP14-028
+      - SP14-029
+      - SP14-069
+      - SP14-070
+      - SP14-071
+      - SP14-072
+      - SP14-073
+      - SP14-074
+      - SP14-075
+      - SP14-076
+      - SP14-077
+      - SP14-078
+      - SP14-079
+      - SP14-080
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: fracture-and-tension
+  categoryName: Fracture & Tension
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - fracture-and-tension
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

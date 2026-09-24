@@ -188,4 +188,27 @@ describe('styleDefaultAssetPipeline', () => {
       },
     });
   });
+
+  it('routes a primary ChatGPT style card through the HTTP provider contract', () => {
+    const request = createStyleDefaultJobRequest({
+      workspaceId: 'workspace-1',
+      prompt: 'portable visual style',
+      providerId: 'chatgpt',
+      presetId: 'SP22-001',
+    });
+
+    expect(request).toMatchObject({
+      workspaceId: 'workspace-1',
+      kind: 'style_preset_card',
+      providerId: 'chatgpt',
+      prompt: 'portable visual style',
+      sourceSpec: {
+        task: 'style_preset_card',
+        providerId: 'chatgpt',
+        stylePresetId: 'SP22-001',
+        output: { count: 1, aspectRatio: '3:4', imageSize: '1152x1536' },
+        metadata: { assetRole: 'style-preset-default' },
+      },
+    });
+  });
 });

@@ -1,0 +1,96 @@
+schemaVersion: 1
+id: SP22-112
+packId: pack_22
+name: Prismatic Lacquer
+category: 2. Epic Digital Painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - epic-digital-painting
+  - prismatic-layered-painting
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Layered digital painting uses firm modeling and clean boundaries among base color, reflected color,
+    highlights and shadow; its polish belongs to the depicted material, not a card surface.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Describe each form and surface by its
+    own material response instead of making every element reflective.
+  color_and_tone: >-
+    Confine saturated reflections to selected areas and balance them with quieter neutral shadows. Retain
+    the requested palette without applying a rainbow cast across the whole image.
+  lighting_and_shadow: >-
+    Respect the requested light sources, direction and intensity. Use designed highlights only where the
+    represented form and lighting support them.
+  texture_and_material: >-
+    Keep boundaries between material, highlight and shadow clean. Render a polished pictorial surface
+    without simulating foil, holographic coating or a universal metallic finish.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and element placement. Reflected color does not
+    require a new angle or rearranged subject.
+  atmosphere_and_mood: >-
+    Keep the requested mood. Saturated reflections do not add magic, spectacle or an iridescent setting.
+  rendering_and_quality: >-
+    Separate material color, reflected light and shadow with controlled edges. Keep highlights localized
+    and the full palette legible rather than coating every surface in shine.
+avoidRules:
+  - global rainbow sheen
+  - uniformly metallic materials
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-112.webp
+attributes:
+  negativePrompt: global rainbow sheen, uniformly metallic materials
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: painting
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: painting
+    avoidRules:
+      - text: global rainbow sheen
+        field: color_and_tone
+      - text: uniformly metallic materials
+        field: texture_and_material
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S012
+    sourceTitle: Prismatic Lacquer
+    referenceIds:
+      - S23
+      - S08
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: epic-digital-painting
+  categoryName: 2. Epic Digital Painting
+  tags:
+    - trading-card-illustration
+    - epic-digital-painting
+    - prismatic-layered-painting
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

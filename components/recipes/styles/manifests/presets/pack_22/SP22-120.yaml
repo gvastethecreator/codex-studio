@@ -1,0 +1,109 @@
+schemaVersion: 1
+id: SP22-120
+packId: pack_22
+name: Anatomical Ink
+category: 3. Strange Ink & Paint
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - strange
+  - structural-ink
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Use a structured ink drawing with a strong outer silhouette and selective internal lines that
+    explain connections, overlaps and surface form. Keep construction marks subordinate to the
+    image.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, anatomy where relevant, and action. Describe
+    visible structure without injuring or redesigning the subject.
+  color_and_tone: >-
+    Respect the requested palette and contrast. Keep open values around the subject and concentrate
+    darker hatching only where it supports form; do not force monochrome.
+  lighting_and_shadow: >-
+    Follow the requested light. Align line weight and hatching with its existing shadow pattern
+    instead of inventing another source or changing the time of day.
+  texture_and_material: >-
+    Fit directional hatching to each form's geometry. Keep marks selective so the depicted surface
+    remains distinct from the ink used to describe it.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, pose and composition. Describe structure within the given
+    frame without changing its layout.
+  atmosphere_and_mood: >-
+    Preserve the requested mood and narrative. Structural linework changes the rendering, not the
+    scene's genre or emotional intention.
+  rendering_and_quality: >-
+    Give the silhouette first priority, then use a clear secondary level of detail. Keep line groups
+    readable and omit annotations that were not requested.
+avoidRules:
+  - unrequested exposed organs, injury, or anatomical alteration
+  - unrequested labels, measurements, or diagram annotations
+  - crosshatching that obscures the silhouette
+  - unrequested horror or violence
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-120.webp
+attributes:
+  negativePrompt: >-
+    unrequested exposed organs, injury, or anatomical alteration, unrequested labels, measurements,
+    or diagram annotations, crosshatching that obscures the silhouette, unrequested horror or
+    violence
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: ink drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: ink drawing
+    avoidRules:
+      - text: unrequested exposed organs, injury, or anatomical alteration
+        field: subject_treatment
+      - text: unrequested labels, measurements, or diagram annotations
+        field: rendering_and_quality
+      - text: crosshatching that obscures the silhouette
+        field: rendering_and_quality
+      - text: unrequested horror or violence
+        field: global
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S020
+    sourceTitle: Anatomical Ink
+    referenceIds:
+      - S15
+      - S60
+    evidenceStatus: experiment
+  ui:
+    kind: full_style
+    derivedFrom:
+      - TCG-S020
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: strange-ink-and-paint
+  categoryName: 3. Strange Ink & Paint
+  tags:
+    - trading-card-illustration
+    - strange
+    - structural-ink
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -13,61 +13,35 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Vacuum-Fortress Survival Discipline acts as a transferable anime-battle/worlds router:
-    Vacuum-Fortress Survival Discipline; combine it with mecha and cyberpunk anime grammar with
-    engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and
-    machine-emotion tension; named titles, studios, or lineage words may guide style, but they must
-    not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.
+    Disciplined survival graphics with sealed angular divisions, compact high-contrast shapes,
+    exact seam lines, and restrained caution-color accents.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply
-    Vacuum-Fortress Survival Discipline as portable contour, motion grammar, surface language, and
-    emotional pressure without requiring canon elements or a default action setup.
+    Preserve the requested form and identity. Emphasize its existing structural divisions with
+    thick clean outlines and compact shadow planes; add no suit or equipment.
   color_and_tone: >-
-    Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile
-    white, coral glow, and disciplined emissive accents; let Vacuum-Fortress Survival Discipline
-    choose accent intensity, value contrast, emotional temperature, and power-system separation
-    while staying attached to prompt X.
+    Pair cold white, steel, charcoal, and deep blue with a small amber caution accent; keep the
+    palette practical and controlled.
   lighting_and_shadow: >-
-    Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow,
-    and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Vacuum-Fortress Survival Discipline without replacing prompt X
-    with a stock anime frame.
+    Use crisp cel-shadow bands and hard edge highlights to separate surfaces; avoid suggesting
+    vacuum lighting or a sealed chamber.
   texture_and_material: >-
-    Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust,
-    circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in
-    Vacuum-Fortress Survival Discipline controlled, denoised, and coherent across bodies, objects,
-    environments, abstractions, and action.
+    Keep depicted materials recognizable while adding fine scuffs, tight seam marks, and limited
+    grain in protected areas.
   camera_and_composition: >-
-    Frame through scale compression, machinery diagonals, grid overlays without readable UI,
-    service-bay density, orbital symmetry, and high-speed hardware lanes; convert Vacuum-Fortress
-    Survival Discipline into reusable perspective, timing, rhythm, scale, cut-in, and negative-space
-    rules instead of one fixed style sample layout.
+    Honor the requested camera. Group existing contours compactly and maintain clear separation
+    between forms without forcing a survival layout.
   atmosphere_and_mood: >-
-    Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine
-    grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic,
-    tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping
-    the anime-battle lineage readable.
+    Suggest disciplined endurance through compact values, exact linework, and restrained accents
+    rather than peril or confinement.
   rendering_and_quality: >-
-    Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic
-    3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object
-    structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no
-    fake readable text, no signature, no photoreal or 3D-render drift.
+    Use stable outlines, hard shadow separation, minimal glow, and carefully rationed surface
+    detail.
   key_features: >-
-    Vacuum-Fortress Survival Discipline; armored contour, mechanical massing, modular joints,
-    engineered surface rhythm, scale cues, and human-machine pressure translated onto any subject;
-    painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry,
-    rain sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays
-    without readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes;
-    premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render,
-    and no cockpit/control-room dependency
+    Sealed angular divisions; compact value groups; cool steel palette; restrained amber
+    signals.
   creative_brief: >-
-    Apply Vacuum-Fortress Survival Discipline after prompt X as a transferable anime-battle/worlds
-    layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset
-    supplies Vacuum-Fortress Survival Discipline, mecha and cyberpunk anime grammar with engineered
-    silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion
-    tension, finish discipline, and negative controls without forcing canon cast, title scene,
-    screenshot, card pose, default monster, default combat prop, or prompt-literal card.
+    Preserve the requested subject and composition. Apply compact angular contours, crisp shadow
+    bands, and restrained caution accents; add no spacesuit, equipment, or chamber.
 avoidRules:
   - realistic
   - 3d render
@@ -79,7 +53,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - plastic 3d robot render
   - cockpit source-frame look
@@ -90,7 +63,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -98,9 +70,9 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, plastic 3d robot render, cockpit source-frame look,
-    readable UI panel, fixed canon character, title scene replication, required source-frame look,
-    cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks
+    artifacts, watermark, signature, plastic 3d robot render, cockpit source-frame look, readable UI
+    panel, fixed canon character, title scene replication, required source-frame look, cosplay,
+    generic anime filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

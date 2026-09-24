@@ -1,0 +1,95 @@
+schemaVersion: 1
+id: SP15-092
+packId: pack_15
+name: Rainpunk
+category: 3. Eco, Repair & Climate Punks
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - eco-repair-and-climate-punks
+visualDna:
+  aesthetic: >-
+    Rainpunk makes water movement legible with continuous channel-like curves, repeated flow intervals
+    and broken reflective planes.
+  subject_treatment: >-
+    Preserve requested identity, silhouette, action and connections. Apply flowing contours or reflective
+    bands to existing forms where compatible; do not add gutters, umbrellas or hydraulic machinery.
+  color_and_tone: >-
+    Preserve the user's palette, using cool mineral blue, teal or steel reflections with a restrained
+    warm accent when suitable. Keep flowing planes distinct from shadows.
+  lighting_and_shadow: >-
+    Follow the requested light. Use selective reflected value bands only on surfaces that could carry
+    them; do not add rain, glow or a new source.
+  texture_and_material: >-
+    Retain real materials. Where water or glazed surfaces are present, use clean reflections and
+    localized wet texture; leave other surfaces in their requested finish.
+  camera_and_composition: >-
+    Preserve viewpoint, crop and placement. Let a few nested curves follow the existing composition
+    without turning it into a waterworks diagram or landscape.
+  atmosphere_and_mood: >-
+    Suggest renewal and persistence through connected flow and reflection, while keeping the requested
+    weather, setting and tone.
+  rendering_and_quality: >-
+    Use smooth directional bands, crisp channel edges and sparse rhythm marks. Keep reflections
+    controlled and avoid fog, splash clutter or dense surface noise.
+avoidRules:
+  - Do not introduce rainfall, cisterns, gutters, umbrellas or waterworks unless requested.
+  - Avoid all-over wet gloss, fog and splash effects.
+  - Keep flow marks attached to existing forms rather than adding pipes.
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-092.webp
+attributes:
+  negativePrompt: >-
+    Do not introduce rainfall, cisterns, gutters, umbrellas or waterworks unless requested., Avoid
+    all-over wet gloss, fog and splash effects., Keep flow marks attached to existing forms rather than
+    adding pipes.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: Do not introduce rainfall, cisterns, gutters, umbrellas or waterworks unless requested.
+        field: rendering_and_quality
+      - text: Avoid all-over wet gloss, fog and splash effects.
+        field: rendering_and_quality
+      - text: Keep flow marks attached to existing forms rather than adding pipes.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-023
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: eco-repair-and-climate-punks
+  categoryName: 3. Eco, Repair & Climate Punks
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - eco-repair-and-climate-punks
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

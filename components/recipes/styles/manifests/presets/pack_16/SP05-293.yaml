@@ -16,80 +16,34 @@ tags:
   - studio-masterpieces
 visualDna:
   aesthetic: >-
-    Rough Mythic Density Style acts as a transferable anime-prestige router: a rough anime direction
-    shaped by era-aware line economy and genre tone, alongside a mythic anime direction shaped by
-    era-aware line economy and genre tone; fuse it with prestige anime film craft with auteur
-    composition, painterly environments, subtle acting, cinematic atmosphere, and careful color
-    script; it routes era, genre, line economy, cel or digital finish, and performance tone without
-    locking prompt content to the source title or sample image.
+    Rough density: irregular hatch clusters at focal edges, mottled paint in broad value fields,
+    and solid dark contour anchors.
   subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through contours paced by
-    rough tension, readable pose energy, and silhouette discipline, alongside contours paced by
-    mythic tension, readable pose energy, and silhouette discipline; identity should remain readable
-    through anime contour, expression economy, pose energy, shape simplification, and effect
-    hierarchy instead of a required canon character or title scene.
+    Keep the requested identities, count, anatomy, proportions, pose and action. Rough marks
+    must not obscure identity or turn forms into variants.
   color_and_tone: >-
-    Map color through a rough accent system held inside disciplined cel values, alongside a mythic
-    accent system held inside disciplined cel values; anchor it in painterly color scripts, luminous
-    sky hues, rain-soft values, warm interiors, muted grief tones, and saturated dream accents; keep
-    value separation clean, cel flats intentional, accents purposeful, and palette behavior attached
-    to the requested content.
+    Honor explicitly requested colors. When no palette is specified, use deep umber, smoked
+    gold, desaturated olive, and blue-gray in robust but limited value groups.
   lighting_and_shadow: >-
-    Use a rough light logic using cel rim, glow behavior, and blocked shadow, alongside a mythic
-    light logic using cel rim, glow behavior, and blocked shadow; combine it with cinematic natural
-    light, rain reflections, sky glow, dream bloom, painterly bounce, and delicate rim separation;
-    shadows should read as anime light design, rims should clarify form, and glow or effects should
-    support the prompt rather than replacing it.
+    Respect the supplied light sources and direction. Keep warm local highlights tied to the
+    stated source against larger cool or dark masses; add no spectacle light.
   texture_and_material: >-
-    Render cel paint and ink grain tuned to rough material contrast, alongside cel paint and ink
-    grain tuned to mythic material contrast; anchor surfaces in gouache-like backgrounds, watercolor
-    gradients, fine linework, film grain, hand-painted light, and soft atmospheric texture; cel
-    edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay
-    coherent across people, objects, environments, action, and abstractions.
+    Apply texture only to materials already present. Concentrate dry brush and short rough
+    hatching on present textured materials; invent no relics or surface types.
   camera_and_composition: >-
-    Frame around rough converted into reusable framing rhythm and anime timing, alongside mythic
-    converted into reusable framing rhythm and anime timing, then extend it with feature-film
-    blocking, environmental scale, poetic negative space, quiet inserts, dream logic, and controlled
-    camera distance; the style should support portraits, props, machines, performances, landscapes,
-    symbols, and full scenes through reusable anime staging grammar instead of one fixed card
-    layout.
+    Preserve the requested viewpoint, relative placement, and crop. Place dense texture near
+    existing overlaps while keeping silhouette channels and quiet planes readable.
   atmosphere_and_mood: >-
-    Carry mood through rough emotional pressure and genre-specific tone, alongside mythic emotional
-    pressure and genre-specific tone; braid it with lyrical longing, ecological awe, intimacy,
-    metaphysical grief, dream collapse, humanist warmth, and mature wonder; the preset can become
-    funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while
-    preserving the chosen anime lineage.
+    Keep the requested emotional tone; density is a drawing property, not grandeur.
   rendering_and_quality: >-
-    Finish with clean anime finishing that keeps rough identity readable without noisy denoise,
-    alongside clean anime finishing that keeps mythic identity readable without noisy denoise;
-    enforce prestige anime film finish with painterly clarity, careful denoise, expressive acting,
-    and no stock fantasy shortcut; prioritize clean denoise, stable anatomy or object structure,
-    readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal
-    or 3D-render drift.
+    Balance rough edge noise with stable dark anchors and open midtones; use no global grunge
+    overlay.
   key_features: >-
-    a rough anime direction shaped by era-aware line economy and genre tone, alongside a mythic
-    anime direction shaped by era-aware line economy and genre tone; contours paced by rough
-    tension, readable pose energy, and silhouette discipline, alongside contours paced by mythic
-    tension, readable pose energy, and silhouette discipline; cel paint and ink grain tuned to rough
-    material contrast, alongside cel paint and ink grain tuned to mythic material contrast; a rough
-    light logic using cel rim, glow behavior, and blocked shadow, alongside a mythic light logic
-    using cel rim, glow behavior, and blocked shadow; rough converted into reusable framing rhythm
-    and anime timing, alongside mythic converted into reusable framing rhythm and anime timing
+    Irregular hatch clusters; mottled broad washes; solid dark anchors; controlled density.
   creative_brief: >-
-    Apply Rough Mythic Density Style after prompt X as a transferable anime-prestige layer: prompt X
-    supplies subject, action, setting, tone, and intensity, while this preset supplies a rough anime
-    direction shaped by era-aware line economy and genre tone, alongside a mythic anime direction
-    shaped by era-aware line economy and genre tone, alongside contours paced by rough tension,
-    readable pose energy, and silhouette discipline, alongside contours paced by mythic tension,
-    readable pose energy, and silhouette discipline; a rough accent system held inside disciplined
-    cel values, alongside a mythic accent system held inside disciplined cel values; a rough light
-    logic using cel rim, glow behavior, and blocked shadow, alongside a mythic light logic using cel
-    rim, glow behavior, and blocked shadow; cel paint and ink grain tuned to rough material
-    contrast, alongside cel paint and ink grain tuned to mythic material contrast and rough
-    converted into reusable framing rhythm and anime timing, alongside mythic converted into
-    reusable framing rhythm and anime timing, finish discipline, and negative controls without
-    requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or
-    card composition.
+    Use irregular hatch clusters; mottled broad washes; solid dark anchors; controlled density.
+    Keep the requested subjects, action, setting, palette, framing and mood; add no scene
+    content.
 avoidRules:
   - realistic
   - 3d render
@@ -101,7 +55,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - generic Ghibli knockoff
   - stock fantasy matte
@@ -112,15 +65,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-293.webp
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte,
-    overprocessed anime wallpaper, fixed canon character, literal title scene, required anime
-    screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text
+    artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
+    anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
+    anime filter, prompt-literal card, muddy cel noise
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

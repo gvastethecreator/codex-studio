@@ -19,6 +19,27 @@ export default defineConfig({
   },
   build: {
     emptyOutDir: true,
+    rolldownOptions: {
+      output: {
+        codeSplitting: {
+          groups: [14, 15].flatMap((pack) =>
+            Array.from({ length: pack === 14 ? 8 : 5 }, (_, batch) => ({
+              name: `archived-style-presets-${pack}-${batch + 1}`,
+              test: (id: string) => {
+                const match = id.match(
+                  /[\\/]styles[\\/]manifests[\\/]archive[\\/](?:conceptual-refactor-20260923|identity-repair-20260923)[\\/]presets[\\/]pack_(14|15)[\\/][^\\/]+-(\d{3})\.yaml(?:\?.*)?$/,
+                );
+                return (
+                  match !== null &&
+                  Number(match[1]) === pack &&
+                  Math.floor((Number(match[2]) - 1) / 20) === batch
+                );
+              },
+            })),
+          ),
+        },
+      },
+    },
   },
   plugins: [...react(), ...tailwindcss()] as never,
   resolve: {

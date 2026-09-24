@@ -13,72 +13,35 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Luminous Beam Opera acts as a transferable anime-battle/worlds router: Luminous Beam Opera,
-    luminous beam opera style grammar with radiant diagonal energy, sleek space-opera machinery,
-    colored light hierarchy, and melodramatic scale; combine it with mecha and cyberpunk anime
-    grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale,
-    and machine-emotion tension; named titles, studios, or lineage words may guide style, but they
-    must not require canon cast, title-scene replication, screenshots, logos, or one fixed card
-    concept.
+    Operatic light-and-line illustration with sleek contours, radiant diagonals, and carefully
+    tiered color fields; scale comes from contrast and sweeping direction, not added spacecraft.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Luminous
-    Beam Opera, luminous beam opera style grammar with radiant diagonal energy, sleek space-opera
-    machinery, colored light hierarchy, and melodramatic scale as portable contour, motion grammar,
-    surface language, and emotional pressure without requiring canon elements or a default action
-    setup.
+    Keep the requested subject recognizable. Sharpen its existing outline and use a few luminous
+    directional strokes to guide attention without changing its shape.
   color_and_tone: >-
-    Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile
-    white, coral glow, and disciplined emissive accents; let Luminous Beam Opera, luminous beam
-    opera style grammar with radiant diagonal energy, sleek space-opera machinery, colored light
-    hierarchy, and melodramatic scale choose accent intensity, value contrast, emotional
-    temperature, and power-system separation while staying attached to prompt X.
+    Contrast deep cobalt and ink with ivory, warm gold, and a chosen saturated accent. Separate
+    colors into clear, dramatic bands.
   lighting_and_shadow: >-
-    Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow,
-    and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Luminous Beam Opera, luminous beam opera style grammar with
-    radiant diagonal energy, sleek space-opera machinery, colored light hierarchy, and melodramatic
-    scale without replacing prompt X with a stock anime frame.
+    Set broad cel shadows against clean, radiant highlight paths. Let light sweep across
+    existing forms without inventing beams, engines, or spotlights.
   texture_and_material: >-
-    Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust,
-    circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Luminous
-    Beam Opera, luminous beam opera style grammar with radiant diagonal energy, sleek space-opera
-    machinery, colored light hierarchy, and melodramatic scale controlled, denoised, and coherent
-    across bodies, objects, environments, abstractions, and action.
+    Render the subject’s actual materials with smooth painted gradients, fine metallic glints,
+    and minimal grain; keep every surface distinct.
   camera_and_composition: >-
-    Frame through scale compression, machinery diagonals, grid overlays without readable UI,
-    service-bay density, orbital symmetry, and high-speed hardware lanes; convert Luminous Beam
-    Opera, luminous beam opera style grammar with radiant diagonal energy, sleek space-opera
-    machinery, colored light hierarchy, and melodramatic scale into reusable perspective, timing,
-    rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.
+    Honor the requested framing. Arrange highlights and contour rhythm along strong diagonals
+    while preserving the subject’s scale and placement.
   atmosphere_and_mood: >-
-    Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine
-    grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic,
-    tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping
-    the anime-battle lineage readable.
+    Create grandeur through luminous contrast, elegant spacing, and deliberate visual cadence,
+    whether the prompt calls for calm or action.
   rendering_and_quality: >-
-    Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic
-    3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object
-    structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no
-    fake readable text, no signature, no photoreal or 3D-render drift.
+    Use precise outlines, clean color separation, controlled bloom, and a small number of bold
+    shadow shapes; avoid muddy glow.
   key_features: >-
-    Luminous Beam Opera, luminous beam opera style grammar with radiant diagonal energy, sleek
-    space-opera machinery, colored light hierarchy, and melodramatic scale; armored contour,
-    mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine
-    pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass,
-    hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale
-    compression, machinery diagonals, grid overlays without readable UI, service-bay density,
-    orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable
-    hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency
+    Radiant diagonal highlights; sleek contour lines; cobalt and ivory contrast; dramatic color
+    hierarchy.
   creative_brief: >-
-    Apply Luminous Beam Opera after prompt X as a transferable anime-battle/worlds layer: prompt X
-    supplies subject, action, setting, tone, and intensity, while this preset supplies Luminous Beam
-    Opera, luminous beam opera style grammar with radiant diagonal energy, sleek space-opera
-    machinery, colored light hierarchy, and melodramatic scale, mecha and cyberpunk anime grammar
-    with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale, and
-    machine-emotion tension, finish discipline, and negative controls without forcing canon cast,
-    title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal
-    card.
+    Keep the specified subject, action, and setting. Apply sleek contours, radiant diagonal
+    accents, and operatic color separation; add no spacecraft, engines, or staged light beams.
 avoidRules:
   - realistic
   - 3d render
@@ -90,7 +53,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - beam saber
   - Gundam-like faceplate
@@ -108,7 +70,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -116,11 +77,10 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, beam saber, Gundam-like faceplate, cockpit hero portrait,
-    named mecha likeness, laser weapon focus, readable UI, war gore, plastic 3d robot render,
-    cockpit source-frame look, readable UI panel, fixed canon character, title scene replication,
-    required source-frame look, cosplay, generic anime filter, prompt-required card, readable text,
-    logo, muddy noisy darks
+    artifacts, watermark, signature, beam saber, Gundam-like faceplate, cockpit hero portrait, named
+    mecha likeness, laser weapon focus, readable UI, war gore, plastic 3d robot render, cockpit
+    source-frame look, readable UI panel, fixed canon character, title scene replication, required
+    source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

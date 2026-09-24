@@ -13,90 +13,64 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Ritual Allegory Icon System operates as a portable anime-lifestyle router: combine Ritual
-    Allegory Icon System identity cues through Ritual Allegory Icon System anime style cues, style
-    specific contour, material transformation, motion grammar, abstraction pressure, symbolic
-    surface logic, and prompt preserving silhouette discipline with broad anime style spectrum
-    grammar with experimental line, material specific finish, auteur adjacent motion, graphic
-    abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style
-    behavior after prompt X rather than a required scene, character, franchise image, or card
-    composition.
+    Organize the prompt's existing forms into a clear emblematic silhouette and repeat only shapes
+    already present; use flat ink and gold to create allegorical hierarchy without inventing
+    symbols.
   subject_treatment: >-
-    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
-    style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic
-    surface logic, and prompt-preserving silhouette discipline; subjects may be characters,
-    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
-    prompt.
+    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
+    treatment to the existing forms without substituting subjects, adding accessories or changing
+    their function.
   color_and_tone: >-
-    Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop,
-    thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values
-    readable, accent roles intentional, skin or material midtones stable, and palette behavior
-    attached to the prompt instead of pasted anime decoration.
+    Palette defaults apply only where the prompt leaves color open: keep a compact ink, paper and
+    gold palette, adapting it to explicit prompt colors.
   lighting_and_shadow: >-
-    Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze,
-    speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression,
-    silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or
-    screenshot-like flatness.
+    Use flat light/dark separation and restrained gold-like highlights; avoid cinematic lighting
+    that obscures the emblematic read.
   texture_and_material: >-
-    Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map
-    pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile,
-    glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy
-    surface chatter.
+    Favor flat areas, clean silhouette edges and repeated prompt-derived geometry; keep material
+    cues legible.
   camera_and_composition: >-
-    Compose through auteur-aware framing, material seams, impact vectors, postcard freezes,
-    distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as
-    reusable anime framing grammar, allowing close acting, objects, performances, action,
-    environments, or abstract prompts without one required pose or location.
+    Give existing forms ordered visual hierarchy and balanced spacing without adding altar, frame or
+    icon.
   atmosphere_and_mood: >-
-    Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance,
-    tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become
-    cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while
-    preserving its anime lineage.
+    Ritual tone is a compositional cadence, not a new belief system or story; preserve the user's
+    meaning.
   rendering_and_quality: >-
-    Finish with clean experimental anime finish with strong style recognition, stable subject
-    structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss;
-    prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no
-    fake readable text, no UI, and no generic AI anime gloss.
+    Use only geometry found in the supplied subject; add no religious sign, sigil, prop, label or
+    ritual scene. Keep important silhouettes and joins legible; no watermark, unrequested text or
+    interface.
   key_features: >-
-    Ritual Allegory Icon System anime style cues; style specific contour; material transformation;
-    motion grammar; abstraction pressure; symbolic surface logic
+    Emblematic silhouette; repeated prompt-derived shape; flat ink/gold contrast; ordered spacing;
+    icon-like hierarchy.
   creative_brief: >-
-    Use Ritual Allegory Icon System after prompt X as a transferable anime character/lifestyle
-    layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset
-    supplies Ritual Allegory Icon System anime style cues, style specific contour, material
-    transformation, motion grammar, abstraction pressure, symbolic surface logic, color logic,
-    lighting, material finish, composition rhythm, mood pressure, and quality controls without
-    requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card
-    composition.
+    Apply this visual treatment to the requested content: Emblematic silhouette; repeated
+    prompt-derived shape; flat ink/gold contrast; ordered spacing; icon-like hierarchy. Preserve its
+    identity, action, materials, composition and requested tone; introduce no persona, scene,
+    franchise cue or extra motif.
 avoidRules:
-  - literal realism
-  - casual slice of life
-  - unstyled modern room
-  - flat documentary light
-  - generic fantasy battle
-  - low symbolism composition
-  - random prop clutter
-  - generic AI anime gloss
-  - auteur copycat
-  - fixed source scene
-  - canon character copy
-  - title scene copy
-  - literal sample card setup
-  - fixed anime cast
-  - generic anime filter
-  - prompt literal card reuse
+  - photoreal cosplay rendering
+  - 3D render look
+  - plastic airbrush gloss obscuring the style's defining marks
+  - undifferentiated anime filter erasing the preset's signature mechanics
+  - unrequested default-image characters, costume details, props or setting
+  - unrequested default-image framing
+  - garbled pseudo-text
+  - unrequested interface overlay
   - watermark
-  - readable text
-  - fake UI
+  - unrequested logo or signature artifact
+  - prompt-unrelated repeated symbols
+  - mark clutter obscuring emblematic hierarchy
+  - unrequested invented iconography
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-332.webp
 attributes:
   negativePrompt: >-
-    literal realism, casual slice of life, unstyled modern room, flat documentary light, generic
-    fantasy battle, low symbolism composition, random prop clutter, generic AI anime gloss, auteur
-    copycat, fixed source scene, canon character copy, title scene copy, literal sample card setup,
-    fixed anime cast, generic anime filter, prompt literal card reuse, watermark, readable text,
-    fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, signature
+    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
+    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
+    unrequested default-image characters, costume details, props or setting, unrequested
+    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
+    unrequested logo or signature artifact, prompt-unrelated repeated symbols, mark clutter
+    obscuring emblematic hierarchy, unrequested invented iconography
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

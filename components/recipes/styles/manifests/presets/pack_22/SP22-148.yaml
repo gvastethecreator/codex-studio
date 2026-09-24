@@ -1,0 +1,104 @@
+schemaVersion: 1
+id: SP22-148
+packId: pack_22
+name: Graphic Anime Blocks
+category: 6. Anime Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - anime-illustration
+  - graphic-anime-blocks
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Graphic anime drawing reduces forms to broad flat color blocks and a few small detail marks,
+    using crisp line and open silhouette gaps instead of ornamental realism.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Simplify internal detail while
+    retaining the subject's defining shape and features.
+  color_and_tone: >-
+    Use the requested palette as distinct color areas. Separate forms through color relationships
+    and keep shadow shapes minimal; do not impose new hues.
+  lighting_and_shadow: >-
+    Follow the requested light direction and contrast. Keep its value changes broad and restrained
+    without creating extra highlights or an unsupported source.
+  texture_and_material: >-
+    Keep surfaces flat and clean with minimal texture. Preserve requested material cues through shape
+    and color rather than simulated photographic detail.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, pose, crop and placement. Open silhouette gaps only where they
+    keep the existing form readable; add no card frame or lettering.
+  atmosphere_and_mood: >-
+    Keep the requested setting and tone. Graphic simplification changes the rendering, not the
+    subject, scene or background.
+  rendering_and_quality: >-
+    Prioritize large color masses, crisp lines and a few attached detail marks. Preserve identity and
+    readability while avoiding realistic ornamental density.
+avoidRules:
+  - imitation of a specific named character or franchise
+  - detailed gradients or photographic surface finish
+  - unrequested card frame or lettering
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-148.webp
+attributes:
+  negativePrompt: >-
+    imitation of a specific named character or franchise, detailed gradients or photographic
+    surface finish, unrequested card frame or lettering
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: imitation of a specific named character or franchise
+        field: global
+      - text: detailed gradients or photographic surface finish
+        field: rendering_and_quality
+      - text: unrequested card frame or lettering
+        field: global
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S048
+    sourceTitle: Graphic Anime Blocks
+    referenceIds:
+      - S03
+      - S02
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    derivedFrom:
+      - TCG-S048
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: anime-illustration
+  categoryName: 6. Anime Illustration
+  tags:
+    - trading-card-illustration
+    - anime-illustration
+    - graphic-anime-blocks
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -1,0 +1,89 @@
+schemaVersion: 1
+id: SP15-119
+packId: pack_15
+name: Salvagepunk
+category: 9. Space, Atomic & Ray Punks
+version: 2
+supportedTasks: &id002
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags: &id001
+  - curation-v2
+  - identity-reviewed
+  - visual-evaluation-pending
+  - space-atomic-and-ray-punks
+visualDna:
+  aesthetic:
+    'Make visible reuse the design signature: mismatched recovered panels, repurposed hardware, rope
+    or cable tethers, patched canvas, and deliberate repair seams show how a form was adapted from what was
+    available.'
+  subject_treatment:
+    Preserve the requested subject and action; translate unspecified structures or accessories
+    into visibly reused components and practical repairs without changing the subject into a vehicle or scrap
+    heap.
+  color_and_tone:
+    Pair weathered steel, canvas, oxide, wood, and charcoal with a few clean repair marks or
+    weld-warm accents; retain enough unweathered color to keep the focal form clear.
+  lighting_and_shadow:
+    Use directional light to reveal joins, layered panels, and patched edges; keep weld
+    or signal glow small and functional.
+  texture_and_material:
+    Distinguish rusted metal, tarred seams, salt wood, canvas, and replacement fasteners;
+    concentrate weathering around contact and repair points.
+  camera_and_composition:
+    Let joins and tethers make readable diagonals around the subject; preserve the source
+    framing and avoid dense junk accumulation.
+  atmosphere_and_mood:
+    Suggest resilience and inventive reuse, which can be hopeful, rough, cosmic, maritime,
+    or urban as the prompt requires.
+  rendering_and_quality:
+    Use broad, clean material shapes and clearly drawn repair logic; keep scars subordinate
+    to the subject's silhouette.
+avoidRules:
+  - a required spaceship, scrapbike, sail, or wreck
+  - random junk piles without functional joins
+  - uniform rust or grime hiding the repair logic
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-119.webp
+attributes:
+  negativePrompt:
+    a required spaceship, scrapbike, sail, or wreck, random junk piles without functional joins,
+    uniform rust or grime hiding the repair logic
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: a required spaceship, scrapbike, sail, or wreck
+        field: rendering_and_quality
+      - text: random junk piles without functional joins
+        field: rendering_and_quality
+      - text: uniform rust or grime hiding the repair logic
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-119
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: space-atomic-and-ray-punks
+  categoryName: 9. Space, Atomic & Ray Punks
+  tags: *id001
+  supportedTasks: *id002
+  hasDefaultImage: true

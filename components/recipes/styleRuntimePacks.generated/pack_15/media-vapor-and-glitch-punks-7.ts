@@ -4,235 +4,123 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP15-049',
-    name: 'Cathode Reflection Reverie',
+    id: 'SP15-107',
+    name: 'Vaporpunk',
     category: '7. Media, Vapor & Glitch Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, empty gradient card, fake readable text, generic synthwave wallpaper, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'a mandatory mall, arcade, CRT, or empty commercial interior, heavy glitch effects, pastel haze that erases the focal subject, an unrequested coast, ocean, palm silhouette, sunset horizon, or scenic window view',
     style: {
       aesthetic:
-        'Cathode Reflection Reverie operates as a portable punk-spectrum router: combine Cathode Reflection Reverie identity cues through CRT reflections; tiled geometry; chrome rails; vapor haze; cathode halos; pastel humidity with media/vapor/glitch punk grammar with CRT devotion, cassette weather, pirate broadcast stacks, mallsoft nostalgia, checker playfields, and analog signal ghosts, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'Use pastel retro-consumer futurism: checker or tiled planes, contained pastel gradients, chrome-trimmed curves, soft cathode halos, and shallow reflections on existing surfaces create synthetic nostalgia without adding a new landscape or view.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through scanline contour, cassette-shell geometry, checker-grid planes, phosphor bloom, tape flutter, chrome trim, and broadcast-stack surface logic; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve the requested subject, action, setting, and framing; let selected existing planes, edges, or reflections carry tile geometry and softened retro color. Do not add a window, coastline, ocean, palms, or sunset scene to communicate Vaporpunk.',
       color_and_tone:
-        'Map color through cathode aqua, magenta, peach, violet, phosphor green, cream tile, black grid, and washed sunset gradients; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Blend lavender, pale cyan, pink, cream, and washed teal in localized planes or reflections, with chrome or dark purple used sparingly for structure; retain the requested focal contrast and palette.',
       lighting_and_shadow:
-        "Use CRT glow, cabinet bloom, phosphor edge light, sunset-gradient spill, humid reflection, and analog monitor falloff; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Preserve the requested light source, direction, and time of day; use gradients as surface color and keep any cathode-like halo local rather than bathing the scene in sunset light.',
       texture_and_material:
-        'Render screen glass, cabinet plastic, laminate, cassette tape, chrome trim, static grain, tile sheen, and controlled glitch bands; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Combine smooth tile, chrome trim, glassy reflections, and softly faded print; keep surfaces calm and avoid adding digital glitch artifacts.',
       camera_and_composition:
-        'Compose through bold signal framing, checker or scanline depth, one clear subject anchor, offset broadcast stacks, and synthetic negative space as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Use receding tile divisions or gentle reflective bands to lead toward the subject; preserve the requested setting and keep the background subordinate.',
       atmosphere_and_mood:
-        'Carry mood through dreamy analog unreality, playful nostalgia, eerie devotion, humid retro intimacy, synthetic haze, and media-haunted tenderness; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Suggest dreamy consumer-retro nostalgia through restrained color and surface rhythm; do not introduce a coast, horizon, sunset view, or commercial interior.',
       rendering_and_quality:
-        'Finish with clean vapor/glitch illustration with denoised static, readable analog artifacts, no fake readable text, and no empty gradient card; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'CRT reflections; tiled geometry; chrome rails; vapor haze; cathode halos; pastel humidity',
-      creative_brief:
-        'Use Cathode Reflection Reverie after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies CRT reflections, tiled geometry, chrome rails, vapor haze, cathode halos, pastel humidity, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Keep large shapes soft-edged but defined, with concise highlights and enough contrast for a readable thumbnail.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-107'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-050',
-    name: 'Gradient Playfield Mirage',
+    id: 'SP15-108',
+    name: 'Cassette Futurism',
     category: '7. Media, Vapor & Glitch Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, empty gradient card, fake readable text, generic synthwave wallpaper, fixed punk venue, required mascot, required sample-card setup, repeated prop bundle, readable text, prompt-required card reuse, generic cyberpunk wallpaper, literal sample-card setup, prompt-literal card reuse',
+      'a required cassette deck or weather station, modern glossy touch-screen minimalism, dense controls that collapse into noise',
     style: {
       aesthetic:
-        'Gradient Playfield Mirage operates as a portable punk-spectrum router: combine Gradient Playfield Mirage identity cues through checker geometry; cabinet glow; sunset grid; pastel bloom; chrome trim; and synthetic nostalgia across prompt subjects with media/vapor/glitch punk grammar with CRT devotion, cassette weather, pirate broadcast stacks, mallsoft nostalgia, checker playfields, and analog signal ghosts, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'Build a tactile late-analog design language from chunky rounded rectangles, cassette-window shapes, paired reels, slider rows, and cable loops, with the geometry applied selectively to forms rather than requiring a cassette as the subject.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through scanline contour, cassette-shell geometry, checker-grid planes, phosphor bloom, tape flutter, chrome trim, and broadcast-stack surface logic; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve the requested subject and action; give unspecified equipment, clothing panels, or environmental edges molded analog contours, smoked windows, and a few mechanical controls without adding a full control console.',
       color_and_tone:
-        'Map color through cathode aqua, magenta, peach, violet, phosphor green, cream tile, black grid, and washed sunset gradients; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Favor warm cream, amber, graphite, and restrained teal or blue-green indicators; keep the large masses warm and quiet, with small colored signals providing contrast.',
       lighting_and_shadow:
-        "Use CRT glow, cabinet bloom, phosphor edge light, sunset-gradient spill, humid reflection, and analog monitor falloff; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Use broad panel highlights, soft amber lamp glow, and dark window recesses to reveal molded depth; keep reflections graphic and localized instead of glossy product photography.',
       texture_and_material:
-        'Render screen glass, cabinet plastic, laminate, cassette tape, chrome trim, static grain, tile sheen, and controlled glitch bands; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Contrast matte molded plastic, brushed metal edges, translucent smoked inserts, and visible tape-like ribbons; use wear at corners and controls, not a blanket vintage filter.',
       camera_and_composition:
-        'Compose through bold signal framing, checker or scanline depth, one clear subject anchor, offset broadcast stacks, and synthetic negative space as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Organize the focal form through nested rounded frames and linked ribbons or cable curves; preserve depth and action, and avoid arranging every image as a centered device catalog shot.',
       atmosphere_and_mood:
-        'Carry mood through dreamy analog unreality, playful nostalgia, eerie devotion, humid retro intimacy, synthetic haze, and media-haunted tenderness; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        "Suggest an intimate, repairable analog future: practical, lived-in, and quietly optimistic, with the source subject's own emotional tone intact.",
       rendering_and_quality:
-        'Finish with clean vapor/glitch illustration with denoised static, readable analog artifacts, no fake readable text, and no empty gradient card; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'checker geometry; cabinet glow; sunset grid; pastel bloom; chrome trim; and synthetic nostalgia across prompt subjects',
-      creative_brief:
-        'Use Gradient Playfield Mirage after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies checker geometry, cabinet glow, sunset grid, pastel bloom, chrome trim, and synthetic nostalgia across prompt subjects, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Use clean illustrated surfaces, readable control silhouettes, and restrained grain; separate large panel geometry from tiny buttons at thumbnail scale.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-108'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-051',
-    name: 'Cassette Weather Instruments',
+    id: 'SP15-109',
+    name: 'Broadcastpunk',
     category: '7. Media, Vapor & Glitch Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, readable map text, letters, logo labels, desk-lamp hero, office control-interior-system wall, tiny dial carpet, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, empty gradient card, fake readable text, generic synthwave wallpaper, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'a mandatory television studio, monitor wall, or scene-wide screen frame, digital pixel breakup as the dominant effect, scanlines across all forms, unrequested screen labels, readable UI text, or picture-in-picture framing',
     style: {
       aesthetic:
-        'Cassette Weather Instruments operates as a portable punk-spectrum router: combine Cassette Weather Instruments identity cues through cassette decks; tape ribbons; weather-map geometry; field materials; dial clusters; analog dials with media/vapor/glitch punk grammar with CRT devotion, cassette weather, pirate broadcast stacks, mallsoft nostalgia, checker playfields, and analog signal ghosts, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'Make analog transmission and pirate television tangible through phosphor linework, antenna-like arcs, coaxial routes, broadcast color bars, and occasional red tally marks applied to existing forms; do not frame the scene inside a screen or add television hardware unless requested.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through scanline contour, cassette-shell geometry, checker-grid planes, phosphor bloom, tape flutter, chrome trim, and broadcast-stack surface logic; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve the requested subject, action, setting, and framing; apply signal marks within the existing composition and never display the entire scene as television content.',
       color_and_tone:
-        'Map color through cathode aqua, magenta, peach, violet, phosphor green, cream tile, black grid, and washed sunset gradients; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Use graphite, warm black, phosphor green, cyan, cream, and a controlled red signal accent on existing surfaces; keep the focal subject brighter and clearer than surrounding signal marks.',
       lighting_and_shadow:
-        "Use CRT glow, cabinet bloom, phosphor edge light, sunset-gradient spill, humid reflection, and analog monitor falloff; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Preserve the requested base illumination; keep any phosphor-like glow small and confined to signal marks rather than darkening the scene or adding illuminated hardware.',
       texture_and_material:
-        'Render screen glass, cabinet plastic, laminate, cassette tape, chrome trim, static grain, tile sheen, and controlled glitch bands; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Use scanline-like strokes and analog noise as localized graphic marks on existing forms; do not add glass screens, metal bezels, or cable objects when they are not part of the requested scene.',
       camera_and_composition:
-        'Compose through bold signal framing, checker or scanline depth, one clear subject anchor, offset broadcast stacks, and synthetic negative space as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Preserve the requested composition; use one or two signal arcs or short scanline zones within existing surfaces, never a frame around the full scene or duplicate images.',
       atmosphere_and_mood:
-        'Carry mood through dreamy analog unreality, playful nostalgia, eerie devotion, humid retro intimacy, synthetic haze, and media-haunted tenderness; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Suggest unauthorized transmission, community media, or fragile connection without requiring a station, crowd, or political message.',
       rendering_and_quality:
-        'Finish with clean vapor/glitch illustration with denoised static, readable analog artifacts, no fake readable text, and no empty gradient card; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'cassette decks; tape ribbons; weather-map geometry; field materials; dial clusters; analog dials',
-      creative_brief:
-        'Use Cassette Weather Instruments after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies cassette decks, tape ribbons, weather-map geometry, field materials, dial clusters, analog dials, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        "Keep frame edges and signal marks distinct, limit scanlines to visible signal zones, and preserve the focal subject's silhouette.",
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-109'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-052',
-    name: 'Pirate TV Signal Stack',
+    id: 'SP15-110',
+    name: 'Glitchpunk',
     category: '7. Media, Vapor & Glitch Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, visible camera, tripod, softbox, light umbrella, pirate flag, skull, crossbones, banner, emblem, logo-like symbol, near-plane camera prop, camera pointed at viewer, smartphone, readable UI, screen text, news logo, surveillance-camera hero, mall corridor, folding-chair clutter, cable spaghetti, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, empty gradient card, fake readable text, generic synthwave wallpaper, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'global image tearing or unreadable pixel noise, analog scanlines and monitor frames dominating the image, glitch marks that alter identity or anatomy',
     style: {
       aesthetic:
-        'Pirate TV Signal Stack operates as a portable punk-spectrum router: combine Pirate TV Signal Stack identity cues through monitor stacks; coax coils; antenna arcs; crowd-pressure silhouettes; red tally sparks; broadcast punk signal hijack style that transfers stacked monitors with media/vapor/glitch punk grammar with CRT devotion, cassette weather, pirate broadcast stacks, mallsoft nostalgia, checker playfields, and analog signal ghosts, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        "Break a clean digital image locally with displaced RGB contours, compression blocks, clipped pixel clusters, and interrupted interface-like fragments, keeping most of the subject's structure stable.",
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through scanline contour, cassette-shell geometry, checker-grid planes, phosphor bloom, tape flutter, chrome trim, and broadcast-stack surface logic; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve the requested subject, identity, and action; offset only selected edges, reflections, or secondary details so corruption reads as a deliberate digital disturbance rather than anatomy damage.',
       color_and_tone:
-        'Map color through cathode aqua, magenta, peach, violet, phosphor green, cream tile, black grid, and washed sunset gradients; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Use a stable base palette with brief cyan, magenta, or red channel slips; keep the main value grouping coherent and avoid converting every region into neon.',
       lighting_and_shadow:
-        "Use CRT glow, cabinet bloom, phosphor edge light, sunset-gradient spill, humid reflection, and analog monitor falloff; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Maintain the underlying light logic and use channel offsets as graphic edge events; do not let glitch marks act as an all-over lighting effect.',
       texture_and_material:
-        'Render screen glass, cabinet plastic, laminate, cassette tape, chrome trim, static grain, tile sheen, and controlled glitch bands; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Contrast clean rendered regions with sparse pixel stair-steps, compression smears, and raster breaks; avoid analog dust, film grain, and physical paper textures.',
       camera_and_composition:
-        'Compose through bold signal framing, checker or scanline depth, one clear subject anchor, offset broadcast stacks, and synthetic negative space as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Preserve the requested camera and silhouette; use a few short horizontal or stepped disruptions, with negative space around the focal form.',
       atmosphere_and_mood:
-        'Carry mood through dreamy analog unreality, playful nostalgia, eerie devotion, humid retro intimacy, synthetic haze, and media-haunted tenderness; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Create unstable, rebellious digital energy without implying a specific device, game interface, or cyberpunk city.',
       rendering_and_quality:
-        'Finish with clean vapor/glitch illustration with denoised static, readable analog artifacts, no fake readable text, and no empty gradient card; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'monitor stacks; coax coils; antenna arcs; crowd-pressure silhouettes; red tally sparks; broadcast punk signal hijack style that transfers stacked monitors',
-      creative_brief:
-        'Use Pirate TV Signal Stack after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies monitor stacks, coax coils, antenna arcs, crowd-pressure silhouettes, red tally sparks, broadcast punk signal hijack style that transfers stacked monitors, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Keep corruption sharply localized and the core subject readable at thumbnail scale; preserve facial, limb, and object continuity.',
     },
-  },
-  {
-    id: 'SP15-053',
-    name: 'CRT Static Devotion',
-    category: '7. Media, Vapor & Glitch Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, cross, religious icon, readable symbols, sigils, altar, skull, chapel corridor, candle shrine fixation, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, empty gradient card, fake readable text, generic synthwave wallpaper, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'CRT Static Devotion operates as a portable punk-spectrum router: combine CRT Static Devotion identity cues through CRT halo; phosphor static; cable loops; candle-grade edge light; intimate analog pressure; static veils with media/vapor/glitch punk grammar with CRT devotion, cassette weather, pirate broadcast stacks, mallsoft nostalgia, checker playfields, and analog signal ghosts, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through scanline contour, cassette-shell geometry, checker-grid planes, phosphor bloom, tape flutter, chrome trim, and broadcast-stack surface logic; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through cathode aqua, magenta, peach, violet, phosphor green, cream tile, black grid, and washed sunset gradients; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use CRT glow, cabinet bloom, phosphor edge light, sunset-gradient spill, humid reflection, and analog monitor falloff; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render screen glass, cabinet plastic, laminate, cassette tape, chrome trim, static grain, tile sheen, and controlled glitch bands; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through bold signal framing, checker or scanline depth, one clear subject anchor, offset broadcast stacks, and synthetic negative space as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through dreamy analog unreality, playful nostalgia, eerie devotion, humid retro intimacy, synthetic haze, and media-haunted tenderness; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with clean vapor/glitch illustration with denoised static, readable analog artifacts, no fake readable text, and no empty gradient card; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'CRT halo; phosphor static; cable loops; candle-grade edge light; intimate analog pressure; static veils',
-      creative_brief:
-        'Use CRT Static Devotion after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies CRT halo, phosphor static, cable loops, candle-grade edge light, intimate analog pressure, static veils, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-054',
-    name: 'Glitch Commerce Distortion',
-    category: '7. Media, Vapor & Glitch Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, screen-wall, many monitors, detailed UI panels, readable product labels, logos, UI screens, bazaar corridor, endless stalls, grocery aisle, commerce-system aisle, mascot poster, camera prop, photoreal wet public-style, RGB noise storm, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, empty gradient card, fake readable text, generic synthwave wallpaper, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Glitch Commerce Distortion operates as a portable punk-spectrum router: combine Glitch Commerce Distortion identity cues through broken display glow; warped commercial silhouettes; scanline ghosts; cheap plastic; RGB splits; warped merchandise shapes with media/vapor/glitch punk grammar with CRT devotion, cassette weather, pirate broadcast stacks, mallsoft nostalgia, checker playfields, and analog signal ghosts, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through scanline contour, cassette-shell geometry, checker-grid planes, phosphor bloom, tape flutter, chrome trim, and broadcast-stack surface logic; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through cathode aqua, magenta, peach, violet, phosphor green, cream tile, black grid, and washed sunset gradients; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use CRT glow, cabinet bloom, phosphor edge light, sunset-gradient spill, humid reflection, and analog monitor falloff; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render screen glass, cabinet plastic, laminate, cassette tape, chrome trim, static grain, tile sheen, and controlled glitch bands; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through bold signal framing, checker or scanline depth, one clear subject anchor, offset broadcast stacks, and synthetic negative space as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through dreamy analog unreality, playful nostalgia, eerie devotion, humid retro intimacy, synthetic haze, and media-haunted tenderness; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with clean vapor/glitch illustration with denoised static, readable analog artifacts, no fake readable text, and no empty gradient card; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'broken display glow; warped commercial silhouettes; scanline ghosts; cheap plastic; RGB splits; warped merchandise shapes',
-      creative_brief:
-        'Use Glitch Commerce Distortion after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies broken display glow, warped commercial silhouettes, scanline ghosts, cheap plastic, RGB splits, warped merchandise shapes, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-055',
-    name: 'Mallsoft Uplink Nostalgia',
-    category: '7. Media, Vapor & Glitch Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, detailed streetwear patches, readable hoodie graphics, readable storefront signs, brand logos, long mall hallway, escalator depth hero, atrium depth hero, retail aisle, coin clutter carpet, realistic water caustics, luxury mall render, empty fountain postcard, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, empty gradient card, fake readable text, generic synthwave wallpaper, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Mallsoft Uplink Nostalgia operates as a portable punk-spectrum router: combine Mallsoft Uplink Nostalgia identity cues through washed tile; shallow reflections; fiber glints; dead-retail pastels; chrome benches; shallow reflection logic with media/vapor/glitch punk grammar with CRT devotion, cassette weather, pirate broadcast stacks, mallsoft nostalgia, checker playfields, and analog signal ghosts, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through scanline contour, cassette-shell geometry, checker-grid planes, phosphor bloom, tape flutter, chrome trim, and broadcast-stack surface logic; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through cathode aqua, magenta, peach, violet, phosphor green, cream tile, black grid, and washed sunset gradients; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use CRT glow, cabinet bloom, phosphor edge light, sunset-gradient spill, humid reflection, and analog monitor falloff; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render screen glass, cabinet plastic, laminate, cassette tape, chrome trim, static grain, tile sheen, and controlled glitch bands; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through bold signal framing, checker or scanline depth, one clear subject anchor, offset broadcast stacks, and synthetic negative space as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through dreamy analog unreality, playful nostalgia, eerie devotion, humid retro intimacy, synthetic haze, and media-haunted tenderness; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with clean vapor/glitch illustration with denoised static, readable analog artifacts, no fake readable text, and no empty gradient card; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'washed tile; shallow reflections; fiber glints; dead-retail pastels; chrome benches; shallow reflection logic',
-      creative_brief:
-        'Use Mallsoft Uplink Nostalgia after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies washed tile, shallow reflections, fiber glints, dead-retail pastels, chrome benches, shallow reflection logic, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-056',
-    name: 'Static Tape Listening',
-    category: '7. Media, Vapor & Glitch Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, screen text, fake interface lines, readable monitor marks, satellite-photoreal dish, telescope observatory dome, starfield wallpaper, control-interior-system wall, UI screens, readable scope marks, tiny LED carpet, cable spaghetti, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, empty gradient card, fake readable text, generic synthwave wallpaper, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Static Tape Listening operates as a portable punk-spectrum router: combine Static Tape Listening identity cues through tape reels; signal-dish arcs; CRT scope glow; wind lines; midnight phosphor; and haunted technical solitude across prompt subjects with media/vapor/glitch punk grammar with CRT devotion, cassette weather, pirate broadcast stacks, mallsoft nostalgia, checker playfields, and analog signal ghosts, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through scanline contour, cassette-shell geometry, checker-grid planes, phosphor bloom, tape flutter, chrome trim, and broadcast-stack surface logic; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through cathode aqua, magenta, peach, violet, phosphor green, cream tile, black grid, and washed sunset gradients; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use CRT glow, cabinet bloom, phosphor edge light, sunset-gradient spill, humid reflection, and analog monitor falloff; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render screen glass, cabinet plastic, laminate, cassette tape, chrome trim, static grain, tile sheen, and controlled glitch bands; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through bold signal framing, checker or scanline depth, one clear subject anchor, offset broadcast stacks, and synthetic negative space as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through dreamy analog unreality, playful nostalgia, eerie devotion, humid retro intimacy, synthetic haze, and media-haunted tenderness; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with clean vapor/glitch illustration with denoised static, readable analog artifacts, no fake readable text, and no empty gradient card; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'tape reels; signal-dish arcs; CRT scope glow; wind lines; midnight phosphor; and haunted technical solitude across prompt subjects',
-      creative_brief:
-        'Use Static Tape Listening after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies tape reels, signal-dish arcs, CRT scope glow, wind lines, midnight phosphor, and haunted technical solitude across prompt subjects, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-110'],
+      visualEvaluation: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

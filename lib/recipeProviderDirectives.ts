@@ -528,6 +528,36 @@ function buildAnimationSequenceProviderDirectives(
 }
 
 function buildStylesProviderDirectives(module: RecipeModule, params: Record<string, unknown>) {
+  const intentionalPrompt =
+    getString(params, 'compilerVersion').startsWith('intentional-styles/') &&
+    getString(params, 'styleRequestHash')
+      ? getString(params, 'effectivePrompt')
+      : '';
+  if (intentionalPrompt) {
+    const outputMedium =
+      intentionalPrompt
+        .match(/^Output medium: ([^\n]+)$/m)?.[1]
+        ?.split('. Render the whole image')[0]
+        ?.trim() ?? '';
+    const mediumDirective = outputMedium
+      ? outputMedium === 'illustration'
+        ? 'Illustration across the entire subject and setting: draw or paint all forms with visible mark and shape decisions. Avoid a photographic, live-action or glossy CGI finish. Preserve the requested subject, counts, action, framing and light.'
+        : `Render the entire subject and setting in ${outputMedium}. Preserve the requested subject, counts, action, framing and light.`
+      : '';
+    return createRecipeProviderDirectives({
+      recipeId: module.id,
+      title: module.title,
+      sections: [
+        {
+          title: 'Intentional Style Plan',
+          directives: [
+            directive('Required Output Medium', mediumDirective),
+            directive('Compiled Instructions', intentionalPrompt),
+          ],
+        },
+      ],
+    });
+  }
   const selectedStyleDirectives = getSelectedStyleLayerDirectives(params);
 
   return createRecipeProviderDirectives({

@@ -4,235 +4,183 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP15-041',
-    name: 'Zine Paste Graphics',
+    id: 'SP15-101',
+    name: 'Zinepunk',
     category: '6. Street, Riot & DIY Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, readable text, slogans, letters, newspaper clippings with words, brand stickers, blade hero, knife hero, conspiracy board, office desk, library aisle, commerce-system aisle, wall-only empty collage, photoreal paper clutter, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, riot-photo realism, random crowd chaos, brand-logo sticker collage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'a compulsory magazine page or poster layout, unrequested readable lettering or logos, uniform dirt or grain that obscures the subject',
     style: {
       aesthetic:
-        'Zine Paste Graphics operates as a portable punk-spectrum router: combine Zine Paste Graphics identity cues through blank zine sheets; paste-bucket shapes; tape strips; red ink blocks; cut paper texture; Zinepunk paste-graphics poster language built from blank paper blocks with DIY public-punk grammar with pasted graphics, generator motion, barricade voltage, scrapbike cargo, rave care, patch pressure, and mutual-aid pragmatism, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'Treat forms like a hand-assembled xerox zine: torn image planes, paste-over blocks, rough marker contours, coarse halftones, and slight print misregistration make the graphic language legible.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through paste-layer edges, cable-tied equipment, plywood planes, sticker stacks, patch geometry, generator vibration, cargo straps, and care-station clarity; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve the requested subject, action, and framing; simplify unspecified forms into bold cut-paper silhouettes and re-layer selected details like pasted clippings without turning every image into a page or poster.',
       color_and_tone:
-        'Map color through photocopy black, paper cream, magenta voltage, plywood brown, laser green, concrete gray, sticker reds, and electric blue accents; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Use paper cream, toner black, and a few saturated ink colors such as red, cobalt, or acid green; let uncoated paper remain light and keep the focal silhouette distinct from collage fragments.',
       lighting_and_shadow:
-        "Use portable floodlight, screen glow, welding spark, sodium haze, laser slices, generator glare, and sticker-gloss highlights; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Prefer flat printed value blocks and small paste-layer shadows; reserve deeper shadow for overlaps and folds so the image reads as reproduced print rather than a photographed paper surface.',
       texture_and_material:
-        'Render torn paper, tape, plywood, cable ties, vinyl stickers, patched fabric, bike metal, plastic crates, and concrete scuffs; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        "Make grain belong to toner, halftone, rough cut edges, staples, and tape seams; keep the subject's large color and value regions clean enough to read.",
       camera_and_composition:
-        'Compose through layered poster rhythm, improvised equipment paths, tight public pressure, cargo diagonals, and bold subject hierarchy without crowd dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Keep the source framing and dominant subject; use one strong diagonal or asymmetric pasted strip to create zine energy, with supporting fragments kept subordinate.',
       atmosphere_and_mood:
-        'Carry mood through scrappy defiance, communal protection, loud improvisation, nocturnal urgency, practical care, and hand-built resistance; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Carry a self-published, urgent, resourceful voice that can be playful, tender, angry, or strange according to the requested content.',
       rendering_and_quality:
-        'Finish with graphic DIY-punk illustration with readable paste layers, controlled grit, large value blocks, and no generic riot-photo realism; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'blank zine sheets; paste-bucket shapes; tape strips; red ink blocks; cut paper texture; Zinepunk paste-graphics poster language built from blank paper blocks',
-      creative_brief:
-        'Use Zine Paste Graphics after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies blank zine sheets, paste-bucket shapes, tape strips, red ink blocks, cut paper texture, Zinepunk paste-graphics poster language built from blank paper blocks, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Render crisp illustration with controlled photocopy grit, clear silhouette edges, and legible large shapes; avoid letting paper noise replace drawing.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-101'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-042',
-    name: 'DIY Generator Motion',
+    id: 'SP15-102',
+    name: 'Skatepunk',
     category: '6. Street, Riot & DIY Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, readable stickers, brand logos, skateboard-only still life, sterile generator render, underpass corridor, skate trick poster, weapon pose, photoreal dust, photoreal haze, dense cable nest, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, riot-photo realism, random crowd chaos, brand-logo sticker collage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'a mandatory skateboard, ramp, or airborne trick, sportswear advertising polish, motion marks obscuring the subject, unrequested skulls, tags, lettering, or graffiti walls replacing deck and grip cues',
     style: {
       aesthetic:
-        'DIY Generator Motion operates as a portable punk-spectrum router: combine DIY Generator Motion identity cues through generator rig blocks; ramp curves; cable trails; battery LEDs; blank sticker clusters; Skatepunk DIY-power poster language built from chunky generator rigs with DIY public-punk grammar with pasted graphics, generator motion, barricade voltage, scrapbike cargo, rave care, patch pressure, and mutual-aid pragmatism, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'Give the image skate-deck graphic energy through grip-tape grain, layered plywood edges, hand-cut board-art shapes, and compressed diagonals applied to existing compatible forms, not to a new board or setting.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through paste-layer edges, cable-tied equipment, plywood planes, sticker stacks, patch geometry, generator vibration, cargo straps, and care-station clarity; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve the requested subject, action, pose, lighting, and framing; translate compatible existing clothing or object surfaces into deck-art shapes, grip-tape blocks, or curved graphic lines. Do not add a skatepark, graffiti wall, or skull artwork to communicate the style.',
       color_and_tone:
-        'Map color through photocopy black, paper cream, magenta voltage, plywood brown, laser green, concrete gray, sticker reds, and electric blue accents; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Pair concrete gray and worn wood with punchy board-art colors such as black, cream, red, and electric green; maintain high contrast and allow the requested palette to lead.',
       lighting_and_shadow:
-        "Use portable floodlight, screen glow, welding spark, sodium haze, laser slices, generator glare, and sticker-gloss highlights; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Preserve the requested light source, direction, and time of day; use crisp local shadows to emphasize existing curves and edges without implying a different setting or action.',
       texture_and_material:
-        'Render torn paper, tape, plywood, cable ties, vinyl stickers, patched fabric, bike metal, plastic crates, and concrete scuffs; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Distinguish gritty grip surface, layered plywood, worn rubber, and printed or painted deck graphics; keep scuffs localized to contact edges.',
       camera_and_composition:
-        'Compose through layered poster rhythm, improvised equipment paths, tight public pressure, cargo diagonals, and bold subject hierarchy without crowd dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Preserve the requested camera and framing; use compressed diagonals within the existing composition rather than changing perspective or implying a new action.',
       atmosphere_and_mood:
-        'Carry mood through scrappy defiance, communal protection, loud improvisation, nocturnal urgency, practical care, and hand-built resistance; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        "Feel independent, kinetic, and homemade, with the source scene's mood and intensity preserved.",
       rendering_and_quality:
-        'Finish with graphic DIY-punk illustration with readable paste layers, controlled grit, large value blocks, and no generic riot-photo realism; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'generator rig blocks; ramp curves; cable trails; battery LEDs; blank sticker clusters; Skatepunk DIY-power poster language built from chunky generator rigs',
-      creative_brief:
-        'Use DIY Generator Motion after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies generator rig blocks, ramp curves, cable trails, battery LEDs, blank sticker clusters, Skatepunk DIY-power poster language built from chunky generator rigs, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Use bold contour, simplified motion accents, and readable board-art shapes; prevent surface abrasion and speed lines from dissolving anatomy or silhouette.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-102'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-043',
-    name: 'Synth Barricade Voltage',
+    id: 'SP15-103',
+    name: 'Synthpunk',
     category: '6. Street, Riot & DIY Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, readable band posters, stage signage, logo stickers, nightclub glamour, empty instrument still life, weapon barricade, police riot scene, long basement corridor, dense cable nest, photoreal smoke, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, riot-photo realism, random crowd chaos, brand-logo sticker collage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'a required synthesizer or musician, cassette-deck windows and reel motifs as the dominant language, dense controls or cable tangles that obscure the subject, control-panel walls or synth-studio architecture replacing the requested setting',
     style: {
       aesthetic:
-        'Synth Barricade Voltage operates as a portable punk-spectrum router: combine Synth Barricade Voltage identity cues through synth rigs; patched amps; plywood barricade shapes; magenta-blue slabs; thick cable trails; Riot synthpunk voltage poster language built from synth-rig blocks with DIY public-punk grammar with pasted graphics, generator motion, barricade voltage, scrapbike cargo, rave care, patch pressure, and mutual-aid pragmatism, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'Make modular synthesis the graphic system through socket-like circles, grouped control ticks, routed cable-like lines, compact waveforms, and sharp divisions drawn on compatible existing forms; do not build new equipment or a control-room environment.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through paste-layer edges, cable-tied equipment, plywood planes, sticker stacks, patch geometry, generator vibration, cargo straps, and care-station clarity; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve the requested subject, action, setting, and framing; apply modular grids, cable paths, and signal-color accents as localized marks on compatible existing surfaces. Do not replace a room with control panels or add a synthesizer, instrument, or studio unless requested.',
       color_and_tone:
-        'Map color through photocopy black, paper cream, magenta voltage, plywood brown, laser green, concrete gray, sticker reds, and electric blue accents; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Use graphite, cream, cobalt, magenta, and cyan with small LED-like points; keep broad dark and light masses distinct and use saturated color to mark active signal paths.',
       lighting_and_shadow:
-        "Use portable floodlight, screen glow, welding spark, sodium haze, laser slices, generator glare, and sticker-gloss highlights; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Preserve the requested light source, direction, and intensity; keep any indicator-like glow small and localized rather than turning the room into a lit control station or flooding it with neon.',
       texture_and_material:
-        'Render torn paper, tape, plywood, cable ties, vinyl stickers, patched fabric, bike metal, plastic crates, and concrete scuffs; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        "Use panel-like divisions, cable-like strokes, and control marks only where existing surfaces support them; preserve the scene's materials and keep wear at edges rather than applying a uniform filter.",
       camera_and_composition:
-        'Compose through layered poster rhythm, improvised equipment paths, tight public pressure, cargo diagonals, and bold subject hierarchy without crowd dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Route short repeated signal marks along existing forms while preserving the requested composition; keep the focal subject separate from dense control detail.',
       atmosphere_and_mood:
-        'Carry mood through scrappy defiance, communal protection, loud improvisation, nocturnal urgency, practical care, and hand-built resistance; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Suggest experimental electronic energy and handmade technical confidence, without forcing a performance venue or a specific era.',
       rendering_and_quality:
-        'Finish with graphic DIY-punk illustration with readable paste layers, controlled grit, large value blocks, and no generic riot-photo realism; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'synth rigs; patched amps; plywood barricade shapes; magenta-blue slabs; thick cable trails; Riot synthpunk voltage poster language built from synth-rig blocks',
-      creative_brief:
-        'Use Synth Barricade Voltage after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies synth rigs, patched amps, plywood barricade shapes, magenta-blue slabs, thick cable trails, Riot synthpunk voltage poster language built from synth-rig blocks, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Keep panel geometry, cable paths, and waveforms crisp and simplified; maintain enough negative space for the main subject to read at thumbnail scale.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-103'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-044',
-    name: 'Scrapbike Cargo Rigging',
+    id: 'SP15-104',
+    name: 'Streetpunk',
     category: '6. Street, Riot & DIY Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, readable maps, text labels, brand logos, motorcycle pinup, weapon biker gang, random junk pile, urban passage corridor, photoreal welding sparks, dense chain clutter, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, riot-photo realism, random crowd chaos, brand-logo sticker collage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'a required protest, alley, or poster wall, unrequested readable slogans or logos, flattening the whole image into pasted paper',
     style: {
       aesthetic:
-        'Scrapbike Cargo Rigging operates as a portable punk-spectrum router: combine Scrapbike Cargo Rigging identity cues through scrapbike silhouettes; cargo racks; route-map color planes; chain arcs; welding glow; patched helmet forms with DIY public-punk grammar with pasted graphics, generator motion, barricade voltage, scrapbike cargo, rave care, patch pressure, and mutual-aid pragmatism, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'Build a streetpunk identity from defiant clothing and equipment: tartan panels, patched leather, studs or spikes, improvised fastenings, and hand-marked street graphics form a tough, visibly assembled silhouette.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through paste-layer edges, cable-tied equipment, plywood planes, sticker stacks, patch geometry, generator vibration, cargo straps, and care-station clarity; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve the requested subject and action; style compatible unspecified clothing, gear, and surfaces with DIY fastenings, tartan, patched leather, or a few stickers and stencil marks without adding a protest scene.',
       color_and_tone:
-        'Map color through photocopy black, paper cream, magenta voltage, plywood brown, laser green, concrete gray, sticker reds, and electric blue accents; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Use black, worn leather brown, tartan red or green, and sharp cyan or amber street accents; let clothing and equipment provide the main graphic blocks, with street marks secondary.',
       lighting_and_shadow:
-        "Use portable floodlight, screen glow, welding spark, sodium haze, laser slices, generator glare, and sticker-gloss highlights; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Use direct streetlight or daylight to reveal garment layers, fastenings, leather edges, and a few graphic marks; keep form dimensional rather than flattening it into a paper collage.',
       texture_and_material:
-        'Render torn paper, tape, plywood, cable ties, vinyl stickers, patched fabric, bike metal, plastic crates, and concrete scuffs; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Separate patched leather, tartan cloth, metal studs, stitched joins, and occasional painted or adhesive marks; concentrate wear at seams and contact points.',
       camera_and_composition:
-        'Compose through layered poster rhythm, improvised equipment paths, tight public pressure, cargo diagonals, and bold subject hierarchy without crowd dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        "Keep the subject's silhouette and clothing/equipment shapes prominent; use a few angular street-graphic accents for rhythm while preserving depth and requested camera.",
       atmosphere_and_mood:
-        'Carry mood through scrappy defiance, communal protection, loud improvisation, nocturnal urgency, practical care, and hand-built resistance; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Feel immediate, public, and self-organized, with a defiant or convivial tone determined by the requested content.',
       rendering_and_quality:
-        'Finish with graphic DIY-punk illustration with readable paste layers, controlled grit, large value blocks, and no generic riot-photo realism; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'scrapbike silhouettes; cargo racks; route-map color planes; chain arcs; welding glow; patched helmet forms',
-      creative_brief:
-        'Use Scrapbike Cargo Rigging after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies scrapbike silhouettes, cargo racks, route-map color planes, chain arcs, welding glow, patched helmet forms, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Make studs, fastenings, tartan patches, and leather silhouettes legible at thumbnail scale; keep street graphics bold but secondary and avoid legible slogans or branded tags.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-104'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-045',
-    name: 'Sticker Signal Layers',
+    id: 'SP15-105',
+    name: 'Ravepunk',
     category: '6. Street, Riot & DIY Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, lightning bolt emblem, warning icon, logo-like sticker, readable stickers, letters, tags, brand logos, surveillance camera hero, phone prop focus, screen UI, corridor booth, dense cable knots, photoreal sticker gloss, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, riot-photo realism, random crowd chaos, brand-logo sticker collage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'a compulsory nightclub, crowd, or rescue scenario, uniform neon glow over every surface, light trails that erase the focal form, global color or lighting changes that replace the requested illumination',
     style: {
       aesthetic:
-        'Sticker Signal Layers operates as a portable punk-spectrum router: combine Sticker Signal Layers identity cues through sticker layers; switch panels; cyan glow blocks; plywood geometry; sparse cable arcs; public-style-media signal poster language built from blank sticker-color layers with DIY public-punk grammar with pasted graphics, generator motion, barricade voltage, scrapbike cargo, rave care, patch pressure, and mutual-aid pragmatism, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'Express rave culture through embodied rhythm, narrow UV accents, reflective tape, and fluid laser-like color bands that trace and reconnect around existing forms; treat these as controlled graphic accents rather than a new venue or lighting rig.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through paste-layer edges, cable-tied equipment, plywood planes, sticker stacks, patch geometry, generator vibration, cargo straps, and care-station clarity; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve the requested subject, action, setting, and framing; carry movement through existing clothing seams, reflective marks, and a few bounded light accents. Do not add club scenery or props unless asked.',
       color_and_tone:
-        'Map color through photocopy black, paper cream, magenta voltage, plywood brown, laser green, concrete gray, sticker reds, and electric blue accents; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Use magenta, electric blue, or acid green as restrained accents against the requested palette and tonal range; let one hue lead and do not recolor every surface.',
       lighting_and_shadow:
-        "Use portable floodlight, screen glow, welding spark, sodium haze, laser slices, generator glare, and sticker-gloss highlights; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Preserve the requested key light, exposure, direction, and time of day; confine colored glow to a few sharp reflective edges instead of using a whole-scene strobe or neon wash.',
       texture_and_material:
-        'Render torn paper, tape, plywood, cable ties, vinyl stickers, patched fabric, bike metal, plastic crates, and concrete scuffs; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Contrast mesh, vinyl, reflective foil, hand-applied body color, and practical light hardware; avoid turning all surfaces into glossy chrome.',
       camera_and_composition:
-        'Compose through layered poster rhythm, improvised equipment paths, tight public pressure, cargo diagonals, and bold subject hierarchy without crowd dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        "Use curved light paths and overlapping rhythm bands to suggest collective motion while preserving a readable focal silhouette and the user's requested framing.",
       atmosphere_and_mood:
-        'Carry mood through scrappy defiance, communal protection, loud improvisation, nocturnal urgency, practical care, and hand-built resistance; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Carry communal release, intensity, and mutual care where the prompt supports it; do not equate rave culture with emergency or rescue.',
       rendering_and_quality:
-        'Finish with graphic DIY-punk illustration with readable paste layers, controlled grit, large value blocks, and no generic riot-photo realism; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'sticker layers; switch panels; cyan glow blocks; plywood geometry; sparse cable arcs; public-style-media signal poster language built from blank sticker-color layers',
-      creative_brief:
-        'Use Sticker Signal Layers after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies sticker layers, switch panels, cyan glow blocks, plywood geometry, sparse cable arcs, public-style-media signal poster language built from blank sticker-color layers, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Keep glow bounded, bodies and objects legible, and colored motion shapes distinct; use strong light-dark rests so the palette reads at small scale.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-105'],
+      visualEvaluation: 'pending',
     },
   },
   {
-    id: 'SP15-046',
-    name: 'Rave Care Systems',
+    id: 'SP15-106',
+    name: 'Crustpunk',
     category: '6. Street, Riot & DIY Punks',
     negativePrompt:
-      'photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art, cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, skull patch, cross emblem, medical logo, jacket symbol, readable marks, medical emergency gore, syringe hero, fetish clinic pose, nightclub glamour crowd, drug-use scene, empty laser tunnel, readable exit sign, readable text, warehouse corridor, photoreal smoke, photoreal laser haze, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, riot-photo realism, random crowd chaos, brand-logo sticker collage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, prompt-literal card reuse, generic cyberpunk wallpaper',
+      'blanket grime or decay on every surface, a required jacket, band, or street gathering, tiny stitches and pins replacing readable form, unrequested slogans, logos, brand names, band names, or political symbols',
     style: {
       aesthetic:
-        'Rave Care Systems operates as a portable punk-spectrum router: combine Rave Care Systems identity cues through hydration rigs; care lamps; laser bands; foil blanket shapes; vinyl planes; Ravepunk mutual-care poster language built from hydration-rig blocks with DIY public-punk grammar with pasted graphics, generator motion, barricade voltage, scrapbike cargo, rave care, patch pressure, and mutual-aid pragmatism, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
+        'Build a lived-in DIY look from patched denim, canvas and leather, hand-sewn repairs, safety-pin joins, and plain fabric patches with uneven stitching; keep patches free of imposed names, logos, slogans, or political symbols.',
       subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through paste-layer edges, cable-tied equipment, plywood planes, sticker stacks, patch geometry, generator vibration, cargo straps, and care-station clarity; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
+        'Preserve the requested subject, action, identity, and setting; apply repair language only to compatible existing garments, fabric, or equipment. Do not assign a band, brand, political identity, or new costume to the subject.',
       color_and_tone:
-        'Map color through photocopy black, paper cream, magenta voltage, plywood brown, laser green, concrete gray, sticker reds, and electric blue accents; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
+        'Use charcoal, worn denim blue, canvas tan, faded red, and restrained ochre; keep patches and stitched repair areas distinct from the base garment.',
       lighting_and_shadow:
-        "Use portable floodlight, screen glow, welding spark, sodium haze, laser slices, generator glare, and sticker-gloss highlights; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
+        'Use honest, directional light with broad shadows that reveal folds, patch overlaps, and fastenings; keep faces and focal objects readable.',
       texture_and_material:
-        'Render torn paper, tape, plywood, cable ties, vinyl stickers, patched fabric, bike metal, plastic crates, and concrete scuffs; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
+        'Show frayed hems, plain patched panels, uneven stitches, and rubbed leather only at local wear points; do not add symbols or use all-over dirt as a substitute for construction.',
       camera_and_composition:
-        'Compose through layered poster rhythm, improvised equipment paths, tight public pressure, cargo diagonals, and bold subject hierarchy without crowd dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
+        'Let garment construction and hand-marked patches support the requested focal subject; favor grounded, slightly rough contours without forcing a boot-level portrait.',
       atmosphere_and_mood:
-        'Carry mood through scrappy defiance, communal protection, loud improvisation, nocturnal urgency, practical care, and hand-built resistance; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
+        'Feel self-sufficient, communal, and resistant to polish, with emotional register set by the prompt rather than by automatic bleakness.',
       rendering_and_quality:
-        'Finish with graphic DIY-punk illustration with readable paste layers, controlled grit, large value blocks, and no generic riot-photo realism; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'hydration rigs; care lamps; laser bands; foil blanket shapes; vinyl planes; Ravepunk mutual-care poster language built from hydration-rig blocks',
-      creative_brief:
-        'Use Rave Care Systems after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies hydration rigs, care lamps, laser bands, foil blanket shapes, vinyl planes, Ravepunk mutual-care poster language built from hydration-rig blocks, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+        'Keep seams and patch silhouettes bold enough to read small; use controlled abrasion and strong underlying drawing.',
     },
-  },
-  {
-    id: 'SP15-047',
-    name: 'Patch Jacket Pressure',
-    category: '6. Street, Riot & DIY Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, riot-photo realism, random crowd chaos, brand-logo sticker collage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Patch Jacket Pressure operates as a portable punk-spectrum router: combine Patch Jacket Pressure identity cues through patch jackets; boot silhouettes; hand signs; paper-map planes; chipped table texture; Crustpunk character-pressure poster language built from patched denim with DIY public-punk grammar with pasted graphics, generator motion, barricade voltage, scrapbike cargo, rave care, patch pressure, and mutual-aid pragmatism, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through paste-layer edges, cable-tied equipment, plywood planes, sticker stacks, patch geometry, generator vibration, cargo straps, and care-station clarity; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through photocopy black, paper cream, magenta voltage, plywood brown, laser green, concrete gray, sticker reds, and electric blue accents; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use portable floodlight, screen glow, welding spark, sodium haze, laser slices, generator glare, and sticker-gloss highlights; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render torn paper, tape, plywood, cable ties, vinyl stickers, patched fabric, bike metal, plastic crates, and concrete scuffs; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through layered poster rhythm, improvised equipment paths, tight public pressure, cargo diagonals, and bold subject hierarchy without crowd dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through scrappy defiance, communal protection, loud improvisation, nocturnal urgency, practical care, and hand-built resistance; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with graphic DIY-punk illustration with readable paste layers, controlled grit, large value blocks, and no generic riot-photo realism; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'patch jackets; boot silhouettes; hand signs; paper-map planes; chipped table texture; Crustpunk character-pressure poster language built from patched denim',
-      creative_brief:
-        'Use Patch Jacket Pressure after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies patch jackets, boot silhouettes, hand signs, paper-map planes, chipped table texture, Crustpunk character-pressure poster language built from patched denim, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
-    },
-  },
-  {
-    id: 'SP15-048',
-    name: 'Mutual Aid Food-Tech Commons',
-    category: '6. Street, Riot & DIY Punks',
-    negativePrompt:
-      'photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, flag, banner, protest placard, fist symbol, spoon symbol, emblem, badge, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration, generic Western RPG card art, repeated-props, riot-photo realism, random crowd chaos, brand-logo sticker collage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper',
-    style: {
-      aesthetic:
-        'Mutual Aid Food-Tech Commons operates as a portable punk-spectrum router: combine Mutual Aid Food-Tech Commons identity cues through hacked appliance silhouettes; patched materials; steam glow; cardboard blocks; volunteer rhythm; mutual-aid logistics with DIY public-punk grammar with pasted graphics, generator motion, barricade voltage, scrapbike cargo, rave care, patch pressure, and mutual-aid pragmatism, so the preset supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.',
-      subject_treatment:
-        "Preserve prompt X's subject, action, scale, and setting while translating forms through paste-layer edges, cable-tied equipment, plywood planes, sticker stacks, patch geometry, generator vibration, cargo straps, and care-station clarity; motifs can become contour, surface, costume, equipment, atmosphere, or infrastructure without replacing the prompt.",
-      color_and_tone:
-        'Map color through photocopy black, paper cream, magenta voltage, plywood brown, laser green, concrete gray, sticker reds, and electric blue accents; keep dominant, support, and accent values readable, avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.',
-      lighting_and_shadow:
-        "Use portable floodlight, screen glow, welding spark, sodium haze, laser slices, generator glare, and sticker-gloss highlights; lighting should reveal the punk system, preserve the user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.",
-      texture_and_material:
-        'Render torn paper, tape, plywood, cable ties, vinyl stickers, patched fabric, bike metal, plastic crates, and concrete scuffs; keep material scale coherent, surface marks motivated, and tactile details strong enough to route style without becoming pasted grunge.',
-      camera_and_composition:
-        'Compose through layered poster rhythm, improvised equipment paths, tight public pressure, cargo diagonals, and bold subject hierarchy without crowd dependency as reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one required card layout.',
-      atmosphere_and_mood:
-        'Carry mood through scrappy defiance, communal protection, loud improvisation, nocturnal urgency, practical care, and hand-built resistance; the tone may become adult, romantic, violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.',
-      rendering_and_quality:
-        'Finish with graphic DIY-punk illustration with readable paste layers, controlled grit, large value blocks, and no generic riot-photo realism; prioritize clean denoise, bold readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.',
-      key_features:
-        'hacked appliance silhouettes; patched materials; steam glow; cardboard blocks; volunteer rhythm; mutual-aid logistics',
-      creative_brief:
-        'Use Mutual Aid Food-Tech Commons after prompt X as a transferable punk-spectrum layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies hacked appliance silhouettes, patched materials, steam glow, cardboard blocks, volunteer rhythm, mutual-aid logistics, color logic, light response, material behavior, composition rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.',
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP15-106'],
+      visualEvaluation: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

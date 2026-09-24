@@ -81,6 +81,7 @@ categories:
       - pack_02/SP02-055.yaml
       - pack_02/SP02-056.yaml
       - pack_02/SP02-057.yaml
+      - pack_02/SP02-129.yaml
   - id: lighting-and-atmosphere
     name: 5. Lighting And Atmosphere
     presetRefs:
@@ -222,6 +223,7 @@ presetRefs:
   - pack_02/SP02-055.yaml
   - pack_02/SP02-056.yaml
   - pack_02/SP02-057.yaml
+  - pack_02/SP02-129.yaml
   - pack_02/SP02-061.yaml
   - pack_02/SP02-062.yaml
   - pack_02/SP02-063.yaml

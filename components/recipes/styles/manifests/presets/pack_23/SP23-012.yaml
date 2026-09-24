@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP23-012
+packId: pack_23
+name: Rubricated Contrast
+category: 2. Print & Engraving
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - print-and-engraving
+  - accent-color-modifier
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Optional color-contrast modifier that sets one explicitly permitted warm accent against existing
+    dark and light values, without changing the underlying drawing or composition.
+  subject_treatment: >-
+    Preserve all requested forms, details, count and action. Apply the accent only to an existing
+    detail; do not introduce letters, initials or new symbols.
+  color_and_tone: >-
+    Use one warm color supplied or explicitly permitted for the layer only when it fits the requested
+    palette. If colors are locked or incompatible, preserve them without substitution.
+  lighting_and_shadow: >-
+    Preserve the requested lighting and shadow pattern. A color accent does not create a new light
+    source or change exposure.
+  texture_and_material: >-
+    Keep the existing surface and mark textures. Apply color as a restrained overlay on an existing
+    detail rather than changing the depicted material.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and relationships exactly. Keep one focal accent
+    hierarchy without moving or adding elements.
+  atmosphere_and_mood: >-
+    Preserve the requested mood and context. Color contrast alone does not imply a manuscript scene,
+    historical setting or dramatic event.
+  rendering_and_quality: >-
+    Keep the warm accent small and attached to pre-existing detail, with dark and light values still
+    legible. Do not use the accent to create text, decoration or a new focal object.
+avoidRules:
+  - forced accent when the palette is locked or incompatible
+  - forced red or blood-like color
+  - invented lettering or initials
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-012.webp
+attributes:
+  negativePrompt: >-
+    forced accent when the palette is locked or incompatible, forced red or blood-like color,
+    invented lettering or initials
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: modifier
+    defaultFields:
+      - aesthetic
+      - color_and_tone
+      - rendering_and_quality
+    requires: accent
+    medium: print-color-contrast
+    constraints:
+      - field: color_and_tone
+        group: accent
+        value: one-authorized-warm-accent
+    avoidRules:
+      - text: forced accent when the palette is locked or incompatible
+        field: color_and_tone
+      - text: forced red or blood-like color
+        field: color_and_tone
+      - text: invented lettering or initials
+        field: global
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: PR-06
+    sourceTitle: Rubricated Contrast
+    historicalScope: 'Referencia de contraste de manuscrito / libro antiguo'
+    referenceIds:
+      - S02
+      - S06
+    evidenceStatus: textual-research-only
+  ui:
+    kind: modifier
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: print-and-engraving
+  categoryName: 2. Print & Engraving
+  tags:
+    - curation-v2
+    - print-and-engraving
+    - accent-color-modifier
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

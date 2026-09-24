@@ -13,73 +13,44 @@ tags:
   - caricature-and-cartoon-styles
 visualDna:
   aesthetic: >-
-    Kindergarten Family Portrait acts as a transferable cinematic-media router: start from
-    Five-year-old drawing logic, stick-symbol construction, giant corner-symbol scale,
-    square-triangle geometry, lollipop-circle marks, ground stripe and sky stripe, pure
-    childhood-art vocabulary, Corner symbol with rays, stick-symbol forms, square-triangle geometry,
-    lollipop marks, ground-line-sky-stripe and caricature and cartoon system built from exaggeration
-    rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and
-    expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed
-    demo image.
+    Use this drawing language: Naive picture-making with blocky symbols, simple geometry,
+    disproportionate importance-based scale, wavering crayon, and a flattened page with optional
+    horizon bands. Apply it to the supplied content without requiring a particular cast, place,
+    or story.
   subject_treatment: >-
-    Transform any prompt subject through Heavy crayon pressure, uncertain wobbly circles,
-    coloring-outside-the-lines chaos, multiple-passes-over-same-spot, fat-finger grip thickness;
-    preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper
-    crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the
-    requested identity, silhouette, action, object function, or setting legible.
+    Apply heavy crayon pressure, wobbly circles, repeated fill, and uneven coloring to the
+    supplied subject while preserving its identity, silhouette, requested action, actual
+    material, and function. Change the drawn treatment, not the underlying content.
   color_and_tone: >-
-    Build color with Sun-yellow, sky-blue stripe, grass-green stripe, skin-peach crayon, dress-pink
-    triangle, house-brown square, each color used straight from box; use color through loud
-    primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic
-    newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent
-    control, and process-specific limits rather than generic color wash.
+    Use primary crayon colors, sun yellow, sky blue, grass green, peach, soft pink, and warm
+    brown as style colors while honoring any explicit color requirements in the request.
   lighting_and_shadow: >-
-    Handle light through No lighting logic whatsoever, sun drawn in corner regardless of shadow,
-    flat-fill coloring, equal-brightness everything; shape light minimally through flat cartoon
-    value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the
-    style requires it, so exposure and shadow structure support the media process without
-    overwriting the requested content.
+    Use flat color with even brightness and no modeled lighting as a visual treatment, while
+    respecting any lighting instructions in the request.
   texture_and_material: >-
-    Render Construction-paper tooth, crayon-wax buildup clumps, too-hard-pressing paper
-    indentations, mixed-brand crayon texture clash; surface detail should reveal crayon, marker
-    edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture
-    without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler
-    texture.
+    Render construction-paper tooth, crayon-wax buildup, paper indentations, and uneven color
+    fill as drawn or printed surface marks over the existing material; do not change the
+    subject's actual substance or function.
   camera_and_composition: >-
-    Structure the image through Ground-line at page bottom, sky-stripe at page top, scale hierarchy
-    by importance, oversized simple symbols; compose through readable gag timing, grotesque
-    close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure
-    without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy
-    doing the style work.
+    Use flat page space and importance-based scale; add ground or sky bands only when the
+    requested scene already calls for them.
   atmosphere_and_mood: >-
-    Keep the mood Pure innocence, unconditional love, proud-artist joy, childhood-wonder,
-    mom-will-love-this confidence; derive mood from adult absurdity, nervous comedy, ugly-cute
-    tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the
-    media style alter interpretation without demanding a specific story, location, or actor.
+    Proud, naive, and warmly expressive; let scale and color carry feeling without prescribing a
+    relationship.
   rendering_and_quality: >-
-    Finish with Kindergarten art-class aesthetic, refrigerator-gallery masterpiece, pure-joy
-    creation, zero-technique-maximum-soul; finish with clear cartoon grammar, bold silhouettes,
-    controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or
-    generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to
-    make the style recognizable.
+    Finish with simple crayon geometry, uneven pressure, and flat color; avoid cleanup that
+    removes the naive mark.
   key_features: >-
-    Five-year-old drawing logic, stick-symbol construction, giant corner-symbol scale,
-    square-triangle geometry, lollipop-circle marks, ground stripe and sky stripe, pure
-    childhood-art vocabulary; Corner symbol with rays, stick-symbol forms, square-triangle geometry,
-    lollipop marks, ground-line-sky-stripe; Sun-yellow, sky-blue stripe, grass-green stripe,
-    skin-peach crayon, dress-pink triangle, house-brown square, each color used straight from box;
-    Construction-paper tooth, crayon-wax buildup clumps, too-hard-pressing paper indentations,
-    mixed-brand crayon texture clash; Ground-line at page bottom, sky-stripe at page top, scale
-    hierarchy by importance, oversized simple symbols
+    blocky symbols; uneven geometry; importance-based scale; wavering crayon; flattened page
+    space
   creative_brief: >-
-    Apply Kindergarten Family Portrait as a cinematic-media preset over prompt X: preserve the
-    user's requested subject, then route lens behavior, palette, light, signal or film texture,
-    composition, mood, and final media craft through Five-year-old drawing logic, stick-symbol
-    construction, giant corner-symbol scale, square-triangle geometry, lollipop-circle marks, ground
-    stripe and sky stripe, pure childhood-art vocabulary, Corner symbol with rays, stick-symbol
-    forms, square-triangle geometry, lollipop marks, ground-line-sky-stripe, Construction-paper
-    tooth, crayon-wax buildup clumps, too-hard-pressing paper indentations, mixed-brand crayon
-    texture clash without requiring the card image's original subject.
+    Render the supplied content with heavy crayon pressure, wobbly circles, repeated fill, and
+    uneven coloring. Use primary crayon colors, sun yellow, sky blue, grass green, peach, soft
+    pink, and warm brown as style colors while honoring any explicit color instructions. Apply
+    construction-paper tooth, crayon-wax buildup, paper indentations, and uneven color fill as
+    drawn or printed marks over the existing material, without changing what the subject is made
+    of or how it functions. Preserve the requested subject, action, and setting; follow the
+    supplied composition and add no unrequested cast, location, lettering, or gag.
 avoidRules:
   - realistic
   - proportional

@@ -1,0 +1,92 @@
+schemaVersion: 1
+id: SP15-105
+packId: pack_15
+name: Ravepunk
+category: 6. Street, Riot & DIY Punks
+version: 2
+supportedTasks: &id002
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags: &id001
+  - curation-v2
+  - identity-reviewed
+  - visual-evaluation-pending
+  - street-riot-and-diy-punks
+visualDna:
+  aesthetic:
+    Express rave culture through embodied rhythm, narrow UV accents, reflective tape, and fluid
+    laser-like color bands that trace and reconnect around existing forms; treat these as controlled
+    graphic accents rather than a new venue or lighting rig.
+  subject_treatment:
+    Preserve the requested subject, action, setting, and framing; carry movement through existing clothing
+    seams, reflective marks, and a few bounded light accents. Do not add club scenery or props unless asked.
+  color_and_tone:
+    Use magenta, electric blue, or acid green as restrained accents against the requested palette and
+    tonal range; let one hue lead and do not recolor every surface.
+  lighting_and_shadow:
+    Preserve the requested key light, exposure, direction, and time of day; confine colored glow to a few
+    sharp reflective edges instead of using a whole-scene strobe or neon wash.
+  texture_and_material:
+    Contrast mesh, vinyl, reflective foil, hand-applied body color, and practical light
+    hardware; avoid turning all surfaces into glossy chrome.
+  camera_and_composition:
+    Use curved light paths and overlapping rhythm bands to suggest collective motion
+    while preserving a readable focal silhouette and the user's requested framing.
+  atmosphere_and_mood:
+    Carry communal release, intensity, and mutual care where the prompt supports it; do
+    not equate rave culture with emergency or rescue.
+  rendering_and_quality:
+    Keep glow bounded, bodies and objects legible, and colored motion shapes distinct;
+    use strong light-dark rests so the palette reads at small scale.
+avoidRules:
+  - a compulsory nightclub, crowd, or rescue scenario
+  - uniform neon glow over every surface
+  - light trails that erase the focal form
+  - global color or lighting changes that replace the requested illumination
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-105.webp
+attributes:
+  negativePrompt:
+    a compulsory nightclub, crowd, or rescue scenario, uniform neon glow over every surface,
+    light trails that erase the focal form, global color or lighting changes that replace the
+    requested illumination
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: a compulsory nightclub, crowd, or rescue scenario
+        field: rendering_and_quality
+      - text: uniform neon glow over every surface
+        field: rendering_and_quality
+      - text: light trails that erase the focal form
+        field: rendering_and_quality
+      - text: global color or lighting changes that replace the requested illumination
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-105
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: street-riot-and-diy-punks
+  categoryName: 6. Street, Riot & DIY Punks
+  tags: *id001
+  supportedTasks: *id002
+  hasDefaultImage: true

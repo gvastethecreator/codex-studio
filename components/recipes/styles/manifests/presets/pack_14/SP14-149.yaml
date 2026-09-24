@@ -1,0 +1,109 @@
+schemaVersion: 1
+id: SP14-149
+packId: pack_14
+name: Maya Mythic Noir
+version: 1
+supportedTasks: &id002
+  - image_generate
+  - image_edit
+  - style_preset_card
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-149.webp
+attributes:
+  negativePrompt: >-
+    Do not mix Maya imagery indiscriminately with Mexica, Inca or generic tribal motifs. Do not force a pyramid,
+    feather crown, sacrifice or deity into unrelated requests. Avoid fabricated readable glyphs, all-over jade,
+    tropical scenery as the sole cultural identifier, curling Art Nouveau volutes, vine scrolls, and repeated leaf
+    ornaments; keep the folded-husk and parallel-line cue localized.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: Do not mix Maya imagery indiscriminately with Mexica, Inca or generic tribal motifs.
+        field: rendering_and_quality
+      - text: Do not force a pyramid, feather crown, sacrifice or deity into unrelated requests.
+        field: rendering_and_quality
+      - text:
+          Avoid fabricated readable glyphs, all-over jade and tropical scenery used as the sole cultural
+          identifier.
+        field: rendering_and_quality
+      - text:
+          Avoid curling Art Nouveau volutes, vine scrolls and repeated leaf ornaments; keep the folded-husk and
+          parallel-line cue localized.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+    derivedFrom:
+      - SP14-030
+      - SP14-031
+category: Maya Mythology
+tags: &id001
+  - curation-v2
+  - identity-reviewed
+  - visual-evaluation-pending
+  - maya-mythology
+visualDna:
+  aesthetic:
+    Maya-inspired mythic illustration uses a folded-husk plane beside fine parallel incised lines as a localized
+    construction cue. One documented Maya maize-deity ceramic pairs a folded-down corn husk with leaf forms marked
+    by parallel incisions; use that reference selectively, not as a universal Maya motif. Adapt the fold and lines
+    to one existing edge or joint, with a small jade-like inset only if the design supports it; avoid generic vines,
+    curling volutes and Art Nouveau ornament.
+  subject_treatment:
+    Preserve who or what the user requested and the action. Shape unspecified garments, fittings,
+    handles or architectural transitions with one visible folded-husk plane and a short set of parallel drawn or
+    incised lines on an existing edge, joint or transition. A single carved or inset detail may support it. Do not
+    add a plant or maize deity, or change a person's ethnicity to signal the style.
+  color_and_tone:
+    Balance deep green and blue-green accents with warm earthen reds, ceramic cream and dark
+    brown-black. Keep the central subject separated by value and preserve named material colors;
+    a small green accent may mark one focal detail rather than saturating or recoloring the entire image.
+  lighting_and_shadow:
+    Preserve the requested direction and time of light. Use soft shaped light and clear
+    cast-shadow groups to reveal rounded forms; a small jade-like reflection may punctuate the focal detail without
+    adding an emitter or forcing a cave setting.
+  texture_and_material:
+    Distinguish painted ceramic smoothness, carved planes, green insets and woven surfaces. Use one folded-husk
+    plane beside a short set of parallel incised lines as a purposeful construction cue on a related existing
+    form; keep green insets localized and broad areas quiet. Do not turn the cue into a repeated leaf pattern,
+    vine scroll or archaeological object photograph.
+  camera_and_composition:
+    Retain the requested camera and layout. Let the localized fold and parallel lines guide the eye toward the
+    main gesture, with clear empty intervals. Avoid decorative curves that become volutes, mandatory pyramids,
+    symmetrical deity portraits or ornamental card frames.
+  atmosphere_and_mood:
+    Animate the image with the tension between concealment and emergence, renewal and mystery. Let the folded
+    form and requested light reveal the subject; a jungle, ritual or sacrifice is not required.
+  rendering_and_quality:
+    Use expressive drawn edges, controlled opaque paint, and selective relief lines. Resolve gesture and the
+    folded-husk and parallel-line cue before surface grain. Keep broad illustrated value shapes
+    visible instead of rendering the object like a carved product or repeating the motif over every plane.
+avoidRules:
+  - Do not mix Maya imagery indiscriminately with Mexica, Inca or generic tribal motifs.
+  - Do not force a pyramid, feather crown, sacrifice or deity into unrelated requests.
+  - Avoid fabricated readable glyphs, all-over jade and tropical scenery used as the sole cultural identifier.
+  - Avoid curling Art Nouveau volutes, vine scrolls and repeated leaf ornaments; keep the folded-husk and parallel-line
+    cue localized.
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: maya-mythology
+  categoryName: Maya Mythology
+  tags: *id001
+  supportedTasks: *id002
+  hasDefaultImage: true

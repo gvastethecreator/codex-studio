@@ -13,73 +13,34 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Geometric Ignition Urgency acts as a transferable anime-battle/worlds router: Geometric Ignition
-    Urgency, geometric ignition urgency style grammar with flat flame vectors, angular
-    rescue-machine fragments, pastel-neon heat, and optimistic motion geometry; combine it with
-    mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere,
-    cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words
-    may guide style, but they must not require canon cast, title-scene replication, screenshots,
-    logos, or one fixed card concept.
+    Bright vector illustration using flat angular shapes, crisp contour cuts, and
+    forward-leaning color wedges; its heat and optimism are graphic cues, not literal flames.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply
-    Geometric Ignition Urgency, geometric ignition urgency style grammar with flat flame vectors,
-    angular rescue-machine fragments, pastel-neon heat, and optimistic motion geometry as portable
-    contour, motion grammar, surface language, and emotional pressure without requiring canon
-    elements or a default action setup.
+    Keep the requested form and identity intact. Simplify its existing edges into clean angular
+    planes and lively directional strokes; add no rescue gear or vehicle parts.
   color_and_tone: >-
-    Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile
-    white, coral glow, and disciplined emissive accents; let Geometric Ignition Urgency, geometric
-    ignition urgency style grammar with flat flame vectors, angular rescue-machine fragments,
-    pastel-neon heat, and optimistic motion geometry choose accent intensity, value contrast,
-    emotional temperature, and power-system separation while staying attached to prompt X.
+    Mix warm coral, apricot, and yellow with clean cyan or lavender accents. Keep hues bright
+    but clearly separated.
   lighting_and_shadow: >-
-    Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow,
-    and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Geometric Ignition Urgency, geometric ignition urgency style
-    grammar with flat flame vectors, angular rescue-machine fragments, pastel-neon heat, and
-    optimistic motion geometry without replacing prompt X with a stock anime frame.
+    Use flat, hard-edged cel shadows and simple warm highlights; avoid realistic firelight or an
+    implied flame source.
   texture_and_material: >-
-    Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust,
-    circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Geometric
-    Ignition Urgency, geometric ignition urgency style grammar with flat flame vectors, angular
-    rescue-machine fragments, pastel-neon heat, and optimistic motion geometry controlled, denoised,
-    and coherent across bodies, objects, environments, abstractions, and action.
+    Keep the original material legible beneath smooth color blocks, precise edge lines, and a
+    few dry-brush accents.
   camera_and_composition: >-
-    Frame through scale compression, machinery diagonals, grid overlays without readable UI,
-    service-bay density, orbital symmetry, and high-speed hardware lanes; convert Geometric Ignition
-    Urgency, geometric ignition urgency style grammar with flat flame vectors, angular
-    rescue-machine fragments, pastel-neon heat, and optimistic motion geometry into reusable
-    perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style
-    sample layout.
+    Respect the requested view. Carry momentum with angled marks and offset color planes inside
+    the existing silhouette and crop.
   atmosphere_and_mood: >-
-    Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine
-    grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic,
-    tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping
-    the anime-battle lineage readable.
+    Make the image feel urgent yet buoyant through quick directional strokes, open color, and
+    uncluttered spacing.
   rendering_and_quality: >-
-    Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic
-    3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object
-    structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no
-    fake readable text, no signature, no photoreal or 3D-render drift.
+    Favor vector-clean edges, decisive shadow cuts, limited gradients, and readable shapes at a
+    glance.
   key_features: >-
-    Geometric Ignition Urgency, geometric ignition urgency style grammar with flat flame vectors,
-    angular rescue-machine fragments, pastel-neon heat, and optimistic motion geometry; armored
-    contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and
-    human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed
-    plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers;
-    scale compression, machinery diagonals, grid overlays without readable UI, service-bay density,
-    orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable
-    hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency
+    Flat angular vectors; warm pastel-neon accents; forward motion wedges; crisp cel shadows.
   creative_brief: >-
-    Apply Geometric Ignition Urgency after prompt X as a transferable anime-battle/worlds layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
-    Geometric Ignition Urgency, geometric ignition urgency style grammar with flat flame vectors,
-    angular rescue-machine fragments, pastel-neon heat, and optimistic motion geometry, mecha and
-    cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere,
-    cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls
-    without forcing canon cast, title scene, screenshot, card pose, default monster, default combat
-    prop, or prompt-literal card.
+    Keep the specified subject, action, and setting. Apply angular color planes, warm bright
+    accents, and quick directional linework; add no flames, rescue machines, or gear.
 avoidRules:
   - realistic
   - 3d render
@@ -91,7 +52,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - Gurren-like drill face
   - firefighting disaster scene
@@ -99,7 +59,6 @@ avoidRules:
   - burning people
   - gore
   - weapon
-  - readable text
   - franchise robot
   - plastic 3d robot render
   - cockpit source-frame look
@@ -117,11 +76,10 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, Gurren-like drill face, firefighting disaster scene, real
-    emergency logo, burning people, gore, weapon, readable text, franchise robot, plastic 3d robot
-    render, cockpit source-frame look, readable UI panel, fixed canon character, title scene
-    replication, required source-frame look, cosplay, generic anime filter, prompt-required card,
-    logo, muddy noisy darks
+    artifacts, watermark, signature, Gurren-like drill face, firefighting disaster scene, real
+    emergency logo, burning people, gore, weapon, franchise robot, plastic 3d robot render, cockpit
+    source-frame look, readable UI panel, fixed canon character, title scene replication, required
+    source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

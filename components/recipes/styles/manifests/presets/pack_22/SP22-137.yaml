@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP22-137
+packId: pack_22
+name: Elastic Character Paint
+category: 5. Character & Readable Forms
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - character-and-readable-forms
+  - elastic-pictorial-curves
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Pictorial cartoon combines flowing curve rhythms with broad painted volume, alternating rounded
+    transitions and angular edges to keep forms energetic but controlled.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Emphasize curves within existing forms
+    without inventing parts, changing the gesture or distorting anatomy.
+  color_and_tone: >-
+    Use broad painted shadows and direct contrast while retaining the requested palette and local color
+    relationships.
+  lighting_and_shadow: >-
+    Follow the requested light direction and shadow pattern. Keep painted shadow groups legible without
+    adding a dramatic source or changing the scene's lighting.
+  texture_and_material: >-
+    Let brushwork show across larger surfaces and follow their form. Preserve the represented materials
+    instead of making all surfaces equally painterly or rough.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and element placement. Curve rhythm does not require
+    a new gesture, action or camera angle.
+  atmosphere_and_mood: >-
+    Keep the requested tone. Elastic drawing does not add drama, comedy or a character expression that
+    was not requested.
+  rendering_and_quality: >-
+    Alternate rounded and angular edges deliberately, using visible brush marks to reinforce broad forms.
+    Keep anatomy and construction coherent rather than using accidental deformation as style.
+avoidRules:
+  - unrequested anatomical deformation
+  - changed gesture or added parts
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-137.webp
+attributes:
+  negativePrompt: unrequested anatomical deformation, changed gesture or added parts
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: painting
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: painting
+    avoidRules:
+      - text: unrequested anatomical deformation
+        field: subject_treatment
+      - text: changed gesture or added parts
+        field: subject_treatment
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S037
+    sourceTitle: Elastic Character Paint
+    referenceIds:
+      - S49
+      - S11
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: character-and-readable-forms
+  categoryName: 5. Character & Readable Forms
+  tags:
+    - trading-card-illustration
+    - character-and-readable-forms
+    - elastic-pictorial-curves
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

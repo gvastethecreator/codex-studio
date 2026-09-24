@@ -1,0 +1,96 @@
+schemaVersion: 1
+id: SP22-168
+packId: pack_22
+name: Chunky Pop Shapes
+category: 9. Comic & Cartoon Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - comic-and-cartoon-illustration
+  - chunky-pop-shapes
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Compact, clearly simplified forms use broad curved contours, intense flat color areas and a small
+    number of uncomplicated shadows.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and expression. Simplify shape language without
+    changing who or what the subject is or making it childlike by default.
+  color_and_tone: >-
+    Keep the requested hues and arrange them in confident flat blocks with concise shadow values; do not
+    replace a specified palette with generic bright colors.
+  lighting_and_shadow: >-
+    Follow the stated light direction and use simple, bounded shadow areas that explain the forms without
+    adding new highlights or effects.
+  texture_and_material: >-
+    Use clean matte fills and broad smooth contours; preserve material differences through shape and
+    requested color rather than adding texture or pixelation.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, framing, crop and placement. Simplified masses must stay within the
+    original silhouette and arrangement.
+  atmosphere_and_mood: >-
+    Maintain the requested tone and setting. Bold graphic simplicity does not imply childish expressions
+    or an added character role.
+  rendering_and_quality: >-
+    Prioritize a readable silhouette, thick rounded contour and distinct large color blocks; keep edges
+    clean and avoid low-resolution artifacts.
+avoidRules:
+  - unrequested changes to identity, proportions or expression
+  - pixelation or low-resolution rendering
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-168.webp
+attributes:
+  negativePrompt: unrequested changes to identity, proportions or expression, pixelation or low-resolution rendering
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: drawing
+    avoidRules:
+      - text: unrequested changes to identity, proportions or expression
+        field: subject_treatment
+      - text: pixelation or low-resolution rendering
+        field: rendering_and_quality
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S068
+    sourceTitle: Chunky Pop Cartoon
+    referenceIds:
+      - S49
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: comic-and-cartoon-illustration
+  categoryName: 9. Comic & Cartoon Illustration
+  tags:
+    - trading-card-illustration
+    - comic-and-cartoon-illustration
+    - chunky-pop-shapes
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

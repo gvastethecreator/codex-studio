@@ -51,12 +51,20 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-001.webp',
       import.meta.url,
     ).href,
+    'SP03-001-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-001.webp',
+      import.meta.url,
+    ).href,
     'SP03-002': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-002.webp',
       import.meta.url,
     ).href,
     'SP03-002-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-002.webp',
+      import.meta.url,
+    ).href,
+    'SP03-002-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-002.webp',
       import.meta.url,
     ).href,
     'SP03-003': new URL(
@@ -67,12 +75,20 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-003.webp',
       import.meta.url,
     ).href,
+    'SP03-003-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-003.webp',
+      import.meta.url,
+    ).href,
     'SP03-004': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-004.webp',
       import.meta.url,
     ).href,
     'SP03-004-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-004.webp',
+      import.meta.url,
+    ).href,
+    'SP03-004-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-004.webp',
       import.meta.url,
     ).href,
     'SP03-005': new URL(
@@ -87,6 +103,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-005.webp',
       import.meta.url,
     ).href,
+    'SP03-005-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-005.webp',
+      import.meta.url,
+    ).href,
     'SP03-006': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-006.webp',
       import.meta.url,
@@ -97,6 +117,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-006-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-006.webp',
+      import.meta.url,
+    ).href,
+    'SP03-006-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-006.webp',
       import.meta.url,
     ).href,
     'SP03-007': new URL(
@@ -111,6 +135,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-007.webp',
       import.meta.url,
     ).href,
+    'SP03-007-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-007.webp',
+      import.meta.url,
+    ).href,
     'SP03-008': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-008.webp',
       import.meta.url,
@@ -121,6 +149,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-008-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-008.webp',
+      import.meta.url,
+    ).href,
+    'SP03-008-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-008.webp',
       import.meta.url,
     ).href,
     'SP03-009': new URL(
@@ -135,6 +167,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-009.webp',
       import.meta.url,
     ).href,
+    'SP03-009-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-009.webp',
+      import.meta.url,
+    ).href,
     'SP03-010': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-010.webp',
       import.meta.url,
@@ -145,6 +181,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-010-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-010.webp',
+      import.meta.url,
+    ).href,
+    'SP03-010-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-010.webp',
       import.meta.url,
     ).href,
     'SP03-011': new URL(
@@ -159,6 +199,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-011.webp',
       import.meta.url,
     ).href,
+    'SP03-011-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-011.webp',
+      import.meta.url,
+    ).href,
     'SP03-012': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-012.webp',
       import.meta.url,
@@ -169,6 +213,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-012-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-012.webp',
+      import.meta.url,
+    ).href,
+    'SP03-012-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-012.webp',
       import.meta.url,
     ).href,
     'SP03-013': new URL(
@@ -183,6 +231,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-013.webp',
       import.meta.url,
     ).href,
+    'SP03-013-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-013.webp',
+      import.meta.url,
+    ).href,
     'SP03-014': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-014.webp',
       import.meta.url,
@@ -193,6 +245,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-014-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-014.webp',
+      import.meta.url,
+    ).href,
+    'SP03-014-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-014.webp',
       import.meta.url,
     ).href,
     'SP03-015': new URL(
@@ -207,6 +263,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-015.webp',
       import.meta.url,
     ).href,
+    'SP03-015-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-015.webp',
+      import.meta.url,
+    ).href,
     'SP03-016': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-016.webp',
       import.meta.url,
@@ -217,6 +277,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-016-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-016.webp',
+      import.meta.url,
+    ).href,
+    'SP03-016-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-016.webp',
       import.meta.url,
     ).href,
     'SP03-017': new URL(
@@ -231,6 +295,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-017.webp',
       import.meta.url,
     ).href,
+    'SP03-017-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-017.webp',
+      import.meta.url,
+    ).href,
     'SP03-018': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-018.webp',
       import.meta.url,
@@ -241,6 +309,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-018-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-018.webp',
+      import.meta.url,
+    ).href,
+    'SP03-018-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-018.webp',
       import.meta.url,
     ).href,
     'SP03-019': new URL(
@@ -255,6 +327,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-019.webp',
       import.meta.url,
     ).href,
+    'SP03-019-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-019.webp',
+      import.meta.url,
+    ).href,
     'SP03-020': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-020.webp',
       import.meta.url,
@@ -265,6 +341,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-020-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-020.webp',
+      import.meta.url,
+    ).href,
+    'SP03-020-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-020.webp',
       import.meta.url,
     ).href,
     'SP03-021': new URL(
@@ -279,6 +359,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-021.webp',
       import.meta.url,
     ).href,
+    'SP03-021-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-021.webp',
+      import.meta.url,
+    ).href,
     'SP03-022': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-022.webp',
       import.meta.url,
@@ -289,6 +373,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-022-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-022.webp',
+      import.meta.url,
+    ).href,
+    'SP03-022-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-022.webp',
       import.meta.url,
     ).href,
     'SP03-023': new URL(
@@ -303,6 +391,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-023.webp',
       import.meta.url,
     ).href,
+    'SP03-023-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-023.webp',
+      import.meta.url,
+    ).href,
     'SP03-024': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-024.webp',
       import.meta.url,
@@ -313,6 +405,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-024-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-024.webp',
+      import.meta.url,
+    ).href,
+    'SP03-024-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-024.webp',
       import.meta.url,
     ).href,
     'SP03-025': new URL(
@@ -327,6 +423,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-025.webp',
       import.meta.url,
     ).href,
+    'SP03-025-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-025.webp',
+      import.meta.url,
+    ).href,
     'SP03-026': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-026.webp',
       import.meta.url,
@@ -337,6 +437,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-026-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-026.webp',
+      import.meta.url,
+    ).href,
+    'SP03-026-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-026.webp',
       import.meta.url,
     ).href,
     'SP03-027': new URL(
@@ -351,6 +455,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-027.webp',
       import.meta.url,
     ).href,
+    'SP03-027-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-027.webp',
+      import.meta.url,
+    ).href,
     'SP03-028': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-028.webp',
       import.meta.url,
@@ -361,6 +469,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-028-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-028.webp',
+      import.meta.url,
+    ).href,
+    'SP03-028-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-028.webp',
       import.meta.url,
     ).href,
     'SP03-029': new URL(
@@ -375,6 +487,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-029.webp',
       import.meta.url,
     ).href,
+    'SP03-029-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-029.webp',
+      import.meta.url,
+    ).href,
     'SP03-030': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-030.webp',
       import.meta.url,
@@ -385,6 +501,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-030-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-030.webp',
+      import.meta.url,
+    ).href,
+    'SP03-030-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-030.webp',
       import.meta.url,
     ).href,
     'SP03-031': new URL(
@@ -399,6 +519,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-031.webp',
       import.meta.url,
     ).href,
+    'SP03-031-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-031.webp',
+      import.meta.url,
+    ).href,
     'SP03-032': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-032.webp',
       import.meta.url,
@@ -409,6 +533,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-032-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-032.webp',
+      import.meta.url,
+    ).href,
+    'SP03-032-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-032.webp',
       import.meta.url,
     ).href,
     'SP03-033': new URL(
@@ -423,6 +551,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-033.webp',
       import.meta.url,
     ).href,
+    'SP03-033-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-033.webp',
+      import.meta.url,
+    ).href,
     'SP03-034': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-034.webp',
       import.meta.url,
@@ -433,6 +565,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-034-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-034.webp',
+      import.meta.url,
+    ).href,
+    'SP03-034-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-034.webp',
       import.meta.url,
     ).href,
     'SP03-035': new URL(
@@ -447,6 +583,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-035.webp',
       import.meta.url,
     ).href,
+    'SP03-035-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-035.webp',
+      import.meta.url,
+    ).href,
     'SP03-036': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-036.webp',
       import.meta.url,
@@ -457,6 +597,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-036-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-036.webp',
+      import.meta.url,
+    ).href,
+    'SP03-036-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-036.webp',
       import.meta.url,
     ).href,
     'SP03-037': new URL(
@@ -471,6 +615,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-037.webp',
       import.meta.url,
     ).href,
+    'SP03-037-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-037.webp',
+      import.meta.url,
+    ).href,
     'SP03-038': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-038.webp',
       import.meta.url,
@@ -481,6 +629,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-038-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-038.webp',
+      import.meta.url,
+    ).href,
+    'SP03-038-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-038.webp',
       import.meta.url,
     ).href,
     'SP03-039': new URL(
@@ -495,6 +647,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-039.webp',
       import.meta.url,
     ).href,
+    'SP03-039-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-039.webp',
+      import.meta.url,
+    ).href,
     'SP03-040': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-040.webp',
       import.meta.url,
@@ -505,6 +661,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-040-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-040.webp',
+      import.meta.url,
+    ).href,
+    'SP03-040-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-040.webp',
       import.meta.url,
     ).href,
     'SP03-041': new URL(
@@ -519,6 +679,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-041.webp',
       import.meta.url,
     ).href,
+    'SP03-041-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-041.webp',
+      import.meta.url,
+    ).href,
     'SP03-042': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-042.webp',
       import.meta.url,
@@ -529,6 +693,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-042-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-042.webp',
+      import.meta.url,
+    ).href,
+    'SP03-042-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-042.webp',
       import.meta.url,
     ).href,
     'SP03-043': new URL(
@@ -543,6 +711,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-043.webp',
       import.meta.url,
     ).href,
+    'SP03-043-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-043.webp',
+      import.meta.url,
+    ).href,
     'SP03-044': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-044.webp',
       import.meta.url,
@@ -553,6 +725,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-044-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-044.webp',
+      import.meta.url,
+    ).href,
+    'SP03-044-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-044.webp',
       import.meta.url,
     ).href,
     'SP03-045': new URL(
@@ -567,6 +743,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-045.webp',
       import.meta.url,
     ).href,
+    'SP03-045-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-045.webp',
+      import.meta.url,
+    ).href,
     'SP03-046': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-046.webp',
       import.meta.url,
@@ -577,6 +757,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-046-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-046.webp',
+      import.meta.url,
+    ).href,
+    'SP03-046-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-046.webp',
       import.meta.url,
     ).href,
     'SP03-047': new URL(
@@ -591,6 +775,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-047.webp',
       import.meta.url,
     ).href,
+    'SP03-047-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-047.webp',
+      import.meta.url,
+    ).href,
     'SP03-048': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-048.webp',
       import.meta.url,
@@ -601,6 +789,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-048-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-048.webp',
+      import.meta.url,
+    ).href,
+    'SP03-048-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-048.webp',
       import.meta.url,
     ).href,
     'SP03-049': new URL(
@@ -615,6 +807,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-049.webp',
       import.meta.url,
     ).href,
+    'SP03-049-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-049.webp',
+      import.meta.url,
+    ).href,
     'SP03-050': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-050.webp',
       import.meta.url,
@@ -625,6 +821,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-050-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-050.webp',
+      import.meta.url,
+    ).href,
+    'SP03-050-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-050.webp',
       import.meta.url,
     ).href,
     'SP03-051': new URL(
@@ -639,6 +839,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-051.webp',
       import.meta.url,
     ).href,
+    'SP03-051-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-051.webp',
+      import.meta.url,
+    ).href,
     'SP03-052': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-052.webp',
       import.meta.url,
@@ -649,6 +853,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-052-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-052.webp',
+      import.meta.url,
+    ).href,
+    'SP03-052-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-052.webp',
       import.meta.url,
     ).href,
     'SP03-053': new URL(
@@ -663,6 +871,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-053.webp',
       import.meta.url,
     ).href,
+    'SP03-053-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-053.webp',
+      import.meta.url,
+    ).href,
     'SP03-054': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-054.webp',
       import.meta.url,
@@ -673,6 +885,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-054-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-054.webp',
+      import.meta.url,
+    ).href,
+    'SP03-054-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-054.webp',
       import.meta.url,
     ).href,
     'SP03-055': new URL(
@@ -687,6 +903,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-055.webp',
       import.meta.url,
     ).href,
+    'SP03-055-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-055.webp',
+      import.meta.url,
+    ).href,
     'SP03-056': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-056.webp',
       import.meta.url,
@@ -697,6 +917,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-056-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-056.webp',
+      import.meta.url,
+    ).href,
+    'SP03-056-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-056.webp',
       import.meta.url,
     ).href,
     'SP03-057': new URL(
@@ -711,6 +935,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-057.webp',
       import.meta.url,
     ).href,
+    'SP03-057-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-057.webp',
+      import.meta.url,
+    ).href,
     'SP03-058': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-058.webp',
       import.meta.url,
@@ -721,6 +949,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-058-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-058.webp',
+      import.meta.url,
+    ).href,
+    'SP03-058-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-058.webp',
       import.meta.url,
     ).href,
     'SP03-059': new URL(
@@ -735,6 +967,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-059.webp',
       import.meta.url,
     ).href,
+    'SP03-059-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-059.webp',
+      import.meta.url,
+    ).href,
     'SP03-060': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-060.webp',
       import.meta.url,
@@ -745,6 +981,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-060-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-060.webp',
+      import.meta.url,
+    ).href,
+    'SP03-060-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-060.webp',
       import.meta.url,
     ).href,
     'SP03-061': new URL(
@@ -759,6 +999,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-061.webp',
       import.meta.url,
     ).href,
+    'SP03-061-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-061.webp',
+      import.meta.url,
+    ).href,
     'SP03-062': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-062.webp',
       import.meta.url,
@@ -769,6 +1013,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-062-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-062.webp',
+      import.meta.url,
+    ).href,
+    'SP03-062-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-062.webp',
       import.meta.url,
     ).href,
     'SP03-063': new URL(
@@ -783,6 +1031,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-063.webp',
       import.meta.url,
     ).href,
+    'SP03-063-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-063.webp',
+      import.meta.url,
+    ).href,
     'SP03-064': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-064.webp',
       import.meta.url,
@@ -793,6 +1045,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-064-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-064.webp',
+      import.meta.url,
+    ).href,
+    'SP03-064-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-064.webp',
       import.meta.url,
     ).href,
     'SP03-065': new URL(
@@ -807,6 +1063,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-065.webp',
       import.meta.url,
     ).href,
+    'SP03-065-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-065.webp',
+      import.meta.url,
+    ).href,
     'SP03-066': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-066.webp',
       import.meta.url,
@@ -817,6 +1077,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-066-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-066.webp',
+      import.meta.url,
+    ).href,
+    'SP03-066-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-066.webp',
       import.meta.url,
     ).href,
     'SP03-067': new URL(
@@ -831,6 +1095,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-067.webp',
       import.meta.url,
     ).href,
+    'SP03-067-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-067.webp',
+      import.meta.url,
+    ).href,
     'SP03-068': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-068.webp',
       import.meta.url,
@@ -841,6 +1109,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-068-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-068.webp',
+      import.meta.url,
+    ).href,
+    'SP03-068-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-068.webp',
       import.meta.url,
     ).href,
     'SP03-069': new URL(
@@ -855,6 +1127,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-069.webp',
       import.meta.url,
     ).href,
+    'SP03-069-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-069.webp',
+      import.meta.url,
+    ).href,
     'SP03-070': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-070.webp',
       import.meta.url,
@@ -865,6 +1141,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-070-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-070.webp',
+      import.meta.url,
+    ).href,
+    'SP03-070-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-070.webp',
       import.meta.url,
     ).href,
     'SP03-071': new URL(
@@ -879,6 +1159,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-071.webp',
       import.meta.url,
     ).href,
+    'SP03-071-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-071.webp',
+      import.meta.url,
+    ).href,
     'SP03-072': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-072.webp',
       import.meta.url,
@@ -889,6 +1173,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-072-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-072.webp',
+      import.meta.url,
+    ).href,
+    'SP03-072-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-072.webp',
       import.meta.url,
     ).href,
     'SP03-073': new URL(
@@ -903,6 +1191,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-073.webp',
       import.meta.url,
     ).href,
+    'SP03-073-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-073.webp',
+      import.meta.url,
+    ).href,
     'SP03-074': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-074.webp',
       import.meta.url,
@@ -913,6 +1205,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-074-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-074.webp',
+      import.meta.url,
+    ).href,
+    'SP03-074-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-074.webp',
       import.meta.url,
     ).href,
     'SP03-075': new URL(
@@ -927,6 +1223,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-075.webp',
       import.meta.url,
     ).href,
+    'SP03-075-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-075.webp',
+      import.meta.url,
+    ).href,
     'SP03-076': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-076.webp',
       import.meta.url,
@@ -937,6 +1237,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-076-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-076.webp',
+      import.meta.url,
+    ).href,
+    'SP03-076-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-076.webp',
       import.meta.url,
     ).href,
     'SP03-077': new URL(
@@ -951,6 +1255,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-077.webp',
       import.meta.url,
     ).href,
+    'SP03-077-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-077.webp',
+      import.meta.url,
+    ).href,
     'SP03-078': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-078.webp',
       import.meta.url,
@@ -961,6 +1269,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-078-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-078.webp',
+      import.meta.url,
+    ).href,
+    'SP03-078-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-078.webp',
       import.meta.url,
     ).href,
     'SP03-079': new URL(
@@ -975,6 +1287,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP03-079.webp',
       import.meta.url,
     ).href,
+    'SP03-079-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-079.webp',
+      import.meta.url,
+    ).href,
     'SP03-080': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP03-080.webp',
       import.meta.url,
@@ -985,6 +1301,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     ).href,
     'SP03-080-grok': new URL(
       '../../assets/recipes/styles/defaults/providers/grok/SP03-080.webp',
+      import.meta.url,
+    ).href,
+    'SP03-080-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP03-080.webp',
       import.meta.url,
     ).href,
   },

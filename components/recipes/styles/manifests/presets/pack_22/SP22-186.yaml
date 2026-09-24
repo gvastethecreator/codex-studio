@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP22-186
+packId: pack_22
+name: Porcelain Ink Wash Accent
+category: 11. Ornament & Symbolic Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - ornament-and-symbolic-illustration
+  - porcelain-ink-wash-accent
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    On an explicitly requested ceramic target, fluid ink lines and soft wash marks sit against a clean,
+    polished illustrated surface with visible variation in ink load.
+  subject_treatment: >-
+    Preserve the requested identity, shape, pose, action and function. Apply the treatment only to the
+    named ceramic area; never transform another subject into a vessel.
+  color_and_tone: >-
+    Preserve the specified palette and use open reserves with restrained wash color; do not force blue and
+    white or replace colors already requested for the ceramic target.
+  lighting_and_shadow: >-
+    Follow the requested light direction and keep the polished surface response subtle; do not add a glow,
+    halo or extra highlight source.
+  texture_and_material: >-
+    Use fine brush edges, small ink accumulations and a smooth ceramic response only on the requested
+    material target; do not add cracks or wear by default.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and element placement. The surface treatment changes
+    rendering only, not subject shape or composition.
+  atmosphere_and_mood: >-
+    Retain the requested setting and tone. The ceramic association does not impose a vase, vessel, cultural
+    motif or ceremonial use.
+  rendering_and_quality: >-
+    Balance liquid line weight with controlled wash and clean reserves; keep the target material readable
+    without changing the object's function.
+avoidRules:
+  - unrequested transformation of the subject into a vessel
+  - forced blue-and-white palette or surface cracking
+  - unrequested symbols or text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-186.webp
+attributes:
+  negativePrompt: unrequested transformation of the subject into a vessel, forced blue-and-white palette or surface cracking, unrequested symbols or text
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: modifier
+    defaultFields:
+      - aesthetic
+      - color_and_tone
+      - texture_and_material
+      - rendering_and_quality
+    requires: materialTarget
+    medium: ink-wash-ceramic-material
+    constraints:
+      - field: texture_and_material
+        group: materialTarget
+        value: explicitly-requested-ceramic-surface
+    avoidRules:
+      - text: unrequested transformation of the subject into a vessel
+        field: subject_treatment
+      - text: forced blue-and-white palette or surface cracking
+        field: color_and_tone
+      - text: unrequested symbols or text
+        field: global
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S086
+    sourceTitle: Porcelain Ink
+    referenceIds:
+      - S05
+      - S21
+    evidenceStatus: experiment
+  ui:
+    kind: modifier
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: ornament-and-symbolic-illustration
+  categoryName: 11. Ornament & Symbolic Illustration
+  tags:
+    - trading-card-illustration
+    - ornament-and-symbolic-illustration
+    - porcelain-ink-wash-accent
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

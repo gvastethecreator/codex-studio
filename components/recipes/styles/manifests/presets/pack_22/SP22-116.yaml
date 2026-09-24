@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP22-116
+packId: pack_22
+name: Matte Adventure
+category: 2. Epic Digital Painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - epic-digital-painting
+  - matte-gouache-painting
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Matte digital gouache uses compact, slightly simplified volumes and opaque color with low-frequency
+    transitions. Adjacent color planes describe form in place of a prominent drawn outline.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Clarify the silhouette with simplified
+    planes without exaggerating anatomy or changing the subject.
+  color_and_tone: >-
+    Use clear color regions and readable chromatic shadows with restrained, non-specular highlights.
+    Respect the palette and contrast requested by the user.
+  lighting_and_shadow: >-
+    Follow the requested light direction and shadow pattern. Translate highlights into matte color
+    changes without adding a new source or glossy glare.
+  texture_and_material: >-
+    Keep pigment variation soft and low-frequency. Do not impose a paper or canvas pattern, and preserve
+    the actual material of each represented surface.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and element placement. Simplified rendering does not
+    require an adventure pose or rearranged scene.
+  atmosphere_and_mood: >-
+    Keep the requested tone and setting. Matte gouache does not add fantasy props, heroic framing or a
+    particular emotional mood.
+  rendering_and_quality: >-
+    Build a complete image from compact shapes, clear value separation and selective internal detail.
+    Keep the finish matte without flattening essential structure.
+avoidRules:
+  - unrequested anatomical exaggeration
+  - specular gloss across matte surfaces
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-116.webp
+attributes:
+  negativePrompt: unrequested anatomical exaggeration, specular gloss across matte surfaces
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: painting
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: painting
+    avoidRules:
+      - text: unrequested anatomical exaggeration
+        field: subject_treatment
+      - text: specular gloss across matte surfaces
+        field: texture_and_material
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S016
+    sourceTitle: Matte Adventure
+    referenceIds:
+      - S50
+      - S51
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: epic-digital-painting
+  categoryName: 2. Epic Digital Painting
+  tags:
+    - trading-card-illustration
+    - epic-digital-painting
+    - matte-gouache-painting
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

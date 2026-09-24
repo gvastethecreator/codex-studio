@@ -13,68 +13,37 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: >-
-    Alien Fashion operates as a portable fashion-costume router: combine Xeno-couture editorial
-    logic with late-90s sci-fi energy, synthetic rebellion and artificial glamour with speculative
-    costume logic with armor, suit engineering, magical garment behavior, alien proportion, and
-    character-readability design, so the preset supplies styling behavior rather than a fixed outfit
-    card, required wearer, or literal garment sample.
+    Avant-garde synthetic fashion built from asymmetrical paneling, deliberate cutouts and
+    strap lattices; alien inspiration remains an editorial clothing language, not a species.
   subject_treatment: >-
-    Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak,
-    illuminate, conceal, mutate, modularize, ritualize, or engineer through Strange cutouts,
-    geometric-negative-space, structural strap lattice, asymmetrical paneling, tab-constructed
-    sleeves; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior,
-    and styling hierarchy shift into this preset.
+    Re-cut the existing outfit with geometric negative space, tabbed sleeves, intersecting
+    straps and a few utility rings. Preserve anatomy, identity, pose, requested coverage and
+    role.
   color_and_tone: >-
-    Map color through speculative material color, neon accents, abyssal values, royal metals,
-    survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents
-    intentional, material color believable, and palette behavior attached to the subject instead of
-    pasted wardrobe decoration.
+    Use sharp contrast and synthetic accents from the prompt's palette; chrome or orange may
+    appear as material choices but are never mandatory.
   lighting_and_shadow: >-
-    Use Bright sci-fi editorial glow, chrome-reflection bounce, sterile overhead, neon-advertisement
-    spill plus rim light, emissive channels, occult glow, reflective armor, survival dust, void
-    shadow, or sci-fi display light as the styling light contract, revealing cut, drape, surface
-    response, trim, transparency, or armor structure without erasing prompt readability.
+    Use clean fashion-like highlights on reflective surfaces while matching the supplied
+    scene. Do not add advertising neon, signage or a space terminal.
   texture_and_material: >-
-    Render Orange rubber, clear plastic, chrome vinyl, white elastic webbing, molded neoprene,
-    holographic PVC plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface,
-    hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine,
-    opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole
-    prompt.
+    Combine molded neoprene, clear film, chrome-coated vinyl and woven elastic with careful
+    joins. Keep translucent sections controlled and avoid toy-like plastic.
   camera_and_composition: >-
-    Compose with Compose for Alien Fashion using its key spatial cues: Straps, lattice harness cues,
-    cutout geometry, contrast stitching, utility ring plus character-design readability, suit
-    silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus as reusable
-    fashion framing grammar, allowing portraits, objects, creatures, environments, action, and
-    abstract prompts to inherit styling without one required pose.
+    Preserve the requested crop, angle and pose. Make cutout geometry and strap crossings
+    readable without requiring a runway or fashion-editorial framing.
   atmosphere_and_mood: >-
-    Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth,
-    spectacle, or mythic futurism; the tone should feel specific to Alien Fashion while still
-    obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+    Feel experimental through unexpected garment geometry and material contrast; do not
+    assign an alien body, planet or futuristic occupation.
   rendering_and_quality: >-
-    Finish with believable costume engineering, clean edge logic, strong silhouette, readable
-    material physics, and no generic cosplay blur; prioritize clean style recognition, believable
-    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
-    accidental UI.
+    Keep cutout edges, stitching and reflections precise, preserving the prompt's body and
+    clothing coverage.
   key_features: >-
-    Xeno-couture editorial logic with late-90s sci-fi energy, synthetic rebellion and artificial
-    glamour; Strange cutouts, geometric-negative-space, structural strap lattice, asymmetrical
-    paneling, tab-constructed sleeves; Orange rubber, clear plastic, chrome vinyl, white elastic
-    webbing, molded neoprene, holographic PVC; Bright sci-fi editorial glow, chrome-reflection
-    bounce, sterile overhead, neon-advertisement spill; Compose for Alien Fashion using its key
-    spatial cues: Straps, lattice harness cues, cutout geometry, contrast stitching, utility ring
+    Geometric cutouts; asymmetrical tabbed panels; strap-lattice construction; molded
+    synthetic surfaces.
   creative_brief: >-
-    Use Alien Fashion after prompt X as a transferable fashion/costume layer: prompt X supplies
-    subject, motion, setting, tone, and intensity, while the preset supplies Xeno-couture editorial
-    logic with late-90s sci-fi energy, synthetic rebellion and artificial glamour, Strange cutouts,
-    geometric-negative-space, structural strap lattice, asymmetrical paneling, tab-constructed
-    sleeves, Orange rubber, clear plastic, chrome vinyl, white elastic webbing, molded neoprene,
-    holographic PVC, Bright sci-fi editorial glow, chrome-reflection bounce, sterile overhead,
-    neon-advertisement spill, Compose for Alien Fashion using its key spatial cues: Straps, lattice
-    harness cues, cutout geometry, contrast stitching, utility ring plus paneling, harnesses, armor
-    modules, robe systems, implant seams, luminous channels, survival layers, and invented
-    fastenings, palette behavior, light response, material treatment, silhouette grammar, and finish
-    discipline without requiring one body type, fixed outfit, venue, prop bundle, or card
-    composition.
+    Reinterpret the requested clothes as avant-garde synthetic fashion with geometric
+    cutouts, asymmetrical panels and strap lattices. Preserve wearer, anatomy, coverage,
+    role, pose, setting and frame; add no alien species, terminal or franchise design.
 avoidRules:
   - ordinary casualwear
   - designer reference

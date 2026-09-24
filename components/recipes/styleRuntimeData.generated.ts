@@ -22,7 +22,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     name: 'Cinematic & Media',
     description:
       'A collection of 120+ styles covering film language, broadcast aesthetics, animation traditions, and historical photography.',
-    presetCount: 128,
+    presetCount: 129,
   },
   {
     id: 'pack_03',
@@ -57,7 +57,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     name: 'Anime 03 — Anime Classics & Prestige',
     description:
       'Timeless anime craft across classics, sports drama, auteur studio works, retro eras, samurai epics, and horror prestige.',
-    presetCount: 140,
+    presetCount: 141,
   },
   {
     id: 'pack_06',
@@ -110,43 +110,57 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     id: 'pack_14',
     name: 'Mythic Noir Curated Vault',
     description:
-      'A curated pack of dark, elegant, and mythic visual directions designed for a strong, authorial identity.',
-    presetCount: 123,
+      'Distinct cultures and mythologies expressed through recognizable motifs, material choices and illustrated design, adapted to the requested subject.',
+    presetCount: 9,
   },
   {
     id: 'pack_15',
     name: 'Punk Spectrum Vault',
     description:
-      'A curated spectrum of punk visual languages: industrial retrofutures, network streets, climate repair, biotech mutation, ocean terrain, DIY rebellion, media ghosts, occult machinery, space age kitsch, and primitive salvage systems.',
-    presetCount: 80,
+      'Recognizable X-punk aesthetics with characteristic materials, technology, craft and motifs integrated into the requested design; one identity per punk direction.',
+    presetCount: 35,
   },
   {
     id: 'pack_17',
     name: 'Medieval Fantasy & Dungeon Zine',
     description:
       'Medieval fantasy representation styles spanning dark-fantasy kingdoms, hunter gothic horror, weird editorial courts, acid dungeon zines, monochrome tarot, white-ink occult plates, rune-tech crusades, apocalyptic warfronts, robust tabletop portraits, grimdark systems, and isometric game aesthetics.',
-    presetCount: 72,
+    presetCount: 73,
   },
   {
     id: 'pack_19',
     name: 'Ink Structures',
     description:
-      'Portable visual studies with explicit rendering mechanics. New derivatives preserve legacy originals; live visual evaluation and preview images are pending.',
+      'Portable visual studies with explicit rendering mechanics. New derivatives preserve legacy originals; representative preview images are available; cross-subject visual evaluation remains pending.',
     presetCount: 4,
   },
   {
     id: 'pack_20',
     name: 'Print Registers',
     description:
-      'Portable visual studies with explicit rendering mechanics. New derivatives preserve legacy originals; live visual evaluation and preview images are pending.',
+      'Portable visual studies with explicit rendering mechanics. New derivatives preserve legacy originals; representative preview images are available; cross-subject visual evaluation remains pending.',
     presetCount: 4,
   },
   {
     id: 'pack_21',
     name: 'Paper & Pigment',
     description:
-      'Portable visual studies with explicit rendering mechanics. New derivatives preserve legacy originals; live visual evaluation and preview images are pending.',
+      'Portable visual studies with explicit rendering mechanics. New derivatives preserve legacy originals; representative preview images are available; cross-subject visual evaluation remains pending.',
     presetCount: 4,
+  },
+  {
+    id: 'pack_22',
+    name: 'Trading Card Illustration Styles',
+    description:
+      'Portable illustration mechanisms adapted from trading-card art research. They preserve the requested subject, action, palette, lighting, viewpoint and composition; card layouts and physical finishes remain separate choices.',
+    presetCount: 120,
+  },
+  {
+    id: 'pack_23',
+    name: 'Medieval Visual Atlas',
+    description:
+      'Transferable medieval visual studies of manuscript, print, textile, regional and later fantasy methods. Deliberate modifiers and representation profiles remain separate from full styles.',
+    presetCount: 58,
   },
 ] as GeneratedStyleRuntimePackSummary[];
 
@@ -229,6 +243,14 @@ const GENERATED_STYLE_RUNTIME_PACK_LOADERS: Record<string, () => Promise<StyleRu
     ),
   pack_21: () =>
     import('./styleRuntimePacks.generated/pack_21').then((module) =>
+      module.loadGeneratedStyleRuntimePack(),
+    ),
+  pack_22: () =>
+    import('./styleRuntimePacks.generated/pack_22').then((module) =>
+      module.loadGeneratedStyleRuntimePack(),
+    ),
+  pack_23: () =>
+    import('./styleRuntimePacks.generated/pack_23').then((module) =>
       module.loadGeneratedStyleRuntimePack(),
     ),
 };

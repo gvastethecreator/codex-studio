@@ -36,6 +36,36 @@ export const GENERATED_STYLE_PRESETS = [
     },
   },
   {
+    id: 'SP17-073',
+    name: 'Soot-Softened Planes',
+    category: '1. Dark Fantasy & Gothic Courts',
+    negativePrompt:
+      'unrequested medieval props including relics or runes or skulls or armor or ruins or court symbols, literal ash or soot coating when another material is specified, forced funerary or sacred narrative, invented ember or other lighting sources, forced low angle framing or diagonal staging or fixed negative space layout, uniform soot speckle, scratchy high-frequency line texture, indiscriminate cracking or erosion, collapsed muddy shadows, glossy plastic finish, watermark',
+    style: {
+      aesthetic:
+        'Dark illustration built from broad charcoal and cool ash value planes, selective soot-softened edges, and a quiet matte finish.',
+      subject_treatment:
+        'Keep each requested subject, function, count, proportions, pose, and distinguishing details. Shape recognition with a clear silhouette, selective edge loss, and restrained internal linework; do not add relic-like accessories, costumes, or anatomy changes.',
+      color_and_tone:
+        'Honor explicitly requested colors. When unspecified, use a restrained cool ash gray, bone white, and soot black range with a clear value hierarchy; use muted ember orange or tarnished brass only when compatible with the requested palette.',
+      lighting_and_shadow:
+        'Preserve the requested light source and direction. Organize shadows into open, broad masses; use cool rim separation or a small warm accent only when it fits the stated lighting without inventing a source.',
+      texture_and_material:
+        'Render surfaces with quiet matte shading, softly soot-like edge transitions, and sparse wear at structural boundaries. Keep the depicted material identity intact and microtexture rare.',
+      camera_and_composition:
+        'Respect the requested camera, crop, and object placement. Use value grouping and clear planes to keep silhouettes legible inside that composition; add no low angle, diagonal staging, or fixed negative-space layout.',
+      atmosphere_and_mood:
+        'Follow the requested tone. Express weight, tension, or restraint through contrast and spacing, without adding medieval or funerary lore, sacred symbols, ruins, or dramatic events.',
+      rendering_and_quality:
+        'Use dark digital illustration with a clear contour hierarchy, crisp material planes, open shadow detail, and low, controlled microtexture. Apply restrained edge loss; avoid indiscriminate denoising, muddiness, or heavy noise.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP17-001'],
+      visualEvaluation: 'pending',
+    },
+  },
+  {
     id: 'SP17-002',
     name: 'Gilded Rune Epic',
     displayName: 'Gilded Rune Mythic',

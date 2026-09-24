@@ -7,21 +7,21 @@ const reviews = JSON.parse(
 ) as CategoryReview[];
 const records = await loadStylePresetManifestRecords();
 const presets = new Map(records.map(({ manifest }) => [manifest.id, manifest]));
-const originalReviews = reviews.filter((review) => review.status === 'text-reviewed');
 const lines = [
-  '# Category review — 118 legacy categories',
+  `# Category review — ${reviews.length} categories`,
   '',
-  'Source: `d70601886e64ef13859b367e6cc5a85983c9ca6f`. Generated from the category decision register and current source evidence.',
+  'Generated from `scripts/style-curation/category-reviews.json` and current source manifests.',
   '',
-  '**Scope:** source/text review with representative evidence for every original category, not 1,677 live image evaluations. Actions are proposals unless listed as implemented in README.md. No original preset is deleted, re-IDed, silently merged or rewritten by this table.',
+  `**Scope:** source/text decisions covering ${presets.size.toLocaleString('en-US')} presets, including legacy categories, authored studies and the imported atlases. Each entry separates editorial state from cross-subject image validation. Representative evidence describes the source; generated cards alone do not certify transfer across subjects. Implementation details are recorded in README.md.`,
   '',
   'Types: style = visual language; modifier = scoped treatment; profile = deliberate output/camera format; theme = content/design/world direction; mixed = individual presets need separation.',
   '',
 ];
-for (const review of originalReviews) {
+for (const review of reviews) {
   lines.push(
     `## ${review.packId} / ${review.category}`,
     `**Display:** ${review.displayCategory} · **Scope:** ${review.kind} · **Presets:** ${review.expectedCount}`,
+    `**Editorial state:** ${review.status} · **Cross-subject image validation:** ${review.visualValidation}`,
     '',
     `**Problem:** ${review.problem}`,
     `**Retain:** ${review.preserve}`,
@@ -63,4 +63,4 @@ if (process.argv.includes('--check')) {
       'Category review document is stale. Run bun scripts/generate-style-curation-review-doc.ts.',
     );
 } else await writeFile(target, output, 'utf8');
-console.log(`[styles:curation:docs] ${originalReviews.length} category reviews`);
+console.log(`[styles:curation:docs] ${reviews.length} category reviews`);

@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP23-010
+packId: pack_23
+name: White-Line Romantic
+category: 2. Print & Engraving
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - print-and-engraving
+  - white-line-relief
+  - portable-visual-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Build depth from broad dark value regions opened by fine light cuts. Local contrast and carefully
+    spaced lines create relief while preserving quiet areas.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose, action and count. Use line cuts to describe
+    the existing forms without adding characters or changing their silhouettes.
+  color_and_tone: >-
+    Preserve the requested palette. Establish dark and light passages from its existing values;
+    use white cuts only when white belongs to the requested colors.
+  lighting_and_shadow: >-
+    Place light cuts where the requested lighting already reveals form. Retain its direction and
+    shadow pattern without inventing a new source.
+  texture_and_material: >-
+    Keep cuts fine and local, with slight carving irregularity. Do not add visible wood grain,
+    blanket scratches or a physical printing surface.
+  camera_and_composition: >-
+    Keep the requested viewpoint, crop, framing and element placement. Retain open areas already
+    present in the composition without imposing a landscape or page layout.
+  atmosphere_and_mood: >-
+    Let tonal contrast serve the requested mood. Do not infer a monumental setting, ruins, dramatic
+    clouds or literary characters from the historical revival technique.
+  rendering_and_quality: >-
+    Make fine light cuts legible against existing dark values and vary their density to explain
+    volume. Keep areas of rest and avoid flattening the image into uniform black.
+avoidRules:
+  - unrequested ruins or dramatic sky
+  - forced monochrome when colors are requested
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-010.webp
+attributes:
+  negativePrompt: unrequested ruins or dramatic sky, forced monochrome when colors are requested
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: white-line-relief-print
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: light-cuts-in-dark-masses
+    avoidRules:
+      - text: unrequested ruins or dramatic sky
+        field: atmosphere_and_mood
+      - text: forced monochrome when colors are requested
+        field: color_and_tone
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: PR-04
+    sourceTitle: White-Line Romantic
+    historicalScope: 'Revival / ilustración del siglo XIX'
+    referenceIds:
+      - S11
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: print-and-engraving
+  categoryName: 2. Print & Engraving
+  tags:
+    - curation-v2
+    - print-and-engraving
+    - white-line-relief
+    - portable-visual-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

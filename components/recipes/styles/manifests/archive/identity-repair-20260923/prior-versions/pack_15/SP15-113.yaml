@@ -1,0 +1,95 @@
+schemaVersion: 1
+id: SP15-113
+packId: pack_15
+name: Bonepunk
+category: 8. Occult, Myth & Gothic Punks
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - occult-myth-and-gothic-punks
+visualDna:
+  aesthetic: >-
+    Build strong forms from chalky bone-white planes, tapered organic contours, and rhythmic dark
+    tension-lines.
+  subject_treatment: >-
+    Preserve the requested subject and defining anatomy; use porous pale planes and restrained repeated
+    accents without requiring horns, sails, or a skeleton.
+  color_and_tone: >-
+    Use bone white against soot, earth, or muted green, with a rawhide note and small cool highlight;
+    preserve explicit palette requests.
+  lighting_and_shadow: >-
+    Separate pale planes with broad cool shadows and narrow storm-edged light; keep translucent layers
+    distinct from flat white fill.
+  texture_and_material: >-
+    Combine dry limewashed grain with selective hide-like translucence and sparse fibrous marks; keep
+    texture distinct from cracks or decay.
+  camera_and_composition: >-
+    Keep the requested crop; arrange tapered forms, tension-lines, and open gaps around its existing
+    focal point.
+  atmosphere_and_mood: >-
+    Suggest austere, weathered force through pale-versus-dark contrast, repeated rhythm, and measured
+    spacing.
+  rendering_and_quality: >-
+    Keep pale surfaces and linear marks distinct, with deliberate edges and sparse texture for thumbnail
+    clarity.
+avoidRules:
+  - literal skeleton anatomy when not requested
+  - horn-like extensions that alter the subject silhouette
+  - uniform chalk texture across every surface
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-113.webp
+attributes:
+  negativePrompt: >-
+    literal skeleton anatomy when not requested, horn-like extensions that alter the subject silhouette,
+    uniform chalk texture across every surface
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: literal skeleton anatomy when not requested
+        field: rendering_and_quality
+      - text: horn-like extensions that alter the subject silhouette
+        field: rendering_and_quality
+      - text: uniform chalk texture across every surface
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-060
+      - SP15-076
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: occult-myth-and-gothic-punks
+  categoryName: 8. Occult, Myth & Gothic Punks
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - occult-myth-and-gothic-punks
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

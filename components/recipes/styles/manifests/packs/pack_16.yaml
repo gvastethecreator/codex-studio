@@ -8,6 +8,7 @@ categories:
     name: 1. 70s & 80s Retro Anime
     presetRefs:
       - pack_16/SP05-001.yaml
+      - pack_16/SP16-001.yaml
       - pack_16/SP05-311.yaml
       - pack_16/SP05-003.yaml
       - pack_16/SP05-004.yaml
@@ -167,6 +168,7 @@ categories:
       - pack_16/SP13-035.yaml
 presetRefs:
   - pack_16/SP05-001.yaml
+  - pack_16/SP16-001.yaml
   - pack_16/SP05-311.yaml
   - pack_16/SP05-003.yaml
   - pack_16/SP05-004.yaml

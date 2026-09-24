@@ -1,0 +1,111 @@
+schemaVersion: 1
+id: SP23-034
+packId: pack_23
+name: Controlled Facet Shading
+category: 8. Retro 3D Visual Studies
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - retro-3d-visual-studies
+  - low-poly-volume
+  - restrained-local-light
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Build three-dimensional forms from a restrained number of clear polygonal planes, low-resolution
+    surface detail and controlled local light. Keep silhouettes and occlusion legible, with tonal
+    transitions shaped by the forms rather than atmospheric effects.
+  subject_treatment: >-
+    Preserve the requested subject, identity, count, pose, action, proportions and functional details.
+    Use visible facets to clarify existing volumes without simplifying away distinctive structure or
+    adding characters, equipment or narrative action.
+  color_and_tone: >-
+    Preserve the requested palette and tonal relationships. Keep facets and texture colors coordinated
+    with the requested light; do not force an all-dark range or fixed color grade.
+  lighting_and_shadow: >-
+    Follow the requested light sources, direction and intensity. Keep light falloff local and shadows
+    readable on existing surfaces; do not add fog, darkness or dramatic illumination.
+  texture_and_material: >-
+    Use low-resolution texture detail selectively to support the real materials in the image. Keep
+    texture scale consistent and restrained rather than covering every surface with repeating pixels
+    or noise.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, perspective and arrangement. Do not impose a first-person
+    camera, perspective distortion, interface or weapon-in-view framing.
+  atmosphere_and_mood: >-
+    Preserve the user's setting and mood. Faceted geometry and constrained light are rendering choices,
+    not a request for a dungeon, fog, horror or any specific narrative setting.
+  rendering_and_quality: >-
+    Keep polygonal planes coherent, occlusion clear and small textures subordinate to form. Maintain
+    the requested output scale without adding scanlines, lens distortion or a simulated display filter.
+avoidRules:
+  - unrequested first-person camera, perspective distortion or weapon-in-view framing
+  - unrequested dungeon, fog, character or combat scene
+  - forced darkness or dramatic light effects
+  - repeating pixel texture or noise over every surface
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP23-034.webp
+attributes:
+  negativePrompt: >-
+    unrequested first-person camera, perspective distortion or weapon-in-view framing, unrequested
+    dungeon, fog, character or combat scene, forced darkness or dramatic light effects, repeating
+    pixel texture or noise over every surface
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: low-poly-three-dimensional-rendering
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: restrained-polygonal-planes-low-resolution-textures-controlled-local-light
+    avoidRules:
+      - text: unrequested first-person camera, perspective distortion or weapon-in-view framing
+        field: camera_and_composition
+      - text: unrequested dungeon, fog, character or combat scene
+        field: global
+      - text: forced darkness or dramatic light effects
+        field: lighting_and_shadow
+      - text: repeating pixel texture or noise over every surface
+        field: texture_and_material
+  sourceMetadata:
+    atlas: 'Codex Studio · Atlas medieval y fantasías adyacentes v0.1'
+    sourceId: D3-01
+    sourceTitle: Lowpoly Tenebrism
+    historicalScope: 'Retro 3D contemporáneo · Lunacid y su linaje'
+    referenceIds:
+      - S35
+    evidenceStatus: textual-research-only
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: retro-3d-visual-studies
+  categoryName: 8. Retro 3D Visual Studies
+  tags:
+    - curation-v2
+    - retro-3d-visual-studies
+    - low-poly-volume
+    - restrained-local-light
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

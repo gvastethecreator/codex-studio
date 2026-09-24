@@ -28,7 +28,6 @@ export const GENERATED_STYLE_PRESETS = [
         'Retain sharp master silhouettes and controlled plate fringes. Avoid global blur or uncontrolled chromatic aberration.',
     },
     ui: {
-      previewStatus: 'pending',
       kind: 'full_style',
       derivedFrom: ['SP04-015'],
       visualEvaluation: 'pending',
@@ -59,7 +58,6 @@ export const GENERATED_STYLE_PRESETS = [
         'Keep stencil bridges and small negative gaps readable. Do not add halftone to every mid-value by default.',
     },
     ui: {
-      previewStatus: 'pending',
       kind: 'full_style',
       derivedFrom: ['SP04-045'],
       visualEvaluation: 'pending',
@@ -90,7 +88,6 @@ export const GENERATED_STYLE_PRESETS = [
         'Use coherent blocks and sparse reproduction flaws. Avoid full-frame dirt, arbitrary torn edges and unreadable focal details.',
     },
     ui: {
-      previewStatus: 'pending',
       kind: 'full_style',
       derivedFrom: ['SP17-014'],
       visualEvaluation: 'pending',
@@ -120,7 +117,6 @@ export const GENERATED_STYLE_PRESETS = [
         'Keep lines separated at the intended viewing scale, with clean negative spaces and selective dense accents.',
     },
     ui: {
-      previewStatus: 'pending',
       kind: 'full_style',
       derivedFrom: ['SP04-062'],
       visualEvaluation: 'pending',

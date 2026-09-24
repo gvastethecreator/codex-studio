@@ -301,7 +301,9 @@ export function createChatgptResponsesImageExecutor({
   now = Date.now,
   getAccessToken = () => getUsableAccessToken('codex', { env, fetch: fetchImpl as typeof fetch }),
   invalidateAccessToken = (message) => invalidateStoredAccessToken('codex', message),
-  requestTimeoutMs = 120_000,
+  // Four concurrent image streams can legitimately take longer than two minutes.
+  // Keep the response observable before classifying an accepted submission as uncertain.
+  requestTimeoutMs = 300_000,
 }: ChatgptResponsesImageExecutorDependencies = {}) {
   return async (job: GenerationProviderJob) => {
     const providerId = job.providerId === 'chatgpt' ? 'chatgpt' : 'codex';

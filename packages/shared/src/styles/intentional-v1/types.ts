@@ -152,4 +152,4 @@ export const FREE_LAYOUT_LOCKS: Locks = {
   composition: false,
 };
 export const NO_VARIATION: Variation = { enabled: false, instruction: '' };
-export const CORE_VERSION = 'intentional-styles/1.0.0';
+export const CORE_VERSION = 'intentional-styles/1.0.1';

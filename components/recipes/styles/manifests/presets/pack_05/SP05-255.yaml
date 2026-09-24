@@ -16,74 +16,32 @@ tags:
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: >-
-    Magic Knight Rayearth - Gem-Engine Rescue Quest acts as a transferable anime-battle/worlds
-    router: Magic Knight Rayearth - Gem-Engine Rescue Quest, gem-engine cooperative magic style
-    grammar with bright upward energy, chromatic teamwork, and rune-mechanical glow; combine it with
-    isekai and high-fantasy anime grammar with magic-system readability, quest-world texture,
-    luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage
-    words may guide style, but they must not require canon cast, title-scene replication,
-    screenshots, logos, or one fixed card concept.
+    Bright kinetic cel illustration with upward-sweeping line accents, jewel color transitions, and
+    precise luminous edges.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Magic
-    Knight Rayearth - Gem-Engine Rescue Quest, gem-engine cooperative magic style grammar with
-    bright upward energy, chromatic teamwork, and rune-mechanical glow as portable contour, motion
-    grammar, surface language, and emotional pressure without requiring canon elements or a default
-    action setup.
+    Preserve the requested forms and action; let line accents follow existing motion instead of
+    inventing teamwork or rescue.
   color_and_tone: >-
-    Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens,
-    parchment neutrals, magical violets, and controlled pastel or dark contrast; let Magic Knight
-    Rayearth - Gem-Engine Rescue Quest, gem-engine cooperative magic style grammar with bright
-    upward energy, chromatic teamwork, and rune-mechanical glow choose accent intensity, value
-    contrast, emotional temperature, and power-system separation while staying attached to prompt X.
+    Clear jewel hues and bright warm-cool transitions create lift; follow any explicit palette
+    direction.
   lighting_and_shadow: >-
-    Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and
-    clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Magic Knight Rayearth - Gem-Engine Rescue Quest, gem-engine
-    cooperative magic style grammar with bright upward energy, chromatic teamwork, and
-    rune-mechanical glow without replacing prompt X with a stock anime frame.
+    Luminous edge highlights separate overlapping forms, with glow kept crisp and contained.
   texture_and_material: >-
-    Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel
-    glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Magic
-    Knight Rayearth - Gem-Engine Rescue Quest, gem-engine cooperative magic style grammar with
-    bright upward energy, chromatic teamwork, and rune-mechanical glow controlled, denoised, and
-    coherent across bodies, objects, environments, abstractions, and action.
+    Smooth cel fills, fine facet breaks, and bright accents give surfaces a polished, energetic
+    treatment.
   camera_and_composition: >-
-    Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed
-    cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook
-    scale; convert Magic Knight Rayearth - Gem-Engine Rescue Quest, gem-engine cooperative magic
-    style grammar with bright upward energy, chromatic teamwork, and rune-mechanical glow into
-    reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one
-    fixed style sample layout.
+    Keep the requested camera; use rising diagonals within existing forms, not a new world or
+    mechanical object.
   atmosphere_and_mood: >-
-    Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional
-    craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic,
-    comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while
-    keeping the anime-battle lineage readable.
+    Optimistic and energetic, without assigning a quest or group narrative.
   rendering_and_quality: >-
-    Finish with clean fantasy-anime finish with stable anatomy and creature/object structure,
-    controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize
-    stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy
-    darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+    Maintain sharp contours and bright color separation; reserve glow for small focal accents.
   key_features: >-
-    Magic Knight Rayearth - Gem-Engine Rescue Quest, gem-engine cooperative magic style grammar with
-    bright upward energy, chromatic teamwork, and rune-mechanical glow; clear fantasy silhouettes,
-    spell-effect hierarchy, surface simplification, creature or object readability, and portal-like
-    transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food
-    steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals,
-    transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic
-    magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with
-    stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic
-    text, and no generic isekai gloss
+    Upward line energy, chromatic shifts, faceted highlights, and crisp glow give this image a
+    buoyant rhythm.
   creative_brief: >-
-    Apply Magic Knight Rayearth - Gem-Engine Rescue Quest after prompt X as a transferable
-    anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity,
-    while this preset supplies Magic Knight Rayearth - Gem-Engine Rescue Quest, gem-engine
-    cooperative magic style grammar with bright upward energy, chromatic teamwork, and
-    rune-mechanical glow, isekai and high-fantasy anime grammar with magic-system readability,
-    quest-world texture, luminous adventure, and character-independent fantasy routing, finish
-    discipline, and negative controls without forcing canon cast, title scene, screenshot, card
-    pose, default monster, default combat prop, or prompt-literal card.
+    Bring vivid color and luminous line accents to the requested subject, without adding runes,
+    engines, or a rescue scene.
 avoidRules:
   - realistic
   - 3d render
@@ -95,7 +53,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - named franchise likeness
   - magic-knight costume copy
@@ -112,17 +69,16 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - muddy noisy darks
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-255.webp
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, named franchise likeness, magic-knight costume copy,
-    group lineup, weapon near-plane, readable glyphs, logo, RPG UI, readable magic text, generic
-    isekai wallpaper, fixed canon character, title scene replication, required source-frame look,
-    cosplay, generic anime filter, prompt-required card, readable text, muddy noisy darks
+    artifacts, watermark, signature, named franchise likeness, magic-knight costume copy, group
+    lineup, weapon near-plane, readable glyphs, logo, RPG UI, readable magic text, generic isekai
+    wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay,
+    generic anime filter, prompt-required card, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -1,0 +1,104 @@
+schemaVersion: 1
+id: SP14-137
+packId: pack_14
+name: Veiled Color Layers
+category: Flow & Dissolution
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - conceptual-style
+  - visual-evaluation-pending
+  - flow-and-dissolution
+visualDna:
+  aesthetic: >-
+    Thin translucent painted layers overlap broad opaque shapes. Partial concealment and selective clear
+    edges suggest depth without a deep stage or photographic haze.
+  subject_treatment: >-
+    Keep the requested subject, identity, anatomy, action and setting. Apply the visual treatment to its
+    existing shapes; do not replace it with an emblem, ritual, character or prop from a sample card.
+  color_and_tone: >-
+    Retain the requested palette, mixing existing hues gently at overlaps while preserving distinct
+    foreground and background values.
+  lighting_and_shadow: >-
+    Use the requested light direction with soft value transitions. Layer translucency is a painting
+    method, not an added lamp, fog or luminous veil.
+  texture_and_material: >-
+    Keep represented materials recognizable beneath controlled glazing. Do not turn clothing, bodies or
+    solid objects into transparent matter.
+  camera_and_composition: >-
+    Keep the requested viewpoint, crop and spatial arrangement. Place soft overlays only across existing
+    secondary forms, preserving focal anatomy, layout and requested legibility.
+  atmosphere_and_mood: Ambiguous, poised depth with a calm surface; respect a brighter or more playful requested mood.
+  rendering_and_quality: >-
+    Use a small number of broad glazes and crisp counteredges. Avoid stacked uniform gradients and milky
+    low contrast.
+avoidRules:
+  - transparent solid anatomy
+  - uniform fog overlay
+  - fixed central altar composition
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-137.webp
+attributes:
+  negativePrompt: transparent solid anatomy, uniform fog overlay, fixed central altar composition
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: transparent solid anatomy
+        field: rendering_and_quality
+      - text: uniform fog overlay
+        field: rendering_and_quality
+      - text: fixed central altar composition
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP14-024
+      - SP14-025
+      - SP14-026
+      - SP14-033
+      - SP14-034
+      - SP14-035
+      - SP14-036
+      - SP14-037
+      - SP14-038
+      - SP14-039
+      - SP14-040
+      - SP14-041
+      - SP14-042
+      - SP14-043
+      - SP14-044
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: flow-and-dissolution
+  categoryName: Flow & Dissolution
+  tags:
+    - curation-v2
+    - conceptual-style
+    - visual-evaluation-pending
+    - flow-and-dissolution
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

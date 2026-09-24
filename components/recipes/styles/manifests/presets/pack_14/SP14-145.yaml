@@ -1,0 +1,104 @@
+schemaVersion: 1
+id: SP14-145
+packId: pack_14
+name: Mande Epic & Griot
+version: 1
+supportedTasks: &id002
+  - image_generate
+  - image_edit
+  - style_preset_card
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP14-145.webp
+attributes:
+  negativePrompt: >-
+    Preserve explicit identity, ethnicity, costume, and action locks; do not assign Mande identity to a requested
+    person. Do not force Sundiata, a griot, a kora, Kamablon, or a village scene. Do not add a separate instrument,
+    calabash, or gourd, and do not present the localized string or weave reference as a universal Mande motif.
+    Avoid generic pan-African ornament and invented scripts.
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text:
+          Preserve explicit identity, ethnicity, costume, and action locks; do not assign Mande identity
+          to a requested person.
+        field: rendering_and_quality
+      - text:
+          Do not force Sundiata, a griot, a kora, Kamablon, or a village scene. Do not add a separate instrument,
+          calabash, or gourd, and do not present the localized string or weave reference as a universal Mande motif.
+        field: rendering_and_quality
+      - text: Avoid generic pan-African ornament and invented scripts.
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+    derivedFrom:
+      - SP14-021
+category: Mande Oral Epic
+tags: &id001
+  - curation-v2
+  - identity-reviewed
+  - visual-evaluation-pending
+  - mande-epic-griot
+visualDna:
+  aesthetic:
+    Mande epic illustration uses indigo and umber value masses, calabash ochre and restrained star-white accents.
+    Where an existing rail, rim or seam supports it, translate a short rhythm of taut parallel strings associated
+    with Mande kora construction into that form, with one bounded woven band or shallow calabash-like curve. These
+    are localized design references, not universal Mande motifs; add no instrument or vessel. Keep open areas open
+    and the requested scene and architecture intact.
+  subject_treatment:
+    Preserve the requested subject, action, ethnicity, anatomy, and explicit costume locks.
+    Where a design detail is open, adapt the parallel string rhythm and one short woven band or calabash-like curve
+    to a single existing seam, rail, rim or edge. Keep these as localized surface or construction details; do not
+    reshape furniture or architecture, add an instrument, vessel or performer, or change the subject's identity.
+  color_and_tone:
+    Favor deep indigo, night umber, calabash ochre, rain green, and small star-white or ember
+    highlights. Retain requested material colors and place this palette in broad value groupings, with calabash
+    ochre confined to the selected edge or woven band rather than recoloring the whole scene.
+  lighting_and_shadow:
+    Preserve the requested light direction and time, keeping darks breathable. Use warm
+    reflected accents along the selected string or woven detail; avoid requiring a fire circle or night sky.
+  texture_and_material:
+    Distinguish the existing wood, cloth and other requested materials. Render the string rhythm as a few taut,
+    parallel drawn or incised lines and confine woven texture or a calabash-like curve to one bounded part of an
+    existing form. Keep broad fields quiet; do not add a vessel or distribute the pattern across surfaces.
+  camera_and_composition:
+    Honor the requested camera and scene. Let the parallel lines and one woven area form a brief visual cadence
+    only where an existing form supports it; otherwise leave the area open. Do not force a circular or ceremonial
+    composition or repeat a border on each object.
+  atmosphere_and_mood:
+    Carry remembered lineage, communal intelligence, and epic consequence, with room for
+    wit, grief, triumph, and daily life. Do not make every image a ceremony or solemn ancestral tableau.
+  rendering_and_quality:
+    Use authored painted illustration with broad, quiet color fields, a short legible parallel-string rhythm and
+    one localized woven or calabash-like detail. Keep the requested subject clear and the cue readable without
+    making bands or material grain the texture of the whole scene.
+avoidRules:
+  - Preserve explicit identity, ethnicity, costume, and action locks; do not assign Mande identity to a requested
+    person.
+  - Do not force Sundiata, a griot, a kora, Kamablon, or a village scene. Do not add a separate instrument, calabash,
+    or gourd, and do not present the localized string or weave reference as a universal Mande motif.
+  - Avoid generic pan-African ornament and invented scripts.
+taxonomy:
+  packId: pack_14
+  packName: Mythic Noir Curated Vault
+  categoryId: mande-epic-griot
+  categoryName: Mande Oral Epic
+  tags: *id001
+  supportedTasks: *id002
+  hasDefaultImage: true

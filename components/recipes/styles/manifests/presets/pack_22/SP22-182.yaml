@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP22-182
+packId: pack_22
+name: Deco Geometric Planes
+category: 11. Ornament & Symbolic Illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - ornament-and-symbolic-illustration
+  - deco-geometric-planes
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Precise curves and stepped geometric planes simplify existing volume into broad, ornamental color
+    fields with crisp changes of direction.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose, action and function. Apply planar simplification
+    to existing forms rather than adding architecture, symbols or costume.
+  color_and_tone: >-
+    Keep the requested palette and use broad color fields with deliberate contrast; metallic hues are not
+    required and specified colors must remain intact.
+  lighting_and_shadow: >-
+    Follow the requested light direction and express its shadows as clear planes without creating a new
+    source, glow or dramatic highlight.
+  texture_and_material: >-
+    Keep surfaces smooth and let the geometry carry the ornament. Represent metal only where the requested
+    content already includes it.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and placement. Geometric rhythm follows the existing
+    composition without forming a frame or page layout.
+  atmosphere_and_mood: >-
+    Retain the requested setting and mood. Geometric elegance does not imply a historical period, skyline
+    or thematic setting.
+  rendering_and_quality: >-
+    Build large stepped planes and precise arcs first, keeping edges clean and contrasts ornamental but
+    subordinate to the subject's silhouette.
+avoidRules:
+  - unrequested skyscrapers, gold or period lettering
+  - unrequested frames or emblems
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-182.webp
+attributes:
+  negativePrompt: unrequested skyscrapers, gold or period lettering, unrequested frames or emblems
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: drawing
+    avoidRules:
+      - text: unrequested skyscrapers, gold or period lettering
+        field: atmosphere_and_mood
+      - text: unrequested frames or emblems
+        field: subject_treatment
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S082
+    sourceTitle: Deco Planes
+    referenceIds:
+      - S04
+      - S41
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: ornament-and-symbolic-illustration
+  categoryName: 11. Ornament & Symbolic Illustration
+  tags:
+    - trading-card-illustration
+    - ornament-and-symbolic-illustration
+    - deco-geometric-planes
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

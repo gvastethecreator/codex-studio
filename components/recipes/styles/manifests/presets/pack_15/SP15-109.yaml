@@ -1,0 +1,92 @@
+schemaVersion: 1
+id: SP15-109
+packId: pack_15
+name: Broadcastpunk
+category: 7. Media, Vapor & Glitch Punks
+version: 2
+supportedTasks: &id002
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags: &id001
+  - curation-v2
+  - identity-reviewed
+  - visual-evaluation-pending
+  - media-vapor-and-glitch-punks
+visualDna:
+  aesthetic:
+    Make analog transmission and pirate television tangible through phosphor linework, antenna-like
+    arcs, coaxial routes, broadcast color bars, and occasional red tally marks applied to existing forms;
+    do not frame the scene inside a screen or add television hardware unless requested.
+  subject_treatment:
+    Preserve the requested subject, action, setting, and framing; apply signal marks within the existing
+    composition and never display the entire scene as television content.
+  color_and_tone:
+    Use graphite, warm black, phosphor green, cyan, cream, and a controlled red signal accent on existing
+    surfaces; keep the focal subject brighter and clearer than surrounding signal marks.
+  lighting_and_shadow:
+    Preserve the requested base illumination; keep any phosphor-like glow small and confined to signal
+    marks rather than darkening the scene or adding illuminated hardware.
+  texture_and_material:
+    Use scanline-like strokes and analog noise as localized graphic marks on existing forms; do not add
+    glass screens, metal bezels, or cable objects when they are not part of the requested scene.
+  camera_and_composition:
+    Preserve the requested composition; use one or two signal arcs or short scanline zones within existing
+    surfaces, never a frame around the full scene or duplicate images.
+  atmosphere_and_mood:
+    Suggest unauthorized transmission, community media, or fragile connection without requiring
+    a station, crowd, or political message.
+  rendering_and_quality:
+    Keep frame edges and signal marks distinct, limit scanlines to visible signal zones,
+    and preserve the focal subject's silhouette.
+avoidRules:
+  - a mandatory television studio, monitor wall, or scene-wide screen frame
+  - digital pixel breakup as the dominant effect
+  - scanlines across all forms
+  - unrequested screen labels, readable UI text, or picture-in-picture framing
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-109.webp
+attributes:
+  negativePrompt:
+    a mandatory television studio, monitor wall, or scene-wide screen frame, digital pixel breakup as
+    the dominant effect, scanlines across all forms, unrequested screen labels, readable UI text, or
+    picture-in-picture framing
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: a mandatory television studio, monitor wall, or scene-wide screen frame
+        field: rendering_and_quality
+      - text: digital pixel breakup as the dominant effect
+        field: rendering_and_quality
+      - text: scanlines across all forms
+        field: rendering_and_quality
+      - text: unrequested screen labels, readable UI text, or picture-in-picture framing
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-109
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: media-vapor-and-glitch-punks
+  categoryName: 7. Media, Vapor & Glitch Punks
+  tags: *id001
+  supportedTasks: *id002
+  hasDefaultImage: true

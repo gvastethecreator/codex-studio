@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: pack_14
+name: Mythic Noir Curated Vault
+description:
+  'Abstract visual languages for mythic and noir work: shape, light, ink, rhythm and surface, without
+  mandatory mythology or scenes.'
+categories:
+  - id: shape-and-perception
+    name: Shape & Perception
+    presetRefs:
+      - pack_14/SP14-124.yaml
+      - pack_14/SP14-125.yaml
+      - pack_14/SP14-126.yaml
+  - id: light-and-shadow
+    name: Light & Shadow
+    presetRefs:
+      - pack_14/SP14-127.yaml
+      - pack_14/SP14-128.yaml
+  - id: organic-contours
+    name: Organic Contours
+    presetRefs:
+      - pack_14/SP14-129.yaml
+  - id: orbital-and-chromatic-fields
+    name: Orbital & Chromatic Fields
+    presetRefs:
+      - pack_14/SP14-130.yaml
+      - pack_14/SP14-131.yaml
+  - id: incision-and-planes
+    name: Incision & Planes
+    presetRefs:
+      - pack_14/SP14-132.yaml
+      - pack_14/SP14-133.yaml
+  - id: rhythm-and-porosity
+    name: Rhythm & Porosity
+    presetRefs:
+      - pack_14/SP14-134.yaml
+      - pack_14/SP14-135.yaml
+  - id: flow-and-dissolution
+    name: Flow & Dissolution
+    presetRefs:
+      - pack_14/SP14-136.yaml
+      - pack_14/SP14-137.yaml
+  - id: fracture-and-tension
+    name: Fracture & Tension
+    presetRefs:
+      - pack_14/SP14-138.yaml
+      - pack_14/SP14-139.yaml
+  - id: reflectance-and-interference
+    name: Reflectance & Interference
+    presetRefs:
+      - pack_14/SP14-140.yaml
+      - pack_14/SP14-141.yaml
+presetRefs:
+  - pack_14/SP14-124.yaml
+  - pack_14/SP14-125.yaml
+  - pack_14/SP14-126.yaml
+  - pack_14/SP14-127.yaml
+  - pack_14/SP14-128.yaml
+  - pack_14/SP14-129.yaml
+  - pack_14/SP14-130.yaml
+  - pack_14/SP14-131.yaml
+  - pack_14/SP14-132.yaml
+  - pack_14/SP14-133.yaml
+  - pack_14/SP14-134.yaml
+  - pack_14/SP14-135.yaml
+  - pack_14/SP14-136.yaml
+  - pack_14/SP14-137.yaml
+  - pack_14/SP14-138.yaml
+  - pack_14/SP14-139.yaml
+  - pack_14/SP14-140.yaml
+  - pack_14/SP14-141.yaml

@@ -16,79 +16,34 @@ tags:
   - 2000s-classics
 visualDna:
   aesthetic: >-
-    Pop Reality Bend Style acts as a transferable anime-prestige router: a pop anime direction
-    shaped by era-aware line economy and genre tone, alongside a reality anime direction shaped by
-    era-aware line economy and genre tone; fuse it with 2000s anime classic grammar with cel-digital
-    hybrid polish, genre contrast, sharper compositing, and stylized emotional escalation; it routes
-    era, genre, line economy, cel or digital finish, and performance tone without locking prompt
-    content to the source title or sample image.
+    A pop-anime treatment built on clean graphic shapes and stable, readable
+    forms.
   subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through contours paced by
-    pop tension, readable pose energy, and silhouette discipline, alongside contours paced by
-    reality tension, readable pose energy, and silhouette discipline; identity should remain
-    readable through anime contour, expression economy, pose energy, shape simplification, and
-    effect hierarchy instead of a required canon character or title scene.
+    Keep the requested identity, proportions and action. Allow a playful contour emphasis
+    without bending anatomy or changing what is depicted.
   color_and_tone: >-
-    Map color through bright pop flats, candy accents, and high-key cel contrast, alongside a
-    reality accent system held inside disciplined cel values; anchor it in clean digital flats,
-    gothic reds, cool clinical blues, warm romance pastels, pop accents, and deliberate contrast
-    keys; keep value separation clean, cel flats intentional, accents purposeful, and palette
-    behavior attached to the requested content.
+    When the prompt leaves color open, use bright flat accents and high-key value
+    separation. Explicit palettes and color assignments take priority.
   lighting_and_shadow: >-
-    Use clean graphic highlights and playful glow, alongside a reality light logic using cel rim,
-    glow behavior, and blocked shadow; combine it with digital cel rim, bloom accents, dramatic
-    night cuts, clinical overheads, magical glows, and clean compositing separation; shadows should
-    read as anime light design, rims should clarify form, and glow or effects should support the
-    prompt rather than replacing it.
+    Use crisp graphic highlights and a small, controlled glow; retain the underlying shadow
+    structure and keep luminous edges distinct.
   texture_and_material: >-
-    Render cel paint and ink grain tuned to pop material contrast, alongside cel paint and ink grain
-    tuned to reality material contrast; anchor surfaces in digital ink edges, subtle gradient fills,
-    polished cloth and hair shapes, screen-like glow, and controlled texture overlays; cel edges,
-    painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent
-    across people, objects, environments, action, and abstractions.
+    Favor smooth digital fills, clear ink edges and restrained grain. Match surface detail
+    to the actual subject and blend painted backgrounds without plastic gloss.
   camera_and_composition: >-
-    Frame around pop converted into reusable framing rhythm and anime timing, alongside reality
-    converted into reusable framing rhythm and anime timing, then extend it with opening-sequence
-    energy, split-second action framing, romcom reaction spacing, gothic symmetry, and readable
-    effect geometry; the style should support portraits, props, machines, performances, landscapes,
-    symbols, and full scenes through reusable anime staging grammar instead of one fixed card
-    layout.
+    Retain the requested viewpoint and layout. Use contrast and visual rhythm within that
+    frame; do not introduce distortion or new objects.
   atmosphere_and_mood: >-
-    Carry mood through buoyant unreality and fast visual confidence, alongside reality emotional
-    pressure and genre-specific tone; braid it with genre fluency: deadpan comedy, gothic danger,
-    romance friction, rebellion, paranoia, elegance, and pop unreality; the preset can become funny,
-    sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving
-    the chosen anime lineage.
+    Buoyant visual energy is available when it matches the prompt; keep the requested mood.
   rendering_and_quality: >-
-    Finish with clean anime finishing that keeps pop identity readable without noisy denoise,
-    alongside clean anime finishing that keeps reality identity readable without noisy denoise;
-    enforce clean 2000s cel-digital finish with strong design readability, controlled effects, and
-    no muddy low-resolution artifacting; prioritize clean denoise, stable anatomy or object
-    structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no
-    photoreal or 3D-render drift.
+    Separate flat accents from soft background transitions, keep outlines crisp, and limit
+    glow to highlights that clarify form.
   key_features: >-
-    a pop anime direction shaped by era-aware line economy and genre tone, alongside a reality anime
-    direction shaped by era-aware line economy and genre tone; contours paced by pop tension,
-    readable pose energy, and silhouette discipline, alongside contours paced by reality tension,
-    readable pose energy, and silhouette discipline; cel paint and ink grain tuned to pop material
-    contrast, alongside cel paint and ink grain tuned to reality material contrast; clean graphic
-    highlights and playful glow, alongside a reality light logic using cel rim, glow behavior, and
-    blocked shadow; pop converted into reusable framing rhythm and anime timing, alongside reality
-    converted into reusable framing rhythm and anime timing
+    High-key color grouping when palette is open; bright flat accents; crisp graphic
+    highlights; restrained glow over stable silhouettes.
   creative_brief: >-
-    Apply Pop Reality Bend Style after prompt X as a transferable anime-prestige layer: prompt X
-    supplies subject, action, setting, tone, and intensity, while this preset supplies a pop anime
-    direction shaped by era-aware line economy and genre tone, alongside a reality anime direction
-    shaped by era-aware line economy and genre tone, alongside contours paced by pop tension,
-    readable pose energy, and silhouette discipline, alongside contours paced by reality tension,
-    readable pose energy, and silhouette discipline; bright pop flats, candy accents, and high-key
-    cel contrast, alongside a reality accent system held inside disciplined cel values; clean
-    graphic highlights and playful glow, alongside a reality light logic using cel rim, glow
-    behavior, and blocked shadow; cel paint and ink grain tuned to pop material contrast, alongside
-    cel paint and ink grain tuned to reality material contrast and pop converted into reusable
-    framing rhythm and anime timing, alongside reality converted into reusable framing rhythm and
-    anime timing, finish discipline, and negative controls without requiring a fixed canon cast,
-    title scene, prop bundle, location, sport, instrument, weapon, or card composition.
+    Apply bright accents, graphic highlights and restrained glow without altering the
+    requested forms or scene. Honor explicit palette, mood and framing.
 avoidRules:
   - realistic
   - 3d render
@@ -100,7 +55,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - generic isekai gloss
   - plastic digital anime
@@ -111,15 +65,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-151.webp
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy
-    effects clutter, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise, readable text
+    artifacts, watermark, signature, generic isekai gloss, plastic digital anime, overbusy effects
+    clutter, fixed canon character, literal title scene, required anime screenshot, generic anime
+    filter, prompt-literal card, muddy cel noise
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP22-104
+packId: pack_22
+name: Structural Pen and Wash
+category: 1. Workshop Painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - workshop-painting
+  - pen-and-wash
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Line-first mixed-media drawing in which a structural pen contour carries form and transparent
+    watercolor adds selective color masses.
+  subject_treatment: >-
+    Preserve requested identity, proportions, pose and action. Establish the existing structure with
+    varied, occasionally broken lines before adding washes that leave portions of the form open.
+  color_and_tone: >-
+    Keep color subordinate to the drawing while respecting the requested palette. Use wash value to
+    support the line rather than replace its shape information.
+  lighting_and_shadow: >-
+    Follow the requested illumination. Use line density and wash value to express its existing shadow
+    pattern without inventing a new source.
+  texture_and_material: >-
+    Keep washes light, with localized pigment marks and little surface noise. Vary line weight through
+    the form instead of using one uniform digital contour.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and element placement. Do not add a card panel
+    or recompose around a border that was not requested.
+  atmosphere_and_mood: >-
+    Retain the requested mood. A drawn line and watercolor wash should not add an unrequested
+    travel-journal setting, narrative or decorative annotation.
+  rendering_and_quality: >-
+    Keep the drawing legible without color and let washes clarify rather than blur its structure.
+    Avoid photographic shading that competes with the line.
+avoidRules:
+  - uniform digital outline
+  - photographic shading
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-104.webp
+attributes:
+  negativePrompt: uniform digital outline, photographic shading
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: mixed-media
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: mixed-media
+    avoidRules:
+      - text: uniform digital outline
+        field: rendering_and_quality
+      - text: photographic shading
+        field: rendering_and_quality
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S004
+    sourceTitle: Pen & Wash
+    referenceIds:
+      - S15
+      - S16
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: workshop-painting
+  categoryName: 1. Workshop Painting
+  tags:
+    - trading-card-illustration
+    - workshop-painting
+    - pen-and-wash
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

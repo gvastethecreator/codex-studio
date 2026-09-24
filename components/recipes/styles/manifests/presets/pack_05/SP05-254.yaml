@@ -16,74 +16,31 @@ tags:
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: >-
-    Fushigi Yuugi - Celestial Maiden Portal Epic acts as a transferable anime-battle/worlds router:
-    Fushigi Yuugi - Celestial Maiden Portal Epic, celestial romance omen style grammar with astral
-    halos, constellar ornament, clean melodrama, and one symbolic portal glow; combine it with
-    isekai and high-fantasy anime grammar with magic-system readability, quest-world texture,
-    luminous adventure, and character-independent fantasy routing; named titles, studios, or lineage
-    words may guide style, but they must not require canon cast, title-scene replication,
-    screenshots, logos, or one fixed card concept.
+    Romantic cel illustration with ornamental arcs, halo-like value rings, and carefully spaced
+    decorative linework.
   subject_treatment: >-
-    Preserve prompt subject, action, and context while restyling silhouette, material response,
-    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Fushigi
-    Yuugi - Celestial Maiden Portal Epic, celestial romance omen style grammar with astral halos,
-    constellar ornament, clean melodrama, and one symbolic portal glow as portable contour, motion
-    grammar, surface language, and emotional pressure without requiring canon elements or a default
-    action setup.
+    Keep the requested subject and action; let arc-shaped accents follow existing contours without
+    adding symbols or portals.
   color_and_tone: >-
-    Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens,
-    parchment neutrals, magical violets, and controlled pastel or dark contrast; let Fushigi Yuugi -
-    Celestial Maiden Portal Epic, celestial romance omen style grammar with astral halos, constellar
-    ornament, clean melodrama, and one symbolic portal glow choose accent intensity, value contrast,
-    emotional temperature, and power-system separation while staying attached to prompt X.
+    Lavender, deep blue, and selective warm red create clean melodramatic contrast; honor named
+    colors in the prompt.
   lighting_and_shadow: >-
-    Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and
-    clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic,
-    material depth, and mood from Fushigi Yuugi - Celestial Maiden Portal Epic, celestial romance
-    omen style grammar with astral halos, constellar ornament, clean melodrama, and one symbolic
-    portal glow without replacing prompt X with a stock anime frame.
+    Soft rim light and luminous ringlike value accents remain graphic and restrained.
   texture_and_material: >-
-    Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel
-    glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Fushigi
-    Yuugi - Celestial Maiden Portal Epic, celestial romance omen style grammar with astral halos,
-    constellar ornament, clean melodrama, and one symbolic portal glow controlled, denoised, and
-    coherent across bodies, objects, environments, abstractions, and action.
+    Smooth cel fills and fine constellar-style marks add polish without changing depicted materials.
   camera_and_composition: >-
-    Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed
-    cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook
-    scale; convert Fushigi Yuugi - Celestial Maiden Portal Epic, celestial romance omen style
-    grammar with astral halos, constellar ornament, clean melodrama, and one symbolic portal glow
-    into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of
-    one fixed style sample layout.
+    Preserve the requested layout; use curved spacing and focal emphasis without opening a threshold
+    or new scene.
   atmosphere_and_mood: >-
-    Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional
-    craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic,
-    comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while
-    keeping the anime-battle lineage readable.
+    Tender and dramatic, with its intensity guided by the prompt.
   rendering_and_quality: >-
-    Finish with clean fantasy-anime finish with stable anatomy and creature/object structure,
-    controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize
-    stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy
-    darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+    Maintain clear silhouettes, fine ornament, and controlled bloom around existing focal forms.
   key_features: >-
-    Fushigi Yuugi - Celestial Maiden Portal Epic, celestial romance omen style grammar with astral
-    halos, constellar ornament, clean melodrama, and one symbolic portal glow; clear fantasy
-    silhouettes, spell-effect hierarchy, surface simplification, creature or object readability, and
-    portal-like transformation logic; cloth, leather, polished armor, parchment, herbarium texture,
-    stone, food steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path
-    diagonals, transition thresholds, group-scale spacing without fixed cast, adventure-depth cues,
-    symbolic magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish
-    with stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic
-    text, and no generic isekai gloss
+    Ornamental arcs, lavender light, clean melodramatic contrast, and restrained circular glow
+    create a distinct finish.
   creative_brief: >-
-    Apply Fushigi Yuugi - Celestial Maiden Portal Epic after prompt X as a transferable
-    anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity,
-    while this preset supplies Fushigi Yuugi - Celestial Maiden Portal Epic, celestial romance omen
-    style grammar with astral halos, constellar ornament, clean melodrama, and one symbolic portal
-    glow, isekai and high-fantasy anime grammar with magic-system readability, quest-world texture,
-    luminous adventure, and character-independent fantasy routing, finish discipline, and negative
-    controls without forcing canon cast, title scene, screenshot, card pose, default monster,
-    default combat prop, or prompt-literal card.
+    Apply the romantic color and ornamental line language to the requested content; add no portal,
+    celestial setting, or new symbol.
 avoidRules:
   - realistic
   - 3d render
@@ -95,7 +52,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - named franchise likeness
   - couple copy
@@ -112,7 +68,6 @@ avoidRules:
   - cosplay
   - generic anime filter
   - prompt-required card
-  - readable text
   - logo
   - muddy noisy darks
 assets:
@@ -120,10 +75,10 @@ assets:
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, named franchise likeness, couple copy, school uniform,
-    readable sigil, shrine hallway, tarot/card prop, RPG UI, readable magic text, generic isekai
-    wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, readable text, logo, muddy noisy darks
+    artifacts, watermark, signature, named franchise likeness, couple copy, school uniform, readable
+    sigil, shrine hallway, tarot/card prop, RPG UI, readable magic text, generic isekai wallpaper,
+    fixed canon character, title scene replication, required source-frame look, cosplay, generic
+    anime filter, prompt-required card, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

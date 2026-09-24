@@ -28,7 +28,6 @@ export const GENERATED_STYLE_PRESETS = [
         'Use legible layer order, consistent thickness and restrained fiber detail. Avoid a pile of disconnected paper objects.',
     },
     ui: {
-      previewStatus: 'pending',
       kind: 'full_style',
       derivedFrom: ['SP04-018'],
       visualEvaluation: 'pending',
@@ -58,7 +57,6 @@ export const GENERATED_STYLE_PRESETS = [
         'Keep washes transparent, protected lines deliberate and important contours legible. Avoid random crayon scribbles.',
     },
     ui: {
-      previewStatus: 'pending',
       kind: 'full_style',
       derivedFrom: ['SP04-017'],
       visualEvaluation: 'pending',
@@ -89,7 +87,6 @@ export const GENERATED_STYLE_PRESETS = [
         'Maintain readable planes, intentional brush boundaries and restrained microtexture. Avoid photographic gloss or a blanket canvas overlay.',
     },
     ui: {
-      previewStatus: 'pending',
       kind: 'full_style',
       derivedFrom: ['SP04-021'],
       visualEvaluation: 'pending',
@@ -119,7 +116,6 @@ export const GENERATED_STYLE_PRESETS = [
         'Keep relief marks legible and physical depth restrained. Avoid deep extrusions, conflicting support shadows or fake embossed typography.',
     },
     ui: {
-      previewStatus: 'pending',
       kind: 'full_style',
       derivedFrom: ['SP10-080'],
       visualEvaluation: 'pending',

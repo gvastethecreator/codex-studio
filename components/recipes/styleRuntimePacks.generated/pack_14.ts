@@ -3,28 +3,24 @@
 import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeTypes';
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
-  () => import('./pack_14/mythic-symbolism-1').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_14/mythic-ritual-noir-2').then((module) => module.GENERATED_STYLE_PRESETS),
   () =>
-    import('./pack_14/mythic-pantheons-and-legends-3').then(
+    import('./pack_14/greek-mythology-epic-noir-1').then(
       (module) => module.GENERATED_STYLE_PRESETS,
     ),
   () =>
-    import('./pack_14/mythic-cosmology-and-omens-4').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
-  () => import('./pack_14/mythic-greek-epics-5').then((module) => module.GENERATED_STYLE_PRESETS),
-  () =>
-    import('./pack_14/mythic-african-cosmologies-6').then(
+    import('./pack_14/japanese-mythology-kami-and-yokai-2').then(
       (module) => module.GENERATED_STYLE_PRESETS,
     ),
   () =>
-    import('./pack_14/mythic-japanese-yokai-and-kami-7').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
-  () => import('./pack_14/mythic-norse-sagas-8').then((module) => module.GENERATED_STYLE_PRESETS),
+    import('./pack_14/norse-mythology-sagas-3').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_14/mande-oral-epic-4').then((module) => module.GENERATED_STYLE_PRESETS),
   () =>
-    import('./pack_14/mythic-mesoamerican-suns-9').then((module) => module.GENERATED_STYLE_PRESETS),
+    import('./pack_14/yoruba-mythology-orisha-5').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_14/akan-mythology-anansi-6').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_14/egyptian-mythology-7').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_14/maya-mythology-8').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_14/mexica-mythology-9').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {
@@ -33,7 +29,7 @@ export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack>
     id: 'pack_14',
     name: 'Mythic Noir Curated Vault',
     description:
-      'A curated pack of dark, elegant, and mythic visual directions designed for a strong, authorial identity.',
+      'Distinct cultures and mythologies expressed through recognizable motifs, material choices and illustrated design, adapted to the requested subject.',
     presets: categoryPresets.flat(),
   };
 }

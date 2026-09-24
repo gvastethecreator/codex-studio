@@ -16,80 +16,37 @@ tags:
   - 90s-golden-era
 visualDna:
   aesthetic: >-
-    Sparkling Magical Chorus Style acts as a transferable anime-prestige router: a sparkling anime
-    direction shaped by era-aware line economy and genre tone, alongside a magical anime direction
-    shaped by era-aware line economy and genre tone; fuse it with 90s golden-era anime direction
-    with sharp cel shadows, dramatic closeups, aura effects, urban melancholy, and high-contrast
-    compositing; it routes era, genre, line economy, cel or digital finish, and performance tone
-    without locking prompt content to the source title or sample image.
+    Luminous 90s cel drawing with fine curved contours, smooth value transitions and precise
+    star-point highlights. Its chorus comes from repeated ornamental rhythm, not a required group of
+    characters.
   subject_treatment: >-
-    Preserve the prompt subject, action, and context while restyling forms through contours paced by
-    sparkling tension, readable pose energy, and silhouette discipline, alongside contours paced by
-    magical tension, readable pose energy, and silhouette discipline; identity should remain
-    readable through anime contour, expression economy, pose energy, shape simplification, and
-    effect hierarchy instead of a required canon character or title scene.
+    Preserve the requested forms and count. Use graceful continuous contours and small glints along
+    existing edges; do not recast the subject as a magical character or add companions.
   color_and_tone: >-
-    Map color through sparkling pink, moon blue, gold, and pearl highlights, alongside a sparkling
-    accent system held inside disciplined cel values; anchor it in deep night blues, saturated aura
-    color, jewel accents, warm skin cel tones, smoke grays, and VHS-era contrast; keep value
-    separation clean, cel flats intentional, accents purposeful, and palette behavior attached to
-    the requested content.
+    When color is open, combine pearl white, moon blue, rose and pale gold in clear cel-value groups.
+    Keep requested hues and reserve bright accents for a few focal points.
   lighting_and_shadow: >-
-    Use magical glow, starbursts, and clean transformation rim light, alongside a sparkling light
-    logic using cel rim, glow behavior, and blocked shadow; combine it with hard-edged rim light,
-    aura bloom, neon spill, twilight gradients, speed-flash cuts, and moody cel shadow blocks;
-    shadows should read as anime light design, rims should clarify form, and glow or effects should
-    support the prompt rather than replacing it.
+    Pair soft luminous transitions with crisp, tiny highlight flares. Keep shadows in deliberate cel
+    shapes and do not invent a transformation light source.
   texture_and_material: >-
-    Render sparkle overlays, smooth cel gradients, and decorative ink accents, alongside cel paint
-    and ink grain tuned to sparkling material contrast; anchor surfaces in painted cels, compositing
-    grain, inked speed marks, smoke layers, leather or metal highlights, and analog scan softness;
-    cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay
-    coherent across people, objects, environments, action, and abstractions.
+    Use clean painted fills, fine decorative ink and sparse sparkle points. Keep surface response
+    faithful to each material; never cover forms with a glitter texture.
   camera_and_composition: >-
-    Frame around group rhythm, repeated profile beats, and musical spacing, alongside sparkling
-    converted into reusable framing rhythm and anime timing, then extend it with cinematic closeups,
-    speed-line vectors, dramatic low angles, layered profile cuts, and compressed emotional space;
-    the style should support portraits, props, machines, performances, landscapes, symbols, and full
-    scenes through reusable anime staging grammar instead of one fixed card layout.
+    Repeat small accents at measured intervals to create musical balance within the supplied
+    composition. Keep the requested framing and number of subjects.
   atmosphere_and_mood: >-
-    Carry mood through collective sparkle and emotional uplift, alongside sparkling emotional
-    pressure and genre-specific tone; braid it with heightened rivalry, melancholy cool, occult
-    romance, existential drift, heroic escalation, and serious adult tone; the preset can become
-    funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while
-    preserving the chosen anime lineage.
+    Let lightness and uplift come from spacing, color and highlight cadence. Preserve the prompt's
+    tone instead of forcing a celebratory or magical event.
   rendering_and_quality: >-
-    Finish with clean anime finishing that keeps sparkling identity readable without noisy denoise,
-    alongside clean anime finishing that keeps magical identity readable without noisy denoise;
-    enforce premium 90s cel finish with crisp anatomy, readable effects, denoised grain, and no
-    cheap anime-filter smear; prioritize clean denoise, stable anatomy or object structure, readable
-    effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or
-    3D-render drift.
+    Use a delicate-to-bold line hierarchy, polished cel gradients and a few crisp starbursts. Keep
+    detail legible and the background integrated without glitter haze.
   key_features: >-
-    a sparkling anime direction shaped by era-aware line economy and genre tone, alongside a magical
-    anime direction shaped by era-aware line economy and genre tone; contours paced by sparkling
-    tension, readable pose energy, and silhouette discipline, alongside contours paced by magical
-    tension, readable pose energy, and silhouette discipline; sparkle overlays, smooth cel
-    gradients, and decorative ink accents, alongside cel paint and ink grain tuned to sparkling
-    material contrast; magical glow, starbursts, and clean transformation rim light, alongside a
-    sparkling light logic using cel rim, glow behavior, and blocked shadow; group rhythm, repeated
-    profile beats, and musical spacing, alongside sparkling converted into reusable framing rhythm
-    and anime timing
+    fine curved contours; pearl, moon-blue and rose accents; sparse star-point glints arranged in a
+    repeated rhythm
   creative_brief: >-
-    Apply Sparkling Magical Chorus Style after prompt X as a transferable anime-prestige layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a
-    sparkling anime direction shaped by era-aware line economy and genre tone, alongside a magical
-    anime direction shaped by era-aware line economy and genre tone, alongside contours paced by
-    sparkling tension, readable pose energy, and silhouette discipline, alongside contours paced by
-    magical tension, readable pose energy, and silhouette discipline; sparkling pink, moon blue,
-    gold, and pearl highlights, alongside a sparkling accent system held inside disciplined cel
-    values; magical glow, starbursts, and clean transformation rim light, alongside a sparkling
-    light logic using cel rim, glow behavior, and blocked shadow; sparkle overlays, smooth cel
-    gradients, and decorative ink accents, alongside cel paint and ink grain tuned to sparkling
-    material contrast and group rhythm, repeated profile beats, and musical spacing, alongside
-    sparkling converted into reusable framing rhythm and anime timing, finish discipline, and
-    negative controls without requiring a fixed canon cast, title scene, prop bundle, location,
-    sport, instrument, weapon, or card composition.
+    Restyle the requested content with graceful cel linework, measured luminous accents and repeated
+    ornamental cadence. Preserve its identity, action, environment and composition; add no magical
+    cast, costume or event.
 avoidRules:
   - realistic
   - 3d render
@@ -101,7 +58,6 @@ avoidRules:
   - low quality
   - jpeg artifacts
   - watermark
-  - text
   - signature
   - flat modern moe
   - generic shonen screenshot
@@ -112,15 +68,14 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
-  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-012.webp
 attributes:
   negativePrompt: >-
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS
-    noise, fixed canon character, literal title scene, required anime screenshot, generic anime
-    filter, prompt-literal card, muddy cel noise, readable text
+    artifacts, watermark, signature, flat modern moe, generic shonen screenshot, messy VHS noise,
+    fixed canon character, literal title scene, required anime screenshot, generic anime filter,
+    prompt-literal card, muddy cel noise
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

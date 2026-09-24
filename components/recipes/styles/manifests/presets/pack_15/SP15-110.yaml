@@ -1,0 +1,87 @@
+schemaVersion: 1
+id: SP15-110
+packId: pack_15
+name: Glitchpunk
+category: 7. Media, Vapor & Glitch Punks
+version: 2
+supportedTasks: &id002
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags: &id001
+  - curation-v2
+  - identity-reviewed
+  - visual-evaluation-pending
+  - media-vapor-and-glitch-punks
+visualDna:
+  aesthetic:
+    Break a clean digital image locally with displaced RGB contours, compression blocks, clipped pixel
+    clusters, and interrupted interface-like fragments, keeping most of the subject's structure stable.
+  subject_treatment:
+    Preserve the requested subject, identity, and action; offset only selected edges, reflections,
+    or secondary details so corruption reads as a deliberate digital disturbance rather than anatomy damage.
+  color_and_tone:
+    Use a stable base palette with brief cyan, magenta, or red channel slips; keep the main value
+    grouping coherent and avoid converting every region into neon.
+  lighting_and_shadow:
+    Maintain the underlying light logic and use channel offsets as graphic edge events;
+    do not let glitch marks act as an all-over lighting effect.
+  texture_and_material:
+    Contrast clean rendered regions with sparse pixel stair-steps, compression smears,
+    and raster breaks; avoid analog dust, film grain, and physical paper textures.
+  camera_and_composition:
+    Preserve the requested camera and silhouette; use a few short horizontal or stepped
+    disruptions, with negative space around the focal form.
+  atmosphere_and_mood:
+    Create unstable, rebellious digital energy without implying a specific device, game
+    interface, or cyberpunk city.
+  rendering_and_quality:
+    Keep corruption sharply localized and the core subject readable at thumbnail scale;
+    preserve facial, limb, and object continuity.
+avoidRules:
+  - global image tearing or unreadable pixel noise
+  - analog scanlines and monitor frames dominating the image
+  - glitch marks that alter identity or anatomy
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP15-110.webp
+attributes:
+  negativePrompt:
+    global image tearing or unreadable pixel noise, analog scanlines and monitor frames dominating
+    the image, glitch marks that alter identity or anatomy
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: illustration
+    avoidRules:
+      - text: global image tearing or unreadable pixel noise
+        field: rendering_and_quality
+      - text: analog scanlines and monitor frames dominating the image
+        field: rendering_and_quality
+      - text: glitch marks that alter identity or anatomy
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP15-110
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: media-vapor-and-glitch-punks
+  categoryName: 7. Media, Vapor & Glitch Punks
+  tags: *id001
+  supportedTasks: *id002
+  hasDefaultImage: true

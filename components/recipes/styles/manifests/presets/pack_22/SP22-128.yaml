@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP22-128
+packId: pack_22
+name: Organic Storypaint
+category: 4. Storybook & Animation
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - storybook-and-animation
+  - organic-ornamental-painting
+  - portable-style-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Ornamental painting creates a flowing rhythm by repeating curved marks at varied scales within the
+    forms already present, not by adding new objects.
+  subject_treatment: >-
+    Preserve the requested identity, proportions, pose and action. Let curved rhythms follow existing
+    contours and internal shapes without changing the subject or adding motifs.
+  color_and_tone: >-
+    Establish broad color masses first, then add localized rhythmic accents. Retain the requested palette
+    and keep each existing form distinct.
+  lighting_and_shadow: >-
+    Follow the requested light direction and shadow pattern. Use color masses and short strokes to express
+    form without adding a glow or changing the light source.
+  texture_and_material: >-
+    Use short gouache-like strokes with restrained grain. Keep the surface variation local rather than
+    adding a uniform texture layer.
+  camera_and_composition: >-
+    Preserve the requested viewpoint, crop, framing and element placement. Decorative rhythm does not
+    change the composition or silhouette.
+  atmosphere_and_mood: >-
+    Keep the requested mood and setting. Organic mark-making does not add botanical or other thematic
+    motifs to the scene.
+  rendering_and_quality: >-
+    Vary line weight by hand and keep ornament inside the existing forms. Maintain a clear hierarchy
+    between major shapes and the smaller repeated accents.
+avoidRules:
+  - unrequested added motifs
+  - uniform surface grain
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP22-128.webp
+attributes:
+  negativePrompt: unrequested added motifs, uniform surface grain
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: painting
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: painting
+    avoidRules:
+      - text: unrequested added motifs
+        field: subject_treatment
+      - text: uniform surface grain
+        field: texture_and_material
+  sourceMetadata:
+    atlas: Codex Studio Atlas TCG v0.1
+    sourceId: TCG-S028
+    sourceTitle: Organic Storypaint
+    referenceIds:
+      - S20
+      - S18
+    evidenceStatus: study
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: storybook-and-animation
+  categoryName: 4. Storybook & Animation
+  tags:
+    - trading-card-illustration
+    - storybook-and-animation
+    - organic-ornamental-painting
+    - portable-style-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

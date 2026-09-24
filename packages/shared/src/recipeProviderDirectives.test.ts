@@ -33,4 +33,26 @@ describe('recipeProviderDirectives', () => {
   it('rejects malformed metadata before provider compilation', () => {
     expect(isRecipeProviderDirectives({ protocol: 'recipe-provider-directives/v1' })).toBe(false);
   });
+
+  it('keeps compiled instruction boundaries while normalizing spaces within lines', () => {
+    const directives = createRecipeProviderDirectives({
+      recipeId: 'styles',
+      title: 'Styles',
+      sections: [
+        {
+          title: 'Intentional Style Plan',
+          directives: [
+            {
+              label: 'Compiled Instructions',
+              value:
+                'STYLE APPLICATION CONTRACT\nOutput  medium: illustration\nUSER PROMPT  one stool',
+            },
+          ],
+        },
+      ],
+    });
+    expect(serializeRecipeProviderDirectives(directives)).toContain(
+      'STYLE APPLICATION CONTRACT\nOutput medium: illustration\nUSER PROMPT one stool',
+    );
+  });
 });
