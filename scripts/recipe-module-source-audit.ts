@@ -7,10 +7,7 @@ const recipeSurfaceDirs = ['components/recipes', 'components'] as const;
 
 const recipeSurfaceFiles = new Set(['components/RecipesView.tsx', 'components/RecipeRouter.tsx']);
 
-const allowedRecipeSupportFiles = new Set([
-  'components/recipes/recipeModuleUi.ts',
-  'components/recipes/recipeModuleUi.test.ts',
-]);
+const allowedRecipeSupportFiles = new Set(['components/recipes/recipeModuleUi.ts']);
 
 const forbiddenMarkers = [
   'buildRecipeContext',
@@ -38,6 +35,7 @@ function toRepoPath(rootDir: string, filePath: string) {
 
 function isRecipeSurface(repoPath: string) {
   if (!/\.(ts|tsx)$/.test(repoPath)) return false;
+  if (/\.test\.(ts|tsx)$/.test(repoPath)) return false;
   if (allowedRecipeSupportFiles.has(repoPath)) return false;
   if (recipeSurfaceFiles.has(repoPath)) return true;
   return repoPath.startsWith('components/recipes/');

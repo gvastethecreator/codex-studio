@@ -21,6 +21,11 @@ describe('recipe module source audit', () => {
       "import { buildRecipeContext } from '../../lib/recipeContext';",
     );
     await writeRepoFile(rootDir, 'components/recipes/recipeModuleUi.ts', 'export const ok = true;');
+    await writeRepoFile(
+      rootDir,
+      'components/recipes/StylesRecipe.test.tsx',
+      'buildRecipeContext();',
+    );
     await writeRepoFile(rootDir, 'lib/recipeModules.ts', 'buildGenerationTaskSpecFromRecipe();');
 
     const report = await createRecipeModuleSourceAuditReport(rootDir);
