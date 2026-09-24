@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "🚀 dev",
+      "label": "▶️ Dev",
       "type": "shell",
       "command": "bun run dev",
       "options": { "cwd": "${workspaceFolder}" },
@@ -10,23 +10,7 @@
       "isBackground": true
     },
     {
-      "label": "🖥 ui",
-      "type": "shell",
-      "command": "bun run dev:ui",
-      "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": [],
-      "isBackground": true
-    },
-    {
-      "label": "⚙ api",
-      "type": "shell",
-      "command": "bun run dev:server",
-      "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": [],
-      "isBackground": true
-    },
-    {
-      "label": "🧪 test",
+      "label": "🧪 Test",
       "type": "shell",
       "command": "bun run test",
       "options": { "cwd": "${workspaceFolder}" },
@@ -37,23 +21,7 @@
       }
     },
     {
-      "label": "🧹 lint",
-      "type": "shell",
-      "command": "bun run lint",
-      "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": [],
-      "group": "test"
-    },
-    {
-      "label": "✨ fmt",
-      "type": "shell",
-      "command": "bun run fmt",
-      "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": [],
-      "group": "test"
-    },
-    {
-      "label": "🔍 check",
+      "label": "🧹 Check",
       "type": "shell",
       "command": "bun run check",
       "options": { "cwd": "${workspaceFolder}" },
@@ -61,15 +29,7 @@
       "group": "test"
     },
     {
-      "label": "🧬 typecheck",
-      "type": "shell",
-      "command": "bun run typecheck:environments",
-      "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": [],
-      "group": "test"
-    },
-    {
-      "label": "🏗 build",
+      "label": "🏗️ Build",
       "type": "shell",
       "command": "bun run build",
       "options": { "cwd": "${workspaceFolder}" },
@@ -80,53 +40,21 @@
       }
     },
     {
-      "label": "⚡ quick",
-      "type": "shell",
-      "command": "bun run validate:fast",
-      "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": [],
-      "group": "test"
-    },
-    {
-      "label": "📊 coverage",
-      "type": "shell",
-      "command": "bun run test:coverage",
-      "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": [],
-      "group": "test"
-    },
-    {
-      "label": "✅ gate",
-      "type": "shell",
-      "command": "bun run validate",
-      "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": [],
-      "group": "test"
-    },
-    {
-      "label": "🛡 release",
-      "type": "shell",
-      "command": "bun run validate:release",
-      "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": [],
-      "group": "test"
-    },
-    {
-      "label": "🩺 doctor",
-      "type": "shell",
-      "command": "bun run runtime:doctor",
-      "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": []
-    },
-    {
-      "label": "🔌 providers",
+      "label": "🔌 Provider status",
       "type": "shell",
       "command": "bun run providers:preflight",
       "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": []
     },
     {
-      "label": "🎨 styles",
+      "label": "🩺 Runtime",
+      "type": "shell",
+      "command": "bun run runtime:doctor",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
+      "label": "🎨 Styles",
       "type": "shell",
       "command": "bun run styles:verify",
       "options": { "cwd": "${workspaceFolder}" },
@@ -134,45 +62,7 @@
       "group": "test"
     },
     {
-      "label": "🧩 variants",
-      "type": "shell",
-      "command": "bun run styles:provider-variants:verify -- --provider=grok",
-      "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": [],
-      "group": "test"
-    },
-    {
-      "label": "👁 preview",
-      "type": "shell",
-      "command": "bun run preview",
-      "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": [],
-      "isBackground": true
-    },
-    {
-      "label": "🖼 electron",
-      "type": "shell",
-      "command": "bun run dev:electron",
-      "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": [],
-      "isBackground": true
-    },
-    {
-      "label": "🧱 init",
-      "type": "shell",
-      "command": "bun run studio:init",
-      "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": []
-    },
-    {
-      "label": "📦 deps",
-      "type": "shell",
-      "command": "bun install --frozen-lockfile",
-      "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": []
-    },
-    {
-      "label": "🧾 docs",
+      "label": "🧾 Docs",
       "type": "shell",
       "command": "bun run docs:check",
       "options": { "cwd": "${workspaceFolder}" },
@@ -180,23 +70,7 @@
       "group": "test"
     },
     {
-      "label": "🧼 hygiene",
-      "type": "shell",
-      "command": "bun run repo:hygiene:verify",
-      "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": [],
-      "group": "test"
-    },
-    {
-      "label": "🧭 architecture",
-      "type": "shell",
-      "command": "bun run architecture:verify",
-      "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": [],
-      "group": "test"
-    },
-    {
-      "label": "📜 logs",
+      "label": "📜 Logs",
       "type": "shell",
       "command": "bun run tooling:logs",
       "options": { "cwd": "${workspaceFolder}" },
