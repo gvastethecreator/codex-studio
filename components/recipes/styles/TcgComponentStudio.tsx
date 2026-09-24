@@ -78,16 +78,6 @@ export function TcgComponentStudio({
   const requiredArtworkCount = getRequiredTcgArtworkCount(layoutId);
   const requiredMaskKeys = getRequiredTcgMasks(finishId, layoutId);
 
-  useEffect(() => {
-    if (images.length === 0) return;
-    setArtworkChoices((current) => {
-      if (current[0] || !images[0]) return current;
-      return current.map((choice, index) =>
-        index === 0 ? { kind: 'generated', imageId: images[0].id } : choice,
-      );
-    });
-  }, [images]);
-
   const artwork = useMemo<TcgArtworkSource[]>(
     () =>
       EMPTY_CARD_FIELDS.map((fields, index) => {

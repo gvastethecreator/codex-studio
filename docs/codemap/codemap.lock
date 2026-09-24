@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "source_commit": "d43d1f8caa350aad19a3213d36fdbc17fb4ec57a",
+  "source_commit": "2a19b4c7fba9fbc50ced7ebf5205e5522be60d2a",
   "working_tree_dirty": true,
-  "generated_at": "2026-09-24T03:07:30Z",
-  "generation_id": "84599abeee656c9bacd1690d566e069f018d5a499f0bd8b77c2ef774e9dba25a",
+  "generated_at": "2026-09-24T04:17:55Z",
+  "generation_id": "0f01a63c0d717c164e77ddc0c4524659c48d2bad9f09caa7d485454ccc660b0e",
   "analysis": {
     "version": "syntax-1",
     "digest": "277e322054c030f72811f774ad4e959bcf8d1244bfb70c076e298cf824ccdc3c"
@@ -3628,7 +3628,7 @@
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_17/dungeon-zine-assemblage-and-stampwork-6.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "48571d18563196f88d930bc50050a851af414cfa8c1d9ec832e0d7e728c60a16",
         "size": 6884
@@ -3649,14 +3649,14 @@
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_17/medieval-fantasy-drawing-media-8.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "58afea9ce2b0b0b49345ca91df23677949d825ca33ba90dda091cf014a89db44",
         "size": 10902
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_17/pulp-fantasy-painting-7.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "2435cb8c0ac2d8afd1ace28418fc2a14c691d236437b3aadc20bd5085bbd61a3",
         "size": 4645
@@ -3943,17 +3943,10 @@
       },
       {
         "path": "components/recipes/styles/TcgComponentStudio.tsx",
-        "origin": "untracked",
-        "state": "present",
-        "digest": "b2d91a1e6bcf567543babe951fe47a7e8ff6810fc0a5290481215dd5074fe057",
-        "size": 39179
-      },
-      {
-        "path": "components/recipes/styles/TcgPendingCatalog.tsx",
         "origin": "tracked",
-        "state": "missing",
-        "digest": null,
-        "size": 0
+        "state": "present",
+        "digest": "3d8696f90165c734df14968a0a93109a5efa4f9efc00f2ab1434af12a5826136",
+        "size": 38878
       },
       {
         "path": "components/recipes/styles/collections/categoryDisplayNames.ts",
@@ -4055,21 +4048,21 @@
       },
       {
         "path": "components/recipes/styles/tcgCardRenderer.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "761851b42c5e2c187a6a12c2fb9a6a5f07feaff555e0ccbb1ee6480988843614",
         "size": 34642
       },
       {
         "path": "components/recipes/styles/tcgComponentModel.test.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "7aa7a79dde2fe54ae72fe5bd541028301616f1b46aeb280be839ad2e76df8b48",
         "size": 1232
       },
       {
         "path": "components/recipes/styles/tcgComponentModel.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "228ce11590816fe849b366df7f278a306533fe71905a1edd28969c179520581b",
         "size": 1751
@@ -8170,12 +8163,12 @@
         "size": 710
       }
     ],
-    "digest": "fed9860d9f76d52914c031559234139006a5a1fa8ed02fec69ece69242091750"
+    "digest": "4347e343c0ae2038aa0e2d1e6e9b1e5a481f2a03c9eb1b92af5e1354d9dc038d"
   },
-  "source_digest": "28f6fd9636b1dea45ea61492558617a947d3bd7b094472d019fa326de9e88a95",
+  "source_digest": "0cca59ef06225f2c5d52ce32538db5548f2bc83000e5299476940e750f18cd8b",
   "artifact_hashes": {
-    "codemap.json": "eab456db6c6d53faabfbadecd5e919a57401f21d9337babb4a51c5eb561644cb",
-    "codemap.md": "30716895f6a92b8fbc5685ba8df64d8a74a40ca50ce4b735afd8d7d500778b31",
-    "codemap.html": "b69821641905d96693920c80208a1af7165f84fdaa04545a42456f2e735e93a1"
+    "codemap.json": "4c6374c8004193919b1b027f971dbebba9372b7c908e2b6fe1b3383401dcf58f",
+    "codemap.md": "489ae42e514d33df7852b26bc22d5660fb0a74bd5b92510770b1970e779e26b6",
+    "codemap.html": "c2f64017f9a6d645bfa29a6a6e079c28baafe22998398a41d904baff4645a757"
   }
 }
