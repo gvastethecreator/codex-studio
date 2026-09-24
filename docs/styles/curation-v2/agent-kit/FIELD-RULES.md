@@ -1,73 +1,73 @@
-# Reglas de autoría por campo y trampas de interpretación
+# Field authoring rules and interpretation risks
 
-## Separación previa
+## Separate the original instructions first
 
-Antes de editar, marcar cada instrucción del original como mecanismo visual, objetivo de transformación, contenido temático, formato de salida, referencia de descubrimiento o ejemplo. Una frase puede mezclar funciones. No basta con cambiar nombres ni con añadir “transferable”, “any subject” o “no fixed scene”. El texto siguiente puede contradecir esas frases.
+Before editing, classify each original instruction as a visual mechanism, transformation target, thematic content, output format, discovery reference, or example. A sentence may combine roles. Adding `transferable`, `any subject`, or `no fixed scene` does not resolve contradictory instructions later in a field.
 
-Para un derivado portable, el pedido conserva sujeto, acción, entorno y texto. Para un perfil o tema seleccionado, anotar qué decisiones adicionales se autorizaron. Si hay choque con un bloqueo explícito, no combinar instrucciones contrarias: conservar el bloqueo y registrar la incompatibilidad. No inventar un parser semántico nuevo para ocultar una mala decisión editorial.
+For a portable derivative, preserve the requested subject, action, setting, and text. For a selected profile or theme, record what additional decisions the user authorized. If a proposal conflicts with an explicit lock, preserve the lock and report the incompatibility. Do not invent a semantic parser to conceal an editorial conflict.
 
-### Culturas, mitologías y estéticas X-punk
+### Cultures, mythologies, and X-punk aesthetics
 
-Elegir una de estas direcciones selecciona también su vocabulario visual característico. Quitar una escena obligatoria no significa prohibir ese vocabulario. Steampunk puede incorporar bronce, engranajes funcionales y vapor; una dirección nórdica puede incorporar bestias entrelazadas, madera tallada y herrajes. Aplicar esos elementos a las decisiones de diseño que el pedido deja abiertas, con una función y una jerarquía claras. No exigir que el usuario vuelva a pedir cada rasgo por separado.
+Selecting one of these directions also selects its characteristic visual vocabulary. Removing a mandatory scene must not remove that vocabulary. Steampunk may use bronze, functional gears, and steam; a Norse direction may use interlaced beasts, carved wood, and metal fittings. Apply these elements to design decisions left open by the request, with a clear function and hierarchy. The user need not request every characteristic again.
 
-Conservar la identidad del sujeto, su acción y las restricciones explícitas. No tratar todo detalle sin especificar como si estuviera bloqueado: eso reduce las culturas a paletas y las estéticas a texturas. Tampoco sustituir el sujeto por una escena típica, cambiar la identidad étnica de una persona ni pegar una lista de símbolos sin relación con el diseño. Una motocicleta nórdica puede seguir siendo una motocicleta; no necesita convertirse en un barco vikingo.
+Preserve subject identity, action, and explicit constraints. Treating every unspecified detail as locked reduces cultures to palettes and aesthetics to textures. Do not replace the subject with a stock scene, alter a person's ethnicity, or attach unrelated symbols. A Norse motorcycle can remain a motorcycle; it need not become a Viking ship.
 
-En Mythic Noir, distinguir culturas y mitologías concretas. En Punk Spectrum, conservar una identidad reconocible por cada X-punk; un cambio de clima, color o material aislado no basta para crear otro estilo. La tarjeta debe mostrar una composición terminada que exprese esa identidad. Revisar por separado definición, adaptación al sujeto e imagen representativa.
+Keep Mythic Noir's cultures and mythologies distinct. Keep each Punk Spectrum X-punk identity recognizable; changing only weather, color, or material does not establish another style. A representative card should show a complete composition that expresses that identity. Review the definition, subject transfer, and representative image separately.
 
-## Los ocho campos
+## The eight fields
 
-### aesthetic
+### `aesthetic`
 
-Definir medio y mecanismo dominante. Ejemplo útil: “Relieve de tinta con masas sólidas y huecos tallados”. Ejemplo de riesgo: “Ruinas sagradas con caballeros”. No convertir “relieve” en mero nombre: explicar cómo se construyen formas y valores. Las ruinas pertenecen a una dirección temática cuando fueron pedidas.
+Define the medium and dominant mechanism. Useful: “Ink relief with solid masses and carved gaps.” Risky: “Sacred ruins with knights.” Explain how shapes and values are made. Ruins belong to a requested thematic direction, not an unrequested appearance treatment.
 
-### subject_treatment
+### `subject_treatment`
 
-Explicar cómo se traducen las formas existentes: simplificación, contornos, proporciones autorizadas y detalle interno. No introducir “one girl”, “warrior holding” o una profesión. Si el preset transforma anatomía o vestuario intencionalmente, clasificarlo como transformación explícita; no presentarlo como preservación neutral.
+Explain how existing forms translate: simplification, contours, authorized proportions, and internal detail. Do not insert “one girl,” “warrior holding,” or an occupation. If the preset intentionally changes anatomy or wardrobe, classify that transformation explicitly; do not describe it as neutral preservation.
 
-### color_and_tone
+### `color_and_tone`
 
-Definir relaciones entre valores y colores, acentos y saturación. No introducir objetos para justificar una paleta: “acento rojo” no exige sangre. Distinguir una paleta fija que es parte de un perfil de una paleta flexible. Un conflicto con colores explícitos debe resolverse en el contrato, no con dos mandatos incompatibles.
+Define value and color relationships, accents, and saturation. A red accent does not require blood. Distinguish a fixed palette that defines a profile from a flexible palette. Resolve conflict with requested colors in the contract instead of issuing incompatible instructions.
 
-### lighting_and_shadow
+### `lighting_and_shadow`
 
-Describir dirección, tamaño y dureza de fuentes, agrupación de sombras y respuesta a la luz. Evitar inventar una ventana, neón físico o puesta de sol. El modificador de luz puede cambiar iluminación cuando está seleccionado, pero no el lugar por asociación. No usar “physically accurate” como certificado sin comprobación.
+Describe source direction, size, hardness, shadow grouping, and light response. Do not invent a window, physical neon, or sunset. A selected light modifier may change lighting, but not the setting by association. Do not call a result “physically accurate” without verification.
 
-### texture_and_material
+### `texture_and_material`
 
-Describir escala, distribución y comportamiento. El material concreto es una señal útil: conservar roble, vidrio o fieltro cuando es el objetivo. Quitar la muestra o escena no pedida, no la identidad material. No usar simultáneamente “crecer, erosionar, fracturar, pulir y derretir” sin elegir el mecanismo correcto. Distinguir pigmento sobre la imagen de madera en el objeto representado.
+Describe scale, distribution, and behavior. Retain concrete material identity when it is the target: oak, glass, or felt can be essential. Remove unrequested sample scenes, not the material. Choose the relevant mechanism instead of demanding growth, erosion, fracture, polish, and melting at once. Distinguish pigment applied to an image from wood represented in an object.
 
-### camera_and_composition
+### `camera_and_composition`
 
-Para apariencia: respetar cámara y organización solicitadas, explicar legibilidad dentro de ellas. Para perfil: conservar proyección, escala o layout expresamente elegidos. No mezclar side-view, isométrico y cenital en un mismo mandato. En preserve no reintroducir composición desde aesthetic, subject_treatment o atmosphere_and_mood cuando el campo de cámara está apagado.
+For an appearance treatment, respect the requested camera and organization while preserving legibility. For a profile, retain its selected projection, scale, or layout. Do not demand side view, isometric view, and top view at once. In preserve mode, do not reintroduce composition through `aesthetic`, `subject_treatment`, or `atmosphere_and_mood` when the camera field is disabled.
 
-### atmosphere_and_mood
+### `atmosphere_and_mood`
 
-Expresar sensación mediante ritmo, tensión, contraste y espacio. “Solemne” no obliga a añadir un funeral; “extraño” no exige un corredor vacío. No usar este campo como lista encubierta de props, lore, eventos o personajes. Un tema puede conservar narrativa explícita, pero su clasificación debe advertirlo.
+Express feeling through rhythm, tension, contrast, and space. “Solemn” need not add a funeral; “strange” need not add an empty corridor. Do not use this field as a hidden list of props, lore, events, or characters. A theme may carry explicit narrative, but its classification must disclose that scope.
 
-### rendering_and_quality
+### `rendering_and_quality`
 
-Definir acabado observable: jerarquía de bordes, detalle controlado, bandas de sombra, separación de planos o grano coherente. Evitar adjetivos vacíos como “masterpiece”, “8K” o “high quality” como sustituto de la descripción. “Heavy denoise” no equivale a un parámetro real del proveedor. No sacrificar la técnica del preset por imponer acabado genérico.
+Define observable finish: edge hierarchy, controlled detail, shadow bands, plane separation, or coherent grain. Empty labels such as “masterpiece,” “8K,” and “high quality” cannot replace a description. “Heavy denoise” is not proof of an actual provider parameter. Do not erase the preset's technique to impose a generic finish.
 
-## Negativos, permisos y metadatos
+## Negatives, permissions, and metadata
 
-Revisar `avoidRules`, `attributes.negativePrompt` y reglas de política cuando existan. No prohibir `text` si el caso pide PAUSA ni `illustration` cuando se combina con un estilo dibujado. No borrar negativos de manera global: explicar qué conflicto se resuelve y en qué alcance. Una lista negativa no compensa instrucciones positivas que repiten escenas.
+Inspect `avoidRules`, `attributes.negativePrompt`, and policy rules when present. Do not prohibit `text` when the case requests PAUSA or `illustration` when combined with a drawn style. Do not delete negatives globally; identify the conflict and its scope. Negative rules cannot compensate for positive fields that keep adding an unwanted scene.
 
-Conservar alias y referencias útiles en metadata para encontrar el preset. No trasladar automáticamente esos nombres al prompt. La frontera de metadatos no elimina referencias que ya estén escritas dentro de un campo activo. Revisar el prompt efectivo y los blends recién guardados.
+Keep useful aliases and references in metadata for discovery, but do not automatically put them in the prompt. Metadata isolation does not remove references already written in active visual fields. Inspect the effective prompt and newly saved blends.
 
-Los nombres cortos son etiquetas de navegación. Usar un descriptor concreto para distinguirlos, sin inventar una técnica, historia o promesa de calidad. No cambiar `id`, `packId`, claves de categoría o referencias de favoritos como parte de un renombrado visual.
+Short names are navigation labels. Use a concrete distinguishing descriptor without inventing technique, history, or a quality promise. A visual rename must not change `id`, `packId`, category keys, or favorite references.
 
-El contrato actual de políticas usa `requires` como un permiso o `null`, no una lista arbitraria. Los permisos disponibles incluyen `structure`, `wardrobe`, `design`, `environment`, `materialTarget` y `accent`; confirmar el contrato actual antes de editar. Si una propuesta necesita una combinación no expresable sin cambiar arquitectura, escalar esa decisión: no falsear compatibilidad.
+The current policy contract uses `requires` as one permission or `null`, not an arbitrary list. Available permissions include `structure`, `wardrobe`, `design`, `environment`, `materialTarget`, and `accent`. Confirm the current contract before editing. If a proposal needs a combination the architecture cannot express, escalate it; do not claim compatibility.
 
-## Cuándo conservar, derivar, agrupar o archivar
+## Keep, derive, group, or propose archive
 
-Conservar cuando el preset cumple una función reconocible, aunque sea especializada. Derivar cuando se quiere conservar el mecanismo visual pero cambiar tema, cámara o alcance; el original sigue disponible. Proponer variante cuando el cambio parece limitarse a una dimensión, pero comprobar negativos, medio, permisos y resultados antes de decidir. Proponer archivo cuando la función no aporta una diferencia útil y existe una alternativa revisada.
+Keep a preset with a recognizable function, even when specialized. Derive when preserving the visual mechanism while changing theme, camera, or scope; retain the original. Propose a variant when only one dimension appears to differ, but inspect negatives, medium, permissions, and results first. Propose archive when there is no useful distinction and a reviewed alternative exists.
 
-Cero grupos de DNA exactamente iguales no demuestra ausencia de redundancia semántica. Dos imágenes parecidas no demuestran equivalencia de comportamiento. Dos etiquetas casi iguales no demuestran duplicado. Registrar candidato A, candidato B, hipótesis de diferencia, sujetos comparados, evidencia real y decisión pendiente.
+Zero identical DNA groups does not prove semantic uniqueness. Similar images do not prove equivalent behavior. Similar labels do not prove duplication. Record candidate A, candidate B, the proposed distinction, subjects compared, actual evidence, and pending decision.
 
-No desplegar archive/redirect ni migrar favoritos durante una tarea de redacción. El PR todavía no implementa ese ciclo de vida. Una propuesta escrita no es una operación aplicada.
+Do not deploy archive or redirect logic or migrate favorites during an editorial task. The PR does not implement that lifecycle. A written proposal is not an applied operation.
 
-## Ejemplos antes/después
+## Before-and-after examples
 
-[examples.json](examples.json) reúne doce casos vinculados a archivos reales. `before` es el valor del campo en la fuente identificada por hash. `after` es una propuesta didáctica para un campo, no un manifiesto completo. `wrongFix` indica el atajo que debe evitarse. No copiar un ejemplo de pigmento a un sensor, ni una corrección de derivado libre al perfil que debe conservar su cámara.
+[`examples.json`](examples.json) contains twelve cases linked to source files. `before` is the field value in the hashed source. `after` is an instructional proposal for one field, not a complete manifest. `wrongFix` names the shortcut to avoid. Do not copy a pigment example to a sensor or a portable-derivative correction to a profile that must retain its camera.
 
-Si el hash cambia, releer la fuente. No regenerar hashes para aparentar que una referencia vieja sigue revisada. Las versiones nuevas necesitan evidencia y estado propios.
+If a hash changes, reread the source. Do not regenerate hashes to make an old reference appear reviewed. New versions need their own evidence and status.

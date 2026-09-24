@@ -12,5 +12,6 @@ describe('workspace authority source audit', () => {
 
   it('allows unrelated projection terminology', () => {
     expect(containsRetiredProjectContract('buildWorkspaceProjection()')).toBe(false);
+    expect(containsRetiredProjectContract('cloudProjectId: string')).toBe(false);
   });
 });

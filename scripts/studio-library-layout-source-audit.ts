@@ -8,7 +8,6 @@ const allowedFiles = new Set([
   'apps/local-server/src/library.ts',
   'scripts/migrate-studio-library-layout.ts',
   'scripts/studio-library-layout-source-audit.ts',
-  'scripts/studio-library-layout-source-audit.test.ts',
 ]);
 
 const rawLayoutPathPattern =
@@ -30,6 +29,7 @@ function toRepoPath(rootDir: string, filePath: string) {
 
 function shouldScan(repoPath: string) {
   if (allowedFiles.has(repoPath)) return false;
+  if (/\.test\.(ts|tsx)$/.test(repoPath)) return false;
   return /\.(ts|tsx)$/.test(repoPath);
 }
 

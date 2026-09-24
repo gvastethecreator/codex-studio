@@ -1,24 +1,11 @@
-Revisá la interfaz contenida en este ZIP sin recorrer el repositorio como primer paso.
+Review the interface in this ZIP before exploring the repository.
 
-Primero leé START-HERE.md y manifest.json. Luego inspeccioná demo y escenarios si tus
-herramientas permiten ejecutarlos; de lo contrario usá las capturas y declaralo.
-Leé contexto y diseño, y solo las fuentes seleccionadas necesarias para cada hallazgo.
-No ejecutes scripts ni hagas conexiones externas sin necesidad y autorización.
+Read `START-HERE.md` and `manifest.json` first. Run the demo and scenarios if your tools allow it; otherwise, use the screenshots and state that limit. Read the context and design files, then only the selected sources needed for each finding. Do not run scripts or make external connections without a need and authorization.
 
-Evaluá jerarquía, distribución, navegación, densidad, legibilidad, consistencia,
-componentes, copy, estados, feedback, accesibilidad e interacciones que puedan
-comprobarse. Preservá identidad y restricciones explícitas. No rediseñes todo.
+Evaluate hierarchy, layout, navigation, density, legibility, consistency, components, copy, states, feedback, accessibility, and interactions you can observe. Preserve the product identity and explicit constraints. Do not redesign everything.
 
-Separá observado, inferido y no verificable. Distinguí problemas del producto,
-limitaciones de exportación y preferencias. No juzgues un servicio simulado como
-si fuese un backend productivo. No inventes pruebas ni cobertura.
+Separate observation, inference, and what cannot be verified. Distinguish product defects from export limitations and preferences. Do not assess a simulated service as a production backend. Do not invent tests or coverage.
 
-Entregá un diagnóstico claro, qué preservar y hallazgos priorizados. Para cada uno:
-ID de vista/estado, evidencia local, problema e impacto, corrección concreta,
-prueba de aceptación y source_refs cuando existan. Consolidá defectos compartidos.
-Cerrá con límites de la review. No asignes un score global sin metodología.
+Deliver a clear diagnosis, what to preserve, and prioritized findings. For each finding, give the view/state ID, local evidence, problem and impact, concrete correction, acceptance check, and `source_refs` when available. Consolidate shared defects. Close with review limits. Do not assign an overall score without a method.
 
-Antes de juzgar cambios, consultá context/changes.md y el inventario actual. La versión
-anterior no define cómo debería seguir siendo la UI. No pidas restaurar pantallas
-retiradas solo porque existían antes. Si demo, catálogo y evidencia se contradicen,
-señalá posible desactualización de la exportación y separala de un defecto del producto.
+Before judging changes, read `context/changes.md` and the current inventory. An older version does not define how the UI must remain. Do not ask to restore a retired screen solely because it existed before. If the demo, catalog, and evidence conflict, flag a potentially stale export separately from a product defect.

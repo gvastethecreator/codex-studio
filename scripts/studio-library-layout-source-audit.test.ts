@@ -22,6 +22,11 @@ describe('studio library layout source audit', () => {
     );
     await writeRepoFile(
       rootDir,
+      'apps/local-server/src/imagePipeline.test.ts',
+      "const fixture = path.join(libraryDir, 'outputs');",
+    );
+    await writeRepoFile(
+      rootDir,
       'apps/local-server/src/library.ts',
       "const dbPath = path.join(libraryDir, 'library.sqlite');",
     );

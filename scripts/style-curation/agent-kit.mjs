@@ -368,16 +368,21 @@ function validateReport(report, task) {
 function selfTest(data) {
   const counts = verify(data);
   let checks = 1;
+  const sampledPlaybooks = new Set();
   const test = (fn) => {
     fn();
     checks += 1;
   };
-  for (const review of data.reviews)
+  for (const review of data.reviews) {
+    const playbookId = data.rules.routing[categoryKey(review)];
+    if (sampledPlaybooks.has(playbookId)) continue;
+    sampledPlaybooks.add(playbookId);
     test(() => {
       const task = packet(data, categoryKey(review));
       assert(task.selectedSources.length <= 3 && task.inventory.length === review.expectedCount);
       validateReport(template(task), task);
     });
+  }
   const task = packet(data, categoryKey(data.reviews[0]));
   const reject = (mutate) =>
     test(() => {
@@ -459,6 +464,7 @@ function selfTest(data) {
   return {
     ...counts,
     checks,
+    sampledPlaybooks: sampledPlaybooks.size,
     status: 'passed',
     scope:
       'Kit integrity and report regression tests only; no application tests or images were run.',

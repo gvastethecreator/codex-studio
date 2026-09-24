@@ -34,23 +34,17 @@ The 30 pack 19–21 studies cover ink structures, print registers and paper/pigm
 
 ## Review and acceptance
 
-`styles:curation:verify` checks category ownership, expected counts, source hashes, evidence IDs and exact duplicate DNA. A changed hash requires editorial review of that category; the hash alone is not approval. The register distinguishes source/text review from visual acceptance. Its `visualValidation` remains pending until actual cross-subject images are assessed. Historic [validation records](./VALIDATION.md) describe earlier commits with 20 packs and 1,689 presets; they must not be cited as current verification of this 22-pack tree.
+`styles:curation:verify` checks category ownership, expected counts, source hashes, evidence IDs and exact duplicate DNA. A changed hash requires editorial review of that category; the hash alone is not approval. The register distinguishes source/text review from visual acceptance. Its `visualValidation` remains pending until actual cross-subject images are assessed. Earlier 20-pack validation records are historical evidence, not verification of this 22-pack tree.
 
 For a portable style, compare the same ordinary object, person, interior, exterior and graphic composition under the same supported provider settings. Include a conflicting request for light, camera, text or supplied composition. Check requested-content preservation, unrequested additions, recognizable treatment across subjects, distinctness from nearby presets and preview-to-runtime correspondence. A specialized profile should be tested against its declared function rather than judged as a universal appearance filter. Do not mark a category visually passed from a single attractive card.
 
 ## Reproducible checks
 
-Use Bun and the repository lockfile. Run the affected focused checks while editing, then the broad gates at integration:
+Use Bun and the repository lockfile. Run only affected checks while editing. At integration, the release gate owns provider, recipe, style, test, check, build, documentation, and hygiene verification. Check the generated category review separately because it is owned by the focused curation workflow:
 
 ```bash
-bun scripts/audit-style-curation.ts --verify
 bun scripts/generate-style-curation-review-doc.ts --check
-bun scripts/style-curation/agent-kit.mjs verify
-bun run styles:verify
-bun run test
-bun run check
-bun run build
-bun run providers:verify
+bun run validate:release
 ```
 
 Record the exit status of this tree's checks separately from historical CI reports. Source and test passes do not replace visual review in the running app. Preserve all four `docs/codemap/codemap.{json,md,html,lock}` outputs together when source boundaries or major flows change.

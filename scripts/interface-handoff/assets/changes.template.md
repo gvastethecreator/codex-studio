@@ -1,28 +1,21 @@
-# Cambios del handoff · [export_id]
+# Handoff changes · [export_id]
 
-Baseline anterior: [export_id / primera exportación].
-Fuente actual: [revisión y estado local; sin rutas personales].
-Alcance solicitado: [producto/vistas; distinguir de raíces técnicas].
+Previous baseline: [export_id / first export].
+Current source: [revision and local state; no personal paths].
+Requested scope: [product/views; distinguish from technical roots].
 
-## Interfaz actual vs anterior
+## Current versus previous interface
 
-Vistas/estados nuevos, retirados, fusionados o movidos, con IDs actuales.
-Cambios en flujos, navegación, componentes, datos, diseño y condiciones de captura.
-Enlazar `interface-inventory.json`. No listar archivos irrelevantes del checkout.
+List added, retired, merged, or moved views and states with current IDs. Describe changes to flows, navigation, components, data, design, and capture conditions. Link `interface-inventory.json`. Do not list unrelated checkout files.
 
-## Cómo se adaptó la exportación
+## Export adaptation
 
-Scripts/entrypoints, orden del workflow, imports, adapters, fixtures y escenarios.
-Pruebas/selectores/capturas y documentación actualizados. Qué se reutilizó y por qué.
-No describir como implementado algo que solo está propuesto.
+Describe scripts and entry points, workflow order, imports, adapters, fixtures, and scenarios. Record updated tests, selectors, screenshots, and documentation. State what was reused and why. Do not present a proposal as implemented.
 
-## Evidencia
+## Evidence
 
-Capturas y pruebas nuevas vs heredadas; procedencia y condiciones originales.
-Fidelidad: producto actual/demo actual, o límite concreto si no se pudo comprobar.
-Referencias obsoletas retiradas del nuevo paquete, sin borrar fuentes de producto.
+Separate new from inherited screenshots and tests; record provenance and original conditions. State whether fidelity was checked against the current product and demo, or give the concrete limit. Remove obsolete references from the new package without deleting product sources.
 
-## Límites y exclusiones
+## Limits and exclusions
 
-Diferencias entre producción y demo, alcance excluido con razón y QA no ejecutado.
-Un baseline anterior conservado por fallo no es una exportación nueva.
+Describe production/demo differences, excluded scope and its reason, and QA not run. A previous baseline retained after a failure is not a new export.

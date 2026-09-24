@@ -2,6 +2,11 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import type { Job } from '../packages/shared/src';
+import {
+  observeAcceptedGenerationJob,
+  runLocalGeneration,
+  runLocalGenerationWithLifecycle,
+} from './localGenerationRun';
 
 const mocks = vi.hoisted(() => {
   const stream = {
@@ -122,12 +127,10 @@ vi.mock('../lib/recipeModules', () => ({
 
 describe('accepted batch observation', () => {
   beforeEach(() => {
-    vi.resetModules();
     vi.clearAllMocks();
   });
 
   it('closes an owned stream and leaves an injected stream open', async () => {
-    const { observeAcceptedGenerationJob } = await import('./localGenerationRun');
     const job = await mocks.createJobFixture();
     await observeAcceptedGenerationJob({ job, batchId: 'batch-1' });
     expect(mocks.createStudioEventStream).toHaveBeenCalledTimes(1);
@@ -148,7 +151,6 @@ describe('accepted batch observation', () => {
         }),
     );
     const controller = new AbortController();
-    const { runLocalGeneration } = await import('./localGenerationRun');
     const run = runLocalGeneration({
       config: { ...DEFAULT_GENERATION_CONFIG, batchCount: 2 },
       workspaceId: 'default',
@@ -175,7 +177,6 @@ describe('accepted batch observation', () => {
       status: 'partial',
       counts: { completed: 1, failed: 1, queued: 0, running: 0, cancelled: 0, needs_review: 0 },
     });
-    const { runLocalGenerationWithLifecycle } = await import('./localGenerationRun');
     const outcome = await runLocalGenerationWithLifecycle({
       config: { ...DEFAULT_GENERATION_CONFIG, batchCount: 2 },
       workspaceId: 'workspace-selected',

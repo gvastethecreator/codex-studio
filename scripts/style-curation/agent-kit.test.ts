@@ -12,7 +12,8 @@ describe('style curation agent kit', () => {
     );
     expect(result.status).toBe('passed');
     expect(result.categories).toBeGreaterThanOrEqual(121);
-    expect(result.checks).toBeGreaterThan(result.categories);
+    expect(result.sampledPlaybooks).toBe(result.playbooks);
+    expect(result.checks).toBeGreaterThan(result.playbooks);
     expect(result.examples).toBeGreaterThanOrEqual(12);
   });
 });

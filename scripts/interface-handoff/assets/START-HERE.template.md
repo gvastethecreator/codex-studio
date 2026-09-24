@@ -1,6 +1,3 @@
-# Bootstrap de recepción
+# Review package bootstrap
 
-Desde v0.4 no completar este archivo a mano. `scripts/handoff_delivery.py` genera
-START-HERE.md y AGENTS.md desde manifest.json y un brief inspeccionado conforme a
-assets/brief.schema.json. La copia lateral de START-HERE.md se entrega junto al ZIP.
-No trasladar estas instrucciones de plantilla al artefacto final.
+Since v0.4, do not complete this file manually. `scripts/handoff_delivery.py` generates `START-HERE.md` and `AGENTS.md` from `manifest.json` and an inspected brief that conforms to `assets/brief.schema.json`. Deliver the companion `START-HERE.md` with the ZIP. Do not copy these template instructions into the final artifact.

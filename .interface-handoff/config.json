@@ -56,7 +56,7 @@
   ],
   "export_command": ["bun", "run", "handoff:export"],
   "output_dir": "artifacts/interface-handoff",
-  "task_file": "docs/tasks/interface-handoff.md",
+  "task_file": ".scratch/planning/interface-handoff.md",
   "scope": "all-implemented-views",
   "portability_target": "localhost",
   "capture_profile": {

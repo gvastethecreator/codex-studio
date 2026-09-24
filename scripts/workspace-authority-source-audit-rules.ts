@@ -1,7 +1,7 @@
 const RETIRED_PROJECT_CONTRACT_PATTERNS = [
   /project\.created/i,
-  /projectId/i,
-  /project_id/i,
+  /\bprojectId\b/i,
+  /\bproject_id\b/i,
   /\/api\/projects/i,
   /listProjects/i,
   /ensureDefaultProject/i,

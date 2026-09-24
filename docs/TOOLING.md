@@ -49,3 +49,4 @@ Review the direct dependency diff and every changed upstream release before you 
 ## CI
 
 CI must call these named scripts. Do not fork gate step lists inside workflow YAML.
+The focused style-curation workflow records category-review evidence and checks its generated reader view. It does not repeat the release gate's style validation or test suite.

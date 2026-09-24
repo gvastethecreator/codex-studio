@@ -1,85 +1,73 @@
-# Tarea única: integración Interface Handoff
+# One task: Interface Handoff integration
 
-Crear solo si no existe. Es una tarea interna del agente: implementarla inmediatamente
-en la misma invocación. En actualizaciones, conservarla y registrar adaptaciones necesarias al workflow y el resultado.
-No exigir aprobación adicional ni duplicar tareas de instalación.
+Create this only if it does not exist. It is an internal agent task: implement it in the same invocation. On updates, preserve it and record required workflow adaptations and their result. Do not ask for another approval or duplicate setup tasks.
 
-Estado: planned | in_progress | blocked | implemented | verified
+Status: planned | in_progress | blocked | implemented | verified
 
-## Baseline y objetivo
+## Baseline and objective
 
-Proyecto / commit / working tree / fecha / instrucciones del proyecto.
-Qué UI se exporta y qué review debe habilitar. Alcance total o parcial e inventario base.
+Record the project, commit, working tree, date, and project instructions. State which UI is exported, which review it must enable, full or partial scope, and baseline inventory.
 
-## Observado / desconocido / preservar
+## Observed, unknown, and preserved
 
-Framework y versión instalada, gestor, routing, estilos, providers, pruebas.
-Restricciones y decisiones reales. No atribuir aprobaciones no documentadas.
+Record the installed framework and version, package manager, routing, styles, providers, and tests. Name real constraints and decisions. Do not attribute undocumented approvals.
 
-## Estrategia elegida
+## Chosen strategy
 
-Target: file preferido / localhost justificado / evidence-only parcial.
-UI reutilizada, fronteras de IO, fixtures, escenarios y exclusiones.
-Motivo de elección y alternativas descartadas con evidencia.
+Target: preferred `file`, justified `localhost`, or partial `evidence-only`. Record reused UI, I/O boundaries, fixtures, scenarios, and exclusions. Explain the choice and rejected alternatives with evidence.
 
-## Reconciliación con el proyecto actual
+## Reconcile with the current project
 
-Export_id previo / inventario actual / vistas-estados agregados, retirados o movidos.
-Cambios de contratos, estilos, arquitectura y dependencias fuera de raíces antiguas.
-Adaptaciones necesarias al exporter, workflow, mocks, fixtures, pruebas y contexto.
-Impacto sobre caché/evidencia, validación pendiente y referencias obsoletas que retirar.
+Record the previous `export_id`, current inventory, and added, retired, or moved views and states. Note contract, style, architecture, and dependency changes outside former roots. Identify needed exporter, workflow, mock, fixture, test, and context adaptations. State cache and evidence impact, pending validation, and obsolete references to remove.
 
-## Cambios por archivo
+## Changes by file
 
-Ruta real | cambio | razón | riesgo | prueba.
-Nombres propuestos se marcan como propuestos hasta crearlos.
+Actual path | change | reason | risk | check. Mark proposed filenames as proposals until created.
 
-## Secuencia de implementación
+## Implementation sequence
 
-1. Inventario y baseline comparable con datos seguros.
-2. Entrypoint de review y adapters sin efectos de producción.
-3. Escenarios, navegación, flujos y reset.
-4. Build, índice y contexto desde una misma versión.
-5. Pruebas, privacidad, empaquetado y extracción limpia.
-6. Documentación, comando repetible y receipt de entrega.
+1. Inventory and a safely comparable baseline.
+2. Review entry point and adapters without production effects.
+3. Scenarios, navigation, flows, and reset.
+4. Build, index, and context from one source revision.
+5. Tests, privacy, packaging, and clean extraction.
+6. Documentation, repeatable command, and delivery receipt.
 
-## Criterios de aceptación
+## Acceptance criteria
 
-- [ ] No hay reinterpretación visual ni bypass de auth de producción.
-- [ ] Cada vista/estado incluido se localiza y reproduce.
-- [ ] Acciones relevantes operan sobre estado coherente o declaran su indisponibilidad.
-- [ ] Se cumple y prueba el target de portabilidad solicitado.
-- [ ] Contexto, cobertura, fuentes, diferencias y límites están completos.
-- [ ] Evidencia vinculada a export_id y condiciones reales de captura.
-- [ ] Paquete por allowlist, sin secretos/PII ni dependencias del checkout.
-- [ ] ZIP extraído en otra carpeta, probado y verificable.
-- [ ] Comando único implementado: detecta estado/caché y termina en ZIP.
-- [ ] Configuración y baseline persistidos; no reemplazados ante fallos.
-- [ ] Segunda invocación reutiliza integración sin volver a pedir modos.
-- [ ] Cambios locales, altas/bajas e invalidación global detectados.
-- [ ] Evidencia reutilizada tiene procedencia; gates mínimos ejecutados de nuevo.
+- [ ] No visual reinterpretation or production auth bypass.
+- [ ] Every included view and state is located and reproducible.
+- [ ] Relevant actions use coherent state or declare that they are unavailable.
+- [ ] The requested portability target is met and tested.
+- [ ] Context, coverage, sources, differences, and limits are complete.
+- [ ] Evidence is tied to `export_id` and actual capture conditions.
+- [ ] The allowlisted package has no secrets, PII, or checkout dependencies.
+- [ ] The ZIP is extracted elsewhere, tested, and verifiable.
+- [ ] One implemented command detects state and cache and ends with a ZIP.
+- [ ] Configuration and baseline persist and are not replaced after failure.
+- [ ] A second invocation reuses the integration without asking for modes again.
+- [ ] Local changes, additions, removals, and global invalidation are detected.
+- [ ] Reused evidence has provenance; minimum gates are run again.
+- [ ] Inventory is compared with current sources, router, and runtime, not copied from an old ZIP.
+- [ ] Scripts, entry points, mocks, fixtures, and workflow match current contracts.
+- [ ] Discovery outside earlier roots is reviewed and relevant dependencies are included.
+- [ ] Retired routes and states do not appear in the new package; others' work is preserved.
+- [ ] Reconciliation is current and has no pending differences before the snapshot.
+- [ ] Manifest and inventory copy agree on views, states, entries, and sources.
+- [ ] Fidelity is compared with the current product; without an observable original it remains unverified.
 
-- [ ] Inventario contrastado con fuentes/router/runtime actuales, no copiado del ZIP viejo.
-- [ ] Scripts, entrypoints, mocks, fixtures y workflow adaptados a contratos actuales.
-- [ ] Descubrimiento fuera de raíces previas revisado; dependencias relevantes incorporadas.
-- [ ] Rutas/estados retirados no aparecen en el nuevo paquete; no se borró trabajo ajeno.
-- [ ] Informe de reconciliación vigente y sin diferencias pendientes antes del snapshot.
-- [ ] Manifiesto y copia de inventario coinciden en vistas, estados, entradas y fuentes.
-- [ ] Fidelidad comparada contra producto actual; sin original observable, no verificada.
+## Checks run
 
-## Pruebas ejecutadas
+Command/steps | environment | passed/failed/not-run | evidence | limits.
 
-Comando/pasos | entorno | pass/failed/not_run | evidencia | limitaciones.
+## Rollback and delivery
 
-## Rollback y entrega
+Explain how to revert only this integration without touching the user's earlier changes. List modified files, actual command, ZIP, pending work, and differences from the plan.
 
-Cómo revertir solo esta integración sin tocar cambios previos del usuario.
-Archivos modificados, comando real, ZIP, pendientes, diferencias frente al plan.
+## Agent-ready reception (v0.4)
 
-## Recepción agent-ready (v0.4)
-
-- [ ] Brief actual inspeccionado; AGENTS.md exclusivo del ZIP, sin copiar reglas de desarrollo.
-- [ ] Índice de archivos, plan completo y schema/contrato de review incluidos.
-- [ ] ZIP + brief lateral con mismo export_id entregados sin pasos para el usuario.
-- [ ] Human-ready solo si fue solicitado; guía adicional del mismo snapshot.
-- [ ] Smoke sin repo, enlaces, frescura y capability fallback verificados/documentados.
+- [ ] The current brief was inspected; the ZIP-only `AGENTS.md` does not copy development rules.
+- [ ] File index, complete plan, and review schema/contract are included.
+- [ ] ZIP and companion brief with the same `export_id` were delivered without user steps.
+- [ ] Human-ready guidance was added only if requested, from the same snapshot.
+- [ ] Repository-free smoke, links, freshness, and capability fallback were checked or documented.

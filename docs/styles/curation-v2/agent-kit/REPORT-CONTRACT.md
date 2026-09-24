@@ -1,33 +1,33 @@
-# Contrato del reporte de ejecución
+# Execution report contract
 
-Generar un punto de partida con `agent-kit.mjs template`; no reutilizar un fingerprint de otra categoría o selección. El JSON es un reporte de trabajo, no un nuevo contrato de runtime ni una autorización de migración.
+Create a starting report with `agent-kit.mjs template`. Do not reuse a fingerprint from another category or preset selection. The JSON records editorial work; it is not a runtime contract or migration authorization.
 
-## Estructura
+## Structure
 
-`schemaVersion`, `taskId`, `inputFingerprint` y `selectedPresetIds` deben coincidir con la ficha. `status` admite `blocked`, `text-ready`, `visual-review-needed` o `accepted`.
+`schemaVersion`, `taskId`, `inputFingerprint`, and `selectedPresetIds` must match the packet. `status` is `blocked`, `text-ready`, `visual-review-needed`, or `accepted`.
 
-`classifications` contiene una entrada por preset seleccionado con `presetId`, `kind` y `reason`. `kind` admite `style`, `modifier`, `profile` o `theme`; no `mixed`.
+Each selected preset needs a `classifications` entry with `presetId`, `kind`, and `reason`. `kind` is `style`, `modifier`, `profile`, or `theme`, never `mixed`.
 
-`decisions` contiene `presetId`, `action`, `reason` e `invariants` (array no vacío). Las acciones son `keep`, `derive`, `propose-variant`, `propose-archive` y `escalate`. Adjuntar además un ledger editorial con campo, antes, después, motivo y riesgo. No afirmar que `propose-archive` ya ocultó un preset.
+Each `decisions` entry needs `presetId`, `action`, `reason`, and a nonempty `invariants` array. Actions are `keep`, `derive`, `propose-variant`, `propose-archive`, and `escalate`. Add an editorial ledger for each changed field: before, after, reason, preserved invariant, and risk. `propose-archive` does not hide a preset.
 
-`commands` contiene el comando exacto, `status` (`passed`, `failed`, `not-run`) y `exitCode` real (entero o `null` si no se ejecutó). Conservar los logs fuera de Git. Un error no puede marcarse passed ni una prueba pendiente puede usar código cero. El helper verifica consistencia del registro, no autentica su ejecución.
+For each command, record the exact command, `status` (`passed`, `failed`, or `not-run`), and the actual integer `exitCode` (`null` if not run). Keep logs outside Git. A failed command cannot be `passed`, and a pending test cannot have exit code zero. The helper checks consistency, not whether a command was actually run.
 
-`blockers` explica precondiciones o decisiones sin resolver. `remaining` enumera trabajo no realizado. No quitar pendientes para que el estado parezca mejor. Una ficha resuelve un subconjunto, no autoriza a marcar toda la categoría como aprobada.
+Use `blockers` for unresolved decisions or prerequisites and `remaining` for unfinished work. A packet covers a subset; it does not approve the whole category.
 
-## Evidencia visual
+## Visual evidence
 
-`visual` contiene `status` (`not-run`, `pending`, `failed`, `passed`), `runs` y `humanReview` (`null` mientras no exista una revisión).
+`visual` has `status` (`not-run`, `pending`, `failed`, or `passed`), `runs`, and `humanReview` (`null` until a review exists).
 
-Cada comparación en `runs` contiene `presetId` (original seleccionado), `caseId`, `provider`, `model`, `settings`, `seed` (valor real o `null`), `beforePath`, `beforeSha256`, `afterPath` y `afterSha256`. Las rutas son relativas al repositorio bajo `.local/style-curation/evidence/` y apuntan a imágenes existentes. No compartir credenciales ni subir imágenes generadas al commit.
+Each comparison in `runs` needs the selected original `presetId`, `caseId`, `provider`, `model`, `settings`, actual `seed` or `null`, and `beforePath`, `beforeSha256`, `afterPath`, and `afterSha256`. Paths must point to existing images under `.local/style-curation/evidence/`. Do not commit credentials or generated images.
 
-Registrar asimismo ID y versión del derivado, prompt efectivo, rol y hash de referencias, parámetros soportados, fecha, observaciones por check y diferencias entre repetición A/B. El helper verifica existencia y hash de los archivos mínimos; el revisor debe inspeccionar las imágenes y estos datos adicionales. No demuestra identidad del modelo, comparabilidad experimental ni ausencia de duplicación de contenido.
+Also record the derived preset ID and version, effective prompt, reference role and hash, supported parameters, date, observations for each check, and differences between repetitions A and B. The helper verifies basic file existence and hashes; a reviewer must inspect the images and these additional details. The helper cannot prove model identity, experimental comparability, or absence of content duplication.
 
-Para `passed`, `humanReview` requiere `reviewer` y `recordPath` de una revisión existente. La presencia del archivo no autentica que lo escribió una persona: nunca inventar una firma o aprobación del usuario. El helper exige dos comparaciones registradas por caso seleccionado. Los cinco sujetos comunes se interpretan según el contrato del tipo de preset, no como obligación de quitar sus mecanismos especializados.
+For `passed`, `humanReview` needs a `reviewer` and `recordPath` to an existing review. File existence does not authenticate a human reviewer. Never invent a signature or approval. The helper requires two recorded comparisons for each selected case. Interpret the five common subjects according to the preset type; do not strip the defining mechanisms of a specialized profile to make it look universal.
 
-Para `accepted`, además deben estar cubiertos todos los presets, no quedar bloqueos o pendientes y constar como pasados `bun run styles:verify`, `bun run test`, `bun run check` y `bun run build`. Un caso incompatible o un proveedor no disponible mantiene el lote pendiente/bloqueado; no se falsea una imagen para sortear el requisito.
+For `accepted`, all presets must be covered, no blockers or remaining work may exist, and `bun run styles:verify`, `bun run test`, `bun run check`, and `bun run build` must be recorded as passed. An incompatible case or unavailable provider keeps the packet pending or blocked. Do not fabricate an image to satisfy this requirement.
 
-## Interpretar el validador
+## Interpret validation
 
-`structurallyValid: true` significa que el reporte es coherente con las reglas verificadas. No significa que el trabajo esté aceptado. Leer también `reportedStatus`; el resultado siempre incluye `automaticVisualApproval: false`. Esta herramienta no inspecciona píxeles, no lee artísticamente una imagen y no valida una firma humana.
+`structurallyValid: true` means the report satisfies checked structural rules, not that the work is accepted. Read `reportedStatus` too. The result always includes `automaticVisualApproval: false`. The helper does not inspect pixels, assess artistic quality, or authenticate a human signature.
 
-El helper es de solo lectura. No archiva, renombra, fusiona ni modifica fuentes. Su comprobación de hashes detecta entradas distintas; el audit existente sigue siendo necesario para comprobar que el índice generado corresponde al YAML actual.
+The helper is read-only. It cannot archive, rename, merge, or edit sources. Hash checks detect changed inputs; the existing source audit must still establish that generated indexes match the current YAML.

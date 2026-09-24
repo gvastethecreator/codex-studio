@@ -138,7 +138,7 @@ Elegir un workflow (Create), ajustar el prompt y las referencias, generar, y rev
 - Aceptada: navegación Create | Workflow | Library en el header.
 - Aceptada: Jobs abre un rail que encoge el workbench (\`data-jobs-open\`).
 - Aceptada: catálogo de estilos con selector compacto y panel de exploración.
-- Experimental: Appearance Carbon/Paper y acento Brass ciclable desde el logo.
+- Experimental: Appearance Carbon/Paper y acento Neutral predeterminado, ciclable desde el logo.
 - Desconocida: cualquier rediseño de RecipesView como landing; el landing actual de Create es CreateWorkspace.
 
 ## Preguntas para la review
@@ -158,7 +158,7 @@ Valores tomados de \`docs/DESIGN.md\`, \`styles/workbench-tokens.css\` y chrome 
 
 - Declarado: Workbench 0.4 Ambient Carbon Comfortable. Carbon fondo \`#0a0a0a\`, paneles \`#161616\`, controles \`#2a2a2a\`, wells \`#0d0d0d\`.
 - Paper: fondo \`#efece4\`, paneles \`#e4e0d6\`.
-- Acento Brass \`#c3b28d\` en \`--wb-accent\`.
+- Acento Neutral \`#737373\` en \`--wb-accent\`.
 
 ## Tipo
 
@@ -450,7 +450,7 @@ function briefJson(exportId: string) {
     preserve: [
       'Navegación Create | Workflow | Library',
       'Jobs rail que encoge el workbench',
-      'Tokens Workbench Carbon y acento Brass',
+      'Tokens Workbench Carbon y acento Neutral predeterminado',
     ],
     known_limitations: [
       'Jobs, catalog y providers son simulados.',
