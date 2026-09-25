@@ -231,7 +231,28 @@ describe('style collection projection', () => {
       (item) => item.collectionEntryId === 'scale-micro-macro',
     );
 
-    expect(sensorPresets.map((item) => item.presetId)).toEqual(['SP11-034', 'SP11-035']);
+    expect(sensorPresets.map((item) => item.presetId)).toEqual([
+      'SP11-034',
+      'SP11-035',
+      'SP11-108',
+      'SP11-109',
+      'SP11-110',
+      'SP11-111',
+      'SP11-112',
+      'SP11-113',
+      'SP11-114',
+      'SP11-115',
+      'SP11-116',
+      'SP11-117',
+      'SP11-118',
+      'SP11-119',
+      'SP11-120',
+      'SP11-121',
+      'SP11-122',
+      'SP11-123',
+      'SP11-124',
+      'SP11-125',
+    ]);
     expect(scalePresets.some((item) => item.presetId === 'SP11-034')).toBe(false);
     expect(scalePresets.some((item) => item.presetId === 'SP11-056')).toBe(true);
   });
