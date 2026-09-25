@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP07-128
+packId: pack_07
+name: Tin-Can Scrap Assemblage
+styleAnchors:
+  - Tin-Can Scrap Assemblage
+  - found-object scrap miniature
+  - cut tin cans and bottle caps
+displayName: Tin-Can Scrap Assemblage
+category: 6. Toy Craft And Miniature Architecture
+domain: found-object scrap miniature
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - toy-craft-and-miniature-architecture
+  - scrap
+  - tin-can
+  - assemblage
+visualDna:
+  aesthetic: 'Scrap assemblage: the subject assembled from cut tin cans, bottle caps, washers, springs and spoons, bolted and soldered together.'
+  subject_treatment: Keep the requested subject, its identity, pose and camera, and rebuild it as a handmade tabletop miniature in this material; a requested object stays that object and never turns into a house or building.
+  color_and_tone: Tinplate silver, rust orange, faded paint scraps from old cans and bottle-cap colors; oily grey shadows.
+  lighting_and_shadow: Hard workshop lamp with bright metallic glints on edges and dark gaps between the parts.
+  texture_and_material: Crimped can rims, ridged bottle caps, solder blobs, rust bloom, visible bolts and rivets.
+  camera_and_composition: Keep the requested view on a workbench; each found part stays identifiable inside the new form.
+  atmosphere_and_mood: Scrappy, inventive and defiant, junk turned into character.
+  rendering_and_quality: Photograph of a real metal assemblage; printed can graphics stay faded and unreadable.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tin-Can Scrap Assemblage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: cut tin cans and bottle caps; soldered and bolted joints; spoons and springs as parts; rust bloom; hard metallic glints
+avoidRules:
+  - brand logo on parts
+  - readable text
+  - turning a requested object into a house or building
+  - full-scale real construction
+  - playroom or party scene
+  - readable can labels
+  - clean machined metal
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: brand logo on parts, readable text, turning a requested object into a house or building, full-scale real construction, playroom or party scene, readable can labels, clean machined metal, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: toy-craft-and-miniature-architecture
+  categoryName: 6. Toy Craft And Miniature Architecture
+  tags:
+    - architecture-and-interior
+    - toy-craft-and-miniature-architecture
+    - scrap
+    - tin-can
+    - assemblage
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: found-object scrap miniature

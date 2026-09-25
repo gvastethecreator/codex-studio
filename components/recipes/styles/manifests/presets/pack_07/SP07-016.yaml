@@ -3,7 +3,7 @@ id: SP07-016
 packId: pack_07
 name: Bauhaus Interior
 category: 1. Interior Design Systems
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,83 +12,37 @@ tags:
   - architecture-and-interior
   - interior-design-systems
 visualDna:
-  aesthetic: >-
-    Bauhaus Interior acts as a transferable architecture/interior router: circle-square
-    intersection, tubular steel, primary color accent, white/black structure, clear glass, bent
-    wood; fuse it with interior-system design grammar with furniture-independent proportion,
-    material hierarchy, junction detail, tactile finish, and lived spatial rhythm; route spatial
-    grammar, material behavior, scale, ornament, and light over prompt X without requiring the
-    default sample anchor, fixed spatial set, landscape setup, or object sample.
-  subject_treatment: >-
-    Preserve prompt subject, action, and context while translating any requested subject through
-    clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy,
-    and object-ready interior detailing; treat circle-square intersection, tubular steel, primary
-    color accent, white/black structure, clear glass as massing, edge, surface, joinery, threshold,
-    or ornament behavior rather than a mandatory building scene.
-  color_and_tone: >-
-    Map color through controlled interior color hierarchy, wall or shell base tones, tactile
-    secondary materials, small accent signals, and readable value spacing; let source cues such as
-    circle-square intersection, tubular steel, primary color accent, white/black structure, clear
-    glass decide accent hierarchy, material temperature, and value separation while staying attached
-    to the requested content.
-  lighting_and_shadow: >-
-    Use soft daylight, practical bounce, concealed glow, edge-defining shadow, and material-aware
-    reflection control; make light reveal joints, relief, material depth, scale, and atmosphere from
-    circle-square intersection, tubular steel, primary color accent, white/black structure, clear
-    glass without replacing prompt X with a stock architectural render.
-  texture_and_material: >-
-    Render wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and
-    tactile construction details; prioritize the tactile signals in circle-square intersection,
-    tubular steel, primary color accent, white/black structure, clear glass, with believable surface
-    response, denoised grain, coherent wear, and no generic wallpaper texture.
-  camera_and_composition: >-
-    Frame through cropped architectural-detail framing, modular spacing, planar overlap, threshold
-    cuts, section-like reads, and deliberate negative space; convert circle-square intersection,
-    tubular steel, primary color accent, white/black structure, clear glass into reusable
-    perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed
-    style sample layout.
-  atmosphere_and_mood: >-
-    Carry mood through inhabitable atmosphere, design intent, tactile comfort or tension, and
-    spatial personality without staged showroom dependency; the preset can support adult, strange,
-    sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them
-    while keeping the architectural identity readable.
-  rendering_and_quality: >-
-    Finish with polished architectural visualization clarity with denoised surfaces, believable
-    material response, no fake text, and no decor-catalog drift; keep clean denoise, legible
-    construction, stable object or anatomy structure when applicable, no watermark, no fake readable
-    text, no logo, no camera prop, and no prompt-literal card copy.
-  key_features: >-
-    circle-square intersection, tubular steel, primary color accent, white/black structure, clear
-    glass; clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface
-    hierarchy, and object-ready interior detailing; wood, plaster, metal, textile, glass, tile,
-    concrete, patina, polish, grain, seams, and tactile construction details; cropped
-    architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like
-    reads, and deliberate negative space
-  creative_brief: >-
-    Apply Bauhaus Interior after prompt X as a transferable architecture/interior style layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
-    circle-square intersection, tubular steel, primary color accent, white/black structure, clear
-    glass, bent wood, interior-system design grammar with furniture-independent proportion, material
-    hierarchy, junction detail, tactile finish, and lived spatial rhythm, material discipline,
-    spatial grammar, and negative controls without requiring a single spatial sample, product-photo
-    setup, aisle-like default, or empty abstraction.
+  aesthetic: 'Bauhaus interior: functional workshop modernism with chrome tubular steel, flat white walls, glass, and furniture reduced to structure, circles and rectangles.'
+  subject_treatment: Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.
+  color_and_tone: White, grey and black planes with small primary accents in red, yellow or blue, applied to one wall, cushion or door only.
+  lighting_and_shadow: Even daylight through large steel windows, industrial glass or opal globe lamps, crisp shadows of tubular frames on white floors.
+  texture_and_material: Chrome-plated tubular steel, stretched canvas or woven cane seats, linoleum floors, painted steel window frames, plate glass, hand-woven wall hangings.
+  camera_and_composition: Keep the requested view; orthogonal framing, planes read as flat colored rectangles, clear negative space between objects.
+  atmosphere_and_mood: Rational, bright and purposeful, a room designed like a tool.
+  rendering_and_quality: 'Crisp period-inspired photograph: clean edges, strong geometry, no ornament and no replica of a named designer chair.'
+  key_features: chrome tubular steel; white planes with one primary accent; linoleum floor; steel window grid; orthogonal composition
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bauhaus Interior as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - furniture catalog staging
+  - olive branch in a vase as default decor
+  - panoramic window view as default backdrop
+  - real designer furniture replicas
+  - replacing the requested room with a living room
+  - ornament
+  - clutter
+  - classroom poster
   - ornate
   - cluttered
   - chair focus
-  - classroom poster
   - readable text
   - lamp hero
-  - cluttered interior zones
   - market aisle
   - library aisle
-  - corridor
   - empty abstraction
   - showroom formula
   - chair or sofa focus
   - curtain wall default
   - fixed building-only scene
-  - mandatory interior interior zones
   - corridor perspective
   - furniture showroom
   - prompt-required card
@@ -97,15 +51,16 @@ avoidRules:
   - camera prop
   - mandatory interior set
   - prompt-literal card
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-016.webp
 attributes:
-  negativePrompt: >-
-    ornate, cluttered, chair focus, classroom poster, readable text, lamp hero, cluttered interior
-    zones, market aisle, library aisle, corridor, empty abstraction, showroom formula, chair or sofa
-    focus, curtain wall default, fixed building-only scene, mandatory interior interior zones,
-    corridor perspective, furniture showroom, prompt-required card, logo, watermark, camera prop,
-    mandatory interior set, prompt-literal card
+  negativePrompt: furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, ornament, clutter, classroom poster, ornate, cluttered, chair focus, readable text, lamp hero, market aisle, library aisle, empty abstraction, showroom formula, chair or sofa focus, curtain wall default, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

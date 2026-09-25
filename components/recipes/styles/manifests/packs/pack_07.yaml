@@ -24,6 +24,10 @@ categories:
       - pack_07/SP07-018.yaml
       - pack_07/SP07-019.yaml
       - pack_07/SP07-020.yaml
+      - pack_07/SP07-081.yaml
+      - pack_07/SP07-082.yaml
+      - pack_07/SP07-083.yaml
+      - pack_07/SP07-084.yaml
   - id: architectural-movements-and-vernaculars
     name: 2. Architectural Movements And Vernaculars
     presetRefs:
@@ -40,6 +44,13 @@ categories:
       - pack_07/SP07-028.yaml
       - pack_07/SP07-029.yaml
       - pack_07/SP07-030.yaml
+      - pack_07/SP07-085.yaml
+      - pack_07/SP07-086.yaml
+      - pack_07/SP07-087.yaml
+      - pack_07/SP07-088.yaml
+      - pack_07/SP07-089.yaml
+      - pack_07/SP07-090.yaml
+      - pack_07/SP07-091.yaml
   - id: civic-infrastructure-and-specialty-spaces
     name: 3. Civic Infrastructure And Specialty Spaces
     presetRefs:
@@ -52,6 +63,17 @@ categories:
       - pack_07/SP07-038.yaml
       - pack_07/SP07-039.yaml
       - pack_07/SP07-040.yaml
+      - pack_07/SP07-092.yaml
+      - pack_07/SP07-093.yaml
+      - pack_07/SP07-094.yaml
+      - pack_07/SP07-095.yaml
+      - pack_07/SP07-096.yaml
+      - pack_07/SP07-097.yaml
+      - pack_07/SP07-098.yaml
+      - pack_07/SP07-099.yaml
+      - pack_07/SP07-100.yaml
+      - pack_07/SP07-101.yaml
+      - pack_07/SP07-102.yaml
   - id: landscape-and-garden-systems
     name: 4. Landscape And Garden Systems
     presetRefs:
@@ -65,6 +87,16 @@ categories:
       - pack_07/SP07-048.yaml
       - pack_07/SP07-049.yaml
       - pack_07/SP07-050.yaml
+      - pack_07/SP07-103.yaml
+      - pack_07/SP07-104.yaml
+      - pack_07/SP07-105.yaml
+      - pack_07/SP07-106.yaml
+      - pack_07/SP07-107.yaml
+      - pack_07/SP07-108.yaml
+      - pack_07/SP07-109.yaml
+      - pack_07/SP07-110.yaml
+      - pack_07/SP07-111.yaml
+      - pack_07/SP07-112.yaml
   - id: fantasy-and-mythic-architecture
     name: 5. Fantasy And Mythic Architecture
     presetRefs:
@@ -81,6 +113,13 @@ categories:
       - pack_07/SP07-061.yaml
       - pack_07/SP07-062.yaml
       - pack_07/SP07-063.yaml
+      - pack_07/SP07-113.yaml
+      - pack_07/SP07-114.yaml
+      - pack_07/SP07-115.yaml
+      - pack_07/SP07-116.yaml
+      - pack_07/SP07-117.yaml
+      - pack_07/SP07-118.yaml
+      - pack_07/SP07-119.yaml
   - id: toy-craft-and-miniature-architecture
     name: 6. Toy Craft And Miniature Architecture
     presetRefs:
@@ -94,6 +133,16 @@ categories:
       - pack_07/SP07-072.yaml
       - pack_07/SP07-073.yaml
       - pack_07/SP07-074.yaml
+      - pack_07/SP07-120.yaml
+      - pack_07/SP07-121.yaml
+      - pack_07/SP07-122.yaml
+      - pack_07/SP07-123.yaml
+      - pack_07/SP07-124.yaml
+      - pack_07/SP07-125.yaml
+      - pack_07/SP07-126.yaml
+      - pack_07/SP07-127.yaml
+      - pack_07/SP07-128.yaml
+      - pack_07/SP07-129.yaml
   - id: megastructure-and-impossible-space
     name: 7. Megastructure And Impossible Space
     presetRefs:
@@ -106,6 +155,17 @@ categories:
       - pack_07/SP07-078.yaml
       - pack_07/SP07-079.yaml
       - pack_07/SP07-080.yaml
+      - pack_07/SP07-130.yaml
+      - pack_07/SP07-131.yaml
+      - pack_07/SP07-132.yaml
+      - pack_07/SP07-133.yaml
+      - pack_07/SP07-134.yaml
+      - pack_07/SP07-135.yaml
+      - pack_07/SP07-136.yaml
+      - pack_07/SP07-137.yaml
+      - pack_07/SP07-138.yaml
+      - pack_07/SP07-139.yaml
+      - pack_07/SP07-140.yaml
 presetRefs:
   - pack_07/SP07-001.yaml
   - pack_07/SP07-002.yaml
@@ -123,6 +183,10 @@ presetRefs:
   - pack_07/SP07-018.yaml
   - pack_07/SP07-019.yaml
   - pack_07/SP07-020.yaml
+  - pack_07/SP07-081.yaml
+  - pack_07/SP07-082.yaml
+  - pack_07/SP07-083.yaml
+  - pack_07/SP07-084.yaml
   - pack_07/SP07-006.yaml
   - pack_07/SP07-007.yaml
   - pack_07/SP07-009.yaml
@@ -136,6 +200,13 @@ presetRefs:
   - pack_07/SP07-028.yaml
   - pack_07/SP07-029.yaml
   - pack_07/SP07-030.yaml
+  - pack_07/SP07-085.yaml
+  - pack_07/SP07-086.yaml
+  - pack_07/SP07-087.yaml
+  - pack_07/SP07-088.yaml
+  - pack_07/SP07-089.yaml
+  - pack_07/SP07-090.yaml
+  - pack_07/SP07-091.yaml
   - pack_07/SP07-032.yaml
   - pack_07/SP07-033.yaml
   - pack_07/SP07-034.yaml
@@ -145,6 +216,17 @@ presetRefs:
   - pack_07/SP07-038.yaml
   - pack_07/SP07-039.yaml
   - pack_07/SP07-040.yaml
+  - pack_07/SP07-092.yaml
+  - pack_07/SP07-093.yaml
+  - pack_07/SP07-094.yaml
+  - pack_07/SP07-095.yaml
+  - pack_07/SP07-096.yaml
+  - pack_07/SP07-097.yaml
+  - pack_07/SP07-098.yaml
+  - pack_07/SP07-099.yaml
+  - pack_07/SP07-100.yaml
+  - pack_07/SP07-101.yaml
+  - pack_07/SP07-102.yaml
   - pack_07/SP07-041.yaml
   - pack_07/SP07-042.yaml
   - pack_07/SP07-043.yaml
@@ -155,6 +237,16 @@ presetRefs:
   - pack_07/SP07-048.yaml
   - pack_07/SP07-049.yaml
   - pack_07/SP07-050.yaml
+  - pack_07/SP07-103.yaml
+  - pack_07/SP07-104.yaml
+  - pack_07/SP07-105.yaml
+  - pack_07/SP07-106.yaml
+  - pack_07/SP07-107.yaml
+  - pack_07/SP07-108.yaml
+  - pack_07/SP07-109.yaml
+  - pack_07/SP07-110.yaml
+  - pack_07/SP07-111.yaml
+  - pack_07/SP07-112.yaml
   - pack_07/SP07-051.yaml
   - pack_07/SP07-052.yaml
   - pack_07/SP07-053.yaml
@@ -168,6 +260,13 @@ presetRefs:
   - pack_07/SP07-061.yaml
   - pack_07/SP07-062.yaml
   - pack_07/SP07-063.yaml
+  - pack_07/SP07-113.yaml
+  - pack_07/SP07-114.yaml
+  - pack_07/SP07-115.yaml
+  - pack_07/SP07-116.yaml
+  - pack_07/SP07-117.yaml
+  - pack_07/SP07-118.yaml
+  - pack_07/SP07-119.yaml
   - pack_07/SP07-065.yaml
   - pack_07/SP07-066.yaml
   - pack_07/SP07-067.yaml
@@ -178,6 +277,16 @@ presetRefs:
   - pack_07/SP07-072.yaml
   - pack_07/SP07-073.yaml
   - pack_07/SP07-074.yaml
+  - pack_07/SP07-120.yaml
+  - pack_07/SP07-121.yaml
+  - pack_07/SP07-122.yaml
+  - pack_07/SP07-123.yaml
+  - pack_07/SP07-124.yaml
+  - pack_07/SP07-125.yaml
+  - pack_07/SP07-126.yaml
+  - pack_07/SP07-127.yaml
+  - pack_07/SP07-128.yaml
+  - pack_07/SP07-129.yaml
   - pack_07/SP07-010.yaml
   - pack_07/SP07-031.yaml
   - pack_07/SP07-064.yaml
@@ -187,3 +296,14 @@ presetRefs:
   - pack_07/SP07-078.yaml
   - pack_07/SP07-079.yaml
   - pack_07/SP07-080.yaml
+  - pack_07/SP07-130.yaml
+  - pack_07/SP07-131.yaml
+  - pack_07/SP07-132.yaml
+  - pack_07/SP07-133.yaml
+  - pack_07/SP07-134.yaml
+  - pack_07/SP07-135.yaml
+  - pack_07/SP07-136.yaml
+  - pack_07/SP07-137.yaml
+  - pack_07/SP07-138.yaml
+  - pack_07/SP07-139.yaml
+  - pack_07/SP07-140.yaml

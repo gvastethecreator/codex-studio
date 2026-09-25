@@ -3,7 +3,7 @@ id: SP07-052
 packId: pack_07
 name: Dwarven Megalithic Forge
 category: 5. Fantasy And Mythic Architecture
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,73 +12,30 @@ tags:
   - architecture-and-interior
   - fantasy-and-mythic-architecture
 visualDna:
-  aesthetic: >-
-    Dwarven Megalithic Forge acts as a transferable architecture/interior router: chiseled granite,
-    rune-like non-readable bands, hammered gold, thermal channels, mineral heat glow; fuse it with
-    mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and
-    believable load-bearing ornament; route spatial grammar, material behavior, scale, ornament, and
-    light over prompt X without requiring the default sample anchor, fixed spatial set, landscape
-    setup, or object sample.
-  subject_treatment: >-
-    Preserve prompt subject, action, and context while translating any requested subject through
-    monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or
-    organic envelope logic, and sacred scale; treat chiseled granite, rune-like non-readable bands,
-    hammered gold, thermal channels, mineral heat glow as massing, edge, surface, joinery,
-    threshold, or ornament behavior rather than a mandatory building scene.
-  color_and_tone: >-
-    Map color through mineral neutrals, moss and water glow, brass or gold heat, abyssal blues,
-    spectral edge color, and restrained fantasy accents; let source cues such as chiseled granite,
-    rune-like non-readable bands, hammered gold, thermal channels, mineral heat glow decide accent
-    hierarchy, material temperature, and value separation while staying attached to the requested
-    content.
-  lighting_and_shadow: >-
-    Use sacred glow, forge heat, underwater diffusion, cloud rim, mineral refraction, spectral low
-    light, and monumental shadow hierarchy; make light reveal joints, relief, material depth, scale,
-    and atmosphere from chiseled granite, rune-like non-readable bands, hammered gold, thermal
-    channels, mineral heat glow without replacing prompt X with a stock architectural render.
-  texture_and_material: >-
-    Render living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass
-    surrealism, bone marble, and rune-like non-text marks; prioritize the tactile signals in
-    chiseled granite, rune-like non-readable bands, hammered gold, thermal channels, mineral heat
-    glow, with believable surface response, denoised grain, coherent wear, and no generic wallpaper
-    texture.
-  camera_and_composition: >-
-    Frame through detail-first mythic anchors, section cuts, undercut gravity, vertical compression,
-    ritual thresholds, and scale without literal throne-room lock; convert chiseled granite,
-    rune-like non-readable bands, hammered gold, thermal channels, mineral heat glow into reusable
-    perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed
-    style sample layout.
-  atmosphere_and_mood: >-
-    Carry mood through sublime, sacred, engineered, haunted, playful, abyssal, pastoral, or
-    monumental pressure carried through structure and material; the preset can support adult,
-    strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for
-    them while keeping the architectural identity readable.
-  rendering_and_quality: >-
-    Finish with high-control fantasy-architecture finish with coherent material logic, no licensed
-    location read, no weapon or character dependency; keep clean denoise, legible construction,
-    stable object or anatomy structure when applicable, no watermark, no fake readable text, no
-    logo, no camera prop, and no prompt-literal card copy.
-  key_features: >-
-    chiseled granite, rune-like non-readable bands, hammered gold, thermal channels, mineral heat
-    glow; monumental mass, symbolic thresholds, carved or grown structure, impossible support,
-    mineral or organic envelope logic, and sacred scale; living wood, chiseled stone, hammered
-    metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text
-    marks; detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual
-    thresholds, and scale without literal throne-interior zones lock
-  creative_brief: >-
-    Apply Dwarven Megalithic Forge after prompt X as a transferable architecture/interior style
-    layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset
-    supplies chiseled granite, rune-like non-readable bands, hammered gold, thermal channels,
-    mineral heat glow, mythic architecture grammar with impossible structure, ritual scale, fantasy
-    material logic, and believable load-bearing ornament, material discipline, spatial grammar, and
-    negative controls without requiring a single spatial sample, product-photo setup, aisle-like
-    default, or empty abstraction.
+  aesthetic: 'Megalithic mountain-hall architecture: walls cut from single granite blocks with hairline joints, stepped angular relief bands, hammered gold edging and molten heat running in floor and wall grooves.'
+  subject_treatment: Keep the requested structure or object, its function, footprint and camera; rebuild its walls, roof, openings and ornament in this construction logic, and never swap it for a castle, temple or fixed fantasy landmark.
+  color_and_tone: Charcoal and slate granite, hammered gold, deep orange glow inside the channels as the only warm note; everything else stays cool grey.
+  lighting_and_shadow: Low warm under-light rising from the glowing channels, black darkness overhead, a hard 1:8 ratio that carves the relief bands.
+  texture_and_material: Tool-dressed granite with drill scars and razor arrises, gold sheet riveted into grooves, soot darkening the upper courses.
+  camera_and_composition: Keep the requested view; squat trabeated proportions with massive horizontal lintels and a low eye line that stresses weight.
+  atmosphere_and_mood: Heavy, patient and proud, as if built to outlast the mountain around it.
+  rendering_and_quality: Crisp architectural render with sharp stone edges and bloom limited to the heat channels; no fog wash over the masonry.
+  key_features: single-block granite megaliths; stepped angular relief without readable runes; hammered gold edging; glowing heat channels in grooves; squat trabeated proportions
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dwarven Megalithic Forge as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - licensed fantasy location
+  - copy of a known film or game building
+  - readable runes or inscriptions
+  - glossy mirror floor by default
+  - decorative waterfall by default
+  - swapping the requested structure for a castle or temple
+  - dwarf character
+  - hero forge scene
+  - anvil and hammer prop
+  - timber-dominant finish
   - wood-dominant finish
   - lightweight construction
   - delicate trim
-  - dwarf character
-  - hero forge scene
   - weapon
   - hammer prop
   - fantasy hall corridor
@@ -87,7 +44,6 @@ avoidRules:
   - market aisle
   - camera prop
   - empty abstraction
-  - licensed fantasy location
   - throne interior zones default
   - weapon prop
   - character hero
@@ -102,17 +58,16 @@ avoidRules:
   - watermark
   - mandatory interior set
   - prompt-literal card
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-052.webp
 attributes:
-  negativePrompt: >-
-    wood-dominant finish, lightweight construction, delicate trim, dwarf character, hero forge
-    scene, weapon, hammer prop, fantasy hall corridor, castle throne interior zones, readable
-    runes/text, market aisle, camera prop, empty abstraction, licensed fantasy location, throne
-    interior zones default, weapon prop, character hero, fixed building-only scene, mandatory
-    interior interior zones, corridor perspective, furniture showroom, library aisle,
-    prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal
-    card
+  negativePrompt: licensed fantasy location, copy of a known film or game building, readable runes or inscriptions, glossy mirror floor by default, decorative waterfall by default, swapping the requested structure for a castle or temple, dwarf character, hero forge scene, anvil and hammer prop, timber-dominant finish, wood-dominant finish, lightweight construction, delicate trim, weapon, hammer prop, fantasy hall corridor, castle throne interior zones, readable runes/text, market aisle, camera prop, empty abstraction, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, library aisle, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

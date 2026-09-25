@@ -1,0 +1,79 @@
+schemaVersion: 1
+id: SP06-121
+packId: pack_06
+name: Alla Prima Plein-Air Sketch
+styleAnchors:
+  - Alla Prima Plein-Air Sketch
+  - wet-into-wet outdoor oil sketch
+  - single-session wet-into-wet strokes
+displayName: Alla Prima Plein-Air Sketch
+category: 1. Traditional Painting
+domain: wet-into-wet outdoor oil sketch
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - traditional-painting
+  - alla-prima
+  - plein-air
+  - oil
+visualDna:
+  aesthetic: 'Alla prima plein-air oil sketch: painted outdoors in a single wet-into-wet session on a small toned panel, each passage laid once and left.'
+  subject_treatment: Redraw the prompt's subject, pose, setting and framing in this paint medium; only edges, layering, paint body and surface change, while identity, proportions and camera stay as requested.
+  color_and_tone: Fresh mixed color with a warm orange or red-earth toned ground showing between strokes; clean values, strong light-to-shadow temperature shift.
+  lighting_and_shadow: Real outdoor light at one time of day, painted in two big families of light and shadow before the sun moves.
+  texture_and_material: Juicy loaded strokes dragged into wet paint, soft mixing at the stroke edges, toned ground left bare in places, small panel format.
+  camera_and_composition: Keep the requested framing; big shapes blocked first, details suggested by a few final accents, edges unfinished at the borders.
+  atmosphere_and_mood: Fresh, spontaneous and alive, painted fast against the light.
+  rendering_and_quality: Confident single-pass strokes, wet edges softly merged, bare toned ground visible; not polished or reworked.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Alla Prima Plein-Air Sketch as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: single-session wet-into-wet strokes; warm toned ground peeking through; two families of light and shadow; loose unfinished borders; small panel sketch
+avoidRules:
+  - photo
+  - photorealistic
+  - 3d render
+  - plastic CGI finish
+  - flat digital filter
+  - pasted photo texture
+  - wrong paint medium
+  - generic AI gloss
+  - changing the requested subject
+  - changing the requested framing
+  - mixed media collage
+  - polished academic finish
+  - tight detail
+  - glazed layers
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: photo, photorealistic, 3d render, plastic CGI finish, flat digital filter, pasted photo texture, wrong paint medium, generic AI gloss, changing the requested subject, changing the requested framing, mixed media collage, polished academic finish, tight detail, glazed layers, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_06
+  packName: Essential Art Styles
+  categoryId: traditional-painting
+  categoryName: 1. Traditional Painting
+  tags:
+    - essential-art-styles
+    - traditional-painting
+    - alla-prima
+    - plein-air
+    - oil
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: wet-into-wet outdoor oil sketch

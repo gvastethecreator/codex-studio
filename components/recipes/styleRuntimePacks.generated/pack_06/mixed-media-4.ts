@@ -8,27 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Assemblage',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, shadow box requirement, literal collection, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render',
+      'uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, flat print, painted illusion of objects, random clutter, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, shadow box requirement, literal collection, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Assemblage acts as a transferable art-medium router: start from 3D object collage, Shadow box and mixed-media assembly system built from layering, adhesion, surface collision, found-material logic, tactile seams, and handmade construction, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Found-object assemblage: the subject built in low relief from real salvaged objects glued and wired onto a wooden board or inside a shallow box.',
       subject_treatment:
-        'Transform any prompt subject through Physical objects; preserve the prompt subject while rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, pose, action and camera view; rebuild the picture in this medium so the material sits on the image surface and never replaces clothing, skin or anatomy.',
       color_and_tone:
-        'Build color with Found object colors; treat color as material combination: paper aging, varnish warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'The objects supply the palette: rust orange, weathered wood grey, tarnished brass and chipped enamel, unified by age rather than paint.',
       lighting_and_shadow:
-        'Handle light through Box lighting; make light reveal relief, varnish gloss, paper lift, tape shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure supports the medium and does not overwrite the requested content.',
+        'Raking side light from one lamp so every object throws a real cast shadow and the relief reads clearly.',
       texture_and_material:
-        'Render Rust, wood, plastic; surface detail should show torn fiber, glue, tape edge, cork tooth, thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material scale coherent and avoiding noisy filler texture.',
+        'Rusted keys, clock gears, spoons, drawer pulls, driftwood, bottle caps and wire, each keeping its true material and scale.',
       camera_and_composition:
-        'Structure the image through Compose for Assemblage using its key spatial cues: Shadow box; compose through layer order, overlap, pin logic, cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+        'Keep the requested view; the subject silhouette is read from the arrangement, then each part is recognized as a found object.',
       atmosphere_and_mood:
-        'Keep the mood Mysterious, collection; derive mood from DIY urgency, memory, repair, evidence, punk collision, tactile intimacy, decorative excess, or experimental material play, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Mysterious and collected, memories given a second life as a creature or place.',
       rendering_and_quality:
-        'Finish with Sculptural, box art; finish with coherent material stacking, readable subject transformation, and no single flat texture pasted over the whole image, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
-      key_features: '3D object collage; Shadow box; Found object colors; Rust, wood, plastic',
+        'Physical depth, crisp object edges and believable glue joins; no painted or digital surface.',
+      key_features:
+        'salvaged objects in relief; raking side light; real cast shadows; rust and brass; board or shallow box',
       creative_brief:
-        "Apply Assemblage as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through 3D object collage, Shadow box, Rust, wood, plastic without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Assemblage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -36,28 +37,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Embroidery on Photo',
     category: '5. Mixed Media',
     negativePrompt:
-      'realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, portrait requirement, literal memory photo, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render',
+      'uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, fabric replacing the photo, thread clothing, printed fake stitches, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, portrait requirement, literal memory photo, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Embroidery on Photo acts as a transferable art-medium router: start from Thread stitched over photo, Thread texture and mixed-media assembly system built from layering, adhesion, surface collision, found-material logic, tactile seams, and handmade construction, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Embroidery on photo: a printed photograph pierced and hand-stitched, thread adding color, pattern or light as a physical layer over the image.',
       subject_treatment:
-        'Transform any prompt subject through Thread lines; preserve the prompt subject while rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the photographed subject, clothing, anatomy and camera exactly as photographed; thread is stitched through the print around and over it as an added layer, never replacing garments or skin.',
       color_and_tone:
-        'Build color with Photo + Thread accent; treat color as material combination: paper aging, varnish warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Natural photo color, often muted, against one or two saturated thread colors such as gold, vermilion or cobalt.',
       lighting_and_shadow:
-        'Handle light through Photo lighting; make light reveal relief, varnish gloss, paper lift, tape shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure supports the medium and does not overwrite the requested content.',
+        'Photo lighting stays; real light glints on the thread and each stitch casts a tiny shadow on the paper.',
       texture_and_material:
-        'Render Glossy photo, matte thread; surface detail should show torn fiber, glue, tape edge, cork tooth, thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material scale coherent and avoiding noisy filler texture.',
+        'Satin-stitch fills, running-stitch lines, French knots, needle holes, slight paper puckering and a loose thread tail.',
       camera_and_composition:
-        'Structure the image through Stitched details; compose through layer order, overlap, pin logic, cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Personal, tactile; derive mood from DIY urgency, memory, repair, evidence, punk collision, tactile intimacy, decorative excess, or experimental material play, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the photo framing; stitching follows or extends shapes already in the photo such as rays, contours and patterns.',
+      atmosphere_and_mood: 'Personal and tactile, a memory touched by hand.',
       rendering_and_quality:
-        'Finish with Artistic, altered; finish with coherent material stacking, readable subject transformation, and no single flat texture pasted over the whole image, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Sharp photographic base with dimensional thread; never flat printed lines pretending to be stitches.',
       key_features:
-        'Thread stitched over photo; Thread texture; Photo + Thread accent; Glossy photo, matte thread; Stitched details',
+        'printed photo base; satin and running stitch; French knots; needle holes; thread casting shadow',
       creative_brief:
-        "Apply Embroidery on Photo as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Thread stitched over photo, Thread texture, Glossy photo, matte thread without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Embroidery on Photo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -65,28 +65,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Coffee Painting',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, mug ring requirement, kitchen mood, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render',
+      'uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, mug ring requirement, kitchen mood, sepia photo filter, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Coffee Painting acts as a transferable art-medium router: start from Painted with coffee, Monochrome brown and mixed-media assembly system built from layering, adhesion, surface collision, found-material logic, tactile seams, and handmade construction, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Coffee painting: brewed coffee applied in dilutions from pale tea-brown washes to thick espresso reductions on cold-press paper.',
       subject_treatment:
-        'Transform any prompt subject through Liquid stains; preserve the prompt subject while rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, pose, action and camera view; rebuild the picture in this medium so the material sits on the image surface and never replaces clothing, skin or anatomy.',
       color_and_tone:
-        'Build color with Sepia, brown; treat color as material combination: paper aging, varnish warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Monochrome browns from light honey to near black; warmth varies with dilution, no other pigment.',
       lighting_and_shadow:
-        'Handle light through Soft; make light reveal relief, varnish gloss, paper lift, tape shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure supports the medium and does not overwrite the requested content.',
+        'Light is left as bare paper; shadows are built in transparent layered washes.',
       texture_and_material:
-        'Render Watercolor paper, granules; surface detail should show torn fiber, glue, tape edge, cork tooth, thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material scale coherent and avoiding noisy filler texture.',
+        'Hard tide-line blooms where washes dry, fine coffee granules settling in the paper tooth, back-runs and soft wet-in-wet edges.',
       camera_and_composition:
-        'Structure the image through Fluid; compose through layer order, overlap, pin logic, cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Warm, organic, stained; derive mood from DIY urgency, memory, repair, evidence, punk collision, tactile intimacy, decorative excess, or experimental material play, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; loose washes at the edges, most layers at the focal point.',
+      atmosphere_and_mood: 'Warm and organic, quiet and slightly nostalgic.',
       rendering_and_quality:
-        'Finish with Organic, warm; finish with coherent material stacking, readable subject transformation, and no single flat texture pasted over the whole image, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Visible dilution steps and tide lines; never a sepia filter over a photo.',
       key_features:
-        'Painted with coffee; Monochrome brown; Sepia, brown; Watercolor paper, granules; Fluid',
+        'layered coffee washes; tide-line blooms; granules in paper tooth; espresso darks; cold-press paper',
       creative_brief:
-        "Apply Coffee Painting as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Painted with coffee, Monochrome brown, Watercolor paper, granules without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Coffee Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -94,28 +93,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Trash Polka',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, skin requirement, tattoo placement, blood literal, readable lettering, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render',
+      'uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, additional colors, readable lettering, gore, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, skin requirement, tattoo placement, blood literal, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Trash Polka acts as a transferable art-medium router: start from Trash polka graphic collision style with black realism shards, red vector strikes, and splatter tension, Red and Black and mixed-media assembly system built from layering, adhesion, surface collision, found-material logic, tactile seams, and handmade construction, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Trash polka: realistic black-and-grey rendering violently interrupted by bold red brush swaths, smeared circles, bars and ink splatter.',
       subject_treatment:
-        'Transform any prompt subject through Realistic vs graphic; preserve the prompt subject while rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, pose, action and camera view; rebuild the picture in this medium so the material sits on the image surface and never replaces clothing, skin or anatomy.',
       color_and_tone:
-        'Build color with Black, Grey, Red; treat color as material combination: paper aging, varnish warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Strictly black, grey scale and one blood-red on off-white; red is always flat and graphic, never shaded.',
       lighting_and_shadow:
-        'Handle light through High contrast; make light reveal relief, varnish gloss, paper lift, tape shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure supports the medium and does not overwrite the requested content.',
+        'Dramatic realist lighting inside the grey rendering; the red graphics ignore light entirely.',
       texture_and_material:
-        'Render Ink, splatter; surface detail should show torn fiber, glue, tape edge, cork tooth, thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material scale coherent and avoiding noisy filler texture.',
+        'Soft graphite or ink-wash realism against dry-brush red strokes, splatter dots, drips and stamped abstract bars.',
       camera_and_composition:
-        'Structure the image through Collage; compose through layer order, overlap, pin logic, cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Intense, chaotic; derive mood from DIY urgency, memory, repair, evidence, punk collision, tactile intimacy, decorative excess, or experimental material play, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; one large red gesture cuts diagonally across the subject, with smaller circles and bars as counterweights.',
+      atmosphere_and_mood: 'Aggressive and chaotic, beauty and vandalism fighting on one surface.',
       rendering_and_quality:
-        'Finish with Aggressive, modern; finish with coherent material stacking, readable subject transformation, and no single flat texture pasted over the whole image, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Crisp contrast between photographic grey detail and raw red marks; no third color.',
       key_features:
-        'Trash polka graphic collision style with black realism shards, red vector strikes, and splatter tension; Red and Black; Black, Grey, Red; Ink, splatter; Collage',
+        'black-grey realism; flat red brush swaths; splatter and drips; abstract bars; off-white ground',
       creative_brief:
-        "Apply Trash Polka as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Trash polka graphic collision style with black realism shards, red vector strikes, and splatter tension, Red and Black, Ink, splatter without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Trash Polka as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -123,28 +121,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Zine Aesthetic',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable slogan, booklet requirement, staple requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render',
+      'uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, readable slogans, full color print, clean digital lines, photo, realistic, photorealistic, 3d render, octane render, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable slogan, booklet requirement, staple requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Zine Aesthetic acts as a transferable art-medium router: start from Xerox zine reproduction style with crushed contrast, toner grain, and DIY assembly artifacts, Xerox grain and mixed-media assembly system built from layering, adhesion, surface collision, found-material logic, tactile seams, and handmade construction, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Photocopied zine page: marker drawing, ballpoint hatching and halftoned photo scraps pasted up, then copied twice so everything shares the toner.',
       subject_treatment:
-        'Transform any prompt subject through High contrast, grainy; preserve the prompt subject while rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, pose, action and camera view; rebuild the picture in this medium so the material sits on the image surface and never replaces clothing, skin or anatomy.',
       color_and_tone:
-        'Build color with Black and White; treat color as material combination: paper aging, varnish warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Black toner on grey-white copy paper with one hand-added fluorescent highlighter color; midtones break into coarse halftone.',
       lighting_and_shadow:
-        'Handle light through Xerox flash; make light reveal relief, varnish gloss, paper lift, tape shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure supports the medium and does not overwrite the requested content.',
+        'No real light: copier contrast blows the whites and crushes shadows into solid black.',
       texture_and_material:
-        'Render Toner, tape; surface detail should show torn fiber, glue, tape edge, cork tooth, thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material scale coherent and avoiding noisy filler texture.',
+        'Toner speckle, grey copier streaks, visible paste-up edges, correction-fluid patches and slightly skewed copy.',
       camera_and_composition:
-        'Structure the image through Rough cuts; compose through layer order, overlap, pin logic, cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Raw, underground; derive mood from DIY urgency, memory, repair, evidence, punk collision, tactile intimacy, decorative excess, or experimental material play, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; the drawn subject dominates, photo scraps and hatching fill the page edge to edge.',
+      atmosphere_and_mood: 'Raw and underground, made in one night for a small crowd.',
       rendering_and_quality:
-        'Finish with DIY, punk; finish with coherent material stacking, readable subject transformation, and no single flat texture pasted over the whole image, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Second-generation copy loss that keeps the subject legible; one flat highlighter color only.',
       key_features:
-        'Xerox zine reproduction style with crushed contrast, toner grain, and DIY assembly artifacts; Xerox grain; Black and White; Toner, tape; Rough cuts',
+        'photocopy toner; marker and ballpoint; halftoned photo scraps; correction fluid; one highlighter color',
       creative_brief:
-        "Apply Zine Aesthetic as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Xerox zine reproduction style with crushed contrast, toner grain, and DIY assembly artifacts, Xerox grain, Toner, tape without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Zine Aesthetic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -152,28 +149,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Moodboard Color Story',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable captions, literal photo collection, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render',
+      'uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, readable captions, color codes, random photo pile, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, literal photo collection, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Moodboard Color Story acts as a transferable art-medium router: start from Moodboard color story layout with coordinated fragments, swatches, texture samples, and provisional design logic, Color theme and mixed-media assembly system built from layering, adhesion, surface collision, found-material logic, tactile seams, and handmade construction, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Moodboard color story: cropped images of the subject beside fabric swatches, paint chips and material samples, all tuned to one small palette.',
       subject_treatment:
-        'Transform any prompt subject through Grid or pile; preserve the prompt subject while rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject as the hero of the arrangement with its identity, clothing and anatomy unchanged; this preset owns a gridded or overlapping moodboard of crops, swatches and material samples that share one palette.',
       color_and_tone:
-        'Build color with Coordinated palette; treat color as material combination: paper aging, varnish warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Four or five colors repeated across every tile; unlabeled paint chips state the palette explicitly.',
       lighting_and_shadow:
-        'Handle light through Flat; make light reveal relief, varnish gloss, paper lift, tape shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure supports the medium and does not overwrite the requested content.',
+        'Even soft daylight with small, consistent shadows under physical swatches.',
       texture_and_material:
-        'Render Digital or paper; surface detail should show torn fiber, glue, tape edge, cork tooth, thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material scale coherent and avoiding noisy filler texture.',
+        'Linen, wool, brass, clay, stone or leather samples next to matte photo crops and blank paint chips.',
       camera_and_composition:
-        'Structure the image through Compose for Moodboard Color Story using its key spatial cues: Color theme; compose through layer order, overlap, pin logic, cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Aesthetic; derive mood from DIY urgency, memory, repair, evidence, punk collision, tactile intimacy, decorative excess, or experimental material play, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Top-down board of six to nine tiles; one large crop of the subject anchors the grid, details and swatches orbit it.',
+      atmosphere_and_mood: 'Considered and calm, a mood distilled into color and touch.',
       rendering_and_quality:
-        'Finish with Design, inspiration; finish with coherent material stacking, readable subject transformation, and no single flat texture pasted over the whole image, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Crisp tile edges, accurate material textures and a palette obvious at thumbnail size; no captions.',
       key_features:
-        'Moodboard color story layout with coordinated fragments, swatches, texture samples, and provisional design logic; Color theme; Coordinated palette; Digital or paper',
+        'six to nine tiles; paint chips; fabric swatches; material samples; one shared palette',
       creative_brief:
-        "Apply Moodboard Color Story as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Moodboard color story layout with coordinated fragments, swatches, texture samples, and provisional design logic, Color theme, Digital or paper without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Moodboard Color Story as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -181,28 +177,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Pinned Planning Board',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, conspiracy board, readable goals, clipping requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render',
+      'uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, conspiracy board, red string chaos, legible notes, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable goals, clipping requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Pinned Planning Board acts as a transferable art-medium router: start from Pinned planning board style with layered intent, thread logic, soft cork texture, and provisional composition, Pinned items and mixed-media assembly system built from layering, adhesion, surface collision, found-material logic, tactile seams, and handmade construction, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Pinned planning board: sketches, prints and index cards about the subject pinned to cork and linked by colored thread in a hopeful working plan.',
       subject_treatment:
-        'Transform any prompt subject through Pins, string; preserve the prompt subject while rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject as the hero of the arrangement with its identity, clothing and anatomy unchanged; this preset owns the cork planning-board layout of pinned cards, prints and linking thread.',
       color_and_tone:
-        'Build color with Varied; treat color as material combination: paper aging, varnish warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Warm cork brown, cream cards and white prints, with two or three thread and pushpin colors coding the plan.',
       lighting_and_shadow:
-        'Handle light through interior volume light; make light reveal relief, varnish gloss, paper lift, tape shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure supports the medium and does not overwrite the requested content.',
+        'Soft window light from one side; pins and curled cards cast small crisp shadows on the cork.',
       texture_and_material:
-        'Render Cork, paper; surface detail should show torn fiber, glue, tape edge, cork tooth, thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material scale coherent and avoiding noisy filler texture.',
+        'Granular cork, curled index cards, glossy prints, pencil sketches, pushpins and taut cotton thread.',
       camera_and_composition:
-        'Structure the image through Compose for Pinned Planning Board using its key spatial cues: Pinned items; compose through layer order, overlap, pin logic, cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Hopeful, messy; derive mood from DIY urgency, memory, repair, evidence, punk collision, tactile intimacy, decorative excess, or experimental material play, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Frontal board view; the largest pinned image of the subject at center, thread radiating to smaller steps around it.',
+      atmosphere_and_mood: 'Hopeful and busy, a plan still taking shape.',
       rendering_and_quality:
-        'Finish with Personal, planning; finish with coherent material stacking, readable subject transformation, and no single flat texture pasted over the whole image, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Readable layering, taut thread lines and clear pinned depth; no legible notes.',
       key_features:
-        'Pinned planning board style with layered intent, thread logic, soft cork texture, and provisional composition; Pinned items; Varied; Cork, paper',
+        'cork board; pushpins; index-card sketches; colored thread links; central hero print',
       creative_brief:
-        "Apply Pinned Planning Board as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Pinned planning board style with layered intent, thread logic, soft cork texture, and provisional composition, Pinned items, Cork, paper without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pinned Planning Board as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -210,28 +205,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Torn Paper Mosaic',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable typography, advertisement requirement, school craft mood, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render',
+      'uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, scissor-cut edges, readable typography, school craft look, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, advertisement requirement, school craft mood, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Torn Paper Mosaic acts as a transferable art-medium router: start from Torn paper image, Torn bits and mixed-media assembly system built from layering, adhesion, surface collision, found-material logic, tactile seams, and handmade construction, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Torn-paper mosaic: the subject built from hundreds of fingernail-sized hand-torn paper bits sorted by color like mosaic tesserae.',
       subject_treatment:
-        'Transform any prompt subject through Torn edges; preserve the prompt subject while rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, pose, action and camera view; rebuild the picture in this medium so the material sits on the image surface and never replaces clothing, skin or anatomy.',
       color_and_tone:
-        'Build color with Magazine scraps; treat color as material combination: paper aging, varnish warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Color mixed optically by neighboring scraps; each scrap one flat tone, warm and cool bits interleaved for gradients.',
       lighting_and_shadow:
-        'Handle light through Flat; make light reveal relief, varnish gloss, paper lift, tape shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure supports the medium and does not overwrite the requested content.',
+        'Soft even light; value comes from scrap color, with slight lift shadows at overlapping torn edges.',
       texture_and_material:
-        'Render Paper fibers; surface detail should show torn fiber, glue, tape edge, cork tooth, thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material scale coherent and avoiding noisy filler texture.',
+        'White fibrous torn edges around every scrap, magazine gloss beside matte paper, faint glue sheen.',
       camera_and_composition:
-        'Structure the image through Pixelated by scraps; compose through layer order, overlap, pin logic, cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Creative, recycled; derive mood from DIY urgency, memory, repair, evidence, punk collision, tactile intimacy, decorative excess, or experimental material play, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; scrap size shrinks at the focal point and grows in the background.',
+      atmosphere_and_mood: 'Patient and playful, an image that resolves only from a distance.',
       rendering_and_quality:
-        'Finish with Craft mosaic finish with distance read coherence and fiber edge tactility; finish with coherent material stacking, readable subject transformation, and no single flat texture pasted over the whole image, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Readable from afar, clearly torn scraps up close; no cut straight edges.',
       key_features:
-        'Torn paper image; Torn bits; Magazine scraps; Paper fibers; Pixelated by scraps',
+        'hand-torn scraps; white fiber edges; optical color mixing; smaller scraps at the focus; glue sheen',
       creative_brief:
-        "Apply Torn Paper Mosaic as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Torn paper image, Torn bits, Paper fibers without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Torn Paper Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -239,28 +233,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Tape Art',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wall requirement, street context, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render',
+      'uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, painted fills, wall requirement, street context, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Tape Art acts as a transferable art-medium router: start from Image made of tape, Tape strips and mixed-media assembly system built from layering, adhesion, surface collision, found-material logic, tactile seams, and handmade construction, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Tape art: the image built entirely from strips of colored masking, duct and vinyl tape laid on a flat surface and trimmed with a blade.',
       subject_treatment:
-        'Transform any prompt subject through Straight tape lines; preserve the prompt subject while rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, pose, action and camera view; rebuild the picture in this medium so the material sits on the image surface and never replaces clothing, skin or anatomy.',
       color_and_tone:
-        'Build color with Masking tape, duct tape; treat color as material combination: paper aging, varnish warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Flat solid tape colors in a limited set; value from layering light and dark rolls; no gradients.',
       lighting_and_shadow:
-        'Handle light through Flat; make light reveal relief, varnish gloss, paper lift, tape shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure supports the medium and does not overwrite the requested content.',
+        'Soft frontal light with a faint sheen on vinyl and duct tape; tiny lift shadows at overlapping ends.',
       texture_and_material:
-        'Render Tape layers; surface detail should show torn fiber, glue, tape edge, cork tooth, thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material scale coherent and avoiding noisy filler texture.',
+        'Crisp blade-cut curves, torn tape ends, crepe texture on masking tape, cloth weave in duct tape and slight wrinkles.',
       camera_and_composition:
-        'Structure the image through Geometric; compose through layer order, overlap, pin logic, cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Temporary, geometric, improvised; derive mood from DIY urgency, memory, repair, evidence, punk collision, tactile intimacy, decorative excess, or experimental material play, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; straight strips build planes, trimmed curves describe the silhouette.',
+      atmosphere_and_mood: 'Improvised and graphic, a temporary image made fast and bold.',
       rendering_and_quality:
-        'Finish with Tape strip construction with installation like precision but no required wall or public-space context; finish with coherent material stacking, readable subject transformation, and no single flat texture pasted over the whole image, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Clean strip geometry and visible overlaps, consistent strip width; no painted fills.',
       key_features:
-        'Image made of tape; Tape strips; Masking tape, duct tape; Tape layers; Geometric',
+        'masking, duct and vinyl tape; blade-cut curves; torn ends; flat layered color; strip geometry',
       creative_brief:
-        "Apply Tape Art as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Image made of tape, Tape strips, Tape layers without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tape Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -268,28 +261,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Paint over Photo',
     category: '5. Mixed Media',
     negativePrompt:
-      'realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, literal photo requirement, portrait requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render',
+      'uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, digital brush overlay, paint covering the whole print, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, literal photo requirement, portrait requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Paint over Photo acts as a transferable art-medium router: start from Acrylic strokes on photo, Smeared paint and mixed-media assembly system built from layering, adhesion, surface collision, found-material logic, tactile seams, and handmade construction, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Paint over photo: a photographic print partly covered by opaque acrylic swipes, drips and gestural strokes that hide, extend or redraw the image.',
       subject_treatment:
-        'Transform any prompt subject through Brush strokes; preserve the prompt subject while rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, pose, action and camera view; rebuild the picture in this medium so the material sits on the image surface and never replaces clothing, skin or anatomy.',
       color_and_tone:
-        'Build color with Photo + Paint; treat color as material combination: paper aging, varnish warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Muted photographic tones against bold, saturated paint; one paint color dominates, another answers.',
       lighting_and_shadow:
-        'Handle light through Mixed; make light reveal relief, varnish gloss, paper lift, tape shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure supports the medium and does not overwrite the requested content.',
+        'Photo light stays under the paint; the paint catches its own gloss and ridge highlights.',
       texture_and_material:
-        'Render Paint texture; surface detail should show torn fiber, glue, tape edge, cork tooth, thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material scale coherent and avoiding noisy filler texture.',
+        'Loaded brush drag, palette-knife smears, drips running down the print, dry-brush edges over the photo grain.',
       camera_and_composition:
-        'Structure the image through Obscured details; compose through layer order, overlap, pin logic, cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Abstracted reality; derive mood from DIY urgency, memory, repair, evidence, punk collision, tactile intimacy, decorative excess, or experimental material play, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the photo framing; paint covers roughly a third of the image and follows or breaks its main lines.',
+      atmosphere_and_mood: 'Restless and abstracted, reality partly overruled by a gesture.',
       rendering_and_quality:
-        'Finish with Expressive overpainted print finish with smeared opacity and obscured detail; finish with coherent material stacking, readable subject transformation, and no single flat texture pasted over the whole image, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Clear boundary between photograph and physical paint; no digital brush imitation.',
       key_features:
-        'Acrylic strokes on photo; Smeared paint; Photo + Paint; Paint texture; Obscured details',
+        'photographic print base; opaque acrylic swipes; drips; palette-knife smears; one dominant paint color',
       creative_brief:
-        "Apply Paint over Photo as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Acrylic strokes on photo, Smeared paint, Paint texture without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Paint over Photo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -297,28 +289,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Gold Leaf Art',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render',
+      'uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, yellow paint as gold, gold glitter, photographic shading, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Gold Leaf Art acts as a transferable art-medium router: start from Gilded illustration, Metallic shine and mixed-media assembly system built from layering, adhesion, surface collision, found-material logic, tactile seams, and handmade construction, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Water-gilded panel: loose gold leaf laid over red bole on gesso, burnished and tooled, with the subject painted in flat matte egg tempera or ink.',
       subject_treatment:
-        'Transform any prompt subject through Gold accents; preserve the prompt subject while rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, pose, action and camera view; rebuild the picture in this medium so the material sits on the image surface and never replaces clothing, skin or anatomy.',
       color_and_tone:
-        'Build color with Gold, Black; treat color as material combination: paper aging, varnish warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Burnished gold fields against matte black, deep red bole showing through cracks, limited earth and lapis accents.',
       lighting_and_shadow:
-        'Handle light through Reflective; make light reveal relief, varnish gloss, paper lift, tape shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure supports the medium and does not overwrite the requested content.',
+        'Gold flares bright or dark with viewing angle; painted areas are flat and shadowless.',
       texture_and_material:
-        'Render Metal foil, cracks; surface detail should show torn fiber, glue, tape edge, cork tooth, thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material scale coherent and avoiding noisy filler texture.',
+        'Leaf seams and tiny gaps, punched and incised tooling patterns in halos and borders, crackle showing red bole, matte tempera strokes.',
       camera_and_composition:
-        'Structure the image through Flat gold areas; compose through layer order, overlap, pin logic, cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Rich, ornamental; derive mood from DIY urgency, memory, repair, evidence, punk collision, tactile intimacy, decorative excess, or experimental material play, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; gold fills the background or haloes the subject, painted forms flat against it.',
+      atmosphere_and_mood: 'Rich and reverent, ornament as a sign of value.',
       rendering_and_quality:
-        'Finish with Ornamental gilded finish with metallic leaf behavior and decorative flatness; finish with coherent material stacking, readable subject transformation, and no single flat texture pasted over the whole image, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Genuine metallic leaf behavior with tooling and seams; no yellow paint pretending to be gold.',
       key_features:
-        'Gilded illustration; Metallic shine; Gold, Black; Metal foil, cracks; Flat gold areas',
+        'gold leaf on red bole; punched tooling; burnished glints; matte tempera figures; crackle',
       creative_brief:
-        "Apply Gold Leaf Art as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Gilded illustration, Metallic shine, Metal foil, cracks without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gold Leaf Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -326,28 +317,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Stencil Art',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable slogan, wall requirement, protest scene, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render',
+      'uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, readable slogan, wall requirement, protest scene, single-ink silhouette, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Stencil Art acts as a transferable art-medium router: start from Stencil graphic style with hard cut bridges, repeatable silhouettes, and spray edge urgency, Stencil bridges and mixed-media assembly system built from layering, adhesion, surface collision, found-material logic, tactile seams, and handmade construction, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Multi-layer studio stencil: three or four hand-cut stencils sprayed in tonal steps onto board, rebuilding the subject from flat value shapes.',
       subject_treatment:
-        'Transform any prompt subject through Hard edges, bridges; preserve the prompt subject while rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, pose, action and camera view; rebuild the picture in this medium so the material sits on the image surface and never replaces clothing, skin or anatomy.',
       color_and_tone:
-        'Build color with Black, Red, White; treat color as material combination: paper aging, varnish warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Three to four flat tones from light to dark in one hue family, plus one accent color; no gradients except overspray.',
       lighting_and_shadow:
-        'Handle light through Flat; make light reveal relief, varnish gloss, paper lift, tape shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure supports the medium and does not overwrite the requested content.',
+        'Light reduced to posterized value shapes: highlight, midtone, shadow and a darkest key layer.',
       texture_and_material:
-        'Render Wall, spray paint; surface detail should show torn fiber, glue, tape edge, cork tooth, thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material scale coherent and avoiding noisy filler texture.',
+        'Crisp cut edges with soft overspray halos, bridges holding islands in the cut, slight registration offset between layers, matte aerosol on board.',
       camera_and_composition:
-        'Structure the image through Simplified; compose through layer order, overlap, pin logic, cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Bold, urgent, reproducible; derive mood from DIY urgency, memory, repair, evidence, punk collision, tactile intimacy, decorative excess, or experimental material play, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; strong simplified silhouette, value shapes locked together like a puzzle.',
+      atmosphere_and_mood: 'Bold and deliberate, crafted rather than rushed.',
       rendering_and_quality:
-        'Finish with Graphic reproducible stencil finish without requiring public-space walls, protest text, or slogans; finish with coherent material stacking, readable subject transformation, and no single flat texture pasted over the whole image, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Clean posterized layers with visible bridges and overspray; no brick wall, protest message or slogan.',
       key_features:
-        'Stencil graphic style with hard cut bridges, repeatable silhouettes, and spray edge urgency; Stencil bridges; Black, Red, White; Wall, spray paint; Simplified',
+        'three to four stencil layers; cut bridges; overspray halos; registration offset; posterized values',
       creative_brief:
-        "Apply Stencil Art as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Stencil graphic style with hard cut bridges, repeatable silhouettes, and spray edge urgency, Stencil bridges, Wall, spray paint without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stencil Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -355,28 +345,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Decoupage',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, decorative object requirement, readable printed motif, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render',
+      'uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, raised paper edges, fresh white paper, matte flat print, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, decorative object requirement, readable printed motif, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Decoupage acts as a transferable art-medium router: start from Varnished decoupage surface with layered paper skin, crackle glaze, and aged adhesive depth, Varnish shine and mixed-media assembly system built from layering, adhesion, surface collision, found-material logic, tactile seams, and handmade construction, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Decoupage: cut printed motifs glued onto a painted wooden surface and sealed under many coats of varnish until paper and paint read as one skin.',
       subject_treatment:
-        'Transform any prompt subject through Torn edges; preserve the prompt subject while rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, pose, action and camera view; rebuild the picture in this medium so the material sits on the image surface and never replaces clothing, skin or anatomy.',
       color_and_tone:
-        'Build color with Faded, yellowed; treat color as material combination: paper aging, varnish warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Painted ground in one deep color such as bottle green, oxblood or black, motifs in faded engraving tones, the whole warmed by amber varnish.',
       lighting_and_shadow:
-        'Handle light through Glossy varnish; make light reveal relief, varnish gloss, paper lift, tape shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure supports the medium and does not overwrite the requested content.',
+        'Soft light with a broad glossy varnish highlight sliding across the surface; no cast shadows because every paper edge is sanded flush.',
       texture_and_material:
-        'Render Crackle glaze; surface detail should show torn fiber, glue, tape edge, cork tooth, thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material scale coherent and avoiding noisy filler texture.',
+        'Fine crackle glaze, faint paper wrinkles and air bubbles under varnish, sanded motif edges and brush marks in the painted ground.',
       camera_and_composition:
-        'Structure the image through Surface wrap; compose through layer order, overlap, pin logic, cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Antique, homey; derive mood from DIY urgency, memory, repair, evidence, punk collision, tactile intimacy, decorative excess, or experimental material play, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; motifs are arranged to build the subject and wrap slightly over the curve of the painted object surface.',
+      atmosphere_and_mood: 'Antique and domestic, an heirloom surface patiently sealed by hand.',
       rendering_and_quality:
-        'Finish with Craft, vintage; finish with coherent material stacking, readable subject transformation, and no single flat texture pasted over the whole image, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Unified varnished finish with legible motif cuts; nothing floats above the surface.',
       key_features:
-        'Varnished decoupage surface with layered paper skin, crackle glaze, and aged adhesive depth; Varnish shine; Faded, yellowed; Surface wrap',
+        'cut printed motifs; painted wooden ground; amber varnish sheen; crackle glaze; sanded flush edges',
       creative_brief:
-        "Apply Decoupage as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Varnished decoupage surface with layered paper skin, crackle glaze, and aged adhesive depth, Varnish shine without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Decoupage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -384,28 +373,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Scrapbook Layer Grammar',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable handwriting, ticket requirement, flower requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render',
+      'uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, readable journaling, sticker letters, digital scrapbook template, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable handwriting, ticket requirement, flower requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Scrapbook Layer Grammar acts as a transferable art-medium router: start from Scrapbook layering style with taped ephemera, soft nostalgia, and handmade page rhythm, Page layout and mixed-media assembly system built from layering, adhesion, surface collision, found-material logic, tactile seams, and handmade construction, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Scrapbook page: photographs of the subject mounted on patterned paper mats with photo corners, washi tape, die-cut shapes and pressed keepsakes.',
       subject_treatment:
-        'Transform any prompt subject through Tape, stickers; preserve the prompt subject while rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject as the hero of the arrangement with its identity, clothing and anatomy unchanged; this preset owns the flat scrapbook page layout of mounted prints, mats, tape and keepsakes around the subject.',
       color_and_tone:
-        'Build color with Pastel, vintage; treat color as material combination: paper aging, varnish warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Soft coordinated pastels and patterned papers built around one color from the subject photos; warm aged whites.',
       lighting_and_shadow:
-        'Handle light through Flat lay; make light reveal relief, varnish gloss, paper lift, tape shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure supports the medium and does not overwrite the requested content.',
+        'Soft overhead flat-lay light; tiny shadows under photo corners, brads and raised die-cuts.',
       texture_and_material:
-        'Render Paper fibers, tape sheen, sticker edges, paper shadows, and optional non readable handwriting texture; surface detail should show torn fiber, glue, tape edge, cork tooth, thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material scale coherent and avoiding noisy filler texture.',
+        'Deckle-edged mats, translucent washi tape, glossy prints, pressed flowers or feathers, metal brads and non-readable handwriting scribbles.',
       camera_and_composition:
-        'Structure the image through Layered; compose through layer order, overlap, pin logic, cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Nostalgic, sweet; derive mood from DIY urgency, memory, repair, evidence, punk collision, tactile intimacy, decorative excess, or experimental material play, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Top-down flat lay of one page; two or three overlapping photos of the subject form the anchor, keepsakes cluster around the corners.',
+      atmosphere_and_mood: 'Warm and personal, a remembered day kept with care.',
       rendering_and_quality:
-        'Finish with Personal, cute; finish with coherent material stacking, readable subject transformation, and no single flat texture pasted over the whole image, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Tidy layered page with clear overlaps, crisp tape translucency and no readable journaling.',
       key_features:
-        'Scrapbook layering style with taped ephemera, soft nostalgia, and handmade page rhythm; Page layout; Pastel, vintage; Paper fibers, tape sheen, sticker edges, paper shadows, and optional non readable handwriting texture; Layered',
+        'mounted photos with corners; washi tape; deckle mats; pressed keepsakes; flat-lay page',
       creative_brief:
-        "Apply Scrapbook Layer Grammar as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Scrapbook layering style with taped ephemera, soft nostalgia, and handmade page rhythm, Page layout, Paper fibers, tape sheen, sticker edges, paper shadows, and optional non readable handwriting texture without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scrapbook Layer Grammar as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -413,28 +401,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Digital Collage',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, software UI, vaporwave prop requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render',
+      'uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, torn paper, software UI, vaporwave props by default, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, vaporwave prop requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Digital Collage acts as a transferable art-medium router: start from Digital Collage layered material collision, visible joins, tactile surface depth, and handmade assembly rhythm and mixed-media assembly system built from layering, adhesion, surface collision, found-material logic, tactile seams, and handmade construction, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Digital collage: hard-masked photo cutouts, flat geometric shapes, duotone gradient maps and halftone overlays layered in software.',
       subject_treatment:
-        'Transform any prompt subject through adapt the requested subject through layered material collision, visible joins, tactile surface depth, and handmade assembly rhythm while preserving identity; preserve the prompt subject while rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, pose, action and camera view; rebuild the picture in this medium so the material sits on the image surface and never replaces clothing, skin or anatomy.',
       color_and_tone:
-        'Build color with medium-native palette relationships, deliberate contrast, and accent restraint for Digital Collage; treat color as material combination: paper aging, varnish warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Two or three duotone pairs such as teal and coral or ink and lemon; flat color blocks in pure hues.',
       lighting_and_shadow:
-        'Handle light through process-led value structure, readable highlights, and medium-specific shadow behavior; make light reveal relief, varnish gloss, paper lift, tape shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure supports the medium and does not overwrite the requested content.',
+        'Stylized light: cutouts carry uniform crisp drop shadows at one angle regardless of their source light.',
       texture_and_material:
-        'Render layered material collision, visible joins, tactile surface depth, and handmade assembly rhythm; surface detail should show torn fiber, glue, tape edge, cork tooth, thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material scale coherent and avoiding noisy filler texture.',
+        'Pixel-clean mask edges, halftone dot overlays, scanned paper grain as a subtle layer and flat vector shapes.',
       camera_and_composition:
-        'Structure the image through scale rhythm, edge hierarchy, spacing, and composition rules specific to Digital Collage; compose through layer order, overlap, pin logic, cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood mood carried by Digital Collage craft, material pressure, and visual restraint; derive mood from DIY urgency, memory, repair, evidence, punk collision, tactile intimacy, decorative excess, or experimental material play, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; elements overlap in clear layers with generous negative space and a strong central focus.',
+      atmosphere_and_mood: 'Playful and editorial, clean surrealism with a design sensibility.',
       rendering_and_quality:
-        'Finish with finished Digital Collage craft with clear medium evidence and controlled detail; finish with coherent material stacking, readable subject transformation, and no single flat texture pasted over the whole image, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Crisp masks, consistent drop-shadow angle, clean flat color; no torn paper or glue.',
       key_features:
-        'Digital Collage layered material collision, visible joins, tactile surface depth, and handmade assembly rhythm; medium-native palette relationships, deliberate contrast, and accent restraint for Digital Collage; scale rhythm, edge hierarchy, spacing, and composition rules specific to Digital Collage',
+        'hard-masked cutouts; duotone gradient maps; halftone overlays; flat geometric shapes; uniform drop shadows',
       creative_brief:
-        "Apply Digital Collage as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Digital Collage layered material collision, visible joins, tactile surface depth, and handmade assembly rhythm without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Digital Collage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -442,27 +429,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Photomontage',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, face requirement, city requirement, object gag requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render',
+      'uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, visible cut edges, paper texture, painted look, mismatched shadows, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, face requirement, city requirement, object gag requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Photomontage acts as a transferable art-medium router: start from Seamless photo blending, Realistic blend and mixed-media assembly system built from layering, adhesion, surface collision, found-material logic, tactile seams, and handmade construction, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Seamless photomontage: several photographs composited into one believable image with an impossible scale or logic, the joins hidden by matched light and grain.',
       subject_treatment:
-        'Transform any prompt subject through Invisible; preserve the prompt subject while rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, pose, action and camera view; rebuild the picture in this medium so the material sits on the image surface and never replaces clothing, skin or anatomy.',
       color_and_tone:
-        'Build color with Unified grading; treat color as material combination: paper aging, varnish warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'One unified grade across all sources: shared white balance, matched black level and a single color cast so nothing betrays its origin.',
       lighting_and_shadow:
-        'Handle light through Matched; make light reveal relief, varnish gloss, paper lift, tape shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure supports the medium and does not overwrite the requested content.',
+        'Light direction and hardness matched across every element; contact shadows and reflections are rebuilt so impossible objects sit firmly on their ground.',
       texture_and_material:
-        'Render Photo; surface detail should show torn fiber, glue, tape edge, cork tooth, thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material scale coherent and avoiding noisy filler texture.',
+        'Consistent photographic grain and sharpness across sources; real surfaces such as porcelain, stone, skin and water kept fully photographic.',
       camera_and_composition:
-        'Structure the image through Impossible scale; compose through layer order, overlap, pin logic, cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+        'Keep the requested view; scale is the surprise, with one element enlarged or shrunk and anchored to a believable horizon line.',
       atmosphere_and_mood:
-        'Keep the mood Dreamlike; derive mood from DIY urgency, memory, repair, evidence, punk collision, tactile intimacy, decorative excess, or experimental material play, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Calm surreal wonder, the impossible presented as a plain everyday fact.',
       rendering_and_quality:
-        'Finish with Surreal, advertising; finish with coherent material stacking, readable subject transformation, and no single flat texture pasted over the whole image, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
-      key_features: 'Seamless photo blending; Realistic blend; Unified grading; Impossible scale',
+        'Invisible seams, no cut halos, perspective and depth of field agreeing across every source.',
+      key_features:
+        'impossible scale; matched light direction; unified color grade; rebuilt contact shadows; invisible seams',
       creative_brief:
-        "Apply Photomontage as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Seamless photo blending, Realistic blend without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Photomontage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -470,27 +458,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mixed Media Canvas',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable newspaper, fabric requirement, canvas requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render',
+      'uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, smooth digital paint, readable newspaper, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, fabric requirement, canvas requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Mixed Media Canvas acts as a transferable art-medium router: start from Paint plus objects, Heavy texture and mixed-media assembly system built from layering, adhesion, surface collision, found-material logic, tactile seams, and handmade construction, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Mixed-media canvas: heavy-body acrylic over gesso with modeling paste, sand, embedded tissue and graphite marks building a thick, scraped surface.',
       subject_treatment:
-        'Transform any prompt subject through Varied; preserve the prompt subject while rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, pose, action and camera view; rebuild the picture in this medium so the material sits on the image surface and never replaces clothing, skin or anatomy.',
       color_and_tone:
-        'Build color with Messy, layered; treat color as material combination: paper aging, varnish warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Bold layered color with earlier layers showing through scrapes; one warm dominant against cool neutrals, occasional drips of pure pigment.',
       lighting_and_shadow:
-        'Handle light through Texture relief; make light reveal relief, varnish gloss, paper lift, tape shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure supports the medium and does not overwrite the requested content.',
+        'Painted light kept simple; real raking light catches the ridges of paste and palette-knife edges.',
       texture_and_material:
-        'Render Sand, paper, paint; surface detail should show torn fiber, glue, tape edge, cork tooth, thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material scale coherent and avoiding noisy filler texture.',
+        'Palette-knife scraping, gritty sand paste, wrinkled tissue paper glazed in, drips, spray mist and loose graphite lines.',
       camera_and_composition:
-        'Structure the image through Compose for Mixed Media Canvas using its key spatial cues: Heavy texture; compose through layer order, overlap, pin logic, cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Expressive; derive mood from DIY urgency, memory, repair, evidence, punk collision, tactile intimacy, decorative excess, or experimental material play, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; the subject emerges from an expressive field, crisp at its focal point and dissolving into texture at the edges.',
+      atmosphere_and_mood: 'Expressive and raw, energy built up layer on layer.',
       rendering_and_quality:
-        'Finish with Fine art, abstract; finish with coherent material stacking, readable subject transformation, and no single flat texture pasted over the whole image, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
-      key_features: 'Paint plus objects; Heavy texture; Messy, layered; Sand, paper, paint',
+        'Physical relief visible across the canvas; the subject readable despite heavy texture.',
+      key_features:
+        'modeling paste relief; palette-knife scrapes; embedded tissue; sand grit; drips and graphite',
       creative_brief:
-        "Apply Mixed Media Canvas as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Paint plus objects, Heavy texture, Sand, paper, paint without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mixed Media Canvas as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -498,28 +486,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Fumage (Smoke Art)',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, visible flame requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render',
+      'uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, visible flame requirement, ink wash, brush strokes, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Fumage (Smoke Art) acts as a transferable art-medium router: start from Soot on paper, Smoke patterns and mixed-media assembly system built from layering, adhesion, surface collision, found-material logic, tactile seams, and handmade construction, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Fumage: soot from a candle flame deposited on paper in plumes, the subject coaxed out of the smoke and refined by erasing and scratching.',
       subject_treatment:
-        'Transform any prompt subject through Soft smoke trails; preserve the prompt subject while rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, pose, action and camera view; rebuild the picture in this medium so the material sits on the image surface and never replaces clothing, skin or anatomy.',
       color_and_tone:
-        'Build color with Black soot, white paper; treat color as material combination: paper aging, varnish warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Warm brown-black soot on white or cream paper, with only density variation; no added color.',
       lighting_and_shadow:
-        'Handle light through Soft; make light reveal relief, varnish gloss, paper lift, tape shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure supports the medium and does not overwrite the requested content.',
+        'Light is the bare paper: erased and lifted areas become highlights inside velvety smoke darks.',
       texture_and_material:
-        'Render Smoke residue; surface detail should show torn fiber, glue, tape edge, cork tooth, thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material scale coherent and avoiding noisy filler texture.',
+        'Velvety carbon plumes, feathery smoke edges, eraser lifts, needle-scratched lines and occasional small scorch marks.',
       camera_and_composition:
-        'Structure the image through Ghostly; compose through layer order, overlap, pin logic, cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Ethereal, dark; derive mood from DIY urgency, memory, repair, evidence, punk collision, tactile intimacy, decorative excess, or experimental material play, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; the subject condenses out of drifting soot with its edges dissolving into open paper.',
+      atmosphere_and_mood: 'Ethereal and dark, forms half-summoned from vapor.',
       rendering_and_quality:
-        'Finish with Surreal, delicate; finish with coherent material stacking, readable subject transformation, and no single flat texture pasted over the whole image, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Delicate soot gradients with crisp lifted highlights; no brush strokes or ink washes.',
       key_features:
-        'Soot on paper; Smoke patterns; Black soot, white paper; Smoke residue; Ghostly',
+        'candle soot plumes; eraser-lifted highlights; feathery edges; scorch marks; brown-black on cream',
       creative_brief:
-        "Apply Fumage (Smoke Art) as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Soot on paper, Smoke patterns, Smoke residue without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fumage (Smoke Art) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -527,28 +514,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Paper Marbling',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render',
+      'uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, digital swirl filter, brush marks, oil slick photo, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Paper Marbling acts as a transferable art-medium router: start from Suminagashi or Ebru, Oil patterns and mixed-media assembly system built from layering, adhesion, surface collision, found-material logic, tactile seams, and handmade construction, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Paper marbling: floated pigments on a size bath combed and dragged with a stylus into the subject shapes, then lifted onto paper in one print.',
       subject_treatment:
-        'Transform any prompt subject through Fluid swirls; preserve the prompt subject while rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, pose, action and camera view; rebuild the picture in this medium so the material sits on the image surface and never replaces clothing, skin or anatomy.',
       color_and_tone:
-        'Build color with Psychedelic, oil; treat color as material combination: paper aging, varnish warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Three to five floated colors with crisp boundaries and no blending; veins of the first color run through everything.',
       lighting_and_shadow:
-        'Handle light through Flat; make light reveal relief, varnish gloss, paper lift, tape shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure supports the medium and does not overwrite the requested content.',
+        'No modeled light; form comes only from the flow and density of marbled bands.',
       texture_and_material:
-        'Render Paper, oil slick; surface detail should show torn fiber, glue, tape edge, cork tooth, thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material scale coherent and avoiding noisy filler texture.',
+        'Combed feather patterns, stone-like veins, dropped color rings, stylus-drawn motifs and faint fringes where the paper lifted.',
       camera_and_composition:
-        'Structure the image through Liquid distortion; compose through layer order, overlap, pin logic, cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Trippy, fluid; derive mood from DIY urgency, memory, repair, evidence, punk collision, tactile intimacy, decorative excess, or experimental material play, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; the subject is drawn by dragging the stylus, its outline flowing into the surrounding marbled field.',
+      atmosphere_and_mood: 'Fluid and hypnotic, a form caught mid-swirl.',
       rendering_and_quality:
-        'Finish with Abstract, pattern; finish with coherent material stacking, readable subject transformation, and no single flat texture pasted over the whole image, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Crisp pigment boundaries and flowing continuity; no brush marks or digital swirl filters.',
       key_features:
-        'Suminagashi or Ebru; Oil patterns; Psychedelic, oil; Paper, oil slick; Liquid distortion',
+        'floated pigment on size; combed feather patterns; stylus-drawn motif; dropped color rings; crisp flowing boundaries',
       creative_brief:
-        "Apply Paper Marbling as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Suminagashi or Ebru, Oil patterns, Paper, oil slick without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Paper Marbling as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -556,28 +542,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Analog Cut-Paper Collage',
     category: '5. Mixed Media',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable magazine text, specific source photo requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render',
+      'uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, torn edges, seamless blending, digital layer effects, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable magazine text, specific source photo requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Analog Cut-Paper Collage acts as a transferable art-medium router: start from Analog Cut-Paper Collage layered material collision, visible joins, tactile surface depth, and handmade assembly rhythm and mixed-media assembly system built from layering, adhesion, surface collision, found-material logic, tactile seams, and handmade construction, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Analog cut-paper collage: the subject assembled from scissor-cut pieces of different printed sources, each fragment keeping its own print texture, halftone and color.',
       subject_treatment:
-        'Transform any prompt subject through adapt the requested subject through layered material collision, visible joins, tactile surface depth, and handmade assembly rhythm while preserving identity; preserve the prompt subject while rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, pose, action and camera view; rebuild the picture in this medium so the material sits on the image surface and never replaces clothing, skin or anatomy.',
       color_and_tone:
-        'Build color with medium-native palette relationships, deliberate contrast, and accent restraint for Analog Cut-Paper Collage; treat color as material combination: paper aging, varnish warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Mismatched printed sources held together by one dominant hue family; halftone skin tones, flat construction-paper blocks and one saturated accent fragment.',
       lighting_and_shadow:
-        'Handle light through process-led value structure, readable highlights, and medium-specific shadow behavior; make light reveal relief, varnish gloss, paper lift, tape shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure supports the medium and does not overwrite the requested content.',
+        'Each fragment keeps the light of its source photo; a thin, soft drop shadow under every lifted paper edge gives a millimetre of physical depth.',
       texture_and_material:
-        'Render layered material collision, visible joins, tactile surface depth, and handmade assembly rhythm; surface detail should show torn fiber, glue, tape edge, cork tooth, thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material scale coherent and avoiding noisy filler texture.',
+        'Crisp scissor edges with slight wobble, coated magazine stock beside matte paper, visible halftone rosettes, glue-stick sheen and one or two lifted corners.',
       camera_and_composition:
-        'Structure the image through scale rhythm, edge hierarchy, spacing, and composition rules specific to Analog Cut-Paper Collage; compose through layer order, overlap, pin logic, cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+        'Keep the requested view; the silhouette is readable first, then the eye discovers that each area comes from a different printed source.',
       atmosphere_and_mood:
-        'Keep the mood mood carried by Analog Cut-Paper Collage craft, material pressure, and visual restraint; derive mood from DIY urgency, memory, repair, evidence, punk collision, tactile intimacy, decorative excess, or experimental material play, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Witty and handmade, a familiar form made strange by its stitched-together sources.',
       rendering_and_quality:
-        'Finish with finished Analog Cut-Paper Collage craft with clear medium evidence and controlled detail; finish with coherent material stacking, readable subject transformation, and no single flat texture pasted over the whole image, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Clean cut edges, consistent paper scale and legible fragment boundaries; never a digital blend or a soft transition between pieces.',
       key_features:
-        'Analog Cut-Paper Collage layered material collision, visible joins, tactile surface depth, and handmade assembly rhythm; medium-native palette relationships, deliberate contrast, and accent restraint for Analog Cut-Paper Collage; scale rhythm, edge hierarchy, spacing, and composition rules specific to Analog Cut-Paper Collage',
+        'scissor-cut printed fragments; halftone rosettes; soft paper drop shadows; mixed coated and matte stock; one accent fragment',
       creative_brief:
-        "Apply Analog Cut-Paper Collage as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Analog Cut-Paper Collage layered material collision, visible joins, tactile surface depth, and handmade assembly rhythm without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Analog Cut-Paper Collage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

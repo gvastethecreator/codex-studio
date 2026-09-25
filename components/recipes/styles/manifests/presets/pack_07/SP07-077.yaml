@@ -3,7 +3,7 @@ id: SP07-077
 packId: pack_07
 name: Orbital Ribbon Habitat
 category: 7. Megastructure And Impossible Space
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,70 +12,23 @@ tags:
   - architecture-and-interior
   - megastructure-and-impossible-space
 visualDna:
-  aesthetic: >-
-    Orbital Ribbon Habitat acts as a transferable architecture/interior router: upward horizon wrap,
-    linear biosphere strip, atmospheric blue haze, ocean-cyan bands, structural charcoal
-    containment; fuse it with megastructure and impossible-space grammar with macro scale, recursive
-    surfaces, habitat logic, optical paradox, and spatial contradiction; route spatial grammar,
-    material behavior, scale, ornament, and light over prompt X without requiring the default sample
-    anchor, fixed spatial set, landscape setup, or object sample.
-  subject_treatment: >-
-    Preserve prompt subject, action, and context while translating any requested subject through
-    civilization-scale shell logic, recursive modules, curved habitat bands, monolithic severity,
-    non-euclidean transitions, and compact utility systems; treat upward horizon wrap, linear
-    biosphere strip, atmospheric blue haze, ocean-cyan bands, structural charcoal containment as
-    massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory
-    building scene.
-  color_and_tone: >-
-    Map color through near-black structure, solar gold, technical beige, copper-brass, cyan or blue
-    glow, graphite ribs, and controlled atmospheric haze; let source cues such as upward horizon
-    wrap, linear biosphere strip, atmospheric blue haze, ocean-cyan bands, structural charcoal
-    containment decide accent hierarchy, material temperature, and value separation while staying
-    attached to the requested content.
-  lighting_and_shadow: >-
-    Use rim light at scale, utility panel glow, star or solar emission, soft beacon light, paradox
-    shadow, and depth-defining atmospheric falloff; make light reveal joints, relief, material
-    depth, scale, and atmosphere from upward horizon wrap, linear biosphere strip, atmospheric blue
-    haze, ocean-cyan bands, structural charcoal containment without replacing prompt X with a stock
-    architectural render.
-  texture_and_material: >-
-    Render technical panels, copper-brass surfaces, graphite fins, matte black planes, circular
-    hatches, retention straps, tactile glass, and braided cabling; prioritize the tactile signals in
-    upward horizon wrap, linear biosphere strip, atmospheric blue haze, ocean-cyan bands, structural
-    charcoal containment, with believable surface response, denoised grain, coherent wear, and no
-    generic wallpaper texture.
-  camera_and_composition: >-
-    Frame through macro-detail framing, looped circulation, horizon wrap, radial collector geometry,
-    repeated modules, impossible thresholds, and severe scale cues; convert upward horizon wrap,
-    linear biosphere strip, atmospheric blue haze, ocean-cyan bands, structural charcoal containment
-    into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules
-    instead of one fixed style sample layout.
-  atmosphere_and_mood: >-
-    Carry mood through awe, utility, paradox, spatial uncanniness, engineered civilization, or
-    symbolic restraint without forcing a cockpit/control-room scene; the preset can support adult,
-    strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for
-    them while keeping the architectural identity readable.
-  rendering_and_quality: >-
-    Finish with clean impossible-space finish with coherent recursion, scale readability, no named
-    franchise interior, no central-console dependency; keep clean denoise, legible construction,
-    stable object or anatomy structure when applicable, no watermark, no fake readable text, no
-    logo, no camera prop, and no prompt-literal card copy.
-  key_features: >-
-    upward horizon wrap, linear biosphere strip, atmospheric blue haze, ocean-cyan bands, structural
-    charcoal containment; civilization-scale shell logic, recursive modules, curved habitat bands,
-    monolithic severity, non-euclidean transitions, and compact utility systems; technical panels,
-    copper-brass surfaces, graphite fins, matte black planes, circular hatches, retention straps,
-    tactile glass, and braided cabling; macro-detail framing, looped circulation, horizon wrap,
-    radial collector geometry, repeated modules, impossible thresholds, and severe scale cues
-  creative_brief: >-
-    Apply Orbital Ribbon Habitat after prompt X as a transferable architecture/interior style layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
-    upward horizon wrap, linear biosphere strip, atmospheric blue haze, ocean-cyan bands, structural
-    charcoal containment, megastructure and impossible-space grammar with macro scale, recursive
-    surfaces, habitat logic, optical paradox, and spatial contradiction, material discipline,
-    spatial grammar, and negative controls without requiring a single spatial sample, product-photo
-    setup, aisle-like default, or empty abstraction.
+  aesthetic: 'Orbital ribbon habitat: a landscape laid on the inside of a vast ring, the ground rising into the sky on both sides, held in by charcoal containment walls.'
+  subject_treatment: Keep the requested subject, action and geometry stable; this preset owns the ring-habitat setting whose horizon curves upward, and it never bends, loops or breaks the requested structure.
+  color_and_tone: Ocean cyan bands, green and ochre land strips, atmospheric blue haze and charcoal walls; natural and airy.
+  lighting_and_shadow: Sunlight falling from overhead through shade panels, the far arc of the ring hazed and bright.
+  texture_and_material: Real terrain, clouds and water on the near ground, fading to a map-like band as the ring rises away.
+  camera_and_composition: Keep the requested subject in the foreground; the horizon never falls away but always climbs upward.
+  atmosphere_and_mood: Expansive and uncanny, the whole world overhead.
+  rendering_and_quality: Naturalistic landscape rendering with correct aerial haze along the rising arc; never a globe view.
+  key_features: horizon curving upward; landscape band overhead; charcoal containment walls; ocean-cyan strips; aerial haze along the arc
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Orbital Ribbon Habitat as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - black and gold sci-fi palette by default
+  - franchise ship or station likeness
+  - readable signage or screens
+  - glossy mirror floor by default
+  - globe seen from space
+  - flat horizon
   - globe
   - globe view
   - ordinary planet surface
@@ -100,15 +53,16 @@ avoidRules:
   - camera prop
   - mandatory interior set
   - prompt-literal card
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-077.webp
 attributes:
-  negativePrompt: >-
-    globe, globe view, ordinary planet surface, spacecraft cockpit, astronaut/person, market aisle,
-    library aisle, corridor, empty abstraction, cockpit or control interior zones, central console,
-    named franchise interior, spaceship corridor, fixed building-only scene, mandatory interior
-    interior zones, corridor perspective, furniture showroom, prompt-required card, readable text,
-    logo, watermark, camera prop, mandatory interior set, prompt-literal card
+  negativePrompt: black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, globe seen from space, flat horizon, globe, globe view, ordinary planet surface, spacecraft cockpit, astronaut/person, market aisle, library aisle, corridor, empty abstraction, cockpit or control interior zones, central console, named franchise interior, spaceship corridor, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

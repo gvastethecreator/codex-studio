@@ -1,0 +1,79 @@
+schemaVersion: 1
+id: SP06-124
+packId: pack_06
+name: Sanded Lacquer Painting
+styleAnchors:
+  - Sanded Lacquer Painting
+  - layered and polished lacquer panel
+  - polished black lacquer depth
+displayName: Sanded Lacquer Painting
+category: 1. Traditional Painting
+domain: layered and polished lacquer panel
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - traditional-painting
+  - lacquer
+  - eggshell-inlay
+  - gold-leaf
+visualDna:
+  aesthetic: 'Sanded lacquer painting: many layers of tree lacquer, gold and silver leaf and crushed eggshell built on a black panel, then sanded back and polished so images surface from within.'
+  subject_treatment: Redraw the prompt's subject, pose, setting and framing in this paint medium; only edges, layering, paint body and surface change, while identity, proportions and camera stay as requested.
+  color_and_tone: Deep glossy black and cinnabar red, warm gold and silver leaf, ivory eggshell mosaic, and a brown-amber glaze where layers were sanded through.
+  lighting_and_shadow: 'Light comes from the materials: leaf and eggshell shine against black depth, with soft glowing halos where sanding thinned the lacquer.'
+  texture_and_material: Mirror-polished surface with no brush marks, crackled eggshell tesserae, flecks of metal leaf, soft sanded transitions between layers.
+  camera_and_composition: Keep the requested framing; forms read as bright shapes emerging from a deep black ground.
+  atmosphere_and_mood: Precious, nocturnal and mysterious, like light found under still water.
+  rendering_and_quality: Glassy polished finish, sanded-through gradations, crisp eggshell inlay edges; no visible strokes or matte areas.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sanded Lacquer Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: polished black lacquer depth; crushed eggshell inlay; gold and silver leaf; sanded-through amber gradations; images surfacing from within
+avoidRules:
+  - photo
+  - photorealistic
+  - 3d render
+  - plastic CGI finish
+  - flat digital filter
+  - pasted photo texture
+  - wrong paint medium
+  - generic AI gloss
+  - changing the requested subject
+  - changing the requested framing
+  - mixed media collage
+  - matte surface
+  - visible brushstrokes
+  - pastel palette
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: photo, photorealistic, 3d render, plastic CGI finish, flat digital filter, pasted photo texture, wrong paint medium, generic AI gloss, changing the requested subject, changing the requested framing, mixed media collage, matte surface, visible brushstrokes, pastel palette, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_06
+  packName: Essential Art Styles
+  categoryId: traditional-painting
+  categoryName: 1. Traditional Painting
+  tags:
+    - essential-art-styles
+    - traditional-painting
+    - lacquer
+    - eggshell-inlay
+    - gold-leaf
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: layered and polished lacquer panel

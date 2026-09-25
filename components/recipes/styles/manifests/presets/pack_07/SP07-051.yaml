@@ -3,7 +3,7 @@ id: SP07-051
 packId: pack_07
 name: Verdant Elven Sanctuary
 category: 5. Fantasy And Mythic Architecture
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,71 +12,28 @@ tags:
   - architecture-and-interior
   - fantasy-and-mythic-architecture
 visualDna:
-  aesthetic: >-
-    Verdant Elven Sanctuary acts as a transferable architecture/interior router: branch-derived
-    filigree arches, carved pale stone, living wood, silver inlay, water-layer glow, moss green;
-    fuse it with mythic architecture grammar with impossible structure, ritual scale, fantasy
-    material logic, and believable load-bearing ornament; route spatial grammar, material behavior,
-    scale, ornament, and light over prompt X without requiring the default sample anchor, fixed
-    spatial set, landscape setup, or object sample.
-  subject_treatment: >-
-    Preserve prompt subject, action, and context while translating any requested subject through
-    monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or
-    organic envelope logic, and sacred scale; treat branch-derived filigree arches, carved pale
-    stone, living wood, silver inlay, water-layer glow as massing, edge, surface, joinery,
-    threshold, or ornament behavior rather than a mandatory building scene.
-  color_and_tone: >-
-    Map color through mineral neutrals, moss and water glow, brass or gold heat, abyssal blues,
-    spectral edge color, and restrained fantasy accents; let source cues such as branch-derived
-    filigree arches, carved pale stone, living wood, silver inlay, water-layer glow decide accent
-    hierarchy, material temperature, and value separation while staying attached to the requested
-    content.
-  lighting_and_shadow: >-
-    Use sacred glow, forge heat, underwater diffusion, cloud rim, mineral refraction, spectral low
-    light, and monumental shadow hierarchy; make light reveal joints, relief, material depth, scale,
-    and atmosphere from branch-derived filigree arches, carved pale stone, living wood, silver
-    inlay, water-layer glow without replacing prompt X with a stock architectural render.
-  texture_and_material: >-
-    Render living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass
-    surrealism, bone marble, and rune-like non-text marks; prioritize the tactile signals in
-    branch-derived filigree arches, carved pale stone, living wood, silver inlay, water-layer glow,
-    with believable surface response, denoised grain, coherent wear, and no generic wallpaper
-    texture.
-  camera_and_composition: >-
-    Frame through detail-first mythic anchors, section cuts, undercut gravity, vertical compression,
-    ritual thresholds, and scale without literal throne-room lock; convert branch-derived filigree
-    arches, carved pale stone, living wood, silver inlay, water-layer glow into reusable
-    perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed
-    style sample layout.
-  atmosphere_and_mood: >-
-    Carry mood through sublime, sacred, engineered, haunted, playful, abyssal, pastoral, or
-    monumental pressure carried through structure and material; the preset can support adult,
-    strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for
-    them while keeping the architectural identity readable.
-  rendering_and_quality: >-
-    Finish with high-control fantasy-architecture finish with coherent material logic, no licensed
-    location read, no weapon or character dependency; keep clean denoise, legible construction,
-    stable object or anatomy structure when applicable, no watermark, no fake readable text, no
-    logo, no camera prop, and no prompt-literal card copy.
-  key_features: >-
-    branch-derived filigree arches, carved pale stone, living wood, silver inlay, water-layer glow;
-    monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or
-    organic envelope logic, and sacred scale; living wood, chiseled stone, hammered metal, steamwork
-    brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks;
-    detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual
-    thresholds, and scale without literal throne-interior zones lock
-  creative_brief: >-
-    Apply Verdant Elven Sanctuary after prompt X as a transferable architecture/interior style
-    layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset
-    supplies branch-derived filigree arches, carved pale stone, living wood, silver inlay,
-    water-layer glow, moss green, mythic architecture grammar with impossible structure, ritual
-    scale, fantasy material logic, and believable load-bearing ornament, material discipline,
-    spatial grammar, and negative controls without requiring a single spatial sample, product-photo
-    setup, aisle-like default, or empty abstraction.
+  aesthetic: 'Grown sanctuary architecture: living beech and ash trunks trained into tall lancet arches, pale limestone shells grafted between them, and branch forks forming the window tracery.'
+  subject_treatment: Keep the requested structure or object, its function, footprint and camera; rebuild its walls, roof, openings and ornament in this construction logic, and never swap it for a castle, temple or fixed fantasy landmark.
+  color_and_tone: Bone-white limestone, silver-grey bark, fern and moss greens, thin silver inlay lines; low saturation in a high, airy value key.
+  lighting_and_shadow: Soft canopy-filtered daylight with green bounce and no hard sun; the branch tracery throws lace-like shadow patterns across the pale stone.
+  texture_and_material: Bark grain fusing seamlessly into chiselled limestone, lichen at the footings, silver wire inlay tracing every joint, leaves growing through the tracery.
+  camera_and_composition: Keep the requested view; stress tall narrow proportions, trunks reading as columns and the canopy closing overhead like a vault.
+  atmosphere_and_mood: Hushed, ancient and gentle, a building that was grown over centuries rather than laid.
+  rendering_and_quality: Painterly-realist architectural illustration with fine linework in the tracery and soft foliage edges; no HDR glare or blown haze.
+  key_features: trunks trained into lancet arches; branch-fork window tracery; pale limestone with silver inlay; filtered green canopy light; moss and lichen at the footings
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Verdant Elven Sanctuary as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - licensed fantasy location
+  - copy of a known film or game building
+  - readable runes or inscriptions
+  - glossy mirror floor by default
+  - decorative waterfall by default
+  - swapping the requested structure for a castle or temple
+  - industrial steel
+  - pointed-ear character
+  - neon
   - industrial
   - blocky
-  - licensed fantasy location
   - elf/person
   - weapon
   - throne interior zones
@@ -99,15 +56,16 @@ avoidRules:
   - camera prop
   - mandatory interior set
   - prompt-literal card
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-051.webp
 attributes:
-  negativePrompt: >-
-    industrial, blocky, licensed fantasy location, elf/person, weapon, throne interior zones, long
-    corridor, market aisle, library aisle, industrial block, empty abstraction, throne interior
-    zones default, weapon prop, character hero, fixed building-only scene, mandatory interior
-    interior zones, corridor perspective, furniture showroom, prompt-required card, readable text,
-    logo, watermark, camera prop, mandatory interior set, prompt-literal card
+  negativePrompt: licensed fantasy location, copy of a known film or game building, readable runes or inscriptions, glossy mirror floor by default, decorative waterfall by default, swapping the requested structure for a castle or temple, industrial steel, pointed-ear character, neon, industrial, blocky, elf/person, weapon, throne interior zones, long corridor, market aisle, library aisle, industrial block, empty abstraction, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP06-088
 packId: pack_06
-name: PSX Vertex Wobble
+name: 32-Bit Vertex Wobble
 category: 6. Retro Game Visual Systems
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,76 +12,25 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: >-
-    PSX Vertex Wobble acts as a transferable art-medium router: start from PlayStation 1 aesthetic,
-    vertex warble jittering polygons, affine texture swim, unfiltered chunky textures, dithering
-    haze distance fog, Silent Hill grain and gloom and Metal Gear Solid low poly intensity as tone
-    anchors, no z buffer precision, 1995 3D instability, Vertex wobble jitter, unfiltered chunky
-    textures, dithering gradient bands, affine texture warping, distance fog atmosphere, z fighting
-    flicker and hardware-constrained game-visual system built from display limits, palette budgets,
-    sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm, then apply the
-    medium behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Low poly triangulated mesh, wobbling vertices on camera
-    move, no sub pixel precision, chunky model contours, affine mapped edges; preserve the prompt
-    subject while translating it into tile, sprite, vector, glyph, voxel, pre-render, screen-grid,
-    or low-bit display behavior, keeping the requested identity, silhouette, pose, object function,
-    or environment legible.
-  color_and_tone: >-
-    Build color with 16 bit color depth banding, dither pattern gradients, PSX texture page
-    compression colors, distance fog greying, CRT emulated chroma bleed; use color through hardware
-    rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks, copper
-    gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping, accent
-    control, and medium-specific limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Per vertex gouraud shading, no per pixel lights, dither stepped shadow
-    transitions, distance fog atmosphere, no realtime shadows; make light emerge from display
-    technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector
-    beam brightness, so value structure supports the medium and does not overwrite the requested
-    content.
-  texture_and_material: >-
-    Render Unfiltered nearest neighbor textures, polygon warp texture swim, dithering gradient
-    noise, affine distorted texels, scanline artifact overlay; surface detail should show pixels,
-    dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or
-    paper-print degradation, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Jitter vertex polygon warping, z fighting flicker, affine
-    perspective distortion, distance fog depth compression; compose through tile maps, sprite scale,
-    fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or
-    screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the
-    style work.
-  atmosphere_and_mood: >-
-    Keep the mood Eerie, nostalgic, technological limitation beauty, 90s 3D uncanny poetry, CRT
-    warmth glow, abstract low poly unease; derive mood from hardware limitation, arcade spectacle,
-    handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability,
-    letting the medium alter interpretation without demanding a specific story, location, or
-    character.
-  rendering_and_quality: >-
-    Finish with PlayStation 1 aesthetic, 32 bit console 3D, retro CGI wobble poetry, beautiful
-    instability; finish with faithful era constraints, crisp readability at small scale, and no
-    modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised
-    surfaces where appropriate, and enough craft evidence to make the medium recognizable.
-  key_features: >-
-    PlayStation 1 aesthetic, vertex warble jittering polygons, affine texture swim, unfiltered
-    chunky textures, dithering haze distance fog, Silent Hill grain and gloom and Metal Gear Solid
-    low poly intensity as tone anchors, no z buffer precision, 1995 3D instability; Vertex wobble
-    jitter, unfiltered chunky textures, dithering gradient bands, affine texture warping, distance
-    fog atmosphere, z fighting flicker; 16 bit color depth banding, dither pattern gradients, PSX
-    texture page compression colors, distance fog greying, CRT emulated chroma bleed; Unfiltered
-    nearest neighbor textures, polygon warp texture swim, dithering gradient noise, affine distorted
-    texels, scanline artifact overlay; Jitter vertex polygon warping, z fighting flicker, affine
-    perspective distortion, distance fog depth compression
-  creative_brief: >-
-    Apply PSX Vertex Wobble as an art-style preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    PlayStation 1 aesthetic, vertex warble jittering polygons, affine texture swim, unfiltered
-    chunky textures, dithering haze distance fog, Silent Hill grain and gloom and Metal Gear Solid
-    low poly intensity as tone anchors, no z buffer precision, 1995 3D instability, Vertex wobble
-    jitter, unfiltered chunky textures, dithering gradient bands, affine texture warping, distance
-    fog atmosphere, z fighting flicker, Unfiltered nearest neighbor textures, polygon warp texture
-    swim, dithering gradient noise, affine distorted texels, scanline artifact overlay without
-    requiring the card image's original subject.
+  aesthetic: 'Early 32-bit console 3D: low-poly models with unfiltered low-resolution textures that warp and jitter because of affine mapping and vertex snapping.'
+  subject_treatment: Keep the prompt subject, action and camera view; redraw it inside this display system's resolution, palette and pixel-cluster limits without adding any game interface.
+  color_and_tone: Muted 15-bit color with a fine ordered dither over the whole frame; distance fades into flat fog color.
+  lighting_and_shadow: Gouraud vertex lighting with visible triangle shading steps; simple blob shadows under characters.
+  texture_and_material: Blocky nearest-neighbor textures around 64 pixels wide, swimming texture seams on large polygons and cracks where polygons meet.
+  camera_and_composition: Keep the requested view; short draw distance with dense fog hiding the world beyond a few meters.
+  atmosphere_and_mood: Uneasy and dreamlike, a world that trembles slightly.
+  rendering_and_quality: Low internal resolution near 320 by 240, jittering vertices, no texture filtering and no anti-aliasing.
+  key_features: affine texture warping; vertex snapping jitter; nearest-neighbor textures; ordered dither; close fog
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 32-Bit Vertex Wobble as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - copied game characters
+  - console or handheld hardware shown in frame
+  - score counter or health bar
+  - readable interface text
+  - brand or publisher logo
+  - texture filtering
+  - high-poly models
+  - modern reflections
   - stable
   - clean
   - smooth
@@ -103,14 +52,17 @@ avoidRules:
   - fake readable UI text
   - generic emulator screenshot
   - unlimited color render
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-088.webp
 attributes:
-  negativePrompt: >-
-    stable, clean, smooth, modern, high-poly, anti-aliased, sharp, high resolution, stable geometry,
-    filtered, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark,
-    readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator
-    screenshot, unlimited color render
+  negativePrompt: copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, texture filtering, high-poly models, modern reflections, stable, clean, smooth, modern, high-poly, anti-aliased, sharp, high resolution, stable geometry, filtered, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -124,3 +76,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: 32-Bit Vertex Wobble
+styleAnchors:
+  - 32-Bit Vertex Wobble
+  - PSX Vertex Wobble

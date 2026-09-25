@@ -8,28 +8,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Blueprint Schematic',
     category: '6. Technical And Reference Sheets',
     negativePrompt:
-      '3d, shaded, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text',
+      'placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, perspective render, glowing hologram, 3d, shaded, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Blueprint Schematic acts as a transferable illustration router: start from Blueprint schematic style with engineering communication clarity, drafting-era precision, and specification-forward layout discipline, Measurements, dimension lines, grid sub-base and technical reference and interface-spec system built from orthographic clarity, diagram hierarchy, callout logic, measured spacing, and production-sheet legibility, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Engineering blueprint sheet: white drafted lines on Prussian blue diazo paper, the subject shown in plan, side elevation and section.',
       subject_treatment:
-        'Transform any prompt subject through White technical line hierarchy with orthographic rigor, dimension-callout logic, and exploded-view readability; preserve the requested subject while expressing it through schematic breakdowns, reference views, anatomy structure, UI wireframes, comparison scales, or specification surfaces, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject as the thing documented; this reference profile owns a drafting sheet of plan, elevation and section views with dimension lines and an empty title block, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.',
       color_and_tone:
-        'Build color with Blue depth field, white-line cyan, blueprint nostalgia; use color as information coding: blueprint cyan, neutral sheet stock, callout accents, HUD glow, anatomy value separation, or wireframe hierarchy, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Deep Prussian blue ground, crisp white line work, a faint lighter blue grid, no other colors.',
       lighting_and_shadow:
-        'Handle light through Diagrammatic machine-drawing clarity with no simulated lighting; keep light diagrammatic and legible through flat drafting values, callout emphasis, interface glow, anatomical separation, or measured shadow restraint, so value structure supports the illustration process and does not overwrite the requested content.',
+        'No light or shading at all; sections use white diagonal hatching to mark cut material.',
       texture_and_material:
-        'Render Grid paper, blue drafting ground, grid sub-base, white technical linework, measurement ticks, and precise paper-plan texture; surface detail should support readability with grid paper, line weights, translucent overlays, measurement ticks, UI panels, section cuts, or reference-sheet paper grain, keeping material scale coherent and avoiding noisy filler texture.',
+        'Hard uniform technical-pen lines in several weights, slight paper fold marks and a faint grid.',
       camera_and_composition:
-        'Structure the image through Exploded view, orthographic projection, exploded spacing, dimension hierarchy, and specification-panel rhythm; compose through orthographic projection, exploded spacing, callout grouping, interface modules, size-scale relationships, and reference-sheet hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Smart, plan, drafting-table focus, patent-office gravity; derive mood from precision, planning, research, interface control, anatomical study, engineering authority, or catalogued comparison, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Orthographic views aligned on projection lines, dimension lines with blank value gaps, an empty title block in the corner.',
+      atmosphere_and_mood: 'Exact and engineered, a thing ready to be built.',
       rendering_and_quality:
-        'Finish with Engineering, precise, shop-floor accuracy, technical authority; finish with readable technical communication, crisp line hierarchy, controlled notation-like detail, and no illegible labels or decorative clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Flat drafted line drawing with no perspective, no 3D shading and no fake measurement text.',
       key_features:
-        'Blueprint schematic style with engineering communication clarity, drafting-era precision, and specification-forward layout discipline; Measurements, dimension lines, grid sub-base; Blue depth field, white-line cyan, blueprint nostalgia; Grid paper, blue drafting ground, grid sub-base, white technical linework, measurement ticks, and precise paper-plan texture; Exploded view, orthographic projection, exploded spacing, dimension hierarchy, and specification-panel rhythm',
+        'white lines on Prussian blue; plan, elevation and section; hatched cut material; blank dimension gaps; empty title block',
       creative_brief:
-        "Apply Blueprint Schematic as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Blueprint schematic style with engineering communication clarity, drafting-era precision, and specification-forward layout discipline, Measurements, dimension lines, grid sub-base, Grid paper, blue drafting ground, grid sub-base, white technical linework, measurement ticks, and precise paper-plan texture without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blueprint Schematic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +36,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'UI/HUD Design',
     category: '6. Technical And Reference Sheets',
     negativePrompt:
-      'organic, messy, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text',
+      'placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, character portrait with decorative HUD shapes, readable numbers, messy, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text, text, logo, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'UI/HUD Design acts as a transferable illustration router: start from Diegetic HUD interface style with tactical readability, layered data hierarchy, and immersive screen-space integration, Floating, thin rule-lines, data readout and technical reference and interface-spec system built from orthographic clarity, diagram hierarchy, callout logic, measured spacing, and production-sheet legibility, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Heads-up display design: thin luminous vector reticles, arcs and gauges floating over a first-person view of the subject.',
       subject_treatment:
-        'Transform any prompt subject through Thin vector line discipline with modular widget framing, reticle geometry, and precision micro-typographic structure; preserve the requested subject while expressing it through schematic breakdowns, reference views, anatomy structure, UI wireframes, comparison scales, or specification surfaces, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject as the thing documented; this reference profile owns a first-person screen view with a heads-up display overlaid on the subject, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.',
       color_and_tone:
-        'Build color with Neon Cyan/Orange, sci-fi HUD spectrum, AR-overlay contrast; use color as information coding: blueprint cyan, neutral sheet stock, callout accents, HUD glow, anatomy value separation, or wireframe hierarchy, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'One or two HUD colors such as cyan and amber at partial opacity over a darkened, slightly desaturated scene.',
       lighting_and_shadow:
-        'Handle light through Glow, emissive interface, screen-space radiance; keep light diagrammatic and legible through flat drafting values, callout emphasis, interface glow, anatomical separation, or measured shadow restraint, so value structure supports the illustration process and does not overwrite the requested content.',
+        'HUD elements emit a soft glow and cast no shadow; the scene behind keeps its own light, dimmed for contrast.',
       texture_and_material:
-        'Render Screen, technical line hierarchy, orthographic clarity, callout structure, grid discipline, and reference-sheet readability; surface detail should support readability with grid paper, line weights, translucent overlays, measurement ticks, UI panels, section cuts, or reference-sheet paper grain, keeping material scale coherent and avoiding noisy filler texture.',
+        'Hairline vector strokes, segmented arcs, faint scanline and bloom on the brightest marks.',
       camera_and_composition:
-        'Structure the image through Compose for UI/HUD Design using its key spatial cues: Floating, thin rule-lines, data readout; compose through orthographic projection, exploded spacing, callout grouping, interface modules, size-scale relationships, and reference-sheet hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Tech, info, augmented awareness, mission-ops focus; derive mood from precision, planning, research, interface control, anatomical study, engineering authority, or catalogued comparison, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'First-person frame with a central reticle, a horizon ladder, corner gauges and a radar arc framing the subject.',
+      atmosphere_and_mood: 'Tense and focused, information wrapped around what you see.',
       rendering_and_quality:
-        'Finish with Futuristic, functional, diegetic elegance, heads-up immersion; finish with readable technical communication, crisp line hierarchy, controlled notation-like detail, and no illegible labels or decorative clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Crisp vector interface layered over the view, using symbols and bars instead of readable numbers or words.',
       key_features:
-        'Diegetic HUD interface style with tactical readability, layered data hierarchy, and immersive screen-space integration; Floating, thin rule-lines, data readout; Neon Cyan/Orange, sci-fi HUD spectrum, AR-overlay contrast; Screen, technical line hierarchy, orthographic clarity, callout structure, grid discipline, and reference-sheet readability',
+        'central reticle; horizon ladder; segmented gauges; radar arc; cyan and amber glow',
       creative_brief:
-        "Apply UI/HUD Design as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Diegetic HUD interface style with tactical readability, layered data hierarchy, and immersive screen-space integration, Floating, thin rule-lines, data readout, Screen, technical line hierarchy, orthographic clarity, callout structure, grid discipline, and reference-sheet readability without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies UI/HUD Design as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +64,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Callout Detail Sheet',
     category: '6. Technical And Reference Sheets',
     negativePrompt:
-      'single view, one angle, no annotations, mystery, undefined, vague, ambiguous, unclear, unlabeled, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text',
+      'placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, readable part names, single view, one angle, no annotations, mystery, undefined, vague, ambiguous, unclear, unlabeled, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Callout Detail Sheet acts as a transferable illustration router: start from Technical callout sheet for production handoff, Multi-view orthos, dimension strings, labeled leaders, scale references and technical reference and interface-spec system built from orthographic clarity, diagram hierarchy, callout logic, measured spacing, and production-sheet legibility, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Technical callout sheet: the subject drawn in hatched line and grey tone, with circular magnified detail views linked by leader lines.',
       subject_treatment:
-        'Transform any prompt subject through Uniform orthographic linework with strict weight hierarchy; preserve the requested subject while expressing it through schematic breakdowns, reference views, anatomy structure, UI wireframes, comparison scales, or specification surfaces, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject as the thing documented; this reference profile owns a product-manual sheet with one hatched hero view and circular magnified callouts, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.',
       color_and_tone:
-        'Build color with Neutral monochrome base with limited annotation accent colors; use color as information coding: blueprint cyan, neutral sheet stock, callout accents, HUD glow, anatomy value separation, or wireframe hierarchy, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Black line and neutral grey tone on white, with one blue accent for callout circles and leader lines.',
       lighting_and_shadow:
-        'Handle light through Flat functional illumination for uncompromised shape legibility; keep light diagrammatic and legible through flat drafting values, callout emphasis, interface glow, anatomical separation, or measured shadow restraint, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Conventional upper-left light rendered as line hatching and flat grey steps, no cast environment shadows.',
       texture_and_material:
-        'Render Diagrammatic hatching, section fills, and exploded-part separators; surface detail should support readability with grid paper, line weights, translucent overlays, measurement ticks, UI panels, section cuts, or reference-sheet paper grain, keeping material scale coherent and avoiding noisy filler texture.',
+        'Clean technical line, diagrammatic hatching for curves, material shown by hatch pattern inside each callout.',
       camera_and_composition:
-        'Structure the image through Pure orthographic alignment plus controlled exploded/cutaway views; compose through orthographic projection, exploded spacing, callout grouping, interface modules, size-scale relationships, and reference-sheet hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Clinical, exact, instruction-driven, mood carried by Callout Detail Sheet craft, material pressure, and visual restraint; derive mood from precision, planning, research, interface control, anatomical study, engineering authority, or catalogued comparison, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Large three-quarter hero view, three or four circular callouts around it, leader lines ending in blank tags.',
+      atmosphere_and_mood: 'Clear and instructive, every detail pointed out.',
       rendering_and_quality:
-        'Finish with High-clarity specification drawing with low interpretive ambiguity; finish with readable technical communication, crisp line hierarchy, controlled notation-like detail, and no illegible labels or decorative clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Manual-illustration finish with blank tags instead of words; no painted scene behind the object.',
       key_features:
-        'Technical callout sheet for production handoff; Multi-view orthos, dimension strings, labeled leaders, scale references; Neutral monochrome base with limited annotation accent colors; Diagrammatic hatching, section fills, and exploded-part separators; Pure orthographic alignment plus controlled exploded/cutaway views',
+        'hatched hero view; circular magnified callouts; blue leader lines; blank tags; white ground',
       creative_brief:
-        "Apply Callout Detail Sheet as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Technical callout sheet for production handoff, Multi-view orthos, dimension strings, labeled leaders, scale references, Diagrammatic hatching, section fills, and exploded-part separators without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Callout Detail Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +92,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Anatomy Reference Sheet',
     category: '6. Technical And Reference Sheets',
     negativePrompt:
-      'stylized, cartoon, simplified, abstract, loose, messy, inaccurate, fantasy proportion, guesswork, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text',
+      'placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, gore, loose sketch, cartoon, simplified, abstract, loose, messy, inaccurate, guesswork, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Anatomy Reference Sheet acts as a transferable illustration router: start from Educational anatomical reference plate with layered structural clarity and classical medical-plate influence, Layered anatomy views, insertion/origin callouts, proportion guides, sectional clarity and technical reference and interface-spec system built from orthographic clarity, diagram hierarchy, callout logic, measured spacing, and production-sheet legibility, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Anatomy reference plate: the subject shown as layered écorché studies, surface, muscle and skeleton, like a hand-colored medical engraving.',
       subject_treatment:
-        'Transform any prompt subject through Precise technical linework for muscle, bone, and tendon mapping; preserve the requested subject while expressing it through schematic breakdowns, reference views, anatomy structure, UI wireframes, comparison scales, or specification surfaces, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject as the thing documented; this reference profile owns a classical anatomy plate with skin, muscle and skeleton layers side by side, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.',
       color_and_tone:
-        'Build color with Consistent didactic coding (muscle warm, bone neutral, vascular cool/warm accents); use color as information coding: blueprint cyan, neutral sheet stock, callout accents, HUD glow, anatomy value separation, or wireframe hierarchy, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
-      lighting_and_shadow:
-        'Handle light through Even clinical illumination for unambiguous form legibility; keep light diagrammatic and legible through flat drafting values, callout emphasis, interface glow, anatomical separation, or measured shadow restraint, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Sepia line on aged cream paper, muscles in muted madder red, tendons ivory, bone warm white.',
+      lighting_and_shadow: 'Soft consistent top-left light modeling each layer with fine hatching.',
       texture_and_material:
-        'Render Plate-style paper and wash overlays with minimal decorative noise; surface detail should support readability with grid paper, line weights, translucent overlays, measurement ticks, UI panels, section cuts, or reference-sheet paper grain, keeping material scale coherent and avoiding noisy filler texture.',
+        'Engraved fiber-direction lines in muscle, stippled bone, crisp tendon edges and paper foxing.',
       camera_and_composition:
-        'Structure the image through Multi-view orthographic layout with transparent overlays and inset details; compose through orthographic projection, exploded spacing, callout grouping, interface modules, size-scale relationships, and reference-sheet hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Scientific, disciplined, pedagogical, mood carried by Anatomy Reference Sheet craft, material pressure, and visual restraint; derive mood from precision, planning, research, interface control, anatomical study, engineering authority, or catalogued comparison, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Two or three matching views side by side at one scale, with small sectional insets and blank leader lines.',
+      atmosphere_and_mood: 'Scholarly and exact, the body opened for study.',
       rendering_and_quality:
-        'Finish with Reference-grade illustration optimized for study and instruction; finish with readable technical communication, crisp line hierarchy, controlled notation-like detail, and no illegible labels or decorative clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Accurate layered anatomy with consistent proportion across layers; no gore beyond the dissection.',
       key_features:
-        'Educational anatomical reference plate with layered structural clarity and classical medical-plate influence; Layered anatomy views, insertion/origin callouts, proportion guides, sectional clarity; Consistent didactic coding (muscle warm, bone neutral, vascular cool/warm accents); Plate-style paper and wash overlays with minimal decorative noise; Multi-view orthographic layout with transparent overlays and inset details',
+        'surface, muscle and skeleton layers; madder red muscle; sepia engraving line; sectional insets; blank leader lines',
       creative_brief:
-        "Apply Anatomy Reference Sheet as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Educational anatomical reference plate with layered structural clarity and classical medical-plate influence, Layered anatomy views, insertion/origin callouts, proportion guides, sectional clarity, Plate-style paper and wash overlays with minimal decorative noise without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Anatomy Reference Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +119,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'UI/HUD Wireframe Concept',
     category: '6. Technical And Reference Sheets',
     negativePrompt:
-      'finished, polished, colorful, final UI, rendered, textured, photo, busy, cluttered, beautiful art, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text',
+      'placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, finished game art, poster illustration, finished, polished, colorful, final UI, rendered, textured, photo, busy, cluttered, beautiful art, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text, text, logo, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'UI/HUD Wireframe Concept acts as a transferable illustration router: start from Game HUD wireframe concept balancing diegetic and overlay paradigms, Radial-vs-linear alternatives, stat cluster prototypes, readability checkpoints and technical reference and interface-spec system built from orthographic clarity, diagram hierarchy, callout logic, measured spacing, and production-sheet legibility, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'UI wireframe: low-fidelity grey boxes, crossed image placeholders and bar-shaped text stand-ins mapping a game or app screen.',
       subject_treatment:
-        'Transform any prompt subject through Clean bounding-box architecture with spacing, flow, and hierarchy guides; preserve the requested subject while expressing it through schematic breakdowns, reference views, anatomy structure, UI wireframes, comparison scales, or specification surfaces, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject as the thing documented; this reference profile owns a set of low-fidelity grey-box interface wireframes for a screen built around the subject, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.',
       color_and_tone:
-        'Build color with Functional UI neutrals with semantic accent colors for state signaling; use color as information coding: blueprint cyan, neutral sheet stock, callout accents, HUD glow, anatomy value separation, or wireframe hierarchy, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'White and light grey panels, mid-grey placeholders, one blue annotation color for arrows and highlights.',
       lighting_and_shadow:
-        'Handle light through Flat interface contrast with optional interaction glow cues; keep light diagrammatic and legible through flat drafting values, callout emphasis, interface glow, anatomical separation, or measured shadow restraint, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Flat, with no light or shading beyond a thin drop line under active panels.',
       texture_and_material:
-        'Render Minimalist screen-surface treatment; precision-first wireframe presentation; surface detail should support readability with grid paper, line weights, translucent overlays, measurement ticks, UI panels, section cuts, or reference-sheet paper grain, keeping material scale coherent and avoiding noisy filler texture.',
+        'Thin uniform strokes, dashed boundaries, crossed rectangles and rounded grey bars instead of words.',
       camera_and_composition:
-        'Structure the image through Safe-zone aware screen layout plus world-anchored UI option studies; compose through orthographic projection, exploded spacing, callout grouping, interface modules, size-scale relationships, and reference-sheet hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Functional, restrained, information-priority design, mood carried by UI/HUD Wireframe Concept craft, material pressure, and visual restraint; derive mood from precision, planning, research, interface control, anatomical study, engineering authority, or catalogued comparison, letting the style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with UX concept fidelity focused on clarity, density control, and usability; finish with readable technical communication, crisp line hierarchy, controlled notation-like detail, and no illegible labels or decorative clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Two or three screen alternatives side by side, radial versus linear layout options, blue arrows marking flow.',
+      atmosphere_and_mood: 'Functional and provisional, structure decided long before any style.',
+      rendering_and_quality: 'Clean wireframe without final art, color theme or readable words.',
       key_features:
-        'Game HUD wireframe concept balancing diegetic and overlay paradigms; Radial-vs-linear alternatives, stat cluster prototypes, readability checkpoints; Functional UI neutrals with semantic accent colors for state signaling; Minimalist screen-surface treatment; precision-first wireframe presentation; Safe-zone aware screen layout plus world-anchored UI option studies',
+        'grey-box panels; crossed image placeholders; grey bars instead of text; blue flow arrows; layout alternatives',
       creative_brief:
-        "Apply UI/HUD Wireframe Concept as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Game HUD wireframe concept balancing diegetic and overlay paradigms, Radial-vs-linear alternatives, stat cluster prototypes, readability checkpoints, Minimalist screen-surface treatment; precision-first wireframe presentation without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies UI/HUD Wireframe Concept as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +146,523 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Monster Size Comparison Chart',
     category: '6. Technical And Reference Sheets',
     negativePrompt:
-      'single creature, no reference, unclear scale, vague proportions, tiny, only one, human-centric, no comparison, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text',
+      'placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, perspective scene, monsters fighting, single creature, no reference, unclear scale, vague proportions, only one, no comparison, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'scale-threat designs Size Comparison Chart acts as a transferable illustration router: start from Size-comparison chart with educational scale framing, Human and real-world benchmarks, incremental height logic, clear unit hierarchy and technical reference and interface-spec system built from orthographic clarity, diagram hierarchy, callout logic, measured spacing, and production-sheet legibility, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Size comparison chart: variants of the subject lined up smallest to largest as flat silhouettes on a height grid, a human figure for scale.',
       subject_treatment:
-        'Transform any prompt subject through Baseline-aligned silhouettes with measurement ticks and reference markers; preserve the requested subject while expressing it through schematic breakdowns, reference views, anatomy structure, UI wireframes, comparison scales, or specification surfaces, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject as the thing documented; this reference profile owns a size-comparison lineup of silhouettes on a height grid with a human benchmark, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.',
       color_and_tone:
-        'Build color with Neutral comparative scheme with restrained atmospheric scaling cues; use color as information coding: blueprint cyan, neutral sheet stock, callout accents, HUD glow, anatomy value separation, or wireframe hierarchy, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Warm off-white ground, charcoal silhouettes with slight value steps, one accent color for the featured form.',
       lighting_and_shadow:
-        'Handle light through Consistent silhouette rim/read light for cross-subject legibility; keep light diagrammatic and legible through flat drafting values, callout emphasis, interface glow, anatomical separation, or measured shadow restraint, so value structure supports the illustration process and does not overwrite the requested content.',
+        'No modeling; silhouettes read flat, with small ground-contact shadows only.',
       texture_and_material:
-        'Render Clean chartboard finish with minimal atmospheric fade on largest entries; surface detail should support readability with grid paper, line weights, translucent overlays, measurement ticks, UI panels, section cuts, or reference-sheet paper grain, keeping material scale coherent and avoiding noisy filler texture.',
+        'Clean filled silhouettes, thin grid lines, faint paper texture and tick marks on the height axis.',
       camera_and_composition:
-        'Structure the image through Left-to-right ascending scale progression with fixed ground reference; compose through orthographic projection, exploded spacing, callout grouping, interface modules, size-scale relationships, and reference-sheet hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Awe-oriented yet analytical, museum-chart clarity; derive mood from precision, planning, research, interface control, anatomical study, engineering authority, or catalogued comparison, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Strict side view on one ground line, subjects ordered by height, human silhouette at the small end, tick marks without numbers.',
+      atmosphere_and_mood: 'Awe through scale, the largest shape dwarfing the rest.',
       rendering_and_quality:
-        'Finish with Infographic-style concept sheet optimized for proportional comprehension; finish with readable technical communication, crisp line hierarchy, controlled notation-like detail, and no illegible labels or decorative clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Clear comparative chart with consistent scale and no unit numbers or names.',
       key_features:
-        'Size-comparison chart with educational scale framing; Human and real-world benchmarks, incremental height logic, clear unit hierarchy; Neutral comparative scheme with restrained atmospheric scaling cues; Clean chartboard finish with minimal atmospheric fade on largest entries; Left-to-right ascending scale progression with fixed ground reference',
+        'smallest-to-largest lineup; human scale silhouette; height grid; shared ground line; unnumbered tick marks',
       creative_brief:
-        "Apply scale-threat designs Size Comparison Chart as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Size-comparison chart with educational scale framing, Human and real-world benchmarks, incremental height logic, clear unit hierarchy, Clean chartboard finish with minimal atmospheric fade on largest entries without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Monster Size Comparison Chart as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP04-116',
+    name: 'Patent Figure Plate',
+    displayName: 'Patent Figure Plate',
+    styleAnchors: ['Patent Figure Plate', 'patent line drawing', 'black line on white'],
+    category: '6. Technical And Reference Sheets',
+    domain: 'patent line drawing',
+    negativePrompt:
+      'placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, reference numerals, grey wash, color, watermark, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Patent drawing plate: the subject in precise black ink line on white, shown as several figures with surface-shading lines and leader lines.',
+      subject_treatment:
+        'Keep the prompt subject as the thing documented; this reference profile owns a patent-style plate of several black-line figures with leader lines ending at blank points, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.',
+      color_and_tone: 'Pure black ink on bright white paper, no grey fill or color.',
+      lighting_and_shadow:
+        'Conventional light from upper left expressed by thicker shade lines on the lower right edges and parallel surface lines on curves.',
+      texture_and_material:
+        'Uniform technical-pen lines, parallel shading strokes on cylinders, stippled section faces, dashed hidden lines.',
+      camera_and_composition:
+        'Three or four figures on one sheet: perspective view, side view, section and exploded detail, leader lines ending at blank points.',
+      atmosphere_and_mood: 'Ingenious and formal, an invention laid open for examination.',
+      rendering_and_quality:
+        'Crisp reproduction-ready line art with no reference numerals, captions or signatures.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Patent Figure Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'black line on white; thick shade lines; parallel surface shading; several figures on one sheet; blank leader lines',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP04-117',
+    name: 'Botanical Dissection Plate',
+    displayName: 'Botanical Dissection Plate',
+    styleAnchors: [
+      'Botanical Dissection Plate',
+      'scientific plant plate',
+      'whole specimen plus dissections',
+    ],
+    category: '6. Technical And Reference Sheets',
+    domain: 'scientific plant plate',
+    negativePrompt:
+      'placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, decorative floral border, vase arrangement, watermark, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Botanical dissection plate: the whole plant in watercolor and fine line, surrounded by dissected flower parts, fruit sections and magnified details.',
+      subject_treatment:
+        'Keep the prompt subject as the thing documented; this reference profile owns a botanical plate with the whole plant plus dissected flower, fruit and section studies, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.',
+      color_and_tone:
+        'True botanical color in transparent watercolor on white, greens and petal hues accurate and unsaturated.',
+      lighting_and_shadow:
+        'Soft even light from upper left, shadows only as form modeling, no cast shadows on the paper.',
+      texture_and_material:
+        'Fine sepia outline, layered watercolor glazes, visible leaf venation and hairs on stems.',
+      camera_and_composition:
+        'Main plant specimen tall at the center, small numbered-style details arranged around it without any numbers.',
+      atmosphere_and_mood: 'Calm, precise and scholarly, a plant taken apart with care.',
+      rendering_and_quality:
+        'Scientific accuracy in every part, clean white paper, no decorative border or captions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Botanical Dissection Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'whole specimen plus dissections; flower and fruit sections; magnified details; watercolor over fine line; white ground',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP04-118',
+    name: 'Field Guide Species Plate',
+    displayName: 'Field Guide Species Plate',
+    styleAnchors: [
+      'Field Guide Species Plate',
+      'naturalist identification plate',
+      'male, female and juvenile',
+    ],
+    category: '6. Technical And Reference Sheets',
+    domain: 'naturalist identification plate',
+    negativePrompt:
+      'placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, habitat scene, species names, watermark, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Field guide plate: one species painted in gouache as male, female and juvenile, with a flight or gait silhouette, egg or cocoon and a track.',
+      subject_treatment:
+        'Keep the prompt subject as the thing documented; this reference profile owns a field-guide plate showing sexes, life stages, a flight or gait silhouette and a track of one species, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.',
+      color_and_tone:
+        'Accurate naturalist color on a pale cream ground, plumage or coat variants side by side for comparison.',
+      lighting_and_shadow:
+        'Soft even light with tiny contact shadows, identical on every figure so markings compare fairly.',
+      texture_and_material:
+        'Opaque gouache feathers, fur and scales, clean edges, small black silhouettes and footprint marks.',
+      camera_and_composition:
+        'Figures in strict profile arranged in two rows at one scale, silhouettes and track below.',
+      atmosphere_and_mood: 'Observant and patient, a species learned at a glance.',
+      rendering_and_quality:
+        'Identification-grade clarity with no habitat scene and no species names.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Field Guide Species Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'male, female and juvenile; profile figures at one scale; flight or gait silhouette; track and egg; cream ground',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP04-119',
+    name: 'Pose Library Sheet',
+    displayName: 'Pose Library Sheet',
+    styleAnchors: ['Pose Library Sheet', 'figure pose reference', 'eight to twelve poses'],
+    category: '6. Technical And Reference Sheets',
+    domain: 'figure pose reference',
+    negativePrompt:
+      'placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, motion blur effects, scenic background, watermark, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pose library sheet: the same figure repeated in eight to twelve poses, rendered in neutral grey tone like a clay study.',
+      subject_treatment:
+        'Keep the prompt subject as the thing documented; this reference profile owns a library of eight to twelve poses of the same figure on a floor grid under identical light, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.',
+      color_and_tone:
+        'Neutral grey figures on a light grey ground, a single mid-grey floor grid, no costume colors.',
+      lighting_and_shadow:
+        'One identical top-left key and soft fill on every pose, with a small contact shadow each.',
+      texture_and_material:
+        'Smooth matte grey surfaces with clear planes; costume simplified to readable folds and silhouettes.',
+      camera_and_composition:
+        'Poses in two or three rows at one scale and one camera height, each on its own floor-grid square.',
+      atmosphere_and_mood: 'Practical and neutral, movement catalogued for animators.',
+      rendering_and_quality:
+        'Consistent proportions and scale across poses; no action effects and no background.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pose Library Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'eight to twelve poses; neutral grey clay tone; identical lighting; floor grid squares; one camera height',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP04-120',
+    name: 'Expression Model Sheet',
+    displayName: 'Expression Model Sheet',
+    styleAnchors: ['Expression Model Sheet', 'facial expression reference', 'nine to twelve heads'],
+    category: '6. Technical And Reference Sheets',
+    domain: 'facial expression reference',
+    negativePrompt:
+      'placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, different characters per head, emotion captions, watermark, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Expression model sheet: one character head drawn nine to twelve times in clean line with a single grey tone, each with a different expression.',
+      subject_treatment:
+        'Keep the prompt subject as the thing documented; this reference profile owns a grid of nine to twelve heads of the same character, each with a different expression, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.',
+      color_and_tone:
+        'Black line with one flat grey shadow tone on white, an optional pale skin flat on the first head only.',
+      lighting_and_shadow:
+        'Simple cel shadow from one consistent direction so the only change between heads is the expression.',
+      texture_and_material:
+        'Clean confident animation line, construction center lines faintly visible under a few heads.',
+      camera_and_composition:
+        'Heads in an even grid, mostly front and three-quarter, identical size and head proportion.',
+      atmosphere_and_mood: 'Lively and consistent, one personality in many moods.',
+      rendering_and_quality:
+        'On-model consistency across every head; no captions for the emotions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Expression Model Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'nine to twelve heads; one character; clean line plus one grey tone; even grid; faint construction lines',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP04-121',
+    name: 'Garment Pattern Layout',
+    displayName: 'Garment Pattern Layout',
+    styleAnchors: ['Garment Pattern Layout', 'sewing pattern sheet', 'flat pattern pieces'],
+    category: '6. Technical And Reference Sheets',
+    domain: 'sewing pattern sheet',
+    negativePrompt:
+      'placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, model wearing the garment as main image, size numbers, watermark, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Garment pattern layout: the costume of the subject flattened into sewing pattern pieces printed on pale tissue paper, with a small croquis of the finished garment.',
+      subject_treatment:
+        'Keep the prompt subject as the thing documented; this reference profile owns a flat sewing-pattern layout of the garment pieces with a small croquis of the finished piece, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.',
+      color_and_tone:
+        'Translucent pale tan tissue, black printed outlines, one or two line colors for different sizes.',
+      lighting_and_shadow:
+        'Flat soft light with faint shadows where the tissue wrinkles or overlaps.',
+      texture_and_material:
+        'Thin tissue with creases and slight transparency, dashed seam allowances, grainline arrows, notch triangles and fold marks.',
+      camera_and_composition:
+        'Top-down layout of nested pattern pieces filling the sheet, the croquis small in one corner.',
+      atmosphere_and_mood: 'Methodical and crafty, a costume waiting to be cut.',
+      rendering_and_quality:
+        'Accurate pattern-piece shapes with no piece names, sizes or instructions written.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Garment Pattern Layout as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'flat pattern pieces; grainline arrows; notches and dashed seam lines; creased tissue paper; small croquis',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP04-122',
+    name: 'Wordless Assembly Steps',
+    displayName: 'Wordless Assembly Steps',
+    styleAnchors: ['Wordless Assembly Steps', 'assembly instruction sheet', 'six step panels'],
+    category: '6. Technical And Reference Sheets',
+    domain: 'assembly instruction sheet',
+    negativePrompt:
+      'placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, step numbers, part codes, watermark, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Wordless assembly instructions: clean isometric line drawings in six step panels, parts sliding into place along arrows.',
+      subject_treatment:
+        'Keep the prompt subject as the thing documented; this reference profile owns a wordless sequence of step panels showing how the subject is assembled, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.',
+      color_and_tone:
+        'Black line on white with light grey for already-assembled parts, one accent color for the part being added.',
+      lighting_and_shadow: 'No shading beyond flat grey fills; depth from isometric line only.',
+      texture_and_material:
+        'Uniform thin lines, dashed motion paths, curved rotation arrows, simple hand icons and blank circles for step markers.',
+      camera_and_composition:
+        'Isometric views in a grid of six panels, the same angle throughout, the finished object in the last panel.',
+      atmosphere_and_mood: 'Friendly and clear, building without reading a single word.',
+      rendering_and_quality: 'Diagrammatic clarity, no step numbers, words or part codes.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wordless Assembly Steps as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'six step panels; isometric line drawings; dashed motion arrows; accent color on the new part; blank step circles',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP04-123',
+    name: 'Poché Section Drawing',
+    displayName: 'Poché Section Drawing',
+    styleAnchors: ['Poché Section Drawing', 'architectural section', 'solid black cut walls'],
+    category: '6. Technical And Reference Sheets',
+    domain: 'architectural section',
+    negativePrompt:
+      'placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, perspective cutaway, room labels, watermark, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Poché section drawing: the subject sliced vertically, cut walls and floors filled solid black, everything beyond drawn in thin elevation line.',
+      subject_treatment:
+        'Keep the prompt subject as the thing documented; this reference profile owns a vertical architectural section through the subject with cut walls filled solid black, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.',
+      color_and_tone:
+        'Solid black poché, fine black line, hatched earth and one pale wash for sky or water.',
+      lighting_and_shadow:
+        'No light modeling; the contrast between black cut mass and thin lines creates all depth.',
+      texture_and_material:
+        'Ruled hairlines, earth hatching below grade, tiny scale figures and furniture in outline.',
+      camera_and_composition:
+        'Orthographic vertical section across the full width of the sheet, a clear ground line and small human figures for scale.',
+      atmosphere_and_mood: 'Revealing and architectural, the inside of a building laid bare.',
+      rendering_and_quality:
+        'Crisp drafted line with confident black fill, no perspective and no room labels.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Poché Section Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'solid black cut walls; thin beyond-elevation line; hatched earth; tiny scale figures; orthographic section',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP04-124',
+    name: 'Heraldry Tincture Sheet',
+    displayName: 'Heraldry Tincture Sheet',
+    styleAnchors: [
+      'Heraldry Tincture Sheet',
+      'heraldic design study',
+      'one shield in many tinctures',
+    ],
+    category: '6. Technical And Reference Sheets',
+    domain: 'heraldic design study',
+    negativePrompt:
+      'placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, motto scroll text, real national arms, watermark, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Heraldry design sheet: one coat of arms repeated in a grid of tincture and division variants, painted in gouache and shell gold on vellum.',
+      subject_treatment:
+        'Keep the prompt subject as the thing documented; this reference profile owns a grid of one shield design repeated in different tinctures and divisions, with charge studies, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.',
+      color_and_tone:
+        'Heraldic tinctures only: gules, azure, vert, sable, purpure, with gold and silver metals.',
+      lighting_and_shadow:
+        'Flat heraldic color with a thin black outline and a little burnished gold shine.',
+      texture_and_material:
+        'Opaque gouache fills, crisp black outlines, raised shell gold and vellum grain.',
+      camera_and_composition:
+        'Nine to twelve identical shield shapes in an even grid, a larger study of the main charge beside them.',
+      atmosphere_and_mood: 'Proud and ceremonial, a lineage chosen color by color.',
+      rendering_and_quality:
+        'Clean heraldic drawing with consistent charge and no mottos or names.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Heraldry Tincture Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'one shield in many tinctures; division variants; gouache and shell gold; charge study; even grid',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP04-125',
+    name: 'Celestial Atlas Plate',
+    displayName: 'Celestial Atlas Plate',
+    styleAnchors: ['Celestial Atlas Plate', 'constellation chart', 'constellation figure'],
+    category: '6. Technical And Reference Sheets',
+    domain: 'constellation chart',
+    negativePrompt:
+      'placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, photographic night sky, degree numbers, watermark, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Celestial atlas plate: the subject drawn as a hand-colored engraved constellation figure over a star field of graded dots and a coordinate grid.',
+      subject_treatment:
+        'Keep the prompt subject as the thing documented; this reference profile owns a star-atlas plate where the subject becomes a constellation figure over plotted stars and a coordinate grid, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.',
+      color_and_tone:
+        'Deep midnight blue ground, pale gold stars, figure in thin cream line with soft wash tints.',
+      lighting_and_shadow: 'No lighting; stars sized by magnitude as bright dots with tiny rays.',
+      texture_and_material:
+        'Engraved hairlines, stippled Milky Way band, faint curved coordinate lines and aged paper edges.',
+      camera_and_composition:
+        'The constellation figure filling a circular or rectangular chart, coordinate arcs curving across it.',
+      atmosphere_and_mood: 'Mythic and quiet, a story written in the stars.',
+      rendering_and_quality:
+        'Precise engraved chart with no star names, degree numbers or captions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Celestial Atlas Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'constellation figure; magnitude-sized star dots; curved coordinate grid; midnight blue and gold; engraved hairlines',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP04-126',
+    name: 'Three-View Recognition Chart',
+    displayName: 'Three-View Recognition Chart',
+    styleAnchors: [
+      'Three-View Recognition Chart',
+      'silhouette identification chart',
+      'black silhouettes',
+    ],
+    category: '6. Technical And Reference Sheets',
+    domain: 'silhouette identification chart',
+    negativePrompt:
+      'placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, type names, rendered detail, watermark, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Recognition chart: several related variants of the subject shown as solid black silhouettes in top, front and side view, like a spotter card.',
+      subject_treatment:
+        'Keep the prompt subject as the thing documented; this reference profile owns a recognition chart of related types, each shown as black silhouettes in top, front and side views, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.',
+      color_and_tone:
+        'Solid black silhouettes on off-white card, thin grey ruled rows, no other color.',
+      lighting_and_shadow: 'No light or interior detail; identification rests on silhouette alone.',
+      texture_and_material:
+        'Crisp filled shapes, faint grey rules, slightly worn printed card stock.',
+      camera_and_composition:
+        'Rows of types, each row with its top, front and side view aligned at one scale.',
+      atmosphere_and_mood: 'Alert and methodical, knowing a shape before it arrives.',
+      rendering_and_quality: 'Exact silhouettes without type names, codes or numbers.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Three-View Recognition Chart as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'black silhouettes; top, front and side per type; ruled rows; one scale; worn card stock',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP04-127',
+    name: 'Perspective Construction Drawing',
+    displayName: 'Perspective Construction Drawing',
+    styleAnchors: [
+      'Perspective Construction Drawing',
+      'perspective drawing study',
+      'visible vanishing lines',
+    ],
+    category: '6. Technical And Reference Sheets',
+    domain: 'perspective drawing study',
+    negativePrompt:
+      'placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, finished rendering without construction, painted background, watermark, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Perspective construction drawing: the subject built over a two- or three-point perspective grid, with boxes, ellipses and cross-contours left visible under the final line.',
+      subject_treatment:
+        'Keep the prompt subject as the thing documented; this reference profile owns a perspective construction drawing with vanishing lines, boxes and ellipses left visible under the final line, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.',
+      color_and_tone:
+        'Blue col-erase construction lines under confident black final line on white, light grey marker shadow.',
+      lighting_and_shadow:
+        'One grey marker shadow plane on the underside and a cast shadow projected with visible construction.',
+      texture_and_material:
+        'Ruled vanishing lines, sketched ellipses with minor axes marked, cross-contour lines wrapping curved forms.',
+      camera_and_composition:
+        'Subject large on the sheet, vanishing points marked on or near the edges, horizon line drawn across.',
+      atmosphere_and_mood: 'Analytical and confident, form understood from the inside out.',
+      rendering_and_quality:
+        'Construction left visible as the point of the image, no painted finish and no labels.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Perspective Construction Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'visible vanishing lines; construction boxes and ellipses; cross-contours; blue under black line; projected cast shadow',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP04-128',
+    name: 'Motion Cycle Linkage Study',
+    displayName: 'Motion Cycle Linkage Study',
+    styleAnchors: [
+      'Motion Cycle Linkage Study',
+      'mechanism motion diagram',
+      'ghosted successive positions',
+    ],
+    category: '6. Technical And Reference Sheets',
+    domain: 'mechanism motion diagram',
+    negativePrompt:
+      'placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, motion blur, angle numbers, watermark, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Linkage motion study: a mechanism drawn in successive ghosted positions through one full cycle, pivots circled and trace paths plotted.',
+      subject_treatment:
+        'Keep the prompt subject as the thing documented; this reference profile owns a motion study where the subject mechanism is shown in ghosted successive positions through its cycle, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.',
+      color_and_tone:
+        'Black line for the key position, progressively paler grey ghosts, one red trace path on cream paper.',
+      lighting_and_shadow: 'No shading; overlap and fading line weight show time.',
+      texture_and_material:
+        'Ruled links, compass-drawn pivot circles, dotted trace curves and small curved arrows.',
+      camera_and_composition:
+        'Side-view orthographic of the mechanism, positions overlapping in one frame, the traced path looping through it.',
+      atmosphere_and_mood: 'Rhythmic and ingenious, movement frozen into a diagram.',
+      rendering_and_quality:
+        'Clean diagram with consistent link lengths across positions and no angle numbers.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Motion Cycle Linkage Study as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'ghosted successive positions; circled pivots; red trace path; curved motion arrows; side-view diagram',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP04-129',
+    name: 'Archaeological Find Drawing',
+    displayName: 'Archaeological Find Drawing',
+    styleAnchors: [
+      'Archaeological Find Drawing',
+      'artifact recording drawing',
+      'half profile and section',
+    ],
+    category: '6. Technical And Reference Sheets',
+    domain: 'artifact recording drawing',
+    negativePrompt:
+      'placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, find numbers, excavation photograph, watermark, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Archaeological find drawing: the subject recorded as an excavated artifact, pottery-style half profiles with black section fill, stippled surfaces and dashed reconstructions.',
+      subject_treatment:
+        'Keep the prompt subject as the thing documented; this reference profile owns an archaeological record sheet with profile sections, stippled surfaces and reconstructed outlines of the subject as a find, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.',
+      color_and_tone:
+        'Black ink on white drafting film, solid black section profiles, grey only where a rubbing is shown.',
+      lighting_and_shadow:
+        'Conventional top-left light in stipple density; section faces solid black with no light.',
+      texture_and_material:
+        'Stippled corrosion and wear, ruled center lines, dashed missing parts, a graphite rubbing of a decorated surface.',
+      camera_and_composition:
+        'Front view split down a center line into exterior and section, detail views and a bar scale without numbers.',
+      atmosphere_and_mood: 'Patient and evidential, a past recovered piece by piece.',
+      rendering_and_quality: 'Recording-grade accuracy, no find numbers, site codes or captions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Archaeological Find Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'half profile and section; solid black section fill; stippled surface; dashed reconstruction; unnumbered bar scale',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -3,7 +3,7 @@ id: SP06-073
 packId: pack_06
 name: Embroidery on Photo
 category: 5. Mixed Media
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,53 +12,25 @@ tags:
   - essential-art-styles
   - mixed-media
 visualDna:
-  aesthetic: >-
-    Embroidery on Photo acts as a transferable art-medium router: start from Thread stitched over
-    photo, Thread texture and mixed-media assembly system built from layering, adhesion, surface
-    collision, found-material logic, tactile seams, and handmade construction, then apply the medium
-    behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Thread lines; preserve the prompt subject while rebuilding
-    it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain,
-    gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object
-    function, or environment legible.
-  color_and_tone: >-
-    Build color with Photo + Thread accent; treat color as material combination: paper aging,
-    varnish warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or
-    marbled oil flow, with deliberate value grouping, accent control, and medium-specific limits
-    rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Photo lighting; make light reveal relief, varnish gloss, paper lift, tape
-    shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value
-    structure supports the medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Glossy photo, matte thread; surface detail should show torn fiber, glue, tape edge, cork
-    tooth, thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping
-    material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Stitched details; compose through layer order, overlap, pin logic,
-    cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a
-    literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style
-    work.
-  atmosphere_and_mood: >-
-    Keep the mood Personal, tactile; derive mood from DIY urgency, memory, repair, evidence, punk
-    collision, tactile intimacy, decorative excess, or experimental material play, letting the
-    medium alter interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Artistic, altered; finish with coherent material stacking, readable subject
-    transformation, and no single flat texture pasted over the whole image, clean denoised surfaces
-    where appropriate, and enough craft evidence to make the medium recognizable.
-  key_features: >-
-    Thread stitched over photo; Thread texture; Photo + Thread accent; Glossy photo, matte thread;
-    Stitched details
-  creative_brief: >-
-    Apply Embroidery on Photo as an art-style preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Thread stitched over photo, Thread texture, Glossy photo, matte thread without requiring the
-    card image's original subject.
+  aesthetic: 'Embroidery on photo: a printed photograph pierced and hand-stitched, thread adding color, pattern or light as a physical layer over the image.'
+  subject_treatment: Keep the photographed subject, clothing, anatomy and camera exactly as photographed; thread is stitched through the print around and over it as an added layer, never replacing garments or skin.
+  color_and_tone: Natural photo color, often muted, against one or two saturated thread colors such as gold, vermilion or cobalt.
+  lighting_and_shadow: Photo lighting stays; real light glints on the thread and each stitch casts a tiny shadow on the paper.
+  texture_and_material: Satin-stitch fills, running-stitch lines, French knots, needle holes, slight paper puckering and a loose thread tail.
+  camera_and_composition: Keep the photo framing; stitching follows or extends shapes already in the photo such as rays, contours and patterns.
+  atmosphere_and_mood: Personal and tactile, a memory touched by hand.
+  rendering_and_quality: Sharp photographic base with dimensional thread; never flat printed lines pretending to be stitches.
+  key_features: printed photo base; satin and running stitch; French knots; needle holes; thread casting shadow
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Embroidery on Photo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
-  - realistic
-  - photorealistic
+  - uniform beige torn-paper wash over every image
+  - red tape strips added by default
+  - material replacing clothing or skin
+  - readable printed words
+  - changing the requested camera view
+  - fabric replacing the photo
+  - thread clothing
+  - printed fake stitches
   - 3d render
   - octane render
   - noise
@@ -83,15 +55,16 @@ avoidRules:
   - fake scrapbook text
   - craft-table default
   - clean vector render
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-073.webp
 attributes:
-  negativePrompt: >-
-    realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border, portrait requirement, literal memory photo, wrong
-    medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low
-    resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector
-    render
+  negativePrompt: uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, fabric replacing the photo, thread clothing, printed fake stitches, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, portrait requirement, literal memory photo, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

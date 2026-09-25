@@ -8,28 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Metropolitan Transit Patina',
     category: '3. Civic Infrastructure And Specialty Spaces',
     negativePrompt:
-      'clean, sunny, readable text, map, logo, subway-car hero, long empty corridor, market aisle, library aisle, fantasy hall, camera prop, featureless abstraction, long corridor, people crowd, readable map or sign, office furniture focus, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, empty abstraction, prompt-required card, watermark, mandatory interior set, prompt-literal card',
+      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, clean new tile, sunny daylight, readable maps, subway-car hero, clean, sunny, readable text, map, logo, long empty corridor, market aisle, library aisle, fantasy hall, camera prop, featureless abstraction, long corridor, readable map or sign, fixed building-only scene, corridor perspective, furniture showroom, empty abstraction, prompt-required card, watermark, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Metropolitan Transit Patina acts as a transferable architecture/interior router: chipped ceramic tile, worn safety band, oxidized steel, anti-slip floor texture, abstract non-readable wayfinding stripes; fuse it with civic infrastructure grammar with public-use wear, technical service logic, institutional material memory, and specialty-space performance; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Metropolitan transit patina: the worn public skin of an old underground railway, with bevelled glazed tile, riveted steel columns, tactile safety edges and decades of grime in every joint.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through infrastructure anchors, service junctions, public-scale material wear, modular containment, utility grids, and readable built function; treat chipped ceramic tile, worn safety band, oxidized steel, anti-slip floor texture, abstract non-readable wayfinding stripes as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        "Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.",
       color_and_tone:
-        'Map color through civic neutrals, safety accents, oxidized metal, ceramic or concrete value blocks, damp fluorescents, and specialty glow cues; let source cues such as chipped ceramic tile, worn safety band, oxidized steel, anti-slip floor texture, abstract non-readable wayfinding stripes decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Cream and white tile yellowed by age, one faded colour band as abstract wayfinding, safety yellow, green-grey painted steel, grime darkening the grout; flat fluorescent cast.',
       lighting_and_shadow:
-        'Use fluorescent pressure, institutional bounce, service LEDs, humid or aquatic diffusion, buried low light, and public-space shadow compression; make light reveal joints, relief, material depth, scale, and atmosphere from chipped ceramic tile, worn safety band, oxidized steel, anti-slip floor texture, abstract non-readable wayfinding stripes without replacing prompt X with a stock architectural render.',
+        'Rows of fluorescent tubes giving flat greenish light, dim pools between fixtures, hard shadows under beams, deeper darkness toward tunnel mouths.',
       texture_and_material:
-        'Render tile, steel, concrete, glass, acrylic, brass, paper, bone-mineral substitutes, cables, patina, water stains, and public-use abrasion; prioritize the tactile signals in chipped ceramic tile, worn safety band, oxidized steel, anti-slip floor texture, abstract non-readable wayfinding stripes, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Bevelled subway tile with chipped corners, riveted I-beam columns layered with paint, tactile dimpled platform edge, worn terrazzo, rust weeping from bolts.',
       camera_and_composition:
-        'Frame through tight infrastructure detail crops, service-grid repetition, compressed public thresholds, wayfinding rhythm, and specialty-space section logic; convert chipped ceramic tile, worn safety band, oxidized steel, anti-slip floor texture, abstract non-readable wayfinding stripes into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
+        'Keep the requested view; favour oblique or side views across tiled walls and columns rather than a centred vanishing corridor.',
       atmosphere_and_mood:
-        'Carry mood through public memory, controlled utility, preservation, overload, reverence, damp atmosphere, or quiet abandonment without turning into narrative scene; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Tired, public and nocturnal, the city worn smooth by millions of passing hands.',
       rendering_and_quality:
-        'Finish with high-readability infrastructure finish with denoised grime, non-readable wayfinding shapes, no UI/screens, and no corridor lock; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Low-light documentary photograph with specific grime and chips, abstract colour bands only, no readable maps or signs.',
       key_features:
-        'chipped ceramic tile, worn safety band, oxidized steel, anti-slip floor texture, abstract non-readable wayfinding stripes; infrastructure anchors, service junctions, public-scale material wear, modular containment, utility grids, and readable built function; tile, steel, concrete, glass, acrylic, brass, paper, bone-mineral substitutes, cables, patina, water stains, and public-use abrasion; tight infrastructure detail crops, service-grid repetition, compressed public thresholds, wayfinding rhythm, and specialty-space section logic',
+        'chipped bevelled subway tile; riveted painted steel columns; tactile yellow safety edge; fluorescent greenish light; grime-dark grout',
       creative_brief:
-        'Apply Metropolitan Transit Patina after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies chipped ceramic tile, worn safety band, oxidized steel, anti-slip floor texture, abstract non-readable wayfinding stripes, civic infrastructure grammar with public-use wear, technical service logic, institutional material memory, and specialty-space performance, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Metropolitan Transit Patina as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +37,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Conservatory Bioclimate',
     category: '3. Civic Infrastructure And Specialty Spaces',
     negativePrompt:
-      'dark, dry, plant store, market aisle, library aisle, dry dark interior, chair/table focus, camera prop, empty abstraction, long corridor, people crowd, readable map or sign, office furniture focus, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card',
+      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, dry dusty interior, plant shop display, hard sun shadows, plant store, market aisle, library aisle, dry dark interior, camera prop, empty abstraction, long corridor, readable map or sign, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Conservatory Bioclimate acts as a transferable architecture/interior router: glass ribs, condensation, humid light, layered botanical silhouettes, water catchment or thermal mass cues; fuse it with civic infrastructure grammar with public-use wear, technical service logic, institutional material memory, and specialty-space performance; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Conservatory bioclimate: a glasshouse climate machine of thin glazing bars, heating pipes and misting lines, where humidity and filtered light are the architecture.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through infrastructure anchors, service junctions, public-scale material wear, modular containment, utility grids, and readable built function; treat glass ribs, condensation, humid light, layered botanical silhouettes, water catchment or thermal mass cues as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        "Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.",
       color_and_tone:
-        'Map color through civic neutrals, safety accents, oxidized metal, ceramic or concrete value blocks, damp fluorescents, and specialty glow cues; let source cues such as glass ribs, condensation, humid light, layered botanical silhouettes, water catchment or thermal mass cues decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Milky white glass light, many saturated greens, white-painted iron or timber glazing bars, rust and verdigris on pipes; soft low contrast through haze.',
       lighting_and_shadow:
-        'Use fluorescent pressure, institutional bounce, service LEDs, humid or aquatic diffusion, buried low light, and public-space shadow compression; make light reveal joints, relief, material depth, scale, and atmosphere from glass ribs, condensation, humid light, layered botanical silhouettes, water catchment or thermal mass cues without replacing prompt X with a stock architectural render.',
+        'Daylight diffused by fogged glass and mist, leaf shadows softened by humidity, shafts where vents open; no hard sun edges.',
       texture_and_material:
-        'Render tile, steel, concrete, glass, acrylic, brass, paper, bone-mineral substitutes, cables, patina, water stains, and public-use abrasion; prioritize the tactile signals in glass ribs, condensation, humid light, layered botanical silhouettes, water catchment or thermal mass cues, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Condensation beads and runs on panes, white-painted glazing bars, cast-iron heating pipes under slatted benches, gravel floors, misting nozzles, algae on glass.',
       camera_and_composition:
-        'Frame through tight infrastructure detail crops, service-grid repetition, compressed public thresholds, wayfinding rhythm, and specialty-space section logic; convert glass ribs, condensation, humid light, layered botanical silhouettes, water catchment or thermal mass cues into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through public memory, controlled utility, preservation, overload, reverence, damp atmosphere, or quiet abandonment without turning into narrative scene; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested view; layer foliage foreground, midground subject and fogged glass background; avoid a centred glass corridor.',
+      atmosphere_and_mood: 'Warm, dripping and hushed, a tropical air held behind glass.',
       rendering_and_quality:
-        'Finish with high-readability infrastructure finish with denoised grime, non-readable wayfinding shapes, no UI/screens, and no corridor lock; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Soft humid photograph with real condensation and haze, varied plant species, no plant-shop display.',
       key_features:
-        'glass ribs, condensation, humid light, layered botanical silhouettes, water catchment or thermal mass cues; infrastructure anchors, service junctions, public-scale material wear, modular containment, utility grids, and readable built function; tile, steel, concrete, glass, acrylic, brass, paper, bone-mineral substitutes, cables, patina, water stains, and public-use abrasion; tight infrastructure detail crops, service-grid repetition, compressed public thresholds, wayfinding rhythm, and specialty-space section logic',
+        'condensation-beaded glass; white-painted glazing bars; misting haze; cast-iron heating pipes; layered tropical foliage',
       creative_brief:
-        'Apply Conservatory Bioclimate after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies glass ribs, condensation, humid light, layered botanical silhouettes, water catchment or thermal mass cues, civic infrastructure grammar with public-use wear, technical service logic, institutional material memory, and specialty-space performance, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Conservatory Bioclimate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +65,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Institutional Ruin Patina',
     category: '3. Civic Infrastructure And Specialty Spaces',
     negativePrompt:
-      'clean, new, people, guard, inspector, character, hospital/asylum horror, long corridor, gore, creature, readable signage, furniture focus, empty abstraction, people crowd, readable map or sign, office furniture focus, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, market aisle, library aisle, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
+      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, fresh clean surfaces, gore, horror creatures, asylum horror staging, clean, new, hospital/asylum horror, long corridor, creature, readable signage, furniture focus, empty abstraction, readable map or sign, fixed building-only scene, corridor perspective, furniture showroom, market aisle, library aisle, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Institutional Ruin Patina acts as a transferable architecture/interior router: delaminated paint, water stains, oxidized fixtures, broken service grid, sealed notice shapes without readable text; fuse it with civic infrastructure grammar with public-use wear, technical service logic, institutional material memory, and specialty-space performance; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Institutional ruin patina: an abandoned public building decaying in place, with paint peeling in curls, collapsed ceiling tiles, rust bleeding from fixtures and plants reclaiming the floor.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through infrastructure anchors, service junctions, public-scale material wear, modular containment, utility grids, and readable built function; treat delaminated paint, water stains, oxidized fixtures, broken service grid, sealed notice shapes without readable text as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        "Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.",
       color_and_tone:
-        'Map color through civic neutrals, safety accents, oxidized metal, ceramic or concrete value blocks, damp fluorescents, and specialty glow cues; let source cues such as delaminated paint, water stains, oxidized fixtures, broken service grid, sealed notice shapes without readable text decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Faded institutional green, cream and pale blue paint over grey plaster, rust orange streaks, moss green on floors, cool daylight; desaturated with one living green.',
       lighting_and_shadow:
-        'Use fluorescent pressure, institutional bounce, service LEDs, humid or aquatic diffusion, buried low light, and public-space shadow compression; make light reveal joints, relief, material depth, scale, and atmosphere from delaminated paint, water stains, oxidized fixtures, broken service grid, sealed notice shapes without readable text without replacing prompt X with a stock architectural render.',
+        'Daylight through broken skylights and dirty windows in soft shafts, dust in the air, darker rooms beyond.',
       texture_and_material:
-        'Render tile, steel, concrete, glass, acrylic, brass, paper, bone-mineral substitutes, cables, patina, water stains, and public-use abrasion; prioritize the tactile signals in delaminated paint, water stains, oxidized fixtures, broken service grid, sealed notice shapes without readable text, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Lead paint delaminating in curled flakes, water-stained plaster, sagging acoustic tiles, corroded radiators and light fittings, moss and saplings through cracked floor tile.',
       camera_and_composition:
-        'Frame through tight infrastructure detail crops, service-grid repetition, compressed public thresholds, wayfinding rhythm, and specialty-space section logic; convert delaminated paint, water stains, oxidized fixtures, broken service grid, sealed notice shapes without readable text into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through public memory, controlled utility, preservation, overload, reverence, damp atmosphere, or quiet abandonment without turning into narrative scene; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested view; show the room function through its leftover fixtures, light shaft crossing the frame, no centred corridor.',
+      atmosphere_and_mood: 'Melancholic, quiet and abandoned, time settling in dust.',
       rendering_and_quality:
-        'Finish with high-readability infrastructure finish with denoised grime, non-readable wayfinding shapes, no UI/screens, and no corridor lock; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Urban-exploration photograph with precise decay detail, no gore, creatures or horror staging.',
       key_features:
-        'delaminated paint, water stains, oxidized fixtures, broken service grid, sealed notice shapes without readable text; infrastructure anchors, service junctions, public-scale material wear, modular containment, utility grids, and readable built function; tile, steel, concrete, glass, acrylic, brass, paper, bone-mineral substitutes, cables, patina, water stains, and public-use abrasion; tight infrastructure detail crops, service-grid repetition, compressed public thresholds, wayfinding rhythm, and specialty-space section logic',
+        'curled delaminating paint; collapsed ceiling tiles; rust-bleed from fixtures; moss through cracked floor; dusty skylight shafts',
       creative_brief:
-        'Apply Institutional Ruin Patina after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies delaminated paint, water stains, oxidized fixtures, broken service grid, sealed notice shapes without readable text, civic infrastructure grammar with public-use wear, technical service logic, institutional material memory, and specialty-space performance, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Institutional Ruin Patina as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +93,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bibliographic Classicism',
     category: '3. Civic Infrastructure And Specialty Spaces',
     negativePrompt:
-      'digital, modern, required library, reading table, lamps, shelf aisle, required library aisle, bookstore corridor, desk lamp, open book prop, hand holding book, readable text, market aisle, fantasy hall, empty abstraction, long corridor, people crowd, readable map or sign, office furniture focus, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, library aisle, prompt-required card, logo, watermark, camera prop, literal library aisle, mandatory interior set, prompt-literal card',
+      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, readable book titles, bookstore aisle, plastic shelving, required library aisle, bookstore corridor, readable text, market aisle, fantasy hall, empty abstraction, long corridor, readable map or sign, fixed building-only scene, corridor perspective, furniture showroom, library aisle, prompt-required card, logo, watermark, camera prop, literal library aisle, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Bibliographic Classicism acts as a transferable architecture/interior router: leather-paper-brass hierarchy, vertical catalog rhythm, green-amber warmth, worn gilding, oak patina; fuse it with civic infrastructure grammar with public-use wear, technical service logic, institutional material memory, and specialty-space performance; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Bibliographic classicism: the material language of a great old reading room — oak shelving bays, cast-iron galleries, brass rails and rolling ladders, leather and gilt under a coffered ceiling.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through infrastructure anchors, service junctions, public-scale material wear, modular containment, utility grids, and readable built function; treat leather-paper-brass hierarchy, vertical catalog rhythm, green-amber warmth, worn gilding, oak patina as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        "Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.",
       color_and_tone:
-        'Map color through civic neutrals, safety accents, oxidized metal, ceramic or concrete value blocks, damp fluorescents, and specialty glow cues; let source cues such as leather-paper-brass hierarchy, vertical catalog rhythm, green-amber warmth, worn gilding, oak patina decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Oak brown, oxblood and bottle-green leather, worn gold leaf, brass, and green-glass lamp light; warm amber midtones, dark corners.',
       lighting_and_shadow:
-        'Use fluorescent pressure, institutional bounce, service LEDs, humid or aquatic diffusion, buried low light, and public-space shadow compression; make light reveal joints, relief, material depth, scale, and atmosphere from leather-paper-brass hierarchy, vertical catalog rhythm, green-amber warmth, worn gilding, oak patina without replacing prompt X with a stock architectural render.',
+        'Soft top light from a lantern or clerestory, green-shaded task lamps making warm pools, deep shadow in the shelving bays.',
       texture_and_material:
-        'Render tile, steel, concrete, glass, acrylic, brass, paper, bone-mineral substitutes, cables, patina, water stains, and public-use abrasion; prioritize the tactile signals in leather-paper-brass hierarchy, vertical catalog rhythm, green-amber warmth, worn gilding, oak patina, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Quarter-sawn oak bays with carved end panels, brass rails and ladders on tracks, cast-iron spiral stairs, leather and cloth spines, card-drawer cabinets, worn gilding.',
       camera_and_composition:
-        'Frame through tight infrastructure detail crops, service-grid repetition, compressed public thresholds, wayfinding rhythm, and specialty-space section logic; convert leather-paper-brass hierarchy, vertical catalog rhythm, green-amber warmth, worn gilding, oak patina into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through public memory, controlled utility, preservation, overload, reverence, damp atmosphere, or quiet abandonment without turning into narrative scene; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested view; stack vertical tiers of shelving or galleries, one warm lamp pool as the focus, no centred aisle.',
+      atmosphere_and_mood: 'Studious, hushed and venerable, knowledge stored in wood and brass.',
       rendering_and_quality:
-        'Finish with high-readability infrastructure finish with denoised grime, non-readable wayfinding shapes, no UI/screens, and no corridor lock; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Warm low-light photograph with legible joinery and brass wear, spines without readable titles.',
       key_features:
-        'leather-paper-brass hierarchy, vertical catalog rhythm, green-amber warmth, worn gilding, oak patina; infrastructure anchors, service junctions, public-scale material wear, modular containment, utility grids, and readable built function; tile, steel, concrete, glass, acrylic, brass, paper, bone-mineral substitutes, cables, patina, water stains, and public-use abrasion; tight infrastructure detail crops, service-grid repetition, compressed public thresholds, wayfinding rhythm, and specialty-space section logic',
+        'oak shelving bays with rolling brass ladders; cast-iron galleries; green-shaded lamp pools; worn gilt coffering; leather spines',
       creative_brief:
-        'Apply Bibliographic Classicism after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies leather-paper-brass hierarchy, vertical catalog rhythm, green-amber warmth, worn gilding, oak patina, civic infrastructure grammar with public-use wear, technical service logic, institutional material memory, and specialty-space performance, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bibliographic Classicism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +121,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Casino Sensory Grid',
     category: '3. Civic Infrastructure And Specialty Spaces',
     negativePrompt:
-      'daylight, calm, people, staff, hands, slot machine, kiosk, console, terminal, display screen, playing cards, chips, gambling table, casino floor crowd, readable signage, market aisle, library aisle, corridor, empty abstraction, long corridor, people crowd, readable map or sign, office furniture focus, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
+      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, daylight, windows, readable screens, calm muted palette, calm, casino floor crowd, readable signage, market aisle, library aisle, corridor, empty abstraction, long corridor, readable map or sign, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Casino Sensory Grid acts as a transferable architecture/interior router: red/gold/neon rhythm, reflected geometry, polished brass trims, saturated carpet geometry; fuse it with civic infrastructure grammar with public-use wear, technical service logic, institutional material memory, and specialty-space performance; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Casino sensory grid: a windowless, clockless interior designed to hold attention, with low mirrored and gilded ceilings, busy patterned carpet, chandeliers and endless reflections.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through infrastructure anchors, service junctions, public-scale material wear, modular containment, utility grids, and readable built function; treat red/gold/neon rhythm, reflected geometry, polished brass trims, saturated carpet geometry as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        "Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.",
       color_and_tone:
-        'Map color through civic neutrals, safety accents, oxidized metal, ceramic or concrete value blocks, damp fluorescents, and specialty glow cues; let source cues such as red/gold/neon rhythm, reflected geometry, polished brass trims, saturated carpet geometry decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Saturated red, gold and purple with green felt and pink-blue neon accents; everything warm and bright, no daylight tones anywhere.',
       lighting_and_shadow:
-        'Use fluorescent pressure, institutional bounce, service LEDs, humid or aquatic diffusion, buried low light, and public-space shadow compression; make light reveal joints, relief, material depth, scale, and atmosphere from red/gold/neon rhythm, reflected geometry, polished brass trims, saturated carpet geometry without replacing prompt X with a stock architectural render.',
+        'Hundreds of small pot lights and chandeliers from a low ceiling, glowing edges and neon strips, almost no shadow, no time of day.',
       texture_and_material:
-        'Render tile, steel, concrete, glass, acrylic, brass, paper, bone-mineral substitutes, cables, patina, water stains, and public-use abrasion; prioritize the tactile signals in red/gold/neon rhythm, reflected geometry, polished brass trims, saturated carpet geometry, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Loud geometric or floral wool carpet, mirrored ceiling panels, polished brass trim, lacquered wood, green baize, crystal drops, glossy lacquer.',
       camera_and_composition:
-        'Frame through tight infrastructure detail crops, service-grid repetition, compressed public thresholds, wayfinding rhythm, and specialty-space section logic; convert red/gold/neon rhythm, reflected geometry, polished brass trims, saturated carpet geometry into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through public memory, controlled utility, preservation, overload, reverence, damp atmosphere, or quiet abandonment without turning into narrative scene; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested view; compress space with a low ceiling and reflections, fill the frame edge to edge with pattern and light.',
+      atmosphere_and_mood: 'Dazzling, timeless and slightly suffocating, a trap for attention.',
       rendering_and_quality:
-        'Finish with high-readability infrastructure finish with denoised grime, non-readable wayfinding shapes, no UI/screens, and no corridor lock; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Saturated interior photograph with crisp reflections and glints, no readable signs or screens.',
       key_features:
-        'red/gold/neon rhythm, reflected geometry, polished brass trims, saturated carpet geometry; infrastructure anchors, service junctions, public-scale material wear, modular containment, utility grids, and readable built function; tile, steel, concrete, glass, acrylic, brass, paper, bone-mineral substitutes, cables, patina, water stains, and public-use abrasion; tight infrastructure detail crops, service-grid repetition, compressed public thresholds, wayfinding rhythm, and specialty-space section logic',
+        'windowless low mirrored ceiling; busy patterned carpet; hundreds of pot lights; red gold and neon; endless reflections',
       creative_brief:
-        'Apply Casino Sensory Grid after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies red/gold/neon rhythm, reflected geometry, polished brass trims, saturated carpet geometry, civic infrastructure grammar with public-use wear, technical service logic, institutional material memory, and specialty-space performance, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Casino Sensory Grid as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +149,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Immersive Aquarium Optics',
     category: '3. Civic Infrastructure And Specialty Spaces',
     negativePrompt:
-      'flat dry-air scene, no refraction or water optics, people, diver, visitor, camera prop, shark/fish hero, aquarium tunnel corridor, dry-air interior, market aisle, library aisle, empty abstraction, long corridor, people crowd, readable map or sign, office furniture focus, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card',
+      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, dry flat lighting, cartoon fish mascots, aquarium tunnel corridor, flat dry-air scene, no refraction or water optics, camera prop, shark/fish hero, dry-air interior, market aisle, library aisle, empty abstraction, long corridor, readable map or sign, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Immersive Aquarium Optics acts as a transferable architecture/interior router: blue attenuation, caustic refraction, suspended particles, soft distant marine silhouettes; fuse it with civic infrastructure grammar with public-use wear, technical service logic, institutional material memory, and specialty-space performance; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Immersive aquarium optics: a room seen through or beside thick acrylic water walls, where blue attenuation, refraction and caustics shape everything.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through infrastructure anchors, service junctions, public-scale material wear, modular containment, utility grids, and readable built function; treat blue attenuation, caustic refraction, suspended particles, soft distant marine silhouettes as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        "Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.",
       color_and_tone:
-        'Map color through civic neutrals, safety accents, oxidized metal, ceramic or concrete value blocks, damp fluorescents, and specialty glow cues; let source cues such as blue attenuation, caustic refraction, suspended particles, soft distant marine silhouettes decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Cyan to deep ultramarine with depth, warm colours absorbed first, silhouettes nearly black against the glowing tank; cool low key.',
       lighting_and_shadow:
-        'Use fluorescent pressure, institutional bounce, service LEDs, humid or aquatic diffusion, buried low light, and public-space shadow compression; make light reveal joints, relief, material depth, scale, and atmosphere from blue attenuation, caustic refraction, suspended particles, soft distant marine silhouettes without replacing prompt X with a stock architectural render.',
+        'Light coming from the water itself, rippling caustic nets on floors and faces, dark room around the glowing panel.',
       texture_and_material:
-        'Render tile, steel, concrete, glass, acrylic, brass, paper, bone-mineral substitutes, cables, patina, water stains, and public-use abrasion; prioritize the tactile signals in blue attenuation, caustic refraction, suspended particles, soft distant marine silhouettes, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Thick curved acrylic with slight distortion at the edges, suspended particles, bubbles, wet stone and rock, dark polished floor catching caustics.',
       camera_and_composition:
-        'Frame through tight infrastructure detail crops, service-grid repetition, compressed public thresholds, wayfinding rhythm, and specialty-space section logic; convert blue attenuation, caustic refraction, suspended particles, soft distant marine silhouettes into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through public memory, controlled utility, preservation, overload, reverence, damp atmosphere, or quiet abandonment without turning into narrative scene; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested view; silhouettes in the foreground against a large bright water field, no tunnel corridor.',
+      atmosphere_and_mood: 'Hypnotic, cool and dreamlike, as if breathing underwater.',
       rendering_and_quality:
-        'Finish with high-readability infrastructure finish with denoised grime, non-readable wayfinding shapes, no UI/screens, and no corridor lock; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Photograph with correct depth colour loss, clean caustics and particle depth, no fish mascots.',
       key_features:
-        'blue attenuation, caustic refraction, suspended particles, soft distant marine silhouettes; infrastructure anchors, service junctions, public-scale material wear, modular containment, utility grids, and readable built function; tile, steel, concrete, glass, acrylic, brass, paper, bone-mineral substitutes, cables, patina, water stains, and public-use abrasion; tight infrastructure detail crops, service-grid repetition, compressed public thresholds, wayfinding rhythm, and specialty-space section logic',
+        'blue depth attenuation; rippling caustic nets; thick curved acrylic distortion; suspended particles; dark silhouettes against glowing water',
       creative_brief:
-        'Apply Immersive Aquarium Optics after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies blue attenuation, caustic refraction, suspended particles, soft distant marine silhouettes, civic infrastructure grammar with public-use wear, technical service logic, institutional material memory, and specialty-space performance, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Immersive Aquarium Optics as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,28 +177,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ossuary Subterranean',
     category: '3. Civic Infrastructure And Specialty Spaces',
     negativePrompt:
-      'bone/remains language, exposed human remains, gore, fresh remains, horror display, human remains, skulls, bones, catacomb corridor, dungeon hall, fantasy tunnel, ritual scene, camera prop, empty abstraction, long corridor, people crowd, readable map or sign, office furniture focus, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, market aisle, library aisle, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card',
+      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, human remains, skulls, bones, gore, horror display, bone/remains language, exposed human remains, fresh remains, catacomb corridor, dungeon hall, fantasy tunnel, ritual scene, camera prop, empty abstraction, long corridor, readable map or sign, fixed building-only scene, corridor perspective, furniture showroom, market aisle, library aisle, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Ossuary Subterranean acts as a transferable architecture/interior router: ossuary-subterranean style sample with chalky calcic mineral modules, low compressed arches, dusty mortar, calcium bands, damp buried stone; fuse it with civic infrastructure grammar with public-use wear, technical service logic, institutional material memory, and specialty-space performance; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Ossuary subterranean architecture: chambers carved into chalk, tuff or limestone, with low compressed barrel vaults and walls of empty stacked niches, crusted with calcite.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through infrastructure anchors, service junctions, public-scale material wear, modular containment, utility grids, and readable built function; treat ossuary-subterranean style sample with chalky calcic mineral modules, low compressed arches, dusty mortar, calcium bands, damp buried stone as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        "Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.",
       color_and_tone:
-        'Map color through civic neutrals, safety accents, oxidized metal, ceramic or concrete value blocks, damp fluorescents, and specialty glow cues; let source cues such as ossuary-subterranean style sample with chalky calcic mineral modules, low compressed arches, dusty mortar, calcium bands, damp buried stone decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Chalk white, bone-cream and ochre stone, grey mortar, dark soot above lamp niches, warm small light against cold stone.',
       lighting_and_shadow:
-        'Use fluorescent pressure, institutional bounce, service LEDs, humid or aquatic diffusion, buried low light, and public-space shadow compression; make light reveal joints, relief, material depth, scale, and atmosphere from ossuary-subterranean style sample with chalky calcic mineral modules, low compressed arches, dusty mortar, calcium bands, damp buried stone without replacing prompt X with a stock architectural render.',
+        'Lanterns or candles in niches as the only source, warm falloff into darkness within a few metres, soft round shadows in each niche.',
       texture_and_material:
-        'Render tile, steel, concrete, glass, acrylic, brass, paper, bone-mineral substitutes, cables, patina, water stains, and public-use abrasion; prioritize the tactile signals in ossuary-subterranean style sample with chalky calcic mineral modules, low compressed arches, dusty mortar, calcium bands, damp buried stone, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Pick-marked carved stone, calcite drip crusts and flowstone, dusty lime mortar, damp mineral bloom, worn stair treads cut into rock.',
       camera_and_composition:
-        'Frame through tight infrastructure detail crops, service-grid repetition, compressed public thresholds, wayfinding rhythm, and specialty-space section logic; convert ossuary-subterranean style sample with chalky calcic mineral modules, low compressed arches, dusty mortar, calcium bands, damp buried stone into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through public memory, controlled utility, preservation, overload, reverence, damp atmosphere, or quiet abandonment without turning into narrative scene; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested view; low vaults pressing the top of the frame, rhythm of niches along the wall, no endless tunnel.',
+      atmosphere_and_mood: 'Silent, buried and ancient, cool air far below ground.',
       rendering_and_quality:
-        'Finish with high-readability infrastructure finish with denoised grime, non-readable wayfinding shapes, no UI/screens, and no corridor lock; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Low-light photograph with carved tool marks and mineral crust detail, niches empty, no human remains or horror display.',
       key_features:
-        'ossuary-subterranean style sample with chalky calcic mineral modules, low compressed arches, dusty mortar, calcium bands, damp buried stone; infrastructure anchors, service junctions, public-scale material wear, modular containment, utility grids, and readable built function; tile, steel, concrete, glass, acrylic, brass, paper, bone-mineral substitutes, cables, patina, water stains, and public-use abrasion; tight infrastructure detail crops, service-grid repetition, compressed public thresholds, wayfinding rhythm, and specialty-space section logic',
+        'carved chalk and tuff chambers; low compressed barrel vaults; walls of empty stacked niches; calcite crust; lantern-only light',
       creative_brief:
-        'Apply Ossuary Subterranean after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies ossuary-subterranean style sample with chalky calcic mineral modules, low compressed arches, dusty mortar, calcium bands, damp buried stone, civic infrastructure grammar with public-use wear, technical service logic, institutional material memory, and specialty-space performance, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ossuary Subterranean as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -211,28 +205,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Data Center Grid',
     category: '3. Civic Infrastructure And Specialty Spaces',
     negativePrompt:
-      'messy, organic clutter, server-interior zones aisle lock, long corridor, surveillance camera, monitor wall, readable labels, office interior zones, chair, market aisle, library aisle, empty abstraction, people crowd, readable map or sign, office furniture focus, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
+      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, messy clutter, monitor wall, surveillance camera, messy, organic clutter, long corridor, readable labels, market aisle, library aisle, empty abstraction, readable map or sign, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Data Center Grid acts as a transferable architecture/interior router: modular containment panels, perforated steel, cable-routing logic, blue/amber status LEDs, thermal-lane compression; fuse it with civic infrastructure grammar with public-use wear, technical service logic, institutional material memory, and specialty-space performance; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Data center grid: a sealed technical hall of hot and cold aisle containment, perforated raised floor, overhead cable trays and racks blinking in a cold white light.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through infrastructure anchors, service junctions, public-scale material wear, modular containment, utility grids, and readable built function; treat modular containment panels, perforated steel, cable-routing logic, blue/amber status LEDs, thermal-lane compression as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        "Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.",
       color_and_tone:
-        'Map color through civic neutrals, safety accents, oxidized metal, ceramic or concrete value blocks, damp fluorescents, and specialty glow cues; let source cues such as modular containment panels, perforated steel, cable-routing logic, blue/amber status LEDs, thermal-lane compression decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Matte black racks, cool white and pale grey surfaces, yellow fibre raceway, tiny blue, green and amber status LEDs; clinical, cool, high order.',
       lighting_and_shadow:
-        'Use fluorescent pressure, institutional bounce, service LEDs, humid or aquatic diffusion, buried low light, and public-space shadow compression; make light reveal joints, relief, material depth, scale, and atmosphere from modular containment panels, perforated steel, cable-routing logic, blue/amber status LEDs, thermal-lane compression without replacing prompt X with a stock architectural render.',
+        'Even cold LED strips above the aisles, glow of status lights in the dark rack faces, hard shadow lines from cable trays.',
       texture_and_material:
-        'Render tile, steel, concrete, glass, acrylic, brass, paper, bone-mineral substitutes, cables, patina, water stains, and public-use abrasion; prioritize the tactile signals in modular containment panels, perforated steel, cable-routing logic, blue/amber status LEDs, thermal-lane compression, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Perforated steel floor tiles, mesh rack doors, bundled patch cables combed into looms, yellow fibre trays, sealed containment doors with rubber gaskets.',
       camera_and_composition:
-        'Frame through tight infrastructure detail crops, service-grid repetition, compressed public thresholds, wayfinding rhythm, and specialty-space section logic; convert modular containment panels, perforated steel, cable-routing logic, blue/amber status LEDs, thermal-lane compression into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through public memory, controlled utility, preservation, overload, reverence, damp atmosphere, or quiet abandonment without turning into narrative scene; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested view; use the modular grid of racks and floor tiles as order, oblique or overhead views rather than a centred aisle.',
+      atmosphere_and_mood: 'Cold, humming and inhuman, order sealed in chilled air.',
       rendering_and_quality:
-        'Finish with high-readability infrastructure finish with denoised grime, non-readable wayfinding shapes, no UI/screens, and no corridor lock; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Crisp technical photograph with clean cable dressing and tiny LED points, no readable screens or monitor walls.',
       key_features:
-        'modular containment panels, perforated steel, cable-routing logic, blue/amber status LEDs, thermal-lane compression; infrastructure anchors, service junctions, public-scale material wear, modular containment, utility grids, and readable built function; tile, steel, concrete, glass, acrylic, brass, paper, bone-mineral substitutes, cables, patina, water stains, and public-use abrasion; tight infrastructure detail crops, service-grid repetition, compressed public thresholds, wayfinding rhythm, and specialty-space section logic',
+        'hot and cold aisle containment; perforated raised floor; yellow fibre raceway; blinking status LEDs; combed cable looms',
       creative_brief:
-        'Apply Data Center Grid after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies modular containment panels, perforated steel, cable-routing logic, blue/amber status LEDs, thermal-lane compression, civic infrastructure grammar with public-use wear, technical service logic, institutional material memory, and specialty-space performance, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Data Center Grid as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -240,28 +233,437 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Arboreal Craft Shelter',
     category: '3. Civic Infrastructure And Specialty Spaces',
     negativePrompt:
-      'ground level, children treehouse postcard, adventure scene, person, ground-level hut, fantasy forest, market aisle, library aisle, corridor, empty abstraction, long corridor, people crowd, readable map or sign, office furniture focus, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
+      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, plastic playground kit, children treehouse postcard, adventure scene, fantasy forest, market aisle, library aisle, corridor, empty abstraction, long corridor, readable map or sign, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Arboreal Craft Shelter acts as a transferable architecture/interior router: weathered timber, rope lashings, bark contact, light galvanized hardware, dappled canopy light; fuse it with civic infrastructure grammar with public-use wear, technical service logic, institutional material memory, and specialty-space performance; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Arboreal craft shelter: hand-built timber structures in living trees, platforms bolted to trunks with heavy steel bolts, rope lashings, suspension bridges and small shingled roofs.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through infrastructure anchors, service junctions, public-scale material wear, modular containment, utility grids, and readable built function; treat weathered timber, rope lashings, bark contact, light galvanized hardware, dappled canopy light as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        "Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.",
       color_and_tone:
-        'Map color through civic neutrals, safety accents, oxidized metal, ceramic or concrete value blocks, damp fluorescents, and specialty glow cues; let source cues such as weathered timber, rope lashings, bark contact, light galvanized hardware, dappled canopy light decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Silver-weathered timber, bark browns, rope tan, leaf greens, galvanised steel grey; dappled light with warm highlights.',
       lighting_and_shadow:
-        'Use fluorescent pressure, institutional bounce, service LEDs, humid or aquatic diffusion, buried low light, and public-space shadow compression; make light reveal joints, relief, material depth, scale, and atmosphere from weathered timber, rope lashings, bark contact, light galvanized hardware, dappled canopy light without replacing prompt X with a stock architectural render.',
+        'Dappled canopy light moving across decks, warm lanterns at dusk, cool green shade below the platforms.',
       texture_and_material:
-        'Render tile, steel, concrete, glass, acrylic, brass, paper, bone-mineral substitutes, cables, patina, water stains, and public-use abrasion; prioritize the tactile signals in weathered timber, rope lashings, bark contact, light galvanized hardware, dappled canopy light, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Weathered cedar planks, square lashings of manila rope, galvanised bolts and cable, bark pressed against framing, cedar shingles and moss.',
       camera_and_composition:
-        'Frame through tight infrastructure detail crops, service-grid repetition, compressed public thresholds, wayfinding rhythm, and specialty-space section logic; convert weathered timber, rope lashings, bark contact, light galvanized hardware, dappled canopy light into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through public memory, controlled utility, preservation, overload, reverence, damp atmosphere, or quiet abandonment without turning into narrative scene; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested view; show how the structure grips the trunk, height below it, bridges leading between trees.',
+      atmosphere_and_mood: 'Adventurous, handmade and airy, living high among the leaves.',
       rendering_and_quality:
-        'Finish with high-readability infrastructure finish with denoised grime, non-readable wayfinding shapes, no UI/screens, and no corridor lock; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Natural-light photograph with honest joinery, lashing detail and bark contact, no plastic playground kit.',
       key_features:
-        'weathered timber, rope lashings, bark contact, light galvanized hardware, dappled canopy light; infrastructure anchors, service junctions, public-scale material wear, modular containment, utility grids, and readable built function; tile, steel, concrete, glass, acrylic, brass, paper, bone-mineral substitutes, cables, patina, water stains, and public-use abrasion; tight infrastructure detail crops, service-grid repetition, compressed public thresholds, wayfinding rhythm, and specialty-space section logic',
+        'platforms bolted to living trunks; rope lashings; plank suspension bridges; silver-weathered cedar; dappled canopy light',
       creative_brief:
-        'Apply Arboreal Craft Shelter after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies weathered timber, rope lashings, bark contact, light galvanized hardware, dappled canopy light, civic infrastructure grammar with public-use wear, technical service logic, institutional material memory, and specialty-space performance, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Arboreal Craft Shelter as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP07-092',
+    name: 'Anatomical Theatre Tiers',
+    displayName: 'Anatomical Theatre Tiers',
+    styleAnchors: [
+      'Anatomical Theatre Tiers',
+      'early modern anatomical theatre',
+      'steep concentric oval timber tiers',
+    ],
+    category: '3. Civic Infrastructure And Specialty Spaces',
+    domain: 'early modern anatomical theatre',
+    negativePrompt:
+      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, gore, exposed organs, flat lecture hall seating, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Anatomical theatre: steep concentric oval tiers of carved timber balustrades rising around a small central table, lit from a lantern skylight, built so every spectator looks down.',
+      subject_treatment:
+        "Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.",
+      color_and_tone:
+        'Dark walnut and oak, candle amber, pale linen and a cold grey skylight; strong central brightness falling away up the tiers.',
+      lighting_and_shadow:
+        'One top light from the lantern skylight onto the centre, supplementary candles on the rails, spectators in shadow above.',
+      texture_and_material:
+        'Turned timber balusters on each tier, worn standing rails, a stone or wooden central table, linen cloth, brass instruments.',
+      camera_and_composition:
+        'Keep the requested view; look down from the top tier into the funnel of rings, or up from the centre at the stacked balustrades.',
+      atmosphere_and_mood: 'Intense, scholarly and theatrical, every eye pressed toward one point.',
+      rendering_and_quality:
+        'Low-light photograph with crisp baluster rhythm and central light pool, no gore; any body stays covered.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Anatomical Theatre Tiers as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'steep concentric oval timber tiers; turned baluster rails; lantern skylight onto the centre; central demonstration table; spectators looking down',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP07-093',
+    name: 'Flooded Column Cistern',
+    displayName: 'Flooded Column Cistern',
+    styleAnchors: [
+      'Flooded Column Cistern',
+      'underground column cistern',
+      'forest of stone columns in still water',
+    ],
+    category: '3. Civic Infrastructure And Specialty Spaces',
+    domain: 'underground column cistern',
+    negativePrompt:
+      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, dry floor, fantasy glow effects, modern concrete tank, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Flooded column cistern: a vast underground reservoir hall of reused stone columns carrying brick cross vaults, standing in shallow still water that doubles every column.',
+      subject_treatment:
+        "Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.",
+      color_and_tone:
+        'Warm amber uplights on red-brown brick and honey stone, black-green water, dark depths between columns; strong warm-to-black range.',
+      lighting_and_shadow:
+        'Low lights at column bases throwing warm light up the shafts, reflections in still water, darkness swallowing the far rows.',
+      texture_and_material:
+        'Mismatched stone columns and capitals, thin Roman-style brick in herringbone vaults, lime mineral tide lines, dripping water rings, moss at the waterline.',
+      camera_and_composition:
+        'Keep the requested view; stand low near the waterline so columns and their reflections form a symmetrical forest receding in diagonal rows.',
+      atmosphere_and_mood: "Cavernous, still and echoing, the city's hidden reservoir.",
+      rendering_and_quality:
+        'Low-light photograph with glassy reflections and precise brick coursing, no fantasy glow effects.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Flooded Column Cistern as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'forest of stone columns in still water; brick cross vaults; warm uplights at column bases; mirror reflections; mineral tide lines',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP07-094',
+    name: 'Observatory Dome Instrumentation',
+    displayName: 'Observatory Dome Instrumentation',
+    styleAnchors: [
+      'Observatory Dome Instrumentation',
+      'astronomical observatory interior',
+      'rotating dome with open shutter slit',
+    ],
+    category: '3. Civic Infrastructure And Specialty Spaces',
+    domain: 'astronomical observatory interior',
+    negativePrompt:
+      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, daylight, white work light, planetarium projection, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Observatory dome interior: a rotating hemispherical dome with an open shutter slit, a massive equatorial telescope mount on a pier, and a raised observing floor ringed by brass and iron.',
+      subject_treatment:
+        "Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.",
+      color_and_tone:
+        'Deep night blue through the slit, dim red working light, riveted steel grey, brass gold and dark enamel; very low key.',
+      lighting_and_shadow:
+        'Starlight and sky glow through the shutter, dim red lamps to preserve night vision, instrument brass catching the only highlights.',
+      texture_and_material:
+        'Riveted curved dome ribs and sheet panels, rail and wheels at the dome base, cast-iron pier, enamelled telescope tube, brass setting circles and counterweights.',
+      camera_and_composition:
+        'Keep the requested view; the slit carving a band of sky across the dome, the telescope diagonal pointing into it.',
+      atmosphere_and_mood: 'Patient, nocturnal and awed, a small room aimed at infinity.',
+      rendering_and_quality:
+        'Night photograph with clean star points, red light kept low, riveted structure legible.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Observatory Dome Instrumentation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'rotating dome with open shutter slit; equatorial telescope on a pier; dim red working light; riveted dome ribs; brass setting circles',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP07-095',
+    name: 'Victorian Pumping Station Ironwork',
+    displayName: 'Victorian Pumping Station Ironwork',
+    styleAnchors: [
+      'Victorian Pumping Station Ironwork',
+      'Victorian engine house interior',
+      'polychrome painted cast-iron columns',
+    ],
+    category: '3. Civic Infrastructure And Specialty Spaces',
+    domain: 'Victorian engine house interior',
+    negativePrompt:
+      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, steampunk gadget clutter, goggles and gears decor, plain grey steel, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Victorian pumping station ironwork: an engine house turned into a cathedral of machinery, with ornate cast-iron columns, galleries and brackets painted in polychrome around giant beam engines.',
+      subject_treatment:
+        "Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.",
+      color_and_tone:
+        'Deep red, green, cream and gilt on cast iron, polished brass and steel, glazed brick; rich colour with oily dark shadows.',
+      lighting_and_shadow:
+        'Tall arched windows letting in side light, gleams on brass and oil, dark pits around the engines.',
+      texture_and_material:
+        'Cast-iron columns with foliate capitals, pierced iron gallery screens, octagonal floor plates, beam engines with polished brass, glazed brick walls.',
+      camera_and_composition:
+        'Keep the requested view; look up through layers of painted ironwork galleries, one huge wheel or beam crossing the frame.',
+      atmosphere_and_mood: 'Grand, proud and mechanical, engineering dressed as a temple.',
+      rendering_and_quality:
+        'Detailed photograph with crisp ornament and clean paint, oil sheen, no steampunk gadget clutter.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Victorian Pumping Station Ironwork as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'polychrome painted cast-iron columns; foliate capitals and pierced galleries; giant beam engines; polished brass; tall arched windows',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP07-096',
+    name: 'Horseshoe Opera Auditorium',
+    displayName: 'Horseshoe Opera Auditorium',
+    styleAnchors: [
+      'Horseshoe Opera Auditorium',
+      'horseshoe opera house interior',
+      'stacked horseshoe of boxes',
+    ],
+    category: '3. Civic Infrastructure And Specialty Spaces',
+    domain: 'horseshoe opera house interior',
+    negativePrompt:
+      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, modern cinema seats, flat fan-shaped hall, readable programmes, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Horseshoe opera auditorium: a stacked horseshoe of private boxes in four or five tiers facing a proscenium, with red velvet, gilded plaster and a great chandelier at the centre of a painted ceiling.',
+      subject_treatment:
+        "Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.",
+      color_and_tone:
+        'Crimson velvet, ivory and gold leaf, warm candle-like chandelier light, dark stage mouth; rich, warm and high contrast between box interiors and fronts.',
+      lighting_and_shadow:
+        'The chandelier and small box sconces as warm sources, stage light spilling from the proscenium, dark box interiors behind gilt fronts.',
+      texture_and_material:
+        'Carved and gilded plaster box fronts, red velvet upholstery and drapes, painted ceiling roundel, parquet stalls, heavy tasselled stage curtain.',
+      camera_and_composition:
+        'Keep the requested view; from the stage look back at the horseshoe of tiers, or from a high box across to the proscenium.',
+      atmosphere_and_mood: 'Glamorous, expectant and theatrical, a whole society watching itself.',
+      rendering_and_quality:
+        'Warm low-light photograph with crisp gilt ornament and velvet depth, no readable programmes or signs.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Horseshoe Opera Auditorium as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'stacked horseshoe of boxes; red velvet and gilded plaster; central crystal chandelier; painted ceiling roundel; proscenium arch',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP07-097',
+    name: 'Oak-Panelled Courtroom',
+    displayName: 'Oak-Panelled Courtroom',
+    styleAnchors: [
+      'Oak-Panelled Courtroom',
+      'traditional courtroom interior',
+      'raised bench under a carved canopy',
+    ],
+    category: '3. Civic Infrastructure And Specialty Spaces',
+    domain: 'traditional courtroom interior',
+    negativePrompt:
+      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, readable crests or mottoes, flags, modern office furniture, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Oak-panelled courtroom: a hierarchy built in joinery, with a raised bench under a canopy, a railed dock, a jury box, counsel tables and a public gallery, all in dark panelled oak.',
+      subject_treatment:
+        "Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.",
+      color_and_tone:
+        'Dark oak brown, green leather, brass, cream plaster above the panelling, grey daylight; sober and low saturation.',
+      lighting_and_shadow:
+        'High clerestory or lantern daylight falling on the well of the court, darker panelled edges, green-shaded lamps on the bench.',
+      texture_and_material:
+        'Raised-and-fielded oak panels, turned rails and spindles around the dock, green leather seats, brass rails, carved canopy over the bench.',
+      camera_and_composition:
+        'Keep the requested view; low angle from the well toward the raised bench to stress hierarchy, or from the dock looking out.',
+      atmosphere_and_mood: 'Grave, formal and tense, judgement built into the furniture.',
+      rendering_and_quality:
+        'Sober daylight photograph with legible joinery, no readable crests, mottoes or documents.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Oak-Panelled Courtroom as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'raised bench under a carved canopy; railed dock; raised-and-fielded oak panelling; green leather and brass; clerestory light on the well',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP07-098',
+    name: 'Radial Panopticon Cell Block',
+    displayName: 'Radial Panopticon Cell Block',
+    styleAnchors: [
+      'Radial Panopticon Cell Block',
+      'radial prison architecture',
+      'tiers of identical cells around a central void',
+    ],
+    category: '3. Civic Infrastructure And Specialty Spaces',
+    domain: 'radial prison architecture',
+    negativePrompt:
+      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, violence, gore, riot scene, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Radial panopticon cell block: tiers of identical cells with iron galleries and stairs ringing a tall top-lit hall, all visible from a central observation point.',
+      subject_treatment:
+        "Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.",
+      color_and_tone:
+        'Whitewashed brick, grey and black iron, pale green institutional paint, cold daylight from above; restrained, cold and repetitive.',
+      lighting_and_shadow:
+        'Top light from a roof lantern down the central void, galleries casting striped shadows, cell doors dark.',
+      texture_and_material:
+        'Cast-iron galleries with lattice balustrades, safety netting between tiers, riveted cell doors with small hatches, whitewashed brick, stone floors worn by pacing.',
+      camera_and_composition:
+        'Keep the requested view; from the centre, radiating wings or rings of cells recede symmetrically; repetition of doors dominates.',
+      atmosphere_and_mood: 'Watched, cold and ordered, a building designed to be seen through.',
+      rendering_and_quality:
+        'Sober photograph with exact repetition and ironwork detail, no violence or gore.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Radial Panopticon Cell Block as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'tiers of identical cells around a central void; iron lattice galleries; roof lantern top light; safety netting; central observation point',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP07-099',
+    name: 'Yellow-Light Clean Room',
+    displayName: 'Yellow-Light Clean Room',
+    styleAnchors: [
+      'Yellow-Light Clean Room',
+      'semiconductor clean room',
+      'filtered yellow-amber light',
+    ],
+    category: '3. Civic Infrastructure And Specialty Spaces',
+    domain: 'semiconductor clean room',
+    negativePrompt:
+      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, white daylight, readable screens, mess or dust, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Yellow-light clean room: a semiconductor fabrication bay lit by filtered amber light, with laminar-flow ceiling filters, perforated floors and workers in full-body gowns.',
+      subject_treatment:
+        "Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.",
+      color_and_tone:
+        'Monochrome saturated yellow-amber light over white surfaces, white gowns turned butter yellow, small cool reflections in steel; one-colour cast.',
+      lighting_and_shadow:
+        'Even filtered yellow light from a grid of ceiling panels, almost shadowless, soft glossy highlights on polished steel.',
+      texture_and_material:
+        'Ceiling of fan filter units, perforated raised floor, brushed stainless benches, sealed tool enclosures, bunny-suit gowns with hoods, masks and gloves.',
+      camera_and_composition:
+        'Keep the requested view; long bay of repeating tool enclosures, gowned figures small and faceless, symmetry softened by yellow haze.',
+      atmosphere_and_mood: 'Sterile, silent and uncanny, a sealed world with one colour.',
+      rendering_and_quality:
+        'Clean photograph with a single yellow cast held consistently, no readable screens or labels.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Yellow-Light Clean Room as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'filtered yellow-amber light; full-body gowned figures; laminar-flow ceiling filters; perforated floor; stainless tool enclosures',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP07-100',
+    name: 'White-Cube Gallery',
+    displayName: 'White-Cube Gallery',
+    styleAnchors: ['White-Cube Gallery', 'contemporary art gallery', 'seamless white walls'],
+    category: '3. Civic Infrastructure And Specialty Spaces',
+    domain: 'contemporary art gallery',
+    negativePrompt:
+      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, wall labels, crowded salon hang, coloured walls, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'White-cube gallery: a neutral exhibition box of seamless white walls, pale polished concrete floor and track lights, where one object is presented as if nothing else exists.',
+      subject_treatment:
+        "Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.",
+      color_and_tone:
+        'Pure matte white walls, pale grey concrete, the exhibited object as the only colour; high key and silent.',
+      lighting_and_shadow:
+        'Ceiling track spots aimed at the object, soft even wash on the walls, one crisp shadow under the object.',
+      texture_and_material:
+        'Seamless skim-plastered walls without skirting, sealed polished concrete, recessed track lighting, a low white plinth, no labels.',
+      camera_and_composition:
+        'Keep the requested view; frontal, one object centred with large empty white margins, sightline to a second room through a wide opening.',
+      atmosphere_and_mood: 'Reverent, cool and exacting, anything placed here becomes art.',
+      rendering_and_quality:
+        'Clean gallery photograph with even white without clipping, no wall text or labels.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies White-Cube Gallery as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'seamless white walls; polished pale concrete; track spotlights; single object on a low plinth; large empty margins',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP07-101',
+    name: 'Cold War Bunker',
+    displayName: 'Cold War Bunker',
+    styleAnchors: ['Cold War Bunker', 'Cold War bunker interior', 'round steel blast doors'],
+    category: '3. Civic Infrastructure And Specialty Spaces',
+    domain: 'Cold War bunker interior',
+    negativePrompt:
+      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, readable signs, modern flat screens, weapons display, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cold War bunker: a buried reinforced-concrete shelter of blast doors, air-filtration machinery, bunk rooms and control desks, painted in institutional colours and lit by caged lamps.',
+      subject_treatment:
+        "Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.",
+      color_and_tone:
+        'Pale institutional green and cream paint, grey concrete, olive steel, a red stripe on valves, amber indicator lamps; muted and slightly sickly.',
+      lighting_and_shadow:
+        'Caged incandescent bulbs and flickering fluorescent tubes, low ceilings with hard shadows, dark rooms beyond thick doorways.',
+      texture_and_material:
+        'Round steel blast doors with wheel locks, thick concrete with painted lower walls, ducts and filtration housings, metal bunks, bakelite switches and analogue dials.',
+      camera_and_composition:
+        'Keep the requested view; frame through a thick door opening, low ceiling pressing down, machinery lining the walls.',
+      atmosphere_and_mood: 'Enclosed, anxious and waiting, a world sealed against the end.',
+      rendering_and_quality:
+        'Low-light photograph with period analogue detail and worn paint, no readable signs or screens.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cold War Bunker as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'round steel blast doors; pale green painted concrete; caged bulbs and fluorescent tubes; air-filtration ducts; analogue dials',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP07-102',
+    name: 'Glazed-Tile Municipal Baths',
+    displayName: 'Glazed-Tile Municipal Baths',
+    styleAnchors: [
+      'Glazed-Tile Municipal Baths',
+      'Edwardian public swimming baths',
+      'glazed brick with coloured tile bands',
+    ],
+    category: '3. Civic Infrastructure And Specialty Spaces',
+    domain: 'Edwardian public swimming baths',
+    negativePrompt:
+      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, resort pool, plastic water slides, readable signs, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Municipal swimming baths of the early twentieth century: a long pool hall of glazed brick and tile under arched iron roof trusses, with changing cubicles lining a gallery around the water.',
+      subject_treatment:
+        "Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.",
+      color_and_tone:
+        'White and cream glazed brick with a band of green or blue tile, turquoise water, painted iron roof, warm wood cubicle doors; clean and bright with steam haze.',
+      lighting_and_shadow:
+        'Daylight from a long glazed roof or clerestory, reflected rippling light on tiled walls, steam softening the far end.',
+      texture_and_material:
+        'Glazed brick with coloured tile bands, arched riveted iron trusses, timber cubicle doors along a railed gallery, mosaic lane lines, brass fittings.',
+      camera_and_composition:
+        'Keep the requested view; long view down the pool or from the gallery, cubicle doors repeating along both sides.',
+      atmosphere_and_mood: 'Echoing, civic and bright, a public luxury of water.',
+      rendering_and_quality:
+        'Photograph with crisp tile joints, ripple reflections and gentle steam, no readable signs.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glazed-Tile Municipal Baths as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'glazed brick with coloured tile bands; arched iron roof trusses; changing cubicles along a gallery; turquoise water; ripple reflections on tile',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

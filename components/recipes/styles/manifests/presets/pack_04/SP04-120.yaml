@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP04-120
+packId: pack_04
+name: Expression Model Sheet
+styleAnchors:
+  - Expression Model Sheet
+  - facial expression reference
+  - nine to twelve heads
+displayName: Expression Model Sheet
+category: 6. Technical And Reference Sheets
+domain: facial expression reference
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - technical-and-reference-sheets
+  - model-sheet
+  - expressions
+  - line-art
+visualDna:
+  aesthetic: 'Expression model sheet: one character head drawn nine to twelve times in clean line with a single grey tone, each with a different expression.'
+  subject_treatment: Keep the prompt subject as the thing documented; this reference profile owns a grid of nine to twelve heads of the same character, each with a different expression, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.
+  color_and_tone: Black line with one flat grey shadow tone on white, an optional pale skin flat on the first head only.
+  lighting_and_shadow: Simple cel shadow from one consistent direction so the only change between heads is the expression.
+  texture_and_material: Clean confident animation line, construction center lines faintly visible under a few heads.
+  camera_and_composition: Heads in an even grid, mostly front and three-quarter, identical size and head proportion.
+  atmosphere_and_mood: Lively and consistent, one personality in many moods.
+  rendering_and_quality: On-model consistency across every head; no captions for the emotions.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Expression Model Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: nine to twelve heads; one character; clean line plus one grey tone; even grid; faint construction lines
+avoidRules:
+  - placeholder gibberish text
+  - invented numbers presented as data
+  - readable labels
+  - brand logo
+  - franchise likeness
+  - free painterly composition instead of a sheet
+  - different characters per head
+  - emotion captions
+  - watermark
+  - text
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, different characters per head, emotion captions, watermark, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_04
+  packName: Illustration & Graphic Novel
+  categoryId: technical-and-reference-sheets
+  categoryName: 6. Technical And Reference Sheets
+  tags:
+    - illustration-and-graphic-novel
+    - technical-and-reference-sheets
+    - model-sheet
+    - expressions
+    - line-art
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: facial expression reference

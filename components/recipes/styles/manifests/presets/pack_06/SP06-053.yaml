@@ -3,7 +3,7 @@ id: SP06-053
 packId: pack_06
 name: Concept Art
 category: 4. Digital Art
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,53 +12,25 @@ tags:
   - essential-art-styles
   - digital-art
 visualDna:
-  aesthetic: >-
-    Concept Art acts as a transferable art-medium router: start from Entertainment concept art
-    visualization with mood first design and production readable focal hierarchy, Focal point detail
-    and digital art workflow system built from layer control, editable edges, raster or vector
-    logic, screen-era artifacts, and production readability, then apply the medium behavior to
-    prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Painterly; preserve the prompt subject while routing it
-    through the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels,
-    facets, glyphs, or compositing only when the preset calls for them, keeping the requested
-    identity, silhouette, pose, object function, or environment legible.
-  color_and_tone: >-
-    Build color with Mood lighting; use color as workflow evidence: palette ramps, neon gradients,
-    RGB channel shifts, flat vector fields, concept-art accents, or controlled digital paint
-    harmonies, with deliberate value grouping, accent control, and medium-specific limits rather
-    than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Cinematic; shape light through layer modes, rim glow, raster gradients,
-    isometric value, screen emission, glitch clipping, or composited photographic consistency, so
-    value structure supports the medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Photobash; surface detail should come from the named workflow: brush texture, pixel
-    cells, glyph density, vector fills, polygon facets, paper layers, or signal artifacts only when
-    they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Compose for Concept Art using its key spatial cues: Focal point
-    detail; compose through digital hierarchy, projection rules, asset readability, editable shape
-    grouping, focal thumbnails, grid logic, or controlled interface-like rhythm, with scale,
-    spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Epic, storytelling; derive mood from speed, polish, concept utility,
-    retro-futurism, broken media, toy-scale clarity, or modern production control, letting the
-    medium alter interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with AAA concept art finish without locking to games, movies, worlds, or products; finish
-    with clean digital intent, readable shapes, purposeful artifacts, and no random over-rendered
-    sludge, clean denoised surfaces where appropriate, and enough craft evidence to make the medium
-    recognizable.
-  key_features: >-
-    Entertainment concept art visualization with mood first design and production readable focal
-    hierarchy; Focal point detail; Mood lighting; Photobash
-  creative_brief: >-
-    Apply Concept Art as an art-style preset over prompt X: preserve the user's requested subject,
-    then route mark-making, palette, surface, composition, mood, and final craft through
-    Entertainment concept art visualization with mood first design and production readable focal
-    hierarchy, Focal point detail, Photobash without requiring the card image's original subject.
+  aesthetic: 'Concept art keyframe: one painted production illustration that sells the mood and design of a world moment, with clear focal hierarchy and painted-over photo textures.'
+  subject_treatment: Redraw the prompt's subject, pose, setting and framing with this digital mark system as one finished picture; it never becomes a concept board, turnaround sheet or 3D object render.
+  color_and_tone: Mood-driven limited palette, one dominant temperature with a contrasting accent at the focal point; values grouped for instant read.
+  lighting_and_shadow: Strong dramatic lighting design such as god rays, backlight or firelight guiding the eye to the focal point.
+  texture_and_material: Loose painted surfaces with photobashed texture detail painted over, crisp design detail only where it matters.
+  camera_and_composition: Keep the requested subject in a single cinematic keyframe with clear foreground, midground and background; never a sheet of multiple views.
+  atmosphere_and_mood: Moody and evocative, the story of a whole world in one frame.
+  rendering_and_quality: Detail concentrated at the focal point, loose elsewhere, paint over photo texture; no multi-panel board, no callouts, no text.
+  key_features: single cinematic keyframe; focal hierarchy; painted-over photo texture; dramatic lighting design; mood-driven limited palette
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Concept Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - changing the requested subject
+  - concept board layout
+  - turnaround sheet
+  - game UI or HUD
+  - readable interface text
+  - multiple views on one sheet
+  - callout annotations
+  - orthographic turnaround
   - photo
   - realistic
   - photorealistic
@@ -86,14 +58,16 @@ avoidRules:
   - muddy overpaint
   - uncontrolled artifact noise
   - generic concept slop
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-053.webp
 attributes:
-  negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
-    anatomy, watermark, text, signature, frame, border, product pitch, fixed worldbuilding scene,
-    wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low
-    resolution, random AI smear, muddy overpaint, uncontrolled artifact noise, generic concept slop
+  negativePrompt: changing the requested subject, concept board layout, turnaround sheet, game UI or HUD, readable interface text, multiple views on one sheet, callout annotations, orthographic turnaround, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, product pitch, fixed worldbuilding scene, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, random AI smear, muddy overpaint, uncontrolled artifact noise, generic concept slop, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

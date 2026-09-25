@@ -5,292 +5,299 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP06-092',
-    name: 'C64 Commodore Palette',
+    name: 'Fat-Pixel 16-Color Home Computer',
+    displayName: 'Fat-Pixel 16-Color Home Computer',
+    styleAnchors: ['Fat-Pixel 16-Color Home Computer', 'C64 Commodore Palette'],
     category: '6. Retro Game Visual Systems',
     negativePrompt:
-      'smooth, modern, high res, 3d, realistic, gradient, HD, anti-aliased, photo, clean, high color, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render',
+      'copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, square pixels, saturated neon colors, smooth gradients, smooth, modern, high res, 3d, realistic, gradient, HD, anti-aliased, photo, clean, high color, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'C64 Commodore Palette acts as a transferable art-medium router: start from C64 Commodore Palette era-specific hardware limits, constrained palette behavior, visible display artifacts, and sprite or screen logic and hardware-constrained game-visual system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        '8-bit home computer multicolor bitmap: double-wide pixels at 160 by 200 from a fixed palette of sixteen muted colors.',
       subject_treatment:
-        'Transform any prompt subject through adapt the requested subject through era-specific hardware limits, constrained palette behavior, visible display artifacts, and sprite or screen logic while preserving identity; preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel, pre-render, screen-grid, or low-bit display behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Keep the prompt subject, action and camera view; redraw it inside this display system's resolution, palette and pixel-cluster limits without adding any game interface.",
       color_and_tone:
-        'Build color with medium-native palette relationships, deliberate contrast, and accent restraint for C64 Commodore Palette; use color through hardware rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Fixed dusty palette of browns, lilac, light blue, olive, pink-grey and mustard; at most three colors plus a shared background per character cell.',
       lighting_and_shadow:
-        'Handle light through process-led value structure, readable highlights, and medium-specific shadow behavior; make light emerge from display technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector beam brightness, so value structure supports the medium and does not overwrite the requested content.',
+        'Light stated by palette steps and horizontal dither; blocky cell-aligned shadows.',
       texture_and_material:
-        'Render era-specific hardware limits, constrained palette behavior, visible display artifacts, and sprite or screen logic; surface detail should show pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy filler texture.',
+        'Pixels twice as wide as tall, color boundaries snapping to 4 by 8 cells, fine horizontal dither patterns.',
       camera_and_composition:
-        'Structure the image through scale rhythm, edge hierarchy, spacing, and composition rules specific to C64 Commodore Palette; compose through tile maps, sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood mood carried by C64 Commodore Palette craft, material pressure, and visual restraint; derive mood from hardware limitation, arcade spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; broad shapes that survive the coarse horizontal resolution.',
+      atmosphere_and_mood: 'Homely and melancholic, the glow of a bedroom computer.',
       rendering_and_quality:
-        'Finish with finished C64 Commodore Palette craft with clear medium evidence and controlled detail; finish with faithful era constraints, crisp readability at small scale, and no modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Strict wide pixels and cell color limits; no colors outside the fixed sixteen.',
       key_features:
-        'C64 Commodore Palette era-specific hardware limits, constrained palette behavior, visible display artifacts, and sprite or screen logic; medium-native palette relationships, deliberate contrast, and accent restraint for C64 Commodore Palette; scale rhythm, edge hierarchy, spacing, and composition rules specific to C64 Commodore Palette',
+        'double-wide pixels; fixed 16 muted colors; 4x8 cell color limit; horizontal dither; bedroom-computer glow',
       creative_brief:
-        "Apply C64 Commodore Palette as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through C64 Commodore Palette era-specific hardware limits, constrained palette behavior, visible display artifacts, and sprite or screen logic without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fat-Pixel 16-Color Home Computer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP06-094',
-    name: 'Atari 2600 Extreme Limitation',
+    name: 'Scanline Stripe Block Minimalism',
+    displayName: 'Scanline Stripe Block Minimalism',
+    styleAnchors: ['Scanline Stripe Block Minimalism', 'Atari 2600 Extreme Limitation'],
     category: '6. Retro Game Visual Systems',
     negativePrompt:
-      'detailed, smooth, high-res, modern, 3d, colorful, rich palette, complex, anti-aliased, HD, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render',
+      'copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, detailed sprites, dithering, rich shading, detailed, smooth, high-res, modern, 3d, colorful, rich palette, complex, anti-aliased, HD, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Atari 2600 Extreme Limitation acts as a transferable art-medium router: start from Atari VCS 2600 extreme limitation, 40 pixel wide sprite logic, single color per scanline, stripe color technique for multicolor, Combat, Pitfall and Adventure as constraint anchors only, hardware limitation as aesthetic, 128 bytes of RAM universe, two object display pressure, 40 pixel wide forms, scanline color stripes, sprite flicker multiplexing, 4 colors per scanline, TIA hardware artifacts, blocky rectangle everything, black support field constraint and hardware-constrained game-visual system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Extreme early-console limitation: chunky blocks four pixels wide, one color per object per scanline, and mirrored playfield blocks.',
       subject_treatment:
-        'Transform any prompt subject through 40 fat pixel wide forms, single scanline height color bands, blocky rectangle everything, missile and ball hardware abstractions, playfield block support field; preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel, pre-render, screen-grid, or low-bit display behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Keep the prompt subject, action and camera view; redraw it inside this display system's resolution, palette and pixel-cluster limits without adding any game interface.",
       color_and_tone:
-        'Build color with NTSC 128 color palette, 4 colors per scanline, rainbow stripe technique, bright primaries, Atari warmth color gen, black support field constraint, TIA chip color generation; use color through hardware rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through No lighting whatsoever, sprite color as support field separation, scanline stripe color for depth, no gradients no shading; make light emerge from display technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector beam brightness, so value structure supports the medium and does not overwrite the requested content.',
+        'Flat saturated NTSC hues; objects gain multiple colors only as horizontal stripes changing line by line.',
+      lighting_and_shadow: 'No light or shadow; color bands stand in for form.',
       texture_and_material:
-        'Render TIA graphics chip texture, scanline stripe artifacts, sprite flicker at object limit, phosphor persistence blur, NTSC color bleed, RF modulator static noise; surface detail should show pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy filler texture.',
+        'Wide rectangular blocks, horizontal color stripes, symmetrical mirrored walls and tiny 8-pixel-wide sprites.',
       camera_and_composition:
-        'Structure the image through 40 pixel form width, 160x192 playfield resolution, scanline color stripe proportions, object flicker at display limits, mirrored or repeated playfield logic; compose through tile maps, sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Primitive, ingenious, constraint creativity, first generation home console wonder, cartridge dust and static, woodgrain console nostalgia; derive mood from hardware limitation, arcade spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; the subject reduced to a few blocky silhouettes on a flat single-color ground.',
+      atmosphere_and_mood: 'Abstract and naive, imagination filling in almost everything.',
       rendering_and_quality:
-        'Finish with Atari 2600 extreme limitation aesthetic, 1977 hardware constraint beauty, minimal pixel poetry, 128 bytes of RAM art; finish with faithful era constraints, crisp readability at small scale, and no modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Extremely low horizontal resolution with crisp blocks; no detail beyond what the limit allows.',
       key_features:
-        'Atari VCS 2600 extreme limitation, 40 pixel wide sprite logic, single color per scanline, stripe color technique for multicolor, Combat, Pitfall and Adventure as constraint anchors only, hardware limitation as aesthetic, 128 bytes of RAM universe, two object display pressure; 40 pixel wide forms, scanline color stripes, sprite flicker multiplexing, 4 colors per scanline, TIA hardware artifacts, blocky rectangle everything, black support field constraint; NTSC 128 color palette, 4 colors per scanline, rainbow stripe technique, bright primaries, Atari warmth color gen, black support field constraint, TIA chip color generation; TIA graphics chip texture, scanline stripe artifacts, sprite flicker at object limit, phosphor persistence blur, NTSC color bleed, RF modulator static noise; 40 pixel form width, 160x192 playfield resolution, scanline color stripe proportions, object flicker at display limits, mirrored or repeated playfield logic',
+        'four-pixel-wide blocks; one color per scanline; horizontal stripe coloring; mirrored playfield; tiny sprites',
       creative_brief:
-        "Apply Atari 2600 Extreme Limitation as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Atari VCS 2600 extreme limitation, 40 pixel wide sprite logic, single color per scanline, stripe color technique for multicolor, Combat, Pitfall and Adventure as constraint anchors only, hardware limitation as aesthetic, 128 bytes of RAM universe, two object display pressure, 40 pixel wide forms, scanline color stripes, sprite flicker multiplexing, 4 colors per scanline, TIA hardware artifacts, blocky rectangle everything, black support field constraint, TIA graphics chip texture, scanline stripe artifacts, sprite flicker at object limit, phosphor persistence blur, NTSC color bleed, RF modulator static noise without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scanline Stripe Block Minimalism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP06-095',
-    name: 'Sega Genesis Dither-Heavy',
+    name: 'Dither-Heavy 16-Bit Console',
+    displayName: 'Dither-Heavy 16-Bit Console',
+    styleAnchors: ['Dither-Heavy 16-Bit Console', 'Sega Genesis Dither-Heavy'],
     category: '6. Retro Game Visual Systems',
     negativePrompt:
-      'smooth, gradient, modern, HD, anti-aliased, high color, photo, soft, realistic, clean, minimal dither, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render',
+      'copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, alpha blending, smooth gradients, smooth, gradient, modern, HD, anti-aliased, high color, photo, soft, realistic, clean, minimal dither, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Sega Genesis Dither-Heavy acts as a transferable art-medium router: start from Sega Genesis Mega Drive 16 bit aesthetic, heavy dithering for fake transparency, 64 colors simultaneous on screen, crunchy FM synth soundtrack as visual rhythm, Sonic and public-space of Rage as palette energy anchors, 9 bit color depth attitude, blast processing image logic, Heavy dither patterns, 64 color on screen, Genesis composite video artifacts, checkerboard transparency, two layer parallax, spiky pixel contour energy, FM synth crunchy visual and hardware-constrained game-visual system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        '16-bit console pixel art with about sixty on-screen colors, using heavy vertical-stripe and checkerboard dither to fake transparency and gradients.',
       subject_treatment:
-        'Transform any prompt subject through Chunky 16 bit sprite logic, heavy dither pattern edges, 320x224 resolution, sprite scaling hardware feel, two layer parallax composition; preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel, pre-render, screen-grid, or low-bit display behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Keep the prompt subject, action and camera view; redraw it inside this display system's resolution, palette and pixel-cluster limits without adding any game interface.",
       color_and_tone:
-        'Build color with 512 color total palette, 64 on screen, heavy dither to fake more, Genesis signature dark grit, electric blue accents, orange sunset accents, bronze cartridge warmth; use color through hardware rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Steppy, slightly dark 9-bit colors with high contrast; gradients built from dither bands, never smooth ramps.',
       lighting_and_shadow:
-        'Handle light through Dither pattern as lighting gradient, highlight shadow mode palette swap, palette cycling for glow, per tile palette limitation workaround; make light emerge from display technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector beam brightness, so value structure supports the medium and does not overwrite the requested content.',
+        'Hard-edged light blocks and dithered glows; shadows as flat dark palette steps.',
       texture_and_material:
-        'Render Dither pattern grid texture, Genesis composite video blur, cartridge connector blinking artifacts, CRAM dot crawl, scanline overlay, checkerboard transparency dither; surface detail should show pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy filler texture.',
+        'Vertical line dither and checkerboard patterns that a composite signal would blur into mist, water or glass.',
       camera_and_composition:
-        'Structure the image through 320x224 Genesis resolution, two layer parallax depth, sprite scaling horizontal line, vertical border overscan, PAL letterbox; compose through tile maps, sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood 90s console war attitude, arcade at home energy, blast processing excitement, FM synth funk, aggressive parallax swagger; derive mood from hardware limitation, arcade spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; strong silhouettes and parallax layers separated by value.',
+      atmosphere_and_mood: 'Crunchy and energetic, with an edge of attitude.',
       rendering_and_quality:
-        'Finish with Sega Genesis dither aesthetic, blast processing beauty, 16 bit attitude rendering, crunchy pixel charm, checkerboard transparency magic; finish with faithful era constraints, crisp readability at small scale, and no modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Crisp 320 by 224 pixels with deliberate dither everywhere translucency appears; no alpha blending.',
       key_features:
-        'Sega Genesis Mega Drive 16 bit aesthetic, heavy dithering for fake transparency, 64 colors simultaneous on screen, crunchy FM synth soundtrack as visual rhythm, Sonic and public-space of Rage as palette energy anchors, 9 bit color depth attitude, blast processing image logic; Heavy dither patterns, 64 color on screen, Genesis composite video artifacts, checkerboard transparency, two layer parallax, spiky pixel contour energy, FM synth crunchy visual; 512 color total palette, 64 on screen, heavy dither to fake more, Genesis signature dark grit, electric blue accents, orange sunset accents, bronze cartridge warmth; Dither pattern grid texture, Genesis composite video blur, cartridge connector blinking artifacts, CRAM dot crawl, scanline overlay, checkerboard transparency dither; 320x224 Genesis resolution, two layer parallax depth, sprite scaling horizontal line, vertical border overscan, PAL letterbox',
+        'vertical-stripe dither; checkerboard fake transparency; steppy 9-bit palette; parallax layers; no alpha blending',
       creative_brief:
-        "Apply Sega Genesis Dither-Heavy as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Sega Genesis Mega Drive 16 bit aesthetic, heavy dithering for fake transparency, 64 colors simultaneous on screen, crunchy FM synth soundtrack as visual rhythm, Sonic and public-space of Rage as palette energy anchors, 9 bit color depth attitude, blast processing image logic, Heavy dither patterns, 64 color on screen, Genesis composite video artifacts, checkerboard transparency, two layer parallax, spiky pixel contour energy, FM synth crunchy visual, Dither pattern grid texture, Genesis composite video blur, cartridge connector blinking artifacts, CRAM dot crawl, scanline overlay, checkerboard transparency dither without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dither-Heavy 16-Bit Console as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP06-082',
-    name: 'SNES Mode 7 Vista',
+    name: 'Mode 7 Floor-Plane Vista',
+    displayName: 'Mode 7 Floor-Plane Vista',
+    styleAnchors: ['Mode 7 Floor-Plane Vista', 'SNES Mode 7 Vista'],
     category: '6. Retro Game Visual Systems',
     negativePrompt:
-      'realistic perspective, 3d rendering, smooth gradients, high resolution, modern graphics, photo textures, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render',
+      'copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, true 3D terrain, perspective-correct textures, realistic perspective, 3d rendering, smooth gradients, high resolution, modern graphics, photo textures, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'SNES Mode 7 Vista acts as a transferable art-medium router: start from Classic 16 bit Mode 7 effect, pseudo 3D affine transform, rotating flat plane depth illusion, sprite scaled motifs approaching from distance, SNES hardware magic, Final Fantasy VI, Super Mario Kart and F Zero as transform anchors only, Affine transformed plane, scaled sprite layering, scanline artifact lines, banded color fields, 256 color charm and hardware-constrained game-visual system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        '16-bit pseudo-3D: one flat tiled ground layer rotated and scaled line by line toward a horizon, with flat sprites riding on top.',
       subject_treatment:
-        'Transform any prompt subject through Scanline stepped pseudo perspective, sprite scaling contour, tile based planar rotation, chunky affine mapping, any subject flattened into perspective warped texture logic; preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel, pre-render, screen-grid, or low-bit display behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject and action recognizable; this preset owns a low chase camera looking along an affine-scaled floor plane toward a flat painted horizon, and adds no score, health bar, logo or readable interface text.',
       color_and_tone:
-        'Build color with 256 color SNES palette, vibrant mode 7 blues, checkerboard or banded tile chroma, 15 bit color depth charm; use color through hardware rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Palette cycled water shimmer, gradient sky fake lighting, sprite brightness for depth, no real light, pure hardware trickery; make light emerge from display technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector beam brightness, so value structure supports the medium and does not overwrite the requested content.',
+        'A 256-color console palette with saturated sky gradients in hard bands and a brightly tiled ground.',
+      lighting_and_shadow: 'No real lighting; sprites carry a small flat oval shadow on the plane.',
       texture_and_material:
-        'Render Affine transformed tile repetition, no mipmap chunky scaling, scanline rendering artifacts, cartridge memory limitations visible; surface detail should show pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy filler texture.',
+        'Ground tiles stretch into huge blocky pixels near the camera and shimmer into aliased noise near the horizon.',
       camera_and_composition:
-        'Structure the image through Perspective transformed flat plane, sprite scale depth illusion, horizon like division when useful, no true vertical camera; compose through tile maps, sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Nostalgic, technically miraculous, kinetic, hardware driven; derive mood from hardware limitation, arcade spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Low tilted view; the plane fills the lower two thirds and meets a flat parallax backdrop at a straight horizon.',
+      atmosphere_and_mood: 'Soaring and optimistic, speed over an endless flat world.',
       rendering_and_quality:
-        'Finish with SNES Mode 7 capture, 16 bit pseudo 3D nostalgia, hardware trick aesthetic, retro technical beauty; finish with faithful era constraints, crisp readability at small scale, and no modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Visible affine stretching and horizon aliasing; sprites never scale smoothly.',
       key_features:
-        'Classic 16 bit Mode 7 effect, pseudo 3D affine transform, rotating flat plane depth illusion, sprite scaled motifs approaching from distance, SNES hardware magic, Final Fantasy VI, Super Mario Kart and F Zero as transform anchors only; Affine transformed plane, scaled sprite layering, scanline artifact lines, banded color fields, 256 color charm; 256 color SNES palette, vibrant mode 7 blues, checkerboard or banded tile chroma, 15 bit color depth charm; Affine transformed tile repetition, no mipmap chunky scaling, scanline rendering artifacts, cartridge memory limitations visible; Perspective transformed flat plane, sprite scale depth illusion, horizon like division when useful, no true vertical camera',
+        'affine-scaled floor plane; stretched near pixels; horizon shimmer; flat parallax backdrop; scaled sprites',
       creative_brief:
-        "Apply SNES Mode 7 Vista as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Classic 16 bit Mode 7 effect, pseudo 3D affine transform, rotating flat plane depth illusion, sprite scaled motifs approaching from distance, SNES hardware magic, Final Fantasy VI, Super Mario Kart and F Zero as transform anchors only, Affine transformed plane, scaled sprite layering, scanline artifact lines, banded color fields, 256 color charm, Affine transformed tile repetition, no mipmap chunky scaling, scanline rendering artifacts, cartridge memory limitations visible without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mode 7 Floor-Plane Vista as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP06-093',
-    name: 'MSX2 Japanese Computer',
+    name: 'Bright Line-Clash Home Micro',
+    displayName: 'Bright Line-Clash Home Micro',
+    styleAnchors: ['Bright Line-Clash Home Micro', 'MSX2 Japanese Computer'],
     category: '6. Retro Game Visual Systems',
     negativePrompt:
-      'western, modern, 3d, realistic, low color, dark, muted, gritty, photo, smooth gradient, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render',
+      'copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, muted palette, soft gradients, modern, 3d, realistic, low color, gritty, photo, smooth gradient, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'MSX2 Japanese Computer acts as a transferable art-medium router: start from MSX2 Japanese 8 bit computer art, bright vibrant pixel palette unique to Japanese home computers, Metal Gear, Ys and Konami MSX as visual anchors only, compact Japanese pixel style, SCREEN mode graphics layering, disk BASIC and cassette loading texture, MSX2 vibrant palette, compact pixel resolution, SCREEN mode layering, Japanese character cell support, Konami era charm, Japanese 8 bit brightness, 256x212 proportions and hardware-constrained game-visual system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Japanese-market 8-bit micro graphics: square pixels in bright candy primaries, with only two colors allowed in each 8 by 1 pixel line segment.',
       subject_treatment:
-        'Transform any prompt subject through Compact pixel design, 256x212 screen resolution, 8x8 character cell influence, sprite pattern table limits, layered screen planes; preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel, pre-render, screen-grid, or low-bit display behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Keep the prompt subject, action and camera view; redraw it inside this display system's resolution, palette and pixel-cluster limits without adding any game interface.",
       color_and_tone:
-        'Build color with MSX2 bright palette, vivid saturated japanese 8 bit, emerald greens, cherry reds, sky blues, golden yellows, pastel pinks unique to platform, 256 colors from palette; use color through hardware rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Fifteen fixed saturated colors on black: vivid cyan, magenta, bright yellow, deep blue and grass green; strong complementary pairs.',
       lighting_and_shadow:
-        'Handle light through Flat sprite lighting, bright color fields, no shading on simple sprites, SCREEN layer transparency overlay; make light emerge from display technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector beam brightness, so value structure supports the medium and does not overwrite the requested content.',
+        'No gradients; form built from outlines and two-color stripes, shadows as solid dark areas.',
       texture_and_material:
-        'Render MSX pixel grid, Japanese character cell texture without readable text, disk BASIC interface framing, cassette data screech sonic texture, YM2413 FM synth chip sound as visual equivalent; surface detail should show pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy filler texture.',
+        'Horizontal color-clash fringes where two shapes meet in one 8-pixel segment, crisp outlines and small repeated patterns.',
       camera_and_composition:
-        'Structure the image through 256x212 Japanese resolution, SCREEN mode layering, vertical scanline rendering, character cell overlay texture, pixel aspect specific to MSX; compose through tile maps, sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood 80s Japan tech wonder, cassette tape patience, early stealth mood, Akihabara electronics soul, bright home computer optimism; derive mood from hardware limitation, arcade spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; compact, clearly outlined subjects on a black or single-color field.',
+      atmosphere_and_mood: 'Bright and plucky, adventure on a small bedroom machine.',
       rendering_and_quality:
-        'Finish with MSX2 Japanese computer pixel aesthetic, Konami 8 bit beauty, bright home computer art, 1985 Japan tech nostalgia; finish with faithful era constraints, crisp readability at small scale, and no modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Square pixels with visible line-clash artifacts; no dithering gradients and no muted colors.',
       key_features:
-        'MSX2 Japanese 8 bit computer art, bright vibrant pixel palette unique to Japanese home computers, Metal Gear, Ys and Konami MSX as visual anchors only, compact Japanese pixel style, SCREEN mode graphics layering, disk BASIC and cassette loading texture; MSX2 vibrant palette, compact pixel resolution, SCREEN mode layering, Japanese character cell support, Konami era charm, Japanese 8 bit brightness, 256x212 proportions; MSX2 bright palette, vivid saturated japanese 8 bit, emerald greens, cherry reds, sky blues, golden yellows, pastel pinks unique to platform, 256 colors from palette; MSX pixel grid, Japanese character cell texture without readable text, disk BASIC interface framing, cassette data screech sonic texture, YM2413 FM synth chip sound as visual equivalent; 256x212 Japanese resolution, SCREEN mode layering, vertical scanline rendering, character cell overlay texture, pixel aspect specific to MSX',
+        'square pixels; two colors per 8x1 segment; horizontal clash fringes; candy primaries; black field',
       creative_brief:
-        "Apply MSX2 Japanese Computer as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through MSX2 Japanese 8 bit computer art, bright vibrant pixel palette unique to Japanese home computers, Metal Gear, Ys and Konami MSX as visual anchors only, compact Japanese pixel style, SCREEN mode graphics layering, disk BASIC and cassette loading texture, MSX2 vibrant palette, compact pixel resolution, SCREEN mode layering, Japanese character cell support, Konami era charm, Japanese 8 bit brightness, 256x212 proportions, MSX pixel grid, Japanese character cell texture without readable text, disk BASIC interface framing, cassette data screech sonic texture, YM2413 FM synth chip sound as visual equivalent without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bright Line-Clash Home Micro as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP06-086',
-    name: 'RPG Maker Chibi Tileworld',
+    name: 'Chibi Top-Down Tileworld',
+    displayName: 'Chibi Top-Down Tileworld',
+    styleAnchors: ['Chibi Top-Down Tileworld', 'RPG Maker Chibi Tileworld'],
     category: '6. Retro Game Visual Systems',
     negativePrompt:
-      'realistic, 3d, photorealistic, smooth, modern, high resolution, detailed, serious, gritty, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render',
+      'copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, perspective camera, realistic proportions, isometric diamond tiles, realistic, 3d, photorealistic, smooth, modern, high resolution, detailed, serious, gritty, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'RPG Maker Chibi Tileworld acts as a transferable art-medium router: start from Classic RPG Maker top down tile grammar, chibi scale abstraction when subjects appear, 16x16 modular tiles, nostalgic indie RPG charm, Yume Nikki dream simplicity and Ib horror cute dissonance as tone anchors, Grid based tile composition, chibi scale simplification, top down orthographic perspective, tile repetition patterns, optional dialogue box overlay without readable text and hardware-constrained game-visual system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Hobbyist top-down RPG map: 16 or 32 pixel square tiles in three-quarter overhead view with two-heads-tall chibi characters.',
       subject_treatment:
-        'Transform any prompt subject through Small pixel outlines, tile grid construction, chunky square modules, simple animation frame logic, grid locked everything; preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel, pre-render, screen-grid, or low-bit display behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject and action recognizable; this preset owns a three-quarter top-down tile map in which people become two-heads-tall chibi sprites, and adds no score, health bar, logo or readable interface text.',
       color_and_tone:
-        'Build color with Cute saturated tiles, clear terrain like color coding, compact RTP inspired palette, palette swaps for subject separation; use color through hardware rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Bright flat palette with one-pixel darker outlines; grass, water and roofs each built from a small ramp.',
       lighting_and_shadow:
-        'Handle light through Flat ambient tile lighting, occasional window yellow glow tiles, no dynamic lighting, pre baked atmosphere; make light emerge from display technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector beam brightness, so value structure supports the medium and does not overwrite the requested content.',
+        'Flat daylight; a fixed dark shadow tile under trees, walls and characters.',
       texture_and_material:
-        'Render Tile repetition grids, sprite pixel squareness, grid aligned collision edges, chunky block construction feel; surface detail should show pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy filler texture.',
+        'Visible tile repetition, auto-tiled edges between grass, water and stone, and blocky roof and wall tiles.',
       camera_and_composition:
-        'Structure the image through Top down orthographic grid, tile based snapping, screen transition fade, flat isometric hybrid worldview; compose through tile maps, sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Cozy, nostalgic, do it yourself creativity, miniature, indie game soul; derive mood from hardware limitation, arcade spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability, letting the medium alter interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with RPG Maker screen grammar, indie RPG nostalgia, chibi pixel charm, do it yourself game aesthetic warmth; finish with faithful era constraints, crisp readability at small scale, and no modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Overhead three-quarter view on a strict grid; buildings show front walls and roofs, characters face the camera.',
+      atmosphere_and_mood: 'Homemade and nostalgic, a small adventure built tile by tile.',
+      rendering_and_quality: 'Grid-aligned tiles, consistent chibi scale and no perspective drift.',
       key_features:
-        'Classic RPG Maker top down tile grammar, chibi scale abstraction when subjects appear, 16x16 modular tiles, nostalgic indie RPG charm, Yume Nikki dream simplicity and Ib horror cute dissonance as tone anchors; Grid based tile composition, chibi scale simplification, top down orthographic perspective, tile repetition patterns, optional dialogue box overlay without readable text; Cute saturated tiles, clear terrain like color coding, compact RTP inspired palette, palette swaps for subject separation; Tile repetition grids, sprite pixel squareness, grid aligned collision edges, chunky block construction feel; Top down orthographic grid, tile based snapping, screen transition fade, flat isometric hybrid worldview',
+        'square tile grid; chibi sprites; auto-tiled edges; shadow tiles; three-quarter overhead view',
       creative_brief:
-        "Apply RPG Maker Chibi Tileworld as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Classic RPG Maker top down tile grammar, chibi scale abstraction when subjects appear, 16x16 modular tiles, nostalgic indie RPG charm, Yume Nikki dream simplicity and Ib horror cute dissonance as tone anchors, Grid based tile composition, chibi scale simplification, top down orthographic perspective, tile repetition patterns, optional dialogue box overlay without readable text, Tile repetition grids, sprite pixel squareness, grid aligned collision edges, chunky block construction feel without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chibi Top-Down Tileworld as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP06-081',
-    name: 'Game Boy Green Monochrome',
+    name: 'Four-Shade Pea-Green LCD',
+    displayName: 'Four-Shade Pea-Green LCD',
+    styleAnchors: ['Four-Shade Pea-Green LCD', 'Game Boy Green Monochrome'],
     category: '6. Retro Game Visual Systems',
     negativePrompt:
-      'color, hd, smooth, gradient, realistic, high resolution, detailed, photorealistic, 3d, modern, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render',
+      'copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, fifth color, backlit glow, smooth gradients, color, hd, smooth, gradient, realistic, high resolution, detailed, photorealistic, 3d, modern, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Game Boy Green Monochrome acts as a transferable art-medium router: start from Original DMG Game Boy palette, four shades of olive green, 160x144 low resolution vision, pea soup display, Nintendo handheld nostalgia, 1989 portable graphics, abstract subject reduced into blocky dot matrix silhouettes, Four shade green only, visible pixel grid, chunky 8x8 tile boundaries, screen bezel framing, monochrome dot matrix abstraction and hardware-constrained game-visual system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Unlit reflective handheld LCD at about 160 by 144 pixels, drawn with exactly four shades of olive green on 8 by 8 tiles.',
       subject_treatment:
-        'Transform any prompt subject through Rigid pixel grid alignment, 8x8 or 16x16 tile construction, hard silhouette boxing, no sub pixel rendering, any input compressed into readable tile masses; preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel, pre-render, screen-grid, or low-bit display behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Keep the prompt subject, action and camera view; redraw it inside this display system's resolution, palette and pixel-cluster limits without adding any game interface.",
       color_and_tone:
-        'Build color with Four shade green gradient, pea soup olive, sickly lime, bile yellow highlight, shadow moss dark, no other colors exist; use color through hardware rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Four fixed values only: near-black moss, dark olive, pea green and pale lime; midtones faked with checkerboard dither.',
       lighting_and_shadow:
-        'Handle light through Self illuminated LCD screen, reflective green phosphor glow, pocket light on plastic screen; make light emerge from display technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector beam brightness, so value structure supports the medium and does not overwrite the requested content.',
+        'Light is expressed only as value steps; the screen itself is unlit, flat and slightly murky.',
       texture_and_material:
-        'Render LCD pixel grid gap, dusty plastic screen overlay, passive matrix ghost trail, screen burn memory; surface detail should show pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy filler texture.',
+        'Faint pixel-gap grid, soft ghosting trail behind moving shapes, one-pixel dark outlines and a dusty plastic sheen.',
       camera_and_composition:
-        'Structure the image through Screen edge vignette, LCD viewing angle washout, reflective plastic frame reflection, pocket sized display; compose through tile maps, sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Portable, nostalgic, constrained, quiet, low power, memory fragile; derive mood from hardware limitation, arcade spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; subject silhouettes simplified to read on a tiny screen with large flat background tiles.',
+      atmosphere_and_mood: 'Quiet and portable, a small glowing-green world held in the hands.',
       rendering_and_quality:
-        'Finish with Game Boy screen capture, retro handheld nostalgia, 8 bit portable aesthetic, chunky pixel charm; finish with faithful era constraints, crisp readability at small scale, and no modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Hard square pixels with no anti-aliasing and no fifth color; tile repetition allowed in backgrounds.',
       key_features:
-        'Original DMG Game Boy palette, four shades of olive green, 160x144 low resolution vision, pea soup display, Nintendo handheld nostalgia, 1989 portable graphics, abstract subject reduced into blocky dot matrix silhouettes; Four shade green only, visible pixel grid, chunky 8x8 tile boundaries, screen bezel framing, monochrome dot matrix abstraction; Four shade green gradient, pea soup olive, sickly lime, bile yellow highlight, shadow moss dark, no other colors exist; LCD pixel grid gap, dusty plastic screen overlay, passive matrix ghost trail, screen burn memory; Screen edge vignette, LCD viewing angle washout, reflective plastic frame reflection, pocket sized display',
+        'four olive-green shades; 8x8 tiles; checkerboard dither; pixel-gap grid; LCD ghosting',
       creative_brief:
-        "Apply Game Boy Green Monochrome as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Original DMG Game Boy palette, four shades of olive green, 160x144 low resolution vision, pea soup display, Nintendo handheld nostalgia, 1989 portable graphics, abstract subject reduced into blocky dot matrix silhouettes, Four shade green only, visible pixel grid, chunky 8x8 tile boundaries, screen bezel framing, monochrome dot matrix abstraction, LCD pixel grid gap, dusty plastic screen overlay, passive matrix ghost trail, screen burn memory without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Four-Shade Pea-Green LCD as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP06-088',
-    name: 'PSX Vertex Wobble',
+    name: '32-Bit Vertex Wobble',
+    displayName: '32-Bit Vertex Wobble',
+    styleAnchors: ['32-Bit Vertex Wobble', 'PSX Vertex Wobble'],
     category: '6. Retro Game Visual Systems',
     negativePrompt:
-      'stable, clean, smooth, modern, high-poly, anti-aliased, sharp, high resolution, stable geometry, filtered, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render',
+      'copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, texture filtering, high-poly models, modern reflections, stable, clean, smooth, modern, high-poly, anti-aliased, sharp, high resolution, stable geometry, filtered, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'PSX Vertex Wobble acts as a transferable art-medium router: start from PlayStation 1 aesthetic, vertex warble jittering polygons, affine texture swim, unfiltered chunky textures, dithering haze distance fog, Silent Hill grain and gloom and Metal Gear Solid low poly intensity as tone anchors, no z buffer precision, 1995 3D instability, Vertex wobble jitter, unfiltered chunky textures, dithering gradient bands, affine texture warping, distance fog atmosphere, z fighting flicker and hardware-constrained game-visual system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Early 32-bit console 3D: low-poly models with unfiltered low-resolution textures that warp and jitter because of affine mapping and vertex snapping.',
       subject_treatment:
-        'Transform any prompt subject through Low poly triangulated mesh, wobbling vertices on camera move, no sub pixel precision, chunky model contours, affine mapped edges; preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel, pre-render, screen-grid, or low-bit display behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Keep the prompt subject, action and camera view; redraw it inside this display system's resolution, palette and pixel-cluster limits without adding any game interface.",
       color_and_tone:
-        'Build color with 16 bit color depth banding, dither pattern gradients, PSX texture page compression colors, distance fog greying, CRT emulated chroma bleed; use color through hardware rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Muted 15-bit color with a fine ordered dither over the whole frame; distance fades into flat fog color.',
       lighting_and_shadow:
-        'Handle light through Per vertex gouraud shading, no per pixel lights, dither stepped shadow transitions, distance fog atmosphere, no realtime shadows; make light emerge from display technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector beam brightness, so value structure supports the medium and does not overwrite the requested content.',
+        'Gouraud vertex lighting with visible triangle shading steps; simple blob shadows under characters.',
       texture_and_material:
-        'Render Unfiltered nearest neighbor textures, polygon warp texture swim, dithering gradient noise, affine distorted texels, scanline artifact overlay; surface detail should show pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy filler texture.',
+        'Blocky nearest-neighbor textures around 64 pixels wide, swimming texture seams on large polygons and cracks where polygons meet.',
       camera_and_composition:
-        'Structure the image through Jitter vertex polygon warping, z fighting flicker, affine perspective distortion, distance fog depth compression; compose through tile maps, sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Eerie, nostalgic, technological limitation beauty, 90s 3D uncanny poetry, CRT warmth glow, abstract low poly unease; derive mood from hardware limitation, arcade spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; short draw distance with dense fog hiding the world beyond a few meters.',
+      atmosphere_and_mood: 'Uneasy and dreamlike, a world that trembles slightly.',
       rendering_and_quality:
-        'Finish with PlayStation 1 aesthetic, 32 bit console 3D, retro CGI wobble poetry, beautiful instability; finish with faithful era constraints, crisp readability at small scale, and no modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Low internal resolution near 320 by 240, jittering vertices, no texture filtering and no anti-aliasing.',
       key_features:
-        'PlayStation 1 aesthetic, vertex warble jittering polygons, affine texture swim, unfiltered chunky textures, dithering haze distance fog, Silent Hill grain and gloom and Metal Gear Solid low poly intensity as tone anchors, no z buffer precision, 1995 3D instability; Vertex wobble jitter, unfiltered chunky textures, dithering gradient bands, affine texture warping, distance fog atmosphere, z fighting flicker; 16 bit color depth banding, dither pattern gradients, PSX texture page compression colors, distance fog greying, CRT emulated chroma bleed; Unfiltered nearest neighbor textures, polygon warp texture swim, dithering gradient noise, affine distorted texels, scanline artifact overlay; Jitter vertex polygon warping, z fighting flicker, affine perspective distortion, distance fog depth compression',
+        'affine texture warping; vertex snapping jitter; nearest-neighbor textures; ordered dither; close fog',
       creative_brief:
-        "Apply PSX Vertex Wobble as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through PlayStation 1 aesthetic, vertex warble jittering polygons, affine texture swim, unfiltered chunky textures, dithering haze distance fog, Silent Hill grain and gloom and Metal Gear Solid low poly intensity as tone anchors, no z buffer precision, 1995 3D instability, Vertex wobble jitter, unfiltered chunky textures, dithering gradient bands, affine texture warping, distance fog atmosphere, z fighting flicker, Unfiltered nearest neighbor textures, polygon warp texture swim, dithering gradient noise, affine distorted texels, scanline artifact overlay without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 32-Bit Vertex Wobble as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP06-087',
-    name: 'GBA Tactical Pixel',
+    name: 'Handheld Tactics Grid Pixel',
+    displayName: 'Handheld Tactics Grid Pixel',
+    styleAnchors: ['Handheld Tactics Grid Pixel', 'GBA Tactical Pixel'],
     category: '6. Retro Game Visual Systems',
     negativePrompt:
-      'realistic, 3d, smooth, dark, gritty, modern, high res, photorealistic, chaotic, messy, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render',
+      'copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, stat windows, numbers on tiles, dark gritty palette, realistic, 3d, smooth, dark, gritty, modern, high res, photorealistic, chaotic, messy, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'GBA Tactical Pixel acts as a transferable art-medium router: start from Game Boy Advance tactical grid, Advance Wars clarity and Fire Emblem portrait elegance as style anchors, bright clean icon sprite logic, isometric or top down squared composition, handheld strategy precision, Tactical grid overlay, isometric tile logic, bright readable icon sprites, portrait windows, turn based UI elements without readable text and hardware-constrained game-visual system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Handheld strategy map: bright 15-bit pixel art on a square battle grid, with chunky outlined unit sprites standing on clean terrain tiles.',
       subject_treatment:
-        'Transform any prompt subject through Crisp small sprite pixel art, unit icon clarity for any subject, grid cell division lines, portrait window framing, clean readable silhouettes; preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel, pre-render, screen-grid, or low-bit display behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject and action recognizable; this preset owns an overhead tactics grid with units standing on readable terrain tiles, and adds no score, health bar, logo or readable interface text.',
       color_and_tone:
-        'Build color with Bright tactical readability, blue green clear contrast, red blue role coding, saturated portrait accents, sunlit handheld tone; use color through hardware rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Oversaturated bright colors made for an unlit screen; blue and red team colors; translucent blue squares for movement range.',
       lighting_and_shadow:
-        'Handle light through Flat even illumination for gameplay clarity, no atmospheric lighting, readability first approach, sun baked tile brightness; make light emerge from display technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector beam brightness, so value structure supports the medium and does not overwrite the requested content.',
+        'Flat top light; a small dark ellipse under each unit and a one-tile shadow on the north side of cliffs.',
       texture_and_material:
-        'Render Pixel grid precision, crisp small sprite definition, GBA screen color gamut, handheld LCD rendering limits; surface detail should show pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy filler texture.',
+        'Clean terrain tiles for plains, forest, river and mountain, thick dark outlines on units, faint grid lines.',
       camera_and_composition:
-        'Structure the image through Grid based tactical space, isometric or top down tile perspectives, placement precision, fog of war style reveal when useful; compose through tile maps, sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Strategic, bright, readable, turn based calm, portable focus; derive mood from hardware limitation, arcade spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Overhead, slightly tilted grid filling the frame; units about one tile tall, the key clash near the center.',
+      atmosphere_and_mood: 'Clear and tactical, a whole battle understood at a glance.',
       rendering_and_quality:
-        'Finish with GBA tactical game screen, handheld strategy aesthetic, bright readable pixel art, portable precision; finish with faithful era constraints, crisp readability at small scale, and no modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Crisp readable icons and terrain; no numbers, stat windows or text on the map.',
       key_features:
-        'Game Boy Advance tactical grid, Advance Wars clarity and Fire Emblem portrait elegance as style anchors, bright clean icon sprite logic, isometric or top down squared composition, handheld strategy precision; Tactical grid overlay, isometric tile logic, bright readable icon sprites, portrait windows, turn based UI elements without readable text; Bright tactical readability, blue green clear contrast, red blue role coding, saturated portrait accents, sunlit handheld tone; Pixel grid precision, crisp small sprite definition, GBA screen color gamut, handheld LCD rendering limits; Grid based tactical space, isometric or top down tile perspectives, placement precision, fog of war style reveal when useful',
+        'square battle grid; bright unlit-screen palette; outlined unit sprites; movement-range squares; terrain tiles',
       creative_brief:
-        "Apply GBA Tactical Pixel as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Game Boy Advance tactical grid, Advance Wars clarity and Fire Emblem portrait elegance as style anchors, bright clean icon sprite logic, isometric or top down squared composition, handheld strategy precision, Tactical grid overlay, isometric tile logic, bright readable icon sprites, portrait windows, turn based UI elements without readable text, Pixel grid precision, crisp small sprite definition, GBA screen color gamut, handheld LCD rendering limits without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Handheld Tactics Grid Pixel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP06-097',
-    name: 'Amiga DeluxePaint HAM',
+    name: 'HAM Copper-Gradient Paint',
+    displayName: 'HAM Copper-Gradient Paint',
+    styleAnchors: ['HAM Copper-Gradient Paint', 'Amiga DeluxePaint HAM'],
     category: '6. Retro Game Visual Systems',
     negativePrompt:
-      'limited palette, modern, smooth gradient, generic dither, PC, low color, 256, chunky modern pixel art, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render',
+      'copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, modern smooth gradients, flat limited palette, limited palette, modern, smooth gradient, generic dither, low color, 256, chunky modern pixel art, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Amiga DeluxePaint HAM acts as a transferable art-medium router: start from Commodore Amiga DeluxePaint aesthetic, HAM 6 Hold And Modify mode 4096 colors, copper list rainbow gradients, 80s computer art software, Defender of the Crown, Shadow of the Beast and Warhol Amiga as color anchors, video toaster workstation soul, HAM6 Hold And Modify fringing, copper list rainbow gradients, 4096 color mode, DeluxePaint brush patterns, Amiga Workbench blue, 320x256 resolution, video toaster aesthetic and hardware-constrained game-visual system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Late-80s paint-program pixel art: thousands of colors through hold-and-modify mode, with sky gradients made from per-scanline palette changes.',
       subject_treatment:
-        'Transform any prompt subject through Fat Amiga pixels, HAM fringing artifacts, copper list gradient banding, 320x256 or 320x512 interlaced workbench, 16 color sprite over 4096 support field; preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel, pre-render, screen-grid, or low-bit display behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Keep the prompt subject, action and camera view; redraw it inside this display system's resolution, palette and pixel-cluster limits without adding any game interface.",
       color_and_tone:
-        'Build color with 4096 color HAM mode, rainbow copper list gradients, jewel golds, deep steel greys, Amiga Workbench blue, video toaster spectrum, HAM fringing magenta cyan edges; use color through hardware rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Rich painterly color with horizontal color bleed at hard edges; skies built from smooth-looking horizontal gradient bars.',
       lighting_and_shadow:
-        'Handle light through Copper list gradient as sky lighting, HAM palette gradient shading, 16 color sprite lighting on 4096 support field, no real time light but beautiful gradients; make light emerge from display technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector beam brightness, so value structure supports the medium and does not overwrite the requested content.',
+        'Painted light with soft digitized shading, dramatic sunsets and glossy highlights.',
       texture_and_material:
-        'Render HAM fringing edge artifacts, copper list gradient band texture, DeluxePaint brush patterns, Amiga hold and modify color bleed, NTSC PAL artifact texture; surface detail should show pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy filler texture.',
+        'Horizontal color-fringe smears where shapes meet, fine paint-program brush dither, and banded copper sky bars.',
       camera_and_composition:
-        'Structure the image through 320x256 overscan resolution, HAM fringing edge pixels, copper list vertical gradient spatial logic, workbench window framing, PAL interlace spatial texture; compose through tile maps, sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood 80s computer art revolution, video production dream, demo scene energy, Amiga workbench creativity, copper list programming art; derive mood from hardware limitation, arcade spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; wide landscape-style compositions with layered horizon bands.',
+      atmosphere_and_mood: 'Grand and romantic, a painting squeezed out of a home computer.',
       rendering_and_quality:
-        'Finish with Amiga DeluxePaint aesthetic, HAM mode beauty, 80s computer art software rendering, copper list rainbow, 4096 color 1985 miracle; finish with faithful era constraints, crisp readability at small scale, and no modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Painterly many-color pixels with visible fringing and horizontal banding; no modern smooth gradients.',
       key_features:
-        'Commodore Amiga DeluxePaint aesthetic, HAM 6 Hold And Modify mode 4096 colors, copper list rainbow gradients, 80s computer art software, Defender of the Crown, Shadow of the Beast and Warhol Amiga as color anchors, video toaster workstation soul; HAM6 Hold And Modify fringing, copper list rainbow gradients, 4096 color mode, DeluxePaint brush patterns, Amiga Workbench blue, 320x256 resolution, video toaster aesthetic; 4096 color HAM mode, rainbow copper list gradients, jewel golds, deep steel greys, Amiga Workbench blue, video toaster spectrum, HAM fringing magenta cyan edges; HAM fringing edge artifacts, copper list gradient band texture, DeluxePaint brush patterns, Amiga hold and modify color bleed, NTSC PAL artifact texture; 320x256 overscan resolution, HAM fringing edge pixels, copper list vertical gradient spatial logic, workbench window framing, PAL interlace spatial texture',
+        'hold-and-modify color fringing; per-scanline gradient bars; painterly pixels; digitized shading; wide horizons',
       creative_brief:
-        "Apply Amiga DeluxePaint HAM as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Commodore Amiga DeluxePaint aesthetic, HAM 6 Hold And Modify mode 4096 colors, copper list rainbow gradients, 80s computer art software, Defender of the Crown, Shadow of the Beast and Warhol Amiga as color anchors, video toaster workstation soul, HAM6 Hold And Modify fringing, copper list rainbow gradients, 4096 color mode, DeluxePaint brush patterns, Amiga Workbench blue, 320x256 resolution, video toaster aesthetic, HAM fringing edge artifacts, copper list gradient band texture, DeluxePaint brush patterns, Amiga hold and modify color bleed, NTSC PAL artifact texture without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies HAM Copper-Gradient Paint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -298,115 +305,117 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Visual Novel Screen',
     category: '6. Retro Game Visual Systems',
     negativePrompt:
-      'action, motion, dynamic, 3d, real-time, intense, fast, combat, epic, cinematic camera, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render',
+      'copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, dialogue text, name plate, generic anime schoolgirl, dynamic action, action, motion, dynamic, 3d, real-time, intense, fast, combat, epic, cinematic camera, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Visual Novel Screen acts as a transferable art-medium router: start from Japanese visual novel composite grammar, clean cel rendering over softened photographic or painterly layers, ADV interface framing without readable dialogue, Key visual arts and Fate/stay night as mood anchors only, choice branch tension as layout pressure, Cel layer over softened support image, dialogue box style framing without legible text, ADV interface geometry, gentle vignette, translucent UI glass and hardware-constrained game-visual system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Visual novel screen: a waist-up cel-shaded character sprite standing over a softly blurred painted background, with an empty translucent dialogue box.',
       subject_treatment:
-        'Transform any prompt subject through Clean cel outlines, layered UI frame division, translucent lower third panels, expression sheet clarity when a subject is present, flat composited depth; preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel, pre-render, screen-grid, or low-bit display behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject and action recognizable; this preset owns the visual-novel screen layout: a waist-up sprite over a softened background and an empty text box across the bottom, and adds no score, health bar, logo or readable interface text.',
       color_and_tone:
-        'Build color with Anime cel colors, desaturated support layers, translucent UI gradients, gentle dusk tones, restrained accent color for selection states; use color through hardware rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Clean cel color on the sprite with two-tone shadows; background slightly desaturated and warm or cool by time of day.',
       lighting_and_shadow:
-        'Handle light through Diffuse filtered support field light, independent cel layer lighting, gentle vignette framing, soft interface glow; make light emerge from display technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector beam brightness, so value structure supports the medium and does not overwrite the requested content.',
+        'Soft ambient light on the sprite with a thin rim light matching the background; no cast shadow on the backdrop.',
       texture_and_material:
-        'Render Vector clean cel layer against JPEG grain or bokeh support layer, UI glass translucency, mixed media compositing seams; surface detail should show pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy filler texture.',
+        'Crisp anti-aliased lineart on the sprite, painterly or photo-based background with gentle blur, frosted empty text panel.',
       camera_and_composition:
-        'Structure the image through Static layered support field, near field cel plane, lower third interface band, optional choice button overlay, flat composite depth; compose through tile maps, sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Intimate, quiet, suspended, narrative focused, emotionally charged without requiring specific characters or places; derive mood from hardware limitation, arcade spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Static frontal screen; the sprite stands centered or at one third, the empty box covers the bottom quarter.',
+      atmosphere_and_mood: 'Intimate and still, a pause before someone speaks.',
       rendering_and_quality:
-        'Finish with Visual novel screenshot aesthetic, ADV game composite still, emotional interface forward rendering, anime game layer polish; finish with faithful era constraints, crisp readability at small scale, and no modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Sharp sprite against soft backdrop; the dialogue box stays blank with no names or words.',
       key_features:
-        'Japanese visual novel composite grammar, clean cel rendering over softened photographic or painterly layers, ADV interface framing without readable dialogue, Key visual arts and Fate/stay night as mood anchors only, choice branch tension as layout pressure; Cel layer over softened support image, dialogue box style framing without legible text, ADV interface geometry, gentle vignette, translucent UI glass; Anime cel colors, desaturated support layers, translucent UI gradients, gentle dusk tones, restrained accent color for selection states; Vector clean cel layer against JPEG grain or bokeh support layer, UI glass translucency, mixed media compositing seams; Static layered support field, near field cel plane, lower third interface band, optional choice button overlay, flat composite depth',
+        'waist-up cel sprite; blurred painted backdrop; empty translucent text box; rim light; static frontal screen',
       creative_brief:
-        "Apply Visual Novel Screen as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Japanese visual novel composite grammar, clean cel rendering over softened photographic or painterly layers, ADV interface framing without readable dialogue, Key visual arts and Fate/stay night as mood anchors only, choice branch tension as layout pressure, Cel layer over softened support image, dialogue box style framing without legible text, ADV interface geometry, gentle vignette, translucent UI glass, Vector clean cel layer against JPEG grain or bokeh support layer, UI glass translucency, mixed media compositing seams without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Visual Novel Screen as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP06-096',
-    name: 'Neo Geo Sprite King',
+    name: 'Dense Arcade Mega-Sprite',
+    displayName: 'Dense Arcade Mega-Sprite',
+    styleAnchors: ['Dense Arcade Mega-Sprite', 'Neo Geo Sprite King'],
     category: '6. Retro Game Visual Systems',
     negativePrompt:
-      'low detail, limited sprite, simple, minimal, cheap retro pastiche, small, basic, weak hardware, few frames, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render',
+      'copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, military insignia, blurry upscaling, copied soldier sprites, low detail, limited sprite, simple, minimal, cheap retro pastiche, small, basic, few frames, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Neo Geo Sprite King acts as a transferable art-medium router: start from Neo Geo arcade perfection, massive detailed sprite logic, Metal Slug animation fluidity, King of Fighters sprite artistry and Samurai Shodown silhouette power as style anchors, 1990 arcade king machine, luxury sprite budget energy, hand drawn frame density, Massive detailed sprite logic, 4096 simultaneous colors, no visible sprite limits, rich arcade palette, dense frame art implication, SNK era sprite artistry and hardware-constrained game-visual system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Late arcade pixel art: very large hand-pixeled sprites with dense painterly clusters, dozens of palettes and exhaustive mechanical detail.',
       subject_treatment:
-        'Transform any prompt subject through Enormous detailed sprite pixels, dense animation frame implications, support field parallax depth, no hardware sprite limits visible, pixel art at its peak; preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel, pre-render, screen-grid, or low-bit display behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Keep the prompt subject, action and camera view; redraw it inside this display system's resolution, palette and pixel-cluster limits without adding any game interface.",
       color_and_tone:
-        'Build color with 4096 color simultaneous, 65K total palette, rich vibrant arcade spectrum, SNK deep color mastery, no palette compromise, unlimited sprite color budget; use color through hardware rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Rich but controlled palettes of about sixteen colors per sprite, warm metal browns against cool greys, bright flashes for sparks.',
       lighting_and_shadow:
-        'Handle light through Sprite pixel art lighting finesse, hundreds of frames animation, palette gradient depth, support field atmospheric perspective, sprite shadow under foot; make light emerge from display technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector beam brightness, so value structure supports the medium and does not overwrite the requested content.',
+        'Consistent top-left light with hand-placed highlights, selective dark outlines and pixel-drawn smoke and debris.',
       texture_and_material:
-        'Render Massive sprite pixel texture, hand drawn animation frame density, support field tile variety wealth, arcade CRT perfect display, AES home cartridge luxury, no compromise pixel quality; surface detail should show pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy filler texture.',
+        'Rivets, dents, rust streaks, cloth folds and debris all resolved in pixel clusters; puffs of pixel smoke and flying shards.',
       camera_and_composition:
-        'Structure the image through Massive sprite on screen freedom, many support field parallax layers, no object limit pressure, fluid animation implied without spatial compromise; compose through tile maps, sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Arcade royalty, pixel art apotheosis, money is no object production, SNK golden age, MVS cartridge heavyweight champion; derive mood from hardware limitation, arcade spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; the main sprite fills much of the frame, surrounded by small secondary detail.',
+      atmosphere_and_mood: 'Loud and generous, every inch of the sprite showing off craft.',
       rendering_and_quality:
-        'Finish with Neo Geo sprite king aesthetic, peak pixel art rendering, arcade perfection beauty, Metal Slug animation masterpiece, unlimited sprite budget luxury; finish with faithful era constraints, crisp readability at small scale, and no modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Hand-placed clusters with no stray pixels; enormous detail kept readable.',
       key_features:
-        'Neo Geo arcade perfection, massive detailed sprite logic, Metal Slug animation fluidity, King of Fighters sprite artistry and Samurai Shodown silhouette power as style anchors, 1990 arcade king machine, luxury sprite budget energy, hand drawn frame density; Massive detailed sprite logic, 4096 simultaneous colors, no visible sprite limits, rich arcade palette, dense frame art implication, SNK era sprite artistry; 4096 color simultaneous, 65K total palette, rich vibrant arcade spectrum, SNK deep color mastery, no palette compromise, unlimited sprite color budget; Massive sprite pixel texture, hand drawn animation frame density, support field tile variety wealth, arcade CRT perfect display, AES home cartridge luxury, no compromise pixel quality; Massive sprite on screen freedom, many support field parallax layers, no object limit pressure, fluid animation implied without spatial compromise',
+        'huge hand-pixeled sprites; dense clusters; rivets and debris; pixel smoke; selective outlines',
       creative_brief:
-        "Apply Neo Geo Sprite King as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Neo Geo arcade perfection, massive detailed sprite logic, Metal Slug animation fluidity, King of Fighters sprite artistry and Samurai Shodown silhouette power as style anchors, 1990 arcade king machine, luxury sprite budget energy, hand drawn frame density, Massive detailed sprite logic, 4096 simultaneous colors, no visible sprite limits, rich arcade palette, dense frame art implication, SNK era sprite artistry, Massive sprite pixel texture, hand drawn animation frame density, support field tile variety wealth, arcade CRT perfect display, AES home cartridge luxury, no compromise pixel quality without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dense Arcade Mega-Sprite as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP06-100',
-    name: 'Game Boy Camera Thermal Print',
+    name: 'Pocket Camera Thermal Dot Print',
+    displayName: 'Pocket Camera Thermal Dot Print',
+    styleAnchors: ['Pocket Camera Thermal Dot Print', 'Game Boy Camera Thermal Print'],
     category: '6. Retro Game Visual Systems',
     negativePrompt:
-      'smooth, HD, color, gradient, modern, clean, sharp, anti-aliased, realistic, film grain, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render',
+      'copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, generic couple selfie, smooth grayscale, decorative print frame, smooth, HD, color, gradient, modern, clean, sharp, anti-aliased, realistic, film grain, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Game Boy Camera Thermal Print acts as a transferable art-medium router: start from Nintendo Game Boy Camera aesthetic, 128x112 CMOS sensor digital photo, 4 shade greyscale thermal printer dot matrix, tiny Game Boy Printer paper roll, fisheye lens abstraction, stamp mode tiling, 1998 handheld photography miracle, thermal paper fading over time, chiptune photo shoot vibe, 128x112 thermal greyscale, Game Boy Camera CMOS grain, thermal printer dot matrix, fisheye lens distortion, stamp mode tiling, 4 shade greyscale only, thermal paper texture and hardware-constrained game-visual system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Toy pocket-camera photo at 128 by 112 pixels in four greys, edge-enhanced and printed on a narrow strip of thermal paper.',
       subject_treatment:
-        'Transform any prompt subject through 128x112 extreme low resolution, Game Boy Camera CMOS sensor contours, thermal printer dot matrix lines, fisheye lens panorama distortion, stamp mode tile grid; preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel, pre-render, screen-grid, or low-bit display behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, action and camera view; capture it as a tiny four-grey dithered photograph printed on thermal paper.',
       color_and_tone:
-        'Build color with 4 shade Game Boy greyscale, thermal dot white, light grey, dark grey, black, paper white support field, thermal chemical blue when fresh; use color through hardware rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Four grey levels only on warm grey-white thermal paper; blacks print slightly brownish and faded.',
       lighting_and_shadow:
-        'Handle light through CMOS sensor low dynamic range, Game Boy screen display glow, no flash available feel, ambient CRT or outdoor light, terrible low light noise; make light emerge from display technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector beam brightness, so value structure supports the medium and does not overwrite the requested content.',
+        'Harsh contrast from a tiny sensor: bright areas clip to paper white, shadows fill with dense dither.',
       texture_and_material:
-        'Render Thermal printer dot matrix, Game Boy Printer paper roll texture, fading thermal print chemical, CMOS sensor noise grain, Game Boy Camera plastic lens distortion, sticker print peel backing; surface detail should show pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy filler texture.',
+        'Bayer ordered dither, bright edge-enhancement halos, visible printer dot rows and slight thermal fading streaks.',
       camera_and_composition:
-        'Structure the image through Fisheye CMOS lens distortion, 128x112 proportions, stamp mode tile arrangement, Game Boy Printer paper roll curling, mini thermal print scale; compose through tile maps, sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood 1998 tech wonder, handheld photo creativity, playful low fi silliness, thermal print memory fading, Game Boy peripheral magic; derive mood from hardware limitation, arcade spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; close subjects work best, with a slight wide-angle bulge and no printed border frame.',
+      atmosphere_and_mood: 'Fond and scrappy, a snapshot kept in a drawer.',
       rendering_and_quality:
-        'Finish with Game Boy Camera photo aesthetic, thermal printer dot art, 128x112 extreme low resolution, 1998 digital photography beauty; finish with faithful era constraints, crisp readability at small scale, and no modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Chunky square photo pixels with ordered dither; no smooth grayscale and no color.',
       key_features:
-        'Nintendo Game Boy Camera aesthetic, 128x112 CMOS sensor digital photo, 4 shade greyscale thermal printer dot matrix, tiny Game Boy Printer paper roll, fisheye lens abstraction, stamp mode tiling, 1998 handheld photography miracle, thermal paper fading over time, chiptune photo shoot vibe; 128x112 thermal greyscale, Game Boy Camera CMOS grain, thermal printer dot matrix, fisheye lens distortion, stamp mode tiling, 4 shade greyscale only, thermal paper texture; 4 shade Game Boy greyscale, thermal dot white, light grey, dark grey, black, paper white support field, thermal chemical blue when fresh; Thermal printer dot matrix, Game Boy Printer paper roll texture, fading thermal print chemical, CMOS sensor noise grain, Game Boy Camera plastic lens distortion, sticker print peel backing; Fisheye CMOS lens distortion, 128x112 proportions, stamp mode tile arrangement, Game Boy Printer paper roll curling, mini thermal print scale',
+        '128x112 four-grey photo; Bayer dither; edge-enhancement halos; thermal paper dot rows; faded print',
       creative_brief:
-        "Apply Game Boy Camera Thermal Print as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Nintendo Game Boy Camera aesthetic, 128x112 CMOS sensor digital photo, 4 shade greyscale thermal printer dot matrix, tiny Game Boy Printer paper roll, fisheye lens abstraction, stamp mode tiling, 1998 handheld photography miracle, thermal paper fading over time, chiptune photo shoot vibe, 128x112 thermal greyscale, Game Boy Camera CMOS grain, thermal printer dot matrix, fisheye lens distortion, stamp mode tiling, 4 shade greyscale only, thermal paper texture, Thermal printer dot matrix, Game Boy Printer paper roll texture, fading thermal print chemical, CMOS sensor noise grain, Game Boy Camera plastic lens distortion, sticker print peel backing without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pocket Camera Thermal Dot Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP06-098',
-    name: 'TurboGrafx PC Engine',
+    name: 'Candy-Bright Compact Sprite',
+    displayName: 'Candy-Bright Compact Sprite',
+    styleAnchors: ['Candy-Bright Compact Sprite', 'TurboGrafx PC Engine'],
     category: '6. Retro Game Visual Systems',
     negativePrompt:
-      'western, dark, muted, gritty, limited, simple, low color, CGA, slow, weak, Nintendo, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render',
+      'copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, gritty realism, muddy colors, dark, muted, gritty, low color, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'TurboGrafx PC Engine acts as a transferable art-medium router: start from PC Engine TurboGrafx 16 aesthetic, compact Japanese sprite magic, bright vibrant 482 color palette, Bonk, Rondo of Blood and Hudson Soft as platform anchors, HuCard thin cartridge identity, CD ROM2 Red Book audio richness, NEC what could have been glow, Bright 482 color palette, HuCard cartridge identity, CD ROM2 loaded art richness, compact sprite design, 16 bit graphics in 8 bit system, Japanese console charm and hardware-constrained game-visual system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Compact 16-bit pixel art: small round-bodied sprites with thick near-black outlines on large flat pastel backgrounds.',
       subject_treatment:
-        'Transform any prompt subject through Compact but vibrant pixel forms, 16 bit sprite hardware in 8 bit CPU body, 320x256 or 256x240 resolution, CD ROM data loaded richness; preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel, pre-render, screen-grid, or low-bit display behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Keep the prompt subject, action and camera view; redraw it inside this display system's resolution, palette and pixel-cluster limits without adding any game interface.",
       color_and_tone:
-        'Build color with 512 color total, 482 displayable, PC Engine vibrant brightness, orange brown accents, gothic red purple accents, Red Book audio as color richness, Hudson bee yellow; use color through hardware rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Candy-bright saturated 9-bit colors, pink, mint, sky blue and lemon, with two-step shading only.',
       lighting_and_shadow:
-        'Handle light through Sprite pixel art directional lighting, palette gradient for depth, CD ROM loaded support field complex, parallax scrolling lighting, no blast processing but elegant rendering; make light emerge from display technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector beam brightness, so value structure supports the medium and does not overwrite the requested content.',
+        'Minimal shading; one bright highlight pixel cluster and one darker step per shape.',
       texture_and_material:
-        'Render HuCard thin cartridge texture, CD ROM2 loading screen feel, compact pixel texture, 8 bit CPU with 16 bit graphics contradiction, PC Engine LT portable LCD; surface detail should show pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy filler texture.',
+        'Thick outlines, rounded blobby forms, simple repeated background shapes such as clouds, hills and bricks.',
       camera_and_composition:
-        'Structure the image through 320x256 Japanese resolution, CD ROM loaded support field richness, vertical scroll composition when useful, handheld LT LCD screen feel, compact proportions; compose through tile maps, sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Japanese console wonder, NEC technical ingenuity, Hudson Soft creativity, CD ROM golden age glow, what could have been nostalgia; derive mood from hardware limitation, arcade spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; big-headed subjects centered on clean pastel fields with lots of air.',
+      atmosphere_and_mood: 'Cheerful and bouncy, cute even when the subject is spooky.',
       rendering_and_quality:
-        'Finish with PC Engine TurboGrafx pixel aesthetic, Japanese 16 bit compact beauty, HuCard game charm, CD ROM RPG golden era rendering; finish with faithful era constraints, crisp readability at small scale, and no modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Crisp compact sprites with clean outlines; no dither noise and no muddy colors.',
       key_features:
-        'PC Engine TurboGrafx 16 aesthetic, compact Japanese sprite magic, bright vibrant 482 color palette, Bonk, Rondo of Blood and Hudson Soft as platform anchors, HuCard thin cartridge identity, CD ROM2 Red Book audio richness, NEC what could have been glow; Bright 482 color palette, HuCard cartridge identity, CD ROM2 loaded art richness, compact sprite design, 16 bit graphics in 8 bit system, Japanese console charm; 512 color total, 482 displayable, PC Engine vibrant brightness, orange brown accents, gothic red purple accents, Red Book audio as color richness, Hudson bee yellow; HuCard thin cartridge texture, CD ROM2 loading screen feel, compact pixel texture, 8 bit CPU with 16 bit graphics contradiction, PC Engine LT portable LCD; 320x256 Japanese resolution, CD ROM loaded support field richness, vertical scroll composition when useful, handheld LT LCD screen feel, compact proportions',
+        'round compact sprites; thick near-black outlines; candy-bright palette; two-step shading; pastel backgrounds',
       creative_brief:
-        "Apply TurboGrafx PC Engine as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through PC Engine TurboGrafx 16 aesthetic, compact Japanese sprite magic, bright vibrant 482 color palette, Bonk, Rondo of Blood and Hudson Soft as platform anchors, HuCard thin cartridge identity, CD ROM2 Red Book audio richness, NEC what could have been glow, Bright 482 color palette, HuCard cartridge identity, CD ROM2 loaded art richness, compact sprite design, 16 bit graphics in 8 bit system, Japanese console charm, HuCard thin cartridge texture, CD ROM2 loading screen feel, compact pixel texture, 8 bit CPU with 16 bit graphics contradiction, PC Engine LT portable LCD without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Candy-Bright Compact Sprite as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -414,57 +423,57 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Text-Mode Roguelike ANSI',
     category: '6. Retro Game Visual Systems',
     negativePrompt:
-      'graphical, realistic, 3d, smooth, photo, painted, modern, high res, sprites, bitmap, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render',
+      'copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, readable words, pixel sprites, status line, graphical, realistic, 3d, smooth, photo, painted, modern, high res, sprites, bitmap, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Text-Mode Roguelike ANSI acts as a transferable art-medium router: start from Terminal based roguelike art, ASCII/ANSI abstraction, CP437 code page characters, Dwarf Fortress and NetHack as symbolic display anchors, ancient BBS door game art, text mode worldbuilding where glyphs replace literal drawing, ASCII/ANSI character representation, fixed width grid, 16 color terminal palette, glyph symbolic abstraction, code page 437 characters and hardware-constrained game-visual system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Text-mode roguelike map: a world drawn in an 80 by 25 character grid using box-drawing lines, shade blocks, dots and symbols in 16 ANSI colors.',
       subject_treatment:
-        'Transform any prompt subject through Fixed width character grid, monospace font construction, glyph symbol representation, ASCII art contour building, character cell precision; preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel, pre-render, screen-grid, or low-bit display behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject and action recognizable; this preset owns an overhead text-mode map in which every cell is one glyph and creatures are single-character symbols, and adds no score, health bar, logo or readable interface text.',
       color_and_tone:
-        'Build color with 16 color ANSI palette, DOS blue or black terminal support field, bright role coded glyphs, yellow value marks, green hash fields, cyan tilde fields; use color through hardware rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Sixteen ANSI colors on black: grey walls, brown floors, blue water, green foliage, one bright color for the key creature.',
       lighting_and_shadow:
-        'Handle light through No lighting, pure symbolic display, color coding for object type, ANSI color depth cue, terminal support field ambient; make light emerge from display technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector beam brightness, so value structure supports the medium and does not overwrite the requested content.',
+        'Light radius shown by bright cells around the viewer fading to dim, unexplored cells left black.',
       texture_and_material:
-        'Render Monospace pixel glyph grid, terminal phosphor glow, text mode character aliasing, CRT character bleed bloom, scanline text overlay; surface detail should show pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy filler texture.',
+        'Monospaced cells, double-line box walls, light and dark shade blocks for rock and water, dotted floors.',
       camera_and_composition:
-        'Structure the image through Character grid field, ASCII symbol perspective, text cell depth layering, fixed width tile space, terminal window framing; compose through tile maps, sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Arcane, scholarly, pure imagination, text as world, programmer mystic, deep systems reverence; derive mood from hardware limitation, arcade spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Top-down map in a fixed grid; rooms and corridors frame the subject symbol at the center of lit cells.',
+      atmosphere_and_mood: 'Tense and cerebral, imagination doing most of the work.',
       rendering_and_quality:
-        'Finish with Text mode game display, ANSI art subterranean pressure, terminal gaming aesthetic, code page visual language, pure symbolic rendering; finish with faithful era constraints, crisp readability at small scale, and no modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Strict cell grid with crisp glyphs; single isolated symbols only, never words or sentences.',
       key_features:
-        'Terminal based roguelike art, ASCII/ANSI abstraction, CP437 code page characters, Dwarf Fortress and NetHack as symbolic display anchors, ancient BBS door game art, text mode worldbuilding where glyphs replace literal drawing; ASCII/ANSI character representation, fixed width grid, 16 color terminal palette, glyph symbolic abstraction, code page 437 characters; 16 color ANSI palette, DOS blue or black terminal support field, bright role coded glyphs, yellow value marks, green hash fields, cyan tilde fields; Monospace pixel glyph grid, terminal phosphor glow, text mode character aliasing, CRT character bleed bloom, scanline text overlay; Character grid field, ASCII symbol perspective, text cell depth layering, fixed width tile space, terminal window framing',
+        '80x25 character grid; box-drawing walls; shade-block terrain; 16 ANSI colors; lit radius',
       creative_brief:
-        "Apply Text-Mode Roguelike ANSI as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Terminal based roguelike art, ASCII/ANSI abstraction, CP437 code page characters, Dwarf Fortress and NetHack as symbolic display anchors, ancient BBS door game art, text mode worldbuilding where glyphs replace literal drawing, ASCII/ANSI character representation, fixed width grid, 16 color terminal palette, glyph symbolic abstraction, code page 437 characters, Monospace pixel glyph grid, terminal phosphor glow, text mode character aliasing, CRT character bleed bloom, scanline text overlay without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Text-Mode Roguelike ANSI as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP06-099',
-    name: 'DS Flipnote Studio',
+    name: 'Stylus Memo Flipbook Doodle',
+    displayName: 'Stylus Memo Flipbook Doodle',
+    styleAnchors: ['Stylus Memo Flipbook Doodle', 'DS Flipnote Studio'],
     category: '6. Retro Game Visual Systems',
     negativePrompt:
-      'color, 3d, smooth, HD, realistic, complex, gradient, rich, detailed, shading, 60fps, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render',
+      'copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, full color, smooth vector lines, frame counter, 3d, smooth, HD, realistic, complex, gradient, rich, detailed, shading, 60fps, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'DS Flipnote Studio acts as a transferable art-medium router: start from Nintendo DSi Flipnote Studio aesthetic, crude black and white hand drawn animation on tiny stylus screen, memo pad gridding, DS camera crude photo support layers, low res LCD limitation, exported GIF quality charm, Flipnote Hatena community art, 2009 creativity within limitations, Black on white drawing only, DS stylus jittery lines, flipbook animation marks, optional crude camera support layer, memo pad grid texture, low res LCD, exported GIF artifacts and hardware-constrained game-visual system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Handheld stylus memo animation: jaggy black pen lines at 256 by 192 on a white memo page, with a faint onion-skin of the previous frame.',
       subject_treatment:
-        'Transform any prompt subject through Stylus drawn on resistive touchscreen, jittery hand drawn lines, crude simple contours, frame by frame animation marks, tiny screen scale linework; preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel, pre-render, screen-grid, or low-bit display behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Keep the prompt subject, action and camera view; redraw it inside this display system's resolution, palette and pixel-cluster limits without adding any game interface.",
       color_and_tone:
-        'Build color with Black only on white, DS LCD desaturated blacks, grey support field grid, occasionally red blue 3D anaglyph experiments, no other colors; use color through hardware rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Black ink on white with at most one red or blue ink accent; no shading colors.',
       lighting_and_shadow:
-        'Handle light through Flat black line drawing, DS backlit LCD uniform illumination, no shading no lighting; make light emerge from display technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector beam brightness, so value structure supports the medium and does not overwrite the requested content.',
+        'No lighting; shadows drawn as simple stamp-pattern fills or scribbled hatching.',
       texture_and_material:
-        'Render DS resistive touchscreen texture, stylus tip plastic on plastic, low res LCD pixel grid, DSi camera CMOS grain, Flipnote memo pad pattern; surface detail should show pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy filler texture.',
+        'Aliased one to three pixel pen strokes, stamped dot and stripe patterns, faint light-grey onion-skin lines.',
       camera_and_composition:
-        'Structure the image through Tiny DS LCD resolution, stylus screen proportions, flipnote memo pad gridding, crude perspective attempts, exported GIF spatial compression; compose through tile maps, sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Youthful, creative community, bedroom animation studio, DSi sharing nostalgia, 2009 internet early social media, charming simplicity; derive mood from hardware limitation, arcade spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; a loose doodle centered on the page with motion lines and a ghosted previous pose.',
+      atmosphere_and_mood: 'Playful and amateur, a joke animated between classes.',
       rendering_and_quality:
-        'Finish with Flipnote Studio DS aesthetic, crude black and white animation beauty, low res handheld art, internet share community energy; finish with faithful era constraints, crisp readability at small scale, and no modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Low-resolution jaggy lines kept crude and lively; no device, frame counter or interface drawn.',
       key_features:
-        'Nintendo DSi Flipnote Studio aesthetic, crude black and white hand drawn animation on tiny stylus screen, memo pad gridding, DS camera crude photo support layers, low res LCD limitation, exported GIF quality charm, Flipnote Hatena community art, 2009 creativity within limitations; Black on white drawing only, DS stylus jittery lines, flipbook animation marks, optional crude camera support layer, memo pad grid texture, low res LCD, exported GIF artifacts; Black only on white, DS LCD desaturated blacks, grey support field grid, occasionally red blue 3D anaglyph experiments, no other colors; DS resistive touchscreen texture, stylus tip plastic on plastic, low res LCD pixel grid, DSi camera CMOS grain, Flipnote memo pad pattern; Tiny DS LCD resolution, stylus screen proportions, flipnote memo pad gridding, crude perspective attempts, exported GIF spatial compression',
+        'jaggy black stylus lines; one red or blue accent; onion-skin ghost frame; stamp-pattern fills; 256x192 page',
       creative_brief:
-        "Apply DS Flipnote Studio as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Nintendo DSi Flipnote Studio aesthetic, crude black and white hand drawn animation on tiny stylus screen, memo pad gridding, DS camera crude photo support layers, low res LCD limitation, exported GIF quality charm, Flipnote Hatena community art, 2009 creativity within limitations, Black on white drawing only, DS stylus jittery lines, flipbook animation marks, optional crude camera support layer, memo pad grid texture, low res LCD, exported GIF artifacts, DS resistive touchscreen texture, stylus tip plastic on plastic, low res LCD pixel grid, DSi camera CMOS grain, Flipnote memo pad pattern without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stylus Memo Flipbook Doodle as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -472,28 +481,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'FMV Pre-Rendered Sprites',
     category: '6. Retro Game Visual Systems',
     negativePrompt:
-      'real-time, hand-drawn, pixel art, vector, clean, sharp, native resolution, modern, smooth, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render',
+      'copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, modern physically based rendering, hand-drawn pixel clusters, real-time, hand-drawn, pixel art, vector, clean, sharp, native resolution, modern, smooth, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'FMV Pre-Rendered Sprites acts as a transferable art-medium router: start from CG rendered to sprite look, Donkey Kong Country and Killer Instinct as pre render anchors, 1994 Silicon Graphics magic, 3D forms baked into 2D sprite logic, dithering to fit palette artifacts, 256 color quantization charm, CGI dithering artifacts, 256 color banding, baked 3D to 2D sprites, pre rendered animation loops, palette quantization and hardware-constrained game-visual system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Pre-rendered sprite: the subject modeled and ray-traced on a 90s workstation, then shrunk and color-reduced into a low-resolution game sprite.',
       subject_treatment:
-        'Transform any prompt subject through CGI contours baked to pixels, aliased pre render edges, dithering approximated soft shading, frame by frame rendered silhouette logic; preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel, pre-render, screen-grid, or low-bit display behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Keep the prompt subject, action and camera view; redraw it inside this display system's resolution, palette and pixel-cluster limits without adding any game interface.",
       color_and_tone:
-        'Build color with 256 color quantized palette, dither pattern transitions, banded gradient approximation, CGI to cartridge color space compression; use color through hardware rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Glossy CG color crunched into a small shared palette; smooth gradients break into ordered dither and banding.',
       lighting_and_shadow:
-        'Handle light through Raytraced studio lighting baked into sprites, pre computed shadows, specular highlight dithering, no realtime lighting; make light emerge from display technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector beam brightness, so value structure supports the medium and does not overwrite the requested content.',
+        'Baked studio lighting with bright Phong specular hot spots and soft ray-traced shadows frozen into the sprite.',
       texture_and_material:
-        'Render Dithered gradient banding, CGI to pixel quantization noise, pre rendered texture compression artifacts, frame buffer dither patterns; surface detail should show pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy filler texture.',
+        'Plastic-smooth CG surfaces, chrome reflections, a jagged one-pixel dark matte halo where the sprite was cut from its render background.',
       camera_and_composition:
-        'Structure the image through 3D volume baked to flat sprite plane, isometric or orthographic pre rendered perspective, frame interpolation ghost traces; compose through tile maps, sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood 90s CGI wonder, technological marvel of its time, pre rendered beauty, cartridge compressed ambition; derive mood from hardware limitation, arcade spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; the subject reads as a finished 3D model locked into a small sprite frame.',
+      atmosphere_and_mood: 'Shiny and futuristic in a 90s way, technology showing off.',
       rendering_and_quality:
-        'Finish with Pre rendered sprite magic, FMV to game compression aesthetic, 90s CGI nostalgia, Silicon Graphics beauty; finish with faithful era constraints, crisp readability at small scale, and no modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Sharp downsampled pixels over rendered shading; no hand-placed pixel clusters.',
       key_features:
-        'CG rendered to sprite look, Donkey Kong Country and Killer Instinct as pre render anchors, 1994 Silicon Graphics magic, 3D forms baked into 2D sprite logic, dithering to fit palette artifacts, 256 color quantization charm; CGI dithering artifacts, 256 color banding, baked 3D to 2D sprites, pre rendered animation loops, palette quantization; 256 color quantized palette, dither pattern transitions, banded gradient approximation, CGI to cartridge color space compression; Dithered gradient banding, CGI to pixel quantization noise, pre rendered texture compression artifacts, frame buffer dither patterns; 3D volume baked to flat sprite plane, isometric or orthographic pre rendered perspective, frame interpolation ghost traces',
+        'ray-traced model shrunk to sprite; Phong highlights; ordered dither; jagged matte halo; small palette',
       creative_brief:
-        "Apply FMV Pre-Rendered Sprites as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through CG rendered to sprite look, Donkey Kong Country and Killer Instinct as pre render anchors, 1994 Silicon Graphics magic, 3D forms baked into 2D sprite logic, dithering to fit palette artifacts, 256 color quantization charm, CGI dithering artifacts, 256 color banding, baked 3D to 2D sprites, pre rendered animation loops, palette quantization, Dithered gradient banding, CGI to pixel quantization noise, pre rendered texture compression artifacts, frame buffer dither patterns without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies FMV Pre-Rendered Sprites as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -501,57 +509,57 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Voxel Block Sprites',
     category: '6. Retro Game Visual Systems',
     negativePrompt:
-      'smooth, organic, curved, realistic, high poly, anti-aliased, fluid, soft, photorealistic, painted, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render',
+      'copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, block mining game likeness, smooth surfaces, huge voxel landscape, smooth, organic, curved, realistic, high poly, anti-aliased, fluid, soft, photorealistic, painted, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Voxel Block Sprites acts as a transferable art-medium router: start from Three dimensional pixel blocks, MagicaVoxel aesthetic, 3D Dot Game Heroes style, cubic pixel construction, Minecraft and sprite sheet logic as block anchors, isometric cube grid composition, toy block 3D pixel art, Cubic voxel construction, block stepped contours, isometric grid alignment, ambient occlusion block edges, per cube flat coloring and hardware-constrained game-visual system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Voxel sprite model: the subject built as a small toy-like model of flat-colored cubes, like a pixel sprite pushed into three dimensions.',
       subject_treatment:
-        'Transform any prompt subject through Cubic voxel contour, block stepped edges, orthogonal grid construction, visible cube boundaries, straight angle everything; preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel, pre-render, screen-grid, or low-bit display behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject and pose; rebuild it as a standalone low-resolution voxel model on a plain ground plane unless a scene is requested.',
       color_and_tone:
-        'Build color with Bright plastic cube colors, toy block primaries, voxel material palette, per cube flat coloring, modular color scheme; use color through hardware rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Limited sprite palette, one flat color per cube, two or three steps per material ramp.',
       lighting_and_shadow:
-        'Handle light through Global illumination cube lighting, ambient occlusion block corners, soft shadow under voxel overhangs, directional sun on block grid; make light emerge from display technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector beam brightness, so value structure supports the medium and does not overwrite the requested content.',
+        'Soft sky light with ambient occlusion in cube corners and one crisp stepped shadow on the ground.',
       texture_and_material:
-        'Render Cube face flat shading, block edge ambient occlusion, plastic cube surface, matte voxel material, grid seam texture; surface detail should show pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy filler texture.',
+        'Clearly visible cube edges at a coarse scale of roughly 30 to 60 cubes tall; no smoothing and no textures.',
       camera_and_composition:
-        'Structure the image through Voxel grid blocky proportions, isometric cube arrangement, cube stepped curves, block resolution shape limitation; compose through tile maps, sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Playful, constructive, modular, toy block creative, colorful three dimensional pixel joy; derive mood from hardware limitation, arcade spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Three-quarter orthographic view of the model centered on a plain ground tile with generous padding.',
+      atmosphere_and_mood: 'Toy-like and charming, a collectible figure made of blocks.',
       rendering_and_quality:
-        'Finish with Voxel art render, MagicaVoxel style beauty, 3D pixel aesthetic, block world charm, toy cube rendering; finish with faithful era constraints, crisp readability at small scale, and no modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Crisp cube faces, clean occlusion and readable silhouette at thumbnail size.',
       key_features:
-        'Three dimensional pixel blocks, MagicaVoxel aesthetic, 3D Dot Game Heroes style, cubic pixel construction, Minecraft and sprite sheet logic as block anchors, isometric cube grid composition, toy block 3D pixel art; Cubic voxel construction, block stepped contours, isometric grid alignment, ambient occlusion block edges, per cube flat coloring; Bright plastic cube colors, toy block primaries, voxel material palette, per cube flat coloring, modular color scheme; Cube face flat shading, block edge ambient occlusion, plastic cube surface, matte voxel material, grid seam texture; Voxel grid blocky proportions, isometric cube arrangement, cube stepped curves, block resolution shape limitation',
+        'coarse voxel model; flat color per cube; corner occlusion; orthographic three-quarter view; plain ground tile',
       creative_brief:
-        "Apply Voxel Block Sprites as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Three dimensional pixel blocks, MagicaVoxel aesthetic, 3D Dot Game Heroes style, cubic pixel construction, Minecraft and sprite sheet logic as block anchors, isometric cube grid composition, toy block 3D pixel art, Cubic voxel construction, block stepped contours, isometric grid alignment, ambient occlusion block edges, per cube flat coloring, Cube face flat shading, block edge ambient occlusion, plastic cube surface, matte voxel material, grid seam texture without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Voxel Block Sprites as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP06-091',
-    name: 'Vectrex Vector Display',
+    name: 'White Beam Vector with Color Overlay',
+    displayName: 'White Beam Vector with Color Overlay',
+    styleAnchors: ['White Beam Vector with Color Overlay', 'Vectrex Vector Display'],
     category: '6. Retro Game Visual Systems',
     negativePrompt:
-      'raster, pixel, filled, color, modern, 3d, photo, smooth, realistic, solid, bitmap, shaded, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render',
+      'copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, multicolor vector lines, filled shapes, raster pixels, raster, pixel, filled, color, modern, 3d, photo, smooth, realistic, solid, bitmap, shaded, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Vectrex Vector Display acts as a transferable art-medium router: start from Vectrex console vector CRT display, pure white glowing lines on pitch black screen, single color vector drawing, Asteroids and Tempest as wireframe anchors, analog electron beam drawing in real time, plastic screen overlay color gels for faux color, no pixels no bitmap just lines, 1982 console limitation beauty, cathode ray tube vector magic, Pure white vector lines on black, wireframe only geometry, CRT phosphor glow bloom, plastic screen overlay framing, single color display, line intersection brightening, electron beam persistence and hardware-constrained game-visual system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Monochrome vector display: bright white beam lines on black, tinted in zones by a translucent printed color overlay sheet laid over the screen.',
       subject_treatment:
-        'Transform any prompt subject through Pure glowing vector lines only, wireframe geometry, electron beam drawn contours, no filled surfaces, transparency through wireframe, line brightness peaking at stroke centers; preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel, pre-render, screen-grid, or low-bit display behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, action and camera view; draw it as white vector outlines and let the overlay tint horizontal zones of the screen.',
       color_and_tone:
-        'Build color with Phosphor white on void black, Vectrex screen overlay blue or green or red transparent plastic gel, single color per display, no gradients pure beam; use color through hardware rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'White lines only, colored by overlay bands such as red at top, green in the middle and blue below; black stays black.',
       lighting_and_shadow:
-        'Handle light through Self illuminated phosphor glow, brighter at line intersections, beam persistence afterglow, CRT screen curvature reflective light; make light emerge from display technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector beam brightness, so value structure supports the medium and does not overwrite the requested content.',
+        'No shading; line brightness varies with beam speed, with hot dots at line ends.',
       texture_and_material:
-        'Render CRT phosphor glow bloom, vector display line artifact, transparent plastic screen overlay scratches, electron beam persistence trail, analog vector drift wobble; surface detail should show pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy filler texture.',
+        'Sharp beam lines, faint curved-glass reflection, subtle overlay print texture and soft phosphor afterglow.',
       camera_and_composition:
-        'Structure the image through Vector wireframe perspective, infinite black void space, rotating coordinate structures, CRT screen curvature, plastic overlay frame; compose through tile maps, sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Retro futuristic, analog electronic, arcade darkness, vector glow hypnosis, pre pixel computing soul, abstract screen ritual; derive mood from hardware limitation, arcade spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; the overlay bands are aligned to the subject so each zone colors a part of it.',
+      atmosphere_and_mood: 'Lonely and luminous, cold space with a hand-painted tint.',
       rendering_and_quality:
-        'Finish with Vectrex vector display aesthetic, analog CRT beam beauty, wireframe only rendering, 1982 vector console nostalgia; finish with faithful era constraints, crisp readability at small scale, and no modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Clean continuous white lines, flat overlay tint; no raster pixels and no multicolor lines.',
       key_features:
-        'Vectrex console vector CRT display, pure white glowing lines on pitch black screen, single color vector drawing, Asteroids and Tempest as wireframe anchors, analog electron beam drawing in real time, plastic screen overlay color gels for faux color, no pixels no bitmap just lines, 1982 console limitation beauty, cathode ray tube vector magic; Pure white vector lines on black, wireframe only geometry, CRT phosphor glow bloom, plastic screen overlay framing, single color display, line intersection brightening, electron beam persistence; Phosphor white on void black, Vectrex screen overlay blue or green or red transparent plastic gel, single color per display, no gradients pure beam; CRT phosphor glow bloom, vector display line artifact, transparent plastic screen overlay scratches, electron beam persistence trail, analog vector drift wobble; Vector wireframe perspective, infinite black void space, rotating coordinate structures, CRT screen curvature, plastic overlay frame',
+        'white beam lines; translucent color overlay bands; hot line ends; curved-glass reflection; black screen',
       creative_brief:
-        "Apply Vectrex Vector Display as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Vectrex console vector CRT display, pure white glowing lines on pitch black screen, single color vector drawing, Asteroids and Tempest as wireframe anchors, analog electron beam drawing in real time, plastic screen overlay color gels for faux color, no pixels no bitmap just lines, 1982 console limitation beauty, cathode ray tube vector magic, Pure white vector lines on black, wireframe only geometry, CRT phosphor glow bloom, plastic screen overlay framing, single color display, line intersection brightening, electron beam persistence, CRT phosphor glow bloom, vector display line artifact, transparent plastic screen overlay scratches, electron beam persistence trail, analog vector drift wobble without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies White Beam Vector with Color Overlay as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -559,28 +567,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Vector Arcade Wireframe',
     category: '6. Retro Game Visual Systems',
     negativePrompt:
-      'filled, solid, textured, colorful, raster, bitmap, shading, filled polygons, complex, photo, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render',
+      'copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, filled polygons, raster pixels, textures, filled, solid, textured, colorful, raster, bitmap, shading, complex, photo, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Vector Arcade Wireframe acts as a transferable art-medium router: start from Glowing vector cathode ray lines, Asteroids, Tempest and Battlezone as vector display anchors, pure glowing line art on infinite black void, 1979 arcade cabinet vector display, electron beam drawing in real time, Glowing vector lines on black, wireframe only geometry, phosphor bloom at line intersections, no filled surfaces, raster scan absent and hardware-constrained game-visual system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Color vector CRT: the subject drawn only as glowing beam lines on pure black, with no pixels and no filled surfaces.',
       subject_treatment:
-        'Transform any prompt subject through Pure glowing geometric strokes, wireframe polygon meshes, no filled surfaces, beam drawn contour lines only, vector coordinate precision; preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel, pre-render, screen-grid, or low-bit display behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, action and camera view; convert every form into its edges, including hidden edges seen through the transparent wireframe.',
       color_and_tone:
-        'Build color with Phosphor green on void black, occasional amber orange screens, blue white vector glow, single color per display, no RGB mixing; use color through hardware rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Three or four saturated line colors such as cyan, magenta, yellow and green on absolute black.',
       lighting_and_shadow:
-        'Handle light through Self illuminated phosphor lines, electron beam persistence glow, brighter at stroke starts, dimming at stroke ends; make light emerge from display technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector beam brightness, so value structure supports the medium and does not overwrite the requested content.',
+        'No shading; brighter dots where the beam lingers at vertices and a soft phosphor bloom around every line.',
       texture_and_material:
-        'Render CRT phosphor glow, analog vector display bloom, line intersection brightening, phosphor persistence afterglow, no pixels just beams; surface detail should show pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy filler texture.',
+        'Perfectly sharp vector lines with slight glow, short phosphor persistence trails and faint beam flicker.',
       camera_and_composition:
-        'Structure the image through Vector perspective wireframe grids, rotating coordinate structures, infinite blank black space, no occlusion just transparency; compose through tile maps, sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Retro futuristic, electronic, arcade darkness, analog computing soul, early CGI wonder, abstract voltage theater; derive mood from hardware limitation, arcade spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; geometry simplified to a few dozen strong edges that read instantly.',
+      atmosphere_and_mood: 'Electric and austere, a whole world drawn in light.',
       rendering_and_quality:
-        'Finish with Vector arcade display, analog CRT beauty, electron beam line art, retro electronic aesthetic; finish with faithful era constraints, crisp readability at small scale, and no modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Clean continuous lines with vertex hot spots; no raster jaggies and no fills.',
       key_features:
-        'Glowing vector cathode ray lines, Asteroids, Tempest and Battlezone as vector display anchors, pure glowing line art on infinite black void, 1979 arcade cabinet vector display, electron beam drawing in real time; Glowing vector lines on black, wireframe only geometry, phosphor bloom at line intersections, no filled surfaces, raster scan absent; Phosphor green on void black, occasional amber orange screens, blue white vector glow, single color per display, no RGB mixing; CRT phosphor glow, analog vector display bloom, line intersection brightening, phosphor persistence afterglow, no pixels just beams; Vector perspective wireframe grids, rotating coordinate structures, infinite blank black space, no occlusion just transparency',
+        'glowing beam lines; transparent wireframe; vertex hot spots; phosphor bloom; black void',
       creative_brief:
-        "Apply Vector Arcade Wireframe as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Glowing vector cathode ray lines, Asteroids, Tempest and Battlezone as vector display anchors, pure glowing line art on infinite black void, 1979 arcade cabinet vector display, electron beam drawing in real time, Glowing vector lines on black, wireframe only geometry, phosphor bloom at line intersections, no filled surfaces, raster scan absent, CRT phosphor glow, analog vector display bloom, line intersection brightening, phosphor persistence afterglow, no pixels just beams without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vector Arcade Wireframe as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -3,7 +3,7 @@ id: SP07-054
 packId: pack_07
 name: Techno-Brutalist Compression
 category: 5. Fantasy And Mythic Architecture
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,69 +12,26 @@ tags:
   - architecture-and-interior
   - fantasy-and-mythic-architecture
 visualDna:
-  aesthetic: >-
-    Techno-Brutalist Compression acts as a transferable architecture/interior router: stacked
-    concrete modules, exposed service conduits, cable diagonals, rust-black panels, low neon utility
-    glow; fuse it with mythic architecture grammar with impossible structure, ritual scale, fantasy
-    material logic, and believable load-bearing ornament; route spatial grammar, material behavior,
-    scale, ornament, and light over prompt X without requiring the default sample anchor, fixed
-    spatial set, landscape setup, or object sample.
-  subject_treatment: >-
-    Preserve prompt subject, action, and context while translating any requested subject through
-    monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or
-    organic envelope logic, and sacred scale; treat stacked concrete modules, exposed service
-    conduits, cable diagonals, rust-black panels, low neon utility glow as massing, edge, surface,
-    joinery, threshold, or ornament behavior rather than a mandatory building scene.
-  color_and_tone: >-
-    Map color through mineral neutrals, moss and water glow, brass or gold heat, abyssal blues,
-    spectral edge color, and restrained fantasy accents; let source cues such as stacked concrete
-    modules, exposed service conduits, cable diagonals, rust-black panels, low neon utility glow
-    decide accent hierarchy, material temperature, and value separation while staying attached to
-    the requested content.
-  lighting_and_shadow: >-
-    Use sacred glow, forge heat, underwater diffusion, cloud rim, mineral refraction, spectral low
-    light, and monumental shadow hierarchy; make light reveal joints, relief, material depth, scale,
-    and atmosphere from stacked concrete modules, exposed service conduits, cable diagonals,
-    rust-black panels, low neon utility glow without replacing prompt X with a stock architectural
-    render.
-  texture_and_material: >-
-    Render living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass
-    surrealism, bone marble, and rune-like non-text marks; prioritize the tactile signals in stacked
-    concrete modules, exposed service conduits, cable diagonals, rust-black panels, low neon utility
-    glow, with believable surface response, denoised grain, coherent wear, and no generic wallpaper
-    texture.
-  camera_and_composition: >-
-    Frame through detail-first mythic anchors, section cuts, undercut gravity, vertical compression,
-    ritual thresholds, and scale without literal throne-room lock; convert stacked concrete modules,
-    exposed service conduits, cable diagonals, rust-black panels, low neon utility glow into
-    reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of
-    one fixed style sample layout.
-  atmosphere_and_mood: >-
-    Carry mood through sublime, sacred, engineered, haunted, playful, abyssal, pastoral, or
-    monumental pressure carried through structure and material; the preset can support adult,
-    strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for
-    them while keeping the architectural identity readable.
-  rendering_and_quality: >-
-    Finish with high-control fantasy-architecture finish with coherent material logic, no licensed
-    location read, no weapon or character dependency; keep clean denoise, legible construction,
-    stable object or anatomy structure when applicable, no watermark, no fake readable text, no
-    logo, no camera prop, and no prompt-literal card copy.
-  key_features: >-
-    stacked concrete modules, exposed service conduits, cable diagonals, rust-black panels, low neon
-    utility glow; monumental mass, symbolic thresholds, carved or grown structure, impossible
-    support, mineral or organic envelope logic, and sacred scale; living wood, chiseled stone,
-    hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like
-    non-text marks; detail-first mythic anchors, section cuts, undercut gravity, vertical
-    compression, ritual thresholds, and scale without literal throne-interior zones lock
-  creative_brief: >-
-    Apply Techno-Brutalist Compression after prompt X as a transferable architecture/interior style
-    layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset
-    supplies stacked concrete modules, exposed service conduits, cable diagonals, rust-black panels,
-    low neon utility glow, mythic architecture grammar with impossible structure, ritual scale,
-    fantasy material logic, and believable load-bearing ornament, material discipline, spatial
-    grammar, and negative controls without requiring a single spatial sample, product-photo setup,
-    aisle-like default, or empty abstraction.
+  aesthetic: 'Techno-brutalist megablock: board-marked concrete modules stacked and cantilevered into a mountain-like mass, service conduits and cable stays strung across the facades, rust-black steel panels.'
+  subject_treatment: Keep the requested structure or object, its function, footprint and camera; rebuild its walls, roof, openings and ornament in this construction logic, and never swap it for a castle, temple or fixed fantasy landmark.
+  color_and_tone: Warm grey concrete, rust black, oxide-orange rain streaks, pinpoints of sodium amber and utility green; muted overall.
+  lighting_and_shadow: Flat overcast dusk sky, deep black recesses between modules, hundreds of tiny utility lights; no dramatic sun.
+  texture_and_material: Board-formed concrete with tie holes and rain staining, rusted cladding, sagging cable bundles and patched conduit runs.
+  camera_and_composition: Keep the requested view; telephoto compression stacks the modules into a wall, looking up at the overhangs.
+  atmosphere_and_mood: Oppressive, dense and labyrinthine, a structure that keeps growing by accretion.
+  rendering_and_quality: Matte photographic grit, detailed module repetition, restrained glow; not the sober single-slab look of classic brutalism.
+  key_features: stacked cantilevered concrete modules; conduits and cable stays across facades; rust-black panels; telephoto compression; tiny utility lights at dusk
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Techno-Brutalist Compression as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - licensed fantasy location
+  - copy of a known film or game building
+  - readable runes or inscriptions
+  - glossy mirror floor by default
+  - decorative waterfall by default
+  - swapping the requested structure for a castle or temple
+  - fantasy castle silhouette
+  - neon cyberpunk alley
+  - clean glass curtain wall
   - clean
   - wide empty space
   - hallway/corridor
@@ -86,7 +43,6 @@ avoidRules:
   - interior zones-with-chair setup
   - readable signage
   - empty abstraction
-  - licensed fantasy location
   - throne interior zones default
   - weapon prop
   - character hero
@@ -101,16 +57,16 @@ avoidRules:
   - camera prop
   - mandatory interior set
   - prompt-literal card
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-054.webp
 attributes:
-  negativePrompt: >-
-    clean, wide empty space, hallway/corridor, surveillance camera, fantasy hall, cyberpunk alley,
-    market aisle, library aisle, interior zones-with-chair setup, readable signage, empty
-    abstraction, licensed fantasy location, throne interior zones default, weapon prop, character
-    hero, fixed building-only scene, mandatory interior interior zones, corridor perspective,
-    furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory
-    interior set, prompt-literal card
+  negativePrompt: licensed fantasy location, copy of a known film or game building, readable runes or inscriptions, glossy mirror floor by default, decorative waterfall by default, swapping the requested structure for a castle or temple, fantasy castle silhouette, neon cyberpunk alley, clean glass curtain wall, clean, wide empty space, hallway/corridor, surveillance camera, fantasy hall, cyberpunk alley, market aisle, library aisle, interior zones-with-chair setup, readable signage, empty abstraction, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

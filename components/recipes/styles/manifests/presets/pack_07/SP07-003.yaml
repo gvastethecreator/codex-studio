@@ -3,7 +3,7 @@ id: SP07-003
 packId: pack_07
 name: Mid-Century Modern
 category: 1. Interior Design Systems
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,71 +12,28 @@ tags:
   - architecture-and-interior
   - interior-design-systems
 visualDna:
-  aesthetic: >-
-    Mid-Century Modern acts as a transferable architecture/interior router: low horizontal
-    proportion, walnut/teak warmth, tapered-leg geometry, molded plywood curves, tweed texture; fuse
-    it with interior-system design grammar with furniture-independent proportion, material
-    hierarchy, junction detail, tactile finish, and lived spatial rhythm; route spatial grammar,
-    material behavior, scale, ornament, and light over prompt X without requiring the default sample
-    anchor, fixed spatial set, landscape setup, or object sample.
-  subject_treatment: >-
-    Preserve prompt subject, action, and context while translating any requested subject through
-    clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy,
-    and object-ready interior detailing; treat low horizontal proportion, walnut/teak warmth,
-    tapered-leg geometry, molded plywood curves, tweed texture as massing, edge, surface, joinery,
-    threshold, or ornament behavior rather than a mandatory building scene.
-  color_and_tone: >-
-    Map color through controlled interior color hierarchy, wall or shell base tones, tactile
-    secondary materials, small accent signals, and readable value spacing; let source cues such as
-    low horizontal proportion, walnut/teak warmth, tapered-leg geometry, molded plywood curves,
-    tweed texture decide accent hierarchy, material temperature, and value separation while staying
-    attached to the requested content.
-  lighting_and_shadow: >-
-    Use soft daylight, practical bounce, concealed glow, edge-defining shadow, and material-aware
-    reflection control; make light reveal joints, relief, material depth, scale, and atmosphere from
-    low horizontal proportion, walnut/teak warmth, tapered-leg geometry, molded plywood curves,
-    tweed texture without replacing prompt X with a stock architectural render.
-  texture_and_material: >-
-    Render wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and
-    tactile construction details; prioritize the tactile signals in low horizontal proportion,
-    walnut/teak warmth, tapered-leg geometry, molded plywood curves, tweed texture, with believable
-    surface response, denoised grain, coherent wear, and no generic wallpaper texture.
-  camera_and_composition: >-
-    Frame through cropped architectural-detail framing, modular spacing, planar overlap, threshold
-    cuts, section-like reads, and deliberate negative space; convert low horizontal proportion,
-    walnut/teak warmth, tapered-leg geometry, molded plywood curves, tweed texture into reusable
-    perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed
-    style sample layout.
-  atmosphere_and_mood: >-
-    Carry mood through inhabitable atmosphere, design intent, tactile comfort or tension, and
-    spatial personality without staged showroom dependency; the preset can support adult, strange,
-    sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them
-    while keeping the architectural identity readable.
-  rendering_and_quality: >-
-    Finish with polished architectural visualization clarity with denoised surfaces, believable
-    material response, no fake text, and no decor-catalog drift; keep clean denoise, legible
-    construction, stable object or anatomy structure when applicable, no watermark, no fake readable
-    text, no logo, no camera prop, and no prompt-literal card copy.
-  key_features: >-
-    low horizontal proportion, walnut/teak warmth, tapered-leg geometry, molded plywood curves,
-    tweed texture; clean massing, threshold logic, joinery rhythm, furniture-scale proportion,
-    surface hierarchy, and object-ready interior detailing; wood, plaster, metal, textile, glass,
-    tile, concrete, patina, polish, grain, seams, and tactile construction details; cropped
-    architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like
-    reads, and deliberate negative space
-  creative_brief: >-
-    Apply Mid-Century Modern after prompt X as a transferable architecture/interior style layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies low
-    horizontal proportion, walnut/teak warmth, tapered-leg geometry, molded plywood curves, tweed
-    texture, interior-system design grammar with furniture-independent proportion, material
-    hierarchy, junction detail, tactile finish, and lived spatial rhythm, material discipline,
-    spatial grammar, and negative controls without requiring a single spatial sample, product-photo
-    setup, aisle-like default, or empty abstraction.
+  aesthetic: 'Mid-century modern interior: low horizontal lines, walnut and teak casework on tapered splayed legs, molded plywood curves, open plan with a floating room divider.'
+  subject_treatment: Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.
+  color_and_tone: Walnut brown, teak amber, warm off-white, with mustard, olive, burnt orange or teal accents in tweed and enamel; medium contrast, warm overall.
+  lighting_and_shadow: Low-sun daylight through clerestory or floor-to-ceiling glazing, cone and globe pendants, warm pools of light across low furniture.
+  texture_and_material: Book-matched walnut veneer, oiled teak, nubby wool tweed, terrazzo or cork floors, slatted wood screens and ribbed glass.
+  camera_and_composition: Keep the requested view; eye level held low to stress horizontals, long credenzas and rooflines running parallel to the frame edge.
+  atmosphere_and_mood: Optimistic, warm and relaxed, a confident post-war modernity.
+  rendering_and_quality: 'Period magazine interior clarity: clean grain, soft warm contrast, restrained staging, no replica of a named designer chair.'
+  key_features: tapered splayed legs; book-matched walnut veneer; low horizontal proportion; mustard and teal tweed accents; slatted wood divider
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mid-Century Modern as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - furniture catalog staging
+  - olive branch in a vase as default decor
+  - panoramic window view as default backdrop
+  - real designer furniture replicas
+  - replacing the requested room with a living room
+  - victorian ornament
+  - industrial rust
+  - glossy contemporary lacquer
   - antique
   - victorian
   - industrial
-  - staged living interior zones formula
   - sofa-and-lamp scene
   - dominant chair
   - curtain wall
@@ -91,7 +48,6 @@ avoidRules:
   - lamp hero
   - curtain wall default
   - fixed building-only scene
-  - mandatory interior interior zones
   - corridor perspective
   - furniture showroom
   - prompt-required card
@@ -100,16 +56,16 @@ avoidRules:
   - watermark
   - mandatory interior set
   - prompt-literal card
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-003.webp
 attributes:
-  negativePrompt: >-
-    antique, victorian, industrial, staged living interior zones formula, sofa-and-lamp scene,
-    dominant chair, curtain wall, showroom corner, readable poster, market aisle, library aisle,
-    camera prop, empty abstraction, showroom formula, chair or sofa focus, lamp hero, curtain wall
-    default, fixed building-only scene, mandatory interior interior zones, corridor perspective,
-    furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior
-    set, prompt-literal card
+  negativePrompt: furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, victorian ornament, industrial rust, glossy contemporary lacquer, antique, victorian, industrial, sofa-and-lamp scene, dominant chair, curtain wall, showroom corner, readable poster, market aisle, library aisle, camera prop, empty abstraction, showroom formula, chair or sofa focus, lamp hero, curtain wall default, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

@@ -3,7 +3,7 @@ id: SP07-018
 packId: pack_07
 name: Farmhouse Chic
 category: 1. Interior Design Systems
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,89 +12,38 @@ tags:
   - architecture-and-interior
   - interior-design-systems
 visualDna:
-  aesthetic: >-
-    Farmhouse Chic acts as a transferable architecture/interior router: warm white shiplap junction,
-    reclaimed barn-wood brace, galvanized metal panel, black iron strap hinge, washed linen edge,
-    beadboard rhythm; fuse it with interior-system design grammar with furniture-independent
-    proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm; route
-    spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring
-    the default sample anchor, fixed spatial set, landscape setup, or object sample.
-  subject_treatment: >-
-    Preserve prompt subject, action, and context while translating any requested subject through
-    clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy,
-    and object-ready interior detailing; treat warm white shiplap junction, reclaimed barn-wood
-    brace, galvanized metal panel, black iron strap hinge, washed linen edge as massing, edge,
-    surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.
-  color_and_tone: >-
-    Map color through controlled interior color hierarchy, wall or shell base tones, tactile
-    secondary materials, small accent signals, and readable value spacing; let source cues such as
-    warm white shiplap junction, reclaimed barn-wood brace, galvanized metal panel, black iron strap
-    hinge, washed linen edge decide accent hierarchy, material temperature, and value separation
-    while staying attached to the requested content.
-  lighting_and_shadow: >-
-    Use soft daylight, practical bounce, concealed glow, edge-defining shadow, and material-aware
-    reflection control; make light reveal joints, relief, material depth, scale, and atmosphere from
-    warm white shiplap junction, reclaimed barn-wood brace, galvanized metal panel, black iron strap
-    hinge, washed linen edge without replacing prompt X with a stock architectural render.
-  texture_and_material: >-
-    Render wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and
-    tactile construction details; prioritize the tactile signals in warm white shiplap junction,
-    reclaimed barn-wood brace, galvanized metal panel, black iron strap hinge, washed linen edge,
-    with believable surface response, denoised grain, coherent wear, and no generic wallpaper
-    texture.
-  camera_and_composition: >-
-    Frame through cropped architectural-detail framing, modular spacing, planar overlap, threshold
-    cuts, section-like reads, and deliberate negative space; convert warm white shiplap junction,
-    reclaimed barn-wood brace, galvanized metal panel, black iron strap hinge, washed linen edge
-    into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules
-    instead of one fixed style sample layout.
-  atmosphere_and_mood: >-
-    Carry mood through inhabitable atmosphere, design intent, tactile comfort or tension, and
-    spatial personality without staged showroom dependency; the preset can support adult, strange,
-    sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them
-    while keeping the architectural identity readable.
-  rendering_and_quality: >-
-    Finish with polished architectural visualization clarity with denoised surfaces, believable
-    material response, no fake text, and no decor-catalog drift; keep clean denoise, legible
-    construction, stable object or anatomy structure when applicable, no watermark, no fake readable
-    text, no logo, no camera prop, and no prompt-literal card copy.
-  key_features: >-
-    warm white shiplap junction, reclaimed barn-wood brace, galvanized metal panel, black iron strap
-    hinge, washed linen edge; clean massing, threshold logic, joinery rhythm, furniture-scale
-    proportion, surface hierarchy, and object-ready interior detailing; wood, plaster, metal,
-    textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details;
-    cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts,
-    section-like reads, and deliberate negative space
-  creative_brief: >-
-    Apply Farmhouse Chic after prompt X as a transferable architecture/interior style layer: prompt
-    X supplies subject, action, setting, tone, and intensity, while this preset supplies warm white
-    shiplap junction, reclaimed barn-wood brace, galvanized metal panel, black iron strap hinge,
-    washed linen edge, beadboard rhythm, interior-system design grammar with furniture-independent
-    proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm,
-    material discipline, spatial grammar, and negative controls without requiring a single spatial
-    sample, product-photo setup, aisle-like default, or empty abstraction.
+  aesthetic: 'Farmhouse chic interior: painted shiplap and board-and-batten walls, reclaimed barn beams, sliding barn doors on black strap rails, and practical country furniture freshened with white.'
+  subject_treatment: Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.
+  color_and_tone: Warm white and cream walls, weathered grey-brown barn wood, black iron, galvanized steel, sage and soft blue accents; bright and airy.
+  lighting_and_shadow: Bright soft daylight from multi-pane windows, black iron pendants, clean shadows along horizontal shiplap lines.
+  texture_and_material: Tongue-and-groove shiplap, reclaimed beams with nail holes, galvanized buckets and tubs, black strap hinges, washed linen, butcher-block tops.
+  camera_and_composition: Keep the requested view; horizontal shiplap lines leading the eye, one exposed beam across the top of the frame.
+  atmosphere_and_mood: Fresh, practical and welcoming, country work made pretty.
+  rendering_and_quality: Bright lifestyle photograph with honest wood grain and iron texture, no TV-show farmhouse sign clichés.
+  key_features: painted shiplap walls; reclaimed barn beams; sliding barn door on black rail; galvanized steel; washed linen
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Farmhouse Chic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
-  - modern
-  - sleek
+  - furniture catalog staging
+  - olive branch in a vase as default decor
+  - panoramic window view as default backdrop
+  - real designer furniture replicas
+  - replacing the requested room with a living room
   - chrome
-  - hallway view
-  - linen cabinet
-  - kitchen sink/appliance scene
-  - dining table
+  - glossy lacquer
+  - farmhouse word signs
+  - flower bucket centerpiece
+  - sleek
   - chair focus
   - pendant-lamp hero
-  - flower bucket centerpiece
   - TV farmhouse cliche
   - market aisle
   - library aisle
-  - corridor
   - empty abstraction
   - showroom formula
   - chair or sofa focus
   - lamp hero
   - curtain wall default
   - fixed building-only scene
-  - mandatory interior interior zones
   - corridor perspective
   - furniture showroom
   - prompt-required card
@@ -104,16 +53,16 @@ avoidRules:
   - camera prop
   - mandatory interior set
   - prompt-literal card
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-018.webp
 attributes:
-  negativePrompt: >-
-    modern, sleek, chrome, hallway view, linen cabinet, kitchen sink/appliance scene, dining table,
-    chair focus, pendant-lamp hero, flower bucket centerpiece, TV farmhouse cliche, market aisle,
-    library aisle, corridor, empty abstraction, showroom formula, chair or sofa focus, lamp hero,
-    curtain wall default, fixed building-only scene, mandatory interior interior zones, corridor
-    perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera
-    prop, mandatory interior set, prompt-literal card
+  negativePrompt: furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, chrome, glossy lacquer, farmhouse word signs, flower bucket centerpiece, sleek, chair focus, pendant-lamp hero, TV farmhouse cliche, market aisle, library aisle, empty abstraction, showroom formula, chair or sofa focus, lamp hero, curtain wall default, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

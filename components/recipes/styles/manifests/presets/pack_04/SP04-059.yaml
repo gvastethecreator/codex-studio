@@ -3,7 +3,7 @@ id: SP04-059
 packId: pack_04
 name: UI/HUD Design
 category: 6. Technical And Reference Sheets
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,63 +12,25 @@ tags:
   - illustration-and-graphic-novel
   - technical-and-reference-sheets
 visualDna:
-  aesthetic: >-
-    UI/HUD Design acts as a transferable illustration router: start from Diegetic HUD interface
-    style with tactical readability, layered data hierarchy, and immersive screen-space integration,
-    Floating, thin rule-lines, data readout and technical reference and interface-spec system built
-    from orthographic clarity, diagram hierarchy, callout logic, measured spacing, and
-    production-sheet legibility, then apply the visual behavior to prompt X instead of recreating a
-    fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Thin vector line discipline with modular widget framing,
-    reticle geometry, and precision micro-typographic structure; preserve the requested subject
-    while expressing it through schematic breakdowns, reference views, anatomy structure, UI
-    wireframes, comparison scales, or specification surfaces, keeping the requested identity,
-    silhouette, pose, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Neon Cyan/Orange, sci-fi HUD spectrum, AR-overlay contrast; use color as
-    information coding: blueprint cyan, neutral sheet stock, callout accents, HUD glow, anatomy
-    value separation, or wireframe hierarchy, with deliberate value grouping, accent control, and
-    process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Glow, emissive interface, screen-space radiance; keep light diagrammatic
-    and legible through flat drafting values, callout emphasis, interface glow, anatomical
-    separation, or measured shadow restraint, so value structure supports the illustration process
-    and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Screen, technical line hierarchy, orthographic clarity, callout structure, grid
-    discipline, and reference-sheet readability; surface detail should support readability with grid
-    paper, line weights, translucent overlays, measurement ticks, UI panels, section cuts, or
-    reference-sheet paper grain, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Compose for UI/HUD Design using its key spatial cues: Floating, thin
-    rule-lines, data readout; compose through orthographic projection, exploded spacing, callout
-    grouping, interface modules, size-scale relationships, and reference-sheet hierarchy, with
-    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Tech, info, augmented awareness, mission-ops focus; derive mood from precision,
-    planning, research, interface control, anatomical study, engineering authority, or catalogued
-    comparison, letting the style alter interpretation without demanding a specific story, location,
-    or actor.
-  rendering_and_quality: >-
-    Finish with Futuristic, functional, diegetic elegance, heads-up immersion; finish with readable
-    technical communication, crisp line hierarchy, controlled notation-like detail, and no illegible
-    labels or decorative clutter, clean denoised surfaces where appropriate, and enough process
-    evidence to make the style recognizable.
-  key_features: >-
-    Diegetic HUD interface style with tactical readability, layered data hierarchy, and immersive
-    screen-space integration; Floating, thin rule-lines, data readout; Neon Cyan/Orange, sci-fi HUD
-    spectrum, AR-overlay contrast; Screen, technical line hierarchy, orthographic clarity, callout
-    structure, grid discipline, and reference-sheet readability
-  creative_brief: >-
-    Apply UI/HUD Design as an illustration preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Diegetic HUD interface style with tactical readability, layered data hierarchy, and immersive
-    screen-space integration, Floating, thin rule-lines, data readout, Screen, technical line
-    hierarchy, orthographic clarity, callout structure, grid discipline, and reference-sheet
-    readability without requiring the card image's original subject.
+  aesthetic: 'Heads-up display design: thin luminous vector reticles, arcs and gauges floating over a first-person view of the subject.'
+  subject_treatment: Keep the prompt subject as the thing documented; this reference profile owns a first-person screen view with a heads-up display overlaid on the subject, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.
+  color_and_tone: One or two HUD colors such as cyan and amber at partial opacity over a darkened, slightly desaturated scene.
+  lighting_and_shadow: HUD elements emit a soft glow and cast no shadow; the scene behind keeps its own light, dimmed for contrast.
+  texture_and_material: Hairline vector strokes, segmented arcs, faint scanline and bloom on the brightest marks.
+  camera_and_composition: First-person frame with a central reticle, a horizon ladder, corner gauges and a radar arc framing the subject.
+  atmosphere_and_mood: Tense and focused, information wrapped around what you see.
+  rendering_and_quality: Crisp vector interface layered over the view, using symbols and bars instead of readable numbers or words.
+  key_features: central reticle; horizon ladder; segmented gauges; radar arc; cyan and amber glow
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies UI/HUD Design as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
-  - organic
+  - placeholder gibberish text
+  - invented numbers presented as data
+  - readable labels
+  - brand logo
+  - franchise likeness
+  - free painterly composition instead of a sheet
+  - character portrait with decorative HUD shapes
+  - readable numbers
   - messy
   - official card scene
   - fixed thumbnail subject
@@ -82,13 +44,14 @@ avoidRules:
   - decorative clutter
   - shaded cinematic render
   - random UI text
+  - text
+  - logo
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-059.webp
 attributes:
-  negativePrompt: >-
-    organic, messy, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible
-    labels, decorative clutter, shaded cinematic render, random UI text
+  negativePrompt: placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, character portrait with decorative HUD shapes, readable numbers, messy, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text, text, logo, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

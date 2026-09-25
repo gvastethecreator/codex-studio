@@ -3,7 +3,7 @@ id: SP06-114
 packId: pack_06
 name: Anime Gacha Foil Frame
 category: 7. Game Art Directions & UI
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,69 +12,27 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: >-
-    Anime Gacha Foil Frame acts as a transferable art-medium router: start from Anime gacha card
-    visual style with iridescent foil borders, rarity glow, and polished collectible spectacle,
-    gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and
-    production-art clarity and game-art direction system built from playable readability, UI or
-    asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply
-    the medium behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Stage any subject as a premium collectible centerpiece with
-    clean anime contours and rarity coded emphasis; preserve the prompt subject while routing it
-    through tile readability, icon clarity, splash rendering, interface material, sprite bounce,
-    shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object
-    function, or environment legible.
-  color_and_tone: >-
-    Build color with Pastel jewel gradients, gold/opal foil accents, prismatic highlights, and high
-    key magical contrast; use color as gameplay hierarchy: rarity glow, faction contrast, tactical
-    coding, seasonal warmth, horror warmth, neon route color, or readable inventory material, with
-    deliberate value grouping, accent control, and medium-specific limits rather than generic color
-    wash.
-  lighting_and_shadow: >-
-    Handle light through Sparkle bloom, rim halos, layered glow bursts, and glossy card surface
-    reflections; shape light through game readability: rim separation, UI glow, static-camera dread,
-    foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so value structure
-    supports the medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Holographic foil grain, embossed frame detail, soft star particles, and smooth digital
-    anime finish; surface detail should support genre grammar through parchment, HUD glass, pixel
-    atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping
-    material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Vertical card like framing, ornate border hierarchy, central focus
-    window, and balanced negative space; compose through gameplay-facing hierarchy, atlas
-    consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen
-    energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Desirable, premium, celebratory mood without requiring characters, card text,
-    stats, weapons, or mascots; derive mood from playable stakes, collection desire, tactical
-    control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium
-    alter interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Clean collectible asset polish, no readable typography, no cluttered UI, controlled
-    sparkle density; finish with game-production clarity, strong silhouettes, controlled UI-like
-    detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and
-    enough craft evidence to make the medium recognizable.
-  key_features: >-
-    Anime gacha card visual style with iridescent foil borders, rarity glow, and polished
-    collectible spectacle; gameplay-readable hierarchy, genre-specific surface language, UI-aware
-    composition, and production-art clarity; Pastel jewel gradients, gold/opal foil accents,
-    prismatic highlights, and high key magical contrast; Holographic foil grain, embossed frame
-    detail, soft star particles, and smooth digital anime finish; Vertical card like framing, ornate
-    border hierarchy, central focus window, and balanced negative space
-  creative_brief: >-
-    Apply Anime Gacha Foil Frame as an art-style preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Anime gacha card visual style with iridescent foil borders, rarity glow, and polished
-    collectible spectacle, gameplay-readable hierarchy, genre-specific surface language, UI-aware
-    composition, and production-art clarity, Holographic foil grain, embossed frame detail, soft
-    star particles, and smooth digital anime finish without requiring the card image's original
-    subject.
+  aesthetic: 'Gacha character card: a vertical collectible card with an ornate iridescent foil frame around a clean anime-painted character illustration.'
+  subject_treatment: Keep the prompt subject and action recognizable; this preset owns a vertical collectible-card frame with a foil border and rarity gems around the subject, with blank panels and icon shapes instead of any readable text, numbers or logos.
+  color_and_tone: Bright clean anime color in the art window, rainbow holographic foil and gold filigree on the frame.
+  lighting_and_shadow: Glamorous key light on the character, sparkle and lens-flare bursts, foil catching rainbow reflections.
+  texture_and_material: Holographic foil shimmer, embossed gold filigree, faceted rarity gems, particle bursts and petals in the art.
+  camera_and_composition: Vertical card; the character breaks slightly out of the art window, ornate border hierarchy, star gems at top.
+  atmosphere_and_mood: Dazzling and precious, the thrill of a rare pull.
+  rendering_and_quality: Polished anime finish with crisp foil edges; no stats, numbers or name banner.
+  key_features: vertical card; iridescent foil frame; rarity gems; clean anime paint; figure breaking the frame
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Anime Gacha Foil Frame as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - copied game characters
+  - known game HUD layout
+  - readable interface text
+  - numbers and stat values
+  - publisher or studio logo
+  - readable stats
+  - generic anime schoolgirl
+  - revealing outfit
   - watermark
   - text
-  - readable stats
   - character requirement
   - weapon requirement
   - wrong medium
@@ -88,13 +46,16 @@ avoidRules:
   - logo clutter
   - generic screenshot
   - unplayable visual clutter
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-114.webp
 attributes:
-  negativePrompt: >-
-    watermark, text, readable stats, character requirement, weapon requirement, wrong medium,
-    generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low
-    resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter
+  negativePrompt: copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, readable stats, generic anime schoolgirl, revealing outfit, watermark, text, character requirement, weapon requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

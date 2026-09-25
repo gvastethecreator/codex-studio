@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP13-044
+packId: pack_05
+name: Top-Down Spiral Path Staging
+styleAnchors:
+  - Top-Down Spiral Path Staging
+  - anime action staging
+  - straight-down 90 degree view
+displayName: Top-Down Spiral Path Staging
+category: 5. Action Motion Setpieces
+domain: anime action staging
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-battle-and-worlds
+  - action
+  - top-down
+  - spiral-composition
+visualDna:
+  aesthetic: 'Anime overhead staging: the camera looks straight down and the requested movement is arranged along a spiral or circular path, so the ground pattern and the action form one curling shape.'
+  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the straight-down overhead view with a spiral path composition, and adds no opponent, sports gear, extra prop or danger.
+  color_and_tone: Keep the prompt palette; the ground is a calm mid value so the moving subject and its path stand out.
+  lighting_and_shadow: Light from one side so cast shadows lie long and flat on the ground and reveal the pose.
+  texture_and_material: Clear ground patterns like flagstones, boards, grass or water that help trace the spiral; faint path marks only where the subject's movement would leave them.
+  camera_and_composition: Exact 90 degree top-down view with the spiral centered or slightly off center and the subject at its leading end.
+  atmosphere_and_mood: Hypnotic, choreographed flow seen calmly from directly above.
+  rendering_and_quality: Clean flat perspective without distortion and readable shadow shapes that explain the pose.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Top-Down Spiral Path Staging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: straight-down 90 degree view; spiral or circular path; subject at the leading end; long flat side-lit shadows; readable ground pattern
+avoidRules:
+  - added opponent
+  - added sports gear
+  - invented danger or explosion
+  - extra props
+  - readable text
+  - franchise character likeness
+  - perspective tilt
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, perspective tilt, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_05
+  packName: Anime Battle & Worlds
+  categoryId: action
+  categoryName: 5. Action Motion Setpieces
+  tags:
+    - anime-battle-and-worlds
+    - action
+    - top-down
+    - spiral-composition
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: anime action staging

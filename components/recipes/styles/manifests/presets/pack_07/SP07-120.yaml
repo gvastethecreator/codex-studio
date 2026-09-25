@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP07-120
+packId: pack_07
+name: Matchstick Glue-Up Model
+styleAnchors:
+  - Matchstick Glue-Up Model
+  - glued matchstick construction
+  - glued matchstick courses
+displayName: Matchstick Glue-Up Model
+category: 6. Toy Craft And Miniature Architecture
+domain: glued matchstick construction
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - toy-craft-and-miniature-architecture
+  - matchstick
+  - model-making
+  - handmade
+visualDna:
+  aesthetic: 'Matchstick construction: the subject built from thousands of glued wooden matchsticks laid in courses, with the dark heads used as a deliberate pattern.'
+  subject_treatment: Keep the requested subject, its identity, pose and camera, and rebuild it as a handmade tabletop miniature in this material; a requested object stays that object and never turns into a house or building.
+  color_and_tone: Pale pine yellow sticks, red and near-black match heads, amber glue fillets; warm, limited palette.
+  lighting_and_shadow: Warm workbench lamp raking across the stick courses so each stick casts a tiny line shadow.
+  texture_and_material: Square-section sticks, glossy glue beads at joints, rounded heads, sanded curves where sticks are trimmed.
+  camera_and_composition: Keep the requested view as a workbench macro so the individual sticks remain countable.
+  atmosphere_and_mood: Obsessive and proud, years of evenings visible in every course.
+  rendering_and_quality: Macro photograph of a real matchstick model with countable sticks; no smooth carved wood.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Matchstick Glue-Up Model as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: glued matchstick courses; match heads as pattern; glue fillets at joints; warm raking lamp; countable sticks
+avoidRules:
+  - brand logo on parts
+  - readable text
+  - turning a requested object into a house or building
+  - full-scale real construction
+  - playroom or party scene
+  - fire
+  - smooth carved wood
+  - popsicle sticks
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: brand logo on parts, readable text, turning a requested object into a house or building, full-scale real construction, playroom or party scene, fire, smooth carved wood, popsicle sticks, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: toy-craft-and-miniature-architecture
+  categoryName: 6. Toy Craft And Miniature Architecture
+  tags:
+    - architecture-and-interior
+    - toy-craft-and-miniature-architecture
+    - matchstick
+    - model-making
+    - handmade
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: glued matchstick construction

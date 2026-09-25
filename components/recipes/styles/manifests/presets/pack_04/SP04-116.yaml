@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP04-116
+packId: pack_04
+name: Patent Figure Plate
+styleAnchors:
+  - Patent Figure Plate
+  - patent line drawing
+  - black line on white
+displayName: Patent Figure Plate
+category: 6. Technical And Reference Sheets
+domain: patent line drawing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - technical-and-reference-sheets
+  - patent-drawing
+  - line-art
+  - reference-sheet
+visualDna:
+  aesthetic: 'Patent drawing plate: the subject in precise black ink line on white, shown as several figures with surface-shading lines and leader lines.'
+  subject_treatment: Keep the prompt subject as the thing documented; this reference profile owns a patent-style plate of several black-line figures with leader lines ending at blank points, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.
+  color_and_tone: Pure black ink on bright white paper, no grey fill or color.
+  lighting_and_shadow: Conventional light from upper left expressed by thicker shade lines on the lower right edges and parallel surface lines on curves.
+  texture_and_material: Uniform technical-pen lines, parallel shading strokes on cylinders, stippled section faces, dashed hidden lines.
+  camera_and_composition: 'Three or four figures on one sheet: perspective view, side view, section and exploded detail, leader lines ending at blank points.'
+  atmosphere_and_mood: Ingenious and formal, an invention laid open for examination.
+  rendering_and_quality: Crisp reproduction-ready line art with no reference numerals, captions or signatures.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Patent Figure Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: black line on white; thick shade lines; parallel surface shading; several figures on one sheet; blank leader lines
+avoidRules:
+  - placeholder gibberish text
+  - invented numbers presented as data
+  - readable labels
+  - brand logo
+  - franchise likeness
+  - free painterly composition instead of a sheet
+  - reference numerals
+  - grey wash
+  - color
+  - watermark
+  - text
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, reference numerals, grey wash, color, watermark, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_04
+  packName: Illustration & Graphic Novel
+  categoryId: technical-and-reference-sheets
+  categoryName: 6. Technical And Reference Sheets
+  tags:
+    - illustration-and-graphic-novel
+    - technical-and-reference-sheets
+    - patent-drawing
+    - line-art
+    - reference-sheet
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: patent line drawing

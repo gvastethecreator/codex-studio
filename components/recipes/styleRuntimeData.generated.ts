@@ -46,7 +46,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
       "A versatile collection of 80+ illustration styles, covering comics, children's books, editorial art, and printmaking.",
     cardTitle: 'Graphic Novel',
     cardDescription: 'Comics, illustration, ink, posters, editorial art.',
-    presetCount: 115,
+    presetCount: 129,
   },
   {
     id: 'pack_05',
@@ -55,7 +55,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
       'High-energy anime styles focused on battles, power systems, mecha worlds, isekai adventures, and dark seinen action.',
     cardTitle: 'Anime Battle',
     cardDescription: 'Action anime, battles, mecha, fantasy worlds.',
-    presetCount: 135,
+    presetCount: 150,
   },
   {
     id: 'pack_13',
@@ -82,7 +82,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
       'A broad survey of foundational art-making languages, from traditional pigment and draftsmanship to printmaking, digital workflows, mixed-media craft, and game-native visual systems.',
     cardTitle: 'Essential Art',
     cardDescription: 'Painting, print, drawing, mixed media, digital art.',
-    presetCount: 120,
+    presetCount: 140,
   },
   {
     id: 'pack_07',
@@ -90,7 +90,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     description: 'Architectural styles and interior design aesthetics.',
     cardTitle: 'Architecture',
     cardDescription: 'Architecture, interiors, landscapes, spatial design.',
-    presetCount: 80,
+    presetCount: 140,
   },
   {
     id: 'pack_08',

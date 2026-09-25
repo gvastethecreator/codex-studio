@@ -3,7 +3,7 @@ id: SP06-043
 packId: pack_06
 name: Security Engraving
 category: 3. Printmaking
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,54 +12,23 @@ tags:
   - essential-art-styles
   - printmaking
 visualDna:
-  aesthetic: >-
-    Security Engraving acts as a transferable art-medium router: start from Security engraving style
-    with guilloche precision and anti counterfeit line density, Guilloche patterns and print-process
-    system built from matrix marks, ink transfer, pressure, registration, plate or block artifacts,
-    and paper absorption, then apply the medium behavior to prompt X instead of recreating a fixed
-    demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Precise parallel lines; preserve the prompt subject while
-    converting it into carved, etched, stamped, screened, dotted, grained, or impressed mark
-    systems, keeping the requested identity, silhouette, pose, object function, or environment
-    legible.
-  color_and_tone: >-
-    Build color with Green, Grey, Monochrome; use palette as ink behavior: limited plates,
-    overprint, misregistration, monochrome value, cyan chemistry, newspaper dots, or security
-    green-grey restraint, with deliberate value grouping, accent control, and medium-specific limits
-    rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Linear shading; translate light into line density, dot frequency, relief
-    shadow, plate tone, paper reserve, or ink coverage rather than photographic illumination, so
-    value structure supports the medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Cotton paper; surface detail should reveal paper fibers, plate marks, burr, gouge, rosin
-    grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping material scale
-    coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Compose for Security Engraving using its key spatial cues: Guilloche
-    patterns; compose through print registration, cut rhythm, border pressure, edition-like balance,
-    negative space, and repeatable mark hierarchy, with scale, spacing, edge rhythm, and visual
-    hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Serious, valuable; derive mood from hand pressure, mechanical reproduction,
-    archival value, propaganda energy, occult darkness, newspaper grit, or tactile experiment,
-    letting the medium alter interpretation without demanding a specific story, location, or
-    character.
-  rendering_and_quality: >-
-    Finish with Official high detail engraving without requiring currency, certificates, seals, or
-    portraits; finish as a credible print artifact with exact mark logic, restrained texture, and no
-    fake poster text or random distress overlay, clean denoised surfaces where appropriate, and
-    enough craft evidence to make the medium recognizable.
-  key_features: >-
-    Security engraving style with guilloche precision and anti counterfeit line density; Guilloche
-    patterns; Green, Grey, Monochrome; Cotton paper
-  creative_brief: >-
-    Apply Security Engraving as an art-style preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Security engraving style with guilloche precision and anti counterfeit line density, Guilloche
-    patterns, Cotton paper without requiring the card image's original subject.
+  aesthetic: 'Security engraving: burin-cut steel line work of extreme density, swelling lines and dot-and-lozenge patterns, surrounded by machine-turned guilloche rosettes.'
+  subject_treatment: Redraw the prompt's subject, pose, setting and framing as an impression of this print process; ink transfer, plate or block marks, registration and paper identify the process without requiring any particular scene.
+  color_and_tone: One intaglio ink, such as deep green, sepia, slate grey or maroon, on off-white cotton paper; tone purely from line density.
+  lighting_and_shadow: Sculptural modeling through parallel lines that swell and thin to follow form, with fine dots between them in the half-tones.
+  texture_and_material: Raised intaglio ink you could feel, hair-fine guilloche spirograph patterns, cotton-rag paper, micro-line backgrounds.
+  camera_and_composition: Keep the requested subject, set as a vignette inside an oval or rosette of guilloche patterns.
+  atmosphere_and_mood: Official, precise and dignified, value engraved in steel.
+  rendering_and_quality: Extremely fine swelling lines and interlaced guilloche, no free sketching; no numbers, denominations or readable text.
+  key_features: burin-cut swelling line modeling; guilloche rosettes; dot-and-lozenge half-tones; single intaglio ink color; cotton-rag paper
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Security Engraving as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - changing the requested subject
+  - readable printed text
+  - digital vector cleanliness
+  - readable denomination
+  - currency layout
+  - loose sketch lines
   - photo
   - realistic
   - photorealistic
@@ -76,7 +45,6 @@ avoidRules:
   - frame
   - border
   - currency requirement
-  - readable denomination
   - portrait requirement
   - wrong medium
   - generic AI gloss
@@ -88,15 +56,16 @@ avoidRules:
   - smooth digital gradient
   - random distress overlay
   - wrong print process
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-043.webp
 attributes:
-  negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
-    anatomy, watermark, text, signature, frame, border, currency requirement, readable denomination,
-    portrait requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter,
-    readable text, low resolution, fake poster text, smooth digital gradient, random distress
-    overlay, wrong print process
+  negativePrompt: changing the requested subject, readable printed text, digital vector cleanliness, readable denomination, currency layout, loose sketch lines, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, currency requirement, portrait requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital gradient, random distress overlay, wrong print process, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

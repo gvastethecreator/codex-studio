@@ -3,7 +3,7 @@
     {
       "id": "pack_07",
       "name": "Architecture & Interior",
-      "presetCount": 80
+      "presetCount": 140
     }
   ],
   "presets": [
@@ -200,6 +200,90 @@
       "searchableText": "sp07-020 memphis design 1. interior design systems interior systems pack_07 architecture & interior interior-design-systems architecture-and-interior interior-design-systems"
     },
     {
+      "id": "SP07-081",
+      "name": "Shaker Peg-Rail Interior",
+      "styleAnchors": [
+        "Shaker Peg-Rail Interior",
+        "Shaker plain-style interior",
+        "continuous peg rail with hung chairs"
+      ],
+      "ref": "pack_07/SP07-081.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "interior-design-systems",
+      "categoryName": "1. Interior Design Systems",
+      "domain": "Shaker plain-style interior",
+      "tags": [
+        "architecture-and-interior",
+        "interior-design-systems",
+        "shaker-plain-style-interior"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-081 shaker peg-rail interior shaker plain-style interior continuous peg rail with hung chairs 1. interior design systems interior systems shaker plain-style interior pack_07 architecture & interior interior-design-systems architecture-and-interior interior-design-systems shaker-plain-style-interior"
+    },
+    {
+      "id": "SP07-082",
+      "name": "Wabi-Sabi Earthen Interior",
+      "styleAnchors": [
+        "Wabi-Sabi Earthen Interior",
+        "wabi-sabi imperfection interior",
+        "cracked clay plaster with straw"
+      ],
+      "ref": "pack_07/SP07-082.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "interior-design-systems",
+      "categoryName": "1. Interior Design Systems",
+      "domain": "wabi-sabi imperfection interior",
+      "tags": [
+        "architecture-and-interior",
+        "interior-design-systems",
+        "wabi-sabi-imperfection-interior"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-082 wabi-sabi earthen interior wabi-sabi imperfection interior cracked clay plaster with straw 1. interior design systems interior systems wabi-sabi imperfection interior pack_07 architecture & interior interior-design-systems architecture-and-interior interior-design-systems wabi-sabi-imperfection-interior"
+    },
+    {
+      "id": "SP07-083",
+      "name": "Arts and Crafts Inglenook",
+      "styleAnchors": [
+        "Arts and Crafts Inglenook",
+        "Arts and Crafts domestic interior",
+        "quarter-sawn oak with ray fleck"
+      ],
+      "ref": "pack_07/SP07-083.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "interior-design-systems",
+      "categoryName": "1. Interior Design Systems",
+      "domain": "Arts and Crafts domestic interior",
+      "tags": [
+        "architecture-and-interior",
+        "interior-design-systems",
+        "arts-and-crafts-domestic-interior"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-083 arts and crafts inglenook arts and crafts domestic interior quarter-sawn oak with ray fleck 1. interior design systems interior systems arts and crafts domestic interior pack_07 architecture & interior interior-design-systems architecture-and-interior interior-design-systems arts-and-crafts-domestic-interior"
+    },
+    {
+      "id": "SP07-084",
+      "name": "Space-Age Fiberglass Interior",
+      "styleAnchors": [
+        "Space-Age Fiberglass Interior",
+        "space-age 1960s interior",
+        "molded white fiberglass shells"
+      ],
+      "ref": "pack_07/SP07-084.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "interior-design-systems",
+      "categoryName": "1. Interior Design Systems",
+      "domain": "space-age 1960s interior",
+      "tags": ["architecture-and-interior", "interior-design-systems", "space-age-1960s-interior"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-084 space-age fiberglass interior space-age 1960s interior molded white fiberglass shells 1. interior design systems interior systems space-age 1960s interior pack_07 architecture & interior interior-design-systems architecture-and-interior interior-design-systems space-age-1960s-interior"
+    },
+    {
       "id": "SP07-006",
       "name": "Brutalist Architecture",
       "ref": "pack_07/SP07-006.yaml",
@@ -356,6 +440,160 @@
       "searchableText": "sp07-030 soviet constructivist 2. architectural movements and vernaculars architectural systems pack_07 architecture & interior architectural-movements-and-vernaculars architecture-and-interior architectural-movements-and-vernaculars"
     },
     {
+      "id": "SP07-085",
+      "name": "High-Tech Exposed Structure",
+      "styleAnchors": [
+        "High-Tech Exposed Structure",
+        "high-tech architecture",
+        "external colour-coded ducts"
+      ],
+      "ref": "pack_07/SP07-085.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "architectural-movements-and-vernaculars",
+      "categoryName": "2. Architectural Movements And Vernaculars",
+      "domain": "high-tech architecture",
+      "tags": [
+        "architecture-and-interior",
+        "architectural-movements-and-vernaculars",
+        "high-tech-architecture"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-085 high-tech exposed structure high-tech architecture external colour-coded ducts 2. architectural movements and vernaculars architectural systems high-tech architecture pack_07 architecture & interior architectural-movements-and-vernaculars architecture-and-interior architectural-movements-and-vernaculars high-tech-architecture"
+    },
+    {
+      "id": "SP07-086",
+      "name": "Postmodern Pastiche Facade",
+      "styleAnchors": [
+        "Postmodern Pastiche Facade",
+        "postmodern architecture",
+        "oversized broken pediment"
+      ],
+      "ref": "pack_07/SP07-086.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "architectural-movements-and-vernaculars",
+      "categoryName": "2. Architectural Movements And Vernaculars",
+      "domain": "postmodern architecture",
+      "tags": [
+        "architecture-and-interior",
+        "architectural-movements-and-vernaculars",
+        "postmodern-architecture"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-086 postmodern pastiche facade postmodern architecture oversized broken pediment 2. architectural movements and vernaculars architectural systems postmodern architecture pack_07 architecture & interior architectural-movements-and-vernaculars architecture-and-interior architectural-movements-and-vernaculars postmodern-architecture"
+    },
+    {
+      "id": "SP07-087",
+      "name": "Streamline Moderne",
+      "styleAnchors": [
+        "Streamline Moderne",
+        "streamline moderne architecture",
+        "rounded corners with horizontal speed lines"
+      ],
+      "ref": "pack_07/SP07-087.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "architectural-movements-and-vernaculars",
+      "categoryName": "2. Architectural Movements And Vernaculars",
+      "domain": "streamline moderne architecture",
+      "tags": [
+        "architecture-and-interior",
+        "architectural-movements-and-vernaculars",
+        "streamline-moderne-architecture"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-087 streamline moderne streamline moderne architecture rounded corners with horizontal speed lines 2. architectural movements and vernaculars architectural systems streamline moderne architecture pack_07 architecture & interior architectural-movements-and-vernaculars architecture-and-interior architectural-movements-and-vernaculars streamline-moderne-architecture"
+    },
+    {
+      "id": "SP07-088",
+      "name": "Sahelian Earthen Architecture",
+      "styleAnchors": [
+        "Sahelian Earthen Architecture",
+        "Sahelian mud-brick architecture",
+        "mud-plastered sun-dried brick"
+      ],
+      "ref": "pack_07/SP07-088.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "architectural-movements-and-vernaculars",
+      "categoryName": "2. Architectural Movements And Vernaculars",
+      "domain": "Sahelian mud-brick architecture",
+      "tags": [
+        "architecture-and-interior",
+        "architectural-movements-and-vernaculars",
+        "sahelian-mud-brick-architecture"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-088 sahelian earthen architecture sahelian mud-brick architecture mud-plastered sun-dried brick 2. architectural movements and vernaculars architectural systems sahelian mud-brick architecture pack_07 architecture & interior architectural-movements-and-vernaculars architecture-and-interior architectural-movements-and-vernaculars sahelian-mud-brick-architecture"
+    },
+    {
+      "id": "SP07-089",
+      "name": "Trullo Corbelled Stone",
+      "styleAnchors": [
+        "Trullo Corbelled Stone",
+        "Apulian trullo drystone architecture",
+        "corbelled limestone slab cones"
+      ],
+      "ref": "pack_07/SP07-089.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "architectural-movements-and-vernaculars",
+      "categoryName": "2. Architectural Movements And Vernaculars",
+      "domain": "Apulian trullo drystone architecture",
+      "tags": [
+        "architecture-and-interior",
+        "architectural-movements-and-vernaculars",
+        "apulian-trullo-drystone-architecture"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-089 trullo corbelled stone apulian trullo drystone architecture corbelled limestone slab cones 2. architectural movements and vernaculars architectural systems apulian trullo drystone architecture pack_07 architecture & interior architectural-movements-and-vernaculars architecture-and-interior architectural-movements-and-vernaculars apulian-trullo-drystone-architecture"
+    },
+    {
+      "id": "SP07-090",
+      "name": "Tulou Rammed-Earth Ring",
+      "styleAnchors": [
+        "Tulou Rammed-Earth Ring",
+        "Fujian tulou rammed-earth architecture",
+        "rammed-earth ring wall with formwork layers"
+      ],
+      "ref": "pack_07/SP07-090.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "architectural-movements-and-vernaculars",
+      "categoryName": "2. Architectural Movements And Vernaculars",
+      "domain": "Fujian tulou rammed-earth architecture",
+      "tags": [
+        "architecture-and-interior",
+        "architectural-movements-and-vernaculars",
+        "fujian-tulou-rammed-earth-architecture"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-090 tulou rammed-earth ring fujian tulou rammed-earth architecture rammed-earth ring wall with formwork layers 2. architectural movements and vernaculars architectural systems fujian tulou rammed-earth architecture pack_07 architecture & interior architectural-movements-and-vernaculars architecture-and-interior architectural-movements-and-vernaculars fujian-tulou-rammed-earth-architecture"
+    },
+    {
+      "id": "SP07-091",
+      "name": "Gassho Thatch Farmhouse",
+      "styleAnchors": [
+        "Gassho Thatch Farmhouse",
+        "Japanese gassho-zukuri farmhouse",
+        "steep A-frame grass thatch roof"
+      ],
+      "ref": "pack_07/SP07-091.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "architectural-movements-and-vernaculars",
+      "categoryName": "2. Architectural Movements And Vernaculars",
+      "domain": "Japanese gassho-zukuri farmhouse",
+      "tags": [
+        "architecture-and-interior",
+        "architectural-movements-and-vernaculars",
+        "japanese-gassho-zukuri-farmhouse"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-091 gassho thatch farmhouse japanese gassho-zukuri farmhouse steep a-frame grass thatch roof 2. architectural movements and vernaculars architectural systems japanese gassho-zukuri farmhouse pack_07 architecture & interior architectural-movements-and-vernaculars architecture-and-interior architectural-movements-and-vernaculars japanese-gassho-zukuri-farmhouse"
+    },
+    {
       "id": "SP07-032",
       "name": "Metropolitan Transit Patina",
       "ref": "pack_07/SP07-032.yaml",
@@ -462,6 +700,240 @@
       "tags": ["architecture-and-interior", "civic-infrastructure-and-specialty-spaces"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp07-040 arboreal craft shelter 3. civic infrastructure and specialty spaces specialty spaces pack_07 architecture & interior civic-infrastructure-and-specialty-spaces architecture-and-interior civic-infrastructure-and-specialty-spaces"
+    },
+    {
+      "id": "SP07-092",
+      "name": "Anatomical Theatre Tiers",
+      "styleAnchors": [
+        "Anatomical Theatre Tiers",
+        "early modern anatomical theatre",
+        "steep concentric oval timber tiers"
+      ],
+      "ref": "pack_07/SP07-092.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "civic-infrastructure-and-specialty-spaces",
+      "categoryName": "3. Civic Infrastructure And Specialty Spaces",
+      "domain": "early modern anatomical theatre",
+      "tags": [
+        "architecture-and-interior",
+        "civic-infrastructure-and-specialty-spaces",
+        "early-modern-anatomical-theatre"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-092 anatomical theatre tiers early modern anatomical theatre steep concentric oval timber tiers 3. civic infrastructure and specialty spaces specialty spaces early modern anatomical theatre pack_07 architecture & interior civic-infrastructure-and-specialty-spaces architecture-and-interior civic-infrastructure-and-specialty-spaces early-modern-anatomical-theatre"
+    },
+    {
+      "id": "SP07-093",
+      "name": "Flooded Column Cistern",
+      "styleAnchors": [
+        "Flooded Column Cistern",
+        "underground column cistern",
+        "forest of stone columns in still water"
+      ],
+      "ref": "pack_07/SP07-093.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "civic-infrastructure-and-specialty-spaces",
+      "categoryName": "3. Civic Infrastructure And Specialty Spaces",
+      "domain": "underground column cistern",
+      "tags": [
+        "architecture-and-interior",
+        "civic-infrastructure-and-specialty-spaces",
+        "underground-column-cistern"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-093 flooded column cistern underground column cistern forest of stone columns in still water 3. civic infrastructure and specialty spaces specialty spaces underground column cistern pack_07 architecture & interior civic-infrastructure-and-specialty-spaces architecture-and-interior civic-infrastructure-and-specialty-spaces underground-column-cistern"
+    },
+    {
+      "id": "SP07-094",
+      "name": "Observatory Dome Instrumentation",
+      "styleAnchors": [
+        "Observatory Dome Instrumentation",
+        "astronomical observatory interior",
+        "rotating dome with open shutter slit"
+      ],
+      "ref": "pack_07/SP07-094.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "civic-infrastructure-and-specialty-spaces",
+      "categoryName": "3. Civic Infrastructure And Specialty Spaces",
+      "domain": "astronomical observatory interior",
+      "tags": [
+        "architecture-and-interior",
+        "civic-infrastructure-and-specialty-spaces",
+        "astronomical-observatory-interior"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-094 observatory dome instrumentation astronomical observatory interior rotating dome with open shutter slit 3. civic infrastructure and specialty spaces specialty spaces astronomical observatory interior pack_07 architecture & interior civic-infrastructure-and-specialty-spaces architecture-and-interior civic-infrastructure-and-specialty-spaces astronomical-observatory-interior"
+    },
+    {
+      "id": "SP07-095",
+      "name": "Victorian Pumping Station Ironwork",
+      "styleAnchors": [
+        "Victorian Pumping Station Ironwork",
+        "Victorian engine house interior",
+        "polychrome painted cast-iron columns"
+      ],
+      "ref": "pack_07/SP07-095.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "civic-infrastructure-and-specialty-spaces",
+      "categoryName": "3. Civic Infrastructure And Specialty Spaces",
+      "domain": "Victorian engine house interior",
+      "tags": [
+        "architecture-and-interior",
+        "civic-infrastructure-and-specialty-spaces",
+        "victorian-engine-house-interior"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-095 victorian pumping station ironwork victorian engine house interior polychrome painted cast-iron columns 3. civic infrastructure and specialty spaces specialty spaces victorian engine house interior pack_07 architecture & interior civic-infrastructure-and-specialty-spaces architecture-and-interior civic-infrastructure-and-specialty-spaces victorian-engine-house-interior"
+    },
+    {
+      "id": "SP07-096",
+      "name": "Horseshoe Opera Auditorium",
+      "styleAnchors": [
+        "Horseshoe Opera Auditorium",
+        "horseshoe opera house interior",
+        "stacked horseshoe of boxes"
+      ],
+      "ref": "pack_07/SP07-096.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "civic-infrastructure-and-specialty-spaces",
+      "categoryName": "3. Civic Infrastructure And Specialty Spaces",
+      "domain": "horseshoe opera house interior",
+      "tags": [
+        "architecture-and-interior",
+        "civic-infrastructure-and-specialty-spaces",
+        "horseshoe-opera-house-interior"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-096 horseshoe opera auditorium horseshoe opera house interior stacked horseshoe of boxes 3. civic infrastructure and specialty spaces specialty spaces horseshoe opera house interior pack_07 architecture & interior civic-infrastructure-and-specialty-spaces architecture-and-interior civic-infrastructure-and-specialty-spaces horseshoe-opera-house-interior"
+    },
+    {
+      "id": "SP07-097",
+      "name": "Oak-Panelled Courtroom",
+      "styleAnchors": [
+        "Oak-Panelled Courtroom",
+        "traditional courtroom interior",
+        "raised bench under a carved canopy"
+      ],
+      "ref": "pack_07/SP07-097.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "civic-infrastructure-and-specialty-spaces",
+      "categoryName": "3. Civic Infrastructure And Specialty Spaces",
+      "domain": "traditional courtroom interior",
+      "tags": [
+        "architecture-and-interior",
+        "civic-infrastructure-and-specialty-spaces",
+        "traditional-courtroom-interior"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-097 oak-panelled courtroom traditional courtroom interior raised bench under a carved canopy 3. civic infrastructure and specialty spaces specialty spaces traditional courtroom interior pack_07 architecture & interior civic-infrastructure-and-specialty-spaces architecture-and-interior civic-infrastructure-and-specialty-spaces traditional-courtroom-interior"
+    },
+    {
+      "id": "SP07-098",
+      "name": "Radial Panopticon Cell Block",
+      "styleAnchors": [
+        "Radial Panopticon Cell Block",
+        "radial prison architecture",
+        "tiers of identical cells around a central void"
+      ],
+      "ref": "pack_07/SP07-098.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "civic-infrastructure-and-specialty-spaces",
+      "categoryName": "3. Civic Infrastructure And Specialty Spaces",
+      "domain": "radial prison architecture",
+      "tags": [
+        "architecture-and-interior",
+        "civic-infrastructure-and-specialty-spaces",
+        "radial-prison-architecture"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-098 radial panopticon cell block radial prison architecture tiers of identical cells around a central void 3. civic infrastructure and specialty spaces specialty spaces radial prison architecture pack_07 architecture & interior civic-infrastructure-and-specialty-spaces architecture-and-interior civic-infrastructure-and-specialty-spaces radial-prison-architecture"
+    },
+    {
+      "id": "SP07-099",
+      "name": "Yellow-Light Clean Room",
+      "styleAnchors": [
+        "Yellow-Light Clean Room",
+        "semiconductor clean room",
+        "filtered yellow-amber light"
+      ],
+      "ref": "pack_07/SP07-099.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "civic-infrastructure-and-specialty-spaces",
+      "categoryName": "3. Civic Infrastructure And Specialty Spaces",
+      "domain": "semiconductor clean room",
+      "tags": [
+        "architecture-and-interior",
+        "civic-infrastructure-and-specialty-spaces",
+        "semiconductor-clean-room"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-099 yellow-light clean room semiconductor clean room filtered yellow-amber light 3. civic infrastructure and specialty spaces specialty spaces semiconductor clean room pack_07 architecture & interior civic-infrastructure-and-specialty-spaces architecture-and-interior civic-infrastructure-and-specialty-spaces semiconductor-clean-room"
+    },
+    {
+      "id": "SP07-100",
+      "name": "White-Cube Gallery",
+      "styleAnchors": ["White-Cube Gallery", "contemporary art gallery", "seamless white walls"],
+      "ref": "pack_07/SP07-100.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "civic-infrastructure-and-specialty-spaces",
+      "categoryName": "3. Civic Infrastructure And Specialty Spaces",
+      "domain": "contemporary art gallery",
+      "tags": [
+        "architecture-and-interior",
+        "civic-infrastructure-and-specialty-spaces",
+        "contemporary-art-gallery"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-100 white-cube gallery contemporary art gallery seamless white walls 3. civic infrastructure and specialty spaces specialty spaces contemporary art gallery pack_07 architecture & interior civic-infrastructure-and-specialty-spaces architecture-and-interior civic-infrastructure-and-specialty-spaces contemporary-art-gallery"
+    },
+    {
+      "id": "SP07-101",
+      "name": "Cold War Bunker",
+      "styleAnchors": ["Cold War Bunker", "Cold War bunker interior", "round steel blast doors"],
+      "ref": "pack_07/SP07-101.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "civic-infrastructure-and-specialty-spaces",
+      "categoryName": "3. Civic Infrastructure And Specialty Spaces",
+      "domain": "Cold War bunker interior",
+      "tags": [
+        "architecture-and-interior",
+        "civic-infrastructure-and-specialty-spaces",
+        "cold-war-bunker-interior"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-101 cold war bunker cold war bunker interior round steel blast doors 3. civic infrastructure and specialty spaces specialty spaces cold war bunker interior pack_07 architecture & interior civic-infrastructure-and-specialty-spaces architecture-and-interior civic-infrastructure-and-specialty-spaces cold-war-bunker-interior"
+    },
+    {
+      "id": "SP07-102",
+      "name": "Glazed-Tile Municipal Baths",
+      "styleAnchors": [
+        "Glazed-Tile Municipal Baths",
+        "Edwardian public swimming baths",
+        "glazed brick with coloured tile bands"
+      ],
+      "ref": "pack_07/SP07-102.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "civic-infrastructure-and-specialty-spaces",
+      "categoryName": "3. Civic Infrastructure And Specialty Spaces",
+      "domain": "Edwardian public swimming baths",
+      "tags": [
+        "architecture-and-interior",
+        "civic-infrastructure-and-specialty-spaces",
+        "edwardian-public-swimming-baths"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-102 glazed-tile municipal baths edwardian public swimming baths glazed brick with coloured tile bands 3. civic infrastructure and specialty spaces specialty spaces edwardian public swimming baths pack_07 architecture & interior civic-infrastructure-and-specialty-spaces architecture-and-interior civic-infrastructure-and-specialty-spaces edwardian-public-swimming-baths"
     },
     {
       "id": "SP07-041",
@@ -582,6 +1054,222 @@
       "tags": ["architecture-and-interior", "landscape-and-garden-systems"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp07-050 botanical iron glasshouse 4. landscape and garden systems garden systems pack_07 architecture & interior landscape-and-garden-systems architecture-and-interior landscape-and-garden-systems"
+    },
+    {
+      "id": "SP07-103",
+      "name": "Picturesque Landscape Park",
+      "styleAnchors": ["Picturesque Landscape Park", "English landscape park", "serpentine lake"],
+      "ref": "pack_07/SP07-103.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "landscape-and-garden-systems",
+      "categoryName": "4. Landscape And Garden Systems",
+      "domain": "English landscape park",
+      "tags": [
+        "architecture-and-interior",
+        "landscape-and-garden-systems",
+        "english-landscape-park"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-103 picturesque landscape park english landscape park serpentine lake 4. landscape and garden systems garden systems english landscape park pack_07 architecture & interior landscape-and-garden-systems architecture-and-interior landscape-and-garden-systems english-landscape-park"
+    },
+    {
+      "id": "SP07-104",
+      "name": "Chahar Bagh Water Garden",
+      "styleAnchors": [
+        "Chahar Bagh Water Garden",
+        "Persian fourfold garden",
+        "four quarters divided by water channels"
+      ],
+      "ref": "pack_07/SP07-104.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "landscape-and-garden-systems",
+      "categoryName": "4. Landscape And Garden Systems",
+      "domain": "Persian fourfold garden",
+      "tags": [
+        "architecture-and-interior",
+        "landscape-and-garden-systems",
+        "persian-fourfold-garden"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-104 chahar bagh water garden persian fourfold garden four quarters divided by water channels 4. landscape and garden systems garden systems persian fourfold garden pack_07 architecture & interior landscape-and-garden-systems architecture-and-interior landscape-and-garden-systems persian-fourfold-garden"
+    },
+    {
+      "id": "SP07-105",
+      "name": "Moss Stroll Garden",
+      "styleAnchors": [
+        "Moss Stroll Garden",
+        "Japanese moss stroll garden",
+        "many-species moss carpet"
+      ],
+      "ref": "pack_07/SP07-105.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "landscape-and-garden-systems",
+      "categoryName": "4. Landscape And Garden Systems",
+      "domain": "Japanese moss stroll garden",
+      "tags": [
+        "architecture-and-interior",
+        "landscape-and-garden-systems",
+        "japanese-moss-stroll-garden"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-105 moss stroll garden japanese moss stroll garden many-species moss carpet 4. landscape and garden systems garden systems japanese moss stroll garden pack_07 architecture & interior landscape-and-garden-systems architecture-and-interior landscape-and-garden-systems japanese-moss-stroll-garden"
+    },
+    {
+      "id": "SP07-106",
+      "name": "Terraced Water-Stair Garden",
+      "styleAnchors": [
+        "Terraced Water-Stair Garden",
+        "Italian Renaissance terraced garden",
+        "stacked hillside terraces"
+      ],
+      "ref": "pack_07/SP07-106.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "landscape-and-garden-systems",
+      "categoryName": "4. Landscape And Garden Systems",
+      "domain": "Italian Renaissance terraced garden",
+      "tags": [
+        "architecture-and-interior",
+        "landscape-and-garden-systems",
+        "italian-renaissance-terraced-garden"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-106 terraced water-stair garden italian renaissance terraced garden stacked hillside terraces 4. landscape and garden systems garden systems italian renaissance terraced garden pack_07 architecture & interior landscape-and-garden-systems architecture-and-interior landscape-and-garden-systems italian-renaissance-terraced-garden"
+    },
+    {
+      "id": "SP07-107",
+      "name": "Scholar Garden Rockery",
+      "styleAnchors": [
+        "Scholar Garden Rockery",
+        "Chinese scholar garden",
+        "moon gate framed views"
+      ],
+      "ref": "pack_07/SP07-107.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "landscape-and-garden-systems",
+      "categoryName": "4. Landscape And Garden Systems",
+      "domain": "Chinese scholar garden",
+      "tags": [
+        "architecture-and-interior",
+        "landscape-and-garden-systems",
+        "chinese-scholar-garden"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-107 scholar garden rockery chinese scholar garden moon gate framed views 4. landscape and garden systems garden systems chinese scholar garden pack_07 architecture & interior landscape-and-garden-systems architecture-and-interior landscape-and-garden-systems chinese-scholar-garden"
+    },
+    {
+      "id": "SP07-108",
+      "name": "Naturalistic Perennial Drift",
+      "styleAnchors": [
+        "Naturalistic Perennial Drift",
+        "naturalistic perennial planting",
+        "grass matrix with repeated perennial drifts"
+      ],
+      "ref": "pack_07/SP07-108.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "landscape-and-garden-systems",
+      "categoryName": "4. Landscape And Garden Systems",
+      "domain": "naturalistic perennial planting",
+      "tags": [
+        "architecture-and-interior",
+        "landscape-and-garden-systems",
+        "naturalistic-perennial-planting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-108 naturalistic perennial drift naturalistic perennial planting grass matrix with repeated perennial drifts 4. landscape and garden systems garden systems naturalistic perennial planting pack_07 architecture & interior landscape-and-garden-systems architecture-and-interior landscape-and-garden-systems naturalistic-perennial-planting"
+    },
+    {
+      "id": "SP07-109",
+      "name": "Crevice Rock Garden",
+      "styleAnchors": [
+        "Crevice Rock Garden",
+        "alpine crevice garden",
+        "parallel stone slabs set on edge"
+      ],
+      "ref": "pack_07/SP07-109.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "landscape-and-garden-systems",
+      "categoryName": "4. Landscape And Garden Systems",
+      "domain": "alpine crevice garden",
+      "tags": [
+        "architecture-and-interior",
+        "landscape-and-garden-systems",
+        "alpine-crevice-garden"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-109 crevice rock garden alpine crevice garden parallel stone slabs set on edge 4. landscape and garden systems garden systems alpine crevice garden pack_07 architecture & interior landscape-and-garden-systems architecture-and-interior landscape-and-garden-systems alpine-crevice-garden"
+    },
+    {
+      "id": "SP07-110",
+      "name": "Cloister Herb Garth",
+      "styleAnchors": [
+        "Cloister Herb Garth",
+        "medieval monastic herb garden",
+        "square garth inside an arcaded walk"
+      ],
+      "ref": "pack_07/SP07-110.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "landscape-and-garden-systems",
+      "categoryName": "4. Landscape And Garden Systems",
+      "domain": "medieval monastic herb garden",
+      "tags": [
+        "architecture-and-interior",
+        "landscape-and-garden-systems",
+        "medieval-monastic-herb-garden"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-110 cloister herb garth medieval monastic herb garden square garth inside an arcaded walk 4. landscape and garden systems garden systems medieval monastic herb garden pack_07 architecture & interior landscape-and-garden-systems architecture-and-interior landscape-and-garden-systems medieval-monastic-herb-garden"
+    },
+    {
+      "id": "SP07-111",
+      "name": "Walled Espalier Potager",
+      "styleAnchors": [
+        "Walled Espalier Potager",
+        "walled kitchen garden",
+        "fan-trained fruit trees flat on brick walls"
+      ],
+      "ref": "pack_07/SP07-111.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "landscape-and-garden-systems",
+      "categoryName": "4. Landscape And Garden Systems",
+      "domain": "walled kitchen garden",
+      "tags": [
+        "architecture-and-interior",
+        "landscape-and-garden-systems",
+        "walled-kitchen-garden"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-111 walled espalier potager walled kitchen garden fan-trained fruit trees flat on brick walls 4. landscape and garden systems garden systems walled kitchen garden pack_07 architecture & interior landscape-and-garden-systems architecture-and-interior landscape-and-garden-systems walled-kitchen-garden"
+    },
+    {
+      "id": "SP07-112",
+      "name": "Stepped Paddy Terraces",
+      "styleAnchors": [
+        "Stepped Paddy Terraces",
+        "rice terrace landscape",
+        "contour-following flooded terraces"
+      ],
+      "ref": "pack_07/SP07-112.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "landscape-and-garden-systems",
+      "categoryName": "4. Landscape And Garden Systems",
+      "domain": "rice terrace landscape",
+      "tags": [
+        "architecture-and-interior",
+        "landscape-and-garden-systems",
+        "rice-terrace-landscape"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-112 stepped paddy terraces rice terrace landscape contour-following flooded terraces 4. landscape and garden systems garden systems rice terrace landscape pack_07 architecture & interior landscape-and-garden-systems architecture-and-interior landscape-and-garden-systems rice-terrace-landscape"
     },
     {
       "id": "SP07-051",
@@ -740,6 +1428,160 @@
       "searchableText": "sp07-063 sepulchral civic monumentalism 5. fantasy and mythic architecture imagined architecture pack_07 architecture & interior fantasy-and-mythic-architecture architecture-and-interior fantasy-and-mythic-architecture"
     },
     {
+      "id": "SP07-113",
+      "name": "Rock-Hewn Colossus Facade",
+      "styleAnchors": [
+        "Rock-Hewn Colossus Facade",
+        "rock-cut cliff architecture",
+        "carved in one piece from the cliff"
+      ],
+      "ref": "pack_07/SP07-113.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "fantasy-and-mythic-architecture",
+      "categoryName": "5. Fantasy And Mythic Architecture",
+      "domain": "rock-cut cliff architecture",
+      "tags": [
+        "architecture-and-interior",
+        "fantasy-and-mythic-architecture",
+        "rock-cut-cliff-architecture"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-113 rock-hewn colossus facade rock-cut cliff architecture carved in one piece from the cliff 5. fantasy and mythic architecture imagined architecture rock-cut cliff architecture pack_07 architecture & interior fantasy-and-mythic-architecture architecture-and-interior fantasy-and-mythic-architecture rock-cut-cliff-architecture"
+    },
+    {
+      "id": "SP07-114",
+      "name": "Tarred Stave-Hall Interlace",
+      "styleAnchors": [
+        "Tarred Stave-Hall Interlace",
+        "northern timber stave architecture",
+        "tarred scale-shingle roofs"
+      ],
+      "ref": "pack_07/SP07-114.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "fantasy-and-mythic-architecture",
+      "categoryName": "5. Fantasy And Mythic Architecture",
+      "domain": "northern timber stave architecture",
+      "tags": [
+        "architecture-and-interior",
+        "fantasy-and-mythic-architecture",
+        "northern-timber-stave-architecture"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-114 tarred stave-hall interlace northern timber stave architecture tarred scale-shingle roofs 5. fantasy and mythic architecture imagined architecture northern timber stave architecture pack_07 architecture & interior fantasy-and-mythic-architecture architecture-and-interior fantasy-and-mythic-architecture northern-timber-stave-architecture"
+    },
+    {
+      "id": "SP07-115",
+      "name": "Cloud-Tier Lacquer Pagoda",
+      "styleAnchors": [
+        "Cloud-Tier Lacquer Pagoda",
+        "celestial tiered-eave architecture",
+        "stacked upswept eaves"
+      ],
+      "ref": "pack_07/SP07-115.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "fantasy-and-mythic-architecture",
+      "categoryName": "5. Fantasy And Mythic Architecture",
+      "domain": "celestial tiered-eave architecture",
+      "tags": [
+        "architecture-and-interior",
+        "fantasy-and-mythic-architecture",
+        "celestial-tiered-eave-architecture"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-115 cloud-tier lacquer pagoda celestial tiered-eave architecture stacked upswept eaves 5. fantasy and mythic architecture imagined architecture celestial tiered-eave architecture pack_07 architecture & interior fantasy-and-mythic-architecture architecture-and-interior fantasy-and-mythic-architecture celestial-tiered-eave-architecture"
+    },
+    {
+      "id": "SP07-116",
+      "name": "Woven Willow Roundhouse",
+      "styleAnchors": [
+        "Woven Willow Roundhouse",
+        "woven wattle and thatch architecture",
+        "woven willow and hazel wattle"
+      ],
+      "ref": "pack_07/SP07-116.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "fantasy-and-mythic-architecture",
+      "categoryName": "5. Fantasy And Mythic Architecture",
+      "domain": "woven wattle and thatch architecture",
+      "tags": [
+        "architecture-and-interior",
+        "fantasy-and-mythic-architecture",
+        "woven-wattle-and-thatch-architecture"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-116 woven willow roundhouse woven wattle and thatch architecture woven willow and hazel wattle 5. fantasy and mythic architecture imagined architecture woven wattle and thatch architecture pack_07 architecture & interior fantasy-and-mythic-architecture architecture-and-interior fantasy-and-mythic-architecture woven-wattle-and-thatch-architecture"
+    },
+    {
+      "id": "SP07-117",
+      "name": "Chitin Carapace Architecture",
+      "styleAnchors": [
+        "Chitin Carapace Architecture",
+        "insect-shell organic architecture",
+        "overlapping iridescent shell plates"
+      ],
+      "ref": "pack_07/SP07-117.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "fantasy-and-mythic-architecture",
+      "categoryName": "5. Fantasy And Mythic Architecture",
+      "domain": "insect-shell organic architecture",
+      "tags": [
+        "architecture-and-interior",
+        "fantasy-and-mythic-architecture",
+        "insect-shell-organic-architecture"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-117 chitin carapace architecture insect-shell organic architecture overlapping iridescent shell plates 5. fantasy and mythic architecture imagined architecture insect-shell organic architecture pack_07 architecture & interior fantasy-and-mythic-architecture architecture-and-interior fantasy-and-mythic-architecture insect-shell-organic-architecture"
+    },
+    {
+      "id": "SP07-118",
+      "name": "Star-Lattice Desert Palace",
+      "styleAnchors": [
+        "Star-Lattice Desert Palace",
+        "geometric lattice desert architecture",
+        "carved geometric star lattices"
+      ],
+      "ref": "pack_07/SP07-118.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "fantasy-and-mythic-architecture",
+      "categoryName": "5. Fantasy And Mythic Architecture",
+      "domain": "geometric lattice desert architecture",
+      "tags": [
+        "architecture-and-interior",
+        "fantasy-and-mythic-architecture",
+        "geometric-lattice-desert-architecture"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-118 star-lattice desert palace geometric lattice desert architecture carved geometric star lattices 5. fantasy and mythic architecture imagined architecture geometric lattice desert architecture pack_07 architecture & interior fantasy-and-mythic-architecture architecture-and-interior fantasy-and-mythic-architecture geometric-lattice-desert-architecture"
+    },
+    {
+      "id": "SP07-119",
+      "name": "Nautilus Chamber Architecture",
+      "styleAnchors": [
+        "Nautilus Chamber Architecture",
+        "spiral shell-grown architecture",
+        "logarithmic spiral plan"
+      ],
+      "ref": "pack_07/SP07-119.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "fantasy-and-mythic-architecture",
+      "categoryName": "5. Fantasy And Mythic Architecture",
+      "domain": "spiral shell-grown architecture",
+      "tags": [
+        "architecture-and-interior",
+        "fantasy-and-mythic-architecture",
+        "spiral-shell-grown-architecture"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-119 nautilus chamber architecture spiral shell-grown architecture logarithmic spiral plan 5. fantasy and mythic architecture imagined architecture spiral shell-grown architecture pack_07 architecture & interior fantasy-and-mythic-architecture architecture-and-interior fantasy-and-mythic-architecture spiral-shell-grown-architecture"
+    },
+    {
       "id": "SP07-065",
       "name": "Papercraft Diorama Construction",
       "ref": "pack_07/SP07-065.yaml",
@@ -860,6 +1702,222 @@
       "searchableText": "sp07-074 toy-scale sectional cutaway 6. toy craft and miniature architecture miniature construction pack_07 architecture & interior toy-craft-and-miniature-architecture architecture-and-interior toy-craft-and-miniature-architecture"
     },
     {
+      "id": "SP07-120",
+      "name": "Matchstick Glue-Up Model",
+      "styleAnchors": [
+        "Matchstick Glue-Up Model",
+        "glued matchstick construction",
+        "glued matchstick courses"
+      ],
+      "ref": "pack_07/SP07-120.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "toy-craft-and-miniature-architecture",
+      "categoryName": "6. Toy Craft And Miniature Architecture",
+      "domain": "glued matchstick construction",
+      "tags": [
+        "architecture-and-interior",
+        "toy-craft-and-miniature-architecture",
+        "glued-matchstick-construction"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-120 matchstick glue-up model glued matchstick construction glued matchstick courses 6. toy craft and miniature architecture miniature construction glued matchstick construction pack_07 architecture & interior toy-craft-and-miniature-architecture architecture-and-interior toy-craft-and-miniature-architecture glued-matchstick-construction"
+    },
+    {
+      "id": "SP07-121",
+      "name": "Layer-Line 3D-Print Model",
+      "styleAnchors": [
+        "Layer-Line 3D-Print Model",
+        "FDM printed plastic model",
+        "visible horizontal layer lines"
+      ],
+      "ref": "pack_07/SP07-121.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "toy-craft-and-miniature-architecture",
+      "categoryName": "6. Toy Craft And Miniature Architecture",
+      "domain": "FDM printed plastic model",
+      "tags": [
+        "architecture-and-interior",
+        "toy-craft-and-miniature-architecture",
+        "fdm-printed-plastic-model"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-121 layer-line 3d-print model fdm printed plastic model visible horizontal layer lines 6. toy craft and miniature architecture miniature construction fdm printed plastic model pack_07 architecture & interior toy-craft-and-miniature-architecture architecture-and-interior toy-craft-and-miniature-architecture fdm-printed-plastic-model"
+    },
+    {
+      "id": "SP07-122",
+      "name": "Sprue-Frame Model Kit",
+      "styleAnchors": [
+        "Sprue-Frame Model Kit",
+        "unassembled plastic model kit",
+        "parts on rectangular sprue frames"
+      ],
+      "ref": "pack_07/SP07-122.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "toy-craft-and-miniature-architecture",
+      "categoryName": "6. Toy Craft And Miniature Architecture",
+      "domain": "unassembled plastic model kit",
+      "tags": [
+        "architecture-and-interior",
+        "toy-craft-and-miniature-architecture",
+        "unassembled-plastic-model-kit"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-122 sprue-frame model kit unassembled plastic model kit parts on rectangular sprue frames 6. toy craft and miniature architecture miniature construction unassembled plastic model kit pack_07 architecture & interior toy-craft-and-miniature-architecture architecture-and-interior toy-craft-and-miniature-architecture unassembled-plastic-model-kit"
+    },
+    {
+      "id": "SP07-123",
+      "name": "Quilled Paper Coil Relief",
+      "styleAnchors": [
+        "Quilled Paper Coil Relief",
+        "paper quilling relief",
+        "rolled paper-strip coils"
+      ],
+      "ref": "pack_07/SP07-123.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "toy-craft-and-miniature-architecture",
+      "categoryName": "6. Toy Craft And Miniature Architecture",
+      "domain": "paper quilling relief",
+      "tags": [
+        "architecture-and-interior",
+        "toy-craft-and-miniature-architecture",
+        "paper-quilling-relief"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-123 quilled paper coil relief paper quilling relief rolled paper-strip coils 6. toy craft and miniature architecture miniature construction paper quilling relief pack_07 architecture & interior toy-craft-and-miniature-architecture architecture-and-interior toy-craft-and-miniature-architecture paper-quilling-relief"
+    },
+    {
+      "id": "SP07-124",
+      "name": "Papier-Mache Strip Sculpture",
+      "styleAnchors": [
+        "Papier-Mache Strip Sculpture",
+        "papier-mache craft sculpture",
+        "pasted torn-paper strips"
+      ],
+      "ref": "pack_07/SP07-124.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "toy-craft-and-miniature-architecture",
+      "categoryName": "6. Toy Craft And Miniature Architecture",
+      "domain": "papier-mache craft sculpture",
+      "tags": [
+        "architecture-and-interior",
+        "toy-craft-and-miniature-architecture",
+        "papier-mache-craft-sculpture"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-124 papier-mache strip sculpture papier-mache craft sculpture pasted torn-paper strips 6. toy craft and miniature architecture miniature construction papier-mache craft sculpture pack_07 architecture & interior toy-craft-and-miniature-architecture architecture-and-interior toy-craft-and-miniature-architecture papier-mache-craft-sculpture"
+    },
+    {
+      "id": "SP07-125",
+      "name": "Snow-Globe Dome Miniature",
+      "styleAnchors": [
+        "Snow-Globe Dome Miniature",
+        "snow globe presentation",
+        "water-filled glass dome"
+      ],
+      "ref": "pack_07/SP07-125.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "toy-craft-and-miniature-architecture",
+      "categoryName": "6. Toy Craft And Miniature Architecture",
+      "domain": "snow globe presentation",
+      "tags": [
+        "architecture-and-interior",
+        "toy-craft-and-miniature-architecture",
+        "snow-globe-presentation"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-125 snow-globe dome miniature snow globe presentation water-filled glass dome 6. toy craft and miniature architecture miniature construction snow globe presentation pack_07 architecture & interior toy-craft-and-miniature-architecture architecture-and-interior toy-craft-and-miniature-architecture snow-globe-presentation"
+    },
+    {
+      "id": "SP07-126",
+      "name": "Static-Grass Scenic Layout",
+      "styleAnchors": [
+        "Static-Grass Scenic Layout",
+        "hobby scenic baseboard diorama",
+        "static-grass flock"
+      ],
+      "ref": "pack_07/SP07-126.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "toy-craft-and-miniature-architecture",
+      "categoryName": "6. Toy Craft And Miniature Architecture",
+      "domain": "hobby scenic baseboard diorama",
+      "tags": [
+        "architecture-and-interior",
+        "toy-craft-and-miniature-architecture",
+        "hobby-scenic-baseboard-diorama"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-126 static-grass scenic layout hobby scenic baseboard diorama static-grass flock 6. toy craft and miniature architecture miniature construction hobby scenic baseboard diorama pack_07 architecture & interior toy-craft-and-miniature-architecture architecture-and-interior toy-craft-and-miniature-architecture hobby-scenic-baseboard-diorama"
+    },
+    {
+      "id": "SP07-127",
+      "name": "Chenille Pipe-Cleaner Craft",
+      "styleAnchors": [
+        "Chenille Pipe-Cleaner Craft",
+        "pipe-cleaner and pom-pom craft",
+        "twisted fuzzy chenille stems"
+      ],
+      "ref": "pack_07/SP07-127.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "toy-craft-and-miniature-architecture",
+      "categoryName": "6. Toy Craft And Miniature Architecture",
+      "domain": "pipe-cleaner and pom-pom craft",
+      "tags": [
+        "architecture-and-interior",
+        "toy-craft-and-miniature-architecture",
+        "pipe-cleaner-and-pom-pom-craft"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-127 chenille pipe-cleaner craft pipe-cleaner and pom-pom craft twisted fuzzy chenille stems 6. toy craft and miniature architecture miniature construction pipe-cleaner and pom-pom craft pack_07 architecture & interior toy-craft-and-miniature-architecture architecture-and-interior toy-craft-and-miniature-architecture pipe-cleaner-and-pom-pom-craft"
+    },
+    {
+      "id": "SP07-128",
+      "name": "Tin-Can Scrap Assemblage",
+      "styleAnchors": [
+        "Tin-Can Scrap Assemblage",
+        "found-object scrap miniature",
+        "cut tin cans and bottle caps"
+      ],
+      "ref": "pack_07/SP07-128.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "toy-craft-and-miniature-architecture",
+      "categoryName": "6. Toy Craft And Miniature Architecture",
+      "domain": "found-object scrap miniature",
+      "tags": [
+        "architecture-and-interior",
+        "toy-craft-and-miniature-architecture",
+        "found-object-scrap-miniature"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-128 tin-can scrap assemblage found-object scrap miniature cut tin cans and bottle caps 6. toy craft and miniature architecture miniature construction found-object scrap miniature pack_07 architecture & interior toy-craft-and-miniature-architecture architecture-and-interior toy-craft-and-miniature-architecture found-object-scrap-miniature"
+    },
+    {
+      "id": "SP07-129",
+      "name": "Carved Soap-Bar Miniature",
+      "styleAnchors": [
+        "Carved Soap-Bar Miniature",
+        "soap carving",
+        "carved from a single soap bar"
+      ],
+      "ref": "pack_07/SP07-129.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "toy-craft-and-miniature-architecture",
+      "categoryName": "6. Toy Craft And Miniature Architecture",
+      "domain": "soap carving",
+      "tags": ["architecture-and-interior", "toy-craft-and-miniature-architecture", "soap-carving"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-129 carved soap-bar miniature soap carving carved from a single soap bar 6. toy craft and miniature architecture miniature construction soap carving pack_07 architecture & interior toy-craft-and-miniature-architecture architecture-and-interior toy-craft-and-miniature-architecture soap-carving"
+    },
+    {
       "id": "SP07-010",
       "name": "Futuristic Pod",
       "ref": "pack_07/SP07-010.yaml",
@@ -966,7 +2024,249 @@
       "tags": ["architecture-and-interior", "megastructure-and-impossible-space"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp07-080 dimensional retrotech surfaces 7. megastructure and impossible space impossible space pack_07 architecture & interior megastructure-and-impossible-space architecture-and-interior megastructure-and-impossible-space"
+    },
+    {
+      "id": "SP07-130",
+      "name": "Droste Recursive Room",
+      "styleAnchors": [
+        "Droste Recursive Room",
+        "self-containing recursive space",
+        "space containing its own copy"
+      ],
+      "ref": "pack_07/SP07-130.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "megastructure-and-impossible-space",
+      "categoryName": "7. Megastructure And Impossible Space",
+      "domain": "self-containing recursive space",
+      "tags": [
+        "architecture-and-interior",
+        "megastructure-and-impossible-space",
+        "self-containing-recursive-space"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-130 droste recursive room self-containing recursive space space containing its own copy 7. megastructure and impossible space impossible space self-containing recursive space pack_07 architecture & interior megastructure-and-impossible-space architecture-and-interior megastructure-and-impossible-space self-containing-recursive-space"
+    },
+    {
+      "id": "SP07-131",
+      "name": "Folded-Horizon City",
+      "styleAnchors": [
+        "Folded-Horizon City",
+        "folded ground-plane paradox",
+        "ground hinging along a sharp crease"
+      ],
+      "ref": "pack_07/SP07-131.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "megastructure-and-impossible-space",
+      "categoryName": "7. Megastructure And Impossible Space",
+      "domain": "folded ground-plane paradox",
+      "tags": [
+        "architecture-and-interior",
+        "megastructure-and-impossible-space",
+        "folded-ground-plane-paradox"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-131 folded-horizon city folded ground-plane paradox ground hinging along a sharp crease 7. megastructure and impossible space impossible space folded ground-plane paradox pack_07 architecture & interior megastructure-and-impossible-space architecture-and-interior megastructure-and-impossible-space folded-ground-plane-paradox"
+    },
+    {
+      "id": "SP07-132",
+      "name": "Anamorphic Viewpoint Alignment",
+      "styleAnchors": [
+        "Anamorphic Viewpoint Alignment",
+        "single-viewpoint anamorphic space",
+        "fragments at different depths"
+      ],
+      "ref": "pack_07/SP07-132.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "megastructure-and-impossible-space",
+      "categoryName": "7. Megastructure And Impossible Space",
+      "domain": "single-viewpoint anamorphic space",
+      "tags": [
+        "architecture-and-interior",
+        "megastructure-and-impossible-space",
+        "single-viewpoint-anamorphic-space"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-132 anamorphic viewpoint alignment single-viewpoint anamorphic space fragments at different depths 7. megastructure and impossible space impossible space single-viewpoint anamorphic space pack_07 architecture & interior megastructure-and-impossible-space architecture-and-interior megastructure-and-impossible-space single-viewpoint-anamorphic-space"
+    },
+    {
+      "id": "SP07-133",
+      "name": "Mobius Loop Architecture",
+      "styleAnchors": [
+        "Mobius Loop Architecture",
+        "single-surface twisted loop structure",
+        "band twisted once and joined"
+      ],
+      "ref": "pack_07/SP07-133.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "megastructure-and-impossible-space",
+      "categoryName": "7. Megastructure And Impossible Space",
+      "domain": "single-surface twisted loop structure",
+      "tags": [
+        "architecture-and-interior",
+        "megastructure-and-impossible-space",
+        "single-surface-twisted-loop-structure"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-133 mobius loop architecture single-surface twisted loop structure band twisted once and joined 7. megastructure and impossible space impossible space single-surface twisted loop structure pack_07 architecture & interior megastructure-and-impossible-space architecture-and-interior megastructure-and-impossible-space single-surface-twisted-loop-structure"
+    },
+    {
+      "id": "SP07-134",
+      "name": "Colossal Scale Displacement",
+      "styleAnchors": [
+        "Colossal Scale Displacement",
+        "object-as-landscape scale paradox",
+        "ordinary object at landscape scale"
+      ],
+      "ref": "pack_07/SP07-134.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "megastructure-and-impossible-space",
+      "categoryName": "7. Megastructure And Impossible Space",
+      "domain": "object-as-landscape scale paradox",
+      "tags": [
+        "architecture-and-interior",
+        "megastructure-and-impossible-space",
+        "object-as-landscape-scale-paradox"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-134 colossal scale displacement object-as-landscape scale paradox ordinary object at landscape scale 7. megastructure and impossible space impossible space object-as-landscape scale paradox pack_07 architecture & interior megastructure-and-impossible-space architecture-and-interior megastructure-and-impossible-space object-as-landscape-scale-paradox"
+    },
+    {
+      "id": "SP07-135",
+      "name": "Multi-Gravity Block Cluster",
+      "styleAnchors": [
+        "Multi-Gravity Block Cluster",
+        "local-gravity paradox",
+        "faces with their own gravity"
+      ],
+      "ref": "pack_07/SP07-135.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "megastructure-and-impossible-space",
+      "categoryName": "7. Megastructure And Impossible Space",
+      "domain": "local-gravity paradox",
+      "tags": [
+        "architecture-and-interior",
+        "megastructure-and-impossible-space",
+        "local-gravity-paradox"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-135 multi-gravity block cluster local-gravity paradox faces with their own gravity 7. megastructure and impossible space impossible space local-gravity paradox pack_07 architecture & interior megastructure-and-impossible-space architecture-and-interior megastructure-and-impossible-space local-gravity-paradox"
+    },
+    {
+      "id": "SP07-136",
+      "name": "Terraced Arcology Pyramid",
+      "styleAnchors": [
+        "Terraced Arcology Pyramid",
+        "city-in-one-building megastructure",
+        "stepped pyramid city"
+      ],
+      "ref": "pack_07/SP07-136.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "megastructure-and-impossible-space",
+      "categoryName": "7. Megastructure And Impossible Space",
+      "domain": "city-in-one-building megastructure",
+      "tags": [
+        "architecture-and-interior",
+        "megastructure-and-impossible-space",
+        "city-in-one-building-megastructure"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-136 terraced arcology pyramid city-in-one-building megastructure stepped pyramid city 7. megastructure and impossible space impossible space city-in-one-building megastructure pack_07 architecture & interior megastructure-and-impossible-space architecture-and-interior megastructure-and-impossible-space city-in-one-building-megastructure"
+    },
+    {
+      "id": "SP07-137",
+      "name": "Orbital Tether Anchor",
+      "styleAnchors": [
+        "Orbital Tether Anchor",
+        "space elevator megastructure",
+        "ribbon tether rising to orbit"
+      ],
+      "ref": "pack_07/SP07-137.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "megastructure-and-impossible-space",
+      "categoryName": "7. Megastructure And Impossible Space",
+      "domain": "space elevator megastructure",
+      "tags": [
+        "architecture-and-interior",
+        "megastructure-and-impossible-space",
+        "space-elevator-megastructure"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-137 orbital tether anchor space elevator megastructure ribbon tether rising to orbit 7. megastructure and impossible space impossible space space elevator megastructure pack_07 architecture & interior megastructure-and-impossible-space architecture-and-interior megastructure-and-impossible-space space-elevator-megastructure"
+    },
+    {
+      "id": "SP07-138",
+      "name": "Abyss-Span Bridge City",
+      "styleAnchors": [
+        "Abyss-Span Bridge City",
+        "inhabited bridge megastructure",
+        "town built on a colossal bridge"
+      ],
+      "ref": "pack_07/SP07-138.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "megastructure-and-impossible-space",
+      "categoryName": "7. Megastructure And Impossible Space",
+      "domain": "inhabited bridge megastructure",
+      "tags": [
+        "architecture-and-interior",
+        "megastructure-and-impossible-space",
+        "inhabited-bridge-megastructure"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-138 abyss-span bridge city inhabited bridge megastructure town built on a colossal bridge 7. megastructure and impossible space impossible space inhabited bridge megastructure pack_07 architecture & interior megastructure-and-impossible-space architecture-and-interior megastructure-and-impossible-space inhabited-bridge-megastructure"
+    },
+    {
+      "id": "SP07-139",
+      "name": "Vertical Shaft Sinkhole City",
+      "styleAnchors": [
+        "Vertical Shaft Sinkhole City",
+        "inward-facing pit megastructure",
+        "city lining a cylindrical sinkhole"
+      ],
+      "ref": "pack_07/SP07-139.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "megastructure-and-impossible-space",
+      "categoryName": "7. Megastructure And Impossible Space",
+      "domain": "inward-facing pit megastructure",
+      "tags": [
+        "architecture-and-interior",
+        "megastructure-and-impossible-space",
+        "inward-facing-pit-megastructure"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-139 vertical shaft sinkhole city inward-facing pit megastructure city lining a cylindrical sinkhole 7. megastructure and impossible space impossible space inward-facing pit megastructure pack_07 architecture & interior megastructure-and-impossible-space architecture-and-interior megastructure-and-impossible-space inward-facing-pit-megastructure"
+    },
+    {
+      "id": "SP07-140",
+      "name": "Ocean-Barrier Megadam",
+      "styleAnchors": [
+        "Ocean-Barrier Megadam",
+        "sea-holding dam megastructure",
+        "kilometre-high curved sea wall"
+      ],
+      "ref": "pack_07/SP07-140.yaml",
+      "packId": "pack_07",
+      "packName": "Architecture & Interior",
+      "categoryId": "megastructure-and-impossible-space",
+      "categoryName": "7. Megastructure And Impossible Space",
+      "domain": "sea-holding dam megastructure",
+      "tags": [
+        "architecture-and-interior",
+        "megastructure-and-impossible-space",
+        "sea-holding-dam-megastructure"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp07-140 ocean-barrier megadam sea-holding dam megastructure kilometre-high curved sea wall 7. megastructure and impossible space impossible space sea-holding dam megastructure pack_07 architecture & interior megastructure-and-impossible-space architecture-and-interior megastructure-and-impossible-space sea-holding-dam-megastructure"
     }
   ],
-  "totalPresetCount": 80
+  "totalPresetCount": 140
 }

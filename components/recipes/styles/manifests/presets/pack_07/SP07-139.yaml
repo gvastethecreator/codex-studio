@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP07-139
+packId: pack_07
+name: Vertical Shaft Sinkhole City
+styleAnchors:
+  - Vertical Shaft Sinkhole City
+  - inward-facing pit megastructure
+  - city lining a cylindrical sinkhole
+displayName: Vertical Shaft Sinkhole City
+category: 7. Megastructure And Impossible Space
+domain: inward-facing pit megastructure
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - megastructure-and-impossible-space
+  - sinkhole
+  - shaft-city
+  - megastructure
+visualDna:
+  aesthetic: 'Shaft city: a city lining the inner walls of a colossal cylindrical sinkhole, ring terraces spiraling down, the only sky a disc of light far above.'
+  subject_treatment: Keep the requested subject, action and geometry stable; this preset owns the cylindrical shaft setting and its inward-facing ring terraces, and it never bends, loops or breaks the requested structure.
+  color_and_tone: Rock ochre and grey, warm lamp light on lower rings, a bright white sky disc; values darken with depth.
+  lighting_and_shadow: Daylight falling from the opening and fading ring by ring, lamps taking over in the lower levels.
+  texture_and_material: Raw rock walls, cantilevered platforms, spiral ramps, ropes and hanging greenery.
+  camera_and_composition: Keep the requested geometry; circular rings frame the view, looking up to the sky disc or down into the dark.
+  atmosphere_and_mood: Enclosed and communal, a city turned inside out.
+  rendering_and_quality: Painterly realism with a smooth light gradient from opening to depth.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vertical Shaft Sinkhole City as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: city lining a cylindrical sinkhole; spiral ring terraces; bright sky disc overhead; light fading with depth; cantilevered platforms
+avoidRules:
+  - black and gold sci-fi palette by default
+  - franchise ship or station likeness
+  - readable signage or screens
+  - glossy mirror floor by default
+  - open horizon
+  - mine elevator cage
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, open horizon, mine elevator cage, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: megastructure-and-impossible-space
+  categoryName: 7. Megastructure And Impossible Space
+  tags:
+    - architecture-and-interior
+    - megastructure-and-impossible-space
+    - sinkhole
+    - shaft-city
+    - megastructure
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: inward-facing pit megastructure

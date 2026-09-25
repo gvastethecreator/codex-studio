@@ -3,7 +3,7 @@ id: SP07-042
 packId: pack_07
 name: Cottage Bloom Layering
 category: 4. Landscape And Garden Systems
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,85 +12,36 @@ tags:
   - architecture-and-interior
   - landscape-and-garden-systems
 visualDna:
-  aesthetic: >-
-    Cottage Bloom Layering acts as a transferable architecture/interior router: layered flower
-    heights, curved path fragments, mossy brick or rough stone, pastel seasonal blooms; fuse it with
-    landscape system grammar with terrain edge, planting structure, water or gravel control,
-    climatic adaptation, and outdoor spatial choreography; route spatial grammar, material behavior,
-    scale, ornament, and light over prompt X without requiring the default sample anchor, fixed
-    spatial set, landscape setup, or object sample.
-  subject_treatment: >-
-    Preserve prompt subject, action, and context while translating any requested subject through
-    ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild massing,
-    and climate-responsive material cues; treat layered flower heights, curved path fragments, mossy
-    brick or rough stone, pastel seasonal blooms as massing, edge, surface, joinery, threshold, or
-    ornament behavior rather than a mandatory building scene.
-  color_and_tone: >-
-    Map color through botanical greens, mineral neutrals, climate-specific ochres or water blues,
-    controlled bloom accents, and readable ground-plane contrast; let source cues such as layered
-    flower heights, curved path fragments, mossy brick or rough stone, pastel seasonal blooms decide
-    accent hierarchy, material temperature, and value separation while staying attached to the
-    requested content.
-  lighting_and_shadow: >-
-    Use outdoor sun or shade logic, leaf-filtered light, water reflection, gravel-shadow texture,
-    dew glints, and scale-setting atmospheric depth; make light reveal joints, relief, material
-    depth, scale, and atmosphere from layered flower heights, curved path fragments, mossy brick or
-    rough stone, pastel seasonal blooms without replacing prompt X with a stock architectural
-    render.
-  texture_and_material: >-
-    Render hedge, gravel, stone, corten, timber, waterline, grass, planted soil, glasshouse iron,
-    condensation, and weathered landscape edging; prioritize the tactile signals in layered flower
-    heights, curved path fragments, mossy brick or rough stone, pastel seasonal blooms, with
-    believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.
-  camera_and_composition: >-
-    Frame through cropped ground-plane anchors, axis or path geometry, planting layers, clipped
-    sightlines, terrace bands, and detail-first landscape framing; convert layered flower heights,
-    curved path fragments, mossy brick or rough stone, pastel seasonal blooms into reusable
-    perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed
-    style sample layout.
-  atmosphere_and_mood: >-
-    Carry mood through ceremonial control, domestic abundance, ecological reuse, dry-climate
-    resilience, hospitality calm, or playful spatial misdirection; the preset can support adult,
-    strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for
-    them while keeping the architectural identity readable.
-  rendering_and_quality: >-
-    Finish with crisp landscape-design finish with readable planting structure, no generic park
-    lawn, no postcard vista, and no empty texture field; keep clean denoise, legible construction,
-    stable object or anatomy structure when applicable, no watermark, no fake readable text, no
-    logo, no camera prop, and no prompt-literal card copy.
-  key_features: >-
-    layered flower heights, curved path fragments, mossy brick or rough stone, pastel seasonal
-    blooms; ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild
-    massing, and climate-responsive material cues; hedge, gravel, stone, corten, timber, waterline,
-    grass, planted soil, glasshouse iron, condensation, and weathered landscape edging; cropped
-    ground-plane anchors, axis or path geometry, planting layers, clipped sightlines, terrace bands,
-    and detail-first landscape framing
-  creative_brief: >-
-    Apply Cottage Bloom Layering after prompt X as a transferable architecture/interior style layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
-    layered flower heights, curved path fragments, mossy brick or rough stone, pastel seasonal
-    blooms, landscape system grammar with terrain edge, planting structure, water or gravel control,
-    climatic adaptation, and outdoor spatial choreography, material discipline, spatial grammar, and
-    negative controls without requiring a single spatial sample, product-photo setup, aisle-like
-    default, or empty abstraction.
+  aesthetic: 'Cottage bloom layering: a small garden crammed with self-seeding flowers, herbs and vegetables in tiers of height, spilling over narrow brick or stone paths and low walls.'
+  subject_treatment: Keep the requested site, subject, action and camera; reorganise ground plane, planting, edging and paths in this garden system only where the prompt has outdoor ground, and add no garden to an interior, object or portrait prompt.
+  color_and_tone: Pastel pinks, lavender blues, cream and white with deep purple and apricot accents, fresh greens, weathered brick red; soft, mixed and cheerful.
+  lighting_and_shadow: Soft morning or overcast light, dappled shade from a fruit tree, flower heads backlit by low sun.
+  texture_and_material: Foxgloves, hollyhocks, delphiniums, roses on old walls, lavender and catmint edging, mossy brick paths, drystone walls, a wooden gate.
+  camera_and_composition: Keep the requested view; eye-level through layered flowers, tall spires in the back, low plants overhanging the path in front.
+  atmosphere_and_mood: Abundant, informal and homely, a garden that grew itself.
+  rendering_and_quality: Natural-light photograph with individual plant species legible, no plastic flowers or show-garden gloss.
+  key_features: tiered self-seeding flowers; foxglove and hollyhock spires; plants spilling over mossy brick paths; roses on old walls; lavender edging
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cottage Bloom Layering as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
-  - formal
-  - concrete
+  - golden-hour garden postcard formula
+  - corten steel edging as default
+  - real city skyline or landmark
+  - adding a garden to an interior or object prompt
   - formal parterre
+  - clipped hedges
+  - show-garden gloss
+  - formal
   - concrete patio
   - porch furniture
   - market aisle
   - library aisle
   - corridor
-  - person
   - camera prop
   - empty abstraction
   - generic park lawn
   - postcard garden
-  - people scene
   - blank texture field
   - fixed building-only scene
-  - mandatory interior interior zones
   - corridor perspective
   - furniture showroom
   - prompt-required card
@@ -99,15 +50,16 @@ avoidRules:
   - watermark
   - mandatory interior set
   - prompt-literal card
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-042.webp
 attributes:
-  negativePrompt: >-
-    formal, concrete, formal parterre, concrete patio, porch furniture, market aisle, library aisle,
-    corridor, person, camera prop, empty abstraction, generic park lawn, postcard garden, people
-    scene, blank texture field, fixed building-only scene, mandatory interior interior zones,
-    corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark,
-    mandatory interior set, prompt-literal card
+  negativePrompt: golden-hour garden postcard formula, corten steel edging as default, real city skyline or landmark, adding a garden to an interior or object prompt, formal parterre, clipped hedges, show-garden gloss, formal, concrete patio, porch furniture, market aisle, library aisle, corridor, camera prop, empty abstraction, generic park lawn, postcard garden, blank texture field, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

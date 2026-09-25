@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP07-103
+packId: pack_07
+name: Picturesque Landscape Park
+styleAnchors:
+  - Picturesque Landscape Park
+  - English landscape park
+  - serpentine lake
+displayName: Picturesque Landscape Park
+category: 4. Landscape And Garden Systems
+domain: English landscape park
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - landscape-and-garden-systems
+  - landscape-park
+  - picturesque
+  - pastoral
+visualDna:
+  aesthetic: 'Picturesque landscape park: an idealised pastoral scene built at estate scale, with a serpentine lake, rolling grazed grass, clumps of trees and an eye-catcher temple or ruin, fenced by a hidden ha-ha.'
+  subject_treatment: Keep the requested site, subject, action and camera; reorganise ground plane, planting, edging and paths in this garden system only where the prompt has outdoor ground, and add no garden to an interior, object or portrait prompt.
+  color_and_tone: Soft grass greens, blue-grey water, dark tree clumps, pale stone of the eye-catcher, hazy distance; painterly, low contrast.
+  lighting_and_shadow: Soft hazy light with mist over water, long shadows of tree clumps on the turf, the eye-catcher lit against darker woods.
+  texture_and_material: Grazed turf running to the water, oak and beech clumps, cedar specimens, a sunken ha-ha wall, a classical temple or sham ruin, reeds at the lake edge.
+  camera_and_composition: Keep the requested view; long view across water to an eye-catcher, tree clumps framing the sides like stage wings.
+  atmosphere_and_mood: Serene, idyllic and composed, a painting made of land.
+  rendering_and_quality: Painterly landscape photograph with hazy recession, no flower beds or formal hedges.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Picturesque Landscape Park as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: serpentine lake; grazed turf to the water; tree clumps as stage wings; eye-catcher temple or ruin; hidden ha-ha
+avoidRules:
+  - golden-hour garden postcard formula
+  - corten steel edging as default
+  - real city skyline or landmark
+  - adding a garden to an interior or object prompt
+  - flower beds
+  - clipped topiary
+  - straight axes
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: golden-hour garden postcard formula, corten steel edging as default, real city skyline or landmark, adding a garden to an interior or object prompt, flower beds, clipped topiary, straight axes, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: landscape-and-garden-systems
+  categoryName: 4. Landscape And Garden Systems
+  tags:
+    - architecture-and-interior
+    - landscape-and-garden-systems
+    - landscape-park
+    - picturesque
+    - pastoral
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: English landscape park

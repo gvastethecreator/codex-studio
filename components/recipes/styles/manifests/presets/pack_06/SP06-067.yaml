@@ -3,7 +3,7 @@ id: SP06-067
 packId: pack_06
 name: Mixed Media Canvas
 category: 5. Mixed Media
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,49 +12,24 @@ tags:
   - essential-art-styles
   - mixed-media
 visualDna:
-  aesthetic: >-
-    Mixed Media Canvas acts as a transferable art-medium router: start from Paint plus objects,
-    Heavy texture and mixed-media assembly system built from layering, adhesion, surface collision,
-    found-material logic, tactile seams, and handmade construction, then apply the medium behavior
-    to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Varied; preserve the prompt subject while rebuilding it
-    through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain,
-    gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object
-    function, or environment legible.
-  color_and_tone: >-
-    Build color with Messy, layered; treat color as material combination: paper aging, varnish
-    warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled
-    oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than
-    generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Texture relief; make light reveal relief, varnish gloss, paper lift, tape
-    shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value
-    structure supports the medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Sand, paper, paint; surface detail should show torn fiber, glue, tape edge, cork tooth,
-    thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping
-    material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Compose for Mixed Media Canvas using its key spatial cues: Heavy
-    texture; compose through layer order, overlap, pin logic, cut rhythm, swatch relationships,
-    tactile seams, and graphic collision without requiring a literal craft table, with scale,
-    spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Expressive; derive mood from DIY urgency, memory, repair, evidence, punk
-    collision, tactile intimacy, decorative excess, or experimental material play, letting the
-    medium alter interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Fine art, abstract; finish with coherent material stacking, readable subject
-    transformation, and no single flat texture pasted over the whole image, clean denoised surfaces
-    where appropriate, and enough craft evidence to make the medium recognizable.
-  key_features: Paint plus objects; Heavy texture; Messy, layered; Sand, paper, paint
-  creative_brief: >-
-    Apply Mixed Media Canvas as an art-style preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Paint plus objects, Heavy texture, Sand, paper, paint without requiring the card image's
-    original subject.
+  aesthetic: 'Mixed-media canvas: heavy-body acrylic over gesso with modeling paste, sand, embedded tissue and graphite marks building a thick, scraped surface.'
+  subject_treatment: Keep the prompt subject, pose, action and camera view; rebuild the picture in this medium so the material sits on the image surface and never replaces clothing, skin or anatomy.
+  color_and_tone: Bold layered color with earlier layers showing through scrapes; one warm dominant against cool neutrals, occasional drips of pure pigment.
+  lighting_and_shadow: Painted light kept simple; real raking light catches the ridges of paste and palette-knife edges.
+  texture_and_material: Palette-knife scraping, gritty sand paste, wrinkled tissue paper glazed in, drips, spray mist and loose graphite lines.
+  camera_and_composition: Keep the requested view; the subject emerges from an expressive field, crisp at its focal point and dissolving into texture at the edges.
+  atmosphere_and_mood: Expressive and raw, energy built up layer on layer.
+  rendering_and_quality: Physical relief visible across the canvas; the subject readable despite heavy texture.
+  key_features: modeling paste relief; palette-knife scrapes; embedded tissue; sand grit; drips and graphite
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mixed Media Canvas as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - uniform beige torn-paper wash over every image
+  - red tape strips added by default
+  - material replacing clothing or skin
+  - readable printed words
+  - changing the requested camera view
+  - smooth digital paint
+  - readable newspaper
   - photo
   - realistic
   - photorealistic
@@ -70,7 +45,6 @@ avoidRules:
   - signature
   - frame
   - border
-  - readable newspaper
   - fabric requirement
   - canvas requirement
   - wrong medium
@@ -83,15 +57,16 @@ avoidRules:
   - fake scrapbook text
   - craft-table default
   - clean vector render
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-067.webp
 attributes:
-  negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
-    anatomy, watermark, text, signature, frame, border, readable newspaper, fabric requirement,
-    canvas requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter,
-    readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table
-    default, clean vector render
+  negativePrompt: uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, smooth digital paint, readable newspaper, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, fabric requirement, canvas requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

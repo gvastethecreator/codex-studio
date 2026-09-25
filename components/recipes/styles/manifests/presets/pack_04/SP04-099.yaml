@@ -3,7 +3,7 @@ id: SP04-099
 packId: pack_04
 name: UI/HUD Wireframe Concept
 category: 6. Technical And Reference Sheets
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,63 +12,25 @@ tags:
   - illustration-and-graphic-novel
   - technical-and-reference-sheets
 visualDna:
-  aesthetic: >-
-    UI/HUD Wireframe Concept acts as a transferable illustration router: start from Game HUD
-    wireframe concept balancing diegetic and overlay paradigms, Radial-vs-linear alternatives, stat
-    cluster prototypes, readability checkpoints and technical reference and interface-spec system
-    built from orthographic clarity, diagram hierarchy, callout logic, measured spacing, and
-    production-sheet legibility, then apply the visual behavior to prompt X instead of recreating a
-    fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Clean bounding-box architecture with spacing, flow, and
-    hierarchy guides; preserve the requested subject while expressing it through schematic
-    breakdowns, reference views, anatomy structure, UI wireframes, comparison scales, or
-    specification surfaces, keeping the requested identity, silhouette, pose, object function, or
-    setting legible.
-  color_and_tone: >-
-    Build color with Functional UI neutrals with semantic accent colors for state signaling; use
-    color as information coding: blueprint cyan, neutral sheet stock, callout accents, HUD glow,
-    anatomy value separation, or wireframe hierarchy, with deliberate value grouping, accent
-    control, and process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Flat interface contrast with optional interaction glow cues; keep light
-    diagrammatic and legible through flat drafting values, callout emphasis, interface glow,
-    anatomical separation, or measured shadow restraint, so value structure supports the
-    illustration process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Minimalist screen-surface treatment; precision-first wireframe presentation; surface
-    detail should support readability with grid paper, line weights, translucent overlays,
-    measurement ticks, UI panels, section cuts, or reference-sheet paper grain, keeping material
-    scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Safe-zone aware screen layout plus world-anchored UI option studies;
-    compose through orthographic projection, exploded spacing, callout grouping, interface modules,
-    size-scale relationships, and reference-sheet hierarchy, with scale, spacing, edge rhythm, and
-    visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Functional, restrained, information-priority design, mood carried by UI/HUD
-    Wireframe Concept craft, material pressure, and visual restraint; derive mood from precision,
-    planning, research, interface control, anatomical study, engineering authority, or catalogued
-    comparison, letting the style alter interpretation without demanding a specific story, location,
-    or actor.
-  rendering_and_quality: >-
-    Finish with UX concept fidelity focused on clarity, density control, and usability; finish with
-    readable technical communication, crisp line hierarchy, controlled notation-like detail, and no
-    illegible labels or decorative clutter, clean denoised surfaces where appropriate, and enough
-    process evidence to make the style recognizable.
-  key_features: >-
-    Game HUD wireframe concept balancing diegetic and overlay paradigms; Radial-vs-linear
-    alternatives, stat cluster prototypes, readability checkpoints; Functional UI neutrals with
-    semantic accent colors for state signaling; Minimalist screen-surface treatment; precision-first
-    wireframe presentation; Safe-zone aware screen layout plus world-anchored UI option studies
-  creative_brief: >-
-    Apply UI/HUD Wireframe Concept as an illustration preset over prompt X: preserve the user's
-    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
-    through Game HUD wireframe concept balancing diegetic and overlay paradigms, Radial-vs-linear
-    alternatives, stat cluster prototypes, readability checkpoints, Minimalist screen-surface
-    treatment; precision-first wireframe presentation without requiring the card image's original
-    subject.
+  aesthetic: 'UI wireframe: low-fidelity grey boxes, crossed image placeholders and bar-shaped text stand-ins mapping a game or app screen.'
+  subject_treatment: Keep the prompt subject as the thing documented; this reference profile owns a set of low-fidelity grey-box interface wireframes for a screen built around the subject, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.
+  color_and_tone: White and light grey panels, mid-grey placeholders, one blue annotation color for arrows and highlights.
+  lighting_and_shadow: Flat, with no light or shading beyond a thin drop line under active panels.
+  texture_and_material: Thin uniform strokes, dashed boundaries, crossed rectangles and rounded grey bars instead of words.
+  camera_and_composition: Two or three screen alternatives side by side, radial versus linear layout options, blue arrows marking flow.
+  atmosphere_and_mood: Functional and provisional, structure decided long before any style.
+  rendering_and_quality: Clean wireframe without final art, color theme or readable words.
+  key_features: grey-box panels; crossed image placeholders; grey bars instead of text; blue flow arrows; layout alternatives
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies UI/HUD Wireframe Concept as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - placeholder gibberish text
+  - invented numbers presented as data
+  - readable labels
+  - brand logo
+  - franchise likeness
+  - free painterly composition instead of a sheet
+  - finished game art
+  - poster illustration
   - finished
   - polished
   - colorful
@@ -91,14 +53,14 @@ avoidRules:
   - decorative clutter
   - shaded cinematic render
   - random UI text
+  - text
+  - logo
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-099.webp
 attributes:
-  negativePrompt: >-
-    finished, polished, colorful, final UI, rendered, textured, photo, busy, cluttered, beautiful
-    art, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable
-    fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels,
-    decorative clutter, shaded cinematic render, random UI text
+  negativePrompt: placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, finished game art, poster illustration, finished, polished, colorful, final UI, rendered, textured, photo, busy, cluttered, beautiful art, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text, text, logo, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

@@ -1,0 +1,78 @@
+schemaVersion: 1
+id: SP06-126
+packId: pack_06
+name: Blind Contour Drawing
+styleAnchors:
+  - Blind Contour Drawing
+  - contour drawn without looking at the paper
+  - slow wobbling single line
+displayName: Blind Contour Drawing
+category: 2. Drawing & Sketching
+domain: contour drawn without looking at the paper
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - drawing-and-sketching
+  - blind-contour
+  - line
+  - observational
+visualDna:
+  aesthetic: 'Blind contour drawing: a slow single pen line made while the eye follows the subject and never looks at the paper, so proportions drift and parts misalign.'
+  subject_treatment: Redraw the prompt's subject, pose, setting and framing with this drawing tool only; line quality, pressure response and paper behavior must identify the tool even on a simple object.
+  color_and_tone: One black or sepia fineliner line on white paper, no fill and no tone.
+  lighting_and_shadow: No shading; only the contour and inner edges that the eye traced, including folds and wrinkles.
+  texture_and_material: Wobbly slow line with tiny tremors, overshoots where features failed to meet, cheap sketchbook paper.
+  camera_and_composition: Keep the requested subject and view; its parts shift out of register, with an eye drifting off the face or a hand growing too large.
+  atmosphere_and_mood: Honest, awkward and funny, full of searching attention.
+  rendering_and_quality: Continuous wandering line with misaligned features and overshoots; never corrected, never cleaned up.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blind Contour Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: slow wobbling single line; drifting proportions; misaligned features; overshooting joins; no shading
+avoidRules:
+  - photo
+  - photorealistic
+  - 3d render
+  - painterly fill
+  - wrong drawing tool
+  - airbrushed smoothness
+  - generic AI gloss
+  - changing the requested subject
+  - mixing in a second drawing tool
+  - painted color fill
+  - accurate proportions
+  - clean confident outline
+  - shading
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: photo, photorealistic, 3d render, painterly fill, wrong drawing tool, airbrushed smoothness, generic AI gloss, changing the requested subject, mixing in a second drawing tool, painted color fill, accurate proportions, clean confident outline, shading, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_06
+  packName: Essential Art Styles
+  categoryId: drawing-and-sketching
+  categoryName: 2. Drawing & Sketching
+  tags:
+    - essential-art-styles
+    - drawing-and-sketching
+    - blind-contour
+    - line
+    - observational
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: contour drawn without looking at the paper

@@ -3,7 +3,7 @@ id: SP06-072
 packId: pack_06
 name: Tape Art
 category: 5. Mixed Media
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,49 +12,25 @@ tags:
   - essential-art-styles
   - mixed-media
 visualDna:
-  aesthetic: >-
-    Tape Art acts as a transferable art-medium router: start from Image made of tape, Tape strips
-    and mixed-media assembly system built from layering, adhesion, surface collision, found-material
-    logic, tactile seams, and handmade construction, then apply the medium behavior to prompt X
-    instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Straight tape lines; preserve the prompt subject while
-    rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee
-    stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose,
-    object function, or environment legible.
-  color_and_tone: >-
-    Build color with Masking tape, duct tape; treat color as material combination: paper aging,
-    varnish warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or
-    marbled oil flow, with deliberate value grouping, accent control, and medium-specific limits
-    rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Flat; make light reveal relief, varnish gloss, paper lift, tape shine,
-    thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure
-    supports the medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Tape layers; surface detail should show torn fiber, glue, tape edge, cork tooth, thread
-    thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material
-    scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Geometric; compose through layer order, overlap, pin logic, cut
-    rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal
-    craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Temporary, geometric, improvised; derive mood from DIY urgency, memory, repair,
-    evidence, punk collision, tactile intimacy, decorative excess, or experimental material play,
-    letting the medium alter interpretation without demanding a specific story, location, or
-    character.
-  rendering_and_quality: >-
-    Finish with Tape strip construction with installation like precision but no required wall or
-    public-space context; finish with coherent material stacking, readable subject transformation,
-    and no single flat texture pasted over the whole image, clean denoised surfaces where
-    appropriate, and enough craft evidence to make the medium recognizable.
-  key_features: Image made of tape; Tape strips; Masking tape, duct tape; Tape layers; Geometric
-  creative_brief: >-
-    Apply Tape Art as an art-style preset over prompt X: preserve the user's requested subject, then
-    route mark-making, palette, surface, composition, mood, and final craft through Image made of
-    tape, Tape strips, Tape layers without requiring the card image's original subject.
+  aesthetic: 'Tape art: the image built entirely from strips of colored masking, duct and vinyl tape laid on a flat surface and trimmed with a blade.'
+  subject_treatment: Keep the prompt subject, pose, action and camera view; rebuild the picture in this medium so the material sits on the image surface and never replaces clothing, skin or anatomy.
+  color_and_tone: Flat solid tape colors in a limited set; value from layering light and dark rolls; no gradients.
+  lighting_and_shadow: Soft frontal light with a faint sheen on vinyl and duct tape; tiny lift shadows at overlapping ends.
+  texture_and_material: Crisp blade-cut curves, torn tape ends, crepe texture on masking tape, cloth weave in duct tape and slight wrinkles.
+  camera_and_composition: Keep the requested view; straight strips build planes, trimmed curves describe the silhouette.
+  atmosphere_and_mood: Improvised and graphic, a temporary image made fast and bold.
+  rendering_and_quality: Clean strip geometry and visible overlaps, consistent strip width; no painted fills.
+  key_features: masking, duct and vinyl tape; blade-cut curves; torn ends; flat layered color; strip geometry
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tape Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - uniform beige torn-paper wash over every image
+  - red tape strips added by default
+  - material replacing clothing or skin
+  - readable printed words
+  - changing the requested camera view
+  - painted fills
+  - wall requirement
+  - street context
   - photo
   - realistic
   - photorealistic
@@ -70,8 +46,6 @@ avoidRules:
   - signature
   - frame
   - border
-  - wall requirement
-  - street context
   - wrong medium
   - generic AI gloss
   - muddy noise
@@ -82,15 +56,16 @@ avoidRules:
   - fake scrapbook text
   - craft-table default
   - clean vector render
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-072.webp
 attributes:
-  negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
-    anatomy, watermark, text, signature, frame, border, wall requirement, street context, wrong
-    medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low
-    resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector
-    render
+  negativePrompt: uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, painted fills, wall requirement, street context, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP07-113
+packId: pack_07
+name: Rock-Hewn Colossus Facade
+styleAnchors:
+  - Rock-Hewn Colossus Facade
+  - rock-cut cliff architecture
+  - carved in one piece from the cliff
+displayName: Rock-Hewn Colossus Facade
+category: 5. Fantasy And Mythic Architecture
+domain: rock-cut cliff architecture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - fantasy-and-mythic-architecture
+  - rock-cut
+  - cliff-facade
+  - monolithic
+visualDna:
+  aesthetic: 'Rock-cut architecture: the whole building carved in one piece into a cliff face, columns, pediments and giant relief figures cut in place, rooms as dark hollow voids behind.'
+  subject_treatment: Keep the requested structure or object, its function, footprint and camera; rebuild its walls, roof, openings and ornament in this construction logic, and never swap it for a castle, temple or fixed fantasy landmark.
+  color_and_tone: Rose and ochre sandstone with visible banded strata, black doorway voids, clear blue sky; warm and high contrast.
+  lighting_and_shadow: Hard low sun raking across the relief, cutting deep black shadows in every recess and doorway.
+  texture_and_material: Chisel-pitted sandstone, strata lines running straight through the carving, wind erosion softening the upper details, no masonry joints at all.
+  camera_and_composition: Keep the requested view and always show the unquarried rock surrounding the carved facade on every side.
+  atmosphere_and_mood: Ancient, immovable and monumental, a building that was released from the mountain.
+  rendering_and_quality: Sharp daylight realism with legible tool marks; the facade and cliff read as one continuous stone.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rock-Hewn Colossus Facade as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: carved in one piece from the cliff; banded sandstone strata through the carving; giant relief figures; black doorway voids; hard raking sun
+avoidRules:
+  - licensed fantasy location
+  - copy of a known film or game building
+  - readable runes or inscriptions
+  - glossy mirror floor by default
+  - decorative waterfall by default
+  - swapping the requested structure for a castle or temple
+  - masonry block joints
+  - free-standing building
+  - readable carved text
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: licensed fantasy location, copy of a known film or game building, readable runes or inscriptions, glossy mirror floor by default, decorative waterfall by default, swapping the requested structure for a castle or temple, masonry block joints, free-standing building, readable carved text, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: fantasy-and-mythic-architecture
+  categoryName: 5. Fantasy And Mythic Architecture
+  tags:
+    - architecture-and-interior
+    - fantasy-and-mythic-architecture
+    - rock-cut
+    - cliff-facade
+    - monolithic
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: rock-cut cliff architecture

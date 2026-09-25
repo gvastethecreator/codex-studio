@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP04-125
+packId: pack_04
+name: Celestial Atlas Plate
+styleAnchors:
+  - Celestial Atlas Plate
+  - constellation chart
+  - constellation figure
+displayName: Celestial Atlas Plate
+category: 6. Technical And Reference Sheets
+domain: constellation chart
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - technical-and-reference-sheets
+  - star-chart
+  - constellation
+  - engraving
+visualDna:
+  aesthetic: 'Celestial atlas plate: the subject drawn as a hand-colored engraved constellation figure over a star field of graded dots and a coordinate grid.'
+  subject_treatment: Keep the prompt subject as the thing documented; this reference profile owns a star-atlas plate where the subject becomes a constellation figure over plotted stars and a coordinate grid, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.
+  color_and_tone: Deep midnight blue ground, pale gold stars, figure in thin cream line with soft wash tints.
+  lighting_and_shadow: No lighting; stars sized by magnitude as bright dots with tiny rays.
+  texture_and_material: Engraved hairlines, stippled Milky Way band, faint curved coordinate lines and aged paper edges.
+  camera_and_composition: The constellation figure filling a circular or rectangular chart, coordinate arcs curving across it.
+  atmosphere_and_mood: Mythic and quiet, a story written in the stars.
+  rendering_and_quality: Precise engraved chart with no star names, degree numbers or captions.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Celestial Atlas Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: constellation figure; magnitude-sized star dots; curved coordinate grid; midnight blue and gold; engraved hairlines
+avoidRules:
+  - placeholder gibberish text
+  - invented numbers presented as data
+  - readable labels
+  - brand logo
+  - franchise likeness
+  - free painterly composition instead of a sheet
+  - photographic night sky
+  - degree numbers
+  - watermark
+  - text
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, photographic night sky, degree numbers, watermark, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_04
+  packName: Illustration & Graphic Novel
+  categoryId: technical-and-reference-sheets
+  categoryName: 6. Technical And Reference Sheets
+  tags:
+    - illustration-and-graphic-novel
+    - technical-and-reference-sheets
+    - star-chart
+    - constellation
+    - engraving
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: constellation chart

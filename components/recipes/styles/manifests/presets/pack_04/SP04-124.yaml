@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP04-124
+packId: pack_04
+name: Heraldry Tincture Sheet
+styleAnchors:
+  - Heraldry Tincture Sheet
+  - heraldic design study
+  - one shield in many tinctures
+displayName: Heraldry Tincture Sheet
+category: 6. Technical And Reference Sheets
+domain: heraldic design study
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - technical-and-reference-sheets
+  - heraldry
+  - tinctures
+  - gouache
+visualDna:
+  aesthetic: 'Heraldry design sheet: one coat of arms repeated in a grid of tincture and division variants, painted in gouache and shell gold on vellum.'
+  subject_treatment: Keep the prompt subject as the thing documented; this reference profile owns a grid of one shield design repeated in different tinctures and divisions, with charge studies, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.
+  color_and_tone: 'Heraldic tinctures only: gules, azure, vert, sable, purpure, with gold and silver metals.'
+  lighting_and_shadow: Flat heraldic color with a thin black outline and a little burnished gold shine.
+  texture_and_material: Opaque gouache fills, crisp black outlines, raised shell gold and vellum grain.
+  camera_and_composition: Nine to twelve identical shield shapes in an even grid, a larger study of the main charge beside them.
+  atmosphere_and_mood: Proud and ceremonial, a lineage chosen color by color.
+  rendering_and_quality: Clean heraldic drawing with consistent charge and no mottos or names.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Heraldry Tincture Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: one shield in many tinctures; division variants; gouache and shell gold; charge study; even grid
+avoidRules:
+  - placeholder gibberish text
+  - invented numbers presented as data
+  - readable labels
+  - brand logo
+  - franchise likeness
+  - free painterly composition instead of a sheet
+  - motto scroll text
+  - real national arms
+  - watermark
+  - text
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, motto scroll text, real national arms, watermark, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_04
+  packName: Illustration & Graphic Novel
+  categoryId: technical-and-reference-sheets
+  categoryName: 6. Technical And Reference Sheets
+  tags:
+    - illustration-and-graphic-novel
+    - technical-and-reference-sheets
+    - heraldry
+    - tinctures
+    - gouache
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: heraldic design study

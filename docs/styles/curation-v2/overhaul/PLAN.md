@@ -47,40 +47,56 @@ Pack order, skipping pack_12 and pack_17: pack_01 → pack_24, then pack_12, pac
 
 ## Progress
 
-| Category                                     | Audit | DNA  | Briefs | New presets       | Cards               | Commit             |
-| -------------------------------------------- | ----- | ---- | ------ | ----------------- | ------------------- | ------------------ |
-| pack_01::1. Portrait And Studio              | done  | done | done   | 2 (SP01-088, 089) | generated, reviewed | 58808ede, b12dd6f5 |
-| pack_01::2. Lighting Techniques              | done  | done | done   | 5 (SP01-090…094)  | pending (local)     | 3adb6717 + fix     |
-| pack_01::3. Film And Analog Process          | done  | done | done   | 7 (SP01-095…101)  | pending (local)     | see git log        |
-| pack_01::4. Documentary And Street           | done  | done | done   | 11 (SP01-102…112) | pending (local)     | see git log        |
-| pack_01::5. Commercial And Product           | done  | done | done   | 6 (SP01-113…118)  | pending (local)     | see git log        |
-| pack_01::6. Nature And Wildlife              | done  | done | done   | 14 (SP01-119…132) | pending (local)     | see git log        |
-| pack_01::7. Technical And Specialist Imaging | done  | done | done   | 8 (SP01-133…140)  | pending (local)     | see git log        |
-| pack_02::1. Film Genres                      | done  | done | done   | 4 (SP02-130…133)  | pending (local)     | see git log        |
-| pack_02::2. TV And Broadcast                 | done  | done | done   | 0 (already 23)    | pending (local)     | see git log        |
-| pack_02::3. Animation Styles                 | done  | done | done   | 5 (SP02-134…138)  | pending (local)     | see git log        |
-| pack_02::4. Photography Eras                 | done  | done | done   | 7 (SP02-139…145)  | pending (local)     | see git log        |
-| pack_02::5. Lighting And Atmosphere          | done  | done | done   | 0 (already 20)    | pending (local)     | see git log        |
-| pack_02::6. Caricature And Cartoon Styles    | done  | done | done   | 0 (already 33)    | pending (local)     | see git log        |
-| pack_02::7. Sensor And Technical Imaging     | done  | done | done   | 17 (SP02-146…162) | pending (local)     | see git log        |
-| pack_02::8. Hand-Drawn And DIY Media         | done  | done | done   | 14 (SP02-163…176) | pending (local)     | see git log        |
-| pack_03::1. Render Engines                   | done  | done | done   | 10 (SP03-081…090) | pending (local)     | see git log        |
-| pack_03::2. Materials                        | done  | done | done   | 7 (SP03-091…097)  | pending (local)     | see git log        |
-| pack_03::3. Lighting And Atmosphere          | done  | done | done   | 12 (SP03-098…109) | pending (local)     | see git log        |
-| pack_03::4. 3D Styles                        | done  | done | done   | 0 (already 20)    | pending (local)     | see git log        |
-| pack_05::3. Isekai & High Fantasy            | done  | done | done   | 0 (already 30)    | pending (local)     | see git log        |
-| pack_03::5. Hard Surface And Product CGI     | done  | done | done   | 9 (SP03-110…118)  | pending (local)     | see git log        |
-| pack_03::6. Organic Character And Bio CGI    | done  | done | done   | 13 (SP03-119…131) | pending (local)     | see git log        |
-| pack_03::7. Environment And Worldbuilding    | done  | done | done   | 11 (SP03-132…142) | pending (local)     | see git log        |
-| pack_03::8. Sensor And Technical Shaders     | done  | done | done   | 18 (SP03-143…160) | pending (local)     | see git log        |
-| pack_04::1. Comic Book Styles                | done  | done | done   | 6 (SP04-101…106)  | pending (local)     | see git log        |
-| pack_04::2. Children's Illustration          | done  | done | done   | 6 (SP04-107…112)  | pending (local)     | see git log        |
-| pack_04::3. Editorial And Poster             | done  | done | done   | 3 (SP04-113…115)  | pending (local)     | see git log        |
-| pack_04::4. Concept Art                      | done  | done | done   | 0 (already 29)    | pending (local)     | see git log        |
-| pack_04::5. Ink And Print                    | done  | done | done   | 0 (already 20)    | pending (local)     | see git log        |
-| pack_05::1. Modern Shonen & Action           | done  | done | done   | 0 (already 40)    | pending (local)     | see git log        |
-| pack_05::2. Mecha & Cyberpunk                | done  | done | done   | 0 (already 30)    | pending (local)     | see git log        |
-| pack_05::4. Dark Fantasy & Seinen            | done  | done | done   | 0 (already 30)    | pending (local)     | see git log        |
+| Category                                              | Audit | DNA  | Briefs | New presets       | Cards               | Commit             |
+| ----------------------------------------------------- | ----- | ---- | ------ | ----------------- | ------------------- | ------------------ |
+| pack_01::1. Portrait And Studio                       | done  | done | done   | 2 (SP01-088, 089) | generated, reviewed | 58808ede, b12dd6f5 |
+| pack_01::2. Lighting Techniques                       | done  | done | done   | 5 (SP01-090…094)  | pending (local)     | 3adb6717 + fix     |
+| pack_01::3. Film And Analog Process                   | done  | done | done   | 7 (SP01-095…101)  | pending (local)     | see git log        |
+| pack_01::4. Documentary And Street                    | done  | done | done   | 11 (SP01-102…112) | pending (local)     | see git log        |
+| pack_01::5. Commercial And Product                    | done  | done | done   | 6 (SP01-113…118)  | pending (local)     | see git log        |
+| pack_01::6. Nature And Wildlife                       | done  | done | done   | 14 (SP01-119…132) | pending (local)     | see git log        |
+| pack_01::7. Technical And Specialist Imaging          | done  | done | done   | 8 (SP01-133…140)  | pending (local)     | see git log        |
+| pack_02::1. Film Genres                               | done  | done | done   | 4 (SP02-130…133)  | pending (local)     | see git log        |
+| pack_02::2. TV And Broadcast                          | done  | done | done   | 0 (already 23)    | pending (local)     | see git log        |
+| pack_02::3. Animation Styles                          | done  | done | done   | 5 (SP02-134…138)  | pending (local)     | see git log        |
+| pack_02::4. Photography Eras                          | done  | done | done   | 7 (SP02-139…145)  | pending (local)     | see git log        |
+| pack_02::5. Lighting And Atmosphere                   | done  | done | done   | 0 (already 20)    | pending (local)     | see git log        |
+| pack_02::6. Caricature And Cartoon Styles             | done  | done | done   | 0 (already 33)    | pending (local)     | see git log        |
+| pack_02::7. Sensor And Technical Imaging              | done  | done | done   | 17 (SP02-146…162) | pending (local)     | see git log        |
+| pack_02::8. Hand-Drawn And DIY Media                  | done  | done | done   | 14 (SP02-163…176) | pending (local)     | see git log        |
+| pack_03::1. Render Engines                            | done  | done | done   | 10 (SP03-081…090) | pending (local)     | see git log        |
+| pack_03::2. Materials                                 | done  | done | done   | 7 (SP03-091…097)  | pending (local)     | see git log        |
+| pack_03::3. Lighting And Atmosphere                   | done  | done | done   | 12 (SP03-098…109) | pending (local)     | see git log        |
+| pack_03::4. 3D Styles                                 | done  | done | done   | 0 (already 20)    | pending (local)     | see git log        |
+| pack_05::3. Isekai & High Fantasy                     | done  | done | done   | 0 (already 30)    | pending (local)     | see git log        |
+| pack_03::5. Hard Surface And Product CGI              | done  | done | done   | 9 (SP03-110…118)  | pending (local)     | see git log        |
+| pack_03::6. Organic Character And Bio CGI             | done  | done | done   | 13 (SP03-119…131) | pending (local)     | see git log        |
+| pack_03::7. Environment And Worldbuilding             | done  | done | done   | 11 (SP03-132…142) | pending (local)     | see git log        |
+| pack_03::8. Sensor And Technical Shaders              | done  | done | done   | 18 (SP03-143…160) | pending (local)     | see git log        |
+| pack_04::1. Comic Book Styles                         | done  | done | done   | 6 (SP04-101…106)  | pending (local)     | see git log        |
+| pack_04::2. Children's Illustration                   | done  | done | done   | 6 (SP04-107…112)  | pending (local)     | see git log        |
+| pack_04::3. Editorial And Poster                      | done  | done | done   | 3 (SP04-113…115)  | pending (local)     | see git log        |
+| pack_04::4. Concept Art                               | done  | done | done   | 0 (already 29)    | pending (local)     | see git log        |
+| pack_04::5. Ink And Print                             | done  | done | done   | 0 (already 20)    | pending (local)     | see git log        |
+| pack_05::1. Modern Shonen & Action                    | done  | done | done   | 0 (already 40)    | pending (local)     | see git log        |
+| pack_05::2. Mecha & Cyberpunk                         | done  | done | done   | 0 (already 30)    | pending (local)     | see git log        |
+| pack_05::4. Dark Fantasy & Seinen                     | done  | done | done   | 0 (already 30)    | pending (local)     | see git log        |
+| pack_05::5. Action Motion Setpieces                   | done  | done | done   | 15 (SP13-036…050) | pending (local)     | see git log        |
+| pack_06::1. Traditional Painting                      | done  | done | done   | 5 (SP06-121…125)  | pending (local)     | see git log        |
+| pack_06::2. Drawing & Sketching                       | done  | done | done   | 5 (SP06-126…130)  | pending (local)     | see git log        |
+| pack_06::3. Printmaking                               | done  | done | done   | 5 (SP06-131…135)  | pending (local)     | see git log        |
+| pack_06::4. Digital Art                               | done  | done | done   | 5 (SP06-136…140)  | pending (local)     | see git log        |
+| pack_06::5. Mixed Media                               | done  | done | done   | 0 (already 20)    | pending (local)     | see git log        |
+| pack_06::6. Retro Game Visual Systems                 | done  | done | done   | 0 (already 20)    | pending (local)     | see git log        |
+| pack_06::7. Game Art Directions & UI                  | done  | done | done   | 0 (already 20)    | pending (local)     | see git log        |
+| pack_07::1. Interior Design Systems                   | done  | done | done   | 4 (SP07-081…084)  | pending (local)     | see git log        |
+| pack_07::2. Architectural Movements And Vernaculars   | done  | done | done   | 7 (SP07-085…091)  | pending (local)     | see git log        |
+| pack_07::3. Civic Infrastructure And Specialty Spaces | done  | done | done   | 11 (SP07-092…102) | pending (local)     | see git log        |
+| pack_07::4. Landscape And Garden Systems              | done  | done | done   | 10 (SP07-103…112) | pending (local)     | see git log        |
+| pack_07::5. Fantasy And Mythic Architecture           | done  | done | done   | 7 (SP07-113…119)  | pending (local)     | see git log        |
+| pack_07::6. Toy Craft And Miniature Architecture      | done  | done | done   | 10 (SP07-120…129) | pending (local)     | see git log        |
+| pack_07::7. Megastructure And Impossible Space        | done  | done | done   | 11 (SP07-130…140) | pending (local)     | see git log        |
+| pack_04::6. Technical And Reference Sheets            | done  | done | done   | 20 (SP04-057…129) | pending (local)     | see git log        |
 
 ## Open risks
 

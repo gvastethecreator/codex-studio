@@ -3,7 +3,7 @@ id: SP04-094
 packId: pack_04
 name: Anatomy Reference Sheet
 category: 6. Technical And Reference Sheets
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,70 +12,31 @@ tags:
   - illustration-and-graphic-novel
   - technical-and-reference-sheets
 visualDna:
-  aesthetic: >-
-    Anatomy Reference Sheet acts as a transferable illustration router: start from Educational
-    anatomical reference plate with layered structural clarity and classical medical-plate
-    influence, Layered anatomy views, insertion/origin callouts, proportion guides, sectional
-    clarity and technical reference and interface-spec system built from orthographic clarity,
-    diagram hierarchy, callout logic, measured spacing, and production-sheet legibility, then apply
-    the visual behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Precise technical linework for muscle, bone, and tendon
-    mapping; preserve the requested subject while expressing it through schematic breakdowns,
-    reference views, anatomy structure, UI wireframes, comparison scales, or specification surfaces,
-    keeping the requested identity, silhouette, pose, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Consistent didactic coding (muscle warm, bone neutral, vascular cool/warm
-    accents); use color as information coding: blueprint cyan, neutral sheet stock, callout accents,
-    HUD glow, anatomy value separation, or wireframe hierarchy, with deliberate value grouping,
-    accent control, and process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Even clinical illumination for unambiguous form legibility; keep light
-    diagrammatic and legible through flat drafting values, callout emphasis, interface glow,
-    anatomical separation, or measured shadow restraint, so value structure supports the
-    illustration process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Plate-style paper and wash overlays with minimal decorative noise; surface detail should
-    support readability with grid paper, line weights, translucent overlays, measurement ticks, UI
-    panels, section cuts, or reference-sheet paper grain, keeping material scale coherent and
-    avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Multi-view orthographic layout with transparent overlays and inset
-    details; compose through orthographic projection, exploded spacing, callout grouping, interface
-    modules, size-scale relationships, and reference-sheet hierarchy, with scale, spacing, edge
-    rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Scientific, disciplined, pedagogical, mood carried by Anatomy Reference Sheet
-    craft, material pressure, and visual restraint; derive mood from precision, planning, research,
-    interface control, anatomical study, engineering authority, or catalogued comparison, letting
-    the style alter interpretation without demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Reference-grade illustration optimized for study and instruction; finish with
-    readable technical communication, crisp line hierarchy, controlled notation-like detail, and no
-    illegible labels or decorative clutter, clean denoised surfaces where appropriate, and enough
-    process evidence to make the style recognizable.
-  key_features: >-
-    Educational anatomical reference plate with layered structural clarity and classical
-    medical-plate influence; Layered anatomy views, insertion/origin callouts, proportion guides,
-    sectional clarity; Consistent didactic coding (muscle warm, bone neutral, vascular cool/warm
-    accents); Plate-style paper and wash overlays with minimal decorative noise; Multi-view
-    orthographic layout with transparent overlays and inset details
-  creative_brief: >-
-    Apply Anatomy Reference Sheet as an illustration preset over prompt X: preserve the user's
-    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
-    through Educational anatomical reference plate with layered structural clarity and classical
-    medical-plate influence, Layered anatomy views, insertion/origin callouts, proportion guides,
-    sectional clarity, Plate-style paper and wash overlays with minimal decorative noise without
-    requiring the card image's original subject.
+  aesthetic: 'Anatomy reference plate: the subject shown as layered écorché studies, surface, muscle and skeleton, like a hand-colored medical engraving.'
+  subject_treatment: Keep the prompt subject as the thing documented; this reference profile owns a classical anatomy plate with skin, muscle and skeleton layers side by side, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.
+  color_and_tone: Sepia line on aged cream paper, muscles in muted madder red, tendons ivory, bone warm white.
+  lighting_and_shadow: Soft consistent top-left light modeling each layer with fine hatching.
+  texture_and_material: Engraved fiber-direction lines in muscle, stippled bone, crisp tendon edges and paper foxing.
+  camera_and_composition: Two or three matching views side by side at one scale, with small sectional insets and blank leader lines.
+  atmosphere_and_mood: Scholarly and exact, the body opened for study.
+  rendering_and_quality: Accurate layered anatomy with consistent proportion across layers; no gore beyond the dissection.
+  key_features: surface, muscle and skeleton layers; madder red muscle; sepia engraving line; sectional insets; blank leader lines
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Anatomy Reference Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
-  - stylized
+  - placeholder gibberish text
+  - invented numbers presented as data
+  - readable labels
+  - brand logo
+  - franchise likeness
+  - free painterly composition instead of a sheet
+  - gore
+  - loose sketch
   - cartoon
   - simplified
   - abstract
   - loose
   - messy
   - inaccurate
-  - fantasy proportion
   - guesswork
   - official card scene
   - fixed thumbnail subject
@@ -89,14 +50,15 @@ avoidRules:
   - decorative clutter
   - shaded cinematic render
   - random UI text
+  - text
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-094.webp
 attributes:
-  negativePrompt: >-
-    stylized, cartoon, simplified, abstract, loose, messy, inaccurate, fantasy proportion,
-    guesswork, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible
-    labels, decorative clutter, shaded cinematic render, random UI text
+  negativePrompt: placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, gore, loose sketch, cartoon, simplified, abstract, loose, messy, inaccurate, guesswork, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

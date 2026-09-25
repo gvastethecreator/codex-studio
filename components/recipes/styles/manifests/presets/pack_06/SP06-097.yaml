@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP06-097
 packId: pack_06
-name: Amiga DeluxePaint HAM
+name: HAM Copper-Gradient Paint
 category: 6. Retro Game Visual Systems
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,85 +12,28 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: >-
-    Amiga DeluxePaint HAM acts as a transferable art-medium router: start from Commodore Amiga
-    DeluxePaint aesthetic, HAM 6 Hold And Modify mode 4096 colors, copper list rainbow gradients,
-    80s computer art software, Defender of the Crown, Shadow of the Beast and Warhol Amiga as color
-    anchors, video toaster workstation soul, HAM6 Hold And Modify fringing, copper list rainbow
-    gradients, 4096 color mode, DeluxePaint brush patterns, Amiga Workbench blue, 320x256
-    resolution, video toaster aesthetic and hardware-constrained game-visual system built from
-    display limits, palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and
-    era-specific charm, then apply the medium behavior to prompt X instead of recreating a fixed
-    demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Fat Amiga pixels, HAM fringing artifacts, copper list
-    gradient banding, 320x256 or 320x512 interlaced workbench, 16 color sprite over 4096 support
-    field; preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel,
-    pre-render, screen-grid, or low-bit display behavior, keeping the requested identity,
-    silhouette, pose, object function, or environment legible.
-  color_and_tone: >-
-    Build color with 4096 color HAM mode, rainbow copper list gradients, jewel golds, deep steel
-    greys, Amiga Workbench blue, video toaster spectrum, HAM fringing magenta cyan edges; use color
-    through hardware rules: indexed palettes, phosphor glow, four-shade handheld values, dither
-    tricks, copper gradients, limited scanline color, or terminal ANSI sets, with deliberate value
-    grouping, accent control, and medium-specific limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Copper list gradient as sky lighting, HAM palette gradient shading, 16
-    color sprite lighting on 4096 support field, no real time light but beautiful gradients; make
-    light emerge from display technology, pixel value steps, CRT bloom, palette cycling, thermal
-    print contrast, or vector beam brightness, so value structure supports the medium and does not
-    overwrite the requested content.
-  texture_and_material: >-
-    Render HAM fringing edge artifacts, copper list gradient band texture, DeluxePaint brush
-    patterns, Amiga hold and modify color bleed, NTSC PAL artifact texture; surface detail should
-    show pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT
-    persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy
-    filler texture.
-  camera_and_composition: >-
-    Structure the image through 320x256 overscan resolution, HAM fringing edge pixels, copper list
-    vertical gradient spatial logic, workbench window framing, PAL interlace spatial texture;
-    compose through tile maps, sprite scale, fixed-resolution framing, isometric grids, wireframe
-    coordinate space, UI geometry, or screen-proportion constraints, with scale, spacing, edge
-    rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood 80s computer art revolution, video production dream, demo scene energy, Amiga
-    workbench creativity, copper list programming art; derive mood from hardware limitation, arcade
-    spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D
-    instability, letting the medium alter interpretation without demanding a specific story,
-    location, or character.
-  rendering_and_quality: >-
-    Finish with Amiga DeluxePaint aesthetic, HAM mode beauty, 80s computer art software rendering,
-    copper list rainbow, 4096 color 1985 miracle; finish with faithful era constraints, crisp
-    readability at small scale, and no modern high-resolution smoothing unless the preset asks for
-    baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to
-    make the medium recognizable.
-  key_features: >-
-    Commodore Amiga DeluxePaint aesthetic, HAM 6 Hold And Modify mode 4096 colors, copper list
-    rainbow gradients, 80s computer art software, Defender of the Crown, Shadow of the Beast and
-    Warhol Amiga as color anchors, video toaster workstation soul; HAM6 Hold And Modify fringing,
-    copper list rainbow gradients, 4096 color mode, DeluxePaint brush patterns, Amiga Workbench
-    blue, 320x256 resolution, video toaster aesthetic; 4096 color HAM mode, rainbow copper list
-    gradients, jewel golds, deep steel greys, Amiga Workbench blue, video toaster spectrum, HAM
-    fringing magenta cyan edges; HAM fringing edge artifacts, copper list gradient band texture,
-    DeluxePaint brush patterns, Amiga hold and modify color bleed, NTSC PAL artifact texture;
-    320x256 overscan resolution, HAM fringing edge pixels, copper list vertical gradient spatial
-    logic, workbench window framing, PAL interlace spatial texture
-  creative_brief: >-
-    Apply Amiga DeluxePaint HAM as an art-style preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Commodore Amiga DeluxePaint aesthetic, HAM 6 Hold And Modify mode 4096 colors, copper list
-    rainbow gradients, 80s computer art software, Defender of the Crown, Shadow of the Beast and
-    Warhol Amiga as color anchors, video toaster workstation soul, HAM6 Hold And Modify fringing,
-    copper list rainbow gradients, 4096 color mode, DeluxePaint brush patterns, Amiga Workbench
-    blue, 320x256 resolution, video toaster aesthetic, HAM fringing edge artifacts, copper list
-    gradient band texture, DeluxePaint brush patterns, Amiga hold and modify color bleed, NTSC PAL
-    artifact texture without requiring the card image's original subject.
+  aesthetic: 'Late-80s paint-program pixel art: thousands of colors through hold-and-modify mode, with sky gradients made from per-scanline palette changes.'
+  subject_treatment: Keep the prompt subject, action and camera view; redraw it inside this display system's resolution, palette and pixel-cluster limits without adding any game interface.
+  color_and_tone: Rich painterly color with horizontal color bleed at hard edges; skies built from smooth-looking horizontal gradient bars.
+  lighting_and_shadow: Painted light with soft digitized shading, dramatic sunsets and glossy highlights.
+  texture_and_material: Horizontal color-fringe smears where shapes meet, fine paint-program brush dither, and banded copper sky bars.
+  camera_and_composition: Keep the requested view; wide landscape-style compositions with layered horizon bands.
+  atmosphere_and_mood: Grand and romantic, a painting squeezed out of a home computer.
+  rendering_and_quality: Painterly many-color pixels with visible fringing and horizontal banding; no modern smooth gradients.
+  key_features: hold-and-modify color fringing; per-scanline gradient bars; painterly pixels; digitized shading; wide horizons
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies HAM Copper-Gradient Paint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - copied game characters
+  - console or handheld hardware shown in frame
+  - score counter or health bar
+  - readable interface text
+  - brand or publisher logo
+  - modern smooth gradients
+  - flat limited palette
   - limited palette
   - modern
   - smooth gradient
   - generic dither
-  - PC
   - low color
   - '256'
   - chunky modern pixel art
@@ -105,14 +48,17 @@ avoidRules:
   - fake readable UI text
   - generic emulator screenshot
   - unlimited color render
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-097.webp
 attributes:
-  negativePrompt: >-
-    limited palette, modern, smooth gradient, generic dither, PC, low color, 256, chunky modern
-    pixel art, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark,
-    readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator
-    screenshot, unlimited color render
+  negativePrompt: copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, modern smooth gradients, flat limited palette, limited palette, modern, smooth gradient, generic dither, low color, 256, chunky modern pixel art, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -126,3 +72,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: HAM Copper-Gradient Paint
+styleAnchors:
+  - HAM Copper-Gradient Paint
+  - Amiga DeluxePaint HAM

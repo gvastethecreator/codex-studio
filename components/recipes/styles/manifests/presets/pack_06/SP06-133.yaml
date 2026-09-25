@@ -1,0 +1,79 @@
+schemaVersion: 1
+id: SP06-133
+packId: pack_06
+name: Chine-Collé Etching
+styleAnchors:
+  - Chine-Collé Etching
+  - etching printed onto a laid-in colored tissue
+  - tinted tissue laid under the etching
+displayName: Chine-Collé Etching
+category: 3. Printmaking
+domain: etching printed onto a laid-in colored tissue
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - printmaking
+  - chine-colle
+  - etching
+  - collage-print
+visualDna:
+  aesthetic: 'Chine-collé etching: an etched plate printed onto a thin colored tissue that is glued to the heavier sheet in the same pass, so a tinted panel sits behind the lines.'
+  subject_treatment: Redraw the prompt's subject, pose, setting and framing as an impression of this print process; ink transfer, plate or block marks, registration and paper identify the process without requiring any particular scene.
+  color_and_tone: Black or sepia etched line over one pale tinted tissue, such as gold, rose, celadon or grey, on white paper.
+  lighting_and_shadow: The tissue shape acts as a light or accent zone, with lines providing modeling.
+  texture_and_material: Delicate translucent tissue fibers, crisp or torn tissue edges, bitten etched lines, embossed plate mark over both papers.
+  camera_and_composition: Keep the requested framing; the tissue panel covers part of the image, often behind the focal subject or the sky.
+  atmosphere_and_mood: Refined, quiet and precious, a print with a hidden glow.
+  rendering_and_quality: Clean etched lines crossing from white paper onto the tinted tissue, visible tissue edge, plate mark; no painted color.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chine-Collé Etching as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: tinted tissue laid under the etching; visible torn or cut tissue edge; black etched line; embossed plate mark; one accent color zone
+avoidRules:
+  - photo
+  - photorealistic
+  - 3d render
+  - smooth digital gradient
+  - random distress overlay
+  - wrong print process
+  - fake poster text
+  - generic AI gloss
+  - changing the requested subject
+  - readable printed text
+  - digital vector cleanliness
+  - painted color washes
+  - full-color print
+  - missing tissue panel
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: photo, photorealistic, 3d render, smooth digital gradient, random distress overlay, wrong print process, fake poster text, generic AI gloss, changing the requested subject, readable printed text, digital vector cleanliness, painted color washes, full-color print, missing tissue panel, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_06
+  packName: Essential Art Styles
+  categoryId: printmaking
+  categoryName: 3. Printmaking
+  tags:
+    - essential-art-styles
+    - printmaking
+    - chine-colle
+    - etching
+    - collage-print
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: etching printed onto a laid-in colored tissue

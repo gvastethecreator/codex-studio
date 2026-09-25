@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP13-039
+packId: pack_05
+name: Panning Background Streak Frame
+styleAnchors:
+  - Panning Background Streak Frame
+  - anime action staging
+  - sharp subject on streaked background
+displayName: Panning Background Streak Frame
+category: 5. Action Motion Setpieces
+domain: anime action staging
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-battle-and-worlds
+  - action
+  - panning
+  - tracking-shot
+visualDna:
+  aesthetic: 'Anime tracking pan: the camera moves alongside the subject at its speed, so the subject is drawn sharp while the background smears into long horizontal color streaks.'
+  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the side-tracking pan with a streaked background and a sharp subject, and adds no opponent, sports gear, extra prop or danger.
+  color_and_tone: Keep the prompt palette; background colors stretch into bands that keep their hue but lose all detail.
+  lighting_and_shadow: Steady side light on the subject; the streaked background keeps only its broad value pattern.
+  texture_and_material: Smooth horizontal streak bands behind a crisp cel subject, with a few longer streaks at ground level.
+  camera_and_composition: Strict side-on profile view at subject height, the subject a little behind center with lead room in the direction of travel.
+  atmosphere_and_mood: Sustained speed and a steady, flowing momentum.
+  rendering_and_quality: Crisp subject, uniformly directional background streaks, no radial speed lines.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Panning Background Streak Frame as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: sharp subject on streaked background; horizontal color bands; side-on profile view; lead room ahead; no radial speed lines
+avoidRules:
+  - added opponent
+  - added sports gear
+  - invented danger or explosion
+  - extra props
+  - readable text
+  - franchise character likeness
+  - radial speed lines
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, radial speed lines, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_05
+  packName: Anime Battle & Worlds
+  categoryId: action
+  categoryName: 5. Action Motion Setpieces
+  tags:
+    - anime-battle-and-worlds
+    - action
+    - panning
+    - tracking-shot
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: anime action staging

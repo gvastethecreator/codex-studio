@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP06-036
 packId: pack_06
-name: Monotype
+name: Glass-Plate Monotype
 category: 3. Printmaking
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,55 +12,29 @@ tags:
   - essential-art-styles
   - printmaking
 visualDna:
-  aesthetic: >-
-    Monotype acts as a transferable art-medium router: start from Single painterly print, Transfer
-    texture and print-process system built from matrix marks, ink transfer, pressure, registration,
-    plate or block artifacts, and paper absorption, then apply the medium behavior to prompt X
-    instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Soft, smashed paint; preserve the prompt subject while
-    converting it into carved, etched, stamped, screened, dotted, grained, or impressed mark
-    systems, keeping the requested identity, silhouette, pose, object function, or environment
-    legible.
-  color_and_tone: >-
-    Build color with Muted, blended; use palette as ink behavior: limited plates, overprint,
-    misregistration, monochrome value, cyan chemistry, newspaper dots, or security green-grey
-    restraint, with deliberate value grouping, accent control, and medium-specific limits rather
-    than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Soft; translate light into line density, dot frequency, relief shadow,
-    plate tone, paper reserve, or ink coverage rather than photographic illumination, so value
-    structure supports the medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Glass transfer, paper; surface detail should reveal paper fibers, plate marks, burr,
-    gouge, rosin grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping
-    material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Blurred; compose through print registration, cut rhythm, border
-    pressure, edition-like balance, negative space, and repeatable mark hierarchy, with scale,
-    spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Ghostly, soft; derive mood from hand pressure, mechanical reproduction, archival
-    value, propaganda energy, occult darkness, newspaper grit, or tactile experiment, letting the
-    medium alter interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Unique, expressive; finish as a credible print artifact with exact mark logic,
-    restrained texture, and no fake poster text or random distress overlay, clean denoised surfaces
-    where appropriate, and enough craft evidence to make the medium recognizable.
-  key_features: Single painterly print; Transfer texture; Muted, blended; Glass transfer, paper; Blurred
-  creative_brief: >-
-    Apply Monotype as an art-style preset over prompt X: preserve the user's requested subject, then
-    route mark-making, palette, surface, composition, mood, and final craft through Single painterly
-    print, Transfer texture, Glass transfer, paper without requiring the card image's original
-    subject.
+  aesthetic: 'Monotype: ink rolled and brushed onto a smooth glass or metal plate, wiped back with rags and fingers, then pressed once onto paper so only one soft impression exists.'
+  subject_treatment: Redraw the prompt's subject, pose, setting and framing as an impression of this print process; ink transfer, plate or block marks, registration and paper identify the process without requiring any particular scene.
+  color_and_tone: Muted ink tones, dark earth or blue-black with a few soft colors; wiped lights glow out of dark rolled areas.
+  lighting_and_shadow: 'Subtractive light: highlights wiped out of the ink with rag and finger, giving soft glowing halos.'
+  texture_and_material: Squashed ink with fuzzy spread edges, roller marks, rag-wipe textures and fingerprint smears, brush marks flattened by the press.
+  camera_and_composition: Keep the requested framing; loose painterly forms with a soft rectangular plate edge.
+  atmosphere_and_mood: Ghostly, spontaneous and dreamlike, a painting glimpsed once.
+  rendering_and_quality: Soft squashed transfer texture, wiped lights and roller marks; no sharp lines, no repeatable plate detail.
+  key_features: ink wiped from a glass plate; squashed soft transfer edges; rag and finger wipe marks; roller streaks; single ghostly impression
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glass-Plate Monotype as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - changing the requested subject
+  - readable printed text
+  - digital vector cleanliness
+  - crisp etched lines
+  - flat screenprint color
+  - sharp detail
   - photo
   - realistic
   - photorealistic
   - 3d render
   - octane render
   - noise
-  - blurry
   - deformed
   - ugly
   - bad anatomy
@@ -79,14 +53,16 @@ avoidRules:
   - smooth digital gradient
   - random distress overlay
   - wrong print process
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-036.webp
 attributes:
-  negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
-    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
-    uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital
-    gradient, random distress overlay, wrong print process
+  negativePrompt: changing the requested subject, readable printed text, digital vector cleanliness, crisp etched lines, flat screenprint color, sharp detail, photo, realistic, photorealistic, 3d render, octane render, noise, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital gradient, random distress overlay, wrong print process, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -100,3 +76,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Glass-Plate Monotype
+styleAnchors:
+  - Glass-Plate Monotype
+  - Monotype

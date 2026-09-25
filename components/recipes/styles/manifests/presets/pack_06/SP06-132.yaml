@@ -1,0 +1,79 @@
+schemaVersion: 1
+id: SP06-132
+packId: pack_06
+name: Reduction Linocut
+styleAnchors:
+  - Reduction Linocut
+  - multi-color print from one progressively carved block
+  - one block printed in successive colors
+displayName: Reduction Linocut
+category: 3. Printmaking
+domain: multi-color print from one progressively carved block
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - printmaking
+  - reduction-print
+  - linocut
+  - multi-color
+visualDna:
+  aesthetic: 'Reduction linocut: one linoleum block carved and printed again and again, each pass removing more and printing a darker color over the last.'
+  subject_treatment: Redraw the prompt's subject, pose, setting and framing as an impression of this print process; ink transfer, plate or block marks, registration and paper identify the process without requiring any particular scene.
+  color_and_tone: Four to six flat colors stacked light to dark, such as cream, yellow, orange, red, deep blue; each color partly transparent over the previous.
+  lighting_and_shadow: Light areas are the earliest carved-away colors, shadows the last dark pass; clear stepped value bands.
+  texture_and_material: Slight halo of earlier colors peeking at the edges of later ones, speckled ink texture, smooth curved gouge lines.
+  camera_and_composition: Keep the requested framing; shapes nest inside each other from light to dark.
+  atmosphere_and_mood: Warm, crafted and rich, color built patiently layer by layer.
+  rendering_and_quality: Stacked flat color layers with visible edge halos and speckle; no gradients, no black key line drawn separately.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Reduction Linocut as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: one block printed in successive colors; light-to-dark stacked layers; edge halos of earlier colors; speckled ink; nested shapes
+avoidRules:
+  - photo
+  - photorealistic
+  - 3d render
+  - smooth digital gradient
+  - random distress overlay
+  - wrong print process
+  - fake poster text
+  - generic AI gloss
+  - changing the requested subject
+  - readable printed text
+  - digital vector cleanliness
+  - gradients
+  - separate black outline
+  - photographic texture
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: photo, photorealistic, 3d render, smooth digital gradient, random distress overlay, wrong print process, fake poster text, generic AI gloss, changing the requested subject, readable printed text, digital vector cleanliness, gradients, separate black outline, photographic texture, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_06
+  packName: Essential Art Styles
+  categoryId: printmaking
+  categoryName: 3. Printmaking
+  tags:
+    - essential-art-styles
+    - printmaking
+    - reduction-print
+    - linocut
+    - multi-color
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: multi-color print from one progressively carved block

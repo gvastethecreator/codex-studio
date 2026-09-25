@@ -3,7 +3,7 @@ id: SP07-014
 packId: pack_07
 name: Cyberpunk Apartment
 category: 1. Interior Design Systems
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,74 +12,29 @@ tags:
   - architecture-and-interior
   - interior-design-systems
 visualDna:
-  aesthetic: >-
-    Cyberpunk Apartment acts as a transferable architecture/interior router: dense cable layers,
-    scratched metal, reclaimed panels, neon spill, CRT amber pockets; fuse it with interior-system
-    design grammar with furniture-independent proportion, material hierarchy, junction detail,
-    tactile finish, and lived spatial rhythm; route spatial grammar, material behavior, scale,
-    ornament, and light over prompt X without requiring the default sample anchor, fixed spatial
-    set, landscape setup, or object sample.
-  subject_treatment: >-
-    Preserve prompt subject, action, and context while translating any requested subject through
-    clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy,
-    and object-ready interior detailing; treat dense cable layers, scratched metal, reclaimed
-    panels, neon spill, CRT amber pockets as massing, edge, surface, joinery, threshold, or ornament
-    behavior rather than a mandatory building scene.
-  color_and_tone: >-
-    Map color through controlled interior color hierarchy, wall or shell base tones, tactile
-    secondary materials, small accent signals, and readable value spacing; let source cues such as
-    dense cable layers, scratched metal, reclaimed panels, neon spill, CRT amber pockets decide
-    accent hierarchy, material temperature, and value separation while staying attached to the
-    requested content.
-  lighting_and_shadow: >-
-    Use soft daylight, practical bounce, concealed glow, edge-defining shadow, and material-aware
-    reflection control; make light reveal joints, relief, material depth, scale, and atmosphere from
-    dense cable layers, scratched metal, reclaimed panels, neon spill, CRT amber pockets without
-    replacing prompt X with a stock architectural render.
-  texture_and_material: >-
-    Render wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and
-    tactile construction details; prioritize the tactile signals in dense cable layers, scratched
-    metal, reclaimed panels, neon spill, CRT amber pockets, with believable surface response,
-    denoised grain, coherent wear, and no generic wallpaper texture.
-  camera_and_composition: >-
-    Frame through cropped architectural-detail framing, modular spacing, planar overlap, threshold
-    cuts, section-like reads, and deliberate negative space; convert dense cable layers, scratched
-    metal, reclaimed panels, neon spill, CRT amber pockets into reusable perspective, crop, depth,
-    section, modular rhythm, and negative-space rules instead of one fixed style sample layout.
-  atmosphere_and_mood: >-
-    Carry mood through inhabitable atmosphere, design intent, tactile comfort or tension, and
-    spatial personality without staged showroom dependency; the preset can support adult, strange,
-    sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them
-    while keeping the architectural identity readable.
-  rendering_and_quality: >-
-    Finish with polished architectural visualization clarity with denoised surfaces, believable
-    material response, no fake text, and no decor-catalog drift; keep clean denoise, legible
-    construction, stable object or anatomy structure when applicable, no watermark, no fake readable
-    text, no logo, no camera prop, and no prompt-literal card copy.
-  key_features: >-
-    dense cable layers, scratched metal, reclaimed panels, neon spill, CRT amber pockets; clean
-    massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and
-    object-ready interior detailing; wood, plaster, metal, textile, glass, tile, concrete, patina,
-    polish, grain, seams, and tactile construction details; cropped architectural-detail framing,
-    modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative
-    space
-  creative_brief: >-
-    Apply Cyberpunk Apartment after prompt X as a transferable architecture/interior style layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
-    dense cable layers, scratched metal, reclaimed panels, neon spill, CRT amber pockets,
-    interior-system design grammar with furniture-independent proportion, material hierarchy,
-    junction detail, tactile finish, and lived spatial rhythm, material discipline, spatial grammar,
-    and negative controls without requiring a single spatial sample, product-photo setup, aisle-like
-    default, or empty abstraction.
+  aesthetic: 'Cyberpunk apartment: a cramped high-rise unit retrofitted by its tenant, with salvaged panels, surface-run cable bundles, stacked hardware and colored light from signs outside.'
+  subject_treatment: Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.
+  color_and_tone: Near-black and gunmetal base with magenta and cyan neon spill from outside, amber CRT or LED pockets inside; saturated color only in light, not surfaces.
+  lighting_and_shadow: Night; neon from the window as the strongest source, tinted rim light on edges, small warm practicals, deep crushed corners.
+  texture_and_material: Scratched powder-coated metal, zip-tied cable looms, water-stained ceiling tiles, reclaimed plastic panels, condensation on glass.
+  camera_and_composition: Keep the requested view; tight wide-angle framing that makes the room feel small, layers of cable and hardware framing the subject.
+  atmosphere_and_mood: Cramped, electric and lonely under a city that never sleeps.
+  rendering_and_quality: 'Cinematic low-light photograph: coloured light kept clean, grime specific, no readable screens or signs.'
+  key_features: surface-run cable bundles; salvaged metal panels; magenta and cyan neon spill; amber small practicals; cramped wide-angle frame
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cyberpunk Apartment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
-  - clean
-  - organized
-  - day
+  - furniture catalog staging
+  - olive branch in a vase as default decor
+  - panoramic window view as default backdrop
+  - real designer furniture replicas
+  - replacing the requested room with a living room
+  - clean organized room
   - gamer desk
   - monitor wall
+  - readable screens
+  - clean
+  - organized
   - readable UI/text
-  - weapon
-  - person
   - chair/bed focus
   - alley/street scene
   - market aisle
@@ -91,7 +46,6 @@ avoidRules:
   - lamp hero
   - curtain wall default
   - fixed building-only scene
-  - mandatory interior interior zones
   - corridor perspective
   - furniture showroom
   - prompt-required card
@@ -101,16 +55,16 @@ avoidRules:
   - camera prop
   - mandatory interior set
   - prompt-literal card
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-014.webp
 attributes:
-  negativePrompt: >-
-    clean, organized, day, gamer desk, monitor wall, readable UI/text, weapon, person, chair/bed
-    focus, alley/street scene, market aisle, library aisle, corridor tunnel, empty abstraction,
-    showroom formula, chair or sofa focus, lamp hero, curtain wall default, fixed building-only
-    scene, mandatory interior interior zones, corridor perspective, furniture showroom,
-    prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set,
-    prompt-literal card
+  negativePrompt: furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, clean organized room, gamer desk, monitor wall, readable screens, clean, organized, readable UI/text, chair/bed focus, alley/street scene, market aisle, library aisle, corridor tunnel, empty abstraction, showroom formula, chair or sofa focus, lamp hero, curtain wall default, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

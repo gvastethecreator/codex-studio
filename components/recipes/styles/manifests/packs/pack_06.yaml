@@ -23,6 +23,11 @@ categories:
       - pack_06/SP06-013.yaml
       - pack_06/SP06-014.yaml
       - pack_06/SP06-015.yaml
+      - pack_06/SP06-121.yaml
+      - pack_06/SP06-122.yaml
+      - pack_06/SP06-123.yaml
+      - pack_06/SP06-124.yaml
+      - pack_06/SP06-125.yaml
   - id: drawing-and-sketching
     name: 2. Drawing & Sketching
     presetRefs:
@@ -41,6 +46,11 @@ categories:
       - pack_06/SP06-028.yaml
       - pack_06/SP06-029.yaml
       - pack_06/SP06-030.yaml
+      - pack_06/SP06-126.yaml
+      - pack_06/SP06-127.yaml
+      - pack_06/SP06-128.yaml
+      - pack_06/SP06-129.yaml
+      - pack_06/SP06-130.yaml
   - id: printmaking
     name: 3. Printmaking
     presetRefs:
@@ -59,6 +69,11 @@ categories:
       - pack_06/SP06-043.yaml
       - pack_06/SP06-044.yaml
       - pack_06/SP06-045.yaml
+      - pack_06/SP06-131.yaml
+      - pack_06/SP06-132.yaml
+      - pack_06/SP06-133.yaml
+      - pack_06/SP06-134.yaml
+      - pack_06/SP06-135.yaml
   - id: digital-art
     name: 4. Digital Art
     presetRefs:
@@ -77,6 +92,11 @@ categories:
       - pack_06/SP06-058.yaml
       - pack_06/SP06-059.yaml
       - pack_06/SP06-060.yaml
+      - pack_06/SP06-136.yaml
+      - pack_06/SP06-137.yaml
+      - pack_06/SP06-138.yaml
+      - pack_06/SP06-139.yaml
+      - pack_06/SP06-140.yaml
   - id: mixed-media
     name: 5. Mixed Media
     presetRefs:
@@ -158,6 +178,11 @@ presetRefs:
   - pack_06/SP06-050.yaml
   - pack_06/SP06-056.yaml
   - pack_06/SP06-060.yaml
+  - pack_06/SP06-136.yaml
+  - pack_06/SP06-137.yaml
+  - pack_06/SP06-138.yaml
+  - pack_06/SP06-139.yaml
+  - pack_06/SP06-140.yaml
   - pack_06/SP06-055.yaml
   - pack_06/SP06-049.yaml
   - pack_06/SP06-058.yaml
@@ -177,6 +202,11 @@ presetRefs:
   - pack_06/SP06-008.yaml
   - pack_06/SP06-013.yaml
   - pack_06/SP06-015.yaml
+  - pack_06/SP06-121.yaml
+  - pack_06/SP06-122.yaml
+  - pack_06/SP06-123.yaml
+  - pack_06/SP06-124.yaml
+  - pack_06/SP06-125.yaml
   - pack_06/SP06-018.yaml
   - pack_06/SP06-026.yaml
   - pack_06/SP06-016.yaml
@@ -187,6 +217,11 @@ presetRefs:
   - pack_06/SP06-028.yaml
   - pack_06/SP06-029.yaml
   - pack_06/SP06-030.yaml
+  - pack_06/SP06-126.yaml
+  - pack_06/SP06-127.yaml
+  - pack_06/SP06-128.yaml
+  - pack_06/SP06-129.yaml
+  - pack_06/SP06-130.yaml
   - pack_06/SP06-019.yaml
   - pack_06/SP06-022.yaml
   - pack_06/SP06-024.yaml
@@ -227,6 +262,11 @@ presetRefs:
   - pack_06/SP06-040.yaml
   - pack_06/SP06-034.yaml
   - pack_06/SP06-045.yaml
+  - pack_06/SP06-131.yaml
+  - pack_06/SP06-132.yaml
+  - pack_06/SP06-133.yaml
+  - pack_06/SP06-134.yaml
+  - pack_06/SP06-135.yaml
   - pack_06/SP06-092.yaml
   - pack_06/SP06-094.yaml
   - pack_06/SP06-095.yaml

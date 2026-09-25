@@ -3,7 +3,7 @@ id: SP06-119
 packId: pack_06
 name: Cozy Sim Seasonal Palette
 category: 7. Game Art Directions & UI
-version: 1
+version: 2
 supportedTasks:
   - sprite_sheet
   - image_generate
@@ -12,70 +12,28 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: >-
-    Cozy Sim Seasonal Palette acts as a transferable art-medium router: start from Cozy sim seasonal
-    art style with soft pixel warmth, gentle routine energy, and approachable hand crafted charm,
-    gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and
-    production-art clarity and game-art direction system built from playable readability, UI or
-    asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply
-    the medium behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Make any subject feel small, friendly, useful, and
-    collectible through rounded forms and soft edge priorities; preserve the prompt subject while
-    routing it through tile readability, icon clarity, splash rendering, interface material, sprite
-    bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose,
-    object function, or environment legible.
-  color_and_tone: >-
-    Build color with Four season palette logic, warm pastels, honeyed highlights, cool morning
-    shadows, and low stress contrast; use color as gameplay hierarchy: rarity glow, faction
-    contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable
-    inventory material, with deliberate value grouping, accent control, and medium-specific limits
-    rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Soft ambient daylight, tiny contact shadows, seasonal color washes, and
-    almost no harsh drama; shape light through game readability: rim separation, UI glow,
-    static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so
-    value structure supports the medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Gentle pixel grain, quilt like pattern accents, soft organic noise, and tactile handmade
-    detail; surface detail should support genre grammar through parchment, HUD glass, pixel atlas
-    texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping
-    material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Isometric or icon atlas framing with tidy spacing, cozy negative
-    space, and clear modular grouping; compose through gameplay-facing hierarchy, atlas consistency,
-    menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen energy, with
-    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Calm, domestic, nurturing mood without requiring farms, crops, animals, houses, or
-    seasonal scenery; derive mood from playable stakes, collection desire, tactical control, cozy
-    routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter
-    interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Clean cozy game polish, crisp but soft edged pixels, no visual clutter, no readable
-    labels; finish with game-production clarity, strong silhouettes, controlled UI-like detail, and
-    no unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough craft
-    evidence to make the medium recognizable.
-  key_features: >-
-    Cozy sim seasonal art style with soft pixel warmth, gentle routine energy, and approachable hand
-    crafted charm; gameplay-readable hierarchy, genre-specific surface language, UI-aware
-    composition, and production-art clarity; Four season palette logic, warm pastels, honeyed
-    highlights, cool morning shadows, and low stress contrast; Gentle pixel grain, quilt like
-    pattern accents, soft organic noise, and tactile handmade detail; Isometric or icon atlas
-    framing with tidy spacing, cozy negative space, and clear modular grouping
-  creative_brief: >-
-    Apply Cozy Sim Seasonal Palette as an art-style preset over prompt X: preserve the user's
-    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
-    through Cozy sim seasonal art style with soft pixel warmth, gentle routine energy, and
-    approachable hand crafted charm, gameplay-readable hierarchy, genre-specific surface language,
-    UI-aware composition, and production-art clarity, Gentle pixel grain, quilt like pattern
-    accents, soft organic noise, and tactile handmade detail without requiring the card image's
-    original subject.
+  aesthetic: 'Cozy life-sim art direction: soft pixel or painted forms with rounded shapes, gentle outlines and warm seasonal palettes.'
+  subject_treatment: Keep the prompt subject, action, setting and camera; this art direction sets palette, light, shape language and finish, and adds no interface elements.
+  color_and_tone: 'One season per image: spring pastels, summer greens, autumn ambers or winter blues, always warm-leaning and low contrast.'
+  lighting_and_shadow: Soft sunny light, short soft shadows, warm window glow in evening scenes.
+  texture_and_material: Rounded wood, soft foliage clumps, knitted and woven textures, small scattered details like flowers and leaves.
+  camera_and_composition: Keep the requested view; tidy spacing, cozy negative space and small useful objects arranged invitingly.
+  atmosphere_and_mood: Gentle and comforting, daily routine as a small pleasure.
+  rendering_and_quality: Clean soft outlines and a controlled seasonal palette; nothing harsh or gritty.
+  key_features: seasonal palette; rounded forms; soft outlines; warm light; cozy negative space
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cozy Sim Seasonal Palette as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - copied game characters
+  - known game HUD layout
+  - readable interface text
+  - numbers and stat values
+  - publisher or studio logo
+  - harsh contrast
+  - gritty textures
+  - known farming game likeness
   - motion blur
   - inconsistent proportions
   - changing costume
-  - background scene
   - farm requirement
   - crop requirement
   - animal requirement
@@ -92,14 +50,16 @@ avoidRules:
   - logo clutter
   - generic screenshot
   - unplayable visual clutter
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-119.webp
 attributes:
-  negativePrompt: >-
-    motion blur, inconsistent proportions, changing costume, background scene, farm requirement,
-    crop requirement, animal requirement, watermark, text, wrong medium, generic AI gloss, muddy
-    noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text,
-    logo clutter, generic screenshot, unplayable visual clutter
+  negativePrompt: copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, harsh contrast, gritty textures, known farming game likeness, motion blur, inconsistent proportions, changing costume, farm requirement, crop requirement, animal requirement, watermark, text, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   layout:
     preferredFrameCount: 8
     frameGrid: 4x2

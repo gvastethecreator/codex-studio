@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP07-124
+packId: pack_07
+name: Papier-Mache Strip Sculpture
+styleAnchors:
+  - Papier-Mache Strip Sculpture
+  - papier-mache craft sculpture
+  - pasted torn-paper strips
+displayName: Papier-Mache Strip Sculpture
+category: 6. Toy Craft And Miniature Architecture
+domain: papier-mache craft sculpture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - toy-craft-and-miniature-architecture
+  - papier-mache
+  - poster-paint
+  - handmade
+visualDna:
+  aesthetic: 'Papier-mache sculpture: the subject built up from pasted strips of torn paper over a wire and balloon armature, then painted in thick poster paint.'
+  subject_treatment: Keep the requested subject, its identity, pose and camera, and rebuild it as a handmade tabletop miniature in this material; a requested object stays that object and never turns into a house or building.
+  color_and_tone: Bold chalky poster-paint colors with thin patches where grey torn newsprint shows through; matte.
+  lighting_and_shadow: Soft studio daylight with gentle shadows; lumpy surfaces create small uneven highlights.
+  texture_and_material: Lumpy layered strip edges, paste wrinkles, brush streaks, faint grey newsprint that never becomes readable.
+  camera_and_composition: Keep the requested view with the object standing on a plain surface; its hollow lightness should read.
+  atmosphere_and_mood: Cheerful, handmade and a little grotesque, carnival craft energy.
+  rendering_and_quality: Photograph of a real papier-mache piece; lumpiness kept, newsprint stays blurred and unreadable.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Papier-Mache Strip Sculpture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: pasted torn-paper strips; lumpy uneven surface; chalky poster paint; grey newsprint showing through; hollow lightweight form
+avoidRules:
+  - brand logo on parts
+  - readable text
+  - turning a requested object into a house or building
+  - full-scale real construction
+  - playroom or party scene
+  - readable newsprint
+  - smooth ceramic
+  - polished sculpture
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: brand logo on parts, readable text, turning a requested object into a house or building, full-scale real construction, playroom or party scene, readable newsprint, smooth ceramic, polished sculpture, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: toy-craft-and-miniature-architecture
+  categoryName: 6. Toy Craft And Miniature Architecture
+  tags:
+    - architecture-and-interior
+    - toy-craft-and-miniature-architecture
+    - papier-mache
+    - poster-paint
+    - handmade
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: papier-mache craft sculpture

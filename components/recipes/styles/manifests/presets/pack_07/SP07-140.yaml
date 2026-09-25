@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP07-140
+packId: pack_07
+name: Ocean-Barrier Megadam
+styleAnchors:
+  - Ocean-Barrier Megadam
+  - sea-holding dam megastructure
+  - kilometre-high curved sea wall
+displayName: Ocean-Barrier Megadam
+category: 7. Megastructure And Impossible Space
+domain: sea-holding dam megastructure
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - megastructure-and-impossible-space
+  - megadam
+  - sea-wall
+  - megastructure
+visualDna:
+  aesthetic: 'Ocean megadam: a curved concrete wall kilometres high holding back a raised sea, spillway gates and buttresses dwarfing the land in its lee.'
+  subject_treatment: Keep the requested subject, action and geometry stable; this preset owns the ocean-holding dam and its overwhelming scale, and it never bends, loops or breaks the requested structure.
+  color_and_tone: Wet grey concrete, dark sea green at the brim, pale spray and green lowland below; heavy and cold.
+  lighting_and_shadow: Low sun behind the wall throwing the lowland into a vast shadow; spray catching light along the crest.
+  texture_and_material: Streaked concrete, rust weeping from gates, algae lines at old water levels, spray mist.
+  camera_and_composition: Keep the requested geometry; look up from the lowland so the wall fills the frame and the sea shows at the crest.
+  atmosphere_and_mood: Precarious and monumental, calm life under a wall of water.
+  rendering_and_quality: Photographic realism with correct haze at the top of the wall; no disaster breach unless asked.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ocean-Barrier Megadam as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: kilometre-high curved sea wall; ocean at the brim; buttresses and spillway gates; vast shadow over the lowland; spray at the crest
+avoidRules:
+  - black and gold sci-fi palette by default
+  - franchise ship or station likeness
+  - readable signage or screens
+  - glossy mirror floor by default
+  - dam breach disaster
+  - river dam only
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, dam breach disaster, river dam only, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: megastructure-and-impossible-space
+  categoryName: 7. Megastructure And Impossible Space
+  tags:
+    - architecture-and-interior
+    - megastructure-and-impossible-space
+    - megadam
+    - sea-wall
+    - megastructure
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: sea-holding dam megastructure

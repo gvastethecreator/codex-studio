@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP07-109
+packId: pack_07
+name: Crevice Rock Garden
+styleAnchors:
+  - Crevice Rock Garden
+  - alpine crevice garden
+  - parallel stone slabs set on edge
+displayName: Crevice Rock Garden
+category: 4. Landscape And Garden Systems
+domain: alpine crevice garden
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - landscape-and-garden-systems
+  - crevice-garden
+  - alpine
+  - stone
+visualDna:
+  aesthetic: 'Crevice rock garden: thin slabs of stone set on edge in parallel rows like tilted strata, with alpine cushion plants rooted deep in the narrow gaps and gravel mulch over all.'
+  subject_treatment: Keep the requested site, subject, action and camera; reorganise ground plane, planting, edging and paths in this garden system only where the prompt has outdoor ground, and add no garden to an interior, object or portrait prompt.
+  color_and_tone: Grey, buff or slate-blue stone, silver and grey-green cushions, tiny saturated flowers in magenta, yellow and white, pale gravel; crisp and bright.
+  lighting_and_shadow: Clear mountain light with hard shadows between the slabs, cushions glowing when backlit.
+  texture_and_material: Split slate or sandstone slabs on edge, tight silver cushions of saxifrage and dianthus, trailing gentians, grit and gravel mulch, lichen on stone.
+  camera_and_composition: Keep the requested view; low and close so the slab ridges run diagonally across the frame, plants in the gaps as jewels.
+  atmosphere_and_mood: Rugged, precise and delicate, mountains in miniature.
+  rendering_and_quality: Sharp photograph with slab edges and tiny flowers in focus, no lawn or soft beds.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crevice Rock Garden as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: parallel stone slabs set on edge; alpine cushions in narrow crevices; gravel mulch; tiny saturated flowers; hard crevice shadows
+avoidRules:
+  - golden-hour garden postcard formula
+  - corten steel edging as default
+  - real city skyline or landmark
+  - adding a garden to an interior or object prompt
+  - lawn
+  - mulched beds
+  - boulder heap rockery
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: golden-hour garden postcard formula, corten steel edging as default, real city skyline or landmark, adding a garden to an interior or object prompt, lawn, mulched beds, boulder heap rockery, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: landscape-and-garden-systems
+  categoryName: 4. Landscape And Garden Systems
+  tags:
+    - architecture-and-interior
+    - landscape-and-garden-systems
+    - crevice-garden
+    - alpine
+    - stone
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: alpine crevice garden

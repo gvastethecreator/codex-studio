@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP07-130
+packId: pack_07
+name: Droste Recursive Room
+styleAnchors:
+  - Droste Recursive Room
+  - self-containing recursive space
+  - space containing its own copy
+displayName: Droste Recursive Room
+category: 7. Megastructure And Impossible Space
+domain: self-containing recursive space
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - megastructure-and-impossible-space
+  - droste
+  - recursion
+  - paradox
+visualDna:
+  aesthetic: 'Droste recursion: the space contains a smaller exact copy of itself through a window, doorway or frame, which contains another, receding without end.'
+  subject_treatment: Keep the requested subject recognisable; this preset openly changes its structure into a self-containing recursion that repeats inside itself, and that advertised structural change is the purpose of the preset.
+  color_and_tone: The scene palette repeated at every level, each recursion a step cooler and dimmer toward the center.
+  lighting_and_shadow: One lighting setup repeated exactly at every level, so the copies read as the same place.
+  texture_and_material: Materials stay identical at every scale until they blur into a point at the vanishing center.
+  camera_and_composition: Frontal or spiral composition, the recursion centered or twisting inward on a Droste spiral.
+  atmosphere_and_mood: Hypnotic and vertiginous, a room with no final wall.
+  rendering_and_quality: Seamless recursion with no visible seam or collage frame; the copies are continuous space.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Droste Recursive Room as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: space containing its own copy; endless inward repetition; centered or spiral recursion; cooler dimmer levels; seamless continuity
+avoidRules:
+  - black and gold sci-fi palette by default
+  - franchise ship or station likeness
+  - readable signage or screens
+  - glossy mirror floor by default
+  - psychedelic color melt
+  - mirror reflections instead of real recursion
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, psychedelic color melt, mirror reflections instead of real recursion, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: megastructure-and-impossible-space
+  categoryName: 7. Megastructure And Impossible Space
+  tags:
+    - architecture-and-interior
+    - megastructure-and-impossible-space
+    - droste
+    - recursion
+    - paradox
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: self-containing recursive space

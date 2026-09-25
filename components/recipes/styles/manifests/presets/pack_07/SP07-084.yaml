@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP07-084
+packId: pack_07
+name: Space-Age Fiberglass Interior
+styleAnchors:
+  - Space-Age Fiberglass Interior
+  - space-age 1960s interior
+  - molded white fiberglass shells
+displayName: Space-Age Fiberglass Interior
+category: 1. Interior Design Systems
+domain: space-age 1960s interior
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - interior-design-systems
+  - space-age
+  - fiberglass
+  - retro-futurist
+visualDna:
+  aesthetic: 'Space-age interior of the late 1960s: molded white fiberglass shells, curved walls with rounded porthole openings, sunken conversation pits and wall-to-wall shag.'
+  subject_treatment: Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.
+  color_and_tone: Glossy white shells with tangerine, hot orange, lime or purple upholstery and chrome; high-key, saturated accents on a white base.
+  lighting_and_shadow: Glowing ceiling domes and recessed rings, globe lamps, soft wraparound shadow on curved surfaces, reflections sliding across gloss.
+  texture_and_material: Seamless glossy fiberglass and ABS, deep shag carpet, stretch jersey upholstery, chrome and smoked acrylic, rounded vinyl padding.
+  camera_and_composition: Keep the requested view; wide lens emphasising curvature, rounded openings framing depth, a sunken level in the foreground.
+  atmosphere_and_mood: Swinging, optimistic and futuristic, the future as imagined then.
+  rendering_and_quality: Glossy period colour photograph with clean highlights on curved plastic, no pixel-age screens or modern hardware.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Space-Age Fiberglass Interior as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: molded white fiberglass shells; sunken conversation pit; tangerine shag carpet; porthole openings; glowing ceiling domes
+avoidRules:
+  - furniture catalog staging
+  - olive branch in a vase as default decor
+  - panoramic window view as default backdrop
+  - real designer furniture replicas
+  - replacing the requested room with a living room
+  - wood grain dominance
+  - rectilinear boxes
+  - modern flat screens
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, wood grain dominance, rectilinear boxes, modern flat screens, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: interior-design-systems
+  categoryName: 1. Interior Design Systems
+  tags:
+    - architecture-and-interior
+    - interior-design-systems
+    - space-age
+    - fiberglass
+    - retro-futurist
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: space-age 1960s interior

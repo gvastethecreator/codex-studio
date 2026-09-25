@@ -1,0 +1,79 @@
+schemaVersion: 1
+id: SP06-136
+packId: pack_06
+name: Flow-Field Generative Lines
+styleAnchors:
+  - Flow-Field Generative Lines
+  - algorithmic flow-field line drawing
+  - thousands of flowing non-crossing lines
+displayName: Flow-Field Generative Lines
+category: 4. Digital Art
+domain: algorithmic flow-field line drawing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - digital-art
+  - generative
+  - flow-field
+  - algorithmic
+visualDna:
+  aesthetic: 'Generative flow-field art: thousands of thin lines traced by code through an invisible vector field, their density and direction revealing the subject.'
+  subject_treatment: Redraw the prompt's subject, pose, setting and framing with this digital mark system as one finished picture; it never becomes a concept board, turnaround sheet or 3D object render.
+  color_and_tone: One to three line colors on a plain ground, such as ink black on cream or neon gradients on black; tone from line density.
+  lighting_and_shadow: Values created by line crowding; bright areas left open, dark areas packed with lines.
+  texture_and_material: Hair-thin smooth curving lines that never cross, flowing like combed hair, crisp digital or plotted ink look.
+  camera_and_composition: Keep the requested framing; lines follow the contours and gestures of the subject.
+  atmosphere_and_mood: Hypnotic, calm and mathematical, motion frozen in lines.
+  rendering_and_quality: Clean anti-aliased curves with consistent width, density modulation only; no brush strokes, no fills.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Flow-Field Generative Lines as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: thousands of flowing non-crossing lines; density-based tone; subject revealed by field direction; plain ground; consistent thin width
+avoidRules:
+  - photo
+  - photorealistic
+  - generic AI gloss
+  - random AI smear
+  - muddy overpaint
+  - generic concept slop
+  - changing the requested subject
+  - concept board layout
+  - turnaround sheet
+  - game UI or HUD
+  - readable interface text
+  - brush strokes
+  - solid fills
+  - random scribbles
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: photo, photorealistic, generic AI gloss, random AI smear, muddy overpaint, generic concept slop, changing the requested subject, concept board layout, turnaround sheet, game UI or HUD, readable interface text, brush strokes, solid fills, random scribbles, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_06
+  packName: Essential Art Styles
+  categoryId: digital-art
+  categoryName: 4. Digital Art
+  tags:
+    - essential-art-styles
+    - digital-art
+    - generative
+    - flow-field
+    - algorithmic
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: algorithmic flow-field line drawing

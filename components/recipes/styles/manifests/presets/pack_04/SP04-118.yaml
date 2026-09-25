@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP04-118
+packId: pack_04
+name: Field Guide Species Plate
+styleAnchors:
+  - Field Guide Species Plate
+  - naturalist identification plate
+  - male, female and juvenile
+displayName: Field Guide Species Plate
+category: 6. Technical And Reference Sheets
+domain: naturalist identification plate
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - technical-and-reference-sheets
+  - field-guide
+  - species-plate
+  - gouache
+visualDna:
+  aesthetic: 'Field guide plate: one species painted in gouache as male, female and juvenile, with a flight or gait silhouette, egg or cocoon and a track.'
+  subject_treatment: Keep the prompt subject as the thing documented; this reference profile owns a field-guide plate showing sexes, life stages, a flight or gait silhouette and a track of one species, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.
+  color_and_tone: Accurate naturalist color on a pale cream ground, plumage or coat variants side by side for comparison.
+  lighting_and_shadow: Soft even light with tiny contact shadows, identical on every figure so markings compare fairly.
+  texture_and_material: Opaque gouache feathers, fur and scales, clean edges, small black silhouettes and footprint marks.
+  camera_and_composition: Figures in strict profile arranged in two rows at one scale, silhouettes and track below.
+  atmosphere_and_mood: Observant and patient, a species learned at a glance.
+  rendering_and_quality: Identification-grade clarity with no habitat scene and no species names.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Field Guide Species Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: male, female and juvenile; profile figures at one scale; flight or gait silhouette; track and egg; cream ground
+avoidRules:
+  - placeholder gibberish text
+  - invented numbers presented as data
+  - readable labels
+  - brand logo
+  - franchise likeness
+  - free painterly composition instead of a sheet
+  - habitat scene
+  - species names
+  - watermark
+  - text
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, habitat scene, species names, watermark, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_04
+  packName: Illustration & Graphic Novel
+  categoryId: technical-and-reference-sheets
+  categoryName: 6. Technical And Reference Sheets
+  tags:
+    - illustration-and-graphic-novel
+    - technical-and-reference-sheets
+    - field-guide
+    - species-plate
+    - gouache
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: naturalist identification plate

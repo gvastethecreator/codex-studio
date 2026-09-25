@@ -323,6 +323,20 @@ describe('style collection projection', () => {
       'SP04-098',
       'SP04-099',
       'SP04-100',
+      'SP04-116',
+      'SP04-117',
+      'SP04-118',
+      'SP04-119',
+      'SP04-120',
+      'SP04-121',
+      'SP04-122',
+      'SP04-123',
+      'SP04-124',
+      'SP04-125',
+      'SP04-126',
+      'SP04-127',
+      'SP04-128',
+      'SP04-129',
     ]);
     expect(diagramIds.has('SP10-067')).toBe(true);
     expect(diagramIds.has('SP10-068')).toBe(true);

@@ -3,7 +3,7 @@ id: SP06-078
 packId: pack_06
 name: Gold Leaf Art
 category: 5. Mixed Media
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,50 +12,25 @@ tags:
   - essential-art-styles
   - mixed-media
 visualDna:
-  aesthetic: >-
-    Gold Leaf Art acts as a transferable art-medium router: start from Gilded illustration, Metallic
-    shine and mixed-media assembly system built from layering, adhesion, surface collision,
-    found-material logic, tactile seams, and handmade construction, then apply the medium behavior
-    to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Gold accents; preserve the prompt subject while rebuilding
-    it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain,
-    gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object
-    function, or environment legible.
-  color_and_tone: >-
-    Build color with Gold, Black; treat color as material combination: paper aging, varnish warmth,
-    toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil
-    flow, with deliberate value grouping, accent control, and medium-specific limits rather than
-    generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Reflective; make light reveal relief, varnish gloss, paper lift, tape
-    shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value
-    structure supports the medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Metal foil, cracks; surface detail should show torn fiber, glue, tape edge, cork tooth,
-    thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping
-    material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Flat gold areas; compose through layer order, overlap, pin logic,
-    cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a
-    literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style
-    work.
-  atmosphere_and_mood: >-
-    Keep the mood Rich, ornamental; derive mood from DIY urgency, memory, repair, evidence, punk
-    collision, tactile intimacy, decorative excess, or experimental material play, letting the
-    medium alter interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Ornamental gilded finish with metallic leaf behavior and decorative flatness; finish
-    with coherent material stacking, readable subject transformation, and no single flat texture
-    pasted over the whole image, clean denoised surfaces where appropriate, and enough craft
-    evidence to make the medium recognizable.
-  key_features: Gilded illustration; Metallic shine; Gold, Black; Metal foil, cracks; Flat gold areas
-  creative_brief: >-
-    Apply Gold Leaf Art as an art-style preset over prompt X: preserve the user's requested subject,
-    then route mark-making, palette, surface, composition, mood, and final craft through Gilded
-    illustration, Metallic shine, Metal foil, cracks without requiring the card image's original
-    subject.
+  aesthetic: 'Water-gilded panel: loose gold leaf laid over red bole on gesso, burnished and tooled, with the subject painted in flat matte egg tempera or ink.'
+  subject_treatment: Keep the prompt subject, pose, action and camera view; rebuild the picture in this medium so the material sits on the image surface and never replaces clothing, skin or anatomy.
+  color_and_tone: Burnished gold fields against matte black, deep red bole showing through cracks, limited earth and lapis accents.
+  lighting_and_shadow: Gold flares bright or dark with viewing angle; painted areas are flat and shadowless.
+  texture_and_material: Leaf seams and tiny gaps, punched and incised tooling patterns in halos and borders, crackle showing red bole, matte tempera strokes.
+  camera_and_composition: Keep the requested view; gold fills the background or haloes the subject, painted forms flat against it.
+  atmosphere_and_mood: Rich and reverent, ornament as a sign of value.
+  rendering_and_quality: Genuine metallic leaf behavior with tooling and seams; no yellow paint pretending to be gold.
+  key_features: gold leaf on red bole; punched tooling; burnished glints; matte tempera figures; crackle
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gold Leaf Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - uniform beige torn-paper wash over every image
+  - red tape strips added by default
+  - material replacing clothing or skin
+  - readable printed words
+  - changing the requested camera view
+  - yellow paint as gold
+  - gold glitter
+  - photographic shading
   - photo
   - realistic
   - photorealistic
@@ -81,14 +56,16 @@ avoidRules:
   - fake scrapbook text
   - craft-table default
   - clean vector render
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-078.webp
 attributes:
-  negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
-    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
-    uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake
-    scrapbook text, craft-table default, clean vector render
+  negativePrompt: uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, yellow paint as gold, gold glitter, photographic shading, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

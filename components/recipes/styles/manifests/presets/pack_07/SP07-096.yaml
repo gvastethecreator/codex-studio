@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP07-096
+packId: pack_07
+name: Horseshoe Opera Auditorium
+styleAnchors:
+  - Horseshoe Opera Auditorium
+  - horseshoe opera house interior
+  - stacked horseshoe of boxes
+displayName: Horseshoe Opera Auditorium
+category: 3. Civic Infrastructure And Specialty Spaces
+domain: horseshoe opera house interior
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - civic-infrastructure-and-specialty-spaces
+  - opera-house
+  - auditorium
+  - gilt
+visualDna:
+  aesthetic: 'Horseshoe opera auditorium: a stacked horseshoe of private boxes in four or five tiers facing a proscenium, with red velvet, gilded plaster and a great chandelier at the centre of a painted ceiling.'
+  subject_treatment: Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.
+  color_and_tone: Crimson velvet, ivory and gold leaf, warm candle-like chandelier light, dark stage mouth; rich, warm and high contrast between box interiors and fronts.
+  lighting_and_shadow: The chandelier and small box sconces as warm sources, stage light spilling from the proscenium, dark box interiors behind gilt fronts.
+  texture_and_material: Carved and gilded plaster box fronts, red velvet upholstery and drapes, painted ceiling roundel, parquet stalls, heavy tasselled stage curtain.
+  camera_and_composition: Keep the requested view; from the stage look back at the horseshoe of tiers, or from a high box across to the proscenium.
+  atmosphere_and_mood: Glamorous, expectant and theatrical, a whole society watching itself.
+  rendering_and_quality: Warm low-light photograph with crisp gilt ornament and velvet depth, no readable programmes or signs.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Horseshoe Opera Auditorium as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: stacked horseshoe of boxes; red velvet and gilded plaster; central crystal chandelier; painted ceiling roundel; proscenium arch
+avoidRules:
+  - one-point corridor perspective as default
+  - wet mirror-gloss floor as default
+  - turning the requested room into a station or library
+  - readable signage or wayfinding text
+  - modern cinema seats
+  - flat fan-shaped hall
+  - readable programmes
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, modern cinema seats, flat fan-shaped hall, readable programmes, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: civic-infrastructure-and-specialty-spaces
+  categoryName: 3. Civic Infrastructure And Specialty Spaces
+  tags:
+    - architecture-and-interior
+    - civic-infrastructure-and-specialty-spaces
+    - opera-house
+    - auditorium
+    - gilt
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: horseshoe opera house interior

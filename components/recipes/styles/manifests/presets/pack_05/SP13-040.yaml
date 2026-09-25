@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP13-040
+packId: pack_05
+name: Worm's-Eye Leap Silhouette
+styleAnchors:
+  - Worm's-Eye Leap Silhouette
+  - anime action staging
+  - camera straight beneath looking up
+displayName: Worm's-Eye Leap Silhouette
+category: 5. Action Motion Setpieces
+domain: anime action staging
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-battle-and-worlds
+  - action
+  - worms-eye-view
+  - silhouette
+visualDna:
+  aesthetic: "Anime worm's-eye staging: the camera lies directly beneath the moving subject and looks straight up, so the subject passes overhead as a crisp dark silhouette against a bright flat sky."
+  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the straight-up worm’s-eye view with a backlit silhouette, and adds no opponent, sports gear, extra prop or danger.
+  color_and_tone: Dark near-black silhouette against a bright pale sky; the prompt colors show only in a thin rim along the silhouette.
+  lighting_and_shadow: Strong backlight from above, a thin bright rim around the silhouette and no fill from below.
+  texture_and_material: Flat silhouette fill with a few interior details picked out by the rim; the sky smooth and clean.
+  camera_and_composition: Straight-up view with a very wide lens; nearby walls, trees or edges converge toward the frame center and the subject crosses diagonally.
+  atmosphere_and_mood: Soaring, weightless and breath-held for a single instant.
+  rendering_and_quality: Clean graphic silhouette with readable pose and a sharp rim; no clutter in the sky.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Worm's-Eye Leap Silhouette as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: camera straight beneath looking up; backlit dark silhouette; thin bright rim; converging edges to center; diagonal crossing
+avoidRules:
+  - added opponent
+  - added sports gear
+  - invented danger or explosion
+  - extra props
+  - readable text
+  - franchise character likeness
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_05
+  packName: Anime Battle & Worlds
+  categoryId: action
+  categoryName: 5. Action Motion Setpieces
+  tags:
+    - anime-battle-and-worlds
+    - action
+    - worms-eye-view
+    - silhouette
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: anime action staging

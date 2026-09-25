@@ -3,7 +3,7 @@ id: SP06-070
 packId: pack_06
 name: Pinned Planning Board
 category: 5. Mixed Media
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,53 +12,25 @@ tags:
   - essential-art-styles
   - mixed-media
 visualDna:
-  aesthetic: >-
-    Pinned Planning Board acts as a transferable art-medium router: start from Pinned planning board
-    style with layered intent, thread logic, soft cork texture, and provisional composition, Pinned
-    items and mixed-media assembly system built from layering, adhesion, surface collision,
-    found-material logic, tactile seams, and handmade construction, then apply the medium behavior
-    to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Pins, string; preserve the prompt subject while rebuilding
-    it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain,
-    gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object
-    function, or environment legible.
-  color_and_tone: >-
-    Build color with Varied; treat color as material combination: paper aging, varnish warmth, toner
-    black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil flow,
-    with deliberate value grouping, accent control, and medium-specific limits rather than generic
-    color wash.
-  lighting_and_shadow: >-
-    Handle light through interior volume light; make light reveal relief, varnish gloss, paper lift,
-    tape shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so
-    value structure supports the medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Cork, paper; surface detail should show torn fiber, glue, tape edge, cork tooth, thread
-    thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material
-    scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Compose for Pinned Planning Board using its key spatial cues: Pinned
-    items; compose through layer order, overlap, pin logic, cut rhythm, swatch relationships,
-    tactile seams, and graphic collision without requiring a literal craft table, with scale,
-    spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Hopeful, messy; derive mood from DIY urgency, memory, repair, evidence, punk
-    collision, tactile intimacy, decorative excess, or experimental material play, letting the
-    medium alter interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Personal, planning; finish with coherent material stacking, readable subject
-    transformation, and no single flat texture pasted over the whole image, clean denoised surfaces
-    where appropriate, and enough craft evidence to make the medium recognizable.
-  key_features: >-
-    Pinned planning board style with layered intent, thread logic, soft cork texture, and
-    provisional composition; Pinned items; Varied; Cork, paper
-  creative_brief: >-
-    Apply Pinned Planning Board as an art-style preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Pinned planning board style with layered intent, thread logic, soft cork texture, and
-    provisional composition, Pinned items, Cork, paper without requiring the card image's original
-    subject.
+  aesthetic: 'Pinned planning board: sketches, prints and index cards about the subject pinned to cork and linked by colored thread in a hopeful working plan.'
+  subject_treatment: Keep the prompt subject as the hero of the arrangement with its identity, clothing and anatomy unchanged; this preset owns the cork planning-board layout of pinned cards, prints and linking thread.
+  color_and_tone: Warm cork brown, cream cards and white prints, with two or three thread and pushpin colors coding the plan.
+  lighting_and_shadow: Soft window light from one side; pins and curled cards cast small crisp shadows on the cork.
+  texture_and_material: Granular cork, curled index cards, glossy prints, pencil sketches, pushpins and taut cotton thread.
+  camera_and_composition: Frontal board view; the largest pinned image of the subject at center, thread radiating to smaller steps around it.
+  atmosphere_and_mood: Hopeful and busy, a plan still taking shape.
+  rendering_and_quality: Readable layering, taut thread lines and clear pinned depth; no legible notes.
+  key_features: cork board; pushpins; index-card sketches; colored thread links; central hero print
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pinned Planning Board as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - uniform beige torn-paper wash over every image
+  - red tape strips added by default
+  - material replacing clothing or skin
+  - readable printed words
+  - changing the requested camera view
+  - conspiracy board
+  - red string chaos
+  - legible notes
   - photo
   - realistic
   - photorealistic
@@ -74,7 +46,6 @@ avoidRules:
   - signature
   - frame
   - border
-  - conspiracy board
   - readable goals
   - clipping requirement
   - wrong medium
@@ -87,15 +58,16 @@ avoidRules:
   - fake scrapbook text
   - craft-table default
   - clean vector render
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-070.webp
 attributes:
-  negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
-    anatomy, watermark, text, signature, frame, border, conspiracy board, readable goals, clipping
-    requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable
-    text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default,
-    clean vector render
+  negativePrompt: uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, conspiracy board, red string chaos, legible notes, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable goals, clipping requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

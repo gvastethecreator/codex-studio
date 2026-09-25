@@ -3,10 +3,10 @@ id: SP13-022
 packId: pack_05
 name: Vertigo Energy Cross Style
 styleAnchors:
-  - 'Vertigo Energy Cross Style'
-displayName: 'Vertigo Energy Cross'
+  - Vertigo Energy Cross Style
+displayName: Vertigo Energy Cross
 category: 5. Action Motion Setpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -16,43 +16,24 @@ tags:
   - anime
   - action
 visualDna:
-  aesthetic: >-
-    Build vertigo from firm contours, extreme diagonals, and two directional paths that cross in
-    depth. Use aerial spacing and luminous edge accents to clarify the crossing without requiring a
-    collision, opponent, or literal energy effect.
-  subject_treatment: >-
-    Preserve the requested subject identities and count, action, pose, props, wardrobe, setting,
-    and tone. Restyle only contours, gesture emphasis, and edge rhythm. Do not add, remove, replace,
-    or duplicate people, opponents, props, or scene elements.
-  color_and_tone: >-
-    Preserve the requested palette and emotional temperature. Separate the crossing paths with
-    value contrast and restrained luminous accents drawn from colors already present in the scene.
-  lighting_and_shadow: >-
-    Use crisp crossing highlights only where they help separate existing forms. Follow the
-    requested lighting context and do not invent flashes, electricity, sparks, machinery, or magic.
-  texture_and_material: >-
-    Keep surface detail subordinate to the crossing motion. Use fine directional marks attached to
-    existing movement; preserve requested materials and do not add dust, smoke, debris, or other
-    physical elements unless requested.
-  camera_and_composition: >-
-    When the requested camera leaves room for interpretation, use a steep oblique viewpoint,
-    intersecting depth diagonals, and generous separation around the crossing paths. Preserve the
-    requested action and do not turn proximity into a collision.
-  atmosphere_and_mood: >-
-    Let the requested tone lead. Create vertigo through viewpoint, scale, and direction rather than
-    imposing danger, heroism, or a collision.
-  rendering_and_quality: >-
-    Use firm 2D contours, stable anatomy or object structure, and distinct value groups. Keep both
-    directional paths legible without obscuring the requested subject or action.
-  key_features: >-
-    Firm contours, extreme diagonals, aerial spacing, intersecting depth paths, restrained luminous
-    accents, and immediate subject and action readability.
-  creative_brief: >-
-    Frame the requested action with intersecting diagonals, aerial depth, and firm contour rhythm.
-    Preserve the requested subject, count, props, setting, action, and tone.
+  aesthetic: Anime vertigo frame from a steep high oblique looking down past the subject into deep space, where the subject's line of travel crosses a strong architectural or terrain edge in a clean X.
+  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the steep high oblique viewpoint and the X-crossing of travel line and edge line, and adds no opponent, sports gear, extra prop or danger.
+  color_and_tone: Keep the prompt palette; the far depth drops in value so the two crossing paths separate by contrast.
+  lighting_and_shadow: Crisp highlights on the crossing edges only, following the prompt's light; no sparks or energy effects.
+  texture_and_material: Fine directional marks attached to the moving subject; surfaces below simplify into flat value bands with distance.
+  camera_and_composition: A 70 to 80 degree down-angle through a wide lens, horizon out of frame, with the crossing point placed on a third and generous air around it.
+  atmosphere_and_mood: Vertigo and suspended breath created by height and direction, never by a collision.
+  rendering_and_quality: Firm 2D contours, stable structure under steep perspective and both crossing paths readable at a glance.
+  key_features: steep 70-80 degree down-angle; X-crossing of travel line and edge line; wide lens; far depth dropping in value; horizon out of frame
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vertigo Energy Cross Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - added opponent
+  - added sports gear
+  - invented danger or explosion
+  - extra props
+  - readable text
+  - franchise character likeness
   - photoreal
-  - calm-composition
   - blur-only
   - watermark
   - logo
@@ -67,13 +48,16 @@ avoidRules:
   - prompt-required card
   - signature
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-022.webp
 attributes:
-  negativePrompt: >-
-    photoreal, calm-composition, blur-only, watermark, logo, static pose, low-detail blur, photoreal
-    stunt photo, fixed canon character, title scene replication, required source-frame look,
-    cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, blur-only, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

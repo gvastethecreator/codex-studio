@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP07-091
+packId: pack_07
+name: Gassho Thatch Farmhouse
+styleAnchors:
+  - Gassho Thatch Farmhouse
+  - Japanese gassho-zukuri farmhouse
+  - steep A-frame grass thatch roof
+displayName: Gassho Thatch Farmhouse
+category: 2. Architectural Movements And Vernaculars
+domain: Japanese gassho-zukuri farmhouse
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - architectural-movements-and-vernaculars
+  - gassho-zukuri
+  - thatch
+  - vernacular
+visualDna:
+  aesthetic: 'Gassho-zukuri farmhouse of the snowy Japanese mountains: a very steep A-frame roof of thick grass thatch, like hands pressed together, over a timber house with several attic floors inside the roof.'
+  subject_treatment: Keep the requested building type, site, camera and any reference massing; in preserve mode re-clad only facade materials, openings, ornament and finish, and rebuild roof, massing and structure in this system only when a redesign is requested.
+  color_and_tone: Golden-grey weathered thatch, smoke-darkened timber, white plaster and paper screens, snow white or paddy green around; warm lamplit windows against cold surroundings.
+  lighting_and_shadow: Soft snow light or low autumn sun on the thatch slopes, deep shade under the thick eaves, warm glow from the hearth and paper windows.
+  texture_and_material: Thick layered susuki grass thatch trimmed to a clean slope, rafters lashed with rope and straw cords instead of nails, soot-blackened beams from the irori hearth smoke, slatted attic floors.
+  camera_and_composition: Keep the requested view; show the steep triangular gable facing the valley, roof far taller than the walls, several houses aligned the same way.
+  atmosphere_and_mood: Sheltering, communal and patient, a roof built to carry deep snow.
+  rendering_and_quality: Photograph with clear thatch layering and rope-lashed joinery, no fantasy exaggeration or souvenir lanterns.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gassho Thatch Farmhouse as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: steep A-frame grass thatch roof; rope-lashed rafters without nails; multi-storey attic in the roof; soot-darkened beams from the hearth; gables aligned to the valley
+avoidRules:
+  - golden-hour hero facade formula
+  - copy of a named landmark
+  - mixing construction systems of different movements
+  - invented cultural symbols
+  - costumed tourist staging
+  - tiled temple roof
+  - souvenir lanterns
+  - nailed modern framing
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: golden-hour hero facade formula, copy of a named landmark, mixing construction systems of different movements, invented cultural symbols, costumed tourist staging, tiled temple roof, souvenir lanterns, nailed modern framing, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: architectural-movements-and-vernaculars
+  categoryName: 2. Architectural Movements And Vernaculars
+  tags:
+    - architecture-and-interior
+    - architectural-movements-and-vernaculars
+    - gassho-zukuri
+    - thatch
+    - vernacular
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Japanese gassho-zukuri farmhouse

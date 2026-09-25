@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP13-037
+packId: pack_05
+name: Negative Impact Frame Staging
+styleAnchors:
+  - Negative Impact Frame Staging
+  - anime action staging
+  - inverted black and white values
+displayName: Negative Impact Frame Staging
+category: 5. Action Motion Setpieces
+domain: anime action staging
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-battle-and-worlds
+  - action
+  - impact-frame
+  - value-inversion
+visualDna:
+  aesthetic: 'Anime impact frame at the exact instant of contact: the whole picture flips to inverted values, white shapes on black with a few raw rough outlines, as if one frame of the film were printed in negative.'
+  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the single inverted-value impact frame at the moment of contact, and adds no opponent, sports gear, extra prop or danger.
+  color_and_tone: Pure black and white with at most one accent color from the prompt kept in its original hue at the contact point.
+  lighting_and_shadow: No modeled light; all shading collapses into flat inverted masses with a ring of white around the contact point.
+  texture_and_material: Rough, shaky brush outlines and dry-brush edges, as if drawn in a hurry on a single animation cel.
+  camera_and_composition: Tight framing on the contact point, slightly tilted, with the subject cut by the frame edge.
+  atmosphere_and_mood: A jolt, one heartbeat of pure force frozen in time.
+  rendering_and_quality: High-contrast inverted graphic frame in which the action and subject remain clearly readable.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Negative Impact Frame Staging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: inverted black and white values; single accent at contact; rough shaky outlines; tight tilted framing; white ring around contact
+avoidRules:
+  - added opponent
+  - added sports gear
+  - invented danger or explosion
+  - extra props
+  - readable text
+  - franchise character likeness
+  - full-color render
+  - gore
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, full-color render, gore, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_05
+  packName: Anime Battle & Worlds
+  categoryId: action
+  categoryName: 5. Action Motion Setpieces
+  tags:
+    - anime-battle-and-worlds
+    - action
+    - impact-frame
+    - value-inversion
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: anime action staging

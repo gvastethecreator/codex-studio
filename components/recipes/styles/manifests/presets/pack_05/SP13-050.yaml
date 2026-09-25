@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP13-050
+packId: pack_05
+name: Contact-Point Extreme Close-Up
+styleAnchors:
+  - Contact-Point Extreme Close-Up
+  - anime action staging
+  - extreme close-up of the contact point
+displayName: Contact-Point Extreme Close-Up
+category: 5. Action Motion Setpieces
+domain: anime action staging
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-battle-and-worlds
+  - action
+  - extreme-close-up
+  - contact-point
+visualDna:
+  aesthetic: 'Anime insert shot: an extreme close-up of the exact point where the requested action makes contact, such as a hand, foot or hoof meeting a surface, with the rest of the subject cropped away.'
+  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the extreme close-up on the exact point of contact of the action, and adds no opponent, sports gear, extra prop or danger.
+  color_and_tone: Keep the prompt palette; the contact point is the brightest and sharpest area, the surroundings darker.
+  lighting_and_shadow: Tight hard key light raking across the contact surface to show pressure and texture.
+  texture_and_material: Magnified surface detail at the contact, like skin creases, wood grain or ice crystals, with small displaced particles only if the materials would shed them.
+  camera_and_composition: Macro framing where the contact fills the center third, very shallow depth and nothing else of the subject visible.
+  atmosphere_and_mood: Tactile and precise, the whole action compressed into one touch.
+  rendering_and_quality: Detailed but clean cel rendering at macro scale, with the kind of contact instantly readable.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Contact-Point Extreme Close-Up as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: extreme close-up of the contact point; subject cropped away; raking hard key light; magnified surface detail; very shallow depth
+avoidRules:
+  - added opponent
+  - added sports gear
+  - invented danger or explosion
+  - extra props
+  - readable text
+  - franchise character likeness
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_05
+  packName: Anime Battle & Worlds
+  categoryId: action
+  categoryName: 5. Action Motion Setpieces
+  tags:
+    - anime-battle-and-worlds
+    - action
+    - extreme-close-up
+    - contact-point
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: anime action staging

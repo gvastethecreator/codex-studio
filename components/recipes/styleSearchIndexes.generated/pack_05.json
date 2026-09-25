@@ -3,7 +3,7 @@
     {
       "id": "pack_05",
       "name": "Anime 01 — Anime Battle & Worlds",
-      "presetCount": 135
+      "presetCount": 150
     }
   ],
   "presets": [
@@ -1875,7 +1875,333 @@
       "tags": ["anime-01-anime-battle-and-worlds", "action-motion-setpieces"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp13-025 upward thunder momentum upward thunder momentum style 5. action motion setpieces action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces"
+    },
+    {
+      "id": "SP13-036",
+      "name": "Smear-Frame Arc Staging",
+      "styleAnchors": [
+        "Smear-Frame Arc Staging",
+        "anime action staging",
+        "one stretched smear shape along the arc"
+      ],
+      "ref": "pack_05/SP13-036.yaml",
+      "packId": "pack_05",
+      "packName": "Anime 01 — Anime Battle & Worlds",
+      "categoryId": "action-motion-setpieces",
+      "categoryName": "5. Action Motion Setpieces",
+      "domain": "anime action staging",
+      "tags": [
+        "anime-01-anime-battle-and-worlds",
+        "action-motion-setpieces",
+        "anime-action-staging"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-036 smear-frame arc staging anime action staging one stretched smear shape along the arc 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+    },
+    {
+      "id": "SP13-037",
+      "name": "Negative Impact Frame Staging",
+      "styleAnchors": [
+        "Negative Impact Frame Staging",
+        "anime action staging",
+        "inverted black and white values"
+      ],
+      "ref": "pack_05/SP13-037.yaml",
+      "packId": "pack_05",
+      "packName": "Anime 01 — Anime Battle & Worlds",
+      "categoryId": "action-motion-setpieces",
+      "categoryName": "5. Action Motion Setpieces",
+      "domain": "anime action staging",
+      "tags": [
+        "anime-01-anime-battle-and-worlds",
+        "action-motion-setpieces",
+        "anime-action-staging"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-037 negative impact frame staging anime action staging inverted black and white values 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+    },
+    {
+      "id": "SP13-038",
+      "name": "Bullet-Time Orbit Freeze",
+      "styleAnchors": [
+        "Bullet-Time Orbit Freeze",
+        "anime action staging",
+        "time frozen at the action peak"
+      ],
+      "ref": "pack_05/SP13-038.yaml",
+      "packId": "pack_05",
+      "packName": "Anime 01 — Anime Battle & Worlds",
+      "categoryId": "action-motion-setpieces",
+      "categoryName": "5. Action Motion Setpieces",
+      "domain": "anime action staging",
+      "tags": [
+        "anime-01-anime-battle-and-worlds",
+        "action-motion-setpieces",
+        "anime-action-staging"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-038 bullet-time orbit freeze anime action staging time frozen at the action peak 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+    },
+    {
+      "id": "SP13-039",
+      "name": "Panning Background Streak Frame",
+      "styleAnchors": [
+        "Panning Background Streak Frame",
+        "anime action staging",
+        "sharp subject on streaked background"
+      ],
+      "ref": "pack_05/SP13-039.yaml",
+      "packId": "pack_05",
+      "packName": "Anime 01 — Anime Battle & Worlds",
+      "categoryId": "action-motion-setpieces",
+      "categoryName": "5. Action Motion Setpieces",
+      "domain": "anime action staging",
+      "tags": [
+        "anime-01-anime-battle-and-worlds",
+        "action-motion-setpieces",
+        "anime-action-staging"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-039 panning background streak frame anime action staging sharp subject on streaked background 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+    },
+    {
+      "id": "SP13-040",
+      "name": "Worm's-Eye Leap Silhouette",
+      "styleAnchors": [
+        "Worm's-Eye Leap Silhouette",
+        "anime action staging",
+        "camera straight beneath looking up"
+      ],
+      "ref": "pack_05/SP13-040.yaml",
+      "packId": "pack_05",
+      "packName": "Anime 01 — Anime Battle & Worlds",
+      "categoryId": "action-motion-setpieces",
+      "categoryName": "5. Action Motion Setpieces",
+      "domain": "anime action staging",
+      "tags": [
+        "anime-01-anime-battle-and-worlds",
+        "action-motion-setpieces",
+        "anime-action-staging"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-040 worm's-eye leap silhouette anime action staging camera straight beneath looking up 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+    },
+    {
+      "id": "SP13-041",
+      "name": "Dutch Tilt Momentum Frame",
+      "styleAnchors": [
+        "Dutch Tilt Momentum Frame",
+        "anime action staging",
+        "camera rolled 20-35 degrees"
+      ],
+      "ref": "pack_05/SP13-041.yaml",
+      "packId": "pack_05",
+      "packName": "Anime 01 — Anime Battle & Worlds",
+      "categoryId": "action-motion-setpieces",
+      "categoryName": "5. Action Motion Setpieces",
+      "domain": "anime action staging",
+      "tags": [
+        "anime-01-anime-battle-and-worlds",
+        "action-motion-setpieces",
+        "anime-action-staging"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-041 dutch tilt momentum frame anime action staging camera rolled 20-35 degrees 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+    },
+    {
+      "id": "SP13-042",
+      "name": "Three-Beat Action Triptych",
+      "styleAnchors": ["Three-Beat Action Triptych", "anime action layout", "three equal panels"],
+      "ref": "pack_05/SP13-042.yaml",
+      "packId": "pack_05",
+      "packName": "Anime 01 — Anime Battle & Worlds",
+      "categoryId": "action-motion-setpieces",
+      "categoryName": "5. Action Motion Setpieces",
+      "domain": "anime action layout",
+      "tags": [
+        "anime-01-anime-battle-and-worlds",
+        "action-motion-setpieces",
+        "anime-action-layout"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-042 three-beat action triptych anime action layout three equal panels 5. action motion setpieces action staging anime action layout pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-layout"
+    },
+    {
+      "id": "SP13-043",
+      "name": "Near-Lens Pass-By Frame",
+      "styleAnchors": [
+        "Near-Lens Pass-By Frame",
+        "anime action staging",
+        "subject sweeping past the lens"
+      ],
+      "ref": "pack_05/SP13-043.yaml",
+      "packId": "pack_05",
+      "packName": "Anime 01 — Anime Battle & Worlds",
+      "categoryId": "action-motion-setpieces",
+      "categoryName": "5. Action Motion Setpieces",
+      "domain": "anime action staging",
+      "tags": [
+        "anime-01-anime-battle-and-worlds",
+        "action-motion-setpieces",
+        "anime-action-staging"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-043 near-lens pass-by frame anime action staging subject sweeping past the lens 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+    },
+    {
+      "id": "SP13-044",
+      "name": "Top-Down Spiral Path Staging",
+      "styleAnchors": [
+        "Top-Down Spiral Path Staging",
+        "anime action staging",
+        "straight-down 90 degree view"
+      ],
+      "ref": "pack_05/SP13-044.yaml",
+      "packId": "pack_05",
+      "packName": "Anime 01 — Anime Battle & Worlds",
+      "categoryId": "action-motion-setpieces",
+      "categoryName": "5. Action Motion Setpieces",
+      "domain": "anime action staging",
+      "tags": [
+        "anime-01-anime-battle-and-worlds",
+        "action-motion-setpieces",
+        "anime-action-staging"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-044 top-down spiral path staging anime action staging straight-down 90 degree view 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+    },
+    {
+      "id": "SP13-045",
+      "name": "Fisheye Foreshortened Reach",
+      "styleAnchors": [
+        "Fisheye Foreshortened Reach",
+        "anime action staging",
+        "hand reaching into an ultra-wide lens"
+      ],
+      "ref": "pack_05/SP13-045.yaml",
+      "packId": "pack_05",
+      "packName": "Anime 01 — Anime Battle & Worlds",
+      "categoryId": "action-motion-setpieces",
+      "categoryName": "5. Action Motion Setpieces",
+      "domain": "anime action staging",
+      "tags": [
+        "anime-01-anime-battle-and-worlds",
+        "action-motion-setpieces",
+        "anime-action-staging"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-045 fisheye foreshortened reach anime action staging hand reaching into an ultra-wide lens 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+    },
+    {
+      "id": "SP13-046",
+      "name": "Cloth-and-Hair Follow-Through Trails",
+      "styleAnchors": [
+        "Cloth-and-Hair Follow-Through Trails",
+        "anime action staging",
+        "lagging S-curves in hair and cloth"
+      ],
+      "ref": "pack_05/SP13-046.yaml",
+      "packId": "pack_05",
+      "packName": "Anime 01 — Anime Battle & Worlds",
+      "categoryId": "action-motion-setpieces",
+      "categoryName": "5. Action Motion Setpieces",
+      "domain": "anime action staging",
+      "tags": [
+        "anime-01-anime-battle-and-worlds",
+        "action-motion-setpieces",
+        "anime-action-staging"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-046 cloth-and-hair follow-through trails anime action staging lagging s-curves in hair and cloth 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+    },
+    {
+      "id": "SP13-047",
+      "name": "Tiny-Figure Grand Arc Wide",
+      "styleAnchors": [
+        "Tiny-Figure Grand Arc Wide",
+        "anime action staging",
+        "tiny subject under one twentieth of frame height"
+      ],
+      "ref": "pack_05/SP13-047.yaml",
+      "packId": "pack_05",
+      "packName": "Anime 01 — Anime Battle & Worlds",
+      "categoryId": "action-motion-setpieces",
+      "categoryName": "5. Action Motion Setpieces",
+      "domain": "anime action staging",
+      "tags": [
+        "anime-01-anime-battle-and-worlds",
+        "action-motion-setpieces",
+        "anime-action-staging"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-047 tiny-figure grand arc wide anime action staging tiny subject under one twentieth of frame height 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+    },
+    {
+      "id": "SP13-048",
+      "name": "Coiled Anticipation Lead-Space Frame",
+      "styleAnchors": [
+        "Coiled Anticipation Lead-Space Frame",
+        "anime action staging",
+        "coiled pre-motion pose"
+      ],
+      "ref": "pack_05/SP13-048.yaml",
+      "packId": "pack_05",
+      "packName": "Anime 01 — Anime Battle & Worlds",
+      "categoryId": "action-motion-setpieces",
+      "categoryName": "5. Action Motion Setpieces",
+      "domain": "anime action staging",
+      "tags": [
+        "anime-01-anime-battle-and-worlds",
+        "action-motion-setpieces",
+        "anime-action-staging"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-048 coiled anticipation lead-space frame anime action staging coiled pre-motion pose 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+    },
+    {
+      "id": "SP13-049",
+      "name": "Ground-Skim Low Tracking Shot",
+      "styleAnchors": [
+        "Ground-Skim Low Tracking Shot",
+        "anime action staging",
+        "ankle-height camera ahead of subject"
+      ],
+      "ref": "pack_05/SP13-049.yaml",
+      "packId": "pack_05",
+      "packName": "Anime 01 — Anime Battle & Worlds",
+      "categoryId": "action-motion-setpieces",
+      "categoryName": "5. Action Motion Setpieces",
+      "domain": "anime action staging",
+      "tags": [
+        "anime-01-anime-battle-and-worlds",
+        "action-motion-setpieces",
+        "anime-action-staging"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-049 ground-skim low tracking shot anime action staging ankle-height camera ahead of subject 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
+    },
+    {
+      "id": "SP13-050",
+      "name": "Contact-Point Extreme Close-Up",
+      "styleAnchors": [
+        "Contact-Point Extreme Close-Up",
+        "anime action staging",
+        "extreme close-up of the contact point"
+      ],
+      "ref": "pack_05/SP13-050.yaml",
+      "packId": "pack_05",
+      "packName": "Anime 01 — Anime Battle & Worlds",
+      "categoryId": "action-motion-setpieces",
+      "categoryName": "5. Action Motion Setpieces",
+      "domain": "anime action staging",
+      "tags": [
+        "anime-01-anime-battle-and-worlds",
+        "action-motion-setpieces",
+        "anime-action-staging"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp13-050 contact-point extreme close-up anime action staging extreme close-up of the contact point 5. action motion setpieces action staging anime action staging pack_05 anime 01 — anime battle & worlds action-motion-setpieces anime-01-anime-battle-and-worlds action-motion-setpieces anime-action-staging"
     }
   ],
-  "totalPresetCount": 135
+  "totalPresetCount": 150
 }

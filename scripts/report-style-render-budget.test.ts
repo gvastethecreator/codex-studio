@@ -25,14 +25,14 @@ describe('style render budget report', () => {
     ).toBeGreaterThanOrEqual(0);
     expect(report.packs.find((pack) => pack.packId === 'pack_05')).toEqual(
       expect.objectContaining({
-        totalPresets: 135,
+        totalPresets: 150,
         totalCategories: 5,
         eagerPresetCards: 70,
-        plannedPresetCards: 135,
+        plannedPresetCards: 150,
         placeholderCategorySections: 3,
         expandedMountedCategorySections: 5,
         expandedEagerPresetCards: 70,
-        expandedPlannedPresetCards: 135,
+        expandedPlannedPresetCards: 150,
       }),
     );
     expect(

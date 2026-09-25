@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP07-111
+packId: pack_07
+name: Walled Espalier Potager
+styleAnchors:
+  - Walled Espalier Potager
+  - walled kitchen garden
+  - fan-trained fruit trees flat on brick walls
+displayName: Walled Espalier Potager
+category: 4. Landscape And Garden Systems
+domain: walled kitchen garden
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - landscape-and-garden-systems
+  - kitchen-garden
+  - espalier
+  - walled-garden
+visualDna:
+  aesthetic: 'Walled espalier potager: a brick-walled kitchen garden where fruit trees are trained flat against the warm walls in fans and tiers, and vegetables grow in box-edged geometric beds.'
+  subject_treatment: Keep the requested site, subject, action and camera; reorganise ground plane, planting, edging and paths in this garden system only where the prompt has outdoor ground, and add no garden to an interior, object or portrait prompt.
+  color_and_tone: Warm old red brick, fresh vegetable greens and purples, blossom white or fruit red on the walls, gravel paths, glass of cold frames; warm and productive.
+  lighting_and_shadow: Sun absorbed and radiated by the south wall, shadows of trained branches drawn on brick, soft light over beds.
+  texture_and_material: Fan- and cordon-trained pears and apples tied to wires on brick, box edging, rows of cabbages, leeks and artichokes, terracotta forcing pots, glass cold frames, a lean-to glasshouse.
+  camera_and_composition: Keep the requested view; show a trained tree flat against the wall as a pattern, beds in a grid leading to it.
+  atmosphere_and_mood: Orderly, bountiful and patient, a garden that feeds a house.
+  rendering_and_quality: Natural-light photograph with branch-training pattern crisp on the brick, no plastic tunnels.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Walled Espalier Potager as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: fan-trained fruit trees flat on brick walls; box-edged vegetable beds; terracotta forcing pots; glass cold frames; gravel grid paths
+avoidRules:
+  - golden-hour garden postcard formula
+  - corten steel edging as default
+  - real city skyline or landmark
+  - adding a garden to an interior or object prompt
+  - plastic polytunnels
+  - freestanding orchard
+  - ornamental lawn
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: golden-hour garden postcard formula, corten steel edging as default, real city skyline or landmark, adding a garden to an interior or object prompt, plastic polytunnels, freestanding orchard, ornamental lawn, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: landscape-and-garden-systems
+  categoryName: 4. Landscape And Garden Systems
+  tags:
+    - architecture-and-interior
+    - landscape-and-garden-systems
+    - kitchen-garden
+    - espalier
+    - walled-garden
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: walled kitchen garden

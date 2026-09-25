@@ -3,7 +3,7 @@ id: SP07-071
 packId: pack_07
 name: Fungal Vernacular Miniature
 category: 6. Toy Craft And Miniature Architecture
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,66 +12,23 @@ tags:
   - architecture-and-interior
   - toy-craft-and-miniature-architecture
 visualDna:
-  aesthetic: >-
-    Fungal Vernacular Miniature acts as a transferable architecture/interior router: matte fungal
-    skin, cream speckling, gilled underside texture, mossy humid base, spore dust; fuse it with toy,
-    craft, and miniature construction grammar with visible fabrication, scale cues, modular seams,
-    handmade material logic, and playful sectional clarity; route spatial grammar, material
-    behavior, scale, ornament, and light over prompt X without requiring the default sample anchor,
-    fixed spatial set, landscape setup, or object sample.
-  subject_treatment: >-
-    Preserve prompt subject, action, and context while translating any requested subject through
-    model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy
-    geometry, and craft-readable joinery; treat matte fungal skin, cream speckling, gilled underside
-    texture, mossy humid base, spore dust as massing, edge, surface, joinery, threshold, or ornament
-    behavior rather than a mandatory building scene.
-  color_and_tone: >-
-    Map color through material-authentic craft color, toy primary blocks, sugar or sand warmth,
-    translucent glass tint, fungal cream, and small playful accents; let source cues such as matte
-    fungal skin, cream speckling, gilled underside texture, mossy humid base, spore dust decide
-    accent hierarchy, material temperature, and value separation while staying attached to the
-    requested content.
-  lighting_and_shadow: >-
-    Use soft model shadows, glossy toy highlights, sugar sparkle, bottle refraction, damp sand
-    sheen, and miniature display clarity; make light reveal joints, relief, material depth, scale,
-    and atmosphere from matte fungal skin, cream speckling, gilled underside texture, mossy humid
-    base, spore dust without replacing prompt X with a stock architectural render.
-  texture_and_material: >-
-    Render paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal
-    skin, bottle glass, toy wood, and cutaway surfaces; prioritize the tactile signals in matte
-    fungal skin, cream speckling, gilled underside texture, mossy humid base, spore dust, with
-    believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.
-  camera_and_composition: >-
-    Frame through close model-detail crops, section cuts, modular repetition, visible tabs or seams,
-    scale compression, and object-like built logic; convert matte fungal skin, cream speckling,
-    gilled underside texture, mossy humid base, spore dust into reusable perspective, crop, depth,
-    section, modular rhythm, and negative-space rules instead of one fixed style sample layout.
-  atmosphere_and_mood: >-
-    Carry mood through playful craft, fragile impermanence, edible celebration, ecological
-    miniature, curio precision, or sectional wonder without product-photo lock; the preset can
-    support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when
-    prompt X asks for them while keeping the architectural identity readable.
-  rendering_and_quality: >-
-    Finish with clean miniature finish with legible material scale, no brand logo, no product
-    catalog staging, no empty abstract tile; keep clean denoise, legible construction, stable object
-    or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera
-    prop, and no prompt-literal card copy.
-  key_features: >-
-    matte fungal skin, cream speckling, gilled underside texture, mossy humid base, spore dust;
-    model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy
-    geometry, and craft-readable joinery; paper fiber, ABS plastic, damp sand, corrugated cardboard,
-    vinyl seams, icing, fungal skin, bottle glass, toy wood, and cutaway surfaces; close
-    model-detail crops, section cuts, modular repetition, visible tabs or seams, scale compression,
-    and object-like built logic
-  creative_brief: >-
-    Apply Fungal Vernacular Miniature after prompt X as a transferable architecture/interior style
-    layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset
-    supplies matte fungal skin, cream speckling, gilled underside texture, mossy humid base, spore
-    dust, toy, craft, and miniature construction grammar with visible fabrication, scale cues,
-    modular seams, handmade material logic, and playful sectional clarity, material discipline,
-    spatial grammar, and negative controls without requiring a single spatial sample, product-photo
-    setup, aisle-like default, or empty abstraction.
+  aesthetic: 'Fungal miniature construction: the subject grown and assembled from mushroom caps, gills and bracket fungi, with moss and lichen as the finish.'
+  subject_treatment: Keep the requested subject, its identity, pose and camera, and rebuild it as a handmade tabletop miniature in this material; a requested object stays that object and never turns into a house or building.
+  color_and_tone: Cream, tan and rust caps with pale speckles, damp moss green and a violet or orange accent fungus; humid mid tones.
+  lighting_and_shadow: Low misty forest light, soft glow under the caps, spore dust catching a narrow shaft of sun.
+  texture_and_material: Matte fungal skin, fine gill fans on undersides, speckling, damp moss, spore dust in the air.
+  camera_and_composition: Keep the requested view as a forest-floor macro with shallow depth of field and a mossy base.
+  atmosphere_and_mood: Damp, secret and gently eerie, something grown overnight.
+  rendering_and_quality: Macro nature photograph of real fungal material; no fairy-cottage cliché and no creatures.
+  key_features: mushroom caps and gills as structure; bracket fungus ledges; cream speckling; spore dust in a light shaft; forest-floor macro
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fungal Vernacular Miniature as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - brand logo on parts
+  - readable text
+  - turning a requested object into a house or building
+  - full-scale real construction
+  - playroom or party scene
+  - fairy cottage cliché
   - square
   - fairy cottage cliche
   - forest floor postcard
@@ -90,21 +47,21 @@ avoidRules:
   - corridor perspective
   - furniture showroom
   - prompt-required card
-  - readable text
   - logo
   - watermark
   - camera prop
   - mandatory interior set
   - prompt-literal card
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-071.webp
 attributes:
-  negativePrompt: >-
-    square, fairy cottage cliche, forest floor postcard, creature/person, square house, market
-    aisle, library aisle, corridor, empty abstraction, brand logo, product photo, child or person
-    scene, full-scale realism, fixed building-only scene, mandatory interior interior zones,
-    corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark,
-    camera prop, mandatory interior set, prompt-literal card
+  negativePrompt: brand logo on parts, readable text, turning a requested object into a house or building, full-scale real construction, playroom or party scene, fairy cottage cliché, square, fairy cottage cliche, forest floor postcard, creature/person, square house, market aisle, library aisle, corridor, empty abstraction, brand logo, product photo, child or person scene, full-scale realism, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

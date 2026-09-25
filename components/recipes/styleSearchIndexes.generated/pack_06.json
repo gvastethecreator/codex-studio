@@ -3,7 +3,7 @@
     {
       "id": "pack_06",
       "name": "Essential Art Styles",
-      "presetCount": 120
+      "presetCount": 140
     }
   ],
   "presets": [
@@ -45,7 +45,8 @@
     },
     {
       "id": "SP06-051",
-      "name": "Low Poly",
+      "name": "Flat-Shaded Low Poly",
+      "styleAnchors": ["Flat-Shaded Low Poly", "Low Poly"],
       "ref": "pack_06/SP06-051.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -53,11 +54,12 @@
       "categoryName": "4. Digital Art",
       "tags": ["essential-art-styles", "digital-art"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-051 low poly 4. digital art digital media pack_06 essential art styles digital-art essential-art-styles digital-art"
+      "searchableText": "sp06-051 flat-shaded low poly low poly 4. digital art digital media pack_06 essential art styles digital-art essential-art-styles digital-art"
     },
     {
       "id": "SP06-047",
-      "name": "Speedpaint",
+      "name": "Block-In Speedpaint",
+      "styleAnchors": ["Block-In Speedpaint", "Speedpaint"],
       "ref": "pack_06/SP06-047.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -65,7 +67,7 @@
       "categoryName": "4. Digital Art",
       "tags": ["essential-art-styles", "digital-art"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-047 speedpaint 4. digital art digital media pack_06 essential art styles digital-art essential-art-styles digital-art"
+      "searchableText": "sp06-047 block-in speedpaint speedpaint 4. digital art digital media pack_06 essential art styles digital-art essential-art-styles digital-art"
     },
     {
       "id": "SP06-054",
@@ -81,7 +83,8 @@
     },
     {
       "id": "SP06-057",
-      "name": "Double Exposure",
+      "name": "Silhouette Double Exposure",
+      "styleAnchors": ["Silhouette Double Exposure", "Double Exposure"],
       "ref": "pack_06/SP06-057.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -89,7 +92,7 @@
       "categoryName": "4. Digital Art",
       "tags": ["essential-art-styles", "digital-art"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-057 double exposure 4. digital art digital media pack_06 essential art styles digital-art essential-art-styles digital-art"
+      "searchableText": "sp06-057 silhouette double exposure double exposure 4. digital art digital media pack_06 essential art styles digital-art essential-art-styles digital-art"
     },
     {
       "id": "SP06-059",
@@ -129,7 +132,8 @@
     },
     {
       "id": "SP06-060",
-      "name": "ASCII Art",
+      "name": "Terminal Glyph Art",
+      "styleAnchors": ["Terminal Glyph Art", "ASCII Art"],
       "ref": "pack_06/SP06-060.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -137,7 +141,97 @@
       "categoryName": "4. Digital Art",
       "tags": ["essential-art-styles", "digital-art"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-060 ascii art 4. digital art digital media pack_06 essential art styles digital-art essential-art-styles digital-art"
+      "searchableText": "sp06-060 terminal glyph art ascii art 4. digital art digital media pack_06 essential art styles digital-art essential-art-styles digital-art"
+    },
+    {
+      "id": "SP06-136",
+      "name": "Flow-Field Generative Lines",
+      "styleAnchors": [
+        "Flow-Field Generative Lines",
+        "algorithmic flow-field line drawing",
+        "thousands of flowing non-crossing lines"
+      ],
+      "ref": "pack_06/SP06-136.yaml",
+      "packId": "pack_06",
+      "packName": "Essential Art Styles",
+      "categoryId": "digital-art",
+      "categoryName": "4. Digital Art",
+      "domain": "algorithmic flow-field line drawing",
+      "tags": ["essential-art-styles", "digital-art", "algorithmic-flow-field-line-drawing"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp06-136 flow-field generative lines algorithmic flow-field line drawing thousands of flowing non-crossing lines 4. digital art digital media algorithmic flow-field line drawing pack_06 essential art styles digital-art essential-art-styles digital-art algorithmic-flow-field-line-drawing"
+    },
+    {
+      "id": "SP06-137",
+      "name": "Pen-Plotter Hatch Drawing",
+      "styleAnchors": [
+        "Pen-Plotter Hatch Drawing",
+        "machine-drawn vector hatching",
+        "machine-regular hatching"
+      ],
+      "ref": "pack_06/SP06-137.yaml",
+      "packId": "pack_06",
+      "packName": "Essential Art Styles",
+      "categoryId": "digital-art",
+      "categoryName": "4. Digital Art",
+      "domain": "machine-drawn vector hatching",
+      "tags": ["essential-art-styles", "digital-art", "machine-drawn-vector-hatching"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp06-137 pen-plotter hatch drawing machine-drawn vector hatching machine-regular hatching 4. digital art digital media machine-drawn vector hatching pack_06 essential art styles digital-art essential-art-styles digital-art machine-drawn-vector-hatching"
+    },
+    {
+      "id": "SP06-138",
+      "name": "Layered Gradient Silhouette",
+      "styleAnchors": [
+        "Layered Gradient Silhouette",
+        "minimal layered gradient landscape",
+        "receding silhouette layers"
+      ],
+      "ref": "pack_06/SP06-138.yaml",
+      "packId": "pack_06",
+      "packName": "Essential Art Styles",
+      "categoryId": "digital-art",
+      "categoryName": "4. Digital Art",
+      "domain": "minimal layered gradient landscape",
+      "tags": ["essential-art-styles", "digital-art", "minimal-layered-gradient-landscape"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp06-138 layered gradient silhouette minimal layered gradient landscape receding silhouette layers 4. digital art digital media minimal layered gradient landscape pack_06 essential art styles digital-art essential-art-styles digital-art minimal-layered-gradient-landscape"
+    },
+    {
+      "id": "SP06-139",
+      "name": "Mirror-Tool Kaleidoscope",
+      "styleAnchors": [
+        "Mirror-Tool Kaleidoscope",
+        "radial symmetry digital drawing",
+        "radial mirror symmetry"
+      ],
+      "ref": "pack_06/SP06-139.yaml",
+      "packId": "pack_06",
+      "packName": "Essential Art Styles",
+      "categoryId": "digital-art",
+      "categoryName": "4. Digital Art",
+      "domain": "radial symmetry digital drawing",
+      "tags": ["essential-art-styles", "digital-art", "radial-symmetry-digital-drawing"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp06-139 mirror-tool kaleidoscope radial symmetry digital drawing radial mirror symmetry 4. digital art digital media radial symmetry digital drawing pack_06 essential art styles digital-art essential-art-styles digital-art radial-symmetry-digital-drawing"
+    },
+    {
+      "id": "SP06-140",
+      "name": "Grain-Shaded Flat Illustration",
+      "styleAnchors": [
+        "Grain-Shaded Flat Illustration",
+        "flat vector with grain shading",
+        "rounded flat vector shapes"
+      ],
+      "ref": "pack_06/SP06-140.yaml",
+      "packId": "pack_06",
+      "packName": "Essential Art Styles",
+      "categoryId": "digital-art",
+      "categoryName": "4. Digital Art",
+      "domain": "flat vector with grain shading",
+      "tags": ["essential-art-styles", "digital-art", "flat-vector-with-grain-shading"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp06-140 grain-shaded flat illustration flat vector with grain shading rounded flat vector shapes 4. digital art digital media flat vector with grain shading pack_06 essential art styles digital-art essential-art-styles digital-art flat-vector-with-grain-shading"
     },
     {
       "id": "SP06-055",
@@ -177,7 +271,8 @@
     },
     {
       "id": "SP06-052",
-      "name": "Voxel Art",
+      "name": "Voxel Cube Build",
+      "styleAnchors": ["Voxel Cube Build", "Voxel Art"],
       "ref": "pack_06/SP06-052.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -185,7 +280,7 @@
       "categoryName": "4. Digital Art",
       "tags": ["essential-art-styles", "digital-art"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-052 voxel art 4. digital art digital media pack_06 essential art styles digital-art essential-art-styles digital-art"
+      "searchableText": "sp06-052 voxel cube build voxel art 4. digital art digital media pack_06 essential art styles digital-art essential-art-styles digital-art"
     },
     {
       "id": "SP06-001",
@@ -368,6 +463,104 @@
       "searchableText": "sp06-015 black velvet painting 1. traditional painting painting pack_06 essential art styles traditional-painting essential-art-styles traditional-painting"
     },
     {
+      "id": "SP06-121",
+      "name": "Alla Prima Plein-Air Sketch",
+      "styleAnchors": [
+        "Alla Prima Plein-Air Sketch",
+        "wet-into-wet outdoor oil sketch",
+        "single-session wet-into-wet strokes"
+      ],
+      "ref": "pack_06/SP06-121.yaml",
+      "packId": "pack_06",
+      "packName": "Essential Art Styles",
+      "categoryId": "traditional-painting",
+      "categoryName": "1. Traditional Painting",
+      "domain": "wet-into-wet outdoor oil sketch",
+      "tags": ["essential-art-styles", "traditional-painting", "wet-into-wet-outdoor-oil-sketch"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp06-121 alla prima plein-air sketch wet-into-wet outdoor oil sketch single-session wet-into-wet strokes 1. traditional painting painting wet-into-wet outdoor oil sketch pack_06 essential art styles traditional-painting essential-art-styles traditional-painting wet-into-wet-outdoor-oil-sketch"
+    },
+    {
+      "id": "SP06-122",
+      "name": "Reverse Glass Painting",
+      "styleAnchors": [
+        "Reverse Glass Painting",
+        "folk painting behind glass",
+        "paint behind glass seen through a glossy pane"
+      ],
+      "ref": "pack_06/SP06-122.yaml",
+      "packId": "pack_06",
+      "packName": "Essential Art Styles",
+      "categoryId": "traditional-painting",
+      "categoryName": "1. Traditional Painting",
+      "domain": "folk painting behind glass",
+      "tags": ["essential-art-styles", "traditional-painting", "folk-painting-behind-glass"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp06-122 reverse glass painting folk painting behind glass paint behind glass seen through a glossy pane 1. traditional painting painting folk painting behind glass pack_06 essential art styles traditional-painting essential-art-styles traditional-painting folk-painting-behind-glass"
+    },
+    {
+      "id": "SP06-123",
+      "name": "Fine-Line Silk Painting",
+      "styleAnchors": [
+        "Fine-Line Silk Painting",
+        "meticulous outline and color on silk",
+        "hair-thin even ink outlines"
+      ],
+      "ref": "pack_06/SP06-123.yaml",
+      "packId": "pack_06",
+      "packName": "Essential Art Styles",
+      "categoryId": "traditional-painting",
+      "categoryName": "1. Traditional Painting",
+      "domain": "meticulous outline and color on silk",
+      "tags": [
+        "essential-art-styles",
+        "traditional-painting",
+        "meticulous-outline-and-color-on-silk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp06-123 fine-line silk painting meticulous outline and color on silk hair-thin even ink outlines 1. traditional painting painting meticulous outline and color on silk pack_06 essential art styles traditional-painting essential-art-styles traditional-painting meticulous-outline-and-color-on-silk"
+    },
+    {
+      "id": "SP06-124",
+      "name": "Sanded Lacquer Painting",
+      "styleAnchors": [
+        "Sanded Lacquer Painting",
+        "layered and polished lacquer panel",
+        "polished black lacquer depth"
+      ],
+      "ref": "pack_06/SP06-124.yaml",
+      "packId": "pack_06",
+      "packName": "Essential Art Styles",
+      "categoryId": "traditional-painting",
+      "categoryName": "1. Traditional Painting",
+      "domain": "layered and polished lacquer panel",
+      "tags": [
+        "essential-art-styles",
+        "traditional-painting",
+        "layered-and-polished-lacquer-panel"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp06-124 sanded lacquer painting layered and polished lacquer panel polished black lacquer depth 1. traditional painting painting layered and polished lacquer panel pack_06 essential art styles traditional-painting essential-art-styles traditional-painting layered-and-polished-lacquer-panel"
+    },
+    {
+      "id": "SP06-125",
+      "name": "Tonalist Veil Oil",
+      "styleAnchors": [
+        "Tonalist Veil Oil",
+        "muted tonal atmospheric oil",
+        "single enveloping tone"
+      ],
+      "ref": "pack_06/SP06-125.yaml",
+      "packId": "pack_06",
+      "packName": "Essential Art Styles",
+      "categoryId": "traditional-painting",
+      "categoryName": "1. Traditional Painting",
+      "domain": "muted tonal atmospheric oil",
+      "tags": ["essential-art-styles", "traditional-painting", "muted-tonal-atmospheric-oil"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp06-125 tonalist veil oil muted tonal atmospheric oil single enveloping tone 1. traditional painting painting muted tonal atmospheric oil pack_06 essential art styles traditional-painting essential-art-styles traditional-painting muted-tonal-atmospheric-oil"
+    },
+    {
       "id": "SP06-018",
       "name": "Ink (Pen & Ink)",
       "ref": "pack_06/SP06-018.yaml",
@@ -381,7 +574,8 @@
     },
     {
       "id": "SP06-026",
-      "name": "Marker (Copic)",
+      "name": "Alcohol Marker Rendering",
+      "styleAnchors": ["Alcohol Marker Rendering", "Marker (Copic)"],
       "ref": "pack_06/SP06-026.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -389,7 +583,7 @@
       "categoryName": "2. Drawing & Sketching",
       "tags": ["essential-art-styles", "drawing-and-sketching"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-026 marker (copic) 2. drawing & sketching drawing pack_06 essential art styles drawing-and-sketching essential-art-styles drawing-and-sketching"
+      "searchableText": "sp06-026 alcohol marker rendering marker (copic) 2. drawing & sketching drawing pack_06 essential art styles drawing-and-sketching essential-art-styles drawing-and-sketching"
     },
     {
       "id": "SP06-016",
@@ -417,7 +611,8 @@
     },
     {
       "id": "SP06-020",
-      "name": "Colored Pencil",
+      "name": "Burnished Colored Pencil",
+      "styleAnchors": ["Burnished Colored Pencil", "Colored Pencil"],
       "ref": "pack_06/SP06-020.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -425,7 +620,7 @@
       "categoryName": "2. Drawing & Sketching",
       "tags": ["essential-art-styles", "drawing-and-sketching"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-020 colored pencil 2. drawing & sketching drawing pack_06 essential art styles drawing-and-sketching essential-art-styles drawing-and-sketching"
+      "searchableText": "sp06-020 burnished colored pencil colored pencil 2. drawing & sketching drawing pack_06 essential art styles drawing-and-sketching essential-art-styles drawing-and-sketching"
     },
     {
       "id": "SP06-021",
@@ -453,7 +648,8 @@
     },
     {
       "id": "SP06-028",
-      "name": "Scratchboard",
+      "name": "Clayboard Scratch Drawing",
+      "styleAnchors": ["Clayboard Scratch Drawing", "Scratchboard"],
       "ref": "pack_06/SP06-028.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -461,7 +657,7 @@
       "categoryName": "2. Drawing & Sketching",
       "tags": ["essential-art-styles", "drawing-and-sketching"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-028 scratchboard 2. drawing & sketching drawing pack_06 essential art styles drawing-and-sketching essential-art-styles drawing-and-sketching"
+      "searchableText": "sp06-028 clayboard scratch drawing scratchboard 2. drawing & sketching drawing pack_06 essential art styles drawing-and-sketching essential-art-styles drawing-and-sketching"
     },
     {
       "id": "SP06-029",
@@ -488,8 +684,111 @@
       "searchableText": "sp06-030 continuous line 2. drawing & sketching drawing pack_06 essential art styles drawing-and-sketching essential-art-styles drawing-and-sketching"
     },
     {
+      "id": "SP06-126",
+      "name": "Blind Contour Drawing",
+      "styleAnchors": [
+        "Blind Contour Drawing",
+        "contour drawn without looking at the paper",
+        "slow wobbling single line"
+      ],
+      "ref": "pack_06/SP06-126.yaml",
+      "packId": "pack_06",
+      "packName": "Essential Art Styles",
+      "categoryId": "drawing-and-sketching",
+      "categoryName": "2. Drawing & Sketching",
+      "domain": "contour drawn without looking at the paper",
+      "tags": [
+        "essential-art-styles",
+        "drawing-and-sketching",
+        "contour-drawn-without-looking-at-the-paper"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp06-126 blind contour drawing contour drawn without looking at the paper slow wobbling single line 2. drawing & sketching drawing contour drawn without looking at the paper pack_06 essential art styles drawing-and-sketching essential-art-styles drawing-and-sketching contour-drawn-without-looking-at-the-paper"
+    },
+    {
+      "id": "SP06-127",
+      "name": "Reed Pen Drawing",
+      "styleAnchors": [
+        "Reed Pen Drawing",
+        "cut-reed pen and brown ink",
+        "blunt split reed strokes"
+      ],
+      "ref": "pack_06/SP06-127.yaml",
+      "packId": "pack_06",
+      "packName": "Essential Art Styles",
+      "categoryId": "drawing-and-sketching",
+      "categoryName": "2. Drawing & Sketching",
+      "domain": "cut-reed pen and brown ink",
+      "tags": ["essential-art-styles", "drawing-and-sketching", "cut-reed-pen-and-brown-ink"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp06-127 reed pen drawing cut-reed pen and brown ink blunt split reed strokes 2. drawing & sketching drawing cut-reed pen and brown ink pack_06 essential art styles drawing-and-sketching essential-art-styles drawing-and-sketching cut-reed-pen-and-brown-ink"
+    },
+    {
+      "id": "SP06-128",
+      "name": "Graphite Powder Lift-Out",
+      "styleAnchors": [
+        "Graphite Powder Lift-Out",
+        "subtractive powdered graphite drawing",
+        "brushed powdered graphite ground"
+      ],
+      "ref": "pack_06/SP06-128.yaml",
+      "packId": "pack_06",
+      "packName": "Essential Art Styles",
+      "categoryId": "drawing-and-sketching",
+      "categoryName": "2. Drawing & Sketching",
+      "domain": "subtractive powdered graphite drawing",
+      "tags": [
+        "essential-art-styles",
+        "drawing-and-sketching",
+        "subtractive-powdered-graphite-drawing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp06-128 graphite powder lift-out subtractive powdered graphite drawing brushed powdered graphite ground 2. drawing & sketching drawing subtractive powdered graphite drawing pack_06 essential art styles drawing-and-sketching essential-art-styles drawing-and-sketching subtractive-powdered-graphite-drawing"
+    },
+    {
+      "id": "SP06-129",
+      "name": "Watercolor Pencil Dissolve",
+      "styleAnchors": [
+        "Watercolor Pencil Dissolve",
+        "water-soluble pencil touched with a wet brush",
+        "dry pencil hatching beside dissolved washes"
+      ],
+      "ref": "pack_06/SP06-129.yaml",
+      "packId": "pack_06",
+      "packName": "Essential Art Styles",
+      "categoryId": "drawing-and-sketching",
+      "categoryName": "2. Drawing & Sketching",
+      "domain": "water-soluble pencil touched with a wet brush",
+      "tags": [
+        "essential-art-styles",
+        "drawing-and-sketching",
+        "water-soluble-pencil-touched-with-a-wet-brush"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp06-129 watercolor pencil dissolve water-soluble pencil touched with a wet brush dry pencil hatching beside dissolved washes 2. drawing & sketching drawing water-soluble pencil touched with a wet brush pack_06 essential art styles drawing-and-sketching essential-art-styles drawing-and-sketching water-soluble-pencil-touched-with-a-wet-brush"
+    },
+    {
+      "id": "SP06-130",
+      "name": "Carpenter Pencil Block Sketch",
+      "styleAnchors": [
+        "Carpenter Pencil Block Sketch",
+        "flat chisel-lead pencil sketch",
+        "wide flat chisel strokes"
+      ],
+      "ref": "pack_06/SP06-130.yaml",
+      "packId": "pack_06",
+      "packName": "Essential Art Styles",
+      "categoryId": "drawing-and-sketching",
+      "categoryName": "2. Drawing & Sketching",
+      "domain": "flat chisel-lead pencil sketch",
+      "tags": ["essential-art-styles", "drawing-and-sketching", "flat-chisel-lead-pencil-sketch"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp06-130 carpenter pencil block sketch flat chisel-lead pencil sketch wide flat chisel strokes 2. drawing & sketching drawing flat chisel-lead pencil sketch pack_06 essential art styles drawing-and-sketching essential-art-styles drawing-and-sketching flat-chisel-lead-pencil-sketch"
+    },
+    {
       "id": "SP06-019",
-      "name": "Ballpoint Pen",
+      "name": "Ballpoint Scribble Shading",
+      "styleAnchors": ["Ballpoint Scribble Shading", "Ballpoint Pen"],
       "ref": "pack_06/SP06-019.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -497,7 +796,7 @@
       "categoryName": "2. Drawing & Sketching",
       "tags": ["essential-art-styles", "drawing-and-sketching"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-019 ballpoint pen 2. drawing & sketching drawing pack_06 essential art styles drawing-and-sketching essential-art-styles drawing-and-sketching"
+      "searchableText": "sp06-019 ballpoint scribble shading ballpoint pen 2. drawing & sketching drawing pack_06 essential art styles drawing-and-sketching essential-art-styles drawing-and-sketching"
     },
     {
       "id": "SP06-022",
@@ -837,7 +1136,8 @@
     },
     {
       "id": "SP06-036",
-      "name": "Monotype",
+      "name": "Glass-Plate Monotype",
+      "styleAnchors": ["Glass-Plate Monotype", "Monotype"],
       "ref": "pack_06/SP06-036.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -845,11 +1145,12 @@
       "categoryName": "3. Printmaking",
       "tags": ["essential-art-styles", "printmaking"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-036 monotype 3. printmaking printmaking pack_06 essential art styles printmaking essential-art-styles printmaking"
+      "searchableText": "sp06-036 glass-plate monotype monotype 3. printmaking printmaking pack_06 essential art styles printmaking essential-art-styles printmaking"
     },
     {
       "id": "SP06-037",
-      "name": "Aquatint",
+      "name": "Rosin-Grain Aquatint",
+      "styleAnchors": ["Rosin-Grain Aquatint", "Aquatint"],
       "ref": "pack_06/SP06-037.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -857,11 +1158,12 @@
       "categoryName": "3. Printmaking",
       "tags": ["essential-art-styles", "printmaking"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-037 aquatint 3. printmaking printmaking pack_06 essential art styles printmaking essential-art-styles printmaking"
+      "searchableText": "sp06-037 rosin-grain aquatint aquatint 3. printmaking printmaking pack_06 essential art styles printmaking essential-art-styles printmaking"
     },
     {
       "id": "SP06-038",
-      "name": "Mezzotint",
+      "name": "Rocker-Ground Mezzotint",
+      "styleAnchors": ["Rocker-Ground Mezzotint", "Mezzotint"],
       "ref": "pack_06/SP06-038.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -869,11 +1171,12 @@
       "categoryName": "3. Printmaking",
       "tags": ["essential-art-styles", "printmaking"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-038 mezzotint 3. printmaking printmaking pack_06 essential art styles printmaking essential-art-styles printmaking"
+      "searchableText": "sp06-038 rocker-ground mezzotint mezzotint 3. printmaking printmaking pack_06 essential art styles printmaking essential-art-styles printmaking"
     },
     {
       "id": "SP06-041",
-      "name": "Rubber Stamp",
+      "name": "Carved Rubber Stamp",
+      "styleAnchors": ["Carved Rubber Stamp", "Rubber Stamp"],
       "ref": "pack_06/SP06-041.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -881,7 +1184,7 @@
       "categoryName": "3. Printmaking",
       "tags": ["essential-art-styles", "printmaking"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-041 rubber stamp 3. printmaking printmaking pack_06 essential art styles printmaking essential-art-styles printmaking"
+      "searchableText": "sp06-041 carved rubber stamp rubber stamp 3. printmaking printmaking pack_06 essential art styles printmaking essential-art-styles printmaking"
     },
     {
       "id": "SP06-043",
@@ -968,8 +1271,103 @@
       "searchableText": "sp06-045 collagraph 3. printmaking printmaking pack_06 essential art styles printmaking essential-art-styles printmaking"
     },
     {
+      "id": "SP06-131",
+      "name": "End-Grain Wood Engraving",
+      "styleAnchors": [
+        "End-Grain Wood Engraving",
+        "white-line boxwood engraving",
+        "fine white lines cut into black"
+      ],
+      "ref": "pack_06/SP06-131.yaml",
+      "packId": "pack_06",
+      "packName": "Essential Art Styles",
+      "categoryId": "printmaking",
+      "categoryName": "3. Printmaking",
+      "domain": "white-line boxwood engraving",
+      "tags": ["essential-art-styles", "printmaking", "white-line-boxwood-engraving"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp06-131 end-grain wood engraving white-line boxwood engraving fine white lines cut into black 3. printmaking printmaking white-line boxwood engraving pack_06 essential art styles printmaking essential-art-styles printmaking white-line-boxwood-engraving"
+    },
+    {
+      "id": "SP06-132",
+      "name": "Reduction Linocut",
+      "styleAnchors": [
+        "Reduction Linocut",
+        "multi-color print from one progressively carved block",
+        "one block printed in successive colors"
+      ],
+      "ref": "pack_06/SP06-132.yaml",
+      "packId": "pack_06",
+      "packName": "Essential Art Styles",
+      "categoryId": "printmaking",
+      "categoryName": "3. Printmaking",
+      "domain": "multi-color print from one progressively carved block",
+      "tags": [
+        "essential-art-styles",
+        "printmaking",
+        "multi-color-print-from-one-progressively-carved-block"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp06-132 reduction linocut multi-color print from one progressively carved block one block printed in successive colors 3. printmaking printmaking multi-color print from one progressively carved block pack_06 essential art styles printmaking essential-art-styles printmaking multi-color-print-from-one-progressively-carved-block"
+    },
+    {
+      "id": "SP06-133",
+      "name": "Chine-Collé Etching",
+      "styleAnchors": [
+        "Chine-Collé Etching",
+        "etching printed onto a laid-in colored tissue",
+        "tinted tissue laid under the etching"
+      ],
+      "ref": "pack_06/SP06-133.yaml",
+      "packId": "pack_06",
+      "packName": "Essential Art Styles",
+      "categoryId": "printmaking",
+      "categoryName": "3. Printmaking",
+      "domain": "etching printed onto a laid-in colored tissue",
+      "tags": [
+        "essential-art-styles",
+        "printmaking",
+        "etching-printed-onto-a-laid-in-colored-tissue"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp06-133 chine-collé etching etching printed onto a laid-in colored tissue tinted tissue laid under the etching 3. printmaking printmaking etching printed onto a laid-in colored tissue pack_06 essential art styles printmaking essential-art-styles printmaking etching-printed-onto-a-laid-in-colored-tissue"
+    },
+    {
+      "id": "SP06-134",
+      "name": "Carborundum Print",
+      "styleAnchors": ["Carborundum Print", "painterly grit-plate intaglio", "brushed grit plate"],
+      "ref": "pack_06/SP06-134.yaml",
+      "packId": "pack_06",
+      "packName": "Essential Art Styles",
+      "categoryId": "printmaking",
+      "categoryName": "3. Printmaking",
+      "domain": "painterly grit-plate intaglio",
+      "tags": ["essential-art-styles", "printmaking", "painterly-grit-plate-intaglio"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp06-134 carborundum print painterly grit-plate intaglio brushed grit plate 3. printmaking printmaking painterly grit-plate intaglio pack_06 essential art styles printmaking essential-art-styles printmaking painterly-grit-plate-intaglio"
+    },
+    {
+      "id": "SP06-135",
+      "name": "Pochoir Hand Stencil",
+      "styleAnchors": [
+        "Pochoir Hand Stencil",
+        "hand-colored stencil print",
+        "crisp cut-stencil color shapes"
+      ],
+      "ref": "pack_06/SP06-135.yaml",
+      "packId": "pack_06",
+      "packName": "Essential Art Styles",
+      "categoryId": "printmaking",
+      "categoryName": "3. Printmaking",
+      "domain": "hand-colored stencil print",
+      "tags": ["essential-art-styles", "printmaking", "hand-colored-stencil-print"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp06-135 pochoir hand stencil hand-colored stencil print crisp cut-stencil color shapes 3. printmaking printmaking hand-colored stencil print pack_06 essential art styles printmaking essential-art-styles printmaking hand-colored-stencil-print"
+    },
+    {
       "id": "SP06-092",
-      "name": "C64 Commodore Palette",
+      "name": "Fat-Pixel 16-Color Home Computer",
+      "styleAnchors": ["Fat-Pixel 16-Color Home Computer", "C64 Commodore Palette"],
       "ref": "pack_06/SP06-092.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -977,11 +1375,12 @@
       "categoryName": "6. Retro Game Visual Systems",
       "tags": ["essential-art-styles", "retro-game-visual-systems"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-092 c64 commodore palette 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
+      "searchableText": "sp06-092 fat-pixel 16-color home computer c64 commodore palette 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
     },
     {
       "id": "SP06-094",
-      "name": "Atari 2600 Extreme Limitation",
+      "name": "Scanline Stripe Block Minimalism",
+      "styleAnchors": ["Scanline Stripe Block Minimalism", "Atari 2600 Extreme Limitation"],
       "ref": "pack_06/SP06-094.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -989,11 +1388,12 @@
       "categoryName": "6. Retro Game Visual Systems",
       "tags": ["essential-art-styles", "retro-game-visual-systems"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-094 atari 2600 extreme limitation 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
+      "searchableText": "sp06-094 scanline stripe block minimalism atari 2600 extreme limitation 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
     },
     {
       "id": "SP06-095",
-      "name": "Sega Genesis Dither-Heavy",
+      "name": "Dither-Heavy 16-Bit Console",
+      "styleAnchors": ["Dither-Heavy 16-Bit Console", "Sega Genesis Dither-Heavy"],
       "ref": "pack_06/SP06-095.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -1001,11 +1401,12 @@
       "categoryName": "6. Retro Game Visual Systems",
       "tags": ["essential-art-styles", "retro-game-visual-systems"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-095 sega genesis dither-heavy 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
+      "searchableText": "sp06-095 dither-heavy 16-bit console sega genesis dither-heavy 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
     },
     {
       "id": "SP06-082",
-      "name": "SNES Mode 7 Vista",
+      "name": "Mode 7 Floor-Plane Vista",
+      "styleAnchors": ["Mode 7 Floor-Plane Vista", "SNES Mode 7 Vista"],
       "ref": "pack_06/SP06-082.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -1013,11 +1414,12 @@
       "categoryName": "6. Retro Game Visual Systems",
       "tags": ["essential-art-styles", "retro-game-visual-systems"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-082 snes mode 7 vista 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
+      "searchableText": "sp06-082 mode 7 floor-plane vista snes mode 7 vista 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
     },
     {
       "id": "SP06-093",
-      "name": "MSX2 Japanese Computer",
+      "name": "Bright Line-Clash Home Micro",
+      "styleAnchors": ["Bright Line-Clash Home Micro", "MSX2 Japanese Computer"],
       "ref": "pack_06/SP06-093.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -1025,11 +1427,12 @@
       "categoryName": "6. Retro Game Visual Systems",
       "tags": ["essential-art-styles", "retro-game-visual-systems"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-093 msx2 japanese computer 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
+      "searchableText": "sp06-093 bright line-clash home micro msx2 japanese computer 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
     },
     {
       "id": "SP06-086",
-      "name": "RPG Maker Chibi Tileworld",
+      "name": "Chibi Top-Down Tileworld",
+      "styleAnchors": ["Chibi Top-Down Tileworld", "RPG Maker Chibi Tileworld"],
       "ref": "pack_06/SP06-086.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -1037,11 +1440,12 @@
       "categoryName": "6. Retro Game Visual Systems",
       "tags": ["essential-art-styles", "retro-game-visual-systems"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-086 rpg maker chibi tileworld 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
+      "searchableText": "sp06-086 chibi top-down tileworld rpg maker chibi tileworld 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
     },
     {
       "id": "SP06-081",
-      "name": "Game Boy Green Monochrome",
+      "name": "Four-Shade Pea-Green LCD",
+      "styleAnchors": ["Four-Shade Pea-Green LCD", "Game Boy Green Monochrome"],
       "ref": "pack_06/SP06-081.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -1049,11 +1453,12 @@
       "categoryName": "6. Retro Game Visual Systems",
       "tags": ["essential-art-styles", "retro-game-visual-systems"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-081 game boy green monochrome 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
+      "searchableText": "sp06-081 four-shade pea-green lcd game boy green monochrome 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
     },
     {
       "id": "SP06-088",
-      "name": "PSX Vertex Wobble",
+      "name": "32-Bit Vertex Wobble",
+      "styleAnchors": ["32-Bit Vertex Wobble", "PSX Vertex Wobble"],
       "ref": "pack_06/SP06-088.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -1061,11 +1466,12 @@
       "categoryName": "6. Retro Game Visual Systems",
       "tags": ["essential-art-styles", "retro-game-visual-systems"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-088 psx vertex wobble 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
+      "searchableText": "sp06-088 32-bit vertex wobble psx vertex wobble 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
     },
     {
       "id": "SP06-087",
-      "name": "GBA Tactical Pixel",
+      "name": "Handheld Tactics Grid Pixel",
+      "styleAnchors": ["Handheld Tactics Grid Pixel", "GBA Tactical Pixel"],
       "ref": "pack_06/SP06-087.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -1073,11 +1479,12 @@
       "categoryName": "6. Retro Game Visual Systems",
       "tags": ["essential-art-styles", "retro-game-visual-systems"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-087 gba tactical pixel 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
+      "searchableText": "sp06-087 handheld tactics grid pixel gba tactical pixel 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
     },
     {
       "id": "SP06-097",
-      "name": "Amiga DeluxePaint HAM",
+      "name": "HAM Copper-Gradient Paint",
+      "styleAnchors": ["HAM Copper-Gradient Paint", "Amiga DeluxePaint HAM"],
       "ref": "pack_06/SP06-097.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -1085,7 +1492,7 @@
       "categoryName": "6. Retro Game Visual Systems",
       "tags": ["essential-art-styles", "retro-game-visual-systems"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-097 amiga deluxepaint ham 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
+      "searchableText": "sp06-097 ham copper-gradient paint amiga deluxepaint ham 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
     },
     {
       "id": "SP06-085",
@@ -1101,7 +1508,8 @@
     },
     {
       "id": "SP06-096",
-      "name": "Neo Geo Sprite King",
+      "name": "Dense Arcade Mega-Sprite",
+      "styleAnchors": ["Dense Arcade Mega-Sprite", "Neo Geo Sprite King"],
       "ref": "pack_06/SP06-096.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -1109,11 +1517,12 @@
       "categoryName": "6. Retro Game Visual Systems",
       "tags": ["essential-art-styles", "retro-game-visual-systems"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-096 neo geo sprite king 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
+      "searchableText": "sp06-096 dense arcade mega-sprite neo geo sprite king 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
     },
     {
       "id": "SP06-100",
-      "name": "Game Boy Camera Thermal Print",
+      "name": "Pocket Camera Thermal Dot Print",
+      "styleAnchors": ["Pocket Camera Thermal Dot Print", "Game Boy Camera Thermal Print"],
       "ref": "pack_06/SP06-100.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -1121,11 +1530,12 @@
       "categoryName": "6. Retro Game Visual Systems",
       "tags": ["essential-art-styles", "retro-game-visual-systems"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-100 game boy camera thermal print 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
+      "searchableText": "sp06-100 pocket camera thermal dot print game boy camera thermal print 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
     },
     {
       "id": "SP06-098",
-      "name": "TurboGrafx PC Engine",
+      "name": "Candy-Bright Compact Sprite",
+      "styleAnchors": ["Candy-Bright Compact Sprite", "TurboGrafx PC Engine"],
       "ref": "pack_06/SP06-098.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -1133,7 +1543,7 @@
       "categoryName": "6. Retro Game Visual Systems",
       "tags": ["essential-art-styles", "retro-game-visual-systems"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-098 turbografx pc engine 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
+      "searchableText": "sp06-098 candy-bright compact sprite turbografx pc engine 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
     },
     {
       "id": "SP06-089",
@@ -1149,7 +1559,8 @@
     },
     {
       "id": "SP06-099",
-      "name": "DS Flipnote Studio",
+      "name": "Stylus Memo Flipbook Doodle",
+      "styleAnchors": ["Stylus Memo Flipbook Doodle", "DS Flipnote Studio"],
       "ref": "pack_06/SP06-099.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -1157,7 +1568,7 @@
       "categoryName": "6. Retro Game Visual Systems",
       "tags": ["essential-art-styles", "retro-game-visual-systems"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-099 ds flipnote studio 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
+      "searchableText": "sp06-099 stylus memo flipbook doodle ds flipnote studio 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
     },
     {
       "id": "SP06-084",
@@ -1185,7 +1596,8 @@
     },
     {
       "id": "SP06-091",
-      "name": "Vectrex Vector Display",
+      "name": "White Beam Vector with Color Overlay",
+      "styleAnchors": ["White Beam Vector with Color Overlay", "Vectrex Vector Display"],
       "ref": "pack_06/SP06-091.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -1193,7 +1605,7 @@
       "categoryName": "6. Retro Game Visual Systems",
       "tags": ["essential-art-styles", "retro-game-visual-systems"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-091 vectrex vector display 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
+      "searchableText": "sp06-091 white beam vector with color overlay vectrex vector display 6. retro game visual systems pixel constraints pack_06 essential art styles retro-game-visual-systems essential-art-styles retro-game-visual-systems"
     },
     {
       "id": "SP06-083",
@@ -1233,7 +1645,8 @@
     },
     {
       "id": "SP06-103",
-      "name": "Metroidvania Parallax Gloom",
+      "name": "Side-Scroll Parallax Gloom",
+      "styleAnchors": ["Side-Scroll Parallax Gloom", "Metroidvania Parallax Gloom"],
       "ref": "pack_06/SP06-103.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -1241,7 +1654,7 @@
       "categoryName": "7. Game Art Directions & UI",
       "tags": ["essential-art-styles", "game-art-directions-and-ui"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-103 metroidvania parallax gloom 7. game art directions & ui game art & interfaces pack_06 essential art styles game-art-directions-and-ui essential-art-styles game-art-directions-and-ui"
+      "searchableText": "sp06-103 side-scroll parallax gloom metroidvania parallax gloom 7. game art directions & ui game art & interfaces pack_06 essential art styles game-art-directions-and-ui essential-art-styles game-art-directions-and-ui"
     },
     {
       "id": "SP06-104",
@@ -1305,7 +1718,8 @@
     },
     {
       "id": "SP06-109",
-      "name": "Soulslike Tarnished Atmosphere",
+      "name": "Eroded Grandeur Dark Fantasy",
+      "styleAnchors": ["Eroded Grandeur Dark Fantasy", "Soulslike Tarnished Atmosphere"],
       "ref": "pack_06/SP06-109.yaml",
       "packId": "pack_06",
       "packName": "Essential Art Styles",
@@ -1313,7 +1727,7 @@
       "categoryName": "7. Game Art Directions & UI",
       "tags": ["essential-art-styles", "game-art-directions-and-ui"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp06-109 soulslike tarnished atmosphere 7. game art directions & ui game art & interfaces pack_06 essential art styles game-art-directions-and-ui essential-art-styles game-art-directions-and-ui"
+      "searchableText": "sp06-109 eroded grandeur dark fantasy soulslike tarnished atmosphere 7. game art directions & ui game art & interfaces pack_06 essential art styles game-art-directions-and-ui essential-art-styles game-art-directions-and-ui"
     },
     {
       "id": "SP06-110",
@@ -1448,5 +1862,5 @@
       "searchableText": "sp06-120 boss encounter key art tension 7. game art directions & ui game art & interfaces pack_06 essential art styles game-art-directions-and-ui essential-art-styles game-art-directions-and-ui"
     }
   ],
-  "totalPresetCount": 120
+  "totalPresetCount": 140
 }

@@ -3,7 +3,7 @@ id: SP04-100
 packId: pack_04
 name: Monster Size Comparison Chart
 category: 6. Technical And Reference Sheets
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,69 +12,30 @@ tags:
   - illustration-and-graphic-novel
   - technical-and-reference-sheets
 visualDna:
-  aesthetic: >-
-    scale-threat designs Size Comparison Chart acts as a transferable illustration router: start
-    from Size-comparison chart with educational scale framing, Human and real-world benchmarks,
-    incremental height logic, clear unit hierarchy and technical reference and interface-spec system
-    built from orthographic clarity, diagram hierarchy, callout logic, measured spacing, and
-    production-sheet legibility, then apply the visual behavior to prompt X instead of recreating a
-    fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Baseline-aligned silhouettes with measurement ticks and
-    reference markers; preserve the requested subject while expressing it through schematic
-    breakdowns, reference views, anatomy structure, UI wireframes, comparison scales, or
-    specification surfaces, keeping the requested identity, silhouette, pose, object function, or
-    setting legible.
-  color_and_tone: >-
-    Build color with Neutral comparative scheme with restrained atmospheric scaling cues; use color
-    as information coding: blueprint cyan, neutral sheet stock, callout accents, HUD glow, anatomy
-    value separation, or wireframe hierarchy, with deliberate value grouping, accent control, and
-    process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Consistent silhouette rim/read light for cross-subject legibility; keep
-    light diagrammatic and legible through flat drafting values, callout emphasis, interface glow,
-    anatomical separation, or measured shadow restraint, so value structure supports the
-    illustration process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Clean chartboard finish with minimal atmospheric fade on largest entries; surface detail
-    should support readability with grid paper, line weights, translucent overlays, measurement
-    ticks, UI panels, section cuts, or reference-sheet paper grain, keeping material scale coherent
-    and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Left-to-right ascending scale progression with fixed ground
-    reference; compose through orthographic projection, exploded spacing, callout grouping,
-    interface modules, size-scale relationships, and reference-sheet hierarchy, with scale, spacing,
-    edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Awe-oriented yet analytical, museum-chart clarity; derive mood from precision,
-    planning, research, interface control, anatomical study, engineering authority, or catalogued
-    comparison, letting the style alter interpretation without demanding a specific story, location,
-    or actor.
-  rendering_and_quality: >-
-    Finish with Infographic-style concept sheet optimized for proportional comprehension; finish
-    with readable technical communication, crisp line hierarchy, controlled notation-like detail,
-    and no illegible labels or decorative clutter, clean denoised surfaces where appropriate, and
-    enough process evidence to make the style recognizable.
-  key_features: >-
-    Size-comparison chart with educational scale framing; Human and real-world benchmarks,
-    incremental height logic, clear unit hierarchy; Neutral comparative scheme with restrained
-    atmospheric scaling cues; Clean chartboard finish with minimal atmospheric fade on largest
-    entries; Left-to-right ascending scale progression with fixed ground reference
-  creative_brief: >-
-    Apply scale-threat designs Size Comparison Chart as an illustration preset over prompt X:
-    preserve the user's requested subject, then route mark-making, palette, surface, composition,
-    mood, and final craft through Size-comparison chart with educational scale framing, Human and
-    real-world benchmarks, incremental height logic, clear unit hierarchy, Clean chartboard finish
-    with minimal atmospheric fade on largest entries without requiring the card image's original
-    subject.
+  aesthetic: 'Size comparison chart: variants of the subject lined up smallest to largest as flat silhouettes on a height grid, a human figure for scale.'
+  subject_treatment: Keep the prompt subject as the thing documented; this reference profile owns a size-comparison lineup of silhouettes on a height grid with a human benchmark, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.
+  color_and_tone: Warm off-white ground, charcoal silhouettes with slight value steps, one accent color for the featured form.
+  lighting_and_shadow: No modeling; silhouettes read flat, with small ground-contact shadows only.
+  texture_and_material: Clean filled silhouettes, thin grid lines, faint paper texture and tick marks on the height axis.
+  camera_and_composition: Strict side view on one ground line, subjects ordered by height, human silhouette at the small end, tick marks without numbers.
+  atmosphere_and_mood: Awe through scale, the largest shape dwarfing the rest.
+  rendering_and_quality: Clear comparative chart with consistent scale and no unit numbers or names.
+  key_features: smallest-to-largest lineup; human scale silhouette; height grid; shared ground line; unnumbered tick marks
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Monster Size Comparison Chart as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - placeholder gibberish text
+  - invented numbers presented as data
+  - readable labels
+  - brand logo
+  - franchise likeness
+  - free painterly composition instead of a sheet
+  - perspective scene
+  - monsters fighting
   - single creature
   - no reference
   - unclear scale
   - vague proportions
-  - tiny
   - only one
-  - human-centric
   - no comparison
   - official card scene
   - fixed thumbnail subject
@@ -88,14 +49,15 @@ avoidRules:
   - decorative clutter
   - shaded cinematic render
   - random UI text
+  - text
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-100.webp
 attributes:
-  negativePrompt: >-
-    single creature, no reference, unclear scale, vague proportions, tiny, only one, human-centric,
-    no comparison, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible
-    labels, decorative clutter, shaded cinematic render, random UI text
+  negativePrompt: placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, perspective scene, monsters fighting, single creature, no reference, unclear scale, vague proportions, only one, no comparison, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

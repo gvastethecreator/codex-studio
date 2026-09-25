@@ -3,7 +3,7 @@ id: SP06-065
 packId: pack_06
 name: Scrapbook Layer Grammar
 category: 5. Mixed Media
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,54 +12,25 @@ tags:
   - essential-art-styles
   - mixed-media
 visualDna:
-  aesthetic: >-
-    Scrapbook Layer Grammar acts as a transferable art-medium router: start from Scrapbook layering
-    style with taped ephemera, soft nostalgia, and handmade page rhythm, Page layout and mixed-media
-    assembly system built from layering, adhesion, surface collision, found-material logic, tactile
-    seams, and handmade construction, then apply the medium behavior to prompt X instead of
-    recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Tape, stickers; preserve the prompt subject while
-    rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee
-    stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose,
-    object function, or environment legible.
-  color_and_tone: >-
-    Build color with Pastel, vintage; treat color as material combination: paper aging, varnish
-    warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled
-    oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than
-    generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Flat lay; make light reveal relief, varnish gloss, paper lift, tape shine,
-    thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure
-    supports the medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Paper fibers, tape sheen, sticker edges, paper shadows, and optional non readable
-    handwriting texture; surface detail should show torn fiber, glue, tape edge, cork tooth, thread
-    thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material
-    scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Layered; compose through layer order, overlap, pin logic, cut
-    rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal
-    craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Nostalgic, sweet; derive mood from DIY urgency, memory, repair, evidence, punk
-    collision, tactile intimacy, decorative excess, or experimental material play, letting the
-    medium alter interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Personal, cute; finish with coherent material stacking, readable subject
-    transformation, and no single flat texture pasted over the whole image, clean denoised surfaces
-    where appropriate, and enough craft evidence to make the medium recognizable.
-  key_features: >-
-    Scrapbook layering style with taped ephemera, soft nostalgia, and handmade page rhythm; Page
-    layout; Pastel, vintage; Paper fibers, tape sheen, sticker edges, paper shadows, and optional
-    non readable handwriting texture; Layered
-  creative_brief: >-
-    Apply Scrapbook Layer Grammar as an art-style preset over prompt X: preserve the user's
-    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
-    through Scrapbook layering style with taped ephemera, soft nostalgia, and handmade page rhythm,
-    Page layout, Paper fibers, tape sheen, sticker edges, paper shadows, and optional non readable
-    handwriting texture without requiring the card image's original subject.
+  aesthetic: 'Scrapbook page: photographs of the subject mounted on patterned paper mats with photo corners, washi tape, die-cut shapes and pressed keepsakes.'
+  subject_treatment: Keep the prompt subject as the hero of the arrangement with its identity, clothing and anatomy unchanged; this preset owns the flat scrapbook page layout of mounted prints, mats, tape and keepsakes around the subject.
+  color_and_tone: Soft coordinated pastels and patterned papers built around one color from the subject photos; warm aged whites.
+  lighting_and_shadow: Soft overhead flat-lay light; tiny shadows under photo corners, brads and raised die-cuts.
+  texture_and_material: Deckle-edged mats, translucent washi tape, glossy prints, pressed flowers or feathers, metal brads and non-readable handwriting scribbles.
+  camera_and_composition: Top-down flat lay of one page; two or three overlapping photos of the subject form the anchor, keepsakes cluster around the corners.
+  atmosphere_and_mood: Warm and personal, a remembered day kept with care.
+  rendering_and_quality: Tidy layered page with clear overlaps, crisp tape translucency and no readable journaling.
+  key_features: mounted photos with corners; washi tape; deckle mats; pressed keepsakes; flat-lay page
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scrapbook Layer Grammar as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - uniform beige torn-paper wash over every image
+  - red tape strips added by default
+  - material replacing clothing or skin
+  - readable printed words
+  - changing the requested camera view
+  - readable journaling
+  - sticker letters
+  - digital scrapbook template
   - photo
   - realistic
   - photorealistic
@@ -88,15 +59,16 @@ avoidRules:
   - fake scrapbook text
   - craft-table default
   - clean vector render
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-065.webp
 attributes:
-  negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
-    anatomy, watermark, text, signature, frame, border, readable handwriting, ticket requirement,
-    flower requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter,
-    readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table
-    default, clean vector render
+  negativePrompt: uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, readable journaling, sticker letters, digital scrapbook template, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable handwriting, ticket requirement, flower requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

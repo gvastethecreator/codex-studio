@@ -3,7 +3,7 @@ id: SP13-021
 packId: pack_05
 name: Action Burst Alley Rush
 category: 5. Action Motion Setpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,44 +13,23 @@ tags:
   - anime
   - action
 visualDna:
-  aesthetic: >-
-    Build high-impact anime action from a compact subject silhouette, elastic contour rhythm, and
-    bold force lines that converge into a forward rush. Keep motion legible through sharp
-    directional edges and compressed depth. Use dark-blue support values only where they fit the
-    requested palette.
-  subject_treatment: >-
-    Preserve the requested subject identities and count, action, pose, props, wardrobe, setting,
-    and tone. Restyle only contours, gesture emphasis, and edge rhythm. Do not add, remove, replace,
-    or duplicate people, opponents, props, or scene elements.
-  color_and_tone: >-
-    Preserve the requested colors and emotional temperature. Where compatible, use dark-blue
-    support values and concise cool highlights to clarify the forward motion without introducing
-    new light sources or changing the scene's mood.
-  lighting_and_shadow: >-
-    Use clean local contrast and hard edge highlights aligned with the existing movement. Follow
-    the requested lighting context; do not invent flashes, electricity, machinery, or magic.
-  texture_and_material: >-
-    Keep contours crisp and use a few tapered motion streaks attached to moving forms. Preserve
-    requested surfaces and materials; add dust, smoke, grit, or debris only when the request
-    includes them.
-  camera_and_composition: >-
-    When the requested camera leaves room for interpretation, use close foreshortening, compressed
-    depth, and converging diagonals to carry the requested movement forward. Preserve an explicitly
-    requested viewpoint and do not impose an alley or other setting.
-  atmosphere_and_mood: >-
-    Let the requested tone lead. Create forward pressure through framing and line direction without
-    adding danger, confrontation, or a more intense emotion than requested.
-  rendering_and_quality: >-
-    Use sharp 2D contours, stable anatomy or object structure, and clear foreground-to-background
-    separation. Keep streaks and grain controlled so the requested subject and action remain
-    immediately legible.
-  key_features: >-
-    Compact silhouettes, elastic contours, converging forward diagonals, close foreshortening,
-    controlled motion streaks, and clear action readability, all applied to the requested content.
-  creative_brief: >-
-    Strengthen the requested action with a compact, forward-driving composition, elastic contours,
-    and converging lines. Preserve the requested subject, count, props, setting, and tone.
+  aesthetic: 'Anime action frame staged as a forward rush: the subject lunges toward the lens along converging diagonals, its nearest limb foreshortened to about twice its size, depth squeezed like a narrow passage.'
+  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the forward-rush staging, foreshortening and converging depth lines, and adds no opponent, sports gear, extra prop or danger.
+  color_and_tone: Keep the prompt palette; cooler dark-blue values in the background push the warmer, lighter subject forward.
+  lighting_and_shadow: Hard cel edge highlights on the leading side of the subject, aligned with its travel; no flashes or sparks.
+  texture_and_material: Crisp cel contours with three to six tapered motion streaks attached only to trailing edges.
+  camera_and_composition: A 24 mm-equivalent low front three-quarter view, the leading hand or foot almost touching the lens, the vanishing point tucked behind the subject's shoulder.
+  atmosphere_and_mood: Forward pressure and urgency that live in the framing, not in added danger.
+  rendering_and_quality: Sharp 2D cel rendering with stable anatomy through the foreshortening and clean foreground-to-background separation.
+  key_features: lunge toward the lens; leading limb foreshortened to double size; converging diagonals; compressed depth; tapered trailing streaks
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Action Burst Alley Rush as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - added opponent
+  - added sports gear
+  - invented danger or explosion
+  - extra props
+  - readable text
+  - franchise character likeness
   - photoreal
   - static-pose
   - low-detail
@@ -66,13 +45,16 @@ avoidRules:
   - prompt-required card
   - signature
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-021.webp
 attributes:
-  negativePrompt: >-
-    photoreal, static-pose, low-detail, watermark, logo, low-detail blur, photoreal stunt photo,
-    fixed canon character, title scene replication, required source-frame look, cosplay, generic
-    anime filter, prompt-required card, signature, muddy noisy darks
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, static-pose, low-detail, watermark, logo, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -1,0 +1,79 @@
+schemaVersion: 1
+id: SP06-137
+packId: pack_06
+name: Pen-Plotter Hatch Drawing
+styleAnchors:
+  - Pen-Plotter Hatch Drawing
+  - machine-drawn vector hatching
+  - machine-regular hatching
+displayName: Pen-Plotter Hatch Drawing
+category: 4. Digital Art
+domain: machine-drawn vector hatching
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - digital-art
+  - pen-plotter
+  - hatching
+  - algorithmic
+visualDna:
+  aesthetic: 'Pen-plotter drawing: vector paths drawn on paper by a machine holding a real pen, with tone from perfectly regular computed hatch and contour-line fills.'
+  subject_treatment: Redraw the prompt's subject, pose, setting and framing with this digital mark system as one finished picture; it never becomes a concept board, turnaround sheet or 3D object render.
+  color_and_tone: One or two fineliner colors on white or colored paper, tone from hatch spacing and angle.
+  lighting_and_shadow: Shading as layered straight or contour-following hatches, spacing tightening into shadow.
+  texture_and_material: Real ink line on paper with tiny pen-start blobs, perfectly parallel machine lines, slight paper bleed.
+  camera_and_composition: Keep the requested framing; the subject drawn in outline with computed hatch regions.
+  atmosphere_and_mood: Precise, meditative and technical, a machine with a steady hand.
+  rendering_and_quality: Mechanically regular line spacing with real ink behavior; no hand wobble, no filled solids, no gradients.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pen-Plotter Hatch Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: machine-regular hatching; contour-line fills; real fineliner ink on paper; pen-start dots; one or two pen colors
+avoidRules:
+  - photo
+  - photorealistic
+  - generic AI gloss
+  - random AI smear
+  - muddy overpaint
+  - generic concept slop
+  - changing the requested subject
+  - concept board layout
+  - turnaround sheet
+  - game UI or HUD
+  - readable interface text
+  - hand-drawn wobble
+  - solid black fills
+  - gradients
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: photo, photorealistic, generic AI gloss, random AI smear, muddy overpaint, generic concept slop, changing the requested subject, concept board layout, turnaround sheet, game UI or HUD, readable interface text, hand-drawn wobble, solid black fills, gradients, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_06
+  packName: Essential Art Styles
+  categoryId: digital-art
+  categoryName: 4. Digital Art
+  tags:
+    - essential-art-styles
+    - digital-art
+    - pen-plotter
+    - hatching
+    - algorithmic
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: machine-drawn vector hatching

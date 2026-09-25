@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP06-092
 packId: pack_06
-name: C64 Commodore Palette
+name: Fat-Pixel 16-Color Home Computer
 category: 6. Retro Game Visual Systems
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,61 +12,25 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: >-
-    C64 Commodore Palette acts as a transferable art-medium router: start from C64 Commodore Palette
-    era-specific hardware limits, constrained palette behavior, visible display artifacts, and
-    sprite or screen logic and hardware-constrained game-visual system built from display limits,
-    palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm,
-    then apply the medium behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through adapt the requested subject through era-specific hardware
-    limits, constrained palette behavior, visible display artifacts, and sprite or screen logic
-    while preserving identity; preserve the prompt subject while translating it into tile, sprite,
-    vector, glyph, voxel, pre-render, screen-grid, or low-bit display behavior, keeping the
-    requested identity, silhouette, pose, object function, or environment legible.
-  color_and_tone: >-
-    Build color with medium-native palette relationships, deliberate contrast, and accent restraint
-    for C64 Commodore Palette; use color through hardware rules: indexed palettes, phosphor glow,
-    four-shade handheld values, dither tricks, copper gradients, limited scanline color, or terminal
-    ANSI sets, with deliberate value grouping, accent control, and medium-specific limits rather
-    than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through process-led value structure, readable highlights, and medium-specific
-    shadow behavior; make light emerge from display technology, pixel value steps, CRT bloom,
-    palette cycling, thermal print contrast, or vector beam brightness, so value structure supports
-    the medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render era-specific hardware limits, constrained palette behavior, visible display artifacts,
-    and sprite or screen logic; surface detail should show pixels, dithering, scanlines,
-    quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation,
-    keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through scale rhythm, edge hierarchy, spacing, and composition rules
-    specific to C64 Commodore Palette; compose through tile maps, sprite scale, fixed-resolution
-    framing, isometric grids, wireframe coordinate space, UI geometry, or screen-proportion
-    constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood mood carried by C64 Commodore Palette craft, material pressure, and visual
-    restraint; derive mood from hardware limitation, arcade spectacle, handheld intimacy, terminal
-    austerity, console nostalgia, or broken early-3D instability, letting the medium alter
-    interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with finished C64 Commodore Palette craft with clear medium evidence and controlled
-    detail; finish with faithful era constraints, crisp readability at small scale, and no modern
-    high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised
-    surfaces where appropriate, and enough craft evidence to make the medium recognizable.
-  key_features: >-
-    C64 Commodore Palette era-specific hardware limits, constrained palette behavior, visible
-    display artifacts, and sprite or screen logic; medium-native palette relationships, deliberate
-    contrast, and accent restraint for C64 Commodore Palette; scale rhythm, edge hierarchy, spacing,
-    and composition rules specific to C64 Commodore Palette
-  creative_brief: >-
-    Apply C64 Commodore Palette as an art-style preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    C64 Commodore Palette era-specific hardware limits, constrained palette behavior, visible
-    display artifacts, and sprite or screen logic without requiring the card image's original
-    subject.
+  aesthetic: '8-bit home computer multicolor bitmap: double-wide pixels at 160 by 200 from a fixed palette of sixteen muted colors.'
+  subject_treatment: Keep the prompt subject, action and camera view; redraw it inside this display system's resolution, palette and pixel-cluster limits without adding any game interface.
+  color_and_tone: Fixed dusty palette of browns, lilac, light blue, olive, pink-grey and mustard; at most three colors plus a shared background per character cell.
+  lighting_and_shadow: Light stated by palette steps and horizontal dither; blocky cell-aligned shadows.
+  texture_and_material: Pixels twice as wide as tall, color boundaries snapping to 4 by 8 cells, fine horizontal dither patterns.
+  camera_and_composition: Keep the requested view; broad shapes that survive the coarse horizontal resolution.
+  atmosphere_and_mood: Homely and melancholic, the glow of a bedroom computer.
+  rendering_and_quality: Strict wide pixels and cell color limits; no colors outside the fixed sixteen.
+  key_features: double-wide pixels; fixed 16 muted colors; 4x8 cell color limit; horizontal dither; bedroom-computer glow
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fat-Pixel 16-Color Home Computer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - copied game characters
+  - console or handheld hardware shown in frame
+  - score counter or health bar
+  - readable interface text
+  - brand or publisher logo
+  - square pixels
+  - saturated neon colors
+  - smooth gradients
   - smooth
   - modern
   - high res
@@ -89,14 +53,17 @@ avoidRules:
   - fake readable UI text
   - generic emulator screenshot
   - unlimited color render
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-092.webp
 attributes:
-  negativePrompt: >-
-    smooth, modern, high res, 3d, realistic, gradient, HD, anti-aliased, photo, clean, high color,
-    wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable
-    text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot,
-    unlimited color render
+  negativePrompt: copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, square pixels, saturated neon colors, smooth gradients, smooth, modern, high res, 3d, realistic, gradient, HD, anti-aliased, photo, clean, high color, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -110,3 +77,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Fat-Pixel 16-Color Home Computer
+styleAnchors:
+  - Fat-Pixel 16-Color Home Computer
+  - C64 Commodore Palette

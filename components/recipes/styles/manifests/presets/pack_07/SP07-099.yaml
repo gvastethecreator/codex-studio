@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP07-099
+packId: pack_07
+name: Yellow-Light Clean Room
+styleAnchors:
+  - Yellow-Light Clean Room
+  - semiconductor clean room
+  - filtered yellow-amber light
+displayName: Yellow-Light Clean Room
+category: 3. Civic Infrastructure And Specialty Spaces
+domain: semiconductor clean room
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - civic-infrastructure-and-specialty-spaces
+  - clean-room
+  - semiconductor
+  - yellow-light
+visualDna:
+  aesthetic: 'Yellow-light clean room: a semiconductor fabrication bay lit by filtered amber light, with laminar-flow ceiling filters, perforated floors and workers in full-body gowns.'
+  subject_treatment: Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.
+  color_and_tone: Monochrome saturated yellow-amber light over white surfaces, white gowns turned butter yellow, small cool reflections in steel; one-colour cast.
+  lighting_and_shadow: Even filtered yellow light from a grid of ceiling panels, almost shadowless, soft glossy highlights on polished steel.
+  texture_and_material: Ceiling of fan filter units, perforated raised floor, brushed stainless benches, sealed tool enclosures, bunny-suit gowns with hoods, masks and gloves.
+  camera_and_composition: Keep the requested view; long bay of repeating tool enclosures, gowned figures small and faceless, symmetry softened by yellow haze.
+  atmosphere_and_mood: Sterile, silent and uncanny, a sealed world with one colour.
+  rendering_and_quality: Clean photograph with a single yellow cast held consistently, no readable screens or labels.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Yellow-Light Clean Room as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: filtered yellow-amber light; full-body gowned figures; laminar-flow ceiling filters; perforated floor; stainless tool enclosures
+avoidRules:
+  - one-point corridor perspective as default
+  - wet mirror-gloss floor as default
+  - turning the requested room into a station or library
+  - readable signage or wayfinding text
+  - white daylight
+  - readable screens
+  - mess or dust
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, white daylight, readable screens, mess or dust, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: civic-infrastructure-and-specialty-spaces
+  categoryName: 3. Civic Infrastructure And Specialty Spaces
+  tags:
+    - architecture-and-interior
+    - civic-infrastructure-and-specialty-spaces
+    - clean-room
+    - semiconductor
+    - yellow-light
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: semiconductor clean room

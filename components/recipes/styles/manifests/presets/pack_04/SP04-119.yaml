@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP04-119
+packId: pack_04
+name: Pose Library Sheet
+styleAnchors:
+  - Pose Library Sheet
+  - figure pose reference
+  - eight to twelve poses
+displayName: Pose Library Sheet
+category: 6. Technical And Reference Sheets
+domain: figure pose reference
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - technical-and-reference-sheets
+  - pose-reference
+  - figure-sheet
+  - grey-render
+visualDna:
+  aesthetic: 'Pose library sheet: the same figure repeated in eight to twelve poses, rendered in neutral grey tone like a clay study.'
+  subject_treatment: Keep the prompt subject as the thing documented; this reference profile owns a library of eight to twelve poses of the same figure on a floor grid under identical light, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.
+  color_and_tone: Neutral grey figures on a light grey ground, a single mid-grey floor grid, no costume colors.
+  lighting_and_shadow: One identical top-left key and soft fill on every pose, with a small contact shadow each.
+  texture_and_material: Smooth matte grey surfaces with clear planes; costume simplified to readable folds and silhouettes.
+  camera_and_composition: Poses in two or three rows at one scale and one camera height, each on its own floor-grid square.
+  atmosphere_and_mood: Practical and neutral, movement catalogued for animators.
+  rendering_and_quality: Consistent proportions and scale across poses; no action effects and no background.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pose Library Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: eight to twelve poses; neutral grey clay tone; identical lighting; floor grid squares; one camera height
+avoidRules:
+  - placeholder gibberish text
+  - invented numbers presented as data
+  - readable labels
+  - brand logo
+  - franchise likeness
+  - free painterly composition instead of a sheet
+  - motion blur effects
+  - scenic background
+  - watermark
+  - text
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, motion blur effects, scenic background, watermark, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_04
+  packName: Illustration & Graphic Novel
+  categoryId: technical-and-reference-sheets
+  categoryName: 6. Technical And Reference Sheets
+  tags:
+    - illustration-and-graphic-novel
+    - technical-and-reference-sheets
+    - pose-reference
+    - figure-sheet
+    - grey-render
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: figure pose reference

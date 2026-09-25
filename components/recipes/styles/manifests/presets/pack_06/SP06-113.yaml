@@ -3,7 +3,7 @@ id: SP06-113
 packId: pack_06
 name: Fantasy MMO Parchment Interface
 category: 7. Game Art Directions & UI
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,72 +12,28 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: >-
-    Fantasy MMO Parchment Interface acts as a transferable art-medium router: start from Fantasy MMO
-    parchment interface style with ornamental cartography logic, aged UI material, and quest screen
-    clarity, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and
-    production-art clarity and game-art direction system built from playable readability, UI or
-    asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply
-    the medium behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Recast any subject into symbolic maplike marks, route like
-    linework, framed medallions, and collectible lore texture; preserve the prompt subject while
-    routing it through tile readability, icon clarity, splash rendering, interface material, sprite
-    bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose,
-    object function, or environment legible.
-  color_and_tone: >-
-    Build color with Sepia parchment base, ink brown contours, muted jewel accents, red wax like
-    highlights, and soft vignette aging; use color as gameplay hierarchy: rarity glow, faction
-    contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable
-    inventory material, with deliberate value grouping, accent control, and medium-specific limits
-    rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Flat document lighting with subtle edge shadows, embossed ornament glints,
-    and low contrast aged stains; shape light through game readability: rim separation, UI glow,
-    static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so
-    value structure supports the medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Fibrous paper grain, burned borders, stamped motifs, hand inked line jitter, and softened
-    fold marks; surface detail should support genre grammar through parchment, HUD glass, pixel
-    atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping
-    material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Top down UI/document composition with decorative framing, open
-    readable zones, and no required geography; compose through gameplay-facing hierarchy, atlas
-    consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen
-    energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Adventurous, archival, questlike mood without requiring maps, continents,
-    fortification scale, compass roses, or text; derive mood from playable stakes, collection
-    desire, tactical control, cozy routine, survival dread, arcade speed, or heroic confrontation,
-    letting the medium alter interpretation without demanding a specific story, location, or
-    character.
-  rendering_and_quality: >-
-    Finish with Clean game UI asset finish, no readable labels, strong ornament hierarchy, thumbnail
-    safe; finish with game-production clarity, strong silhouettes, controlled UI-like detail, and no
-    unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough craft
-    evidence to make the medium recognizable.
-  key_features: >-
-    Fantasy MMO parchment interface style with ornamental cartography logic, aged UI material, and
-    quest screen clarity; gameplay-readable hierarchy, genre-specific surface language, UI-aware
-    composition, and production-art clarity; Sepia parchment base, ink brown contours, muted jewel
-    accents, red wax like highlights, and soft vignette aging; Fibrous paper grain, burned borders,
-    stamped motifs, hand inked line jitter, and softened fold marks; Top down UI/document
-    composition with decorative framing, open readable zones, and no required geography
-  creative_brief: >-
-    Apply Fantasy MMO Parchment Interface as an art-style preset over prompt X: preserve the user's
-    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
-    through Fantasy MMO parchment interface style with ornamental cartography logic, aged UI
-    material, and quest screen clarity, gameplay-readable hierarchy, genre-specific surface
-    language, UI-aware composition, and production-art clarity, Fibrous paper grain, burned borders,
-    stamped motifs, hand inked line jitter, and softened fold marks without requiring the card
-    image's original subject.
+  aesthetic: 'Fantasy MMO parchment interface: aged parchment and leather panels with carved wood or metal borders, wax seals and icon slots.'
+  subject_treatment: Keep the prompt subject and action recognizable; this preset owns a parchment interface panel in which the subject appears as an inked illustration, icon or map, with blank panels and icon shapes instead of any readable text, numbers or logos.
+  color_and_tone: Warm parchment beige, burnt umber ink, oxblood wax and tarnished brass trim, with small jewel-tone icon accents.
+  lighting_and_shadow: Soft even light with slight vignette; embossed borders and seals cast short shadows.
+  texture_and_material: Stained fibrous parchment, tooled leather, carved border ornaments, cracked wax seals, inked lines.
+  camera_and_composition: Frontal panel layout with ornate frame, one illustrated zone and rows of empty slots or nodes.
+  atmosphere_and_mood: Adventurous and scholarly, a guildhall record of the journey.
+  rendering_and_quality: Clean interface hierarchy; any writing is illegible squiggle, never words or numbers.
+  key_features: parchment panel; carved ornate border; wax seal; icon slots; inked illustration
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fantasy MMO Parchment Interface as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - copied game characters
+  - known game HUD layout
+  - readable interface text
+  - numbers and stat values
+  - publisher or studio logo
+  - readable map labels
+  - castle requirement
+  - legible script
   - watermark
   - text
-  - readable map labels
   - literal world map requirement
-  - castle requirement
   - wrong medium
   - generic AI gloss
   - muddy noise
@@ -89,13 +45,16 @@ avoidRules:
   - logo clutter
   - generic screenshot
   - unplayable visual clutter
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-113.webp
 attributes:
-  negativePrompt: >-
-    watermark, text, readable map labels, literal world map requirement, castle requirement, wrong
-    medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature,
-    low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter
+  negativePrompt: copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, readable map labels, castle requirement, legible script, watermark, text, literal world map requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

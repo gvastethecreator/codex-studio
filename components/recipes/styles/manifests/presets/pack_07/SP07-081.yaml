@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP07-081
+packId: pack_07
+name: Shaker Peg-Rail Interior
+styleAnchors:
+  - Shaker Peg-Rail Interior
+  - Shaker plain-style interior
+  - continuous peg rail with hung chairs
+displayName: Shaker Peg-Rail Interior
+category: 1. Interior Design Systems
+domain: Shaker plain-style interior
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - interior-design-systems
+  - shaker
+  - plain-style
+  - joinery
+visualDna:
+  aesthetic: 'Shaker plain-style interior: whitewashed plaster, a continuous wooden peg rail at head height, built-in drawer walls and ladder-back furniture hung up out of the way.'
+  subject_treatment: Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.
+  color_and_tone: Plaster white and scrubbed pine with milk-paint accents in barn red, mustard, blue-green or deep teal; muted, clear, calm.
+  lighting_and_shadow: Plain daylight from evenly spaced double-hung windows, soft side shadow, chairs hanging from the rail casting clean silhouettes.
+  texture_and_material: Turned maple pegs, flat-panel cherry or pine casework with small turned knobs, woven tape chair seats, oval bentwood boxes with swallowtail laps.
+  camera_and_composition: Keep the requested view; frontal and symmetrical, the peg rail running across the frame as a horizon line, floor kept clear.
+  atmosphere_and_mood: Orderly, honest and serene, every object earning its place.
+  rendering_and_quality: Quiet daylight photograph, crisp joinery, matte milk-paint finish, no decorative clutter or ornament.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Shaker Peg-Rail Interior as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: continuous peg rail with hung chairs; built-in drawer walls; milk-paint accent colors; oval bentwood boxes; ladder-back chairs with woven tape
+avoidRules:
+  - furniture catalog staging
+  - olive branch in a vase as default decor
+  - panoramic window view as default backdrop
+  - real designer furniture replicas
+  - replacing the requested room with a living room
+  - ornament
+  - carved decoration
+  - clutter
+  - glossy varnish
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, ornament, carved decoration, clutter, glossy varnish, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: interior-design-systems
+  categoryName: 1. Interior Design Systems
+  tags:
+    - architecture-and-interior
+    - interior-design-systems
+    - shaker
+    - plain-style
+    - joinery
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Shaker plain-style interior

@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP07-082
+packId: pack_07
+name: Wabi-Sabi Earthen Interior
+styleAnchors:
+  - Wabi-Sabi Earthen Interior
+  - wabi-sabi imperfection interior
+  - cracked clay plaster with straw
+displayName: Wabi-Sabi Earthen Interior
+category: 1. Interior Design Systems
+domain: wabi-sabi imperfection interior
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - interior-design-systems
+  - wabi-sabi
+  - earthen
+  - imperfection
+visualDna:
+  aesthetic: 'Wabi-sabi interior: rough earthen plaster, patched and repaired surfaces, weathered timber and unmatched handmade ceramics, beauty found in wear and asymmetry.'
+  subject_treatment: Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.
+  color_and_tone: Mud brown, ash grey, rust, lichen green and undyed flax; low saturation, soft dark values, nothing bright or new.
+  lighting_and_shadow: Single low side light from a small opening, deep soft darkness, surfaces read by raking light across their unevenness.
+  texture_and_material: Hand-smeared clay plaster with straw and cracks, charred or silver-weathered wood, gold-seamed repaired pottery, rough hemp and linen, stone worn smooth.
+  camera_and_composition: Keep the requested view; off-centre composition, one imperfect object close in the raking light, large dark areas left empty.
+  atmosphere_and_mood: Humble, melancholic and tender, time visible on every surface.
+  rendering_and_quality: Soft photograph in low light with fine texture detail and gentle grain, no gloss, polish or symmetry.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wabi-Sabi Earthen Interior as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: cracked clay plaster with straw; gold-seamed repaired ceramics; silver-weathered timber; single raking side light; off-centre asymmetry
+avoidRules:
+  - furniture catalog staging
+  - olive branch in a vase as default decor
+  - panoramic window view as default backdrop
+  - real designer furniture replicas
+  - replacing the requested room with a living room
+  - glossy new finishes
+  - perfect symmetry
+  - bright saturated color
+  - tatami module layout
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, glossy new finishes, perfect symmetry, bright saturated color, tatami module layout, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: interior-design-systems
+  categoryName: 1. Interior Design Systems
+  tags:
+    - architecture-and-interior
+    - interior-design-systems
+    - wabi-sabi
+    - earthen
+    - imperfection
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: wabi-sabi imperfection interior

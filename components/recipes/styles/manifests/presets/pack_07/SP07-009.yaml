@@ -3,7 +3,7 @@ id: SP07-009
 packId: pack_07
 name: Gothic Revival
 category: 2. Architectural Movements And Vernaculars
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,73 +12,28 @@ tags:
   - architecture-and-interior
   - architectural-movements-and-vernaculars
 visualDna:
-  aesthetic: >-
-    Gothic Revival acts as a transferable architecture/interior router: carved limestone, ribbed
-    verticals, muted stained-glass color projection, cold iron; fuse it with architectural movement
-    grammar with tectonic mass, historical or speculative lineage, facade logic, ornament
-    discipline, and structural silhouette; route spatial grammar, material behavior, scale,
-    ornament, and light over prompt X without requiring the default sample anchor, fixed spatial
-    set, landscape setup, or object sample.
-  subject_treatment: >-
-    Preserve prompt subject, action, and context while translating any requested subject through
-    load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and
-    movement-specific silhouette translation; treat carved limestone, ribbed verticals, muted
-    stained-glass color projection, cold iron as massing, edge, surface, joinery, threshold, or
-    ornament behavior rather than a mandatory building scene.
-  color_and_tone: >-
-    Map color through period or movement-authentic base color, stone or envelope values, restrained
-    accent hierarchy, metal or glass notes, and clear mass separation; let source cues such as
-    carved limestone, ribbed verticals, muted stained-glass color projection, cold iron decide
-    accent hierarchy, material temperature, and value separation while staying attached to the
-    requested content.
-  lighting_and_shadow: >-
-    Use raking architectural light, deep reveal shadow, facade-edge rim, material bounce, and
-    scale-defining contrast; make light reveal joints, relief, material depth, scale, and atmosphere
-    from carved limestone, ribbed verticals, muted stained-glass color projection, cold iron without
-    replacing prompt X with a stock architectural render.
-  texture_and_material: >-
-    Render stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering,
-    and envelope surface response; prioritize the tactile signals in carved limestone, ribbed
-    verticals, muted stained-glass color projection, cold iron, with believable surface response,
-    denoised grain, coherent wear, and no generic wallpaper texture.
-  camera_and_composition: >-
-    Frame through elevation fragments, sectional cuts, cropped facade anchors, axial or broken
-    symmetry, scale cues, and movement-readable massing; convert carved limestone, ribbed verticals,
-    muted stained-glass color projection, cold iron into reusable perspective, crop, depth, section,
-    modular rhythm, and negative-space rules instead of one fixed style sample layout.
-  atmosphere_and_mood: >-
-    Carry mood through historical authority, civic ambition, domestic craft, experimental
-    instability, or optimistic futurity carried by architecture itself; the preset can support
-    adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X
-    asks for them while keeping the architectural identity readable.
-  rendering_and_quality: >-
-    Finish with clean built-form finish with readable structure, no postcard landmark dependency, no
-    tourist facade copy, and no text or logo artifacts; keep clean denoise, legible construction,
-    stable object or anatomy structure when applicable, no watermark, no fake readable text, no
-    logo, no camera prop, and no prompt-literal card copy.
-  key_features: >-
-    carved limestone, ribbed verticals, muted stained-glass color projection, cold iron;
-    load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and
-    movement-specific silhouette translation; stone, concrete, plaster, timber, glass, metal,
-    masonry, tile, craft detail, weathering, and envelope surface response; elevation fragments,
-    sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and
-    movement-readable massing
-  creative_brief: >-
-    Apply Gothic Revival after prompt X as a transferable architecture/interior style layer: prompt
-    X supplies subject, action, setting, tone, and intensity, while this preset supplies carved
-    limestone, ribbed verticals, muted stained-glass color projection, cold iron, architectural
-    movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament
-    discipline, and structural silhouette, material discipline, spatial grammar, and negative
-    controls without requiring a single spatial sample, product-photo setup, aisle-like default, or
-    empty abstraction.
+  aesthetic: 'Gothic Revival architecture: pointed arches, lancet and traceried windows, buttresses, steep roofs with pinnacles and crockets, applied with nineteenth-century precision.'
+  subject_treatment: Keep the requested building type, site, camera and any reference massing; in preserve mode re-clad only facade materials, openings, ornament and finish, and rebuild roof, massing and structure in this system only when a redesign is requested.
+  color_and_tone: Pale limestone ashlar or polychrome red and yellow brick banding, slate-grey roofs, dark leaded glass; muted overall with stained glass colour inside.
+  lighting_and_shadow: Soft overcast or low slanting light that deepens tracery and buttress shadows; interiors lit in coloured shafts from stained glass.
+  texture_and_material: Dressed limestone with sharp mouldings, carved crockets and finials, polychrome brick, slate roofs, cast-iron cresting, leaded stained glass.
+  camera_and_composition: Keep the requested view; strong verticals, pointed arches framing depth, spires or gables breaking the skyline.
+  atmosphere_and_mood: Aspiring, solemn and romantic, piety rendered in stone.
+  rendering_and_quality: Detailed architectural photograph with legible tracery and moulding, straight verticals, no ruin or horror decay unless requested.
+  key_features: pointed lancet arches; stone tracery windows; pinnacles and crockets; polychrome brick banding; steep slate roofs
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gothic Revival as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
-  - modern
+  - golden-hour hero facade formula
+  - copy of a named landmark
+  - mixing construction systems of different movements
+  - invented cultural symbols
+  - costumed tourist staging
+  - horror ruin
+  - readable religious text
+  - flat modern cladding
   - bright
   - simple
-  - horror ruin
-  - cathedral nave corridor
   - candle/lamp hero
-  - pew rows
   - readable religious icon/text
   - market aisle
   - library aisle
@@ -86,10 +41,8 @@ avoidRules:
   - empty abstraction
   - named landmark copy
   - tourist postcard
-  - generic facade
   - readable signage
   - fixed building-only scene
-  - mandatory interior interior zones
   - corridor perspective
   - furniture showroom
   - prompt-required card
@@ -98,15 +51,16 @@ avoidRules:
   - watermark
   - mandatory interior set
   - prompt-literal card
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-009.webp
 attributes:
-  negativePrompt: >-
-    modern, bright, simple, horror ruin, cathedral nave corridor, candle/lamp hero, pew rows,
-    readable religious icon/text, market aisle, library aisle, camera prop, empty abstraction, named
-    landmark copy, tourist postcard, generic facade, readable signage, fixed building-only scene,
-    mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required
-    card, readable text, logo, watermark, mandatory interior set, prompt-literal card
+  negativePrompt: golden-hour hero facade formula, copy of a named landmark, mixing construction systems of different movements, invented cultural symbols, costumed tourist staging, horror ruin, readable religious text, flat modern cladding, bright, simple, candle/lamp hero, readable religious icon/text, market aisle, library aisle, camera prop, empty abstraction, named landmark copy, tourist postcard, readable signage, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

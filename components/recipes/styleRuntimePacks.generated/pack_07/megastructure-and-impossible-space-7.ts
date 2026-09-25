@@ -8,28 +8,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Futuristic Pod',
     category: '7. Megastructure And Impossible Space',
     negativePrompt:
-      'old, dirty, square corners, spaceship cockpit, control interior zones, central console, chair focus, bed pod scene, corridor tunnel, market aisle, library aisle, camera prop, empty abstraction, cockpit or control interior zones, named franchise interior, spaceship corridor, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card',
+      'black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, cloud city backdrop, orbital ring backdrop, old, dirty, square corners, spaceship cockpit, control interior zones, central console, chair focus, bed pod scene, corridor tunnel, market aisle, library aisle, camera prop, empty abstraction, cockpit or control interior zones, named franchise interior, spaceship corridor, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Futuristic Pod acts as a transferable architecture/interior router: cornerless white polymer, embedded soft cyan light, seamless joints, ergonomic curved threshold; fuse it with megastructure and impossible-space grammar with macro scale, recursive surfaces, habitat logic, optical paradox, and spatial contradiction; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Pod architecture: rooms and shells molded as cornerless white polymer capsules with seamless joints, rounded thresholds and soft cyan light embedded in the seams.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through civilization-scale shell logic, recursive modules, curved habitat bands, monolithic severity, non-euclidean transitions, and compact utility systems; treat cornerless white polymer, embedded soft cyan light, seamless joints, ergonomic curved threshold as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested subject, action and geometry stable; this preset owns the seamless capsule enclosure and its molded polymer surfaces, and it never bends, loops or breaks the requested structure.',
       color_and_tone:
-        'Map color through near-black structure, solar gold, technical beige, copper-brass, cyan or blue glow, graphite ribs, and controlled atmospheric haze; let source cues such as cornerless white polymer, embedded soft cyan light, seamless joints, ergonomic curved threshold decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Gloss white and pale grey with soft cyan seam glow and one warm accent material such as tan upholstery; very high key.',
       lighting_and_shadow:
-        'Use rim light at scale, utility panel glow, star or solar emission, soft beacon light, paradox shadow, and depth-defining atmospheric falloff; make light reveal joints, relief, material depth, scale, and atmosphere from cornerless white polymer, embedded soft cyan light, seamless joints, ergonomic curved threshold without replacing prompt X with a stock architectural render.',
+        'Indirect cove light from recessed seams, almost shadowless, gentle gradients along the curved walls.',
       texture_and_material:
-        'Render technical panels, copper-brass surfaces, graphite fins, matte black planes, circular hatches, retention straps, tactile glass, and braided cabling; prioritize the tactile signals in cornerless white polymer, embedded soft cyan light, seamless joints, ergonomic curved threshold, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Glossy molded polymer, generous fillets instead of corners, no visible screws, grout or panel gaps.',
       camera_and_composition:
-        'Frame through macro-detail framing, looped circulation, horizon wrap, radial collector geometry, repeated modules, impossible thresholds, and severe scale cues; convert cornerless white polymer, embedded soft cyan light, seamless joints, ergonomic curved threshold into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through awe, utility, paradox, spatial uncanniness, engineered civilization, or symbolic restraint without forcing a cockpit/control-room scene; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested layout and view; every edge becomes a radius and openings become rounded ovals.',
+      atmosphere_and_mood: 'Calm, clinical and optimistic, a future that has been sanded smooth.',
       rendering_and_quality:
-        'Finish with clean impossible-space finish with coherent recursion, scale readability, no named franchise interior, no central-console dependency; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Clean product-grade render with soft reflections; no clouds, rings or orbital setting added by default.',
       key_features:
-        'cornerless white polymer, embedded soft cyan light, seamless joints, ergonomic curved threshold; civilization-scale shell logic, recursive modules, curved habitat bands, monolithic severity, non-euclidean transitions, and compact utility systems; technical panels, copper-brass surfaces, graphite fins, matte black planes, circular hatches, retention straps, tactile glass, and braided cabling; macro-detail framing, looped circulation, horizon wrap, radial collector geometry, repeated modules, impossible thresholds, and severe scale cues',
+        'cornerless white polymer shells; seamless molded joints; rounded oval thresholds; cyan seam glow; shadowless cove light',
       creative_brief:
-        'Apply Futuristic Pod after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies cornerless white polymer, embedded soft cyan light, seamless joints, ergonomic curved threshold, megastructure and impossible-space grammar with macro scale, recursive surfaces, habitat logic, optical paradox, and spatial contradiction, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Futuristic Pod as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +36,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Orbital Utility Habitat',
     category: '7. Megastructure And Impossible Space',
     negativePrompt:
-      'wood, brick, cockpit/control-interior zones hero, astronaut/person, readable labels, logos, UI screens, camera prop, empty abstraction, cockpit or control interior zones, central console, named franchise interior, spaceship corridor, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, market aisle, library aisle, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card',
+      'black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, ornate gold station exterior, wood, brick, cockpit/control-interior zones hero, astronaut/person, readable labels, logos, UI screens, camera prop, empty abstraction, cockpit or control interior zones, central console, named franchise interior, spaceship corridor, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, market aisle, library aisle, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card, text, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Orbital Utility Habitat acts as a transferable architecture/interior router: circular hatch geometry, retention straps, hook-and-loop blue, equipment beige, technical panel seams, clipped utility lighting; fuse it with megastructure and impossible-space grammar with macro scale, recursive surfaces, habitat logic, optical paradox, and spatial contradiction; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Working space-station interior: beige equipment racks, circular hatches, blue hook-and-loop patches and retention straps, cables bungeed to every wall and no up or down.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through civilization-scale shell logic, recursive modules, curved habitat bands, monolithic severity, non-euclidean transitions, and compact utility systems; treat circular hatch geometry, retention straps, hook-and-loop blue, equipment beige, technical panel seams as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested subject, action and geometry stable; this preset owns the microgravity utility-module surfaces, stowage and floating clutter, and it never bends, loops or breaks the requested structure.',
       color_and_tone:
-        'Map color through near-black structure, solar gold, technical beige, copper-brass, cyan or blue glow, graphite ribs, and controlled atmospheric haze; let source cues such as circular hatch geometry, retention straps, hook-and-loop blue, equipment beige, technical panel seams decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Equipment beige, off-white, hook-and-loop blue and cable grey, with small red and yellow handle accents; low contrast.',
       lighting_and_shadow:
-        'Use rim light at scale, utility panel glow, star or solar emission, soft beacon light, paradox shadow, and depth-defining atmospheric falloff; make light reveal joints, relief, material depth, scale, and atmosphere from circular hatch geometry, retention straps, hook-and-loop blue, equipment beige, technical panel seams without replacing prompt X with a stock architectural render.',
+        'Flat fluorescent strip panels, few shadows, one porthole spilling cool planet light across the clutter.',
       texture_and_material:
-        'Render technical panels, copper-brass surfaces, graphite fins, matte black planes, circular hatches, retention straps, tactile glass, and braided cabling; prioritize the tactile signals in circular hatch geometry, retention straps, hook-and-loop blue, equipment beige, technical panel seams, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Velcro fuzz, fabric stowage bags, screwed panels, bungee cords, scuffed handrails; labels left blank.',
       camera_and_composition:
-        'Frame through macro-detail framing, looped circulation, horizon wrap, radial collector geometry, repeated modules, impossible thresholds, and severe scale cues; convert circular hatch geometry, retention straps, hook-and-loop blue, equipment beige, technical panel seams into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
+        'Keep the requested layout; objects float tethered, gear is clipped to walls and ceiling alike.',
       atmosphere_and_mood:
-        'Carry mood through awe, utility, paradox, spatial uncanniness, engineered civilization, or symbolic restraint without forcing a cockpit/control-room scene; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Cramped, practical and lived-in, a workplace where nothing can be put down.',
       rendering_and_quality:
-        'Finish with clean impossible-space finish with coherent recursion, scale readability, no named franchise interior, no central-console dependency; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Documentary interior photograph realism; never an ornate gold station exterior.',
       key_features:
-        'circular hatch geometry, retention straps, hook-and-loop blue, equipment beige, technical panel seams; civilization-scale shell logic, recursive modules, curved habitat bands, monolithic severity, non-euclidean transitions, and compact utility systems; technical panels, copper-brass surfaces, graphite fins, matte black planes, circular hatches, retention straps, tactile glass, and braided cabling; macro-detail framing, looped circulation, horizon wrap, radial collector geometry, repeated modules, impossible thresholds, and severe scale cues',
+        'beige equipment racks; circular hatches; blue hook-and-loop patches and straps; floating tethered objects; flat fluorescent strip light',
       creative_brief:
-        'Apply Orbital Utility Habitat after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies circular hatch geometry, retention straps, hook-and-loop blue, equipment beige, technical panel seams, clipped utility lighting, megastructure and impossible-space grammar with macro scale, recursive surfaces, habitat logic, optical paradox, and spatial contradiction, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Orbital Utility Habitat as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +65,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Aerostatic Cloud Retrofuture',
     category: '7. Megastructure And Impossible Space',
     negativePrompt:
-      'flat ground-level city, airport terminal lock, terrestrial baseplate, airport terminal, flat ground city, people, aircraft cockpit, market aisle, library aisle, corridor, empty abstraction, cockpit or control interior zones, central console, named franchise interior, spaceship corridor, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
+      'black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, dark gritty sci-fi, ground-level city, flat ground-level city, airport terminal lock, terrestrial baseplate, airport terminal, flat ground city, people, aircraft cockpit, market aisle, library aisle, corridor, empty abstraction, cockpit or control interior zones, central console, named franchise interior, spaceship corridor, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Aerostatic Cloud Retrofuture acts as a transferable architecture/interior router: pearl ivory superstructure, champagne metallic seams, soft perimeter beacons, sunset cloud haze; fuse it with megastructure and impossible-space grammar with macro scale, recursive surfaces, habitat logic, optical paradox, and spatial contradiction; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Buoyant retrofuture architecture: pearl-ivory streamline superstructures held aloft on gas envelopes and ring platforms above a sea of clouds, champagne metal seams and perimeter beacons.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through civilization-scale shell logic, recursive modules, curved habitat bands, monolithic severity, non-euclidean transitions, and compact utility systems; treat pearl ivory superstructure, champagne metallic seams, soft perimeter beacons, sunset cloud haze as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested subject, action and geometry stable; this preset owns the airborne platform setting above the clouds and the streamline finish, and it never bends, loops or breaks the requested structure.',
       color_and_tone:
-        'Map color through near-black structure, solar gold, technical beige, copper-brass, cyan or blue glow, graphite ribs, and controlled atmospheric haze; let source cues such as pearl ivory superstructure, champagne metallic seams, soft perimeter beacons, sunset cloud haze decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Pearl ivory, champagne gold, sunset peach and lavender clouds; soft pastel gradients with no black.',
       lighting_and_shadow:
-        'Use rim light at scale, utility panel glow, star or solar emission, soft beacon light, paradox shadow, and depth-defining atmospheric falloff; make light reveal joints, relief, material depth, scale, and atmosphere from pearl ivory superstructure, champagne metallic seams, soft perimeter beacons, sunset cloud haze without replacing prompt X with a stock architectural render.',
+        'Low sunset side light, clouds glowing from below, soft beacon points along every rim.',
       texture_and_material:
-        'Render technical panels, copper-brass surfaces, graphite fins, matte black planes, circular hatches, retention straps, tactile glass, and braided cabling; prioritize the tactile signals in pearl ivory superstructure, champagne metallic seams, soft perimeter beacons, sunset cloud haze, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Enamel-smooth ivory panels, brushed champagne seams, taut fabric gas envelopes with rib lines.',
       camera_and_composition:
-        'Frame through macro-detail framing, looped circulation, horizon wrap, radial collector geometry, repeated modules, impossible thresholds, and severe scale cues; convert pearl ivory superstructure, champagne metallic seams, soft perimeter beacons, sunset cloud haze into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through awe, utility, paradox, spatial uncanniness, engineered civilization, or symbolic restraint without forcing a cockpit/control-room scene; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested geometry; the cloud floor always lies below, with no ground or baseplate in view.',
+      atmosphere_and_mood: 'Serene, elegant and buoyant, mid-century optimism at altitude.',
       rendering_and_quality:
-        'Finish with clean impossible-space finish with coherent recursion, scale readability, no named franchise interior, no central-console dependency; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Airbrushed retro-futurist illustration polish with soft gradients and crisp streamline edges.',
       key_features:
-        'pearl ivory superstructure, champagne metallic seams, soft perimeter beacons, sunset cloud haze; civilization-scale shell logic, recursive modules, curved habitat bands, monolithic severity, non-euclidean transitions, and compact utility systems; technical panels, copper-brass surfaces, graphite fins, matte black planes, circular hatches, retention straps, tactile glass, and braided cabling; macro-detail framing, looped circulation, horizon wrap, radial collector geometry, repeated modules, impossible thresholds, and severe scale cues',
+        'pearl-ivory streamline forms; gas envelopes and ring platforms; champagne metal seams; cloud sea below; airbrushed sunset gradients',
       creative_brief:
-        'Apply Aerostatic Cloud Retrofuture after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies pearl ivory superstructure, champagne metallic seams, soft perimeter beacons, sunset cloud haze, megastructure and impossible-space grammar with macro scale, recursive surfaces, habitat logic, optical paradox, and spatial contradiction, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Aerostatic Cloud Retrofuture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +93,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Impossible Circulation Optical Paradox',
     category: '7. Megastructure And Impossible Space',
     negativePrompt:
-      'logical physics, generic staircase-only scene, fantasy castle, library aisle, market aisle, corridor tunnel, readable text, camera prop, empty abstraction, cockpit or control interior zones, central console, named franchise interior, spaceship corridor, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, logo, watermark, mandatory interior set, prompt-literal card',
+      'black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, lithograph linework, tessellated animals, logical physics, generic staircase-only scene, fantasy castle, library aisle, market aisle, corridor tunnel, readable text, camera prop, empty abstraction, cockpit or control interior zones, central console, named franchise interior, spaceship corridor, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, logo, watermark, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Impossible Circulation Optical Paradox acts as a transferable architecture/interior router: impossible-circulation optical-paradox style sample with impossible architectural loop, contradictory gravity planes, invertible arches, lithographic paper grain, precise ink linework; fuse it with megastructure and impossible-space grammar with macro scale, recursive surfaces, habitat logic, optical paradox, and spatial contradiction; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Impossible circulation: stairs, ramps and walkways that connect into closed loops, climbing forever yet returning to their start, built as solid architecture.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through civilization-scale shell logic, recursive modules, curved habitat bands, monolithic severity, non-euclidean transitions, and compact utility systems; treat impossible-circulation optical-paradox style sample with impossible architectural loop, contradictory gravity planes, invertible arches, lithographic paper grain, precise ink linework as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested subject recognisable; this preset openly changes its structure into a closed impossible circulation loop of stairs, ramps or channels, and that advertised structural change is the purpose of the preset.',
       color_and_tone:
-        'Map color through near-black structure, solar gold, technical beige, copper-brass, cyan or blue glow, graphite ribs, and controlled atmospheric haze; let source cues such as impossible-circulation optical-paradox style sample with impossible architectural loop, contradictory gravity planes, invertible arches, lithographic paper grain, precise ink linework decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Pale board-formed concrete, warm limestone and clear sky blue; calm, even and believable.',
       lighting_and_shadow:
-        'Use rim light at scale, utility panel glow, star or solar emission, soft beacon light, paradox shadow, and depth-defining atmospheric falloff; make light reveal joints, relief, material depth, scale, and atmosphere from impossible-circulation optical-paradox style sample with impossible architectural loop, contradictory gravity planes, invertible arches, lithographic paper grain, precise ink linework without replacing prompt X with a stock architectural render.',
+        'One consistent midday sun with crisp shadows, making the impossible connections look physically real.',
       texture_and_material:
-        'Render technical panels, copper-brass surfaces, graphite fins, matte black planes, circular hatches, retention straps, tactile glass, and braided cabling; prioritize the tactile signals in impossible-circulation optical-paradox style sample with impossible architectural loop, contradictory gravity planes, invertible arches, lithographic paper grain, precise ink linework, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Board-formed concrete, worn stair nosings, limestone treads, simple iron railings.',
       camera_and_composition:
-        'Frame through macro-detail framing, looped circulation, horizon wrap, radial collector geometry, repeated modules, impossible thresholds, and severe scale cues; convert impossible-circulation optical-paradox style sample with impossible architectural loop, contradictory gravity planes, invertible arches, lithographic paper grain, precise ink linework into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
+        'Elevated near-isometric view chosen so the loop closes exactly at the viewpoint.',
       atmosphere_and_mood:
-        'Carry mood through awe, utility, paradox, spatial uncanniness, engineered civilization, or symbolic restraint without forcing a cockpit/control-room scene; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Calm and quietly dizzying, a structure that makes sense until it does not.',
       rendering_and_quality:
-        'Finish with clean impossible-space finish with coherent recursion, scale readability, no named franchise interior, no central-console dependency; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Architectural photograph realism, not lithograph linework or tessellated print, which belongs to Escher Style.',
       key_features:
-        'impossible-circulation optical-paradox style sample with impossible architectural loop, contradictory gravity planes, invertible arches, lithographic paper grain, precise ink linework; civilization-scale shell logic, recursive modules, curved habitat bands, monolithic severity, non-euclidean transitions, and compact utility systems; technical panels, copper-brass surfaces, graphite fins, matte black planes, circular hatches, retention straps, tactile glass, and braided cabling; macro-detail framing, looped circulation, horizon wrap, radial collector geometry, repeated modules, impossible thresholds, and severe scale cues',
+        'closed circulation loops; endlessly ascending stairs; built concrete and limestone; consistent midday sun; elevated near-isometric view',
       creative_brief:
-        'Apply Impossible Circulation Optical Paradox after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies impossible-circulation optical-paradox style sample with impossible architectural loop, contradictory gravity planes, invertible arches, lithographic paper grain, precise ink linework, megastructure and impossible-space grammar with macro scale, recursive surfaces, habitat logic, optical paradox, and spatial contradiction, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Impossible Circulation Optical Paradox as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +122,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Stellar Shell Megastructure',
     category: '7. Megastructure And Impossible Space',
     negativePrompt:
-      'ground-level planetary landscape lock, ordinary planet surface, ground landscape, spaceship cockpit, astronaut/person, market aisle, library aisle, corridor, empty abstraction, cockpit or control interior zones, central console, named franchise interior, spaceship corridor, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
+      'black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, ornate gold filigree, ground-level planet surface, ground-level planetary landscape lock, ordinary planet surface, ground landscape, spaceship cockpit, astronaut/person, market aisle, library aisle, corridor, empty abstraction, cockpit or control interior zones, central console, named franchise interior, spaceship corridor, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Stellar Shell Megastructure acts as a transferable architecture/interior router: near-black structural ribs, solar gold emission, hex-panel tiling, corona rim light, graphite heat fins; fuse it with megastructure and impossible-space grammar with macro scale, recursive surfaces, habitat logic, optical paradox, and spatial contradiction; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Stellar shell megastructure: a star enclosed by a shell or swarm of near-black hexagonal panels and graphite heat fins, solar gold light leaking through every gap.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through civilization-scale shell logic, recursive modules, curved habitat bands, monolithic severity, non-euclidean transitions, and compact utility systems; treat near-black structural ribs, solar gold emission, hex-panel tiling, corona rim light, graphite heat fins as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested subject, action and geometry stable; this preset owns the star-enclosing shell setting and its planet-sized scale, and it never bends, loops or breaks the requested structure.',
       color_and_tone:
-        'Map color through near-black structure, solar gold, technical beige, copper-brass, cyan or blue glow, graphite ribs, and controlled atmospheric haze; let source cues such as near-black structural ribs, solar gold emission, hex-panel tiling, corona rim light, graphite heat fins decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Graphite black panels, molten solar gold and white-hot corona; the only colors are black, gold and white.',
       lighting_and_shadow:
-        'Use rim light at scale, utility panel glow, star or solar emission, soft beacon light, paradox shadow, and depth-defining atmospheric falloff; make light reveal joints, relief, material depth, scale, and atmosphere from near-black structural ribs, solar gold emission, hex-panel tiling, corona rim light, graphite heat fins without replacing prompt X with a stock architectural render.',
+        'The star as a single blinding backlight; panels silhouetted, corona rim light on every edge.',
       texture_and_material:
-        'Render technical panels, copper-brass surfaces, graphite fins, matte black planes, circular hatches, retention straps, tactile glass, and braided cabling; prioritize the tactile signals in near-black structural ribs, solar gold emission, hex-panel tiling, corona rim light, graphite heat fins, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Hexagonal panel tiling, ribbed heat fins, micrometeor pitting and panel gaps at planetary scale.',
       camera_and_composition:
-        'Frame through macro-detail framing, looped circulation, horizon wrap, radial collector geometry, repeated modules, impossible thresholds, and severe scale cues; convert near-black structural ribs, solar gold emission, hex-panel tiling, corona rim light, graphite heat fins into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through awe, utility, paradox, spatial uncanniness, engineered civilization, or symbolic restraint without forcing a cockpit/control-room scene; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested geometry; the curvature of the shell and tiny scale cues convey planet-sized distance.',
+      atmosphere_and_mood: 'Awesome, cold and silent, engineering on the scale of a star.',
       rendering_and_quality:
-        'Finish with clean impossible-space finish with coherent recursion, scale readability, no named franchise interior, no central-console dependency; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Hard-edged space rendering with controlled bloom; no ornate gold filigree or baroque trim.',
       key_features:
-        'near-black structural ribs, solar gold emission, hex-panel tiling, corona rim light, graphite heat fins; civilization-scale shell logic, recursive modules, curved habitat bands, monolithic severity, non-euclidean transitions, and compact utility systems; technical panels, copper-brass surfaces, graphite fins, matte black planes, circular hatches, retention straps, tactile glass, and braided cabling; macro-detail framing, looped circulation, horizon wrap, radial collector geometry, repeated modules, impossible thresholds, and severe scale cues',
+        'near-black hexagonal shell panels; graphite heat fins; solar gold leaking through gaps; corona rim light; planet-scale curvature',
       creative_brief:
-        'Apply Stellar Shell Megastructure after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies near-black structural ribs, solar gold emission, hex-panel tiling, corona rim light, graphite heat fins, megastructure and impossible-space grammar with macro scale, recursive surfaces, habitat logic, optical paradox, and spatial contradiction, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stellar Shell Megastructure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +150,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Orbital Ribbon Habitat',
     category: '7. Megastructure And Impossible Space',
     negativePrompt:
-      'globe, globe view, ordinary planet surface, spacecraft cockpit, astronaut/person, market aisle, library aisle, corridor, empty abstraction, cockpit or control interior zones, central console, named franchise interior, spaceship corridor, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
+      'black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, globe seen from space, flat horizon, globe, globe view, ordinary planet surface, spacecraft cockpit, astronaut/person, market aisle, library aisle, corridor, empty abstraction, cockpit or control interior zones, central console, named franchise interior, spaceship corridor, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Orbital Ribbon Habitat acts as a transferable architecture/interior router: upward horizon wrap, linear biosphere strip, atmospheric blue haze, ocean-cyan bands, structural charcoal containment; fuse it with megastructure and impossible-space grammar with macro scale, recursive surfaces, habitat logic, optical paradox, and spatial contradiction; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Orbital ribbon habitat: a landscape laid on the inside of a vast ring, the ground rising into the sky on both sides, held in by charcoal containment walls.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through civilization-scale shell logic, recursive modules, curved habitat bands, monolithic severity, non-euclidean transitions, and compact utility systems; treat upward horizon wrap, linear biosphere strip, atmospheric blue haze, ocean-cyan bands, structural charcoal containment as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested subject, action and geometry stable; this preset owns the ring-habitat setting whose horizon curves upward, and it never bends, loops or breaks the requested structure.',
       color_and_tone:
-        'Map color through near-black structure, solar gold, technical beige, copper-brass, cyan or blue glow, graphite ribs, and controlled atmospheric haze; let source cues such as upward horizon wrap, linear biosphere strip, atmospheric blue haze, ocean-cyan bands, structural charcoal containment decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Ocean cyan bands, green and ochre land strips, atmospheric blue haze and charcoal walls; natural and airy.',
       lighting_and_shadow:
-        'Use rim light at scale, utility panel glow, star or solar emission, soft beacon light, paradox shadow, and depth-defining atmospheric falloff; make light reveal joints, relief, material depth, scale, and atmosphere from upward horizon wrap, linear biosphere strip, atmospheric blue haze, ocean-cyan bands, structural charcoal containment without replacing prompt X with a stock architectural render.',
+        'Sunlight falling from overhead through shade panels, the far arc of the ring hazed and bright.',
       texture_and_material:
-        'Render technical panels, copper-brass surfaces, graphite fins, matte black planes, circular hatches, retention straps, tactile glass, and braided cabling; prioritize the tactile signals in upward horizon wrap, linear biosphere strip, atmospheric blue haze, ocean-cyan bands, structural charcoal containment, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Real terrain, clouds and water on the near ground, fading to a map-like band as the ring rises away.',
       camera_and_composition:
-        'Frame through macro-detail framing, looped circulation, horizon wrap, radial collector geometry, repeated modules, impossible thresholds, and severe scale cues; convert upward horizon wrap, linear biosphere strip, atmospheric blue haze, ocean-cyan bands, structural charcoal containment into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through awe, utility, paradox, spatial uncanniness, engineered civilization, or symbolic restraint without forcing a cockpit/control-room scene; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested subject in the foreground; the horizon never falls away but always climbs upward.',
+      atmosphere_and_mood: 'Expansive and uncanny, the whole world overhead.',
       rendering_and_quality:
-        'Finish with clean impossible-space finish with coherent recursion, scale readability, no named franchise interior, no central-console dependency; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Naturalistic landscape rendering with correct aerial haze along the rising arc; never a globe view.',
       key_features:
-        'upward horizon wrap, linear biosphere strip, atmospheric blue haze, ocean-cyan bands, structural charcoal containment; civilization-scale shell logic, recursive modules, curved habitat bands, monolithic severity, non-euclidean transitions, and compact utility systems; technical panels, copper-brass surfaces, graphite fins, matte black planes, circular hatches, retention straps, tactile glass, and braided cabling; macro-detail framing, looped circulation, horizon wrap, radial collector geometry, repeated modules, impossible thresholds, and severe scale cues',
+        'horizon curving upward; landscape band overhead; charcoal containment walls; ocean-cyan strips; aerial haze along the arc',
       creative_brief:
-        'Apply Orbital Ribbon Habitat after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies upward horizon wrap, linear biosphere strip, atmospheric blue haze, ocean-cyan bands, structural charcoal containment, megastructure and impossible-space grammar with macro scale, recursive surfaces, habitat logic, optical paradox, and spatial contradiction, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Orbital Ribbon Habitat as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,28 +178,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cybernetic Hive Infrastructure',
     category: '7. Megastructure And Impossible Space',
     negativePrompt:
-      'featureless minimal surfaces, named faction, creature, spaceship corridor, cockpit/control interior zones, vehicle, surveillance camera, market aisle, library aisle, empty abstraction, cockpit or control interior zones, central console, named franchise interior, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
+      'black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, insect hive, creature, featureless minimal surfaces, named faction, spaceship corridor, cockpit/control interior zones, vehicle, surveillance camera, market aisle, library aisle, empty abstraction, cockpit or control interior zones, central console, named franchise interior, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Cybernetic Hive Infrastructure acts as a transferable architecture/interior router: cube-shell alcoves, dense conduit bundles, graphite panels, phosphor-green glow, recursive service grids; fuse it with megastructure and impossible-space grammar with macro scale, recursive surfaces, habitat logic, optical paradox, and spatial contradiction; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Cybernetic hive infrastructure: recursive grids of cube-shell alcoves stacked on service frames, dense conduit bundles and graphite panels, each cell lit phosphor green.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through civilization-scale shell logic, recursive modules, curved habitat bands, monolithic severity, non-euclidean transitions, and compact utility systems; treat cube-shell alcoves, dense conduit bundles, graphite panels, phosphor-green glow, recursive service grids as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested subject, action and geometry stable; this preset owns the recursive cube-cell grid and conduit surfaces, and it never bends, loops or breaks the requested structure.',
       color_and_tone:
-        'Map color through near-black structure, solar gold, technical beige, copper-brass, cyan or blue glow, graphite ribs, and controlled atmospheric haze; let source cues such as cube-shell alcoves, dense conduit bundles, graphite panels, phosphor-green glow, recursive service grids decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Graphite, black and phosphor green with pale steel conduit highlights; monochrome green on dark.',
       lighting_and_shadow:
-        'Use rim light at scale, utility panel glow, star or solar emission, soft beacon light, paradox shadow, and depth-defining atmospheric falloff; make light reveal joints, relief, material depth, scale, and atmosphere from cube-shell alcoves, dense conduit bundles, graphite panels, phosphor-green glow, recursive service grids without replacing prompt X with a stock architectural render.',
+        'Green glow from inside each cell, darkness between them, faint haze giving depth to the grid.',
       texture_and_material:
-        'Render technical panels, copper-brass surfaces, graphite fins, matte black planes, circular hatches, retention straps, tactile glass, and braided cabling; prioritize the tactile signals in cube-shell alcoves, dense conduit bundles, graphite panels, phosphor-green glow, recursive service grids, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Matte graphite panels, braided conduit bundles, cable trays, identical cube cells repeating to infinity.',
       camera_and_composition:
-        'Frame through macro-detail framing, looped circulation, horizon wrap, radial collector geometry, repeated modules, impossible thresholds, and severe scale cues; convert cube-shell alcoves, dense conduit bundles, graphite panels, phosphor-green glow, recursive service grids into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
+        'Keep the requested layout; walls become repeating cell grids receding in deep one-point perspective.',
       atmosphere_and_mood:
-        'Carry mood through awe, utility, paradox, spatial uncanniness, engineered civilization, or symbolic restraint without forcing a cockpit/control-room scene; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Relentless and mechanical, a place built for processes rather than people.',
       rendering_and_quality:
-        'Finish with clean impossible-space finish with coherent recursion, scale readability, no named franchise interior, no central-console dependency; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Precise hard-surface rendering with exact repetition; no concrete, no dusk sky, no gold.',
       key_features:
-        'cube-shell alcoves, dense conduit bundles, graphite panels, phosphor-green glow, recursive service grids; civilization-scale shell logic, recursive modules, curved habitat bands, monolithic severity, non-euclidean transitions, and compact utility systems; technical panels, copper-brass surfaces, graphite fins, matte black planes, circular hatches, retention straps, tactile glass, and braided cabling; macro-detail framing, looped circulation, horizon wrap, radial collector geometry, repeated modules, impossible thresholds, and severe scale cues',
+        'recursive cube-cell alcoves; conduit bundles on service frames; graphite panels; phosphor-green cell glow; deep one-point repetition',
       creative_brief:
-        'Apply Cybernetic Hive Infrastructure after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies cube-shell alcoves, dense conduit bundles, graphite panels, phosphor-green glow, recursive service grids, megastructure and impossible-space grammar with macro scale, recursive surfaces, habitat logic, optical paradox, and spatial contradiction, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cybernetic Hive Infrastructure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -211,28 +207,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Absolute Black Monolith',
     category: '7. Megastructure And Impossible Space',
     negativePrompt:
-      'ornamentation, recognizable cinematic monolith proportions, sci-fi portal, space scene, featureless black rectangle only, corridor, interior zones set, readable text, camera prop, empty abstraction, cockpit or control interior zones, central console, named franchise interior, spaceship corridor, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, market aisle, library aisle, prompt-required card, logo, watermark, mandatory interior set, prompt-literal card',
+      'black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, gold trim, panel detailing, ornamentation, recognizable cinematic monolith proportions, sci-fi portal, space scene, featureless black rectangle only, corridor, interior zones set, readable text, camera prop, empty abstraction, cockpit or control interior zones, central console, named franchise interior, spaceship corridor, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, market aisle, library aisle, prompt-required card, logo, watermark, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Absolute Black Monolith acts as a transferable architecture/interior router: matte black absorbent planes, faint silver edge light, austere scale cue, crisp shadow geometry; fuse it with megastructure and impossible-space grammar with macro scale, recursive surfaces, habitat logic, optical paradox, and spatial contradiction; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Absolute black monolith: architecture reduced to matte light-absorbing black volumes with no ornament, readable only by a faint silver edge light and its shadow.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through civilization-scale shell logic, recursive modules, curved habitat bands, monolithic severity, non-euclidean transitions, and compact utility systems; treat matte black absorbent planes, faint silver edge light, austere scale cue, crisp shadow geometry as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested subject, action and geometry stable; this preset owns the light-absorbing black material and the vast empty setting around it, and it never bends, loops or breaks the requested structure.',
       color_and_tone:
-        'Map color through near-black structure, solar gold, technical beige, copper-brass, cyan or blue glow, graphite ribs, and controlled atmospheric haze; let source cues such as matte black absorbent planes, faint silver edge light, austere scale cue, crisp shadow geometry decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Absolute black volumes against silver-grey sky and pale ground; no other color at all.',
       lighting_and_shadow:
-        'Use rim light at scale, utility panel glow, star or solar emission, soft beacon light, paradox shadow, and depth-defining atmospheric falloff; make light reveal joints, relief, material depth, scale, and atmosphere from matte black absorbent planes, faint silver edge light, austere scale cue, crisp shadow geometry without replacing prompt X with a stock architectural render.',
+        'Flat overcast light, a hairline silver highlight on one edge, a crisp pale shadow on the ground.',
       texture_and_material:
-        'Render technical panels, copper-brass surfaces, graphite fins, matte black planes, circular hatches, retention straps, tactile glass, and braided cabling; prioritize the tactile signals in matte black absorbent planes, faint silver edge light, austere scale cue, crisp shadow geometry, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Surfaces show no texture, reflection or detail; only the silhouette and the ground shadow describe form.',
       camera_and_composition:
-        'Frame through macro-detail framing, looped circulation, horizon wrap, radial collector geometry, repeated modules, impossible thresholds, and severe scale cues; convert matte black absorbent planes, faint silver edge light, austere scale cue, crisp shadow geometry into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through awe, utility, paradox, spatial uncanniness, engineered civilization, or symbolic restraint without forcing a cockpit/control-room scene; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested geometry; a vast empty ground and one tiny scale cue such as a tree or a boulder.',
+      atmosphere_and_mood: 'Austere, silent and ominous, an absence standing in the landscape.',
       rendering_and_quality:
-        'Finish with clean impossible-space finish with coherent recursion, scale readability, no named franchise interior, no central-console dependency; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Minimal photographic rendering with pure black planes; no panels, runes or ornament.',
       key_features:
-        'matte black absorbent planes, faint silver edge light, austere scale cue, crisp shadow geometry; civilization-scale shell logic, recursive modules, curved habitat bands, monolithic severity, non-euclidean transitions, and compact utility systems; technical panels, copper-brass surfaces, graphite fins, matte black planes, circular hatches, retention straps, tactile glass, and braided cabling; macro-detail framing, looped circulation, horizon wrap, radial collector geometry, repeated modules, impossible thresholds, and severe scale cues',
+        'matte light-absorbing black volume; hairline silver edge light; vast empty ground; one tiny scale cue; crisp pale shadow',
       creative_brief:
-        'Apply Absolute Black Monolith after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies matte black absorbent planes, faint silver edge light, austere scale cue, crisp shadow geometry, megastructure and impossible-space grammar with macro scale, recursive surfaces, habitat logic, optical paradox, and spatial contradiction, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Absolute Black Monolith as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -240,28 +235,445 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Dimensional Retrotech Surfaces',
     category: '7. Megastructure And Impossible Space',
     negativePrompt:
-      'required control interior zones, single central prop, named franchise interior, iconic control-interior zones layout, iconic control interior zones, central console, spaceship cabin, corridor, market aisle, library aisle, camera prop, empty abstraction, cockpit or control interior zones, spaceship corridor, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card',
+      'black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, circular wall roundels, central console room, steam venting, required control interior zones, single central prop, named franchise interior, iconic control-interior zones layout, iconic control interior zones, central console, spaceship cabin, corridor, market aisle, library aisle, camera prop, empty abstraction, cockpit or control interior zones, spaceship corridor, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Dimensional Retrotech Surfaces acts as a transferable architecture/interior router: circular modules, copper-brass panels, coral-like ribs, hex nodes, tactile glass glow, braided cabling; fuse it with megastructure and impossible-space grammar with macro scale, recursive surfaces, habitat logic, optical paradox, and spatial contradiction; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Analog space-age retrotech: interiors clad in copper and brass hexagonal nodes, organic coral-like ribs, glowing glass tubes and braided cable runs.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through civilization-scale shell logic, recursive modules, curved habitat bands, monolithic severity, non-euclidean transitions, and compact utility systems; treat circular modules, copper-brass panels, coral-like ribs, hex nodes, tactile glass glow as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested subject, action and geometry stable; this preset owns the retrotech wall, ceiling and fixture surfaces, and it never bends, loops or breaks the requested structure.',
       color_and_tone:
-        'Map color through near-black structure, solar gold, technical beige, copper-brass, cyan or blue glow, graphite ribs, and controlled atmospheric haze; let source cues such as circular modules, copper-brass panels, coral-like ribs, hex nodes, tactile glass glow decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Warm copper and brass, amber and teal glass glow, cream enamel; saturated warm with cool accents.',
       lighting_and_shadow:
-        'Use rim light at scale, utility panel glow, star or solar emission, soft beacon light, paradox shadow, and depth-defining atmospheric falloff; make light reveal joints, relief, material depth, scale, and atmosphere from circular modules, copper-brass panels, coral-like ribs, hex nodes, tactile glass glow without replacing prompt X with a stock architectural render.',
+        'Glow from glass tubes and backlit hex nodes, warm pools, soft shadows between the ribs.',
       texture_and_material:
-        'Render technical panels, copper-brass surfaces, graphite fins, matte black planes, circular hatches, retention straps, tactile glass, and braided cabling; prioritize the tactile signals in circular modules, copper-brass panels, coral-like ribs, hex nodes, tactile glass glow, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Brushed copper, patinated brass, frosted glass tubes, braided fabric cable, cream enamel panels.',
       camera_and_composition:
-        'Frame through macro-detail framing, looped circulation, horizon wrap, radial collector geometry, repeated modules, impossible thresholds, and severe scale cues; convert circular modules, copper-brass panels, coral-like ribs, hex nodes, tactile glass glow into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
+        'Keep the requested layout; ribs rise along the walls and hex-node clusters replace flat surfaces.',
       atmosphere_and_mood:
-        'Carry mood through awe, utility, paradox, spatial uncanniness, engineered civilization, or symbolic restraint without forcing a cockpit/control-room scene; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Warm, humming and exploratory, the future as a 1970s engineer imagined it.',
       rendering_and_quality:
-        'Finish with clean impossible-space finish with coherent recursion, scale readability, no named franchise interior, no central-console dependency; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Rich tactile interior rendering; no circular wall roundels, no central console, no steam.',
       key_features:
-        'circular modules, copper-brass panels, coral-like ribs, hex nodes, tactile glass glow; civilization-scale shell logic, recursive modules, curved habitat bands, monolithic severity, non-euclidean transitions, and compact utility systems; technical panels, copper-brass surfaces, graphite fins, matte black planes, circular hatches, retention straps, tactile glass, and braided cabling; macro-detail framing, looped circulation, horizon wrap, radial collector geometry, repeated modules, impossible thresholds, and severe scale cues',
+        'copper-brass hexagonal nodes; organic coral-like ribs; glowing glass tubes; braided cable runs; amber and teal glow',
       creative_brief:
-        'Apply Dimensional Retrotech Surfaces after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies circular modules, copper-brass panels, coral-like ribs, hex nodes, tactile glass glow, braided cabling, megastructure and impossible-space grammar with macro scale, recursive surfaces, habitat logic, optical paradox, and spatial contradiction, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dimensional Retrotech Surfaces as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP07-130',
+    name: 'Droste Recursive Room',
+    displayName: 'Droste Recursive Room',
+    styleAnchors: [
+      'Droste Recursive Room',
+      'self-containing recursive space',
+      'space containing its own copy',
+    ],
+    category: '7. Megastructure And Impossible Space',
+    domain: 'self-containing recursive space',
+    negativePrompt:
+      'black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, psychedelic color melt, mirror reflections instead of real recursion, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Droste recursion: the space contains a smaller exact copy of itself through a window, doorway or frame, which contains another, receding without end.',
+      subject_treatment:
+        'Keep the requested subject recognisable; this preset openly changes its structure into a self-containing recursion that repeats inside itself, and that advertised structural change is the purpose of the preset.',
+      color_and_tone:
+        'The scene palette repeated at every level, each recursion a step cooler and dimmer toward the center.',
+      lighting_and_shadow:
+        'One lighting setup repeated exactly at every level, so the copies read as the same place.',
+      texture_and_material:
+        'Materials stay identical at every scale until they blur into a point at the vanishing center.',
+      camera_and_composition:
+        'Frontal or spiral composition, the recursion centered or twisting inward on a Droste spiral.',
+      atmosphere_and_mood: 'Hypnotic and vertiginous, a room with no final wall.',
+      rendering_and_quality:
+        'Seamless recursion with no visible seam or collage frame; the copies are continuous space.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Droste Recursive Room as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'space containing its own copy; endless inward repetition; centered or spiral recursion; cooler dimmer levels; seamless continuity',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP07-131',
+    name: 'Folded-Horizon City',
+    displayName: 'Folded-Horizon City',
+    styleAnchors: [
+      'Folded-Horizon City',
+      'folded ground-plane paradox',
+      'ground hinging along a sharp crease',
+    ],
+    category: '7. Megastructure And Impossible Space',
+    domain: 'folded ground-plane paradox',
+    negativePrompt:
+      'black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, mirror reflection, smooth ring curve, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Folded horizon: the ground plane hinges upward along a sharp crease and folds over itself, streets and buildings continuing upside down overhead.',
+      subject_treatment:
+        'Keep the requested subject recognisable; this preset openly changes its structure into a ground plane folded along a hinge so the setting continues overhead, and that advertised structural change is the purpose of the preset.',
+      color_and_tone:
+        'Ordinary daylight neutrals of the place, with the overhead half slightly hazier and bluer.',
+      lighting_and_shadow:
+        'One sun lighting both halves consistently, so shadows point the same way on the folded plane.',
+      texture_and_material:
+        'The real materials of the requested setting, unchanged, only relocated by the fold.',
+      camera_and_composition:
+        'Horizon replaced by a crisp fold line; the upper half of the frame is the same world hanging overhead.',
+      atmosphere_and_mood: 'Disorienting and grand, the world closing like a book.',
+      rendering_and_quality:
+        'Photographic realism along a clean hinge, not a smooth ring curve or a mirror reflection.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Folded-Horizon City as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'ground hinging along a sharp crease; setting continuing upside down overhead; one consistent sun; fold line instead of horizon; hazier upper half',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP07-132',
+    name: 'Anamorphic Viewpoint Alignment',
+    displayName: 'Anamorphic Viewpoint Alignment',
+    styleAnchors: [
+      'Anamorphic Viewpoint Alignment',
+      'single-viewpoint anamorphic space',
+      'fragments at different depths',
+    ],
+    category: '7. Megastructure And Impossible Space',
+    domain: 'single-viewpoint anamorphic space',
+    negativePrompt:
+      'black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, flat graphic overlay, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Anamorphic alignment: fragments scattered through deep space line up into one perfect shape only from the camera position and are broken from anywhere else.',
+      subject_treatment:
+        'Keep the requested subject recognisable; this preset openly changes its structure into scattered fragments that assemble only from this single viewpoint, and that advertised structural change is the purpose of the preset.',
+      color_and_tone:
+        'One strong flat color or material for the aligned shape against the natural tones of the setting.',
+      lighting_and_shadow:
+        'Real light and shadows on each fragment betray their different depths while the shape stays unified.',
+      texture_and_material:
+        'Painted or built fragments on walls, floors, rocks and posts at very different distances.',
+      camera_and_composition:
+        'Locked at the single alignment point; small clues at the edges reveal the fragments are far apart.',
+      atmosphere_and_mood: 'Delightful and uncanny, a trick that only works right here.',
+      rendering_and_quality:
+        'Photographic realism with exact alignment; no flat overlay or composited graphic.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Anamorphic Viewpoint Alignment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'fragments at different depths; one perfect shape from one viewpoint; flat strong color; shadows revealing depth; edge clues to the trick',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP07-133',
+    name: 'Mobius Loop Architecture',
+    displayName: 'Mobius Loop Architecture',
+    styleAnchors: [
+      'Mobius Loop Architecture',
+      'single-surface twisted loop structure',
+      'band twisted once and joined',
+    ],
+    category: '7. Megastructure And Impossible Space',
+    domain: 'single-surface twisted loop structure',
+    negativePrompt:
+      'black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, figure-eight knot, broken surface seam, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Mobius architecture: a road, deck or building band twisted once and joined to itself, so its top surface flows onto its underside without an edge crossing.',
+      subject_treatment:
+        'Keep the requested subject recognisable; this preset openly changes its structure into a single-surface band with one twist that makes inside become outside, and that advertised structural change is the purpose of the preset.',
+      color_and_tone:
+        'Clean structural whites and greys with the functional colors of the surface, such as asphalt or lane paint.',
+      lighting_and_shadow:
+        'Sun catching the twist so the surface turns from light to shadow in one continuous gradient.',
+      texture_and_material:
+        'Continuous paving, railings or glazing that run unbroken across the twist.',
+      camera_and_composition:
+        'An angle that shows the whole loop and the twist, so the single surface can be followed with the eye.',
+      atmosphere_and_mood:
+        'Elegant, endless and slightly dizzying, a path that never reaches an edge.',
+      rendering_and_quality:
+        'Precise architectural rendering with continuous surface details that never jump.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mobius Loop Architecture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'band twisted once and joined; top flowing onto underside; continuous paving across the twist; whole-loop view; light-to-shadow gradient',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP07-134',
+    name: 'Colossal Scale Displacement',
+    displayName: 'Colossal Scale Displacement',
+    styleAnchors: [
+      'Colossal Scale Displacement',
+      'object-as-landscape scale paradox',
+      'ordinary object at landscape scale',
+    ],
+    category: '7. Megastructure And Impossible Space',
+    domain: 'object-as-landscape scale paradox',
+    negativePrompt:
+      'black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, tabletop miniature look, tilt-shift blur, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Colossal scale displacement: an ordinary object enlarged to the size of a hill or canyon and treated as terrain, with roads, trees and weather at its true scale.',
+      subject_treatment:
+        'Keep the requested subject recognisable; this preset openly changes its structure into the requested object enlarged to landscape scale and inhabited as terrain, and that advertised structural change is the purpose of the preset.',
+      color_and_tone:
+        'The object in its real colors, softened by aerial haze on its far parts like a mountain.',
+      lighting_and_shadow:
+        'Landscape light with cloud shadows sweeping across the object and long shadows at its base.',
+      texture_and_material:
+        'Object material at colossal scale: scratches as ravines, weathering, moss and small trees growing on it.',
+      camera_and_composition:
+        'A wide landscape view with tiny scale cues such as trees, roads or boats against the object.',
+      atmosphere_and_mood: 'Absurd and awe-struck, familiar things turned into geography.',
+      rendering_and_quality:
+        'Photographic landscape realism with correct haze and scale cues; never a tabletop miniature.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Colossal Scale Displacement as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'ordinary object at landscape scale; aerial haze on the object; tiny scale cues; cloud shadows; weathering and growth on its surface',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP07-135',
+    name: 'Multi-Gravity Block Cluster',
+    displayName: 'Multi-Gravity Block Cluster',
+    styleAnchors: [
+      'Multi-Gravity Block Cluster',
+      'local-gravity paradox',
+      'faces with their own gravity',
+    ],
+    category: '7. Megastructure And Impossible Space',
+    domain: 'local-gravity paradox',
+    negativePrompt:
+      'black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, lithograph linework, endless stair loop, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Multi-gravity cluster: blocks of a place floating together, each face with its own down, so trees, water and furniture obey the gravity of their own surface.',
+      subject_treatment:
+        'Keep the requested subject recognisable; this preset openly changes its structure into floating blocks whose faces each have their own gravity direction, and that advertised structural change is the purpose of the preset.',
+      color_and_tone:
+        'Natural palette of the setting with a soft sky surrounding the cluster on all sides.',
+      lighting_and_shadow:
+        'One sun lighting every face consistently, so shadows fall in many directions relative to each local ground.',
+      texture_and_material:
+        'Real ground surfaces on every face: turf, flagstones, water sheets pouring between faces.',
+      camera_and_composition:
+        'Show at least three faces with different downs, so the paradox is readable at a glance.',
+      atmosphere_and_mood: 'Playful and unsettling, several worlds sharing one block.',
+      rendering_and_quality: 'Photographic realism, not lithograph linework or a staircase loop.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Multi-Gravity Block Cluster as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'faces with their own gravity; trees and water obeying local down; floating block cluster; one consistent sun; three or more readable faces',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP07-136',
+    name: 'Terraced Arcology Pyramid',
+    displayName: 'Terraced Arcology Pyramid',
+    styleAnchors: [
+      'Terraced Arcology Pyramid',
+      'city-in-one-building megastructure',
+      'stepped pyramid city',
+    ],
+    category: '7. Megastructure And Impossible Space',
+    domain: 'city-in-one-building megastructure',
+    negativePrompt:
+      'black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, ancient temple pyramid, desert ruin, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Terraced arcology: an entire city built as one stepped pyramid, every slope lined with homes, farms and gardens, the hollow core a sunlit atrium.',
+      subject_treatment:
+        'Keep the requested subject, action and geometry stable; this preset owns the terraced pyramid megastructure and its city-scale setting, and it never bends, loops or breaks the requested structure.',
+      color_and_tone:
+        'Sand concrete, deep green crops and orchards, water glints and pale sky; warm and fertile.',
+      lighting_and_shadow:
+        'Raking morning sun across the terraces, each step casting a line of shadow on the one below.',
+      texture_and_material:
+        'Concrete terrace walls, irrigation channels, planted balconies, glass skylights into the atrium.',
+      camera_and_composition:
+        'Keep the requested geometry; the stepped slope and its thousands of terraces set the scale.',
+      atmosphere_and_mood: 'Hopeful, dense and green, a whole civilization in one building.',
+      rendering_and_quality:
+        'Detailed architectural visualization with legible terrace repetition; not a sterile line style.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Terraced Arcology Pyramid as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'stepped pyramid city; terraced farms and homes; hollow sunlit atrium; irrigation channels; raking morning sun',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP07-137',
+    name: 'Orbital Tether Anchor',
+    displayName: 'Orbital Tether Anchor',
+    styleAnchors: [
+      'Orbital Tether Anchor',
+      'space elevator megastructure',
+      'ribbon tether rising to orbit',
+    ],
+    category: '7. Megastructure And Impossible Space',
+    domain: 'space elevator megastructure',
+    negativePrompt:
+      'black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, giant beanstalk, rocket launch, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Space elevator: a single ribbon tether rising from an ocean anchor platform straight up through the atmosphere, climber cars crawling along it toward orbit.',
+      subject_treatment:
+        'Keep the requested subject, action and geometry stable; this preset owns the tether rising into orbit and its vast vertical scale, and it never bends, loops or breaks the requested structure.',
+      color_and_tone:
+        'Steel grey platform, ocean blue, a thin silver tether fading into deep blue then black at the top.',
+      lighting_and_shadow:
+        'Dawn light catching the upper tether long before the ocean below, a bright line into dark sky.',
+      texture_and_material:
+        'Braided ribbon cable, massive anchor bollards, sea spray, climber cars as small bright boxes.',
+      camera_and_composition:
+        'Keep the requested geometry; a strong vertical line of the tether vanishing to a point above.',
+      atmosphere_and_mood: 'Aspirational and vertiginous, a road that goes straight up.',
+      rendering_and_quality:
+        'Photographic realism with correct atmospheric fade along the tether; no fantasy beanstalk.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Orbital Tether Anchor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'ribbon tether rising to orbit; ocean anchor platform; climber cars; dawn light on the upper tether; vertical vanishing line',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP07-138',
+    name: 'Abyss-Span Bridge City',
+    displayName: 'Abyss-Span Bridge City',
+    styleAnchors: [
+      'Abyss-Span Bridge City',
+      'inhabited bridge megastructure',
+      'town built on a colossal bridge',
+    ],
+    category: '7. Megastructure And Impossible Space',
+    domain: 'inhabited bridge megastructure',
+    negativePrompt:
+      'black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, modern suspension bridge only, river below, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bridge city: an entire town built on a colossal bridge spanning a bottomless chasm, houses stacked on the deck and hanging beneath the arches.',
+      subject_treatment:
+        'Keep the requested subject, action and geometry stable; this preset owns the colossal bridge deck setting and the abyss beneath it, and it never bends, loops or breaks the requested structure.',
+      color_and_tone:
+        'Weathered stone greys, timber browns, warm window light and a blue-black void below; strong value drop.',
+      lighting_and_shadow:
+        'Daylight on the deck, deep shadow under the arches, the abyss fading to black with mist.',
+      texture_and_material:
+        'Massive masonry piers, timber galleries, chains and pulleys, laundry lines and hanging gardens.',
+      camera_and_composition:
+        'Keep the requested geometry; always show the drop below and the far chasm wall for scale.',
+      atmosphere_and_mood: 'Precarious and lively, a town that refuses to look down.',
+      rendering_and_quality: 'Detailed painterly realism with strong depth falloff into the chasm.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Abyss-Span Bridge City as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'town built on a colossal bridge; houses hanging under arches; bottomless chasm below; masonry piers; misty depth falloff',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP07-139',
+    name: 'Vertical Shaft Sinkhole City',
+    displayName: 'Vertical Shaft Sinkhole City',
+    styleAnchors: [
+      'Vertical Shaft Sinkhole City',
+      'inward-facing pit megastructure',
+      'city lining a cylindrical sinkhole',
+    ],
+    category: '7. Megastructure And Impossible Space',
+    domain: 'inward-facing pit megastructure',
+    negativePrompt:
+      'black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, open horizon, mine elevator cage, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Shaft city: a city lining the inner walls of a colossal cylindrical sinkhole, ring terraces spiraling down, the only sky a disc of light far above.',
+      subject_treatment:
+        'Keep the requested subject, action and geometry stable; this preset owns the cylindrical shaft setting and its inward-facing ring terraces, and it never bends, loops or breaks the requested structure.',
+      color_and_tone:
+        'Rock ochre and grey, warm lamp light on lower rings, a bright white sky disc; values darken with depth.',
+      lighting_and_shadow:
+        'Daylight falling from the opening and fading ring by ring, lamps taking over in the lower levels.',
+      texture_and_material:
+        'Raw rock walls, cantilevered platforms, spiral ramps, ropes and hanging greenery.',
+      camera_and_composition:
+        'Keep the requested geometry; circular rings frame the view, looking up to the sky disc or down into the dark.',
+      atmosphere_and_mood: 'Enclosed and communal, a city turned inside out.',
+      rendering_and_quality:
+        'Painterly realism with a smooth light gradient from opening to depth.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vertical Shaft Sinkhole City as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'city lining a cylindrical sinkhole; spiral ring terraces; bright sky disc overhead; light fading with depth; cantilevered platforms',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP07-140',
+    name: 'Ocean-Barrier Megadam',
+    displayName: 'Ocean-Barrier Megadam',
+    styleAnchors: [
+      'Ocean-Barrier Megadam',
+      'sea-holding dam megastructure',
+      'kilometre-high curved sea wall',
+    ],
+    category: '7. Megastructure And Impossible Space',
+    domain: 'sea-holding dam megastructure',
+    negativePrompt:
+      'black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, dam breach disaster, river dam only, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ocean megadam: a curved concrete wall kilometres high holding back a raised sea, spillway gates and buttresses dwarfing the land in its lee.',
+      subject_treatment:
+        'Keep the requested subject, action and geometry stable; this preset owns the ocean-holding dam and its overwhelming scale, and it never bends, loops or breaks the requested structure.',
+      color_and_tone:
+        'Wet grey concrete, dark sea green at the brim, pale spray and green lowland below; heavy and cold.',
+      lighting_and_shadow:
+        'Low sun behind the wall throwing the lowland into a vast shadow; spray catching light along the crest.',
+      texture_and_material:
+        'Streaked concrete, rust weeping from gates, algae lines at old water levels, spray mist.',
+      camera_and_composition:
+        'Keep the requested geometry; look up from the lowland so the wall fills the frame and the sea shows at the crest.',
+      atmosphere_and_mood: 'Precarious and monumental, calm life under a wall of water.',
+      rendering_and_quality:
+        'Photographic realism with correct haze at the top of the wall; no disaster breach unless asked.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ocean-Barrier Megadam as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'kilometre-high curved sea wall; ocean at the brim; buttresses and spillway gates; vast shadow over the lowland; spray at the crest',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

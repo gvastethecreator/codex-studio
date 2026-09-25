@@ -3,10 +3,10 @@ id: SP13-025
 packId: pack_05
 name: Upward Thunder Momentum Style
 styleAnchors:
-  - 'Upward Thunder Momentum Style'
-displayName: 'Upward Thunder Momentum'
+  - Upward Thunder Momentum Style
+displayName: Upward Thunder Momentum
 category: 5. Action Motion Setpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -16,44 +16,25 @@ tags:
   - anime
   - action
 visualDna:
-  aesthetic: >-
-    Use strong vertical spacing, rising rhythm, and directional force bands to emphasize upward
-    motion when it is part of the requested action. Preserve other requested motion directions and
-    use white-blue accents only where they fit the existing palette.
-  subject_treatment: >-
-    Preserve the requested subject identities and count, action, pose, props, wardrobe, setting,
-    and tone. Restyle only contour emphasis, gesture rhythm, and edge direction. Do not add, remove,
-    replace, or duplicate people, opponents, props, or scene elements.
-  color_and_tone: >-
-    Preserve the requested palette and emotional temperature. Where compatible, use restrained
-    white-blue accents and value separation to clarify vertical layers without recoloring the scene.
-  lighting_and_shadow: >-
-    Use directional highlights along existing forms to clarify height and motion. Follow the
-    requested lighting context; do not introduce lightning, flashes, sparks, or new light sources.
-  texture_and_material: >-
-    Keep surface detail controlled and attached to existing forms. Use fine vertical motion marks
-    only where the requested movement supports them; preserve requested materials and add no dust,
-    smoke, sparks, or debris unless requested.
-  camera_and_composition: >-
-    When the requested camera leaves room for interpretation, use vertical layering, height
-    contrast, and open space along the movement path. Emphasize bottom-to-top flow when the action
-    rises; keep the requested direction and viewpoint intact otherwise.
-  atmosphere_and_mood: >-
-    Let the requested tone lead. Create lift through spacing and line direction without imposing
-    danger, heroism, electrical force, or a more intense emotion than requested.
-  rendering_and_quality: >-
-    Use powerful but controlled contours, stable anatomy or object structure, and clear vertical
-    separation. Keep accents and motion marks subordinate to the requested subject and action.
-  key_features: >-
-    Vertical spacing, rising rhythm when appropriate, directional force bands, white-blue accents
-    where compatible, and clear preservation of the requested motion.
-  creative_brief: >-
-    Emphasize upward movement when requested through vertical spacing, force bands, and open headroom.
-    Preserve the requested subject, count, props, setting, action, and tone.
+  aesthetic: 'Anime action frame staged vertically: the subject rises through stacked horizontal layers of the scene seen from beside, with open space kept above it to pull the eye upward.'
+  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the tall vertical layering and rising side-view staging, and adds no opponent, sports gear, extra prop or danger.
+  color_and_tone: Keep the prompt palette; values lighten layer by layer toward the top, with restrained white-blue accents at the highest edges.
+  lighting_and_shadow: Directional highlights on upward-facing edges; no lightning, flashes or new light sources.
+  texture_and_material: Fine vertical motion marks under the rising subject only; surfaces stay clean and layered.
+  camera_and_composition: A tall portrait frame from a side-on or slight low angle, the subject in the lower half and at least a third of the frame left open above it.
+  atmosphere_and_mood: Lift and ascent carried by spacing and line direction, not by heroics.
+  rendering_and_quality: Powerful but controlled contours with clear vertical separation between layers.
+  key_features: stacked horizontal layers; subject rising from lower half; open space above; values lightening upward; side-on tall framing
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Upward Thunder Momentum Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - added opponent
+  - added sports gear
+  - invented danger or explosion
+  - extra props
+  - readable text
+  - franchise character likeness
   - photoreal
   - dull-palette
-  - calm-scene
   - watermark
   - logo
   - static pose
@@ -67,13 +48,16 @@ avoidRules:
   - prompt-required card
   - signature
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-025.webp
 attributes:
-  negativePrompt: >-
-    photoreal, dull-palette, calm-scene, watermark, logo, static pose, low-detail blur, photoreal
-    stunt photo, fixed canon character, title scene replication, required source-frame look,
-    cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, dull-palette, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

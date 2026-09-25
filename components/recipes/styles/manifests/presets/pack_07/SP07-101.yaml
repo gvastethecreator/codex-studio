@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP07-101
+packId: pack_07
+name: Cold War Bunker
+styleAnchors:
+  - Cold War Bunker
+  - Cold War bunker interior
+  - round steel blast doors
+displayName: Cold War Bunker
+category: 3. Civic Infrastructure And Specialty Spaces
+domain: Cold War bunker interior
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - civic-infrastructure-and-specialty-spaces
+  - bunker
+  - cold-war
+  - concrete
+visualDna:
+  aesthetic: 'Cold War bunker: a buried reinforced-concrete shelter of blast doors, air-filtration machinery, bunk rooms and control desks, painted in institutional colours and lit by caged lamps.'
+  subject_treatment: Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.
+  color_and_tone: Pale institutional green and cream paint, grey concrete, olive steel, a red stripe on valves, amber indicator lamps; muted and slightly sickly.
+  lighting_and_shadow: Caged incandescent bulbs and flickering fluorescent tubes, low ceilings with hard shadows, dark rooms beyond thick doorways.
+  texture_and_material: Round steel blast doors with wheel locks, thick concrete with painted lower walls, ducts and filtration housings, metal bunks, bakelite switches and analogue dials.
+  camera_and_composition: Keep the requested view; frame through a thick door opening, low ceiling pressing down, machinery lining the walls.
+  atmosphere_and_mood: Enclosed, anxious and waiting, a world sealed against the end.
+  rendering_and_quality: Low-light photograph with period analogue detail and worn paint, no readable signs or screens.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cold War Bunker as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: round steel blast doors; pale green painted concrete; caged bulbs and fluorescent tubes; air-filtration ducts; analogue dials
+avoidRules:
+  - one-point corridor perspective as default
+  - wet mirror-gloss floor as default
+  - turning the requested room into a station or library
+  - readable signage or wayfinding text
+  - readable signs
+  - modern flat screens
+  - weapons display
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, readable signs, modern flat screens, weapons display, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: civic-infrastructure-and-specialty-spaces
+  categoryName: 3. Civic Infrastructure And Specialty Spaces
+  tags:
+    - architecture-and-interior
+    - civic-infrastructure-and-specialty-spaces
+    - bunker
+    - cold-war
+    - concrete
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Cold War bunker interior

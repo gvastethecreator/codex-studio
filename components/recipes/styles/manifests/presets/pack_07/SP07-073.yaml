@@ -3,7 +3,7 @@ id: SP07-073
 packId: pack_07
 name: Subterranean Bio-Cutaway
 category: 6. Toy Craft And Miniature Architecture
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,75 +12,31 @@ tags:
   - architecture-and-interior
   - toy-craft-and-miniature-architecture
 visualDna:
-  aesthetic: >-
-    Subterranean Bio-Cutaway acts as a transferable architecture/interior router: capillary
-    branching, layered earth strata, nodal cavities, translucent amber gel pockets; fuse it with
-    toy, craft, and miniature construction grammar with visible fabrication, scale cues, modular
-    seams, handmade material logic, and playful sectional clarity; route spatial grammar, material
-    behavior, scale, ornament, and light over prompt X without requiring the default sample anchor,
-    fixed spatial set, landscape setup, or object sample.
-  subject_treatment: >-
-    Preserve prompt subject, action, and context while translating any requested subject through
-    model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy
-    geometry, and craft-readable joinery; treat capillary branching, layered earth strata, nodal
-    cavities, translucent amber gel pockets as massing, edge, surface, joinery, threshold, or
-    ornament behavior rather than a mandatory building scene.
-  color_and_tone: >-
-    Map color through material-authentic craft color, toy primary blocks, sugar or sand warmth,
-    translucent glass tint, fungal cream, and small playful accents; let source cues such as
-    capillary branching, layered earth strata, nodal cavities, translucent amber gel pockets decide
-    accent hierarchy, material temperature, and value separation while staying attached to the
-    requested content.
-  lighting_and_shadow: >-
-    Use soft model shadows, glossy toy highlights, sugar sparkle, bottle refraction, damp sand
-    sheen, and miniature display clarity; make light reveal joints, relief, material depth, scale,
-    and atmosphere from capillary branching, layered earth strata, nodal cavities, translucent amber
-    gel pockets without replacing prompt X with a stock architectural render.
-  texture_and_material: >-
-    Render paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal
-    skin, bottle glass, toy wood, and cutaway surfaces; prioritize the tactile signals in capillary
-    branching, layered earth strata, nodal cavities, translucent amber gel pockets, with believable
-    surface response, denoised grain, coherent wear, and no generic wallpaper texture.
-  camera_and_composition: >-
-    Frame through close model-detail crops, section cuts, modular repetition, visible tabs or seams,
-    scale compression, and object-like built logic; convert capillary branching, layered earth
-    strata, nodal cavities, translucent amber gel pockets into reusable perspective, crop, depth,
-    section, modular rhythm, and negative-space rules instead of one fixed style sample layout.
-  atmosphere_and_mood: >-
-    Carry mood through playful craft, fragile impermanence, edible celebration, ecological
-    miniature, curio precision, or sectional wonder without product-photo lock; the preset can
-    support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when
-    prompt X asks for them while keeping the architectural identity readable.
-  rendering_and_quality: >-
-    Finish with clean miniature finish with legible material scale, no brand logo, no product
-    catalog staging, no empty abstract tile; keep clean denoise, legible construction, stable object
-    or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera
-    prop, and no prompt-literal card copy.
-  key_features: >-
-    capillary branching, layered earth strata, nodal cavities, translucent amber gel pockets;
-    model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy
-    geometry, and craft-readable joinery; paper fiber, ABS plastic, damp sand, corrugated cardboard,
-    vinyl seams, icing, fungal skin, bottle glass, toy wood, and cutaway surfaces; close
-    model-detail crops, section cuts, modular repetition, visible tabs or seams, scale compression,
-    and object-like built logic
-  creative_brief: >-
-    Apply Subterranean Bio-Cutaway after prompt X as a transferable architecture/interior style
-    layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset
-    supplies capillary branching, layered earth strata, nodal cavities, translucent amber gel
-    pockets, toy, craft, and miniature construction grammar with visible fabrication, scale cues,
-    modular seams, handmade material logic, and playful sectional clarity, material discipline,
-    spatial grammar, and negative controls without requiring a single spatial sample, product-photo
-    setup, aisle-like default, or empty abstraction.
+  aesthetic: 'Sculpted earth cross-section: a handmade cutaway model sliced through soil, showing capillary root branching, layered strata and rounded cavities with amber gel pockets.'
+  subject_treatment: Keep the requested subject, its identity and pose; this preset owns the vertical cross-section through the ground that reveals it, and a requested object stays that object instead of becoming a building.
+  color_and_tone: Layered umber, ochre, grey clay and black loam bands, pale root lines, warm glowing amber gel pockets.
+  lighting_and_shadow: Even front light across the cut face with warm glow from the amber pockets; a thin strip of daylight above ground.
+  texture_and_material: Crumbly soil, pebble layers, fibrous roots branching like capillaries, glossy translucent gel.
+  camera_and_composition: Straight-on cutaway with a thin band of surface on top and most of the frame given to the section below.
+  atmosphere_and_mood: Hidden and busy, the secret underground half of an ordinary place.
+  rendering_and_quality: Model-like cross-section with clean cut edges; no insects, larvae or creatures in the cavities.
+  key_features: vertical earth cross-section; capillary root branching; layered soil strata; rounded cavities; amber gel pockets
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Subterranean Bio-Cutaway as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - brand logo on parts
+  - readable text
+  - turning a requested object into a house or building
+  - full-scale real construction
+  - playroom or party scene
+  - ant farm
+  - insects
+  - creature focus
   - flat exterior-only view
   - ants
-  - insects
   - insect colony
-  - ant farm
   - larvae/eggs
   - camera equipment
   - display case
-  - creature focus
   - gore
   - body anatomy
   - flat exterior view
@@ -97,22 +53,21 @@ avoidRules:
   - corridor perspective
   - furniture showroom
   - prompt-required card
-  - readable text
   - logo
   - watermark
   - camera prop
   - mandatory interior set
   - prompt-literal card
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-073.webp
 attributes:
-  negativePrompt: >-
-    flat exterior-only view, ants, insects, insect colony, ant farm, larvae/eggs, camera equipment,
-    display case, creature focus, gore, body anatomy, flat exterior view, market aisle, library
-    aisle, corridor, empty abstraction, brand logo, product photo, child or person scene, full-scale
-    realism, fixed building-only scene, mandatory interior interior zones, corridor perspective,
-    furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory
-    interior set, prompt-literal card
+  negativePrompt: brand logo on parts, readable text, turning a requested object into a house or building, full-scale real construction, playroom or party scene, ant farm, insects, creature focus, flat exterior-only view, ants, insect colony, larvae/eggs, camera equipment, display case, gore, body anatomy, flat exterior view, market aisle, library aisle, corridor, empty abstraction, brand logo, product photo, child or person scene, full-scale realism, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP07-095
+packId: pack_07
+name: Victorian Pumping Station Ironwork
+styleAnchors:
+  - Victorian Pumping Station Ironwork
+  - Victorian engine house interior
+  - polychrome painted cast-iron columns
+displayName: Victorian Pumping Station Ironwork
+category: 3. Civic Infrastructure And Specialty Spaces
+domain: Victorian engine house interior
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - civic-infrastructure-and-specialty-spaces
+  - pumping-station
+  - cast-iron
+  - polychrome
+visualDna:
+  aesthetic: 'Victorian pumping station ironwork: an engine house turned into a cathedral of machinery, with ornate cast-iron columns, galleries and brackets painted in polychrome around giant beam engines.'
+  subject_treatment: Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.
+  color_and_tone: Deep red, green, cream and gilt on cast iron, polished brass and steel, glazed brick; rich colour with oily dark shadows.
+  lighting_and_shadow: Tall arched windows letting in side light, gleams on brass and oil, dark pits around the engines.
+  texture_and_material: Cast-iron columns with foliate capitals, pierced iron gallery screens, octagonal floor plates, beam engines with polished brass, glazed brick walls.
+  camera_and_composition: Keep the requested view; look up through layers of painted ironwork galleries, one huge wheel or beam crossing the frame.
+  atmosphere_and_mood: Grand, proud and mechanical, engineering dressed as a temple.
+  rendering_and_quality: Detailed photograph with crisp ornament and clean paint, oil sheen, no steampunk gadget clutter.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Victorian Pumping Station Ironwork as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: polychrome painted cast-iron columns; foliate capitals and pierced galleries; giant beam engines; polished brass; tall arched windows
+avoidRules:
+  - one-point corridor perspective as default
+  - wet mirror-gloss floor as default
+  - turning the requested room into a station or library
+  - readable signage or wayfinding text
+  - steampunk gadget clutter
+  - goggles and gears decor
+  - plain grey steel
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, steampunk gadget clutter, goggles and gears decor, plain grey steel, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: civic-infrastructure-and-specialty-spaces
+  categoryName: 3. Civic Infrastructure And Specialty Spaces
+  tags:
+    - architecture-and-interior
+    - civic-infrastructure-and-specialty-spaces
+    - pumping-station
+    - cast-iron
+    - polychrome
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Victorian engine house interior

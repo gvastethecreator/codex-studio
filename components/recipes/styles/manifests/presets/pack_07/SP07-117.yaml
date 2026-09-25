@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP07-117
+packId: pack_07
+name: Chitin Carapace Architecture
+styleAnchors:
+  - Chitin Carapace Architecture
+  - insect-shell organic architecture
+  - overlapping iridescent shell plates
+displayName: Chitin Carapace Architecture
+category: 5. Fantasy And Mythic Architecture
+domain: insect-shell organic architecture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - fantasy-and-mythic-architecture
+  - chitin
+  - carapace
+  - organic
+visualDna:
+  aesthetic: 'Carapace architecture: roofs and walls of overlapping iridescent shell plates on segmented ribs, jointed buttresses and amber resin membranes as windows.'
+  subject_treatment: Keep the requested structure or object, its function, footprint and camera; rebuild its walls, roof, openings and ornament in this construction logic, and never swap it for a castle, temple or fixed fantasy landmark.
+  color_and_tone: Black-green chitin with oil-slick blue, violet and bronze sheen, glowing amber resin panes; dark and glossy.
+  lighting_and_shadow: Iridescent sheen shifting across the plates with angle; backlit amber membranes glow from inside at dusk.
+  texture_and_material: Glossy shell plates with fine punctures and growth lines, flexible segment joints, veined translucent resin.
+  camera_and_composition: Keep the requested view; segmented ribs set a repeating arthropod rhythm along roofs and walls.
+  atmosphere_and_mood: Alien, elegant and slightly unsettling, a building that could have molted.
+  rendering_and_quality: Precise specular rendering of iridescent surfaces; architecture only, with no insects or creatures.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chitin Carapace Architecture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: overlapping iridescent shell plates; segmented rib structure; jointed buttresses; amber resin membrane windows; oil-slick sheen
+avoidRules:
+  - licensed fantasy location
+  - copy of a known film or game building
+  - readable runes or inscriptions
+  - glossy mirror floor by default
+  - decorative waterfall by default
+  - swapping the requested structure for a castle or temple
+  - insects
+  - creature
+  - gore
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: licensed fantasy location, copy of a known film or game building, readable runes or inscriptions, glossy mirror floor by default, decorative waterfall by default, swapping the requested structure for a castle or temple, insects, creature, gore, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: fantasy-and-mythic-architecture
+  categoryName: 5. Fantasy And Mythic Architecture
+  tags:
+    - architecture-and-interior
+    - fantasy-and-mythic-architecture
+    - chitin
+    - carapace
+    - organic
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: insect-shell organic architecture

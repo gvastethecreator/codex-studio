@@ -8,28 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Action Burst Alley Rush',
     category: '5. Action Motion Setpieces',
     negativePrompt:
-      'photoreal, static-pose, low-detail, watermark, logo, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, static-pose, low-detail, watermark, logo, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build high-impact anime action from a compact subject silhouette, elastic contour rhythm, and bold force lines that converge into a forward rush. Keep motion legible through sharp directional edges and compressed depth. Use dark-blue support values only where they fit the requested palette.',
+        'Anime action frame staged as a forward rush: the subject lunges toward the lens along converging diagonals, its nearest limb foreshortened to about twice its size, depth squeezed like a narrow passage.',
       subject_treatment:
-        'Preserve the requested subject identities and count, action, pose, props, wardrobe, setting, and tone. Restyle only contours, gesture emphasis, and edge rhythm. Do not add, remove, replace, or duplicate people, opponents, props, or scene elements.',
+        'Keep the prompt subject, count, action, props and setting; this preset owns the forward-rush staging, foreshortening and converging depth lines, and adds no opponent, sports gear, extra prop or danger.',
       color_and_tone:
-        "Preserve the requested colors and emotional temperature. Where compatible, use dark-blue support values and concise cool highlights to clarify the forward motion without introducing new light sources or changing the scene's mood.",
+        'Keep the prompt palette; cooler dark-blue values in the background push the warmer, lighter subject forward.',
       lighting_and_shadow:
-        'Use clean local contrast and hard edge highlights aligned with the existing movement. Follow the requested lighting context; do not invent flashes, electricity, machinery, or magic.',
+        'Hard cel edge highlights on the leading side of the subject, aligned with its travel; no flashes or sparks.',
       texture_and_material:
-        'Keep contours crisp and use a few tapered motion streaks attached to moving forms. Preserve requested surfaces and materials; add dust, smoke, grit, or debris only when the request includes them.',
+        'Crisp cel contours with three to six tapered motion streaks attached only to trailing edges.',
       camera_and_composition:
-        'When the requested camera leaves room for interpretation, use close foreshortening, compressed depth, and converging diagonals to carry the requested movement forward. Preserve an explicitly requested viewpoint and do not impose an alley or other setting.',
+        "A 24 mm-equivalent low front three-quarter view, the leading hand or foot almost touching the lens, the vanishing point tucked behind the subject's shoulder.",
       atmosphere_and_mood:
-        'Let the requested tone lead. Create forward pressure through framing and line direction without adding danger, confrontation, or a more intense emotion than requested.',
+        'Forward pressure and urgency that live in the framing, not in added danger.',
       rendering_and_quality:
-        'Use sharp 2D contours, stable anatomy or object structure, and clear foreground-to-background separation. Keep streaks and grain controlled so the requested subject and action remain immediately legible.',
+        'Sharp 2D cel rendering with stable anatomy through the foreshortening and clean foreground-to-background separation.',
       key_features:
-        'Compact silhouettes, elastic contours, converging forward diagonals, close foreshortening, controlled motion streaks, and clear action readability, all applied to the requested content.',
+        'lunge toward the lens; leading limb foreshortened to double size; converging diagonals; compressed depth; tapered trailing streaks',
       creative_brief:
-        'Strengthen the requested action with a compact, forward-driving composition, elastic contours, and converging lines. Preserve the requested subject, count, props, setting, and tone.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Action Burst Alley Rush as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -39,28 +39,28 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Vertigo Energy Cross Style'],
     category: '5. Action Motion Setpieces',
     negativePrompt:
-      'photoreal, calm-composition, blur-only, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, blur-only, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build vertigo from firm contours, extreme diagonals, and two directional paths that cross in depth. Use aerial spacing and luminous edge accents to clarify the crossing without requiring a collision, opponent, or literal energy effect.',
+        "Anime vertigo frame from a steep high oblique looking down past the subject into deep space, where the subject's line of travel crosses a strong architectural or terrain edge in a clean X.",
       subject_treatment:
-        'Preserve the requested subject identities and count, action, pose, props, wardrobe, setting, and tone. Restyle only contours, gesture emphasis, and edge rhythm. Do not add, remove, replace, or duplicate people, opponents, props, or scene elements.',
+        'Keep the prompt subject, count, action, props and setting; this preset owns the steep high oblique viewpoint and the X-crossing of travel line and edge line, and adds no opponent, sports gear, extra prop or danger.',
       color_and_tone:
-        'Preserve the requested palette and emotional temperature. Separate the crossing paths with value contrast and restrained luminous accents drawn from colors already present in the scene.',
+        'Keep the prompt palette; the far depth drops in value so the two crossing paths separate by contrast.',
       lighting_and_shadow:
-        'Use crisp crossing highlights only where they help separate existing forms. Follow the requested lighting context and do not invent flashes, electricity, sparks, machinery, or magic.',
+        "Crisp highlights on the crossing edges only, following the prompt's light; no sparks or energy effects.",
       texture_and_material:
-        'Keep surface detail subordinate to the crossing motion. Use fine directional marks attached to existing movement; preserve requested materials and do not add dust, smoke, debris, or other physical elements unless requested.',
+        'Fine directional marks attached to the moving subject; surfaces below simplify into flat value bands with distance.',
       camera_and_composition:
-        'When the requested camera leaves room for interpretation, use a steep oblique viewpoint, intersecting depth diagonals, and generous separation around the crossing paths. Preserve the requested action and do not turn proximity into a collision.',
+        'A 70 to 80 degree down-angle through a wide lens, horizon out of frame, with the crossing point placed on a third and generous air around it.',
       atmosphere_and_mood:
-        'Let the requested tone lead. Create vertigo through viewpoint, scale, and direction rather than imposing danger, heroism, or a collision.',
+        'Vertigo and suspended breath created by height and direction, never by a collision.',
       rendering_and_quality:
-        'Use firm 2D contours, stable anatomy or object structure, and distinct value groups. Keep both directional paths legible without obscuring the requested subject or action.',
+        'Firm 2D contours, stable structure under steep perspective and both crossing paths readable at a glance.',
       key_features:
-        'Firm contours, extreme diagonals, aerial spacing, intersecting depth paths, restrained luminous accents, and immediate subject and action readability.',
+        'steep 70-80 degree down-angle; X-crossing of travel line and edge line; wide lens; far depth dropping in value; horizon out of frame',
       creative_brief:
-        'Frame the requested action with intersecting diagonals, aerial depth, and firm contour rhythm. Preserve the requested subject, count, props, setting, action, and tone.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vertigo Energy Cross Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -70,28 +70,28 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Neon Vector Discharge Style'],
     category: '5. Action Motion Setpieces',
     negativePrompt:
-      'photoreal, medieval-only, washed-colors, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, medieval-only, washed-colors, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Use precise anime linework, clean vector-like edges, and deliberate directional geometry to express technical momentum. Violet-blue accents may clarify the line paths where they fit the requested palette; do not require neon, science-fiction, or electrical content.',
+        'Precise anime action frame in which the exact path of the requested movement is traced as clean vector arcs, like motion-capture curves, thin and geometric behind the moving parts.',
       subject_treatment:
-        'Preserve the requested subject identities and count, action, pose, props, wardrobe, setting, and tone. Restyle only contour precision, gesture emphasis, and edge rhythm. Do not add, remove, replace, or duplicate people, opponents, props, or scene elements.',
+        'Keep the prompt subject, count, action, props and setting; this preset owns the vector path-tracing device that draws the action as clean geometric arcs, and adds no opponent, sports gear, extra prop or danger.',
       color_and_tone:
-        'Preserve the requested palette and emotional temperature. Where compatible, use a restrained violet-blue accent on existing edges to separate planes without recoloring or adding objects.',
+        'Keep the prompt palette; the path arcs take a restrained violet-blue that sits on existing colors without recoloring them.',
       lighting_and_shadow:
-        'Keep lighting precise and directional, with narrow edge highlights on existing forms. Follow the requested light sources; do not invent neon signs, flashes, electricity, machinery, or magic.',
+        'Precise directional light with narrow edge highlights on the moving parts; the arcs themselves do not glow.',
       texture_and_material:
-        'Keep finishes clean and controlled. Use thin vector-like trails attached to the requested movement, while preserving existing materials and surfaces; add sparks, smoke, grit, or debris only when requested.',
+        'Clean flat cel finish; arcs are one to two pixels thick, evenly spaced, and fade out after one full movement cycle.',
       camera_and_composition:
-        'When the requested camera leaves room for interpretation, use a controlled oblique view, clean plane separation, and directional paths that trace the requested action. Preserve the stated viewpoint and do not impose a setting or technical equipment.',
+        'A controlled three-quarter side view that shows the whole path, with arcs never crossing the face or focal hands.',
       atmosphere_and_mood:
-        'Preserve the requested tone. Let precision and deliberate spacing create the technical feel without imposing urgency, danger, heroism, or confrontation.',
+        'Technical, analytical momentum; the movement feels measured and exact rather than violent.',
       rendering_and_quality:
-        'Use sharp technical contours, stable anatomy or object structure, and uncluttered value groups. Keep vector marks crisp and secondary to the requested subject and action.',
+        'Sharp technical contours and crisp vector arcs kept secondary to the subject; no sci-fi interface graphics.',
       key_features:
-        'Precise linework, controlled vector paths, clean plane separation, measured directional geometry, optional violet-blue edge accents, and clear subject and action readability.',
+        'movement path traced as vector arcs; thin evenly spaced curves; violet-blue path color; three-quarter side view; clean flat cel finish',
       creative_brief:
-        'Clarify the requested action with precise contours, controlled vector paths, and clean spatial separation. Preserve the requested subject, count, props, setting, action, and tone.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon Vector Discharge Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -101,28 +101,28 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Monumental Impact Burst Style'],
     category: '5. Action Motion Setpieces',
     negativePrompt:
-      'photoreal, static, over-noise, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, static, over-noise, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Emphasize the strongest moment of the requested action with hard-edged forms, compact radiating vectors, and clear scale contrast. Let the existing scene supply any debris or impact cues; do not turn the action into an explosion or collision.',
+        'Anime key frame of the peak instant of the requested action, placed at the hub of radiating structural lines, with one element of the scene enlarged in the foreground for extreme scale contrast.',
       subject_treatment:
-        'Preserve the requested subject identities and count, action, pose, props, wardrobe, setting, and tone. Restyle only contour emphasis, scale relationships, and edge rhythm. Do not add, remove, replace, or duplicate people, opponents, props, or scene elements.',
+        'Keep the prompt subject, count, action, props and setting; this preset owns the peak-moment framing with radiating structure lines and a huge-scale foreground element, and adds no opponent, sports gear, extra prop or danger.',
       color_and_tone:
-        'Preserve the requested palette and emotional temperature. Where compatible, use restrained crimson or gold accents and strong value separation to focus attention on the existing action.',
+        'Keep the prompt palette; strongest value contrast sits at the hub, with restrained crimson or gold accents only if already present.',
       lighting_and_shadow:
-        'Concentrate contrast around the requested action using the lighting already present in the scene. Do not invent flashes, explosions, sparks, electricity, machinery, or magic.',
+        'Contrast concentrated at the point of action using the existing light; no flashes, explosions or sparks.',
       texture_and_material:
-        'Use decisive edges and controlled surface detail to distinguish foreground, subject, and background. Preserve requested materials and add debris, dust, smoke, or grit only when the request includes them.',
+        'Decisive hard-edged forms; existing debris or droplets only when the prompt already has them.',
       camera_and_composition:
-        'When the requested camera leaves room for interpretation, use foreground-to-background scale contrast and radiating diagonals centered on the existing action. Preserve its direction and do not imply a collision that the request does not contain.',
+        'Low wide angle with the foreground element filling a third of the frame and scene lines radiating from the action point.',
       atmosphere_and_mood:
-        'Let the requested tone lead. Create emphasis through scale and contrast without imposing triumph, danger, aggression, or a more intense emotion than requested.',
+        'Monumental emphasis on one instant, weighty without triumph or aggression.',
       rendering_and_quality:
-        'Use hard, controlled strokes, stable anatomy or object structure, and a clear action focal point. Keep effects and detail subordinate so the requested subject and action stay legible.',
+        'Hard controlled strokes, stable structure and a single unmistakable focal hub.',
       key_features:
-        'Hard-edged forms, scale contrast, compact radiating vectors, decisive contour emphasis, and controlled focal contrast applied to the requested action.',
+        'peak instant at the hub; radiating structural lines; huge-scale foreground element; low wide angle; hub-centered contrast',
       creative_brief:
-        'Give the requested action a strong focal moment through controlled scale contrast, hard strokes, and radiating vectors. Preserve the requested subject, count, props, setting, action, and tone.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Monumental Impact Burst Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -132,28 +132,593 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Upward Thunder Momentum Style'],
     category: '5. Action Motion Setpieces',
     negativePrompt:
-      'photoreal, dull-palette, calm-scene, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks',
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, dull-palette, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Use strong vertical spacing, rising rhythm, and directional force bands to emphasize upward motion when it is part of the requested action. Preserve other requested motion directions and use white-blue accents only where they fit the existing palette.',
+        'Anime action frame staged vertically: the subject rises through stacked horizontal layers of the scene seen from beside, with open space kept above it to pull the eye upward.',
       subject_treatment:
-        'Preserve the requested subject identities and count, action, pose, props, wardrobe, setting, and tone. Restyle only contour emphasis, gesture rhythm, and edge direction. Do not add, remove, replace, or duplicate people, opponents, props, or scene elements.',
+        'Keep the prompt subject, count, action, props and setting; this preset owns the tall vertical layering and rising side-view staging, and adds no opponent, sports gear, extra prop or danger.',
       color_and_tone:
-        'Preserve the requested palette and emotional temperature. Where compatible, use restrained white-blue accents and value separation to clarify vertical layers without recoloring the scene.',
+        'Keep the prompt palette; values lighten layer by layer toward the top, with restrained white-blue accents at the highest edges.',
       lighting_and_shadow:
-        'Use directional highlights along existing forms to clarify height and motion. Follow the requested lighting context; do not introduce lightning, flashes, sparks, or new light sources.',
+        'Directional highlights on upward-facing edges; no lightning, flashes or new light sources.',
       texture_and_material:
-        'Keep surface detail controlled and attached to existing forms. Use fine vertical motion marks only where the requested movement supports them; preserve requested materials and add no dust, smoke, sparks, or debris unless requested.',
+        'Fine vertical motion marks under the rising subject only; surfaces stay clean and layered.',
       camera_and_composition:
-        'When the requested camera leaves room for interpretation, use vertical layering, height contrast, and open space along the movement path. Emphasize bottom-to-top flow when the action rises; keep the requested direction and viewpoint intact otherwise.',
-      atmosphere_and_mood:
-        'Let the requested tone lead. Create lift through spacing and line direction without imposing danger, heroism, electrical force, or a more intense emotion than requested.',
+        'A tall portrait frame from a side-on or slight low angle, the subject in the lower half and at least a third of the frame left open above it.',
+      atmosphere_and_mood: 'Lift and ascent carried by spacing and line direction, not by heroics.',
       rendering_and_quality:
-        'Use powerful but controlled contours, stable anatomy or object structure, and clear vertical separation. Keep accents and motion marks subordinate to the requested subject and action.',
+        'Powerful but controlled contours with clear vertical separation between layers.',
       key_features:
-        'Vertical spacing, rising rhythm when appropriate, directional force bands, white-blue accents where compatible, and clear preservation of the requested motion.',
+        'stacked horizontal layers; subject rising from lower half; open space above; values lightening upward; side-on tall framing',
       creative_brief:
-        'Emphasize upward movement when requested through vertical spacing, force bands, and open headroom. Preserve the requested subject, count, props, setting, action, and tone.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Upward Thunder Momentum Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP13-036',
+    name: 'Smear-Frame Arc Staging',
+    displayName: 'Smear-Frame Arc Staging',
+    styleAnchors: [
+      'Smear-Frame Arc Staging',
+      'anime action staging',
+      'one stretched smear shape along the arc',
+    ],
+    category: '5. Action Motion Setpieces',
+    domain: 'anime action staging',
+    negativePrompt:
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, speed lines, motion blur, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Anime in-between smear frame: the fastest moving part of the subject is drawn as one stretched, distorted ribbon shape along its arc, while the rest of the body stays sharp and on model.',
+      subject_treatment:
+        'Keep the prompt subject, count, action, props and setting; this preset owns the smear-frame drawing of the fastest moving part, and adds no opponent, sports gear, extra prop or danger.',
+      color_and_tone:
+        'Keep the prompt palette; the smear carries the moving part colors in flat bands, slightly lighter than the solid form.',
+      lighting_and_shadow:
+        'Normal cel light on the solid body; the smear itself is flat with no shading.',
+      texture_and_material:
+        'One flat smear shape with a crisp outer edge and a feathered tail, no speed lines around it.',
+      camera_and_composition:
+        'A clean mid-shot that shows the full arc of the smeared part from start pose to end pose.',
+      atmosphere_and_mood: 'Snappy, elastic and fast, the energy of a single animation frame.',
+      rendering_and_quality:
+        'Stable on-model anatomy outside the smear, with the smear clearly an intentional animation device.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Smear-Frame Arc Staging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'one stretched smear shape along the arc; rest of body sharp; flat smear color bands; no speed lines; full arc visible',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-037',
+    name: 'Negative Impact Frame Staging',
+    displayName: 'Negative Impact Frame Staging',
+    styleAnchors: [
+      'Negative Impact Frame Staging',
+      'anime action staging',
+      'inverted black and white values',
+    ],
+    category: '5. Action Motion Setpieces',
+    domain: 'anime action staging',
+    negativePrompt:
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, full-color render, gore, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Anime impact frame at the exact instant of contact: the whole picture flips to inverted values, white shapes on black with a few raw rough outlines, as if one frame of the film were printed in negative.',
+      subject_treatment:
+        'Keep the prompt subject, count, action, props and setting; this preset owns the single inverted-value impact frame at the moment of contact, and adds no opponent, sports gear, extra prop or danger.',
+      color_and_tone:
+        'Pure black and white with at most one accent color from the prompt kept in its original hue at the contact point.',
+      lighting_and_shadow:
+        'No modeled light; all shading collapses into flat inverted masses with a ring of white around the contact point.',
+      texture_and_material:
+        'Rough, shaky brush outlines and dry-brush edges, as if drawn in a hurry on a single animation cel.',
+      camera_and_composition:
+        'Tight framing on the contact point, slightly tilted, with the subject cut by the frame edge.',
+      atmosphere_and_mood: 'A jolt, one heartbeat of pure force frozen in time.',
+      rendering_and_quality:
+        'High-contrast inverted graphic frame in which the action and subject remain clearly readable.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Negative Impact Frame Staging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'inverted black and white values; single accent at contact; rough shaky outlines; tight tilted framing; white ring around contact',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-038',
+    name: 'Bullet-Time Orbit Freeze',
+    displayName: 'Bullet-Time Orbit Freeze',
+    styleAnchors: [
+      'Bullet-Time Orbit Freeze',
+      'anime action staging',
+      'time frozen at the action peak',
+    ],
+    category: '5. Action Motion Setpieces',
+    domain: 'anime action staging',
+    negativePrompt:
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, motion blur, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Anime frozen-instant staging: time stops at the height of the action and the camera has swung around to an unexpected side, showing airborne elements of the scene hanging perfectly still.',
+      subject_treatment:
+        'Keep the prompt subject, count, action, props and setting; this preset owns the frozen instant seen from a camera orbiting the subject, and adds no opponent, sports gear, extra prop or danger.',
+      color_and_tone:
+        'Keep the prompt palette with a slight cool desaturation of the background to signal stopped time.',
+      lighting_and_shadow:
+        'Crisp rim light on every suspended element so each one reads separately, from the existing light direction.',
+      texture_and_material:
+        'Only elements already in the scene hang in the air, such as hair, water drops, cloth or flour, each sharply defined.',
+      camera_and_composition:
+        'A three-quarter rear or low side angle that the prompt did not imply, the subject centered with suspended elements in a loose ring.',
+      atmosphere_and_mood: 'Hushed suspended stillness inside a fast movement.',
+      rendering_and_quality:
+        'Everything sharp, no motion blur, clean separation between the subject and each suspended element.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bullet-Time Orbit Freeze as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'time frozen at the action peak; camera swung to an unexpected side; suspended scene elements; no motion blur; cool desaturated background',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-039',
+    name: 'Panning Background Streak Frame',
+    displayName: 'Panning Background Streak Frame',
+    styleAnchors: [
+      'Panning Background Streak Frame',
+      'anime action staging',
+      'sharp subject on streaked background',
+    ],
+    category: '5. Action Motion Setpieces',
+    domain: 'anime action staging',
+    negativePrompt:
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, radial speed lines, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Anime tracking pan: the camera moves alongside the subject at its speed, so the subject is drawn sharp while the background smears into long horizontal color streaks.',
+      subject_treatment:
+        'Keep the prompt subject, count, action, props and setting; this preset owns the side-tracking pan with a streaked background and a sharp subject, and adds no opponent, sports gear, extra prop or danger.',
+      color_and_tone:
+        'Keep the prompt palette; background colors stretch into bands that keep their hue but lose all detail.',
+      lighting_and_shadow:
+        'Steady side light on the subject; the streaked background keeps only its broad value pattern.',
+      texture_and_material:
+        'Smooth horizontal streak bands behind a crisp cel subject, with a few longer streaks at ground level.',
+      camera_and_composition:
+        'Strict side-on profile view at subject height, the subject a little behind center with lead room in the direction of travel.',
+      atmosphere_and_mood: 'Sustained speed and a steady, flowing momentum.',
+      rendering_and_quality:
+        'Crisp subject, uniformly directional background streaks, no radial speed lines.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Panning Background Streak Frame as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'sharp subject on streaked background; horizontal color bands; side-on profile view; lead room ahead; no radial speed lines',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-040',
+    name: "Worm's-Eye Leap Silhouette",
+    displayName: "Worm's-Eye Leap Silhouette",
+    styleAnchors: [
+      "Worm's-Eye Leap Silhouette",
+      'anime action staging',
+      'camera straight beneath looking up',
+    ],
+    category: '5. Action Motion Setpieces',
+    domain: 'anime action staging',
+    negativePrompt:
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        "Anime worm's-eye staging: the camera lies directly beneath the moving subject and looks straight up, so the subject passes overhead as a crisp dark silhouette against a bright flat sky.",
+      subject_treatment:
+        'Keep the prompt subject, count, action, props and setting; this preset owns the straight-up worm’s-eye view with a backlit silhouette, and adds no opponent, sports gear, extra prop or danger.',
+      color_and_tone:
+        'Dark near-black silhouette against a bright pale sky; the prompt colors show only in a thin rim along the silhouette.',
+      lighting_and_shadow:
+        'Strong backlight from above, a thin bright rim around the silhouette and no fill from below.',
+      texture_and_material:
+        'Flat silhouette fill with a few interior details picked out by the rim; the sky smooth and clean.',
+      camera_and_composition:
+        'Straight-up view with a very wide lens; nearby walls, trees or edges converge toward the frame center and the subject crosses diagonally.',
+      atmosphere_and_mood: 'Soaring, weightless and breath-held for a single instant.',
+      rendering_and_quality:
+        'Clean graphic silhouette with readable pose and a sharp rim; no clutter in the sky.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Worm's-Eye Leap Silhouette as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'camera straight beneath looking up; backlit dark silhouette; thin bright rim; converging edges to center; diagonal crossing',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-041',
+    name: 'Dutch Tilt Momentum Frame',
+    displayName: 'Dutch Tilt Momentum Frame',
+    styleAnchors: [
+      'Dutch Tilt Momentum Frame',
+      'anime action staging',
+      'camera rolled 20-35 degrees',
+    ],
+    category: '5. Action Motion Setpieces',
+    domain: 'anime action staging',
+    negativePrompt:
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, fisheye distortion, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Anime canted-frame staging: the camera rolls 20 to 35 degrees so the horizon and verticals tilt in the direction of the effort, making ordinary action feel off balance and urgent.',
+      subject_treatment:
+        'Keep the prompt subject, count, action, props and setting; this preset owns the strong camera roll that tilts the horizon with the direction of effort, and adds no opponent, sports gear, extra prop or danger.',
+      color_and_tone:
+        'Keep the prompt palette with a slightly increased value contrast between subject and ground.',
+      lighting_and_shadow:
+        'Existing light kept, with cast shadows rotating with the tilt so they read as diagonals.',
+      texture_and_material:
+        'Clean cel surfaces; architectural lines stay straight but tilted, never warped.',
+      camera_and_composition:
+        'Eye-level or slightly low, rolled 20 to 35 degrees, with the subject pushing uphill against the tilt.',
+      atmosphere_and_mood: 'Unsteady urgency and strain without any added threat.',
+      rendering_and_quality:
+        'Straight, confident perspective lines on the tilted grid and a stable readable subject.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dutch Tilt Momentum Frame as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'camera rolled 20-35 degrees; tilted horizon and verticals; subject pushing against the tilt; diagonal shadows; straight not warped lines',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-042',
+    name: 'Three-Beat Action Triptych',
+    displayName: 'Three-Beat Action Triptych',
+    styleAnchors: ['Three-Beat Action Triptych', 'anime action layout', 'three equal panels'],
+    category: '5. Action Motion Setpieces',
+    domain: 'anime action layout',
+    negativePrompt:
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, speech balloons, panel numbers, different characters per panel, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Anime storyboard triptych: one requested action split into three side-by-side panels showing anticipation, the peak of action and the follow-through, with the same subject in each.',
+      subject_treatment:
+        'Keep the prompt subject, count, action, props and setting; this preset owns a three-panel layout of anticipation, action and follow-through, and adds no opponent, sports gear, extra prop or danger.',
+      color_and_tone:
+        'Keep the prompt palette identical across all three panels; only the middle panel gets the strongest value contrast.',
+      lighting_and_shadow:
+        'The same light direction in all panels so the three read as one continuous moment.',
+      texture_and_material:
+        'Clean cel rendering in every panel, thin dark gutters between them and no drawn text or panel numbers.',
+      camera_and_composition:
+        'Three equal vertical panels, the camera shifting slightly closer in the middle panel and pulling back for the follow-through.',
+      atmosphere_and_mood:
+        'Clear, satisfying cause and effect, like a well-timed animation key sequence.',
+      rendering_and_quality:
+        'Consistent model and costume across the panels, with each pose readable on its own.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Three-Beat Action Triptych as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'three equal panels; anticipation, peak, follow-through; same subject and light in each; thin textless gutters; closer middle panel',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-043',
+    name: 'Near-Lens Pass-By Frame',
+    displayName: 'Near-Lens Pass-By Frame',
+    styleAnchors: [
+      'Near-Lens Pass-By Frame',
+      'anime action staging',
+      'subject sweeping past the lens',
+    ],
+    category: '5. Action Motion Setpieces',
+    domain: 'anime action staging',
+    negativePrompt:
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Anime pass-by staging: the moving subject sweeps past extremely close to the lens, a large part of it cropped and softly blurred in the near foreground, while the setting behind stays sharp.',
+      subject_treatment:
+        'Keep the prompt subject, count, action, props and setting; this preset owns the pass-by framing where part of the subject sweeps across the lens, and adds no opponent, sports gear, extra prop or danger.',
+      color_and_tone:
+        'Keep the prompt palette; the near-lens part reads as a large dark or saturated mass against a lighter background.',
+      lighting_and_shadow:
+        'Existing light on the background; the passing part is mostly in its own shadow with a bright edge.',
+      texture_and_material:
+        'Soft defocus on the near-lens part only, with crisp cel detail on everything beyond it.',
+      camera_and_composition:
+        'Static eye-level camera; the passing subject fills one side of the frame, cut by two frame edges, while the background occupies the rest.',
+      atmosphere_and_mood: 'A sudden whoosh, the viewer almost brushed by the movement.',
+      rendering_and_quality:
+        'Controlled focus split between the soft near mass and the sharp background, with the subject still identifiable.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Near-Lens Pass-By Frame as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'subject sweeping past the lens; cropped by two frame edges; soft near-lens defocus; sharp background; bright edge on passing mass',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-044',
+    name: 'Top-Down Spiral Path Staging',
+    displayName: 'Top-Down Spiral Path Staging',
+    styleAnchors: [
+      'Top-Down Spiral Path Staging',
+      'anime action staging',
+      'straight-down 90 degree view',
+    ],
+    category: '5. Action Motion Setpieces',
+    domain: 'anime action staging',
+    negativePrompt:
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, perspective tilt, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Anime overhead staging: the camera looks straight down and the requested movement is arranged along a spiral or circular path, so the ground pattern and the action form one curling shape.',
+      subject_treatment:
+        'Keep the prompt subject, count, action, props and setting; this preset owns the straight-down overhead view with a spiral path composition, and adds no opponent, sports gear, extra prop or danger.',
+      color_and_tone:
+        'Keep the prompt palette; the ground is a calm mid value so the moving subject and its path stand out.',
+      lighting_and_shadow:
+        'Light from one side so cast shadows lie long and flat on the ground and reveal the pose.',
+      texture_and_material:
+        "Clear ground patterns like flagstones, boards, grass or water that help trace the spiral; faint path marks only where the subject's movement would leave them.",
+      camera_and_composition:
+        'Exact 90 degree top-down view with the spiral centered or slightly off center and the subject at its leading end.',
+      atmosphere_and_mood: 'Hypnotic, choreographed flow seen calmly from directly above.',
+      rendering_and_quality:
+        'Clean flat perspective without distortion and readable shadow shapes that explain the pose.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Top-Down Spiral Path Staging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'straight-down 90 degree view; spiral or circular path; subject at the leading end; long flat side-lit shadows; readable ground pattern',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-045',
+    name: 'Fisheye Foreshortened Reach',
+    displayName: 'Fisheye Foreshortened Reach',
+    styleAnchors: [
+      'Fisheye Foreshortened Reach',
+      'anime action staging',
+      'hand reaching into an ultra-wide lens',
+    ],
+    category: '5. Action Motion Setpieces',
+    domain: 'anime action staging',
+    negativePrompt:
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, broken anatomy, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Anime fisheye staging: the subject reaches or throws straight toward an ultra-wide lens, the hand swelling to the size of the head while the body shrinks behind it and the edges of the scene curve.',
+      subject_treatment:
+        'Keep the prompt subject, count, action, props and setting; this preset owns the ultra-wide close camera and extreme reach foreshortening, and adds no opponent, sports gear, extra prop or danger.',
+      color_and_tone:
+        'Keep the prompt palette; the near hand is the brightest, most saturated area of the frame.',
+      lighting_and_shadow:
+        'Front light on the reaching hand, with the body behind falling half a stop darker.',
+      texture_and_material:
+        'Clean cel surfaces; detail concentrated on the near hand, simplified toward the curved edges.',
+      camera_and_composition:
+        'Ultra-wide lens under half a meter from the hand, barrel curvature on straight lines, the face small but readable behind the hand.',
+      atmosphere_and_mood: 'Direct, confrontational energy aimed at the viewer without hostility.',
+      rendering_and_quality:
+        'Controlled barrel distortion and believable anatomy through the extreme foreshortening.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fisheye Foreshortened Reach as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'hand reaching into an ultra-wide lens; hand as large as the head; barrel-curved edges; bright near hand; small readable face behind',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-046',
+    name: 'Cloth-and-Hair Follow-Through Trails',
+    displayName: 'Cloth-and-Hair Follow-Through Trails',
+    styleAnchors: [
+      'Cloth-and-Hair Follow-Through Trails',
+      'anime action staging',
+      'lagging S-curves in hair and cloth',
+    ],
+    category: '5. Action Motion Setpieces',
+    domain: 'anime action staging',
+    negativePrompt:
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, motion blur, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Anime secondary-motion staging: the body has just stopped or turned, and everything loose on it, including hair, cloak, sleeves and straps, keeps flowing in long lagging S-curves that show where the movement came from.',
+      subject_treatment:
+        'Keep the prompt subject, count, action, props and setting; this preset owns the secondary-motion emphasis on cloth, hair and loose parts, and adds no opponent, sports gear, extra prop or danger.',
+      color_and_tone:
+        'Keep the prompt palette; cloth and hair take slightly lighter underside tones so their curves read clearly.',
+      lighting_and_shadow:
+        'Soft key light that runs along each fabric fold and hair lock, giving every curve a light and a dark side.',
+      texture_and_material:
+        'Flowing cel-shaded fabric and hair with clean tapering tips; no streaks or blur.',
+      camera_and_composition:
+        'Medium-full shot with space on the side the loose parts trail toward, the body near a third line.',
+      atmosphere_and_mood: 'Graceful, lingering momentum after a decisive move.',
+      rendering_and_quality: 'Clear S-curves of consistent lag and still, sharp faces and hands.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cloth-and-Hair Follow-Through Trails as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'lagging S-curves in hair and cloth; body already stopped or turned; tapering tips; light along each fold; trailing space',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-047',
+    name: 'Tiny-Figure Grand Arc Wide',
+    displayName: 'Tiny-Figure Grand Arc Wide',
+    styleAnchors: [
+      'Tiny-Figure Grand Arc Wide',
+      'anime action staging',
+      'tiny subject under one twentieth of frame height',
+    ],
+    category: '5. Action Motion Setpieces',
+    domain: 'anime action staging',
+    negativePrompt:
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Anime extreme-wide staging: the subject is tiny, under a twentieth of the frame height, while the path of its movement sweeps one grand clean arc across a vast landscape or interior.',
+      subject_treatment:
+        'Keep the prompt subject, count, action, props and setting; this preset owns the extreme wide shot where a tiny subject draws one grand arc through vast space, and adds no opponent, sports gear, extra prop or danger.',
+      color_and_tone:
+        'Keep the prompt palette; the landscape stays in soft layered values while the subject and its arc carry the only sharp contrast.',
+      lighting_and_shadow:
+        'Broad atmospheric light with aerial perspective; a small bright highlight marks the subject.',
+      texture_and_material:
+        'Painted background layers with atmospheric haze; the arc is formed by existing material such as dust, wake, spray or footprints.',
+      camera_and_composition:
+        'Very wide establishing view from a high distant vantage, the arc spanning at least two thirds of the frame width.',
+      atmosphere_and_mood: 'Epic scale and solitude, one small life moving through a huge world.',
+      rendering_and_quality:
+        'Clean readable arc, a tiny but unmistakable subject, and painterly depth layers.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tiny-Figure Grand Arc Wide as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'tiny subject under one twentieth of frame height; one grand movement arc; vast layered space; high distant vantage; arc from existing material',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-048',
+    name: 'Coiled Anticipation Lead-Space Frame',
+    displayName: 'Coiled Anticipation Lead-Space Frame',
+    styleAnchors: [
+      'Coiled Anticipation Lead-Space Frame',
+      'anime action staging',
+      'coiled pre-motion pose',
+    ],
+    category: '5. Action Motion Setpieces',
+    domain: 'anime action staging',
+    negativePrompt:
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, speed lines, motion blur, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Anime anticipation staging: the instant before the requested action, the subject compressed into a tight coiled pose at one edge of the frame, facing a large empty lead space it is about to cross.',
+      subject_treatment:
+        'Keep the prompt subject, count, action, props and setting; this preset owns the pre-motion coiled pose and the large empty lead space, and adds no opponent, sports gear, extra prop or danger.',
+      color_and_tone:
+        'Keep the prompt palette; the empty lead space is a calm flat value while the subject holds the strongest contrast.',
+      lighting_and_shadow:
+        'Low side light that carves the tension in the coiled pose with hard short shadows.',
+      texture_and_material:
+        'Still surfaces, no motion marks at all; small tension details like gripping toes or taut fabric.',
+      camera_and_composition:
+        'The subject in the outer fifth of the frame, the rest left as open lead space in the direction of the coming move.',
+      atmosphere_and_mood: 'Held breath and loaded stillness, energy about to release.',
+      rendering_and_quality:
+        'Precise pose drawing with visible weight shift, calm backgrounds and zero motion effects.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Coiled Anticipation Lead-Space Frame as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'coiled pre-motion pose; subject in outer fifth of frame; large empty lead space; no motion marks; low side light on the tension',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-049',
+    name: 'Ground-Skim Low Tracking Shot',
+    displayName: 'Ground-Skim Low Tracking Shot',
+    styleAnchors: [
+      'Ground-Skim Low Tracking Shot',
+      'anime action staging',
+      'ankle-height camera ahead of subject',
+    ],
+    category: '5. Action Motion Setpieces',
+    domain: 'anime action staging',
+    negativePrompt:
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Anime ground-skim staging: the camera races just above the ground ahead of the subject, so the near ground rushes in stretched detail at the bottom of the frame and the subject looms toward the lens from a low angle.',
+      subject_treatment:
+        'Keep the prompt subject, count, action, props and setting; this preset owns the ankle-height camera racing along the ground ahead of the subject, and adds no opponent, sports gear, extra prop or danger.',
+      color_and_tone:
+        'Keep the prompt palette; the rushing ground is the most saturated band and the sky stays light.',
+      lighting_and_shadow:
+        'Backlight or high side light that throws the subject shadow toward the camera across the ground.',
+      texture_and_material:
+        'Ground detail such as grass, stones or planks stretched into short streaks near the lens and sharp further back.',
+      camera_and_composition:
+        'Lens at ankle height, horizon in the lower third, subject approaching head-on or at a slight angle.',
+      atmosphere_and_mood: 'Low, fast and immersive, as if running alongside.',
+      rendering_and_quality:
+        'Controlled ground streaking only in the near band and a crisp, stable subject.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ground-Skim Low Tracking Shot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'ankle-height camera ahead of subject; near ground stretched into streaks; horizon in lower third; shadow toward camera; looming low angle',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP13-050',
+    name: 'Contact-Point Extreme Close-Up',
+    displayName: 'Contact-Point Extreme Close-Up',
+    styleAnchors: [
+      'Contact-Point Extreme Close-Up',
+      'anime action staging',
+      'extreme close-up of the contact point',
+    ],
+    category: '5. Action Motion Setpieces',
+    domain: 'anime action staging',
+    negativePrompt:
+      'added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Anime insert shot: an extreme close-up of the exact point where the requested action makes contact, such as a hand, foot or hoof meeting a surface, with the rest of the subject cropped away.',
+      subject_treatment:
+        'Keep the prompt subject, count, action, props and setting; this preset owns the extreme close-up on the exact point of contact of the action, and adds no opponent, sports gear, extra prop or danger.',
+      color_and_tone:
+        'Keep the prompt palette; the contact point is the brightest and sharpest area, the surroundings darker.',
+      lighting_and_shadow:
+        'Tight hard key light raking across the contact surface to show pressure and texture.',
+      texture_and_material:
+        'Magnified surface detail at the contact, like skin creases, wood grain or ice crystals, with small displaced particles only if the materials would shed them.',
+      camera_and_composition:
+        'Macro framing where the contact fills the center third, very shallow depth and nothing else of the subject visible.',
+      atmosphere_and_mood: 'Tactile and precise, the whole action compressed into one touch.',
+      rendering_and_quality:
+        'Detailed but clean cel rendering at macro scale, with the kind of contact instantly readable.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Contact-Point Extreme Close-Up as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'extreme close-up of the contact point; subject cropped away; raking hard key light; magnified surface detail; very shallow depth',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

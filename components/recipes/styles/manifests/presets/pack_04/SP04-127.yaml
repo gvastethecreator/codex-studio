@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP04-127
+packId: pack_04
+name: Perspective Construction Drawing
+styleAnchors:
+  - Perspective Construction Drawing
+  - perspective drawing study
+  - visible vanishing lines
+displayName: Perspective Construction Drawing
+category: 6. Technical And Reference Sheets
+domain: perspective drawing study
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - technical-and-reference-sheets
+  - perspective
+  - construction-lines
+  - industrial-drawing
+visualDna:
+  aesthetic: 'Perspective construction drawing: the subject built over a two- or three-point perspective grid, with boxes, ellipses and cross-contours left visible under the final line.'
+  subject_treatment: Keep the prompt subject as the thing documented; this reference profile owns a perspective construction drawing with vanishing lines, boxes and ellipses left visible under the final line, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.
+  color_and_tone: Blue col-erase construction lines under confident black final line on white, light grey marker shadow.
+  lighting_and_shadow: One grey marker shadow plane on the underside and a cast shadow projected with visible construction.
+  texture_and_material: Ruled vanishing lines, sketched ellipses with minor axes marked, cross-contour lines wrapping curved forms.
+  camera_and_composition: Subject large on the sheet, vanishing points marked on or near the edges, horizon line drawn across.
+  atmosphere_and_mood: Analytical and confident, form understood from the inside out.
+  rendering_and_quality: Construction left visible as the point of the image, no painted finish and no labels.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Perspective Construction Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: visible vanishing lines; construction boxes and ellipses; cross-contours; blue under black line; projected cast shadow
+avoidRules:
+  - placeholder gibberish text
+  - invented numbers presented as data
+  - readable labels
+  - brand logo
+  - franchise likeness
+  - free painterly composition instead of a sheet
+  - finished rendering without construction
+  - painted background
+  - watermark
+  - text
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, finished rendering without construction, painted background, watermark, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_04
+  packName: Illustration & Graphic Novel
+  categoryId: technical-and-reference-sheets
+  categoryName: 6. Technical And Reference Sheets
+  tags:
+    - illustration-and-graphic-novel
+    - technical-and-reference-sheets
+    - perspective
+    - construction-lines
+    - industrial-drawing
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: perspective drawing study

@@ -3,7 +3,7 @@ id: SP06-059
 packId: pack_06
 name: Paper Cutout (Digital)
 category: 4. Digital Art
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,49 +12,25 @@ tags:
   - essential-art-styles
   - digital-art
 visualDna:
-  aesthetic: >-
-    Paper Cutout (Digital) acts as a transferable art-medium router: start from Layered paper style,
-    Depth layers and digital art workflow system built from layer control, editable edges, raster or
-    vector logic, screen-era artifacts, and production readability, then apply the medium behavior
-    to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Cut edges; preserve the prompt subject while routing it
-    through the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels,
-    facets, glyphs, or compositing only when the preset calls for them, keeping the requested
-    identity, silhouette, pose, object function, or environment legible.
-  color_and_tone: >-
-    Build color with Solid colors; use color as workflow evidence: palette ramps, neon gradients,
-    RGB channel shifts, flat vector fields, concept-art accents, or controlled digital paint
-    harmonies, with deliberate value grouping, accent control, and medium-specific limits rather
-    than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Drop shadows; shape light through layer modes, rim glow, raster gradients,
-    isometric value, screen emission, glitch clipping, or composited photographic consistency, so
-    value structure supports the medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Paper grain; surface detail should come from the named workflow: brush texture, pixel
-    cells, glyph density, vector fills, polygon facets, paper layers, or signal artifacts only when
-    they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Simplified; compose through digital hierarchy, projection rules,
-    asset readability, editable shape grouping, focal thumbnails, grid logic, or controlled
-    interface-like rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style
-    work.
-  atmosphere_and_mood: >-
-    Keep the mood Playful; derive mood from speed, polish, concept utility, retro-futurism, broken
-    media, toy-scale clarity, or modern production control, letting the medium alter interpretation
-    without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Craft, cute; finish with clean digital intent, readable shapes, purposeful
-    artifacts, and no random over-rendered sludge, clean denoised surfaces where appropriate, and
-    enough craft evidence to make the medium recognizable.
-  key_features: Layered paper style; Depth layers; Solid colors; Paper grain; Simplified
-  creative_brief: >-
-    Apply Paper Cutout (Digital) as an art-style preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Layered paper style, Depth layers, Paper grain without requiring the card image's original
-    subject.
+  aesthetic: 'Digital layered paper cutout: scenes built from stacked flat paper shapes with soft drop shadows between layers, as if cut and arranged in a shallow box.'
+  subject_treatment: Redraw the prompt's subject, pose, setting and framing with this digital mark system as one finished picture; it never becomes a concept board, turnaround sheet or 3D object render.
+  color_and_tone: Solid flat paper colors in harmonious families, often light to dark from front to back or the reverse.
+  lighting_and_shadow: Soft drop shadows cast by each layer onto the one behind, suggesting a few millimeters of depth.
+  texture_and_material: Fine paper fiber grain on every shape, slightly irregular cut edges, no gradients inside shapes.
+  camera_and_composition: Keep the requested framing; scene organized into five to eight overlapping depth layers.
+  atmosphere_and_mood: Gentle, crafted and storybook-like, a tidy paper theater.
+  rendering_and_quality: Flat shapes with subtle paper texture and soft layer shadows; no glossy 3D, no outlines.
+  key_features: stacked flat paper layers; soft layer drop shadows; paper fiber grain; five to eight depth planes; clean cut edges
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Paper Cutout (Digital) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - changing the requested subject
+  - concept board layout
+  - turnaround sheet
+  - game UI or HUD
+  - readable interface text
+  - glossy 3D surfaces
+  - outlines
+  - gradients inside shapes
   - photo
   - realistic
   - photorealistic
@@ -80,14 +56,16 @@ avoidRules:
   - muddy overpaint
   - uncontrolled artifact noise
   - generic concept slop
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-059.webp
 attributes:
-  negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
-    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
-    uncontrolled texture chatter, readable text, low resolution, random AI smear, muddy overpaint,
-    uncontrolled artifact noise, generic concept slop
+  negativePrompt: changing the requested subject, concept board layout, turnaround sheet, game UI or HUD, readable interface text, glossy 3D surfaces, outlines, gradients inside shapes, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, random AI smear, muddy overpaint, uncontrolled artifact noise, generic concept slop, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

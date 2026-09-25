@@ -3,7 +3,7 @@ id: SP06-031
 packId: pack_06
 name: Etching
 category: 3. Printmaking
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,50 +12,23 @@ tags:
   - essential-art-styles
   - printmaking
 visualDna:
-  aesthetic: >-
-    Etching acts as a transferable art-medium router: start from Intaglio print, Plate mark and
-    print-process system built from matrix marks, ink transfer, pressure, registration, plate or
-    block artifacts, and paper absorption, then apply the medium behavior to prompt X instead of
-    recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Fine, fuzzy bitten lines; preserve the prompt subject while
-    converting it into carved, etched, stamped, screened, dotted, grained, or impressed mark
-    systems, keeping the requested identity, silhouette, pose, object function, or environment
-    legible.
-  color_and_tone: >-
-    Build color with Black ink, cream paper; use palette as ink behavior: limited plates, overprint,
-    misregistration, monochrome value, cyan chemistry, newspaper dots, or security green-grey
-    restraint, with deliberate value grouping, accent control, and medium-specific limits rather
-    than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Linear shading; translate light into line density, dot frequency, relief
-    shadow, plate tone, paper reserve, or ink coverage rather than photographic illumination, so
-    value structure supports the medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Plate tone, embossed paper; surface detail should reveal paper fibers, plate marks, burr,
-    gouge, rosin grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping
-    material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Compose for Etching using its key spatial cues: Plate mark; compose
-    through print registration, cut rhythm, border pressure, edition-like balance, negative space,
-    and repeatable mark hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the
-    style work.
-  atmosphere_and_mood: >-
-    Keep the mood Antique, classic; derive mood from hand pressure, mechanical reproduction,
-    archival value, propaganda energy, occult darkness, newspaper grit, or tactile experiment,
-    letting the medium alter interpretation without demanding a specific story, location, or
-    character.
-  rendering_and_quality: >-
-    Finish with Old master intaglio detail with plate pressure tactility; finish as a credible print
-    artifact with exact mark logic, restrained texture, and no fake poster text or random distress
-    overlay, clean denoised surfaces where appropriate, and enough craft evidence to make the medium
-    recognizable.
-  key_features: Intaglio print; Plate mark; Black ink, cream paper; Plate tone, embossed paper
-  creative_brief: >-
-    Apply Etching as an art-style preset over prompt X: preserve the user's requested subject, then
-    route mark-making, palette, surface, composition, mood, and final craft through Intaglio print,
-    Plate mark, Plate tone, embossed paper without requiring the card image's original subject.
+  aesthetic: 'Line etching: lines drawn with a needle through an acid-resistant ground on a copper plate, bitten in acid, inked into the grooves and printed under heavy pressure.'
+  subject_treatment: Redraw the prompt's subject, pose, setting and framing as an impression of this print process; ink transfer, plate or block marks, registration and paper identify the process without requiring any particular scene.
+  color_and_tone: Warm brown-black ink on cream paper with a faint grey plate tone left by incomplete wiping; darker lines where the plate was bitten longer.
+  lighting_and_shadow: 'Values made by line density and bite depth: open parallel lines in light, deep cross-hatched and re-bitten lines in shadow.'
+  texture_and_material: Free, slightly wavering needle lines with blunt ends, lines raised in relief on damp-pressed paper, a sunken plate-mark rectangle around the image.
+  camera_and_composition: Keep the requested framing inside the embossed plate mark, with a clean margin of paper around it.
+  atmosphere_and_mood: Intimate and inquisitive, the look of an old printed book plate.
+  rendering_and_quality: Line-only tone with bitten depth variation, plate tone and embossed plate mark; no solid flat blacks and no halftone dots.
+  key_features: needle-drawn bitten lines; varied bite depth; grey plate tone; embossed plate mark; warm black on cream paper
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Etching as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - changing the requested subject
+  - readable printed text
+  - digital vector cleanliness
+  - solid flat black areas
+  - halftone dots
+  - swelling brush lines
   - photo
   - realistic
   - photorealistic
@@ -81,14 +54,16 @@ avoidRules:
   - smooth digital gradient
   - random distress overlay
   - wrong print process
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-031.webp
 attributes:
-  negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
-    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
-    uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital
-    gradient, random distress overlay, wrong print process
+  negativePrompt: changing the requested subject, readable printed text, digital vector cleanliness, solid flat black areas, halftone dots, swelling brush lines, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital gradient, random distress overlay, wrong print process, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP07-114
+packId: pack_07
+name: Tarred Stave-Hall Interlace
+styleAnchors:
+  - Tarred Stave-Hall Interlace
+  - northern timber stave architecture
+  - tarred scale-shingle roofs
+displayName: Tarred Stave-Hall Interlace
+category: 5. Fantasy And Mythic Architecture
+domain: northern timber stave architecture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - fantasy-and-mythic-architecture
+  - stave-church
+  - tarred-timber
+  - interlace
+visualDna:
+  aesthetic: 'Northern stave architecture: vertical timber staves, steep stacked roofs clad in tarred scale shingles, carved beast-head gable finials and interlace-carved portals.'
+  subject_treatment: Keep the requested structure or object, its function, footprint and camera; rebuild its walls, roof, openings and ornament in this construction logic, and never swap it for a castle, temple or fixed fantasy landmark.
+  color_and_tone: Pine-tar black-brown, weathered silver grey, red-ochre trim, snow white or dark spruce green around; low-key and earthy.
+  lighting_and_shadow: Low northern winter sun grazing the tarred shingles so each scale catches a small sheen; long cold shadows.
+  texture_and_material: Overlapping pointed shingles, sticky tar gloss, adzed staves, deep-cut interlace knotwork relief around doors.
+  camera_and_composition: Keep the requested view; the tiered roof silhouette with finials must read clearly against the sky.
+  atmosphere_and_mood: Austere, windswept and devout, craft built against long winters.
+  rendering_and_quality: Crisp timber detail with visible carving depth; interlace stays ornamental and never forms readable runes.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tarred Stave-Hall Interlace as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: tarred scale-shingle roofs; stacked tiered roof silhouette; carved beast-head finials; interlace portals; low grazing winter sun
+avoidRules:
+  - licensed fantasy location
+  - copy of a known film or game building
+  - readable runes or inscriptions
+  - glossy mirror floor by default
+  - decorative waterfall by default
+  - swapping the requested structure for a castle or temple
+  - horned helmet costume
+  - longship hero
+  - stone masonry walls
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: licensed fantasy location, copy of a known film or game building, readable runes or inscriptions, glossy mirror floor by default, decorative waterfall by default, swapping the requested structure for a castle or temple, horned helmet costume, longship hero, stone masonry walls, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: fantasy-and-mythic-architecture
+  categoryName: 5. Fantasy And Mythic Architecture
+  tags:
+    - architecture-and-interior
+    - fantasy-and-mythic-architecture
+    - stave-church
+    - tarred-timber
+    - interlace
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: northern timber stave architecture

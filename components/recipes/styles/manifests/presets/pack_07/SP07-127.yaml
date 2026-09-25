@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP07-127
+packId: pack_07
+name: Chenille Pipe-Cleaner Craft
+styleAnchors:
+  - Chenille Pipe-Cleaner Craft
+  - pipe-cleaner and pom-pom craft
+  - twisted fuzzy chenille stems
+displayName: Chenille Pipe-Cleaner Craft
+category: 6. Toy Craft And Miniature Architecture
+domain: pipe-cleaner and pom-pom craft
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - toy-craft-and-miniature-architecture
+  - pipe-cleaner
+  - pom-pom
+  - fuzzy-craft
+visualDna:
+  aesthetic: 'Pipe-cleaner craft: the subject bent and twisted from fuzzy chenille stems, with pom-poms for round masses and wiggle-free bead eyes.'
+  subject_treatment: Keep the requested subject, its identity, pose and camera, and rebuild it as a handmade tabletop miniature in this material; a requested object stays that object and never turns into a house or building.
+  color_and_tone: Candy-bright chenille colors, some tinsel metallic stems, pom-pom pastels; saturated against a plain backdrop.
+  lighting_and_shadow: Soft diffused daylight catching the fuzz as a glowing halo along each stem.
+  texture_and_material: Fuzzy fibre halos, visible twisted wire cores at the ends, fluffy pom-poms, tight wraps at joints.
+  camera_and_composition: Keep the requested view as a close macro against a plain seamless backdrop so the silhouettes stay clear.
+  atmosphere_and_mood: Playful, tactile and a little silly, whimsy bent by hand.
+  rendering_and_quality: Macro photograph of a real chenille build with fuzz resolved; no smooth wire or plastic.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chenille Pipe-Cleaner Craft as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: twisted fuzzy chenille stems; pom-pom masses; glowing fibre halos; exposed wire ends; plain seamless backdrop
+avoidRules:
+  - brand logo on parts
+  - readable text
+  - turning a requested object into a house or building
+  - full-scale real construction
+  - playroom or party scene
+  - googly eyes
+  - kids craft table
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: brand logo on parts, readable text, turning a requested object into a house or building, full-scale real construction, playroom or party scene, googly eyes, kids craft table, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: toy-craft-and-miniature-architecture
+  categoryName: 6. Toy Craft And Miniature Architecture
+  tags:
+    - architecture-and-interior
+    - toy-craft-and-miniature-architecture
+    - pipe-cleaner
+    - pom-pom
+    - fuzzy-craft
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: pipe-cleaner and pom-pom craft

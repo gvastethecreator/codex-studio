@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP07-100
+packId: pack_07
+name: White-Cube Gallery
+styleAnchors:
+  - White-Cube Gallery
+  - contemporary art gallery
+  - seamless white walls
+displayName: White-Cube Gallery
+category: 3. Civic Infrastructure And Specialty Spaces
+domain: contemporary art gallery
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - civic-infrastructure-and-specialty-spaces
+  - gallery
+  - white-cube
+  - exhibition
+visualDna:
+  aesthetic: 'White-cube gallery: a neutral exhibition box of seamless white walls, pale polished concrete floor and track lights, where one object is presented as if nothing else exists.'
+  subject_treatment: Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.
+  color_and_tone: Pure matte white walls, pale grey concrete, the exhibited object as the only colour; high key and silent.
+  lighting_and_shadow: Ceiling track spots aimed at the object, soft even wash on the walls, one crisp shadow under the object.
+  texture_and_material: Seamless skim-plastered walls without skirting, sealed polished concrete, recessed track lighting, a low white plinth, no labels.
+  camera_and_composition: Keep the requested view; frontal, one object centred with large empty white margins, sightline to a second room through a wide opening.
+  atmosphere_and_mood: Reverent, cool and exacting, anything placed here becomes art.
+  rendering_and_quality: Clean gallery photograph with even white without clipping, no wall text or labels.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies White-Cube Gallery as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: seamless white walls; polished pale concrete; track spotlights; single object on a low plinth; large empty margins
+avoidRules:
+  - one-point corridor perspective as default
+  - wet mirror-gloss floor as default
+  - turning the requested room into a station or library
+  - readable signage or wayfinding text
+  - wall labels
+  - crowded salon hang
+  - coloured walls
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, wall labels, crowded salon hang, coloured walls, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: civic-infrastructure-and-specialty-spaces
+  categoryName: 3. Civic Infrastructure And Specialty Spaces
+  tags:
+    - architecture-and-interior
+    - civic-infrastructure-and-specialty-spaces
+    - gallery
+    - white-cube
+    - exhibition
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: contemporary art gallery

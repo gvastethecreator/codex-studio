@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP07-132
+packId: pack_07
+name: Anamorphic Viewpoint Alignment
+styleAnchors:
+  - Anamorphic Viewpoint Alignment
+  - single-viewpoint anamorphic space
+  - fragments at different depths
+displayName: Anamorphic Viewpoint Alignment
+category: 7. Megastructure And Impossible Space
+domain: single-viewpoint anamorphic space
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - megastructure-and-impossible-space
+  - anamorphic
+  - perspective
+  - paradox
+visualDna:
+  aesthetic: 'Anamorphic alignment: fragments scattered through deep space line up into one perfect shape only from the camera position and are broken from anywhere else.'
+  subject_treatment: Keep the requested subject recognisable; this preset openly changes its structure into scattered fragments that assemble only from this single viewpoint, and that advertised structural change is the purpose of the preset.
+  color_and_tone: One strong flat color or material for the aligned shape against the natural tones of the setting.
+  lighting_and_shadow: Real light and shadows on each fragment betray their different depths while the shape stays unified.
+  texture_and_material: Painted or built fragments on walls, floors, rocks and posts at very different distances.
+  camera_and_composition: Locked at the single alignment point; small clues at the edges reveal the fragments are far apart.
+  atmosphere_and_mood: Delightful and uncanny, a trick that only works right here.
+  rendering_and_quality: Photographic realism with exact alignment; no flat overlay or composited graphic.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Anamorphic Viewpoint Alignment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: fragments at different depths; one perfect shape from one viewpoint; flat strong color; shadows revealing depth; edge clues to the trick
+avoidRules:
+  - black and gold sci-fi palette by default
+  - franchise ship or station likeness
+  - readable signage or screens
+  - glossy mirror floor by default
+  - flat graphic overlay
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: black and gold sci-fi palette by default, franchise ship or station likeness, readable signage or screens, glossy mirror floor by default, flat graphic overlay, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: megastructure-and-impossible-space
+  categoryName: 7. Megastructure And Impossible Space
+  tags:
+    - architecture-and-interior
+    - megastructure-and-impossible-space
+    - anamorphic
+    - perspective
+    - paradox
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: single-viewpoint anamorphic space

@@ -3,10 +3,10 @@ id: SP13-024
 packId: pack_05
 name: Monumental Impact Burst Style
 styleAnchors:
-  - 'Monumental Impact Burst Style'
-displayName: 'Monumental Impact Burst'
+  - Monumental Impact Burst Style
+displayName: Monumental Impact Burst
 category: 5. Action Motion Setpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -16,41 +16,23 @@ tags:
   - anime
   - action
 visualDna:
-  aesthetic: >-
-    Emphasize the strongest moment of the requested action with hard-edged forms, compact radiating
-    vectors, and clear scale contrast. Let the existing scene supply any debris or impact cues; do
-    not turn the action into an explosion or collision.
-  subject_treatment: >-
-    Preserve the requested subject identities and count, action, pose, props, wardrobe, setting,
-    and tone. Restyle only contour emphasis, scale relationships, and edge rhythm. Do not add,
-    remove, replace, or duplicate people, opponents, props, or scene elements.
-  color_and_tone: >-
-    Preserve the requested palette and emotional temperature. Where compatible, use restrained
-    crimson or gold accents and strong value separation to focus attention on the existing action.
-  lighting_and_shadow: >-
-    Concentrate contrast around the requested action using the lighting already present in the
-    scene. Do not invent flashes, explosions, sparks, electricity, machinery, or magic.
-  texture_and_material: >-
-    Use decisive edges and controlled surface detail to distinguish foreground, subject, and
-    background. Preserve requested materials and add debris, dust, smoke, or grit only when the
-    request includes them.
-  camera_and_composition: >-
-    When the requested camera leaves room for interpretation, use foreground-to-background scale
-    contrast and radiating diagonals centered on the existing action. Preserve its direction and
-    do not imply a collision that the request does not contain.
-  atmosphere_and_mood: >-
-    Let the requested tone lead. Create emphasis through scale and contrast without imposing
-    triumph, danger, aggression, or a more intense emotion than requested.
-  rendering_and_quality: >-
-    Use hard, controlled strokes, stable anatomy or object structure, and a clear action focal
-    point. Keep effects and detail subordinate so the requested subject and action stay legible.
-  key_features: >-
-    Hard-edged forms, scale contrast, compact radiating vectors, decisive contour emphasis, and
-    controlled focal contrast applied to the requested action.
-  creative_brief: >-
-    Give the requested action a strong focal moment through controlled scale contrast, hard strokes,
-    and radiating vectors. Preserve the requested subject, count, props, setting, action, and tone.
+  aesthetic: Anime key frame of the peak instant of the requested action, placed at the hub of radiating structural lines, with one element of the scene enlarged in the foreground for extreme scale contrast.
+  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the peak-moment framing with radiating structure lines and a huge-scale foreground element, and adds no opponent, sports gear, extra prop or danger.
+  color_and_tone: Keep the prompt palette; strongest value contrast sits at the hub, with restrained crimson or gold accents only if already present.
+  lighting_and_shadow: Contrast concentrated at the point of action using the existing light; no flashes, explosions or sparks.
+  texture_and_material: Decisive hard-edged forms; existing debris or droplets only when the prompt already has them.
+  camera_and_composition: Low wide angle with the foreground element filling a third of the frame and scene lines radiating from the action point.
+  atmosphere_and_mood: Monumental emphasis on one instant, weighty without triumph or aggression.
+  rendering_and_quality: Hard controlled strokes, stable structure and a single unmistakable focal hub.
+  key_features: peak instant at the hub; radiating structural lines; huge-scale foreground element; low wide angle; hub-centered contrast
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Monumental Impact Burst Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - added opponent
+  - added sports gear
+  - invented danger or explosion
+  - extra props
+  - readable text
+  - franchise character likeness
   - photoreal
   - static
   - over-noise
@@ -67,13 +49,16 @@ avoidRules:
   - prompt-required card
   - signature
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-024.webp
 attributes:
-  negativePrompt: >-
-    photoreal, static, over-noise, watermark, logo, static pose, low-detail blur, photoreal stunt
-    photo, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, signature, muddy noisy darks
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, static, over-noise, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -8,28 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'JRPG Pixel Diorama Grammar',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'motion blur, inconsistent proportions, changing costume, background scene, literal town requirement, npc crowd requirement, watermark, text, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, readable UI text, logo clutter, generic screenshot, unplayable visual clutter',
+      'copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, flat 2D tile map, motion blur, inconsistent proportions, changing costume, background scene, literal town requirement, npc crowd requirement, watermark, text, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'JRPG Pixel Diorama Grammar acts as a transferable art-medium router: start from Compact JRPG pixel art diorama language with nostalgic 16 bit readability and toy like spatial charm, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity and game-art direction system built from playable readability, UI or asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Pixel diorama: flat pixel-art sprites and pixel textures placed inside a real 3D miniature set, lit with modern bloom and tilt-shift depth of field.',
       subject_treatment:
-        'Transform any prompt subject through Translate any subject into small modular clusters, readable silhouettes, stepped edge logic, and charm first simplification; preserve the prompt subject while routing it through tile readability, icon clarity, splash rendering, interface material, sprite bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject and action recognizable; this preset owns a high tilted camera over a miniature 3D diorama in which characters stay flat pixel sprites, with blank panels and icon shapes instead of any readable text, numbers or logos.',
       color_and_tone:
-        'Build color with Warm limited elevated edge structure, soft dusk accents, separated roof light/shadow bands, and selective jewel color highlights; use color as gameplay hierarchy: rarity glow, faction contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable inventory material, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Warm storybook palette with saturated pixel textures, glowing warm point lights and cool ambient shadows.',
       lighting_and_shadow:
-        'Handle light through Stable top left pixel lighting with blocky cast shadows and simple ambient occlusion under forms; shape light through game readability: rim separation, UI glow, static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so value structure supports the medium and does not overwrite the requested content.',
+        'Real-time point lights, soft bloom around lamps and fires, sprites casting soft 3D shadows onto the set.',
       texture_and_material:
-        'Render Hand placed dithering, tiny tile noise, one pixel highlight ticks, and restrained pattern repetition; surface detail should support genre grammar through parchment, HUD glass, pixel atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping material scale coherent and avoiding noisy filler texture.',
+        'Chunky pixel textures on 3D blocks, flat billboarded character sprites, particle dust and water shimmer.',
       camera_and_composition:
-        'Structure the image through Locked isometric or three quarter diorama framing with stacked depth layers and tidy grid rhythm; compose through gameplay-facing hierarchy, atlas consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+        'High oblique camera over a floating chunk of the world, strong tilt-shift blur at the top and bottom of frame.',
       atmosphere_and_mood:
-        'Keep the mood Adventurous, cozy, exploratory mood without requiring towns, buildings, roads, or NPCs; derive mood from playable stakes, collection desire, tactical control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Nostalgic and wondrous, a remembered childhood game rebuilt as a toy set.',
       rendering_and_quality:
-        'Finish with Crisp pixel scale, no interpolation blur, clean sprite readability, and consistent palette discipline; finish with game-production clarity, strong silhouettes, controlled UI-like detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Crisp pixel sprites against depth-blurred 3D surroundings; no pixel scaling blur on the sprites.',
       key_features:
-        'Compact JRPG pixel art diorama language with nostalgic 16 bit readability and toy like spatial charm; gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity; Warm limited elevated edge structure, soft dusk accents, separated roof light/shadow bands, and selective jewel color highlights; Hand placed dithering, tiny tile noise, one pixel highlight ticks, and restrained pattern repetition; Locked isometric or three quarter diorama framing with stacked depth layers and tidy grid rhythm',
+        'pixel sprites in 3D diorama; tilt-shift blur; bloom point lights; pixel textures on blocks; floating world chunk',
       creative_brief:
-        "Apply JRPG Pixel Diorama Grammar as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Compact JRPG pixel art diorama language with nostalgic 16 bit readability and toy like spatial charm, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity, Hand placed dithering, tiny tile noise, one pixel highlight ticks, and restrained pattern repetition without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies JRPG Pixel Diorama Grammar as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
     layout: {
       preferredFrameCount: 8,
@@ -42,28 +42,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Roguelike Tile Glyph System',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'motion blur, inconsistent proportions, changing costume, background scene, literal dungeon requirement, monster requirement, watermark, text, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter',
+      'copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, letters as creatures, perspective scene, soft shading, motion blur, inconsistent proportions, changing costume, background scene, literal dungeon requirement, monster requirement, watermark, text, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Roguelike Tile Glyph System acts as a transferable art-medium router: start from Roguelike tile grammar built from stark glyph silhouettes, grid logic, and harsh tactical readability, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity and game-art direction system built from playable readability, UI or asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Roguelike tile set: each subject reduced to one square pictographic tile with a stark silhouette in two or three colors on black.',
       subject_treatment:
-        'Transform any prompt subject through Reduce any subject into symbolic tile chunks, clear collision edges, and instantly parsed icon like forms; preserve the prompt subject while routing it through tile readability, icon clarity, splash rendering, interface material, sprite bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject recognizable; present it as one tile or a sheet of matching tiles on a black grid, and build a dungeon map only when the prompt asks for one.',
       color_and_tone:
-        'Build color with Low count palette with black gutters, sickly accent colors, and high contrast value separation; use color as gameplay hierarchy: rarity glow, faction contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable inventory material, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Black ground with two or three flat colors per tile; bone white, rust red, moss green or cold blue as tile accents.',
       lighting_and_shadow:
-        'Handle light through Minimal light logic, mostly value coded planes, with tiny glow accents reserved for interaction points; shape light through game readability: rim separation, UI glow, static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so value structure supports the medium and does not overwrite the requested content.',
+        'No modeled light; value comes from silhouette cutouts and one inner highlight shape.',
       texture_and_material:
-        'Render Chunky pixel pits, chipped edges, procedural speckle, and repeat safe surface motifs; surface detail should support genre grammar through parchment, HUD glass, pixel atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping material scale coherent and avoiding noisy filler texture.',
+        'Hard-edged 32 pixel tiles, one-pixel inner detail lines, no gradients, a faint grid between tiles.',
       camera_and_composition:
-        'Structure the image through Strict orthographic top down or angled tile view with modular alignment and no cinematic depth; compose through gameplay-facing hierarchy, atlas consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Tense, procedural, survival focused mood without requiring subterranean pressure, corridors, traps, or monsters; derive mood from playable stakes, collection desire, tactical control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Orthographic tiles in an even grid with equal padding; each silhouette centered and readable at tiny size.',
+      atmosphere_and_mood: 'Stark and tactical, danger read in a single glance.',
       rendering_and_quality:
-        'Finish with Seamless tile friendly edges, crisp pixel boundaries, readable at thumbnail scale; finish with game-production clarity, strong silhouettes, controlled UI-like detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Consistent tile size, line weight and palette across the whole set; no text glyphs.',
       key_features:
-        'Roguelike tile grammar built from stark glyph silhouettes, grid logic, and harsh tactical readability; gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity; Low count palette with black gutters, sickly accent colors, and high contrast value separation; Chunky pixel pits, chipped edges, procedural speckle, and repeat safe surface motifs; Strict orthographic top down or angled tile view with modular alignment and no cinematic depth',
+        'square pictograph tiles; black ground; two or three colors; even grid; stark silhouettes',
       creative_brief:
-        "Apply Roguelike Tile Glyph System as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Roguelike tile grammar built from stark glyph silhouettes, grid logic, and harsh tactical readability, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity, Chunky pixel pits, chipped edges, procedural speckle, and repeat safe surface motifs without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Roguelike Tile Glyph System as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
     layout: {
       preferredFrameCount: 8,
@@ -73,31 +72,32 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP06-103',
-    name: 'Metroidvania Parallax Gloom',
+    name: 'Side-Scroll Parallax Gloom',
+    displayName: 'Side-Scroll Parallax Gloom',
+    styleAnchors: ['Side-Scroll Parallax Gloom', 'Metroidvania Parallax Gloom'],
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'motion blur, inconsistent proportions, changing costume, background scene, literal cavern requirement, platform requirement, watermark, text, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter',
+      'copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, perspective camera, flat single-layer backdrop, motion blur, inconsistent proportions, changing costume, literal cavern requirement, platform requirement, watermark, text, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Metroidvania Parallax Gloom acts as a transferable art-medium router: start from Layered Metroidvania side scroll style with readable silhouettes against moody parallax depth, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity and game-art direction system built from playable readability, UI or asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Side-scrolling exploration art: a dark near-black gameplay plane in front of four to six parallax layers that fade into colored fog.',
       subject_treatment:
-        'Transform any prompt subject through Shape any subject into bold side view forms, negative space cutouts, and traversal readable contours; preserve the prompt subject while routing it through tile readability, icon clarity, splash rendering, interface material, sprite bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject and action recognizable; this preset owns a flat side-on view built from layered parallax planes, with blank panels and icon shapes instead of any readable text, numbers or logos.',
       color_and_tone:
-        'Build color with Deep cool shadows, muted midtones, rare toxic accents, and strong near field/support field value splits; use color as gameplay hierarchy: rarity glow, faction contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable inventory material, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Foreground near black, midground rich teal or violet, background washed into pale fog; one warm accent for the focal light.',
       lighting_and_shadow:
-        'Handle light through Rim biased side lighting with luminous pockets, heavy occlusion, and atmosphere separated planes; shape light through game readability: rim separation, UI glow, static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so value structure supports the medium and does not overwrite the requested content.',
+        'Backlit silhouettes with thin rim light, god-rays through gaps, glowing flora and embers as small light sources.',
       texture_and_material:
-        'Render Pixel clusters, mossy noise, mineral like speckle, and subtle animated glow implications without fixed scenery; surface detail should support genre grammar through parchment, HUD glass, pixel atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping material scale coherent and avoiding noisy filler texture.',
+        'Painted or pixel textures that lose contrast with each layer, crisp foreground edges, drifting particles.',
       camera_and_composition:
-        'Structure the image through Wide side on composition, layered planes, strong platform read silhouette rhythm, and stable sprite scale; compose through gameplay-facing hierarchy, atlas consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Lonely, exploratory, mysterious tone without requiring caverns, platforms, doors, or creatures; derive mood from playable stakes, collection desire, tactical control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Strict side view; the walkable silhouette runs across the lower third, depth stacked in horizontal bands.',
+      atmosphere_and_mood: 'Lonely and curious, a vast place explored one room at a time.',
       rendering_and_quality:
-        'Finish with Pixel perfect edges, parallax ready depth separation, no painterly blur, no overdetail; finish with game-production clarity, strong silhouettes, controlled UI-like detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Clear value separation between planes so the foreground path always reads.',
       key_features:
-        'Layered Metroidvania side scroll style with readable silhouettes against moody parallax depth; gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity; Deep cool shadows, muted midtones, rare toxic accents, and strong near field/support field value splits; Pixel clusters, mossy noise, mineral like speckle, and subtle animated glow implications without fixed scenery; Wide side on composition, layered planes, strong platform read silhouette rhythm, and stable sprite scale',
+        'strict side view; stacked parallax layers; near-black foreground; fog-washed background; rim-lit silhouettes',
       creative_brief:
-        "Apply Metroidvania Parallax Gloom as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Layered Metroidvania side scroll style with readable silhouettes against moody parallax depth, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity, Pixel clusters, mossy noise, mineral like speckle, and subtle animated glow implications without fixed scenery without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Side-Scroll Parallax Gloom as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
     layout: {
       preferredFrameCount: 8,
@@ -110,28 +110,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cyberpunk Diegetic HUD Glow',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'watermark, text, readable interface copy, literal city scene, weapon requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter',
+      'copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, readable interface copy, weapon requirement, generic cyborg woman face, watermark, text, literal city scene, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Cyberpunk Diegetic HUD Glow acts as a transferable art-medium router: start from Cyberpunk game interface overlay style with luminous diegetic panels, scanline grime, and tactical data density, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity and game-art direction system built from playable readability, UI or asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Diegetic sci-fi HUD: translucent holographic panels, brackets and arcs projected into the world around the subject, glowing cyan and magenta.',
       subject_treatment:
-        'Transform any prompt subject through Wrap any subject in translucent interface strata, segmented targeting brackets, and modular status geometry; preserve the prompt subject while routing it through tile readability, icon clarity, splash rendering, interface material, sprite bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject and action recognizable; this preset owns a layer of in-world holographic interface around and over the subject, with blank panels and icon shapes instead of any readable text, numbers or logos.',
       color_and_tone:
-        'Build color with Cyan magenta warning palette, black glass fields, acid green micro accents, and clipped neon contrast; use color as gameplay hierarchy: rarity glow, faction contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable inventory material, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Dark scene grade with cyan primary and magenta or amber secondary glows; interface additive and luminous.',
       lighting_and_shadow:
-        'Handle light through Screen glow lighting, edge bloom, reflected UI color, and dark underlayers for readable overlays; shape light through game readability: rim separation, UI glow, static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so value structure supports the medium and does not overwrite the requested content.',
+        'Holograms cast soft colored light on nearby surfaces; the rest of the scene stays low-key.',
       texture_and_material:
-        'Render CRT scanlines, transparent glassmorphism, pixel glitches, chromatic fringing, and scratched display haze; surface detail should support genre grammar through parchment, HUD glass, pixel atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping material scale coherent and avoiding noisy filler texture.',
+        'Thin vector lines, segmented arcs, hexagon grids, faint scanlines and slight chromatic fringing on the projections.',
       camera_and_composition:
-        'Structure the image through Layered HUD composition with safe margins, asymmetric grids, and focal brackets instead of fixed screens; compose through gameplay-facing hierarchy, atlas consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Paranoid, high tech, compressed signal energy without requiring urban fabrics, hackers, weapons, or readable text; derive mood from playable stakes, collection desire, tactical control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; brackets frame the focal point, panels sit on an asymmetric grid with safe margins.',
+      atmosphere_and_mood: 'Focused and tense, information wrapped around the moment.',
       rendering_and_quality:
-        'Finish with Sharp vector like UI edges, no legible copy, controlled bloom, and clean hierarchy at small size; finish with game-production clarity, strong silhouettes, controlled UI-like detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Crisp luminous lines with no legible glyphs; interface never hides the subject.',
       key_features:
-        'Cyberpunk game interface overlay style with luminous diegetic panels, scanline grime, and tactical data density; gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity; Cyan magenta warning palette, black glass fields, acid green micro accents, and clipped neon contrast; CRT scanlines, transparent glassmorphism, pixel glitches, chromatic fringing, and scratched display haze; Layered HUD composition with safe margins, asymmetric grids, and focal brackets instead of fixed screens',
+        'holographic brackets; segmented arcs; hexagon grid; scanlines; cyan and magenta glow',
       creative_brief:
-        "Apply Cyberpunk Diegetic HUD Glow as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Cyberpunk game interface overlay style with luminous diegetic panels, scanline grime, and tactical data density, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity, CRT scanlines, transparent glassmorphism, pixel glitches, chromatic fringing, and scratched display haze without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cyberpunk Diegetic HUD Glow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -139,28 +138,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Retro Fighting Game Select Screen',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'watermark, text, human-only portrait, arena requirement, readable character name, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter',
+      'copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, known fighting-game characters, readable character name, watermark, text, human-only portrait, arena requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Retro Fighting Game Select Screen acts as a transferable art-medium router: start from 90s arcade fighting game select screen treatment with bold pixel paint, impact gradients, and competitive energy, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity and game-art direction system built from playable readability, UI or asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        '90s arcade fighter select screen: a grid of bold hand-painted pixel portraits of original fighters with diagonal energy slashes and a versus split.',
       subject_treatment:
-        'Transform any prompt subject through Render any subject as a high contrast selectable emblem with exaggerated contour strength and badge like presence; preserve the prompt subject while routing it through tile readability, icon clarity, splash rendering, interface material, sprite bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject and action recognizable; this preset owns a fighter-select layout of portrait tiles, a highlighted selection and diagonal versus panels, with blank panels and icon shapes instead of any readable text, numbers or logos.',
       color_and_tone:
-        'Build color with Saturated arcade elevated edge structure, electric rim colors, hot shadows, and posterized flesh/object tones without realism; use color as gameplay hierarchy: rarity glow, faction contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable inventory material, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Saturated gradient backgrounds per fighter, hot red, electric blue, acid green, gold selection glow.',
       lighting_and_shadow:
-        'Handle light through Dramatic top/rim lighting with hard cel shadow cuts and glossy screen flare accents; shape light through game readability: rim separation, UI glow, static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so value structure supports the medium and does not overwrite the requested content.',
+        'Dramatic portrait light from below or the side with hard pixel highlights on muscles and armor.',
       texture_and_material:
-        'Render Pixel painted brush clusters, low res dithering, chunky anti aliasing, and arcade monitor softness; surface detail should support genre grammar through parchment, HUD glass, pixel atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping material scale coherent and avoiding noisy filler texture.',
+        'Painterly pixel portraits with dense clusters, crisp tile borders, speed-line slashes and glow edges.',
       camera_and_composition:
-        'Structure the image through Tight icon/portrait framing, diagonal energy slashes, layered selection panels, and strong center lock; compose through gameplay-facing hierarchy, atlas consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Competitive, loud, characterful mood without requiring human fighters, faces, contest geometry, or UI text; derive mood from playable stakes, collection desire, tactical control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Tiled grid of tight portraits or a diagonal split with two large figures facing off; strong symmetry.',
+      atmosphere_and_mood: 'Competitive and loud, the charge before the first round.',
       rendering_and_quality:
-        'Finish with Crisp retro game polish, stable silhouette, no modern photoreal shading, no readable labels; finish with game-production clarity, strong silhouettes, controlled UI-like detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Consistent portrait crop and pixel density; blank name plates, no numbers or timers.',
       key_features:
-        '90s arcade fighting game select screen treatment with bold pixel paint, impact gradients, and competitive energy; gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity; Saturated arcade elevated edge structure, electric rim colors, hot shadows, and posterized flesh/object tones without realism; Pixel painted brush clusters, low res dithering, chunky anti aliasing, and arcade monitor softness; Tight icon/portrait framing, diagonal energy slashes, layered selection panels, and strong center lock',
+        'portrait tile grid; diagonal versus split; painterly pixel portraits; gradient backgrounds; selection glow',
       creative_brief:
-        "Apply Retro Fighting Game Select Screen as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through 90s arcade fighting game select screen treatment with bold pixel paint, impact gradients, and competitive energy, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity, Pixel painted brush clusters, low res dithering, chunky anti aliasing, and arcade monitor softness without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Retro Fighting Game Select Screen as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -168,28 +166,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Isometric Strategy Tile Language',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'motion blur, inconsistent proportions, changing costume, background scene, literal terrain requirement, army requirement, watermark, text, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter',
+      'copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, perspective camera, army requirement, full map scene, motion blur, inconsistent proportions, changing costume, background scene, literal terrain requirement, watermark, text, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Isometric Strategy Tile Language acts as a transferable art-medium router: start from Isometric strategy game tile style with clean tactical geometry, beveled readability, and board game clarity, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity and game-art direction system built from playable readability, UI or asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Isometric strategy tiles: each subject built on a 2:1 diamond tile with beveled edges, as a clean atlas-ready game asset.',
       subject_treatment:
-        'Transform any prompt subject through Convert any subject into modular isometric masses, readable footprint shapes, and turn based visual hierarchy; preserve the prompt subject while routing it through tile readability, icon clarity, splash rendering, interface material, sprite bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject and its design; present it as a standalone game asset on a plain field, and build a gameplay scene or interface only when the prompt asks for one.',
       color_and_tone:
-        'Build color with Controlled terrain like elevated edge structure, faction ready accent bands, and clear value channels for walkable vs blocked areas; use color as gameplay hierarchy: rarity glow, faction contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable inventory material, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Clear readable greens, sand and slate with slightly saturated team-color accents; side faces one step darker.',
       lighting_and_shadow:
-        'Handle light through Consistent upper left light, short cast shadows, contact darkening, and bevel highlights on every tile edge; shape light through game readability: rim separation, UI glow, static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so value structure supports the medium and does not overwrite the requested content.',
+        'Fixed top-left sun on every tile; short consistent shadows falling inside the tile footprint.',
       texture_and_material:
-        'Render Low noise pixel texture, small material swatches, edge seams, and repeatable detail density; surface detail should support genre grammar through parchment, HUD glass, pixel atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping material scale coherent and avoiding noisy filler texture.',
+        'Simple painted textures, beveled tile edges, a visible soil or rock cross-section on the tile sides.',
       camera_and_composition:
-        'Structure the image through 2:1 isometric grid, stable scale, locked diagonals, and composable tile boundaries; compose through gameplay-facing hierarchy, atlas consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Strategic, ordered, readable mood without requiring terrain, armies, bases, or maps; derive mood from playable stakes, collection desire, tactical control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'True 2:1 isometric projection, no vanishing point, tiles centered on a plain light background with equal spacing.',
+      atmosphere_and_mood: 'Orderly and inviting, a board game ready to be played.',
       rendering_and_quality:
-        'Finish with Tile atlas friendly finish, crisp edges, no perspective camera drift, no blurry scaling; finish with game-production clarity, strong silhouettes, controlled UI-like detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Crisp edges and consistent tile size and light across the set; no perspective drift.',
       key_features:
-        'Isometric strategy game tile style with clean tactical geometry, beveled readability, and board game clarity; gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity; Controlled terrain like elevated edge structure, faction ready accent bands, and clear value channels for walkable vs blocked areas; Low noise pixel texture, small material swatches, edge seams, and repeatable detail density; 2:1 isometric grid, stable scale, locked diagonals, and composable tile boundaries',
+        '2:1 diamond tiles; beveled edges; cross-section tile sides; fixed top-left sun; plain background',
       creative_brief:
-        "Apply Isometric Strategy Tile Language as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Isometric strategy game tile style with clean tactical geometry, beveled readability, and board game clarity, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity, Low noise pixel texture, small material swatches, edge seams, and repeatable detail density without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Isometric Strategy Tile Language as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
     layout: {
       preferredFrameCount: 8,
@@ -202,28 +199,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'MOBA Splash Rendering',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'watermark, text, literal battle scene, weapon requirement, human champion requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter',
+      'copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, known champion likeness, literal battle crowd, watermark, text, literal battle scene, weapon requirement, human champion requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'MOBA Splash Rendering acts as a transferable art-medium router: start from Premium MOBA splash art rendering with heroic readability, sculpted form language, and ability color drama, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity and game-art direction system built from playable readability, UI or asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Hero splash art: a painterly 3D-looking champion with exaggerated heroic proportions exploding out of a diagonal composition in ability-colored effects.',
       subject_treatment:
-        'Transform any prompt subject through Elevate any subject into a readable champion like focal form with exaggerated silhouette logic and clear role cues; preserve the prompt subject while routing it through tile readability, icon clarity, splash rendering, interface material, sprite bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject and action recognizable; this preset owns a diagonal heroic splash composition built around one champion-like focal figure, with blank panels and icon shapes instead of any readable text, numbers or logos.',
       color_and_tone:
-        'Build color with Rich complementary palette, one dominant ability hue, cinematic darks, and polished high saturation accents; use color as gameplay hierarchy: rarity glow, faction contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable inventory material, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Saturated complementary palette: warm hero lighting against cool environment, each ability given one signature glow color.',
       lighting_and_shadow:
-        'Handle light through Multi source rim lighting, spell like bloom accents, deep shadow carving, and luminous focal gradients; shape light through game readability: rim separation, UI glow, static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so value structure supports the medium and does not overwrite the requested content.',
+        'Strong key from the ability effect, bright rim light, deep shaped shadows that sculpt big forms.',
       texture_and_material:
-        'Render Smooth digital paint, sharpened material reads, brushed energy trails, and controlled polish on focal surfaces; surface detail should support genre grammar through parchment, HUD glass, pixel atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping material scale coherent and avoiding noisy filler texture.',
+        'Soft painted gradients over sculpted forms, crisp hard-surface armor edges, swirling particle and energy trails.',
       camera_and_composition:
-        'Structure the image through Diagonal splash composition, low to mid heroic angle, large shape hierarchy, and strong poster crop; compose through gameplay-facing hierarchy, atlas consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Epic, competitive, high skill fantasy without requiring heroes, battles, weapons, or contest geometry; derive mood from playable stakes, collection desire, tactical control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Low to mid heroic angle on a strong diagonal; big-medium-small shape hierarchy, background simplified into effects.',
+      atmosphere_and_mood: 'Triumphant and kinetic, a hero at the peak of power.',
       rendering_and_quality:
-        'Finish with Finished key art quality, crisp focal detail, controlled atmospheric depth, no UI or title text; finish with game-production clarity, strong silhouettes, controlled UI-like detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Polished painterly finish with clean silhouette; effects never hide the face or pose.',
       key_features:
-        'Premium MOBA splash art rendering with heroic readability, sculpted form language, and ability color drama; gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity; Rich complementary palette, one dominant ability hue, cinematic darks, and polished high saturation accents; Smooth digital paint, sharpened material reads, brushed energy trails, and controlled polish on focal surfaces; Diagonal splash composition, low to mid heroic angle, large shape hierarchy, and strong poster crop',
+        'diagonal splash; exaggerated heroic proportions; ability-color rim light; particle trails; sculpted painted forms',
       creative_brief:
-        "Apply MOBA Splash Rendering as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Premium MOBA splash art rendering with heroic readability, sculpted form language, and ability color drama, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity, Smooth digital paint, sharpened material reads, brushed energy trails, and controlled polish on focal surfaces without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies MOBA Splash Rendering as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -231,57 +227,57 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Visual Novel Neon Backdrop Wash',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'watermark, text, literal classroom requirement, student requirement, dialogue box, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter',
+      'copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, dialogue box, people in frame by default, readable signage, watermark, text, literal classroom requirement, student requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Visual Novel Neon Backdrop Wash acts as a transferable art-medium router: start from Visual novel backdrop style with neon emotional grading, clean anime paint, and interactive scene clarity, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity and game-art direction system built from playable readability, UI or asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Visual-novel backdrop: a clean anime-painted location with no characters, graded in neon night color and staged for a character to stand in later.',
       subject_treatment:
-        'Transform any prompt subject through Present any subject as a polished story backdrop element with simplified planes and readable mood coding; preserve the prompt subject while routing it through tile readability, icon clarity, splash rendering, interface material, sprite bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt setting and camera; paint it as an empty story backdrop, and add characters only when the prompt names them.',
       color_and_tone:
-        'Build color with Violet blue ambient wash, saturated neon accents, gentle pastel fills, and controlled contrast for UI legibility; use color as gameplay hierarchy: rarity glow, faction contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable inventory material, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Deep indigo base with magenta and cyan neon washes, warm practical lights as small accents.',
       lighting_and_shadow:
-        'Handle light through Soft environmental glow, colored rim edges, broad shadow pools, and late evening luminous haze; shape light through game readability: rim separation, UI glow, static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so value structure supports the medium and does not overwrite the requested content.',
+        'Soft neon spill on surfaces, gentle bloom around signs and windows, smooth gradient shadows.',
       texture_and_material:
-        'Render Smooth anime style digital paint, subtle bloom, gentle gradient noise, and restrained line cleanup; surface detail should support genre grammar through parchment, HUD glass, pixel atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping material scale coherent and avoiding noisy filler texture.',
+        'Clean anime background painting, crisp architectural lines, soft gradient skies and glossy reflective floors.',
       camera_and_composition:
-        'Structure the image through Symmetrical or slightly off center VN framing with open dialogue safe negative space and shallow depth cues; compose through gameplay-facing hierarchy, atlas consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Melancholic, intimate, story charged mood without requiring classrooms, students, desks, or dialogue boxes; derive mood from playable stakes, collection desire, tactical control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Eye-level, near-symmetrical framing with an open central area where a character could stand; lower quarter kept calm.',
+      atmosphere_and_mood: 'Wistful and quiet, a place waiting for its scene.',
       rendering_and_quality:
-        'Finish with Clean support field art finish, no readable text, no UI chrome, enough detail for repeated viewing; finish with game-production clarity, strong silhouettes, controlled UI-like detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Polished, uncluttered backdrop with blank signs; no people, dialogue boxes or words.',
       key_features:
-        'Visual novel backdrop style with neon emotional grading, clean anime paint, and interactive scene clarity; gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity; Violet blue ambient wash, saturated neon accents, gentle pastel fills, and controlled contrast for UI legibility; Smooth anime style digital paint, subtle bloom, gentle gradient noise, and restrained line cleanup; Symmetrical or slightly off center VN framing with open dialogue safe negative space and shallow depth cues',
+        'empty anime backdrop; neon magenta and cyan wash; bloom; open central stage; blank signs',
       creative_brief:
-        "Apply Visual Novel Neon Backdrop Wash as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Visual novel backdrop style with neon emotional grading, clean anime paint, and interactive scene clarity, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity, Smooth anime style digital paint, subtle bloom, gentle gradient noise, and restrained line cleanup without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Visual Novel Neon Backdrop Wash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP06-109',
-    name: 'Soulslike Tarnished Atmosphere',
+    name: 'Eroded Grandeur Dark Fantasy',
+    displayName: 'Eroded Grandeur Dark Fantasy',
+    styleAnchors: ['Eroded Grandeur Dark Fantasy', 'Soulslike Tarnished Atmosphere'],
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'watermark, text, literal citadel requirement, boss requirement, armor requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter',
+      'copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, bright saturated fantasy, known boss likeness, watermark, text, literal citadel requirement, boss requirement, armor requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Soulslike Tarnished Atmosphere acts as a transferable art-medium router: start from Soulslike dark fantasy art direction with eroded grandeur, oppressive negative space, and tarnished material poetry, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity and game-art direction system built from playable readability, UI or asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Dark fantasy art direction of eroded grandeur: colossal ruined architecture, worn stone and dim gold, with a tiny figure against oppressive scale.',
       subject_treatment:
-        'Transform any prompt subject through Make any subject feel ancient, burdened, and monumental through worn edges, severe silhouette, and ritual scale; preserve the prompt subject while routing it through tile readability, icon clarity, splash rendering, interface material, sprite bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, action, setting and camera; this art direction sets palette, light, shape language and finish, and adds no interface elements.',
       color_and_tone:
-        'Build color with Ash gray, old gold, bruised umber, corpse green accents, and desaturated highlights over deep blacks; use color as gameplay hierarchy: rarity glow, faction contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable inventory material, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Desaturated ash grey, bone and ochre with one dim gold or ember accent; low overall saturation.',
       lighting_and_shadow:
-        'Handle light through Thin holy backlight, torch warm pin glows, huge soft shadow masses, and mist diffused silhouettes; shape light through game readability: rim separation, UI glow, static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so value structure supports the medium and does not overwrite the requested content.',
+        'Overcast diffuse light, pale god-rays through ruins, deep atmospheric perspective and faint ember glows.',
       texture_and_material:
-        'Render Corroded metal, cracked stone, dry dust, old cloth grain, soot, and weathered ornament as surface language; surface detail should support genre grammar through parchment, HUD glass, pixel atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping material scale coherent and avoiding noisy filler texture.',
+        'Pitted, eroded stone, rusted and tarnished metal, torn banners, moss and ash drifts.',
       camera_and_composition:
-        'Structure the image through Low, patient framing with monumental empty space, vertical pressure, and slow burn focal hierarchy; compose through gameplay-facing hierarchy, atlas consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Decayed, sacred, hostile mood without requiring fortification scale, bosses, armor, weapons, or eroded structure; derive mood from playable stakes, collection desire, tactical control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; when unspecified, a low patient frame with huge negative space above a small figure.',
+      atmosphere_and_mood: 'Melancholic and oppressive, the ruin of a vanished age.',
       rendering_and_quality:
-        'Finish with Painterly AAA concept finish, restrained detail outside focal areas, no UI or readable text; finish with game-production clarity, strong silhouettes, controlled UI-like detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Painterly realism with restrained detail and heavy atmosphere; no glossy fantasy color.',
       key_features:
-        'Soulslike dark fantasy art direction with eroded grandeur, oppressive negative space, and tarnished material poetry; gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity; Ash gray, old gold, bruised umber, corpse green accents, and desaturated highlights over deep blacks; Corroded metal, cracked stone, dry dust, old cloth grain, soot, and weathered ornament as surface language; Low, patient framing with monumental empty space, vertical pressure, and slow burn focal hierarchy',
+        'colossal ruins; tiny figure; desaturated ash palette; pale god-rays; eroded stone and tarnish',
       creative_brief:
-        "Apply Soulslike Tarnished Atmosphere as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Soulslike dark fantasy art direction with eroded grandeur, oppressive negative space, and tarnished material poetry, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity, Corroded metal, cracked stone, dry dust, old cloth grain, soot, and weathered ornament as surface language without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Eroded Grandeur Dark Fantasy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -289,28 +285,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Chibi Platformer Sprite Bounce',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'motion blur, inconsistent proportions, changing costume, background scene, human character requirement, platform requirement, watermark, text, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter',
+      'copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, platform level scene, motion blur, inconsistent proportions, changing costume, background scene, human character requirement, platform requirement, watermark, text, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Chibi Platformer Sprite Bounce acts as a transferable art-medium router: start from Chibi platformer sprite style with squashy silhouette rhythm, toy like proportions, and instant read at small scale, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity and game-art direction system built from playable readability, UI or asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Chibi platformer sprite: a two-to-three-heads-tall pixel character drawn with squash and stretch, shown as a small sprite sheet of key poses.',
       subject_treatment:
-        'Transform any prompt subject through Adapt any subject into cute compact forms with oversized key shapes, soft corner logic, and bouncy pose arcs; preserve the prompt subject while routing it through tile readability, icon clarity, splash rendering, interface material, sprite bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject and its design; present it as a standalone game asset on a plain field, and build a gameplay scene or interface only when the prompt asks for one.',
       color_and_tone:
-        'Build color with Bright candy palette, simple shadow elevated edge structure, cheerful accent colors, and clean separation from transparent ground; use color as gameplay hierarchy: rarity glow, faction contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable inventory material, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Bright saturated palette with three-step ramps and a darker hue-shifted outline color per material.',
       lighting_and_shadow:
-        'Handle light through Small consistent highlight caps, soft under shadows, and minimal volume modeling for animation stability; shape light through game readability: rim separation, UI glow, static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so value structure supports the medium and does not overwrite the requested content.',
+        'Simple top-left light, one highlight cluster per form and a small oval shadow under each pose.',
       texture_and_material:
-        'Render Smooth pixel clusters, rounded outline pixels, tiny specular dots, and almost no noisy surface texture; surface detail should support genre grammar through parchment, HUD glass, pixel atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping material scale coherent and avoiding noisy filler texture.',
+        'Clean 32 to 48 pixel sprites, selective outlines, squash on landing and stretch on jumps.',
       camera_and_composition:
-        'Structure the image through central orthographic sprite sheet framing with stable scale, predictable pivot, and side/three quarter clarity; compose through gameplay-facing hierarchy, atlas consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Playful, agile, readable mood without requiring characters, platforms, costumes, or support field scenes; derive mood from playable stakes, collection desire, tactical control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Orthographic side view, poses in a tidy row on a plain white or pale field, consistent scale and pivot.',
+      atmosphere_and_mood: 'Bouncy and cheerful, instantly lovable at small size.',
       rendering_and_quality:
-        'Finish with Animation sheet friendly, crisp edges, transparent support field safe, no motion blur, no text; finish with game-production clarity, strong silhouettes, controlled UI-like detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Pixel-perfect clusters with consistent proportions across poses; no background scene.',
       key_features:
-        'Chibi platformer sprite style with squashy silhouette rhythm, toy like proportions, and instant read at small scale; gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity; Bright candy palette, simple shadow elevated edge structure, cheerful accent colors, and clean separation from transparent ground; Smooth pixel clusters, rounded outline pixels, tiny specular dots, and almost no noisy surface texture; central orthographic sprite sheet framing with stable scale, predictable pivot, and side/three quarter clarity',
+        'chibi proportions; squash and stretch; sprite-sheet row; hue-shifted outlines; plain field',
       creative_brief:
-        "Apply Chibi Platformer Sprite Bounce as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Chibi platformer sprite style with squashy silhouette rhythm, toy like proportions, and instant read at small scale, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity, Smooth pixel clusters, rounded outline pixels, tiny specular dots, and almost no noisy surface texture without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chibi Platformer Sprite Bounce as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
     layout: {
       preferredFrameCount: 8,
@@ -323,28 +318,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Battle Royale Compression Colorway',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'watermark, text, literal arena requirement, storm wall requirement, weapon requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter',
+      'copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, known battle royale skins, realistic military gear, weapon requirement, watermark, text, literal arena requirement, storm wall requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Battle Royale Compression Colorway acts as a transferable art-medium router: start from Battle royale visual language with high visibility color coding, stormlike pressure gradients, and streamer era polish, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity and game-art direction system built from playable readability, UI or asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Stylized competitive-shooter art direction: chunky readable forms, bright saturated PBR-lite materials and color coding that separates everything at distance.',
       subject_treatment:
-        'Transform any prompt subject through Clarify any subject through tactical silhouette separation, loot color accents, and strong near field priority; preserve the prompt subject while routing it through tile readability, icon clarity, splash rendering, interface material, sprite bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, action, setting and camera; this art direction sets palette, light, shape language and finish, and adds no interface elements.',
       color_and_tone:
-        'Build color with Saturated cyan violet perimeter glow, warm danger accents, high key mids, and legible game ready contrast; use color as gameplay hierarchy: rarity glow, faction contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable inventory material, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Sunny saturated palette against an encroaching violet storm gradient; rarity tints in white, green, blue, purple and gold.',
       lighting_and_shadow:
-        'Handle light through Encroaching colored haze, bright rim edges, punchy sunlight or LED hits, and simplified shadow readability; shape light through game readability: rim separation, UI glow, static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so value structure supports the medium and does not overwrite the requested content.',
+        'Bright sun with soft ambient fill, strong rim light that separates silhouettes from terrain.',
       texture_and_material:
-        'Render Clean PBR lite materials, compression friendly gradients, subtle screen sharpness, and minimal grime; surface detail should support genre grammar through parchment, HUD glass, pixel atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping material scale coherent and avoiding noisy filler texture.',
+        'Simplified hand-painted textures on chunky shapes, soft plastic-like sheen, clean stylized foliage clumps.',
       camera_and_composition:
-        'Structure the image through Wide playable readability, circular pressure motifs, strong focal isolation, and HUD safe edges; compose through gameplay-facing hierarchy, atlas consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Urgent, competitive, kinetic mood without requiring contest geometry, storms, players, weapons, or vehicles; derive mood from playable stakes, collection desire, tactical control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; favor wide readability with the subject isolated against simple terrain.',
+      atmosphere_and_mood: 'Energetic and playful, with pressure building at the horizon.',
       rendering_and_quality:
-        'Finish with Modern live service key art polish, vivid but not cluttered, no UI labels or readable text; finish with game-production clarity, strong silhouettes, controlled UI-like detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Clean, bright, low-noise rendering; silhouettes readable at a distance.',
       key_features:
-        'Battle royale visual language with high visibility color coding, stormlike pressure gradients, and streamer era polish; gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity; Saturated cyan violet perimeter glow, warm danger accents, high key mids, and legible game ready contrast; Clean PBR lite materials, compression friendly gradients, subtle screen sharpness, and minimal grime; Wide playable readability, circular pressure motifs, strong focal isolation, and HUD safe edges',
+        'chunky stylized forms; rarity color tints; violet storm gradient; strong rim light; clean foliage clumps',
       creative_brief:
-        "Apply Battle Royale Compression Colorway as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Battle royale visual language with high visibility color coding, stormlike pressure gradients, and streamer era polish, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity, Clean PBR lite materials, compression friendly gradients, subtle screen sharpness, and minimal grime without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Battle Royale Compression Colorway as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -352,28 +346,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sci-Fi Arsenal Icon Kit',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'motion blur, inconsistent proportions, changing costume, cluttered background, gun requirement, soldier requirement, watermark, text, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter',
+      'copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, gun requirement, soldier requirement, labels on items, motion blur, inconsistent proportions, changing costume, cluttered background, watermark, text, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Sci-Fi Arsenal Icon Kit acts as a transferable art-medium router: start from Sci fi inventory icon style with hard surface silhouette logic, technical accents, and clean arsenal readability, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity and game-art direction system built from playable readability, UI or asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Sci-fi equipment icon kit: hard-surface items rendered at three-quarter view as matching inventory icons with emissive accent strips.',
       subject_treatment:
-        'Transform any prompt subject through Convert any subject into collectible equipment like icons with crisp outer contours and modular tech segmentation; preserve the prompt subject while routing it through tile readability, icon clarity, splash rendering, interface material, sprite bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject and its design; present it as a standalone game asset on a plain field, and build a gameplay scene or interface only when the prompt asks for one.',
       color_and_tone:
-        'Build color with Gunmetal neutrals, cold blue emissive accents, rarity color trims, and strong dark to light material elevated edge structure; use color as gameplay hierarchy: rarity glow, faction contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable inventory material, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Gunmetal, white ceramic and black rubber with one emissive accent color shared by the whole set.',
       lighting_and_shadow:
-        'Handle light through Small studio like icon lighting, bevel highlights, contact shadow pads, and controlled emissive glows; shape light through game readability: rim separation, UI glow, static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so value structure supports the medium and does not overwrite the requested content.',
+        'Studio key from top-left, cool rim light on the right, subtle glow from emissive strips.',
       texture_and_material:
-        'Render Brushed metal pixels, panel seams, carbon texture hints, tiny bolts, and readable material swatches; surface detail should support genre grammar through parchment, HUD glass, pixel atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping material scale coherent and avoiding noisy filler texture.',
+        'Panel lines, beveled edges, brushed metal, matte polymer and small warning-stripe details without text.',
       camera_and_composition:
-        'Structure the image through central three quarter icon framing, transparent support field, equal padding, and atlas consistent scale; compose through gameplay-facing hierarchy, atlas consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Tactical, collectible, high tech mood without requiring guns, ammo, soldiers, or shooter scenes; derive mood from playable stakes, collection desire, tactical control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Each item at the same three-quarter angle, centered with equal padding in a grid on a dark gradient field.',
+      atmosphere_and_mood: 'Precise and collectible, gear laid out before a mission.',
       rendering_and_quality:
-        'Finish with Icon pack friendly, sharp thumbnail readability, transparent support field safe, no labels; finish with game-production clarity, strong silhouettes, controlled UI-like detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Crisp silhouettes, consistent scale and light across the kit; no labels or numbers.',
       key_features:
-        'Sci fi inventory icon style with hard surface silhouette logic, technical accents, and clean arsenal readability; gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity; Gunmetal neutrals, cold blue emissive accents, rarity color trims, and strong dark to light material elevated edge structure; Brushed metal pixels, panel seams, carbon texture hints, tiny bolts, and readable material swatches; central three quarter icon framing, transparent support field, equal padding, and atlas consistent scale',
+        'three-quarter icon angle; emissive accent strips; panel lines and bevels; dark gradient field; equal grid padding',
       creative_brief:
-        "Apply Sci-Fi Arsenal Icon Kit as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Sci fi inventory icon style with hard surface silhouette logic, technical accents, and clean arsenal readability, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity, Brushed metal pixels, panel seams, carbon texture hints, tiny bolts, and readable material swatches without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sci-Fi Arsenal Icon Kit as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
     layout: {
       preferredFrameCount: 8,
@@ -386,28 +379,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Fantasy MMO Parchment Interface',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'watermark, text, readable map labels, literal world map requirement, castle requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter',
+      'copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, readable map labels, castle requirement, legible script, watermark, text, literal world map requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Fantasy MMO Parchment Interface acts as a transferable art-medium router: start from Fantasy MMO parchment interface style with ornamental cartography logic, aged UI material, and quest screen clarity, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity and game-art direction system built from playable readability, UI or asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Fantasy MMO parchment interface: aged parchment and leather panels with carved wood or metal borders, wax seals and icon slots.',
       subject_treatment:
-        'Transform any prompt subject through Recast any subject into symbolic maplike marks, route like linework, framed medallions, and collectible lore texture; preserve the prompt subject while routing it through tile readability, icon clarity, splash rendering, interface material, sprite bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject and action recognizable; this preset owns a parchment interface panel in which the subject appears as an inked illustration, icon or map, with blank panels and icon shapes instead of any readable text, numbers or logos.',
       color_and_tone:
-        'Build color with Sepia parchment base, ink brown contours, muted jewel accents, red wax like highlights, and soft vignette aging; use color as gameplay hierarchy: rarity glow, faction contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable inventory material, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Warm parchment beige, burnt umber ink, oxblood wax and tarnished brass trim, with small jewel-tone icon accents.',
       lighting_and_shadow:
-        'Handle light through Flat document lighting with subtle edge shadows, embossed ornament glints, and low contrast aged stains; shape light through game readability: rim separation, UI glow, static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so value structure supports the medium and does not overwrite the requested content.',
+        'Soft even light with slight vignette; embossed borders and seals cast short shadows.',
       texture_and_material:
-        'Render Fibrous paper grain, burned borders, stamped motifs, hand inked line jitter, and softened fold marks; surface detail should support genre grammar through parchment, HUD glass, pixel atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping material scale coherent and avoiding noisy filler texture.',
+        'Stained fibrous parchment, tooled leather, carved border ornaments, cracked wax seals, inked lines.',
       camera_and_composition:
-        'Structure the image through Top down UI/document composition with decorative framing, open readable zones, and no required geography; compose through gameplay-facing hierarchy, atlas consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Adventurous, archival, questlike mood without requiring maps, continents, fortification scale, compass roses, or text; derive mood from playable stakes, collection desire, tactical control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Frontal panel layout with ornate frame, one illustrated zone and rows of empty slots or nodes.',
+      atmosphere_and_mood: 'Adventurous and scholarly, a guildhall record of the journey.',
       rendering_and_quality:
-        'Finish with Clean game UI asset finish, no readable labels, strong ornament hierarchy, thumbnail safe; finish with game-production clarity, strong silhouettes, controlled UI-like detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Clean interface hierarchy; any writing is illegible squiggle, never words or numbers.',
       key_features:
-        'Fantasy MMO parchment interface style with ornamental cartography logic, aged UI material, and quest screen clarity; gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity; Sepia parchment base, ink brown contours, muted jewel accents, red wax like highlights, and soft vignette aging; Fibrous paper grain, burned borders, stamped motifs, hand inked line jitter, and softened fold marks; Top down UI/document composition with decorative framing, open readable zones, and no required geography',
+        'parchment panel; carved ornate border; wax seal; icon slots; inked illustration',
       creative_brief:
-        "Apply Fantasy MMO Parchment Interface as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Fantasy MMO parchment interface style with ornamental cartography logic, aged UI material, and quest screen clarity, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity, Fibrous paper grain, burned borders, stamped motifs, hand inked line jitter, and softened fold marks without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fantasy MMO Parchment Interface as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -415,28 +407,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Anime Gacha Foil Frame',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'watermark, text, readable stats, character requirement, weapon requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter',
+      'copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, readable stats, generic anime schoolgirl, revealing outfit, watermark, text, character requirement, weapon requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Anime Gacha Foil Frame acts as a transferable art-medium router: start from Anime gacha card visual style with iridescent foil borders, rarity glow, and polished collectible spectacle, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity and game-art direction system built from playable readability, UI or asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Gacha character card: a vertical collectible card with an ornate iridescent foil frame around a clean anime-painted character illustration.',
       subject_treatment:
-        'Transform any prompt subject through Stage any subject as a premium collectible centerpiece with clean anime contours and rarity coded emphasis; preserve the prompt subject while routing it through tile readability, icon clarity, splash rendering, interface material, sprite bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject and action recognizable; this preset owns a vertical collectible-card frame with a foil border and rarity gems around the subject, with blank panels and icon shapes instead of any readable text, numbers or logos.',
       color_and_tone:
-        'Build color with Pastel jewel gradients, gold/opal foil accents, prismatic highlights, and high key magical contrast; use color as gameplay hierarchy: rarity glow, faction contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable inventory material, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Bright clean anime color in the art window, rainbow holographic foil and gold filigree on the frame.',
       lighting_and_shadow:
-        'Handle light through Sparkle bloom, rim halos, layered glow bursts, and glossy card surface reflections; shape light through game readability: rim separation, UI glow, static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so value structure supports the medium and does not overwrite the requested content.',
+        'Glamorous key light on the character, sparkle and lens-flare bursts, foil catching rainbow reflections.',
       texture_and_material:
-        'Render Holographic foil grain, embossed frame detail, soft star particles, and smooth digital anime finish; surface detail should support genre grammar through parchment, HUD glass, pixel atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping material scale coherent and avoiding noisy filler texture.',
+        'Holographic foil shimmer, embossed gold filigree, faceted rarity gems, particle bursts and petals in the art.',
       camera_and_composition:
-        'Structure the image through Vertical card like framing, ornate border hierarchy, central focus window, and balanced negative space; compose through gameplay-facing hierarchy, atlas consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Desirable, premium, celebratory mood without requiring characters, card text, stats, weapons, or mascots; derive mood from playable stakes, collection desire, tactical control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Vertical card; the character breaks slightly out of the art window, ornate border hierarchy, star gems at top.',
+      atmosphere_and_mood: 'Dazzling and precious, the thrill of a rare pull.',
       rendering_and_quality:
-        'Finish with Clean collectible asset polish, no readable typography, no cluttered UI, controlled sparkle density; finish with game-production clarity, strong silhouettes, controlled UI-like detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Polished anime finish with crisp foil edges; no stats, numbers or name banner.',
       key_features:
-        'Anime gacha card visual style with iridescent foil borders, rarity glow, and polished collectible spectacle; gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity; Pastel jewel gradients, gold/opal foil accents, prismatic highlights, and high key magical contrast; Holographic foil grain, embossed frame detail, soft star particles, and smooth digital anime finish; Vertical card like framing, ornate border hierarchy, central focus window, and balanced negative space',
+        'vertical card; iridescent foil frame; rarity gems; clean anime paint; figure breaking the frame',
       creative_brief:
-        "Apply Anime Gacha Foil Frame as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Anime gacha card visual style with iridescent foil borders, rarity glow, and polished collectible spectacle, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity, Holographic foil grain, embossed frame detail, soft star particles, and smooth digital anime finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Anime Gacha Foil Frame as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -444,28 +435,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Survival Horror Save-Room Lighting',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'watermark, text, literal room requirement, monster requirement, gore, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter',
+      'copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, gore, monster requirement, typewriter save icon, watermark, text, literal room requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Survival Horror Save-Room Lighting acts as a transferable art-medium router: start from Survival horror save interior volume style with static camera dread, low resource warmth, and PS2 era atmospheric grime, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity and game-art direction system built from playable readability, UI or asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Survival-horror safe room: a pre-rendered-looking interior lit by one warm lamp pool inside cold darkness, seen from a fixed high camera.',
       subject_treatment:
-        'Transform any prompt subject through Make any subject feel temporarily protected yet unsafe through restrained staging and fragile focal calm; preserve the prompt subject while routing it through tile readability, icon clarity, splash rendering, interface material, sprite bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, action, setting and camera; this art direction sets palette, light, shape language and finish, and adds no interface elements.',
       color_and_tone:
-        'Build color with Greenish blacks, tobacco browns, dirty cream highlights, small warm safety accents, and crushed low values; use color as gameplay hierarchy: rarity glow, faction contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable inventory material, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Sickly green-grey and brown in the dark, one warm amber pool of light; crushed but not empty shadows.',
       lighting_and_shadow:
-        'Handle light through Weak lamp pools, vignetted corners, deep occlusion, and suspenseful off frame darkness; shape light through game readability: rim separation, UI glow, static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so value structure supports the medium and does not overwrite the requested content.',
+        'Single small warm source, steep falloff, deep shadows in corners, faint cold light from a doorway.',
       texture_and_material:
-        'Render Low poly grime, old wallpaper grain, dust, compression softness, scratched surfaces, and analog noise; surface detail should support genre grammar through parchment, HUD glass, pixel atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping material scale coherent and avoiding noisy filler texture.',
+        'Peeling paint, stained tiles, worn wood and damp plaster, soft film grain over a slightly soft pre-rendered finish.',
       camera_and_composition:
-        'Structure the image through Fixed camera composition, slightly awkward perspective, negative space tension, and deliberate stillness; compose through gameplay-facing hierarchy, atlas consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Claustrophobic, quiet, uneasy mood without requiring interior volume, typewriters, doors, monsters, or gore; derive mood from playable stakes, collection desire, tactical control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; when unspecified, a fixed high-corner angle with slightly awkward perspective and empty space.',
+      atmosphere_and_mood: 'Briefly safe yet uneasy, a held breath before going back out.',
       rendering_and_quality:
-        'Finish with Retro survival horror finish, controlled darkness, readable focal area, no UI or readable text; finish with game-production clarity, strong silhouettes, controlled UI-like detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Soft pre-rendered look with fine grain; no monsters or gore unless the prompt asks.',
       key_features:
-        'Survival horror save interior volume style with static camera dread, low resource warmth, and PS2 era atmospheric grime; gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity; Greenish blacks, tobacco browns, dirty cream highlights, small warm safety accents, and crushed low values; Low poly grime, old wallpaper grain, dust, compression softness, scratched surfaces, and analog noise; Fixed camera composition, slightly awkward perspective, negative space tension, and deliberate stillness',
+        'single warm lamp pool; fixed high-corner camera; green-grey darkness; damp worn surfaces; fine grain',
       creative_brief:
-        "Apply Survival Horror Save-Room Lighting as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Survival horror save interior volume style with static camera dread, low resource warmth, and PS2 era atmospheric grime, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity, Low poly grime, old wallpaper grain, dust, compression softness, scratched surfaces, and analog noise without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Survival Horror Save-Room Lighting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -473,28 +463,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Stealth Game Shadow Readability',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'watermark, text, literal rooftop requirement, guard requirement, weapon requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter',
+      'copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, weapon requirement, guard requirement, muddy midtones, watermark, text, literal rooftop requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Stealth Game Shadow Readability acts as a transferable art-medium router: start from Stealth game art direction with readable shadow zones, cool surveillance mood, and silent tactical composition, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity and game-art direction system built from playable readability, UI or asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Stealth art direction: the world divided into readable lit and unlit zones, cool blue shadow where you hide and warm pools where you are seen.',
       subject_treatment:
-        'Transform any prompt subject through Break any subject into concealment ready silhouettes, light safe edges, and readable exposure states; preserve the prompt subject while routing it through tile readability, icon clarity, splash rendering, interface material, sprite bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, action, setting and camera; this art direction sets palette, light, shape language and finish, and adds no interface elements.',
       color_and_tone:
-        'Build color with Blue black shadows, sodium or cyan guard light accents, desaturated mids, and sharp visibility contrast; use color as gameplay hierarchy: rarity glow, faction contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable inventory material, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Deep blue-violet shadows, warm sodium or lantern pools, very little midtone between them.',
       lighting_and_shadow:
-        'Handle light through Hard pools of detection light, broad occluding darkness, rim hints, and value coded safe/danger zones; shape light through game readability: rim separation, UI glow, static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so value structure supports the medium and does not overwrite the requested content.',
+        'Hard-edged light pools with clear boundaries, moonlight as cool fill, strong occluder shadows.',
       texture_and_material:
-        'Render Damp concrete like roughness, soft bloom in lit areas, subtle grain, and minimal shiny distractions; surface detail should support genre grammar through parchment, HUD glass, pixel atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping material scale coherent and avoiding noisy filler texture.',
+        'Rough stone, tiled roofs, wooden shutters and cloth, details visible in light and lost in shadow.',
       camera_and_composition:
-        'Structure the image through Oblique surveillance framing, strong occluder shapes, path like negative space, and clear stealth lanes; compose through gameplay-facing hierarchy, atlas consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Suspenseful, quiet, covert mood without requiring rooftops, urban fabrics, guards, weapons, or night exteriors; derive mood from playable stakes, collection desire, tactical control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Game readable lighting design, clean silhouette hierarchy, no UI markers or readable text; finish with game-production clarity, strong silhouettes, controlled UI-like detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Keep the requested view; when unspecified, an oblique high angle that shows the hiding path and the light to avoid.',
+      atmosphere_and_mood: 'Silent and tense, patience measured in footsteps.',
+      rendering_and_quality: 'Clean value design where shadow and light zones read at a glance.',
       key_features:
-        'Stealth game art direction with readable shadow zones, cool surveillance mood, and silent tactical composition; gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity; Blue black shadows, sodium or cyan guard light accents, desaturated mids, and sharp visibility contrast; Damp concrete like roughness, soft bloom in lit areas, subtle grain, and minimal shiny distractions; Oblique surveillance framing, strong occluder shapes, path like negative space, and clear stealth lanes',
+        'lit and unlit zones; hard-edged light pools; cool blue shadows; warm lantern light; visible hiding path',
       creative_brief:
-        "Apply Stealth Game Shadow Readability as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Stealth game art direction with readable shadow zones, cool surveillance mood, and silent tactical composition, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity, Damp concrete like roughness, soft bloom in lit areas, subtle grain, and minimal shiny distractions without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stealth Game Shadow Readability as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -502,28 +490,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Arcade Racing Velocity Neon',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'watermark, text, car requirement, race track requirement, readable signage, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter',
+      'copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, car brand badge, readable signage, licensed car likeness, watermark, text, car requirement, race track requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Arcade Racing Velocity Neon acts as a transferable art-medium router: start from Arcade racing neon style with exaggerated speed trails, glossy color bands, and kinetic route readability, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity and game-art direction system built from playable readability, UI or asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Arcade racing art direction: glossy vehicles and streaking neon light trails pulled toward a vanishing point at exaggerated speed.',
       subject_treatment:
-        'Transform any prompt subject through Stretch any subject into velocity forward forms with aerodynamic diagonals, luminous edges, and impact streaks; preserve the prompt subject while routing it through tile readability, icon clarity, splash rendering, interface material, sprite bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, action, setting and camera; this art direction sets palette, light, shape language and finish, and adds no interface elements.',
       color_and_tone:
-        'Build color with Hot magenta, cyan, lime, black asphalt like neutrals, and intense specular contrast; use color as gameplay hierarchy: rarity glow, faction contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable inventory material, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Saturated magenta, cyan and orange light trails against deep blue dusk or night; glossy reflections everywhere.',
       lighting_and_shadow:
-        'Handle light through Neon reflections, tunnel like light strips, streaked highlights, and long directional glow smears; shape light through game readability: rim separation, UI glow, static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so value structure supports the medium and does not overwrite the requested content.',
+        'Neon and headlight streaks, bloom on every light source, bright specular sweeps across curved bodies.',
       texture_and_material:
-        'Render Glossy PBR lite surfaces, motion line bands, bloom haze, wet reflective grain, and compressed arcade sharpness; surface detail should support genre grammar through parchment, HUD glass, pixel atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping material scale coherent and avoiding noisy filler texture.',
+        'Mirror-glossy paint, wet-look reflective road, motion-streaked scenery and sparks.',
       camera_and_composition:
-        'Structure the image through Low wide angle velocity framing, vanishing point pull, diagonal lane rhythm, and strong forward momentum; compose through gameplay-facing hierarchy, atlas consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Fast, loud, competitive mood without requiring cars, tracks, roads, billboards, or urban fabric nights; derive mood from playable stakes, collection desire, tactical control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; favor a low wide angle with strong vanishing-point pull and diagonal lanes.',
+      atmosphere_and_mood: 'Euphoric and fast, speed felt as color.',
       rendering_and_quality:
-        'Finish with High energy arcade polish, controlled motion effects, no readable signage, no UI overlays; finish with game-production clarity, strong silhouettes, controlled UI-like detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Sharp subject against radial motion streaks; no brand badges or signage text.',
       key_features:
-        'Arcade racing neon style with exaggerated speed trails, glossy color bands, and kinetic route readability; gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity; Hot magenta, cyan, lime, black asphalt like neutrals, and intense specular contrast; Glossy PBR lite surfaces, motion line bands, bloom haze, wet reflective grain, and compressed arcade sharpness; Low wide angle velocity framing, vanishing point pull, diagonal lane rhythm, and strong forward momentum',
+        'neon light trails; low wide angle; vanishing-point pull; glossy reflections; radial motion streaks',
       creative_brief:
-        "Apply Arcade Racing Velocity Neon as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Arcade racing neon style with exaggerated speed trails, glossy color bands, and kinetic route readability, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity, Glossy PBR lite surfaces, motion line bands, bloom haze, wet reflective grain, and compressed arcade sharpness without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Arcade Racing Velocity Neon as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -531,28 +518,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'RPG Pixel Inventory Icon System',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'motion blur, inconsistent proportions, changing costume, background scene, weapon requirement, potion requirement, watermark, text, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, readable UI text, logo clutter, generic screenshot, unplayable visual clutter',
+      'copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, item counts, painterly icons, mixed icon scales, motion blur, inconsistent proportions, changing costume, background scene, weapon requirement, potion requirement, watermark, text, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'RPG Pixel Inventory Icon System acts as a transferable art-medium router: start from RPG pixel inventory icon language with collectible clarity, tiny material storytelling, and consistent atlas rhythm, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity and game-art direction system built from playable readability, UI or asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'RPG pixel inventory icons: small 32 by 32 pixel item icons with a one-pixel dark outline, top-left light and a matched slot frame.',
       subject_treatment:
-        'Transform any prompt subject through Turn any subject into an inventory ready icon with compact silhouette, clear rarity cue, and readable function; preserve the prompt subject while routing it through tile readability, icon clarity, splash rendering, interface material, sprite bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject and its design; present it as a standalone game asset on a plain field, and build a gameplay scene or interface only when the prompt asks for one.',
       color_and_tone:
-        'Build color with Earthy base elevated edge structure, jewel accent colors, metal/leather/potion like swatch logic, and strong outline contrast; use color as gameplay hierarchy: rarity glow, faction contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable inventory material, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Three-to-four-step hue-shifted ramps per material, warm highlights and cool shadows, one saturated accent per item.',
       lighting_and_shadow:
-        'Handle light through Top left icon lighting, tiny rim glints, soft contact shadow, and controlled highlight pixels; shape light through game readability: rim separation, UI glow, static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so value structure supports the medium and does not overwrite the requested content.',
+        'Consistent top-left light across every icon, one bright specular pixel on metal and glass.',
       texture_and_material:
-        'Render Hand placed pixel clusters, miniature material pixels, small chips, gleams, labels avoided; surface detail should support genre grammar through parchment, HUD glass, pixel atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping material scale coherent and avoiding noisy filler texture.',
+        'Clean pixel clusters for leather, iron, glass, wood and cloth; no noise, no dithering chatter.',
       camera_and_composition:
-        'Structure the image through central transparent support field icon framing, equal padding, stable scale, and consistent three quarter tilt; compose through gameplay-facing hierarchy, atlas consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Lootable, tactile, game ready mood without requiring weapons, potions, bags, or item sets; derive mood from playable stakes, collection desire, tactical control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Each item centered in an identical square slot with equal padding, arranged as a neat grid.',
+      atmosphere_and_mood: 'Satisfying and collectible, loot sorted with care.',
       rendering_and_quality:
-        'Finish with Icon sheet friendly, crisp low res finish, no text, no support field scene, no interpolation blur; finish with game-production clarity, strong silhouettes, controlled UI-like detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Pixel-perfect edges and uniform scale and outline weight across the set; no numbers.',
       key_features:
-        'RPG pixel inventory icon language with collectible clarity, tiny material storytelling, and consistent atlas rhythm; gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity; Earthy base elevated edge structure, jewel accent colors, metal/leather/potion like swatch logic, and strong outline contrast; Hand placed pixel clusters, miniature material pixels, small chips, gleams, labels avoided; central transparent support field icon framing, equal padding, stable scale, and consistent three quarter tilt',
+        '32x32 pixel icons; one-pixel outline; hue-shifted ramps; top-left light; matched square slots',
       creative_brief:
-        "Apply RPG Pixel Inventory Icon System as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through RPG pixel inventory icon language with collectible clarity, tiny material storytelling, and consistent atlas rhythm, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity, Hand placed pixel clusters, miniature material pixels, small chips, gleams, labels avoided without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies RPG Pixel Inventory Icon System as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
     layout: {
       preferredFrameCount: 8,
@@ -565,28 +551,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cozy Sim Seasonal Palette',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'motion blur, inconsistent proportions, changing costume, background scene, farm requirement, crop requirement, animal requirement, watermark, text, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter',
+      'copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, harsh contrast, gritty textures, known farming game likeness, motion blur, inconsistent proportions, changing costume, farm requirement, crop requirement, animal requirement, watermark, text, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Cozy Sim Seasonal Palette acts as a transferable art-medium router: start from Cozy sim seasonal art style with soft pixel warmth, gentle routine energy, and approachable hand crafted charm, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity and game-art direction system built from playable readability, UI or asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Cozy life-sim art direction: soft pixel or painted forms with rounded shapes, gentle outlines and warm seasonal palettes.',
       subject_treatment:
-        'Transform any prompt subject through Make any subject feel small, friendly, useful, and collectible through rounded forms and soft edge priorities; preserve the prompt subject while routing it through tile readability, icon clarity, splash rendering, interface material, sprite bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, action, setting and camera; this art direction sets palette, light, shape language and finish, and adds no interface elements.',
       color_and_tone:
-        'Build color with Four season palette logic, warm pastels, honeyed highlights, cool morning shadows, and low stress contrast; use color as gameplay hierarchy: rarity glow, faction contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable inventory material, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'One season per image: spring pastels, summer greens, autumn ambers or winter blues, always warm-leaning and low contrast.',
       lighting_and_shadow:
-        'Handle light through Soft ambient daylight, tiny contact shadows, seasonal color washes, and almost no harsh drama; shape light through game readability: rim separation, UI glow, static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so value structure supports the medium and does not overwrite the requested content.',
+        'Soft sunny light, short soft shadows, warm window glow in evening scenes.',
       texture_and_material:
-        'Render Gentle pixel grain, quilt like pattern accents, soft organic noise, and tactile handmade detail; surface detail should support genre grammar through parchment, HUD glass, pixel atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping material scale coherent and avoiding noisy filler texture.',
+        'Rounded wood, soft foliage clumps, knitted and woven textures, small scattered details like flowers and leaves.',
       camera_and_composition:
-        'Structure the image through Isometric or icon atlas framing with tidy spacing, cozy negative space, and clear modular grouping; compose through gameplay-facing hierarchy, atlas consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Calm, domestic, nurturing mood without requiring farms, crops, animals, houses, or seasonal scenery; derive mood from playable stakes, collection desire, tactical control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view; tidy spacing, cozy negative space and small useful objects arranged invitingly.',
+      atmosphere_and_mood: 'Gentle and comforting, daily routine as a small pleasure.',
       rendering_and_quality:
-        'Finish with Clean cozy game polish, crisp but soft edged pixels, no visual clutter, no readable labels; finish with game-production clarity, strong silhouettes, controlled UI-like detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Clean soft outlines and a controlled seasonal palette; nothing harsh or gritty.',
       key_features:
-        'Cozy sim seasonal art style with soft pixel warmth, gentle routine energy, and approachable hand crafted charm; gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity; Four season palette logic, warm pastels, honeyed highlights, cool morning shadows, and low stress contrast; Gentle pixel grain, quilt like pattern accents, soft organic noise, and tactile handmade detail; Isometric or icon atlas framing with tidy spacing, cozy negative space, and clear modular grouping',
+        'seasonal palette; rounded forms; soft outlines; warm light; cozy negative space',
       creative_brief:
-        "Apply Cozy Sim Seasonal Palette as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Cozy sim seasonal art style with soft pixel warmth, gentle routine energy, and approachable hand crafted charm, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity, Gentle pixel grain, quilt like pattern accents, soft organic noise, and tactile handmade detail without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cozy Sim Seasonal Palette as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
     layout: {
       preferredFrameCount: 8,
@@ -599,28 +584,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Boss Encounter Key Art Tension',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'watermark, text, monster requirement, combat scene, weapon requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter',
+      'copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, boss health bar, title lettering, gore, watermark, text, monster requirement, combat scene, weapon requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Boss Encounter Key Art Tension acts as a transferable art-medium router: start from Boss encounter key art style with asymmetrical scale tension, ominous focal pressure, and cinematic game polish, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity and game-art direction system built from playable readability, UI or asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+        'Boss encounter key art: a colossal threat towering over a tiny challenger, cinematic painterly rendering built on extreme scale contrast.',
       subject_treatment:
-        'Transform any prompt subject through Cast any subject as a dramatic threat or challenge through exaggerated scale contrast and dominant silhouette mass; preserve the prompt subject while routing it through tile readability, icon clarity, splash rendering, interface material, sprite bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject and action recognizable; this preset owns a low-angle key-art composition built on extreme scale contrast between threat and challenger, with blank panels and icon shapes instead of any readable text, numbers or logos.',
       color_and_tone:
-        'Build color with Deep cinematic shadows, one menacing accent hue, hot edge highlights, and severe value separation; use color as gameplay hierarchy: rarity glow, faction contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable inventory material, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+        'Dark smoky base with one ominous color for the boss (ember red, poison green or cold violet) and a small warm light on the hero.',
       lighting_and_shadow:
-        'Handle light through Backlit menace, rim fire accents, volumetric haze, and large shadow shapes pressing into focal space; shape light through game readability: rim separation, UI glow, static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so value structure supports the medium and does not overwrite the requested content.',
+        'Strong backlight and rim light on the colossus, silhouetted challenger, smoke and ash catching light.',
       texture_and_material:
-        'Render Polished concept art brushwork, scratched material detail, smoke particles, and sharpened focal textures; surface detail should support genre grammar through parchment, HUD glass, pixel atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping material scale coherent and avoiding noisy filler texture.',
+        'Rough painted detail on the boss, drifting ash, embers and dust, simplified foreground ground plane.',
       camera_and_composition:
-        'Structure the image through Low angle or compressed wide key art crop, huge negative space pressure, diagonal confrontation rhythm; compose through gameplay-facing hierarchy, atlas consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Climactic, dangerous, awe heavy mood without requiring monsters, combat, weapons, contest geometry, or heroes; derive mood from playable stakes, collection desire, tactical control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter interpretation without demanding a specific story, location, or character.',
+        'Low angle from behind the small challenger, boss filling the upper two thirds, diagonal tension lines.',
+      atmosphere_and_mood: 'Ominous and awe-struck, the moment before an impossible fight.',
       rendering_and_quality:
-        'Finish with Finished cinematic key art quality, readable thumbnail silhouette, no UI, no logo, no readable text; finish with game-production clarity, strong silhouettes, controlled UI-like detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+        'Cinematic painterly finish, clear silhouettes at both scales; no health bars or titles.',
       key_features:
-        'Boss encounter key art style with asymmetrical scale tension, ominous focal pressure, and cinematic game polish; gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity; Deep cinematic shadows, one menacing accent hue, hot edge highlights, and severe value separation; Polished concept art brushwork, scratched material detail, smoke particles, and sharpened focal textures; Low angle or compressed wide key art crop, huge negative space pressure, diagonal confrontation rhythm',
+        'extreme scale contrast; low angle from behind the hero; boss rim light; drifting ash; one ominous color',
       creative_brief:
-        "Apply Boss Encounter Key Art Tension as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Boss encounter key art style with asymmetrical scale tension, ominous focal pressure, and cinematic game polish, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and production-art clarity, Polished concept art brushwork, scratched material detail, smoke particles, and sharpened focal textures without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Boss Encounter Key Art Tension as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

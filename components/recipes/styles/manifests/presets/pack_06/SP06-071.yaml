@@ -3,7 +3,7 @@ id: SP06-071
 packId: pack_06
 name: Torn Paper Mosaic
 category: 5. Mixed Media
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,49 +12,25 @@ tags:
   - essential-art-styles
   - mixed-media
 visualDna:
-  aesthetic: >-
-    Torn Paper Mosaic acts as a transferable art-medium router: start from Torn paper image, Torn
-    bits and mixed-media assembly system built from layering, adhesion, surface collision,
-    found-material logic, tactile seams, and handmade construction, then apply the medium behavior
-    to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Torn edges; preserve the prompt subject while rebuilding it
-    through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain,
-    gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object
-    function, or environment legible.
-  color_and_tone: >-
-    Build color with Magazine scraps; treat color as material combination: paper aging, varnish
-    warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled
-    oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than
-    generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Flat; make light reveal relief, varnish gloss, paper lift, tape shine,
-    thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure
-    supports the medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Paper fibers; surface detail should show torn fiber, glue, tape edge, cork tooth, thread
-    thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material
-    scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Pixelated by scraps; compose through layer order, overlap, pin
-    logic, cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring
-    a literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style
-    work.
-  atmosphere_and_mood: >-
-    Keep the mood Creative, recycled; derive mood from DIY urgency, memory, repair, evidence, punk
-    collision, tactile intimacy, decorative excess, or experimental material play, letting the
-    medium alter interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Craft mosaic finish with distance read coherence and fiber edge tactility; finish
-    with coherent material stacking, readable subject transformation, and no single flat texture
-    pasted over the whole image, clean denoised surfaces where appropriate, and enough craft
-    evidence to make the medium recognizable.
-  key_features: Torn paper image; Torn bits; Magazine scraps; Paper fibers; Pixelated by scraps
-  creative_brief: >-
-    Apply Torn Paper Mosaic as an art-style preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Torn paper image, Torn bits, Paper fibers without requiring the card image's original subject.
+  aesthetic: 'Torn-paper mosaic: the subject built from hundreds of fingernail-sized hand-torn paper bits sorted by color like mosaic tesserae.'
+  subject_treatment: Keep the prompt subject, pose, action and camera view; rebuild the picture in this medium so the material sits on the image surface and never replaces clothing, skin or anatomy.
+  color_and_tone: Color mixed optically by neighboring scraps; each scrap one flat tone, warm and cool bits interleaved for gradients.
+  lighting_and_shadow: Soft even light; value comes from scrap color, with slight lift shadows at overlapping torn edges.
+  texture_and_material: White fibrous torn edges around every scrap, magazine gloss beside matte paper, faint glue sheen.
+  camera_and_composition: Keep the requested view; scrap size shrinks at the focal point and grows in the background.
+  atmosphere_and_mood: Patient and playful, an image that resolves only from a distance.
+  rendering_and_quality: Readable from afar, clearly torn scraps up close; no cut straight edges.
+  key_features: hand-torn scraps; white fiber edges; optical color mixing; smaller scraps at the focus; glue sheen
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Torn Paper Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - uniform beige torn-paper wash over every image
+  - red tape strips added by default
+  - material replacing clothing or skin
+  - readable printed words
+  - changing the requested camera view
+  - scissor-cut edges
+  - readable typography
+  - school craft look
   - photo
   - realistic
   - photorealistic
@@ -70,7 +46,6 @@ avoidRules:
   - signature
   - frame
   - border
-  - readable typography
   - advertisement requirement
   - school craft mood
   - wrong medium
@@ -83,15 +58,16 @@ avoidRules:
   - fake scrapbook text
   - craft-table default
   - clean vector render
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-071.webp
 attributes:
-  negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
-    anatomy, watermark, text, signature, frame, border, readable typography, advertisement
-    requirement, school craft mood, wrong medium, generic AI gloss, muddy noise, uncontrolled
-    texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook
-    text, craft-table default, clean vector render
+  negativePrompt: uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, scissor-cut edges, readable typography, school craft look, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, advertisement requirement, school craft mood, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

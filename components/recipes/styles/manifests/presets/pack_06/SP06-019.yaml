@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP06-019
 packId: pack_06
-name: Ballpoint Pen
+name: Ballpoint Scribble Shading
 category: 2. Drawing & Sketching
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,50 +12,23 @@ tags:
   - essential-art-styles
   - drawing-and-sketching
 visualDna:
-  aesthetic: >-
-    Ballpoint Pen acts as a transferable art-medium router: start from Doodle with biro pen,
-    Scribble texture and drawing-media system built from mark pressure, line economy, paper tooth,
-    erasure, hatching, dust, and tool-specific edge behavior, then apply the medium behavior to
-    prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Thin, scribbly lines; preserve the prompt subject while
-    rebuilding it through line weight, contour, hatch density, smudge, scratch, wax, stylus, or
-    marker stroke logic, keeping the requested identity, silhouette, pose, object function, or
-    environment legible.
-  color_and_tone: >-
-    Build color with Blue or Black ink; treat color as tool-limited material: graphite value,
-    charcoal black, ink density, sanguine earth, wax pencil, marker bleed, chalk dust, or metallic
-    trace, with deliberate value grouping, accent control, and medium-specific limits rather than
-    generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Flat; represent light through mark spacing, exposed paper, tonal rubbing,
-    crosshatch density, erased highlights, or flat diagrammatic value control, so value structure
-    supports the medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Notebook paper, indentations; make paper grain, tooth, dust, ink bite, wax buildup,
-    scratch coating, vellum smoothness, or marker streaks visible at the right scale, keeping
-    material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Rough shading; structure forms through line rhythm, gesture,
-    technical geometry, blank space, contour continuity, and readable silhouette logic, with scale,
-    spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Casual, restless, improvised; derive mood from study, immediacy, precision,
-    roughness, temporary mark-making, craft intimacy, or disciplined draftsmanship, letting the
-    medium alter interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Casual, sketch; finish with honest drawing marks, stable anatomy or object
-    structure, clean negative space, and no painterly fill replacing the chosen tool, clean denoised
-    surfaces where appropriate, and enough craft evidence to make the medium recognizable.
-  key_features: >-
-    Doodle with biro pen; Scribble texture; Blue or Black ink; Notebook paper, indentations; Rough
-    shading
-  creative_brief: >-
-    Apply Ballpoint Pen as an art-style preset over prompt X: preserve the user's requested subject,
-    then route mark-making, palette, surface, composition, mood, and final craft through Doodle with
-    biro pen, Scribble texture, Notebook paper, indentations without requiring the card image's
-    original subject.
+  aesthetic: 'Ballpoint scribble drawing: tone built from tangled looping circular scribbles of a cheap ballpoint, layered denser and harder where it needs to go dark.'
+  subject_treatment: Redraw the prompt's subject, pose, setting and framing with this drawing tool only; line quality, pressure response and paper behavior must identify the tool even on a simple object.
+  color_and_tone: Blue or black ballpoint only; pale where the loops are open, a glossy near-solid ink mass where dozens of layers pile up.
+  lighting_and_shadow: Light shown by leaving loops open and sparse; shadows as dense overlapping scribble knots with glossy ink buildup.
+  texture_and_material: Paper indented by pen pressure, small ink blobs at loop turns, slightly glossy ink in the darkest areas, no erasures.
+  camera_and_composition: Keep the requested framing; the scribble density shapes the forms and the edges trail off in loose loops.
+  atmosphere_and_mood: Restless and obsessive, nervous energy turned into form.
+  rendering_and_quality: Continuous circular scribble marks everywhere, no straight hatching and no clean outlines; ink blobs and indents visible.
+  key_features: tangled circular scribble tone; ballpoint ink blobs; glossy dense darks; pressure indentations; loose trailing edges
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ballpoint Scribble Shading as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - changing the requested subject
+  - mixing in a second drawing tool
+  - painted color fill
+  - straight parallel hatching
+  - clean vector outline
+  - lined notebook paper
   - photo
   - realistic
   - photorealistic
@@ -83,15 +56,16 @@ avoidRules:
   - wrong drawing tool
   - airbrushed smoothness
   - photo-real material overlay
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-019.webp
 attributes:
-  negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
-    anatomy, watermark, text, signature, frame, border, notebook requirement, classroom mood, wrong
-    medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low
-    resolution, painterly fill, wrong drawing tool, airbrushed smoothness, photo-real material
-    overlay
+  negativePrompt: changing the requested subject, mixing in a second drawing tool, painted color fill, straight parallel hatching, clean vector outline, lined notebook paper, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, notebook requirement, classroom mood, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, painterly fill, wrong drawing tool, airbrushed smoothness, photo-real material overlay, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -105,3 +79,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Ballpoint Scribble Shading
+styleAnchors:
+  - Ballpoint Scribble Shading
+  - Ballpoint Pen

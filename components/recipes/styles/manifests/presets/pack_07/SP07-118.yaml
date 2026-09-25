@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP07-118
+packId: pack_07
+name: Star-Lattice Desert Palace
+styleAnchors:
+  - Star-Lattice Desert Palace
+  - geometric lattice desert architecture
+  - carved geometric star lattices
+displayName: Star-Lattice Desert Palace
+category: 5. Fantasy And Mythic Architecture
+domain: geometric lattice desert architecture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - fantasy-and-mythic-architecture
+  - lattice-screen
+  - desert
+  - geometric
+visualDna:
+  aesthetic: 'Star-lattice desert architecture: whitewashed and rose-stone halls wrapped in carved screens of interlocking geometric star patterns, horseshoe arches and shaded courtyards.'
+  subject_treatment: Keep the requested structure or object, its function, footprint and camera; rebuild its walls, roof, openings and ornament in this construction logic, and never swap it for a castle, temple or fixed fantasy landmark.
+  color_and_tone: Sand rose, chalk white plaster, cobalt and turquoise tile, patches of hot gold light; warm with cool tile accents.
+  lighting_and_shadow: Hard sun through the lattice projects crisp star-shaped patterns across floors and walls; interiors cool and dim between them.
+  texture_and_material: Pierced carved stone and cedar screens, glazed tile, smooth lime plaster and still courtyard water.
+  camera_and_composition: Keep the requested view; the projected light pattern must cross the main surfaces of the frame.
+  atmosphere_and_mood: Cool shelter from blazing heat, contemplative and precise.
+  rendering_and_quality: Sharp-edged light patterns with crisp geometry; ornament stays geometric and never forms calligraphy or text.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Star-Lattice Desert Palace as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: carved geometric star lattices; star-shaped light patterns projected by hard sun; horseshoe arches; cobalt tile; courtyard shade
+avoidRules:
+  - licensed fantasy location
+  - copy of a known film or game building
+  - readable runes or inscriptions
+  - glossy mirror floor by default
+  - decorative waterfall by default
+  - swapping the requested structure for a castle or temple
+  - calligraphy
+  - flying carpet
+  - genie character
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: licensed fantasy location, copy of a known film or game building, readable runes or inscriptions, glossy mirror floor by default, decorative waterfall by default, swapping the requested structure for a castle or temple, calligraphy, flying carpet, genie character, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: fantasy-and-mythic-architecture
+  categoryName: 5. Fantasy And Mythic Architecture
+  tags:
+    - architecture-and-interior
+    - fantasy-and-mythic-architecture
+    - lattice-screen
+    - desert
+    - geometric
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: geometric lattice desert architecture

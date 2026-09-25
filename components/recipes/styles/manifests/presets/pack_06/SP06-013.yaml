@@ -3,7 +3,7 @@ id: SP06-013
 packId: pack_06
 name: Airbrush (80s)
 category: 1. Traditional Painting
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,50 +12,23 @@ tags:
   - essential-art-styles
   - traditional-painting
 visualDna:
-  aesthetic: >-
-    Airbrush (80s) acts as a transferable art-medium router: start from Retro 80s airbrush art,
-    Smooth gradients and paint-media system built from pigment body, binder behavior, substrate
-    tooth, brush pressure, edge softness, and deliberate surface finish, then apply the medium
-    behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Soft gradients, no brush marks; preserve the prompt subject
-    while translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or
-    sprayed edge behavior, keeping the requested identity, silhouette, pose, object function, or
-    environment legible.
-  color_and_tone: >-
-    Build color with Chrome, neon, sunset; let hue, value, saturation, and mixing come from physical
-    pigment, binder opacity, drying character, and historical medium constraints, with deliberate
-    value grouping, accent control, and medium-specific limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Hyper real, glossy; make light feel interpreted by paint through tonal
-    blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure
-    supports the medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Smooth, grainless; surface detail should show canvas, paper, plaster, wax, velvet, gesso,
-    knife ridges, wash blooms, or aerosol overspray when the medium requires it, keeping material
-    scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Idealized forms; organize the image through painterly massing, brush
-    direction, support format, negative space, edge hierarchy, and intentional simplification, with
-    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Retro, slick; derive mood from medium history, touch, pigment weight, speed,
-    restraint, kitsch, ritual craft, or studio discipline, letting the medium alter interpretation
-    without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Retrofuturist commercial airbrush polish with chrome smooth gradients; finish with
-    medium-faithful paint handling, readable form, controlled texture, and no pasted photo or
-    generic digital filter, clean denoised surfaces where appropriate, and enough craft evidence to
-    make the medium recognizable.
-  key_features: >-
-    Retro 80s airbrush art; Smooth gradients; Chrome, neon, sunset; Smooth, grainless; Idealized
-    forms
-  creative_brief: >-
-    Apply Airbrush (80s) as an art-style preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Retro 80s airbrush art, Smooth gradients, Smooth, grainless without requiring the card image's
-    original subject.
+  aesthetic: 'Eighties commercial airbrush painting: frisket-masked shapes filled with seamless sprayed gradients, chrome reflections and hard pin-point star highlights.'
+  subject_treatment: Redraw the prompt's subject, pose, setting and framing in this paint medium; only edges, layering, paint body and surface change, while identity, proportions and camera stay as requested.
+  color_and_tone: Sunset gradients of magenta, orange and violet, chrome surfaces reflecting a horizon split into sky color above and brown ground below, cyan accents.
+  lighting_and_shadow: 'Idealized glossy light: long smooth gradients across every form, sharp white specular stars on edges, strong rim light.'
+  texture_and_material: Grainless illustration-board surface, crisp frisket-cut edges, a faint spray stipple only in the deepest gradients.
+  camera_and_composition: Keep the requested framing; forms are idealized and streamlined, often set against a large glowing horizon or sky.
+  atmosphere_and_mood: Slick, optimistic and glamorous, dreamy commercial fantasy.
+  rendering_and_quality: Perfectly smooth gradients with masked hard edges and sparkle highlights; no brush marks, no digital noise.
+  key_features: seamless sprayed gradients; frisket-masked hard edges; chrome horizon reflections; star-sparkle highlights; sunset magenta and cyan palette
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Airbrush (80s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - changing the requested subject
+  - changing the requested framing
+  - mixed media collage
+  - visible brushstrokes
+  - muted earth palette
+  - rough texture
   - photo
   - realistic
   - photorealistic
@@ -81,14 +54,16 @@ avoidRules:
   - wrong paint medium
   - flat digital filter
   - plastic CGI finish
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-013.webp
 attributes:
-  negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
-    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
-    uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint
-    medium, flat digital filter, plastic CGI finish
+  negativePrompt: changing the requested subject, changing the requested framing, mixed media collage, visible brushstrokes, muted earth palette, rough texture, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint medium, flat digital filter, plastic CGI finish, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

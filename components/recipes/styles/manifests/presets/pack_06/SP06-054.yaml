@@ -3,7 +3,7 @@ id: SP06-054
 packId: pack_06
 name: Isometric
 category: 4. Digital Art
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,52 +12,25 @@ tags:
   - essential-art-styles
   - digital-art
 visualDna:
-  aesthetic: >-
-    Isometric acts as a transferable art-medium router: start from Isometric digital art projection
-    with equalized depth, toy scale clarity, and no vanishing point, 30 degree angle and digital art
-    workflow system built from layer control, editable edges, raster or vector logic, screen-era
-    artifacts, and production readability, then apply the medium behavior to prompt X instead of
-    recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Parallel lines; preserve the prompt subject while routing
-    it through the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels,
-    facets, glyphs, or compositing only when the preset calls for them, keeping the requested
-    identity, silhouette, pose, object function, or environment legible.
-  color_and_tone: >-
-    Build color with Vibrant; use color as workflow evidence: palette ramps, neon gradients, RGB
-    channel shifts, flat vector fields, concept-art accents, or controlled digital paint harmonies,
-    with deliberate value grouping, accent control, and medium-specific limits rather than generic
-    color wash.
-  lighting_and_shadow: >-
-    Handle light through Studio; shape light through layer modes, rim glow, raster gradients,
-    isometric value, screen emission, glitch clipping, or composited photographic consistency, so
-    value structure supports the medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Smooth; surface detail should come from the named workflow: brush texture, pixel cells,
-    glyph density, vector fills, polygon facets, paper layers, or signal artifacts only when they
-    belong to the preset, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through No perspective; compose through digital hierarchy, projection rules,
-    asset readability, editable shape grouping, focal thumbnails, grid logic, or controlled
-    interface-like rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style
-    work.
-  atmosphere_and_mood: >-
-    Keep the mood Organized, toy like; derive mood from speed, polish, concept utility,
-    retro-futurism, broken media, toy-scale clarity, or modern production control, letting the
-    medium alter interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Game asset; finish with clean digital intent, readable shapes, purposeful artifacts,
-    and no random over-rendered sludge, clean denoised surfaces where appropriate, and enough craft
-    evidence to make the medium recognizable.
-  key_features: >-
-    Isometric digital art projection with equalized depth, toy scale clarity, and no vanishing
-    point; 30 degree angle; Vibrant; Smooth; No perspective
-  creative_brief: >-
-    Apply Isometric as an art-style preset over prompt X: preserve the user's requested subject,
-    then route mark-making, palette, surface, composition, mood, and final craft through Isometric
-    digital art projection with equalized depth, toy scale clarity, and no vanishing point, 30
-    degree angle, Smooth without requiring the card image's original subject.
+  aesthetic: 'Isometric digital illustration: scenes drawn in parallel projection with 30-degree axes and no vanishing point, like a detailed miniature diorama.'
+  subject_treatment: Keep the prompt's subject and setting but show them in true isometric projection; this preset owns the camera angle and the tidy diorama cut-out, not the content.
+  color_and_tone: 'Bright clean palette with three consistent face tones per object: top light, left mid, right dark.'
+  lighting_and_shadow: Fixed light from the upper left, consistent face shading on every block, short soft cast shadows.
+  texture_and_material: Smooth clean surfaces with small crisp details such as windows, crates and plants, no heavy texture.
+  camera_and_composition: True isometric parallel projection, all verticals vertical, the scene cut out as a square or hexagonal block on a plain background.
+  atmosphere_and_mood: Orderly, charming and toy-like, a whole world you could hold.
+  rendering_and_quality: Strict parallel lines, consistent 30-degree angles, three-tone face shading; no perspective convergence, no UI.
+  key_features: parallel 30-degree projection; no vanishing point; three-tone face shading; diorama cut-out block; small crisp details
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Isometric as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - changing the requested subject
+  - concept board layout
+  - turnaround sheet
+  - game UI or HUD
+  - readable interface text
+  - perspective convergence
+  - fisheye
+  - map labels
   - photo
   - realistic
   - photorealistic
@@ -85,14 +58,16 @@ avoidRules:
   - muddy overpaint
   - uncontrolled artifact noise
   - generic concept slop
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-054.webp
 attributes:
-  negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
-    anatomy, watermark, text, signature, frame, border, world map requirement, playset requirement,
-    wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low
-    resolution, random AI smear, muddy overpaint, uncontrolled artifact noise, generic concept slop
+  negativePrompt: changing the requested subject, concept board layout, turnaround sheet, game UI or HUD, readable interface text, perspective convergence, fisheye, map labels, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, world map requirement, playset requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, random AI smear, muddy overpaint, uncontrolled artifact noise, generic concept slop, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

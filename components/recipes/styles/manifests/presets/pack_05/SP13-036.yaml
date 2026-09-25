@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP13-036
+packId: pack_05
+name: Smear-Frame Arc Staging
+styleAnchors:
+  - Smear-Frame Arc Staging
+  - anime action staging
+  - one stretched smear shape along the arc
+displayName: Smear-Frame Arc Staging
+category: 5. Action Motion Setpieces
+domain: anime action staging
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - anime-battle-and-worlds
+  - action
+  - smear-frame
+  - motion-drawing
+visualDna:
+  aesthetic: 'Anime in-between smear frame: the fastest moving part of the subject is drawn as one stretched, distorted ribbon shape along its arc, while the rest of the body stays sharp and on model.'
+  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the smear-frame drawing of the fastest moving part, and adds no opponent, sports gear, extra prop or danger.
+  color_and_tone: Keep the prompt palette; the smear carries the moving part colors in flat bands, slightly lighter than the solid form.
+  lighting_and_shadow: Normal cel light on the solid body; the smear itself is flat with no shading.
+  texture_and_material: One flat smear shape with a crisp outer edge and a feathered tail, no speed lines around it.
+  camera_and_composition: A clean mid-shot that shows the full arc of the smeared part from start pose to end pose.
+  atmosphere_and_mood: Snappy, elastic and fast, the energy of a single animation frame.
+  rendering_and_quality: Stable on-model anatomy outside the smear, with the smear clearly an intentional animation device.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Smear-Frame Arc Staging as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: one stretched smear shape along the arc; rest of body sharp; flat smear color bands; no speed lines; full arc visible
+avoidRules:
+  - added opponent
+  - added sports gear
+  - invented danger or explosion
+  - extra props
+  - readable text
+  - franchise character likeness
+  - speed lines
+  - motion blur
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, speed lines, motion blur, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_05
+  packName: Anime Battle & Worlds
+  categoryId: action
+  categoryName: 5. Action Motion Setpieces
+  tags:
+    - anime-battle-and-worlds
+    - action
+    - smear-frame
+    - motion-drawing
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: anime action staging

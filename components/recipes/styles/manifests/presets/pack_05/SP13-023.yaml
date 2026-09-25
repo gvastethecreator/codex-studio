@@ -3,10 +3,10 @@ id: SP13-023
 packId: pack_05
 name: Neon Vector Discharge Style
 styleAnchors:
-  - 'Neon Vector Discharge Style'
-displayName: 'Neon Vector Discharge'
+  - Neon Vector Discharge Style
+displayName: Neon Vector Discharge
 category: 5. Action Motion Setpieces
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -16,41 +16,23 @@ tags:
   - anime
   - action
 visualDna:
-  aesthetic: >-
-    Use precise anime linework, clean vector-like edges, and deliberate directional geometry to
-    express technical momentum. Violet-blue accents may clarify the line paths where they fit the
-    requested palette; do not require neon, science-fiction, or electrical content.
-  subject_treatment: >-
-    Preserve the requested subject identities and count, action, pose, props, wardrobe, setting,
-    and tone. Restyle only contour precision, gesture emphasis, and edge rhythm. Do not add, remove,
-    replace, or duplicate people, opponents, props, or scene elements.
-  color_and_tone: >-
-    Preserve the requested palette and emotional temperature. Where compatible, use a restrained
-    violet-blue accent on existing edges to separate planes without recoloring or adding objects.
-  lighting_and_shadow: >-
-    Keep lighting precise and directional, with narrow edge highlights on existing forms. Follow
-    the requested light sources; do not invent neon signs, flashes, electricity, machinery, or magic.
-  texture_and_material: >-
-    Keep finishes clean and controlled. Use thin vector-like trails attached to the requested
-    movement, while preserving existing materials and surfaces; add sparks, smoke, grit, or debris
-    only when requested.
-  camera_and_composition: >-
-    When the requested camera leaves room for interpretation, use a controlled oblique view, clean
-    plane separation, and directional paths that trace the requested action. Preserve the stated
-    viewpoint and do not impose a setting or technical equipment.
-  atmosphere_and_mood: >-
-    Preserve the requested tone. Let precision and deliberate spacing create the technical feel
-    without imposing urgency, danger, heroism, or confrontation.
-  rendering_and_quality: >-
-    Use sharp technical contours, stable anatomy or object structure, and uncluttered value groups.
-    Keep vector marks crisp and secondary to the requested subject and action.
-  key_features: >-
-    Precise linework, controlled vector paths, clean plane separation, measured directional
-    geometry, optional violet-blue edge accents, and clear subject and action readability.
-  creative_brief: >-
-    Clarify the requested action with precise contours, controlled vector paths, and clean spatial
-    separation. Preserve the requested subject, count, props, setting, action, and tone.
+  aesthetic: Precise anime action frame in which the exact path of the requested movement is traced as clean vector arcs, like motion-capture curves, thin and geometric behind the moving parts.
+  subject_treatment: Keep the prompt subject, count, action, props and setting; this preset owns the vector path-tracing device that draws the action as clean geometric arcs, and adds no opponent, sports gear, extra prop or danger.
+  color_and_tone: Keep the prompt palette; the path arcs take a restrained violet-blue that sits on existing colors without recoloring them.
+  lighting_and_shadow: Precise directional light with narrow edge highlights on the moving parts; the arcs themselves do not glow.
+  texture_and_material: Clean flat cel finish; arcs are one to two pixels thick, evenly spaced, and fade out after one full movement cycle.
+  camera_and_composition: A controlled three-quarter side view that shows the whole path, with arcs never crossing the face or focal hands.
+  atmosphere_and_mood: Technical, analytical momentum; the movement feels measured and exact rather than violent.
+  rendering_and_quality: Sharp technical contours and crisp vector arcs kept secondary to the subject; no sci-fi interface graphics.
+  key_features: movement path traced as vector arcs; thin evenly spaced curves; violet-blue path color; three-quarter side view; clean flat cel finish
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon Vector Discharge Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - added opponent
+  - added sports gear
+  - invented danger or explosion
+  - extra props
+  - readable text
+  - franchise character likeness
   - photoreal
   - medieval-only
   - washed-colors
@@ -67,13 +49,16 @@ avoidRules:
   - prompt-required card
   - signature
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-023.webp
 attributes:
-  negativePrompt: >-
-    photoreal, medieval-only, washed-colors, watermark, logo, static pose, low-detail blur,
-    photoreal stunt photo, fixed canon character, title scene replication, required source-frame
-    look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks
+  negativePrompt: added opponent, added sports gear, invented danger or explosion, extra props, readable text, franchise character likeness, photoreal, medieval-only, washed-colors, watermark, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, signature, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

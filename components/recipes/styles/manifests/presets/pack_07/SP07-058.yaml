@@ -3,7 +3,7 @@ id: SP07-058
 packId: pack_07
 name: Prismatic Mineral Megastructure
 category: 5. Fantasy And Mythic Architecture
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,69 +12,26 @@ tags:
   - architecture-and-interior
   - fantasy-and-mythic-architecture
 visualDna:
-  aesthetic: >-
-    Prismatic Mineral Megastructure acts as a transferable architecture/interior router: faceted
-    stacking, hexagonal crystal bundles, sapphire-amethyst-white refraction, internal glow,
-    iridescent edges; fuse it with mythic architecture grammar with impossible structure, ritual
-    scale, fantasy material logic, and believable load-bearing ornament; route spatial grammar,
-    material behavior, scale, ornament, and light over prompt X without requiring the default sample
-    anchor, fixed spatial set, landscape setup, or object sample.
-  subject_treatment: >-
-    Preserve prompt subject, action, and context while translating any requested subject through
-    monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or
-    organic envelope logic, and sacred scale; treat faceted stacking, hexagonal crystal bundles,
-    sapphire-amethyst-white refraction, internal glow, iridescent edges as massing, edge, surface,
-    joinery, threshold, or ornament behavior rather than a mandatory building scene.
-  color_and_tone: >-
-    Map color through mineral neutrals, moss and water glow, brass or gold heat, abyssal blues,
-    spectral edge color, and restrained fantasy accents; let source cues such as faceted stacking,
-    hexagonal crystal bundles, sapphire-amethyst-white refraction, internal glow, iridescent edges
-    decide accent hierarchy, material temperature, and value separation while staying attached to
-    the requested content.
-  lighting_and_shadow: >-
-    Use sacred glow, forge heat, underwater diffusion, cloud rim, mineral refraction, spectral low
-    light, and monumental shadow hierarchy; make light reveal joints, relief, material depth, scale,
-    and atmosphere from faceted stacking, hexagonal crystal bundles, sapphire-amethyst-white
-    refraction, internal glow, iridescent edges without replacing prompt X with a stock
-    architectural render.
-  texture_and_material: >-
-    Render living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass
-    surrealism, bone marble, and rune-like non-text marks; prioritize the tactile signals in faceted
-    stacking, hexagonal crystal bundles, sapphire-amethyst-white refraction, internal glow,
-    iridescent edges, with believable surface response, denoised grain, coherent wear, and no
-    generic wallpaper texture.
-  camera_and_composition: >-
-    Frame through detail-first mythic anchors, section cuts, undercut gravity, vertical compression,
-    ritual thresholds, and scale without literal throne-room lock; convert faceted stacking,
-    hexagonal crystal bundles, sapphire-amethyst-white refraction, internal glow, iridescent edges
-    into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules
-    instead of one fixed style sample layout.
-  atmosphere_and_mood: >-
-    Carry mood through sublime, sacred, engineered, haunted, playful, abyssal, pastoral, or
-    monumental pressure carried through structure and material; the preset can support adult,
-    strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for
-    them while keeping the architectural identity readable.
-  rendering_and_quality: >-
-    Finish with high-control fantasy-architecture finish with coherent material logic, no licensed
-    location read, no weapon or character dependency; keep clean denoise, legible construction,
-    stable object or anatomy structure when applicable, no watermark, no fake readable text, no
-    logo, no camera prop, and no prompt-literal card copy.
-  key_features: >-
-    faceted stacking, hexagonal crystal bundles, sapphire-amethyst-white refraction, internal glow,
-    iridescent edges; monumental mass, symbolic thresholds, carved or grown structure, impossible
-    support, mineral or organic envelope logic, and sacred scale; living wood, chiseled stone,
-    hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like
-    non-text marks; detail-first mythic anchors, section cuts, undercut gravity, vertical
-    compression, ritual thresholds, and scale without literal throne-interior zones lock
-  creative_brief: >-
-    Apply Prismatic Mineral Megastructure after prompt X as a transferable architecture/interior
-    style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset
-    supplies faceted stacking, hexagonal crystal bundles, sapphire-amethyst-white refraction,
-    internal glow, iridescent edges, mythic architecture grammar with impossible structure, ritual
-    scale, fantasy material logic, and believable load-bearing ornament, material discipline,
-    spatial grammar, and negative controls without requiring a single spatial sample, product-photo
-    setup, aisle-like default, or empty abstraction.
+  aesthetic: 'Crystal-grown architecture: walls and towers built from clustered hexagonal quartz and amethyst prisms, cleavage planes serving as floors, light travelling inside the stone.'
+  subject_treatment: Keep the requested structure or object, its function, footprint and camera; rebuild its walls, roof, openings and ornament in this construction logic, and never swap it for a castle, temple or fixed fantasy landmark.
+  color_and_tone: Sapphire, amethyst violet and milky white quartz with thin spectral fringes at every edge; cool, saturated jewel tones.
+  lighting_and_shadow: Light enters one face and exits another, casting caustics and small rainbow dispersions across floors; glow from inside the prisms.
+  texture_and_material: Hard hexagonal facets, cloudy inclusions, frosted fracture surfaces at the base of each cluster, razor-sharp terminations.
+  camera_and_composition: Keep the requested view; prism clusters radiate from a base so silhouettes stay spiky and asymmetric.
+  atmosphere_and_mood: Cold, resonant and otherworldly, a building that seems to have crystallized overnight.
+  rendering_and_quality: Refraction-accurate glass rendering with crisp facets; distinct from ice, which is cyan, bubbled and melting.
+  key_features: hexagonal quartz and amethyst prisms; internal light transmission; caustics and rainbow dispersion; frosted fracture bases; spiky asymmetric silhouettes
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Prismatic Mineral Megastructure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - licensed fantasy location
+  - copy of a known film or game building
+  - readable runes or inscriptions
+  - glossy mirror floor by default
+  - decorative waterfall by default
+  - swapping the requested structure for a castle or temple
+  - opaque brick masonry
+  - ice and snow
+  - single temple spire postcard
   - ordinary brick-wall dominance
   - wood-cabin material lock
   - opaque masonry overriding crystalline optics
@@ -87,7 +44,6 @@ avoidRules:
   - library aisle
   - corridor
   - empty abstraction
-  - licensed fantasy location
   - throne interior zones default
   - weapon prop
   - character hero
@@ -102,16 +58,16 @@ avoidRules:
   - camera prop
   - mandatory interior set
   - prompt-literal card
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-058.webp
 attributes:
-  negativePrompt: >-
-    ordinary brick-wall dominance, wood-cabin material lock, opaque masonry overriding crystalline
-    optics, temple postcard, single spire hero, ordinary brick, wood cabin, people, market aisle,
-    library aisle, corridor, empty abstraction, licensed fantasy location, throne interior zones
-    default, weapon prop, character hero, fixed building-only scene, mandatory interior interior
-    zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo,
-    watermark, camera prop, mandatory interior set, prompt-literal card
+  negativePrompt: licensed fantasy location, copy of a known film or game building, readable runes or inscriptions, glossy mirror floor by default, decorative waterfall by default, swapping the requested structure for a castle or temple, opaque brick masonry, ice and snow, single temple spire postcard, ordinary brick-wall dominance, wood-cabin material lock, opaque masonry overriding crystalline optics, temple postcard, single spire hero, ordinary brick, wood cabin, people, market aisle, library aisle, corridor, empty abstraction, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

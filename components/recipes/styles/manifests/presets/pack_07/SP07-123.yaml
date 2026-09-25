@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP07-123
+packId: pack_07
+name: Quilled Paper Coil Relief
+styleAnchors:
+  - Quilled Paper Coil Relief
+  - paper quilling relief
+  - rolled paper-strip coils
+displayName: Quilled Paper Coil Relief
+category: 6. Toy Craft And Miniature Architecture
+domain: paper quilling relief
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - toy-craft-and-miniature-architecture
+  - quilling
+  - paper-coils
+  - relief
+visualDna:
+  aesthetic: 'Paper quilling: the subject formed from narrow paper strips rolled into tight coils, teardrops and scrolls, glued edge-up onto a backing board as a shallow relief.'
+  subject_treatment: Keep the requested subject, its identity, pose and camera, and rebuild it as a handmade tabletop miniature in this material; a requested object stays that object and never turns into a house or building.
+  color_and_tone: Bright graded strip colors against a plain white or black backing; gradients built strip by strip.
+  lighting_and_shadow: Low side light so every coil casts a thin crescent shadow and the relief reads in depth.
+  texture_and_material: Paper strip edges only, tight and loose coils, pinched teardrop and eye shapes, tiny glue gaps.
+  camera_and_composition: Keep the requested view flattened into a frontal relief on the board, slightly angled to show the strip height.
+  atmosphere_and_mood: Delicate, joyful and meticulous, drawing made with rolled paper.
+  rendering_and_quality: Macro photograph of a real quilled relief; strip edges crisp, no printed paper surfaces.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Quilled Paper Coil Relief as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: rolled paper-strip coils; teardrop and scroll shapes; edge-up relief on a board; strip-by-strip gradients; low side light
+avoidRules:
+  - brand logo on parts
+  - readable text
+  - turning a requested object into a house or building
+  - full-scale real construction
+  - playroom or party scene
+  - flat printed paper
+  - folded origami
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: brand logo on parts, readable text, turning a requested object into a house or building, full-scale real construction, playroom or party scene, flat printed paper, folded origami, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: toy-craft-and-miniature-architecture
+  categoryName: 6. Toy Craft And Miniature Architecture
+  tags:
+    - architecture-and-interior
+    - toy-craft-and-miniature-architecture
+    - quilling
+    - paper-coils
+    - relief
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: paper quilling relief

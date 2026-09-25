@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP07-110
+packId: pack_07
+name: Cloister Herb Garth
+styleAnchors:
+  - Cloister Herb Garth
+  - medieval monastic herb garden
+  - square garth inside an arcaded walk
+displayName: Cloister Herb Garth
+category: 4. Landscape And Garden Systems
+domain: medieval monastic herb garden
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - landscape-and-garden-systems
+  - cloister-garden
+  - herbs
+  - medieval
+visualDna:
+  aesthetic: 'Cloister herb garth: a medieval monastic garden enclosed by an arcaded walk, laid out in quartered raised beds edged with woven wattle or timber boards around a central well.'
+  subject_treatment: Keep the requested site, subject, action and camera; reorganise ground plane, planting, edging and paths in this garden system only where the prompt has outdoor ground, and add no garden to an interior, object or portrait prompt.
+  color_and_tone: Sage and silver herb greens, lavender and marigold accents, honey stone arcades, wattle brown, well-stone grey; gentle, muted, warm.
+  lighting_and_shadow: Soft light filling the square garth, arcade columns casting a rhythm of shadows on the walk, a bright centre.
+  texture_and_material: Woven hazel wattle bed edges, beaten earth paths, rue, sage, hyssop, feverfew, lavender and marigold, a stone well head, carved capitals of the cloister arcade.
+  camera_and_composition: Keep the requested view; from the arcade looking into the square garth, beds in a grid around the well.
+  atmosphere_and_mood: Peaceful, useful and contemplative, healing grown in order.
+  rendering_and_quality: Soft daylight photograph with individual herbs legible, no readable plant labels.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cloister Herb Garth as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: square garth inside an arcaded walk; quartered raised beds; woven wattle edging; central stone well; medicinal herbs
+avoidRules:
+  - golden-hour garden postcard formula
+  - corten steel edging as default
+  - real city skyline or landmark
+  - adding a garden to an interior or object prompt
+  - readable plant labels
+  - ornamental bedding plants
+  - lawn centre
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: golden-hour garden postcard formula, corten steel edging as default, real city skyline or landmark, adding a garden to an interior or object prompt, readable plant labels, ornamental bedding plants, lawn centre, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: landscape-and-garden-systems
+  categoryName: 4. Landscape And Garden Systems
+  tags:
+    - architecture-and-interior
+    - landscape-and-garden-systems
+    - cloister-garden
+    - herbs
+    - medieval
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: medieval monastic herb garden

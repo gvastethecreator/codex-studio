@@ -3,7 +3,7 @@ id: SP06-110
 packId: pack_06
 name: Chibi Platformer Sprite Bounce
 category: 7. Game Art Directions & UI
-version: 1
+version: 2
 supportedTasks:
   - sprite_sheet
   - image_generate
@@ -12,68 +12,23 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: >-
-    Chibi Platformer Sprite Bounce acts as a transferable art-medium router: start from Chibi
-    platformer sprite style with squashy silhouette rhythm, toy like proportions, and instant read
-    at small scale, gameplay-readable hierarchy, genre-specific surface language, UI-aware
-    composition, and production-art clarity and game-art direction system built from playable
-    readability, UI or asset grammar, role clarity, production polish, and genre-specific visual
-    feedback, then apply the medium behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Adapt any subject into cute compact forms with oversized
-    key shapes, soft corner logic, and bouncy pose arcs; preserve the prompt subject while routing
-    it through tile readability, icon clarity, splash rendering, interface material, sprite bounce,
-    shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object
-    function, or environment legible.
-  color_and_tone: >-
-    Build color with Bright candy palette, simple shadow elevated edge structure, cheerful accent
-    colors, and clean separation from transparent ground; use color as gameplay hierarchy: rarity
-    glow, faction contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or
-    readable inventory material, with deliberate value grouping, accent control, and medium-specific
-    limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Small consistent highlight caps, soft under shadows, and minimal volume
-    modeling for animation stability; shape light through game readability: rim separation, UI glow,
-    static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so
-    value structure supports the medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Smooth pixel clusters, rounded outline pixels, tiny specular dots, and almost no noisy
-    surface texture; surface detail should support genre grammar through parchment, HUD glass, pixel
-    atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping
-    material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through central orthographic sprite sheet framing with stable scale,
-    predictable pivot, and side/three quarter clarity; compose through gameplay-facing hierarchy,
-    atlas consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or
-    selection-screen energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style
-    work.
-  atmosphere_and_mood: >-
-    Keep the mood Playful, agile, readable mood without requiring characters, platforms, costumes,
-    or support field scenes; derive mood from playable stakes, collection desire, tactical control,
-    cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter
-    interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Animation sheet friendly, crisp edges, transparent support field safe, no motion
-    blur, no text; finish with game-production clarity, strong silhouettes, controlled UI-like
-    detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and
-    enough craft evidence to make the medium recognizable.
-  key_features: >-
-    Chibi platformer sprite style with squashy silhouette rhythm, toy like proportions, and instant
-    read at small scale; gameplay-readable hierarchy, genre-specific surface language, UI-aware
-    composition, and production-art clarity; Bright candy palette, simple shadow elevated edge
-    structure, cheerful accent colors, and clean separation from transparent ground; Smooth pixel
-    clusters, rounded outline pixels, tiny specular dots, and almost no noisy surface texture;
-    central orthographic sprite sheet framing with stable scale, predictable pivot, and side/three
-    quarter clarity
-  creative_brief: >-
-    Apply Chibi Platformer Sprite Bounce as an art-style preset over prompt X: preserve the user's
-    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
-    through Chibi platformer sprite style with squashy silhouette rhythm, toy like proportions, and
-    instant read at small scale, gameplay-readable hierarchy, genre-specific surface language,
-    UI-aware composition, and production-art clarity, Smooth pixel clusters, rounded outline pixels,
-    tiny specular dots, and almost no noisy surface texture without requiring the card image's
-    original subject.
+  aesthetic: 'Chibi platformer sprite: a two-to-three-heads-tall pixel character drawn with squash and stretch, shown as a small sprite sheet of key poses.'
+  subject_treatment: Keep the prompt subject and its design; present it as a standalone game asset on a plain field, and build a gameplay scene or interface only when the prompt asks for one.
+  color_and_tone: Bright saturated palette with three-step ramps and a darker hue-shifted outline color per material.
+  lighting_and_shadow: Simple top-left light, one highlight cluster per form and a small oval shadow under each pose.
+  texture_and_material: Clean 32 to 48 pixel sprites, selective outlines, squash on landing and stretch on jumps.
+  camera_and_composition: Orthographic side view, poses in a tidy row on a plain white or pale field, consistent scale and pivot.
+  atmosphere_and_mood: Bouncy and cheerful, instantly lovable at small size.
+  rendering_and_quality: Pixel-perfect clusters with consistent proportions across poses; no background scene.
+  key_features: chibi proportions; squash and stretch; sprite-sheet row; hue-shifted outlines; plain field
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chibi Platformer Sprite Bounce as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - copied game characters
+  - known game HUD layout
+  - readable interface text
+  - numbers and stat values
+  - publisher or studio logo
+  - platform level scene
   - motion blur
   - inconsistent proportions
   - changing costume
@@ -93,14 +48,16 @@ avoidRules:
   - logo clutter
   - generic screenshot
   - unplayable visual clutter
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-110.webp
 attributes:
-  negativePrompt: >-
-    motion blur, inconsistent proportions, changing costume, background scene, human character
-    requirement, platform requirement, watermark, text, wrong medium, generic AI gloss, muddy noise,
-    uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo
-    clutter, generic screenshot, unplayable visual clutter
+  negativePrompt: copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, platform level scene, motion blur, inconsistent proportions, changing costume, background scene, human character requirement, platform requirement, watermark, text, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   layout:
     preferredFrameCount: 8
     frameGrid: 4x2

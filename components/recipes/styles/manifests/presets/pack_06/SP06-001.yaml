@@ -3,7 +3,7 @@ id: SP06-001
 packId: pack_06
 name: Oil Painting (Classic)
 category: 1. Traditional Painting
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,50 +12,23 @@ tags:
   - essential-art-styles
   - traditional-painting
 visualDna:
-  aesthetic: >-
-    Oil Painting (Classic) acts as a transferable art-medium router: start from Classic oil painting
-    on canvas, Visible brushwork and paint-media system built from pigment body, binder behavior,
-    substrate tooth, brush pressure, edge softness, and deliberate surface finish, then apply the
-    medium behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Thick impasto brush strokes; preserve the prompt subject
-    while translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or
-    sprayed edge behavior, keeping the requested identity, silhouette, pose, object function, or
-    environment legible.
-  color_and_tone: >-
-    Build color with Rich, deep, blended traditional pigments; let hue, value, saturation, and
-    mixing come from physical pigment, binder opacity, drying character, and historical medium
-    constraints, with deliberate value grouping, accent control, and medium-specific limits rather
-    than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Dramatic chiaroscuro; make light feel interpreted by paint through tonal
-    blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure
-    supports the medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Canvas grain, raised paint, brush bristles; surface detail should show canvas, paper,
-    plaster, wax, velvet, gesso, knife ridges, wash blooms, or aerosol overspray when the medium
-    requires it, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Slightly impressionistic; organize the image through painterly
-    massing, brush direction, support format, negative space, edge hierarchy, and intentional
-    simplification, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Timeless, expressive; derive mood from medium history, touch, pigment weight,
-    speed, restraint, kitsch, ritual craft, or studio discipline, letting the medium alter
-    interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Masterpiece, museum quality; finish with medium-faithful paint handling, readable
-    form, controlled texture, and no pasted photo or generic digital filter, clean denoised surfaces
-    where appropriate, and enough craft evidence to make the medium recognizable.
-  key_features: >-
-    Classic oil painting on canvas; Visible brushwork; Rich, deep, blended traditional pigments;
-    Canvas grain, raised paint, brush bristles; Slightly impressionistic
-  creative_brief: >-
-    Apply Oil Painting (Classic) as an art-style preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Classic oil painting on canvas, Visible brushwork, Canvas grain, raised paint, brush bristles
-    without requiring the card image's original subject.
+  aesthetic: 'Classic studio oil painting: transparent warm darks laid in thin, opaque lead-white lights built up thick, and form turned by a strong single light in the academic chiaroscuro manner.'
+  subject_treatment: Redraw the prompt's subject, pose, setting and framing in this paint medium; only edges, layering, paint body and surface change, while identity, proportions and camera stay as requested.
+  color_and_tone: Earth palette of raw umber, burnt sienna, yellow ochre and vermilion with lead white; deep warm shadows, one cool accent, values grouped into a clear light mass and dark mass.
+  lighting_and_shadow: One high side light at roughly a four-to-one ratio; the shadow side dissolves into the dark ground while lit planes turn through soft half-tones to small thick highlights.
+  texture_and_material: Linen canvas weave visible in thin darks, raised bristle-brush impasto only in the brightest lights, a faint amber varnish film over the whole surface.
+  camera_and_composition: Keep the requested framing; the dark ground swallows the edges so the lit area becomes the focal point.
+  atmosphere_and_mood: Grave and weighty, a quiet drama carried by the fall of light.
+  rendering_and_quality: Lost edges in shadow, found edges on the light side, thick lights over thin darks; brushwork stays visible up close and resolves at a distance.
+  key_features: thin transparent darks and thick lights; single side light chiaroscuro; earth palette with lead white; linen weave in shadows; amber varnish glow
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Oil Painting (Classic) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - changing the requested subject
+  - changing the requested framing
+  - mixed media collage
+  - even flat lighting
+  - pastel palette
+  - smooth airbrushed skin
   - photo
   - realistic
   - photorealistic
@@ -81,14 +54,16 @@ avoidRules:
   - wrong paint medium
   - flat digital filter
   - plastic CGI finish
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-001.webp
 attributes:
-  negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
-    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
-    uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint
-    medium, flat digital filter, plastic CGI finish
+  negativePrompt: changing the requested subject, changing the requested framing, mixed media collage, even flat lighting, pastel palette, smooth airbrushed skin, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint medium, flat digital filter, plastic CGI finish, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

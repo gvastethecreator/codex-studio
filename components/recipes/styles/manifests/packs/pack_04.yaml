@@ -138,6 +138,20 @@ categories:
       - pack_04/SP04-094.yaml
       - pack_04/SP04-099.yaml
       - pack_04/SP04-100.yaml
+      - pack_04/SP04-116.yaml
+      - pack_04/SP04-117.yaml
+      - pack_04/SP04-118.yaml
+      - pack_04/SP04-119.yaml
+      - pack_04/SP04-120.yaml
+      - pack_04/SP04-121.yaml
+      - pack_04/SP04-122.yaml
+      - pack_04/SP04-123.yaml
+      - pack_04/SP04-124.yaml
+      - pack_04/SP04-125.yaml
+      - pack_04/SP04-126.yaml
+      - pack_04/SP04-127.yaml
+      - pack_04/SP04-128.yaml
+      - pack_04/SP04-129.yaml
 presetRefs:
   - pack_04/SP04-001.yaml
   - pack_04/SP04-002.yaml
@@ -254,3 +268,17 @@ presetRefs:
   - pack_04/SP04-094.yaml
   - pack_04/SP04-099.yaml
   - pack_04/SP04-100.yaml
+  - pack_04/SP04-116.yaml
+  - pack_04/SP04-117.yaml
+  - pack_04/SP04-118.yaml
+  - pack_04/SP04-119.yaml
+  - pack_04/SP04-120.yaml
+  - pack_04/SP04-121.yaml
+  - pack_04/SP04-122.yaml
+  - pack_04/SP04-123.yaml
+  - pack_04/SP04-124.yaml
+  - pack_04/SP04-125.yaml
+  - pack_04/SP04-126.yaml
+  - pack_04/SP04-127.yaml
+  - pack_04/SP04-128.yaml
+  - pack_04/SP04-129.yaml

@@ -3,7 +3,7 @@ id: SP06-104
 packId: pack_06
 name: Cyberpunk Diegetic HUD Glow
 category: 7. Game Art Directions & UI
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,71 +12,28 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: >-
-    Cyberpunk Diegetic HUD Glow acts as a transferable art-medium router: start from Cyberpunk game
-    interface overlay style with luminous diegetic panels, scanline grime, and tactical data
-    density, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and
-    production-art clarity and game-art direction system built from playable readability, UI or
-    asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply
-    the medium behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Wrap any subject in translucent interface strata, segmented
-    targeting brackets, and modular status geometry; preserve the prompt subject while routing it
-    through tile readability, icon clarity, splash rendering, interface material, sprite bounce,
-    shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object
-    function, or environment legible.
-  color_and_tone: >-
-    Build color with Cyan magenta warning palette, black glass fields, acid green micro accents, and
-    clipped neon contrast; use color as gameplay hierarchy: rarity glow, faction contrast, tactical
-    coding, seasonal warmth, horror warmth, neon route color, or readable inventory material, with
-    deliberate value grouping, accent control, and medium-specific limits rather than generic color
-    wash.
-  lighting_and_shadow: >-
-    Handle light through Screen glow lighting, edge bloom, reflected UI color, and dark underlayers
-    for readable overlays; shape light through game readability: rim separation, UI glow,
-    static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so
-    value structure supports the medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render CRT scanlines, transparent glassmorphism, pixel glitches, chromatic fringing, and
-    scratched display haze; surface detail should support genre grammar through parchment, HUD
-    glass, pixel atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade
-    material, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Layered HUD composition with safe margins, asymmetric grids, and
-    focal brackets instead of fixed screens; compose through gameplay-facing hierarchy, atlas
-    consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen
-    energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Paranoid, high tech, compressed signal energy without requiring urban fabrics,
-    hackers, weapons, or readable text; derive mood from playable stakes, collection desire,
-    tactical control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting
-    the medium alter interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Sharp vector like UI edges, no legible copy, controlled bloom, and clean hierarchy
-    at small size; finish with game-production clarity, strong silhouettes, controlled UI-like
-    detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and
-    enough craft evidence to make the medium recognizable.
-  key_features: >-
-    Cyberpunk game interface overlay style with luminous diegetic panels, scanline grime, and
-    tactical data density; gameplay-readable hierarchy, genre-specific surface language, UI-aware
-    composition, and production-art clarity; Cyan magenta warning palette, black glass fields, acid
-    green micro accents, and clipped neon contrast; CRT scanlines, transparent glassmorphism, pixel
-    glitches, chromatic fringing, and scratched display haze; Layered HUD composition with safe
-    margins, asymmetric grids, and focal brackets instead of fixed screens
-  creative_brief: >-
-    Apply Cyberpunk Diegetic HUD Glow as an art-style preset over prompt X: preserve the user's
-    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
-    through Cyberpunk game interface overlay style with luminous diegetic panels, scanline grime,
-    and tactical data density, gameplay-readable hierarchy, genre-specific surface language,
-    UI-aware composition, and production-art clarity, CRT scanlines, transparent glassmorphism,
-    pixel glitches, chromatic fringing, and scratched display haze without requiring the card
-    image's original subject.
+  aesthetic: 'Diegetic sci-fi HUD: translucent holographic panels, brackets and arcs projected into the world around the subject, glowing cyan and magenta.'
+  subject_treatment: Keep the prompt subject and action recognizable; this preset owns a layer of in-world holographic interface around and over the subject, with blank panels and icon shapes instead of any readable text, numbers or logos.
+  color_and_tone: Dark scene grade with cyan primary and magenta or amber secondary glows; interface additive and luminous.
+  lighting_and_shadow: Holograms cast soft colored light on nearby surfaces; the rest of the scene stays low-key.
+  texture_and_material: Thin vector lines, segmented arcs, hexagon grids, faint scanlines and slight chromatic fringing on the projections.
+  camera_and_composition: Keep the requested view; brackets frame the focal point, panels sit on an asymmetric grid with safe margins.
+  atmosphere_and_mood: Focused and tense, information wrapped around the moment.
+  rendering_and_quality: Crisp luminous lines with no legible glyphs; interface never hides the subject.
+  key_features: holographic brackets; segmented arcs; hexagon grid; scanlines; cyan and magenta glow
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cyberpunk Diegetic HUD Glow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - copied game characters
+  - known game HUD layout
+  - readable interface text
+  - numbers and stat values
+  - publisher or studio logo
+  - readable interface copy
+  - weapon requirement
+  - generic cyborg woman face
   - watermark
   - text
-  - readable interface copy
   - literal city scene
-  - weapon requirement
   - wrong medium
   - generic AI gloss
   - muddy noise
@@ -88,13 +45,16 @@ avoidRules:
   - logo clutter
   - generic screenshot
   - unplayable visual clutter
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-104.webp
 attributes:
-  negativePrompt: >-
-    watermark, text, readable interface copy, literal city scene, weapon requirement, wrong medium,
-    generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low
-    resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter
+  negativePrompt: copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, readable interface copy, weapon requirement, generic cyborg woman face, watermark, text, literal city scene, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

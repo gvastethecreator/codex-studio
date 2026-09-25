@@ -1,0 +1,78 @@
+schemaVersion: 1
+id: SP06-128
+packId: pack_06
+name: Graphite Powder Lift-Out
+styleAnchors:
+  - Graphite Powder Lift-Out
+  - subtractive powdered graphite drawing
+  - brushed powdered graphite ground
+displayName: Graphite Powder Lift-Out
+category: 2. Drawing & Sketching
+domain: subtractive powdered graphite drawing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - essential-art-styles
+  - drawing-and-sketching
+  - graphite-powder
+  - subtractive
+  - tonal
+visualDna:
+  aesthetic: 'Graphite powder lift-out: the paper first covered in a smooth grey-black layer of powdered graphite brushed on with a soft pad, then the image erased out of it in light.'
+  subject_treatment: Redraw the prompt's subject, pose, setting and framing with this drawing tool only; line quality, pressure response and paper behavior must identify the tool even on a simple object.
+  color_and_tone: Soft silvery charcoal-grey ground, lifted lights ranging from pale grey to crisp white, a few pencil darks added last.
+  lighting_and_shadow: 'Glowing subtractive light: light sources and lit edges are erased shapes with soft halos into the surrounding grey.'
+  texture_and_material: Velvety even graphite haze, kneaded-eraser dabs, sharp eraser-pen lines for the brightest highlights, faint swirl of the brushing pad.
+  camera_and_composition: Keep the requested framing; the subject emerges from a smoky enveloping ground.
+  atmosphere_and_mood: Misty, ghostly and cinematic, forms appearing out of smoke.
+  rendering_and_quality: Soft halo edges around lifted lights, silvery sheen, eraser marks visible; no line drawing and no hatching.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Graphite Powder Lift-Out as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: brushed powdered graphite ground; erased lights with halos; eraser-pen sharp highlights; silvery sheen; forms emerging from haze
+avoidRules:
+  - photo
+  - photorealistic
+  - 3d render
+  - painterly fill
+  - wrong drawing tool
+  - airbrushed smoothness
+  - generic AI gloss
+  - changing the requested subject
+  - mixing in a second drawing tool
+  - painted color fill
+  - white paper background
+  - outline drawing
+  - hatching
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: photo, photorealistic, 3d render, painterly fill, wrong drawing tool, airbrushed smoothness, generic AI gloss, changing the requested subject, mixing in a second drawing tool, painted color fill, white paper background, outline drawing, hatching, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_06
+  packName: Essential Art Styles
+  categoryId: drawing-and-sketching
+  categoryName: 2. Drawing & Sketching
+  tags:
+    - essential-art-styles
+    - drawing-and-sketching
+    - graphite-powder
+    - subtractive
+    - tonal
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: subtractive powdered graphite drawing

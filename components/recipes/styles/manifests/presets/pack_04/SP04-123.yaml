@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP04-123
+packId: pack_04
+name: Poché Section Drawing
+styleAnchors:
+  - Poché Section Drawing
+  - architectural section
+  - solid black cut walls
+displayName: Poché Section Drawing
+category: 6. Technical And Reference Sheets
+domain: architectural section
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - technical-and-reference-sheets
+  - section-drawing
+  - poche
+  - architecture
+visualDna:
+  aesthetic: 'Poché section drawing: the subject sliced vertically, cut walls and floors filled solid black, everything beyond drawn in thin elevation line.'
+  subject_treatment: Keep the prompt subject as the thing documented; this reference profile owns a vertical architectural section through the subject with cut walls filled solid black, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.
+  color_and_tone: Solid black poché, fine black line, hatched earth and one pale wash for sky or water.
+  lighting_and_shadow: No light modeling; the contrast between black cut mass and thin lines creates all depth.
+  texture_and_material: Ruled hairlines, earth hatching below grade, tiny scale figures and furniture in outline.
+  camera_and_composition: Orthographic vertical section across the full width of the sheet, a clear ground line and small human figures for scale.
+  atmosphere_and_mood: Revealing and architectural, the inside of a building laid bare.
+  rendering_and_quality: Crisp drafted line with confident black fill, no perspective and no room labels.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Poché Section Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: solid black cut walls; thin beyond-elevation line; hatched earth; tiny scale figures; orthographic section
+avoidRules:
+  - placeholder gibberish text
+  - invented numbers presented as data
+  - readable labels
+  - brand logo
+  - franchise likeness
+  - free painterly composition instead of a sheet
+  - perspective cutaway
+  - room labels
+  - watermark
+  - text
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, perspective cutaway, room labels, watermark, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_04
+  packName: Illustration & Graphic Novel
+  categoryId: technical-and-reference-sheets
+  categoryName: 6. Technical And Reference Sheets
+  tags:
+    - illustration-and-graphic-novel
+    - technical-and-reference-sheets
+    - section-drawing
+    - poche
+    - architecture
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: architectural section

@@ -3,7 +3,7 @@ id: SP06-083
 packId: pack_06
 name: Vector Arcade Wireframe
 category: 6. Retro Game Visual Systems
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,73 +12,25 @@ tags:
   - essential-art-styles
   - retro-game-visual-systems
 visualDna:
-  aesthetic: >-
-    Vector Arcade Wireframe acts as a transferable art-medium router: start from Glowing vector
-    cathode ray lines, Asteroids, Tempest and Battlezone as vector display anchors, pure glowing
-    line art on infinite black void, 1979 arcade cabinet vector display, electron beam drawing in
-    real time, Glowing vector lines on black, wireframe only geometry, phosphor bloom at line
-    intersections, no filled surfaces, raster scan absent and hardware-constrained game-visual
-    system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld
-    artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of
-    recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Pure glowing geometric strokes, wireframe polygon meshes,
-    no filled surfaces, beam drawn contour lines only, vector coordinate precision; preserve the
-    prompt subject while translating it into tile, sprite, vector, glyph, voxel, pre-render,
-    screen-grid, or low-bit display behavior, keeping the requested identity, silhouette, pose,
-    object function, or environment legible.
-  color_and_tone: >-
-    Build color with Phosphor green on void black, occasional amber orange screens, blue white
-    vector glow, single color per display, no RGB mixing; use color through hardware rules: indexed
-    palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited
-    scanline color, or terminal ANSI sets, with deliberate value grouping, accent control, and
-    medium-specific limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Self illuminated phosphor lines, electron beam persistence glow, brighter
-    at stroke starts, dimming at stroke ends; make light emerge from display technology, pixel value
-    steps, CRT bloom, palette cycling, thermal print contrast, or vector beam brightness, so value
-    structure supports the medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render CRT phosphor glow, analog vector display bloom, line intersection brightening, phosphor
-    persistence afterglow, no pixels just beams; surface detail should show pixels, dithering,
-    scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print
-    degradation, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Vector perspective wireframe grids, rotating coordinate structures,
-    infinite blank black space, no occlusion just transparency; compose through tile maps, sprite
-    scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or
-    screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the
-    style work.
-  atmosphere_and_mood: >-
-    Keep the mood Retro futuristic, electronic, arcade darkness, analog computing soul, early CGI
-    wonder, abstract voltage theater; derive mood from hardware limitation, arcade spectacle,
-    handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability,
-    letting the medium alter interpretation without demanding a specific story, location, or
-    character.
-  rendering_and_quality: >-
-    Finish with Vector arcade display, analog CRT beauty, electron beam line art, retro electronic
-    aesthetic; finish with faithful era constraints, crisp readability at small scale, and no modern
-    high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised
-    surfaces where appropriate, and enough craft evidence to make the medium recognizable.
-  key_features: >-
-    Glowing vector cathode ray lines, Asteroids, Tempest and Battlezone as vector display anchors,
-    pure glowing line art on infinite black void, 1979 arcade cabinet vector display, electron beam
-    drawing in real time; Glowing vector lines on black, wireframe only geometry, phosphor bloom at
-    line intersections, no filled surfaces, raster scan absent; Phosphor green on void black,
-    occasional amber orange screens, blue white vector glow, single color per display, no RGB
-    mixing; CRT phosphor glow, analog vector display bloom, line intersection brightening, phosphor
-    persistence afterglow, no pixels just beams; Vector perspective wireframe grids, rotating
-    coordinate structures, infinite blank black space, no occlusion just transparency
-  creative_brief: >-
-    Apply Vector Arcade Wireframe as an art-style preset over prompt X: preserve the user's
-    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
-    through Glowing vector cathode ray lines, Asteroids, Tempest and Battlezone as vector display
-    anchors, pure glowing line art on infinite black void, 1979 arcade cabinet vector display,
-    electron beam drawing in real time, Glowing vector lines on black, wireframe only geometry,
-    phosphor bloom at line intersections, no filled surfaces, raster scan absent, CRT phosphor glow,
-    analog vector display bloom, line intersection brightening, phosphor persistence afterglow, no
-    pixels just beams without requiring the card image's original subject.
+  aesthetic: 'Color vector CRT: the subject drawn only as glowing beam lines on pure black, with no pixels and no filled surfaces.'
+  subject_treatment: Keep the prompt subject, action and camera view; convert every form into its edges, including hidden edges seen through the transparent wireframe.
+  color_and_tone: Three or four saturated line colors such as cyan, magenta, yellow and green on absolute black.
+  lighting_and_shadow: No shading; brighter dots where the beam lingers at vertices and a soft phosphor bloom around every line.
+  texture_and_material: Perfectly sharp vector lines with slight glow, short phosphor persistence trails and faint beam flicker.
+  camera_and_composition: Keep the requested view; geometry simplified to a few dozen strong edges that read instantly.
+  atmosphere_and_mood: Electric and austere, a whole world drawn in light.
+  rendering_and_quality: Clean continuous lines with vertex hot spots; no raster jaggies and no fills.
+  key_features: glowing beam lines; transparent wireframe; vertex hot spots; phosphor bloom; black void
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vector Arcade Wireframe as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - copied game characters
+  - console or handheld hardware shown in frame
+  - score counter or health bar
+  - readable interface text
+  - brand or publisher logo
+  - filled polygons
+  - raster pixels
+  - textures
   - filled
   - solid
   - textured
@@ -86,7 +38,6 @@ avoidRules:
   - raster
   - bitmap
   - shading
-  - filled polygons
   - complex
   - photo
   - wrong medium
@@ -100,14 +51,17 @@ avoidRules:
   - fake readable UI text
   - generic emulator screenshot
   - unlimited color render
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-083.webp
 attributes:
-  negativePrompt: >-
-    filled, solid, textured, colorful, raster, bitmap, shading, filled polygons, complex, photo,
-    wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable
-    text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot,
-    unlimited color render
+  negativePrompt: copied game characters, console or handheld hardware shown in frame, score counter or health bar, readable interface text, brand or publisher logo, filled polygons, raster pixels, textures, filled, solid, textured, colorful, raster, bitmap, shading, complex, photo, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot, unlimited color render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

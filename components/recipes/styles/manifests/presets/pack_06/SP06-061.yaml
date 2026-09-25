@@ -3,7 +3,7 @@ id: SP06-061
 packId: pack_06
 name: Analog Cut-Paper Collage
 category: 5. Mixed Media
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,60 +12,25 @@ tags:
   - essential-art-styles
   - mixed-media
 visualDna:
-  aesthetic: >-
-    Analog Cut-Paper Collage acts as a transferable art-medium router: start from Analog Cut-Paper
-    Collage layered material collision, visible joins, tactile surface depth, and handmade assembly
-    rhythm and mixed-media assembly system built from layering, adhesion, surface collision,
-    found-material logic, tactile seams, and handmade construction, then apply the medium behavior
-    to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through adapt the requested subject through layered material
-    collision, visible joins, tactile surface depth, and handmade assembly rhythm while preserving
-    identity; preserve the prompt subject while rebuilding it through collage cuts, photographic
-    fragments, stitched thread, tape, smoke, coffee stain, gilding, marbling, or stencil bridges,
-    keeping the requested identity, silhouette, pose, object function, or environment legible.
-  color_and_tone: >-
-    Build color with medium-native palette relationships, deliberate contrast, and accent restraint
-    for Analog Cut-Paper Collage; treat color as material combination: paper aging, varnish warmth,
-    toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil
-    flow, with deliberate value grouping, accent control, and medium-specific limits rather than
-    generic color wash.
-  lighting_and_shadow: >-
-    Handle light through process-led value structure, readable highlights, and medium-specific
-    shadow behavior; make light reveal relief, varnish gloss, paper lift, tape shine, thread shadow,
-    smoke softness, metallic reflection, or flat stencil contrast, so value structure supports the
-    medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render layered material collision, visible joins, tactile surface depth, and handmade assembly
-    rhythm; surface detail should show torn fiber, glue, tape edge, cork tooth, thread thickness,
-    soot, coffee bloom, varnish crackle, or assembled object depth, keeping material scale coherent
-    and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through scale rhythm, edge hierarchy, spacing, and composition rules
-    specific to Analog Cut-Paper Collage; compose through layer order, overlap, pin logic, cut
-    rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal
-    craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood mood carried by Analog Cut-Paper Collage craft, material pressure, and visual
-    restraint; derive mood from DIY urgency, memory, repair, evidence, punk collision, tactile
-    intimacy, decorative excess, or experimental material play, letting the medium alter
-    interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with finished Analog Cut-Paper Collage craft with clear medium evidence and controlled
-    detail; finish with coherent material stacking, readable subject transformation, and no single
-    flat texture pasted over the whole image, clean denoised surfaces where appropriate, and enough
-    craft evidence to make the medium recognizable.
-  key_features: >-
-    Analog Cut-Paper Collage layered material collision, visible joins, tactile surface depth, and
-    handmade assembly rhythm; medium-native palette relationships, deliberate contrast, and accent
-    restraint for Analog Cut-Paper Collage; scale rhythm, edge hierarchy, spacing, and composition
-    rules specific to Analog Cut-Paper Collage
-  creative_brief: >-
-    Apply Analog Cut-Paper Collage as an art-style preset over prompt X: preserve the user's
-    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
-    through Analog Cut-Paper Collage layered material collision, visible joins, tactile surface
-    depth, and handmade assembly rhythm without requiring the card image's original subject.
+  aesthetic: 'Analog cut-paper collage: the subject assembled from scissor-cut pieces of different printed sources, each fragment keeping its own print texture, halftone and color.'
+  subject_treatment: Keep the prompt subject, pose, action and camera view; rebuild the picture in this medium so the material sits on the image surface and never replaces clothing, skin or anatomy.
+  color_and_tone: Mismatched printed sources held together by one dominant hue family; halftone skin tones, flat construction-paper blocks and one saturated accent fragment.
+  lighting_and_shadow: Each fragment keeps the light of its source photo; a thin, soft drop shadow under every lifted paper edge gives a millimetre of physical depth.
+  texture_and_material: Crisp scissor edges with slight wobble, coated magazine stock beside matte paper, visible halftone rosettes, glue-stick sheen and one or two lifted corners.
+  camera_and_composition: Keep the requested view; the silhouette is readable first, then the eye discovers that each area comes from a different printed source.
+  atmosphere_and_mood: Witty and handmade, a familiar form made strange by its stitched-together sources.
+  rendering_and_quality: Clean cut edges, consistent paper scale and legible fragment boundaries; never a digital blend or a soft transition between pieces.
+  key_features: scissor-cut printed fragments; halftone rosettes; soft paper drop shadows; mixed coated and matte stock; one accent fragment
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Analog Cut-Paper Collage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - uniform beige torn-paper wash over every image
+  - red tape strips added by default
+  - material replacing clothing or skin
+  - readable printed words
+  - changing the requested camera view
+  - torn edges
+  - seamless blending
+  - digital layer effects
   - photo
   - realistic
   - photorealistic
@@ -93,15 +58,16 @@ avoidRules:
   - fake scrapbook text
   - craft-table default
   - clean vector render
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-061.webp
 attributes:
-  negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
-    anatomy, watermark, text, signature, frame, border, readable magazine text, specific source
-    photo requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter,
-    readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table
-    default, clean vector render
+  negativePrompt: uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, torn edges, seamless blending, digital layer effects, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable magazine text, specific source photo requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

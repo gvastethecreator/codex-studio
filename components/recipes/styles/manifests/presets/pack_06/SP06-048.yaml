@@ -3,7 +3,7 @@ id: SP06-048
 packId: pack_06
 name: Matte Painting Extension
 category: 4. Digital Art
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,54 +12,25 @@ tags:
   - essential-art-styles
   - digital-art
 visualDna:
-  aesthetic: >-
-    Matte Painting Extension acts as a transferable art-medium router: start from Matte painting
-    extension style with seamless photobash integration and atmospheric scale logic, Seamless blend
-    and digital art workflow system built from layer control, editable edges, raster or vector
-    logic, screen-era artifacts, and production readability, then apply the medium behavior to
-    prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Invisible; preserve the prompt subject while routing it
-    through the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels,
-    facets, glyphs, or compositing only when the preset calls for them, keeping the requested
-    identity, silhouette, pose, object function, or environment legible.
-  color_and_tone: >-
-    Build color with Cinematic, atmospheric; use color as workflow evidence: palette ramps, neon
-    gradients, RGB channel shifts, flat vector fields, concept-art accents, or controlled digital
-    paint harmonies, with deliberate value grouping, accent control, and medium-specific limits
-    rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Natural, consistent; shape light through layer modes, rim glow, raster
-    gradients, isometric value, screen emission, glitch clipping, or composited photographic
-    consistency, so value structure supports the medium and does not overwrite the requested
-    content.
-  texture_and_material: >-
-    Render Photo textures; surface detail should come from the named workflow: brush texture, pixel
-    cells, glyph density, vector fills, polygon facets, paper layers, or signal artifacts only when
-    they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Compose for Matte Painting Extension using its key spatial cues:
-    Seamless blend; compose through digital hierarchy, projection rules, asset readability, editable
-    shape grouping, focal thumbnails, grid logic, or controlled interface-like rhythm, with scale,
-    spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Expansive, coherent, cinematic; derive mood from speed, polish, concept utility,
-    retro-futurism, broken media, toy-scale clarity, or modern production control, letting the
-    medium alter interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Cinematic support field/extension finish without requiring landscapes, skies, or
-    architecture; finish with clean digital intent, readable shapes, purposeful artifacts, and no
-    random over-rendered sludge, clean denoised surfaces where appropriate, and enough craft
-    evidence to make the medium recognizable.
-  key_features: >-
-    Matte painting extension style with seamless photobash integration and atmospheric scale logic;
-    Seamless blend; Cinematic, atmospheric; Photo textures
-  creative_brief: >-
-    Apply Matte Painting Extension as an art-style preset over prompt X: preserve the user's
-    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
-    through Matte painting extension style with seamless photobash integration and atmospheric scale
-    logic, Seamless blend, Photo textures without requiring the card image's original subject.
+  aesthetic: 'Digital matte painting: a painted and photo-integrated environment extension that makes a scene read as vast and real, as for a film establishing shot.'
+  subject_treatment: Keep the prompt's subject and setting, and open the view into a wide establishing shot of vast scale; this preset owns that scale and depth, not a new subject.
+  color_and_tone: 'Naturalistic filmic color with strong aerial perspective: saturated near planes, hazy desaturated blue-grey far planes.'
+  lighting_and_shadow: One consistent sun or sky direction across every plane, matching shadow angles, volumetric haze between layers.
+  texture_and_material: Photographic surface detail in the foreground blended seamlessly with painted mid and far planes, no visible seams.
+  camera_and_composition: Wide establishing view with tiny figures or structures to prove scale; foreground, midground and background layers clearly stacked.
+  atmosphere_and_mood: Epic, awe-inspiring and still, a world that feels enormous.
+  rendering_and_quality: Seamless blend of painted and photographic detail, consistent perspective and light; no collage seams and no cartoon shapes.
+  key_features: wide establishing shot; tiny scale figures; seamless photo and paint blend; aerial perspective haze; stacked depth planes
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Matte Painting Extension as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - changing the requested subject
+  - concept board layout
+  - turnaround sheet
+  - game UI or HUD
+  - readable interface text
+  - visible collage seams
+  - close-up framing
+  - mismatched light directions
   - photo
   - realistic
   - photorealistic
@@ -88,15 +59,16 @@ avoidRules:
   - muddy overpaint
   - uncontrolled artifact noise
   - generic concept slop
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-048.webp
 attributes:
-  negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
-    anatomy, watermark, text, signature, frame, border, landscape requirement, architecture
-    requirement, sky requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture
-    chatter, readable text, low resolution, random AI smear, muddy overpaint, uncontrolled artifact
-    noise, generic concept slop
+  negativePrompt: changing the requested subject, concept board layout, turnaround sheet, game UI or HUD, readable interface text, visible collage seams, close-up framing, mismatched light directions, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, landscape requirement, architecture requirement, sky requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, random AI smear, muddy overpaint, uncontrolled artifact noise, generic concept slop, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

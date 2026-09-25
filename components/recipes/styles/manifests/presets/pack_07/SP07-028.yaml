@@ -3,7 +3,7 @@ id: SP07-028
 packId: pack_07
 name: Sustainable Green
 category: 2. Architectural Movements And Vernaculars
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,85 +12,38 @@ tags:
   - architecture-and-interior
   - architectural-movements-and-vernaculars
 visualDna:
-  aesthetic: >-
-    Sustainable Green acts as a transferable architecture/interior router: layered vegetation
-    integrated into structure, bioclimatic shading, reclaimed texture, daylight, rainwater or soil
-    cues; fuse it with architectural movement grammar with tectonic mass, historical or speculative
-    lineage, facade logic, ornament discipline, and structural silhouette; route spatial grammar,
-    material behavior, scale, ornament, and light over prompt X without requiring the default sample
-    anchor, fixed spatial set, landscape setup, or object sample.
-  subject_treatment: >-
-    Preserve prompt subject, action, and context while translating any requested subject through
-    load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and
-    movement-specific silhouette translation; treat layered vegetation integrated into structure,
-    bioclimatic shading, reclaimed texture, daylight, rainwater or soil cues as massing, edge,
-    surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.
-  color_and_tone: >-
-    Map color through period or movement-authentic base color, stone or envelope values, restrained
-    accent hierarchy, metal or glass notes, and clear mass separation; let source cues such as
-    layered vegetation integrated into structure, bioclimatic shading, reclaimed texture, daylight,
-    rainwater or soil cues decide accent hierarchy, material temperature, and value separation while
-    staying attached to the requested content.
-  lighting_and_shadow: >-
-    Use raking architectural light, deep reveal shadow, facade-edge rim, material bounce, and
-    scale-defining contrast; make light reveal joints, relief, material depth, scale, and atmosphere
-    from layered vegetation integrated into structure, bioclimatic shading, reclaimed texture,
-    daylight, rainwater or soil cues without replacing prompt X with a stock architectural render.
-  texture_and_material: >-
-    Render stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering,
-    and envelope surface response; prioritize the tactile signals in layered vegetation integrated
-    into structure, bioclimatic shading, reclaimed texture, daylight, rainwater or soil cues, with
-    believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.
-  camera_and_composition: >-
-    Frame through elevation fragments, sectional cuts, cropped facade anchors, axial or broken
-    symmetry, scale cues, and movement-readable massing; convert layered vegetation integrated into
-    structure, bioclimatic shading, reclaimed texture, daylight, rainwater or soil cues into
-    reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of
-    one fixed style sample layout.
-  atmosphere_and_mood: >-
-    Carry mood through historical authority, civic ambition, domestic craft, experimental
-    instability, or optimistic futurity carried by architecture itself; the preset can support
-    adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X
-    asks for them while keeping the architectural identity readable.
-  rendering_and_quality: >-
-    Finish with clean built-form finish with readable structure, no postcard landmark dependency, no
-    tourist facade copy, and no text or logo artifacts; keep clean denoise, legible construction,
-    stable object or anatomy structure when applicable, no watermark, no fake readable text, no
-    logo, no camera prop, and no prompt-literal card copy.
-  key_features: >-
-    layered vegetation integrated into structure, bioclimatic shading, reclaimed texture, daylight,
-    rainwater or soil cues; load-bearing mass, edge profile, facade rhythm, historic proportion,
-    structural jointing, and movement-specific silhouette translation; stone, concrete, plaster,
-    timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response;
-    elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale
-    cues, and movement-readable massing
-  creative_brief: >-
-    Apply Sustainable Green after prompt X as a transferable architecture/interior style layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
-    layered vegetation integrated into structure, bioclimatic shading, reclaimed texture, daylight,
-    rainwater or soil cues, architectural movement grammar with tectonic mass, historical or
-    speculative lineage, facade logic, ornament discipline, and structural silhouette, material
-    discipline, spatial grammar, and negative controls without requiring a single spatial sample,
-    product-photo setup, aisle-like default, or empty abstraction.
+  aesthetic: 'Sustainable green architecture: bioclimatic design where the building shades, ventilates and waters itself, with planted roofs and terraces, deep overhangs and exposed engineered timber.'
+  subject_treatment: Keep the requested building type, site, camera and any reference massing; in preserve mode re-clad only facade materials, openings, ornament and finish, and rebuild roof, massing and structure in this system only when a redesign is requested.
+  color_and_tone: Warm cross-laminated timber, rammed-earth ochres and greys, many greens from planting, dark photovoltaic glass; natural and mid-contrast.
+  lighting_and_shadow: Daylight filtered through timber brise-soleil and foliage, dappled shade on terraces, deep overhangs keeping facades cool.
+  texture_and_material: Cross-laminated timber and glulam frames, rammed-earth walls with visible strata, sedum and meadow roofs, integrated photovoltaic panels, rainwater cisterns and chains.
+  camera_and_composition: Keep the requested view; show how planting and shading layers wrap the building, from ground to roof edge.
+  atmosphere_and_mood: Calm, hopeful and grounded, a building that belongs to its climate.
+  rendering_and_quality: Natural-light architectural photograph, real plant variety rather than a generic green wall, no greenwashed corporate gloss.
+  key_features: planted sedum and meadow roofs; timber brise-soleil; cross-laminated timber frame; rammed-earth strata walls; rain chains to cisterns
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sustainable Green as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
-  - bare gray concrete dominance
+  - golden-hour hero facade formula
+  - copy of a named landmark
+  - mixing construction systems of different movements
+  - invented cultural symbols
+  - costumed tourist staging
+  - generic plant wall
+  - greenwashed corporate facade
   - smokestack industrial mood
+  - bare gray concrete dominance
   - greenwashing tech facade
   - greenwashing corporate facade
-  - generic plant wall
   - park landscape
   - rendered office lobby
   - market aisle
   - library aisle
-  - corridor
   - camera prop
   - empty abstraction
   - named landmark copy
   - tourist postcard
-  - generic facade
   - readable signage
   - fixed building-only scene
-  - mandatory interior interior zones
   - corridor perspective
   - furniture showroom
   - prompt-required card
@@ -99,16 +52,16 @@ avoidRules:
   - watermark
   - mandatory interior set
   - prompt-literal card
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-028.webp
 attributes:
-  negativePrompt: >-
-    bare gray concrete dominance, smokestack industrial mood, greenwashing tech facade, greenwashing
-    corporate facade, generic plant wall, park landscape, rendered office lobby, market aisle,
-    library aisle, corridor, camera prop, empty abstraction, named landmark copy, tourist postcard,
-    generic facade, readable signage, fixed building-only scene, mandatory interior interior zones,
-    corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark,
-    mandatory interior set, prompt-literal card
+  negativePrompt: golden-hour hero facade formula, copy of a named landmark, mixing construction systems of different movements, invented cultural symbols, costumed tourist staging, generic plant wall, greenwashed corporate facade, smokestack industrial mood, bare gray concrete dominance, greenwashing tech facade, greenwashing corporate facade, park landscape, rendered office lobby, market aisle, library aisle, camera prop, empty abstraction, named landmark copy, tourist postcard, readable signage, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

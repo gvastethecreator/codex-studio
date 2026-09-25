@@ -3,7 +3,7 @@ id: SP07-072
 packId: pack_07
 name: Bottle-Glass Curio Miniature
 category: 6. Toy Craft And Miniature Architecture
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,69 +12,23 @@ tags:
   - architecture-and-interior
   - toy-craft-and-miniature-architecture
 visualDna:
-  aesthetic: >-
-    Bottle-Glass Curio Miniature acts as a transferable architecture/interior router: cylindrical
-    bottle refraction, restrictive neck compression, micro rigging or fine craft mesh, cork texture,
-    pale aqua glass tint; fuse it with toy, craft, and miniature construction grammar with visible
-    fabrication, scale cues, modular seams, handmade material logic, and playful sectional clarity;
-    route spatial grammar, material behavior, scale, ornament, and light over prompt X without
-    requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.
-  subject_treatment: >-
-    Preserve prompt subject, action, and context while translating any requested subject through
-    model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy
-    geometry, and craft-readable joinery; treat cylindrical bottle refraction, restrictive neck
-    compression, micro rigging or fine craft mesh, cork texture, pale aqua glass tint as massing,
-    edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.
-  color_and_tone: >-
-    Map color through material-authentic craft color, toy primary blocks, sugar or sand warmth,
-    translucent glass tint, fungal cream, and small playful accents; let source cues such as
-    cylindrical bottle refraction, restrictive neck compression, micro rigging or fine craft mesh,
-    cork texture, pale aqua glass tint decide accent hierarchy, material temperature, and value
-    separation while staying attached to the requested content.
-  lighting_and_shadow: >-
-    Use soft model shadows, glossy toy highlights, sugar sparkle, bottle refraction, damp sand
-    sheen, and miniature display clarity; make light reveal joints, relief, material depth, scale,
-    and atmosphere from cylindrical bottle refraction, restrictive neck compression, micro rigging
-    or fine craft mesh, cork texture, pale aqua glass tint without replacing prompt X with a stock
-    architectural render.
-  texture_and_material: >-
-    Render paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal
-    skin, bottle glass, toy wood, and cutaway surfaces; prioritize the tactile signals in
-    cylindrical bottle refraction, restrictive neck compression, micro rigging or fine craft mesh,
-    cork texture, pale aqua glass tint, with believable surface response, denoised grain, coherent
-    wear, and no generic wallpaper texture.
-  camera_and_composition: >-
-    Frame through close model-detail crops, section cuts, modular repetition, visible tabs or seams,
-    scale compression, and object-like built logic; convert cylindrical bottle refraction,
-    restrictive neck compression, micro rigging or fine craft mesh, cork texture, pale aqua glass
-    tint into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules
-    instead of one fixed style sample layout.
-  atmosphere_and_mood: >-
-    Carry mood through playful craft, fragile impermanence, edible celebration, ecological
-    miniature, curio precision, or sectional wonder without product-photo lock; the preset can
-    support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when
-    prompt X asks for them while keeping the architectural identity readable.
-  rendering_and_quality: >-
-    Finish with clean miniature finish with legible material scale, no brand logo, no product
-    catalog staging, no empty abstract tile; keep clean denoise, legible construction, stable object
-    or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera
-    prop, and no prompt-literal card copy.
-  key_features: >-
-    cylindrical bottle refraction, restrictive neck compression, micro rigging or fine craft mesh,
-    cork texture, pale aqua glass tint; model-scale mass, folded or molded construction, exposed
-    seams, modular parts, softened toy geometry, and craft-readable joinery; paper fiber, ABS
-    plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal skin, bottle glass, toy
-    wood, and cutaway surfaces; close model-detail crops, section cuts, modular repetition, visible
-    tabs or seams, scale compression, and object-like built logic
-  creative_brief: >-
-    Apply Bottle-Glass Curio Miniature after prompt X as a transferable architecture/interior style
-    layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset
-    supplies cylindrical bottle refraction, restrictive neck compression, micro rigging or fine
-    craft mesh, cork texture, pale aqua glass tint, toy, craft, and miniature construction grammar
-    with visible fabrication, scale cues, modular seams, handmade material logic, and playful
-    sectional clarity, material discipline, spatial grammar, and negative controls without requiring
-    a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.
+  aesthetic: 'Bottle curio miniature: the subject built at tiny scale inside a corked glass bottle, as if assembled through the neck with tweezers and fine rigging.'
+  subject_treatment: Keep the requested subject, its identity and pose; this preset owns the corked-bottle presentation that encloses it, and a requested object stays that object instead of becoming a building.
+  color_and_tone: Pale aqua glass tint over the scene, cork brown, warm wood base; the bottle shifts colors toward green at its thickest.
+  lighting_and_shadow: Soft side light with long bright reflections down the curved glass and a caustic glow on the tabletop.
+  texture_and_material: Curved glass refraction bending the miniature at the edges, bubbles in the glass, cork grain, thread-fine rigging.
+  camera_and_composition: The whole bottle is visible and lying or standing on a surface; the subject sits within it and never outside.
+  atmosphere_and_mood: Curious and patient, a collector cabinet piece full of impossible care.
+  rendering_and_quality: Still-life photograph with accurate glass refraction; the scene stays contained, never an open seascape.
+  key_features: subject enclosed in a corked bottle; aqua glass tint; refraction bending the miniature; fine rigging; caustic glow on the table
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bottle-Glass Curio Miniature as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - brand logo on parts
+  - readable text
+  - turning a requested object into a house or building
+  - full-scale real construction
+  - playroom or party scene
+  - subject spilling outside the bottle
   - open ocean distant-plane
   - seascape dominance
   - open ocean
@@ -95,21 +49,21 @@ avoidRules:
   - corridor perspective
   - furniture showroom
   - prompt-required card
-  - readable text
   - logo
   - watermark
   - camera prop
   - mandatory interior set
   - prompt-literal card
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-072.webp
 attributes:
-  negativePrompt: >-
-    open ocean distant-plane, seascape dominance, open ocean, seascape, full maritime landscape,
-    person, readable label, market aisle, library aisle, corridor, empty abstraction, brand logo,
-    product photo, child or person scene, full-scale realism, fixed building-only scene, mandatory
-    interior interior zones, corridor perspective, furniture showroom, prompt-required card,
-    readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card
+  negativePrompt: brand logo on parts, readable text, turning a requested object into a house or building, full-scale real construction, playroom or party scene, subject spilling outside the bottle, open ocean distant-plane, seascape dominance, open ocean, seascape, full maritime landscape, person, readable label, market aisle, library aisle, corridor, empty abstraction, brand logo, product photo, child or person scene, full-scale realism, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

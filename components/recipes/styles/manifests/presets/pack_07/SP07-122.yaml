@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP07-122
+packId: pack_07
+name: Sprue-Frame Model Kit
+styleAnchors:
+  - Sprue-Frame Model Kit
+  - unassembled plastic model kit
+  - parts on rectangular sprue frames
+displayName: Sprue-Frame Model Kit
+category: 6. Toy Craft And Miniature Architecture
+domain: unassembled plastic model kit
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - toy-craft-and-miniature-architecture
+  - model-kit
+  - sprue
+  - unassembled
+visualDna:
+  aesthetic: 'Unassembled model kit: the subject broken into injection-molded parts still attached to rectangular sprue frames by thin gates, ready to be clipped.'
+  subject_treatment: Keep the requested subject, its identity and pose; this preset owns the flat unassembled sprue-frame layout of its parts, and a requested object stays that object instead of becoming a building.
+  color_and_tone: One plastic color per frame, such as light grey, olive, sand or clear, on a neutral cutting mat; flat and even.
+  lighting_and_shadow: Soft overhead light with small crisp shadows under each frame and gloss on the clear parts.
+  texture_and_material: Smooth molded plastic, thin gates, ejector-pin circles, a few parts already clipped with white stress marks.
+  camera_and_composition: Top-down or low-angle view of two to four frames laid on a mat; the subject is recognisable from its parts.
+  atmosphere_and_mood: Anticipation and order, the whole subject waiting to be built.
+  rendering_and_quality: Clean photograph of real plastic frames; part numbers left as blank tabs, never readable.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sprue-Frame Model Kit as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: parts on rectangular sprue frames; thin gates and ejector-pin marks; one color per frame; clipped parts; overhead view on a cutting mat
+avoidRules:
+  - brand logo on parts
+  - readable text
+  - turning a requested object into a house or building
+  - full-scale real construction
+  - playroom or party scene
+  - box art
+  - readable part numbers
+  - fully assembled model only
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: brand logo on parts, readable text, turning a requested object into a house or building, full-scale real construction, playroom or party scene, box art, readable part numbers, fully assembled model only, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: toy-craft-and-miniature-architecture
+  categoryName: 6. Toy Craft And Miniature Architecture
+  tags:
+    - architecture-and-interior
+    - toy-craft-and-miniature-architecture
+    - model-kit
+    - sprue
+    - unassembled
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: unassembled plastic model kit

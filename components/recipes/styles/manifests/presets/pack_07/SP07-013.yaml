@@ -3,7 +3,7 @@ id: SP07-013
 packId: pack_07
 name: Mediterranean Villa
 category: 1. Interior Design Systems
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,85 +12,37 @@ tags:
   - architecture-and-interior
   - interior-design-systems
 visualDna:
-  aesthetic: >-
-    Mediterranean Villa acts as a transferable architecture/interior router: soft arched threshold,
-    white mineral walls, handmade tile, matte wrought iron, warm sun bounce; fuse it with
-    interior-system design grammar with furniture-independent proportion, material hierarchy,
-    junction detail, tactile finish, and lived spatial rhythm; route spatial grammar, material
-    behavior, scale, ornament, and light over prompt X without requiring the default sample anchor,
-    fixed spatial set, landscape setup, or object sample.
-  subject_treatment: >-
-    Preserve prompt subject, action, and context while translating any requested subject through
-    clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy,
-    and object-ready interior detailing; treat soft arched threshold, white mineral walls, handmade
-    tile, matte wrought iron, warm sun bounce as massing, edge, surface, joinery, threshold, or
-    ornament behavior rather than a mandatory building scene.
-  color_and_tone: >-
-    Map color through controlled interior color hierarchy, wall or shell base tones, tactile
-    secondary materials, small accent signals, and readable value spacing; let source cues such as
-    soft arched threshold, white mineral walls, handmade tile, matte wrought iron, warm sun bounce
-    decide accent hierarchy, material temperature, and value separation while staying attached to
-    the requested content.
-  lighting_and_shadow: >-
-    Use soft daylight, practical bounce, concealed glow, edge-defining shadow, and material-aware
-    reflection control; make light reveal joints, relief, material depth, scale, and atmosphere from
-    soft arched threshold, white mineral walls, handmade tile, matte wrought iron, warm sun bounce
-    without replacing prompt X with a stock architectural render.
-  texture_and_material: >-
-    Render wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and
-    tactile construction details; prioritize the tactile signals in soft arched threshold, white
-    mineral walls, handmade tile, matte wrought iron, warm sun bounce, with believable surface
-    response, denoised grain, coherent wear, and no generic wallpaper texture.
-  camera_and_composition: >-
-    Frame through cropped architectural-detail framing, modular spacing, planar overlap, threshold
-    cuts, section-like reads, and deliberate negative space; convert soft arched threshold, white
-    mineral walls, handmade tile, matte wrought iron, warm sun bounce into reusable perspective,
-    crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample
-    layout.
-  atmosphere_and_mood: >-
-    Carry mood through inhabitable atmosphere, design intent, tactile comfort or tension, and
-    spatial personality without staged showroom dependency; the preset can support adult, strange,
-    sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them
-    while keeping the architectural identity readable.
-  rendering_and_quality: >-
-    Finish with polished architectural visualization clarity with denoised surfaces, believable
-    material response, no fake text, and no decor-catalog drift; keep clean denoise, legible
-    construction, stable object or anatomy structure when applicable, no watermark, no fake readable
-    text, no logo, no camera prop, and no prompt-literal card copy.
-  key_features: >-
-    soft arched threshold, white mineral walls, handmade tile, matte wrought iron, warm sun bounce;
-    clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy,
-    and object-ready interior detailing; wood, plaster, metal, textile, glass, tile, concrete,
-    patina, polish, grain, seams, and tactile construction details; cropped architectural-detail
-    framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate
-    negative space
-  creative_brief: >-
-    Apply Mediterranean Villa after prompt X as a transferable architecture/interior style layer:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies soft
-    arched threshold, white mineral walls, handmade tile, matte wrought iron, warm sun bounce,
-    interior-system design grammar with furniture-independent proportion, material hierarchy,
-    junction detail, tactile finish, and lived spatial rhythm, material discipline, spatial grammar,
-    and negative controls without requiring a single spatial sample, product-photo setup, aisle-like
-    default, or empty abstraction.
+  aesthetic: 'Mediterranean villa interior: thick lime-rendered masonry walls, rounded arches and deep window reveals, terracotta floors and handmade glazed tile, wrought iron.'
+  subject_treatment: Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.
+  color_and_tone: Sun-warm lime white, terracotta, ochre and olive, with cobalt or majolica tile accents; bright but softened by bounce off the walls.
+  lighting_and_shadow: Strong sun through small deep openings and louvered shutters, slatted light bars on the floor, cool shaded interiors with warm reflected bounce.
+  texture_and_material: Hand-applied lime plaster with soft undulation, worn terracotta tiles, glazed hand-painted tile, chestnut beams and cane ceilings, matte wrought iron.
+  camera_and_composition: Keep the requested view; frame through an arch or deep reveal, bright opening against cool shade, thick wall depth visible.
+  atmosphere_and_mood: Unhurried, sunlit and cool within, a thick-walled refuge from heat.
+  rendering_and_quality: Natural-light photograph with softly rounded plaster edges and honest wear, no postcard resort styling.
+  key_features: thick lime-rendered walls; rounded arches and deep reveals; worn terracotta floor; majolica tile accent; slatted shutter light
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mediterranean Villa as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - furniture catalog staging
+  - olive branch in a vase as default decor
+  - panoramic window view as default backdrop
+  - real designer furniture replicas
+  - replacing the requested room with a living room
   - overcast gloom
+  - cold industrial grey
+  - pool resort scene
+  - postcard villa view
   - cold industrial grey cast
   - storm-soaked mood overriding sunlit lime terracotta identity
-  - postcard villa view
-  - pool resort scene
-  - dining table
   - chair focus
-  - curtain
   - lamp hero
   - market aisle
   - library aisle
-  - corridor
   - empty abstraction
   - showroom formula
   - chair or sofa focus
   - curtain wall default
   - fixed building-only scene
-  - mandatory interior interior zones
   - corridor perspective
   - furniture showroom
   - prompt-required card
@@ -100,16 +52,16 @@ avoidRules:
   - camera prop
   - mandatory interior set
   - prompt-literal card
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-013.webp
 attributes:
-  negativePrompt: >-
-    overcast gloom, cold industrial grey cast, storm-soaked mood overriding sunlit lime terracotta
-    identity, postcard villa view, pool resort scene, dining table, chair focus, curtain, lamp hero,
-    market aisle, library aisle, corridor, empty abstraction, showroom formula, chair or sofa focus,
-    curtain wall default, fixed building-only scene, mandatory interior interior zones, corridor
-    perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera
-    prop, mandatory interior set, prompt-literal card
+  negativePrompt: furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, overcast gloom, cold industrial grey, pool resort scene, postcard villa view, cold industrial grey cast, storm-soaked mood overriding sunlit lime terracotta identity, chair focus, lamp hero, market aisle, library aisle, empty abstraction, showroom formula, chair or sofa focus, curtain wall default, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

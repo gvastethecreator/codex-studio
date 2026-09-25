@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP06-038
 packId: pack_06
-name: Mezzotint
+name: Rocker-Ground Mezzotint
 category: 3. Printmaking
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,56 +12,28 @@ tags:
   - essential-art-styles
   - printmaking
 visualDna:
-  aesthetic: >-
-    Mezzotint acts as a transferable art-medium router: start from Dark to light engraving, Rich
-    blacks and print-process system built from matrix marks, ink transfer, pressure, registration,
-    plate or block artifacts, and paper absorption, then apply the medium behavior to prompt X
-    instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Subject reduced to rich black masses; preserve the prompt
-    subject while converting it into carved, etched, stamped, screened, dotted, grained, or
-    impressed mark systems, keeping the requested identity, silhouette, pose, object function, or
-    environment legible.
-  color_and_tone: >-
-    Build color with Deep black, velvet grey; use palette as ink behavior: limited plates,
-    overprint, misregistration, monochrome value, cyan chemistry, newspaper dots, or security
-    green-grey restraint, with deliberate value grouping, accent control, and medium-specific limits
-    rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Dramatic, emerging from dark; translate light into line density, dot
-    frequency, relief shadow, plate tone, paper reserve, or ink coverage rather than photographic
-    illumination, so value structure supports the medium and does not overwrite the requested
-    content.
-  texture_and_material: >-
-    Render Rocker tool marks; surface detail should reveal paper fibers, plate marks, burr, gouge,
-    rosin grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping material
-    scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Compose for Mezzotint using its key spatial cues: Rich blacks;
-    compose through print registration, cut rhythm, border pressure, edition-like balance, negative
-    space, and repeatable mark hierarchy, with scale, spacing, edge rhythm, and visual hierarchy
-    doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Night, dramatic; derive mood from hand pressure, mechanical reproduction, archival
-    value, propaganda energy, occult darkness, newspaper grit, or tactile experiment, letting the
-    medium alter interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Velvety, detailed; finish as a credible print artifact with exact mark logic,
-    restrained texture, and no fake poster text or random distress overlay, clean denoised surfaces
-    where appropriate, and enough craft evidence to make the medium recognizable.
-  key_features: Dark to light engraving; Rich blacks; Deep black, velvet grey; Rocker tool marks
-  creative_brief: >-
-    Apply Mezzotint as an art-style preset over prompt X: preserve the user's requested subject,
-    then route mark-making, palette, surface, composition, mood, and final craft through Dark to
-    light engraving, Rich blacks, Rocker tool marks without requiring the card image's original
-    subject.
+  aesthetic: 'Mezzotint: a copper plate roughened all over with a rocker so it prints solid velvet black, then scraped and burnished smooth to bring up the lights.'
+  subject_treatment: Redraw the prompt's subject, pose, setting and framing as an impression of this print process; ink transfer, plate or block marks, registration and paper identify the process without requiring any particular scene.
+  color_and_tone: Deep velvety black dominating the image, forms rising through smooth soft greys to a few burnished whites.
+  lighting_and_shadow: 'Dark-to-light working: a single candle or window light, forms emerging from total darkness with very soft transitions.'
+  texture_and_material: Rich velvet black with a faint crosshatch rocker texture visible in the mid-greys, smooth burnished highlights, plate mark.
+  camera_and_composition: Keep the requested framing; the subject emerges from a large surrounding dark.
+  atmosphere_and_mood: Hushed, nocturnal and mysterious, light found in the dark.
+  rendering_and_quality: Smooth soft tonal transitions, no lines at all, deep velvet blacks and burnished lights.
+  key_features: velvet rocker-ground black; scraped and burnished lights; very soft tonal transitions; faint rocker texture in mid-greys; forms emerging from darkness
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rocker-Ground Mezzotint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - changing the requested subject
+  - readable printed text
+  - digital vector cleanliness
+  - line hatching
+  - white background
+  - flat bright lighting
   - photo
   - realistic
   - photorealistic
   - 3d render
   - octane render
-  - noise
   - blurry
   - deformed
   - ugly
@@ -81,14 +53,16 @@ avoidRules:
   - smooth digital gradient
   - random distress overlay
   - wrong print process
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-038.webp
 attributes:
-  negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
-    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
-    uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital
-    gradient, random distress overlay, wrong print process
+  negativePrompt: changing the requested subject, readable printed text, digital vector cleanliness, line hatching, white background, flat bright lighting, photo, realistic, photorealistic, 3d render, octane render, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital gradient, random distress overlay, wrong print process, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles
@@ -102,3 +76,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Rocker-Ground Mezzotint
+styleAnchors:
+  - Rocker-Ground Mezzotint
+  - Mezzotint

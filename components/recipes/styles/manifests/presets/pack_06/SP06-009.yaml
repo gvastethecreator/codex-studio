@@ -3,7 +3,7 @@ id: SP06-009
 packId: pack_06
 name: Impressionist Oil
 category: 1. Traditional Painting
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,52 +12,23 @@ tags:
   - essential-art-styles
   - traditional-painting
 visualDna:
-  aesthetic: >-
-    Impressionist Oil acts as a transferable art-medium router: start from Monet style
-    impressionism, Dabbed paint texture and paint-media system built from pigment body, binder
-    behavior, substrate tooth, brush pressure, edge softness, and deliberate surface finish, then
-    apply the medium behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Short, broken brushstrokes; preserve the prompt subject
-    while translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or
-    sprayed edge behavior, keeping the requested identity, silhouette, pose, object function, or
-    environment legible.
-  color_and_tone: >-
-    Build color with Vibrant, unblended optical mixing; let hue, value, saturation, and mixing come
-    from physical pigment, binder opacity, drying character, and historical medium constraints, with
-    deliberate value grouping, accent control, and medium-specific limits rather than generic color
-    wash.
-  lighting_and_shadow: >-
-    Handle light through Perceptual light built from broken color, luminous edges, and warm cool
-    vibration; make light feel interpreted by paint through tonal blocking, glaze depth, broken
-    color, matte falloff, or luminous pigment lift, so value structure supports the medium and does
-    not overwrite the requested content.
-  texture_and_material: >-
-    Render Thick paint dabs; surface detail should show canvas, paper, plaster, wax, velvet, gesso,
-    knife ridges, wash blooms, or aerosol overspray when the medium requires it, keeping material
-    scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Loss of detail; organize the image through painterly massing, brush
-    direction, support format, negative space, edge hierarchy, and intentional simplification, with
-    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Light, airy, fleeting; derive mood from medium history, touch, pigment weight,
-    speed, restraint, kitsch, ritual craft, or studio discipline, letting the medium alter
-    interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Optical impressionist finish with loose local detail and high color vibration;
-    finish with medium-faithful paint handling, readable form, controlled texture, and no pasted
-    photo or generic digital filter, clean denoised surfaces where appropriate, and enough craft
-    evidence to make the medium recognizable.
-  key_features: >-
-    Monet style impressionism; Dabbed paint texture; Vibrant, unblended optical mixing; Thick paint
-    dabs; Loss of detail
-  creative_brief: >-
-    Apply Impressionist Oil as an art-style preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Monet style impressionism, Dabbed paint texture, Thick paint dabs without requiring the card
-    image's original subject.
+  aesthetic: 'Impressionist oil sketch: short separate strokes of unmixed color laid side by side outdoors, catching one moment of changing daylight rather than fixed forms.'
+  subject_treatment: Redraw the prompt's subject, pose, setting and framing in this paint medium; only edges, layering, paint body and surface change, while identity, proportions and camera stay as requested.
+  color_and_tone: Broken color with no black, shadows made of violet and blue, lights of cream, lemon and pink; complementary strokes vibrate against each other.
+  lighting_and_shadow: Strong natural daylight at a specific hour; colored shadows and reflected light matter more than modeled volume.
+  texture_and_material: Short thick dabs and commas of paint on a light ground, visible bristle tracks, ground peeking through between strokes.
+  camera_and_composition: Keep the requested framing; edges blur where light is strongest and small detail is dropped in favour of patches of color.
+  atmosphere_and_mood: Light, fresh and fleeting, a breath of air caught quickly.
+  rendering_and_quality: Detail dissolved into distinct strokes, no blending on the canvas, no black outlines; the image resolves only at a distance.
+  key_features: short broken strokes of pure color; violet and blue shadows; no black; light ground showing through; blurred edges in bright light
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Impressionist Oil as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - changing the requested subject
+  - changing the requested framing
+  - mixed media collage
+  - black shadows
+  - smooth blending
+  - sharp fine detail
   - photo
   - realistic
   - photorealistic
@@ -83,14 +54,16 @@ avoidRules:
   - wrong paint medium
   - flat digital filter
   - plastic CGI finish
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-009.webp
 attributes:
-  negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
-    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
-    uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint
-    medium, flat digital filter, plastic CGI finish
+  negativePrompt: changing the requested subject, changing the requested framing, mixed media collage, black shadows, smooth blending, sharp fine detail, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint medium, flat digital filter, plastic CGI finish, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

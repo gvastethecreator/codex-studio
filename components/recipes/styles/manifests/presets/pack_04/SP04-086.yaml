@@ -3,7 +3,7 @@ id: SP04-086
 packId: pack_04
 name: Callout Detail Sheet
 category: 6. Technical And Reference Sheets
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,59 +12,24 @@ tags:
   - illustration-and-graphic-novel
   - technical-and-reference-sheets
 visualDna:
-  aesthetic: >-
-    Callout Detail Sheet acts as a transferable illustration router: start from Technical callout
-    sheet for production handoff, Multi-view orthos, dimension strings, labeled leaders, scale
-    references and technical reference and interface-spec system built from orthographic clarity,
-    diagram hierarchy, callout logic, measured spacing, and production-sheet legibility, then apply
-    the visual behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Uniform orthographic linework with strict weight hierarchy;
-    preserve the requested subject while expressing it through schematic breakdowns, reference
-    views, anatomy structure, UI wireframes, comparison scales, or specification surfaces, keeping
-    the requested identity, silhouette, pose, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Neutral monochrome base with limited annotation accent colors; use color as
-    information coding: blueprint cyan, neutral sheet stock, callout accents, HUD glow, anatomy
-    value separation, or wireframe hierarchy, with deliberate value grouping, accent control, and
-    process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Flat functional illumination for uncompromised shape legibility; keep light
-    diagrammatic and legible through flat drafting values, callout emphasis, interface glow,
-    anatomical separation, or measured shadow restraint, so value structure supports the
-    illustration process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Diagrammatic hatching, section fills, and exploded-part separators; surface detail should
-    support readability with grid paper, line weights, translucent overlays, measurement ticks, UI
-    panels, section cuts, or reference-sheet paper grain, keeping material scale coherent and
-    avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Pure orthographic alignment plus controlled exploded/cutaway views;
-    compose through orthographic projection, exploded spacing, callout grouping, interface modules,
-    size-scale relationships, and reference-sheet hierarchy, with scale, spacing, edge rhythm, and
-    visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Clinical, exact, instruction-driven, mood carried by Callout Detail Sheet craft,
-    material pressure, and visual restraint; derive mood from precision, planning, research,
-    interface control, anatomical study, engineering authority, or catalogued comparison, letting
-    the style alter interpretation without demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with High-clarity specification drawing with low interpretive ambiguity; finish with
-    readable technical communication, crisp line hierarchy, controlled notation-like detail, and no
-    illegible labels or decorative clutter, clean denoised surfaces where appropriate, and enough
-    process evidence to make the style recognizable.
-  key_features: >-
-    Technical callout sheet for production handoff; Multi-view orthos, dimension strings, labeled
-    leaders, scale references; Neutral monochrome base with limited annotation accent colors;
-    Diagrammatic hatching, section fills, and exploded-part separators; Pure orthographic alignment
-    plus controlled exploded/cutaway views
-  creative_brief: >-
-    Apply Callout Detail Sheet as an illustration preset over prompt X: preserve the user's
-    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
-    through Technical callout sheet for production handoff, Multi-view orthos, dimension strings,
-    labeled leaders, scale references, Diagrammatic hatching, section fills, and exploded-part
-    separators without requiring the card image's original subject.
+  aesthetic: 'Technical callout sheet: the subject drawn in hatched line and grey tone, with circular magnified detail views linked by leader lines.'
+  subject_treatment: Keep the prompt subject as the thing documented; this reference profile owns a product-manual sheet with one hatched hero view and circular magnified callouts, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.
+  color_and_tone: Black line and neutral grey tone on white, with one blue accent for callout circles and leader lines.
+  lighting_and_shadow: Conventional upper-left light rendered as line hatching and flat grey steps, no cast environment shadows.
+  texture_and_material: Clean technical line, diagrammatic hatching for curves, material shown by hatch pattern inside each callout.
+  camera_and_composition: Large three-quarter hero view, three or four circular callouts around it, leader lines ending in blank tags.
+  atmosphere_and_mood: Clear and instructive, every detail pointed out.
+  rendering_and_quality: Manual-illustration finish with blank tags instead of words; no painted scene behind the object.
+  key_features: hatched hero view; circular magnified callouts; blue leader lines; blank tags; white ground
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Callout Detail Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - placeholder gibberish text
+  - invented numbers presented as data
+  - readable labels
+  - brand logo
+  - franchise likeness
+  - free painterly composition instead of a sheet
+  - readable part names
   - single view
   - one angle
   - no annotations
@@ -86,14 +51,15 @@ avoidRules:
   - decorative clutter
   - shaded cinematic render
   - random UI text
+  - text
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-086.webp
 attributes:
-  negativePrompt: >-
-    single view, one angle, no annotations, mystery, undefined, vague, ambiguous, unclear,
-    unlabeled, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible
-    labels, decorative clutter, shaded cinematic render, random UI text
+  negativePrompt: placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, readable part names, single view, one angle, no annotations, mystery, undefined, vague, ambiguous, unclear, unlabeled, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP07-094
+packId: pack_07
+name: Observatory Dome Instrumentation
+styleAnchors:
+  - Observatory Dome Instrumentation
+  - astronomical observatory interior
+  - rotating dome with open shutter slit
+displayName: Observatory Dome Instrumentation
+category: 3. Civic Infrastructure And Specialty Spaces
+domain: astronomical observatory interior
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - architecture-and-interior
+  - civic-infrastructure-and-specialty-spaces
+  - observatory
+  - dome
+  - instruments
+visualDna:
+  aesthetic: 'Observatory dome interior: a rotating hemispherical dome with an open shutter slit, a massive equatorial telescope mount on a pier, and a raised observing floor ringed by brass and iron.'
+  subject_treatment: Keep the requested place, its function, occupants and action; bring this space type's materials, wear, circulation logic and light onto it, and turn it into that space type only when the prompt asks for that place.
+  color_and_tone: Deep night blue through the slit, dim red working light, riveted steel grey, brass gold and dark enamel; very low key.
+  lighting_and_shadow: Starlight and sky glow through the shutter, dim red lamps to preserve night vision, instrument brass catching the only highlights.
+  texture_and_material: Riveted curved dome ribs and sheet panels, rail and wheels at the dome base, cast-iron pier, enamelled telescope tube, brass setting circles and counterweights.
+  camera_and_composition: Keep the requested view; the slit carving a band of sky across the dome, the telescope diagonal pointing into it.
+  atmosphere_and_mood: Patient, nocturnal and awed, a small room aimed at infinity.
+  rendering_and_quality: Night photograph with clean star points, red light kept low, riveted structure legible.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Observatory Dome Instrumentation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: rotating dome with open shutter slit; equatorial telescope on a pier; dim red working light; riveted dome ribs; brass setting circles
+avoidRules:
+  - one-point corridor perspective as default
+  - wet mirror-gloss floor as default
+  - turning the requested room into a station or library
+  - readable signage or wayfinding text
+  - daylight
+  - white work light
+  - planetarium projection
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, daylight, white work light, planetarium projection, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_07
+  packName: Architecture & Interior
+  categoryId: civic-infrastructure-and-specialty-spaces
+  categoryName: 3. Civic Infrastructure And Specialty Spaces
+  tags:
+    - architecture-and-interior
+    - civic-infrastructure-and-specialty-spaces
+    - observatory
+    - dome
+    - instruments
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: astronomical observatory interior

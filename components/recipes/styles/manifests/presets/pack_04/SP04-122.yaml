@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP04-122
+packId: pack_04
+name: Wordless Assembly Steps
+styleAnchors:
+  - Wordless Assembly Steps
+  - assembly instruction sheet
+  - six step panels
+displayName: Wordless Assembly Steps
+category: 6. Technical And Reference Sheets
+domain: assembly instruction sheet
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - technical-and-reference-sheets
+  - assembly-instructions
+  - isometric-line
+  - step-panels
+visualDna:
+  aesthetic: 'Wordless assembly instructions: clean isometric line drawings in six step panels, parts sliding into place along arrows.'
+  subject_treatment: Keep the prompt subject as the thing documented; this reference profile owns a wordless sequence of step panels showing how the subject is assembled, stays a sheet, and shows callouts as blank tags, arrows and symbols instead of invented text or numbers.
+  color_and_tone: Black line on white with light grey for already-assembled parts, one accent color for the part being added.
+  lighting_and_shadow: No shading beyond flat grey fills; depth from isometric line only.
+  texture_and_material: Uniform thin lines, dashed motion paths, curved rotation arrows, simple hand icons and blank circles for step markers.
+  camera_and_composition: Isometric views in a grid of six panels, the same angle throughout, the finished object in the last panel.
+  atmosphere_and_mood: Friendly and clear, building without reading a single word.
+  rendering_and_quality: Diagrammatic clarity, no step numbers, words or part codes.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wordless Assembly Steps as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: six step panels; isometric line drawings; dashed motion arrows; accent color on the new part; blank step circles
+avoidRules:
+  - placeholder gibberish text
+  - invented numbers presented as data
+  - readable labels
+  - brand logo
+  - franchise likeness
+  - free painterly composition instead of a sheet
+  - step numbers
+  - part codes
+  - watermark
+  - text
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, step numbers, part codes, watermark, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_04
+  packName: Illustration & Graphic Novel
+  categoryId: technical-and-reference-sheets
+  categoryName: 6. Technical And Reference Sheets
+  tags:
+    - illustration-and-graphic-novel
+    - technical-and-reference-sheets
+    - assembly-instructions
+    - isometric-line
+    - step-panels
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: assembly instruction sheet

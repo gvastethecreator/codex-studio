@@ -3,7 +3,7 @@ id: SP06-079
 packId: pack_06
 name: Paper Marbling
 category: 5. Mixed Media
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,49 +12,25 @@ tags:
   - essential-art-styles
   - mixed-media
 visualDna:
-  aesthetic: >-
-    Paper Marbling acts as a transferable art-medium router: start from Suminagashi or Ebru, Oil
-    patterns and mixed-media assembly system built from layering, adhesion, surface collision,
-    found-material logic, tactile seams, and handmade construction, then apply the medium behavior
-    to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Fluid swirls; preserve the prompt subject while rebuilding
-    it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain,
-    gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object
-    function, or environment legible.
-  color_and_tone: >-
-    Build color with Psychedelic, oil; treat color as material combination: paper aging, varnish
-    warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled
-    oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than
-    generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Flat; make light reveal relief, varnish gloss, paper lift, tape shine,
-    thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure
-    supports the medium and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Paper, oil slick; surface detail should show torn fiber, glue, tape edge, cork tooth,
-    thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping
-    material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Liquid distortion; compose through layer order, overlap, pin logic,
-    cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a
-    literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style
-    work.
-  atmosphere_and_mood: >-
-    Keep the mood Trippy, fluid; derive mood from DIY urgency, memory, repair, evidence, punk
-    collision, tactile intimacy, decorative excess, or experimental material play, letting the
-    medium alter interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Abstract, pattern; finish with coherent material stacking, readable subject
-    transformation, and no single flat texture pasted over the whole image, clean denoised surfaces
-    where appropriate, and enough craft evidence to make the medium recognizable.
-  key_features: Suminagashi or Ebru; Oil patterns; Psychedelic, oil; Paper, oil slick; Liquid distortion
-  creative_brief: >-
-    Apply Paper Marbling as an art-style preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Suminagashi or Ebru, Oil patterns, Paper, oil slick without requiring the card image's original
-    subject.
+  aesthetic: 'Paper marbling: floated pigments on a size bath combed and dragged with a stylus into the subject shapes, then lifted onto paper in one print.'
+  subject_treatment: Keep the prompt subject, pose, action and camera view; rebuild the picture in this medium so the material sits on the image surface and never replaces clothing, skin or anatomy.
+  color_and_tone: Three to five floated colors with crisp boundaries and no blending; veins of the first color run through everything.
+  lighting_and_shadow: No modeled light; form comes only from the flow and density of marbled bands.
+  texture_and_material: Combed feather patterns, stone-like veins, dropped color rings, stylus-drawn motifs and faint fringes where the paper lifted.
+  camera_and_composition: Keep the requested view; the subject is drawn by dragging the stylus, its outline flowing into the surrounding marbled field.
+  atmosphere_and_mood: Fluid and hypnotic, a form caught mid-swirl.
+  rendering_and_quality: Crisp pigment boundaries and flowing continuity; no brush marks or digital swirl filters.
+  key_features: floated pigment on size; combed feather patterns; stylus-drawn motif; dropped color rings; crisp flowing boundaries
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Paper Marbling as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - uniform beige torn-paper wash over every image
+  - red tape strips added by default
+  - material replacing clothing or skin
+  - readable printed words
+  - changing the requested camera view
+  - digital swirl filter
+  - brush marks
+  - oil slick photo
   - photo
   - realistic
   - photorealistic
@@ -80,14 +56,16 @@ avoidRules:
   - fake scrapbook text
   - craft-table default
   - clean vector render
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-079.webp
 attributes:
-  negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
-    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
-    uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake
-    scrapbook text, craft-table default, clean vector render
+  negativePrompt: uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, digital swirl filter, brush marks, oil slick photo, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

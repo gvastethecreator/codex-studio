@@ -8,28 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Modern Minimalist',
     category: '1. Interior Design Systems',
     negativePrompt:
-      'clutter, ornate, pattern, dark, showroom living interior zones, chair focus, sofa, lamp, curtain, plant prop, kitchen appliance, corridor, market aisle, library aisle, empty abstraction, showroom formula, chair or sofa focus, lamp hero, curtain wall default, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
+      'furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, visible hardware, decorative clutter, pure clinical white, clutter, ornate, pattern, dark, chair focus, market aisle, library aisle, empty abstraction, showroom formula, chair or sofa focus, lamp hero, curtain wall default, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Modern Minimalist acts as a transferable architecture/interior router: flush planes, hidden joints, warm mineral white, soft daylight, microcement, pale oak accent; fuse it with interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Modern minimalist interior built from flush planes: handle-less push-latch joinery, shadow-gap skirting, recessed doors and one pale oak element against microcement and limewash.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; treat flush planes, hidden joints, warm mineral white, soft daylight, microcement as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.',
       color_and_tone:
-        'Map color through controlled interior color hierarchy, wall or shell base tones, tactile secondary materials, small accent signals, and readable value spacing; let source cues such as flush planes, hidden joints, warm mineral white, soft daylight, microcement decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Warm mineral white, bone and pale stone greige with one pale oak or travertine accent; no pure white and no saturated color, value steps kept small.',
       lighting_and_shadow:
-        'Use soft daylight, practical bounce, concealed glow, edge-defining shadow, and material-aware reflection control; make light reveal joints, relief, material depth, scale, and atmosphere from flush planes, hidden joints, warm mineral white, soft daylight, microcement without replacing prompt X with a stock architectural render.',
+        'Large soft daylight from a slot skylight or recessed window, concealed linear LED in coves, long gentle shadows that reveal the three-millimetre shadow gaps.',
       texture_and_material:
-        'Render wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; prioritize the tactile signals in flush planes, hidden joints, warm mineral white, soft daylight, microcement, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Seamless trowelled microcement floor, fine limewash walls with soft cloud movement, rift-sawn pale oak with tight grain, honed stone, no visible fixings.',
       camera_and_composition:
-        'Frame through cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space; convert flush planes, hidden joints, warm mineral white, soft daylight, microcement into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
+        'Keep the requested view; favour one-point frontal framing with large empty wall fields, horizon lines aligned to joints and the few objects set off-centre.',
       atmosphere_and_mood:
-        'Carry mood through inhabitable atmosphere, design intent, tactile comfort or tension, and spatial personality without staged showroom dependency; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Quiet, restrained and exact, where emptiness feels deliberate and calm.',
       rendering_and_quality:
-        'Finish with polished architectural visualization clarity with denoised surfaces, believable material response, no fake text, and no decor-catalog drift; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Architectural photograph clarity: straight verticals, crisp shadow gaps, even plaster tone without banding, no staged clutter.',
       key_features:
-        'flush planes, hidden joints, warm mineral white, soft daylight, microcement; clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space',
+        'flush handle-less joinery; shadow-gap skirting; warm mineral white limewash; seamless microcement floor; single pale oak accent',
       creative_brief:
-        'Apply Modern Minimalist after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies flush planes, hidden joints, warm mineral white, soft daylight, microcement, pale oak accent, interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Modern Minimalist as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +37,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Industrial Loft',
     category: '1. Interior Design Systems',
     negativePrompt:
-      'cozy, soft, carpet, wallpaper, cozy living-interior zones setup, chair/sofa focus, pendant-lamp hero, curtain, market aisle, library aisle, corridor, camera prop, empty abstraction, showroom formula, chair or sofa focus, lamp hero, curtain wall default, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card',
+      'furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, carpet, wallpaper, low ceiling, faux-distressed new surfaces, cozy, soft, chair/sofa focus, pendant-lamp hero, market aisle, library aisle, camera prop, empty abstraction, showroom formula, chair or sofa focus, lamp hero, curtain wall default, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Industrial Loft acts as a transferable architecture/interior router: exposed truss rhythm, raw concrete, rough brick, oxidized steel, aged copper, reclaimed wood; fuse it with interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Industrial loft conversion: a former warehouse shell with riveted steel trusses, cast-iron columns, raw brick and steel-framed factory glazing left exposed, furnished sparingly inside it.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; treat exposed truss rhythm, raw concrete, rough brick, oxidized steel, aged copper as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.',
       color_and_tone:
-        'Map color through controlled interior color hierarchy, wall or shell base tones, tactile secondary materials, small accent signals, and readable value spacing; let source cues such as exposed truss rhythm, raw concrete, rough brick, oxidized steel, aged copper decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Brick red-brown, graphite steel, concrete grey and oiled-wood amber; one oxidised copper or rust accent; contrast medium-high between dark steel and window light.',
       lighting_and_shadow:
-        'Use soft daylight, practical bounce, concealed glow, edge-defining shadow, and material-aware reflection control; make light reveal joints, relief, material depth, scale, and atmosphere from exposed truss rhythm, raw concrete, rough brick, oxidized steel, aged copper without replacing prompt X with a stock architectural render.',
+        'Hard daylight through tall multi-pane steel windows casting gridded shadow across the floor, bare-bulb or enamel pendants as secondary practicals.',
       texture_and_material:
-        'Render wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; prioritize the tactile signals in exposed truss rhythm, raw concrete, rough brick, oxidized steel, aged copper, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Rough lime-mortared brick with soot, riveted and bolted steel, scarred wide-plank floors or power-floated concrete, exposed ducts and conduit runs.',
       camera_and_composition:
-        'Frame through cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space; convert exposed truss rhythm, raw concrete, rough brick, oxidized steel, aged copper into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through inhabitable atmosphere, design intent, tactile comfort or tension, and spatial personality without staged showroom dependency; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested view; show ceiling height with the truss rhythm receding, window grid repeating along one wall, human-scale furniture small in a big volume.',
+      atmosphere_and_mood: 'Raw, spacious and working, a factory shell re-inhabited.',
       rendering_and_quality:
-        'Finish with polished architectural visualization clarity with denoised surfaces, believable material response, no fake text, and no decor-catalog drift; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Documentary interior photograph: honest wear, readable rivets and mortar joints, no shabby-chic distressing painted on new surfaces.',
       key_features:
-        'exposed truss rhythm, raw concrete, rough brick, oxidized steel, aged copper; clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space',
+        'riveted steel trusses; raw soot-marked brick; steel-framed factory glazing; gridded window shadow; exposed ducts and conduit',
       creative_brief:
-        'Apply Industrial Loft after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies exposed truss rhythm, raw concrete, rough brick, oxidized steel, aged copper, reclaimed wood, interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Industrial Loft as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +65,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mid-Century Modern',
     category: '1. Interior Design Systems',
     negativePrompt:
-      'antique, victorian, industrial, staged living interior zones formula, sofa-and-lamp scene, dominant chair, curtain wall, showroom corner, readable poster, market aisle, library aisle, camera prop, empty abstraction, showroom formula, chair or sofa focus, lamp hero, curtain wall default, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card',
+      'furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, victorian ornament, industrial rust, glossy contemporary lacquer, antique, victorian, industrial, sofa-and-lamp scene, dominant chair, curtain wall, showroom corner, readable poster, market aisle, library aisle, camera prop, empty abstraction, showroom formula, chair or sofa focus, lamp hero, curtain wall default, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Mid-Century Modern acts as a transferable architecture/interior router: low horizontal proportion, walnut/teak warmth, tapered-leg geometry, molded plywood curves, tweed texture; fuse it with interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Mid-century modern interior: low horizontal lines, walnut and teak casework on tapered splayed legs, molded plywood curves, open plan with a floating room divider.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; treat low horizontal proportion, walnut/teak warmth, tapered-leg geometry, molded plywood curves, tweed texture as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.',
       color_and_tone:
-        'Map color through controlled interior color hierarchy, wall or shell base tones, tactile secondary materials, small accent signals, and readable value spacing; let source cues such as low horizontal proportion, walnut/teak warmth, tapered-leg geometry, molded plywood curves, tweed texture decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Walnut brown, teak amber, warm off-white, with mustard, olive, burnt orange or teal accents in tweed and enamel; medium contrast, warm overall.',
       lighting_and_shadow:
-        'Use soft daylight, practical bounce, concealed glow, edge-defining shadow, and material-aware reflection control; make light reveal joints, relief, material depth, scale, and atmosphere from low horizontal proportion, walnut/teak warmth, tapered-leg geometry, molded plywood curves, tweed texture without replacing prompt X with a stock architectural render.',
+        'Low-sun daylight through clerestory or floor-to-ceiling glazing, cone and globe pendants, warm pools of light across low furniture.',
       texture_and_material:
-        'Render wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; prioritize the tactile signals in low horizontal proportion, walnut/teak warmth, tapered-leg geometry, molded plywood curves, tweed texture, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Book-matched walnut veneer, oiled teak, nubby wool tweed, terrazzo or cork floors, slatted wood screens and ribbed glass.',
       camera_and_composition:
-        'Frame through cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space; convert low horizontal proportion, walnut/teak warmth, tapered-leg geometry, molded plywood curves, tweed texture into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through inhabitable atmosphere, design intent, tactile comfort or tension, and spatial personality without staged showroom dependency; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested view; eye level held low to stress horizontals, long credenzas and rooflines running parallel to the frame edge.',
+      atmosphere_and_mood: 'Optimistic, warm and relaxed, a confident post-war modernity.',
       rendering_and_quality:
-        'Finish with polished architectural visualization clarity with denoised surfaces, believable material response, no fake text, and no decor-catalog drift; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Period magazine interior clarity: clean grain, soft warm contrast, restrained staging, no replica of a named designer chair.',
       key_features:
-        'low horizontal proportion, walnut/teak warmth, tapered-leg geometry, molded plywood curves, tweed texture; clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space',
+        'tapered splayed legs; book-matched walnut veneer; low horizontal proportion; mustard and teal tweed accents; slatted wood divider',
       creative_brief:
-        'Apply Mid-Century Modern after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies low horizontal proportion, walnut/teak warmth, tapered-leg geometry, molded plywood curves, tweed texture, interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mid-Century Modern as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +93,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Scandinavian Hygge',
     category: '1. Interior Design Systems',
     negativePrompt:
-      'gloomy low-key palette, cold industrial mood, hard metal dominance, glossy plastic dominance, staged living interior zones, chair/sofa focus, blanket pile as only subject, lamp hero, curtain wall, fireplace scene, market aisle, library aisle, corridor, empty abstraction, showroom formula, chair or sofa focus, curtain wall default, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
+      'furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, cold industrial mood, glossy plastic, harsh overhead light, gloomy low-key palette, hard metal dominance, glossy plastic dominance, chair/sofa focus, blanket pile as only subject, lamp hero, curtain wall, market aisle, library aisle, empty abstraction, showroom formula, chair or sofa focus, curtain wall default, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Scandinavian Hygge acts as a transferable architecture/interior router: pale wood, wool/linen softness, warm cream palette, rounded low volumes, gentle diffuse light; fuse it with interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Scandinavian hygge interior: pale scrubbed pine and birch, rounded low furniture, layered wool and linen, and many small warm light sources against long northern dusk.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; treat pale wood, wool/linen softness, warm cream palette, rounded low volumes, gentle diffuse light as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.',
       color_and_tone:
-        'Map color through controlled interior color hierarchy, wall or shell base tones, tactile secondary materials, small accent signals, and readable value spacing; let source cues such as pale wood, wool/linen softness, warm cream palette, rounded low volumes, gentle diffuse light decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Cream, oat, pale birch and soft grey with honey-warm light; one muted accent such as lingonberry red or moss green; low contrast.',
       lighting_and_shadow:
-        'Use soft daylight, practical bounce, concealed glow, edge-defining shadow, and material-aware reflection control; make light reveal joints, relief, material depth, scale, and atmosphere from pale wood, wool/linen softness, warm cream palette, rounded low volumes, gentle diffuse light without replacing prompt X with a stock architectural render.',
+        'Several low warm points — candles, a small woodstove, shaded table lamps — against cool blue window light; soft enveloping shadow, no overhead glare.',
       texture_and_material:
-        'Render wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; prioritize the tactile signals in pale wood, wool/linen softness, warm cream palette, rounded low volumes, gentle diffuse light, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Soap-scrubbed pine floorboards, sheepskin, chunky knit and felted wool, washed linen, matte glazed stoneware, whitewashed panelling.',
       camera_and_composition:
-        'Frame through cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space; convert pale wood, wool/linen softness, warm cream palette, rounded low volumes, gentle diffuse light into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through inhabitable atmosphere, design intent, tactile comfort or tension, and spatial personality without staged showroom dependency; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested view; slightly close framing that feels enclosed, soft textiles in the foreground, warm and cool light zones side by side.',
+      atmosphere_and_mood: 'Snug, gentle and sheltered against the cold outside.',
       rendering_and_quality:
-        'Finish with polished architectural visualization clarity with denoised surfaces, believable material response, no fake text, and no decor-catalog drift; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Soft natural-light photograph: tactile fibres readable, warm highlights gentle, no glossy surfaces or hard metal dominating.',
       key_features:
-        'pale wood, wool/linen softness, warm cream palette, rounded low volumes, gentle diffuse light; clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space',
+        'scrubbed pale pine; layered wool and sheepskin; many small warm light points; cool blue window dusk; rounded low furniture',
       creative_brief:
-        'Apply Scandinavian Hygge after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies pale wood, wool/linen softness, warm cream palette, rounded low volumes, gentle diffuse light, interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scandinavian Hygge as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +121,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bohemian Eclectic',
     category: '1. Interior Design Systems',
     negativePrompt:
-      'minimalist, empty, sterile, chaotic junk pile, plant-only scene, chair/sofa focus, curtain-dominant setup, lamp hero, market aisle, library aisle, corridor, camera prop, empty abstraction, showroom formula, chair or sofa focus, curtain wall default, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card',
+      'furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, sterile minimalism, junk pile chaos, matching furniture set, minimalist, empty, sterile, chaotic junk pile, plant-only scene, chair/sofa focus, curtain-dominant setup, lamp hero, market aisle, library aisle, camera prop, empty abstraction, showroom formula, chair or sofa focus, curtain wall default, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Bohemian Eclectic acts as a transferable architecture/interior router: woven fiber layers, terracotta warmth, indigo/turquoise accents, carved wood, asymmetric pattern rhythm; fuse it with interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Bohemian eclectic interior: collected layers of kilims, woven rattan and macramé, carved wood, pottery and hanging plants, gathered over years rather than bought as a set.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; treat woven fiber layers, terracotta warmth, indigo/turquoise accents, carved wood, asymmetric pattern rhythm as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.',
       color_and_tone:
-        'Map color through controlled interior color hierarchy, wall or shell base tones, tactile secondary materials, small accent signals, and readable value spacing; let source cues such as woven fiber layers, terracotta warmth, indigo/turquoise accents, carved wood, asymmetric pattern rhythm decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Terracotta, ochre and rust grounded by indigo, turquoise and deep plum; many patterns kept in one warm family so the mix holds together.',
       lighting_and_shadow:
-        'Use soft daylight, practical bounce, concealed glow, edge-defining shadow, and material-aware reflection control; make light reveal joints, relief, material depth, scale, and atmosphere from woven fiber layers, terracotta warmth, indigo/turquoise accents, carved wood, asymmetric pattern rhythm without replacing prompt X with a stock architectural render.',
+        'Warm low afternoon light filtered through patterned textiles, pierced-metal lanterns throwing dappled shadow, lots of mid-tone warmth.',
       texture_and_material:
-        'Render wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; prioritize the tactile signals in woven fiber layers, terracotta warmth, indigo/turquoise accents, carved wood, asymmetric pattern rhythm, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Hand-knotted and flat-woven rugs stacked on each other, rattan and cane, block-printed cotton, glazed terracotta, trailing leaves, brass trays.',
       camera_and_composition:
-        'Frame through cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space; convert woven fiber layers, terracotta warmth, indigo/turquoise accents, carved wood, asymmetric pattern rhythm into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through inhabitable atmosphere, design intent, tactile comfort or tension, and spatial personality without staged showroom dependency; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested view; layered foreground-to-background depth with a textile or plant edge cropping the frame, asymmetric groupings.',
+      atmosphere_and_mood: 'Free, lived-in and warm, a traveller who never unpacked.',
       rendering_and_quality:
-        'Finish with polished architectural visualization clarity with denoised surfaces, believable material response, no fake text, and no decor-catalog drift; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Warm editorial photograph: patterns legible but not flattened, depth kept readable, no junk-pile chaos.',
       key_features:
-        'woven fiber layers, terracotta warmth, indigo/turquoise accents, carved wood, asymmetric pattern rhythm; clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space',
+        'stacked flat-woven rugs; rattan and macramé; terracotta with indigo and turquoise; pierced-lantern dappled light; collected asymmetric layers',
       creative_brief:
-        'Apply Bohemian Eclectic after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies woven fiber layers, terracotta warmth, indigo/turquoise accents, carved wood, asymmetric pattern rhythm, interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bohemian Eclectic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +149,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Japanese Zen',
     category: '1. Interior Design Systems',
     negativePrompt:
-      'clutter, western, plastic, required temple interior zones, tea set prop, lantern hero, chair, curtain, dry-garden duplicate, market aisle, library aisle, corridor, empty abstraction, showroom formula, chair or sofa focus, lamp hero, curtain wall default, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, literal temple interior zones, mandatory interior set, prompt-literal card',
+      'furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, clutter, plastic, lanterns everywhere, dragon decor, tea set prop, lantern hero, chair, dry-garden duplicate, market aisle, library aisle, empty abstraction, showroom formula, chair or sofa focus, lamp hero, curtain wall default, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Japanese Zen acts as a transferable architecture/interior router: low grid, translucent paper filter, raw wood, matte clay, tatami-green accent, asymmetric void; fuse it with interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Japanese Zen interior built on the tatami module: sliding shoji and fusuma panels, an alcove for one object, exposed post-and-beam in unpainted hinoki or cedar.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; treat low grid, translucent paper filter, raw wood, matte clay, tatami-green accent as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.',
       color_and_tone:
-        'Map color through controlled interior color hierarchy, wall or shell base tones, tactile secondary materials, small accent signals, and readable value spacing; let source cues such as low grid, translucent paper filter, raw wood, matte clay, tatami-green accent decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Straw-green tatami, pale unfinished wood, warm paper white, earth-brown clay walls, charcoal accents; very little saturated color.',
       lighting_and_shadow:
-        'Use soft daylight, practical bounce, concealed glow, edge-defining shadow, and material-aware reflection control; make light reveal joints, relief, material depth, scale, and atmosphere from low grid, translucent paper filter, raw wood, matte clay, tatami-green accent without replacing prompt X with a stock architectural render.',
+        'Daylight diffused through washi paper shoji, low and even, deep soft shadow under the eaves and in the alcove; low seated eye level.',
       texture_and_material:
-        'Render wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; prioritize the tactile signals in low grid, translucent paper filter, raw wood, matte clay, tatami-green accent, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Woven rush tatami with cloth-bound edges, planed hinoki grain, clay-plastered walls with straw fibre, washi paper lattice, black iron kettle.',
       camera_and_composition:
-        'Frame through cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space; convert low grid, translucent paper filter, raw wood, matte clay, tatami-green accent into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through inhabitable atmosphere, design intent, tactile comfort or tension, and spatial personality without staged showroom dependency; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested view; low seated camera height, frontal view of sliding panels and the tatami grid, one object carrying the whole room.',
+      atmosphere_and_mood: 'Still, attentive and spare, with space left for silence.',
       rendering_and_quality:
-        'Finish with polished architectural visualization clarity with denoised surfaces, believable material response, no fake text, and no decor-catalog drift; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Soft photograph with very gentle contrast; straight lattice lines, readable rush weave and wood grain, no clutter or plastic.',
       key_features:
-        'low grid, translucent paper filter, raw wood, matte clay, tatami-green accent; clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space',
+        'tatami module floor; washi paper shoji light; unpainted hinoki post and beam; clay-plaster walls; single-object alcove',
       creative_brief:
-        'Apply Japanese Zen after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies low grid, translucent paper filter, raw wood, matte clay, tatami-green accent, asymmetric void, interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Japanese Zen as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,28 +177,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Luxury Penthouse',
     category: '1. Interior Design Systems',
     negativePrompt:
-      'basement, dark, cheap, skyline/view dependency, sofa/chair focus, lamp hero, curtain wall, hotel lobby, staged living interior zones, market aisle, library aisle, corridor, empty abstraction, showroom formula, chair or sofa focus, curtain wall default, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
+      'furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, gaudy gold overload, skyline postcard, cheap veneer, dark, cheap, skyline/view dependency, sofa/chair focus, lamp hero, curtain wall, hotel lobby, market aisle, library aisle, empty abstraction, showroom formula, chair or sofa focus, curtain wall default, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Luxury Penthouse acts as a transferable architecture/interior router: bookmatched marble, satin brass, warm ivory planes, smoked grey accents, hidden joints, indirect light; fuse it with interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Luxury penthouse interior: book-matched marble slabs, satin brass inlays, full-height glazing and custom millwork, everything built in and seamlessly joined.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; treat bookmatched marble, satin brass, warm ivory planes, smoked grey accents, hidden joints as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.',
       color_and_tone:
-        'Map color through controlled interior color hierarchy, wall or shell base tones, tactile secondary materials, small accent signals, and readable value spacing; let source cues such as bookmatched marble, satin brass, warm ivory planes, smoked grey accents, hidden joints decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Warm ivory, Calacatta white with gold-grey veining, smoked bronze and taupe; satin brass as the single metallic; muted, rich, medium contrast.',
       lighting_and_shadow:
-        'Use soft daylight, practical bounce, concealed glow, edge-defining shadow, and material-aware reflection control; make light reveal joints, relief, material depth, scale, and atmosphere from bookmatched marble, satin brass, warm ivory planes, smoked grey accents, hidden joints without replacing prompt X with a stock architectural render.',
+        'Layered hospitality lighting: dimmed cove light, pin spots on stone and art, warm under-cabinet strips, night sky or dusk through glass kept dark.',
       texture_and_material:
-        'Render wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; prioritize the tactile signals in bookmatched marble, satin brass, warm ivory planes, smoked grey accents, hidden joints, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Mirror-matched marble with continuous veining, satin brushed brass, smoked glass, silk-wool rugs, lacquered or fluted walnut panels.',
       camera_and_composition:
-        'Frame through cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space; convert bookmatched marble, satin brass, warm ivory planes, smoked grey accents, hidden joints into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through inhabitable atmosphere, design intent, tactile comfort or tension, and spatial personality without staged showroom dependency; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested view; wide lens held level, veining and brass lines symmetrical where possible, reflections controlled.',
+      atmosphere_and_mood: 'Hushed, expensive and composed, with calm at great height.',
       rendering_and_quality:
-        'Finish with polished architectural visualization clarity with denoised surfaces, believable material response, no fake text, and no decor-catalog drift; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'High-end architectural photograph: clean reflections, continuous vein matching, no gaudy gold overload or skyline postcard.',
       key_features:
-        'bookmatched marble, satin brass, warm ivory planes, smoked grey accents, hidden joints; clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space',
+        'book-matched marble veining; satin brass inlay; layered cove and pin-spot light; smoked glass; built-in custom millwork',
       creative_brief:
-        'Apply Luxury Penthouse after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies bookmatched marble, satin brass, warm ivory planes, smoked grey accents, hidden joints, indirect light, interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Luxury Penthouse as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -211,28 +205,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rustic Cabin',
     category: '1. Interior Design Systems',
     negativePrompt:
-      'synthetic, modern, cold, required cabin exterior, fireplace-only tableau, chair/sofa focus, plaid blanket pile as only subject, lamp hero, taxidermy, market aisle, library aisle, corridor, empty abstraction, showroom formula, chair or sofa focus, curtain wall default, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, literal cabin exterior, mandatory interior set, prompt-literal card',
+      'furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, synthetic materials, taxidermy, plaid blanket pile as the only subject, synthetic, cold, required cabin exterior, chair/sofa focus, plaid blanket pile as only subject, lamp hero, market aisle, library aisle, empty abstraction, showroom formula, chair or sofa focus, curtain wall default, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, literal cabin exterior, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Rustic Cabin acts as a transferable architecture/interior router: hand-hewn timber, porous stone, forged metal, wool texture, ember-warm glow; fuse it with interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Rustic cabin interior: saddle-notched round logs or hand-hewn beams with adze marks, a fieldstone hearth, and plank furniture made on site.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; treat hand-hewn timber, porous stone, forged metal, wool texture, ember-warm glow as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.',
       color_and_tone:
-        'Map color through controlled interior color hierarchy, wall or shell base tones, tactile secondary materials, small accent signals, and readable value spacing; let source cues such as hand-hewn timber, porous stone, forged metal, wool texture, ember-warm glow decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Honey and smoke-darkened timber, grey-brown fieldstone, charcoal iron, wool reds and forest greens; firelight amber against cool blue window light.',
       lighting_and_shadow:
-        'Use soft daylight, practical bounce, concealed glow, edge-defining shadow, and material-aware reflection control; make light reveal joints, relief, material depth, scale, and atmosphere from hand-hewn timber, porous stone, forged metal, wool texture, ember-warm glow without replacing prompt X with a stock architectural render.',
+        'Firelight and oil lamps as key light, warm and low, deep shadow in the roof; small windows admit cool daylight.',
       texture_and_material:
-        'Render wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; prioritize the tactile signals in hand-hewn timber, porous stone, forged metal, wool texture, ember-warm glow, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Chinked log walls, adze-scarred beams, dry-laid or mortared river stone, forged iron hooks and hinges, wool blankets, wide rough floorboards.',
       camera_and_composition:
-        'Frame through cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space; convert hand-hewn timber, porous stone, forged metal, wool texture, ember-warm glow into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through inhabitable atmosphere, design intent, tactile comfort or tension, and spatial personality without staged showroom dependency; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested view; show log coursing or beam rhythm, a lived-in foreground, the hearth or window as the light anchor.',
+      atmosphere_and_mood: 'Rough, warm and self-reliant, a shelter far from everything.',
       rendering_and_quality:
-        'Finish with polished architectural visualization clarity with denoised surfaces, believable material response, no fake text, and no decor-catalog drift; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Low-light photograph with visible timber grain and stone joints, soft firelit falloff, no synthetic finish or taxidermy props.',
       key_features:
-        'hand-hewn timber, porous stone, forged metal, wool texture, ember-warm glow; clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space',
+        'saddle-notched chinked logs; adze-marked beams; fieldstone hearth; forged iron hardware; firelight against cool window light',
       creative_brief:
-        'Apply Rustic Cabin after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies hand-hewn timber, porous stone, forged metal, wool texture, ember-warm glow, interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rustic Cabin as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -240,28 +233,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mediterranean Villa',
     category: '1. Interior Design Systems',
     negativePrompt:
-      'overcast gloom, cold industrial grey cast, storm-soaked mood overriding sunlit lime terracotta identity, postcard villa view, pool resort scene, dining table, chair focus, curtain, lamp hero, market aisle, library aisle, corridor, empty abstraction, showroom formula, chair or sofa focus, curtain wall default, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
+      'furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, overcast gloom, cold industrial grey, pool resort scene, postcard villa view, cold industrial grey cast, storm-soaked mood overriding sunlit lime terracotta identity, chair focus, lamp hero, market aisle, library aisle, empty abstraction, showroom formula, chair or sofa focus, curtain wall default, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Mediterranean Villa acts as a transferable architecture/interior router: soft arched threshold, white mineral walls, handmade tile, matte wrought iron, warm sun bounce; fuse it with interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Mediterranean villa interior: thick lime-rendered masonry walls, rounded arches and deep window reveals, terracotta floors and handmade glazed tile, wrought iron.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; treat soft arched threshold, white mineral walls, handmade tile, matte wrought iron, warm sun bounce as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.',
       color_and_tone:
-        'Map color through controlled interior color hierarchy, wall or shell base tones, tactile secondary materials, small accent signals, and readable value spacing; let source cues such as soft arched threshold, white mineral walls, handmade tile, matte wrought iron, warm sun bounce decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Sun-warm lime white, terracotta, ochre and olive, with cobalt or majolica tile accents; bright but softened by bounce off the walls.',
       lighting_and_shadow:
-        'Use soft daylight, practical bounce, concealed glow, edge-defining shadow, and material-aware reflection control; make light reveal joints, relief, material depth, scale, and atmosphere from soft arched threshold, white mineral walls, handmade tile, matte wrought iron, warm sun bounce without replacing prompt X with a stock architectural render.',
+        'Strong sun through small deep openings and louvered shutters, slatted light bars on the floor, cool shaded interiors with warm reflected bounce.',
       texture_and_material:
-        'Render wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; prioritize the tactile signals in soft arched threshold, white mineral walls, handmade tile, matte wrought iron, warm sun bounce, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Hand-applied lime plaster with soft undulation, worn terracotta tiles, glazed hand-painted tile, chestnut beams and cane ceilings, matte wrought iron.',
       camera_and_composition:
-        'Frame through cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space; convert soft arched threshold, white mineral walls, handmade tile, matte wrought iron, warm sun bounce into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through inhabitable atmosphere, design intent, tactile comfort or tension, and spatial personality without staged showroom dependency; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested view; frame through an arch or deep reveal, bright opening against cool shade, thick wall depth visible.',
+      atmosphere_and_mood: 'Unhurried, sunlit and cool within, a thick-walled refuge from heat.',
       rendering_and_quality:
-        'Finish with polished architectural visualization clarity with denoised surfaces, believable material response, no fake text, and no decor-catalog drift; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Natural-light photograph with softly rounded plaster edges and honest wear, no postcard resort styling.',
       key_features:
-        'soft arched threshold, white mineral walls, handmade tile, matte wrought iron, warm sun bounce; clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space',
+        'thick lime-rendered walls; rounded arches and deep reveals; worn terracotta floor; majolica tile accent; slatted shutter light',
       creative_brief:
-        'Apply Mediterranean Villa after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies soft arched threshold, white mineral walls, handmade tile, matte wrought iron, warm sun bounce, interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mediterranean Villa as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -269,28 +261,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cyberpunk Apartment',
     category: '1. Interior Design Systems',
     negativePrompt:
-      'clean, organized, day, gamer desk, monitor wall, readable UI/text, weapon, person, chair/bed focus, alley/street scene, market aisle, library aisle, corridor tunnel, empty abstraction, showroom formula, chair or sofa focus, lamp hero, curtain wall default, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
+      'furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, clean organized room, gamer desk, monitor wall, readable screens, clean, organized, readable UI/text, chair/bed focus, alley/street scene, market aisle, library aisle, corridor tunnel, empty abstraction, showroom formula, chair or sofa focus, lamp hero, curtain wall default, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Cyberpunk Apartment acts as a transferable architecture/interior router: dense cable layers, scratched metal, reclaimed panels, neon spill, CRT amber pockets; fuse it with interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Cyberpunk apartment: a cramped high-rise unit retrofitted by its tenant, with salvaged panels, surface-run cable bundles, stacked hardware and colored light from signs outside.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; treat dense cable layers, scratched metal, reclaimed panels, neon spill, CRT amber pockets as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.',
       color_and_tone:
-        'Map color through controlled interior color hierarchy, wall or shell base tones, tactile secondary materials, small accent signals, and readable value spacing; let source cues such as dense cable layers, scratched metal, reclaimed panels, neon spill, CRT amber pockets decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Near-black and gunmetal base with magenta and cyan neon spill from outside, amber CRT or LED pockets inside; saturated color only in light, not surfaces.',
       lighting_and_shadow:
-        'Use soft daylight, practical bounce, concealed glow, edge-defining shadow, and material-aware reflection control; make light reveal joints, relief, material depth, scale, and atmosphere from dense cable layers, scratched metal, reclaimed panels, neon spill, CRT amber pockets without replacing prompt X with a stock architectural render.',
+        'Night; neon from the window as the strongest source, tinted rim light on edges, small warm practicals, deep crushed corners.',
       texture_and_material:
-        'Render wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; prioritize the tactile signals in dense cable layers, scratched metal, reclaimed panels, neon spill, CRT amber pockets, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Scratched powder-coated metal, zip-tied cable looms, water-stained ceiling tiles, reclaimed plastic panels, condensation on glass.',
       camera_and_composition:
-        'Frame through cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space; convert dense cable layers, scratched metal, reclaimed panels, neon spill, CRT amber pockets into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through inhabitable atmosphere, design intent, tactile comfort or tension, and spatial personality without staged showroom dependency; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested view; tight wide-angle framing that makes the room feel small, layers of cable and hardware framing the subject.',
+      atmosphere_and_mood: 'Cramped, electric and lonely under a city that never sleeps.',
       rendering_and_quality:
-        'Finish with polished architectural visualization clarity with denoised surfaces, believable material response, no fake text, and no decor-catalog drift; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Cinematic low-light photograph: coloured light kept clean, grime specific, no readable screens or signs.',
       key_features:
-        'dense cable layers, scratched metal, reclaimed panels, neon spill, CRT amber pockets; clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space',
+        'surface-run cable bundles; salvaged metal panels; magenta and cyan neon spill; amber small practicals; cramped wide-angle frame',
       creative_brief:
-        'Apply Cyberpunk Apartment after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies dense cable layers, scratched metal, reclaimed panels, neon spill, CRT amber pockets, interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cyberpunk Apartment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -298,28 +289,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Victorian Mansion',
     category: '1. Interior Design Systems',
     negativePrompt:
-      'minimal, bright, open, required mansion interior zones, curtain-dominant composition, chair-and-lamp setup, fireplace tableau, corridor, library aisle, market aisle, readable portrait, ghost story scene, empty abstraction, showroom formula, chair or sofa focus, lamp hero, curtain wall default, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, literal mansion interior zones, mandatory interior set, prompt-literal card',
+      'furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, bright open plan, minimal decor, ghost story props, minimal, bright, open, curtain-dominant composition, chair-and-lamp setup, library aisle, market aisle, readable portrait, ghost story scene, empty abstraction, showroom formula, chair or sofa focus, lamp hero, curtain wall default, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Victorian Mansion acts as a transferable architecture/interior router: dark carved wood, brocade density, aged brass, floral pattern layering, velvet weight; fuse it with interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Victorian mansion interior: heavy carved mahogany and walnut, dado and picture rails, patterned wallpaper, brocade and velvet layered at high density.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; treat dark carved wood, brocade density, aged brass, floral pattern layering, velvet weight as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.',
       color_and_tone:
-        'Map color through controlled interior color hierarchy, wall or shell base tones, tactile secondary materials, small accent signals, and readable value spacing; let source cues such as dark carved wood, brocade density, aged brass, floral pattern layering, velvet weight decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Oxblood, bottle green, plum and deep gold with dark wood; low-key overall, gaslight amber highlights, little clear white.',
       lighting_and_shadow:
-        'Use soft daylight, practical bounce, concealed glow, edge-defining shadow, and material-aware reflection control; make light reveal joints, relief, material depth, scale, and atmosphere from dark carved wood, brocade density, aged brass, floral pattern layering, velvet weight without replacing prompt X with a stock architectural render.',
+        'Gaslight and oil lamps with etched glass shades, heavy curtains holding back daylight, warm pools and deep corners.',
       texture_and_material:
-        'Render wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; prioritize the tactile signals in dark carved wood, brocade density, aged brass, floral pattern layering, velvet weight, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Carved hardwood with French polish, flocked or damask wallpaper, velvet and brocade with fringes, encaustic floor tile, aged brass fittings.',
       camera_and_composition:
-        'Frame through cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space; convert dark carved wood, brocade density, aged brass, floral pattern layering, velvet weight into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through inhabitable atmosphere, design intent, tactile comfort or tension, and spatial personality without staged showroom dependency; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested view; dense layered framing from doorway or rail, pattern on every plane, one lamp or window as the light anchor.',
+      atmosphere_and_mood: 'Stifling, opulent and secretive behind drawn drapery.',
       rendering_and_quality:
-        'Finish with polished architectural visualization clarity with denoised surfaces, believable material response, no fake text, and no decor-catalog drift; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Warm low-light photograph with legible pattern and carving, controlled shadow, no ghost-story props unless requested.',
       key_features:
-        'dark carved wood, brocade density, aged brass, floral pattern layering, velvet weight; clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space',
+        'carved mahogany with French polish; damask wallpaper; velvet and brocade layers; gaslight amber pools; encaustic tile floor',
       creative_brief:
-        'Apply Victorian Mansion after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies dark carved wood, brocade density, aged brass, floral pattern layering, velvet weight, interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Victorian Mansion as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -327,28 +317,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bauhaus Interior',
     category: '1. Interior Design Systems',
     negativePrompt:
-      'ornate, cluttered, chair focus, classroom poster, readable text, lamp hero, cluttered interior zones, market aisle, library aisle, corridor, empty abstraction, showroom formula, chair or sofa focus, curtain wall default, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
+      'furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, ornament, clutter, classroom poster, ornate, cluttered, chair focus, readable text, lamp hero, market aisle, library aisle, empty abstraction, showroom formula, chair or sofa focus, curtain wall default, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Bauhaus Interior acts as a transferable architecture/interior router: circle-square intersection, tubular steel, primary color accent, white/black structure, clear glass, bent wood; fuse it with interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Bauhaus interior: functional workshop modernism with chrome tubular steel, flat white walls, glass, and furniture reduced to structure, circles and rectangles.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; treat circle-square intersection, tubular steel, primary color accent, white/black structure, clear glass as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.',
       color_and_tone:
-        'Map color through controlled interior color hierarchy, wall or shell base tones, tactile secondary materials, small accent signals, and readable value spacing; let source cues such as circle-square intersection, tubular steel, primary color accent, white/black structure, clear glass decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'White, grey and black planes with small primary accents in red, yellow or blue, applied to one wall, cushion or door only.',
       lighting_and_shadow:
-        'Use soft daylight, practical bounce, concealed glow, edge-defining shadow, and material-aware reflection control; make light reveal joints, relief, material depth, scale, and atmosphere from circle-square intersection, tubular steel, primary color accent, white/black structure, clear glass without replacing prompt X with a stock architectural render.',
+        'Even daylight through large steel windows, industrial glass or opal globe lamps, crisp shadows of tubular frames on white floors.',
       texture_and_material:
-        'Render wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; prioritize the tactile signals in circle-square intersection, tubular steel, primary color accent, white/black structure, clear glass, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Chrome-plated tubular steel, stretched canvas or woven cane seats, linoleum floors, painted steel window frames, plate glass, hand-woven wall hangings.',
       camera_and_composition:
-        'Frame through cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space; convert circle-square intersection, tubular steel, primary color accent, white/black structure, clear glass into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through inhabitable atmosphere, design intent, tactile comfort or tension, and spatial personality without staged showroom dependency; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested view; orthogonal framing, planes read as flat colored rectangles, clear negative space between objects.',
+      atmosphere_and_mood: 'Rational, bright and purposeful, a room designed like a tool.',
       rendering_and_quality:
-        'Finish with polished architectural visualization clarity with denoised surfaces, believable material response, no fake text, and no decor-catalog drift; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Crisp period-inspired photograph: clean edges, strong geometry, no ornament and no replica of a named designer chair.',
       key_features:
-        'circle-square intersection, tubular steel, primary color accent, white/black structure, clear glass; clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space',
+        'chrome tubular steel; white planes with one primary accent; linoleum floor; steel window grid; orthogonal composition',
       creative_brief:
-        'Apply Bauhaus Interior after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies circle-square intersection, tubular steel, primary color accent, white/black structure, clear glass, bent wood, interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bauhaus Interior as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -356,28 +345,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Maximalist Decor',
     category: '1. Interior Design Systems',
     negativePrompt:
-      'empty, white, minimal, bookshelf wall, lamp hero, clutter-only interior zones, chair/sofa focus, curtain-dominant scene, market aisle, library aisle, corridor, empty abstraction, showroom formula, chair or sofa focus, curtain wall default, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
+      'furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, empty white walls, minimalism, messy junk pile, empty, white, minimal, bookshelf wall, lamp hero, chair/sofa focus, curtain-dominant scene, market aisle, library aisle, empty abstraction, showroom formula, chair or sofa focus, curtain wall default, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Maximalist Decor acts as a transferable architecture/interior router: jewel-tone layers, patterned textile rhythm, velvet, gilded trim, gallery-density surfaces; fuse it with interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Maximalist decor: more is more, with pattern on pattern, gallery-hung frames floor to ceiling, jewel-tone velvet, gilded trim and collected objects on every surface.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; treat jewel-tone layers, patterned textile rhythm, velvet, gilded trim, gallery-density surfaces as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.',
       color_and_tone:
-        'Map color through controlled interior color hierarchy, wall or shell base tones, tactile secondary materials, small accent signals, and readable value spacing; let source cues such as jewel-tone layers, patterned textile rhythm, velvet, gilded trim, gallery-density surfaces decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Saturated jewel tones — emerald, sapphire, ruby, saffron — on dark lacquered walls, with gold as the binding accent; high saturation, medium-low key.',
       lighting_and_shadow:
-        'Use soft daylight, practical bounce, concealed glow, edge-defining shadow, and material-aware reflection control; make light reveal joints, relief, material depth, scale, and atmosphere from jewel-tone layers, patterned textile rhythm, velvet, gilded trim, gallery-density surfaces without replacing prompt X with a stock architectural render.',
+        'Many warm lamps with fabric shades, picture lights over frames, glints on gilt and lacquer; no single dominant source.',
       texture_and_material:
-        'Render wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; prioritize the tactile signals in jewel-tone layers, patterned textile rhythm, velvet, gilded trim, gallery-density surfaces, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Cut velvet, chinoiserie or botanical wallpaper, high-gloss lacquered walls, animal-print and ikat textiles, gilded frames, glazed ceramics.',
       camera_and_composition:
-        'Frame through cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space; convert jewel-tone layers, patterned textile rhythm, velvet, gilded trim, gallery-density surfaces into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through inhabitable atmosphere, design intent, tactile comfort or tension, and spatial personality without staged showroom dependency; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested view; dense frontal framing with a gallery wall behind, pattern layers from foreground to back.',
+      atmosphere_and_mood: 'Theatrical, indulgent and joyful, a room that performs.',
       rendering_and_quality:
-        'Finish with polished architectural visualization clarity with denoised surfaces, believable material response, no fake text, and no decor-catalog drift; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Rich editorial photograph: every pattern crisp, colors saturated but controlled, no messy clutter pile.',
       key_features:
-        'jewel-tone layers, patterned textile rhythm, velvet, gilded trim, gallery-density surfaces; clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space',
+        'pattern on pattern; floor-to-ceiling gallery wall; jewel-tone velvet; high-gloss lacquered walls; gilded trim',
       creative_brief:
-        'Apply Maximalist Decor after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies jewel-tone layers, patterned textile rhythm, velvet, gilded trim, gallery-density surfaces, interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Maximalist Decor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -385,28 +373,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Farmhouse Chic',
     category: '1. Interior Design Systems',
     negativePrompt:
-      'modern, sleek, chrome, hallway view, linen cabinet, kitchen sink/appliance scene, dining table, chair focus, pendant-lamp hero, flower bucket centerpiece, TV farmhouse cliche, market aisle, library aisle, corridor, empty abstraction, showroom formula, chair or sofa focus, lamp hero, curtain wall default, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
+      'furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, chrome, glossy lacquer, farmhouse word signs, flower bucket centerpiece, sleek, chair focus, pendant-lamp hero, TV farmhouse cliche, market aisle, library aisle, empty abstraction, showroom formula, chair or sofa focus, lamp hero, curtain wall default, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Farmhouse Chic acts as a transferable architecture/interior router: warm white shiplap junction, reclaimed barn-wood brace, galvanized metal panel, black iron strap hinge, washed linen edge, beadboard rhythm; fuse it with interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Farmhouse chic interior: painted shiplap and board-and-batten walls, reclaimed barn beams, sliding barn doors on black strap rails, and practical country furniture freshened with white.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; treat warm white shiplap junction, reclaimed barn-wood brace, galvanized metal panel, black iron strap hinge, washed linen edge as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.',
       color_and_tone:
-        'Map color through controlled interior color hierarchy, wall or shell base tones, tactile secondary materials, small accent signals, and readable value spacing; let source cues such as warm white shiplap junction, reclaimed barn-wood brace, galvanized metal panel, black iron strap hinge, washed linen edge decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Warm white and cream walls, weathered grey-brown barn wood, black iron, galvanized steel, sage and soft blue accents; bright and airy.',
       lighting_and_shadow:
-        'Use soft daylight, practical bounce, concealed glow, edge-defining shadow, and material-aware reflection control; make light reveal joints, relief, material depth, scale, and atmosphere from warm white shiplap junction, reclaimed barn-wood brace, galvanized metal panel, black iron strap hinge, washed linen edge without replacing prompt X with a stock architectural render.',
+        'Bright soft daylight from multi-pane windows, black iron pendants, clean shadows along horizontal shiplap lines.',
       texture_and_material:
-        'Render wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; prioritize the tactile signals in warm white shiplap junction, reclaimed barn-wood brace, galvanized metal panel, black iron strap hinge, washed linen edge, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Tongue-and-groove shiplap, reclaimed beams with nail holes, galvanized buckets and tubs, black strap hinges, washed linen, butcher-block tops.',
       camera_and_composition:
-        'Frame through cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space; convert warm white shiplap junction, reclaimed barn-wood brace, galvanized metal panel, black iron strap hinge, washed linen edge into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through inhabitable atmosphere, design intent, tactile comfort or tension, and spatial personality without staged showroom dependency; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested view; horizontal shiplap lines leading the eye, one exposed beam across the top of the frame.',
+      atmosphere_and_mood: 'Fresh, practical and welcoming, country work made pretty.',
       rendering_and_quality:
-        'Finish with polished architectural visualization clarity with denoised surfaces, believable material response, no fake text, and no decor-catalog drift; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Bright lifestyle photograph with honest wood grain and iron texture, no TV-show farmhouse sign clichés.',
       key_features:
-        'warm white shiplap junction, reclaimed barn-wood brace, galvanized metal panel, black iron strap hinge, washed linen edge; clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space',
+        'painted shiplap walls; reclaimed barn beams; sliding barn door on black rail; galvanized steel; washed linen',
       creative_brief:
-        'Apply Farmhouse Chic after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies warm white shiplap junction, reclaimed barn-wood brace, galvanized metal panel, black iron strap hinge, washed linen edge, beadboard rhythm, interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Farmhouse Chic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -414,28 +401,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Art Nouveau Interior',
     category: '1. Interior Design Systems',
     negativePrompt:
-      'rigid rectilinear grid, fixed period interior zones, lamp hero, chair focus, required flower bouquet, market aisle, library aisle, corridor, empty abstraction, showroom formula, chair or sofa focus, curtain wall default, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, literal flower bouquet, mandatory interior set, prompt-literal card',
+      'furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, rigid rectilinear grid, required flower bouquet, poster lettering, lamp hero, chair focus, market aisle, library aisle, empty abstraction, showroom formula, chair or sofa focus, curtain wall default, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, literal flower bouquet, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Art Nouveau Interior acts as a transferable architecture/interior router: whiplash curves, floral structural lines, iridescent art glass, patinated bronze, carved wood, peacock/sage accents; fuse it with interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Art Nouveau interior: whiplash curves grow through structure and ornament alike, with carved wood, bent wrought iron, stained and opalescent glass, and mosaic.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; treat whiplash curves, floral structural lines, iridescent art glass, patinated bronze, carved wood as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.',
       color_and_tone:
-        'Map color through controlled interior color hierarchy, wall or shell base tones, tactile secondary materials, small accent signals, and readable value spacing; let source cues such as whiplash curves, floral structural lines, iridescent art glass, patinated bronze, carved wood decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Olive, sage, amber, peacock teal and violet, with gold-bronze metal; soft stained-glass colour washing across cream plaster.',
       lighting_and_shadow:
-        'Use soft daylight, practical bounce, concealed glow, edge-defining shadow, and material-aware reflection control; make light reveal joints, relief, material depth, scale, and atmosphere from whiplash curves, floral structural lines, iridescent art glass, patinated bronze, carved wood without replacing prompt X with a stock architectural render.',
+        'Daylight through stained or opalescent glass casting coloured patches, tulip and lily-shaped glass lamps, soft curving shadows.',
       texture_and_material:
-        'Render wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; prioritize the tactile signals in whiplash curves, floral structural lines, iridescent art glass, patinated bronze, carved wood, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Carved pear or walnut with flowing organic mouldings, wrought iron vine balustrades, iridescent art glass, glass-tile mosaic, patinated bronze.',
       camera_and_composition:
-        'Frame through cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space; convert whiplash curves, floral structural lines, iridescent art glass, patinated bronze, carved wood into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through inhabitable atmosphere, design intent, tactile comfort or tension, and spatial personality without staged showroom dependency; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested view; let a curve lead the eye — a stair rail, arch or window mullion — and avoid rigid rectilinear framing.',
+      atmosphere_and_mood: 'Sensuous, organic and elegant, a room that seems to grow.',
       rendering_and_quality:
-        'Finish with polished architectural visualization clarity with denoised surfaces, believable material response, no fake text, and no decor-catalog drift; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Warm natural-light photograph with coloured glass light clean, curves continuous, ornament crisp but soft.',
       key_features:
-        'whiplash curves, floral structural lines, iridescent art glass, patinated bronze, carved wood; clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space',
+        'whiplash curve ornament; wrought iron vine balustrade; iridescent stained glass; carved organic mouldings; glass mosaic',
       creative_brief:
-        'Apply Art Nouveau Interior after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies whiplash curves, floral structural lines, iridescent art glass, patinated bronze, carved wood, peacock/sage accents, interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Art Nouveau Interior as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -443,28 +429,179 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Memphis Design',
     category: '1. Interior Design Systems',
     negativePrompt:
-      'boring, beige, 1980s living interior zones, studio set, chair/sofa focus, lamp hero, readable text, market aisle, library aisle, corridor, empty abstraction, showroom formula, chair or sofa focus, curtain wall default, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
+      'furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, beige neutrals, wood grain dominance, moody low light, boring, beige, studio set, chair/sofa focus, lamp hero, readable text, market aisle, library aisle, empty abstraction, showroom formula, chair or sofa focus, curtain wall default, fixed building-only scene, corridor perspective, furniture showroom, prompt-required card, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Memphis Design acts as a transferable architecture/interior router: squiggles, terrazzo, Formica shine, asymmetric pastel blocks, black-white graphic pattern, bubblegum pink, teal, yellow; fuse it with interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
+        'Memphis design interior: playful anti-functional postmodern furniture built from clashing geometric volumes, laminate, terrazzo and bold squiggle patterns.',
       subject_treatment:
-        'Preserve prompt subject, action, and context while translating any requested subject through clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; treat squiggles, terrazzo, Formica shine, asymmetric pastel blocks, black-white graphic pattern as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+        'Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.',
       color_and_tone:
-        'Map color through controlled interior color hierarchy, wall or shell base tones, tactile secondary materials, small accent signals, and readable value spacing; let source cues such as squiggles, terrazzo, Formica shine, asymmetric pastel blocks, black-white graphic pattern decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
+        'Pastel pink, mint, butter yellow and lilac clashing with primary red, cobalt and black-and-white graphic patterns; flat, high-key color.',
       lighting_and_shadow:
-        'Use soft daylight, practical bounce, concealed glow, edge-defining shadow, and material-aware reflection control; make light reveal joints, relief, material depth, scale, and atmosphere from squiggles, terrazzo, Formica shine, asymmetric pastel blocks, black-white graphic pattern without replacing prompt X with a stock architectural render.',
+        'Bright even studio-like light with hard small shadows under blocky furniture, no moody falloff.',
       texture_and_material:
-        'Render wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; prioritize the tactile signals in squiggles, terrazzo, Formica shine, asymmetric pastel blocks, black-white graphic pattern, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+        'Glossy plastic laminate, speckled terrazzo, squiggle and confetti-printed surfaces, lacquered MDF volumes, chrome ball feet.',
       camera_and_composition:
-        'Frame through cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space; convert squiggles, terrazzo, Formica shine, asymmetric pastel blocks, black-white graphic pattern into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
-      atmosphere_and_mood:
-        'Carry mood through inhabitable atmosphere, design intent, tactile comfort or tension, and spatial personality without staged showroom dependency; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
+        'Keep the requested view; frontal flat framing like a stage set, objects stacked as colored blocks, asymmetrical balance.',
+      atmosphere_and_mood: 'Cheeky, loud and irreverent, good taste deliberately broken.',
       rendering_and_quality:
-        'Finish with polished architectural visualization clarity with denoised surfaces, believable material response, no fake text, and no decor-catalog drift; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
+        'Clean bright photograph with saturated flat color and crisp pattern edges, no grime or beige.',
       key_features:
-        'squiggles, terrazzo, Formica shine, asymmetric pastel blocks, black-white graphic pattern; clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy, and object-ready interior detailing; wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details; cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts, section-like reads, and deliberate negative space',
+        'clashing geometric furniture volumes; squiggle and confetti patterns; plastic laminate; speckled terrazzo; pastel versus primary color clash',
       creative_brief:
-        'Apply Memphis Design after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies squiggles, terrazzo, Formica shine, asymmetric pastel blocks, black-white graphic pattern, bubblegum pink, teal, yellow, interior-system design grammar with furniture-independent proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Memphis Design as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP07-081',
+    name: 'Shaker Peg-Rail Interior',
+    displayName: 'Shaker Peg-Rail Interior',
+    styleAnchors: [
+      'Shaker Peg-Rail Interior',
+      'Shaker plain-style interior',
+      'continuous peg rail with hung chairs',
+    ],
+    category: '1. Interior Design Systems',
+    domain: 'Shaker plain-style interior',
+    negativePrompt:
+      'furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, ornament, carved decoration, clutter, glossy varnish, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Shaker plain-style interior: whitewashed plaster, a continuous wooden peg rail at head height, built-in drawer walls and ladder-back furniture hung up out of the way.',
+      subject_treatment:
+        'Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.',
+      color_and_tone:
+        'Plaster white and scrubbed pine with milk-paint accents in barn red, mustard, blue-green or deep teal; muted, clear, calm.',
+      lighting_and_shadow:
+        'Plain daylight from evenly spaced double-hung windows, soft side shadow, chairs hanging from the rail casting clean silhouettes.',
+      texture_and_material:
+        'Turned maple pegs, flat-panel cherry or pine casework with small turned knobs, woven tape chair seats, oval bentwood boxes with swallowtail laps.',
+      camera_and_composition:
+        'Keep the requested view; frontal and symmetrical, the peg rail running across the frame as a horizon line, floor kept clear.',
+      atmosphere_and_mood: 'Orderly, honest and serene, every object earning its place.',
+      rendering_and_quality:
+        'Quiet daylight photograph, crisp joinery, matte milk-paint finish, no decorative clutter or ornament.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Shaker Peg-Rail Interior as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'continuous peg rail with hung chairs; built-in drawer walls; milk-paint accent colors; oval bentwood boxes; ladder-back chairs with woven tape',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP07-082',
+    name: 'Wabi-Sabi Earthen Interior',
+    displayName: 'Wabi-Sabi Earthen Interior',
+    styleAnchors: [
+      'Wabi-Sabi Earthen Interior',
+      'wabi-sabi imperfection interior',
+      'cracked clay plaster with straw',
+    ],
+    category: '1. Interior Design Systems',
+    domain: 'wabi-sabi imperfection interior',
+    negativePrompt:
+      'furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, glossy new finishes, perfect symmetry, bright saturated color, tatami module layout, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Wabi-sabi interior: rough earthen plaster, patched and repaired surfaces, weathered timber and unmatched handmade ceramics, beauty found in wear and asymmetry.',
+      subject_treatment:
+        'Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.',
+      color_and_tone:
+        'Mud brown, ash grey, rust, lichen green and undyed flax; low saturation, soft dark values, nothing bright or new.',
+      lighting_and_shadow:
+        'Single low side light from a small opening, deep soft darkness, surfaces read by raking light across their unevenness.',
+      texture_and_material:
+        'Hand-smeared clay plaster with straw and cracks, charred or silver-weathered wood, gold-seamed repaired pottery, rough hemp and linen, stone worn smooth.',
+      camera_and_composition:
+        'Keep the requested view; off-centre composition, one imperfect object close in the raking light, large dark areas left empty.',
+      atmosphere_and_mood: 'Humble, melancholic and tender, time visible on every surface.',
+      rendering_and_quality:
+        'Soft photograph in low light with fine texture detail and gentle grain, no gloss, polish or symmetry.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wabi-Sabi Earthen Interior as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'cracked clay plaster with straw; gold-seamed repaired ceramics; silver-weathered timber; single raking side light; off-centre asymmetry',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP07-083',
+    name: 'Arts and Crafts Inglenook',
+    displayName: 'Arts and Crafts Inglenook',
+    styleAnchors: [
+      'Arts and Crafts Inglenook',
+      'Arts and Crafts domestic interior',
+      'quarter-sawn oak with ray fleck',
+    ],
+    category: '1. Interior Design Systems',
+    domain: 'Arts and Crafts domestic interior',
+    negativePrompt:
+      'furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, machine-made gloss, Victorian clutter, chrome, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Arts and Crafts interior: quarter-sawn oak panelling and exposed joinery with pegged tenons, a built-in inglenook hearth, hammered copper and stylised plant-pattern textiles.',
+      subject_treatment:
+        'Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.',
+      color_and_tone:
+        'Fumed oak brown, sage green, madder red, ochre and hammered copper orange; warm, earthy and medium-dark.',
+      lighting_and_shadow:
+        'Leaded casement windows with small panes, firelight in the inglenook, mica or art-glass lamps, warm pools with soft falloff.',
+      texture_and_material:
+        'Ray-flecked quarter-sawn oak, through-tenons and wooden pegs, hand-hammered copper, block-printed wallpaper of vines and birds, handmade tiles around the hearth.',
+      camera_and_composition:
+        'Keep the requested view; low beamed ceilings, built-in settles and nooks framing the subject, joinery visible at eye level.',
+      atmosphere_and_mood: "Honest, sheltering and handmade, a craftsman's pride in every joint.",
+      rendering_and_quality:
+        'Warm low-light photograph with oak ray flecks and hammer marks legible, no mass-produced gloss or Victorian clutter.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Arts and Crafts Inglenook as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'quarter-sawn oak with ray fleck; exposed pegged through-tenons; built-in inglenook settle; hand-hammered copper; stylised vine-pattern textiles',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP07-084',
+    name: 'Space-Age Fiberglass Interior',
+    displayName: 'Space-Age Fiberglass Interior',
+    styleAnchors: [
+      'Space-Age Fiberglass Interior',
+      'space-age 1960s interior',
+      'molded white fiberglass shells',
+    ],
+    category: '1. Interior Design Systems',
+    domain: 'space-age 1960s interior',
+    negativePrompt:
+      'furniture catalog staging, olive branch in a vase as default decor, panoramic window view as default backdrop, real designer furniture replicas, replacing the requested room with a living room, wood grain dominance, rectilinear boxes, modern flat screens, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Space-age interior of the late 1960s: molded white fiberglass shells, curved walls with rounded porthole openings, sunken conversation pits and wall-to-wall shag.',
+      subject_treatment:
+        'Keep the requested room function, occupants, action and constraints; rebuild its shell, surfaces, joinery, furniture vocabulary and light in this interior system, adding only the pieces that room needs rather than a sample furniture set.',
+      color_and_tone:
+        'Glossy white shells with tangerine, hot orange, lime or purple upholstery and chrome; high-key, saturated accents on a white base.',
+      lighting_and_shadow:
+        'Glowing ceiling domes and recessed rings, globe lamps, soft wraparound shadow on curved surfaces, reflections sliding across gloss.',
+      texture_and_material:
+        'Seamless glossy fiberglass and ABS, deep shag carpet, stretch jersey upholstery, chrome and smoked acrylic, rounded vinyl padding.',
+      camera_and_composition:
+        'Keep the requested view; wide lens emphasising curvature, rounded openings framing depth, a sunken level in the foreground.',
+      atmosphere_and_mood: 'Swinging, optimistic and futuristic, the future as imagined then.',
+      rendering_and_quality:
+        'Glossy period colour photograph with clean highlights on curved plastic, no pixel-age screens or modern hardware.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Space-Age Fiberglass Interior as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'molded white fiberglass shells; sunken conversation pit; tangerine shag carpet; porthole openings; glowing ceiling domes',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

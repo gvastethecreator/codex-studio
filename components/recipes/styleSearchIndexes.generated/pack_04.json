@@ -3,7 +3,7 @@
     {
       "id": "pack_04",
       "name": "Illustration & Graphic Novel",
-      "presetCount": 115
+      "presetCount": 129
     }
   ],
   "presets": [
@@ -1540,7 +1540,291 @@
       "tags": ["illustration-and-graphic-novel", "technical-and-reference-sheets"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp04-100 monster size comparison chart 6. technical and reference sheets reference layouts pack_04 illustration & graphic novel technical-and-reference-sheets illustration-and-graphic-novel technical-and-reference-sheets"
+    },
+    {
+      "id": "SP04-116",
+      "name": "Patent Figure Plate",
+      "styleAnchors": ["Patent Figure Plate", "patent line drawing", "black line on white"],
+      "ref": "pack_04/SP04-116.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "technical-and-reference-sheets",
+      "categoryName": "6. Technical And Reference Sheets",
+      "domain": "patent line drawing",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "technical-and-reference-sheets",
+        "patent-line-drawing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-116 patent figure plate patent line drawing black line on white 6. technical and reference sheets reference layouts patent line drawing pack_04 illustration & graphic novel technical-and-reference-sheets illustration-and-graphic-novel technical-and-reference-sheets patent-line-drawing"
+    },
+    {
+      "id": "SP04-117",
+      "name": "Botanical Dissection Plate",
+      "styleAnchors": [
+        "Botanical Dissection Plate",
+        "scientific plant plate",
+        "whole specimen plus dissections"
+      ],
+      "ref": "pack_04/SP04-117.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "technical-and-reference-sheets",
+      "categoryName": "6. Technical And Reference Sheets",
+      "domain": "scientific plant plate",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "technical-and-reference-sheets",
+        "scientific-plant-plate"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-117 botanical dissection plate scientific plant plate whole specimen plus dissections 6. technical and reference sheets reference layouts scientific plant plate pack_04 illustration & graphic novel technical-and-reference-sheets illustration-and-graphic-novel technical-and-reference-sheets scientific-plant-plate"
+    },
+    {
+      "id": "SP04-118",
+      "name": "Field Guide Species Plate",
+      "styleAnchors": [
+        "Field Guide Species Plate",
+        "naturalist identification plate",
+        "male, female and juvenile"
+      ],
+      "ref": "pack_04/SP04-118.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "technical-and-reference-sheets",
+      "categoryName": "6. Technical And Reference Sheets",
+      "domain": "naturalist identification plate",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "technical-and-reference-sheets",
+        "naturalist-identification-plate"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-118 field guide species plate naturalist identification plate male, female and juvenile 6. technical and reference sheets reference layouts naturalist identification plate pack_04 illustration & graphic novel technical-and-reference-sheets illustration-and-graphic-novel technical-and-reference-sheets naturalist-identification-plate"
+    },
+    {
+      "id": "SP04-119",
+      "name": "Pose Library Sheet",
+      "styleAnchors": ["Pose Library Sheet", "figure pose reference", "eight to twelve poses"],
+      "ref": "pack_04/SP04-119.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "technical-and-reference-sheets",
+      "categoryName": "6. Technical And Reference Sheets",
+      "domain": "figure pose reference",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "technical-and-reference-sheets",
+        "figure-pose-reference"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-119 pose library sheet figure pose reference eight to twelve poses 6. technical and reference sheets reference layouts figure pose reference pack_04 illustration & graphic novel technical-and-reference-sheets illustration-and-graphic-novel technical-and-reference-sheets figure-pose-reference"
+    },
+    {
+      "id": "SP04-120",
+      "name": "Expression Model Sheet",
+      "styleAnchors": [
+        "Expression Model Sheet",
+        "facial expression reference",
+        "nine to twelve heads"
+      ],
+      "ref": "pack_04/SP04-120.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "technical-and-reference-sheets",
+      "categoryName": "6. Technical And Reference Sheets",
+      "domain": "facial expression reference",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "technical-and-reference-sheets",
+        "facial-expression-reference"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-120 expression model sheet facial expression reference nine to twelve heads 6. technical and reference sheets reference layouts facial expression reference pack_04 illustration & graphic novel technical-and-reference-sheets illustration-and-graphic-novel technical-and-reference-sheets facial-expression-reference"
+    },
+    {
+      "id": "SP04-121",
+      "name": "Garment Pattern Layout",
+      "styleAnchors": ["Garment Pattern Layout", "sewing pattern sheet", "flat pattern pieces"],
+      "ref": "pack_04/SP04-121.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "technical-and-reference-sheets",
+      "categoryName": "6. Technical And Reference Sheets",
+      "domain": "sewing pattern sheet",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "technical-and-reference-sheets",
+        "sewing-pattern-sheet"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-121 garment pattern layout sewing pattern sheet flat pattern pieces 6. technical and reference sheets reference layouts sewing pattern sheet pack_04 illustration & graphic novel technical-and-reference-sheets illustration-and-graphic-novel technical-and-reference-sheets sewing-pattern-sheet"
+    },
+    {
+      "id": "SP04-122",
+      "name": "Wordless Assembly Steps",
+      "styleAnchors": ["Wordless Assembly Steps", "assembly instruction sheet", "six step panels"],
+      "ref": "pack_04/SP04-122.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "technical-and-reference-sheets",
+      "categoryName": "6. Technical And Reference Sheets",
+      "domain": "assembly instruction sheet",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "technical-and-reference-sheets",
+        "assembly-instruction-sheet"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-122 wordless assembly steps assembly instruction sheet six step panels 6. technical and reference sheets reference layouts assembly instruction sheet pack_04 illustration & graphic novel technical-and-reference-sheets illustration-and-graphic-novel technical-and-reference-sheets assembly-instruction-sheet"
+    },
+    {
+      "id": "SP04-123",
+      "name": "Poché Section Drawing",
+      "styleAnchors": ["Poché Section Drawing", "architectural section", "solid black cut walls"],
+      "ref": "pack_04/SP04-123.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "technical-and-reference-sheets",
+      "categoryName": "6. Technical And Reference Sheets",
+      "domain": "architectural section",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "technical-and-reference-sheets",
+        "architectural-section"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-123 poché section drawing architectural section solid black cut walls 6. technical and reference sheets reference layouts architectural section pack_04 illustration & graphic novel technical-and-reference-sheets illustration-and-graphic-novel technical-and-reference-sheets architectural-section"
+    },
+    {
+      "id": "SP04-124",
+      "name": "Heraldry Tincture Sheet",
+      "styleAnchors": [
+        "Heraldry Tincture Sheet",
+        "heraldic design study",
+        "one shield in many tinctures"
+      ],
+      "ref": "pack_04/SP04-124.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "technical-and-reference-sheets",
+      "categoryName": "6. Technical And Reference Sheets",
+      "domain": "heraldic design study",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "technical-and-reference-sheets",
+        "heraldic-design-study"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-124 heraldry tincture sheet heraldic design study one shield in many tinctures 6. technical and reference sheets reference layouts heraldic design study pack_04 illustration & graphic novel technical-and-reference-sheets illustration-and-graphic-novel technical-and-reference-sheets heraldic-design-study"
+    },
+    {
+      "id": "SP04-125",
+      "name": "Celestial Atlas Plate",
+      "styleAnchors": ["Celestial Atlas Plate", "constellation chart", "constellation figure"],
+      "ref": "pack_04/SP04-125.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "technical-and-reference-sheets",
+      "categoryName": "6. Technical And Reference Sheets",
+      "domain": "constellation chart",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "technical-and-reference-sheets",
+        "constellation-chart"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-125 celestial atlas plate constellation chart constellation figure 6. technical and reference sheets reference layouts constellation chart pack_04 illustration & graphic novel technical-and-reference-sheets illustration-and-graphic-novel technical-and-reference-sheets constellation-chart"
+    },
+    {
+      "id": "SP04-126",
+      "name": "Three-View Recognition Chart",
+      "styleAnchors": [
+        "Three-View Recognition Chart",
+        "silhouette identification chart",
+        "black silhouettes"
+      ],
+      "ref": "pack_04/SP04-126.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "technical-and-reference-sheets",
+      "categoryName": "6. Technical And Reference Sheets",
+      "domain": "silhouette identification chart",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "technical-and-reference-sheets",
+        "silhouette-identification-chart"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-126 three-view recognition chart silhouette identification chart black silhouettes 6. technical and reference sheets reference layouts silhouette identification chart pack_04 illustration & graphic novel technical-and-reference-sheets illustration-and-graphic-novel technical-and-reference-sheets silhouette-identification-chart"
+    },
+    {
+      "id": "SP04-127",
+      "name": "Perspective Construction Drawing",
+      "styleAnchors": [
+        "Perspective Construction Drawing",
+        "perspective drawing study",
+        "visible vanishing lines"
+      ],
+      "ref": "pack_04/SP04-127.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "technical-and-reference-sheets",
+      "categoryName": "6. Technical And Reference Sheets",
+      "domain": "perspective drawing study",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "technical-and-reference-sheets",
+        "perspective-drawing-study"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-127 perspective construction drawing perspective drawing study visible vanishing lines 6. technical and reference sheets reference layouts perspective drawing study pack_04 illustration & graphic novel technical-and-reference-sheets illustration-and-graphic-novel technical-and-reference-sheets perspective-drawing-study"
+    },
+    {
+      "id": "SP04-128",
+      "name": "Motion Cycle Linkage Study",
+      "styleAnchors": [
+        "Motion Cycle Linkage Study",
+        "mechanism motion diagram",
+        "ghosted successive positions"
+      ],
+      "ref": "pack_04/SP04-128.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "technical-and-reference-sheets",
+      "categoryName": "6. Technical And Reference Sheets",
+      "domain": "mechanism motion diagram",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "technical-and-reference-sheets",
+        "mechanism-motion-diagram"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-128 motion cycle linkage study mechanism motion diagram ghosted successive positions 6. technical and reference sheets reference layouts mechanism motion diagram pack_04 illustration & graphic novel technical-and-reference-sheets illustration-and-graphic-novel technical-and-reference-sheets mechanism-motion-diagram"
+    },
+    {
+      "id": "SP04-129",
+      "name": "Archaeological Find Drawing",
+      "styleAnchors": [
+        "Archaeological Find Drawing",
+        "artifact recording drawing",
+        "half profile and section"
+      ],
+      "ref": "pack_04/SP04-129.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "technical-and-reference-sheets",
+      "categoryName": "6. Technical And Reference Sheets",
+      "domain": "artifact recording drawing",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "technical-and-reference-sheets",
+        "artifact-recording-drawing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-129 archaeological find drawing artifact recording drawing half profile and section 6. technical and reference sheets reference layouts artifact recording drawing pack_04 illustration & graphic novel technical-and-reference-sheets illustration-and-graphic-novel technical-and-reference-sheets artifact-recording-drawing"
     }
   ],
-  "totalPresetCount": 115
+  "totalPresetCount": 129
 }
