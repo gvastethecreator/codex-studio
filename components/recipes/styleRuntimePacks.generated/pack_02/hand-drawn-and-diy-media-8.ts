@@ -8,28 +8,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Office Whiteboard Doodle',
     category: '8. Hand-Drawn And DIY Media',
     negativePrompt:
-      'digital, clean, polished, professional, realistic, painted, 3d, photo, refined, color rich, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, polished corporate vector, fake readable notes, clean studio poster, stock illustration polish',
+      'photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, bicycle, digital, clean, polished, professional, realistic, painted, 3d, photo, refined, color rich, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, polished corporate vector, fake readable notes, clean studio poster, stock illustration polish, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Office Whiteboard Doodle acts as a transferable cinematic-media router: start from Dry-erase marker on whiteboard, awkward flowchart humor, half-erased previous ideas ghosting underneath, blue-expo red-expo green-expo marker colors, corporate satire drawn during boring meetings, strategy-diagram absurdity, Dry-erase marker strokes, eraser ghost trails, flowchart arrows, diagram circles, glossy board reflection, no readable text and DIY media system built from informal marks, found surfaces, zine assembly, crude diagramming, deck graphics, cave pigment, and hand-made reproduction texture, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Office whiteboard doodle: dry-erase markers on a glossy whiteboard, drawn fast during a meeting, with the ghosts of earlier half-erased drawings underneath.',
       subject_treatment:
-        'Transform any prompt subject through Squeaky dry-erase marker strokes, variable thickness from marker angle, eraser-smear ghost trails, hasty unsteady linework, arrow-heavy composition; preserve the requested subject while rebuilding it through whiteboard strokes, crumpled-paper scribbles, primitive pigment, zine cuts, skateboard-deck composition, or napkin blueprint logic, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Expo-marker blue, red, green, black on glossy white, faded-ink pink from dried-out markers, smudge-grey eraser trails; use color through dry-erase primaries, paper grey, cave ochres, xerox black, punk collage hits, deck enamel, or improvised marker accents, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Harsh fluorescent overhead, glossy board reflection, shallow surface glare; keep light secondary to surface evidence through flat scan lighting, paper shadow, primitive wall texture, or graphic ink contrast, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.',
+      color_and_tone: 'Glossy white board, marker blue, red, green and black, faint grey ghosting.',
+      lighting_and_shadow: 'Office fluorescent glare streaks across the board surface.',
       texture_and_material:
-        'Render Glossy whiteboard surface, dried-marker residue stains, eraser-felt streaks, aluminum frame reflection; surface detail should reveal marker squeak, paper wrinkles, cave-grain pigment, tape, photocopy dirt, deck varnish, napkin fiber, or zine cut edges, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Streaky marker strokes that skip on the gloss, smudged edges where a hand brushed, eraser swipes.',
       camera_and_composition:
-        'Structure the image through Arrows looping in impossible circles, crowded diagram spacing, warped marker perspective; compose through casual diagram layout, pasted fragments, object-on-surface graphic balance, hand-drawn arrows without readable text, and rough spatial shorthand, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Bored-meeting creativity, corporate-surrealism, passive-aggressive office humor, caffeine-fueled doodling; derive mood from improvised problem-solving, punk urgency, outsider charm, ancient ritual memory, office boredom, or homemade design energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'The whole board seen flat, arrows and circles connecting the drawn subject.',
+      atmosphere_and_mood: 'Bored and playful, inspiration sneaking into a long meeting.',
       rendering_and_quality:
-        'Finish with Office whiteboard doodle aesthetic, dry-erase impermanence, meeting-interior volume creativity, corporate-absurdism humor; finish with honest DIY texture, readable prompt identity, and no polished corporate vector, fake readable notes, or clean studio poster default, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Real marker on glossy board with glare; no readable words, only arrows and shapes.',
       key_features:
-        'Dry-erase marker on whiteboard, awkward flowchart humor, half-erased previous ideas ghosting underneath, blue-expo red-expo green-expo marker colors, corporate satire drawn during boring meetings, strategy-diagram absurdity; Dry-erase marker strokes, eraser ghost trails, flowchart arrows, diagram circles, glossy board reflection, no readable text; Expo-marker blue, red, green, black on glossy white, faded-ink pink from dried-out markers, smudge-grey eraser trails; Glossy whiteboard surface, dried-marker residue stains, eraser-felt streaks, aluminum frame reflection; Arrows looping in impossible circles, crowded diagram spacing, warped marker perspective',
+        'dry-erase marker streaks; half-erased ghost drawings; fluorescent glare; arrows and circles; four-color markers',
       creative_brief:
-        "Apply Office Whiteboard Doodle as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Dry-erase marker on whiteboard, awkward flowchart humor, half-erased previous ideas ghosting underneath, blue-expo red-expo green-expo marker colors, corporate satire drawn during boring meetings, strategy-diagram absurdity, Dry-erase marker strokes, eraser ghost trails, flowchart arrows, diagram circles, glossy board reflection, no readable text, Glossy whiteboard surface, dried-marker residue stains, eraser-felt streaks, aluminum frame reflection without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Office Whiteboard Doodle as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +34,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Crumpled-Paper Scribble',
     category: '8. Hand-Drawn And DIY Media',
     negativePrompt:
-      'flat, clean, smooth, pristine, digital, straight, unwrinkled, perfect, crisp edges, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, polished corporate vector, fake readable notes, clean studio poster, stock illustration polish',
+      'photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, flat, clean, smooth, pristine, digital, straight, unwrinkled, perfect, crisp edges, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, polished corporate vector, fake readable notes, clean studio poster, stock illustration polish, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Crumpled-Paper Scribble acts as a transferable cinematic-media router: start from Drawing on crumpled then flattened paper, crease-lines cutting through the art, stained and abused surface, wrinkled-grid distortion, beautiful-accident texture, discarded-thought recovered, Paper crease lines across art, coffee-stain rings, torn paper edges, ink-pooling in fold valleys, wabi-sabi imperfection and DIY media system built from informal marks, found surfaces, zine assembly, crude diagramming, deck graphics, cave pigment, and hand-made reproduction texture, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Crumpled-paper scribble: a pencil and ink drawing on paper that was crushed into a ball and flattened again, the creases cutting through the art.',
       subject_treatment:
-        'Transform any prompt subject through Lines broken by paper creases, ink pooling in fold valleys, interrupted-contour across wrinkles, roughened-edge strokes; preserve the requested subject while rebuilding it through whiteboard strokes, crumpled-paper scribbles, primitive pigment, zine cuts, skateboard-deck composition, or napkin blueprint logic, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.',
       color_and_tone:
-        'Build color with Stained paper beige, coffee-ring sepia, ballpoint blue, graphite grey, yellow-highlighter fluorescence, tea-tannin brown; use color through dry-erase primaries, paper grey, cave ochres, xerox black, punk collage hits, deck enamel, or improvised marker accents, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Off-white and yellowed paper, graphite grey, blue ballpoint, a coffee-brown stain.',
       lighting_and_shadow:
-        'Handle light through Top-down desk-lamp warmth, crease-shadow depth from crumpled topography, side-light revealing paper texture; keep light secondary to surface evidence through flat scan lighting, paper shadow, primitive wall texture, or graphic ink contrast, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Low side light raking across the creases so every fold casts a tiny shadow.',
       texture_and_material:
-        'Render Deep-crease paper folds, coffee-stain absorption circles, water-damage warping, ink-bleed into fibers, torn-edge roughness; surface detail should reveal marker squeak, paper wrinkles, cave-grain pigment, tape, photocopy dirt, deck varnish, napkin fiber, or zine cut edges, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Sharp crease network, broken lines where ink skipped over folds, abraded fibers.',
       camera_and_composition:
-        'Structure the image through Forms bisected by fold lines, features shifted across crease faults, drawn-then-crumpled distortion; compose through casual diagram layout, pasted fragments, object-on-surface graphic balance, hand-drawn arrows without readable text, and rough spatial shorthand, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Desperate creativity, beautiful failure, late-night frustrated genius, rescued inspiration, melancholy charm; derive mood from improvised problem-solving, punk urgency, outsider charm, ancient ritual memory, office boredom, or homemade design energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Paper seen flat, filling the frame, the drawing warped slightly by the folds.',
+      atmosphere_and_mood: 'Wistful and rescued, a thrown-away idea given a second chance.',
       rendering_and_quality:
-        'Finish with Crumpled-paper sketch aesthetic, rescued-from-trash beauty, accidental-texture rendering, wabi-sabi art philosophy; finish with honest DIY texture, readable prompt identity, and no polished corporate vector, fake readable notes, or clean studio poster default, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Real crumpled-paper surface with light across the folds; not a texture overlay.',
       key_features:
-        'Drawing on crumpled then flattened paper, crease-lines cutting through the art, stained and abused surface, wrinkled-grid distortion, beautiful-accident texture, discarded-thought recovered; Paper crease lines across art, coffee-stain rings, torn paper edges, ink-pooling in fold valleys, wabi-sabi imperfection; Stained paper beige, coffee-ring sepia, ballpoint blue, graphite grey, yellow-highlighter fluorescence, tea-tannin brown; Deep-crease paper folds, coffee-stain absorption circles, water-damage warping, ink-bleed into fibers, torn-edge roughness; Forms bisected by fold lines, features shifted across crease faults, drawn-then-crumpled distortion',
+        'crease network through the drawing; raking side light; skipped ink over folds; yellowed paper; coffee stain',
       creative_brief:
-        "Apply Crumpled-Paper Scribble as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Drawing on crumpled then flattened paper, crease-lines cutting through the art, stained and abused surface, wrinkled-grid distortion, beautiful-accident texture, discarded-thought recovered, Paper crease lines across art, coffee-stain rings, torn paper edges, ink-pooling in fold valleys, wabi-sabi imperfection, Deep-crease paper folds, coffee-stain absorption circles, water-damage warping, ink-bleed into fibers, torn-edge roughness without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crumpled-Paper Scribble as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +62,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Prehistoric Cave Painting',
     category: '8. Hand-Drawn And DIY Media',
     negativePrompt:
-      'modern, digital, clean, sharp, polished, 3d, realistic, refined, precise, smooth, contemporary, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, polished corporate vector, fake readable notes, clean studio poster, stock illustration polish',
+      'photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, flat tribal graphic, modern clip art, modern, digital, clean, sharp, polished, 3d, realistic, refined, precise, smooth, contemporary, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, polished corporate vector, fake readable notes, clean studio poster, stock illustration polish, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Prehistoric Cave Painting acts as a transferable cinematic-media router: start from Paleolithic cave-wall art, ochre-pigment stencils, rudimentary symbolic silhouette subjects, Lascaux-cave energy, rough limestone surface, ancient storytelling through crude marks, thirty-thousand-year-old doodle energy, Stencil negative prints, ochre-red outlines, charcoal-stick roughness, limestone texture, torchlight flicker, no ground plane and DIY media system built from informal marks, found surfaces, zine assembly, crude diagramming, deck graphics, cave pigment, and hand-made reproduction texture, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Prehistoric cave painting: ochre, charcoal and red iron pigment blown and smeared onto a bumpy limestone wall by firelight.',
       subject_treatment:
-        'Transform any prompt subject through Crude finger-painted contours, blown-pigment hand silhouettes, charcoal-stick roughness, irregular natural pigment strokes; preserve the requested subject while rebuilding it through whiteboard strokes, crumpled-paper scribbles, primitive pigment, zine cuts, skateboard-deck composition, or napkin blueprint logic, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Ochre red, charcoal black, bone-ash white, clay-earth brown, iron-oxide rust, mineral-pigment rawness; use color through dry-erase primaries, paper grey, cave ochres, xerox black, punk collage hits, deck enamel, or improvised marker accents, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Torchlight flicker on cave wall, deep-shadow crevices, uneven stone illumination, dancing-flame warmth; keep light secondary to surface evidence through flat scan lighting, paper shadow, primitive wall texture, or graphic ink contrast, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Keep the prompt subject intact and paint it as a cave-wall image in pigment on rock, simplified into flowing outlines and filled silhouettes, without adding a cave scene around it.',
+      color_and_tone: 'Red and yellow ochre, charcoal black, bone-white calcite on warm tan stone.',
+      lighting_and_shadow: 'Flickering torchlight from below, the rock relief catching warm light.',
       texture_and_material:
-        'Render Rough limestone surface, mineral-crystal sparkle, pigment-caked into rock pores, stalactite drip, cave-dust coating; surface detail should reveal marker squeak, paper wrinkles, cave-grain pigment, tape, photocopy dirt, deck varnish, napkin fiber, or zine cut edges, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Spray-blown hand stencils, finger-smeared pigment, cracks and calcite drips, rock bulges used as body volume.',
       camera_and_composition:
-        'Structure the image through Impossible counts, incomplete silhouettes, overlapping-time narrative on same wall, no ground-line suspension; compose through casual diagram layout, pasted fragments, object-on-surface graphic balance, hand-drawn arrows without readable text, and rough spatial shorthand, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        "Keep the mood Ancient, primal, mysterious, torchlit-reverence, humanity's-dawn wonder, sacred-cave silence; derive mood from improvised problem-solving, punk urgency, outsider charm, ancient ritual memory, office boredom, or homemade design energy, letting the media style alter interpretation without demanding a specific story, location, or actor.",
+        'Figures arranged along the natural contours of the wall, overlapping freely.',
+      atmosphere_and_mood: 'Ancient and ritual, the first images made by firelight.',
       rendering_and_quality:
-        "Finish with Prehistoric cave-art aesthetic, paleolithic expression, humanity's-first-art beauty, raw-pigment authenticity; finish with honest DIY texture, readable prompt identity, and no polished corporate vector, fake readable notes, or clean studio poster default, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.",
+        'Real pigment on stone; not a flat tribal graphic and not modern clip art.',
       key_features:
-        'Paleolithic cave-wall art, ochre-pigment stencils, rudimentary symbolic silhouette subjects, Lascaux-cave energy, rough limestone surface, ancient storytelling through crude marks, thirty-thousand-year-old doodle energy; Stencil negative prints, ochre-red outlines, charcoal-stick roughness, limestone texture, torchlight flicker, no ground plane; Ochre red, charcoal black, bone-ash white, clay-earth brown, iron-oxide rust, mineral-pigment rawness; Rough limestone surface, mineral-crystal sparkle, pigment-caked into rock pores, stalactite drip, cave-dust coating; Impossible counts, incomplete silhouettes, overlapping-time narrative on same wall, no ground-line suspension',
+        'ochre and charcoal pigment; spray-blown hand stencils; rock relief as volume; torchlight; overlapping figures',
       creative_brief:
-        "Apply Prehistoric Cave Painting as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Paleolithic cave-wall art, ochre-pigment stencils, rudimentary symbolic silhouette subjects, Lascaux-cave energy, rough limestone surface, ancient storytelling through crude marks, thirty-thousand-year-old doodle energy, Stencil negative prints, ochre-red outlines, charcoal-stick roughness, limestone texture, torchlight flicker, no ground plane, Rough limestone surface, mineral-crystal sparkle, pigment-caked into rock pores, stalactite drip, cave-dust coating without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Prehistoric Cave Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +88,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Skateboard Deck Graphic',
     category: '8. Hand-Drawn And DIY Media',
     negativePrompt:
-      'soft, gentle, cute, kawaii, subtle, quiet, calm, peaceful, elegant, refined, mature, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, polished corporate vector, fake readable notes, clean studio poster, stock illustration polish',
+      'photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, skateboard object, magazine name, soft, gentle, cute, kawaii, subtle, quiet, calm, peaceful, elegant, refined, mature, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, polished corporate vector, fake readable notes, clean studio poster, stock illustration polish, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Skateboard Deck Graphic acts as a transferable cinematic-media router: start from Punk-rock skateboard deck art, dripping slime graphics, Thrasher-magazine energy, 80s Powell-Peralta as style anchor, bold rebellious iconography, graffiti-meets-hot-rod aesthetic, deck-grip tape grain underneath the gloss, Bold-black outlines, slime-drips, screenprint texture, deck-shape composition, neon-green accents, gloss over wood grain and DIY media system built from informal marks, found surfaces, zine assembly, crude diagramming, deck graphics, cave pigment, and hand-made reproduction texture, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Skateboard deck graphic: 80s punk screenprint artwork with dripping slime, bold iconography and thick black keylines, printed flat in loud spot colors.',
       subject_treatment:
-        'Transform any prompt subject through Bold thick-black outlines, aggressive angular contours, dripping-paint trails, splatter-burst depth field, sharp-stencil edges; preserve the requested subject while rebuilding it through whiteboard strokes, crumpled-paper scribbles, primitive pigment, zine cuts, skateboard-deck composition, or napkin blueprint logic, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject intact and render it as a flat screenprinted deck-style graphic; the board itself is never drawn or added.',
       color_and_tone:
-        'Build color with Neon green slime, blood red, toxic-waste yellow, black-void depth field, radioactive purple, white-bone contrast, screenprint-overprint cyan; use color through dry-erase primaries, paper grey, cave ochres, xerox black, punk collage hits, deck enamel, or improvised marker accents, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Flat-graphic studio lighting, gloss-varnish reflection on board surface, no atmospheric depth; keep light secondary to surface evidence through flat scan lighting, paper shadow, primitive wall texture, or graphic ink contrast, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Toxic green, hot pink, electric purple and yellow spot colors on black, with slime drips.',
+      lighting_and_shadow: 'No rendered light; flat spot colors with cel-style halftone shading.',
       texture_and_material:
-        'Render Screenprint ink on maple veneer, gloss-varnish topcoat, grip-tape grain visible at edges, wood-ply layer peeking through paint; surface detail should reveal marker squeak, paper wrinkles, cave-grain pigment, tape, photocopy dirt, deck varnish, napkin fiber, or zine cut edges, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Screenprint misregistration, thick keylines, drippy slime edges, worn print scuffs.',
       camera_and_composition:
-        'Structure the image through Graphic central on deck shape, cutout interruptions, nose-and-tail-kick distortion zone; compose through casual diagram layout, pasted fragments, object-on-surface graphic balance, hand-drawn arrows without readable text, and rough spatial shorthand, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Rebellious, loud, public-space-cred, teenage-freedom, parking-lot-session energy, aggressive creativity; derive mood from improvised problem-solving, punk urgency, outsider charm, ancient ritual memory, office boredom, or homemade design energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Tall centered emblem composition with the subject rising out of flames or slime.',
+      atmosphere_and_mood: 'Rebellious and loud, pure street-culture swagger in every drip.',
       rendering_and_quality:
-        'Finish with Skateboard-deck graphic aesthetic, punk-rock screenprint energy, public-space-culture boldness, deck-wall art-gallery; finish with honest DIY texture, readable prompt identity, and no polished corporate vector, fake readable notes, or clean studio poster default, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Flat screenprint art only; no skateboard object, no brand or magazine names.',
       key_features:
-        'Punk-rock skateboard deck art, dripping slime graphics, Thrasher-magazine energy, 80s Powell-Peralta as style anchor, bold rebellious iconography, graffiti-meets-hot-rod aesthetic, deck-grip tape grain underneath the gloss; Bold-black outlines, slime-drips, screenprint texture, deck-shape composition, neon-green accents, gloss over wood grain; Neon green slime, blood red, toxic-waste yellow, black-void depth field, radioactive purple, white-bone contrast, screenprint-overprint cyan; Screenprint ink on maple veneer, gloss-varnish topcoat, grip-tape grain visible at edges, wood-ply layer peeking through paint; Graphic central on deck shape, cutout interruptions, nose-and-tail-kick distortion zone',
+        'flat spot-color screenprint; dripping slime; thick keylines; tall emblem composition; misregistration',
       creative_brief:
-        "Apply Skateboard Deck Graphic as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Punk-rock skateboard deck art, dripping slime graphics, Thrasher-magazine energy, 80s Powell-Peralta as style anchor, bold rebellious iconography, graffiti-meets-hot-rod aesthetic, deck-grip tape grain underneath the gloss, Bold-black outlines, slime-drips, screenprint texture, deck-shape composition, neon-green accents, gloss over wood grain, Screenprint ink on maple veneer, gloss-varnish topcoat, grip-tape grain visible at edges, wood-ply layer peeking through paint without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Skateboard Deck Graphic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +115,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Napkin Scribble Blueprint',
     category: '8. Hand-Drawn And DIY Media',
     negativePrompt:
-      'digital, clean, polished, precise, CAD, professional, straight lines, perfect, measured, refined, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, polished corporate vector, fake readable notes, clean studio poster, stock illustration polish',
+      'photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, digital, clean, polished, precise, CAD, professional, straight lines, perfect, measured, refined, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, polished corporate vector, fake readable notes, clean studio poster, stock illustration polish, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Napkin Scribble Blueprint acts as a transferable cinematic-media router: start from Genius-idea-on-cocktail-napkin energy, ballpoint-pen crudely sketching concept structure, coffee-ring framing, condensation warping the paper, desperate late-night inspiration captured on whatever surface available, Ballpoint-blue on napkin-tan, coffee-ring overlay, moisture-warped paper, fold-lines bisecting sketch, scratchy-ink skips, no readable text and DIY media system built from informal marks, found surfaces, zine assembly, crude diagramming, deck graphics, cave pigment, and hand-made reproduction texture, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Napkin scribble blueprint: a late-night idea sketched in ballpoint on a soft paper cocktail napkin, lines feathering into the tissue.',
       subject_treatment:
-        'Transform any prompt subject through Ballpoint-pen on absorbent paper, ink-burst where pen pauses, scratchy-dry-ink skips, pressed-too-hard paper indentations; preserve the requested subject while rebuilding it through whiteboard strokes, crumpled-paper scribbles, primitive pigment, zine cuts, skateboard-deck composition, or napkin blueprint logic, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.',
       color_and_tone:
-        'Build color with Ballpoint-blue ink, coffee-stain sepia, napkin-tan paper, beer-ring moisture-darkened halo, bar-neon reflected tint; use color through dry-erase primaries, paper grey, cave ochres, xerox black, punk collage hits, deck enamel, or improvised marker accents, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Dim ambient, single-overhead-bulb spot, emergency side light, warm falloff; keep light secondary to surface evidence through flat scan lighting, paper shadow, primitive wall texture, or graphic ink contrast, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Off-white embossed napkin, blue or black ballpoint, coffee or wine ring stains.',
+      lighting_and_shadow: 'Warm bar light from one side, faint shadows in the embossed pattern.',
       texture_and_material:
-        'Render Soft-ply napkin paper, ink-bleed-fringing, moisture-warped surface, crinkle-fold texture, absorbent-fiber softness; surface detail should reveal marker squeak, paper wrinkles, cave-grain pigment, tape, photocopy dirt, deck varnish, napkin fiber, or zine cut edges, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Ink bleeding and feathering into soft tissue, embossed napkin border, condensation wrinkles.',
       camera_and_composition:
-        'Structure the image through Drawing wrapping around napkin folds, arrows pointing off-edge, squeezed negative space, quarter-napkin composition; compose through casual diagram layout, pasted fragments, object-on-surface graphic balance, hand-drawn arrows without readable text, and rough spatial shorthand, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Eureka-moment electricity, desperate-inspiration, 3am-bar-genius, startup-mythology, beautiful-desperation; derive mood from improvised problem-solving, punk urgency, outsider charm, ancient ritual memory, office boredom, or homemade design energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Napkin seen from above on a bar surface, the sketch filling most of it.',
+      atmosphere_and_mood: 'Urgent and inspired, genius scribbled before the idea escapes.',
       rendering_and_quality:
-        'Finish with Cocktail-napkin-sketch aesthetic, desperate-genius energy, bar-napkin-provenance authenticity, beautiful-roughness; finish with honest DIY texture, readable prompt identity, and no polished corporate vector, fake readable notes, or clean studio poster default, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Real ballpoint on tissue; no readable notes, only lines, arrows and shapes.',
       key_features:
-        'Genius-idea-on-cocktail-napkin energy, ballpoint-pen crudely sketching concept structure, coffee-ring framing, condensation warping the paper, desperate late-night inspiration captured on whatever surface available; Ballpoint-blue on napkin-tan, coffee-ring overlay, moisture-warped paper, fold-lines bisecting sketch, scratchy-ink skips, no readable text; Ballpoint-blue ink, coffee-stain sepia, napkin-tan paper, beer-ring moisture-darkened halo, bar-neon reflected tint; Soft-ply napkin paper, ink-bleed-fringing, moisture-warped surface, crinkle-fold texture, absorbent-fiber softness; Drawing wrapping around napkin folds, arrows pointing off-edge, squeezed negative space, quarter-napkin composition',
+        'ballpoint feathering on tissue; embossed napkin border; ring stains; exploded-view arrows; bar light',
       creative_brief:
-        "Apply Napkin Scribble Blueprint as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Genius-idea-on-cocktail-napkin energy, ballpoint-pen crudely sketching concept structure, coffee-ring framing, condensation warping the paper, desperate late-night inspiration captured on whatever surface available, Ballpoint-blue on napkin-tan, coffee-ring overlay, moisture-warped paper, fold-lines bisecting sketch, scratchy-ink skips, no readable text, Soft-ply napkin paper, ink-bleed-fringing, moisture-warped surface, crinkle-fold texture, absorbent-fiber softness without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Napkin Scribble Blueprint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +142,495 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Punk Zine Cut-and-Paste',
     category: '8. Hand-Drawn And DIY Media',
     negativePrompt:
-      'digital, clean, smooth, professional, polished, designed, symmetrical, orderly, planned, corporate, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, polished corporate vector, fake readable notes, clean studio poster, stock illustration polish',
+      'photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, digital, clean, smooth, professional, polished, designed, symmetrical, orderly, planned, corporate, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, polished corporate vector, fake readable notes, clean studio poster, stock illustration polish, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Punk Zine Cut-and-Paste acts as a transferable cinematic-media router: start from DIY photocopied-punk-zine aesthetic, cutout-letter shapes without readable text, deliberately bad photocopier distortion, tape marks holding collage elements, found-image recontextualization, glue-stick residue and scissor cuts, repeated photocopy generation loss, Photocopier high-contrast, cutout glyph shapes, cut-and-paste collage, tape marks, staple binding, toner grain, glue-stick wrinkles and DIY media system built from informal marks, found surfaces, zine assembly, crude diagramming, deck graphics, cave pigment, and hand-made reproduction texture, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Punk zine cut-and-paste: photocopied collage of cut-out images and shapes, taped and glued, then copied again until the blacks crush and the greys break into grit.',
       subject_treatment:
-        'Transform any prompt subject through Cut-and-paste scissor edges, photocopy-contrast-blackening, tape-strip-transparency, staple-marks, torn-paper contours; preserve the requested subject while rebuilding it through whiteboard strokes, crumpled-paper scribbles, primitive pigment, zine cuts, skateboard-deck composition, or napkin blueprint logic, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.',
       color_and_tone:
-        'Build color with Black-and-white Xerox, high-contrast photocopy, occasional highlight-marker pink, newspaper-clipping grey, security-envelope-blue-pattern depth field; use color through dry-erase primaries, paper grey, cave ochres, xerox black, punk collage hits, deck enamel, or improvised marker accents, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Photocopier-flatbed harshness, high-contrast blown-out whites, detail-lost-in-shadow-blacks, no nuance; keep light secondary to surface evidence through flat scan lighting, paper shadow, primitive wall texture, or graphic ink contrast, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Black and white toner with one or two fluorescent spot colors added by hand.',
+      lighting_and_shadow: 'No lighting; photocopy contrast with blown whites and crushed blacks.',
       texture_and_material:
-        'Render Photocopy-toner grain, paper-curl from glue-stick moisture, scotch-tape gloss, newsprint-collage varied paper stocks, staple-metal glint; surface detail should reveal marker squeak, paper wrinkles, cave-grain pigment, tape, photocopy dirt, deck varnish, napkin fiber, or zine cut edges, keeping artifact scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Cut-out elements tilted angrily, no-alignment layout, overlapping collage depth, tape holding elements askew; compose through casual diagram layout, pasted fragments, object-on-surface graphic balance, hand-drawn arrows without readable text, and rough spatial shorthand, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Angry, urgent, anti-establishment, DIY-or-die, back-bedroom-publishing revolution, creative-resistance; derive mood from improvised problem-solving, punk urgency, outsider charm, ancient ritual memory, office boredom, or homemade design energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Punk-zine photocopy aesthetic, DIY-publication energy, anti-design roughness, copy-of-a-copy degradation; finish with honest DIY texture, readable prompt identity, and no polished corporate vector, fake readable notes, or clean studio poster default, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Toner speckle, torn and scissored edges, tape strips, staple marks and copy-of-a-copy degradation.',
+      camera_and_composition: 'Chaotic page layout, collage elements overlapping at angles.',
+      atmosphere_and_mood: 'Angry and handmade, anti-design energy on a borrowed copier.',
+      rendering_and_quality: 'Real photocopied collage; cut-out letter shapes stay unreadable.',
       key_features:
-        'DIY photocopied-punk-zine aesthetic, cutout-letter shapes without readable text, deliberately bad photocopier distortion, tape marks holding collage elements, found-image recontextualization, glue-stick residue and scissor cuts, repeated photocopy generation loss; Photocopier high-contrast, cutout glyph shapes, cut-and-paste collage, tape marks, staple binding, toner grain, glue-stick wrinkles; Black-and-white Xerox, high-contrast photocopy, occasional highlight-marker pink, newspaper-clipping grey, security-envelope-blue-pattern depth field; Photocopy-toner grain, paper-curl from glue-stick moisture, scotch-tape gloss, newsprint-collage varied paper stocks, staple-metal glint; Cut-out elements tilted angrily, no-alignment layout, overlapping collage depth, tape holding elements askew',
+        'photocopy toner grit; scissored collage; tape strips; fluorescent spot color; crushed blacks',
       creative_brief:
-        "Apply Punk Zine Cut-and-Paste as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through DIY photocopied-punk-zine aesthetic, cutout-letter shapes without readable text, deliberately bad photocopier distortion, tape marks holding collage elements, found-image recontextualization, glue-stick residue and scissor cuts, repeated photocopy generation loss, Photocopier high-contrast, cutout glyph shapes, cut-and-paste collage, tape marks, staple binding, toner grain, glue-stick wrinkles, Photocopy-toner grain, paper-curl from glue-stick moisture, scotch-tape gloss, newsprint-collage varied paper stocks, staple-metal glint without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Punk Zine Cut-and-Paste as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP02-163',
+    name: 'Notebook Margin Ballpoint Doodle',
+    displayName: 'Notebook Margin Ballpoint Doodle',
+    styleAnchors: [
+      'Notebook Margin Ballpoint Doodle',
+      'ballpoint notebook doodle',
+      'blue ballpoint hatching',
+    ],
+    category: '8. Hand-Drawn And DIY Media',
+    domain: 'ballpoint notebook doodle',
+    negativePrompt:
+      'photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Notebook margin doodle: a blue ballpoint drawing grown obsessively in the margin of a lined school notebook, with dense hatching and pressed-in grooves.',
+      subject_treatment:
+        'Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.',
+      color_and_tone: 'Blue ballpoint on white, pale blue rules and a red margin line.',
+      lighting_and_shadow: 'Flat page light; tone built only by stacked hatching and pen pressure.',
+      texture_and_material:
+        'Ink blobs, pressed grooves, shiny overworked patches, ruled lines behind the drawing.',
+      camera_and_composition:
+        'Page seen flat, the drawing crowding the margin and spilling over the rules.',
+      atmosphere_and_mood: 'Absorbed and restless, a lesson ignored for a better idea.',
+      rendering_and_quality:
+        'Real ballpoint on lined paper; handwriting reduced to unreadable squiggles.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Notebook Margin Ballpoint Doodle as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'blue ballpoint hatching; lined notebook paper; red margin line; ink blobs and grooves; spilling doodle',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-164',
+    name: 'Sticky-Note Wall Mosaic',
+    displayName: 'Sticky-Note Wall Mosaic',
+    styleAnchors: ['Sticky-Note Wall Mosaic', 'sticky-note mosaic', 'square sticky-note pixels'],
+    category: '8. Hand-Drawn And DIY Media',
+    domain: 'sticky-note mosaic',
+    negativePrompt:
+      'photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Sticky-note wall mosaic: a large image built from dozens of square colored sticky notes on a wall, each note one pixel.',
+      subject_treatment:
+        'Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.',
+      color_and_tone:
+        'Limited sticky-note colors — yellow, pink, orange, lime, cyan — on a pale wall.',
+      lighting_and_shadow: 'Office light with tiny curled edges casting small shadows.',
+      texture_and_material:
+        'Slightly curled paper corners, visible gaps between notes, one or two fallen notes.',
+      camera_and_composition:
+        'Wall seen straight on, the subject readable as a coarse square grid image.',
+      atmosphere_and_mood: 'Playful and collaborative, office supplies turned into art.',
+      rendering_and_quality: 'Real paper notes with curl and shadow; blank notes with no writing.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sticky-Note Wall Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'square sticky-note pixels; limited note colors; curled corners; grid gaps; straight-on wall view',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-165',
+    name: 'Continuous-Line Toy Screen Drawing',
+    displayName: 'Continuous-Line Toy Screen Drawing',
+    styleAnchors: [
+      'Continuous-Line Toy Screen Drawing',
+      'knob-drawn toy screen',
+      'one continuous line',
+    ],
+    category: '8. Hand-Drawn And DIY Media',
+    domain: 'knob-drawn toy screen',
+    negativePrompt:
+      'photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Continuous-line toy screen drawing: a picture drawn with two knobs on a silver-grey toy screen, one unbroken dark line of stair-stepped diagonals.',
+      subject_treatment:
+        'Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.',
+      color_and_tone:
+        'Silver-grey powder screen with thin dark grey lines, inside a red plastic frame edge.',
+      lighting_and_shadow: 'Soft screen sheen, no shading except denser zig-zag fills.',
+      texture_and_material:
+        'Stair-stepped diagonals, curves made of tiny steps, faint remnants of shaken-away lines.',
+      camera_and_composition:
+        'Screen seen straight on, the drawing as one continuous connected line.',
+      atmosphere_and_mood: 'Patient and nostalgic, a toy mastered with stubborn care.',
+      rendering_and_quality: 'Real single-line knob drawing; no brand name on the frame.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Continuous-Line Toy Screen Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'one continuous line; stair-stepped diagonals; silver-grey screen; red toy frame; zig-zag fills',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-166',
+    name: 'Fogged Mirror Finger Drawing',
+    displayName: 'Fogged Mirror Finger Drawing',
+    styleAnchors: [
+      'Fogged Mirror Finger Drawing',
+      'finger drawing in condensation',
+      'fingertip lines in fog',
+    ],
+    category: '8. Hand-Drawn And DIY Media',
+    domain: 'finger drawing in condensation',
+    negativePrompt:
+      'photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Fogged mirror finger drawing: a picture traced with a fingertip in the steam on a bathroom mirror or window, clear lines cut through white fog.',
+      subject_treatment:
+        'Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.',
+      color_and_tone: 'Milky white fog, clear dark lines showing the reflection or view behind.',
+      lighting_and_shadow:
+        'Soft bathroom light behind the glass, with water droplets catching small highlights.',
+      texture_and_material:
+        'Rounded fingertip line width, drips running down from the lines, fog creeping back.',
+      camera_and_composition:
+        'Glass seen straight on, the drawing centered, vague shapes behind the fog.',
+      atmosphere_and_mood: 'Fleeting and intimate, a picture that will vanish in a minute.',
+      rendering_and_quality: 'Real condensation and drips; no readable words written in the fog.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fogged Mirror Finger Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'fingertip lines in fog; drips running down; milky white glass; clear view through the lines; ephemeral',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-167',
+    name: 'Beach Sand Stick Drawing',
+    displayName: 'Beach Sand Stick Drawing',
+    styleAnchors: [
+      'Beach Sand Stick Drawing',
+      'stick drawing in wet sand',
+      'stick grooves in wet sand',
+    ],
+    category: '8. Hand-Drawn And DIY Media',
+    domain: 'stick drawing in wet sand',
+    negativePrompt:
+      'photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Beach sand stick drawing: a large picture scratched into smooth wet sand with a stick, grooves filling with water, waiting for the tide.',
+      subject_treatment:
+        'Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.',
+      color_and_tone: 'Tan and grey wet sand, darker wet grooves, silver reflections of the sky.',
+      lighting_and_shadow: 'Low sun raking across the grooves so every line has a shadowed edge.',
+      texture_and_material:
+        'Ridged sand displaced along each line, shell fragments, foam edge nearby.',
+      camera_and_composition:
+        'Seen from above or a high angle, the drawing large on the beach, a wave edge in one corner.',
+      atmosphere_and_mood: 'Carefree and temporary, a drawing the sea will take back.',
+      rendering_and_quality:
+        'Real grooves in wet sand; not sand sculpture and not colored sand art.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Beach Sand Stick Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'stick grooves in wet sand; raking low sun; water filling lines; wave edge nearby; high angle view',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-168',
+    name: 'Carved Desk Graffiti',
+    displayName: 'Carved Desk Graffiti',
+    styleAnchors: [
+      'Carved Desk Graffiti',
+      'carved wooden desk graffiti',
+      'gouged grooves in varnished wood',
+    ],
+    category: '8. Hand-Drawn And DIY Media',
+    domain: 'carved wooden desk graffiti',
+    negativePrompt:
+      'photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Carved desk graffiti: a picture gouged into an old varnished wooden school desk with a compass point, pen ink rubbed into the grooves.',
+      subject_treatment:
+        'Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.',
+      color_and_tone:
+        'Honey and brown varnished wood, pale raw wood in fresh grooves, blue ink in old ones.',
+      lighting_and_shadow: 'Window light across the desk showing the depth of the cuts.',
+      texture_and_material:
+        'Splintered groove edges, wood grain, layers of older carvings and scratches underneath.',
+      camera_and_composition: 'Desk top seen from above, the carving among older marks.',
+      atmosphere_and_mood: 'Rebellious and nostalgic, years of boredom cut into wood.',
+      rendering_and_quality: 'Real carved grooves with depth; no readable initials or words.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Carved Desk Graffiti as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'gouged grooves in varnished wood; ink-filled cuts; older carvings underneath; splintered edges; window light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-169',
+    name: 'Kraft Paper Bag Marker Sketch',
+    displayName: 'Kraft Paper Bag Marker Sketch',
+    styleAnchors: ['Kraft Paper Bag Marker Sketch', 'marker on kraft paper', 'brown kraft ground'],
+    category: '8. Hand-Drawn And DIY Media',
+    domain: 'marker on kraft paper',
+    negativePrompt:
+      'photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Kraft paper bag sketch: black marker and white paint pen drawn on a flattened brown paper bag, with its folds and gusset creases.',
+      subject_treatment:
+        'Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.',
+      color_and_tone:
+        'Brown kraft, black marker lines, white paint-pen highlights, one red accent.',
+      lighting_and_shadow:
+        'White paint pen used for light, black marker for shadow; flat page light.',
+      texture_and_material:
+        'Fibrous kraft, bag folds and a gusset crease, marker bleed into the fibers.',
+      camera_and_composition: 'Bag flattened and seen straight on, drawing crossing the folds.',
+      atmosphere_and_mood: 'Scrappy and charming, a proud drawing made during a lunch break.',
+      rendering_and_quality: 'Real marker on kraft; no printed store logo on the bag.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kraft Paper Bag Marker Sketch as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'brown kraft ground; black marker and white highlights; bag folds; marker bleed; one red accent',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-170',
+    name: 'Graph-Paper Pixel Doodle',
+    displayName: 'Graph-Paper Pixel Doodle',
+    styleAnchors: [
+      'Graph-Paper Pixel Doodle',
+      'graph paper square filling',
+      'filled graph-paper squares',
+    ],
+    category: '8. Hand-Drawn And DIY Media',
+    domain: 'graph paper square filling',
+    negativePrompt:
+      'photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Graph-paper pixel doodle: a picture made by filling graph-paper squares one by one with colored pens, like hand-made pixel art.',
+      subject_treatment:
+        'Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.',
+      color_and_tone: 'Pale blue grid on white, felt-pen fills in a limited set of bright colors.',
+      lighting_and_shadow: 'No rendered lighting; shading comes only from darker filled squares.',
+      texture_and_material:
+        'Streaky felt-pen fills, squares slightly over the lines, one mis-colored square.',
+      camera_and_composition: 'Sheet seen flat, the subject centered in a coarse square grid.',
+      atmosphere_and_mood: 'Methodical and cheerful, patience rewarded square by square.',
+      rendering_and_quality: 'Real pen on graph paper; not digital pixel art.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Graph-Paper Pixel Doodle as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'filled graph-paper squares; streaky felt pen; pale blue grid; limited colors; hand-made pixels',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-171',
+    name: 'Dusty Car Window Drawing',
+    displayName: 'Dusty Car Window Drawing',
+    styleAnchors: ['Dusty Car Window Drawing', 'finger drawing in dust', 'finger lines in grime'],
+    category: '8. Hand-Drawn And DIY Media',
+    domain: 'finger drawing in dust',
+    negativePrompt:
+      'photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, whole car in frame, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Dusty car window drawing: a picture drawn with fingertips and palms in the thick grime on a car rear window, the clean glass showing darker through the lines.',
+      subject_treatment:
+        'Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.',
+      color_and_tone: 'Beige-grey dust layer, dark clean-glass lines, a faint interior behind.',
+      lighting_and_shadow:
+        'Daylight on the dusty glass; the clean strokes look darker and glossier.',
+      texture_and_material:
+        'Soft grime edges, smudged palm tones, fingernail fine lines, drip streaks.',
+      camera_and_composition: 'The window seen straight on, filling the frame; no whole car.',
+      atmosphere_and_mood: 'Cheeky and surprising, art found on a neglected surface.',
+      rendering_and_quality: 'Real finger drawing in grime; no written joke words.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dusty Car Window Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'finger lines in grime; dark clean glass through strokes; smudged palm tones; drip streaks; straight-on window',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-172',
+    name: 'Crayon Rubbing Frottage',
+    displayName: 'Crayon Rubbing Frottage',
+    styleAnchors: [
+      'Crayon Rubbing Frottage',
+      'crayon rubbing over textures',
+      'rubbed textures composing the subject',
+    ],
+    category: '8. Hand-Drawn And DIY Media',
+    domain: 'crayon rubbing over textures',
+    negativePrompt:
+      'photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Crayon rubbing frottage: thin paper laid over leaves, coins, wood and grates and rubbed with the side of a crayon, the textures composed into a picture.',
+      subject_treatment:
+        'Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.',
+      color_and_tone:
+        'Waxy crayon colors on thin paper, strong where raised surfaces caught the crayon.',
+      lighting_and_shadow: 'No lighting; tone comes from how hard the crayon was rubbed.',
+      texture_and_material:
+        'Leaf veins, wood grain, coin ridges and grate patterns picked up in waxy strokes with directional sheen.',
+      camera_and_composition: 'Flat paper, the subject assembled from different rubbed textures.',
+      atmosphere_and_mood: 'Curious and tactile, the world collected by touch.',
+      rendering_and_quality:
+        'Real wax rubbing with directional strokes; not a digital texture fill.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crayon Rubbing Frottage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'rubbed textures composing the subject; waxy directional strokes; leaf and wood grain patterns; thin paper; crayon color',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-173',
+    name: 'Ballpoint Skin Doodle',
+    displayName: 'Ballpoint Skin Doodle',
+    styleAnchors: ['Ballpoint Skin Doodle', 'pen doodle on skin', 'pen lines on skin'],
+    category: '8. Hand-Drawn And DIY Media',
+    domain: 'pen doodle on skin',
+    negativePrompt:
+      'photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, tattoo, real person likeness, watermark, text, readable labels, logo, UI overlay, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ballpoint skin doodle: a playful blue pen drawing on the back of an adult hand or forearm, the ink catching in skin creases.',
+      subject_treatment:
+        'Keep the prompt subject intact and draw it in pen on an adult hand or forearm, which appears only as the drawing surface.',
+      color_and_tone: 'Blue or black ballpoint on warm skin tones.',
+      lighting_and_shadow: 'Soft daylight on the skin; the ink sits flat on top.',
+      texture_and_material:
+        'Lines skipping over pores and creases, faded patches where the skin rubbed.',
+      camera_and_composition:
+        'Close view of the hand or forearm filling the frame, drawing centered.',
+      atmosphere_and_mood: 'Playful and personal, a small drawing carried around all day.',
+      rendering_and_quality: 'Real pen on skin, not a tattoo; no written words.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ballpoint Skin Doodle as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'pen lines on skin; ink skipping creases; faded rubbed patches; close hand view; not a tattoo',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-174',
+    name: 'Glowing Peg-Board Picture',
+    displayName: 'Glowing Peg-Board Picture',
+    styleAnchors: ['Glowing Peg-Board Picture', 'light-up peg board', 'glowing translucent pegs'],
+    category: '8. Hand-Drawn And DIY Media',
+    domain: 'light-up peg board',
+    negativePrompt:
+      'photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Glowing peg-board picture: translucent colored pegs pushed into a black backlit board, each peg a glowing dot of light.',
+      subject_treatment:
+        'Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.',
+      color_and_tone: 'Glowing red, orange, yellow, green, blue and white dots on black.',
+      lighting_and_shadow: 'Backlight shining through each peg; dim glow halos on the black board.',
+      texture_and_material:
+        'Round faceted peg caps, visible hexagonal hole grid, a few empty holes.',
+      camera_and_composition:
+        'Board seen straight on, the subject built from dots on a staggered grid.',
+      atmosphere_and_mood: 'Warm and nostalgic, a bedroom glowing in the dark.',
+      rendering_and_quality: 'Real glowing peg-toy look with its plastic board, and no brand name.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glowing Peg-Board Picture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'glowing translucent pegs; black backlit board; staggered dot grid; glow halos; limited peg colors',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-175',
+    name: 'Gear-Ring Spiral Drawing',
+    displayName: 'Gear-Ring Spiral Drawing',
+    styleAnchors: [
+      'Gear-Ring Spiral Drawing',
+      'toothed-ring spiral drawing toy',
+      'looping hypotrochoid rosettes',
+    ],
+    category: '8. Hand-Drawn And DIY Media',
+    domain: 'toothed-ring spiral drawing toy',
+    negativePrompt:
+      'photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gear-ring spiral drawing: looping hypotrochoid patterns drawn with a pen through toothed plastic wheels, layered in several colors to form the subject.',
+      subject_treatment:
+        'Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.',
+      color_and_tone: 'Fine gel-pen lines in two to four bright colors on white.',
+      lighting_and_shadow: 'No lighting; density of overlapping loops creates tone.',
+      texture_and_material: 'Thin looping lines, slight wobble where the wheel slipped, pen skips.',
+      camera_and_composition: 'Flat paper, rosette patterns arranged to shape the subject.',
+      atmosphere_and_mood: 'Hypnotic and precise, patterns blooming from a spinning wheel.',
+      rendering_and_quality: 'Real pen-on-paper spirals with slight ink skips, and no brand name.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gear-Ring Spiral Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'looping hypotrochoid rosettes; gel-pen colors; overlapping loop density; slipped-wheel wobble; white paper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-176',
+    name: 'Bedsheet Banner Paint',
+    displayName: 'Bedsheet Banner Paint',
+    styleAnchors: ['Bedsheet Banner Paint', 'house paint on bedsheet', 'house paint on bedsheet'],
+    category: '8. Hand-Drawn And DIY Media',
+    domain: 'house paint on bedsheet',
+    negativePrompt:
+      'photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bedsheet banner paint: a big image painted with leftover house paint and a wide brush on an old bedsheet, hung by its corners.',
+      subject_treatment:
+        'Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.',
+      color_and_tone: 'Flat bold house-paint colors, patterned or faded sheet showing through.',
+      lighting_and_shadow:
+        'Daylight through the thin fabric making the paint look darker and the sheet glow.',
+      texture_and_material:
+        'Wrinkles and sagging, paint soaking and bleeding into the weave, drips at the bottom.',
+      camera_and_composition:
+        'Sheet hanging flat-ish, filling the frame, pegs or ropes at the corners.',
+      atmosphere_and_mood: 'Proud and homemade, a big announcement made with what was at hand.',
+      rendering_and_quality: 'Real paint on fabric; images only, no painted slogans.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bedsheet Banner Paint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'house paint on bedsheet; bleeding into weave; wrinkles and drips; backlit thin fabric; hung by the corners',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP02-163
+packId: pack_02
+name: Notebook Margin Ballpoint Doodle
+styleAnchors:
+  - Notebook Margin Ballpoint Doodle
+  - ballpoint notebook doodle
+  - blue ballpoint hatching
+displayName: Notebook Margin Ballpoint Doodle
+category: 8. Hand-Drawn And DIY Media
+domain: ballpoint notebook doodle
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - hand-drawn-and-diy-media
+  - ballpoint
+  - notebook
+  - doodle
+visualDna:
+  aesthetic: 'Notebook margin doodle: a blue ballpoint drawing grown obsessively in the margin of a lined school notebook, with dense hatching and pressed-in grooves.'
+  subject_treatment: Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.
+  color_and_tone: Blue ballpoint on white, pale blue rules and a red margin line.
+  lighting_and_shadow: Flat page light; tone built only by stacked hatching and pen pressure.
+  texture_and_material: Ink blobs, pressed grooves, shiny overworked patches, ruled lines behind the drawing.
+  camera_and_composition: Page seen flat, the drawing crowding the margin and spilling over the rules.
+  atmosphere_and_mood: Absorbed and restless, a lesson ignored for a better idea.
+  rendering_and_quality: Real ballpoint on lined paper; handwriting reduced to unreadable squiggles.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Notebook Margin Ballpoint Doodle as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: blue ballpoint hatching; lined notebook paper; red margin line; ink blobs and grooves; spilling doodle
+avoidRules:
+  - photorealistic rendering
+  - 3d render
+  - polished digital art
+  - readable text
+  - readable handwriting
+  - brand logo
+  - franchise likeness
+  - celebrity likeness
+  - adding the drawing support as an extra object in the scene
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: hand-drawn-and-diy-media
+  categoryName: 8. Hand-Drawn And DIY Media
+  tags:
+    - cinematic-and-media
+    - hand-drawn-and-diy-media
+    - ballpoint
+    - notebook
+    - doodle
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: ballpoint notebook doodle

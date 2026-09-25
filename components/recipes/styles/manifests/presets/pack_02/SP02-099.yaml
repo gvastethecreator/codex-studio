@@ -3,7 +3,7 @@ id: SP02-099
 packId: pack_02
 name: Punk Zine Cut-and-Paste
 category: 8. Hand-Drawn And DIY Media
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,74 +12,26 @@ tags:
   - cinematic-and-media
   - hand-drawn-and-diy-media
 visualDna:
-  aesthetic: >-
-    Punk Zine Cut-and-Paste acts as a transferable cinematic-media router: start from DIY
-    photocopied-punk-zine aesthetic, cutout-letter shapes without readable text, deliberately bad
-    photocopier distortion, tape marks holding collage elements, found-image recontextualization,
-    glue-stick residue and scissor cuts, repeated photocopy generation loss, Photocopier
-    high-contrast, cutout glyph shapes, cut-and-paste collage, tape marks, staple binding, toner
-    grain, glue-stick wrinkles and DIY media system built from informal marks, found surfaces, zine
-    assembly, crude diagramming, deck graphics, cave pigment, and hand-made reproduction texture,
-    then apply the media behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Cut-and-paste scissor edges, photocopy-contrast-blackening,
-    tape-strip-transparency, staple-marks, torn-paper contours; preserve the requested subject while
-    rebuilding it through whiteboard strokes, crumpled-paper scribbles, primitive pigment, zine
-    cuts, skateboard-deck composition, or napkin blueprint logic, keeping the requested identity,
-    silhouette, action, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Black-and-white Xerox, high-contrast photocopy, occasional highlight-marker
-    pink, newspaper-clipping grey, security-envelope-blue-pattern depth field; use color through
-    dry-erase primaries, paper grey, cave ochres, xerox black, punk collage hits, deck enamel, or
-    improvised marker accents, with deliberate value grouping, accent control, and process-specific
-    limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Photocopier-flatbed harshness, high-contrast blown-out whites,
-    detail-lost-in-shadow-blacks, no nuance; keep light secondary to surface evidence through flat
-    scan lighting, paper shadow, primitive wall texture, or graphic ink contrast, so exposure and
-    shadow structure support the media process without overwriting the requested content.
-  texture_and_material: >-
-    Render Photocopy-toner grain, paper-curl from glue-stick moisture, scotch-tape gloss,
-    newsprint-collage varied paper stocks, staple-metal glint; surface detail should reveal marker
-    squeak, paper wrinkles, cave-grain pigment, tape, photocopy dirt, deck varnish, napkin fiber, or
-    zine cut edges, keeping artifact scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Cut-out elements tilted angrily, no-alignment layout, overlapping
-    collage depth, tape holding elements askew; compose through casual diagram layout, pasted
-    fragments, object-on-surface graphic balance, hand-drawn arrows without readable text, and rough
-    spatial shorthand, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the
-    style work.
-  atmosphere_and_mood: >-
-    Keep the mood Angry, urgent, anti-establishment, DIY-or-die, back-bedroom-publishing revolution,
-    creative-resistance; derive mood from improvised problem-solving, punk urgency, outsider charm,
-    ancient ritual memory, office boredom, or homemade design energy, letting the media style alter
-    interpretation without demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Punk-zine photocopy aesthetic, DIY-publication energy, anti-design roughness,
-    copy-of-a-copy degradation; finish with honest DIY texture, readable prompt identity, and no
-    polished corporate vector, fake readable notes, or clean studio poster default, clean denoised
-    surfaces where appropriate, and enough process evidence to make the style recognizable.
-  key_features: >-
-    DIY photocopied-punk-zine aesthetic, cutout-letter shapes without readable text, deliberately
-    bad photocopier distortion, tape marks holding collage elements, found-image
-    recontextualization, glue-stick residue and scissor cuts, repeated photocopy generation loss;
-    Photocopier high-contrast, cutout glyph shapes, cut-and-paste collage, tape marks, staple
-    binding, toner grain, glue-stick wrinkles; Black-and-white Xerox, high-contrast photocopy,
-    occasional highlight-marker pink, newspaper-clipping grey, security-envelope-blue-pattern depth
-    field; Photocopy-toner grain, paper-curl from glue-stick moisture, scotch-tape gloss,
-    newsprint-collage varied paper stocks, staple-metal glint; Cut-out elements tilted angrily,
-    no-alignment layout, overlapping collage depth, tape holding elements askew
-  creative_brief: >-
-    Apply Punk Zine Cut-and-Paste as a cinematic-media preset over prompt X: preserve the user's
-    requested subject, then route lens behavior, palette, light, signal or film texture,
-    composition, mood, and final media craft through DIY photocopied-punk-zine aesthetic,
-    cutout-letter shapes without readable text, deliberately bad photocopier distortion, tape marks
-    holding collage elements, found-image recontextualization, glue-stick residue and scissor cuts,
-    repeated photocopy generation loss, Photocopier high-contrast, cutout glyph shapes,
-    cut-and-paste collage, tape marks, staple binding, toner grain, glue-stick wrinkles,
-    Photocopy-toner grain, paper-curl from glue-stick moisture, scotch-tape gloss, newsprint-collage
-    varied paper stocks, staple-metal glint without requiring the card image's original subject.
+  aesthetic: 'Punk zine cut-and-paste: photocopied collage of cut-out images and shapes, taped and glued, then copied again until the blacks crush and the greys break into grit.'
+  subject_treatment: Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.
+  color_and_tone: Black and white toner with one or two fluorescent spot colors added by hand.
+  lighting_and_shadow: No lighting; photocopy contrast with blown whites and crushed blacks.
+  texture_and_material: Toner speckle, torn and scissored edges, tape strips, staple marks and copy-of-a-copy degradation.
+  camera_and_composition: Chaotic page layout, collage elements overlapping at angles.
+  atmosphere_and_mood: Angry and handmade, anti-design energy on a borrowed copier.
+  rendering_and_quality: Real photocopied collage; cut-out letter shapes stay unreadable.
+  key_features: photocopy toner grit; scissored collage; tape strips; fluorescent spot color; crushed blacks
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Punk Zine Cut-and-Paste as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - photorealistic rendering
+  - 3d render
+  - polished digital art
+  - readable text
+  - readable handwriting
+  - brand logo
+  - franchise likeness
+  - celebrity likeness
+  - adding the drawing support as an extra object in the scene
   - digital
   - clean
   - smooth
@@ -102,14 +54,16 @@ avoidRules:
   - fake readable notes
   - clean studio poster
   - stock illustration polish
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-099.webp
 attributes:
-  negativePrompt: >-
-    digital, clean, smooth, professional, polished, designed, symmetrical, orderly, planned,
-    corporate, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, polished
-    corporate vector, fake readable notes, clean studio poster, stock illustration polish
+  negativePrompt: photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, digital, clean, smooth, professional, polished, designed, symmetrical, orderly, planned, corporate, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, polished corporate vector, fake readable notes, clean studio poster, stock illustration polish, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

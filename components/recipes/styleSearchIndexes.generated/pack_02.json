@@ -3,7 +3,7 @@
     {
       "id": "pack_02",
       "name": "Cinematic & Media",
-      "presetCount": 162
+      "presetCount": 176
     }
   ],
   "presets": [
@@ -2181,7 +2181,259 @@
       "tags": ["cinematic-and-media", "hand-drawn-and-diy-media"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp02-099 punk zine cut-and-paste 8. hand-drawn and diy media diy drawing surfaces pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media"
+    },
+    {
+      "id": "SP02-163",
+      "name": "Notebook Margin Ballpoint Doodle",
+      "styleAnchors": [
+        "Notebook Margin Ballpoint Doodle",
+        "ballpoint notebook doodle",
+        "blue ballpoint hatching"
+      ],
+      "ref": "pack_02/SP02-163.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "hand-drawn-and-diy-media",
+      "categoryName": "8. Hand-Drawn And DIY Media",
+      "domain": "ballpoint notebook doodle",
+      "tags": ["cinematic-and-media", "hand-drawn-and-diy-media", "ballpoint-notebook-doodle"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-163 notebook margin ballpoint doodle ballpoint notebook doodle blue ballpoint hatching 8. hand-drawn and diy media diy drawing surfaces ballpoint notebook doodle pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media ballpoint-notebook-doodle"
+    },
+    {
+      "id": "SP02-164",
+      "name": "Sticky-Note Wall Mosaic",
+      "styleAnchors": [
+        "Sticky-Note Wall Mosaic",
+        "sticky-note mosaic",
+        "square sticky-note pixels"
+      ],
+      "ref": "pack_02/SP02-164.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "hand-drawn-and-diy-media",
+      "categoryName": "8. Hand-Drawn And DIY Media",
+      "domain": "sticky-note mosaic",
+      "tags": ["cinematic-and-media", "hand-drawn-and-diy-media", "sticky-note-mosaic"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-164 sticky-note wall mosaic sticky-note mosaic square sticky-note pixels 8. hand-drawn and diy media diy drawing surfaces sticky-note mosaic pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media sticky-note-mosaic"
+    },
+    {
+      "id": "SP02-165",
+      "name": "Continuous-Line Toy Screen Drawing",
+      "styleAnchors": [
+        "Continuous-Line Toy Screen Drawing",
+        "knob-drawn toy screen",
+        "one continuous line"
+      ],
+      "ref": "pack_02/SP02-165.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "hand-drawn-and-diy-media",
+      "categoryName": "8. Hand-Drawn And DIY Media",
+      "domain": "knob-drawn toy screen",
+      "tags": ["cinematic-and-media", "hand-drawn-and-diy-media", "knob-drawn-toy-screen"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-165 continuous-line toy screen drawing knob-drawn toy screen one continuous line 8. hand-drawn and diy media diy drawing surfaces knob-drawn toy screen pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media knob-drawn-toy-screen"
+    },
+    {
+      "id": "SP02-166",
+      "name": "Fogged Mirror Finger Drawing",
+      "styleAnchors": [
+        "Fogged Mirror Finger Drawing",
+        "finger drawing in condensation",
+        "fingertip lines in fog"
+      ],
+      "ref": "pack_02/SP02-166.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "hand-drawn-and-diy-media",
+      "categoryName": "8. Hand-Drawn And DIY Media",
+      "domain": "finger drawing in condensation",
+      "tags": ["cinematic-and-media", "hand-drawn-and-diy-media", "finger-drawing-in-condensation"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-166 fogged mirror finger drawing finger drawing in condensation fingertip lines in fog 8. hand-drawn and diy media diy drawing surfaces finger drawing in condensation pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media finger-drawing-in-condensation"
+    },
+    {
+      "id": "SP02-167",
+      "name": "Beach Sand Stick Drawing",
+      "styleAnchors": [
+        "Beach Sand Stick Drawing",
+        "stick drawing in wet sand",
+        "stick grooves in wet sand"
+      ],
+      "ref": "pack_02/SP02-167.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "hand-drawn-and-diy-media",
+      "categoryName": "8. Hand-Drawn And DIY Media",
+      "domain": "stick drawing in wet sand",
+      "tags": ["cinematic-and-media", "hand-drawn-and-diy-media", "stick-drawing-in-wet-sand"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-167 beach sand stick drawing stick drawing in wet sand stick grooves in wet sand 8. hand-drawn and diy media diy drawing surfaces stick drawing in wet sand pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media stick-drawing-in-wet-sand"
+    },
+    {
+      "id": "SP02-168",
+      "name": "Carved Desk Graffiti",
+      "styleAnchors": [
+        "Carved Desk Graffiti",
+        "carved wooden desk graffiti",
+        "gouged grooves in varnished wood"
+      ],
+      "ref": "pack_02/SP02-168.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "hand-drawn-and-diy-media",
+      "categoryName": "8. Hand-Drawn And DIY Media",
+      "domain": "carved wooden desk graffiti",
+      "tags": ["cinematic-and-media", "hand-drawn-and-diy-media", "carved-wooden-desk-graffiti"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-168 carved desk graffiti carved wooden desk graffiti gouged grooves in varnished wood 8. hand-drawn and diy media diy drawing surfaces carved wooden desk graffiti pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media carved-wooden-desk-graffiti"
+    },
+    {
+      "id": "SP02-169",
+      "name": "Kraft Paper Bag Marker Sketch",
+      "styleAnchors": [
+        "Kraft Paper Bag Marker Sketch",
+        "marker on kraft paper",
+        "brown kraft ground"
+      ],
+      "ref": "pack_02/SP02-169.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "hand-drawn-and-diy-media",
+      "categoryName": "8. Hand-Drawn And DIY Media",
+      "domain": "marker on kraft paper",
+      "tags": ["cinematic-and-media", "hand-drawn-and-diy-media", "marker-on-kraft-paper"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-169 kraft paper bag marker sketch marker on kraft paper brown kraft ground 8. hand-drawn and diy media diy drawing surfaces marker on kraft paper pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media marker-on-kraft-paper"
+    },
+    {
+      "id": "SP02-170",
+      "name": "Graph-Paper Pixel Doodle",
+      "styleAnchors": [
+        "Graph-Paper Pixel Doodle",
+        "graph paper square filling",
+        "filled graph-paper squares"
+      ],
+      "ref": "pack_02/SP02-170.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "hand-drawn-and-diy-media",
+      "categoryName": "8. Hand-Drawn And DIY Media",
+      "domain": "graph paper square filling",
+      "tags": ["cinematic-and-media", "hand-drawn-and-diy-media", "graph-paper-square-filling"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-170 graph-paper pixel doodle graph paper square filling filled graph-paper squares 8. hand-drawn and diy media diy drawing surfaces graph paper square filling pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media graph-paper-square-filling"
+    },
+    {
+      "id": "SP02-171",
+      "name": "Dusty Car Window Drawing",
+      "styleAnchors": [
+        "Dusty Car Window Drawing",
+        "finger drawing in dust",
+        "finger lines in grime"
+      ],
+      "ref": "pack_02/SP02-171.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "hand-drawn-and-diy-media",
+      "categoryName": "8. Hand-Drawn And DIY Media",
+      "domain": "finger drawing in dust",
+      "tags": ["cinematic-and-media", "hand-drawn-and-diy-media", "finger-drawing-in-dust"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-171 dusty car window drawing finger drawing in dust finger lines in grime 8. hand-drawn and diy media diy drawing surfaces finger drawing in dust pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media finger-drawing-in-dust"
+    },
+    {
+      "id": "SP02-172",
+      "name": "Crayon Rubbing Frottage",
+      "styleAnchors": [
+        "Crayon Rubbing Frottage",
+        "crayon rubbing over textures",
+        "rubbed textures composing the subject"
+      ],
+      "ref": "pack_02/SP02-172.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "hand-drawn-and-diy-media",
+      "categoryName": "8. Hand-Drawn And DIY Media",
+      "domain": "crayon rubbing over textures",
+      "tags": ["cinematic-and-media", "hand-drawn-and-diy-media", "crayon-rubbing-over-textures"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-172 crayon rubbing frottage crayon rubbing over textures rubbed textures composing the subject 8. hand-drawn and diy media diy drawing surfaces crayon rubbing over textures pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media crayon-rubbing-over-textures"
+    },
+    {
+      "id": "SP02-173",
+      "name": "Ballpoint Skin Doodle",
+      "styleAnchors": ["Ballpoint Skin Doodle", "pen doodle on skin", "pen lines on skin"],
+      "ref": "pack_02/SP02-173.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "hand-drawn-and-diy-media",
+      "categoryName": "8. Hand-Drawn And DIY Media",
+      "domain": "pen doodle on skin",
+      "tags": ["cinematic-and-media", "hand-drawn-and-diy-media", "pen-doodle-on-skin"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-173 ballpoint skin doodle pen doodle on skin pen lines on skin 8. hand-drawn and diy media diy drawing surfaces pen doodle on skin pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media pen-doodle-on-skin"
+    },
+    {
+      "id": "SP02-174",
+      "name": "Glowing Peg-Board Picture",
+      "styleAnchors": [
+        "Glowing Peg-Board Picture",
+        "light-up peg board",
+        "glowing translucent pegs"
+      ],
+      "ref": "pack_02/SP02-174.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "hand-drawn-and-diy-media",
+      "categoryName": "8. Hand-Drawn And DIY Media",
+      "domain": "light-up peg board",
+      "tags": ["cinematic-and-media", "hand-drawn-and-diy-media", "light-up-peg-board"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-174 glowing peg-board picture light-up peg board glowing translucent pegs 8. hand-drawn and diy media diy drawing surfaces light-up peg board pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media light-up-peg-board"
+    },
+    {
+      "id": "SP02-175",
+      "name": "Gear-Ring Spiral Drawing",
+      "styleAnchors": [
+        "Gear-Ring Spiral Drawing",
+        "toothed-ring spiral drawing toy",
+        "looping hypotrochoid rosettes"
+      ],
+      "ref": "pack_02/SP02-175.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "hand-drawn-and-diy-media",
+      "categoryName": "8. Hand-Drawn And DIY Media",
+      "domain": "toothed-ring spiral drawing toy",
+      "tags": [
+        "cinematic-and-media",
+        "hand-drawn-and-diy-media",
+        "toothed-ring-spiral-drawing-toy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-175 gear-ring spiral drawing toothed-ring spiral drawing toy looping hypotrochoid rosettes 8. hand-drawn and diy media diy drawing surfaces toothed-ring spiral drawing toy pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media toothed-ring-spiral-drawing-toy"
+    },
+    {
+      "id": "SP02-176",
+      "name": "Bedsheet Banner Paint",
+      "styleAnchors": [
+        "Bedsheet Banner Paint",
+        "house paint on bedsheet",
+        "house paint on bedsheet"
+      ],
+      "ref": "pack_02/SP02-176.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "hand-drawn-and-diy-media",
+      "categoryName": "8. Hand-Drawn And DIY Media",
+      "domain": "house paint on bedsheet",
+      "tags": ["cinematic-and-media", "hand-drawn-and-diy-media", "house-paint-on-bedsheet"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-176 bedsheet banner paint house paint on bedsheet 8. hand-drawn and diy media diy drawing surfaces house paint on bedsheet pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media house-paint-on-bedsheet"
     }
   ],
-  "totalPresetCount": 162
+  "totalPresetCount": 176
 }

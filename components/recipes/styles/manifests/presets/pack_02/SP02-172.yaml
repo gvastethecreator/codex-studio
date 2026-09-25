@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP02-172
+packId: pack_02
+name: Crayon Rubbing Frottage
+styleAnchors:
+  - Crayon Rubbing Frottage
+  - crayon rubbing over textures
+  - rubbed textures composing the subject
+displayName: Crayon Rubbing Frottage
+category: 8. Hand-Drawn And DIY Media
+domain: crayon rubbing over textures
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - hand-drawn-and-diy-media
+  - frottage
+  - crayon-rubbing
+  - texture
+visualDna:
+  aesthetic: 'Crayon rubbing frottage: thin paper laid over leaves, coins, wood and grates and rubbed with the side of a crayon, the textures composed into a picture.'
+  subject_treatment: Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.
+  color_and_tone: Waxy crayon colors on thin paper, strong where raised surfaces caught the crayon.
+  lighting_and_shadow: No lighting; tone comes from how hard the crayon was rubbed.
+  texture_and_material: Leaf veins, wood grain, coin ridges and grate patterns picked up in waxy strokes with directional sheen.
+  camera_and_composition: Flat paper, the subject assembled from different rubbed textures.
+  atmosphere_and_mood: Curious and tactile, the world collected by touch.
+  rendering_and_quality: Real wax rubbing with directional strokes; not a digital texture fill.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crayon Rubbing Frottage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: rubbed textures composing the subject; waxy directional strokes; leaf and wood grain patterns; thin paper; crayon color
+avoidRules:
+  - photorealistic rendering
+  - 3d render
+  - polished digital art
+  - readable text
+  - readable handwriting
+  - brand logo
+  - franchise likeness
+  - celebrity likeness
+  - adding the drawing support as an extra object in the scene
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: hand-drawn-and-diy-media
+  categoryName: 8. Hand-Drawn And DIY Media
+  tags:
+    - cinematic-and-media
+    - hand-drawn-and-diy-media
+    - frottage
+    - crayon-rubbing
+    - texture
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: crayon rubbing over textures

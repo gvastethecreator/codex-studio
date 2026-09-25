@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP02-176
+packId: pack_02
+name: Bedsheet Banner Paint
+styleAnchors:
+  - Bedsheet Banner Paint
+  - house paint on bedsheet
+  - house paint on bedsheet
+displayName: Bedsheet Banner Paint
+category: 8. Hand-Drawn And DIY Media
+domain: house paint on bedsheet
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - hand-drawn-and-diy-media
+  - banner
+  - house-paint
+  - diy
+visualDna:
+  aesthetic: 'Bedsheet banner paint: a big image painted with leftover house paint and a wide brush on an old bedsheet, hung by its corners.'
+  subject_treatment: Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.
+  color_and_tone: Flat bold house-paint colors, patterned or faded sheet showing through.
+  lighting_and_shadow: Daylight through the thin fabric making the paint look darker and the sheet glow.
+  texture_and_material: Wrinkles and sagging, paint soaking and bleeding into the weave, drips at the bottom.
+  camera_and_composition: Sheet hanging flat-ish, filling the frame, pegs or ropes at the corners.
+  atmosphere_and_mood: Proud and homemade, a big announcement made with what was at hand.
+  rendering_and_quality: Real paint on fabric; images only, no painted slogans.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bedsheet Banner Paint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: house paint on bedsheet; bleeding into weave; wrinkles and drips; backlit thin fabric; hung by the corners
+avoidRules:
+  - photorealistic rendering
+  - 3d render
+  - polished digital art
+  - readable text
+  - readable handwriting
+  - brand logo
+  - franchise likeness
+  - celebrity likeness
+  - adding the drawing support as an extra object in the scene
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: hand-drawn-and-diy-media
+  categoryName: 8. Hand-Drawn And DIY Media
+  tags:
+    - cinematic-and-media
+    - hand-drawn-and-diy-media
+    - banner
+    - house-paint
+    - diy
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: house paint on bedsheet

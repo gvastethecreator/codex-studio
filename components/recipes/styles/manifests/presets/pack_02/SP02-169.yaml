@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP02-169
+packId: pack_02
+name: Kraft Paper Bag Marker Sketch
+styleAnchors:
+  - Kraft Paper Bag Marker Sketch
+  - marker on kraft paper
+  - brown kraft ground
+displayName: Kraft Paper Bag Marker Sketch
+category: 8. Hand-Drawn And DIY Media
+domain: marker on kraft paper
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - hand-drawn-and-diy-media
+  - kraft-paper
+  - marker
+  - sketch
+visualDna:
+  aesthetic: 'Kraft paper bag sketch: black marker and white paint pen drawn on a flattened brown paper bag, with its folds and gusset creases.'
+  subject_treatment: Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.
+  color_and_tone: Brown kraft, black marker lines, white paint-pen highlights, one red accent.
+  lighting_and_shadow: White paint pen used for light, black marker for shadow; flat page light.
+  texture_and_material: Fibrous kraft, bag folds and a gusset crease, marker bleed into the fibers.
+  camera_and_composition: Bag flattened and seen straight on, drawing crossing the folds.
+  atmosphere_and_mood: Scrappy and charming, a proud drawing made during a lunch break.
+  rendering_and_quality: Real marker on kraft; no printed store logo on the bag.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kraft Paper Bag Marker Sketch as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: brown kraft ground; black marker and white highlights; bag folds; marker bleed; one red accent
+avoidRules:
+  - photorealistic rendering
+  - 3d render
+  - polished digital art
+  - readable text
+  - readable handwriting
+  - brand logo
+  - franchise likeness
+  - celebrity likeness
+  - adding the drawing support as an extra object in the scene
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: hand-drawn-and-diy-media
+  categoryName: 8. Hand-Drawn And DIY Media
+  tags:
+    - cinematic-and-media
+    - hand-drawn-and-diy-media
+    - kraft-paper
+    - marker
+    - sketch
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: marker on kraft paper

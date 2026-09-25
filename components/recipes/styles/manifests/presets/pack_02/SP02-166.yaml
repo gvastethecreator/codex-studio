@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP02-166
+packId: pack_02
+name: Fogged Mirror Finger Drawing
+styleAnchors:
+  - Fogged Mirror Finger Drawing
+  - finger drawing in condensation
+  - fingertip lines in fog
+displayName: Fogged Mirror Finger Drawing
+category: 8. Hand-Drawn And DIY Media
+domain: finger drawing in condensation
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - hand-drawn-and-diy-media
+  - condensation
+  - finger-drawing
+  - ephemeral
+visualDna:
+  aesthetic: 'Fogged mirror finger drawing: a picture traced with a fingertip in the steam on a bathroom mirror or window, clear lines cut through white fog.'
+  subject_treatment: Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.
+  color_and_tone: Milky white fog, clear dark lines showing the reflection or view behind.
+  lighting_and_shadow: Soft bathroom light behind the glass, with water droplets catching small highlights.
+  texture_and_material: Rounded fingertip line width, drips running down from the lines, fog creeping back.
+  camera_and_composition: Glass seen straight on, the drawing centered, vague shapes behind the fog.
+  atmosphere_and_mood: Fleeting and intimate, a picture that will vanish in a minute.
+  rendering_and_quality: Real condensation and drips; no readable words written in the fog.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fogged Mirror Finger Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: fingertip lines in fog; drips running down; milky white glass; clear view through the lines; ephemeral
+avoidRules:
+  - photorealistic rendering
+  - 3d render
+  - polished digital art
+  - readable text
+  - readable handwriting
+  - brand logo
+  - franchise likeness
+  - celebrity likeness
+  - adding the drawing support as an extra object in the scene
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: hand-drawn-and-diy-media
+  categoryName: 8. Hand-Drawn And DIY Media
+  tags:
+    - cinematic-and-media
+    - hand-drawn-and-diy-media
+    - condensation
+    - finger-drawing
+    - ephemeral
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: finger drawing in condensation

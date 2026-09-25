@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP02-171
+packId: pack_02
+name: Dusty Car Window Drawing
+styleAnchors:
+  - Dusty Car Window Drawing
+  - finger drawing in dust
+  - finger lines in grime
+displayName: Dusty Car Window Drawing
+category: 8. Hand-Drawn And DIY Media
+domain: finger drawing in dust
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - hand-drawn-and-diy-media
+  - dust-drawing
+  - car-window
+  - street
+visualDna:
+  aesthetic: 'Dusty car window drawing: a picture drawn with fingertips and palms in the thick grime on a car rear window, the clean glass showing darker through the lines.'
+  subject_treatment: Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.
+  color_and_tone: Beige-grey dust layer, dark clean-glass lines, a faint interior behind.
+  lighting_and_shadow: Daylight on the dusty glass; the clean strokes look darker and glossier.
+  texture_and_material: Soft grime edges, smudged palm tones, fingernail fine lines, drip streaks.
+  camera_and_composition: The window seen straight on, filling the frame; no whole car.
+  atmosphere_and_mood: Cheeky and surprising, art found on a neglected surface.
+  rendering_and_quality: Real finger drawing in grime; no written joke words.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dusty Car Window Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: finger lines in grime; dark clean glass through strokes; smudged palm tones; drip streaks; straight-on window
+avoidRules:
+  - photorealistic rendering
+  - 3d render
+  - polished digital art
+  - readable text
+  - readable handwriting
+  - brand logo
+  - franchise likeness
+  - celebrity likeness
+  - adding the drawing support as an extra object in the scene
+  - whole car in frame
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, whole car in frame, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: hand-drawn-and-diy-media
+  categoryName: 8. Hand-Drawn And DIY Media
+  tags:
+    - cinematic-and-media
+    - hand-drawn-and-diy-media
+    - dust-drawing
+    - car-window
+    - street
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: finger drawing in dust

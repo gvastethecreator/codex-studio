@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP02-175
+packId: pack_02
+name: Gear-Ring Spiral Drawing
+styleAnchors:
+  - Gear-Ring Spiral Drawing
+  - toothed-ring spiral drawing toy
+  - looping hypotrochoid rosettes
+displayName: Gear-Ring Spiral Drawing
+category: 8. Hand-Drawn And DIY Media
+domain: toothed-ring spiral drawing toy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - hand-drawn-and-diy-media
+  - spiral-drawing
+  - geometric
+  - retro-toy
+visualDna:
+  aesthetic: 'Gear-ring spiral drawing: looping hypotrochoid patterns drawn with a pen through toothed plastic wheels, layered in several colors to form the subject.'
+  subject_treatment: Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.
+  color_and_tone: Fine gel-pen lines in two to four bright colors on white.
+  lighting_and_shadow: No lighting; density of overlapping loops creates tone.
+  texture_and_material: Thin looping lines, slight wobble where the wheel slipped, pen skips.
+  camera_and_composition: Flat paper, rosette patterns arranged to shape the subject.
+  atmosphere_and_mood: Hypnotic and precise, patterns blooming from a spinning wheel.
+  rendering_and_quality: Real pen-on-paper spirals with slight ink skips, and no brand name.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gear-Ring Spiral Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: looping hypotrochoid rosettes; gel-pen colors; overlapping loop density; slipped-wheel wobble; white paper
+avoidRules:
+  - photorealistic rendering
+  - 3d render
+  - polished digital art
+  - readable text
+  - readable handwriting
+  - brand logo
+  - franchise likeness
+  - celebrity likeness
+  - adding the drawing support as an extra object in the scene
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: hand-drawn-and-diy-media
+  categoryName: 8. Hand-Drawn And DIY Media
+  tags:
+    - cinematic-and-media
+    - hand-drawn-and-diy-media
+    - spiral-drawing
+    - geometric
+    - retro-toy
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: toothed-ring spiral drawing toy

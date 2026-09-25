@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP02-164
+packId: pack_02
+name: Sticky-Note Wall Mosaic
+styleAnchors:
+  - Sticky-Note Wall Mosaic
+  - sticky-note mosaic
+  - square sticky-note pixels
+displayName: Sticky-Note Wall Mosaic
+category: 8. Hand-Drawn And DIY Media
+domain: sticky-note mosaic
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - hand-drawn-and-diy-media
+  - sticky-notes
+  - mosaic
+  - office-craft
+visualDna:
+  aesthetic: 'Sticky-note wall mosaic: a large image built from dozens of square colored sticky notes on a wall, each note one pixel.'
+  subject_treatment: Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.
+  color_and_tone: Limited sticky-note colors — yellow, pink, orange, lime, cyan — on a pale wall.
+  lighting_and_shadow: Office light with tiny curled edges casting small shadows.
+  texture_and_material: Slightly curled paper corners, visible gaps between notes, one or two fallen notes.
+  camera_and_composition: Wall seen straight on, the subject readable as a coarse square grid image.
+  atmosphere_and_mood: Playful and collaborative, office supplies turned into art.
+  rendering_and_quality: Real paper notes with curl and shadow; blank notes with no writing.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sticky-Note Wall Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: square sticky-note pixels; limited note colors; curled corners; grid gaps; straight-on wall view
+avoidRules:
+  - photorealistic rendering
+  - 3d render
+  - polished digital art
+  - readable text
+  - readable handwriting
+  - brand logo
+  - franchise likeness
+  - celebrity likeness
+  - adding the drawing support as an extra object in the scene
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: hand-drawn-and-diy-media
+  categoryName: 8. Hand-Drawn And DIY Media
+  tags:
+    - cinematic-and-media
+    - hand-drawn-and-diy-media
+    - sticky-notes
+    - mosaic
+    - office-craft
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: sticky-note mosaic

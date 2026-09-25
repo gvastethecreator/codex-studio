@@ -3,7 +3,7 @@ id: SP02-092
 packId: pack_02
 name: Crumpled-Paper Scribble
 category: 8. Hand-Drawn And DIY Media
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,71 +12,26 @@ tags:
   - cinematic-and-media
   - hand-drawn-and-diy-media
 visualDna:
-  aesthetic: >-
-    Crumpled-Paper Scribble acts as a transferable cinematic-media router: start from Drawing on
-    crumpled then flattened paper, crease-lines cutting through the art, stained and abused surface,
-    wrinkled-grid distortion, beautiful-accident texture, discarded-thought recovered, Paper crease
-    lines across art, coffee-stain rings, torn paper edges, ink-pooling in fold valleys, wabi-sabi
-    imperfection and DIY media system built from informal marks, found surfaces, zine assembly,
-    crude diagramming, deck graphics, cave pigment, and hand-made reproduction texture, then apply
-    the media behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Lines broken by paper creases, ink pooling in fold valleys,
-    interrupted-contour across wrinkles, roughened-edge strokes; preserve the requested subject
-    while rebuilding it through whiteboard strokes, crumpled-paper scribbles, primitive pigment,
-    zine cuts, skateboard-deck composition, or napkin blueprint logic, keeping the requested
-    identity, silhouette, action, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Stained paper beige, coffee-ring sepia, ballpoint blue, graphite grey,
-    yellow-highlighter fluorescence, tea-tannin brown; use color through dry-erase primaries, paper
-    grey, cave ochres, xerox black, punk collage hits, deck enamel, or improvised marker accents,
-    with deliberate value grouping, accent control, and process-specific limits rather than generic
-    color wash.
-  lighting_and_shadow: >-
-    Handle light through Top-down desk-lamp warmth, crease-shadow depth from crumpled topography,
-    side-light revealing paper texture; keep light secondary to surface evidence through flat scan
-    lighting, paper shadow, primitive wall texture, or graphic ink contrast, so exposure and shadow
-    structure support the media process without overwriting the requested content.
-  texture_and_material: >-
-    Render Deep-crease paper folds, coffee-stain absorption circles, water-damage warping, ink-bleed
-    into fibers, torn-edge roughness; surface detail should reveal marker squeak, paper wrinkles,
-    cave-grain pigment, tape, photocopy dirt, deck varnish, napkin fiber, or zine cut edges, keeping
-    artifact scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Forms bisected by fold lines, features shifted across crease faults,
-    drawn-then-crumpled distortion; compose through casual diagram layout, pasted fragments,
-    object-on-surface graphic balance, hand-drawn arrows without readable text, and rough spatial
-    shorthand, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style
-    work.
-  atmosphere_and_mood: >-
-    Keep the mood Desperate creativity, beautiful failure, late-night frustrated genius, rescued
-    inspiration, melancholy charm; derive mood from improvised problem-solving, punk urgency,
-    outsider charm, ancient ritual memory, office boredom, or homemade design energy, letting the
-    media style alter interpretation without demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Crumpled-paper sketch aesthetic, rescued-from-trash beauty, accidental-texture
-    rendering, wabi-sabi art philosophy; finish with honest DIY texture, readable prompt identity,
-    and no polished corporate vector, fake readable notes, or clean studio poster default, clean
-    denoised surfaces where appropriate, and enough process evidence to make the style recognizable.
-  key_features: >-
-    Drawing on crumpled then flattened paper, crease-lines cutting through the art, stained and
-    abused surface, wrinkled-grid distortion, beautiful-accident texture, discarded-thought
-    recovered; Paper crease lines across art, coffee-stain rings, torn paper edges, ink-pooling in
-    fold valleys, wabi-sabi imperfection; Stained paper beige, coffee-ring sepia, ballpoint blue,
-    graphite grey, yellow-highlighter fluorescence, tea-tannin brown; Deep-crease paper folds,
-    coffee-stain absorption circles, water-damage warping, ink-bleed into fibers, torn-edge
-    roughness; Forms bisected by fold lines, features shifted across crease faults,
-    drawn-then-crumpled distortion
-  creative_brief: >-
-    Apply Crumpled-Paper Scribble as a cinematic-media preset over prompt X: preserve the user's
-    requested subject, then route lens behavior, palette, light, signal or film texture,
-    composition, mood, and final media craft through Drawing on crumpled then flattened paper,
-    crease-lines cutting through the art, stained and abused surface, wrinkled-grid distortion,
-    beautiful-accident texture, discarded-thought recovered, Paper crease lines across art,
-    coffee-stain rings, torn paper edges, ink-pooling in fold valleys, wabi-sabi imperfection,
-    Deep-crease paper folds, coffee-stain absorption circles, water-damage warping, ink-bleed into
-    fibers, torn-edge roughness without requiring the card image's original subject.
+  aesthetic: 'Crumpled-paper scribble: a pencil and ink drawing on paper that was crushed into a ball and flattened again, the creases cutting through the art.'
+  subject_treatment: Keep the prompt subject intact and draw it with this tool on this support; the support is shown only as the drawing surface, never added as an extra object in the scene.
+  color_and_tone: Off-white and yellowed paper, graphite grey, blue ballpoint, a coffee-brown stain.
+  lighting_and_shadow: Low side light raking across the creases so every fold casts a tiny shadow.
+  texture_and_material: Sharp crease network, broken lines where ink skipped over folds, abraded fibers.
+  camera_and_composition: Paper seen flat, filling the frame, the drawing warped slightly by the folds.
+  atmosphere_and_mood: Wistful and rescued, a thrown-away idea given a second chance.
+  rendering_and_quality: Real crumpled-paper surface with light across the folds; not a texture overlay.
+  key_features: crease network through the drawing; raking side light; skipped ink over folds; yellowed paper; coffee stain
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crumpled-Paper Scribble as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - photorealistic rendering
+  - 3d render
+  - polished digital art
+  - readable text
+  - readable handwriting
+  - brand logo
+  - franchise likeness
+  - celebrity likeness
+  - adding the drawing support as an extra object in the scene
   - flat
   - clean
   - smooth
@@ -98,14 +53,16 @@ avoidRules:
   - fake readable notes
   - clean studio poster
   - stock illustration polish
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-092.webp
 attributes:
-  negativePrompt: >-
-    flat, clean, smooth, pristine, digital, straight, unwrinkled, perfect, crisp edges, official
-    card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text,
-    watermark, logo clutter, generic stock footage, uncontrolled noise, polished corporate vector,
-    fake readable notes, clean studio poster, stock illustration polish
+  negativePrompt: photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, flat, clean, smooth, pristine, digital, straight, unwrinkled, perfect, crisp edges, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, polished corporate vector, fake readable notes, clean studio poster, stock illustration polish, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

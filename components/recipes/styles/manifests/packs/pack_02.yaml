@@ -191,6 +191,20 @@ categories:
       - pack_02/SP02-096.yaml
       - pack_02/SP02-098.yaml
       - pack_02/SP02-099.yaml
+      - pack_02/SP02-163.yaml
+      - pack_02/SP02-164.yaml
+      - pack_02/SP02-165.yaml
+      - pack_02/SP02-166.yaml
+      - pack_02/SP02-167.yaml
+      - pack_02/SP02-168.yaml
+      - pack_02/SP02-169.yaml
+      - pack_02/SP02-170.yaml
+      - pack_02/SP02-171.yaml
+      - pack_02/SP02-172.yaml
+      - pack_02/SP02-173.yaml
+      - pack_02/SP02-174.yaml
+      - pack_02/SP02-175.yaml
+      - pack_02/SP02-176.yaml
 presetRefs:
   - pack_02/SP02-001.yaml
   - pack_02/SP02-002.yaml
@@ -354,3 +368,17 @@ presetRefs:
   - pack_02/SP02-096.yaml
   - pack_02/SP02-098.yaml
   - pack_02/SP02-099.yaml
+  - pack_02/SP02-163.yaml
+  - pack_02/SP02-164.yaml
+  - pack_02/SP02-165.yaml
+  - pack_02/SP02-166.yaml
+  - pack_02/SP02-167.yaml
+  - pack_02/SP02-168.yaml
+  - pack_02/SP02-169.yaml
+  - pack_02/SP02-170.yaml
+  - pack_02/SP02-171.yaml
+  - pack_02/SP02-172.yaml
+  - pack_02/SP02-173.yaml
+  - pack_02/SP02-174.yaml
+  - pack_02/SP02-175.yaml
+  - pack_02/SP02-176.yaml

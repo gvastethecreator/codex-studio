@@ -63,6 +63,7 @@ Pack order, skipping pack_12 and pack_17: pack_01 → pack_24, then pack_12, pac
 | pack_02::5. Lighting And Atmosphere          | done  | done | done   | 0 (already 20)    | pending (local)     | see git log        |
 | pack_02::6. Caricature And Cartoon Styles    | done  | done | done   | 0 (already 33)    | pending (local)     | see git log        |
 | pack_02::7. Sensor And Technical Imaging     | done  | done | done   | 17 (SP02-146…162) | pending (local)     | see git log        |
+| pack_02::8. Hand-Drawn And DIY Media         | done  | done | done   | 14 (SP02-163…176) | pending (local)     | see git log        |
 
 ## Open risks
 

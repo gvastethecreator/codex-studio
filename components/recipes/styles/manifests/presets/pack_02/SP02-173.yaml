@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP02-173
+packId: pack_02
+name: Ballpoint Skin Doodle
+styleAnchors:
+  - Ballpoint Skin Doodle
+  - pen doodle on skin
+  - pen lines on skin
+displayName: Ballpoint Skin Doodle
+category: 8. Hand-Drawn And DIY Media
+domain: pen doodle on skin
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - hand-drawn-and-diy-media
+  - skin-doodle
+  - ballpoint
+  - body-art
+visualDna:
+  aesthetic: 'Ballpoint skin doodle: a playful blue pen drawing on the back of an adult hand or forearm, the ink catching in skin creases.'
+  subject_treatment: Keep the prompt subject intact and draw it in pen on an adult hand or forearm, which appears only as the drawing surface.
+  color_and_tone: Blue or black ballpoint on warm skin tones.
+  lighting_and_shadow: Soft daylight on the skin; the ink sits flat on top.
+  texture_and_material: Lines skipping over pores and creases, faded patches where the skin rubbed.
+  camera_and_composition: Close view of the hand or forearm filling the frame, drawing centered.
+  atmosphere_and_mood: Playful and personal, a small drawing carried around all day.
+  rendering_and_quality: Real pen on skin, not a tattoo; no written words.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ballpoint Skin Doodle as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: pen lines on skin; ink skipping creases; faded rubbed patches; close hand view; not a tattoo
+avoidRules:
+  - photorealistic rendering
+  - 3d render
+  - polished digital art
+  - readable text
+  - readable handwriting
+  - brand logo
+  - franchise likeness
+  - celebrity likeness
+  - adding the drawing support as an extra object in the scene
+  - tattoo
+  - real person likeness
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: photorealistic rendering, 3d render, polished digital art, readable text, readable handwriting, brand logo, franchise likeness, celebrity likeness, adding the drawing support as an extra object in the scene, tattoo, real person likeness, watermark, text, readable labels, logo, UI overlay, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: hand-drawn-and-diy-media
+  categoryName: 8. Hand-Drawn And DIY Media
+  tags:
+    - cinematic-and-media
+    - hand-drawn-and-diy-media
+    - skin-doodle
+    - ballpoint
+    - body-art
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: pen doodle on skin
