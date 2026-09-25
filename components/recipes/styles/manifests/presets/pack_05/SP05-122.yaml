@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-122
 packId: pack_05
-name: Chainsaw Man - Filthy Devil-Hunter Frenzy
+name: Muted Cinematic Grime Frenzy
 styleAnchors:
-  - 'Chainsaw Man - Filthy Devil-Hunter Frenzy'
-displayName: 'Filthy Devil-Hunter Frenzy'
+  - Muted Cinematic Grime Frenzy
+  - Chainsaw Man - Filthy Devil-Hunter Frenzy
+displayName: Muted Cinematic Grime Frenzy
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,47 +16,25 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from rough hard contours with short, jagged marks and blocky
-    planes with uneven breaks and compressed shapes. Let abrupt starts, abrupt halts, and compact
-    reverberations set its rhythm; use soot gray and dull rust with fluorescent yellow-green
-    accents for color and matte scuffing, smeared dry texture, and sparse fluorescent streaks for
-    finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use rough hard contours with short, jagged marks
-    for edge work, blocky planes with uneven breaks and compressed shapes for form simplification,
-    and abrupt starts, abrupt halts, and compact reverberations only where movement is already
-    requested.
-  color_and_tone: >-
-    Build value groups with soot gray and dull rust with fluorescent yellow-green accents. Place
-    the strongest contrast on the requested focal area and preserve explicit color instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: irregular fluorescent contrast against deep, stable shadow masses.
-    Keep shadows grouped and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with matte scuffing, smeared dry texture, and sparse fluorescent
-    streaks, preserving depicted materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use tight off-center grouping with broken lines and
-    compressed margins to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey worn tension and dry absurdity, while preserving
-    the prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with grain confined to selected shadows, with the main silhouette kept clear; keep
-    detail selective and accents attached to existing forms.
-  key_features: >-
-    rough hard contours with short, jagged marks; blocky planes with uneven breaks and compressed
-    shapes; soot gray and dull rust with fluorescent yellow-green accents; abrupt starts, abrupt
-    halts, and compact reverberations; matte scuffing, smeared dry texture, and sparse fluorescent
-    streaks; tight off-center grouping with broken lines and compressed margins.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with rough hard contours
-    with short, jagged marks, blocky planes with uneven breaks and compressed shapes, and soot
-    gray and dull rust with fluorescent yellow-green accents; use abrupt starts, abrupt halts, and
-    compact reverberations only where movement is already present, and apply matte scuffing,
-    smeared dry texture, and sparse fluorescent streaks as the drawing finish.
+  aesthetic: 'Grounded cinematic anime: sober adult proportions, thin precise lines, desaturated film-graded color and handheld framing, with sudden violent motion shown as fluorescent streaks.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Soot grey, dull rust and pale concrete, with fluorescent yellow-green streak accents.
+  lighting_and_shadow: Motivated practical light from overhead tubes or windows with soft grounded falloff.
+  texture_and_material: Grime, scuffs and subtle film grain; lens-like shallow depth of field.
+  camera_and_composition: Keep the requested content; handheld off-center framing, tight crops and shallow depth.
+  atmosphere_and_mood: Worn tension and dry absurdity, exhausted people in grimy places doing strange things.
+  rendering_and_quality: Restrained cinematic finish, grain confined to shadows, main silhouette always clear.
+  key_features: desaturated film grade; handheld off-center framing; thin precise lines; fluorescent streak accents; grime and shallow depth
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Muted Cinematic Grime Frenzy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
+  - chainsaw-headed figure
+  - blood spray
   - realistic
   - 3d render
   - photo
@@ -78,14 +57,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-122.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen
-    source-frame look, fixed canon character, title scene replication, required source-frame look,
-    cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, chainsaw-headed figure, blood spray, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

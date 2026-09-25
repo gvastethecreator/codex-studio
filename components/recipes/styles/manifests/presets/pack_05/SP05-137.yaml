@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-137
 packId: pack_05
-name: Dr. Stone - Science Kingdom Action Blueprint
+name: Chalk-Schematic Inventor Cel
 styleAnchors:
-  - 'Dr. Stone - Science Kingdom Action Blueprint'
-displayName: 'Science Kingdom Action Blueprint'
+  - Chalk-Schematic Inventor Cel
+  - Dr. Stone - Science Kingdom Action Blueprint
+displayName: Chalk-Schematic Inventor Cel
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,47 +16,24 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from clean contour lines paired with faint schematic strokes
-    and simple forms overlaid by abstract construction shapes. Let measured branching vectors with
-    deliberate pauses set its rhythm; use mineral green, chalk white, warm mineral gold, and dark
-    ink for color and chalky line marks over smooth cel fields and lightly granular color for
-    finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use clean contour lines paired with faint
-    schematic strokes for edge work, simple forms overlaid by abstract construction shapes for
-    form simplification, and measured branching vectors with deliberate pauses only where movement
-    is already requested.
-  color_and_tone: >-
-    Build value groups with mineral green, chalk white, warm mineral gold, and dark ink. Place the
-    strongest contrast on the requested focal area and preserve explicit color instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: clear pale highlights and stable dark value anchors. Keep shadows
-    grouped and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with chalky line marks over smooth cel fields and lightly granular
-    color, preserving depicted materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use layered diagram-like spacing with open margins and
-    no readable labels to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey practical optimism and curiosity, while preserving
-    the prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with legible construction lines, mineral color, and restrained chalk texture; keep
-    detail selective and accents attached to existing forms.
-  key_features: >-
-    clean contour lines paired with faint schematic strokes; simple forms overlaid by abstract
-    construction shapes; mineral green, chalk white, warm mineral gold, and dark ink; measured
-    branching vectors with deliberate pauses; chalky line marks over smooth cel fields and lightly
-    granular color; layered diagram-like spacing with open margins and no readable labels.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with clean contour lines
-    paired with faint schematic strokes, simple forms overlaid by abstract construction shapes,
-    and mineral green, chalk white, warm mineral gold, and dark ink; use measured branching
-    vectors with deliberate pauses only where movement is already present, and apply chalky line
-    marks over smooth cel fields and lightly granular color as the drawing finish.
+  aesthetic: 'Inventor adventure anime: clean cel figures overlaid with faint chalk schematic strokes, construction lines, cross-sections, arcs and dimension ticks without numbers.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Mineral green, chalk white, warm mineral gold and dark ink.
+  lighting_and_shadow: Clear pale highlights and stable dark value anchors; chalk lines stay unlit and flat.
+  texture_and_material: Chalky dusty strokes over smooth cel fields, lightly granular color.
+  camera_and_composition: Keep the requested framing; diagram-like layered spacing with open margins for the schematic lines.
+  atmosphere_and_mood: Practical optimism and restless curiosity, every problem already half sketched into a solution.
+  rendering_and_quality: Legible construction lines, mineral color and restrained chalk texture, never a readable formula.
+  key_features: chalk schematic overlay; unnumbered dimension ticks; mineral green and chalk white; clean cel figures; open diagram margins
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chalk-Schematic Inventor Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
+  - stone crack lines on the face
   - realistic
   - 3d render
   - photo
@@ -83,15 +61,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-137.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, readable formulas, lab classroom,
-    weapon, tool pile, photoreal cosplay, western superhero comic, generic shonen source-frame look,
-    fixed canon character, title scene replication, required source-frame look, cosplay, generic
-    anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, stone crack lines on the face, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, readable formulas, lab classroom, weapon, tool pile, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

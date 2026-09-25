@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-128
 packId: pack_05
-name: 'Bleach: Thousand-Year Blood War - Royal Black Blade Opera'
+name: Inverted Negative Ink Opera
 styleAnchors:
+  - Inverted Negative Ink Opera
   - 'Bleach: Thousand-Year Blood War - Royal Black Blade Opera'
-displayName: 'Royal Black Blade Opera'
+displayName: Inverted Negative Ink Opera
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,46 +16,25 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from broad black brush contours cut by clean white gaps and
-    large folded shapes arranged in formal, broad balance. Let long decisive sweeps followed by
-    stately pauses set its rhythm; use black, ivory, and restrained deep-violet accents for color
-    and solid ink fields with subtle paper grain and almost no soft texture for finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use broad black brush contours cut by clean white
-    gaps for edge work, large folded shapes arranged in formal, broad balance for form
-    simplification, and long decisive sweeps followed by stately pauses only where movement is
-    already requested.
-  color_and_tone: >-
-    Build value groups with black, ivory, and restrained deep-violet accents. Place the strongest
-    contrast on the requested focal area and preserve explicit color instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: deep shadow masses with crisp white edge separations. Keep shadows
-    grouped and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with solid ink fields with subtle paper grain and almost no soft
-    texture, preserving depicted materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use formal broad spacing with one strong diagonal and
-    open negative space to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey solemn grandeur and controlled drama, while
-    preserving the prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with high-contrast ink masses, clean negative cuts, and restrained color; keep detail
-    selective and accents attached to existing forms.
-  key_features: >-
-    broad black brush contours cut by clean white gaps; large folded shapes arranged in formal,
-    broad balance; black, ivory, and restrained deep-violet accents; long decisive sweeps followed
-    by stately pauses; solid ink fields with subtle paper grain and almost no soft texture; formal
-    broad spacing with one strong diagonal and open negative space.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with broad black brush
-    contours cut by clean white gaps, large folded shapes arranged in formal, broad balance, and
-    black, ivory, and restrained deep-violet accents; use long decisive sweeps followed by stately
-    pauses only where movement is already present, and apply solid ink fields with subtle paper
-    grain and almost no soft texture as the drawing finish.
+  aesthetic: 'Ceremonial ink anime that flips into photographic negative: broad black brush contours, huge ivory fields, and one region inverted so shadows turn white and highlights black.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Black, ivory and deep violet; the inverted region swaps black and white and carries one saturated crimson flash.
+  lighting_and_shadow: Stark top light and deep shadow masses cut by crisp white gaps; inside the inverted zone light reads as black.
+  texture_and_material: Solid ink fields with faint paper grain and dry-brush tails on the longest strokes.
+  camera_and_composition: Keep the requested framing; formal, near-symmetric staging with one strong diagonal and wide negative space.
+  atmosphere_and_mood: Solemn grandeur that turns suddenly cold, stillness broken by one stark flash.
+  rendering_and_quality: Flat masses and clean negative cuts, with the inversion confined to one region or silhouette.
+  key_features: partial photographic-negative inversion; broad black brush contour; ivory negative space; single crimson flash; formal diagonal
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Inverted Negative Ink Opera as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
+  - black hakama with white sash
+  - skull mask
   - realistic
   - 3d render
   - photo
@@ -77,14 +57,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-128.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen
-    source-frame look, fixed canon character, title scene replication, required source-frame look,
-    cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, black hakama with white sash, skull mask, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

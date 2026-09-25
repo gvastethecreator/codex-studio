@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-021
 packId: pack_05
-name: Headband Ninja Journey
+name: Teal-Orange Sakuga Smear
 styleAnchors:
-  - 'Headband Ninja Journey'
-displayName: 'Kinetic Ninja Shonen'
+  - Teal-Orange Sakuga Smear
+  - Headband Ninja Journey
+displayName: Teal-Orange Sakuga Smear
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,50 +16,25 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from tapered black-ink contours that thicken at turns and
-    break into short speed ticks and compact rounded masses with clean cel edges and ribbonlike
-    cutouts. Let long upward curves, brief flicks, and crisp pauses set its rhythm; use clear teal
-    and warm orange against ink-dark and paper-light neutrals for color and smooth cel flats
-    touched by sparse dry-ink grain for finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use tapered black-ink contours that thicken at
-    turns and break into short speed ticks for edge work, compact rounded masses with clean cel
-    edges and ribbonlike cutouts for form simplification, and long upward curves, brief flicks,
-    and crisp pauses only where movement is already requested.
-  color_and_tone: >-
-    Build value groups with clear teal and warm orange against ink-dark and paper-light neutrals.
-    Place the strongest contrast on the requested focal area and preserve explicit color
-    instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: hard two-step shadows with small white edge cuts. Keep shadows
-    grouped and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with smooth cel flats touched by sparse dry-ink grain, preserving
-    depicted materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use open diagonal flow with rising arcs and unblocked
-    negative space to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey buoyant resolve and forward curiosity, while
-    preserving the prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with crisp silhouettes, flat fills, and sparse grain; bind every accent to an existing
-    form; keep detail selective and accents attached to existing forms.
-  key_features: >-
-    tapered black-ink contours that thicken at turns and break into short speed ticks; compact
-    rounded masses with clean cel edges and ribbonlike cutouts; clear teal and warm orange against
-    ink-dark and paper-light neutrals; long upward curves, brief flicks, and crisp pauses; smooth
-    cel flats touched by sparse dry-ink grain; open diagonal flow with rising arcs and unblocked
-    negative space.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with tapered black-ink
-    contours that thicken at turns and break into short speed ticks, compact rounded masses with
-    clean cel edges and ribbonlike cutouts, and clear teal and warm orange against ink-dark and
-    paper-light neutrals; use long upward curves, brief flicks, and crisp pauses only where
-    movement is already present, and apply smooth cel flats touched by sparse dry-ink grain as the
-    drawing finish.
+  aesthetic: 'Journey-adventure anime at its most animated: tapered black-ink contours that thicken at turns, limbs stretched into smear frames, and dust or leaf trails curling behind fast motion.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Clear teal and warm orange against ink-dark and paper-light neutrals.
+  lighting_and_shadow: Golden-hour hard two-step shadows with small white edge cuts.
+  texture_and_material: Smooth cel flats with sparse dry-ink grain; smears drawn as stretched, tapered shapes.
+  camera_and_composition: Keep the requested framing; open diagonal flow with rising arcs and unblocked negative space.
+  atmosphere_and_mood: Buoyant resolve and forward curiosity, the road ahead always open and bright.
+  rendering_and_quality: Crisp silhouettes and flat fills, with smears and trails only on motion already present.
+  key_features: stretched limb smear frames; tapered ink contour; curling dust and leaf trails; teal and orange; two-step shadow
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Teal-Orange Sakuga Smear as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
+  - orange jumpsuit
+  - whisker cheek marks
   - realistic
   - 3d render
   - photo
@@ -90,16 +66,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-021.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, recognizable ninja franchise, forehead metal plate, spiral
-    emblem, kunai, shuriken, village wall, named-series headband, copied hairstyle, weapon-first
-    pose, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon
-    character, title scene replication, required source-frame look, cosplay, generic anime filter,
-    prompt-required card, logo, muddy noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, orange jumpsuit, whisker cheek marks, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, recognizable ninja franchise, forehead metal plate, spiral emblem, kunai, shuriken, village wall, named-series headband, copied hairstyle, weapon-first pose, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

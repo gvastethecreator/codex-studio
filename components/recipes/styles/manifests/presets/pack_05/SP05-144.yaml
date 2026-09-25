@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-144
 packId: pack_05
-name: Samurai Champloo - Lo-Fi Edo Swagger
+name: Record-Scratch Stutter Swagger
 styleAnchors:
-  - 'Samurai Champloo - Lo-Fi Edo Swagger'
-displayName: 'Lo-Fi Edo Swagger'
+  - Record-Scratch Stutter Swagger
+  - Samurai Champloo - Lo-Fi Edo Swagger
+displayName: Record-Scratch Stutter Swagger
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,47 +16,23 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from loose ink-brush contours with uneven, scratchlike
-    breaks and relaxed flattened forms and offbeat asymmetrical blocks. Let syncopated pauses with
-    a loose, delayed follow-through set its rhythm; use dusty gold, warm brown, and subdued
-    blue-gray for color and fine vinyl-like scratches and dry print grain over warm flats for
-    finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use loose ink-brush contours with uneven,
-    scratchlike breaks for edge work, relaxed flattened forms and offbeat asymmetrical blocks for
-    form simplification, and syncopated pauses with a loose, delayed follow-through only where
-    movement is already requested.
-  color_and_tone: >-
-    Build value groups with dusty gold, warm brown, and subdued blue-gray. Place the strongest
-    contrast on the requested focal area and preserve explicit color instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: soft warm-cool bands with few hard shadow groups. Keep shadows
-    grouped and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with fine vinyl-like scratches and dry print grain over warm flats,
-    preserving depicted materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use offbeat visual balance with relaxed weight on one
-    side to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey unhurried swagger and easy rhythm, while preserving
-    the prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with warm dusty color, scratch texture, and deliberately uneven spacing; keep detail
-    selective and accents attached to existing forms.
-  key_features: >-
-    loose ink-brush contours with uneven, scratchlike breaks; relaxed flattened forms and offbeat
-    asymmetrical blocks; dusty gold, warm brown, and subdued blue-gray; syncopated pauses with a
-    loose, delayed follow-through; fine vinyl-like scratches and dry print grain over warm flats;
-    offbeat visual balance with relaxed weight on one side.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with loose ink-brush
-    contours with uneven, scratchlike breaks, relaxed flattened forms and offbeat asymmetrical
-    blocks, and dusty gold, warm brown, and subdued blue-gray; use syncopated pauses with a loose,
-    delayed follow-through only where movement is already present, and apply fine vinyl-like
-    scratches and dry print grain over warm flats as the drawing finish.
+  aesthetic: 'Hip-hop period anime: flattened woodblock-style landscapes under loose ink-brush figures, with record-scratch stutter frames of doubled offset outlines and rewind jitter.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Dusty gold, warm brown and subdued blue-grey, with an occasional spray-paint magenta accent.
+  lighting_and_shadow: Soft warm-cool bands with few hard shadow groups.
+  texture_and_material: Fine vinyl-like scratches and dry print grain over warm flats.
+  camera_and_composition: Keep the requested framing; offbeat balance with relaxed weight on one side.
+  atmosphere_and_mood: Unhurried swagger and an easy, syncopated rhythm.
+  rendering_and_quality: Warm dusty color, scratch texture and stutter outlines only on moving parts.
+  key_features: doubled offset stutter outlines; vinyl scratch texture; flattened woodblock landscape; dusty gold and brown; offbeat balance
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Record-Scratch Stutter Swagger as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
   - realistic
   - 3d render
   - photo
@@ -84,15 +61,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-144.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, sword near-plane, duel pose, dojo
-    corridor, readable graffiti, samurai costume copy, photoreal cosplay, western superhero comic,
-    generic shonen source-frame look, fixed canon character, title scene replication, required
-    source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, sword near-plane, duel pose, dojo corridor, readable graffiti, samurai costume copy, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

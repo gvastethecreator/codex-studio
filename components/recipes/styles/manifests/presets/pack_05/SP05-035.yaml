@@ -3,10 +3,10 @@ id: SP05-035
 packId: pack_05
 name: Gritty Wallbound Survival
 styleAnchors:
-  - 'Gritty Wallbound Survival'
-displayName: 'Wallbound Survival Drama'
+  - Gritty Wallbound Survival
+displayName: Wallbound Survival Drama
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,46 +15,25 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from sharp clear contours with long slanted accents and
-    narrow stretched forms organized by tall, stacked planes. Let sweeping diagonals, taut curves,
-    and controlled stops set its rhythm; use cold slate, muted olive, sand neutrals, and a small
-    warm accent for color and broad untextured value masses with sparse dry abrasion for finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use sharp clear contours with long slanted accents
-    for edge work, narrow stretched forms organized by tall, stacked planes for form
-    simplification, and sweeping diagonals, taut curves, and controlled stops only where movement
-    is already requested.
-  color_and_tone: >-
-    Build value groups with cold slate, muted olive, sand neutrals, and a small warm accent. Place
-    the strongest contrast on the requested focal area and preserve explicit color instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: cool grouped shadows with a small warm edge highlight. Keep
-    shadows grouped and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with broad untextured value masses with sparse dry abrasion,
-    preserving depicted materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use vertical depth layers and steep diagonals that
-    clarify scale within the given frame to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey disciplined unease and resilient focus, while
-    preserving the prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with strong silhouette, broad values, and texture kept away from the main contour; keep
-    detail selective and accents attached to existing forms.
-  key_features: >-
-    sharp clear contours with long slanted accents; narrow stretched forms organized by tall,
-    stacked planes; cold slate, muted olive, sand neutrals, and a small warm accent; sweeping
-    diagonals, taut curves, and controlled stops; broad untextured value masses with sparse dry
-    abrasion; vertical depth layers and steep diagonals that clarify scale within the given frame.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with sharp clear contours
-    with long slanted accents, narrow stretched forms organized by tall, stacked planes, and cold
-    slate, muted olive, sand neutrals, and a small warm accent; use sweeping diagonals, taut
-    curves, and controlled stops only where movement is already present, and apply broad
-    untextured value masses with sparse dry abrasion as the drawing finish.
+  aesthetic: 'Vertical-survival anime: thick sharp contours with harsh stress lines on faces and knuckles, figures dwarfed by colossal walls and cliffs, and taut cable-line motion trails.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Cold slate, muted olive, sand and bone neutrals, with one small ember-orange accent on the focal figure.
+  lighting_and_shadow: Overcast top light, grouped cool shadows, and a narrow warm edge only on the focal figure.
+  texture_and_material: Broad untextured value planes; stone drawn as stacked vertical strata lines, fabric as stiff folds.
+  camera_and_composition: Keep the requested framing; favor steep worm-eye or plunging overhead views where the request allows, with long verticals.
+  atmosphere_and_mood: Vertigo, grit and stubborn survival against sheer height.
+  rendering_and_quality: Hard stress-line hatching under eyes and along tendons, crisp silhouettes against flat pale sky.
+  key_features: facial stress lines; towering vertical strata; taut cable motion trails; cold slate and olive palette; plunging verticals
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gritty Wallbound Survival as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
+  - wing emblem
+  - waist-mounted grapple rig
   - realistic
   - 3d render
   - photo
@@ -87,16 +66,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-035.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, giant humanoid, titan likeness, blood, eaten-body implication,
-    military insignia, named corps outfit, rooftop gore, despair portrait, dense forest, generic
-    ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look,
-    fixed canon character, title scene replication, required source-frame look, cosplay, generic
-    anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, wing emblem, waist-mounted grapple rig, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, giant humanoid, titan likeness, blood, eaten-body implication, military insignia, named corps outfit, rooftop gore, despair portrait, dense forest, generic ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-140
 packId: pack_05
-name: Frieren Combat Flashback - Ancient Calm Spell Impact
+name: Pale Calm Spell Geometry
 styleAnchors:
-  - 'Frieren Combat Flashback - Ancient Calm Spell Impact'
-displayName: 'Ancient Calm Spell Impact'
+  - Pale Calm Spell Geometry
+  - Frieren Combat Flashback - Ancient Calm Spell Impact
+displayName: Pale Calm Spell Geometry
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,46 +16,24 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from fine precise outlines with carefully measured internal
-    strokes and soft broad forms crossed by exact geometric accents. Let short precise arcs held
-    within broad quiet intervals set its rhythm; use pale cyan, soft neutrals, and restrained cool
-    shadow for color and smooth matte color with fine line detail and little grain for finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use fine precise outlines with carefully measured
-    internal strokes for edge work, soft broad forms crossed by exact geometric accents for form
-    simplification, and short precise arcs held within broad quiet intervals only where movement
-    is already requested.
-  color_and_tone: >-
-    Build value groups with pale cyan, soft neutrals, and restrained cool shadow. Place the
-    strongest contrast on the requested focal area and preserve explicit color instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: soft value transitions with a few clean bright edges. Keep shadows
-    grouped and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with smooth matte color with fine line detail and little grain,
-    preserving depicted materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use open spacing around precise focal geometry,
-    respecting the existing crop to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey understated authority and reflective calm, while
-    preserving the prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with quiet palette, exact contours, and restrained detail density; keep detail
-    selective and accents attached to existing forms.
-  key_features: >-
-    fine precise outlines with carefully measured internal strokes; soft broad forms crossed by
-    exact geometric accents; pale cyan, soft neutrals, and restrained cool shadow; short precise
-    arcs held within broad quiet intervals; smooth matte color with fine line detail and little
-    grain; open spacing around precise focal geometry, respecting the existing crop.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with fine precise outlines
-    with carefully measured internal strokes, soft broad forms crossed by exact geometric accents,
-    and pale cyan, soft neutrals, and restrained cool shadow; use short precise arcs held within
-    broad quiet intervals only where movement is already present, and apply smooth matte color
-    with fine line detail and little grain as the drawing finish.
+  aesthetic: 'Quiet fantasy anime: fine exact outlines, pale matte color, and magic drawn as thin concentric rings and polygons of light, precise and unhurried.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Pale cyan, parchment, lavender-grey and soft sage, with restrained cool shadow.
+  lighting_and_shadow: Soft diffuse daylight, gentle value transitions, a few clean bright edges on the rings.
+  texture_and_material: Smooth matte color, fine line detail and very little grain.
+  camera_and_composition: Keep the requested framing; open spacing with generous sky or floor around precise focal geometry.
+  atmosphere_and_mood: Understated authority and reflective calm, power shown without strain or noise.
+  rendering_and_quality: Exact contours and a quiet palette, geometry lines thin and legible with no glyphs.
+  key_features: concentric geometric light rings; pale cyan and parchment; fine exact outline; open quiet spacing; soft diffuse light
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pale Calm Spell Geometry as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
+  - pointed ears with white twin tails
   - realistic
   - 3d render
   - photo
@@ -83,15 +62,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-140.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, battle blast, staff hero pose,
-    weapon, readable magic circle, party lineup, photoreal cosplay, western superhero comic, generic
-    shonen source-frame look, fixed canon character, title scene replication, required source-frame
-    look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, pointed ears with white twin tails, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, battle blast, staff hero pose, weapon, readable magic circle, party lineup, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

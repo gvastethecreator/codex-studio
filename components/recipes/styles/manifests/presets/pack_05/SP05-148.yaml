@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-148
 packId: pack_05
-name: Baccano! - Jazz Railcrime Ensemble
+name: Amber Jazz-Age Ensemble Cel
 styleAnchors:
-  - 'Baccano! - Jazz Railcrime Ensemble'
-displayName: 'Jazz Railcrime Ensemble'
+  - Amber Jazz-Age Ensemble Cel
+  - Baccano! - Jazz Railcrime Ensemble
+displayName: Amber Jazz-Age Ensemble Cel
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,47 +16,24 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from lively variable contours that overlap in syncopated
-    clusters and overlapping outlines and rounded graphic masses. Let staggered rhythms and
-    crossing motion arcs with no fixed direction set its rhythm; use brass gold, amber, dark
-    brown, and ink black for color and subtle printed grain with warm amber-gold accents in flat
-    color fields for finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use lively variable contours that overlap in
-    syncopated clusters for edge work, overlapping outlines and rounded graphic masses for form
-    simplification, and staggered rhythms and crossing motion arcs with no fixed direction only
-    where movement is already requested.
-  color_and_tone: >-
-    Build value groups with brass gold, amber, dark brown, and ink black. Place the strongest
-    contrast on the requested focal area and preserve explicit color instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: warm edge highlights against crisp dark value blocks. Keep shadows
-    grouped and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with subtle printed grain with warm amber-gold accents in flat color
-    fields, preserving depicted materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use an irregular visual rhythm arranged around the
-    existing focal forms to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey buoyant disorder and dry wit, while preserving the
-    prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with amber-black contrast, overlapping shapes, and rhythm carried by spacing; keep
-    detail selective and accents attached to existing forms.
-  key_features: >-
-    lively variable contours that overlap in syncopated clusters; overlapping outlines and rounded
-    graphic masses; brass gold, amber, dark brown, and ink black; staggered rhythms and crossing
-    motion arcs with no fixed direction; subtle printed grain with warm amber-gold accents in flat
-    color fields; an irregular visual rhythm arranged around the existing focal forms.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with lively variable
-    contours that overlap in syncopated clusters, overlapping outlines and rounded graphic masses,
-    and brass gold, amber, dark brown, and ink black; use staggered rhythms and crossing motion
-    arcs with no fixed direction only where movement is already present, and apply subtle printed
-    grain with warm amber-gold accents in flat color fields as the drawing finish.
+  aesthetic: 'Prohibition-era ensemble anime: lively variable contours, many overlapping characters in syncopated clusters, period tailoring, flat amber and brass color with printed grain.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Brass gold, amber, dark brown and ink black, with cream shirt fronts.
+  lighting_and_shadow: Warm lamplight edge highlights against crisp dark value blocks.
+  texture_and_material: Subtle printed grain in flat color fields; pinstripes and felt drawn as sparse lines.
+  camera_and_composition: Keep the requested framing; an irregular, syncopated rhythm of overlapping figures around the focal forms.
+  atmosphere_and_mood: Buoyant disorder and dry wit, many stories colliding to one swinging beat.
+  rendering_and_quality: Amber-black contrast, overlapping shapes and rhythm carried by spacing.
+  key_features: overlapping ensemble clusters; brass and amber palette; period tailoring; printed grain; syncopated rhythm
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Amber Jazz-Age Ensemble Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
+  - tommy gun
   - realistic
   - 3d render
   - photo
@@ -84,15 +62,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-148.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, gun near-plane, blood, train-car
-    corridor lock, readable signage, gang lineup, photoreal cosplay, western superhero comic,
-    generic shonen source-frame look, fixed canon character, title scene replication, required
-    source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, tommy gun, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, gun near-plane, blood, train-car corridor lock, readable signage, gang lineup, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

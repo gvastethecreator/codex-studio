@@ -5,95 +5,96 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-034',
-    name: 'Bright Hero Academy',
-    displayName: 'Bright Academy Heroics',
-    styleAnchors: ['Bright Hero Academy'],
+    name: 'Crosshatched Primary Hero Cel',
+    displayName: 'Crosshatched Primary Hero Cel',
+    styleAnchors: ['Crosshatched Primary Hero Cel', 'Bright Hero Academy'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, school uniform copy, superhero franchise likeness, green-haired hero, numbered hero suit, cape-logo copy, classroom scene, readable badges, dense forest, rubble field, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, numbered hero suit, green curly hair with freckles, cape emblem, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, school uniform copy, superhero franchise likeness, green-haired hero, cape-logo copy, classroom scene, readable badges, dense forest, rubble field, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from clean broadcast contours with selective line-weight changes and friendly bold geometry divided into simple color zones. Let open arcs that buoy the existing gesture set its rhythm; use clear primary colors, white, and a strong dark outline for color and smooth broadcast-cel fills with almost no surface noise for finish.',
+        'Hero-TV anime built on a manga ink base: heavy variable contours and crosshatched shadow wedges printed over flat primary-color cel fills.',
       subject_treatment:
-        'Preserve the requested content and framing. Use clean broadcast contours with selective line-weight changes for edge work, friendly bold geometry divided into simple color zones for form simplification, and open arcs that buoy the existing gesture only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with clear primary colors, white, and a strong dark outline. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Saturated primary red, cobalt blue and sunflower yellow on clean white; hatched shadows use a darker shade of each local color instead of grey.',
       lighting_and_shadow:
-        'Treat lighting graphically: bright even value separation with uncomplicated cel shadows. Keep shadows grouped and respect any light direction already requested.',
+        'Bright high-front noon key, a single hard cel shadow tier filled with pen hatching, and crisp white specular ticks on hair and cloth.',
       texture_and_material:
-        'Render existing surfaces with smooth broadcast-cel fills with almost no surface noise, preserving depicted materials and adding no props or effects.',
+        'Smooth cel fills with patches of visible pen hatching confined to shadow planes; seams and folds drawn as bold ink strokes, no painted texture.',
       camera_and_composition:
-        'Within the requested camera and crop, use clear focal hierarchy, simplified depth planes, and uncluttered margins to organize existing forms; preserve location and action.',
+        'Keep the requested framing; add slight wide-lens foreshortening to the nearest limb and hold a clear silhouette against a simplified background.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey optimism and forward-looking clarity, while preserving the prompt's emotional intent.",
+        'Earnest, sunny optimism with a thread of strain carried by the hatched shadows.',
       rendering_and_quality:
-        'Finish with polished flat fills, stable outlines, and readable distant forms; keep detail selective and accents attached to existing forms.',
+        'Thick-to-thin contour hierarchy, hatching only inside shadows, flat bright fills and silhouettes that read at thumbnail size.',
       key_features:
-        'clean broadcast contours with selective line-weight changes; friendly bold geometry divided into simple color zones; clear primary colors, white, and a strong dark outline; open arcs that buoy the existing gesture; smooth broadcast-cel fills with almost no surface noise; clear focal hierarchy, simplified depth planes, and uncluttered margins.',
+        'heavy manga contour; crosshatched cel shadow wedges; primary red, cobalt and yellow; wide-lens limb foreshortening; white specular ticks',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with clean broadcast contours with selective line-weight changes, friendly bold geometry divided into simple color zones, and clear primary colors, white, and a strong dark outline; use open arcs that buoy the existing gesture only where movement is already present, and apply smooth broadcast-cel fills with almost no surface noise as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crosshatched Primary Hero Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-133',
-    name: 'Mashle - Brickwall Comedy Spell-School Brawl',
-    displayName: 'Brickwall Comedy Spell-School Brawl',
-    styleAnchors: ['Mashle - Brickwall Comedy Spell-School Brawl'],
+    name: 'Deadpan Filigree Brick Comedy',
+    displayName: 'Deadpan Filigree Brick Comedy',
+    styleAnchors: ['Deadpan Filigree Brick Comedy', 'Mashle - Brickwall Comedy Spell-School Brawl'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, fist-first brawl, weapon, school hallway, readable crest, magic-circle text, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, cream puff prop, magic-school crest, wand duel pose, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, fist-first brawl, weapon, school hallway, readable crest, magic-circle text, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from clean dark outlines with rounded internal strokes and ornate curls interrupted by blunt block-like shapes. Let decorative curves that stop against a short geometric beat set its rhythm; use clean primary colors with black and white contrast for color and smooth cel fills and a few sharp ink accents for finish.',
+        'Straight-faced comedy anime: lace-like filigree curls and ornate decoration interrupted by blunt brick-square forms and a face kept completely blank with dot eyes and a flat mouth line.',
       subject_treatment:
-        'Preserve the requested content and framing. Use clean dark outlines with rounded internal strokes for edge work, ornate curls interrupted by blunt block-like shapes for form simplification, and decorative curves that stop against a short geometric beat only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with clean primary colors with black and white contrast. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Clean pastel lilac, mint and cream for the ornate parts; flat brick-tan and black for the blunt blocks; strong black-white contrast.',
       lighting_and_shadow:
-        'Treat lighting graphically: clean shadow bands with bright, uncomplicated accents. Keep shadows grouped and respect any light direction already requested.',
+        'Flat even light with one hard cel shadow; blunt blocks get a solid black side plane like cut stone.',
       texture_and_material:
-        'Render existing surfaces with smooth cel fills and a few sharp ink accents, preserving depicted materials and adding no props or effects.',
+        'Smooth cel fills; filigree drawn in fine uniform pen line, blocky forms in a heavy uniform outline with no taper.',
       camera_and_composition:
-        'Within the requested camera and crop, use balanced formal spacing with an abrupt graphic break near the focal area to organize existing forms; preserve location and action.',
-      atmosphere_and_mood:
-        "Let line weight, spacing, and value convey straight-faced wit and abrupt contrast, while preserving the prompt's emotional intent.",
+        'Keep the requested framing; set the blank face centered and symmetric while ornate shapes frame it formally.',
+      atmosphere_and_mood: 'Absurd deadpan wit; the face never reacts to anything around it.',
       rendering_and_quality:
-        'Finish with crisp shapes, neat cel color, and comedy carried by contrast; keep detail selective and accents attached to existing forms.',
+        'Exactly two line weights, fine filigree and heavy block, with frozen symmetric poses so the joke is the contrast between ornament and bluntness.',
       key_features:
-        'clean dark outlines with rounded internal strokes; ornate curls interrupted by blunt block-like shapes; clean primary colors with black and white contrast; decorative curves that stop against a short geometric beat; smooth cel fills and a few sharp ink accents; balanced formal spacing with an abrupt graphic break near the focal area.',
+        'expressionless dot-eyed face; filigree against brick-square forms; pastel lilac and mint; heavy uniform block outline; symmetric frozen staging',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with clean dark outlines with rounded internal strokes, ornate curls interrupted by blunt block-like shapes, and clean primary colors with black and white contrast; use decorative curves that stop against a short geometric beat only where movement is already present, and apply smooth cel fills and a few sharp ink accents as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Deadpan Filigree Brick Comedy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-134',
-    name: 'Sakamoto Days - Convenience-Store Assassin Sprint',
-    displayName: 'Convenience-Store Assassin Sprint',
-    styleAnchors: ['Sakamoto Days - Convenience-Store Assassin Sprint'],
+    name: 'Fluorescent Everyday Snap Action',
+    displayName: 'Fluorescent Everyday Snap Action',
+    styleAnchors: [
+      'Fluorescent Everyday Snap Action',
+      'Sakamoto Days - Convenience-Store Assassin Sprint',
+    ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, supermarket aisle, weapon, product labels, crowd, storefront, franchise likeness, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, apron-wearing retired assassin, shop counter, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, supermarket aisle, weapon, product labels, crowd, storefront, franchise likeness, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from calm, clean contours punctuated by tightly snapped marks and ordinary forms simplified into stable color blocks. Let short linear rhythms that sharpen the existing gesture set its rhythm; use cool fluorescent tones, pale neutrals, and one warm accent for color and smooth flat fills with very limited texture for finish.',
+        'Everyday-object action anime: calm thin contours and flat retail color, broken by a single snapped motion where one limb or object becomes a short straight smear with crisp speed ticks.',
       subject_treatment:
-        'Preserve the requested content and framing. Use calm, clean contours punctuated by tightly snapped marks for edge work, ordinary forms simplified into stable color blocks for form simplification, and short linear rhythms that sharpen the existing gesture only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with cool fluorescent tones, pale neutrals, and one warm accent. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Pale fluorescent white, mint and cool grey dominate; one warm tangerine accent marks the snapped element.',
       lighting_and_shadow:
-        'Treat lighting graphically: even cool-white value separation with no implied light fixture. Keep shadows grouped and respect any light direction already requested.',
+        'Flat overhead cool-white wash with almost no modelling; only the snapped element casts a crisp short shadow.',
       texture_and_material:
-        'Render existing surfaces with smooth flat fills with very limited texture, preserving depicted materials and adding no props or effects.',
+        'Smooth flat fills and fine even lines; the smear is three to five parallel straight strokes, never a soft blur.',
       camera_and_composition:
-        'Within the requested camera and crop, use clear horizontal or diagonal lanes within the requested composition to organize existing forms; preserve location and action.',
-      atmosphere_and_mood:
-        "Let line weight, spacing, and value convey calm timing interrupted by a sharp visual accent, while preserving the prompt's emotional intent.",
+        'Keep the requested framing; stack the scene in clear horizontal lanes and let the snap cut diagonally across one lane.',
+      atmosphere_and_mood: 'Mundane calm with one instant of startling precision.',
       rendering_and_quality:
-        'Finish with quiet base shapes, sharp directional lines, and minimal detail; keep detail selective and accents attached to existing forms.',
+        'Minimal detail and clean shapes, with the snap the only streaked element in the frame.',
       key_features:
-        'calm, clean contours punctuated by tightly snapped marks; ordinary forms simplified into stable color blocks; cool fluorescent tones, pale neutrals, and one warm accent; short linear rhythms that sharpen the existing gesture; smooth flat fills with very limited texture; clear horizontal or diagonal lanes within the requested composition.',
+        'calm thin contours; one snapped straight smear; pale fluorescent palette; single tangerine accent; horizontal lane staging',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with calm, clean contours punctuated by tightly snapped marks, ordinary forms simplified into stable color blocks, and cool fluorescent tones, pale neutrals, and one warm accent; use short linear rhythms that sharpen the existing gesture only where movement is already present, and apply smooth flat fills with very limited texture as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fluorescent Everyday Snap Action as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -103,28 +104,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Gritty Urban Curses'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, school uniform copy, finger/talisman fetish prop, monster gore, named sorcerer likeness, alley fight pileup, readable sigils, dense forest, ruin corridor, generic shonen rubble, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, blindfold, finger talisman, eye tattoo, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, school uniform copy, finger/talisman fetish prop, monster gore, named sorcerer likeness, alley fight pileup, readable sigils, dense forest, ruin corridor, generic shonen rubble, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from confident heavy contours with compact black shadow blocks and angular forms crossed by clean, ribbonlike accent bands. Let tight oscillations that gather, curve, and release set its rhythm; use black, cyan, and violet with restrained cool-gray neutrals for color and smooth dark fills with sparse dry grain at selected edges for finish.',
+        'Dark modern exorcism anime: confident brush-pen contours, large spotted black shadow masses, and supernatural energy drawn as ink-smoke ribbons rimmed in cyan and violet.',
       subject_treatment:
-        'Preserve the requested content and framing. Use confident heavy contours with compact black shadow blocks for edge work, angular forms crossed by clean, ribbonlike accent bands for form simplification, and tight oscillations that gather, curve, and release only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with black, cyan, and violet with restrained cool-gray neutrals. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Near-black ink and cool concrete greys with only two accents, electric cyan and bruise violet, both reserved for energy edges.',
       lighting_and_shadow:
-        'Treat lighting graphically: hard ink shadows edged by selective cyan-violet accents. Keep shadows grouped and respect any light direction already requested.',
+        'Hard side light carves half of each face into solid black, with a thin cyan-violet rim along the lit edge.',
       texture_and_material:
-        'Render existing surfaces with smooth dark fills with sparse dry grain at selected edges, preserving depicted materials and adding no props or effects.',
+        'Dry brush-pen grain at contour tails, spotted blacks, and ink-smoke bands with feathered edges.',
       camera_and_composition:
-        'Within the requested camera and crop, use compressed diagonals around the focal form with deliberate breathing gaps to organize existing forms; preserve location and action.',
-      atmosphere_and_mood:
-        "Let line weight, spacing, and value convey contained tension and poised intensity, while preserving the prompt's emotional intent.",
+        'Keep the requested framing; tilt the horizon a few degrees and compress space around the focal form with deep black gaps.',
+      atmosphere_and_mood: 'Coiled menace and cool confidence, danger held in shadow.',
       rendering_and_quality:
-        'Finish with large readable shadow groups, clean line accents, and minimal particle detail; keep detail selective and accents attached to existing forms.',
+        'Big black shapes read first; smoke ribbons and rims carry the only color, with no particle confetti.',
       key_features:
-        'confident heavy contours with compact black shadow blocks; angular forms crossed by clean, ribbonlike accent bands; black, cyan, and violet with restrained cool-gray neutrals; tight oscillations that gather, curve, and release; smooth dark fills with sparse dry grain at selected edges; compressed diagonals around the focal form with deliberate breathing gaps.',
+        'brush-pen contour; spotted black masses; ink-smoke energy ribbons; cyan-violet rim light; tilted horizon',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with confident heavy contours with compact black shadow blocks, angular forms crossed by clean, ribbonlike accent bands, and black, cyan, and violet with restrained cool-gray neutrals; use tight oscillations that gather, curve, and release only where movement is already present, and apply smooth dark fills with sparse dry grain at selected edges as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gritty Urban Curses as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -134,28 +134,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Gritty Wallbound Survival'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, giant humanoid, titan likeness, blood, eaten-body implication, military insignia, named corps outfit, rooftop gore, despair portrait, dense forest, generic ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, wing emblem, waist-mounted grapple rig, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, giant humanoid, titan likeness, blood, eaten-body implication, military insignia, named corps outfit, rooftop gore, despair portrait, dense forest, generic ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from sharp clear contours with long slanted accents and narrow stretched forms organized by tall, stacked planes. Let sweeping diagonals, taut curves, and controlled stops set its rhythm; use cold slate, muted olive, sand neutrals, and a small warm accent for color and broad untextured value masses with sparse dry abrasion for finish.',
+        'Vertical-survival anime: thick sharp contours with harsh stress lines on faces and knuckles, figures dwarfed by colossal walls and cliffs, and taut cable-line motion trails.',
       subject_treatment:
-        'Preserve the requested content and framing. Use sharp clear contours with long slanted accents for edge work, narrow stretched forms organized by tall, stacked planes for form simplification, and sweeping diagonals, taut curves, and controlled stops only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with cold slate, muted olive, sand neutrals, and a small warm accent. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Cold slate, muted olive, sand and bone neutrals, with one small ember-orange accent on the focal figure.',
       lighting_and_shadow:
-        'Treat lighting graphically: cool grouped shadows with a small warm edge highlight. Keep shadows grouped and respect any light direction already requested.',
+        'Overcast top light, grouped cool shadows, and a narrow warm edge only on the focal figure.',
       texture_and_material:
-        'Render existing surfaces with broad untextured value masses with sparse dry abrasion, preserving depicted materials and adding no props or effects.',
+        'Broad untextured value planes; stone drawn as stacked vertical strata lines, fabric as stiff folds.',
       camera_and_composition:
-        'Within the requested camera and crop, use vertical depth layers and steep diagonals that clarify scale within the given frame to organize existing forms; preserve location and action.',
-      atmosphere_and_mood:
-        "Let line weight, spacing, and value convey disciplined unease and resilient focus, while preserving the prompt's emotional intent.",
+        'Keep the requested framing; favor steep worm-eye or plunging overhead views where the request allows, with long verticals.',
+      atmosphere_and_mood: 'Vertigo, grit and stubborn survival against sheer height.',
       rendering_and_quality:
-        'Finish with strong silhouette, broad values, and texture kept away from the main contour; keep detail selective and accents attached to existing forms.',
+        'Hard stress-line hatching under eyes and along tendons, crisp silhouettes against flat pale sky.',
       key_features:
-        'sharp clear contours with long slanted accents; narrow stretched forms organized by tall, stacked planes; cold slate, muted olive, sand neutrals, and a small warm accent; sweeping diagonals, taut curves, and controlled stops; broad untextured value masses with sparse dry abrasion; vertical depth layers and steep diagonals that clarify scale within the given frame.',
+        'facial stress lines; towering vertical strata; taut cable motion trails; cold slate and olive palette; plunging verticals',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with sharp clear contours with long slanted accents, narrow stretched forms organized by tall, stacked planes, and cold slate, muted olive, sand neutrals, and a small warm accent; use sweeping diagonals, taut curves, and controlled stops only where movement is already present, and apply broad untextured value masses with sparse dry abrasion as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gritty Wallbound Survival as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -165,28 +164,27 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Colossal War Drama'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, real-world uniforms, fascist insignia, giant humanoids, battlefield gore, guns near-plane, named franchise likeness, propaganda poster text, dense forest, same ruined corridor formula, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, armband insignia, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, real-world uniforms, fascist insignia, giant humanoids, battlefield gore, guns near-plane, named franchise likeness, propaganda poster text, dense forest, same ruined corridor formula, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from broad angular contours supported by fine structural accents and broad and compact value shapes with scale contrast inside the existing subject. Let slow weight shifts crossed by brief angled strokes set its rhythm; use charcoal, soft gray, and worn red or gold accents for color and soft layered value gradients with restrained paper grain for finish.',
+        'Late-war anime drama: thin, slightly scratchy contours over brush-textured painted backgrounds, desaturated like old wartime photographs under a soft film grain.',
       subject_treatment:
-        'Preserve the requested content and framing. Use broad angular contours supported by fine structural accents for edge work, broad and compact value shapes with scale contrast inside the existing subject for form simplification, and slow weight shifts crossed by brief angled strokes only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with charcoal, soft gray, and worn red or gold accents. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Charcoal, ash grey, dust ochre and faded khaki, with worn crimson or tarnished gold as the only accent.',
       lighting_and_shadow:
-        'Treat lighting graphically: diffused value transitions with narrow pale edge highlights. Keep shadows grouped and respect any light direction already requested.',
+        'Diffuse smoky daylight, soft graded shadows, and a narrow pale rim separating figures from haze.',
       texture_and_material:
-        'Render existing surfaces with soft layered value gradients with restrained paper grain, preserving depicted materials and adding no props or effects.',
+        'Visible bristle marks in skies, walls and smoke; faint grain laid evenly over the cels.',
       camera_and_composition:
-        'Within the requested camera and crop, use expansive asymmetrical blocks with scale shifts among existing forms to organize existing forms; preserve location and action.',
-      atmosphere_and_mood:
-        "Let line weight, spacing, and value convey mournful gravity and measured tension, while preserving the prompt's emotional intent.",
+        'Keep the requested framing; asymmetric compositions set small figures against large, heavy painted masses.',
+      atmosphere_and_mood: 'Mournful gravity and the weight of consequence.',
       rendering_and_quality:
-        'Finish with broad readable planes, restrained grain, and no ornamental clutter; keep detail selective and accents attached to existing forms.',
+        'Thin lines with soft modelled cel shading, painterly backgrounds and restrained color.',
       key_features:
-        'broad angular contours supported by fine structural accents; broad and compact value shapes with scale contrast inside the existing subject; charcoal, soft gray, and worn red or gold accents; slow weight shifts crossed by brief angled strokes; soft layered value gradients with restrained paper grain; expansive asymmetrical blocks with scale shifts among existing forms.',
+        'brush-textured painted backgrounds; desaturated wartime palette; thin scratchy contour; soft film grain; small figures against heavy masses',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with broad angular contours supported by fine structural accents, broad and compact value shapes with scale contrast inside the existing subject, and charcoal, soft gray, and worn red or gold accents; use slow weight shifts crossed by brief angled strokes only where movement is already present, and apply soft layered value gradients with restrained paper grain as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Colossal War Drama as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -194,307 +192,313 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Tactical Adventure Shonen',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, hunter-license copy, card-game UI, readable labels, fishing-rod hero prop, green outfit copy, franchise team likeness, dense forest, generic ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, spiky white-haired boy, playing-card weapon, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, hunter-license copy, card-game UI, readable labels, fishing-rod hero prop, green outfit copy, franchise team likeness, dense forest, generic ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from precise diagram-like lines layered over clean animated contours and modular shapes linked by branching, non-literal connector lines. Let sequenced paths that fork, loop, and pause set its rhythm; use clear blue, white, and selected bright accents against ink-dark for color and clean flat fields with fine rule lines and no legible labels for finish.',
+        'Bright adventure-TV anime: slim clean contours and simple sunlit cel color, with inner power drawn as a translucent, wobbling double outline that hugs a figure like heat shimmer.',
       subject_treatment:
-        'Preserve the requested content and framing. Use precise diagram-like lines layered over clean animated contours for edge work, modular shapes linked by branching, non-literal connector lines for form simplification, and sequenced paths that fork, loop, and pause only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with clear blue, white, and selected bright accents against ink-dark. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Clear sky blue, leaf green, white and warm skin tones; each shimmer outline in its own soft hue at low opacity.',
       lighting_and_shadow:
-        'Treat lighting graphically: even graphic values and sharply defined edges. Keep shadows grouped and respect any light direction already requested.',
+        'Clean midday light, one cel shadow tier, and a pale bounce under chins and brims.',
       texture_and_material:
-        'Render existing surfaces with clean flat fields with fine rule lines and no legible labels, preserving depicted materials and adding no props or effects.',
+        'Smooth flat fills; the shimmer outline slightly blurred and wavering, never a solid glow.',
       camera_and_composition:
-        'Within the requested camera and crop, use orderly clusters linked across layered space, with clear intervals to organize existing forms; preserve location and action.',
+        'Keep the requested framing; roomy compositions with clear intervals between figures, readable at a glance like a strategy map.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey playful strategic clarity, while preserving the prompt's emotional intent.",
+        'Playful curiosity sharpened by quiet calculation, bright and open but always a step ahead.',
       rendering_and_quality:
-        'Finish with crisp segments, simple color logic, and a small number of diagram lines; keep detail selective and accents attached to existing forms.',
+        'Crisp lines, minimal texture, and the shimmer halo only where the prompt shows focus or effort.',
       key_features:
-        'precise diagram-like lines layered over clean animated contours; modular shapes linked by branching, non-literal connector lines; clear blue, white, and selected bright accents against ink-dark; sequenced paths that fork, loop, and pause; clean flat fields with fine rule lines and no legible labels; orderly clusters linked across layered space, with clear intervals.',
+        'slim clean contour; translucent wobbling aura outline; sunlit cel palette; clear figure intervals; one-tier cel shadow',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with precise diagram-like lines layered over clean animated contours, modular shapes linked by branching, non-literal connector lines, and clear blue, white, and selected bright accents against ink-dark; use sequenced paths that fork, loop, and pause only where movement is already present, and apply clean flat fields with fine rule lines and no legible labels as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tactical Adventure Shonen as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-121',
-    name: 'Demon Slayer - Lantern Bloodline Sword Ballet',
-    displayName: 'Lantern Bloodline Sword Ballet',
-    styleAnchors: ['Demon Slayer - Lantern Bloodline Sword Ballet'],
+    name: 'Printed-Wave Effect Trail Cel',
+    displayName: 'Printed-Wave Effect Trail Cel',
+    styleAnchors: [
+      'Printed-Wave Effect Trail Cel',
+      'Demon Slayer - Lantern Bloodline Sword Ballet',
+    ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, checkered haori, bamboo muzzle, hanafuda earrings, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from smooth tapered contours crossed by fine patterned strokes and flowing forms with soft edges and delicate ornamental repeats. Let luminous arcs that flare briefly and taper into calm curves set its rhythm; use winter blue, warm amber, and muted cream for color and clean cel color with faint seasonal grain for finish.',
+        'Polished digital cel anime whose motion and energy trails are drawn as woodblock-print elements: curling wave crests, stylized flame tongues and wind bands in flat graded color.',
       subject_treatment:
-        'Preserve the requested content and framing. Use smooth tapered contours crossed by fine patterned strokes for edge work, flowing forms with soft edges and delicate ornamental repeats for form simplification, and luminous arcs that flare briefly and taper into calm curves only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with winter blue, warm amber, and muted cream. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Winter blue, warm amber and cream on figures; trails in indigo-to-white or vermilion-to-gold bokashi gradients.',
       lighting_and_shadow:
-        'Treat lighting graphically: warm accent glows balanced by cool shadow groups. Keep shadows grouped and respect any light direction already requested.',
+        'Soft cinematic key with a warm glow where a trail passes, cool grouped shadows elsewhere.',
       texture_and_material:
-        'Render existing surfaces with clean cel color with faint seasonal grain, preserving depicted materials and adding no props or effects.',
+        'Smooth digital cel on figures; trails with flat print color, carved outline and faint paper grain.',
       camera_and_composition:
-        'Within the requested camera and crop, use nested asymmetrical curves that leave the existing scene legible to organize existing forms; preserve location and action.',
+        'Keep the requested framing; trails curve in nested arcs around the subject and leave it fully legible.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey tender ceremony and restrained resolve, while preserving the prompt's emotional intent.",
+        'Ceremonial grace and restrained resolve, motion flowing like a performed rite rather than a brawl.',
       rendering_and_quality:
-        'Finish with delicate line detail, clean cel shapes, and gentle warm-cool contrast; keep detail selective and accents attached to existing forms.',
+        'Clear contrast between soft digital shading on figures and flat printed trails; garment patterns kept small.',
       key_features:
-        'smooth tapered contours crossed by fine patterned strokes; flowing forms with soft edges and delicate ornamental repeats; winter blue, warm amber, and muted cream; luminous arcs that flare briefly and taper into calm curves; clean cel color with faint seasonal grain; nested asymmetrical curves that leave the existing scene legible.',
+        'woodblock-print effect trails; bokashi-graded waves and flames; clean digital cel figures; winter blue and amber; nested trail arcs',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with smooth tapered contours crossed by fine patterned strokes, flowing forms with soft edges and delicate ornamental repeats, and winter blue, warm amber, and muted cream; use luminous arcs that flare briefly and taper into calm curves only where movement is already present, and apply clean cel color with faint seasonal grain as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Printed-Wave Effect Trail Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-124',
-    name: 'Blue Lock - Predator-Ego Sports Assault',
-    displayName: 'Predator-Ego Sports Assault',
-    styleAnchors: ['Blue Lock - Predator-Ego Sports Assault'],
+    name: 'Ultramarine Glare Foreshortening',
+    displayName: 'Ultramarine Glare Foreshortening',
+    styleAnchors: ['Ultramarine Glare Foreshortening', 'Blue Lock - Predator-Ego Sports Assault'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named soccer character, team logo, readable numbers, stadium crowd, ball closeup, violent assault, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, soccer kit copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named soccer character, team logo, readable numbers, stadium crowd, ball closeup, violent assault, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from razor-clean contours with crisp ultramarine vectors and nested curves and pointed framing wedges around a focal area. Let taut accelerating curves that converge without implying a new action set its rhythm; use electric blue, ink black, white, and cool cyan for color and clean graphic layers with hard-edged glow for finish.',
+        'Hyper-focused competition anime: razor-clean contours, extreme wide-lens foreshortening, and eyes that trail streaks of ultramarine light while backgrounds dissolve into converging blue vectors.',
       subject_treatment:
-        'Preserve the requested content and framing. Use razor-clean contours with crisp ultramarine vectors for edge work, nested curves and pointed framing wedges around a focal area for form simplification, and taut accelerating curves that converge without implying a new action only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with electric blue, ink black, white, and cool cyan. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Electric ultramarine, ink black, white and cool cyan; skin in cool pale tones.',
       lighting_and_shadow:
-        'Treat lighting graphically: hard blue-white separation with restrained glow. Keep shadows grouped and respect any light direction already requested.',
-      texture_and_material:
-        'Render existing surfaces with clean graphic layers with hard-edged glow, preserving depicted materials and adding no props or effects.',
+        'Hard blue-white rim from behind, cyan underlight on faces, deep blue shadow planes.',
+      texture_and_material: 'Clean vector layers with hard-edged glow bands and no grain.',
       camera_and_composition:
-        'Within the requested camera and crop, use concentric focal hierarchy and compressed visual space within the given crop to organize existing forms; preserve location and action.',
-      atmosphere_and_mood:
-        "Let line weight, spacing, and value convey concentrated visual focus and clear hierarchy, while preserving the prompt's emotional intent.",
+        'Keep the requested framing; exaggerate foreshortening toward the lens and aim concentric wedges at the focal eye.',
+      atmosphere_and_mood: 'Predatory concentration, ego sharpened to a point.',
       rendering_and_quality:
-        'Finish with sharp vector lines, compressed spacing, and bright blue value accents; keep detail selective and accents attached to existing forms.',
+        'Sharp vector lines, glowing eye-light trails, and a background reduced to converging vectors.',
       key_features:
-        'razor-clean contours with crisp ultramarine vectors; nested curves and pointed framing wedges around a focal area; electric blue, ink black, white, and cool cyan; taut accelerating curves that converge without implying a new action; clean graphic layers with hard-edged glow; concentric focal hierarchy and compressed visual space within the given crop.',
+        'ultramarine eye-light trails; extreme wide-lens foreshortening; converging blue vector backgrounds; blue-white rim; hard-edged glow',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with razor-clean contours with crisp ultramarine vectors, nested curves and pointed framing wedges around a focal area, and electric blue, ink black, white, and cool cyan; use taut accelerating curves that converge without implying a new action only where movement is already present, and apply clean graphic layers with hard-edged glow as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ultramarine Glare Foreshortening as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-128',
-    name: 'Bleach: Thousand-Year Blood War - Royal Black Blade Opera',
-    displayName: 'Royal Black Blade Opera',
-    styleAnchors: ['Bleach: Thousand-Year Blood War - Royal Black Blade Opera'],
+    name: 'Inverted Negative Ink Opera',
+    displayName: 'Inverted Negative Ink Opera',
+    styleAnchors: [
+      'Inverted Negative Ink Opera',
+      'Bleach: Thousand-Year Blood War - Royal Black Blade Opera',
+    ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, black hakama with white sash, skull mask, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from broad black brush contours cut by clean white gaps and large folded shapes arranged in formal, broad balance. Let long decisive sweeps followed by stately pauses set its rhythm; use black, ivory, and restrained deep-violet accents for color and solid ink fields with subtle paper grain and almost no soft texture for finish.',
+        'Ceremonial ink anime that flips into photographic negative: broad black brush contours, huge ivory fields, and one region inverted so shadows turn white and highlights black.',
       subject_treatment:
-        'Preserve the requested content and framing. Use broad black brush contours cut by clean white gaps for edge work, large folded shapes arranged in formal, broad balance for form simplification, and long decisive sweeps followed by stately pauses only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with black, ivory, and restrained deep-violet accents. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Black, ivory and deep violet; the inverted region swaps black and white and carries one saturated crimson flash.',
       lighting_and_shadow:
-        'Treat lighting graphically: deep shadow masses with crisp white edge separations. Keep shadows grouped and respect any light direction already requested.',
+        'Stark top light and deep shadow masses cut by crisp white gaps; inside the inverted zone light reads as black.',
       texture_and_material:
-        'Render existing surfaces with solid ink fields with subtle paper grain and almost no soft texture, preserving depicted materials and adding no props or effects.',
+        'Solid ink fields with faint paper grain and dry-brush tails on the longest strokes.',
       camera_and_composition:
-        'Within the requested camera and crop, use formal broad spacing with one strong diagonal and open negative space to organize existing forms; preserve location and action.',
+        'Keep the requested framing; formal, near-symmetric staging with one strong diagonal and wide negative space.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey solemn grandeur and controlled drama, while preserving the prompt's emotional intent.",
+        'Solemn grandeur that turns suddenly cold, stillness broken by one stark flash.',
       rendering_and_quality:
-        'Finish with high-contrast ink masses, clean negative cuts, and restrained color; keep detail selective and accents attached to existing forms.',
+        'Flat masses and clean negative cuts, with the inversion confined to one region or silhouette.',
       key_features:
-        'broad black brush contours cut by clean white gaps; large folded shapes arranged in formal, broad balance; black, ivory, and restrained deep-violet accents; long decisive sweeps followed by stately pauses; solid ink fields with subtle paper grain and almost no soft texture; formal broad spacing with one strong diagonal and open negative space.',
+        'partial photographic-negative inversion; broad black brush contour; ivory negative space; single crimson flash; formal diagonal',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with broad black brush contours cut by clean white gaps, large folded shapes arranged in formal, broad balance, and black, ivory, and restrained deep-violet accents; use long decisive sweeps followed by stately pauses only where movement is already present, and apply solid ink fields with subtle paper grain and almost no soft texture as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Inverted Negative Ink Opera as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-131',
-    name: 'Wind Breaker - Delinquent Street Protector Rush',
-    displayName: 'Delinquent Street Protector Rush',
-    styleAnchors: ['Wind Breaker - Delinquent Street Protector Rush'],
+    name: 'Sky-Blue Low-Angle Brawler Cel',
+    displayName: 'Sky-Blue Low-Angle Brawler Cel',
+    styleAnchors: [
+      'Sky-Blue Low-Angle Brawler Cel',
+      'Wind Breaker - Delinquent Street Protector Rush',
+    ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, numbered gang jacket, bandaged knuckles, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from heavy clean contours with sharp tapered ends and compact angular forms set off by broad dark masses. Let long directional slashes balanced by held pauses set its rhythm; use cool blue-gray and black with one strong warm accent for color and smooth cel fields with little surface grain for finish.',
+        'Street-youth anime: heavy clean contours with sharp tapered ends, low worm-eye angles, and flapping coats against a wide saturated sky with towering white clouds.',
       subject_treatment:
-        'Preserve the requested content and framing. Use heavy clean contours with sharp tapered ends for edge work, compact angular forms set off by broad dark masses for form simplification, and long directional slashes balanced by held pauses only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with cool blue-gray and black with one strong warm accent. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Saturated sky blue, cloud white and black, with one warm vermilion or spring-green accent.',
       lighting_and_shadow:
-        'Treat lighting graphically: hard shadow blocks with a narrow bright edge. Keep shadows grouped and respect any light direction already requested.',
+        'Bright sun behind clouds, figures backlit, hard shadow blocks with a narrow bright edge.',
       texture_and_material:
-        'Render existing surfaces with smooth cel fields with little surface grain, preserving depicted materials and adding no props or effects.',
+        'Smooth cel; cloud edges as crisp scalloped lines, cloth folds as sharp tapered strokes.',
       camera_and_composition:
-        'Within the requested camera and crop, use staggered close spacing and forceful diagonals inside the requested crop to organize existing forms; preserve location and action.',
+        'Keep the requested content; push a low angle and forceful diagonals with sky filling over half the frame.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey brazen confidence and contained restlessness, while preserving the prompt's emotional intent.",
+        'Brazen confidence and protective loyalty, the open sky making every stance feel larger.',
       rendering_and_quality:
-        'Finish with decisive line weight, broad dark values, and sparse directional marks; keep detail selective and accents attached to existing forms.',
+        'Decisive line weight and broad sky, with cloth flutter lines only where wind or motion already exists.',
       key_features:
-        'heavy clean contours with sharp tapered ends; compact angular forms set off by broad dark masses; cool blue-gray and black with one strong warm accent; long directional slashes balanced by held pauses; smooth cel fields with little surface grain; staggered close spacing and forceful diagonals inside the requested crop.',
+        'worm-eye low angle; sky blue and cloud white; tapered contour ends; flapping cloth folds; backlit hard shadows',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with heavy clean contours with sharp tapered ends, compact angular forms set off by broad dark masses, and cool blue-gray and black with one strong warm accent; use long directional slashes balanced by held pauses only where movement is already present, and apply smooth cel fields with little surface grain as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sky-Blue Low-Angle Brawler Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-135',
-    name: 'Undead Unluck - Rule-Breaker Curse Impact',
-    displayName: 'Rule-Breaker Curse Impact',
-    styleAnchors: ['Undead Unluck - Rule-Breaker Curse Impact'],
+    name: 'Broken-Rule Halftone Shatter',
+    displayName: 'Broken-Rule Halftone Shatter',
+    styleAnchors: ['Broken-Rule Halftone Shatter', 'Undead Unluck - Rule-Breaker Curse Impact'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, cracked mirror prop, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from uneven broken contours with irregular angular fragments and asymmetrical masses disrupted by crisp shape breaks. Let sudden directional shifts, clipped marks, and abrupt releases set its rhythm; use black and warm coral with a bright yellow or cobalt accent for color and rough ink, broken halftone, and scattered dry texture for finish.',
+        'Rule-breaking action anime: the picture cracked into angular glass-like shards, each shard shifting color and halftone, with uneven broken contours and abrupt cutout breaks.',
       subject_treatment:
-        'Preserve the requested content and framing. Use uneven broken contours with irregular angular fragments for edge work, asymmetrical masses disrupted by crisp shape breaks for form simplification, and sudden directional shifts, clipped marks, and abrupt releases only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with black and warm coral with a bright yellow or cobalt accent. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Black and warm coral base; individual shards flip to bright yellow or cobalt.',
       lighting_and_shadow:
-        'Treat lighting graphically: hard edge separation with small bright cuts. Keep shadows grouped and respect any light direction already requested.',
+        'Hard edge separation, each shard lit on its own terms with small bright cuts.',
       texture_and_material:
-        'Render existing surfaces with rough ink, broken halftone, and scattered dry texture, preserving depicted materials and adding no props or effects.',
+        'Rough ink, broken halftone dot fields and dry scattered texture in the shard gaps.',
       camera_and_composition:
-        'Within the requested camera and crop, use fractured spacing organized around one clear focal area to organize existing forms; preserve location and action.',
-      atmosphere_and_mood:
-        "Let line weight, spacing, and value convey mischievous disruption and unstable rhythm, while preserving the prompt's emotional intent.",
+        'Keep the requested framing; fracture lines radiate from one focal point and the subject stays readable across the shards.',
+      atmosphere_and_mood: 'Mischief and unstable luck, the rules visibly breaking.',
       rendering_and_quality:
-        'Finish with broken contour, irregular print texture, and a controlled accent palette; keep detail selective and accents attached to existing forms.',
+        'Broken contour, small shard displacement and a tightly controlled accent palette.',
       key_features:
-        'uneven broken contours with irregular angular fragments; asymmetrical masses disrupted by crisp shape breaks; black and warm coral with a bright yellow or cobalt accent; sudden directional shifts, clipped marks, and abrupt releases; rough ink, broken halftone, and scattered dry texture; fractured spacing organized around one clear focal area.',
+        'glass-shard fracture; halftone that changes per shard; coral and black with yellow or cobalt; broken contours; radial fracture focal point',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with uneven broken contours with irregular angular fragments, asymmetrical masses disrupted by crisp shape breaks, and black and warm coral with a bright yellow or cobalt accent; use sudden directional shifts, clipped marks, and abrupt releases only where movement is already present, and apply rough ink, broken halftone, and scattered dry texture as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Broken-Rule Halftone Shatter as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-136',
-    name: 'Black Clover - Grimoire Thunder Squad',
-    displayName: 'Grimoire Thunder Squad',
-    styleAnchors: ['Black Clover - Grimoire Thunder Squad'],
+    name: 'Etched Branch-Lightning Cel',
+    displayName: 'Etched Branch-Lightning Cel',
+    styleAnchors: ['Etched Branch-Lightning Cel', 'Black Clover - Grimoire Thunder Squad'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, five-leaf clover, floating spellbook, bull emblem, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from precise angular outlines with fine ornamental repeats and layered geometric forms and clean branching curves. Let parallel arcs that gather and release in distinct beats set its rhythm; use deep green, black, ivory, and restrained gold for color and polished cel fills with thin etched line details for finish.',
+        'Magic-squad anime: thick spiky contours, fine etched engraving in leather, metal and stone, and energy drawn as jagged branching lightning in black-edged gold.',
       subject_treatment:
-        'Preserve the requested content and framing. Use precise angular outlines with fine ornamental repeats for edge work, layered geometric forms and clean branching curves for form simplification, and parallel arcs that gather and release in distinct beats only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with deep green, black, ivory, and restrained gold. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Deep forest green, black, ivory and restrained gold; lightning gold with black edges.',
       lighting_and_shadow:
-        'Treat lighting graphically: clear cel shadows with selected bright edge accents. Keep shadows grouped and respect any light direction already requested.',
+        'Clear cel shadows with bright edge accents only where lightning passes.',
       texture_and_material:
-        'Render existing surfaces with polished cel fills with thin etched line details, preserving depicted materials and adding no props or effects.',
+        'Polished cel with thin etched engraving lines on hard materials, cloth kept plain.',
       camera_and_composition:
-        'Within the requested camera and crop, use orderly clusters linked by broad diagonals and open gaps to organize existing forms; preserve location and action.',
-      atmosphere_and_mood:
-        "Let line weight, spacing, and value convey upbeat charge held within formal structure, while preserving the prompt's emotional intent.",
+        'Keep the requested framing; orderly clusters linked by broad diagonals, lightning branches framing rather than covering the subject.',
+      atmosphere_and_mood: 'Rowdy determination held inside a formal structure.',
       rendering_and_quality:
-        'Finish with precise linework, green-black contrast, and ornamental detail kept selective; keep detail selective and accents attached to existing forms.',
+        'Precise linework, spiky hair and cloth ends, ornament kept selective.',
       key_features:
-        'precise angular outlines with fine ornamental repeats; layered geometric forms and clean branching curves; deep green, black, ivory, and restrained gold; parallel arcs that gather and release in distinct beats; polished cel fills with thin etched line details; orderly clusters linked by broad diagonals and open gaps.',
+        'black-edged gold lightning branches; etched engraving detail; forest green, black and gold; spiky contour ends; polished cel',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with precise angular outlines with fine ornamental repeats, layered geometric forms and clean branching curves, and deep green, black, ivory, and restrained gold; use parallel arcs that gather and release in distinct beats only where movement is already present, and apply polished cel fills with thin etched line details as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Etched Branch-Lightning Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-138',
-    name: 'Kagurabachi - Sword Oath Under Neon Rain',
-    displayName: 'Sword Oath Under Neon Rain',
-    styleAnchors: ['Kagurabachi - Sword Oath Under Neon Rain'],
+    name: 'Sumi-Black Neon Edge Stillness',
+    displayName: 'Sumi-Black Neon Edge Stillness',
+    styleAnchors: ['Sumi-Black Neon Edge Stillness', 'Kagurabachi - Sword Oath Under Neon Rain'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, goldfish spirits, katana near-plane, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from severe dark brush contours with clean, abrupt tapers and sharp graphic forms separated by broad negative space. Let short straight strokes and broken vertical highlight lines set its rhythm; use deep indigo and black with restrained neon cyan and magenta for color and smooth dark fields with thin reflective marks and sparse grain for finish.',
+        'Cinematic ink anime: severe dry sumi-brush blacks, long still holds, and a single thin neon edge of magenta or cyan on otherwise matte darkness.',
       subject_treatment:
-        'Preserve the requested content and framing. Use severe dark brush contours with clean, abrupt tapers for edge work, sharp graphic forms separated by broad negative space for form simplification, and short straight strokes and broken vertical highlight lines only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with deep indigo and black with restrained neon cyan and magenta. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Deep indigo, ink black and bone white, with one neon magenta or cyan edge line.',
       lighting_and_shadow:
-        'Treat lighting graphically: hard neon edge accents against broad matte shadow masses. Keep shadows grouped and respect any light direction already requested.',
+        'Low hard light from one side, broad matte shadow masses, the neon edge on a single contour only.',
       texture_and_material:
-        'Render existing surfaces with smooth dark fields with thin reflective marks and sparse grain, preserving depicted materials and adding no props or effects.',
+        'Dry brush grain at contour tails, matte dark fields and sparse speck grain.',
       camera_and_composition:
-        'Within the requested camera and crop, use off-axis balance with a strong diagonal and deliberate empty space to organize existing forms; preserve location and action.',
+        'Keep the requested content; organize it in wide horizontal bands like a cinema frame, with deliberate empty space and one strong diagonal.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey quiet resolve under visual tension, while preserving the prompt's emotional intent.",
+        'Quiet grief hardening into resolve, long silences held before a single decisive edge.',
       rendering_and_quality:
-        'Finish with precise dark contour, neon edge color, and controlled reflective marks; keep detail selective and accents attached to existing forms.',
+        'Precise dark contour, minimal detail, and exactly one neon edge in the frame.',
       key_features:
-        'severe dark brush contours with clean, abrupt tapers; sharp graphic forms separated by broad negative space; deep indigo and black with restrained neon cyan and magenta; short straight strokes and broken vertical highlight lines; smooth dark fields with thin reflective marks and sparse grain; off-axis balance with a strong diagonal and deliberate empty space.',
+        'severe sumi-brush black; single neon edge line; wide horizontal banding; long still hold; matte indigo darks',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with severe dark brush contours with clean, abrupt tapers, sharp graphic forms separated by broad negative space, and deep indigo and black with restrained neon cyan and magenta; use short straight strokes and broken vertical highlight lines only where movement is already present, and apply smooth dark fields with thin reflective marks and sparse grain as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sumi-Black Neon Edge Stillness as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-139',
-    name: 'Attack on Titan - Wall Rupture Desperation',
-    displayName: 'Wall Rupture Desperation',
-    styleAnchors: ['Attack on Titan - Wall Rupture Desperation'],
+    name: 'Crosshatched Giant-Scale Panic',
+    displayName: 'Crosshatched Giant-Scale Panic',
+    styleAnchors: ['Crosshatched Giant-Scale Panic', 'Attack on Titan - Wall Rupture Desperation'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, exposed-muscle giant, gore, eaten body, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from coarse angular contours supported by dense crosshatching and large forms reduced to stacked vertical masses and small scale cues. Let broken upward sweeps and abrupt directional turns set its rhythm; use muted olive, stone gray, and dark brown with a pale accent for color and dry hatch texture, light abrasion, and broad matte value planes for finish.',
+        'Horror-scale action translated to color anime: coarse dense crosshatching, grimacing faces, and enormous forms looming over tiny figures, with dust and steam drawn as layered hatch masses.',
       subject_treatment:
-        'Preserve the requested content and framing. Use coarse angular contours supported by dense crosshatching for edge work, large forms reduced to stacked vertical masses and small scale cues for form simplification, and broken upward sweeps and abrupt directional turns only where movement is already requested.',
-      color_and_tone:
-        'Build value groups with muted olive, stone gray, and dark brown with a pale accent. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+      color_and_tone: 'Muted olive, stone grey and dried brown with a pale sickly flesh accent.',
       lighting_and_shadow:
-        'Treat lighting graphically: hazy value gradations cut by hard silhouette shadows. Keep shadows grouped and respect any light direction already requested.',
+        'Hazy backlight through dust, hard silhouette shadows, faces half buried in hatching.',
       texture_and_material:
-        'Render existing surfaces with dry hatch texture, light abrasion, and broad matte value planes, preserving depicted materials and adding no props or effects.',
+        'Dry pen crosshatch in every shadow, abrasion on stone, plumes built as hatched volumes.',
       camera_and_composition:
-        'Within the requested camera and crop, use vertical scale contrast and compressed depth bands within the supplied framing to organize existing forms; preserve location and action.',
+        'Keep the requested framing; exaggerate scale with tiny foreground figures and a vast form overhead in compressed depth bands.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey bleak urgency and strained endurance, while preserving the prompt's emotional intent.",
+        'Bleak urgency and helpless awe, tiny figures dwarfed by something far too large.',
       rendering_and_quality:
-        'Finish with crosshatched shadow, compressed scale, and clear silhouettes without microtexture; keep detail selective and accents attached to existing forms.',
+        'Crosshatched shadows and clear silhouettes, dread through scale rather than gore.',
       key_features:
-        'coarse angular contours supported by dense crosshatching; large forms reduced to stacked vertical masses and small scale cues; muted olive, stone gray, and dark brown with a pale accent; broken upward sweeps and abrupt directional turns; dry hatch texture, light abrasion, and broad matte value planes; vertical scale contrast and compressed depth bands within the supplied framing.',
+        'coarse dense crosshatching; extreme scale contrast; hatched dust plumes; olive and stone palette; grimacing faces',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with coarse angular contours supported by dense crosshatching, large forms reduced to stacked vertical masses and small scale cues, and muted olive, stone gray, and dark brown with a pale accent; use broken upward sweeps and abrupt directional turns only where movement is already present, and apply dry hatch texture, light abrasion, and broad matte value planes as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crosshatched Giant-Scale Panic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-140',
-    name: 'Frieren Combat Flashback - Ancient Calm Spell Impact',
-    displayName: 'Ancient Calm Spell Impact',
-    styleAnchors: ['Frieren Combat Flashback - Ancient Calm Spell Impact'],
+    name: 'Pale Calm Spell Geometry',
+    displayName: 'Pale Calm Spell Geometry',
+    styleAnchors: [
+      'Pale Calm Spell Geometry',
+      'Frieren Combat Flashback - Ancient Calm Spell Impact',
+    ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, battle blast, staff hero pose, weapon, readable magic circle, party lineup, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, pointed ears with white twin tails, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, battle blast, staff hero pose, weapon, readable magic circle, party lineup, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from fine precise outlines with carefully measured internal strokes and soft broad forms crossed by exact geometric accents. Let short precise arcs held within broad quiet intervals set its rhythm; use pale cyan, soft neutrals, and restrained cool shadow for color and smooth matte color with fine line detail and little grain for finish.',
+        'Quiet fantasy anime: fine exact outlines, pale matte color, and magic drawn as thin concentric rings and polygons of light, precise and unhurried.',
       subject_treatment:
-        'Preserve the requested content and framing. Use fine precise outlines with carefully measured internal strokes for edge work, soft broad forms crossed by exact geometric accents for form simplification, and short precise arcs held within broad quiet intervals only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with pale cyan, soft neutrals, and restrained cool shadow. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Pale cyan, parchment, lavender-grey and soft sage, with restrained cool shadow.',
       lighting_and_shadow:
-        'Treat lighting graphically: soft value transitions with a few clean bright edges. Keep shadows grouped and respect any light direction already requested.',
-      texture_and_material:
-        'Render existing surfaces with smooth matte color with fine line detail and little grain, preserving depicted materials and adding no props or effects.',
+        'Soft diffuse daylight, gentle value transitions, a few clean bright edges on the rings.',
+      texture_and_material: 'Smooth matte color, fine line detail and very little grain.',
       camera_and_composition:
-        'Within the requested camera and crop, use open spacing around precise focal geometry, respecting the existing crop to organize existing forms; preserve location and action.',
+        'Keep the requested framing; open spacing with generous sky or floor around precise focal geometry.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey understated authority and reflective calm, while preserving the prompt's emotional intent.",
+        'Understated authority and reflective calm, power shown without strain or noise.',
       rendering_and_quality:
-        'Finish with quiet palette, exact contours, and restrained detail density; keep detail selective and accents attached to existing forms.',
+        'Exact contours and a quiet palette, geometry lines thin and legible with no glyphs.',
       key_features:
-        'fine precise outlines with carefully measured internal strokes; soft broad forms crossed by exact geometric accents; pale cyan, soft neutrals, and restrained cool shadow; short precise arcs held within broad quiet intervals; smooth matte color with fine line detail and little grain; open spacing around precise focal geometry, respecting the existing crop.',
+        'concentric geometric light rings; pale cyan and parchment; fine exact outline; open quiet spacing; soft diffuse light',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with fine precise outlines with carefully measured internal strokes, soft broad forms crossed by exact geometric accents, and pale cyan, soft neutrals, and restrained cool shadow; use short precise arcs held within broad quiet intervals only where movement is already present, and apply smooth matte color with fine line detail and little grain as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pale Calm Spell Geometry as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -504,90 +508,91 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Impact Frame Comedy Hero'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, bald caped hero likeness, yellow suit, red gloves, punch contact, gore, destroyed city panorama, franchise face, dense forest, noisy rubble storm, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, bald caped hero likeness, yellow suit, red gloves, punch contact, gore, destroyed city panorama, franchise face, dense forest, noisy rubble storm, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from sparse crisp outlines that gain weight on emphasis beats and simple forms staged against open fields, radial outlines, and graphic fragments. Let long restraint followed by a brief, disproportionate punctuation set its rhythm; use mostly black and white with muted color and one bright warm accent for color and smooth cel fills and clean untouched negative space for finish.',
+        'Comedy action anime built on the impact frame: calm simple cel shots where one moment snaps to high-contrast black, white and red with thick radial wedges and a jagged silhouette.',
       subject_treatment:
-        'Preserve the requested content and framing. Use sparse crisp outlines that gain weight on emphasis beats for edge work, simple forms staged against open fields, radial outlines, and graphic fragments for form simplification, and long restraint followed by a brief, disproportionate punctuation only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with mostly black and white with muted color and one bright warm accent. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Muted soft cel color for the calm part; the impact zone in black, white and signal red with a yellow spark.',
       lighting_and_shadow:
-        'Treat lighting graphically: clean silhouette separation with exaggerated light-dark contrast. Keep shadows grouped and respect any light direction already requested.',
+        'Flat even light, then hard inverted light with pure black shadows inside the impact zone.',
       texture_and_material:
-        'Render existing surfaces with smooth cel fills and clean untouched negative space, preserving depicted materials and adding no props or effects.',
+        'Clean cel fills, impact lines as thick tapered wedges, untouched negative space.',
       camera_and_composition:
-        'Within the requested camera and crop, use a simple focal stage with broad empty areas and oversized graphic punctuation to organize existing forms; preserve location and action.',
-      atmosphere_and_mood:
-        "Let line weight, spacing, and value convey dry deadpan humor and gentle absurdity, while preserving the prompt's emotional intent.",
+        'Keep the requested framing; a broad empty stage with oversized radial punctuation centered on one small detail.',
+      atmosphere_and_mood: 'Deadpan timing and an absurdly oversized reaction.',
       rendering_and_quality:
-        'Finish with simple legible shapes, precise timing, and minimal background detail; keep detail selective and accents attached to existing forms.',
+        'Deliberate disproportion between a trivial action and a huge impact graphic.',
       key_features:
-        'sparse crisp outlines that gain weight on emphasis beats; simple forms staged against open fields, radial outlines, and graphic fragments; mostly black and white with muted color and one bright warm accent; long restraint followed by a brief, disproportionate punctuation; smooth cel fills and clean untouched negative space; a simple focal stage with broad empty areas and oversized graphic punctuation.',
+        'single impact frame zone; black, white and signal red; thick radial wedges; muted calm cel; broad empty stage',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with sparse crisp outlines that gain weight on emphasis beats, simple forms staged against open fields, radial outlines, and graphic fragments, and mostly black and white with muted color and one bright warm accent; use long restraint followed by a brief, disproportionate punctuation only where movement is already present, and apply smooth cel fills and clean untouched negative space as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Impact Frame Comedy Hero as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-129',
-    name: 'One-Punch Man - Prestige Hero Impact Satire',
-    displayName: 'Prestige Hero Impact Satire',
-    styleAnchors: ['One-Punch Man - Prestige Hero Impact Satire'],
+    name: 'Dual-Detail Deadpan Satire',
+    displayName: 'Dual-Detail Deadpan Satire',
+    styleAnchors: ['Dual-Detail Deadpan Satire', 'One-Punch Man - Prestige Hero Impact Satire'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, bald hero copy, fist near-plane, city destruction gore, weapon, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, bald caped hero, yellow jumpsuit, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, bald hero copy, fist near-plane, city destruction gore, weapon, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from polished high-contrast contours with very little interior line and blunt simplified forms set against flat reaction spaces. Let a quiet hold followed by clear graphic emphasis set its rhythm; use saturated warm and cool accents on clean black-white values for color and smooth cel fills with minimal surface texture for finish.',
+        'Satirical hero anime with split detail levels: the main figure drawn in minimal round lines with dot eyes, everything around it rendered in dense, polished detail.',
       subject_treatment:
-        'Preserve the requested content and framing. Use polished high-contrast contours with very little interior line for edge work, blunt simplified forms set against flat reaction spaces for form simplification, and a quiet hold followed by clear graphic emphasis only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with saturated warm and cool accents on clean black-white values. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Clean black-white values with saturated warm and cool accents; the simple figure in flat pale colors.',
       lighting_and_shadow:
-        'Treat lighting graphically: simple hard shadows and polished highlight edges. Keep shadows grouped and respect any light direction already requested.',
+        'Dramatic hard lighting and polished highlights on the detailed parts; the simple figure lit flat.',
       texture_and_material:
-        'Render existing surfaces with smooth cel fills with minimal surface texture, preserving depicted materials and adding no props or effects.',
+        'Smooth cel fills; detailed zones with fine hatching, muscle, scale and stone detail.',
       camera_and_composition:
-        'Within the requested camera and crop, use absurd scale contrast, broad quiet space, and precise focal placement to organize existing forms; preserve location and action.',
+        'Keep the requested framing; absurd scale contrast with the simple figure placed precisely in broad quiet space.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey deadpan grandeur and understated satire, while preserving the prompt's emotional intent.",
+        'Deadpan grandeur and understated satire, the plain figure unimpressed by an epic world.',
       rendering_and_quality:
-        'Finish with clean cel polish, flat reaction space, and scale carried by contrast; keep detail selective and accents attached to existing forms.',
+        'The detail gap is the joke: one plain figure against a lavishly finished world.',
       key_features:
-        'polished high-contrast contours with very little interior line; blunt simplified forms set against flat reaction spaces; saturated warm and cool accents on clean black-white values; a quiet hold followed by clear graphic emphasis; smooth cel fills with minimal surface texture; absurd scale contrast, broad quiet space, and precise focal placement.',
+        'minimal dot-eyed main figure; hyper-detailed surroundings; polished hard lighting; flat pale figure fill; absurd scale contrast',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with polished high-contrast contours with very little interior line, blunt simplified forms set against flat reaction spaces, and saturated warm and cool accents on clean black-white values; use a quiet hold followed by clear graphic emphasis only where movement is already present, and apply smooth cel fills with minimal surface texture as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dual-Detail Deadpan Satire as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-132',
-    name: 'Solo Leveling - Shadow Monarch Raid Ascension',
-    displayName: 'Shadow Monarch Raid Ascension',
-    styleAnchors: ['Solo Leveling - Shadow Monarch Raid Ascension'],
+    name: 'Full-Color Manhwa Shadow Glow',
+    displayName: 'Full-Color Manhwa Shadow Glow',
+    styleAnchors: [
+      'Full-Color Manhwa Shadow Glow',
+      'Solo Leveling - Shadow Monarch Raid Ascension',
+    ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, shadow soldier army lineup, hooded black hunter coat, status window UI, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from narrow dark contours with selective cold edge light and vertical forms rising through deep layered shadow blocks. Let narrow vertical sweeps punctuated by short bright accents set its rhythm; use black and indigo with cold cyan highlights for color and smooth shadow gradients with crisp luminous edges for finish.',
+        'Full-color vertical webcomic action: smooth airbrushed digital painting, narrow dark contours, deep black-violet shadows, glowing cyan eyes and smoky shadow silhouettes rising from the ground.',
       subject_treatment:
-        'Preserve the requested content and framing. Use narrow dark contours with selective cold edge light for edge work, vertical forms rising through deep layered shadow blocks for form simplification, and narrow vertical sweeps punctuated by short bright accents only where movement is already requested.',
-      color_and_tone:
-        'Build value groups with black and indigo with cold cyan highlights. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+      color_and_tone: 'Black, indigo and violet with cold cyan highlights; skin cool and pale.',
       lighting_and_shadow:
-        'Treat lighting graphically: deep value falloff with restrained cool rims. Keep shadows grouped and respect any light direction already requested.',
+        'Deep value falloff and restrained cool rims; glow confined to eyes and a few edges.',
       texture_and_material:
-        'Render existing surfaces with smooth shadow gradients with crisp luminous edges, preserving depicted materials and adding no props or effects.',
+        'Soft airbrushed gradients, smoke as feathered wisps, crisp luminous edges.',
       camera_and_composition:
-        'Within the requested camera and crop, use tall stacked planes and strong vertical scale within the existing frame to organize existing forms; preserve location and action.',
+        'Keep the requested framing; tall stacked planes and strong vertical scale suited to scroll reading.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey quiet awe and controlled intensity, while preserving the prompt's emotional intent.",
+        'Quiet awe and rising dominance, darkness gathering upward toward a cold glow.',
       rendering_and_quality:
-        'Finish with dark tonal depth, thin cyan edges, and a clear vertical hierarchy; keep detail selective and accents attached to existing forms.',
+        'Glossy digital finish with dark tonal depth and thin cyan edges, no panel borders.',
       key_features:
-        'narrow dark contours with selective cold edge light; vertical forms rising through deep layered shadow blocks; black and indigo with cold cyan highlights; narrow vertical sweeps punctuated by short bright accents; smooth shadow gradients with crisp luminous edges; tall stacked planes and strong vertical scale within the existing frame.',
+        'airbrushed digital painting; glowing cyan eyes; smoky shadow silhouettes; black and violet palette; tall vertical staging',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with narrow dark contours with selective cold edge light, vertical forms rising through deep layered shadow blocks, and black and indigo with cold cyan highlights; use narrow vertical sweeps punctuated by short bright accents only where movement is already present, and apply smooth shadow gradients with crisp luminous edges as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Full-Color Manhwa Shadow Glow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -597,152 +602,147 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Blade Field Urban Fantasy'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, sword field, blade rain, red-cloaked archer likeness, servant duel, holy-grail iconography, weapon-first composition, franchise face, dense forest, ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, sword field, blade rain, red-cloaked archer likeness, servant duel, holy-grail iconography, weapon-first composition, franchise face, dense forest, ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from fine formal outlines with repeated luminous tracings and nested curved bands, folded planes, and recurring abstract motifs. Let concentric ripples and gently folding curves set its rhythm; use nocturnal navy and ivory with restrained cyan or gold accents for color and clean matte fields with thin luminous line accents for finish.',
+        'Composited digital-effects anime: crisp cel characters layered over richly lit, near-photographic painted backgrounds with volumetric light shafts, drifting embers and shallow depth-of-field blur.',
       subject_treatment:
-        'Preserve the requested content and framing. Use fine formal outlines with repeated luminous tracings for edge work, nested curved bands, folded planes, and recurring abstract motifs for form simplification, and concentric ripples and gently folding curves only where movement is already requested.',
-      color_and_tone:
-        'Build value groups with nocturnal navy and ivory with restrained cyan or gold accents. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+      color_and_tone: 'Nocturnal navy and ivory with glowing cyan or gold particle accents.',
       lighting_and_shadow:
-        'Treat lighting graphically: controlled edge glow against firm, dark shadow shapes. Keep shadows grouped and respect any light direction already requested.',
+        'Motivated volumetric beams, bloom around light sources, a controlled rim on characters.',
       texture_and_material:
-        'Render existing surfaces with clean matte fields with thin luminous line accents, preserving depicted materials and adding no props or effects.',
+        'Clean cel on figures, finely detailed painted backgrounds, particles soft and round.',
       camera_and_composition:
-        'Within the requested camera and crop, use balanced symbolic spacing within the requested crop, with room around the focus to organize existing forms; preserve location and action.',
-      atmosphere_and_mood:
-        "Let line weight, spacing, and value convey calm formality with subtle tension, while preserving the prompt's emotional intent.",
+        'Keep the requested framing; lens-like depth with blurred foreground elements, sharp midground and bokeh in the distance.',
+      atmosphere_and_mood: 'Calm formality in the moment before a storm.',
       rendering_and_quality:
-        'Finish with precise linework, measured repetition, and glow kept tightly controlled; keep detail selective and accents attached to existing forms.',
+        'Tight compositing: sharp cel edges, soft volumetric light, particles and bloom kept in check.',
       key_features:
-        'fine formal outlines with repeated luminous tracings; nested curved bands, folded planes, and recurring abstract motifs; nocturnal navy and ivory with restrained cyan or gold accents; concentric ripples and gently folding curves; clean matte fields with thin luminous line accents; balanced symbolic spacing within the requested crop, with room around the focus.',
+        'cel figures over detailed painted backgrounds; volumetric light shafts; drifting embers and bokeh; navy and ivory; shallow depth of field',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with fine formal outlines with repeated luminous tracings, nested curved bands, folded planes, and recurring abstract motifs, and nocturnal navy and ivory with restrained cyan or gold accents; use concentric ripples and gently folding curves only where movement is already present, and apply clean matte fields with thin luminous line accents as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blade Field Urban Fantasy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-123',
-    name: 'Fire Force - Cathedral Inferno Brigade',
-    displayName: 'Cathedral Inferno Brigade',
-    styleAnchors: ['Fire Force - Cathedral Inferno Brigade'],
+    name: 'White-Core Flame Halo Cel',
+    displayName: 'White-Core Flame Halo Cel',
+    styleAnchors: ['White-Core Flame Halo Cel', 'Fire Force - Cathedral Inferno Brigade'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, famous uniform copy, no required chapel interior, no icon copy, no injury scene, no readable insignia, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, reflective-striped bunker gear, sharp-toothed grin, nun prayer pose, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, famous uniform copy, no required chapel interior, no icon copy, no injury scene, no readable insignia, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from strong dark contours paired with measured ornamental lines and radiating rings, sharp triangular cuts, and compact graphic masses. Let rising spirals paired with short straight cuts set its rhythm; use charcoal and ivory with bright orange, scarlet, and warm yellow for color and dense flat color with limited speckle and painted accent marks for finish.',
+        'Fire-brigade anime: flames drawn as flat stylized tongues with a hard white-hot core, orange body and scarlet edge, set in radiating halo rings over strong dark contours and film grain.',
       subject_treatment:
-        'Preserve the requested content and framing. Use strong dark contours paired with measured ornamental lines for edge work, radiating rings, sharp triangular cuts, and compact graphic masses for form simplification, and rising spirals paired with short straight cuts only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with charcoal and ivory with bright orange, scarlet, and warm yellow. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Charcoal and ivory with bright orange, scarlet and warm yellow; every flame core pure white.',
       lighting_and_shadow:
-        'Treat lighting graphically: bright warm accents against decisive silhouette shadows. Keep shadows grouped and respect any light direction already requested.',
-      texture_and_material:
-        'Render existing surfaces with dense flat color with limited speckle and painted accent marks, preserving depicted materials and adding no props or effects.',
+        'Fire as the primary source: warm uplight, decisive silhouette shadows, subtle light-leak bloom.',
+      texture_and_material: 'Dense flat color, light speckle grain and painted spark flecks.',
       camera_and_composition:
-        'Within the requested camera and crop, use centered graphic pressure with broad negative space, fitted to the requested frame to organize existing forms; preserve location and action.',
+        'Keep the requested framing; concentric halo rings centered on the focal area with broad negative space.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey formal energy held in order, while preserving the prompt's emotional intent.",
+        'Fervent, almost liturgical heat, fire treated as ritual rather than disaster.',
       rendering_and_quality:
-        'Finish with strong silhouette cuts, limited warm bloom, and carefully placed geometry; keep detail selective and accents attached to existing forms.',
+        'Strong silhouette cuts, limited warm bloom and carefully placed ring geometry.',
       key_features:
-        'strong dark contours paired with measured ornamental lines; radiating rings, sharp triangular cuts, and compact graphic masses; charcoal and ivory with bright orange, scarlet, and warm yellow; rising spirals paired with short straight cuts; dense flat color with limited speckle and painted accent marks; centered graphic pressure with broad negative space, fitted to the requested frame.',
+        'white-hot flame cores; flat stylized flame tongues; radiating halo rings; charcoal and orange palette; light-leak film grain',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with strong dark contours paired with measured ornamental lines, radiating rings, sharp triangular cuts, and compact graphic masses, and charcoal and ivory with bright orange, scarlet, and warm yellow; use rising spirals paired with short straight cuts only where movement is already present, and apply dense flat color with limited speckle and painted accent marks as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies White-Core Flame Halo Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-125',
-    name: 'Kaiju No. 8 - Civic Monster Response Unit',
-    displayName: 'Civic Monster Response Unit',
-    styleAnchors: ['Kaiju No. 8 - Civic Monster Response Unit'],
+    name: 'Hazard-Orange Monster Response Cel',
+    displayName: 'Hazard-Orange Monster Response Cel',
+    styleAnchors: [
+      'Hazard-Orange Monster Response Cel',
+      'Kaiju No. 8 - Civic Monster Response Unit',
+    ],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, famous creature copy, no monster face closeup, no armed squad, no readable signage, no destruction aftermath, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, numbered defense suit, glowing monster core, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, famous creature copy, no monster face closeup, no armed squad, no readable signage, no destruction aftermath, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from sturdy dark contours with precise grid-like ticks and existing shapes organized into broad size intervals. Let measured sweeping curves and orderly directional lines set its rhythm; use high-visibility yellow, warm orange, deep blue-gray, and pale neutral for color and matte color blocks with fine grain limited to dark areas for finish.',
+        'Civic-defense anime: sturdy dark contours, clean machine-precise vehicles and equipment in high-visibility orange and yellow, and scale measured by grid-like tick marks on structures.',
       subject_treatment:
-        'Preserve the requested content and framing. Use sturdy dark contours with precise grid-like ticks for edge work, existing shapes organized into broad size intervals for form simplification, and measured sweeping curves and orderly directional lines only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with high-visibility yellow, warm orange, deep blue-gray, and pale neutral. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
-      lighting_and_shadow:
-        'Treat lighting graphically: even pale highlights and clearly separated shadow shapes. Keep shadows grouped and respect any light direction already requested.',
+        'High-visibility yellow and warm orange against deep blue-grey and pale neutral.',
+      lighting_and_shadow: 'Even daylight, pale highlights and clearly separated shadow shapes.',
       texture_and_material:
-        'Render existing surfaces with matte color blocks with fine grain limited to dark areas, preserving depicted materials and adding no props or effects.',
+        'Matte color blocks, panel seams and rivets, fine grain only in the darks.',
       camera_and_composition:
-        'Within the requested camera and crop, use abstract grid intervals that clarify scale among existing forms without prescribing a location to organize existing forms; preserve location and action.',
-      atmosphere_and_mood:
-        "Let line weight, spacing, and value convey measured resilience and visual steadiness, while preserving the prompt's emotional intent.",
+        'Keep the requested framing; wide clean frames with grid intervals that make scale measurable.',
+      atmosphere_and_mood: 'Measured resilience and calm procedure under threat.',
       rendering_and_quality:
-        'Finish with stable silhouettes, measured scale marks, and controlled color blocks; keep detail selective and accents attached to existing forms.',
+        'Stable silhouettes, crisp machine edges and controlled color blocks without chaos.',
       key_features:
-        'sturdy dark contours with precise grid-like ticks; existing shapes organized into broad size intervals; high-visibility yellow, warm orange, deep blue-gray, and pale neutral; measured sweeping curves and orderly directional lines; matte color blocks with fine grain limited to dark areas; abstract grid intervals that clarify scale among existing forms without prescribing a location.',
+        'hi-vis orange and yellow equipment; grid tick scale marks; sturdy dark contour; matte blue-grey; wide procedural framing',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with sturdy dark contours with precise grid-like ticks, existing shapes organized into broad size intervals, and high-visibility yellow, warm orange, deep blue-gray, and pale neutral; use measured sweeping curves and orderly directional lines only where movement is already present, and apply matte color blocks with fine grain limited to dark areas as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hazard-Orange Monster Response Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-126',
-    name: 'Dandadan - Paranormal Turbo Romance Brawl',
-    displayName: 'Paranormal Turbo Romance Brawl',
-    styleAnchors: ['Dandadan - Paranormal Turbo Romance Brawl'],
+    name: 'Acid Occult Color-Burst Smear',
+    displayName: 'Acid Occult Color-Burst Smear',
+    styleAnchors: ['Acid Occult Color-Burst Smear', 'Dandadan - Paranormal Turbo Romance Brawl'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, famous duo copy, no readable glyphs, no school corridor, no creature attack, no crude joke, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, grey alien head, ghost grandmother, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, famous duo copy, no readable glyphs, no school corridor, no creature attack, no crude joke, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from elastic bright contours with doubled reaction marks and rounded wavering forms offset by sharp comic accents. Let loops, snaps, and recoil arcs attached to existing gestures set its rhythm; use teal, hot pink, and lime in small bursts against dark ink for color and clean cel fills with faintly mottled translucent color regions for finish.',
+        'Paranormal comedy anime: elastic bright contours, doubled reaction lines, and sudden palette flips into acid teal, hot pink and lime, with fluid smear frames melting shapes during fast motion.',
       subject_treatment:
-        'Preserve the requested content and framing. Use elastic bright contours with doubled reaction marks for edge work, rounded wavering forms offset by sharp comic accents for form simplification, and loops, snaps, and recoil arcs attached to existing gestures only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with teal, hot pink, and lime in small bursts against dark ink. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
-      lighting_and_shadow:
-        'Treat lighting graphically: opposed bright accents and sharp shadow cuts without a literal glow source. Keep shadows grouped and respect any light direction already requested.',
+        'Dark ink ground with teal, hot pink and lime bursts; the palette flips only inside the effect zone.',
+      lighting_and_shadow: 'Opposed bright accents and sharp shadow cuts, no literal glow source.',
       texture_and_material:
-        'Render existing surfaces with clean cel fills with faintly mottled translucent color regions, preserving depicted materials and adding no props or effects.',
+        'Clean cel with mottled translucent color regions; smears as streaked, melted shapes.',
       camera_and_composition:
-        'Within the requested camera and crop, use contrasting color rhythms gathered around the focal area with room to breathe to organize existing forms; preserve location and action.',
+        'Keep the requested framing; gather contrasting color rhythms around the focal area and leave room to breathe.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey buoyant surprise and warm, quick shifts, while preserving the prompt's emotional intent.",
-      rendering_and_quality:
-        'Finish with flexible contour, vivid color collision, and controlled graphic marks; keep detail selective and accents attached to existing forms.',
+        'Buoyant surprise and romance-tinged chaos, color flipping with every startled beat.',
+      rendering_and_quality: 'Flexible contour, vivid color collision and controlled smear marks.',
       key_features:
-        'elastic bright contours with doubled reaction marks; rounded wavering forms offset by sharp comic accents; teal, hot pink, and lime in small bursts against dark ink; loops, snaps, and recoil arcs attached to existing gestures; clean cel fills with faintly mottled translucent color regions; contrasting color rhythms gathered around the focal area with room to breathe.',
+        'acid teal, hot pink and lime; melting smear frames; doubled reaction lines; elastic contour; palette flips',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with elastic bright contours with doubled reaction marks, rounded wavering forms offset by sharp comic accents, and teal, hot pink, and lime in small bursts against dark ink; use loops, snaps, and recoil arcs attached to existing gestures only where movement is already present, and apply clean cel fills with faintly mottled translucent color regions as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Acid Occult Color-Burst Smear as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-127',
-    name: "Hell's Paradise - Poison Garden Executioner",
-    displayName: 'Poison Garden Executioner',
-    styleAnchors: ["Hell's Paradise - Poison Garden Executioner"],
+    name: 'Toxic Flower Etched Ink',
+    displayName: 'Toxic Flower Etched Ink',
+    styleAnchors: ['Toxic Flower Etched Ink', "Hell's Paradise - Poison Garden Executioner"],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, white-robed shaved-head executioner, lotus-faced statue, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from fine etched contours with occasional acute angular turns and ornamental asymmetrical forms broken by compact angular shapes. Let slow interlacing curves interrupted by crisp directional marks set its rhythm; use muted jade, chalk, and dark wine accents for color and dry ink grain with fine crosshatching in selected shadow areas for finish.',
+        'Garden-horror anime: fine etched contours, lush ornamental flowers and vines in poison pastels, broken by compact angular shapes and dry crosshatch in the shadows.',
       subject_treatment:
-        'Preserve the requested content and framing. Use fine etched contours with occasional acute angular turns for edge work, ornamental asymmetrical forms broken by compact angular shapes for form simplification, and slow interlacing curves interrupted by crisp directional marks only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with muted jade, chalk, and dark wine accents. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
-      lighting_and_shadow:
-        'Treat lighting graphically: low-key shadow fields interrupted by small pale highlights. Keep shadows grouped and respect any light direction already requested.',
+        'Muted jade, chalk and dark wine, with poison-pastel petals of lilac and coral.',
+      lighting_and_shadow: 'Low-key shadow fields, dappled small pale highlights under foliage.',
       texture_and_material:
-        'Render existing surfaces with dry ink grain with fine crosshatching in selected shadow areas, preserving depicted materials and adding no props or effects.',
+        'Dry ink grain with fine crosshatching in selected shadows; petals smooth and waxy.',
       camera_and_composition:
-        'Within the requested camera and crop, use layered shallow spacing with a clear focal path and no prescribed setting to organize existing forms; preserve location and action.',
+        'Keep the requested framing; layered shallow planes of foliage frame a clear focal path.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey ornate restraint with a watchful edge, while preserving the prompt's emotional intent.",
+        'Beautiful menace, ornate and watchful, lovely petals hiding a quiet threat.',
       rendering_and_quality:
-        'Finish with fine etched detail, quiet dark values, and carefully limited accents; keep detail selective and accents attached to existing forms.',
+        'Fine etched detail, quiet dark values and carefully limited pastel accents.',
       key_features:
-        'fine etched contours with occasional acute angular turns; ornamental asymmetrical forms broken by compact angular shapes; muted jade, chalk, and dark wine accents; slow interlacing curves interrupted by crisp directional marks; dry ink grain with fine crosshatching in selected shadow areas; layered shallow spacing with a clear focal path and no prescribed setting.',
+        'fine etched contour; poison-pastel flowers; jade, chalk and wine; dry crosshatch shadows; foliage framing planes',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with fine etched contours with occasional acute angular turns, ornamental asymmetrical forms broken by compact angular shapes, and muted jade, chalk, and dark wine accents; use slow interlacing curves interrupted by crisp directional marks only where movement is already present, and apply dry ink grain with fine crosshatching in selected shadow areas as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Toxic Flower Etched Ink as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -752,90 +752,85 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Psychedelic Psychic Minimalism'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, bowl-cut psychic boy likeness, school uniform copy, city-destruction scene, readable symbols, gore, franchise face, dense distant-plane, over-rendered particle field, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, bowl-cut psychic boy likeness, school uniform copy, city-destruction scene, readable symbols, gore, franchise face, dense distant-plane, over-rendered particle field, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from lightly layered sketch contours with visible searching strokes and plain, uncomplicated forms with a few warped peripheral shapes. Let subtle wavering interrupted by isolated looping marks set its rhythm; use airy pastels with a small acid yellow-green accent for color and pencil-like grain under irregular, translucent color washes for finish.',
+        'Minimal psychic anime: plain forms drawn with lightly layered searching pencil contours in wide blank space, with a few peripheral shapes subtly warped as if bent by pressure.',
       subject_treatment:
-        'Preserve the requested content and framing. Use lightly layered sketch contours with visible searching strokes for edge work, plain, uncomplicated forms with a few warped peripheral shapes for form simplification, and subtle wavering interrupted by isolated looping marks only where movement is already requested.',
-      color_and_tone:
-        'Build value groups with airy pastels with a small acid yellow-green accent. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
-      lighting_and_shadow:
-        'Treat lighting graphically: soft flat values with pale, lightly drawn edges. Keep shadows grouped and respect any light direction already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+      color_and_tone: 'Airy pastels, mostly paper white, with one small acid yellow-green accent.',
+      lighting_and_shadow: 'Soft flat values and pale, lightly drawn edges; almost no cast shadow.',
       texture_and_material:
-        'Render existing surfaces with pencil-like grain under irregular, translucent color washes, preserving depicted materials and adding no props or effects.',
+        'Pencil grain under irregular translucent washes that stop short of the lines.',
       camera_and_composition:
-        'Within the requested camera and crop, use wide open space with a few crooked shapes kept near the focal area to organize existing forms; preserve location and action.',
+        'Keep the requested framing; leave wide empty space and keep the few warped shapes near the focal area.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey quiet unease and introspection, while preserving the prompt's emotional intent.",
+        'Quiet unease and introspection, pressure felt in the empty space more than seen.',
       rendering_and_quality:
-        'Finish with airy hand-drawn marks, sparse distortion, and a large share of untouched space; keep detail selective and accents attached to existing forms.',
+        'Airy hand-drawn marks, sparse distortion and a large share of untouched paper.',
       key_features:
-        'lightly layered sketch contours with visible searching strokes; plain, uncomplicated forms with a few warped peripheral shapes; airy pastels with a small acid yellow-green accent; subtle wavering interrupted by isolated looping marks; pencil-like grain under irregular, translucent color washes; wide open space with a few crooked shapes kept near the focal area.',
+        'searching pencil contours; wide blank space; subtly warped peripheral shapes; airy pastels; acid yellow-green accent',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with lightly layered sketch contours with visible searching strokes, plain, uncomplicated forms with a few warped peripheral shapes, and airy pastels with a small acid yellow-green accent; use subtle wavering interrupted by isolated looping marks only where movement is already present, and apply pencil-like grain under irregular, translucent color washes as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Psychedelic Psychic Minimalism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-130',
-    name: 'Mob Psycho 100 - Psychic Paint-Surge Meltdown',
-    displayName: 'Psychic Paint-Surge Meltdown',
-    styleAnchors: ['Mob Psycho 100 - Psychic Paint-Surge Meltdown'],
+    name: 'Paint-on-Glass Surge Burst',
+    displayName: 'Paint-on-Glass Surge Burst',
+    styleAnchors: ['Paint-on-Glass Surge Burst', 'Mob Psycho 100 - Psychic Paint-Surge Meltdown'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, school uniform copy, city fight, weapon, readable symbols, angry monster face, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, bowl-cut boy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, school uniform copy, city fight, weapon, readable symbols, angry monster face, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from loose broken brush contours crossed by saturated overpaint and simple sturdy forms interrupted by irregular organic slabs. Let eruptive sprays and overlapping arcs tied to existing motion set its rhythm; use acid pink, yellow-green, and cyan against deep indigo for color and rough pencil, dry brush, and controlled paint spatter for finish.',
+        'Hand-painted eruption anime: frame-by-frame paint-on-glass smears, loose oil strokes and saturated overpaint bursting outward over simple, sturdy cel figures.',
       subject_treatment:
-        'Preserve the requested content and framing. Use loose broken brush contours crossed by saturated overpaint for edge work, simple sturdy forms interrupted by irregular organic slabs for form simplification, and eruptive sprays and overlapping arcs tied to existing motion only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with acid pink, yellow-green, and cyan against deep indigo. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Acid pink, yellow-green and cyan against deep indigo; figures in plain muted cel color.',
       lighting_and_shadow:
-        'Treat lighting graphically: flat intense colors with rough, unlit edges. Keep shadows grouped and respect any light direction already requested.',
-      texture_and_material:
-        'Render existing surfaces with rough pencil, dry brush, and controlled paint spatter, preserving depicted materials and adding no props or effects.',
+        'Flat intense color with rough unlit edges; the paint itself reads as the light.',
+      texture_and_material: 'Rough pencil, dry brush, wet oil smears and thumb-smudged paint.',
       camera_and_composition:
-        'Within the requested camera and crop, use clear focal zones with turbulent color gathered around existing forms to organize existing forms; preserve location and action.',
+        'Keep the requested framing; clear focal zones with turbulent paint gathered around them.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey candid emotional intensity and visual overload, while preserving the prompt's emotional intent.",
+        'Candid emotional overload breaking through calm, feeling spilling out as raw paint.',
       rendering_and_quality:
-        'Finish with raw line crossings, acidic color bursts, and sturdy readable silhouettes; keep detail selective and accents attached to existing forms.',
+        'Raw paint crossings and acidic bursts while the figure silhouette stays sturdy and readable.',
       key_features:
-        'loose broken brush contours crossed by saturated overpaint; simple sturdy forms interrupted by irregular organic slabs; acid pink, yellow-green, and cyan against deep indigo; eruptive sprays and overlapping arcs tied to existing motion; rough pencil, dry brush, and controlled paint spatter; clear focal zones with turbulent color gathered around existing forms.',
+        'paint-on-glass smears; thumb-smudged oil strokes; acid pink, lime and cyan; deep indigo ground; plain sturdy cel figures',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with loose broken brush contours crossed by saturated overpaint, simple sturdy forms interrupted by irregular organic slabs, and acid pink, yellow-green, and cyan against deep indigo; use eruptive sprays and overlapping arcs tied to existing motion only where movement is already present, and apply rough pencil, dry brush, and controlled paint spatter as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Paint-on-Glass Surge Burst as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-137',
-    name: 'Dr. Stone - Science Kingdom Action Blueprint',
-    displayName: 'Science Kingdom Action Blueprint',
-    styleAnchors: ['Dr. Stone - Science Kingdom Action Blueprint'],
+    name: 'Chalk-Schematic Inventor Cel',
+    displayName: 'Chalk-Schematic Inventor Cel',
+    styleAnchors: ['Chalk-Schematic Inventor Cel', 'Dr. Stone - Science Kingdom Action Blueprint'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, readable formulas, lab classroom, weapon, tool pile, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, stone crack lines on the face, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, readable formulas, lab classroom, weapon, tool pile, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from clean contour lines paired with faint schematic strokes and simple forms overlaid by abstract construction shapes. Let measured branching vectors with deliberate pauses set its rhythm; use mineral green, chalk white, warm mineral gold, and dark ink for color and chalky line marks over smooth cel fields and lightly granular color for finish.',
+        'Inventor adventure anime: clean cel figures overlaid with faint chalk schematic strokes, construction lines, cross-sections, arcs and dimension ticks without numbers.',
       subject_treatment:
-        'Preserve the requested content and framing. Use clean contour lines paired with faint schematic strokes for edge work, simple forms overlaid by abstract construction shapes for form simplification, and measured branching vectors with deliberate pauses only where movement is already requested.',
-      color_and_tone:
-        'Build value groups with mineral green, chalk white, warm mineral gold, and dark ink. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+      color_and_tone: 'Mineral green, chalk white, warm mineral gold and dark ink.',
       lighting_and_shadow:
-        'Treat lighting graphically: clear pale highlights and stable dark value anchors. Keep shadows grouped and respect any light direction already requested.',
-      texture_and_material:
-        'Render existing surfaces with chalky line marks over smooth cel fields and lightly granular color, preserving depicted materials and adding no props or effects.',
+        'Clear pale highlights and stable dark value anchors; chalk lines stay unlit and flat.',
+      texture_and_material: 'Chalky dusty strokes over smooth cel fields, lightly granular color.',
       camera_and_composition:
-        'Within the requested camera and crop, use layered diagram-like spacing with open margins and no readable labels to organize existing forms; preserve location and action.',
+        'Keep the requested framing; diagram-like layered spacing with open margins for the schematic lines.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey practical optimism and curiosity, while preserving the prompt's emotional intent.",
+        'Practical optimism and restless curiosity, every problem already half sketched into a solution.',
       rendering_and_quality:
-        'Finish with legible construction lines, mineral color, and restrained chalk texture; keep detail selective and accents attached to existing forms.',
+        'Legible construction lines, mineral color and restrained chalk texture, never a readable formula.',
       key_features:
-        'clean contour lines paired with faint schematic strokes; simple forms overlaid by abstract construction shapes; mineral green, chalk white, warm mineral gold, and dark ink; measured branching vectors with deliberate pauses; chalky line marks over smooth cel fields and lightly granular color; layered diagram-like spacing with open margins and no readable labels.',
+        'chalk schematic overlay; unnumbered dimension ticks; mineral green and chalk white; clean cel figures; open diagram margins',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with clean contour lines paired with faint schematic strokes, simple forms overlaid by abstract construction shapes, and mineral green, chalk white, warm mineral gold, and dark ink; use measured branching vectors with deliberate pauses only where movement is already present, and apply chalky line marks over smooth cel fields and lightly granular color as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chalk-Schematic Inventor Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -843,28 +838,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Painterly Blade Fantasy',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, visible blade, sword-first pose, named demon-hunter likeness, checker haori copy, mouth gag, blood, combat kill, dense forest, ruin corridor, noisy debris field, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, visible blade, sword-first pose, named demon-hunter likeness, checker haori copy, mouth gag, blood, combat kill, dense forest, ruin corridor, noisy debris field, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from flowing calligraphic strokes with fine tapers and ornamental turns and broad cel silhouettes interlocked with patterned forms. Let measured sweeps, looping continuations, and graceful pauses set its rhythm; use saturated jewel accents, warm pale neutrals, and dark ink for color and clean cel flats with fine decorative linework and soft pigment bloom for finish.',
+        'Ink-wash action painting: calligraphic sumi strokes with fine tapers form contours and motion, bleeding into wet watercolor washes of jewel color over broad cel silhouettes.',
       subject_treatment:
-        'Preserve the requested content and framing. Use flowing calligraphic strokes with fine tapers and ornamental turns for edge work, broad cel silhouettes interlocked with patterned forms for form simplification, and measured sweeps, looping continuations, and graceful pauses only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with saturated jewel accents, warm pale neutrals, and dark ink. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Garnet, jade and lapis jewel accents on warm pale paper neutrals, with dark ink.',
       lighting_and_shadow:
-        'Treat lighting graphically: soft luminous edges against firm, grouped cel shadows. Keep shadows grouped and respect any light direction already requested.',
+        'Soft luminous edges and grouped cel shadows; washes glow where paper shows through.',
       texture_and_material:
-        'Render existing surfaces with clean cel flats with fine decorative linework and soft pigment bloom, preserving depicted materials and adding no props or effects.',
+        'Wet-in-wet bleeds, bloom rings at wash edges and dry-brush flicks at stroke ends.',
       camera_and_composition:
-        'Within the requested camera and crop, use choreographed curves balanced by open ornamental margins to organize existing forms; preserve location and action.',
+        'Keep the requested framing; choreographed curves balanced by open paper margins.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey graceful intensity and ceremonial poise, while preserving the prompt's emotional intent.",
+        'Graceful intensity and ceremonial poise, strength expressed as a single flowing brush gesture.',
       rendering_and_quality:
-        'Finish with broad color blocks, controlled ornament, and smooth calligraphic edges; keep detail selective and accents attached to existing forms.',
+        'Broad color washes, controlled ornament and smooth calligraphic edges.',
       key_features:
-        'flowing calligraphic strokes with fine tapers and ornamental turns; broad cel silhouettes interlocked with patterned forms; saturated jewel accents, warm pale neutrals, and dark ink; measured sweeps, looping continuations, and graceful pauses; clean cel flats with fine decorative linework and soft pigment bloom; choreographed curves balanced by open ornamental margins.',
+        'calligraphic sumi strokes; wet jewel-color washes; bloom rings; open paper margins; dry-brush flicks',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with flowing calligraphic strokes with fine tapers and ornamental turns, broad cel silhouettes interlocked with patterned forms, and saturated jewel accents, warm pale neutrals, and dark ink; use measured sweeps, looping continuations, and graceful pauses only where movement is already present, and apply clean cel flats with fine decorative linework and soft pigment bloom as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Painterly Blade Fantasy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -874,59 +869,56 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Chaotic Splatter Action'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, chainsaw head, gore, severed limbs, blood realism, named character likeness, weapon-first composition, horror torture, dense forest, ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, chainsaw head, gore, severed limbs, blood realism, named character likeness, weapon-first composition, horror torture, dense forest, ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from scratchy high-weight contours with broken, jagged ends and lopsided organic forms and sharp poster-like cutouts. Let uneven bursts, abrupt stops, and elastic recoil marks set its rhythm; use saturated red against black and warm paper, with one cool accent for color and graphic ink spatters, halftone breaks, and coarse screen texture for finish.',
+        'Punk screen-print action poster: scratchy heavy contours, lopsided cutout shapes, ink splatter used as graphic pattern, halftone breaks and off-register red.',
       subject_treatment:
-        'Preserve the requested content and framing. Use scratchy high-weight contours with broken, jagged ends for edge work, lopsided organic forms and sharp poster-like cutouts for form simplification, and uneven bursts, abrupt stops, and elastic recoil marks only where movement is already requested.',
-      color_and_tone:
-        'Build value groups with saturated red against black and warm paper, with one cool accent. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
-      lighting_and_shadow:
-        'Treat lighting graphically: flat high-contrast blocks with only a few white cuts. Keep shadows grouped and respect any light direction already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+      color_and_tone: 'Saturated red, black and warm paper, with one cool teal accent.',
+      lighting_and_shadow: 'Flat high-contrast blocks with only a few white cuts.',
       texture_and_material:
-        'Render existing surfaces with graphic ink spatters, halftone breaks, and coarse screen texture, preserving depicted materials and adding no props or effects.',
+        'Ink spatter, halftone dots and coarse screen texture with slight registration slip.',
       camera_and_composition:
-        'Within the requested camera and crop, use dense poster balance around an off-center focal mass, with clean outer margins to organize existing forms; preserve location and action.',
+        'Keep the requested framing; dense poster balance around an off-center focal mass with clean outer margins.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey unruly comedy and sudden visual surprise, while preserving the prompt's emotional intent.",
-      rendering_and_quality:
-        'Finish with rough printed marks, bold flat shapes, and a clear poster rhythm; keep detail selective and accents attached to existing forms.',
+        'Unruly comedy and sudden surprise, loud and messy like a punk gig flyer.',
+      rendering_and_quality: 'Rough printed marks, bold flat shapes and a clear poster rhythm.',
       key_features:
-        'scratchy high-weight contours with broken, jagged ends; lopsided organic forms and sharp poster-like cutouts; saturated red against black and warm paper, with one cool accent; uneven bursts, abrupt stops, and elastic recoil marks; graphic ink spatters, halftone breaks, and coarse screen texture; dense poster balance around an off-center focal mass, with clean outer margins.',
+        'screen-print poster look; ink splatter pattern; off-register red; scratchy heavy contour; warm paper ground',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with scratchy high-weight contours with broken, jagged ends, lopsided organic forms and sharp poster-like cutouts, and saturated red against black and warm paper, with one cool accent; use uneven bursts, abrupt stops, and elastic recoil marks only where movement is already present, and apply graphic ink spatters, halftone breaks, and coarse screen texture as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chaotic Splatter Action as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-122',
-    name: 'Chainsaw Man - Filthy Devil-Hunter Frenzy',
-    displayName: 'Filthy Devil-Hunter Frenzy',
-    styleAnchors: ['Chainsaw Man - Filthy Devil-Hunter Frenzy'],
+    name: 'Muted Cinematic Grime Frenzy',
+    displayName: 'Muted Cinematic Grime Frenzy',
+    styleAnchors: ['Muted Cinematic Grime Frenzy', 'Chainsaw Man - Filthy Devil-Hunter Frenzy'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, chainsaw-headed figure, blood spray, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from rough hard contours with short, jagged marks and blocky planes with uneven breaks and compressed shapes. Let abrupt starts, abrupt halts, and compact reverberations set its rhythm; use soot gray and dull rust with fluorescent yellow-green accents for color and matte scuffing, smeared dry texture, and sparse fluorescent streaks for finish.',
+        'Grounded cinematic anime: sober adult proportions, thin precise lines, desaturated film-graded color and handheld framing, with sudden violent motion shown as fluorescent streaks.',
       subject_treatment:
-        'Preserve the requested content and framing. Use rough hard contours with short, jagged marks for edge work, blocky planes with uneven breaks and compressed shapes for form simplification, and abrupt starts, abrupt halts, and compact reverberations only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with soot gray and dull rust with fluorescent yellow-green accents. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Soot grey, dull rust and pale concrete, with fluorescent yellow-green streak accents.',
       lighting_and_shadow:
-        'Treat lighting graphically: irregular fluorescent contrast against deep, stable shadow masses. Keep shadows grouped and respect any light direction already requested.',
+        'Motivated practical light from overhead tubes or windows with soft grounded falloff.',
       texture_and_material:
-        'Render existing surfaces with matte scuffing, smeared dry texture, and sparse fluorescent streaks, preserving depicted materials and adding no props or effects.',
+        'Grime, scuffs and subtle film grain; lens-like shallow depth of field.',
       camera_and_composition:
-        'Within the requested camera and crop, use tight off-center grouping with broken lines and compressed margins to organize existing forms; preserve location and action.',
+        'Keep the requested content; handheld off-center framing, tight crops and shallow depth.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey worn tension and dry absurdity, while preserving the prompt's emotional intent.",
+        'Worn tension and dry absurdity, exhausted people in grimy places doing strange things.',
       rendering_and_quality:
-        'Finish with grain confined to selected shadows, with the main silhouette kept clear; keep detail selective and accents attached to existing forms.',
+        'Restrained cinematic finish, grain confined to shadows, main silhouette always clear.',
       key_features:
-        'rough hard contours with short, jagged marks; blocky planes with uneven breaks and compressed shapes; soot gray and dull rust with fluorescent yellow-green accents; abrupt starts, abrupt halts, and compact reverberations; matte scuffing, smeared dry texture, and sparse fluorescent streaks; tight off-center grouping with broken lines and compressed margins.',
+        'desaturated film grade; handheld off-center framing; thin precise lines; fluorescent streak accents; grime and shallow depth',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with rough hard contours with short, jagged marks, blocky planes with uneven breaks and compressed shapes, and soot gray and dull rust with fluorescent yellow-green accents; use abrupt starts, abrupt halts, and compact reverberations only where movement is already present, and apply matte scuffing, smeared dry texture, and sparse fluorescent streaks as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Muted Cinematic Grime Frenzy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -936,90 +928,83 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Shadow Notebook Thriller'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, schoolboy detective likeness, readable notebook, death-note cue, police chase, gore, battle scene, weapon, copied franchise face, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, red apple motif, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, schoolboy detective likeness, readable notebook, death-note cue, police chase, gore, battle scene, weapon, copied franchise face, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from fine deliberate black strokes with selective heavier emphasis and hard-edged rectangles, wedges, and isolated vermilion marks. Let measured pauses, exact turns, and delayed repetition set its rhythm; use ink black and bone white punctuated by restrained red for color and dry matte paper grain over otherwise clean, flat fields for finish.',
+        'Psychological-thriller anime: fine deliberate black strokes, gothic chiaroscuro at sharp dramatic angles, bone-white fields and one isolated vermilion accent.',
       subject_treatment:
-        'Preserve the requested content and framing. Use fine deliberate black strokes with selective heavier emphasis for edge work, hard-edged rectangles, wedges, and isolated vermilion marks for form simplification, and measured pauses, exact turns, and delayed repetition only where movement is already requested.',
-      color_and_tone:
-        'Build value groups with ink black and bone white punctuated by restrained red. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+      color_and_tone: 'Ink black and bone white with a single restrained vermilion accent.',
       lighting_and_shadow:
-        'Treat lighting graphically: firm black-to-white shadow blocks with minimal midtone. Keep shadows grouped and respect any light direction already requested.',
-      texture_and_material:
-        'Render existing surfaces with dry matte paper grain over otherwise clean, flat fields, preserving depicted materials and adding no props or effects.',
+        'Firm black-to-white shadow blocks with minimal midtone; faces split by hard light.',
+      texture_and_material: 'Dry matte paper grain over otherwise clean flat fields.',
       camera_and_composition:
-        'Within the requested camera and crop, use static asymmetric balance with one isolated accent and ample empty space to organize existing forms; preserve location and action.',
+        'Keep the requested content; static asymmetric balance at a steep Dutch or overhead angle, one isolated accent.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey cerebral suspense and controlled stillness, while preserving the prompt's emotional intent.",
-      rendering_and_quality:
-        'Finish with crisp edges, limited color, and quiet fields with isolated accents; keep detail selective and accents attached to existing forms.',
+        'Cerebral suspense and controlled stillness, every shadow suggesting a calculation in progress.',
+      rendering_and_quality: 'Crisp edges, limited color, and quiet fields around the accent.',
       key_features:
-        'fine deliberate black strokes with selective heavier emphasis; hard-edged rectangles, wedges, and isolated vermilion marks; ink black and bone white punctuated by restrained red; measured pauses, exact turns, and delayed repetition; dry matte paper grain over otherwise clean, flat fields; static asymmetric balance with one isolated accent and ample empty space.',
+        'gothic chiaroscuro; fine deliberate black stroke; bone-white fields; single vermilion accent; steep dramatic angle',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with fine deliberate black strokes with selective heavier emphasis, hard-edged rectangles, wedges, and isolated vermilion marks, and ink black and bone white punctuated by restrained red; use measured pauses, exact turns, and delayed repetition only where movement is already present, and apply dry matte paper grain over otherwise clean, flat fields as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Shadow Notebook Thriller as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-148',
-    name: 'Baccano! - Jazz Railcrime Ensemble',
-    displayName: 'Jazz Railcrime Ensemble',
-    styleAnchors: ['Baccano! - Jazz Railcrime Ensemble'],
+    name: 'Amber Jazz-Age Ensemble Cel',
+    displayName: 'Amber Jazz-Age Ensemble Cel',
+    styleAnchors: ['Amber Jazz-Age Ensemble Cel', 'Baccano! - Jazz Railcrime Ensemble'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, gun near-plane, blood, train-car corridor lock, readable signage, gang lineup, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, tommy gun, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, gun near-plane, blood, train-car corridor lock, readable signage, gang lineup, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from lively variable contours that overlap in syncopated clusters and overlapping outlines and rounded graphic masses. Let staggered rhythms and crossing motion arcs with no fixed direction set its rhythm; use brass gold, amber, dark brown, and ink black for color and subtle printed grain with warm amber-gold accents in flat color fields for finish.',
+        'Prohibition-era ensemble anime: lively variable contours, many overlapping characters in syncopated clusters, period tailoring, flat amber and brass color with printed grain.',
       subject_treatment:
-        'Preserve the requested content and framing. Use lively variable contours that overlap in syncopated clusters for edge work, overlapping outlines and rounded graphic masses for form simplification, and staggered rhythms and crossing motion arcs with no fixed direction only where movement is already requested.',
-      color_and_tone:
-        'Build value groups with brass gold, amber, dark brown, and ink black. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
-      lighting_and_shadow:
-        'Treat lighting graphically: warm edge highlights against crisp dark value blocks. Keep shadows grouped and respect any light direction already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+      color_and_tone: 'Brass gold, amber, dark brown and ink black, with cream shirt fronts.',
+      lighting_and_shadow: 'Warm lamplight edge highlights against crisp dark value blocks.',
       texture_and_material:
-        'Render existing surfaces with subtle printed grain with warm amber-gold accents in flat color fields, preserving depicted materials and adding no props or effects.',
+        'Subtle printed grain in flat color fields; pinstripes and felt drawn as sparse lines.',
       camera_and_composition:
-        'Within the requested camera and crop, use an irregular visual rhythm arranged around the existing focal forms to organize existing forms; preserve location and action.',
+        'Keep the requested framing; an irregular, syncopated rhythm of overlapping figures around the focal forms.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey buoyant disorder and dry wit, while preserving the prompt's emotional intent.",
+        'Buoyant disorder and dry wit, many stories colliding to one swinging beat.',
       rendering_and_quality:
-        'Finish with amber-black contrast, overlapping shapes, and rhythm carried by spacing; keep detail selective and accents attached to existing forms.',
+        'Amber-black contrast, overlapping shapes and rhythm carried by spacing.',
       key_features:
-        'lively variable contours that overlap in syncopated clusters; overlapping outlines and rounded graphic masses; brass gold, amber, dark brown, and ink black; staggered rhythms and crossing motion arcs with no fixed direction; subtle printed grain with warm amber-gold accents in flat color fields; an irregular visual rhythm arranged around the existing focal forms.',
+        'overlapping ensemble clusters; brass and amber palette; period tailoring; printed grain; syncopated rhythm',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with lively variable contours that overlap in syncopated clusters, overlapping outlines and rounded graphic masses, and brass gold, amber, dark brown, and ink black; use staggered rhythms and crossing motion arcs with no fixed direction only where movement is already present, and apply subtle printed grain with warm amber-gold accents in flat color fields as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Amber Jazz-Age Ensemble Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-021',
-    name: 'Headband Ninja Journey',
-    displayName: 'Kinetic Ninja Shonen',
-    styleAnchors: ['Headband Ninja Journey'],
+    name: 'Teal-Orange Sakuga Smear',
+    displayName: 'Teal-Orange Sakuga Smear',
+    styleAnchors: ['Teal-Orange Sakuga Smear', 'Headband Ninja Journey'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, recognizable ninja franchise, forehead metal plate, spiral emblem, kunai, shuriken, village wall, named-series headband, copied hairstyle, weapon-first pose, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, orange jumpsuit, whisker cheek marks, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, recognizable ninja franchise, forehead metal plate, spiral emblem, kunai, shuriken, village wall, named-series headband, copied hairstyle, weapon-first pose, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from tapered black-ink contours that thicken at turns and break into short speed ticks and compact rounded masses with clean cel edges and ribbonlike cutouts. Let long upward curves, brief flicks, and crisp pauses set its rhythm; use clear teal and warm orange against ink-dark and paper-light neutrals for color and smooth cel flats touched by sparse dry-ink grain for finish.',
+        'Journey-adventure anime at its most animated: tapered black-ink contours that thicken at turns, limbs stretched into smear frames, and dust or leaf trails curling behind fast motion.',
       subject_treatment:
-        'Preserve the requested content and framing. Use tapered black-ink contours that thicken at turns and break into short speed ticks for edge work, compact rounded masses with clean cel edges and ribbonlike cutouts for form simplification, and long upward curves, brief flicks, and crisp pauses only where movement is already requested.',
-      color_and_tone:
-        'Build value groups with clear teal and warm orange against ink-dark and paper-light neutrals. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
-      lighting_and_shadow:
-        'Treat lighting graphically: hard two-step shadows with small white edge cuts. Keep shadows grouped and respect any light direction already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+      color_and_tone: 'Clear teal and warm orange against ink-dark and paper-light neutrals.',
+      lighting_and_shadow: 'Golden-hour hard two-step shadows with small white edge cuts.',
       texture_and_material:
-        'Render existing surfaces with smooth cel flats touched by sparse dry-ink grain, preserving depicted materials and adding no props or effects.',
+        'Smooth cel flats with sparse dry-ink grain; smears drawn as stretched, tapered shapes.',
       camera_and_composition:
-        'Within the requested camera and crop, use open diagonal flow with rising arcs and unblocked negative space to organize existing forms; preserve location and action.',
+        'Keep the requested framing; open diagonal flow with rising arcs and unblocked negative space.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey buoyant resolve and forward curiosity, while preserving the prompt's emotional intent.",
+        'Buoyant resolve and forward curiosity, the road ahead always open and bright.',
       rendering_and_quality:
-        'Finish with crisp silhouettes, flat fills, and sparse grain; bind every accent to an existing form; keep detail selective and accents attached to existing forms.',
+        'Crisp silhouettes and flat fills, with smears and trails only on motion already present.',
       key_features:
-        'tapered black-ink contours that thicken at turns and break into short speed ticks; compact rounded masses with clean cel edges and ribbonlike cutouts; clear teal and warm orange against ink-dark and paper-light neutrals; long upward curves, brief flicks, and crisp pauses; smooth cel flats touched by sparse dry-ink grain; open diagonal flow with rising arcs and unblocked negative space.',
+        'stretched limb smear frames; tapered ink contour; curling dust and leaf trails; teal and orange; two-step shadow',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with tapered black-ink contours that thicken at turns and break into short speed ticks, compact rounded masses with clean cel edges and ribbonlike cutouts, and clear teal and warm orange against ink-dark and paper-light neutrals; use long upward curves, brief flicks, and crisp pauses only where movement is already present, and apply smooth cel flats touched by sparse dry-ink grain as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Teal-Orange Sakuga Smear as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -1029,59 +1014,52 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Urban Spirit Blade'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, katana, soul reaper uniform, bleach-like robe, named-series weapon, crosswalk fight, school uniform copy, recognizable franchise face, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, katana, soul reaper uniform, bleach-like robe, named-series weapon, crosswalk fight, school uniform copy, recognizable franchise face, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from fine variable contours with long tapered ends and intentional gaps and elongated, fashion-like forms set against broad black-white divisions. Let slow winding curves and measured drift set its rhythm; use monochrome black and ivory with a restrained violet accent for color and matte dark fields offset by translucent ink-like bands for finish.',
+        'Fashion-plate supernatural anime: elongated slender figures in fine variable contours with deliberate gaps, set against stark black-white divisions and large blank ivory space.',
       subject_treatment:
-        'Preserve the requested content and framing. Use fine variable contours with long tapered ends and intentional gaps for edge work, elongated, fashion-like forms set against broad black-white divisions for form simplification, and slow winding curves and measured drift only where movement is already requested.',
-      color_and_tone:
-        'Build value groups with monochrome black and ivory with a restrained violet accent. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+      color_and_tone: 'Monochrome black and ivory with a single restrained violet accent.',
       lighting_and_shadow:
-        'Treat lighting graphically: severe cel shadows with a narrow violet-white rim. Keep shadows grouped and respect any light direction already requested.',
-      texture_and_material:
-        'Render existing surfaces with matte dark fields offset by translucent ink-like bands, preserving depicted materials and adding no props or effects.',
+        'Severe cel shadows and a narrow violet-white rim; backgrounds often dropped to flat light.',
+      texture_and_material: 'Matte dark fields offset by translucent ink-like bands.',
       camera_and_composition:
-        'Within the requested camera and crop, use vertical balance, wide negative spaces, and one curving visual path to organize existing forms; preserve location and action.',
+        'Keep the requested framing; vertical balance, wide negative space and one curving visual path.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey cool composure with latent tension, while preserving the prompt's emotional intent.",
-      rendering_and_quality:
-        'Finish with precise contours, sharp value blocks, and very few luminous accents; keep detail selective and accents attached to existing forms.',
+        'Cool composure with latent tension, elegance held like a breath before moving.',
+      rendering_and_quality: 'Precise contours, sharp value blocks and very few luminous accents.',
       key_features:
-        'fine variable contours with long tapered ends and intentional gaps; elongated, fashion-like forms set against broad black-white divisions; monochrome black and ivory with a restrained violet accent; slow winding curves and measured drift; matte dark fields offset by translucent ink-like bands; vertical balance, wide negative spaces, and one curving visual path.',
+        'elongated fashion-plate proportions; blank ivory negative space; stark black-white division; single violet accent; fine gapped contour',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with fine variable contours with long tapered ends and intentional gaps, elongated, fashion-like forms set against broad black-white divisions, and monochrome black and ivory with a restrained violet accent; use slow winding curves and measured drift only where movement is already present, and apply matte dark fields offset by translucent ink-like bands as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Urban Spirit Blade as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-023',
-    name: 'Grand Pirate Adventure',
-    displayName: 'Elastic Voyage Shonen',
-    styleAnchors: ['Grand Pirate Adventure'],
+    name: 'Elastic Big-Grin Adventure Cel',
+    displayName: 'Elastic Big-Grin Adventure Cel',
+    styleAnchors: ['Elastic Big-Grin Adventure Cel', 'Grand Pirate Adventure'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, pirate skull flag, straw-hat likeness, copied crew outfit, ship mast scene lock, treasure-map cliche, franchise insignia, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, straw hat with red open vest, stretching rubber punch, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, pirate skull flag, straw-hat likeness, copied crew outfit, ship mast scene lock, treasure-map cliche, franchise insignia, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from bold rounded outlines with elastic internal strokes and broad, flexible forms with exaggerated curves and clear openings. Let looping arcs that stretch and spring back set its rhythm; use clear bright blue, warm red and gold, clean white, and dark outlines for color and clean flat color with lightly softened pigment edges for finish.',
+        'Sunny seafaring adventure anime: bold rounded outlines, rubbery exaggerated anatomy with huge grins and stretched limbs, broad flexible curves and flat vivid color.',
       subject_treatment:
-        'Preserve the requested content and framing. Use bold rounded outlines with elastic internal strokes for edge work, broad, flexible forms with exaggerated curves and clear openings for form simplification, and looping arcs that stretch and spring back only where movement is already requested.',
-      color_and_tone:
-        'Build value groups with clear bright blue, warm red and gold, clean white, and dark outlines. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
-      lighting_and_shadow:
-        'Treat lighting graphically: broad pale highlights against clear cel-shadow groups. Keep shadows grouped and respect any light direction already requested.',
-      texture_and_material:
-        'Render existing surfaces with clean flat color with lightly softened pigment edges, preserving depicted materials and adding no props or effects.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+      color_and_tone: 'Bright ocean blue, warm red and gold, clean white and dark outlines.',
+      lighting_and_shadow: 'High summer sun, broad pale highlights and clear cel shadow groups.',
+      texture_and_material: 'Clean flat color with lightly softened pigment edges.',
       camera_and_composition:
-        'Within the requested camera and crop, use roomy visual balance with flexible diagonals and generous negative space to organize existing forms; preserve location and action.',
+        'Keep the requested framing; roomy balance, flexible diagonals and generous negative space.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey playful openness and generous momentum, while preserving the prompt's emotional intent.",
-      rendering_and_quality:
-        'Finish with vivid flat colors, legible outlines, and little small-scale detail; keep detail selective and accents attached to existing forms.',
+        'Playful openness and generous momentum, a sunny, big-hearted adventure with room to stretch.',
+      rendering_and_quality: 'Vivid flat colors, legible outlines and little small-scale detail.',
       key_features:
-        'bold rounded outlines with elastic internal strokes; broad, flexible forms with exaggerated curves and clear openings; clear bright blue, warm red and gold, clean white, and dark outlines; looping arcs that stretch and spring back; clean flat color with lightly softened pigment edges; roomy visual balance with flexible diagonals and generous negative space.',
+        'rubbery exaggerated anatomy; huge grins; bold rounded outlines; ocean blue, red and gold; flexible diagonals',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with bold rounded outlines with elastic internal strokes, broad, flexible forms with exaggerated curves and clear openings, and clear bright blue, warm red and gold, clean white, and dark outlines; use looping arcs that stretch and spring back only where movement is already present, and apply clean flat color with lightly softened pigment edges as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Elastic Big-Grin Adventure Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -1091,28 +1069,25 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Lo-Fi Sword Roadtrip'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, katana-first pose, samurai-copy outfit, named-series roadtrip trio, hip-hop stereotype, dead bodies, school-stair fight, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, katana-first pose, samurai-copy outfit, named-series roadtrip trio, hip-hop stereotype, dead bodies, school-stair fight, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from dry brush lines with imperfect tapered ends and fluid shadow shapes and flattened, slightly oversized forms. Let beat-like alternation between short marks and long follow-through set its rhythm; use dusty ochre and sepia against pale cyan and deep brown for color and scratched brush edges over subtle analog grain and clean rests for finish.',
+        'Road-movie anime: dry brush lines with imperfect tapered ends, flattened slightly oversized forms, dusty grain and long landscapes crossed on foot.',
       subject_treatment:
-        'Preserve the requested content and framing. Use dry brush lines with imperfect tapered ends for edge work, fluid shadow shapes and flattened, slightly oversized forms for form simplification, and beat-like alternation between short marks and long follow-through only where movement is already requested.',
-      color_and_tone:
-        'Build value groups with dusty ochre and sepia against pale cyan and deep brown. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
-      lighting_and_shadow:
-        'Treat lighting graphically: warm and cool value bands with minimal internal shading. Keep shadows grouped and respect any light direction already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+      color_and_tone: 'Dusty ochre and sepia against pale cyan sky and deep brown shadow.',
+      lighting_and_shadow: 'Late sun in warm and cool value bands with minimal internal shading.',
       texture_and_material:
-        'Render existing surfaces with scratched brush edges over subtle analog grain and clean rests, preserving depicted materials and adding no props or effects.',
+        'Scratched brush edges over subtle analog grain, with clean resting areas.',
       camera_and_composition:
-        'Within the requested camera and crop, use off-axis focal weight, broad quiet margins, and sparse directional marks to organize existing forms; preserve location and action.',
+        'Keep the requested framing; off-axis focal weight, broad quiet margins and low wide horizons.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey laid-back confidence and held rhythm, while preserving the prompt's emotional intent.",
-      rendering_and_quality:
-        'Finish with subdued colors, visible brush grain, and uncluttered silhouettes; keep detail selective and accents attached to existing forms.',
+        'Laid-back confidence on a long road, time moving slowly under a wide sky.',
+      rendering_and_quality: 'Subdued color, visible brush grain and uncluttered silhouettes.',
       key_features:
-        'dry brush lines with imperfect tapered ends; fluid shadow shapes and flattened, slightly oversized forms; dusty ochre and sepia against pale cyan and deep brown; beat-like alternation between short marks and long follow-through; scratched brush edges over subtle analog grain and clean rests; off-axis focal weight, broad quiet margins, and sparse directional marks.',
+        'dry brush line; dusty ochre and sepia; long low horizons; analog grain; off-axis focal weight',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with dry brush lines with imperfect tapered ends, fluid shadow shapes and flattened, slightly oversized forms, and dusty ochre and sepia against pale cyan and deep brown; use beat-like alternation between short marks and long follow-through only where movement is already present, and apply scratched brush edges over subtle analog grain and clean rests as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lo-Fi Sword Roadtrip as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -1120,121 +1095,112 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Chaotic Indie Adolescence',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, franchise likeness, school fight, weapon, readable poster, logo, camera, ultra-detailed battle scene, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, franchise likeness, school fight, weapon, readable poster, logo, camera, ultra-detailed battle scene, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, muddy noisy darks, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from rough, varied contours with torn and overdrawn edges and hard collage blocks mixed with wonky, simplified pop shapes. Let discontinuous jumps, stutters, and sudden holds set its rhythm; use abrupt complementary color blocks with black and small white breaks for color and screen-print halftone, paper-cut edges, and controlled registration slip for finish.',
+        'Punk-indie anime: manga panel cuts bursting into the frame, torn overdrawn contours, collage blocks and wonky pop shapes with screen-print halftone and registration slip.',
       subject_treatment:
-        'Preserve the requested content and framing. Use rough, varied contours with torn and overdrawn edges for edge work, hard collage blocks mixed with wonky, simplified pop shapes for form simplification, and discontinuous jumps, stutters, and sudden holds only where movement is already requested.',
-      color_and_tone:
-        'Build value groups with abrupt complementary color blocks with black and small white breaks. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+      color_and_tone: 'Abrupt complementary color blocks with black and small white breaks.',
       lighting_and_shadow:
-        'Treat lighting graphically: flat graphic separations with little modeled volume. Keep shadows grouped and respect any light direction already requested.',
+        'Flat graphic separations with little modelled volume and no soft gradients.',
       texture_and_material:
-        'Render existing surfaces with screen-print halftone, paper-cut edges, and controlled registration slip, preserving depicted materials and adding no props or effects.',
+        'Screen-print halftone, paper-cut edges and controlled registration slip.',
       camera_and_composition:
-        'Within the requested camera and crop, use tilted modular panels of varied size with a clear central reading path to organize existing forms; preserve location and action.',
-      atmosphere_and_mood:
-        "Let line weight, spacing, and value convey irreverent playfulness and quick shifts in emphasis, while preserving the prompt's emotional intent.",
+        'Keep the requested content; tilted panels of varied size with a clear central reading path.',
+      atmosphere_and_mood: 'Irreverent playfulness and quick shifts in emphasis.',
       rendering_and_quality:
-        'Finish with rough printed edges, deliberate misalignment, and legible broad shapes; keep detail selective and accents attached to existing forms.',
+        'Rough printed edges, deliberate misalignment and legible broad shapes.',
       key_features:
-        'rough, varied contours with torn and overdrawn edges; hard collage blocks mixed with wonky, simplified pop shapes; abrupt complementary color blocks with black and small white breaks; discontinuous jumps, stutters, and sudden holds; screen-print halftone, paper-cut edges, and controlled registration slip; tilted modular panels of varied size with a clear central reading path.',
+        'tilted manga panel cuts; torn overdrawn contour; complementary color blocks; halftone collage; registration slip',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with rough, varied contours with torn and overdrawn edges, hard collage blocks mixed with wonky, simplified pop shapes, and abrupt complementary color blocks with black and small white breaks; use discontinuous jumps, stutters, and sudden holds only where movement is already present, and apply screen-print halftone, paper-cut edges, and controlled registration slip as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chaotic Indie Adolescence as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-142',
-    name: 'Black Lagoon - South Seas Gun-Runner Grit',
-    displayName: 'South Seas Gun-Runner Grit',
-    styleAnchors: ['Black Lagoon - South Seas Gun-Runner Grit'],
+    name: 'Humid Tropic Grit Cel',
+    displayName: 'Humid Tropic Grit Cel',
+    styleAnchors: ['Humid Tropic Grit Cel', 'Black Lagoon - South Seas Gun-Runner Grit'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, twin pistols, gun, torpedo boat, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from weighty varied contours with rough, pressure-heavy strokes and compact forms built from dark blocks and worn midtone planes. Let short forceful marks interrupted by held stillness set its rhythm; use deep slate gray, faded teal, rust, and muted amber for color and scuffed ink, soft grain, and roughened edges in selected areas for finish.',
+        'Tropical crime anime: weighty pressure-heavy contours, sweat-sheened skin, harsh sun, dense humid haze and scuffed ink on sun-bleached surfaces.',
       subject_treatment:
-        'Preserve the requested content and framing. Use weighty varied contours with rough, pressure-heavy strokes for edge work, compact forms built from dark blocks and worn midtone planes for form simplification, and short forceful marks interrupted by held stillness only where movement is already requested.',
-      color_and_tone:
-        'Build value groups with deep slate gray, faded teal, rust, and muted amber. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+      color_and_tone: 'Deep slate, faded teal, rust and muted amber, with sharp sweat highlights.',
       lighting_and_shadow:
-        'Treat lighting graphically: hard low-key separation with restrained warm edge accents. Keep shadows grouped and respect any light direction already requested.',
+        'Harsh overhead tropical sun, hard low-key shadows and a hazy, washed background.',
       texture_and_material:
-        'Render existing surfaces with scuffed ink, soft grain, and roughened edges in selected areas, preserving depicted materials and adding no props or effects.',
+        'Scuffed ink, soft grain, rust bloom and peeling paint on hard surfaces.',
       camera_and_composition:
-        'Within the requested camera and crop, use compact asymmetrical framing with strong diagonals and deep negative space to organize existing forms; preserve location and action.',
-      atmosphere_and_mood:
-        "Let line weight, spacing, and value convey weathered tension and dry resolve, while preserving the prompt's emotional intent.",
-      rendering_and_quality:
-        'Finish with gritty edge texture, grounded values, and an uncluttered focal path; keep detail selective and accents attached to existing forms.',
+        'Keep the requested framing; compact asymmetric framing with strong diagonals and deep negative space.',
+      atmosphere_and_mood: 'Weathered tension and dry resolve in the heat.',
+      rendering_and_quality: 'Gritty edge texture, grounded values and an uncluttered focal path.',
       key_features:
-        'weighty varied contours with rough, pressure-heavy strokes; compact forms built from dark blocks and worn midtone planes; deep slate gray, faded teal, rust, and muted amber; short forceful marks interrupted by held stillness; scuffed ink, soft grain, and roughened edges in selected areas; compact asymmetrical framing with strong diagonals and deep negative space.',
+        'sweat-sheen highlights; humid haze; pressure-heavy contour; rust and faded teal; harsh overhead sun',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with weighty varied contours with rough, pressure-heavy strokes, compact forms built from dark blocks and worn midtone planes, and deep slate gray, faded teal, rust, and muted amber; use short forceful marks interrupted by held stillness only where movement is already present, and apply scuffed ink, soft grain, and roughened edges in selected areas as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Humid Tropic Grit Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-143',
-    name: 'Darker than Black - Contract Killer Night Rain',
-    displayName: 'Contract Killer Night Rain',
-    styleAnchors: ['Darker than Black - Contract Killer Night Rain'],
+    name: 'Cold Starfield Night Noir',
+    displayName: 'Cold Starfield Night Noir',
+    styleAnchors: ['Cold Starfield Night Noir', 'Darker than Black - Contract Killer Night Rain'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, gun, knife, assassin pose, surveillance UI, readable signs, alley corridor lock, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, gun, knife, assassin pose, surveillance UI, readable signs, alley corridor lock, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from fine dark contours threaded by thin cyan accents and reflective planes and sharply blocked negative shapes. Let long linear trails interrupted by short, quiet breaks set its rhythm; use blue-black and charcoal with narrow cyan highlights for color and broken reflective highlights and fine surface streaks over matte dark fields for finish.',
+        'Urban night noir anime: fine dark contours threaded by thin cyan lines, an unnaturally starry sky over a blue-black city, and faint glowing cyan edges on figures.',
       subject_treatment:
-        'Preserve the requested content and framing. Use fine dark contours threaded by thin cyan accents for edge work, reflective planes and sharply blocked negative shapes for form simplification, and long linear trails interrupted by short, quiet breaks only where movement is already requested.',
-      color_and_tone:
-        'Build value groups with blue-black and charcoal with narrow cyan highlights. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
+      color_and_tone: 'Blue-black and charcoal with narrow cyan highlights and pinpoint stars.',
       lighting_and_shadow:
-        'Treat lighting graphically: cool reflected accents against deep shadow, without implying a new light source. Keep shadows grouped and respect any light direction already requested.',
+        'Cool reflected accents against deep shadow, without adding a new light fixture.',
       texture_and_material:
-        'Render existing surfaces with broken reflective highlights and fine surface streaks over matte dark fields, preserving depicted materials and adding no props or effects.',
+        'Broken reflective highlights and fine surface streaks over matte dark fields.',
       camera_and_composition:
-        'Within the requested camera and crop, use guarded negative space, off-center balance, and a narrow path through the frame to organize existing forms; preserve location and action.',
+        'Keep the requested framing; guarded negative space, off-center balance and a large sky where the view allows.',
       atmosphere_and_mood:
-        "Let line weight, spacing, and value convey lonely secrecy and restrained unease, while preserving the prompt's emotional intent.",
+        'Lonely secrecy and restrained unease, a quiet city under a sky that feels false.',
       rendering_and_quality:
-        'Finish with thin cyan line accents, dark reflective values, and generous negative space; keep detail selective and accents attached to existing forms.',
+        'Thin cyan line accents, dark reflective values and generous empty space.',
       key_features:
-        'fine dark contours threaded by thin cyan accents; reflective planes and sharply blocked negative shapes; blue-black and charcoal with narrow cyan highlights; long linear trails interrupted by short, quiet breaks; broken reflective highlights and fine surface streaks over matte dark fields; guarded negative space, off-center balance, and a narrow path through the frame.',
+        'false starfield sky; thin cyan contour threads; blue-black city; glowing cyan edges; guarded negative space',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with fine dark contours threaded by thin cyan accents, reflective planes and sharply blocked negative shapes, and blue-black and charcoal with narrow cyan highlights; use long linear trails interrupted by short, quiet breaks only where movement is already present, and apply broken reflective highlights and fine surface streaks over matte dark fields as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cold Starfield Night Noir as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP05-144',
-    name: 'Samurai Champloo - Lo-Fi Edo Swagger',
-    displayName: 'Lo-Fi Edo Swagger',
-    styleAnchors: ['Samurai Champloo - Lo-Fi Edo Swagger'],
+    name: 'Record-Scratch Stutter Swagger',
+    displayName: 'Record-Scratch Stutter Swagger',
+    styleAnchors: ['Record-Scratch Stutter Swagger', 'Samurai Champloo - Lo-Fi Edo Swagger'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, sword near-plane, duel pose, dojo corridor, readable graffiti, samurai costume copy, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
+      'franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, sword near-plane, duel pose, dojo corridor, readable graffiti, samurai costume copy, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Build the graphic anime treatment from loose ink-brush contours with uneven, scratchlike breaks and relaxed flattened forms and offbeat asymmetrical blocks. Let syncopated pauses with a loose, delayed follow-through set its rhythm; use dusty gold, warm brown, and subdued blue-gray for color and fine vinyl-like scratches and dry print grain over warm flats for finish.',
+        'Hip-hop period anime: flattened woodblock-style landscapes under loose ink-brush figures, with record-scratch stutter frames of doubled offset outlines and rewind jitter.',
       subject_treatment:
-        'Preserve the requested content and framing. Use loose ink-brush contours with uneven, scratchlike breaks for edge work, relaxed flattened forms and offbeat asymmetrical blocks for form simplification, and syncopated pauses with a loose, delayed follow-through only where movement is already requested.',
+        'Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.',
       color_and_tone:
-        'Build value groups with dusty gold, warm brown, and subdued blue-gray. Place the strongest contrast on the requested focal area and preserve explicit color instructions.',
-      lighting_and_shadow:
-        'Treat lighting graphically: soft warm-cool bands with few hard shadow groups. Keep shadows grouped and respect any light direction already requested.',
-      texture_and_material:
-        'Render existing surfaces with fine vinyl-like scratches and dry print grain over warm flats, preserving depicted materials and adding no props or effects.',
+        'Dusty gold, warm brown and subdued blue-grey, with an occasional spray-paint magenta accent.',
+      lighting_and_shadow: 'Soft warm-cool bands with few hard shadow groups.',
+      texture_and_material: 'Fine vinyl-like scratches and dry print grain over warm flats.',
       camera_and_composition:
-        'Within the requested camera and crop, use offbeat visual balance with relaxed weight on one side to organize existing forms; preserve location and action.',
-      atmosphere_and_mood:
-        "Let line weight, spacing, and value convey unhurried swagger and easy rhythm, while preserving the prompt's emotional intent.",
+        'Keep the requested framing; offbeat balance with relaxed weight on one side.',
+      atmosphere_and_mood: 'Unhurried swagger and an easy, syncopated rhythm.',
       rendering_and_quality:
-        'Finish with warm dusty color, scratch texture, and deliberately uneven spacing; keep detail selective and accents attached to existing forms.',
+        'Warm dusty color, scratch texture and stutter outlines only on moving parts.',
       key_features:
-        'loose ink-brush contours with uneven, scratchlike breaks; relaxed flattened forms and offbeat asymmetrical blocks; dusty gold, warm brown, and subdued blue-gray; syncopated pauses with a loose, delayed follow-through; fine vinyl-like scratches and dry print grain over warm flats; offbeat visual balance with relaxed weight on one side.',
+        'doubled offset stutter outlines; vinyl scratch texture; flattened woodblock landscape; dusty gold and brown; offbeat balance',
       creative_brief:
-        'Keep the requested subject, action, location, and crop. Render them with loose ink-brush contours with uneven, scratchlike breaks, relaxed flattened forms and offbeat asymmetrical blocks, and dusty gold, warm brown, and subdued blue-gray; use syncopated pauses with a loose, delayed follow-through only where movement is already present, and apply fine vinyl-like scratches and dry print grain over warm flats as the drawing finish.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Record-Scratch Stutter Swagger as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

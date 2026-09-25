@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-124
 packId: pack_05
-name: Blue Lock - Predator-Ego Sports Assault
+name: Ultramarine Glare Foreshortening
 styleAnchors:
-  - 'Blue Lock - Predator-Ego Sports Assault'
-displayName: 'Predator-Ego Sports Assault'
+  - Ultramarine Glare Foreshortening
+  - Blue Lock - Predator-Ego Sports Assault
+displayName: Ultramarine Glare Foreshortening
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,46 +16,24 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from razor-clean contours with crisp ultramarine vectors and
-    nested curves and pointed framing wedges around a focal area. Let taut accelerating curves
-    that converge without implying a new action set its rhythm; use electric blue, ink black,
-    white, and cool cyan for color and clean graphic layers with hard-edged glow for finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use razor-clean contours with crisp ultramarine
-    vectors for edge work, nested curves and pointed framing wedges around a focal area for form
-    simplification, and taut accelerating curves that converge without implying a new action only
-    where movement is already requested.
-  color_and_tone: >-
-    Build value groups with electric blue, ink black, white, and cool cyan. Place the strongest
-    contrast on the requested focal area and preserve explicit color instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: hard blue-white separation with restrained glow. Keep shadows
-    grouped and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with clean graphic layers with hard-edged glow, preserving depicted
-    materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use concentric focal hierarchy and compressed visual
-    space within the given crop to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey concentrated visual focus and clear hierarchy,
-    while preserving the prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with sharp vector lines, compressed spacing, and bright blue value accents; keep detail
-    selective and accents attached to existing forms.
-  key_features: >-
-    razor-clean contours with crisp ultramarine vectors; nested curves and pointed framing wedges
-    around a focal area; electric blue, ink black, white, and cool cyan; taut accelerating curves
-    that converge without implying a new action; clean graphic layers with hard-edged glow;
-    concentric focal hierarchy and compressed visual space within the given crop.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with razor-clean contours
-    with crisp ultramarine vectors, nested curves and pointed framing wedges around a focal area,
-    and electric blue, ink black, white, and cool cyan; use taut accelerating curves that converge
-    without implying a new action only where movement is already present, and apply clean graphic
-    layers with hard-edged glow as the drawing finish.
+  aesthetic: 'Hyper-focused competition anime: razor-clean contours, extreme wide-lens foreshortening, and eyes that trail streaks of ultramarine light while backgrounds dissolve into converging blue vectors.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Electric ultramarine, ink black, white and cool cyan; skin in cool pale tones.
+  lighting_and_shadow: Hard blue-white rim from behind, cyan underlight on faces, deep blue shadow planes.
+  texture_and_material: Clean vector layers with hard-edged glow bands and no grain.
+  camera_and_composition: Keep the requested framing; exaggerate foreshortening toward the lens and aim concentric wedges at the focal eye.
+  atmosphere_and_mood: Predatory concentration, ego sharpened to a point.
+  rendering_and_quality: Sharp vector lines, glowing eye-light trails, and a background reduced to converging vectors.
+  key_features: ultramarine eye-light trails; extreme wide-lens foreshortening; converging blue vector backgrounds; blue-white rim; hard-edged glow
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ultramarine Glare Foreshortening as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
+  - soccer kit copy
   - realistic
   - 3d render
   - photo
@@ -83,15 +62,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-124.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named soccer character, team logo, readable numbers, stadium
-    crowd, ball closeup, violent assault, photoreal cosplay, western superhero comic, generic shonen
-    source-frame look, fixed canon character, title scene replication, required source-frame look,
-    cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, soccer kit copy, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named soccer character, team logo, readable numbers, stadium crowd, ball closeup, violent assault, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

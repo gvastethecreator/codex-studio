@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-123
 packId: pack_05
-name: Fire Force - Cathedral Inferno Brigade
+name: White-Core Flame Halo Cel
 styleAnchors:
-  - 'Fire Force - Cathedral Inferno Brigade'
-displayName: 'Cathedral Inferno Brigade'
+  - White-Core Flame Halo Cel
+  - Fire Force - Cathedral Inferno Brigade
+displayName: White-Core Flame Halo Cel
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,48 +16,26 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from strong dark contours paired with measured ornamental
-    lines and radiating rings, sharp triangular cuts, and compact graphic masses. Let rising
-    spirals paired with short straight cuts set its rhythm; use charcoal and ivory with bright
-    orange, scarlet, and warm yellow for color and dense flat color with limited speckle and
-    painted accent marks for finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use strong dark contours paired with measured
-    ornamental lines for edge work, radiating rings, sharp triangular cuts, and compact graphic
-    masses for form simplification, and rising spirals paired with short straight cuts only where
-    movement is already requested.
-  color_and_tone: >-
-    Build value groups with charcoal and ivory with bright orange, scarlet, and warm yellow. Place
-    the strongest contrast on the requested focal area and preserve explicit color instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: bright warm accents against decisive silhouette shadows. Keep
-    shadows grouped and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with dense flat color with limited speckle and painted accent marks,
-    preserving depicted materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use centered graphic pressure with broad negative space,
-    fitted to the requested frame to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey formal energy held in order, while preserving the
-    prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with strong silhouette cuts, limited warm bloom, and carefully placed geometry; keep
-    detail selective and accents attached to existing forms.
-  key_features: >-
-    strong dark contours paired with measured ornamental lines; radiating rings, sharp triangular
-    cuts, and compact graphic masses; charcoal and ivory with bright orange, scarlet, and warm
-    yellow; rising spirals paired with short straight cuts; dense flat color with limited speckle
-    and painted accent marks; centered graphic pressure with broad negative space, fitted to the
-    requested frame.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with strong dark contours
-    paired with measured ornamental lines, radiating rings, sharp triangular cuts, and compact
-    graphic masses, and charcoal and ivory with bright orange, scarlet, and warm yellow; use
-    rising spirals paired with short straight cuts only where movement is already present, and
-    apply dense flat color with limited speckle and painted accent marks as the drawing finish.
+  aesthetic: 'Fire-brigade anime: flames drawn as flat stylized tongues with a hard white-hot core, orange body and scarlet edge, set in radiating halo rings over strong dark contours and film grain.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Charcoal and ivory with bright orange, scarlet and warm yellow; every flame core pure white.
+  lighting_and_shadow: 'Fire as the primary source: warm uplight, decisive silhouette shadows, subtle light-leak bloom.'
+  texture_and_material: Dense flat color, light speckle grain and painted spark flecks.
+  camera_and_composition: Keep the requested framing; concentric halo rings centered on the focal area with broad negative space.
+  atmosphere_and_mood: Fervent, almost liturgical heat, fire treated as ritual rather than disaster.
+  rendering_and_quality: Strong silhouette cuts, limited warm bloom and carefully placed ring geometry.
+  key_features: white-hot flame cores; flat stylized flame tongues; radiating halo rings; charcoal and orange palette; light-leak film grain
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies White-Core Flame Halo Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
+  - reflective-striped bunker gear
+  - sharp-toothed grin
+  - nun prayer pose
   - realistic
   - 3d render
   - photo
@@ -84,15 +63,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-123.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, famous uniform copy, no required chapel interior, no icon copy,
-    no injury scene, no readable insignia, photoreal cosplay, western superhero comic, generic
-    shonen source-frame look, fixed canon character, title scene replication, required source-frame
-    look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, reflective-striped bunker gear, sharp-toothed grin, nun prayer pose, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, famous uniform copy, no required chapel interior, no icon copy, no injury scene, no readable insignia, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

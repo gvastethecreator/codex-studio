@@ -3,10 +3,10 @@ id: SP05-036
 packId: pack_05
 name: Colossal War Drama
 styleAnchors:
-  - 'Colossal War Drama'
-displayName: 'Colossal War Shonen'
+  - Colossal War Drama
+displayName: Colossal War Shonen
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,47 +15,24 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from broad angular contours supported by fine structural
-    accents and broad and compact value shapes with scale contrast inside the existing subject.
-    Let slow weight shifts crossed by brief angled strokes set its rhythm; use charcoal, soft
-    gray, and worn red or gold accents for color and soft layered value gradients with restrained
-    paper grain for finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use broad angular contours supported by fine
-    structural accents for edge work, broad and compact value shapes with scale contrast inside
-    the existing subject for form simplification, and slow weight shifts crossed by brief angled
-    strokes only where movement is already requested.
-  color_and_tone: >-
-    Build value groups with charcoal, soft gray, and worn red or gold accents. Place the strongest
-    contrast on the requested focal area and preserve explicit color instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: diffused value transitions with narrow pale edge highlights. Keep
-    shadows grouped and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with soft layered value gradients with restrained paper grain,
-    preserving depicted materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use expansive asymmetrical blocks with scale shifts
-    among existing forms to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey mournful gravity and measured tension, while
-    preserving the prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with broad readable planes, restrained grain, and no ornamental clutter; keep detail
-    selective and accents attached to existing forms.
-  key_features: >-
-    broad angular contours supported by fine structural accents; broad and compact value shapes
-    with scale contrast inside the existing subject; charcoal, soft gray, and worn red or gold
-    accents; slow weight shifts crossed by brief angled strokes; soft layered value gradients with
-    restrained paper grain; expansive asymmetrical blocks with scale shifts among existing forms.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with broad angular
-    contours supported by fine structural accents, broad and compact value shapes with scale
-    contrast inside the existing subject, and charcoal, soft gray, and worn red or gold accents;
-    use slow weight shifts crossed by brief angled strokes only where movement is already present,
-    and apply soft layered value gradients with restrained paper grain as the drawing finish.
+  aesthetic: 'Late-war anime drama: thin, slightly scratchy contours over brush-textured painted backgrounds, desaturated like old wartime photographs under a soft film grain.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Charcoal, ash grey, dust ochre and faded khaki, with worn crimson or tarnished gold as the only accent.
+  lighting_and_shadow: Diffuse smoky daylight, soft graded shadows, and a narrow pale rim separating figures from haze.
+  texture_and_material: Visible bristle marks in skies, walls and smoke; faint grain laid evenly over the cels.
+  camera_and_composition: Keep the requested framing; asymmetric compositions set small figures against large, heavy painted masses.
+  atmosphere_and_mood: Mournful gravity and the weight of consequence.
+  rendering_and_quality: Thin lines with soft modelled cel shading, painterly backgrounds and restrained color.
+  key_features: brush-textured painted backgrounds; desaturated wartime palette; thin scratchy contour; soft film grain; small figures against heavy masses
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Colossal War Drama as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
+  - armband insignia
   - realistic
   - 3d render
   - photo
@@ -87,16 +64,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-036.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, real-world uniforms, fascist insignia, giant humanoids,
-    battlefield gore, guns near-plane, named franchise likeness, propaganda poster text, dense
-    forest, same ruined corridor formula, photoreal cosplay, western superhero comic, generic shonen
-    source-frame look, fixed canon character, title scene replication, required source-frame look,
-    cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, armband insignia, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, real-world uniforms, fascist insignia, giant humanoids, battlefield gore, guns near-plane, named franchise likeness, propaganda poster text, dense forest, same ruined corridor formula, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-143
 packId: pack_05
-name: Darker than Black - Contract Killer Night Rain
+name: Cold Starfield Night Noir
 styleAnchors:
-  - 'Darker than Black - Contract Killer Night Rain'
-displayName: 'Contract Killer Night Rain'
+  - Cold Starfield Night Noir
+  - Darker than Black - Contract Killer Night Rain
+displayName: Cold Starfield Night Noir
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,48 +16,23 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from fine dark contours threaded by thin cyan accents and
-    reflective planes and sharply blocked negative shapes. Let long linear trails interrupted by
-    short, quiet breaks set its rhythm; use blue-black and charcoal with narrow cyan highlights
-    for color and broken reflective highlights and fine surface streaks over matte dark fields for
-    finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use fine dark contours threaded by thin cyan
-    accents for edge work, reflective planes and sharply blocked negative shapes for form
-    simplification, and long linear trails interrupted by short, quiet breaks only where movement
-    is already requested.
-  color_and_tone: >-
-    Build value groups with blue-black and charcoal with narrow cyan highlights. Place the
-    strongest contrast on the requested focal area and preserve explicit color instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: cool reflected accents against deep shadow, without implying a new
-    light source. Keep shadows grouped and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with broken reflective highlights and fine surface streaks over matte
-    dark fields, preserving depicted materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use guarded negative space, off-center balance, and a
-    narrow path through the frame to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey lonely secrecy and restrained unease, while
-    preserving the prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with thin cyan line accents, dark reflective values, and generous negative space; keep
-    detail selective and accents attached to existing forms.
-  key_features: >-
-    fine dark contours threaded by thin cyan accents; reflective planes and sharply blocked
-    negative shapes; blue-black and charcoal with narrow cyan highlights; long linear trails
-    interrupted by short, quiet breaks; broken reflective highlights and fine surface streaks over
-    matte dark fields; guarded negative space, off-center balance, and a narrow path through the
-    frame.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with fine dark contours
-    threaded by thin cyan accents, reflective planes and sharply blocked negative shapes, and
-    blue-black and charcoal with narrow cyan highlights; use long linear trails interrupted by
-    short, quiet breaks only where movement is already present, and apply broken reflective
-    highlights and fine surface streaks over matte dark fields as the drawing finish.
+  aesthetic: 'Urban night noir anime: fine dark contours threaded by thin cyan lines, an unnaturally starry sky over a blue-black city, and faint glowing cyan edges on figures.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Blue-black and charcoal with narrow cyan highlights and pinpoint stars.
+  lighting_and_shadow: Cool reflected accents against deep shadow, without adding a new light fixture.
+  texture_and_material: Broken reflective highlights and fine surface streaks over matte dark fields.
+  camera_and_composition: Keep the requested framing; guarded negative space, off-center balance and a large sky where the view allows.
+  atmosphere_and_mood: Lonely secrecy and restrained unease, a quiet city under a sky that feels false.
+  rendering_and_quality: Thin cyan line accents, dark reflective values and generous empty space.
+  key_features: false starfield sky; thin cyan contour threads; blue-black city; glowing cyan edges; guarded negative space
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cold Starfield Night Noir as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
   - realistic
   - 3d render
   - photo
@@ -86,16 +62,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-143.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, named franchise likeness, gun, knife, assassin pose,
-    surveillance UI, readable signs, alley corridor lock, photoreal cosplay, western superhero
-    comic, generic shonen source-frame look, fixed canon character, title scene replication,
-    required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy
-    noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, named franchise likeness, gun, knife, assassin pose, surveillance UI, readable signs, alley corridor lock, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

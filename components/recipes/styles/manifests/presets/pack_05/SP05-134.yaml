@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-134
 packId: pack_05
-name: Sakamoto Days - Convenience-Store Assassin Sprint
+name: Fluorescent Everyday Snap Action
 styleAnchors:
-  - 'Sakamoto Days - Convenience-Store Assassin Sprint'
-displayName: 'Convenience-Store Assassin Sprint'
+  - Fluorescent Everyday Snap Action
+  - Sakamoto Days - Convenience-Store Assassin Sprint
+displayName: Fluorescent Everyday Snap Action
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,46 +16,25 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from calm, clean contours punctuated by tightly snapped
-    marks and ordinary forms simplified into stable color blocks. Let short linear rhythms that
-    sharpen the existing gesture set its rhythm; use cool fluorescent tones, pale neutrals, and
-    one warm accent for color and smooth flat fills with very limited texture for finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use calm, clean contours punctuated by tightly
-    snapped marks for edge work, ordinary forms simplified into stable color blocks for form
-    simplification, and short linear rhythms that sharpen the existing gesture only where movement
-    is already requested.
-  color_and_tone: >-
-    Build value groups with cool fluorescent tones, pale neutrals, and one warm accent. Place the
-    strongest contrast on the requested focal area and preserve explicit color instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: even cool-white value separation with no implied light fixture.
-    Keep shadows grouped and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with smooth flat fills with very limited texture, preserving depicted
-    materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use clear horizontal or diagonal lanes within the
-    requested composition to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey calm timing interrupted by a sharp visual accent,
-    while preserving the prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with quiet base shapes, sharp directional lines, and minimal detail; keep detail
-    selective and accents attached to existing forms.
-  key_features: >-
-    calm, clean contours punctuated by tightly snapped marks; ordinary forms simplified into
-    stable color blocks; cool fluorescent tones, pale neutrals, and one warm accent; short linear
-    rhythms that sharpen the existing gesture; smooth flat fills with very limited texture; clear
-    horizontal or diagonal lanes within the requested composition.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with calm, clean contours
-    punctuated by tightly snapped marks, ordinary forms simplified into stable color blocks, and
-    cool fluorescent tones, pale neutrals, and one warm accent; use short linear rhythms that
-    sharpen the existing gesture only where movement is already present, and apply smooth flat
-    fills with very limited texture as the drawing finish.
+  aesthetic: 'Everyday-object action anime: calm thin contours and flat retail color, broken by a single snapped motion where one limb or object becomes a short straight smear with crisp speed ticks.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Pale fluorescent white, mint and cool grey dominate; one warm tangerine accent marks the snapped element.
+  lighting_and_shadow: Flat overhead cool-white wash with almost no modelling; only the snapped element casts a crisp short shadow.
+  texture_and_material: Smooth flat fills and fine even lines; the smear is three to five parallel straight strokes, never a soft blur.
+  camera_and_composition: Keep the requested framing; stack the scene in clear horizontal lanes and let the snap cut diagonally across one lane.
+  atmosphere_and_mood: Mundane calm with one instant of startling precision.
+  rendering_and_quality: Minimal detail and clean shapes, with the snap the only streaked element in the frame.
+  key_features: calm thin contours; one snapped straight smear; pale fluorescent palette; single tangerine accent; horizontal lane staging
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fluorescent Everyday Snap Action as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
+  - apron-wearing retired assassin
+  - shop counter
   - realistic
   - 3d render
   - photo
@@ -83,15 +63,15 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-134.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, supermarket aisle, weapon, product labels, crowd, storefront,
-    franchise likeness, photoreal cosplay, western superhero comic, generic shonen source-frame
-    look, fixed canon character, title scene replication, required source-frame look, cosplay,
-    generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, apron-wearing retired assassin, shop counter, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, supermarket aisle, weapon, product labels, crowd, storefront, franchise likeness, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -3,7 +3,7 @@ id: SP05-039
 packId: pack_05
 name: Tactical Adventure Shonen
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,47 +12,25 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from precise diagram-like lines layered over clean animated
-    contours and modular shapes linked by branching, non-literal connector lines. Let sequenced
-    paths that fork, loop, and pause set its rhythm; use clear blue, white, and selected bright
-    accents against ink-dark for color and clean flat fields with fine rule lines and no legible
-    labels for finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use precise diagram-like lines layered over clean
-    animated contours for edge work, modular shapes linked by branching, non-literal connector
-    lines for form simplification, and sequenced paths that fork, loop, and pause only where
-    movement is already requested.
-  color_and_tone: >-
-    Build value groups with clear blue, white, and selected bright accents against ink-dark. Place
-    the strongest contrast on the requested focal area and preserve explicit color instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: even graphic values and sharply defined edges. Keep shadows
-    grouped and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with clean flat fields with fine rule lines and no legible labels,
-    preserving depicted materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use orderly clusters linked across layered space, with
-    clear intervals to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey playful strategic clarity, while preserving the
-    prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with crisp segments, simple color logic, and a small number of diagram lines; keep
-    detail selective and accents attached to existing forms.
-  key_features: >-
-    precise diagram-like lines layered over clean animated contours; modular shapes linked by
-    branching, non-literal connector lines; clear blue, white, and selected bright accents against
-    ink-dark; sequenced paths that fork, loop, and pause; clean flat fields with fine rule lines
-    and no legible labels; orderly clusters linked across layered space, with clear intervals.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with precise diagram-like
-    lines layered over clean animated contours, modular shapes linked by branching, non-literal
-    connector lines, and clear blue, white, and selected bright accents against ink-dark; use
-    sequenced paths that fork, loop, and pause only where movement is already present, and apply
-    clean flat fields with fine rule lines and no legible labels as the drawing finish.
+  aesthetic: 'Bright adventure-TV anime: slim clean contours and simple sunlit cel color, with inner power drawn as a translucent, wobbling double outline that hugs a figure like heat shimmer.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Clear sky blue, leaf green, white and warm skin tones; each shimmer outline in its own soft hue at low opacity.
+  lighting_and_shadow: Clean midday light, one cel shadow tier, and a pale bounce under chins and brims.
+  texture_and_material: Smooth flat fills; the shimmer outline slightly blurred and wavering, never a solid glow.
+  camera_and_composition: Keep the requested framing; roomy compositions with clear intervals between figures, readable at a glance like a strategy map.
+  atmosphere_and_mood: Playful curiosity sharpened by quiet calculation, bright and open but always a step ahead.
+  rendering_and_quality: Crisp lines, minimal texture, and the shimmer halo only where the prompt shows focus or effort.
+  key_features: slim clean contour; translucent wobbling aura outline; sunlit cel palette; clear figure intervals; one-tier cel shadow
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tactical Adventure Shonen as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
+  - spiky white-haired boy
+  - playing-card weapon
   - realistic
   - 3d render
   - photo
@@ -83,16 +61,15 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-039.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, hunter-license copy, card-game UI, readable labels, fishing-rod
-    hero prop, green outfit copy, franchise team likeness, dense forest, generic ruin corridor,
-    photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon
-    character, title scene replication, required source-frame look, cosplay, generic anime filter,
-    prompt-required card, logo, muddy noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, spiky white-haired boy, playing-card weapon, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, hunter-license copy, card-game UI, readable labels, fishing-rod hero prop, green outfit copy, franchise team likeness, dense forest, generic ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

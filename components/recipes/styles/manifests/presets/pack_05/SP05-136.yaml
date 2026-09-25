@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-136
 packId: pack_05
-name: Black Clover - Grimoire Thunder Squad
+name: Etched Branch-Lightning Cel
 styleAnchors:
-  - 'Black Clover - Grimoire Thunder Squad'
-displayName: 'Grimoire Thunder Squad'
+  - Etched Branch-Lightning Cel
+  - Black Clover - Grimoire Thunder Squad
+displayName: Etched Branch-Lightning Cel
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,46 +16,26 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from precise angular outlines with fine ornamental repeats
-    and layered geometric forms and clean branching curves. Let parallel arcs that gather and
-    release in distinct beats set its rhythm; use deep green, black, ivory, and restrained gold
-    for color and polished cel fills with thin etched line details for finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use precise angular outlines with fine ornamental
-    repeats for edge work, layered geometric forms and clean branching curves for form
-    simplification, and parallel arcs that gather and release in distinct beats only where
-    movement is already requested.
-  color_and_tone: >-
-    Build value groups with deep green, black, ivory, and restrained gold. Place the strongest
-    contrast on the requested focal area and preserve explicit color instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: clear cel shadows with selected bright edge accents. Keep shadows
-    grouped and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with polished cel fills with thin etched line details, preserving
-    depicted materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use orderly clusters linked by broad diagonals and open
-    gaps to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey upbeat charge held within formal structure, while
-    preserving the prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with precise linework, green-black contrast, and ornamental detail kept selective; keep
-    detail selective and accents attached to existing forms.
-  key_features: >-
-    precise angular outlines with fine ornamental repeats; layered geometric forms and clean
-    branching curves; deep green, black, ivory, and restrained gold; parallel arcs that gather and
-    release in distinct beats; polished cel fills with thin etched line details; orderly clusters
-    linked by broad diagonals and open gaps.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with precise angular
-    outlines with fine ornamental repeats, layered geometric forms and clean branching curves, and
-    deep green, black, ivory, and restrained gold; use parallel arcs that gather and release in
-    distinct beats only where movement is already present, and apply polished cel fills with thin
-    etched line details as the drawing finish.
+  aesthetic: 'Magic-squad anime: thick spiky contours, fine etched engraving in leather, metal and stone, and energy drawn as jagged branching lightning in black-edged gold.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Deep forest green, black, ivory and restrained gold; lightning gold with black edges.
+  lighting_and_shadow: Clear cel shadows with bright edge accents only where lightning passes.
+  texture_and_material: Polished cel with thin etched engraving lines on hard materials, cloth kept plain.
+  camera_and_composition: Keep the requested framing; orderly clusters linked by broad diagonals, lightning branches framing rather than covering the subject.
+  atmosphere_and_mood: Rowdy determination held inside a formal structure.
+  rendering_and_quality: Precise linework, spiky hair and cloth ends, ornament kept selective.
+  key_features: black-edged gold lightning branches; etched engraving detail; forest green, black and gold; spiky contour ends; polished cel
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Etched Branch-Lightning Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
+  - five-leaf clover
+  - floating spellbook
+  - bull emblem
   - realistic
   - 3d render
   - photo
@@ -77,14 +58,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-136.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen
-    source-frame look, fixed canon character, title scene replication, required source-frame look,
-    cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, five-leaf clover, floating spellbook, bull emblem, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

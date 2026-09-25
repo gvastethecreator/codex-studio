@@ -3,10 +3,10 @@ id: SP05-033
 packId: pack_05
 name: Chaotic Splatter Action
 styleAnchors:
-  - 'Chaotic Splatter Action'
-displayName: 'Splatter Punk Action'
+  - Chaotic Splatter Action
+displayName: Splatter Punk Action
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,49 +15,23 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from scratchy high-weight contours with broken, jagged ends
-    and lopsided organic forms and sharp poster-like cutouts. Let uneven bursts, abrupt stops, and
-    elastic recoil marks set its rhythm; use saturated red against black and warm paper, with one
-    cool accent for color and graphic ink spatters, halftone breaks, and coarse screen texture for
-    finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use scratchy high-weight contours with broken,
-    jagged ends for edge work, lopsided organic forms and sharp poster-like cutouts for form
-    simplification, and uneven bursts, abrupt stops, and elastic recoil marks only where movement
-    is already requested.
-  color_and_tone: >-
-    Build value groups with saturated red against black and warm paper, with one cool accent.
-    Place the strongest contrast on the requested focal area and preserve explicit color
-    instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: flat high-contrast blocks with only a few white cuts. Keep shadows
-    grouped and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with graphic ink spatters, halftone breaks, and coarse screen
-    texture, preserving depicted materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use dense poster balance around an off-center focal
-    mass, with clean outer margins to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey unruly comedy and sudden visual surprise, while
-    preserving the prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with rough printed marks, bold flat shapes, and a clear poster rhythm; keep detail
-    selective and accents attached to existing forms.
-  key_features: >-
-    scratchy high-weight contours with broken, jagged ends; lopsided organic forms and sharp
-    poster-like cutouts; saturated red against black and warm paper, with one cool accent; uneven
-    bursts, abrupt stops, and elastic recoil marks; graphic ink spatters, halftone breaks, and
-    coarse screen texture; dense poster balance around an off-center focal mass, with clean outer
-    margins.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with scratchy high-weight
-    contours with broken, jagged ends, lopsided organic forms and sharp poster-like cutouts, and
-    saturated red against black and warm paper, with one cool accent; use uneven bursts, abrupt
-    stops, and elastic recoil marks only where movement is already present, and apply graphic ink
-    spatters, halftone breaks, and coarse screen texture as the drawing finish.
+  aesthetic: 'Punk screen-print action poster: scratchy heavy contours, lopsided cutout shapes, ink splatter used as graphic pattern, halftone breaks and off-register red.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Saturated red, black and warm paper, with one cool teal accent.
+  lighting_and_shadow: Flat high-contrast blocks with only a few white cuts.
+  texture_and_material: Ink spatter, halftone dots and coarse screen texture with slight registration slip.
+  camera_and_composition: Keep the requested framing; dense poster balance around an off-center focal mass with clean outer margins.
+  atmosphere_and_mood: Unruly comedy and sudden surprise, loud and messy like a punk gig flyer.
+  rendering_and_quality: Rough printed marks, bold flat shapes and a clear poster rhythm.
+  key_features: screen-print poster look; ink splatter pattern; off-register red; scratchy heavy contour; warm paper ground
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chaotic Splatter Action as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
   - realistic
   - 3d render
   - photo
@@ -89,16 +63,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-033.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, chainsaw head, gore, severed limbs, blood realism, named
-    character likeness, weapon-first composition, horror torture, dense forest, ruin corridor,
-    photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon
-    character, title scene replication, required source-frame look, cosplay, generic anime filter,
-    prompt-required card, logo, muddy noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, chainsaw head, gore, severed limbs, blood realism, named character likeness, weapon-first composition, horror torture, dense forest, ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

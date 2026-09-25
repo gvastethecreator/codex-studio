@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-131
 packId: pack_05
-name: Wind Breaker - Delinquent Street Protector Rush
+name: Sky-Blue Low-Angle Brawler Cel
 styleAnchors:
-  - 'Wind Breaker - Delinquent Street Protector Rush'
-displayName: 'Delinquent Street Protector Rush'
+  - Sky-Blue Low-Angle Brawler Cel
+  - Wind Breaker - Delinquent Street Protector Rush
+displayName: Sky-Blue Low-Angle Brawler Cel
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,45 +16,25 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from heavy clean contours with sharp tapered ends and
-    compact angular forms set off by broad dark masses. Let long directional slashes balanced by
-    held pauses set its rhythm; use cool blue-gray and black with one strong warm accent for color
-    and smooth cel fields with little surface grain for finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use heavy clean contours with sharp tapered ends
-    for edge work, compact angular forms set off by broad dark masses for form simplification, and
-    long directional slashes balanced by held pauses only where movement is already requested.
-  color_and_tone: >-
-    Build value groups with cool blue-gray and black with one strong warm accent. Place the
-    strongest contrast on the requested focal area and preserve explicit color instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: hard shadow blocks with a narrow bright edge. Keep shadows grouped
-    and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with smooth cel fields with little surface grain, preserving depicted
-    materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use staggered close spacing and forceful diagonals
-    inside the requested crop to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey brazen confidence and contained restlessness, while
-    preserving the prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with decisive line weight, broad dark values, and sparse directional marks; keep detail
-    selective and accents attached to existing forms.
-  key_features: >-
-    heavy clean contours with sharp tapered ends; compact angular forms set off by broad dark
-    masses; cool blue-gray and black with one strong warm accent; long directional slashes
-    balanced by held pauses; smooth cel fields with little surface grain; staggered close spacing
-    and forceful diagonals inside the requested crop.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with heavy clean contours
-    with sharp tapered ends, compact angular forms set off by broad dark masses, and cool
-    blue-gray and black with one strong warm accent; use long directional slashes balanced by held
-    pauses only where movement is already present, and apply smooth cel fields with little surface
-    grain as the drawing finish.
+  aesthetic: 'Street-youth anime: heavy clean contours with sharp tapered ends, low worm-eye angles, and flapping coats against a wide saturated sky with towering white clouds.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Saturated sky blue, cloud white and black, with one warm vermilion or spring-green accent.
+  lighting_and_shadow: Bright sun behind clouds, figures backlit, hard shadow blocks with a narrow bright edge.
+  texture_and_material: Smooth cel; cloud edges as crisp scalloped lines, cloth folds as sharp tapered strokes.
+  camera_and_composition: Keep the requested content; push a low angle and forceful diagonals with sky filling over half the frame.
+  atmosphere_and_mood: Brazen confidence and protective loyalty, the open sky making every stance feel larger.
+  rendering_and_quality: Decisive line weight and broad sky, with cloth flutter lines only where wind or motion already exists.
+  key_features: worm-eye low angle; sky blue and cloud white; tapered contour ends; flapping cloth folds; backlit hard shadows
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sky-Blue Low-Angle Brawler Cel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
+  - numbered gang jacket
+  - bandaged knuckles
   - realistic
   - 3d render
   - photo
@@ -76,14 +57,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-131.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen
-    source-frame look, fixed canon character, title scene replication, required source-frame look,
-    cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, numbered gang jacket, bandaged knuckles, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

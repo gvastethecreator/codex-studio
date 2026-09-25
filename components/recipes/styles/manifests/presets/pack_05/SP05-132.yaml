@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-132
 packId: pack_05
-name: Solo Leveling - Shadow Monarch Raid Ascension
+name: Full-Color Manhwa Shadow Glow
 styleAnchors:
-  - 'Solo Leveling - Shadow Monarch Raid Ascension'
-displayName: 'Shadow Monarch Raid Ascension'
+  - Full-Color Manhwa Shadow Glow
+  - Solo Leveling - Shadow Monarch Raid Ascension
+displayName: Full-Color Manhwa Shadow Glow
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,46 +16,26 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from narrow dark contours with selective cold edge light and
-    vertical forms rising through deep layered shadow blocks. Let narrow vertical sweeps
-    punctuated by short bright accents set its rhythm; use black and indigo with cold cyan
-    highlights for color and smooth shadow gradients with crisp luminous edges for finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use narrow dark contours with selective cold edge
-    light for edge work, vertical forms rising through deep layered shadow blocks for form
-    simplification, and narrow vertical sweeps punctuated by short bright accents only where
-    movement is already requested.
-  color_and_tone: >-
-    Build value groups with black and indigo with cold cyan highlights. Place the strongest
-    contrast on the requested focal area and preserve explicit color instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: deep value falloff with restrained cool rims. Keep shadows grouped
-    and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with smooth shadow gradients with crisp luminous edges, preserving
-    depicted materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use tall stacked planes and strong vertical scale within
-    the existing frame to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey quiet awe and controlled intensity, while
-    preserving the prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with dark tonal depth, thin cyan edges, and a clear vertical hierarchy; keep detail
-    selective and accents attached to existing forms.
-  key_features: >-
-    narrow dark contours with selective cold edge light; vertical forms rising through deep
-    layered shadow blocks; black and indigo with cold cyan highlights; narrow vertical sweeps
-    punctuated by short bright accents; smooth shadow gradients with crisp luminous edges; tall
-    stacked planes and strong vertical scale within the existing frame.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with narrow dark contours
-    with selective cold edge light, vertical forms rising through deep layered shadow blocks, and
-    black and indigo with cold cyan highlights; use narrow vertical sweeps punctuated by short
-    bright accents only where movement is already present, and apply smooth shadow gradients with
-    crisp luminous edges as the drawing finish.
+  aesthetic: 'Full-color vertical webcomic action: smooth airbrushed digital painting, narrow dark contours, deep black-violet shadows, glowing cyan eyes and smoky shadow silhouettes rising from the ground.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Black, indigo and violet with cold cyan highlights; skin cool and pale.
+  lighting_and_shadow: Deep value falloff and restrained cool rims; glow confined to eyes and a few edges.
+  texture_and_material: Soft airbrushed gradients, smoke as feathered wisps, crisp luminous edges.
+  camera_and_composition: Keep the requested framing; tall stacked planes and strong vertical scale suited to scroll reading.
+  atmosphere_and_mood: Quiet awe and rising dominance, darkness gathering upward toward a cold glow.
+  rendering_and_quality: Glossy digital finish with dark tonal depth and thin cyan edges, no panel borders.
+  key_features: airbrushed digital painting; glowing cyan eyes; smoky shadow silhouettes; black and violet palette; tall vertical staging
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Full-Color Manhwa Shadow Glow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
+  - shadow soldier army lineup
+  - hooded black hunter coat
+  - status window UI
   - realistic
   - 3d render
   - photo
@@ -77,14 +58,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-132.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen
-    source-frame look, fixed canon character, title scene replication, required source-frame look,
-    cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, shadow soldier army lineup, hooded black hunter coat, status window UI, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

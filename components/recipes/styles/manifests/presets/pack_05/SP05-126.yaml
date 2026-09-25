@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-126
 packId: pack_05
-name: Dandadan - Paranormal Turbo Romance Brawl
+name: Acid Occult Color-Burst Smear
 styleAnchors:
-  - 'Dandadan - Paranormal Turbo Romance Brawl'
-displayName: 'Paranormal Turbo Romance Brawl'
+  - Acid Occult Color-Burst Smear
+  - Dandadan - Paranormal Turbo Romance Brawl
+displayName: Acid Occult Color-Burst Smear
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,47 +16,25 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from elastic bright contours with doubled reaction marks and
-    rounded wavering forms offset by sharp comic accents. Let loops, snaps, and recoil arcs
-    attached to existing gestures set its rhythm; use teal, hot pink, and lime in small bursts
-    against dark ink for color and clean cel fills with faintly mottled translucent color regions
-    for finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use elastic bright contours with doubled reaction
-    marks for edge work, rounded wavering forms offset by sharp comic accents for form
-    simplification, and loops, snaps, and recoil arcs attached to existing gestures only where
-    movement is already requested.
-  color_and_tone: >-
-    Build value groups with teal, hot pink, and lime in small bursts against dark ink. Place the
-    strongest contrast on the requested focal area and preserve explicit color instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: opposed bright accents and sharp shadow cuts without a literal
-    glow source. Keep shadows grouped and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with clean cel fills with faintly mottled translucent color regions,
-    preserving depicted materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use contrasting color rhythms gathered around the focal
-    area with room to breathe to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey buoyant surprise and warm, quick shifts, while
-    preserving the prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with flexible contour, vivid color collision, and controlled graphic marks; keep detail
-    selective and accents attached to existing forms.
-  key_features: >-
-    elastic bright contours with doubled reaction marks; rounded wavering forms offset by sharp
-    comic accents; teal, hot pink, and lime in small bursts against dark ink; loops, snaps, and
-    recoil arcs attached to existing gestures; clean cel fills with faintly mottled translucent
-    color regions; contrasting color rhythms gathered around the focal area with room to breathe.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with elastic bright
-    contours with doubled reaction marks, rounded wavering forms offset by sharp comic accents,
-    and teal, hot pink, and lime in small bursts against dark ink; use loops, snaps, and recoil
-    arcs attached to existing gestures only where movement is already present, and apply clean cel
-    fills with faintly mottled translucent color regions as the drawing finish.
+  aesthetic: 'Paranormal comedy anime: elastic bright contours, doubled reaction lines, and sudden palette flips into acid teal, hot pink and lime, with fluid smear frames melting shapes during fast motion.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Dark ink ground with teal, hot pink and lime bursts; the palette flips only inside the effect zone.
+  lighting_and_shadow: Opposed bright accents and sharp shadow cuts, no literal glow source.
+  texture_and_material: Clean cel with mottled translucent color regions; smears as streaked, melted shapes.
+  camera_and_composition: Keep the requested framing; gather contrasting color rhythms around the focal area and leave room to breathe.
+  atmosphere_and_mood: Buoyant surprise and romance-tinged chaos, color flipping with every startled beat.
+  rendering_and_quality: Flexible contour, vivid color collision and controlled smear marks.
+  key_features: acid teal, hot pink and lime; melting smear frames; doubled reaction lines; elastic contour; palette flips
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Acid Occult Color-Burst Smear as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
+  - grey alien head
+  - ghost grandmother
   - realistic
   - 3d render
   - photo
@@ -83,15 +62,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-126.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, famous duo copy, no readable glyphs, no school corridor, no
-    creature attack, no crude joke, photoreal cosplay, western superhero comic, generic shonen
-    source-frame look, fixed canon character, title scene replication, required source-frame look,
-    cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, grey alien head, ghost grandmother, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, famous duo copy, no readable glyphs, no school corridor, no creature attack, no crude joke, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

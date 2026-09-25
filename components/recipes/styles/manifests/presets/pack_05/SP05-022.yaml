@@ -3,10 +3,10 @@ id: SP05-022
 packId: pack_05
 name: Urban Spirit Blade
 styleAnchors:
-  - 'Urban Spirit Blade'
-displayName: 'Urban Spirit Swordplay'
+  - Urban Spirit Blade
+displayName: Urban Spirit Swordplay
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,47 +15,23 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from fine variable contours with long tapered ends and
-    intentional gaps and elongated, fashion-like forms set against broad black-white divisions.
-    Let slow winding curves and measured drift set its rhythm; use monochrome black and ivory with
-    a restrained violet accent for color and matte dark fields offset by translucent ink-like
-    bands for finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use fine variable contours with long tapered ends
-    and intentional gaps for edge work, elongated, fashion-like forms set against broad
-    black-white divisions for form simplification, and slow winding curves and measured drift only
-    where movement is already requested.
-  color_and_tone: >-
-    Build value groups with monochrome black and ivory with a restrained violet accent. Place the
-    strongest contrast on the requested focal area and preserve explicit color instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: severe cel shadows with a narrow violet-white rim. Keep shadows
-    grouped and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with matte dark fields offset by translucent ink-like bands,
-    preserving depicted materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use vertical balance, wide negative spaces, and one
-    curving visual path to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey cool composure with latent tension, while
-    preserving the prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with precise contours, sharp value blocks, and very few luminous accents; keep detail
-    selective and accents attached to existing forms.
-  key_features: >-
-    fine variable contours with long tapered ends and intentional gaps; elongated, fashion-like
-    forms set against broad black-white divisions; monochrome black and ivory with a restrained
-    violet accent; slow winding curves and measured drift; matte dark fields offset by translucent
-    ink-like bands; vertical balance, wide negative spaces, and one curving visual path.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with fine variable
-    contours with long tapered ends and intentional gaps, elongated, fashion-like forms set
-    against broad black-white divisions, and monochrome black and ivory with a restrained violet
-    accent; use slow winding curves and measured drift only where movement is already present, and
-    apply matte dark fields offset by translucent ink-like bands as the drawing finish.
+  aesthetic: 'Fashion-plate supernatural anime: elongated slender figures in fine variable contours with deliberate gaps, set against stark black-white divisions and large blank ivory space.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Monochrome black and ivory with a single restrained violet accent.
+  lighting_and_shadow: Severe cel shadows and a narrow violet-white rim; backgrounds often dropped to flat light.
+  texture_and_material: Matte dark fields offset by translucent ink-like bands.
+  camera_and_composition: Keep the requested framing; vertical balance, wide negative space and one curving visual path.
+  atmosphere_and_mood: Cool composure with latent tension, elegance held like a breath before moving.
+  rendering_and_quality: Precise contours, sharp value blocks and very few luminous accents.
+  key_features: elongated fashion-plate proportions; blank ivory negative space; stark black-white division; single violet accent; fine gapped contour
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Urban Spirit Blade as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
   - realistic
   - 3d render
   - photo
@@ -85,16 +61,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-022.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, katana, soul reaper uniform, bleach-like robe, named-series
-    weapon, crosswalk fight, school uniform copy, recognizable franchise face, photoreal cosplay,
-    western superhero comic, generic shonen source-frame look, fixed canon character, title scene
-    replication, required source-frame look, cosplay, generic anime filter, prompt-required card,
-    logo, muddy noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, katana, soul reaper uniform, bleach-like robe, named-series weapon, crosswalk fight, school uniform copy, recognizable franchise face, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -9,9 +9,8 @@
   "presets": [
     {
       "id": "SP05-034",
-      "name": "Bright Academy Heroics",
-      "sourceName": "Bright Hero Academy",
-      "styleAnchors": ["Bright Hero Academy"],
+      "name": "Crosshatched Primary Hero Cel",
+      "styleAnchors": ["Crosshatched Primary Hero Cel", "Bright Hero Academy"],
       "ref": "pack_05/SP05-034.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -19,13 +18,15 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-034 bright academy heroics bright hero academy 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-034 crosshatched primary hero cel bright hero academy 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-133",
-      "name": "Brickwall Comedy Spell-School Brawl",
-      "sourceName": "Mashle - Brickwall Comedy Spell-School Brawl",
-      "styleAnchors": ["Mashle - Brickwall Comedy Spell-School Brawl"],
+      "name": "Deadpan Filigree Brick Comedy",
+      "styleAnchors": [
+        "Deadpan Filigree Brick Comedy",
+        "Mashle - Brickwall Comedy Spell-School Brawl"
+      ],
       "ref": "pack_05/SP05-133.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -33,13 +34,15 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-133 brickwall comedy spell-school brawl mashle - brickwall comedy spell-school brawl 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-133 deadpan filigree brick comedy mashle - brickwall comedy spell-school brawl 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-134",
-      "name": "Convenience-Store Assassin Sprint",
-      "sourceName": "Sakamoto Days - Convenience-Store Assassin Sprint",
-      "styleAnchors": ["Sakamoto Days - Convenience-Store Assassin Sprint"],
+      "name": "Fluorescent Everyday Snap Action",
+      "styleAnchors": [
+        "Fluorescent Everyday Snap Action",
+        "Sakamoto Days - Convenience-Store Assassin Sprint"
+      ],
       "ref": "pack_05/SP05-134.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -47,7 +50,7 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-134 convenience-store assassin sprint sakamoto days - convenience-store assassin sprint 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-134 fluorescent everyday snap action sakamoto days - convenience-store assassin sprint 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-032",
@@ -105,9 +108,11 @@
     },
     {
       "id": "SP05-121",
-      "name": "Lantern Bloodline Sword Ballet",
-      "sourceName": "Demon Slayer - Lantern Bloodline Sword Ballet",
-      "styleAnchors": ["Demon Slayer - Lantern Bloodline Sword Ballet"],
+      "name": "Printed-Wave Effect Trail Cel",
+      "styleAnchors": [
+        "Printed-Wave Effect Trail Cel",
+        "Demon Slayer - Lantern Bloodline Sword Ballet"
+      ],
       "ref": "pack_05/SP05-121.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -115,13 +120,15 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-121 lantern bloodline sword ballet demon slayer - lantern bloodline sword ballet 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-121 printed-wave effect trail cel demon slayer - lantern bloodline sword ballet 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-124",
-      "name": "Predator-Ego Sports Assault",
-      "sourceName": "Blue Lock - Predator-Ego Sports Assault",
-      "styleAnchors": ["Blue Lock - Predator-Ego Sports Assault"],
+      "name": "Ultramarine Glare Foreshortening",
+      "styleAnchors": [
+        "Ultramarine Glare Foreshortening",
+        "Blue Lock - Predator-Ego Sports Assault"
+      ],
       "ref": "pack_05/SP05-124.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -129,13 +136,15 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-124 predator-ego sports assault blue lock - predator-ego sports assault 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-124 ultramarine glare foreshortening blue lock - predator-ego sports assault 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-128",
-      "name": "Royal Black Blade Opera",
-      "sourceName": "Bleach: Thousand-Year Blood War - Royal Black Blade Opera",
-      "styleAnchors": ["Bleach: Thousand-Year Blood War - Royal Black Blade Opera"],
+      "name": "Inverted Negative Ink Opera",
+      "styleAnchors": [
+        "Inverted Negative Ink Opera",
+        "Bleach: Thousand-Year Blood War - Royal Black Blade Opera"
+      ],
       "ref": "pack_05/SP05-128.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -143,13 +152,15 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-128 royal black blade opera bleach: thousand-year blood war - royal black blade opera 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-128 inverted negative ink opera bleach: thousand-year blood war - royal black blade opera 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-131",
-      "name": "Delinquent Street Protector Rush",
-      "sourceName": "Wind Breaker - Delinquent Street Protector Rush",
-      "styleAnchors": ["Wind Breaker - Delinquent Street Protector Rush"],
+      "name": "Sky-Blue Low-Angle Brawler Cel",
+      "styleAnchors": [
+        "Sky-Blue Low-Angle Brawler Cel",
+        "Wind Breaker - Delinquent Street Protector Rush"
+      ],
       "ref": "pack_05/SP05-131.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -157,13 +168,12 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-131 delinquent street protector rush wind breaker - delinquent street protector rush 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-131 sky-blue low-angle brawler cel wind breaker - delinquent street protector rush 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-135",
-      "name": "Rule-Breaker Curse Impact",
-      "sourceName": "Undead Unluck - Rule-Breaker Curse Impact",
-      "styleAnchors": ["Undead Unluck - Rule-Breaker Curse Impact"],
+      "name": "Broken-Rule Halftone Shatter",
+      "styleAnchors": ["Broken-Rule Halftone Shatter", "Undead Unluck - Rule-Breaker Curse Impact"],
       "ref": "pack_05/SP05-135.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -171,13 +181,12 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-135 rule-breaker curse impact undead unluck - rule-breaker curse impact 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-135 broken-rule halftone shatter undead unluck - rule-breaker curse impact 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-136",
-      "name": "Grimoire Thunder Squad",
-      "sourceName": "Black Clover - Grimoire Thunder Squad",
-      "styleAnchors": ["Black Clover - Grimoire Thunder Squad"],
+      "name": "Etched Branch-Lightning Cel",
+      "styleAnchors": ["Etched Branch-Lightning Cel", "Black Clover - Grimoire Thunder Squad"],
       "ref": "pack_05/SP05-136.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -185,13 +194,15 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-136 grimoire thunder squad black clover - grimoire thunder squad 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-136 etched branch-lightning cel black clover - grimoire thunder squad 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-138",
-      "name": "Sword Oath Under Neon Rain",
-      "sourceName": "Kagurabachi - Sword Oath Under Neon Rain",
-      "styleAnchors": ["Kagurabachi - Sword Oath Under Neon Rain"],
+      "name": "Sumi-Black Neon Edge Stillness",
+      "styleAnchors": [
+        "Sumi-Black Neon Edge Stillness",
+        "Kagurabachi - Sword Oath Under Neon Rain"
+      ],
       "ref": "pack_05/SP05-138.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -199,13 +210,15 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-138 sword oath under neon rain kagurabachi - sword oath under neon rain 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-138 sumi-black neon edge stillness kagurabachi - sword oath under neon rain 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-139",
-      "name": "Wall Rupture Desperation",
-      "sourceName": "Attack on Titan - Wall Rupture Desperation",
-      "styleAnchors": ["Attack on Titan - Wall Rupture Desperation"],
+      "name": "Crosshatched Giant-Scale Panic",
+      "styleAnchors": [
+        "Crosshatched Giant-Scale Panic",
+        "Attack on Titan - Wall Rupture Desperation"
+      ],
       "ref": "pack_05/SP05-139.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -213,13 +226,15 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-139 wall rupture desperation attack on titan - wall rupture desperation 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-139 crosshatched giant-scale panic attack on titan - wall rupture desperation 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-140",
-      "name": "Ancient Calm Spell Impact",
-      "sourceName": "Frieren Combat Flashback - Ancient Calm Spell Impact",
-      "styleAnchors": ["Frieren Combat Flashback - Ancient Calm Spell Impact"],
+      "name": "Pale Calm Spell Geometry",
+      "styleAnchors": [
+        "Pale Calm Spell Geometry",
+        "Frieren Combat Flashback - Ancient Calm Spell Impact"
+      ],
       "ref": "pack_05/SP05-140.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -227,7 +242,7 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-140 ancient calm spell impact frieren combat flashback - ancient calm spell impact 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-140 pale calm spell geometry frieren combat flashback - ancient calm spell impact 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-037",
@@ -245,9 +260,8 @@
     },
     {
       "id": "SP05-129",
-      "name": "Prestige Hero Impact Satire",
-      "sourceName": "One-Punch Man - Prestige Hero Impact Satire",
-      "styleAnchors": ["One-Punch Man - Prestige Hero Impact Satire"],
+      "name": "Dual-Detail Deadpan Satire",
+      "styleAnchors": ["Dual-Detail Deadpan Satire", "One-Punch Man - Prestige Hero Impact Satire"],
       "ref": "pack_05/SP05-129.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -255,13 +269,15 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-129 prestige hero impact satire one-punch man - prestige hero impact satire 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-129 dual-detail deadpan satire one-punch man - prestige hero impact satire 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-132",
-      "name": "Shadow Monarch Raid Ascension",
-      "sourceName": "Solo Leveling - Shadow Monarch Raid Ascension",
-      "styleAnchors": ["Solo Leveling - Shadow Monarch Raid Ascension"],
+      "name": "Full-Color Manhwa Shadow Glow",
+      "styleAnchors": [
+        "Full-Color Manhwa Shadow Glow",
+        "Solo Leveling - Shadow Monarch Raid Ascension"
+      ],
       "ref": "pack_05/SP05-132.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -269,7 +285,7 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-132 shadow monarch raid ascension solo leveling - shadow monarch raid ascension 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-132 full-color manhwa shadow glow solo leveling - shadow monarch raid ascension 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-040",
@@ -287,9 +303,8 @@
     },
     {
       "id": "SP05-123",
-      "name": "Cathedral Inferno Brigade",
-      "sourceName": "Fire Force - Cathedral Inferno Brigade",
-      "styleAnchors": ["Fire Force - Cathedral Inferno Brigade"],
+      "name": "White-Core Flame Halo Cel",
+      "styleAnchors": ["White-Core Flame Halo Cel", "Fire Force - Cathedral Inferno Brigade"],
       "ref": "pack_05/SP05-123.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -297,13 +312,15 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-123 cathedral inferno brigade fire force - cathedral inferno brigade 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-123 white-core flame halo cel fire force - cathedral inferno brigade 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-125",
-      "name": "Civic Monster Response Unit",
-      "sourceName": "Kaiju No. 8 - Civic Monster Response Unit",
-      "styleAnchors": ["Kaiju No. 8 - Civic Monster Response Unit"],
+      "name": "Hazard-Orange Monster Response Cel",
+      "styleAnchors": [
+        "Hazard-Orange Monster Response Cel",
+        "Kaiju No. 8 - Civic Monster Response Unit"
+      ],
       "ref": "pack_05/SP05-125.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -311,13 +328,15 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-125 civic monster response unit kaiju no. 8 - civic monster response unit 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-125 hazard-orange monster response cel kaiju no. 8 - civic monster response unit 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-126",
-      "name": "Paranormal Turbo Romance Brawl",
-      "sourceName": "Dandadan - Paranormal Turbo Romance Brawl",
-      "styleAnchors": ["Dandadan - Paranormal Turbo Romance Brawl"],
+      "name": "Acid Occult Color-Burst Smear",
+      "styleAnchors": [
+        "Acid Occult Color-Burst Smear",
+        "Dandadan - Paranormal Turbo Romance Brawl"
+      ],
       "ref": "pack_05/SP05-126.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -325,13 +344,12 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-126 paranormal turbo romance brawl dandadan - paranormal turbo romance brawl 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-126 acid occult color-burst smear dandadan - paranormal turbo romance brawl 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-127",
-      "name": "Poison Garden Executioner",
-      "sourceName": "Hell's Paradise - Poison Garden Executioner",
-      "styleAnchors": ["Hell's Paradise - Poison Garden Executioner"],
+      "name": "Toxic Flower Etched Ink",
+      "styleAnchors": ["Toxic Flower Etched Ink", "Hell's Paradise - Poison Garden Executioner"],
       "ref": "pack_05/SP05-127.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -339,7 +357,7 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-127 poison garden executioner hell's paradise - poison garden executioner 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-127 toxic flower etched ink hell's paradise - poison garden executioner 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-038",
@@ -357,9 +375,11 @@
     },
     {
       "id": "SP05-130",
-      "name": "Psychic Paint-Surge Meltdown",
-      "sourceName": "Mob Psycho 100 - Psychic Paint-Surge Meltdown",
-      "styleAnchors": ["Mob Psycho 100 - Psychic Paint-Surge Meltdown"],
+      "name": "Paint-on-Glass Surge Burst",
+      "styleAnchors": [
+        "Paint-on-Glass Surge Burst",
+        "Mob Psycho 100 - Psychic Paint-Surge Meltdown"
+      ],
       "ref": "pack_05/SP05-130.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -367,13 +387,15 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-130 psychic paint-surge meltdown mob psycho 100 - psychic paint-surge meltdown 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-130 paint-on-glass surge burst mob psycho 100 - psychic paint-surge meltdown 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-137",
-      "name": "Science Kingdom Action Blueprint",
-      "sourceName": "Dr. Stone - Science Kingdom Action Blueprint",
-      "styleAnchors": ["Dr. Stone - Science Kingdom Action Blueprint"],
+      "name": "Chalk-Schematic Inventor Cel",
+      "styleAnchors": [
+        "Chalk-Schematic Inventor Cel",
+        "Dr. Stone - Science Kingdom Action Blueprint"
+      ],
       "ref": "pack_05/SP05-137.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -381,7 +403,7 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-137 science kingdom action blueprint dr. stone - science kingdom action blueprint 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-137 chalk-schematic inventor cel dr. stone - science kingdom action blueprint 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-031",
@@ -411,9 +433,8 @@
     },
     {
       "id": "SP05-122",
-      "name": "Filthy Devil-Hunter Frenzy",
-      "sourceName": "Chainsaw Man - Filthy Devil-Hunter Frenzy",
-      "styleAnchors": ["Chainsaw Man - Filthy Devil-Hunter Frenzy"],
+      "name": "Muted Cinematic Grime Frenzy",
+      "styleAnchors": ["Muted Cinematic Grime Frenzy", "Chainsaw Man - Filthy Devil-Hunter Frenzy"],
       "ref": "pack_05/SP05-122.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -421,7 +442,7 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-122 filthy devil-hunter frenzy chainsaw man - filthy devil-hunter frenzy 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-122 muted cinematic grime frenzy chainsaw man - filthy devil-hunter frenzy 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-025",
@@ -439,9 +460,8 @@
     },
     {
       "id": "SP05-148",
-      "name": "Jazz Railcrime Ensemble",
-      "sourceName": "Baccano! - Jazz Railcrime Ensemble",
-      "styleAnchors": ["Baccano! - Jazz Railcrime Ensemble"],
+      "name": "Amber Jazz-Age Ensemble Cel",
+      "styleAnchors": ["Amber Jazz-Age Ensemble Cel", "Baccano! - Jazz Railcrime Ensemble"],
       "ref": "pack_05/SP05-148.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -449,13 +469,12 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-148 jazz railcrime ensemble baccano! - jazz railcrime ensemble 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-148 amber jazz-age ensemble cel baccano! - jazz railcrime ensemble 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-021",
-      "name": "Kinetic Ninja Shonen",
-      "sourceName": "Headband Ninja Journey",
-      "styleAnchors": ["Headband Ninja Journey"],
+      "name": "Teal-Orange Sakuga Smear",
+      "styleAnchors": ["Teal-Orange Sakuga Smear", "Headband Ninja Journey"],
       "ref": "pack_05/SP05-021.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -463,7 +482,7 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-021 kinetic ninja shonen headband ninja journey 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-021 teal-orange sakuga smear headband ninja journey 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-022",
@@ -481,9 +500,8 @@
     },
     {
       "id": "SP05-023",
-      "name": "Elastic Voyage Shonen",
-      "sourceName": "Grand Pirate Adventure",
-      "styleAnchors": ["Grand Pirate Adventure"],
+      "name": "Elastic Big-Grin Adventure Cel",
+      "styleAnchors": ["Elastic Big-Grin Adventure Cel", "Grand Pirate Adventure"],
       "ref": "pack_05/SP05-023.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -491,7 +509,7 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-023 elastic voyage shonen grand pirate adventure 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-023 elastic big-grin adventure cel grand pirate adventure 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-028",
@@ -521,9 +539,8 @@
     },
     {
       "id": "SP05-142",
-      "name": "South Seas Gun-Runner Grit",
-      "sourceName": "Black Lagoon - South Seas Gun-Runner Grit",
-      "styleAnchors": ["Black Lagoon - South Seas Gun-Runner Grit"],
+      "name": "Humid Tropic Grit Cel",
+      "styleAnchors": ["Humid Tropic Grit Cel", "Black Lagoon - South Seas Gun-Runner Grit"],
       "ref": "pack_05/SP05-142.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -531,13 +548,15 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-142 south seas gun-runner grit black lagoon - south seas gun-runner grit 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-142 humid tropic grit cel black lagoon - south seas gun-runner grit 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-143",
-      "name": "Contract Killer Night Rain",
-      "sourceName": "Darker than Black - Contract Killer Night Rain",
-      "styleAnchors": ["Darker than Black - Contract Killer Night Rain"],
+      "name": "Cold Starfield Night Noir",
+      "styleAnchors": [
+        "Cold Starfield Night Noir",
+        "Darker than Black - Contract Killer Night Rain"
+      ],
       "ref": "pack_05/SP05-143.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -545,13 +564,12 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-143 contract killer night rain darker than black - contract killer night rain 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-143 cold starfield night noir darker than black - contract killer night rain 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-144",
-      "name": "Lo-Fi Edo Swagger",
-      "sourceName": "Samurai Champloo - Lo-Fi Edo Swagger",
-      "styleAnchors": ["Samurai Champloo - Lo-Fi Edo Swagger"],
+      "name": "Record-Scratch Stutter Swagger",
+      "styleAnchors": ["Record-Scratch Stutter Swagger", "Samurai Champloo - Lo-Fi Edo Swagger"],
       "ref": "pack_05/SP05-144.yaml",
       "packId": "pack_05",
       "packName": "Anime 01 — Anime Battle & Worlds",
@@ -559,7 +577,7 @@
       "categoryName": "1. Modern Shonen & Action",
       "tags": ["anime-01-anime-battle-and-worlds", "modern-shonen-and-action"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-144 lo-fi edo swagger samurai champloo - lo-fi edo swagger 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
+      "searchableText": "sp05-144 record-scratch stutter swagger samurai champloo - lo-fi edo swagger 1. modern shonen & action action drawing pack_05 anime 01 — anime battle & worlds modern-shonen-and-action anime-01-anime-battle-and-worlds modern-shonen-and-action"
     },
     {
       "id": "SP05-056",

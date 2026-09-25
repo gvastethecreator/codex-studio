@@ -3,10 +3,10 @@ id: SP05-028
 packId: pack_05
 name: Lo-Fi Sword Roadtrip
 styleAnchors:
-  - 'Lo-Fi Sword Roadtrip'
-displayName: 'Lo-Fi Sword Drifter'
+  - Lo-Fi Sword Roadtrip
+displayName: Lo-Fi Sword Drifter
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,47 +15,23 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from dry brush lines with imperfect tapered ends and fluid
-    shadow shapes and flattened, slightly oversized forms. Let beat-like alternation between short
-    marks and long follow-through set its rhythm; use dusty ochre and sepia against pale cyan and
-    deep brown for color and scratched brush edges over subtle analog grain and clean rests for
-    finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use dry brush lines with imperfect tapered ends
-    for edge work, fluid shadow shapes and flattened, slightly oversized forms for form
-    simplification, and beat-like alternation between short marks and long follow-through only
-    where movement is already requested.
-  color_and_tone: >-
-    Build value groups with dusty ochre and sepia against pale cyan and deep brown. Place the
-    strongest contrast on the requested focal area and preserve explicit color instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: warm and cool value bands with minimal internal shading. Keep
-    shadows grouped and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with scratched brush edges over subtle analog grain and clean rests,
-    preserving depicted materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use off-axis focal weight, broad quiet margins, and
-    sparse directional marks to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey laid-back confidence and held rhythm, while
-    preserving the prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with subdued colors, visible brush grain, and uncluttered silhouettes; keep detail
-    selective and accents attached to existing forms.
-  key_features: >-
-    dry brush lines with imperfect tapered ends; fluid shadow shapes and flattened, slightly
-    oversized forms; dusty ochre and sepia against pale cyan and deep brown; beat-like alternation
-    between short marks and long follow-through; scratched brush edges over subtle analog grain
-    and clean rests; off-axis focal weight, broad quiet margins, and sparse directional marks.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with dry brush lines with
-    imperfect tapered ends, fluid shadow shapes and flattened, slightly oversized forms, and dusty
-    ochre and sepia against pale cyan and deep brown; use beat-like alternation between short
-    marks and long follow-through only where movement is already present, and apply scratched
-    brush edges over subtle analog grain and clean rests as the drawing finish.
+  aesthetic: 'Road-movie anime: dry brush lines with imperfect tapered ends, flattened slightly oversized forms, dusty grain and long landscapes crossed on foot.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Dusty ochre and sepia against pale cyan sky and deep brown shadow.
+  lighting_and_shadow: Late sun in warm and cool value bands with minimal internal shading.
+  texture_and_material: Scratched brush edges over subtle analog grain, with clean resting areas.
+  camera_and_composition: Keep the requested framing; off-axis focal weight, broad quiet margins and low wide horizons.
+  atmosphere_and_mood: Laid-back confidence on a long road, time moving slowly under a wide sky.
+  rendering_and_quality: Subdued color, visible brush grain and uncluttered silhouettes.
+  key_features: dry brush line; dusty ochre and sepia; long low horizons; analog grain; off-axis focal weight
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lo-Fi Sword Roadtrip as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
   - realistic
   - 3d render
   - photo
@@ -84,16 +60,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-028.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, katana-first pose, samurai-copy outfit, named-series roadtrip
-    trio, hip-hop stereotype, dead bodies, school-stair fight, photoreal cosplay, western superhero
-    comic, generic shonen source-frame look, fixed canon character, title scene replication,
-    required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy
-    noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, katana-first pose, samurai-copy outfit, named-series roadtrip trio, hip-hop stereotype, dead bodies, school-stair fight, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

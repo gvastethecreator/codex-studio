@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-138
 packId: pack_05
-name: Kagurabachi - Sword Oath Under Neon Rain
+name: Sumi-Black Neon Edge Stillness
 styleAnchors:
-  - 'Kagurabachi - Sword Oath Under Neon Rain'
-displayName: 'Sword Oath Under Neon Rain'
+  - Sumi-Black Neon Edge Stillness
+  - Kagurabachi - Sword Oath Under Neon Rain
+displayName: Sumi-Black Neon Edge Stillness
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,47 +16,25 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from severe dark brush contours with clean, abrupt tapers
-    and sharp graphic forms separated by broad negative space. Let short straight strokes and
-    broken vertical highlight lines set its rhythm; use deep indigo and black with restrained neon
-    cyan and magenta for color and smooth dark fields with thin reflective marks and sparse grain
-    for finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use severe dark brush contours with clean, abrupt
-    tapers for edge work, sharp graphic forms separated by broad negative space for form
-    simplification, and short straight strokes and broken vertical highlight lines only where
-    movement is already requested.
-  color_and_tone: >-
-    Build value groups with deep indigo and black with restrained neon cyan and magenta. Place the
-    strongest contrast on the requested focal area and preserve explicit color instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: hard neon edge accents against broad matte shadow masses. Keep
-    shadows grouped and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with smooth dark fields with thin reflective marks and sparse grain,
-    preserving depicted materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use off-axis balance with a strong diagonal and
-    deliberate empty space to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey quiet resolve under visual tension, while
-    preserving the prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with precise dark contour, neon edge color, and controlled reflective marks; keep
-    detail selective and accents attached to existing forms.
-  key_features: >-
-    severe dark brush contours with clean, abrupt tapers; sharp graphic forms separated by broad
-    negative space; deep indigo and black with restrained neon cyan and magenta; short straight
-    strokes and broken vertical highlight lines; smooth dark fields with thin reflective marks and
-    sparse grain; off-axis balance with a strong diagonal and deliberate empty space.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with severe dark brush
-    contours with clean, abrupt tapers, sharp graphic forms separated by broad negative space, and
-    deep indigo and black with restrained neon cyan and magenta; use short straight strokes and
-    broken vertical highlight lines only where movement is already present, and apply smooth dark
-    fields with thin reflective marks and sparse grain as the drawing finish.
+  aesthetic: 'Cinematic ink anime: severe dry sumi-brush blacks, long still holds, and a single thin neon edge of magenta or cyan on otherwise matte darkness.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Deep indigo, ink black and bone white, with one neon magenta or cyan edge line.
+  lighting_and_shadow: Low hard light from one side, broad matte shadow masses, the neon edge on a single contour only.
+  texture_and_material: Dry brush grain at contour tails, matte dark fields and sparse speck grain.
+  camera_and_composition: Keep the requested content; organize it in wide horizontal bands like a cinema frame, with deliberate empty space and one strong diagonal.
+  atmosphere_and_mood: Quiet grief hardening into resolve, long silences held before a single decisive edge.
+  rendering_and_quality: Precise dark contour, minimal detail, and exactly one neon edge in the frame.
+  key_features: severe sumi-brush black; single neon edge line; wide horizontal banding; long still hold; matte indigo darks
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sumi-Black Neon Edge Stillness as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
+  - goldfish spirits
+  - katana near-plane
   - realistic
   - 3d render
   - photo
@@ -78,14 +57,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-138.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen
-    source-frame look, fixed canon character, title scene replication, required source-frame look,
-    cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, goldfish spirits, katana near-plane, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

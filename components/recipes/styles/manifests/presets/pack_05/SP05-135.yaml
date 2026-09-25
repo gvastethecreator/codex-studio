@@ -1,12 +1,13 @@
 schemaVersion: 1
 id: SP05-135
 packId: pack_05
-name: Undead Unluck - Rule-Breaker Curse Impact
+name: Broken-Rule Halftone Shatter
 styleAnchors:
-  - 'Undead Unluck - Rule-Breaker Curse Impact'
-displayName: 'Rule-Breaker Curse Impact'
+  - Broken-Rule Halftone Shatter
+  - Undead Unluck - Rule-Breaker Curse Impact
+displayName: Broken-Rule Halftone Shatter
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,47 +16,24 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from uneven broken contours with irregular angular fragments
-    and asymmetrical masses disrupted by crisp shape breaks. Let sudden directional shifts,
-    clipped marks, and abrupt releases set its rhythm; use black and warm coral with a bright
-    yellow or cobalt accent for color and rough ink, broken halftone, and scattered dry texture
-    for finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use uneven broken contours with irregular angular
-    fragments for edge work, asymmetrical masses disrupted by crisp shape breaks for form
-    simplification, and sudden directional shifts, clipped marks, and abrupt releases only where
-    movement is already requested.
-  color_and_tone: >-
-    Build value groups with black and warm coral with a bright yellow or cobalt accent. Place the
-    strongest contrast on the requested focal area and preserve explicit color instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: hard edge separation with small bright cuts. Keep shadows grouped
-    and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with rough ink, broken halftone, and scattered dry texture,
-    preserving depicted materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use fractured spacing organized around one clear focal
-    area to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey mischievous disruption and unstable rhythm, while
-    preserving the prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with broken contour, irregular print texture, and a controlled accent palette; keep
-    detail selective and accents attached to existing forms.
-  key_features: >-
-    uneven broken contours with irregular angular fragments; asymmetrical masses disrupted by
-    crisp shape breaks; black and warm coral with a bright yellow or cobalt accent; sudden
-    directional shifts, clipped marks, and abrupt releases; rough ink, broken halftone, and
-    scattered dry texture; fractured spacing organized around one clear focal area.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with uneven broken
-    contours with irregular angular fragments, asymmetrical masses disrupted by crisp shape
-    breaks, and black and warm coral with a bright yellow or cobalt accent; use sudden directional
-    shifts, clipped marks, and abrupt releases only where movement is already present, and apply
-    rough ink, broken halftone, and scattered dry texture as the drawing finish.
+  aesthetic: 'Rule-breaking action anime: the picture cracked into angular glass-like shards, each shard shifting color and halftone, with uneven broken contours and abrupt cutout breaks.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Black and warm coral base; individual shards flip to bright yellow or cobalt.
+  lighting_and_shadow: Hard edge separation, each shard lit on its own terms with small bright cuts.
+  texture_and_material: Rough ink, broken halftone dot fields and dry scattered texture in the shard gaps.
+  camera_and_composition: Keep the requested framing; fracture lines radiate from one focal point and the subject stays readable across the shards.
+  atmosphere_and_mood: Mischief and unstable luck, the rules visibly breaking.
+  rendering_and_quality: Broken contour, small shard displacement and a tightly controlled accent palette.
+  key_features: glass-shard fracture; halftone that changes per shard; coral and black with yellow or cobalt; broken contours; radial fracture focal point
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Broken-Rule Halftone Shatter as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
+  - cracked mirror prop
   - realistic
   - 3d render
   - photo
@@ -78,14 +56,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-135.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen
-    source-frame look, fixed canon character, title scene replication, required source-frame look,
-    cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, cracked mirror prop, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

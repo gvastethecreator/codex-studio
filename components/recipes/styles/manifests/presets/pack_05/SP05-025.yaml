@@ -3,10 +3,10 @@ id: SP05-025
 packId: pack_05
 name: Shadow Notebook Thriller
 styleAnchors:
-  - 'Shadow Notebook Thriller'
-displayName: 'Psychological Notebook Noir'
+  - Shadow Notebook Thriller
+displayName: Psychological Notebook Noir
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,47 +15,24 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from fine deliberate black strokes with selective heavier
-    emphasis and hard-edged rectangles, wedges, and isolated vermilion marks. Let measured pauses,
-    exact turns, and delayed repetition set its rhythm; use ink black and bone white punctuated by
-    restrained red for color and dry matte paper grain over otherwise clean, flat fields for
-    finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use fine deliberate black strokes with selective
-    heavier emphasis for edge work, hard-edged rectangles, wedges, and isolated vermilion marks
-    for form simplification, and measured pauses, exact turns, and delayed repetition only where
-    movement is already requested.
-  color_and_tone: >-
-    Build value groups with ink black and bone white punctuated by restrained red. Place the
-    strongest contrast on the requested focal area and preserve explicit color instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: firm black-to-white shadow blocks with minimal midtone. Keep
-    shadows grouped and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with dry matte paper grain over otherwise clean, flat fields,
-    preserving depicted materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use static asymmetric balance with one isolated accent
-    and ample empty space to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey cerebral suspense and controlled stillness, while
-    preserving the prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with crisp edges, limited color, and quiet fields with isolated accents; keep detail
-    selective and accents attached to existing forms.
-  key_features: >-
-    fine deliberate black strokes with selective heavier emphasis; hard-edged rectangles, wedges,
-    and isolated vermilion marks; ink black and bone white punctuated by restrained red; measured
-    pauses, exact turns, and delayed repetition; dry matte paper grain over otherwise clean, flat
-    fields; static asymmetric balance with one isolated accent and ample empty space.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with fine deliberate black
-    strokes with selective heavier emphasis, hard-edged rectangles, wedges, and isolated vermilion
-    marks, and ink black and bone white punctuated by restrained red; use measured pauses, exact
-    turns, and delayed repetition only where movement is already present, and apply dry matte
-    paper grain over otherwise clean, flat fields as the drawing finish.
+  aesthetic: 'Psychological-thriller anime: fine deliberate black strokes, gothic chiaroscuro at sharp dramatic angles, bone-white fields and one isolated vermilion accent.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Ink black and bone white with a single restrained vermilion accent.
+  lighting_and_shadow: Firm black-to-white shadow blocks with minimal midtone; faces split by hard light.
+  texture_and_material: Dry matte paper grain over otherwise clean flat fields.
+  camera_and_composition: Keep the requested content; static asymmetric balance at a steep Dutch or overhead angle, one isolated accent.
+  atmosphere_and_mood: Cerebral suspense and controlled stillness, every shadow suggesting a calculation in progress.
+  rendering_and_quality: Crisp edges, limited color, and quiet fields around the accent.
+  key_features: gothic chiaroscuro; fine deliberate black stroke; bone-white fields; single vermilion accent; steep dramatic angle
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Shadow Notebook Thriller as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
+  - red apple motif
   - realistic
   - 3d render
   - photo
@@ -86,16 +63,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-025.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, schoolboy detective likeness, readable notebook, death-note
-    cue, police chase, gore, battle scene, weapon, copied franchise face, photoreal cosplay, western
-    superhero comic, generic shonen source-frame look, fixed canon character, title scene
-    replication, required source-frame look, cosplay, generic anime filter, prompt-required card,
-    logo, muddy noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, red apple motif, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, schoolboy detective likeness, readable notebook, death-note cue, police chase, gore, battle scene, weapon, copied franchise face, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

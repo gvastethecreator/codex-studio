@@ -3,10 +3,10 @@ id: SP05-040
 packId: pack_05
 name: Blade Field Urban Fantasy
 styleAnchors:
-  - 'Blade Field Urban Fantasy'
-displayName: 'Urban Blade Field'
+  - Blade Field Urban Fantasy
+displayName: Urban Blade Field
 category: 1. Modern Shonen & Action
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -15,46 +15,23 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: >-
-    Build the graphic anime treatment from fine formal outlines with repeated luminous tracings
-    and nested curved bands, folded planes, and recurring abstract motifs. Let concentric ripples
-    and gently folding curves set its rhythm; use nocturnal navy and ivory with restrained cyan or
-    gold accents for color and clean matte fields with thin luminous line accents for finish.
-  subject_treatment: >-
-    Preserve the requested content and framing. Use fine formal outlines with repeated luminous
-    tracings for edge work, nested curved bands, folded planes, and recurring abstract motifs for
-    form simplification, and concentric ripples and gently folding curves only where movement is
-    already requested.
-  color_and_tone: >-
-    Build value groups with nocturnal navy and ivory with restrained cyan or gold accents. Place
-    the strongest contrast on the requested focal area and preserve explicit color instructions.
-  lighting_and_shadow: >-
-    Treat lighting graphically: controlled edge glow against firm, dark shadow shapes. Keep
-    shadows grouped and respect any light direction already requested.
-  texture_and_material: >-
-    Render existing surfaces with clean matte fields with thin luminous line accents, preserving
-    depicted materials and adding no props or effects.
-  camera_and_composition: >-
-    Within the requested camera and crop, use balanced symbolic spacing within the requested crop,
-    with room around the focus to organize existing forms; preserve location and action.
-  atmosphere_and_mood: >-
-    Let line weight, spacing, and value convey calm formality with subtle tension, while
-    preserving the prompt's emotional intent.
-  rendering_and_quality: >-
-    Finish with precise linework, measured repetition, and glow kept tightly controlled; keep
-    detail selective and accents attached to existing forms.
-  key_features: >-
-    fine formal outlines with repeated luminous tracings; nested curved bands, folded planes, and
-    recurring abstract motifs; nocturnal navy and ivory with restrained cyan or gold accents;
-    concentric ripples and gently folding curves; clean matte fields with thin luminous line
-    accents; balanced symbolic spacing within the requested crop, with room around the focus.
-  creative_brief: >-
-    Keep the requested subject, action, location, and crop. Render them with fine formal outlines
-    with repeated luminous tracings, nested curved bands, folded planes, and recurring abstract
-    motifs, and nocturnal navy and ivory with restrained cyan or gold accents; use concentric
-    ripples and gently folding curves only where movement is already present, and apply clean
-    matte fields with thin luminous line accents as the drawing finish.
+  aesthetic: 'Composited digital-effects anime: crisp cel characters layered over richly lit, near-photographic painted backgrounds with volumetric light shafts, drifting embers and shallow depth-of-field blur.'
+  subject_treatment: Redraw the prompt subject, action and setting in this anime drawing language and keep all three; a quiet everyday activity stays quiet and in place, and effect marks attach only to motion or energy the prompt already contains, never adding a fight, weapon or franchise costume.
+  color_and_tone: Nocturnal navy and ivory with glowing cyan or gold particle accents.
+  lighting_and_shadow: Motivated volumetric beams, bloom around light sources, a controlled rim on characters.
+  texture_and_material: Clean cel on figures, finely detailed painted backgrounds, particles soft and round.
+  camera_and_composition: Keep the requested framing; lens-like depth with blurred foreground elements, sharp midground and bokeh in the distance.
+  atmosphere_and_mood: Calm formality in the moment before a storm.
+  rendering_and_quality: 'Tight compositing: sharp cel edges, soft volumetric light, particles and bloom kept in check.'
+  key_features: cel figures over detailed painted backgrounds; volumetric light shafts; drifting embers and bokeh; navy and ivory; shallow depth of field
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blade Field Urban Fantasy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise character likeness
+  - copied franchise costume or emblem
+  - signature franchise weapon
+  - generic spiky-haired teen protagonist
+  - adding a fight or power effect to a quiet prompt
+  - readable glyphs or sigils
   - realistic
   - 3d render
   - photo
@@ -86,16 +63,16 @@ avoidRules:
   - prompt-required card
   - logo
   - muddy noisy darks
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-040.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, sword field, blade rain, red-cloaked archer likeness, servant
-    duel, holy-grail iconography, weapon-first composition, franchise face, dense forest, ruin
-    corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed
-    canon character, title scene replication, required source-frame look, cosplay, generic anime
-    filter, prompt-required card, logo, muddy noisy darks
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, sword field, blade rain, red-cloaked archer likeness, servant duel, holy-grail iconography, weapon-first composition, franchise face, dense forest, ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
