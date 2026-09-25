@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP04-029
 packId: pack_04
-name: Sticker Art
+name: Glossy Die-Cut Sticker
 category: 2. Children's Illustration
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,59 +12,20 @@ tags:
   - illustration-and-graphic-novel
   - childrens-illustration
 visualDna:
-  aesthetic: >-
-    Sticker Art acts as a transferable illustration router: start from Die-cut sticker illustration
-    with collectible decal language, White border halo, isolated silhouette, peel-and-stick visual
-    grammar and storybook and friendly-illustration system built from approachable shapes, handmade
-    media, simplified edges, tactile materials, and high-readability charm, then apply the visual
-    behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Bold simplified contours with thick white cutline margin;
-    preserve the requested subject while softening, simplifying, miniaturizing, paper-building,
-    mark-making, or diagramming it according to the named medium, keeping the requested identity,
-    silhouette, pose, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Saturated vector palette tuned for print legibility; use color through
-    storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel
-    dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and
-    process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Controlled vinyl gloss accents and compact specular highlights; shape light
-    through soft diffuse value, paper layering, flat educational contrast, handmade shadows, or
-    medium-native tonal marks instead of cinematic realism, so value structure supports the
-    illustration process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Smooth sticker-vinyl finish with subtle laminate sheen; surface detail should show paper
-    tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate,
-    or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler
-    texture.
-  camera_and_composition: >-
-    Structure the image through Simplified silhouettes with icon-like proportion clarity; compose
-    with clear silhouettes, readable spacing, playful scale, page-object logic, flat educational
-    layout, or gentle negative space without forcing a nursery scene, with scale, spacing, edge
-    rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Playful, punchy, identity-forward, mood carried by Sticker Art craft, material
-    pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy,
-    educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style
-    alter interpretation without demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Crisp decal-ready rendering optimized for small-format readability; finish with
-    clean accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky
-    render or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough
-    process evidence to make the style recognizable.
-  key_features: >-
-    Die-cut sticker illustration with collectible decal language; White border halo, isolated
-    silhouette, peel-and-stick visual grammar; Saturated vector palette tuned for print legibility;
-    Smooth sticker-vinyl finish with subtle laminate sheen; Simplified silhouettes with icon-like
-    proportion clarity
-  creative_brief: >-
-    Apply Sticker Art as an illustration preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Die-cut sticker illustration with collectible decal language, White border halo, isolated
-    silhouette, peel-and-stick visual grammar, Smooth sticker-vinyl finish with subtle laminate
-    sheen without requiring the card image's original subject.
+  aesthetic: 'Glossy die-cut sticker: the subject drawn as a bold simplified vinyl sticker with a thick white cut border and a laminate shine.'
+  subject_treatment: 'Keep the prompt subject, action and identity; this preset explicitly owns the sticker format: one isolated subject with a thick white die-cut border on a plain backing, and nothing else about the request changes.'
+  color_and_tone: Saturated flat vector colors with one shade tone and a white border around everything.
+  lighting_and_shadow: One glossy laminate highlight streak across the sticker and a small soft drop shadow on the backing.
+  texture_and_material: Smooth vinyl surface, subtle laminate sheen, slightly lifted corner of the sticker.
+  camera_and_composition: One centered subject with a clean silhouette, plain pale backing around it.
+  atmosphere_and_mood: Playful and punchy, a collectible little treasure.
+  rendering_and_quality: Crisp decal-ready shapes readable at small size; no background scene and no readable text.
+  key_features: thick white die-cut border; flat saturated vector; laminate highlight streak; lifted corner; isolated silhouette
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glossy Die-Cut Sticker as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - frightening gore
+  - known picture-book characters
+  - franchise mascot likeness
   - background
   - official card scene
   - fixed thumbnail subject
@@ -78,13 +39,17 @@ avoidRules:
   - generic stock children art
   - overly complex anatomy
   - fake readable labels
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-029.webp
 attributes:
-  negativePrompt: >-
-    background, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy
-    render, generic stock children art, overly complex anatomy, fake readable labels
+  negativePrompt: frightening gore, known picture-book characters, franchise mascot likeness, background, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
@@ -98,3 +63,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Glossy Die-Cut Sticker
+styleAnchors:
+  - Glossy Die-Cut Sticker
+  - Sticker Art

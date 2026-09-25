@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP04-111
+packId: pack_04
+name: Victorian Hatched Storybook Plate
+styleAnchors:
+  - Victorian Hatched Storybook Plate
+  - nineteenth-century fairy-tale book plate
+  - fine parallel hatching
+displayName: Victorian Hatched Storybook Plate
+category: 2. Children's Illustration
+domain: nineteenth-century fairy-tale book plate
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - childrens-illustration
+  - pen-hatching
+  - fairy-tale
+  - hand-tinted
+visualDna:
+  aesthetic: 'Victorian fairy-tale book plate: detailed pen drawing built from fine parallel hatching and crosshatching, lightly hand-tinted with a few watercolors.'
+  subject_treatment: Keep the prompt subject, its body proportions, action and setting, and redraw them in this medium; simplify shapes for a young reader without enlarging heads or shrinking bodies.
+  color_and_tone: Black ink on cream paper, pale tints of rose, moss and sky blue applied sparingly and unevenly.
+  lighting_and_shadow: Light from the upper left, shadows made of layered hatching, strong white highlights left as paper.
+  texture_and_material: Engraving-like parallel lines, crosshatch shadows, foxed cream paper with slight tint bleed.
+  camera_and_composition: Theatrical framed tableau, characters in period costume, detailed but clear foreground action.
+  atmosphere_and_mood: Old-fashioned, curious and gently eerie, a tale told by candlelight.
+  rendering_and_quality: Precise hatched pen detail with restrained tinting; no flat digital color and no outlines-only drawing.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Victorian Hatched Storybook Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: fine parallel hatching; crosshatch shadows; sparing hand tints; cream foxed paper; theatrical tableau
+avoidRules:
+  - frightening gore
+  - known picture-book characters
+  - franchise mascot likeness
+  - enlarged head
+  - unrequested chibi proportions
+  - flat digital color
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: frightening gore, known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, flat digital color, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_04
+  packName: Illustration & Graphic Novel
+  categoryId: childrens-illustration
+  categoryName: 2. Children's Illustration
+  tags:
+    - illustration-and-graphic-novel
+    - childrens-illustration
+    - pen-hatching
+    - fairy-tale
+    - hand-tinted
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: nineteenth-century fairy-tale book plate

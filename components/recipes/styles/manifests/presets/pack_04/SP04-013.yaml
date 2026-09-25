@@ -3,7 +3,7 @@ id: SP04-013
 packId: pack_04
 name: Chibi Style
 category: 2. Children's Illustration
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,59 +12,20 @@ tags:
   - illustration-and-graphic-novel
   - childrens-illustration
 visualDna:
-  aesthetic: >-
-    Chibi Style acts as a transferable illustration router: start from Chibi super-deformed designed
-    subjects language with mascot-forward charm, Oversized head, tiny limbs, exaggerated props and
-    expression icons and storybook and friendly-illustration system built from approachable shapes,
-    handmade media, simplified edges, tactile materials, and high-readability charm, then apply the
-    visual behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Thick clean outlines and simplified interior detail
-    economy; preserve the requested subject while softening, simplifying, miniaturizing,
-    paper-building, mark-making, or diagramming it according to the named medium, keeping the
-    requested identity, silhouette, pose, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Bright candy-saturated palette with high contrast readability; use color
-    through storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly
-    contrast, pastel dust, marker bleed, or specimen tints, with deliberate value grouping, accent
-    control, and process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Flat cel shading with minimal soft ambient accents; shape light through
-    soft diffuse value, paper layering, flat educational contrast, handmade shadows, or
-    medium-native tonal marks instead of cinematic realism, so value structure supports the
-    illustration process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Smooth digital finish with toy-like surface clarity; surface detail should show paper
-    tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate,
-    or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler
-    texture.
-  camera_and_composition: >-
-    Structure the image through Extreme head-to-body ratio (~2 heads tall); compose with clear
-    silhouettes, readable spacing, playful scale, page-object logic, flat educational layout, or
-    gentle negative space without forcing a nursery scene, with scale, spacing, edge rhythm, and
-    visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Playful, comedic, lighthearted, mood carried by Chibi Style craft, material
-    pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy,
-    educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style
-    alter interpretation without demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Highly stylized cute rendering tuned for instant emotional read; finish with clean
-    accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render
-    or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process
-    evidence to make the style recognizable.
-  key_features: >-
-    Chibi super-deformed designed subjects language with mascot-forward charm; Oversized head, tiny
-    limbs, exaggerated props and expression icons; Bright candy-saturated palette with high contrast
-    readability; Smooth digital finish with toy-like surface clarity; Extreme head-to-body ratio (~2
-    heads tall)
-  creative_brief: >-
-    Apply Chibi Style as an illustration preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Chibi super-deformed designed subjects language with mascot-forward charm, Oversized head, tiny
-    limbs, exaggerated props and expression icons, Smooth digital finish with toy-like surface
-    clarity without requiring the card image's original subject.
+  aesthetic: 'Chibi super-deformed drawing: every character redrawn about two heads tall with a huge round head, tiny limbs and stubby mitten hands.'
+  subject_treatment: Keep the prompt subject, action and identity; this preset explicitly owns the proportion change to a two-heads-tall super-deformed body with oversized head and tiny limbs, and nothing else about the request changes.
+  color_and_tone: Bright candy palette, pink blush ovals on cheeks, saturated flats with one lighter highlight tone.
+  lighting_and_shadow: Flat cel shading with one soft shadow step and round glossy highlights in large eyes.
+  texture_and_material: Smooth digital fills with thick clean outlines; props drawn oversized and toy-like.
+  camera_and_composition: Centered full-body figures on simple backgrounds, tiny bodies read as a round silhouette.
+  atmosphere_and_mood: Playful, comic and huggable, every emotion shown as a big face.
+  rendering_and_quality: Thick even outlines, simplified interiors and expression marks such as sweat drops and sparkles.
+  key_features: two-heads-tall proportions; oversized round head; thick clean outline; blush ovals; oversized props
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chibi Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - frightening gore
+  - known picture-book characters
+  - franchise mascot likeness
   - tall
   - realistic
   - official card scene
@@ -79,13 +40,17 @@ avoidRules:
   - generic stock children art
   - overly complex anatomy
   - fake readable labels
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-013.webp
 attributes:
-  negativePrompt: >-
-    tall, realistic, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy
-    render, generic stock children art, overly complex anatomy, fake readable labels
+  negativePrompt: frightening gore, known picture-book characters, franchise mascot likeness, tall, realistic, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

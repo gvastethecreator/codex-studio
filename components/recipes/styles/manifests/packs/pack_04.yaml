@@ -45,6 +45,12 @@ categories:
       - pack_04/SP04-028.yaml
       - pack_04/SP04-029.yaml
       - pack_04/SP04-030.yaml
+      - pack_04/SP04-107.yaml
+      - pack_04/SP04-108.yaml
+      - pack_04/SP04-109.yaml
+      - pack_04/SP04-110.yaml
+      - pack_04/SP04-111.yaml
+      - pack_04/SP04-112.yaml
   - id: editorial-and-poster
     name: 3. Editorial And Poster
     presetRefs:
@@ -164,6 +170,12 @@ presetRefs:
   - pack_04/SP04-028.yaml
   - pack_04/SP04-029.yaml
   - pack_04/SP04-030.yaml
+  - pack_04/SP04-107.yaml
+  - pack_04/SP04-108.yaml
+  - pack_04/SP04-109.yaml
+  - pack_04/SP04-110.yaml
+  - pack_04/SP04-111.yaml
+  - pack_04/SP04-112.yaml
   - pack_04/SP04-015.yaml
   - pack_04/SP04-031.yaml
   - pack_04/SP04-032.yaml

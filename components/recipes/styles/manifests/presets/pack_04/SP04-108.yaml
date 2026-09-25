@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP04-108
+packId: pack_04
+name: Thumbprint Ink Critters
+styleAnchors:
+  - Thumbprint Ink Critters
+  - fingerprint doodle illustration
+  - fingerprint ridges in ink blobs
+displayName: Thumbprint Ink Critters
+category: 2. Children's Illustration
+domain: fingerprint doodle illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - childrens-illustration
+  - thumbprint
+  - ink-pad
+  - doodle
+visualDna:
+  aesthetic: 'Thumbprint critters: oval fingerprints pressed from colored ink pads, turned into animals and bugs with a few fine pen lines.'
+  subject_treatment: Keep the prompt subject, its body proportions, action and setting, and redraw them in this medium; simplify shapes for a young reader without enlarging heads or shrinking bodies.
+  color_and_tone: Bright stamp-pad colors on white paper, each print uneven in density, black fine-liner details.
+  lighting_and_shadow: No modeled light; lighter and darker areas come from how hard each finger was pressed.
+  texture_and_material: Visible fingerprint ridges and whorls inside every blob, patchy ink, crisp thin pen legs and faces.
+  camera_and_composition: Small characters spread across open white paper, simple action lines and tiny pen-drawn props.
+  atmosphere_and_mood: Funny, tiny and homemade, a rainy-afternoon craft.
+  rendering_and_quality: Real fingerprint texture with minimal pen additions; no painted fills and no outlines around prints.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thumbprint Ink Critters as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: fingerprint ridges in ink blobs; stamp-pad colors; fine black pen details; white paper; tiny characters
+avoidRules:
+  - frightening gore
+  - known picture-book characters
+  - franchise mascot likeness
+  - enlarged head
+  - unrequested chibi proportions
+  - painted fills
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: frightening gore, known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, painted fills, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_04
+  packName: Illustration & Graphic Novel
+  categoryId: childrens-illustration
+  categoryName: 2. Children's Illustration
+  tags:
+    - illustration-and-graphic-novel
+    - childrens-illustration
+    - thumbprint
+    - ink-pad
+    - doodle
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: fingerprint doodle illustration

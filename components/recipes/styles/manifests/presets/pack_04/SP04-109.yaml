@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP04-109
+packId: pack_04
+name: Plasticine Relief Picture
+styleAnchors:
+  - Plasticine Relief Picture
+  - flat plasticine relief illustration
+  - clay smeared flat on board
+displayName: Plasticine Relief Picture
+category: 2. Children's Illustration
+domain: flat plasticine relief illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - childrens-illustration
+  - plasticine-relief
+  - bas-relief
+  - tactile
+visualDna:
+  aesthetic: 'Plasticine relief picture: soft modeling clay pressed and smeared flat onto board as a shallow picture, photographed like a painting.'
+  subject_treatment: Keep the prompt subject, its body proportions, action and setting, and redraw them in this medium; simplify shapes for a young reader without enlarging heads or shrinking bodies.
+  color_and_tone: Rich saturated clay colors, smeared blends where two colors meet, deep night blues and glowing yellows.
+  lighting_and_shadow: Low raking light from one side so the shallow ridges and dots cast tiny shadows.
+  texture_and_material: Fingertip smears, rolled clay snakes for outlines, pressed dots and tool-scored lines, glossy thumb-polished spots.
+  camera_and_composition: Flat frontal view of the whole relief board, everything packed edge to edge like a picture-book spread.
+  atmosphere_and_mood: Cozy, tactile and richly detailed, a picture you want to touch.
+  rendering_and_quality: Shallow physical relief with real clay texture; not a stop-motion set and not a 3D render.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Plasticine Relief Picture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: clay smeared flat on board; rolled clay outlines; pressed dots and scored lines; raking side light; frontal flat view
+avoidRules:
+  - frightening gore
+  - known picture-book characters
+  - franchise mascot likeness
+  - enlarged head
+  - unrequested chibi proportions
+  - deep 3D set
+  - CG render
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: frightening gore, known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, deep 3D set, CG render, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_04
+  packName: Illustration & Graphic Novel
+  categoryId: childrens-illustration
+  categoryName: 2. Children's Illustration
+  tags:
+    - illustration-and-graphic-novel
+    - childrens-illustration
+    - plasticine-relief
+    - bas-relief
+    - tactile
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: flat plasticine relief illustration

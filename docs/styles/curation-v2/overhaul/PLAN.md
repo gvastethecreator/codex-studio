@@ -74,6 +74,7 @@ Pack order, skipping pack_12 and pack_17: pack_01 → pack_24, then pack_12, pac
 | pack_03::7. Environment And Worldbuilding    | done  | done | done   | 11 (SP03-132…142) | pending (local)     | see git log        |
 | pack_03::8. Sensor And Technical Shaders     | done  | done | done   | 18 (SP03-143…160) | pending (local)     | see git log        |
 | pack_04::1. Comic Book Styles                | done  | done | done   | 6 (SP04-101…106)  | pending (local)     | see git log        |
+| pack_04::2. Children's Illustration          | done  | done | done   | 6 (SP04-107…112)  | pending (local)     | see git log        |
 
 ## Open risks
 

@@ -1,0 +1,68 @@
+schemaVersion: 1
+id: SP04-112
+packId: pack_04
+name: Seek-and-Find Busy Panorama
+styleAnchors:
+  - Seek-and-Find Busy Panorama
+  - busy seek-and-find picture book
+  - high oblique bird-eye view
+displayName: Seek-and-Find Busy Panorama
+category: 2. Children's Illustration
+domain: busy seek-and-find picture book
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - childrens-illustration
+  - seek-and-find
+  - busy-scene
+  - high-angle
+visualDna:
+  aesthetic: 'Seek-and-find busy panorama: a whole place drawn from high above and packed with dozens of tiny characters each doing something funny.'
+  subject_treatment: Keep the prompt subject, action and identity; this preset explicitly owns the high-angle crowded panorama, placing the requested subject as one findable element among many small figures, and nothing else about the request changes.
+  color_and_tone: Bright varied local colors, evenly distributed so no area dominates, clean light backgrounds.
+  lighting_and_shadow: Even daylight, tiny uniform shadows, no dramatic contrast that would hide details.
+  texture_and_material: Clean line with flat color, small repeating patterns in roofs, crowds and paths.
+  camera_and_composition: High oblique bird-eye view with no vanishing point drama, the scene filled edge to edge with mini stories.
+  atmosphere_and_mood: Bustling, funny and generous, a page to explore for hours.
+  rendering_and_quality: Consistent small figure scale, every figure readable as a silhouette, no clutter blur.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Seek-and-Find Busy Panorama as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: high oblique bird-eye view; dozens of tiny figures; mini stories everywhere; even daylight; edge-to-edge detail
+avoidRules:
+  - frightening gore
+  - known picture-book characters
+  - franchise mascot likeness
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: frightening gore, known picture-book characters, franchise mascot likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_04
+  packName: Illustration & Graphic Novel
+  categoryId: childrens-illustration
+  categoryName: 2. Children's Illustration
+  tags:
+    - illustration-and-graphic-novel
+    - childrens-illustration
+    - seek-and-find
+    - busy-scene
+    - high-angle
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: busy seek-and-find picture book

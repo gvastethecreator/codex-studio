@@ -3,7 +3,7 @@ id: SP04-030
 packId: pack_04
 name: Scientific Botanical
 category: 2. Children's Illustration
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,59 +12,22 @@ tags:
   - illustration-and-graphic-novel
   - childrens-illustration
 visualDna:
-  aesthetic: >-
-    Scientific Botanical acts as a transferable illustration router: start from Scientific botanical
-    plate in vintage field-guide tradition, Nomenclature labels, anatomical callouts, curated
-    specimen grouping and storybook and friendly-illustration system built from approachable shapes,
-    handmade media, simplified edges, tactile materials, and high-readability charm, then apply the
-    visual behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Fine controlled ink contour with diagrammatic annotation
-    leaders; preserve the requested subject while softening, simplifying, miniaturizing,
-    paper-building, mark-making, or diagramming it according to the named medium, keeping the
-    requested identity, silhouette, pose, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Muted watercolor tints over warm archival-paper neutrals; use color through
-    storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel
-    dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and
-    process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Flat specimen illumination prioritizing structural clarity; shape light
-    through soft diffuse value, paper layering, flat educational contrast, handmade shadows, or
-    medium-native tonal marks instead of cinematic realism, so value structure supports the
-    illustration process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Aged paper grain with light wash transparency; surface detail should show paper tooth,
-    cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate, or
-    watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler
-    texture.
-  camera_and_composition: >-
-    Structure the image through Orthographic specimen layout with sectional/dissected insets;
-    compose with clear silhouettes, readable spacing, playful scale, page-object logic, flat
-    educational layout, or gentle negative space without forcing a nursery scene, with scale,
-    spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Taxonomic, scholarly, measured, mood carried by Scientific Botanical craft,
-    material pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy,
-    educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style
-    alter interpretation without demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with High-accuracy naturalist rendering for educational reference; finish with clean
-    accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render
-    or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process
-    evidence to make the style recognizable.
-  key_features: >-
-    Scientific botanical plate in vintage field-guide tradition; Nomenclature labels, anatomical
-    callouts, curated specimen grouping; Muted watercolor tints over warm archival-paper neutrals;
-    Aged paper grain with light wash transparency; Orthographic specimen layout with
-    sectional/dissected insets
-  creative_brief: >-
-    Apply Scientific Botanical as an illustration preset over prompt X: preserve the user's
-    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
-    through Scientific botanical plate in vintage field-guide tradition, Nomenclature labels,
-    anatomical callouts, curated specimen grouping, Aged paper grain with light wash transparency
-    without requiring the card image's original subject.
+  aesthetic: 'Vintage scientific botanical plate: a specimen drawn in fine ink contour and tinted with muted watercolor, with dissected parts arranged around it.'
+  subject_treatment: 'Keep the prompt subject, action and identity; this preset explicitly owns the specimen plate layout: whole subject centered, dissected details and sections arranged around it without labels, and nothing else about the request changes.'
+  color_and_tone: Muted naturalist watercolor tints over warm cream archival paper, true local colors.
+  lighting_and_shadow: Flat specimen illumination from the upper left, minimal shading only to show form.
+  texture_and_material: Aged paper grain, fine stipple and hatch in the ink, thin transparent washes.
+  camera_and_composition: Orthographic specimen views, sections and insets in a balanced grid, fine leader lines without text.
+  atmosphere_and_mood: Scholarly, measured and calm, curiosity made precise.
+  rendering_and_quality: High-accuracy naturalist drawing; leader lines point to empty space, never to readable labels.
+  key_features: fine ink contour; muted watercolor tints; dissected insets; cream archival paper; unlabeled leader lines
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scientific Botanical as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - frightening gore
+  - known picture-book characters
+  - franchise mascot likeness
+  - readable labels
+  - Latin names
   - cartoon
   - messy
   - official card scene
@@ -79,13 +42,16 @@ avoidRules:
   - generic stock children art
   - overly complex anatomy
   - fake readable labels
+  - text
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-030.webp
 attributes:
-  negativePrompt: >-
-    cartoon, messy, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy
-    render, generic stock children art, overly complex anatomy, fake readable labels
+  negativePrompt: frightening gore, known picture-book characters, franchise mascot likeness, readable labels, Latin names, cartoon, messy, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

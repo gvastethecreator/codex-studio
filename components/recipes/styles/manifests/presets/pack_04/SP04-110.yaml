@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP04-110
+packId: pack_04
+name: Grainy Digital Picture Book
+styleAnchors:
+  - Grainy Digital Picture Book
+  - contemporary textured digital picture book
+  - grainy texture brushes
+displayName: Grainy Digital Picture Book
+category: 2. Children's Illustration
+domain: contemporary textured digital picture book
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - illustration-and-graphic-novel
+  - childrens-illustration
+  - digital-grain
+  - limited-palette
+  - picture-book
+visualDna:
+  aesthetic: 'Contemporary digital picture book: soft flat shapes painted with grainy texture brushes, limited palette and quiet storytelling spaces.'
+  subject_treatment: Keep the prompt subject, its body proportions, action and setting, and redraw them in this medium; simplify shapes for a young reader without enlarging heads or shrinking bodies.
+  color_and_tone: Limited palette of five or six muted colors, dusky pinks, deep teals and warm ochre, shapes overlapping into darker tones.
+  lighting_and_shadow: Simple soft light, glows made with grainy airbrush, shadows as flat translucent shapes.
+  texture_and_material: Fine speckled grain inside every shape, crayon-textured edges, subtle print-like noise.
+  camera_and_composition: Wide spreads with lots of empty space, small characters placed low in a large landscape.
+  atmosphere_and_mood: Gentle, quiet and a little melancholy, a story told in pauses.
+  rendering_and_quality: Soft textured digital finish with no outlines and no glossy rendering.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grainy Digital Picture Book as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: grainy texture brushes; limited muted palette; no outlines; wide empty spreads; small characters in large space
+avoidRules:
+  - frightening gore
+  - known picture-book characters
+  - franchise mascot likeness
+  - enlarged head
+  - unrequested chibi proportions
+  - glossy 3D rendering
+  - hard outlines
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: frightening gore, known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, glossy 3D rendering, hard outlines, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_04
+  packName: Illustration & Graphic Novel
+  categoryId: childrens-illustration
+  categoryName: 2. Children's Illustration
+  tags:
+    - illustration-and-graphic-novel
+    - childrens-illustration
+    - digital-grain
+    - limited-palette
+    - picture-book
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: contemporary textured digital picture book

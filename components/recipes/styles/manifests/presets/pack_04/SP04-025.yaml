@@ -3,7 +3,7 @@ id: SP04-025
 packId: pack_04
 name: Felt Tip Marker
 category: 2. Children's Illustration
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,61 +12,23 @@ tags:
   - illustration-and-graphic-novel
   - childrens-illustration
 visualDna:
-  aesthetic: >-
-    Felt Tip Marker acts as a transferable illustration router: start from Felt-tip/alcohol-marker
-    illustration with spontaneous saturation behavior, Stroke stacking, bleed halos, quick gradient
-    blends via overlap and storybook and friendly-illustration system built from approachable
-    shapes, handmade media, simplified edges, tactile materials, and high-readability charm, then
-    apply the visual behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Broad marker strokes, edge bleed, and overlap-driven
-    contour definition; preserve the requested subject while softening, simplifying, miniaturizing,
-    paper-building, mark-making, or diagramming it according to the named medium, keeping the
-    requested identity, silhouette, pose, object function, or setting legible.
-  color_and_tone: >-
-    Build color with High-saturation marker gamut with layered translucent mixes; use color through
-    storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel
-    dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and
-    process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Flat-to-minimal light modeling via tonal marker passes; shape light through
-    soft diffuse value, paper layering, flat educational contrast, handmade shadows, or
-    medium-native tonal marks instead of cinematic realism, so value structure supports the
-    illustration process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Absorbent paper bleed, feathered edges, occasional smudge drag; surface detail should
-    show paper tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker
-    laminate, or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy
-    filler texture.
-  camera_and_composition: >-
-    Structure the image through Loose perspective and gestural simplification; compose with clear
-    silhouettes, readable spacing, playful scale, page-object logic, flat educational layout, or
-    gentle negative space without forcing a nursery scene, with scale, spacing, edge rhythm, and
-    visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Casual, energetic, improvised, mood carried by Felt Tip Marker craft, material
-    pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy,
-    educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style
-    alter interpretation without demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Bold sketchbook immediacy with visible hand-speed decisions; finish with clean
-    accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render
-    or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process
-    evidence to make the style recognizable.
-  key_features: >-
-    Felt-tip/alcohol-marker illustration with spontaneous saturation behavior; Stroke stacking,
-    bleed halos, quick gradient blends via overlap; High-saturation marker gamut with layered
-    translucent mixes; Absorbent paper bleed, feathered edges, occasional smudge drag; Loose
-    perspective and gestural simplification
-  creative_brief: >-
-    Apply Felt Tip Marker as an illustration preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Felt-tip/alcohol-marker illustration with spontaneous saturation behavior, Stroke stacking,
-    bleed halos, quick gradient blends via overlap, Absorbent paper bleed, feathered edges,
-    occasional smudge drag without requiring the card image's original subject.
+  aesthetic: 'Felt-tip marker drawing: broad water-based marker strokes that streak, overlap into darker mixes and bleed slightly into cheap paper.'
+  subject_treatment: Keep the prompt subject, its body proportions, action and setting, and redraw them in this medium; simplify shapes for a young reader without enlarging heads or shrinking bodies.
+  color_and_tone: Saturated marker gamut, hot pink, lime, cyan and orange, darker where strokes overlap.
+  lighting_and_shadow: Minimal modeling; a second pass of the same marker makes the shadow.
+  texture_and_material: Parallel stroke streaks, bleed halos at edges, dried-out marker gaps and a few smudges.
+  camera_and_composition: Loose gestural perspective, simple figures with bold outlines drawn in black marker.
+  atmosphere_and_mood: Casual, energetic and improvised, drawn fast at the kitchen table.
+  rendering_and_quality: Visible hand-speed decisions and streaky fills; no paint, no smooth gradients.
+  key_features: streaky marker fills; overlap darkening; bleed halos; black marker outlines; saturated hot palette
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Felt Tip Marker as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - frightening gore
+  - known picture-book characters
+  - franchise mascot likeness
+  - enlarged head
+  - unrequested chibi proportions
   - paint
-  - blend
   - official card scene
   - fixed thumbnail subject
   - prompt replaced by sample image
@@ -79,13 +41,17 @@ avoidRules:
   - generic stock children art
   - overly complex anatomy
   - fake readable labels
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-025.webp
 attributes:
-  negativePrompt: >-
-    paint, blend, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy
-    render, generic stock children art, overly complex anatomy, fake readable labels
+  negativePrompt: frightening gore, known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, paint, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

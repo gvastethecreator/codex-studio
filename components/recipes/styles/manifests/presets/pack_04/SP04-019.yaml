@@ -3,7 +3,7 @@ id: SP04-019
 packId: pack_04
 name: Crayon Drawing
 category: 2. Children's Illustration
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,58 +12,21 @@ tags:
   - illustration-and-graphic-novel
   - childrens-illustration
 visualDna:
-  aesthetic: >-
-    Crayon Drawing acts as a transferable illustration router: start from Childlike crayon
-    illustration with naive expressive immediacy, Uneven fill, directional scribble, layered wax
-    bloom and storybook and friendly-illustration system built from approachable shapes, handmade
-    media, simplified edges, tactile materials, and high-readability charm, then apply the visual
-    behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Waxy pressure-variable strokes with uneven contour control;
-    preserve the requested subject while softening, simplifying, miniaturizing, paper-building,
-    mark-making, or diagramming it according to the named medium, keeping the requested identity,
-    silhouette, pose, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Bright primary/secondary crayon set with spontaneous overlap; use color through
-    storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel
-    dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and
-    process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Flat paper-based lighting; value implied by stroke density; shape light
-    through soft diffuse value, paper layering, flat educational contrast, handmade shadows, or
-    medium-native tonal marks instead of cinematic realism, so value structure supports the
-    illustration process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Heavy wax buildup and visible paper tooth drag; surface detail should show paper tooth,
-    cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate, or
-    watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler
-    texture.
-  camera_and_composition: >-
-    Structure the image through Simplified anatomy and playful proportion exaggeration; compose with
-    clear silhouettes, readable spacing, playful scale, page-object logic, flat educational layout,
-    or gentle negative space without forcing a nursery scene, with scale, spacing, edge rhythm, and
-    visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Joyful, innocent, spontaneous, mood carried by Crayon Drawing craft, material
-    pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy,
-    educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style
-    alter interpretation without demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Deliberately unpolished, sincere, hand-made mark quality; finish with clean
-    accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render
-    or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process
-    evidence to make the style recognizable.
-  key_features: >-
-    Childlike crayon illustration with naive expressive immediacy; Uneven fill, directional
-    scribble, layered wax bloom; Bright primary/secondary crayon set with spontaneous overlap; Heavy
-    wax buildup and visible paper tooth drag; Simplified anatomy and playful proportion exaggeration
-  creative_brief: >-
-    Apply Crayon Drawing as an illustration preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Childlike crayon illustration with naive expressive immediacy, Uneven fill, directional
-    scribble, layered wax bloom, Heavy wax buildup and visible paper tooth drag without requiring
-    the card image's original subject.
+  aesthetic: 'Wax crayon drawing made the way a child draws: pressure-variable waxy strokes, directional scribble fill and happy disregard for staying inside lines.'
+  subject_treatment: Keep the prompt subject, its body proportions, action and setting, and redraw them in this medium; simplify shapes for a young reader without enlarging heads or shrinking bodies.
+  color_and_tone: A box of bright primary and secondary crayons, colors overlapped by scribbling one over another.
+  lighting_and_shadow: No light logic; darker areas are just pressed harder, and a corner sun with rays is the only light.
+  texture_and_material: Wax buildup and flakes, paper tooth showing through light strokes, uneven directional scribble fill.
+  camera_and_composition: Flat side view on a baseline of grass, a strip of blue sky on top, everything spread out to be seen.
+  atmosphere_and_mood: Joyful, innocent and spontaneous, drawn in one happy go.
+  rendering_and_quality: Deliberately unpolished wax marks with wobbly shapes; never smooth blending or perspective accuracy.
+  key_features: waxy pressure strokes; directional scribble fill; paper tooth; sky strip and grass baseline; corner sun
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crayon Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - frightening gore
+  - known picture-book characters
+  - franchise mascot likeness
+  - smooth blending
   - professional
   - smooth
   - official card scene
@@ -78,13 +41,17 @@ avoidRules:
   - generic stock children art
   - overly complex anatomy
   - fake readable labels
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-019.webp
 attributes:
-  negativePrompt: >-
-    professional, smooth, official card scene, fixed thumbnail subject, prompt replaced by sample
-    image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop,
-    plastic toy render, generic stock children art, overly complex anatomy, fake readable labels
+  negativePrompt: frightening gore, known picture-book characters, franchise mascot likeness, smooth blending, professional, smooth, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

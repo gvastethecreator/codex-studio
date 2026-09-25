@@ -3,7 +3,7 @@
     {
       "id": "pack_04",
       "name": "Illustration & Graphic Novel",
-      "presetCount": 106
+      "presetCount": 112
     }
   ],
   "presets": [
@@ -351,7 +351,8 @@
     },
     {
       "id": "SP04-020",
-      "name": "Kurzgesagt Vector Flat (Infographic)",
+      "name": "Rounded Vector Explainer",
+      "styleAnchors": ["Rounded Vector Explainer", "Kurzgesagt Vector Flat (Infographic)"],
       "ref": "pack_04/SP04-020.yaml",
       "packId": "pack_04",
       "packName": "Illustration & Graphic Novel",
@@ -359,7 +360,7 @@
       "categoryName": "2. Children's Illustration",
       "tags": ["illustration-and-graphic-novel", "children-s-illustration"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp04-020 kurzgesagt vector flat (infographic) 2. children's illustration storybook illustration pack_04 illustration & graphic novel children-s-illustration illustration-and-graphic-novel children-s-illustration"
+      "searchableText": "sp04-020 rounded vector explainer kurzgesagt vector flat (infographic) 2. children's illustration storybook illustration pack_04 illustration & graphic novel children-s-illustration illustration-and-graphic-novel children-s-illustration"
     },
     {
       "id": "SP04-021",
@@ -375,7 +376,8 @@
     },
     {
       "id": "SP04-022",
-      "name": "Colored Pencil",
+      "name": "Storybook Colored Pencil",
+      "styleAnchors": ["Storybook Colored Pencil", "Colored Pencil"],
       "ref": "pack_04/SP04-022.yaml",
       "packId": "pack_04",
       "packName": "Illustration & Graphic Novel",
@@ -383,7 +385,7 @@
       "categoryName": "2. Children's Illustration",
       "tags": ["illustration-and-graphic-novel", "children-s-illustration"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp04-022 colored pencil 2. children's illustration storybook illustration pack_04 illustration & graphic novel children-s-illustration illustration-and-graphic-novel children-s-illustration"
+      "searchableText": "sp04-022 storybook colored pencil colored pencil 2. children's illustration storybook illustration pack_04 illustration & graphic novel children-s-illustration illustration-and-graphic-novel children-s-illustration"
     },
     {
       "id": "SP04-024",
@@ -447,7 +449,8 @@
     },
     {
       "id": "SP04-029",
-      "name": "Sticker Art",
+      "name": "Glossy Die-Cut Sticker",
+      "styleAnchors": ["Glossy Die-Cut Sticker", "Sticker Art"],
       "ref": "pack_04/SP04-029.yaml",
       "packId": "pack_04",
       "packName": "Illustration & Graphic Novel",
@@ -455,7 +458,7 @@
       "categoryName": "2. Children's Illustration",
       "tags": ["illustration-and-graphic-novel", "children-s-illustration"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp04-029 sticker art 2. children's illustration storybook illustration pack_04 illustration & graphic novel children-s-illustration illustration-and-graphic-novel children-s-illustration"
+      "searchableText": "sp04-029 glossy die-cut sticker sticker art 2. children's illustration storybook illustration pack_04 illustration & graphic novel children-s-illustration illustration-and-graphic-novel children-s-illustration"
     },
     {
       "id": "SP04-030",
@@ -468,6 +471,138 @@
       "tags": ["illustration-and-graphic-novel", "children-s-illustration"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp04-030 scientific botanical 2. children's illustration storybook illustration pack_04 illustration & graphic novel children-s-illustration illustration-and-graphic-novel children-s-illustration"
+    },
+    {
+      "id": "SP04-107",
+      "name": "High-Contrast Baby Board Book",
+      "styleAnchors": [
+        "High-Contrast Baby Board Book",
+        "infant board-book graphics",
+        "black white and red only"
+      ],
+      "ref": "pack_04/SP04-107.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "children-s-illustration",
+      "categoryName": "2. Children's Illustration",
+      "domain": "infant board-book graphics",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "children-s-illustration",
+        "infant-board-book-graphics"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-107 high-contrast baby board book infant board-book graphics black white and red only 2. children's illustration storybook illustration infant board-book graphics pack_04 illustration & graphic novel children-s-illustration illustration-and-graphic-novel children-s-illustration infant-board-book-graphics"
+    },
+    {
+      "id": "SP04-108",
+      "name": "Thumbprint Ink Critters",
+      "styleAnchors": [
+        "Thumbprint Ink Critters",
+        "fingerprint doodle illustration",
+        "fingerprint ridges in ink blobs"
+      ],
+      "ref": "pack_04/SP04-108.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "children-s-illustration",
+      "categoryName": "2. Children's Illustration",
+      "domain": "fingerprint doodle illustration",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "children-s-illustration",
+        "fingerprint-doodle-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-108 thumbprint ink critters fingerprint doodle illustration fingerprint ridges in ink blobs 2. children's illustration storybook illustration fingerprint doodle illustration pack_04 illustration & graphic novel children-s-illustration illustration-and-graphic-novel children-s-illustration fingerprint-doodle-illustration"
+    },
+    {
+      "id": "SP04-109",
+      "name": "Plasticine Relief Picture",
+      "styleAnchors": [
+        "Plasticine Relief Picture",
+        "flat plasticine relief illustration",
+        "clay smeared flat on board"
+      ],
+      "ref": "pack_04/SP04-109.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "children-s-illustration",
+      "categoryName": "2. Children's Illustration",
+      "domain": "flat plasticine relief illustration",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "children-s-illustration",
+        "flat-plasticine-relief-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-109 plasticine relief picture flat plasticine relief illustration clay smeared flat on board 2. children's illustration storybook illustration flat plasticine relief illustration pack_04 illustration & graphic novel children-s-illustration illustration-and-graphic-novel children-s-illustration flat-plasticine-relief-illustration"
+    },
+    {
+      "id": "SP04-110",
+      "name": "Grainy Digital Picture Book",
+      "styleAnchors": [
+        "Grainy Digital Picture Book",
+        "contemporary textured digital picture book",
+        "grainy texture brushes"
+      ],
+      "ref": "pack_04/SP04-110.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "children-s-illustration",
+      "categoryName": "2. Children's Illustration",
+      "domain": "contemporary textured digital picture book",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "children-s-illustration",
+        "contemporary-textured-digital-picture-book"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-110 grainy digital picture book contemporary textured digital picture book grainy texture brushes 2. children's illustration storybook illustration contemporary textured digital picture book pack_04 illustration & graphic novel children-s-illustration illustration-and-graphic-novel children-s-illustration contemporary-textured-digital-picture-book"
+    },
+    {
+      "id": "SP04-111",
+      "name": "Victorian Hatched Storybook Plate",
+      "styleAnchors": [
+        "Victorian Hatched Storybook Plate",
+        "nineteenth-century fairy-tale book plate",
+        "fine parallel hatching"
+      ],
+      "ref": "pack_04/SP04-111.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "children-s-illustration",
+      "categoryName": "2. Children's Illustration",
+      "domain": "nineteenth-century fairy-tale book plate",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "children-s-illustration",
+        "nineteenth-century-fairy-tale-book-plate"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-111 victorian hatched storybook plate nineteenth-century fairy-tale book plate fine parallel hatching 2. children's illustration storybook illustration nineteenth-century fairy-tale book plate pack_04 illustration & graphic novel children-s-illustration illustration-and-graphic-novel children-s-illustration nineteenth-century-fairy-tale-book-plate"
+    },
+    {
+      "id": "SP04-112",
+      "name": "Seek-and-Find Busy Panorama",
+      "styleAnchors": [
+        "Seek-and-Find Busy Panorama",
+        "busy seek-and-find picture book",
+        "high oblique bird-eye view"
+      ],
+      "ref": "pack_04/SP04-112.yaml",
+      "packId": "pack_04",
+      "packName": "Illustration & Graphic Novel",
+      "categoryId": "children-s-illustration",
+      "categoryName": "2. Children's Illustration",
+      "domain": "busy seek-and-find picture book",
+      "tags": [
+        "illustration-and-graphic-novel",
+        "children-s-illustration",
+        "busy-seek-and-find-picture-book"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp04-112 seek-and-find busy panorama busy seek-and-find picture book high oblique bird-eye view 2. children's illustration storybook illustration busy seek-and-find picture book pack_04 illustration & graphic novel children-s-illustration illustration-and-graphic-novel children-s-illustration busy-seek-and-find-picture-book"
     },
     {
       "id": "SP04-015",
@@ -1334,5 +1469,5 @@
       "searchableText": "sp04-100 monster size comparison chart 6. technical and reference sheets reference layouts pack_04 illustration & graphic novel technical-and-reference-sheets illustration-and-graphic-novel technical-and-reference-sheets"
     }
   ],
-  "totalPresetCount": 106
+  "totalPresetCount": 112
 }
