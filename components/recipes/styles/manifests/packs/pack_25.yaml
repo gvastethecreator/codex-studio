@@ -285,6 +285,29 @@ categories:
       - pack_25/SP25-238.yaml
       - pack_25/SP25-239.yaml
       - pack_25/SP25-240.yaml
+  - id: surface-and-textile-design
+    name: 13. Surface & Textile Design
+    presetRefs:
+      - pack_25/SP25-241.yaml
+      - pack_25/SP25-242.yaml
+      - pack_25/SP25-243.yaml
+      - pack_25/SP25-244.yaml
+      - pack_25/SP25-245.yaml
+      - pack_25/SP25-246.yaml
+      - pack_25/SP25-247.yaml
+      - pack_25/SP25-248.yaml
+      - pack_25/SP25-249.yaml
+      - pack_25/SP25-250.yaml
+      - pack_25/SP25-251.yaml
+      - pack_25/SP25-252.yaml
+      - pack_25/SP25-253.yaml
+      - pack_25/SP25-254.yaml
+      - pack_25/SP25-255.yaml
+      - pack_25/SP25-256.yaml
+      - pack_25/SP25-257.yaml
+      - pack_25/SP25-258.yaml
+      - pack_25/SP25-259.yaml
+      - pack_25/SP25-260.yaml
 presetRefs:
   - pack_25/SP25-001.yaml
   - pack_25/SP25-002.yaml
@@ -526,3 +549,23 @@ presetRefs:
   - pack_25/SP25-238.yaml
   - pack_25/SP25-239.yaml
   - pack_25/SP25-240.yaml
+  - pack_25/SP25-241.yaml
+  - pack_25/SP25-242.yaml
+  - pack_25/SP25-243.yaml
+  - pack_25/SP25-244.yaml
+  - pack_25/SP25-245.yaml
+  - pack_25/SP25-246.yaml
+  - pack_25/SP25-247.yaml
+  - pack_25/SP25-248.yaml
+  - pack_25/SP25-249.yaml
+  - pack_25/SP25-250.yaml
+  - pack_25/SP25-251.yaml
+  - pack_25/SP25-252.yaml
+  - pack_25/SP25-253.yaml
+  - pack_25/SP25-254.yaml
+  - pack_25/SP25-255.yaml
+  - pack_25/SP25-256.yaml
+  - pack_25/SP25-257.yaml
+  - pack_25/SP25-258.yaml
+  - pack_25/SP25-259.yaml
+  - pack_25/SP25-260.yaml

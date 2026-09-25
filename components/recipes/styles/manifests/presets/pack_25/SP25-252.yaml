@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-252
+packId: pack_25
+name: Growth-Rule Surface Motifs
+styleAnchors:
+  - Growth-Rule Surface Motifs
+  - rule-based branching motif family
+  - branching rule
+displayName: Growth-Rule Surface Motifs
+category: 13. Surface & Textile Design
+domain: rule-based branching motif family
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - surface-and-textile-design
+  - growth-rule
+  - applied-design
+  - surface
+  - r-pat-12
+visualDna:
+  aesthetic: 'Growth-Rule Surface Motifs: a family of motifs grown from one small rule of branching, length and angle, varied within declared limits.'
+  subject_treatment: Grow a family of motifs from the prompt's subject with one declared branching rule, then combine several generations into a repeating surface.
+  color_and_tone: Color by visual generation or scale in a reduced palette.
+  lighting_and_shadow: Flat or lightly modeled, with every branching point visible.
+  texture_and_material: Continuous strokes, clear ends and a second level of detail only.
+  camera_and_composition: Several generations mixed with open gaps, edges following the same rule.
+  atmosphere_and_mood: Disciplined growth with clear kinship and small local surprises.
+  rendering_and_quality: Clean pattern with countable nodes and a stated maximum complexity.
+  creative_brief: "Growth-Rule Surface Motifs: a family of motifs grown from one small rule of branching, length and angle, varied within declared limits. Carry it through branching rule, motif family, generations mixed, countable nodes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: branching rule; motif family; generations mixed; countable nodes
+avoidRules:
+  - infinite branches
+  - contradictory rules
+  - claims of a real simulation
+  - copied historical or cultural ornament
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: infinite branches, contradictory rules, claims of a real simulation, copied historical or cultural ornament, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: surface-and-textile-design
+  categoryName: 13. Surface & Textile Design
+  domain: rule-based branching motif family
+  tags:
+    - curation-v2
+    - surface-and-textile-design
+    - growth-rule
+    - applied-design
+    - surface
+    - r-pat-12
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-256
+packId: pack_25
+name: Layered Tracery Fields
+styleAnchors:
+  - Layered Tracery Fields
+  - fine tracery over bold masses
+  - fine tracery
+displayName: Layered Tracery Fields
+category: 13. Surface & Textile Design
+domain: fine tracery over bold masses
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - surface-and-textile-design
+  - layered-tracery
+  - applied-design
+  - surface
+  - r-pat-16
+visualDna:
+  aesthetic: 'Layered Tracery Fields: a fine linear network passes over bold ornamental masses, small reserves at every meeting keeping the two scales apart.'
+  subject_treatment: Lay a fine linear network over bold masses based on the prompt's subject, with small reserves at each meeting so both scales stay distinct.
+  color_and_tone: Moderate contrast for the network and stronger presence for the masses.
+  lighting_and_shadow: Flat art where separation comes from the reserves.
+  texture_and_material: Fine yet reproducible lines and simple mass edges.
+  camera_and_composition: Network nodes kept off mass centers, with corridors of space between groups.
+  atmosphere_and_mood: Structural delicacy with wide pauses and localized complexity.
+  rendering_and_quality: Clean tracery that stays legible at use size with no moire.
+  creative_brief: "Layered Tracery Fields: a fine linear network passes over bold ornamental masses, small reserves at every meeting keeping the two scales apart. Carry it through fine tracery, bold masses, reserves at meetings, two scales. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: fine tracery; bold masses; reserves at meetings; two scales
+avoidRules:
+  - illegible filigree
+  - too many ornaments mixed
+  - glass effects hiding the grammar
+  - copied historical or cultural ornament
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illegible filigree, too many ornaments mixed, glass effects hiding the grammar, copied historical or cultural ornament, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: surface-and-textile-design
+  categoryName: 13. Surface & Textile Design
+  domain: fine tracery over bold masses
+  tags:
+    - curation-v2
+    - surface-and-textile-design
+    - layered-tracery
+    - applied-design
+    - surface
+    - r-pat-16
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

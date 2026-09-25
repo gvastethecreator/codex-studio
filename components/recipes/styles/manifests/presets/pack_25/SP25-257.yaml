@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP25-257
+packId: pack_25
+name: Half-Drop Repeat Layout
+styleAnchors:
+  - Half-Drop Repeat Layout
+  - half-drop repeat layout profile
+  - half-drop offset
+displayName: Half-Drop Repeat Layout
+category: 13. Surface & Textile Design
+domain: half-drop repeat layout profile
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - surface-and-textile-design
+  - half-drop
+  - applied-design
+  - surface
+  - profile
+  - r-pat-17
+visualDna:
+  aesthetic: 'Half-Drop Repeat Layout: one module repeated with every other column dropped by half its height, the edges matching exactly.'
+  subject_treatment: Repeat the prompt's pattern module with alternate columns dropped by half, keeping the module's content and orientation exactly the same.
+  color_and_tone: Palette inherited from the module with no recolor between instances.
+  lighting_and_shadow: Any light baked into the module kept, no shadows between tiles.
+  texture_and_material: The same artwork in every instance, never redrawn per tile.
+  camera_and_composition: Alternate columns offset by 50 percent with checkable edge matches.
+  atmosphere_and_mood: A diagonal cadence born purely from the offset.
+  rendering_and_quality: Exact placements and no blurry interpolation in the mosaic.
+  creative_brief: "Half-Drop Repeat Layout: one module repeated with every other column dropped by half its height, the edges matching exactly. Carry it through half-drop offset, exact module, matching edges, diagonal cadence. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: half-drop offset; exact module; matching edges; diagonal cadence
+avoidRules:
+  - distorted tile
+  - approximate offset
+  - calling a new layout a new style
+  - copied historical or cultural ornament
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: distorted tile, approximate offset, calling a new layout a new style, copied historical or cultural ornament, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: surface-and-textile-design
+  categoryName: 13. Surface & Textile Design
+  domain: half-drop repeat layout profile
+  tags:
+    - curation-v2
+    - surface-and-textile-design
+    - half-drop
+    - applied-design
+    - surface
+    - profile
+    - r-pat-17
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

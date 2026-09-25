@@ -2548,5 +2548,20 @@
     "evidencePresetIds": ["SP25-221", "SP25-222", "SP25-223"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_25",
+    "category": "13. Surface & Textile Design",
+    "displayCategory": "Surface & textile design",
+    "kind": "mixed",
+    "expectedCount": 20,
+    "baselineHash": "f0c559bb31cbce652ae4d8582ad505b7b78c04f76282dc8204933f3d6f8eeda6",
+    "problem": "Surface styles must define how a repeat is built, not just recolor a motif, and must not copy historical or cultural ornament or claim loom, print or tile readiness.",
+    "preserve": "The requested motif family, palette and target surface; each style keeps its repeat rule (hidden-repeat canopy, density counterpoint, two-scale interleave, warp-weft dominance, broken lattice, nested border, positive-negative network, staggered medallions, thread bands, interrupted stripes, perforated tiles, growth rule, uneven tessellation, figure-ground reversal, stitch routes, layered tracery).",
+    "proposedAction": "Applied-design import: 16 repeat-construction styles, half-drop and border placement profiles, and the seamless proof and colorway family recipes as sheet profiles; no-text policy and three new surface briefs per preset for wild but plausible uses.",
+    "validation": "Generate each card, then check the tile as a 4 by 4 mosaic for seams and repeating hot spots; test a wallpaper, a garment fabric, a bordered textile and a colorway set.",
+    "evidencePresetIds": ["SP25-241", "SP25-242", "SP25-243"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

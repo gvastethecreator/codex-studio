@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP25-258
+packId: pack_25
+name: Engineered Border Placement
+styleAnchors:
+  - Engineered Border Placement
+  - measured border placement profile
+  - measured anchors
+displayName: Engineered Border Placement
+category: 13. Surface & Textile Design
+domain: measured border placement profile
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - surface-and-textile-design
+  - border-placement
+  - applied-design
+  - surface
+  - profile
+  - r-pat-18
+visualDna:
+  aesthetic: 'Engineered Border Placement: border, center and corners placed on a defined surface by measurements, every region with its own role.'
+  subject_treatment: Place the prompt's border, center and corner pieces on a defined rectangle by measured anchors, keeping a reserved center and the target proportions.
+  color_and_tone: Colors inherited from the artwork with a consistent zone hierarchy.
+  lighting_and_shadow: A flat main view, any mockup keeping the same placement.
+  texture_and_material: Artwork and region masks kept apart, guides left out of the final view.
+  camera_and_composition: Measured anchors, explicit margins and dedicated corner pieces.
+  atmosphere_and_mood: A frame fitted to its surface with a breathing center.
+  rendering_and_quality: Precise registration of limits with nothing clipped by accident.
+  creative_brief: "Engineered Border Placement: border, center and corners placed on a defined surface by measurements, every region with its own role. Carry it through measured anchors, corner pieces, reserved center, fitted frame. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: measured anchors; corner pieces; reserved center; fitted frame
+avoidRules:
+  - universal seamless fill
+  - invented measurements
+  - unevenly compressed borders
+  - copied historical or cultural ornament
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: universal seamless fill, invented measurements, unevenly compressed borders, copied historical or cultural ornament, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: surface-and-textile-design
+  categoryName: 13. Surface & Textile Design
+  domain: measured border placement profile
+  tags:
+    - curation-v2
+    - surface-and-textile-design
+    - border-placement
+    - applied-design
+    - surface
+    - profile
+    - r-pat-18
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

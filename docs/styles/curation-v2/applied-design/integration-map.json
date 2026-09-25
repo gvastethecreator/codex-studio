@@ -1433,64 +1433,124 @@
       "doc": "QA-PROTOCOLS.md"
     },
     "R-PAT-01": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-241",
+      "name": "Eccentric Repeat Canopies",
+      "category": "13. Surface & Textile Design"
     },
     "R-PAT-02": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-242",
+      "name": "Density Counterpoint Patterns",
+      "category": "13. Surface & Textile Design"
     },
     "R-PAT-03": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-243",
+      "name": "Interleaved Scale Ornament",
+      "category": "13. Surface & Textile Design"
     },
     "R-PAT-04": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-244",
+      "name": "Warp-Weft Image Systems",
+      "category": "13. Surface & Textile Design"
     },
     "R-PAT-05": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-245",
+      "name": "Broken-Lattice Florals",
+      "category": "13. Surface & Textile Design"
     },
     "R-PAT-06": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-246",
+      "name": "Nested Border Rhythms",
+      "category": "13. Surface & Textile Design"
     },
     "R-PAT-07": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-247",
+      "name": "Counterform Branch Networks",
+      "category": "13. Surface & Textile Design"
     },
     "R-PAT-08": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-248",
+      "name": "Staggered Medallion Fields",
+      "category": "13. Surface & Textile Design"
     },
     "R-PAT-09": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-249",
+      "name": "Topographic Thread Bands",
+      "category": "13. Surface & Textile Design"
     },
     "R-PAT-10": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-250",
+      "name": "Interrupted Stripe Weaves",
+      "category": "13. Surface & Textile Design"
     },
     "R-PAT-11": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-251",
+      "name": "Porous Tile Ornament",
+      "category": "13. Surface & Textile Design"
     },
     "R-PAT-12": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-252",
+      "name": "Growth-Rule Surface Motifs",
+      "category": "13. Surface & Textile Design"
     },
     "R-PAT-13": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-253",
+      "name": "Uneven Tessellation Fields",
+      "category": "13. Surface & Textile Design"
     },
     "R-PAT-14": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-254",
+      "name": "Figure-Ground Reversal Patterns",
+      "category": "13. Surface & Textile Design"
     },
     "R-PAT-15": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-255",
+      "name": "Stitched Line Topologies",
+      "category": "13. Surface & Textile Design"
     },
     "R-PAT-16": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-256",
+      "name": "Layered Tracery Fields",
+      "category": "13. Surface & Textile Design"
     },
     "R-PAT-17": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-257",
+      "name": "Half-Drop Repeat Layout",
+      "category": "13. Surface & Textile Design"
     },
     "R-PAT-18": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-258",
+      "name": "Engineered Border Placement",
+      "category": "13. Surface & Textile Design"
     },
     "R-PAT-19": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-259",
+      "name": "Seamless Tile Proof",
+      "category": "13. Surface & Textile Design"
     },
     "R-PAT-20": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-260",
+      "name": "Colorway Family Study",
+      "category": "13. Surface & Textile Design"
     },
     "R-MER-01": {
       "status": "pending"

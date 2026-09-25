@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-246
+packId: pack_25
+name: Nested Border Rhythms
+styleAnchors:
+  - Nested Border Rhythms
+  - engineered nested border design
+  - nested bands
+displayName: Nested Border Rhythms
+category: 13. Surface & Textile Design
+domain: engineered nested border design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - surface-and-textile-design
+  - nested-border
+  - applied-design
+  - surface
+  - r-pat-06
+visualDna:
+  aesthetic: 'Nested Border Rhythms: border bands of different scales coordinated with an inner field and specially designed corners.'
+  subject_treatment: Design a bordered surface from the prompt's subject with nested bands of different scales, dedicated corner pieces and a calm inner field.
+  color_and_tone: Clear hierarchy between outer border, transition and inner field.
+  lighting_and_shadow: Flat print surface with bands lying on one plane.
+  texture_and_material: Crisp contours, modules per run and corners with continuous thickness.
+  camera_and_composition: Side, corner and center treated as distinct functions within set margins.
+  atmosphere_and_mood: Progressive framing, a bold outer rhythm answered by a fine inner one.
+  rendering_and_quality: Clean design with resolved corners and no stretched runs.
+  creative_brief: "Nested Border Rhythms: border bands of different scales coordinated with an inner field and specially designed corners. Carry it through nested bands, designed corners, calm center, framing rhythm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: nested bands; designed corners; calm center; framing rhythm
+avoidRules:
+  - universal seamless texture
+  - cut corners
+  - borders scaled differently per side
+  - copied historical or cultural ornament
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: universal seamless texture, cut corners, borders scaled differently per side, copied historical or cultural ornament, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: surface-and-textile-design
+  categoryName: 13. Surface & Textile Design
+  domain: engineered nested border design
+  tags:
+    - curation-v2
+    - surface-and-textile-design
+    - nested-border
+    - applied-design
+    - surface
+    - r-pat-06
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-242
+packId: pack_25
+name: Density Counterpoint Patterns
+styleAnchors:
+  - Density Counterpoint Patterns
+  - dense and sparse rhythm pattern
+  - clusters and open fields
+displayName: Density Counterpoint Patterns
+category: 13. Surface & Textile Design
+domain: dense and sparse rhythm pattern
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - surface-and-textile-design
+  - density-counterpoint
+  - applied-design
+  - surface
+  - r-pat-02
+visualDna:
+  aesthetic: 'Density Counterpoint Patterns: dense clusters and open fields alternate in rhythm while the motifs keep one size and the repeat stays seamless.'
+  subject_treatment: Build a repeating surface from the prompt's subject where clusters and open fields alternate by spacing alone, every motif keeping its size.
+  color_and_tone: A short palette where density reads through count and closeness alone.
+  lighting_and_shadow: Flat surface with no focal light faking extra density.
+  texture_and_material: Crisp motifs with inspectable intervals and a uniform support.
+  camera_and_composition: Three rhythm zones per tile, dense, transition and open, linked across edges.
+  atmosphere_and_mood: A counterpoint of breathing and gathering, calm and musical.
+  rendering_and_quality: Clean repeat with no collisions and smooth changes of spacing.
+  creative_brief: "Density Counterpoint Patterns: dense clusters and open fields alternate in rhythm while the motifs keep one size and the repeat stays seamless. Carry it through clusters and open fields, spacing rhythm, constant motif size, seamless. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: clusters and open fields; spacing rhythm; constant motif size; seamless
+avoidRules:
+  - gradients faking density
+  - illegible pile-ups
+  - accidental stripes in the mosaic
+  - copied historical or cultural ornament
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gradients faking density, illegible pile-ups, accidental stripes in the mosaic, copied historical or cultural ornament, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: surface-and-textile-design
+  categoryName: 13. Surface & Textile Design
+  domain: dense and sparse rhythm pattern
+  tags:
+    - curation-v2
+    - surface-and-textile-design
+    - density-counterpoint
+    - applied-design
+    - surface
+    - r-pat-02
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

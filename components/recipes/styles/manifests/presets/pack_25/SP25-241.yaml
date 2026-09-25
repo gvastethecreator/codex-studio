@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-241
+packId: pack_25
+name: Eccentric Repeat Canopies
+styleAnchors:
+  - Eccentric Repeat Canopies
+  - hidden-repeat branching canopy pattern
+  - three-scale branches
+displayName: Eccentric Repeat Canopies
+category: 13. Surface & Textile Design
+domain: hidden-repeat branching canopy pattern
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - surface-and-textile-design
+  - eccentric-canopy
+  - applied-design
+  - surface
+  - r-pat-01
+visualDna:
+  aesthetic: 'Eccentric Repeat Canopies: branching motifs at three scales hide the repeat through asymmetric links and irregular open spaces.'
+  subject_treatment: Build a repeating surface from the prompt's subject as branching motifs at three scales, linked asymmetrically across the tile edges so the repeat disappears.
+  color_and_tone: Two value families for structure and secondary motifs, with sparse, scattered accents.
+  lighting_and_shadow: Flat printed artwork with every motif sitting on one plane.
+  texture_and_material: Controlled organic contours and clean reserves with a quiet, even edge.
+  camera_and_composition: Off-center focal points, branch entries matching exits on the opposite edge.
+  atmosphere_and_mood: Continuous expansion with irregular pauses, lush but never crowded.
+  rendering_and_quality: Clean repeat shown as tile and wide mosaic with complete motifs.
+  creative_brief: "Eccentric Repeat Canopies: branching motifs at three scales hide the repeat through asymmetric links and irregular open spaces. Carry it through three-scale branches, hidden repeat, asymmetric links, irregular pauses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: three-scale branches; hidden repeat; asymmetric links; irregular pauses
+avoidRules:
+  - cut-off branches
+  - random variation with no links
+  - copied historical or cultural ornament
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cut-off branches, random variation with no links, copied historical or cultural ornament, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: surface-and-textile-design
+  categoryName: 13. Surface & Textile Design
+  domain: hidden-repeat branching canopy pattern
+  tags:
+    - curation-v2
+    - surface-and-textile-design
+    - eccentric-canopy
+    - applied-design
+    - surface
+    - r-pat-01
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

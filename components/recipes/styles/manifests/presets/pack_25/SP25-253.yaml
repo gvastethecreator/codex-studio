@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-253
+packId: pack_25
+name: Uneven Tessellation Fields
+styleAnchors:
+  - Uneven Tessellation Fields
+  - two-scale uneven tessellation
+  - two-scale pieces
+displayName: Uneven Tessellation Fields
+category: 13. Surface & Textile Design
+domain: two-scale uneven tessellation
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - surface-and-textile-design
+  - uneven-tessellation
+  - applied-design
+  - surface
+  - r-pat-13
+visualDna:
+  aesthetic: 'Uneven Tessellation Fields: related pieces at two scales share complementary edges and a few orientations, covering the field with no gaps.'
+  subject_treatment: Cover a surface with pieces based on the prompt's subject at two scales, with complementary edges and a few allowed orientations, leaving no accidental gaps.
+  color_and_tone: Palette by piece family with enough contrast to inspect the edges.
+  lighting_and_shadow: Flat geometric art, verified before any material rendering.
+  texture_and_material: Exact shared edges made of clearly defined curves or straight segments.
+  camera_and_composition: Uneven distribution of scales with neighbor rules and no central patch.
+  atmosphere_and_mood: Irregularity with clear kinship, varied but never improvised.
+  rendering_and_quality: Clean coverage with no overlaps or unauthorized gaps.
+  creative_brief: "Uneven Tessellation Fields: related pieces at two scales share complementary edges and a few orientations, covering the field with no gaps. Carry it through two-scale pieces, complementary edges, limited rotations, full coverage. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: two-scale pieces; complementary edges; limited rotations; full coverage
+avoidRules:
+  - puzzles that do not fit
+  - joints disguised by texture
+  - shapes changing between repeats
+  - copied historical or cultural ornament
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: puzzles that do not fit, joints disguised by texture, shapes changing between repeats, copied historical or cultural ornament, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: surface-and-textile-design
+  categoryName: 13. Surface & Textile Design
+  domain: two-scale uneven tessellation
+  tags:
+    - curation-v2
+    - surface-and-textile-design
+    - uneven-tessellation
+    - applied-design
+    - surface
+    - r-pat-13
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-254
+packId: pack_25
+name: Figure-Ground Reversal Patterns
+styleAnchors:
+  - Figure-Ground Reversal Patterns
+  - reversible figure-ground pattern
+  - equal figure and ground
+displayName: Figure-Ground Reversal Patterns
+category: 13. Surface & Textile Design
+domain: reversible figure-ground pattern
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - surface-and-textile-design
+  - figure-ground
+  - applied-design
+  - surface
+  - r-pat-14
+visualDna:
+  aesthetic: 'Figure-Ground Reversal Patterns: shapes and the spaces between them are equally designed, so either one can be read as the figure.'
+  subject_treatment: Build a repeating surface from the prompt's subject where the masses and the gaps are equally complex and share every edge, readable either way.
+  color_and_tone: Two balanced values that keep contrast when inverted.
+  lighting_and_shadow: Flat surface with figure and ground equally crisp.
+  texture_and_material: One family of edges and minimal interior detail.
+  camera_and_composition: Alternating reading zones with both structures continuous at the edges.
+  atmosphere_and_mood: A calm perceptual flicker between two equally strong organizations.
+  rendering_and_quality: Clean repeat with shared contours and stable reading when reduced.
+  creative_brief: "Figure-Ground Reversal Patterns: shapes and the spaces between them are equally designed, so either one can be read as the figure. Carry it through equal figure and ground, shared edges, both polarities, perceptual flip. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: equal figure and ground; shared edges; both polarities; perceptual flip
+avoidRules:
+  - inverting any pattern and calling it new
+  - leftover empty gaps
+  - elements lost in one polarity
+  - copied historical or cultural ornament
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: inverting any pattern and calling it new, leftover empty gaps, elements lost in one polarity, copied historical or cultural ornament, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: surface-and-textile-design
+  categoryName: 13. Surface & Textile Design
+  domain: reversible figure-ground pattern
+  tags:
+    - curation-v2
+    - surface-and-textile-design
+    - figure-ground
+    - applied-design
+    - surface
+    - r-pat-14
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

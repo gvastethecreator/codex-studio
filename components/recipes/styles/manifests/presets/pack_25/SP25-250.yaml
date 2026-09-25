@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-250
+packId: pack_25
+name: Interrupted Stripe Weaves
+styleAnchors:
+  - Interrupted Stripe Weaves
+  - interrupted and bridged stripe pattern
+  - interrupted stripes
+displayName: Interrupted Stripe Weaves
+category: 13. Surface & Textile Design
+domain: interrupted and bridged stripe pattern
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - surface-and-textile-design
+  - interrupted-stripe
+  - applied-design
+  - surface
+  - r-pat-10
+visualDna:
+  aesthetic: 'Interrupted Stripe Weaves: stripes cut in alternating zones and reconnected by bridges that explain their continuity.'
+  subject_treatment: Build a repeating stripe surface where stripes break in alternating zones and reconnect through bridges, with the break points offset between neighbors.
+  color_and_tone: Two stripe colors and a stable ground showing through the gaps.
+  lighting_and_shadow: Flat artwork where over and under are shown by cuts and continuity.
+  texture_and_material: Constant-width stripes with crisp interruptions and a few wide crossings.
+  camera_and_composition: Offset cut sequence between neighboring stripes, phase kept at the edges.
+  atmosphere_and_mood: A graphic syncopation of repetition, interruption and return.
+  rendering_and_quality: Clean repeat with aligned ends and no tiny leftover segments.
+  creative_brief: "Interrupted Stripe Weaves: stripes cut in alternating zones and reconnected by bridges that explain their continuity. Carry it through interrupted stripes, bridging crossings, offset cuts, syncopated rhythm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: interrupted stripes; bridging crossings; offset cuts; syncopated rhythm
+avoidRules:
+  - recolored stripes with no new structure
+  - random cuts
+  - glitch effects
+  - copied historical or cultural ornament
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: recolored stripes with no new structure, random cuts, glitch effects, copied historical or cultural ornament, real brand or trademark, copying a specific famous design, real artist signature, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: surface-and-textile-design
+  categoryName: 13. Surface & Textile Design
+  domain: interrupted and bridged stripe pattern
+  tags:
+    - curation-v2
+    - surface-and-textile-design
+    - interrupted-stripe
+    - applied-design
+    - surface
+    - r-pat-10
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -3,7 +3,7 @@
     {
       "id": "pack_25",
       "name": "Applied Design",
-      "presetCount": 240
+      "presetCount": 260
     }
   ],
   "presets": [
@@ -4322,7 +4322,367 @@
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp25-240 overview-and-detail map overview with enlargement profile overview map 12. information & technical graphics information graphics overview with enlargement profile pack_25 applied design information-and-technical-graphics applied-design information-and-technical-graphics overview-with-enlargement-profile"
+    },
+    {
+      "id": "SP25-241",
+      "name": "Eccentric Repeat Canopies",
+      "styleAnchors": [
+        "Eccentric Repeat Canopies",
+        "hidden-repeat branching canopy pattern",
+        "three-scale branches"
+      ],
+      "ref": "pack_25/SP25-241.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "surface-and-textile-design",
+      "categoryName": "13. Surface & Textile Design",
+      "domain": "hidden-repeat branching canopy pattern",
+      "tags": [
+        "applied-design",
+        "surface-and-textile-design",
+        "hidden-repeat-branching-canopy-pattern"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-241 eccentric repeat canopies hidden-repeat branching canopy pattern three-scale branches 13. surface & textile design surface & textile design hidden-repeat branching canopy pattern pack_25 applied design surface-and-textile-design applied-design surface-and-textile-design hidden-repeat-branching-canopy-pattern"
+    },
+    {
+      "id": "SP25-242",
+      "name": "Density Counterpoint Patterns",
+      "styleAnchors": [
+        "Density Counterpoint Patterns",
+        "dense and sparse rhythm pattern",
+        "clusters and open fields"
+      ],
+      "ref": "pack_25/SP25-242.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "surface-and-textile-design",
+      "categoryName": "13. Surface & Textile Design",
+      "domain": "dense and sparse rhythm pattern",
+      "tags": ["applied-design", "surface-and-textile-design", "dense-and-sparse-rhythm-pattern"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-242 density counterpoint patterns dense and sparse rhythm pattern clusters and open fields 13. surface & textile design surface & textile design dense and sparse rhythm pattern pack_25 applied design surface-and-textile-design applied-design surface-and-textile-design dense-and-sparse-rhythm-pattern"
+    },
+    {
+      "id": "SP25-243",
+      "name": "Interleaved Scale Ornament",
+      "styleAnchors": [
+        "Interleaved Scale Ornament",
+        "two-scale interleaved ornament",
+        "large and small families"
+      ],
+      "ref": "pack_25/SP25-243.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "surface-and-textile-design",
+      "categoryName": "13. Surface & Textile Design",
+      "domain": "two-scale interleaved ornament",
+      "tags": ["applied-design", "surface-and-textile-design", "two-scale-interleaved-ornament"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-243 interleaved scale ornament two-scale interleaved ornament large and small families 13. surface & textile design surface & textile design two-scale interleaved ornament pack_25 applied design surface-and-textile-design applied-design surface-and-textile-design two-scale-interleaved-ornament"
+    },
+    {
+      "id": "SP25-244",
+      "name": "Warp-Weft Image Systems",
+      "styleAnchors": [
+        "Warp-Weft Image Systems",
+        "woven-structure image pattern",
+        "warp and weft dominance"
+      ],
+      "ref": "pack_25/SP25-244.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "surface-and-textile-design",
+      "categoryName": "13. Surface & Textile Design",
+      "domain": "woven-structure image pattern",
+      "tags": ["applied-design", "surface-and-textile-design", "woven-structure-image-pattern"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-244 warp-weft image systems woven-structure image pattern warp and weft dominance 13. surface & textile design surface & textile design woven-structure image pattern pack_25 applied design surface-and-textile-design applied-design surface-and-textile-design woven-structure-image-pattern"
+    },
+    {
+      "id": "SP25-245",
+      "name": "Broken-Lattice Florals",
+      "styleAnchors": [
+        "Broken-Lattice Florals",
+        "interrupted lattice motif pattern",
+        "broken lattice"
+      ],
+      "ref": "pack_25/SP25-245.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "surface-and-textile-design",
+      "categoryName": "13. Surface & Textile Design",
+      "domain": "interrupted lattice motif pattern",
+      "tags": ["applied-design", "surface-and-textile-design", "interrupted-lattice-motif-pattern"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-245 broken-lattice florals interrupted lattice motif pattern broken lattice 13. surface & textile design surface & textile design interrupted lattice motif pattern pack_25 applied design surface-and-textile-design applied-design surface-and-textile-design interrupted-lattice-motif-pattern"
+    },
+    {
+      "id": "SP25-246",
+      "name": "Nested Border Rhythms",
+      "styleAnchors": ["Nested Border Rhythms", "engineered nested border design", "nested bands"],
+      "ref": "pack_25/SP25-246.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "surface-and-textile-design",
+      "categoryName": "13. Surface & Textile Design",
+      "domain": "engineered nested border design",
+      "tags": ["applied-design", "surface-and-textile-design", "engineered-nested-border-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-246 nested border rhythms engineered nested border design nested bands 13. surface & textile design surface & textile design engineered nested border design pack_25 applied design surface-and-textile-design applied-design surface-and-textile-design engineered-nested-border-design"
+    },
+    {
+      "id": "SP25-247",
+      "name": "Counterform Branch Networks",
+      "styleAnchors": [
+        "Counterform Branch Networks",
+        "positive-negative branch network",
+        "positive and negative networks"
+      ],
+      "ref": "pack_25/SP25-247.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "surface-and-textile-design",
+      "categoryName": "13. Surface & Textile Design",
+      "domain": "positive-negative branch network",
+      "tags": ["applied-design", "surface-and-textile-design", "positive-negative-branch-network"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-247 counterform branch networks positive-negative branch network positive and negative networks 13. surface & textile design surface & textile design positive-negative branch network pack_25 applied design surface-and-textile-design applied-design surface-and-textile-design positive-negative-branch-network"
+    },
+    {
+      "id": "SP25-248",
+      "name": "Staggered Medallion Fields",
+      "styleAnchors": [
+        "Staggered Medallion Fields",
+        "offset medallion field pattern",
+        "offset rows"
+      ],
+      "ref": "pack_25/SP25-248.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "surface-and-textile-design",
+      "categoryName": "13. Surface & Textile Design",
+      "domain": "offset medallion field pattern",
+      "tags": ["applied-design", "surface-and-textile-design", "offset-medallion-field-pattern"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-248 staggered medallion fields offset medallion field pattern offset rows 13. surface & textile design surface & textile design offset medallion field pattern pack_25 applied design surface-and-textile-design applied-design surface-and-textile-design offset-medallion-field-pattern"
+    },
+    {
+      "id": "SP25-249",
+      "name": "Topographic Thread Bands",
+      "styleAnchors": [
+        "Topographic Thread Bands",
+        "sinuous banded thread pattern",
+        "sinuous flat bands"
+      ],
+      "ref": "pack_25/SP25-249.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "surface-and-textile-design",
+      "categoryName": "13. Surface & Textile Design",
+      "domain": "sinuous banded thread pattern",
+      "tags": ["applied-design", "surface-and-textile-design", "sinuous-banded-thread-pattern"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-249 topographic thread bands sinuous banded thread pattern sinuous flat bands 13. surface & textile design surface & textile design sinuous banded thread pattern pack_25 applied design surface-and-textile-design applied-design surface-and-textile-design sinuous-banded-thread-pattern"
+    },
+    {
+      "id": "SP25-250",
+      "name": "Interrupted Stripe Weaves",
+      "styleAnchors": [
+        "Interrupted Stripe Weaves",
+        "interrupted and bridged stripe pattern",
+        "interrupted stripes"
+      ],
+      "ref": "pack_25/SP25-250.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "surface-and-textile-design",
+      "categoryName": "13. Surface & Textile Design",
+      "domain": "interrupted and bridged stripe pattern",
+      "tags": [
+        "applied-design",
+        "surface-and-textile-design",
+        "interrupted-and-bridged-stripe-pattern"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-250 interrupted stripe weaves interrupted and bridged stripe pattern interrupted stripes 13. surface & textile design surface & textile design interrupted and bridged stripe pattern pack_25 applied design surface-and-textile-design applied-design surface-and-textile-design interrupted-and-bridged-stripe-pattern"
+    },
+    {
+      "id": "SP25-251",
+      "name": "Porous Tile Ornament",
+      "styleAnchors": [
+        "Porous Tile Ornament",
+        "perforated tile module pattern",
+        "perforated modules"
+      ],
+      "ref": "pack_25/SP25-251.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "surface-and-textile-design",
+      "categoryName": "13. Surface & Textile Design",
+      "domain": "perforated tile module pattern",
+      "tags": ["applied-design", "surface-and-textile-design", "perforated-tile-module-pattern"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-251 porous tile ornament perforated tile module pattern perforated modules 13. surface & textile design surface & textile design perforated tile module pattern pack_25 applied design surface-and-textile-design applied-design surface-and-textile-design perforated-tile-module-pattern"
+    },
+    {
+      "id": "SP25-252",
+      "name": "Growth-Rule Surface Motifs",
+      "styleAnchors": [
+        "Growth-Rule Surface Motifs",
+        "rule-based branching motif family",
+        "branching rule"
+      ],
+      "ref": "pack_25/SP25-252.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "surface-and-textile-design",
+      "categoryName": "13. Surface & Textile Design",
+      "domain": "rule-based branching motif family",
+      "tags": ["applied-design", "surface-and-textile-design", "rule-based-branching-motif-family"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-252 growth-rule surface motifs rule-based branching motif family branching rule 13. surface & textile design surface & textile design rule-based branching motif family pack_25 applied design surface-and-textile-design applied-design surface-and-textile-design rule-based-branching-motif-family"
+    },
+    {
+      "id": "SP25-253",
+      "name": "Uneven Tessellation Fields",
+      "styleAnchors": [
+        "Uneven Tessellation Fields",
+        "two-scale uneven tessellation",
+        "two-scale pieces"
+      ],
+      "ref": "pack_25/SP25-253.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "surface-and-textile-design",
+      "categoryName": "13. Surface & Textile Design",
+      "domain": "two-scale uneven tessellation",
+      "tags": ["applied-design", "surface-and-textile-design", "two-scale-uneven-tessellation"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-253 uneven tessellation fields two-scale uneven tessellation two-scale pieces 13. surface & textile design surface & textile design two-scale uneven tessellation pack_25 applied design surface-and-textile-design applied-design surface-and-textile-design two-scale-uneven-tessellation"
+    },
+    {
+      "id": "SP25-254",
+      "name": "Figure-Ground Reversal Patterns",
+      "styleAnchors": [
+        "Figure-Ground Reversal Patterns",
+        "reversible figure-ground pattern",
+        "equal figure and ground"
+      ],
+      "ref": "pack_25/SP25-254.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "surface-and-textile-design",
+      "categoryName": "13. Surface & Textile Design",
+      "domain": "reversible figure-ground pattern",
+      "tags": ["applied-design", "surface-and-textile-design", "reversible-figure-ground-pattern"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-254 figure-ground reversal patterns reversible figure-ground pattern equal figure and ground 13. surface & textile design surface & textile design reversible figure-ground pattern pack_25 applied design surface-and-textile-design applied-design surface-and-textile-design reversible-figure-ground-pattern"
+    },
+    {
+      "id": "SP25-255",
+      "name": "Stitched Line Topologies",
+      "styleAnchors": [
+        "Stitched Line Topologies",
+        "stitched route network pattern",
+        "stitch routes"
+      ],
+      "ref": "pack_25/SP25-255.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "surface-and-textile-design",
+      "categoryName": "13. Surface & Textile Design",
+      "domain": "stitched route network pattern",
+      "tags": ["applied-design", "surface-and-textile-design", "stitched-route-network-pattern"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-255 stitched line topologies stitched route network pattern stitch routes 13. surface & textile design surface & textile design stitched route network pattern pack_25 applied design surface-and-textile-design applied-design surface-and-textile-design stitched-route-network-pattern"
+    },
+    {
+      "id": "SP25-256",
+      "name": "Layered Tracery Fields",
+      "styleAnchors": ["Layered Tracery Fields", "fine tracery over bold masses", "fine tracery"],
+      "ref": "pack_25/SP25-256.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "surface-and-textile-design",
+      "categoryName": "13. Surface & Textile Design",
+      "domain": "fine tracery over bold masses",
+      "tags": ["applied-design", "surface-and-textile-design", "fine-tracery-over-bold-masses"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-256 layered tracery fields fine tracery over bold masses fine tracery 13. surface & textile design surface & textile design fine tracery over bold masses pack_25 applied design surface-and-textile-design applied-design surface-and-textile-design fine-tracery-over-bold-masses"
+    },
+    {
+      "id": "SP25-257",
+      "name": "Half-Drop Repeat Layout",
+      "styleAnchors": [
+        "Half-Drop Repeat Layout",
+        "half-drop repeat layout profile",
+        "half-drop offset"
+      ],
+      "ref": "pack_25/SP25-257.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "surface-and-textile-design",
+      "categoryName": "13. Surface & Textile Design",
+      "domain": "half-drop repeat layout profile",
+      "tags": ["applied-design", "surface-and-textile-design", "half-drop-repeat-layout-profile"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-257 half-drop repeat layout half-drop repeat layout profile half-drop offset 13. surface & textile design surface & textile design half-drop repeat layout profile pack_25 applied design surface-and-textile-design applied-design surface-and-textile-design half-drop-repeat-layout-profile"
+    },
+    {
+      "id": "SP25-258",
+      "name": "Engineered Border Placement",
+      "styleAnchors": [
+        "Engineered Border Placement",
+        "measured border placement profile",
+        "measured anchors"
+      ],
+      "ref": "pack_25/SP25-258.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "surface-and-textile-design",
+      "categoryName": "13. Surface & Textile Design",
+      "domain": "measured border placement profile",
+      "tags": ["applied-design", "surface-and-textile-design", "measured-border-placement-profile"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-258 engineered border placement measured border placement profile measured anchors 13. surface & textile design surface & textile design measured border placement profile pack_25 applied design surface-and-textile-design applied-design surface-and-textile-design measured-border-placement-profile"
+    },
+    {
+      "id": "SP25-259",
+      "name": "Seamless Tile Proof",
+      "styleAnchors": ["Seamless Tile Proof", "tile and repeat proof sheet profile", "single tile"],
+      "ref": "pack_25/SP25-259.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "surface-and-textile-design",
+      "categoryName": "13. Surface & Textile Design",
+      "domain": "tile and repeat proof sheet profile",
+      "tags": [
+        "applied-design",
+        "surface-and-textile-design",
+        "tile-and-repeat-proof-sheet-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-259 seamless tile proof tile and repeat proof sheet profile single tile 13. surface & textile design surface & textile design tile and repeat proof sheet profile pack_25 applied design surface-and-textile-design applied-design surface-and-textile-design tile-and-repeat-proof-sheet-profile"
+    },
+    {
+      "id": "SP25-260",
+      "name": "Colorway Family Study",
+      "styleAnchors": [
+        "Colorway Family Study",
+        "pattern colorway family profile",
+        "equal colorway panels"
+      ],
+      "ref": "pack_25/SP25-260.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "surface-and-textile-design",
+      "categoryName": "13. Surface & Textile Design",
+      "domain": "pattern colorway family profile",
+      "tags": ["applied-design", "surface-and-textile-design", "pattern-colorway-family-profile"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-260 colorway family study pattern colorway family profile equal colorway panels 13. surface & textile design surface & textile design pattern colorway family profile pack_25 applied design surface-and-textile-design applied-design surface-and-textile-design pattern-colorway-family-profile"
     }
   ],
-  "totalPresetCount": 240
+  "totalPresetCount": 260
 }
