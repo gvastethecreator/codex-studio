@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP02-065
 packId: pack_02
-name: God Rays (Volumetric)
+name: Hazed Window Shafts
 category: 5. Lighting And Atmosphere
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,71 +12,26 @@ tags:
   - cinematic-and-media
   - lighting-and-atmosphere
 visualDna:
-  aesthetic: >-
-    God Rays (Volumetric) acts as a transferable cinematic-media router: start from Light shafts,
-    God Rays (Volumetric) light transport, optical artifacts, exposure discipline, atmosphere depth,
-    and camera-response behavior, Visible beams, dust motes, shaft geometry, particulate haze and
-    portable lighting and atmosphere system built from light transport, exposure behavior, optical
-    distortion, volumetric density, reflection, and camera response, then apply the media behavior
-    to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
-    under God Rays (Volumetric): casting, wardrobe, props, motion cues, and silhouette hierarchy
-    follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot
-    beat; preserve the requested subject while letting the named light, atmosphere, or optical
-    effect transform silhouette, depth, value, and surface response, keeping the requested identity,
-    silhouette, action, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Dusty White, warm cream beam, cool shadow, golden particulate; use color as
-    light temperature, spectral split, water attenuation, neon bounce, candle warmth, night
-    conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent
-    control, and process-specific limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Beams through dust, volumetric shaft, aperture-cut light; make the named
-    light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric
-    rays, split contrast, or softbox falloff, so exposure and shadow structure support the media
-    process without overwriting the requested content.
-  texture_and_material: >-
-    Render Atmospheric, particulate haze, floating dust motes; surface detail should reveal
-    particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or
-    optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy
-    filler texture.
-  camera_and_composition: >-
-    Structure the image through Camera language native to God Rays (Volumetric): genre-aware
-    framing, lens designed subjects, focal hierarchy, motion cue, and beam-led spatial emphasis;
-    compose around light direction, reflection planes, depth layers, exposure zones, silhouette
-    edges, lens distortion, or atmospheric perspective without forcing a location, with frame
-    rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Sacred, still, suspended, revelation moment; derive mood from illumination
-    physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or
-    temporal flash energy, letting the media style alter interpretation without demanding a specific
-    story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Epic, luminous, volumetric, revelation-grade atmosphere; finish with believable
-    exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random
-    glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence
-    to make the style recognizable.
-  key_features: >-
-    Light shafts, God Rays (Volumetric) light transport, optical artifacts, exposure discipline,
-    atmosphere depth, and camera-response behavior; Visible beams, dust motes, shaft geometry,
-    particulate haze; Dusty White, warm cream beam, cool shadow, golden particulate; Atmospheric,
-    particulate haze, floating dust motes; Camera language native to God Rays (Volumetric):
-    genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and beam-led spatial
-    emphasis
-  creative_brief: >-
-    Apply God Rays (Volumetric) as a cinematic-media preset over prompt X: preserve the user's
-    requested subject, then route lens behavior, palette, light, signal or film texture,
-    composition, mood, and final media craft through Light shafts, God Rays (Volumetric) light
-    transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response
-    behavior, Visible beams, dust motes, shaft geometry, particulate haze, Atmospheric, particulate
-    haze, floating dust motes without requiring the card image's original subject.
+  aesthetic: 'Hazed window shafts: large film lights pushed through windows into a room filled with haze, so the light becomes solid beams.'
+  subject_treatment: Keep the prompt subject, action, setting and framing constant; change only the cinematic lighting setup, its haze and its grade, so the light is the difference, not a new location.
+  color_and_tone: Warm or daylight-white beams against grey-brown ambient, lifted shadows from the haze.
+  lighting_and_shadow: Hard HMI-like source outside the windows, crisp parallel beams, subjects stepping in and out of light.
+  texture_and_material: Haze density, dust motes and window mullion patterns printed on the floor.
+  camera_and_composition: Keep the requested framing; beams crossing the frame diagonally past the subject.
+  atmosphere_and_mood: Solemn and reverent, a quiet room filled with visible light.
+  rendering_and_quality: Film-set volumetrics with smooth haze and no banding.
+  key_features: hard source through windows; hazed interior; parallel beams; mullion patterns on the floor; lifted shadows
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hazed Window Shafts as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - changing the requested location
+  - franchise likeness
+  - celebrity likeness
+  - readable fake text
+  - light that does not match the named setup
   - clear air
   - official card scene
   - fixed thumbnail subject
   - prompt replaced by sample image
-  - readable fake text
   - watermark
   - logo clutter
   - generic stock footage
@@ -85,13 +40,16 @@ avoidRules:
   - crushed darkness
   - mandatory location
   - unmotivated light
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-065.webp
 attributes:
-  negativePrompt: >-
-    clear air, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random
-    glow overlay, crushed darkness, mandatory location, unmotivated light
+  negativePrompt: changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, clear air, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
@@ -105,3 +63,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Hazed Window Shafts
+styleAnchors:
+  - Hazed Window Shafts
+  - God Rays (Volumetric)

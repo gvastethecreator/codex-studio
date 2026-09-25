@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP02-072
 packId: pack_02
-name: Candlelight
+name: Candlelit Low-Light Cinema
 category: 5. Lighting And Atmosphere
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,70 +12,26 @@ tags:
   - cinematic-and-media
   - lighting-and-atmosphere
 visualDna:
-  aesthetic: >-
-    Candlelight acts as a transferable cinematic-media router: start from Candlelit pre-electric
-    warmth, Candlelight light transport, optical artifacts, exposure discipline, atmosphere depth,
-    and camera-response behavior, Low warm key, flame flicker, amber falloff, moving shadow edge and
-    portable lighting and atmosphere system built from light transport, exposure behavior, optical
-    distortion, volumetric density, reflection, and camera response, then apply the media behavior
-    to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
-    under Candlelight: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5.
-    Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat;
-    preserve the requested subject while letting the named light, atmosphere, or optical effect
-    transform silhouette, depth, value, and surface response, keeping the requested identity,
-    silhouette, action, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Warm Orange, amber flame, honey glow, deep umber falloff; use color as light
-    temperature, spectral split, water attenuation, neon bounce, candle warmth, night conversion,
-    prism dispersion, or atmospheric scattering, with deliberate value grouping, accent control, and
-    process-specific limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Flickering low, single-candle key, flame dance, warm underlight; make the
-    named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses,
-    volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support
-    the media process without overwriting the requested content.
-  texture_and_material: >-
-    Render Soft shadows, gentle roll-off, intimate darkness; surface detail should reveal particles,
-    lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical
-    streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler
-    texture.
-  camera_and_composition: >-
-    Structure the image through Camera language native to Candlelight: genre-aware framing, lens
-    designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose
-    around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens
-    distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing,
-    edge hierarchy, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Romantic, secret, flickering intimacy, warm darkness; derive mood from
-    illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon
-    danger, or temporal flash energy, letting the media style alter interpretation without demanding
-    a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Intimate, old, pre-electric warmth, flame-source authenticity; finish with
-    believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather
-    than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough
-    process evidence to make the style recognizable.
-  key_features: >-
-    Candlelit pre-electric warmth, Candlelight light transport, optical artifacts, exposure
-    discipline, atmosphere depth, and camera-response behavior; Low warm key, flame flicker, amber
-    falloff, moving shadow edge; Warm Orange, amber flame, honey glow, deep umber falloff; Soft
-    shadows, gentle roll-off, intimate darkness; Camera language native to Candlelight: genre-aware
-    framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition
-  creative_brief: >-
-    Apply Candlelight as a cinematic-media preset over prompt X: preserve the user's requested
-    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
-    and final media craft through Candlelit pre-electric warmth, Candlelight light transport,
-    optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Low warm
-    key, flame flicker, amber falloff, moving shadow edge, Soft shadows, gentle roll-off, intimate
-    darkness without requiring the card image's original subject.
+  aesthetic: 'Candlelit low-light cinema: scenes lit only by real candles, shot with extremely fast lenses so the frame glows warm and focus is razor thin.'
+  subject_treatment: Keep the prompt subject, action, setting and framing constant; change only the cinematic lighting setup, its haze and its grade, so the light is the difference, not a new location.
+  color_and_tone: Deep amber and gold, velvety brown-black, flesh glowing like old paintings.
+  lighting_and_shadow: Many candles as the only sources, soft falloff within a meter, flickering warm modeling.
+  texture_and_material: Wax, powdered wigs, silk, glassware and wood glowing warmly.
+  camera_and_composition: Keep the requested framing; very shallow focus, candles visible in frame.
+  atmosphere_and_mood: Intimate and painterly, a period room breathing in candlelight.
+  rendering_and_quality: Ultra-fast-lens film look with soft focus falloff; no electric light.
+  key_features: candles as only light; ultra-fast-lens shallow focus; amber glow; painterly faces; velvety dark
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Candlelit Low-Light Cinema as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - changing the requested location
+  - franchise likeness
+  - celebrity likeness
+  - readable fake text
+  - light that does not match the named setup
   - electric light
   - official card scene
   - fixed thumbnail subject
   - prompt replaced by sample image
-  - readable fake text
   - watermark
   - logo clutter
   - generic stock footage
@@ -84,13 +40,16 @@ avoidRules:
   - crushed darkness
   - mandatory location
   - unmotivated light
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-072.webp
 attributes:
-  negativePrompt: >-
-    electric light, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random
-    glow overlay, crushed darkness, mandatory location, unmotivated light
+  negativePrompt: changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, electric light, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
@@ -104,3 +63,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Candlelit Low-Light Cinema
+styleAnchors:
+  - Candlelit Low-Light Cinema
+  - Candlelight

@@ -5,176 +5,172 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP02-061',
-    name: 'Golden Hour',
+    name: 'Magic Hour Backlight',
+    displayName: 'Magic Hour Backlight',
+    styleAnchors: ['Magic Hour Backlight', 'Golden Hour'],
     category: '5. Lighting And Atmosphere',
     negativePrompt:
-      'blue, cold, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light',
+      'changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, blue, cold, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Golden Hour acts as a transferable cinematic-media router: start from Sunset light, Golden Hour light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Rim light, lens flare burst, amber haze, elongated shadow geometry and portable lighting and atmosphere system built from light transport, exposure behavior, optical distortion, volumetric density, reflection, and camera response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Magic-hour backlight cinematography: the low sun placed directly behind the subject, with a bounce board filling faces and a warm film grade.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Golden Hour: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while letting the named light, atmosphere, or optical effect transform silhouette, depth, value, and surface response, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action, setting and framing constant; change only the cinematic lighting setup, its haze and its grade, so the light is the difference, not a new location.',
       color_and_tone:
-        'Build color with Warm Gold/Orange, honey amber, peach wash, copper rim, low-sun warmth; use color as light temperature, spectral split, water attenuation, neon bounce, candle warmth, night conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Amber-gold highlights, honey skin from warm bounce, lifted cool shadows, gentle halation.',
       lighting_and_shadow:
-        'Handle light through Low angle sun, golden backlight, hazy atmospheric edge; make the named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render Soft, creamy diffusion, atmospheric haze; surface detail should reveal particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Sun as a hard backlight and rim, large bounce fill from the front at a 3:1 ratio, dust and hair glowing.',
+      texture_and_material: 'Flare veils, backlit dust, glowing hair and fabric edges.',
       camera_and_composition:
-        'Structure the image through Long shadows, stretched silhouettes, low-angle projection; compose around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Warm, happy, fleeting beauty, end-of-day peace; derive mood from illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or temporal flash energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Keep the requested framing; lens facing into the sun so flare and rim read.',
+      atmosphere_and_mood: 'Romantic and fleeting, the last few minutes of good light on set.',
       rendering_and_quality:
-        'Finish with Beautiful, romantic, magic-hour glow, cinematic warmth; finish with believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Filmic highlight rolloff and flare veiling; the still-photo golden hour lives in pack_01.',
       key_features:
-        'Sunset light, Golden Hour light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior; Rim light, lens flare burst, amber haze, elongated shadow geometry; Warm Gold/Orange, honey amber, peach wash, copper rim, low-sun warmth; Soft, creamy diffusion, atmospheric haze; Long shadows, stretched silhouettes, low-angle projection',
+        'sun directly behind subject; bounce-filled faces; rim and flare; warm film grade; 3:1 ratio',
       creative_brief:
-        "Apply Golden Hour as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Sunset light, Golden Hour light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Rim light, lens flare burst, amber haze, elongated shadow geometry, Soft, creamy diffusion, atmospheric haze without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Magic Hour Backlight as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP02-062',
-    name: 'Blue Hour',
+    name: 'Blue Hour Cinematography',
+    displayName: 'Blue Hour Cinematography',
+    styleAnchors: ['Blue Hour Cinematography', 'Blue Hour'],
     category: '5. Lighting And Atmosphere',
     negativePrompt:
-      'orange, sun, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light',
+      'changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, tram, wet street, orange, sun, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Blue Hour acts as a transferable cinematic-media router: start from Twilight, Blue Hour light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Blue ambient wrap, violet gradient, low contrast, warm practical accents and portable lighting and atmosphere system built from light transport, exposure behavior, optical distortion, volumetric density, reflection, and camera response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Blue-hour cinematography: shooting in the short window after sunset, balancing a deep blue ambient sky against warm practical lights rigged in frame.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Blue Hour: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while letting the named light, atmosphere, or optical effect transform silhouette, depth, value, and surface response, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action, setting and framing constant; change only the cinematic lighting setup, its haze and its grade, so the light is the difference, not a new location.',
       color_and_tone:
-        'Build color with Deep Blue/Purple, ultramarine sky, violet horizon, warm window amber; use color as light temperature, spectral split, water attenuation, neon bounce, candle warmth, night conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Cobalt and violet ambience, warm tungsten practicals, skin in mixed cool and warm light.',
       lighting_and_shadow:
-        'Handle light through Soft ambient, skydome fill, no shadows, twilight wrap; make the named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render Smooth, noise-free, silky gradient; surface detail should reveal particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Sky as a vast soft source, practicals boosted to read, a small warm key hidden near a lamp or window.',
+      texture_and_material: 'Glowing windows, lamps and lanterns; faint haze catching the light.',
       camera_and_composition:
-        'Structure the image through Camera language native to Blue Hour: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Quiet, cool, liminal pause, between-day-and-night; derive mood from illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or temporal flash energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Keep the requested framing; include a practical source and some sky.',
+      atmosphere_and_mood: 'Quiet and suspended, a scene held between day and night.',
       rendering_and_quality:
-        'Finish with Calm, transition-moment stillness, smooth twilight tonality; finish with believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Clean low-light film image with rich blues; no trams or wet-street clichés.',
       key_features:
-        'Twilight, Blue Hour light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior; Blue ambient wrap, violet gradient, low contrast, warm practical accents; Deep Blue/Purple, ultramarine sky, violet horizon, warm window amber; Smooth, noise-free, silky gradient; Camera language native to Blue Hour: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
+        'deep blue ambient sky; warm practicals in frame; hidden warm key; faint haze; balanced exposure',
       creative_brief:
-        "Apply Blue Hour as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Twilight, Blue Hour light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Blue ambient wrap, violet gradient, low contrast, warm practical accents, Smooth, noise-free, silky gradient without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blue Hour Cinematography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP02-063',
-    name: 'Rembrandt Lighting',
+    name: 'Cinematic Chiaroscuro Key',
+    displayName: 'Cinematic Chiaroscuro Key',
+    styleAnchors: ['Cinematic Chiaroscuro Key', 'Rembrandt Lighting'],
     category: '5. Lighting And Atmosphere',
     negativePrompt:
-      'flat, bright, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light',
+      'changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, flat, bright, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Rembrandt Lighting acts as a transferable cinematic-media router: start from Classic chiaroscuro portrait-light system, Rembrandt Lighting light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Chiaroscuro triangle logic, single-source carve, dark-side mystery, velvet falloff and portable lighting and atmosphere system built from light transport, exposure behavior, optical distortion, volumetric density, reflection, and camera response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Cinematic chiaroscuro key: one large soft source high to the side with heavy negative fill, producing deep contrast ratios and sculpted faces.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Rembrandt Lighting: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while letting the named light, atmosphere, or optical effect transform silhouette, depth, value, and surface response, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Warm umber, dark ground, golden highlight, deep void, restrained flesh-tone warmth; use color as light temperature, spectral split, water attenuation, neon bounce, candle warmth, night conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Keep the prompt subject, action, setting and framing constant; change only the cinematic lighting setup, its haze and its grade, so the light is the difference, not a new location.',
+      color_and_tone: 'Warm umber highlights, near-black shadows, muted period grade.',
       lighting_and_shadow:
-        'Handle light through Chiaroscuro triangle, 45-degree key, single-source drama; make the named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render Painterly light, oil-paint falloff, velvet darkness; surface detail should reveal particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Camera language native to Rembrandt Lighting: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Serious, artful, introspective stillness, old-master gravity; derive mood from illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or temporal flash energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Dramatic, classic, old-master gravitas, portrait dignity; finish with believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Single key at 45 degrees and above, black flags on the fill side for an 8:1 ratio, a lit triangle on the shadow cheek.',
+      texture_and_material: 'Skin, wool and wood modeled by soft-edged falloff into darkness.',
+      camera_and_composition: 'Keep the requested framing; faces turned toward the key.',
+      atmosphere_and_mood: 'Grave and intimate, a hush before a decision.',
+      rendering_and_quality: 'Low-key film exposure with detail kept in the midtones.',
       key_features:
-        'Classic chiaroscuro portrait-light system, Rembrandt Lighting light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior; Chiaroscuro triangle logic, single-source carve, dark-side mystery, velvet falloff; Warm umber, dark ground, golden highlight, deep void, restrained flesh-tone warmth; Painterly light, oil-paint falloff, velvet darkness; Camera language native to Rembrandt Lighting: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
+        'single high side key; negative fill; 8:1 contrast ratio; lit cheek triangle; umber grade',
       creative_brief:
-        "Apply Rembrandt Lighting as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Classic chiaroscuro portrait-light system, Rembrandt Lighting light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Chiaroscuro triangle logic, single-source carve, dark-side mystery, velvet falloff, Painterly light, oil-paint falloff, velvet darkness without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cinematic Chiaroscuro Key as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP02-064',
-    name: 'Neon Noir',
+    name: 'Neon Practical Noir',
+    displayName: 'Neon Practical Noir',
+    styleAnchors: ['Neon Practical Noir', 'Neon Noir'],
     category: '5. Lighting And Atmosphere',
     negativePrompt:
-      'daylight, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light',
+      'changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, readable neon sign, wet street reflections, daylight, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Neon Noir acts as a transferable cinematic-media router: start from Midnight neon-noir lighting style prioritizing reflective chroma bleed, sparse luminance islands, and cinematic cool isolation, Bi-chromatic reflections, dark-field contrast architecture, emissive point-source rhythm, moisture-driven specular response and portable lighting and atmosphere system built from light transport, exposure behavior, optical distortion, volumetric density, reflection, and camera response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Neon practical noir: interiors lit only by neon tubes and signs rigged in frame, shot wide open in haze with a cool film grade.',
       subject_treatment:
-        'Transform any prompt subject through Silhouette-first framing, minimal contour clutter, negative-space emphasis, edge readability under low-key illumination; preserve the requested subject while letting the named light, atmosphere, or optical effect transform silhouette, depth, value, and surface response, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action, setting and framing constant; change only the cinematic lighting setup, its haze and its grade, so the light is the difference, not a new location.',
       color_and_tone:
-        'Build color with Cyan-magenta bi-chromatic core, electric blue mids, restrained hot-pink accents, deep near-black foundations; use color as light temperature, spectral split, water attenuation, neon bounce, candle warmth, night conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Magenta, red and cyan tube light, deep blacks, skin taking the color of the nearest tube.',
       lighting_and_shadow:
-        'Handle light through Localized emissive practicals, controlled bounce pools, specular spill choreography, selective halo diffusion; make the named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Hard colored practicals as key and edge, very low ambient, haze revealing each tube.',
       texture_and_material:
-        'Render Wet-sheen reflectivity model, micro-surface puddle mirrors, slick asphalt-like gloss response, fine rain haze grain; surface detail should reveal particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Glass tubes, chrome, smoke, sweat and lacquer catching colored highlights.',
       camera_and_composition:
-        'Structure the image through Perspective neutrality with reflective depth doubling and compositional pull generated by light gradients; compose around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Solitary, tense, nocturnal, melancholic, atmospheric; derive mood from illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or temporal flash energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Keep the requested framing; at least one tube visible or clearly motivating the light.',
+      atmosphere_and_mood: 'Lonely and electric, a late hour humming with color.',
       rendering_and_quality:
-        'Finish with Filmic low-light polish with clean contrast control, moody saturation restraint, and high reflection legibility; finish with believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Clean saturated practicals without readable signage; not the rainy-street cliché.',
       key_features:
-        'Midnight neon-noir lighting style prioritizing reflective chroma bleed, sparse luminance islands, and cinematic cool isolation; Bi-chromatic reflections, dark-field contrast architecture, emissive point-source rhythm, moisture-driven specular response; Cyan-magenta bi-chromatic core, electric blue mids, restrained hot-pink accents, deep near-black foundations; Wet-sheen reflectivity model, micro-surface puddle mirrors, slick asphalt-like gloss response, fine rain haze grain; Perspective neutrality with reflective depth doubling and compositional pull generated by light gradients',
+        'neon tubes as the only light; colored practical key and edge; haze; deep blacks; unreadable signs',
       creative_brief:
-        "Apply Neon Noir as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Midnight neon-noir lighting style prioritizing reflective chroma bleed, sparse luminance islands, and cinematic cool isolation, Bi-chromatic reflections, dark-field contrast architecture, emissive point-source rhythm, moisture-driven specular response, Wet-sheen reflectivity model, micro-surface puddle mirrors, slick asphalt-like gloss response, fine rain haze grain without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon Practical Noir as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP02-065',
-    name: 'God Rays (Volumetric)',
+    name: 'Hazed Window Shafts',
+    displayName: 'Hazed Window Shafts',
+    styleAnchors: ['Hazed Window Shafts', 'God Rays (Volumetric)'],
     category: '5. Lighting And Atmosphere',
     negativePrompt:
-      'clear air, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light',
+      'changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, clear air, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'God Rays (Volumetric) acts as a transferable cinematic-media router: start from Light shafts, God Rays (Volumetric) light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Visible beams, dust motes, shaft geometry, particulate haze and portable lighting and atmosphere system built from light transport, exposure behavior, optical distortion, volumetric density, reflection, and camera response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Hazed window shafts: large film lights pushed through windows into a room filled with haze, so the light becomes solid beams.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under God Rays (Volumetric): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while letting the named light, atmosphere, or optical effect transform silhouette, depth, value, and surface response, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action, setting and framing constant; change only the cinematic lighting setup, its haze and its grade, so the light is the difference, not a new location.',
       color_and_tone:
-        'Build color with Dusty White, warm cream beam, cool shadow, golden particulate; use color as light temperature, spectral split, water attenuation, neon bounce, candle warmth, night conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Warm or daylight-white beams against grey-brown ambient, lifted shadows from the haze.',
       lighting_and_shadow:
-        'Handle light through Beams through dust, volumetric shaft, aperture-cut light; make the named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Hard HMI-like source outside the windows, crisp parallel beams, subjects stepping in and out of light.',
       texture_and_material:
-        'Render Atmospheric, particulate haze, floating dust motes; surface detail should reveal particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Haze density, dust motes and window mullion patterns printed on the floor.',
       camera_and_composition:
-        'Structure the image through Camera language native to God Rays (Volumetric): genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and beam-led spatial emphasis; compose around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Sacred, still, suspended, revelation moment; derive mood from illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or temporal flash energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Epic, luminous, volumetric, revelation-grade atmosphere; finish with believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Keep the requested framing; beams crossing the frame diagonally past the subject.',
+      atmosphere_and_mood: 'Solemn and reverent, a quiet room filled with visible light.',
+      rendering_and_quality: 'Film-set volumetrics with smooth haze and no banding.',
       key_features:
-        'Light shafts, God Rays (Volumetric) light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior; Visible beams, dust motes, shaft geometry, particulate haze; Dusty White, warm cream beam, cool shadow, golden particulate; Atmospheric, particulate haze, floating dust motes; Camera language native to God Rays (Volumetric): genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and beam-led spatial emphasis',
+        'hard source through windows; hazed interior; parallel beams; mullion patterns on the floor; lifted shadows',
       creative_brief:
-        "Apply God Rays (Volumetric) as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Light shafts, God Rays (Volumetric) light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Visible beams, dust motes, shaft geometry, particulate haze, Atmospheric, particulate haze, floating dust motes without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hazed Window Shafts as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP02-066',
-    name: 'Silhouette',
+    name: 'Cinematic Silhouette Backdrop',
+    displayName: 'Cinematic Silhouette Backdrop',
+    styleAnchors: ['Cinematic Silhouette Backdrop', 'Silhouette'],
     category: '5. Lighting And Atmosphere',
     negativePrompt:
-      'detail in shadow, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light',
+      'changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, front-lit subject, detail in shadow, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Silhouette acts as a transferable cinematic-media router: start from Backlit subject, Silhouette light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, No fill light, recognizable outline, backlit separation, shape-first read and portable lighting and atmosphere system built from light transport, exposure behavior, optical distortion, volumetric density, reflection, and camera response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Cinematic silhouette: subjects blocked against a blown-out bright background — sky, doorway or cyclorama — exposed so they fall to pure black.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Silhouette: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while letting the named light, atmosphere, or optical effect transform silhouette, depth, value, and surface response, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Black near field, luminous depth field field, orange or blue gradient, stark contrast; use color as light temperature, spectral split, water attenuation, neon bounce, candle warmth, night conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Keep the prompt subject, action, setting and framing constant; change only the cinematic lighting setup, its haze and its grade, so the light is the difference, not a new location.',
+      color_and_tone: 'Saturated sunset, white doorway glow or colored cyc behind; subjects black.',
       lighting_and_shadow:
-        'Handle light through Strong backlight, no fill, rim-only separation; make the named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render Contrast, edge crispness, opaque block; surface detail should reveal particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'All light behind the subject; no front fill; a thin edge of spill on contours.',
+      texture_and_material: 'Readable gestures and props defined only by outline.',
       camera_and_composition:
-        'Structure the image through Camera language native to Silhouette: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Mystery, drama, anonymous form, graphic suspense; derive mood from illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or temporal flash energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Graphic, bold, high-contrast drama, shape-first; finish with believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Keep the requested framing; subjects separated from each other against the brightest area.',
+      atmosphere_and_mood: 'Iconic and tense, drama told entirely through shape.',
+      rendering_and_quality: 'Clean black shapes against a smooth bright field; no muddy detail.',
       key_features:
-        'Backlit subject, Silhouette light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior; No fill light, recognizable outline, backlit separation, shape-first read; Black near field, luminous depth field field, orange or blue gradient, stark contrast; Contrast, edge crispness, opaque block; Camera language native to Silhouette: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
+        'subjects against blown background; pure black shapes; no front fill; separated gestures; smooth bright field',
       creative_brief:
-        "Apply Silhouette as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Backlit subject, Silhouette light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, No fill light, recognizable outline, backlit separation, shape-first read, Contrast, edge crispness, opaque block without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cinematic Silhouette Backdrop as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,28 +178,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Double Exposure',
     category: '5. Lighting And Atmosphere',
     negativePrompt:
-      'single image, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light',
+      'changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, hard digital cutout, single image, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Double Exposure acts as a transferable cinematic-media router: start from Layered images, Double Exposure light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Layer blend, silhouette face-covering design, translucent density, exposure sandwich and portable lighting and atmosphere system built from light transport, exposure behavior, optical distortion, volumetric density, reflection, and camera response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'In-camera double exposure: two images superimposed on the same film, with the darker areas of one revealing the other.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Double Exposure: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while letting the named light, atmosphere, or optical effect transform silhouette, depth, value, and surface response, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Ghostly mix, overlapping hue, translucent blend, ethereal overlay; use color as light temperature, spectral split, water attenuation, neon bounce, candle warmth, night conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Keep the prompt subject as the primary image and blend a second image that belongs to the prompt inside its dark areas, without inventing unrelated scenery.',
+      color_and_tone: 'Soft, low-contrast blend; highlights of one image washing out the other.',
       lighting_and_shadow:
-        'Handle light through Screen blend, additive exposure, in-camera double-strike; make the named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render Complex, layered transparency, film-sandwich density; surface detail should reveal particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'The first image lit so its silhouette or shadows leave room for the second.',
+      texture_and_material: 'Translucent overlaps, soft edges where the two images meet.',
       camera_and_composition:
-        'Structure the image through Overlap, layer nesting, translucent registration drift; compose around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Surreal, memory, dual exposure, fleeting connection; derive mood from illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or temporal flash energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Artsy, dream, visual poetry, memory-merge; finish with believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'A clear primary silhouette with the secondary image fitted inside it.',
+      atmosphere_and_mood: 'Dreamlike and memory-laden, two moments sharing one frame.',
+      rendering_and_quality: 'Optical superimposition look; not a hard digital cutout.',
       key_features:
-        'Layered images, Double Exposure light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior; Layer blend, silhouette face-covering design, translucent density, exposure sandwich; Ghostly mix, overlapping hue, translucent blend, ethereal overlay; Complex, layered transparency, film-sandwich density; Overlap, layer nesting, translucent registration drift',
+        'two superimposed images; second image inside the dark areas; soft translucent blend; primary silhouette; dreamlike',
       creative_brief:
-        "Apply Double Exposure as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Layered images, Double Exposure light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Layer blend, silhouette face-covering design, translucent density, exposure sandwich, Complex, layered transparency, film-sandwich density without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Double Exposure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -211,86 +203,78 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bokeh (Macro)',
     category: '5. Lighting And Atmosphere',
     negativePrompt:
-      'deep focus, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light',
+      'changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, deep focus, digital blur filter, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Bokeh (Macro) acts as a transferable cinematic-media router: start from Blurry lights, Bokeh (Macro) light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Shallow DOF, depth field abstraction, specular discs, creamy falloff and portable lighting and atmosphere system built from light transport, exposure behavior, optical distortion, volumetric density, reflection, and camera response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Bokeh macro: a fast macro lens wide open so one tiny plane is sharp and background lights melt into large glowing discs.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Bokeh (Macro): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while letting the named light, atmosphere, or optical effect transform silhouette, depth, value, and surface response, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Soft optical discs, warm amber blur, cool cyan blur, pastel specular circles; use color as light temperature, spectral split, water attenuation, neon bounce, candle warmth, night conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Keep the prompt subject, action, setting and framing constant; change only the cinematic lighting setup, its haze and its grade, so the light is the difference, not a new location.',
+      color_and_tone: 'Glowing colored discs of light, clean subject color, soft dark gaps.',
       lighting_and_shadow:
-        'Handle light through Defocused points, out-of-focus speculars, aperture-projected glow; make the named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Point lights or sparkling highlights far behind the subject; subject softly front-lit.',
       texture_and_material:
-        "Render Creamy blur, cat's-eye shape, soap-bubble edge; surface detail should reveal particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler texture.",
-      camera_and_composition:
-        'Structure the image through Circles, aperture shape projection, specular discs, cat-eye edges; compose around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Soft, optical, intimate, romantic haze; derive mood from illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or temporal flash energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Dreamy, abstract, lens-artist blur, optical softness; finish with believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Round or cat-eye bokeh discs, some with onion-ring texture; crisp subject detail.',
+      camera_and_composition: 'Keep the requested framing; background lights behind the subject.',
+      atmosphere_and_mood: 'Delicate and magical, a tiny world glowing in soft light.',
+      rendering_and_quality: 'Optical bokeh with smooth falloff; not a digital blur filter.',
       key_features:
-        "Blurry lights, Bokeh (Macro) light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior; Shallow DOF, depth field abstraction, specular discs, creamy falloff; Soft optical discs, warm amber blur, cool cyan blur, pastel specular circles; Creamy blur, cat's-eye shape, soap-bubble edge; Circles, aperture shape projection, specular discs, cat-eye edges",
+        'paper-thin focus plane; large glowing bokeh discs; cat-eye edges; crisp small subject; point lights behind',
       creative_brief:
-        "Apply Bokeh (Macro) as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Blurry lights, Bokeh (Macro) light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Shallow DOF, depth field abstraction, specular discs, creamy falloff, Creamy blur, cat's-eye shape, soap-bubble edge without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bokeh (Macro) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP02-069',
-    name: 'Split Lighting',
+    name: 'Cinematic Split Key',
+    displayName: 'Cinematic Split Key',
+    styleAnchors: ['Cinematic Split Key', 'Split Lighting'],
     category: '5. Lighting And Atmosphere',
     negativePrompt:
-      'flat light, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light',
+      'changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, flat light, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Split Lighting acts as a transferable cinematic-media router: start from Split-key high contrast lighting, Split Lighting light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Half black, half lit, razor side key, hard falloff and portable lighting and atmosphere system built from light transport, exposure behavior, optical distortion, volumetric density, reflection, and camera response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Cinematic split key: a hard light at exactly 90 degrees to the lens with full negative fill, cutting the subject into a lit half and a black half.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Split Lighting: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while letting the named light, atmosphere, or optical effect transform silhouette, depth, value, and surface response, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with High contrast, deep shadow, bright highlight, no midtone bridge; use color as light temperature, spectral split, water attenuation, neon bounce, candle warmth, night conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Keep the prompt subject, action, setting and framing constant; change only the cinematic lighting setup, its haze and its grade, so the light is the difference, not a new location.',
+      color_and_tone: 'Hard contrast, restrained color, the dark half near black.',
       lighting_and_shadow:
-        'Handle light through 90 degree key, side-only illumination, perfect split; make the named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render Hard side relief, surface texture, carved shadow edge; surface detail should reveal particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Perpendicular hard key, black flags on the other side, a crisp line down the center.',
+      texture_and_material: 'Grazing light exaggerating texture on the lit half.',
       camera_and_composition:
-        'Structure the image through Camera language native to Split Lighting: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Tense, hidden, divided, severe, mood carried by Split Lighting media process, signal pressure, and visual restraint; derive mood from illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or temporal flash energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Dramatic, severe, dual-zone tension, graphic contrast; finish with believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Keep the requested framing; subject frontal enough for the division to read.',
+      atmosphere_and_mood: 'Divided and menacing, two natures inside one face.',
+      rendering_and_quality: 'Clean film blacks and detailed highlights along the split line.',
       key_features:
-        'Split-key high contrast lighting, Split Lighting light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior; Half black, half lit, razor side key, hard falloff; High contrast, deep shadow, bright highlight, no midtone bridge; Hard side relief, surface texture, carved shadow edge; Camera language native to Split Lighting: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
+        '90-degree hard key; full negative fill; center split line; grazing texture; near-black half',
       creative_brief:
-        "Apply Split Lighting as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Split-key high contrast lighting, Split Lighting light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Half black, half lit, razor side key, hard falloff, Hard side relief, surface texture, carved shadow edge without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cinematic Split Key as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP02-070',
-    name: 'Butterfly Lighting',
+    name: 'Old Hollywood Beauty Key',
+    displayName: 'Old Hollywood Beauty Key',
+    styleAnchors: ['Old Hollywood Beauty Key', 'Butterfly Lighting'],
     category: '5. Lighting And Atmosphere',
     negativePrompt:
-      'harsh shadows, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light',
+      'changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, real actor likeness, harsh shadows, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Butterfly Lighting acts as a transferable cinematic-media router: start from High-front glamour lighting, Butterfly Lighting light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Beauty-dish catchlight, central top key, soft frontal fill, pearl highlight and portable lighting and atmosphere system built from light transport, exposure behavior, optical distortion, volumetric density, reflection, and camera response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Old Hollywood beauty key: a hard spotlight high and centered in front of the face, making a small butterfly shadow under the nose, with a glowing backlight.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Butterfly Lighting: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while letting the named light, atmosphere, or optical effect transform silhouette, depth, value, and surface response, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action, setting and framing constant; change only the cinematic lighting setup, its haze and its grade, so the light is the difference, not a new location.',
       color_and_tone:
-        'Build color with Flattering neutral warmth, peach glow, pearl highlight, clean beauty tones; use color as light temperature, spectral split, water attenuation, neon bounce, candle warmth, night conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Silvery black and white or soft glamour color, luminous skin, deep backgrounds.',
       lighting_and_shadow:
-        'Handle light through High front key, overhead beauty dish, central downward shadow cue; make the named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render Smooth diffusion, retouched surface, soft highlight gradients; surface detail should reveal particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Camera language native to Butterfly Lighting: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Beautiful, clean, aspirational elegance, fashion confidence; derive mood from illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or temporal flash energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Beauty, studio, magazine-cover polish, glamour perfection; finish with believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Fresnel spot above the lens, butterfly nose shadow, strong hair light and edge kicker.',
+      texture_and_material: 'Satin, pearls, sequins and lacquered hair catching crisp speculars.',
+      camera_and_composition: 'Keep the requested framing; faces frontal to the key.',
+      atmosphere_and_mood: 'Glamorous and timeless, a studio portrait of a screen idol.',
+      rendering_and_quality: 'Studio-era glamour finish with soft diffusion; invented faces only.',
       key_features:
-        'High-front glamour lighting, Butterfly Lighting light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior; Beauty-dish catchlight, central top key, soft frontal fill, pearl highlight; Flattering neutral warmth, peach glow, pearl highlight, clean beauty tones; Smooth diffusion, retouched surface, soft highlight gradients; Camera language native to Butterfly Lighting: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
+        'high centered hard spot; butterfly nose shadow; glowing hair light; satin speculars; soft diffusion',
       creative_brief:
-        "Apply Butterfly Lighting as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through High-front glamour lighting, Butterfly Lighting light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Beauty-dish catchlight, central top key, soft frontal fill, pearl highlight, Smooth diffusion, retouched surface, soft highlight gradients without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Old Hollywood Beauty Key as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -298,115 +282,111 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Day for Night',
     category: '5. Lighting And Atmosphere',
     negativePrompt:
-      'real night, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light',
+      'changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, visible sun disc, real night, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Day for Night acts as a transferable cinematic-media router: start from Fake movie night, Day for Night light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Blue cast, dark shadows at noon, noir-at-daylight and portable lighting and atmosphere system built from light transport, exposure behavior, optical distortion, volumetric density, reflection, and camera response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Day for night: a scene shot in daylight and underexposed, graded blue so it reads as moonlit night, with telltale hard sun shadows.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Day for Night: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while letting the named light, atmosphere, or optical effect transform silhouette, depth, value, and surface response, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action, setting and framing constant; change only the cinematic lighting setup, its haze and its grade, so the light is the difference, not a new location.',
       color_and_tone:
-        'Build color with Blue tint, tungsten-day conversion, cold moonlight, warm underexposure; use color as light temperature, spectral split, water attenuation, neon bounce, candle warmth, night conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Deep blue-grey grade, dark sky, crushed shadows, faint color left in highlights.',
       lighting_and_shadow:
-        'Handle light through Underexposed sun, stop-down daylight, ND-filter trickery; make the named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render Film, pushed stock, grain-from-underexposure; surface detail should reveal particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Hard sunlight used as "moonlight", sharp shadows and backlight glints that real moonlight would not give.',
+      texture_and_material: 'Sun glints on water and metal turned to cold silver.',
       camera_and_composition:
-        'Structure the image through Luminous sky plane against underexposed subject planes, impossible contrast, staged exposure paradox; compose around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Moonlight, fake, studio night, theatrical illusion; derive mood from illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or temporal flash energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Cinematic, uncanny, old-Hollywood cheat, suspension of disbelief; finish with believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Keep the requested framing; sky darkened with a filter, no visible sun.',
+      atmosphere_and_mood: 'Uneasy and stylized, a night that feels too bright.',
+      rendering_and_quality: 'Classic film trick look; not a real low-light exposure.',
       key_features:
-        'Fake movie night, Day for Night light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior; Blue cast, dark shadows at noon, noir-at-daylight; Blue tint, tungsten-day conversion, cold moonlight, warm underexposure; Film, pushed stock, grain-from-underexposure; Luminous sky plane against underexposed subject planes, impossible contrast, staged exposure paradox',
+        'daylight underexposed; blue night grade; hard sun shadows; darkened sky; silver glints',
       creative_brief:
-        "Apply Day for Night as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Fake movie night, Day for Night light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Blue cast, dark shadows at noon, noir-at-daylight, Film, pushed stock, grain-from-underexposure without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Day for Night as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP02-072',
-    name: 'Candlelight',
+    name: 'Candlelit Low-Light Cinema',
+    displayName: 'Candlelit Low-Light Cinema',
+    styleAnchors: ['Candlelit Low-Light Cinema', 'Candlelight'],
     category: '5. Lighting And Atmosphere',
     negativePrompt:
-      'electric light, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light',
+      'changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, electric light, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Candlelight acts as a transferable cinematic-media router: start from Candlelit pre-electric warmth, Candlelight light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Low warm key, flame flicker, amber falloff, moving shadow edge and portable lighting and atmosphere system built from light transport, exposure behavior, optical distortion, volumetric density, reflection, and camera response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Candlelit low-light cinema: scenes lit only by real candles, shot with extremely fast lenses so the frame glows warm and focus is razor thin.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Candlelight: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while letting the named light, atmosphere, or optical effect transform silhouette, depth, value, and surface response, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Warm Orange, amber flame, honey glow, deep umber falloff; use color as light temperature, spectral split, water attenuation, neon bounce, candle warmth, night conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Keep the prompt subject, action, setting and framing constant; change only the cinematic lighting setup, its haze and its grade, so the light is the difference, not a new location.',
+      color_and_tone: 'Deep amber and gold, velvety brown-black, flesh glowing like old paintings.',
       lighting_and_shadow:
-        'Handle light through Flickering low, single-candle key, flame dance, warm underlight; make the named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render Soft shadows, gentle roll-off, intimate darkness; surface detail should reveal particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Many candles as the only sources, soft falloff within a meter, flickering warm modeling.',
+      texture_and_material: 'Wax, powdered wigs, silk, glassware and wood glowing warmly.',
       camera_and_composition:
-        'Structure the image through Camera language native to Candlelight: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Romantic, secret, flickering intimacy, warm darkness; derive mood from illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or temporal flash energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Keep the requested framing; very shallow focus, candles visible in frame.',
+      atmosphere_and_mood: 'Intimate and painterly, a period room breathing in candlelight.',
       rendering_and_quality:
-        'Finish with Intimate, old, pre-electric warmth, flame-source authenticity; finish with believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Ultra-fast-lens film look with soft focus falloff; no electric light.',
       key_features:
-        'Candlelit pre-electric warmth, Candlelight light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior; Low warm key, flame flicker, amber falloff, moving shadow edge; Warm Orange, amber flame, honey glow, deep umber falloff; Soft shadows, gentle roll-off, intimate darkness; Camera language native to Candlelight: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
+        'candles as only light; ultra-fast-lens shallow focus; amber glow; painterly faces; velvety dark',
       creative_brief:
-        "Apply Candlelight as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Candlelit pre-electric warmth, Candlelight light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Low warm key, flame flicker, amber falloff, moving shadow edge, Soft shadows, gentle roll-off, intimate darkness without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Candlelit Low-Light Cinema as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP02-073',
-    name: 'Bioluminescence',
+    name: 'Bioluminescent Fantasy Glow',
+    displayName: 'Bioluminescent Fantasy Glow',
+    styleAnchors: ['Bioluminescent Fantasy Glow', 'Bioluminescence'],
     category: '5. Lighting And Atmosphere',
     negativePrompt:
-      'sunlight, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light',
+      'changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, sunlight, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Bioluminescence acts as a transferable cinematic-media router: start from Bioluminescent self-illumination, Avatar organic canopy as style anchor, organic phosphor glow, otherworldly photosynthesis, Internal cyan glow, phosphor trails, luminous particles, self-lit edges and portable lighting and atmosphere system built from light transport, exposure behavior, optical distortion, volumetric density, reflection, and camera response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Bioluminescent fantasy glow: cinematic night scenes lit by glowing plants, fungi and creatures, stylized brighter and more saturated than nature.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Bioluminescence: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while letting the named light, atmosphere, or optical effect transform silhouette, depth, value, and surface response, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action, setting and framing constant; change only the cinematic lighting setup, its haze and its grade, so the light is the difference, not a new location.',
       color_and_tone:
-        'Build color with Neon Blue/Green, cyan bioluminescence, teal glow, purple accent, deep night; use color as light temperature, spectral split, water attenuation, neon bounce, candle warmth, night conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Electric cyan, teal and violet glows with magenta accents against deep navy.',
       lighting_and_shadow:
-        'Handle light through Internal glow, self-illuminating materials, no external source; make the named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Soft upward and ambient glow from organisms, faces lit cold from below and around.',
       texture_and_material:
-        'Render Organic glow, phosphorescent surface, luminous cellular texture; surface detail should reveal particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Glowing veins, spores and trails; wet leaves and skin catching speckled light.',
       camera_and_composition:
-        'Structure the image through Camera language native to Bioluminescence: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Wonder, night, biosphere dream, silent phosphorescence; derive mood from illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or temporal flash energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Keep the requested framing; glowing organisms must be the visible sources.',
+      atmosphere_and_mood: 'Enchanted and alien, a living night that shines.',
       rendering_and_quality:
-        'Finish with Magical, alien ecology, glowing wonder, self-lit material response; finish with believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Clean stylized glow with deep blacks; original designs, no franchise worlds.',
       key_features:
-        'Bioluminescent self-illumination, Avatar organic canopy as style anchor, organic phosphor glow, otherworldly photosynthesis; Internal cyan glow, phosphor trails, luminous particles, self-lit edges; Neon Blue/Green, cyan bioluminescence, teal glow, purple accent, deep night; Organic glow, phosphorescent surface, luminous cellular texture; Camera language native to Bioluminescence: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
+        'glowing flora and fungi as sources; cyan and violet; floating spores; faces lit from below; navy darkness',
       creative_brief:
-        "Apply Bioluminescence as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Bioluminescent self-illumination, Avatar organic canopy as style anchor, organic phosphor glow, otherworldly photosynthesis, Internal cyan glow, phosphor trails, luminous particles, self-lit edges, Organic glow, phosphorescent surface, luminous cellular texture without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bioluminescent Fantasy Glow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP02-074',
-    name: 'Strobe Light',
+    name: 'Club Strobe Stutter',
+    displayName: 'Club Strobe Stutter',
+    styleAnchors: ['Club Strobe Stutter', 'Strobe Light'],
     category: '5. Lighting And Atmosphere',
     negativePrompt:
-      'continuous light, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light',
+      'changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, continuous light, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Strobe Light acts as a transferable cinematic-media router: start from Strobe-sliced motion freeze, Strobe Light light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Frozen motion, hard flash edges, ghost frame, black gaps, time-slice rhythm and portable lighting and atmosphere system built from light transport, exposure behavior, optical distortion, volumetric density, reflection, and camera response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Club strobe stutter: a dark space lit only by rapid strobe flashes, so a long exposure catches the subject in several frozen positions at once.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Strobe Light: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while letting the named light, atmosphere, or optical effect transform silhouette, depth, value, and surface response, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with High contrast White, hard flash, bleached moment, deep shadow gaps; use color as light temperature, spectral split, water attenuation, neon bounce, candle warmth, night conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Keep the prompt subject, action, setting and framing constant; change only the cinematic lighting setup, its haze and its grade, so the light is the difference, not a new location.',
+      color_and_tone: 'Cold white flashes on black, occasional colored gel tint, crushed ambient.',
       lighting_and_shadow:
-        'Handle light through Flash freeze, strobe burst, millisecond illumination; make the named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Repeated hard bursts from one side; everything between flashes stays black.',
       texture_and_material:
-        'Render Sharp motion edges, suspended droplets or fragments, hard-flash glare; surface detail should reveal particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Motion trails, ghost frame, multiple-exposure overlay; compose around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Disorienting, intense, discontinuous rhythm, flash-cut energy; derive mood from illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or temporal flash energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Stacked translucent copies of moving limbs and hair, crisp in each flash.',
+      camera_and_composition: 'Keep the requested framing; motion arcs across the frame.',
+      atmosphere_and_mood: 'Frenetic and disorienting, time chopped into flashes.',
       rendering_and_quality:
-        'Finish with Intense, frozen, time-slice, action-arrested, finished Strobe Light media craft with clear process evidence and controlled detail; finish with believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Multiple frozen positions in one frame; the single strobe freeze lives in pack_01.',
       key_features:
-        'Strobe-sliced motion freeze, Strobe Light light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior; Frozen motion, hard flash edges, ghost frame, black gaps, time-slice rhythm; High contrast White, hard flash, bleached moment, deep shadow gaps; Sharp motion edges, suspended droplets or fragments, hard-flash glare; Motion trails, ghost frame, multiple-exposure overlay',
+        'several frozen positions; strobe bursts on black; stacked limbs; motion arcs; cold flashes',
       creative_brief:
-        "Apply Strobe Light as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Strobe-sliced motion freeze, Strobe Light light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Frozen motion, hard flash edges, ghost frame, black gaps, time-slice rhythm, Sharp motion edges, suspended droplets or fragments, hard-flash glare without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Club Strobe Stutter as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -414,28 +394,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Prism Effect',
     category: '5. Lighting And Atmosphere',
     negativePrompt:
-      'clean lens, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light',
+      'changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, digital rainbow overlay, clean lens, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Prism Effect acts as a transferable cinematic-media router: start from Fractured image, Prism Effect light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Rainbows, color splitting, light dispersion, crystal edge and portable lighting and atmosphere system built from light transport, exposure behavior, optical distortion, volumetric density, reflection, and camera response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Prism effect: a glass prism or crystal held in front of the lens, splitting light into rainbow smears and ghost reflections at the frame edges.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Prism Effect: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while letting the named light, atmosphere, or optical effect transform silhouette, depth, value, and surface response, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Rainbow edges, spectral fringe, red-to-violet split, prismatic white; use color as light temperature, spectral split, water attenuation, neon bounce, candle warmth, night conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Keep the prompt subject, action, setting and framing constant; change only the cinematic lighting setup, its haze and its grade, so the light is the difference, not a new location.',
+      color_and_tone: 'Natural base color with spectral rainbow streaks and soft pastel ghosts.',
       lighting_and_shadow:
-        'Handle light through Refracted, glass-bent, crystal-split spectrum, process-led exposure structure, readable highlights, and style-specific shadow behavior; make the named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'A bright source refracted through the prism; flares and rainbows bending across the frame.',
       texture_and_material:
-        'Render Glass distortion, prism face, beveled edge refraction; surface detail should reveal particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Hazy refracted edges, softly doubled shapes and thin spectral fringes along contours.',
       camera_and_composition:
-        'Structure the image through Kaleidoscope, symmetrical fracture, repeating geometry; compose around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Dreamy, broken, fragmented vision, beauty-through-distortion; derive mood from illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or temporal flash energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Keep the requested framing; one edge of the frame softened by the prism.',
+      atmosphere_and_mood: 'Dreamy and experimental, reality slipping through glass.',
       rendering_and_quality:
-        'Finish with Artsy, psychedelic, optical light-bending, refractive polish; finish with believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Real in-camera refraction through glass; never a digital rainbow overlay.',
       key_features:
-        'Fractured image, Prism Effect light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior; Rainbows, color splitting, light dispersion, crystal edge; Rainbow edges, spectral fringe, red-to-violet split, prismatic white; Glass distortion, prism face, beveled edge refraction; Kaleidoscope, symmetrical fracture, repeating geometry',
+        'prism rainbow smears; ghost reflections at the edge; spectral fringes; doubled shapes; hazy refraction',
       creative_brief:
-        "Apply Prism Effect as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Fractured image, Prism Effect light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Rainbows, color splitting, light dispersion, crystal edge, Glass distortion, prism face, beveled edge refraction without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Prism Effect as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -443,28 +421,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rim Lighting',
     category: '5. Lighting And Atmosphere',
     negativePrompt:
-      'flat, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light',
+      'changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, flat, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Rim Lighting acts as a transferable cinematic-media router: start from Edge glow, Rim Lighting light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Halo, glowing outline, edge definition and portable lighting and atmosphere system built from light transport, exposure behavior, optical distortion, volumetric density, reflection, and camera response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Rim lighting: one or two hard backlights outlining the subject with a glowing edge against a dark background.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Rim Lighting: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while letting the named light, atmosphere, or optical effect transform silhouette, depth, value, and surface response, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Dark with white edge, black core, silver perimeter, hair-light gold; use color as light temperature, spectral split, water attenuation, neon bounce, candle warmth, night conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Keep the prompt subject, action, setting and framing constant; change only the cinematic lighting setup, its haze and its grade, so the light is the difference, not a new location.',
+      color_and_tone: 'Dark background, bright white or warm edge, little front detail.',
       lighting_and_shadow:
-        'Handle light through Backlight, rim-only separation, edge-defining key; make the named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render Silhouette detail, edge texture, haloed perimeter; surface detail should reveal particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Kicker lights behind and to the side of the subject, very low front fill, a halo on hair and shoulders.',
+      texture_and_material: 'Fur, hair, fabric edges and breath catching the rim.',
       camera_and_composition:
-        'Structure the image through Camera language native to Rim Lighting: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood emblematic, mystery, defined presence, emerging from shadow; derive mood from illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or temporal flash energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Dramatic, separation, subject-pop, depth-carving, finished Rim Lighting media craft with clear process evidence and controlled detail; finish with believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Keep the requested framing; subject against a darker area so the edge reads.',
+      atmosphere_and_mood: 'Dramatic and heroic, form defined by a line of light.',
+      rendering_and_quality: 'Clean edge highlights without blooming into the background.',
       key_features:
-        'Edge glow, Rim Lighting light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior; Halo, glowing outline, edge definition; Dark with white edge, black core, silver perimeter, hair-light gold; Silhouette detail, edge texture, haloed perimeter; Camera language native to Rim Lighting: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
+        'glowing edge outline; backlight kickers; dark background; low front fill; halo on hair',
       creative_brief:
-        "Apply Rim Lighting as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Edge glow, Rim Lighting light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Halo, glowing outline, edge definition, Silhouette detail, edge texture, haloed perimeter without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rim Lighting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -472,57 +446,52 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Underwater Light',
     category: '5. Lighting And Atmosphere',
     negativePrompt:
-      'dry, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light',
+      'changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, dry studio light, dry, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Underwater Light acts as a transferable cinematic-media router: start from Submerged, underwater optical lighting with liquid refraction, cyan attenuation, caustic net projection, suspended particles, and softened depth edges, Caustics, light-net projection, suspended particles, refractive wobble and portable lighting and atmosphere system built from light transport, exposure behavior, optical distortion, volumetric density, reflection, and camera response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Underwater light: sunlight refracted through a rippling surface, throwing moving caustic nets across everything below.',
       subject_treatment:
-        'Transform any prompt subject through Caustics, caustic projection, refractive wobble, fluid lens distortion, and depth-filtered silhouettes without requiring ocean subject matter; preserve the requested subject while letting the named light, atmosphere, or optical effect transform silhouette, depth, value, and surface response, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Cyan/Blue, aquamarine, deep navy, surface-silver, turquoise; use color as light temperature, spectral split, water attenuation, neon bounce, candle warmth, night conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Keep the prompt subject, action, setting and framing constant; change only the cinematic lighting setup, its haze and its grade, so the light is the difference, not a new location.',
+      color_and_tone: 'Cyan and aqua attenuation, warm tones dropping away with depth.',
       lighting_and_shadow:
-        'Handle light through Refracted sun, surface-dappled, caustic-net projection; make the named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Dappled caustic patterns moving over subjects and floor, sunbeams from above.',
       texture_and_material:
-        'Render Water distortion, fluid lens, suspended particles; surface detail should reveal particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Warped, refractive bend, swim-goggle perspective; compose around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Calm, deep, abyssal peace, submerged solitude; derive mood from illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or temporal flash energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Floating particles, rising bubbles and slowly drifting hair and fabric.',
+      camera_and_composition: 'Keep the requested framing; caustics visible on the subject.',
+      atmosphere_and_mood: 'Weightless and serene, sound and time slowed down.',
       rendering_and_quality:
-        'Finish with Muted, floating, weightless suspension, soundless depth; finish with believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Real underwater light behavior; a lighting modifier, not a nature scene.',
       key_features:
-        'Submerged, underwater optical lighting with liquid refraction, cyan attenuation, caustic net projection, suspended particles, and softened depth edges; Caustics, light-net projection, suspended particles, refractive wobble; Cyan/Blue, aquamarine, deep navy, surface-silver, turquoise; Water distortion, fluid lens, suspended particles; Warped, refractive bend, swim-goggle perspective',
+        'moving caustic nets; sunbeams from the surface; cyan attenuation; floating particles; drifting fabric',
       creative_brief:
-        "Apply Underwater Light as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Submerged, underwater optical lighting with liquid refraction, cyan attenuation, caustic net projection, suspended particles, and softened depth edges, Caustics, light-net projection, suspended particles, refractive wobble, Water distortion, fluid lens, suspended particles without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Underwater Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP02-078',
-    name: 'Light Painting',
+    name: 'Motion Light Trails',
+    displayName: 'Motion Light Trails',
+    styleAnchors: ['Motion Light Trails', 'Light Painting'],
     category: '5. Lighting And Atmosphere',
     negativePrompt:
-      'static light, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light',
+      'changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, static light, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Light Painting acts as a transferable cinematic-media router: start from Long exposure trails, Light Painting light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Trails, light ribbon, calligraphic light, motion-blur glow and portable lighting and atmosphere system built from light transport, exposure behavior, optical distortion, volumetric density, reflection, and camera response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Motion light trails: a slow shutter while lit things move, so torches, lanterns and lamps leave glowing streaks behind them.',
       subject_treatment:
-        'Transform any prompt subject through Light streaks, adapt the requested subject through light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior while preserving prompt identity; preserve the requested subject while letting the named light, atmosphere, or optical effect transform silhouette, depth, value, and surface response, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Neon lines, electric blue trails, magenta ribbon, RGB glow; use color as light temperature, spectral split, water attenuation, neon bounce, candle warmth, night conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Keep the prompt subject, action, setting and framing constant; change only the cinematic lighting setup, its haze and its grade, so the light is the difference, not a new location.',
+      color_and_tone: 'Warm or colored streaks against dark blue night, sharp static surroundings.',
       lighting_and_shadow:
-        'Handle light through Dark depth field, total black, light-only visibility; make the named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render Glowing lines, light-tube smoothness, LED ribbon; surface detail should reveal particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Camera language native to Light Painting: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Magic, art, drawing-with-light, nocturnal abstraction; derive mood from illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or temporal flash energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Moving practical lights leave continuous trails; static scene lit by ambient.',
+      texture_and_material: 'Smooth ribbons of light, faint ghosted figures carrying them.',
+      camera_and_composition: 'Keep the requested framing; the trails trace the path of movement.',
+      atmosphere_and_mood: 'Flowing and ceremonial, movement written in light.',
       rendering_and_quality:
-        'Finish with Creative, night, long-exposure artistry, motion-sculpture; finish with believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Clean long-exposure trails; handheld light drawing belongs to pack_01 Light Painting.',
       key_features:
-        'Long exposure trails, Light Painting light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior; Trails, light ribbon, calligraphic light, motion-blur glow; Neon lines, electric blue trails, magenta ribbon, RGB glow; Glowing lines, light-tube smoothness, LED ribbon; Camera language native to Light Painting: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
+        'trails from moving practical lights; ghosted carriers; sharp static surroundings; dark blue night; flowing paths',
       creative_brief:
-        "Apply Light Painting as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Long exposure trails, Light Painting light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Trails, light ribbon, calligraphic light, motion-blur glow, Glowing lines, light-tube smoothness, LED ribbon without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Motion Light Trails as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -530,57 +499,54 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Softbox Studio',
     category: '5. Lighting And Atmosphere',
     negativePrompt:
-      'harsh shadows, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light',
+      'changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, hard shadows, harsh shadows, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Softbox Studio acts as a transferable cinematic-media router: start from Product photography, Softbox Studio light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Soft shadows, seamless sweep, isolated form, diffuse wrap, clean backdrop and portable lighting and atmosphere system built from light transport, exposure behavior, optical distortion, volumetric density, reflection, and camera response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Softbox studio light: large diffused sources close to the subject on a seamless backdrop, giving wraparound light and soft-edged shadows.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Softbox Studio: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while letting the named light, atmosphere, or optical effect transform silhouette, depth, value, and surface response, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action, setting and framing constant; change only the cinematic lighting setup, its haze and its grade, so the light is the difference, not a new location.',
       color_and_tone:
-        'Build color with Perfect white balance, neutral grey, accurate local color, clean commercial tones; use color as light temperature, spectral split, water attenuation, neon bounce, candle warmth, night conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Clean neutral color, bright soft whites, gentle grey gradient on the seamless.',
       lighting_and_shadow:
-        'Handle light through Large diffuse source, softbox wrap, shadowless fill; make the named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Big softbox key, fill card opposite, soft contact shadow, no hard edges anywhere.',
       texture_and_material:
-        'Render Smooth gradients, seamless paper, clean backdrop; surface detail should reveal particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Camera language native to Softbox Studio: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Commercial, perfect, aspirational, sterile beauty; derive mood from illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or temporal flash energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Every surface shown clearly, with long smooth highlight gradients across curves.',
+      camera_and_composition: 'Keep the requested framing; subject isolated against the seamless.',
+      atmosphere_and_mood: 'Calm and clean, attention on the subject alone.',
       rendering_and_quality:
-        'Finish with Professional, clean, commercial polish, catalog-perfect; finish with believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Controlled studio exposure; a lighting modifier that keeps the subject unchanged.',
       key_features:
-        'Product photography, Softbox Studio light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior; Soft shadows, seamless sweep, isolated form, diffuse wrap, clean backdrop; Perfect white balance, neutral grey, accurate local color, clean commercial tones; Smooth gradients, seamless paper, clean backdrop; Camera language native to Softbox Studio: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
+        'large softbox key; seamless backdrop; wraparound light; soft contact shadow; smooth gradients',
       creative_brief:
-        "Apply Softbox Studio as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Product photography, Softbox Studio light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Soft shadows, seamless sweep, isolated form, diffuse wrap, clean backdrop, Smooth gradients, seamless paper, clean backdrop without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Softbox Studio as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP02-080',
-    name: 'JJ Abrams Anamorphic Overflare',
+    name: 'Anamorphic Overflare',
+    displayName: 'Anamorphic Overflare',
+    styleAnchors: ['Anamorphic Overflare', 'JJ Abrams Anamorphic Overflare'],
     category: '5. Lighting And Atmosphere',
     negativePrompt:
-      'matte, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light',
+      'changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, real director reference, matte, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'JJ Abrams Anamorphic Overflare acts as a transferable cinematic-media router: start from Glossy sci-fi reboot spectacle, Star Trek reboot energy as style anchor, blinding anamorphic, JJ Abrams lens-flare overload, Horizontal flare, anamorphic streak, cyan-white bloom, contrast washout and portable lighting and atmosphere system built from light transport, exposure behavior, optical distortion, volumetric density, reflection, and camera response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Anamorphic overflare: bright lights pointed into an anamorphic lens so long horizontal blue streaks and veiling flares cross the frame.',
       subject_treatment:
-        'Transform any prompt subject through Horizontal lines, adapt the requested subject through light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior while preserving prompt identity; preserve the requested subject while letting the named light, atmosphere, or optical effect transform silhouette, depth, value, and surface response, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Blue anamorphic, cyan streak, warm skin, deep space black, magnesium white; use color as light temperature, spectral split, water attenuation, neon bounce, candle warmth, night conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Keep the prompt subject, action, setting and framing constant; change only the cinematic lighting setup, its haze and its grade, so the light is the difference, not a new location.',
+      color_and_tone: 'Glossy blue and cyan streaks, bright whites, deep cool blacks.',
       lighting_and_shadow:
-        'Handle light through Blinding, overexposed key, intentional flare-induction; make the named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render Glass artifacts, multi-coated lens, element reflection; surface detail should reveal particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Practical lights, flashlights and searchlights aimed near the lens, creating streaks and glowing veils.',
+      texture_and_material: 'Horizontal flare lines, oval highlights, lens veiling over the image.',
       camera_and_composition:
-        'Structure the image through Washed out, flare-bleached, contrast-erased bloom; compose around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Future, bright, optimistic spectacle, epic scale; derive mood from illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or temporal flash energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Keep the requested framing; light sources placed in or at the edge of frame.',
+      atmosphere_and_mood: 'Kinetic and glossy, spectacle blazing across the lens.',
       rendering_and_quality:
-        'Finish with Sci-fi, action, summer-blockbuster spectacle, visual overload; finish with believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'True anamorphic flare behavior on invented designs, never any franchise ships or costumes.',
       key_features:
-        'Glossy sci-fi reboot spectacle, Star Trek reboot energy as style anchor, blinding anamorphic, JJ Abrams lens-flare overload; Horizontal flare, anamorphic streak, cyan-white bloom, contrast washout; Blue anamorphic, cyan streak, warm skin, deep space black, magnesium white; Glass artifacts, multi-coated lens, element reflection; Washed out, flare-bleached, contrast-erased bloom',
+        'long horizontal blue flares; oval highlights; lens veiling; lights aimed at the lens; glossy blacks',
       creative_brief:
-        "Apply JJ Abrams Anamorphic Overflare as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Glossy sci-fi reboot spectacle, Star Trek reboot energy as style anchor, blinding anamorphic, JJ Abrams lens-flare overload, Horizontal flare, anamorphic streak, cyan-white bloom, contrast washout, Glass artifacts, multi-coated lens, element reflection without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Anamorphic Overflare as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

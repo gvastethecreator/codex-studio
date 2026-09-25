@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP02-074
 packId: pack_02
-name: Strobe Light
+name: Club Strobe Stutter
 category: 5. Lighting And Atmosphere
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,70 +12,26 @@ tags:
   - cinematic-and-media
   - lighting-and-atmosphere
 visualDna:
-  aesthetic: >-
-    Strobe Light acts as a transferable cinematic-media router: start from Strobe-sliced motion
-    freeze, Strobe Light light transport, optical artifacts, exposure discipline, atmosphere depth,
-    and camera-response behavior, Frozen motion, hard flash edges, ghost frame, black gaps,
-    time-slice rhythm and portable lighting and atmosphere system built from light transport,
-    exposure behavior, optical distortion, volumetric density, reflection, and camera response, then
-    apply the media behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
-    under Strobe Light: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5.
-    Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat;
-    preserve the requested subject while letting the named light, atmosphere, or optical effect
-    transform silhouette, depth, value, and surface response, keeping the requested identity,
-    silhouette, action, object function, or setting legible.
-  color_and_tone: >-
-    Build color with High contrast White, hard flash, bleached moment, deep shadow gaps; use color
-    as light temperature, spectral split, water attenuation, neon bounce, candle warmth, night
-    conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent
-    control, and process-specific limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Flash freeze, strobe burst, millisecond illumination; make the named light
-    behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays,
-    split contrast, or softbox falloff, so exposure and shadow structure support the media process
-    without overwriting the requested content.
-  texture_and_material: >-
-    Render Sharp motion edges, suspended droplets or fragments, hard-flash glare; surface detail
-    should reveal particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid
-    distortion, or optical streaks without hiding prompt detail, keeping artifact scale coherent and
-    avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Motion trails, ghost frame, multiple-exposure overlay; compose
-    around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens
-    distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing,
-    edge hierarchy, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Disorienting, intense, discontinuous rhythm, flash-cut energy; derive mood from
-    illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon
-    danger, or temporal flash energy, letting the media style alter interpretation without demanding
-    a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Intense, frozen, time-slice, action-arrested, finished Strobe Light media craft with
-    clear process evidence and controlled detail; finish with believable exposure, clean denoise,
-    readable subjects, and controlled optical artifacts rather than random glow or crushed darkness,
-    clean denoised surfaces where appropriate, and enough process evidence to make the style
-    recognizable.
-  key_features: >-
-    Strobe-sliced motion freeze, Strobe Light light transport, optical artifacts, exposure
-    discipline, atmosphere depth, and camera-response behavior; Frozen motion, hard flash edges,
-    ghost frame, black gaps, time-slice rhythm; High contrast White, hard flash, bleached moment,
-    deep shadow gaps; Sharp motion edges, suspended droplets or fragments, hard-flash glare; Motion
-    trails, ghost frame, multiple-exposure overlay
-  creative_brief: >-
-    Apply Strobe Light as a cinematic-media preset over prompt X: preserve the user's requested
-    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
-    and final media craft through Strobe-sliced motion freeze, Strobe Light light transport, optical
-    artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Frozen motion,
-    hard flash edges, ghost frame, black gaps, time-slice rhythm, Sharp motion edges, suspended
-    droplets or fragments, hard-flash glare without requiring the card image's original subject.
+  aesthetic: 'Club strobe stutter: a dark space lit only by rapid strobe flashes, so a long exposure catches the subject in several frozen positions at once.'
+  subject_treatment: Keep the prompt subject, action, setting and framing constant; change only the cinematic lighting setup, its haze and its grade, so the light is the difference, not a new location.
+  color_and_tone: Cold white flashes on black, occasional colored gel tint, crushed ambient.
+  lighting_and_shadow: Repeated hard bursts from one side; everything between flashes stays black.
+  texture_and_material: Stacked translucent copies of moving limbs and hair, crisp in each flash.
+  camera_and_composition: Keep the requested framing; motion arcs across the frame.
+  atmosphere_and_mood: Frenetic and disorienting, time chopped into flashes.
+  rendering_and_quality: Multiple frozen positions in one frame; the single strobe freeze lives in pack_01.
+  key_features: several frozen positions; strobe bursts on black; stacked limbs; motion arcs; cold flashes
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Club Strobe Stutter as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - changing the requested location
+  - franchise likeness
+  - celebrity likeness
+  - readable fake text
+  - light that does not match the named setup
   - continuous light
   - official card scene
   - fixed thumbnail subject
   - prompt replaced by sample image
-  - readable fake text
   - watermark
   - logo clutter
   - generic stock footage
@@ -84,13 +40,16 @@ avoidRules:
   - crushed darkness
   - mandatory location
   - unmotivated light
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-074.webp
 attributes:
-  negativePrompt: >-
-    continuous light, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random
-    glow overlay, crushed darkness, mandatory location, unmotivated light
+  negativePrompt: changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, continuous light, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
@@ -104,3 +63,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Club Strobe Stutter
+styleAnchors:
+  - Club Strobe Stutter
+  - Strobe Light

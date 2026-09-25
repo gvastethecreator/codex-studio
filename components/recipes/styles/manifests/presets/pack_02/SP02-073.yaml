@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP02-073
 packId: pack_02
-name: Bioluminescence
+name: Bioluminescent Fantasy Glow
 category: 5. Lighting And Atmosphere
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,71 +12,26 @@ tags:
   - cinematic-and-media
   - lighting-and-atmosphere
 visualDna:
-  aesthetic: >-
-    Bioluminescence acts as a transferable cinematic-media router: start from Bioluminescent
-    self-illumination, Avatar organic canopy as style anchor, organic phosphor glow, otherworldly
-    photosynthesis, Internal cyan glow, phosphor trails, luminous particles, self-lit edges and
-    portable lighting and atmosphere system built from light transport, exposure behavior, optical
-    distortion, volumetric density, reflection, and camera response, then apply the media behavior
-    to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
-    under Bioluminescence: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5.
-    Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat;
-    preserve the requested subject while letting the named light, atmosphere, or optical effect
-    transform silhouette, depth, value, and surface response, keeping the requested identity,
-    silhouette, action, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Neon Blue/Green, cyan bioluminescence, teal glow, purple accent, deep night;
-    use color as light temperature, spectral split, water attenuation, neon bounce, candle warmth,
-    night conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping,
-    accent control, and process-specific limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Internal glow, self-illuminating materials, no external source; make the
-    named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses,
-    volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support
-    the media process without overwriting the requested content.
-  texture_and_material: >-
-    Render Organic glow, phosphorescent surface, luminous cellular texture; surface detail should
-    reveal particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion,
-    or optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding
-    noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Camera language native to Bioluminescence: genre-aware framing, lens
-    designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose
-    around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens
-    distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing,
-    edge hierarchy, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Wonder, night, biosphere dream, silent phosphorescence; derive mood from
-    illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon
-    danger, or temporal flash energy, letting the media style alter interpretation without demanding
-    a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Magical, alien ecology, glowing wonder, self-lit material response; finish with
-    believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather
-    than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough
-    process evidence to make the style recognizable.
-  key_features: >-
-    Bioluminescent self-illumination, Avatar organic canopy as style anchor, organic phosphor glow,
-    otherworldly photosynthesis; Internal cyan glow, phosphor trails, luminous particles, self-lit
-    edges; Neon Blue/Green, cyan bioluminescence, teal glow, purple accent, deep night; Organic
-    glow, phosphorescent surface, luminous cellular texture; Camera language native to
-    Bioluminescence: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and
-    style-led vertical composition
-  creative_brief: >-
-    Apply Bioluminescence as a cinematic-media preset over prompt X: preserve the user's requested
-    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
-    and final media craft through Bioluminescent self-illumination, Avatar organic canopy as style
-    anchor, organic phosphor glow, otherworldly photosynthesis, Internal cyan glow, phosphor trails,
-    luminous particles, self-lit edges, Organic glow, phosphorescent surface, luminous cellular
-    texture without requiring the card image's original subject.
+  aesthetic: 'Bioluminescent fantasy glow: cinematic night scenes lit by glowing plants, fungi and creatures, stylized brighter and more saturated than nature.'
+  subject_treatment: Keep the prompt subject, action, setting and framing constant; change only the cinematic lighting setup, its haze and its grade, so the light is the difference, not a new location.
+  color_and_tone: Electric cyan, teal and violet glows with magenta accents against deep navy.
+  lighting_and_shadow: Soft upward and ambient glow from organisms, faces lit cold from below and around.
+  texture_and_material: Glowing veins, spores and trails; wet leaves and skin catching speckled light.
+  camera_and_composition: Keep the requested framing; glowing organisms must be the visible sources.
+  atmosphere_and_mood: Enchanted and alien, a living night that shines.
+  rendering_and_quality: Clean stylized glow with deep blacks; original designs, no franchise worlds.
+  key_features: glowing flora and fungi as sources; cyan and violet; floating spores; faces lit from below; navy darkness
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bioluminescent Fantasy Glow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - changing the requested location
+  - franchise likeness
+  - celebrity likeness
+  - readable fake text
+  - light that does not match the named setup
   - sunlight
   - official card scene
   - fixed thumbnail subject
   - prompt replaced by sample image
-  - readable fake text
   - watermark
   - logo clutter
   - generic stock footage
@@ -85,13 +40,16 @@ avoidRules:
   - crushed darkness
   - mandatory location
   - unmotivated light
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-073.webp
 attributes:
-  negativePrompt: >-
-    sunlight, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random
-    glow overlay, crushed darkness, mandatory location, unmotivated light
+  negativePrompt: changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, sunlight, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
@@ -105,3 +63,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Bioluminescent Fantasy Glow
+styleAnchors:
+  - Bioluminescent Fantasy Glow
+  - Bioluminescence

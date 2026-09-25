@@ -3,7 +3,7 @@ id: SP02-079
 packId: pack_02
 name: Softbox Studio
 category: 5. Lighting And Atmosphere
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,71 +12,27 @@ tags:
   - cinematic-and-media
   - lighting-and-atmosphere
 visualDna:
-  aesthetic: >-
-    Softbox Studio acts as a transferable cinematic-media router: start from Product photography,
-    Softbox Studio light transport, optical artifacts, exposure discipline, atmosphere depth, and
-    camera-response behavior, Soft shadows, seamless sweep, isolated form, diffuse wrap, clean
-    backdrop and portable lighting and atmosphere system built from light transport, exposure
-    behavior, optical distortion, volumetric density, reflection, and camera response, then apply
-    the media behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
-    under Softbox Studio: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5.
-    Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat;
-    preserve the requested subject while letting the named light, atmosphere, or optical effect
-    transform silhouette, depth, value, and surface response, keeping the requested identity,
-    silhouette, action, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Perfect white balance, neutral grey, accurate local color, clean commercial
-    tones; use color as light temperature, spectral split, water attenuation, neon bounce, candle
-    warmth, night conversion, prism dispersion, or atmospheric scattering, with deliberate value
-    grouping, accent control, and process-specific limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Large diffuse source, softbox wrap, shadowless fill; make the named light
-    behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays,
-    split contrast, or softbox falloff, so exposure and shadow structure support the media process
-    without overwriting the requested content.
-  texture_and_material: >-
-    Render Smooth gradients, seamless paper, clean backdrop; surface detail should reveal particles,
-    lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical
-    streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler
-    texture.
-  camera_and_composition: >-
-    Structure the image through Camera language native to Softbox Studio: genre-aware framing, lens
-    designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose
-    around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens
-    distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing,
-    edge hierarchy, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Commercial, perfect, aspirational, sterile beauty; derive mood from illumination
-    physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or
-    temporal flash energy, letting the media style alter interpretation without demanding a specific
-    story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Professional, clean, commercial polish, catalog-perfect; finish with believable
-    exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random
-    glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence
-    to make the style recognizable.
-  key_features: >-
-    Product photography, Softbox Studio light transport, optical artifacts, exposure discipline,
-    atmosphere depth, and camera-response behavior; Soft shadows, seamless sweep, isolated form,
-    diffuse wrap, clean backdrop; Perfect white balance, neutral grey, accurate local color, clean
-    commercial tones; Smooth gradients, seamless paper, clean backdrop; Camera language native to
-    Softbox Studio: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and
-    style-led vertical composition
-  creative_brief: >-
-    Apply Softbox Studio as a cinematic-media preset over prompt X: preserve the user's requested
-    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
-    and final media craft through Product photography, Softbox Studio light transport, optical
-    artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Soft shadows,
-    seamless sweep, isolated form, diffuse wrap, clean backdrop, Smooth gradients, seamless paper,
-    clean backdrop without requiring the card image's original subject.
+  aesthetic: 'Softbox studio light: large diffused sources close to the subject on a seamless backdrop, giving wraparound light and soft-edged shadows.'
+  subject_treatment: Keep the prompt subject, action, setting and framing constant; change only the cinematic lighting setup, its haze and its grade, so the light is the difference, not a new location.
+  color_and_tone: Clean neutral color, bright soft whites, gentle grey gradient on the seamless.
+  lighting_and_shadow: Big softbox key, fill card opposite, soft contact shadow, no hard edges anywhere.
+  texture_and_material: Every surface shown clearly, with long smooth highlight gradients across curves.
+  camera_and_composition: Keep the requested framing; subject isolated against the seamless.
+  atmosphere_and_mood: Calm and clean, attention on the subject alone.
+  rendering_and_quality: Controlled studio exposure; a lighting modifier that keeps the subject unchanged.
+  key_features: large softbox key; seamless backdrop; wraparound light; soft contact shadow; smooth gradients
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Softbox Studio as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - changing the requested location
+  - franchise likeness
+  - celebrity likeness
+  - readable fake text
+  - light that does not match the named setup
+  - hard shadows
   - harsh shadows
   - official card scene
   - fixed thumbnail subject
   - prompt replaced by sample image
-  - readable fake text
   - watermark
   - logo clutter
   - generic stock footage
@@ -85,13 +41,16 @@ avoidRules:
   - crushed darkness
   - mandatory location
   - unmotivated light
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-079.webp
 attributes:
-  negativePrompt: >-
-    harsh shadows, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random
-    glow overlay, crushed darkness, mandatory location, unmotivated light
+  negativePrompt: changing the requested location, franchise likeness, celebrity likeness, readable fake text, light that does not match the named setup, hard shadows, harsh shadows, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow overlay, crushed darkness, mandatory location, unmotivated light, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

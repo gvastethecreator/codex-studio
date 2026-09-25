@@ -1108,7 +1108,8 @@
     },
     {
       "id": "SP02-061",
-      "name": "Golden Hour",
+      "name": "Magic Hour Backlight",
+      "styleAnchors": ["Magic Hour Backlight", "Golden Hour"],
       "ref": "pack_02/SP02-061.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -1116,11 +1117,12 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-061 golden hour 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-061 magic hour backlight golden hour 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-062",
-      "name": "Blue Hour",
+      "name": "Blue Hour Cinematography",
+      "styleAnchors": ["Blue Hour Cinematography", "Blue Hour"],
       "ref": "pack_02/SP02-062.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -1128,11 +1130,12 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-062 blue hour 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-062 blue hour cinematography blue hour 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-063",
-      "name": "Rembrandt Lighting",
+      "name": "Cinematic Chiaroscuro Key",
+      "styleAnchors": ["Cinematic Chiaroscuro Key", "Rembrandt Lighting"],
       "ref": "pack_02/SP02-063.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -1140,11 +1143,12 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-063 rembrandt lighting 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-063 cinematic chiaroscuro key rembrandt lighting 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-064",
-      "name": "Neon Noir",
+      "name": "Neon Practical Noir",
+      "styleAnchors": ["Neon Practical Noir", "Neon Noir"],
       "ref": "pack_02/SP02-064.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -1152,11 +1156,12 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-064 neon noir 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-064 neon practical noir neon noir 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-065",
-      "name": "God Rays (Volumetric)",
+      "name": "Hazed Window Shafts",
+      "styleAnchors": ["Hazed Window Shafts", "God Rays (Volumetric)"],
       "ref": "pack_02/SP02-065.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -1164,11 +1169,12 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-065 god rays (volumetric) 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-065 hazed window shafts god rays (volumetric) 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-066",
-      "name": "Silhouette",
+      "name": "Cinematic Silhouette Backdrop",
+      "styleAnchors": ["Cinematic Silhouette Backdrop", "Silhouette"],
       "ref": "pack_02/SP02-066.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -1176,7 +1182,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-066 silhouette 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-066 cinematic silhouette backdrop silhouette 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-067",
@@ -1204,7 +1210,8 @@
     },
     {
       "id": "SP02-069",
-      "name": "Split Lighting",
+      "name": "Cinematic Split Key",
+      "styleAnchors": ["Cinematic Split Key", "Split Lighting"],
       "ref": "pack_02/SP02-069.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -1212,11 +1219,12 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-069 split lighting 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-069 cinematic split key split lighting 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-070",
-      "name": "Butterfly Lighting",
+      "name": "Old Hollywood Beauty Key",
+      "styleAnchors": ["Old Hollywood Beauty Key", "Butterfly Lighting"],
       "ref": "pack_02/SP02-070.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -1224,7 +1232,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-070 butterfly lighting 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-070 old hollywood beauty key butterfly lighting 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-071",
@@ -1240,7 +1248,8 @@
     },
     {
       "id": "SP02-072",
-      "name": "Candlelight",
+      "name": "Candlelit Low-Light Cinema",
+      "styleAnchors": ["Candlelit Low-Light Cinema", "Candlelight"],
       "ref": "pack_02/SP02-072.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -1248,11 +1257,12 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-072 candlelight 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-072 candlelit low-light cinema candlelight 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-073",
-      "name": "Bioluminescence",
+      "name": "Bioluminescent Fantasy Glow",
+      "styleAnchors": ["Bioluminescent Fantasy Glow", "Bioluminescence"],
       "ref": "pack_02/SP02-073.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -1260,11 +1270,12 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-073 bioluminescence 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-073 bioluminescent fantasy glow bioluminescence 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-074",
-      "name": "Strobe Light",
+      "name": "Club Strobe Stutter",
+      "styleAnchors": ["Club Strobe Stutter", "Strobe Light"],
       "ref": "pack_02/SP02-074.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -1272,7 +1283,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-074 strobe light 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-074 club strobe stutter strobe light 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-075",
@@ -1312,7 +1323,8 @@
     },
     {
       "id": "SP02-078",
-      "name": "Light Painting",
+      "name": "Motion Light Trails",
+      "styleAnchors": ["Motion Light Trails", "Light Painting"],
       "ref": "pack_02/SP02-078.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -1320,7 +1332,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-078 light painting 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-078 motion light trails light painting 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-079",
@@ -1336,7 +1348,8 @@
     },
     {
       "id": "SP02-080",
-      "name": "JJ Abrams Anamorphic Overflare",
+      "name": "Anamorphic Overflare",
+      "styleAnchors": ["Anamorphic Overflare", "JJ Abrams Anamorphic Overflare"],
       "ref": "pack_02/SP02-080.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -1344,7 +1357,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-080 jj abrams anamorphic overflare 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-080 anamorphic overflare jj abrams anamorphic overflare 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-081",
