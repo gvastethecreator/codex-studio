@@ -1,0 +1,80 @@
+schemaVersion: 1
+id: SP01-112
+packId: pack_01
+name: High-ISO Night Reportage
+styleAnchors:
+  - High-ISO Night Reportage
+  - available-light night reportage
+  - no flash
+displayName: High-ISO Night Reportage
+category: 4. Documentary And Street
+domain: available-light night reportage
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - documentary-and-street
+  - night
+  - high-iso
+  - documentary
+visualDna:
+  aesthetic: 'High-ISO night reportage: handheld at ISO 6400–12800 with no flash, using only the practical light of fires, lamps and windows.'
+  subject_treatment: Keep the prompt subject, action and setting; render them as an unposed moment seen by a working photographer, without inventing an event, crowd or location the prompt did not ask for.
+  color_and_tone: Warm practicals against deep blue-black, slightly muddy saturation, color noise in the shadows.
+  lighting_and_shadow: Small pools of practical light, faces lit from one side, large areas of near-black.
+  texture_and_material: Visible luminance and color noise, slight motion softness in hands, glowing embers or flames.
+  camera_and_composition: Wide aperture shallow focus, 35 mm handheld, subject turned toward the light source.
+  atmosphere_and_mood: Hushed and nocturnal, work carrying on while the rest of the world sleeps.
+  rendering_and_quality: Honest digital high-ISO noise and soft focus falloff; no flash, no noise reduction smear.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies High-ISO Night Reportage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: no flash; practical light pools; high-ISO noise; shallow handheld focus; deep blue-black shadows
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - synthetic CGI
+  - plastic render
+  - staged advertisement
+  - stock-photo gloss
+  - generic stock-photo face
+  - celebrity likeness
+  - inventing an event the prompt did not ask for
+  - flash
+  - clean noiseless shadows
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, flash, clean noiseless shadows, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: documentary-and-street
+  categoryName: 4. Documentary And Street
+  tags:
+    - photography-and-realism
+    - documentary-and-street
+    - night
+    - high-iso
+    - documentary
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: available-light night reportage

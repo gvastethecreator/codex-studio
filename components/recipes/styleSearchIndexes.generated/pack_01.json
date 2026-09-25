@@ -3,7 +3,7 @@
     {
       "id": "pack_01",
       "name": "Photography & Realism",
-      "presetCount": 101
+      "presetCount": 112
     }
   ],
   "presets": [
@@ -907,6 +907,228 @@
       "searchableText": "sp01-075 urbex (urban exploration) 4. documentary and street documentary & camera pack_01 photography & realism documentary-and-street photography-and-realism documentary-and-street"
     },
     {
+      "id": "SP01-102",
+      "name": "Layered Color Street",
+      "styleAnchors": [
+        "Layered Color Street",
+        "layered color street photography",
+        "three or four depth planes"
+      ],
+      "ref": "pack_01/SP01-102.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "documentary-and-street",
+      "categoryName": "4. Documentary And Street",
+      "domain": "layered color street photography",
+      "tags": [
+        "photography-and-realism",
+        "documentary-and-street",
+        "layered-color-street-photography"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-102 layered color street layered color street photography three or four depth planes 4. documentary and street documentary & camera layered color street photography pack_01 photography & realism documentary-and-street photography-and-realism documentary-and-street layered-color-street-photography"
+    },
+    {
+      "id": "SP01-103",
+      "name": "Telephoto Compression Street",
+      "styleAnchors": [
+        "Telephoto Compression Street",
+        "long-lens compressed street",
+        "extreme telephoto compression"
+      ],
+      "ref": "pack_01/SP01-103.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "documentary-and-street",
+      "categoryName": "4. Documentary And Street",
+      "domain": "long-lens compressed street",
+      "tags": ["photography-and-realism", "documentary-and-street", "long-lens-compressed-street"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-103 telephoto compression street long-lens compressed street extreme telephoto compression 4. documentary and street documentary & camera long-lens compressed street pack_01 photography & realism documentary-and-street photography-and-realism documentary-and-street long-lens-compressed-street"
+    },
+    {
+      "id": "SP01-104",
+      "name": "Hard-Shadow Street Geometry",
+      "styleAnchors": [
+        "Hard-Shadow Street Geometry",
+        "graphic shadow street photography",
+        "subject in a slice of light"
+      ],
+      "ref": "pack_01/SP01-104.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "documentary-and-street",
+      "categoryName": "4. Documentary And Street",
+      "domain": "graphic shadow street photography",
+      "tags": [
+        "photography-and-realism",
+        "documentary-and-street",
+        "graphic-shadow-street-photography"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-104 hard-shadow street geometry graphic shadow street photography subject in a slice of light 4. documentary and street documentary & camera graphic shadow street photography pack_01 photography & realism documentary-and-street photography-and-realism documentary-and-street graphic-shadow-street-photography"
+    },
+    {
+      "id": "SP01-105",
+      "name": "Reflection-Layered Street",
+      "styleAnchors": [
+        "Reflection-Layered Street",
+        "glass reflection street photography",
+        "through-glass layering"
+      ],
+      "ref": "pack_01/SP01-105.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "documentary-and-street",
+      "categoryName": "4. Documentary And Street",
+      "domain": "glass reflection street photography",
+      "tags": [
+        "photography-and-realism",
+        "documentary-and-street",
+        "glass-reflection-street-photography"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-105 reflection-layered street glass reflection street photography through-glass layering 4. documentary and street documentary & camera glass reflection street photography pack_01 photography & realism documentary-and-street photography-and-realism documentary-and-street glass-reflection-street-photography"
+    },
+    {
+      "id": "SP01-106",
+      "name": "Slow-Shutter Crowd Drag",
+      "styleAnchors": [
+        "Slow-Shutter Crowd Drag",
+        "slow-shutter motion street",
+        "one sharp still subject"
+      ],
+      "ref": "pack_01/SP01-106.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "documentary-and-street",
+      "categoryName": "4. Documentary And Street",
+      "domain": "slow-shutter motion street",
+      "tags": ["photography-and-realism", "documentary-and-street", "slow-shutter-motion-street"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-106 slow-shutter crowd drag slow-shutter motion street one sharp still subject 4. documentary and street documentary & camera slow-shutter motion street pack_01 photography & realism documentary-and-street photography-and-realism documentary-and-street slow-shutter-motion-street"
+    },
+    {
+      "id": "SP01-107",
+      "name": "Over-Under Split Shot",
+      "styleAnchors": [
+        "Over-Under Split Shot",
+        "half-underwater dome port photography",
+        "waterline splits the frame"
+      ],
+      "ref": "pack_01/SP01-107.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "documentary-and-street",
+      "categoryName": "4. Documentary And Street",
+      "domain": "half-underwater dome port photography",
+      "tags": [
+        "photography-and-realism",
+        "documentary-and-street",
+        "half-underwater-dome-port-photography"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-107 over-under split shot half-underwater dome port photography waterline splits the frame 4. documentary and street documentary & camera half-underwater dome port photography pack_01 photography & realism documentary-and-street photography-and-realism documentary-and-street half-underwater-dome-port-photography"
+    },
+    {
+      "id": "SP01-108",
+      "name": "Documentary Typology Portrait",
+      "styleAnchors": [
+        "Documentary Typology Portrait",
+        "frontal typological portrait",
+        "frontal full-length stance"
+      ],
+      "ref": "pack_01/SP01-108.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "documentary-and-street",
+      "categoryName": "4. Documentary And Street",
+      "domain": "frontal typological portrait",
+      "tags": ["photography-and-realism", "documentary-and-street", "frontal-typological-portrait"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-108 documentary typology portrait frontal typological portrait frontal full-length stance 4. documentary and street documentary & camera frontal typological portrait pack_01 photography & realism documentary-and-street photography-and-realism documentary-and-street frontal-typological-portrait"
+    },
+    {
+      "id": "SP01-109",
+      "name": "Low Oblique Aerial",
+      "styleAnchors": [
+        "Low Oblique Aerial",
+        "oblique aerial photography",
+        "30–45 degree downward angle"
+      ],
+      "ref": "pack_01/SP01-109.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "documentary-and-street",
+      "categoryName": "4. Documentary And Street",
+      "domain": "oblique aerial photography",
+      "tags": ["photography-and-realism", "documentary-and-street", "oblique-aerial-photography"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-109 low oblique aerial oblique aerial photography 30–45 degree downward angle 4. documentary and street documentary & camera oblique aerial photography pack_01 photography & realism documentary-and-street photography-and-realism documentary-and-street oblique-aerial-photography"
+    },
+    {
+      "id": "SP01-110",
+      "name": "Frame-Within-Frame Observational",
+      "styleAnchors": [
+        "Frame-Within-Frame Observational",
+        "observational doorway framing",
+        "dark doorway or arch frame"
+      ],
+      "ref": "pack_01/SP01-110.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "documentary-and-street",
+      "categoryName": "4. Documentary And Street",
+      "domain": "observational doorway framing",
+      "tags": [
+        "photography-and-realism",
+        "documentary-and-street",
+        "observational-doorway-framing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-110 frame-within-frame observational observational doorway framing dark doorway or arch frame 4. documentary and street documentary & camera observational doorway framing pack_01 photography & realism documentary-and-street photography-and-realism documentary-and-street observational-doorway-framing"
+    },
+    {
+      "id": "SP01-111",
+      "name": "Humanist Reportage",
+      "styleAnchors": [
+        "Humanist Reportage",
+        "humanist black-and-white reportage",
+        "tender everyday moment"
+      ],
+      "ref": "pack_01/SP01-111.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "documentary-and-street",
+      "categoryName": "4. Documentary And Street",
+      "domain": "humanist black-and-white reportage",
+      "tags": [
+        "photography-and-realism",
+        "documentary-and-street",
+        "humanist-black-and-white-reportage"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-111 humanist reportage humanist black-and-white reportage tender everyday moment 4. documentary and street documentary & camera humanist black-and-white reportage pack_01 photography & realism documentary-and-street photography-and-realism documentary-and-street humanist-black-and-white-reportage"
+    },
+    {
+      "id": "SP01-112",
+      "name": "High-ISO Night Reportage",
+      "styleAnchors": ["High-ISO Night Reportage", "available-light night reportage", "no flash"],
+      "ref": "pack_01/SP01-112.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "documentary-and-street",
+      "categoryName": "4. Documentary And Street",
+      "domain": "available-light night reportage",
+      "tags": [
+        "photography-and-realism",
+        "documentary-and-street",
+        "available-light-night-reportage"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-112 high-iso night reportage available-light night reportage no flash 4. documentary and street documentary & camera available-light night reportage pack_01 photography & realism documentary-and-street photography-and-realism documentary-and-street available-light-night-reportage"
+    },
+    {
       "id": "SP01-049",
       "name": "Food Photography",
       "ref": "pack_01/SP01-049.yaml",
@@ -1291,5 +1513,5 @@
       "searchableText": "sp01-077 medical photography 7. technical and specialist imaging technical capture pack_01 photography & realism technical-and-specialist-imaging photography-and-realism technical-and-specialist-imaging"
     }
   ],
-  "totalPresetCount": 101
+  "totalPresetCount": 112
 }

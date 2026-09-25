@@ -1,0 +1,80 @@
+schemaVersion: 1
+id: SP01-108
+packId: pack_01
+name: Documentary Typology Portrait
+styleAnchors:
+  - Documentary Typology Portrait
+  - frontal typological portrait
+  - frontal full-length stance
+displayName: Documentary Typology Portrait
+category: 4. Documentary And Street
+domain: frontal typological portrait
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - documentary-and-street
+  - typology
+  - portrait
+  - documentary
+visualDna:
+  aesthetic: 'Documentary typology portrait: a medium-format frontal full-length portrait of a person as their trade, one of an imagined series, with no drama in light or pose.'
+  subject_treatment: Keep the prompt subject and setting; stand the person upright and square to the camera, full length, looking into the lens, holding the tool or object that defines them.
+  color_and_tone: Soft neutral color or quiet monochrome; the sitter's clothes carry the only accents.
+  lighting_and_shadow: Even overcast daylight, no key light, gentle shadow under the feet.
+  texture_and_material: Worn work clothes, tools and hands rendered with medium-format clarity.
+  camera_and_composition: Camera at chest height, centered subject, full body with a little ground and plain local background, symmetrical frame.
+  atmosphere_and_mood: Dignified and matter-of-fact, a person simply presented as who they are.
+  rendering_and_quality: Medium-format precision and restraint; no dramatic grading, wide-angle distortion or candid blur.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Documentary Typology Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: frontal full-length stance; direct gaze; defining tool in hand; even overcast light; centered symmetrical frame
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - synthetic CGI
+  - plastic render
+  - staged advertisement
+  - stock-photo gloss
+  - generic stock-photo face
+  - celebrity likeness
+  - inventing an event the prompt did not ask for
+  - dramatic lighting
+  - candid motion
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, dramatic lighting, candid motion, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: documentary-and-street
+  categoryName: 4. Documentary And Street
+  tags:
+    - photography-and-realism
+    - documentary-and-street
+    - typology
+    - portrait
+    - documentary
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: frontal typological portrait

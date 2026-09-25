@@ -8,28 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'GoPro Wide',
     category: '4. Documentary And Street',
     negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, staged advertisement, fake smiles, stock-photo gloss, tourist postcard polish, readable captions',
+      'staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, shallow depth of field, rectilinear lens, illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, fake smiles, tourist postcard polish, readable captions, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'GoPro Wide acts as a transferable photographic style router: begin from Action camera POV, Wide FOV, and observational photographic system built from available-light capture, imperfect timing, public-space pressure, and real-world incident, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Action-camera point of view: a tiny ultra-wide camera strapped to a helmet, chest, handlebar or pole, seeing about 150 degrees with a bulging fisheye curve.',
       subject_treatment:
-        'Treat any prompt subject through Fisheye distortion; preserve prompt identity while favoring candid posture, active context, environmental evidence, and unsanitized physical detail, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action and setting; this preset owns the camera position and lens, so re-stage only the viewpoint as described.',
       color_and_tone:
-        'Grade with Vibrant, sharp; grade as street, travel, concert, war, sport, paparazzi, or field documentary capture rather than commercial color polish, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Punchy small-sensor color, bright saturated skies and foliage, slightly crunchy contrast, shadows that block quickly.',
       lighting_and_shadow:
-        'Use Harsh available light; use available light, flash intrusion, stage beams, harsh noon, rain reflection, smoke, or practical spill as factual scene evidence, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Whatever the outdoors gives, usually hard sun; flare streaks when the sun enters the dome, no added light.',
       texture_and_material:
-        'Render Digital sharpening; keep street surfaces, sweat, dust, fabric wear, weather, grain, high ISO, and motion smear honest rather than decorative, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Over-sharpened fine detail, spray and mud droplets on the lens dome, motion blur only at the extreme edges.',
       camera_and_composition:
-        'Compose through Curved horizon; compose with decisive moment tension, wide action proximity, telephoto intrusion, crowd-layer rhythm, horizon pressure, or unstable framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+        'Mounted camera close to the action: strong barrel distortion, curved horizon, a piece of the wearer or their gear (hands, helmet rim, handlebar, ski tips) intruding at the frame edge, deep focus everywhere.',
       atmosphere_and_mood:
-        'Keep the mood Active, immersive; derive mood from urgency, witness, travel discovery, danger, crowd energy, decay, speed, or unrepeatable timing, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Immersive and breathless, the viewer strapped into the motion with no safe distance.',
       rendering_and_quality:
-        'Finish with Action-camera realism; finish as credible documentary photography with restrained processing, readable action, and no stock-advertising gloss, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Consumer action-cam realism: crisp center, stretched corners, no cinematic depth of field or smooth grading.',
       key_features:
-        'Action camera POV; Wide FOV; Vibrant, sharp; Harsh available light; Curved horizon',
+        '150-degree fisheye; curved horizon; wearer or gear in frame; droplets on the dome; deep focus',
       creative_brief:
-        "Apply GoPro Wide as a photographic preset over prompt X: preserve the user's requested subject, then route Action camera POV, Vibrant, sharp, Harsh available light, Digital sharpening, and Curved horizon through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies GoPro Wide as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +37,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Drone Aerial',
     category: '4. Documentary And Street',
     negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, staged advertisement, fake smiles, stock-photo gloss, tourist postcard polish, readable captions',
+      'staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, visible horizon, oblique angle, tilt-shift miniature blur, illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, fake smiles, tourist postcard polish, readable captions, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        "Drone Aerial acts as a transferable photographic style router: begin from Top-down view, Bird's eye view, and observational photographic system built from available-light capture, imperfect timing, public-space pressure, and real-world incident, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.",
+        'Drone nadir aerial: the camera pointing straight down from 60 to 120 meters, turning the ground into a flat map of shapes, paths and shadows.',
       subject_treatment:
-        'Treat any prompt subject through Top-down geometry; preserve prompt identity while favoring candid posture, active context, environmental evidence, and unsanitized physical detail, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action and setting; this preset owns the camera position and lens, so re-stage only the viewpoint as described.',
       color_and_tone:
-        'Grade with Saturated; grade as street, travel, concert, war, sport, paparazzi, or field documentary capture rather than commercial color polish, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Clean saturated color, strong local hues against neutral ground, shadows as dark graphic shapes.',
       lighting_and_shadow:
-        'Use Flat (noon) or long shadows; use available light, flash intrusion, stage beams, harsh noon, rain reflection, smoke, or practical spill as factual scene evidence, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Low sun gives long shadows that reveal height; noon light flattens everything into pattern.',
       texture_and_material:
-        'Render Sharp digital; keep street surfaces, sweat, dust, fabric wear, weather, grain, high ISO, and motion smear honest rather than decorative, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Surfaces read as texture fields — water, sand, roofs, crops, snow — with people and objects reduced to small marks.',
       camera_and_composition:
-        'Compose through Flattened perspective; compose with decisive moment tension, wide action proximity, telephoto intrusion, crowd-layer rhythm, horizon pressure, or unstable framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+        'Perfectly top-down, no horizon, flattened perspective, subject placed as a small shape inside a larger pattern, strong symmetry or diagonal lines.',
       atmosphere_and_mood:
-        'Keep the mood Epic, overview; derive mood from urgency, witness, travel discovery, danger, crowd energy, decay, speed, or unrepeatable timing, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Detached and epic, the familiar world turned into an abstract map seen from far above.',
       rendering_and_quality:
-        'Finish with Drone survey realism; finish as credible documentary photography with restrained processing, readable action, and no stock-advertising gloss, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Sharp drone survey clarity with no tilt-shift blur, fisheye curve or oblique angle.',
       key_features:
-        "Top-down view; Bird's eye view; Saturated; Flat (noon) or long shadows; Flattened perspective",
+        'straight-down nadir view; flattened map perspective; long shadows reveal height; tiny human marks; pattern fields',
       creative_brief:
-        "Apply Drone Aerial as a photographic preset over prompt X: preserve the user's requested subject, then route Top-down view, Saturated, Flat (noon) or long shadows, Sharp digital, and Flattened perspective through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Drone Aerial as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +66,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Street Photography',
     category: '4. Documentary And Street',
     negativePrompt:
-      'posed, studio, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, staged advertisement, fake smiles, stock-photo gloss, tourist postcard polish, readable captions',
+      'staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, posed, studio, color, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake smiles, tourist postcard polish, readable captions, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Street Photography acts as a transferable photographic style router: begin from Documentary candid moment, Decisive moment tension, and observational photographic system built from available-light capture, imperfect timing, public-space pressure, and real-world incident, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Classic black-and-white street photography: a 28–35 mm rangefinder at zone focus, catching the decisive instant when gesture and geometry line up.',
       subject_treatment:
-        'Treat any prompt subject through Messy composition; preserve prompt identity while favoring candid posture, active context, environmental evidence, and unsanitized physical detail, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action and setting; render them as an unposed moment seen by a working photographer, without inventing an event, crowd or location the prompt did not ask for.',
       color_and_tone:
-        'Grade with High contrast B&W or gritty color; grade as street, travel, concert, war, sport, paparazzi, or field documentary capture rather than commercial color polish, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'High-contrast monochrome, deep blacks and bright paper whites, few muted greys.',
       lighting_and_shadow:
-        'Use Natural; use available light, flash intrusion, stage beams, harsh noon, rain reflection, smoke, or practical spill as factual scene evidence, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Hard available sun or overcast; shadows used as black shapes in the composition.',
       texture_and_material:
-        'Render Grain; keep street surfaces, sweat, dust, fabric wear, weather, grain, high ISO, and motion smear honest rather than decorative, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Honest grain, real wear on clothes and walls, slight motion blur in feet or hands.',
       camera_and_composition:
-        'Compose through Motion blur; compose with decisive moment tension, wide action proximity, telephoto intrusion, crowd-layer rhythm, horizon pressure, or unstable framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+        'Eye level or lower, subject off-center within layered depth, a leap, glance or crossing aligned with a line, stair or doorway.',
       atmosphere_and_mood:
-        'Keep the mood Real, fleeting; derive mood from urgency, witness, travel discovery, danger, crowd energy, decay, speed, or unrepeatable timing, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Alert and fleeting, a small coincidence frozen before it dissolves back into the street.',
       rendering_and_quality:
-        'Finish with Cartier-Bresson, decisive moment; finish as credible documentary photography with restrained processing, readable action, and no stock-advertising gloss, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Darkroom-print contrast and grain, not a posed portrait and not a gritty digital filter.',
       key_features:
-        'Documentary candid moment; Decisive moment tension; High contrast B&W or gritty color; Natural; Motion blur',
+        'decisive moment; high-contrast black and white; gesture aligned with geometry; 28–35 mm closeness; honest grain',
       creative_brief:
-        "Apply Street Photography as a photographic preset over prompt X: preserve the user's requested subject, then route Documentary candid moment, High contrast B&W or gritty color, Natural, Grain, and Motion blur through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Street Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +95,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sports Action',
     category: '4. Documentary And Street',
     negativePrompt:
-      'static, slow, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, staged advertisement, fake smiles, stock-photo gloss, tourist postcard polish, readable captions',
+      'staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, static pose, wide-angle distortion, readable jersey numbers, static, slow, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake smiles, tourist postcard polish, readable captions, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Sports Action acts as a transferable photographic style router: begin from High-speed action capture, Action freeze, and observational photographic system built from available-light capture, imperfect timing, public-space pressure, and real-world incident, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Sports action photography: a 300–400 mm telephoto at f/2.8 and 1/2000 s freezing the peak instant of an effort.',
       subject_treatment:
-        'Treat any prompt subject through Frozen force geometry; preserve prompt identity while favoring candid posture, active context, environmental evidence, and unsanitized physical detail, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action and setting; render them as an unposed moment seen by a working photographer, without inventing an event, crowd or location the prompt did not ask for.',
       color_and_tone:
-        'Grade with Vibrant competition color; grade as street, travel, concert, war, sport, paparazzi, or field documentary capture rather than commercial color polish, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Clean vivid color on the athlete, background dissolved into soft color blocks.',
       lighting_and_shadow:
-        'Use Hard contest geometry-style light; use available light, flash intrusion, stage beams, harsh noon, rain reflection, smoke, or practical spill as factual scene evidence, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Hard daylight or stadium floods from above; sweat and flying material catch bright specular highlights.',
       texture_and_material:
-        'Render Impact texture, dust, sheen; keep street surfaces, sweat, dust, fabric wear, weather, grain, high ISO, and motion smear honest rather than decorative, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Frozen dust, sand, water, splinters and sweat drops hanging around the body; fabric rippled by force.',
       camera_and_composition:
-        'Compose through Motion blur depth field; compose with decisive moment tension, wide action proximity, telephoto intrusion, crowd-layer rhythm, horizon pressure, or unstable framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+        'Tight telephoto crop on the peak of action, compressed background, crowd or landscape reduced to blur, eye contact or strain visible.',
       atmosphere_and_mood:
-        'Keep the mood Intense, fast; derive mood from urgency, witness, travel discovery, danger, crowd energy, decay, speed, or unrepeatable timing, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Explosive and strained, the body at maximum effort held still for one frame.',
       rendering_and_quality:
-        'Finish with Sports-editorial sharpness; finish as credible documentary photography with restrained processing, readable action, and no stock-advertising gloss, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Razor-sharp subject against creamy telephoto blur, no motion smear on the athlete.',
       key_features:
-        'High-speed action capture; Action freeze; Vibrant competition color; Hard contest geometry-style light; Motion blur depth field',
+        'telephoto freeze at peak action; compressed blurred background; flying debris frozen; strained faces; hard top light',
       creative_brief:
-        "Apply Sports Action as a photographic preset over prompt X: preserve the user's requested subject, then route High-speed action capture, Vibrant competition color, Hard contest geometry-style light, Impact texture, dust, sheen, and Motion blur depth field through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sports Action as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +124,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Documentary (War)',
     category: '4. Documentary And Street',
     negativePrompt:
-      'posed, happy, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, staged advertisement, fake smiles, stock-photo gloss, tourist postcard polish, readable captions',
+      'staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, posed, heroic poster pose, gore, explosion not in the prompt, happy, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake smiles, tourist postcard polish, readable captions, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Documentary (War) acts as a transferable photographic style router: begin from Harsh witness documentary, Realism, and observational photographic system built from available-light capture, imperfect timing, public-space pressure, and real-world incident, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'War reportage: a 35 mm witness close to exhausted people in harsh conditions, shot fast, without heroics or staging.',
       subject_treatment:
-        'Treat any prompt subject through Chaotic factual framing; preserve prompt identity while favoring candid posture, active context, environmental evidence, and unsanitized physical detail, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action and setting; render them as an unposed moment seen by a working photographer, without inventing an event, crowd or location the prompt did not ask for.',
       color_and_tone:
-        'Grade with Desaturated, dusty; grade as street, travel, concert, war, sport, paparazzi, or field documentary capture rather than commercial color polish, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Desaturated ochre, khaki and ash grey, skin dulled by dust, occasional muted red accent.',
       lighting_and_shadow:
-        'Use Harsh sun; use available light, flash intrusion, stage beams, harsh noon, rain reflection, smoke, or practical spill as factual scene evidence, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Harsh sun or flat smoky overcast; smoke and dust diffuse the light; no glamour lighting.',
       texture_and_material:
-        'Render Dust, smoke, grain; keep street surfaces, sweat, dust, fabric wear, weather, grain, high ISO, and motion smear honest rather than decorative, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Dust in the air, grit on faces and cloth, frayed and patched gear, film grain.',
       camera_and_composition:
-        'Compose through Documentary (War) candid timing, available-light realism, environmental evidence, and observational photographic pressure; compose with decisive moment tension, wide action proximity, telephoto intrusion, crowd-layer rhythm, horizon pressure, or unstable framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+        'Close and slightly tilted, subjects caught between actions, foreground obstruction, horizon not perfectly level.',
       atmosphere_and_mood:
-        'Keep the mood Unflinching, intense; derive mood from urgency, witness, travel discovery, danger, crowd energy, decay, speed, or unrepeatable timing, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Unflinching and weary, quiet exhaustion instead of spectacle or triumph.',
       rendering_and_quality:
-        'Finish with Raw, emotional; finish as credible documentary photography with restrained processing, readable action, and no stock-advertising gloss, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Credible press photograph; no explosions, gore or heroic posing unless the prompt asks for them.',
       key_features:
-        'Harsh witness documentary; Realism; Desaturated, dusty; Harsh sun; Documentary (War) candid timing, available-light realism, environmental evidence, and observational photographic pressure',
+        'desaturated dust palette; 35 mm closeness; tilted urgent framing; exhaustion over spectacle; grain',
       creative_brief:
-        "Apply Documentary (War) as a photographic preset over prompt X: preserve the user's requested subject, then route Harsh witness documentary, Desaturated, dusty, Harsh sun, Dust, smoke, grain, and Documentary (War) candid timing, available-light realism, environmental evidence, and observational photographic pressure through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Documentary (War) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +153,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Paparazzi Style',
     category: '4. Documentary And Street',
     negativePrompt:
-      'posed, studio, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, staged advertisement, fake smiles, stock-photo gloss, tourist postcard polish, readable captions',
+      'staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, real person likeness, posed red-carpet smile, posed, studio, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake smiles, tourist postcard polish, readable captions, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Paparazzi Style acts as a transferable photographic style router: begin from Intrusive telephoto flash, Startled flash isolation, and observational photographic system built from available-light capture, imperfect timing, public-space pressure, and real-world incident, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Paparazzi night shot: a long lens and a blasting on-camera flash catching a startled subject leaving somewhere, pressed by other photographers.',
       subject_treatment:
-        'Treat any prompt subject through Subject isolated; preserve prompt identity while favoring candid posture, active context, environmental evidence, and unsanitized physical detail, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action and setting; render them as an unposed moment seen by a working photographer, without inventing an event, crowd or location the prompt did not ask for.',
       color_and_tone:
-        'Grade with Flash washed; grade as street, travel, concert, war, sport, paparazzi, or field documentary capture rather than commercial color polish, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Flash-washed skin, blown whites, dark warm background, rival flashes as white bursts.',
       lighting_and_shadow:
-        'Use Direct flash at night; use available light, flash intrusion, stage beams, harsh noon, rain reflection, smoke, or practical spill as factual scene evidence, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Hard direct flash from the lens axis, a black shadow outline behind, practical light in the background falling into darkness.',
       texture_and_material:
-        'Render High ISO noise; keep street surfaces, sweat, dust, fabric wear, weather, grain, high ISO, and motion smear honest rather than decorative, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'High-ISO noise, motion blur on the background and hands, flash glare on glossy fabric and jewelry.',
       camera_and_composition:
-        'Compose through Motion blur; compose with decisive moment tension, wide action proximity, telephoto intrusion, crowd-layer rhythm, horizon pressure, or unstable framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+        'Off-balance framing through shoulders and raised hands, subject turning or shielding their face, slightly tilted horizon.',
       atmosphere_and_mood:
-        'Keep the mood Urgent, chaotic; derive mood from urgency, witness, travel discovery, danger, crowd energy, decay, speed, or unrepeatable timing, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Urgent and intrusive, a private moment ripped open by a sudden white burst.',
       rendering_and_quality:
-        'Finish with Tabloid, intrusive; finish as credible documentary photography with restrained processing, readable action, and no stock-advertising gloss, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Tabloid snapshot rawness; only invented, fictional subjects, never a recognizable real person.',
       key_features:
-        'Intrusive telephoto flash; Startled flash isolation; Flash washed; Direct flash at night; Motion blur',
+        'blasting on-axis flash; startled shielding subject; rival flash bursts; tilted crowded framing; high-ISO noise',
       creative_brief:
-        "Apply Paparazzi Style as a photographic preset over prompt X: preserve the user's requested subject, then route Intrusive telephoto flash, Flash washed, Direct flash at night, High ISO noise, and Motion blur through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Paparazzi Style as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,28 +182,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Concert Photography',
     category: '4. Documentary And Street',
     negativePrompt:
-      'quiet, bright, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, staged advertisement, fake smiles, stock-photo gloss, tourist postcard polish, readable captions',
+      'staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, quiet, bright daylight, band logo, bright, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake smiles, tourist postcard polish, readable captions, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Concert Photography acts as a transferable photographic style router: begin from Concert-stage lighting, Beam-and-fog energy, and observational photographic system built from available-light capture, imperfect timing, public-space pressure, and real-world incident, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Live concert photography: stage lighting cutting through haze, shot from the pit at high ISO during a peak moment of performance.',
       subject_treatment:
-        'Treat any prompt subject through Silhouettes in beam fog; preserve prompt identity while favoring candid posture, active context, environmental evidence, and unsanitized physical detail, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action and setting; render them as an unposed moment seen by a working photographer, without inventing an event, crowd or location the prompt did not ask for.',
       color_and_tone:
-        'Grade with Stage lights (Red/Blue); grade as street, travel, concert, war, sport, paparazzi, or field documentary capture rather than commercial color polish, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Saturated gel colors — red, blue, magenta, amber — against black, skin taking the color of the beam.',
       lighting_and_shadow:
-        'Use Beams, spots; use available light, flash intrusion, stage beams, harsh noon, rain reflection, smoke, or practical spill as factual scene evidence, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Backlight fans and spots through haze, visible beams, silhouetted rims, lens flare from fixtures.',
       texture_and_material:
-        'Render Fog, heat sheen, grain; keep street surfaces, sweat, dust, fabric wear, weather, grain, high ISO, and motion smear honest rather than decorative, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Haze, sweat, grain from high ISO, motion blur on hair and hands, crowd hands in the foreground.',
       camera_and_composition:
-        'Compose through Concert Photography candid timing, available-light realism, environmental evidence, and observational photographic pressure; compose with decisive moment tension, wide action proximity, telephoto intrusion, crowd-layer rhythm, horizon pressure, or unstable framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Energetic, loud; derive mood from urgency, witness, travel discovery, danger, crowd energy, decay, speed, or unrepeatable timing, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Low pit angle or from behind the crowd, performer mid-gesture, beams radiating, foreground hands or instruments cropped.',
+      atmosphere_and_mood: 'Loud and euphoric, heat and noise felt through the color and the haze.',
       rendering_and_quality:
-        'Finish with Loud live-event realism; finish as credible documentary photography with restrained processing, readable action, and no stock-advertising gloss, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'High-ISO live realism with clean blacks; no studio lighting and no invented band logos.',
       key_features:
-        'Concert-stage lighting; Beam-and-fog energy; Stage lights (Red/Blue); Beams, spots; Concert Photography candid timing, available-light realism, environmental evidence, and observational photographic pressure',
+        'gel beams through haze; backlit performer; pit angle; crowd hands foreground; high-ISO grain',
       creative_brief:
-        "Apply Concert Photography as a photographic preset over prompt X: preserve the user's requested subject, then route Concert-stage lighting, Stage lights (Red/Blue), Beams, spots, Fog, heat sheen, grain, and Concert Photography candid timing, available-light realism, environmental evidence, and observational photographic pressure through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Concert Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -211,28 +210,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Travel Photography',
     category: '4. Documentary And Street',
     negativePrompt:
-      'tourist trap, selfie, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, staged advertisement, fake smiles, stock-photo gloss, tourist postcard polish, readable captions',
+      'staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, tourist trap, selfie, brochure gloss, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake smiles, tourist postcard polish, readable captions, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Travel Photography acts as a transferable photographic style router: begin from travelogue documentary photography with discovered-place atmosphere, layered journey detail, and compact destination storytelling, encountered journey; layered travel context; available daylight; regional texture; editorial observation, and observational photographic system built from available-light capture, imperfect timing, public-space pressure, and real-world incident, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Editorial travel photography: a place discovered through a traveler, with the journey layered into the frame as route, scale and local light.',
       subject_treatment:
-        'Treat any prompt subject through subjects should feel encountered in transit, shaped by weather, route pressure, distance, and lived-in surroundings; preserve prompt identity while favoring candid posture, active context, environmental evidence, and unsanitized physical detail, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action and setting; render them as an unposed moment seen by a working photographer, without inventing an event, crowd or location the prompt did not ask for.',
       color_and_tone:
-        'Grade with natural destination color with warm daylight, regional accent color, dusty neutrals, and travel-magazine contrast restraint; grade as street, travel, concert, war, sport, paparazzi, or field documentary capture rather than commercial color polish, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Natural destination color, warm late-day light, local accent hues against dusty neutrals.',
       lighting_and_shadow:
-        'Use available daylight, window spill, street shade, dawn departures, or late-afternoon raking light should carry place memory; use available light, flash intrusion, stage beams, harsh noon, rain reflection, smoke, or practical spill as factual scene evidence, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Available daylight: dawn departures, raking afternoon sun, window spill inside dwellings.',
       texture_and_material:
-        'Render regional surface patina, textile tactility, transit wear, road dust, water sheen, and architectural age should feel observed; keep street surfaces, sweat, dust, fabric wear, weather, grain, high ISO, and motion smear honest rather than decorative, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Road dust, weathered stone, textiles, water sheen and patina of age, all rendered tactile.',
       camera_and_composition:
-        'Compose through layer route clues, human or object scale, and landmark geometry through depth relationships without turning into a postcard; compose with decisive moment tension, wide action proximity, telephoto intrusion, crowd-layer rhythm, horizon pressure, or unstable framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+        '24–50 mm, a human figure for scale inside the landscape or architecture, leading path or road, foreground detail from the local place.',
       atmosphere_and_mood:
-        'Keep the mood curious, worldly, sun-warmed, observant, and slightly restless, with discovery carried by visual evidence; derive mood from urgency, witness, travel discovery, danger, crowd energy, decay, speed, or unrepeatable timing, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Curious and restless, the pleasure of arriving somewhere far from home.',
       rendering_and_quality:
-        'Finish with editorial travel-magazine photography with clean realism, restrained grading, and no tourist brochure gloss; finish as credible documentary photography with restrained processing, readable action, and no stock-advertising gloss, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Magazine travel realism with restrained grading; no brochure gloss, selfie framing or tourist-trap staging.',
       key_features:
-        'travelogue documentary photography with discovered-place atmosphere, layered journey detail, and compact destination storytelling; encountered journey; layered travel context; available daylight; regional texture; editorial observation; natural destination color with warm daylight, regional accent color, dusty neutrals, and travel-magazine contrast restraint; available daylight, window spill, street shade, dawn departures, or late-afternoon raking light should carry place memory; layer route clues, human or object scale, and landmark geometry through depth relationships without turning into a postcard',
+        'traveler for scale; route and path in frame; local accent color; warm raking daylight; tactile place detail',
       creative_brief:
-        "Apply Travel Photography as a photographic preset over prompt X: preserve the user's requested subject, then route travelogue documentary photography with discovered-place atmosphere, layered journey detail, and compact destination storytelling, natural destination color with warm daylight, regional accent color, dusty neutrals, and travel-magazine contrast restraint, available daylight, window spill, street shade, dawn departures, or late-afternoon raking light should carry place memory, regional surface patina, textile tactility, transit wear, road dust, water sheen, and architectural age should feel observed, and layer route clues, human or object scale, and landmark geometry through depth relationships without turning into a postcard through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Travel Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -240,28 +239,444 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Urbex (Urban Exploration)',
     category: '4. Documentary And Street',
     negativePrompt:
-      'clean, new, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, staged advertisement, fake smiles, stock-photo gloss, tourist postcard polish, readable captions',
+      'staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, clean, new, horror props, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake smiles, tourist postcard polish, readable captions, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Urbex (Urban Exploration) acts as a transferable photographic style router: begin from Urbex decay documentary, Ruin texture, and observational photographic system built from available-light capture, imperfect timing, public-space pressure, and real-world incident, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Urban exploration photography: abandoned buildings recorded on a tripod, with decay, light shafts and silence as the subject.',
       subject_treatment:
-        'Treat any prompt subject through Decay, peeling layers; preserve prompt identity while favoring candid posture, active context, environmental evidence, and unsanitized physical detail, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action and setting; render them as an unposed moment seen by a working photographer, without inventing an event, crowd or location the prompt did not ask for.',
       color_and_tone:
-        'Grade with Desaturated, rust; grade as street, travel, concert, war, sport, paparazzi, or field documentary capture rather than commercial color polish, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Desaturated rust, moss green, peeling pastel paint and grey concrete, with warm or cold light shafts.',
       lighting_and_shadow:
-        'Use Shafts of light; use available light, flash intrusion, stage beams, harsh noon, rain reflection, smoke, or practical spill as factual scene evidence, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Natural light through collapsed roofs, broken windows and doorways; long exposure keeps the shadows detailed.',
       texture_and_material:
-        'Render Dust, debris; keep street surfaces, sweat, dust, fabric wear, weather, grain, high ISO, and motion smear honest rather than decorative, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Peeling paint, rust bloom, fallen plaster, moss and ivy invading floors, dust in the beams.',
       camera_and_composition:
-        'Compose through Urbex (Urban Exploration) candid timing, available-light realism, environmental evidence, and observational photographic pressure; compose with decisive moment tension, wide action proximity, telephoto intrusion, crowd-layer rhythm, horizon pressure, or unstable framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Lonely, post-apocalyptic; derive mood from urgency, witness, travel discovery, danger, crowd energy, decay, speed, or unrepeatable timing, so the preset changes interpretation without demanding a specific story, location, or character.',
+        '16–24 mm symmetrical view down a hall or nave, wide foreground debris, at most one small human figure for scale.',
+      atmosphere_and_mood: 'Lonely and hushed, time pressing on a room that everyone has left.',
       rendering_and_quality:
-        'Finish with Gritty, haunting; finish as credible documentary photography with restrained processing, readable action, and no stock-advertising gloss, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Tripod-sharp exposure with restrained HDR; no fake grunge overlay or horror props.',
       key_features:
-        'Urbex decay documentary; Ruin texture; Desaturated, rust; Shafts of light; Urbex (Urban Exploration) candid timing, available-light realism, environmental evidence, and observational photographic pressure',
+        'abandoned interior; light shafts through collapse; peeling paint and rust; symmetrical wide view; tiny human scale',
       creative_brief:
-        "Apply Urbex (Urban Exploration) as a photographic preset over prompt X: preserve the user's requested subject, then route Urbex decay documentary, Desaturated, rust, Shafts of light, Dust, debris, and Urbex (Urban Exploration) candid timing, available-light realism, environmental evidence, and observational photographic pressure through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Urbex (Urban Exploration) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP01-102',
+    name: 'Layered Color Street',
+    displayName: 'Layered Color Street',
+    styleAnchors: [
+      'Layered Color Street',
+      'layered color street photography',
+      'three or four depth planes',
+    ],
+    category: '4. Documentary And Street',
+    domain: 'layered color street photography',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, posed, flat single-plane composition, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Layered color street photography: saturated color and hard light organized into three or four planes of depth, each holding its own small action.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting; render them as an unposed moment seen by a working photographer, without inventing an event, crowd or location the prompt did not ask for.',
+      color_and_tone:
+        'Rich saturated color fields — saffron, cobalt, crimson, white — separated by deep shadow gaps.',
+      lighting_and_shadow:
+        'Strong low sun that splits the scene into bright color planes and black shadow shapes.',
+      texture_and_material:
+        'Sun-baked walls, cloth, skin and dust rendered with slide-like density and fine grain.',
+      camera_and_composition:
+        '28–50 mm, a cropped foreground figure or object, a midground gesture and a background incident, all readable at once.',
+      atmosphere_and_mood:
+        'Busy yet composed, many small lives stacked into one complex, balanced frame.',
+      rendering_and_quality:
+        'Saturated documentary color without HDR; separation comes from light and color, not sharpening.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Layered Color Street as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'three or four depth planes; saturated color fields; black shadow gaps; foreground crop; simultaneous small actions',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-103',
+    name: 'Telephoto Compression Street',
+    displayName: 'Telephoto Compression Street',
+    styleAnchors: [
+      'Telephoto Compression Street',
+      'long-lens compressed street',
+      'extreme telephoto compression',
+    ],
+    category: '4. Documentary And Street',
+    domain: 'long-lens compressed street',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, wide-angle perspective, deep converging lines, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Telephoto street compression: a 300–600 mm lens from far away, stacking distant layers so near and far press into one flat wall.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting; this preset owns the camera position and lens, so re-stage only the viewpoint as described.',
+      color_and_tone:
+        'Muted, slightly hazy color from the air between camera and subject; shapes over detail.',
+      lighting_and_shadow:
+        'Backlight or side light through atmosphere; heat shimmer and haze soften far planes.',
+      texture_and_material:
+        'Repeated shapes stacking (roofs, heads, cloaks, chimneys) into dense pattern.',
+      camera_and_composition:
+        'Extremely narrow field of view, flattened depth, huge background objects (sun, moon, towers) looming behind small subjects, shallow focus on one layer.',
+      atmosphere_and_mood:
+        'Crowded and dreamlike, distance collapsed so everything seems to press together.',
+      rendering_and_quality:
+        'Long-lens rendering with atmospheric softness; no wide-angle perspective lines.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Telephoto Compression Street as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'extreme telephoto compression; stacked layers; giant background sun or moon; heat haze; flattened depth',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-104',
+    name: 'Hard-Shadow Street Geometry',
+    displayName: 'Hard-Shadow Street Geometry',
+    styleAnchors: [
+      'Hard-Shadow Street Geometry',
+      'graphic shadow street photography',
+      'subject in a slice of light',
+    ],
+    category: '4. Documentary And Street',
+    domain: 'graphic shadow street photography',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, fill light, lifted shadows, overcast flat light, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hard-shadow street geometry: exposure set for the sunlit patches so everything else falls into solid black shapes, and the subject steps into the light.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting; render them as an unposed moment seen by a working photographer, without inventing an event, crowd or location the prompt did not ask for.',
+      color_and_tone:
+        'Bright warm highlights against black; color limited to what the sun touches, or crisp monochrome.',
+      lighting_and_shadow:
+        'Hard low or noon sun cut by walls, arcades, grilles and stairs into slashes, combs and rectangles of light.',
+      texture_and_material:
+        'Sun-grazed stone and fabric in the lit shapes; shadow areas nearly featureless.',
+      camera_and_composition:
+        'Composition built around the shadow shapes; subject placed exactly in a slice of light, often with their own long shadow.',
+      atmosphere_and_mood:
+        'Graphic and tense, a lone figure balanced on a thin edge between light and void.',
+      rendering_and_quality:
+        'Clean deep blacks and protected highlights; no fill light lifting the shadows.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hard-Shadow Street Geometry as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'subject in a slice of light; solid black shadow shapes; hard sun; long cast shadows; underexposed surroundings',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-105',
+    name: 'Reflection-Layered Street',
+    displayName: 'Reflection-Layered Street',
+    styleAnchors: [
+      'Reflection-Layered Street',
+      'glass reflection street photography',
+      'through-glass layering',
+    ],
+    category: '4. Documentary And Street',
+    domain: 'glass reflection street photography',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, digital double exposure, readable shop lettering, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Reflection-layered street photography: shooting through window glass so the room behind and the street reflected on it overlap in one ambiguous frame.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting; render them as an unposed moment seen by a working photographer, without inventing an event, crowd or location the prompt did not ask for.',
+      color_and_tone:
+        'Two color worlds blended: warm interior light mixing with cool reflected daylight; semi-transparent overlaps.',
+      lighting_and_shadow:
+        'Balanced exposure between inside and outside so both layers read; dark areas of one layer reveal the other.',
+      texture_and_material:
+        'Glass imperfections, bullseye distortion, condensation or dust on the pane, crisp edges where layers meet.',
+      camera_and_composition:
+        'Camera close to the glass, subject inside framed by reflected shapes from outside (or the reverse); no single clear depth plane.',
+      atmosphere_and_mood: 'Dreamlike and ambiguous, two moments folded into one surface of glass.',
+      rendering_and_quality:
+        'In-camera optical overlap, not a digital double exposure or blend-mode composite.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Reflection-Layered Street as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'through-glass layering; reflected street over interior; semi-transparent overlap; glass flaws; ambiguous depth',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-106',
+    name: 'Slow-Shutter Crowd Drag',
+    displayName: 'Slow-Shutter Crowd Drag',
+    styleAnchors: [
+      'Slow-Shutter Crowd Drag',
+      'slow-shutter motion street',
+      'one sharp still subject',
+    ],
+    category: '4. Documentary And Street',
+    domain: 'slow-shutter motion street',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, everything frozen sharp, digital radial blur, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Slow-shutter drag: a quarter to one second exposure where one still subject stays sharp while everything moving streaks around it.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting; render them as an unposed moment seen by a working photographer, without inventing an event, crowd or location the prompt did not ask for.',
+      color_and_tone: 'Natural color; moving areas blend into soft ribbons of mixed hue.',
+      lighting_and_shadow:
+        'Dim daylight, dusk or interior light that allows a long shutter without blowing out.',
+      texture_and_material:
+        'Ghosted walkers, smeared cloaks, streaked wheels and birds; the still subject crisp in texture.',
+      camera_and_composition:
+        'Tripod or braced camera; still subject centered or on a third, motion flowing past on both sides.',
+      atmosphere_and_mood:
+        'Calm inside rush, a single point of stillness while the world streams past.',
+      rendering_and_quality:
+        'Optical motion blur with a genuinely sharp anchor, not a digital radial blur.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Slow-Shutter Crowd Drag as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'one sharp still subject; streaked moving crowd; quarter-second exposure; ghosted figures; stillness versus flow',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-107',
+    name: 'Over-Under Split Shot',
+    displayName: 'Over-Under Split Shot',
+    styleAnchors: [
+      'Over-Under Split Shot',
+      'half-underwater dome port photography',
+      'waterline splits the frame',
+    ],
+    category: '4. Documentary And Street',
+    domain: 'half-underwater dome port photography',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, straight clean composite seam, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Over-under split shot: a dome port held half in the water, so the waterline cuts the frame and shows the world above and below at once.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting; this preset owns the camera position and lens, so re-stage only the viewpoint as described.',
+      color_and_tone:
+        'Warm sunlit air above, green or turquoise water below, the two separated by a bright wavy waterline.',
+      lighting_and_shadow:
+        'Daylight from above; sun rays and caustics below the surface; the upper half usually brighter.',
+      texture_and_material:
+        'Droplets on the upper dome, refraction bending shapes at the line, particles and bubbles in the water.',
+      camera_and_composition:
+        'Waterline crossing the middle or lower third, subject spanning both halves when possible, wide lens at water level.',
+      atmosphere_and_mood: 'Curious and double, two worlds meeting at one thin trembling line.',
+      rendering_and_quality:
+        'Real optical split with refraction at the waterline, not a stitched composite.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Over-Under Split Shot as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'waterline splits the frame; above and below at once; dome droplets; underwater caustics; subject across both halves',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-108',
+    name: 'Documentary Typology Portrait',
+    displayName: 'Documentary Typology Portrait',
+    styleAnchors: [
+      'Documentary Typology Portrait',
+      'frontal typological portrait',
+      'frontal full-length stance',
+    ],
+    category: '4. Documentary And Street',
+    domain: 'frontal typological portrait',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, dramatic lighting, candid motion, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Documentary typology portrait: a medium-format frontal full-length portrait of a person as their trade, one of an imagined series, with no drama in light or pose.',
+      subject_treatment:
+        'Keep the prompt subject and setting; stand the person upright and square to the camera, full length, looking into the lens, holding the tool or object that defines them.',
+      color_and_tone:
+        "Soft neutral color or quiet monochrome; the sitter's clothes carry the only accents.",
+      lighting_and_shadow: 'Even overcast daylight, no key light, gentle shadow under the feet.',
+      texture_and_material:
+        'Worn work clothes, tools and hands rendered with medium-format clarity.',
+      camera_and_composition:
+        'Camera at chest height, centered subject, full body with a little ground and plain local background, symmetrical frame.',
+      atmosphere_and_mood:
+        'Dignified and matter-of-fact, a person simply presented as who they are.',
+      rendering_and_quality:
+        'Medium-format precision and restraint; no dramatic grading, wide-angle distortion or candid blur.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Documentary Typology Portrait as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'frontal full-length stance; direct gaze; defining tool in hand; even overcast light; centered symmetrical frame',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-109',
+    name: 'Low Oblique Aerial',
+    displayName: 'Low Oblique Aerial',
+    styleAnchors: [
+      'Low Oblique Aerial',
+      'oblique aerial photography',
+      '30–45 degree downward angle',
+    ],
+    category: '4. Documentary And Street',
+    domain: 'oblique aerial photography',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, straight-down nadir view, tilt-shift miniature blur, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Low oblique aerial: a camera in a helicopter or small plane looking down at 30–45 degrees from a few hundred meters, showing relief, depth and often the horizon.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting; this preset owns the camera position and lens, so re-stage only the viewpoint as described.',
+      color_and_tone: 'Natural landscape color with atmospheric blue in the distance.',
+      lighting_and_shadow:
+        'Low raking sun at dawn or dusk that carves terrain relief and casts long shadows from structures.',
+      texture_and_material:
+        'Fields, cliffs, walls, water and roads read as relief and texture; people tiny but visible.',
+      camera_and_composition:
+        'Angled downward view with depth receding to a high horizon or distant haze; subject in the near third.',
+      atmosphere_and_mood: 'Expansive and exploratory, the land revealed as a whole shape at once.',
+      rendering_and_quality:
+        'Aerial survey clarity with haze falloff; distinct from a straight-down drone view and from tilt-shift miniature blur.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Low Oblique Aerial as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        '30–45 degree downward angle; raking dawn light; terrain relief; distant haze and horizon; tiny human scale',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-110',
+    name: 'Frame-Within-Frame Observational',
+    displayName: 'Frame-Within-Frame Observational',
+    styleAnchors: [
+      'Frame-Within-Frame Observational',
+      'observational doorway framing',
+      'dark doorway or arch frame',
+    ],
+    category: '4. Documentary And Street',
+    domain: 'observational doorway framing',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, posed eye contact, flash, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Observational frame-within-frame: the photographer stays in the dark next room and records life through a doorway, window or arch, unnoticed.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting; render them as an unposed moment seen by a working photographer, without inventing an event, crowd or location the prompt did not ask for.',
+      color_and_tone:
+        'Dark underexposed foreground frame, warm or daylight-lit subject area beyond, natural color.',
+      lighting_and_shadow:
+        'The subject space is lit by its own windows or lamps; the frame surrounding it stays in shadow.',
+      texture_and_material:
+        'Door jambs, stone arches and window mullions in soft silhouette; subject area detailed.',
+      camera_and_composition:
+        'A dark frame occupying the edges, the subject small and centered inside it, eye level, 35–50 mm, straight verticals.',
+      atmosphere_and_mood:
+        'Quiet and discreet, the viewer an unseen witness to an intimate, private moment.',
+      rendering_and_quality:
+        'Natural exposure favoring the lit interior; no flash and no staged eye contact.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Frame-Within-Frame Observational as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'dark doorway or arch frame; subject lit beyond; unseen observer; small centered subject; straight verticals',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-111',
+    name: 'Humanist Reportage',
+    displayName: 'Humanist Reportage',
+    styleAnchors: [
+      'Humanist Reportage',
+      'humanist black-and-white reportage',
+      'tender everyday moment',
+    ],
+    category: '4. Documentary And Street',
+    domain: 'humanist black-and-white reportage',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, harsh contrast, color, posed, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Humanist reportage: tender black-and-white photographs of ordinary people at eye level with a 50 mm lens, finding dignity and gentle humor in everyday life.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting; render them as an unposed moment seen by a working photographer, without inventing an event, crowd or location the prompt did not ask for.',
+      color_and_tone:
+        'Soft monochrome with long grey midtones, gentle contrast, no crushed blacks.',
+      lighting_and_shadow: 'Overcast daylight or soft window light; shadows open and forgiving.',
+      texture_and_material: 'Moderate grain; worn clothes, bread, stone and hands rendered warmly.',
+      camera_and_composition:
+        '50 mm at eye level, subjects close enough to read expression, simple backgrounds, a small humorous or tender detail.',
+      atmosphere_and_mood:
+        'Warm and compassionate, quiet affection for people going about their day.',
+      rendering_and_quality:
+        'Soft darkroom print; distinct from gritty high-contrast street photography.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Humanist Reportage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'tender everyday moment; soft grey monochrome; 50 mm eye level; overcast light; gentle humor',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-112',
+    name: 'High-ISO Night Reportage',
+    displayName: 'High-ISO Night Reportage',
+    styleAnchors: ['High-ISO Night Reportage', 'available-light night reportage', 'no flash'],
+    category: '4. Documentary And Street',
+    domain: 'available-light night reportage',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, flash, clean noiseless shadows, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'High-ISO night reportage: handheld at ISO 6400–12800 with no flash, using only the practical light of fires, lamps and windows.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting; render them as an unposed moment seen by a working photographer, without inventing an event, crowd or location the prompt did not ask for.',
+      color_and_tone:
+        'Warm practicals against deep blue-black, slightly muddy saturation, color noise in the shadows.',
+      lighting_and_shadow:
+        'Small pools of practical light, faces lit from one side, large areas of near-black.',
+      texture_and_material:
+        'Visible luminance and color noise, slight motion softness in hands, glowing embers or flames.',
+      camera_and_composition:
+        'Wide aperture shallow focus, 35 mm handheld, subject turned toward the light source.',
+      atmosphere_and_mood:
+        'Hushed and nocturnal, work carrying on while the rest of the world sleeps.',
+      rendering_and_quality:
+        'Honest digital high-ISO noise and soft focus falloff; no flash, no noise reduction smear.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies High-ISO Night Reportage as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'no flash; practical light pools; high-ISO noise; shallow handheld focus; deep blue-black shadows',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

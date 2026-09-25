@@ -1,0 +1,80 @@
+schemaVersion: 1
+id: SP01-110
+packId: pack_01
+name: Frame-Within-Frame Observational
+styleAnchors:
+  - Frame-Within-Frame Observational
+  - observational doorway framing
+  - dark doorway or arch frame
+displayName: Frame-Within-Frame Observational
+category: 4. Documentary And Street
+domain: observational doorway framing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - documentary-and-street
+  - observational
+  - framing
+  - documentary
+visualDna:
+  aesthetic: 'Observational frame-within-frame: the photographer stays in the dark next room and records life through a doorway, window or arch, unnoticed.'
+  subject_treatment: Keep the prompt subject, action and setting; render them as an unposed moment seen by a working photographer, without inventing an event, crowd or location the prompt did not ask for.
+  color_and_tone: Dark underexposed foreground frame, warm or daylight-lit subject area beyond, natural color.
+  lighting_and_shadow: The subject space is lit by its own windows or lamps; the frame surrounding it stays in shadow.
+  texture_and_material: Door jambs, stone arches and window mullions in soft silhouette; subject area detailed.
+  camera_and_composition: A dark frame occupying the edges, the subject small and centered inside it, eye level, 35–50 mm, straight verticals.
+  atmosphere_and_mood: Quiet and discreet, the viewer an unseen witness to an intimate, private moment.
+  rendering_and_quality: Natural exposure favoring the lit interior; no flash and no staged eye contact.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Frame-Within-Frame Observational as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: dark doorway or arch frame; subject lit beyond; unseen observer; small centered subject; straight verticals
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - synthetic CGI
+  - plastic render
+  - staged advertisement
+  - stock-photo gloss
+  - generic stock-photo face
+  - celebrity likeness
+  - inventing an event the prompt did not ask for
+  - posed eye contact
+  - flash
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, posed eye contact, flash, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: documentary-and-street
+  categoryName: 4. Documentary And Street
+  tags:
+    - photography-and-realism
+    - documentary-and-street
+    - observational
+    - framing
+    - documentary
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: observational doorway framing

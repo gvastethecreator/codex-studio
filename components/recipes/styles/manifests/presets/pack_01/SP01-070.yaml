@@ -3,7 +3,7 @@ id: SP01-070
 packId: pack_01
 name: Travel Photography
 category: 4. Documentary And Street
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,70 +12,25 @@ tags:
   - photography-and-realism
   - documentary-and-street
 visualDna:
-  aesthetic: >-
-    Travel Photography acts as a transferable photographic style router: begin from travelogue
-    documentary photography with discovered-place atmosphere, layered journey detail, and compact
-    destination storytelling, encountered journey; layered travel context; available daylight;
-    regional texture; editorial observation, and observational photographic system built from
-    available-light capture, imperfect timing, public-space pressure, and real-world incident, then
-    apply the photographic behavior to prompt X instead of recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through subjects should feel encountered in transit, shaped by weather,
-    route pressure, distance, and lived-in surroundings; preserve prompt identity while favoring
-    candid posture, active context, environmental evidence, and unsanitized physical detail, keeping
-    the original subject, pose, species, object, or environment legible.
-  color_and_tone: >-
-    Grade with natural destination color with warm daylight, regional accent color, dusty neutrals,
-    and travel-magazine contrast restraint; grade as street, travel, concert, war, sport, paparazzi,
-    or field documentary capture rather than commercial color polish, with value separation and
-    white balance choices that feel captured in-camera rather than painted over.
-  lighting_and_shadow: >-
-    Use available daylight, window spill, street shade, dawn departures, or late-afternoon raking
-    light should carry place memory; use available light, flash intrusion, stage beams, harsh noon,
-    rain reflection, smoke, or practical spill as factual scene evidence, preserving believable
-    exposure, shadow density, highlight rolloff, and source motivation.
-  texture_and_material: >-
-    Render regional surface patina, textile tactility, transit wear, road dust, water sheen, and
-    architectural age should feel observed; keep street surfaces, sweat, dust, fabric wear, weather,
-    grain, high ISO, and motion smear honest rather than decorative, avoiding both waxy smoothing
-    and noisy texture overlays that hide the prompt content.
-  camera_and_composition: >-
-    Compose through layer route clues, human or object scale, and landmark geometry through depth
-    relationships without turning into a postcard; compose with decisive moment tension, wide action
-    proximity, telephoto intrusion, crowd-layer rhythm, horizon pressure, or unstable framing, with
-    lens distance, depth, timing, and focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood curious, worldly, sun-warmed, observant, and slightly restless, with discovery
-    carried by visual evidence; derive mood from urgency, witness, travel discovery, danger, crowd
-    energy, decay, speed, or unrepeatable timing, so the preset changes interpretation without
-    demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with editorial travel-magazine photography with clean realism, restrained grading, and no
-    tourist brochure gloss; finish as credible documentary photography with restrained processing,
-    readable action, and no stock-advertising gloss, high-resolution photographic detail, and
-    disciplined denoise without losing natural grain where the preset needs it.
-  key_features: >-
-    travelogue documentary photography with discovered-place atmosphere, layered journey detail, and
-    compact destination storytelling; encountered journey; layered travel context; available
-    daylight; regional texture; editorial observation; natural destination color with warm daylight,
-    regional accent color, dusty neutrals, and travel-magazine contrast restraint; available
-    daylight, window spill, street shade, dawn departures, or late-afternoon raking light should
-    carry place memory; layer route clues, human or object scale, and landmark geometry through
-    depth relationships without turning into a postcard
-  creative_brief: >-
-    Apply Travel Photography as a photographic preset over prompt X: preserve the user's requested
-    subject, then route travelogue documentary photography with discovered-place atmosphere, layered
-    journey detail, and compact destination storytelling, natural destination color with warm
-    daylight, regional accent color, dusty neutrals, and travel-magazine contrast restraint,
-    available daylight, window spill, street shade, dawn departures, or late-afternoon raking light
-    should carry place memory, regional surface patina, textile tactility, transit wear, road dust,
-    water sheen, and architectural age should feel observed, and layer route clues, human or object
-    scale, and landmark geometry through depth relationships without turning into a postcard through
-    optics, exposure, palette, surface response, timing, and finish without requiring the card
-    image's original subject.
+  aesthetic: 'Editorial travel photography: a place discovered through a traveler, with the journey layered into the frame as route, scale and local light.'
+  subject_treatment: Keep the prompt subject, action and setting; render them as an unposed moment seen by a working photographer, without inventing an event, crowd or location the prompt did not ask for.
+  color_and_tone: Natural destination color, warm late-day light, local accent hues against dusty neutrals.
+  lighting_and_shadow: 'Available daylight: dawn departures, raking afternoon sun, window spill inside dwellings.'
+  texture_and_material: Road dust, weathered stone, textiles, water sheen and patina of age, all rendered tactile.
+  camera_and_composition: 24–50 mm, a human figure for scale inside the landscape or architecture, leading path or road, foreground detail from the local place.
+  atmosphere_and_mood: Curious and restless, the pleasure of arriving somewhere far from home.
+  rendering_and_quality: Magazine travel realism with restrained grading; no brochure gloss, selfie framing or tourist-trap staging.
+  key_features: traveler for scale; route and path in frame; local accent color; warm raking daylight; tactile place detail
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Travel Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - staged advertisement
+  - stock-photo gloss
+  - generic stock-photo face
+  - celebrity likeness
+  - inventing an event the prompt did not ask for
   - tourist trap
   - selfie
+  - brochure gloss
   - illustration
   - painting
   - drawing
@@ -89,18 +44,20 @@ avoidRules:
   - readable text
   - signature
   - low resolution
-  - staged advertisement
   - fake smiles
-  - stock-photo gloss
   - tourist postcard polish
   - readable captions
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-070.webp
 attributes:
-  negativePrompt: >-
-    tourist trap, selfie, illustration, painting, drawing, 3d render, cartoon, anime, sketch,
-    synthetic CGI, plastic render, watermark, readable text, signature, low resolution, staged
-    advertisement, fake smiles, stock-photo gloss, tourist postcard polish, readable captions
+  negativePrompt: staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, tourist trap, selfie, brochure gloss, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake smiles, tourist postcard polish, readable captions, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

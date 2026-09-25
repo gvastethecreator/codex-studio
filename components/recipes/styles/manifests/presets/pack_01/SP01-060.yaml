@@ -3,7 +3,7 @@ id: SP01-060
 packId: pack_01
 name: Documentary (War)
 category: 4. Documentary And Street
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,51 +12,26 @@ tags:
   - photography-and-realism
   - documentary-and-street
 visualDna:
-  aesthetic: >-
-    Documentary (War) acts as a transferable photographic style router: begin from Harsh witness
-    documentary, Realism, and observational photographic system built from available-light capture,
-    imperfect timing, public-space pressure, and real-world incident, then apply the photographic
-    behavior to prompt X instead of recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through Chaotic factual framing; preserve prompt identity while
-    favoring candid posture, active context, environmental evidence, and unsanitized physical
-    detail, keeping the original subject, pose, species, object, or environment legible.
-  color_and_tone: >-
-    Grade with Desaturated, dusty; grade as street, travel, concert, war, sport, paparazzi, or field
-    documentary capture rather than commercial color polish, with value separation and white balance
-    choices that feel captured in-camera rather than painted over.
-  lighting_and_shadow: >-
-    Use Harsh sun; use available light, flash intrusion, stage beams, harsh noon, rain reflection,
-    smoke, or practical spill as factual scene evidence, preserving believable exposure, shadow
-    density, highlight rolloff, and source motivation.
-  texture_and_material: >-
-    Render Dust, smoke, grain; keep street surfaces, sweat, dust, fabric wear, weather, grain, high
-    ISO, and motion smear honest rather than decorative, avoiding both waxy smoothing and noisy
-    texture overlays that hide the prompt content.
-  camera_and_composition: >-
-    Compose through Documentary (War) candid timing, available-light realism, environmental
-    evidence, and observational photographic pressure; compose with decisive moment tension, wide
-    action proximity, telephoto intrusion, crowd-layer rhythm, horizon pressure, or unstable
-    framing, with lens distance, depth, timing, and focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Unflinching, intense; derive mood from urgency, witness, travel discovery, danger,
-    crowd energy, decay, speed, or unrepeatable timing, so the preset changes interpretation without
-    demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Raw, emotional; finish as credible documentary photography with restrained
-    processing, readable action, and no stock-advertising gloss, high-resolution photographic
-    detail, and disciplined denoise without losing natural grain where the preset needs it.
-  key_features: >-
-    Harsh witness documentary; Realism; Desaturated, dusty; Harsh sun; Documentary (War) candid
-    timing, available-light realism, environmental evidence, and observational photographic pressure
-  creative_brief: >-
-    Apply Documentary (War) as a photographic preset over prompt X: preserve the user's requested
-    subject, then route Harsh witness documentary, Desaturated, dusty, Harsh sun, Dust, smoke,
-    grain, and Documentary (War) candid timing, available-light realism, environmental evidence, and
-    observational photographic pressure through optics, exposure, palette, surface response, timing,
-    and finish without requiring the card image's original subject.
+  aesthetic: 'War reportage: a 35 mm witness close to exhausted people in harsh conditions, shot fast, without heroics or staging.'
+  subject_treatment: Keep the prompt subject, action and setting; render them as an unposed moment seen by a working photographer, without inventing an event, crowd or location the prompt did not ask for.
+  color_and_tone: Desaturated ochre, khaki and ash grey, skin dulled by dust, occasional muted red accent.
+  lighting_and_shadow: Harsh sun or flat smoky overcast; smoke and dust diffuse the light; no glamour lighting.
+  texture_and_material: Dust in the air, grit on faces and cloth, frayed and patched gear, film grain.
+  camera_and_composition: Close and slightly tilted, subjects caught between actions, foreground obstruction, horizon not perfectly level.
+  atmosphere_and_mood: Unflinching and weary, quiet exhaustion instead of spectacle or triumph.
+  rendering_and_quality: Credible press photograph; no explosions, gore or heroic posing unless the prompt asks for them.
+  key_features: desaturated dust palette; 35 mm closeness; tilted urgent framing; exhaustion over spectacle; grain
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Documentary (War) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - staged advertisement
+  - stock-photo gloss
+  - generic stock-photo face
+  - celebrity likeness
+  - inventing an event the prompt did not ask for
   - posed
+  - heroic poster pose
+  - gore
+  - explosion not in the prompt
   - happy
   - illustration
   - painting
@@ -71,18 +46,20 @@ avoidRules:
   - readable text
   - signature
   - low resolution
-  - staged advertisement
   - fake smiles
-  - stock-photo gloss
   - tourist postcard polish
   - readable captions
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-060.webp
 attributes:
-  negativePrompt: >-
-    posed, happy, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI,
-    plastic render, watermark, readable text, signature, low resolution, staged advertisement, fake
-    smiles, stock-photo gloss, tourist postcard polish, readable captions
+  negativePrompt: staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, posed, heroic poster pose, gore, explosion not in the prompt, happy, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake smiles, tourist postcard polish, readable captions, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

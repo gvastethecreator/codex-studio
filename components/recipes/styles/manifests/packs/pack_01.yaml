@@ -86,6 +86,17 @@ categories:
       - pack_01/SP01-064.yaml
       - pack_01/SP01-070.yaml
       - pack_01/SP01-075.yaml
+      - pack_01/SP01-102.yaml
+      - pack_01/SP01-103.yaml
+      - pack_01/SP01-104.yaml
+      - pack_01/SP01-105.yaml
+      - pack_01/SP01-106.yaml
+      - pack_01/SP01-107.yaml
+      - pack_01/SP01-108.yaml
+      - pack_01/SP01-109.yaml
+      - pack_01/SP01-110.yaml
+      - pack_01/SP01-111.yaml
+      - pack_01/SP01-112.yaml
   - id: commercial-and-product
     name: 5. Commercial And Product
     presetRefs:
@@ -197,6 +208,17 @@ presetRefs:
   - pack_01/SP01-064.yaml
   - pack_01/SP01-070.yaml
   - pack_01/SP01-075.yaml
+  - pack_01/SP01-102.yaml
+  - pack_01/SP01-103.yaml
+  - pack_01/SP01-104.yaml
+  - pack_01/SP01-105.yaml
+  - pack_01/SP01-106.yaml
+  - pack_01/SP01-107.yaml
+  - pack_01/SP01-108.yaml
+  - pack_01/SP01-109.yaml
+  - pack_01/SP01-110.yaml
+  - pack_01/SP01-111.yaml
+  - pack_01/SP01-112.yaml
   - pack_01/SP01-049.yaml
   - pack_01/SP01-050.yaml
   - pack_01/SP01-056.yaml

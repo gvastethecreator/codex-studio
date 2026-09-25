@@ -3,7 +3,7 @@ id: SP01-064
 packId: pack_01
 name: Concert Photography
 category: 4. Documentary And Street
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,52 +12,25 @@ tags:
   - photography-and-realism
   - documentary-and-street
 visualDna:
-  aesthetic: >-
-    Concert Photography acts as a transferable photographic style router: begin from Concert-stage
-    lighting, Beam-and-fog energy, and observational photographic system built from available-light
-    capture, imperfect timing, public-space pressure, and real-world incident, then apply the
-    photographic behavior to prompt X instead of recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through Silhouettes in beam fog; preserve prompt identity while
-    favoring candid posture, active context, environmental evidence, and unsanitized physical
-    detail, keeping the original subject, pose, species, object, or environment legible.
-  color_and_tone: >-
-    Grade with Stage lights (Red/Blue); grade as street, travel, concert, war, sport, paparazzi, or
-    field documentary capture rather than commercial color polish, with value separation and white
-    balance choices that feel captured in-camera rather than painted over.
-  lighting_and_shadow: >-
-    Use Beams, spots; use available light, flash intrusion, stage beams, harsh noon, rain
-    reflection, smoke, or practical spill as factual scene evidence, preserving believable exposure,
-    shadow density, highlight rolloff, and source motivation.
-  texture_and_material: >-
-    Render Fog, heat sheen, grain; keep street surfaces, sweat, dust, fabric wear, weather, grain,
-    high ISO, and motion smear honest rather than decorative, avoiding both waxy smoothing and noisy
-    texture overlays that hide the prompt content.
-  camera_and_composition: >-
-    Compose through Concert Photography candid timing, available-light realism, environmental
-    evidence, and observational photographic pressure; compose with decisive moment tension, wide
-    action proximity, telephoto intrusion, crowd-layer rhythm, horizon pressure, or unstable
-    framing, with lens distance, depth, timing, and focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Energetic, loud; derive mood from urgency, witness, travel discovery, danger,
-    crowd energy, decay, speed, or unrepeatable timing, so the preset changes interpretation without
-    demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Loud live-event realism; finish as credible documentary photography with restrained
-    processing, readable action, and no stock-advertising gloss, high-resolution photographic
-    detail, and disciplined denoise without losing natural grain where the preset needs it.
-  key_features: >-
-    Concert-stage lighting; Beam-and-fog energy; Stage lights (Red/Blue); Beams, spots; Concert
-    Photography candid timing, available-light realism, environmental evidence, and observational
-    photographic pressure
-  creative_brief: >-
-    Apply Concert Photography as a photographic preset over prompt X: preserve the user's requested
-    subject, then route Concert-stage lighting, Stage lights (Red/Blue), Beams, spots, Fog, heat
-    sheen, grain, and Concert Photography candid timing, available-light realism, environmental
-    evidence, and observational photographic pressure through optics, exposure, palette, surface
-    response, timing, and finish without requiring the card image's original subject.
+  aesthetic: 'Live concert photography: stage lighting cutting through haze, shot from the pit at high ISO during a peak moment of performance.'
+  subject_treatment: Keep the prompt subject, action and setting; render them as an unposed moment seen by a working photographer, without inventing an event, crowd or location the prompt did not ask for.
+  color_and_tone: Saturated gel colors — red, blue, magenta, amber — against black, skin taking the color of the beam.
+  lighting_and_shadow: Backlight fans and spots through haze, visible beams, silhouetted rims, lens flare from fixtures.
+  texture_and_material: Haze, sweat, grain from high ISO, motion blur on hair and hands, crowd hands in the foreground.
+  camera_and_composition: Low pit angle or from behind the crowd, performer mid-gesture, beams radiating, foreground hands or instruments cropped.
+  atmosphere_and_mood: Loud and euphoric, heat and noise felt through the color and the haze.
+  rendering_and_quality: High-ISO live realism with clean blacks; no studio lighting and no invented band logos.
+  key_features: gel beams through haze; backlit performer; pit angle; crowd hands foreground; high-ISO grain
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Concert Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - staged advertisement
+  - stock-photo gloss
+  - generic stock-photo face
+  - celebrity likeness
+  - inventing an event the prompt did not ask for
   - quiet
+  - bright daylight
+  - band logo
   - bright
   - illustration
   - painting
@@ -72,18 +45,20 @@ avoidRules:
   - readable text
   - signature
   - low resolution
-  - staged advertisement
   - fake smiles
-  - stock-photo gloss
   - tourist postcard polish
   - readable captions
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-064.webp
 attributes:
-  negativePrompt: >-
-    quiet, bright, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic
-    CGI, plastic render, watermark, readable text, signature, low resolution, staged advertisement,
-    fake smiles, stock-photo gloss, tourist postcard polish, readable captions
+  negativePrompt: staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, quiet, bright daylight, band logo, bright, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake smiles, tourist postcard polish, readable captions, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

@@ -1,0 +1,80 @@
+schemaVersion: 1
+id: SP01-106
+packId: pack_01
+name: Slow-Shutter Crowd Drag
+styleAnchors:
+  - Slow-Shutter Crowd Drag
+  - slow-shutter motion street
+  - one sharp still subject
+displayName: Slow-Shutter Crowd Drag
+category: 4. Documentary And Street
+domain: slow-shutter motion street
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - documentary-and-street
+  - slow-shutter
+  - motion-blur
+  - documentary
+visualDna:
+  aesthetic: 'Slow-shutter drag: a quarter to one second exposure where one still subject stays sharp while everything moving streaks around it.'
+  subject_treatment: Keep the prompt subject, action and setting; render them as an unposed moment seen by a working photographer, without inventing an event, crowd or location the prompt did not ask for.
+  color_and_tone: Natural color; moving areas blend into soft ribbons of mixed hue.
+  lighting_and_shadow: Dim daylight, dusk or interior light that allows a long shutter without blowing out.
+  texture_and_material: Ghosted walkers, smeared cloaks, streaked wheels and birds; the still subject crisp in texture.
+  camera_and_composition: Tripod or braced camera; still subject centered or on a third, motion flowing past on both sides.
+  atmosphere_and_mood: Calm inside rush, a single point of stillness while the world streams past.
+  rendering_and_quality: Optical motion blur with a genuinely sharp anchor, not a digital radial blur.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Slow-Shutter Crowd Drag as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: one sharp still subject; streaked moving crowd; quarter-second exposure; ghosted figures; stillness versus flow
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - synthetic CGI
+  - plastic render
+  - staged advertisement
+  - stock-photo gloss
+  - generic stock-photo face
+  - celebrity likeness
+  - inventing an event the prompt did not ask for
+  - everything frozen sharp
+  - digital radial blur
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, everything frozen sharp, digital radial blur, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: documentary-and-street
+  categoryName: 4. Documentary And Street
+  tags:
+    - photography-and-realism
+    - documentary-and-street
+    - slow-shutter
+    - motion-blur
+    - documentary
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: slow-shutter motion street
