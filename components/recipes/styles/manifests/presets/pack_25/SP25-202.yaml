@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-202
+packId: pack_25
+name: Parallel Reading Registers
+styleAnchors:
+  - Parallel Reading Registers
+  - two-register reading layout
+  - two reading paths
+displayName: Parallel Reading Registers
+category: 11. Editorial & Publication Design
+domain: two-register reading layout
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - editorial-and-publication-design
+  - parallel-registers
+  - applied-design
+  - editorial
+  - r-edt-02
+  - requested-text
+visualDna:
+  aesthetic: 'Parallel Reading Registers: two reading paths run side by side in columns or bands, linked by clear anchors and with distinct jobs.'
+  subject_treatment: Build the prompt's pages as two complementary reading paths linked by numbered anchors, each with its own rhythm, every title and supplied word exact.
+  color_and_tone: Registers told apart by weight, position and value as well as color.
+  lighting_and_shadow: Flat layout with both texts living on the same page plane.
+  texture_and_material: 'Sharp type, sober dividers and plain reading areas with no texture under the text.'
+  camera_and_composition: Related columns or bands of flexible length with shared reference alignments.
+  atmosphere_and_mood: Editorial dialogue and layered reading, thoughtful and clear.
+  rendering_and_quality: Crisp layout where each path can be read alone or crossed without losing order.
+  creative_brief: "Parallel Reading Registers: two reading paths run side by side in columns or bands, linked by clear anchors and with distinct jobs. Carry it through two reading paths, numbered anchors, distinct rhythms, shared alignments. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: two reading paths; numbered anchors; distinct rhythms; shared alignments
+avoidRules:
+  - two unrelated texts
+  - columns of equal priority
+  - ambiguous reading order
+  - invented quotes, authors or data
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: two unrelated texts, columns of equal priority, ambiguous reading order, invented quotes, authors or data, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: editorial-and-publication-design
+  categoryName: 11. Editorial & Publication Design
+  domain: two-register reading layout
+  tags:
+    - curation-v2
+    - editorial-and-publication-design
+    - parallel-registers
+    - applied-design
+    - editorial
+    - r-edt-02
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

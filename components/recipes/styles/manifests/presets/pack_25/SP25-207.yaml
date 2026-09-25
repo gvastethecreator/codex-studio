@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-207
+packId: pack_25
+name: Typographic Specimen Pages
+styleAnchors:
+  - Typographic Specimen Pages
+  - comparative specimen page layout
+  - comparable units
+displayName: Typographic Specimen Pages
+category: 11. Editorial & Publication Design
+domain: comparative specimen page layout
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - editorial-and-publication-design
+  - specimen-pages
+  - applied-design
+  - editorial
+  - r-edt-07
+  - requested-text
+visualDna:
+  aesthetic: 'Typographic Specimen Pages: repeatable units show variations of type or form side by side with shared alignments and precise notes.'
+  subject_treatment: Show the prompt's variations as comparable units on shared alignments with precise notes outside the art, every sample word kept exact.
+  color_and_tone: One main ink and one technical accent for differences.
+  lighting_and_shadow: Flat neutral rendering that gives every sample the same light.
+  texture_and_material: Sharp contours and text on a clean support.
+  camera_and_composition: Samples on a common height or box reference, captions outside the art.
+  atmosphere_and_mood: Analytical curiosity and comparative clarity that never becomes monotonous.
+  rendering_and_quality: Crisp specimen where each note matches a visible difference.
+  creative_brief: "Typographic Specimen Pages: repeatable units show variations of type or form side by side with shared alignments and precise notes. Carry it through comparable units, shared alignment, precise notes, one accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: comparable units; shared alignment; precise notes; one accent
+avoidRules:
+  - incomparable samples
+  - invented annotations
+  - undeclared scales
+  - invented quotes, authors or data
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: incomparable samples, invented annotations, undeclared scales, invented quotes, authors or data, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: editorial-and-publication-design
+  categoryName: 11. Editorial & Publication Design
+  domain: comparative specimen page layout
+  tags:
+    - curation-v2
+    - editorial-and-publication-design
+    - specimen-pages
+    - applied-design
+    - editorial
+    - r-edt-07
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

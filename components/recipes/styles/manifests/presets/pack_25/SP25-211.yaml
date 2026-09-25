@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-211
+packId: pack_25
+name: Schematic Editorial Plates
+styleAnchors:
+  - Schematic Editorial Plates
+  - explanatory diagram plate layout
+  - explanatory plate
+displayName: Schematic Editorial Plates
+category: 11. Editorial & Publication Design
+domain: explanatory diagram plate layout
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - editorial-and-publication-design
+  - schematic-plate
+  - applied-design
+  - editorial
+  - r-edt-11
+  - requested-text
+visualDna:
+  aesthetic: 'Schematic Editorial Plates: diagrams, images and notes combined into explanatory plates with clearly defined levels of information.'
+  subject_treatment: Combine the prompt's diagram, image and notes into one explanatory plate with ranked levels, every callout pointing to a supplied part.
+  color_and_tone: Color roles for figure, reference and note, backed by shape and position.
+  lighting_and_shadow: Flat layout with figures keeping their declared light or projection.
+  texture_and_material: Clean strokes, clear image edges and sharp text on a calm page.
+  camera_and_composition: Dominant main figure, linked details and notes clear of crossings.
+  atmosphere_and_mood: Analytical clarity and depth of reading, patient and precise.
+  rendering_and_quality: Crisp plate where every callout matches the supplied content.
+  creative_brief: "Schematic Editorial Plates: diagrams, images and notes combined into explanatory plates with clearly defined levels of information. Carry it through explanatory plate, ranked levels, linked details, clean callouts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: explanatory plate; ranked levels; linked details; clean callouts
+avoidRules:
+  - invented diagrams
+  - callouts to non-existent parts
+  - decorative excess data
+  - invented quotes, authors or data
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: invented diagrams, callouts to non-existent parts, decorative excess data, invented quotes, authors or data, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: editorial-and-publication-design
+  categoryName: 11. Editorial & Publication Design
+  domain: explanatory diagram plate layout
+  tags:
+    - curation-v2
+    - editorial-and-publication-design
+    - schematic-plate
+    - applied-design
+    - editorial
+    - r-edt-11
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

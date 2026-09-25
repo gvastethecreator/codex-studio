@@ -1196,64 +1196,124 @@
       "category": "10. Typography & Lettering"
     },
     "R-EDT-01": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-201",
+      "name": "Marginal Archive Layout",
+      "category": "11. Editorial & Publication Design"
     },
     "R-EDT-02": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-202",
+      "name": "Parallel Reading Registers",
+      "category": "11. Editorial & Publication Design"
     },
     "R-EDT-03": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-203",
+      "name": "Image-Index Publications",
+      "category": "11. Editorial & Publication Design"
     },
     "R-EDT-04": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-204",
+      "name": "Overscale Folio Rhythm",
+      "category": "11. Editorial & Publication Design"
     },
     "R-EDT-05": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-205",
+      "name": "Dense-Quiet Spread Contrast",
+      "category": "11. Editorial & Publication Design"
     },
     "R-EDT-06": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-206",
+      "name": "Fold-Aware Editorial",
+      "category": "11. Editorial & Publication Design"
     },
     "R-EDT-07": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-207",
+      "name": "Typographic Specimen Pages",
+      "category": "11. Editorial & Publication Design"
     },
     "R-EDT-08": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-208",
+      "name": "Cutout Image Windows",
+      "category": "11. Editorial & Publication Design"
     },
     "R-EDT-09": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-209",
+      "name": "Continuous Caption Trails",
+      "category": "11. Editorial & Publication Design"
     },
     "R-EDT-10": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-210",
+      "name": "Material Register Books",
+      "category": "11. Editorial & Publication Design"
     },
     "R-EDT-11": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-211",
+      "name": "Schematic Editorial Plates",
+      "category": "11. Editorial & Publication Design"
     },
     "R-EDT-12": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-212",
+      "name": "Fragmented Grid Essays",
+      "category": "11. Editorial & Publication Design"
     },
     "R-EDT-13": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-213",
+      "name": "Pocket-Scale Intimacy",
+      "category": "11. Editorial & Publication Design"
     },
     "R-EDT-14": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-214",
+      "name": "Chromatic Section Coding",
+      "category": "11. Editorial & Publication Design"
     },
     "R-EDT-15": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-215",
+      "name": "Bleed-and-Margin Counterpoint",
+      "category": "11. Editorial & Publication Design"
     },
     "R-EDT-16": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-216",
+      "name": "Modular Journal Entries",
+      "category": "11. Editorial & Publication Design"
     },
     "R-EDT-17": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-217",
+      "name": "Facing-Page Dialogue",
+      "category": "11. Editorial & Publication Design"
     },
     "R-EDT-18": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-218",
+      "name": "Foldout Atlas Structure",
+      "category": "11. Editorial & Publication Design"
     },
     "R-EDT-19": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-219",
+      "name": "Eight-Page Rhythm Trial",
+      "category": "11. Editorial & Publication Design"
     },
     "R-EDT-20": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-220",
+      "name": "Book-Object Sequence",
+      "category": "11. Editorial & Publication Design"
     },
     "R-DAT-01": {
       "status": "pending"

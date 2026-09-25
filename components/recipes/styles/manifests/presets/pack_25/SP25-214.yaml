@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-214
+packId: pack_25
+name: Chromatic Section Coding
+styleAnchors:
+  - Chromatic Section Coding
+  - color-coded section publication
+  - section colors
+displayName: Chromatic Section Coding
+category: 11. Editorial & Publication Design
+domain: color-coded section publication
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - editorial-and-publication-design
+  - section-coding
+  - applied-design
+  - editorial
+  - r-edt-14
+  - requested-text
+visualDna:
+  aesthetic: 'Chromatic Section Coding: each section of the publication marked by one color and a redundant marker in a stable position.'
+  subject_treatment: Mark each section of the prompt's publication with one color plus a redundant shape marker and title in a stable place, every section name exact.
+  color_and_tone: One color per section within a limited palette, titles carrying meaning without color.
+  lighting_and_shadow: Flat layout with constant source image light in every section.
+  texture_and_material: Clean ink and a sober support, the same finish for every section.
+  camera_and_composition: Markers in stable positions and section changes clearly flagged.
+  atmosphere_and_mood: Orientation and continuity, varied sections that still share one identity.
+  rendering_and_quality: Crisp publication whose sections still read in greyscale.
+  creative_brief: "Chromatic Section Coding: each section of the publication marked by one color and a redundant marker in a stable position. Carry it through section colors, redundant markers, stable positions, greyscale check. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: section colors; redundant markers; stable positions; greyscale check
+avoidRules:
+  - color as the only signal
+  - arbitrary palette
+  - mixed section content
+  - invented quotes, authors or data
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: color as the only signal, arbitrary palette, mixed section content, invented quotes, authors or data, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: editorial-and-publication-design
+  categoryName: 11. Editorial & Publication Design
+  domain: color-coded section publication
+  tags:
+    - curation-v2
+    - editorial-and-publication-design
+    - section-coding
+    - applied-design
+    - editorial
+    - r-edt-14
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

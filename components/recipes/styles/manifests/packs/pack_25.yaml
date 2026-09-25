@@ -239,6 +239,29 @@ categories:
       - pack_25/SP25-198.yaml
       - pack_25/SP25-199.yaml
       - pack_25/SP25-200.yaml
+  - id: editorial-and-publication-design
+    name: 11. Editorial & Publication Design
+    presetRefs:
+      - pack_25/SP25-201.yaml
+      - pack_25/SP25-202.yaml
+      - pack_25/SP25-203.yaml
+      - pack_25/SP25-204.yaml
+      - pack_25/SP25-205.yaml
+      - pack_25/SP25-206.yaml
+      - pack_25/SP25-207.yaml
+      - pack_25/SP25-208.yaml
+      - pack_25/SP25-209.yaml
+      - pack_25/SP25-210.yaml
+      - pack_25/SP25-211.yaml
+      - pack_25/SP25-212.yaml
+      - pack_25/SP25-213.yaml
+      - pack_25/SP25-214.yaml
+      - pack_25/SP25-215.yaml
+      - pack_25/SP25-216.yaml
+      - pack_25/SP25-217.yaml
+      - pack_25/SP25-218.yaml
+      - pack_25/SP25-219.yaml
+      - pack_25/SP25-220.yaml
 presetRefs:
   - pack_25/SP25-001.yaml
   - pack_25/SP25-002.yaml
@@ -440,3 +463,23 @@ presetRefs:
   - pack_25/SP25-198.yaml
   - pack_25/SP25-199.yaml
   - pack_25/SP25-200.yaml
+  - pack_25/SP25-201.yaml
+  - pack_25/SP25-202.yaml
+  - pack_25/SP25-203.yaml
+  - pack_25/SP25-204.yaml
+  - pack_25/SP25-205.yaml
+  - pack_25/SP25-206.yaml
+  - pack_25/SP25-207.yaml
+  - pack_25/SP25-208.yaml
+  - pack_25/SP25-209.yaml
+  - pack_25/SP25-210.yaml
+  - pack_25/SP25-211.yaml
+  - pack_25/SP25-212.yaml
+  - pack_25/SP25-213.yaml
+  - pack_25/SP25-214.yaml
+  - pack_25/SP25-215.yaml
+  - pack_25/SP25-216.yaml
+  - pack_25/SP25-217.yaml
+  - pack_25/SP25-218.yaml
+  - pack_25/SP25-219.yaml
+  - pack_25/SP25-220.yaml

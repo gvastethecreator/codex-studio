@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-204
+packId: pack_25
+name: Overscale Folio Rhythm
+styleAnchors:
+  - Overscale Folio Rhythm
+  - giant folio chapter layout
+  - giant chapter numbers
+displayName: Overscale Folio Rhythm
+category: 11. Editorial & Publication Design
+domain: giant folio chapter layout
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - editorial-and-publication-design
+  - overscale-folio
+  - applied-design
+  - editorial
+  - r-edt-04
+  - requested-text
+visualDna:
+  aesthetic: 'Overscale Folio Rhythm: dramatic changes of scale and visible page numbers articulate chapters while the text stays the main read.'
+  subject_treatment: Use large chapter numbers and folios as the structure of the prompt's pages, large at openings and small in the body, the text always the main read.
+  color_and_tone: Folios in controlled value, high-contrast titles and a legible body.
+  lighting_and_shadow: Flat layout with numbers printed directly on the page.
+  texture_and_material: Clean type, a sober support and discreet image edges.
+  camera_and_composition: Big folios in transition zones, reduced on dense pages by one rule.
+  atmosphere_and_mood: A rhythm of openings and forward motion, bold and structured.
+  rendering_and_quality: Crisp spread where folios match real pages and never read as data.
+  creative_brief: "Overscale Folio Rhythm: dramatic changes of scale and visible page numbers articulate chapters while the text stays the main read. Carry it through giant chapter numbers, small body folios, scale rhythm, clear chapters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: giant chapter numbers; small body folios; scale rhythm; clear chapters
+avoidRules:
+  - fake numbering
+  - folio as permanent hero
+  - pages with no continuity
+  - invented quotes, authors or data
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: fake numbering, folio as permanent hero, pages with no continuity, invented quotes, authors or data, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: editorial-and-publication-design
+  categoryName: 11. Editorial & Publication Design
+  domain: giant folio chapter layout
+  tags:
+    - curation-v2
+    - editorial-and-publication-design
+    - overscale-folio
+    - applied-design
+    - editorial
+    - r-edt-04
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

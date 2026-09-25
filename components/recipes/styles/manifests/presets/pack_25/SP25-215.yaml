@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-215
+packId: pack_25
+name: Bleed-and-Margin Counterpoint
+styleAnchors:
+  - Bleed-and-Margin Counterpoint
+  - full-bleed and margin contrast layout
+  - full-bleed image
+displayName: Bleed-and-Margin Counterpoint
+category: 11. Editorial & Publication Design
+domain: full-bleed and margin contrast layout
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - editorial-and-publication-design
+  - bleed-margin
+  - applied-design
+  - editorial
+  - r-edt-15
+  - requested-text
+visualDna:
+  aesthetic: 'Bleed-and-Margin Counterpoint: full-bleed images set against tightly contained type areas, the contrast building hierarchy.'
+  subject_treatment: Set a full-bleed image of the prompt's subject against a contained type area, keeping points of interest off the trim and every title exact.
+  color_and_tone: Text on high-contrast areas, images keeping their source palette.
+  lighting_and_shadow: 'Original image light and a flat page with no added shadows.'
+  texture_and_material: Clean full-bleed edges and a neutral support in reading areas.
+  camera_and_composition: Image expansion alternating with contained text through clear anchors.
+  atmosphere_and_mood: Visual breadth and a reading pause, cinematic and calm.
+  rendering_and_quality: Crisp spread where no focal point falls into the trim or gutter.
+  creative_brief: "Bleed-and-Margin Counterpoint: full-bleed images set against tightly contained type areas, the contrast building hierarchy. Carry it through full-bleed image, contained type, anchored caption, clear trim. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: full-bleed image; contained type; anchored caption; clear trim
+avoidRules:
+  - essential image cut
+  - text over noise
+  - bleed with no function
+  - invented quotes, authors or data
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: essential image cut, text over noise, bleed with no function, invented quotes, authors or data, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: editorial-and-publication-design
+  categoryName: 11. Editorial & Publication Design
+  domain: full-bleed and margin contrast layout
+  tags:
+    - curation-v2
+    - editorial-and-publication-design
+    - bleed-margin
+    - applied-design
+    - editorial
+    - r-edt-15
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

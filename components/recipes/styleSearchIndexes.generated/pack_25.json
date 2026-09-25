@@ -3,7 +3,7 @@
     {
       "id": "pack_25",
       "name": "Applied Design",
-      "presetCount": 200
+      "presetCount": 220
     }
   ],
   "presets": [
@@ -3534,7 +3534,399 @@
       "tags": ["applied-design", "typography-and-lettering", "lettering-change-keyframe-sequence"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp25-200 variable rhythm sequence lettering change keyframe sequence three frames 10. typography & lettering typography & lettering lettering change keyframe sequence pack_25 applied design typography-and-lettering applied-design typography-and-lettering lettering-change-keyframe-sequence"
+    },
+    {
+      "id": "SP25-201",
+      "name": "Marginal Archive Layout",
+      "styleAnchors": [
+        "Marginal Archive Layout",
+        "annotated margin page layout",
+        "ranked margin notes"
+      ],
+      "ref": "pack_25/SP25-201.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "editorial-and-publication-design",
+      "categoryName": "11. Editorial & Publication Design",
+      "domain": "annotated margin page layout",
+      "tags": [
+        "applied-design",
+        "editorial-and-publication-design",
+        "annotated-margin-page-layout"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-201 marginal archive layout annotated margin page layout ranked margin notes 11. editorial & publication design editorial & publication annotated margin page layout pack_25 applied design editorial-and-publication-design applied-design editorial-and-publication-design annotated-margin-page-layout"
+    },
+    {
+      "id": "SP25-202",
+      "name": "Parallel Reading Registers",
+      "styleAnchors": [
+        "Parallel Reading Registers",
+        "two-register reading layout",
+        "two reading paths"
+      ],
+      "ref": "pack_25/SP25-202.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "editorial-and-publication-design",
+      "categoryName": "11. Editorial & Publication Design",
+      "domain": "two-register reading layout",
+      "tags": ["applied-design", "editorial-and-publication-design", "two-register-reading-layout"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-202 parallel reading registers two-register reading layout two reading paths 11. editorial & publication design editorial & publication two-register reading layout pack_25 applied design editorial-and-publication-design applied-design editorial-and-publication-design two-register-reading-layout"
+    },
+    {
+      "id": "SP25-203",
+      "name": "Image-Index Publications",
+      "styleAnchors": [
+        "Image-Index Publications",
+        "numbered image index layout",
+        "numbered images"
+      ],
+      "ref": "pack_25/SP25-203.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "editorial-and-publication-design",
+      "categoryName": "11. Editorial & Publication Design",
+      "domain": "numbered image index layout",
+      "tags": ["applied-design", "editorial-and-publication-design", "numbered-image-index-layout"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-203 image-index publications numbered image index layout numbered images 11. editorial & publication design editorial & publication numbered image index layout pack_25 applied design editorial-and-publication-design applied-design editorial-and-publication-design numbered-image-index-layout"
+    },
+    {
+      "id": "SP25-204",
+      "name": "Overscale Folio Rhythm",
+      "styleAnchors": [
+        "Overscale Folio Rhythm",
+        "giant folio chapter layout",
+        "giant chapter numbers"
+      ],
+      "ref": "pack_25/SP25-204.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "editorial-and-publication-design",
+      "categoryName": "11. Editorial & Publication Design",
+      "domain": "giant folio chapter layout",
+      "tags": ["applied-design", "editorial-and-publication-design", "giant-folio-chapter-layout"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-204 overscale folio rhythm giant folio chapter layout giant chapter numbers 11. editorial & publication design editorial & publication giant folio chapter layout pack_25 applied design editorial-and-publication-design applied-design editorial-and-publication-design giant-folio-chapter-layout"
+    },
+    {
+      "id": "SP25-205",
+      "name": "Dense-Quiet Spread Contrast",
+      "styleAnchors": ["Dense-Quiet Spread Contrast", "dense and quiet page rhythm", "dense pages"],
+      "ref": "pack_25/SP25-205.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "editorial-and-publication-design",
+      "categoryName": "11. Editorial & Publication Design",
+      "domain": "dense and quiet page rhythm",
+      "tags": ["applied-design", "editorial-and-publication-design", "dense-and-quiet-page-rhythm"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-205 dense-quiet spread contrast dense and quiet page rhythm dense pages 11. editorial & publication design editorial & publication dense and quiet page rhythm pack_25 applied design editorial-and-publication-design applied-design editorial-and-publication-design dense-and-quiet-page-rhythm"
+    },
+    {
+      "id": "SP25-206",
+      "name": "Fold-Aware Editorial",
+      "styleAnchors": ["Fold-Aware Editorial", "fold-conscious print layout", "fold-aware layout"],
+      "ref": "pack_25/SP25-206.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "editorial-and-publication-design",
+      "categoryName": "11. Editorial & Publication Design",
+      "domain": "fold-conscious print layout",
+      "tags": ["applied-design", "editorial-and-publication-design", "fold-conscious-print-layout"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-206 fold-aware editorial fold-conscious print layout fold-aware layout 11. editorial & publication design editorial & publication fold-conscious print layout pack_25 applied design editorial-and-publication-design applied-design editorial-and-publication-design fold-conscious-print-layout"
+    },
+    {
+      "id": "SP25-207",
+      "name": "Typographic Specimen Pages",
+      "styleAnchors": [
+        "Typographic Specimen Pages",
+        "comparative specimen page layout",
+        "comparable units"
+      ],
+      "ref": "pack_25/SP25-207.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "editorial-and-publication-design",
+      "categoryName": "11. Editorial & Publication Design",
+      "domain": "comparative specimen page layout",
+      "tags": [
+        "applied-design",
+        "editorial-and-publication-design",
+        "comparative-specimen-page-layout"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-207 typographic specimen pages comparative specimen page layout comparable units 11. editorial & publication design editorial & publication comparative specimen page layout pack_25 applied design editorial-and-publication-design applied-design editorial-and-publication-design comparative-specimen-page-layout"
+    },
+    {
+      "id": "SP25-208",
+      "name": "Cutout Image Windows",
+      "styleAnchors": [
+        "Cutout Image Windows",
+        "geometric image window layout",
+        "geometric windows"
+      ],
+      "ref": "pack_25/SP25-208.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "editorial-and-publication-design",
+      "categoryName": "11. Editorial & Publication Design",
+      "domain": "geometric image window layout",
+      "tags": [
+        "applied-design",
+        "editorial-and-publication-design",
+        "geometric-image-window-layout"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-208 cutout image windows geometric image window layout geometric windows 11. editorial & publication design editorial & publication geometric image window layout pack_25 applied design editorial-and-publication-design applied-design editorial-and-publication-design geometric-image-window-layout"
+    },
+    {
+      "id": "SP25-209",
+      "name": "Continuous Caption Trails",
+      "styleAnchors": ["Continuous Caption Trails", "linked caption trail layout", "caption trail"],
+      "ref": "pack_25/SP25-209.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "editorial-and-publication-design",
+      "categoryName": "11. Editorial & Publication Design",
+      "domain": "linked caption trail layout",
+      "tags": ["applied-design", "editorial-and-publication-design", "linked-caption-trail-layout"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-209 continuous caption trails linked caption trail layout caption trail 11. editorial & publication design editorial & publication linked caption trail layout pack_25 applied design editorial-and-publication-design applied-design editorial-and-publication-design linked-caption-trail-layout"
+    },
+    {
+      "id": "SP25-210",
+      "name": "Material Register Books",
+      "styleAnchors": [
+        "Material Register Books",
+        "changing paper register book",
+        "section paper changes"
+      ],
+      "ref": "pack_25/SP25-210.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "editorial-and-publication-design",
+      "categoryName": "11. Editorial & Publication Design",
+      "domain": "changing paper register book",
+      "tags": [
+        "applied-design",
+        "editorial-and-publication-design",
+        "changing-paper-register-book"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-210 material register books changing paper register book section paper changes 11. editorial & publication design editorial & publication changing paper register book pack_25 applied design editorial-and-publication-design applied-design editorial-and-publication-design changing-paper-register-book"
+    },
+    {
+      "id": "SP25-211",
+      "name": "Schematic Editorial Plates",
+      "styleAnchors": [
+        "Schematic Editorial Plates",
+        "explanatory diagram plate layout",
+        "explanatory plate"
+      ],
+      "ref": "pack_25/SP25-211.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "editorial-and-publication-design",
+      "categoryName": "11. Editorial & Publication Design",
+      "domain": "explanatory diagram plate layout",
+      "tags": [
+        "applied-design",
+        "editorial-and-publication-design",
+        "explanatory-diagram-plate-layout"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-211 schematic editorial plates explanatory diagram plate layout explanatory plate 11. editorial & publication design editorial & publication explanatory diagram plate layout pack_25 applied design editorial-and-publication-design applied-design editorial-and-publication-design explanatory-diagram-plate-layout"
+    },
+    {
+      "id": "SP25-212",
+      "name": "Fragmented Grid Essays",
+      "styleAnchors": [
+        "Fragmented Grid Essays",
+        "controlled grid-break essay layout",
+        "one grid break"
+      ],
+      "ref": "pack_25/SP25-212.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "editorial-and-publication-design",
+      "categoryName": "11. Editorial & Publication Design",
+      "domain": "controlled grid-break essay layout",
+      "tags": [
+        "applied-design",
+        "editorial-and-publication-design",
+        "controlled-grid-break-essay-layout"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-212 fragmented grid essays controlled grid-break essay layout one grid break 11. editorial & publication design editorial & publication controlled grid-break essay layout pack_25 applied design editorial-and-publication-design applied-design editorial-and-publication-design controlled-grid-break-essay-layout"
+    },
+    {
+      "id": "SP25-213",
+      "name": "Pocket-Scale Intimacy",
+      "styleAnchors": [
+        "Pocket-Scale Intimacy",
+        "small-format intimate publication",
+        "pocket format"
+      ],
+      "ref": "pack_25/SP25-213.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "editorial-and-publication-design",
+      "categoryName": "11. Editorial & Publication Design",
+      "domain": "small-format intimate publication",
+      "tags": [
+        "applied-design",
+        "editorial-and-publication-design",
+        "small-format-intimate-publication"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-213 pocket-scale intimacy small-format intimate publication pocket format 11. editorial & publication design editorial & publication small-format intimate publication pack_25 applied design editorial-and-publication-design applied-design editorial-and-publication-design small-format-intimate-publication"
+    },
+    {
+      "id": "SP25-214",
+      "name": "Chromatic Section Coding",
+      "styleAnchors": [
+        "Chromatic Section Coding",
+        "color-coded section publication",
+        "section colors"
+      ],
+      "ref": "pack_25/SP25-214.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "editorial-and-publication-design",
+      "categoryName": "11. Editorial & Publication Design",
+      "domain": "color-coded section publication",
+      "tags": [
+        "applied-design",
+        "editorial-and-publication-design",
+        "color-coded-section-publication"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-214 chromatic section coding color-coded section publication section colors 11. editorial & publication design editorial & publication color-coded section publication pack_25 applied design editorial-and-publication-design applied-design editorial-and-publication-design color-coded-section-publication"
+    },
+    {
+      "id": "SP25-215",
+      "name": "Bleed-and-Margin Counterpoint",
+      "styleAnchors": [
+        "Bleed-and-Margin Counterpoint",
+        "full-bleed and margin contrast layout",
+        "full-bleed image"
+      ],
+      "ref": "pack_25/SP25-215.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "editorial-and-publication-design",
+      "categoryName": "11. Editorial & Publication Design",
+      "domain": "full-bleed and margin contrast layout",
+      "tags": [
+        "applied-design",
+        "editorial-and-publication-design",
+        "full-bleed-and-margin-contrast-layout"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-215 bleed-and-margin counterpoint full-bleed and margin contrast layout full-bleed image 11. editorial & publication design editorial & publication full-bleed and margin contrast layout pack_25 applied design editorial-and-publication-design applied-design editorial-and-publication-design full-bleed-and-margin-contrast-layout"
+    },
+    {
+      "id": "SP25-216",
+      "name": "Modular Journal Entries",
+      "styleAnchors": ["Modular Journal Entries", "flexible entry module layout", "entry modules"],
+      "ref": "pack_25/SP25-216.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "editorial-and-publication-design",
+      "categoryName": "11. Editorial & Publication Design",
+      "domain": "flexible entry module layout",
+      "tags": [
+        "applied-design",
+        "editorial-and-publication-design",
+        "flexible-entry-module-layout"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-216 modular journal entries flexible entry module layout entry modules 11. editorial & publication design editorial & publication flexible entry module layout pack_25 applied design editorial-and-publication-design applied-design editorial-and-publication-design flexible-entry-module-layout"
+    },
+    {
+      "id": "SP25-217",
+      "name": "Facing-Page Dialogue",
+      "styleAnchors": ["Facing-Page Dialogue", "left-right page dialogue profile", "facing pages"],
+      "ref": "pack_25/SP25-217.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "editorial-and-publication-design",
+      "categoryName": "11. Editorial & Publication Design",
+      "domain": "left-right page dialogue profile",
+      "tags": [
+        "applied-design",
+        "editorial-and-publication-design",
+        "left-right-page-dialogue-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-217 facing-page dialogue left-right page dialogue profile facing pages 11. editorial & publication design editorial & publication left-right page dialogue profile pack_25 applied design editorial-and-publication-design applied-design editorial-and-publication-design left-right-page-dialogue-profile"
+    },
+    {
+      "id": "SP25-218",
+      "name": "Foldout Atlas Structure",
+      "styleAnchors": ["Foldout Atlas Structure", "foldout atlas layout profile", "wide overview"],
+      "ref": "pack_25/SP25-218.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "editorial-and-publication-design",
+      "categoryName": "11. Editorial & Publication Design",
+      "domain": "foldout atlas layout profile",
+      "tags": [
+        "applied-design",
+        "editorial-and-publication-design",
+        "foldout-atlas-layout-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-218 foldout atlas structure foldout atlas layout profile wide overview 11. editorial & publication design editorial & publication foldout atlas layout profile pack_25 applied design editorial-and-publication-design applied-design editorial-and-publication-design foldout-atlas-layout-profile"
+    },
+    {
+      "id": "SP25-219",
+      "name": "Eight-Page Rhythm Trial",
+      "styleAnchors": [
+        "Eight-Page Rhythm Trial",
+        "eight-page publication sequence profile",
+        "eight page roles"
+      ],
+      "ref": "pack_25/SP25-219.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "editorial-and-publication-design",
+      "categoryName": "11. Editorial & Publication Design",
+      "domain": "eight-page publication sequence profile",
+      "tags": [
+        "applied-design",
+        "editorial-and-publication-design",
+        "eight-page-publication-sequence-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-219 eight-page rhythm trial eight-page publication sequence profile eight page roles 11. editorial & publication design editorial & publication eight-page publication sequence profile pack_25 applied design editorial-and-publication-design applied-design editorial-and-publication-design eight-page-publication-sequence-profile"
+    },
+    {
+      "id": "SP25-220",
+      "name": "Book-Object Sequence",
+      "styleAnchors": [
+        "Book-Object Sequence",
+        "book cover spine and interior profile",
+        "cover, spine, spreads"
+      ],
+      "ref": "pack_25/SP25-220.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "editorial-and-publication-design",
+      "categoryName": "11. Editorial & Publication Design",
+      "domain": "book cover spine and interior profile",
+      "tags": [
+        "applied-design",
+        "editorial-and-publication-design",
+        "book-cover-spine-and-interior-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-220 book-object sequence book cover spine and interior profile cover, spine, spreads 11. editorial & publication design editorial & publication book cover spine and interior profile pack_25 applied design editorial-and-publication-design applied-design editorial-and-publication-design book-cover-spine-and-interior-profile"
     }
   ],
-  "totalPresetCount": 200
+  "totalPresetCount": 220
 }

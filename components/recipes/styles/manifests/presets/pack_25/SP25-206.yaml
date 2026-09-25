@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-206
+packId: pack_25
+name: Fold-Aware Editorial
+styleAnchors:
+  - Fold-Aware Editorial
+  - fold-conscious print layout
+  - fold-aware layout
+displayName: Fold-Aware Editorial
+category: 11. Editorial & Publication Design
+domain: fold-conscious print layout
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - editorial-and-publication-design
+  - fold-aware
+  - applied-design
+  - editorial
+  - r-edt-06
+  - requested-text
+visualDna:
+  aesthetic: 'Fold-Aware Editorial: the layout plays with folds and openings while keeping every critical word out of the zones that get lost.'
+  subject_treatment: Compose the prompt's printed piece around its folds and openings, keeping titles and text clear of creases, shown flat and folded.
+  color_and_tone: Short palette and contrasted text with color continuity across faces.
+  lighting_and_shadow: A flat view for the artwork and neutral light for the folded view.
+  texture_and_material: Conceptual stock of even thickness, clear folds and clean ink.
+  camera_and_composition: Text kept off critical creases, images crossing folds only where loss is fine.
+  atmosphere_and_mood: Discovery through opening and a tactile reading of the object.
+  rendering_and_quality: Crisp piece that stays coherent both flat and folded.
+  creative_brief: "Fold-Aware Editorial: the layout plays with folds and openings while keeping every critical word out of the zones that get lost. Carry it through fold-aware layout, clear creases, flat and folded views, opening reveal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: fold-aware layout; clear creases; flat and folded views; opening reveal
+avoidRules:
+  - text in the spine
+  - essential image cut by a fold
+  - invented folds
+  - invented quotes, authors or data
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: text in the spine, essential image cut by a fold, invented folds, invented quotes, authors or data, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: editorial-and-publication-design
+  categoryName: 11. Editorial & Publication Design
+  domain: fold-conscious print layout
+  tags:
+    - curation-v2
+    - editorial-and-publication-design
+    - fold-aware
+    - applied-design
+    - editorial
+    - r-edt-06
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

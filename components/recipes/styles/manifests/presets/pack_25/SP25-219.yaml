@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP25-219
+packId: pack_25
+name: Eight-Page Rhythm Trial
+styleAnchors:
+  - Eight-Page Rhythm Trial
+  - eight-page publication sequence profile
+  - eight page roles
+displayName: Eight-Page Rhythm Trial
+category: 11. Editorial & Publication Design
+domain: eight-page publication sequence profile
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - editorial-and-publication-design
+  - eight-page-trial
+  - applied-design
+  - editorial
+  - profile
+  - r-edt-19
+  - requested-text
+visualDna:
+  aesthetic: 'Eight-Page Rhythm Trial: one editorial system applied to eight page roles, cover, contents, opener, body, image, data, notes and back.'
+  subject_treatment: Lay out the prompt's publication as eight thumbnails, cover, contents, opener, body, image, data, notes and back, one system and the exact title.
+  color_and_tone: Constant color roles with legible contrast on dense and quiet pages.
+  lighting_and_shadow: Flat layout with source image light preserved in every image.
+  texture_and_material: Coherent type, edges and support across the whole sequence.
+  camera_and_composition: Eight page thumbnails in two rows, each page role clearly different.
+  atmosphere_and_mood: A sustained publication rhythm rather than eight covers.
+  rendering_and_quality: Crisp sequence where every page has a job and folios stay consistent.
+  creative_brief: "Eight-Page Rhythm Trial: one editorial system applied to eight page roles, cover, contents, opener, body, image, data, notes and back. Carry it through eight page roles, one system, thumbnail rows, consistent folios. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: eight page roles; one system; thumbnail rows; consistent folios
+avoidRules:
+  - missing page roles
+  - invented content
+  - inconsistent numbering
+  - invented quotes, authors or data
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: missing page roles, invented content, inconsistent numbering, invented quotes, authors or data, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: editorial-and-publication-design
+  categoryName: 11. Editorial & Publication Design
+  domain: eight-page publication sequence profile
+  tags:
+    - curation-v2
+    - editorial-and-publication-design
+    - eight-page-trial
+    - applied-design
+    - editorial
+    - profile
+    - r-edt-19
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

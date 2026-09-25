@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP25-217
+packId: pack_25
+name: Facing-Page Dialogue
+styleAnchors:
+  - Facing-Page Dialogue
+  - left-right page dialogue profile
+  - facing pages
+displayName: Facing-Page Dialogue
+category: 11. Editorial & Publication Design
+domain: left-right page dialogue profile
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - editorial-and-publication-design
+  - facing-dialogue
+  - applied-design
+  - editorial
+  - profile
+  - r-edt-17
+  - requested-text
+visualDna:
+  aesthetic: 'Facing-Page Dialogue: left and right pages given complementary jobs that talk to each other through anchors, scale or reference.'
+  subject_treatment: Give the prompt's left and right pages complementary jobs that answer each other through anchors or references, every word complete and exact.
+  color_and_tone: One shared palette with weight differences marking the left and right roles.
+  lighting_and_shadow: Flat layout with both pages in the same even light.
+  texture_and_material: Coherent type and surfaces with source images unchanged.
+  camera_and_composition: Left and right in dialogue by anchors or scale, symmetry optional.
+  atmosphere_and_mood: Counterpoint and an editorial conversation, witty, balanced and clear.
+  rendering_and_quality: Crisp spread where each page adds different information.
+  creative_brief: "Facing-Page Dialogue: left and right pages given complementary jobs that talk to each other through anchors, scale or reference. Carry it through facing pages, complementary roles, anchored dialogue, shared palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: facing pages; complementary roles; anchored dialogue; shared palette
+avoidRules:
+  - independent pages
+  - decorative symmetry
+  - repeated information
+  - invented quotes, authors or data
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: independent pages, decorative symmetry, repeated information, invented quotes, authors or data, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: editorial-and-publication-design
+  categoryName: 11. Editorial & Publication Design
+  domain: left-right page dialogue profile
+  tags:
+    - curation-v2
+    - editorial-and-publication-design
+    - facing-dialogue
+    - applied-design
+    - editorial
+    - profile
+    - r-edt-17
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

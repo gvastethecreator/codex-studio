@@ -2518,5 +2518,20 @@
     "evidencePresetIds": ["SP25-181", "SP25-182", "SP25-183"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_25",
+    "category": "11. Editorial & Publication Design",
+    "displayCategory": "Editorial & publication",
+    "kind": "mixed",
+    "expectedCount": 20,
+    "baselineHash": "7ce25c19f3c8602daa3acb85a8f99a1721d98fee815f75e34c65be54586827b5",
+    "problem": "Editorial styles must organize pages, spreads and books without banning the requested titles and text, and without inventing quotes, authors, dates, data or filler text.",
+    "preserve": "Titles, supplied text, numbering, captions and page roles stay exact; each style keeps its page mechanism (annotated margins, parallel registers, image index, giant folios, dense and quiet rhythm, fold-aware layout, specimen pages, cutout windows, caption trails, paper registers, schematic plates, one grid break, pocket scale, section colors, bleed and margin).",
+    "proposedAction": "Applied-design import: 16 page and publication styles, facing-page and foldout atlas profiles, and the eight-page rhythm and book-object recipes as sequence profiles; requested-text policy with a no-invented-quotes negative and three new fictional-publication briefs per preset.",
+    "validation": "Generate each card, then check every title and caption against the brief; test a single page, a spread, a foldout, an eight-page sequence and a book cover with spine.",
+    "evidencePresetIds": ["SP25-201", "SP25-202", "SP25-203"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]
