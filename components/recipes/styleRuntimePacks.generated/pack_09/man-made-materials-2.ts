@@ -8,27 +8,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Brushed Aluminum',
     category: '2. Man-Made Materials',
     negativePrompt:
-      'chrome, mirror, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, chrome, mirror, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Brushed Aluminum treats fabrication as visible style language: start from Metal surface, Fine lines, and Directional scratch, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+        'Brushed aluminum: satin metal with fine parallel brush lines and soft anisotropic highlights.',
       subject_treatment:
-        'Transform any prompt subject through Micro scratches: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is made of brushed aluminum with fine directional grain and machined edges.",
       color_and_tone:
-        "Use Silver Grey as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Cool silver-grey with soft white highlights, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Anisotropic define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Brushed Aluminum without hiding the prompt subject.',
-      texture_and_material:
-        'Render Fine lines through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Strip light producing stretched anisotropic highlights, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material: 'Satin aluminum with fine parallel brush lines and chamfered edges.',
       camera_and_composition:
-        'Compose around Directional scratch as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Modern, clean by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Precise, modern, cool and engineered, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Industrial, tech material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Metal surface; Micro scratches; Fine lines; Anisotropic; Directional scratch',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features:
+        'brushed satin aluminum; parallel brush lines; anisotropic highlight; machined edges',
       creative_brief:
-        "Route any subject through Brushed Aluminum as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Render the industrial poetry of brushed aluminum where microscopic scratches align into a directional grain that catches light anisotropically across a field of silver-grey. The surface should feel cool and precise, a choral arrangement of parallel lines marching in disciplined formation. This is the skin of precision engineering, the quiet face of contained complexity. Use Brushed Aluminum as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Brushed Aluminum as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -36,28 +36,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Gold Leaf',
     category: '2. Man-Made Materials',
     negativePrompt:
-      'solid gold bar, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, solid gold bar, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Gold Leaf treats fabrication as visible style language: start from Thin foil application, Wrinkled foil, and Flaking, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+        'Gold leaf: thin beaten gold applied over the target with visible leaf seams, crackle and burnish.',
       subject_treatment:
-        'Transform any prompt subject through Crinkles and overlaps: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
-      color_and_tone:
-        "Use Rich Gold as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is gilded with gold leaf showing leaf seams, crackle and burnished highlights.",
+      color_and_tone: 'Warm yellow gold with red bole showing through cracks.',
       lighting_and_shadow:
-        'Let Metallic reflection define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Gold Leaf without hiding the prompt subject.',
+        'Warm raking light for burnish and leaf edges, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Wrinkled foil through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Gold leaf squares with seams, crackle and burnish, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Flaking as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Expensive, fragile by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Sacred, precious, opulent and still, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Gilded, delicate material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features:
-        'Thin foil application; Crinkles and overlaps; Wrinkled foil; Metallic reflection; Flaking',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'gold leaf seams; crackle over red bole; burnished highlights',
       creative_brief:
-        "Route any subject through Gold Leaf as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Compose the fragile opulence of gold leaf applied in crinkled squares barely thicker than thought, where every wrinkle and overlap records the gilder's trembling hand in metallic memory. The surface should catch light like a held breath, areas of flat brilliance interrupted by the micro-topography of folded foil. Render the paradox of permanence made impossibly delicate. Use Gold Leaf as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gold Leaf as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -65,27 +63,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Copper Patina',
     category: '2. Man-Made Materials',
     negativePrompt:
-      'new penny, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, new penny, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Copper Patina treats fabrication as visible style language: start from Aged copper patina, Chalky oxidation, and Green stains, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Copper patina: aged copper with verdigris green bloom over bronze-brown metal.',
       subject_treatment:
-        'Transform any prompt subject through Drips: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is made of copper with verdigris patina in recesses and bright copper on worn edges.",
       color_and_tone:
-        "Use Verdigris (Teal/Green) as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Verdigris green, teal and warm copper orange, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Matte define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Copper Patina without hiding the prompt subject.',
-      texture_and_material:
-        'Render Chalky oxidation through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Soft overcast light, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material: 'Copper sheet with oxidized verdigris crust and worn bright edges.',
       camera_and_composition:
-        'Compose around Green stains as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Historic, weathered by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Aged, weathered, noble and calm, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Historic, oxidized material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Aged copper patina; Drips; Chalky oxidation; Matte; Green stains',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'verdigris patina; bright worn copper edges; teal and orange',
       creative_brief:
-        "Route any subject through Copper Patina as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Apply aged copper patina as time made visible: teal and green verdigris blooms, chalky mineral crust, vertical oxidation drips, and muted metallic undertone. If the input has metal, architecture, statue, object, or armor, age it directly; otherwise use copper corrosion as pigment, edge staining, and weathered surface logic without requiring rooftops or monuments.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Copper Patina as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -93,28 +89,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Carbon Fiber (Forged)',
     category: '2. Man-Made Materials',
     negativePrompt:
-      'woven pattern, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, woven pattern, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Carbon Fiber (Forged) treats fabrication as visible style language: start from Chopped fiber composite, Smooth but visual depth, and Random flakes, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Forged carbon fiber: marbled chopped-fiber composite under a glossy clear coat.',
       subject_treatment:
-        'Transform any prompt subject through Random flakes: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is molded from forged carbon with marbled black-grey fiber pattern under gloss.",
       color_and_tone:
-        "Use Black/Grey marble look as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Black and graphite marbling with glossy highlights, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Glossy clear coat define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Carbon Fiber (Forged) without hiding the prompt subject.',
-      texture_and_material:
-        'Render Smooth but visual depth through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Hard studio light for clear-coat reflections, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material: 'Forged carbon composite with marbled chopped fibers and clear coat.',
       camera_and_composition:
-        'Compose around Random flakes as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Fast, expensive by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'High-tech, sleek, strong and aggressive, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with High tech, performance material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features:
-        'Chopped fiber composite; Random flakes; Smooth but visual depth; Glossy clear coat; Random flakes',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'marbled forged carbon; glossy clear coat; graphite and black',
       creative_brief:
-        "Route any subject through Carbon Fiber (Forged) as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Render forged carbon fiber as performance material over the input: random black and grey flakes suspended in glossy resin, marble-like chaos, visual depth under clear coat, and engineered speed made solid. If vehicles, armor, tools, or tech exist, make them feel high-performance; otherwise apply chopped composite depth without requiring a supercar.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Carbon Fiber (Forged) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -122,27 +115,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Concrete (Raw)',
     category: '2. Man-Made Materials',
     negativePrompt:
-      'polished, painted, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, polished, painted, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Concrete (Raw) treats fabrication as visible style language: start from Construction wall, Porous, dusty, and Cracks, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+        'Raw concrete: board-formed or cast concrete with tie holes, air voids and grey mineral texture.',
       subject_treatment:
-        'Transform any prompt subject through Formwork holes: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is cast in raw concrete with formwork marks and air voids.",
       color_and_tone:
-        "Use Grey as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Cool grey concrete with darker water stains, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Matte define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Concrete (Raw) without hiding the prompt subject.',
-      texture_and_material:
-        'Render Porous, dusty through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Flat overcast light that reads texture, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material: 'Cast concrete with board marks, tie holes and pits.',
       camera_and_composition:
-        'Compose around Cracks as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Cold, urban by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Brutal, heavy, austere and monumental, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Brutalist, industrial material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Construction wall; Formwork holes; Porous, dusty; Matte; Cracks',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'board-formed concrete; tie holes; air voids; cool grey',
       creative_brief:
-        "Route any subject through Concrete (Raw) as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Summon the brutal honesty of raw concrete with its pinhole air bubbles and formwork tie-hole scars like a fossil record of the day it was poured. The surface must feel dusty and porous, grey as an overcast sky, heavy with the gravity of the built world. This is the face of function refusing to apologize, the unadorned truth of the urban. Use Concrete as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Concrete (Raw) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -150,27 +142,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Brick Wall (Aged)',
     category: '2. Man-Made Materials',
     negativePrompt:
-      'new, perfect, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, new, perfect, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Brick Wall (Aged) treats fabrication as visible style language: start from Old masonry, Rough clay, and Chipped corners, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+        'Aged brick: fired clay bricks in a running or Flemish bond, with worn edges and lime mortar.',
       subject_treatment:
-        'Transform any prompt subject through Mortar lines: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
-      color_and_tone:
-        "Use Red, Brown, White mortar as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is built from aged brick in a visible bond pattern with lime mortar joints.",
+      color_and_tone: 'Red, rust, brown and soot-darkened brick with pale mortar.',
       lighting_and_shadow:
-        'Let Rough define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Brick Wall (Aged) without hiding the prompt subject.',
-      texture_and_material:
-        'Render Rough clay through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Warm late sun on the brick face, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material: 'Fired clay bricks with chipped edges, efflorescence and mortar.',
       camera_and_composition:
-        'Compose around Chipped corners as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Solid, history by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Industrial, sturdy, historic and warm, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Urban, historic material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Old masonry; Mortar lines; Rough clay; Rough; Chipped corners',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'aged brick bond; lime mortar joints; chipped edges; efflorescence',
       creative_brief:
-        "Route any subject through Brick Wall (Aged) as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Capture the warm disorder of aged brick where every unit carries a unique blush of kiln fire and crumbling mortar maps the passage of decades between red clay bodies. The running bond pattern should feel like a woven tapestry of earth and fire, rough and uneven. Render the accumulated imperfection of walls that have learned to breathe through chipped corners and softened edges. Use Brick Wall as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Brick Wall (Aged) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -178,28 +168,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Asphalt (Wet)',
     category: '2. Man-Made Materials',
     negativePrompt:
-      'dry, desert, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, dry, desert, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Asphalt (Wet) treats fabrication as visible style language: start from Wet asphalt sheen, Grainy tar, and Puddles, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Wet asphalt: dark aggregate surface slick with water and mirror reflections.',
       subject_treatment:
-        'Transform any prompt subject through Slick grain and reflective streaks: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is coated in dark asphalt aggregate made glossy and reflective by water.",
       color_and_tone:
-        "Use Black, Grey as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Near-black with grey aggregate and reflected lights, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Reflection of lights define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Asphalt (Wet) without hiding the prompt subject.',
+        'Night light with reflections of lamps, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Grainy tar through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Asphalt aggregate with wet sheen and puddle reflections, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Puddles as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Urban, dark by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Urban, moody, nocturnal and slick, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Noir, reflective material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features:
-        'Wet asphalt sheen; Slick grain and reflective streaks; Grainy tar; Reflection of lights; Puddles',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'wet asphalt aggregate; mirror reflections; night sheen',
       creative_brief:
-        "Route any subject through Asphalt (Wet) as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Apply wet-asphalt noir to the input: black grain under a thin rainwater skin, reflective streaks, puddled distortion, and occasional neon-like color dissolving across rough tar. If road, city, or vehicle cues exist, intensify them; otherwise treat surfaces as dark urban mirrors without forcing road markings or street layout.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Asphalt (Wet) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -207,28 +195,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Plastic (Injection Molded)',
     category: '2. Man-Made Materials',
     negativePrompt:
-      'metal, wood, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, metal, wood, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Plastic (Injection Molded) treats fabrication as visible style language: start from Injection molded plastic, Smooth or orange peel, and Sink marks, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+        'Injection-molded plastic: smooth toy-like plastic with slight gloss, parting lines and rounded edges.',
       subject_treatment:
-        'Transform any prompt subject through Parting lines: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is molded from colored plastic with parting lines, sprue marks and rounded edges.",
       color_and_tone:
-        "Use Bright, saturated as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Saturated primary or pastel plastic colors, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Subsurface scattering (slight) define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Plastic (Injection Molded) without hiding the prompt subject.',
-      texture_and_material:
-        'Render Smooth or orange peel through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Bright soft studio light, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material: 'Smooth molded plastic with parting lines and slight gloss.',
       camera_and_composition:
-        'Compose around Sink marks as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Artificial, toy by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Playful, toy-like, clean and artificial, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Mass produced, cheap material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features:
-        'Injection molded plastic; Parting lines; Smooth or orange peel; Subsurface scattering (slight); Sink marks',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'molded plastic; parting lines; rounded edges; saturated color',
       creative_brief:
-        "Route any subject through Plastic (Injection Molded) as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Apply injection-molded plastic language to the input: saturated uniform color, faint parting lines, subtle sink marks, slight orange-peel texture, and edge translucency from shallow subsurface light. If toy, product, prop, or casing exists, reinforce manufacture; otherwise convert surfaces into artificial molded material without requiring a consumer product shot.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Plastic (Injection Molded) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -236,27 +222,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rubber (Tire)',
     category: '2. Man-Made Materials',
     negativePrompt:
-      'shiny plastic, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, tire object, shiny plastic, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Rubber (Tire) treats fabrication as visible style language: start from Tire-grade rubber tread, Grippy, nubby, and Tread pattern, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+        'Vulcanized rubber: matte black rubber with molded tread-like ridges and slight wear.',
       subject_treatment:
-        'Transform any prompt subject through Treads: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is made of matte black rubber with molded ridges and scuffs, without becoming a tire.",
       color_and_tone:
-        "Use Black as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Matte black and charcoal grey, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Matte define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Rubber (Tire) without hiding the prompt subject.',
-      texture_and_material:
-        'Render Grippy, nubby through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Soft light showing matte texture, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material: 'Vulcanized rubber with molded ridges, scuffs and mold lines.',
       camera_and_composition:
-        'Compose around Tread pattern as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Functional, dirty by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Industrial, tough, flexible and heavy, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Industrial, durable material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Tire-grade rubber tread; Treads; Grippy, nubby; Matte; Tread pattern',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'matte vulcanized rubber; molded ridges; scuffs',
       creative_brief:
-        "Route any subject through Rubber (Tire) as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Apply tire-grade rubber logic as functional patterning: matte black tackiness, raised tread ridges, cut valleys, water-channel geometry, and subtle sheen on worn edges. If wheel, vehicle, shoe, armor, or tool exists, make grip visible; otherwise use tread as industrial surface rhythm without requiring a full car tire.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rubber (Tire) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -264,27 +249,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Glass (Shattered)',
     category: '2. Man-Made Materials',
     negativePrompt:
-      'window, clean, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, window, clean, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Glass (Shattered) treats fabrication as visible style language: start from Broken window, Sharp shards, and Fragmented, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+        'Shattered glass: glass surfaces crazed with radial cracks and missing shards, held in place.',
       subject_treatment:
-        'Transform any prompt subject through Sharp cracks: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
-      color_and_tone:
-        "Use Clear, Green edge as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is made of glass that is cracked in radial spiderweb patterns, still holding its shape.",
+      color_and_tone: 'Clear glass with green edges and white fracture lines.',
       lighting_and_shadow:
-        'Let Refractive sparkles define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Glass (Shattered) without hiding the prompt subject.',
-      texture_and_material:
-        'Render Sharp shards through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Backlight catching the cracks, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material: 'Glass with radial fractures, spiderweb cracks and chipped edges.',
       camera_and_composition:
-        'Compose around Fragmented as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Dangerous, sudden by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Fragile, tense, dramatic and dangerous, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Destruction, accident material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Broken window; Sharp cracks; Sharp shards; Refractive sparkles; Fragmented',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'radial spiderweb cracks; chipped glass edges; backlit fractures',
       creative_brief:
-        "Route any subject through Glass (Shattered) as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Compose the frozen violence of shattered glass where radial cracks bloom from an impact center in a spiderweb of sharp light, green edges catching refractive glints like dangerous confetti. Each shard must retain its own angle of reflection, fragmenting the world behind it into a cubist mosaic. Capture the moment between integrity and collapse, transparent catastrophe arrested mid-breath. Use Glass as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glass (Shattered) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -292,27 +275,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Latex (Shiny)',
     category: '2. Man-Made Materials',
     negativePrompt:
-      'matte, cloth, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, explicit fetish content, matte, cloth, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Latex (Shiny) treats fabrication as visible style language: start from Tight rubber, Smooth, sticky, and Tight fit, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Shiny latex: stretched glossy rubber film with sharp specular streaks.',
       subject_treatment:
-        'Transform any prompt subject through Stretch lines: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is skinned in glossy stretched latex with tight specular streaks.",
       color_and_tone:
-        "Use Black or Red as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Black, red or colored latex with white highlights, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let High specularity define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Latex (Shiny) without hiding the prompt subject.',
+        'Strip lights drawing highlights along curves, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Smooth, sticky through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Glossy latex skin with stretch and tight reflections, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Tight fit as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Intense, sleek by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Sleek, provocative, strange and polished, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Sleek, high-specular material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Tight rubber; Stretch lines; Smooth, sticky; High specularity; Tight fit',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'glossy latex skin; specular streaks; stretched surface',
       creative_brief:
-        "Route any subject through Latex (Shiny) as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Compose shiny latex as a tight reflective surface treatment over the input: liquid specular highlights, black or red high-gloss tension, stretch lines following form, and a slick second-skin fit. If character, costume, or object exists, wrap it closely; otherwise use latex reflectivity and smoothness as abstract finish without requiring a body pose or genre scene.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Latex (Shiny) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -320,27 +302,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cardboard',
     category: '2. Man-Made Materials',
     negativePrompt:
-      'wood, plastic, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, wood, plastic, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Cardboard treats fabrication as visible style language: start from Shipping box, Paper pulp, and Creased, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+        'Cardboard: corrugated brown cardboard with exposed flutes, tape and crushed edges.',
       subject_treatment:
-        'Transform any prompt subject through Corrugation lines: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is built from corrugated cardboard with exposed flutes, tape joints and creases.",
       color_and_tone:
-        "Use Kraft brown as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Kraft brown, beige and grey tape, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Matte define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Cardboard without hiding the prompt subject.',
+        'Soft daylight, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Paper pulp through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Corrugated cardboard with flutes, creases and packing tape, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Creased as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Trash, storage by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Handmade, playful, humble and improvised, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Cheap, disposable material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Shipping box; Corrugation lines; Paper pulp; Matte; Creased',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'corrugated cardboard; exposed flutes; tape joints; creases',
       creative_brief:
-        "Route any subject through Cardboard as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Capture the humble architecture of corrugated cardboard where a hidden fluted layer creates ribs of structure beneath a kraft-paper skin of warm brown, edges softened by handling and corners creased with use. The surface should feel dry and fibrous, a material whose very appearance suggests disposability rendered permanent. Render the poetics of the temporary, the shipping box as inadvertent portrait. Use Cardboard as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cardboard as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -348,28 +330,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bubble Wrap',
     category: '2. Man-Made Materials',
     negativePrompt:
-      'flat plastic, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, flat plastic, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Bubble Wrap treats fabrication as visible style language: start from Packing material, Plastic, air filled, and Bubbles, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Bubble wrap: clear plastic sheet with rows of air cells wrapped over the target.',
       subject_treatment:
-        'Transform any prompt subject through Circles: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is wrapped in or made of clear bubble wrap with visible air cells.",
       color_and_tone:
-        "Use Clear plastic as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Clear with bright highlights on each bubble, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Highlights on bubbles define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Bubble Wrap without hiding the prompt subject.',
+        'Bright light making bubbles glint, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Plastic, air filled through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Bubble wrap with air cells, creases and tape, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Bubbles as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Protective, cheap by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Playful, protective, absurd and light, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Disposable, fun material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features:
-        'Packing material; Circles; Plastic, air filled; Highlights on bubbles; Bubbles',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'bubble wrap cells; glinting highlights; wrapped folds',
       creative_brief:
-        "Route any subject through Bubble Wrap as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Compose the playful geometry of bubble wrap where transparent plastic domes rise in neat grids, each one a pocket of trapped air awaiting release, highlights dancing across every bubble's crown like tiny lenses of protection. The clear plastic should catch light with a faint sheen that reveals the ordered army of hemispheres beneath. Capture the material of anticipation, joy molded in polyethylene. Use Bubble Wrap as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bubble Wrap as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -377,27 +357,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sequins',
     category: '2. Man-Made Materials',
     negativePrompt:
-      'matte fabric, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, matte fabric, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Sequins treats fabrication as visible style language: start from Disco dress, Scaly plastic, and Flipping, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+        'Sequins: overlapping sequins or paillettes covering the target and scattering light.',
       subject_treatment:
-        'Transform any prompt subject through Overlapping discs: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is covered edge to edge in overlapping sequins.",
       color_and_tone:
-        "Use Metallic, reversible as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Gold, silver, ruby or iridescent sequins, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Sparkle define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Sequins without hiding the prompt subject.',
+        'Point lights producing sparkle, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Scaly plastic through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Overlapping sequins with individual reflections, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Flipping as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Party, flashy by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Glamorous, festive, dazzling and loud, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Glam, cheap material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Disco dress; Overlapping discs; Scaly plastic; Sparkle; Flipping',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'overlapping sequins; scattered sparkle; point-light glitter',
       creative_brief:
-        "Route any subject through Sequins as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Compose the kinetic glitter of sequins overlapping like metallic scales, each disc a tiny mirror that flips between two worlds of color with every shift of light, creating a surface that refuses to be still. The scaly plastic should catch sparkle at a thousand points simultaneously, cheap and glamorous in equal measure. Capture the joy of unapologetic shine, fashion as optical event. Use Sequins as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sequins as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -405,28 +385,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cork Board',
     category: '2. Man-Made Materials',
     negativePrompt:
-      'wood grain, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, wood grain, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Cork Board treats fabrication as visible style language: start from Bulletin board, Compressed granules, and Pinhole, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Cork: granulated cork board with speckled texture and soft pinholes.',
       subject_treatment:
-        "Transform any prompt subject through Treat subjects through Cork Board's signature cues: Granules: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.",
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is made of granulated cork with speckled texture.",
       color_and_tone:
-        "Use Tan, Brown chips as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Warm tan, brown and dark speckles, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Matte define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Cork Board without hiding the prompt subject.',
+        'Soft warm light, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Compressed granules through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Granular cork with pinholes and compressed grains, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Pinhole as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Functional, dry by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Warm, light, natural and homely, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Office, school material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features:
-        "Bulletin board; Treat subjects through Cork Board's signature cues: Granules; Compressed granules; Matte; Pinhole",
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'granulated cork; speckled texture; pinholes',
       creative_brief:
-        "Route any subject through Cork Board as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Capture the granular texture of cork board where compressed flecks of bark create a surface of brown confetti held in quiet suspension, the pinholes of past notices dotting the field like a scattered constellation. The material should feel dry and forgiving, a surface that remembers every thumbtack that ever pierced it. Render the poetry of the bulletin, surface as archive of pinned intentions. Use Cork Board as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cork Board as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -434,27 +412,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Velcro',
     category: '2. Man-Made Materials',
     negativePrompt:
-      'smooth, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, smooth, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Velcro treats fabrication as visible style language: start from Hook and loop, Scratchy, and Rows of hooks, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+        'Hook-and-loop fastener: dense nylon hooks and loops covering the target in fuzzy and bristly zones.',
       subject_treatment:
-        'Transform any prompt subject through Tiny hooks: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is covered in hook-and-loop fabric panels, bristly hooks and fuzzy loops.",
       color_and_tone:
-        "Use Black as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Black, grey or bright nylon colors, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Plastic glint define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Velcro without hiding the prompt subject.',
-      texture_and_material:
-        'Render Scratchy through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Soft raking light for micro-texture, chosen to reveal how the material reflects, absorbs or transmits light.',
+      texture_and_material: 'Nylon hooks and loops with fuzzy and bristly zones.',
       camera_and_composition:
-        'Compose around Rows of hooks as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Functional by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Tactile, odd, practical and playful, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Utility, fastener material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Hook and loop; Tiny hooks; Scratchy; Plastic glint; Rows of hooks',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'hook-and-loop panels; bristly hooks; fuzzy loops',
       creative_brief:
-        "Route any subject through Velcro as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Compose the functional micro-landscape of hook-side Velcro where tiny plastic barbs stand in rows like a nylon forest awaiting its loop partner, each hook a mushroom-cap curve waiting to catch and hold. The surface should look scratchy even to the eye, catching plastic glints across the regimented geometry. Capture the beauty of the fastener, engineered grip designed at millimeter scale. Use Velcro as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Velcro as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -462,27 +439,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mercury (Liquid Metal)',
     category: '2. Man-Made Materials',
     negativePrompt:
-      'solid silver, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, solid silver, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Mercury (Liquid Metal) treats fabrication as visible style language: start from Toxic metal drops, Liquid metal, and Coalescing, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+        'Liquid mercury: mirror liquid metal that pools, beads and ripples over the target.',
       subject_treatment:
-        'Transform any prompt subject through Rounded blobs: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is made of liquid mirror metal that holds its form while rippling and beading.",
       color_and_tone:
-        "Use Chrome as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Chrome silver reflecting surroundings, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Mirror reflection define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Mercury (Liquid Metal) without hiding the prompt subject.',
+        'Environment reflections and hard highlights, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Liquid metal through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Liquid metal with ripples, beads and mirror reflection, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Coalescing as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Sci-fi, fluid by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Uncanny, fluid, futuristic and cold, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with T-1000, dangerous material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Toxic metal drops; Rounded blobs; Liquid metal; Mirror reflection; Coalescing',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'liquid mirror metal; ripples and beads; environment reflections',
       creative_brief:
-        "Route any subject through Mercury (Liquid Metal) as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Summon the alien fluidity of liquid mercury beading into chrome spheres of impossible surface tension, each drop a convex mirror reflecting a distorted world in silver curves. The material must feel both mesmerizing and toxic, beauty that carries the weight of danger in every perfectly rounded blob. Capture the aesthetics of the untouchable, metal that refuses to be solid. Use Mercury as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mercury (Liquid Metal) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -490,27 +467,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Polystyrene (Styrofoam)',
     category: '2. Man-Made Materials',
     negativePrompt:
-      'smooth plastic, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, smooth plastic, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Polystyrene (Styrofoam) treats fabrication as visible style language: start from Packing foam, Beaded, and Broken beads, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+        'Polystyrene foam: white expanded foam with visible beads, carved edges and crumbs.',
       subject_treatment:
-        'Transform any prompt subject through Beads: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is carved from white expanded polystyrene with bead texture and hot-wire cuts.",
       color_and_tone:
-        "Use White as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Bright white with soft grey shadows, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Subsurface scattering define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Polystyrene (Styrofoam) without hiding the prompt subject.',
+        'Soft even light, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Beaded through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Expanded foam beads, hot-wire cut faces and crumbs, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Broken beads as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Disposable, white by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Light, cheap, clean and temporary, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Cheap, packaging material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Packing foam; Beads; Beaded; Subsurface scattering; Broken beads',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'white expanded foam; bead texture; hot-wire cuts',
       creative_brief:
-        "Route any subject through Polystyrene (Styrofoam) as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Summon the cellular geometry of expanded polystyrene where fused white beads create a surface of dimpled spheres, each one a tiny void of trapped air, the subsurface scattering giving the material a ghostly translucence at the edges. Broken beads should reveal the internal cell structure like a cross-section of frozen foam. Capture the accidental sculpture of the disposable, packaging as industrial archaeology. Use Polystyrene as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Polystyrene (Styrofoam) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -518,27 +495,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Plywood',
     category: '2. Man-Made Materials',
     negativePrompt:
-      'solid wood, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, solid wood, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Plywood treats fabrication as visible style language: start from Construction sheet, Rotary cut grain, and Splinters, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Plywood: laminated veneer sheets with visible ply edges and wood grain faces.',
       subject_treatment:
-        'Transform any prompt subject through Layers on edge: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is built from plywood sheets with exposed layered edges.",
       color_and_tone:
-        "Use Yellow pine as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Birch cream, tan and darker glue lines, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Flat define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Plywood without hiding the prompt subject.',
+        'Soft daylight, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Rotary cut grain through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Plywood with layered edges, grain faces and screws, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Splinters as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Unfinished, work by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Constructive, modern, honest and handmade, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Construction, cheap material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Construction sheet; Layers on edge; Rotary cut grain; Flat; Splinters',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'plywood layered edges; birch faces; screw joints',
       creative_brief:
-        "Route any subject through Plywood as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Render the rotary-cut grain of construction plywood where the lathe has unrolled the log into a continuous ribbon of blonde pine, now layered into structural flatness with knots punctuating the surface like dark eyes. The edge should reveal the laminations, thin strata of wood bonded into a whole greater than its veneers. Capture the beauty of the provisional, wood made efficient. Use Plywood as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Plywood as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -546,27 +522,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'OSB Board',
     category: '2. Man-Made Materials',
     negativePrompt:
-      'plywood, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, plywood, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'OSB Board treats fabrication as visible style language: start from Chipboard, Compressed chips, and Random chips, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Oriented strand board: pressed wood flakes in a chaotic mosaic of strands.',
       subject_treatment:
-        'Transform any prompt subject through Wood chips: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is made of OSB with visible pressed wood strands.",
       color_and_tone:
-        "Use Tan, Brown as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Golden tan and brown flakes, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Rough define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal OSB Board without hiding the prompt subject.',
+        'Flat light for the strand pattern, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Compressed chips through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Pressed wood strands with resin and rough edges, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Random chips as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Industrial, cheap by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Raw, industrial, rough and practical, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Construction, rough material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Chipboard; Wood chips; Compressed chips; Rough; Random chips',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'pressed wood strands; OSB mosaic; rough edges',
       creative_brief:
-        "Route any subject through OSB Board as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Compose the chaotic mosaic of oriented strand board where random wood chips and flakes are compressed into a field of tan confetti under amber resin, every fragment a different shape locked into accidental harmony. The surface should feel rough and industrial, a texture of engineered expedience that wears its construction proudly. Capture the accidental beauty of the cheap, structure assembled from forest fragments. Use OSB Board as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies OSB Board as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -574,28 +549,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Linoleum Floor',
     category: '2. Man-Made Materials',
     negativePrompt:
-      'tile, wood, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, tile, wood, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Linoleum Floor treats fabrication as visible style language: start from Retro linoleum pattern, Smooth plastic, and Peeling corner, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Linoleum: smooth resilient sheet with marbled color flecks and slight sheen.',
       subject_treatment:
-        'Transform any prompt subject through Printed pattern: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is surfaced with marbled linoleum with seams.",
       color_and_tone:
-        "Use Beige, pattern as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Marbled beige, mint, rust or grey, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Waxy sheen define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Linoleum Floor without hiding the prompt subject.',
+        'Flat institutional light, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Smooth plastic through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Smooth linoleum with marbled flecks and seams, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Peeling corner as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Nostalgic, home by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Institutional, retro, clean and quiet, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Retro, cheap material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features:
-        'Retro linoleum pattern; Printed pattern; Smooth plastic; Waxy sheen; Peeling corner',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'marbled linoleum; seams; soft sheen',
       creative_brief:
-        "Route any subject through Linoleum Floor as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Apply retro linoleum as printed material system: waxy beige surface, repeating mid-century motifs, smooth plastic tiredness, slight peeling corners, and nostalgic cheapness preserved in vinyl. If floor, interior, prop, or product exists, let pattern sit on it; otherwise use linoleum repetition and worn sheen as graphic surface treatment without requiring a kitchen.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Linoleum Floor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -603,27 +576,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Chain Link Fence',
     category: '2. Man-Made Materials',
     negativePrompt:
-      'wood fence, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, wood fence, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Chain Link Fence treats fabrication as visible style language: start from Metal diamond mesh, Woven wire, and Bent, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      aesthetic: "Chain link: woven steel wire diamond mesh forming the target's surfaces.",
       subject_treatment:
-        'Transform any prompt subject through Wire diamonds: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is formed from galvanized chain-link diamond mesh, keeping the woven pattern.",
       color_and_tone:
-        "Use Galvanized Grey as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Galvanized silver-grey, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Metallic define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Chain Link Fence without hiding the prompt subject.',
+        'Backlight making the mesh graphic, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Woven wire through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Woven galvanized wire in diamond mesh, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Bent as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Restricted, urban by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Urban, restrictive, industrial and hard, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Urban, barrier material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Metal diamond mesh; Wire diamonds; Woven wire; Metallic; Bent',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'chain-link diamond mesh; galvanized wire; backlit pattern',
       creative_brief:
-        "Route any subject through Chain Link Fence as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Compose the industrial grid of galvanized chain link where woven wire diamonds repeat into infinity, a barrier you can see through that separates without concealing, each intersection a knot of exclusion. The metallic surface should catch light in dull silver repetitions, bending where impact has shaped the mesh into memory. Capture the beauty of the permeable boundary, exclusion made transparent. Use Chain Link Fence as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chain Link Fence as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -631,27 +603,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Barbed Wire',
     category: '2. Man-Made Materials',
     negativePrompt:
-      'smooth wire, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, smooth wire, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Barbed Wire treats fabrication as visible style language: start from Fencing wire, Sharp, and Coiled, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      aesthetic: "Barbed wire: twisted wire with barbs wound into the target's shape.",
       subject_treatment:
-        'Transform any prompt subject through Twisted wire + barbs: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is formed from coiled twisted barbed wire.",
       color_and_tone:
-        "Use Rusty metal as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Rusty grey and brown steel, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Sharp highlights define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Barbed Wire without hiding the prompt subject.',
+        'Low hard light with thin shadows, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Sharp through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Twisted steel wire with barbs and rust, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Coiled as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Dangerous, forbidden by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Harsh, threatening, painful and stark, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Prison, war material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Fencing wire; Twisted wire + barbs; Sharp; Sharp highlights; Coiled',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'twisted barbed wire; barbs; rust',
       creative_brief:
-        "Route any subject through Barbed Wire as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Render the hostile geometry of barbed wire where twisted strands spiral around a core line, sharpened barbs bristling at regular intervals like a metal vine bred for pain, rust painting the surface in oranges of exposure. Each barb should catch a sharp highlight, a glint of warning written in steel along the coil. Capture the aesthetics of the forbidden, a line drawn in wire and consequence. Use Barbed Wire as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Barbed Wire as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -659,27 +630,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Solar Panel',
     category: '2. Man-Made Materials',
     negativePrompt:
-      'window, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, window, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Solar Panel treats fabrication as visible style language: start from Photovoltaic cell, Glass grid, and Grid, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Solar panel: photovoltaic cells with blue-black grid lines and glass surface.',
       subject_treatment:
-        'Transform any prompt subject through Grid lines: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is surfaced with solar cells in a grid under glass.",
       color_and_tone:
-        "Use Dark Blue/Black as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Deep blue-black cells with silver busbars, kept on the material while the rest of the scene keeps its own palette.',
       lighting_and_shadow:
-        'Let Anti-reflective define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Solar Panel without hiding the prompt subject.',
+        'Sunlight reflecting on the glass, chosen to reveal how the material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Glass grid through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Photovoltaic cells, busbars and glass, at a believable physical scale relative to the target.',
       camera_and_composition:
-        'Compose around Grid as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.',
       atmosphere_and_mood:
-        "Keep the mood Modern, eco by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Technological, clean, efficient and modern, carried by the material itself rather than by added props.',
       rendering_and_quality:
-        'Finish with Tech, green energy material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Photovoltaic cell; Grid lines; Glass grid; Anti-reflective; Grid',
+        'Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.',
+      key_features: 'solar cell grid; silver busbars; blue-black glass',
       creative_brief:
-        "Route any subject through Solar Panel as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Summon the technological lattice of photovoltaic cells where a grid of dark blue-black glass rectangles maps the surface into modules of silent light harvesting, the anti-reflective coating creating depth that absorbs rather than returns the gaze. The thin grid lines should trace a faint geometry of efficiency across the dark field. Capture the beauty of energy infrastructure, the quiet face of the electric future. Use Solar Panel as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Solar Panel as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

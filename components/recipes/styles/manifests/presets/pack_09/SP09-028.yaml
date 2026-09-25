@@ -3,7 +3,7 @@ id: SP09-028
 packId: pack_09
 name: Glass (Shattered)
 category: 2. Man-Made Materials
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,62 +12,39 @@ tags:
   - texture-and-materiality
   - man-made-materials
 visualDna:
-  aesthetic: >-
-    Glass (Shattered) treats fabrication as visible style language: start from Broken window, Sharp
-    shards, and Fragmented, then turn manufacturing process, tooling marks, seams, tolerances, and
-    industrial material behavior into portable surface behavior rather than a literal material
-    sample.
-  subject_treatment: >-
-    Transform any prompt subject through Sharp cracks: preserve identity and pose while letting
-    forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge
-    profile, surface breakup, thickness, contact marks, and detail scale.
-  color_and_tone: >-
-    Use Clear, Green edge as the material palette, with controlled value separation, local color
-    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
-    texture.
-  lighting_and_shadow: >-
-    Let Refractive sparkles define the light response: highlights, occlusion, translucency, specular
-    scatter, matte falloff, or rim behavior should reveal Glass (Shattered) without hiding the
-    prompt subject.
-  texture_and_material: >-
-    Render Sharp shards through constructed regularity, stress points, joins, molded edges, and
-    process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface
-    tension coherent across the whole image.
-  camera_and_composition: >-
-    Compose around Fragmented as reusable material rhythm: macro-friendly for texture tasks, but
-    able to wrap objects, figures, environments, and props without forcing one sample view.
-  atmosphere_and_mood: >-
-    Keep the mood Dangerous, sudden by using use, fabrication, utility, and cultural material
-    association; the material should color the scene's feeling while preserving the user's requested
-    subject and setting.
-  rendering_and_quality: >-
-    Finish with Destruction, accident material clarity: physically coherent reflectance, clean
-    contact detail, controlled micro-texture, readable silhouette behavior, and no noisy
-    stock-texture overlay.
-  key_features: Broken window; Sharp cracks; Sharp shards; Refractive sparkles; Fragmented
-  creative_brief: >-
-    Route any subject through Glass (Shattered) as a transferable man-made material visual system
-    while preserving the prompt's subject, action, and setting. Compose the frozen violence of
-    shattered glass where radial cracks bloom from an impact center in a spiderweb of sharp light,
-    green edges catching refractive glints like dangerous confetti. Each shard must retain its own
-    angle of reflection, fragmenting the world behind it into a cubist mosaic. Capture the moment
-    between integrity and collapse, transparent catastrophe arrested mid-breath. Use Glass as
-    portable surface/render behavior over any input: map its texture, light response, edge wear,
-    color chemistry, and tactile rhythm onto the subject instead of requiring a literal material
-    sample, macro tile, wall, landscape, source object, or scene where the material naturally
-    appears.
+  aesthetic: 'Shattered glass: glass surfaces crazed with radial cracks and missing shards, held in place.'
+  subject_treatment: "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is made of glass that is cracked in radial spiderweb patterns, still holding its shape."
+  color_and_tone: Clear glass with green edges and white fracture lines.
+  lighting_and_shadow: Backlight catching the cracks, chosen to reveal how the material reflects, absorbs or transmits light.
+  texture_and_material: Glass with radial fractures, spiderweb cracks and chipped edges.
+  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.
+  atmosphere_and_mood: Fragile, tense, dramatic and dangerous, carried by the material itself rather than by added props.
+  rendering_and_quality: Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.
+  key_features: radial spiderweb cracks; chipped glass edges; backlit fractures
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glass (Shattered) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - material applied to the background instead of the target
+  - unrequested sample object or habitat
+  - readable text
+  - logo
+  - muddy noisy texture
+  - replacing the target with the source product
   - window
   - clean
   - wrong material
   - generic stock texture
   - muddy noise
   - watermark
-  - readable text
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-028.webp
 attributes:
-  negativePrompt: window, clean, wrong material, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, window, clean, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

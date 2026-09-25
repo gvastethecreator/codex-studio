@@ -3,7 +3,7 @@ id: SP09-042
 packId: pack_09
 name: Bubble Wrap
 category: 2. Man-Made Materials
-version: 1
+version: 2
 supportedTasks:
   - texture_generate
   - image_generate
@@ -13,61 +13,38 @@ tags:
   - texture-and-materiality
   - man-made-materials
 visualDna:
-  aesthetic: >-
-    Bubble Wrap treats fabrication as visible style language: start from Packing material, Plastic,
-    air filled, and Bubbles, then turn manufacturing process, tooling marks, seams, tolerances, and
-    industrial material behavior into portable surface behavior rather than a literal material
-    sample.
-  subject_treatment: >-
-    Transform any prompt subject through Circles: preserve identity and pose while letting forms
-    carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile,
-    surface breakup, thickness, contact marks, and detail scale.
-  color_and_tone: >-
-    Use Clear plastic as the material palette, with controlled value separation, local color
-    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
-    texture.
-  lighting_and_shadow: >-
-    Let Highlights on bubbles define the light response: highlights, occlusion, translucency,
-    specular scatter, matte falloff, or rim behavior should reveal Bubble Wrap without hiding the
-    prompt subject.
-  texture_and_material: >-
-    Render Plastic, air filled through constructed regularity, stress points, joins, molded edges,
-    and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or
-    surface tension coherent across the whole image.
-  camera_and_composition: >-
-    Compose around Bubbles as reusable material rhythm: macro-friendly for texture tasks, but able
-    to wrap objects, figures, environments, and props without forcing one sample view.
-  atmosphere_and_mood: >-
-    Keep the mood Protective, cheap by using use, fabrication, utility, and cultural material
-    association; the material should color the scene's feeling while preserving the user's requested
-    subject and setting.
-  rendering_and_quality: >-
-    Finish with Disposable, fun material clarity: physically coherent reflectance, clean contact
-    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
-    overlay.
-  key_features: Packing material; Circles; Plastic, air filled; Highlights on bubbles; Bubbles
-  creative_brief: >-
-    Route any subject through Bubble Wrap as a transferable man-made material visual system while
-    preserving the prompt's subject, action, and setting. Compose the playful geometry of bubble
-    wrap where transparent plastic domes rise in neat grids, each one a pocket of trapped air
-    awaiting release, highlights dancing across every bubble's crown like tiny lenses of protection.
-    The clear plastic should catch light with a faint sheen that reveals the ordered army of
-    hemispheres beneath. Capture the material of anticipation, joy molded in polyethylene. Use
-    Bubble Wrap as portable surface/render behavior over any input: map its texture, light response,
-    edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal
-    material sample, macro tile, wall, landscape, source object, or scene where the material
-    naturally appears.
+  aesthetic: 'Bubble wrap: clear plastic sheet with rows of air cells wrapped over the target.'
+  subject_treatment: "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is wrapped in or made of clear bubble wrap with visible air cells."
+  color_and_tone: Clear with bright highlights on each bubble, kept on the material while the rest of the scene keeps its own palette.
+  lighting_and_shadow: Bright light making bubbles glint, chosen to reveal how the material reflects, absorbs or transmits light.
+  texture_and_material: Bubble wrap with air cells, creases and tape, at a believable physical scale relative to the target.
+  camera_and_composition: Keep the prompt framing, but make the material surface large and sharp enough to read its grain, pores or structure at card size.
+  atmosphere_and_mood: Playful, protective, absurd and light, carried by the material itself rather than by added props.
+  rendering_and_quality: Photoreal material rendering with correct micro-detail, edges and light response; no smeared or noisy surfaces.
+  key_features: bubble wrap cells; glinting highlights; wrapped folds
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bubble Wrap as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - material applied to the background instead of the target
+  - unrequested sample object or habitat
+  - readable text
+  - logo
+  - muddy noisy texture
+  - replacing the target with the source product
   - flat plastic
   - wrong material
   - generic stock texture
   - muddy noise
   - watermark
-  - readable text
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-042.webp
 attributes:
-  negativePrompt: flat plastic, wrong material, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, flat plastic, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality
