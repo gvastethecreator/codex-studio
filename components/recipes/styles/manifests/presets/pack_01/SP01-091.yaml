@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP01-091
+packId: pack_01
+name: Horror Underlight
+styleAnchors:
+  - Horror Underlight
+  - uplighting from below
+  - light from below
+displayName: Horror Underlight
+category: 2. Lighting Techniques
+domain: uplighting from below
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - lighting-techniques
+  - underlighting
+  - horror-light
+  - lighting
+visualDna:
+  aesthetic: 'Horror underlighting: a single source from below the face or subject, inverting natural shadows so features look wrong and menacing.'
+  subject_treatment: Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.
+  color_and_tone: Cold green, sickly yellow or fire-orange from below; everything above falls into darkness.
+  lighting_and_shadow: 'Low source pointing upward: shadows climb above brows and nose, bright chin and nostrils, dark eye sockets.'
+  texture_and_material: Skin, teeth, cobwebs and wet surfaces catching upward light.
+  camera_and_composition: Keep requested framing; the light must visibly come from below.
+  atmosphere_and_mood: Uncanny, menacing, and theatrical.
+  rendering_and_quality: Clean darkness above, crisp lit planes below.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Horror Underlight as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: light from below; inverted shadows; dark eye sockets; cold or fire tint; menacing
+avoidRules:
+  - generic stock-photo face
+  - celebrity likeness
+  - light that does not match the named technique
+  - changing the requested setting
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: lighting-techniques
+  categoryName: 2. Lighting Techniques
+  tags:
+    - photography-and-realism
+    - lighting-techniques
+    - underlighting
+    - horror-light
+    - lighting
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: uplighting from below

@@ -3,7 +3,7 @@
     {
       "id": "pack_01",
       "name": "Photography & Realism",
-      "presetCount": 89
+      "presetCount": 94
     }
   ],
   "presets": [
@@ -442,6 +442,80 @@
       "tags": ["photography-and-realism", "lighting-techniques"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp01-045 light painting 2. lighting techniques light studies pack_01 photography & realism lighting-techniques photography-and-realism lighting-techniques"
+    },
+    {
+      "id": "SP01-090",
+      "name": "Dappled Leaf Light",
+      "styleAnchors": ["Dappled Leaf Light", "dappled canopy light", "leaf-filtered sun spots"],
+      "ref": "pack_01/SP01-090.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "lighting-techniques",
+      "categoryName": "2. Lighting Techniques",
+      "domain": "dappled canopy light",
+      "tags": ["photography-and-realism", "lighting-techniques", "dappled-canopy-light"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-090 dappled leaf light dappled canopy light leaf-filtered sun spots 2. lighting techniques light studies dappled canopy light pack_01 photography & realism lighting-techniques photography-and-realism lighting-techniques dappled-canopy-light"
+    },
+    {
+      "id": "SP01-091",
+      "name": "Horror Underlight",
+      "styleAnchors": ["Horror Underlight", "uplighting from below", "light from below"],
+      "ref": "pack_01/SP01-091.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "lighting-techniques",
+      "categoryName": "2. Lighting Techniques",
+      "domain": "uplighting from below",
+      "tags": ["photography-and-realism", "lighting-techniques", "uplighting-from-below"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-091 horror underlight uplighting from below light from below 2. lighting techniques light studies uplighting from below pack_01 photography & realism lighting-techniques photography-and-realism lighting-techniques uplighting-from-below"
+    },
+    {
+      "id": "SP01-092",
+      "name": "Theatrical Spotlight",
+      "styleAnchors": ["Theatrical Spotlight", "stage follow spot", "circular follow spot"],
+      "ref": "pack_01/SP01-092.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "lighting-techniques",
+      "categoryName": "2. Lighting Techniques",
+      "domain": "stage follow spot",
+      "tags": ["photography-and-realism", "lighting-techniques", "stage-follow-spot"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-092 theatrical spotlight stage follow spot circular follow spot 2. lighting techniques light studies stage follow spot pack_01 photography & realism lighting-techniques photography-and-realism lighting-techniques stage-follow-spot"
+    },
+    {
+      "id": "SP01-093",
+      "name": "Moonlight Night",
+      "styleAnchors": ["Moonlight Night", "moonlit night light", "silver-blue high source"],
+      "ref": "pack_01/SP01-093.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "lighting-techniques",
+      "categoryName": "2. Lighting Techniques",
+      "domain": "moonlit night light",
+      "tags": ["photography-and-realism", "lighting-techniques", "moonlit-night-light"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-093 moonlight night moonlit night light silver-blue high source 2. lighting techniques light studies moonlit night light pack_01 photography & realism lighting-techniques photography-and-realism lighting-techniques moonlit-night-light"
+    },
+    {
+      "id": "SP01-094",
+      "name": "Lightning Flash",
+      "styleAnchors": [
+        "Lightning Flash",
+        "lightning strike illumination",
+        "blue-white strike light"
+      ],
+      "ref": "pack_01/SP01-094.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "lighting-techniques",
+      "categoryName": "2. Lighting Techniques",
+      "domain": "lightning strike illumination",
+      "tags": ["photography-and-realism", "lighting-techniques", "lightning-strike-illumination"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-094 lightning flash lightning strike illumination blue-white strike light 2. lighting techniques light studies lightning strike illumination pack_01 photography & realism lighting-techniques photography-and-realism lighting-techniques lightning-strike-illumination"
     },
     {
       "id": "SP01-011",
@@ -1092,5 +1166,5 @@
       "searchableText": "sp01-077 medical photography 7. technical and specialist imaging technical capture pack_01 photography & realism technical-and-specialist-imaging photography-and-realism technical-and-specialist-imaging"
     }
   ],
-  "totalPresetCount": 89
+  "totalPresetCount": 94
 }

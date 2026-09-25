@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP01-094
+packId: pack_01
+name: Lightning Flash
+styleAnchors:
+  - Lightning Flash
+  - lightning strike illumination
+  - blue-white strike light
+displayName: Lightning Flash
+category: 2. Lighting Techniques
+domain: lightning strike illumination
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - lighting-techniques
+  - lightning
+  - storm-light
+  - lighting
+visualDna:
+  aesthetic: 'Lightning flash: an instant of blinding blue-white light from a strike, revealing the scene in stark relief against a dark storm.'
+  subject_treatment: Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.
+  color_and_tone: Violet-white flash, cold blue shadows, dark storm clouds, rain streaks lit white.
+  lighting_and_shadow: Single overwhelming source from the sky, hard shadows thrown all at once, sharp rim light on wet edges.
+  texture_and_material: Rain drops, wet stone, soaked cloth and metal flashing bright.
+  camera_and_composition: Keep requested framing; show the bolt or its reflection when the sky is in frame.
+  atmosphere_and_mood: Violent, awe-struck, and ominous.
+  rendering_and_quality: Crisp frozen rain, clean highlights, deep storm darkness.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lightning Flash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: blue-white strike light; frozen rain; hard instant shadows; storm darkness; visible bolt
+avoidRules:
+  - generic stock-photo face
+  - celebrity likeness
+  - light that does not match the named technique
+  - changing the requested setting
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: lighting-techniques
+  categoryName: 2. Lighting Techniques
+  tags:
+    - photography-and-realism
+    - lighting-techniques
+    - lightning
+    - storm-light
+    - lighting
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: lightning strike illumination

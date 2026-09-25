@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP01-090
+packId: pack_01
+name: Dappled Leaf Light
+styleAnchors:
+  - Dappled Leaf Light
+  - dappled canopy light
+  - leaf-filtered sun spots
+displayName: Dappled Leaf Light
+category: 2. Lighting Techniques
+domain: dappled canopy light
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - lighting-techniques
+  - dappled-light
+  - natural-light
+  - lighting
+visualDna:
+  aesthetic: 'Dappled canopy light: sun filtered through leaves scattering bright coin-shaped patches across the subject and ground.'
+  subject_treatment: Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.
+  color_and_tone: Warm sunlit patches with cool green-tinted shade between them.
+  lighting_and_shadow: Hard sun broken by foliage into many small soft-edged spots; the subject moves between light and shade.
+  texture_and_material: Leaf shadows patterning skin, fabric and stone; glowing translucent leaves overhead.
+  camera_and_composition: Keep requested framing; the dapple pattern must fall across the main subject.
+  atmosphere_and_mood: Peaceful, summery, and dreamlike.
+  rendering_and_quality: Natural contrast with bright spots held, not clipped.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dappled Leaf Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: leaf-filtered sun spots; green shade; dapple on subject; translucent leaves; summer calm
+avoidRules:
+  - generic stock-photo face
+  - celebrity likeness
+  - light that does not match the named technique
+  - changing the requested setting
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: lighting-techniques
+  categoryName: 2. Lighting Techniques
+  tags:
+    - photography-and-realism
+    - lighting-techniques
+    - dappled-light
+    - natural-light
+    - lighting
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: dappled canopy light

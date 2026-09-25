@@ -3,7 +3,7 @@ id: SP01-039
 packId: pack_01
 name: Candlelight
 category: 2. Lighting Techniques
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,51 +12,21 @@ tags:
   - photography-and-realism
   - lighting-techniques
 visualDna:
-  aesthetic: >-
-    Candlelight acts as a transferable photographic style router: begin from Lit by fire, Warm glow,
-    and lighting-first photographic system where the preset is defined by source placement, exposure
-    behavior, shadow design, and light color, then apply the photographic behavior to prompt X
-    instead of recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through Soft flickering; preserve the prompt subject while letting
-    light carve silhouette, volume, specular response, motion, and separation, keeping the original
-    subject, pose, species, object, or environment legible.
-  color_and_tone: >-
-    Grade with Deep Orange, Black; treat color as a consequence of source temperature, gel choice,
-    exposure rolloff, neon spill, flame warmth, or low-light sensor response, with value separation
-    and white balance choices that feel captured in-camera rather than painted over.
-  lighting_and_shadow: >-
-    Use Low, warm point source; make source direction, softness, beam width, bounce, haze,
-    catchlight, or motion trail legible enough to be the main style cue, preserving believable
-    exposure, shadow density, highlight rolloff, and source motivation.
-  texture_and_material: >-
-    Render Soft shadows; show how surfaces react to the light through rim edges, glossy kick, matte
-    falloff, fog particles, grain, or illuminated dust, avoiding both waxy smoothing and noisy
-    texture overlays that hide the prompt content.
-  camera_and_composition: >-
-    Compose through Candlelight source-visible light design, intentional shadow shape, controlled
-    exposure, and readable illumination behavior; compose to reveal the light event through
-    silhouettes, negative space, beam paths, frontal flash flattening, or long-exposure gesture,
-    with lens distance, depth, timing, and focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Romantic, secret; derive mood from theatrical control, nocturnal pressure, warmth,
-    mystery, kinetic exposure, or graphic shadow tension, so the preset changes interpretation
-    without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Intimate, historic; finish with photographic exposure discipline, controlled
-    highlights, clean shadow structure, and no random glow pasted over the image, high-resolution
-    photographic detail, and disciplined denoise without losing natural grain where the preset needs
-    it.
-  key_features: >-
-    Lit by fire; Warm glow; Deep Orange, Black; Low, warm point source; Candlelight source-visible
-    light design, intentional shadow shape, controlled exposure, and readable illumination behavior
-  creative_brief: >-
-    Apply Candlelight as a photographic preset over prompt X: preserve the user's requested subject,
-    then route Lit by fire, Deep Orange, Black, Low, warm point source, Soft shadows, and
-    Candlelight source-visible light design, intentional shadow shape, controlled exposure, and
-    readable illumination behavior through optics, exposure, palette, surface response, timing, and
-    finish without requiring the card image's original subject.
+  aesthetic: "Candlelight: small warm flames as the only source, falling off within an arm's length into velvety darkness."
+  subject_treatment: Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.
+  color_and_tone: Deep orange and amber near the flame, rapid fall to brown-black; very low color temperature.
+  lighting_and_shadow: Low point sources close to the subject, strong inverse-square falloff, flickering soft shadows, bright specks in eyes.
+  texture_and_material: Wax, glass, skin and fabric glowing warmly; smoke threads visible.
+  camera_and_composition: Keep requested framing; place at least one flame visible or clearly motivating the light.
+  atmosphere_and_mood: Intimate, secretive, hushed, and old-world.
+  rendering_and_quality: Clean low-light exposure with rich blacks, no gray noise.
+  key_features: flame-only light; steep falloff; amber glow; velvety black; visible candle
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Candlelight as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - generic stock-photo face
+  - celebrity likeness
+  - light that does not match the named technique
+  - changing the requested setting
   - electric light
   - blue
   - illustration
@@ -77,13 +47,17 @@ avoidRules:
   - muddy darkness
   - blown highlight wash
   - no light source logic
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-039.webp
 attributes:
-  negativePrompt: >-
-    electric light, blue, illustration, painting, drawing, 3d render, cartoon, anime, sketch,
-    synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat
-    lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic
+  negativePrompt: generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, electric light, blue, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

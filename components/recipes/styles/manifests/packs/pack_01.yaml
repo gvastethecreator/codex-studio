@@ -46,6 +46,11 @@ categories:
       - pack_01/SP01-043.yaml
       - pack_01/SP01-044.yaml
       - pack_01/SP01-045.yaml
+      - pack_01/SP01-090.yaml
+      - pack_01/SP01-091.yaml
+      - pack_01/SP01-092.yaml
+      - pack_01/SP01-093.yaml
+      - pack_01/SP01-094.yaml
   - id: film-and-analog-process
     name: 3. Film And Analog Process
     presetRefs:
@@ -151,6 +156,11 @@ presetRefs:
   - pack_01/SP01-043.yaml
   - pack_01/SP01-044.yaml
   - pack_01/SP01-045.yaml
+  - pack_01/SP01-090.yaml
+  - pack_01/SP01-091.yaml
+  - pack_01/SP01-092.yaml
+  - pack_01/SP01-093.yaml
+  - pack_01/SP01-094.yaml
   - pack_01/SP01-011.yaml
   - pack_01/SP01-012.yaml
   - pack_01/SP01-013.yaml

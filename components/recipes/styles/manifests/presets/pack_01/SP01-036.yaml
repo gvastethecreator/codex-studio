@@ -3,7 +3,7 @@ id: SP01-036
 packId: pack_01
 name: Split Lighting
 category: 2. Lighting Techniques
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,47 +12,21 @@ tags:
   - photography-and-realism
   - lighting-techniques
 visualDna:
-  aesthetic: >-
-    Split Lighting acts as a transferable photographic style router: begin from Half-lit split
-    contrast, Half dark, and lighting-first photographic system where the preset is defined by
-    source placement, exposure behavior, shadow design, and light color, then apply the photographic
-    behavior to prompt X instead of recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through Sharp transition; preserve the prompt subject while letting
-    light carve silhouette, volume, specular response, motion, and separation, keeping the original
-    subject, pose, species, object, or environment legible.
-  color_and_tone: >-
-    Grade with High contrast; treat color as a consequence of source temperature, gel choice,
-    exposure rolloff, neon spill, flame warmth, or low-light sensor response, with value separation
-    and white balance choices that feel captured in-camera rather than painted over.
-  lighting_and_shadow: >-
-    Use 90 degree side light; make source direction, softness, beam width, bounce, haze, catchlight,
-    or motion trail legible enough to be the main style cue, preserving believable exposure, shadow
-    density, highlight rolloff, and source motivation.
-  texture_and_material: >-
-    Render Hard lateral contrast; show how surfaces react to the light through rim edges, glossy
-    kick, matte falloff, fog particles, grain, or illuminated dust, avoiding both waxy smoothing and
-    noisy texture overlays that hide the prompt content.
-  camera_and_composition: >-
-    Compose through Hidden side; compose to reveal the light event through silhouettes, negative
-    space, beam paths, frontal flash flattening, or long-exposure gesture, with lens distance,
-    depth, timing, and focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Conflict, mystery; derive mood from theatrical control, nocturnal pressure,
-    warmth, mystery, kinetic exposure, or graphic shadow tension, so the preset changes
-    interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Dramatic side-light realism; finish with photographic exposure discipline,
-    controlled highlights, clean shadow structure, and no random glow pasted over the image,
-    high-resolution photographic detail, and disciplined denoise without losing natural grain where
-    the preset needs it.
-  key_features: Half-lit split contrast; Half dark; High contrast; 90 degree side light; Hidden side
-  creative_brief: >-
-    Apply Split Lighting as a photographic preset over prompt X: preserve the user's requested
-    subject, then route Half-lit split contrast, High contrast, 90 degree side light, Hard lateral
-    contrast, and Hidden side through optics, exposure, palette, surface response, timing, and
-    finish without requiring the card image's original subject.
+  aesthetic: 'Split lighting: a hard source at 90 degrees dividing the subject exactly in half — one side lit, one side in darkness.'
+  subject_treatment: Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.
+  color_and_tone: High contrast, restrained color, the dark half near black.
+  lighting_and_shadow: Side key perpendicular to the camera axis, no fill, a clean vertical shadow line down the nose or object center.
+  texture_and_material: Texture exaggerated on the lit half by grazing light.
+  camera_and_composition: Keep requested framing; face or object frontal enough that the half-and-half division is obvious.
+  atmosphere_and_mood: Dual, conflicted, dramatic, and mysterious.
+  rendering_and_quality: Crisp division line with detailed highlights and clean blacks.
+  key_features: 90-degree side key; half lit half dark; vertical shadow line; no fill; grazing texture
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Split Lighting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - generic stock-photo face
+  - celebrity likeness
+  - light that does not match the named technique
+  - changing the requested setting
   - flat
   - fill light
   - illustration
@@ -73,13 +47,17 @@ avoidRules:
   - muddy darkness
   - blown highlight wash
   - no light source logic
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-036.webp
 attributes:
-  negativePrompt: >-
-    flat, fill light, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic
-    CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random
-    glow overlay, muddy darkness, blown highlight wash, no light source logic
+  negativePrompt: generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, flat, fill light, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

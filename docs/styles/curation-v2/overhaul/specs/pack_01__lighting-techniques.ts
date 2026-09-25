@@ -41,8 +41,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Photograph of an adult shepherd leading a flock of long-horned sheep down a rocky mountain track at golden hour, low sun behind them turning the dust and fleece into glowing amber rims, long shadows stretching toward the lens. No text or logo.',
-        "Photograph of an adult knight in weathered plate kneeling to drink at a stream, the golden-hour sun behind the trees making the water spray and horse's breath glow, lavender shadows in the forest. No text or logo.",
-        'Photograph of an old adult fisherman mending a net on a wooden jetty at golden hour, sun almost touching the sea, every knot of the net rimmed in gold. No text or logo.',
+        'Photograph of an adult vintner lifting a wicker basket of dark grapes between vineyard rows at golden hour, the low sun behind her turning grape skins, vine leaves and loose hair translucent amber, lavender shadows between the rows. No text or logo.',
+        'Photograph of an old adult ropemaker walking backward along a harbor quay twisting long hemp strands, the sun almost touching the sea behind him, every loose fiber rimmed in gold and his shadow stretching down the stones. No text or logo.',
       ],
     },
     'SP01-032': {
@@ -161,7 +161,7 @@ const spec: Spec = {
       briefs: [
         'Split-lit photograph of an adult masked duelist, half of her face and half of her porcelain mask lit by a hard side light, the other half lost in darkness. No text or logo.',
         'Split-lit photograph of an ancient bronze helmet on a stand, hard 90-degree light revealing half its dents and engraving, the other half black. No text or logo.',
-        'Split-lit portrait photograph of an adult monk with a tattooed scalp, one side lit by a hard lamp, the other in total shadow, clean line down the nose. No text or logo.',
+        'Split-lit portrait photograph of an adult mercenary with a ritual-scarred shaved scalp and one gold earring, one side lit by a hard lamp, the other in total shadow, a clean line down the nose. No text or logo.',
       ],
     },
     'SP01-037': {
@@ -207,8 +207,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Butterfly-lit photograph of an adult queen character in a tall silver crown and high lace collar, key light centered above the lens, small symmetrical shadow under the nose, dark throne room behind. No text or logo.',
-        'Butterfly-lit portrait photograph of an adult flamenco dancer with a red rose in her hair and a black mantilla, high frontal key, sculpted cheekbones. No text or logo.',
-        'Butterfly-lit photograph of an adult male tenor in a stage costume of a medieval prince, centered high key, clean symmetrical shadows, black background. No text or logo.',
+        'Butterfly-lit portrait photograph of an adult court harpist with a pearl-studded hairnet and a high brocade collar, the harp neck curving beside her face, high frontal key, sculpted cheekbones. No text or logo.',
+        'Butterfly-lit photograph of an adult male fencer with slicked-back hair in a high white fencing collar, foil held upright between his eyes, centered high key, clean symmetrical shadows, black background. No text or logo.',
       ],
     },
     'SP01-039': {
@@ -253,7 +253,7 @@ const spec: Spec = {
       briefs: [
         'Photograph of an adult pilgrim kneeling on the floor of a ruined cathedral as shafts of morning sun pour through broken stained-glass windows into incense smoke, beams crossing her shoulders. No text or logo.',
         'Photograph of an adult woodcutter stopping in a foggy pine forest as sun beams slant between the trunks, his breath and the sawdust glowing in the shafts. No text or logo.',
-        'Photograph of an adult blacksmith in a dim barn forge, beams from gaps in the planks cutting through smoke across the anvil. No text or logo.',
+        'Photograph of an adult weaver at a huge upright loom in a dim timber barn, hard beams from gaps in the planks cutting through floating lint and across the taut warp threads. No text or logo.',
       ],
     },
     'SP01-041': {
@@ -298,7 +298,7 @@ const spec: Spec = {
       briefs: [
         'Strobe-frozen photograph of an adult warrior smashing a clay jar with a war hammer, shards and dust suspended mid-air around the hammer head, dark background, hard side strobe. No text or logo.',
         'Strobe-frozen photograph of a raven bursting off a wet branch, every drop of water flung from its wings frozen, black background. No text or logo.',
-        'Strobe-frozen photograph of an adult dancer whipping her long hair and a cloud of flour into the air, every strand and particle sharp. No text or logo.',
+        'Strobe-frozen photograph of an adult war drummer striking a drum skin flooded with water, a crown of droplets leaping off the skin around the mallet, every drop sharp against black. No text or logo.',
       ],
     },
     'SP01-043': {
@@ -341,7 +341,7 @@ const spec: Spec = {
       avoid: [...AVOID, 'readable projected text'],
       briefs: [
         'Photograph of an adult dancer in a white dress with a projected stained-glass rose window wrapping across her body and the wall behind, her shadow cutting a hole in the pattern. No readable text or logo.',
-        'Photograph of an adult knight in plain steel armor lit only by a projected map of stars that bends over his breastplate and helmet, dark room. No text or logo.',
+        'Photograph of an adult astronomer in a plain hooded wool robe lit only by a projected star map that bends over his hood, face and raised hands, dark round tower room. No text or logo.',
         'Photograph of an old adult man sitting in an armchair while projected ocean waves ripple across his face, sweater and the wallpaper behind him. No text or logo.',
       ],
     },
@@ -365,7 +365,7 @@ const spec: Spec = {
       briefs: [
         'Long-exposure light-painting photograph of an adult wizard-costumed figure standing still in a ruined stone circle at night while a spiral of golden light trails swirls around him and up into the sky. No text or logo.',
         'Light-painting photograph of a steel-wool spark storm spinning inside an abandoned mill, sparks bouncing off the stone floor around an adult figure in a long coat. No text or logo.',
-        'Long-exposure photograph of a lone horse standing in a dark field while a ribbon of blue and red light is drawn around it like a flowing banner. No text or logo.',
+        'Long-exposure photograph of an old wooden windmill in a dark field while a ribbon of blue and red light is drawn around its still sails like a flowing banner. No text or logo.',
       ],
     },
   },
@@ -418,7 +418,7 @@ const spec: Spec = {
       briefs: [
         'Photograph of an adult storyteller holding a lantern under his chin to tell a ghost story around a campfire, shadows climbing over his brows, a circle of adult listeners dark around him. No text or logo.',
         'Photograph of an adult witch leaning over a bubbling cauldron, sickly green light from the brew lighting her face from below. No text or logo.',
-        'Photograph of an adult gravedigger lit only by a flashlight lying in the grave at his feet, pointing up at his face. No text or logo.',
+        'Photograph of an adult museum night guard kneeling beside a fallen oil lamp at the foot of a suit of armor, the lamp lighting his face and the empty helmet above him from below. No text or logo.',
       ],
     },
     {
@@ -442,7 +442,7 @@ const spec: Spec = {
       briefs: [
         'Photograph of an adult actor in a paper crown kneeling alone on a dark stage inside a hard circular spotlight, holding a skull, beam visible in the haze above. No text or logo.',
         'Photograph of an adult juggler of flaming torches standing in a single white follow spot in a circus tent, darkness all around, sparks falling. No text or logo.',
-        'Photograph of an adult opera singer in a vast black gown in a narrow spotlight, the gown spreading beyond the light into darkness. No text or logo.',
+        'Photograph of an adult ballerina in a torn black tutu frozen in an arabesque inside a narrow white spotlight, the edge of the pool cutting across her pointe shoe. No text or logo.',
       ],
     },
     {
@@ -466,8 +466,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Moonlit photograph of an adult wolf-hunter crouching in deep snow at the edge of a birch forest, silver-blue moonlight on the snow and his fur cloak, long pale shadows. No text or logo.',
-        'Moonlit photograph of an abandoned stone watchtower on a cliff, the full moon behind it, silver light on the sea below. No text or logo.',
-        "Moonlit photograph of an adult woman rowing a small boat across a still lake, the moon's path of light on the water leading to her. No text or logo.",
+        'Moonlit photograph of a white barn owl gliding low over a frozen river, the full moon behind it, silver light on its spread wings and the cracked ice. No text or logo.',
+        'Moonlit photograph of an adult herbalist cutting roots with a small sickle in a walled garden, silver moonlight on the blade and dew-laden leaves, her shadow long and pale on the gravel. No text or logo.',
       ],
     },
     {
@@ -492,8 +492,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Photograph of an adult ship captain gripping the wheel in a storm at sea as a lightning bolt strikes behind the mast, blue-white light freezing the rain and spray around him. No text or logo.',
-        "Photograph of a lone adult rider on a black horse on a hilltop as lightning splits the sky, the flash revealing rain and the horse's rearing silhouette. No text or logo.",
-        'Photograph of a gothic castle on a crag lit for an instant by a lightning strike, every window dark, rain lit white. No text or logo.',
+        'Photograph of an adult bell-ringer hauling on a rope in an open stone belfry as lightning splits the valley behind, the flash freezing rain and the swinging bronze bell. No text or logo.',
+        'Photograph of a lone dead oak on a moor lit for an instant by a lightning strike, its bare branches and the sheets of rain around it flashing white. No text or logo.',
       ],
     },
   ],

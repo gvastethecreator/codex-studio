@@ -8,28 +8,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Golden Hour',
     category: '2. Lighting Techniques',
     negativePrompt:
-      'blue, cold, noon, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic',
+      'generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, blue, cold, noon, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Golden Hour acts as a transferable photographic style router: begin from Sunset/Sunrise light, Warm cast, and lighting-first photographic system where the preset is defined by source placement, exposure behavior, shadow design, and light color, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Golden-hour photographic light: the sun within ten degrees of the horizon, long warm raking beams, and air that glows amber.',
       subject_treatment:
-        'Treat any prompt subject through Long shadows; preserve the prompt subject while letting light carve silhouette, volume, specular response, motion, and separation, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.',
       color_and_tone:
-        'Grade with Warm Gold, Orange, Red; treat color as a consequence of source temperature, gel choice, exposure rolloff, neon spill, flame warmth, or low-light sensor response, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Honey, amber and apricot highlights against cool lavender shadows; warm white balance kept, skin glowing.',
       lighting_and_shadow:
-        'Use Directional, soft; make source direction, softness, beam width, bounce, haze, catchlight, or motion trail legible enough to be the main style cue, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Low, directional sun from behind or the side; long stretched shadows, rim light on hair and edges, gentle flare when the sun is in frame.',
       texture_and_material:
-        'Render Glowing atmosphere; show how surfaces react to the light through rim edges, glossy kick, matte falloff, fog particles, grain, or illuminated dust, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Dust, pollen, spray or mist catching the light; surfaces turned gold where the beam lands.',
       camera_and_composition:
-        'Compose through Lens flare; compose to reveal the light event through silhouettes, negative space, beam paths, frontal flash flattening, or long-exposure gesture, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Warm, happy; derive mood from theatrical control, nocturnal pressure, warmth, mystery, kinetic exposure, or graphic shadow tension, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Respect the requested framing; place the light source or its beams so the direction reads immediately.',
+      atmosphere_and_mood: 'Nostalgic, warm, and fleeting.',
       rendering_and_quality:
-        'Finish with Warm editorial realism; finish with photographic exposure discipline, controlled highlights, clean shadow structure, and no random glow pasted over the image, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Natural photographic exposure protecting highlight rolloff, soft haze, no oversaturated orange cast.',
       key_features:
-        'Sunset/Sunrise light; Warm cast; Warm Gold, Orange, Red; Directional, soft; Lens flare',
+        'sun near horizon; long raking shadows; amber rim light; cool lavender shadows; glowing particles',
       creative_brief:
-        "Apply Golden Hour as a photographic preset over prompt X: preserve the user's requested subject, then route Sunset/Sunrise light, Warm Gold, Orange, Red, Directional, soft, Glowing atmosphere, and Lens flare through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Golden Hour as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +36,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Blue Hour',
     category: '2. Lighting Techniques',
     negativePrompt:
-      'sun, orange, warm, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic',
+      'generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, sun, orange, warm, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Blue Hour acts as a transferable photographic style router: begin from Twilight before sunrise/after sunset, Blue cast, and lighting-first photographic system where the preset is defined by source placement, exposure behavior, shadow design, and light color, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Blue-hour light: the sun below the horizon, a luminous cobalt sky acting as a giant soft source, with warm artificial lights just switching on.',
       subject_treatment:
-        'Treat any prompt subject through Soft contrast; preserve the prompt subject while letting light carve silhouette, volume, specular response, motion, and separation, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.',
       color_and_tone:
-        'Grade with Deep Blue, Purple, cold; treat color as a consequence of source temperature, gel choice, exposure rolloff, neon spill, flame warmth, or low-light sensor response, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Deep cobalt and violet ambient tones with small warm tungsten or fire accents for contrast.',
       lighting_and_shadow:
-        'Use Ambient, shadowless; make source direction, softness, beam width, bounce, haze, catchlight, or motion trail legible enough to be the main style cue, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Shadowless, even sky light; practical lamps, windows or fires create the only directional pools.',
       texture_and_material:
-        'Render Smooth; show how surfaces react to the light through rim edges, glossy kick, matte falloff, fog particles, grain, or illuminated dust, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Surfaces reflect the blue sky; wet or glossy materials mirror both sky and warm lights.',
       camera_and_composition:
-        'Compose through Blue Hour source-visible light design, intentional shadow shape, controlled exposure, and readable illumination behavior; compose to reveal the light event through silhouettes, negative space, beam paths, frontal flash flattening, or long-exposure gesture, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Quiet, cold; derive mood from theatrical control, nocturnal pressure, warmth, mystery, kinetic exposure, or graphic shadow tension, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Calm, moody; finish with photographic exposure discipline, controlled highlights, clean shadow structure, and no random glow pasted over the image, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Keep the requested framing; include enough sky or reflection to show the blue source.',
+      atmosphere_and_mood: 'Calm, cool, melancholic, and suspended between day and night.',
+      rendering_and_quality: 'Clean low-light exposure with smooth sky gradients and little noise.',
       key_features:
-        'Twilight before sunrise/after sunset; Blue cast; Deep Blue, Purple, cold; Ambient, shadowless; Blue Hour source-visible light design, intentional shadow shape, controlled exposure, and readable illumination behavior',
+        'cobalt sky ambient; shadowless soft light; warm practical accents; blue reflections; quiet twilight',
       creative_brief:
-        "Apply Blue Hour as a photographic preset over prompt X: preserve the user's requested subject, then route Twilight before sunrise/after sunset, Deep Blue, Purple, cold, Ambient, shadowless, Smooth, and Blue Hour source-visible light design, intentional shadow shape, controlled exposure, and readable illumination behavior through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blue Hour as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +63,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Hard Flash',
     category: '2. Lighting Techniques',
     negativePrompt:
-      'soft, natural, ambient, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic',
+      'generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, daylight scene without flash, soft, natural, ambient, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Hard Flash acts as a transferable photographic style router: begin from Direct camera flash, Drop shadow, and lighting-first photographic system where the preset is defined by source placement, exposure behavior, shadow design, and light color, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Direct on-camera hard flash: a harsh frontal burst that flattens faces, blows highlights, and throws a crisp black shadow onto whatever is behind.',
       subject_treatment:
-        'Treat any prompt subject through Hard shadow outlines; preserve the prompt subject while letting light carve silhouette, volume, specular response, motion, and separation, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.',
       color_and_tone:
-        'Grade with High contrast, saturated; treat color as a consequence of source temperature, gel choice, exposure rolloff, neon spill, flame warmth, or low-light sensor response, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Saturated, contrasty color near the flash, dark underexposed background falloff.',
       lighting_and_shadow:
-        'Use Frontal, harsh; make source direction, softness, beam width, bounce, haze, catchlight, or motion trail legible enough to be the main style cue, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Point source on the lens axis; hard drop shadow offset behind the subject, specular hotspots on skin, glass and metal, rapid falloff into darkness.',
       texture_and_material:
-        'Render Specular flash sheen; show how surfaces react to the light through rim edges, glossy kick, matte falloff, fog particles, grain, or illuminated dust, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Shiny surfaces flare, skin gets oily highlights, dust and rain caught as bright specks.',
       camera_and_composition:
-        'Compose through Flat depth; compose to reveal the light event through silhouettes, negative space, beam paths, frontal flash flattening, or long-exposure gesture, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Raw, exposed; derive mood from theatrical control, nocturnal pressure, warmth, mystery, kinetic exposure, or graphic shadow tension, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Keep the requested framing; subject near the camera so the flash falloff and background shadow read.',
+      atmosphere_and_mood: 'Raw, party-like, voyeuristic, or forensic.',
       rendering_and_quality:
-        'Finish with Paparazzi, fashion; finish with photographic exposure discipline, controlled highlights, clean shadow structure, and no random glow pasted over the image, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Snapshot realism with crisp edges and deliberately unflattering flash character.',
       key_features:
-        'Direct camera flash; Drop shadow; High contrast, saturated; Frontal, harsh; Flat depth',
+        'on-axis flash; hard drop shadow behind; blown speculars; dark falloff background; snapshot rawness',
       creative_brief:
-        "Apply Hard Flash as a photographic preset over prompt X: preserve the user's requested subject, then route Direct camera flash, High contrast, saturated, Frontal, harsh, Specular flash sheen, and Flat depth through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hard Flash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +91,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Neon Noir',
     category: '2. Lighting Techniques',
     negativePrompt:
-      'daylight, sun, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic',
+      'generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, daylight, sun, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Neon Noir acts as a transferable photographic style router: begin from Neon noir lighting, Dual color light, and lighting-first photographic system where the preset is defined by source placement, exposure behavior, shadow design, and light color, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Neon noir light: two saturated colored practical sources — typically magenta and teal — cutting through dark, wet, smoky air.',
       subject_treatment:
-        'Treat any prompt subject through Rim lights; preserve the prompt subject while letting light carve silhouette, volume, specular response, motion, and separation, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.',
       color_and_tone:
-        'Grade with Pink and Teal; treat color as a consequence of source temperature, gel choice, exposure rolloff, neon spill, flame warmth, or low-light sensor response, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Magenta, cyan, teal and electric violet against near-black; skin split between the two hues.',
       lighting_and_shadow:
-        'Use Colored practical lights; make source direction, softness, beam width, bounce, haze, catchlight, or motion trail legible enough to be the main style cue, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
-      texture_and_material:
-        'Render Wet reflective sheen; show how surfaces react to the light through rim edges, glossy kick, matte falloff, fog particles, grain, or illuminated dust, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Colored key from one side, contrasting colored rim from the other, deep black fill, reflections doubling the light on wet surfaces.',
+      texture_and_material: 'Rain, puddles, steam and glossy fabrics reflecting colored light.',
       camera_and_composition:
-        'Compose through Neon Noir source-visible light design, intentional shadow shape, controlled exposure, and readable illumination behavior; compose to reveal the light event through silhouettes, negative space, beam paths, frontal flash flattening, or long-exposure gesture, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Cool, futuristic; derive mood from theatrical control, nocturnal pressure, warmth, mystery, kinetic exposure, or graphic shadow tension, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Cinematic, stylized; finish with photographic exposure discipline, controlled highlights, clean shadow structure, and no random glow pasted over the image, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Keep requested framing; show at least one source or its colored spill.',
+      atmosphere_and_mood: 'Moody, dangerous, and seductive.',
+      rendering_and_quality: 'Clean saturated color without muddy mixing; deep blacks preserved.',
       key_features:
-        'Neon noir lighting; Dual color light; Pink and Teal; Colored practical lights; Neon Noir source-visible light design, intentional shadow shape, controlled exposure, and readable illumination behavior',
+        'two-color practical light; magenta and teal split; wet reflections; smoke; deep black fill',
       creative_brief:
-        "Apply Neon Noir as a photographic preset over prompt X: preserve the user's requested subject, then route Neon noir lighting, Pink and Teal, Colored practical lights, Wet reflective sheen, and Neon Noir source-visible light design, intentional shadow shape, controlled exposure, and readable illumination behavior through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon Noir as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +117,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rembrandt Lighting',
     category: '2. Lighting Techniques',
     negativePrompt:
-      'flat, bright, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic',
+      'generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, flat, bright, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Rembrandt Lighting acts as a transferable photographic style router: begin from Classic chiaroscuro lighting, Chiaroscuro, and lighting-first photographic system where the preset is defined by source placement, exposure behavior, shadow design, and light color, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Rembrandt lighting: a single warm key high and to the side, leaving a small inverted triangle of light on the shadow cheek, with painterly chiaroscuro.',
       subject_treatment:
-        'Treat any prompt subject through Triangular highlight geometry; preserve the prompt subject while letting light carve silhouette, volume, specular response, motion, and separation, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.',
       color_and_tone:
-        'Grade with Warm, dark shadows; treat color as a consequence of source temperature, gel choice, exposure rolloff, neon spill, flame warmth, or low-light sensor response, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Warm ochre highlights, deep umber shadows, muted palette like an old-master canvas.',
       lighting_and_shadow:
-        'Use 45 degree single source; make source direction, softness, beam width, bounce, haze, catchlight, or motion trail legible enough to be the main style cue, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Key about 45 degrees to the side and above; the shadow side keeps a lit triangle under the eye; minimal fill; dark background.',
       texture_and_material:
-        'Render Painterly tonal falloff; show how surfaces react to the light through rim edges, glossy kick, matte falloff, fog particles, grain, or illuminated dust, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Skin, fabric folds and metal modeled with strong but soft-edged falloff.',
       camera_and_composition:
-        'Compose through Rembrandt Lighting source-visible light design, intentional shadow shape, controlled exposure, and readable illumination behavior; compose to reveal the light event through silhouettes, negative space, beam paths, frontal flash flattening, or long-exposure gesture, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Serious, artistic; derive mood from theatrical control, nocturnal pressure, warmth, mystery, kinetic exposure, or graphic shadow tension, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Dramatic classical studio; finish with photographic exposure discipline, controlled highlights, clean shadow structure, and no random glow pasted over the image, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Keep requested framing; the lit triangle and the key direction must be visible on any face.',
+      atmosphere_and_mood: 'Contemplative, dignified, and timeless.',
+      rendering_and_quality: 'Rich midtone modeling, soft shadow edges, no flat fill.',
       key_features:
-        'Classic chiaroscuro lighting; Chiaroscuro; Warm, dark shadows; 45 degree single source; Rembrandt Lighting source-visible light design, intentional shadow shape, controlled exposure, and readable illumination behavior',
+        'cheek light triangle; 45-degree high key; umber shadows; minimal fill; old-master chiaroscuro',
       creative_brief:
-        "Apply Rembrandt Lighting as a photographic preset over prompt X: preserve the user's requested subject, then route Classic chiaroscuro lighting, Warm, dark shadows, 45 degree single source, Painterly tonal falloff, and Rembrandt Lighting source-visible light design, intentional shadow shape, controlled exposure, and readable illumination behavior through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rembrandt Lighting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +144,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Split Lighting',
     category: '2. Lighting Techniques',
     negativePrompt:
-      'flat, fill light, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic',
+      'generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, flat, fill light, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Split Lighting acts as a transferable photographic style router: begin from Half-lit split contrast, Half dark, and lighting-first photographic system where the preset is defined by source placement, exposure behavior, shadow design, and light color, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Split lighting: a hard source at 90 degrees dividing the subject exactly in half — one side lit, one side in darkness.',
       subject_treatment:
-        'Treat any prompt subject through Sharp transition; preserve the prompt subject while letting light carve silhouette, volume, specular response, motion, and separation, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with High contrast; treat color as a consequence of source temperature, gel choice, exposure rolloff, neon spill, flame warmth, or low-light sensor response, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.',
+      color_and_tone: 'High contrast, restrained color, the dark half near black.',
       lighting_and_shadow:
-        'Use 90 degree side light; make source direction, softness, beam width, bounce, haze, catchlight, or motion trail legible enough to be the main style cue, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
-      texture_and_material:
-        'Render Hard lateral contrast; show how surfaces react to the light through rim edges, glossy kick, matte falloff, fog particles, grain, or illuminated dust, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Side key perpendicular to the camera axis, no fill, a clean vertical shadow line down the nose or object center.',
+      texture_and_material: 'Texture exaggerated on the lit half by grazing light.',
       camera_and_composition:
-        'Compose through Hidden side; compose to reveal the light event through silhouettes, negative space, beam paths, frontal flash flattening, or long-exposure gesture, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Conflict, mystery; derive mood from theatrical control, nocturnal pressure, warmth, mystery, kinetic exposure, or graphic shadow tension, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Dramatic side-light realism; finish with photographic exposure discipline, controlled highlights, clean shadow structure, and no random glow pasted over the image, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Keep requested framing; face or object frontal enough that the half-and-half division is obvious.',
+      atmosphere_and_mood: 'Dual, conflicted, dramatic, and mysterious.',
+      rendering_and_quality: 'Crisp division line with detailed highlights and clean blacks.',
       key_features:
-        'Half-lit split contrast; Half dark; High contrast; 90 degree side light; Hidden side',
+        '90-degree side key; half lit half dark; vertical shadow line; no fill; grazing texture',
       creative_brief:
-        "Apply Split Lighting as a photographic preset over prompt X: preserve the user's requested subject, then route Half-lit split contrast, High contrast, 90 degree side light, Hard lateral contrast, and Hidden side through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Split Lighting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,27 +169,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Silhouette (Backlit)',
     category: '2. Lighting Techniques',
     negativePrompt:
-      'front light, detail, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic',
+      'generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, front-lit subject, front light, detail, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Silhouette (Backlit) acts as a transferable photographic style router: begin from Subject against light, Dark subject, and lighting-first photographic system where the preset is defined by source placement, exposure behavior, shadow design, and light color, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Backlit silhouette lighting: the light source behind the subject, exposure set for the bright background so the subject falls to a black shape.',
       subject_treatment:
-        'Treat any prompt subject through Outline; preserve the prompt subject while letting light carve silhouette, volume, specular response, motion, and separation, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.',
       color_and_tone:
-        'Grade with Black subject; treat color as a consequence of source temperature, gel choice, exposure rolloff, neon spill, flame warmth, or low-light sensor response, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Luminous background color — sky, fire, fog or window — with a black subject.',
       lighting_and_shadow:
-        'Use beyond subject; make source direction, softness, beam width, bounce, haze, catchlight, or motion trail legible enough to be the main style cue, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
-      texture_and_material:
-        'Render Rim light; show how surfaces react to the light through rim edges, glossy kick, matte falloff, fog particles, grain, or illuminated dust, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Strong backlight only; thin halo where light wraps edges; no front fill at all.',
+      texture_and_material: 'Detail lives in the glowing background: haze, clouds, sparks or dust.',
       camera_and_composition:
-        'Compose through No detail; compose to reveal the light event through silhouettes, negative space, beam paths, frontal flash flattening, or long-exposure gesture, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Epic, anonymous; derive mood from theatrical control, nocturnal pressure, warmth, mystery, kinetic exposure, or graphic shadow tension, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Keep requested framing; separate the subject outline from other dark shapes against the brightest area.',
+      atmosphere_and_mood: 'Iconic, mysterious, and graphic.',
       rendering_and_quality:
-        'Finish with Dramatic, shape based; finish with photographic exposure discipline, controlled highlights, clean shadow structure, and no random glow pasted over the image, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
-      key_features: 'Subject against light; Dark subject; Black subject; beyond subject; No detail',
+        'Pure black shape without muddy detail; smooth bright background gradient.',
+      key_features:
+        'light behind subject; black shape; edge halo; bright background exposure; clean outline',
       creative_brief:
-        "Apply Silhouette (Backlit) as a photographic preset over prompt X: preserve the user's requested subject, then route Subject against light, Black subject, beyond subject, Rim light, and No detail through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Silhouette (Backlit) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -210,28 +196,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Butterfly Lighting',
     category: '2. Lighting Techniques',
     negativePrompt:
-      'side light, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic',
+      'generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, side light, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Butterfly Lighting acts as a transferable photographic style router: begin from Glamour lighting, Symmetrical lower shadow, and lighting-first photographic system where the preset is defined by source placement, exposure behavior, shadow design, and light color, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Butterfly lighting: a high frontal key centered above the lens that casts a small symmetrical shadow under the nose and sculpts cheekbones.',
       subject_treatment:
-        'Treat any prompt subject through central lower cast shadow; preserve the prompt subject while letting light carve silhouette, volume, specular response, motion, and separation, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Flattering; treat color as a consequence of source temperature, gel choice, exposure rolloff, neon spill, flame warmth, or low-light sensor response, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.',
+      color_and_tone: 'Clean, flattering skin tones, bright face, darker surroundings.',
       lighting_and_shadow:
-        'Use High frontal; make source direction, softness, beam width, bounce, haze, catchlight, or motion trail legible enough to be the main style cue, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
-      texture_and_material:
-        'Render Smooth frontal polish; show how surfaces react to the light through rim edges, glossy kick, matte falloff, fog particles, grain, or illuminated dust, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Key directly in front and above, small butterfly-shaped nose shadow, soft shadow under the chin, optional reflector fill from below.',
+      texture_and_material: 'Luminous skin, defined cheekbones, glossy hair and jewelry.',
       camera_and_composition:
-        'Compose through Butterfly Lighting source-visible light design, intentional shadow shape, controlled exposure, and readable illumination behavior; compose to reveal the light event through silhouettes, negative space, beam paths, frontal flash flattening, or long-exposure gesture, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Beautiful; derive mood from theatrical control, nocturnal pressure, warmth, mystery, kinetic exposure, or graphic shadow tension, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Beauty-light studio polish; finish with photographic exposure discipline, controlled highlights, clean shadow structure, and no random glow pasted over the image, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Keep requested framing; the face should be frontal enough to show the symmetrical shadow.',
+      atmosphere_and_mood: 'Glamorous, classic, and poised.',
+      rendering_and_quality: 'Polished beauty rendering with real skin texture.',
       key_features:
-        'Glamour lighting; Symmetrical lower shadow; Flattering; High frontal; Butterfly Lighting source-visible light design, intentional shadow shape, controlled exposure, and readable illumination behavior',
+        'high centered key; butterfly nose shadow; sculpted cheekbones; chin shadow; glamorous polish',
       creative_brief:
-        "Apply Butterfly Lighting as a photographic preset over prompt X: preserve the user's requested subject, then route Glamour lighting, Flattering, High frontal, Smooth frontal polish, and Butterfly Lighting source-visible light design, intentional shadow shape, controlled exposure, and readable illumination behavior through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Butterfly Lighting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -239,28 +221,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Candlelight',
     category: '2. Lighting Techniques',
     negativePrompt:
-      'electric light, blue, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic',
+      'generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, electric light, blue, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Candlelight acts as a transferable photographic style router: begin from Lit by fire, Warm glow, and lighting-first photographic system where the preset is defined by source placement, exposure behavior, shadow design, and light color, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        "Candlelight: small warm flames as the only source, falling off within an arm's length into velvety darkness.",
       subject_treatment:
-        'Treat any prompt subject through Soft flickering; preserve the prompt subject while letting light carve silhouette, volume, specular response, motion, and separation, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.',
       color_and_tone:
-        'Grade with Deep Orange, Black; treat color as a consequence of source temperature, gel choice, exposure rolloff, neon spill, flame warmth, or low-light sensor response, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Deep orange and amber near the flame, rapid fall to brown-black; very low color temperature.',
       lighting_and_shadow:
-        'Use Low, warm point source; make source direction, softness, beam width, bounce, haze, catchlight, or motion trail legible enough to be the main style cue, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
-      texture_and_material:
-        'Render Soft shadows; show how surfaces react to the light through rim edges, glossy kick, matte falloff, fog particles, grain, or illuminated dust, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Low point sources close to the subject, strong inverse-square falloff, flickering soft shadows, bright specks in eyes.',
+      texture_and_material: 'Wax, glass, skin and fabric glowing warmly; smoke threads visible.',
       camera_and_composition:
-        'Compose through Candlelight source-visible light design, intentional shadow shape, controlled exposure, and readable illumination behavior; compose to reveal the light event through silhouettes, negative space, beam paths, frontal flash flattening, or long-exposure gesture, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Romantic, secret; derive mood from theatrical control, nocturnal pressure, warmth, mystery, kinetic exposure, or graphic shadow tension, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Intimate, historic; finish with photographic exposure discipline, controlled highlights, clean shadow structure, and no random glow pasted over the image, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
-      key_features:
-        'Lit by fire; Warm glow; Deep Orange, Black; Low, warm point source; Candlelight source-visible light design, intentional shadow shape, controlled exposure, and readable illumination behavior',
+        'Keep requested framing; place at least one flame visible or clearly motivating the light.',
+      atmosphere_and_mood: 'Intimate, secretive, hushed, and old-world.',
+      rendering_and_quality: 'Clean low-light exposure with rich blacks, no gray noise.',
+      key_features: 'flame-only light; steep falloff; amber glow; velvety black; visible candle',
       creative_brief:
-        "Apply Candlelight as a photographic preset over prompt X: preserve the user's requested subject, then route Lit by fire, Deep Orange, Black, Low, warm point source, Soft shadows, and Candlelight source-visible light design, intentional shadow shape, controlled exposure, and readable illumination behavior through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Candlelight as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -268,28 +246,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'God Rays (Volumetric)',
     category: '2. Lighting Techniques',
     negativePrompt:
-      'clear air, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic',
+      'generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, clear air, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'God Rays (Volumetric) acts as a transferable photographic style router: begin from Light beams through fog, Light shafts, and lighting-first photographic system where the preset is defined by source placement, exposure behavior, shadow design, and light color, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Volumetric god rays: hard beams of light made visible by haze, dust or fog, crossing the scene in defined shafts.',
       subject_treatment:
-        'Treat any prompt subject through Visible beams; preserve the prompt subject while letting light carve silhouette, volume, specular response, motion, and separation, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.',
       color_and_tone:
-        'Grade with Hazy; treat color as a consequence of source temperature, gel choice, exposure rolloff, neon spill, flame warmth, or low-light sensor response, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Bright warm or cool shafts against darker hazy surroundings; atmosphere lifts the shadows slightly.',
       lighting_and_shadow:
-        'Use Backlit shafts; make source direction, softness, beam width, bounce, haze, catchlight, or motion trail legible enough to be the main style cue, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
-      texture_and_material:
-        'Render Dust motes; show how surfaces react to the light through rim edges, glossy kick, matte falloff, fog particles, grain, or illuminated dust, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Strong source behind an occluder (trees, windows, clouds) producing parallel or radiating shafts; subjects partially cut by beams.',
+      texture_and_material: 'Dust motes, smoke, spray or mist in the beams.',
       camera_and_composition:
-        'Compose through God Rays (Volumetric) source-visible light design, intentional shadow shape, controlled exposure, and readable illumination behavior; compose to reveal the light event through silhouettes, negative space, beam paths, frontal flash flattening, or long-exposure gesture, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Atmospheric, monumental; derive mood from theatrical control, nocturnal pressure, warmth, mystery, kinetic exposure, or graphic shadow tension, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Epic volumetric realism; finish with photographic exposure discipline, controlled highlights, clean shadow structure, and no random glow pasted over the image, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Keep requested framing; angle the beams across the frame toward or past the subject.',
+      atmosphere_and_mood: 'Sacred, awe-filled, and quiet.',
+      rendering_and_quality: 'Clean beam edges and smooth haze without banding.',
       key_features:
-        'Light beams through fog; Light shafts; Hazy; Backlit shafts; God Rays (Volumetric) source-visible light design, intentional shadow shape, controlled exposure, and readable illumination behavior',
+        'visible light shafts; haze; occluder pattern; dust motes; subject crossed by beams',
       creative_brief:
-        "Apply God Rays (Volumetric) as a photographic preset over prompt X: preserve the user's requested subject, then route Light beams through fog, Hazy, Backlit shafts, Dust motes, and God Rays (Volumetric) source-visible light design, intentional shadow shape, controlled exposure, and readable illumination behavior through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies God Rays (Volumetric) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -297,28 +272,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bioluminescence',
     category: '2. Lighting Techniques',
     negativePrompt:
-      'sun, day, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic',
+      'generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, sun, day, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Bioluminescence acts as a transferable photographic style router: begin from Glowing organic light, Dark depth field, and lighting-first photographic system where the preset is defined by source placement, exposure behavior, shadow design, and light color, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        "Bioluminescent light: living organisms glowing cyan, green or blue as the scene's only illumination in darkness.",
       subject_treatment:
-        'Treat any prompt subject through Soft glow; preserve the prompt subject while letting light carve silhouette, volume, specular response, motion, and separation, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Neon Blue, Green; treat color as a consequence of source temperature, gel choice, exposure rolloff, neon spill, flame warmth, or low-light sensor response, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.',
+      color_and_tone: 'Electric cyan, aqua and green glows against deep navy and black.',
       lighting_and_shadow:
-        'Use Self-illuminated; make source direction, softness, beam width, bounce, haze, catchlight, or motion trail legible enough to be the main style cue, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
-      texture_and_material:
-        'Render Organic phosphor glow; show how surfaces react to the light through rim edges, glossy kick, matte falloff, fog particles, grain, or illuminated dust, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Many small cold sources — plankton, fungi, insects, algae — lighting nearby surfaces softly from below or around.',
+      texture_and_material: 'Wet surfaces, water, skin and leaves catching speckled glow.',
       camera_and_composition:
-        'Compose through Bioluminescence source-visible light design, intentional shadow shape, controlled exposure, and readable illumination behavior; compose to reveal the light event through silhouettes, negative space, beam paths, frontal flash flattening, or long-exposure gesture, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Magical, alien; derive mood from theatrical control, nocturnal pressure, warmth, mystery, kinetic exposure, or graphic shadow tension, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Photoreal self-illumination; finish with photographic exposure discipline, controlled highlights, clean shadow structure, and no random glow pasted over the image, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Keep requested framing; make the glowing organisms the visible light sources.',
+      atmosphere_and_mood: 'Magical, eerie, and natural.',
+      rendering_and_quality: 'Long-exposure-clean darkness with crisp glowing specks.',
       key_features:
-        'Glowing organic light; Dark depth field; Neon Blue, Green; Self-illuminated; Bioluminescence source-visible light design, intentional shadow shape, controlled exposure, and readable illumination behavior',
+        'living light sources; cyan-green glow; dark surroundings; speckled illumination; wet reflections',
       creative_brief:
-        "Apply Bioluminescence as a photographic preset over prompt X: preserve the user's requested subject, then route Glowing organic light, Neon Blue, Green, Self-illuminated, Organic phosphor glow, and Bioluminescence source-visible light design, intentional shadow shape, controlled exposure, and readable illumination behavior through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bioluminescence as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -326,28 +297,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Strobe Light',
     category: '2. Lighting Techniques',
     negativePrompt:
-      'blur, soft, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic',
+      'generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, blur, soft, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Strobe Light acts as a transferable photographic style router: begin from Frozen motion, Motion freeze, and lighting-first photographic system where the preset is defined by source placement, exposure behavior, shadow design, and light color, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Strobe freeze: an extremely short burst of light that freezes fast motion — splashes, debris, hair, fabric — in crisp suspended detail.',
       subject_treatment:
-        'Treat any prompt subject through Sharp edges; preserve the prompt subject while letting light carve silhouette, volume, specular response, motion, and separation, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Cool white; treat color as a consequence of source temperature, gel choice, exposure rolloff, neon spill, flame warmth, or low-light sensor response, with value separation and white balance choices that feel captured in-camera rather than painted over.',
-      lighting_and_shadow:
-        'Use Instant flash; make source direction, softness, beam width, bounce, haze, catchlight, or motion trail legible enough to be the main style cue, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.',
+      color_and_tone: 'Cool white burst, crisp neutral color, dark background.',
+      lighting_and_shadow: 'One or two hard strobes from the side, sharp shadows, no motion blur.',
       texture_and_material:
-        'Render Crisp frozen microdetail; show how surfaces react to the light through rim edges, glossy kick, matte falloff, fog particles, grain, or illuminated dust, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Droplets, shards, dust and fibers frozen mid-air with individual detail.',
       camera_and_composition:
-        'Compose through Strobe Light source-visible light design, intentional shadow shape, controlled exposure, and readable illumination behavior; compose to reveal the light event through silhouettes, negative space, beam paths, frontal flash flattening, or long-exposure gesture, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Energetic, frozen; derive mood from theatrical control, nocturnal pressure, warmth, mystery, kinetic exposure, or graphic shadow tension, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with High speed photography; finish with photographic exposure discipline, controlled highlights, clean shadow structure, and no random glow pasted over the image, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Keep requested framing; show an action at its peak with debris around it.',
+      atmosphere_and_mood: 'Kinetic, explosive, and precise.',
+      rendering_and_quality: 'Ultra-sharp frozen particles against dark background.',
       key_features:
-        'Frozen motion; Motion freeze; Cool white; Instant flash; Strobe Light source-visible light design, intentional shadow shape, controlled exposure, and readable illumination behavior',
+        'motion frozen mid-air; hard strobe; crisp droplets and debris; dark background; peak action',
       creative_brief:
-        "Apply Strobe Light as a photographic preset over prompt X: preserve the user's requested subject, then route Frozen motion, Cool white, Instant flash, Crisp frozen microdetail, and Strobe Light source-visible light design, intentional shadow shape, controlled exposure, and readable illumination behavior through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Strobe Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -355,28 +322,23 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ring Light',
     category: '2. Lighting Techniques',
     negativePrompt:
-      'shadows, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic',
+      'generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, shadows, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Ring Light acts as a transferable photographic style router: begin from Circular frontal lighting, Ring catchlight, and lighting-first photographic system where the preset is defined by source placement, exposure behavior, shadow design, and light color, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Continuous ring light: a soft circular LED around the lens giving shadowless frontal light and a ring-shaped catchlight in the eyes.',
       subject_treatment:
-        'Treat any prompt subject through Ring catchlight geometry; preserve the prompt subject while letting light carve silhouette, volume, specular response, motion, and separation, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Even, bright; treat color as a consequence of source temperature, gel choice, exposure rolloff, neon spill, flame warmth, or low-light sensor response, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.',
+      color_and_tone: 'Even bright skin, slightly cool LED white, backgrounds softly lit.',
       lighting_and_shadow:
-        'Use Frontal circle; make source direction, softness, beam width, bounce, haze, catchlight, or motion trail legible enough to be the main style cue, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
-      texture_and_material:
-        'Render Smooth even surface; show how surfaces react to the light through rim edges, glossy kick, matte falloff, fog particles, grain, or illuminated dust, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Frontal on-axis soft light, almost no facial shadow, subtle halo shadow on a close background.',
+      texture_and_material: 'Smooth skin, glossy lips and eyes with clear ring reflections.',
       camera_and_composition:
-        'Compose through Flat frontal depth; compose to reveal the light event through silhouettes, negative space, beam paths, frontal flash flattening, or long-exposure gesture, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Modern, clean; derive mood from theatrical control, nocturnal pressure, warmth, mystery, kinetic exposure, or graphic shadow tension, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Clean creator-studio realism; finish with photographic exposure discipline, controlled highlights, clean shadow structure, and no random glow pasted over the image, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
-      key_features:
-        'Circular frontal lighting; Ring catchlight; Even, bright; Frontal circle; Flat frontal depth',
+        'Keep requested framing; face close enough to show the ring catchlight.',
+      atmosphere_and_mood: 'Direct, intimate, and contemporary.',
+      rendering_and_quality: 'Clean even exposure with visible ring catchlights.',
+      key_features: 'ring catchlight; shadowless frontal light; cool LED white; soft halo shadow',
       creative_brief:
-        "Apply Ring Light as a photographic preset over prompt X: preserve the user's requested subject, then route Circular frontal lighting, Even, bright, Frontal circle, Smooth even surface, and Flat frontal depth through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ring Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -384,28 +346,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Projector Light',
     category: '2. Lighting Techniques',
     negativePrompt:
-      'clean light, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic',
+      'generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, readable projected text, clean light, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Projector Light acts as a transferable photographic style router: begin from Projected image lighting, Light pattern, and lighting-first photographic system where the preset is defined by source placement, exposure behavior, shadow design, and light color, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Projector light: an image or pattern projected onto the subject and surroundings, wrapping across faces, bodies and walls.',
       subject_treatment:
-        'Treat any prompt subject through Pattern overlay; preserve the prompt subject while letting light carve silhouette, volume, specular response, motion, and separation, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Mixed projected color; treat color as a consequence of source temperature, gel choice, exposure rolloff, neon spill, flame warmth, or low-light sensor response, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.',
+      color_and_tone: 'Colors and shapes taken from the projected image, dark ambient otherwise.',
       lighting_and_shadow:
-        'Use Patterned source; make source direction, softness, beam width, bounce, haze, catchlight, or motion trail legible enough to be the main style cue, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
-      texture_and_material:
-        'Render Pixel grid (optional); show how surfaces react to the light through rim edges, glossy kick, matte falloff, fog particles, grain, or illuminated dust, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Single projector beam; pattern distorts over contours; the subject casts a shadow into the projection behind.',
+      texture_and_material: 'Pattern bends across skin, fabric and objects, revealing their shape.',
       camera_and_composition:
-        'Compose through Surface distortion by light; compose to reveal the light event through silhouettes, negative space, beam paths, frontal flash flattening, or long-exposure gesture, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Conceptual, trippy; derive mood from theatrical control, nocturnal pressure, warmth, mystery, kinetic exposure, or graphic shadow tension, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Artistic, music video; finish with photographic exposure discipline, controlled highlights, clean shadow structure, and no random glow pasted over the image, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Keep requested framing; the projection must visibly wrap the subject.',
+      atmosphere_and_mood: 'Dreamy, surreal, and theatrical.',
+      rendering_and_quality: 'Sharp projection detail where in focus, dark clean surroundings.',
       key_features:
-        'Projected image lighting; Light pattern; Mixed projected color; Patterned source; Surface distortion by light',
+        'projected pattern wrapping contours; subject shadow in projection; single beam; dark ambient',
       creative_brief:
-        "Apply Projector Light as a photographic preset over prompt X: preserve the user's requested subject, then route Projected image lighting, Mixed projected color, Patterned source, Pixel grid (optional), and Surface distortion by light through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Projector Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -413,28 +371,181 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Light Painting',
     category: '2. Lighting Techniques',
     negativePrompt:
-      'static light, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic',
+      'generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, static light, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow overlay, muddy darkness, blown highlight wash, no light source logic, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Light Painting acts as a transferable photographic style router: begin from Long exposure light trails, Dark depth field, and lighting-first photographic system where the preset is defined by source placement, exposure behavior, shadow design, and light color, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Light painting: long-exposure photography where moving lights draw glowing trails, arcs and shapes around a still subject in darkness.',
       subject_treatment:
-        'Treat any prompt subject through Glowing streaks; preserve the prompt subject while letting light carve silhouette, volume, specular response, motion, and separation, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.',
       color_and_tone:
-        'Grade with Neon trails; treat color as a consequence of source temperature, gel choice, exposure rolloff, neon spill, flame warmth, or low-light sensor response, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Vivid colored light trails against black; subject lit briefly or by the trails.',
       lighting_and_shadow:
-        'Use Moving source; make source direction, softness, beam width, bounce, haze, catchlight, or motion trail legible enough to be the main style cue, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
-      texture_and_material:
-        'Render Smooth light; show how surfaces react to the light through rim edges, glossy kick, matte falloff, fog particles, grain, or illuminated dust, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Moving handheld sources during a long exposure; ambient darkness; trails wrap around or behind the subject.',
+      texture_and_material: 'Smooth glowing ribbons, sparks from steel wool, ghosted movement.',
       camera_and_composition:
-        'Compose through Light scribbles; compose to reveal the light event through silhouettes, negative space, beam paths, frontal flash flattening, or long-exposure gesture, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Magical, kinetic; derive mood from theatrical control, nocturnal pressure, warmth, mystery, kinetic exposure, or graphic shadow tension, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Creative, night; finish with photographic exposure discipline, controlled highlights, clean shadow structure, and no random glow pasted over the image, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Keep requested framing; tripod-steady background with the trails as graphic lines.',
+      atmosphere_and_mood: 'Magical, energetic, and playful.',
+      rendering_and_quality: 'Clean black background, continuous trails without breaks.',
       key_features:
-        'Long exposure light trails; Dark depth field; Neon trails; Moving source; Light scribbles',
+        'long-exposure light trails; steel-wool sparks; glowing ribbons; dark background; still subject',
       creative_brief:
-        "Apply Light Painting as a photographic preset over prompt X: preserve the user's requested subject, then route Long exposure light trails, Neon trails, Moving source, Smooth light, and Light scribbles through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Light Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP01-090',
+    name: 'Dappled Leaf Light',
+    displayName: 'Dappled Leaf Light',
+    styleAnchors: ['Dappled Leaf Light', 'dappled canopy light', 'leaf-filtered sun spots'],
+    category: '2. Lighting Techniques',
+    domain: 'dappled canopy light',
+    negativePrompt:
+      'generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Dappled canopy light: sun filtered through leaves scattering bright coin-shaped patches across the subject and ground.',
+      subject_treatment:
+        'Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.',
+      color_and_tone: 'Warm sunlit patches with cool green-tinted shade between them.',
+      lighting_and_shadow:
+        'Hard sun broken by foliage into many small soft-edged spots; the subject moves between light and shade.',
+      texture_and_material:
+        'Leaf shadows patterning skin, fabric and stone; glowing translucent leaves overhead.',
+      camera_and_composition:
+        'Keep requested framing; the dapple pattern must fall across the main subject.',
+      atmosphere_and_mood: 'Peaceful, summery, and dreamlike.',
+      rendering_and_quality: 'Natural contrast with bright spots held, not clipped.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dappled Leaf Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'leaf-filtered sun spots; green shade; dapple on subject; translucent leaves; summer calm',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-091',
+    name: 'Horror Underlight',
+    displayName: 'Horror Underlight',
+    styleAnchors: ['Horror Underlight', 'uplighting from below', 'light from below'],
+    category: '2. Lighting Techniques',
+    domain: 'uplighting from below',
+    negativePrompt:
+      'generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Horror underlighting: a single source from below the face or subject, inverting natural shadows so features look wrong and menacing.',
+      subject_treatment:
+        'Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.',
+      color_and_tone:
+        'Cold green, sickly yellow or fire-orange from below; everything above falls into darkness.',
+      lighting_and_shadow:
+        'Low source pointing upward: shadows climb above brows and nose, bright chin and nostrils, dark eye sockets.',
+      texture_and_material: 'Skin, teeth, cobwebs and wet surfaces catching upward light.',
+      camera_and_composition: 'Keep requested framing; the light must visibly come from below.',
+      atmosphere_and_mood: 'Uncanny, menacing, and theatrical.',
+      rendering_and_quality: 'Clean darkness above, crisp lit planes below.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Horror Underlight as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'light from below; inverted shadows; dark eye sockets; cold or fire tint; menacing',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-092',
+    name: 'Theatrical Spotlight',
+    displayName: 'Theatrical Spotlight',
+    styleAnchors: ['Theatrical Spotlight', 'stage follow spot', 'circular follow spot'],
+    category: '2. Lighting Techniques',
+    domain: 'stage follow spot',
+    negativePrompt:
+      'generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Theatrical follow spot: a hard circular beam from above isolating the subject on a dark stage, with a visible pool of light at their feet.',
+      subject_treatment:
+        'Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.',
+      color_and_tone:
+        'Neutral or warm white beam, black surroundings, optional colored gel wash behind.',
+      lighting_and_shadow:
+        'Hard high spot with a crisp circular edge on the floor, short dark shadow under the subject, faint beam visible in haze.',
+      texture_and_material: 'Stage dust in the beam; costume fabrics and props sharply lit.',
+      camera_and_composition: 'Keep requested framing; include the pool or edge of the spot.',
+      atmosphere_and_mood: 'Dramatic, lonely, and performative.',
+      rendering_and_quality: 'Crisp beam edge, deep blacks, clean highlights.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Theatrical Spotlight as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'circular follow spot; light pool on floor; dark stage; visible beam in haze',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-093',
+    name: 'Moonlight Night',
+    displayName: 'Moonlight Night',
+    styleAnchors: ['Moonlight Night', 'moonlit night light', 'silver-blue high source'],
+    category: '2. Lighting Techniques',
+    domain: 'moonlit night light',
+    negativePrompt:
+      'generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Moonlight: a single cold, soft-edged high source washing the scene in silver-blue with deep black shadows.',
+      subject_treatment:
+        'Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.',
+      color_and_tone: 'Silver, slate blue and blue-green; very low saturation; black shadows.',
+      lighting_and_shadow:
+        'Soft directional light from high in the sky, long pale shadows on snow, water or stone; no warm sources unless requested.',
+      texture_and_material: 'Frost, dew, water and metal catching silver highlights.',
+      camera_and_composition:
+        'Keep requested framing; show the moon or its reflection when the sky is visible.',
+      atmosphere_and_mood: 'Silent, cold, mysterious, and romantic.',
+      rendering_and_quality: 'Clean low-light exposure without noise or orange cast.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Moonlight Night as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'silver-blue high source; black shadows; low saturation; frost and water highlights',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-094',
+    name: 'Lightning Flash',
+    displayName: 'Lightning Flash',
+    styleAnchors: ['Lightning Flash', 'lightning strike illumination', 'blue-white strike light'],
+    category: '2. Lighting Techniques',
+    domain: 'lightning strike illumination',
+    negativePrompt:
+      'generic stock-photo face, celebrity likeness, light that does not match the named technique, changing the requested setting, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Lightning flash: an instant of blinding blue-white light from a strike, revealing the scene in stark relief against a dark storm.',
+      subject_treatment:
+        'Keep the prompt subject, action, setting and framing; change only how light falls on them so the named lighting technique is the unmistakable first read.',
+      color_and_tone:
+        'Violet-white flash, cold blue shadows, dark storm clouds, rain streaks lit white.',
+      lighting_and_shadow:
+        'Single overwhelming source from the sky, hard shadows thrown all at once, sharp rim light on wet edges.',
+      texture_and_material: 'Rain drops, wet stone, soaked cloth and metal flashing bright.',
+      camera_and_composition:
+        'Keep requested framing; show the bolt or its reflection when the sky is in frame.',
+      atmosphere_and_mood: 'Violent, awe-struck, and ominous.',
+      rendering_and_quality: 'Crisp frozen rain, clean highlights, deep storm darkness.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lightning Flash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'blue-white strike light; frozen rain; hard instant shadows; storm darkness; visible bolt',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];
