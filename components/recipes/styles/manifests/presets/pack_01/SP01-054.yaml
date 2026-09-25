@@ -3,7 +3,7 @@ id: SP01-054
 packId: pack_01
 name: Astrophotography
 category: 6. Nature And Wildlife
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,53 +12,24 @@ tags:
   - photography-and-realism
   - nature-and-wildlife
 visualDna:
-  aesthetic: >-
-    Astrophotography acts as a transferable photographic style router: begin from Long-exposure
-    night-sky imaging, Cosmic exposure texture, and field and nature photographic system built from
-    natural light, patient timing, environmental scale, and credible ecology, then apply the
-    photographic behavior to prompt X instead of recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through Star trails (optional); preserve prompt identity while giving
-    it field realism, habitat pressure, natural scale, or macro/wildlife observation cues, keeping
-    the original subject, pose, species, object, or environment legible.
-  color_and_tone: >-
-    Grade with Deep Blue, Purple, White stars; grade through natural atmosphere, silver-black
-    fine-art values, underwater blue shift, sky exposure, foliage color, or animal camouflage, with
-    value separation and white balance choices that feel captured in-camera rather than painted
-    over.
-  lighting_and_shadow: >-
-    Use Starlight; use weather, sun angle, water absorption, night-sky exposure, diffused field
-    light, or telephoto background separation, preserving believable exposure, shadow density,
-    highlight rolloff, and source motivation.
-  texture_and_material: >-
-    Render Noise (stars); render fur, feathers, plant texture, rock, water, star noise, mist, mud,
-    and environmental micro-detail without plastic artificiality, avoiding both waxy smoothing and
-    noisy texture overlays that hide the prompt content.
-  camera_and_composition: >-
-    Compose through Astrophotography field-camera realism, environmental scale, natural light, and
-    patient observational detail; compose through long-lens compression, macro proximity, horizon
-    scale, field patience, eye-level empathy, or monumental stillness, with lens distance, depth,
-    timing, and focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Cosmic, silent; derive mood from patience, wilderness pressure, wonder, cosmic
-    quiet, companion warmth, or fine-art environmental grandeur, so the preset changes
-    interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Long exposure, epic; finish as believable field photography with clean detail,
-    natural restraint, and no oversaturated postcard or zoo snapshot look, high-resolution
-    photographic detail, and disciplined denoise without losing natural grain where the preset needs
-    it.
-  key_features: >-
-    Long-exposure night-sky imaging; Cosmic exposure texture; Deep Blue, Purple, White stars;
-    Starlight; Astrophotography field-camera realism, environmental scale, natural light, and
-    patient observational detail
-  creative_brief: >-
-    Apply Astrophotography as a photographic preset over prompt X: preserve the user's requested
-    subject, then route Long-exposure night-sky imaging, Deep Blue, Purple, White stars, Starlight,
-    Noise (stars), and Astrophotography field-camera realism, environmental scale, natural light,
-    and patient observational detail through optics, exposure, palette, surface response, timing,
-    and finish without requiring the card image's original subject.
+  aesthetic: 'Deep-sky astrophotography: a tracked telescope and hours of stacked exposures revealing nebulae, galaxies, comets and planets against black space.'
+  subject_treatment: Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.
+  color_and_tone: Hydrogen reds and magentas, oxygen teals, blue reflection nebula, pure black background with pinpoint stars of varied color.
+  lighting_and_shadow: Only emitted and reflected starlight; faint structures stretched from the dark background.
+  texture_and_material: Wispy gas filaments, dark dust lanes and pillars, round sharp stars with faint diffraction spikes.
+  camera_and_composition: Telescope framing with the object centered or on a diagonal, no ground or horizon.
+  atmosphere_and_mood: Cosmic and silent, vast distance rendered as quiet structure.
+  rendering_and_quality: 'Clean stacked-image look: low noise, no star trails, no painted glow; a ground subject belongs to Milky Way Nightscape instead.'
+  key_features: telescope deep-sky view; emission reds and oxygen teals; dust pillars; pinpoint stars; black background
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Astrophotography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - zoo snapshot
+  - oversaturated postcard
+  - plastic foliage
+  - substituting a landscape or animal the prompt did not ask for
+  - daylight
+  - star trails
+  - landscape horizon
   - day
   - clouds
   - illustration
@@ -74,18 +45,19 @@ avoidRules:
   - readable text
   - signature
   - low resolution
-  - zoo snapshot
-  - oversaturated postcard
-  - plastic foliage
   - fake wildlife pose
   - friendly nature cliche
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-054.webp
 attributes:
-  negativePrompt: >-
-    day, clouds, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI,
-    plastic render, watermark, readable text, signature, low resolution, zoo snapshot, oversaturated
-    postcard, plastic foliage, fake wildlife pose, friendly nature cliche
+  negativePrompt: zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, daylight, star trails, landscape horizon, day, clouds, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake wildlife pose, friendly nature cliche, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

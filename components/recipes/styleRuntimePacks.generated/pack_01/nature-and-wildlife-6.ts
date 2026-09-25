@@ -8,28 +8,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Landscape (Ansel Adams)',
     category: '6. Nature And Wildlife',
     negativePrompt:
-      'color, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, zoo snapshot, oversaturated postcard, plastic foliage, fake wildlife pose, friendly nature cliche',
+      'zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, color, flat grey tones, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake wildlife pose, friendly nature cliche, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Landscape (Ansel Adams) acts as a transferable photographic style router: begin from Zone System fine-art realism, High contrast tonal zones, and field and nature photographic system built from natural light, patient timing, environmental scale, and credible ecology, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Zone System black-and-white landscape: a large-format view camera at f/64, exposure placed and development controlled so the print runs from pure white to deep black with every zone in between.',
       subject_treatment:
-        'Treat any prompt subject through Sharp f/64 focus; preserve prompt identity while giving it field realism, habitat pressure, natural scale, or macro/wildlife observation cues, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.',
       color_and_tone:
-        'Grade with Black and White Zone System; grade through natural atmosphere, silver-black fine-art values, underwater blue shift, sky exposure, foliage color, or animal camouflage, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Monochrome with a full ten-zone scale: textured whites in snow and cloud, luminous mid-greys, deep but detailed blacks; skies darkened as if through a red filter.',
       lighting_and_shadow:
-        'Use Dramatic sun/cloud; use weather, sun angle, water absorption, night-sky exposure, diffused field light, or telephoto background separation, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Dramatic natural light — storm breaks, raking sun, cloud shadow patterns — chosen to separate planes.',
       texture_and_material:
-        'Render Tonal microdetail; render fur, feathers, plant texture, rock, water, star noise, mist, mud, and environmental micro-detail without plastic artificiality, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Tonal microdetail in rock, bark, water, fur and snow, sharp from front to back.',
       camera_and_composition:
-        'Compose through Landscape (Ansel Adams) field-camera realism, environmental scale, natural light, and patient observational detail; compose through long-lens compression, macro proximity, horizon scale, field patience, eye-level empathy, or monumental stillness, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Grand, timeless; derive mood from patience, wilderness pressure, wonder, cosmic quiet, companion warmth, or fine-art environmental grandeur, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Tripod view camera, near-far depth with everything in focus, strong foreground anchor and grand background.',
+      atmosphere_and_mood: 'Grand and timeless, stillness and scale held in silver tones.',
       rendering_and_quality:
-        'Finish with Masterpiece, sharp; finish as believable field photography with clean detail, natural restraint, and no oversaturated postcard or zoo snapshot look, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Fine-art silver print with deep blacks and no clipped highlights; an animal or object stays the subject, rendered with the same tonal range.',
       key_features:
-        'Zone System fine-art realism; High contrast tonal zones; Black and White Zone System; Dramatic sun/cloud; Landscape (Ansel Adams) field-camera realism, environmental scale, natural light, and patient observational detail',
+        'ten-zone black and white; f/64 front-to-back sharpness; red-filter dark skies; raking dramatic light; silver print',
       creative_brief:
-        "Apply Landscape (Ansel Adams) as a photographic preset over prompt X: preserve the user's requested subject, then route Zone System fine-art realism, Black and White Zone System, Dramatic sun/cloud, Tonal microdetail, and Landscape (Ansel Adams) field-camera realism, environmental scale, natural light, and patient observational detail through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Landscape (Ansel Adams) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,27 +36,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Macro Photography',
     category: '6. Nature And Wildlife',
     negativePrompt:
-      'wide angle, blurry subject, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, zoo snapshot, oversaturated postcard, plastic foliage, fake wildlife pose, friendly nature cliche',
+      'zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, wide angle, blurry subject, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake wildlife pose, friendly nature cliche, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Macro Photography acts as a transferable photographic style router: begin from Extreme close-up, Tiny world, and field and nature photographic system built from natural light, patient timing, environmental scale, and credible ecology, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Field macro photography: a 100 mm macro lens at 1:1 in nature, with a paper-thin plane of focus and a soft diffused flash revealing a tiny world.',
       subject_treatment:
-        'Treat any prompt subject through Shallow depth of field; preserve prompt identity while giving it field realism, habitat pressure, natural scale, or macro/wildlife observation cues, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.',
       color_and_tone:
-        'Grade with Vibrant detail; grade through natural atmosphere, silver-black fine-art values, underwater blue shift, sky exposure, foliage color, or animal camouflage, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Vivid true color on the subject, background dissolved into soft color washes.',
       lighting_and_shadow:
-        'Use Ring flash; use weather, sun angle, water absorption, night-sky exposure, diffused field light, or telephoto background separation, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Diffused flash or ring light close to the subject, balanced with ambient light for the background.',
       texture_and_material:
-        'Render Enlarged surface microtexture; render fur, feathers, plant texture, rock, water, star noise, mist, mud, and environmental micro-detail without plastic artificiality, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Compound eyes, hairs, scales, dew drops and pollen resolved at life size or larger.',
       camera_and_composition:
-        'Compose through Blurry depth field; compose through long-lens compression, macro proximity, horizon scale, field patience, eye-level empathy, or monumental stillness, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Alien, detailed; derive mood from patience, wilderness pressure, wonder, cosmic quiet, companion warmth, or fine-art environmental grandeur, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Very shallow depth of field on the eyes or one key detail, subject filling the frame, eye-level with the creature.',
+      atmosphere_and_mood: 'Intimate and strange, a small alien world seen at its own scale.',
       rendering_and_quality:
-        'Finish with Scientific, abstract; finish as believable field photography with clean detail, natural restraint, and no oversaturated postcard or zoo snapshot look, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
-      key_features: 'Extreme close-up; Tiny world; Vibrant detail; Ring flash; Blurry depth field',
+        'Crisp focal plane with creamy falloff; no wide-angle view and no blurry subject.',
+      key_features:
+        '1:1 magnification; paper-thin focus on the eyes; diffused macro flash; dew and scale detail; creamy background',
       creative_brief:
-        "Apply Macro Photography as a photographic preset over prompt X: preserve the user's requested subject, then route Extreme close-up, Vibrant detail, Ring flash, Enlarged surface microtexture, and Blurry depth field through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Macro Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -65,28 +64,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Wildlife Photography',
     category: '6. Nature And Wildlife',
     negativePrompt:
-      'zoo, cage, pet, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, zoo snapshot, oversaturated postcard, plastic foliage, fake wildlife pose, friendly nature cliche',
+      'zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, zoo, cage, collar, pet, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake wildlife pose, friendly nature cliche, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Wildlife Photography acts as a transferable photographic style router: begin from Patient telephoto field realism, Blurred depth field, and field and nature photographic system built from natural light, patient timing, environmental scale, and credible ecology, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Wildlife field photography: a 500–600 mm lens from a hide or low position, patient observation of a wild animal behaving naturally in its habitat.',
       subject_treatment:
-        'Treat any prompt subject through Telephoto compression; preserve prompt identity while giving it field realism, habitat pressure, natural scale, or macro/wildlife observation cues, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Natural muted field color; grade through natural atmosphere, silver-black fine-art values, underwater blue shift, sky exposure, foliage color, or animal camouflage, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.',
+      color_and_tone: 'Natural muted habitat color, warm low-sun highlights, creamy background.',
       lighting_and_shadow:
-        'Use Golden hour; use weather, sun angle, water absorption, night-sky exposure, diffused field light, or telephoto background separation, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Early or late low sun, backlight or side light for rim on fur and feathers, breath visible in cold air.',
       texture_and_material:
-        'Render Fine natural surface detail; render fur, feathers, plant texture, rock, water, star noise, mist, mud, and environmental micro-detail without plastic artificiality, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Individual hairs, feathers, wet fur, snow and water spray crisp on the animal.',
       camera_and_composition:
-        'Compose through Wildlife Photography field-camera realism, environmental scale, natural light, and patient observational detail; compose through long-lens compression, macro proximity, horizon scale, field patience, eye-level empathy, or monumental stillness, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+        'Eye-level with the animal, telephoto compression, blurred foreground grass or snow, animal looking or moving into space.',
       atmosphere_and_mood:
-        'Keep the mood Patient, observant; derive mood from patience, wilderness pressure, wonder, cosmic quiet, companion warmth, or fine-art environmental grandeur, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Patient and respectful, an unguarded wild moment witnessed from a distance.',
       rendering_and_quality:
-        'Finish with Nat Geo field sharpness; finish as believable field photography with clean detail, natural restraint, and no oversaturated postcard or zoo snapshot look, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Field-magazine sharpness with natural color; no zoo bars, collars or tame poses.',
       key_features:
-        'Patient telephoto field realism; Blurred depth field; Natural muted field color; Golden hour; Wildlife Photography field-camera realism, environmental scale, natural light, and patient observational detail',
+        '600 mm telephoto; eye-level with the animal; low-sun rim light; blurred foreground; natural behavior',
       creative_brief:
-        "Apply Wildlife Photography as a photographic preset over prompt X: preserve the user's requested subject, then route Patient telephoto field realism, Natural muted field color, Golden hour, Fine natural surface detail, and Wildlife Photography field-camera realism, environmental scale, natural light, and patient observational detail through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wildlife Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -94,28 +92,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Astrophotography',
     category: '6. Nature And Wildlife',
     negativePrompt:
-      'day, clouds, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, zoo snapshot, oversaturated postcard, plastic foliage, fake wildlife pose, friendly nature cliche',
+      'zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, daylight, star trails, landscape horizon, day, clouds, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake wildlife pose, friendly nature cliche, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Astrophotography acts as a transferable photographic style router: begin from Long-exposure night-sky imaging, Cosmic exposure texture, and field and nature photographic system built from natural light, patient timing, environmental scale, and credible ecology, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Deep-sky astrophotography: a tracked telescope and hours of stacked exposures revealing nebulae, galaxies, comets and planets against black space.',
       subject_treatment:
-        'Treat any prompt subject through Star trails (optional); preserve prompt identity while giving it field realism, habitat pressure, natural scale, or macro/wildlife observation cues, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.',
       color_and_tone:
-        'Grade with Deep Blue, Purple, White stars; grade through natural atmosphere, silver-black fine-art values, underwater blue shift, sky exposure, foliage color, or animal camouflage, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Hydrogen reds and magentas, oxygen teals, blue reflection nebula, pure black background with pinpoint stars of varied color.',
       lighting_and_shadow:
-        'Use Starlight; use weather, sun angle, water absorption, night-sky exposure, diffused field light, or telephoto background separation, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Only emitted and reflected starlight; faint structures stretched from the dark background.',
       texture_and_material:
-        'Render Noise (stars); render fur, feathers, plant texture, rock, water, star noise, mist, mud, and environmental micro-detail without plastic artificiality, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Wispy gas filaments, dark dust lanes and pillars, round sharp stars with faint diffraction spikes.',
       camera_and_composition:
-        'Compose through Astrophotography field-camera realism, environmental scale, natural light, and patient observational detail; compose through long-lens compression, macro proximity, horizon scale, field patience, eye-level empathy, or monumental stillness, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Cosmic, silent; derive mood from patience, wilderness pressure, wonder, cosmic quiet, companion warmth, or fine-art environmental grandeur, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Telescope framing with the object centered or on a diagonal, no ground or horizon.',
+      atmosphere_and_mood: 'Cosmic and silent, vast distance rendered as quiet structure.',
       rendering_and_quality:
-        'Finish with Long exposure, epic; finish as believable field photography with clean detail, natural restraint, and no oversaturated postcard or zoo snapshot look, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Clean stacked-image look: low noise, no star trails, no painted glow; a ground subject belongs to Milky Way Nightscape instead.',
       key_features:
-        'Long-exposure night-sky imaging; Cosmic exposure texture; Deep Blue, Purple, White stars; Starlight; Astrophotography field-camera realism, environmental scale, natural light, and patient observational detail',
+        'telescope deep-sky view; emission reds and oxygen teals; dust pillars; pinpoint stars; black background',
       creative_brief:
-        "Apply Astrophotography as a photographic preset over prompt X: preserve the user's requested subject, then route Long-exposure night-sky imaging, Deep Blue, Purple, White stars, Starlight, Noise (stars), and Astrophotography field-camera realism, environmental scale, natural light, and patient observational detail through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Astrophotography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -123,28 +120,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Underwater',
     category: '6. Nature And Wildlife',
     negativePrompt:
-      'dry studio light, harsh land lighting, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, zoo snapshot, oversaturated postcard, plastic foliage, fake wildlife pose, friendly nature cliche',
+      'zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, dry studio light, harsh land lighting, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake wildlife pose, friendly nature cliche, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Underwater acts as a transferable photographic style router: begin from Submerged subject, Blue tint, and field and nature photographic system built from natural light, patient timing, environmental scale, and credible ecology, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Underwater photography: a wide-angle lens in a dome housing in clear water, with sun rays, caustics and blue-green depth shaping everything.',
       subject_treatment:
-        'Treat any prompt subject through Weightless drifting contours; preserve prompt identity while giving it field realism, habitat pressure, natural scale, or macro/wildlife observation cues, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.',
       color_and_tone:
-        'Grade with Cyan, Blue cast; grade through natural atmosphere, silver-black fine-art values, underwater blue shift, sky exposure, foliage color, or animal camouflage, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Cyan and deep blue water, color falling off with distance, warm reds only close to the lens or strobe.',
       lighting_and_shadow:
-        'Use Caustics (light rays); use weather, sun angle, water absorption, night-sky exposure, diffused field light, or telephoto background separation, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Sunbeams from the surface, rippling caustics on subjects and sand, optional strobe fill in the foreground.',
       texture_and_material:
-        'Render Bubbles, caustics, refraction; render fur, feathers, plant texture, rock, water, star noise, mist, mud, and environmental micro-detail without plastic artificiality, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Suspended particles, bubbles, drifting hair and fabric, coral and weed moving slowly.',
       camera_and_composition:
-        'Compose through Refraction distortion; compose through long-lens compression, macro proximity, horizon scale, field patience, eye-level empathy, or monumental stillness, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Silent, deep; derive mood from patience, wilderness pressure, wonder, cosmic quiet, companion warmth, or fine-art environmental grandeur, so the preset changes interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Dreamy, weightless; finish as believable field photography with clean detail, natural restraint, and no oversaturated postcard or zoo snapshot look, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        "Upward or level angles toward the surface, subject weightless, snell's window or sun burst when looking up.",
+      atmosphere_and_mood: 'Silent and weightless, slow drifting calm in blue space.',
+      rendering_and_quality: 'Real underwater optics with distance haze; no dry studio light.',
       key_features:
-        'Submerged subject; Blue tint; Cyan, Blue cast; Caustics (light rays); Refraction distortion',
+        'sun rays from the surface; caustic ripples; blue distance falloff; weightless subject; dome wide angle',
       creative_brief:
-        "Apply Underwater as a photographic preset over prompt X: preserve the user's requested subject, then route Submerged subject, Cyan, Blue cast, Caustics (light rays), Bubbles, caustics, refraction, and Refraction distortion through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Underwater as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -152,28 +147,508 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Pet Photography',
     category: '6. Nature And Wildlife',
     negativePrompt:
-      'scary, menacing, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, zoo snapshot, oversaturated postcard, plastic foliage, fake wildlife pose, friendly nature cliche',
+      'zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, menacing, fake wildlife pose, scary, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, friendly nature cliche, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Pet Photography acts as a transferable photographic style router: begin from Playful companion portrait, Eye-level warmth, and field and nature photographic system built from natural light, patient timing, environmental scale, and credible ecology, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Pet photography: companion animals photographed at their own eye level, with a fast lens and patient timing that capture personality.',
       subject_treatment:
-        'Treat any prompt subject through Eye level; preserve prompt identity while giving it field realism, habitat pressure, natural scale, or macro/wildlife observation cues, keeping the original subject, pose, species, object, or environment legible.',
-      color_and_tone:
-        'Grade with Bright, happy; grade through natural atmosphere, silver-black fine-art values, underwater blue shift, sky exposure, foliage color, or animal camouflage, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.',
+      color_and_tone: 'Warm, bright, friendly color; soft background tones that flatter the coat.',
       lighting_and_shadow:
-        'Use Soft; use weather, sun angle, water absorption, night-sky exposure, diffused field light, or telephoto background separation, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
-      texture_and_material:
-        'Render Soft tactile detail; render fur, feathers, plant texture, rock, water, star noise, mist, mud, and environmental micro-detail without plastic artificiality, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Soft window or open shade light, catch-lights in the eyes, gentle backlight on fur.',
+      texture_and_material: 'Fur, whiskers, wet noses and feathers crisp; home textures soft.',
       camera_and_composition:
-        'Compose through Wide-angle near-plane exaggeration; compose through long-lens compression, macro proximity, horizon scale, field patience, eye-level empathy, or monumental stillness, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Playful, sweet; derive mood from patience, wilderness pressure, wonder, cosmic quiet, companion warmth, or fine-art environmental grandeur, so the preset changes interpretation without demanding a specific story, location, or character.',
+        "Camera down at the animal's eye level, 35–85 mm, focus on the nearest eye, expressive head tilt or motion.",
+      atmosphere_and_mood: 'Playful and affectionate, full of character and warmth.',
       rendering_and_quality:
-        'Finish with Cute studio warmth; finish as believable field photography with clean detail, natural restraint, and no oversaturated postcard or zoo snapshot look, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Warm portrait finish with sharp eyes; never menacing unless the prompt asks.',
       key_features:
-        'Playful companion portrait; Eye-level warmth; Bright, happy; Soft; Wide-angle near-plane exaggeration',
+        'animal eye level; sharp nearest eye; soft window light; personality moment; warm friendly color',
       creative_brief:
-        "Apply Pet Photography as a photographic preset over prompt X: preserve the user's requested subject, then route Playful companion portrait, Bright, happy, Soft, Soft tactile detail, and Wide-angle near-plane exaggeration through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pet Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP01-119',
+    name: 'Bird-in-Flight Telephoto',
+    displayName: 'Bird-in-Flight Telephoto',
+    styleAnchors: ['Bird-in-Flight Telephoto', 'bird in flight photography', 'wings fully spread'],
+    category: '6. Nature And Wildlife',
+    domain: 'bird in flight photography',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, perched bird, motion-blurred bird, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bird-in-flight photography: a 600 mm lens tracking a flying bird at 1/4000 s, wings frozen at full extension.',
+      subject_treatment:
+        'Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.',
+      color_and_tone:
+        'Clean sky or blurred habitat background, natural plumage color with low-sun warmth.',
+      lighting_and_shadow:
+        'Low sun lighting the underwing or backlighting translucent flight feathers.',
+      texture_and_material:
+        'Every primary feather separated, water drops or snow frozen as they fall.',
+      camera_and_composition:
+        'Bird filling a third of the frame with space ahead of it, eye sharp, clean uncluttered background.',
+      atmosphere_and_mood: 'Soaring and powerful, motion stopped at its most elegant instant.',
+      rendering_and_quality:
+        'Tack-sharp eye and feathers against smooth background; no motion blur on the bird.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bird-in-Flight Telephoto as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'wings fully spread; 1/4000 s freeze; space ahead of the bird; backlit flight feathers; clean background',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-120',
+    name: 'Camera-Trap Night Flash',
+    displayName: 'Camera-Trap Night Flash',
+    styleAnchors: ['Camera-Trap Night Flash', 'remote camera trap', 'ground-level wide angle'],
+    category: '6. Nature And Wildlife',
+    domain: 'remote camera trap',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, daylight, posed animal, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Camera-trap photography: a remote wide-angle camera low to the ground, fired by an animal crossing its beam at night with a flash close by.',
+      subject_treatment:
+        'Keep the prompt subject and setting; this preset owns the camera placement and lens described below, nothing else.',
+      color_and_tone:
+        'Flash-bright subject, surroundings falling to black, slightly cool flash color.',
+      lighting_and_shadow:
+        'Off-camera flash from one side a meter away, hard shadow behind the animal, quick falloff into night.',
+      texture_and_material:
+        'Fur and eyes vivid, eye-shine from the flash, dew and leaf litter crisp in the foreground.',
+      camera_and_composition:
+        'Camera at ground level with a wide lens, animal close and unaware, sometimes slightly cut off at the edge.',
+      atmosphere_and_mood:
+        'Secret and wild, a glimpse of a nocturnal life no one was there to see.',
+      rendering_and_quality:
+        'Real remote-camera look with some noise; no studio polish or posed animal.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Camera-Trap Night Flash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'ground-level wide angle; close off-camera night flash; eye-shine; black background; unaware animal',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-121',
+    name: 'Long-Exposure Seascape',
+    displayName: 'Long-Exposure Seascape',
+    styleAnchors: [
+      'Long-Exposure Seascape',
+      'long-exposure coastal photography',
+      'silky misted water',
+    ],
+    category: '6. Nature And Wildlife',
+    domain: 'long-exposure coastal photography',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, frozen splash, harsh noon sun, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Long-exposure seascape: a tripod and dense ND filter stretching the exposure to thirty seconds or more, turning moving sea into mist and silk around still rocks.',
+      subject_treatment:
+        'Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.',
+      color_and_tone: 'Soft pastel dusk or cool grey-blue, smooth gradients, dark wet rocks.',
+      lighting_and_shadow: 'Low light at dawn or dusk; soft sky light, no hard shadows.',
+      texture_and_material:
+        'Water smoothed to mist, clouds streaked, rocks and structures sharp and textured.',
+      camera_and_composition:
+        'Low tripod near the waterline, a strong foreground rock or structure, leading lines into the smooth sea.',
+      atmosphere_and_mood: 'Meditative and calm, time made visible as silence.',
+      rendering_and_quality: 'Clean long exposure without noise; no frozen splashing waves.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Long-Exposure Seascape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'silky misted water; streaked clouds; sharp still rocks; low tripod foreground; pastel dusk',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-122',
+    name: 'Milky Way Nightscape',
+    displayName: 'Milky Way Nightscape',
+    styleAnchors: [
+      'Milky Way Nightscape',
+      'wide-field night landscape',
+      'Milky Way arch over land',
+    ],
+    category: '6. Nature And Wildlife',
+    domain: 'wide-field night landscape',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, star trails, painted galaxy, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Milky Way nightscape: a wide fast lens on a tripod capturing the galactic core arching over a landscape subject, stars as points, not trails.',
+      subject_treatment:
+        'Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.',
+      color_and_tone:
+        'Deep blue-black sky, warm dusty core of the Milky Way, faint green airglow, landscape in cool dim tones.',
+      lighting_and_shadow:
+        'Starlight and faint airglow; foreground softly lit by a low-level light or a glowing tent or window.',
+      texture_and_material: 'Dense star fields, dark dust lanes, silhouetted terrain edges.',
+      camera_and_composition:
+        '14–24 mm, landscape subject in the lower third, the arch or band of the Milky Way rising above it.',
+      atmosphere_and_mood: 'Awestruck and quiet, a small earth under an enormous sky.',
+      rendering_and_quality: 'Clean high-ISO exposure, pinpoint stars, no painted galaxies.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Milky Way Nightscape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'Milky Way arch over land; pinpoint stars; landscape in lower third; faint airglow; wide fast lens',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-123',
+    name: 'Supercell Storm Landscape',
+    displayName: 'Supercell Storm Landscape',
+    styleAnchors: [
+      'Supercell Storm Landscape',
+      'severe weather photography',
+      'rotating supercell or shelf cloud',
+    ],
+    category: '6. Nature And Wildlife',
+    domain: 'severe weather photography',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, clear blue sky, HDR halos, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Storm photography: a wide lens capturing the structure of a severe storm — rotating supercells, shelf clouds and walls of rain or dust — towering over the land.',
+      subject_treatment:
+        'Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.',
+      color_and_tone:
+        'Bruised teal, slate and green-grey clouds, a band of warm light under the storm, dark wet ground.',
+      lighting_and_shadow:
+        'Low sun slipping under the cloud base, lighting the land while the sky is dark; lightning optional in the distance.',
+      texture_and_material: 'Striated cloud layers, rain shafts, blowing dust and bending crops.',
+      camera_and_composition:
+        '16–24 mm, low horizon, storm filling two thirds of the frame, a small structure or figure for scale.',
+      atmosphere_and_mood: 'Ominous and awe-struck, a wall of weather advancing slowly.',
+      rendering_and_quality: 'Natural contrast with detailed cloud structure; no HDR halos.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Supercell Storm Landscape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'rotating supercell or shelf cloud; low horizon; light under the cloud base; small scale marker; rain or dust walls',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-124',
+    name: 'Intimate Forest Landscape',
+    displayName: 'Intimate Forest Landscape',
+    styleAnchors: ['Intimate Forest Landscape', 'intimate woodland photography', 'no sky'],
+    category: '6. Nature And Wildlife',
+    domain: 'intimate woodland photography',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, sky, sunburst, grand vista, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Intimate forest landscape: a medium telephoto picking a small, quiet composition out of woodland under soft overcast light, with no sky in the frame.',
+      subject_treatment:
+        'Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.',
+      color_and_tone:
+        'Saturated but subtle moss greens, bark greys and autumn reds; glare removed by a polarizer.',
+      lighting_and_shadow:
+        'Even overcast or fog light, no hard shadows, gentle luminosity in wet leaves.',
+      texture_and_material:
+        'Moss, bark, ferns, wet stone and fallen leaves resolved with rich texture.',
+      camera_and_composition:
+        '70–200 mm, no sky, a pattern of trunks or roots with one subtle focal point, compressed layers.',
+      atmosphere_and_mood: 'Contemplative and hushed, the quiet interior of the woods.',
+      rendering_and_quality: 'Polarized, glare-free overcast color; no grand vistas or sunbursts.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Intimate Forest Landscape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'no sky; overcast polarized color; trunk and root patterns; one quiet focal point; moss and wet texture',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-125',
+    name: 'Backlit Botanical',
+    displayName: 'Backlit Botanical',
+    styleAnchors: [
+      'Backlit Botanical',
+      'backlit plant photography',
+      'light through leaves and petals',
+    ],
+    category: '6. Nature And Wildlife',
+    domain: 'backlit plant photography',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, front flash, flat lighting, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Backlit botanical photography: petals, leaves and seeds shot against the sun or a bright source so their veins and translucency glow.',
+      subject_treatment:
+        'Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.',
+      color_and_tone:
+        'Glowing translucent greens, reds and golds against a dark or softly bright background.',
+      lighting_and_shadow:
+        'Strong backlight through the plant, a rim of light on hairs and edges, dark negative space.',
+      texture_and_material:
+        'Veins, cell patterns, fine hairs and seeds rendered luminous and precise.',
+      camera_and_composition:
+        'Macro or close-up, the plant against a darker background, shallow depth with glowing bokeh.',
+      atmosphere_and_mood: 'Delicate and radiant, fragile living structures lit from within.',
+      rendering_and_quality: 'Clean highlights without clipping in the glowing tissue.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Backlit Botanical as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'light through leaves and petals; glowing veins; rim-lit hairs; dark background; shallow bokeh',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-126',
+    name: 'High-Key Snow Wildlife',
+    displayName: 'High-Key Snow Wildlife',
+    styleAnchors: ['High-Key Snow Wildlife', 'high-key white wildlife', 'overexposed white field'],
+    category: '6. Nature And Wildlife',
+    domain: 'high-key white wildlife',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, grey muddy snow, dark background, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'High-key snow wildlife: an animal in snow or fog exposed two stops bright so the world goes almost pure white and only eyes, nose or dark feathers remain.',
+      subject_treatment:
+        'Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.',
+      color_and_tone:
+        'Near-white field with barely visible texture, small dark accents, very low contrast elsewhere.',
+      lighting_and_shadow:
+        'Flat overcast snow light from the whole sky, leaving almost no shadow anywhere.',
+      texture_and_material: 'Faint fur and snow texture, falling flakes as soft grey dots.',
+      camera_and_composition:
+        'Telephoto, animal small or partly hidden in a vast white field, lots of negative space.',
+      atmosphere_and_mood: 'Minimal and serene, quiet life almost erased by winter.',
+      rendering_and_quality: 'Bright exposure without grey mud or blue cast in the whites.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies High-Key Snow Wildlife as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'overexposed white field; dark eyes and nose as accents; huge negative space; flat snow light; minimal',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-127',
+    name: 'Low-Key Rim-Lit Wildlife',
+    displayName: 'Low-Key Rim-Lit Wildlife',
+    styleAnchors: ['Low-Key Rim-Lit Wildlife', 'low-key wildlife', 'black background'],
+    category: '6. Nature And Wildlife',
+    domain: 'low-key wildlife',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, bright background, flat light, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Low-key rim-lit wildlife: an animal emerging from deep shadow, exposed for a thin backlit rim so most of the frame stays black.',
+      subject_treatment:
+        'Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.',
+      color_and_tone:
+        'Black background, warm or silver rim highlights, a little color in the lit edge.',
+      lighting_and_shadow:
+        'Backlight or strong side light against a dark background; fur, whiskers and breath glowing.',
+      texture_and_material: 'Rim-lit hairs, whiskers, breath vapor or dust as bright lines.',
+      camera_and_composition:
+        'Telephoto, animal partly hidden in darkness, eye or profile catching light.',
+      atmosphere_and_mood: 'Dramatic and mysterious, a powerful creature half revealed.',
+      rendering_and_quality:
+        'Clean noiseless blacks with the thin rim highlights fully protected from clipping.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Low-Key Rim-Lit Wildlife as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'black background; thin rim light on fur; breath or dust glowing; partial reveal; telephoto',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-128',
+    name: 'Focus-Stacked Specimen',
+    displayName: 'Focus-Stacked Specimen',
+    styleAnchors: [
+      'Focus-Stacked Specimen',
+      'focus-stacked specimen photography',
+      'front-to-back sharpness',
+    ],
+    category: '6. Nature And Wildlife',
+    domain: 'focus-stacked specimen photography',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, shallow depth of field, habitat background, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Focus-stacked specimen photography: dozens of macro frames merged so a small specimen is sharp from front to back on a clean white or black background.',
+      subject_treatment:
+        'Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.',
+      color_and_tone:
+        'Accurate neutral color, clean white or black ground, subtle iridescence where present.',
+      lighting_and_shadow:
+        'Diffused dome lighting from all sides, minimal shadow, no hot spots on shiny shells.',
+      texture_and_material:
+        'Every hair, facet, pore and ridge resolved across the whole depth of the specimen.',
+      camera_and_composition:
+        'Specimen centered, straight lateral or dorsal view, generous clean margin.',
+      atmosphere_and_mood: 'Precise and scientific, wonder through exhaustive clarity.',
+      rendering_and_quality: 'Museum-plate clarity with no blurred planes and no stacking halos.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Focus-Stacked Specimen as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'front-to-back sharpness; clean white or black ground; diffused dome light; centered specimen; scientific view',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-129',
+    name: 'Nature Abstract Pattern',
+    displayName: 'Nature Abstract Pattern',
+    styleAnchors: [
+      'Nature Abstract Pattern',
+      'abstract nature detail',
+      'edge-to-edge natural pattern',
+    ],
+    category: '6. Nature And Wildlife',
+    domain: 'abstract nature detail',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, horizon, wide scenic view, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Nature abstract photography: a tight crop on a natural surface — ice, sand, bark, rock, water — until it reads as pure pattern and color.',
+      subject_treatment:
+        'Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.',
+      color_and_tone:
+        'Limited palette from the material itself; contrast pushed just enough to make the pattern sing.',
+      lighting_and_shadow:
+        'Raking light or overcast diffusion, chosen to reveal relief or translucency.',
+      texture_and_material: 'Repetition, fractures, ripples and layers rendered with full detail.',
+      camera_and_composition:
+        'Flat-on or tight telephoto, no horizon and no recognizable scale, pattern filling the frame edge to edge.',
+      atmosphere_and_mood: 'Meditative and mysterious, the world made into its own abstraction.',
+      rendering_and_quality: 'Sharp real texture; not a digital generated pattern.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Nature Abstract Pattern as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'edge-to-edge natural pattern; no horizon or scale; raking light on relief; limited material palette; tight crop',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-130',
+    name: 'Animal-in-Habitat Wide Angle',
+    displayName: 'Animal-in-Habitat Wide Angle',
+    styleAnchors: ['Animal-in-Habitat Wide Angle', 'wide-angle wildlife', 'animal large and close'],
+    category: '6. Nature And Wildlife',
+    domain: 'wide-angle wildlife',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, telephoto compression, blurred background, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Wide-angle wildlife: a remote-triggered or very close wide lens placing the animal large in the foreground with its whole habitat stretching behind.',
+      subject_treatment:
+        'Keep the prompt subject and setting; this preset owns the camera placement and lens described below, nothing else.',
+      color_and_tone: 'Natural daylight color with a bright sky and a well-exposed animal.',
+      lighting_and_shadow:
+        'Soft daylight or low sun with fill so the animal and landscape are both detailed.',
+      texture_and_material: 'Fur or feathers crisp up close; landscape receding in deep focus.',
+      camera_and_composition:
+        '16–24 mm very close to the animal, low angle, deep depth of field showing sky and horizon.',
+      atmosphere_and_mood: 'Intimate yet expansive, the animal inside its whole world.',
+      rendering_and_quality:
+        'Natural wide-angle perspective with mild edge stretch; not telephoto compression.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Animal-in-Habitat Wide Angle as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'animal large and close; habitat stretching behind; low wide angle; deep focus; visible sky',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-131',
+    name: 'Minimalist Fog Landscape',
+    displayName: 'Minimalist Fog Landscape',
+    styleAnchors: ['Minimalist Fog Landscape', 'minimal fog landscape', 'one element in fog'],
+    category: '6. Nature And Wildlife',
+    domain: 'minimal fog landscape',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, busy detail, clear sky, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Minimalist fog landscape: a single simple element isolated in thick fog, with most of the frame left as empty pale space.',
+      subject_treatment:
+        'Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.',
+      color_and_tone:
+        'Soft grey, cream or pale blue, very low contrast, one dark shape as the anchor.',
+      lighting_and_shadow: 'Diffused fog light, no shadows, gradual fading of distant objects.',
+      texture_and_material:
+        'Fog gradients, faint distant forms, crisp detail only on the nearest element.',
+      camera_and_composition:
+        'Small subject placed off-center in large negative space, horizon dissolved or absent.',
+      atmosphere_and_mood: 'Quiet and solitary, the world reduced to one line.',
+      rendering_and_quality:
+        'Smooth fog gradients without banding, and no busy detail competing with the anchor.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Minimalist Fog Landscape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'one element in fog; vast negative space; low-contrast pale palette; dissolving distance; off-center anchor',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-132',
+    name: 'Blackwater Night Dive',
+    displayName: 'Blackwater Night Dive',
+    styleAnchors: ['Blackwater Night Dive', 'blackwater night diving', 'total black water'],
+    category: '6. Nature And Wildlife',
+    domain: 'blackwater night diving',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, sunlit blue water, backscatter, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Blackwater photography: open ocean at night, with tiny drifting larvae and gelatinous creatures lit by a narrow strobe against total black.',
+      subject_treatment:
+        'Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.',
+      color_and_tone:
+        'Pure black background, translucent bodies with iridescent blue, orange and violet accents.',
+      lighting_and_shadow:
+        'Snooted strobe from the side, lighting only the creature; no ambient light.',
+      texture_and_material:
+        'Transparent tissue, glowing organs, fine cilia and fins resolved crisply.',
+      camera_and_composition:
+        'Macro lens, creature centered and floating, no seabed or surface visible.',
+      atmosphere_and_mood: 'Alien and fragile, strange life drifting through the void.',
+      rendering_and_quality:
+        'Clean black water with no backscatter; not the sunlit blue of daytime underwater.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blackwater Night Dive as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'total black water; snooted strobe; translucent larvae; iridescent accents; floating macro subject',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

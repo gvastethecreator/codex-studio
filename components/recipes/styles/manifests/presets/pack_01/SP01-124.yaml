@@ -1,0 +1,79 @@
+schemaVersion: 1
+id: SP01-124
+packId: pack_01
+name: Intimate Forest Landscape
+styleAnchors:
+  - Intimate Forest Landscape
+  - intimate woodland photography
+  - no sky
+displayName: Intimate Forest Landscape
+category: 6. Nature And Wildlife
+domain: intimate woodland photography
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - nature-and-wildlife
+  - forest
+  - intimate-landscape
+  - nature
+visualDna:
+  aesthetic: 'Intimate forest landscape: a medium telephoto picking a small, quiet composition out of woodland under soft overcast light, with no sky in the frame.'
+  subject_treatment: Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.
+  color_and_tone: Saturated but subtle moss greens, bark greys and autumn reds; glare removed by a polarizer.
+  lighting_and_shadow: Even overcast or fog light, no hard shadows, gentle luminosity in wet leaves.
+  texture_and_material: Moss, bark, ferns, wet stone and fallen leaves resolved with rich texture.
+  camera_and_composition: 70–200 mm, no sky, a pattern of trunks or roots with one subtle focal point, compressed layers.
+  atmosphere_and_mood: Contemplative and hushed, the quiet interior of the woods.
+  rendering_and_quality: Polarized, glare-free overcast color; no grand vistas or sunbursts.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Intimate Forest Landscape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: no sky; overcast polarized color; trunk and root patterns; one quiet focal point; moss and wet texture
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - synthetic CGI
+  - zoo snapshot
+  - oversaturated postcard
+  - plastic foliage
+  - substituting a landscape or animal the prompt did not ask for
+  - sky
+  - sunburst
+  - grand vista
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, sky, sunburst, grand vista, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: nature-and-wildlife
+  categoryName: 6. Nature And Wildlife
+  tags:
+    - photography-and-realism
+    - nature-and-wildlife
+    - forest
+    - intimate-landscape
+    - nature
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: intimate woodland photography

@@ -1,0 +1,78 @@
+schemaVersion: 1
+id: SP01-126
+packId: pack_01
+name: High-Key Snow Wildlife
+styleAnchors:
+  - High-Key Snow Wildlife
+  - high-key white wildlife
+  - overexposed white field
+displayName: High-Key Snow Wildlife
+category: 6. Nature And Wildlife
+domain: high-key white wildlife
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - nature-and-wildlife
+  - high-key
+  - snow
+  - wildlife
+visualDna:
+  aesthetic: 'High-key snow wildlife: an animal in snow or fog exposed two stops bright so the world goes almost pure white and only eyes, nose or dark feathers remain.'
+  subject_treatment: Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.
+  color_and_tone: Near-white field with barely visible texture, small dark accents, very low contrast elsewhere.
+  lighting_and_shadow: Flat overcast snow light from the whole sky, leaving almost no shadow anywhere.
+  texture_and_material: Faint fur and snow texture, falling flakes as soft grey dots.
+  camera_and_composition: Telephoto, animal small or partly hidden in a vast white field, lots of negative space.
+  atmosphere_and_mood: Minimal and serene, quiet life almost erased by winter.
+  rendering_and_quality: Bright exposure without grey mud or blue cast in the whites.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies High-Key Snow Wildlife as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: overexposed white field; dark eyes and nose as accents; huge negative space; flat snow light; minimal
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - synthetic CGI
+  - zoo snapshot
+  - oversaturated postcard
+  - plastic foliage
+  - substituting a landscape or animal the prompt did not ask for
+  - grey muddy snow
+  - dark background
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, grey muddy snow, dark background, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: nature-and-wildlife
+  categoryName: 6. Nature And Wildlife
+  tags:
+    - photography-and-realism
+    - nature-and-wildlife
+    - high-key
+    - snow
+    - wildlife
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: high-key white wildlife

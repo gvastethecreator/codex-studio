@@ -1,0 +1,78 @@
+schemaVersion: 1
+id: SP01-129
+packId: pack_01
+name: Nature Abstract Pattern
+styleAnchors:
+  - Nature Abstract Pattern
+  - abstract nature detail
+  - edge-to-edge natural pattern
+displayName: Nature Abstract Pattern
+category: 6. Nature And Wildlife
+domain: abstract nature detail
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - nature-and-wildlife
+  - abstract
+  - pattern
+  - nature
+visualDna:
+  aesthetic: 'Nature abstract photography: a tight crop on a natural surface — ice, sand, bark, rock, water — until it reads as pure pattern and color.'
+  subject_treatment: Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.
+  color_and_tone: Limited palette from the material itself; contrast pushed just enough to make the pattern sing.
+  lighting_and_shadow: Raking light or overcast diffusion, chosen to reveal relief or translucency.
+  texture_and_material: Repetition, fractures, ripples and layers rendered with full detail.
+  camera_and_composition: Flat-on or tight telephoto, no horizon and no recognizable scale, pattern filling the frame edge to edge.
+  atmosphere_and_mood: Meditative and mysterious, the world made into its own abstraction.
+  rendering_and_quality: Sharp real texture; not a digital generated pattern.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Nature Abstract Pattern as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: edge-to-edge natural pattern; no horizon or scale; raking light on relief; limited material palette; tight crop
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - synthetic CGI
+  - zoo snapshot
+  - oversaturated postcard
+  - plastic foliage
+  - substituting a landscape or animal the prompt did not ask for
+  - horizon
+  - wide scenic view
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, horizon, wide scenic view, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: nature-and-wildlife
+  categoryName: 6. Nature And Wildlife
+  tags:
+    - photography-and-realism
+    - nature-and-wildlife
+    - abstract
+    - pattern
+    - nature
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: abstract nature detail

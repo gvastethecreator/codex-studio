@@ -1,0 +1,78 @@
+schemaVersion: 1
+id: SP01-119
+packId: pack_01
+name: Bird-in-Flight Telephoto
+styleAnchors:
+  - Bird-in-Flight Telephoto
+  - bird in flight photography
+  - wings fully spread
+displayName: Bird-in-Flight Telephoto
+category: 6. Nature And Wildlife
+domain: bird in flight photography
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - nature-and-wildlife
+  - birds
+  - telephoto
+  - wildlife
+visualDna:
+  aesthetic: 'Bird-in-flight photography: a 600 mm lens tracking a flying bird at 1/4000 s, wings frozen at full extension.'
+  subject_treatment: Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.
+  color_and_tone: Clean sky or blurred habitat background, natural plumage color with low-sun warmth.
+  lighting_and_shadow: Low sun lighting the underwing or backlighting translucent flight feathers.
+  texture_and_material: Every primary feather separated, water drops or snow frozen as they fall.
+  camera_and_composition: Bird filling a third of the frame with space ahead of it, eye sharp, clean uncluttered background.
+  atmosphere_and_mood: Soaring and powerful, motion stopped at its most elegant instant.
+  rendering_and_quality: Tack-sharp eye and feathers against smooth background; no motion blur on the bird.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bird-in-Flight Telephoto as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: wings fully spread; 1/4000 s freeze; space ahead of the bird; backlit flight feathers; clean background
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - synthetic CGI
+  - zoo snapshot
+  - oversaturated postcard
+  - plastic foliage
+  - substituting a landscape or animal the prompt did not ask for
+  - perched bird
+  - motion-blurred bird
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, perched bird, motion-blurred bird, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: nature-and-wildlife
+  categoryName: 6. Nature And Wildlife
+  tags:
+    - photography-and-realism
+    - nature-and-wildlife
+    - birds
+    - telephoto
+    - wildlife
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: bird in flight photography

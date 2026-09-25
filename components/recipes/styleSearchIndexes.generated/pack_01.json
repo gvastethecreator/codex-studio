@@ -3,7 +3,7 @@
     {
       "id": "pack_01",
       "name": "Photography & Realism",
-      "presetCount": 118
+      "presetCount": 132
     }
   ],
   "presets": [
@@ -1485,6 +1485,246 @@
       "searchableText": "sp01-065 pet photography 6. nature and wildlife nature imaging pack_01 photography & realism nature-and-wildlife photography-and-realism nature-and-wildlife"
     },
     {
+      "id": "SP01-119",
+      "name": "Bird-in-Flight Telephoto",
+      "styleAnchors": [
+        "Bird-in-Flight Telephoto",
+        "bird in flight photography",
+        "wings fully spread"
+      ],
+      "ref": "pack_01/SP01-119.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "nature-and-wildlife",
+      "categoryName": "6. Nature And Wildlife",
+      "domain": "bird in flight photography",
+      "tags": ["photography-and-realism", "nature-and-wildlife", "bird-in-flight-photography"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-119 bird-in-flight telephoto bird in flight photography wings fully spread 6. nature and wildlife nature imaging bird in flight photography pack_01 photography & realism nature-and-wildlife photography-and-realism nature-and-wildlife bird-in-flight-photography"
+    },
+    {
+      "id": "SP01-120",
+      "name": "Camera-Trap Night Flash",
+      "styleAnchors": ["Camera-Trap Night Flash", "remote camera trap", "ground-level wide angle"],
+      "ref": "pack_01/SP01-120.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "nature-and-wildlife",
+      "categoryName": "6. Nature And Wildlife",
+      "domain": "remote camera trap",
+      "tags": ["photography-and-realism", "nature-and-wildlife", "remote-camera-trap"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-120 camera-trap night flash remote camera trap ground-level wide angle 6. nature and wildlife nature imaging remote camera trap pack_01 photography & realism nature-and-wildlife photography-and-realism nature-and-wildlife remote-camera-trap"
+    },
+    {
+      "id": "SP01-121",
+      "name": "Long-Exposure Seascape",
+      "styleAnchors": [
+        "Long-Exposure Seascape",
+        "long-exposure coastal photography",
+        "silky misted water"
+      ],
+      "ref": "pack_01/SP01-121.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "nature-and-wildlife",
+      "categoryName": "6. Nature And Wildlife",
+      "domain": "long-exposure coastal photography",
+      "tags": [
+        "photography-and-realism",
+        "nature-and-wildlife",
+        "long-exposure-coastal-photography"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-121 long-exposure seascape long-exposure coastal photography silky misted water 6. nature and wildlife nature imaging long-exposure coastal photography pack_01 photography & realism nature-and-wildlife photography-and-realism nature-and-wildlife long-exposure-coastal-photography"
+    },
+    {
+      "id": "SP01-122",
+      "name": "Milky Way Nightscape",
+      "styleAnchors": [
+        "Milky Way Nightscape",
+        "wide-field night landscape",
+        "Milky Way arch over land"
+      ],
+      "ref": "pack_01/SP01-122.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "nature-and-wildlife",
+      "categoryName": "6. Nature And Wildlife",
+      "domain": "wide-field night landscape",
+      "tags": ["photography-and-realism", "nature-and-wildlife", "wide-field-night-landscape"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-122 milky way nightscape wide-field night landscape milky way arch over land 6. nature and wildlife nature imaging wide-field night landscape pack_01 photography & realism nature-and-wildlife photography-and-realism nature-and-wildlife wide-field-night-landscape"
+    },
+    {
+      "id": "SP01-123",
+      "name": "Supercell Storm Landscape",
+      "styleAnchors": [
+        "Supercell Storm Landscape",
+        "severe weather photography",
+        "rotating supercell or shelf cloud"
+      ],
+      "ref": "pack_01/SP01-123.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "nature-and-wildlife",
+      "categoryName": "6. Nature And Wildlife",
+      "domain": "severe weather photography",
+      "tags": ["photography-and-realism", "nature-and-wildlife", "severe-weather-photography"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-123 supercell storm landscape severe weather photography rotating supercell or shelf cloud 6. nature and wildlife nature imaging severe weather photography pack_01 photography & realism nature-and-wildlife photography-and-realism nature-and-wildlife severe-weather-photography"
+    },
+    {
+      "id": "SP01-124",
+      "name": "Intimate Forest Landscape",
+      "styleAnchors": ["Intimate Forest Landscape", "intimate woodland photography", "no sky"],
+      "ref": "pack_01/SP01-124.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "nature-and-wildlife",
+      "categoryName": "6. Nature And Wildlife",
+      "domain": "intimate woodland photography",
+      "tags": ["photography-and-realism", "nature-and-wildlife", "intimate-woodland-photography"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-124 intimate forest landscape intimate woodland photography no sky 6. nature and wildlife nature imaging intimate woodland photography pack_01 photography & realism nature-and-wildlife photography-and-realism nature-and-wildlife intimate-woodland-photography"
+    },
+    {
+      "id": "SP01-125",
+      "name": "Backlit Botanical",
+      "styleAnchors": [
+        "Backlit Botanical",
+        "backlit plant photography",
+        "light through leaves and petals"
+      ],
+      "ref": "pack_01/SP01-125.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "nature-and-wildlife",
+      "categoryName": "6. Nature And Wildlife",
+      "domain": "backlit plant photography",
+      "tags": ["photography-and-realism", "nature-and-wildlife", "backlit-plant-photography"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-125 backlit botanical backlit plant photography light through leaves and petals 6. nature and wildlife nature imaging backlit plant photography pack_01 photography & realism nature-and-wildlife photography-and-realism nature-and-wildlife backlit-plant-photography"
+    },
+    {
+      "id": "SP01-126",
+      "name": "High-Key Snow Wildlife",
+      "styleAnchors": [
+        "High-Key Snow Wildlife",
+        "high-key white wildlife",
+        "overexposed white field"
+      ],
+      "ref": "pack_01/SP01-126.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "nature-and-wildlife",
+      "categoryName": "6. Nature And Wildlife",
+      "domain": "high-key white wildlife",
+      "tags": ["photography-and-realism", "nature-and-wildlife", "high-key-white-wildlife"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-126 high-key snow wildlife high-key white wildlife overexposed white field 6. nature and wildlife nature imaging high-key white wildlife pack_01 photography & realism nature-and-wildlife photography-and-realism nature-and-wildlife high-key-white-wildlife"
+    },
+    {
+      "id": "SP01-127",
+      "name": "Low-Key Rim-Lit Wildlife",
+      "styleAnchors": ["Low-Key Rim-Lit Wildlife", "low-key wildlife", "black background"],
+      "ref": "pack_01/SP01-127.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "nature-and-wildlife",
+      "categoryName": "6. Nature And Wildlife",
+      "domain": "low-key wildlife",
+      "tags": ["photography-and-realism", "nature-and-wildlife", "low-key-wildlife"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-127 low-key rim-lit wildlife low-key wildlife black background 6. nature and wildlife nature imaging low-key wildlife pack_01 photography & realism nature-and-wildlife photography-and-realism nature-and-wildlife low-key-wildlife"
+    },
+    {
+      "id": "SP01-128",
+      "name": "Focus-Stacked Specimen",
+      "styleAnchors": [
+        "Focus-Stacked Specimen",
+        "focus-stacked specimen photography",
+        "front-to-back sharpness"
+      ],
+      "ref": "pack_01/SP01-128.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "nature-and-wildlife",
+      "categoryName": "6. Nature And Wildlife",
+      "domain": "focus-stacked specimen photography",
+      "tags": [
+        "photography-and-realism",
+        "nature-and-wildlife",
+        "focus-stacked-specimen-photography"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-128 focus-stacked specimen focus-stacked specimen photography front-to-back sharpness 6. nature and wildlife nature imaging focus-stacked specimen photography pack_01 photography & realism nature-and-wildlife photography-and-realism nature-and-wildlife focus-stacked-specimen-photography"
+    },
+    {
+      "id": "SP01-129",
+      "name": "Nature Abstract Pattern",
+      "styleAnchors": [
+        "Nature Abstract Pattern",
+        "abstract nature detail",
+        "edge-to-edge natural pattern"
+      ],
+      "ref": "pack_01/SP01-129.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "nature-and-wildlife",
+      "categoryName": "6. Nature And Wildlife",
+      "domain": "abstract nature detail",
+      "tags": ["photography-and-realism", "nature-and-wildlife", "abstract-nature-detail"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-129 nature abstract pattern abstract nature detail edge-to-edge natural pattern 6. nature and wildlife nature imaging abstract nature detail pack_01 photography & realism nature-and-wildlife photography-and-realism nature-and-wildlife abstract-nature-detail"
+    },
+    {
+      "id": "SP01-130",
+      "name": "Animal-in-Habitat Wide Angle",
+      "styleAnchors": [
+        "Animal-in-Habitat Wide Angle",
+        "wide-angle wildlife",
+        "animal large and close"
+      ],
+      "ref": "pack_01/SP01-130.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "nature-and-wildlife",
+      "categoryName": "6. Nature And Wildlife",
+      "domain": "wide-angle wildlife",
+      "tags": ["photography-and-realism", "nature-and-wildlife", "wide-angle-wildlife"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-130 animal-in-habitat wide angle wide-angle wildlife animal large and close 6. nature and wildlife nature imaging wide-angle wildlife pack_01 photography & realism nature-and-wildlife photography-and-realism nature-and-wildlife wide-angle-wildlife"
+    },
+    {
+      "id": "SP01-131",
+      "name": "Minimalist Fog Landscape",
+      "styleAnchors": ["Minimalist Fog Landscape", "minimal fog landscape", "one element in fog"],
+      "ref": "pack_01/SP01-131.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "nature-and-wildlife",
+      "categoryName": "6. Nature And Wildlife",
+      "domain": "minimal fog landscape",
+      "tags": ["photography-and-realism", "nature-and-wildlife", "minimal-fog-landscape"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-131 minimalist fog landscape minimal fog landscape one element in fog 6. nature and wildlife nature imaging minimal fog landscape pack_01 photography & realism nature-and-wildlife photography-and-realism nature-and-wildlife minimal-fog-landscape"
+    },
+    {
+      "id": "SP01-132",
+      "name": "Blackwater Night Dive",
+      "styleAnchors": ["Blackwater Night Dive", "blackwater night diving", "total black water"],
+      "ref": "pack_01/SP01-132.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "nature-and-wildlife",
+      "categoryName": "6. Nature And Wildlife",
+      "domain": "blackwater night diving",
+      "tags": ["photography-and-realism", "nature-and-wildlife", "blackwater-night-diving"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-132 blackwater night dive blackwater night diving total black water 6. nature and wildlife nature imaging blackwater night diving pack_01 photography & realism nature-and-wildlife photography-and-realism nature-and-wildlife blackwater-night-diving"
+    },
+    {
       "id": "SP01-025",
       "name": "CCTV Security",
       "ref": "pack_01/SP01-025.yaml",
@@ -1629,5 +1869,5 @@
       "searchableText": "sp01-077 medical photography 7. technical and specialist imaging technical capture pack_01 photography & realism technical-and-specialist-imaging photography-and-realism technical-and-specialist-imaging"
     }
   ],
-  "totalPresetCount": 118
+  "totalPresetCount": 132
 }

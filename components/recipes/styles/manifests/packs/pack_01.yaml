@@ -129,6 +129,20 @@ categories:
       - pack_01/SP01-054.yaml
       - pack_01/SP01-055.yaml
       - pack_01/SP01-065.yaml
+      - pack_01/SP01-119.yaml
+      - pack_01/SP01-120.yaml
+      - pack_01/SP01-121.yaml
+      - pack_01/SP01-122.yaml
+      - pack_01/SP01-123.yaml
+      - pack_01/SP01-124.yaml
+      - pack_01/SP01-125.yaml
+      - pack_01/SP01-126.yaml
+      - pack_01/SP01-127.yaml
+      - pack_01/SP01-128.yaml
+      - pack_01/SP01-129.yaml
+      - pack_01/SP01-130.yaml
+      - pack_01/SP01-131.yaml
+      - pack_01/SP01-132.yaml
   - id: technical-and-specialist-imaging
     name: 7. Technical And Specialist Imaging
     presetRefs:
@@ -251,6 +265,20 @@ presetRefs:
   - pack_01/SP01-054.yaml
   - pack_01/SP01-055.yaml
   - pack_01/SP01-065.yaml
+  - pack_01/SP01-119.yaml
+  - pack_01/SP01-120.yaml
+  - pack_01/SP01-121.yaml
+  - pack_01/SP01-122.yaml
+  - pack_01/SP01-123.yaml
+  - pack_01/SP01-124.yaml
+  - pack_01/SP01-125.yaml
+  - pack_01/SP01-126.yaml
+  - pack_01/SP01-127.yaml
+  - pack_01/SP01-128.yaml
+  - pack_01/SP01-129.yaml
+  - pack_01/SP01-130.yaml
+  - pack_01/SP01-131.yaml
+  - pack_01/SP01-132.yaml
   - pack_01/SP01-025.yaml
   - pack_01/SP01-027.yaml
   - pack_01/SP01-028.yaml

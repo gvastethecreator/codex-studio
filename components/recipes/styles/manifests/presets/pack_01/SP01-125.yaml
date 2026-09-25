@@ -1,0 +1,78 @@
+schemaVersion: 1
+id: SP01-125
+packId: pack_01
+name: Backlit Botanical
+styleAnchors:
+  - Backlit Botanical
+  - backlit plant photography
+  - light through leaves and petals
+displayName: Backlit Botanical
+category: 6. Nature And Wildlife
+domain: backlit plant photography
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - nature-and-wildlife
+  - botanical
+  - backlight
+  - nature
+visualDna:
+  aesthetic: 'Backlit botanical photography: petals, leaves and seeds shot against the sun or a bright source so their veins and translucency glow.'
+  subject_treatment: Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.
+  color_and_tone: Glowing translucent greens, reds and golds against a dark or softly bright background.
+  lighting_and_shadow: Strong backlight through the plant, a rim of light on hairs and edges, dark negative space.
+  texture_and_material: Veins, cell patterns, fine hairs and seeds rendered luminous and precise.
+  camera_and_composition: Macro or close-up, the plant against a darker background, shallow depth with glowing bokeh.
+  atmosphere_and_mood: Delicate and radiant, fragile living structures lit from within.
+  rendering_and_quality: Clean highlights without clipping in the glowing tissue.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Backlit Botanical as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: light through leaves and petals; glowing veins; rim-lit hairs; dark background; shallow bokeh
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - synthetic CGI
+  - zoo snapshot
+  - oversaturated postcard
+  - plastic foliage
+  - substituting a landscape or animal the prompt did not ask for
+  - front flash
+  - flat lighting
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, front flash, flat lighting, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: nature-and-wildlife
+  categoryName: 6. Nature And Wildlife
+  tags:
+    - photography-and-realism
+    - nature-and-wildlife
+    - botanical
+    - backlight
+    - nature
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: backlit plant photography

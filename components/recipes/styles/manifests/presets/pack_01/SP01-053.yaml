@@ -3,7 +3,7 @@ id: SP01-053
 packId: pack_01
 name: Wildlife Photography
 category: 6. Nature And Wildlife
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,54 +12,24 @@ tags:
   - photography-and-realism
   - nature-and-wildlife
 visualDna:
-  aesthetic: >-
-    Wildlife Photography acts as a transferable photographic style router: begin from Patient
-    telephoto field realism, Blurred depth field, and field and nature photographic system built
-    from natural light, patient timing, environmental scale, and credible ecology, then apply the
-    photographic behavior to prompt X instead of recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through Telephoto compression; preserve prompt identity while giving it
-    field realism, habitat pressure, natural scale, or macro/wildlife observation cues, keeping the
-    original subject, pose, species, object, or environment legible.
-  color_and_tone: >-
-    Grade with Natural muted field color; grade through natural atmosphere, silver-black fine-art
-    values, underwater blue shift, sky exposure, foliage color, or animal camouflage, with value
-    separation and white balance choices that feel captured in-camera rather than painted over.
-  lighting_and_shadow: >-
-    Use Golden hour; use weather, sun angle, water absorption, night-sky exposure, diffused field
-    light, or telephoto background separation, preserving believable exposure, shadow density,
-    highlight rolloff, and source motivation.
-  texture_and_material: >-
-    Render Fine natural surface detail; render fur, feathers, plant texture, rock, water, star
-    noise, mist, mud, and environmental micro-detail without plastic artificiality, avoiding both
-    waxy smoothing and noisy texture overlays that hide the prompt content.
-  camera_and_composition: >-
-    Compose through Wildlife Photography field-camera realism, environmental scale, natural light,
-    and patient observational detail; compose through long-lens compression, macro proximity,
-    horizon scale, field patience, eye-level empathy, or monumental stillness, with lens distance,
-    depth, timing, and focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Patient, observant; derive mood from patience, wilderness pressure, wonder, cosmic
-    quiet, companion warmth, or fine-art environmental grandeur, so the preset changes
-    interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Nat Geo field sharpness; finish as believable field photography with clean detail,
-    natural restraint, and no oversaturated postcard or zoo snapshot look, high-resolution
-    photographic detail, and disciplined denoise without losing natural grain where the preset needs
-    it.
-  key_features: >-
-    Patient telephoto field realism; Blurred depth field; Natural muted field color; Golden hour;
-    Wildlife Photography field-camera realism, environmental scale, natural light, and patient
-    observational detail
-  creative_brief: >-
-    Apply Wildlife Photography as a photographic preset over prompt X: preserve the user's requested
-    subject, then route Patient telephoto field realism, Natural muted field color, Golden hour,
-    Fine natural surface detail, and Wildlife Photography field-camera realism, environmental scale,
-    natural light, and patient observational detail through optics, exposure, palette, surface
-    response, timing, and finish without requiring the card image's original subject.
+  aesthetic: 'Wildlife field photography: a 500–600 mm lens from a hide or low position, patient observation of a wild animal behaving naturally in its habitat.'
+  subject_treatment: Keep the prompt subject and setting; apply this nature-photography approach to them without substituting a landscape, animal or plant the prompt did not ask for.
+  color_and_tone: Natural muted habitat color, warm low-sun highlights, creamy background.
+  lighting_and_shadow: Early or late low sun, backlight or side light for rim on fur and feathers, breath visible in cold air.
+  texture_and_material: Individual hairs, feathers, wet fur, snow and water spray crisp on the animal.
+  camera_and_composition: Eye-level with the animal, telephoto compression, blurred foreground grass or snow, animal looking or moving into space.
+  atmosphere_and_mood: Patient and respectful, an unguarded wild moment witnessed from a distance.
+  rendering_and_quality: Field-magazine sharpness with natural color; no zoo bars, collars or tame poses.
+  key_features: 600 mm telephoto; eye-level with the animal; low-sun rim light; blurred foreground; natural behavior
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wildlife Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - zoo snapshot
+  - oversaturated postcard
+  - plastic foliage
+  - substituting a landscape or animal the prompt did not ask for
   - zoo
   - cage
+  - collar
   - pet
   - illustration
   - painting
@@ -74,18 +44,19 @@ avoidRules:
   - readable text
   - signature
   - low resolution
-  - zoo snapshot
-  - oversaturated postcard
-  - plastic foliage
   - fake wildlife pose
   - friendly nature cliche
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-053.webp
 attributes:
-  negativePrompt: >-
-    zoo, cage, pet, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic
-    CGI, plastic render, watermark, readable text, signature, low resolution, zoo snapshot,
-    oversaturated postcard, plastic foliage, fake wildlife pose, friendly nature cliche
+  negativePrompt: zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, zoo, cage, collar, pet, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake wildlife pose, friendly nature cliche, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
