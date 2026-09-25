@@ -84,7 +84,7 @@ const spec: Spec = {
       [
         'Brass band anime frame of a trumpet player on a school rooftop at sunset, the bell of her trumpet reflecting the whole orange sky, sections of the band practicing in open windows below. No readable text or logo.',
         'Brass band anime close-up of fingers pressing trumpet valves, a bead of valve oil catching the light. No readable text or logo.',
-        "Brass band anime frame of a tuba player sitting on the steps after summer practice, sweaty and smiling, the huge polished bell reflecting the whole school courtyard and cicadas in the trees. No readable text or logo.",
+        'Brass band anime frame of a tuba player sitting on the steps after summer practice, sweaty and smiling, the huge polished bell reflecting the whole school courtyard and cicadas in the trees. No readable text or logo.',
       ],
     ),
     'SP05-368': u(
@@ -107,7 +107,7 @@ const spec: Spec = {
       },
       [
         'Jazz anime frame of a young saxophonist taking a midnight solo in a smoky basement club, notes drawn as rising golden curves in the spotlight, the pianist grinning and the audience leaning in from dark tables. No readable text or logo.',
-        "Jazz anime frame of a drummer brushing a snare with eyes closed in a dim club, smoke curling through a blue spotlight and the brushes leaving soft swirls of light in the air. No readable text or logo.",
+        'Jazz anime frame of a drummer brushing a snare with eyes closed in a dim club, smoke curling through a blue spotlight and the brushes leaving soft swirls of light in the air. No readable text or logo.',
         'Jazz anime frame of a bassist walking home at dawn with the instrument case on her back. No readable text or logo.',
       ],
     ),
@@ -152,7 +152,7 @@ const spec: Spec = {
       [
         'Indie acoustic anime frame of a shy boy playing a guitar on the floor of a small bedroom for one friend sitting on the bed, a single warm lamp, knitted sweaters and records stacked against the wall. No readable text or logo.',
         'Indie anime frame of a girl singing into a phone recorder on a balcony at night. No readable text or logo.',
-        "Indie anime frame of a busker playing an acoustic guitar to a single small child in a train station tunnel late at night, the case open with a few coins and warm light from one lamp. No readable text or logo.",
+        'Indie anime frame of a busker playing an acoustic guitar to a single small child in a train station tunnel late at night, the case open with a few coins and warm light from one lamp. No readable text or logo.',
       ],
     ),
     'SP05-371': u(
@@ -176,7 +176,7 @@ const spec: Spec = {
       [
         'Orchestra anime frame of a young violin soloist at the climax of a concerto, the full orchestra behind her, swirling ribbons of colored sound rising into the gilded concert hall and the conductor mid-leap. No readable text or logo.',
         "Orchestra anime close-up of a cellist's bow flying across the strings, rosin dust in the light. No readable text or logo.",
-        "Orchestra anime frame of an empty concert hall after the show, one percussionist alone on stage packing a timpani mallet case while the house lights fade and programs lie on the red seats. No readable text or logo.",
+        'Orchestra anime frame of an empty concert hall after the show, one percussionist alone on stage packing a timpani mallet case while the house lights fade and programs lie on the red seats. No readable text or logo.',
       ],
     ),
     'SP05-372': u(
@@ -199,7 +199,7 @@ const spec: Spec = {
       [
         'Allegorical stage anime frame of two actresses facing each other under crossing spotlights, their giant shadows battling on the backdrop behind them, a single red rose lying center stage between them. No readable text or logo.',
         'Allegorical stage anime frame of a masked king and a jester trading places in a spotlight. No readable text or logo.',
-        "Allegorical stage anime frame of a dancer bound by long red ribbons held by unseen hands in the wings, straining toward a spotlight at center stage, her shadow huge on the backdrop. No readable text or logo.",
+        'Allegorical stage anime frame of a dancer bound by long red ribbons held by unseen hands in the wings, straining toward a spotlight at center stage, her shadow huge on the backdrop. No readable text or logo.',
       ],
     ),
   },

@@ -155,7 +155,7 @@ const spec: Spec = {
       [
         'Synchronized team anime frame of a cheer squad throwing a flyer high above a human pyramid, every teammate mirrored perfectly, bright team colors against a clear blue sky. No readable text or logo.',
         'Synchronized anime frame of two divers leaving the platform in perfect unison, mirrored bodies against the pool blue. No readable text or logo.',
-        "Synchronized anime overhead frame of eight swimmers forming a blooming flower pattern in a turquoise pool, legs rising in perfect unison, ripples spreading in rings and the audience reflected at the edges. No readable text or logo.",
+        'Synchronized anime overhead frame of eight swimmers forming a blooming flower pattern in a turquoise pool, legs rising in perfect unison, ripples spreading in rings and the audience reflected at the edges. No readable text or logo.',
       ],
     ),
     'SP05-364': u(
@@ -178,7 +178,7 @@ const spec: Spec = {
       },
       [
         'Theater rehearsal anime frame of a lone actress on a bare black stage under a single work light, tape marks on the floor, repeating the same gesture for the twentieth time while a director watches from the dark seats. No readable text or logo.',
-        "Rehearsal anime close-up of an actor mid-line with tears and sweat on his face under a harsh work light, the rest of the black box empty and a roll of tape by his feet. No readable text or logo.",
+        'Rehearsal anime close-up of an actor mid-line with tears and sweat on his face under a harsh work light, the rest of the black box empty and a roll of tape by his feet. No readable text or logo.',
         'Rehearsal anime frame of a cast lying on the stage floor at 2 a.m., exhausted and laughing. No readable text or logo.',
       ],
     ),
