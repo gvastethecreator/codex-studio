@@ -479,9 +479,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'painted crooked sets; elongated looming shadows; zig-zag perspective; theatrical makeup; stark monochrome',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-131',
@@ -517,9 +514,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'blue backlit fog; orange torch key; rim-lit warriors; practical rubber creatures; smoky altars',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-132',
@@ -546,9 +540,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Italian Neorealism as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'real locations; non-actor faces; available daylight; eye-level framing; soft grey black and white',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -580,9 +571,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Peplum Sword-and-Sandal Epic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'painted skies; plaster temples; oiled strongmen; Eastmancolor gold and purple; widescreen tableaux',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

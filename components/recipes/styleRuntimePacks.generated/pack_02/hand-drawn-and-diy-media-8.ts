@@ -194,9 +194,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'blue ballpoint hatching; lined notebook paper; red margin line; ink blobs and grooves; spilling doodle',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-164',
@@ -225,9 +222,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sticky-Note Wall Mosaic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'square sticky-note pixels; limited note colors; curled corners; grid gaps; straight-on wall view',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -262,9 +256,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'one continuous line; stair-stepped diagonals; silver-grey screen; red toy frame; zig-zag fills',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-166',
@@ -297,9 +288,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fogged Mirror Finger Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'fingertip lines in fog; drips running down; milky white glass; clear view through the lines; ephemeral',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -334,9 +322,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'stick grooves in wet sand; raking low sun; water filling lines; wave edge nearby; high angle view',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-168',
@@ -369,9 +354,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'gouged grooves in varnished wood; ink-filled cuts; older carvings underneath; splintered edges; window light',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-169',
@@ -400,9 +382,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kraft Paper Bag Marker Sketch as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'brown kraft ground; black marker and white highlights; bag folds; marker bleed; one red accent',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -435,9 +414,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'filled graph-paper squares; streaky felt pen; pale blue grid; limited colors; hand-made pixels',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-171',
@@ -465,9 +441,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dusty Car Window Drawing as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'finger lines in grime; dark clean glass through strokes; smudged palm tones; drip streaks; straight-on window',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -502,9 +475,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'rubbed textures composing the subject; waxy directional strokes; leaf and wood grain patterns; thin paper; crayon color',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-173',
@@ -533,9 +503,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'pen lines on skin; ink skipping creases; faded rubbed patches; close hand view; not a tattoo',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-174',
@@ -563,9 +530,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Glowing Peg-Board Picture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'glowing translucent pegs; black backlit board; staggered dot grid; glow halos; limited peg colors',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -597,9 +561,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'looping hypotrochoid rosettes; gel-pen colors; overlapping loop density; slipped-wheel wobble; white paper',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-176',
@@ -628,9 +589,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bedsheet Banner Paint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'house paint on bedsheet; bleeding into weave; wrinkles and drips; backlit thin fabric; hung by the corners',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

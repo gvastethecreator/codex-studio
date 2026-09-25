@@ -111,9 +111,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'fan-shaped sector; speckle noise; bright echo boundaries; dark fluid spaces; acoustic shadows',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-147',
@@ -141,9 +138,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies MRI Slice as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'thin cross-section slice; smooth greyscale soft tissue; black background; sagittal or axial view; faint ringing',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -179,9 +173,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'ivory reconstructed solids; translucent outer shell; cut-away reveal; slice stepping; black background',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-149',
@@ -212,9 +203,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'amber acoustic relief; long black shadows; central nadir stripe; scan-line texture; top-down swath',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-150',
@@ -243,9 +231,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Radar PPI Scope as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'rotating sweep line; fading phosphor echoes; round scope; range rings; green glow on black',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -279,9 +264,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'red vegetation; black-blue water; cyan cities; orbital top-down; near-infrared false color',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-152',
@@ -309,9 +291,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Synthetic Aperture Radar as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'speckled greyscale; black smooth water; bright metal returns; radar shadow on slopes; layover distortion',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -346,9 +325,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'moonless night made grey daylight; heavy grain; stars visible; blown lamps; no green tint',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-154',
@@ -378,9 +354,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'tracer hot spots; coarse counting noise; blurry outline; paired front and back views; heat-scale color',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-155',
@@ -409,9 +382,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hyperspectral Data Cube as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'isometric data cube; subject on the top face; rainbow spectral sides; band striations; dark background',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -446,9 +416,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'stacked reflection bands; wiggle traces; fault offsets; red-white-blue polarity; wide cross-section',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-157',
@@ -482,9 +449,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'hyperbola arcs over buried objects; banded background; horizontal profile; void reflections; grey radargram',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-158',
@@ -517,9 +481,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'white vapor trails on black; raking side light; straight and curling tracks; fat alpha streaks; top-down chamber view',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-159',
@@ -548,9 +509,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bubble Chamber Photograph as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'dotted bubble tracks; tight spirals; V-shaped decays; fiducial crosses; archival film frame',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -586,9 +544,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'orange-red retinal disc; branching vessels; pale optic disc; black circular surround; flash center',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-161',
@@ -622,9 +577,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'glowing colored channels; black background; thin optical section; filament and nucleus detail; channel overlap',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-162',
@@ -656,9 +608,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Satellite Night Lights as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'gold city lights on black; road webs; dark mountain gaps; blue limb airglow; orbital view',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

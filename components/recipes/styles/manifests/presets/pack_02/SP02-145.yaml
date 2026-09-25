@@ -51,12 +51,10 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
-assets: {}
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP02-145.webp
 attributes:
   negativePrompt: illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, sharp detail, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
-  previewStatus: pending
-  ui:
-    previewStatus: pending
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
@@ -72,5 +70,5 @@ taxonomy:
     - image_generate
     - image_edit
     - style_preset_card
-  hasDefaultImage: false
+  hasDefaultImage: true
   domain: 110 pocket camera snapshot

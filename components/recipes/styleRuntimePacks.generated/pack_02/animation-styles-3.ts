@@ -451,9 +451,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'jointed black paper figures; backlit color gradient; lace-cut detail; strict profiles; layered silhouette scenery',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-135',
@@ -483,9 +480,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pinscreen Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'pin-shadow tones; velvety grey stipple; forms emerging from darkness; no outlines; oblique light',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -518,9 +512,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Charcoal Erasure Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'ghost traces of earlier frames; eraser streaks; smudged charcoal; paper tooth; fixed drawing under camera',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -556,9 +547,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'held cels with moving mouths; thick outlines; repeating painted background; flat saturated color; cel dust',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-138',
@@ -592,9 +580,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Direct-on-Film Scratch Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'scratched white lines on black; translucent dyes; jittering hand marks; projector glow; bold simple figures',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

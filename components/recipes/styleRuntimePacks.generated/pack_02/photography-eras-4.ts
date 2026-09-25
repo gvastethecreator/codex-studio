@@ -383,9 +383,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'paper-negative fiber texture; warm brown-lavender tones; matte salted paper; soft broad masses; low contrast',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-140',
@@ -419,9 +416,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'glossy sepia-purple albumen; mounted card with rounded corners; painted studio backdrop; foxing; formal pose',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-141',
@@ -452,9 +446,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pictorialist Platinum Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'soft-focus bloom; long warm grey scale; matte platinum paper; misty backlight; painterly composition',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -489,9 +480,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'hand-tinted transparent dyes; monochrome base; projected glow; rounded mask; tints slipping past edges',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-143',
@@ -525,9 +513,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'blank white sky; extreme land detail; warm albumen browns; misted moving water; high vantage survey view',
     },
-    ui: {
-      previewStatus: 'pending',
-    },
   },
   {
     id: 'SP02-144',
@@ -554,9 +539,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 1970s Faded Color Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'faded cyan dye; magenta-orange cast; yellowed whites; satin print surface; snapshot framing',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
   {
@@ -585,9 +567,6 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 1980s Pocket Instamatic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
       key_features:
         'heavy 110 grain; soft fixed focus; flash bar hot center; saturated muddy color; glossy small print',
-    },
-    ui: {
-      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];
