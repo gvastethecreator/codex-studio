@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-210
+packId: pack_15
+name: Squatpunk
+styleAnchors:
+  - Squatpunk
+  - squatted building culture punk
+  - reclaimed buildings
+displayName: Squatpunk
+category: 6. Street, Riot & DIY Punks
+domain: squatted building culture punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - street-riot-and-diy-punks
+  - squatpunk
+  - punk
+  - street
+visualDna:
+  aesthetic: 'Squatpunk: abandoned buildings reclaimed by communities, with scrap barricades, communal kitchens, painted murals and rooms rebuilt from salvage.'
+  subject_treatment: Keep the prompt's subject and setting; move it into a reclaimed abandoned building full of salvaged furniture, murals and handmade repairs.
+  color_and_tone: Faded concrete greys and brick red with bright hand-painted mural colors and warm lamps.
+  lighting_and_shadow: Mixed light from broken windows, string lights and candles in dim rooms.
+  texture_and_material: Cracked plaster, scrap wood, painted walls, mattresses, salvaged doors and plants.
+  camera_and_composition: Busy interiors packed with people, handmade furniture and layered repairs.
+  atmosphere_and_mood: Defiant, crowded and warm, a home built by people who refused to leave.
+  rendering_and_quality: Richly cluttered illustration with layered textures and warm pockets of light.
+  creative_brief: "Squatpunk: abandoned buildings reclaimed by communities, with scrap barricades, communal kitchens, painted murals and rooms rebuilt from salvage. Carry it through reclaimed buildings, salvage furniture, murals, communal warmth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: reclaimed buildings; salvage furniture; murals; communal warmth
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - readable slogans or band names
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable slogans or band names, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: street-riot-and-diy-punks
+  categoryName: 6. Street, Riot & DIY Punks
+  tags:
+    - curation-v2
+    - street-riot-and-diy-punks
+    - squatpunk
+    - punk
+    - street
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: squatted building culture punk

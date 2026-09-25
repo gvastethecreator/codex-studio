@@ -131,6 +131,20 @@ categories:
       - pack_15/SP15-104.yaml
       - pack_15/SP15-105.yaml
       - pack_15/SP15-106.yaml
+      - pack_15/SP15-210.yaml
+      - pack_15/SP15-211.yaml
+      - pack_15/SP15-212.yaml
+      - pack_15/SP15-213.yaml
+      - pack_15/SP15-214.yaml
+      - pack_15/SP15-215.yaml
+      - pack_15/SP15-216.yaml
+      - pack_15/SP15-217.yaml
+      - pack_15/SP15-218.yaml
+      - pack_15/SP15-219.yaml
+      - pack_15/SP15-220.yaml
+      - pack_15/SP15-221.yaml
+      - pack_15/SP15-222.yaml
+      - pack_15/SP15-223.yaml
   - id: media-vapor-and-glitch-punks
     name: 7. Media, Vapor & Glitch Punks
     presetRefs:
@@ -266,6 +280,20 @@ presetRefs:
   - pack_15/SP15-104.yaml
   - pack_15/SP15-105.yaml
   - pack_15/SP15-106.yaml
+  - pack_15/SP15-210.yaml
+  - pack_15/SP15-211.yaml
+  - pack_15/SP15-212.yaml
+  - pack_15/SP15-213.yaml
+  - pack_15/SP15-214.yaml
+  - pack_15/SP15-215.yaml
+  - pack_15/SP15-216.yaml
+  - pack_15/SP15-217.yaml
+  - pack_15/SP15-218.yaml
+  - pack_15/SP15-219.yaml
+  - pack_15/SP15-220.yaml
+  - pack_15/SP15-221.yaml
+  - pack_15/SP15-222.yaml
+  - pack_15/SP15-223.yaml
   - pack_15/SP15-107.yaml
   - pack_15/SP15-108.yaml
   - pack_15/SP15-109.yaml

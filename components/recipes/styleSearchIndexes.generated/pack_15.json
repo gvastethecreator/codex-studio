@@ -3,7 +3,7 @@
     {
       "id": "pack_15",
       "name": "Punk Spectrum Vault",
-      "presetCount": 122
+      "presetCount": 136
     }
   ],
   "presets": [
@@ -1498,6 +1498,214 @@
       "searchableText": "sp15-106 crustpunk 6. street, riot & diy punks diy futures pack_15 punk spectrum vault street-riot-and-diy-punks punk-spectrum-vault street-riot-and-diy-punks"
     },
     {
+      "id": "SP15-210",
+      "name": "Squatpunk",
+      "styleAnchors": ["Squatpunk", "squatted building culture punk", "reclaimed buildings"],
+      "ref": "pack_15/SP15-210.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "street-riot-and-diy-punks",
+      "categoryName": "6. Street, Riot & DIY Punks",
+      "domain": "squatted building culture punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "street-riot-and-diy-punks",
+        "squatted-building-culture-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-210 squatpunk squatted building culture punk reclaimed buildings 6. street, riot & diy punks diy futures squatted building culture punk pack_15 punk spectrum vault street-riot-and-diy-punks punk-spectrum-vault street-riot-and-diy-punks squatted-building-culture-punk"
+    },
+    {
+      "id": "SP15-211",
+      "name": "Buskerpunk",
+      "styleAnchors": ["Buskerpunk", "street performer culture punk", "one-man bands"],
+      "ref": "pack_15/SP15-211.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "street-riot-and-diy-punks",
+      "categoryName": "6. Street, Riot & DIY Punks",
+      "domain": "street performer culture punk",
+      "tags": ["punk-spectrum-vault", "street-riot-and-diy-punks", "street-performer-culture-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-211 buskerpunk street performer culture punk one-man bands 6. street, riot & diy punks diy futures street performer culture punk pack_15 punk spectrum vault street-riot-and-diy-punks punk-spectrum-vault street-riot-and-diy-punks street-performer-culture-punk"
+    },
+    {
+      "id": "SP15-212",
+      "name": "Stencilpunk",
+      "styleAnchors": ["Stencilpunk", "layered spray stencil punk", "cut stencil layers"],
+      "ref": "pack_15/SP15-212.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "street-riot-and-diy-punks",
+      "categoryName": "6. Street, Riot & DIY Punks",
+      "domain": "layered spray stencil punk",
+      "tags": ["punk-spectrum-vault", "street-riot-and-diy-punks", "layered-spray-stencil-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-212 stencilpunk layered spray stencil punk cut stencil layers 6. street, riot & diy punks diy futures layered spray stencil punk pack_15 punk spectrum vault street-riot-and-diy-punks punk-spectrum-vault street-riot-and-diy-punks layered-spray-stencil-punk"
+    },
+    {
+      "id": "SP15-213",
+      "name": "Protestpunk",
+      "styleAnchors": ["Protestpunk", "giant puppet protest parade punk", "giant puppets"],
+      "ref": "pack_15/SP15-213.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "street-riot-and-diy-punks",
+      "categoryName": "6. Street, Riot & DIY Punks",
+      "domain": "giant puppet protest parade punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "street-riot-and-diy-punks",
+        "giant-puppet-protest-parade-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-213 protestpunk giant puppet protest parade punk giant puppets 6. street, riot & diy punks diy futures giant puppet protest parade punk pack_15 punk spectrum vault street-riot-and-diy-punks punk-spectrum-vault street-riot-and-diy-punks giant-puppet-protest-parade-punk"
+    },
+    {
+      "id": "SP15-214",
+      "name": "Courierpunk",
+      "styleAnchors": ["Courierpunk", "bike messenger culture punk", "fixed-gear bikes"],
+      "ref": "pack_15/SP15-214.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "street-riot-and-diy-punks",
+      "categoryName": "6. Street, Riot & DIY Punks",
+      "domain": "bike messenger culture punk",
+      "tags": ["punk-spectrum-vault", "street-riot-and-diy-punks", "bike-messenger-culture-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-214 courierpunk bike messenger culture punk fixed-gear bikes 6. street, riot & diy punks diy futures bike messenger culture punk pack_15 punk spectrum vault street-riot-and-diy-punks punk-spectrum-vault street-riot-and-diy-punks bike-messenger-culture-punk"
+    },
+    {
+      "id": "SP15-215",
+      "name": "Garagepunk",
+      "styleAnchors": ["Garagepunk", "garage band and workshop punk", "egg-carton walls"],
+      "ref": "pack_15/SP15-215.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "street-riot-and-diy-punks",
+      "categoryName": "6. Street, Riot & DIY Punks",
+      "domain": "garage band and workshop punk",
+      "tags": ["punk-spectrum-vault", "street-riot-and-diy-punks", "garage-band-and-workshop-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-215 garagepunk garage band and workshop punk egg-carton walls 6. street, riot & diy punks diy futures garage band and workshop punk pack_15 punk spectrum vault street-riot-and-diy-punks punk-spectrum-vault street-riot-and-diy-punks garage-band-and-workshop-punk"
+    },
+    {
+      "id": "SP15-216",
+      "name": "Hardcorepunk",
+      "styleAnchors": ["Hardcorepunk", "basement hardcore show punk", "stage dives"],
+      "ref": "pack_15/SP15-216.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "street-riot-and-diy-punks",
+      "categoryName": "6. Street, Riot & DIY Punks",
+      "domain": "basement hardcore show punk",
+      "tags": ["punk-spectrum-vault", "street-riot-and-diy-punks", "basement-hardcore-show-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-216 hardcorepunk basement hardcore show punk stage dives 6. street, riot & diy punks diy futures basement hardcore show punk pack_15 punk spectrum vault street-riot-and-diy-punks punk-spectrum-vault street-riot-and-diy-punks basement-hardcore-show-punk"
+    },
+    {
+      "id": "SP15-217",
+      "name": "Grrrlpunk",
+      "styleAnchors": ["Grrrlpunk", "feminist DIY riot punk", "cut-and-paste collage"],
+      "ref": "pack_15/SP15-217.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "street-riot-and-diy-punks",
+      "categoryName": "6. Street, Riot & DIY Punks",
+      "domain": "feminist DIY riot punk",
+      "tags": ["punk-spectrum-vault", "street-riot-and-diy-punks", "feminist-diy-riot-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-217 grrrlpunk feminist diy riot punk cut-and-paste collage 6. street, riot & diy punks diy futures feminist diy riot punk pack_15 punk spectrum vault street-riot-and-diy-punks punk-spectrum-vault street-riot-and-diy-punks feminist-diy-riot-punk"
+    },
+    {
+      "id": "SP15-218",
+      "name": "Fleamarketpunk",
+      "styleAnchors": ["Fleamarketpunk", "flea market salvage punk", "mismatched antiques"],
+      "ref": "pack_15/SP15-218.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "street-riot-and-diy-punks",
+      "categoryName": "6. Street, Riot & DIY Punks",
+      "domain": "flea market salvage punk",
+      "tags": ["punk-spectrum-vault", "street-riot-and-diy-punks", "flea-market-salvage-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-218 fleamarketpunk flea market salvage punk mismatched antiques 6. street, riot & diy punks diy futures flea market salvage punk pack_15 punk spectrum vault street-riot-and-diy-punks punk-spectrum-vault street-riot-and-diy-punks flea-market-salvage-punk"
+    },
+    {
+      "id": "SP15-219",
+      "name": "Rooftoppunk",
+      "styleAnchors": ["Rooftoppunk", "rooftop DIY culture punk", "water towers"],
+      "ref": "pack_15/SP15-219.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "street-riot-and-diy-punks",
+      "categoryName": "6. Street, Riot & DIY Punks",
+      "domain": "rooftop DIY culture punk",
+      "tags": ["punk-spectrum-vault", "street-riot-and-diy-punks", "rooftop-diy-culture-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-219 rooftoppunk rooftop diy culture punk water towers 6. street, riot & diy punks diy futures rooftop diy culture punk pack_15 punk spectrum vault street-riot-and-diy-punks punk-spectrum-vault street-riot-and-diy-punks rooftop-diy-culture-punk"
+    },
+    {
+      "id": "SP15-220",
+      "name": "Wheatpastepunk",
+      "styleAnchors": ["Wheatpastepunk", "wheatpaste poster culture punk", "layered posters"],
+      "ref": "pack_15/SP15-220.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "street-riot-and-diy-punks",
+      "categoryName": "6. Street, Riot & DIY Punks",
+      "domain": "wheatpaste poster culture punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "street-riot-and-diy-punks",
+        "wheatpaste-poster-culture-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-220 wheatpastepunk wheatpaste poster culture punk layered posters 6. street, riot & diy punks diy futures wheatpaste poster culture punk pack_15 punk spectrum vault street-riot-and-diy-punks punk-spectrum-vault street-riot-and-diy-punks wheatpaste-poster-culture-punk"
+    },
+    {
+      "id": "SP15-221",
+      "name": "Breakpunk",
+      "styleAnchors": ["Breakpunk", "breakdance cypher punk", "cardboard mats"],
+      "ref": "pack_15/SP15-221.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "street-riot-and-diy-punks",
+      "categoryName": "6. Street, Riot & DIY Punks",
+      "domain": "breakdance cypher punk",
+      "tags": ["punk-spectrum-vault", "street-riot-and-diy-punks", "breakdance-cypher-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-221 breakpunk breakdance cypher punk cardboard mats 6. street, riot & diy punks diy futures breakdance cypher punk pack_15 punk spectrum vault street-riot-and-diy-punks punk-spectrum-vault street-riot-and-diy-punks breakdance-cypher-punk"
+    },
+    {
+      "id": "SP15-222",
+      "name": "Lowriderpunk",
+      "styleAnchors": ["Lowriderpunk", "lowrider car culture punk", "candy paint flake"],
+      "ref": "pack_15/SP15-222.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "street-riot-and-diy-punks",
+      "categoryName": "6. Street, Riot & DIY Punks",
+      "domain": "lowrider car culture punk",
+      "tags": ["punk-spectrum-vault", "street-riot-and-diy-punks", "lowrider-car-culture-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-222 lowriderpunk lowrider car culture punk candy paint flake 6. street, riot & diy punks diy futures lowrider car culture punk pack_15 punk spectrum vault street-riot-and-diy-punks punk-spectrum-vault street-riot-and-diy-punks lowrider-car-culture-punk"
+    },
+    {
+      "id": "SP15-223",
+      "name": "Stickerbombpunk",
+      "styleAnchors": ["Stickerbombpunk", "sticker bomb collage punk", "overlapping stickers"],
+      "ref": "pack_15/SP15-223.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "street-riot-and-diy-punks",
+      "categoryName": "6. Street, Riot & DIY Punks",
+      "domain": "sticker bomb collage punk",
+      "tags": ["punk-spectrum-vault", "street-riot-and-diy-punks", "sticker-bomb-collage-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-223 stickerbombpunk sticker bomb collage punk overlapping stickers 6. street, riot & diy punks diy futures sticker bomb collage punk pack_15 punk spectrum vault street-riot-and-diy-punks punk-spectrum-vault street-riot-and-diy-punks sticker-bomb-collage-punk"
+    },
+    {
       "id": "SP15-107",
       "name": "Vaporpunk",
       "ref": "pack_15/SP15-107.yaml",
@@ -1690,5 +1898,5 @@
       "searchableText": "sp15-122 low-tech punk 10. primitive, stone & salvage punks primitive & salvage futures pack_15 punk spectrum vault primitive-stone-and-salvage-punks punk-spectrum-vault primitive-stone-and-salvage-punks"
     }
   ],
-  "totalPresetCount": 122
+  "totalPresetCount": 136
 }

@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-222
+packId: pack_15
+name: Lowriderpunk
+styleAnchors:
+  - Lowriderpunk
+  - lowrider car culture punk
+  - candy paint flake
+displayName: Lowriderpunk
+category: 6. Street, Riot & DIY Punks
+domain: lowrider car culture punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - street-riot-and-diy-punks
+  - lowriderpunk
+  - punk
+  - street
+visualDna:
+  aesthetic: 'Lowriderpunk: handcrafted lowrider cars and bikes, with candy-paint flake, chrome wire wheels, hydraulic hops and murals painted on hoods and trunks.'
+  subject_treatment: Keep the prompt's subject and setting; build it into a custom lowrider world of candy paint, chrome, hydraulics and cruising streets.
+  color_and_tone: Deep candy reds, purples and teals with chrome shine and warm sunset boulevards.
+  lighting_and_shadow: Golden sunset reflections sliding across polished candy paint and chrome.
+  texture_and_material: Metal-flake candy paint, chrome spokes, velvet upholstery, pinstriping and asphalt.
+  camera_and_composition: Low three-quarter views of cars, with some cars hopping mid-air.
+  atmosphere_and_mood: Proud, slow and dazzling, cruising low and slow as art.
+  rendering_and_quality: Glossy illustration with deep reflections and detailed chrome.
+  creative_brief: "Lowriderpunk: handcrafted lowrider cars and bikes, with candy-paint flake, chrome wire wheels, hydraulic hops and murals painted on hoods and trunks. Carry it through candy paint flake, chrome wire wheels, hydraulic hops, painted murals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: candy paint flake; chrome wire wheels; hydraulic hops; painted murals
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - readable slogans or band names
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable slogans or band names, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: street-riot-and-diy-punks
+  categoryName: 6. Street, Riot & DIY Punks
+  tags:
+    - curation-v2
+    - street-riot-and-diy-punks
+    - lowriderpunk
+    - punk
+    - street
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: lowrider car culture punk

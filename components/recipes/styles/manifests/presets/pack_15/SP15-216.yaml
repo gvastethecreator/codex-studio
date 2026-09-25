@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-216
+packId: pack_15
+name: Hardcorepunk
+styleAnchors:
+  - Hardcorepunk
+  - basement hardcore show punk
+  - stage dives
+displayName: Hardcorepunk
+category: 6. Street, Riot & DIY Punks
+domain: basement hardcore show punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - street-riot-and-diy-punks
+  - hardcorepunk
+  - punk
+  - street
+visualDna:
+  aesthetic: 'Hardcorepunk: sweaty basement and hall shows, with stage-diving bodies, packed crowds, low ceilings, harsh flash light and raw black-and-white energy.'
+  subject_treatment: Keep the prompt's subject and setting; turn it into an explosive packed show, with bodies flying, low ceilings and harsh flash light.
+  color_and_tone: High-contrast black and white or near-mono with flashes of sweaty skin tone and red.
+  lighting_and_shadow: Harsh direct flash freezing motion against deep black backgrounds.
+  texture_and_material: Sweat, denim, basement brick, low pipes, cables and grainy flash photo texture.
+  camera_and_composition: Wide-angle crowd-level shots with bodies mid-air and fists in the frame.
+  atmosphere_and_mood: Explosive, cathartic and communal, total energy in a tiny room.
+  rendering_and_quality: Grainy high-contrast rendering with frozen motion and deep blacks.
+  creative_brief: "Hardcorepunk: sweaty basement and hall shows, with stage-diving bodies, packed crowds, low ceilings, harsh flash light and raw black-and-white energy. Carry it through stage dives, harsh flash, packed basements, frozen motion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: stage dives; harsh flash; packed basements; frozen motion
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - readable slogans or band names
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable slogans or band names, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: street-riot-and-diy-punks
+  categoryName: 6. Street, Riot & DIY Punks
+  tags:
+    - curation-v2
+    - street-riot-and-diy-punks
+    - hardcorepunk
+    - punk
+    - street
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: basement hardcore show punk

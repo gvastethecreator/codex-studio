@@ -183,4 +183,446 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP15-210',
+    name: 'Squatpunk',
+    displayName: 'Squatpunk',
+    styleAnchors: ['Squatpunk', 'squatted building culture punk', 'reclaimed buildings'],
+    category: '6. Street, Riot & DIY Punks',
+    domain: 'squatted building culture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable slogans or band names, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Squatpunk: abandoned buildings reclaimed by communities, with scrap barricades, communal kitchens, painted murals and rooms rebuilt from salvage.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; move it into a reclaimed abandoned building full of salvaged furniture, murals and handmade repairs.",
+      color_and_tone:
+        'Faded concrete greys and brick red with bright hand-painted mural colors and warm lamps.',
+      lighting_and_shadow:
+        'Mixed light from broken windows, string lights and candles in dim rooms.',
+      texture_and_material:
+        'Cracked plaster, scrap wood, painted walls, mattresses, salvaged doors and plants.',
+      camera_and_composition:
+        'Busy interiors packed with people, handmade furniture and layered repairs.',
+      atmosphere_and_mood:
+        'Defiant, crowded and warm, a home built by people who refused to leave.',
+      rendering_and_quality:
+        'Richly cluttered illustration with layered textures and warm pockets of light.',
+      creative_brief:
+        "Squatpunk: abandoned buildings reclaimed by communities, with scrap barricades, communal kitchens, painted murals and rooms rebuilt from salvage. Carry it through reclaimed buildings, salvage furniture, murals, communal warmth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'reclaimed buildings; salvage furniture; murals; communal warmth',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-211',
+    name: 'Buskerpunk',
+    displayName: 'Buskerpunk',
+    styleAnchors: ['Buskerpunk', 'street performer culture punk', 'one-man bands'],
+    category: '6. Street, Riot & DIY Punks',
+    domain: 'street performer culture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable slogans or band names, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Buskerpunk: street performers turning every corner into a stage, with homemade instruments, one-man bands, fire tricks and open instrument cases.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; turn it into a street performance with homemade instruments, props and a gathered crowd.",
+      color_and_tone:
+        'Warm street tones of brick and cobblestone with bright costume colors and brass shine.',
+      lighting_and_shadow:
+        'Golden evening light and streetlamps, with fire or lanterns lighting performers.',
+      texture_and_material:
+        'Worn brass, painted wood, patched costumes, cobblestones and coins in cases.',
+      camera_and_composition:
+        'Performers centered with circles of crowd around them on busy streets.',
+      atmosphere_and_mood: 'Joyful, scrappy and magnetic, art for anyone walking past.',
+      rendering_and_quality: 'Lively illustration with warm light and expressive performer poses.',
+      creative_brief:
+        "Buskerpunk: street performers turning every corner into a stage, with homemade instruments, one-man bands, fire tricks and open instrument cases. Carry it through one-man bands, homemade instruments, street crowds, open cases. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'one-man bands; homemade instruments; street crowds; open cases',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-212',
+    name: 'Stencilpunk',
+    displayName: 'Stencilpunk',
+    styleAnchors: ['Stencilpunk', 'layered spray stencil punk', 'cut stencil layers'],
+    category: '6. Street, Riot & DIY Punks',
+    domain: 'layered spray stencil punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable slogans or band names, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Stencilpunk: everything built from layered spray stencils, with crisp cut edges, overspray halos, two- or three-color layers and bridges left in the cut shapes.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; render it as layered spray-stencil shapes with cut bridges and overspray on walls.",
+      color_and_tone:
+        'Limited palettes of black, one bright color and a mid tone on concrete or brick.',
+      lighting_and_shadow:
+        'Light and shadow expressed only as flat stencil layers, no smooth gradients.',
+      texture_and_material:
+        'Spray paint overspray, drips, concrete, brick and cut card stencil edges.',
+      camera_and_composition:
+        'Bold graphic silhouettes placed on real walls with strong negative space.',
+      atmosphere_and_mood:
+        'Quick, clever and rebellious, an image made in minutes before anyone notices.',
+      rendering_and_quality:
+        'Crisp flat layered stencil illustration with visible overspray and drips.',
+      creative_brief:
+        "Stencilpunk: everything built from layered spray stencils, with crisp cut edges, overspray halos, two- or three-color layers and bridges left in the cut shapes. Carry it through cut stencil layers, overspray halos, stencil bridges, limited palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'cut stencil layers; overspray halos; stencil bridges; limited palette',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-213',
+    name: 'Protestpunk',
+    displayName: 'Protestpunk',
+    styleAnchors: ['Protestpunk', 'giant puppet protest parade punk', 'giant puppets'],
+    category: '6. Street, Riot & DIY Punks',
+    domain: 'giant puppet protest parade punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable slogans or band names, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Protestpunk: street marches led by giant handmade puppets, papier-mache effigies, drum lines and cardboard costumes towering over the crowds.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; turn it into a street march led by huge handmade puppets and papier-mache figures, with blank banners.",
+      color_and_tone:
+        'Bright painted papier-mache colors, cardboard brown and street grey with bold primary accents.',
+      lighting_and_shadow: 'Bright daylight or orange streetlight on the rising puppet heads.',
+      texture_and_material:
+        'Papier-mache, painted cardboard, bamboo poles, cloth, drumskins and paint.',
+      camera_and_composition:
+        'Low angles with puppets towering above packed crowds in narrow streets.',
+      atmosphere_and_mood: 'Loud, hopeful and theatrical, protest as a huge homemade festival.',
+      rendering_and_quality:
+        'Vivid energetic illustration with handmade textures and dynamic crowds.',
+      creative_brief:
+        "Protestpunk: street marches led by giant handmade puppets, papier-mache effigies, drum lines and cardboard costumes towering over the crowds. Carry it through giant puppets, papier-mache effigies, drum lines, blank banners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'giant puppets; papier-mache effigies; drum lines; blank banners',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-214',
+    name: 'Courierpunk',
+    displayName: 'Courierpunk',
+    styleAnchors: ['Courierpunk', 'bike messenger culture punk', 'fixed-gear bikes'],
+    category: '6. Street, Riot & DIY Punks',
+    domain: 'bike messenger culture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable slogans or band names, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Courierpunk: fearless bike messengers of the city, with fixed-gear bikes, huge messenger bags, radio headsets and death-defying traffic runs.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; turn it into a high-speed bike courier run through dense traffic and city streets.",
+      color_and_tone:
+        'Grimy city greys and taxi yellow with bright jersey colors and red tail lights.',
+      lighting_and_shadow:
+        'Harsh daylight between towers or streaked headlights and tail lights at night.',
+      texture_and_material:
+        'Worn bike frames, bag canvas, rain-slick asphalt, chains and scuffed helmets.',
+      camera_and_composition: 'Low fast angles with motion blur, weaving between cars and buses.',
+      atmosphere_and_mood: 'Reckless, proud and fast, the city as a racetrack.',
+      rendering_and_quality: 'Dynamic illustration with speed streaks and gritty street texture.',
+      creative_brief:
+        "Courierpunk: fearless bike messengers of the city, with fixed-gear bikes, huge messenger bags, radio headsets and death-defying traffic runs. Carry it through fixed-gear bikes, messenger bags, traffic weaving, speed streaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'fixed-gear bikes; messenger bags; traffic weaving; speed streaks',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-215',
+    name: 'Garagepunk',
+    displayName: 'Garagepunk',
+    styleAnchors: ['Garagepunk', 'garage band and workshop punk', 'egg-carton walls'],
+    category: '6. Street, Riot & DIY Punks',
+    domain: 'garage band and workshop punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable slogans or band names, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Garagepunk: suburban garages turned into band rehearsal rooms and workshops, with egg-carton walls, secondhand amps, car parts and oil-stained floors.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; move it into a cluttered garage full of amps, tools, cables and half-fixed machines.",
+      color_and_tone:
+        'Oily concrete grey, faded wood and dusty tones with warm bulb light and red amp glow.',
+      lighting_and_shadow:
+        'Bare bulbs and sunlight through a half-open garage door, strong shadows.',
+      texture_and_material:
+        'Egg-carton foam, worn amps, cables, workbench tools, car parts and oil stains.',
+      camera_and_composition: 'Cramped interiors with a band and clutter crowding every corner.',
+      atmosphere_and_mood: 'Loud, amateur and joyful, noise made with whatever is lying around.',
+      rendering_and_quality: 'Warm gritty illustration with cluttered detail and bulb glow.',
+      creative_brief:
+        "Garagepunk: suburban garages turned into band rehearsal rooms and workshops, with egg-carton walls, secondhand amps, car parts and oil-stained floors. Carry it through egg-carton walls, secondhand amps, half-open door, workshop clutter. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'egg-carton walls; secondhand amps; half-open door; workshop clutter',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-216',
+    name: 'Hardcorepunk',
+    displayName: 'Hardcorepunk',
+    styleAnchors: ['Hardcorepunk', 'basement hardcore show punk', 'stage dives'],
+    category: '6. Street, Riot & DIY Punks',
+    domain: 'basement hardcore show punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable slogans or band names, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hardcorepunk: sweaty basement and hall shows, with stage-diving bodies, packed crowds, low ceilings, harsh flash light and raw black-and-white energy.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; turn it into an explosive packed show, with bodies flying, low ceilings and harsh flash light.",
+      color_and_tone:
+        'High-contrast black and white or near-mono with flashes of sweaty skin tone and red.',
+      lighting_and_shadow: 'Harsh direct flash freezing motion against deep black backgrounds.',
+      texture_and_material:
+        'Sweat, denim, basement brick, low pipes, cables and grainy flash photo texture.',
+      camera_and_composition:
+        'Wide-angle crowd-level shots with bodies mid-air and fists in the frame.',
+      atmosphere_and_mood: 'Explosive, cathartic and communal, total energy in a tiny room.',
+      rendering_and_quality: 'Grainy high-contrast rendering with frozen motion and deep blacks.',
+      creative_brief:
+        "Hardcorepunk: sweaty basement and hall shows, with stage-diving bodies, packed crowds, low ceilings, harsh flash light and raw black-and-white energy. Carry it through stage dives, harsh flash, packed basements, frozen motion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'stage dives; harsh flash; packed basements; frozen motion',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-217',
+    name: 'Grrrlpunk',
+    displayName: 'Grrrlpunk',
+    styleAnchors: ['Grrrlpunk', 'feminist DIY riot punk', 'cut-and-paste collage'],
+    category: '6. Street, Riot & DIY Punks',
+    domain: 'feminist DIY riot punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable slogans or band names, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Grrrlpunk: fierce feminist DIY punk, with cut-and-paste collage, marker-scrawled skin, babydoll dresses with combat boots and all-women bands on tiny stages.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; give its figures fierce DIY punk styling with collage textures, boots and bold hand-drawn marks.",
+      color_and_tone: 'Hot pink, black and xerox grey with red marker and cheap glitter accents.',
+      lighting_and_shadow: 'Harsh flash or bare stage lights with high contrast and hard shadows.',
+      texture_and_material:
+        'Photocopy grain, torn paper collage, marker on skin, glitter, lace and leather.',
+      camera_and_composition:
+        'Confrontational close framing, figures facing the viewer, collage edges cutting the frame.',
+      atmosphere_and_mood: 'Loud, defiant and sisterly, taking up space without apology.',
+      rendering_and_quality: 'Raw collage-like illustration with photocopy grain and bold marks.',
+      creative_brief:
+        "Grrrlpunk: fierce feminist DIY punk, with cut-and-paste collage, marker-scrawled skin, babydoll dresses with combat boots and all-women bands on tiny stages. Carry it through cut-and-paste collage, marker marks, boots and lace, fierce direct gaze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'cut-and-paste collage; marker marks; boots and lace; fierce direct gaze',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-218',
+    name: 'Fleamarketpunk',
+    displayName: 'Fleamarketpunk',
+    styleAnchors: ['Fleamarketpunk', 'flea market salvage punk', 'mismatched antiques'],
+    category: '6. Street, Riot & DIY Punks',
+    domain: 'flea market salvage punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable slogans or band names, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Fleamarketpunk: a world assembled from flea-market finds, with mismatched antique furniture, secondhand clothes, tangled lamps and haggling crowds.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; rebuild its clothes, furniture and props from mismatched secondhand flea-market finds.",
+      color_and_tone: 'Faded vintage colors, mustard, teal and rust with brass and dusty velvet.',
+      lighting_and_shadow: 'Warm afternoon sun through market awnings and tangles of old lamps.',
+      texture_and_material:
+        'Chipped enamel, brass, velvet, old wood, cracked leather and tangled cords.',
+      camera_and_composition:
+        'Crowded stall compositions piled high with objects and haggling people.',
+      atmosphere_and_mood: 'Curious, chatty and bargain-hunting, every object has a past life.',
+      rendering_and_quality:
+        'Densely detailed illustration with rich vintage textures and worn surfaces.',
+      creative_brief:
+        "Fleamarketpunk: a world assembled from flea-market finds, with mismatched antique furniture, secondhand clothes, tangled lamps and haggling crowds. Carry it through mismatched antiques, secondhand outfits, piled stalls, haggling crowds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'mismatched antiques; secondhand outfits; piled stalls; haggling crowds',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-219',
+    name: 'Rooftoppunk',
+    displayName: 'Rooftoppunk',
+    styleAnchors: ['Rooftoppunk', 'rooftop DIY culture punk', 'water towers'],
+    category: '6. Street, Riot & DIY Punks',
+    domain: 'rooftop DIY culture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable slogans or band names, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Rooftoppunk: the secret life of city rooftops, with pigeon coops, water-tower hideouts, rooftop gardens, string lights and parties above the traffic.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; lift it onto crowded city rooftops with water towers, gardens, coops and skyline views.",
+      color_and_tone:
+        'Tar black and brick with sunset orange skies, plant greens and warm string lights.',
+      lighting_and_shadow: 'Golden hour sun or evening string lights against a glowing skyline.',
+      texture_and_material:
+        'Tar paper, wooden water towers, chicken wire coops, potted plants and bricks.',
+      camera_and_composition:
+        'Rooftop scenes with the city spread out behind, figures near ledges.',
+      atmosphere_and_mood: 'Free, secret and dreamy, a hidden village above the city.',
+      rendering_and_quality:
+        'Warm atmospheric illustration with detailed skyline depth and rooftop clutter.',
+      creative_brief:
+        "Rooftoppunk: the secret life of city rooftops, with pigeon coops, water-tower hideouts, rooftop gardens, string lights and parties above the traffic. Carry it through water towers, pigeon coops, rooftop gardens, skyline string lights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'water towers; pigeon coops; rooftop gardens; skyline string lights',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-220',
+    name: 'Wheatpastepunk',
+    displayName: 'Wheatpastepunk',
+    styleAnchors: ['Wheatpastepunk', 'wheatpaste poster culture punk', 'layered posters'],
+    category: '6. Street, Riot & DIY Punks',
+    domain: 'wheatpaste poster culture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable slogans or band names, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Wheatpastepunk: walls built up from layers of wheatpasted paper posters, with peeling corners, torn edges, rain wrinkles and huge pasted portraits.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; render it as huge wheatpasted paper art over layered peeling posters on city walls.",
+      color_and_tone:
+        'Paper cream and newsprint grey with faded poster colors and wet paste shine.',
+      lighting_and_shadow:
+        'Flat overcast light or harsh streetlight catching wrinkles and peeling edges.',
+      texture_and_material:
+        'Wrinkled paper, dried paste, torn poster layers, brick and plywood hoardings.',
+      camera_and_composition:
+        'Walls filled edge to edge with giant pasted images and layered fragments.',
+      atmosphere_and_mood: 'Temporary and bold, art pasted up at night and gone by next week.',
+      rendering_and_quality: 'Tactile illustration with visible paper wrinkles and layered tears.',
+      creative_brief:
+        "Wheatpastepunk: walls built up from layers of wheatpasted paper posters, with peeling corners, torn edges, rain wrinkles and huge pasted portraits. Carry it through layered posters, peeling corners, paste wrinkles, giant pasted portraits. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'layered posters; peeling corners; paste wrinkles; giant pasted portraits',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-221',
+    name: 'Breakpunk',
+    displayName: 'Breakpunk',
+    styleAnchors: ['Breakpunk', 'breakdance cypher punk', 'cardboard mats'],
+    category: '6. Street, Riot & DIY Punks',
+    domain: 'breakdance cypher punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable slogans or band names, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Breakpunk: breakdance cyphers on cardboard mats, with freezes, windmills, headspins, boomboxes and circles of hyped crowds on concrete.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; turn it into a dance cypher with dancers mid-freeze and spin on cardboard, surrounded by a crowd.",
+      color_and_tone:
+        'Concrete grey, cardboard brown and bright tracksuit colors with sunlit highlights.',
+      lighting_and_shadow:
+        'Bright street sun or sodium streetlight with strong shadows beneath dancers.',
+      texture_and_material:
+        'Flattened cardboard, concrete, nylon tracksuits, sneakers and boombox chrome.',
+      camera_and_composition: 'Low circular compositions with a dancer at the center mid-move.',
+      atmosphere_and_mood: 'Competitive, joyful and gravity-defying, battles decided by style.',
+      rendering_and_quality: 'Dynamic illustration with frozen athletic poses and motion lines.',
+      creative_brief:
+        "Breakpunk: breakdance cyphers on cardboard mats, with freezes, windmills, headspins, boomboxes and circles of hyped crowds on concrete. Carry it through cardboard mats, freezes and spins, boomboxes, crowd circles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'cardboard mats; freezes and spins; boomboxes; crowd circles',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-222',
+    name: 'Lowriderpunk',
+    displayName: 'Lowriderpunk',
+    styleAnchors: ['Lowriderpunk', 'lowrider car culture punk', 'candy paint flake'],
+    category: '6. Street, Riot & DIY Punks',
+    domain: 'lowrider car culture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable slogans or band names, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Lowriderpunk: handcrafted lowrider cars and bikes, with candy-paint flake, chrome wire wheels, hydraulic hops and murals painted on hoods and trunks.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; build it into a custom lowrider world of candy paint, chrome, hydraulics and cruising streets.",
+      color_and_tone:
+        'Deep candy reds, purples and teals with chrome shine and warm sunset boulevards.',
+      lighting_and_shadow:
+        'Golden sunset reflections sliding across polished candy paint and chrome.',
+      texture_and_material:
+        'Metal-flake candy paint, chrome spokes, velvet upholstery, pinstriping and asphalt.',
+      camera_and_composition: 'Low three-quarter views of cars, with some cars hopping mid-air.',
+      atmosphere_and_mood: 'Proud, slow and dazzling, cruising low and slow as art.',
+      rendering_and_quality: 'Glossy illustration with deep reflections and detailed chrome.',
+      creative_brief:
+        "Lowriderpunk: handcrafted lowrider cars and bikes, with candy-paint flake, chrome wire wheels, hydraulic hops and murals painted on hoods and trunks. Carry it through candy paint flake, chrome wire wheels, hydraulic hops, painted murals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'candy paint flake; chrome wire wheels; hydraulic hops; painted murals',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-223',
+    name: 'Stickerbombpunk',
+    displayName: 'Stickerbombpunk',
+    styleAnchors: ['Stickerbombpunk', 'sticker bomb collage punk', 'overlapping stickers'],
+    category: '6. Street, Riot & DIY Punks',
+    domain: 'sticker bomb collage punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable slogans or band names, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Stickerbombpunk: every surface buried under overlapping stickers, with layered cartoon creatures, bold symbols, scuffed edges and die-cut shapes.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; cover its surfaces in dense overlapping graphic stickers of creatures and symbols, without words.",
+      color_and_tone:
+        'Saturated sticker colors, bright primaries and neon accents with white die-cut borders.',
+      lighting_and_shadow: 'Flat even light with slight gloss on vinyl sticker surfaces.',
+      texture_and_material:
+        'Glossy vinyl, peeling corners, scuffed paper stickers and die-cut white edges.',
+      camera_and_composition: 'Dense all-over coverage with the underlying form still readable.',
+      atmosphere_and_mood: 'Chaotic, playful and loud, a surface that became a community collage.',
+      rendering_and_quality: 'Crisp graphic illustration with dense layered sticker detail.',
+      creative_brief:
+        "Stickerbombpunk: every surface buried under overlapping stickers, with layered cartoon creatures, bold symbols, scuffed edges and die-cut shapes. Carry it through overlapping stickers, die-cut edges, cartoon creatures, peeling corners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'overlapping stickers; die-cut edges; cartoon creatures; peeling corners',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

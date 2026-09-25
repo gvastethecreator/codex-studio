@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-219
+packId: pack_15
+name: Rooftoppunk
+styleAnchors:
+  - Rooftoppunk
+  - rooftop DIY culture punk
+  - water towers
+displayName: Rooftoppunk
+category: 6. Street, Riot & DIY Punks
+domain: rooftop DIY culture punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - street-riot-and-diy-punks
+  - rooftoppunk
+  - punk
+  - street
+visualDna:
+  aesthetic: 'Rooftoppunk: the secret life of city rooftops, with pigeon coops, water-tower hideouts, rooftop gardens, string lights and parties above the traffic.'
+  subject_treatment: Keep the prompt's subject and setting; lift it onto crowded city rooftops with water towers, gardens, coops and skyline views.
+  color_and_tone: Tar black and brick with sunset orange skies, plant greens and warm string lights.
+  lighting_and_shadow: Golden hour sun or evening string lights against a glowing skyline.
+  texture_and_material: Tar paper, wooden water towers, chicken wire coops, potted plants and bricks.
+  camera_and_composition: Rooftop scenes with the city spread out behind, figures near ledges.
+  atmosphere_and_mood: Free, secret and dreamy, a hidden village above the city.
+  rendering_and_quality: Warm atmospheric illustration with detailed skyline depth and rooftop clutter.
+  creative_brief: "Rooftoppunk: the secret life of city rooftops, with pigeon coops, water-tower hideouts, rooftop gardens, string lights and parties above the traffic. Carry it through water towers, pigeon coops, rooftop gardens, skyline string lights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: water towers; pigeon coops; rooftop gardens; skyline string lights
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - readable slogans or band names
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable slogans or band names, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: street-riot-and-diy-punks
+  categoryName: 6. Street, Riot & DIY Punks
+  tags:
+    - curation-v2
+    - street-riot-and-diy-punks
+    - rooftoppunk
+    - punk
+    - street
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: rooftop DIY culture punk
