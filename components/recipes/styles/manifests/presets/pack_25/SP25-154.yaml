@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP25-154
+packId: pack_25
+name: Weathered Public Display
+styleAnchors:
+  - Weathered Public Display
+  - aged public poster mockup profile
+  - weathered support
+displayName: Weathered Public Display
+category: 8. Mockups & Product Presentation
+domain: aged public poster mockup profile
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - mockups-and-product-presentation
+  - weathered-display
+  - applied-design
+  - mockup
+  - profile
+  - r-mck-17
+  - requested-text
+visualDna:
+  aesthetic: 'Weathered Public Display: a preserved graphic placed on an aged public support, with wear limited to the frame and surroundings.'
+  subject_treatment: Place the prompt's poster or graphic on a weathered public panel or wall, wear kept on the support while the artwork and text stay exact.
+  color_and_tone: Artwork colors legible, the environment in a subordinate palette.
+  lighting_and_shadow: Coherent ambient light with no shadow over the main message.
+  texture_and_material: Controlled wear on the frame and support, clean ink and brand.
+  camera_and_composition: Dominant reading plane with enough context for scale.
+  atmosphere_and_mood: Believable street presence and the marks of accumulated public use.
+  rendering_and_quality: Aging never alters letters or suggests another campaign.
+  creative_brief: "Weathered Public Display: a preserved graphic placed on an aged public support, with wear limited to the frame and surroundings. Carry it through weathered support, clean artwork, street context, readable scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: weathered support; clean artwork; street context; readable scale
+avoidRules:
+  - rewritten poster
+  - dirt over text
+  - setting implying a real endorsement
+  - redrawn or altered brand artwork
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: rewritten poster, dirt over text, setting implying a real endorsement, redrawn or altered brand artwork, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: mockups-and-product-presentation
+  categoryName: 8. Mockups & Product Presentation
+  domain: aged public poster mockup profile
+  tags:
+    - curation-v2
+    - mockups-and-product-presentation
+    - weathered-display
+    - applied-design
+    - mockup
+    - profile
+    - r-mck-17
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

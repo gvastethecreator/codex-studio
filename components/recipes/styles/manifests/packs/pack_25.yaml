@@ -170,6 +170,29 @@ categories:
       - pack_25/SP25-138.yaml
       - pack_25/SP25-139.yaml
       - pack_25/SP25-140.yaml
+  - id: mockups-and-product-presentation
+    name: 8. Mockups & Product Presentation
+    presetRefs:
+      - pack_25/SP25-141.yaml
+      - pack_25/SP25-142.yaml
+      - pack_25/SP25-143.yaml
+      - pack_25/SP25-144.yaml
+      - pack_25/SP25-145.yaml
+      - pack_25/SP25-146.yaml
+      - pack_25/SP25-147.yaml
+      - pack_25/SP25-148.yaml
+      - pack_25/SP25-149.yaml
+      - pack_25/SP25-150.yaml
+      - pack_25/SP25-151.yaml
+      - pack_25/SP25-152.yaml
+      - pack_25/SP25-153.yaml
+      - pack_25/SP25-154.yaml
+      - pack_25/SP25-155.yaml
+      - pack_25/SP25-156.yaml
+      - pack_25/SP25-157.yaml
+      - pack_25/SP25-158.yaml
+      - pack_25/SP25-159.yaml
+      - pack_25/SP25-160.yaml
 presetRefs:
   - pack_25/SP25-001.yaml
   - pack_25/SP25-002.yaml
@@ -311,3 +334,23 @@ presetRefs:
   - pack_25/SP25-138.yaml
   - pack_25/SP25-139.yaml
   - pack_25/SP25-140.yaml
+  - pack_25/SP25-141.yaml
+  - pack_25/SP25-142.yaml
+  - pack_25/SP25-143.yaml
+  - pack_25/SP25-144.yaml
+  - pack_25/SP25-145.yaml
+  - pack_25/SP25-146.yaml
+  - pack_25/SP25-147.yaml
+  - pack_25/SP25-148.yaml
+  - pack_25/SP25-149.yaml
+  - pack_25/SP25-150.yaml
+  - pack_25/SP25-151.yaml
+  - pack_25/SP25-152.yaml
+  - pack_25/SP25-153.yaml
+  - pack_25/SP25-154.yaml
+  - pack_25/SP25-155.yaml
+  - pack_25/SP25-156.yaml
+  - pack_25/SP25-157.yaml
+  - pack_25/SP25-158.yaml
+  - pack_25/SP25-159.yaml
+  - pack_25/SP25-160.yaml

@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP25-149
+packId: pack_25
+name: Open-Closed Packaging Pair
+styleAnchors:
+  - Open-Closed Packaging Pair
+  - closed and opened package pair profile
+  - closed and opened
+displayName: Open-Closed Packaging Pair
+category: 8. Mockups & Product Presentation
+domain: closed and opened package pair profile
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - mockups-and-product-presentation
+  - open-closed
+  - applied-design
+  - mockup
+  - profile
+  - r-mck-12
+  - requested-text
+visualDna:
+  aesthetic: 'Open-Closed Packaging Pair: the same package shown closed and opened, with continuous graphics, parts and scale.'
+  subject_treatment: Show the prompt's package closed and opened with the same parts, artwork and scale, the inside holding only the declared contents.
+  color_and_tone: Identical print and palette in both the closed and opened states.
+  lighting_and_shadow: The same light and exposure for easy comparison.
+  texture_and_material: Coherent materials, thickness, folds and hinges in both states.
+  camera_and_composition: Two related views with one clear region of correspondence.
+  atmosphere_and_mood: An honest reveal of the inside, simple and satisfying.
+  rendering_and_quality: The inside shows only declared parts and the outside keeps its graphics.
+  creative_brief: "Open-Closed Packaging Pair: the same package shown closed and opened, with continuous graphics, parts and scale. Carry it through closed and opened, same scale, declared contents, continuous graphics. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: closed and opened; same scale; declared contents; continuous graphics
+avoidRules:
+  - a different box
+  - invented interior
+  - flaps that disappear
+  - redrawn or altered brand artwork
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a different box, invented interior, flaps that disappear, redrawn or altered brand artwork, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: mockups-and-product-presentation
+  categoryName: 8. Mockups & Product Presentation
+  domain: closed and opened package pair profile
+  tags:
+    - curation-v2
+    - mockups-and-product-presentation
+    - open-closed
+    - applied-design
+    - mockup
+    - profile
+    - r-mck-12
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

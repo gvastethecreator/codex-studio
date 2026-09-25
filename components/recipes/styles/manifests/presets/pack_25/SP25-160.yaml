@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-160
+packId: pack_25
+name: Shop-Window Display Set
+styleAnchors:
+  - Shop-Window Display Set
+  - shop window display mockup style
+  - shop window stage
+displayName: Shop-Window Display Set
+category: 8. Mockups & Product Presentation
+domain: shop window display mockup style
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - mockups-and-product-presentation
+  - shop-window
+  - applied-design
+  - mockup
+  - r-mck-19-new
+  - requested-text
+visualDna:
+  aesthetic: 'Shop-Window Display Set: the product presented as the hero of a designed shop-window display, seen from the street through the glass.'
+  subject_treatment: Stage the prompt's product as the hero of a designed shop window seen from the street, with props that support it and the brand text kept exact.
+  color_and_tone: A window palette built around the product, with warm interior light against the street.
+  lighting_and_shadow: Warm window spotlights inside and soft street light outside the glass.
+  texture_and_material: Clean glass with faint reflections, painted props and the real product.
+  camera_and_composition: Street-level frontal view through the window, the product centered.
+  atmosphere_and_mood: Inviting and theatrical, a small stage you want to walk into.
+  rendering_and_quality: Crisp photographic window display with light reflections that never cover the label.
+  creative_brief: "Shop-Window Display Set: the product presented as the hero of a designed shop-window display, seen from the street through the glass. Carry it through shop window stage, street view, warm spotlights, hero product. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: shop window stage; street view; warm spotlights; hero product
+avoidRules:
+  - reflections over the brand
+  - real shop names
+  - redrawn or altered brand artwork
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: reflections over the brand, real shop names, redrawn or altered brand artwork, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: mockups-and-product-presentation
+  categoryName: 8. Mockups & Product Presentation
+  domain: shop window display mockup style
+  tags:
+    - curation-v2
+    - mockups-and-product-presentation
+    - shop-window
+    - applied-design
+    - mockup
+    - r-mck-19-new
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

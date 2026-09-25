@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP25-143
+packId: pack_25
+name: Soft Tabletop Presentation
+styleAnchors:
+  - Soft Tabletop Presentation
+  - neutral tabletop product presentation
+  - neutral tabletop
+displayName: Soft Tabletop Presentation
+category: 8. Mockups & Product Presentation
+domain: neutral tabletop product presentation
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - mockups-and-product-presentation
+  - soft-tabletop
+  - applied-design
+  - mockup
+  - profile
+  - r-mck-02
+  - requested-text
+visualDna:
+  aesthetic: 'Soft Tabletop Presentation: the object on a neutral surface with a consistent camera and scale, so the applied design can be judged calmly.'
+  subject_treatment: Place the prompt's product on a neutral tabletop with a moderate camera and soft light, keeping its artwork, shape and exact brand text intact.
+  color_and_tone: Background value separated from the product and no change to the design palette.
+  lighting_and_shadow: Broad soft light with one clean contact shadow.
+  texture_and_material: Product material intact on a sober, quiet support surface.
+  camera_and_composition: Dominant product, generous margin and a moderate perspective.
+  atmosphere_and_mood: Calm material presentation, focused entirely on the product.
+  rendering_and_quality: The support never alters proportions or hides important information.
+  creative_brief: "Soft Tabletop Presentation: the object on a neutral surface with a consistent camera and scale, so the applied design can be judged calmly. Carry it through neutral tabletop, soft light, clean contact shadow, dominant product. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: neutral tabletop; soft light; clean contact shadow; dominant product
+avoidRules:
+  - mandatory plinth
+  - deformed product
+  - decoration competing with the brand
+  - redrawn or altered brand artwork
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: mandatory plinth, deformed product, decoration competing with the brand, redrawn or altered brand artwork, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: mockups-and-product-presentation
+  categoryName: 8. Mockups & Product Presentation
+  domain: neutral tabletop product presentation
+  tags:
+    - curation-v2
+    - mockups-and-product-presentation
+    - soft-tabletop
+    - applied-design
+    - mockup
+    - profile
+    - r-mck-02
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

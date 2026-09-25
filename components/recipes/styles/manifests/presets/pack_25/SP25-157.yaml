@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-157
+packId: pack_25
+name: Brand-Shape Set Build
+styleAnchors:
+  - Brand-Shape Set Build
+  - set built from brand shapes style
+  - giant brand shapes
+displayName: Brand-Shape Set Build
+category: 8. Mockups & Product Presentation
+domain: set built from brand shapes style
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - mockups-and-product-presentation
+  - brand-shape-set
+  - applied-design
+  - mockup
+  - r-mck-03-new
+  - requested-text
+visualDna:
+  aesthetic: 'Brand-Shape Set Build: the product presented inside a studio set built from oversized versions of its own brand shapes and colors.'
+  subject_treatment: Present the prompt's product inside a studio set made from giant physical versions of its own brand shapes and colors, the product and brand text kept exact.
+  color_and_tone: The brand palette turned into bold physical set blocks with one neutral floor.
+  lighting_and_shadow: Clean studio light with crisp shadows cast by the giant shapes.
+  texture_and_material: Matte painted set pieces, smooth and handmade-looking, beside the real product.
+  camera_and_composition: Product at the center of a graphic set, shapes framing but never covering it.
+  atmosphere_and_mood: Playful, bold and art-directed, a brand you can walk into.
+  rendering_and_quality: Crisp editorial set photography with the product and label razor sharp.
+  creative_brief: "Brand-Shape Set Build: the product presented inside a studio set built from oversized versions of its own brand shapes and colors. Carry it through giant brand shapes, painted set, bold palette, product at center. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: giant brand shapes; painted set; bold palette; product at center
+avoidRules:
+  - set covering the product
+  - shapes unrelated to the brand
+  - redrawn or altered brand artwork
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: set covering the product, shapes unrelated to the brand, redrawn or altered brand artwork, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: mockups-and-product-presentation
+  categoryName: 8. Mockups & Product Presentation
+  domain: set built from brand shapes style
+  tags:
+    - curation-v2
+    - mockups-and-product-presentation
+    - brand-shape-set
+    - applied-design
+    - mockup
+    - r-mck-03-new
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

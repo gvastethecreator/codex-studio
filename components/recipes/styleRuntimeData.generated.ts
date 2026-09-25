@@ -230,7 +230,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     cardTitle: 'Applied Design',
     cardDescription:
       'Logos, icons, interfaces, products, packaging, type, editorial, data, textiles, merch, wayfinding and motion.',
-    presetCount: 140,
+    presetCount: 160,
   },
 ] as GeneratedStyleRuntimePackSummary[];
 

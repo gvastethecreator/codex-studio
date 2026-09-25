@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP25-147
+packId: pack_25
+name: Decal-on-Object Study
+styleAnchors:
+  - Decal-on-Object Study
+  - decal placement on object profile
+  - decal layer
+displayName: Decal-on-Object Study
+category: 8. Mockups & Product Presentation
+domain: decal placement on object profile
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - mockups-and-product-presentation
+  - decal-object
+  - applied-design
+  - mockup
+  - profile
+  - r-mck-07
+  - requested-text
+visualDna:
+  aesthetic: 'Decal-on-Object Study: a mark applied as a separate decal layer with a declared position, scale and orientation on one object face.'
+  subject_treatment: Place the prompt's mark as a decal on one declared face of the object, keeping its proportions, colors and exact text, with a frontal control view.
+  color_and_tone: Locked decal colors and full opacity, matched to the scene only by light.
+  lighting_and_shadow: Object lighting coherent with the decal edge fully visible.
+  texture_and_material: Support intact and a visually thin decal layer.
+  camera_and_composition: Decal anchored to the surface with a frontal control view.
+  atmosphere_and_mood: Clear application and a separation between design and presentation.
+  rendering_and_quality: The decal keeps its proportions and never wraps by accident.
+  creative_brief: "Decal-on-Object Study: a mark applied as a separate decal layer with a declared position, scale and orientation on one object face. Carry it through decal layer, declared position, kept proportions, frontal control. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: decal layer; declared position; kept proportions; frontal control
+avoidRules:
+  - distorted artwork
+  - changed scale
+  - logo rebuilt by the model
+  - redrawn or altered brand artwork
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: distorted artwork, changed scale, logo rebuilt by the model, redrawn or altered brand artwork, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: mockups-and-product-presentation
+  categoryName: 8. Mockups & Product Presentation
+  domain: decal placement on object profile
+  tags:
+    - curation-v2
+    - mockups-and-product-presentation
+    - decal-object
+    - applied-design
+    - mockup
+    - profile
+    - r-mck-07
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

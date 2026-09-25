@@ -841,10 +841,16 @@
       "category": "7. Packaging & Label Design"
     },
     "R-MCK-01": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-141",
+      "name": "Raking-Light Relief Study",
+      "category": "8. Mockups & Product Presentation"
     },
     "R-MCK-02": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-143",
+      "name": "Soft Tabletop Presentation",
+      "category": "8. Mockups & Product Presentation"
     },
     "R-MCK-03": {
       "status": "replaced",
@@ -852,19 +858,34 @@
       "doc": "AUDIT.md"
     },
     "R-MCK-04": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-142",
+      "name": "Hard-Sun Graphic Shadows",
+      "category": "8. Mockups & Product Presentation"
     },
     "R-MCK-05": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-145",
+      "name": "Fold-Following Artwork",
+      "category": "8. Mockups & Product Presentation"
     },
     "R-MCK-06": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-146",
+      "name": "Seam-Registered Textile",
+      "category": "8. Mockups & Product Presentation"
     },
     "R-MCK-07": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-147",
+      "name": "Decal-on-Object Study",
+      "category": "8. Mockups & Product Presentation"
     },
     "R-MCK-08": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-148",
+      "name": "Full-Surface UV Preview",
+      "category": "8. Mockups & Product Presentation"
     },
     "R-MCK-09": {
       "status": "replaced",
@@ -872,16 +893,28 @@
       "doc": "AUDIT.md"
     },
     "R-MCK-10": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-144",
+      "name": "Material Macro Pair",
+      "category": "8. Mockups & Product Presentation"
     },
     "R-MCK-11": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-150",
+      "name": "Floating Assembly Presentation",
+      "category": "8. Mockups & Product Presentation"
     },
     "R-MCK-12": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-149",
+      "name": "Open-Closed Packaging Pair",
+      "category": "8. Mockups & Product Presentation"
     },
     "R-MCK-13": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-151",
+      "name": "Neutral Apparel Hanging",
+      "category": "8. Mockups & Product Presentation"
     },
     "R-MCK-14": {
       "status": "replaced",
@@ -889,16 +922,28 @@
       "doc": "AUDIT.md"
     },
     "R-MCK-15": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-152",
+      "name": "Screen-in-Device Preservation",
+      "category": "8. Mockups & Product Presentation"
     },
     "R-MCK-16": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-153",
+      "name": "Multi-Support Identity Set",
+      "category": "8. Mockups & Product Presentation"
     },
     "R-MCK-17": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-154",
+      "name": "Weathered Public Display",
+      "category": "8. Mockups & Product Presentation"
     },
     "R-MCK-18": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-155",
+      "name": "Gallery Plinth Presentation",
+      "category": "8. Mockups & Product Presentation"
     },
     "R-MCK-19": {
       "status": "qa-protocol",
@@ -906,7 +951,10 @@
       "doc": "QA-PROTOCOLS.md"
     },
     "R-MCK-20": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-156",
+      "name": "Lighting-Angle Contact Sheet",
+      "category": "8. Mockups & Product Presentation"
     },
     "R-ADV-01": {
       "status": "pending"

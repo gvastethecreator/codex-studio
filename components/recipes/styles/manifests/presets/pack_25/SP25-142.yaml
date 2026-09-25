@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP25-142
+packId: pack_25
+name: Hard-Sun Graphic Shadows
+styleAnchors:
+  - Hard-Sun Graphic Shadows
+  - hard sunlight graphic shadow modifier
+  - one hard sun
+displayName: Hard-Sun Graphic Shadows
+category: 8. Mockups & Product Presentation
+domain: hard sunlight graphic shadow modifier
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - mockups-and-product-presentation
+  - hard-sun-shadow
+  - applied-design
+  - mockup
+  - modifier
+  - r-mck-04
+  - requested-text
+visualDna:
+  aesthetic: 'Hard-Sun Graphic Shadows: a light modifier using one hard sun so crisp object shadows become part of the composition, clear of the brand.'
+  subject_treatment: Light the prompt's product with one hard declared sun so its crisp shadow balances the composition, never falling across the brand or text.
+  color_and_tone: Artwork colors kept, with no color cast that changes the identity.
+  lighting_and_shadow: One hard source producing coherent sharp shadows in direction and scale.
+  texture_and_material: Original materials intact, the shadow adding shape and no texture.
+  camera_and_composition: The shadow works as a counterweight outside the main reading area.
+  atmosphere_and_mood: Graphic precision and solar energy, bright and confident.
+  rendering_and_quality: The shadow matches the real geometry of the object.
+  creative_brief: "Hard-Sun Graphic Shadows: a light modifier using one hard sun so crisp object shadows become part of the composition, clear of the brand. Carry it through one hard sun, crisp shadow shapes, shadow as counterweight, clear brand. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: one hard sun; crisp shadow shapes; shadow as counterweight; clear brand
+avoidRules:
+  - impossible shadow
+  - covered text
+  - props that build an unrelated scene
+  - redrawn or altered brand artwork
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: impossible shadow, covered text, props that build an unrelated scene, redrawn or altered brand artwork, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: mockups-and-product-presentation
+  categoryName: 8. Mockups & Product Presentation
+  domain: hard sunlight graphic shadow modifier
+  tags:
+    - curation-v2
+    - mockups-and-product-presentation
+    - hard-sun-shadow
+    - applied-design
+    - mockup
+    - modifier
+    - r-mck-04
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

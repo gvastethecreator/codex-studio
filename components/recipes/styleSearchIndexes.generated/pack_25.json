@@ -3,7 +3,7 @@
     {
       "id": "pack_25",
       "name": "Applied Design",
-      "presetCount": 140
+      "presetCount": 160
     }
   ],
   "presets": [
@@ -2402,7 +2402,443 @@
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp25-140 finish separation preview print finish separation sheet profile separated finish layers 7. packaging & label design packaging & labels print finish separation sheet profile pack_25 applied design packaging-and-label-design applied-design packaging-and-label-design print-finish-separation-sheet-profile"
+    },
+    {
+      "id": "SP25-141",
+      "name": "Raking-Light Relief Study",
+      "styleAnchors": [
+        "Raking-Light Relief Study",
+        "raking light relief mockup modifier",
+        "low raking light"
+      ],
+      "ref": "pack_25/SP25-141.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "mockups-and-product-presentation",
+      "categoryName": "8. Mockups & Product Presentation",
+      "domain": "raking light relief mockup modifier",
+      "tags": [
+        "applied-design",
+        "mockups-and-product-presentation",
+        "raking-light-relief-mockup-modifier"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-141 raking-light relief study raking light relief mockup modifier low raking light 8. mockups & product presentation mockups & presentation raking light relief mockup modifier pack_25 applied design mockups-and-product-presentation applied-design mockups-and-product-presentation raking-light-relief-mockup-modifier"
+    },
+    {
+      "id": "SP25-142",
+      "name": "Hard-Sun Graphic Shadows",
+      "styleAnchors": [
+        "Hard-Sun Graphic Shadows",
+        "hard sunlight graphic shadow modifier",
+        "one hard sun"
+      ],
+      "ref": "pack_25/SP25-142.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "mockups-and-product-presentation",
+      "categoryName": "8. Mockups & Product Presentation",
+      "domain": "hard sunlight graphic shadow modifier",
+      "tags": [
+        "applied-design",
+        "mockups-and-product-presentation",
+        "hard-sunlight-graphic-shadow-modifier"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-142 hard-sun graphic shadows hard sunlight graphic shadow modifier one hard sun 8. mockups & product presentation mockups & presentation hard sunlight graphic shadow modifier pack_25 applied design mockups-and-product-presentation applied-design mockups-and-product-presentation hard-sunlight-graphic-shadow-modifier"
+    },
+    {
+      "id": "SP25-143",
+      "name": "Soft Tabletop Presentation",
+      "styleAnchors": [
+        "Soft Tabletop Presentation",
+        "neutral tabletop product presentation",
+        "neutral tabletop"
+      ],
+      "ref": "pack_25/SP25-143.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "mockups-and-product-presentation",
+      "categoryName": "8. Mockups & Product Presentation",
+      "domain": "neutral tabletop product presentation",
+      "tags": [
+        "applied-design",
+        "mockups-and-product-presentation",
+        "neutral-tabletop-product-presentation"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-143 soft tabletop presentation neutral tabletop product presentation neutral tabletop 8. mockups & product presentation mockups & presentation neutral tabletop product presentation pack_25 applied design mockups-and-product-presentation applied-design mockups-and-product-presentation neutral-tabletop-product-presentation"
+    },
+    {
+      "id": "SP25-144",
+      "name": "Material Macro Pair",
+      "styleAnchors": [
+        "Material Macro Pair",
+        "overview and macro detail pair profile",
+        "overview plus macro"
+      ],
+      "ref": "pack_25/SP25-144.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "mockups-and-product-presentation",
+      "categoryName": "8. Mockups & Product Presentation",
+      "domain": "overview and macro detail pair profile",
+      "tags": [
+        "applied-design",
+        "mockups-and-product-presentation",
+        "overview-and-macro-detail-pair-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-144 material macro pair overview and macro detail pair profile overview plus macro 8. mockups & product presentation mockups & presentation overview and macro detail pair profile pack_25 applied design mockups-and-product-presentation applied-design mockups-and-product-presentation overview-and-macro-detail-pair-profile"
+    },
+    {
+      "id": "SP25-145",
+      "name": "Fold-Following Artwork",
+      "styleAnchors": [
+        "Fold-Following Artwork",
+        "artwork over folds application profile",
+        "artwork over folds"
+      ],
+      "ref": "pack_25/SP25-145.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "mockups-and-product-presentation",
+      "categoryName": "8. Mockups & Product Presentation",
+      "domain": "artwork over folds application profile",
+      "tags": [
+        "applied-design",
+        "mockups-and-product-presentation",
+        "artwork-over-folds-application-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-145 fold-following artwork artwork over folds application profile artwork over folds 8. mockups & product presentation mockups & presentation artwork over folds application profile pack_25 applied design mockups-and-product-presentation applied-design mockups-and-product-presentation artwork-over-folds-application-profile"
+    },
+    {
+      "id": "SP25-146",
+      "name": "Seam-Registered Textile",
+      "styleAnchors": [
+        "Seam-Registered Textile",
+        "print across garment seams profile",
+        "print across seams"
+      ],
+      "ref": "pack_25/SP25-146.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "mockups-and-product-presentation",
+      "categoryName": "8. Mockups & Product Presentation",
+      "domain": "print across garment seams profile",
+      "tags": [
+        "applied-design",
+        "mockups-and-product-presentation",
+        "print-across-garment-seams-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-146 seam-registered textile print across garment seams profile print across seams 8. mockups & product presentation mockups & presentation print across garment seams profile pack_25 applied design mockups-and-product-presentation applied-design mockups-and-product-presentation print-across-garment-seams-profile"
+    },
+    {
+      "id": "SP25-147",
+      "name": "Decal-on-Object Study",
+      "styleAnchors": ["Decal-on-Object Study", "decal placement on object profile", "decal layer"],
+      "ref": "pack_25/SP25-147.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "mockups-and-product-presentation",
+      "categoryName": "8. Mockups & Product Presentation",
+      "domain": "decal placement on object profile",
+      "tags": [
+        "applied-design",
+        "mockups-and-product-presentation",
+        "decal-placement-on-object-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-147 decal-on-object study decal placement on object profile decal layer 8. mockups & product presentation mockups & presentation decal placement on object profile pack_25 applied design mockups-and-product-presentation applied-design mockups-and-product-presentation decal-placement-on-object-profile"
+    },
+    {
+      "id": "SP25-148",
+      "name": "Full-Surface UV Preview",
+      "styleAnchors": [
+        "Full-Surface UV Preview",
+        "wraparound surface map preview profile",
+        "flat layout beside object"
+      ],
+      "ref": "pack_25/SP25-148.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "mockups-and-product-presentation",
+      "categoryName": "8. Mockups & Product Presentation",
+      "domain": "wraparound surface map preview profile",
+      "tags": [
+        "applied-design",
+        "mockups-and-product-presentation",
+        "wraparound-surface-map-preview-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-148 full-surface uv preview wraparound surface map preview profile flat layout beside object 8. mockups & product presentation mockups & presentation wraparound surface map preview profile pack_25 applied design mockups-and-product-presentation applied-design mockups-and-product-presentation wraparound-surface-map-preview-profile"
+    },
+    {
+      "id": "SP25-149",
+      "name": "Open-Closed Packaging Pair",
+      "styleAnchors": [
+        "Open-Closed Packaging Pair",
+        "closed and opened package pair profile",
+        "closed and opened"
+      ],
+      "ref": "pack_25/SP25-149.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "mockups-and-product-presentation",
+      "categoryName": "8. Mockups & Product Presentation",
+      "domain": "closed and opened package pair profile",
+      "tags": [
+        "applied-design",
+        "mockups-and-product-presentation",
+        "closed-and-opened-package-pair-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-149 open-closed packaging pair closed and opened package pair profile closed and opened 8. mockups & product presentation mockups & presentation closed and opened package pair profile pack_25 applied design mockups-and-product-presentation applied-design mockups-and-product-presentation closed-and-opened-package-pair-profile"
+    },
+    {
+      "id": "SP25-150",
+      "name": "Floating Assembly Presentation",
+      "styleAnchors": [
+        "Floating Assembly Presentation",
+        "suspended component presentation profile",
+        "suspended parts"
+      ],
+      "ref": "pack_25/SP25-150.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "mockups-and-product-presentation",
+      "categoryName": "8. Mockups & Product Presentation",
+      "domain": "suspended component presentation profile",
+      "tags": [
+        "applied-design",
+        "mockups-and-product-presentation",
+        "suspended-component-presentation-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-150 floating assembly presentation suspended component presentation profile suspended parts 8. mockups & product presentation mockups & presentation suspended component presentation profile pack_25 applied design mockups-and-product-presentation applied-design mockups-and-product-presentation suspended-component-presentation-profile"
+    },
+    {
+      "id": "SP25-151",
+      "name": "Neutral Apparel Hanging",
+      "styleAnchors": [
+        "Neutral Apparel Hanging",
+        "hanging garment presentation profile",
+        "gentle drape"
+      ],
+      "ref": "pack_25/SP25-151.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "mockups-and-product-presentation",
+      "categoryName": "8. Mockups & Product Presentation",
+      "domain": "hanging garment presentation profile",
+      "tags": [
+        "applied-design",
+        "mockups-and-product-presentation",
+        "hanging-garment-presentation-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-151 neutral apparel hanging hanging garment presentation profile gentle drape 8. mockups & product presentation mockups & presentation hanging garment presentation profile pack_25 applied design mockups-and-product-presentation applied-design mockups-and-product-presentation hanging-garment-presentation-profile"
+    },
+    {
+      "id": "SP25-152",
+      "name": "Screen-in-Device Preservation",
+      "styleAnchors": [
+        "Screen-in-Device Preservation",
+        "screen placed in device profile",
+        "locked screen layer"
+      ],
+      "ref": "pack_25/SP25-152.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "mockups-and-product-presentation",
+      "categoryName": "8. Mockups & Product Presentation",
+      "domain": "screen placed in device profile",
+      "tags": [
+        "applied-design",
+        "mockups-and-product-presentation",
+        "screen-placed-in-device-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-152 screen-in-device preservation screen placed in device profile locked screen layer 8. mockups & product presentation mockups & presentation screen placed in device profile pack_25 applied design mockups-and-product-presentation applied-design mockups-and-product-presentation screen-placed-in-device-profile"
+    },
+    {
+      "id": "SP25-153",
+      "name": "Multi-Support Identity Set",
+      "styleAnchors": [
+        "Multi-Support Identity Set",
+        "identity across objects set profile",
+        "one identity"
+      ],
+      "ref": "pack_25/SP25-153.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "mockups-and-product-presentation",
+      "categoryName": "8. Mockups & Product Presentation",
+      "domain": "identity across objects set profile",
+      "tags": [
+        "applied-design",
+        "mockups-and-product-presentation",
+        "identity-across-objects-set-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-153 multi-support identity set identity across objects set profile one identity 8. mockups & product presentation mockups & presentation identity across objects set profile pack_25 applied design mockups-and-product-presentation applied-design mockups-and-product-presentation identity-across-objects-set-profile"
+    },
+    {
+      "id": "SP25-154",
+      "name": "Weathered Public Display",
+      "styleAnchors": [
+        "Weathered Public Display",
+        "aged public poster mockup profile",
+        "weathered support"
+      ],
+      "ref": "pack_25/SP25-154.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "mockups-and-product-presentation",
+      "categoryName": "8. Mockups & Product Presentation",
+      "domain": "aged public poster mockup profile",
+      "tags": [
+        "applied-design",
+        "mockups-and-product-presentation",
+        "aged-public-poster-mockup-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-154 weathered public display aged public poster mockup profile weathered support 8. mockups & product presentation mockups & presentation aged public poster mockup profile pack_25 applied design mockups-and-product-presentation applied-design mockups-and-product-presentation aged-public-poster-mockup-profile"
+    },
+    {
+      "id": "SP25-155",
+      "name": "Gallery Plinth Presentation",
+      "styleAnchors": [
+        "Gallery Plinth Presentation",
+        "museum plinth product presentation",
+        "minimal plinth"
+      ],
+      "ref": "pack_25/SP25-155.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "mockups-and-product-presentation",
+      "categoryName": "8. Mockups & Product Presentation",
+      "domain": "museum plinth product presentation",
+      "tags": [
+        "applied-design",
+        "mockups-and-product-presentation",
+        "museum-plinth-product-presentation"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-155 gallery plinth presentation museum plinth product presentation minimal plinth 8. mockups & product presentation mockups & presentation museum plinth product presentation pack_25 applied design mockups-and-product-presentation applied-design mockups-and-product-presentation museum-plinth-product-presentation"
+    },
+    {
+      "id": "SP25-156",
+      "name": "Lighting-Angle Contact Sheet",
+      "styleAnchors": [
+        "Lighting-Angle Contact Sheet",
+        "product lighting test contact sheet",
+        "equal-cell grid"
+      ],
+      "ref": "pack_25/SP25-156.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "mockups-and-product-presentation",
+      "categoryName": "8. Mockups & Product Presentation",
+      "domain": "product lighting test contact sheet",
+      "tags": [
+        "applied-design",
+        "mockups-and-product-presentation",
+        "product-lighting-test-contact-sheet"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-156 lighting-angle contact sheet product lighting test contact sheet equal-cell grid 8. mockups & product presentation mockups & presentation product lighting test contact sheet pack_25 applied design mockups-and-product-presentation applied-design mockups-and-product-presentation product-lighting-test-contact-sheet"
+    },
+    {
+      "id": "SP25-157",
+      "name": "Brand-Shape Set Build",
+      "styleAnchors": [
+        "Brand-Shape Set Build",
+        "set built from brand shapes style",
+        "giant brand shapes"
+      ],
+      "ref": "pack_25/SP25-157.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "mockups-and-product-presentation",
+      "categoryName": "8. Mockups & Product Presentation",
+      "domain": "set built from brand shapes style",
+      "tags": [
+        "applied-design",
+        "mockups-and-product-presentation",
+        "set-built-from-brand-shapes-style"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-157 brand-shape set build set built from brand shapes style giant brand shapes 8. mockups & product presentation mockups & presentation set built from brand shapes style pack_25 applied design mockups-and-product-presentation applied-design mockups-and-product-presentation set-built-from-brand-shapes-style"
+    },
+    {
+      "id": "SP25-158",
+      "name": "Giant Product Miniature World",
+      "styleAnchors": [
+        "Giant Product Miniature World",
+        "giant product in miniature scene style",
+        "giant product"
+      ],
+      "ref": "pack_25/SP25-158.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "mockups-and-product-presentation",
+      "categoryName": "8. Mockups & Product Presentation",
+      "domain": "giant product in miniature scene style",
+      "tags": [
+        "applied-design",
+        "mockups-and-product-presentation",
+        "giant-product-in-miniature-scene-style"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-158 giant product miniature world giant product in miniature scene style giant product 8. mockups & product presentation mockups & presentation giant product in miniature scene style pack_25 applied design mockups-and-product-presentation applied-design mockups-and-product-presentation giant-product-in-miniature-scene-style"
+    },
+    {
+      "id": "SP25-159",
+      "name": "Landscape Billboard Mockup",
+      "styleAnchors": [
+        "Landscape Billboard Mockup",
+        "giant billboard in landscape style",
+        "giant billboard"
+      ],
+      "ref": "pack_25/SP25-159.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "mockups-and-product-presentation",
+      "categoryName": "8. Mockups & Product Presentation",
+      "domain": "giant billboard in landscape style",
+      "tags": [
+        "applied-design",
+        "mockups-and-product-presentation",
+        "giant-billboard-in-landscape-style"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-159 landscape billboard mockup giant billboard in landscape style giant billboard 8. mockups & product presentation mockups & presentation giant billboard in landscape style pack_25 applied design mockups-and-product-presentation applied-design mockups-and-product-presentation giant-billboard-in-landscape-style"
+    },
+    {
+      "id": "SP25-160",
+      "name": "Shop-Window Display Set",
+      "styleAnchors": [
+        "Shop-Window Display Set",
+        "shop window display mockup style",
+        "shop window stage"
+      ],
+      "ref": "pack_25/SP25-160.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "mockups-and-product-presentation",
+      "categoryName": "8. Mockups & Product Presentation",
+      "domain": "shop window display mockup style",
+      "tags": [
+        "applied-design",
+        "mockups-and-product-presentation",
+        "shop-window-display-mockup-style"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-160 shop-window display set shop window display mockup style shop window stage 8. mockups & product presentation mockups & presentation shop window display mockup style pack_25 applied design mockups-and-product-presentation applied-design mockups-and-product-presentation shop-window-display-mockup-style"
     }
   ],
-  "totalPresetCount": 140
+  "totalPresetCount": 160
 }

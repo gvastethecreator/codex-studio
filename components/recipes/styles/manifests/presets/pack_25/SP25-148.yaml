@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP25-148
+packId: pack_25
+name: Full-Surface UV Preview
+styleAnchors:
+  - Full-Surface UV Preview
+  - wraparound surface map preview profile
+  - flat layout beside object
+displayName: Full-Surface UV Preview
+category: 8. Mockups & Product Presentation
+domain: wraparound surface map preview profile
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - mockups-and-product-presentation
+  - uv-preview
+  - applied-design
+  - mockup
+  - profile
+  - r-mck-08
+  - requested-text
+visualDna:
+  aesthetic: 'Full-Surface UV Preview: a flat surface layout shown beside the object it wraps, every face and seam of the map in its correct place.'
+  subject_treatment: Show the prompt's flat surface layout and the object it wraps side by side, each face and seam where declared, the name appearing only once.
+  color_and_tone: Source colors and register marks intact across both views.
+  lighting_and_shadow: Neutral light that shows continuity and keeps seams visible.
+  texture_and_material: Sober material with the applied texture at a defined scale.
+  camera_and_composition: Flat layout, main view and seam detail with clear correspondence.
+  atmosphere_and_mood: Mapping precision and a clear reading of volume.
+  rendering_and_quality: Every mark from the layout appears once on the right face.
+  creative_brief: "Full-Surface UV Preview: a flat surface layout shown beside the object it wraps, every face and seam of the map in its correct place. Carry it through flat layout beside object, seam in view, face correspondence, single name. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: flat layout beside object; seam in view; face correspondence; single name
+avoidRules:
+  - invented layouts
+  - mirrored art
+  - unauthorized repeats
+  - redrawn or altered brand artwork
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: invented layouts, mirrored art, unauthorized repeats, redrawn or altered brand artwork, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: mockups-and-product-presentation
+  categoryName: 8. Mockups & Product Presentation
+  domain: wraparound surface map preview profile
+  tags:
+    - curation-v2
+    - mockups-and-product-presentation
+    - uv-preview
+    - applied-design
+    - mockup
+    - profile
+    - r-mck-08
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

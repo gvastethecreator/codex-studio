@@ -2473,5 +2473,20 @@
     "evidencePresetIds": ["SP25-121", "SP25-122", "SP25-123"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_25",
+    "category": "8. Mockups & Product Presentation",
+    "displayCategory": "Mockups & presentation",
+    "kind": "mixed",
+    "expectedCount": 20,
+    "baselineHash": "4eb701531d7a844c2125faa0b663900b86bc4f6cdad704647a62d24c5c4eb354",
+    "problem": "Mockup presets must present an existing design without redrawing its artwork or brand text, and must not duplicate the pack_01 product photography looks.",
+    "preserve": "The applied artwork, brand text, colors, proportions and part counts stay exact; each preset changes only light, support, context or presentation layout.",
+    "proposedAction": "Applied-design import: raking-light and hard-sun modifiers, tabletop, macro pair, floating assembly, hanging garment, weathered display, gallery plinth and screen-in-device profiles, fold, seam, decal, surface-map, open-closed, identity-set and lighting contact-sheet application profiles, and four new presentation styles (brand-shape set, giant product in a miniature world, landscape billboard, shop window) replacing three pack_01 overlaps and the refraction check (moved to QA-PROTOCOLS.md).",
+    "validation": "Generate each card, then compare the applied artwork with the brief letter by letter; test a box, a bottle, a garment, a screen and a poster, and check that nothing was redrawn.",
+    "evidencePresetIds": ["SP25-141", "SP25-142", "SP25-143"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

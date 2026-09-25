@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP25-141
+packId: pack_25
+name: Raking-Light Relief Study
+styleAnchors:
+  - Raking-Light Relief Study
+  - raking light relief mockup modifier
+  - low raking light
+displayName: Raking-Light Relief Study
+category: 8. Mockups & Product Presentation
+domain: raking light relief mockup modifier
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - mockups-and-product-presentation
+  - raking-relief
+  - applied-design
+  - mockup
+  - modifier
+  - r-mck-01
+  - requested-text
+visualDna:
+  aesthetic: 'Raking-Light Relief Study: a light modifier that sweeps low light across a printed object so embossing, edges and contact become visible.'
+  subject_treatment: Change only the light on the prompt's object to a low raking angle that reveals its existing relief and edges, keeping artwork, camera and geometry unchanged.
+  color_and_tone: Approved colors kept, with enough exposure in every printed area.
+  lighting_and_shadow: Broad low raking light with short contained relief shadows and no burnt highlights.
+  texture_and_material: Source material kept, showing only the response of relief that already exists.
+  camera_and_composition: The input composition kept, with an optional separate close-up.
+  atmosphere_and_mood: Precise tactility and a clear reading of the surface.
+  rendering_and_quality: Visible relief matches defined geometry, with no invented detail.
+  creative_brief: "Raking-Light Relief Study: a light modifier that sweeps low light across a printed object so embossing, edges and contact become visible. Carry it through low raking light, revealed relief, unchanged artwork, frontal control. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: low raking light; revealed relief; unchanged artwork; frontal control
+avoidRules:
+  - invented relief
+  - text hidden by shadow
+  - recolor through lighting
+  - redrawn or altered brand artwork
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: invented relief, text hidden by shadow, recolor through lighting, redrawn or altered brand artwork, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: mockups-and-product-presentation
+  categoryName: 8. Mockups & Product Presentation
+  domain: raking light relief mockup modifier
+  tags:
+    - curation-v2
+    - mockups-and-product-presentation
+    - raking-relief
+    - applied-design
+    - mockup
+    - modifier
+    - r-mck-01
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

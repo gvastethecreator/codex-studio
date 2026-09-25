@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-158
+packId: pack_25
+name: Giant Product Miniature World
+styleAnchors:
+  - Giant Product Miniature World
+  - giant product in miniature scene style
+  - giant product
+displayName: Giant Product Miniature World
+category: 8. Mockups & Product Presentation
+domain: giant product in miniature scene style
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - mockups-and-product-presentation
+  - giant-miniature
+  - applied-design
+  - mockup
+  - r-mck-09-new
+  - requested-text
+visualDna:
+  aesthetic: 'Giant Product Miniature World: the product shown towering over a detailed miniature world, with tiny figures reacting to it like a landmark.'
+  subject_treatment: Place the prompt's product at giant scale in a detailed miniature world of tiny people, vehicles and buildings, keeping the product and brand text exact.
+  color_and_tone: Bright miniature colors around the product, with its own palette kept.
+  lighting_and_shadow: Soft sunlight with a long product shadow falling across the tiny world.
+  texture_and_material: Model-railway miniatures, tiny figures and the product's real material.
+  camera_and_composition: Low tilt-shift view with the product rising like a monument.
+  atmosphere_and_mood: Wonder and humor, a small world gathering around something enormous.
+  rendering_and_quality: Crisp miniature photography with selective focus and a sharp label.
+  creative_brief: "Giant Product Miniature World: the product shown towering over a detailed miniature world, with tiny figures reacting to it like a landmark. Carry it through giant product, miniature world, tiny figures, tilt-shift focus. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: giant product; miniature world; tiny figures; tilt-shift focus
+avoidRules:
+  - product label distorted
+  - figures covering the brand
+  - redrawn or altered brand artwork
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: product label distorted, figures covering the brand, redrawn or altered brand artwork, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: mockups-and-product-presentation
+  categoryName: 8. Mockups & Product Presentation
+  domain: giant product in miniature scene style
+  tags:
+    - curation-v2
+    - mockups-and-product-presentation
+    - giant-miniature
+    - applied-design
+    - mockup
+    - r-mck-09-new
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
