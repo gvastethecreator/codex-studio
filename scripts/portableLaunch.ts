@@ -6,10 +6,10 @@ import {
 } from '../packages/shared/src';
 
 export const PORTABLE_LOGIN_DISCLAIMER =
-  'This launcher does not bundle ChatGPT login. Run `codex login` and choose ChatGPT when Codex CLI asks.';
+  'This launcher does not bundle ChatGPT login. Sign in with ChatGPT from Cozy Studio after it opens.';
 
 export function missingBunMessage() {
-  return `Codex Studio needs Bun. Install it from ${ONBOARDING_BUN_INSTALL_URL} then run this launcher again.`;
+  return `Cozy Studio needs Bun. Install it from ${ONBOARDING_BUN_INSTALL_URL} then run this launcher again.`;
 }
 
 export function missingCodexCliMessage() {

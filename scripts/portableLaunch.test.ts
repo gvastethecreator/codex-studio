@@ -107,7 +107,8 @@ describe('portable launchers', () => {
     const note = readFileSync(portableNote, 'utf8');
     for (const source of [bat, command]) {
       expect(source).toContain(ONBOARDING_BUN_INSTALL_URL);
-      expect(source).toContain(ONBOARDING_CODEX_INSTALL_URL);
+      expect(source).not.toContain(ONBOARDING_CODEX_INSTALL_URL);
+      expect(source).not.toMatch(/needs Codex CLI/i);
       expect(source).toContain('does not bundle ChatGPT login');
       expect(source).toContain('STUDIO_PORTABLE=1');
       expect(source).toContain(PORTABLE_STUDIO_LIBRARY_FOLDER_NAME);
@@ -121,6 +122,37 @@ describe('portable launchers', () => {
     expect(missingBunMessage()).toContain(ONBOARDING_BUN_INSTALL_URL);
     expect(missingCodexCliMessage()).toContain(ONBOARDING_CODEX_INSTALL_URL);
     expect(PORTABLE_LOGIN_DISCLAIMER).toMatch(/does not bundle ChatGPT login/);
+    expect(PORTABLE_LOGIN_DISCLAIMER).not.toMatch(/codex login/i);
+  });
+
+  it('does not open a browser when the server never reports a listening URL', async () => {
+    let opened = false;
+    let clock = 0;
+    const kill = () => undefined;
+    await expect(
+      runPortableStart({
+        env: { STUDIO_PORTABLE: '1' },
+        cwd: 'D:/unzipped/codex-studio',
+        distReady: () => true,
+        now: () => clock,
+        listenDeadlineMs: 30_000,
+        waitMs: async () => {
+          clock += 30_000;
+        },
+        openBrowser: () => {
+          opened = true;
+        },
+        spawnServer: () =>
+          ({
+            stdout: { on() {} },
+            stderr: { on() {} },
+            exitCode: null,
+            kill,
+            once() {},
+          }) as never,
+      }),
+    ).rejects.toThrow(/listening URL/);
+    expect(opened).toBe(false);
   });
 });
 

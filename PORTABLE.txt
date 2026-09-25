@@ -1,19 +1,20 @@
-Codex Studio portable start
+Cozy Studio portable start
 ===========================
 
 Windows: double-click `Codex Studio.bat`.
 macOS: double-click `Codex Studio.command`. If macOS says the file is not
 executable, run `chmod +x "Codex Studio.command"` once in Terminal.
 
-The launcher checks that Bun and Codex CLI are on PATH, starts one local-server
-process, and opens a browser. It does not bundle ChatGPT login. Run
-`codex login` and choose ChatGPT when Codex CLI asks.
+The launcher checks that Bun is on PATH, starts one local-server process, and
+opens a browser. Codex CLI is not required to open the app or connect ChatGPT.
+It does not bundle ChatGPT login. Sign in with ChatGPT from Cozy Studio after
+it opens. Install Codex CLI only when you choose the Codex connection.
 
 If STUDIO_LIBRARY_DIR is unset, portable start uses a folder named
 `Codex Studio Library` beside this unpacked folder.
 
 Linux: there is no first-class launcher in this zip. Best-effort is to install
-Bun and Codex CLI, then from this folder run:
+Bun, then from this folder run:
 
   bun run scripts/portable-start.ts
 

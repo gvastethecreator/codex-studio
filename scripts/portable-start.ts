@@ -1,10 +1,5 @@
 import { spawn, type ChildProcess } from 'node:child_process';
-import {
-  parseListeningUrl,
-  portableServerArgv,
-  portableStudioUrl,
-  resolvePortableLibraryDir,
-} from './portableLaunch';
+import { parseListeningUrl, portableServerArgv, resolvePortableLibraryDir } from './portableLaunch';
 import { resolveDefaultLibraryDir } from '../apps/local-server/src/config';
 import { resolveUiDistDir, uiDistIsReady } from '../apps/local-server/src/uiStaticRoutes';
 
@@ -16,6 +11,8 @@ export interface PortableStartDependencies {
   waitMs?: (ms: number) => Promise<void>;
   distReady?: (rootDir: string) => boolean;
   forwardOutput?: (chunk: string) => void;
+  now?: () => number;
+  listenDeadlineMs?: number;
 }
 
 function defaultOpenBrowser(url: string) {
@@ -81,9 +78,10 @@ export async function runPortableStart(dependencies: PortableStartDependencies =
 
   const waitMs =
     dependencies.waitMs ?? ((ms: number) => new Promise((resolve) => setTimeout(resolve, ms)));
-  const deadline = Date.now() + 30_000;
+  const now = dependencies.now ?? Date.now;
+  const deadline = now() + (dependencies.listenDeadlineMs ?? 30_000);
   let url: string | null = null;
-  while (Date.now() < deadline) {
+  while (now() < deadline) {
     url = parseListeningUrl(combined);
     if (url) break;
     if (child.exitCode !== null) {
@@ -92,7 +90,8 @@ export async function runPortableStart(dependencies: PortableStartDependencies =
     await waitMs(100);
   }
   if (!url) {
-    url = portableStudioUrl(Number(env.STUDIO_SERVER_PORT || 17223));
+    child.kill();
+    throw new Error('local-server did not report a listening URL before the deadline.');
   }
 
   (dependencies.openBrowser ?? defaultOpenBrowser)(url);
