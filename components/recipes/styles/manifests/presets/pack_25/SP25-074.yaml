@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-074
+packId: pack_25
+name: Rounded Instrument Panels
+styleAnchors:
+  - Rounded Instrument Panels
+  - soft grouped instrument panel layout
+  - soft grouped panels
+displayName: Rounded Instrument Panels
+category: 4. UI & App Design
+domain: soft grouped instrument panel layout
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ui-and-app-design
+  - rounded-instrument
+  - applied-design
+  - ui
+  - r-ui-14
+  - requested-text
+visualDna:
+  aesthetic: 'Rounded Instrument Panels: compact groups of controls in soft-edged panels, each with its own scale and a direct reading.'
+  subject_treatment: Group the prompt's controls into soft panels sized by task, each with a directly linked scale or reading; keep requested labels and values exact.
+  color_and_tone: Neutral base and an accent concentrated on the selection, with clear reading values.
+  lighting_and_shadow: Very soft edge light where it helps separate one panel from another.
+  texture_and_material: Semi-matte surfaces, soft contours and precise graphic scales.
+  camera_and_composition: Panels sized by task with aligned controls and readings within easy reach.
+  atmosphere_and_mood: Friendly instruments with operational clarity, approachable and exact.
+  rendering_and_quality: Every scale shows a range or unit when the brief supplies one.
+  creative_brief: "Rounded Instrument Panels: compact groups of controls in soft-edged panels, each with its own scale and a direct reading. Carry it through soft grouped panels, linked scales, task-sized groups, one accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: soft grouped panels; linked scales; task-sized groups; one accent
+avoidRules:
+  - identical panels for different tasks
+  - decorative knobs
+  - meaningless scales
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: identical panels for different tasks, decorative knobs, meaningless scales, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: ui-and-app-design
+  categoryName: 4. UI & App Design
+  domain: soft grouped instrument panel layout
+  tags:
+    - curation-v2
+    - ui-and-app-design
+    - rounded-instrument
+    - applied-design
+    - ui
+    - r-ui-14
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

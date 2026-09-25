@@ -363,64 +363,124 @@
       "category": "3. App & Illustrative Icons"
     },
     "R-UI-01": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-061",
+      "name": "Editorial Index Interface",
+      "category": "4. UI & App Design"
     },
     "R-UI-02": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-062",
+      "name": "Instrument Rail Interface",
+      "category": "4. UI & App Design"
     },
     "R-UI-03": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-063",
+      "name": "Soft Containment Interface",
+      "category": "4. UI & App Design"
     },
     "R-UI-04": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-064",
+      "name": "Ledger-and-Tab Interface",
+      "category": "4. UI & App Design"
     },
     "R-UI-05": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-065",
+      "name": "Open-Frame Utility",
+      "category": "4. UI & App Design"
     },
     "R-UI-06": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-066",
+      "name": "Layered Paper Controls",
+      "category": "4. UI & App Design"
     },
     "R-UI-07": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-067",
+      "name": "Dense Precision Console",
+      "category": "4. UI & App Design"
     },
     "R-UI-08": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-068",
+      "name": "Chromatic Function Blocks",
+      "category": "4. UI & App Design"
     },
     "R-UI-09": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-069",
+      "name": "Tactile Recessed Controls",
+      "category": "4. UI & App Design"
     },
     "R-UI-10": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-070",
+      "name": "Sparse Research Canvas",
+      "category": "4. UI & App Design"
     },
     "R-UI-11": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-071",
+      "name": "Monospace Archive Interface",
+      "category": "4. UI & App Design"
     },
     "R-UI-12": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-072",
+      "name": "Split-Weight Navigation",
+      "category": "4. UI & App Design"
     },
     "R-UI-13": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-073",
+      "name": "Graphic Stamp Interface",
+      "category": "4. UI & App Design"
     },
     "R-UI-14": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-074",
+      "name": "Rounded Instrument Panels",
+      "category": "4. UI & App Design"
     },
     "R-UI-15": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-075",
+      "name": "High-Contrast Quiet UI",
+      "category": "4. UI & App Design"
     },
     "R-UI-16": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-076",
+      "name": "Translucent Work Layers",
+      "category": "4. UI & App Design"
     },
     "R-UI-17": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-077",
+      "name": "Timeline-Centered Workspace",
+      "category": "4. UI & App Design"
     },
     "R-UI-18": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-078",
+      "name": "Map-and-Inspector Workspace",
+      "category": "4. UI & App Design"
     },
     "R-UI-19": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-079",
+      "name": "Single-Task Progressive UI",
+      "category": "4. UI & App Design"
     },
     "R-UI-20": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-080",
+      "name": "Five-State UI Specimen",
+      "category": "4. UI & App Design"
     },
     "R-HUD-01": {
       "status": "pending"

@@ -3,7 +3,7 @@
     {
       "id": "pack_25",
       "name": "Applied Design",
-      "presetCount": 60
+      "presetCount": 80
     }
   ],
   "presets": [
@@ -946,7 +946,351 @@
       "tags": ["applied-design", "app-and-illustrative-icons", "app-icon-family-size-sheet"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp25-060 icon family reduction app icon family size sheet shared rules 3. app & illustrative icons app & illustrative icons app icon family size sheet pack_25 applied design app-and-illustrative-icons applied-design app-and-illustrative-icons app-icon-family-size-sheet"
+    },
+    {
+      "id": "SP25-061",
+      "name": "Editorial Index Interface",
+      "styleAnchors": ["Editorial Index Interface", "editorial index app layout", "side index"],
+      "ref": "pack_25/SP25-061.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "ui-and-app-design",
+      "categoryName": "4. UI & App Design",
+      "domain": "editorial index app layout",
+      "tags": ["applied-design", "ui-and-app-design", "editorial-index-app-layout"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-061 editorial index interface editorial index app layout side index 4. ui & app design ui & app design editorial index app layout pack_25 applied design ui-and-app-design applied-design ui-and-app-design editorial-index-app-layout"
+    },
+    {
+      "id": "SP25-062",
+      "name": "Instrument Rail Interface",
+      "styleAnchors": [
+        "Instrument Rail Interface",
+        "control-to-reading rail layout",
+        "continuous rails"
+      ],
+      "ref": "pack_25/SP25-062.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "ui-and-app-design",
+      "categoryName": "4. UI & App Design",
+      "domain": "control-to-reading rail layout",
+      "tags": ["applied-design", "ui-and-app-design", "control-to-reading-rail-layout"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-062 instrument rail interface control-to-reading rail layout continuous rails 4. ui & app design ui & app design control-to-reading rail layout pack_25 applied design ui-and-app-design applied-design ui-and-app-design control-to-reading-rail-layout"
+    },
+    {
+      "id": "SP25-063",
+      "name": "Soft Containment Interface",
+      "styleAnchors": [
+        "Soft Containment Interface",
+        "soft container app layout",
+        "soft containers"
+      ],
+      "ref": "pack_25/SP25-063.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "ui-and-app-design",
+      "categoryName": "4. UI & App Design",
+      "domain": "soft container app layout",
+      "tags": ["applied-design", "ui-and-app-design", "soft-container-app-layout"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-063 soft containment interface soft container app layout soft containers 4. ui & app design ui & app design soft container app layout pack_25 applied design ui-and-app-design applied-design ui-and-app-design soft-container-app-layout"
+    },
+    {
+      "id": "SP25-064",
+      "name": "Ledger-and-Tab Interface",
+      "styleAnchors": [
+        "Ledger-and-Tab Interface",
+        "ledger rows and index tab layout",
+        "ledger rows"
+      ],
+      "ref": "pack_25/SP25-064.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "ui-and-app-design",
+      "categoryName": "4. UI & App Design",
+      "domain": "ledger rows and index tab layout",
+      "tags": ["applied-design", "ui-and-app-design", "ledger-rows-and-index-tab-layout"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-064 ledger-and-tab interface ledger rows and index tab layout ledger rows 4. ui & app design ui & app design ledger rows and index tab layout pack_25 applied design ui-and-app-design applied-design ui-and-app-design ledger-rows-and-index-tab-layout"
+    },
+    {
+      "id": "SP25-065",
+      "name": "Open-Frame Utility",
+      "styleAnchors": ["Open-Frame Utility", "partial-border workspace layout", "partial borders"],
+      "ref": "pack_25/SP25-065.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "ui-and-app-design",
+      "categoryName": "4. UI & App Design",
+      "domain": "partial-border workspace layout",
+      "tags": ["applied-design", "ui-and-app-design", "partial-border-workspace-layout"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-065 open-frame utility partial-border workspace layout partial borders 4. ui & app design ui & app design partial-border workspace layout pack_25 applied design ui-and-app-design applied-design ui-and-app-design partial-border-workspace-layout"
+    },
+    {
+      "id": "SP25-066",
+      "name": "Layered Paper Controls",
+      "styleAnchors": [
+        "Layered Paper Controls",
+        "stacked sheet control layout",
+        "overlapping sheets"
+      ],
+      "ref": "pack_25/SP25-066.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "ui-and-app-design",
+      "categoryName": "4. UI & App Design",
+      "domain": "stacked sheet control layout",
+      "tags": ["applied-design", "ui-and-app-design", "stacked-sheet-control-layout"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-066 layered paper controls stacked sheet control layout overlapping sheets 4. ui & app design ui & app design stacked sheet control layout pack_25 applied design ui-and-app-design applied-design ui-and-app-design stacked-sheet-control-layout"
+    },
+    {
+      "id": "SP25-067",
+      "name": "Dense Precision Console",
+      "styleAnchors": [
+        "Dense Precision Console",
+        "dense operational console layout",
+        "compact rows"
+      ],
+      "ref": "pack_25/SP25-067.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "ui-and-app-design",
+      "categoryName": "4. UI & App Design",
+      "domain": "dense operational console layout",
+      "tags": ["applied-design", "ui-and-app-design", "dense-operational-console-layout"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-067 dense precision console dense operational console layout compact rows 4. ui & app design ui & app design dense operational console layout pack_25 applied design ui-and-app-design applied-design ui-and-app-design dense-operational-console-layout"
+    },
+    {
+      "id": "SP25-068",
+      "name": "Chromatic Function Blocks",
+      "styleAnchors": [
+        "Chromatic Function Blocks",
+        "color-coded role block layout",
+        "role color blocks"
+      ],
+      "ref": "pack_25/SP25-068.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "ui-and-app-design",
+      "categoryName": "4. UI & App Design",
+      "domain": "color-coded role block layout",
+      "tags": ["applied-design", "ui-and-app-design", "color-coded-role-block-layout"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-068 chromatic function blocks color-coded role block layout role color blocks 4. ui & app design ui & app design color-coded role block layout pack_25 applied design ui-and-app-design applied-design ui-and-app-design color-coded-role-block-layout"
+    },
+    {
+      "id": "SP25-069",
+      "name": "Tactile Recessed Controls",
+      "styleAnchors": [
+        "Tactile Recessed Controls",
+        "recessed physical-feel control panel",
+        "recessed sliders"
+      ],
+      "ref": "pack_25/SP25-069.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "ui-and-app-design",
+      "categoryName": "4. UI & App Design",
+      "domain": "recessed physical-feel control panel",
+      "tags": ["applied-design", "ui-and-app-design", "recessed-physical-feel-control-panel"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-069 tactile recessed controls recessed physical-feel control panel recessed sliders 4. ui & app design ui & app design recessed physical-feel control panel pack_25 applied design ui-and-app-design applied-design ui-and-app-design recessed-physical-feel-control-panel"
+    },
+    {
+      "id": "SP25-070",
+      "name": "Sparse Research Canvas",
+      "styleAnchors": ["Sparse Research Canvas", "open canvas research layout", "open canvas"],
+      "ref": "pack_25/SP25-070.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "ui-and-app-design",
+      "categoryName": "4. UI & App Design",
+      "domain": "open canvas research layout",
+      "tags": ["applied-design", "ui-and-app-design", "open-canvas-research-layout"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-070 sparse research canvas open canvas research layout open canvas 4. ui & app design ui & app design open canvas research layout pack_25 applied design ui-and-app-design applied-design ui-and-app-design open-canvas-research-layout"
+    },
+    {
+      "id": "SP25-071",
+      "name": "Monospace Archive Interface",
+      "styleAnchors": [
+        "Monospace Archive Interface",
+        "monospaced archive app layout",
+        "monospaced columns"
+      ],
+      "ref": "pack_25/SP25-071.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "ui-and-app-design",
+      "categoryName": "4. UI & App Design",
+      "domain": "monospaced archive app layout",
+      "tags": ["applied-design", "ui-and-app-design", "monospaced-archive-app-layout"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-071 monospace archive interface monospaced archive app layout monospaced columns 4. ui & app design ui & app design monospaced archive app layout pack_25 applied design ui-and-app-design applied-design ui-and-app-design monospaced-archive-app-layout"
+    },
+    {
+      "id": "SP25-072",
+      "name": "Split-Weight Navigation",
+      "styleAnchors": [
+        "Split-Weight Navigation",
+        "light nav and dense work area layout",
+        "light navigation"
+      ],
+      "ref": "pack_25/SP25-072.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "ui-and-app-design",
+      "categoryName": "4. UI & App Design",
+      "domain": "light nav and dense work area layout",
+      "tags": ["applied-design", "ui-and-app-design", "light-nav-and-dense-work-area-layout"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-072 split-weight navigation light nav and dense work area layout light navigation 4. ui & app design ui & app design light nav and dense work area layout pack_25 applied design ui-and-app-design applied-design ui-and-app-design light-nav-and-dense-work-area-layout"
+    },
+    {
+      "id": "SP25-073",
+      "name": "Graphic Stamp Interface",
+      "styleAnchors": [
+        "Graphic Stamp Interface",
+        "solid status stamp layout",
+        "geometric state stamps"
+      ],
+      "ref": "pack_25/SP25-073.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "ui-and-app-design",
+      "categoryName": "4. UI & App Design",
+      "domain": "solid status stamp layout",
+      "tags": ["applied-design", "ui-and-app-design", "solid-status-stamp-layout"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-073 graphic stamp interface solid status stamp layout geometric state stamps 4. ui & app design ui & app design solid status stamp layout pack_25 applied design ui-and-app-design applied-design ui-and-app-design solid-status-stamp-layout"
+    },
+    {
+      "id": "SP25-074",
+      "name": "Rounded Instrument Panels",
+      "styleAnchors": [
+        "Rounded Instrument Panels",
+        "soft grouped instrument panel layout",
+        "soft grouped panels"
+      ],
+      "ref": "pack_25/SP25-074.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "ui-and-app-design",
+      "categoryName": "4. UI & App Design",
+      "domain": "soft grouped instrument panel layout",
+      "tags": ["applied-design", "ui-and-app-design", "soft-grouped-instrument-panel-layout"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-074 rounded instrument panels soft grouped instrument panel layout soft grouped panels 4. ui & app design ui & app design soft grouped instrument panel layout pack_25 applied design ui-and-app-design applied-design ui-and-app-design soft-grouped-instrument-panel-layout"
+    },
+    {
+      "id": "SP25-075",
+      "name": "High-Contrast Quiet UI",
+      "styleAnchors": ["High-Contrast Quiet UI", "quiet high-contrast app layout", "silent areas"],
+      "ref": "pack_25/SP25-075.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "ui-and-app-design",
+      "categoryName": "4. UI & App Design",
+      "domain": "quiet high-contrast app layout",
+      "tags": ["applied-design", "ui-and-app-design", "quiet-high-contrast-app-layout"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-075 high-contrast quiet ui quiet high-contrast app layout silent areas 4. ui & app design ui & app design quiet high-contrast app layout pack_25 applied design ui-and-app-design applied-design ui-and-app-design quiet-high-contrast-app-layout"
+    },
+    {
+      "id": "SP25-076",
+      "name": "Translucent Work Layers",
+      "styleAnchors": [
+        "Translucent Work Layers",
+        "translucent interface layer modifier",
+        "frosted layers"
+      ],
+      "ref": "pack_25/SP25-076.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "ui-and-app-design",
+      "categoryName": "4. UI & App Design",
+      "domain": "translucent interface layer modifier",
+      "tags": ["applied-design", "ui-and-app-design", "translucent-interface-layer-modifier"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-076 translucent work layers translucent interface layer modifier frosted layers 4. ui & app design ui & app design translucent interface layer modifier pack_25 applied design ui-and-app-design applied-design ui-and-app-design translucent-interface-layer-modifier"
+    },
+    {
+      "id": "SP25-077",
+      "name": "Timeline-Centered Workspace",
+      "styleAnchors": [
+        "Timeline-Centered Workspace",
+        "timeline editor workspace profile",
+        "dominant timeline"
+      ],
+      "ref": "pack_25/SP25-077.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "ui-and-app-design",
+      "categoryName": "4. UI & App Design",
+      "domain": "timeline editor workspace profile",
+      "tags": ["applied-design", "ui-and-app-design", "timeline-editor-workspace-profile"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-077 timeline-centered workspace timeline editor workspace profile dominant timeline 4. ui & app design ui & app design timeline editor workspace profile pack_25 applied design ui-and-app-design applied-design ui-and-app-design timeline-editor-workspace-profile"
+    },
+    {
+      "id": "SP25-078",
+      "name": "Map-and-Inspector Workspace",
+      "styleAnchors": [
+        "Map-and-Inspector Workspace",
+        "map with linked inspector profile",
+        "central plan"
+      ],
+      "ref": "pack_25/SP25-078.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "ui-and-app-design",
+      "categoryName": "4. UI & App Design",
+      "domain": "map with linked inspector profile",
+      "tags": ["applied-design", "ui-and-app-design", "map-with-linked-inspector-profile"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-078 map-and-inspector workspace map with linked inspector profile central plan 4. ui & app design ui & app design map with linked inspector profile pack_25 applied design ui-and-app-design applied-design ui-and-app-design map-with-linked-inspector-profile"
+    },
+    {
+      "id": "SP25-079",
+      "name": "Single-Task Progressive UI",
+      "styleAnchors": [
+        "Single-Task Progressive UI",
+        "step-by-step flow screens profile",
+        "three steps"
+      ],
+      "ref": "pack_25/SP25-079.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "ui-and-app-design",
+      "categoryName": "4. UI & App Design",
+      "domain": "step-by-step flow screens profile",
+      "tags": ["applied-design", "ui-and-app-design", "step-by-step-flow-screens-profile"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-079 single-task progressive ui step-by-step flow screens profile three steps 4. ui & app design ui & app design step-by-step flow screens profile pack_25 applied design ui-and-app-design applied-design ui-and-app-design step-by-step-flow-screens-profile"
+    },
+    {
+      "id": "SP25-080",
+      "name": "Five-State UI Specimen",
+      "styleAnchors": [
+        "Five-State UI Specimen",
+        "five-screen UI consistency sheet",
+        "five screens"
+      ],
+      "ref": "pack_25/SP25-080.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "ui-and-app-design",
+      "categoryName": "4. UI & App Design",
+      "domain": "five-screen UI consistency sheet",
+      "tags": ["applied-design", "ui-and-app-design", "five-screen-ui-consistency-sheet"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-080 five-state ui specimen five-screen ui consistency sheet five screens 4. ui & app design ui & app design five-screen ui consistency sheet pack_25 applied design ui-and-app-design applied-design ui-and-app-design five-screen-ui-consistency-sheet"
     }
   ],
-  "totalPresetCount": 60
+  "totalPresetCount": 80
 }

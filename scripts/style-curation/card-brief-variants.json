@@ -8618,5 +8618,85 @@
   "SP25-060": [
     "Three sibling app icons for a chaotic family calendar, chores, snacks and blame, sharing one inflated-junction rule, each shown large and reduced beside its siblings. No readable text or logo.",
     "A calm family of four library icons, borrow, return, search and sit quietly, one shared inlay rule, large and small rows on a soft background. No readable text or logo."
+  ],
+  "SP25-061": [
+    "A royal court gossip app laid out like a quiet literary index, rumors sorted by scandal level in a side column, the selected rumor open in a wide reading pane, labels \"Whispers\" and \"Verify\" exact.",
+    "A reading app for lighthouse keepers' logbooks, a side index of years, one long entry open in a generous column, exact labels \"Logbook\" and \"Open\", soft grey rules."
+  ],
+  "SP25-062": [
+    "A potion-brewing app on four instrument rails, \"Bubbles\", \"Glow\", \"Stink\" and \"Regret\", every slider linked to a tiny reading, deep green panel, very precise about something ridiculous.",
+    "A photo-editing panel with three quiet rails, \"Exposure\", \"Contrast\" and \"Warmth\", each aligned to its value and a preview on the right, pale background and one coral accent."
+  ],
+  "SP25-063": [
+    "A pet-rock care app that takes its job extremely seriously, a big soft container for \"Today's Mood\", two small groups for \"Polish\" and \"Talk\", warm pastel surfaces.",
+    "A night journal app with one large soft container for writing, a small \"Save\" group and a gentle error state, dark neutral background and one warm accent."
+  ],
+  "SP25-064": [
+    "A shared-flat chores ledger where every row is a passive-aggressive dispute, columns \"Task\", \"Blame\" and \"Done\", tabs per roommate, crisp and petty.",
+    "A small library loans screen with rows marked \"Available\", \"Borrowed\" and \"In Repair\", tabs per shelf and a compact search box, charcoal and cream."
+  ],
+  "SP25-065": [
+    "A comedy writers' room app with jokes listed left, the joke being argued about in the center and a \"Laugh Meter\" inspector on the right, open guides and no boxes.",
+    "A research notes app with questions on the left, one long note in the center and references in the margin, pale background, lines that never cross the text."
+  ],
+  "SP25-066": [
+    "A screenplay app where scenes, dialogue and the director's increasingly desperate notes sit on three stacked sheets, labels \"Scene 12\" and \"Cut\" exact, coral accent.",
+    "A music session planner with the active song sheet on top and a set list layer beneath, dark neutral background, grey layers and clear light text."
+  ],
+  "SP25-067": [
+    "A console for managing a hotel run entirely by ghosts, rows for \"Room\", \"Haunting\" and \"Complaints\", compact and serious, one amber accent.",
+    "An audio editor track list with exact \"Mute\" and \"Solo\" controls aligned on every row, dense yet legible, charcoal background and one selected track."
+  ],
+  "SP25-068": [
+    "A kitchen app for a chaotic family dinner with color blocks for \"Cooking\", \"Burning\" and \"Ordering Pizza\", strong colors backed by icons, cheerful panic.",
+    "A file organizer with calm color blocks for \"Review\", \"Keep\" and \"Move\", each with its own icon and place, soft neutral surface."
+  ],
+  "SP25-069": [
+    "A remote for a very dramatic smart toaster with recessed \"Toast\", \"Burn\" and \"Regret\" controls and tiny LEDs, soft grey surface, oddly premium.",
+    "A sound-effects panel with recessed \"Rain\" and \"Fire\" sliders, two toggles with soft LEDs, charcoal and violet, calm and precise."
+  ],
+  "SP25-070": [
+    "A canvas where a cat owner tracks the cat's crimes: \"Vase\", \"Curtain\" and \"Sock\" pieces linked by suspicious lines, one inspector open, light and airy.",
+    "A quiet research canvas with four pinned references and two notes, one link between them and a compact inspector, pale background and a plum accent."
+  ],
+  "SP25-071": [
+    "A monospaced archive of every excuse a teenager has ever given, columns \"Code\", \"Excuse\" and \"Believed?\", neat and deadpan, one green accent.",
+    "A sound preset library in calm monospace columns, id, name and version for three presets and a simple inspector, pale background."
+  ],
+  "SP25-072": [
+    "A wedding-planning app for a couple who hate each other's families, thin navigation and a dense seating chart in the center, bold \"Separate Them\" action, pale background.",
+    "A recordings library with discreet categories on the left and dense metadata editing in the main area, one clear \"Save\" button, single accent."
+  ],
+  "SP25-073": [
+    "A dating app for vampires where profiles get stamped \"Bitten\", \"Maybe\" and \"Garlic Eater\" with distinct shapes, flat and graphic, deeply judgmental.",
+    "A text archive with compact solid markers for \"Draft\", \"Published\" and \"Archived\", clear type hierarchy and nothing else competing."
+  ],
+  "SP25-074": [
+    "A smart-bath app with rounded panels for \"Bubbles\", \"Temperature\" and \"Rubber Duck Count\", each with a tidy scale, pale and cheerful.",
+    "A stage lighting app with three soft panels, \"Intensity\", \"Color\" and \"Fade\", clear scales and one strong main action, calm grey surfaces."
+  ],
+  "SP25-075": [
+    "A breakup-text drafting app with one stark text box, a huge \"Don't Send\" button and wide silent space around it, black on white.",
+    "An audio export panel with format, name and destination fields, a dominant \"Export\" action and generous empty space, white and charcoal."
+  ],
+  "SP25-076": [
+    "A menu for a very fancy fish-tank app becomes frosted glass over the swimming fish, labels \"Feed\" and \"Lights\" still perfectly crisp.",
+    "A floating inspector over a light and a dark canvas, same content and order, only transparency and blur changed, text always legible."
+  ],
+  "SP25-077": [
+    "A timeline editor for planning a toddler's birthday party minute by minute, blocks for \"Cake\", \"Chaos\" and \"Nap\", one marker and an inspector, bright and exact.",
+    "A 12-second animation editor with three four-second blocks, a shared marker and a properties panel, calm grey interface."
+  ],
+  "SP25-078": [
+    "A seating-plan editor for a very tense family reunion, three tables on a plan and the selected table's guests in the inspector, clean and tactful.",
+    "A small museum floor plan with rooms A, B and C connected, the chosen room's text in a side panel and a discreet search box."
+  ],
+  "SP25-079": [
+    "A three-step flow for returning a gift you secretly hated, \"Choose Gift\", \"Invent Excuse\" and \"Confirm\", each step keeping your earlier choices, polite and clear.",
+    "A three-step export flow, format, size and destination, with the file name \"studio-01.png\" kept exact in the summary."
+  ],
+  "SP25-080": [
+    "Five screens of a plant-watering app for forgetful people, library, editor, empty search, settings and the error \"Your fern is disappointed\", same data everywhere.",
+    "A five-screen specimen of a small notes app, the same selected note in library, editor, search, settings and a save error, calm and consistent."
   ]
 }

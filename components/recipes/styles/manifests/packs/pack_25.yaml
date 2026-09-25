@@ -78,6 +78,29 @@ categories:
       - pack_25/SP25-058.yaml
       - pack_25/SP25-059.yaml
       - pack_25/SP25-060.yaml
+  - id: ui-and-app-design
+    name: 4. UI & App Design
+    presetRefs:
+      - pack_25/SP25-061.yaml
+      - pack_25/SP25-062.yaml
+      - pack_25/SP25-063.yaml
+      - pack_25/SP25-064.yaml
+      - pack_25/SP25-065.yaml
+      - pack_25/SP25-066.yaml
+      - pack_25/SP25-067.yaml
+      - pack_25/SP25-068.yaml
+      - pack_25/SP25-069.yaml
+      - pack_25/SP25-070.yaml
+      - pack_25/SP25-071.yaml
+      - pack_25/SP25-072.yaml
+      - pack_25/SP25-073.yaml
+      - pack_25/SP25-074.yaml
+      - pack_25/SP25-075.yaml
+      - pack_25/SP25-076.yaml
+      - pack_25/SP25-077.yaml
+      - pack_25/SP25-078.yaml
+      - pack_25/SP25-079.yaml
+      - pack_25/SP25-080.yaml
 presetRefs:
   - pack_25/SP25-001.yaml
   - pack_25/SP25-002.yaml
@@ -139,3 +162,23 @@ presetRefs:
   - pack_25/SP25-058.yaml
   - pack_25/SP25-059.yaml
   - pack_25/SP25-060.yaml
+  - pack_25/SP25-061.yaml
+  - pack_25/SP25-062.yaml
+  - pack_25/SP25-063.yaml
+  - pack_25/SP25-064.yaml
+  - pack_25/SP25-065.yaml
+  - pack_25/SP25-066.yaml
+  - pack_25/SP25-067.yaml
+  - pack_25/SP25-068.yaml
+  - pack_25/SP25-069.yaml
+  - pack_25/SP25-070.yaml
+  - pack_25/SP25-071.yaml
+  - pack_25/SP25-072.yaml
+  - pack_25/SP25-073.yaml
+  - pack_25/SP25-074.yaml
+  - pack_25/SP25-075.yaml
+  - pack_25/SP25-076.yaml
+  - pack_25/SP25-077.yaml
+  - pack_25/SP25-078.yaml
+  - pack_25/SP25-079.yaml
+  - pack_25/SP25-080.yaml

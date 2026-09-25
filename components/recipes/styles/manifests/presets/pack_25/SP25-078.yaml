@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP25-078
+packId: pack_25
+name: Map-and-Inspector Workspace
+styleAnchors:
+  - Map-and-Inspector Workspace
+  - map with linked inspector profile
+  - central plan
+displayName: Map-and-Inspector Workspace
+category: 4. UI & App Design
+domain: map with linked inspector profile
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ui-and-app-design
+  - map-inspector
+  - applied-design
+  - ui
+  - profile
+  - r-ui-18
+  - requested-text
+visualDna:
+  aesthetic: 'Map-and-Inspector Workspace: a spatial plan and a coordinated inspector keep context visible while one selected item is edited.'
+  subject_treatment: Link the prompt's spatial plan and a side inspector by a stable identity, keeping every requested coordinate, route and label exact.
+  color_and_tone: Map lower in contrast than the selection and its properties, states backed by shape.
+  lighting_and_shadow: Flat plan rendering that keeps the topology and every element visible.
+  texture_and_material: Clean map surfaces and lines with a crisp text inspector.
+  camera_and_composition: Wide central plan and a side inspector, the selection visible in both.
+  atmosphere_and_mood: Spatial orientation and local editing without losing the context.
+  rendering_and_quality: Selecting an item never moves it or creates a duplicate.
+  creative_brief: "Map-and-Inspector Workspace: a spatial plan and a coordinated inspector keep context visible while one selected item is edited. Carry it through central plan, linked inspector, visible selection, exact coordinates. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: central plan; linked inspector; visible selection; exact coordinates
+avoidRules:
+  - invented coordinates
+  - inconsistent selection
+  - panel that covers the edited object
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: invented coordinates, inconsistent selection, panel that covers the edited object, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: ui-and-app-design
+  categoryName: 4. UI & App Design
+  domain: map with linked inspector profile
+  tags:
+    - curation-v2
+    - ui-and-app-design
+    - map-inspector
+    - applied-design
+    - ui
+    - profile
+    - r-ui-18
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

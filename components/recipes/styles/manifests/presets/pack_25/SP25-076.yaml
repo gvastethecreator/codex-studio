@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP25-076
+packId: pack_25
+name: Translucent Work Layers
+styleAnchors:
+  - Translucent Work Layers
+  - translucent interface layer modifier
+  - frosted layers
+displayName: Translucent Work Layers
+category: 4. UI & App Design
+domain: translucent interface layer modifier
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ui-and-app-design
+  - translucent-layers
+  - applied-design
+  - ui
+  - modifier
+  - r-ui-16
+  - requested-text
+visualDna:
+  aesthetic: 'Translucent Work Layers: an interface modifier that separates stacked panels with soft transparency and background blur while foreground content stays sharp.'
+  subject_treatment: Change only the optical separation between the prompt's interface layers with transparency and blur, keeping content, layout and every label unchanged.
+  color_and_tone: Source colors kept, with an opaque enough backing behind critical text.
+  lighting_and_shadow: Depth separated by blur alone, calm and even across layers.
+  texture_and_material: Discreet translucent surfaces with readable edges, closer to frosted film than glossy glass.
+  camera_and_composition: Positions, sizes and stacking order of the input kept exactly.
+  atmosphere_and_mood: Calm depth with visible context, never competing with reading.
+  rendering_and_quality: Foreground text and controls stay crisp over complex backgrounds.
+  creative_brief: "Translucent Work Layers: an interface modifier that separates stacked panels with soft transparency and background blur while foreground content stays sharp. Carry it through frosted layers, background blur, sharp foreground, unchanged layout. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: frosted layers; background blur; sharp foreground; unchanged layout
+avoidRules:
+  - translucent text
+  - contrast that depends on the background
+  - layout changed by a finish
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: translucent text, contrast that depends on the background, layout changed by a finish, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: ui-and-app-design
+  categoryName: 4. UI & App Design
+  domain: translucent interface layer modifier
+  tags:
+    - curation-v2
+    - ui-and-app-design
+    - translucent-layers
+    - applied-design
+    - ui
+    - modifier
+    - r-ui-16
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

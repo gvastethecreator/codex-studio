@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-073
+packId: pack_25
+name: Graphic Stamp Interface
+styleAnchors:
+  - Graphic Stamp Interface
+  - solid status stamp layout
+  - geometric state stamps
+displayName: Graphic Stamp Interface
+category: 4. UI & App Design
+domain: solid status stamp layout
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ui-and-app-design
+  - graphic-stamp
+  - applied-design
+  - ui
+  - r-ui-13
+  - requested-text
+visualDna:
+  aesthetic: 'Graphic Stamp Interface: solid geometric markers placed on flat surfaces show real states, each with its own distinct shape.'
+  subject_treatment: Mark the states in the prompt's screen with solid geometric markers of distinct shapes next to the content they describe; keep state names exact.
+  color_and_tone: One main ink and a functional accent, states told apart by shape too.
+  lighting_and_shadow: Flat clean graphic stamps with no physical relief.
+  texture_and_material: Firm edges and minimal texture, crisp as fresh print.
+  camera_and_composition: Markers close to their content and smaller than the main reading.
+  atmosphere_and_mood: Direct editorial character and decisiveness, friendly and firm.
+  rendering_and_quality: Every stamp marks a real state and reads without color.
+  creative_brief: "Graphic Stamp Interface: solid geometric markers placed on flat surfaces show real states, each with its own distinct shape. Carry it through geometric state stamps, distinct shapes, flat surfaces, near content. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: geometric state stamps; distinct shapes; flat surfaces; near content
+avoidRules:
+  - decorative stamps
+  - invented states
+  - content covered by markers
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: decorative stamps, invented states, content covered by markers, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: ui-and-app-design
+  categoryName: 4. UI & App Design
+  domain: solid status stamp layout
+  tags:
+    - curation-v2
+    - ui-and-app-design
+    - graphic-stamp
+    - applied-design
+    - ui
+    - r-ui-13
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

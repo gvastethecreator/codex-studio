@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-062
+packId: pack_25
+name: Instrument Rail Interface
+styleAnchors:
+  - Instrument Rail Interface
+  - control-to-reading rail layout
+  - continuous rails
+displayName: Instrument Rail Interface
+category: 4. UI & App Design
+domain: control-to-reading rail layout
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ui-and-app-design
+  - instrument-rail
+  - applied-design
+  - ui
+  - r-ui-02
+  - requested-text
+visualDna:
+  aesthetic: 'Instrument Rail Interface: controls sit on continuous rails that link each one directly to the parameter or result it changes.'
+  subject_treatment: Build the prompt's screen as parallel rails where every control lines up with its own reading, keeping requested labels and values exact.
+  color_and_tone: Color by functional role and neutral values for secondary information.
+  lighting_and_shadow: Very restrained depth, with active indicators glowing only where they carry function.
+  texture_and_material: Sober rails, defined controls and smooth surfaces with no fake brushed metal.
+  camera_and_composition: Input, control and result grouped on one axis, rails separated by space rather than frames.
+  atmosphere_and_mood: Operational precision with an instrumental feel, without recreating a whole device.
+  rendering_and_quality: Every reading is clearly attributed to its control, with no crossing lines.
+  creative_brief: "Instrument Rail Interface: controls sit on continuous rails that link each one directly to the parameter or result it changes. Carry it through continuous rails, aligned control and reading, role colors, restrained depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: continuous rails; aligned control and reading; role colors; restrained depth
+avoidRules:
+  - decorative controls
+  - crossed control-to-value links
+  - scales with no units
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: decorative controls, crossed control-to-value links, scales with no units, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: ui-and-app-design
+  categoryName: 4. UI & App Design
+  domain: control-to-reading rail layout
+  tags:
+    - curation-v2
+    - ui-and-app-design
+    - instrument-rail
+    - applied-design
+    - ui
+    - r-ui-02
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

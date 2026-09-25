@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-071
+packId: pack_25
+name: Monospace Archive Interface
+styleAnchors:
+  - Monospace Archive Interface
+  - monospaced archive app layout
+  - monospaced columns
+displayName: Monospace Archive Interface
+category: 4. UI & App Design
+domain: monospaced archive app layout
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ui-and-app-design
+  - monospace-archive
+  - applied-design
+  - ui
+  - r-ui-11
+  - requested-text
+visualDna:
+  aesthetic: 'Monospace Archive Interface: monospaced text, index codes and constant column widths build a calm, trustworthy technical library.'
+  subject_treatment: Organize the prompt's records in monospaced text and index columns of stable width, keeping every requested code, name and date exact.
+  color_and_tone: Neutrals plus one navigation accent, codes set apart from titles by value and weight.
+  lighting_and_shadow: Crisp flat text with a clean screen and sharp characters.
+  texture_and_material: Sober surfaces and discreet separators on a clean, quiet ground.
+  camera_and_composition: Columns of predictable width with explicit truncation only where allowed.
+  atmosphere_and_mood: A reliable technical archive, orderly and quietly confident.
+  rendering_and_quality: Codes, dates and long names keep their reading and alignment.
+  creative_brief: "Monospace Archive Interface: monospaced text, index codes and constant column widths build a calm, trustworthy technical library. Carry it through monospaced columns, index codes, stable widths, one accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: monospaced columns; index codes; stable widths; one accent
+avoidRules:
+  - decorative terminal
+  - fake characters
+  - codes invented to fill space
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: decorative terminal, fake characters, codes invented to fill space, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: ui-and-app-design
+  categoryName: 4. UI & App Design
+  domain: monospaced archive app layout
+  tags:
+    - curation-v2
+    - ui-and-app-design
+    - monospace-archive
+    - applied-design
+    - ui
+    - r-ui-11
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

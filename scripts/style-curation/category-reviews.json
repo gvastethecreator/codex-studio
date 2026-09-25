@@ -2413,5 +2413,20 @@
     "evidencePresetIds": ["SP25-041", "SP25-042", "SP25-043"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_25",
+    "category": "4. UI & App Design",
+    "displayCategory": "UI & app design",
+    "kind": "mixed",
+    "expectedCount": 20,
+    "baselineHash": "09f38bd8a5ad8a381dbdf46bb990fed1cb0a8e4c99363b920fe4bd77f737d927",
+    "problem": "Interface styles must change how screens are organized without banning the requested labels and UI, and without inventing data, controls or real product interfaces.",
+    "preserve": "Requested labels, values, units, states and layout locks stay exact; each style keeps its organization rule (editorial index, instrument rails, soft containers, ledger tabs, open frames, layered sheets, dense console, color role blocks, recessed controls, research canvas, monospace archive, split-weight navigation, state stamps, rounded instrument panels, quiet contrast).",
+    "proposedAction": "Applied-design import: 15 interface styles, a translucent layer modifier that keeps layout and text (distinct from the pack_03 3D glass render), timeline, map-and-inspector and progressive-flow workspace profiles, and the five-state specimen as a sheet profile; requested-text policy and three new app-concept briefs per preset.",
+    "validation": "Generate each card, then test transfer on one screen with exact labels, a dense table, an empty state, an error state and the same data across five screens; check spelling of every label.",
+    "evidencePresetIds": ["SP25-061", "SP25-062", "SP25-063"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

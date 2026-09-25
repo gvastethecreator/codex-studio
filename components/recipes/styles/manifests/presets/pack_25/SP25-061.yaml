@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-061
+packId: pack_25
+name: Editorial Index Interface
+styleAnchors:
+  - Editorial Index Interface
+  - editorial index app layout
+  - side index
+displayName: Editorial Index Interface
+category: 4. UI & App Design
+domain: editorial index app layout
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ui-and-app-design
+  - editorial-index
+  - applied-design
+  - ui
+  - r-ui-01
+  - requested-text
+visualDna:
+  aesthetic: 'Editorial Index Interface: typography, side indexes and light dividers organize app content with the calm rhythm of a well-set publication.'
+  subject_treatment: Lay out the prompt's app or screen through type hierarchy and a side index, using light dividers instead of repeated cards; keep every requested label exact.
+  color_and_tone: Neutral base with one accent reserved for selection and the main action only.
+  lighting_and_shadow: Flat screen rendering where contrast and surface hierarchy replace any volumetric shadow.
+  texture_and_material: Clean flat surfaces and fine rules, leaving the type to do the talking.
+  camera_and_composition: Narrow index column, dominant reading column and secondary detail with its own margin.
+  atmosphere_and_mood: Serene editorial rhythm with generous pauses, still clearly a working app.
+  rendering_and_quality: Aligned baselines, clear heading spacing and stable reading with long titles.
+  creative_brief: "Editorial Index Interface: typography, side indexes and light dividers organize app content with the calm rhythm of a well-set publication. Carry it through side index, type hierarchy, light dividers, one accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: side index; type hierarchy; light dividers; one accent
+avoidRules:
+  - illegible ornamental type
+  - indexes with no function
+  - cards added by reflex
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illegible ornamental type, indexes with no function, cards added by reflex, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: ui-and-app-design
+  categoryName: 4. UI & App Design
+  domain: editorial index app layout
+  tags:
+    - curation-v2
+    - ui-and-app-design
+    - editorial-index
+    - applied-design
+    - ui
+    - r-ui-01
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

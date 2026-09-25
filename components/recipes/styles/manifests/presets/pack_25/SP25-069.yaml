@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-069
+packId: pack_25
+name: Tactile Recessed Controls
+styleAnchors:
+  - Tactile Recessed Controls
+  - recessed physical-feel control panel
+  - recessed sliders
+displayName: Tactile Recessed Controls
+category: 4. UI & App Design
+domain: recessed physical-feel control panel
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ui-and-app-design
+  - tactile-recessed
+  - applied-design
+  - ui
+  - r-ui-09
+  - requested-text
+visualDna:
+  aesthetic: 'Tactile Recessed Controls: recessed sliders, grip edges and small status lights make every action feel physical and clear.'
+  subject_treatment: Express the prompt's controls as recessed sliders, grip-edged buttons and small status lights, grouped by action; keep requested labels exact.
+  color_and_tone: Neutral dark or light surface with localized accent lights and legible labels.
+  lighting_and_shadow: Broad ambient light with moderate cavity shade and small contained LEDs.
+  texture_and_material: Sober semi-matte material with low relief and no mandatory chrome.
+  camera_and_composition: Controls grouped by action and spaced so every recess reads clearly.
+  atmosphere_and_mood: Sober tactility and precision, satisfying to imagine pressing.
+  rendering_and_quality: Button, slider and reading stay distinct without photographic realism.
+  creative_brief: "Tactile Recessed Controls: recessed sliders, grip edges and small status lights make every action feel physical and clear. Carry it through recessed sliders, grip edges, small status LEDs, grouped controls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: recessed sliders; grip edges; small status LEDs; grouped controls
+avoidRules:
+  - skeuomorphism that hides function
+  - too many lights
+  - text over deep shadows
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: skeuomorphism that hides function, too many lights, text over deep shadows, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: ui-and-app-design
+  categoryName: 4. UI & App Design
+  domain: recessed physical-feel control panel
+  tags:
+    - curation-v2
+    - ui-and-app-design
+    - tactile-recessed
+    - applied-design
+    - ui
+    - r-ui-09
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

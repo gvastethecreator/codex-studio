@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-070
+packId: pack_25
+name: Sparse Research Canvas
+styleAnchors:
+  - Sparse Research Canvas
+  - open canvas research layout
+  - open canvas
+displayName: Sparse Research Canvas
+category: 4. UI & App Design
+domain: open canvas research layout
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ui-and-app-design
+  - sparse-canvas
+  - applied-design
+  - ui
+  - r-ui-10
+  - requested-text
+visualDna:
+  aesthetic: 'Sparse Research Canvas: content pieces and annotations float on a wide calm canvas, joined only by the connections that truly exist.'
+  subject_treatment: Lay the prompt's content out on an open canvas with peripheral notes and only the requested connections, a small inspector appearing on selection; keep labels exact.
+  color_and_tone: Calm base, one selection accent and connections lower in contrast than the pieces.
+  lighting_and_shadow: Flat canvas with the faintest functional overlap between items.
+  texture_and_material: Clean surfaces, subtly edged notes and clear connection lines.
+  camera_and_composition: Wide canvas with room to grow and an inspector only when something is selected.
+  atmosphere_and_mood: Open exploration and clarity, spacious, thoughtful and easy to follow.
+  rendering_and_quality: Content stays legible as items multiply and when one is selected.
+  creative_brief: "Sparse Research Canvas: content pieces and annotations float on a wide calm canvas, joined only by the connections that truly exist. Carry it through open canvas, true connections only, margin notes, contextual inspector. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: open canvas; true connections only; margin notes; contextual inspector
+avoidRules:
+  - dominant panels
+  - invented connections
+  - notes with no hierarchy
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: dominant panels, invented connections, notes with no hierarchy, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: ui-and-app-design
+  categoryName: 4. UI & App Design
+  domain: open canvas research layout
+  tags:
+    - curation-v2
+    - ui-and-app-design
+    - sparse-canvas
+    - applied-design
+    - ui
+    - r-ui-10
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
