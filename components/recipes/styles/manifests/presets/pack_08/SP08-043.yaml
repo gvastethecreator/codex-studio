@@ -12,38 +12,16 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: >-
-    Ceremonial space-opera couture uses vertical grandeur, sculpted waistlines and flowing
-    fabric architecture; it signals formality without assigning rank.
-  subject_treatment: >-
-    Re-cut existing garments with an architectural bodice, sweeping sleeve or train
-    proportions and fine beadwork. Halo-like headwear and elaborate trains remain optional;
-    preserve identity, pose and stated role.
-  color_and_tone: >-
-    Use luminous jewel or iridescent accents against a deliberate base, following requested
-    hues rather than requiring nebular colors, white feathers or metallics.
-  lighting_and_shadow: >-
-    Preserve the prompt's setting and light. Allow organza and beads to catch soft
-    highlights; do not add stained-glass beams, stars or a ceremonial venue.
-  texture_and_material: >-
-    Layer organza, beaded net, feather-like trim, metallic thread and luminous silk as
-    textile choices, with clean seams and controlled ornament.
-  camera_and_composition: >-
-    Keep requested framing, angle and pose. Let vertical drape and sculptural sleeves read
-    in the existing crop; do not force a full-body pageant portrait.
-  atmosphere_and_mood: >-
-    Create ceremony through garment scale and ornamental rhythm, without conferring royalty,
-    diplomatic office, species or a court setting.
-  rendering_and_quality: >-
-    Balance ornate details with a clean silhouette; separate translucent cloth, beadwork and
-    metallic thread without turning fabric into hard armor.
-  key_features: >-
-    Architectural waist shaping; vertical sleeve and train lines; beaded or luminous textile
-    layers; optional halo-like headpiece.
-  creative_brief: >-
-    Restyle the requested outfit as ceremonial space-opera couture with sculpted tailoring,
-    flowing textile architecture and fine luminous ornament. Preserve wearer, role, pose,
-    location and framing; do not imply royal rank or add a court, throne or species.
+  aesthetic: Ceremonial space-opera couture uses vertical grandeur, sculpted waistlines and flowing fabric architecture; it signals formality without assigning rank.
+  subject_treatment: Re-cut existing garments with an architectural bodice, sweeping sleeve or train proportions and fine beadwork. Halo-like headwear and elaborate trains remain optional; preserve identity, pose and stated role.
+  color_and_tone: Use luminous jewel or iridescent accents against a deliberate base, following requested hues rather than requiring nebular colors, white feathers or metallics.
+  lighting_and_shadow: Preserve the prompt's setting and light. Allow organza and beads to catch soft highlights; do not add stained-glass beams, stars or a ceremonial venue.
+  texture_and_material: Layer organza, beaded net, feather-like trim, metallic thread and luminous silk as textile choices, with clean seams and controlled ornament.
+  camera_and_composition: Keep requested framing, angle and pose. Let vertical drape and sculptural sleeves read in the existing crop; do not force a full-body pageant portrait.
+  atmosphere_and_mood: Create ceremony through garment scale and ornamental rhythm, without conferring royalty, diplomatic office, species or a court setting.
+  rendering_and_quality: Balance ornate details with a clean silhouette; separate translucent cloth, beadwork and metallic thread without turning fabric into hard armor.
+  key_features: Architectural waist shaping; vertical sleeve and train lines; beaded or luminous textile layers; optional halo-like headpiece.
+  creative_brief: Restyle the requested outfit as ceremonial space-opera couture with sculpted tailoring, flowing textile architecture and fine luminous ornament. Preserve wearer, role, pose, location and framing; do not imply royal rank or add a court, throne or species.
 avoidRules:
   - plain everyday minimalwear
   - contemporary Earth-uniform literalism
@@ -60,10 +38,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-043.webp
 attributes:
-  negativePrompt: >-
-    plain everyday minimalwear, contemporary Earth-uniform literalism, generic cosplay, plastic toy
-    armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic
-    fashion catalog, muddy fabric noise, watermark, readable text
+  negativePrompt: plain everyday minimalwear, contemporary Earth-uniform literalism, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

@@ -12,38 +12,16 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: >-
-    Cybernetic couture integrates precision augmentation cues into tailored surfaces, using
-    contour channels and small interface hardware while respecting the existing body.
-  subject_treatment: >-
-    Place implant-like seams, carbon contour bands, graft-shaped panels and discreet
-    interface nodes along clothing or explicitly requested augmentations. Do not replace
-    limbs or alter anatomy by default.
-  color_and_tone: >-
-    Set brushed-metal, graphite and silicone values against the prompt's palette; use a
-    small LED accent only when it supports the requested colors.
-  lighting_and_shadow: >-
-    Preserve the actual scene lighting and add crisp reflections only on alloy, glass or
-    status details. Do not invent a clinic, display or procedure light.
-  texture_and_material: >-
-    Combine brushed titanium, carbon weave, medical silicone, polycarbonate and anodized
-    details with visible transitions between fabric and hardware.
-  camera_and_composition: >-
-    Keep the requested crop, angle and pose. Place interface detail along visible garment
-    seams without forcing a close-up or exposing more body.
-  atmosphere_and_mood: >-
-    Read as precise, advanced couture rather than a diagnosis or procedure; do not assign a
-    patient, cyborg identity or technical occupation.
-  rendering_and_quality: >-
-    Make small hardware clean and integrated, with disciplined seam paths and material
-    contrast. Preserve recognizable anatomy and avoid random exposed circuitry.
-  key_features: >-
-    Implant-like seam channels; carbon contour bands; titanium and silicone transitions;
-    discreet interface nodes.
-  creative_brief: >-
-    Add cybernetic couture detail to the requested wardrobe through contour seams, carbon
-    panels and discreet interface hardware. Preserve identity, anatomy, pose, role, scene
-    and framing; perform no surgery or limb replacement unless explicitly requested.
+  aesthetic: Cybernetic couture integrates precision augmentation cues into tailored surfaces, using contour channels and small interface hardware while respecting the existing body.
+  subject_treatment: Place implant-like seams, carbon contour bands, graft-shaped panels and discreet interface nodes along clothing or explicitly requested augmentations. Do not replace limbs or alter anatomy by default.
+  color_and_tone: Set brushed-metal, graphite and silicone values against the prompt's palette; use a small LED accent only when it supports the requested colors.
+  lighting_and_shadow: Preserve the actual scene lighting and add crisp reflections only on alloy, glass or status details. Do not invent a clinic, display or procedure light.
+  texture_and_material: Combine brushed titanium, carbon weave, medical silicone, polycarbonate and anodized details with visible transitions between fabric and hardware.
+  camera_and_composition: Keep the requested crop, angle and pose. Place interface detail along visible garment seams without forcing a close-up or exposing more body.
+  atmosphere_and_mood: Read as precise, advanced couture rather than a diagnosis or procedure; do not assign a patient, cyborg identity or technical occupation.
+  rendering_and_quality: Make small hardware clean and integrated, with disciplined seam paths and material contrast. Preserve recognizable anatomy and avoid random exposed circuitry.
+  key_features: Implant-like seam channels; carbon contour bands; titanium and silicone transitions; discreet interface nodes.
+  creative_brief: Add cybernetic couture detail to the requested wardrobe through contour seams, carbon panels and discreet interface hardware. Preserve identity, anatomy, pose, role, scene and framing; perform no surgery or limb replacement unless explicitly requested.
 avoidRules:
   - unmodified plain surface
   - generic cosplay
@@ -59,10 +37,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-041.webp
 attributes:
-  negativePrompt: >-
-    unmodified plain surface, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed
-    outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise,
-    watermark, readable text
+  negativePrompt: unmodified plain surface, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

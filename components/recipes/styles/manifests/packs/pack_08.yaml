@@ -96,6 +96,7 @@ categories:
       - pack_08/SP08-078.yaml
       - pack_08/SP08-079.yaml
       - pack_08/SP08-080.yaml
+      - pack_08/SP08-106.yaml
   - id: fabric-and-texture-focus
     name: 5. Fabric & Texture Focus
     presetRefs:
@@ -215,6 +216,7 @@ presetRefs:
   - pack_08/SP08-076.yaml
   - pack_08/SP08-078.yaml
   - pack_08/SP08-080.yaml
+  - pack_08/SP08-106.yaml
   - pack_08/SP08-058.yaml
   - pack_08/SP08-063.yaml
   - pack_08/SP08-067.yaml

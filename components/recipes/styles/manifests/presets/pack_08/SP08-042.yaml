@@ -12,38 +12,16 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: >-
-    Scavenged survivalwear assembled from mismatched protective layers, visible repairs and
-    practical asymmetry; wear and repair define the clothing.
-  subject_treatment: >-
-    Rework the existing outfit with patched panels, wrapped cuffs, uneven hems, reinforced
-    shoulders and salvaged fasteners. Preserve the wearer, anatomy, pose and requested role;
-    add no weapon or vehicle.
-  color_and_tone: >-
-    Use dusty, muted cloth values with selective rust or repair-orange accents, adapting to
-    explicit color directions instead of imposing wasteland browns.
-  lighting_and_shadow: >-
-    Follow the requested environment and time of day. Let rough edges and layered cloth
-    create texture; do not add dust haze, heat shimmer, firelight or a wasteland.
-  texture_and_material: >-
-    Combine worn canvas, denim, torn leather, rubber and patched fabric, showing abrasion,
-    frayed edges and deliberate repairs without blood or injury.
-  camera_and_composition: >-
-    Preserve the supplied framing, viewpoint and pose. Make mismatched layers and repair
-    seams legible within the original crop.
-  atmosphere_and_mood: >-
-    Suggest resourcefulness through asymmetry and repeated repairs, without declaring the
-    wearer a survivor or inventing an apocalypse.
-  rendering_and_quality: >-
-    Keep distressed surfaces varied but controlled; distinguish fabric, rubber and metal
-    scraps, and retain readable garment construction.
-  key_features: >-
-    Mismatched protective layers; wrapped cuffs; patched canvas and denim; salvaged
-    fasteners and shoulder panels.
-  creative_brief: >-
-    Turn the requested clothing into repaired scavenged survivalwear with mismatched layers,
-    wrapped cuffs, patched cloth and salvaged fasteners. Preserve wearer, role, pose, scene
-    and framing; add no weapon, vehicle, injury or apocalypse.
+  aesthetic: Scavenged survivalwear assembled from mismatched protective layers, visible repairs and practical asymmetry; wear and repair define the clothing.
+  subject_treatment: Rework the existing outfit with patched panels, wrapped cuffs, uneven hems, reinforced shoulders and salvaged fasteners. Preserve the wearer, anatomy, pose and requested role; add no weapon or vehicle.
+  color_and_tone: Use dusty, muted cloth values with selective rust or repair-orange accents, adapting to explicit color directions instead of imposing wasteland browns.
+  lighting_and_shadow: Follow the requested environment and time of day. Let rough edges and layered cloth create texture; do not add dust haze, heat shimmer, firelight or a wasteland.
+  texture_and_material: Combine worn canvas, denim, torn leather, rubber and patched fabric, showing abrasion, frayed edges and deliberate repairs without blood or injury.
+  camera_and_composition: Preserve the supplied framing, viewpoint and pose. Make mismatched layers and repair seams legible within the original crop.
+  atmosphere_and_mood: Suggest resourcefulness through asymmetry and repeated repairs, without declaring the wearer a survivor or inventing an apocalypse.
+  rendering_and_quality: Keep distressed surfaces varied but controlled; distinguish fabric, rubber and metal scraps, and retain readable garment construction.
+  key_features: Mismatched protective layers; wrapped cuffs; patched canvas and denim; salvaged fasteners and shoulder panels.
+  creative_brief: Turn the requested clothing into repaired scavenged survivalwear with mismatched layers, wrapped cuffs, patched cloth and salvaged fasteners. Preserve wearer, role, pose, scene and framing; add no weapon, vehicle, injury or apocalypse.
 avoidRules:
   - franchise likeness
   - chase vehicle
@@ -62,10 +40,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-042.webp
 attributes:
-  negativePrompt: >-
-    franchise likeness, chase vehicle, weapon focus, generic cosplay, plastic toy armor,
-    muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic
-    fashion catalog, muddy fabric noise, watermark, readable text, unweathered survival gear
+  negativePrompt: franchise likeness, chase vehicle, weapon focus, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, unweathered survival gear
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

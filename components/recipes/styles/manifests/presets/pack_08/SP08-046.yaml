@@ -12,38 +12,16 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: >-
-    Mech-interface suiting built from sealed support bands, capsule-shaped seam paths and
-    compact connector hardware; it reads as wearable engineering, not a pilot identity.
-  subject_treatment: >-
-    Rework the existing outfit with ergonomic panel maps, reinforced collar or cuffs and a
-    few connector details. Preserve anatomy, pose and role; do not add a cockpit, machine or
-    neural port by default.
-  color_and_tone: >-
-    Separate dense suit fabric from hard connectors, using the prompt's palette and only
-    small status accents where requested.
-  lighting_and_shadow: >-
-    Follow the supplied scene lighting and let hard surfaces catch controlled highlights. Do
-    not invent a display, alarm glow or cockpit light.
-  texture_and_material: >-
-    Pair molded polymer, neoprene support, carbon weave, rubberized connectors and dense
-    technical knit, with sealed edges and credible fit.
-  camera_and_composition: >-
-    Keep the requested crop, angle and pose. Make collar seals, support bands and seam maps
-    visible only where the framing allows.
-  atmosphere_and_mood: >-
-    Suggest engineered readiness through fit and connector placement without assigning a
-    pilot, cockpit, machine bond or mission.
-  rendering_and_quality: >-
-    Use orderly panel transitions and compact hardware, preserving comfortable garment fit
-    and recognizable face and body.
-  key_features: >-
-    Capsule-contour seam map; sealed support bands; reinforced collar connectors; polymer
-    and neoprene transitions.
-  creative_brief: >-
-    Turn the requested clothes into a mech-interface suit with ergonomic seam maps, sealed
-    support bands and compact connectors. Preserve wearer, pose, role, scene and framing;
-    add no cockpit, machine, neural port or mission.
+  aesthetic: Mech-interface suiting built from sealed support bands, capsule-shaped seam paths and compact connector hardware; it reads as wearable engineering, not a pilot identity.
+  subject_treatment: Rework the existing outfit with ergonomic panel maps, reinforced collar or cuffs and a few connector details. Preserve anatomy, pose and role; do not add a cockpit, machine or neural port by default.
+  color_and_tone: Separate dense suit fabric from hard connectors, using the prompt's palette and only small status accents where requested.
+  lighting_and_shadow: Follow the supplied scene lighting and let hard surfaces catch controlled highlights. Do not invent a display, alarm glow or cockpit light.
+  texture_and_material: Pair molded polymer, neoprene support, carbon weave, rubberized connectors and dense technical knit, with sealed edges and credible fit.
+  camera_and_composition: Keep the requested crop, angle and pose. Make collar seals, support bands and seam maps visible only where the framing allows.
+  atmosphere_and_mood: Suggest engineered readiness through fit and connector placement without assigning a pilot, cockpit, machine bond or mission.
+  rendering_and_quality: Use orderly panel transitions and compact hardware, preserving comfortable garment fit and recognizable face and body.
+  key_features: Capsule-contour seam map; sealed support bands; reinforced collar connectors; polymer and neoprene transitions.
+  creative_brief: Turn the requested clothes into a mech-interface suit with ergonomic seam maps, sealed support bands and compact connectors. Preserve wearer, pose, role, scene and framing; add no cockpit, machine, neural port or mission.
 avoidRules:
   - casual
   - latex body read
@@ -62,10 +40,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-046.webp
 attributes:
-  negativePrompt: >-
-    casual, latex body read, cockpit lock, franchise suit, generic cosplay, plastic toy armor, muddy
-    fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog,
-    muddy fabric noise, watermark, readable text
+  negativePrompt: casual, latex body read, cockpit lock, franchise suit, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

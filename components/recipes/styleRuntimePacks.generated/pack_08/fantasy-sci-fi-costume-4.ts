@@ -265,6 +265,44 @@ export const GENERATED_STYLE_PRESETS = [
     },
   },
   {
+    id: 'SP08-106',
+    name: 'Chitin Insectoid Armor',
+    displayName: 'Chitin Insectoid Armor',
+    styleAnchors: [
+      'Chitin Insectoid Armor',
+      'insect-shell costume armor',
+      'segmented iridescent chitin plates',
+    ],
+    category: '4. Fantasy Sci-Fi Costume',
+    domain: 'insect-shell costume armor',
+    negativePrompt:
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, franchise costume replica, full insect transformation of the body, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Chitin insectoid armor: segmented iridescent exoskeleton plates shaped like beetle, mantis or wasp shells, overlapping at joints with membrane-like fabric between.',
+      subject_treatment:
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: segmented, overlapping chitin plates with iridescent sheen over the torso, shoulders and limbs, jointed at elbows and knees with thin membrane-like fabric; optional elytra-like cape panels.",
+      color_and_tone:
+        'Oil-slick iridescence — green, violet and bronze — or matte black and amber.',
+      lighting_and_shadow: 'Raking light that reveals the iridescent shift on each plate.',
+      texture_and_material:
+        'Lacquered chitin shells, translucent membrane fabric, fine hairs and joint seams.',
+      camera_and_composition:
+        'Full figure showing plate segmentation clearly, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Alien, elegant, unsettling and armored, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Crisp, glossy, detailed finish, with believable fabric weight, seams and fit detail.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chitin Insectoid Armor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'segmented iridescent chitin plates; membrane joints; elytra cape panels; oil-slick sheen; raking light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
     id: 'SP08-044',
     name: 'Wizard Robes',
     category: '4. Fantasy Sci-Fi Costume',

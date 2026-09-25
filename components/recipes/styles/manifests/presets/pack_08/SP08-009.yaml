@@ -12,40 +12,16 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: >-
-    Victorian-inspired mechanical tailoring: layered waistcoat or corset structure, precise
-    fastenings, chain accents and restrained gearwork, with craft carried by the garments.
-  subject_treatment: >-
-    Shape the existing clothes with a fitted waist, structured lapels, articulated seams and
-    pocket-watch scale details. Hats and goggles are optional accessories, not assumptions
-    about the wearer or occupation.
-  color_and_tone: >-
-    Warm brass, leather and tweed relationships support the period craft; adapt hues and
-    metal finish to explicit color requests rather than locking the palette.
-  lighting_and_shadow: >-
-    Use warm, crisp highlights on engraved metal and glass while preserving the prompt's
-    actual light and location. Do not introduce gas lamps, smoke or machinery as scene
-    elements.
-  texture_and_material: >-
-    Pair full-grain leather, woven tweed, polished or aged brass, fine chain and small glass
-    accents. Show controlled wear and careful joinery, not a pile of loose gears.
-  camera_and_composition: >-
-    Preserve the requested crop, angle and pose. Keep the waist shaping, layered front and
-    hanging fasteners readable wherever they fall in frame.
-  atmosphere_and_mood: >-
-    Convey inventive, slightly theatrical craft through tailored lines and precise metal
-    details; do not assign a tinkerer, explorer or aristocratic role.
-  rendering_and_quality: >-
-    Render crisp engraved edges, tactile woven cloth and small metal reflections with
-    controlled detail. Keep tailoring coherent and avoid cluttering the silhouette.
-  key_features: >-
-    Victorian panel layering; gear-like fastener accents; brass against leather and tweed;
-    vertical tailored lines.
-  creative_brief: >-
-    Reinterpret the requested wardrobe as Victorian mechanical tailoring with structured
-    waist layers, fine brass fasteners, chain accents and woven cloth. Preserve wearer,
-    role, pose, scene and framing; do not add a workshop, machine, hat or goggles unless
-    requested.
+  aesthetic: 'Victorian-inspired mechanical tailoring: layered waistcoat or corset structure, precise fastenings, chain accents and restrained gearwork, with craft carried by the garments.'
+  subject_treatment: Shape the existing clothes with a fitted waist, structured lapels, articulated seams and pocket-watch scale details. Hats and goggles are optional accessories, not assumptions about the wearer or occupation.
+  color_and_tone: Warm brass, leather and tweed relationships support the period craft; adapt hues and metal finish to explicit color requests rather than locking the palette.
+  lighting_and_shadow: Use warm, crisp highlights on engraved metal and glass while preserving the prompt's actual light and location. Do not introduce gas lamps, smoke or machinery as scene elements.
+  texture_and_material: Pair full-grain leather, woven tweed, polished or aged brass, fine chain and small glass accents. Show controlled wear and careful joinery, not a pile of loose gears.
+  camera_and_composition: Preserve the requested crop, angle and pose. Keep the waist shaping, layered front and hanging fasteners readable wherever they fall in frame.
+  atmosphere_and_mood: Convey inventive, slightly theatrical craft through tailored lines and precise metal details; do not assign a tinkerer, explorer or aristocratic role.
+  rendering_and_quality: Render crisp engraved edges, tactile woven cloth and small metal reflections with controlled detail. Keep tailoring coherent and avoid cluttering the silhouette.
+  key_features: Victorian panel layering; gear-like fastener accents; brass against leather and tweed; vertical tailored lines.
+  creative_brief: Reinterpret the requested wardrobe as Victorian mechanical tailoring with structured waist layers, fine brass fasteners, chain accents and woven cloth. Preserve wearer, role, pose, scene and framing; do not add a workshop, machine, hat or goggles unless requested.
 avoidRules:
   - plastic
   - generic cosplay
@@ -61,10 +37,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-009.webp
 attributes:
-  negativePrompt: >-
-    plastic, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required
-    body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
-    readable text
+  negativePrompt: plastic, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

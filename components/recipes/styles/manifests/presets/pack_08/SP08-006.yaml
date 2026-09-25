@@ -12,39 +12,16 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: >-
-    Technical outerwear shaped by sealed shell layers, modular paneling and strap-fed
-    utility; crisp construction makes the clothing itself the speculative design.
-  subject_treatment: >-
-    Re-cut the existing wardrobe with offset zips, articulated seams, webbing harness lines
-    and clipped pocket modules. A hood or raised collar is optional. Preserve the wearer's
-    identity, anatomy, pose and requested role.
-  color_and_tone: >-
-    Use functional contrast between shell, reinforcement and small signal accents. Let the
-    prompt set the palette; neon or amber details stay restrained and never imply a mission.
-  lighting_and_shadow: >-
-    Follow the requested scene lighting. Use narrow edge glints and a controlled damp sheen
-    only on surfaces that would catch light; do not add rain, neon signs or a new setting.
-  texture_and_material: >-
-    Combine matte waterproof membrane, ripstop or coated textile, seam tape, dense webbing
-    and molded composite inserts. Keep stitching, fasteners and panel boundaries legible.
-  camera_and_composition: >-
-    Keep the requested crop, viewpoint and pose. Clarify the modular panel rhythm and layer
-    depth inside that framing; do not require a full-body view.
-  atmosphere_and_mood: >-
-    Suggest preparedness through orderly construction and compact utility details, without
-    assigning combat, rescue, travel or other work.
-  rendering_and_quality: >-
-    Separate soft textile, hard inserts and reflective piping with precise edges and
-    believable folds. Avoid muddy noise and decorative hardware that obscures the cut.
-  key_features: >-
-    Water-sealed shell layers; offset zip paths; webbing and clipped pocket modules;
-    restrained signal piping.
-  creative_brief: >-
-    Transform the requested clothing into technical modular outerwear with sealed layers,
-    offset seams, webbing and compact pocket modules. Preserve wearer, pose, role, scene and
-    framing; keep hood, armor inserts and signal lights optional, and add no mission or
-    props.
+  aesthetic: Technical outerwear shaped by sealed shell layers, modular paneling and strap-fed utility; crisp construction makes the clothing itself the speculative design.
+  subject_treatment: Re-cut the existing wardrobe with offset zips, articulated seams, webbing harness lines and clipped pocket modules. A hood or raised collar is optional. Preserve the wearer's identity, anatomy, pose and requested role.
+  color_and_tone: Use functional contrast between shell, reinforcement and small signal accents. Let the prompt set the palette; neon or amber details stay restrained and never imply a mission.
+  lighting_and_shadow: Follow the requested scene lighting. Use narrow edge glints and a controlled damp sheen only on surfaces that would catch light; do not add rain, neon signs or a new setting.
+  texture_and_material: Combine matte waterproof membrane, ripstop or coated textile, seam tape, dense webbing and molded composite inserts. Keep stitching, fasteners and panel boundaries legible.
+  camera_and_composition: Keep the requested crop, viewpoint and pose. Clarify the modular panel rhythm and layer depth inside that framing; do not require a full-body view.
+  atmosphere_and_mood: Suggest preparedness through orderly construction and compact utility details, without assigning combat, rescue, travel or other work.
+  rendering_and_quality: Separate soft textile, hard inserts and reflective piping with precise edges and believable folds. Avoid muddy noise and decorative hardware that obscures the cut.
+  key_features: Water-sealed shell layers; offset zip paths; webbing and clipped pocket modules; restrained signal piping.
+  creative_brief: Transform the requested clothing into technical modular outerwear with sealed layers, offset seams, webbing and compact pocket modules. Preserve wearer, pose, role, scene and framing; keep hood, armor inserts and signal lights optional, and add no mission or props.
 avoidRules:
   - generic cosplay
   - plastic toy armor
@@ -59,10 +36,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-006.webp
 attributes:
-  negativePrompt: >-
-    generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body
-    type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
-    readable text
+  negativePrompt: generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

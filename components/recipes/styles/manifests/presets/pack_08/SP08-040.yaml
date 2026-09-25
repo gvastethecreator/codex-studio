@@ -12,38 +12,16 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: >-
-    Retro pressure-suit tailoring with rounded volume, gasketed openings and archival
-    space-age construction; the suit design does not require a space mission.
-  subject_treatment: >-
-    Shape the existing clothing with padded segments, sealed cuffs, connector details and a
-    compact equipment-like panel. A bubble helmet, hose or pack is optional and must not
-    obscure the requested wearer.
-  color_and_tone: >-
-    Use warm off-white, canvas neutrals and reflective metal accents as one possible period
-    palette; honor specified colors and keep any insignia unreadable or absent.
-  lighting_and_shadow: >-
-    Use clean directional highlights on visor-like surfaces and rubber seals while matching
-    the prompt's light. Do not add vacuum glare, a planet or an exterior setting.
-  texture_and_material: >-
-    Render beta-cloth-like canvas, nylon webbing, rubber gaskets and restrained gold-film or
-    aluminum details with sturdy stitched construction.
-  camera_and_composition: >-
-    Preserve the requested crop, angle and pose. Keep suit volume and seal details clear in
-    frame; never require a helmet or full-body astronaut view.
-  atmosphere_and_mood: >-
-    Suggest optimistic engineered design through rounded forms and practical fastenings,
-    without assigning an astronaut role, agency or mission.
-  rendering_and_quality: >-
-    Use convincing padded volume, rubber-to-cloth transitions and readable closures. Keep
-    markings non-legible and avoid overloading the suit with equipment.
-  key_features: >-
-    Rounded pressure-suit volume; gasketed cuffs and collar; beta-cloth texture; compact
-    retro hardware accents.
-  creative_brief: >-
-    Restyle the requested outfit as a retro pressure suit with padded segments, gasketed
-    joins and archival canvas-and-metal detailing. Preserve wearer, pose, role, setting and
-    frame; make helmet, tether and pack optional, with no agency logo or mission scene.
+  aesthetic: Retro pressure-suit tailoring with rounded volume, gasketed openings and archival space-age construction; the suit design does not require a space mission.
+  subject_treatment: Shape the existing clothing with padded segments, sealed cuffs, connector details and a compact equipment-like panel. A bubble helmet, hose or pack is optional and must not obscure the requested wearer.
+  color_and_tone: Use warm off-white, canvas neutrals and reflective metal accents as one possible period palette; honor specified colors and keep any insignia unreadable or absent.
+  lighting_and_shadow: Use clean directional highlights on visor-like surfaces and rubber seals while matching the prompt's light. Do not add vacuum glare, a planet or an exterior setting.
+  texture_and_material: Render beta-cloth-like canvas, nylon webbing, rubber gaskets and restrained gold-film or aluminum details with sturdy stitched construction.
+  camera_and_composition: Preserve the requested crop, angle and pose. Keep suit volume and seal details clear in frame; never require a helmet or full-body astronaut view.
+  atmosphere_and_mood: Suggest optimistic engineered design through rounded forms and practical fastenings, without assigning an astronaut role, agency or mission.
+  rendering_and_quality: Use convincing padded volume, rubber-to-cloth transitions and readable closures. Keep markings non-legible and avoid overloading the suit with equipment.
+  key_features: Rounded pressure-suit volume; gasketed cuffs and collar; beta-cloth texture; compact retro hardware accents.
+  creative_brief: Restyle the requested outfit as a retro pressure suit with padded segments, gasketed joins and archival canvas-and-metal detailing. Preserve wearer, pose, role, setting and frame; make helmet, tether and pack optional, with no agency logo or mission scene.
 avoidRules:
   - modern sleek
   - readable agency logo
@@ -60,10 +38,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-040.webp
 attributes:
-  negativePrompt: >-
-    modern sleek, readable agency logo, generic cosplay, plastic toy armor, muddy fantasy outfit,
-    fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric
-    noise, watermark, readable text
+  negativePrompt: modern sleek, readable agency logo, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

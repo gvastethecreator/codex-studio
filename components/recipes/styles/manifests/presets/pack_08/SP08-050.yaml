@@ -12,38 +12,16 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: >-
-    Avant-garde synthetic fashion built from asymmetrical paneling, deliberate cutouts and
-    strap lattices; alien inspiration remains an editorial clothing language, not a species.
-  subject_treatment: >-
-    Re-cut the existing outfit with geometric negative space, tabbed sleeves, intersecting
-    straps and a few utility rings. Preserve anatomy, identity, pose, requested coverage and
-    role.
-  color_and_tone: >-
-    Use sharp contrast and synthetic accents from the prompt's palette; chrome or orange may
-    appear as material choices but are never mandatory.
-  lighting_and_shadow: >-
-    Use clean fashion-like highlights on reflective surfaces while matching the supplied
-    scene. Do not add advertising neon, signage or a space terminal.
-  texture_and_material: >-
-    Combine molded neoprene, clear film, chrome-coated vinyl and woven elastic with careful
-    joins. Keep translucent sections controlled and avoid toy-like plastic.
-  camera_and_composition: >-
-    Preserve the requested crop, angle and pose. Make cutout geometry and strap crossings
-    readable without requiring a runway or fashion-editorial framing.
-  atmosphere_and_mood: >-
-    Feel experimental through unexpected garment geometry and material contrast; do not
-    assign an alien body, planet or futuristic occupation.
-  rendering_and_quality: >-
-    Keep cutout edges, stitching and reflections precise, preserving the prompt's body and
-    clothing coverage.
-  key_features: >-
-    Geometric cutouts; asymmetrical tabbed panels; strap-lattice construction; molded
-    synthetic surfaces.
-  creative_brief: >-
-    Reinterpret the requested clothes as avant-garde synthetic fashion with geometric
-    cutouts, asymmetrical panels and strap lattices. Preserve wearer, anatomy, coverage,
-    role, pose, setting and frame; add no alien species, terminal or franchise design.
+  aesthetic: Avant-garde synthetic fashion built from asymmetrical paneling, deliberate cutouts and strap lattices; alien inspiration remains an editorial clothing language, not a species.
+  subject_treatment: Re-cut the existing outfit with geometric negative space, tabbed sleeves, intersecting straps and a few utility rings. Preserve anatomy, identity, pose, requested coverage and role.
+  color_and_tone: Use sharp contrast and synthetic accents from the prompt's palette; chrome or orange may appear as material choices but are never mandatory.
+  lighting_and_shadow: Use clean fashion-like highlights on reflective surfaces while matching the supplied scene. Do not add advertising neon, signage or a space terminal.
+  texture_and_material: Combine molded neoprene, clear film, chrome-coated vinyl and woven elastic with careful joins. Keep translucent sections controlled and avoid toy-like plastic.
+  camera_and_composition: Preserve the requested crop, angle and pose. Make cutout geometry and strap crossings readable without requiring a runway or fashion-editorial framing.
+  atmosphere_and_mood: Feel experimental through unexpected garment geometry and material contrast; do not assign an alien body, planet or futuristic occupation.
+  rendering_and_quality: Keep cutout edges, stitching and reflections precise, preserving the prompt's body and clothing coverage.
+  key_features: Geometric cutouts; asymmetrical tabbed panels; strap-lattice construction; molded synthetic surfaces.
+  creative_brief: Reinterpret the requested clothes as avant-garde synthetic fashion with geometric cutouts, asymmetrical panels and strap lattices. Preserve wearer, anatomy, coverage, role, pose, setting and frame; add no alien species, terminal or franchise design.
 avoidRules:
   - ordinary casualwear
   - designer reference
@@ -63,10 +41,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-050.webp
 attributes:
-  negativePrompt: >-
-    ordinary casualwear, designer reference, franchise likeness, space terminal, humanoid alien body
-    lock, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body
-    type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
+  negativePrompt: ordinary casualwear, designer reference, franchise likeness, space terminal, humanoid alien body lock, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

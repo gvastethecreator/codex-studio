@@ -12,39 +12,16 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: >-
-    Pelagic couture uses scalloped scale lattices, fin-like seam rhythms and fluid textile
-    drape; aquatic references stay in garment design, not wearer anatomy.
-  subject_treatment: >-
-    Rework garments with tapered flowing panels, pearlescent scale details and fin-shaped
-    hems. A fishtail line may be a skirt or train, never anatomy unless requested; preserve
-    identity, body and pose.
-  color_and_tone: >-
-    Use tidal iridescence or reef-like hues as options, following explicit palette requests
-    and keeping luminous accents controlled.
-  lighting_and_shadow: >-
-    Preserve the real scene and lighting; use localized caustic-like reflections on glossy
-    cloth without adding water, sunbeams or an underwater setting.
-  texture_and_material: >-
-    Mix nacre-like sheen, fine scale embroidery, satin, organza and smooth silicone-like
-    finishes. Keep textile folds and seam direction visible beneath the iridescence.
-  camera_and_composition: >-
-    Preserve requested framing, angle and pose. Let scale rhythm and flowing hem
-    construction read in the existing crop.
-  atmosphere_and_mood: >-
-    Suggest fluid, ceremonial elegance through curve and shimmer without assigning a mermaid
-    or other aquatic species.
-  rendering_and_quality: >-
-    Control reflective detail so scales, fabric and transparent layers remain distinct;
-    avoid turning the outfit into a literal creature body.
-  key_features: >-
-    Scalloped scale lattice; fin-like garment seams; fluid tapered panels; nacre and organza
-    sheen.
-  creative_brief: >-
-    Transform the requested wardrobe into pelagic couture with scale-patterned panels,
-    fin-like hems and fluid iridescent cloth. Preserve wearer, anatomy, pose, role, scene
-    and frame; any fishtail line belongs to the garment, with no species or underwater
-    setting.
+  aesthetic: Pelagic couture uses scalloped scale lattices, fin-like seam rhythms and fluid textile drape; aquatic references stay in garment design, not wearer anatomy.
+  subject_treatment: Rework garments with tapered flowing panels, pearlescent scale details and fin-shaped hems. A fishtail line may be a skirt or train, never anatomy unless requested; preserve identity, body and pose.
+  color_and_tone: Use tidal iridescence or reef-like hues as options, following explicit palette requests and keeping luminous accents controlled.
+  lighting_and_shadow: Preserve the real scene and lighting; use localized caustic-like reflections on glossy cloth without adding water, sunbeams or an underwater setting.
+  texture_and_material: Mix nacre-like sheen, fine scale embroidery, satin, organza and smooth silicone-like finishes. Keep textile folds and seam direction visible beneath the iridescence.
+  camera_and_composition: Preserve requested framing, angle and pose. Let scale rhythm and flowing hem construction read in the existing crop.
+  atmosphere_and_mood: Suggest fluid, ceremonial elegance through curve and shimmer without assigning a mermaid or other aquatic species.
+  rendering_and_quality: Control reflective detail so scales, fabric and transparent layers remain distinct; avoid turning the outfit into a literal creature body.
+  key_features: Scalloped scale lattice; fin-like garment seams; fluid tapered panels; nacre and organza sheen.
+  creative_brief: Transform the requested wardrobe into pelagic couture with scale-patterned panels, fin-like hems and fluid iridescent cloth. Preserve wearer, anatomy, pose, role, scene and frame; any fishtail line belongs to the garment, with no species or underwater setting.
 avoidRules:
   - dry casualwear
   - generic cosplay
@@ -60,10 +37,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-049.webp
 attributes:
-  negativePrompt: >-
-    dry casualwear, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required
-    body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable
-    text
+  negativePrompt: dry casualwear, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

@@ -12,38 +12,16 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: >-
-    Illuminated technical suiting pairs narrow circuit paths and modular matte panels with
-    restrained emissive accents; the suit remains distinct from its environment.
-  subject_treatment: >-
-    Place luminous piping, branching circuit seams and occasional hexagonal nodes along
-    existing garments. Keep emitter discs and helmets optional; preserve the wearer,
-    anatomy, pose and role.
-  color_and_tone: >-
-    Use a clear contrast between base cloth and light paths; choose glow colors from the
-    prompt rather than requiring cyan, black or a fixed grid pattern.
-  lighting_and_shadow: >-
-    Let garment lights cast a small, controlled local glow while preserving the actual
-    scene. Avoid arena grids, vehicles, display walls and broad neon spill.
-  texture_and_material: >-
-    Mix matte neoprene, luminous flex circuits, polycarbonate details and silicone grip
-    surfaces. Separate emitting lines from stitched seams and hard plates.
-  camera_and_composition: >-
-    Keep the requested crop, angle and pose. Let illuminated seams trace the suit without
-    demanding an arena, helmet or full-body stance.
-  atmosphere_and_mood: >-
-    Suggest precise electric energy through contained light patterns, without assigning a
-    game, race, vehicle or mission.
-  rendering_and_quality: >-
-    Control bloom so each circuit line stays crisp and attached to the garment; preserve
-    fabric texture and the underlying silhouette.
-  key_features: >-
-    Luminous flex-circuit paths; hexagonal junctions; matte technical panels; restrained
-    local emissive glow.
-  creative_brief: >-
-    Restyle the requested wardrobe as a neon circuit suit with illuminated seam paths over
-    matte technical panels. Preserve wearer, body, role, pose, scene and framing; colors
-    follow the prompt, with no grid arena, vehicle or default helmet.
+  aesthetic: Illuminated technical suiting pairs narrow circuit paths and modular matte panels with restrained emissive accents; the suit remains distinct from its environment.
+  subject_treatment: Place luminous piping, branching circuit seams and occasional hexagonal nodes along existing garments. Keep emitter discs and helmets optional; preserve the wearer, anatomy, pose and role.
+  color_and_tone: Use a clear contrast between base cloth and light paths; choose glow colors from the prompt rather than requiring cyan, black or a fixed grid pattern.
+  lighting_and_shadow: Let garment lights cast a small, controlled local glow while preserving the actual scene. Avoid arena grids, vehicles, display walls and broad neon spill.
+  texture_and_material: Mix matte neoprene, luminous flex circuits, polycarbonate details and silicone grip surfaces. Separate emitting lines from stitched seams and hard plates.
+  camera_and_composition: Keep the requested crop, angle and pose. Let illuminated seams trace the suit without demanding an arena, helmet or full-body stance.
+  atmosphere_and_mood: Suggest precise electric energy through contained light patterns, without assigning a game, race, vehicle or mission.
+  rendering_and_quality: Control bloom so each circuit line stays crisp and attached to the garment; preserve fabric texture and the underlying silhouette.
+  key_features: Luminous flex-circuit paths; hexagonal junctions; matte technical panels; restrained local emissive glow.
+  creative_brief: Restyle the requested wardrobe as a neon circuit suit with illuminated seam paths over matte technical panels. Preserve wearer, body, role, pose, scene and framing; colors follow the prompt, with no grid arena, vehicle or default helmet.
 avoidRules:
   - franchise icon
   - helmet visor
@@ -62,10 +40,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-065.webp
 attributes:
-  negativePrompt: >-
-    franchise icon, helmet visor, neon vehicle, grid arena, generic cosplay, plastic toy armor,
-    muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion
-    catalog, muddy fabric noise, watermark, readable text
+  negativePrompt: franchise icon, helmet visor, neon vehicle, grid arena, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

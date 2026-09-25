@@ -12,39 +12,16 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: >-
-    Gothic aristocratic tailoring defined by a high collar, tapered longline coat, rich
-    lining and restrained signet detail; it evokes the style without changing species or
-    rank.
-  subject_treatment: >-
-    Shape existing clothes into a precise waist, raised collar, layered lapels and coat
-    tails. A cape, medallion or crimson lining is optional only when requested; preserve
-    identity, anatomy, pose and role.
-  color_and_tone: >-
-    Use deep value contrast and rich lining accents while honoring the prompt's palette;
-    black, crimson and silver are options, not requirements.
-  lighting_and_shadow: >-
-    Keep the real scene lighting, adding a fine rim on velvet or satin and controlled metal
-    glints only. Do not add moonlight, fog, candles or a manor.
-  texture_and_material: >-
-    Contrast velvet, satin lining, brocade, fine wool and polished metal ornament with
-    disciplined tailoring and visible fabric weight.
-  camera_and_composition: >-
-    Preserve the supplied crop, angle and pose. Keep collar height and tapered coat lines
-    readable without forcing a full-length portrait.
-  atmosphere_and_mood: >-
-    Suggest composed nocturnal elegance through silhouette and fabric contrast, without
-    fangs, blood, undead features or a villain role.
-  rendering_and_quality: >-
-    Keep lapels, lining edges and brocade detail crisp; maintain natural facial features and
-    avoid horror props or costume clutter.
-  key_features: >-
-    Raised sculptural collar; tapered longline tailoring; velvet and satin contrast;
-    optional cape and signet ornaments.
-  creative_brief: >-
-    Restyle the requested wardrobe with gothic longline tailoring, a high collar, rich
-    lining and measured ornament. Preserve wearer, identity, role, pose, scene and frame;
-    cape, medallion and crimson are optional, with no vampire anatomy or manor.
+  aesthetic: Gothic aristocratic tailoring defined by a high collar, tapered longline coat, rich lining and restrained signet detail; it evokes the style without changing species or rank.
+  subject_treatment: Shape existing clothes into a precise waist, raised collar, layered lapels and coat tails. A cape, medallion or crimson lining is optional only when requested; preserve identity, anatomy, pose and role.
+  color_and_tone: Use deep value contrast and rich lining accents while honoring the prompt's palette; black, crimson and silver are options, not requirements.
+  lighting_and_shadow: Keep the real scene lighting, adding a fine rim on velvet or satin and controlled metal glints only. Do not add moonlight, fog, candles or a manor.
+  texture_and_material: Contrast velvet, satin lining, brocade, fine wool and polished metal ornament with disciplined tailoring and visible fabric weight.
+  camera_and_composition: Preserve the supplied crop, angle and pose. Keep collar height and tapered coat lines readable without forcing a full-length portrait.
+  atmosphere_and_mood: Suggest composed nocturnal elegance through silhouette and fabric contrast, without fangs, blood, undead features or a villain role.
+  rendering_and_quality: Keep lapels, lining edges and brocade detail crisp; maintain natural facial features and avoid horror props or costume clutter.
+  key_features: Raised sculptural collar; tapered longline tailoring; velvet and satin contrast; optional cape and signet ornaments.
+  creative_brief: Restyle the requested wardrobe with gothic longline tailoring, a high collar, rich lining and measured ornament. Preserve wearer, identity, role, pose, scene and frame; cape, medallion and crimson are optional, with no vampire anatomy or manor.
 avoidRules:
   - generic cosplay
   - plastic toy armor
@@ -59,10 +36,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-047.webp
 attributes:
-  negativePrompt: >-
-    generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body
-    type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
-    readable text
+  negativePrompt: generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

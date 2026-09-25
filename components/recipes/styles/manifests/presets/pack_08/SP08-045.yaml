@@ -12,39 +12,16 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: >-
-    Graphic heroic suit tailoring built from close-fit performance fabric, decisive color
-    panels and angular seam flow; it uses comic clarity without a franchise template.
-  subject_treatment: >-
-    Re-cut the existing wardrobe as a streamlined stretch suit with bold panel breaks and
-    controlled gauntlet-to-boot transitions. A cape or chest emblem is optional only when
-    requested; preserve anatomy, identity, pose and role.
-  color_and_tone: >-
-    Use high-contrast blocks drawn from the prompt's palette. Never default to a familiar
-    blue-and-red combination or invent a chest symbol, crest or franchise mark.
-  lighting_and_shadow: >-
-    Use clean edge highlights and crisp value separation on the suit while preserving the
-    scene's lighting. Do not add action effects, comic panels or a heroic stage.
-  texture_and_material: >-
-    Favor matte performance knit, reinforced stitching, coated accents and rubberized trim.
-    Keep stretch fabric distinct from hard guards; cape fabric is included only if
-    requested.
-  camera_and_composition: >-
-    Preserve requested framing, perspective, pose and gesture. Let the suit's panel rhythm
-    read in that view; do not force a full-body poster or frontal stance.
-  atmosphere_and_mood: >-
-    Convey graphic confidence through clean geometry and contrast without assigning hero,
-    villain, powers or a mission.
-  rendering_and_quality: >-
-    Keep panel edges sharp, knit texture subtle and joints believable. Avoid muscle shading,
-    anatomy changes and decorative marks that resemble a known franchise.
-  key_features: >-
-    Close-fit performance knit; bold angular panel blocking; gauntlet-to-boot seam rhythm;
-    optional cape or emblem by request.
-  creative_brief: >-
-    Transform the requested clothing into a graphic heroic suit with matte stretch fabric
-    and bold, original panel geometry. Preserve wearer, anatomy, pose, role, scene, palette
-    and framing; add no default cape, emblem, franchise colors, powers or mission.
+  aesthetic: Graphic heroic suit tailoring built from close-fit performance fabric, decisive color panels and angular seam flow; it uses comic clarity without a franchise template.
+  subject_treatment: Re-cut the existing wardrobe as a streamlined stretch suit with bold panel breaks and controlled gauntlet-to-boot transitions. A cape or chest emblem is optional only when requested; preserve anatomy, identity, pose and role.
+  color_and_tone: Use high-contrast blocks drawn from the prompt's palette. Never default to a familiar blue-and-red combination or invent a chest symbol, crest or franchise mark.
+  lighting_and_shadow: Use clean edge highlights and crisp value separation on the suit while preserving the scene's lighting. Do not add action effects, comic panels or a heroic stage.
+  texture_and_material: Favor matte performance knit, reinforced stitching, coated accents and rubberized trim. Keep stretch fabric distinct from hard guards; cape fabric is included only if requested.
+  camera_and_composition: Preserve requested framing, perspective, pose and gesture. Let the suit's panel rhythm read in that view; do not force a full-body poster or frontal stance.
+  atmosphere_and_mood: Convey graphic confidence through clean geometry and contrast without assigning hero, villain, powers or a mission.
+  rendering_and_quality: Keep panel edges sharp, knit texture subtle and joints believable. Avoid muscle shading, anatomy changes and decorative marks that resemble a known franchise.
+  key_features: Close-fit performance knit; bold angular panel blocking; gauntlet-to-boot seam rhythm; optional cape or emblem by request.
+  creative_brief: Transform the requested clothing into a graphic heroic suit with matte stretch fabric and bold, original panel geometry. Preserve wearer, anatomy, pose, role, scene, palette and framing; add no default cape, emblem, franchise colors, powers or mission.
 avoidRules:
   - loose clothes
   - franchise icon
@@ -63,10 +40,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-045.webp
 attributes:
-  negativePrompt: >-
-    loose clothes, franchise icon, bodybuilder anatomy, muscle shading, generic cosplay, plastic toy
-    armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic
-    fashion catalog, muddy fabric noise, watermark, readable text
+  negativePrompt: loose clothes, franchise icon, bodybuilder anatomy, muscle shading, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

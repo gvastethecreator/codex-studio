@@ -12,37 +12,16 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: >-
-    Mage-inspired robe design built around long vertical columns, layered hems, deep cowl
-    folds and fine celestial embroidery; the clothes carry the fantasy.
-  subject_treatment: >-
-    Transform the existing wardrobe into flowing robes with bell-sleeve drape, optional hood
-    or cowl, and stitched ornamental marks. Preserve wearer, anatomy, pose and role; add no
-    wand or book.
-  color_and_tone: >-
-    Use a rich cloth base with fine silver or jewel-thread accents, adapting the palette to
-    the prompt and keeping ornament subordinate to the garment.
-  lighting_and_shadow: >-
-    Follow the requested scene lighting; reveal velvet depth and embroidery with restrained
-    glints. Do not add a magical glow, candlelit library or star field.
-  texture_and_material: >-
-    Combine velvet, silk, metallic thread, crystal-like beads and small leather fastenings.
-    Keep embroidery ornamental rather than readable text or a printed spell.
-  camera_and_composition: >-
-    Preserve the requested crop, angle and pose. Keep the long robe lines, cowl depth and
-    sleeve shape readable without demanding a full-length portrait.
-  atmosphere_and_mood: >-
-    Suggest arcane scholarship through drape and celestial stitch motifs, without making the
-    wearer a wizard or adding spellcasting.
-  rendering_and_quality: >-
-    Render deep folds, fine stitches and layered hems with clear textile weight. Keep
-    ornament crisp and prevent prop-driven wizard cliches.
-  key_features: >-
-    Long robe columns; deep cowl folds; bell-sleeve drape; fine celestial stitchwork.
-  creative_brief: >-
-    Reinterpret the requested clothing as mage-inspired robes with vertical drape, layered
-    hems, cowl folds and fine celestial embroidery. Preserve identity, anatomy, role, pose,
-    scene and frame; keep hood optional and add no spell, wand, book or school setting.
+  aesthetic: Mage-inspired robe design built around long vertical columns, layered hems, deep cowl folds and fine celestial embroidery; the clothes carry the fantasy.
+  subject_treatment: Transform the existing wardrobe into flowing robes with bell-sleeve drape, optional hood or cowl, and stitched ornamental marks. Preserve wearer, anatomy, pose and role; add no wand or book.
+  color_and_tone: Use a rich cloth base with fine silver or jewel-thread accents, adapting the palette to the prompt and keeping ornament subordinate to the garment.
+  lighting_and_shadow: Follow the requested scene lighting; reveal velvet depth and embroidery with restrained glints. Do not add a magical glow, candlelit library or star field.
+  texture_and_material: Combine velvet, silk, metallic thread, crystal-like beads and small leather fastenings. Keep embroidery ornamental rather than readable text or a printed spell.
+  camera_and_composition: Preserve the requested crop, angle and pose. Keep the long robe lines, cowl depth and sleeve shape readable without demanding a full-length portrait.
+  atmosphere_and_mood: Suggest arcane scholarship through drape and celestial stitch motifs, without making the wearer a wizard or adding spellcasting.
+  rendering_and_quality: Render deep folds, fine stitches and layered hems with clear textile weight. Keep ornament crisp and prevent prop-driven wizard cliches.
+  key_features: Long robe columns; deep cowl folds; bell-sleeve drape; fine celestial stitchwork.
+  creative_brief: Reinterpret the requested clothing as mage-inspired robes with vertical drape, layered hems, cowl folds and fine celestial embroidery. Preserve identity, anatomy, role, pose, scene and frame; keep hood optional and add no spell, wand, book or school setting.
 avoidRules:
   - literal school uniform
   - prop-only wizard cliche
@@ -60,10 +39,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-044.webp
 attributes:
-  negativePrompt: >-
-    literal school uniform, prop-only wizard cliche, library scene lock, generic cosplay,
-    plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card
-    scene, generic fashion catalog, muddy fabric noise, watermark, readable text
+  negativePrompt: literal school uniform, prop-only wizard cliche, library scene lock, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

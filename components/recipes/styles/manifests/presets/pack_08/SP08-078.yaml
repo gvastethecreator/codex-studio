@@ -12,39 +12,16 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: >-
-    Holographic signal treatment built from translucent bands, scanline structure and
-    restrained interference; it changes the requested appearance without inventing a
-    transmission story.
-  subject_treatment: >-
-    Apply horizontal scanlines, broken contour bands and a faint ghost edge to the requested
-    wearer or clothing while keeping identity and pose recognizable. Do not replace them
-    with a separate entity.
-  color_and_tone: >-
-    Use a cohesive monochrome signal palette, with cool cyan only as a default option; honor
-    any requested hue and preserve enough contrast to read the subject.
-  lighting_and_shadow: >-
-    Use a contained self-lit edge and transparency contrast integrated with the prompt's
-    scene. Do not add a projector, cone, sender or destination.
-  texture_and_material: >-
-    Layer fine interference, scanline grain, slight transparency fade and minimal chromatic
-    fringe; keep glitch density low enough to retain garment and facial structure.
-  camera_and_composition: >-
-    Preserve requested framing, angle and pose. Keep the figure's contour and key clothing
-    shapes aligned through the bands; do not turn it into an abstract screen.
-  atmosphere_and_mood: >-
-    Create a fragile digital presence through controlled signal breakup, without implying a
-    message, remote caller or mission.
-  rendering_and_quality: >-
-    Keep scanline spacing deliberate, edge ghosts subtle and any distortion tied to the
-    subject; use no fake text or interface graphics.
-  key_features: >-
-    Translucent monochrome bands; horizontal scanline grain; restrained ghost contours;
-    localized signal breakup.
-  creative_brief: >-
-    Render the requested wearer and clothing with a holographic signal surface: translucent
-    bands, scanlines and subtle interference. Preserve identity, pose, role, scene and
-    framing; do not add a sender, message, projector, portal or transmission destination.
+  aesthetic: Holographic signal treatment built from translucent bands, scanline structure and restrained interference; it changes the requested appearance without inventing a transmission story.
+  subject_treatment: Apply horizontal scanlines, broken contour bands and a faint ghost edge to the requested wearer or clothing while keeping identity and pose recognizable. Do not replace them with a separate entity.
+  color_and_tone: Use a cohesive monochrome signal palette, with cool cyan only as a default option; honor any requested hue and preserve enough contrast to read the subject.
+  lighting_and_shadow: Use a contained self-lit edge and transparency contrast integrated with the prompt's scene. Do not add a projector, cone, sender or destination.
+  texture_and_material: Layer fine interference, scanline grain, slight transparency fade and minimal chromatic fringe; keep glitch density low enough to retain garment and facial structure.
+  camera_and_composition: Preserve requested framing, angle and pose. Keep the figure's contour and key clothing shapes aligned through the bands; do not turn it into an abstract screen.
+  atmosphere_and_mood: Create a fragile digital presence through controlled signal breakup, without implying a message, remote caller or mission.
+  rendering_and_quality: Keep scanline spacing deliberate, edge ghosts subtle and any distortion tied to the subject; use no fake text or interface graphics.
+  key_features: Translucent monochrome bands; horizontal scanline grain; restrained ghost contours; localized signal breakup.
+  creative_brief: 'Render the requested wearer and clothing with a holographic signal surface: translucent bands, scanlines and subtle interference. Preserve identity, pose, role, scene and framing; do not add a sender, message, projector, portal or transmission destination.'
 avoidRules:
   - solid
   - generic cosplay
@@ -60,9 +37,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-078.webp
 attributes:
-  negativePrompt: >-
-    solid, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body
-    type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
+  negativePrompt: solid, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

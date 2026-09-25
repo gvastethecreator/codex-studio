@@ -12,40 +12,16 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: >-
-    Airy fantasy formalwear built from translucent layers, fine silvered embroidery and long
-    fluid lines; its identity comes from delicate fabric construction, not a new character
-    type.
-  subject_treatment: >-
-    Restyle the existing garments with sheer sleeves, light over-layers, floating hems and
-    small glass-like trims. Preserve the wearer's face, anatomy, pose and role; do not add
-    wings, horns or a crown.
-  color_and_tone: >-
-    Favor luminous, pale value relationships with soft silver or pearl accents, while
-    honoring requested hues and maintaining natural skin and facial detail.
-  lighting_and_shadow: >-
-    Use broad, gentle light and fine edge transmission to reveal translucent cloth. Match
-    the prompt's lighting and setting; do not create a supernatural glow source or scene.
-  texture_and_material: >-
-    Use chiffon, organza, fine gauze, satin and delicate metallic thread. Keep each sheer
-    layer distinct from skin and neighboring fabric, with light embroidery rather than hard
-    armor.
-  camera_and_composition: >-
-    Preserve the requested crop, viewpoint and pose. Let sleeve transparency, long drape and
-    light hem detail read within the available frame.
-  atmosphere_and_mood: >-
-    Create a quiet, weightless impression through soft layers and restrained ornament,
-    without declaring the wearer angelic, royal or magical.
-  rendering_and_quality: >-
-    Keep fabric edges translucent but defined, embroidery fine and highlights subdued.
-    Preserve face, anatomy and garment seams without washing them into a white silhouette.
-  key_features: >-
-    Airy sheer over-layers; long floating hems; fine silver-thread seams; delicate
-    glass-like trim.
-  creative_brief: >-
-    Transform the requested wardrobe into airy fantasy formalwear with translucent sleeves,
-    layered drape, fine silvered stitching and light trims. Preserve identity, anatomy,
-    pose, role, scene and framing; do not add wings, horns, crown or magical events.
+  aesthetic: Airy fantasy formalwear built from translucent layers, fine silvered embroidery and long fluid lines; its identity comes from delicate fabric construction, not a new character type.
+  subject_treatment: Restyle the existing garments with sheer sleeves, light over-layers, floating hems and small glass-like trims. Preserve the wearer's face, anatomy, pose and role; do not add wings, horns or a crown.
+  color_and_tone: Favor luminous, pale value relationships with soft silver or pearl accents, while honoring requested hues and maintaining natural skin and facial detail.
+  lighting_and_shadow: Use broad, gentle light and fine edge transmission to reveal translucent cloth. Match the prompt's lighting and setting; do not create a supernatural glow source or scene.
+  texture_and_material: Use chiffon, organza, fine gauze, satin and delicate metallic thread. Keep each sheer layer distinct from skin and neighboring fabric, with light embroidery rather than hard armor.
+  camera_and_composition: Preserve the requested crop, viewpoint and pose. Let sleeve transparency, long drape and light hem detail read within the available frame.
+  atmosphere_and_mood: Create a quiet, weightless impression through soft layers and restrained ornament, without declaring the wearer angelic, royal or magical.
+  rendering_and_quality: Keep fabric edges translucent but defined, embroidery fine and highlights subdued. Preserve face, anatomy and garment seams without washing them into a white silhouette.
+  key_features: Airy sheer over-layers; long floating hems; fine silver-thread seams; delicate glass-like trim.
+  creative_brief: Transform the requested wardrobe into airy fantasy formalwear with translucent sleeves, layered drape, fine silvered stitching and light trims. Preserve identity, anatomy, pose, role, scene and framing; do not add wings, horns, crown or magical events.
 avoidRules:
   - generic cosplay
   - plastic toy armor
@@ -60,10 +36,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-013.webp
 attributes:
-  negativePrompt: >-
-    generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body
-    type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
-    readable text
+  negativePrompt: generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

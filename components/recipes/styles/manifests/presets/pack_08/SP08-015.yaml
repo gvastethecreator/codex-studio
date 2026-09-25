@@ -12,40 +12,16 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: >-
-    Hand-fabricated performance costume with bold foam-built facets, thermoplastic edgework
-    and visibly assembled trim; the finish celebrates precise making.
-  subject_treatment: >-
-    Translate the requested outfit into shaped panels, clean foam segmentation, joined edges
-    and modular accessories at a scale suited to the original wearer. Keep wigs, masks and
-    props optional.
-  color_and_tone: >-
-    Use clear color blocking that separates base fabric, armor-like forms and painted edges.
-    Follow the prompt's palette; do not default to a licensed character's colors.
-  lighting_and_shadow: >-
-    Use even directional light that reveals bevels, seams and material changes. Keep the
-    actual scene and light sources; no stage, convention hall or colored gels are required.
-  texture_and_material: >-
-    Make EVA foam and thermoplastic read as carefully sealed craft surfaces beside stretch
-    fabric and synthetic fibers. Show cut edges, bonded joins and controlled paint, never
-    toy-like plastic.
-  camera_and_composition: >-
-    Preserve the requested crop, angle and pose. Show useful seam and edge detail without
-    turning the image into a fabrication demo or event photograph.
-  atmosphere_and_mood: >-
-    Express playful spectacle through silhouette and crafted details, without assigning a
-    convention, performance, fandom or character identity.
-  rendering_and_quality: >-
-    Keep bevels, edge paint and joins clean and believable at the chosen scale. Distinguish
-    fabricated forms from cloth, with no blurry or flat costume surfaces.
-  key_features: >-
-    Foam-faceted panels; thermoplastic edgework; bonded and painted seam joins; modular trim
-    with crafted scale.
-  creative_brief: >-
-    Rebuild the requested clothing as a hand-fabricated performance costume using shaped
-    foam, thermoplastic trims and precise joined panels. Preserve wearer, pose, role, scene
-    and framing; add no licensed likeness, convention setting, wig, mask or prop unless
-    requested.
+  aesthetic: Hand-fabricated performance costume with bold foam-built facets, thermoplastic edgework and visibly assembled trim; the finish celebrates precise making.
+  subject_treatment: Translate the requested outfit into shaped panels, clean foam segmentation, joined edges and modular accessories at a scale suited to the original wearer. Keep wigs, masks and props optional.
+  color_and_tone: Use clear color blocking that separates base fabric, armor-like forms and painted edges. Follow the prompt's palette; do not default to a licensed character's colors.
+  lighting_and_shadow: Use even directional light that reveals bevels, seams and material changes. Keep the actual scene and light sources; no stage, convention hall or colored gels are required.
+  texture_and_material: Make EVA foam and thermoplastic read as carefully sealed craft surfaces beside stretch fabric and synthetic fibers. Show cut edges, bonded joins and controlled paint, never toy-like plastic.
+  camera_and_composition: Preserve the requested crop, angle and pose. Show useful seam and edge detail without turning the image into a fabrication demo or event photograph.
+  atmosphere_and_mood: Express playful spectacle through silhouette and crafted details, without assigning a convention, performance, fandom or character identity.
+  rendering_and_quality: Keep bevels, edge paint and joins clean and believable at the chosen scale. Distinguish fabricated forms from cloth, with no blurry or flat costume surfaces.
+  key_features: Foam-faceted panels; thermoplastic edgework; bonded and painted seam joins; modular trim with crafted scale.
+  creative_brief: Rebuild the requested clothing as a hand-fabricated performance costume using shaped foam, thermoplastic trims and precise joined panels. Preserve wearer, pose, role, scene and framing; add no licensed likeness, convention setting, wig, mask or prop unless requested.
 avoidRules:
   - licensed-character replica
   - low-effort costume
@@ -62,10 +38,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-015.webp
 attributes:
-  negativePrompt: >-
-    licensed-character replica, low-effort costume, flat convention snapshot, plastic toy
-    armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene,
-    generic fashion catalog, muddy fabric noise, watermark, readable text
+  negativePrompt: licensed-character replica, low-effort costume, flat convention snapshot, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

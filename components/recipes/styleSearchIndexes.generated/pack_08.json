@@ -3,7 +3,7 @@
     {
       "id": "pack_08",
       "name": "Fashion & Costume",
-      "presetCount": 105
+      "presetCount": 106
     }
   ],
   "presets": [
@@ -1166,6 +1166,24 @@
       "searchableText": "sp08-080 shadow form 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     },
     {
+      "id": "SP08-106",
+      "name": "Chitin Insectoid Armor",
+      "styleAnchors": [
+        "Chitin Insectoid Armor",
+        "insect-shell costume armor",
+        "segmented iridescent chitin plates"
+      ],
+      "ref": "pack_08/SP08-106.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "fantasy-sci-fi-costume",
+      "categoryName": "4. Fantasy Sci-Fi Costume",
+      "domain": "insect-shell costume armor",
+      "tags": ["fashion-and-costume", "fantasy-sci-fi-costume", "insect-shell-costume-armor"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-106 chitin insectoid armor insect-shell costume armor segmented iridescent chitin plates 4. fantasy sci-fi costume speculative costume insect-shell costume armor pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume insect-shell-costume-armor"
+    },
+    {
       "id": "SP08-058",
       "name": "Sequins",
       "ref": "pack_08/SP08-058.yaml",
@@ -1358,5 +1376,5 @@
       "searchableText": "sp08-049 pelagic tail couture 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     }
   ],
-  "totalPresetCount": 105
+  "totalPresetCount": 106
 }

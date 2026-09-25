@@ -12,38 +12,16 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: >-
-    Shadow couture treats cloth as light-absorbing dark material with soft smoke-like edges
-    and selective rim separation; the wearer remains a person, not a void-creature.
-  subject_treatment: >-
-    Restyle clothing as layered near-black fabric with softly fading hems and a clear
-    silhouette. Preserve face, anatomy, pose and role; do not dissolve the wearer into smoke
-    or alter species.
-  color_and_tone: >-
-    Build depth from near-black values and sparse edge highlights, while retaining any
-    explicitly requested color accents and enough contrast for recognition.
-  lighting_and_shadow: >-
-    Follow the prompt's light, using restrained rim separation to distinguish fabric from
-    its surroundings. Do not extinguish the entire scene or add a new light source.
-  texture_and_material: >-
-    Suggest velvety light absorption, matte folds and smoke-soft garment edges through
-    surface treatment; smoke remains a visual edge effect, not a prop or body.
-  camera_and_composition: >-
-    Preserve requested crop, viewpoint and pose. Keep the subject's contour legible against
-    the actual background, without forcing a silhouette-only composition.
-  atmosphere_and_mood: >-
-    Create quiet, otherworldly gravity through negative space and low sheen, without
-    assigning a ghost, monster or supernatural role.
-  rendering_and_quality: >-
-    Balance soft outer edges with readable seams and folds. Retain face and garment
-    structure instead of collapsing the subject into a featureless black shape.
-  key_features: >-
-    Light-absorbing near-black cloth; smoke-soft garment edges; selective rim separation;
-    legible negative-space silhouette.
-  creative_brief: >-
-    Transform the requested wardrobe into shadow couture using velvety dark fabric,
-    soft-edged hems and restrained rim detail. Preserve identity, anatomy, pose, role, scene
-    and framing; do not create a ghost, smoke-body, void or new setting.
+  aesthetic: Shadow couture treats cloth as light-absorbing dark material with soft smoke-like edges and selective rim separation; the wearer remains a person, not a void-creature.
+  subject_treatment: Restyle clothing as layered near-black fabric with softly fading hems and a clear silhouette. Preserve face, anatomy, pose and role; do not dissolve the wearer into smoke or alter species.
+  color_and_tone: Build depth from near-black values and sparse edge highlights, while retaining any explicitly requested color accents and enough contrast for recognition.
+  lighting_and_shadow: Follow the prompt's light, using restrained rim separation to distinguish fabric from its surroundings. Do not extinguish the entire scene or add a new light source.
+  texture_and_material: Suggest velvety light absorption, matte folds and smoke-soft garment edges through surface treatment; smoke remains a visual edge effect, not a prop or body.
+  camera_and_composition: Preserve requested crop, viewpoint and pose. Keep the subject's contour legible against the actual background, without forcing a silhouette-only composition.
+  atmosphere_and_mood: Create quiet, otherworldly gravity through negative space and low sheen, without assigning a ghost, monster or supernatural role.
+  rendering_and_quality: Balance soft outer edges with readable seams and folds. Retain face and garment structure instead of collapsing the subject into a featureless black shape.
+  key_features: Light-absorbing near-black cloth; smoke-soft garment edges; selective rim separation; legible negative-space silhouette.
+  creative_brief: Transform the requested wardrobe into shadow couture using velvety dark fabric, soft-edged hems and restrained rim detail. Preserve identity, anatomy, pose, role, scene and framing; do not create a ghost, smoke-body, void or new setting.
 avoidRules:
   - generic cosplay
   - plastic toy armor
@@ -60,10 +38,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-080.webp
 attributes:
-  negativePrompt: >-
-    generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body
-    type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
-    readable text, featureless wearer, body dissolved into smoke
+  negativePrompt: generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, featureless wearer, body dissolved into smoke
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume
