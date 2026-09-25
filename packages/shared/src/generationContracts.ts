@@ -26,6 +26,25 @@ export const BUILT_IN_GENERATION_PROVIDERS = [
 export type BuiltInGenerationProvider = (typeof BUILT_IN_GENERATION_PROVIDERS)[number];
 export type GenerationProviderId = BuiltInGenerationProvider | (string & {});
 
+/** Visible order. This does not reorder `BUILT_IN_GENERATION_PROVIDERS` or the capability catalog. */
+export const GENERATION_PROVIDER_PRESENTATION_ORDER = [
+  'chatgpt',
+  'codex',
+  'grok',
+  'antigravity',
+  'google',
+  'fal',
+  'comfy',
+] as const satisfies readonly GenerationProviderId[];
+
+export function compareGenerationProviderPresentation(left: string, right: string) {
+  const rank = (providerId: string) => {
+    const index = (GENERATION_PROVIDER_PRESENTATION_ORDER as readonly string[]).indexOf(providerId);
+    return index === -1 ? GENERATION_PROVIDER_PRESENTATION_ORDER.length : index;
+  };
+  return rank(left) - rank(right);
+}
+
 export type ProviderRuntimeKind =
   | 'codex_app_server'
   | 'agent_cli'

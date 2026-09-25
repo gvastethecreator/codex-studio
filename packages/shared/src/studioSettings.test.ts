@@ -10,7 +10,7 @@ describe('studioSettings', () => {
   it('creates non-secret editable settings separate from bootstrap config', () => {
     expect(createDefaultEditableStudioSettings()).toEqual({
       schemaVersion: 'editable-studio-settings/v1',
-      defaultProviderId: 'codex',
+      defaultProviderId: 'chatgpt',
       defaultOutputMode: 'studio_library',
       autoDetectOutputSources: true,
       commandCenterCompactMode: false,

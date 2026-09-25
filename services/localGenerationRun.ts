@@ -149,7 +149,7 @@ export function resolveLocalGenerationProviderId({
   providerId?: GenerationProviderId | null;
   settings?: Pick<EditableStudioSettings, 'defaultProviderId'> | null;
 }): GenerationProviderId {
-  return providerId ?? settings?.defaultProviderId ?? 'codex';
+  return providerId ?? settings?.defaultProviderId ?? 'chatgpt';
 }
 
 export function resolveGenerationExecutionOverride(

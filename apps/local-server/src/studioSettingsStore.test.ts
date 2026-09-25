@@ -24,7 +24,7 @@ describe('studioSettingsStore', () => {
   it('returns editable Studio Settings defaults when no persisted value exists', () => {
     const settings = readEditableStudioSettings(createMemoryStorage());
 
-    expect(settings.defaultProviderId).toBe('codex');
+    expect(settings.defaultProviderId).toBe('chatgpt');
     expect(settings.defaultOutputMode).toBe('studio_library');
     expect(settings.outputOrganization.subfolderTokens).toEqual(['workspace']);
     expect(settings.updatedAt).toBe(null);
@@ -61,6 +61,6 @@ describe('studioSettingsStore', () => {
       [EDITABLE_STUDIO_SETTINGS_KEY]: '{broken-json',
     });
 
-    expect(readEditableStudioSettings(storage).defaultProviderId).toBe('codex');
+    expect(readEditableStudioSettings(storage).defaultProviderId).toBe('chatgpt');
   });
 });

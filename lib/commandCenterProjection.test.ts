@@ -283,16 +283,16 @@ describe('buildStudioCommandCenterProjection', () => {
 
     expect(projection.providerOptions).toEqual([
       expect.objectContaining({
-        id: 'codex',
-        label: 'Codex app-server',
-        canExecute: true,
-        statusDetail: 'Ready',
-      }),
-      expect.objectContaining({
         id: 'chatgpt',
         label: 'ChatGPT',
         status: 'unknown',
         canExecute: false,
+      }),
+      expect.objectContaining({
+        id: 'codex',
+        label: 'Codex app-server',
+        canExecute: true,
+        statusDetail: 'Ready',
       }),
       expect.objectContaining({
         id: 'grok',
@@ -301,16 +301,16 @@ describe('buildStudioCommandCenterProjection', () => {
         statusDetail: 'Ready',
       }),
       expect.objectContaining({
-        id: 'google',
-        label: 'Google Nano Banana',
-        canExecute: true,
-        statusDetail: 'Ready',
-      }),
-      expect.objectContaining({
         id: 'antigravity',
         label: 'Antigravity',
         canExecute: false,
         statusDetail: 'Needs setup',
+      }),
+      expect.objectContaining({
+        id: 'google',
+        label: 'Google Nano Banana',
+        canExecute: true,
+        statusDetail: 'Ready',
       }),
     ]);
   });

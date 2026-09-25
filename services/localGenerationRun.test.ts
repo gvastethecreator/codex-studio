@@ -101,8 +101,8 @@ describe('localGenerationRun', () => {
     ).toBe('fal');
   });
 
-  it('falls back to Codex when settings are unavailable', () => {
-    expect(resolveLocalGenerationProviderId({ settings: null })).toBe('codex');
+  it('falls back to ChatGPT when settings are unavailable', () => {
+    expect(resolveLocalGenerationProviderId({ settings: null })).toBe('chatgpt');
   });
 
   it('does not send Codex toolbar execution fields to another provider', () => {

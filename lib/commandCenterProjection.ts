@@ -86,11 +86,11 @@ export function summarizeCommandCenterRuntimeStatus(
 }
 
 const QUICK_SWITCH_PROVIDER_IDS = [
-  'codex',
   'chatgpt',
+  'codex',
   'grok',
-  'google',
   'antigravity',
+  'google',
 ] as const satisfies readonly GenerationProviderId[];
 
 function resolveProviderFallbackLabel(providerId: GenerationProviderId) {
@@ -184,7 +184,7 @@ export function buildStudioCommandCenterProjection({
   reviewJobCount,
   isQueueOpen,
 }: BuildStudioCommandCenterProjectionArgs): StudioCommandCenterProjection {
-  const activeProviderId = settings?.defaultProviderId ?? 'codex';
+  const activeProviderId = settings?.defaultProviderId ?? 'chatgpt';
   const compactMode = Boolean(settings?.commandCenterCompactMode);
 
   return {

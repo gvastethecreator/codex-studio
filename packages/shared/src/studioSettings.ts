@@ -153,7 +153,7 @@ function sanitizeProviderDefaultsPatch(value: unknown): EditableProviderDefaults
 export function createDefaultEditableStudioSettings(): EditableStudioSettings {
   return {
     schemaVersion: EDITABLE_STUDIO_SETTINGS_VERSION,
-    defaultProviderId: 'codex',
+    defaultProviderId: 'chatgpt',
     defaultOutputMode: 'studio_library',
     autoDetectOutputSources: true,
     commandCenterCompactMode: false,

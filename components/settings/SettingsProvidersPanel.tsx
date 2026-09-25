@@ -1,4 +1,7 @@
-import type { GenerationProviderId } from '../../packages/shared/src/generationContracts';
+import {
+  compareGenerationProviderPresentation,
+  type GenerationProviderId,
+} from '../../packages/shared/src/generationContracts';
 import type {
   GenerationProviderCapabilitiesResponse,
   GenerationProviderRuntimePreflightResponse,
@@ -122,84 +125,88 @@ export function SettingsProvidersPanel({
             </div>
           </div>
           <div className="settings-provider-accounts">
-            {providerCapabilities.providers.map((provider) => {
-              const preflight = preflightByProvider.get(provider.providerId);
-              const subscriptionId = subscriptionProviderIdForGeneration(provider.providerId);
-              const runtimeLabel =
-                provider.providerId === 'comfy'
-                  ? provider.canExecute
-                    ? 'Endpoint and workflow ready'
-                    : 'Set an endpoint and workflow'
-                  : ['codex', 'grok', 'antigravity'].includes(provider.providerId)
-                    ? providerRuntimeLabel(preflight?.localRuntimeState)
-                    : null;
-              const secretLabel =
-                subscriptionId || provider.providerId === 'comfy'
-                  ? null
-                  : providerSecretLabel(preflight?.secretState, preflight?.secretSource);
-              const readinessLabel =
-                provider.providerId === 'chatgpt' && provider.canExecute
-                  ? 'Connected'
-                  : providerReadyLabel({
-                      canExecute: provider.canExecute,
-                      status: provider.status,
-                    });
-              const readyLabel = readinessLabel === 'Needs setup' ? 'Setup' : readinessLabel;
+            {[...providerCapabilities.providers]
+              .sort((left, right) =>
+                compareGenerationProviderPresentation(left.providerId, right.providerId),
+              )
+              .map((provider) => {
+                const preflight = preflightByProvider.get(provider.providerId);
+                const subscriptionId = subscriptionProviderIdForGeneration(provider.providerId);
+                const runtimeLabel =
+                  provider.providerId === 'comfy'
+                    ? provider.canExecute
+                      ? 'Endpoint and workflow ready'
+                      : 'Set an endpoint and workflow'
+                    : ['codex', 'grok', 'antigravity'].includes(provider.providerId)
+                      ? providerRuntimeLabel(preflight?.localRuntimeState)
+                      : null;
+                const secretLabel =
+                  subscriptionId || provider.providerId === 'comfy'
+                    ? null
+                    : providerSecretLabel(preflight?.secretState, preflight?.secretSource);
+                const readinessLabel =
+                  provider.providerId === 'chatgpt' && provider.canExecute
+                    ? 'Connected'
+                    : providerReadyLabel({
+                        canExecute: provider.canExecute,
+                        status: provider.status,
+                      });
+                const readyLabel = readinessLabel === 'Needs setup' ? 'Setup' : readinessLabel;
 
-              return (
-                <div
-                  key={provider.providerId}
-                  className="settings-provider-account"
-                  data-provider={provider.providerId}
-                >
-                  <div className="settings-provider-account-header">
-                    <ProviderBrandMark
-                      providerId={provider.providerId}
-                      size="md"
-                      canExecute={provider.canExecute}
-                      status={provider.status}
-                    />
-                    <div className="settings-provider-account-heading">
-                      <div className="settings-provider-account-title">
-                        <span>{provider.label}</span>
-                        {provider.isDefault ? <small>Default</small> : null}
+                return (
+                  <div
+                    key={provider.providerId}
+                    className="settings-provider-account"
+                    data-provider={provider.providerId}
+                  >
+                    <div className="settings-provider-account-header">
+                      <ProviderBrandMark
+                        providerId={provider.providerId}
+                        size="md"
+                        canExecute={provider.canExecute}
+                        status={provider.status}
+                      />
+                      <div className="settings-provider-account-heading">
+                        <div className="settings-provider-account-title">
+                          <span>{provider.label}</span>
+                          {provider.isDefault ? <small>Default</small> : null}
+                        </div>
+                        <StatusPill
+                          className={providerReadyPillClass({
+                            canExecute: provider.canExecute,
+                            status: provider.status,
+                          })}
+                        >
+                          {readyLabel}
+                        </StatusPill>
                       </div>
-                      <StatusPill
-                        className={providerReadyPillClass({
-                          canExecute: provider.canExecute,
-                          status: provider.status,
-                        })}
-                      >
-                        {readyLabel}
-                      </StatusPill>
                     </div>
+                    {runtimeLabel || secretLabel ? (
+                      <p className="settings-provider-runtime">
+                        {[runtimeLabel, secretLabel].filter(Boolean).join(' · ')}
+                      </p>
+                    ) : null}
+                    {!provider.canExecute && (
+                      <p className="settings-provider-attention" title={provider.detail}>
+                        {provider.detail}
+                      </p>
+                    )}
+                    {subscriptionId ? (
+                      <SubscriptionAuthControls providerId={subscriptionId} compact />
+                    ) : null}
+                    <details className="settings-provider-details">
+                      <summary>Connection details</summary>
+                      <p>{provider.detail}</p>
+                      {provider.providerId === 'google' ? (
+                        <p>Uses your Google Cloud project for billing and quota.</p>
+                      ) : null}
+                      {preflight?.diagnostics.length ? (
+                        <p>{preflight.diagnostics.join(' ')}</p>
+                      ) : null}
+                    </details>
                   </div>
-                  {runtimeLabel || secretLabel ? (
-                    <p className="settings-provider-runtime">
-                      {[runtimeLabel, secretLabel].filter(Boolean).join(' · ')}
-                    </p>
-                  ) : null}
-                  {!provider.canExecute && (
-                    <p className="settings-provider-attention" title={provider.detail}>
-                      {provider.detail}
-                    </p>
-                  )}
-                  {subscriptionId ? (
-                    <SubscriptionAuthControls providerId={subscriptionId} compact />
-                  ) : null}
-                  <details className="settings-provider-details">
-                    <summary>Connection details</summary>
-                    <p>{provider.detail}</p>
-                    {provider.providerId === 'google' ? (
-                      <p>Uses your Google Cloud project for billing and quota.</p>
-                    ) : null}
-                    {preflight?.diagnostics.length ? (
-                      <p>{preflight.diagnostics.join(' ')}</p>
-                    ) : null}
-                  </details>
-                </div>
-              );
-            })}
+                );
+              })}
           </div>
         </div>
       ) : (

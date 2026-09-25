@@ -42,7 +42,7 @@ export function encodeSubfolderTokens(value: StudioOutputSubfolderToken[]) {
 
 export function createInitialStudioSettingsFormState(): StudioSettingsFormState {
   return {
-    defaultProviderId: 'codex',
+    defaultProviderId: 'chatgpt',
     defaultOutputMode: 'studio_library',
     preferredOutputPath: '',
     outputSubfolderPreset: encodeSubfolderTokens(['workspace']),

@@ -221,7 +221,7 @@ export function buildStudioOverlayController({
       onRetryJob: activity.onRetryJob,
       handleGenerate: image.handleGenerate,
       isGenerating: image.activeGenerationConfig !== null,
-      activeProviderId: settingsModule.settingsDomain.settings?.defaultProviderId ?? 'codex',
+      activeProviderId: settingsModule.settingsDomain.settings?.defaultProviderId ?? 'chatgpt',
       handleExportLegacyWorkspaceSnapshot: vault.handleExportLegacyWorkspaceSnapshot,
       apiBase: onboarding.apiBase,
       onboardingError: onboarding.error,

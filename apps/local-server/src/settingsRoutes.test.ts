@@ -33,7 +33,7 @@ describe('settingsRoutes', () => {
     const payload = (await response.json()) as ReturnType<
       typeof createDefaultEditableStudioSettings
     >;
-    expect(payload.defaultProviderId).toBe('codex');
+    expect(payload.defaultProviderId).toBe('chatgpt');
     expect(payload.defaultOutputMode).toBe('studio_library');
   });
 

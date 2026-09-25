@@ -8,7 +8,10 @@ import {
 } from '@tabler/icons-react';
 import type React from 'react';
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
-import { BUILT_IN_GENERATION_PROVIDERS } from '../packages/shared/src/generationContracts';
+import {
+  BUILT_IN_GENERATION_PROVIDERS,
+  compareGenerationProviderPresentation,
+} from '../packages/shared/src/generationContracts';
 import type {
   ExternalOutputSourceFile,
   ExternalOutputSourcesResponse,
@@ -145,11 +148,9 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
 
   const providerOptions = useMemo(
     () =>
-      [
-        ...BUILT_IN_GENERATION_PROVIDERS,
-        ...Object.keys(providerDefaults),
-        defaultProviderId,
-      ].filter((providerId, index, all) => all.indexOf(providerId) === index),
+      [...BUILT_IN_GENERATION_PROVIDERS, ...Object.keys(providerDefaults), defaultProviderId]
+        .filter((providerId, index, all) => all.indexOf(providerId) === index)
+        .sort(compareGenerationProviderPresentation),
     [defaultProviderId, providerDefaults],
   );
   if (!isOpen) return null;
