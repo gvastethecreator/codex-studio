@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-181
+packId: pack_15
+name: Lichenpunk
+styleAnchors:
+  - Lichenpunk
+  - lichen and slow growth punk
+  - lichen crusts
+displayName: Lichenpunk
+category: 4. Bio, Myco & Body Punks
+domain: lichen and slow growth punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - bio-myco-and-body-punks
+  - lichenpunk
+  - punk
+  - bio
+visualDna:
+  aesthetic: 'Lichenpunk: a slow, patient culture living with lichen, where time is measured in crusts on stone and buildings are dated by their colors.'
+  subject_treatment: Keep the prompt's subject and setting; crust it with colorful lichen that shows how long everything has been there.
+  color_and_tone: Orange, sulfur yellow and grey-green lichen rosettes over cold stone greys.
+  lighting_and_shadow: Soft overcast northern light that brings out every crust and rosette.
+  texture_and_material: Lichen crusts, old stone, weathered bone and wind-worn wood.
+  camera_and_composition: Close views of lichen patterns and wide views of ancient crusted places.
+  atmosphere_and_mood: Patient and timeless, a world where nothing is ever in a hurry.
+  rendering_and_quality: Finely textured illustration with rich lichen color patterns.
+  creative_brief: "Lichenpunk: a slow, patient culture living with lichen, where time is measured in crusts on stone and buildings are dated by their colors. Carry it through lichen crusts, ancient stone, slow time, colorful rosettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: lichen crusts; ancient stone; slow time; colorful rosettes
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - gore
+  - graphic wounds
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: bio-myco-and-body-punks
+  categoryName: 4. Bio, Myco & Body Punks
+  tags:
+    - curation-v2
+    - bio-myco-and-body-punks
+    - lichenpunk
+    - punk
+    - bio
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: lichen and slow growth punk

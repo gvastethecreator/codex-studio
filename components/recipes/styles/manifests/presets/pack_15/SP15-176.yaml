@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-176
+packId: pack_15
+name: Chitinpunk
+styleAnchors:
+  - Chitinpunk
+  - insect shell technology punk
+  - iridescent plates
+displayName: Chitinpunk
+category: 4. Bio, Myco & Body Punks
+domain: insect shell technology punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - bio-myco-and-body-punks
+  - chitinpunk
+  - punk
+  - bio
+visualDna:
+  aesthetic: 'Chitinpunk: architecture and armor grown like insect shells, with iridescent plates, segmented joints and beetle-wing canopies.'
+  subject_treatment: Keep the prompt's subject and setting; rebuild its structures and gear from segmented chitin plates with iridescent sheen.
+  color_and_tone: Iridescent beetle greens, bronze and violet sheen over deep black shell.
+  lighting_and_shadow: Raking light revealing iridescent shifts and glossy highlights on curved plates.
+  texture_and_material: Glossy chitin plates, segmented joints, translucent wing membranes and fine hairs.
+  camera_and_composition: Close views of plated surfaces and wide views of shell-built structures.
+  atmosphere_and_mood: Alien and beautiful, a world that borrowed its engineering from beetles.
+  rendering_and_quality: Glossy detailed illustration with rich iridescent color shifts.
+  creative_brief: "Chitinpunk: architecture and armor grown like insect shells, with iridescent plates, segmented joints and beetle-wing canopies. Carry it through iridescent plates, segmented joints, wing canopies, beetle sheen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: iridescent plates; segmented joints; wing canopies; beetle sheen
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - gore
+  - graphic wounds
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: bio-myco-and-body-punks
+  categoryName: 4. Bio, Myco & Body Punks
+  tags:
+    - curation-v2
+    - bio-myco-and-body-punks
+    - chitinpunk
+    - punk
+    - bio
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: insect shell technology punk

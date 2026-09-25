@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-185
+packId: pack_15
+name: Silkspinnerpunk
+styleAnchors:
+  - Silkspinnerpunk
+  - spider silk technology punk
+  - silk bridges
+displayName: Silkspinnerpunk
+category: 4. Bio, Myco & Body Punks
+domain: spider silk technology punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - bio-myco-and-body-punks
+  - silkspinner
+  - punk
+  - bio
+visualDna:
+  aesthetic: 'Silkspinnerpunk: a civilization woven from spider silk, with silk bridges, glistening dew-lit webs, silk sails and spinner guilds farming giant spiders.'
+  subject_treatment: Keep the prompt's subject and setting; weave it into glistening silk webs, cables and fabrics spun by spiders.
+  color_and_tone: Silver-white silk glinting against forest greens and dawn gold.
+  lighting_and_shadow: Backlit dawn light making silk threads and dew drops glow.
+  texture_and_material: Fine silk threads, dew beads, woven silk cloth and spider-spun cables.
+  camera_and_composition: Webs spanning huge gaps with tiny figures crossing them.
+  atmosphere_and_mood: Delicate and daring, strength hidden in threads finer than hair.
+  rendering_and_quality: Luminous fine-line illustration with glinting silk and dew.
+  creative_brief: "Silkspinnerpunk: a civilization woven from spider silk, with silk bridges, glistening dew-lit webs, silk sails and spinner guilds farming giant spiders. Carry it through silk bridges, dew-lit webs, spinner guilds, glinting threads. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: silk bridges; dew-lit webs; spinner guilds; glinting threads
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - gore
+  - graphic wounds
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: bio-myco-and-body-punks
+  categoryName: 4. Bio, Myco & Body Punks
+  tags:
+    - curation-v2
+    - bio-myco-and-body-punks
+    - silkspinner
+    - punk
+    - bio
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: spider silk technology punk

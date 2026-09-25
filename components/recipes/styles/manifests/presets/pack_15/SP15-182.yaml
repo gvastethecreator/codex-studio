@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-182
+packId: pack_15
+name: Brewpunk
+styleAnchors:
+  - Brewpunk
+  - fermentation culture punk
+  - bubbling vats
+displayName: Brewpunk
+category: 4. Bio, Myco & Body Punks
+domain: fermentation culture punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - bio-myco-and-body-punks
+  - brewpunk
+  - punk
+  - bio
+visualDna:
+  aesthetic: 'Brewpunk: fermentation as technology and religion, with bubbling vats, living yeast cultures, copper stills and cellar laboratories.'
+  subject_treatment: Keep the prompt's subject and setting; surround it with fermenting vats, bubbling jars, copper pipes and living cultures.
+  color_and_tone: Amber, honey gold and copper with cloudy cream foam and cellar shadow.
+  lighting_and_shadow: Warm lamps glowing through amber liquids and bubbles in dark cellars.
+  texture_and_material: Copper stills, oak barrels, glass carboys, foam, steam and wet stone.
+  camera_and_composition: Cellar interiors packed with vats and glowing glass vessels.
+  atmosphere_and_mood: Bubbling and convivial, a slow alchemy of patience, sugar and time.
+  rendering_and_quality: Warm glowing illustration with rich liquid and copper detail.
+  creative_brief: "Brewpunk: fermentation as technology and religion, with bubbling vats, living yeast cultures, copper stills and cellar laboratories. Carry it through bubbling vats, copper stills, glowing amber jars, living cultures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: bubbling vats; copper stills; glowing amber jars; living cultures
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - gore
+  - graphic wounds
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: bio-myco-and-body-punks
+  categoryName: 4. Bio, Myco & Body Punks
+  tags:
+    - curation-v2
+    - bio-myco-and-body-punks
+    - brewpunk
+    - punk
+    - bio
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: fermentation culture punk

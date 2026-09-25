@@ -82,6 +82,23 @@ categories:
       - pack_15/SP15-094.yaml
       - pack_15/SP15-095.yaml
       - pack_15/SP15-096.yaml
+      - pack_15/SP15-175.yaml
+      - pack_15/SP15-176.yaml
+      - pack_15/SP15-177.yaml
+      - pack_15/SP15-178.yaml
+      - pack_15/SP15-179.yaml
+      - pack_15/SP15-180.yaml
+      - pack_15/SP15-181.yaml
+      - pack_15/SP15-182.yaml
+      - pack_15/SP15-183.yaml
+      - pack_15/SP15-184.yaml
+      - pack_15/SP15-185.yaml
+      - pack_15/SP15-186.yaml
+      - pack_15/SP15-187.yaml
+      - pack_15/SP15-188.yaml
+      - pack_15/SP15-189.yaml
+      - pack_15/SP15-190.yaml
+      - pack_15/SP15-191.yaml
   - id: ocean-ice-and-terrain-punks
     name: 5. Ocean, Ice & Terrain Punks
     presetRefs:
@@ -188,6 +205,23 @@ presetRefs:
   - pack_15/SP15-094.yaml
   - pack_15/SP15-095.yaml
   - pack_15/SP15-096.yaml
+  - pack_15/SP15-175.yaml
+  - pack_15/SP15-176.yaml
+  - pack_15/SP15-177.yaml
+  - pack_15/SP15-178.yaml
+  - pack_15/SP15-179.yaml
+  - pack_15/SP15-180.yaml
+  - pack_15/SP15-181.yaml
+  - pack_15/SP15-182.yaml
+  - pack_15/SP15-183.yaml
+  - pack_15/SP15-184.yaml
+  - pack_15/SP15-185.yaml
+  - pack_15/SP15-186.yaml
+  - pack_15/SP15-187.yaml
+  - pack_15/SP15-188.yaml
+  - pack_15/SP15-189.yaml
+  - pack_15/SP15-190.yaml
+  - pack_15/SP15-191.yaml
   - pack_15/SP15-097.yaml
   - pack_15/SP15-098.yaml
   - pack_15/SP15-101.yaml

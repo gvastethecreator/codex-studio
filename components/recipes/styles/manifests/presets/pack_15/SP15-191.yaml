@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-191
+packId: pack_15
+name: Prosthetic Craftpunk
+styleAnchors:
+  - Prosthetic Craftpunk
+  - handmade prosthetics punk
+  - carved wooden limbs
+displayName: Prosthetic Craftpunk
+category: 4. Bio, Myco & Body Punks
+domain: handmade prosthetics punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - bio-myco-and-body-punks
+  - prosthetic-craft
+  - punk
+  - bio
+visualDna:
+  aesthetic: 'Prosthetic craftpunk: artisans building beautiful handmade limbs from carved wood, brass, porcelain and leather, each one a personal work of art.'
+  subject_treatment: Keep the prompt's subject and setting; give its figures handcrafted prosthetic limbs of wood, brass or porcelain with visible joinery.
+  color_and_tone: Warm wood browns, brass gold and porcelain white with deep leather reds.
+  lighting_and_shadow: Workshop window light glinting on brass joints and polished wood.
+  texture_and_material: Carved wood, brass hinges, porcelain plates, leather straps and fine tools.
+  camera_and_composition: Workshop scenes and portraits with the crafted limb as the focus.
+  atmosphere_and_mood: Proud and tender, bodies rebuilt as works of art rather than repairs.
+  rendering_and_quality: Richly detailed craft illustration with precise joinery and polished wood and brass surfaces.
+  creative_brief: "Prosthetic craftpunk: artisans building beautiful handmade limbs from carved wood, brass, porcelain and leather, each one a personal work of art. Carry it through carved wooden limbs, brass hinges, porcelain plates, artisan workshop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: carved wooden limbs; brass hinges; porcelain plates; artisan workshop
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - gore
+  - graphic wounds
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: bio-myco-and-body-punks
+  categoryName: 4. Bio, Myco & Body Punks
+  tags:
+    - curation-v2
+    - bio-myco-and-body-punks
+    - prosthetic-craft
+    - punk
+    - bio
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: handmade prosthetics punk

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-180
+packId: pack_15
+name: Termitepunk
+styleAnchors:
+  - Termitepunk
+  - termite mound architecture punk
+  - earthen spires
+displayName: Termitepunk
+category: 4. Bio, Myco & Body Punks
+domain: termite mound architecture punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - bio-myco-and-body-punks
+  - termitepunk
+  - punk
+  - bio
+visualDna:
+  aesthetic: 'Termitepunk: cities built like termite mounds, with towering earthen spires, natural ventilation shafts, tunnels and colony-scale cooperation.'
+  subject_treatment: Keep the prompt's subject and setting; house it in towering earthen mounds full of tunnels and ventilation chimneys.
+  color_and_tone: Red earth, ochre clay and dusty savanna gold with cool shadowed tunnel browns.
+  lighting_and_shadow: Hot savanna sun on mound exteriors and cool shafts of light inside tunnels.
+  texture_and_material: Packed red earth, tunnel walls, ventilation holes and dry grass.
+  camera_and_composition: Towering mound skylines and cutaway views of tunnel networks.
+  atmosphere_and_mood: Industrious and ancient, a society as patient and cooperative as a colony.
+  rendering_and_quality: Earthy detailed illustration with clearly readable tunnel architecture.
+  creative_brief: "Termitepunk: cities built like termite mounds, with towering earthen spires, natural ventilation shafts, tunnels and colony-scale cooperation. Carry it through earthen spires, ventilation shafts, tunnel networks, red earth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: earthen spires; ventilation shafts; tunnel networks; red earth
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - gore
+  - graphic wounds
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: bio-myco-and-body-punks
+  categoryName: 4. Bio, Myco & Body Punks
+  tags:
+    - curation-v2
+    - bio-myco-and-body-punks
+    - termitepunk
+    - punk
+    - bio
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: termite mound architecture punk

@@ -5,12 +5,12 @@ import type { Dna } from '../tools/apply';
 const MIN: Record<keyof Dna, number> = {
   aesthetic: 10,
   subject_treatment: 12,
-  color_and_tone: 9,
-  lighting_and_shadow: 9,
-  texture_and_material: 9,
-  camera_and_composition: 9,
+  color_and_tone: 8,
+  lighting_and_shadow: 8,
+  texture_and_material: 8,
+  camera_and_composition: 8,
   atmosphere_and_mood: 8,
-  rendering_and_quality: 9,
+  rendering_and_quality: 8,
   key_features: 4,
 };
 

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-186
+packId: pack_15
+name: Parasitepunk
+styleAnchors:
+  - Parasitepunk
+  - benign parasite punk
+  - hitchhiker organisms
+displayName: Parasitepunk
+category: 4. Bio, Myco & Body Punks
+domain: benign parasite punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - bio-myco-and-body-punks
+  - parasitepunk
+  - punk
+  - bio
+visualDna:
+  aesthetic: 'Parasitepunk: strange organisms that ride their hosts, from clever hitchhiker creatures to crowns of living growth, shown as eerie partnerships rather than horror.'
+  subject_treatment: Keep the prompt's subject and setting; attach a strange hitchhiking organism to it that changes how it looks or behaves, without gore.
+  color_and_tone: Pale skin and grey tones with sickly green, violet and orange organism accents.
+  lighting_and_shadow: Dim light with the organisms glowing faintly in dark places.
+  texture_and_material: Glossy tendrils, soft growths, crowns of fungus-like forms and pale fabric.
+  camera_and_composition: Close portraits of host and passenger, and crowds where many carry organisms.
+  atmosphere_and_mood: Eerie and fascinating, the unsettling question of who is really in control.
+  rendering_and_quality: Detailed eerie illustration with glossy organic forms and restraint.
+  creative_brief: "Parasitepunk: strange organisms that ride their hosts, from clever hitchhiker creatures to crowns of living growth, shown as eerie partnerships rather than horror. Carry it through hitchhiker organisms, glowing growths, host partnerships, eerie calm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: hitchhiker organisms; glowing growths; host partnerships; eerie calm
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - gore
+  - graphic wounds
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: bio-myco-and-body-punks
+  categoryName: 4. Bio, Myco & Body Punks
+  tags:
+    - curation-v2
+    - bio-myco-and-body-punks
+    - parasitepunk
+    - punk
+    - bio
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: benign parasite punk

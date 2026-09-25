@@ -93,4 +93,521 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP15-175',
+    name: 'Slimepunk',
+    displayName: 'Slimepunk',
+    styleAnchors: ['Slimepunk', 'slime mold network punk', 'yellow slime networks'],
+    category: '4. Bio, Myco & Body Punks',
+    domain: 'slime mold network punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Slimepunk: slime molds as living computers and urban planners, with yellow veined networks spreading across maps, streets and machines.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; let branching yellow slime-mold networks spread across its surfaces, connecting points like living maps.",
+      color_and_tone:
+        'Vivid slime yellow and orange veins against dark soil, grey concrete and pale petri glass.',
+      lighting_and_shadow:
+        'Soft diffuse light with a glossy wet sheen on every slime vein and pulse.',
+      texture_and_material:
+        'Wet branching veins, pulsating fans, petri glass, oat flakes and damp stone.',
+      camera_and_composition:
+        'Top-down map-like views of networks and close macro views of pulsing fans.',
+      atmosphere_and_mood:
+        'Uncanny and clever, a brainless organism that plans better than any engineer.',
+      rendering_and_quality: 'Glossy organic illustration with intricate branching network detail.',
+      creative_brief:
+        "Slimepunk: slime molds as living computers and urban planners, with yellow veined networks spreading across maps, streets and machines. Carry it through yellow slime networks, map-like branching, wet sheen, pulsing fans. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'yellow slime networks; map-like branching; wet sheen; pulsing fans',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-176',
+    name: 'Chitinpunk',
+    displayName: 'Chitinpunk',
+    styleAnchors: ['Chitinpunk', 'insect shell technology punk', 'iridescent plates'],
+    category: '4. Bio, Myco & Body Punks',
+    domain: 'insect shell technology punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Chitinpunk: architecture and armor grown like insect shells, with iridescent plates, segmented joints and beetle-wing canopies.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; rebuild its structures and gear from segmented chitin plates with iridescent sheen.",
+      color_and_tone: 'Iridescent beetle greens, bronze and violet sheen over deep black shell.',
+      lighting_and_shadow:
+        'Raking light revealing iridescent shifts and glossy highlights on curved plates.',
+      texture_and_material:
+        'Glossy chitin plates, segmented joints, translucent wing membranes and fine hairs.',
+      camera_and_composition:
+        'Close views of plated surfaces and wide views of shell-built structures.',
+      atmosphere_and_mood:
+        'Alien and beautiful, a world that borrowed its engineering from beetles.',
+      rendering_and_quality: 'Glossy detailed illustration with rich iridescent color shifts.',
+      creative_brief:
+        "Chitinpunk: architecture and armor grown like insect shells, with iridescent plates, segmented joints and beetle-wing canopies. Carry it through iridescent plates, segmented joints, wing canopies, beetle sheen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'iridescent plates; segmented joints; wing canopies; beetle sheen',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-177',
+    name: 'Symbiontpunk',
+    displayName: 'Symbiontpunk',
+    styleAnchors: ['Symbiontpunk', 'symbiotic partnership punk', 'companion organisms'],
+    category: '4. Bio, Myco & Body Punks',
+    domain: 'symbiotic partnership punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Symbiontpunk: humans living in partnership with other organisms, with moss coats, fish-cleaned wounds, bird-helpers and plant companions woven into daily life.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; pair it with a living companion organism that helps it in a visible, symbiotic way.",
+      color_and_tone: 'Soft greens and earthy browns with bright accents from companion creatures.',
+      lighting_and_shadow: 'Gentle natural daylight and small bioluminescent glows at night.',
+      texture_and_material: 'Moss cloaks, living vines, feathers, scales and woven natural fibers.',
+      camera_and_composition:
+        'Close pairings of person and companion organism, with their bond central.',
+      atmosphere_and_mood:
+        'Gentle and strange, lives completely braided together with other species.',
+      rendering_and_quality:
+        'Delicate naturalist illustration with careful creature and plant detail.',
+      creative_brief:
+        "Symbiontpunk: humans living in partnership with other organisms, with moss coats, fish-cleaned wounds, bird-helpers and plant companions woven into daily life. Carry it through companion organisms, moss cloaks, living partnership, gentle glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'companion organisms; moss cloaks; living partnership; gentle glow',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-178',
+    name: 'Botanipunk',
+    displayName: 'Botanipunk',
+    styleAnchors: ['Botanipunk', 'plant technology punk', 'grown tools'],
+    category: '4. Bio, Myco & Body Punks',
+    domain: 'plant technology punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Botanipunk: technology grown from plants, with gourd lanterns, vine cables, leaf solar sails, carnivorous-plant security and seed-pod vehicles.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; replace its machines and tools with grown plant equivalents.",
+      color_and_tone: 'Lush leaf greens, gourd oranges and flower pinks with glowing sap gold.',
+      lighting_and_shadow:
+        'Sunlight through translucent leaves and glowing gourd lanterns at dusk.',
+      texture_and_material: 'Woody vines, gourds, leaves, seed pods, sap and bark.',
+      camera_and_composition: 'Botanical scenes where every object turns out to be a plant.',
+      atmosphere_and_mood:
+        'Lush and playful, a civilization that grows its tools instead of building them.',
+      rendering_and_quality: 'Botanical illustration style with precise, believable plant anatomy.',
+      creative_brief:
+        "Botanipunk: technology grown from plants, with gourd lanterns, vine cables, leaf solar sails, carnivorous-plant security and seed-pod vehicles. Carry it through grown tools, vine cables, gourd lanterns, seed-pod vehicles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'grown tools; vine cables; gourd lanterns; seed-pod vehicles',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-179',
+    name: 'Mothpunk',
+    displayName: 'Mothpunk',
+    styleAnchors: ['Mothpunk', 'moth and nocturnal punk', 'moth-wing cloaks'],
+    category: '4. Bio, Myco & Body Punks',
+    domain: 'moth and nocturnal punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Mothpunk: a nocturnal culture drawn to light, with dusty moth-wing cloaks, lamp cults, night markets and delicate feathered antennae.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; make it nocturnal and moth-like, drawn to lamps, with powdery wings and soft fur.",
+      color_and_tone: 'Dusty greys, browns and pale lunar greens with warm lamp gold.',
+      lighting_and_shadow: 'Single lamps in darkness with moths swirling in halos around them.',
+      texture_and_material: 'Powdery wing scales, soft fur, feathered antennae and paper lanterns.',
+      camera_and_composition: 'Figures circling light sources in otherwise dark scenes.',
+      atmosphere_and_mood: 'Soft and obsessive, beauty that cannot stay away from the flame.',
+      rendering_and_quality:
+        'Delicate low-key illustration with powdery textures and glowing lamps.',
+      creative_brief:
+        "Mothpunk: a nocturnal culture drawn to light, with dusty moth-wing cloaks, lamp cults, night markets and delicate feathered antennae. Carry it through moth-wing cloaks, lamp halos, feathered antennae, nocturnal glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'moth-wing cloaks; lamp halos; feathered antennae; nocturnal glow',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-180',
+    name: 'Termitepunk',
+    displayName: 'Termitepunk',
+    styleAnchors: ['Termitepunk', 'termite mound architecture punk', 'earthen spires'],
+    category: '4. Bio, Myco & Body Punks',
+    domain: 'termite mound architecture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Termitepunk: cities built like termite mounds, with towering earthen spires, natural ventilation shafts, tunnels and colony-scale cooperation.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; house it in towering earthen mounds full of tunnels and ventilation chimneys.",
+      color_and_tone:
+        'Red earth, ochre clay and dusty savanna gold with cool shadowed tunnel browns.',
+      lighting_and_shadow:
+        'Hot savanna sun on mound exteriors and cool shafts of light inside tunnels.',
+      texture_and_material: 'Packed red earth, tunnel walls, ventilation holes and dry grass.',
+      camera_and_composition: 'Towering mound skylines and cutaway views of tunnel networks.',
+      atmosphere_and_mood:
+        'Industrious and ancient, a society as patient and cooperative as a colony.',
+      rendering_and_quality:
+        'Earthy detailed illustration with clearly readable tunnel architecture.',
+      creative_brief:
+        "Termitepunk: cities built like termite mounds, with towering earthen spires, natural ventilation shafts, tunnels and colony-scale cooperation. Carry it through earthen spires, ventilation shafts, tunnel networks, red earth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'earthen spires; ventilation shafts; tunnel networks; red earth',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-181',
+    name: 'Lichenpunk',
+    displayName: 'Lichenpunk',
+    styleAnchors: ['Lichenpunk', 'lichen and slow growth punk', 'lichen crusts'],
+    category: '4. Bio, Myco & Body Punks',
+    domain: 'lichen and slow growth punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Lichenpunk: a slow, patient culture living with lichen, where time is measured in crusts on stone and buildings are dated by their colors.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; crust it with colorful lichen that shows how long everything has been there.",
+      color_and_tone: 'Orange, sulfur yellow and grey-green lichen rosettes over cold stone greys.',
+      lighting_and_shadow: 'Soft overcast northern light that brings out every crust and rosette.',
+      texture_and_material: 'Lichen crusts, old stone, weathered bone and wind-worn wood.',
+      camera_and_composition:
+        'Close views of lichen patterns and wide views of ancient crusted places.',
+      atmosphere_and_mood: 'Patient and timeless, a world where nothing is ever in a hurry.',
+      rendering_and_quality: 'Finely textured illustration with rich lichen color patterns.',
+      creative_brief:
+        "Lichenpunk: a slow, patient culture living with lichen, where time is measured in crusts on stone and buildings are dated by their colors. Carry it through lichen crusts, ancient stone, slow time, colorful rosettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'lichen crusts; ancient stone; slow time; colorful rosettes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-182',
+    name: 'Brewpunk',
+    displayName: 'Brewpunk',
+    styleAnchors: ['Brewpunk', 'fermentation culture punk', 'bubbling vats'],
+    category: '4. Bio, Myco & Body Punks',
+    domain: 'fermentation culture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Brewpunk: fermentation as technology and religion, with bubbling vats, living yeast cultures, copper stills and cellar laboratories.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; surround it with fermenting vats, bubbling jars, copper pipes and living cultures.",
+      color_and_tone: 'Amber, honey gold and copper with cloudy cream foam and cellar shadow.',
+      lighting_and_shadow: 'Warm lamps glowing through amber liquids and bubbles in dark cellars.',
+      texture_and_material: 'Copper stills, oak barrels, glass carboys, foam, steam and wet stone.',
+      camera_and_composition: 'Cellar interiors packed with vats and glowing glass vessels.',
+      atmosphere_and_mood: 'Bubbling and convivial, a slow alchemy of patience, sugar and time.',
+      rendering_and_quality: 'Warm glowing illustration with rich liquid and copper detail.',
+      creative_brief:
+        "Brewpunk: fermentation as technology and religion, with bubbling vats, living yeast cultures, copper stills and cellar laboratories. Carry it through bubbling vats, copper stills, glowing amber jars, living cultures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'bubbling vats; copper stills; glowing amber jars; living cultures',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-183',
+    name: 'Bioprintpunk',
+    displayName: 'Bioprintpunk',
+    styleAnchors: ['Bioprintpunk', 'bioprinting workshop punk', 'layered printing'],
+    category: '4. Bio, Myco & Body Punks',
+    domain: 'bioprinting workshop punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bioprintpunk: backstreet workshops that print living things, from leaves and flowers to new skin and strange pets, layer by layer from glowing gel.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; show living material being printed layer by layer by nozzles over translucent gel.",
+      color_and_tone: 'Clinical white and cool blue with translucent pink and green living gels.',
+      lighting_and_shadow: 'Soft lab light and glowing gel beds lit from underneath.',
+      texture_and_material:
+        'Translucent gel layers, printer nozzles, glass trays and delicate tissue lattices.',
+      camera_and_composition:
+        'Close views of printer heads mid-print and workshop views of many printers.',
+      atmosphere_and_mood: 'Curious and slightly uneasy, creation made cheap and handmade.',
+      rendering_and_quality: 'Clean luminous illustration with delicate layered printing detail.',
+      creative_brief:
+        "Bioprintpunk: backstreet workshops that print living things, from leaves and flowers to new skin and strange pets, layer by layer from glowing gel. Carry it through layered printing, translucent gel, printer nozzles, living lattices. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'layered printing; translucent gel; printer nozzles; living lattices',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-184',
+    name: 'Regenpunk',
+    displayName: 'Regenpunk',
+    styleAnchors: ['Regenpunk', 'regeneration biology punk', 'regrowth'],
+    category: '4. Bio, Myco & Body Punks',
+    domain: 'regeneration biology punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Regenpunk: a culture built on regeneration, where limbs regrow like salamanders, ruins heal like tissue and scars bloom into flowers.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; show something broken healing and regrowing in real time, without gore.",
+      color_and_tone: 'Soft pink, living green and pearl white over weathered and broken greys.',
+      lighting_and_shadow: 'Gentle glow from healing areas and soft morning light.',
+      texture_and_material:
+        'Budding growth, soft new tissue drawn like petals, cracked stone and moss.',
+      camera_and_composition: 'Close views of healing surfaces and wide views of ruins regrowing.',
+      atmosphere_and_mood: 'Hopeful and uncanny, damage that simply refuses to stay damage.',
+      rendering_and_quality: 'Soft organic illustration with delicate glowing growth detail.',
+      creative_brief:
+        "Regenpunk: a culture built on regeneration, where limbs regrow like salamanders, ruins heal like tissue and scars bloom into flowers. Carry it through regrowth, healing ruins, blooming scars, salamander logic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'regrowth; healing ruins; blooming scars; salamander logic',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-185',
+    name: 'Silkspinnerpunk',
+    displayName: 'Silkspinnerpunk',
+    styleAnchors: ['Silkspinnerpunk', 'spider silk technology punk', 'silk bridges'],
+    category: '4. Bio, Myco & Body Punks',
+    domain: 'spider silk technology punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Silkspinnerpunk: a civilization woven from spider silk, with silk bridges, glistening dew-lit webs, silk sails and spinner guilds farming giant spiders.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; weave it into glistening silk webs, cables and fabrics spun by spiders.",
+      color_and_tone: 'Silver-white silk glinting against forest greens and dawn gold.',
+      lighting_and_shadow: 'Backlit dawn light making silk threads and dew drops glow.',
+      texture_and_material:
+        'Fine silk threads, dew beads, woven silk cloth and spider-spun cables.',
+      camera_and_composition: 'Webs spanning huge gaps with tiny figures crossing them.',
+      atmosphere_and_mood: 'Delicate and daring, strength hidden in threads finer than hair.',
+      rendering_and_quality: 'Luminous fine-line illustration with glinting silk and dew.',
+      creative_brief:
+        "Silkspinnerpunk: a civilization woven from spider silk, with silk bridges, glistening dew-lit webs, silk sails and spinner guilds farming giant spiders. Carry it through silk bridges, dew-lit webs, spinner guilds, glinting threads. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'silk bridges; dew-lit webs; spinner guilds; glinting threads',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-186',
+    name: 'Parasitepunk',
+    displayName: 'Parasitepunk',
+    styleAnchors: ['Parasitepunk', 'benign parasite punk', 'hitchhiker organisms'],
+    category: '4. Bio, Myco & Body Punks',
+    domain: 'benign parasite punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Parasitepunk: strange organisms that ride their hosts, from clever hitchhiker creatures to crowns of living growth, shown as eerie partnerships rather than horror.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; attach a strange hitchhiking organism to it that changes how it looks or behaves, without gore.",
+      color_and_tone:
+        'Pale skin and grey tones with sickly green, violet and orange organism accents.',
+      lighting_and_shadow: 'Dim light with the organisms glowing faintly in dark places.',
+      texture_and_material:
+        'Glossy tendrils, soft growths, crowns of fungus-like forms and pale fabric.',
+      camera_and_composition:
+        'Close portraits of host and passenger, and crowds where many carry organisms.',
+      atmosphere_and_mood:
+        'Eerie and fascinating, the unsettling question of who is really in control.',
+      rendering_and_quality: 'Detailed eerie illustration with glossy organic forms and restraint.',
+      creative_brief:
+        "Parasitepunk: strange organisms that ride their hosts, from clever hitchhiker creatures to crowns of living growth, shown as eerie partnerships rather than horror. Carry it through hitchhiker organisms, glowing growths, host partnerships, eerie calm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'hitchhiker organisms; glowing growths; host partnerships; eerie calm',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-187',
+    name: 'Cellpunk',
+    displayName: 'Cellpunk',
+    styleAnchors: ['Cellpunk', 'cellular scale punk', 'membrane cities'],
+    category: '4. Bio, Myco & Body Punks',
+    domain: 'cellular scale punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cellpunk: worlds shown at cellular scale, with membrane cities, organelle machinery and tiny travelers moving through living tissue landscapes.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; shrink it to cellular scale, among membranes, organelles and flowing plasma.",
+      color_and_tone: 'Translucent pinks, blues and greens like a stained microscope slide.',
+      lighting_and_shadow:
+        'Soft transmitted light as if seen through a microscope, glowing membranes.',
+      texture_and_material:
+        'Translucent membranes, floating organelles, vesicles and fluid currents.',
+      camera_and_composition:
+        'Round microscope-like fields and vast cell landscapes with tiny figures.',
+      atmosphere_and_mood: 'Wondrous and alien, an ocean of life hidden inside a single drop.',
+      rendering_and_quality:
+        'Luminous translucent illustration with fine, scientific-looking membrane and organelle detail.',
+      creative_brief:
+        "Cellpunk: worlds shown at cellular scale, with membrane cities, organelle machinery and tiny travelers moving through living tissue landscapes. Carry it through membrane cities, organelle machines, microscope glow, tiny travelers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'membrane cities; organelle machines; microscope glow; tiny travelers',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-188',
+    name: 'Venompunk',
+    displayName: 'Venompunk',
+    styleAnchors: ['Venompunk', 'venom and toxin craft punk', 'venomous creatures'],
+    category: '4. Bio, Myco & Body Punks',
+    domain: 'venom and toxin craft punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Venompunk: a culture of snake handlers, venom distillers and antidote alchemists, with glass fangs, milking tables and jewel-bright toxin vials.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; add venomous creatures, glass vials and careful handling gear around it.",
+      color_and_tone:
+        'Jewel greens, poison violet and amber vials against dark wood and black glass.',
+      lighting_and_shadow: 'Lamplight through colored vials casting jewel-toned glows on skin.',
+      texture_and_material: 'Snake scales, glass vials, leather gloves, brass tongs and dark wood.',
+      camera_and_composition:
+        'Close views of careful hands with creatures and shelves of glowing vials.',
+      atmosphere_and_mood: 'Tense and elegant, danger handled with total calm and precision.',
+      rendering_and_quality: 'Rich jewel-toned illustration with precise scale and glass detail.',
+      creative_brief:
+        "Venompunk: a culture of snake handlers, venom distillers and antidote alchemists, with glass fangs, milking tables and jewel-bright toxin vials. Carry it through venomous creatures, jewel vials, handling tools, lamplight glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'venomous creatures; jewel vials; handling tools; lamplight glow',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-189',
+    name: 'Glowpunk',
+    displayName: 'Glowpunk',
+    styleAnchors: ['Glowpunk', 'bioluminescence punk', 'living light'],
+    category: '4. Bio, Myco & Body Punks',
+    domain: 'bioluminescence punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Glowpunk: a world lit by living light, with bioluminescent streetlights, glowing tattoos of algae, jellyfish lanterns and mushroom-lit homes.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; light it only with living bioluminescence from creatures, plants and fungi.",
+      color_and_tone: 'Deep night blues and blacks with cyan, green and magenta living glows.',
+      lighting_and_shadow:
+        'Soft bioluminescent glows as the only light, pools of color in darkness.',
+      texture_and_material:
+        'Glowing jellyfish, fungi, algae, fireflies and glass jars of living light.',
+      camera_and_composition:
+        'Dark scenes where glowing organisms outline the shapes of everything.',
+      atmosphere_and_mood: 'Magical and quiet, a night that is never truly dark.',
+      rendering_and_quality: 'Luminous low-key illustration with soft living light glows.',
+      creative_brief:
+        "Glowpunk: a world lit by living light, with bioluminescent streetlights, glowing tattoos of algae, jellyfish lanterns and mushroom-lit homes. Carry it through living light, jellyfish lanterns, glowing fungi, dark night. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'living light; jellyfish lanterns; glowing fungi; dark night',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-190',
+    name: 'Inkbodypunk',
+    displayName: 'Inkbodypunk',
+    styleAnchors: ['Inkbodypunk', 'living tattoo punk', 'moving tattoos'],
+    category: '4. Bio, Myco & Body Punks',
+    domain: 'living tattoo punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Inkbodypunk: living tattoos that move across the skin, crawl off arms, fight, dance and tell stories in bold ink.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; cover the skin of its figures with bold tattoos that move, escape or come alive.",
+      color_and_tone:
+        'Bold black ink and traditional tattoo reds, greens and yellows on warm skin tones.',
+      lighting_and_shadow:
+        'Warm parlor lamps and soft light on skin, ink shapes casting small shadows as they lift off.',
+      texture_and_material: 'Skin, bold ink linework, needles and parlor leather chairs.',
+      camera_and_composition: 'Close views of tattooed skin with designs mid-movement.',
+      atmosphere_and_mood: 'Rebellious and magical, stories that refuse to stay still on the body.',
+      rendering_and_quality: 'Bold illustration with crisp tattoo linework and warm skin.',
+      creative_brief:
+        "Inkbodypunk: living tattoos that move across the skin, crawl off arms, fight, dance and tell stories in bold ink. Carry it through moving tattoos, ink creatures escaping, parlor light, bold lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'moving tattoos; ink creatures escaping; parlor light; bold lines',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-191',
+    name: 'Prosthetic Craftpunk',
+    displayName: 'Prosthetic Craftpunk',
+    styleAnchors: ['Prosthetic Craftpunk', 'handmade prosthetics punk', 'carved wooden limbs'],
+    category: '4. Bio, Myco & Body Punks',
+    domain: 'handmade prosthetics punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Prosthetic craftpunk: artisans building beautiful handmade limbs from carved wood, brass, porcelain and leather, each one a personal work of art.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; give its figures handcrafted prosthetic limbs of wood, brass or porcelain with visible joinery.",
+      color_and_tone: 'Warm wood browns, brass gold and porcelain white with deep leather reds.',
+      lighting_and_shadow: 'Workshop window light glinting on brass joints and polished wood.',
+      texture_and_material:
+        'Carved wood, brass hinges, porcelain plates, leather straps and fine tools.',
+      camera_and_composition: 'Workshop scenes and portraits with the crafted limb as the focus.',
+      atmosphere_and_mood: 'Proud and tender, bodies rebuilt as works of art rather than repairs.',
+      rendering_and_quality:
+        'Richly detailed craft illustration with precise joinery and polished wood and brass surfaces.',
+      creative_brief:
+        "Prosthetic craftpunk: artisans building beautiful handmade limbs from carved wood, brass, porcelain and leather, each one a personal work of art. Carry it through carved wooden limbs, brass hinges, porcelain plates, artisan workshop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'carved wooden limbs; brass hinges; porcelain plates; artisan workshop',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

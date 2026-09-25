@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-175
+packId: pack_15
+name: Slimepunk
+styleAnchors:
+  - Slimepunk
+  - slime mold network punk
+  - yellow slime networks
+displayName: Slimepunk
+category: 4. Bio, Myco & Body Punks
+domain: slime mold network punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - bio-myco-and-body-punks
+  - slimepunk
+  - punk
+  - bio
+visualDna:
+  aesthetic: 'Slimepunk: slime molds as living computers and urban planners, with yellow veined networks spreading across maps, streets and machines.'
+  subject_treatment: Keep the prompt's subject and setting; let branching yellow slime-mold networks spread across its surfaces, connecting points like living maps.
+  color_and_tone: Vivid slime yellow and orange veins against dark soil, grey concrete and pale petri glass.
+  lighting_and_shadow: Soft diffuse light with a glossy wet sheen on every slime vein and pulse.
+  texture_and_material: Wet branching veins, pulsating fans, petri glass, oat flakes and damp stone.
+  camera_and_composition: Top-down map-like views of networks and close macro views of pulsing fans.
+  atmosphere_and_mood: Uncanny and clever, a brainless organism that plans better than any engineer.
+  rendering_and_quality: Glossy organic illustration with intricate branching network detail.
+  creative_brief: "Slimepunk: slime molds as living computers and urban planners, with yellow veined networks spreading across maps, streets and machines. Carry it through yellow slime networks, map-like branching, wet sheen, pulsing fans. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: yellow slime networks; map-like branching; wet sheen; pulsing fans
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - gore
+  - graphic wounds
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: bio-myco-and-body-punks
+  categoryName: 4. Bio, Myco & Body Punks
+  tags:
+    - curation-v2
+    - bio-myco-and-body-punks
+    - slimepunk
+    - punk
+    - bio
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: slime mold network punk

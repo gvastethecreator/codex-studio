@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-188
+packId: pack_15
+name: Venompunk
+styleAnchors:
+  - Venompunk
+  - venom and toxin craft punk
+  - venomous creatures
+displayName: Venompunk
+category: 4. Bio, Myco & Body Punks
+domain: venom and toxin craft punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - bio-myco-and-body-punks
+  - venompunk
+  - punk
+  - bio
+visualDna:
+  aesthetic: 'Venompunk: a culture of snake handlers, venom distillers and antidote alchemists, with glass fangs, milking tables and jewel-bright toxin vials.'
+  subject_treatment: Keep the prompt's subject and setting; add venomous creatures, glass vials and careful handling gear around it.
+  color_and_tone: Jewel greens, poison violet and amber vials against dark wood and black glass.
+  lighting_and_shadow: Lamplight through colored vials casting jewel-toned glows on skin.
+  texture_and_material: Snake scales, glass vials, leather gloves, brass tongs and dark wood.
+  camera_and_composition: Close views of careful hands with creatures and shelves of glowing vials.
+  atmosphere_and_mood: Tense and elegant, danger handled with total calm and precision.
+  rendering_and_quality: Rich jewel-toned illustration with precise scale and glass detail.
+  creative_brief: "Venompunk: a culture of snake handlers, venom distillers and antidote alchemists, with glass fangs, milking tables and jewel-bright toxin vials. Carry it through venomous creatures, jewel vials, handling tools, lamplight glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: venomous creatures; jewel vials; handling tools; lamplight glow
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - gore
+  - graphic wounds
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: bio-myco-and-body-punks
+  categoryName: 4. Bio, Myco & Body Punks
+  tags:
+    - curation-v2
+    - bio-myco-and-body-punks
+    - venompunk
+    - punk
+    - bio
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: venom and toxin craft punk

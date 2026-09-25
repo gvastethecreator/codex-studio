@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-190
+packId: pack_15
+name: Inkbodypunk
+styleAnchors:
+  - Inkbodypunk
+  - living tattoo punk
+  - moving tattoos
+displayName: Inkbodypunk
+category: 4. Bio, Myco & Body Punks
+domain: living tattoo punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - bio-myco-and-body-punks
+  - inkbody
+  - punk
+  - bio
+visualDna:
+  aesthetic: 'Inkbodypunk: living tattoos that move across the skin, crawl off arms, fight, dance and tell stories in bold ink.'
+  subject_treatment: Keep the prompt's subject and setting; cover the skin of its figures with bold tattoos that move, escape or come alive.
+  color_and_tone: Bold black ink and traditional tattoo reds, greens and yellows on warm skin tones.
+  lighting_and_shadow: Warm parlor lamps and soft light on skin, ink shapes casting small shadows as they lift off.
+  texture_and_material: Skin, bold ink linework, needles and parlor leather chairs.
+  camera_and_composition: Close views of tattooed skin with designs mid-movement.
+  atmosphere_and_mood: Rebellious and magical, stories that refuse to stay still on the body.
+  rendering_and_quality: Bold illustration with crisp tattoo linework and warm skin.
+  creative_brief: "Inkbodypunk: living tattoos that move across the skin, crawl off arms, fight, dance and tell stories in bold ink. Carry it through moving tattoos, ink creatures escaping, parlor light, bold lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: moving tattoos; ink creatures escaping; parlor light; bold lines
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - gore
+  - graphic wounds
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: bio-myco-and-body-punks
+  categoryName: 4. Bio, Myco & Body Punks
+  tags:
+    - curation-v2
+    - bio-myco-and-body-punks
+    - inkbody
+    - punk
+    - bio
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: living tattoo punk

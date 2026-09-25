@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-177
+packId: pack_15
+name: Symbiontpunk
+styleAnchors:
+  - Symbiontpunk
+  - symbiotic partnership punk
+  - companion organisms
+displayName: Symbiontpunk
+category: 4. Bio, Myco & Body Punks
+domain: symbiotic partnership punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - bio-myco-and-body-punks
+  - symbiont
+  - punk
+  - bio
+visualDna:
+  aesthetic: 'Symbiontpunk: humans living in partnership with other organisms, with moss coats, fish-cleaned wounds, bird-helpers and plant companions woven into daily life.'
+  subject_treatment: Keep the prompt's subject and setting; pair it with a living companion organism that helps it in a visible, symbiotic way.
+  color_and_tone: Soft greens and earthy browns with bright accents from companion creatures.
+  lighting_and_shadow: Gentle natural daylight and small bioluminescent glows at night.
+  texture_and_material: Moss cloaks, living vines, feathers, scales and woven natural fibers.
+  camera_and_composition: Close pairings of person and companion organism, with their bond central.
+  atmosphere_and_mood: Gentle and strange, lives completely braided together with other species.
+  rendering_and_quality: Delicate naturalist illustration with careful creature and plant detail.
+  creative_brief: "Symbiontpunk: humans living in partnership with other organisms, with moss coats, fish-cleaned wounds, bird-helpers and plant companions woven into daily life. Carry it through companion organisms, moss cloaks, living partnership, gentle glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: companion organisms; moss cloaks; living partnership; gentle glow
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - gore
+  - graphic wounds
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: bio-myco-and-body-punks
+  categoryName: 4. Bio, Myco & Body Punks
+  tags:
+    - curation-v2
+    - bio-myco-and-body-punks
+    - symbiont
+    - punk
+    - bio
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: symbiotic partnership punk
