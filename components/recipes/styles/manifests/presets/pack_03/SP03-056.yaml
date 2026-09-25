@@ -3,7 +3,7 @@ id: SP03-056
 packId: pack_03
 name: Scientific Visualization
 category: 7. Environment And Worldbuilding
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,85 +12,45 @@ tags:
   - 3d-and-cgi-rendering
   - environment-and-worldbuilding
 visualDna:
-  aesthetic: >-
-    Scientific Visualization acts as a transferable CGI-style router: start from Scientific
-    Visualization simulation clarity, false-color data, clean educational render, measured
-    scientific hierarchy and environment and worldbuilding CGI system built from spatial design,
-    modular assets, atmospheric scale, simulation logic, scan fidelity, and explorable depth, then
-    apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through adapt the requested subject through simulation clarity,
-    false-color data, clean educational render, measured scientific hierarchy while preserving its
-    identity; preserve the prompt subject while embedding it in the preset's world-scale CGI logic;
-    environmental systems, scan detail, map elevation, VFX volume, or scientific structure should
-    appear only when named by the preset, keeping the requested identity, silhouette, pose, object
-    function, or environment legible.
-  color_and_tone: >-
-    Build color with palette and exposure choices that support simulation clarity, false-color data,
-    clean educational render, measured scientific hierarchy; use color through atmospheric grading,
-    neon bloom, scientific false color, scan albedo, bioluminescent glow, map coding, or pyro
-    temperature, with deliberate value grouping, exposure control, and medium-specific limits rather
-    than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through light behavior that reveals simulation clarity, false-color data, clean
-    educational render, measured scientific hierarchy; shape light with atmospheric depth, emissive
-    ecology, VR bake, modular level lighting, smoke self-light, or scan-matched illumination, so
-    value structure supports the renderer and does not overwrite the requested content.
-  texture_and_material: >-
-    Render simulation clarity, false-color data, clean educational render, measured scientific
-    hierarchy; surface detail should show modular kits, photogrammetry scan grain, terrain relief,
-    vegetation glow, pyro volume, map elevation, or simulation particles, keeping material scale
-    coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through scale rhythm, spacing, and composition rules shaped by simulation
-    clarity, false-color data, clean educational render, measured scientific hierarchy; compose
-    through spatial readability, player-scale cues, isometric elevation, explorable layers,
-    environment silhouettes, or simulation flow, with scale, spacing, edge rhythm, and visual
-    hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood mood carried by simulation clarity, false-color data, clean educational render,
-    measured scientific hierarchy; derive mood from immersion, navigability, alien wonder, technical
-    explanation, decay, abstract spatial rhythm, or procedural spectacle, letting the renderer alter
-    interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with finished Scientific Visualization CGI with simulation clarity, false-color data,
-    clean educational render, measured scientific hierarchy and controlled detail; finish with
-    coherent world scale, readable depth, optimized detail hierarchy, and no empty wallpaper or
-    generic vista-only render, clean denoised surfaces where appropriate, and enough shader evidence
-    to make the CGI mode recognizable.
-  key_features: >-
-    Scientific Visualization simulation clarity, false-color data, clean educational render,
-    measured scientific hierarchy; palette and exposure choices that support simulation clarity,
-    false-color data, clean educational render, measured scientific hierarchy; scale rhythm,
-    spacing, and composition rules shaped by simulation clarity, false-color data, clean educational
-    render, measured scientific hierarchy
-  creative_brief: >-
-    Apply Scientific Visualization as a CGI/render preset over prompt X: preserve the user's
-    requested subject, then route modeling, shader response, lighting, material scale, composition,
-    mood, and final render craft through Scientific Visualization simulation clarity, false-color
-    data, clean educational render, measured scientific hierarchy without requiring the card image's
-    original subject.
+  aesthetic: 'Scientific simulation visualization: the scene shown as grey context geometry with a measured field drawn over it as streamlines, isosurfaces and arrow glyphs.'
+  subject_treatment: "Portable environment render: keep the prompt's subject and location; they become the geometry of a scientific data visualization with the measured field drawn around them."
+  color_and_tone: Neutral light-grey geometry, one perceptual colormap (viridis or blue-to-red diverging) carrying the data, dark or white clean background.
+  lighting_and_shadow: Soft even studio light with ambient occlusion so shapes read; the data layers are self-lit and never shaded dark.
+  texture_and_material: Matte untextured context surfaces, thin tube streamlines, semi-transparent isosurface shells and small cone glyphs pointing along flow.
+  camera_and_composition: Keep the requested view, pulled back just enough that the whole field and its source read at once.
+  atmosphere_and_mood: Calm, exact and explanatory, beauty coming from measured order.
+  rendering_and_quality: Clean anti-aliased render with no photographic texture; the colormap is continuous and never rainbow-banded.
+  key_features: streamline tubes; translucent isosurfaces; cone arrow glyphs; single perceptual colormap; grey matte context geometry
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scientific Visualization as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
-  - fantasy
-  - magic
+  - franchise likeness
+  - recognizable game or film world
+  - readable text
+  - readable signage
+  - logo
+  - HUD or UI overlay
+  - legend text
+  - axis numbers
+  - rainbow jet colormap
   - wrong medium
   - flat 2d paintover
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - empty wallpaper
   - generic vista-only render
   - scale-less space
   - unoptimized clutter
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-056.webp
 attributes:
-  negativePrompt: >-
-    fantasy, magic, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
-    watermark, readable text, signature, empty wallpaper, generic vista-only render, scale-less
-    space, unoptimized clutter
+  negativePrompt: franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, legend text, axis numbers, rainbow jet colormap, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, empty wallpaper, generic vista-only render, scale-less space, unoptimized clutter, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

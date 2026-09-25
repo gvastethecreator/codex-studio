@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP03-133
+packId: pack_03
+name: Modular Dungeon Kit Render
+styleAnchors:
+  - Modular Dungeon Kit Render
+  - game level environment art
+  - snap-grid stone kit pieces
+displayName: Modular Dungeon Kit Render
+category: 7. Environment And Worldbuilding
+domain: game level environment art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - environment-and-worldbuilding
+  - dungeon-environment
+  - modular-kit
+  - level-art
+visualDna:
+  aesthetic: 'Modular dungeon environment render: corridors and halls assembled from repeating stone wall, arch, pillar and floor kit pieces on a snap grid.'
+  subject_treatment: "Environment direction (retained on purpose): this preset supplies a dark medieval dungeon assembled from snap-grid stone kit pieces, arches and torch sconces; the prompt's subject, action and camera stay and are placed inside that world instead of being replaced by a stock scene."
+  color_and_tone: Cold grey-green stone in deep shadow, warm amber torch pools, rare accents of rusted iron and faded red cloth.
+  lighting_and_shadow: Wall-mounted torches every few modules each throw a warm pool with hard falloff; darkness between them is near black.
+  texture_and_material: Trim-sheet stone blocks with beveled edges, damp moss in seams, iron grates, rope and dripping water decals.
+  camera_and_composition: Keep the requested camera; kit repetition creates a rhythm of arches receding into darkness.
+  atmosphere_and_mood: Oppressive and cold, every archway promising something waiting.
+  rendering_and_quality: Game-engine level art with baked GI, light dust in torch beams and visible but tasteful module repetition.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Modular Dungeon Kit Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: snap-grid stone kit pieces; repeating arches; torch pools with hard falloff; trim-sheet bevels; moss in seams
+avoidRules:
+  - franchise likeness
+  - recognizable game or film world
+  - readable text
+  - readable signage
+  - logo
+  - HUD or UI overlay
+  - bright cheerful dungeon
+  - monster crowd
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, bright cheerful dungeon, monster crowd, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: environment-and-worldbuilding
+  categoryName: 7. Environment And Worldbuilding
+  tags:
+    - 3d-and-cgi-rendering
+    - environment-and-worldbuilding
+    - dungeon-environment
+    - modular-kit
+    - level-art
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: game level environment art

@@ -3,7 +3,7 @@ id: SP03-055
 packId: pack_03
 name: Virtual Reality Environment
 category: 7. Environment And Worldbuilding
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,52 +12,27 @@ tags:
   - 3d-and-cgi-rendering
   - environment-and-worldbuilding
 visualDna:
-  aesthetic: >-
-    Virtual Reality Environment acts as a transferable CGI-style router: start from Immersive VR
-    presence, Player scale, 180 degree depth and environment and worldbuilding CGI system built from
-    spatial design, modular assets, atmospheric scale, simulation logic, scan fidelity, and
-    explorable depth, then apply the 3D/render behavior to prompt X instead of recreating a fixed
-    demo image.
-  subject_treatment: >-
-    Transform any prompt subject through 360 degree feel; preserve the prompt subject while
-    embedding it in the preset's world-scale CGI logic; environmental systems, scan detail, map
-    elevation, VFX volume, or scientific structure should appear only when named by the preset,
-    keeping the requested identity, silhouette, pose, object function, or environment legible.
-  color_and_tone: >-
-    Build color with Vibrant; use color through atmospheric grading, neon bloom, scientific false
-    color, scan albedo, bioluminescent glow, map coding, or pyro temperature, with deliberate value
-    grouping, exposure control, and medium-specific limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Baked; shape light with atmospheric depth, emissive ecology, VR bake,
-    modular level lighting, smoke self-light, or scan-matched illumination, so value structure
-    supports the renderer and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Optimized, real time ready; surface detail should show modular kits, photogrammetry scan
-    grain, terrain relief, vegetation glow, pyro volume, map elevation, or simulation particles,
-    keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Wide FOV; compose through spatial readability, player-scale cues,
-    isometric elevation, explorable layers, environment silhouettes, or simulation flow, with scale,
-    spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Presence, digital, embodied experience; derive mood from immersion, navigability,
-    alien wonder, technical explanation, decay, abstract spatial rhythm, or procedural spectacle,
-    letting the renderer alter interpretation without demanding a specific story, location, or
-    character.
-  rendering_and_quality: >-
-    Finish with Oculus headset ready, immersive VR presence; finish with coherent world scale,
-    readable depth, optimized detail hierarchy, and no empty wallpaper or generic vista-only render,
-    clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode
-    recognizable.
-  key_features: >-
-    Immersive VR presence; Player scale, 180 degree depth; Vibrant; Optimized, real time ready; Wide
-    FOV
-  creative_brief: >-
-    Apply Virtual Reality Environment as a CGI/render preset over prompt X: preserve the user's
-    requested subject, then route modeling, shader response, lighting, material scale, composition,
-    mood, and final render craft through Immersive VR presence, Player scale, 180 degree depth,
-    Optimized, real time ready without requiring the card image's original subject.
+  aesthetic: 'Room-scale VR environment render: the scene built as an optimized real-time level seen from standing eye height, with baked lighting and everything sharp for stereo viewing.'
+  subject_treatment: "Portable environment render: keep the prompt's subject, action, location and camera; only how that environment is built, simulated and rendered changes, never where it is."
+  color_and_tone: Bright, clean, slightly saturated colors with lifted shadows so nothing collapses to black inside a headset.
+  lighting_and_shadow: Baked lightmaps with soft precomputed shadows and light probes; no dynamic flicker, no heavy volumetrics.
+  texture_and_material: Simplified geometry with clean bevels, crisp mid-resolution textures, large readable surfaces and props sized for a hand to grab.
+  camera_and_composition: Keep the requested location seen at about 1.6 m eye height with a wide 100–110° field of view; near-field objects within arm reach create presence.
+  atmosphere_and_mood: Embodied and inviting, a space you feel you could step into and touch.
+  rendering_and_quality: No depth of field, no motion blur and no film grain; stable, evenly sharp real-time render ready for stereo.
+  key_features: standing eye height; wide field of view; baked lightmaps; props within arm reach; no depth of field
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Virtual Reality Environment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise likeness
+  - recognizable game or film world
+  - readable text
+  - readable signage
+  - logo
+  - HUD or UI overlay
+  - VR controllers
+  - headset visible
+  - teleport arc
+  - depth of field blur
   - 2d
   - flat
   - wrong medium
@@ -65,19 +40,20 @@ avoidRules:
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - empty wallpaper
   - generic vista-only render
   - scale-less space
   - unoptimized clutter
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-055.webp
 attributes:
-  negativePrompt: >-
-    2d, flat, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
-    watermark, readable text, signature, empty wallpaper, generic vista-only render, scale-less
-    space, unoptimized clutter
+  negativePrompt: franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, VR controllers, headset visible, teleport arc, depth of field blur, 2d, flat, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, empty wallpaper, generic vista-only render, scale-less space, unoptimized clutter, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

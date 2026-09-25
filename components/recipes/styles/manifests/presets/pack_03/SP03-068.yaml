@@ -3,7 +3,7 @@ id: SP03-068
 packId: pack_03
 name: 3D Scan (Photogrammetry)
 category: 7. Environment And Worldbuilding
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,52 +12,25 @@ tags:
   - 3d-and-cgi-rendering
   - environment-and-worldbuilding
 visualDna:
-  aesthetic: >-
-    3D Scan (Photogrammetry) acts as a transferable CGI-style router: start from Photogrammetry scan
-    realism, Photo realism, surface level scan detail and environment and worldbuilding CGI system
-    built from spatial design, modular assets, atmospheric scale, simulation logic, scan fidelity,
-    and explorable depth, then apply the 3D/render behavior to prompt X instead of recreating a
-    fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Realistic geometry; preserve the prompt subject while
-    embedding it in the preset's world-scale CGI logic; environmental systems, scan detail, map
-    elevation, VFX volume, or scientific structure should appear only when named by the preset,
-    keeping the requested identity, silhouette, pose, object function, or environment legible.
-  color_and_tone: >-
-    Build color with Photo texture; use color through atmospheric grading, neon bloom, scientific
-    false color, scan albedo, bioluminescent glow, map coding, or pyro temperature, with deliberate
-    value grouping, exposure control, and medium-specific limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Baked lighting (delit); shape light with atmospheric depth, emissive
-    ecology, VR bake, modular level lighting, smoke self-light, or scan-matched illumination, so
-    value structure supports the renderer and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Real world noise, photogrammetry texture; surface detail should show modular kits,
-    photogrammetry scan grain, terrain relief, vegetation glow, pyro volume, map elevation, or
-    simulation particles, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Mesh errors (optional); compose through spatial readability,
-    player-scale cues, isometric elevation, explorable layers, environment silhouettes, or
-    simulation flow, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Real, grounded, authentic capture; derive mood from immersion, navigability, alien
-    wonder, technical explanation, decay, abstract spatial rhythm, or procedural spectacle, letting
-    the renderer alter interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Quixel Megascans scan library realism; finish with coherent world scale, readable
-    depth, optimized detail hierarchy, and no empty wallpaper or generic vista-only render, clean
-    denoised surfaces where appropriate, and enough shader evidence to make the CGI mode
-    recognizable.
-  key_features: >-
-    Photogrammetry scan realism; Photo realism, surface level scan detail; Photo texture; Real world
-    noise, photogrammetry texture; Mesh errors (optional)
-  creative_brief: >-
-    Apply 3D Scan (Photogrammetry) as a CGI/render preset over prompt X: preserve the user's
-    requested subject, then route modeling, shader response, lighting, material scale, composition,
-    mood, and final render craft through Photogrammetry scan realism, Photo realism, surface level
-    scan detail, Real world noise, photogrammetry texture without requiring the card image's
-    original subject.
+  aesthetic: 'Photogrammetry scan render: the scene rebuilt from hundreds of photographs as a dense triangulated mesh with photo-projected texture and the flaws of a real capture.'
+  subject_treatment: "Portable environment render: keep the prompt's subject, action, location and camera; only how that environment is built, simulated and rendered changes, never where it is."
+  color_and_tone: Natural, slightly flat photo albedo with the capture-day light baked in; true-to-life stains, lichen and dirt color.
+  lighting_and_shadow: Soft neutral render light over delit textures, so baked-in shadows and new shading coexist faintly.
+  texture_and_material: Micro-detailed real surface texture, smeared or stretched texels in occluded undersides, small mesh holes and blobby thin parts.
+  camera_and_composition: Keep the requested location and view; scan edges fade to ragged mesh borders where coverage ends.
+  atmosphere_and_mood: Grounded and documentary, a real place frozen as data.
+  rendering_and_quality: Scan-library realism with honest artifacts; never a clean hand-modeled asset.
+  key_features: photo-projected texture; stretched texels in occlusion; ragged mesh border; blobby thin parts; baked capture light
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 3D Scan (Photogrammetry) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise likeness
+  - recognizable game or film world
+  - readable text
+  - readable signage
+  - logo
+  - HUD or UI overlay
+  - clean modeled edges
+  - library brand
   - perfect
   - modeled
   - wrong medium
@@ -65,19 +38,20 @@ avoidRules:
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - empty wallpaper
   - generic vista-only render
   - scale-less space
   - unoptimized clutter
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-068.webp
 attributes:
-  negativePrompt: >-
-    perfect, modeled, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
-    watermark, readable text, signature, empty wallpaper, generic vista-only render, scale-less
-    space, unoptimized clutter
+  negativePrompt: franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, clean modeled edges, library brand, perfect, modeled, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, empty wallpaper, generic vista-only render, scale-less space, unoptimized clutter, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

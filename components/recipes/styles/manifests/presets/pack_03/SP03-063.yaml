@@ -3,7 +3,7 @@ id: SP03-063
 packId: pack_03
 name: 3D Map
 category: 7. Environment And Worldbuilding
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,56 +12,26 @@ tags:
   - 3d-and-cgi-rendering
   - environment-and-worldbuilding
 visualDna:
-  aesthetic: >-
-    3D Map acts as a transferable CGI-style router: start from Isometric cartographic render, Grid,
-    elevation readability and environment and worldbuilding CGI system built from spatial design,
-    modular assets, atmospheric scale, simulation logic, scan fidelity, and explorable depth, then
-    apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Topography; preserve the prompt subject while embedding it
-    in the preset's world-scale CGI logic; environmental systems, scan detail, map elevation, VFX
-    volume, or scientific structure should appear only when named by the preset, keeping the
-    requested identity, silhouette, pose, object function, or environment legible.
-  color_and_tone: >-
-    Build color with Map colors, topographic contrast; use color through atmospheric grading, neon
-    bloom, scientific false color, scan albedo, bioluminescent glow, map coding, or pyro
-    temperature, with deliberate value grouping, exposure control, and medium-specific limits rather
-    than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Sunlight, terrain shadow casting; shape light with atmospheric depth,
-    emissive ecology, VR bake, modular level lighting, smoke self-light, or scan-matched
-    illumination, so value structure supports the renderer and does not overwrite the requested
-    content.
-  texture_and_material: >-
-    Render Low poly terrain, topographic layers; surface detail should show modular kits,
-    photogrammetry scan grain, terrain relief, vegetation glow, pyro volume, map elevation, or
-    simulation particles, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Production preview camera for 3D Map: readable hero scale, near
-    field/midground/support field depth, clean silhouette, and practical vertical crop; compose
-    through spatial readability, player-scale cues, isometric elevation, explorable layers,
-    environment silhouettes, or simulation flow, with scale, spacing, edge rhythm, and visual
-    hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Informative, toy, exploration inviting; derive mood from immersion, navigability,
-    alien wonder, technical explanation, decay, abstract spatial rhythm, or procedural spectacle,
-    letting the renderer alter interpretation without demanding a specific story, location, or
-    character.
-  rendering_and_quality: >-
-    Finish with Game map, cute, cartographic style; finish with coherent world scale, readable
-    depth, optimized detail hierarchy, and no empty wallpaper or generic vista-only render, clean
-    denoised surfaces where appropriate, and enough shader evidence to make the CGI mode
-    recognizable.
-  key_features: >-
-    Isometric cartographic render; Grid, elevation readability; Map colors, topographic contrast;
-    Low poly terrain, topographic layers; Production preview camera for 3D Map: readable hero scale,
-    near field/midground/support field depth, clean silhouette, and practical vertical crop
-  creative_brief: >-
-    Apply 3D Map as a CGI/render preset over prompt X: preserve the user's requested subject, then
-    route modeling, shader response, lighting, material scale, composition, mood, and final render
-    craft through Isometric cartographic render, Grid, elevation readability, Low poly terrain,
-    topographic layers without requiring the card image's original subject.
+  aesthetic: 'Isometric 3D relief map: the location sculpted as a tabletop terrain block with stepped contour terraces, a flat water plane and miniature landmarks.'
+  subject_treatment: "Profile: keep the prompt's location and its landmarks; this preset owns the elevated isometric relief-map view and tabletop scale, and nothing else about the request changes."
+  color_and_tone: Hypsometric tints from sea teal through meadow green and tan to white peaks; landmarks in warm clean accent colors.
+  lighting_and_shadow: One low sun from the upper left casting long terrain shadows that make elevation readable; soft ambient occlusion in valleys.
+  texture_and_material: Smooth matte terrain with visible contour steps, simplified clumped trees and small toy-like buildings; cut edges show layered strata.
+  camera_and_composition: Fixed isometric or 30° elevated orthographic view of a square or round map block floating on a plain background.
+  atmosphere_and_mood: Curious and inviting, a whole place small enough to hold.
+  rendering_and_quality: Clean stylized render with crisp contour edges and no fog, every region readable at a glance.
+  key_features: tabletop terrain block; stepped contour terraces; hypsometric tints; low sun relief shadows; cut strata edges
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 3D Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise likeness
+  - recognizable game or film world
+  - readable text
+  - readable signage
+  - logo
+  - HUD or UI overlay
+  - map labels
+  - compass text
+  - paper map texture
   - 2d map
   - paper
   - wrong medium
@@ -69,19 +39,20 @@ avoidRules:
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - empty wallpaper
   - generic vista-only render
   - scale-less space
   - unoptimized clutter
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-063.webp
 attributes:
-  negativePrompt: >-
-    2d map, paper, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
-    watermark, readable text, signature, empty wallpaper, generic vista-only render, scale-less
-    space, unoptimized clutter
+  negativePrompt: franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, map labels, compass text, paper map texture, 2d map, paper, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, empty wallpaper, generic vista-only render, scale-less space, unoptimized clutter, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

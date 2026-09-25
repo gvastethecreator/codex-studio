@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP03-132
+packId: pack_03
+name: Hydraulic Erosion Heightfield
+styleAnchors:
+  - Hydraulic Erosion Heightfield
+  - procedural terrain simulation
+  - dendritic erosion gullies
+displayName: Hydraulic Erosion Heightfield
+category: 7. Environment And Worldbuilding
+domain: procedural terrain simulation
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - environment-and-worldbuilding
+  - procedural-terrain
+  - erosion-simulation
+  - heightfield
+visualDna:
+  aesthetic: 'Procedural terrain render: land built from a heightfield run through hydraulic and thermal erosion, with branching gullies, talus slopes and sediment fans.'
+  subject_treatment: "Portable environment render: keep the prompt's subject, location and camera; the ground and landforms are rebuilt as a simulated eroded heightfield."
+  color_and_tone: 'Rock, sediment and vegetation colored by slope and flow masks: ochre bare cliffs, pale sediment in channels, green only on flat ground.'
+  lighting_and_shadow: Low raking sun that carves the fine erosion channels in sharp relief, with sky-blue fill in the shadowed gullies.
+  texture_and_material: Dendritic drainage patterns, layered strata ridges, scree at slope feet and smooth deposition fans where water slowed.
+  camera_and_composition: Keep the requested view; the erosion network runs downhill toward the subject or along the leading lines.
+  atmosphere_and_mood: Vast and ancient, land shaped by a million simulated years of rain.
+  rendering_and_quality: Dense displaced terrain with mask-driven materials and light haze; no tiling rock texture repeats.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hydraulic Erosion Heightfield as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: dendritic erosion gullies; sediment fans; slope-masked colors; raking relief light; strata ridges
+avoidRules:
+  - franchise likeness
+  - recognizable game or film world
+  - readable text
+  - readable signage
+  - logo
+  - HUD or UI overlay
+  - smooth noise hills
+  - tiling texture repeat
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, smooth noise hills, tiling texture repeat, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: environment-and-worldbuilding
+  categoryName: 7. Environment And Worldbuilding
+  tags:
+    - 3d-and-cgi-rendering
+    - environment-and-worldbuilding
+    - procedural-terrain
+    - erosion-simulation
+    - heightfield
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: procedural terrain simulation

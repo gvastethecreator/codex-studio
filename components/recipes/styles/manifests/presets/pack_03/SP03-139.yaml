@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP03-139
+packId: pack_03
+name: Particle Blizzard Simulation
+styleAnchors:
+  - Particle Blizzard Simulation
+  - weather particle simulation
+  - wind-driven particle sheets
+displayName: Particle Blizzard Simulation
+category: 7. Environment And Worldbuilding
+domain: weather particle simulation
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - environment-and-worldbuilding
+  - weather-vfx
+  - particle-simulation
+  - blizzard
+visualDna:
+  aesthetic: 'Particle blizzard simulation: millions of wind-driven snow particles streaming across the scene in layered sheets, with gust eddies and drifts building against obstacles.'
+  subject_treatment: "Portable environment render: keep the prompt's subject, location and camera; only a simulated blizzard of wind-driven snow particles is added over them."
+  color_and_tone: Blue-white snow, cold grey-blue shadows, near-white visibility falloff in the distance; any warm light becomes a haloed point.
+  lighting_and_shadow: Flat diffuse storm light with backlit snow sheets; point lights bloom into soft glowing halos in the particle volume.
+  texture_and_material: Motion-blurred streaks near camera, fine particles in the midground, snow crusting on windward faces and drifting in lee corners.
+  camera_and_composition: Keep the requested camera; visibility drops sharply with distance so the subject reads as a silhouette in white.
+  atmosphere_and_mood: Harsh and isolating, the wind louder than anything.
+  rendering_and_quality: Layered particle volume with depth-based density and motion blur; no painted snow overlay.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Particle Blizzard Simulation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: wind-driven particle sheets; motion-blurred near streaks; drifts on windward faces; haloed point lights; steep visibility falloff
+avoidRules:
+  - franchise likeness
+  - recognizable game or film world
+  - readable text
+  - readable signage
+  - logo
+  - HUD or UI overlay
+  - gentle snowfall
+  - christmas decoration
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, gentle snowfall, christmas decoration, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: environment-and-worldbuilding
+  categoryName: 7. Environment And Worldbuilding
+  tags:
+    - 3d-and-cgi-rendering
+    - environment-and-worldbuilding
+    - weather-vfx
+    - particle-simulation
+    - blizzard
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: weather particle simulation

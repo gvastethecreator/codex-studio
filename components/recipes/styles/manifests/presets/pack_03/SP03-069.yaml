@@ -3,7 +3,7 @@ id: SP03-069
 packId: pack_03
 name: VFX Simulation (Fire/Smoke)
 category: 7. Environment And Worldbuilding
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,53 +12,25 @@ tags:
   - 3d-and-cgi-rendering
   - environment-and-worldbuilding
 visualDna:
-  aesthetic: >-
-    VFX Simulation (Fire/Smoke) acts as a transferable CGI-style router: start from Houdini pyro
-    simulation, Physics, turbulence control and environment and worldbuilding CGI system built from
-    spatial design, modular assets, atmospheric scale, simulation logic, scan fidelity, and
-    explorable depth, then apply the 3D/render behavior to prompt X instead of recreating a fixed
-    demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Turbulence; preserve the prompt subject while embedding it
-    in the preset's world-scale CGI logic; environmental systems, scan detail, map elevation, VFX
-    volume, or scientific structure should appear only when named by the preset, keeping the
-    requested identity, silhouette, pose, object function, or environment legible.
-  color_and_tone: >-
-    Build color with Orange, Black smoke; use color through atmospheric grading, neon bloom,
-    scientific false color, scan albedo, bioluminescent glow, map coding, or pyro temperature, with
-    deliberate value grouping, exposure control, and medium-specific limits rather than generic
-    color wash.
-  lighting_and_shadow: >-
-    Handle light through Self illuminated; shape light with atmospheric depth, emissive ecology, VR
-    bake, modular level lighting, smoke self-light, or scan-matched illumination, so value structure
-    supports the renderer and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Volume, pyroclastic density; surface detail should show modular kits, photogrammetry scan
-    grain, terrain relief, vegetation glow, pyro volume, map elevation, or simulation particles,
-    keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Expanding; compose through spatial readability, player-scale cues,
-    isometric elevation, explorable layers, environment silhouettes, or simulation flow, with scale,
-    spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Dangerous, dynamic, cinematic destruction; derive mood from immersion,
-    navigability, alien wonder, technical explanation, decay, abstract spatial rhythm, or procedural
-    spectacle, letting the renderer alter interpretation without demanding a specific story,
-    location, or character.
-  rendering_and_quality: >-
-    Finish with Houdini VFX simulation, pyro mastery; finish with coherent world scale, readable
-    depth, optimized detail hierarchy, and no empty wallpaper or generic vista-only render, clean
-    denoised surfaces where appropriate, and enough shader evidence to make the CGI mode
-    recognizable.
-  key_features: >-
-    Houdini pyro simulation; Physics, turbulence control; Orange, Black smoke; Volume, pyroclastic
-    density; Expanding
-  creative_brief: >-
-    Apply VFX Simulation (Fire/Smoke) as a CGI/render preset over prompt X: preserve the user's
-    requested subject, then route modeling, shader response, lighting, material scale, composition,
-    mood, and final render craft through Houdini pyro simulation, Physics, turbulence control,
-    Volume, pyroclastic density without requiring the card image's original subject.
+  aesthetic: 'Pyro volume simulation: fire and smoke rendered as a physically simulated volume, with rolling pyroclastic billows, turbulent vortices and incandescent cores.'
+  subject_treatment: "Portable environment render: keep the prompt's subject, action, location and camera; only how that environment is built, simulated and rendered changes, never where it is."
+  color_and_tone: Blackbody fire from white-yellow core through orange to deep red edges, feeding into charcoal and brown smoke.
+  lighting_and_shadow: The fire is the key light, lighting its own smoke from inside and throwing flickering orange onto nearby surfaces.
+  texture_and_material: Dense cauliflower billows, thin wispy tendrils at the edges, embers and sparks advected by the flow.
+  camera_and_composition: Keep the requested location and camera; the plume shows a clear direction of rise and expansion.
+  atmosphere_and_mood: Dangerous and immense, heat you can read in the motion.
+  rendering_and_quality: High-resolution volumetric render with self-shadowed smoke and temperature-driven emission; no painted or cartoon flames.
+  key_features: pyroclastic billows; blackbody color ramp; self-lit smoke; advected embers; clear rise direction
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies VFX Simulation (Fire/Smoke) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - franchise likeness
+  - recognizable game or film world
+  - readable text
+  - readable signage
+  - logo
+  - HUD or UI overlay
+  - cartoon flames
+  - burning greenhouse
   - solid
   - cartoon fire
   - wrong medium
@@ -66,19 +38,20 @@ avoidRules:
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - empty wallpaper
   - generic vista-only render
   - scale-less space
   - unoptimized clutter
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-069.webp
 attributes:
-  negativePrompt: >-
-    solid, cartoon fire, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture
-    chatter, watermark, readable text, signature, empty wallpaper, generic vista-only render,
-    scale-less space, unoptimized clutter
+  negativePrompt: franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, cartoon flames, burning greenhouse, solid, cartoon fire, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, empty wallpaper, generic vista-only render, scale-less space, unoptimized clutter, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

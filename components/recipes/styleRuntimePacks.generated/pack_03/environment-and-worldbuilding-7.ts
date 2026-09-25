@@ -8,28 +8,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Neon City (Cyberpunk)',
     category: '7. Environment And Worldbuilding',
     negativePrompt:
-      'daylight, sun, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, empty wallpaper, generic vista-only render, scale-less space, unoptimized clutter',
+      'franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, wet night market, umbrella crowd, readable neon words, daylight, sun, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, empty wallpaper, generic vista-only render, scale-less space, unoptimized clutter, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Neon City (Cyberpunk) acts as a transferable CGI-style router: start from Cyberpunk neon rain lookdev, Neon glow and environment and worldbuilding CGI system built from spatial design, modular assets, atmospheric scale, simulation logic, scan fidelity, and explorable depth, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Neon megacity environment render: towering stacked blocks lit by hundreds of emissive sign panels, sky bridges and haze layers receding into a lit night fog.',
       subject_treatment:
-        "Transform any prompt subject through Reflections; preserve the prompt subject while embedding it in the preset's world-scale CGI logic; environmental systems, scan detail, map elevation, VFX volume, or scientific structure should appear only when named by the preset, keeping the requested identity, silhouette, pose, object function, or environment legible.",
+        "Environment direction (retained on purpose): this preset supplies a vertical neon megacity at night: stacked residential blocks, sky bridges and glowing sign panels; the prompt's subject, action and camera stay and are placed inside that world instead of being replaced by a stock scene.",
       color_and_tone:
-        'Build color with Pink, Cyan, Purple; use color through atmospheric grading, neon bloom, scientific false color, scan albedo, bioluminescent glow, map coding, or pyro temperature, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Magenta, cyan and violet emissives against blue-black shadow; warm sodium accents at street level; highlights bloom, darks stay deep.',
       lighting_and_shadow:
-        'Handle light through Emissive signs; shape light with atmospheric depth, emissive ecology, VR bake, modular level lighting, smoke self-light, or scan-matched illumination, so value structure supports the renderer and does not overwrite the requested content.',
+        'Emissive sign panels are the only key lights, each spilling a colored pool; no sun or moon, and shadows fill with the neighbouring color.',
       texture_and_material:
-        'Render Wet reflective surfaces, emissive haze; surface detail should show modular kits, photogrammetry scan grain, terrain relief, vegetation glow, pyro volume, map elevation, or simulation particles, keeping material scale coherent and avoiding noisy filler texture.',
+        'Rain-slick metal and glass catching stretched neon reflections, grimy concrete, cable bundles and steam vents; sign panels show abstract glyph shapes, never letters.',
       camera_and_composition:
-        'Structure the image through Production preview camera for Neon urban fabric (Cyberpunk): readable hero scale, near field/midground/support field depth, clean silhouette, and practical vertical crop; compose through spatial readability, player-scale cues, isometric elevation, explorable layers, environment silhouettes, or simulation flow, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Dystopian, cool, future noir; derive mood from immersion, navigability, alien wonder, technical explanation, decay, abstract spatial rhythm, or procedural spectacle, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested camera; depth is built from three or more haze layers so the far blocks fade into glowing fog.',
+      atmosphere_and_mood: 'Crowded, humid and lonely at once, a city too tall to see the sky.',
       rendering_and_quality:
-        'Finish with Blade Runner rain soaked neon megacity; finish with coherent world scale, readable depth, optimized detail hierarchy, and no empty wallpaper or generic vista-only render, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Real-time volumetric fog with bloom and screen-space reflections; emissive panels read as light sources, not flat stickers.',
       key_features:
-        'Cyberpunk neon rain lookdev; Neon glow; Pink, Cyan, Purple; Wet reflective surfaces, emissive haze; Production preview camera for Neon urban fabric (Cyberpunk): readable hero scale, near field/midground/support field depth, clean silhouette, and practical vertical crop',
+        'emissive sign panels as key lights; stacked haze layers; stretched neon reflections; no sun; glyph shapes without letters',
       creative_brief:
-        "Apply Neon City (Cyberpunk) as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Cyberpunk neon rain lookdev, Neon glow, Wet reflective surfaces, emissive haze without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon City (Cyberpunk) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +36,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bioluminescent Forest',
     category: '7. Environment And Worldbuilding',
     negativePrompt:
-      'day, sun, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, empty wallpaper, generic vista-only render, scale-less space, unoptimized clutter',
+      'franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, blue-skinned humanoids, film alien world likeness, lone hiker with backpack, day, sun, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, empty wallpaper, generic vista-only render, scale-less space, unoptimized clutter, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Bioluminescent Forest acts as a transferable CGI-style router: start from Bioluminescent alien ecology, Avatar/Pandora style wonder, connected organic glow, Glow in dark, floating spores and environment and worldbuilding CGI system built from spatial design, modular assets, atmospheric scale, simulation logic, scan fidelity, and explorable depth, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Bioluminescent forest environment render: a night forest lit only by its own glowing fungi, moss veins and drifting spores, with emissive networks tracing roots and branches.',
       subject_treatment:
-        "Transform any prompt subject through Glowing organic silhouettes, spore halos, branching luminous networks; preserve the prompt subject while embedding it in the preset's world-scale CGI logic; environmental systems, scan detail, map elevation, VFX volume, or scientific structure should appear only when named by the preset, keeping the requested identity, silhouette, pose, object function, or environment legible.",
+        "Environment direction (retained on purpose): this preset supplies a nocturnal forest of self-lit flora: glowing fungi, luminous moss and drifting spores; the prompt's subject, action and camera stay and are placed inside that world instead of being replaced by a stock scene.",
       color_and_tone:
-        'Build color with Blue, Purple night, cyan bloom; use color through atmospheric grading, neon bloom, scientific false color, scan albedo, bioluminescent glow, map coding, or pyro temperature, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Deep indigo night, cyan and teal glow with small violet and lime accents; glow sits in organic dots and veins, never a uniform wash.',
       lighting_and_shadow:
-        'Handle light through Plant glow, ambient bioluminescence; shape light with atmospheric depth, emissive ecology, VR bake, modular level lighting, smoke self-light, or scan-matched illumination, so value structure supports the renderer and does not overwrite the requested content.',
+        'Emissive plants light their surroundings in soft falloff pools; unlit trunks read as dark silhouettes, and spores catch light as tiny halos.',
       texture_and_material:
-        'Render Organic, alien, phosphorescent; surface detail should show modular kits, photogrammetry scan grain, terrain relief, vegetation glow, pyro volume, map elevation, or simulation particles, keeping material scale coherent and avoiding noisy filler texture.',
+        'Translucent fungal caps with subsurface glow, damp bark, beaded moss and spore particles suspended in thin ground mist.',
       camera_and_composition:
-        'Structure the image through Production preview camera for Bioluminescent organic canopy: readable hero scale, near field/midground/support field depth, clean silhouette, and practical vertical crop; compose through spatial readability, player-scale cues, isometric elevation, explorable layers, environment silhouettes, or simulation flow, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Wonder, magic, spiritual awe, connected biology calm; derive mood from immersion, navigability, alien wonder, technical explanation, decay, abstract spatial rhythm, or procedural spectacle, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested camera; foreground glowing plants frame darker middle ground so the subject reads against lit pockets.',
+      atmosphere_and_mood: 'Hushed and reverent, a living forest breathing light in the dark.',
       rendering_and_quality:
-        'Finish with Fantasy, magical, otherworldly immersion; finish with coherent world scale, readable depth, optimized detail hierarchy, and no empty wallpaper or generic vista-only render, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Emissive shaders driving real bounce light, soft volumetric mist and small bloom; original flora, no film-world creatures.',
       key_features:
-        'Bioluminescent alien ecology, Avatar/Pandora style wonder, connected organic glow; Glow in dark, floating spores; Blue, Purple night, cyan bloom; Organic, alien, phosphorescent; Production preview camera for Bioluminescent organic canopy: readable hero scale, near field/midground/support field depth, clean silhouette, and practical vertical crop',
+        'plants as the only light; cyan glow veins; spore halos; translucent fungal caps; ground mist pockets',
       creative_brief:
-        "Apply Bioluminescent Forest as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Bioluminescent alien ecology, Avatar/Pandora style wonder, connected organic glow, Glow in dark, floating spores, Organic, alien, phosphorescent without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bioluminescent Forest as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +64,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Virtual Reality Environment',
     category: '7. Environment And Worldbuilding',
     negativePrompt:
-      '2d, flat, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, empty wallpaper, generic vista-only render, scale-less space, unoptimized clutter',
+      'franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, VR controllers, headset visible, teleport arc, depth of field blur, 2d, flat, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, empty wallpaper, generic vista-only render, scale-less space, unoptimized clutter, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Virtual Reality Environment acts as a transferable CGI-style router: start from Immersive VR presence, Player scale, 180 degree depth and environment and worldbuilding CGI system built from spatial design, modular assets, atmospheric scale, simulation logic, scan fidelity, and explorable depth, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Room-scale VR environment render: the scene built as an optimized real-time level seen from standing eye height, with baked lighting and everything sharp for stereo viewing.',
       subject_treatment:
-        "Transform any prompt subject through 360 degree feel; preserve the prompt subject while embedding it in the preset's world-scale CGI logic; environmental systems, scan detail, map elevation, VFX volume, or scientific structure should appear only when named by the preset, keeping the requested identity, silhouette, pose, object function, or environment legible.",
+        "Portable environment render: keep the prompt's subject, action, location and camera; only how that environment is built, simulated and rendered changes, never where it is.",
       color_and_tone:
-        'Build color with Vibrant; use color through atmospheric grading, neon bloom, scientific false color, scan albedo, bioluminescent glow, map coding, or pyro temperature, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Bright, clean, slightly saturated colors with lifted shadows so nothing collapses to black inside a headset.',
       lighting_and_shadow:
-        'Handle light through Baked; shape light with atmospheric depth, emissive ecology, VR bake, modular level lighting, smoke self-light, or scan-matched illumination, so value structure supports the renderer and does not overwrite the requested content.',
+        'Baked lightmaps with soft precomputed shadows and light probes; no dynamic flicker, no heavy volumetrics.',
       texture_and_material:
-        'Render Optimized, real time ready; surface detail should show modular kits, photogrammetry scan grain, terrain relief, vegetation glow, pyro volume, map elevation, or simulation particles, keeping material scale coherent and avoiding noisy filler texture.',
+        'Simplified geometry with clean bevels, crisp mid-resolution textures, large readable surfaces and props sized for a hand to grab.',
       camera_and_composition:
-        'Structure the image through Wide FOV; compose through spatial readability, player-scale cues, isometric elevation, explorable layers, environment silhouettes, or simulation flow, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Presence, digital, embodied experience; derive mood from immersion, navigability, alien wonder, technical explanation, decay, abstract spatial rhythm, or procedural spectacle, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested location seen at about 1.6 m eye height with a wide 100–110° field of view; near-field objects within arm reach create presence.',
+      atmosphere_and_mood: 'Embodied and inviting, a space you feel you could step into and touch.',
       rendering_and_quality:
-        'Finish with Oculus headset ready, immersive VR presence; finish with coherent world scale, readable depth, optimized detail hierarchy, and no empty wallpaper or generic vista-only render, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'No depth of field, no motion blur and no film grain; stable, evenly sharp real-time render ready for stereo.',
       key_features:
-        'Immersive VR presence; Player scale, 180 degree depth; Vibrant; Optimized, real time ready; Wide FOV',
+        'standing eye height; wide field of view; baked lightmaps; props within arm reach; no depth of field',
       creative_brief:
-        "Apply Virtual Reality Environment as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Immersive VR presence, Player scale, 180 degree depth, Optimized, real time ready without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Virtual Reality Environment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +92,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Scientific Visualization',
     category: '7. Environment And Worldbuilding',
     negativePrompt:
-      'fantasy, magic, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, empty wallpaper, generic vista-only render, scale-less space, unoptimized clutter',
+      'franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, legend text, axis numbers, rainbow jet colormap, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, empty wallpaper, generic vista-only render, scale-less space, unoptimized clutter, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Scientific Visualization acts as a transferable CGI-style router: start from Scientific Visualization simulation clarity, false-color data, clean educational render, measured scientific hierarchy and environment and worldbuilding CGI system built from spatial design, modular assets, atmospheric scale, simulation logic, scan fidelity, and explorable depth, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Scientific simulation visualization: the scene shown as grey context geometry with a measured field drawn over it as streamlines, isosurfaces and arrow glyphs.',
       subject_treatment:
-        "Transform any prompt subject through adapt the requested subject through simulation clarity, false-color data, clean educational render, measured scientific hierarchy while preserving its identity; preserve the prompt subject while embedding it in the preset's world-scale CGI logic; environmental systems, scan detail, map elevation, VFX volume, or scientific structure should appear only when named by the preset, keeping the requested identity, silhouette, pose, object function, or environment legible.",
+        "Portable environment render: keep the prompt's subject and location; they become the geometry of a scientific data visualization with the measured field drawn around them.",
       color_and_tone:
-        'Build color with palette and exposure choices that support simulation clarity, false-color data, clean educational render, measured scientific hierarchy; use color through atmospheric grading, neon bloom, scientific false color, scan albedo, bioluminescent glow, map coding, or pyro temperature, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Neutral light-grey geometry, one perceptual colormap (viridis or blue-to-red diverging) carrying the data, dark or white clean background.',
       lighting_and_shadow:
-        'Handle light through light behavior that reveals simulation clarity, false-color data, clean educational render, measured scientific hierarchy; shape light with atmospheric depth, emissive ecology, VR bake, modular level lighting, smoke self-light, or scan-matched illumination, so value structure supports the renderer and does not overwrite the requested content.',
+        'Soft even studio light with ambient occlusion so shapes read; the data layers are self-lit and never shaded dark.',
       texture_and_material:
-        'Render simulation clarity, false-color data, clean educational render, measured scientific hierarchy; surface detail should show modular kits, photogrammetry scan grain, terrain relief, vegetation glow, pyro volume, map elevation, or simulation particles, keeping material scale coherent and avoiding noisy filler texture.',
+        'Matte untextured context surfaces, thin tube streamlines, semi-transparent isosurface shells and small cone glyphs pointing along flow.',
       camera_and_composition:
-        'Structure the image through scale rhythm, spacing, and composition rules shaped by simulation clarity, false-color data, clean educational render, measured scientific hierarchy; compose through spatial readability, player-scale cues, isometric elevation, explorable layers, environment silhouettes, or simulation flow, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood mood carried by simulation clarity, false-color data, clean educational render, measured scientific hierarchy; derive mood from immersion, navigability, alien wonder, technical explanation, decay, abstract spatial rhythm, or procedural spectacle, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested view, pulled back just enough that the whole field and its source read at once.',
+      atmosphere_and_mood: 'Calm, exact and explanatory, beauty coming from measured order.',
       rendering_and_quality:
-        'Finish with finished Scientific Visualization CGI with simulation clarity, false-color data, clean educational render, measured scientific hierarchy and controlled detail; finish with coherent world scale, readable depth, optimized detail hierarchy, and no empty wallpaper or generic vista-only render, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Clean anti-aliased render with no photographic texture; the colormap is continuous and never rainbow-banded.',
       key_features:
-        'Scientific Visualization simulation clarity, false-color data, clean educational render, measured scientific hierarchy; palette and exposure choices that support simulation clarity, false-color data, clean educational render, measured scientific hierarchy; scale rhythm, spacing, and composition rules shaped by simulation clarity, false-color data, clean educational render, measured scientific hierarchy',
+        'streamline tubes; translucent isosurfaces; cone arrow glyphs; single perceptual colormap; grey matte context geometry',
       creative_brief:
-        "Apply Scientific Visualization as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Scientific Visualization simulation clarity, false-color data, clean educational render, measured scientific hierarchy without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Scientific Visualization as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +120,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Environment Design',
     category: '7. Environment And Worldbuilding',
     negativePrompt:
-      'empty, boring, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, empty wallpaper, generic vista-only render, scale-less space, unoptimized clutter',
+      'franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, city skyline at sunset, generic park lake, empty, boring, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, empty wallpaper, generic vista-only render, scale-less space, unoptimized clutter, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Environment Design acts as a transferable CGI-style router: start from Environment design render language, Modular kits, environmental storytelling cues and environment and worldbuilding CGI system built from spatial design, modular assets, atmospheric scale, simulation logic, scan fidelity, and explorable depth, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Environment concept render: the location staged as a designed game or film space with foreground, middle and background planes, a landmark and a readable path through it.',
       subject_treatment:
-        "Transform any prompt subject through Modular composition and guided depth; preserve the prompt subject while embedding it in the preset's world-scale CGI logic; environmental systems, scan detail, map elevation, VFX volume, or scientific structure should appear only when named by the preset, keeping the requested identity, silhouette, pose, object function, or environment legible.",
+        "Portable environment render: keep the prompt's subject, action, location and camera; only how that environment is built, simulated and rendered changes, never where it is.",
       color_and_tone:
-        'Build color with Atmospheric perspective, distance blue fade; use color through atmospheric grading, neon bloom, scientific false color, scan albedo, bioluminescent glow, map coding, or pyro temperature, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Warm, saturated foreground cooling to desaturated blue in the distance through atmospheric perspective; the landmark holds the brightest value.',
       lighting_and_shadow:
-        'Handle light through Baked global illumination, environment lighting; shape light with atmospheric depth, emissive ecology, VR bake, modular level lighting, smoke self-light, or scan-matched illumination, so value structure supports the renderer and does not overwrite the requested content.',
+        'One directional sun with global illumination; light pools mark the path, shadowed foreground frames the view.',
       texture_and_material:
-        'Render Tileable textures, world building materials; surface detail should show modular kits, photogrammetry scan grain, terrain relief, vegetation glow, pyro volume, map elevation, or simulation particles, keeping material scale coherent and avoiding noisy filler texture.',
+        'Tileable rock, wood and plaster materials with trim-sheet edges and scattered set dressing that tells how the place is used.',
       camera_and_composition:
-        'Structure the image through Production preview camera for Environment Design: readable hero scale, near field/midground/support field depth, clean silhouette, and practical vertical crop; compose through spatial readability, player-scale cues, isometric elevation, explorable layers, environment silhouettes, or simulation flow, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+        'Keep the requested location and camera; organize it into three depth planes with the path leading the eye to one landmark.',
       atmosphere_and_mood:
-        'Keep the mood Explorable depth, designed place energy; derive mood from immersion, navigability, alien wonder, technical explanation, decay, abstract spatial rhythm, or procedural spectacle, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Inviting and explorable, a place that makes you want to walk to the landmark.',
       rendering_and_quality:
-        'Finish with Level art material logic, immersive readiness; finish with coherent world scale, readable depth, optimized detail hierarchy, and no empty wallpaper or generic vista-only render, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Production previs finish with height fog and GI; clear value grouping per depth plane, no empty vista.',
       key_features:
-        'Environment design render language; Modular kits, environmental storytelling cues; Atmospheric perspective, distance blue fade; Tileable textures, world building materials; Production preview camera for Environment Design: readable hero scale, near field/midground/support field depth, clean silhouette, and practical vertical crop',
+        'three depth planes; landmark with brightest value; guiding path; atmospheric blue falloff; storytelling set dressing',
       creative_brief:
-        "Apply Environment Design as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Environment design render language, Modular kits, environmental storytelling cues, Tileable textures, world building materials without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Environment Design as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +149,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: '3D Map',
     category: '7. Environment And Worldbuilding',
     negativePrompt:
-      '2d map, paper, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, empty wallpaper, generic vista-only render, scale-less space, unoptimized clutter',
+      'franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, map labels, compass text, paper map texture, 2d map, paper, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, empty wallpaper, generic vista-only render, scale-less space, unoptimized clutter, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        '3D Map acts as a transferable CGI-style router: start from Isometric cartographic render, Grid, elevation readability and environment and worldbuilding CGI system built from spatial design, modular assets, atmospheric scale, simulation logic, scan fidelity, and explorable depth, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Isometric 3D relief map: the location sculpted as a tabletop terrain block with stepped contour terraces, a flat water plane and miniature landmarks.',
       subject_treatment:
-        "Transform any prompt subject through Topography; preserve the prompt subject while embedding it in the preset's world-scale CGI logic; environmental systems, scan detail, map elevation, VFX volume, or scientific structure should appear only when named by the preset, keeping the requested identity, silhouette, pose, object function, or environment legible.",
+        "Profile: keep the prompt's location and its landmarks; this preset owns the elevated isometric relief-map view and tabletop scale, and nothing else about the request changes.",
       color_and_tone:
-        'Build color with Map colors, topographic contrast; use color through atmospheric grading, neon bloom, scientific false color, scan albedo, bioluminescent glow, map coding, or pyro temperature, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Hypsometric tints from sea teal through meadow green and tan to white peaks; landmarks in warm clean accent colors.',
       lighting_and_shadow:
-        'Handle light through Sunlight, terrain shadow casting; shape light with atmospheric depth, emissive ecology, VR bake, modular level lighting, smoke self-light, or scan-matched illumination, so value structure supports the renderer and does not overwrite the requested content.',
+        'One low sun from the upper left casting long terrain shadows that make elevation readable; soft ambient occlusion in valleys.',
       texture_and_material:
-        'Render Low poly terrain, topographic layers; surface detail should show modular kits, photogrammetry scan grain, terrain relief, vegetation glow, pyro volume, map elevation, or simulation particles, keeping material scale coherent and avoiding noisy filler texture.',
+        'Smooth matte terrain with visible contour steps, simplified clumped trees and small toy-like buildings; cut edges show layered strata.',
       camera_and_composition:
-        'Structure the image through Production preview camera for 3D Map: readable hero scale, near field/midground/support field depth, clean silhouette, and practical vertical crop; compose through spatial readability, player-scale cues, isometric elevation, explorable layers, environment silhouettes, or simulation flow, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Informative, toy, exploration inviting; derive mood from immersion, navigability, alien wonder, technical explanation, decay, abstract spatial rhythm, or procedural spectacle, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Fixed isometric or 30° elevated orthographic view of a square or round map block floating on a plain background.',
+      atmosphere_and_mood: 'Curious and inviting, a whole place small enough to hold.',
       rendering_and_quality:
-        'Finish with Game map, cute, cartographic style; finish with coherent world scale, readable depth, optimized detail hierarchy, and no empty wallpaper or generic vista-only render, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Clean stylized render with crisp contour edges and no fog, every region readable at a glance.',
       key_features:
-        'Isometric cartographic render; Grid, elevation readability; Map colors, topographic contrast; Low poly terrain, topographic layers; Production preview camera for 3D Map: readable hero scale, near field/midground/support field depth, clean silhouette, and practical vertical crop',
+        'tabletop terrain block; stepped contour terraces; hypsometric tints; low sun relief shadows; cut strata edges',
       creative_brief:
-        "Apply 3D Map as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Isometric cartographic render, Grid, elevation readability, Low poly terrain, topographic layers without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 3D Map as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,28 +177,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Abstract Background',
     category: '7. Environment And Worldbuilding',
     negativePrompt:
-      'subject, object, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, empty wallpaper, generic vista-only render, scale-less space, unoptimized clutter',
+      'franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, random floating spheres, fantasy city in the background, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, empty wallpaper, generic vista-only render, scale-less space, unoptimized clutter, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Abstract Background acts as a transferable CGI-style router: start from Abstract Background procedural non-figurative forms, depth fields, glossy abstract geometry, spatial color rhythm and environment and worldbuilding CGI system built from spatial design, modular assets, atmospheric scale, simulation logic, scan fidelity, and explorable depth, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Procedural abstract environment: sweeping glossy ribbons, extruded curves and soft volumes arranged in deep space, with no recognizable objects of their own.',
       subject_treatment:
-        "Transform any prompt subject through adapt the requested subject through procedural non-figurative forms, depth fields, glossy abstract geometry, spatial color rhythm while preserving its identity; preserve the prompt subject while embedding it in the preset's world-scale CGI logic; environmental systems, scan detail, map elevation, VFX volume, or scientific structure should appear only when named by the preset, keeping the requested identity, silhouette, pose, object function, or environment legible.",
+        "Environment direction (retained on purpose): this preset supplies a non-figurative procedural space of glossy curved forms and gradient depth; the prompt's subject, action and camera stay and are placed inside that world instead of being replaced by a stock scene.",
       color_and_tone:
-        'Build color with palette and exposure choices that support procedural non-figurative forms, depth fields, glossy abstract geometry, spatial color rhythm; use color through atmospheric grading, neon bloom, scientific false color, scan albedo, bioluminescent glow, map coding, or pyro temperature, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Two or three hues in smooth gradients, one dark anchor tone and one bright accent; reflections carry the color changes.',
       lighting_and_shadow:
-        'Handle light through light behavior that reveals procedural non-figurative forms, depth fields, glossy abstract geometry, spatial color rhythm; shape light with atmospheric depth, emissive ecology, VR bake, modular level lighting, smoke self-light, or scan-matched illumination, so value structure supports the renderer and does not overwrite the requested content.',
+        'Large soft area lights producing long gradient highlights along the curves and gentle contact shadows where forms overlap.',
       texture_and_material:
-        'Render procedural non-figurative forms, depth fields, glossy abstract geometry, spatial color rhythm; surface detail should show modular kits, photogrammetry scan grain, terrain relief, vegetation glow, pyro volume, map elevation, or simulation particles, keeping material scale coherent and avoiding noisy filler texture.',
+        'Lacquer, frosted glass or satin metal surfaces, perfectly smooth, with thin edge bevels catching light.',
       camera_and_composition:
-        'Structure the image through Production preview camera for Abstract support field: readable hero scale, near field/midground/support field depth, clean silhouette, and practical vertical crop; compose through spatial readability, player-scale cues, isometric elevation, explorable layers, environment silhouettes, or simulation flow, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood mood carried by procedural non-figurative forms, depth fields, glossy abstract geometry, spatial color rhythm; derive mood from immersion, navigability, alien wonder, technical explanation, decay, abstract spatial rhythm, or procedural spectacle, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested framing; forms sweep diagonally through three depth layers and leave calm space where a subject may sit.',
+      atmosphere_and_mood: 'Calm, luxurious and weightless, rhythm without a story.',
       rendering_and_quality:
-        'Finish with finished Abstract Background CGI with procedural non-figurative forms, depth fields, glossy abstract geometry, spatial color rhythm and controlled detail; finish with coherent world scale, readable depth, optimized detail hierarchy, and no empty wallpaper or generic vista-only render, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Noise-free path-traced finish with soft depth of field on the farthest layer.',
       key_features:
-        'Abstract Background procedural non-figurative forms, depth fields, glossy abstract geometry, spatial color rhythm; palette and exposure choices that support procedural non-figurative forms, depth fields, glossy abstract geometry, spatial color rhythm; Production preview camera for Abstract support field: readable hero scale, near field/midground/support field depth, clean silhouette, and practical vertical crop',
+        'sweeping glossy ribbons; two-hue gradients; long area-light highlights; diagonal depth layers; calm subject space',
       creative_brief:
-        "Apply Abstract Background as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Abstract Background procedural non-figurative forms, depth fields, glossy abstract geometry, spatial color rhythm without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Abstract Background as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -211,28 +205,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: '3D Scan (Photogrammetry)',
     category: '7. Environment And Worldbuilding',
     negativePrompt:
-      'perfect, modeled, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, empty wallpaper, generic vista-only render, scale-less space, unoptimized clutter',
+      'franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, clean modeled edges, library brand, perfect, modeled, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, empty wallpaper, generic vista-only render, scale-less space, unoptimized clutter, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        '3D Scan (Photogrammetry) acts as a transferable CGI-style router: start from Photogrammetry scan realism, Photo realism, surface level scan detail and environment and worldbuilding CGI system built from spatial design, modular assets, atmospheric scale, simulation logic, scan fidelity, and explorable depth, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Photogrammetry scan render: the scene rebuilt from hundreds of photographs as a dense triangulated mesh with photo-projected texture and the flaws of a real capture.',
       subject_treatment:
-        "Transform any prompt subject through Realistic geometry; preserve the prompt subject while embedding it in the preset's world-scale CGI logic; environmental systems, scan detail, map elevation, VFX volume, or scientific structure should appear only when named by the preset, keeping the requested identity, silhouette, pose, object function, or environment legible.",
+        "Portable environment render: keep the prompt's subject, action, location and camera; only how that environment is built, simulated and rendered changes, never where it is.",
       color_and_tone:
-        'Build color with Photo texture; use color through atmospheric grading, neon bloom, scientific false color, scan albedo, bioluminescent glow, map coding, or pyro temperature, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Natural, slightly flat photo albedo with the capture-day light baked in; true-to-life stains, lichen and dirt color.',
       lighting_and_shadow:
-        'Handle light through Baked lighting (delit); shape light with atmospheric depth, emissive ecology, VR bake, modular level lighting, smoke self-light, or scan-matched illumination, so value structure supports the renderer and does not overwrite the requested content.',
+        'Soft neutral render light over delit textures, so baked-in shadows and new shading coexist faintly.',
       texture_and_material:
-        'Render Real world noise, photogrammetry texture; surface detail should show modular kits, photogrammetry scan grain, terrain relief, vegetation glow, pyro volume, map elevation, or simulation particles, keeping material scale coherent and avoiding noisy filler texture.',
+        'Micro-detailed real surface texture, smeared or stretched texels in occluded undersides, small mesh holes and blobby thin parts.',
       camera_and_composition:
-        'Structure the image through Mesh errors (optional); compose through spatial readability, player-scale cues, isometric elevation, explorable layers, environment silhouettes, or simulation flow, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Real, grounded, authentic capture; derive mood from immersion, navigability, alien wonder, technical explanation, decay, abstract spatial rhythm, or procedural spectacle, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested location and view; scan edges fade to ragged mesh borders where coverage ends.',
+      atmosphere_and_mood: 'Grounded and documentary, a real place frozen as data.',
       rendering_and_quality:
-        'Finish with Quixel Megascans scan library realism; finish with coherent world scale, readable depth, optimized detail hierarchy, and no empty wallpaper or generic vista-only render, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Scan-library realism with honest artifacts; never a clean hand-modeled asset.',
       key_features:
-        'Photogrammetry scan realism; Photo realism, surface level scan detail; Photo texture; Real world noise, photogrammetry texture; Mesh errors (optional)',
+        'photo-projected texture; stretched texels in occlusion; ragged mesh border; blobby thin parts; baked capture light',
       creative_brief:
-        "Apply 3D Scan (Photogrammetry) as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Photogrammetry scan realism, Photo realism, surface level scan detail, Real world noise, photogrammetry texture without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 3D Scan (Photogrammetry) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -240,28 +233,441 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'VFX Simulation (Fire/Smoke)',
     category: '7. Environment And Worldbuilding',
     negativePrompt:
-      'solid, cartoon fire, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, empty wallpaper, generic vista-only render, scale-less space, unoptimized clutter',
+      'franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, cartoon flames, burning greenhouse, solid, cartoon fire, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, empty wallpaper, generic vista-only render, scale-less space, unoptimized clutter, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'VFX Simulation (Fire/Smoke) acts as a transferable CGI-style router: start from Houdini pyro simulation, Physics, turbulence control and environment and worldbuilding CGI system built from spatial design, modular assets, atmospheric scale, simulation logic, scan fidelity, and explorable depth, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Pyro volume simulation: fire and smoke rendered as a physically simulated volume, with rolling pyroclastic billows, turbulent vortices and incandescent cores.',
       subject_treatment:
-        "Transform any prompt subject through Turbulence; preserve the prompt subject while embedding it in the preset's world-scale CGI logic; environmental systems, scan detail, map elevation, VFX volume, or scientific structure should appear only when named by the preset, keeping the requested identity, silhouette, pose, object function, or environment legible.",
+        "Portable environment render: keep the prompt's subject, action, location and camera; only how that environment is built, simulated and rendered changes, never where it is.",
       color_and_tone:
-        'Build color with Orange, Black smoke; use color through atmospheric grading, neon bloom, scientific false color, scan albedo, bioluminescent glow, map coding, or pyro temperature, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Blackbody fire from white-yellow core through orange to deep red edges, feeding into charcoal and brown smoke.',
       lighting_and_shadow:
-        'Handle light through Self illuminated; shape light with atmospheric depth, emissive ecology, VR bake, modular level lighting, smoke self-light, or scan-matched illumination, so value structure supports the renderer and does not overwrite the requested content.',
+        'The fire is the key light, lighting its own smoke from inside and throwing flickering orange onto nearby surfaces.',
       texture_and_material:
-        'Render Volume, pyroclastic density; surface detail should show modular kits, photogrammetry scan grain, terrain relief, vegetation glow, pyro volume, map elevation, or simulation particles, keeping material scale coherent and avoiding noisy filler texture.',
+        'Dense cauliflower billows, thin wispy tendrils at the edges, embers and sparks advected by the flow.',
       camera_and_composition:
-        'Structure the image through Expanding; compose through spatial readability, player-scale cues, isometric elevation, explorable layers, environment silhouettes, or simulation flow, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Dangerous, dynamic, cinematic destruction; derive mood from immersion, navigability, alien wonder, technical explanation, decay, abstract spatial rhythm, or procedural spectacle, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested location and camera; the plume shows a clear direction of rise and expansion.',
+      atmosphere_and_mood: 'Dangerous and immense, heat you can read in the motion.',
       rendering_and_quality:
-        'Finish with Houdini VFX simulation, pyro mastery; finish with coherent world scale, readable depth, optimized detail hierarchy, and no empty wallpaper or generic vista-only render, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'High-resolution volumetric render with self-shadowed smoke and temperature-driven emission; no painted or cartoon flames.',
       key_features:
-        'Houdini pyro simulation; Physics, turbulence control; Orange, Black smoke; Volume, pyroclastic density; Expanding',
+        'pyroclastic billows; blackbody color ramp; self-lit smoke; advected embers; clear rise direction',
       creative_brief:
-        "Apply VFX Simulation (Fire/Smoke) as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Houdini pyro simulation, Physics, turbulence control, Volume, pyroclastic density without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies VFX Simulation (Fire/Smoke) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP03-132',
+    name: 'Hydraulic Erosion Heightfield',
+    displayName: 'Hydraulic Erosion Heightfield',
+    styleAnchors: [
+      'Hydraulic Erosion Heightfield',
+      'procedural terrain simulation',
+      'dendritic erosion gullies',
+    ],
+    category: '7. Environment And Worldbuilding',
+    domain: 'procedural terrain simulation',
+    negativePrompt:
+      'franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, smooth noise hills, tiling texture repeat, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Procedural terrain render: land built from a heightfield run through hydraulic and thermal erosion, with branching gullies, talus slopes and sediment fans.',
+      subject_treatment:
+        "Portable environment render: keep the prompt's subject, location and camera; the ground and landforms are rebuilt as a simulated eroded heightfield.",
+      color_and_tone:
+        'Rock, sediment and vegetation colored by slope and flow masks: ochre bare cliffs, pale sediment in channels, green only on flat ground.',
+      lighting_and_shadow:
+        'Low raking sun that carves the fine erosion channels in sharp relief, with sky-blue fill in the shadowed gullies.',
+      texture_and_material:
+        'Dendritic drainage patterns, layered strata ridges, scree at slope feet and smooth deposition fans where water slowed.',
+      camera_and_composition:
+        'Keep the requested view; the erosion network runs downhill toward the subject or along the leading lines.',
+      atmosphere_and_mood: 'Vast and ancient, land shaped by a million simulated years of rain.',
+      rendering_and_quality:
+        'Dense displaced terrain with mask-driven materials and light haze; no tiling rock texture repeats.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hydraulic Erosion Heightfield as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'dendritic erosion gullies; sediment fans; slope-masked colors; raking relief light; strata ridges',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-133',
+    name: 'Modular Dungeon Kit Render',
+    displayName: 'Modular Dungeon Kit Render',
+    styleAnchors: [
+      'Modular Dungeon Kit Render',
+      'game level environment art',
+      'snap-grid stone kit pieces',
+    ],
+    category: '7. Environment And Worldbuilding',
+    domain: 'game level environment art',
+    negativePrompt:
+      'franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, bright cheerful dungeon, monster crowd, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Modular dungeon environment render: corridors and halls assembled from repeating stone wall, arch, pillar and floor kit pieces on a snap grid.',
+      subject_treatment:
+        "Environment direction (retained on purpose): this preset supplies a dark medieval dungeon assembled from snap-grid stone kit pieces, arches and torch sconces; the prompt's subject, action and camera stay and are placed inside that world instead of being replaced by a stock scene.",
+      color_and_tone:
+        'Cold grey-green stone in deep shadow, warm amber torch pools, rare accents of rusted iron and faded red cloth.',
+      lighting_and_shadow:
+        'Wall-mounted torches every few modules each throw a warm pool with hard falloff; darkness between them is near black.',
+      texture_and_material:
+        'Trim-sheet stone blocks with beveled edges, damp moss in seams, iron grates, rope and dripping water decals.',
+      camera_and_composition:
+        'Keep the requested camera; kit repetition creates a rhythm of arches receding into darkness.',
+      atmosphere_and_mood: 'Oppressive and cold, every archway promising something waiting.',
+      rendering_and_quality:
+        'Game-engine level art with baked GI, light dust in torch beams and visible but tasteful module repetition.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Modular Dungeon Kit Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'snap-grid stone kit pieces; repeating arches; torch pools with hard falloff; trim-sheet bevels; moss in seams',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-134',
+    name: 'Rigid-Body Destruction Simulation',
+    displayName: 'Rigid-Body Destruction Simulation',
+    styleAnchors: [
+      'Rigid-Body Destruction Simulation',
+      'VFX destruction simulation',
+      'Voronoi fracture chunks',
+    ],
+    category: '7. Environment And Worldbuilding',
+    domain: 'VFX destruction simulation',
+    negativePrompt:
+      'franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, explosion fireball, casualties, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Rigid-body destruction simulation: the named structure fracturing into Voronoi chunks mid-collapse, with debris arcs, dust bursts and secondary splinters frozen in one frame.',
+      subject_treatment:
+        "Portable environment render: keep the prompt's subject, action, location and camera; only how that environment is built, simulated and rendered changes, never where it is.",
+      color_and_tone:
+        'Material colors of the structure plus pale dust and darker fresh fracture faces; grading stays natural.',
+      lighting_and_shadow:
+        'Directional key revealing each chunk as a separate solid, dust volumes catching light and shadowing debris behind them.',
+      texture_and_material:
+        'Clean interior fracture surfaces contrasting weathered exteriors, bent rebar or splintered beams, fine particle dust and gravel.',
+      camera_and_composition:
+        'Keep the requested location and camera; the collapse moves along one clear direction with a falling debris arc.',
+      atmosphere_and_mood: 'Violent and suspended, the loud instant a structure gives up.',
+      rendering_and_quality:
+        'Simulation-accurate chunk sizes grading from large to small, with slight motion blur on the fastest pieces.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rigid-Body Destruction Simulation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'Voronoi fracture chunks; fresh interior fracture faces; debris arc; dust volume bursts; large-to-small chunk grading',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-135',
+    name: 'Simulated Open Ocean Swell',
+    displayName: 'Simulated Open Ocean Swell',
+    styleAnchors: [
+      'Simulated Open Ocean Swell',
+      'ocean surface simulation',
+      'long swells with choppy detail',
+    ],
+    category: '7. Environment And Worldbuilding',
+    domain: 'ocean surface simulation',
+    negativePrompt:
+      'franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, flat calm water, lighthouse, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Simulated open ocean render: a spectral wave surface with long swells, choppy secondary waves, whitecap foam masks and wind-blown spray.',
+      subject_treatment:
+        "Environment direction (retained on purpose): this preset supplies an open sea built from a simulated ocean surface with swell, whitecaps and spray; the prompt's subject, action and camera stay and are placed inside that world instead of being replaced by a stock scene.",
+      color_and_tone:
+        'Deep blue-black troughs, turquoise light through thin wave crests, bright white foam and cold grey sky reflections.',
+      lighting_and_shadow:
+        'Overcast or low sun reflected in broken glints; subsurface glow where light passes through crests.',
+      texture_and_material:
+        'Foam streaks lined up with the wind, spray mist off crests, trailing wake foam around any object in the water.',
+      camera_and_composition:
+        'Keep the requested camera; the horizon tilts with the swell and the nearest wave dominates the frame.',
+      atmosphere_and_mood: 'Cold, heaving and indifferent, the sea larger than anything on it.',
+      rendering_and_quality:
+        'Physically based water with correct fresnel reflection, crest translucency and particle spray; no glassy flat water.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Simulated Open Ocean Swell as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'long swells with choppy detail; wind-aligned foam streaks; translucent turquoise crests; spray mist; fresnel reflections',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-136',
+    name: 'Floating Sky Island Archipelago',
+    displayName: 'Floating Sky Island Archipelago',
+    styleAnchors: [
+      'Floating Sky Island Archipelago',
+      'fantasy world environment',
+      'inverted rock islands',
+    ],
+    category: '7. Environment And Worldbuilding',
+    domain: 'fantasy world environment',
+    negativePrompt:
+      'franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, airship fleet, game-world likeness, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Sky island environment render: inverted-cone rock islands hanging above a cloud sea, root-bound undersides, waterfalls pouring off their edges into mist.',
+      subject_treatment:
+        "Environment direction (retained on purpose): this preset supplies an archipelago of floating rock islands above a sea of clouds, linked by bridges and falling water; the prompt's subject, action and camera stay and are placed inside that world instead of being replaced by a stock scene.",
+      color_and_tone:
+        'Warm sunlit tops in grass green and sandstone, cool violet-blue undersides, white-gold cloud sea.',
+      lighting_and_shadow:
+        'High sun lighting island tops while undersides fall into blue shade; islands cast soft shadows onto the cloud layer.',
+      texture_and_material:
+        'Exposed strata and dangling roots under each island, rope and chain bridges, mist trails from the waterfalls.',
+      camera_and_composition:
+        'Keep the requested camera; islands stack at different heights and sizes to sell great depth and scale.',
+      atmosphere_and_mood: 'Dizzy, bright and wondrous, a world with no ground.',
+      rendering_and_quality:
+        'Volumetric cloud sea with aerial perspective between islands; clear scale cues from bridges and trees.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Floating Sky Island Archipelago as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'inverted rock islands; dangling roots; waterfalls falling into mist; cloud sea below; stacked depth scale',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-137',
+    name: 'Instanced Foliage Overgrowth',
+    displayName: 'Instanced Foliage Overgrowth',
+    styleAnchors: [
+      'Instanced Foliage Overgrowth',
+      'procedural vegetation scatter',
+      'mask-driven scatter by slope and occlusion',
+    ],
+    category: '7. Environment And Worldbuilding',
+    domain: 'procedural vegetation scatter',
+    negativePrompt:
+      'franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, changing the object into a ruin, flat green paint-over, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Instanced foliage overgrowth: moss, ivy, grass and saplings scattered across the scene by slope, occlusion and age masks, as if decades of growth had been simulated.',
+      subject_treatment:
+        "Portable environment render: keep the prompt's subject, location and camera; only surfaces gain scattered vegetation, and every object keeps its shape and era.",
+      color_and_tone:
+        'Fresh greens and yellow-greens over the original materials, darker damp green in crevices, original colors showing through gaps.',
+      lighting_and_shadow:
+        'Soft sky light filtering through leaf canopies, dappled light on surfaces, dense ambient occlusion under growth.',
+      texture_and_material:
+        'Thousands of individual leaf and grass instances, ivy following edges and cracks, moss on upward faces, roots lifting joints.',
+      camera_and_composition:
+        'Keep the requested view; growth thickens toward the ground and in sheltered corners so shapes stay readable.',
+      atmosphere_and_mood: 'Quiet and patient, nature slowly taking things back.',
+      rendering_and_quality:
+        'Dense instanced vegetation with individual leaves resolved; no flat green texture paint-over.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Instanced Foliage Overgrowth as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'mask-driven scatter by slope and occlusion; ivy along edges; moss on upward faces; leaf instances; roots lifting joints',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-138',
+    name: 'Geode Cavern Environment',
+    displayName: 'Geode Cavern Environment',
+    styleAnchors: [
+      'Geode Cavern Environment',
+      'underground crystal environment',
+      'giant faceted crystal columns',
+    ],
+    category: '7. Environment And Worldbuilding',
+    domain: 'underground crystal environment',
+    negativePrompt:
+      'franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, glowing neon crystals, bioluminescent plants, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Geode cavern environment render: a huge underground chamber lined with giant faceted crystal columns, lit by a few small sources and their refracted light.',
+      subject_treatment:
+        "Environment direction (retained on purpose): this preset supplies a vast underground geode cavern lined with giant crystal columns and still water; the prompt's subject, action and camera stay and are placed inside that world instead of being replaced by a stock scene.",
+      color_and_tone:
+        'Milky white and pale amethyst crystal against dark wet rock; warm lantern light turned into cold refracted glints.',
+      lighting_and_shadow:
+        'One or two small warm sources refracted and reflected through the crystals, producing caustic flecks and glowing edges; the cave depths stay black.',
+      texture_and_material:
+        'Faceted translucent crystal with internal fractures, wet dark rock, dust motes and mirror-still water reflecting the columns.',
+      camera_and_composition:
+        'Keep the requested camera; crystal columns cross the frame at angles and dwarf anything human-sized.',
+      atmosphere_and_mood: 'Silent and awestruck, a cathedral nobody built.',
+      rendering_and_quality:
+        'Path-traced refraction and caustics with light volumetric dust; crystals refract light, never self-glow.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Geode Cavern Environment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'giant faceted crystal columns; refracted caustic flecks; small warm sources only; still reflecting water; huge scale',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-139',
+    name: 'Particle Blizzard Simulation',
+    displayName: 'Particle Blizzard Simulation',
+    styleAnchors: [
+      'Particle Blizzard Simulation',
+      'weather particle simulation',
+      'wind-driven particle sheets',
+    ],
+    category: '7. Environment And Worldbuilding',
+    domain: 'weather particle simulation',
+    negativePrompt:
+      'franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, gentle snowfall, christmas decoration, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Particle blizzard simulation: millions of wind-driven snow particles streaming across the scene in layered sheets, with gust eddies and drifts building against obstacles.',
+      subject_treatment:
+        "Portable environment render: keep the prompt's subject, location and camera; only a simulated blizzard of wind-driven snow particles is added over them.",
+      color_and_tone:
+        'Blue-white snow, cold grey-blue shadows, near-white visibility falloff in the distance; any warm light becomes a haloed point.',
+      lighting_and_shadow:
+        'Flat diffuse storm light with backlit snow sheets; point lights bloom into soft glowing halos in the particle volume.',
+      texture_and_material:
+        'Motion-blurred streaks near camera, fine particles in the midground, snow crusting on windward faces and drifting in lee corners.',
+      camera_and_composition:
+        'Keep the requested camera; visibility drops sharply with distance so the subject reads as a silhouette in white.',
+      atmosphere_and_mood: 'Harsh and isolating, the wind louder than anything.',
+      rendering_and_quality:
+        'Layered particle volume with depth-based density and motion blur; no painted snow overlay.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Particle Blizzard Simulation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'wind-driven particle sheets; motion-blurred near streaks; drifts on windward faces; haloed point lights; steep visibility falloff',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-140',
+    name: 'Exoplanet Surface Environment',
+    displayName: 'Exoplanet Surface Environment',
+    styleAnchors: [
+      'Exoplanet Surface Environment',
+      'alien planet environment',
+      'giant sky planet or twin suns',
+    ],
+    category: '7. Environment And Worldbuilding',
+    domain: 'alien planet environment',
+    negativePrompt:
+      'franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, film spacecraft likeness, earth-like blue sky, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Exoplanet surface environment render: alien terrain under a strange sky, a giant ringed planet or twin suns hanging above, thin atmosphere scattering odd colors.',
+      subject_treatment:
+        "Environment direction (retained on purpose): this preset supplies the surface of an alien planet with a giant neighbouring world or twin suns in the sky; the prompt's subject, action and camera stay and are placed inside that world instead of being replaced by a stock scene.",
+      color_and_tone:
+        'Non-terrestrial palette such as rust sand under a teal sky or violet rock under an amber sky; one complementary accent from the sky body.',
+      lighting_and_shadow:
+        "Twin suns throwing two shadows of different color, or planetshine filling shadows with the giant planet's hue.",
+      texture_and_material:
+        'Wind-sculpted rock, fine regolith dust, frost or mineral crusts, with scale cues from boulders and footprints.',
+      camera_and_composition:
+        'Keep the requested camera; the sky body occupies a large part of the frame to set the world instantly.',
+      atmosphere_and_mood: 'Lonely and awe-struck, the quiet of a place no one was meant to see.',
+      rendering_and_quality:
+        'Physically based atmospheric scattering with haze layers and crisp near-field regolith detail.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Exoplanet Surface Environment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'giant sky planet or twin suns; double colored shadows; non-Earth palette; regolith dust; atmospheric haze layers',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-141',
+    name: 'Level Blockout Greybox',
+    displayName: 'Level Blockout Greybox',
+    styleAnchors: ['Level Blockout Greybox', 'game level blockout', 'grey primitive volumes'],
+    category: '7. Environment And Worldbuilding',
+    domain: 'game level blockout',
+    negativePrompt:
+      'franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, finished textures, decorative props, editor gizmos, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Level blockout greybox: the location rebuilt from untextured boxes, ramps and cylinders with prototype grid materials, the stage before any art pass.',
+      subject_treatment:
+        "Portable environment render: keep the prompt's subject, action, location and camera; only how that environment is built, simulated and rendered changes, never where it is.",
+      color_and_tone:
+        'Neutral mid-grey primitives, orange and dark-grey prototype grid tiles on walkable floors, one flat blue sky.',
+      lighting_and_shadow:
+        'Single default directional light with simple sharp shadows and flat ambient; no mood lighting.',
+      texture_and_material:
+        'Faceless primitive volumes, grid tiles showing one-meter measurements, no detail beyond the block silhouettes.',
+      camera_and_composition:
+        'Keep the requested location and camera; landmarks become tall simple blocks, paths become ramps and steps.',
+      atmosphere_and_mood: 'Honest and structural, a place stripped to space and scale.',
+      rendering_and_quality:
+        'Editor-viewport render with crisp edges, no fog, no post effects and no textures besides the grid.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Level Blockout Greybox as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'grey primitive volumes; orange prototype grid floors; one-meter measure tiles; default directional light; no detail',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-142',
+    name: 'Hand-Painted Texture Environment',
+    displayName: 'Hand-Painted Texture Environment',
+    styleAnchors: [
+      'Hand-Painted Texture Environment',
+      'stylized game environment',
+      'painted diffuse textures',
+    ],
+    category: '7. Environment And Worldbuilding',
+    domain: 'stylized game environment',
+    negativePrompt:
+      'franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, photographic texture, PBR metal sheen, game-world likeness, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hand-painted texture environment: chunky stylized 3D geometry wrapped in painted diffuse textures where light, shadow and wear are painted into the color itself.',
+      subject_treatment:
+        "Portable environment render: keep the prompt's subject, action, location and camera; only how that environment is built, simulated and rendered changes, never where it is.",
+      color_and_tone:
+        'Saturated warm palette with painted gradients from warm tops to cool bottoms and bright painted edge highlights.',
+      lighting_and_shadow:
+        'Mostly unlit shading: painted light and ambient occlusion in the textures, only soft real shadows added.',
+      texture_and_material:
+        'Visible brush strokes in stone, wood and roof tiles; exaggerated chipped edges; oversized planks and cartoon-proportioned bevels.',
+      camera_and_composition:
+        'Keep the requested location and camera; chunky silhouettes lean and taper for a hand-built feel.',
+      atmosphere_and_mood: 'Cozy, warm and welcoming, a place built for adventure.',
+      rendering_and_quality:
+        'Low specular, no photographic texture and no physically based sheen; strokes stay readable at distance.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hand-Painted Texture Environment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'painted diffuse textures; brush strokes in stone and wood; painted edge highlights; chunky leaning silhouettes; low specular',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

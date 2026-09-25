@@ -1862,5 +1862,85 @@
   "SP03-131": [
     "Animated-film food render of a giant wheel of cheese being cut on a wooden board, painterly subsurface glow in the wedge, butter-yellow highlights and a warm rim. No text or logo.",
     "Animated-film food render of glossy baked apples and a lattice-top crumble pie cooling on a stone sill, simplified crumb, jewel-red juices bubbling at the edges. No text or logo."
+  ],
+  "SP03-033": [
+    "Neon megacity environment render of a weathered stone gargoyle on a surviving cathedral ledge, now wedged between stacked apartment blocks, violet emissive panels glowing behind it through volumetric haze. No text or logo.",
+    "Neon megacity environment render of a rooftop bronze bell shrine in the rain, cyan reflections stretched across wet copper tiles, the city dropping away into fog below. No text or logo."
+  ],
+  "SP03-039": [
+    "Bioluminescent forest environment render of a grey heron wading through a stream of glowing teal algae, each step spreading rings of light. No text or logo.",
+    "Bioluminescent forest environment render of a brown bear asleep in a hollow of luminous ferns, violet spore halos above its back. No text or logo."
+  ],
+  "SP03-055": [
+    "Room-scale VR environment render at the start of a rope bridge across a deep canyon, the first planks and rope rails right at hand height, baked afternoon light. No text or logo.",
+    "Room-scale VR environment render inside an observatory dome, a brass telescope eyepiece within reach, crisp baked lightmaps on the curved walls. No text or logo."
+  ],
+  "SP03-056": [
+    "Scientific visualization of smoke dispersing from a charcoal kiln across a wooded valley, translucent concentration isosurfaces over grey terrain, blue-to-red diverging colormap. No text or logo.",
+    "Scientific visualization of tidal currents around a rocky island, cone arrow glyphs laid on the water plane, colored by current speed. No text or logo."
+  ],
+  "SP03-060": [
+    "Environment concept render of a swamp village of stilt houses linked by plank walkways, lanterns marking the path to a moss-roofed longhouse. No text or logo.",
+    "Environment concept render of an open-pit salt quarry with a wooden cargo crane as landmark, a ramp path spiraling down the white terraces. No text or logo."
+  ],
+  "SP03-063": [
+    "Isometric 3D relief map of a volcanic archipelago on a flat teal water plane, hypsometric tints from green shores to ash-white cones. No text or logo.",
+    "Isometric 3D relief map of a mountain pass with a fortress gate and a winding road climbing through contour steps. No text or logo."
+  ],
+  "SP03-066": [
+    "Procedural abstract environment of frosted glass slabs and satin teal curves in three depth layers, gentle contact shadows where they overlap. No text or logo.",
+    "Procedural abstract environment behind a white porcelain teapot on a small plinth, lacquered plum and gold ribbons curving around it and leaving calm space. No text or logo."
+  ],
+  "SP03-068": [
+    "Photogrammetry scan render of a moss-covered tree stump with shelf fungi, thin fungus edges gone blobby, capture light baked in. No text or logo.",
+    "Photogrammetry scan render of a cast-iron wood stove in a farmhouse corner, rust flakes in micro detail, small holes behind the stovepipe. No text or logo."
+  ],
+  "SP03-069": [
+    "Pyro volume simulation of a burning pitch-ball flying from a siege catapult, a turbulent smoke trail curling behind it against a grey dawn. No text or logo.",
+    "Pyro volume simulation of a stricken airship envelope engulfed in fire, smoke tendrils peeling off its ribs as it sags. No text or logo."
+  ],
+  "SP03-132": [
+    "Procedural erosion terrain render of a glacial valley floor, braided meltwater channels spreading grey sediment fans between moraine ridges. No text or logo.",
+    "Procedural erosion terrain render of badlands at dusk, a single stone watchtower on a strata ridge above dendritic drainage patterns. No text or logo."
+  ],
+  "SP03-133": [
+    "Modular dungeon kit render of an empty throne hall of black stone pillars, a single iron chandelier lighting a rusted throne on a dais. No text or logo.",
+    "Modular dungeon kit render of a flooded cistern with repeating vaulted bays, torchlight rippling on black water. No text or logo."
+  ],
+  "SP03-134": [
+    "Rigid-body destruction simulation of a wooden siege tower toppling into a moat, beams splintering into secondary shards. No text or logo.",
+    "Rigid-body destruction simulation of a concrete water tower on stilts folding at one leg, chunks and bent rebar mid-fall. No text or logo."
+  ],
+  "SP03-135": [
+    "Simulated open ocean render of a capsized wooden whaling boat riding a long swell, wake foam trailing from its keel. No text or logo.",
+    "Simulated open ocean render of a basalt sea stack with a wave exploding into spray at its base under a low sun. No text or logo."
+  ],
+  "SP03-136": [
+    "Sky island environment render of an adult goat herder leading goats across a sagging chain bridge between two floating islands. No text or logo.",
+    "Sky island environment render of a tiny apple orchard on a floating rock, its shadow cast onto the clouds below. No text or logo."
+  ],
+  "SP03-137": [
+    "Instanced foliage overgrowth render of a modern red farm tractor parked in a meadow, still clearly a modern tractor, grass and vines scattered over its tires and hood. No text or logo.",
+    "Instanced foliage overgrowth render of a wooden trebuchet left on a hillside, grass instances swallowing its wheels and ivy up its arm. No text or logo."
+  ],
+  "SP03-138": [
+    "Geode cavern environment render of an old mine cart track running between crystal columns thick as towers, a miner's lamp throwing glints. No text or logo.",
+    "Geode cavern environment render of a carved stone altar at the heart of an amethyst chamber, a single candle refracted into hundreds of points. No text or logo."
+  ],
+  "SP03-139": [
+    "Particle blizzard simulation of a wolf pack crossing a frozen river in single file, silhouettes fading into white within a few lengths. No text or logo.",
+    "Particle blizzard simulation around a modern polar research container station, still clearly modern, its floodlights haloed in the particle volume. No text or logo."
+  ],
+  "SP03-140": [
+    "Exoplanet surface environment render of a derelict landing craft half-buried in violet regolith, amber sky and haze layers beyond. No text or logo.",
+    "Exoplanet surface environment render of tall wind-carved rock spires beside a still methane lake reflecting a huge pale moon. No text or logo."
+  ],
+  "SP03-141": [
+    "Level blockout greybox of a harbor with stepped docks and a warehouse block, grid floors across every pier. No text or logo.",
+    "Level blockout greybox looking up a spiral staircase inside a round tower, grey steps as stacked boxes. No text or logo."
+  ],
+  "SP03-142": [
+    "Hand-painted texture environment render of a watermill over a stream, chunky tapered stone walls and a painted wooden wheel. No text or logo.",
+    "Hand-painted texture environment render of a mushroom-cap village square seen from a hilltop path, cartoon-proportioned roofs painted warm-to-cool. No text or logo."
   ]
 }

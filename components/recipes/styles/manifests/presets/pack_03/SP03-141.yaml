@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP03-141
+packId: pack_03
+name: Level Blockout Greybox
+styleAnchors:
+  - Level Blockout Greybox
+  - game level blockout
+  - grey primitive volumes
+displayName: Level Blockout Greybox
+category: 7. Environment And Worldbuilding
+domain: game level blockout
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - environment-and-worldbuilding
+  - level-blockout
+  - greybox
+  - layout-render
+visualDna:
+  aesthetic: 'Level blockout greybox: the location rebuilt from untextured boxes, ramps and cylinders with prototype grid materials, the stage before any art pass.'
+  subject_treatment: "Portable environment render: keep the prompt's subject, action, location and camera; only how that environment is built, simulated and rendered changes, never where it is."
+  color_and_tone: Neutral mid-grey primitives, orange and dark-grey prototype grid tiles on walkable floors, one flat blue sky.
+  lighting_and_shadow: Single default directional light with simple sharp shadows and flat ambient; no mood lighting.
+  texture_and_material: Faceless primitive volumes, grid tiles showing one-meter measurements, no detail beyond the block silhouettes.
+  camera_and_composition: Keep the requested location and camera; landmarks become tall simple blocks, paths become ramps and steps.
+  atmosphere_and_mood: Honest and structural, a place stripped to space and scale.
+  rendering_and_quality: Editor-viewport render with crisp edges, no fog, no post effects and no textures besides the grid.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Level Blockout Greybox as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: grey primitive volumes; orange prototype grid floors; one-meter measure tiles; default directional light; no detail
+avoidRules:
+  - franchise likeness
+  - recognizable game or film world
+  - readable text
+  - readable signage
+  - logo
+  - HUD or UI overlay
+  - finished textures
+  - decorative props
+  - editor gizmos
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, finished textures, decorative props, editor gizmos, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: environment-and-worldbuilding
+  categoryName: 7. Environment And Worldbuilding
+  tags:
+    - 3d-and-cgi-rendering
+    - environment-and-worldbuilding
+    - level-blockout
+    - greybox
+    - layout-render
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: game level blockout

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP03-142
+packId: pack_03
+name: Hand-Painted Texture Environment
+styleAnchors:
+  - Hand-Painted Texture Environment
+  - stylized game environment
+  - painted diffuse textures
+displayName: Hand-Painted Texture Environment
+category: 7. Environment And Worldbuilding
+domain: stylized game environment
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - environment-and-worldbuilding
+  - hand-painted-textures
+  - stylized-environment
+  - game-art
+visualDna:
+  aesthetic: 'Hand-painted texture environment: chunky stylized 3D geometry wrapped in painted diffuse textures where light, shadow and wear are painted into the color itself.'
+  subject_treatment: "Portable environment render: keep the prompt's subject, action, location and camera; only how that environment is built, simulated and rendered changes, never where it is."
+  color_and_tone: Saturated warm palette with painted gradients from warm tops to cool bottoms and bright painted edge highlights.
+  lighting_and_shadow: 'Mostly unlit shading: painted light and ambient occlusion in the textures, only soft real shadows added.'
+  texture_and_material: Visible brush strokes in stone, wood and roof tiles; exaggerated chipped edges; oversized planks and cartoon-proportioned bevels.
+  camera_and_composition: Keep the requested location and camera; chunky silhouettes lean and taper for a hand-built feel.
+  atmosphere_and_mood: Cozy, warm and welcoming, a place built for adventure.
+  rendering_and_quality: Low specular, no photographic texture and no physically based sheen; strokes stay readable at distance.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hand-Painted Texture Environment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: painted diffuse textures; brush strokes in stone and wood; painted edge highlights; chunky leaning silhouettes; low specular
+avoidRules:
+  - franchise likeness
+  - recognizable game or film world
+  - readable text
+  - readable signage
+  - logo
+  - HUD or UI overlay
+  - photographic texture
+  - PBR metal sheen
+  - game-world likeness
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, photographic texture, PBR metal sheen, game-world likeness, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: environment-and-worldbuilding
+  categoryName: 7. Environment And Worldbuilding
+  tags:
+    - 3d-and-cgi-rendering
+    - environment-and-worldbuilding
+    - hand-painted-textures
+    - stylized-environment
+    - game-art
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: stylized game environment

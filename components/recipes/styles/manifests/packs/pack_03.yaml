@@ -155,6 +155,17 @@ categories:
       - pack_03/SP03-066.yaml
       - pack_03/SP03-068.yaml
       - pack_03/SP03-069.yaml
+      - pack_03/SP03-132.yaml
+      - pack_03/SP03-133.yaml
+      - pack_03/SP03-134.yaml
+      - pack_03/SP03-135.yaml
+      - pack_03/SP03-136.yaml
+      - pack_03/SP03-137.yaml
+      - pack_03/SP03-138.yaml
+      - pack_03/SP03-139.yaml
+      - pack_03/SP03-140.yaml
+      - pack_03/SP03-141.yaml
+      - pack_03/SP03-142.yaml
   - id: sensor-and-technical-shaders
     name: 8. Sensor And Technical Shaders
     presetRefs:
@@ -290,5 +301,16 @@ presetRefs:
   - pack_03/SP03-066.yaml
   - pack_03/SP03-068.yaml
   - pack_03/SP03-069.yaml
+  - pack_03/SP03-132.yaml
+  - pack_03/SP03-133.yaml
+  - pack_03/SP03-134.yaml
+  - pack_03/SP03-135.yaml
+  - pack_03/SP03-136.yaml
+  - pack_03/SP03-137.yaml
+  - pack_03/SP03-138.yaml
+  - pack_03/SP03-139.yaml
+  - pack_03/SP03-140.yaml
+  - pack_03/SP03-141.yaml
+  - pack_03/SP03-142.yaml
   - pack_03/SP03-043.yaml
   - pack_03/SP03-044.yaml

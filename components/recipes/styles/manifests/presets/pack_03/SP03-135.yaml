@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP03-135
+packId: pack_03
+name: Simulated Open Ocean Swell
+styleAnchors:
+  - Simulated Open Ocean Swell
+  - ocean surface simulation
+  - long swells with choppy detail
+displayName: Simulated Open Ocean Swell
+category: 7. Environment And Worldbuilding
+domain: ocean surface simulation
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - environment-and-worldbuilding
+  - ocean-simulation
+  - water-vfx
+  - seascape-render
+visualDna:
+  aesthetic: 'Simulated open ocean render: a spectral wave surface with long swells, choppy secondary waves, whitecap foam masks and wind-blown spray.'
+  subject_treatment: "Environment direction (retained on purpose): this preset supplies an open sea built from a simulated ocean surface with swell, whitecaps and spray; the prompt's subject, action and camera stay and are placed inside that world instead of being replaced by a stock scene."
+  color_and_tone: Deep blue-black troughs, turquoise light through thin wave crests, bright white foam and cold grey sky reflections.
+  lighting_and_shadow: Overcast or low sun reflected in broken glints; subsurface glow where light passes through crests.
+  texture_and_material: Foam streaks lined up with the wind, spray mist off crests, trailing wake foam around any object in the water.
+  camera_and_composition: Keep the requested camera; the horizon tilts with the swell and the nearest wave dominates the frame.
+  atmosphere_and_mood: Cold, heaving and indifferent, the sea larger than anything on it.
+  rendering_and_quality: Physically based water with correct fresnel reflection, crest translucency and particle spray; no glassy flat water.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Simulated Open Ocean Swell as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: long swells with choppy detail; wind-aligned foam streaks; translucent turquoise crests; spray mist; fresnel reflections
+avoidRules:
+  - franchise likeness
+  - recognizable game or film world
+  - readable text
+  - readable signage
+  - logo
+  - HUD or UI overlay
+  - flat calm water
+  - lighthouse
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, flat calm water, lighthouse, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: environment-and-worldbuilding
+  categoryName: 7. Environment And Worldbuilding
+  tags:
+    - 3d-and-cgi-rendering
+    - environment-and-worldbuilding
+    - ocean-simulation
+    - water-vfx
+    - seascape-render
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: ocean surface simulation

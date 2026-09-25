@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP03-136
+packId: pack_03
+name: Floating Sky Island Archipelago
+styleAnchors:
+  - Floating Sky Island Archipelago
+  - fantasy world environment
+  - inverted rock islands
+displayName: Floating Sky Island Archipelago
+category: 7. Environment And Worldbuilding
+domain: fantasy world environment
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - environment-and-worldbuilding
+  - sky-islands
+  - fantasy-environment
+  - aerial-world
+visualDna:
+  aesthetic: 'Sky island environment render: inverted-cone rock islands hanging above a cloud sea, root-bound undersides, waterfalls pouring off their edges into mist.'
+  subject_treatment: "Environment direction (retained on purpose): this preset supplies an archipelago of floating rock islands above a sea of clouds, linked by bridges and falling water; the prompt's subject, action and camera stay and are placed inside that world instead of being replaced by a stock scene."
+  color_and_tone: Warm sunlit tops in grass green and sandstone, cool violet-blue undersides, white-gold cloud sea.
+  lighting_and_shadow: High sun lighting island tops while undersides fall into blue shade; islands cast soft shadows onto the cloud layer.
+  texture_and_material: Exposed strata and dangling roots under each island, rope and chain bridges, mist trails from the waterfalls.
+  camera_and_composition: Keep the requested camera; islands stack at different heights and sizes to sell great depth and scale.
+  atmosphere_and_mood: Dizzy, bright and wondrous, a world with no ground.
+  rendering_and_quality: Volumetric cloud sea with aerial perspective between islands; clear scale cues from bridges and trees.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Floating Sky Island Archipelago as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: inverted rock islands; dangling roots; waterfalls falling into mist; cloud sea below; stacked depth scale
+avoidRules:
+  - franchise likeness
+  - recognizable game or film world
+  - readable text
+  - readable signage
+  - logo
+  - HUD or UI overlay
+  - airship fleet
+  - game-world likeness
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: franchise likeness, recognizable game or film world, readable text, readable signage, logo, HUD or UI overlay, airship fleet, game-world likeness, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: environment-and-worldbuilding
+  categoryName: 7. Environment And Worldbuilding
+  tags:
+    - 3d-and-cgi-rendering
+    - environment-and-worldbuilding
+    - sky-islands
+    - fantasy-environment
+    - aerial-world
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: fantasy world environment

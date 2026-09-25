@@ -3,7 +3,7 @@
     {
       "id": "pack_03",
       "name": "3D & CGI Rendering",
-      "presetCount": 131
+      "presetCount": 142
     }
   ],
   "presets": [
@@ -1907,6 +1907,232 @@
       "searchableText": "sp03-069 vfx simulation (fire/smoke) 7. environment and worldbuilding environment directions pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding"
     },
     {
+      "id": "SP03-132",
+      "name": "Hydraulic Erosion Heightfield",
+      "styleAnchors": [
+        "Hydraulic Erosion Heightfield",
+        "procedural terrain simulation",
+        "dendritic erosion gullies"
+      ],
+      "ref": "pack_03/SP03-132.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "environment-and-worldbuilding",
+      "categoryName": "7. Environment And Worldbuilding",
+      "domain": "procedural terrain simulation",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "environment-and-worldbuilding",
+        "procedural-terrain-simulation"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-132 hydraulic erosion heightfield procedural terrain simulation dendritic erosion gullies 7. environment and worldbuilding environment directions procedural terrain simulation pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding procedural-terrain-simulation"
+    },
+    {
+      "id": "SP03-133",
+      "name": "Modular Dungeon Kit Render",
+      "styleAnchors": [
+        "Modular Dungeon Kit Render",
+        "game level environment art",
+        "snap-grid stone kit pieces"
+      ],
+      "ref": "pack_03/SP03-133.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "environment-and-worldbuilding",
+      "categoryName": "7. Environment And Worldbuilding",
+      "domain": "game level environment art",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "environment-and-worldbuilding",
+        "game-level-environment-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-133 modular dungeon kit render game level environment art snap-grid stone kit pieces 7. environment and worldbuilding environment directions game level environment art pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding game-level-environment-art"
+    },
+    {
+      "id": "SP03-134",
+      "name": "Rigid-Body Destruction Simulation",
+      "styleAnchors": [
+        "Rigid-Body Destruction Simulation",
+        "VFX destruction simulation",
+        "Voronoi fracture chunks"
+      ],
+      "ref": "pack_03/SP03-134.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "environment-and-worldbuilding",
+      "categoryName": "7. Environment And Worldbuilding",
+      "domain": "VFX destruction simulation",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "environment-and-worldbuilding",
+        "vfx-destruction-simulation"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-134 rigid-body destruction simulation vfx destruction simulation voronoi fracture chunks 7. environment and worldbuilding environment directions vfx destruction simulation pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding vfx-destruction-simulation"
+    },
+    {
+      "id": "SP03-135",
+      "name": "Simulated Open Ocean Swell",
+      "styleAnchors": [
+        "Simulated Open Ocean Swell",
+        "ocean surface simulation",
+        "long swells with choppy detail"
+      ],
+      "ref": "pack_03/SP03-135.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "environment-and-worldbuilding",
+      "categoryName": "7. Environment And Worldbuilding",
+      "domain": "ocean surface simulation",
+      "tags": ["3d-and-cgi-rendering", "environment-and-worldbuilding", "ocean-surface-simulation"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-135 simulated open ocean swell ocean surface simulation long swells with choppy detail 7. environment and worldbuilding environment directions ocean surface simulation pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding ocean-surface-simulation"
+    },
+    {
+      "id": "SP03-136",
+      "name": "Floating Sky Island Archipelago",
+      "styleAnchors": [
+        "Floating Sky Island Archipelago",
+        "fantasy world environment",
+        "inverted rock islands"
+      ],
+      "ref": "pack_03/SP03-136.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "environment-and-worldbuilding",
+      "categoryName": "7. Environment And Worldbuilding",
+      "domain": "fantasy world environment",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "environment-and-worldbuilding",
+        "fantasy-world-environment"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-136 floating sky island archipelago fantasy world environment inverted rock islands 7. environment and worldbuilding environment directions fantasy world environment pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding fantasy-world-environment"
+    },
+    {
+      "id": "SP03-137",
+      "name": "Instanced Foliage Overgrowth",
+      "styleAnchors": [
+        "Instanced Foliage Overgrowth",
+        "procedural vegetation scatter",
+        "mask-driven scatter by slope and occlusion"
+      ],
+      "ref": "pack_03/SP03-137.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "environment-and-worldbuilding",
+      "categoryName": "7. Environment And Worldbuilding",
+      "domain": "procedural vegetation scatter",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "environment-and-worldbuilding",
+        "procedural-vegetation-scatter"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-137 instanced foliage overgrowth procedural vegetation scatter mask-driven scatter by slope and occlusion 7. environment and worldbuilding environment directions procedural vegetation scatter pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding procedural-vegetation-scatter"
+    },
+    {
+      "id": "SP03-138",
+      "name": "Geode Cavern Environment",
+      "styleAnchors": [
+        "Geode Cavern Environment",
+        "underground crystal environment",
+        "giant faceted crystal columns"
+      ],
+      "ref": "pack_03/SP03-138.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "environment-and-worldbuilding",
+      "categoryName": "7. Environment And Worldbuilding",
+      "domain": "underground crystal environment",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "environment-and-worldbuilding",
+        "underground-crystal-environment"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-138 geode cavern environment underground crystal environment giant faceted crystal columns 7. environment and worldbuilding environment directions underground crystal environment pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding underground-crystal-environment"
+    },
+    {
+      "id": "SP03-139",
+      "name": "Particle Blizzard Simulation",
+      "styleAnchors": [
+        "Particle Blizzard Simulation",
+        "weather particle simulation",
+        "wind-driven particle sheets"
+      ],
+      "ref": "pack_03/SP03-139.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "environment-and-worldbuilding",
+      "categoryName": "7. Environment And Worldbuilding",
+      "domain": "weather particle simulation",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "environment-and-worldbuilding",
+        "weather-particle-simulation"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-139 particle blizzard simulation weather particle simulation wind-driven particle sheets 7. environment and worldbuilding environment directions weather particle simulation pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding weather-particle-simulation"
+    },
+    {
+      "id": "SP03-140",
+      "name": "Exoplanet Surface Environment",
+      "styleAnchors": [
+        "Exoplanet Surface Environment",
+        "alien planet environment",
+        "giant sky planet or twin suns"
+      ],
+      "ref": "pack_03/SP03-140.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "environment-and-worldbuilding",
+      "categoryName": "7. Environment And Worldbuilding",
+      "domain": "alien planet environment",
+      "tags": ["3d-and-cgi-rendering", "environment-and-worldbuilding", "alien-planet-environment"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-140 exoplanet surface environment alien planet environment giant sky planet or twin suns 7. environment and worldbuilding environment directions alien planet environment pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding alien-planet-environment"
+    },
+    {
+      "id": "SP03-141",
+      "name": "Level Blockout Greybox",
+      "styleAnchors": ["Level Blockout Greybox", "game level blockout", "grey primitive volumes"],
+      "ref": "pack_03/SP03-141.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "environment-and-worldbuilding",
+      "categoryName": "7. Environment And Worldbuilding",
+      "domain": "game level blockout",
+      "tags": ["3d-and-cgi-rendering", "environment-and-worldbuilding", "game-level-blockout"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-141 level blockout greybox game level blockout grey primitive volumes 7. environment and worldbuilding environment directions game level blockout pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding game-level-blockout"
+    },
+    {
+      "id": "SP03-142",
+      "name": "Hand-Painted Texture Environment",
+      "styleAnchors": [
+        "Hand-Painted Texture Environment",
+        "stylized game environment",
+        "painted diffuse textures"
+      ],
+      "ref": "pack_03/SP03-142.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "environment-and-worldbuilding",
+      "categoryName": "7. Environment And Worldbuilding",
+      "domain": "stylized game environment",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "environment-and-worldbuilding",
+        "stylized-game-environment"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-142 hand-painted texture environment stylized game environment painted diffuse textures 7. environment and worldbuilding environment directions stylized game environment pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding stylized-game-environment"
+    },
+    {
       "id": "SP03-043",
       "name": "X-Ray Shader",
       "ref": "pack_03/SP03-043.yaml",
@@ -1931,5 +2157,5 @@
       "searchableText": "sp03-044 thermal vision 8. sensor and technical shaders technical shaders pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders"
     }
   ],
-  "totalPresetCount": 131
+  "totalPresetCount": 142
 }
