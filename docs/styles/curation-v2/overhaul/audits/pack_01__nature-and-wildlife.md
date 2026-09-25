@@ -22,7 +22,7 @@ Audited 2026-09-25 from the contact sheet (6 primaries + 1 variant) and full man
 ## Changes
 
 - DNA rewritten for all 6 (version 2). Every preset keeps the requested subject and applies its approach to it. Zone System Landscape states the ten-zone scale, f/64 and red-filter skies, and applies to an animal as well (one brief is a moose). Astrophotography is limited to telescope deep-sky; wide-field night landscapes moved to the new Milky Way Nightscape.
-- The name "Landscape (Ansel Adams)" is kept for continuity; the DNA describes the Zone System mechanism and never asks for the photographer's work.
+- Renamed SP01-047 "Landscape (Ansel Adams)" to **Zone System Landscape**: the preset name is injected into the prompt through `creative_brief`, so a real photographer's name would ask for his work. The DNA describes the mechanism instead.
 - 3 new briefs per preset, no subject repeated in the category.
 - New presets (pending cards): Bird-in-Flight Telephoto, Camera-Trap Night Flash, Long-Exposure Seascape, Milky Way Nightscape, Supercell Storm Landscape, Intimate Forest Landscape, Backlit Botanical, High-Key Snow Wildlife, Low-Key Rim-Lit Wildlife, Focus-Stacked Specimen, Nature Abstract Pattern, Animal-in-Habitat Wide Angle, Minimalist Fog Landscape, Blackwater Night Dive. Category now 20.
 - Camera-Trap and Animal-in-Habitat own only the camera placement; the rest are approaches that keep the requested subject.

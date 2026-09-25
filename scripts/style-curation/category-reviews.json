@@ -80,7 +80,7 @@
     "displayCategory": "Nature imaging",
     "kind": "mixed",
     "expectedCount": 20,
-    "baselineHash": "f87f10e44e05133fdffef6afbc9f0503c0ea4a4b60b814738dd3d096a59603f0",
+    "baselineHash": "ada85b25fbe1c47ef5fe310f53daeb7764c97347ac56a58531fc604cbaca03e7",
     "problem": "Landscape, wildlife and macro can substitute expected subjects for the requested content.",
     "preserve": "Depth handling, fine-detail scale and tonal separation.",
     "proposedAction": "Overhaul v2: 6 presets rewritten as nature-photography approaches that keep the requested subject (an animal request stays an animal); astrophotography limited to telescope deep-sky; 14 new presets (bird in flight, camera trap, long-exposure seascape, Milky Way nightscape, supercell storm, intimate forest, backlit botanical, high-key snow, low-key rim-lit, focus-stacked specimen, nature abstract, wide-angle habitat, minimalist fog, blackwater dive) bring the category to 20, pending cards.",

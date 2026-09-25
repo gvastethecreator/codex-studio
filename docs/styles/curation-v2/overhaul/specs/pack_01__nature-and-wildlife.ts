@@ -34,6 +34,7 @@ const spec: Spec = {
   category: '6. Nature And Wildlife',
   updates: {
     'SP01-047': {
+      name: 'Zone System Landscape',
       dna: nat({
         aesthetic:
           'Zone System black-and-white landscape: a large-format view camera at f/64, exposure placed and development controlled so the print runs from pure white to deep black with every zone in between.',

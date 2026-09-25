@@ -5,7 +5,9 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP01-047',
-    name: 'Landscape (Ansel Adams)',
+    name: 'Zone System Landscape',
+    displayName: 'Zone System Landscape',
+    styleAnchors: ['Zone System Landscape'],
     category: '6. Nature And Wildlife',
     negativePrompt:
       'zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, color, flat grey tones, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake wildlife pose, friendly nature cliche, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
@@ -28,7 +30,7 @@ export const GENERATED_STYLE_PRESETS = [
       key_features:
         'ten-zone black and white; f/64 front-to-back sharpness; red-filter dark skies; raking dramatic light; silver print',
       creative_brief:
-        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Landscape (Ansel Adams) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Zone System Landscape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
