@@ -36,7 +36,7 @@ const spec: Spec = {
       briefs: [
         'Photograph of a full-size dragon skeleton made of polished mahogany with brass joints displayed in a candlelit hall. No text or logo.',
         'Photograph of a polished mahogany suit of armor with inlaid lines standing in a library corner. No text or logo.',
-        'Photograph of a rowboat made of mirror-polished mahogany gliding on a black lake. No text or logo.',
+        'Photograph of a slender racing rowboat built from mirror-polished mahogany gliding across a black lake at dawn, the flowing flame figure of the grain visible through deep French polish, mist and the reflection of pines on the hull. No text or logo.',
       ],
     },
     'SP09-003': {
@@ -52,8 +52,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Photograph of a tall hooded figure whose cloak is layers of peeling birch bark standing in a snowy forest. No text or logo.',
-        'Photograph of a violin made from curled birch bark resting on moss. No text or logo.',
-        'Photograph of a small chapel clad entirely in birch bark sheets at dusk. No text or logo.',
+        'Photograph of a violin made from curled sheets of birch bark resting on green moss in a forest clearing, dark horizontal lenticels running across its body, peeling papery edges and chalky white texture in soft overcast light. No text or logo.',
+        'Photograph of a small wayside chapel clad entirely in overlapping birch bark sheets at dusk, curled peels lifting at the corners, dark lenticel stripes and a single candle glowing through the open door. No text or logo.',
       ],
     },
     'SP09-004': {
@@ -69,8 +69,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Photograph of a colossal polished black granite bull standing in a rain-soaked plaza, reflections sliding on its flanks. No text or logo.',
-        'Photograph of a grand piano carved from polished pink granite in an empty hall. No text or logo.',
-        'Photograph of a polished grey granite throne on a windy cliff. No text or logo.',
+        'Photograph of a grand piano carved from polished pink granite in an empty concert hall, speckled feldspar crystals under a mirror-hard finish, stage lights reflecting in the lid and a single chair beside it. No text or logo.',
+        'Photograph of a throne cut from polished grey granite standing on a windswept sea cliff, black mica speckles catching the storm light, rain beading on the reflective seat and waves exploding far below. No text or logo.',
       ],
     },
     'SP09-005': {
@@ -86,8 +86,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Photograph of a giant sandstone statue of a kneeling knight half-eroded by wind, bands of red and ochre across the armor. No text or logo.',
-        'Photograph of a sandstone locomotive with eroded edges standing on rails. No text or logo.',
-        'Photograph of a sandstone harp in a quiet courtyard. No text or logo.',
+        'Photograph of a steam locomotive carved from rough red sandstone standing on rusted rails in a desert, bands of ochre and cream running along the boiler, wind-rounded edges and sand drifting against the wheels. No text or logo.',
+        'Photograph of a tall harp carved from rough layered sandstone in a quiet cloister courtyard, granular surface and warm strata running through the frame, crumbled grit at its foot and afternoon sun raking the texture. No text or logo.',
       ],
     },
     'SP09-006': {
@@ -103,8 +103,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Photograph of a veiled mourner carved from Carrara marble, the veil translucent at the edges, in a ruined chapel. No text or logo.',
-        'Photograph of a marble dragon coiled on a staircase, grey veins along its scales. No text or logo.',
-        'Photograph of a marble bicycle leaning on a stone wall. No text or logo.',
+        'Photograph of a dragon carved from white Carrara marble coiled down a grand staircase, soft grey veins flowing along its scales, polished claws and finely rasped wings, cool window light from the landing above. No text or logo.',
+        'Photograph of a life-size bicycle carved from Carrara marble leaning against an old stone wall in a narrow street, thin grey veins across the spokes, delicate chisel work on the chain and a real sparrow on the seat. No text or logo.',
       ],
     },
     'SP09-007': {
@@ -120,8 +120,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Photograph of a slate-plated dragon made of overlapping split slate sheets perched on a quarry ledge. No text or logo.',
-        'Photograph of an adult knight in armor made of riven slate scales in the rain. No text or logo.',
-        'Photograph of a slate-shingled rowing boat on a grey loch. No text or logo.',
+        'Photograph of an adult knight in armor made of riven slate scales standing in the rain beside a quarry, each dark plate cleaved into thin stepped layers, wet sheen on the edges and grey mist behind. No text or logo.',
+        'Photograph of a rowing boat shingled in overlapping split slate tiles drifting on a still grey loch, sharp stepped edges on each tile, rainwater pooling in the hull and hills fading into cloud. No text or logo.',
       ],
     },
     'SP09-008': {
@@ -137,8 +137,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Photograph of a sleeping giant made of mossy rock, moss cushions on its shoulders, in a misty glen. No text or logo.',
-        "Photograph of a knight's helmet turned to mossy stone resting on a forest floor. No text or logo.",
-        'Photograph of a mossy stone telephone booth in a forest. No text or logo.',
+        "Photograph of a knight's helmet turned to weathered stone lying on a forest floor, cushions of bright green moss filling the visor slits, grey and orange lichen crusting the crest and ferns curling around it. No text or logo.",
+        'Photograph of an old stone telephone kiosk deep in a rainforest, thick cushions of moss on its roof, lichen patterns on the stone panels and a beam of green light falling through the canopy. No text or logo.',
       ],
     },
     'SP09-009': {
@@ -153,9 +153,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a life-size bear built from fitted river stones standing in a shallow stream. No text or logo.',
-        'Photograph of a cloak of river pebbles draped on a standing figure on a beach. No text or logo.',
-        'Photograph of a river-stone armchair in a sunlit room. No text or logo.',
+        'Photograph of a life-size bear built from smooth fitted river stones standing in a shallow clear stream, each rounded pebble in grey, ochre and rust fitted like a mosaic, water rippling around its legs and dappled forest light. No text or logo.',
+        'Photograph of a long cloak made of fitted river pebbles draped over a standing figure on a windy shingle beach, the stones smooth and wet near the hem, grey sea and low clouds behind. No text or logo.',
+        'Photograph of an armchair assembled from smooth river stones in a sunlit whitewashed room, every pebble rounded and fitted tight, a wool blanket over one arm and a cat asleep on the seat. No text or logo.',
       ],
     },
     'SP09-010': {
@@ -170,9 +170,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an obsidian crown with knapped ripple facets on a black velvet cushion. No text or logo.',
+        'Photograph of a crown knapped from black obsidian resting on a deep red velvet cushion, conchoidal ripple fractures across every point, razor-thin translucent edges glowing faintly brown in a candle beam. No text or logo.',
         'Photograph of an adult woman in armor of knapped obsidian plates with rainbow sheen on a lava field. No text or logo.',
-        'Photograph of an obsidian wolf sculpture on a snowy ridge. No text or logo.',
+        'Photograph of a wolf sculpture knapped from black obsidian standing on a snowy ridge at sunset, glassy conchoidal fractures along its fur, razor edges catching pink light and snow crystals on its back. No text or logo.',
       ],
     },
     'SP09-011': {
@@ -187,9 +187,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a grandfather clock covered in dense wolf fur standing in a snowbound cabin. No text or logo.',
+        'Photograph of a tall grandfather clock covered in dense grey-brown wolf fur standing in a snowbound log cabin, guard hairs flowing downward over the case, soft underfur at the edges and firelight on the brass dial. No text or logo.',
         "Photograph of a knight's cape and helmet crest made of wolf fur on a frozen battlefield. No text or logo.",
-        'Photograph of an armchair covered in silver wolf fur by a fire. No text or logo.',
+        'Photograph of a deep armchair upholstered in silver wolf fur beside a crackling hearth, directional flow of the guard hairs over the arms, soft underfur showing where it parts and a cup of tea on the table. No text or logo.',
       ],
     },
     'SP09-012': {
@@ -204,9 +204,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a violin covered in emerald-and-gold snake scales on a black cloth. No text or logo.',
+        'Photograph of a violin covered in overlapping emerald-and-gold snake scales lying on black cloth, each keeled scale catching an iridescent sheen, a banded pattern running along the neck and the bow beside it. No text or logo.',
         'Photograph of an adult woman in a gown of iridescent snake scales in a desert ruin. No text or logo.',
-        'Photograph of a snake-scaled carriage in a rainy street. No text or logo.',
+        'Photograph of a horse-drawn carriage covered in iridescent snake scales waiting on a rainy cobbled street at night, scales shifting from green to violet under the gas lamps, the coachman in a dark cloak. No text or logo.',
       ],
     },
     'SP09-013': {
@@ -221,9 +221,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a feathered armored helmet with overlapping raven feathers on a battlefield at dusk. No text or logo.',
-        'Photograph of a grand staircase banister covered in owl feathers. No text or logo.',
-        'Photograph of a feathered rowboat on a still pond. No text or logo.',
+        'Photograph of an armored helmet covered in overlapping glossy raven feathers resting on a broken shield on a battlefield at dusk, barbs and shafts sharp, blue-violet iridescence on the crest feathers. No text or logo.',
+        'Photograph of a sweeping staircase banister covered in soft barred owl feathers in an old manor, the feathers overlapping downward like a wing, dusty afternoon light across their edges. No text or logo.',
+        'Photograph of a small rowboat covered in overlapping white swan feathers floating on a still pond at dawn, the feathers lifting slightly in the breeze and reflected perfectly in the water. No text or logo.',
       ],
     },
     'SP09-014': {
@@ -238,9 +238,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of a sunken knight's armor overgrown with pink and orange coral standing on a sea bed. No text or logo.",
-        'Photograph of a coral chandelier in a dark ballroom. No text or logo.',
-        'Photograph of a coral-formed throne in a sea cave. No text or logo.',
+        'Photograph of a sunken diving bell overgrown with pink and orange branching coral on the sea bed, brain coral swelling over its portholes, parrotfish grazing the rim and blue light filtering from above. No text or logo.',
+        'Photograph of a chandelier grown from branching pink and orange coral hanging in a dark sunken ballroom, fish swimming between the arms, brain coral on the ceiling rose and shafts of blue sea light. No text or logo.',
+        'Photograph of a throne formed from brain coral and branching staghorn coral in a sea cave, bright calcareous colors, sea anemones in the armrests and a moray eel peering from the base. No text or logo.',
       ],
     },
     'SP09-015': {
@@ -255,9 +255,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a honeycomb crown dripping honey on a stone altar. No text or logo.',
-        'Photograph of a honeycomb suit of armor glowing amber in sunlight. No text or logo.',
-        'Photograph of a honeycomb lantern in a dark barn. No text or logo.',
+        'Photograph of a crown made of golden beeswax honeycomb resting on a stone altar, hexagonal cells glowing translucent in a sunbeam, honey dripping slowly down the points and a few bees crawling over it. No text or logo.',
+        "Photograph of a beekeeper's smoker and veiled hat grown over with golden hexagonal honeycomb wax on a garden bench, cells glowing amber in the late sun, honey pooling on the wood and bees crawling over the brim. No text or logo.",
+        'Photograph of a honeycomb-wax lantern hanging in a dark barn, a candle inside making every hexagonal cell glow amber, honey drips on the beam below and dust floating in the light. No text or logo.',
       ],
     },
     'SP09-016': {
@@ -272,9 +272,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a glacier-ice warhorse with a knight rider, blue depths and trapped bubbles, on a frozen plain. No text or logo.',
-        'Photograph of a grand piano carved from glacier ice in a dark hall. No text or logo.',
-        'Photograph of a glacier-ice cathedral door. No text or logo.',
+        'Photograph of a life-size bison carved from dense blue glacier ice standing on a frozen plain, trapped bubbles and fracture planes inside its hump, melt-smoothed horns and low pink sunlight passing through. No text or logo.',
+        'Photograph of a grand piano carved from dense blue glacier ice in a dark stone hall, trapped bubbles and fracture planes glowing in a single spotlight, meltwater dripping from the keys onto the floor. No text or logo.',
+        'Photograph of a great cathedral door carved from glacier ice in a snowstorm, deep blue fracture planes and trapped air bubbles inside, melt-smoothed edges around carved saints and warm light behind it. No text or logo.',
       ],
     },
     'SP09-044': {
@@ -289,9 +289,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of a sea-sponge knight's helmet on a beach at dusk. No text or logo.",
-        'Photograph of an armchair made of porous sea sponge in a white room. No text or logo.',
-        'Photograph of a sponge-textured bust of a queen on a plinth. No text or logo.',
+        'Photograph of an old diving helmet grown from porous tan sea sponge sitting on a wet beach at dusk, irregular holes of every size, soft fibers at the rims and small crabs sheltering in the openings. No text or logo.',
+        'Photograph of an armchair made entirely of porous tan sea sponge in a white-walled room, irregular holes and soft fiber texture across the seat and arms, window light casting soft shadows into the pores. No text or logo.',
+        'Photograph of a bust of a queen made of sea sponge on a marble plinth in a museum, irregular pores forming her crown and hair, soft tan fibers catching a gallery spotlight. No text or logo.',
       ],
     },
     'SP09-055': {
@@ -306,9 +306,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an amethyst-crystal dragon skull catching candlelight in a cave. No text or logo.',
-        "Photograph of a sapphire-crystal knight's gauntlet on a velvet cloth. No text or logo.",
-        'Photograph of a clear quartz rocking horse in a nursery. No text or logo.',
+        'Photograph of a dragon skull made of faceted amethyst crystal resting in a candlelit cave, internal refractions throwing violet light onto the rock, color zones deepening toward the horns and clear points at the teeth. No text or logo.',
+        'Photograph of a hummingbird carved from faceted blue sapphire crystal perched on a real flower stem, internal refractions and color zoning through its wings, a spotlight scattering blue sparks on the petals. No text or logo.',
+        'Photograph of a rocking horse carved from clear quartz crystal in a sunlit nursery, rainbow refractions spilling across the floorboards, cloudy inclusions in the body and faceted edges on the mane. No text or logo.',
       ],
     },
     'SP09-063': {
@@ -323,9 +323,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of a knight's armor on a stand draped in thick dusty cobwebs in an abandoned hall. No text or logo.",
-        'Photograph of a grand piano under layers of cobweb. No text or logo.',
-        'Photograph of a wedding cake shrouded in cobwebs on a long table. No text or logo.',
+        'Photograph of an old printing press in an abandoned workshop draped in thick dusty cobwebs, silk strands sagging between the rollers and levers, grey dust on every surface and a shaft of window light. No text or logo.',
+        'Photograph of a grand piano in an abandoned ballroom shrouded under thick layers of dusty cobweb, silk strands hanging from the lid like curtains, a beam of moonlight showing the dust drifting. No text or logo.',
+        'Photograph of a tiered wedding cake shrouded in grey cobwebs on a long banquet table in a derelict manor, spiders in the silk, dust on the candelabras and faded ribbons. No text or logo.',
       ],
     },
     'SP09-066': {
@@ -340,9 +340,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a sand-sculpted sleeping dragon on a beach with the tide approaching. No text or logo.',
-        'Photograph of a sand knight on a sand horse, crumbling at the edges. No text or logo.',
-        'Photograph of a sand-sculpted cathedral facade at sunset. No text or logo.',
+        'Photograph of a huge sleeping dragon sculpted from fine packed beach sand, scales carved with a knife, grains visible in close light, crumbling edges at the tail and the incoming tide about to reach it at sunset. No text or logo.',
+        'Photograph of a sand-sculpted sea turtle crawling toward the waves on a wide beach, fine grain texture on its shell plates, the flippers beginning to crumble in the wind and real footprints around it. No text or logo.',
+        'Photograph of a sand-sculpted cathedral facade on a beach at sunset, pointed arches and a rose window carved from packed sand, fine grains glowing orange and one tower slumping as it dries. No text or logo.',
       ],
     },
     'SP09-068': {
@@ -357,9 +357,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a lava-rock golem kneeling on black sand. No text or logo.',
-        'Photograph of a throne of ropy lava rock in a volcanic cave. No text or logo.',
-        'Photograph of a lava-rock teapot on a table. No text or logo.',
+        'Photograph of a golem built from porous black-red lava rock kneeling on a black sand beach, vesicles and ropy flow texture across its shoulders, steam rising from cracks and surf breaking behind. No text or logo.',
+        'Photograph of a throne of ropy cooled lava rock inside a volcanic cave, pahoehoe folds forming the armrests, porous red scoria on the back and faint orange glow from a fissure behind it. No text or logo.',
+        'Photograph of a teapot made of porous black lava rock on a rough wooden table, vesicles across its belly, a ropy flow ridge along the spout and steam curling from the lid. No text or logo.',
       ],
     },
     'SP09-079': {
@@ -374,9 +374,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of a mother-of-pearl knight's helmet shimmering on a dark shore. No text or logo.",
-        'Photograph of a mother-of-pearl violin. No text or logo.',
-        'Photograph of a nacre-inlaid carriage in a moonlit courtyard. No text or logo.',
+        'Photograph of an old music box sheathed in mother of pearl open on a dark pebble shore at twilight, iridescent nacre shifting from pink to green to silver, layered plates catching the last light. No text or logo.',
+        'Photograph of a violin inlaid entirely with mother of pearl on a black silk cloth, shimmering nacre plates shifting color along the curves, layered sheen on the scroll under a soft lamp. No text or logo.',
+        'Photograph of a ceremonial carriage covered in nacre inlay standing in a moonlit palace courtyard, iridescent panels shimmering blue and pink, horses waiting in the shadow of the arch. No text or logo.',
       ],
     },
     'SP09-080': {
@@ -391,9 +391,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a shield covered in crimson dragon scales leaning on a burnt tree. No text or logo.',
+        'Photograph of a round shield covered in large overlapping crimson dragon scales leaning against a burnt tree, ridged edges, metallic sheen and deep battle scratches across the scales, smoke drifting over the field. No text or logo.',
         'Photograph of an adult woman in a dragon-scale coat with metallic bronze sheen in a storm. No text or logo.',
-        'Photograph of a dragon-scaled door in a castle wall. No text or logo.',
+        'Photograph of a heavy door covered in bronze-green dragon scales set in a castle wall, ridged overlapping plates, metallic sheen and old claw scratches, a torch burning in an iron bracket beside it. No text or logo.',
       ],
     },
   },

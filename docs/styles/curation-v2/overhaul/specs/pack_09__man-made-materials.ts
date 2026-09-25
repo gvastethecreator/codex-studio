@@ -22,8 +22,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         "Photograph of a knight's full armor made of brushed aluminum with machined chamfers standing in a stone hall. No text or logo.",
-        'Photograph of a brushed-aluminum dragon skull on a dark plinth. No text or logo.',
-        'Photograph of a brushed-aluminum rocking horse in a white room. No text or logo.',
+        'Photograph of a dragon skull machined from brushed aluminum on a dark plinth, fine parallel brush lines running along the jaw, soft anisotropic highlights stretching across the curves and crisp chamfered eye sockets. No text or logo.',
+        'Photograph of a rocking horse made of brushed aluminum in a white gallery, satin parallel grain on the flanks catching a long soft highlight, bolted joints and a real horsehair tail. No text or logo.',
       ],
     },
     'SP09-019': {
@@ -38,9 +38,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a gilded wolf skull covered in cracked gold leaf on black velvet. No text or logo.',
-        'Photograph of a rowboat entirely covered in gold leaf on a dark lake. No text or logo.',
-        'Photograph of a gold-leafed bicycle leaning on a church wall. No text or logo.',
+        'Photograph of a wolf skull covered in thin beaten gold leaf on black velvet, visible square leaf seams, fine crackle across the brow and burnished highlights on the fangs under a single warm spotlight. No text or logo.',
+        'Photograph of a small rowboat entirely covered in gold leaf drifting on a dark lake at night, leaf seams and crackle along the hull, the gold reflected as a shimmering streak in the black water. No text or logo.',
+        'Photograph of an old bicycle covered in cracked gold leaf leaning against a weathered church wall, burnished frame and dull matte gold on the spokes, flakes lifting at the pedals. No text or logo.',
       ],
     },
     'SP09-020': {
@@ -55,9 +55,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a copper-patina knight statue with verdigris streaks in the rain. No text or logo.',
-        'Photograph of a verdigris-coated grand piano in a greenhouse. No text or logo.',
-        'Photograph of a copper-patina owl on a rooftop. No text or logo.',
+        'Photograph of a copper statue of a knight on a town square in the rain, thick green verdigris bloom streaking down from the helmet over bronze-brown armor, pale green runoff stains on the stone plinth. No text or logo.',
+        'Photograph of a grand piano sheathed in aged copper standing inside a Victorian greenhouse, verdigris bloom in the corners and along the lid edge, warm bronze showing where hands have polished it. No text or logo.',
+        'Photograph of a copper owl sculpture on a slate rooftop at dusk, green verdigris pooled in its feather grooves, dark bronze-brown on the beak and eyes, pigeons perched beside it. No text or logo.',
       ],
     },
     'SP09-021': {
@@ -72,9 +72,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of a forged-carbon knight's helmet on a dark plinth. No text or logo.",
-        'Photograph of a forged-carbon violin. No text or logo.',
-        'Photograph of a forged-carbon throne in a concrete room. No text or logo.',
+        "Photograph of a knight's helmet made of forged carbon fiber on a dark plinth, marbled chopped-fiber pattern swirling across the visor under a deep glossy clear coat, cold rim light tracing the crest. No text or logo.",
+        'Photograph of a violin made of forged carbon fiber resting on grey felt, the marbled chopped-fiber texture flowing across its body under a thick glossy clear coat, soft studio highlights on the scroll. No text or logo.',
+        'Photograph of a throne made of forged carbon fiber in a bare concrete room, marbled black and grey fiber chips under a mirror clear coat, a single skylight beam falling across the seat. No text or logo.',
       ],
     },
     'SP09-022': {
@@ -89,9 +89,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a raw concrete dragon cast with board-form marks lying in a field. No text or logo.',
-        'Photograph of a concrete cathedral organ in a brutalist hall. No text or logo.',
-        'Photograph of a raw concrete armchair by a window. No text or logo.',
+        'Photograph of a raw concrete dragon lying in a wild meadow, board-form wood grain imprinted on its flanks, tie holes along the spine, air voids and grey mineral texture, grass growing through a crack. No text or logo.',
+        'Photograph of a cathedral pipe organ cast in raw board-formed concrete inside a brutalist church, tie holes in the pipes, air voids and a shaft of daylight falling across the grey keyboard. No text or logo.',
+        'Photograph of a raw cast-concrete armchair by a tall window, board-form grain on the seat, small air voids and a wool blanket thrown over one arm for contrast. No text or logo.',
       ],
     },
     'SP09-023': {
@@ -106,9 +106,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a giant brick-built horse with mortar joints standing in a factory yard. No text or logo.',
-        'Photograph of a brick throne in a ruined hall. No text or logo.',
-        'Photograph of a brick-built rowboat on a canal. No text or logo.',
+        'Photograph of a giant horse built from aged red bricks in Flemish bond standing in an empty factory yard, worn brick edges, crumbling lime mortar joints and moss in the lower courses. No text or logo.',
+        'Photograph of a throne built from old fired bricks in a ruined hall, running bond with worn corners, lime mortar crumbling from the armrests and ivy creeping up the back. No text or logo.',
+        'Photograph of a rowboat built from aged brick floating impossibly on a still city canal, mortar joints along the hull, worn orange bricks and reflections of warehouses. No text or logo.',
       ],
     },
     'SP09-024': {
@@ -123,9 +123,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of a knight's statue coated in wet asphalt reflecting street lamps at night. No text or logo.",
-        'Photograph of a wet-asphalt grand staircase glistening in rain. No text or logo.',
-        'Photograph of a wolf sculpture of wet asphalt on a dark street. No text or logo.',
+        'Photograph of a knight statue coated in wet black asphalt on a city corner at night, dark aggregate texture slick with rain, street lamps and a red traffic light reflected across the armor. No text or logo.',
+        'Photograph of a grand staircase surfaced in wet asphalt glistening in heavy rain, dark aggregate on each step, puddles mirroring neon signs from the street beyond an open door. No text or logo.',
+        'Photograph of a wolf sculpture surfaced in wet asphalt on a dark street, rain pooling on its back, the gritty aggregate texture visible, headlights streaking across its reflective flanks. No text or logo.',
       ],
     },
     'SP09-026': {
@@ -141,8 +141,8 @@ const spec: Spec = {
       avoid: AVOID,
       briefs: [
         'Photograph of a life-size knight in armor made of red injection-molded plastic with visible parting lines. No text or logo.',
-        'Photograph of a dragon made of glossy yellow plastic on a lawn. No text or logo.',
-        'Photograph of a plastic cathedral door in pastel blue. No text or logo.',
+        'Photograph of a dragon made of glossy yellow injection-molded plastic lying on a suburban lawn, visible parting lines along the wings, rounded edges, sprue marks under the belly and a slight toy-like sheen. No text or logo.',
+        'Photograph of a cathedral door molded in pastel blue plastic set into a stone wall, parting lines through the carved saints, rounded toy-like edges and a slight gloss in flat daylight. No text or logo.',
       ],
     },
     'SP09-027': {
@@ -157,9 +157,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'tire object'],
       briefs: [
-        "Photograph of a knight's helmet molded from matte black rubber with ridges on a steel table. No text or logo.",
-        'Photograph of a rubber horse sculpture in a warehouse. No text or logo.',
-        'Photograph of a black rubber throne in a concrete room. No text or logo.',
+        'Photograph of a vintage typewriter molded entirely from matte black vulcanized rubber on a steel workshop table, tread-like ridges across the carriage and keys, slightly worn edges and a soft grey bloom on the surface. No text or logo.',
+        'Photograph of a horse sculpture molded from matte black vulcanized rubber in an empty warehouse, tread-like ridges along its mane and legs, slight wear on the hooves and dusty floor. No text or logo.',
+        'Photograph of a throne molded from black tire rubber in a concrete room, deep tread ridges on the back and armrests, worn smooth patches on the seat and a single hanging bulb. No text or logo.',
       ],
     },
     'SP09-028': {
@@ -174,9 +174,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a glass knight statue crazed with radial cracks in a dark hall. No text or logo.',
-        'Photograph of a cracked glass crown on a cushion. No text or logo.',
-        'Photograph of a shattered-glass swan on a lake. No text or logo.',
+        'Photograph of a tall glass aquarium crazed with radial cracks from a single impact point, the water still held inside, goldfish swimming behind a starburst of fractures and a few missing shards on the table. No text or logo.',
+        'Photograph of a clear glass crown on a velvet cushion crazed with fine radial cracks, one point missing its tip, cracks catching a spotlight and scattering tiny glints across the cloth. No text or logo.',
+        'Photograph of a glass swan floating on a still lake at dawn, its body crazed with radial cracks spreading from the neck, missing shards on one wing and pink light caught in the fractures. No text or logo.',
       ],
     },
     'SP09-031': {
@@ -191,9 +191,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'explicit fetish content'],
       briefs: [
-        'Photograph of a glossy red latex-skinned dragon on a black floor. No text or logo.',
-        'Photograph of a latex-covered armchair in a white room. No text or logo.',
-        'Photograph of a black latex knight statue. No text or logo.',
+        'Photograph of a dragon skinned in stretched glossy red latex coiled on a black floor, sharp white specular streaks running along its spine and wings, taut film pulled over every ridge. No text or logo.',
+        'Photograph of an armchair wrapped in stretched glossy black latex in a white room, long sharp specular streaks following the curves, taut wrinkles at the corners of the seat. No text or logo.',
+        'Photograph of an octopus sculpture skinned in shiny black latex draped over a white plinth, sharp specular streaks sliding along each tentacle and the stretched film pulled tight over the suckers. No text or logo.',
       ],
     },
     'SP09-032': {
@@ -208,9 +208,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a full-size cardboard knight in armor with taped joints on a battlefield. No text or logo.',
-        'Photograph of a cardboard dragon in a living room. No text or logo.',
-        'Photograph of a cardboard cathedral in a garage. No text or logo.',
+        'Photograph of a full-size cardboard tuk-tuk parked on a rainy street, corrugated flutes exposed at every cut edge, parcel tape at the joints, soggy crushed corners and a driver sheltering inside. No text or logo.',
+        'Photograph of a large cardboard dragon filling a living room, corrugated flutes along its wings, parcel tape holding the joints, crushed snout and a child peeking from behind the sofa. No text or logo.',
+        'Photograph of a cardboard cathedral model built in a garage, pointed arches cut from boxes, exposed flutes in the rose window, tape strips and a work lamp shining through the nave. No text or logo.',
       ],
     },
     'SP09-042': {
@@ -225,9 +225,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a bubble-wrapped dragon statue in a museum storeroom. No text or logo.',
-        'Photograph of a bubble-wrap throne in a white room. No text or logo.',
-        'Photograph of a knight wrapped in bubble wrap. No text or logo.',
+        'Photograph of a stuffed polar bear wrapped in clear bubble wrap in a dim museum storeroom, rows of air cells catching the fluorescent light, packing tape across its back and crates stacked around it. No text or logo.',
+        'Photograph of a throne wrapped in clear bubble wrap in a bare white room, rows of air cells bulging over the carved armrests, a few popped bubbles and soft reflections in each cell. No text or logo.',
+        'Photograph of a vintage motorcycle wrapped in layers of clear bubble wrap in a shipping warehouse, chrome blurred beneath the air cells, forklift behind and tape crossing the fuel tank. No text or logo.',
       ],
     },
     'SP09-046': {
@@ -242,9 +242,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a sequin-covered dragon on a stage. No text or logo.',
-        'Photograph of a gold-sequined throne in a dark hall. No text or logo.',
-        'Photograph of a silver-sequined horse in a field. No text or logo.',
+        'Photograph of a flamingo covered in overlapping pink and coral sequins standing on one leg on a dark stage, each paillette catching the spotlight and scattering glints across the floor and curtain. No text or logo.',
+        'Photograph of a throne covered in gold sequins in a dark hall, overlapping paillettes shimmering in candlelight, a few loose sequins on the stone floor like fallen coins. No text or logo.',
+        'Photograph of a life-size horse covered in silver sequins standing in a green field at golden hour, overlapping sequins rippling across its muscles and scattering light onto the grass. No text or logo.',
       ],
     },
     'SP09-048': {
@@ -259,12 +259,13 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of a cork knight's helmet on a desk. No text or logo.",
-        'Photograph of a cork-carved owl on a branch. No text or logo.',
-        'Photograph of a cork armchair. No text or logo.',
+        'Photograph of an old globe made of granulated cork board on a wooden desk, speckled cork texture across the continents, soft pinholes where travel notes were once pinned and a brass lamp beside it. No text or logo.',
+        'Photograph of an owl carved from granulated cork perched on a mossy branch, speckled light and dark granules, soft pinholes across its chest and carved feather edges crumbling slightly. No text or logo.',
+        'Photograph of an armchair upholstered in granulated cork board in a sunlit reading room, speckled texture across the seat, a few pushpins still stuck in the arm and a book resting on it. No text or logo.',
       ],
     },
     'SP09-049': {
+      name: 'Hook-and-Loop Fastener',
       dna: material(
         'Hook-and-loop fastener: dense nylon hooks and loops covering the target in fuzzy and bristly zones.',
         'the target is covered in hook-and-loop fabric panels, bristly hooks and fuzzy loops.',
@@ -276,9 +277,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of a knight's armor covered in black hook-and-loop panels. No text or logo.",
-        'Photograph of a hook-and-loop covered cat statue. No text or logo.',
-        'Photograph of a hook-and-loop throne in a white room. No text or logo.',
+        'Photograph of a hiking backpack and boots covered in black hook-and-loop fastener panels on a mountain trail, bristly hook zones on the straps, fuzzy loop zones on the pockets and burrs caught in them. No text or logo.',
+        'Photograph of a cat statue covered in grey hook-and-loop fastener sitting on a windowsill, fuzzy loop fur on the body, bristly hooks on the ears and a feather stuck to its side. No text or logo.',
+        "Photograph of a child's climbing wall covered in hook-and-loop fastener in a playroom, bristly hook panels and fuzzy loop panels, a small child in a loop suit stuck halfway up and laughing. No text or logo.",
       ],
     },
     'SP09-060': {
@@ -293,12 +294,13 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a liquid-mercury knight rising from a pool in a stone hall. No text or logo.',
-        'Photograph of a mercury horse galloping on a beach. No text or logo.',
-        'Photograph of a liquid-metal crown on a velvet cushion. No text or logo.',
+        'Photograph of a heron rising from a pool of liquid mercury in a stone courtyard, mirror liquid metal streaming from its wings, beads rolling off its long beak and the sky reflected in its body. No text or logo.',
+        'Photograph of a horse made of liquid mercury galloping along a wet beach, its body rippling and splashing into silver beads at each stride, the sky and waves mirrored in its flanks. No text or logo.',
+        'Photograph of a crown of liquid mercury resting on a velvet cushion, the metal slowly pooling and beading at the base, perfect mirror reflections of the candles around it. No text or logo.',
       ],
     },
     'SP09-070': {
+      name: 'Expanded Polystyrene Foam',
       dna: material(
         'Polystyrene foam: white expanded foam with visible beads, carved edges and crumbs.',
         'the target is carved from white expanded polystyrene with bead texture and hot-wire cuts.',
@@ -310,9 +312,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a white polystyrene dragon on a film-set floor. No text or logo.',
-        'Photograph of a foam knight statue with hot-wire cuts. No text or logo.',
-        'Photograph of a polystyrene cathedral model. No text or logo.',
+        'Photograph of a white polystyrene giant tortoise standing on a film-set floor, visible foam beads, hot-wire carved shell plates, crumbs scattered around its feet and a painter spraying the first grey primer. No text or logo.',
+        'Photograph of a white foam mammoth tusk and skull with crisp hot-wire cuts standing in a prop workshop, beads visible on the surfaces, white crumbs and offcuts on the floor. No text or logo.',
+        'Photograph of a large polystyrene cathedral model on a workshop table, carved foam arches and towers, visible beads, a hot-wire cutter beside it and white crumbs everywhere. No text or logo.',
       ],
     },
     'SP09-071': {
@@ -327,9 +329,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a plywood dragon with exposed layered edges in a workshop. No text or logo.',
-        "Photograph of a plywood knight's armor. No text or logo.",
-        'Photograph of a plywood throne in a gallery. No text or logo.',
+        'Photograph of a plywood giraffe in a woodworking shop, exposed layered ply edges along the neck and legs, birch grain faces, screw holes and sawdust piled around its hooves. No text or logo.',
+        'Photograph of a canoe built from bent plywood on two sawhorses, exposed ply edges along the gunwales, wood grain faces, brass screws and a clamp still attached at the bow. No text or logo.',
+        'Photograph of a spiral staircase built from stacked plywood sheets in a white gallery, layered ply edges forming striped treads and handrail, pale grain faces and soft skylight falling down the stairwell. No text or logo.',
       ],
     },
     'SP09-072': {
@@ -344,9 +346,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an OSB-board horse in a barn. No text or logo.',
-        'Photograph of a knight statue built from OSB. No text or logo.',
-        'Photograph of an OSB cathedral door. No text or logo.',
+        'Photograph of a full-size elephant built from oriented strand board standing in an old barn, the chaotic mosaic of pressed wood flakes across its ears and trunk, rough cut edges and straw on the floor. No text or logo.',
+        'Photograph of a lifeguard tower built from oriented strand board on an empty beach, pressed wood flakes forming a chaotic mosaic across its walls, raw cut edges and a red flag snapping in the wind. No text or logo.',
+        'Photograph of a tall cathedral door made of oriented strand board set in a stone portal, chaotic pressed flake texture, carved arch shape and iron hinges bolted through it. No text or logo.',
       ],
     },
     'SP09-073': {
@@ -361,9 +363,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of a knight's armor surfaced with mint marbled linoleum. No text or logo.",
-        'Photograph of a linoleum-clad dragon statue in a school hallway. No text or logo.',
-        'Photograph of a linoleum throne. No text or logo.',
+        'Photograph of a jukebox surfaced with mint green marbled linoleum in a small diner, color flecks across the smooth panels, a slight sheen and seams where the sheets were joined. No text or logo.',
+        'Photograph of a rhinoceros statue clad in marbled red linoleum in a long school hallway, smooth resilient surface with colored flecks, a slight sheen and scuff marks at the base. No text or logo.',
+        'Photograph of a row of waiting-room chairs surfaced in marbled blue linoleum in a quiet clinic, color flecks and faint sheen on the smooth seats, rubber edging and a potted fern in the corner. No text or logo.',
       ],
     },
     'SP09-076': {
@@ -378,9 +380,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a dragon sculpture formed from chain-link mesh backlit at sunset. No text or logo.',
-        'Photograph of a chain-link knight standing in a field. No text or logo.',
-        'Photograph of a chain-link wedding dress on a mannequin. No text or logo.',
+        'Photograph of a whale sculpture formed from galvanized chain-link mesh on a coastal hill, backlit by the setting sun so the woven diamond pattern glows, frayed wire ends at the tail flukes. No text or logo.',
+        'Photograph of a life-size stag formed from chain-link mesh standing in a misty field, the woven diamond wire showing the sky through its body, rust spots on the antlers. No text or logo.',
+        'Photograph of a wedding dress woven from chain-link mesh on a mannequin in an abandoned factory, diamond pattern over the bodice, a long mesh train on the concrete floor. No text or logo.',
       ],
     },
     'SP09-077': {
@@ -395,9 +397,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a crown made of coiled barbed wire on a stone. No text or logo.',
-        'Photograph of a barbed-wire horse sculpture on a hill. No text or logo.',
-        'Photograph of a barbed-wire angel statue at dusk. No text or logo.',
+        'Photograph of a crown made of coiled barbed wire resting on a flat grey stone, twisted strands and sharp barbs catching cold light, rust at the points and frost on the stone. No text or logo.',
+        'Photograph of a bison sculpture wound from rusted barbed wire standing on a windy prairie hill at dusk, twisted strands forming its heavy shoulders, barbs bristling along the hump. No text or logo.',
+        'Photograph of an angel statue wound from barbed wire in a graveyard at dusk, wings made of looping twisted strands, barbs catching the last orange light. No text or logo.',
       ],
     },
     'SP09-078': {
@@ -412,9 +414,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a dragon whose wings are made of solar panels basking in sun. No text or logo.',
-        "Photograph of a knight's armor surfaced with solar cells. No text or logo.",
-        'Photograph of a solar-panel-clad chapel roof. No text or logo.',
+        'Photograph of a giant beetle whose wing cases are made of photovoltaic panels basking on a rock in full sun, blue-black cells with silver grid lines, glass surfaces reflecting the sky. No text or logo.',
+        'Photograph of a traveling caravan wagon whose curved roof is surfaced with blue-black solar cells in a sunny meadow, silver grid lines and glass glare, laundry drying on a line beside it. No text or logo.',
+        'Photograph of an old stone chapel whose steep roof is clad in photovoltaic panels, blue-black cells and grid lines under glass, gravestones and wildflowers in the churchyard. No text or logo.',
       ],
     },
   },

@@ -409,7 +409,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP09-049',
-    name: 'Velcro',
+    name: 'Hook-and-Loop Fastener',
     category: '2. Man-Made Materials',
     negativePrompt:
       'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, smooth, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
@@ -464,7 +464,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP09-070',
-    name: 'Polystyrene (Styrofoam)',
+    name: 'Expanded Polystyrene Foam',
     category: '2. Man-Made Materials',
     negativePrompt:
       'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, replacing the target with the source product, smooth plastic, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',

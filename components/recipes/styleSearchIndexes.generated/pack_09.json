@@ -465,7 +465,7 @@
     },
     {
       "id": "SP09-049",
-      "name": "Velcro",
+      "name": "Hook-and-Loop Fastener",
       "ref": "pack_09/SP09-049.yaml",
       "packId": "pack_09",
       "packName": "Texture & Materiality",
@@ -473,7 +473,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-049 velcro 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-049 hook-and-loop fastener 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-060",
@@ -489,7 +489,7 @@
     },
     {
       "id": "SP09-070",
-      "name": "Polystyrene (Styrofoam)",
+      "name": "Expanded Polystyrene Foam",
       "ref": "pack_09/SP09-070.yaml",
       "packId": "pack_09",
       "packName": "Texture & Materiality",
@@ -497,7 +497,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-070 polystyrene (styrofoam) 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-070 expanded polystyrene foam 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-071",
