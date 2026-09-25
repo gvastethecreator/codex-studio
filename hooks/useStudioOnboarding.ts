@@ -49,8 +49,9 @@ export function useStudioOnboarding({
   }, [refreshHealth]);
 
   const closeOnboarding = useCallback(() => {
+    setHasSeenOnboarding(true);
     setIsOpen(false);
-  }, []);
+  }, [setHasSeenOnboarding]);
 
   const completeOnboarding = useCallback(() => {
     setHasSeenOnboarding(true);
@@ -71,9 +72,8 @@ export function useStudioOnboarding({
       return;
     }
     autoOpenedRef.current = true;
-    setHasSeenOnboarding(true);
     setIsOpen(true);
-  }, [hasSeenOnboarding, health, isReady, setHasSeenOnboarding, shouldAutoOpen]);
+  }, [hasSeenOnboarding, health, isReady, shouldAutoOpen]);
 
   useEffect(() => {
     if (manuallyOpenedRef.current || !shouldCloseOnboardingBecauseReady(isReady, isOpen)) return;

@@ -16,25 +16,10 @@ import {
   IconTerminal as Terminal,
   IconX as X,
 } from '@tabler/icons-react';
-import fallbackStyleRecipePreview from '../assets/recipes/styles/defaults/SP01-001.webp?url';
-import stylePreviewSp01005 from '../assets/recipes/styles/defaults/SP01-005.webp?url';
-import stylePreviewSp02001 from '../assets/recipes/styles/defaults/SP02-001.webp?url';
-import stylePreviewSp02003 from '../assets/recipes/styles/defaults/SP02-003.webp?url';
-import stylePreviewSp02004 from '../assets/recipes/styles/defaults/SP02-004.webp?url';
-import stylePreviewSp06082 from '../assets/recipes/styles/defaults/SP06-082.webp?url';
-import stylePreviewSp06095 from '../assets/recipes/styles/defaults/SP06-095.webp?url';
-import stylePreviewSp11047 from '../assets/recipes/styles/defaults/SP11-047.webp?url';
-import stylePreviewSp11050 from '../assets/recipes/styles/defaults/SP11-050.webp?url';
 import {
   buildCodexStudioSetupPrompt,
   CODEX_STUDIO_SETUP_SKILL_PATH,
 } from '../lib/onboardingSetupPrompt';
-import {
-  buildOnboardingStyleCarouselEntries,
-  pickNextOnboardingStyleCarouselIndex,
-  type OnboardingStyleCarouselEntry,
-} from '../lib/onboardingStyleCarousel';
-import { getOnboardingPreviewImage } from '../lib/onboardingPreviewCatalog';
 import {
   ONBOARDING_ASK_CODEX_LABEL,
   type HealthResponse,
@@ -44,6 +29,7 @@ import {
   type StudioReadinessSnapshot,
 } from '../packages/shared/src';
 import { resolveOnboardingPrimaryAction } from '../lib/onboardingPrimaryAction';
+import { SubscriptionAuthControls } from './settings/SubscriptionAuthControls';
 import { ProviderBrandMark } from './ProviderBrandMark';
 import {
   buildInAppSetupRequest,
@@ -67,17 +53,6 @@ import {
   onboardingLogLineFromSystemLog,
   type OnboardingLogLine,
 } from '../lib/onboardingEventLog';
-
-const ONBOARDING_STYLE_PREVIEW_IMAGES = {
-  'SP01-005': getOnboardingPreviewImage('SP01-005', stylePreviewSp01005),
-  'SP02-001': getOnboardingPreviewImage('SP02-001', stylePreviewSp02001),
-  'SP02-003': getOnboardingPreviewImage('SP02-003', stylePreviewSp02003),
-  'SP02-004': getOnboardingPreviewImage('SP02-004', stylePreviewSp02004),
-  'SP06-082': getOnboardingPreviewImage('SP06-082', stylePreviewSp06082),
-  'SP06-095': getOnboardingPreviewImage('SP06-095', stylePreviewSp06095),
-  'SP11-047': getOnboardingPreviewImage('SP11-047', stylePreviewSp11047),
-  'SP11-050': getOnboardingPreviewImage('SP11-050', stylePreviewSp11050),
-};
 
 type OnboardingStatus = 'idle' | 'checking' | 'starting' | 'ready';
 type CheckTone = 'ready' | 'warning' | 'error' | 'pending';
@@ -162,77 +137,6 @@ function CheckRow({
       <div className={`flex items-center gap-2 pt-1 text-sm xl:text-xs ${toneClass}`}>
         <span className="hidden sm:inline">{status}</span>
         <StatusIcon size={16} />
-      </div>
-    </div>
-  );
-}
-
-function PreviewCard({ entry }: { entry: OnboardingStyleCarouselEntry }) {
-  return (
-    <div className="mt-6 grid grid-cols-[minmax(7.5rem,0.42fr)_minmax(0,1fr)] items-start gap-3 sm:grid-cols-1 sm:gap-4 lg:grid-cols-[minmax(15rem,0.7fr)_minmax(0,1fr)] xl:mt-4 xl:grid-cols-[minmax(9rem,0.32fr)_minmax(0,1fr)] xl:gap-4">
-      <div className="mx-auto w-full max-w-[8.75rem] sm:max-w-[22rem] lg:max-w-[24rem] xl:max-w-[12rem] 2xl:max-w-[14rem]">
-        <div className="relative overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] shadow-2xl shadow-black/40">
-          <div className="aspect-[2/3] w-full">
-            <AnimatePresence mode="wait">
-              <MotionDiv
-                key={entry.presetId}
-                initial={{ opacity: 0, scale: 1.035, x: 18, filter: 'blur(10px)' }}
-                animate={{ opacity: 1, scale: 1, x: 0, filter: 'blur(0px)' }}
-                transition={{ duration: 0.42, ease: 'power3.out' }}
-                className="absolute inset-0 grid place-items-center"
-              >
-                <img
-                  src={entry.imageUrl}
-                  srcSet={entry.imageSrcSet}
-                  sizes="(min-width: 1536px) 224px, (min-width: 1280px) 192px, (min-width: 1024px) 384px, (min-width: 640px) 352px, 140px"
-                  alt={entry.alt}
-                  width={1024}
-                  height={1536}
-                  className="h-full w-full object-contain"
-                  loading="eager"
-                  decoding="async"
-                />
-              </MotionDiv>
-            </AnimatePresence>
-          </div>
-          <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/8" />
-        </div>
-        <div className="mt-2 flex flex-col gap-0.5 px-1 sm:flex-row sm:items-center sm:justify-between sm:gap-2 xl:mt-1">
-          <span className="min-w-0 truncate text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
-            {entry.styleName}
-          </span>
-          <span className="shrink-0 font-mono text-[length:var(--wbp-label)] text-[color:var(--wb-muted)]">
-            {entry.presetId}
-          </span>
-        </div>
-      </div>
-
-      <div className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3 sm:p-5 xl:p-3">
-        <div className="mb-3 flex flex-wrap items-center gap-2 sm:mb-4 xl:mb-2">
-          <span className="inline-flex items-center gap-2 rounded-[var(--wb-radius)] border border-blue-400/2 bg-blue-500/10 px-2.5 py-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-blue-200">
-            <Sparkles size={13} />
-            <span className="hidden sm:inline">Styles recipe</span>
-            <span className="sm:hidden">Style</span>
-          </span>
-          <span className="hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-2.5 py-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)] sm:inline-flex">
-            {entry.packName}
-          </span>
-        </div>
-        <AnimatePresence mode="wait">
-          <MotionDiv
-            key={`${entry.presetId}-prompt`}
-            initial={{ opacity: 0, y: 10, filter: 'blur(8px)' }}
-            animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-            transition={{ duration: 0.32, ease: 'power2.out' }}
-          >
-            <p className="text-sm font-semibold text-[color:var(--wb-ink)] xl:text-xs">
-              {entry.styleName}
-            </p>
-            <p className="mt-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2.5 font-mono text-[length:var(--wbp-label)] leading-5 text-[color:var(--wb-ink)] sm:mt-3 sm:p-3 sm:text-[12px] sm:leading-6 xl:mt-2 xl:max-h-28 xl:overflow-hidden xl:p-2 xl:text-[length:var(--wbp-label)] xl:leading-5">
-              {entry.prompt}
-            </p>
-          </MotionDiv>
-        </AnimatePresence>
       </div>
     </div>
   );
@@ -642,22 +546,9 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
         ? 'error'
         : 'warning';
   const runtimeLabel = isDesktopRuntime ? 'Desktop runtime' : 'Web runtime';
-  const headline = isReady
-    ? 'Welcome to Codex Studio'
-    : readiness.title || 'Welcome to Codex Studio';
-  const intro = isReady
-    ? 'Create images with Codex and manage your library on this machine.'
-    : readiness.description;
-  const previewEntries = React.useMemo(
-    () =>
-      buildOnboardingStyleCarouselEntries(
-        ONBOARDING_STYLE_PREVIEW_IMAGES,
-        fallbackStyleRecipePreview,
-      ),
-    [],
-  );
-  const [previewIndex, setPreviewIndex] = React.useState(0);
-  const previewEntry = previewEntries[previewIndex] ?? previewEntries[0];
+  const headline = 'Your space to create images.';
+  const intro =
+    'Create, explore styles, and keep working from your results in one organized workspace.';
   const setupPrompt = React.useMemo(
     () =>
       buildCodexStudioSetupPrompt({
@@ -674,25 +565,13 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
     : codexRuntimeBlocked
       ? (health?.codexRuntime.recommendedAction ?? 'Repair the local Codex runtime.')
       : localCodexSession?.reason === 'chatgpt_login_required'
-        ? 'Run codex login and choose ChatGPT.'
+        ? 'Sign in with ChatGPT. A local Codex session is only for the Codex connection.'
         : localCodexSession?.error || 'Connect your local Codex session.';
   const appServerDetail = appServerReady
     ? 'Codex app-server is running and reachable.'
     : codexRuntimeBlocked
       ? (health?.codexRuntime.recommendedAction ?? 'Repair the local Codex runtime.')
       : 'Start the local app-server when the backend is ready.';
-
-  React.useEffect(() => {
-    if (!isOpen || previewEntries.length <= 1) return;
-
-    const intervalId = window.setInterval(() => {
-      setPreviewIndex((currentIndex) =>
-        pickNextOnboardingStyleCarouselIndex(previewEntries.length, currentIndex),
-      );
-    }, 3000);
-
-    return () => window.clearInterval(intervalId);
-  }, [isOpen, previewEntries.length]);
 
   React.useEffect(() => {
     const next = resolveInAppSetupDraftPath(probe);
@@ -816,7 +695,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
             ref={dialogRef}
             role="dialog"
             aria-modal="true"
-            aria-label="Help and setup"
+            aria-label="Cozy Studio"
             tabIndex={-1}
             initial={{ opacity: 0, scale: 0.98, y: 16 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -830,7 +709,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                 </div>
                 <div className="min-w-0">
                   <p className="truncate text-lg font-semibold tracking-normal text-[color:var(--wb-ink)] xl:text-base">
-                    Codex <span className="font-semibold text-[color:var(--wb-muted)]">Studio</span>
+                    Cozy <span className="font-semibold text-[color:var(--wb-muted)]">Studio</span>
                   </p>
                   <p className="mt-0.5 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-dim)]">
                     {runtimeLabel}
@@ -880,22 +759,38 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                 <section className="grid gap-7 py-7 lg:grid-cols-[minmax(0,1.05fr)_minmax(21rem,0.78fr)] xl:min-h-0 xl:flex-1 xl:grid-cols-[minmax(0,0.95fr)_minmax(28rem,0.75fr)] xl:gap-5 xl:py-4 2xl:grid-cols-[minmax(0,1.05fr)_minmax(30rem,0.7fr)]">
                   <div className="min-w-0 xl:flex xl:min-h-0 xl:flex-col">
                     <p className="text-[11px] font-semibold tracking-[0.24em] text-blue-300 xl:text-[length:var(--wbp-label)]">
-                      Create images with Codex
+                      Suggested first connection
                     </p>
-                    <p className="mt-5 max-w-xl text-base leading-7 text-[color:var(--wb-ink)] xl:mt-3 xl:text-sm xl:leading-6">
-                      Describe what you want. Codex turns the prompt into images while your library
-                      and outputs stay on this machine.
-                    </p>
-                    <PreviewCard entry={previewEntry} />
+                    {primaryAction?.type === 'connect_chatgpt' ? (
+                      <div className="mt-5 max-w-xl xl:mt-3">
+                        <SubscriptionAuthControls providerId="codex" />
+                      </div>
+                    ) : null}
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      <button
+                        type="button"
+                        onClick={onClose}
+                        className="studio-ghost-control inline-flex h-10 items-center rounded-[var(--wb-radius)] px-4 text-sm font-semibold"
+                      >
+                        Explore first
+                      </button>
+                      <button
+                        type="button"
+                        onClick={onOpenSettings}
+                        className="studio-ghost-control inline-flex h-10 items-center rounded-[var(--wb-radius)] px-4 text-sm font-semibold"
+                      >
+                        Other connections
+                      </button>
+                    </div>
                     <p className="mt-5 flex items-start gap-2 text-sm leading-6 text-[color:var(--wb-muted)] xl:mt-3 xl:text-xs xl:leading-5">
                       <Folder size={15} />
-                      Your library is stored locally. Generation sends prompts and selected
-                      references to your chosen provider.
+                      Your library stays on this computer. The folder name can still say Codex Studio.
+                      Generation uses the connection you choose.
                     </p>
                   </div>
 
                   <div className="min-w-0 lg:border-l lg:border-[color:var(--wb-line)] lg:pl-7 xl:min-h-0 xl:pl-6">
-                    <details open={isReady ? undefined : true}>
+                    <details>
                       <summary className="cursor-pointer text-sm text-[color:var(--wb-muted)]">
                         {isReady ? 'All checks passed · Setup details' : 'Setup requirements'}
                       </summary>
@@ -911,8 +806,22 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                               title={row.label}
                               detail={row.detail}
                               meta={row.meta}
-                              status={row.ready ? 'Ready' : 'Needs attention'}
-                              tone={checkTone(row.ready, backendReachable)}
+                              status={
+                                row.requirement === 'not_required'
+                                  ? row.ready
+                                    ? 'Available'
+                                    : 'Not required'
+                                  : row.ready
+                                    ? 'Ready'
+                                    : 'Needs attention'
+                              }
+                              tone={
+                                row.requirement === 'not_required'
+                                  ? row.ready
+                                    ? 'ready'
+                                    : 'pending'
+                                  : checkTone(row.ready, backendReachable)
+                              }
                             />
                           ))
                         ) : (
@@ -996,24 +905,26 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
             <footer className="border-t border-[color:var(--wb-line)] px-5 py-4 sm:px-14 sm:py-5 xl:px-10 xl:py-3">
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                 <div className="flex flex-col gap-2 sm:flex-row">
-                  <button
-                    type="button"
-                    onClick={handlePrimaryCta}
-                    disabled={
-                      (primaryAction?.type === 'start_app_server' && isStartingAppServer) ||
-                      (primaryAction?.type === 'in_app_setup' && (!canSubmitSetup || setupBusy))
-                    }
-                    className="inline-flex items-center justify-center gap-3 rounded-[var(--wb-radius)] bg-[color:var(--wb-accent)] px-7 py-3 text-sm font-semibold text-[color:var(--wb-ink)] shadow-[0_14px_40px_rgba(37,99,235,0.28)] transition-colors hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60 xl:px-5 xl:py-2.5"
-                  >
-                    {primaryAction?.type === 'start_app_server' && isStartingAppServer
-                      ? 'Starting'
-                      : primaryAction?.type === 'in_app_setup' && setupBusy
-                        ? 'Setting up'
-                        : primaryAction?.type === 'codex_login'
-                          ? primaryAction.label
-                          : (primaryAction?.label ?? (isReady ? 'Open Studio' : 'Got it'))}
-                    <ArrowRight size={17} />
-                  </button>
+                  {primaryAction?.type === 'connect_chatgpt' ? null : (
+                    <button
+                      type="button"
+                      onClick={handlePrimaryCta}
+                      disabled={
+                        (primaryAction?.type === 'start_app_server' && isStartingAppServer) ||
+                        (primaryAction?.type === 'in_app_setup' && (!canSubmitSetup || setupBusy))
+                      }
+                      className="inline-flex items-center justify-center gap-3 rounded-[var(--wb-radius)] bg-[color:var(--wb-accent)] px-7 py-3 text-sm font-semibold text-[color:var(--wb-ink)] shadow-[0_14px_40px_rgba(37,99,235,0.28)] transition-colors hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60 xl:px-5 xl:py-2.5"
+                    >
+                      {primaryAction?.type === 'start_app_server' && isStartingAppServer
+                        ? 'Starting'
+                        : primaryAction?.type === 'in_app_setup' && setupBusy
+                          ? 'Setting up'
+                          : primaryAction?.type === 'codex_login'
+                            ? primaryAction.label
+                            : (primaryAction?.label ?? (isReady ? 'Open Studio' : 'Got it'))}
+                      <ArrowRight size={17} />
+                    </button>
+                  )}
                   <button
                     type="button"
                     onClick={onRefresh}
