@@ -8,28 +8,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Stone Statue',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'flesh, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, flesh, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Stone Statue operates as a portable fashion-costume router: combine Sculptural stone material, petrified elegance, carved-surface awe with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Stone statue transformation: the figure turned into carved stone with weathering, moss and chisel marks.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Chisel marks, sculpted-drapery fold, classical massing, rigid carved contour, grounded stillness; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Apply this material to the whole figure as a deliberate transformation while keeping identity, face structure, pose and setting readable: carved stone surface over the whole figure, with weathering, lichen, chips and chisel marks, clothing carved as stone folds.',
+      color_and_tone: 'Limestone grey, marble white or sandstone with moss green.',
       lighting_and_shadow:
-        'Use Gallery-grade material light, overhead directional drama, marble-subsurface scatter, grounded shadow plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Soft overcast or raking sun on stone, chosen to reveal how this material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Stone, fine-grain marble, crystalline-sparkle, chisel-tool mark, weathered-surface, polished-high, dust-settled crevice plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Carved stone with weathering, lichen and chisel texture, with correct scale, weight and surface behavior at every fold and edge.',
       camera_and_composition:
-        'Compose with drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the figure.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Stone Statue while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Timeless, solemn, eerie and still, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features:
-        'Sculptural stone material, petrified elegance, carved-surface awe; Chisel marks, sculpted-drapery fold, classical massing, rigid carved contour, grounded stillness; Stone, fine-grain marble, crystalline-sparkle, chisel-tool mark, weathered-surface, polished-high, dust-settled crevice; Gallery-grade material light, overhead directional drama, marble-subsurface scatter, grounded shadow; drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control',
+        'carved stone skin and clothing; lichen and weathering; chisel marks; still pose',
       creative_brief:
-        'Use Stone Statue after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Sculptural stone material, petrified elegance, carved-surface awe, Chisel marks, sculpted-drapery fold, classical massing, rigid carved contour, grounded stillness, Stone, fine-grain marble, crystalline-sparkle, chisel-tool mark, weathered-surface, polished-high, dust-settled crevice, Gallery-grade material light, overhead directional drama, marble-subsurface scatter, grounded shadow, drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stone Statue as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +36,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Denim on Denim',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'silk, suit, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, silk, suit, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Denim on Denim operates as a portable fashion-costume router: combine Denim-on-denim confidence, Americana workwear cool, indigo utility polish with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Denim on denim: head-to-toe denim in mixed washes, with visible selvedge, contrast topstitching and fading.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Stitching, jacket-box geometry, straight stacked layers, western-yoke line, contrast-thread geometry; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: every garment in denim of different washes — raw indigo, stonewashed and bleached — with rivets and contrast stitching.",
+      color_and_tone: 'Raw indigo, mid-blue stonewash and bleached pale blue with copper rivets.',
       lighting_and_shadow:
-        'Use Softbox-even texture light, denim side-light, casual daylight plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Natural daylight that shows the weave and fading, chosen to reveal how this material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Denim weave, selvedge twill, contrast-thread chainstitch, copper rivets, buffalo-horn buttons, leather patch plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Twill denim with slub texture, whiskering, selvedge edges and copper rivets.',
       camera_and_composition:
-        'Compose with Compose for Denim on Denim using its key spatial cues: Orange stitching, selvedge ID, copper rivets, leather patch, double-denim coordination plus drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Denim on Denim while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Rugged, casual, confident and Americana, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        'Denim-on-denim confidence, Americana workwear cool, indigo utility polish; Stitching, jacket-box geometry, straight stacked layers, western-yoke line, contrast-thread geometry; Denim weave, selvedge twill, contrast-thread chainstitch, copper rivets, buffalo-horn buttons, leather patch; Softbox-even texture light, denim side-light, casual daylight; Compose for Denim on Denim using its key spatial cues: Orange stitching, selvedge ID, copper rivets, leather patch, double-denim coordination',
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
+      key_features: 'mixed denim washes; contrast topstitching; copper rivets; whiskered fading',
       creative_brief:
-        'Use Denim on Denim after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Denim-on-denim confidence, Americana workwear cool, indigo utility polish, Stitching, jacket-box geometry, straight stacked layers, western-yoke line, contrast-thread geometry, Denim weave, selvedge twill, contrast-thread chainstitch, copper rivets, buffalo-horn buttons, leather patch, Softbox-even texture light, denim side-light, casual daylight, Compose for Denim on Denim using its key spatial cues: Orange stitching, selvedge ID, copper rivets, leather patch, double-denim coordination plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Denim on Denim as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +63,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'High-Gloss Polymer',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'matte, cotton, fetish framing, body-first silhouette, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, explicit fetish content, matte, cotton, fetish framing, body-first silhouette, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'High-Gloss Polymer operates as a portable fashion-costume router: combine High-gloss polymer couture, reflective power dressing and lacquered futurism with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'High-gloss polymer couture: garments of mirror-glossy latex or PVC with liquid highlights and tight reflections.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Broad reflective panels, clean seam routing, sculpted garment planes and continuous glossy wrapping; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
-      lighting_and_shadow:
-        'Use High contrast reflection, rim-light gloss, controlled strip catchlights and wet-look sheen plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render Lacquered polymer, polished PVC, patent leather, chlorinated rubber and slick sealant finish plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: glossy latex or PVC with sharp specular streaks along every curve.",
+      color_and_tone: 'Deep black, cherry red or chrome silver with white specular streaks.',
+      lighting_and_shadow: 'Hard strip lights that draw long highlights along each curve.',
+      texture_and_material: 'Stretched latex, vinyl and patent polymer with mirror reflections.',
       camera_and_composition:
-        'Compose with Reflection-bend compression across broad glossy planes plus drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to High-Gloss Polymer while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Sleek, bold, provocative and futuristic, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
       key_features:
-        'High-gloss polymer couture, reflective power dressing and lacquered futurism; Broad reflective panels, clean seam routing, sculpted garment planes and continuous glossy wrapping; Lacquered polymer, polished PVC, patent leather, chlorinated rubber and slick sealant finish; High contrast reflection, rim-light gloss, controlled strip catchlights and wet-look sheen; Reflection-bend compression across broad glossy planes',
+        'mirror-gloss latex or PVC; long specular streaks; tight reflections; liquid highlights',
       creative_brief:
-        'Use High-Gloss Polymer after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies High-gloss polymer couture, reflective power dressing and lacquered futurism, Broad reflective panels, clean seam routing, sculpted garment planes and continuous glossy wrapping, Lacquered polymer, polished PVC, patent leather, chlorinated rubber and slick sealant finish, High contrast reflection, rim-light gloss, controlled strip catchlights and wet-look sheen, Reflection-bend compression across broad glossy planes plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies High-Gloss Polymer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +89,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Fur Coat',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'smooth, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, real animal pelts with heads, smooth, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Fur Coat operates as a portable fashion-costume router: combine Luxury fur opulence, winter-glamour extravagance, tactile grandeur with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Faux fur couture: voluminous long-pile coats and trims with dense, touchable fibers.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Soft edges, voluminous bulk, shawl-collar wrap, sweeping column, enveloping halo silhouette; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
-      lighting_and_shadow:
-        'Use Soft diffused glamour light, fur-halo rim, warm amber bounce plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render Fur strands, mink guard hairs, fox underwool, chinchilla density, sable tips, shearling curl, silken guard plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: voluminous faux-fur coats, stoles or trims with long, dense pile.",
+      color_and_tone: 'Snow white, silver fox grey, caramel or dyed jewel tones.',
+      lighting_and_shadow: 'Soft backlight that halos every hair of the pile.',
+      texture_and_material: 'Long-pile faux fur with visible fiber direction and soft volume.',
       camera_and_composition:
-        'Compose with Compose for Fur Coat using its key spatial cues: Guard-hair sheen, dense underwool, dramatic collar, halo volume, tonal pelt variation plus drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Fur Coat while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Opulent, warm, dramatic and wintry, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        'Luxury fur opulence, winter-glamour extravagance, tactile grandeur; Soft edges, voluminous bulk, shawl-collar wrap, sweeping column, enveloping halo silhouette; Fur strands, mink guard hairs, fox underwool, chinchilla density, sable tips, shearling curl, silken guard; Soft diffused glamour light, fur-halo rim, warm amber bounce; Compose for Fur Coat using its key spatial cues: Guard-hair sheen, dense underwool, dramatic collar, halo volume, tonal pelt variation',
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
+      key_features: 'voluminous long-pile faux fur; backlit halo; dense fibers; winter opulence',
       creative_brief:
-        'Use Fur Coat after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Luxury fur opulence, winter-glamour extravagance, tactile grandeur, Soft edges, voluminous bulk, shawl-collar wrap, sweeping column, enveloping halo silhouette, Fur strands, mink guard hairs, fox underwool, chinchilla density, sable tips, shearling curl, silken guard, Soft diffused glamour light, fur-halo rim, warm amber bounce, Compose for Fur Coat using its key spatial cues: Guard-hair sheen, dense underwool, dramatic collar, halo volume, tonal pelt variation plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fur Coat as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +114,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Liquid Satin Drape',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'rough, matte, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, rough, matte, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Liquid Satin Drape operates as a portable fashion-costume router: combine Silk couture minimalism, liquid-light elegance, soft-luxury sheen with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Liquid satin drape: silk-satin garments that pour like liquid, with bias-cut flow and mirror-soft highlights.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Fluid drape, bias-cut flow, cowl-fold waterfall, ribbon-thin line, floor-grazing sweep; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: bias-cut liquid silk satin that pours over the body in soft folds with luminous highlights.",
       color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
-      lighting_and_shadow:
-        'Use Soft sheen, candlelight ripple, warm silk glow, low-contrast specular roll plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render Smooth silk charmeuse, liquid satin, crepe de chine, sand-washed silk, hammered satin, silk georgette plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Champagne, emerald, midnight blue or oxblood satin, on the target material while the rest of the scene keeps its natural color.',
+      lighting_and_shadow: 'Soft single source that makes highlights slide along the folds.',
+      texture_and_material: 'Heavy silk satin with fluid folds and smooth sheen.',
       camera_and_composition:
-        'Compose with Compose for Liquid Satin Drape using its key spatial cues: Drape folds, bias-cut flow, cowl folds, ribbon-thin detailing, liquid-sheen movement plus drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Liquid Satin Drape while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Sensual, elegant, calm and luxurious, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        'Silk couture minimalism, liquid-light elegance, soft-luxury sheen; Fluid drape, bias-cut flow, cowl-fold waterfall, ribbon-thin line, floor-grazing sweep; Smooth silk charmeuse, liquid satin, crepe de chine, sand-washed silk, hammered satin, silk georgette; Soft sheen, candlelight ripple, warm silk glow, low-contrast specular roll; Compose for Liquid Satin Drape using its key spatial cues: Drape folds, bias-cut flow, cowl folds, ribbon-thin detailing, liquid-sheen movement',
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
+      key_features: 'liquid bias-cut satin; sliding highlights; pouring folds; luminous sheen',
       creative_brief:
-        'Use Liquid Satin Drape after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Silk couture minimalism, liquid-light elegance, soft-luxury sheen, Fluid drape, bias-cut flow, cowl-fold waterfall, ribbon-thin line, floor-grazing sweep, Smooth silk charmeuse, liquid satin, crepe de chine, sand-washed silk, hammered satin, silk georgette, Soft sheen, candlelight ripple, warm silk glow, low-contrast specular roll, Compose for Liquid Satin Drape using its key spatial cues: Drape folds, bias-cut flow, cowl folds, ribbon-thin detailing, liquid-sheen movement plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Liquid Satin Drape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +140,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Transparent Plastic',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'opaque, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, opaque, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Transparent Plastic operates as a portable fashion-costume router: combine Transparent plastic fashion, weather-ready futurism, clear-shell chic with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Transparent plastic fashion: clothes of clear or tinted PVC and vinyl that show layers and catch reflections.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Highlights, trans-seasonal trench, A-line volume, drawstring-waist cinch, hood-frame arc; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments of clear or tinted transparent plastic — raincoats, skirts, bags — with visible seams and reflections over normal clothes beneath.",
+      color_and_tone: 'Clear, frosted, or tinted pink, yellow and blue plastic.',
       lighting_and_shadow:
-        'Use Reflective wet-surface glare, rain-streak catchlights, refraction highlights, overcast diffusion plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Bright light producing edge highlights and caustics, chosen to reveal how this material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Clear vinyl, TPU film, heat-sealed seams, nylon webbing, rubberized zipper, transparent PVC plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Clear PVC with welded seams, droplets and reflections, with correct scale, weight and surface behavior at every fold and edge.',
       camera_and_composition:
-        'Compose with drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Transparent Plastic while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Playful, modern, fresh and experimental, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        'Transparent plastic fashion, weather-ready futurism, clear-shell chic; Highlights, trans-seasonal trench, A-line volume, drawstring-waist cinch, hood-frame arc; Clear vinyl, TPU film, heat-sealed seams, nylon webbing, rubberized zipper, transparent PVC; Reflective wet-surface glare, rain-streak catchlights, refraction highlights, overcast diffusion; drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control',
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
+      key_features: 'clear PVC garments; welded seams; edge highlights; visible layers beneath',
       creative_brief:
-        'Use Transparent Plastic after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Transparent plastic fashion, weather-ready futurism, clear-shell chic, Highlights, trans-seasonal trench, A-line volume, drawstring-waist cinch, hood-frame arc, Clear vinyl, TPU film, heat-sealed seams, nylon webbing, rubberized zipper, transparent PVC, Reflective wet-surface glare, rain-streak catchlights, refraction highlights, overcast diffusion, drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Transparent Plastic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,28 +167,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Body Paint',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'real stitched garment, nude-body setup, bare-skin focus, body-first portrait, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, nudity, real stitched garment, nude-body setup, bare-skin focus, body-first portrait, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        "Body Paint operates as a portable fashion-costume router: combine Trompe-l'oeil pigment couture, painted-clothing illusion and temporary surface transformation with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.",
+        "Body paint: trompe-l'oeil paint on the figure that imitates clothing, patterns or landscapes.",
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Brush-stroke seams, faux closures, painted panel edges, airbrush gradients and contour-following pigment flow; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        'Apply this material to the whole figure as a deliberate transformation while keeping identity, face structure, pose and setting readable: paint applied to the figure that imitates clothing, patterns or scenery, with visible brush edges on close view.',
       color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Saturated painted color with clean edges, on the target material while the rest of the scene keeps its natural color.',
       lighting_and_shadow:
-        'Use Diffused even key, ring-flash catch, exhibition-spot accents and reflective control for painted-surface continuity plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render Matte paint film, glycerin sheen, airbrush gradients, brush-stroke relief and substrate grain bleeding through pigment plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Even studio light to reveal paint detail, chosen to reveal how this material reflects, absorbs or transmits light.',
+      texture_and_material: 'Matte and satin paint on skin with brush texture.',
       camera_and_composition:
-        "Compose with Compose for Body Paint using its key spatial cues: Pigment film, brush strokes, trompe-l'oeil effect, painted seams, faux trims and visible substrate texture plus drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.",
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the figure.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Body Paint while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Artful, playful, surprising and bold, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        "Trompe-l'oeil pigment couture, painted-clothing illusion and temporary surface transformation; Brush-stroke seams, faux closures, painted panel edges, airbrush gradients and contour-following pigment flow; Matte paint film, glycerin sheen, airbrush gradients, brush-stroke relief and substrate grain bleeding through pigment; Diffused even key, ring-flash catch, exhibition-spot accents and reflective control for painted-surface continuity; Compose for Body Paint using its key spatial cues: Pigment film, brush strokes, trompe-l'oeil effect, painted seams, faux trims and visible substrate texture",
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
+      key_features: "trompe-l'oeil body paint; painted clothing illusion; brush edges",
       creative_brief:
-        "Use Body Paint after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Trompe-l'oeil pigment couture, painted-clothing illusion and temporary surface transformation, Brush-stroke seams, faux closures, painted panel edges, airbrush gradients and contour-following pigment flow, Matte paint film, glycerin sheen, airbrush gradients, brush-stroke relief and substrate grain bleeding through pigment, Diffused even key, ring-flash catch, exhibition-spot accents and reflective control for painted-surface continuity, Compose for Body Paint using its key spatial cues: Pigment film, brush strokes, trompe-l'oeil effect, painted seams, faux trims and visible substrate texture plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Body Paint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -211,28 +194,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Tweed Suit',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'smooth, shiny, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, smooth, shiny, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Tweed Suit operates as a portable fashion-costume router: combine Tweed tailoring heritage, scholarly restraint, moss-toned country classicism with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Tweed tailoring: suits and coats of rough woven wool tweed with flecked color and heritage structure.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Herringbone pattern flow, structured drape, notch-lapel angle, three-roll-two logic, tailored break rhythm; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: tailored garments in textured tweed with herringbone or check weaves and visible colored flecks.",
       color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Heather brown, moss, mustard fleck and charcoal herringbone, on the target material while the rest of the scene keeps its natural color.',
       lighting_and_shadow:
-        'Use Rainy grey softness, low wool-warmth, flat wool-revealing light plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Soft overcast countryside light, chosen to reveal how this material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Rough wool, herringbone tweed, Donegal fleck, shetland wool, horn buttons, bemberg lining plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Rough wool tweed with herringbone, houndstooth and flecks, with correct scale, weight and surface behavior at every fold and edge.',
       camera_and_composition:
-        'Compose with Compose for Tweed Suit using its key spatial cues: Herringbone, elbow-patch cues, ticket-pocket logic, horn-button punctuation, wool depth plus drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Tweed Suit while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Scholarly, rural, dignified and warm, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        'Tweed tailoring heritage, scholarly restraint, moss-toned country classicism; Herringbone pattern flow, structured drape, notch-lapel angle, three-roll-two logic, tailored break rhythm; Rough wool, herringbone tweed, Donegal fleck, shetland wool, horn buttons, bemberg lining; Rainy grey softness, low wool-warmth, flat wool-revealing light; Compose for Tweed Suit using its key spatial cues: Herringbone, elbow-patch cues, ticket-pocket logic, horn-button punctuation, wool depth',
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
+      key_features: 'flecked wool tweed; herringbone and check; heritage tailoring; overcast light',
       creative_brief:
-        'Use Tweed Suit after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Tweed tailoring heritage, scholarly restraint, moss-toned country classicism, Herringbone pattern flow, structured drape, notch-lapel angle, three-roll-two logic, tailored break rhythm, Rough wool, herringbone tweed, Donegal fleck, shetland wool, horn buttons, bemberg lining, Rainy grey softness, low wool-warmth, flat wool-revealing light, Compose for Tweed Suit using its key spatial cues: Herringbone, elbow-patch cues, ticket-pocket logic, horn-button punctuation, wool depth plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tweed Suit as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -240,28 +222,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Tattoo Skin',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'blank unmarked surface, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, readable tattoo text, nudity, blank unmarked surface, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Tattoo Skin operates as a portable fashion-costume router: combine Tattoo-style graphic surface mapping, ceremonial ink devotion, body-art logic translated into transferable pattern language with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        "Tattoo skin mapping: the figure's visible skin covered in graphic tattoo work that follows anatomy, ornamental and ceremonial.",
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Ink-line flow, sleeve-to-field continuity, wave-band framing, panel-like coverage transitions, back-piece spread logic; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Apply this material to the whole figure as a deliberate transformation while keeping identity, face structure, pose and setting readable: graphic tattoo designs mapped across visible skin, flowing with anatomy, in a consistent style chosen per prompt.',
+      color_and_tone: 'Black ink with optional red, indigo and ochre color work.',
       lighting_and_shadow:
-        'Use Even saturation light, healed-ink clarity, soft rim separation, low-glare surface read plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Soft side light to show skin and ink, chosen to reveal how this material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Healed-ink surface, needle-point grain, raised-line relief, stippled shading, varnished pigment depth plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Skin with healed ink, linework and shading, with correct scale, weight and surface behavior at every fold and edge.',
       camera_and_composition:
-        'Compose with Compose for Tattoo Skin using its key spatial cues: Ink coverage logic, irezumi waves, wind bars, healed-depth read, sleeve-to-field connection plus drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the figure.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Tattoo Skin while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Ceremonial, bold, personal and striking, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        'Tattoo-style graphic surface mapping, ceremonial ink devotion, body-art logic translated into transferable pattern language; Ink-line flow, sleeve-to-field continuity, wave-band framing, panel-like coverage transitions, back-piece spread logic; Healed-ink surface, needle-point grain, raised-line relief, stippled shading, varnished pigment depth; Even saturation light, healed-ink clarity, soft rim separation, low-glare surface read; Compose for Tattoo Skin using its key spatial cues: Ink coverage logic, irezumi waves, wind bars, healed-depth read, sleeve-to-field connection',
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
+      key_features: 'anatomy-following tattoo work; black ink with color; ornamental mapping',
       creative_brief:
-        'Use Tattoo Skin after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Tattoo-style graphic surface mapping, ceremonial ink devotion, body-art logic translated into transferable pattern language, Ink-line flow, sleeve-to-field continuity, wave-band framing, panel-like coverage transitions, back-piece spread logic, Healed-ink surface, needle-point grain, raised-line relief, stippled shading, varnished pigment depth, Even saturation light, healed-ink clarity, soft rim separation, low-glare surface read, Compose for Tattoo Skin using its key spatial cues: Ink coverage logic, irezumi waves, wind bars, healed-depth read, sleeve-to-field connection plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tattoo Skin as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -269,28 +249,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Leather Armor',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'plate-metal armor dominance, plain soft cloth dominance, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, plate-metal armor dominance, plain soft cloth dominance, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Leather Armor operates as a portable fashion-costume router: combine Hardened leather utility, stealth-ready modularity, shadowcraft pragmatism with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Leather armor garments: hardened, molded and tooled leather plates, straps and buckles made as wearable protection.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Strap geometry, stud punctuation, asymmetrical harness logic, pauldron cues, bracer-wrap rhythm, hooded depth; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments of hardened, molded leather plates with tooled patterns, rivets, straps and buckles.",
+      color_and_tone: 'Oxblood, tan, dark brown and black leather with brass.',
       lighting_and_shadow:
-        'Use Torch-amber rim, moonlit shadow, leather-grain side light, low-key stealth contrast plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render Worn leather, oil-tanned hide, distressed leather, brass studs, iron buckles, suede lining, tooled-leather panel plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Warm side light to reveal tooling and patina, chosen to reveal how this material reflects, absorbs or transmits light.',
+      texture_and_material: 'Boiled and tooled leather with stitching, rivets and wear.',
       camera_and_composition:
-        'Compose with Compose for Leather Armor using its key spatial cues: Buckles, hood cues, hidden-pouch logic, bracer wraps, asymmetrical harness plus drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Leather Armor while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Rugged, stealthy, practical and adventurous, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        'Hardened leather utility, stealth-ready modularity, shadowcraft pragmatism; Strap geometry, stud punctuation, asymmetrical harness logic, pauldron cues, bracer-wrap rhythm, hooded depth; Worn leather, oil-tanned hide, distressed leather, brass studs, iron buckles, suede lining, tooled-leather panel; Torch-amber rim, moonlit shadow, leather-grain side light, low-key stealth contrast; Compose for Leather Armor using its key spatial cues: Buckles, hood cues, hidden-pouch logic, bracer wraps, asymmetrical harness',
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
+      key_features: 'molded leather plates; tooled patterns; rivets and buckles; worn patina',
       creative_brief:
-        'Use Leather Armor after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Hardened leather utility, stealth-ready modularity, shadowcraft pragmatism, Strap geometry, stud punctuation, asymmetrical harness logic, pauldron cues, bracer-wrap rhythm, hooded depth, Worn leather, oil-tanned hide, distressed leather, brass studs, iron buckles, suede lining, tooled-leather panel, Torch-amber rim, moonlit shadow, leather-grain side light, low-key stealth contrast, Compose for Leather Armor using its key spatial cues: Buckles, hood cues, hidden-pouch logic, bracer wraps, asymmetrical harness plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Leather Armor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -298,28 +275,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bandage/Mummy',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'exposed mummy face, bare-skin focus, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, exposed mummy face, bare-skin focus, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Bandage/Mummy operates as a portable fashion-costume router: combine Archival wrap concealment, aged linen tension, desiccated wrap grammar with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Bandage and mummy wraps: garments made of aged linen strips wound around the body, frayed and layered.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Wrapping spirals, crossing-bandage grids, conceal-reveal gaps, trailing-wrap ends, layered binding rhythm; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments made of wound, frayed aged linen bandages layered over the body.",
       color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Yellowed linen, sand and dust brown, on the target material while the rest of the scene keeps its natural color.',
       lighting_and_shadow:
-        'Use Flat dimness, warm amber flicker, excavation daylight, wrapped-shadow mystery plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Low warm tomb light or harsh sun, chosen to reveal how this material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Cloth strips, linen bandage, gauze-weave texture, frayed-edge loose wrap, stiffened-gauze, overlapping-layer bulk plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Aged linen strips with fraying, stains and layering, with correct scale, weight and surface behavior at every fold and edge.',
       camera_and_composition:
-        'Compose with Compose for Bandage/Mummy using its key spatial cues: Layered wraps, trailing ends, gauze weave, frayed edges, crossing-bandage grid plus drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Bandage/Mummy while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Ancient, eerie, still and mysterious, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        'Archival wrap concealment, aged linen tension, desiccated wrap grammar; Wrapping spirals, crossing-bandage grids, conceal-reveal gaps, trailing-wrap ends, layered binding rhythm; Cloth strips, linen bandage, gauze-weave texture, frayed-edge loose wrap, stiffened-gauze, overlapping-layer bulk; Flat dimness, warm amber flicker, excavation daylight, wrapped-shadow mystery; Compose for Bandage/Mummy using its key spatial cues: Layered wraps, trailing ends, gauze weave, frayed edges, crossing-bandage grid',
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
+      key_features: 'wound linen strips; frayed ends; aged stains; layered wraps',
       creative_brief:
-        'Use Bandage/Mummy after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Archival wrap concealment, aged linen tension, desiccated wrap grammar, Wrapping spirals, crossing-bandage grids, conceal-reveal gaps, trailing-wrap ends, layered binding rhythm, Cloth strips, linen bandage, gauze-weave texture, frayed-edge loose wrap, stiffened-gauze, overlapping-layer bulk, Flat dimness, warm amber flicker, excavation daylight, wrapped-shadow mystery, Compose for Bandage/Mummy using its key spatial cues: Layered wraps, trailing ends, gauze weave, frayed edges, crossing-bandage grid plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bandage/Mummy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -327,28 +303,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Burlap/Rags',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'silk, clean, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, silk, clean, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Burlap/Rags operates as a portable fashion-costume router: combine Burlap-and-rag austerity, homespun endurance, rough-fiber humility with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Burlap and rags: garments of coarse sackcloth and torn patched rags, tied and knotted together.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Loose weave, gathered drape, rope-cinch logic, hood-cowl cues, patchwork falloff; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments of coarse burlap and torn rag strips, patched and knotted with rope.",
       color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Sack brown, dust grey, faded ochre and earth, on the target material while the rest of the scene keeps its natural color.',
       lighting_and_shadow:
-        'Use Flat overcast light, dim warm practical, rough-fiber revealing side light plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render Rough fiber, burlap jute, coarse hemp, hand-woven linen, homespun wool, frayed-edge cotton, rope cord plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Dim, dusty, natural light, chosen to reveal how this material reflects, absorbs or transmits light.',
+      texture_and_material: 'Coarse burlap weave, frayed edges, rope ties and dirt.',
       camera_and_composition:
-        'Compose with Compose for Burlap/Rags using its key spatial cues: Fraying, rope-cinch logic, rough patches, raw edges, homespun texture plus drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Burlap/Rags while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Humble, desperate, eerie and earthy, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        'Burlap-and-rag austerity, homespun endurance, rough-fiber humility; Loose weave, gathered drape, rope-cinch logic, hood-cowl cues, patchwork falloff; Rough fiber, burlap jute, coarse hemp, hand-woven linen, homespun wool, frayed-edge cotton, rope cord; Flat overcast light, dim warm practical, rough-fiber revealing side light; Compose for Burlap/Rags using its key spatial cues: Fraying, rope-cinch logic, rough patches, raw edges, homespun texture',
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
+      key_features: 'coarse burlap; torn patched rags; rope ties; frayed edges',
       creative_brief:
-        'Use Burlap/Rags after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Burlap-and-rag austerity, homespun endurance, rough-fiber humility, Loose weave, gathered drape, rope-cinch logic, hood-cowl cues, patchwork falloff, Rough fiber, burlap jute, coarse hemp, hand-woven linen, homespun wool, frayed-edge cotton, rope cord, Flat overcast light, dim warm practical, rough-fiber revealing side light, Compose for Burlap/Rags using its key spatial cues: Fraying, rope-cinch logic, rough patches, raw edges, homespun texture plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Burlap/Rags as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -356,28 +330,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Lace',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'solid, bare-skin focus, nude-illusion, lingerie body read, portrait body, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, nudity, solid, bare-skin focus, nude-illusion, lingerie body read, portrait body, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Lace operates as a portable fashion-costume router: combine Lace textile detail, heirloom romance, openwork delicacy with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Lace garments: openwork lace with floral motifs that reveals layers and skin through delicate patterns.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Intricate web, Alencon-pattern spread, scalloped-edge flow, openwork boundary tracing and trailing relief; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments made of fine openwork lace — Chantilly, guipure or crochet — with visible floral motifs and scalloped edges.",
+      color_and_tone: 'Ivory, black or dusty rose lace over contrasting layers.',
       lighting_and_shadow:
-        'Use Backlit translucency, window-light diffusion, veil-glow softness and morning-light ethereality plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render Holes, thread, Chantilly lace, Alencon needlepoint, guipure relief, tulle ground, silk organza applique, re-embroidered motifs plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Backlight that shows the openwork pattern, chosen to reveal how this material reflects, absorbs or transmits light.',
+      texture_and_material: 'Fine lace with floral motifs, mesh ground and scalloped edges.',
       camera_and_composition:
-        'Compose with Compose for Lace using its key spatial cues: Pattern, floral motif, scalloped edge, openwork textile boundary and hand-embroidered detail plus drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Lace while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Delicate, romantic, heirloom and intricate, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        'Lace textile detail, heirloom romance, openwork delicacy; Intricate web, Alencon-pattern spread, scalloped-edge flow, openwork boundary tracing and trailing relief; Holes, thread, Chantilly lace, Alencon needlepoint, guipure relief, tulle ground, silk organza applique, re-embroidered motifs; Backlit translucency, window-light diffusion, veil-glow softness and morning-light ethereality; Compose for Lace using its key spatial cues: Pattern, floral motif, scalloped edge, openwork textile boundary and hand-embroidered detail',
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
+      key_features: 'openwork lace; floral motifs; scalloped edges; backlit pattern',
       creative_brief:
-        'Use Lace after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Lace textile detail, heirloom romance, openwork delicacy, Intricate web, Alencon-pattern spread, scalloped-edge flow, openwork boundary tracing and trailing relief, Holes, thread, Chantilly lace, Alencon needlepoint, guipure relief, tulle ground, silk organza applique, re-embroidered motifs, Backlit translucency, window-light diffusion, veil-glow softness and morning-light ethereality, Compose for Lace using its key spatial cues: Pattern, floral motif, scalloped edge, openwork textile boundary and hand-embroidered detail plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lace as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -385,28 +356,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Chainmail',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'plain fabric-only surface, soft textile dominance, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, plain fabric-only surface, soft textile dominance, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Chainmail operates as a portable fashion-costume router: combine Armor mesh, medieval-smithy craft, interlocked-defense beauty with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Chainmail garments: clothing built from interlocking metal rings that drape heavy and shimmer.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Tiny rings, butted-ring grid, riveted-flat drape, mail-sheet column, coif-like circumference; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments made of fine interlocking steel, bronze or silver rings — mail dresses, hoods or shirts — that drape with weight.",
       color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Steel grey, bronze and silver with warm reflections, on the target material while the rest of the scene keeps its natural color.',
       lighting_and_shadow:
-        'Use Ring-reflection glint, forge-fire warmth, overcast-even steel light plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Warm directional light that sparkles on each ring, chosen to reveal how this material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Metal rings, riveted steel links, butted-iron rings, oiled-mail, brass-trim rings, leather-backing strap plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Riveted interlocking rings with weight, drape and ring pattern visible.',
       camera_and_composition:
-        'Compose with Compose for Chainmail using its key spatial cues: Mesh pattern, ring grid, coif cues, riveted links, flexible mail drape plus drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Chainmail while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Protective, ancient, elegant and heavy, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        'Armor mesh, medieval-smithy craft, interlocked-defense beauty; Tiny rings, butted-ring grid, riveted-flat drape, mail-sheet column, coif-like circumference; Metal rings, riveted steel links, butted-iron rings, oiled-mail, brass-trim rings, leather-backing strap; Ring-reflection glint, forge-fire warmth, overcast-even steel light; Compose for Chainmail using its key spatial cues: Mesh pattern, ring grid, coif cues, riveted links, flexible mail drape',
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
+      key_features: 'interlocking metal rings; heavy drape; ring-by-ring sparkle; steel and bronze',
       creative_brief:
-        'Use Chainmail after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Armor mesh, medieval-smithy craft, interlocked-defense beauty, Tiny rings, butted-ring grid, riveted-flat drape, mail-sheet column, coif-like circumference, Metal rings, riveted steel links, butted-iron rings, oiled-mail, brass-trim rings, leather-backing strap, Ring-reflection glint, forge-fire warmth, overcast-even steel light, Compose for Chainmail using its key spatial cues: Mesh pattern, ring grid, coif cues, riveted links, flexible mail drape plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chainmail as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -414,28 +384,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Knitted Wool',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'smooth, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, smooth, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Knitted Wool operates as a portable fashion-costume router: combine Chunky knit warmth, hygge comfort, handmade winter coziness with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Chunky knitted wool: garments of thick hand knits — cables, bobbles and ribbing — with cozy volume.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Cable-knit pattern, oversized volume, ribbed taper, rolled-neck cylinder, soft loft rhythm; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: chunky hand-knitted wool garments with cable, bobble and rib patterns and slightly irregular handmade stitches.",
       color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Oatmeal, forest green, rust and cream heathered wool, on the target material while the rest of the scene keeps its natural color.',
       lighting_and_shadow:
-        'Use Soft overcast light, fireplace-warm amber, candle-flicker glow plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render Wool yarn, merino twist, alpaca halo, cashmere fuzz, Shetland wool, lambswool loft, cable-knit relief plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Soft warm window or firelight, chosen to reveal how this material reflects, absorbs or transmits light.',
+      texture_and_material: 'Chunky wool yarn with visible stitches, fuzz and cable relief.',
       camera_and_composition:
-        'Compose with Compose for Knitted Wool using its key spatial cues: Knit loops, cable braid, ribbed hem, wooden-button cues, rolled neck plus drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Knitted Wool while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Cozy, handmade, warm and comforting, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        'Chunky knit warmth, hygge comfort, handmade winter coziness; Cable-knit pattern, oversized volume, ribbed taper, rolled-neck cylinder, soft loft rhythm; Wool yarn, merino twist, alpaca halo, cashmere fuzz, Shetland wool, lambswool loft, cable-knit relief; Soft overcast light, fireplace-warm amber, candle-flicker glow; Compose for Knitted Wool using its key spatial cues: Knit loops, cable braid, ribbed hem, wooden-button cues, rolled neck',
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
+      key_features: 'chunky cables and bobbles; visible stitches; wool fuzz; cozy volume',
       creative_brief:
-        'Use Knitted Wool after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Chunky knit warmth, hygge comfort, handmade winter coziness, Cable-knit pattern, oversized volume, ribbed taper, rolled-neck cylinder, soft loft rhythm, Wool yarn, merino twist, alpaca halo, cashmere fuzz, Shetland wool, lambswool loft, cable-knit relief, Soft overcast light, fireplace-warm amber, candle-flicker glow, Compose for Knitted Wool using its key spatial cues: Knit loops, cable braid, ribbed hem, wooden-button cues, rolled neck plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Knitted Wool as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -443,28 +411,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Velvet',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'plastic gloss, hard metal glare, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, plastic gloss, hard metal glare, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Velvet operates as a portable fashion-costume router: combine Velvet styling cues and material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Velvet garments: plush pile fabric that turns dark in shadow and glows where light grazes it.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments in plush velvet whose pile shifts from deep shadow to bright sheen along folds.",
+      color_and_tone: 'Deep jewel velvet — burgundy, sapphire, emerald or black.',
       lighting_and_shadow:
-        'Use material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Low raking light to show the directional pile, chosen to reveal how this material reflects, absorbs or transmits light.',
+      texture_and_material: 'Silk or cotton velvet with directional pile and soft crush.',
       camera_and_composition:
-        'Compose with drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Velvet while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Rich, sensual, regal and intimate, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        'Velvet styling cues and material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior; weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity; fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation; drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control',
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
+      key_features: 'plush directional pile; dark-to-sheen folds; jewel tones; raking light',
       creative_brief:
-        'Use Velvet after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Velvet styling cues and material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface, material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation, drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Velvet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -472,28 +437,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Origami Paper',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'soft textile drape dominance, sewn garment realism, cloth-first finish, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, soft textile drape dominance, sewn garment realism, cloth-first finish, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Origami Paper operates as a portable fashion-costume router: combine Origami-paper couture, washi-sculpture fragility, geometric fold discipline with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Origami paper couture: garments folded from crisp paper — pleats, facets and cranes — with sharp creases.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Sharp folds, mountain-valley crease, triangular-panel construction, accordion compression, angular contour logic; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
-      lighting_and_shadow:
-        'Use Hard shadows, raking-side light, graphic-crease contrast, gallery-spot precision, shadow-cast drama plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render Paper grain, washi fiber, mulberry texture, crisp-kraft, embossed pattern, delicate-tear edge plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments folded from washi or crisp paper with sharp creases, pleated panels and folded motifs.",
+      color_and_tone: 'Ivory washi, kraft brown, or single bold paper colors.',
+      lighting_and_shadow: 'Clean side light that shows every crease and facet.',
+      texture_and_material: 'Folded paper with sharp creases, faceted planes and fibers.',
       camera_and_composition:
-        'Compose with Compose for Origami Paper using its key spatial cues: Folds, crisp crease lines, paper edges, origami geometry, tear-away logic plus drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Origami Paper while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Delicate, precise, inventive and fragile, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        'Origami-paper couture, washi-sculpture fragility, geometric fold discipline; Sharp folds, mountain-valley crease, triangular-panel construction, accordion compression, angular contour logic; Paper grain, washi fiber, mulberry texture, crisp-kraft, embossed pattern, delicate-tear edge; Hard shadows, raking-side light, graphic-crease contrast, gallery-spot precision, shadow-cast drama; Compose for Origami Paper using its key spatial cues: Folds, crisp crease lines, paper edges, origami geometry, tear-away logic',
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
+      key_features: 'folded paper facets; sharp creases; pleated panels; washi fibers',
       creative_brief:
-        'Use Origami Paper after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Origami-paper couture, washi-sculpture fragility, geometric fold discipline, Sharp folds, mountain-valley crease, triangular-panel construction, accordion compression, angular contour logic, Paper grain, washi fiber, mulberry texture, crisp-kraft, embossed pattern, delicate-tear edge, Hard shadows, raking-side light, graphic-crease contrast, gallery-spot precision, shadow-cast drama, Compose for Origami Paper using its key spatial cues: Folds, crisp crease lines, paper edges, origami geometry, tear-away logic plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Origami Paper as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -501,28 +462,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Smoke Dress',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'solid, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, solid, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Smoke Dress operates as a portable fashion-costume router: combine Smoke-borne couture, evanescent form poetry, vapor-sculpture impossibility with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Smoke dress: garments whose lower parts dissolve into drifting smoke while the bodice stays defined.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Swirling plumes, tendril curls, dissolving edges, columnar lift, volume-without-surface logic; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments with a defined upper part whose hems and trains dissolve into curling smoke.",
+      color_and_tone: 'Charcoal, ash grey, and white smoke against dark backgrounds.',
       lighting_and_shadow:
-        'Use Volumetric, god-ray penetration, smoke-halo backlight, theatrical-haze ambiance, laser-shaft definition plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render Gas, particulate-suspension wisp, layered-veil translucency, turbulent-curl, still-stratum band, wisp-edge diffusion plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Backlight and side light to reveal smoke volumes, chosen to reveal how this material reflects, absorbs or transmits light.',
+      texture_and_material: 'Soft volumetric smoke with curling wisps blending from fabric.',
       camera_and_composition:
-        'Compose with smoke-borne materiality: particulate wisps, billowing plumes, dissolving edges, volumetric shafts and layers of grey-white vapor plus drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Smoke Dress while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Ghostly, mysterious, fleeting and poetic, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        'Smoke-borne couture, evanescent form poetry, vapor-sculpture impossibility; Swirling plumes, tendril curls, dissolving edges, columnar lift, volume-without-surface logic; Gas, particulate-suspension wisp, layered-veil translucency, turbulent-curl, still-stratum band, wisp-edge diffusion; Volumetric, god-ray penetration, smoke-halo backlight, theatrical-haze ambiance, laser-shaft definition; smoke-borne materiality: particulate wisps, billowing plumes, dissolving edges, volumetric shafts and layers of grey-white vapor',
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
+      key_features: 'hems dissolving into smoke; defined bodice; curling wisps; backlit volumes',
       creative_brief:
-        'Use Smoke Dress after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Smoke-borne couture, evanescent form poetry, vapor-sculpture impossibility, Swirling plumes, tendril curls, dissolving edges, columnar lift, volume-without-surface logic, Gas, particulate-suspension wisp, layered-veil translucency, turbulent-curl, still-stratum band, wisp-edge diffusion, Volumetric, god-ray penetration, smoke-halo backlight, theatrical-haze ambiance, laser-shaft definition, smoke-borne materiality: particulate wisps, billowing plumes, dissolving edges, volumetric shafts and layers of grey-white vapor plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Smoke Dress as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -530,28 +488,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Porcelain Doll',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'natural skin texture, living doll body, face stare lock, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, natural skin texture, living doll body, face stare lock, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Porcelain Doll operates as a portable fashion-costume router: combine Uncanny porcelain artifice, bisque fragility and toy-cabinet tension translated into surface grammar with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Porcelain doll transformation: the figure rendered as glazed bisque porcelain with painted features, fine cracks and ball-joint seams.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Crackle seams, ball-joint segmentation, bisque proportion cues, glassy focal nodes and hinged articulation logic; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        'Apply this material to the whole figure as a deliberate transformation while keeping identity, face structure, pose and setting readable: glazed porcelain skin with painted cheeks and lashes, hairline cracks and visible joint seams at neck, elbows and knees.',
       color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Porcelain white, blush pink and painted accents, on the target material while the rest of the scene keeps its natural color.',
       lighting_and_shadow:
-        'Use Glossy porcelain highlights, display-spot precision and soft window daylight plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render Ceramic bisque, high-fire glaze, glassy highlights, mohair-like softness, painted blush and crackle-kintsugi plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Soft studio light with glaze highlights, chosen to reveal how this material reflects, absorbs or transmits light.',
+      texture_and_material: 'Glazed and bisque porcelain with crackle and painted detail.',
       camera_and_composition:
-        'Compose with Compose for Porcelain Doll using its key spatial cues: Glossy bisque, glassy focal cues, articulation seams, painted blush and crackle-kintsugi detail plus drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the figure.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Porcelain Doll while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Uncanny, fragile, eerie and beautiful, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        'Uncanny porcelain artifice, bisque fragility and toy-cabinet tension translated into surface grammar; Crackle seams, ball-joint segmentation, bisque proportion cues, glassy focal nodes and hinged articulation logic; Ceramic bisque, high-fire glaze, glassy highlights, mohair-like softness, painted blush and crackle-kintsugi; Glossy porcelain highlights, display-spot precision and soft window daylight; Compose for Porcelain Doll using its key spatial cues: Glossy bisque, glassy focal cues, articulation seams, painted blush and crackle-kintsugi detail',
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
+      key_features: 'glazed porcelain skin; painted features; hairline cracks; ball-joint seams',
       creative_brief:
-        'Use Porcelain Doll after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Uncanny porcelain artifice, bisque fragility and toy-cabinet tension translated into surface grammar, Crackle seams, ball-joint segmentation, bisque proportion cues, glassy focal nodes and hinged articulation logic, Ceramic bisque, high-fire glaze, glassy highlights, mohair-like softness, painted blush and crackle-kintsugi, Glossy porcelain highlights, display-spot precision and soft window daylight, Compose for Porcelain Doll using its key spatial cues: Glossy bisque, glassy focal cues, articulation seams, painted blush and crackle-kintsugi detail plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Porcelain Doll as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -559,28 +515,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Viscous Gel Couture',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'dry, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, dry, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Viscous Gel Couture operates as a portable fashion-costume router: combine Viscous gel material, glossy couture surface, ectoplasmic wet gloss with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Viscous gel couture: garments of thick glossy gel that drips, stretches and holds bubbles.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Drips, gravity-pull tendrils, sagging-weight deformation, viscosity-drape silhouette, drip-trail elongation; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments made of thick translucent gel that sags, drips and traps bubbles.",
       color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Translucent lime, magenta, amber or clear gel, on the target material while the rest of the scene keeps its natural color.',
       lighting_and_shadow:
-        'Use Glossy wet-look specular, blacklight-UV fluorescence, contained neon edge glow and controlled gel highlights plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render Viscous, methylcellulose slime, gel-thickness body, stringy-elastic drip, gelatinous-surface, bubble-suspension plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Backlight and rim light for translucency, chosen to reveal how this material reflects, absorbs or transmits light.',
+      texture_and_material: 'Thick glossy gel with drips, bubbles and stretched strands.',
       camera_and_composition:
-        'Compose with drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Viscous Gel Couture while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Strange, sensual, playful and alien, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        'Viscous gel material, glossy couture surface, ectoplasmic wet gloss; Drips, gravity-pull tendrils, sagging-weight deformation, viscosity-drape silhouette, drip-trail elongation; Viscous, methylcellulose slime, gel-thickness body, stringy-elastic drip, gelatinous-surface, bubble-suspension; Glossy wet-look specular, blacklight-UV fluorescence, contained neon edge glow and controlled gel highlights; drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control',
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
+      key_features: 'translucent gel garments; drips and strands; trapped bubbles; backlit glow',
       creative_brief:
-        'Use Viscous Gel Couture after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Viscous gel material, glossy couture surface, ectoplasmic wet gloss, Drips, gravity-pull tendrils, sagging-weight deformation, viscosity-drape silhouette, drip-trail elongation, Viscous, methylcellulose slime, gel-thickness body, stringy-elastic drip, gelatinous-surface, bubble-suspension, Glossy wet-look specular, blacklight-UV fluorescence, contained neon edge glow and controlled gel highlights, drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Viscous Gel Couture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -588,28 +542,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sequins',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'matte, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, matte, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Sequins operates as a portable fashion-costume router: combine Mirror-ball glamour, paillette exuberance, celebration magnetism with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Sequin couture: garments covered in overlapping sequins or paillettes that scatter points of light.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Sparkle fields, sequin-grid drape, reflective column logic, cutout tension, fringe-shiver movement; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments covered edge to edge in overlapping sequins or paillettes that shift color and sparkle with movement.",
+      color_and_tone: 'Gold, silver, midnight blue or ruby with scattered sparkle.',
       lighting_and_shadow:
-        'Use Glittering fragment light, colored-gel shimmer, strobe-pulse refraction plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Hard points of light and spotlights creating glitter, chosen to reveal how this material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Small discs, holographic sequins, bugle-bead fringe, mirror-tile paillettes, crystal mesh, metallic thread plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Overlapping sequins and paillettes with individual reflections, with correct scale, weight and surface behavior at every fold and edge.',
       camera_and_composition:
-        'Compose with Compose for Sequins using its key spatial cues: Sparkle, sequin grid, holographic shift, fringe movement, mirror-tile gleam plus drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Sequins while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Glamorous, festive, dazzling and theatrical, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        'Mirror-ball glamour, paillette exuberance, celebration magnetism; Sparkle fields, sequin-grid drape, reflective column logic, cutout tension, fringe-shiver movement; Small discs, holographic sequins, bugle-bead fringe, mirror-tile paillettes, crystal mesh, metallic thread; Glittering fragment light, colored-gel shimmer, strobe-pulse refraction; Compose for Sequins using its key spatial cues: Sparkle, sequin grid, holographic shift, fringe movement, mirror-tile gleam',
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
+      key_features: 'overlapping sequins; scattered sparkle; spotlight glitter; shifting color',
       creative_brief:
-        'Use Sequins after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Mirror-ball glamour, paillette exuberance, celebration magnetism, Sparkle fields, sequin-grid drape, reflective column logic, cutout tension, fringe-shiver movement, Small discs, holographic sequins, bugle-bead fringe, mirror-tile paillettes, crystal mesh, metallic thread, Glittering fragment light, colored-gel shimmer, strobe-pulse refraction, Compose for Sequins using its key spatial cues: Sparkle, sequin grid, holographic shift, fringe movement, mirror-tile gleam plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sequins as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -617,28 +569,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Feathers',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'fur, hair, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, fur, hair, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Feathers operates as a portable fashion-costume router: combine Feather couture opulence, plume-driven extravagance, ceremonial plumage drama with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Feather couture: garments built from layered feathers — ostrich, peacock, crow or swan — with soft, moving edges.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Soft barbs, feather-fan spread, headdress-arc corona, plume cascade, wing-cape sweep; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments made of layered feathers arranged like plumage, with soft moving edges and iridescence.",
+      color_and_tone: 'Raven black, swan white, peacock teal or dyed jewel feathers.',
       lighting_and_shadow:
-        'Use Soft spotlight drama, feather-edge translucency, warm bulb glow plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Soft backlight to reveal feather edges and sheen, chosen to reveal how this material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Ostrich feather, marabou fluff, peacock eye, coque plume, pheasant barb, downy base, dyed hackle plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Layered feathers with visible barbs, shafts and iridescence, with correct scale, weight and surface behavior at every fold and edge.',
       camera_and_composition:
-        'Compose with Compose for Feathers using its key spatial cues: Quills, feather-fan logic, headdress arcs, marabou trim, iridescent barbs plus drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Feathers while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Extravagant, avian, graceful and wild, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        'Feather couture opulence, plume-driven extravagance, ceremonial plumage drama; Soft barbs, feather-fan spread, headdress-arc corona, plume cascade, wing-cape sweep; Ostrich feather, marabou fluff, peacock eye, coque plume, pheasant barb, downy base, dyed hackle; Soft spotlight drama, feather-edge translucency, warm bulb glow; Compose for Feathers using its key spatial cues: Quills, feather-fan logic, headdress arcs, marabou trim, iridescent barbs',
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
+      key_features: 'layered feather plumage; soft moving edges; iridescent sheen; backlit barbs',
       creative_brief:
-        'Use Feathers after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Feather couture opulence, plume-driven extravagance, ceremonial plumage drama, Soft barbs, feather-fan spread, headdress-arc corona, plume cascade, wing-cape sweep, Ostrich feather, marabou fluff, peacock eye, coque plume, pheasant barb, downy base, dyed hackle, Soft spotlight drama, feather-edge translucency, warm bulb glow, Compose for Feathers using its key spatial cues: Quills, feather-fan logic, headdress arcs, marabou trim, iridescent barbs plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Feathers as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -646,28 +596,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bubble Wrap',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'plain textile drape dominance, soft woven cloth replacing bubble plastic, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, plain textile drape dominance, soft woven cloth replacing bubble plastic, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Bubble Wrap operates as a portable fashion-costume router: combine Plastic fashion, pop-art materialism, bubble-texture absurdity with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Bubble wrap fashion: garments made of clear bubble wrap, with rows of air cells catching light.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Circles, bubble-sphere cluster volume, inflatable-cushion segmentation, rounded modular geometry, air-filled dimension; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments made of clear or tinted bubble wrap sheets with visible air cells, taped seams and puffy volume.",
+      color_and_tone: 'Clear, silver-white or tinted bubble wrap with bright highlights.',
       lighting_and_shadow:
-        'Use Highlights, point-reflection catchlights, broad soft reflections, plastic-sheen bounce, overhead sheen plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render Plastic bubbles, polyethylene film, air-cushion texture, poppable-dome surface, crinkle-film, heat-sealed seam plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Bright light making each bubble glint, chosen to reveal how this material reflects, absorbs or transmits light.',
+      texture_and_material: 'Bubble wrap with rows of air cells, creases and tape.',
       camera_and_composition:
-        'Compose with drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Bubble Wrap while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Playful, absurd, pop and inventive, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        'Plastic fashion, pop-art materialism, bubble-texture absurdity; Circles, bubble-sphere cluster volume, inflatable-cushion segmentation, rounded modular geometry, air-filled dimension; Plastic bubbles, polyethylene film, air-cushion texture, poppable-dome surface, crinkle-film, heat-sealed seam; Highlights, point-reflection catchlights, broad soft reflections, plastic-sheen bounce, overhead sheen; drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control',
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
+      key_features: 'bubble wrap cells; glinting highlights; taped seams; puffy volume',
       creative_brief:
-        'Use Bubble Wrap after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Plastic fashion, pop-art materialism, bubble-texture absurdity, Circles, bubble-sphere cluster volume, inflatable-cushion segmentation, rounded modular geometry, air-filled dimension, Plastic bubbles, polyethylene film, air-cushion texture, poppable-dome surface, crinkle-film, heat-sealed seam, Highlights, point-reflection catchlights, broad soft reflections, plastic-sheen bounce, overhead sheen, drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bubble Wrap as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -675,28 +622,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Fire Dress',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'cold, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, burning skin, cold, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Fire Dress operates as a portable fashion-costume router: combine Ceremonial flame couture, televised-opulence excess, controlled-combustion spectacle with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Fire dress: garments formed of controlled flame and embers, with a glowing core and flickering edges.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Flame tongues, flicker sweep, rising-heat verticality, ember-trail extension, combustion plume logic; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments made of controlled flame with a glowing core, flickering edges and falling embers, never burning the wearer.",
       color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Orange, gold and red flame with white-hot core, on the target material while the rest of the scene keeps its natural color.',
       lighting_and_shadow:
-        'Use Self-illuminated, flame-glow bloom, incandescent-body light, smoke-haze diffraction, ember-spark scatter plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Self-illuminating flame lighting the wearer and surroundings, chosen to reveal how this material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Fire, flame-sheet fabric, synthetic-ember fiber, smoke-veil char, heat-shimmer distortion, LED-programmable textile plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Flame tongues, embers and heat shimmer, with correct scale, weight and surface behavior at every fold and edge.',
       camera_and_composition:
-        'Compose with Compose for Fire Dress using its key spatial cues: Flame tongues, ember trail, heat shimmer, synthetic flame effect, incandescent plume edges plus drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Fire Dress while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Fierce, ceremonial, dangerous and magnificent, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        'Ceremonial flame couture, televised-opulence excess, controlled-combustion spectacle; Flame tongues, flicker sweep, rising-heat verticality, ember-trail extension, combustion plume logic; Fire, flame-sheet fabric, synthetic-ember fiber, smoke-veil char, heat-shimmer distortion, LED-programmable textile; Self-illuminated, flame-glow bloom, incandescent-body light, smoke-haze diffraction, ember-spark scatter; Compose for Fire Dress using its key spatial cues: Flame tongues, ember trail, heat shimmer, synthetic flame effect, incandescent plume edges',
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
+      key_features: 'flame-made garment; glowing core; falling embers; self-illumination',
       creative_brief:
-        'Use Fire Dress after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Ceremonial flame couture, televised-opulence excess, controlled-combustion spectacle, Flame tongues, flicker sweep, rising-heat verticality, ember-trail extension, combustion plume logic, Fire, flame-sheet fabric, synthetic-ember fiber, smoke-veil char, heat-shimmer distortion, LED-programmable textile, Self-illuminated, flame-glow bloom, incandescent-body light, smoke-haze diffraction, ember-spark scatter, Compose for Fire Dress using its key spatial cues: Flame tongues, ember trail, heat shimmer, synthetic flame effect, incandescent plume edges plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fire Dress as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -704,28 +650,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Gold Leaf',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'dull, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, dull, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Gold Leaf operates as a portable fashion-costume router: combine Covered in gold, gilded-divinity fantasy, gilded-surface opulence with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Gold leaf gilding: the figure or its garments covered in applied gold leaf with crackle and burnish.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Flakes, surface-conforming foil, gilded-contour highlight, seamless-metallic shell, layered-leaf overlap; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        'Apply this material to the whole figure as a deliberate transformation while keeping identity, face structure, pose and setting readable: gold leaf applied over the figure or garments, with visible leaf edges, crackle and burnished highlights.',
       color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
-      lighting_and_shadow:
-        'Use Reflection, rim-light gold-bounce, warm-specular highlights, gallery-spot gleam, candlelight-warmth reflection plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Warm gold, rose gold and dark bole underneath, on the target material while the rest of the scene keeps its natural color.',
+      lighting_and_shadow: 'Warm raking light to show leaf edges and burnish.',
       texture_and_material:
-        "Render Metal foil, gold leaf, composition-gold sheet, gilder's-clay base, burnished-surface, mica-flake, gold-dust plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.",
+        'Gold leaf with crackle, edges and burnished sheen, with correct scale, weight and surface behavior at every fold and edge.',
       camera_and_composition:
-        'Compose with Compose for Gold Leaf using its key spatial cues: Leafing seams, burnished reflection, flake edges, gilded contour, mica-gold dust plus drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the figure.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Gold Leaf while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Sacred, precious, divine and still, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        "Covered in gold, gilded-divinity fantasy, gilded-surface opulence; Flakes, surface-conforming foil, gilded-contour highlight, seamless-metallic shell, layered-leaf overlap; Metal foil, gold leaf, composition-gold sheet, gilder's-clay base, burnished-surface, mica-flake, gold-dust; Reflection, rim-light gold-bounce, warm-specular highlights, gallery-spot gleam, candlelight-warmth reflection; Compose for Gold Leaf using its key spatial cues: Leafing seams, burnished reflection, flake edges, gilded contour, mica-gold dust",
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
+      key_features: 'gold leaf edges; crackle; burnished sheen; warm raking light',
       creative_brief:
-        "Use Gold Leaf after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Covered in gold, gilded-divinity fantasy, gilded-surface opulence, Flakes, surface-conforming foil, gilded-contour highlight, seamless-metallic shell, layered-leaf overlap, Metal foil, gold leaf, composition-gold sheet, gilder's-clay base, burnished-surface, mica-flake, gold-dust, Reflection, rim-light gold-bounce, warm-specular highlights, gallery-spot gleam, candlelight-warmth reflection, Compose for Gold Leaf using its key spatial cues: Leafing seams, burnished reflection, flake edges, gilded contour, mica-gold dust plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gold Leaf as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -733,28 +677,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Water Dress',
     category: '5. Fabric & Texture Focus',
     negativePrompt:
-      'dry, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, dry, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Water Dress operates as a portable fashion-costume router: combine Liquid couture illusion, hydro-sculpture wonder, elemental fluid transformation with material-forward fashion transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Water dress: garments formed of flowing clear water with splashes, droplets and caustic light.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden, dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Splashes, sheet-flow drape, droplet-spray volume, surface-tension curves, rippling flow lines; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments made of flowing, transparent water with splash edges, droplets and refracted caustics.",
       color_and_tone:
-        'Map color through material-native hue, surface highlights, depth values, transparency shifts, metallic accents, and tactile color variation; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Clear aqua and silver with light caustics, on the target material while the rest of the scene keeps its natural color.',
       lighting_and_shadow:
-        'Use Refraction, caustic-light dapple, underwater-beam shafts, rim-light sparkle, pool-reflection bounce plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Bright light producing refraction and caustic patterns, chosen to reveal how this material reflects, absorbs or transmits light.',
       texture_and_material:
-        'Render Liquid, surface-tension skin, splash-droplet dispersion, flow-sheet film, waterfall-veil, meniscus-edge curvature plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Liquid water with splashes, droplets and refraction, with correct scale, weight and surface behavior at every fold and edge.',
       camera_and_composition:
-        'Compose with drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.',
       atmosphere_and_mood:
-        "Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay, luxury, uncanniness, or elemental drama; the tone should feel specific to Water Dress while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Fluid, elemental, fresh and surreal, carried by how the material moves and catches light.',
       rendering_and_quality:
-        'Finish with material truth, clean surface scale, controlled texture, believable drape or transformation, and no noisy texture paste; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
-      key_features:
-        'Liquid couture illusion, hydro-sculpture wonder, elemental fluid transformation; Splashes, sheet-flow drape, droplet-spray volume, surface-tension curves, rippling flow lines; Liquid, surface-tension skin, splash-droplet dispersion, flow-sheet film, waterfall-veil, meniscus-edge curvature; Refraction, caustic-light dapple, underwater-beam shafts, rim-light sparkle, pool-reflection bounce; drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control',
+        'Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.',
+      key_features: 'flowing water garment; splash edges; droplets; refraction caustics',
       creative_brief:
-        'Use Water Dress after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Liquid couture illusion, hydro-sculpture wonder, elemental fluid transformation, Splashes, sheet-flow drape, droplet-spray volume, surface-tension curves, rippling flow lines, Liquid, surface-tension skin, splash-droplet dispersion, flow-sheet film, waterfall-veil, meniscus-edge curvature, Refraction, caustic-light dapple, underwater-beam shafts, rim-light sparkle, pool-reflection bounce, drape rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge control plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Water Dress as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -3,7 +3,7 @@ id: SP08-072
 packId: pack_08
 name: Tattoo Skin
 category: 5. Fabric & Texture Focus
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,71 +12,24 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: >-
-    Tattoo Skin operates as a portable fashion-costume router: combine Tattoo-style graphic surface
-    mapping, ceremonial ink devotion, body-art logic translated into transferable pattern language
-    with material-forward fashion transformation with drape, surface, tactility, body-volume logic,
-    and fabric-as-style behavior, so the preset supplies styling behavior rather than a fixed outfit
-    card, required wearer, or literal garment sample.
-  subject_treatment: >-
-    Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden,
-    dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Ink-line flow,
-    sleeve-to-field continuity, wave-band framing, panel-like coverage transitions, back-piece
-    spread logic; identity stays readable as silhouette, fit, layering, body-volume logic, edge
-    behavior, and styling hierarchy shift into this preset.
-  color_and_tone: >-
-    Map color through material-native hue, surface highlights, depth values, transparency shifts,
-    metallic accents, and tactile color variation; keep textile values separated, accents
-    intentional, material color believable, and palette behavior attached to the subject instead of
-    pasted wardrobe decoration.
-  lighting_and_shadow: >-
-    Use Even saturation light, healed-ink clarity, soft rim separation, low-glare surface read plus
-    material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or
-    volumetric separation as the styling light contract, revealing cut, drape, surface response,
-    trim, transparency, or armor structure without erasing prompt readability.
-  texture_and_material: >-
-    Render Healed-ink surface, needle-point grain, raised-line relief, stippled shading, varnished
-    pigment depth plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water,
-    fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity,
-    folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.
-  camera_and_composition: >-
-    Compose with Compose for Tattoo Skin using its key spatial cues: Ink coverage logic, irezumi
-    waves, wind bars, healed-depth read, sleeve-to-field connection plus drape rhythm, material
-    coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge
-    control as reusable fashion framing grammar, allowing portraits, objects, creatures,
-    environments, action, and abstract prompts to inherit styling without one required pose.
-  atmosphere_and_mood: >-
-    Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay,
-    luxury, uncanniness, or elemental drama; the tone should feel specific to Tattoo Skin while
-    still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
-    supplied.
-  rendering_and_quality: >-
-    Finish with material truth, clean surface scale, controlled texture, believable drape or
-    transformation, and no noisy texture paste; prioritize clean style recognition, believable
-    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
-    accidental UI.
-  key_features: >-
-    Tattoo-style graphic surface mapping, ceremonial ink devotion, body-art logic translated into
-    transferable pattern language; Ink-line flow, sleeve-to-field continuity, wave-band framing,
-    panel-like coverage transitions, back-piece spread logic; Healed-ink surface, needle-point
-    grain, raised-line relief, stippled shading, varnished pigment depth; Even saturation light,
-    healed-ink clarity, soft rim separation, low-glare surface read; Compose for Tattoo Skin using
-    its key spatial cues: Ink coverage logic, irezumi waves, wind bars, healed-depth read,
-    sleeve-to-field connection
-  creative_brief: >-
-    Use Tattoo Skin after prompt X as a transferable fashion/costume layer: prompt X supplies
-    subject, motion, setting, tone, and intensity, while the preset supplies Tattoo-style graphic
-    surface mapping, ceremonial ink devotion, body-art logic translated into transferable pattern
-    language, Ink-line flow, sleeve-to-field continuity, wave-band framing, panel-like coverage
-    transitions, back-piece spread logic, Healed-ink surface, needle-point grain, raised-line
-    relief, stippled shading, varnished pigment depth, Even saturation light, healed-ink clarity,
-    soft rim separation, low-glare surface read, Compose for Tattoo Skin using its key spatial cues:
-    Ink coverage logic, irezumi waves, wind bars, healed-depth read, sleeve-to-field connection plus
-    weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior,
-    and surface continuity, palette behavior, light response, material treatment, silhouette
-    grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop
-    bundle, or card composition.
+  aesthetic: 'Tattoo skin mapping: the figure''s visible skin covered in graphic tattoo work that follows anatomy, ornamental and ceremonial.'
+  subject_treatment: 'Apply this material to the whole figure as a deliberate transformation while keeping identity, face structure, pose and setting readable: graphic tattoo designs mapped across visible skin, flowing with anatomy, in a consistent style chosen per prompt.'
+  color_and_tone: Black ink with optional red, indigo and ochre color work.
+  lighting_and_shadow: Soft side light to show skin and ink, chosen to reveal how this material reflects, absorbs or transmits light.
+  texture_and_material: Skin with healed ink, linework and shading, with correct scale, weight and surface behavior at every fold and edge.
+  camera_and_composition: Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the figure.
+  atmosphere_and_mood: Ceremonial, bold, personal and striking, carried by how the material moves and catches light.
+  rendering_and_quality: Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.
+  key_features: anatomy-following tattoo work; black ink with color; ornamental mapping
+  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tattoo Skin as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
 avoidRules:
+  - brand logo
+  - readable label text
+  - real person likeness
+  - material applied to the background instead of the target
+  - muddy material noise
+  - readable tattoo text
+  - nudity
   - blank unmarked surface
   - generic fabric texture
   - muddy surface noise
@@ -88,13 +41,16 @@ avoidRules:
   - muddy fabric noise
   - watermark
   - readable text
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-072.webp
 attributes:
-  negativePrompt: >-
-    blank unmarked surface, generic fabric texture, muddy surface noise, wrong material physics,
-    fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric
-    noise, watermark, readable text
+  negativePrompt: brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, readable tattoo text, nudity, blank unmarked surface, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

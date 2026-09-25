@@ -3,7 +3,7 @@ id: SP08-068
 packId: pack_08
 name: Smoke Dress
 category: 5. Fabric & Texture Focus
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,70 +12,22 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: >-
-    Smoke Dress operates as a portable fashion-costume router: combine Smoke-borne couture,
-    evanescent form poetry, vapor-sculpture impossibility with material-forward fashion
-    transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior,
-    so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or
-    literal garment sample.
-  subject_treatment: >-
-    Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden,
-    dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Swirling plumes,
-    tendril curls, dissolving edges, columnar lift, volume-without-surface logic; identity stays
-    readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy
-    shift into this preset.
-  color_and_tone: >-
-    Map color through material-native hue, surface highlights, depth values, transparency shifts,
-    metallic accents, and tactile color variation; keep textile values separated, accents
-    intentional, material color believable, and palette behavior attached to the subject instead of
-    pasted wardrobe decoration.
-  lighting_and_shadow: >-
-    Use Volumetric, god-ray penetration, smoke-halo backlight, theatrical-haze ambiance, laser-shaft
-    definition plus material-revealing light with gloss, rim, translucency, sparkle, subsurface,
-    matte falloff, or volumetric separation as the styling light contract, revealing cut, drape,
-    surface response, trim, transparency, or armor structure without erasing prompt readability.
-  texture_and_material: >-
-    Render Gas, particulate-suspension wisp, layered-veil translucency, turbulent-curl,
-    still-stratum band, wisp-edge diffusion plus fabric grain, fur, chain, knit, satin, lace,
-    leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale,
-    seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment
-    coherent across the whole prompt.
-  camera_and_composition: >-
-    Compose with smoke-borne materiality: particulate wisps, billowing plumes, dissolving edges,
-    volumetric shafts and layers of grey-white vapor plus drape rhythm, material coverage,
-    silhouette clarity, tactile close detail, fold direction, and transformation edge control as
-    reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action,
-    and abstract prompts to inherit styling without one required pose.
-  atmosphere_and_mood: >-
-    Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay,
-    luxury, uncanniness, or elemental drama; the tone should feel specific to Smoke Dress while
-    still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
-    supplied.
-  rendering_and_quality: >-
-    Finish with material truth, clean surface scale, controlled texture, believable drape or
-    transformation, and no noisy texture paste; prioritize clean style recognition, believable
-    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
-    accidental UI.
-  key_features: >-
-    Smoke-borne couture, evanescent form poetry, vapor-sculpture impossibility; Swirling plumes,
-    tendril curls, dissolving edges, columnar lift, volume-without-surface logic; Gas,
-    particulate-suspension wisp, layered-veil translucency, turbulent-curl, still-stratum band,
-    wisp-edge diffusion; Volumetric, god-ray penetration, smoke-halo backlight, theatrical-haze
-    ambiance, laser-shaft definition; smoke-borne materiality: particulate wisps, billowing plumes,
-    dissolving edges, volumetric shafts and layers of grey-white vapor
-  creative_brief: >-
-    Use Smoke Dress after prompt X as a transferable fashion/costume layer: prompt X supplies
-    subject, motion, setting, tone, and intensity, while the preset supplies Smoke-borne couture,
-    evanescent form poetry, vapor-sculpture impossibility, Swirling plumes, tendril curls,
-    dissolving edges, columnar lift, volume-without-surface logic, Gas, particulate-suspension wisp,
-    layered-veil translucency, turbulent-curl, still-stratum band, wisp-edge diffusion, Volumetric,
-    god-ray penetration, smoke-halo backlight, theatrical-haze ambiance, laser-shaft definition,
-    smoke-borne materiality: particulate wisps, billowing plumes, dissolving edges, volumetric
-    shafts and layers of grey-white vapor plus weave, pile, grain, shine, translucency, opacity,
-    stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light
-    response, material treatment, silhouette grammar, and finish discipline without requiring one
-    body type, fixed outfit, venue, prop bundle, or card composition.
+  aesthetic: 'Smoke dress: garments whose lower parts dissolve into drifting smoke while the bodice stays defined.'
+  subject_treatment: 'Make the prompt''s garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments with a defined upper part whose hems and trains dissolve into curling smoke.'
+  color_and_tone: Charcoal, ash grey, and white smoke against dark backgrounds.
+  lighting_and_shadow: Backlight and side light to reveal smoke volumes, chosen to reveal how this material reflects, absorbs or transmits light.
+  texture_and_material: Soft volumetric smoke with curling wisps blending from fabric.
+  camera_and_composition: Frame the full figure or the garment area large enough that the material reads at card size; the material effect stays on the clothing.
+  atmosphere_and_mood: Ghostly, mysterious, fleeting and poetic, carried by how the material moves and catches light.
+  rendering_and_quality: Photorealistic material rendering with believable physics, clean edges and no smeared or noisy surfaces.
+  key_features: hems dissolving into smoke; defined bodice; curling wisps; backlit volumes
+  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Smoke Dress as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
 avoidRules:
+  - brand logo
+  - readable label text
+  - real person likeness
+  - material applied to the background instead of the target
+  - muddy material noise
   - solid
   - generic fabric texture
   - muddy surface noise
@@ -87,13 +39,16 @@ avoidRules:
   - muddy fabric noise
   - watermark
   - readable text
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-068.webp
 attributes:
-  negativePrompt: >-
-    solid, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit,
-    required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
-    readable text
+  negativePrompt: brand logo, readable label text, real person likeness, material applied to the background instead of the target, muddy material noise, solid, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume
