@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-271
+packId: pack_15
+name: Ironagepunk
+styleAnchors:
+  - Ironagepunk
+  - iron age forge punk
+  - bloomery furnaces
+displayName: Ironagepunk
+category: 10. Primitive, Stone & Salvage Punks
+domain: iron age forge punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - primitive-stone-and-salvage-punks
+  - ironagepunk
+  - punk
+  - primitive
+visualDna:
+  aesthetic: 'Ironagepunk: iron age hill forts turned into forge cities, with bloomery furnaces, iron wheels, horned helmets of invention and smoke over timber walls.'
+  subject_treatment: Keep the prompt's subject and setting; rebuild it with dark forged iron, bloomery furnaces and timber hill-fort architecture.
+  color_and_tone: Dark iron grey and soot black with glowing orange forge light and muddy greens.
+  lighting_and_shadow: Forge glow and overcast daylight through smoke and mist.
+  texture_and_material: Hammer-scarred iron, charcoal, timber palisades, wool, leather and mud.
+  camera_and_composition: Smoky forge interiors and hill forts seen across misty valleys.
+  atmosphere_and_mood: Tough, smoky and inventive, strength hammered out of rock.
+  rendering_and_quality: Gritty textured illustration with forge glow and smoky depth.
+  creative_brief: "Ironagepunk: iron age hill forts turned into forge cities, with bloomery furnaces, iron wheels, horned helmets of invention and smoke over timber walls. Carry it through bloomery furnaces, forged iron, timber hill forts, smoke and mist. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: bloomery furnaces; forged iron; timber hill forts; smoke and mist
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - gore
+  - sacred regalia of a specific living culture
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: primitive-stone-and-salvage-punks
+  categoryName: 10. Primitive, Stone & Salvage Punks
+  tags:
+    - curation-v2
+    - primitive-stone-and-salvage-punks
+    - ironagepunk
+    - punk
+    - primitive
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: iron age forge punk

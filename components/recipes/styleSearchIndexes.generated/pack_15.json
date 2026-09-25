@@ -3,7 +3,7 @@
     {
       "id": "pack_15",
       "name": "Punk Spectrum Vault",
-      "presetCount": 182
+      "presetCount": 200
     }
   ],
   "presets": [
@@ -2592,7 +2592,307 @@
       "tags": ["punk-spectrum-vault", "primitive-stone-and-salvage-punks"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp15-122 low-tech punk 10. primitive, stone & salvage punks primitive & salvage futures pack_15 punk spectrum vault primitive-stone-and-salvage-punks punk-spectrum-vault primitive-stone-and-salvage-punks"
+    },
+    {
+      "id": "SP15-270",
+      "name": "Bronzepunk",
+      "styleAnchors": ["Bronzepunk", "bronze age engineering punk", "bronze automatons"],
+      "ref": "pack_15/SP15-270.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "primitive-stone-and-salvage-punks",
+      "categoryName": "10. Primitive, Stone & Salvage Punks",
+      "domain": "bronze age engineering punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "primitive-stone-and-salvage-punks",
+        "bronze-age-engineering-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-270 bronzepunk bronze age engineering punk bronze automatons 10. primitive, stone & salvage punks primitive & salvage futures bronze age engineering punk pack_15 punk spectrum vault primitive-stone-and-salvage-punks punk-spectrum-vault primitive-stone-and-salvage-punks bronze-age-engineering-punk"
+    },
+    {
+      "id": "SP15-271",
+      "name": "Ironagepunk",
+      "styleAnchors": ["Ironagepunk", "iron age forge punk", "bloomery furnaces"],
+      "ref": "pack_15/SP15-271.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "primitive-stone-and-salvage-punks",
+      "categoryName": "10. Primitive, Stone & Salvage Punks",
+      "domain": "iron age forge punk",
+      "tags": ["punk-spectrum-vault", "primitive-stone-and-salvage-punks", "iron-age-forge-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-271 ironagepunk iron age forge punk bloomery furnaces 10. primitive, stone & salvage punks primitive & salvage futures iron age forge punk pack_15 punk spectrum vault primitive-stone-and-salvage-punks punk-spectrum-vault primitive-stone-and-salvage-punks iron-age-forge-punk"
+    },
+    {
+      "id": "SP15-272",
+      "name": "Woodpunk",
+      "styleAnchors": ["Woodpunk", "carved timber engineering punk", "wooden clockwork"],
+      "ref": "pack_15/SP15-272.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "primitive-stone-and-salvage-punks",
+      "categoryName": "10. Primitive, Stone & Salvage Punks",
+      "domain": "carved timber engineering punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "primitive-stone-and-salvage-punks",
+        "carved-timber-engineering-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-272 woodpunk carved timber engineering punk wooden clockwork 10. primitive, stone & salvage punks primitive & salvage futures carved timber engineering punk pack_15 punk spectrum vault primitive-stone-and-salvage-punks punk-spectrum-vault primitive-stone-and-salvage-punks carved-timber-engineering-punk"
+    },
+    {
+      "id": "SP15-273",
+      "name": "Potterypunk",
+      "styleAnchors": ["Potterypunk", "ceramic technology punk", "ceramic machines"],
+      "ref": "pack_15/SP15-273.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "primitive-stone-and-salvage-punks",
+      "categoryName": "10. Primitive, Stone & Salvage Punks",
+      "domain": "ceramic technology punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "primitive-stone-and-salvage-punks",
+        "ceramic-technology-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-273 potterypunk ceramic technology punk ceramic machines 10. primitive, stone & salvage punks primitive & salvage futures ceramic technology punk pack_15 punk spectrum vault primitive-stone-and-salvage-punks punk-spectrum-vault primitive-stone-and-salvage-punks ceramic-technology-punk"
+    },
+    {
+      "id": "SP15-274",
+      "name": "Reedpunk",
+      "styleAnchors": ["Reedpunk", "woven reed marsh punk", "bundled reed boats"],
+      "ref": "pack_15/SP15-274.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "primitive-stone-and-salvage-punks",
+      "categoryName": "10. Primitive, Stone & Salvage Punks",
+      "domain": "woven reed marsh punk",
+      "tags": ["punk-spectrum-vault", "primitive-stone-and-salvage-punks", "woven-reed-marsh-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-274 reedpunk woven reed marsh punk bundled reed boats 10. primitive, stone & salvage punks primitive & salvage futures woven reed marsh punk pack_15 punk spectrum vault primitive-stone-and-salvage-punks punk-spectrum-vault primitive-stone-and-salvage-punks woven-reed-marsh-punk"
+    },
+    {
+      "id": "SP15-275",
+      "name": "Leatherpunk",
+      "styleAnchors": ["Leatherpunk", "tanned hide craft punk", "stitched leather armor"],
+      "ref": "pack_15/SP15-275.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "primitive-stone-and-salvage-punks",
+      "categoryName": "10. Primitive, Stone & Salvage Punks",
+      "domain": "tanned hide craft punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "primitive-stone-and-salvage-punks",
+        "tanned-hide-craft-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-275 leatherpunk tanned hide craft punk stitched leather armor 10. primitive, stone & salvage punks primitive & salvage futures tanned hide craft punk pack_15 punk spectrum vault primitive-stone-and-salvage-punks punk-spectrum-vault primitive-stone-and-salvage-punks tanned-hide-craft-punk"
+    },
+    {
+      "id": "SP15-276",
+      "name": "Obsidianpunk",
+      "styleAnchors": ["Obsidianpunk", "volcanic glass blade punk", "knapped obsidian blades"],
+      "ref": "pack_15/SP15-276.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "primitive-stone-and-salvage-punks",
+      "categoryName": "10. Primitive, Stone & Salvage Punks",
+      "domain": "volcanic glass blade punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "primitive-stone-and-salvage-punks",
+        "volcanic-glass-blade-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-276 obsidianpunk volcanic glass blade punk knapped obsidian blades 10. primitive, stone & salvage punks primitive & salvage futures volcanic glass blade punk pack_15 punk spectrum vault primitive-stone-and-salvage-punks punk-spectrum-vault primitive-stone-and-salvage-punks volcanic-glass-blade-punk"
+    },
+    {
+      "id": "SP15-277",
+      "name": "Megalithpunk",
+      "styleAnchors": ["Megalithpunk", "megalith builder punk", "standing stones"],
+      "ref": "pack_15/SP15-277.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "primitive-stone-and-salvage-punks",
+      "categoryName": "10. Primitive, Stone & Salvage Punks",
+      "domain": "megalith builder punk",
+      "tags": ["punk-spectrum-vault", "primitive-stone-and-salvage-punks", "megalith-builder-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-277 megalithpunk megalith builder punk standing stones 10. primitive, stone & salvage punks primitive & salvage futures megalith builder punk pack_15 punk spectrum vault primitive-stone-and-salvage-punks punk-spectrum-vault primitive-stone-and-salvage-punks megalith-builder-punk"
+    },
+    {
+      "id": "SP15-278",
+      "name": "Antlerpunk",
+      "styleAnchors": ["Antlerpunk", "antler and horn craft punk", "antler crowns"],
+      "ref": "pack_15/SP15-278.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "primitive-stone-and-salvage-punks",
+      "categoryName": "10. Primitive, Stone & Salvage Punks",
+      "domain": "antler and horn craft punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "primitive-stone-and-salvage-punks",
+        "antler-and-horn-craft-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-278 antlerpunk antler and horn craft punk antler crowns 10. primitive, stone & salvage punks primitive & salvage futures antler and horn craft punk pack_15 punk spectrum vault primitive-stone-and-salvage-punks punk-spectrum-vault primitive-stone-and-salvage-punks antler-and-horn-craft-punk"
+    },
+    {
+      "id": "SP15-279",
+      "name": "Wickerpunk",
+      "styleAnchors": ["Wickerpunk", "woven basketry engineering punk", "basket balloons"],
+      "ref": "pack_15/SP15-279.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "primitive-stone-and-salvage-punks",
+      "categoryName": "10. Primitive, Stone & Salvage Punks",
+      "domain": "woven basketry engineering punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "primitive-stone-and-salvage-punks",
+        "woven-basketry-engineering-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-279 wickerpunk woven basketry engineering punk basket balloons 10. primitive, stone & salvage punks primitive & salvage futures woven basketry engineering punk pack_15 punk spectrum vault primitive-stone-and-salvage-punks punk-spectrum-vault primitive-stone-and-salvage-punks woven-basketry-engineering-punk"
+    },
+    {
+      "id": "SP15-280",
+      "name": "Chariotpunk",
+      "styleAnchors": ["Chariotpunk", "chariot racing culture punk", "spoked chariots"],
+      "ref": "pack_15/SP15-280.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "primitive-stone-and-salvage-punks",
+      "categoryName": "10. Primitive, Stone & Salvage Punks",
+      "domain": "chariot racing culture punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "primitive-stone-and-salvage-punks",
+        "chariot-racing-culture-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-280 chariotpunk chariot racing culture punk spoked chariots 10. primitive, stone & salvage punks primitive & salvage futures chariot racing culture punk pack_15 punk spectrum vault primitive-stone-and-salvage-punks punk-spectrum-vault primitive-stone-and-salvage-punks chariot-racing-culture-punk"
+    },
+    {
+      "id": "SP15-281",
+      "name": "Yurtpunk",
+      "styleAnchors": ["Yurtpunk", "felt tent steppe punk", "round felt tents"],
+      "ref": "pack_15/SP15-281.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "primitive-stone-and-salvage-punks",
+      "categoryName": "10. Primitive, Stone & Salvage Punks",
+      "domain": "felt tent steppe punk",
+      "tags": ["punk-spectrum-vault", "primitive-stone-and-salvage-punks", "felt-tent-steppe-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-281 yurtpunk felt tent steppe punk round felt tents 10. primitive, stone & salvage punks primitive & salvage futures felt tent steppe punk pack_15 punk spectrum vault primitive-stone-and-salvage-punks punk-spectrum-vault primitive-stone-and-salvage-punks felt-tent-steppe-punk"
+    },
+    {
+      "id": "SP15-282",
+      "name": "Canoepunk",
+      "styleAnchors": ["Canoepunk", "dugout canoe river punk", "carved dugout canoes"],
+      "ref": "pack_15/SP15-282.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "primitive-stone-and-salvage-punks",
+      "categoryName": "10. Primitive, Stone & Salvage Punks",
+      "domain": "dugout canoe river punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "primitive-stone-and-salvage-punks",
+        "dugout-canoe-river-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-282 canoepunk dugout canoe river punk carved dugout canoes 10. primitive, stone & salvage punks primitive & salvage futures dugout canoe river punk pack_15 punk spectrum vault primitive-stone-and-salvage-punks punk-spectrum-vault primitive-stone-and-salvage-punks dugout-canoe-river-punk"
+    },
+    {
+      "id": "SP15-283",
+      "name": "Barkpunk",
+      "styleAnchors": ["Barkpunk", "tree bark craft punk", "birchbark boats"],
+      "ref": "pack_15/SP15-283.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "primitive-stone-and-salvage-punks",
+      "categoryName": "10. Primitive, Stone & Salvage Punks",
+      "domain": "tree bark craft punk",
+      "tags": ["punk-spectrum-vault", "primitive-stone-and-salvage-punks", "tree-bark-craft-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-283 barkpunk tree bark craft punk birchbark boats 10. primitive, stone & salvage punks primitive & salvage futures tree bark craft punk pack_15 punk spectrum vault primitive-stone-and-salvage-punks punk-spectrum-vault primitive-stone-and-salvage-punks tree-bark-craft-punk"
+    },
+    {
+      "id": "SP15-284",
+      "name": "Shellpunk",
+      "styleAnchors": ["Shellpunk", "seashell craft coast punk", "shell armor"],
+      "ref": "pack_15/SP15-284.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "primitive-stone-and-salvage-punks",
+      "categoryName": "10. Primitive, Stone & Salvage Punks",
+      "domain": "seashell craft coast punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "primitive-stone-and-salvage-punks",
+        "seashell-craft-coast-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-284 shellpunk seashell craft coast punk shell armor 10. primitive, stone & salvage punks primitive & salvage futures seashell craft coast punk pack_15 punk spectrum vault primitive-stone-and-salvage-punks punk-spectrum-vault primitive-stone-and-salvage-punks seashell-craft-coast-punk"
+    },
+    {
+      "id": "SP15-285",
+      "name": "Amberpunk",
+      "styleAnchors": ["Amberpunk", "fossil amber punk", "glowing amber"],
+      "ref": "pack_15/SP15-285.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "primitive-stone-and-salvage-punks",
+      "categoryName": "10. Primitive, Stone & Salvage Punks",
+      "domain": "fossil amber punk",
+      "tags": ["punk-spectrum-vault", "primitive-stone-and-salvage-punks", "fossil-amber-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-285 amberpunk fossil amber punk glowing amber 10. primitive, stone & salvage punks primitive & salvage futures fossil amber punk pack_15 punk spectrum vault primitive-stone-and-salvage-punks punk-spectrum-vault primitive-stone-and-salvage-punks fossil-amber-punk"
+    },
+    {
+      "id": "SP15-286",
+      "name": "Mammothpunk",
+      "styleAnchors": ["Mammothpunk", "ice age mammoth culture punk", "woolly mammoths"],
+      "ref": "pack_15/SP15-286.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "primitive-stone-and-salvage-punks",
+      "categoryName": "10. Primitive, Stone & Salvage Punks",
+      "domain": "ice age mammoth culture punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "primitive-stone-and-salvage-punks",
+        "ice-age-mammoth-culture-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-286 mammothpunk ice age mammoth culture punk woolly mammoths 10. primitive, stone & salvage punks primitive & salvage futures ice age mammoth culture punk pack_15 punk spectrum vault primitive-stone-and-salvage-punks punk-spectrum-vault primitive-stone-and-salvage-punks ice-age-mammoth-culture-punk"
+    },
+    {
+      "id": "SP15-287",
+      "name": "Featherpunk",
+      "styleAnchors": ["Featherpunk", "feather craft sky punk", "feather cloaks"],
+      "ref": "pack_15/SP15-287.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "primitive-stone-and-salvage-punks",
+      "categoryName": "10. Primitive, Stone & Salvage Punks",
+      "domain": "feather craft sky punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "primitive-stone-and-salvage-punks",
+        "feather-craft-sky-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-287 featherpunk feather craft sky punk feather cloaks 10. primitive, stone & salvage punks primitive & salvage futures feather craft sky punk pack_15 punk spectrum vault primitive-stone-and-salvage-punks punk-spectrum-vault primitive-stone-and-salvage-punks feather-craft-sky-punk"
     }
   ],
-  "totalPresetCount": 182
+  "totalPresetCount": 200
 }

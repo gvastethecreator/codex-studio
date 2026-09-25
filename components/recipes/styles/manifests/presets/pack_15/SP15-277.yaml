@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-277
+packId: pack_15
+name: Megalithpunk
+styleAnchors:
+  - Megalithpunk
+  - megalith builder punk
+  - standing stones
+displayName: Megalithpunk
+category: 10. Primitive, Stone & Salvage Punks
+domain: megalith builder punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - primitive-stone-and-salvage-punks
+  - megalithpunk
+  - punk
+  - primitive
+visualDna:
+  aesthetic: 'Megalithpunk: builders of giant standing stones and dolmens, with log rollers, rope teams, lever frames and stone circles aligned with the sun.'
+  subject_treatment: Keep the prompt's subject and setting; bring in giant standing stones, rope-pulling crowds and wooden lever frames.
+  color_and_tone: Grey granite and lichen with green hills, stormy skies and golden solstice light.
+  lighting_and_shadow: Low solstice sun cutting through stone gaps and long shadows.
+  texture_and_material: Rough granite, lichen, wooden rollers, rope, mud and grass.
+  camera_and_composition: Huge stones with crowds pulling ropes, circles on open hills.
+  atmosphere_and_mood: Monumental, collective and mysterious, a whole people moving a mountain.
+  rendering_and_quality: Epic textured illustration with huge scale and dramatic light.
+  creative_brief: "Megalithpunk: builders of giant standing stones and dolmens, with log rollers, rope teams, lever frames and stone circles aligned with the sun. Carry it through standing stones, rope teams, log rollers, solstice alignment. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: standing stones; rope teams; log rollers; solstice alignment
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - gore
+  - sacred regalia of a specific living culture
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: primitive-stone-and-salvage-punks
+  categoryName: 10. Primitive, Stone & Salvage Punks
+  tags:
+    - curation-v2
+    - primitive-stone-and-salvage-punks
+    - megalithpunk
+    - punk
+    - primitive
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: megalith builder punk

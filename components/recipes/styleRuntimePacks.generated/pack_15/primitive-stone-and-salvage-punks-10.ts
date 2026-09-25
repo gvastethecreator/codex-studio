@@ -63,4 +63,544 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP15-270',
+    name: 'Bronzepunk',
+    displayName: 'Bronzepunk',
+    styleAnchors: ['Bronzepunk', 'bronze age engineering punk', 'bronze automatons'],
+    category: '10. Primitive, Stone & Salvage Punks',
+    domain: 'bronze age engineering punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bronzepunk: a bronze age that never ended, with cast bronze automatons, gleaming chariots, sun-disc mirrors and foundries pouring glowing metal into clay molds.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; rebuild its machines, armor and tools in cast and hammered bronze with green patina.",
+      color_and_tone:
+        'Burnished bronze gold and copper with green verdigris patina and warm sunlit stone.',
+      lighting_and_shadow:
+        'Bright Mediterranean sun glinting on polished bronze, foundry fire at night.',
+      texture_and_material:
+        'Cast bronze, hammered sheet, verdigris, clay molds, linen and limestone.',
+      camera_and_composition: 'Heroic frontal compositions of gleaming machines and figures.',
+      atmosphere_and_mood: 'Proud, radiant and ancient, an empire of shining metal.',
+      rendering_and_quality: 'Gleaming detailed illustration with polished metal and patina.',
+      creative_brief:
+        "Bronzepunk: a bronze age that never ended, with cast bronze automatons, gleaming chariots, sun-disc mirrors and foundries pouring glowing metal into clay molds. Carry it through bronze automatons, sun-disc mirrors, verdigris patina, glowing foundries. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'bronze automatons; sun-disc mirrors; verdigris patina; glowing foundries',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-271',
+    name: 'Ironagepunk',
+    displayName: 'Ironagepunk',
+    styleAnchors: ['Ironagepunk', 'iron age forge punk', 'bloomery furnaces'],
+    category: '10. Primitive, Stone & Salvage Punks',
+    domain: 'iron age forge punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ironagepunk: iron age hill forts turned into forge cities, with bloomery furnaces, iron wheels, horned helmets of invention and smoke over timber walls.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; rebuild it with dark forged iron, bloomery furnaces and timber hill-fort architecture.",
+      color_and_tone:
+        'Dark iron grey and soot black with glowing orange forge light and muddy greens.',
+      lighting_and_shadow: 'Forge glow and overcast daylight through smoke and mist.',
+      texture_and_material:
+        'Hammer-scarred iron, charcoal, timber palisades, wool, leather and mud.',
+      camera_and_composition: 'Smoky forge interiors and hill forts seen across misty valleys.',
+      atmosphere_and_mood: 'Tough, smoky and inventive, strength hammered out of rock.',
+      rendering_and_quality: 'Gritty textured illustration with forge glow and smoky depth.',
+      creative_brief:
+        "Ironagepunk: iron age hill forts turned into forge cities, with bloomery furnaces, iron wheels, horned helmets of invention and smoke over timber walls. Carry it through bloomery furnaces, forged iron, timber hill forts, smoke and mist. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'bloomery furnaces; forged iron; timber hill forts; smoke and mist',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-272',
+    name: 'Woodpunk',
+    displayName: 'Woodpunk',
+    styleAnchors: ['Woodpunk', 'carved timber engineering punk', 'wooden clockwork'],
+    category: '10. Primitive, Stone & Salvage Punks',
+    domain: 'carved timber engineering punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Woodpunk: a civilization built entirely of carved and joined wood, with wooden clockwork, timber airships, oak gears, pegged joints and carved everything.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; rebuild its machines, vehicles and buildings from carved and pegged wood with visible grain.",
+      color_and_tone: 'Warm honey oak, walnut brown and pale ash with deep forest greens.',
+      lighting_and_shadow: 'Warm sunlight through trees and lamplight on polished grain.',
+      texture_and_material:
+        'Wood grain, carved gears, pegged joints, shavings, bark and oil finish.',
+      camera_and_composition: 'Detailed mechanical views and wooden machines in forest settings.',
+      atmosphere_and_mood: 'Warm, clever and patient, a world grown and carved rather than mined.',
+      rendering_and_quality: 'Richly detailed illustration with fine grain and carved joinery.',
+      creative_brief:
+        "Woodpunk: a civilization built entirely of carved and joined wood, with wooden clockwork, timber airships, oak gears, pegged joints and carved everything. Carry it through wooden clockwork, carved gears, pegged joints, timber airships. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'wooden clockwork; carved gears; pegged joints; timber airships',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-273',
+    name: 'Potterypunk',
+    displayName: 'Potterypunk',
+    styleAnchors: ['Potterypunk', 'ceramic technology punk', 'ceramic machines'],
+    category: '10. Primitive, Stone & Salvage Punks',
+    domain: 'ceramic technology punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Potterypunk: a world where everything is fired clay, with ceramic machines, glazed armor, kiln cities, terracotta pipes and crackle-glaze surfaces.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; rebuild it in fired clay, with glazed ceramic surfaces, terracotta and kiln marks.",
+      color_and_tone: 'Terracotta orange, celadon green, cobalt blue glaze and cream crackle.',
+      lighting_and_shadow: 'Soft daylight on glossy glaze and warm kiln glow at night.',
+      texture_and_material:
+        'Terracotta, glossy glaze, crackle patterns, throwing rings and kiln ash.',
+      camera_and_composition: 'Workshop and city views crowded with ceramic forms.',
+      atmosphere_and_mood: 'Earthy, delicate and ingenious, a civilization that could shatter.',
+      rendering_and_quality: 'Tactile illustration with glossy glaze highlights and clay texture.',
+      creative_brief:
+        "Potterypunk: a world where everything is fired clay, with ceramic machines, glazed armor, kiln cities, terracotta pipes and crackle-glaze surfaces. Carry it through ceramic machines, glazed armor, kiln cities, crackle glaze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'ceramic machines; glazed armor; kiln cities; crackle glaze',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-274',
+    name: 'Reedpunk',
+    displayName: 'Reedpunk',
+    styleAnchors: ['Reedpunk', 'woven reed marsh punk', 'bundled reed boats'],
+    category: '10. Primitive, Stone & Salvage Punks',
+    domain: 'woven reed marsh punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Reedpunk: floating marsh cultures building from bundled reeds, with reed boats, woven island towns, reed arches and golden stalks against wide water.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; build it from bundled and woven reeds on a wide calm marsh.",
+      color_and_tone: 'Golden straw and pale green reeds with blue water and warm dusk skies.',
+      lighting_and_shadow: 'Low golden sun glowing through reed walls and on still water.',
+      texture_and_material:
+        'Bundled reeds, woven mats, rope lashings, mud and calm water reflections.',
+      camera_and_composition: 'Wide flat marsh views with woven island towns reflected in water.',
+      atmosphere_and_mood: 'Calm, golden and resourceful, a home that floats.',
+      rendering_and_quality: 'Warm detailed illustration with woven fiber texture and reflections.',
+      creative_brief:
+        "Reedpunk: floating marsh cultures building from bundled reeds, with reed boats, woven island towns, reed arches and golden stalks against wide water. Carry it through bundled reed boats, woven islands, reed arches, still water. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'bundled reed boats; woven islands; reed arches; still water',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-275',
+    name: 'Leatherpunk',
+    displayName: 'Leatherpunk',
+    styleAnchors: ['Leatherpunk', 'tanned hide craft punk', 'stitched leather armor'],
+    category: '10. Primitive, Stone & Salvage Punks',
+    domain: 'tanned hide craft punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Leatherpunk: a nomadic culture of tanners and hide-workers, with stitched leather armor, hide tents, tooled saddles, drum skins and oiled straps.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; rebuild its clothing, gear and shelters from stitched, tooled and oiled leather.",
+      color_and_tone:
+        'Saddle brown, tan, oxblood and black leather with bone white and brass buckles.',
+      lighting_and_shadow: 'Warm firelight and sun catching oiled leather sheen.',
+      texture_and_material:
+        'Tooled leather, heavy stitching, rawhide lacing, brass buckles and fur trim.',
+      camera_and_composition: 'Close craft views and nomad camps with leather gear everywhere.',
+      atmosphere_and_mood: 'Rugged, proud and weathered, gear that lasts a lifetime.',
+      rendering_and_quality:
+        'Richly textured illustration with stitched and tooled leather detail.',
+      creative_brief:
+        "Leatherpunk: a nomadic culture of tanners and hide-workers, with stitched leather armor, hide tents, tooled saddles, drum skins and oiled straps. Carry it through stitched leather armor, tooled saddles, hide tents, drum skins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'stitched leather armor; tooled saddles; hide tents; drum skins',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-276',
+    name: 'Obsidianpunk',
+    displayName: 'Obsidianpunk',
+    styleAnchors: ['Obsidianpunk', 'volcanic glass blade punk', 'knapped obsidian blades'],
+    category: '10. Primitive, Stone & Salvage Punks',
+    domain: 'volcanic glass blade punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Obsidianpunk: a civilization of volcanic glass, with razor obsidian blades, black mirror shields, knapped glass architecture and sun-temples reflecting fire.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; rebuild its weapons, tools and architecture from glossy black knapped obsidian.",
+      color_and_tone:
+        'Glossy black obsidian with red-gold sun reflections, jade green and stone beige.',
+      lighting_and_shadow: 'Hard sun and fire reflections sliding across black glass.',
+      texture_and_material:
+        'Conchoidal knapped glass, polished obsidian mirrors, stone and feathers.',
+      camera_and_composition:
+        'Dramatic reflections in black glass and imposing stepped structures.',
+      atmosphere_and_mood: 'Sharp, dangerous and majestic, beauty with a cutting edge.',
+      rendering_and_quality:
+        'Glossy precise illustration with sharp reflections and knapped facets.',
+      creative_brief:
+        "Obsidianpunk: a civilization of volcanic glass, with razor obsidian blades, black mirror shields, knapped glass architecture and sun-temples reflecting fire. Carry it through knapped obsidian blades, black mirror shields, glass temples, fire reflections. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'knapped obsidian blades; black mirror shields; glass temples; fire reflections',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-277',
+    name: 'Megalithpunk',
+    displayName: 'Megalithpunk',
+    styleAnchors: ['Megalithpunk', 'megalith builder punk', 'standing stones'],
+    category: '10. Primitive, Stone & Salvage Punks',
+    domain: 'megalith builder punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Megalithpunk: builders of giant standing stones and dolmens, with log rollers, rope teams, lever frames and stone circles aligned with the sun.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; bring in giant standing stones, rope-pulling crowds and wooden lever frames.",
+      color_and_tone:
+        'Grey granite and lichen with green hills, stormy skies and golden solstice light.',
+      lighting_and_shadow: 'Low solstice sun cutting through stone gaps and long shadows.',
+      texture_and_material: 'Rough granite, lichen, wooden rollers, rope, mud and grass.',
+      camera_and_composition: 'Huge stones with crowds pulling ropes, circles on open hills.',
+      atmosphere_and_mood:
+        'Monumental, collective and mysterious, a whole people moving a mountain.',
+      rendering_and_quality: 'Epic textured illustration with huge scale and dramatic light.',
+      creative_brief:
+        "Megalithpunk: builders of giant standing stones and dolmens, with log rollers, rope teams, lever frames and stone circles aligned with the sun. Carry it through standing stones, rope teams, log rollers, solstice alignment. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'standing stones; rope teams; log rollers; solstice alignment',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-278',
+    name: 'Antlerpunk',
+    displayName: 'Antlerpunk',
+    styleAnchors: ['Antlerpunk', 'antler and horn craft punk', 'antler crowns'],
+    category: '10. Primitive, Stone & Salvage Punks',
+    domain: 'antler and horn craft punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Antlerpunk: a forest culture crafting everything from shed antlers and horn, with antler crowns, horn instruments, carved bone combs and deer-rider hunters.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; rebuild its tools, crowns and furniture from shed antlers and carved horn.",
+      color_and_tone: 'Pale antler cream and horn amber with deep forest greens and mossy browns.',
+      lighting_and_shadow: 'Misty forest light filtering through trees onto branching antlers.',
+      texture_and_material: 'Branching antler, polished horn, carved bone, moss, fur and bark.',
+      camera_and_composition: 'Figures wearing and wielding branching antler forms in misty woods.',
+      atmosphere_and_mood: 'Wild, quiet and ancient, people who borrow the crowns of deer.',
+      rendering_and_quality:
+        'Detailed atmospheric illustration with carved antler and horn detail.',
+      creative_brief:
+        "Antlerpunk: a forest culture crafting everything from shed antlers and horn, with antler crowns, horn instruments, carved bone combs and deer-rider hunters. Carry it through antler crowns, horn instruments, carved bone, misty forests. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'antler crowns; horn instruments; carved bone; misty forests',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-279',
+    name: 'Wickerpunk',
+    displayName: 'Wickerpunk',
+    styleAnchors: ['Wickerpunk', 'woven basketry engineering punk', 'basket balloons'],
+    category: '10. Primitive, Stone & Salvage Punks',
+    domain: 'woven basketry engineering punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Wickerpunk: engineers who weave everything from willow and rattan, with basket balloons, woven bridges, wicker carriages and huge lattice structures.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; weave its vehicles, furniture and buildings from willow and rattan basketry.",
+      color_and_tone:
+        'Honey willow, pale rattan and warm straw tones with sky blue and meadow green.',
+      lighting_and_shadow:
+        'Sunlight filtering through woven lattice and casting patterned shadows.',
+      texture_and_material: 'Woven willow, rattan, split cane, twine lashings and straw.',
+      camera_and_composition: 'Woven structures with patterned light and small figures inside.',
+      atmosphere_and_mood: 'Light, clever and cheerful, strength made from bending branches.',
+      rendering_and_quality:
+        'Detailed illustration with intricate weave patterns and dappled shadow.',
+      creative_brief:
+        "Wickerpunk: engineers who weave everything from willow and rattan, with basket balloons, woven bridges, wicker carriages and huge lattice structures. Carry it through basket balloons, woven bridges, wicker carriages, lattice shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'basket balloons; woven bridges; wicker carriages; lattice shadows',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-280',
+    name: 'Chariotpunk',
+    displayName: 'Chariotpunk',
+    styleAnchors: ['Chariotpunk', 'chariot racing culture punk', 'spoked chariots'],
+    category: '10. Primitive, Stone & Salvage Punks',
+    domain: 'chariot racing culture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Chariotpunk: a culture obsessed with chariot racing, with light spoked chariots, horse teams in bright colors, dusty hippodromes and roaring crowds.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; turn it into a thundering chariot race with horse teams, dust and cheering stands.",
+      color_and_tone: 'Dusty ochre and sand with bright team colors of red, blue, green and white.',
+      lighting_and_shadow: 'Harsh midday sun through clouds of kicked-up dust.',
+      texture_and_material: 'Spoked wooden wheels, leather reins, bronze fittings, dust and sweat.',
+      camera_and_composition: 'Low fast angles with horses and wheels racing through the frame.',
+      atmosphere_and_mood:
+        'Thunderous, reckless and glorious, a city that treats speed as religion.',
+      rendering_and_quality: 'Dynamic illustration with motion, dust clouds and powerful horses.',
+      creative_brief:
+        "Chariotpunk: a culture obsessed with chariot racing, with light spoked chariots, horse teams in bright colors, dusty hippodromes and roaring crowds. Carry it through spoked chariots, horse teams, dusty arenas, roaring crowds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'spoked chariots; horse teams; dusty arenas; roaring crowds',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-281',
+    name: 'Yurtpunk',
+    displayName: 'Yurtpunk',
+    styleAnchors: ['Yurtpunk', 'felt tent steppe punk', 'round felt tents'],
+    category: '10. Primitive, Stone & Salvage Punks',
+    domain: 'felt tent steppe punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Yurtpunk: steppe nomads living in round felt tents that pack onto carts, with lattice walls, painted roof rings, horse herds and endless grass seas.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; set it among round felt tents, lattice walls and horse herds on open steppe.",
+      color_and_tone:
+        'Cream felt and grass greens with painted orange, red and blue accents and wide sky.',
+      lighting_and_shadow: 'Open sky light and warm stove glow inside round tents.',
+      texture_and_material: 'Thick felt, lattice timber, painted wood, woven rope, wool and grass.',
+      camera_and_composition: 'Wide steppe horizons with round tents and moving herds.',
+      atmosphere_and_mood: 'Free, windswept and hospitable, home wherever the herd goes.',
+      rendering_and_quality: 'Clear open illustration with felt texture and vast sky depth.',
+      creative_brief:
+        "Yurtpunk: steppe nomads living in round felt tents that pack onto carts, with lattice walls, painted roof rings, horse herds and endless grass seas. Carry it through round felt tents, lattice walls, horse herds, endless grass. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'round felt tents; lattice walls; horse herds; endless grass',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-282',
+    name: 'Canoepunk',
+    displayName: 'Canoepunk',
+    styleAnchors: ['Canoepunk', 'dugout canoe river punk', 'carved dugout canoes'],
+    category: '10. Primitive, Stone & Salvage Punks',
+    domain: 'dugout canoe river punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Canoepunk: river and lake cultures centered on carved dugout canoes, with paddle crews, river markets on boats, carved prows and forest waterways.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; set it on forest rivers among carved dugout canoes, paddlers and floating markets.",
+      color_and_tone:
+        'Dark river water, forest greens and warm carved wood with painted prow accents.',
+      lighting_and_shadow: 'Soft morning mist and sunlight glinting on moving water.',
+      texture_and_material:
+        'Carved logs, wet paddles, ropes, woven baskets, river stones and mist.',
+      camera_and_composition: 'Long canoes gliding through the frame with paddles in rhythm.',
+      atmosphere_and_mood: 'Rhythmic, communal and flowing, the river as a road.',
+      rendering_and_quality:
+        'Atmospheric illustration with water reflections and carved wood detail.',
+      creative_brief:
+        "Canoepunk: river and lake cultures centered on carved dugout canoes, with paddle crews, river markets on boats, carved prows and forest waterways. Carry it through carved dugout canoes, paddle crews, river markets, carved prows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'carved dugout canoes; paddle crews; river markets; carved prows',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-283',
+    name: 'Barkpunk',
+    displayName: 'Barkpunk',
+    styleAnchors: ['Barkpunk', 'tree bark craft punk', 'birchbark boats'],
+    category: '10. Primitive, Stone & Salvage Punks',
+    domain: 'tree bark craft punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Barkpunk: forest peoples crafting from bark, with birchbark boats, bark-cloth garments, bark-shingle houses and peeled patterns across everything.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; rebuild its clothing, vessels and shelters from peeled bark, bark cloth and birch sheets.",
+      color_and_tone: 'Birch white and black flecks, cedar red-brown and deep forest green.',
+      lighting_and_shadow: 'Cool forest light through white birch trunks and warm firelight.',
+      texture_and_material:
+        'Peeled birchbark, beaten bark cloth, cedar strips, spruce root lashings.',
+      camera_and_composition: 'Forest scenes where bark objects blend into the trees around them.',
+      atmosphere_and_mood: 'Quiet, careful and woodland, living lightly on the forest.',
+      rendering_and_quality:
+        'Delicate textured illustration with fine bark patterns and forest light.',
+      creative_brief:
+        "Barkpunk: forest peoples crafting from bark, with birchbark boats, bark-cloth garments, bark-shingle houses and peeled patterns across everything. Carry it through birchbark boats, bark cloth, bark-shingle houses, peeled patterns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'birchbark boats; bark cloth; bark-shingle houses; peeled patterns',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-284',
+    name: 'Shellpunk',
+    displayName: 'Shellpunk',
+    styleAnchors: ['Shellpunk', 'seashell craft coast punk', 'shell armor'],
+    category: '10. Primitive, Stone & Salvage Punks',
+    domain: 'seashell craft coast punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Shellpunk: coastal cultures building with seashells, with shell armor, conch horns, mother-of-pearl mosaics, cowrie trade and shell-paved beaches.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; rebuild its armor, jewelry and buildings from seashells and mother-of-pearl.",
+      color_and_tone:
+        'Pearly white, iridescent nacre, coral pink and sandy beige with turquoise sea.',
+      lighting_and_shadow:
+        'Bright coastal light shimmering in rainbows on mother-of-pearl surfaces.',
+      texture_and_material: 'Spiral shells, cowries, nacre, sand, driftwood and dried seaweed.',
+      camera_and_composition: 'Beach and coastal scenes with shell-covered forms glinting.',
+      atmosphere_and_mood: 'Bright, salty and treasured, riches washed up by the tide.',
+      rendering_and_quality:
+        'Iridescent detailed illustration with shimmering nacre and shell forms.',
+      creative_brief:
+        "Shellpunk: coastal cultures building with seashells, with shell armor, conch horns, mother-of-pearl mosaics, cowrie trade and shell-paved beaches. Carry it through shell armor, conch horns, nacre mosaics, cowrie trade. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'shell armor; conch horns; nacre mosaics; cowrie trade',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-285',
+    name: 'Amberpunk',
+    displayName: 'Amberpunk',
+    styleAnchors: ['Amberpunk', 'fossil amber punk', 'glowing amber'],
+    category: '10. Primitive, Stone & Salvage Punks',
+    domain: 'fossil amber punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Amberpunk: a culture that treasures amber, with glowing amber windows, trapped ancient insects, resin-sealed relics and golden light through tree sap.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; seal it in or light it through glowing golden amber and hardened resin.",
+      color_and_tone: 'Glowing honey gold, deep orange and brown amber with dark forest shadows.',
+      lighting_and_shadow: 'Warm light passing through amber, glowing from inside.',
+      texture_and_material:
+        'Translucent amber, trapped bubbles, fossil insects, pine resin and bark.',
+      camera_and_composition: 'Close views of things suspended in amber and amber-lit rooms.',
+      atmosphere_and_mood: 'Timeless and golden, moments frozen for millions of years.',
+      rendering_and_quality:
+        'Luminous illustration with translucent amber glow and fine inclusions.',
+      creative_brief:
+        "Amberpunk: a culture that treasures amber, with glowing amber windows, trapped ancient insects, resin-sealed relics and golden light through tree sap. Carry it through glowing amber, trapped insects, resin-sealed relics, golden inner light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'glowing amber; trapped insects; resin-sealed relics; golden inner light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-286',
+    name: 'Mammothpunk',
+    displayName: 'Mammothpunk',
+    styleAnchors: ['Mammothpunk', 'ice age mammoth culture punk', 'woolly mammoths'],
+    category: '10. Primitive, Stone & Salvage Punks',
+    domain: 'ice age mammoth culture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Mammothpunk: ice age hunters and herders living with woolly mammoths, with mammoth-bone houses, tusk arches, fur-clad riders and frozen steppe camps.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; set it in an ice age world with woolly mammoths, bone houses and fur-clad people.",
+      color_and_tone: 'Frosty whites and grey-blues with warm brown fur and ivory tusk tones.',
+      lighting_and_shadow: 'Low cold sun on snow and warm fire glow inside bone shelters.',
+      texture_and_material: 'Shaggy fur, ivory tusks, bone frames, hide covers, snow and ice.',
+      camera_and_composition: 'Huge mammoths towering over small humans on open frozen plains.',
+      atmosphere_and_mood: 'Epic, cold and survivalist, small people living beside gentle giants.',
+      rendering_and_quality: 'Epic textured illustration with shaggy fur and frosty depth.',
+      creative_brief:
+        "Mammothpunk: ice age hunters and herders living with woolly mammoths, with mammoth-bone houses, tusk arches, fur-clad riders and frozen steppe camps. Carry it through woolly mammoths, bone houses, tusk arches, frozen steppe. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'woolly mammoths; bone houses; tusk arches; frozen steppe',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-287',
+    name: 'Featherpunk',
+    displayName: 'Featherpunk',
+    styleAnchors: ['Featherpunk', 'feather craft sky punk', 'feather cloaks'],
+    category: '10. Primitive, Stone & Salvage Punks',
+    domain: 'feather craft sky punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Featherpunk: an invented sky-loving culture of feather craft, with feather cloaks, fletched gliders, bird-rider scouts and towers crowned with plumes.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; dress and equip it with invented feather cloaks, fletched gliders and plumed structures.",
+      color_and_tone:
+        'Vivid feather reds, blues, greens and yellows with white clouds and bright sky.',
+      lighting_and_shadow: 'Bright sunlight glinting on iridescent feathers and soft cloud light.',
+      texture_and_material: 'Layered feathers, fletching, light cane frames, woven cord and down.',
+      camera_and_composition: 'High sky views with gliders and figures silhouetted against clouds.',
+      atmosphere_and_mood: 'Light, proud and soaring, a people who envy the birds.',
+      rendering_and_quality:
+        'Vivid detailed illustration with layered feather textures and bright sky.',
+      creative_brief:
+        "Featherpunk: an invented sky-loving culture of feather craft, with feather cloaks, fletched gliders, bird-rider scouts and towers crowned with plumes. Carry it through feather cloaks, fletched gliders, bird riders, plumed towers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'feather cloaks; fletched gliders; bird riders; plumed towers',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

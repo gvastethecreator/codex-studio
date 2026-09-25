@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-278
+packId: pack_15
+name: Antlerpunk
+styleAnchors:
+  - Antlerpunk
+  - antler and horn craft punk
+  - antler crowns
+displayName: Antlerpunk
+category: 10. Primitive, Stone & Salvage Punks
+domain: antler and horn craft punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - primitive-stone-and-salvage-punks
+  - antlerpunk
+  - punk
+  - primitive
+visualDna:
+  aesthetic: 'Antlerpunk: a forest culture crafting everything from shed antlers and horn, with antler crowns, horn instruments, carved bone combs and deer-rider hunters.'
+  subject_treatment: Keep the prompt's subject and setting; rebuild its tools, crowns and furniture from shed antlers and carved horn.
+  color_and_tone: Pale antler cream and horn amber with deep forest greens and mossy browns.
+  lighting_and_shadow: Misty forest light filtering through trees onto branching antlers.
+  texture_and_material: Branching antler, polished horn, carved bone, moss, fur and bark.
+  camera_and_composition: Figures wearing and wielding branching antler forms in misty woods.
+  atmosphere_and_mood: Wild, quiet and ancient, people who borrow the crowns of deer.
+  rendering_and_quality: Detailed atmospheric illustration with carved antler and horn detail.
+  creative_brief: "Antlerpunk: a forest culture crafting everything from shed antlers and horn, with antler crowns, horn instruments, carved bone combs and deer-rider hunters. Carry it through antler crowns, horn instruments, carved bone, misty forests. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: antler crowns; horn instruments; carved bone; misty forests
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - gore
+  - sacred regalia of a specific living culture
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: primitive-stone-and-salvage-punks
+  categoryName: 10. Primitive, Stone & Salvage Punks
+  tags:
+    - curation-v2
+    - primitive-stone-and-salvage-punks
+    - antlerpunk
+    - punk
+    - primitive
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: antler and horn craft punk

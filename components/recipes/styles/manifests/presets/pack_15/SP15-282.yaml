@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-282
+packId: pack_15
+name: Canoepunk
+styleAnchors:
+  - Canoepunk
+  - dugout canoe river punk
+  - carved dugout canoes
+displayName: Canoepunk
+category: 10. Primitive, Stone & Salvage Punks
+domain: dugout canoe river punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - primitive-stone-and-salvage-punks
+  - canoepunk
+  - punk
+  - primitive
+visualDna:
+  aesthetic: 'Canoepunk: river and lake cultures centered on carved dugout canoes, with paddle crews, river markets on boats, carved prows and forest waterways.'
+  subject_treatment: Keep the prompt's subject and setting; set it on forest rivers among carved dugout canoes, paddlers and floating markets.
+  color_and_tone: Dark river water, forest greens and warm carved wood with painted prow accents.
+  lighting_and_shadow: Soft morning mist and sunlight glinting on moving water.
+  texture_and_material: Carved logs, wet paddles, ropes, woven baskets, river stones and mist.
+  camera_and_composition: Long canoes gliding through the frame with paddles in rhythm.
+  atmosphere_and_mood: Rhythmic, communal and flowing, the river as a road.
+  rendering_and_quality: Atmospheric illustration with water reflections and carved wood detail.
+  creative_brief: "Canoepunk: river and lake cultures centered on carved dugout canoes, with paddle crews, river markets on boats, carved prows and forest waterways. Carry it through carved dugout canoes, paddle crews, river markets, carved prows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: carved dugout canoes; paddle crews; river markets; carved prows
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - gore
+  - sacred regalia of a specific living culture
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: primitive-stone-and-salvage-punks
+  categoryName: 10. Primitive, Stone & Salvage Punks
+  tags:
+    - curation-v2
+    - primitive-stone-and-salvage-punks
+    - canoepunk
+    - punk
+    - primitive
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: dugout canoe river punk

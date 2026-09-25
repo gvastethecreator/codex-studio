@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-285
+packId: pack_15
+name: Amberpunk
+styleAnchors:
+  - Amberpunk
+  - fossil amber punk
+  - glowing amber
+displayName: Amberpunk
+category: 10. Primitive, Stone & Salvage Punks
+domain: fossil amber punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - primitive-stone-and-salvage-punks
+  - amberpunk
+  - punk
+  - primitive
+visualDna:
+  aesthetic: 'Amberpunk: a culture that treasures amber, with glowing amber windows, trapped ancient insects, resin-sealed relics and golden light through tree sap.'
+  subject_treatment: Keep the prompt's subject and setting; seal it in or light it through glowing golden amber and hardened resin.
+  color_and_tone: Glowing honey gold, deep orange and brown amber with dark forest shadows.
+  lighting_and_shadow: Warm light passing through amber, glowing from inside.
+  texture_and_material: Translucent amber, trapped bubbles, fossil insects, pine resin and bark.
+  camera_and_composition: Close views of things suspended in amber and amber-lit rooms.
+  atmosphere_and_mood: Timeless and golden, moments frozen for millions of years.
+  rendering_and_quality: Luminous illustration with translucent amber glow and fine inclusions.
+  creative_brief: "Amberpunk: a culture that treasures amber, with glowing amber windows, trapped ancient insects, resin-sealed relics and golden light through tree sap. Carry it through glowing amber, trapped insects, resin-sealed relics, golden inner light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: glowing amber; trapped insects; resin-sealed relics; golden inner light
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - gore
+  - sacred regalia of a specific living culture
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: primitive-stone-and-salvage-punks
+  categoryName: 10. Primitive, Stone & Salvage Punks
+  tags:
+    - curation-v2
+    - primitive-stone-and-salvage-punks
+    - amberpunk
+    - punk
+    - primitive
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: fossil amber punk

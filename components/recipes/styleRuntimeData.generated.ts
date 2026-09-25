@@ -152,7 +152,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
       'Recognizable X-punk aesthetics with characteristic materials, technology, craft and motifs integrated into the requested design; one identity per punk direction.',
     cardTitle: 'Punk Spectrum',
     cardDescription: 'Punk languages, DIY rebellion, biotech, media ghosts.',
-    presetCount: 182,
+    presetCount: 200,
   },
   {
     id: 'pack_17',

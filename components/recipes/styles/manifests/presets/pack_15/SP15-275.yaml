@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-275
+packId: pack_15
+name: Leatherpunk
+styleAnchors:
+  - Leatherpunk
+  - tanned hide craft punk
+  - stitched leather armor
+displayName: Leatherpunk
+category: 10. Primitive, Stone & Salvage Punks
+domain: tanned hide craft punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - primitive-stone-and-salvage-punks
+  - leatherpunk
+  - punk
+  - primitive
+visualDna:
+  aesthetic: 'Leatherpunk: a nomadic culture of tanners and hide-workers, with stitched leather armor, hide tents, tooled saddles, drum skins and oiled straps.'
+  subject_treatment: Keep the prompt's subject and setting; rebuild its clothing, gear and shelters from stitched, tooled and oiled leather.
+  color_and_tone: Saddle brown, tan, oxblood and black leather with bone white and brass buckles.
+  lighting_and_shadow: Warm firelight and sun catching oiled leather sheen.
+  texture_and_material: Tooled leather, heavy stitching, rawhide lacing, brass buckles and fur trim.
+  camera_and_composition: Close craft views and nomad camps with leather gear everywhere.
+  atmosphere_and_mood: Rugged, proud and weathered, gear that lasts a lifetime.
+  rendering_and_quality: Richly textured illustration with stitched and tooled leather detail.
+  creative_brief: "Leatherpunk: a nomadic culture of tanners and hide-workers, with stitched leather armor, hide tents, tooled saddles, drum skins and oiled straps. Carry it through stitched leather armor, tooled saddles, hide tents, drum skins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: stitched leather armor; tooled saddles; hide tents; drum skins
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - gore
+  - sacred regalia of a specific living culture
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: primitive-stone-and-salvage-punks
+  categoryName: 10. Primitive, Stone & Salvage Punks
+  tags:
+    - curation-v2
+    - primitive-stone-and-salvage-punks
+    - leatherpunk
+    - punk
+    - primitive
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: tanned hide craft punk

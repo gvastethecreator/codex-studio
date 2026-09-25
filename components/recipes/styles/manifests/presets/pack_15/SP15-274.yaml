@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-274
+packId: pack_15
+name: Reedpunk
+styleAnchors:
+  - Reedpunk
+  - woven reed marsh punk
+  - bundled reed boats
+displayName: Reedpunk
+category: 10. Primitive, Stone & Salvage Punks
+domain: woven reed marsh punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - primitive-stone-and-salvage-punks
+  - reedpunk
+  - punk
+  - primitive
+visualDna:
+  aesthetic: 'Reedpunk: floating marsh cultures building from bundled reeds, with reed boats, woven island towns, reed arches and golden stalks against wide water.'
+  subject_treatment: Keep the prompt's subject and setting; build it from bundled and woven reeds on a wide calm marsh.
+  color_and_tone: Golden straw and pale green reeds with blue water and warm dusk skies.
+  lighting_and_shadow: Low golden sun glowing through reed walls and on still water.
+  texture_and_material: Bundled reeds, woven mats, rope lashings, mud and calm water reflections.
+  camera_and_composition: Wide flat marsh views with woven island towns reflected in water.
+  atmosphere_and_mood: Calm, golden and resourceful, a home that floats.
+  rendering_and_quality: Warm detailed illustration with woven fiber texture and reflections.
+  creative_brief: "Reedpunk: floating marsh cultures building from bundled reeds, with reed boats, woven island towns, reed arches and golden stalks against wide water. Carry it through bundled reed boats, woven islands, reed arches, still water. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: bundled reed boats; woven islands; reed arches; still water
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - gore
+  - sacred regalia of a specific living culture
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: primitive-stone-and-salvage-punks
+  categoryName: 10. Primitive, Stone & Salvage Punks
+  tags:
+    - curation-v2
+    - primitive-stone-and-salvage-punks
+    - reedpunk
+    - punk
+    - primitive
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: woven reed marsh punk

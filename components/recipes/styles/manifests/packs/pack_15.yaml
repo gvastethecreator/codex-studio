@@ -219,6 +219,24 @@ categories:
     presetRefs:
       - pack_15/SP15-121.yaml
       - pack_15/SP15-122.yaml
+      - pack_15/SP15-270.yaml
+      - pack_15/SP15-271.yaml
+      - pack_15/SP15-272.yaml
+      - pack_15/SP15-273.yaml
+      - pack_15/SP15-274.yaml
+      - pack_15/SP15-275.yaml
+      - pack_15/SP15-276.yaml
+      - pack_15/SP15-277.yaml
+      - pack_15/SP15-278.yaml
+      - pack_15/SP15-279.yaml
+      - pack_15/SP15-280.yaml
+      - pack_15/SP15-281.yaml
+      - pack_15/SP15-282.yaml
+      - pack_15/SP15-283.yaml
+      - pack_15/SP15-284.yaml
+      - pack_15/SP15-285.yaml
+      - pack_15/SP15-286.yaml
+      - pack_15/SP15-287.yaml
 presetRefs:
   - pack_15/SP15-081.yaml
   - pack_15/SP15-082.yaml
@@ -402,3 +420,21 @@ presetRefs:
   - pack_15/SP15-269.yaml
   - pack_15/SP15-121.yaml
   - pack_15/SP15-122.yaml
+  - pack_15/SP15-270.yaml
+  - pack_15/SP15-271.yaml
+  - pack_15/SP15-272.yaml
+  - pack_15/SP15-273.yaml
+  - pack_15/SP15-274.yaml
+  - pack_15/SP15-275.yaml
+  - pack_15/SP15-276.yaml
+  - pack_15/SP15-277.yaml
+  - pack_15/SP15-278.yaml
+  - pack_15/SP15-279.yaml
+  - pack_15/SP15-280.yaml
+  - pack_15/SP15-281.yaml
+  - pack_15/SP15-282.yaml
+  - pack_15/SP15-283.yaml
+  - pack_15/SP15-284.yaml
+  - pack_15/SP15-285.yaml
+  - pack_15/SP15-286.yaml
+  - pack_15/SP15-287.yaml

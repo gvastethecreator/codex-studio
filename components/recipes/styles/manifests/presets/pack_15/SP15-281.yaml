@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-281
+packId: pack_15
+name: Yurtpunk
+styleAnchors:
+  - Yurtpunk
+  - felt tent steppe punk
+  - round felt tents
+displayName: Yurtpunk
+category: 10. Primitive, Stone & Salvage Punks
+domain: felt tent steppe punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - primitive-stone-and-salvage-punks
+  - yurtpunk
+  - punk
+  - primitive
+visualDna:
+  aesthetic: 'Yurtpunk: steppe nomads living in round felt tents that pack onto carts, with lattice walls, painted roof rings, horse herds and endless grass seas.'
+  subject_treatment: Keep the prompt's subject and setting; set it among round felt tents, lattice walls and horse herds on open steppe.
+  color_and_tone: Cream felt and grass greens with painted orange, red and blue accents and wide sky.
+  lighting_and_shadow: Open sky light and warm stove glow inside round tents.
+  texture_and_material: Thick felt, lattice timber, painted wood, woven rope, wool and grass.
+  camera_and_composition: Wide steppe horizons with round tents and moving herds.
+  atmosphere_and_mood: Free, windswept and hospitable, home wherever the herd goes.
+  rendering_and_quality: Clear open illustration with felt texture and vast sky depth.
+  creative_brief: "Yurtpunk: steppe nomads living in round felt tents that pack onto carts, with lattice walls, painted roof rings, horse herds and endless grass seas. Carry it through round felt tents, lattice walls, horse herds, endless grass. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: round felt tents; lattice walls; horse herds; endless grass
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - gore
+  - sacred regalia of a specific living culture
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: primitive-stone-and-salvage-punks
+  categoryName: 10. Primitive, Stone & Salvage Punks
+  tags:
+    - curation-v2
+    - primitive-stone-and-salvage-punks
+    - yurtpunk
+    - punk
+    - primitive
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: felt tent steppe punk
