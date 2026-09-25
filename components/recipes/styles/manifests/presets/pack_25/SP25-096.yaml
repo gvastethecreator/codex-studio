@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-096
+packId: pack_25
+name: Segmented Light Channels
+styleAnchors:
+  - Segmented Light Channels
+  - counted light segment HUD
+  - counted segments
+displayName: Segmented Light Channels
+category: 5. Game UI, HUDs & Screen Graphics
+domain: counted light segment HUD
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - game-ui-huds-and-screen-graphics
+  - segmented-light
+  - applied-design
+  - hud
+  - r-hud-16
+  - requested-text
+visualDna:
+  aesthetic: 'Segmented Light Channels: discrete lit segments grouped in clear channels show state, each gap between them kept visible.'
+  subject_treatment: Split the prompt's values into counted lit segments grouped by variable, the number of lit segments matching the data exactly; keep labels exact.
+  color_and_tone: Contained active color, idle segments told apart by shape and value.
+  lighting_and_shadow: Moderate emission per segment with every separation left crisp.
+  texture_and_material: Clean channels, a sober diffuser and a consistent segment scale.
+  camera_and_composition: Grouped by function with aligned readings and every channel going somewhere.
+  atmosphere_and_mood: A contained technical pulse and clear status, focused and exact.
+  rendering_and_quality: The count of lit segments matches the supplied value exactly.
+  creative_brief: "Segmented Light Channels: discrete lit segments grouped in clear channels show state, each gap between them kept visible. Carry it through counted segments, visible gaps, grouped channels, exact count. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: counted segments; visible gaps; grouped channels; exact count
+avoidRules:
+  - invented segments
+  - glow that fuses bars
+  - color as the only code
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: invented segments, glow that fuses bars, color as the only code, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: game-ui-huds-and-screen-graphics
+  categoryName: 5. Game UI, HUDs & Screen Graphics
+  domain: counted light segment HUD
+  tags:
+    - curation-v2
+    - game-ui-huds-and-screen-graphics
+    - segmented-light
+    - applied-design
+    - hud
+    - r-hud-16
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

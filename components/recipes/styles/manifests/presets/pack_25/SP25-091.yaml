@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-091
+packId: pack_25
+name: Vector Sweep Instruments
+styleAnchors:
+  - Vector Sweep Instruments
+  - vector sweep instrument HUD
+  - vector sweep
+displayName: Vector Sweep Instruments
+category: 5. Game UI, HUDs & Screen Graphics
+domain: vector sweep instrument HUD
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - game-ui-huds-and-screen-graphics
+  - vector-sweep
+  - applied-design
+  - hud
+  - r-hud-11
+  - requested-text
+visualDna:
+  aesthetic: 'Vector Sweep Instruments: sweeps and vectors show orientation or measurement inside constant declared scales and reading limits.'
+  subject_treatment: Show the prompt's direction or measurement as clean vectors and a sweep inside declared limits and scales; keep every value and label exact.
+  color_and_tone: Bright main stroke, faint secondary grid and one accent for the selected value.
+  lighting_and_shadow: Contained luminance that keeps scales thin and extremes visible.
+  texture_and_material: Clean vector lines with functional changes of weight.
+  camera_and_composition: Fixed center and reading limits, labels clear of crossings and vectors traceable.
+  atmosphere_and_mood: Directional precision and technical tension, crisp and alert.
+  rendering_and_quality: Every vector has a declared origin, destination or meaning.
+  creative_brief: "Vector Sweep Instruments: sweeps and vectors show orientation or measurement inside constant declared scales and reading limits. Carry it through vector sweep, declared scale, fixed center, traceable vectors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: vector sweep; declared scale; fixed center; traceable vectors
+avoidRules:
+  - decorative vectors
+  - scales with no unit
+  - mandatory radar
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: decorative vectors, scales with no unit, mandatory radar, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: game-ui-huds-and-screen-graphics
+  categoryName: 5. Game UI, HUDs & Screen Graphics
+  domain: vector sweep instrument HUD
+  tags:
+    - curation-v2
+    - game-ui-huds-and-screen-graphics
+    - vector-sweep
+    - applied-design
+    - hud
+    - r-hud-11
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

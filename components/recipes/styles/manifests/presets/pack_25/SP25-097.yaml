@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-097
+packId: pack_25
+name: Contour-Line Gauges
+styleAnchors:
+  - Contour-Line Gauges
+  - topographic contour fill gauge HUD
+  - nested contour rings
+displayName: Contour-Line Gauges
+category: 5. Game UI, HUDs & Screen Graphics
+domain: topographic contour fill gauge HUD
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - game-ui-huds-and-screen-graphics
+  - contour-gauge
+  - applied-design
+  - hud
+  - r-hud-20-new
+  - requested-text
+visualDna:
+  aesthetic: 'Contour-Line Gauges: meters filled with stacked contour lines like a topographic map, the number of rings rising with each value.'
+  subject_treatment: Draw the prompt's values as shapes filled with nested contour lines, one ring per declared step, so the level reads like elevation; keep labels exact.
+  color_and_tone: Earthy or monochrome ramps with one highlight on the current level line.
+  lighting_and_shadow: Flat cartographic rendering with depth suggested only by line density.
+  texture_and_material: Fine even contour lines, crisp step labels and a paper-map calm.
+  camera_and_composition: Frontal gauges with a clear step legend and the current line emphasized.
+  atmosphere_and_mood: Exploratory and grounded, like reading terrain rather than a machine.
+  rendering_and_quality: The count of contour steps matches each value, with no invented rings.
+  creative_brief: "Contour-Line Gauges: meters filled with stacked contour lines like a topographic map, the number of rings rising with each value. Carry it through nested contour rings, step legend, highlighted level, map calm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: nested contour rings; step legend; highlighted level; map calm
+avoidRules:
+  - decorative contours
+  - uncounted rings
+  - real geographic data
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: decorative contours, uncounted rings, real geographic data, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: game-ui-huds-and-screen-graphics
+  categoryName: 5. Game UI, HUDs & Screen Graphics
+  domain: topographic contour fill gauge HUD
+  tags:
+    - curation-v2
+    - game-ui-huds-and-screen-graphics
+    - contour-gauge
+    - applied-design
+    - hud
+    - r-hud-20-new
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -3,7 +3,7 @@
     {
       "id": "pack_25",
       "name": "Applied Design",
-      "presetCount": 80
+      "presetCount": 100
     }
   ],
   "presets": [
@@ -1290,7 +1290,355 @@
       "tags": ["applied-design", "ui-and-app-design", "five-screen-ui-consistency-sheet"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp25-080 five-state ui specimen five-screen ui consistency sheet five screens 4. ui & app design ui & app design five-screen ui consistency sheet pack_25 applied design ui-and-app-design applied-design ui-and-app-design five-screen-ui-consistency-sheet"
+    },
+    {
+      "id": "SP25-081",
+      "name": "Microfiche Telemetry",
+      "styleAnchors": [
+        "Microfiche Telemetry",
+        "optical archive readout HUD",
+        "optical reading windows"
+      ],
+      "ref": "pack_25/SP25-081.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "game-ui-huds-and-screen-graphics",
+      "categoryName": "5. Game UI, HUDs & Screen Graphics",
+      "domain": "optical archive readout HUD",
+      "tags": ["applied-design", "game-ui-huds-and-screen-graphics", "optical-archive-readout-hud"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-081 microfiche telemetry optical archive readout hud optical reading windows 5. game ui, huds & screen graphics game ui & huds optical archive readout hud pack_25 applied design game-ui-huds-and-screen-graphics applied-design game-ui-huds-and-screen-graphics optical-archive-readout-hud"
+    },
+    {
+      "id": "SP25-082",
+      "name": "Capillary Diagnostics",
+      "styleAnchors": ["Capillary Diagnostics", "branching flow channel HUD", "branching channels"],
+      "ref": "pack_25/SP25-082.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "game-ui-huds-and-screen-graphics",
+      "categoryName": "5. Game UI, HUDs & Screen Graphics",
+      "domain": "branching flow channel HUD",
+      "tags": ["applied-design", "game-ui-huds-and-screen-graphics", "branching-flow-channel-hud"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-082 capillary diagnostics branching flow channel hud branching channels 5. game ui, huds & screen graphics game ui & huds branching flow channel hud pack_25 applied design game-ui-huds-and-screen-graphics applied-design game-ui-huds-and-screen-graphics branching-flow-channel-hud"
+    },
+    {
+      "id": "SP25-083",
+      "name": "Mechanical Index Displays",
+      "styleAnchors": [
+        "Mechanical Index Displays",
+        "discrete mechanical selector HUD",
+        "index bands"
+      ],
+      "ref": "pack_25/SP25-083.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "game-ui-huds-and-screen-graphics",
+      "categoryName": "5. Game UI, HUDs & Screen Graphics",
+      "domain": "discrete mechanical selector HUD",
+      "tags": [
+        "applied-design",
+        "game-ui-huds-and-screen-graphics",
+        "discrete-mechanical-selector-hud"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-083 mechanical index displays discrete mechanical selector hud index bands 5. game ui, huds & screen graphics game ui & huds discrete mechanical selector hud pack_25 applied design game-ui-huds-and-screen-graphics applied-design game-ui-huds-and-screen-graphics discrete-mechanical-selector-hud"
+    },
+    {
+      "id": "SP25-084",
+      "name": "Etched Glass Instruments",
+      "styleAnchors": ["Etched Glass Instruments", "etched glass instrument HUD", "etched scales"],
+      "ref": "pack_25/SP25-084.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "game-ui-huds-and-screen-graphics",
+      "categoryName": "5. Game UI, HUDs & Screen Graphics",
+      "domain": "etched glass instrument HUD",
+      "tags": ["applied-design", "game-ui-huds-and-screen-graphics", "etched-glass-instrument-hud"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-084 etched glass instruments etched glass instrument hud etched scales 5. game ui, huds & screen graphics game ui & huds etched glass instrument hud pack_25 applied design game-ui-huds-and-screen-graphics applied-design game-ui-huds-and-screen-graphics etched-glass-instrument-hud"
+    },
+    {
+      "id": "SP25-085",
+      "name": "Woven Signal Panels",
+      "styleAnchors": ["Woven Signal Panels", "interwoven signal channel HUD", "woven channels"],
+      "ref": "pack_25/SP25-085.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "game-ui-huds-and-screen-graphics",
+      "categoryName": "5. Game UI, HUDs & Screen Graphics",
+      "domain": "interwoven signal channel HUD",
+      "tags": [
+        "applied-design",
+        "game-ui-huds-and-screen-graphics",
+        "interwoven-signal-channel-hud"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-085 woven signal panels interwoven signal channel hud woven channels 5. game ui, huds & screen graphics game ui & huds interwoven signal channel hud pack_25 applied design game-ui-huds-and-screen-graphics applied-design game-ui-huds-and-screen-graphics interwoven-signal-channel-hud"
+    },
+    {
+      "id": "SP25-086",
+      "name": "Pressure-Chamber Readouts",
+      "styleAnchors": [
+        "Pressure-Chamber Readouts",
+        "connected chamber level HUD",
+        "connected chambers"
+      ],
+      "ref": "pack_25/SP25-086.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "game-ui-huds-and-screen-graphics",
+      "categoryName": "5. Game UI, HUDs & Screen Graphics",
+      "domain": "connected chamber level HUD",
+      "tags": ["applied-design", "game-ui-huds-and-screen-graphics", "connected-chamber-level-hud"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-086 pressure-chamber readouts connected chamber level hud connected chambers 5. game ui, huds & screen graphics game ui & huds connected chamber level hud pack_25 applied design game-ui-huds-and-screen-graphics applied-design game-ui-huds-and-screen-graphics connected-chamber-level-hud"
+    },
+    {
+      "id": "SP25-087",
+      "name": "Optical Ghost Registers",
+      "styleAnchors": [
+        "Optical Ghost Registers",
+        "optical afterimage HUD modifier",
+        "faint afterimage"
+      ],
+      "ref": "pack_25/SP25-087.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "game-ui-huds-and-screen-graphics",
+      "categoryName": "5. Game UI, HUDs & Screen Graphics",
+      "domain": "optical afterimage HUD modifier",
+      "tags": [
+        "applied-design",
+        "game-ui-huds-and-screen-graphics",
+        "optical-afterimage-hud-modifier"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-087 optical ghost registers optical afterimage hud modifier faint afterimage 5. game ui, huds & screen graphics game ui & huds optical afterimage hud modifier pack_25 applied design game-ui-huds-and-screen-graphics applied-design game-ui-huds-and-screen-graphics optical-afterimage-hud-modifier"
+    },
+    {
+      "id": "SP25-088",
+      "name": "Porcelain Dial Console",
+      "styleAnchors": ["Porcelain Dial Console", "pale porcelain dial HUD", "pale enamel plates"],
+      "ref": "pack_25/SP25-088.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "game-ui-huds-and-screen-graphics",
+      "categoryName": "5. Game UI, HUDs & Screen Graphics",
+      "domain": "pale porcelain dial HUD",
+      "tags": ["applied-design", "game-ui-huds-and-screen-graphics", "pale-porcelain-dial-hud"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-088 porcelain dial console pale porcelain dial hud pale enamel plates 5. game ui, huds & screen graphics game ui & huds pale porcelain dial hud pack_25 applied design game-ui-huds-and-screen-graphics applied-design game-ui-huds-and-screen-graphics pale-porcelain-dial-hud"
+    },
+    {
+      "id": "SP25-089",
+      "name": "Inkbound Status Panels",
+      "styleAnchors": ["Inkbound Status Panels", "bold ink mass status HUD", "ink mass meters"],
+      "ref": "pack_25/SP25-089.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "game-ui-huds-and-screen-graphics",
+      "categoryName": "5. Game UI, HUDs & Screen Graphics",
+      "domain": "bold ink mass status HUD",
+      "tags": ["applied-design", "game-ui-huds-and-screen-graphics", "bold-ink-mass-status-hud"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-089 inkbound status panels bold ink mass status hud ink mass meters 5. game ui, huds & screen graphics game ui & huds bold ink mass status hud pack_25 applied design game-ui-huds-and-screen-graphics applied-design game-ui-huds-and-screen-graphics bold-ink-mass-status-hud"
+    },
+    {
+      "id": "SP25-090",
+      "name": "Perforated Card Readouts",
+      "styleAnchors": ["Perforated Card Readouts", "punched card status HUD", "punched rows"],
+      "ref": "pack_25/SP25-090.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "game-ui-huds-and-screen-graphics",
+      "categoryName": "5. Game UI, HUDs & Screen Graphics",
+      "domain": "punched card status HUD",
+      "tags": ["applied-design", "game-ui-huds-and-screen-graphics", "punched-card-status-hud"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-090 perforated card readouts punched card status hud punched rows 5. game ui, huds & screen graphics game ui & huds punched card status hud pack_25 applied design game-ui-huds-and-screen-graphics applied-design game-ui-huds-and-screen-graphics punched-card-status-hud"
+    },
+    {
+      "id": "SP25-091",
+      "name": "Vector Sweep Instruments",
+      "styleAnchors": ["Vector Sweep Instruments", "vector sweep instrument HUD", "vector sweep"],
+      "ref": "pack_25/SP25-091.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "game-ui-huds-and-screen-graphics",
+      "categoryName": "5. Game UI, HUDs & Screen Graphics",
+      "domain": "vector sweep instrument HUD",
+      "tags": ["applied-design", "game-ui-huds-and-screen-graphics", "vector-sweep-instrument-hud"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-091 vector sweep instruments vector sweep instrument hud vector sweep 5. game ui, huds & screen graphics game ui & huds vector sweep instrument hud pack_25 applied design game-ui-huds-and-screen-graphics applied-design game-ui-huds-and-screen-graphics vector-sweep-instrument-hud"
+    },
+    {
+      "id": "SP25-092",
+      "name": "Layered Route Displays",
+      "styleAnchors": ["Layered Route Displays", "layered route map HUD", "layered routes"],
+      "ref": "pack_25/SP25-092.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "game-ui-huds-and-screen-graphics",
+      "categoryName": "5. Game UI, HUDs & Screen Graphics",
+      "domain": "layered route map HUD",
+      "tags": ["applied-design", "game-ui-huds-and-screen-graphics", "layered-route-map-hud"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-092 layered route displays layered route map hud layered routes 5. game ui, huds & screen graphics game ui & huds layered route map hud pack_25 applied design game-ui-huds-and-screen-graphics applied-design game-ui-huds-and-screen-graphics layered-route-map-hud"
+    },
+    {
+      "id": "SP25-093",
+      "name": "Membrane Switch HUD",
+      "styleAnchors": [
+        "Membrane Switch HUD",
+        "tensioned membrane control HUD",
+        "stretched membrane"
+      ],
+      "ref": "pack_25/SP25-093.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "game-ui-huds-and-screen-graphics",
+      "categoryName": "5. Game UI, HUDs & Screen Graphics",
+      "domain": "tensioned membrane control HUD",
+      "tags": [
+        "applied-design",
+        "game-ui-huds-and-screen-graphics",
+        "tensioned-membrane-control-hud"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-093 membrane switch hud tensioned membrane control hud stretched membrane 5. game ui, huds & screen graphics game ui & huds tensioned membrane control hud pack_25 applied design game-ui-huds-and-screen-graphics applied-design game-ui-huds-and-screen-graphics tensioned-membrane-control-hud"
+    },
+    {
+      "id": "SP25-094",
+      "name": "Eroded Enamel Console",
+      "styleAnchors": ["Eroded Enamel Console", "worn enamel plate HUD", "enamel plates"],
+      "ref": "pack_25/SP25-094.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "game-ui-huds-and-screen-graphics",
+      "categoryName": "5. Game UI, HUDs & Screen Graphics",
+      "domain": "worn enamel plate HUD",
+      "tags": ["applied-design", "game-ui-huds-and-screen-graphics", "worn-enamel-plate-hud"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-094 eroded enamel console worn enamel plate hud enamel plates 5. game ui, huds & screen graphics game ui & huds worn enamel plate hud pack_25 applied design game-ui-huds-and-screen-graphics applied-design game-ui-huds-and-screen-graphics worn-enamel-plate-hud"
+    },
+    {
+      "id": "SP25-095",
+      "name": "Negative-Space Meters",
+      "styleAnchors": ["Negative-Space Meters", "void-fill capacity meter HUD", "void as quantity"],
+      "ref": "pack_25/SP25-095.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "game-ui-huds-and-screen-graphics",
+      "categoryName": "5. Game UI, HUDs & Screen Graphics",
+      "domain": "void-fill capacity meter HUD",
+      "tags": [
+        "applied-design",
+        "game-ui-huds-and-screen-graphics",
+        "void-fill-capacity-meter-hud"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-095 negative-space meters void-fill capacity meter hud void as quantity 5. game ui, huds & screen graphics game ui & huds void-fill capacity meter hud pack_25 applied design game-ui-huds-and-screen-graphics applied-design game-ui-huds-and-screen-graphics void-fill-capacity-meter-hud"
+    },
+    {
+      "id": "SP25-096",
+      "name": "Segmented Light Channels",
+      "styleAnchors": ["Segmented Light Channels", "counted light segment HUD", "counted segments"],
+      "ref": "pack_25/SP25-096.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "game-ui-huds-and-screen-graphics",
+      "categoryName": "5. Game UI, HUDs & Screen Graphics",
+      "domain": "counted light segment HUD",
+      "tags": ["applied-design", "game-ui-huds-and-screen-graphics", "counted-light-segment-hud"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-096 segmented light channels counted light segment hud counted segments 5. game ui, huds & screen graphics game ui & huds counted light segment hud pack_25 applied design game-ui-huds-and-screen-graphics applied-design game-ui-huds-and-screen-graphics counted-light-segment-hud"
+    },
+    {
+      "id": "SP25-097",
+      "name": "Contour-Line Gauges",
+      "styleAnchors": [
+        "Contour-Line Gauges",
+        "topographic contour fill gauge HUD",
+        "nested contour rings"
+      ],
+      "ref": "pack_25/SP25-097.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "game-ui-huds-and-screen-graphics",
+      "categoryName": "5. Game UI, HUDs & Screen Graphics",
+      "domain": "topographic contour fill gauge HUD",
+      "tags": [
+        "applied-design",
+        "game-ui-huds-and-screen-graphics",
+        "topographic-contour-fill-gauge-hud"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-097 contour-line gauges topographic contour fill gauge hud nested contour rings 5. game ui, huds & screen graphics game ui & huds topographic contour fill gauge hud pack_25 applied design game-ui-huds-and-screen-graphics applied-design game-ui-huds-and-screen-graphics topographic-contour-fill-gauge-hud"
+    },
+    {
+      "id": "SP25-098",
+      "name": "Diegetic Cockpit Layout",
+      "styleAnchors": ["Diegetic Cockpit Layout", "in-world cockpit HUD profile", "in-world panel"],
+      "ref": "pack_25/SP25-098.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "game-ui-huds-and-screen-graphics",
+      "categoryName": "5. Game UI, HUDs & Screen Graphics",
+      "domain": "in-world cockpit HUD profile",
+      "tags": [
+        "applied-design",
+        "game-ui-huds-and-screen-graphics",
+        "in-world-cockpit-hud-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-098 diegetic cockpit layout in-world cockpit hud profile in-world panel 5. game ui, huds & screen graphics game ui & huds in-world cockpit hud profile pack_25 applied design game-ui-huds-and-screen-graphics applied-design game-ui-huds-and-screen-graphics in-world-cockpit-hud-profile"
+    },
+    {
+      "id": "SP25-099",
+      "name": "Peripheral Combat Overlay",
+      "styleAnchors": [
+        "Peripheral Combat Overlay",
+        "edge-placed gameplay overlay profile",
+        "clear center"
+      ],
+      "ref": "pack_25/SP25-099.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "game-ui-huds-and-screen-graphics",
+      "categoryName": "5. Game UI, HUDs & Screen Graphics",
+      "domain": "edge-placed gameplay overlay profile",
+      "tags": [
+        "applied-design",
+        "game-ui-huds-and-screen-graphics",
+        "edge-placed-gameplay-overlay-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-099 peripheral combat overlay edge-placed gameplay overlay profile clear center 5. game ui, huds & screen graphics game ui & huds edge-placed gameplay overlay profile pack_25 applied design game-ui-huds-and-screen-graphics applied-design game-ui-huds-and-screen-graphics edge-placed-gameplay-overlay-profile"
+    },
+    {
+      "id": "SP25-100",
+      "name": "Tactical Map Stack",
+      "styleAnchors": [
+        "Tactical Map Stack",
+        "layered tactical map screen profile",
+        "map with layers"
+      ],
+      "ref": "pack_25/SP25-100.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "game-ui-huds-and-screen-graphics",
+      "categoryName": "5. Game UI, HUDs & Screen Graphics",
+      "domain": "layered tactical map screen profile",
+      "tags": [
+        "applied-design",
+        "game-ui-huds-and-screen-graphics",
+        "layered-tactical-map-screen-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-100 tactical map stack layered tactical map screen profile map with layers 5. game ui, huds & screen graphics game ui & huds layered tactical map screen profile pack_25 applied design game-ui-huds-and-screen-graphics applied-design game-ui-huds-and-screen-graphics layered-tactical-map-screen-profile"
     }
   ],
-  "totalPresetCount": 80
+  "totalPresetCount": 100
 }

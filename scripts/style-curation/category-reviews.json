@@ -2428,5 +2428,20 @@
     "evidencePresetIds": ["SP25-061", "SP25-062", "SP25-063"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_25",
+    "category": "5. Game UI, HUDs & Screen Graphics",
+    "displayCategory": "Game UI & HUDs",
+    "kind": "mixed",
+    "expectedCount": 20,
+    "baselineHash": "d6903f469e8fe5eca572746c350805b22922fd29e0028aedd0bdce229eb4af5c",
+    "problem": "Game HUD styles must change how readouts are built without banning the requested labels and values, without inventing data, weapons or enemies, and without copying real game or film interfaces.",
+    "preserve": "Every requested value, unit, label, slot count and connection stays exact; each style keeps its readout construction (microfiche windows, capillary channels, mechanical index, etched glass, woven signals, pressure chambers, porcelain dials, ink masses, punched cards, vector sweeps, layered routes, membranes, worn enamel, void meters, light segments, contour gauges).",
+    "proposedAction": "Applied-design import: 15 readout styles, an optical afterimage modifier, cockpit, peripheral overlay and tactical map layout profiles, and Contour-Line Gauges as a new style replacing the telemetry consistency trial (moved to QA-PROTOCOLS.md); requested-text policy and three new game-concept briefs per preset.",
+    "validation": "Generate each card, then transcribe every value from the result and compare with the brief; test the same data state across three styles and a HUD over a busy background.",
+    "evidencePresetIds": ["SP25-081", "SP25-082", "SP25-083"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

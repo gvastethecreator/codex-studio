@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-082
+packId: pack_25
+name: Capillary Diagnostics
+styleAnchors:
+  - Capillary Diagnostics
+  - branching flow channel HUD
+  - branching channels
+displayName: Capillary Diagnostics
+category: 5. Game UI, HUDs & Screen Graphics
+domain: branching flow channel HUD
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - game-ui-huds-and-screen-graphics
+  - capillary-diagnostics
+  - applied-design
+  - hud
+  - r-hud-02
+  - requested-text
+visualDna:
+  aesthetic: 'Capillary Diagnostics: branching channels and status reservoirs show connection and flow, their thickness following hierarchy.'
+  subject_treatment: Show the prompt's connected systems as branching channels feeding status reservoirs, thickness by hierarchy and only the links supplied; keep labels exact.
+  color_and_tone: Active, idle and reservoir states separated by shape and value as well as color.
+  lighting_and_shadow: Light contained inside the channels, each branch glowing on its own.
+  texture_and_material: Smooth surfaces and ducts of consistent thickness, graphic rather than anatomical.
+  camera_and_composition: Root, branches and destinations follow the given topology, labels clear of crossings.
+  atmosphere_and_mood: Controlled organic flow and a sense of interdependence, calm and legible.
+  rendering_and_quality: Every branch corresponds to one real link in the supplied data.
+  creative_brief: "Capillary Diagnostics: branching channels and status reservoirs show connection and flow, their thickness following hierarchy. Carry it through branching channels, status reservoirs, hierarchy by thickness, exact links. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: branching channels; status reservoirs; hierarchy by thickness; exact links
+avoidRules:
+  - invented branches
+  - reservoirs with no function
+  - look of a real medical diagnosis
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: invented branches, reservoirs with no function, look of a real medical diagnosis, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: game-ui-huds-and-screen-graphics
+  categoryName: 5. Game UI, HUDs & Screen Graphics
+  domain: branching flow channel HUD
+  tags:
+    - curation-v2
+    - game-ui-huds-and-screen-graphics
+    - capillary-diagnostics
+    - applied-design
+    - hud
+    - r-hud-02
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-094
+packId: pack_25
+name: Eroded Enamel Console
+styleAnchors:
+  - Eroded Enamel Console
+  - worn enamel plate HUD
+  - enamel plates
+displayName: Eroded Enamel Console
+category: 5. Game UI, HUDs & Screen Graphics
+domain: worn enamel plate HUD
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - game-ui-huds-and-screen-graphics
+  - eroded-enamel
+  - applied-design
+  - hud
+  - r-hud-14
+  - requested-text
+visualDna:
+  aesthetic: 'Eroded Enamel Console: solid enamel plates worn at their edges, with clean protected reading zones and a clear hierarchy.'
+  subject_treatment: Build the prompt's readouts on solid enamel plates with wear only at edges and contact points, keeping every reading zone clean and every value exact.
+  color_and_tone: Sober enamel base color, discreet exposed metal and high-contrast text.
+  lighting_and_shadow: Soft side light revealing the material while data stays glare-free.
+  texture_and_material: Wear limited to plausible edges and contact points, centers clean.
+  camera_and_composition: Aligned functional plates with clear labels and fixings only where needed.
+  atmosphere_and_mood: Accumulated use and robustness, a trusted and well-kept tool.
+  rendering_and_quality: With the wear removed, the layout still works as a complete system.
+  creative_brief: "Eroded Enamel Console: solid enamel plates worn at their edges, with clean protected reading zones and a clear hierarchy. Carry it through enamel plates, edge wear, clean reading zones, high-contrast text. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: enamel plates; edge wear; clean reading zones; high-contrast text
+avoidRules:
+  - grime over data
+  - random screws
+  - material as the only identity
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: grime over data, random screws, material as the only identity, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: game-ui-huds-and-screen-graphics
+  categoryName: 5. Game UI, HUDs & Screen Graphics
+  domain: worn enamel plate HUD
+  tags:
+    - curation-v2
+    - game-ui-huds-and-screen-graphics
+    - eroded-enamel
+    - applied-design
+    - hud
+    - r-hud-14
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

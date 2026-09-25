@@ -101,6 +101,29 @@ categories:
       - pack_25/SP25-078.yaml
       - pack_25/SP25-079.yaml
       - pack_25/SP25-080.yaml
+  - id: game-ui-huds-and-screen-graphics
+    name: 5. Game UI, HUDs & Screen Graphics
+    presetRefs:
+      - pack_25/SP25-081.yaml
+      - pack_25/SP25-082.yaml
+      - pack_25/SP25-083.yaml
+      - pack_25/SP25-084.yaml
+      - pack_25/SP25-085.yaml
+      - pack_25/SP25-086.yaml
+      - pack_25/SP25-087.yaml
+      - pack_25/SP25-088.yaml
+      - pack_25/SP25-089.yaml
+      - pack_25/SP25-090.yaml
+      - pack_25/SP25-091.yaml
+      - pack_25/SP25-092.yaml
+      - pack_25/SP25-093.yaml
+      - pack_25/SP25-094.yaml
+      - pack_25/SP25-095.yaml
+      - pack_25/SP25-096.yaml
+      - pack_25/SP25-097.yaml
+      - pack_25/SP25-098.yaml
+      - pack_25/SP25-099.yaml
+      - pack_25/SP25-100.yaml
 presetRefs:
   - pack_25/SP25-001.yaml
   - pack_25/SP25-002.yaml
@@ -182,3 +205,23 @@ presetRefs:
   - pack_25/SP25-078.yaml
   - pack_25/SP25-079.yaml
   - pack_25/SP25-080.yaml
+  - pack_25/SP25-081.yaml
+  - pack_25/SP25-082.yaml
+  - pack_25/SP25-083.yaml
+  - pack_25/SP25-084.yaml
+  - pack_25/SP25-085.yaml
+  - pack_25/SP25-086.yaml
+  - pack_25/SP25-087.yaml
+  - pack_25/SP25-088.yaml
+  - pack_25/SP25-089.yaml
+  - pack_25/SP25-090.yaml
+  - pack_25/SP25-091.yaml
+  - pack_25/SP25-092.yaml
+  - pack_25/SP25-093.yaml
+  - pack_25/SP25-094.yaml
+  - pack_25/SP25-095.yaml
+  - pack_25/SP25-096.yaml
+  - pack_25/SP25-097.yaml
+  - pack_25/SP25-098.yaml
+  - pack_25/SP25-099.yaml
+  - pack_25/SP25-100.yaml

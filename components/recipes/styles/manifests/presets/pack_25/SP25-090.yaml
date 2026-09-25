@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-090
+packId: pack_25
+name: Perforated Card Readouts
+styleAnchors:
+  - Perforated Card Readouts
+  - punched card status HUD
+  - punched rows
+displayName: Perforated Card Readouts
+category: 5. Game UI, HUDs & Screen Graphics
+domain: punched card status HUD
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - game-ui-huds-and-screen-graphics
+  - perforated-card
+  - applied-design
+  - hud
+  - r-hud-10
+  - requested-text
+visualDna:
+  aesthetic: 'Perforated Card Readouts: rows of punched holes and clear headers encode states like stacked punch cards, with a readable legend.'
+  subject_treatment: Encode the prompt's states as rows of punched holes under clear headers with an explicit legend; keep every code, header and label exact.
+  color_and_tone: Filled and empty told apart by shape and value, color optional.
+  lighting_and_shadow: Flat light with a minimal hole shadow that keeps the reading easy.
+  texture_and_material: Smooth card stock and holes of uniform size with clean edges.
+  camera_and_composition: Aligned rows with spacing between records and a dominant header.
+  atmosphere_and_mood: Register order and mechanical memory, tidy and clear.
+  rendering_and_quality: Every hole matches a declared value or position.
+  creative_brief: "Perforated Card Readouts: rows of punched holes and clear headers encode states like stacked punch cards, with a readable legend. Carry it through punched rows, clear headers, explicit legend, stacked cards. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: punched rows; clear headers; explicit legend; stacked cards
+avoidRules:
+  - invented code
+  - filler holes
+  - illegible headers
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: invented code, filler holes, illegible headers, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: game-ui-huds-and-screen-graphics
+  categoryName: 5. Game UI, HUDs & Screen Graphics
+  domain: punched card status HUD
+  tags:
+    - curation-v2
+    - game-ui-huds-and-screen-graphics
+    - perforated-card
+    - applied-design
+    - hud
+    - r-hud-10
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

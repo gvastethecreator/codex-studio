@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP25-100
+packId: pack_25
+name: Tactical Map Stack
+styleAnchors:
+  - Tactical Map Stack
+  - layered tactical map screen profile
+  - map with layers
+displayName: Tactical Map Stack
+category: 5. Game UI, HUDs & Screen Graphics
+domain: layered tactical map screen profile
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - game-ui-huds-and-screen-graphics
+  - tactical-map-stack
+  - applied-design
+  - hud
+  - profile
+  - r-hud-19
+  - requested-text
+visualDna:
+  aesthetic: 'Tactical Map Stack: a map, switchable route layers and linked info cards kept in sync by stable ids and coordinates.'
+  subject_treatment: Show the prompt's map with switchable route layers and a card for the selected item, every node, id and coordinate kept exact.
+  color_and_tone: One bright active layer, faint secondary context and selection backed by outline.
+  lighting_and_shadow: Flat top-down rendering that keeps the topology undistorted.
+  texture_and_material: Clean route lines, readable nodes and crisp text panels.
+  camera_and_composition: Dominant map, compact layer controls and an inspector tied to selection.
+  atmosphere_and_mood: Tactical reading and stable context, calm and in control.
+  rendering_and_quality: Switching layers never moves nodes or changes the selected card.
+  creative_brief: "Tactical Map Stack: a map, switchable route layers and linked info cards kept in sync by stable ids and coordinates. Carry it through map with layers, linked card, stable ids, flat topology. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: map with layers; linked card; stable ids; flat topology
+avoidRules:
+  - shifted coordinates
+  - decorative layers
+  - disconnected cards
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: shifted coordinates, decorative layers, disconnected cards, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: game-ui-huds-and-screen-graphics
+  categoryName: 5. Game UI, HUDs & Screen Graphics
+  domain: layered tactical map screen profile
+  tags:
+    - curation-v2
+    - game-ui-huds-and-screen-graphics
+    - tactical-map-stack
+    - applied-design
+    - hud
+    - profile
+    - r-hud-19
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

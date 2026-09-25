@@ -8698,5 +8698,85 @@
   "SP25-080": [
     "Five screens of a plant-watering app for forgetful people, library, editor, empty search, settings and the error \"Your fern is disappointed\", same data everywhere.",
     "A five-screen specimen of a small notes app, the same selected note in library, editor, search, settings and a save error, calm and consistent."
+  ],
+  "SP25-081": [
+    "An old ship's microfiche screen that only reports bad news, \"RATIONS 12%\", \"MORALE LOW\" and \"CAPTAIN ASLEEP\", stacked registers, pale blue on dark, very calm about it.",
+    "A quiet explorer HUD with \"RESERVE 42%\" and \"ROUTE C\" in two optical windows of different size, a pale light ground and faint film edges."
+  ],
+  "SP25-082": [
+    "A greenhouse game HUD where the main tank at 55% feeds two thirsty \"TOMATOES\" channels and one very dramatic \"CACTUS\" valve, closed, labels exact.",
+    "A ship HUD with no ship shown: one core branching to \"LIGHT\", \"AUDIO\" and \"MAP\", MAP on standby, sober ducts and one coral accent."
+  ],
+  "SP25-083": [
+    "A mood selector on a robot butler's chest display: \"POLITE\", \"SARCASTIC\" and \"PASSIVE AGGRESSIVE\", with SARCASTIC locked in place, grey bands, deadpan.",
+    "A route index for a hiking game with steps \"01\", \"02\" and \"03\", step 02 active and status \"READY\", pale grey bands."
+  ],
+  "SP25-084": [
+    "An etched-glass \"PATIENCE\" gauge on a dragon trainer's helmet, scale 0 to 10, current reading \"2\", very honest.",
+    "A heading plate etched from 000 to 090 with the reading \"042°\" and the label \"HEADING\", charcoal ground and a soft glass edge."
+  ],
+  "SP25-085": [
+    "A HUD for a DJ robot mixing \"BIRDS\" and \"THUNDER\" into \"CHAOS\", two channels weaving into one output, crossings clean and smug.",
+    "A file route display with three independent paths P, Q and R woven to X, Y and Z, light ground, dark ink and generous gaps."
+  ],
+  "SP25-086": [
+    "A bunker game HUD with \"WATER 60%\" and \"SNACKS 35%\" in separate chambers and a warning chamber labeled \"BOREDOM 99%\", clean and tongue-in-cheek.",
+    "A calm mechanism HUD with a central tank at 50% and two helpers at 25%, one scale per chamber, pale green."
+  ],
+  "SP25-087": [
+    "A haunted arcade cabinet screen showing \"HIGH SCORE\" with a ghostly afterimage of someone else's name fading behind it, current text perfectly crisp.",
+    "A calm reading \"RESERVE 42%\" on a light ground with a soft grey echo behind it, black text untouched."
+  ],
+  "SP25-088": [
+    "A tea-ceremony robot's console with \"STEEP 3 MIN\", \"POLITENESS 100%\" and \"SPILL RISK LOW\", pale porcelain plates, absurdly serene.",
+    "A quiet farming game HUD with \"DAY 03\", \"ROUTE A\" and \"ENERGY 55%\" on small pale plates, wide gaps and no frame."
+  ],
+  "SP25-089": [
+    "An ink-heavy HUD for a very stressed wizard accountant: \"MANA 12%\", \"RECEIPTS 400\" and \"DEADLINE TODAY\", dramatic and exact.",
+    "A navigation game panel with \"LINK STABLE\", \"HEADING 042°\" and \"ENERGY 55%\", ink masses on a light ground and generous voids."
+  ],
+  "SP25-090": [
+    "A punch-card HUD tracking a cat's daily crimes, rows \"SOFA\", \"CURTAIN\" and \"PLANT\", holes for each offense, legend exact, very bureaucratic.",
+    "A four-step factory process card for a small bakery game, holes punched 1,1,0,0 under the header \"PROCESS\", stacked cream cards and carbon ink, tidy and mechanical."
+  ],
+  "SP25-091": [
+    "A wind vector HUD for a paper-airplane championship, one bold arrow east with the magnitude \"12 u\" and a nervous judge icon, clean lines.",
+    "A spatial editor HUD with a single vector from A(20,30) to B(60,30), origin and destination visible, light ground and one coral selection."
+  ],
+  "SP25-092": [
+    "A route HUD for a pizza delivery rider in a city of one-way streets, \"FAST\" and \"LEGAL\" routes on separate layers, neither of them good.",
+    "A shelter plan HUD with \"SERVICE\" and \"VISITOR\" routes on the same fixed plan, active layer bright and the other faint."
+  ],
+  "SP25-093": [
+    "A membrane HUD on a jellyfish-shaped kids' submarine: \"BUBBLES\", \"SNACK\" and \"HONK\", all very squishy, labels perfectly flat and readable.",
+    "An archive console with \"SEARCH\", \"READ\" and \"SAVE\" regions on a pale membrane, READ selected, minimal supports and one coral accent."
+  ],
+  "SP25-094": [
+    "A worn enamel HUD for a grandfather's ancient tractor in a farming game: \"FUEL 12%\", \"GRUMPINESS HIGH\" and \"NAP DUE\", edges chipped, data spotless.",
+    "A navigation panel with heading 042° and route C on compact dark blue enamel plates, crisp data and minimal edge wear."
+  ],
+  "SP25-095": [
+    "An inventory HUD for a very greedy dragon, capacity 8 and used 4, the empty space labeled \"free\" and a tiny sad label \"NEEDS MORE GOLD\".",
+    "A reserve meter at 68% available, the void rising inside one solid mass, with small 0 and 100 references beside it, one ink."
+  ],
+  "SP25-096": [
+    "A cat's patience meter on a pet-sitting game HUD, eight segments with one lit and the label \"1/8\", flashing a small \"RUN\" warning.",
+    "A five-stage process display with two stages complete, one current and two pending, labels 01 to 05 exact."
+  ],
+  "SP25-097": [
+    "A contour-line gauge for a mole's underground tunneling game, \"DEPTH 7 RINGS\", \"SNACKS 2 RINGS\", drawn like a very serious survey map.",
+    "A quiet hiking-app gauge: five contour rings with three filled and the label \"3/5\", soft green lines on cream."
+  ],
+  "SP25-098": [
+    "The driver's seat of an ice-cream truck in a zombie game, \"FREEZER 40%\", \"MUSIC ON\" and \"SPEED 30\" placed on the dashboard by priority.",
+    "An observation post seen from the operator's chair: reserve, route and archive readouts in three zones, dim light and no reflections."
+  ],
+  "SP25-099": [
+    "An overlay for a goose-chasing game with \"HONKS 3\", \"BREAD 7\" and a notification \"GOOSE ESCAPED\" in the event corner, the goose free in the center.",
+    "An exploration overlay with a protected center, \"RESERVE 55%\" and \"ROUTE B\" in opposite corners and one \"Saved\" notice."
+  ],
+  "SP25-100": [
+    "A tactical map for a squirrel planning a heist on a bird feeder, three markers, two approach routes and the card \"FEEDER C: HEAVILY GUARDED\".",
+    "An exploration map with three markers and two approved routes, the layer stack and marker C card open, scale unchanged."
   ]
 }

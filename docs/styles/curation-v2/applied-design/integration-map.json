@@ -483,61 +483,118 @@
       "category": "4. UI & App Design"
     },
     "R-HUD-01": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-081",
+      "name": "Microfiche Telemetry",
+      "category": "5. Game UI, HUDs & Screen Graphics"
     },
     "R-HUD-02": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-082",
+      "name": "Capillary Diagnostics",
+      "category": "5. Game UI, HUDs & Screen Graphics"
     },
     "R-HUD-03": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-083",
+      "name": "Mechanical Index Displays",
+      "category": "5. Game UI, HUDs & Screen Graphics"
     },
     "R-HUD-04": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-084",
+      "name": "Etched Glass Instruments",
+      "category": "5. Game UI, HUDs & Screen Graphics"
     },
     "R-HUD-05": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-085",
+      "name": "Woven Signal Panels",
+      "category": "5. Game UI, HUDs & Screen Graphics"
     },
     "R-HUD-06": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-086",
+      "name": "Pressure-Chamber Readouts",
+      "category": "5. Game UI, HUDs & Screen Graphics"
     },
     "R-HUD-07": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-087",
+      "name": "Optical Ghost Registers",
+      "category": "5. Game UI, HUDs & Screen Graphics"
     },
     "R-HUD-08": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-088",
+      "name": "Porcelain Dial Console",
+      "category": "5. Game UI, HUDs & Screen Graphics"
     },
     "R-HUD-09": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-089",
+      "name": "Inkbound Status Panels",
+      "category": "5. Game UI, HUDs & Screen Graphics"
     },
     "R-HUD-10": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-090",
+      "name": "Perforated Card Readouts",
+      "category": "5. Game UI, HUDs & Screen Graphics"
     },
     "R-HUD-11": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-091",
+      "name": "Vector Sweep Instruments",
+      "category": "5. Game UI, HUDs & Screen Graphics"
     },
     "R-HUD-12": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-092",
+      "name": "Layered Route Displays",
+      "category": "5. Game UI, HUDs & Screen Graphics"
     },
     "R-HUD-13": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-093",
+      "name": "Membrane Switch HUD",
+      "category": "5. Game UI, HUDs & Screen Graphics"
     },
     "R-HUD-14": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-094",
+      "name": "Eroded Enamel Console",
+      "category": "5. Game UI, HUDs & Screen Graphics"
     },
     "R-HUD-15": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-095",
+      "name": "Negative-Space Meters",
+      "category": "5. Game UI, HUDs & Screen Graphics"
     },
     "R-HUD-16": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-096",
+      "name": "Segmented Light Channels",
+      "category": "5. Game UI, HUDs & Screen Graphics"
     },
     "R-HUD-17": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-098",
+      "name": "Diegetic Cockpit Layout",
+      "category": "5. Game UI, HUDs & Screen Graphics"
     },
     "R-HUD-18": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-099",
+      "name": "Peripheral Combat Overlay",
+      "category": "5. Game UI, HUDs & Screen Graphics"
     },
     "R-HUD-19": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-100",
+      "name": "Tactical Map Stack",
+      "category": "5. Game UI, HUDs & Screen Graphics"
     },
     "R-HUD-20": {
       "status": "qa-protocol",

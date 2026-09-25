@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-093
+packId: pack_25
+name: Membrane Switch HUD
+styleAnchors:
+  - Membrane Switch HUD
+  - tensioned membrane control HUD
+  - stretched membrane
+displayName: Membrane Switch HUD
+category: 5. Game UI, HUDs & Screen Graphics
+domain: tensioned membrane control HUD
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - game-ui-huds-and-screen-graphics
+  - membrane-switch
+  - applied-design
+  - hud
+  - r-hud-13
+  - requested-text
+visualDna:
+  aesthetic: 'Membrane Switch HUD: apparent flexible surfaces stretched around controls and status regions, supported at clear points.'
+  subject_treatment: Place the prompt's controls and status regions on apparent flexible membranes held by coherent supports, with flat zones for reading; keep labels exact.
+  color_and_tone: Neutral base, clear reading and one localized accent on the active control.
+  lighting_and_shadow: Broad light revealing surface tension, labels sitting on flat areas.
+  texture_and_material: Smooth membrane, support edges and minimal stretch around controls.
+  camera_and_composition: Grouped by task with flat reading zones between gently raised controls.
+  atmosphere_and_mood: Contained organic tactility with an apparent response under the finger.
+  rendering_and_quality: Stretch never changes the position, label or usable size of a control.
+  creative_brief: "Membrane Switch HUD: apparent flexible surfaces stretched around controls and status regions, supported at clear points. Carry it through stretched membrane, clear supports, flat reading zones, one active accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: stretched membrane; clear supports; flat reading zones; one active accent
+avoidRules:
+  - melted UI
+  - curved text
+  - membrane with no supports
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: melted UI, curved text, membrane with no supports, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: game-ui-huds-and-screen-graphics
+  categoryName: 5. Game UI, HUDs & Screen Graphics
+  domain: tensioned membrane control HUD
+  tags:
+    - curation-v2
+    - game-ui-huds-and-screen-graphics
+    - membrane-switch
+    - applied-design
+    - hud
+    - r-hud-13
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP25-098
+packId: pack_25
+name: Diegetic Cockpit Layout
+styleAnchors:
+  - Diegetic Cockpit Layout
+  - in-world cockpit HUD profile
+  - in-world panel
+displayName: Diegetic Cockpit Layout
+category: 5. Game UI, HUDs & Screen Graphics
+domain: in-world cockpit HUD profile
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - game-ui-huds-and-screen-graphics
+  - diegetic-cockpit
+  - applied-design
+  - hud
+  - profile
+  - r-hud-17
+  - requested-text
+visualDna:
+  aesthetic: "Diegetic Cockpit Layout: readouts placed on the zones of a physical in-world panel according to priority and the pilot's field of view."
+  subject_treatment: Place the prompt's readouts on zones of an in-world control panel by priority, main readings in the frontal field; keep every value exact.
+  color_and_tone: Data contrast independent of the panel material, alerts backed by shape.
+  lighting_and_shadow: 'Sober cockpit lighting that keeps every priority instrument clear of reflections.'
+  texture_and_material: Consistent panel material and plausible fixings with purposeful detail.
+  camera_and_composition: Main readings inside the frontal field, secondary ones in reachable periphery.
+  atmosphere_and_mood: In-world presence and orientation, grounded in a believable seat.
+  rendering_and_quality: The camera never hides required information or changes its hierarchy.
+  creative_brief: "Diegetic Cockpit Layout: readouts placed on the zones of a physical in-world panel according to priority and the pilot's field of view. Carry it through in-world panel, priority zones, frontal field, seated camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: in-world panel; priority zones; frontal field; seated camera
+avoidRules:
+  - impossible panel
+  - data out of view
+  - too many fictional instruments
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: impossible panel, data out of view, too many fictional instruments, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: game-ui-huds-and-screen-graphics
+  categoryName: 5. Game UI, HUDs & Screen Graphics
+  domain: in-world cockpit HUD profile
+  tags:
+    - curation-v2
+    - game-ui-huds-and-screen-graphics
+    - diegetic-cockpit
+    - applied-design
+    - hud
+    - profile
+    - r-hud-17
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

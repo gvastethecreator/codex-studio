@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-083
+packId: pack_25
+name: Mechanical Index Displays
+styleAnchors:
+  - Mechanical Index Displays
+  - discrete mechanical selector HUD
+  - index bands
+displayName: Mechanical Index Displays
+category: 5. Game UI, HUDs & Screen Graphics
+domain: discrete mechanical selector HUD
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - game-ui-huds-and-screen-graphics
+  - mechanical-index
+  - applied-design
+  - hud
+  - r-hud-03
+  - requested-text
+visualDna:
+  aesthetic: 'Mechanical Index Displays: index bands that click into discrete positions behind a stable reading window, like a mechanical selector.'
+  subject_treatment: Show the prompt's selection as bands locked into discrete positions with one stable reading window; keep every option name exact.
+  color_and_tone: Light values for the selection, neutrals for available positions and one alert accent.
+  lighting_and_shadow: Flat light with a tiny seating shadow where each band settles.
+  texture_and_material: Clean index surfaces, visible slots and well-defined position edges.
+  camera_and_composition: Selected reading centered in its window, neighbors clearly subordinate.
+  atmosphere_and_mood: Precise mechanical change and a firm pause, satisfying and exact.
+  rendering_and_quality: The active position has exactly one reading and never sits between two values.
+  creative_brief: "Mechanical Index Displays: index bands that click into discrete positions behind a stable reading window, like a mechanical selector. Carry it through index bands, discrete positions, reading window, firm selection. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: index bands; discrete positions; reading window; firm selection
+avoidRules:
+  - bands with no function
+  - value between positions
+  - excess decorative screws
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: bands with no function, value between positions, excess decorative screws, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: game-ui-huds-and-screen-graphics
+  categoryName: 5. Game UI, HUDs & Screen Graphics
+  domain: discrete mechanical selector HUD
+  tags:
+    - curation-v2
+    - game-ui-huds-and-screen-graphics
+    - mechanical-index
+    - applied-design
+    - hud
+    - r-hud-03
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
