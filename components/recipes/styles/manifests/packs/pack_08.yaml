@@ -65,6 +65,15 @@ categories:
       - pack_08/SP08-037.yaml
       - pack_08/SP08-038.yaml
       - pack_08/SP08-039.yaml
+      - pack_08/SP08-097.yaml
+      - pack_08/SP08-098.yaml
+      - pack_08/SP08-099.yaml
+      - pack_08/SP08-100.yaml
+      - pack_08/SP08-101.yaml
+      - pack_08/SP08-102.yaml
+      - pack_08/SP08-103.yaml
+      - pack_08/SP08-104.yaml
+      - pack_08/SP08-105.yaml
   - id: fantasy-sci-fi-costume
     name: 4. Fantasy Sci-Fi Costume
     presetRefs:
@@ -151,6 +160,15 @@ presetRefs:
   - pack_08/SP08-013.yaml
   - pack_08/SP08-038.yaml
   - pack_08/SP08-039.yaml
+  - pack_08/SP08-097.yaml
+  - pack_08/SP08-098.yaml
+  - pack_08/SP08-099.yaml
+  - pack_08/SP08-100.yaml
+  - pack_08/SP08-101.yaml
+  - pack_08/SP08-102.yaml
+  - pack_08/SP08-103.yaml
+  - pack_08/SP08-104.yaml
+  - pack_08/SP08-105.yaml
   - pack_08/SP08-014.yaml
   - pack_08/SP08-036.yaml
   - pack_08/SP08-028.yaml

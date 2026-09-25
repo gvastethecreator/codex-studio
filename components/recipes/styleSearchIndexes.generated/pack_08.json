@@ -3,7 +3,7 @@
     {
       "id": "pack_08",
       "name": "Fashion & Costume",
-      "presetCount": 96
+      "presetCount": 105
     }
   ],
   "presets": [
@@ -460,6 +460,144 @@
       "tags": ["fashion-and-costume", "historical-and-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp08-039 french revolution 3. historical & fantasy historical clothing pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy"
+    },
+    {
+      "id": "SP08-097",
+      "name": "Byzantine Court",
+      "styleAnchors": ["Byzantine Court", "Byzantine imperial dress", "jeweled loros sash"],
+      "ref": "pack_08/SP08-097.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "historical-and-fantasy",
+      "categoryName": "3. Historical & Fantasy",
+      "domain": "Byzantine imperial dress",
+      "tags": ["fashion-and-costume", "historical-and-fantasy", "byzantine-imperial-dress"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-097 byzantine court byzantine imperial dress jeweled loros sash 3. historical & fantasy historical clothing byzantine imperial dress pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy byzantine-imperial-dress"
+    },
+    {
+      "id": "SP08-098",
+      "name": "Heian Court Layers",
+      "styleAnchors": [
+        "Heian Court Layers",
+        "Heian court layered robes",
+        "many layered silk robes"
+      ],
+      "ref": "pack_08/SP08-098.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "historical-and-fantasy",
+      "categoryName": "3. Historical & Fantasy",
+      "domain": "Heian court layered robes",
+      "tags": ["fashion-and-costume", "historical-and-fantasy", "heian-court-layered-robes"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-098 heian court layers heian court layered robes many layered silk robes 3. historical & fantasy historical clothing heian court layered robes pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy heian-court-layered-robes"
+    },
+    {
+      "id": "SP08-099",
+      "name": "Regency Empire Line",
+      "styleAnchors": ["Regency Empire Line", "Regency era dress", "empire-waist muslin gown"],
+      "ref": "pack_08/SP08-099.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "historical-and-fantasy",
+      "categoryName": "3. Historical & Fantasy",
+      "domain": "Regency era dress",
+      "tags": ["fashion-and-costume", "historical-and-fantasy", "regency-era-dress"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-099 regency empire line regency era dress empire-waist muslin gown 3. historical & fantasy historical clothing regency era dress pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy regency-era-dress"
+    },
+    {
+      "id": "SP08-100",
+      "name": "Ottoman Court Kaftan",
+      "styleAnchors": ["Ottoman Court Kaftan", "Ottoman court dress", "layered patterned kaftans"],
+      "ref": "pack_08/SP08-100.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "historical-and-fantasy",
+      "categoryName": "3. Historical & Fantasy",
+      "domain": "Ottoman court dress",
+      "tags": ["fashion-and-costume", "historical-and-fantasy", "ottoman-court-dress"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-100 ottoman court kaftan ottoman court dress layered patterned kaftans 3. historical & fantasy historical clothing ottoman court dress pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy ottoman-court-dress"
+    },
+    {
+      "id": "SP08-101",
+      "name": "Medieval Peasant Workwear",
+      "styleAnchors": [
+        "Medieval Peasant Workwear",
+        "medieval working dress",
+        "homespun wool tunic or kirtle"
+      ],
+      "ref": "pack_08/SP08-101.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "historical-and-fantasy",
+      "categoryName": "3. Historical & Fantasy",
+      "domain": "medieval working dress",
+      "tags": ["fashion-and-costume", "historical-and-fantasy", "medieval-working-dress"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-101 medieval peasant workwear medieval working dress homespun wool tunic or kirtle 3. historical & fantasy historical clothing medieval working dress pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy medieval-working-dress"
+    },
+    {
+      "id": "SP08-102",
+      "name": "1940s Wartime Utility",
+      "styleAnchors": [
+        "1940s Wartime Utility",
+        "1940s utility clothing",
+        "padded-shoulder utility suit"
+      ],
+      "ref": "pack_08/SP08-102.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "historical-and-fantasy",
+      "categoryName": "3. Historical & Fantasy",
+      "domain": "1940s utility clothing",
+      "tags": ["fashion-and-costume", "historical-and-fantasy", "1940s-utility-clothing"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-102 1940s wartime utility 1940s utility clothing padded-shoulder utility suit 3. historical & fantasy historical clothing 1940s utility clothing pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy 1940s-utility-clothing"
+    },
+    {
+      "id": "SP08-103",
+      "name": "Belle Époque",
+      "styleAnchors": ["Belle Époque", "Belle Époque fashion", "S-bend silhouette"],
+      "ref": "pack_08/SP08-103.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "historical-and-fantasy",
+      "categoryName": "3. Historical & Fantasy",
+      "domain": "Belle Époque fashion",
+      "tags": ["fashion-and-costume", "historical-and-fantasy", "belle-poque-fashion"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-103 belle époque belle époque fashion s-bend silhouette 3. historical & fantasy historical clothing belle époque fashion pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy belle-poque-fashion"
+    },
+    {
+      "id": "SP08-104",
+      "name": "Tang Dynasty Hanfu",
+      "styleAnchors": ["Tang Dynasty Hanfu", "Tang dynasty dress", "high-waisted ruqun skirt"],
+      "ref": "pack_08/SP08-104.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "historical-and-fantasy",
+      "categoryName": "3. Historical & Fantasy",
+      "domain": "Tang dynasty dress",
+      "tags": ["fashion-and-costume", "historical-and-fantasy", "tang-dynasty-dress"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-104 tang dynasty hanfu tang dynasty dress high-waisted ruqun skirt 3. historical & fantasy historical clothing tang dynasty dress pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy tang-dynasty-dress"
+    },
+    {
+      "id": "SP08-105",
+      "name": "Mughal Court Jama",
+      "styleAnchors": ["Mughal Court Jama", "Mughal court dress", "flared jama"],
+      "ref": "pack_08/SP08-105.yaml",
+      "packId": "pack_08",
+      "packName": "Fashion & Costume",
+      "categoryId": "historical-and-fantasy",
+      "categoryName": "3. Historical & Fantasy",
+      "domain": "Mughal court dress",
+      "tags": ["fashion-and-costume", "historical-and-fantasy", "mughal-court-dress"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp08-105 mughal court jama mughal court dress flared jama 3. historical & fantasy historical clothing mughal court dress pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy mughal-court-dress"
     },
     {
       "id": "SP08-014",
@@ -1220,5 +1358,5 @@
       "searchableText": "sp08-049 pelagic tail couture 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     }
   ],
-  "totalPresetCount": 96
+  "totalPresetCount": 105
 }

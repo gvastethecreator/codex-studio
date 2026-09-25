@@ -3,7 +3,7 @@ id: SP08-036
 packId: pack_08
 name: Norse Seafaring Regalia
 category: 3. Historical & Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,67 +12,25 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: >-
-    Norse Seafaring Regalia operates as a portable fashion-costume router: combine Norse seafaring
-    regalia, fjord-weathered resilience, saga-forged material culture with period and mythic costume
-    logic with era silhouette, regalia structure, textile craft, and ceremonial proportion, so the
-    preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal
-    garment sample.
-  subject_treatment: >-
-    Preserve the prompt's subject, motion, and context while forms robe, armor, pleat, lace, cinch,
-    plate, embroider, crown, wrap, or ceremonialize through Fur mantle layering, leather strap
-    lattice, tunic-panel rhythm, rune-band geometry, cloak-pin gather; identity stays readable as
-    silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into
-    this preset.
-  color_and_tone: >-
-    Map color through period pigments, jewel tones, mourning blacks, metallic trim, linen or wool
-    neutrals, royal accents, and age-aware dye; keep textile values separated, accents intentional,
-    material color believable, and palette behavior attached to the subject instead of pasted
-    wardrobe decoration.
-  lighting_and_shadow: >-
-    Use Cold overcast grey, firelight warmth, mist diffusion, iron-edge highlights plus museum,
-    candle, daylight, ceremonial, or portrait light that reveals textile depth and silhouette
-    hierarchy as the styling light contract, revealing cut, drape, surface response, trim,
-    transparency, or armor structure without erasing prompt readability.
-  texture_and_material: >-
-    Render Wolf fur, riveted chainmail, oil-tanned leather, coarse wool wadmal, iron boss, bone
-    toggle plus brocade, linen, wool, silk, leather, metal, beadwork, lace, fur, embroidery, trim,
-    and handworked surface detail; keep fabric scale, seams, fibers, shine, opacity, folds,
-    hardware, elemental edges, or body-surface treatment coherent across the whole prompt.
-  camera_and_composition: >-
-    Compose with Compose for Norse Seafaring Regalia using its key spatial cues: Amulet silhouette,
-    round metal geometry, fur mantle edge, knotwork or rune detail plus regal posture logic, era
-    silhouette, layered garment structure, ornament placement, and readable period identity as
-    reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action,
-    and abstract prompts to inherit styling without one required pose.
-  atmosphere_and_mood: >-
-    Carry mood through ceremony, history, myth, rank, mourning, travel, revolution, courtly
-    pressure, or folk memory; the tone should feel specific to Norse Seafaring Regalia while still
-    obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
-  rendering_and_quality: >-
-    Finish with period-aware costume clarity, tactile textile truth, ornament discipline, and no
-    cheap renaissance-fair shortcut; prioritize clean style recognition, believable material
-    physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.
-  key_features: >-
-    Norse seafaring regalia, fjord-weathered resilience, saga-forged material culture; Fur mantle
-    layering, leather strap lattice, tunic-panel rhythm, rune-band geometry, cloak-pin gather; Wolf
-    fur, riveted chainmail, oil-tanned leather, coarse wool wadmal, iron boss, bone toggle; Cold
-    overcast grey, firelight warmth, mist diffusion, iron-edge highlights; Compose for Norse
-    Seafaring Regalia using its key spatial cues: Amulet silhouette, round metal geometry, fur
-    mantle edge, knotwork or rune detail
-  creative_brief: >-
-    Use Norse Seafaring Regalia after prompt X as a transferable fashion/costume layer: prompt X
-    supplies subject, motion, setting, tone, and intensity, while the preset supplies Norse
-    seafaring regalia, fjord-weathered resilience, saga-forged material culture, Fur mantle
-    layering, leather strap lattice, tunic-panel rhythm, rune-band geometry, cloak-pin gather, Wolf
-    fur, riveted chainmail, oil-tanned leather, coarse wool wadmal, iron boss, bone toggle, Cold
-    overcast grey, firelight warmth, mist diffusion, iron-edge highlights, Compose for Norse
-    Seafaring Regalia using its key spatial cues: Amulet silhouette, round metal geometry, fur
-    mantle edge, knotwork or rune detail plus corsetry, armor plates, robes, sashes, pleats, trim,
-    brocade, regalia layers, fastenings, and historically legible cut, palette behavior, light
-    response, material treatment, silhouette grammar, and finish discipline without requiring one
-    body type, fixed outfit, venue, prop bundle, or card composition.
+  aesthetic: 'Norse seafaring dress: layered wool tunics and apron dresses with oval brooches, fur-trimmed cloaks, woven bands and leg wraps.'
+  subject_treatment: 'Redress the prompt''s wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the Viking-age Norse garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — wool tunic or apron dress held with oval tortoise brooches and bead strings, tablet-woven bands, fur-trimmed cloak with ring pin, leg wraps and turnshoes.'
+  color_and_tone: Madder red, woad blue, undyed wool grey, bronze and fur brown.
+  lighting_and_shadow: Cold, grey northern light, shaped to reveal garment cut, drape, texture and fit on the wearer.
+  texture_and_material: Coarse wool, fur, tablet-woven bands, bronze brooches and glass beads.
+  camera_and_composition: Weathered full figure in cold outdoor framing, keeping the full outfit silhouette and fit readable at card size.
+  atmosphere_and_mood: Hardy, proud, seafaring and wind-beaten, carried by the wearer's posture, styling and attitude.
+  rendering_and_quality: Textured, cold-toned finish, with believable fabric weight, seams and fit detail.
+  key_features: apron dress with oval brooches; fur-trimmed cloak; tablet-woven bands; leg wraps; cold northern light
+  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Norse Seafaring Regalia as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
 avoidRules:
+  - brand logo
+  - readable label text
+  - real designer or celebrity likeness
+  - generic catalog outfit
+  - bad garment fit
+  - costume-shop synthetic fabric
+  - mixed-up period details
+  - horned helmets
   - clean
   - shiny
   - cheap costume rental
@@ -85,12 +43,17 @@ avoidRules:
   - muddy fabric noise
   - watermark
   - readable text
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-036.webp
 attributes:
-  negativePrompt: >-
-    clean, shiny, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body
-    type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
+  negativePrompt: brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, horned helmets, clean, shiny, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

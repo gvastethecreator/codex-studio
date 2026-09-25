@@ -3,7 +3,7 @@ id: SP08-034
 packId: pack_08
 name: Roman Ceremonial Regalia
 category: 3. Historical & Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,67 +12,24 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: >-
-    Roman Ceremonial Regalia operates as a portable fashion-costume router: combine Roman ceremonial
-    regalia, martial pageantry, bronze-and-oxblood material gravity with period and mythic costume
-    logic with era silhouette, regalia structure, textile craft, and ceremonial proportion, so the
-    preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal
-    garment sample.
-  subject_treatment: >-
-    Preserve the prompt's subject, motion, and context while forms robe, armor, pleat, lace, cinch,
-    plate, embroider, crown, wrap, or ceremonialize through Armor articulation, segmentata-plate
-    rhythm, balteus cinch logic, greave taper, pteruges fringe cadence; identity stays readable as
-    silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into
-    this preset.
-  color_and_tone: >-
-    Map color through period pigments, jewel tones, mourning blacks, metallic trim, linen or wool
-    neutrals, royal accents, and age-aware dye; keep textile values separated, accents intentional,
-    material color believable, and palette behavior attached to the subject instead of pasted
-    wardrobe decoration.
-  lighting_and_shadow: >-
-    Use Harsh sun, dust-haze contrast, torch-smoke shadows, bronze edge light plus museum, candle,
-    daylight, ceremonial, or portrait light that reveals textile depth and silhouette hierarchy as
-    the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor
-    structure without erasing prompt readability.
-  texture_and_material: >-
-    Render Bronze plate, oiled leather straps, iron chainmail, sand-grit patina, linen pteruges plus
-    brocade, linen, wool, silk, leather, metal, beadwork, lace, fur, embroidery, trim, and
-    handworked surface detail; keep fabric scale, seams, fibers, shine, opacity, folds, hardware,
-    elemental edges, or body-surface treatment coherent across the whole prompt.
-  camera_and_composition: >-
-    Compose with Compose for Roman Ceremonial Regalia using its key spatial cues: Crest cues, curved
-    shield geometry, armored manica, pteruges rhythm, bronze articulation plus regal posture logic,
-    era silhouette, layered garment structure, ornament placement, and readable period identity as
-    reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action,
-    and abstract prompts to inherit styling without one required pose.
-  atmosphere_and_mood: >-
-    Carry mood through ceremony, history, myth, rank, mourning, travel, revolution, courtly
-    pressure, or folk memory; the tone should feel specific to Roman Ceremonial Regalia while still
-    obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
-  rendering_and_quality: >-
-    Finish with period-aware costume clarity, tactile textile truth, ornament discipline, and no
-    cheap renaissance-fair shortcut; prioritize clean style recognition, believable material
-    physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.
-  key_features: >-
-    Roman ceremonial regalia, martial pageantry, bronze-and-oxblood material gravity; Armor
-    articulation, segmentata-plate rhythm, balteus cinch logic, greave taper, pteruges fringe
-    cadence; Bronze plate, oiled leather straps, iron chainmail, sand-grit patina, linen pteruges;
-    Harsh sun, dust-haze contrast, torch-smoke shadows, bronze edge light; Compose for Roman
-    Ceremonial Regalia using its key spatial cues: Crest cues, curved shield geometry, armored
-    manica, pteruges rhythm, bronze articulation
-  creative_brief: >-
-    Use Roman Ceremonial Regalia after prompt X as a transferable fashion/costume layer: prompt X
-    supplies subject, motion, setting, tone, and intensity, while the preset supplies Roman
-    ceremonial regalia, martial pageantry, bronze-and-oxblood material gravity, Armor articulation,
-    segmentata-plate rhythm, balteus cinch logic, greave taper, pteruges fringe cadence, Bronze
-    plate, oiled leather straps, iron chainmail, sand-grit patina, linen pteruges, Harsh sun,
-    dust-haze contrast, torch-smoke shadows, bronze edge light, Compose for Roman Ceremonial Regalia
-    using its key spatial cues: Crest cues, curved shield geometry, armored manica, pteruges rhythm,
-    bronze articulation plus corsetry, armor plates, robes, sashes, pleats, trim, brocade, regalia
-    layers, fastenings, and historically legible cut, palette behavior, light response, material
-    treatment, silhouette grammar, and finish discipline without requiring one body type, fixed
-    outfit, venue, prop bundle, or card composition.
+  aesthetic: 'Roman ceremonial regalia: draped togas with colored borders, stolas and pallas, laurel wreaths, fibulae and military cuirasses with red cloaks.'
+  subject_treatment: 'Redress the prompt''s wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the Roman ceremonial garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — draped wool toga or stola with palla, purple or red border stripes, bronze fibula, laurel wreath, or a muscled cuirass with a red paludamentum cloak.'
+  color_and_tone: Undyed wool white, imperial purple, crimson and bronze, applied to garments and accessories while skin, setting and props keep their natural color.
+  lighting_and_shadow: Bright Mediterranean daylight with marble bounce, shaped to reveal garment cut, drape, texture and fit on the wearer.
+  texture_and_material: Heavy wool drapery, bronze, leather straps and gilded laurel.
+  camera_and_composition: Statuesque full figure with drapery clearly readable, keeping the full outfit silhouette and fit readable at card size.
+  atmosphere_and_mood: Imperial, dignified, commanding and austere, carried by the wearer's posture, styling and attitude.
+  rendering_and_quality: Crisp, classical finish, with believable fabric weight, seams and fit detail.
+  key_features: draped toga or stola; purple border; laurel wreath; bronze fibula; statuesque drapery
+  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Roman Ceremonial Regalia as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
 avoidRules:
+  - brand logo
+  - readable label text
+  - real designer or celebrity likeness
+  - generic catalog outfit
+  - bad garment fit
+  - costume-shop synthetic fabric
+  - mixed-up period details
   - clean
   - suit
   - cheap costume rental
@@ -85,12 +42,17 @@ avoidRules:
   - muddy fabric noise
   - watermark
   - readable text
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-034.webp
 attributes:
-  negativePrompt: >-
-    clean, suit, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body
-    type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
+  negativePrompt: brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, clean, suit, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

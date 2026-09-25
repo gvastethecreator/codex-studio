@@ -8,28 +8,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ancient Egyptian',
     category: '3. Historical & Fantasy',
     negativePrompt:
-      'contemporary tailoring dominance, generic modern streetwear, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, contemporary tailoring dominance, generic modern streetwear, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Ancient Egyptian operates as a portable fashion-costume router: combine Ancient Egyptian regalia, Nile-divinity splendor, carved-relief majesty with period and mythic costume logic with era silhouette, regalia structure, textile craft, and ceremonial proportion, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Ancient Egyptian regalia: pleated white linen, broad beaded collars, gold armbands, kohl-lined eyes and ceremonial wigs or headdresses.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms robe, armor, pleat, lace, cinch, plate, embroider, crown, wrap, or ceremonialize through Pleated linen, columnar drape, usekh-collar spread, nemes-headdress frame, sheath-silhouette; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through period pigments, jewel tones, mourning blacks, metallic trim, linen or wool neutrals, royal accents, and age-aware dye; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the ancient Egyptian garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — finely pleated white linen kalasiris or shendyt, broad beaded usekh collar, gold arm and wrist cuffs, kohl eyeliner and a braided wig or headdress.",
+      color_and_tone: 'White linen, gold, lapis blue, carnelian red and turquoise.',
       lighting_and_shadow:
-        'Use Desert-gold sun, relief-shadow contrast, torchlight flicker, lapis highlight plus museum, candle, daylight, ceremonial, or portrait light that reveals textile depth and silhouette hierarchy as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Strong desert sun with hard shadows, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material:
-        'Render Fine linen, gold leaf, faience beads, lapis lazuli inlay, hammered electrum, braided papyrus sandals plus brocade, linen, wool, silk, leather, metal, beadwork, lace, fur, embroidery, trim, and handworked surface detail; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Pleated linen, faience beads, hammered gold and lapis, rendered with correct weave, weight, sheen and stitching.',
       camera_and_composition:
-        'Compose with Compose for Ancient Egyptian using its key spatial cues: Usekh spread geometry, kohl-line cues, relief-line ornament, pleated linen rhythm, faience-lapis accents plus regal posture logic, era silhouette, layered garment structure, ornament placement, and readable period identity as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Frontal, hieratic full figure framing, keeping the full outfit silhouette and fit readable at card size.',
       atmosphere_and_mood:
-        "Carry mood through ceremony, history, myth, rank, mourning, travel, revolution, courtly pressure, or folk memory; the tone should feel specific to Ancient Egyptian while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Divine, ceremonial, poised and timeless, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with period-aware costume clarity, tactile textile truth, ornament discipline, and no cheap renaissance-fair shortcut; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Sharp, sunlit, high-detail finish, with believable fabric weight, seams and fit detail.',
       key_features:
-        'Ancient Egyptian regalia, Nile-divinity splendor, carved-relief majesty; Pleated linen, columnar drape, usekh-collar spread, nemes-headdress frame, sheath-silhouette; Fine linen, gold leaf, faience beads, lapis lazuli inlay, hammered electrum, braided papyrus sandals; Desert-gold sun, relief-shadow contrast, torchlight flicker, lapis highlight; Compose for Ancient Egyptian using its key spatial cues: Usekh spread geometry, kohl-line cues, relief-line ornament, pleated linen rhythm, faience-lapis accents',
+        'pleated white linen; broad beaded usekh collar; gold cuffs; kohl eyes; hieratic pose',
       creative_brief:
-        'Use Ancient Egyptian after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Ancient Egyptian regalia, Nile-divinity splendor, carved-relief majesty, Pleated linen, columnar drape, usekh-collar spread, nemes-headdress frame, sheath-silhouette, Fine linen, gold leaf, faience beads, lapis lazuli inlay, hammered electrum, braided papyrus sandals, Desert-gold sun, relief-shadow contrast, torchlight flicker, lapis highlight, Compose for Ancient Egyptian using its key spatial cues: Usekh spread geometry, kohl-line cues, relief-line ornament, pleated linen rhythm, faience-lapis accents plus corsetry, armor plates, robes, sashes, pleats, trim, brocade, regalia layers, fastenings, and historically legible cut, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ancient Egyptian as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +36,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Frontier Workwear',
     category: '3. Historical & Fantasy',
     negativePrompt:
-      'urban-system, clean, weapon draw, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, urban-system, clean, weapon draw, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Frontier Workwear operates as a portable fashion-costume router: combine Frontier workwear myth, dust-worn practicality and sun-baked material tension with period and mythic costume logic with era silhouette, regalia structure, textile craft, and ceremonial proportion, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Frontier workwear: nineteenth-century American frontier clothing — canvas trousers, suspenders, flannel shirts, calico dresses, dusters and worn boots.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms robe, armor, pleat, lace, cinch, plate, embroider, crown, wrap, or ceremonialize through Duster-length sweep, waistcoat taper, bandana-triangle geometry, boot-leather rhythm and strap-yoke structure; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through period pigments, jewel tones, mourning blacks, metallic trim, linen or wool neutrals, royal accents, and age-aware dye; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the 19th-century frontier garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — canvas or wool trousers with suspenders, collarless flannel shirt, vest, long duster or calico dress with bonnet, and worn leather boots and hat.",
+      color_and_tone: 'Dust brown, faded indigo, rust, bone and weathered black.',
       lighting_and_shadow:
-        'Use Dry sun glare, merciless warm light, amber practical warmth and campfire flicker plus museum, candle, daylight, ceremonial, or portrait light that reveals textile depth and silhouette hierarchy as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render Oilskin leather, trail dust, raw denim, wool serape, brass hardware and worn boot leather plus brocade, linen, wool, silk, leather, metal, beadwork, lace, fur, embroidery, trim, and handworked surface detail; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Harsh prairie sun or low dusty sunset, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material: 'Duck canvas, wool, calico, cracked leather and brass buttons.',
       camera_and_composition:
-        'Compose with Compose for Frontier Workwear using its key spatial cues: Brim geometry, bandana folds, duster sweep, brass hardware, boot-leather wear and yoke stitching plus regal posture logic, era silhouette, layered garment structure, ornament placement, and readable period identity as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Wide full figure in open land, keeping the full outfit silhouette and fit readable at card size.',
       atmosphere_and_mood:
-        "Carry mood through ceremony, history, myth, rank, mourning, travel, revolution, courtly pressure, or folk memory; the tone should feel specific to Frontier Workwear while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Weathered, stubborn, lonely and hardworking, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with period-aware costume clarity, tactile textile truth, ornament discipline, and no cheap renaissance-fair shortcut; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Dusty, film-like finish, with believable fabric weight, seams and fit detail.',
       key_features:
-        'Frontier workwear myth, dust-worn practicality and sun-baked material tension; Duster-length sweep, waistcoat taper, bandana-triangle geometry, boot-leather rhythm and strap-yoke structure; Oilskin leather, trail dust, raw denim, wool serape, brass hardware and worn boot leather; Dry sun glare, merciless warm light, amber practical warmth and campfire flicker; Compose for Frontier Workwear using its key spatial cues: Brim geometry, bandana folds, duster sweep, brass hardware, boot-leather wear and yoke stitching',
+        'canvas trousers and suspenders; long duster; calico and bonnet; worn leather boots; dusty light',
       creative_brief:
-        'Use Frontier Workwear after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Frontier workwear myth, dust-worn practicality and sun-baked material tension, Duster-length sweep, waistcoat taper, bandana-triangle geometry, boot-leather rhythm and strap-yoke structure, Oilskin leather, trail dust, raw denim, wool serape, brass hardware and worn boot leather, Dry sun glare, merciless warm light, amber practical warmth and campfire flicker, Compose for Frontier Workwear using its key spatial cues: Brim geometry, bandana folds, duster sweep, brass hardware, boot-leather wear and yoke stitching plus corsetry, armor plates, robes, sashes, pleats, trim, brocade, regalia layers, fastenings, and historically legible cut, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Frontier Workwear as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +63,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Samurai Armor',
     category: '3. Historical & Fantasy',
     negativePrompt:
-      'european armor, weapon prop, combat scene, named warrior role, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, european armor, weapon prop, combat scene, named warrior role, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Samurai Armor operates as a portable fashion-costume router: combine Ceremonial lacquer armor regalia with silk-laced discipline and red-black-gold craft pressure with period and mythic costume logic with era silhouette, regalia structure, textile craft, and ceremonial proportion, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Ceremonial samurai armor: lacquered lamellar plates laced with silk cords, flared shoulder guards, a crested kabuto helmet and a menpō face mask.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms robe, armor, pleat, lace, cinch, plate, embroider, crown, wrap, or ceremonialize through Laced plate rhythm, do-chest breadth, sode-shoulder square, haidate paneling and crest geometry; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through period pigments, jewel tones, mourning blacks, metallic trim, linen or wool neutrals, royal accents, and age-aware dye; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the Japanese ceremonial armor garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — lacquered lamellar ō-yoroi or dō-maru plates laced with colored silk, flared sode shoulder guards, crested kabuto and menpō mask, over hakama.",
+      color_and_tone: 'Black and vermilion lacquer, indigo or crimson lacing and gold crest.',
       lighting_and_shadow:
-        'Use Dramatic dawn-mist light, lacquer edge shine, indigo shadow and gold-leaf glint plus museum, candle, daylight, ceremonial, or portrait light that reveals textile depth and silhouette hierarchy as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render Lacquered iron, silk odoshi lacing, hammered gold leaf, braided silk cord and iron mask finish plus brocade, linen, wool, silk, leather, metal, beadwork, lace, fur, embroidery, trim, and handworked surface detail; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Soft overcast or low torchlight glinting on lacquer, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material: 'Lacquered plates, silk lacing, iron, leather and gilded crests.',
       camera_and_composition:
-        'Compose with Compose for Samurai Armor using its key spatial cues: Helmet-like crest geometry, lacquered plates, silk lacing, layered shoulder panels and vertical banner-like rhythm plus regal posture logic, era silhouette, layered garment structure, ornament placement, and readable period identity as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Imposing full figure or three-quarter framing, keeping the full outfit silhouette and fit readable at card size.',
       atmosphere_and_mood:
-        "Carry mood through ceremony, history, myth, rank, mourning, travel, revolution, courtly pressure, or folk memory; the tone should feel specific to Samurai Armor while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Stoic, fearsome, disciplined and ceremonial, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with period-aware costume clarity, tactile textile truth, ornament discipline, and no cheap renaissance-fair shortcut; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Rich, detailed lacquer finish, with believable fabric weight, seams and fit detail.',
       key_features:
-        'Ceremonial lacquer armor regalia with silk-laced discipline and red-black-gold craft pressure; Laced plate rhythm, do-chest breadth, sode-shoulder square, haidate paneling and crest geometry; Lacquered iron, silk odoshi lacing, hammered gold leaf, braided silk cord and iron mask finish; Dramatic dawn-mist light, lacquer edge shine, indigo shadow and gold-leaf glint; Compose for Samurai Armor using its key spatial cues: Helmet-like crest geometry, lacquered plates, silk lacing, layered shoulder panels and vertical banner-like rhythm',
+        'lacquered lamellar plates; silk lacing; crested kabuto; menpō mask; stoic presence',
       creative_brief:
-        'Use Samurai Armor after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Ceremonial lacquer armor regalia with silk-laced discipline and red-black-gold craft pressure, Laced plate rhythm, do-chest breadth, sode-shoulder square, haidate paneling and crest geometry, Lacquered iron, silk odoshi lacing, hammered gold leaf, braided silk cord and iron mask finish, Dramatic dawn-mist light, lacquer edge shine, indigo shadow and gold-leaf glint, Compose for Samurai Armor using its key spatial cues: Helmet-like crest geometry, lacquered plates, silk lacing, layered shoulder panels and vertical banner-like rhythm plus corsetry, armor plates, robes, sashes, pleats, trim, brocade, regalia layers, fastenings, and historically legible cut, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Samurai Armor as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +90,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Renaissance Royal',
     category: '3. Historical & Fantasy',
     negativePrompt:
-      'modern, simple, cheap, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, modern, simple, cheap, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Renaissance Royal operates as a portable fashion-costume router: combine 16th century court regalia, early-modern majesty, painted-court splendor with period and mythic costume logic with era silhouette, regalia structure, textile craft, and ceremonial proportion, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Sixteenth-century Renaissance court regalia: stiffened bodices, slashed and puffed sleeves, brocade, ruffs or square necklines and jeweled girdles.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms robe, armor, pleat, lace, cinch, plate, embroider, crown, wrap, or ceremonialize through Heavy layers, ruffs, farthingale cone, slashed sleeves, stiffened bodice architecture; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the 16th-century European court garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — stiff brocade bodice or doublet, slashed puffed sleeves showing contrasting lining, ruff or square neckline, jeweled girdle and hose or full skirts.",
       color_and_tone:
-        'Map color through period pigments, jewel tones, mourning blacks, metallic trim, linen or wool neutrals, royal accents, and age-aware dye; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Crimson, gold, deep green, ivory and black velvet, applied to garments and accessories while skin, setting and props keep their natural color.',
       lighting_and_shadow:
-        'Use Oil-painting light, chiaroscuro depth, stained-glass warmth, candlelit gold plus museum, candle, daylight, ceremonial, or portrait light that reveals textile depth and silhouette hierarchy as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render Cut velvet, silver brocade, seed pearls, cloth-of-gold tissue, mink trim, jeweled net caul plus brocade, linen, wool, silk, leather, metal, beadwork, lace, fur, embroidery, trim, and handworked surface detail; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Soft window light like a court portrait, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material: 'Silk brocade, velvet, lace ruffs, pearls and gold embroidery.',
       camera_and_composition:
-        'Compose with cloth-of-gold weight, ruff geometry, farthingale structure, slashed sleeves, seed pearls, jeweled bodice and imperial velvet plus regal posture logic, era silhouette, layered garment structure, ornament placement, and readable period identity as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Formal portrait framing, three-quarter or full figure, keeping the full outfit silhouette and fit readable at card size.',
       atmosphere_and_mood:
-        "Carry mood through ceremony, history, myth, rank, mourning, travel, revolution, courtly pressure, or folk memory; the tone should feel specific to Renaissance Royal while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Regal, rich, formal and self-assured, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with period-aware costume clarity, tactile textile truth, ornament discipline, and no cheap renaissance-fair shortcut; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Painterly-rich photographic finish, with believable fabric weight, seams and fit detail.',
       key_features:
-        '16th century court regalia, early-modern majesty, painted-court splendor; Heavy layers, ruffs, farthingale cone, slashed sleeves, stiffened bodice architecture; Cut velvet, silver brocade, seed pearls, cloth-of-gold tissue, mink trim, jeweled net caul; Oil-painting light, chiaroscuro depth, stained-glass warmth, candlelit gold; cloth-of-gold weight, ruff geometry, farthingale structure, slashed sleeves, seed pearls, jeweled bodice and imperial velvet',
+        'slashed puffed sleeves; stiff brocade bodice or doublet; ruff; jeweled girdle; court portrait light',
       creative_brief:
-        'Use Renaissance Royal after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies 16th century court regalia, early-modern majesty, painted-court splendor, Heavy layers, ruffs, farthingale cone, slashed sleeves, stiffened bodice architecture, Cut velvet, silver brocade, seed pearls, cloth-of-gold tissue, mink trim, jeweled net caul, Oil-painting light, chiaroscuro depth, stained-glass warmth, candlelit gold, cloth-of-gold weight, ruff geometry, farthingale structure, slashed sleeves, seed pearls, jeweled bodice and imperial velvet plus corsetry, armor plates, robes, sashes, pleats, trim, brocade, regalia layers, fastenings, and historically legible cut, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Renaissance Royal as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +118,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Victorian Mourning',
     category: '3. Historical & Fantasy',
     negativePrompt:
-      'color, happy, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, color, happy, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Victorian Mourning operates as a portable fashion-costume router: combine Victorian mourning regalia, grief ritual formality, gaslit-sorrow pageantry with period and mythic costume logic with era silhouette, regalia structure, textile craft, and ceremonial proportion, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Victorian mourning dress: head-to-toe black crape, high collars, bustles, veils and jet jewelry — grief made into strict ceremony.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms robe, armor, pleat, lace, cinch, plate, embroider, crown, wrap, or ceremonialize through Heavy layers, floor-length column, cape-volume drape, high-neck severity, long-sleeve enclosure; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through period pigments, jewel tones, mourning blacks, metallic trim, linen or wool neutrals, royal accents, and age-aware dye; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the Victorian mourning garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — high-collared black bodice, bustled skirt, long veil or crape bonnet, black gloves and faceted jet jewelry; men in black frock coats with armbands.",
+      color_and_tone: 'Matte and glossy blacks only, with jet and pale skin.',
       lighting_and_shadow:
-        'Use Gloomy overcast grey, candle-flicker dimness, rain-streaked softness plus museum, candle, daylight, ceremonial, or portrait light that reveals textile depth and silhouette hierarchy as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render Matte crepe, black veiling, jet beads, crape de chine, bombazine, lace-mitt texture plus brocade, linen, wool, silk, leather, metal, beadwork, lace, fur, embroidery, trim, and handworked surface detail; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Cold grey window light or candlelight, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material: 'Silk crape, bombazine, lace veils, jet beads and black kid leather.',
       camera_and_composition:
-        'Compose with Compose for Victorian Mourning using its key spatial cues: Black veil, jet brooch, mourning-cap cues, black-bordered textile accents plus regal posture logic, era silhouette, layered garment structure, ornament placement, and readable period identity as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Formal, still, full-figure framing, keeping the full outfit silhouette and fit readable at card size.',
       atmosphere_and_mood:
-        "Carry mood through ceremony, history, myth, rank, mourning, travel, revolution, courtly pressure, or folk memory; the tone should feel specific to Victorian Mourning while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Solemn, ritual, grief-stricken and severe, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with period-aware costume clarity, tactile textile truth, ornament discipline, and no cheap renaissance-fair shortcut; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Deep black, detailed, somber finish, with believable fabric weight, seams and fit detail.',
       key_features:
-        'Victorian mourning regalia, grief ritual formality, gaslit-sorrow pageantry; Heavy layers, floor-length column, cape-volume drape, high-neck severity, long-sleeve enclosure; Matte crepe, black veiling, jet beads, crape de chine, bombazine, lace-mitt texture; Gloomy overcast grey, candle-flicker dimness, rain-streaked softness; Compose for Victorian Mourning using its key spatial cues: Black veil, jet brooch, mourning-cap cues, black-bordered textile accents',
+        'high-collared black crape; bustle and veil; jet jewelry; matte blacks; still solemnity',
       creative_brief:
-        'Use Victorian Mourning after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Victorian mourning regalia, grief ritual formality, gaslit-sorrow pageantry, Heavy layers, floor-length column, cape-volume drape, high-neck severity, long-sleeve enclosure, Matte crepe, black veiling, jet beads, crape de chine, bombazine, lace-mitt texture, Gloomy overcast grey, candle-flicker dimness, rain-streaked softness, Compose for Victorian Mourning using its key spatial cues: Black veil, jet brooch, mourning-cap cues, black-bordered textile accents plus corsetry, armor plates, robes, sashes, pleats, trim, brocade, regalia layers, fastenings, and historically legible cut, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Victorian Mourning as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +145,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Vintage 1950s',
     category: '3. Historical & Fantasy',
     negativePrompt:
-      'modern, pants, messy, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, modern, pants, messy, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Vintage 1950s operates as a portable fashion-costume router: combine 1950s domestic-pop polish, technicolor nostalgia, cheerful mid-century presentation grammar with period and mythic costume logic with era silhouette, regalia structure, textile craft, and ceremonial proportion, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        '1950s domestic-pop fashion: fitted bodices, full circle skirts over petticoats, cardigans, pearls, gloves and neat set hair, or boxy suits with fedoras.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms robe, armor, pleat, lace, cinch, plate, embroider, crown, wrap, or ceremonialize through Cinched sweep, circle-volume arcs, petticoat lift, scalloped trim rhythm, tidy accent geometry; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the 1950s garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — fitted-waist dress with full skirt and petticoat, twinset cardigan and pearls, gloves and kitten heels, or a boxy suit with skinny tie and fedora.",
       color_and_tone:
-        'Map color through period pigments, jewel tones, mourning blacks, metallic trim, linen or wool neutrals, royal accents, and age-aware dye; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Technicolor pastels — mint, cherry, butter yellow, powder blue — with crisp white.',
       lighting_and_shadow:
-        'Use Bright Technicolor saturation, neon-cheer accents, sun-drenched retro warmth plus museum, candle, daylight, ceremonial, or portrait light that reveals textile depth and silhouette hierarchy as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Bright, even, cheerful light like a vintage advertisement, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material:
-        'Render Crisp cotton poplin, hairspray lacquer, taffeta rustle, crinoline scratch, satin ribbon trim plus brocade, linen, wool, silk, leather, metal, beadwork, lace, fur, embroidery, trim, and handworked surface detail; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Cotton poplin, taffeta petticoats, wool twinsets, pearls and patent leather.',
       camera_and_composition:
-        'Compose with Compose for Vintage 1950s using its key spatial cues: Cat-eye graphic cues, victory-roll rhythm, polka-dot punctuation, crinoline lift logic plus regal posture logic, era silhouette, layered garment structure, ornament placement, and readable period identity as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Posed full figure with the skirt silhouette visible, keeping the full outfit silhouette and fit readable at card size.',
       atmosphere_and_mood:
-        "Carry mood through ceremony, history, myth, rank, mourning, travel, revolution, courtly pressure, or folk memory; the tone should feel specific to Vintage 1950s while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Optimistic, polished, wholesome and slightly uncanny, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with period-aware costume clarity, tactile textile truth, ornament discipline, and no cheap renaissance-fair shortcut; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Saturated, glossy vintage print finish, with believable fabric weight, seams and fit detail.',
       key_features:
-        '1950s domestic-pop polish, technicolor nostalgia, cheerful mid-century presentation grammar; Cinched sweep, circle-volume arcs, petticoat lift, scalloped trim rhythm, tidy accent geometry; Crisp cotton poplin, hairspray lacquer, taffeta rustle, crinoline scratch, satin ribbon trim; Bright Technicolor saturation, neon-cheer accents, sun-drenched retro warmth; Compose for Vintage 1950s using its key spatial cues: Cat-eye graphic cues, victory-roll rhythm, polka-dot punctuation, crinoline lift logic',
+        'full circle skirt and petticoat; twinset and pearls; gloves; technicolor pastels; advertising polish',
       creative_brief:
-        'Use Vintage 1950s after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies 1950s domestic-pop polish, technicolor nostalgia, cheerful mid-century presentation grammar, Cinched sweep, circle-volume arcs, petticoat lift, scalloped trim rhythm, tidy accent geometry, Crisp cotton poplin, hairspray lacquer, taffeta rustle, crinoline scratch, satin ribbon trim, Bright Technicolor saturation, neon-cheer accents, sun-drenched retro warmth, Compose for Vintage 1950s using its key spatial cues: Cat-eye graphic cues, victory-roll rhythm, polka-dot punctuation, crinoline lift logic plus corsetry, armor plates, robes, sashes, pleats, trim, brocade, regalia layers, fastenings, and historically legible cut, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vintage 1950s as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,28 +174,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Roaring 20s (Flapper)',
     category: '3. Historical & Fantasy',
     negativePrompt:
-      'long dress, modern, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, long dress, modern, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Roaring 20s (Flapper) operates as a portable fashion-costume router: combine Jazz-age eveningwear, speakeasy decadence, Art Deco nocturne splendor with period and mythic costume logic with era silhouette, regalia structure, textile craft, and ceremonial proportion, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        '1920s flapper eveningwear: dropped-waist beaded dresses, fringe, long pearls, cloche or headband and T-strap heels; men in slick tuxedos.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms robe, armor, pleat, lace, cinch, plate, embroider, crown, wrap, or ceremonialize through Straight silhouette, dropped-waist column, scalloped hem, fringe-cascade movement, T-strap elongation; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the 1920s jazz-age garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — dropped-waist beaded or fringed shift, long pearl ropes, feathered headband or cloche, T-strap heels, or a slim tuxedo with slicked hair.",
       color_and_tone:
-        'Map color through period pigments, jewel tones, mourning blacks, metallic trim, linen or wool neutrals, royal accents, and age-aware dye; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Champagne gold, black, silver and deep emerald, applied to garments and accessories while skin, setting and props keep their natural color.',
       lighting_and_shadow:
-        'Use Chandelier sparkle, feathered edge glow, champagne-bubble ambience, soft smoky gleam plus museum, candle, daylight, ceremonial, or portrait light that reveals textile depth and silhouette hierarchy as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Warm speakeasy lamplight with sparkle, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material:
-        'Render Beaded fringe, sequined net, silk charmeuse, ostrich-feather trim, Art Deco crystal, velvet ribbon plus brocade, linen, wool, silk, leather, metal, beadwork, lace, fur, embroidery, trim, and handworked surface detail; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
-      camera_and_composition:
-        'Compose with Compose for Roaring 20s (Flapper) using its key spatial cues: Cloche cues, feather headband logic, T-strap elongation, bead-fringe rhythm, Deco crystal accents plus regal posture logic, era silhouette, layered garment structure, ornament placement, and readable period identity as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Glass beading, silk fringe, feathers, pearls and satin, rendered with correct weave, weight, sheen and stitching.',
+      camera_and_composition: 'Dancing or leaning full figure with motion in the fringe.',
       atmosphere_and_mood:
-        "Carry mood through ceremony, history, myth, rank, mourning, travel, revolution, courtly pressure, or folk memory; the tone should feel specific to Roaring 20s (Flapper) while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Decadent, rebellious, glittering and jazzy, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with period-aware costume clarity, tactile textile truth, ornament discipline, and no cheap renaissance-fair shortcut; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Warm, sparkling vintage finish, with believable fabric weight, seams and fit detail.',
       key_features:
-        'Jazz-age eveningwear, speakeasy decadence, Art Deco nocturne splendor; Straight silhouette, dropped-waist column, scalloped hem, fringe-cascade movement, T-strap elongation; Beaded fringe, sequined net, silk charmeuse, ostrich-feather trim, Art Deco crystal, velvet ribbon; Chandelier sparkle, feathered edge glow, champagne-bubble ambience, soft smoky gleam; Compose for Roaring 20s (Flapper) using its key spatial cues: Cloche cues, feather headband logic, T-strap elongation, bead-fringe rhythm, Deco crystal accents',
+        'dropped-waist beaded shift; swinging fringe; long pearls; feathered headband; speakeasy glow',
       creative_brief:
-        'Use Roaring 20s (Flapper) after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Jazz-age eveningwear, speakeasy decadence, Art Deco nocturne splendor, Straight silhouette, dropped-waist column, scalloped hem, fringe-cascade movement, T-strap elongation, Beaded fringe, sequined net, silk charmeuse, ostrich-feather trim, Art Deco crystal, velvet ribbon, Chandelier sparkle, feathered edge glow, champagne-bubble ambience, soft smoky gleam, Compose for Roaring 20s (Flapper) using its key spatial cues: Cloche cues, feather headband logic, T-strap elongation, bead-fringe rhythm, Deco crystal accents plus corsetry, armor plates, robes, sashes, pleats, trim, brocade, regalia layers, fastenings, and historically legible cut, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Roaring 20s (Flapper) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -211,28 +202,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Roman Ceremonial Regalia',
     category: '3. Historical & Fantasy',
     negativePrompt:
-      'clean, suit, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, clean, suit, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Roman Ceremonial Regalia operates as a portable fashion-costume router: combine Roman ceremonial regalia, martial pageantry, bronze-and-oxblood material gravity with period and mythic costume logic with era silhouette, regalia structure, textile craft, and ceremonial proportion, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Roman ceremonial regalia: draped togas with colored borders, stolas and pallas, laurel wreaths, fibulae and military cuirasses with red cloaks.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms robe, armor, pleat, lace, cinch, plate, embroider, crown, wrap, or ceremonialize through Armor articulation, segmentata-plate rhythm, balteus cinch logic, greave taper, pteruges fringe cadence; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the Roman ceremonial garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — draped wool toga or stola with palla, purple or red border stripes, bronze fibula, laurel wreath, or a muscled cuirass with a red paludamentum cloak.",
       color_and_tone:
-        'Map color through period pigments, jewel tones, mourning blacks, metallic trim, linen or wool neutrals, royal accents, and age-aware dye; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Undyed wool white, imperial purple, crimson and bronze, applied to garments and accessories while skin, setting and props keep their natural color.',
       lighting_and_shadow:
-        'Use Harsh sun, dust-haze contrast, torch-smoke shadows, bronze edge light plus museum, candle, daylight, ceremonial, or portrait light that reveals textile depth and silhouette hierarchy as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render Bronze plate, oiled leather straps, iron chainmail, sand-grit patina, linen pteruges plus brocade, linen, wool, silk, leather, metal, beadwork, lace, fur, embroidery, trim, and handworked surface detail; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Bright Mediterranean daylight with marble bounce, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material: 'Heavy wool drapery, bronze, leather straps and gilded laurel.',
       camera_and_composition:
-        'Compose with Compose for Roman Ceremonial Regalia using its key spatial cues: Crest cues, curved shield geometry, armored manica, pteruges rhythm, bronze articulation plus regal posture logic, era silhouette, layered garment structure, ornament placement, and readable period identity as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Statuesque full figure with drapery clearly readable, keeping the full outfit silhouette and fit readable at card size.',
       atmosphere_and_mood:
-        "Carry mood through ceremony, history, myth, rank, mourning, travel, revolution, courtly pressure, or folk memory; the tone should feel specific to Roman Ceremonial Regalia while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Imperial, dignified, commanding and austere, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with period-aware costume clarity, tactile textile truth, ornament discipline, and no cheap renaissance-fair shortcut; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Crisp, classical finish, with believable fabric weight, seams and fit detail.',
       key_features:
-        'Roman ceremonial regalia, martial pageantry, bronze-and-oxblood material gravity; Armor articulation, segmentata-plate rhythm, balteus cinch logic, greave taper, pteruges fringe cadence; Bronze plate, oiled leather straps, iron chainmail, sand-grit patina, linen pteruges; Harsh sun, dust-haze contrast, torch-smoke shadows, bronze edge light; Compose for Roman Ceremonial Regalia using its key spatial cues: Crest cues, curved shield geometry, armored manica, pteruges rhythm, bronze articulation',
+        'draped toga or stola; purple border; laurel wreath; bronze fibula; statuesque drapery',
       creative_brief:
-        'Use Roman Ceremonial Regalia after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Roman ceremonial regalia, martial pageantry, bronze-and-oxblood material gravity, Armor articulation, segmentata-plate rhythm, balteus cinch logic, greave taper, pteruges fringe cadence, Bronze plate, oiled leather straps, iron chainmail, sand-grit patina, linen pteruges, Harsh sun, dust-haze contrast, torch-smoke shadows, bronze edge light, Compose for Roman Ceremonial Regalia using its key spatial cues: Crest cues, curved shield geometry, armored manica, pteruges rhythm, bronze articulation plus corsetry, armor plates, robes, sashes, pleats, trim, brocade, regalia layers, fastenings, and historically legible cut, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Roman Ceremonial Regalia as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -240,28 +230,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Disco (70s)',
     category: '3. Historical & Fantasy',
     negativePrompt:
-      'boring, matte, named venue, named band, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, boring, matte, named venue, named band, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Disco (70s) operates as a portable fashion-costume router: combine 70s disco styling, mirror-ball swagger, polyester-dream confidence with period and mythic costume logic with era silhouette, regalia structure, textile craft, and ceremonial proportion, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        '1970s disco fashion: slinky jersey wrap dresses, halter jumpsuits, sequined tops, wide-lapel shirts and flared trousers made to catch the mirror ball.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms robe, armor, pleat, lace, cinch, plate, embroider, crown, wrap, or ceremonialize through Flared pants, wide-lapel opening, high-waist flare, pointed-collar drama, platform-sole elevation; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through period pigments, jewel tones, mourning blacks, metallic trim, linen or wool neutrals, royal accents, and age-aware dye; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the 1970s disco garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — halter jumpsuit or jersey wrap dress, sequined or lamé top, wide-lapel open shirt, high-waisted flares and platform shoes, big hair.",
+      color_and_tone: 'Metallic gold, silver, hot pink, electric blue and white.',
       lighting_and_shadow:
-        'Use Mirror-ball fragments, colored-light squares, tri-light beams, fog-machine haze plus museum, candle, daylight, ceremonial, or portrait light that reveals textile depth and silhouette hierarchy as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Mirror-ball sparkle, colored spotlights and haze, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material:
-        'Render Polyester crepe, liquid satin, gold lame, Qiana nylon, crushed velvet, patent leather plus brocade, linen, wool, silk, leather, metal, beadwork, lace, fur, embroidery, trim, and handworked surface detail; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Lamé, sequins, silk jersey, satin and patent platforms, rendered with correct weave, weight, sheen and stitching.',
       camera_and_composition:
-        'Compose with Compose for Disco (70s) using its key spatial cues: Bell-bottom flare, wide-collar geometry, gold medallion glints, platform-sole elevation and mirror-ball sparkle plus regal posture logic, era silhouette, layered garment structure, ornament placement, and readable period identity as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Dancing full figure with dynamic pose, keeping the full outfit silhouette and fit readable at card size.',
       atmosphere_and_mood:
-        "Carry mood through ceremony, history, myth, rank, mourning, travel, revolution, courtly pressure, or folk memory; the tone should feel specific to Disco (70s) while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Glamorous, euphoric, sensual and flashy, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with period-aware costume clarity, tactile textile truth, ornament discipline, and no cheap renaissance-fair shortcut; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Glossy, sparkling finish, with believable fabric weight, seams and fit detail.',
       key_features:
-        '70s disco styling, mirror-ball swagger, polyester-dream confidence; Flared pants, wide-lapel opening, high-waist flare, pointed-collar drama, platform-sole elevation; Polyester crepe, liquid satin, gold lame, Qiana nylon, crushed velvet, patent leather; Mirror-ball fragments, colored-light squares, tri-light beams, fog-machine haze; Compose for Disco (70s) using its key spatial cues: Bell-bottom flare, wide-collar geometry, gold medallion glints, platform-sole elevation and mirror-ball sparkle',
+        'halter jumpsuit and flares; sequins and lamé; wide lapels; platforms; mirror-ball sparkle',
       creative_brief:
-        'Use Disco (70s) after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies 70s disco styling, mirror-ball swagger, polyester-dream confidence, Flared pants, wide-lapel opening, high-waist flare, pointed-collar drama, platform-sole elevation, Polyester crepe, liquid satin, gold lame, Qiana nylon, crushed velvet, patent leather, Mirror-ball fragments, colored-light squares, tri-light beams, fog-machine haze, Compose for Disco (70s) using its key spatial cues: Bell-bottom flare, wide-collar geometry, gold medallion glints, platform-sole elevation and mirror-ball sparkle plus corsetry, armor plates, robes, sashes, pleats, trim, brocade, regalia layers, fastenings, and historically legible cut, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Disco (70s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -269,28 +258,339 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'French Revolution',
     category: '3. Historical & Fantasy',
     negativePrompt:
-      'contemporary casualwear dominance, generic modern streetwear, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, contemporary casualwear dominance, generic modern streetwear, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'French Revolution operates as a portable fashion-costume router: combine Rococo court excess, powdered aristocratic texture, pre-revolution glamour with period and mythic costume logic with era silhouette, regalia structure, textile craft, and ceremonial proportion, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Late eighteenth-century French court: rococo excess and revolutionary change — panniered silk gowns, powdered wigs, embroidered coats, or tricolor sashes and simple sans-culottes.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms robe, armor, pleat, lace, cinch, plate, embroider, crown, wrap, or ceremonialize through Wide hips (panniers), robe-a-la-francaise volume, stomacher-center line, engageantes-sleeve froth, train-sweep; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the late 18th-century French garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — panniered silk robe à la française with lace engageantes and powdered pouf, embroidered justaucorps coat and breeches, or revolutionary striped trousers, carmagnole jacket and cockade.",
       color_and_tone:
-        'Map color through period pigments, jewel tones, mourning blacks, metallic trim, linen or wool neutrals, royal accents, and age-aware dye; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        'Pastel silks, powder white, gold embroidery, or tricolor blue, white and red.',
       lighting_and_shadow:
-        'Use Chandelier sparkle, gilded reflection warmth, candlelit shimmer, mirrored bounce plus museum, candle, daylight, ceremonial, or portrait light that reveals textile depth and silhouette hierarchy as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
-      texture_and_material:
-        'Render Silk taffeta, lace engageantes, powdered texture cues, ostrich plume accents, ribbon garlands, paste-jewel ornament plus brocade, linen, wool, silk, leather, metal, beadwork, lace, fur, embroidery, trim, and handworked surface detail; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Soft candlelight or chandelier glow, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material: 'Silk taffeta, embroidery, lace, powdered hair and brass buttons.',
       camera_and_composition:
-        'Compose with Pannier volume and court-pageant silhouette exaggeration plus regal posture logic, era silhouette, layered garment structure, ornament placement, and readable period identity as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
-      atmosphere_and_mood:
-        "Carry mood through ceremony, history, myth, rank, mourning, travel, revolution, courtly pressure, or folk memory; the tone should feel specific to French Revolution while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        'Full figure with the silhouette of panniers or coat clearly visible.',
+      atmosphere_and_mood: 'Decadent, fragile, dramatic and on the edge of upheaval.',
       rendering_and_quality:
-        'Finish with period-aware costume clarity, tactile textile truth, ornament discipline, and no cheap renaissance-fair shortcut; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Rich, detailed, painterly photographic finish, with believable fabric weight, seams and fit detail.',
       key_features:
-        'Rococo court excess, powdered aristocratic texture, pre-revolution glamour; Wide hips (panniers), robe-a-la-francaise volume, stomacher-center line, engageantes-sleeve froth, train-sweep; Silk taffeta, lace engageantes, powdered texture cues, ostrich plume accents, ribbon garlands, paste-jewel ornament; Chandelier sparkle, gilded reflection warmth, candlelit shimmer, mirrored bounce; Pannier volume and court-pageant silhouette exaggeration',
+        'panniered silk gown; powdered pouf; embroidered coat and breeches; lace engageantes; chandelier glow',
       creative_brief:
-        'Use French Revolution after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Rococo court excess, powdered aristocratic texture, pre-revolution glamour, Wide hips (panniers), robe-a-la-francaise volume, stomacher-center line, engageantes-sleeve froth, train-sweep, Silk taffeta, lace engageantes, powdered texture cues, ostrich plume accents, ribbon garlands, paste-jewel ornament, Chandelier sparkle, gilded reflection warmth, candlelit shimmer, mirrored bounce, Pannier volume and court-pageant silhouette exaggeration plus corsetry, armor plates, robes, sashes, pleats, trim, brocade, regalia layers, fastenings, and historically legible cut, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies French Revolution as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP08-097',
+    name: 'Byzantine Court',
+    displayName: 'Byzantine Court',
+    styleAnchors: ['Byzantine Court', 'Byzantine imperial dress', 'jeweled loros sash'],
+    category: '3. Historical & Fantasy',
+    domain: 'Byzantine imperial dress',
+    negativePrompt:
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Byzantine court dress: stiff, jewel-encrusted silk dalmatics and loros sashes, pearl pendilia crowns and gold-embroidered cloaks.',
+      subject_treatment:
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the Byzantine imperial garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — long silk dalmatic, jeweled loros sash wrapped over the body, chlamys cloak with a gold tablion panel, and a crown with hanging pearl pendilia.",
+      color_and_tone:
+        'Imperial purple, gold, deep red, emerald and pearl, applied to garments and accessories while skin, setting and props keep their natural color.',
+      lighting_and_shadow:
+        'Warm mosaic-gold glow with soft shadows, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material: 'Heavy silk samite, gold thread, pearls, cabochon gems and enamel.',
+      camera_and_composition:
+        'Frontal, iconic full figure, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Sacred, imperial, rigid and resplendent, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Rich, glowing, detailed finish, with believable fabric weight, seams and fit detail.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Byzantine Court as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'jeweled loros sash; silk dalmatic; pearl pendilia crown; gold tablion; frontal icon pose',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP08-098',
+    name: 'Heian Court Layers',
+    displayName: 'Heian Court Layers',
+    styleAnchors: ['Heian Court Layers', 'Heian court layered robes', 'many layered silk robes'],
+    category: '3. Historical & Fantasy',
+    domain: 'Heian court layered robes',
+    negativePrompt:
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Heian court dress: many layered unlined silk robes whose sleeve edges show graded seasonal color combinations, with very long loose hair.',
+      subject_treatment:
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the Heian Japanese court garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — a jūnihitoe of many layered silk robes with visible graded color edges at sleeves and collar, a trailing mo, a hiōgi fan and floor-length loose hair; men in sokutai with tall kanmuri.",
+      color_and_tone:
+        'Seasonal color gradations such as plum-blossom pinks, autumn maple reds or iris purples and greens.',
+      lighting_and_shadow:
+        'Soft, diffused screen-filtered light, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material: 'Figured silk, gauze, lacquered fan and long straight hair.',
+      camera_and_composition:
+        'Seated or kneeling figure with layers spread around, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Refined, poetic, contemplative and aristocratic, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Delicate, soft, luminous finish, with believable fabric weight, seams and fit detail.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Heian Court Layers as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'many layered silk robes; graded color edges; floor-length loose hair; hiōgi fan; kneeling spread',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP08-099',
+    name: 'Regency Empire Line',
+    displayName: 'Regency Empire Line',
+    styleAnchors: ['Regency Empire Line', 'Regency era dress', 'empire-waist muslin gown'],
+    category: '3. Historical & Fantasy',
+    domain: 'Regency era dress',
+    negativePrompt:
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Regency dress: high-waisted empire-line muslin gowns, spencer jackets, bonnets and long gloves; men in tailcoats, cravats, waistcoats and tall boots.',
+      subject_treatment:
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the Regency garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — high-waisted white or pastel muslin gown with short puffed sleeves, spencer jacket, bonnet and long gloves, or a tailcoat, high-collared shirt with cravat, waistcoat and Hessian boots.",
+      color_and_tone: 'White muslin, pale pastels, bottle green and navy wool.',
+      lighting_and_shadow:
+        'Soft English daylight through tall windows, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material: 'Sheer muslin, wool broadcloth, silk ribbon and polished leather.',
+      camera_and_composition:
+        'Graceful full-figure framing, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Genteel, romantic, restrained and witty, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Soft, fresh, detailed finish, with believable fabric weight, seams and fit detail.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Regency Empire Line as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'empire-waist muslin gown; spencer and bonnet; tailcoat and cravat; Hessian boots; soft window light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP08-100',
+    name: 'Ottoman Court Kaftan',
+    displayName: 'Ottoman Court Kaftan',
+    styleAnchors: ['Ottoman Court Kaftan', 'Ottoman court dress', 'layered patterned kaftans'],
+    category: '3. Historical & Fantasy',
+    domain: 'Ottoman court dress',
+    negativePrompt:
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ottoman court dress: layered silk and velvet kaftans with large tulip, carnation and çintemani patterns, sashes, and tall headdresses or turbans.',
+      subject_treatment:
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the 16th–17th-century Ottoman court garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — layered long kaftans of patterned silk or velvet with long hanging sleeves, a wide sash, şalvar trousers, and a turban or tall headdress.",
+      color_and_tone:
+        'Crimson, gold, turquoise, deep green and ivory, applied to garments and accessories while skin, setting and props keep their natural color.',
+      lighting_and_shadow:
+        'Warm lamplight or bright courtyard light, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material:
+        'Silk lampas, velvet, gold brocade and embroidered çintemani and tulip motifs.',
+      camera_and_composition:
+        'Stately full figure showing the layered kaftans, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Majestic, ornate, dignified and worldly, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Rich, patterned, detailed finish, with believable fabric weight, seams and fit detail.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ottoman Court Kaftan as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'layered patterned kaftans; tulip and çintemani motifs; hanging sleeves; wide sash; turban',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP08-101',
+    name: 'Medieval Peasant Workwear',
+    displayName: 'Medieval Peasant Workwear',
+    styleAnchors: [
+      'Medieval Peasant Workwear',
+      'medieval working dress',
+      'homespun wool tunic or kirtle',
+    ],
+    category: '3. Historical & Fantasy',
+    domain: 'medieval working dress',
+    negativePrompt:
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Medieval working dress: homespun wool tunics and kirtles, linen coifs and hoods, belted aprons, patched hose and turnshoes — clothes made to last.',
+      subject_treatment:
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the medieval European working garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — undyed or plant-dyed wool tunic or kirtle, linen coif or hood with liripipe, belted apron, patched hose and simple leather turnshoes.",
+      color_and_tone: 'Undyed wool, madder rust, weld yellow, woad blue and earth brown.',
+      lighting_and_shadow:
+        'Soft overcast or smoky hearth light, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material: 'Coarse wool, linen, patched seams, leather and wooden toggles.',
+      camera_and_composition:
+        'Honest working full figure, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Humble, hardworking, earthy and resilient, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Textured, natural finish, with believable fabric weight, seams and fit detail.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Medieval Peasant Workwear as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'homespun wool tunic or kirtle; linen coif; hood with liripipe; patched hose; plant-dyed palette',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP08-102',
+    name: '1940s Wartime Utility',
+    displayName: '1940s Wartime Utility',
+    styleAnchors: [
+      '1940s Wartime Utility',
+      '1940s utility clothing',
+      'padded-shoulder utility suit',
+    ],
+    category: '3. Historical & Fantasy',
+    domain: '1940s utility clothing',
+    negativePrompt:
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, military insignia, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        '1940s wartime utility clothing: austere tailored suits with padded shoulders, knee-length A-line skirts, headscarves, overalls, and make-do-and-mend details.',
+      subject_treatment:
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the 1940s wartime garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — padded-shoulder utility suit or shirtwaist dress, knee-length skirt, headscarf or victory rolls, practical shoes, or work overalls and a knitted pullover.",
+      color_and_tone: 'Muted khaki, navy, brick red, bottle green and cream.',
+      lighting_and_shadow:
+        'Hard, clean daylight or factory light, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material:
+        'Wool gabardine, rayon, cotton drill and hand-knitted wool, rendered with correct weave, weight, sheen and stitching.',
+      camera_and_composition:
+        'Determined full figure, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Resolute, practical, thrifty and brave, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Crisp, slightly faded vintage finish, with believable fabric weight, seams and fit detail.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 1940s Wartime Utility as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'padded-shoulder utility suit; headscarf and victory rolls; work overalls; make-do-and-mend; muted palette',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP08-103',
+    name: 'Belle Époque',
+    displayName: 'Belle Époque',
+    styleAnchors: ['Belle Époque', 'Belle Époque fashion', 'S-bend silhouette'],
+    category: '3. Historical & Fantasy',
+    domain: 'Belle Époque fashion',
+    negativePrompt:
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Belle Époque fashion: S-bend corseted silhouettes, lace high collars, trumpet skirts, enormous plumed hats and parasols; men in frock coats and top hats.',
+      subject_treatment:
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the c. 1900 Belle Époque garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — S-bend lace blouse and trumpet skirt or tea gown, huge feathered hat, parasol and gloves, or a frock coat, waistcoat and top hat with cane.",
+      color_and_tone:
+        'Ivory lace, dove grey, lavender, champagne and black, applied to garments and accessories while skin, setting and props keep their natural color.',
+      lighting_and_shadow:
+        'Soft, hazy summer daylight, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material: 'Lace, silk chiffon, ostrich plumes, tulle and kid leather.',
+      camera_and_composition:
+        'Elegant full figure with the S-bend silhouette visible, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Elegant, leisurely, romantic and refined, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Soft, luminous, vintage finish, with believable fabric weight, seams and fit detail.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Belle Époque as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'S-bend silhouette; lace high collar; enormous plumed hat; parasol; hazy summer light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP08-104',
+    name: 'Tang Dynasty Hanfu',
+    displayName: 'Tang Dynasty Hanfu',
+    styleAnchors: ['Tang Dynasty Hanfu', 'Tang dynasty dress', 'high-waisted ruqun skirt'],
+    category: '3. Historical & Fantasy',
+    domain: 'Tang dynasty dress',
+    negativePrompt:
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Tang dynasty dress: high-waisted flowing skirts tied above the chest, short jackets with wide sleeves, long pibo shawls and elaborate high hairstyles with ornaments.',
+      subject_treatment:
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the Tang Chinese garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — high-waisted ruqun skirt tied above the chest, short wide-sleeved top, long gauze pibo shawl, and a high chignon with gold hairpins; men in round-collar robes and futou caps.",
+      color_and_tone:
+        'Pomegranate red, peony pink, emerald, gold and apricot, applied to garments and accessories while skin, setting and props keep their natural color.',
+      lighting_and_shadow:
+        'Warm, glowing court light, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material: 'Silk gauze, damask, gold hairpins and painted flower motifs.',
+      camera_and_composition:
+        'Flowing full figure with shawl in motion, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Opulent, graceful, lively and cosmopolitan, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Luminous, colorful finish, with believable fabric weight, seams and fit detail.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tang Dynasty Hanfu as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'high-waisted ruqun skirt; long gauze pibo shawl; wide sleeves; high chignon with gold pins; opulent color',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP08-105',
+    name: 'Mughal Court Jama',
+    displayName: 'Mughal Court Jama',
+    styleAnchors: ['Mughal Court Jama', 'Mughal court dress', 'flared jama'],
+    category: '3. Historical & Fantasy',
+    domain: 'Mughal court dress',
+    negativePrompt:
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Mughal court dress: flared jama robes tied at the side, patka sashes, fitted pyjamas, jeweled turbans and fine muslin veils with gold borders.',
+      subject_treatment:
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the Mughal court garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — flared knee-length jama tied at the side, embroidered patka sash, fitted churidar trousers, jeweled turban with sarpech and pearls, or peshwaz and fine muslin odhni.",
+      color_and_tone:
+        'Saffron, pale muslin white, emerald, gold and ruby, applied to garments and accessories while skin, setting and props keep their natural color.',
+      lighting_and_shadow:
+        'Soft, golden palace light through jali screens, shaped to reveal garment cut, drape, texture and fit on the wearer.',
+      texture_and_material: 'Fine muslin, zari gold thread, pearls, emeralds and embroidered silk.',
+      camera_and_composition:
+        'Elegant three-quarter or full figure, keeping the full outfit silhouette and fit readable at card size.',
+      atmosphere_and_mood:
+        "Refined, regal, poetic and sumptuous, carried by the wearer's posture, styling and attitude.",
+      rendering_and_quality:
+        'Luminous, finely detailed finish, with believable fabric weight, seams and fit detail.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mughal Court Jama as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'flared jama; embroidered patka sash; jeweled turban with sarpech; fine gold-bordered muslin; jali light',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
   {
@@ -298,28 +598,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Norse Seafaring Regalia',
     category: '3. Historical & Fantasy',
     negativePrompt:
-      'clean, shiny, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, horned helmets, clean, shiny, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Norse Seafaring Regalia operates as a portable fashion-costume router: combine Norse seafaring regalia, fjord-weathered resilience, saga-forged material culture with period and mythic costume logic with era silhouette, regalia structure, textile craft, and ceremonial proportion, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+        'Norse seafaring dress: layered wool tunics and apron dresses with oval brooches, fur-trimmed cloaks, woven bands and leg wraps.',
       subject_treatment:
-        "Preserve the prompt's subject, motion, and context while forms robe, armor, pleat, lace, cinch, plate, embroider, crown, wrap, or ceremonialize through Fur mantle layering, leather strap lattice, tunic-panel rhythm, rune-band geometry, cloak-pin gather; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
-      color_and_tone:
-        'Map color through period pigments, jewel tones, mourning blacks, metallic trim, linen or wool neutrals, royal accents, and age-aware dye; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
+        "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the Viking-age Norse garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — wool tunic or apron dress held with oval tortoise brooches and bead strings, tablet-woven bands, fur-trimmed cloak with ring pin, leg wraps and turnshoes.",
+      color_and_tone: 'Madder red, woad blue, undyed wool grey, bronze and fur brown.',
       lighting_and_shadow:
-        'Use Cold overcast grey, firelight warmth, mist diffusion, iron-edge highlights plus museum, candle, daylight, ceremonial, or portrait light that reveals textile depth and silhouette hierarchy as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
+        'Cold, grey northern light, shaped to reveal garment cut, drape, texture and fit on the wearer.',
       texture_and_material:
-        'Render Wolf fur, riveted chainmail, oil-tanned leather, coarse wool wadmal, iron boss, bone toggle plus brocade, linen, wool, silk, leather, metal, beadwork, lace, fur, embroidery, trim, and handworked surface detail; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+        'Coarse wool, fur, tablet-woven bands, bronze brooches and glass beads.',
       camera_and_composition:
-        'Compose with Compose for Norse Seafaring Regalia using its key spatial cues: Amulet silhouette, round metal geometry, fur mantle edge, knotwork or rune detail plus regal posture logic, era silhouette, layered garment structure, ornament placement, and readable period identity as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
+        'Weathered full figure in cold outdoor framing, keeping the full outfit silhouette and fit readable at card size.',
       atmosphere_and_mood:
-        "Carry mood through ceremony, history, myth, rank, mourning, travel, revolution, courtly pressure, or folk memory; the tone should feel specific to Norse Seafaring Regalia while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+        "Hardy, proud, seafaring and wind-beaten, carried by the wearer's posture, styling and attitude.",
       rendering_and_quality:
-        'Finish with period-aware costume clarity, tactile textile truth, ornament discipline, and no cheap renaissance-fair shortcut; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+        'Textured, cold-toned finish, with believable fabric weight, seams and fit detail.',
       key_features:
-        'Norse seafaring regalia, fjord-weathered resilience, saga-forged material culture; Fur mantle layering, leather strap lattice, tunic-panel rhythm, rune-band geometry, cloak-pin gather; Wolf fur, riveted chainmail, oil-tanned leather, coarse wool wadmal, iron boss, bone toggle; Cold overcast grey, firelight warmth, mist diffusion, iron-edge highlights; Compose for Norse Seafaring Regalia using its key spatial cues: Amulet silhouette, round metal geometry, fur mantle edge, knotwork or rune detail',
+        'apron dress with oval brooches; fur-trimmed cloak; tablet-woven bands; leg wraps; cold northern light',
       creative_brief:
-        'Use Norse Seafaring Regalia after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Norse seafaring regalia, fjord-weathered resilience, saga-forged material culture, Fur mantle layering, leather strap lattice, tunic-panel rhythm, rune-band geometry, cloak-pin gather, Wolf fur, riveted chainmail, oil-tanned leather, coarse wool wadmal, iron boss, bone toggle, Cold overcast grey, firelight warmth, mist diffusion, iron-edge highlights, Compose for Norse Seafaring Regalia using its key spatial cues: Amulet silhouette, round metal geometry, fur mantle edge, knotwork or rune detail plus corsetry, armor plates, robes, sashes, pleats, trim, brocade, regalia layers, fastenings, and historically legible cut, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Norse Seafaring Regalia as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

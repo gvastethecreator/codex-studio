@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP08-099
+packId: pack_08
+name: Regency Empire Line
+styleAnchors:
+  - Regency Empire Line
+  - Regency era dress
+  - empire-waist muslin gown
+displayName: Regency Empire Line
+category: 3. Historical & Fantasy
+domain: Regency era dress
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - historical-and-fantasy
+  - regency
+  - empire-waist
+  - fashion
+visualDna:
+  aesthetic: 'Regency dress: high-waisted empire-line muslin gowns, spencer jackets, bonnets and long gloves; men in tailcoats, cravats, waistcoats and tall boots.'
+  subject_treatment: "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the Regency garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — high-waisted white or pastel muslin gown with short puffed sleeves, spencer jacket, bonnet and long gloves, or a tailcoat, high-collared shirt with cravat, waistcoat and Hessian boots."
+  color_and_tone: White muslin, pale pastels, bottle green and navy wool.
+  lighting_and_shadow: Soft English daylight through tall windows, shaped to reveal garment cut, drape, texture and fit on the wearer.
+  texture_and_material: Sheer muslin, wool broadcloth, silk ribbon and polished leather.
+  camera_and_composition: Graceful full-figure framing, keeping the full outfit silhouette and fit readable at card size.
+  atmosphere_and_mood: Genteel, romantic, restrained and witty, carried by the wearer's posture, styling and attitude.
+  rendering_and_quality: Soft, fresh, detailed finish, with believable fabric weight, seams and fit detail.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Regency Empire Line as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: empire-waist muslin gown; spencer and bonnet; tailcoat and cravat; Hessian boots; soft window light
+avoidRules:
+  - brand logo
+  - readable label text
+  - real designer or celebrity likeness
+  - generic catalog outfit
+  - bad garment fit
+  - costume-shop synthetic fabric
+  - mixed-up period details
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_08
+  packName: Fashion & Costume
+  categoryId: historical-and-fantasy
+  categoryName: 3. Historical & Fantasy
+  tags:
+    - fashion-and-costume
+    - historical-and-fantasy
+    - regency
+    - empire-waist
+    - fashion
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Regency era dress

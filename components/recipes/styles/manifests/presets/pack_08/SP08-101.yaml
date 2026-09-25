@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP08-101
+packId: pack_08
+name: Medieval Peasant Workwear
+styleAnchors:
+  - Medieval Peasant Workwear
+  - medieval working dress
+  - homespun wool tunic or kirtle
+displayName: Medieval Peasant Workwear
+category: 3. Historical & Fantasy
+domain: medieval working dress
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - historical-and-fantasy
+  - medieval
+  - peasant
+  - fashion
+visualDna:
+  aesthetic: 'Medieval working dress: homespun wool tunics and kirtles, linen coifs and hoods, belted aprons, patched hose and turnshoes — clothes made to last.'
+  subject_treatment: "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the medieval European working garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — undyed or plant-dyed wool tunic or kirtle, linen coif or hood with liripipe, belted apron, patched hose and simple leather turnshoes."
+  color_and_tone: Undyed wool, madder rust, weld yellow, woad blue and earth brown.
+  lighting_and_shadow: Soft overcast or smoky hearth light, shaped to reveal garment cut, drape, texture and fit on the wearer.
+  texture_and_material: Coarse wool, linen, patched seams, leather and wooden toggles.
+  camera_and_composition: Honest working full figure, keeping the full outfit silhouette and fit readable at card size.
+  atmosphere_and_mood: Humble, hardworking, earthy and resilient, carried by the wearer's posture, styling and attitude.
+  rendering_and_quality: Textured, natural finish, with believable fabric weight, seams and fit detail.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Medieval Peasant Workwear as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: homespun wool tunic or kirtle; linen coif; hood with liripipe; patched hose; plant-dyed palette
+avoidRules:
+  - brand logo
+  - readable label text
+  - real designer or celebrity likeness
+  - generic catalog outfit
+  - bad garment fit
+  - costume-shop synthetic fabric
+  - mixed-up period details
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_08
+  packName: Fashion & Costume
+  categoryId: historical-and-fantasy
+  categoryName: 3. Historical & Fantasy
+  tags:
+    - fashion-and-costume
+    - historical-and-fantasy
+    - medieval
+    - peasant
+    - fashion
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: medieval working dress

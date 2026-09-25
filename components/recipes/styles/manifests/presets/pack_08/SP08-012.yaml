@@ -3,7 +3,7 @@ id: SP08-012
 packId: pack_08
 name: Renaissance Royal
 category: 3. Historical & Fantasy
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,65 +12,24 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: >-
-    Renaissance Royal operates as a portable fashion-costume router: combine 16th century court
-    regalia, early-modern majesty, painted-court splendor with period and mythic costume logic with
-    era silhouette, regalia structure, textile craft, and ceremonial proportion, so the preset
-    supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment
-    sample.
-  subject_treatment: >-
-    Preserve the prompt's subject, motion, and context while forms robe, armor, pleat, lace, cinch,
-    plate, embroider, crown, wrap, or ceremonialize through Heavy layers, ruffs, farthingale cone,
-    slashed sleeves, stiffened bodice architecture; identity stays readable as silhouette, fit,
-    layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.
-  color_and_tone: >-
-    Map color through period pigments, jewel tones, mourning blacks, metallic trim, linen or wool
-    neutrals, royal accents, and age-aware dye; keep textile values separated, accents intentional,
-    material color believable, and palette behavior attached to the subject instead of pasted
-    wardrobe decoration.
-  lighting_and_shadow: >-
-    Use Oil-painting light, chiaroscuro depth, stained-glass warmth, candlelit gold plus museum,
-    candle, daylight, ceremonial, or portrait light that reveals textile depth and silhouette
-    hierarchy as the styling light contract, revealing cut, drape, surface response, trim,
-    transparency, or armor structure without erasing prompt readability.
-  texture_and_material: >-
-    Render Cut velvet, silver brocade, seed pearls, cloth-of-gold tissue, mink trim, jeweled net
-    caul plus brocade, linen, wool, silk, leather, metal, beadwork, lace, fur, embroidery, trim, and
-    handworked surface detail; keep fabric scale, seams, fibers, shine, opacity, folds, hardware,
-    elemental edges, or body-surface treatment coherent across the whole prompt.
-  camera_and_composition: >-
-    Compose with cloth-of-gold weight, ruff geometry, farthingale structure, slashed sleeves, seed
-    pearls, jeweled bodice and imperial velvet plus regal posture logic, era silhouette, layered
-    garment structure, ornament placement, and readable period identity as reusable fashion framing
-    grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to
-    inherit styling without one required pose.
-  atmosphere_and_mood: >-
-    Carry mood through ceremony, history, myth, rank, mourning, travel, revolution, courtly
-    pressure, or folk memory; the tone should feel specific to Renaissance Royal while still obeying
-    the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
-  rendering_and_quality: >-
-    Finish with period-aware costume clarity, tactile textile truth, ornament discipline, and no
-    cheap renaissance-fair shortcut; prioritize clean style recognition, believable material
-    physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.
-  key_features: >-
-    16th century court regalia, early-modern majesty, painted-court splendor; Heavy layers, ruffs,
-    farthingale cone, slashed sleeves, stiffened bodice architecture; Cut velvet, silver brocade,
-    seed pearls, cloth-of-gold tissue, mink trim, jeweled net caul; Oil-painting light, chiaroscuro
-    depth, stained-glass warmth, candlelit gold; cloth-of-gold weight, ruff geometry, farthingale
-    structure, slashed sleeves, seed pearls, jeweled bodice and imperial velvet
-  creative_brief: >-
-    Use Renaissance Royal after prompt X as a transferable fashion/costume layer: prompt X supplies
-    subject, motion, setting, tone, and intensity, while the preset supplies 16th century court
-    regalia, early-modern majesty, painted-court splendor, Heavy layers, ruffs, farthingale cone,
-    slashed sleeves, stiffened bodice architecture, Cut velvet, silver brocade, seed pearls,
-    cloth-of-gold tissue, mink trim, jeweled net caul, Oil-painting light, chiaroscuro depth,
-    stained-glass warmth, candlelit gold, cloth-of-gold weight, ruff geometry, farthingale
-    structure, slashed sleeves, seed pearls, jeweled bodice and imperial velvet plus corsetry, armor
-    plates, robes, sashes, pleats, trim, brocade, regalia layers, fastenings, and historically
-    legible cut, palette behavior, light response, material treatment, silhouette grammar, and
-    finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card
-    composition.
+  aesthetic: 'Sixteenth-century Renaissance court regalia: stiffened bodices, slashed and puffed sleeves, brocade, ruffs or square necklines and jeweled girdles.'
+  subject_treatment: 'Redress the prompt''s wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the 16th-century European court garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — stiff brocade bodice or doublet, slashed puffed sleeves showing contrasting lining, ruff or square neckline, jeweled girdle and hose or full skirts.'
+  color_and_tone: Crimson, gold, deep green, ivory and black velvet, applied to garments and accessories while skin, setting and props keep their natural color.
+  lighting_and_shadow: Soft window light like a court portrait, shaped to reveal garment cut, drape, texture and fit on the wearer.
+  texture_and_material: Silk brocade, velvet, lace ruffs, pearls and gold embroidery.
+  camera_and_composition: Formal portrait framing, three-quarter or full figure, keeping the full outfit silhouette and fit readable at card size.
+  atmosphere_and_mood: Regal, rich, formal and self-assured, carried by the wearer's posture, styling and attitude.
+  rendering_and_quality: Painterly-rich photographic finish, with believable fabric weight, seams and fit detail.
+  key_features: slashed puffed sleeves; stiff brocade bodice or doublet; ruff; jeweled girdle; court portrait light
+  creative_brief: 'Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Renaissance Royal as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user''s subject instead of forcing this preset''s sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.'
 avoidRules:
+  - brand logo
+  - readable label text
+  - real designer or celebrity likeness
+  - generic catalog outfit
+  - bad garment fit
+  - costume-shop synthetic fabric
+  - mixed-up period details
   - modern
   - simple
   - cheap
@@ -84,13 +43,17 @@ avoidRules:
   - muddy fabric noise
   - watermark
   - readable text
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-012.webp
 attributes:
-  negativePrompt: >-
-    modern, simple, cheap, cheap costume rental, wrong era mashup, plastic armor, fixed outfit,
-    required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
-    readable text
+  negativePrompt: brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, modern, simple, cheap, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

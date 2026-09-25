@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP08-104
+packId: pack_08
+name: Tang Dynasty Hanfu
+styleAnchors:
+  - Tang Dynasty Hanfu
+  - Tang dynasty dress
+  - high-waisted ruqun skirt
+displayName: Tang Dynasty Hanfu
+category: 3. Historical & Fantasy
+domain: Tang dynasty dress
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - fashion-and-costume
+  - historical-and-fantasy
+  - tang
+  - hanfu
+  - fashion
+visualDna:
+  aesthetic: 'Tang dynasty dress: high-waisted flowing skirts tied above the chest, short jackets with wide sleeves, long pibo shawls and elaborate high hairstyles with ornaments.'
+  subject_treatment: "Redress the prompt's wearer in this wardrobe while keeping their identity, age, body, pose, action and setting: the Tang Chinese garment system below, with period-accurate cut, closures, layering and accessories; the surrounding setting stays as the prompt describes — high-waisted ruqun skirt tied above the chest, short wide-sleeved top, long gauze pibo shawl, and a high chignon with gold hairpins; men in round-collar robes and futou caps."
+  color_and_tone: Pomegranate red, peony pink, emerald, gold and apricot, applied to garments and accessories while skin, setting and props keep their natural color.
+  lighting_and_shadow: Warm, glowing court light, shaped to reveal garment cut, drape, texture and fit on the wearer.
+  texture_and_material: Silk gauze, damask, gold hairpins and painted flower motifs.
+  camera_and_composition: Flowing full figure with shawl in motion, keeping the full outfit silhouette and fit readable at card size.
+  atmosphere_and_mood: Opulent, graceful, lively and cosmopolitan, carried by the wearer's posture, styling and attitude.
+  rendering_and_quality: Luminous, colorful finish, with believable fabric weight, seams and fit detail.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tang Dynasty Hanfu as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: high-waisted ruqun skirt; long gauze pibo shawl; wide sleeves; high chignon with gold pins; opulent color
+avoidRules:
+  - brand logo
+  - readable label text
+  - real designer or celebrity likeness
+  - generic catalog outfit
+  - bad garment fit
+  - costume-shop synthetic fabric
+  - mixed-up period details
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: brand logo, readable label text, real designer or celebrity likeness, generic catalog outfit, bad garment fit, costume-shop synthetic fabric, mixed-up period details, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_08
+  packName: Fashion & Costume
+  categoryId: historical-and-fantasy
+  categoryName: 3. Historical & Fantasy
+  tags:
+    - fashion-and-costume
+    - historical-and-fantasy
+    - tang
+    - hanfu
+    - fashion
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: Tang dynasty dress
