@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-173
+packId: pack_25
+name: Object-as-Letter Campaigns
+styleAnchors:
+  - Object-as-Letter Campaigns
+  - object replacing one letter ad
+  - one object letter
+displayName: Object-as-Letter Campaigns
+category: 9. Advertising & Campaign Design
+domain: object replacing one letter ad
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - advertising-and-campaign-design
+  - object-letter
+  - applied-design
+  - advertising
+  - r-adv-13
+  - requested-text
+visualDna:
+  aesthetic: 'Object-as-Letter Campaigns: one form of the subject takes the place of a compatible letter while the whole word still reads instantly.'
+  subject_treatment: Integrate one form of the prompt's subject into one compatible letter of the exact word, keeping the word readable and the object recognizable.
+  color_and_tone: Consistent contrast between word and object, color kept subordinate to reading.
+  lighting_and_shadow: Simple light on the object and crisp type sharing one baseline.
+  texture_and_material: The subject material kept and the other letters in a sober finish.
+  camera_and_composition: At most one substitution per word, with a clear rhythm and baseline.
+  atmosphere_and_mood: Legible typographic wit, clever and quick to get.
+  rendering_and_quality: Crisp campaign type where the word reads without explanation.
+  creative_brief: "Object-as-Letter Campaigns: one form of the subject takes the place of a compatible letter while the whole word still reads instantly. Carry it through one object letter, readable word, shared baseline, clever wit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: one object letter; readable word; shared baseline; clever wit
+avoidRules:
+  - letters replaced by ambiguous objects
+  - deformed product
+  - wrong word
+  - invented product claims, statistics or awards
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: letters replaced by ambiguous objects, deformed product, wrong word, invented product claims, statistics or awards, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: advertising-and-campaign-design
+  categoryName: 9. Advertising & Campaign Design
+  domain: object replacing one letter ad
+  tags:
+    - curation-v2
+    - advertising-and-campaign-design
+    - object-letter
+    - applied-design
+    - advertising
+    - r-adv-13
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

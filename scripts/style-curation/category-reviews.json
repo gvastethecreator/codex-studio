@@ -2488,5 +2488,20 @@
     "evidencePresetIds": ["SP25-141", "SP25-142", "SP25-143"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_25",
+    "category": "9. Advertising & Campaign Design",
+    "displayCategory": "Advertising & campaigns",
+    "kind": "mixed",
+    "expectedCount": 20,
+    "baselineHash": "35fb602cc6c72b7d2c09729920ed5d8d2862a0f2acc5c87036383a949f25ed89",
+    "problem": "Campaign styles must change how an idea is staged without banning the requested copy, and without inventing product claims, statistics, testimonials, awards or real brands.",
+    "preserve": "Requested headlines, calls to action and brand elements stay exact; each style keeps its campaign mechanism (cause and effect, type pressure, giant fragment, material marks, single gesture, cut and connect, split reality, meaningful void, type windows, scale collision, analog continuity, folded planes, object as letter, one accent, evidence layers, quiet tension).",
+    "proposedAction": "Applied-design import: 16 campaign styles, the responsive campaign grid profile, and the three-act launch, lockup study and material transformation recipes as sequence and comparison profiles; requested-text policy with a no-invented-claims negative and three new campaign briefs per preset in rotating tones.",
+    "validation": "Generate each card, then check every word of the copy and that no claim, number or award was invented; test a poster, a banner, a three-format adaptation and a three-piece sequence.",
+    "evidencePresetIds": ["SP25-161", "SP25-162", "SP25-163"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

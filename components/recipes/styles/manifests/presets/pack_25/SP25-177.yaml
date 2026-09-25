@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP25-177
+packId: pack_25
+name: Responsive Campaign Grid
+styleAnchors:
+  - Responsive Campaign Grid
+  - multi-format campaign adaptation profile
+  - three formats
+displayName: Responsive Campaign Grid
+category: 9. Advertising & Campaign Design
+domain: multi-format campaign adaptation profile
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - advertising-and-campaign-design
+  - responsive-campaign
+  - applied-design
+  - advertising
+  - profile
+  - r-adv-17
+  - requested-text
+visualDna:
+  aesthetic: 'Responsive Campaign Grid: one campaign adapted to wide, square and tall formats, keeping hierarchy and anchors by reorganizing rather than cropping.'
+  subject_treatment: Adapt the prompt's campaign to wide, square and tall formats side by side, reorganizing title, image and action with every word exact.
+  color_and_tone: The same color roles and exact text in every format.
+  lighting_and_shadow: Consistent image and lighting conditions across all three of the formats.
+  texture_and_material: Source artwork and materials kept, with no new images to fill gaps.
+  camera_and_composition: Title, image and action zones that reflow within declared margins.
+  atmosphere_and_mood: Campaign continuity and instant reading across every format.
+  rendering_and_quality: No format loses copy, brand or the required action.
+  creative_brief: "Responsive Campaign Grid: one campaign adapted to wide, square and tall formats, keeping hierarchy and anchors by reorganizing rather than cropping. Carry it through three formats, reflowed zones, same hierarchy, exact copy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: three formats; reflowed zones; same hierarchy; exact copy
+avoidRules:
+  - cropped text
+  - distorted logo
+  - changed hierarchy with no reason
+  - invented product claims, statistics or awards
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cropped text, distorted logo, changed hierarchy with no reason, invented product claims, statistics or awards, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: advertising-and-campaign-design
+  categoryName: 9. Advertising & Campaign Design
+  domain: multi-format campaign adaptation profile
+  tags:
+    - curation-v2
+    - advertising-and-campaign-design
+    - responsive-campaign
+    - applied-design
+    - advertising
+    - profile
+    - r-adv-17
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

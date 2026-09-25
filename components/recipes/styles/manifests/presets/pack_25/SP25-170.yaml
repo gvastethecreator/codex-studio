@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-170
+packId: pack_25
+name: Graphic Scale Collisions
+styleAnchors:
+  - Graphic Scale Collisions
+  - contrasting scale collision ad
+  - huge meets tiny
+displayName: Graphic Scale Collisions
+category: 9. Advertising & Campaign Design
+domain: contrasting scale collision ad
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - advertising-and-campaign-design
+  - scale-collision
+  - applied-design
+  - advertising
+  - r-adv-10
+  - requested-text
+visualDna:
+  aesthetic: 'Graphic Scale Collisions: a huge element meets a tiny one, the tension between scales creating one unmistakable reading point.'
+  subject_treatment: Set a huge and a tiny element of the prompt's subject against each other so the scale contrast creates one clear reading point, the copy exact.
+  color_and_tone: Short palette with the focus of contrast where the two scales meet.
+  lighting_and_shadow: Coherent light when objects share a scene, shadows matching the scale.
+  texture_and_material: Sober materials and proportional detail, secondary elements kept simple.
+  camera_and_composition: One large and one small element linked by alignment, contact or a meaningful gap.
+  atmosphere_and_mood: A surprise of scale and a clear message, never arbitrary gigantism.
+  rendering_and_quality: Clean campaign image where the scale contrast reinforces the message.
+  creative_brief: "Graphic Scale Collisions: a huge element meets a tiny one, the tension between scales creating one unmistakable reading point. Carry it through huge meets tiny, one reading point, linked scales, short palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: huge meets tiny; one reading point; linked scales; short palette
+avoidRules:
+  - misleading product scale
+  - unrelated objects
+  - many focal points
+  - invented product claims, statistics or awards
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: misleading product scale, unrelated objects, many focal points, invented product claims, statistics or awards, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: advertising-and-campaign-design
+  categoryName: 9. Advertising & Campaign Design
+  domain: contrasting scale collision ad
+  tags:
+    - curation-v2
+    - advertising-and-campaign-design
+    - scale-collision
+    - applied-design
+    - advertising
+    - r-adv-10
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

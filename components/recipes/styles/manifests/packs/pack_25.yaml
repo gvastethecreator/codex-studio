@@ -193,6 +193,29 @@ categories:
       - pack_25/SP25-158.yaml
       - pack_25/SP25-159.yaml
       - pack_25/SP25-160.yaml
+  - id: advertising-and-campaign-design
+    name: 9. Advertising & Campaign Design
+    presetRefs:
+      - pack_25/SP25-161.yaml
+      - pack_25/SP25-162.yaml
+      - pack_25/SP25-163.yaml
+      - pack_25/SP25-164.yaml
+      - pack_25/SP25-165.yaml
+      - pack_25/SP25-166.yaml
+      - pack_25/SP25-167.yaml
+      - pack_25/SP25-168.yaml
+      - pack_25/SP25-169.yaml
+      - pack_25/SP25-170.yaml
+      - pack_25/SP25-171.yaml
+      - pack_25/SP25-172.yaml
+      - pack_25/SP25-173.yaml
+      - pack_25/SP25-174.yaml
+      - pack_25/SP25-175.yaml
+      - pack_25/SP25-176.yaml
+      - pack_25/SP25-177.yaml
+      - pack_25/SP25-178.yaml
+      - pack_25/SP25-179.yaml
+      - pack_25/SP25-180.yaml
 presetRefs:
   - pack_25/SP25-001.yaml
   - pack_25/SP25-002.yaml
@@ -354,3 +377,23 @@ presetRefs:
   - pack_25/SP25-158.yaml
   - pack_25/SP25-159.yaml
   - pack_25/SP25-160.yaml
+  - pack_25/SP25-161.yaml
+  - pack_25/SP25-162.yaml
+  - pack_25/SP25-163.yaml
+  - pack_25/SP25-164.yaml
+  - pack_25/SP25-165.yaml
+  - pack_25/SP25-166.yaml
+  - pack_25/SP25-167.yaml
+  - pack_25/SP25-168.yaml
+  - pack_25/SP25-169.yaml
+  - pack_25/SP25-170.yaml
+  - pack_25/SP25-171.yaml
+  - pack_25/SP25-172.yaml
+  - pack_25/SP25-173.yaml
+  - pack_25/SP25-174.yaml
+  - pack_25/SP25-175.yaml
+  - pack_25/SP25-176.yaml
+  - pack_25/SP25-177.yaml
+  - pack_25/SP25-178.yaml
+  - pack_25/SP25-179.yaml
+  - pack_25/SP25-180.yaml

@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-171
+packId: pack_25
+name: Analog Texture Continuity
+styleAnchors:
+  - Analog Texture Continuity
+  - shared analog grain campaign
+  - shared grain
+displayName: Analog Texture Continuity
+category: 9. Advertising & Campaign Design
+domain: shared analog grain campaign
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - advertising-and-campaign-design
+  - analog-continuity
+  - applied-design
+  - advertising
+  - r-adv-11
+  - requested-text
+visualDna:
+  aesthetic: 'Analog Texture Continuity: shared grain, edges and light tie photography and graphics into one coherent printed campaign surface.'
+  subject_treatment: Coordinate grain, edges and light between the prompt's photography and graphics into one editorial surface, the copy crisp and exact.
+  color_and_tone: One unified palette with enough contrast for the copy and locked brand colors.
+  lighting_and_shadow: Compatible light across images, with graphics integrated and no fake shadows.
+  texture_and_material: Fine shared grain and controlled cut edges, with text left clean and sharp.
+  camera_and_composition: A clear hierarchy between photo, brand and text, texture never dominating.
+  atmosphere_and_mood: Tactile cohesion and an analog character, warm and deliberate.
+  rendering_and_quality: Printed-looking campaign whose identity survives with less texture.
+  creative_brief: "Analog Texture Continuity: shared grain, edges and light tie photography and graphics into one coherent printed campaign surface. Carry it through shared grain, matched light, clean type, one printed surface. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: shared grain; matched light; clean type; one printed surface
+avoidRules:
+  - noise over letters
+  - different filters per fragment
+  - generic nostalgia
+  - invented product claims, statistics or awards
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: noise over letters, different filters per fragment, generic nostalgia, invented product claims, statistics or awards, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: advertising-and-campaign-design
+  categoryName: 9. Advertising & Campaign Design
+  domain: shared analog grain campaign
+  tags:
+    - curation-v2
+    - advertising-and-campaign-design
+    - analog-continuity
+    - applied-design
+    - advertising
+    - r-adv-11
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

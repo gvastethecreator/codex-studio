@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-164
+packId: pack_25
+name: Material-to-Mark Campaigns
+styleAnchors:
+  - Material-to-Mark Campaigns
+  - material-derived graphic system
+  - property to mark
+displayName: Material-to-Mark Campaigns
+category: 9. Advertising & Campaign Design
+domain: material-derived graphic system
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - advertising-and-campaign-design
+  - material-to-mark
+  - applied-design
+  - advertising
+  - r-adv-04
+  - requested-text
+visualDna:
+  aesthetic: 'Material-to-Mark Campaigns: one visible property of the object is abstracted into repeatable graphic marks that run through a whole campaign.'
+  subject_treatment: Translate one visible property of the prompt's subject into a graphic grammar that organizes copy across pieces, the requested words set exact.
+  color_and_tone: Colors derived from the subject rather than borrowed from any campaign.
+  lighting_and_shadow: Light kept coherent between object and graphics when they meet.
+  texture_and_material: The material abstracted into clear marks rather than pasted as texture.
+  camera_and_composition: Object or fragment in one zone, derived marks organizing text and flow.
+  atmosphere_and_mood: Coherent conceptual transformation and instant recognition across the whole family.
+  rendering_and_quality: Clean graphic campaign where every mark traces back to the subject.
+  creative_brief: "Material-to-Mark Campaigns: one visible property of the object is abstracted into repeatable graphic marks that run through a whole campaign. Carry it through property to mark, repeatable grammar, subject-derived color, campaign family. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: property to mark; repeatable grammar; subject-derived color; campaign family
+avoidRules:
+  - generic texture
+  - unrelated material
+  - three disconnected campaigns
+  - invented product claims, statistics or awards
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: generic texture, unrelated material, three disconnected campaigns, invented product claims, statistics or awards, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: advertising-and-campaign-design
+  categoryName: 9. Advertising & Campaign Design
+  domain: material-derived graphic system
+  tags:
+    - curation-v2
+    - advertising-and-campaign-design
+    - material-to-mark
+    - applied-design
+    - advertising
+    - r-adv-04
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

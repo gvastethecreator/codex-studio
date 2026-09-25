@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-167
+packId: pack_25
+name: Split-Reality Product Stories
+styleAnchors:
+  - Split-Reality Product Stories
+  - two-register split ad
+  - two registers
+displayName: Split-Reality Product Stories
+category: 9. Advertising & Campaign Design
+domain: two-register split ad
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - advertising-and-campaign-design
+  - split-reality
+  - applied-design
+  - advertising
+  - r-adv-07
+  - requested-text
+visualDna:
+  aesthetic: 'Split-Reality Product Stories: one subject shown in two contrasting visual registers side by side, with matching points that prove it is the same thing.'
+  subject_treatment: Show the prompt's subject in two contrasting registers split across the image, keeping identity, proportion and three matching points, with the copy exact.
+  color_and_tone: Different but compatible palettes with one shared anchor zone.
+  lighting_and_shadow: Each register lit coherently without redesigning the object.
+  texture_and_material: Contrasting finishes on each side, sharing geometry you can check point by point.
+  camera_and_composition: A clean split or controlled transition with copy clear of both halves.
+  atmosphere_and_mood: Surprise from a change of representation, the subject unchanged.
+  rendering_and_quality: Polished split image where features line up across the divide.
+  creative_brief: "Split-Reality Product Stories: one subject shown in two contrasting visual registers side by side, with matching points that prove it is the same thing. Carry it through two registers, one subject, matching points, clean split. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: two registers; one subject; matching points; clean split
+avoidRules:
+  - two different subjects
+  - distorted photographic half
+  - transition hiding errors
+  - invented product claims, statistics or awards
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: two different subjects, distorted photographic half, transition hiding errors, invented product claims, statistics or awards, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: advertising-and-campaign-design
+  categoryName: 9. Advertising & Campaign Design
+  domain: two-register split ad
+  tags:
+    - curation-v2
+    - advertising-and-campaign-design
+    - split-reality
+    - applied-design
+    - advertising
+    - r-adv-07
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

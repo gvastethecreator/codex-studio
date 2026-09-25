@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-174
+packId: pack_25
+name: Monochrome Accent Signals
+styleAnchors:
+  - Monochrome Accent Signals
+  - monochrome with one accent ad
+  - tonal base
+displayName: Monochrome Accent Signals
+category: 9. Advertising & Campaign Design
+domain: monochrome with one accent ad
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - advertising-and-campaign-design
+  - mono-accent
+  - applied-design
+  - advertising
+  - r-adv-14
+  - requested-text
+visualDna:
+  aesthetic: 'Monochrome Accent Signals: a concentrated tonal base leaves one structural color accent to point at the action or focus.'
+  subject_treatment: Keep the prompt's image in one tonal base and reserve a single structural color accent for its focus or action, the copy exact.
+  color_and_tone: Functional monochrome with one limited accent area, brand colors kept.
+  lighting_and_shadow: Coherent light and controlled contrast across the tonal image.
+  texture_and_material: Sober finish, subordinate material detail and clean-edged text.
+  camera_and_composition: The color focus tied to the message, strong hierarchy and calm regions.
+  atmosphere_and_mood: Contained intensity and attention directed precisely to one single point.
+  rendering_and_quality: Clean campaign image where the accent points at something real.
+  creative_brief: "Monochrome Accent Signals: a concentrated tonal base leaves one structural color accent to point at the action or focus. Carry it through tonal base, one accent, directed attention, exact copy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: tonal base; one accent; directed attention; exact copy
+avoidRules:
+  - decorative red
+  - monochrome erasing the brand
+  - color as the only call
+  - invented product claims, statistics or awards
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: decorative red, monochrome erasing the brand, color as the only call, invented product claims, statistics or awards, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: advertising-and-campaign-design
+  categoryName: 9. Advertising & Campaign Design
+  domain: monochrome with one accent ad
+  tags:
+    - curation-v2
+    - advertising-and-campaign-design
+    - mono-accent
+    - applied-design
+    - advertising
+    - r-adv-14
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-176
+packId: pack_25
+name: Quiet Product Tension
+styleAnchors:
+  - Quiet Product Tension
+  - subtle offset tension ad
+  - one small offset
+displayName: Quiet Product Tension
+category: 9. Advertising & Campaign Design
+domain: subtle offset tension ad
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - advertising-and-campaign-design
+  - quiet-tension
+  - applied-design
+  - advertising
+  - r-adv-16
+  - requested-text
+visualDna:
+  aesthetic: 'Quiet Product Tension: one small offset, gap or unexpected alignment creates interest with very few elements.'
+  subject_treatment: Create interest around the prompt's subject with one small, understandable offset or alignment, very few elements and the copy exact.
+  color_and_tone: Sober palette with one optional accent and the product colors kept.
+  lighting_and_shadow: Broad light and coherent contact shadows, calm and even.
+  texture_and_material: Clean materials with moderate detail and a quiet finish.
+  camera_and_composition: One subject and one clear spatial tension, copy in a calm zone.
+  atmosphere_and_mood: Contained expectation and precision, like holding a breath.
+  rendering_and_quality: Polished minimal image where the tension lives in the geometry.
+  creative_brief: "Quiet Product Tension: one small offset, gap or unexpected alignment creates interest with very few elements. Carry it through one small offset, few elements, calm copy zone, held breath. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: one small offset; few elements; calm copy zone; held breath
+avoidRules:
+  - random offset
+  - unstable object with no intent
+  - empty composition with no idea
+  - invented product claims, statistics or awards
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: random offset, unstable object with no intent, empty composition with no idea, invented product claims, statistics or awards, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: advertising-and-campaign-design
+  categoryName: 9. Advertising & Campaign Design
+  domain: subtle offset tension ad
+  tags:
+    - curation-v2
+    - advertising-and-campaign-design
+    - quiet-tension
+    - applied-design
+    - advertising
+    - r-adv-16
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

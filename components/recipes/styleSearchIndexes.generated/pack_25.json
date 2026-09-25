@@ -3,7 +3,7 @@
     {
       "id": "pack_25",
       "name": "Applied Design",
-      "presetCount": 160
+      "presetCount": 180
     }
   ],
   "presets": [
@@ -2838,7 +2838,375 @@
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp25-160 shop-window display set shop window display mockup style shop window stage 8. mockups & product presentation mockups & presentation shop window display mockup style pack_25 applied design mockups-and-product-presentation applied-design mockups-and-product-presentation shop-window-display-mockup-style"
+    },
+    {
+      "id": "SP25-161",
+      "name": "Causal Visual Metaphors",
+      "styleAnchors": [
+        "Causal Visual Metaphors",
+        "cause-and-effect ad metaphor",
+        "one transformation"
+      ],
+      "ref": "pack_25/SP25-161.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "advertising-and-campaign-design",
+      "categoryName": "9. Advertising & Campaign Design",
+      "domain": "cause-and-effect ad metaphor",
+      "tags": ["applied-design", "advertising-and-campaign-design", "cause-and-effect-ad-metaphor"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-161 causal visual metaphors cause-and-effect ad metaphor one transformation 9. advertising & campaign design advertising & campaigns cause-and-effect ad metaphor pack_25 applied design advertising-and-campaign-design applied-design advertising-and-campaign-design cause-and-effect-ad-metaphor"
+    },
+    {
+      "id": "SP25-162",
+      "name": "Typographic Pressure Fields",
+      "styleAnchors": [
+        "Typographic Pressure Fields",
+        "compressed and released type ad",
+        "squeezed type"
+      ],
+      "ref": "pack_25/SP25-162.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "advertising-and-campaign-design",
+      "categoryName": "9. Advertising & Campaign Design",
+      "domain": "compressed and released type ad",
+      "tags": [
+        "applied-design",
+        "advertising-and-campaign-design",
+        "compressed-and-released-type-ad"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-162 typographic pressure fields compressed and released type ad squeezed type 9. advertising & campaign design advertising & campaigns compressed and released type ad pack_25 applied design advertising-and-campaign-design applied-design advertising-and-campaign-design compressed-and-released-type-ad"
+    },
+    {
+      "id": "SP25-163",
+      "name": "Overscale Object Fragments",
+      "styleAnchors": ["Overscale Object Fragments", "giant cropped object ad", "giant crop"],
+      "ref": "pack_25/SP25-163.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "advertising-and-campaign-design",
+      "categoryName": "9. Advertising & Campaign Design",
+      "domain": "giant cropped object ad",
+      "tags": ["applied-design", "advertising-and-campaign-design", "giant-cropped-object-ad"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-163 overscale object fragments giant cropped object ad giant crop 9. advertising & campaign design advertising & campaigns giant cropped object ad pack_25 applied design advertising-and-campaign-design applied-design advertising-and-campaign-design giant-cropped-object-ad"
+    },
+    {
+      "id": "SP25-164",
+      "name": "Material-to-Mark Campaigns",
+      "styleAnchors": [
+        "Material-to-Mark Campaigns",
+        "material-derived graphic system",
+        "property to mark"
+      ],
+      "ref": "pack_25/SP25-164.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "advertising-and-campaign-design",
+      "categoryName": "9. Advertising & Campaign Design",
+      "domain": "material-derived graphic system",
+      "tags": [
+        "applied-design",
+        "advertising-and-campaign-design",
+        "material-derived-graphic-system"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-164 material-to-mark campaigns material-derived graphic system property to mark 9. advertising & campaign design advertising & campaigns material-derived graphic system pack_25 applied design advertising-and-campaign-design applied-design advertising-and-campaign-design material-derived-graphic-system"
+    },
+    {
+      "id": "SP25-165",
+      "name": "Single-Gesture Posters",
+      "styleAnchors": ["Single-Gesture Posters", "one-gesture poster", "one gesture"],
+      "ref": "pack_25/SP25-165.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "advertising-and-campaign-design",
+      "categoryName": "9. Advertising & Campaign Design",
+      "domain": "one-gesture poster",
+      "tags": ["applied-design", "advertising-and-campaign-design", "one-gesture-poster"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-165 single-gesture posters one-gesture poster one gesture 9. advertising & campaign design advertising & campaigns one-gesture poster pack_25 applied design advertising-and-campaign-design applied-design advertising-and-campaign-design one-gesture-poster"
+    },
+    {
+      "id": "SP25-166",
+      "name": "Editorial Cut-and-Connect",
+      "styleAnchors": [
+        "Editorial Cut-and-Connect",
+        "photo fragment and editorial block layout",
+        "photo fragments"
+      ],
+      "ref": "pack_25/SP25-166.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "advertising-and-campaign-design",
+      "categoryName": "9. Advertising & Campaign Design",
+      "domain": "photo fragment and editorial block layout",
+      "tags": [
+        "applied-design",
+        "advertising-and-campaign-design",
+        "photo-fragment-and-editorial-block-layout"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-166 editorial cut-and-connect photo fragment and editorial block layout photo fragments 9. advertising & campaign design advertising & campaigns photo fragment and editorial block layout pack_25 applied design advertising-and-campaign-design applied-design advertising-and-campaign-design photo-fragment-and-editorial-block-layout"
+    },
+    {
+      "id": "SP25-167",
+      "name": "Split-Reality Product Stories",
+      "styleAnchors": ["Split-Reality Product Stories", "two-register split ad", "two registers"],
+      "ref": "pack_25/SP25-167.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "advertising-and-campaign-design",
+      "categoryName": "9. Advertising & Campaign Design",
+      "domain": "two-register split ad",
+      "tags": ["applied-design", "advertising-and-campaign-design", "two-register-split-ad"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-167 split-reality product stories two-register split ad two registers 9. advertising & campaign design advertising & campaigns two-register split ad pack_25 applied design advertising-and-campaign-design applied-design advertising-and-campaign-design two-register-split-ad"
+    },
+    {
+      "id": "SP25-168",
+      "name": "Counterspace Campaigns",
+      "styleAnchors": ["Counterspace Campaigns", "meaningful empty space ad", "meaningful void"],
+      "ref": "pack_25/SP25-168.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "advertising-and-campaign-design",
+      "categoryName": "9. Advertising & Campaign Design",
+      "domain": "meaningful empty space ad",
+      "tags": ["applied-design", "advertising-and-campaign-design", "meaningful-empty-space-ad"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-168 counterspace campaigns meaningful empty space ad meaningful void 9. advertising & campaign design advertising & campaigns meaningful empty space ad pack_25 applied design advertising-and-campaign-design applied-design advertising-and-campaign-design meaningful-empty-space-ad"
+    },
+    {
+      "id": "SP25-169",
+      "name": "Modular Type Windows",
+      "styleAnchors": ["Modular Type Windows", "image inside letters ad", "image in letters"],
+      "ref": "pack_25/SP25-169.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "advertising-and-campaign-design",
+      "categoryName": "9. Advertising & Campaign Design",
+      "domain": "image inside letters ad",
+      "tags": ["applied-design", "advertising-and-campaign-design", "image-inside-letters-ad"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-169 modular type windows image inside letters ad image in letters 9. advertising & campaign design advertising & campaigns image inside letters ad pack_25 applied design advertising-and-campaign-design applied-design advertising-and-campaign-design image-inside-letters-ad"
+    },
+    {
+      "id": "SP25-170",
+      "name": "Graphic Scale Collisions",
+      "styleAnchors": [
+        "Graphic Scale Collisions",
+        "contrasting scale collision ad",
+        "huge meets tiny"
+      ],
+      "ref": "pack_25/SP25-170.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "advertising-and-campaign-design",
+      "categoryName": "9. Advertising & Campaign Design",
+      "domain": "contrasting scale collision ad",
+      "tags": [
+        "applied-design",
+        "advertising-and-campaign-design",
+        "contrasting-scale-collision-ad"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-170 graphic scale collisions contrasting scale collision ad huge meets tiny 9. advertising & campaign design advertising & campaigns contrasting scale collision ad pack_25 applied design advertising-and-campaign-design applied-design advertising-and-campaign-design contrasting-scale-collision-ad"
+    },
+    {
+      "id": "SP25-171",
+      "name": "Analog Texture Continuity",
+      "styleAnchors": ["Analog Texture Continuity", "shared analog grain campaign", "shared grain"],
+      "ref": "pack_25/SP25-171.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "advertising-and-campaign-design",
+      "categoryName": "9. Advertising & Campaign Design",
+      "domain": "shared analog grain campaign",
+      "tags": ["applied-design", "advertising-and-campaign-design", "shared-analog-grain-campaign"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-171 analog texture continuity shared analog grain campaign shared grain 9. advertising & campaign design advertising & campaigns shared analog grain campaign pack_25 applied design advertising-and-campaign-design applied-design advertising-and-campaign-design shared-analog-grain-campaign"
+    },
+    {
+      "id": "SP25-172",
+      "name": "Folded Message Planes",
+      "styleAnchors": ["Folded Message Planes", "folded plane message ad", "folded planes"],
+      "ref": "pack_25/SP25-172.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "advertising-and-campaign-design",
+      "categoryName": "9. Advertising & Campaign Design",
+      "domain": "folded plane message ad",
+      "tags": ["applied-design", "advertising-and-campaign-design", "folded-plane-message-ad"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-172 folded message planes folded plane message ad folded planes 9. advertising & campaign design advertising & campaigns folded plane message ad pack_25 applied design advertising-and-campaign-design applied-design advertising-and-campaign-design folded-plane-message-ad"
+    },
+    {
+      "id": "SP25-173",
+      "name": "Object-as-Letter Campaigns",
+      "styleAnchors": [
+        "Object-as-Letter Campaigns",
+        "object replacing one letter ad",
+        "one object letter"
+      ],
+      "ref": "pack_25/SP25-173.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "advertising-and-campaign-design",
+      "categoryName": "9. Advertising & Campaign Design",
+      "domain": "object replacing one letter ad",
+      "tags": [
+        "applied-design",
+        "advertising-and-campaign-design",
+        "object-replacing-one-letter-ad"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-173 object-as-letter campaigns object replacing one letter ad one object letter 9. advertising & campaign design advertising & campaigns object replacing one letter ad pack_25 applied design advertising-and-campaign-design applied-design advertising-and-campaign-design object-replacing-one-letter-ad"
+    },
+    {
+      "id": "SP25-174",
+      "name": "Monochrome Accent Signals",
+      "styleAnchors": ["Monochrome Accent Signals", "monochrome with one accent ad", "tonal base"],
+      "ref": "pack_25/SP25-174.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "advertising-and-campaign-design",
+      "categoryName": "9. Advertising & Campaign Design",
+      "domain": "monochrome with one accent ad",
+      "tags": [
+        "applied-design",
+        "advertising-and-campaign-design",
+        "monochrome-with-one-accent-ad"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-174 monochrome accent signals monochrome with one accent ad tonal base 9. advertising & campaign design advertising & campaigns monochrome with one accent ad pack_25 applied design advertising-and-campaign-design applied-design advertising-and-campaign-design monochrome-with-one-accent-ad"
+    },
+    {
+      "id": "SP25-175",
+      "name": "Layered Evidence Panels",
+      "styleAnchors": [
+        "Layered Evidence Panels",
+        "layered evidence explainer ad",
+        "layered evidence"
+      ],
+      "ref": "pack_25/SP25-175.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "advertising-and-campaign-design",
+      "categoryName": "9. Advertising & Campaign Design",
+      "domain": "layered evidence explainer ad",
+      "tags": [
+        "applied-design",
+        "advertising-and-campaign-design",
+        "layered-evidence-explainer-ad"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-175 layered evidence panels layered evidence explainer ad layered evidence 9. advertising & campaign design advertising & campaigns layered evidence explainer ad pack_25 applied design advertising-and-campaign-design applied-design advertising-and-campaign-design layered-evidence-explainer-ad"
+    },
+    {
+      "id": "SP25-176",
+      "name": "Quiet Product Tension",
+      "styleAnchors": ["Quiet Product Tension", "subtle offset tension ad", "one small offset"],
+      "ref": "pack_25/SP25-176.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "advertising-and-campaign-design",
+      "categoryName": "9. Advertising & Campaign Design",
+      "domain": "subtle offset tension ad",
+      "tags": ["applied-design", "advertising-and-campaign-design", "subtle-offset-tension-ad"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-176 quiet product tension subtle offset tension ad one small offset 9. advertising & campaign design advertising & campaigns subtle offset tension ad pack_25 applied design advertising-and-campaign-design applied-design advertising-and-campaign-design subtle-offset-tension-ad"
+    },
+    {
+      "id": "SP25-177",
+      "name": "Responsive Campaign Grid",
+      "styleAnchors": [
+        "Responsive Campaign Grid",
+        "multi-format campaign adaptation profile",
+        "three formats"
+      ],
+      "ref": "pack_25/SP25-177.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "advertising-and-campaign-design",
+      "categoryName": "9. Advertising & Campaign Design",
+      "domain": "multi-format campaign adaptation profile",
+      "tags": [
+        "applied-design",
+        "advertising-and-campaign-design",
+        "multi-format-campaign-adaptation-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-177 responsive campaign grid multi-format campaign adaptation profile three formats 9. advertising & campaign design advertising & campaigns multi-format campaign adaptation profile pack_25 applied design advertising-and-campaign-design applied-design advertising-and-campaign-design multi-format-campaign-adaptation-profile"
+    },
+    {
+      "id": "SP25-178",
+      "name": "Three-Act Launch Sequence",
+      "styleAnchors": [
+        "Three-Act Launch Sequence",
+        "teaser reveal detail sequence profile",
+        "teaser, reveal, detail"
+      ],
+      "ref": "pack_25/SP25-178.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "advertising-and-campaign-design",
+      "categoryName": "9. Advertising & Campaign Design",
+      "domain": "teaser reveal detail sequence profile",
+      "tags": [
+        "applied-design",
+        "advertising-and-campaign-design",
+        "teaser-reveal-detail-sequence-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-178 three-act launch sequence teaser reveal detail sequence profile teaser, reveal, detail 9. advertising & campaign design advertising & campaigns teaser reveal detail sequence profile pack_25 applied design advertising-and-campaign-design applied-design advertising-and-campaign-design teaser-reveal-detail-sequence-profile"
+    },
+    {
+      "id": "SP25-179",
+      "name": "Image-Copy Lockup Study",
+      "styleAnchors": [
+        "Image-Copy Lockup Study",
+        "image and copy lockup comparison profile",
+        "three lockups"
+      ],
+      "ref": "pack_25/SP25-179.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "advertising-and-campaign-design",
+      "categoryName": "9. Advertising & Campaign Design",
+      "domain": "image and copy lockup comparison profile",
+      "tags": [
+        "applied-design",
+        "advertising-and-campaign-design",
+        "image-and-copy-lockup-comparison-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-179 image-copy lockup study image and copy lockup comparison profile three lockups 9. advertising & campaign design advertising & campaigns image and copy lockup comparison profile pack_25 applied design advertising-and-campaign-design applied-design advertising-and-campaign-design image-and-copy-lockup-comparison-profile"
+    },
+    {
+      "id": "SP25-180",
+      "name": "Material Transformation Sequence",
+      "styleAnchors": [
+        "Material Transformation Sequence",
+        "material change keyframe sequence profile",
+        "three stages"
+      ],
+      "ref": "pack_25/SP25-180.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "advertising-and-campaign-design",
+      "categoryName": "9. Advertising & Campaign Design",
+      "domain": "material change keyframe sequence profile",
+      "tags": [
+        "applied-design",
+        "advertising-and-campaign-design",
+        "material-change-keyframe-sequence-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-180 material transformation sequence material change keyframe sequence profile three stages 9. advertising & campaign design advertising & campaigns material change keyframe sequence profile pack_25 applied design advertising-and-campaign-design applied-design advertising-and-campaign-design material-change-keyframe-sequence-profile"
     }
   ],
-  "totalPresetCount": 160
+  "totalPresetCount": 180
 }

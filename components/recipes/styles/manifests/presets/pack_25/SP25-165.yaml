@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-165
+packId: pack_25
+name: Single-Gesture Posters
+styleAnchors:
+  - Single-Gesture Posters
+  - one-gesture poster
+  - one gesture
+displayName: Single-Gesture Posters
+category: 9. Advertising & Campaign Design
+domain: one-gesture poster
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - advertising-and-campaign-design
+  - single-gesture
+  - applied-design
+  - advertising
+  - r-adv-05
+  - requested-text
+visualDna:
+  aesthetic: 'Single-Gesture Posters: one dominant graphic gesture organizes image and type, every secondary element reduced to the essentials.'
+  subject_treatment: Organize the prompt's poster around one dominant graphic gesture that carries the subject and message, with only the requested copy as support.
+  color_and_tone: One strong ink and an optional accent with large resting areas.
+  lighting_and_shadow: Flat graphics or one simple light on the object.
+  texture_and_material: Deliberate edges and a clean finish, texture only if it serves the gesture.
+  camera_and_composition: The main gesture crosses or shapes the format with a clear entry point.
+  atmosphere_and_mood: Concentrated energy and decisiveness, bold, direct and unhesitating.
+  rendering_and_quality: Clean poster where removing the gesture would change everything.
+  creative_brief: "Single-Gesture Posters: one dominant graphic gesture organizes image and type, every secondary element reduced to the essentials. Carry it through one gesture, minimal secondaries, large resting space, clear entry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: one gesture; minimal secondaries; large resting space; clear entry
+avoidRules:
+  - competing gestures
+  - arbitrary ornament
+  - headline with no hierarchy
+  - invented product claims, statistics or awards
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: competing gestures, arbitrary ornament, headline with no hierarchy, invented product claims, statistics or awards, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: advertising-and-campaign-design
+  categoryName: 9. Advertising & Campaign Design
+  domain: one-gesture poster
+  tags:
+    - curation-v2
+    - advertising-and-campaign-design
+    - single-gesture
+    - applied-design
+    - advertising
+    - r-adv-05
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

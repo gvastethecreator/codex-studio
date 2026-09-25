@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP25-180
+packId: pack_25
+name: Material Transformation Sequence
+styleAnchors:
+  - Material Transformation Sequence
+  - material change keyframe sequence profile
+  - three stages
+displayName: Material Transformation Sequence
+category: 9. Advertising & Campaign Design
+domain: material change keyframe sequence profile
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - advertising-and-campaign-design
+  - material-transformation
+  - applied-design
+  - advertising
+  - profile
+  - r-adv-20
+  - requested-text
+visualDna:
+  aesthetic: 'Material Transformation Sequence: the same form shown in three stages as it turns from one material into another, shape and copy intact.'
+  subject_treatment: Show the prompt's subject in three stages of one material transformation, with the same framing, matching points and exact copy.
+  color_and_tone: Palette evolving with the material while brand colors stay protected.
+  lighting_and_shadow: Coherent light between stages with explicit optical changes only.
+  texture_and_material: Defined start, middle and end materials, one clean transformation.
+  camera_and_composition: The same framing across three stages with persistent matching points.
+  atmosphere_and_mood: A clear transformation and a material surprise, almost magical.
+  rendering_and_quality: Geometry and copy survive every stage unless a change is authorized.
+  creative_brief: "Material Transformation Sequence: the same form shown in three stages as it turns from one material into another, shape and copy intact. Carry it through three stages, one material change, same framing, matching points. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: three stages; one material change; same framing; matching points
+avoidRules:
+  - morph that replaces the subject
+  - unrelated materials
+  - sequence shown as finished video
+  - invented product claims, statistics or awards
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: morph that replaces the subject, unrelated materials, sequence shown as finished video, invented product claims, statistics or awards, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: advertising-and-campaign-design
+  categoryName: 9. Advertising & Campaign Design
+  domain: material change keyframe sequence profile
+  tags:
+    - curation-v2
+    - advertising-and-campaign-design
+    - material-transformation
+    - applied-design
+    - advertising
+    - profile
+    - r-adv-20
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

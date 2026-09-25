@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP25-178
+packId: pack_25
+name: Three-Act Launch Sequence
+styleAnchors:
+  - Three-Act Launch Sequence
+  - teaser reveal detail sequence profile
+  - teaser, reveal, detail
+displayName: Three-Act Launch Sequence
+category: 9. Advertising & Campaign Design
+domain: teaser reveal detail sequence profile
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - advertising-and-campaign-design
+  - three-act-launch
+  - applied-design
+  - advertising
+  - profile
+  - r-adv-18
+  - requested-text
+visualDna:
+  aesthetic: 'Three-Act Launch Sequence: a teaser, a reveal and a detail piece shown side by side, the same subject and system across all three.'
+  subject_treatment: Show the prompt's campaign as three pieces, teaser, reveal and detail, the same subject and geometry throughout and each act's copy exact.
+  color_and_tone: A coherent palette whose contrast grows from act to act.
+  lighting_and_shadow: Common light or one declared change that keeps the subject identity.
+  texture_and_material: Constant materials and geometry across the three pieces.
+  camera_and_composition: Three pieces in a row, each act with a clear role linked to the next.
+  atmosphere_and_mood: Progression and discovery, with suspense slowly turning into delight.
+  rendering_and_quality: The revealed subject matches the teaser and the detail belongs to it.
+  creative_brief: "Three-Act Launch Sequence: a teaser, a reveal and a detail piece shown side by side, the same subject and system across all three. Carry it through teaser, reveal, detail, same subject, growing contrast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: teaser, reveal, detail; same subject; growing contrast; three acts
+avoidRules:
+  - different product per act
+  - misleading teaser
+  - claims added at the reveal
+  - invented product claims, statistics or awards
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: different product per act, misleading teaser, claims added at the reveal, invented product claims, statistics or awards, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: advertising-and-campaign-design
+  categoryName: 9. Advertising & Campaign Design
+  domain: teaser reveal detail sequence profile
+  tags:
+    - curation-v2
+    - advertising-and-campaign-design
+    - three-act-launch
+    - applied-design
+    - advertising
+    - profile
+    - r-adv-18
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-168
+packId: pack_25
+name: Counterspace Campaigns
+styleAnchors:
+  - Counterspace Campaigns
+  - meaningful empty space ad
+  - meaningful void
+displayName: Counterspace Campaigns
+category: 9. Advertising & Campaign Design
+domain: meaningful empty space ad
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - advertising-and-campaign-design
+  - counterspace-campaign
+  - applied-design
+  - advertising
+  - r-adv-08
+  - requested-text
+visualDna:
+  aesthetic: 'Counterspace Campaigns: empty space becomes part of the message, shaping silhouette, headline and call to action together.'
+  subject_treatment: Use one meaningful empty space formed by the prompt's subject as an active part of the message, the copy exact and the void left clear.
+  color_and_tone: Strong contrast at the edges defining the void, with a minimal functional accent.
+  lighting_and_shadow: Simple light on any object with the reserved space kept clean.
+  texture_and_material: Sober surfaces and clean cuts with a plain ground.
+  camera_and_composition: One dominant void in a recognizable shape that organizes the reading.
+  atmosphere_and_mood: Pause, expectation and precision, quiet yet surprisingly powerful.
+  rendering_and_quality: Clean campaign where the void relates to the message itself.
+  creative_brief: "Counterspace Campaigns: empty space becomes part of the message, shaping silhouette, headline and call to action together. Carry it through meaningful void, shaped silhouette, clear copy, one accent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: meaningful void; shaped silhouette; clear copy; one accent
+avoidRules:
+  - dead space
+  - scattered text
+  - silhouette unrelated to the copy
+  - invented product claims, statistics or awards
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: dead space, scattered text, silhouette unrelated to the copy, invented product claims, statistics or awards, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: advertising-and-campaign-design
+  categoryName: 9. Advertising & Campaign Design
+  domain: meaningful empty space ad
+  tags:
+    - curation-v2
+    - advertising-and-campaign-design
+    - counterspace-campaign
+    - applied-design
+    - advertising
+    - r-adv-08
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

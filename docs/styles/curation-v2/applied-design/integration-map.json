@@ -957,64 +957,124 @@
       "category": "8. Mockups & Product Presentation"
     },
     "R-ADV-01": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-161",
+      "name": "Causal Visual Metaphors",
+      "category": "9. Advertising & Campaign Design"
     },
     "R-ADV-02": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-162",
+      "name": "Typographic Pressure Fields",
+      "category": "9. Advertising & Campaign Design"
     },
     "R-ADV-03": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-163",
+      "name": "Overscale Object Fragments",
+      "category": "9. Advertising & Campaign Design"
     },
     "R-ADV-04": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-164",
+      "name": "Material-to-Mark Campaigns",
+      "category": "9. Advertising & Campaign Design"
     },
     "R-ADV-05": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-165",
+      "name": "Single-Gesture Posters",
+      "category": "9. Advertising & Campaign Design"
     },
     "R-ADV-06": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-166",
+      "name": "Editorial Cut-and-Connect",
+      "category": "9. Advertising & Campaign Design"
     },
     "R-ADV-07": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-167",
+      "name": "Split-Reality Product Stories",
+      "category": "9. Advertising & Campaign Design"
     },
     "R-ADV-08": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-168",
+      "name": "Counterspace Campaigns",
+      "category": "9. Advertising & Campaign Design"
     },
     "R-ADV-09": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-169",
+      "name": "Modular Type Windows",
+      "category": "9. Advertising & Campaign Design"
     },
     "R-ADV-10": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-170",
+      "name": "Graphic Scale Collisions",
+      "category": "9. Advertising & Campaign Design"
     },
     "R-ADV-11": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-171",
+      "name": "Analog Texture Continuity",
+      "category": "9. Advertising & Campaign Design"
     },
     "R-ADV-12": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-172",
+      "name": "Folded Message Planes",
+      "category": "9. Advertising & Campaign Design"
     },
     "R-ADV-13": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-173",
+      "name": "Object-as-Letter Campaigns",
+      "category": "9. Advertising & Campaign Design"
     },
     "R-ADV-14": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-174",
+      "name": "Monochrome Accent Signals",
+      "category": "9. Advertising & Campaign Design"
     },
     "R-ADV-15": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-175",
+      "name": "Layered Evidence Panels",
+      "category": "9. Advertising & Campaign Design"
     },
     "R-ADV-16": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-176",
+      "name": "Quiet Product Tension",
+      "category": "9. Advertising & Campaign Design"
     },
     "R-ADV-17": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-177",
+      "name": "Responsive Campaign Grid",
+      "category": "9. Advertising & Campaign Design"
     },
     "R-ADV-18": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-178",
+      "name": "Three-Act Launch Sequence",
+      "category": "9. Advertising & Campaign Design"
     },
     "R-ADV-19": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-179",
+      "name": "Image-Copy Lockup Study",
+      "category": "9. Advertising & Campaign Design"
     },
     "R-ADV-20": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-180",
+      "name": "Material Transformation Sequence",
+      "category": "9. Advertising & Campaign Design"
     },
     "R-TYP-01": {
       "status": "pending"
