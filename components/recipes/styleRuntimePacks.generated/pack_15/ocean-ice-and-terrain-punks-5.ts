@@ -63,4 +63,595 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP15-192',
+    name: 'Abyssalpunk',
+    displayName: 'Abyssalpunk',
+    styleAnchors: ['Abyssalpunk', 'deep-sea trench punk', 'pressure-hull towns'],
+    category: '5. Ocean, Ice & Terrain Punks',
+    domain: 'deep-sea trench punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Abyssalpunk: cultures living in the deepest ocean trenches, with pressure-hulled towns, anglerfish-lure lamps and total crushing darkness around every scene.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; sink it into the black abyss, lit only by small lures and pressure-hull portholes.",
+      color_and_tone:
+        'Near-total black with deep navy, pale bone white and small cold cyan or amber lure lights.',
+      lighting_and_shadow:
+        'Tiny isolated light sources swallowed by darkness within a few meters, sharp falloff.',
+      texture_and_material:
+        'Thick riveted pressure hulls, porthole glass, marine snow, pale translucent deep-sea creatures.',
+      camera_and_composition:
+        'Small lit islands of detail inside vast darkness, huge creatures half seen at the edges.',
+      atmosphere_and_mood:
+        'Crushing, silent and awe-struck, the terror and wonder of the deepest place on Earth.',
+      rendering_and_quality:
+        'Low-key illustration with precise small light pools and drifting marine snow particles.',
+      creative_brief:
+        "Abyssalpunk: cultures living in the deepest ocean trenches, with pressure-hulled towns, anglerfish-lure lamps and total crushing darkness around every scene. Carry it through pressure-hull towns, lure lamps, marine snow, darkness swallowing light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'pressure-hull towns; lure lamps; marine snow; darkness swallowing light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-193',
+    name: 'Reefpunk',
+    displayName: 'Reefpunk',
+    styleAnchors: ['Reefpunk', 'coral-grown reef architecture punk', 'grown coral towers'],
+    category: '5. Ocean, Ice & Terrain Punks',
+    domain: 'coral-grown reef architecture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Reefpunk: whole towns grown from living coral in warm shallow seas, with branching coral towers, sponge furniture and fish swimming through every open window.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; grow its buildings, furniture and props out of living coral, sponge and shell in clear shallow water.",
+      color_and_tone:
+        'Vivid coral orange, magenta, lime and violet over sunlit turquoise and white sand.',
+      lighting_and_shadow:
+        'Bright caustic sunlight rippling across coral surfaces through shallow clear water.',
+      texture_and_material:
+        'Branching and brain coral, porous sponge, sea fans, shell and rippled sand.',
+      camera_and_composition:
+        'Busy underwater streets seen at eye level with schools of fish crossing the frame.',
+      atmosphere_and_mood:
+        'Lively, warm and colorful, a city that is also a living reef ecosystem.',
+      rendering_and_quality:
+        'Saturated underwater illustration with crisp caustic light and dense organic detail.',
+      creative_brief:
+        "Reefpunk: whole towns grown from living coral in warm shallow seas, with branching coral towers, sponge furniture and fish swimming through every open window. Carry it through grown coral towers, caustic light, fish in windows, sponge furniture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'grown coral towers; caustic light; fish in windows; sponge furniture',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-194',
+    name: 'Submarinepunk',
+    displayName: 'Submarinepunk',
+    styleAnchors: ['Submarinepunk', 'submarine crew culture punk', 'riveted compartments'],
+    category: '5. Ocean, Ice & Terrain Punks',
+    domain: 'submarine crew culture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Submarinepunk: cramped riveted submarine life, with brass periscopes, bunk-lined corridors, red battle lamps and crews that never see the sun.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; move it inside tight riveted submarine compartments full of pipes, valves and gauges.",
+      color_and_tone:
+        'Olive drab, brass and oiled steel with red battle lighting and cold green sonar glow.',
+      lighting_and_shadow:
+        'Red emergency lamps and green sonar screens cutting through cramped shadowy spaces.',
+      texture_and_material:
+        'Riveted steel, sweating pipes, brass valves, worn canvas bunks and condensation.',
+      camera_and_composition:
+        'Claustrophobic interiors with pipes crowding the edges and crew packed close together.',
+      atmosphere_and_mood:
+        'Tense, sweaty and brotherly, silent running deep beneath an enemy fleet.',
+      rendering_and_quality:
+        'Gritty detailed illustration with dense mechanical clutter and strong colored light.',
+      creative_brief:
+        "Submarinepunk: cramped riveted submarine life, with brass periscopes, bunk-lined corridors, red battle lamps and crews that never see the sun. Carry it through riveted compartments, red battle lamps, sonar glow, brass valves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'riveted compartments; red battle lamps; sonar glow; brass valves',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-195',
+    name: 'Kelppunk',
+    displayName: 'Kelppunk',
+    styleAnchors: ['Kelppunk', 'kelp forest culture punk', 'kelp cathedral stalks'],
+    category: '5. Ocean, Ice & Terrain Punks',
+    domain: 'kelp forest culture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Kelppunk: towering golden kelp forests turned into vertical cities, with rope-and-float dwellings, otter allies and slow swaying streets of seaweed.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; tie it into swaying kelp stalks, floats and rope walkways in a green-gold underwater forest.",
+      color_and_tone:
+        'Golden brown, olive and bottle green kelp in cool blue-green water with sun shafts.',
+      lighting_and_shadow:
+        'Sun shafts slanting down through the kelp canopy into cool green gloom below.',
+      texture_and_material:
+        'Glossy kelp blades, gas-filled floats, woven kelp rope, driftwood and sea urchins.',
+      camera_and_composition:
+        'Tall vertical frames with kelp stalks rising like columns and figures climbing them.',
+      atmosphere_and_mood:
+        'Swaying, calm and cathedral-like, a forest that breathes with the tide.',
+      rendering_and_quality:
+        'Luminous underwater illustration with layered swaying stalks and soft light shafts.',
+      creative_brief:
+        "Kelppunk: towering golden kelp forests turned into vertical cities, with rope-and-float dwellings, otter allies and slow swaying streets of seaweed. Carry it through kelp cathedral stalks, float dwellings, sun shafts, otter allies. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'kelp cathedral stalks; float dwellings; sun shafts; otter allies',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-196',
+    name: 'Tundrapunk',
+    displayName: 'Tundrapunk',
+    styleAnchors: ['Tundrapunk', 'arctic tundra nomad punk', 'reindeer sled towns'],
+    category: '5. Ocean, Ice & Terrain Punks',
+    domain: 'arctic tundra nomad punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Tundrapunk: nomadic cultures of the endless frozen tundra, with reindeer-drawn sled towns, fur-and-felt tents, bone tools and horizons of flat white.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; set it on a vast flat tundra with sled caravans, felt tents and heavy fur clothing.",
+      color_and_tone:
+        'Snow white, pale grey sky and low pink sun with deep red and indigo felt accents.',
+      lighting_and_shadow:
+        'Low polar sun casting long blue shadows across snow for most of the day.',
+      texture_and_material:
+        'Thick fur, felted wool, carved bone, sled runners, packed snow and frost.',
+      camera_and_composition:
+        'Wide flat horizons with small caravans crossing, long lines of shadow and breath.',
+      atmosphere_and_mood: 'Enduring, quiet and vast, people who move with the herds forever.',
+      rendering_and_quality:
+        'Crisp cold illustration with fine fur texture and long low-sun shadows.',
+      creative_brief:
+        "Tundrapunk: nomadic cultures of the endless frozen tundra, with reindeer-drawn sled towns, fur-and-felt tents, bone tools and horizons of flat white. Carry it through reindeer sled towns, felt tents, long polar shadows, fur and bone. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'reindeer sled towns; felt tents; long polar shadows; fur and bone',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-197',
+    name: 'Aurorapunk',
+    displayName: 'Aurorapunk',
+    styleAnchors: ['Aurorapunk', 'aurora-powered polar punk', 'harvested aurora'],
+    category: '5. Ocean, Ice & Terrain Punks',
+    domain: 'aurora-powered polar punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Aurorapunk: a polar culture that harvests the northern lights, with antenna towers, glowing aurora batteries and sky-fishing nets strung across the night.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; place it under a vivid aurora being caught, stored or channeled by polar machinery.",
+      color_and_tone:
+        'Aurora green, violet and magenta ribbons over deep night blue and cold snow.',
+      lighting_and_shadow:
+        'Rippling aurora light washing colored glows across snow, faces and metal.',
+      texture_and_material:
+        'Frosted antenna masts, glass aurora jars, copper coils and powdery snow.',
+      camera_and_composition:
+        'Low horizons with huge skies of moving aurora and small towers reaching up.',
+      atmosphere_and_mood: 'Electric and reverent, a people who drink light from the sky.',
+      rendering_and_quality:
+        'Luminous night illustration with flowing aurora ribbons and crisp frost detail.',
+      creative_brief:
+        "Aurorapunk: a polar culture that harvests the northern lights, with antenna towers, glowing aurora batteries and sky-fishing nets strung across the night. Carry it through harvested aurora, glowing light jars, antenna towers, sky nets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'harvested aurora; glowing light jars; antenna towers; sky nets',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-198',
+    name: 'Fjordpunk',
+    displayName: 'Fjordpunk',
+    styleAnchors: ['Fjordpunk', 'fjord cliff village punk', 'cliff-hung houses'],
+    category: '5. Ocean, Ice & Terrain Punks',
+    domain: 'fjord cliff village punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Fjordpunk: villages carved into the sheer walls of deep fjords, with cliff-hung houses, rope lifts, waterfall mills and longboats far below.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; hang it on towering fjord cliffs above dark water, with ladders, lifts and waterfalls.",
+      color_and_tone:
+        'Slate grey cliffs, deep green water and mossy greens with tarred black wood and red roofs.',
+      lighting_and_shadow:
+        'Moody overcast light with sudden sun breaking through mist onto the cliffs.',
+      texture_and_material: 'Wet stone, tarred timber, turf roofs, rope, mist and falling water.',
+      camera_and_composition:
+        'Extreme vertical scale with tiny houses high on cliff walls over deep water.',
+      atmosphere_and_mood: 'Dramatic, damp and hardy, life clinging to walls of stone.',
+      rendering_and_quality: 'Atmospheric illustration with deep vertical scale and misty depth.',
+      creative_brief:
+        "Fjordpunk: villages carved into the sheer walls of deep fjords, with cliff-hung houses, rope lifts, waterfall mills and longboats far below. Carry it through cliff-hung houses, rope lifts, waterfall mills, mist over dark water. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'cliff-hung houses; rope lifts; waterfall mills; mist over dark water',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-199',
+    name: 'Archipelagopunk',
+    displayName: 'Archipelagopunk',
+    styleAnchors: ['Archipelagopunk', 'island-hopping archipelago punk', 'island chains'],
+    category: '5. Ocean, Ice & Terrain Punks',
+    domain: 'island-hopping archipelago punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Archipelagopunk: a scattered nation of tiny islands linked by outrigger ferries, rope bridges, floating markets and shared canoe roads across turquoise water.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; spread it across small islands linked by boats, bridges and floating platforms.",
+      color_and_tone:
+        'Turquoise shallows, deep blue channels, white sand and palm greens with woven tan and red.',
+      lighting_and_shadow:
+        'Bright tropical sun with strong reflections and cloud shadows moving across the water.',
+      texture_and_material:
+        'Woven pandanus sails, lashed timber, rope bridges, coconut fibre and wet sand.',
+      camera_and_composition:
+        'High views over chains of islets and busy water traffic between them.',
+      atmosphere_and_mood: 'Open, sociable and seafaring, a country made of water and small land.',
+      rendering_and_quality:
+        'Bright crisp illustration with clear water reflections and woven detail.',
+      creative_brief:
+        "Archipelagopunk: a scattered nation of tiny islands linked by outrigger ferries, rope bridges, floating markets and shared canoe roads across turquoise water. Carry it through island chains, outrigger ferries, rope bridges, floating markets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'island chains; outrigger ferries; rope bridges; floating markets',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-200',
+    name: 'Stormpunk',
+    displayName: 'Stormpunk',
+    styleAnchors: ['Stormpunk', 'storm-chasing weather punk', 'lightning rods'],
+    category: '5. Ocean, Ice & Terrain Punks',
+    domain: 'storm-chasing weather punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Stormpunk: a culture that lives inside permanent storms, with lightning rods, wind-proof bunkers, storm-sail ships and crews who ride the weather.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; engulf it in violent storm weather, with lightning, driving rain and storm-proof machinery.",
+      color_and_tone:
+        'Bruised purple and slate storm clouds, electric white lightning and rain-soaked dark metals.',
+      lighting_and_shadow:
+        'Sudden lightning flashes freezing scenes in stark white against deep storm dark.',
+      texture_and_material:
+        'Wet oilskins, lightning rods, heavy chains, storm shutters, sheets of rain.',
+      camera_and_composition:
+        'Dramatic low angles with tilted horizons and huge cloud masses overhead.',
+      atmosphere_and_mood: 'Wild and exhilarating, people who laugh in the face of the storm.',
+      rendering_and_quality:
+        'High-contrast dramatic illustration with streaking rain and bright lightning.',
+      creative_brief:
+        "Stormpunk: a culture that lives inside permanent storms, with lightning rods, wind-proof bunkers, storm-sail ships and crews who ride the weather. Carry it through lightning rods, storm-sail ships, driving rain, lightning flashes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'lightning rods; storm-sail ships; driving rain; lightning flashes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-201',
+    name: 'Volcanopunk',
+    displayName: 'Volcanopunk',
+    styleAnchors: ['Volcanopunk', 'volcanic forge culture punk', 'lava-channel foundries'],
+    category: '5. Ocean, Ice & Terrain Punks',
+    domain: 'volcanic forge culture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Volcanopunk: forge cities built on the flanks of active volcanoes, with lava-channel foundries, obsidian armor, ash-grey streets and heat-shimmer everywhere.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; place it on a living volcano, among lava channels, basalt forges and drifting ash.",
+      color_and_tone:
+        'Molten orange and red glowing against black basalt, charcoal ash and sulfur yellow.',
+      lighting_and_shadow:
+        'Hot glow from lava below lighting faces upward, smoky dark skies above.',
+      texture_and_material:
+        'Black basalt, glassy obsidian, cooling lava crust, ash, soot and heat haze.',
+      camera_and_composition:
+        'Dramatic slopes with glowing rivers cutting through dark rock and tiny figures.',
+      atmosphere_and_mood: 'Fierce and proud, a people who live on top of the fire and use it.',
+      rendering_and_quality:
+        'High-contrast glowing illustration with heat shimmer and ash particle detail.',
+      creative_brief:
+        "Volcanopunk: forge cities built on the flanks of active volcanoes, with lava-channel foundries, obsidian armor, ash-grey streets and heat-shimmer everywhere. Carry it through lava-channel foundries, obsidian armor, ash skies, upward lava glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'lava-channel foundries; obsidian armor; ash skies; upward lava glow',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-202',
+    name: 'Geyserpunk',
+    displayName: 'Geyserpunk',
+    styleAnchors: ['Geyserpunk', 'geothermal steam culture punk', 'erupting geysers'],
+    category: '5. Ocean, Ice & Terrain Punks',
+    domain: 'geothermal steam culture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Geyserpunk: a culture powered by geysers and hot springs, with steam-timed clocks, terraced mineral pools, pipe organs of vents and bathhouse cities.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; surround it with erupting geysers, steaming terraced pools and geothermal pipes.",
+      color_and_tone:
+        'Mineral turquoise pools, sulfur yellow and rust orange crusts with white steam.',
+      lighting_and_shadow: 'Soft diffused light through drifting steam, bright sun catching spray.',
+      texture_and_material:
+        'Mineral terraces, bubbling mud, copper pipes, wet stone and billowing steam.',
+      camera_and_composition:
+        'Wide views of terraced pools and tall eruptions dwarfing bathers below.',
+      atmosphere_and_mood:
+        'Warm, steamy and rhythmic, a city that lives by the timing of the earth.',
+      rendering_and_quality:
+        'Soft luminous illustration with layered steam and saturated mineral colors.',
+      creative_brief:
+        "Geyserpunk: a culture powered by geysers and hot springs, with steam-timed clocks, terraced mineral pools, pipe organs of vents and bathhouse cities. Carry it through erupting geysers, mineral terraces, steam clocks, bathhouse cities. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'erupting geysers; mineral terraces; steam clocks; bathhouse cities',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-203',
+    name: 'Cavepunk',
+    displayName: 'Cavepunk',
+    styleAnchors: ['Cavepunk', 'underground cave city punk', 'stalactite towers'],
+    category: '5. Ocean, Ice & Terrain Punks',
+    domain: 'underground cave city punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cavepunk: whole civilizations living deep in cave systems, with stalactite towers, glowworm skies, underground rivers and carved stone streets.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; move it deep underground among stalactites, carved stone and glowing cave life.",
+      color_and_tone:
+        'Dark wet stone greys and ochres with blue-green glowworm light and warm torch amber.',
+      lighting_and_shadow:
+        'Torchlight and glowing cave organisms in deep darkness, dramatic shadows on rock.',
+      texture_and_material:
+        'Wet limestone, dripping stalactites, carved stone, still water and crystals.',
+      camera_and_composition: 'Vast caverns with tiny figures and forests of stalactites overhead.',
+      atmosphere_and_mood: 'Hushed, echoing and ancient, a sky made of rock.',
+      rendering_and_quality:
+        'Atmospheric low-light illustration with wet stone highlights and deep space.',
+      creative_brief:
+        "Cavepunk: whole civilizations living deep in cave systems, with stalactite towers, glowworm skies, underground rivers and carved stone streets. Carry it through stalactite towers, glowworm skies, underground rivers, torch amber. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'stalactite towers; glowworm skies; underground rivers; torch amber',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-204',
+    name: 'Canyonpunk',
+    displayName: 'Canyonpunk',
+    styleAnchors: ['Canyonpunk', 'canyon wall city punk', 'cliff dwellings'],
+    category: '5. Ocean, Ice & Terrain Punks',
+    domain: 'canyon wall city punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Canyonpunk: cities carved into red canyon walls, with cliff dwellings, rope bridges spanning chasms, wind-glider couriers and sunset-lit sandstone.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; carve it into layered red canyon walls, with bridges across deep drops.",
+      color_and_tone:
+        'Red, orange and ochre sandstone bands with deep blue shadow and sunset gold.',
+      lighting_and_shadow:
+        'Hard sun striking canyon walls with deep blue shade in the gorge below.',
+      texture_and_material:
+        'Layered sandstone, carved adobe, woven rope bridges, leather and dust.',
+      camera_and_composition:
+        'Dizzying views across chasms, bridges and cliff dwellings at many heights.',
+      atmosphere_and_mood: 'Bold and windswept, a frontier living on the edge of the drop.',
+      rendering_and_quality: 'Warm saturated illustration with strong strata lines and depth.',
+      creative_brief:
+        "Canyonpunk: cities carved into red canyon walls, with cliff dwellings, rope bridges spanning chasms, wind-glider couriers and sunset-lit sandstone. Carry it through cliff dwellings, chasm bridges, wind gliders, sandstone strata. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'cliff dwellings; chasm bridges; wind gliders; sandstone strata',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-205',
+    name: 'Cliffpunk',
+    displayName: 'Cliffpunk',
+    styleAnchors: ['Cliffpunk', 'vertical sea-cliff colony punk', 'ladder streets'],
+    category: '5. Ocean, Ice & Terrain Punks',
+    domain: 'vertical sea-cliff colony punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cliffpunk: towns bolted to vertical sea cliffs among seabird colonies, with ladder streets, harness workers, wind turbines and waves exploding far below.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; bolt it to a sheer sea cliff with ladders, harnesses and seabirds wheeling around.",
+      color_and_tone:
+        'Grey and white chalky stone, sea blue and white foam with orange safety harness accents.',
+      lighting_and_shadow:
+        'Bright windy daylight with fast cloud shadows and spray glinting below.',
+      texture_and_material:
+        'Chalk cliff, bolted steel, iron ladders, ropes, nesting straw and sea spray.',
+      camera_and_composition:
+        'Vertical views hanging on the cliff, with the sea far below and birds around.',
+      atmosphere_and_mood:
+        'Windy, loud and daring, everyday life with a huge fall beneath every step.',
+      rendering_and_quality:
+        'Crisp airy illustration with strong vertical depth and flying seabirds.',
+      creative_brief:
+        "Cliffpunk: towns bolted to vertical sea cliffs among seabird colonies, with ladder streets, harness workers, wind turbines and waves exploding far below. Carry it through ladder streets, harness workers, seabird colonies, waves far below. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'ladder streets; harness workers; seabird colonies; waves far below',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-206',
+    name: 'Swamppunk',
+    displayName: 'Swamppunk',
+    styleAnchors: ['Swamppunk', 'bayou swamp culture punk', 'stilt towns'],
+    category: '5. Ocean, Ice & Terrain Punks',
+    domain: 'bayou swamp culture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Swamppunk: stilt towns deep in bayous and mangrove swamps, with fan-boat taverns, lantern-hung cypress trees, gator-hide gear and mist on black water.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; set it among stilt houses, cypress roots and still black swamp water in mist.",
+      color_and_tone: 'Murky greens and browns, black water, moss grey and warm lantern orange.',
+      lighting_and_shadow:
+        'Hazy dim light through hanging moss and warm lanterns reflected on dark water.',
+      texture_and_material:
+        'Weathered stilts, hanging moss, cypress roots, duckweed, rusted tin roofs.',
+      camera_and_composition:
+        'Low water-level views through roots and moss with boats gliding between houses.',
+      atmosphere_and_mood:
+        'Humid, mysterious and musical, stories told on porches over dark water.',
+      rendering_and_quality: 'Moody illustration with soft mist layers and rich reflections.',
+      creative_brief:
+        "Swamppunk: stilt towns deep in bayous and mangrove swamps, with fan-boat taverns, lantern-hung cypress trees, gator-hide gear and mist on black water. Carry it through stilt towns, hanging moss, lantern reflections, black water. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'stilt towns; hanging moss; lantern reflections; black water',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-207',
+    name: 'Junglepunk',
+    displayName: 'Junglepunk',
+    styleAnchors: ['Junglepunk', 'rainforest canopy culture punk', 'canopy cities'],
+    category: '5. Ocean, Ice & Terrain Punks',
+    domain: 'rainforest canopy culture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Junglepunk: canopy cities in dense rainforests, with vine elevators, treetop markets, waterfall power and bright parrots and frogs everywhere.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; weave it into a dense green canopy with vines, giant leaves, waterfalls and treetop platforms.",
+      color_and_tone:
+        'Deep saturated greens with parrot red, frog blue and orchid pink accents and golden light.',
+      lighting_and_shadow:
+        'Dappled light shafts breaking through the canopy into humid green shadow.',
+      texture_and_material:
+        'Giant leaves, hanging vines, moss, bark, waterfall spray and woven platforms.',
+      camera_and_composition:
+        'Layered depth of foliage with platforms at many heights and animals peeking in.',
+      atmosphere_and_mood: 'Lush, loud and teeming, a city where nature is always winning.',
+      rendering_and_quality: 'Richly layered illustration with dense foliage and humid light.',
+      creative_brief:
+        "Junglepunk: canopy cities in dense rainforests, with vine elevators, treetop markets, waterfall power and bright parrots and frogs everywhere. Carry it through canopy cities, vine elevators, light shafts, bright jungle animals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'canopy cities; vine elevators; light shafts; bright jungle animals',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-208',
+    name: 'Saltflatpunk',
+    displayName: 'Saltflatpunk',
+    styleAnchors: ['Saltflatpunk', 'salt flat speed culture punk', 'mirror horizons'],
+    category: '5. Ocean, Ice & Terrain Punks',
+    domain: 'salt flat speed culture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Saltflatpunk: nomad speed-racers of endless white salt flats, with land-yachts, mirror-flooded horizons, salt-block towns and blinding sun.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; place it on an infinite white salt flat, with mirror reflections and speed machines.",
+      color_and_tone:
+        'Blinding white salt, pale blue sky and mirror reflections with hot orange and chrome accents.',
+      lighting_and_shadow:
+        'Harsh overhead sun and hard short shadows, with glare off the white ground.',
+      texture_and_material:
+        'Cracked hexagonal salt crust, chrome, sailcloth, salt blocks and thin flood water.',
+      camera_and_composition:
+        'Minimal flat horizons with mirror reflections and tiny fast machines.',
+      atmosphere_and_mood: 'Blinding, empty and fast, freedom and heat with nowhere to hide.',
+      rendering_and_quality: 'Clean bright illustration with crisp reflections and heat shimmer.',
+      creative_brief:
+        "Saltflatpunk: nomad speed-racers of endless white salt flats, with land-yachts, mirror-flooded horizons, salt-block towns and blinding sun. Carry it through mirror horizons, land-yachts, hexagon salt crust, blinding sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'mirror horizons; land-yachts; hexagon salt crust; blinding sun',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-209',
+    name: 'Alpinepunk',
+    displayName: 'Alpinepunk',
+    styleAnchors: ['Alpinepunk', 'high mountain culture punk', 'cable-car towns'],
+    category: '5. Ocean, Ice & Terrain Punks',
+    domain: 'high mountain culture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Alpinepunk: villages and monasteries on impossible mountain peaks, with cable-car towns, avalanche walls, prayer-flag bridges and climbers who never come down.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; perch it on steep snowy peaks with cable lines, stone walls and thin clouds below.",
+      color_and_tone:
+        'Snow white, granite grey and deep sky blue with bright flag colors and warm wood.',
+      lighting_and_shadow:
+        'Crisp high-altitude sun with deep blue shadows and clouds glowing below.',
+      texture_and_material: 'Granite, packed snow, ice, weathered timber, steel cable and wool.',
+      camera_and_composition:
+        'Dizzying high views with peaks above clouds and cable cars crossing between.',
+      atmosphere_and_mood: 'Thin-aired, spiritual and daring, a people living above the clouds.',
+      rendering_and_quality:
+        'Crisp bright illustration with sharp ridges and clear atmospheric depth.',
+      creative_brief:
+        "Alpinepunk: villages and monasteries on impossible mountain peaks, with cable-car towns, avalanche walls, prayer-flag bridges and climbers who never come down. Carry it through cable-car towns, peaks above clouds, avalanche walls, prayer-flag bridges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'cable-car towns; peaks above clouds; avalanche walls; prayer-flag bridges',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-200
+packId: pack_15
+name: Stormpunk
+styleAnchors:
+  - Stormpunk
+  - storm-chasing weather punk
+  - lightning rods
+displayName: Stormpunk
+category: 5. Ocean, Ice & Terrain Punks
+domain: storm-chasing weather punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ocean-ice-and-terrain-punks
+  - stormpunk
+  - punk
+  - terrain
+visualDna:
+  aesthetic: 'Stormpunk: a culture that lives inside permanent storms, with lightning rods, wind-proof bunkers, storm-sail ships and crews who ride the weather.'
+  subject_treatment: Keep the prompt's subject and setting; engulf it in violent storm weather, with lightning, driving rain and storm-proof machinery.
+  color_and_tone: Bruised purple and slate storm clouds, electric white lightning and rain-soaked dark metals.
+  lighting_and_shadow: Sudden lightning flashes freezing scenes in stark white against deep storm dark.
+  texture_and_material: Wet oilskins, lightning rods, heavy chains, storm shutters, sheets of rain.
+  camera_and_composition: Dramatic low angles with tilted horizons and huge cloud masses overhead.
+  atmosphere_and_mood: Wild and exhilarating, people who laugh in the face of the storm.
+  rendering_and_quality: High-contrast dramatic illustration with streaking rain and bright lightning.
+  creative_brief: "Stormpunk: a culture that lives inside permanent storms, with lightning rods, wind-proof bunkers, storm-sail ships and crews who ride the weather. Carry it through lightning rods, storm-sail ships, driving rain, lightning flashes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: lightning rods; storm-sail ships; driving rain; lightning flashes
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - generic stock landscape postcard
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: ocean-ice-and-terrain-punks
+  categoryName: 5. Ocean, Ice & Terrain Punks
+  tags:
+    - curation-v2
+    - ocean-ice-and-terrain-punks
+    - stormpunk
+    - punk
+    - terrain
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: storm-chasing weather punk

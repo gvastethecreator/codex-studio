@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-193
+packId: pack_15
+name: Reefpunk
+styleAnchors:
+  - Reefpunk
+  - coral-grown reef architecture punk
+  - grown coral towers
+displayName: Reefpunk
+category: 5. Ocean, Ice & Terrain Punks
+domain: coral-grown reef architecture punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ocean-ice-and-terrain-punks
+  - reefpunk
+  - punk
+  - terrain
+visualDna:
+  aesthetic: 'Reefpunk: whole towns grown from living coral in warm shallow seas, with branching coral towers, sponge furniture and fish swimming through every open window.'
+  subject_treatment: Keep the prompt's subject and setting; grow its buildings, furniture and props out of living coral, sponge and shell in clear shallow water.
+  color_and_tone: Vivid coral orange, magenta, lime and violet over sunlit turquoise and white sand.
+  lighting_and_shadow: Bright caustic sunlight rippling across coral surfaces through shallow clear water.
+  texture_and_material: Branching and brain coral, porous sponge, sea fans, shell and rippled sand.
+  camera_and_composition: Busy underwater streets seen at eye level with schools of fish crossing the frame.
+  atmosphere_and_mood: Lively, warm and colorful, a city that is also a living reef ecosystem.
+  rendering_and_quality: Saturated underwater illustration with crisp caustic light and dense organic detail.
+  creative_brief: "Reefpunk: whole towns grown from living coral in warm shallow seas, with branching coral towers, sponge furniture and fish swimming through every open window. Carry it through grown coral towers, caustic light, fish in windows, sponge furniture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: grown coral towers; caustic light; fish in windows; sponge furniture
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - generic stock landscape postcard
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: ocean-ice-and-terrain-punks
+  categoryName: 5. Ocean, Ice & Terrain Punks
+  tags:
+    - curation-v2
+    - ocean-ice-and-terrain-punks
+    - reefpunk
+    - punk
+    - terrain
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: coral-grown reef architecture punk

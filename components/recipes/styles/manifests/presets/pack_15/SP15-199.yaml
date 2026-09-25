@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-199
+packId: pack_15
+name: Archipelagopunk
+styleAnchors:
+  - Archipelagopunk
+  - island-hopping archipelago punk
+  - island chains
+displayName: Archipelagopunk
+category: 5. Ocean, Ice & Terrain Punks
+domain: island-hopping archipelago punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ocean-ice-and-terrain-punks
+  - archipelagopunk
+  - punk
+  - terrain
+visualDna:
+  aesthetic: 'Archipelagopunk: a scattered nation of tiny islands linked by outrigger ferries, rope bridges, floating markets and shared canoe roads across turquoise water.'
+  subject_treatment: Keep the prompt's subject and setting; spread it across small islands linked by boats, bridges and floating platforms.
+  color_and_tone: Turquoise shallows, deep blue channels, white sand and palm greens with woven tan and red.
+  lighting_and_shadow: Bright tropical sun with strong reflections and cloud shadows moving across the water.
+  texture_and_material: Woven pandanus sails, lashed timber, rope bridges, coconut fibre and wet sand.
+  camera_and_composition: High views over chains of islets and busy water traffic between them.
+  atmosphere_and_mood: Open, sociable and seafaring, a country made of water and small land.
+  rendering_and_quality: Bright crisp illustration with clear water reflections and woven detail.
+  creative_brief: "Archipelagopunk: a scattered nation of tiny islands linked by outrigger ferries, rope bridges, floating markets and shared canoe roads across turquoise water. Carry it through island chains, outrigger ferries, rope bridges, floating markets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: island chains; outrigger ferries; rope bridges; floating markets
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - generic stock landscape postcard
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: ocean-ice-and-terrain-punks
+  categoryName: 5. Ocean, Ice & Terrain Punks
+  tags:
+    - curation-v2
+    - ocean-ice-and-terrain-punks
+    - archipelagopunk
+    - punk
+    - terrain
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: island-hopping archipelago punk

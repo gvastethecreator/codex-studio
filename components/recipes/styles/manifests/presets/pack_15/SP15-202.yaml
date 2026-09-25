@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-202
+packId: pack_15
+name: Geyserpunk
+styleAnchors:
+  - Geyserpunk
+  - geothermal steam culture punk
+  - erupting geysers
+displayName: Geyserpunk
+category: 5. Ocean, Ice & Terrain Punks
+domain: geothermal steam culture punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ocean-ice-and-terrain-punks
+  - geyserpunk
+  - punk
+  - terrain
+visualDna:
+  aesthetic: 'Geyserpunk: a culture powered by geysers and hot springs, with steam-timed clocks, terraced mineral pools, pipe organs of vents and bathhouse cities.'
+  subject_treatment: Keep the prompt's subject and setting; surround it with erupting geysers, steaming terraced pools and geothermal pipes.
+  color_and_tone: Mineral turquoise pools, sulfur yellow and rust orange crusts with white steam.
+  lighting_and_shadow: Soft diffused light through drifting steam, bright sun catching spray.
+  texture_and_material: Mineral terraces, bubbling mud, copper pipes, wet stone and billowing steam.
+  camera_and_composition: Wide views of terraced pools and tall eruptions dwarfing bathers below.
+  atmosphere_and_mood: Warm, steamy and rhythmic, a city that lives by the timing of the earth.
+  rendering_and_quality: Soft luminous illustration with layered steam and saturated mineral colors.
+  creative_brief: "Geyserpunk: a culture powered by geysers and hot springs, with steam-timed clocks, terraced mineral pools, pipe organs of vents and bathhouse cities. Carry it through erupting geysers, mineral terraces, steam clocks, bathhouse cities. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: erupting geysers; mineral terraces; steam clocks; bathhouse cities
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - generic stock landscape postcard
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: ocean-ice-and-terrain-punks
+  categoryName: 5. Ocean, Ice & Terrain Punks
+  tags:
+    - curation-v2
+    - ocean-ice-and-terrain-punks
+    - geyserpunk
+    - punk
+    - terrain
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: geothermal steam culture punk

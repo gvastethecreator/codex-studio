@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-203
+packId: pack_15
+name: Cavepunk
+styleAnchors:
+  - Cavepunk
+  - underground cave city punk
+  - stalactite towers
+displayName: Cavepunk
+category: 5. Ocean, Ice & Terrain Punks
+domain: underground cave city punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ocean-ice-and-terrain-punks
+  - cavepunk
+  - punk
+  - terrain
+visualDna:
+  aesthetic: 'Cavepunk: whole civilizations living deep in cave systems, with stalactite towers, glowworm skies, underground rivers and carved stone streets.'
+  subject_treatment: Keep the prompt's subject and setting; move it deep underground among stalactites, carved stone and glowing cave life.
+  color_and_tone: Dark wet stone greys and ochres with blue-green glowworm light and warm torch amber.
+  lighting_and_shadow: Torchlight and glowing cave organisms in deep darkness, dramatic shadows on rock.
+  texture_and_material: Wet limestone, dripping stalactites, carved stone, still water and crystals.
+  camera_and_composition: Vast caverns with tiny figures and forests of stalactites overhead.
+  atmosphere_and_mood: Hushed, echoing and ancient, a sky made of rock.
+  rendering_and_quality: Atmospheric low-light illustration with wet stone highlights and deep space.
+  creative_brief: "Cavepunk: whole civilizations living deep in cave systems, with stalactite towers, glowworm skies, underground rivers and carved stone streets. Carry it through stalactite towers, glowworm skies, underground rivers, torch amber. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: stalactite towers; glowworm skies; underground rivers; torch amber
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - generic stock landscape postcard
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: ocean-ice-and-terrain-punks
+  categoryName: 5. Ocean, Ice & Terrain Punks
+  tags:
+    - curation-v2
+    - ocean-ice-and-terrain-punks
+    - cavepunk
+    - punk
+    - terrain
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: underground cave city punk

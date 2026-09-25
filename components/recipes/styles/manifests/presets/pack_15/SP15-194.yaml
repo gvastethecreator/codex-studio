@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-194
+packId: pack_15
+name: Submarinepunk
+styleAnchors:
+  - Submarinepunk
+  - submarine crew culture punk
+  - riveted compartments
+displayName: Submarinepunk
+category: 5. Ocean, Ice & Terrain Punks
+domain: submarine crew culture punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ocean-ice-and-terrain-punks
+  - submarinepunk
+  - punk
+  - terrain
+visualDna:
+  aesthetic: 'Submarinepunk: cramped riveted submarine life, with brass periscopes, bunk-lined corridors, red battle lamps and crews that never see the sun.'
+  subject_treatment: Keep the prompt's subject and setting; move it inside tight riveted submarine compartments full of pipes, valves and gauges.
+  color_and_tone: Olive drab, brass and oiled steel with red battle lighting and cold green sonar glow.
+  lighting_and_shadow: Red emergency lamps and green sonar screens cutting through cramped shadowy spaces.
+  texture_and_material: Riveted steel, sweating pipes, brass valves, worn canvas bunks and condensation.
+  camera_and_composition: Claustrophobic interiors with pipes crowding the edges and crew packed close together.
+  atmosphere_and_mood: Tense, sweaty and brotherly, silent running deep beneath an enemy fleet.
+  rendering_and_quality: Gritty detailed illustration with dense mechanical clutter and strong colored light.
+  creative_brief: "Submarinepunk: cramped riveted submarine life, with brass periscopes, bunk-lined corridors, red battle lamps and crews that never see the sun. Carry it through riveted compartments, red battle lamps, sonar glow, brass valves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: riveted compartments; red battle lamps; sonar glow; brass valves
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - generic stock landscape postcard
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: ocean-ice-and-terrain-punks
+  categoryName: 5. Ocean, Ice & Terrain Punks
+  tags:
+    - curation-v2
+    - ocean-ice-and-terrain-punks
+    - submarinepunk
+    - punk
+    - terrain
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: submarine crew culture punk

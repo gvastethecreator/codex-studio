@@ -104,6 +104,24 @@ categories:
     presetRefs:
       - pack_15/SP15-097.yaml
       - pack_15/SP15-098.yaml
+      - pack_15/SP15-192.yaml
+      - pack_15/SP15-193.yaml
+      - pack_15/SP15-194.yaml
+      - pack_15/SP15-195.yaml
+      - pack_15/SP15-196.yaml
+      - pack_15/SP15-197.yaml
+      - pack_15/SP15-198.yaml
+      - pack_15/SP15-199.yaml
+      - pack_15/SP15-200.yaml
+      - pack_15/SP15-201.yaml
+      - pack_15/SP15-202.yaml
+      - pack_15/SP15-203.yaml
+      - pack_15/SP15-204.yaml
+      - pack_15/SP15-205.yaml
+      - pack_15/SP15-206.yaml
+      - pack_15/SP15-207.yaml
+      - pack_15/SP15-208.yaml
+      - pack_15/SP15-209.yaml
   - id: street-riot-and-diy-punks
     name: 6. Street, Riot & DIY Punks
     presetRefs:
@@ -224,6 +242,24 @@ presetRefs:
   - pack_15/SP15-191.yaml
   - pack_15/SP15-097.yaml
   - pack_15/SP15-098.yaml
+  - pack_15/SP15-192.yaml
+  - pack_15/SP15-193.yaml
+  - pack_15/SP15-194.yaml
+  - pack_15/SP15-195.yaml
+  - pack_15/SP15-196.yaml
+  - pack_15/SP15-197.yaml
+  - pack_15/SP15-198.yaml
+  - pack_15/SP15-199.yaml
+  - pack_15/SP15-200.yaml
+  - pack_15/SP15-201.yaml
+  - pack_15/SP15-202.yaml
+  - pack_15/SP15-203.yaml
+  - pack_15/SP15-204.yaml
+  - pack_15/SP15-205.yaml
+  - pack_15/SP15-206.yaml
+  - pack_15/SP15-207.yaml
+  - pack_15/SP15-208.yaml
+  - pack_15/SP15-209.yaml
   - pack_15/SP15-101.yaml
   - pack_15/SP15-102.yaml
   - pack_15/SP15-103.yaml

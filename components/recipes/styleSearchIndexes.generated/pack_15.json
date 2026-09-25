@@ -3,7 +3,7 @@
     {
       "id": "pack_15",
       "name": "Punk Spectrum Vault",
-      "presetCount": 104
+      "presetCount": 122
     }
   ],
   "presets": [
@@ -1150,6 +1150,282 @@
       "searchableText": "sp15-098 icepunk 5. ocean, ice & terrain punks terrain futures pack_15 punk spectrum vault ocean-ice-and-terrain-punks punk-spectrum-vault ocean-ice-and-terrain-punks"
     },
     {
+      "id": "SP15-192",
+      "name": "Abyssalpunk",
+      "styleAnchors": ["Abyssalpunk", "deep-sea trench punk", "pressure-hull towns"],
+      "ref": "pack_15/SP15-192.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "ocean-ice-and-terrain-punks",
+      "categoryName": "5. Ocean, Ice & Terrain Punks",
+      "domain": "deep-sea trench punk",
+      "tags": ["punk-spectrum-vault", "ocean-ice-and-terrain-punks", "deep-sea-trench-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-192 abyssalpunk deep-sea trench punk pressure-hull towns 5. ocean, ice & terrain punks terrain futures deep-sea trench punk pack_15 punk spectrum vault ocean-ice-and-terrain-punks punk-spectrum-vault ocean-ice-and-terrain-punks deep-sea-trench-punk"
+    },
+    {
+      "id": "SP15-193",
+      "name": "Reefpunk",
+      "styleAnchors": ["Reefpunk", "coral-grown reef architecture punk", "grown coral towers"],
+      "ref": "pack_15/SP15-193.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "ocean-ice-and-terrain-punks",
+      "categoryName": "5. Ocean, Ice & Terrain Punks",
+      "domain": "coral-grown reef architecture punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "ocean-ice-and-terrain-punks",
+        "coral-grown-reef-architecture-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-193 reefpunk coral-grown reef architecture punk grown coral towers 5. ocean, ice & terrain punks terrain futures coral-grown reef architecture punk pack_15 punk spectrum vault ocean-ice-and-terrain-punks punk-spectrum-vault ocean-ice-and-terrain-punks coral-grown-reef-architecture-punk"
+    },
+    {
+      "id": "SP15-194",
+      "name": "Submarinepunk",
+      "styleAnchors": ["Submarinepunk", "submarine crew culture punk", "riveted compartments"],
+      "ref": "pack_15/SP15-194.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "ocean-ice-and-terrain-punks",
+      "categoryName": "5. Ocean, Ice & Terrain Punks",
+      "domain": "submarine crew culture punk",
+      "tags": ["punk-spectrum-vault", "ocean-ice-and-terrain-punks", "submarine-crew-culture-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-194 submarinepunk submarine crew culture punk riveted compartments 5. ocean, ice & terrain punks terrain futures submarine crew culture punk pack_15 punk spectrum vault ocean-ice-and-terrain-punks punk-spectrum-vault ocean-ice-and-terrain-punks submarine-crew-culture-punk"
+    },
+    {
+      "id": "SP15-195",
+      "name": "Kelppunk",
+      "styleAnchors": ["Kelppunk", "kelp forest culture punk", "kelp cathedral stalks"],
+      "ref": "pack_15/SP15-195.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "ocean-ice-and-terrain-punks",
+      "categoryName": "5. Ocean, Ice & Terrain Punks",
+      "domain": "kelp forest culture punk",
+      "tags": ["punk-spectrum-vault", "ocean-ice-and-terrain-punks", "kelp-forest-culture-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-195 kelppunk kelp forest culture punk kelp cathedral stalks 5. ocean, ice & terrain punks terrain futures kelp forest culture punk pack_15 punk spectrum vault ocean-ice-and-terrain-punks punk-spectrum-vault ocean-ice-and-terrain-punks kelp-forest-culture-punk"
+    },
+    {
+      "id": "SP15-196",
+      "name": "Tundrapunk",
+      "styleAnchors": ["Tundrapunk", "arctic tundra nomad punk", "reindeer sled towns"],
+      "ref": "pack_15/SP15-196.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "ocean-ice-and-terrain-punks",
+      "categoryName": "5. Ocean, Ice & Terrain Punks",
+      "domain": "arctic tundra nomad punk",
+      "tags": ["punk-spectrum-vault", "ocean-ice-and-terrain-punks", "arctic-tundra-nomad-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-196 tundrapunk arctic tundra nomad punk reindeer sled towns 5. ocean, ice & terrain punks terrain futures arctic tundra nomad punk pack_15 punk spectrum vault ocean-ice-and-terrain-punks punk-spectrum-vault ocean-ice-and-terrain-punks arctic-tundra-nomad-punk"
+    },
+    {
+      "id": "SP15-197",
+      "name": "Aurorapunk",
+      "styleAnchors": ["Aurorapunk", "aurora-powered polar punk", "harvested aurora"],
+      "ref": "pack_15/SP15-197.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "ocean-ice-and-terrain-punks",
+      "categoryName": "5. Ocean, Ice & Terrain Punks",
+      "domain": "aurora-powered polar punk",
+      "tags": ["punk-spectrum-vault", "ocean-ice-and-terrain-punks", "aurora-powered-polar-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-197 aurorapunk aurora-powered polar punk harvested aurora 5. ocean, ice & terrain punks terrain futures aurora-powered polar punk pack_15 punk spectrum vault ocean-ice-and-terrain-punks punk-spectrum-vault ocean-ice-and-terrain-punks aurora-powered-polar-punk"
+    },
+    {
+      "id": "SP15-198",
+      "name": "Fjordpunk",
+      "styleAnchors": ["Fjordpunk", "fjord cliff village punk", "cliff-hung houses"],
+      "ref": "pack_15/SP15-198.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "ocean-ice-and-terrain-punks",
+      "categoryName": "5. Ocean, Ice & Terrain Punks",
+      "domain": "fjord cliff village punk",
+      "tags": ["punk-spectrum-vault", "ocean-ice-and-terrain-punks", "fjord-cliff-village-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-198 fjordpunk fjord cliff village punk cliff-hung houses 5. ocean, ice & terrain punks terrain futures fjord cliff village punk pack_15 punk spectrum vault ocean-ice-and-terrain-punks punk-spectrum-vault ocean-ice-and-terrain-punks fjord-cliff-village-punk"
+    },
+    {
+      "id": "SP15-199",
+      "name": "Archipelagopunk",
+      "styleAnchors": ["Archipelagopunk", "island-hopping archipelago punk", "island chains"],
+      "ref": "pack_15/SP15-199.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "ocean-ice-and-terrain-punks",
+      "categoryName": "5. Ocean, Ice & Terrain Punks",
+      "domain": "island-hopping archipelago punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "ocean-ice-and-terrain-punks",
+        "island-hopping-archipelago-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-199 archipelagopunk island-hopping archipelago punk island chains 5. ocean, ice & terrain punks terrain futures island-hopping archipelago punk pack_15 punk spectrum vault ocean-ice-and-terrain-punks punk-spectrum-vault ocean-ice-and-terrain-punks island-hopping-archipelago-punk"
+    },
+    {
+      "id": "SP15-200",
+      "name": "Stormpunk",
+      "styleAnchors": ["Stormpunk", "storm-chasing weather punk", "lightning rods"],
+      "ref": "pack_15/SP15-200.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "ocean-ice-and-terrain-punks",
+      "categoryName": "5. Ocean, Ice & Terrain Punks",
+      "domain": "storm-chasing weather punk",
+      "tags": ["punk-spectrum-vault", "ocean-ice-and-terrain-punks", "storm-chasing-weather-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-200 stormpunk storm-chasing weather punk lightning rods 5. ocean, ice & terrain punks terrain futures storm-chasing weather punk pack_15 punk spectrum vault ocean-ice-and-terrain-punks punk-spectrum-vault ocean-ice-and-terrain-punks storm-chasing-weather-punk"
+    },
+    {
+      "id": "SP15-201",
+      "name": "Volcanopunk",
+      "styleAnchors": ["Volcanopunk", "volcanic forge culture punk", "lava-channel foundries"],
+      "ref": "pack_15/SP15-201.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "ocean-ice-and-terrain-punks",
+      "categoryName": "5. Ocean, Ice & Terrain Punks",
+      "domain": "volcanic forge culture punk",
+      "tags": ["punk-spectrum-vault", "ocean-ice-and-terrain-punks", "volcanic-forge-culture-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-201 volcanopunk volcanic forge culture punk lava-channel foundries 5. ocean, ice & terrain punks terrain futures volcanic forge culture punk pack_15 punk spectrum vault ocean-ice-and-terrain-punks punk-spectrum-vault ocean-ice-and-terrain-punks volcanic-forge-culture-punk"
+    },
+    {
+      "id": "SP15-202",
+      "name": "Geyserpunk",
+      "styleAnchors": ["Geyserpunk", "geothermal steam culture punk", "erupting geysers"],
+      "ref": "pack_15/SP15-202.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "ocean-ice-and-terrain-punks",
+      "categoryName": "5. Ocean, Ice & Terrain Punks",
+      "domain": "geothermal steam culture punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "ocean-ice-and-terrain-punks",
+        "geothermal-steam-culture-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-202 geyserpunk geothermal steam culture punk erupting geysers 5. ocean, ice & terrain punks terrain futures geothermal steam culture punk pack_15 punk spectrum vault ocean-ice-and-terrain-punks punk-spectrum-vault ocean-ice-and-terrain-punks geothermal-steam-culture-punk"
+    },
+    {
+      "id": "SP15-203",
+      "name": "Cavepunk",
+      "styleAnchors": ["Cavepunk", "underground cave city punk", "stalactite towers"],
+      "ref": "pack_15/SP15-203.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "ocean-ice-and-terrain-punks",
+      "categoryName": "5. Ocean, Ice & Terrain Punks",
+      "domain": "underground cave city punk",
+      "tags": ["punk-spectrum-vault", "ocean-ice-and-terrain-punks", "underground-cave-city-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-203 cavepunk underground cave city punk stalactite towers 5. ocean, ice & terrain punks terrain futures underground cave city punk pack_15 punk spectrum vault ocean-ice-and-terrain-punks punk-spectrum-vault ocean-ice-and-terrain-punks underground-cave-city-punk"
+    },
+    {
+      "id": "SP15-204",
+      "name": "Canyonpunk",
+      "styleAnchors": ["Canyonpunk", "canyon wall city punk", "cliff dwellings"],
+      "ref": "pack_15/SP15-204.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "ocean-ice-and-terrain-punks",
+      "categoryName": "5. Ocean, Ice & Terrain Punks",
+      "domain": "canyon wall city punk",
+      "tags": ["punk-spectrum-vault", "ocean-ice-and-terrain-punks", "canyon-wall-city-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-204 canyonpunk canyon wall city punk cliff dwellings 5. ocean, ice & terrain punks terrain futures canyon wall city punk pack_15 punk spectrum vault ocean-ice-and-terrain-punks punk-spectrum-vault ocean-ice-and-terrain-punks canyon-wall-city-punk"
+    },
+    {
+      "id": "SP15-205",
+      "name": "Cliffpunk",
+      "styleAnchors": ["Cliffpunk", "vertical sea-cliff colony punk", "ladder streets"],
+      "ref": "pack_15/SP15-205.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "ocean-ice-and-terrain-punks",
+      "categoryName": "5. Ocean, Ice & Terrain Punks",
+      "domain": "vertical sea-cliff colony punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "ocean-ice-and-terrain-punks",
+        "vertical-sea-cliff-colony-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-205 cliffpunk vertical sea-cliff colony punk ladder streets 5. ocean, ice & terrain punks terrain futures vertical sea-cliff colony punk pack_15 punk spectrum vault ocean-ice-and-terrain-punks punk-spectrum-vault ocean-ice-and-terrain-punks vertical-sea-cliff-colony-punk"
+    },
+    {
+      "id": "SP15-206",
+      "name": "Swamppunk",
+      "styleAnchors": ["Swamppunk", "bayou swamp culture punk", "stilt towns"],
+      "ref": "pack_15/SP15-206.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "ocean-ice-and-terrain-punks",
+      "categoryName": "5. Ocean, Ice & Terrain Punks",
+      "domain": "bayou swamp culture punk",
+      "tags": ["punk-spectrum-vault", "ocean-ice-and-terrain-punks", "bayou-swamp-culture-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-206 swamppunk bayou swamp culture punk stilt towns 5. ocean, ice & terrain punks terrain futures bayou swamp culture punk pack_15 punk spectrum vault ocean-ice-and-terrain-punks punk-spectrum-vault ocean-ice-and-terrain-punks bayou-swamp-culture-punk"
+    },
+    {
+      "id": "SP15-207",
+      "name": "Junglepunk",
+      "styleAnchors": ["Junglepunk", "rainforest canopy culture punk", "canopy cities"],
+      "ref": "pack_15/SP15-207.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "ocean-ice-and-terrain-punks",
+      "categoryName": "5. Ocean, Ice & Terrain Punks",
+      "domain": "rainforest canopy culture punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "ocean-ice-and-terrain-punks",
+        "rainforest-canopy-culture-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-207 junglepunk rainforest canopy culture punk canopy cities 5. ocean, ice & terrain punks terrain futures rainforest canopy culture punk pack_15 punk spectrum vault ocean-ice-and-terrain-punks punk-spectrum-vault ocean-ice-and-terrain-punks rainforest-canopy-culture-punk"
+    },
+    {
+      "id": "SP15-208",
+      "name": "Saltflatpunk",
+      "styleAnchors": ["Saltflatpunk", "salt flat speed culture punk", "mirror horizons"],
+      "ref": "pack_15/SP15-208.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "ocean-ice-and-terrain-punks",
+      "categoryName": "5. Ocean, Ice & Terrain Punks",
+      "domain": "salt flat speed culture punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "ocean-ice-and-terrain-punks",
+        "salt-flat-speed-culture-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-208 saltflatpunk salt flat speed culture punk mirror horizons 5. ocean, ice & terrain punks terrain futures salt flat speed culture punk pack_15 punk spectrum vault ocean-ice-and-terrain-punks punk-spectrum-vault ocean-ice-and-terrain-punks salt-flat-speed-culture-punk"
+    },
+    {
+      "id": "SP15-209",
+      "name": "Alpinepunk",
+      "styleAnchors": ["Alpinepunk", "high mountain culture punk", "cable-car towns"],
+      "ref": "pack_15/SP15-209.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "ocean-ice-and-terrain-punks",
+      "categoryName": "5. Ocean, Ice & Terrain Punks",
+      "domain": "high mountain culture punk",
+      "tags": ["punk-spectrum-vault", "ocean-ice-and-terrain-punks", "high-mountain-culture-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-209 alpinepunk high mountain culture punk cable-car towns 5. ocean, ice & terrain punks terrain futures high mountain culture punk pack_15 punk spectrum vault ocean-ice-and-terrain-punks punk-spectrum-vault ocean-ice-and-terrain-punks high-mountain-culture-punk"
+    },
+    {
       "id": "SP15-101",
       "name": "Zinepunk",
       "ref": "pack_15/SP15-101.yaml",
@@ -1414,5 +1690,5 @@
       "searchableText": "sp15-122 low-tech punk 10. primitive, stone & salvage punks primitive & salvage futures pack_15 punk spectrum vault primitive-stone-and-salvage-punks punk-spectrum-vault primitive-stone-and-salvage-punks"
     }
   ],
-  "totalPresetCount": 104
+  "totalPresetCount": 122
 }

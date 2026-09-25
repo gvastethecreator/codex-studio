@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-204
+packId: pack_15
+name: Canyonpunk
+styleAnchors:
+  - Canyonpunk
+  - canyon wall city punk
+  - cliff dwellings
+displayName: Canyonpunk
+category: 5. Ocean, Ice & Terrain Punks
+domain: canyon wall city punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ocean-ice-and-terrain-punks
+  - canyonpunk
+  - punk
+  - terrain
+visualDna:
+  aesthetic: 'Canyonpunk: cities carved into red canyon walls, with cliff dwellings, rope bridges spanning chasms, wind-glider couriers and sunset-lit sandstone.'
+  subject_treatment: Keep the prompt's subject and setting; carve it into layered red canyon walls, with bridges across deep drops.
+  color_and_tone: Red, orange and ochre sandstone bands with deep blue shadow and sunset gold.
+  lighting_and_shadow: Hard sun striking canyon walls with deep blue shade in the gorge below.
+  texture_and_material: Layered sandstone, carved adobe, woven rope bridges, leather and dust.
+  camera_and_composition: Dizzying views across chasms, bridges and cliff dwellings at many heights.
+  atmosphere_and_mood: Bold and windswept, a frontier living on the edge of the drop.
+  rendering_and_quality: Warm saturated illustration with strong strata lines and depth.
+  creative_brief: "Canyonpunk: cities carved into red canyon walls, with cliff dwellings, rope bridges spanning chasms, wind-glider couriers and sunset-lit sandstone. Carry it through cliff dwellings, chasm bridges, wind gliders, sandstone strata. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: cliff dwellings; chasm bridges; wind gliders; sandstone strata
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - generic stock landscape postcard
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: ocean-ice-and-terrain-punks
+  categoryName: 5. Ocean, Ice & Terrain Punks
+  tags:
+    - curation-v2
+    - ocean-ice-and-terrain-punks
+    - canyonpunk
+    - punk
+    - terrain
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: canyon wall city punk

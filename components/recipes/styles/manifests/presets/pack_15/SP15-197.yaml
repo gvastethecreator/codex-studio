@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-197
+packId: pack_15
+name: Aurorapunk
+styleAnchors:
+  - Aurorapunk
+  - aurora-powered polar punk
+  - harvested aurora
+displayName: Aurorapunk
+category: 5. Ocean, Ice & Terrain Punks
+domain: aurora-powered polar punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ocean-ice-and-terrain-punks
+  - aurorapunk
+  - punk
+  - terrain
+visualDna:
+  aesthetic: 'Aurorapunk: a polar culture that harvests the northern lights, with antenna towers, glowing aurora batteries and sky-fishing nets strung across the night.'
+  subject_treatment: Keep the prompt's subject and setting; place it under a vivid aurora being caught, stored or channeled by polar machinery.
+  color_and_tone: Aurora green, violet and magenta ribbons over deep night blue and cold snow.
+  lighting_and_shadow: Rippling aurora light washing colored glows across snow, faces and metal.
+  texture_and_material: Frosted antenna masts, glass aurora jars, copper coils and powdery snow.
+  camera_and_composition: Low horizons with huge skies of moving aurora and small towers reaching up.
+  atmosphere_and_mood: Electric and reverent, a people who drink light from the sky.
+  rendering_and_quality: Luminous night illustration with flowing aurora ribbons and crisp frost detail.
+  creative_brief: "Aurorapunk: a polar culture that harvests the northern lights, with antenna towers, glowing aurora batteries and sky-fishing nets strung across the night. Carry it through harvested aurora, glowing light jars, antenna towers, sky nets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: harvested aurora; glowing light jars; antenna towers; sky nets
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - generic stock landscape postcard
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, generic stock landscape postcard, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: ocean-ice-and-terrain-punks
+  categoryName: 5. Ocean, Ice & Terrain Punks
+  tags:
+    - curation-v2
+    - ocean-ice-and-terrain-punks
+    - aurorapunk
+    - punk
+    - terrain
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: aurora-powered polar punk
