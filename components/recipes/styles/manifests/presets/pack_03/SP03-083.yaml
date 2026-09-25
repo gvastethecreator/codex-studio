@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP03-083
+packId: pack_03
+name: Radiosity Color Bleed
+styleAnchors:
+  - Radiosity Color Bleed
+  - radiosity global illumination
+  - strong color bleeding
+displayName: Radiosity Color Bleed
+category: 1. Render Engines
+domain: radiosity global illumination
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - render-engines
+  - radiosity
+  - global-illumination
+  - retro-cgi
+visualDna:
+  aesthetic: 'Radiosity render: early global illumination where colored surfaces tint their neighbors with soft, slightly blotchy bounced light.'
+  subject_treatment: Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.
+  color_and_tone: Strong color bleeding from walls and floors onto nearby surfaces, soft pastel gradients.
+  lighting_and_shadow: Diffuse bounce only, no speculars, soft corners darkened, slightly patchy light maps.
+  texture_and_material: Matte untextured or lightly textured surfaces, gentle blotches in the illumination.
+  camera_and_composition: Interior views where colored walls sit close to other surfaces.
+  atmosphere_and_mood: Soft and quiet, light gently filling a simple room.
+  rendering_and_quality: Diffuse-only early global illumination look with no glossy reflections anywhere.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Radiosity Color Bleed as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: strong color bleeding; diffuse bounce only; matte surfaces; soft darkened corners; blotchy light maps
+avoidRules:
+  - 2d illustration
+  - hand-drawn
+  - photograph without CGI cues
+  - franchise likeness
+  - studio character likeness
+  - celebrity likeness
+  - readable text
+  - software logo
+  - replacing the subject with a renderer demo scene
+  - glossy reflections
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: 2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, glossy reflections, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: render-engines
+  categoryName: 1. Render Engines
+  tags:
+    - 3d-and-cgi-rendering
+    - render-engines
+    - radiosity
+    - global-illumination
+    - retro-cgi
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: radiosity global illumination

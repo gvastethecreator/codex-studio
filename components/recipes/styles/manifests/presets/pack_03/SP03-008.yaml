@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP03-008
 packId: pack_03
-name: Pixar RenderMan Feature Animation Renderer
+name: Feature Animation Path Tracer
 category: 1. Render Engines
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,55 +12,27 @@ tags:
   - 3d-and-cgi-rendering
   - render-engines
 visualDna:
-  aesthetic: >-
-    Pixar RenderMan Feature Animation Renderer acts as a transferable CGI-style router: start from
-    High end animation, Subsurface scattering, deep compositing and renderer-pipeline system built
-    from sampling behavior, shader evaluation, light transport, denoise strategy, and
-    engine-specific production polish, then apply the 3D/render behavior to prompt X instead of
-    recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Soft shapes; preserve the prompt subject while translating
-    it through the renderer strengths: path tracing, biased sampling, real-time GI, product-studio
-    preview, or feature-film shading, keeping the requested identity, silhouette, pose, object
-    function, or environment legible.
-  color_and_tone: >-
-    Build color with Vibrant, cinematic, storybook saturation; make color come from color
-    management, HDR response, spectral bloom, engine tonemapping, material albedo, and physically
-    plausible exposure, with deliberate value grouping, exposure control, and medium-specific limits
-    rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Artistic control, per light AOVs; let engine-specific GI, ray tracing,
-    Lumen, caustics, volume scattering, HDRI, or studio reflection control drive value hierarchy, so
-    value structure supports the renderer and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Stylized realism, feature animation material pipeline; surface detail should reveal BSDF
-    behavior, sampling clarity, shader networks, displacement, adaptive refinement, and material
-    truth rather than a pasted texture, keeping material scale coherent and avoiding noisy filler
-    texture.
-  camera_and_composition: >-
-    Structure the image through Squash and stretch; compose for renderer readability through focal
-    hierarchy, product or VFX staging, material swatches, path-traced depth, and clean engine
-    output, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Magical, emotional resonance, family feature warmth; derive mood from render
-    fidelity, production confidence, cinematic polish, engine interactivity, or industrial design
-    clarity, letting the renderer alter interpretation without demanding a specific story, location,
-    or character.
-  rendering_and_quality: >-
-    Finish with Disney/Pixar family feature animation, heartfelt, timeless; finish with credible CGI
-    output, controlled noise, accurate reflections, stable geometry, and no raw viewport or cheap
-    preview look, clean denoised surfaces where appropriate, and enough shader evidence to make the
-    CGI mode recognizable.
-  key_features: >-
-    High end animation; Subsurface scattering, deep compositing; Vibrant, cinematic, storybook
-    saturation; Stylized realism, feature animation material pipeline; Squash and stretch
-  creative_brief: >-
-    Apply Pixar RenderMan Feature Animation Renderer as a CGI/render preset over prompt X: preserve
-    the user's requested subject, then route modeling, shader response, lighting, material scale,
-    composition, mood, and final render craft through High end animation, Subsurface scattering,
-    deep compositing, Stylized realism, feature animation material pipeline without requiring the
-    card image's original subject.
+  aesthetic: 'Feature-animation path tracing: stylized characters and sets rendered with rich subsurface skin, luminous bounce light and storybook saturation.'
+  subject_treatment: Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.
+  color_and_tone: Saturated warm-cool color script, glowing skin, luminous colored shadows.
+  lighting_and_shadow: Cinematic key with warm bounce, colored rim lights, soft shadows that stay full of color.
+  texture_and_material: Rounded stylized forms, soft fabrics with fuzz, translucent ears and fingers, painterly textures.
+  camera_and_composition: Cinematic character framing with shallow depth of field.
+  atmosphere_and_mood: Heartfelt and whimsical, emotion carried by warm light.
+  rendering_and_quality: Feature-film animation finish; original designs only, no studio characters.
+  key_features: stylized rounded forms; rich subsurface skin; colorful luminous shadows; warm bounce; cinematic depth of field
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Feature Animation Path Tracer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - 2d illustration
+  - hand-drawn
+  - photograph without CGI cues
+  - franchise likeness
+  - studio character likeness
+  - celebrity likeness
+  - readable text
+  - software logo
+  - replacing the subject with a renderer demo scene
+  - studio mascot
   - anime
   - 2d
   - wrong medium
@@ -68,19 +40,21 @@ avoidRules:
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - raw viewport
   - unlit preview
   - wrong render engine
   - cheap preview noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-008.webp
 attributes:
-  negativePrompt: >-
-    anime, 2d, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
-    watermark, readable text, signature, raw viewport, unlit preview, wrong render engine, cheap
-    preview noise
+  negativePrompt: 2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, studio mascot, anime, 2d, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
@@ -94,3 +68,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Feature Animation Path Tracer
+styleAnchors:
+  - Feature Animation Path Tracer
+  - Pixar RenderMan Feature Animation Renderer

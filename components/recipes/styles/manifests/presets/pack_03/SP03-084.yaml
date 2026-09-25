@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP03-084
+packId: pack_03
+name: Grey Clay Lighting Test
+styleAnchors:
+  - Grey Clay Lighting Test
+  - global-illumination clay render
+  - all-grey matte materials
+displayName: Grey Clay Lighting Test
+category: 1. Render Engines
+domain: global-illumination clay render
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - render-engines
+  - clay-render
+  - lighting-test
+  - lookdev
+visualDna:
+  aesthetic: 'Grey clay lighting test: a whole scene rendered with every material set to matte grey so only form, light and shadow remain.'
+  subject_treatment: Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.
+  color_and_tone: Uniform mid-grey materials, neutral or slightly warm light, sky tint in shadows.
+  lighting_and_shadow: Full global illumination with HDRI or sun; soft shadows and ambient occlusion in crevices.
+  texture_and_material: No textures at all; geometry detail and silhouette carry everything.
+  camera_and_composition: Final shot framing, exactly as the finished scene would be seen.
+  atmosphere_and_mood: Calm and sculptural, the scene stripped back to pure form.
+  rendering_and_quality: Clean GI clay render; distinct from a sculpting-app matcap viewport.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grey Clay Lighting Test as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: all-grey matte materials; full global illumination; ambient occlusion in crevices; no textures; final shot framing
+avoidRules:
+  - 2d illustration
+  - hand-drawn
+  - photograph without CGI cues
+  - franchise likeness
+  - studio character likeness
+  - celebrity likeness
+  - readable text
+  - software logo
+  - replacing the subject with a renderer demo scene
+  - textures
+  - color materials
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: 2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, textures, color materials, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: render-engines
+  categoryName: 1. Render Engines
+  tags:
+    - 3d-and-cgi-rendering
+    - render-engines
+    - clay-render
+    - lighting-test
+    - lookdev
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: global-illumination clay render

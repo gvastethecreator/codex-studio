@@ -8,28 +8,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Octane Spectral GPU Path Tracer',
     category: '1. Render Engines',
     negativePrompt:
-      'photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, readable text, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise',
+      '2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Octane Spectral GPU Path Tracer acts as a transferable CGI-style router: start from GPU path traced render, Octane signature spectral bloom and renderer-pipeline system built from sampling behavior, shader evaluation, light transport, denoise strategy, and engine-specific production polish, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Spectral GPU path tracing: an unbiased GPU render with spectral light, so glass and gems split light into rainbow caustics, finished with glare and bloom.',
       subject_treatment:
-        'Transform any prompt subject through Sharp, physically correct; preserve the prompt subject while translating it through the renderer strengths: path tracing, biased sampling, real-time GI, product-studio preview, or feature-film shading, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.",
       color_and_tone:
-        'Build color with Vibrant, high contrast; make color come from color management, HDR response, spectral bloom, engine tonemapping, material albedo, and physically plausible exposure, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Vivid saturated color, deep glossy blacks, rainbow dispersion edges, hot bloomed highlights.',
       lighting_and_shadow:
-        'Handle light through Bloom, spectral dispersion; let engine-specific GI, ray tracing, Lumen, caustics, volume scattering, HDRI, or studio reflection control drive value hierarchy, so value structure supports the renderer and does not overwrite the requested content.',
+        'HDRI plus area lights; sharp caustic patterns under glass, soft contact shadows, glare streaks on speculars.',
       texture_and_material:
-        'Render Glossy, detailed; surface detail should reveal BSDF behavior, sampling clarity, shader networks, displacement, adaptive refinement, and material truth rather than a pasted texture, keeping material scale coherent and avoiding noisy filler texture.',
+        'Hyper-glossy clearcoats, faceted glass, thin-film iridescence, micro-scratches in highlights.',
       camera_and_composition:
-        'Structure the image through Lookdev camera for Octane Spectral GPU Path Tracer: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for renderer readability through focal hierarchy, product or VFX staging, material swatches, path-traced depth, and clean engine output, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Cinematic, slick, hyper polished; derive mood from render fidelity, production confidence, cinematic polish, engine interactivity, or industrial design clarity, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Three-quarter hero view, shallow depth of field with smooth round bokeh.',
+      atmosphere_and_mood: 'Dazzling and showy, every surface competing to sparkle.',
       rendering_and_quality:
-        'Finish with ArtStation trending, portfolio ready, 4K; finish with credible CGI output, controlled noise, accurate reflections, stable geometry, and no raw viewport or cheap preview look, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Fully converged path trace with dispersion and post glare; no noise and no flat plastic shading.',
       key_features:
-        'GPU path traced render; Octane signature spectral bloom; Vibrant, high contrast; Glossy, detailed; Lookdev camera for Octane Spectral GPU Path Tracer: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
+        'spectral dispersion rainbows; caustics under glass; glare and bloom; glossy clearcoat; round bokeh',
       creative_brief:
-        "Apply Octane Spectral GPU Path Tracer as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through GPU path traced render, Octane signature spectral bloom, Glossy, detailed without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Octane Spectral GPU Path Tracer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +36,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Unreal Engine 5 Next-Gen Real-Time Engine',
     category: '1. Render Engines',
     negativePrompt:
-      'pre-rendered, low poly, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise',
+      '2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, game HUD, pre-rendered, low poly, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Unreal Engine 5 Next-Gen Real-Time Engine acts as a transferable CGI-style router: start from Real time next gen game engine rendering, High fidelity, real time path tracing and renderer-pipeline system built from sampling behavior, shader evaluation, light transport, denoise strategy, and engine-specific production polish, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Unreal Engine 5 real-time render: dynamic global illumination, film-quality micro-detail geometry and volumetric fog running at game frame rates.',
       subject_treatment:
-        'Transform any prompt subject through Lumen global illumination; preserve the prompt subject while translating it through the renderer strengths: path tracing, biased sampling, real-time GI, product-studio preview, or feature-film shading, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.",
       color_and_tone:
-        'Build color with Realistic, dynamic, physically based; make color come from color management, HDR response, spectral bloom, engine tonemapping, material albedo, and physically plausible exposure, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Naturalistic filmic tonemapping, warm sun against cool sky fill, gentle bloom.',
       lighting_and_shadow:
-        'Handle light through Ray traced shadows, Nanite lit; let engine-specific GI, ray tracing, Lumen, caustics, volume scattering, HDRI, or studio reflection control drive value hierarchy, so value structure supports the renderer and does not overwrite the requested content.',
+        'Real-time bounce light filling caves and interiors, virtual shadow maps with crisp contact detail, god rays in fog.',
       texture_and_material:
-        'Render Nanite geometry detail; surface detail should reveal BSDF behavior, sampling clarity, shader networks, displacement, adaptive refinement, and material truth rather than a pasted texture, keeping material scale coherent and avoiding noisy filler texture.',
+        'Scanned rock and bark with dense micro-geometry, slight temporal anti-aliasing softness on fine detail.',
       camera_and_composition:
-        'Structure the image through Lookdev camera for Unreal Engine 5 Next Gen Real Time Engine: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for renderer readability through focal hierarchy, product or VFX staging, material swatches, path-traced depth, and clean engine output, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Immersive, interactive, cinematic depth; derive mood from render fidelity, production confidence, cinematic polish, engine interactivity, or industrial design clarity, letting the renderer alter interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with AAA game fidelity, virtual production polish, real time final frame clarity; finish with credible CGI output, controlled noise, accurate reflections, stable geometry, and no raw viewport or cheap preview look, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Cinematic game camera, wide vistas or third-person framing with depth.',
+      atmosphere_and_mood: 'Grand and immersive, a playable world at cinematic fidelity.',
+      rendering_and_quality: 'Real-time next-gen look with subtle TAA softness; no UI or HUD.',
       key_features:
-        'Real time next gen game engine rendering; High fidelity, real time path tracing; Realistic, dynamic, physically based; Nanite geometry detail; Lookdev camera for Unreal Engine 5 Next Gen Real Time Engine: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
+        'real-time bounce GI; micro-detail scanned geometry; volumetric fog shafts; filmic tonemap; TAA softness',
       creative_brief:
-        "Apply Unreal Engine 5 Next-Gen Real-Time Engine as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Real time next gen game engine rendering, High fidelity, real time path tracing, Nanite geometry detail without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Unreal Engine 5 Next-Gen Real-Time Engine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +63,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Redshift Biased GPU Renderer',
     category: '1. Render Engines',
     negativePrompt:
-      'photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, readable text, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise',
+      '2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, gritty realism, photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Redshift Biased GPU Renderer acts as a transferable CGI-style router: start from Redshift Biased GPU Renderer biased GPU sampling, fast production GI, crisp speculars, controlled render noise and renderer-pipeline system built from sampling behavior, shader evaluation, light transport, denoise strategy, and engine-specific production polish, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Biased GPU production render: fast, clean motion-graphics lighting with crisp speculars, smooth gradients and controlled global illumination.',
       subject_treatment:
-        'Transform any prompt subject through adapt the requested subject through biased GPU sampling, fast production GI, crisp speculars, controlled render noise while preserving its identity; preserve the prompt subject while translating it through the renderer strengths: path tracing, biased sampling, real-time GI, product-studio preview, or feature-film shading, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.",
       color_and_tone:
-        'Build color with palette and exposure choices that support biased GPU sampling, fast production GI, crisp speculars, controlled render noise; make color come from color management, HDR response, spectral bloom, engine tonemapping, material albedo, and physically plausible exposure, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Clean saturated brand-like colors, smooth gradient backgrounds, bright whites.',
       lighting_and_shadow:
-        'Handle light through light behavior that reveals biased GPU sampling, fast production GI, crisp speculars, controlled render noise; let engine-specific GI, ray tracing, Lumen, caustics, volume scattering, HDRI, or studio reflection control drive value hierarchy, so value structure supports the renderer and does not overwrite the requested content.',
+        'Large area lights and gradient domes, soft shadows, crisp specular strips on edges.',
       texture_and_material:
-        'Render biased GPU sampling, fast production GI, crisp speculars, controlled render noise; surface detail should reveal BSDF behavior, sampling clarity, shader networks, displacement, adaptive refinement, and material truth rather than a pasted texture, keeping material scale coherent and avoiding noisy filler texture.',
+        'Satin plastics, brushed metal, frosted glass, perfectly clean surfaces.',
       camera_and_composition:
-        'Structure the image through scale rhythm, spacing, and composition rules shaped by biased GPU sampling, fast production GI, crisp speculars, controlled render noise; compose for renderer readability through focal hierarchy, product or VFX staging, material swatches, path-traced depth, and clean engine output, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood mood carried by biased GPU sampling, fast production GI, crisp speculars, controlled render noise; derive mood from render fidelity, production confidence, cinematic polish, engine interactivity, or industrial design clarity, letting the renderer alter interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with finished Redshift Biased GPU Renderer CGI with biased GPU sampling, fast production GI, crisp speculars, controlled render noise and controlled detail; finish with credible CGI output, controlled noise, accurate reflections, stable geometry, and no raw viewport or cheap preview look, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Centered floating objects, orthographic or long-lens feel, generous negative space.',
+      atmosphere_and_mood: 'Polished and upbeat, motion design frozen at its best frame.',
+      rendering_and_quality: 'Noise-free biased GI with crisp edges; no gritty realism.',
       key_features:
-        'Redshift Biased GPU Renderer biased GPU sampling, fast production GI, crisp speculars, controlled render noise; palette and exposure choices that support biased GPU sampling, fast production GI, crisp speculars, controlled render noise; scale rhythm, spacing, and composition rules shaped by biased GPU sampling, fast production GI, crisp speculars, controlled render noise',
+        'clean motion-graphics lighting; crisp specular strips; gradient backgrounds; floating objects; satin plastics',
       creative_brief:
-        "Apply Redshift Biased GPU Renderer as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Redshift Biased GPU Renderer biased GPU sampling, fast production GI, crisp speculars, controlled render noise without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Redshift Biased GPU Renderer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +90,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Arnold Feature Film Path Tracer',
     category: '1. Render Engines',
     negativePrompt:
-      'photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, readable text, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise',
+      '2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, plastic CG sheen, photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Arnold Feature Film Path Tracer acts as a transferable CGI-style router: start from CPU path traced movie VFX, Physical accuracy, volume scattering and renderer-pipeline system built from sampling behavior, shader evaluation, light transport, denoise strategy, and engine-specific production polish, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Feature-film VFX path tracing: an unbiased CPU render tuned for photoreal creatures, skin, volumes and plate-matched lighting in a color-managed pipeline.',
       subject_treatment:
-        'Transform any prompt subject through Incredibly realistic; preserve the prompt subject while translating it through the renderer strengths: path tracing, biased sampling, real-time GI, product-studio preview, or feature-film shading, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.",
       color_and_tone:
-        'Build color with Natural, filmic, ACES color managed; make color come from color management, HDR response, spectral bloom, engine tonemapping, material albedo, and physically plausible exposure, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Natural filmic color with ACES-like rolloff, restrained saturation, deep but detailed shadows.',
       lighting_and_shadow:
-        'Handle light through Complex bounces, unclamped GI; let engine-specific GI, ray tracing, Lumen, caustics, volume scattering, HDRI, or studio reflection control drive value hierarchy, so value structure supports the renderer and does not overwrite the requested content.',
+        'Physically accurate area and HDRI lighting, multiple scattering in smoke and fog, soft realistic shadows.',
       texture_and_material:
-        'Render Micro displacement, layered materials; surface detail should reveal BSDF behavior, sampling clarity, shader networks, displacement, adaptive refinement, and material truth rather than a pasted texture, keeping material scale coherent and avoiding noisy filler texture.',
+        'Layered skin with subsurface scattering, pores and sweat, micro-displacement on scales and fabric.',
       camera_and_composition:
-        'Structure the image through Lookdev camera for Arnold Feature Film Path Tracer: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for renderer readability through focal hierarchy, product or VFX staging, material swatches, path-traced depth, and clean engine output, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Realistic, grounded, cinematic gravitas; derive mood from render fidelity, production confidence, cinematic polish, engine interactivity, or industrial design clarity, letting the renderer alter interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Hollywood VFX, feature film grade; finish with credible CGI output, controlled noise, accurate reflections, stable geometry, and no raw viewport or cheap preview look, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Cinematic lens with real depth of field, creature or character at dramatic scale.',
+      atmosphere_and_mood: 'Grounded and believable, the impossible rendered as real.',
+      rendering_and_quality: 'Photoreal VFX finish with film grain matching; no plastic CG sheen.',
       key_features:
-        'CPU path traced movie VFX; Physical accuracy, volume scattering; Natural, filmic, ACES color managed; Micro displacement, layered materials; Lookdev camera for Arnold Feature Film Path Tracer: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
+        'photoreal subsurface skin; volumetric multiple scattering; micro-displacement; filmic color management; plate-matched realism',
       creative_brief:
-        "Apply Arnold Feature Film Path Tracer as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through CPU path traced movie VFX, Physical accuracy, volume scattering, Micro displacement, layered materials without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Arnold Feature Film Path Tracer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +117,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Blender Cycles Open Path Tracer',
     category: '1. Render Engines',
     negativePrompt:
-      'eevee, realtime, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise',
+      '2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, eevee, realtime, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Blender Cycles Open Path Tracer acts as a transferable CGI-style router: start from Open source path tracing, Principled BSDF, GPU+CPU hybrid and renderer-pipeline system built from sampling behavior, shader evaluation, light transport, denoise strategy, and engine-specific production polish, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Open path tracer look: a node-shaded, physically based render with principled materials, a filmic view transform and clean denoised output.',
       subject_treatment:
-        'Transform any prompt subject through Sharp; preserve the prompt subject while translating it through the renderer strengths: path tracing, biased sampling, real-time GI, product-studio preview, or feature-film shading, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.",
       color_and_tone:
-        'Build color with Filmic log encoding, view transform ready; make color come from color management, HDR response, spectral bloom, engine tonemapping, material albedo, and physically plausible exposure, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Soft filmic contrast, gently desaturated highlights, warm practical light against cool fill.',
       lighting_and_shadow:
-        'Handle light through Global Illumination, denoised; let engine-specific GI, ray tracing, Lumen, caustics, volume scattering, HDRI, or studio reflection control drive value hierarchy, so value structure supports the renderer and does not overwrite the requested content.',
+        'HDRI world light with practical point lights, soft bounce and denoised shadows.',
       texture_and_material:
-        'Render Procedural nodes, shader graph; surface detail should reveal BSDF behavior, sampling clarity, shader networks, displacement, adaptive refinement, and material truth rather than a pasted texture, keeping material scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Lookdev camera for Blender Cycles Open Path Tracer: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for renderer readability through focal hierarchy, product or VFX staging, material swatches, path-traced depth, and clean engine output, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Creative, solid, accessible artistry; derive mood from render fidelity, production confidence, cinematic polish, engine interactivity, or industrial design clarity, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Procedural wood, stone and moss from noise textures, principled glass and metal, slightly soft micro-detail.',
+      camera_and_composition: 'Cozy medium shots or small dioramas with shallow depth of field.',
+      atmosphere_and_mood: 'Warm and handcrafted, a hobbyist world rendered with love.',
       rendering_and_quality:
-        'Finish with Blender Guru creator friendly, detailed, community driven excellence; finish with credible CGI output, controlled noise, accurate reflections, stable geometry, and no raw viewport or cheap preview look, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Denoised clean path trace with slight denoiser smoothness in dark areas.',
       key_features:
-        'Open source path tracing; Principled BSDF, GPU+CPU hybrid; Filmic log encoding, view transform ready; Procedural nodes, shader graph; Lookdev camera for Blender Cycles Open Path Tracer: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
+        'principled materials; procedural textures; filmic view transform; denoised soft shadows; cozy diorama framing',
       creative_brief:
-        "Apply Blender Cycles Open Path Tracer as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Open source path tracing, Principled BSDF, GPU+CPU hybrid, Procedural nodes, shader graph without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blender Cycles Open Path Tracer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +144,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'V-Ray ArchViz Raytracer',
     category: '1. Render Engines',
     negativePrompt:
-      'photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, readable text, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise',
+      '2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, converging verticals, photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'V-Ray ArchViz Raytracer acts as a transferable CGI-style router: start from Architectural visualization, Clean lines, adaptive sampling and renderer-pipeline system built from sampling behavior, shader evaluation, light transport, denoise strategy, and engine-specific production polish, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Architectural visualization raytrace: interiors and buildings rendered with sun-and-sky daylight, clean glass and a warm neutral exposure for presentations.',
       subject_treatment:
-        'Transform any prompt subject through Precise; preserve the prompt subject while translating it through the renderer strengths: path tracing, biased sampling, real-time GI, product-studio preview, or feature-film shading, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.",
       color_and_tone:
-        'Build color with Warm neutral exposure, architectural balance, believable material color; make color come from color management, HDR response, spectral bloom, engine tonemapping, material albedo, and physically plausible exposure, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Warm neutral whites, honey wood, soft blue sky, compressed highlights in windows.',
       lighting_and_shadow:
-        'Handle light through IES lights, sun, adaptive dome; let engine-specific GI, ray tracing, Lumen, caustics, volume scattering, HDRI, or studio reflection control drive value hierarchy, so value structure supports the renderer and does not overwrite the requested content.',
+        'Physical sun and sky through large windows, soft bounce filling rooms, crisp window shadows on floors.',
       texture_and_material:
-        'Render Photorealistic materials, layered BRDF; surface detail should reveal BSDF behavior, sampling clarity, shader networks, displacement, adaptive refinement, and material truth rather than a pasted texture, keeping material scale coherent and avoiding noisy filler texture.',
+        'Oak, concrete, linen, clear and frosted glass, polished stone with blurred reflections.',
       camera_and_composition:
-        'Structure the image through Lookdev camera for V Ray ArchViz Raytracer: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for renderer readability through focal hierarchy, product or VFX staging, material swatches, path-traced depth, and clean engine output, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Inviting, expensive, aspirational, clean real estate polish; derive mood from render fidelity, production confidence, cinematic polish, engine interactivity, or industrial design clarity, letting the renderer alter interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with ArchViz clarity, catalog realism, interior design lighting discipline; finish with credible CGI output, controlled noise, accurate reflections, stable geometry, and no raw viewport or cheap preview look, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Two-point perspective with straight verticals, wide lens at eye height.',
+      atmosphere_and_mood: 'Serene and aspirational, a space waiting to be lived in.',
+      rendering_and_quality: 'Clean archviz render with no clutter and no oversaturated HDR look.',
       key_features:
-        'Architectural visualization; Clean lines, adaptive sampling; Warm neutral exposure, architectural balance, believable material color; Photorealistic materials, layered BRDF; Lookdev camera for V Ray ArchViz Raytracer: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
+        'sun and sky through big windows; straight verticals; warm neutral exposure; polished stone reflections; clean glass',
       creative_brief:
-        "Apply V-Ray ArchViz Raytracer as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Architectural visualization, Clean lines, adaptive sampling, Photorealistic materials, layered BRDF without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies V-Ray ArchViz Raytracer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,57 +171,54 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'KeyShot Product Studio Renderer',
     category: '1. Render Engines',
     negativePrompt:
-      'environment, messy, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise',
+      '2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, environment, messy, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'KeyShot Product Studio Renderer acts as a transferable CGI-style router: start from Product design render, Controlled studio reflections, accurate material swatches, interactive render polish and renderer-pipeline system built from sampling behavior, shader evaluation, light transport, denoise strategy, and engine-specific production polish, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Product studio render: a single object rendered with studio HDRI reflections on a gradient backdrop, showing exact material swatches and finishes.',
       subject_treatment:
-        'Transform any prompt subject through Studio isolated presentation, controlled silhouette, clean design read; preserve the prompt subject while translating it through the renderer strengths: path tracing, biased sampling, real-time GI, product-studio preview, or feature-film shading, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.",
       color_and_tone:
-        'Build color with Accurate plastics/metals, brand specific; make color come from color management, HDR response, spectral bloom, engine tonemapping, material albedo, and physically plausible exposure, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Neutral grey or black gradient backdrop, accurate material color, clean highlights.',
       lighting_and_shadow:
-        'Handle light through HDRI studio, real time ray tracing; let engine-specific GI, ray tracing, Lumen, caustics, volume scattering, HDRI, or studio reflection control drive value hierarchy, so value structure supports the renderer and does not overwrite the requested content.',
+        'Studio HDRI with long softbox reflections, soft ground shadow and a subtle reflection floor.',
       texture_and_material:
-        'Render Mold tech textures, scientifically accurate; surface detail should reveal BSDF behavior, sampling clarity, shader networks, displacement, adaptive refinement, and material truth rather than a pasted texture, keeping material scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Lookdev camera for KeyShot Product Studio Renderer: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for renderer readability through focal hierarchy, product or VFX staging, material swatches, path-traced depth, and clean engine output, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Clean, commercial, premium retail; derive mood from render fidelity, production confidence, cinematic polish, engine interactivity, or industrial design clarity, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Mold-texture plastics, anodized metal, stitched leather, cut gems with precise highlights.',
+      camera_and_composition: 'Centered three-quarter product view, object filling the frame.',
+      atmosphere_and_mood: 'Precise and desirable, a design object at its launch.',
       rendering_and_quality:
-        'Finish with Industrial design, packaging comp; finish with credible CGI output, controlled noise, accurate reflections, stable geometry, and no raw viewport or cheap preview look, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Crisp product visualization with no clutter and no photographic imperfections.',
       key_features:
-        'Product design render; Controlled studio reflections, accurate material swatches, interactive render polish; Accurate plastics/metals, brand specific; Mold tech textures, scientifically accurate; Lookdev camera for KeyShot Product Studio Renderer: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
+        'studio HDRI softbox reflections; gradient backdrop; accurate material swatches; ground shadow; centered product',
       creative_brief:
-        "Apply KeyShot Product Studio Renderer as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Product design render, Controlled studio reflections, accurate material swatches, interactive render polish, Mold tech textures, scientifically accurate without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies KeyShot Product Studio Renderer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP03-008',
-    name: 'Pixar RenderMan Feature Animation Renderer',
+    name: 'Feature Animation Path Tracer',
+    displayName: 'Feature Animation Path Tracer',
+    styleAnchors: ['Feature Animation Path Tracer', 'Pixar RenderMan Feature Animation Renderer'],
     category: '1. Render Engines',
     negativePrompt:
-      'anime, 2d, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise',
+      '2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, studio mascot, anime, 2d, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Pixar RenderMan Feature Animation Renderer acts as a transferable CGI-style router: start from High end animation, Subsurface scattering, deep compositing and renderer-pipeline system built from sampling behavior, shader evaluation, light transport, denoise strategy, and engine-specific production polish, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Feature-animation path tracing: stylized characters and sets rendered with rich subsurface skin, luminous bounce light and storybook saturation.',
       subject_treatment:
-        'Transform any prompt subject through Soft shapes; preserve the prompt subject while translating it through the renderer strengths: path tracing, biased sampling, real-time GI, product-studio preview, or feature-film shading, keeping the requested identity, silhouette, pose, object function, or environment legible.',
-      color_and_tone:
-        'Build color with Vibrant, cinematic, storybook saturation; make color come from color management, HDR response, spectral bloom, engine tonemapping, material albedo, and physically plausible exposure, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        "Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.",
+      color_and_tone: 'Saturated warm-cool color script, glowing skin, luminous colored shadows.',
       lighting_and_shadow:
-        'Handle light through Artistic control, per light AOVs; let engine-specific GI, ray tracing, Lumen, caustics, volume scattering, HDRI, or studio reflection control drive value hierarchy, so value structure supports the renderer and does not overwrite the requested content.',
+        'Cinematic key with warm bounce, colored rim lights, soft shadows that stay full of color.',
       texture_and_material:
-        'Render Stylized realism, feature animation material pipeline; surface detail should reveal BSDF behavior, sampling clarity, shader networks, displacement, adaptive refinement, and material truth rather than a pasted texture, keeping material scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Squash and stretch; compose for renderer readability through focal hierarchy, product or VFX staging, material swatches, path-traced depth, and clean engine output, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Magical, emotional resonance, family feature warmth; derive mood from render fidelity, production confidence, cinematic polish, engine interactivity, or industrial design clarity, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Rounded stylized forms, soft fabrics with fuzz, translucent ears and fingers, painterly textures.',
+      camera_and_composition: 'Cinematic character framing with shallow depth of field.',
+      atmosphere_and_mood: 'Heartfelt and whimsical, emotion carried by warm light.',
       rendering_and_quality:
-        'Finish with Disney/Pixar family feature animation, heartfelt, timeless; finish with credible CGI output, controlled noise, accurate reflections, stable geometry, and no raw viewport or cheap preview look, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Feature-film animation finish; original designs only, no studio characters.',
       key_features:
-        'High end animation; Subsurface scattering, deep compositing; Vibrant, cinematic, storybook saturation; Stylized realism, feature animation material pipeline; Squash and stretch',
+        'stylized rounded forms; rich subsurface skin; colorful luminous shadows; warm bounce; cinematic depth of field',
       creative_brief:
-        "Apply Pixar RenderMan Feature Animation Renderer as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through High end animation, Subsurface scattering, deep compositing, Stylized realism, feature animation material pipeline without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Feature Animation Path Tracer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -240,28 +226,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'ZBrush Digital Clay Sculpt',
     category: '1. Render Engines',
     negativePrompt:
-      'textured, low poly, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise',
+      '2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, viewport UI, textured color, textured, low poly, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'ZBrush Digital Clay Sculpt acts as a transferable CGI-style router: start from Digital clay sculpt, Matcap material, dynamesh topology and renderer-pipeline system built from sampling behavior, shader evaluation, light transport, denoise strategy, and engine-specific production polish, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Digital clay sculpt: a raw viewport render of a sculpted model under a matcap material, with brush strokes and clay texture still visible.',
       subject_treatment:
-        'Transform any prompt subject through Matcap shader; preserve the prompt subject while translating it through the renderer strengths: path tracing, biased sampling, real-time GI, product-studio preview, or feature-film shading, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.",
       color_and_tone:
-        'Build color with Grey or Red wax, clay brown; make color come from color management, HDR response, spectral bloom, engine tonemapping, material albedo, and physically plausible exposure, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Single matcap tone — red wax, grey clay or brown clay — with a baked highlight and dark cavities.',
       lighting_and_shadow:
-        'Handle light through Rim light, sculpting studio setup; let engine-specific GI, ray tracing, Lumen, caustics, volume scattering, HDRI, or studio reflection control drive value hierarchy, so value structure supports the renderer and does not overwrite the requested content.',
-      texture_and_material:
-        'Render Clay strokes, matcap highlights; surface detail should reveal BSDF behavior, sampling clarity, shader networks, displacement, adaptive refinement, and material truth rather than a pasted texture, keeping material scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Sculptural anatomy optional; compose for renderer readability through focal hierarchy, product or VFX staging, material swatches, path-traced depth, and clean engine output, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Artistic, raw, hands on feel; derive mood from render fidelity, production confidence, cinematic polish, engine interactivity, or industrial design clarity, letting the renderer alter interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with High poly model, sculpted detail; finish with credible CGI output, controlled noise, accurate reflections, stable geometry, and no raw viewport or cheap preview look, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Matcap shading only: a fixed studio highlight, no cast shadows, no global illumination.',
+      texture_and_material: 'Brush strokes, pinched edges, clay buildup, polygon-free smoothness.',
+      camera_and_composition: 'Bust or full figure centered on a dark viewport background.',
+      atmosphere_and_mood: "Raw and artistic, form discovered under the sculptor's hand.",
+      rendering_and_quality: 'Viewport sculpt look; no textures, no scene lighting, no UI.',
       key_features:
-        'Digital clay sculpt; Matcap material, dynamesh topology; Grey or Red wax, clay brown; Clay strokes, matcap highlights; Sculptural anatomy optional',
+        'matcap red wax or grey clay; visible brush strokes; no cast shadows; dark viewport background; centered bust',
       creative_brief:
-        "Apply ZBrush Digital Clay Sculpt as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Digital clay sculpt, Matcap material, dynamesh topology, Clay strokes, matcap highlights without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies ZBrush Digital Clay Sculpt as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -269,28 +251,379 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Unity HDRP High-End Game Pipeline',
     category: '1. Render Engines',
     negativePrompt:
-      'mobile game, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise',
+      '2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, game HUD, tram, mobile game, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Unity HDRP High-End Game Pipeline acts as a transferable CGI-style router: start from High definition game engine, Lens flares, HDRP pipeline and renderer-pipeline system built from sampling behavior, shader evaluation, light transport, denoise strategy, and engine-specific production polish, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'High-end game pipeline render: a real-time engine frame with heavy post-processing — bloom, lens flares, color grading and screen-space effects.',
       subject_treatment:
-        'Transform any prompt subject through Sharp; preserve the prompt subject while translating it through the renderer strengths: path tracing, biased sampling, real-time GI, product-studio preview, or feature-film shading, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.",
       color_and_tone:
-        'Build color with Post processed, filmic tonemap; make color come from color management, HDR response, spectral bloom, engine tonemapping, material albedo, and physically plausible exposure, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Punchy graded color, strong bloom on emissives, filmic tonemap with lifted blacks.',
       lighting_and_shadow:
-        'Handle light through Volumetric fog, real time GI; let engine-specific GI, ray tracing, Lumen, caustics, volume scattering, HDRI, or studio reflection control drive value hierarchy, so value structure supports the renderer and does not overwrite the requested content.',
+        'Baked and real-time mix, reflection probes, screen-space reflections with slight edge artifacts.',
       texture_and_material:
-        'Render PBR materials, substance integrations; surface detail should reveal BSDF behavior, sampling clarity, shader networks, displacement, adaptive refinement, and material truth rather than a pasted texture, keeping material scale coherent and avoiding noisy filler texture.',
+        'PBR materials, particle effects, decals, slightly repeating tiling textures.',
       camera_and_composition:
-        'Structure the image through Lookdev camera for Unity HDRP High End Game Pipeline: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for renderer readability through focal hierarchy, product or VFX staging, material swatches, path-traced depth, and clean engine output, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Dynamic, interactive feeling, cinematic real time energy; derive mood from render fidelity, production confidence, cinematic polish, engine interactivity, or industrial design clarity, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Third-person or cinematic game camera, lens flare from bright sources.',
+      atmosphere_and_mood: 'Epic and game-like, a moment made for a trailer.',
       rendering_and_quality:
-        'Finish with Game cinematic, cutscene grade; finish with credible CGI output, controlled noise, accurate reflections, stable geometry, and no raw viewport or cheap preview look, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Real-time game look with post effects; no HUD, no trams or city clichés.',
       key_features:
-        'High definition game engine; Lens flares, HDRP pipeline; Post processed, filmic tonemap; PBR materials, substance integrations; Lookdev camera for Unity HDRP High End Game Pipeline: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
+        'heavy bloom and lens flares; screen-space reflections; particle effects; PBR materials; graded filmic tonemap',
       creative_brief:
-        "Apply Unity HDRP High-End Game Pipeline as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through High definition game engine, Lens flares, HDRP pipeline, PBR materials, substance integrations without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Unity HDRP High-End Game Pipeline as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP03-081',
+    name: '90s Scanline Phong Render',
+    displayName: '90s Scanline Phong Render',
+    styleAnchors: ['90s Scanline Phong Render', 'early scanline CGI', 'Phong plastic highlights'],
+    category: '1. Render Engines',
+    domain: 'early scanline CGI',
+    negativePrompt:
+      '2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, global illumination, photoreal, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        '90s scanline render: early computer graphics with Phong and Gouraud shading, hard plastic highlights, no global illumination and few or no shadows.',
+      subject_treatment:
+        "Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.",
+      color_and_tone:
+        'Saturated flat colors, plastic white highlights, black or gradient sky backgrounds.',
+      lighting_and_shadow:
+        'One or two point lights, hard specular blobs, shadow maps or no shadows at all.',
+      texture_and_material:
+        'Low-resolution textures, faceted polygon edges, checkerboard floors, plastic sheen.',
+      camera_and_composition: 'Centered objects, simple sets, wide field of view.',
+      atmosphere_and_mood: 'Nostalgic and naive, the first steps of digital worlds.',
+      rendering_and_quality: 'Early CG look with visible polygon facets; no modern path tracing.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 90s Scanline Phong Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'Phong plastic highlights; no global illumination; faceted polygons; checkerboard floor; low-res textures',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-082',
+    name: 'Classic Raytracer Mirror Demo',
+    displayName: 'Classic Raytracer Mirror Demo',
+    styleAnchors: [
+      'Classic Raytracer Mirror Demo',
+      'classic recursive raytracing',
+      'perfect mirrors and glass',
+    ],
+    category: '1. Render Engines',
+    domain: 'classic recursive raytracing',
+    negativePrompt:
+      '2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, soft shadows, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Classic recursive raytracing: perfect mirrors and clear glass reflecting and refracting each other endlessly over an infinite floor, with razor-hard shadows.',
+      subject_treatment:
+        "Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.",
+      color_and_tone: 'Saturated primaries, pure mirror chrome, clean blue sky gradient.',
+      lighting_and_shadow: 'Point lights with perfectly hard shadows; no soft light, no bounce.',
+      texture_and_material:
+        'Flawless mirror and glass, checkerboard or tiled floor stretching to the horizon.',
+      camera_and_composition:
+        'Low camera over the endless floor, objects arranged like a demo scene.',
+      atmosphere_and_mood: 'Crystalline and uncanny, a perfect world with no dust.',
+      rendering_and_quality: 'Aliased-free but unmistakably early raytraced look; no noise, no GI.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Classic Raytracer Mirror Demo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'perfect mirrors and glass; hard point-light shadows; infinite checkerboard; recursive reflections; no bounce light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-083',
+    name: 'Radiosity Color Bleed',
+    displayName: 'Radiosity Color Bleed',
+    styleAnchors: [
+      'Radiosity Color Bleed',
+      'radiosity global illumination',
+      'strong color bleeding',
+    ],
+    category: '1. Render Engines',
+    domain: 'radiosity global illumination',
+    negativePrompt:
+      '2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, glossy reflections, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Radiosity render: early global illumination where colored surfaces tint their neighbors with soft, slightly blotchy bounced light.',
+      subject_treatment:
+        "Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.",
+      color_and_tone:
+        'Strong color bleeding from walls and floors onto nearby surfaces, soft pastel gradients.',
+      lighting_and_shadow:
+        'Diffuse bounce only, no speculars, soft corners darkened, slightly patchy light maps.',
+      texture_and_material:
+        'Matte untextured or lightly textured surfaces, gentle blotches in the illumination.',
+      camera_and_composition: 'Interior views where colored walls sit close to other surfaces.',
+      atmosphere_and_mood: 'Soft and quiet, light gently filling a simple room.',
+      rendering_and_quality:
+        'Diffuse-only early global illumination look with no glossy reflections anywhere.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Radiosity Color Bleed as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'strong color bleeding; diffuse bounce only; matte surfaces; soft darkened corners; blotchy light maps',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-084',
+    name: 'Grey Clay Lighting Test',
+    displayName: 'Grey Clay Lighting Test',
+    styleAnchors: [
+      'Grey Clay Lighting Test',
+      'global-illumination clay render',
+      'all-grey matte materials',
+    ],
+    category: '1. Render Engines',
+    domain: 'global-illumination clay render',
+    negativePrompt:
+      '2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, textures, color materials, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Grey clay lighting test: a whole scene rendered with every material set to matte grey so only form, light and shadow remain.',
+      subject_treatment:
+        "Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.",
+      color_and_tone:
+        'Uniform mid-grey materials, neutral or slightly warm light, sky tint in shadows.',
+      lighting_and_shadow:
+        'Full global illumination with HDRI or sun; soft shadows and ambient occlusion in crevices.',
+      texture_and_material: 'No textures at all; geometry detail and silhouette carry everything.',
+      camera_and_composition: 'Final shot framing, exactly as the finished scene would be seen.',
+      atmosphere_and_mood: 'Calm and sculptural, the scene stripped back to pure form.',
+      rendering_and_quality: 'Clean GI clay render; distinct from a sculpting-app matcap viewport.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grey Clay Lighting Test as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'all-grey matte materials; full global illumination; ambient occlusion in crevices; no textures; final shot framing',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-085',
+    name: 'Progressive Preview Noise Render',
+    displayName: 'Progressive Preview Noise Render',
+    styleAnchors: [
+      'Progressive Preview Noise Render',
+      'unconverged path trace',
+      'heavy sample noise',
+    ],
+    category: '1. Render Engines',
+    domain: 'unconverged path trace',
+    negativePrompt:
+      '2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, denoised smoothness, film grain, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Progressive preview render: a path-traced image stopped early, still full of grain and bright fireflies before it converges.',
+      subject_treatment:
+        "Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.",
+      color_and_tone: 'Correct colors under heavy speckle; shadows grainy and slightly colored.',
+      lighting_and_shadow:
+        'Realistic light with noisy soft shadows; caustics and small lights sparkling as fireflies.',
+      texture_and_material:
+        'Dense per-pixel noise, especially in dark areas and glossy reflections.',
+      camera_and_composition: 'Final framing, the noise strongest in shadows and interiors.',
+      atmosphere_and_mood: 'Anticipating and raw, an image caught in the middle of being born.',
+      rendering_and_quality:
+        'Unconverged path-trace grain; not film grain and not a denoised image.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Progressive Preview Noise Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'heavy sample noise; bright fireflies; grainy shadows; unconverged glossy reflections; correct underlying light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-086',
+    name: 'Gaussian Splat Capture',
+    displayName: 'Gaussian Splat Capture',
+    styleAnchors: ['Gaussian Splat Capture', '3D gaussian splatting', 'soft ellipsoid splats'],
+    category: '1. Render Engines',
+    domain: '3D gaussian splatting',
+    negativePrompt:
+      '2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, clean polygon mesh, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gaussian splat capture: a real place reconstructed from photos as millions of soft colored ellipsoids, photoreal from the capture angle and fuzzy at the edges.',
+      subject_treatment:
+        "Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.",
+      color_and_tone:
+        'Photographic color baked in from the capture, including captured highlights.',
+      lighting_and_shadow: 'Lighting frozen from the original photos; no relighting.',
+      texture_and_material:
+        'Soft ellipsoid blobs at silhouettes, floaters hanging in the air, stretched splats where the capture was thin.',
+      camera_and_composition:
+        'Slightly off the original camera path, so edges and backgrounds reveal splat artifacts.',
+      atmosphere_and_mood: 'Dreamlike and uncanny, reality dissolving into colored mist.',
+      rendering_and_quality: 'Real-time splat look with floaters; not a mesh and not a photograph.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gaussian Splat Capture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'soft ellipsoid splats; floaters in the air; photoreal core; fuzzy silhouettes; baked captured lighting',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-087',
+    name: 'Baked Lightmap Mobile Render',
+    displayName: 'Baked Lightmap Mobile Render',
+    styleAnchors: [
+      'Baked Lightmap Mobile Render',
+      'mobile game baked lighting',
+      'baked soft shadows',
+    ],
+    category: '1. Render Engines',
+    domain: 'mobile game baked lighting',
+    negativePrompt:
+      '2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, game HUD, real-time GI, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Baked lightmap mobile render: a low-poly game scene whose light and shadow are painted into textures in advance, with vertex colors and unlit fake glows.',
+      subject_treatment:
+        "Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.",
+      color_and_tone: 'Warm saturated vertex colors, soft baked shadows, glow cards around lamps.',
+      lighting_and_shadow:
+        'Static baked soft shadows and ambient occlusion; nothing moves with the light.',
+      texture_and_material:
+        'Low-poly shapes, low-res textures, blurry lightmap seams, simple alpha foliage cards.',
+      camera_and_composition: 'Isometric or three-quarter game camera over a compact scene.',
+      atmosphere_and_mood: 'Cozy and toy-like, a pocket world that runs anywhere.',
+      rendering_and_quality: 'Mobile game render look; no real-time GI and no HUD.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Baked Lightmap Mobile Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'baked soft shadows; low-poly shapes; vertex color warmth; glow cards; lightmap seams',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-088',
+    name: 'Lookdev Reference Plate',
+    displayName: 'Lookdev Reference Plate',
+    styleAnchors: [
+      'Lookdev Reference Plate',
+      'look development presentation',
+      'chrome ball and grey ball',
+    ],
+    category: '1. Render Engines',
+    domain: 'look development presentation',
+    negativePrompt:
+      '2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, readable chart labels, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Lookdev reference plate: a CG asset presented beside a chrome ball, a grey ball and a color chart, lit by a studio HDRI for material approval.',
+      subject_treatment:
+        "Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.",
+      color_and_tone:
+        'Neutral grey backdrop, accurate asset color, chart patches in calibrated colors.',
+      lighting_and_shadow:
+        'Neutral studio HDRI visible in the chrome ball, soft shadow on the grey ball.',
+      texture_and_material:
+        "The asset's materials shown in full detail next to the reference spheres.",
+      camera_and_composition:
+        'Asset centered, chrome and grey balls and a small color chart placed to one side.',
+      atmosphere_and_mood: 'Technical and precise, an asset under careful review.',
+      rendering_and_quality: 'VFX lookdev presentation; the color chart has no readable labels.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lookdev Reference Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'chrome ball and grey ball; color chart; neutral studio HDRI; centered asset; material approval framing',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-089',
+    name: 'Live-Action Plate Integration',
+    displayName: 'Live-Action Plate Integration',
+    styleAnchors: [
+      'Live-Action Plate Integration',
+      'CG composited into live action',
+      'CG in a real photographed plate',
+    ],
+    category: '1. Render Engines',
+    domain: 'CG composited into live action',
+    negativePrompt:
+      '2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, unshadowed cutout, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Live-action plate integration: a CG element composited into real photographed footage, matched in light direction, grain, lens blur and color.',
+      subject_treatment:
+        "Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.",
+      color_and_tone:
+        "The plate's real color grade applied to the CG element; matched black levels.",
+      lighting_and_shadow:
+        "CG lit from the plate's HDRI, casting contact shadows and bounce onto real ground.",
+      texture_and_material:
+        'Matched film grain, lens distortion and slight motion blur on the CG element.',
+      camera_and_composition:
+        'Handheld or tripod live-action framing, CG element interacting with real surfaces.',
+      atmosphere_and_mood: 'Believable and startling, the impossible standing in a real place.',
+      rendering_and_quality: 'Seamless VFX composite; no floating, unshadowed cutout look.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Live-Action Plate Integration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'CG in a real photographed plate; matched grain and lens; contact shadows on real ground; plate HDRI lighting; interaction',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-090',
+    name: 'Film-Emulated CG Beauty Render',
+    displayName: 'Film-Emulated CG Beauty Render',
+    styleAnchors: [
+      'Film-Emulated CG Beauty Render',
+      'CG with film emulation',
+      'CG graded as 35 mm film',
+    ],
+    category: '1. Render Engines',
+    domain: 'CG with film emulation',
+    negativePrompt:
+      '2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, clean digital sharpness, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Film-emulated CG: a fully computer-generated shot graded to look photographed on 35 mm film, with grain, halation, gate weave and lens imperfections.',
+      subject_treatment:
+        "Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.",
+      color_and_tone:
+        'Film print color with soft rolloff, warm halation around highlights, slightly lifted blacks.',
+      lighting_and_shadow: 'Naturalistic CG lighting softened by film response and bloom.',
+      texture_and_material:
+        'Fine organic grain over everything, slight chromatic aberration and vignette.',
+      camera_and_composition:
+        'Anamorphic or spherical cinema framing with realistic depth of field.',
+      atmosphere_and_mood: 'Nostalgic and cinematic, digital worlds dressed as old celluloid.',
+      rendering_and_quality: 'CG with film emulation baked in; no clean digital sharpness.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Film-Emulated CG Beauty Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'CG graded as 35 mm film; organic grain; highlight halation; gate weave; lens vignette',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

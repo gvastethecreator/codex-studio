@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP03-085
+packId: pack_03
+name: Progressive Preview Noise Render
+styleAnchors:
+  - Progressive Preview Noise Render
+  - unconverged path trace
+  - heavy sample noise
+displayName: Progressive Preview Noise Render
+category: 1. Render Engines
+domain: unconverged path trace
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - render-engines
+  - path-tracing
+  - noise
+  - preview
+visualDna:
+  aesthetic: 'Progressive preview render: a path-traced image stopped early, still full of grain and bright fireflies before it converges.'
+  subject_treatment: Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.
+  color_and_tone: Correct colors under heavy speckle; shadows grainy and slightly colored.
+  lighting_and_shadow: Realistic light with noisy soft shadows; caustics and small lights sparkling as fireflies.
+  texture_and_material: Dense per-pixel noise, especially in dark areas and glossy reflections.
+  camera_and_composition: Final framing, the noise strongest in shadows and interiors.
+  atmosphere_and_mood: Anticipating and raw, an image caught in the middle of being born.
+  rendering_and_quality: Unconverged path-trace grain; not film grain and not a denoised image.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Progressive Preview Noise Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: heavy sample noise; bright fireflies; grainy shadows; unconverged glossy reflections; correct underlying light
+avoidRules:
+  - 2d illustration
+  - hand-drawn
+  - photograph without CGI cues
+  - franchise likeness
+  - studio character likeness
+  - celebrity likeness
+  - readable text
+  - software logo
+  - replacing the subject with a renderer demo scene
+  - denoised smoothness
+  - film grain
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: 2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, denoised smoothness, film grain, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: render-engines
+  categoryName: 1. Render Engines
+  tags:
+    - 3d-and-cgi-rendering
+    - render-engines
+    - path-tracing
+    - noise
+    - preview
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: unconverged path trace

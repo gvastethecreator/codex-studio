@@ -18,6 +18,16 @@ categories:
       - pack_03/SP03-008.yaml
       - pack_03/SP03-009.yaml
       - pack_03/SP03-010.yaml
+      - pack_03/SP03-081.yaml
+      - pack_03/SP03-082.yaml
+      - pack_03/SP03-083.yaml
+      - pack_03/SP03-084.yaml
+      - pack_03/SP03-085.yaml
+      - pack_03/SP03-086.yaml
+      - pack_03/SP03-087.yaml
+      - pack_03/SP03-088.yaml
+      - pack_03/SP03-089.yaml
+      - pack_03/SP03-090.yaml
   - id: materials
     name: 2. Materials
     presetRefs:
@@ -120,6 +130,16 @@ presetRefs:
   - pack_03/SP03-008.yaml
   - pack_03/SP03-009.yaml
   - pack_03/SP03-010.yaml
+  - pack_03/SP03-081.yaml
+  - pack_03/SP03-082.yaml
+  - pack_03/SP03-083.yaml
+  - pack_03/SP03-084.yaml
+  - pack_03/SP03-085.yaml
+  - pack_03/SP03-086.yaml
+  - pack_03/SP03-087.yaml
+  - pack_03/SP03-088.yaml
+  - pack_03/SP03-089.yaml
+  - pack_03/SP03-090.yaml
   - pack_03/SP03-011.yaml
   - pack_03/SP03-012.yaml
   - pack_03/SP03-013.yaml

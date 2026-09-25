@@ -3,7 +3,7 @@
     {
       "id": "pack_03",
       "name": "3D & CGI Rendering",
-      "presetCount": 80
+      "presetCount": 90
     }
   ],
   "presets": [
@@ -93,7 +93,11 @@
     },
     {
       "id": "SP03-008",
-      "name": "Pixar RenderMan Feature Animation Renderer",
+      "name": "Feature Animation Path Tracer",
+      "styleAnchors": [
+        "Feature Animation Path Tracer",
+        "Pixar RenderMan Feature Animation Renderer"
+      ],
       "ref": "pack_03/SP03-008.yaml",
       "packId": "pack_03",
       "packName": "3D & CGI Rendering",
@@ -101,7 +105,7 @@
       "categoryName": "1. Render Engines",
       "tags": ["3d-and-cgi-rendering", "render-engines"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-008 pixar renderman feature animation renderer 1. render engines cgi rendering pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines"
+      "searchableText": "sp03-008 feature animation path tracer pixar renderman feature animation renderer 1. render engines cgi rendering pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines"
     },
     {
       "id": "SP03-009",
@@ -126,6 +130,182 @@
       "tags": ["3d-and-cgi-rendering", "render-engines"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp03-010 unity hdrp high-end game pipeline 1. render engines cgi rendering pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines"
+    },
+    {
+      "id": "SP03-081",
+      "name": "90s Scanline Phong Render",
+      "styleAnchors": [
+        "90s Scanline Phong Render",
+        "early scanline CGI",
+        "Phong plastic highlights"
+      ],
+      "ref": "pack_03/SP03-081.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "render-engines",
+      "categoryName": "1. Render Engines",
+      "domain": "early scanline CGI",
+      "tags": ["3d-and-cgi-rendering", "render-engines", "early-scanline-cgi"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-081 90s scanline phong render early scanline cgi phong plastic highlights 1. render engines cgi rendering early scanline cgi pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines early-scanline-cgi"
+    },
+    {
+      "id": "SP03-082",
+      "name": "Classic Raytracer Mirror Demo",
+      "styleAnchors": [
+        "Classic Raytracer Mirror Demo",
+        "classic recursive raytracing",
+        "perfect mirrors and glass"
+      ],
+      "ref": "pack_03/SP03-082.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "render-engines",
+      "categoryName": "1. Render Engines",
+      "domain": "classic recursive raytracing",
+      "tags": ["3d-and-cgi-rendering", "render-engines", "classic-recursive-raytracing"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-082 classic raytracer mirror demo classic recursive raytracing perfect mirrors and glass 1. render engines cgi rendering classic recursive raytracing pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines classic-recursive-raytracing"
+    },
+    {
+      "id": "SP03-083",
+      "name": "Radiosity Color Bleed",
+      "styleAnchors": [
+        "Radiosity Color Bleed",
+        "radiosity global illumination",
+        "strong color bleeding"
+      ],
+      "ref": "pack_03/SP03-083.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "render-engines",
+      "categoryName": "1. Render Engines",
+      "domain": "radiosity global illumination",
+      "tags": ["3d-and-cgi-rendering", "render-engines", "radiosity-global-illumination"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-083 radiosity color bleed radiosity global illumination strong color bleeding 1. render engines cgi rendering radiosity global illumination pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines radiosity-global-illumination"
+    },
+    {
+      "id": "SP03-084",
+      "name": "Grey Clay Lighting Test",
+      "styleAnchors": [
+        "Grey Clay Lighting Test",
+        "global-illumination clay render",
+        "all-grey matte materials"
+      ],
+      "ref": "pack_03/SP03-084.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "render-engines",
+      "categoryName": "1. Render Engines",
+      "domain": "global-illumination clay render",
+      "tags": ["3d-and-cgi-rendering", "render-engines", "global-illumination-clay-render"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-084 grey clay lighting test global-illumination clay render all-grey matte materials 1. render engines cgi rendering global-illumination clay render pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines global-illumination-clay-render"
+    },
+    {
+      "id": "SP03-085",
+      "name": "Progressive Preview Noise Render",
+      "styleAnchors": [
+        "Progressive Preview Noise Render",
+        "unconverged path trace",
+        "heavy sample noise"
+      ],
+      "ref": "pack_03/SP03-085.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "render-engines",
+      "categoryName": "1. Render Engines",
+      "domain": "unconverged path trace",
+      "tags": ["3d-and-cgi-rendering", "render-engines", "unconverged-path-trace"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-085 progressive preview noise render unconverged path trace heavy sample noise 1. render engines cgi rendering unconverged path trace pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines unconverged-path-trace"
+    },
+    {
+      "id": "SP03-086",
+      "name": "Gaussian Splat Capture",
+      "styleAnchors": ["Gaussian Splat Capture", "3D gaussian splatting", "soft ellipsoid splats"],
+      "ref": "pack_03/SP03-086.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "render-engines",
+      "categoryName": "1. Render Engines",
+      "domain": "3D gaussian splatting",
+      "tags": ["3d-and-cgi-rendering", "render-engines", "3d-gaussian-splatting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-086 gaussian splat capture 3d gaussian splatting soft ellipsoid splats 1. render engines cgi rendering 3d gaussian splatting pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines 3d-gaussian-splatting"
+    },
+    {
+      "id": "SP03-087",
+      "name": "Baked Lightmap Mobile Render",
+      "styleAnchors": [
+        "Baked Lightmap Mobile Render",
+        "mobile game baked lighting",
+        "baked soft shadows"
+      ],
+      "ref": "pack_03/SP03-087.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "render-engines",
+      "categoryName": "1. Render Engines",
+      "domain": "mobile game baked lighting",
+      "tags": ["3d-and-cgi-rendering", "render-engines", "mobile-game-baked-lighting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-087 baked lightmap mobile render mobile game baked lighting baked soft shadows 1. render engines cgi rendering mobile game baked lighting pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines mobile-game-baked-lighting"
+    },
+    {
+      "id": "SP03-088",
+      "name": "Lookdev Reference Plate",
+      "styleAnchors": [
+        "Lookdev Reference Plate",
+        "look development presentation",
+        "chrome ball and grey ball"
+      ],
+      "ref": "pack_03/SP03-088.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "render-engines",
+      "categoryName": "1. Render Engines",
+      "domain": "look development presentation",
+      "tags": ["3d-and-cgi-rendering", "render-engines", "look-development-presentation"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-088 lookdev reference plate look development presentation chrome ball and grey ball 1. render engines cgi rendering look development presentation pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines look-development-presentation"
+    },
+    {
+      "id": "SP03-089",
+      "name": "Live-Action Plate Integration",
+      "styleAnchors": [
+        "Live-Action Plate Integration",
+        "CG composited into live action",
+        "CG in a real photographed plate"
+      ],
+      "ref": "pack_03/SP03-089.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "render-engines",
+      "categoryName": "1. Render Engines",
+      "domain": "CG composited into live action",
+      "tags": ["3d-and-cgi-rendering", "render-engines", "cg-composited-into-live-action"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-089 live-action plate integration cg composited into live action cg in a real photographed plate 1. render engines cgi rendering cg composited into live action pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines cg-composited-into-live-action"
+    },
+    {
+      "id": "SP03-090",
+      "name": "Film-Emulated CG Beauty Render",
+      "styleAnchors": [
+        "Film-Emulated CG Beauty Render",
+        "CG with film emulation",
+        "CG graded as 35 mm film"
+      ],
+      "ref": "pack_03/SP03-090.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "render-engines",
+      "categoryName": "1. Render Engines",
+      "domain": "CG with film emulation",
+      "tags": ["3d-and-cgi-rendering", "render-engines", "cg-with-film-emulation"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-090 film-emulated cg beauty render cg with film emulation cg graded as 35 mm film 1. render engines cgi rendering cg with film emulation pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines cg-with-film-emulation"
     },
     {
       "id": "SP03-011",
@@ -968,5 +1148,5 @@
       "searchableText": "sp03-044 thermal vision 8. sensor and technical shaders technical shaders pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders"
     }
   ],
-  "totalPresetCount": 80
+  "totalPresetCount": 90
 }

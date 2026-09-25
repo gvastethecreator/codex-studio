@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP03-088
+packId: pack_03
+name: Lookdev Reference Plate
+styleAnchors:
+  - Lookdev Reference Plate
+  - look development presentation
+  - chrome ball and grey ball
+displayName: Lookdev Reference Plate
+category: 1. Render Engines
+domain: look development presentation
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - render-engines
+  - lookdev
+  - reference
+  - vfx
+visualDna:
+  aesthetic: 'Lookdev reference plate: a CG asset presented beside a chrome ball, a grey ball and a color chart, lit by a studio HDRI for material approval.'
+  subject_treatment: Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.
+  color_and_tone: Neutral grey backdrop, accurate asset color, chart patches in calibrated colors.
+  lighting_and_shadow: Neutral studio HDRI visible in the chrome ball, soft shadow on the grey ball.
+  texture_and_material: The asset's materials shown in full detail next to the reference spheres.
+  camera_and_composition: Asset centered, chrome and grey balls and a small color chart placed to one side.
+  atmosphere_and_mood: Technical and precise, an asset under careful review.
+  rendering_and_quality: VFX lookdev presentation; the color chart has no readable labels.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lookdev Reference Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: chrome ball and grey ball; color chart; neutral studio HDRI; centered asset; material approval framing
+avoidRules:
+  - 2d illustration
+  - hand-drawn
+  - photograph without CGI cues
+  - franchise likeness
+  - studio character likeness
+  - celebrity likeness
+  - readable text
+  - software logo
+  - replacing the subject with a renderer demo scene
+  - readable chart labels
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: 2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, readable chart labels, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: render-engines
+  categoryName: 1. Render Engines
+  tags:
+    - 3d-and-cgi-rendering
+    - render-engines
+    - lookdev
+    - reference
+    - vfx
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: look development presentation

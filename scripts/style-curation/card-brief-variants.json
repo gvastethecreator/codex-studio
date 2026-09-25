@@ -1262,5 +1262,85 @@
   "SP02-176": [
     "Bedsheet banner painting of a huge green frog with a crown, hung by ropes at the corners, wrinkles across the paint. No slogans or text.",
     "Bedsheet banner painting of a sun rising over waves in bold yellow and blue, wide brush strokes. No slogans or text."
+  ],
+  "SP03-001": [
+    "Spectral path-traced render of a rack of glass potion bottles glowing violet and amber, colored caustics pooling on the shelf below, round bokeh behind. No text or logo.",
+    "Spectral path-traced render of a chrome and iridescent beetle standing on a mirror, thin-film rainbow on its wing cases, bloom on the brightest glints. No text or logo."
+  ],
+  "SP03-002": [
+    "Real-time render of an adult knight in dented plate walking through a narrow rock canyon, sun bouncing warm light off the canyon walls, crisp contact shadows. No HUD, text or logo.",
+    "Real-time render of a torchlit dungeon corridor filled with volumetric fog, flickering bounce light on wet stones, slight TAA softness. No HUD, text or logo."
+  ],
+  "SP03-003": [
+    "Biased GPU render of a black-and-gold perfume bottle levitating above a frosted glass plinth, soft shadow, satin reflections. No text or logo.",
+    "Biased GPU render of a jellyfish made of nested frosted-glass rings drifting in a clean blue void, crisp rim highlights. No text or logo."
+  ],
+  "SP03-004": [
+    "Feature-film VFX render of a dragon exhaling a column of smoke that scatters golden light in thick volumes, scales with micro-displacement. No text or logo.",
+    "Feature-film VFX render of an adult sorceress in rain-soaked chainmail, water beading on each ring, skin with realistic scattering. No text or logo."
+  ],
+  "SP03-005": [
+    "Open path-traced render of a small stone golem covered in procedural moss standing in a forest clearing, soft denoised shadows. No text or logo.",
+    "Open path-traced render of a ship in a glass bottle on a windowsill, principled glass refraction and filmic highlights. No text or logo."
+  ],
+  "SP03-006": [
+    "Architectural visualization render of a glass villa cantilevered over a sea cliff at sunset, soft sky bounce inside, blurred reflections in polished stone. No text or logo.",
+    "Architectural visualization render of a vaulted monastery library with long oak tables and window shafts, calm and uncluttered. No readable book spines or logo."
+  ],
+  "SP03-007": [
+    "Product studio render of a jeweled dagger hilt with a wrapped leather grip, cut garnets catching precise highlights, grey gradient background. No text or logo.",
+    "Product studio render of an ornate brass spellbook clasp and hinge, anodized and polished finishes side by side. No text or logo."
+  ],
+  "SP03-008": [
+    "Feature-animation render of a tiny dragon curled around a steaming teapot on a windowsill, soft fuzz on its wings, rim light. No text or logo.",
+    "Feature-animation render of a nervous living lantern character hopping through a dark forest, its own glow lighting the ferns. No text or logo."
+  ],
+  "SP03-009": [
+    "Digital clay sculpt of a horned dragon head in grey clay matcap, pinched scales and clay buildup on the horns. No UI or text.",
+    "Digital clay sculpt of a coiling many-headed hydra in brown clay matcap, brush marks visible along the necks. No UI or text."
+  ],
+  "SP03-010": [
+    "Game pipeline render of an adult battle mage casting a spiral of particle fire, bloom on the emissive runes, screen-space reflections on wet stone. No HUD, text or logo.",
+    "Game pipeline render of a night swamp full of fireflies, reflection probes on the black water, particle glow. No HUD, text or logo."
+  ],
+  "SP03-081": [
+    "90s scanline render of a low-polygon dragon with Gouraud-smoothed faces and a blurry low-res scale texture. No text or logo.",
+    "90s scanline render of a castle on a green hill under a gradient sky, faceted towers, a single hard point light. No text or logo."
+  ],
+  "SP03-082": [
+    "Classic raytraced render of a chrome chess set mid-game, every piece reflecting the board and each other. No text or logo.",
+    "Classic raytraced render of a floating glass crown refracting the checkerboard floor beneath it. No text or logo."
+  ],
+  "SP03-083": [
+    "Radiosity render of a chapel where light through one yellow window floods the white vault with a warm glow, patchy light maps. No text or logo.",
+    "Radiosity render of the inside of an orange tent glowing, the canvas color bleeding onto a sleeping bag and lantern. No text or logo."
+  ],
+  "SP03-084": [
+    "Grey clay render of an entire medieval village on a hill under an overcast HDRI, rooftops and chimneys all in uniform grey. No text or logo.",
+    "Grey clay render of a dragon perched on a crag at sunset, only form, light and long shadow. No text or logo."
+  ],
+  "SP03-085": [
+    "Progressive preview render of a candle-lit crypt, noise crawling in the dark corners and on the stone coffins. No text or logo.",
+    "Progressive preview render of a crystal chandelier, its caustics scattered as bright fireflies across the ceiling. No text or logo."
+  ],
+  "SP03-086": [
+    "Gaussian splat capture of a moss-covered stone statue in a garden, stretched splats on the far side where the capture was thin. No text or logo.",
+    "Gaussian splat capture of a cluttered alchemist's workshop, bottles photoreal up close and melting into fuzzy blobs in the corners. No text or logo."
+  ],
+  "SP03-087": [
+    "Baked-lightmap render of a low-poly castle courtyard with a well and banners without symbols, blurry lightmap seams on the walls. No HUD or text.",
+    "Baked-lightmap render of a treasure room of low-poly gold piles and chests with a fake glow over the coins. No HUD or text."
+  ],
+  "SP03-088": [
+    "Lookdev reference plate of a CG goblin head with wet eyes and warty skin next to chrome and grey reference balls. No labels, text or logo.",
+    "Lookdev reference plate of a CG runed longsword with pitted steel and a leather grip, color chart and reference spheres. No readable runes, labels or logo."
+  ],
+  "SP03-089": [
+    "Live-action VFX frame of a CG stone giant wading through a real misty forest plate, fog wrapping around its legs, handheld framing. No text or logo.",
+    "Live-action VFX frame of a CG golem climbing out of a real quarry, dust kicked up onto the real rocks, matched lens blur. No text or logo."
+  ],
+  "SP03-090": [
+    "Film-emulated CG render of a wooden airship drifting over snowy mountains, anamorphic framing, lifted blacks and soft grain. No text or logo.",
+    "Film-emulated CG render of a witch's cottage glowing at dusk in a birch wood, chromatic fringing on the windows, film vignette. No text or logo."
   ]
 }

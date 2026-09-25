@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP03-082
+packId: pack_03
+name: Classic Raytracer Mirror Demo
+styleAnchors:
+  - Classic Raytracer Mirror Demo
+  - classic recursive raytracing
+  - perfect mirrors and glass
+displayName: Classic Raytracer Mirror Demo
+category: 1. Render Engines
+domain: classic recursive raytracing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - render-engines
+  - raytracing
+  - mirror
+  - retro-cgi
+visualDna:
+  aesthetic: 'Classic recursive raytracing: perfect mirrors and clear glass reflecting and refracting each other endlessly over an infinite floor, with razor-hard shadows.'
+  subject_treatment: Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.
+  color_and_tone: Saturated primaries, pure mirror chrome, clean blue sky gradient.
+  lighting_and_shadow: Point lights with perfectly hard shadows; no soft light, no bounce.
+  texture_and_material: Flawless mirror and glass, checkerboard or tiled floor stretching to the horizon.
+  camera_and_composition: Low camera over the endless floor, objects arranged like a demo scene.
+  atmosphere_and_mood: Crystalline and uncanny, a perfect world with no dust.
+  rendering_and_quality: Aliased-free but unmistakably early raytraced look; no noise, no GI.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Classic Raytracer Mirror Demo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: perfect mirrors and glass; hard point-light shadows; infinite checkerboard; recursive reflections; no bounce light
+avoidRules:
+  - 2d illustration
+  - hand-drawn
+  - photograph without CGI cues
+  - franchise likeness
+  - studio character likeness
+  - celebrity likeness
+  - readable text
+  - software logo
+  - replacing the subject with a renderer demo scene
+  - soft shadows
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: 2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, soft shadows, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: render-engines
+  categoryName: 1. Render Engines
+  tags:
+    - 3d-and-cgi-rendering
+    - render-engines
+    - raytracing
+    - mirror
+    - retro-cgi
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: classic recursive raytracing

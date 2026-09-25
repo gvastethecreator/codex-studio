@@ -3,7 +3,7 @@ id: SP03-002
 packId: pack_03
 name: Unreal Engine 5 Next-Gen Real-Time Engine
 category: 1. Render Engines
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,58 +12,27 @@ tags:
   - 3d-and-cgi-rendering
   - render-engines
 visualDna:
-  aesthetic: >-
-    Unreal Engine 5 Next-Gen Real-Time Engine acts as a transferable CGI-style router: start from
-    Real time next gen game engine rendering, High fidelity, real time path tracing and
-    renderer-pipeline system built from sampling behavior, shader evaluation, light transport,
-    denoise strategy, and engine-specific production polish, then apply the 3D/render behavior to
-    prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Lumen global illumination; preserve the prompt subject
-    while translating it through the renderer strengths: path tracing, biased sampling, real-time
-    GI, product-studio preview, or feature-film shading, keeping the requested identity, silhouette,
-    pose, object function, or environment legible.
-  color_and_tone: >-
-    Build color with Realistic, dynamic, physically based; make color come from color management,
-    HDR response, spectral bloom, engine tonemapping, material albedo, and physically plausible
-    exposure, with deliberate value grouping, exposure control, and medium-specific limits rather
-    than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Ray traced shadows, Nanite lit; let engine-specific GI, ray tracing, Lumen,
-    caustics, volume scattering, HDRI, or studio reflection control drive value hierarchy, so value
-    structure supports the renderer and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Nanite geometry detail; surface detail should reveal BSDF behavior, sampling clarity,
-    shader networks, displacement, adaptive refinement, and material truth rather than a pasted
-    texture, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Lookdev camera for Unreal Engine 5 Next Gen Real Time Engine: three
-    quarter or orthographic framing, clean silhouette read, material highlights, controlled depth,
-    and vertical card composition; compose for renderer readability through focal hierarchy, product
-    or VFX staging, material swatches, path-traced depth, and clean engine output, with scale,
-    spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Immersive, interactive, cinematic depth; derive mood from render fidelity,
-    production confidence, cinematic polish, engine interactivity, or industrial design clarity,
-    letting the renderer alter interpretation without demanding a specific story, location, or
-    character.
-  rendering_and_quality: >-
-    Finish with AAA game fidelity, virtual production polish, real time final frame clarity; finish
-    with credible CGI output, controlled noise, accurate reflections, stable geometry, and no raw
-    viewport or cheap preview look, clean denoised surfaces where appropriate, and enough shader
-    evidence to make the CGI mode recognizable.
-  key_features: >-
-    Real time next gen game engine rendering; High fidelity, real time path tracing; Realistic,
-    dynamic, physically based; Nanite geometry detail; Lookdev camera for Unreal Engine 5 Next Gen
-    Real Time Engine: three quarter or orthographic framing, clean silhouette read, material
-    highlights, controlled depth, and vertical card composition
-  creative_brief: >-
-    Apply Unreal Engine 5 Next-Gen Real-Time Engine as a CGI/render preset over prompt X: preserve
-    the user's requested subject, then route modeling, shader response, lighting, material scale,
-    composition, mood, and final render craft through Real time next gen game engine rendering, High
-    fidelity, real time path tracing, Nanite geometry detail without requiring the card image's
-    original subject.
+  aesthetic: 'Unreal Engine 5 real-time render: dynamic global illumination, film-quality micro-detail geometry and volumetric fog running at game frame rates.'
+  subject_treatment: Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.
+  color_and_tone: Naturalistic filmic tonemapping, warm sun against cool sky fill, gentle bloom.
+  lighting_and_shadow: Real-time bounce light filling caves and interiors, virtual shadow maps with crisp contact detail, god rays in fog.
+  texture_and_material: Scanned rock and bark with dense micro-geometry, slight temporal anti-aliasing softness on fine detail.
+  camera_and_composition: Cinematic game camera, wide vistas or third-person framing with depth.
+  atmosphere_and_mood: Grand and immersive, a playable world at cinematic fidelity.
+  rendering_and_quality: Real-time next-gen look with subtle TAA softness; no UI or HUD.
+  key_features: real-time bounce GI; micro-detail scanned geometry; volumetric fog shafts; filmic tonemap; TAA softness
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Unreal Engine 5 Next-Gen Real-Time Engine as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - 2d illustration
+  - hand-drawn
+  - photograph without CGI cues
+  - franchise likeness
+  - studio character likeness
+  - celebrity likeness
+  - readable text
+  - software logo
+  - replacing the subject with a renderer demo scene
+  - game HUD
   - pre-rendered
   - low poly
   - wrong medium
@@ -71,19 +40,21 @@ avoidRules:
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - raw viewport
   - unlit preview
   - wrong render engine
   - cheap preview noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-002.webp
 attributes:
-  negativePrompt: >-
-    pre-rendered, low poly, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture
-    chatter, watermark, readable text, signature, raw viewport, unlit preview, wrong render engine,
-    cheap preview noise
+  negativePrompt: 2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, game HUD, pre-rendered, low poly, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

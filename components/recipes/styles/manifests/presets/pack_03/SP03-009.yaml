@@ -3,7 +3,7 @@ id: SP03-009
 packId: pack_03
 name: ZBrush Digital Clay Sculpt
 category: 1. Render Engines
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,50 +12,28 @@ tags:
   - 3d-and-cgi-rendering
   - render-engines
 visualDna:
-  aesthetic: >-
-    ZBrush Digital Clay Sculpt acts as a transferable CGI-style router: start from Digital clay
-    sculpt, Matcap material, dynamesh topology and renderer-pipeline system built from sampling
-    behavior, shader evaluation, light transport, denoise strategy, and engine-specific production
-    polish, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Matcap shader; preserve the prompt subject while
-    translating it through the renderer strengths: path tracing, biased sampling, real-time GI,
-    product-studio preview, or feature-film shading, keeping the requested identity, silhouette,
-    pose, object function, or environment legible.
-  color_and_tone: >-
-    Build color with Grey or Red wax, clay brown; make color come from color management, HDR
-    response, spectral bloom, engine tonemapping, material albedo, and physically plausible
-    exposure, with deliberate value grouping, exposure control, and medium-specific limits rather
-    than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Rim light, sculpting studio setup; let engine-specific GI, ray tracing,
-    Lumen, caustics, volume scattering, HDRI, or studio reflection control drive value hierarchy, so
-    value structure supports the renderer and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Clay strokes, matcap highlights; surface detail should reveal BSDF behavior, sampling
-    clarity, shader networks, displacement, adaptive refinement, and material truth rather than a
-    pasted texture, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Sculptural anatomy optional; compose for renderer readability
-    through focal hierarchy, product or VFX staging, material swatches, path-traced depth, and clean
-    engine output, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Artistic, raw, hands on feel; derive mood from render fidelity, production
-    confidence, cinematic polish, engine interactivity, or industrial design clarity, letting the
-    renderer alter interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with High poly model, sculpted detail; finish with credible CGI output, controlled noise,
-    accurate reflections, stable geometry, and no raw viewport or cheap preview look, clean denoised
-    surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.
-  key_features: >-
-    Digital clay sculpt; Matcap material, dynamesh topology; Grey or Red wax, clay brown; Clay
-    strokes, matcap highlights; Sculptural anatomy optional
-  creative_brief: >-
-    Apply ZBrush Digital Clay Sculpt as a CGI/render preset over prompt X: preserve the user's
-    requested subject, then route modeling, shader response, lighting, material scale, composition,
-    mood, and final render craft through Digital clay sculpt, Matcap material, dynamesh topology,
-    Clay strokes, matcap highlights without requiring the card image's original subject.
+  aesthetic: 'Digital clay sculpt: a raw viewport render of a sculpted model under a matcap material, with brush strokes and clay texture still visible.'
+  subject_treatment: Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.
+  color_and_tone: Single matcap tone — red wax, grey clay or brown clay — with a baked highlight and dark cavities.
+  lighting_and_shadow: 'Matcap shading only: a fixed studio highlight, no cast shadows, no global illumination.'
+  texture_and_material: Brush strokes, pinched edges, clay buildup, polygon-free smoothness.
+  camera_and_composition: Bust or full figure centered on a dark viewport background.
+  atmosphere_and_mood: Raw and artistic, form discovered under the sculptor's hand.
+  rendering_and_quality: Viewport sculpt look; no textures, no scene lighting, no UI.
+  key_features: matcap red wax or grey clay; visible brush strokes; no cast shadows; dark viewport background; centered bust
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies ZBrush Digital Clay Sculpt as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - 2d illustration
+  - hand-drawn
+  - photograph without CGI cues
+  - franchise likeness
+  - studio character likeness
+  - celebrity likeness
+  - readable text
+  - software logo
+  - replacing the subject with a renderer demo scene
+  - viewport UI
+  - textured color
   - textured
   - low poly
   - wrong medium
@@ -63,19 +41,21 @@ avoidRules:
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - raw viewport
   - unlit preview
   - wrong render engine
   - cheap preview noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-009.webp
 attributes:
-  negativePrompt: >-
-    textured, low poly, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture
-    chatter, watermark, readable text, signature, raw viewport, unlit preview, wrong render engine,
-    cheap preview noise
+  negativePrompt: 2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, viewport UI, textured color, textured, low poly, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

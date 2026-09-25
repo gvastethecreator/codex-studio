@@ -3,7 +3,7 @@ id: SP03-010
 packId: pack_03
 name: Unity HDRP High-End Game Pipeline
 category: 1. Render Engines
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,76 +12,49 @@ tags:
   - 3d-and-cgi-rendering
   - render-engines
 visualDna:
-  aesthetic: >-
-    Unity HDRP High-End Game Pipeline acts as a transferable CGI-style router: start from High
-    definition game engine, Lens flares, HDRP pipeline and renderer-pipeline system built from
-    sampling behavior, shader evaluation, light transport, denoise strategy, and engine-specific
-    production polish, then apply the 3D/render behavior to prompt X instead of recreating a fixed
-    demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Sharp; preserve the prompt subject while translating it
-    through the renderer strengths: path tracing, biased sampling, real-time GI, product-studio
-    preview, or feature-film shading, keeping the requested identity, silhouette, pose, object
-    function, or environment legible.
-  color_and_tone: >-
-    Build color with Post processed, filmic tonemap; make color come from color management, HDR
-    response, spectral bloom, engine tonemapping, material albedo, and physically plausible
-    exposure, with deliberate value grouping, exposure control, and medium-specific limits rather
-    than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Volumetric fog, real time GI; let engine-specific GI, ray tracing, Lumen,
-    caustics, volume scattering, HDRI, or studio reflection control drive value hierarchy, so value
-    structure supports the renderer and does not overwrite the requested content.
-  texture_and_material: >-
-    Render PBR materials, substance integrations; surface detail should reveal BSDF behavior,
-    sampling clarity, shader networks, displacement, adaptive refinement, and material truth rather
-    than a pasted texture, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Lookdev camera for Unity HDRP High End Game Pipeline: three quarter
-    or orthographic framing, clean silhouette read, material highlights, controlled depth, and
-    vertical card composition; compose for renderer readability through focal hierarchy, product or
-    VFX staging, material swatches, path-traced depth, and clean engine output, with scale, spacing,
-    edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Dynamic, interactive feeling, cinematic real time energy; derive mood from render
-    fidelity, production confidence, cinematic polish, engine interactivity, or industrial design
-    clarity, letting the renderer alter interpretation without demanding a specific story, location,
-    or character.
-  rendering_and_quality: >-
-    Finish with Game cinematic, cutscene grade; finish with credible CGI output, controlled noise,
-    accurate reflections, stable geometry, and no raw viewport or cheap preview look, clean denoised
-    surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.
-  key_features: >-
-    High definition game engine; Lens flares, HDRP pipeline; Post processed, filmic tonemap; PBR
-    materials, substance integrations; Lookdev camera for Unity HDRP High End Game Pipeline: three
-    quarter or orthographic framing, clean silhouette read, material highlights, controlled depth,
-    and vertical card composition
-  creative_brief: >-
-    Apply Unity HDRP High-End Game Pipeline as a CGI/render preset over prompt X: preserve the
-    user's requested subject, then route modeling, shader response, lighting, material scale,
-    composition, mood, and final render craft through High definition game engine, Lens flares, HDRP
-    pipeline, PBR materials, substance integrations without requiring the card image's original
-    subject.
+  aesthetic: 'High-end game pipeline render: a real-time engine frame with heavy post-processing — bloom, lens flares, color grading and screen-space effects.'
+  subject_treatment: Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.
+  color_and_tone: Punchy graded color, strong bloom on emissives, filmic tonemap with lifted blacks.
+  lighting_and_shadow: Baked and real-time mix, reflection probes, screen-space reflections with slight edge artifacts.
+  texture_and_material: PBR materials, particle effects, decals, slightly repeating tiling textures.
+  camera_and_composition: Third-person or cinematic game camera, lens flare from bright sources.
+  atmosphere_and_mood: Epic and game-like, a moment made for a trailer.
+  rendering_and_quality: Real-time game look with post effects; no HUD, no trams or city clichés.
+  key_features: heavy bloom and lens flares; screen-space reflections; particle effects; PBR materials; graded filmic tonemap
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Unity HDRP High-End Game Pipeline as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - 2d illustration
+  - hand-drawn
+  - photograph without CGI cues
+  - franchise likeness
+  - studio character likeness
+  - celebrity likeness
+  - readable text
+  - software logo
+  - replacing the subject with a renderer demo scene
+  - game HUD
+  - tram
   - mobile game
   - wrong medium
   - flat 2d paintover
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - raw viewport
   - unlit preview
   - wrong render engine
   - cheap preview noise
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-010.webp
 attributes:
-  negativePrompt: >-
-    mobile game, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
-    watermark, readable text, signature, raw viewport, unlit preview, wrong render engine, cheap
-    preview noise
+  negativePrompt: 2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, game HUD, tram, mobile game, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

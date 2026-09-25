@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP03-086
+packId: pack_03
+name: Gaussian Splat Capture
+styleAnchors:
+  - Gaussian Splat Capture
+  - 3D gaussian splatting
+  - soft ellipsoid splats
+displayName: Gaussian Splat Capture
+category: 1. Render Engines
+domain: 3D gaussian splatting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - render-engines
+  - gaussian-splat
+  - capture
+  - neural-rendering
+visualDna:
+  aesthetic: 'Gaussian splat capture: a real place reconstructed from photos as millions of soft colored ellipsoids, photoreal from the capture angle and fuzzy at the edges.'
+  subject_treatment: Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.
+  color_and_tone: Photographic color baked in from the capture, including captured highlights.
+  lighting_and_shadow: Lighting frozen from the original photos; no relighting.
+  texture_and_material: Soft ellipsoid blobs at silhouettes, floaters hanging in the air, stretched splats where the capture was thin.
+  camera_and_composition: Slightly off the original camera path, so edges and backgrounds reveal splat artifacts.
+  atmosphere_and_mood: Dreamlike and uncanny, reality dissolving into colored mist.
+  rendering_and_quality: Real-time splat look with floaters; not a mesh and not a photograph.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gaussian Splat Capture as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: soft ellipsoid splats; floaters in the air; photoreal core; fuzzy silhouettes; baked captured lighting
+avoidRules:
+  - 2d illustration
+  - hand-drawn
+  - photograph without CGI cues
+  - franchise likeness
+  - studio character likeness
+  - celebrity likeness
+  - readable text
+  - software logo
+  - replacing the subject with a renderer demo scene
+  - clean polygon mesh
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: 2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, clean polygon mesh, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: render-engines
+  categoryName: 1. Render Engines
+  tags:
+    - 3d-and-cgi-rendering
+    - render-engines
+    - gaussian-splat
+    - capture
+    - neural-rendering
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: 3D gaussian splatting

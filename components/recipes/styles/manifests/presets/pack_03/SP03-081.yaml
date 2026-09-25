@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP03-081
+packId: pack_03
+name: 90s Scanline Phong Render
+styleAnchors:
+  - 90s Scanline Phong Render
+  - early scanline CGI
+  - Phong plastic highlights
+displayName: 90s Scanline Phong Render
+category: 1. Render Engines
+domain: early scanline CGI
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - render-engines
+  - scanline
+  - phong
+  - retro-cgi
+visualDna:
+  aesthetic: '90s scanline render: early computer graphics with Phong and Gouraud shading, hard plastic highlights, no global illumination and few or no shadows.'
+  subject_treatment: Keep the prompt subject, action and setting and render them as 3D CGI through this renderer's light transport, sampling and material response, without swapping in a renderer demo subject.
+  color_and_tone: Saturated flat colors, plastic white highlights, black or gradient sky backgrounds.
+  lighting_and_shadow: One or two point lights, hard specular blobs, shadow maps or no shadows at all.
+  texture_and_material: Low-resolution textures, faceted polygon edges, checkerboard floors, plastic sheen.
+  camera_and_composition: Centered objects, simple sets, wide field of view.
+  atmosphere_and_mood: Nostalgic and naive, the first steps of digital worlds.
+  rendering_and_quality: Early CG look with visible polygon facets; no modern path tracing.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 90s Scanline Phong Render as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: Phong plastic highlights; no global illumination; faceted polygons; checkerboard floor; low-res textures
+avoidRules:
+  - 2d illustration
+  - hand-drawn
+  - photograph without CGI cues
+  - franchise likeness
+  - studio character likeness
+  - celebrity likeness
+  - readable text
+  - software logo
+  - replacing the subject with a renderer demo scene
+  - global illumination
+  - photoreal
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: 2d illustration, hand-drawn, photograph without CGI cues, franchise likeness, studio character likeness, celebrity likeness, readable text, software logo, replacing the subject with a renderer demo scene, global illumination, photoreal, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: render-engines
+  categoryName: 1. Render Engines
+  tags:
+    - 3d-and-cgi-rendering
+    - render-engines
+    - scanline
+    - phong
+    - retro-cgi
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: early scanline CGI
