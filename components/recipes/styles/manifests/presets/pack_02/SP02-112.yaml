@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP02-112
 packId: pack_02
-name: Mike Judge Office Boredom Sketch
+name: Office Boredom Sketch
 category: 6. Caricature And Cartoon Styles
 version: 1
 supportedTasks:
@@ -12,43 +12,16 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: >-
-    Use this drawing language: Observational dry-cartoon drawing with minimal contours, boxy
-    spatial rhythm, restrained proportions, quiet composition, and understated gestures. Apply
-    it to the supplied content without requiring a particular cast, place, or story.
-  subject_treatment: >-
-    Apply minimal dry contours, plain observational line, restrained forms, and tiny awkward
-    gestures to the supplied subject while preserving its identity, silhouette, requested
-    action, actual material, and function. Change the drawn treatment, not the underlying
-    content.
-  color_and_tone: >-
-    Use muted beige, paper white, washed-out green, stale blue, warm gray, and toner black as
-    style colors while honoring any explicit color requirements in the request.
-  lighting_and_shadow: >-
-    Use even fluorescent-style exposure with minimal shadow contrast as a visual treatment,
-    while respecting any lighting instructions in the request.
-  texture_and_material: >-
-    Render fine paper grain, dry weave marks, toner-like edges, and restrained marker fill as
-    drawn or printed surface marks over the existing material; do not change the subject's
-    actual substance or function.
-  camera_and_composition: >-
-    Favor stable boxy spacing, quiet framing, and small gestures; keep the source context and
-    subject.
-  atmosphere_and_mood: >-
-    Bored, dry, and observant; underplay expressive cues and keep context user-led.
-  rendering_and_quality: >-
-    Finish with dry marker-like fill, economical line, and restrained surface detail.
-  key_features: >-
-    economical contour; boxy shape rhythm; restrained proportions; quiet framing; dry
-    observational mood
-  creative_brief: >-
-    Render the supplied content with minimal dry contours, plain observational line, restrained
-    forms, and tiny awkward gestures. Use muted beige, paper white, washed-out green, stale
-    blue, warm gray, and toner black as style colors while honoring any explicit color
-    instructions. Apply fine paper grain, dry weave marks, toner-like edges, and restrained
-    marker fill as drawn or printed marks over the existing material, without changing what the
-    subject is made of or how it functions. Preserve the requested subject, action, and setting;
-    follow the supplied composition and add no unrequested cast, location, lettering, or gag.
+  aesthetic: 'Use this drawing language: Observational dry-cartoon drawing with minimal contours, boxy spatial rhythm, restrained proportions, quiet composition, and understated gestures. Apply it to the supplied content without requiring a particular cast, place, or story.'
+  subject_treatment: Apply minimal dry contours, plain observational line, restrained forms, and tiny awkward gestures to the supplied subject while preserving its identity, silhouette, requested action, actual material, and function. Change the drawn treatment, not the underlying content.
+  color_and_tone: Use muted beige, paper white, washed-out green, stale blue, warm gray, and toner black as style colors while honoring any explicit color requirements in the request.
+  lighting_and_shadow: Use even fluorescent-style exposure with minimal shadow contrast as a visual treatment, while respecting any lighting instructions in the request.
+  texture_and_material: Render fine paper grain, dry weave marks, toner-like edges, and restrained marker fill as drawn or printed surface marks over the existing material; do not change the subject's actual substance or function.
+  camera_and_composition: Favor stable boxy spacing, quiet framing, and small gestures; keep the source context and subject.
+  atmosphere_and_mood: Bored, dry, and observant; underplay expressive cues and keep context user-led.
+  rendering_and_quality: Finish with dry marker-like fill, economical line, and restrained surface detail.
+  key_features: economical contour; boxy shape rhythm; restrained proportions; quiet framing; dry observational mood
+  creative_brief: Render the supplied content with minimal dry contours, plain observational line, restrained forms, and tiny awkward gestures. Use muted beige, paper white, washed-out green, stale blue, warm gray, and toner black as style colors while honoring any explicit color instructions. Apply fine paper grain, dry weave marks, toner-like edges, and restrained marker fill as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.
 avoidRules:
   - digital
   - HD
@@ -74,11 +47,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-112.webp
 attributes:
-  negativePrompt: >-
-    digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official
-    card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text,
-    watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness,
-    readable gag text, generic cute mascot, smooth anime polish
+  negativePrompt: digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
@@ -92,3 +61,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Office Boredom Sketch
+styleAnchors:
+  - Office Boredom Sketch
+  - Mike Judge Office Boredom Sketch

@@ -12,45 +12,16 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: >-
-    Use this drawing language: Naive picture-making with blocky symbols, simple geometry,
-    disproportionate importance-based scale, wavering crayon, and a flattened page with optional
-    horizon bands. Apply it to the supplied content without requiring a particular cast, place,
-    or story.
-  subject_treatment: >-
-    Apply heavy crayon pressure, wobbly circles, repeated fill, and uneven coloring to the
-    supplied subject while preserving its identity, silhouette, requested action, actual
-    material, and function. Change the drawn treatment, not the underlying content.
-  color_and_tone: >-
-    Use primary crayon colors, sun yellow, sky blue, grass green, peach, soft pink, and warm
-    brown as style colors while honoring any explicit color requirements in the request.
-  lighting_and_shadow: >-
-    Use flat color with even brightness and no modeled lighting as a visual treatment, while
-    respecting any lighting instructions in the request.
-  texture_and_material: >-
-    Render construction-paper tooth, crayon-wax buildup, paper indentations, and uneven color
-    fill as drawn or printed surface marks over the existing material; do not change the
-    subject's actual substance or function.
-  camera_and_composition: >-
-    Use flat page space and importance-based scale; add ground or sky bands only when the
-    requested scene already calls for them.
-  atmosphere_and_mood: >-
-    Proud, naive, and warmly expressive; let scale and color carry feeling without prescribing a
-    relationship.
-  rendering_and_quality: >-
-    Finish with simple crayon geometry, uneven pressure, and flat color; avoid cleanup that
-    removes the naive mark.
-  key_features: >-
-    blocky symbols; uneven geometry; importance-based scale; wavering crayon; flattened page
-    space
-  creative_brief: >-
-    Render the supplied content with heavy crayon pressure, wobbly circles, repeated fill, and
-    uneven coloring. Use primary crayon colors, sun yellow, sky blue, grass green, peach, soft
-    pink, and warm brown as style colors while honoring any explicit color instructions. Apply
-    construction-paper tooth, crayon-wax buildup, paper indentations, and uneven color fill as
-    drawn or printed marks over the existing material, without changing what the subject is made
-    of or how it functions. Preserve the requested subject, action, and setting; follow the
-    supplied composition and add no unrequested cast, location, lettering, or gag.
+  aesthetic: 'Use this drawing language: Naive picture-making with blocky symbols, simple geometry, disproportionate importance-based scale, wavering crayon, and a flattened page with optional horizon bands. Apply it to the supplied content without requiring a particular cast, place, or story.'
+  subject_treatment: Apply heavy crayon pressure, wobbly circles, repeated fill, and uneven coloring to the supplied subject while preserving its identity, silhouette, requested action, actual material, and function. Change the drawn treatment, not the underlying content.
+  color_and_tone: Use primary crayon colors, sun yellow, sky blue, grass green, peach, soft pink, and warm brown as style colors while honoring any explicit color requirements in the request.
+  lighting_and_shadow: Use flat color with even brightness and no modeled lighting as a visual treatment, while respecting any lighting instructions in the request.
+  texture_and_material: Render construction-paper tooth, crayon-wax buildup, paper indentations, and uneven color fill as drawn or printed surface marks over the existing material; do not change the subject's actual substance or function.
+  camera_and_composition: Use flat page space and importance-based scale; add ground or sky bands only when the requested scene already calls for them.
+  atmosphere_and_mood: Proud, naive, and warmly expressive; let scale and color carry feeling without prescribing a relationship.
+  rendering_and_quality: Finish with simple crayon geometry, uneven pressure, and flat color; avoid cleanup that removes the naive mark.
+  key_features: blocky symbols; uneven geometry; importance-based scale; wavering crayon; flattened page space
+  creative_brief: Render the supplied content with heavy crayon pressure, wobbly circles, repeated fill, and uneven coloring. Use primary crayon colors, sun yellow, sky blue, grass green, peach, soft pink, and warm brown as style colors while honoring any explicit color instructions. Apply construction-paper tooth, crayon-wax buildup, paper indentations, and uneven color fill as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.
 avoidRules:
   - realistic
   - proportional
@@ -76,11 +47,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-094.webp
 attributes:
-  negativePrompt: >-
-    realistic, proportional, accurate, skilled, professional, 3d, photo, correct anatomy, adult art,
-    official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake
-    text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character
-    likeness, readable gag text, generic cute mascot, smooth anime polish
+  negativePrompt: realistic, proportional, accurate, skilled, professional, 3d, photo, correct anatomy, adult art, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

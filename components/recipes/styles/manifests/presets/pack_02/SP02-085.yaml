@@ -12,44 +12,16 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: >-
-    Use surreal melt-cartoon drawing with vertical drip marks, sinking contours, pooled graphic
-    shapes, stretched edges, and wavering drawn boundaries between solid-looking forms. Keep
-    these as visual effects applied to the supplied content.
-  subject_treatment: >-
-    Apply sinking contours, drooping outlines, vertical stretch, and liquid-like edge distortion
-    to the supplied subject while preserving its identity, silhouette, requested action, actual
-    material, and function. Change the drawn treatment, not the underlying content.
-  color_and_tone: >-
-    Use melting-wax pastels, bruise-spectrum purple and yellow, jaundiced yellow, soft amber,
-    and muted peach as style colors while honoring any explicit color requirements in the
-    request.
-  lighting_and_shadow: >-
-    Use shifting value contrasts and inconsistent drawn-shadow directions as a visual treatment,
-    while respecting any lighting instructions in the request.
-  texture_and_material: >-
-    Render graphic drip trails, stretched contour marks, and pooled edge accents as drawn or
-    printed surface marks over the existing material; do not change the subject's actual
-    substance or function.
-  camera_and_composition: >-
-    Let contours appear to sink, drip, and pool in the drawing; keep the supplied subject,
-    actual material, and function intact.
-  atmosphere_and_mood: >-
-    Disorienting and hypnotic; let unstable contours carry the surreal feeling.
-  rendering_and_quality: >-
-    Finish with fluid cartoon contours, pooled graphic edges, and drawn melting effects that
-    leave the source material intact.
-  key_features: >-
-    sinking contours; vertical drips; stretched edges; pooled graphic shapes; wavering
-    boundaries
-  creative_brief: >-
-    Render the supplied content with sinking contours, drooping outlines, vertical stretch, and
-    liquid-like edge distortion. Use melting-wax pastels, bruise-spectrum purple and yellow,
-    jaundiced yellow, soft amber, and muted peach as style colors while honoring any explicit
-    color instructions. Apply graphic drip trails, stretched contour marks, and pooled edge
-    accents as drawn or printed marks over the existing material, without changing what the
-    subject is made of or how it functions. Preserve the requested subject, action, and setting;
-    follow the supplied composition and add no unrequested cast, location, lettering, or gag.
+  aesthetic: Use surreal melt-cartoon drawing with vertical drip marks, sinking contours, pooled graphic shapes, stretched edges, and wavering drawn boundaries between solid-looking forms. Keep these as visual effects applied to the supplied content.
+  subject_treatment: Apply sinking contours, drooping outlines, vertical stretch, and liquid-like edge distortion to the supplied subject while preserving its identity, silhouette, requested action, actual material, and function. Change the drawn treatment, not the underlying content.
+  color_and_tone: Use melting-wax pastels, bruise-spectrum purple and yellow, jaundiced yellow, soft amber, and muted peach as style colors while honoring any explicit color requirements in the request.
+  lighting_and_shadow: Use shifting value contrasts and inconsistent drawn-shadow directions as a visual treatment, while respecting any lighting instructions in the request.
+  texture_and_material: Render graphic drip trails, stretched contour marks, and pooled edge accents as drawn or printed surface marks over the existing material; do not change the subject's actual substance or function.
+  camera_and_composition: Let contours appear to sink, drip, and pool in the drawing; keep the supplied subject, actual material, and function intact.
+  atmosphere_and_mood: Disorienting and hypnotic; let unstable contours carry the surreal feeling.
+  rendering_and_quality: Finish with fluid cartoon contours, pooled graphic edges, and drawn melting effects that leave the source material intact.
+  key_features: sinking contours; vertical drips; stretched edges; pooled graphic shapes; wavering boundaries
+  creative_brief: Render the supplied content with sinking contours, drooping outlines, vertical stretch, and liquid-like edge distortion. Use melting-wax pastels, bruise-spectrum purple and yellow, jaundiced yellow, soft amber, and muted peach as style colors while honoring any explicit color instructions. Apply graphic drip trails, stretched contour marks, and pooled edge accents as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.
 avoidRules:
   - sharp
   - clean
@@ -74,11 +46,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-085.webp
 attributes:
-  negativePrompt: >-
-    sharp, clean, precise, solid, rigid, structured, geometric, hard edges, official card scene,
-    fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo
-    clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text,
-    generic cute mascot, smooth anime polish
+  negativePrompt: sharp, clean, precise, solid, rigid, structured, geometric, hard edges, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

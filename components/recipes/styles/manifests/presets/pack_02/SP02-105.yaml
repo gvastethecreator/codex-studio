@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP02-105
 packId: pack_02
-name: Ed, Edd n Eddy - Jawbreaker Scam Cartoon
+name: Vibrating Scam Comedy Cartoon
 category: 6. Caricature And Cartoon Styles
 version: 1
 supportedTasks:
@@ -12,44 +12,16 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: >-
-    Use this drawing language: High-energy boiling-line cartoon with vibrating contours,
-    stretched expression geometry, elastic smears, squash and stretch, and rough pencil marks.
-    Apply it as a rendering treatment to user-provided content; let the user control subject and
-    context.
-  subject_treatment: >-
-    Apply vibrating outlines, stretched smear frames, contour boil, and high-energy cartoon
-    scribble to the supplied subject while preserving its identity, silhouette, requested
-    action, actual material, and function. Change the drawn treatment, not the underlying
-    content.
-  color_and_tone: >-
-    Use warm yellow, candy red, chlorine blue, warm peach, and muted gray as style colors while
-    honoring any explicit color requirements in the request.
-  lighting_and_shadow: >-
-    Use warm flat illumination with slight heat-haze color shifts as a visual treatment, while
-    respecting any lighting instructions in the request.
-  texture_and_material: >-
-    Render cel-paint wobble, analog-TV softness, warm color haze, and rough pencil marks as
-    drawn or printed surface marks over the existing material; do not change the subject's
-    actual substance or function.
-  camera_and_composition: >-
-    Let contours boil, stretch, and smear with the direction of movement; diagram marks appear
-    only when the requested content includes them.
-  atmosphere_and_mood: >-
-    Loud and over-animated; let the line boil and stretched timing carry the excitement.
-  rendering_and_quality: >-
-    Finish with unstable ink edges, motion smears, and expressive stretched contours.
-  key_features: >-
-    vibrating contours; stretched expression geometry; smear frames; squash and stretch; rough
-    pencil marks
-  creative_brief: >-
-    Render the supplied content with vibrating outlines, stretched smear frames, contour boil,
-    and high-energy cartoon scribble. Use warm yellow, candy red, chlorine blue, warm peach, and
-    muted gray as style colors while honoring any explicit color instructions. Apply cel-paint
-    wobble, analog-TV softness, warm color haze, and rough pencil marks as drawn or printed
-    marks over the existing material, without changing what the subject is made of or how it
-    functions. Preserve the requested subject, action, and setting; follow the supplied
-    composition and add no unrequested cast, location, lettering, or gag.
+  aesthetic: 'Use this drawing language: High-energy boiling-line cartoon with vibrating contours, stretched expression geometry, elastic smears, squash and stretch, and rough pencil marks. Apply it as a rendering treatment to user-provided content; let the user control subject and context.'
+  subject_treatment: Apply vibrating outlines, stretched smear frames, contour boil, and high-energy cartoon scribble to the supplied subject while preserving its identity, silhouette, requested action, actual material, and function. Change the drawn treatment, not the underlying content.
+  color_and_tone: Use warm yellow, candy red, chlorine blue, warm peach, and muted gray as style colors while honoring any explicit color requirements in the request.
+  lighting_and_shadow: Use warm flat illumination with slight heat-haze color shifts as a visual treatment, while respecting any lighting instructions in the request.
+  texture_and_material: Render cel-paint wobble, analog-TV softness, warm color haze, and rough pencil marks as drawn or printed surface marks over the existing material; do not change the subject's actual substance or function.
+  camera_and_composition: Let contours boil, stretch, and smear with the direction of movement; diagram marks appear only when the requested content includes them.
+  atmosphere_and_mood: Loud and over-animated; let the line boil and stretched timing carry the excitement.
+  rendering_and_quality: Finish with unstable ink edges, motion smears, and expressive stretched contours.
+  key_features: vibrating contours; stretched expression geometry; smear frames; squash and stretch; rough pencil marks
+  creative_brief: Render the supplied content with vibrating outlines, stretched smear frames, contour boil, and high-energy cartoon scribble. Use warm yellow, candy red, chlorine blue, warm peach, and muted gray as style colors while honoring any explicit color instructions. Apply cel-paint wobble, analog-TV softness, warm color haze, and rough pencil marks as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.
 avoidRules:
   - digital
   - HD
@@ -75,11 +47,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-105.webp
 attributes:
-  negativePrompt: >-
-    digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official
-    card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text,
-    watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness,
-    readable gag text, generic cute mascot, smooth anime polish
+  negativePrompt: digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
@@ -93,3 +61,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Vibrating Scam Comedy Cartoon
+styleAnchors:
+  - Vibrating Scam Comedy Cartoon
+  - Ed, Edd n Eddy - Jawbreaker Scam Cartoon

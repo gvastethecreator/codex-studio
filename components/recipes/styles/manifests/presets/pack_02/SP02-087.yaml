@@ -12,45 +12,16 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: >-
-    Use this drawing language: Vintage rubber-hose drawing with jointless elastic curves, squash
-    and stretch, pie-cut accents, impact smears, and boiled ink contours. Apply it to the
-    supplied content without requiring a particular cast, place, or story.
-  subject_treatment: >-
-    Apply noodle-thin contours, extreme squash and stretch, elastic smears, and flexible form
-    arcs to the supplied subject while preserving its identity, silhouette, requested action,
-    actual material, and function. Change the drawn treatment, not the underlying content.
-  color_and_tone: >-
-    Use vintage cel colors, off-registration cyan, nicotine-stain sepia, faded technicolor, and
-    ink-smear black as style colors while honoring any explicit color requirements in the
-    request.
-  lighting_and_shadow: >-
-    Use flat cel shading with graphic contact shadows only where the composition supports them
-    as a visual treatment, while respecting any lighting instructions in the request.
-  texture_and_material: >-
-    Render cel-paint marks, 16mm-style grain, dust scratches, and subtle frame-flicker artifacts
-    as drawn or printed surface marks over the existing material; do not change the subject's
-    actual substance or function.
-  camera_and_composition: >-
-    Build directional flow from elastic arcs, squash-and-stretch echoes, and edge contacts;
-    imply motion without requiring a gag or cast.
-  atmosphere_and_mood: >-
-    Frenetic and buoyant; communicate energy through movement and line rhythm, not an invented
-    joke.
-  rendering_and_quality: >-
-    Finish with vintage cel-like color, flexible line, smears, and readable squash-and-stretch.
-  key_features: >-
-    jointless elastic curves; squash and stretch; pie-cut accents; impact smears; boiled ink
-    contours
-  creative_brief: >-
-    Render the supplied content with noodle-thin contours, extreme squash and stretch, elastic
-    smears, and flexible form arcs. Use vintage cel colors, off-registration cyan,
-    nicotine-stain sepia, faded technicolor, and ink-smear black as style colors while honoring
-    any explicit color instructions. Apply cel-paint marks, 16mm-style grain, dust scratches,
-    and subtle frame-flicker artifacts as drawn or printed marks over the existing material,
-    without changing what the subject is made of or how it functions. Preserve the requested
-    subject, action, and setting; follow the supplied composition and add no unrequested cast,
-    location, lettering, or gag.
+  aesthetic: 'Use this drawing language: Vintage rubber-hose drawing with jointless elastic curves, squash and stretch, pie-cut accents, impact smears, and boiled ink contours. Apply it to the supplied content without requiring a particular cast, place, or story.'
+  subject_treatment: Apply noodle-thin contours, extreme squash and stretch, elastic smears, and flexible form arcs to the supplied subject while preserving its identity, silhouette, requested action, actual material, and function. Change the drawn treatment, not the underlying content.
+  color_and_tone: Use vintage cel colors, off-registration cyan, nicotine-stain sepia, faded technicolor, and ink-smear black as style colors while honoring any explicit color requirements in the request.
+  lighting_and_shadow: Use flat cel shading with graphic contact shadows only where the composition supports them as a visual treatment, while respecting any lighting instructions in the request.
+  texture_and_material: Render cel-paint marks, 16mm-style grain, dust scratches, and subtle frame-flicker artifacts as drawn or printed surface marks over the existing material; do not change the subject's actual substance or function.
+  camera_and_composition: Build directional flow from elastic arcs, squash-and-stretch echoes, and edge contacts; imply motion without requiring a gag or cast.
+  atmosphere_and_mood: Frenetic and buoyant; communicate energy through movement and line rhythm, not an invented joke.
+  rendering_and_quality: Finish with vintage cel-like color, flexible line, smears, and readable squash-and-stretch.
+  key_features: jointless elastic curves; squash and stretch; pie-cut accents; impact smears; boiled ink contours
+  creative_brief: Render the supplied content with noodle-thin contours, extreme squash and stretch, elastic smears, and flexible form arcs. Use vintage cel colors, off-registration cyan, nicotine-stain sepia, faded technicolor, and ink-smear black as style colors while honoring any explicit color instructions. Apply cel-paint marks, 16mm-style grain, dust scratches, and subtle frame-flicker artifacts as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.
 avoidRules:
   - realistic
   - anatomical
@@ -75,11 +46,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-087.webp
 attributes:
-  negativePrompt: >-
-    realistic, anatomical, straight lines, stiff, rigid, normal proportions, restraint, subtle
-    movement, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact
-    character likeness, readable gag text, generic cute mascot, smooth anime polish
+  negativePrompt: realistic, anatomical, straight lines, stiff, rigid, normal proportions, restraint, subtle movement, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

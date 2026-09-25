@@ -12,45 +12,16 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: >-
-    Use this drawing language: Near-real cartoon rendering with smooth surfaces and precise
-    construction, made uncanny by minute proportion shifts, misaligned features, rigid symmetry,
-    and puppet-like seams. Apply it to the supplied content without requiring a particular cast,
-    place, or story.
-  subject_treatment: >-
-    Apply smooth vector contours, precise curves, subtle alignment errors, and controlled
-    proportion shifts to the supplied subject while preserving its identity, silhouette,
-    requested action, actual material, and function. Change the drawn treatment, not the
-    underlying content.
-  color_and_tone: >-
-    Use muted peach, wax beige, cool ivory, restrained blush, and synthetic warmth as style
-    colors while honoring any explicit color requirements in the request.
-  lighting_and_shadow: >-
-    Use even diffuse values with intentionally sterile, low-shadow rendering as a visual
-    treatment, while respecting any lighting instructions in the request.
-  texture_and_material: >-
-    Render ultra-smooth vector fill, restrained vinyl-like sheen, and precise specular accents
-    as drawn or printed surface marks over the existing material; do not change the subject's
-    actual substance or function.
-  camera_and_composition: >-
-    Keep construction balanced, then shift one contour or alignment slightly to create unease;
-    follow the supplied subject's existing features.
-  atmosphere_and_mood: >-
-    Quietly unsettling and emotionally restrained; let small visual mismatches create unease.
-  rendering_and_quality: >-
-    Finish with smooth, precise surfaces and tiny structural errors that stay visible on close
-    inspection.
-  key_features: >-
-    precise vector contour; near symmetry; tiny alignment errors; polished fill; subtle uncanny
-    imbalance
-  creative_brief: >-
-    Render the supplied content with smooth vector contours, precise curves, subtle alignment
-    errors, and controlled proportion shifts. Use muted peach, wax beige, cool ivory, restrained
-    blush, and synthetic warmth as style colors while honoring any explicit color instructions.
-    Apply ultra-smooth vector fill, restrained vinyl-like sheen, and precise specular accents as
-    drawn or printed marks over the existing material, without changing what the subject is made
-    of or how it functions. Preserve the requested subject, action, and setting; follow the
-    supplied composition and add no unrequested cast, location, lettering, or gag.
+  aesthetic: 'Use this drawing language: Near-real cartoon rendering with smooth surfaces and precise construction, made uncanny by minute proportion shifts, misaligned features, rigid symmetry, and puppet-like seams. Apply it to the supplied content without requiring a particular cast, place, or story.'
+  subject_treatment: Apply smooth vector contours, precise curves, subtle alignment errors, and controlled proportion shifts to the supplied subject while preserving its identity, silhouette, requested action, actual material, and function. Change the drawn treatment, not the underlying content.
+  color_and_tone: Use muted peach, wax beige, cool ivory, restrained blush, and synthetic warmth as style colors while honoring any explicit color requirements in the request.
+  lighting_and_shadow: Use even diffuse values with intentionally sterile, low-shadow rendering as a visual treatment, while respecting any lighting instructions in the request.
+  texture_and_material: Render ultra-smooth vector fill, restrained vinyl-like sheen, and precise specular accents as drawn or printed surface marks over the existing material; do not change the subject's actual substance or function.
+  camera_and_composition: Keep construction balanced, then shift one contour or alignment slightly to create unease; follow the supplied subject's existing features.
+  atmosphere_and_mood: Quietly unsettling and emotionally restrained; let small visual mismatches create unease.
+  rendering_and_quality: Finish with smooth, precise surfaces and tiny structural errors that stay visible on close inspection.
+  key_features: precise vector contour; near symmetry; tiny alignment errors; polished fill; subtle uncanny imbalance
+  creative_brief: Render the supplied content with smooth vector contours, precise curves, subtle alignment errors, and controlled proportion shifts. Use muted peach, wax beige, cool ivory, restrained blush, and synthetic warmth as style colors while honoring any explicit color instructions. Apply ultra-smooth vector fill, restrained vinyl-like sheen, and precise specular accents as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.
 avoidRules:
   - comfortable
   - natural
@@ -73,11 +44,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-083.webp
 attributes:
-  negativePrompt: >-
-    comfortable, natural, warm, wholesome, expressive, emotionally readable, official card scene,
-    fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo
-    clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text,
-    generic cute mascot, smooth anime polish
+  negativePrompt: comfortable, natural, warm, wholesome, expressive, emotionally readable, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

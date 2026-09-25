@@ -12,47 +12,16 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: >-
-    Use this drawing language: Grotesque cartoon material study with soft bulges, stretched
-    surface tension, layered-looking marks, fine wrinkles, and sickly contrasting color cues.
-    Apply it to the supplied content without requiring anatomy, gore, a particular cast, place,
-    or story.
-  subject_treatment: >-
-    Apply stretched contour lines, layered surface marks, fine wrinkle strokes, and dense detail
-    where it suits the subject to the supplied subject while preserving its identity,
-    silhouette, requested action, actual material, and function. Change the drawn treatment, not
-    the underlying content.
-  color_and_tone: >-
-    Use deep red, pale ivory, cool blue, jaundiced yellow, acidic green, bruised purple, and
-    surgical pink accents as style colors while honoring any explicit color requirements in the
-    request.
-  lighting_and_shadow: >-
-    Use clinical overhead contrast with wet-looking highlights as a visual treatment, while
-    respecting any lighting instructions in the request.
-  texture_and_material: >-
-    Render layered highlights, fiber-like strokes, translucent-looking edges, and fine
-    micro-marking as drawn or printed surface marks over the existing material; do not change
-    the subject's actual substance or function.
-  camera_and_composition: >-
-    Use bulges, seams, and surface detail as hierarchy; magnify only when requested and retain
-    the original object's recognizable outline.
-  atmosphere_and_mood: >-
-    Visceral and uneasy; use surface detail for impact without requiring anatomy or gore.
-  rendering_and_quality: >-
-    Finish with layered, wet-looking cartoon marks and distorted surface detail; preserve the
-    source material underneath.
-  key_features: >-
-    soft bulges; stretched surface tension; fine wrinkle marks; layered highlights; sickly color
-    contrast
-  creative_brief: >-
-    Render the supplied content with stretched contour lines, layered surface marks, fine
-    wrinkle strokes, and dense detail where it suits the subject. Use deep red, pale ivory, cool
-    blue, jaundiced yellow, acidic green, bruised purple, and surgical pink accents as style
-    colors while honoring any explicit color instructions. Apply layered highlights, fiber-like
-    strokes, translucent-looking edges, and fine micro-marking as drawn or printed marks over
-    the existing material, without changing what the subject is made of or how it functions.
-    Preserve the requested subject, action, and setting; follow the supplied composition and add
-    no unrequested cast, location, lettering, or gag.
+  aesthetic: 'Use this drawing language: Grotesque cartoon material study with soft bulges, stretched surface tension, layered-looking marks, fine wrinkles, and sickly contrasting color cues. Apply it to the supplied content without requiring anatomy, gore, a particular cast, place, or story.'
+  subject_treatment: Apply stretched contour lines, layered surface marks, fine wrinkle strokes, and dense detail where it suits the subject to the supplied subject while preserving its identity, silhouette, requested action, actual material, and function. Change the drawn treatment, not the underlying content.
+  color_and_tone: Use deep red, pale ivory, cool blue, jaundiced yellow, acidic green, bruised purple, and surgical pink accents as style colors while honoring any explicit color requirements in the request.
+  lighting_and_shadow: Use clinical overhead contrast with wet-looking highlights as a visual treatment, while respecting any lighting instructions in the request.
+  texture_and_material: Render layered highlights, fiber-like strokes, translucent-looking edges, and fine micro-marking as drawn or printed surface marks over the existing material; do not change the subject's actual substance or function.
+  camera_and_composition: Use bulges, seams, and surface detail as hierarchy; magnify only when requested and retain the original object's recognizable outline.
+  atmosphere_and_mood: Visceral and uneasy; use surface detail for impact without requiring anatomy or gore.
+  rendering_and_quality: Finish with layered, wet-looking cartoon marks and distorted surface detail; preserve the source material underneath.
+  key_features: soft bulges; stretched surface tension; fine wrinkle marks; layered highlights; sickly color contrast
+  creative_brief: Render the supplied content with stretched contour lines, layered surface marks, fine wrinkle strokes, and dense detail where it suits the subject. Use deep red, pale ivory, cool blue, jaundiced yellow, acidic green, bruised purple, and surgical pink accents as style colors while honoring any explicit color instructions. Apply layered highlights, fiber-like strokes, translucent-looking edges, and fine micro-marking as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.
 avoidRules:
   - smooth
   - clean
@@ -78,11 +47,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-089.webp
 attributes:
-  negativePrompt: >-
-    smooth, clean, cute, soft, simple, minimal, pleasant, innocent, gentle, official card scene,
-    fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo
-    clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text,
-    generic cute mascot, smooth anime polish
+  negativePrompt: smooth, clean, cute, soft, simple, minimal, pleasant, innocent, gentle, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

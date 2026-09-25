@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP02-103
 packId: pack_02
-name: Aaahh!!! Real Monsters - Sewer Kid Grotesque
+name: Sewer Grotesque Monster Cartoon
 category: 6. Caricature And Cartoon Styles
 version: 1
 supportedTasks:
@@ -12,45 +12,16 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: >-
-    Use this drawing language: Lumpy grotesque TV-cartoon language with asymmetric extensions,
-    grime-like texture accents, off-center features, rubbery contours, and playful color
-    contrast. Apply it to the supplied content without requiring a particular cast, place, or
-    story.
-  subject_treatment: >-
-    Apply chunky lopsided outlines, uneven scale, irregular extensions, liquid-like accents, and
-    crude expressive contours to the supplied subject while preserving its identity, silhouette,
-    requested action, actual material, and function. Change the drawn treatment, not the
-    underlying content.
-  color_and_tone: >-
-    Use acid green, bruise purple, rust orange, toxic pink, deep teal, and mold yellow as style
-    colors while honoring any explicit color requirements in the request.
-  lighting_and_shadow: >-
-    Use directional color accents and moist-looking shadow marks without implying a location as
-    a visual treatment, while respecting any lighting instructions in the request.
-  texture_and_material: >-
-    Render grime-like speckling, peeling line accents, scuffed edges, and dusty cel grain as
-    drawn or printed surface marks over the existing material; do not change the subject's
-    actual substance or function.
-  camera_and_composition: >-
-    Stack irregular shapes and off-center details against clear space; grime is a contour or
-    surface treatment, not a location.
-  atmosphere_and_mood: >-
-    Rowdy, gross, and mischievous; balance irregularity with playful color and line.
-  rendering_and_quality: >-
-    Finish with lumpy contours, dusty cel texture, grime-like marks, and playful color contrast.
-  key_features: >-
-    lumpy asymmetry; off-center details; rubbery contours; grime-like marks; playful toxic
-    palette
-  creative_brief: >-
-    Render the supplied content with chunky lopsided outlines, uneven scale, irregular
-    extensions, liquid-like accents, and crude expressive contours. Use acid green, bruise
-    purple, rust orange, toxic pink, deep teal, and mold yellow as style colors while honoring
-    any explicit color instructions. Apply grime-like speckling, peeling line accents, scuffed
-    edges, and dusty cel grain as drawn or printed marks over the existing material, without
-    changing what the subject is made of or how it functions. Preserve the requested subject,
-    action, and setting; follow the supplied composition and add no unrequested cast, location,
-    lettering, or gag.
+  aesthetic: 'Use this drawing language: Lumpy grotesque TV-cartoon language with asymmetric extensions, grime-like texture accents, off-center features, rubbery contours, and playful color contrast. Apply it to the supplied content without requiring a particular cast, place, or story.'
+  subject_treatment: Apply chunky lopsided outlines, uneven scale, irregular extensions, liquid-like accents, and crude expressive contours to the supplied subject while preserving its identity, silhouette, requested action, actual material, and function. Change the drawn treatment, not the underlying content.
+  color_and_tone: Use acid green, bruise purple, rust orange, toxic pink, deep teal, and mold yellow as style colors while honoring any explicit color requirements in the request.
+  lighting_and_shadow: Use directional color accents and moist-looking shadow marks without implying a location as a visual treatment, while respecting any lighting instructions in the request.
+  texture_and_material: Render grime-like speckling, peeling line accents, scuffed edges, and dusty cel grain as drawn or printed surface marks over the existing material; do not change the subject's actual substance or function.
+  camera_and_composition: Stack irregular shapes and off-center details against clear space; grime is a contour or surface treatment, not a location.
+  atmosphere_and_mood: Rowdy, gross, and mischievous; balance irregularity with playful color and line.
+  rendering_and_quality: Finish with lumpy contours, dusty cel texture, grime-like marks, and playful color contrast.
+  key_features: lumpy asymmetry; off-center details; rubbery contours; grime-like marks; playful toxic palette
+  creative_brief: Render the supplied content with chunky lopsided outlines, uneven scale, irregular extensions, liquid-like accents, and crude expressive contours. Use acid green, bruise purple, rust orange, toxic pink, deep teal, and mold yellow as style colors while honoring any explicit color instructions. Apply grime-like speckling, peeling line accents, scuffed edges, and dusty cel grain as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.
 avoidRules:
   - digital
   - HD
@@ -76,11 +47,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-103.webp
 attributes:
-  negativePrompt: >-
-    digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official
-    card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text,
-    watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness,
-    readable gag text, generic cute mascot, smooth anime polish
+  negativePrompt: digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
@@ -94,3 +61,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Sewer Grotesque Monster Cartoon
+styleAnchors:
+  - Sewer Grotesque Monster Cartoon
+  - Aaahh!!! Real Monsters - Sewer Kid Grotesque

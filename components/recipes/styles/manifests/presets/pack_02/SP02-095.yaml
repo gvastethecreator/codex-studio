@@ -12,48 +12,16 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: >-
-    Use this drawing language: Syndicated-strip cartoon language with clean simplified ink,
-    consistent model logic, Ben-Day halftone, restricted four-color print, and panel rhythm when
-    requested. Apply it to the supplied content without requiring a particular cast, place, or
-    story.
-  subject_treatment: >-
-    Apply clean simple ink outlines, consistent simplified shapes, minimal detail, and sparse
-    motion marks to the supplied subject while preserving its identity, silhouette, requested
-    action, actual material, and function. Change the drawn treatment, not the underlying
-    content.
-  color_and_tone: >-
-    Use CMYK-dot printing, a limited four-color palette, newsprint off-white, ink-smudge gray,
-    and registration-error cyan as style colors while honoring any explicit color requirements
-    in the request.
-  lighting_and_shadow: >-
-    Use flat value grouping with simple contact shadows as a visual treatment, while respecting
-    any lighting instructions in the request.
-  texture_and_material: >-
-    Render newsprint tooth, Ben-Day halftone dots, ink bleed, and slight color misregistration
-    as drawn or printed surface marks over the existing material; do not change the subject's
-    actual substance or function.
-  camera_and_composition: >-
-    Use simple repeatable framing and clear spacing; add panels or balloon shapes only for a
-    requested sequence or text layout.
-  atmosphere_and_mood: >-
-    Familiar and gently humorous; use recurring rhythm and quiet charm while keeping context
-    user-led.
-  rendering_and_quality: >-
-    Finish with clean ink, restrained Ben-Day dots, limited print colors, and consistent
-    simplified shape design.
-  key_features: >-
-    simplified ink contour; consistent shape logic; Ben-Day halftone; four-color print; optional
-    panel rhythm
-  creative_brief: >-
-    Render the supplied content with clean simple ink outlines, consistent simplified shapes,
-    minimal detail, and sparse motion marks. Use CMYK-dot printing, a limited four-color
-    palette, newsprint off-white, ink-smudge gray, and registration-error cyan as style colors
-    while honoring any explicit color instructions. Apply newsprint tooth, Ben-Day halftone
-    dots, ink bleed, and slight color misregistration as drawn or printed marks over the
-    existing material, without changing what the subject is made of or how it functions.
-    Preserve the requested subject, action, and setting; follow the supplied composition and add
-    no unrequested cast, location, lettering, or gag.
+  aesthetic: 'Use this drawing language: Syndicated-strip cartoon language with clean simplified ink, consistent model logic, Ben-Day halftone, restricted four-color print, and panel rhythm when requested. Apply it to the supplied content without requiring a particular cast, place, or story.'
+  subject_treatment: Apply clean simple ink outlines, consistent simplified shapes, minimal detail, and sparse motion marks to the supplied subject while preserving its identity, silhouette, requested action, actual material, and function. Change the drawn treatment, not the underlying content.
+  color_and_tone: Use CMYK-dot printing, a limited four-color palette, newsprint off-white, ink-smudge gray, and registration-error cyan as style colors while honoring any explicit color requirements in the request.
+  lighting_and_shadow: Use flat value grouping with simple contact shadows as a visual treatment, while respecting any lighting instructions in the request.
+  texture_and_material: Render newsprint tooth, Ben-Day halftone dots, ink bleed, and slight color misregistration as drawn or printed surface marks over the existing material; do not change the subject's actual substance or function.
+  camera_and_composition: Use simple repeatable framing and clear spacing; add panels or balloon shapes only for a requested sequence or text layout.
+  atmosphere_and_mood: Familiar and gently humorous; use recurring rhythm and quiet charm while keeping context user-led.
+  rendering_and_quality: Finish with clean ink, restrained Ben-Day dots, limited print colors, and consistent simplified shape design.
+  key_features: simplified ink contour; consistent shape logic; Ben-Day halftone; four-color print; optional panel rhythm
+  creative_brief: Render the supplied content with clean simple ink outlines, consistent simplified shapes, minimal detail, and sparse motion marks. Use CMYK-dot printing, a limited four-color palette, newsprint off-white, ink-smudge gray, and registration-error cyan as style colors while honoring any explicit color instructions. Apply newsprint tooth, Ben-Day halftone dots, ink bleed, and slight color misregistration as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.
 avoidRules:
   - digital
   - HD
@@ -79,11 +47,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-095.webp
 attributes:
-  negativePrompt: >-
-    digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official
-    card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text,
-    watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness,
-    readable gag text, generic cute mascot, smooth anime polish
+  negativePrompt: digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

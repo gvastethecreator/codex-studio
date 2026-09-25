@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP02-118
 packId: pack_02
-name: Crash Zoom Garbage Pail Caricature
+name: Crash Zoom Sticker-Card Caricature
 category: 6. Caricature And Cartoon Styles
 version: 1
 supportedTasks:
@@ -12,44 +12,16 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: >-
-    Use this drawing language: Gross collectible-print cartoon language with swollen defect
-    shapes, gooey edge accents, crash-zoom crop, thick sticker outline, halftone print, and
-    optional frame layout. Apply it to the supplied content without requiring a particular cast,
-    place, or story.
-  subject_treatment: >-
-    Apply bold sticker-like outlines, swollen graphic contours, impact marks, and enlarged shape
-    accents to the supplied subject while preserving its identity, silhouette, requested action,
-    actual material, and function. Change the drawn treatment, not the underlying content.
-  color_and_tone: >-
-    Use limited print primaries, acid green, vivid red, bubblegum pink, cyan, and thick black as
-    style colors while honoring any explicit color requirements in the request.
-  lighting_and_shadow: >-
-    Use flat collectible-print values with hard graphic highlights as a visual treatment, while
-    respecting any lighting instructions in the request.
-  texture_and_material: >-
-    Render coated-print grain, halftone edges, screen-ink texture, and drawn gloss accents as
-    drawn or printed surface marks over the existing material; do not change the subject's
-    actual substance or function.
-  camera_and_composition: >-
-    Use close-crop impact, inflated marks, and an optional frame to present supplied content;
-    let expressive timing follow the request.
-  atmosphere_and_mood: >-
-    Gross, gleeful, and punchy; let the supplied concept set the level of comedy.
-  rendering_and_quality: >-
-    Finish with thick sticker-like contour, halftone print, sticky gloss, and an optional
-    graphic border.
-  key_features: >-
-    swollen graphic shapes; thick sticker outline; crash-zoom crop; halftone print; graphic
-    gloss accents
-  creative_brief: >-
-    Render the supplied content with bold sticker-like outlines, swollen graphic contours,
-    impact marks, and enlarged shape accents. Use limited print primaries, acid green, vivid
-    red, bubblegum pink, cyan, and thick black as style colors while honoring any explicit color
-    instructions. Apply coated-print grain, halftone edges, screen-ink texture, and drawn gloss
-    accents as drawn or printed marks over the existing material, without changing what the
-    subject is made of or how it functions. Preserve the requested subject, action, and setting;
-    follow the supplied composition and add no unrequested cast, location, lettering, or gag.
+  aesthetic: 'Use this drawing language: Gross collectible-print cartoon language with swollen defect shapes, gooey edge accents, crash-zoom crop, thick sticker outline, halftone print, and optional frame layout. Apply it to the supplied content without requiring a particular cast, place, or story.'
+  subject_treatment: Apply bold sticker-like outlines, swollen graphic contours, impact marks, and enlarged shape accents to the supplied subject while preserving its identity, silhouette, requested action, actual material, and function. Change the drawn treatment, not the underlying content.
+  color_and_tone: Use limited print primaries, acid green, vivid red, bubblegum pink, cyan, and thick black as style colors while honoring any explicit color requirements in the request.
+  lighting_and_shadow: Use flat collectible-print values with hard graphic highlights as a visual treatment, while respecting any lighting instructions in the request.
+  texture_and_material: Render coated-print grain, halftone edges, screen-ink texture, and drawn gloss accents as drawn or printed surface marks over the existing material; do not change the subject's actual substance or function.
+  camera_and_composition: Use close-crop impact, inflated marks, and an optional frame to present supplied content; let expressive timing follow the request.
+  atmosphere_and_mood: Gross, gleeful, and punchy; let the supplied concept set the level of comedy.
+  rendering_and_quality: Finish with thick sticker-like contour, halftone print, sticky gloss, and an optional graphic border.
+  key_features: swollen graphic shapes; thick sticker outline; crash-zoom crop; halftone print; graphic gloss accents
+  creative_brief: Render the supplied content with bold sticker-like outlines, swollen graphic contours, impact marks, and enlarged shape accents. Use limited print primaries, acid green, vivid red, bubblegum pink, cyan, and thick black as style colors while honoring any explicit color instructions. Apply coated-print grain, halftone edges, screen-ink texture, and drawn gloss accents as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.
 avoidRules:
   - digital
   - HD
@@ -75,11 +47,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-118.webp
 attributes:
-  negativePrompt: >-
-    digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official
-    card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text,
-    watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness,
-    readable gag text, generic cute mascot, smooth anime polish
+  negativePrompt: digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
@@ -93,3 +61,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Crash Zoom Sticker-Card Caricature
+styleAnchors:
+  - Crash Zoom Sticker-Card Caricature
+  - Crash Zoom Garbage Pail Caricature

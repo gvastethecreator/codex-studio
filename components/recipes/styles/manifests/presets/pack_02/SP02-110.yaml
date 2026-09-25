@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP02-110
 packId: pack_02
-name: SpongeBob Gross-Up Freeze Frame
+name: Gross-Up Freeze Frame
 category: 6. Caricature And Cartoon Styles
 version: 1
 supportedTasks:
@@ -12,45 +12,16 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: >-
-    Use this drawing language: Style-whiplash cartoon with cheerful flat color and simple
-    contour interrupted by a sharply detailed close-up or magnified surface when requested.
-    Apply it as a rendering treatment to user-provided content; let the user control subject and
-    context.
-  subject_treatment: >-
-    Apply simple bright contours interrupted by hyper-detailed brush marks in limited areas to
-    the supplied subject while preserving its identity, silhouette, requested action, actual
-    material, and function. Change the drawn treatment, not the underlying content.
-  color_and_tone: >-
-    Use cheerful yellow-blue base, sickly pink accents, red accents, greasy beige, and seafoam
-    green as style colors while honoring any explicit color requirements in the request.
-  lighting_and_shadow: >-
-    Use cheerful flat fill with localized highlight contrast on magnified details as a visual
-    treatment, while respecting any lighting instructions in the request.
-  texture_and_material: >-
-    Render cartoon fill with painterly micro-marks and gloss only where they suit the input
-    material as drawn or printed surface marks over the existing material; do not change the
-    subject's actual substance or function.
-  camera_and_composition: >-
-    Keep the base form simple and bright; add one magnified detail only when it clarifies the
-    requested subject or material.
-  atmosphere_and_mood: >-
-    Cheerful and revolting in quick succession; let surface contrast create the whiplash.
-  rendering_and_quality: >-
-    Finish with a clear contrast between flat cartoon fill and a limited area of painterly
-    surface detail.
-  key_features: >-
-    flat cheerful fill; simple contour; localized painterly detail; macro contrast when
-    requested; source-led texture
-  creative_brief: >-
-    Render the supplied content with simple bright contours interrupted by hyper-detailed brush
-    marks in limited areas. Use cheerful yellow-blue base, sickly pink accents, red accents,
-    greasy beige, and seafoam green as style colors while honoring any explicit color
-    instructions. Apply cartoon fill with painterly micro-marks and gloss only where they suit
-    the input material as drawn or printed marks over the existing material, without changing
-    what the subject is made of or how it functions. Preserve the requested subject, action, and
-    setting; follow the supplied composition and add no unrequested cast, location, lettering,
-    or gag.
+  aesthetic: 'Use this drawing language: Style-whiplash cartoon with cheerful flat color and simple contour interrupted by a sharply detailed close-up or magnified surface when requested. Apply it as a rendering treatment to user-provided content; let the user control subject and context.'
+  subject_treatment: Apply simple bright contours interrupted by hyper-detailed brush marks in limited areas to the supplied subject while preserving its identity, silhouette, requested action, actual material, and function. Change the drawn treatment, not the underlying content.
+  color_and_tone: Use cheerful yellow-blue base, sickly pink accents, red accents, greasy beige, and seafoam green as style colors while honoring any explicit color requirements in the request.
+  lighting_and_shadow: Use cheerful flat fill with localized highlight contrast on magnified details as a visual treatment, while respecting any lighting instructions in the request.
+  texture_and_material: Render cartoon fill with painterly micro-marks and gloss only where they suit the input material as drawn or printed surface marks over the existing material; do not change the subject's actual substance or function.
+  camera_and_composition: Keep the base form simple and bright; add one magnified detail only when it clarifies the requested subject or material.
+  atmosphere_and_mood: Cheerful and revolting in quick succession; let surface contrast create the whiplash.
+  rendering_and_quality: Finish with a clear contrast between flat cartoon fill and a limited area of painterly surface detail.
+  key_features: flat cheerful fill; simple contour; localized painterly detail; macro contrast when requested; source-led texture
+  creative_brief: Render the supplied content with simple bright contours interrupted by hyper-detailed brush marks in limited areas. Use cheerful yellow-blue base, sickly pink accents, red accents, greasy beige, and seafoam green as style colors while honoring any explicit color instructions. Apply cartoon fill with painterly micro-marks and gloss only where they suit the input material as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.
 avoidRules:
   - digital
   - HD
@@ -76,11 +47,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-110.webp
 attributes:
-  negativePrompt: >-
-    digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official
-    card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text,
-    watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness,
-    readable gag text, generic cute mascot, smooth anime polish
+  negativePrompt: digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
@@ -94,3 +61,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Gross-Up Freeze Frame
+styleAnchors:
+  - Gross-Up Freeze Frame
+  - SpongeBob Gross-Up Freeze Frame

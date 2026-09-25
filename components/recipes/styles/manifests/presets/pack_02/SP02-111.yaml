@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP02-111
 packId: pack_02
-name: Beavis and Butt-Head - Dumb Couch Slouch
+name: Dumb Couch Slouch Cartoon
 category: 6. Caricature And Cartoon Styles
 version: 1
 supportedTasks:
@@ -12,43 +12,16 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: >-
-    Use this drawing language: Low-energy deadpan cartoon with slack contours, drooping
-    geometry, sparse features, muted TV colors, stale textures, and weight-heavy pose lines.
-    Apply it to the supplied content without requiring a particular cast, place, or story.
-  subject_treatment: >-
-    Apply slack contours, sloped angles, slow sag, and sparse feature marks where the form
-    supports them to the supplied subject while preserving its identity, silhouette, requested
-    action, actual material, and function. Change the drawn treatment, not the underlying
-    content.
-  color_and_tone: >-
-    Use TV beige, nicotine yellow, washed denim blue, dull brown, cathode green, and stale red
-    as style colors while honoring any explicit color requirements in the request.
-  lighting_and_shadow: >-
-    Use flat muted fill with a faint cathode-like glow as a visual treatment, while respecting
-    any lighting instructions in the request.
-  texture_and_material: >-
-    Render analog-TV grain, restrained wear-like marks, faint grime, and rough ink edges as
-    drawn or printed surface marks over the existing material; do not change the subject's
-    actual substance or function.
-  camera_and_composition: >-
-    Use drooping angles and lower visual weight only where the supplied form supports it; keep
-    the environment as requested.
-  atmosphere_and_mood: >-
-    Slack, dry, and withdrawn; express the energy through contour, spacing, or posture suited to
-    the supplied subject.
-  rendering_and_quality: >-
-    Finish with rough ink edge, muted cel tones, and deliberately low-energy shape design.
-  key_features: >-
-    slack contours; drooping geometry; sparse features; muted TV colors; weight-heavy shape cues
-  creative_brief: >-
-    Render the supplied content with slack contours, sloped angles, slow sag, and sparse feature
-    marks where the form supports them. Use TV beige, nicotine yellow, washed denim blue, dull
-    brown, cathode green, and stale red as style colors while honoring any explicit color
-    instructions. Apply analog-TV grain, restrained wear-like marks, faint grime, and rough ink
-    edges as drawn or printed marks over the existing material, without changing what the
-    subject is made of or how it functions. Preserve the requested subject, action, and setting;
-    follow the supplied composition and add no unrequested cast, location, lettering, or gag.
+  aesthetic: 'Use this drawing language: Low-energy deadpan cartoon with slack contours, drooping geometry, sparse features, muted TV colors, stale textures, and weight-heavy pose lines. Apply it to the supplied content without requiring a particular cast, place, or story.'
+  subject_treatment: Apply slack contours, sloped angles, slow sag, and sparse feature marks where the form supports them to the supplied subject while preserving its identity, silhouette, requested action, actual material, and function. Change the drawn treatment, not the underlying content.
+  color_and_tone: Use TV beige, nicotine yellow, washed denim blue, dull brown, cathode green, and stale red as style colors while honoring any explicit color requirements in the request.
+  lighting_and_shadow: Use flat muted fill with a faint cathode-like glow as a visual treatment, while respecting any lighting instructions in the request.
+  texture_and_material: Render analog-TV grain, restrained wear-like marks, faint grime, and rough ink edges as drawn or printed surface marks over the existing material; do not change the subject's actual substance or function.
+  camera_and_composition: Use drooping angles and lower visual weight only where the supplied form supports it; keep the environment as requested.
+  atmosphere_and_mood: Slack, dry, and withdrawn; express the energy through contour, spacing, or posture suited to the supplied subject.
+  rendering_and_quality: Finish with rough ink edge, muted cel tones, and deliberately low-energy shape design.
+  key_features: slack contours; drooping geometry; sparse features; muted TV colors; weight-heavy shape cues
+  creative_brief: Render the supplied content with slack contours, sloped angles, slow sag, and sparse feature marks where the form supports them. Use TV beige, nicotine yellow, washed denim blue, dull brown, cathode green, and stale red as style colors while honoring any explicit color instructions. Apply analog-TV grain, restrained wear-like marks, faint grime, and rough ink edges as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.
 avoidRules:
   - digital
   - HD
@@ -74,11 +47,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-111.webp
 attributes:
-  negativePrompt: >-
-    digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official
-    card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text,
-    watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness,
-    readable gag text, generic cute mascot, smooth anime polish
+  negativePrompt: digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
@@ -92,3 +61,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Dumb Couch Slouch Cartoon
+styleAnchors:
+  - Dumb Couch Slouch Cartoon
+  - Beavis and Butt-Head - Dumb Couch Slouch

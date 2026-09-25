@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP02-108
 packId: pack_02
-name: Cow and Chicken - Loud Primary Derangement
+name: Loud Primary Derangement Cartoon
 category: 6. Caricature And Cartoon Styles
 version: 1
 supportedTasks:
@@ -12,43 +12,16 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: >-
-    Use this drawing language: Loud primary-color cartoon with thick crude contour, rubbery
-    scale contrast, jagged graphic bursts, compressed poses, and blunt visual impact. Apply it
-    to the supplied content without requiring a particular cast, place, or story.
-  subject_treatment: >-
-    Apply thick crude contours, jagged graphic marks, rubbery stretch, and blunt shape impact to
-    the supplied subject while preserving its identity, silhouette, requested action, actual
-    material, and function. Change the drawn treatment, not the underlying content.
-  color_and_tone: >-
-    Use saturated red, bright yellow, electric blue, toxic green, black contour, and poster
-    white as style colors while honoring any explicit color requirements in the request.
-  lighting_and_shadow: >-
-    Use flat, high-key values for bold readable color as a visual treatment, while respecting
-    any lighting instructions in the request.
-  texture_and_material: >-
-    Render poster-paint fill, soft scan grain, sticky-looking marker edges, and graphic gloss
-    accents as drawn or printed surface marks over the existing material; do not change the
-    subject's actual substance or function.
-  camera_and_composition: >-
-    Use scale clashes, saturated color blocks, and blunt poses for visual energy; align
-    expressive timing with the request.
-  atmosphere_and_mood: >-
-    Unruly, shameless, and ridiculous; keep the visual punch separate from any forced gag.
-  rendering_and_quality: >-
-    Finish with thick outline, flat poster-like color, rough fill, and bold shape separation.
-  key_features: >-
-    thick crude contour; rubbery stretch; jagged graphic bursts; primary-color blocks; blunt
-    impact
-  creative_brief: >-
-    Render the supplied content with thick crude contours, jagged graphic marks, rubbery
-    stretch, and blunt shape impact. Use saturated red, bright yellow, electric blue, toxic
-    green, black contour, and poster white as style colors while honoring any explicit color
-    instructions. Apply poster-paint fill, soft scan grain, sticky-looking marker edges, and
-    graphic gloss accents as drawn or printed marks over the existing material, without changing
-    what the subject is made of or how it functions. Preserve the requested subject, action, and
-    setting; follow the supplied composition and add no unrequested cast, location, lettering,
-    or gag.
+  aesthetic: 'Use this drawing language: Loud primary-color cartoon with thick crude contour, rubbery scale contrast, jagged graphic bursts, compressed poses, and blunt visual impact. Apply it to the supplied content without requiring a particular cast, place, or story.'
+  subject_treatment: Apply thick crude contours, jagged graphic marks, rubbery stretch, and blunt shape impact to the supplied subject while preserving its identity, silhouette, requested action, actual material, and function. Change the drawn treatment, not the underlying content.
+  color_and_tone: Use saturated red, bright yellow, electric blue, toxic green, black contour, and poster white as style colors while honoring any explicit color requirements in the request.
+  lighting_and_shadow: Use flat, high-key values for bold readable color as a visual treatment, while respecting any lighting instructions in the request.
+  texture_and_material: Render poster-paint fill, soft scan grain, sticky-looking marker edges, and graphic gloss accents as drawn or printed surface marks over the existing material; do not change the subject's actual substance or function.
+  camera_and_composition: Use scale clashes, saturated color blocks, and blunt poses for visual energy; align expressive timing with the request.
+  atmosphere_and_mood: Unruly, shameless, and ridiculous; keep the visual punch separate from any forced gag.
+  rendering_and_quality: Finish with thick outline, flat poster-like color, rough fill, and bold shape separation.
+  key_features: thick crude contour; rubbery stretch; jagged graphic bursts; primary-color blocks; blunt impact
+  creative_brief: Render the supplied content with thick crude contours, jagged graphic marks, rubbery stretch, and blunt shape impact. Use saturated red, bright yellow, electric blue, toxic green, black contour, and poster white as style colors while honoring any explicit color instructions. Apply poster-paint fill, soft scan grain, sticky-looking marker edges, and graphic gloss accents as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.
 avoidRules:
   - digital
   - HD
@@ -74,11 +47,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-108.webp
 attributes:
-  negativePrompt: >-
-    digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official
-    card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text,
-    watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness,
-    readable gag text, generic cute mascot, smooth anime polish
+  negativePrompt: digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
@@ -92,3 +61,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Loud Primary Derangement Cartoon
+styleAnchors:
+  - Loud Primary Derangement Cartoon
+  - Cow and Chicken - Loud Primary Derangement

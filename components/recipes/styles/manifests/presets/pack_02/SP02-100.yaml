@@ -12,46 +12,16 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: >-
-    Use this drawing language: Rough animation-study drawing with overlapping key poses, gesture
-    arcs, timing marks, construction lines, peg-bar paper cues, and line boil. Apply it to the
-    supplied content without requiring a particular cast, place, or story.
-  subject_treatment: >-
-    Apply rapid gesture lines, motion-arc construction curves, timing-chart marks, and
-    overlapping pose studies when requested to the supplied subject while preserving its
-    identity, silhouette, requested action, actual material, and function. Change the drawn
-    treatment, not the underlying content.
-  color_and_tone: >-
-    Use animation-paper blue line, graphite gray, Col-Erase blue, red-pencil breakdown lines,
-    and paper buff as style colors while honoring any explicit color requirements in the
-    request.
-  lighting_and_shadow: >-
-    Use paper translucency and peg-bar shadows only when a multi-frame study is requested as a
-    visual treatment, while respecting any lighting instructions in the request.
-  texture_and_material: >-
-    Render animation-paper tooth, graphite smudges, eraser crumbs, peg-bar wear, and softened
-    page edges as drawn or printed surface marks over the existing material; do not change the
-    subject's actual substance or function.
-  camera_and_composition: >-
-    Arrange multiple poses only when motion sequencing is requested; otherwise use faint gesture
-    arcs and construction layers around one unchanged subject. Keep timing marks non-readable.
-  atmosphere_and_mood: >-
-    Focused and exploratory; emphasize the feeling of observing movement and drawing through it.
-  rendering_and_quality: >-
-    Finish with graphite construction, overlapping key poses or gesture studies when requested,
-    paper tooth, and a boiling line.
-  key_features: >-
-    overlapping key poses; gesture arcs; timing marks; construction lines; peg-bar cues; boiling
-    contour
-  creative_brief: >-
-    Render the supplied content with rapid gesture lines, motion-arc construction curves,
-    timing-chart marks, and overlapping pose studies when requested. Use animation-paper blue
-    line, graphite gray, Col-Erase blue, red-pencil breakdown lines, and paper buff as style
-    colors while honoring any explicit color instructions. Apply animation-paper tooth, graphite
-    smudges, eraser crumbs, peg-bar wear, and softened page edges as drawn or printed marks over
-    the existing material, without changing what the subject is made of or how it functions.
-    Preserve the requested subject, action, and setting; follow the supplied composition and add
-    no unrequested cast, location, lettering, or gag.
+  aesthetic: 'Use this drawing language: Rough animation-study drawing with overlapping key poses, gesture arcs, timing marks, construction lines, peg-bar paper cues, and line boil. Apply it to the supplied content without requiring a particular cast, place, or story.'
+  subject_treatment: Apply rapid gesture lines, motion-arc construction curves, timing-chart marks, and overlapping pose studies when requested to the supplied subject while preserving its identity, silhouette, requested action, actual material, and function. Change the drawn treatment, not the underlying content.
+  color_and_tone: Use animation-paper blue line, graphite gray, Col-Erase blue, red-pencil breakdown lines, and paper buff as style colors while honoring any explicit color requirements in the request.
+  lighting_and_shadow: Use paper translucency and peg-bar shadows only when a multi-frame study is requested as a visual treatment, while respecting any lighting instructions in the request.
+  texture_and_material: Render animation-paper tooth, graphite smudges, eraser crumbs, peg-bar wear, and softened page edges as drawn or printed surface marks over the existing material; do not change the subject's actual substance or function.
+  camera_and_composition: Arrange multiple poses only when motion sequencing is requested; otherwise use faint gesture arcs and construction layers around one unchanged subject. Keep timing marks non-readable.
+  atmosphere_and_mood: Focused and exploratory; emphasize the feeling of observing movement and drawing through it.
+  rendering_and_quality: Finish with graphite construction, overlapping key poses or gesture studies when requested, paper tooth, and a boiling line.
+  key_features: overlapping key poses; gesture arcs; timing marks; construction lines; peg-bar cues; boiling contour
+  creative_brief: Render the supplied content with rapid gesture lines, motion-arc construction curves, timing-chart marks, and overlapping pose studies when requested. Use animation-paper blue line, graphite gray, Col-Erase blue, red-pencil breakdown lines, and paper buff as style colors while honoring any explicit color instructions. Apply animation-paper tooth, graphite smudges, eraser crumbs, peg-bar wear, and softened page edges as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.
 avoidRules:
   - finished
   - polished
@@ -79,11 +49,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-100.webp
 attributes:
-  negativePrompt: >-
-    finished, polished, clean, rendered, smooth, digital, final, single frame, static, tight,
-    tweened, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable
-    fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character
-    likeness, readable gag text, generic cute mascot, smooth anime polish
+  negativePrompt: finished, polished, clean, rendered, smooth, digital, final, single frame, static, tight, tweened, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

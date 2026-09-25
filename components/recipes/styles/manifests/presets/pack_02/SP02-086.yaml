@@ -12,43 +12,16 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: >-
-    Use this drawing language: Ugly-cute caricature using lumpy asymmetry, mismatched scale,
-    chunky rounded contours, irregular bumps, and a soft candy-sick glow. Apply it as a
-    rendering treatment to user-provided content; let the user control subject and context.
-  subject_treatment: >-
-    Apply chunky uneven outlines, bulbous swelling curves, irregular bumps, and playful
-    protrusions to the supplied subject while preserving its identity, silhouette, requested
-    action, actual material, and function. Change the drawn treatment, not the underlying
-    content.
-  color_and_tone: >-
-    Use mold green, soft pink, bruise purple, and muted yellow accents as style colors while
-    honoring any explicit color requirements in the request.
-  lighting_and_shadow: >-
-    Use soft glow, gentle rim accents, and rounded contour highlights as a visual treatment,
-    while respecting any lighting instructions in the request.
-  texture_and_material: >-
-    Render irregular soft bumps, crust-like grain, and dry uneven marks as drawn or printed
-    surface marks over the existing material; do not change the subject's actual substance or
-    function.
-  camera_and_composition: >-
-    Build a readable silhouette from lopsided masses and rounded irregular protrusions; use soft
-    glow to separate forms while keeping the supplied subject recognizable.
-  atmosphere_and_mood: >-
-    Fondly strange and affectionate; balance irregular forms with a gentle, soft finish.
-  rendering_and_quality: >-
-    Finish with chunky uneven contours, controlled roughness, and a soft highlight that
-    preserves the input silhouette.
-  key_features: >-
-    lumpy asymmetry; rounded uneven contours; irregular bumps; mismatched scale; candy-sick glow
-  creative_brief: >-
-    Render the supplied content with chunky uneven outlines, bulbous swelling curves, irregular
-    bumps, and playful protrusions. Use mold green, soft pink, bruise purple, and muted yellow
-    accents as style colors while honoring any explicit color instructions. Apply irregular soft
-    bumps, crust-like grain, and dry uneven marks as drawn or printed marks over the existing
-    material, without changing what the subject is made of or how it functions. Preserve the
-    requested subject, action, and setting; follow the supplied composition and add no
-    unrequested cast, location, lettering, or gag.
+  aesthetic: 'Use this drawing language: Ugly-cute caricature using lumpy asymmetry, mismatched scale, chunky rounded contours, irregular bumps, and a soft candy-sick glow. Apply it as a rendering treatment to user-provided content; let the user control subject and context.'
+  subject_treatment: Apply chunky uneven outlines, bulbous swelling curves, irregular bumps, and playful protrusions to the supplied subject while preserving its identity, silhouette, requested action, actual material, and function. Change the drawn treatment, not the underlying content.
+  color_and_tone: Use mold green, soft pink, bruise purple, and muted yellow accents as style colors while honoring any explicit color requirements in the request.
+  lighting_and_shadow: Use soft glow, gentle rim accents, and rounded contour highlights as a visual treatment, while respecting any lighting instructions in the request.
+  texture_and_material: Render irregular soft bumps, crust-like grain, and dry uneven marks as drawn or printed surface marks over the existing material; do not change the subject's actual substance or function.
+  camera_and_composition: Build a readable silhouette from lopsided masses and rounded irregular protrusions; use soft glow to separate forms while keeping the supplied subject recognizable.
+  atmosphere_and_mood: Fondly strange and affectionate; balance irregular forms with a gentle, soft finish.
+  rendering_and_quality: Finish with chunky uneven contours, controlled roughness, and a soft highlight that preserves the input silhouette.
+  key_features: lumpy asymmetry; rounded uneven contours; irregular bumps; mismatched scale; candy-sick glow
+  creative_brief: Render the supplied content with chunky uneven outlines, bulbous swelling curves, irregular bumps, and playful protrusions. Use mold green, soft pink, bruise purple, and muted yellow accents as style colors while honoring any explicit color instructions. Apply irregular soft bumps, crust-like grain, and dry uneven marks as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.
 avoidRules:
   - beautiful
   - handsome
@@ -72,11 +45,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-086.webp
 attributes:
-  negativePrompt: >-
-    beautiful, handsome, elegant, proportional, realistic anatomy, symmetrical, polished, official
-    card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text,
-    watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness,
-    readable gag text, generic cute mascot, smooth anime polish
+  negativePrompt: beautiful, handsome, elegant, proportional, realistic anatomy, symmetrical, polished, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

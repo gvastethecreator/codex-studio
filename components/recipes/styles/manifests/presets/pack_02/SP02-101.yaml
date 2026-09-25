@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP02-101
 packId: pack_02
-name: Ren & Stimpy - Veiny Close-Up Grossout
+name: Veiny Close-Up Grossout
 category: 6. Caricature And Cartoon Styles
 version: 1
 supportedTasks:
@@ -12,45 +12,16 @@ tags:
   - cinematic-and-media
   - caricature-and-cartoon-styles
 visualDna:
-  aesthetic: >-
-    Use this drawing language: Gross-out cartoon macro treatment with swollen surfaces,
-    exaggerated microtexture, trembling folds, wet highlights, painterly detail against simple
-    forms, and invasive crop when requested.
-  subject_treatment: >-
-    Apply wobbling brush contours, variable line weight, swollen micro-detail, and irregular
-    surface edges to the supplied subject while preserving its identity, silhouette, requested
-    action, actual material, and function. Change the drawn treatment, not the underlying
-    content.
-  color_and_tone: >-
-    Use hot pink, nicotine yellow, clammy teal shadows, red-orange accents, and greasy beige as
-    style colors while honoring any explicit color requirements in the request.
-  lighting_and_shadow: >-
-    Use close-range highlights and exaggerated contrast within the supplied surface detail as a
-    visual treatment, while respecting any lighting instructions in the request.
-  texture_and_material: >-
-    Render macro contour variation, uneven highlights, fine drawn grain, and tight clusters of
-    micro-marks as drawn or printed surface marks over the existing material; do not change the
-    subject's actual substance or function.
-  camera_and_composition: >-
-    Use detail contrast to emphasize the supplied surface; magnification is optional, and the
-    whole subject should remain identifiable.
-  atmosphere_and_mood: >-
-    Revulsive and comic; use the close-detail contrast without requiring a face or reaction.
-  rendering_and_quality: >-
-    Finish with simple cartoon contours against a sharply rendered surface detail; keep that
-    detail within forms present in the input.
-  key_features: >-
-    simple cartoon contour; swollen micro-detail; trembling folds; wet highlights; optional
-    invasive crop
-  creative_brief: >-
-    Render the supplied content with wobbling brush contours, variable line weight, swollen
-    micro-detail, and irregular surface edges. Use hot pink, nicotine yellow, clammy teal
-    shadows, red-orange accents, and greasy beige as style colors while honoring any explicit
-    color instructions. Apply macro contour variation, uneven highlights, fine drawn grain, and
-    tight clusters of micro-marks as drawn or printed marks over the existing material, without
-    changing what the subject is made of or how it functions. Preserve the requested subject,
-    action, and setting; follow the supplied composition and add no unrequested cast, location,
-    lettering, or gag.
+  aesthetic: 'Use this drawing language: Gross-out cartoon macro treatment with swollen surfaces, exaggerated microtexture, trembling folds, wet highlights, painterly detail against simple forms, and invasive crop when requested.'
+  subject_treatment: Apply wobbling brush contours, variable line weight, swollen micro-detail, and irregular surface edges to the supplied subject while preserving its identity, silhouette, requested action, actual material, and function. Change the drawn treatment, not the underlying content.
+  color_and_tone: Use hot pink, nicotine yellow, clammy teal shadows, red-orange accents, and greasy beige as style colors while honoring any explicit color requirements in the request.
+  lighting_and_shadow: Use close-range highlights and exaggerated contrast within the supplied surface detail as a visual treatment, while respecting any lighting instructions in the request.
+  texture_and_material: Render macro contour variation, uneven highlights, fine drawn grain, and tight clusters of micro-marks as drawn or printed surface marks over the existing material; do not change the subject's actual substance or function.
+  camera_and_composition: Use detail contrast to emphasize the supplied surface; magnification is optional, and the whole subject should remain identifiable.
+  atmosphere_and_mood: Revulsive and comic; use the close-detail contrast without requiring a face or reaction.
+  rendering_and_quality: Finish with simple cartoon contours against a sharply rendered surface detail; keep that detail within forms present in the input.
+  key_features: simple cartoon contour; swollen micro-detail; trembling folds; wet highlights; optional invasive crop
+  creative_brief: Render the supplied content with wobbling brush contours, variable line weight, swollen micro-detail, and irregular surface edges. Use hot pink, nicotine yellow, clammy teal shadows, red-orange accents, and greasy beige as style colors while honoring any explicit color instructions. Apply macro contour variation, uneven highlights, fine drawn grain, and tight clusters of micro-marks as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag.
 avoidRules:
   - subtle
   - flattering
@@ -76,11 +47,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-101.webp
 attributes:
-  negativePrompt: >-
-    subtle, flattering, glamorous, cute, realistic anatomy, smooth skin, elegant, restrained,
-    pretty, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable
-    fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character
-    likeness, readable gag text, generic cute mascot, smooth anime polish
+  negativePrompt: subtle, flattering, glamorous, cute, realistic anatomy, smooth skin, elegant, restrained, pretty, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
@@ -94,3 +61,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Veiny Close-Up Grossout
+styleAnchors:
+  - Veiny Close-Up Grossout
+  - Ren & Stimpy - Veiny Close-Up Grossout

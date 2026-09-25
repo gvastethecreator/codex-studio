@@ -410,7 +410,9 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP02-101',
-    name: 'Ren & Stimpy - Veiny Close-Up Grossout',
+    name: 'Veiny Close-Up Grossout',
+    displayName: 'Veiny Close-Up Grossout',
+    styleAnchors: ['Veiny Close-Up Grossout', 'Ren & Stimpy - Veiny Close-Up Grossout'],
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
       'subtle, flattering, glamorous, cute, realistic anatomy, smooth skin, elegant, restrained, pretty, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
@@ -439,7 +441,9 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP02-102',
-    name: 'Smiling Friends - Flat Weird Dayjob Chaos',
+    name: 'Flat Weird Dayjob Chaos',
+    displayName: 'Flat Weird Dayjob Chaos',
+    styleAnchors: ['Flat Weird Dayjob Chaos', 'Smiling Friends - Flat Weird Dayjob Chaos'],
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
       'epic, slick, cinematic, beautiful, painterly, photorealistic, cute mascot polish, superhero rendering, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
@@ -468,7 +472,12 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP02-103',
-    name: 'Aaahh!!! Real Monsters - Sewer Kid Grotesque',
+    name: 'Sewer Grotesque Monster Cartoon',
+    displayName: 'Sewer Grotesque Monster Cartoon',
+    styleAnchors: [
+      'Sewer Grotesque Monster Cartoon',
+      'Aaahh!!! Real Monsters - Sewer Kid Grotesque',
+    ],
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
@@ -497,7 +506,9 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP02-104',
-    name: 'Rugrats - Toddler Crayon Panic',
+    name: 'Toddler Crayon Panic Cartoon',
+    displayName: 'Toddler Crayon Panic Cartoon',
+    styleAnchors: ['Toddler Crayon Panic Cartoon', 'Rugrats - Toddler Crayon Panic'],
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
@@ -526,7 +537,9 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP02-105',
-    name: 'Ed, Edd n Eddy - Jawbreaker Scam Cartoon',
+    name: 'Vibrating Scam Comedy Cartoon',
+    displayName: 'Vibrating Scam Comedy Cartoon',
+    styleAnchors: ['Vibrating Scam Comedy Cartoon', 'Ed, Edd n Eddy - Jawbreaker Scam Cartoon'],
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
@@ -555,7 +568,12 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP02-106',
-    name: "Rocko's Modern Life - Beige Suburban Anxiety",
+    name: 'Beige Suburban Anxiety Cartoon',
+    displayName: 'Beige Suburban Anxiety Cartoon',
+    styleAnchors: [
+      'Beige Suburban Anxiety Cartoon',
+      "Rocko's Modern Life - Beige Suburban Anxiety",
+    ],
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
@@ -584,7 +602,12 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP02-107',
-    name: 'Courage the Cowardly Dog - Rural Nightmare Pastel',
+    name: 'Rural Nightmare Pastel Cartoon',
+    displayName: 'Rural Nightmare Pastel Cartoon',
+    styleAnchors: [
+      'Rural Nightmare Pastel Cartoon',
+      'Courage the Cowardly Dog - Rural Nightmare Pastel',
+    ],
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
@@ -613,7 +636,12 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP02-108',
-    name: 'Cow and Chicken - Loud Primary Derangement',
+    name: 'Loud Primary Derangement Cartoon',
+    displayName: 'Loud Primary Derangement Cartoon',
+    styleAnchors: [
+      'Loud Primary Derangement Cartoon',
+      'Cow and Chicken - Loud Primary Derangement',
+    ],
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
@@ -642,7 +670,9 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP02-109',
-    name: 'CatDog - Shared-Body Elastic Nonsense',
+    name: 'Shared-Body Elastic Nonsense',
+    displayName: 'Shared-Body Elastic Nonsense',
+    styleAnchors: ['Shared-Body Elastic Nonsense', 'CatDog - Shared-Body Elastic Nonsense'],
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
@@ -671,7 +701,9 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP02-110',
-    name: 'SpongeBob Gross-Up Freeze Frame',
+    name: 'Gross-Up Freeze Frame',
+    displayName: 'Gross-Up Freeze Frame',
+    styleAnchors: ['Gross-Up Freeze Frame', 'SpongeBob Gross-Up Freeze Frame'],
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
@@ -700,7 +732,9 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP02-111',
-    name: 'Beavis and Butt-Head - Dumb Couch Slouch',
+    name: 'Dumb Couch Slouch Cartoon',
+    displayName: 'Dumb Couch Slouch Cartoon',
+    styleAnchors: ['Dumb Couch Slouch Cartoon', 'Beavis and Butt-Head - Dumb Couch Slouch'],
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
@@ -729,7 +763,9 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP02-112',
-    name: 'Mike Judge Office Boredom Sketch',
+    name: 'Office Boredom Sketch',
+    displayName: 'Office Boredom Sketch',
+    styleAnchors: ['Office Boredom Sketch', 'Mike Judge Office Boredom Sketch'],
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
@@ -758,7 +794,9 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP02-113',
-    name: 'The Oblongs - Toxic Suburb Family',
+    name: 'Toxic Suburb Family Cartoon',
+    displayName: 'Toxic Suburb Family Cartoon',
+    styleAnchors: ['Toxic Suburb Family Cartoon', 'The Oblongs - Toxic Suburb Family'],
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
@@ -787,7 +825,9 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP02-114',
-    name: 'Dr. Katz - Squigglevision Therapy Doodle',
+    name: 'Squiggle-Line Therapy Doodle',
+    displayName: 'Squiggle-Line Therapy Doodle',
+    styleAnchors: ['Squiggle-Line Therapy Doodle', 'Dr. Katz - Squigglevision Therapy Doodle'],
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
@@ -816,7 +856,9 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP02-116',
-    name: 'Doug Notebook Anxiety Cartoon',
+    name: 'Notebook Anxiety Cartoon',
+    displayName: 'Notebook Anxiety Cartoon',
+    styleAnchors: ['Notebook Anxiety Cartoon', 'Doug Notebook Anxiety Cartoon'],
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
@@ -845,7 +887,9 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP02-117',
-    name: 'Angela Anaconda Photo-Cutout Menace',
+    name: 'Photo-Cutout Menace Cartoon',
+    displayName: 'Photo-Cutout Menace Cartoon',
+    styleAnchors: ['Photo-Cutout Menace Cartoon', 'Angela Anaconda Photo-Cutout Menace'],
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
@@ -874,7 +918,9 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP02-118',
-    name: 'Crash Zoom Garbage Pail Caricature',
+    name: 'Crash Zoom Sticker-Card Caricature',
+    displayName: 'Crash Zoom Sticker-Card Caricature',
+    styleAnchors: ['Crash Zoom Sticker-Card Caricature', 'Crash Zoom Garbage Pail Caricature'],
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
       'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
