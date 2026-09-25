@@ -8143,11 +8143,7 @@
   "SP22-184": {
     "schemaVersion": 1,
     "kind": "modifier",
-    "defaultFields": [
-      "aesthetic",
-      "texture_and_material",
-      "rendering_and_quality"
-    ],
+    "defaultFields": ["aesthetic", "texture_and_material", "rendering_and_quality"],
     "requires": "accent",
     "medium": "ornamental-line-detail",
     "constraints": [
@@ -9732,11 +9728,7 @@
   "SP23-006": {
     "schemaVersion": 1,
     "kind": "representation_profile",
-    "defaultFields": [
-      "aesthetic",
-      "camera_and_composition",
-      "rendering_and_quality"
-    ],
+    "defaultFields": ["aesthetic", "camera_and_composition", "rendering_and_quality"],
     "requires": "structure",
     "medium": "representation",
     "constraints": [
@@ -9939,11 +9931,7 @@
   "SP23-012": {
     "schemaVersion": 1,
     "kind": "modifier",
-    "defaultFields": [
-      "aesthetic",
-      "color_and_tone",
-      "rendering_and_quality"
-    ],
+    "defaultFields": ["aesthetic", "color_and_tone", "rendering_and_quality"],
     "requires": "accent",
     "medium": "print-color-contrast",
     "constraints": [
@@ -11491,11 +11479,7 @@
   "SP23-048": {
     "schemaVersion": 1,
     "kind": "representation_profile",
-    "defaultFields": [
-      "aesthetic",
-      "camera_and_composition",
-      "rendering_and_quality"
-    ],
+    "defaultFields": ["aesthetic", "camera_and_composition", "rendering_and_quality"],
     "requires": "structure",
     "medium": "representation",
     "constraints": [
@@ -11799,9 +11783,7 @@
   "SP23-056": {
     "schemaVersion": 1,
     "kind": "modifier",
-    "defaultFields": [
-      "texture_and_material"
-    ],
+    "defaultFields": ["texture_and_material"],
     "requires": "materialTarget",
     "medium": "fine-porous-pigment-surface-treatment",
     "constraints": [

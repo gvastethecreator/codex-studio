@@ -134,7 +134,12 @@ if (spec.creates?.length) {
   );
   const first = refs[0] && yaml.load(readFileSync(path.join(presetsRoot, refs[0]), 'utf8'));
   const newRefs: string[] = [];
+  const existingNames = new Set(
+    refs.map((ref) => yaml.load(readFileSync(path.join(presetsRoot, ref), 'utf8')).name),
+  );
   for (const create of spec.creates) {
+    if (existingNames.has(create.name))
+      throw new Error(`${create.name} already exists in ${spec.category}; spec already applied?`);
     n += 1;
     const id = `${prefix}${String(n).padStart(3, '0')}`;
     if (taken.has(id)) throw new Error(`ID taken ${id}`);
@@ -201,7 +206,6 @@ if (!dry) {
   writeFileSync(briefsFile, `${JSON.stringify(briefs, null, 2)}\n`);
   writeFileSync(variantsFile, `${JSON.stringify(variantBriefs, null, 2)}\n`);
 }
-console.log(report.join('\n'));
-console.log(
-  `${dry ? '[dry] ' : ''}${spec.pack}::${spec.category} total=${refs.length + (spec.creates?.length ?? 0)}`,
+process.stdout.write(
+  `${report.join('\n')}\n${dry ? '[dry] ' : ''}${spec.pack}::${spec.category} total=${refs.length + (spec.creates?.length ?? 0)}\n`,
 );

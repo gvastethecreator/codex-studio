@@ -53,4 +53,4 @@ await sharp({
   .composite(composites)
   .jpeg({ quality: 78 })
   .toFile(out);
-console.log(`${key}: presets=${ids.length} tiles=${tiles.length} -> ${out}`);
+process.stdout.write(`${key}: presets=${ids.length} tiles=${tiles.length} -> ${out}\n`);
