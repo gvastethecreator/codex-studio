@@ -8,27 +8,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Slime/Goo',
     category: '5. Elemental And FX',
     negativePrompt:
-      'solid, dry, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, unrequested disaster or event, effect filling the whole scene, solid, dry, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Slime/Goo behaves like a controlled elemental effect layer: start from Nickelodeon slime, Viscous liquid, and Melting, then turn motion, temperature, particles, translucency, refraction, glow, and transient energy behavior into portable surface behavior rather than a literal material sample.',
+        'Slime and goo: thick translucent slime dripping, stretching and pooling on the target.',
       subject_treatment:
-        'Transform any prompt subject through Drips: preserve identity and pose while letting forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        'Contain the effect on or immediately around the target named in the prompt (object, figure, hand, weapon or surface), keeping the target, its pose and the setting; the effect never becomes a new event or fills the scene: glossy slime coats parts of the target, stretching into strands and pooling below.',
       color_and_tone:
-        "Use Neon Green as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Lime, violet or clear slime with glossy highlights, concentrated around the target while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Wet gloss define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Slime/Goo without hiding the prompt subject.',
+        'Backlight for translucency and wet highlights, so the effect lights the target and casts believable local light.',
       texture_and_material:
-        'Render Viscous liquid through flow direction, particle density, turbulence, glow falloff, splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Viscous slime with strands, drips and bubbles, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Compose around Melting as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
       atmosphere_and_mood:
-        "Keep the mood Playful, sticky by using movement, danger, spectacle, instability, temperature, and sensory intensity; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Gross, playful, strange and sticky, coming from the effect rather than added scenery.',
       rendering_and_quality:
-        'Finish with Gross, fun material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Nickelodeon slime; Drips; Viscous liquid; Wet gloss; Melting',
+        'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
+      key_features: 'dripping slime strands; glossy pools; contained around the target',
       creative_brief:
-        "Route any subject through Slime/Goo as a transferable elemental/FX visual system while preserving the prompt's subject, action, and setting. Render the viscous theater of neon slime oozing in thick rivulets of impossible green, where surface tension pulls the liquid into glossy drips and stretched membranes that catch wet highlights at every curve. The goo should feel simultaneously gross and delightful, a contradiction of texture made spectacle in lurid color. Capture the aesthetics of controlled mess, the sublime in the sticky and absurd. Use Slime/Goo as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Slime/Goo as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -36,27 +36,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Fire & Magma',
     category: '5. Elemental And FX',
     negativePrompt:
-      'cold, blue, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, unrequested disaster or event, effect filling the whole scene, cold, blue, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Fire & Magma behaves like a controlled elemental effect layer: start from Lava flow, Rock and liquid, and Melting rock, then turn motion, temperature, particles, translucency, refraction, glow, and transient energy behavior into portable surface behavior rather than a literal material sample.',
+        'Fire and magma: flame and molten rock contained on the target — glowing cracks, dripping magma and licking flames.',
       subject_treatment:
-        'Transform any prompt subject through Crust cracks: preserve identity and pose while letting forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        'Contain the effect on or immediately around the target named in the prompt (object, figure, hand, weapon or surface), keeping the target, its pose and the setting; the effect never becomes a new event or fills the scene: the target glows with magma cracks and short licking flames without burning away.',
       color_and_tone:
-        "Use Orange, Black, Red as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Orange, yellow and deep red with black crust, concentrated around the target while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Emissive glow define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Fire & Magma without hiding the prompt subject.',
+        'Self-illuminating glow casting warm light, so the effect lights the target and casts believable local light.',
       texture_and_material:
-        'Render Rock and liquid through flow direction, particle density, turbulence, glow falloff, splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Molten cracks, crust, flames and embers, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Compose around Melting rock as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
       atmosphere_and_mood:
-        "Keep the mood Dangerous, intense by using movement, danger, spectacle, instability, temperature, and sensory intensity; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Fierce, dangerous, primal and hot, coming from the effect rather than added scenery.',
       rendering_and_quality:
-        'Finish with Volcanic, hot material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Lava flow; Crust cracks; Rock and liquid; Emissive glow; Melting rock',
+        'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
+      key_features:
+        'glowing magma cracks; licking flames; black crust; contained around the target',
       creative_brief:
-        "Route any subject through Fire & Magma as a transferable elemental/FX visual system while preserving the prompt's subject, action, and setting. Summon the living heat of flowing magma where black crust cracks open to reveal rivers of orange incandescence pulsing beneath, a material that is its own illumination. The skin should feel like a cooling scab over liquid fire, the fissures mapping the flow of creation itself across a surface of elemental birth. Capture the terror and beauty of a planet still forming. Use Fire & Magma as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fire & Magma as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -64,27 +65,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Electricity/Lightning',
     category: '5. Elemental And FX',
     negativePrompt:
-      'fire, smoke, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, unrequested disaster or event, effect filling the whole scene, fire, smoke, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Electricity/Lightning behaves like a controlled elemental effect layer: start from Tesla coil arc, Plasma, and Branching, then turn motion, temperature, particles, translucency, refraction, glow, and transient energy behavior into portable surface behavior rather than a literal material sample.',
+        'Electricity: branching arcs and crackling bolts crawling over and around the target.',
       subject_treatment:
-        'Transform any prompt subject through Jagged bolts: preserve identity and pose while letting forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        'Contain the effect on or immediately around the target named in the prompt (object, figure, hand, weapon or surface), keeping the target, its pose and the setting; the effect never becomes a new event or fills the scene: lightning arcs crawl over the target and jump between its edges.',
       color_and_tone:
-        "Use Blue, White, Purple as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Electric blue-white with violet fringes, concentrated around the target while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Bright flash define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Electricity/Lightning without hiding the prompt subject.',
+        'Flickering bright arcs lighting the target, so the effect lights the target and casts believable local light.',
       texture_and_material:
-        'Render Plasma through flow direction, particle density, turbulence, glow falloff, splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Branching arcs, sparks and ionized glow, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Compose around Branching as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
       atmosphere_and_mood:
-        "Keep the mood Shocking, fast by using movement, danger, spectacle, instability, temperature, and sensory intensity; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Charged, dangerous, energetic and sudden, coming from the effect rather than added scenery.',
       rendering_and_quality:
-        'Finish with High energy material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Tesla coil arc; Jagged bolts; Plasma; Bright flash; Branching',
+        'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
+      key_features:
+        'branching lightning arcs; sparks; blue-white glow; contained around the target',
       creative_brief:
-        "Route any subject through Electricity/Lightning as a transferable elemental/FX visual system while preserving the prompt's subject, action, and setting. Compose the branching violence of electrical discharge where plasma bolts fork through darkness in veins of blue-white-purple energy, each tendril a tree of light that grows and dies in the same instantaneous moment. The arc should feel fierce and directional, a pathfinding intelligence seeking ground through the path of least resistance. Capture the architecture of pure force, energy made visible as sculpture. Use Electricity/Lightning as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Electricity/Lightning as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -92,27 +94,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Smoke/Fog',
     category: '5. Elemental And FX',
     negativePrompt:
-      'hard-edged clutter, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, unrequested disaster or event, effect filling the whole scene, hard-edged clutter, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Smoke/Fog behaves like a controlled elemental effect layer: start from Thick fog, Gaseous, and Turbulence, then turn motion, temperature, particles, translucency, refraction, glow, and transient energy behavior into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Smoke and fog: curling smoke rising from or wrapping the target in soft volumes.',
       subject_treatment:
-        'Transform any prompt subject through Soft gradients: preserve identity and pose while letting forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        'Contain the effect on or immediately around the target named in the prompt (object, figure, hand, weapon or surface), keeping the target, its pose and the setting; the effect never becomes a new event or fills the scene: smoke curls from the target and wraps it loosely without hiding it.',
       color_and_tone:
-        "Use Grey, White as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Grey, white or tinted smoke, concentrated around the target while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Diffused define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Smoke/Fog without hiding the prompt subject.',
+        'Backlight and side light revealing smoke volumes, so the effect lights the target and casts believable local light.',
       texture_and_material:
-        'Render Gaseous through flow direction, particle density, turbulence, glow falloff, splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Curling smoke wisps and soft volumes, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Compose around Turbulence as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
       atmosphere_and_mood:
-        "Keep the mood Mysterious, blind by using movement, danger, spectacle, instability, temperature, and sensory intensity; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Mysterious, soft, drifting and quiet, coming from the effect rather than added scenery.',
       rendering_and_quality:
-        'Finish with Atmospheric, soft material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Thick fog; Soft gradients; Gaseous; Diffused; Turbulence',
+        'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
+      key_features: 'curling smoke wisps; soft volumes; contained around the target',
       creative_brief:
-        "Route any subject through Smoke/Fog as a transferable elemental/FX visual system while preserving the prompt's subject, action, and setting. Apply thick fog as volumetric treatment around the input: grey-white gradients, softened edges, staged loss of detail, cool damp density, and slow turbulence veiling form. Preserve recognizable subject cues as half-seen silhouettes or partial contours; avoid replacing the input with empty mist unless the prompt already asks for abstraction.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Smoke/Fog as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -120,27 +121,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Water Splash',
     category: '5. Elemental And FX',
     negativePrompt:
-      'still water, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, unrequested disaster or event, effect filling the whole scene, still water, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Water Splash behaves like a controlled elemental effect layer: start from High speed liquid, Liquid, and Surface tension, then turn motion, temperature, particles, translucency, refraction, glow, and transient energy behavior into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Water splash: a frozen crown or burst of water striking the target.',
       subject_treatment:
-        'Transform any prompt subject through Droplets: preserve identity and pose while letting forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        'Contain the effect on or immediately around the target named in the prompt (object, figure, hand, weapon or surface), keeping the target, its pose and the setting; the effect never becomes a new event or fills the scene: a sharp water splash bursts from or against the target, frozen mid-air.',
       color_and_tone:
-        "Use Clear, Blue tint as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Clear water with bright highlights, concentrated around the target while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Refractive, Caustic define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Water Splash without hiding the prompt subject.',
+        'Hard strobe light freezing droplets, so the effect lights the target and casts believable local light.',
       texture_and_material:
-        'Render Liquid through flow direction, particle density, turbulence, glow falloff, splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Splash crowns, droplets and sheets, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Compose around Surface tension as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
       atmosphere_and_mood:
-        "Keep the mood Refreshing, dynamic by using movement, danger, spectacle, instability, temperature, and sensory intensity; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Fresh, kinetic, sudden and bright, coming from the effect rather than added scenery.',
       rendering_and_quality:
-        'Finish with Fresh, clean material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'High speed liquid; Droplets; Liquid; Refractive, Caustic; Surface tension',
+        'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
+      key_features: 'frozen water splash; droplets; strobe crispness; contained around the target',
       creative_brief:
-        "Route any subject through Water Splash as a transferable elemental/FX visual system while preserving the prompt's subject, action, and setting. Capture the frozen ballet of water in mid-splash where droplets hang suspended in a corona of liquid tension, each sphere a tiny lens bending light through its crystalline transparency. Surface tension should feel stretched to its absolute limit, a moment of chaos ordered by physics into fleeting perfection. Render the sculpture of the instantaneous, a splash arrested at its most beautiful. Use Water Splash as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Water Splash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -148,27 +148,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Plasma/Energy',
     category: '5. Elemental And FX',
     negativePrompt:
-      'fire, gas, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, unrequested disaster or event, effect filling the whole scene, fire, gas, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Plasma/Energy behaves like a controlled elemental effect layer: start from Sci-fi shield, Energy ripple, and Warping, then turn motion, temperature, particles, translucency, refraction, glow, and transient energy behavior into portable surface behavior rather than a literal material sample.',
+        'Plasma energy: contained glowing energy — orbs, beams or auras — emanating from the target.',
       subject_treatment:
-        'Transform any prompt subject through Forcefield: preserve identity and pose while letting forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        'Contain the effect on or immediately around the target named in the prompt (object, figure, hand, weapon or surface), keeping the target, its pose and the setting; the effect never becomes a new event or fills the scene: a glowing energy aura or orb forms around the target or in a hand.',
       color_and_tone:
-        "Use Neon Cyan/Magenta as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Cyan, magenta or gold energy, concentrated around the target while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Glowing define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Plasma/Energy without hiding the prompt subject.',
+        'Self-illuminating glow lighting nearby surfaces, so the effect lights the target and casts believable local light.',
       texture_and_material:
-        'Render Energy ripple through flow direction, particle density, turbulence, glow falloff, splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Plasma filaments, glow and heat shimmer, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Compose around Warping as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
       atmosphere_and_mood:
-        "Keep the mood Futuristic, protected by using movement, danger, spectacle, instability, temperature, and sensory intensity; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Powerful, magical, futuristic and intense, coming from the effect rather than added scenery.',
       rendering_and_quality:
-        'Finish with Sci-fi, shield material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Sci-fi shield; Forcefield; Energy ripple; Glowing; Warping',
+        'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
+      key_features: 'plasma aura; glowing filaments; local glow; contained around the target',
       creative_brief:
-        "Route any subject through Plasma/Energy as a transferable elemental/FX visual system while preserving the prompt's subject, action, and setting. Render the impossible physics of an energy shield where ripples of neon cyan and magenta race across an invisible surface like pebbles dropped in pure light, the forcefield pattern buzzing with contained power. The barrier should feel simultaneously present and immaterial, a force made visible through its own distortion of space. Capture the membrane between safety and annihilation, protection rendered as light. Use Plasma/Energy as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Plasma/Energy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -176,27 +176,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Oil on Water',
     category: '5. Elemental And FX',
     negativePrompt:
-      'clean water, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, unrequested disaster or event, effect filling the whole scene, clean water, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Oil on Water behaves like a controlled elemental effect layer: start from Puddle rainbow, Liquid, and Fluid, then turn motion, temperature, particles, translucency, refraction, glow, and transient energy behavior into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Oil on water: iridescent oil film swirling over water around the target.',
       subject_treatment:
-        'Transform any prompt subject through Swirls: preserve identity and pose while letting forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        'Contain the effect on or immediately around the target named in the prompt (object, figure, hand, weapon or surface), keeping the target, its pose and the setting; the effect never becomes a new event or fills the scene: rainbow oil-film swirls spread on water around the target.',
       color_and_tone:
-        "Use Thin film interference as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Iridescent rainbow film over dark water, concentrated around the target while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Reflective define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Oil on Water without hiding the prompt subject.',
+        'Soft light for thin-film iridescence, so the effect lights the target and casts believable local light.',
       texture_and_material:
-        'Render Liquid through flow direction, particle density, turbulence, glow falloff, splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Thin oil film with swirling interference colors, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Compose around Fluid as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
       atmosphere_and_mood:
-        "Keep the mood Dirty but pretty by using movement, danger, spectacle, instability, temperature, and sensory intensity; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Toxic, beautiful, eerie and slick, coming from the effect rather than added scenery.',
       rendering_and_quality:
-        'Finish with Iridescent, fluid material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Puddle rainbow; Swirls; Liquid; Reflective; Fluid',
+        'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
+      key_features: 'iridescent oil swirls; thin-film color; contained around the target',
       creative_brief:
-        "Route any subject through Oil on Water as a transferable elemental/FX visual system while preserving the prompt's subject, action, and setting. Compose oil-on-water interference as fluid color behavior over the input: thin-film rainbow swirls, magenta-cyan-gold calligraphy, dark liquid underlayer, and mesmerizing surface contamination. If puddle, water, street, or industrial context exists, reinforce it; otherwise use iridescent film as abstract overlay without forcing parking lot or gutter. Use Oil on Water as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Oil on Water as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -204,27 +203,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sparks',
     category: '5. Elemental And FX',
     negativePrompt:
-      'fire, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, unrequested disaster or event, effect filling the whole scene, fire, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Sparks behaves like a controlled elemental effect layer: start from Grinder sparks, Particle, and Motion blur, then turn motion, temperature, particles, translucency, refraction, glow, and transient energy behavior into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Sparks: hot sparks spraying from the target in bright streaks.',
       subject_treatment:
-        'Transform any prompt subject through Trails: preserve identity and pose while letting forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        'Contain the effect on or immediately around the target named in the prompt (object, figure, hand, weapon or surface), keeping the target, its pose and the setting; the effect never becomes a new event or fills the scene: bright sparks spray from a point on the target in streaks.',
       color_and_tone:
-        "Use Orange, Yellow, White as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Orange-gold streaks with white-hot centers, concentrated around the target while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Point lights define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Sparks without hiding the prompt subject.',
+        'Sparks lighting the target in warm flashes, so the effect lights the target and casts believable local light.',
       texture_and_material:
-        'Render Particle through flow direction, particle density, turbulence, glow falloff, splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Streaking sparks and glowing particles, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Compose around Motion blur as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
       atmosphere_and_mood:
-        "Keep the mood Intense, work by using movement, danger, spectacle, instability, temperature, and sensory intensity; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Industrial, energetic, fiery and alive, coming from the effect rather than added scenery.',
       rendering_and_quality:
-        'Finish with Industrial, hot material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Grinder sparks; Trails; Particle; Point lights; Motion blur',
+        'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
+      key_features: 'spark spray streaks; white-hot centers; contained around the target',
       creative_brief:
-        "Route any subject through Sparks as a transferable elemental/FX visual system while preserving the prompt's subject, action, and setting. Render the streaking light-trails of grinding sparks spraying outward in arcs of orange to white, each particle a tiny sun burning its brief trajectory through industrial darkness with motion blur carrying the velocity. The point lights should illuminate the surrounding space in warm pulses, creating a constellation of brief fires. Capture the beauty of friction, light born from the resistance of metal against wheel. Use Sparks as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sparks as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -232,27 +230,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Soap Bubbles',
     category: '5. Elemental And FX',
     negativePrompt:
-      'plastic ball, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, unrequested disaster or event, effect filling the whole scene, plastic ball, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Soap Bubbles behaves like a controlled elemental effect layer: start from Floating spheres, Liquid surface, and Sphere, then turn motion, temperature, particles, translucency, refraction, glow, and transient energy behavior into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Soap bubbles: iridescent bubbles floating around or clinging to the target.',
       subject_treatment:
-        'Transform any prompt subject through Thin film: preserve identity and pose while letting forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        'Contain the effect on or immediately around the target named in the prompt (object, figure, hand, weapon or surface), keeping the target, its pose and the setting; the effect never becomes a new event or fills the scene: iridescent soap bubbles float around and cling to the target.',
       color_and_tone:
-        "Use Iridescent as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Thin-film rainbow iridescence, concentrated around the target while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Reflective define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Soap Bubbles without hiding the prompt subject.',
+        'Soft backlight on bubble surfaces, so the effect lights the target and casts believable local light.',
       texture_and_material:
-        'Render Liquid surface through flow direction, particle density, turbulence, glow falloff, splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Thin bubbles with swirling colors and reflections, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Compose around Sphere as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
       atmosphere_and_mood:
-        "Keep the mood Light, fun by using movement, danger, spectacle, instability, temperature, and sensory intensity; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Playful, light, dreamy and delicate, coming from the effect rather than added scenery.',
       rendering_and_quality:
-        'Finish with Delicate, childhood material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Floating spheres; Thin film; Liquid surface; Reflective; Sphere',
+        'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
+      key_features: 'iridescent soap bubbles; thin-film swirls; contained around the target',
       creative_brief:
-        "Route any subject through Soap Bubbles as a transferable elemental/FX visual system while preserving the prompt's subject, action, and setting. Capture the fragile cosmology of soap bubbles where iridescent films swirl across perfect spheres like miniature weather systems on liquid planets, transparency layering reality behind shifting curtains of spectral color. Each sphere should catch the world in convex miniature while its surface shimmers with approaching dissolution. Render the poetics of the temporary, geometry that lives only to catch light before it pops. Use Soap Bubbles as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Soap Bubbles as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -260,27 +257,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Dry Ice Fog',
     category: '5. Elemental And FX',
     negativePrompt:
-      'steam, hot, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, unrequested disaster or event, effect filling the whole scene, steam, hot, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Dry Ice Fog behaves like a controlled elemental effect layer: start from Heavy floor fog, Dense gas, and Heavy gas, then turn motion, temperature, particles, translucency, refraction, glow, and transient energy behavior into portable surface behavior rather than a literal material sample.',
+      aesthetic: "Dry ice fog: low, heavy white fog pouring and spilling over the target's edges.",
       subject_treatment:
-        'Transform any prompt subject through Rolling clouds: preserve identity and pose while letting forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        'Contain the effect on or immediately around the target named in the prompt (object, figure, hand, weapon or surface), keeping the target, its pose and the setting; the effect never becomes a new event or fills the scene: heavy dry-ice fog pours from and over the target, hugging surfaces.',
       color_and_tone:
-        "Use White as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Dense white fog with cool tint, concentrated around the target while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Soft define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Dry Ice Fog without hiding the prompt subject.',
+        'Low side light on rolling fog, so the effect lights the target and casts believable local light.',
       texture_and_material:
-        'Render Dense gas through flow direction, particle density, turbulence, glow falloff, splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Heavy rolling fog tendrils, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Compose around Heavy gas as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
       atmosphere_and_mood:
-        "Keep the mood Eerie, stage by using movement, danger, spectacle, instability, temperature, and sensory intensity; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Theatrical, eerie, cold and magical, coming from the effect rather than added scenery.',
       rendering_and_quality:
-        'Finish with Low, cold, theatrical material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Heavy floor fog; Rolling clouds; Dense gas; Soft; Heavy gas',
+        'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
+      key_features: 'pouring dry-ice fog; rolling tendrils; contained around the target',
       creative_brief:
-        "Route any subject through Dry Ice Fog as a transferable elemental/FX visual system while preserving the prompt's subject, action, and setting. Apply dry-ice fog as low cold atmosphere around the input: dense white clouds that pool and pour like liquid, gravity-hugging volume, soft theatrical light, and liminal concealment near the base of forms. If floor, stage, ritual, or object base exists, make fog gather there; otherwise use low-lying vapor to ground the subject without requiring a theatre scene.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dry Ice Fog as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -288,27 +284,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Confetti',
     category: '5. Elemental And FX',
     negativePrompt:
-      'trash, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, unrequested disaster or event, effect filling the whole scene, trash, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
-      aesthetic:
-        'Confetti behaves like a controlled elemental effect layer: start from Falling paper bits, Paper, and Falling, then turn motion, temperature, particles, translucency, refraction, glow, and transient energy behavior into portable surface behavior rather than a literal material sample.',
+      aesthetic: 'Confetti: colorful paper confetti bursting or falling around the target.',
       subject_treatment:
-        'Transform any prompt subject through Rectangles: preserve identity and pose while letting forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        'Contain the effect on or immediately around the target named in the prompt (object, figure, hand, weapon or surface), keeping the target, its pose and the setting; the effect never becomes a new event or fills the scene: a burst of confetti around the target, some pieces landing on it.',
       color_and_tone:
-        "Use Multi-colored as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Multicolor confetti, concentrated around the target while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Flat define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Confetti without hiding the prompt subject.',
+        'Bright festive light, so the effect lights the target and casts believable local light.',
       texture_and_material:
-        'Render Paper through flow direction, particle density, turbulence, glow falloff, splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Paper confetti pieces with motion blur, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Compose around Falling as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
       atmosphere_and_mood:
-        "Keep the mood Happy, party by using movement, danger, spectacle, instability, temperature, and sensory intensity; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Festive, joyful, chaotic and celebratory, coming from the effect rather than added scenery.',
       rendering_and_quality:
-        'Finish with Celebration, mess material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Falling paper bits; Rectangles; Paper; Flat; Falling',
+        'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
+      key_features: 'confetti burst; colorful paper pieces; contained around the target',
       creative_brief:
-        "Route any subject through Confetti as a transferable elemental/FX visual system while preserving the prompt's subject, action, and setting. Compose the joyful chaos of confetti suspended mid-fall in a frozen blizzard of colored rectangles, each scrap a tiny flag of celebration caught between release and landing, random rotation creating a sense of arrested motion across the frame. The paper bits should feel weightless and plentiful, a democracy of color scattered by the physics of joy. Capture celebration fragmented into geometry. Use Confetti as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Confetti as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -316,27 +311,293 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Snow (Powder)',
     category: '5. Elemental And FX',
     negativePrompt:
-      'ice, slush, wrong material, generic stock texture, muddy noise, watermark, readable text',
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, unrequested disaster or event, effect filling the whole scene, ice, slush, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Powder snow: fine snow dusting the target and drifting around it.',
+      subject_treatment:
+        'Contain the effect on or immediately around the target named in the prompt (object, figure, hand, weapon or surface), keeping the target, its pose and the setting; the effect never becomes a new event or fills the scene: fine powder snow dusts the target and drifts in the air around it.',
+      color_and_tone:
+        'White snow with cool blue shadows, concentrated around the target while the rest of the scene keeps its palette.',
+      lighting_and_shadow:
+        'Soft cold light, so the effect lights the target and casts believable local light.',
+      texture_and_material:
+        'Fine powder snow and flakes, with physically plausible motion, density and falloff.',
+      camera_and_composition:
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+      atmosphere_and_mood:
+        'Quiet, cold, soft and serene, coming from the effect rather than added scenery.',
+      rendering_and_quality:
+        'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
+      key_features: 'powder snow dusting; drifting flakes; contained around the target',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Snow (Powder) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP09-100',
+    name: 'Ember Drift',
+    displayName: 'Ember Drift',
+    styleAnchors: ['Ember Drift', 'drifting ember particles', 'rising embers'],
+    category: '5. Elemental And FX',
+    domain: 'drifting ember particles',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, unrequested disaster or event, effect filling the whole scene, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Ember drift: glowing embers rising and drifting slowly from the target.',
+      subject_treatment:
+        'Contain the effect on or immediately around the target named in the prompt (object, figure, hand, weapon or surface), keeping the target, its pose and the setting; the effect never becomes a new event or fills the scene: glowing embers rise from the target and drift upward.',
+      color_and_tone:
+        'Orange and gold embers against dark, concentrated around the target while the rest of the scene keeps its palette.',
+      lighting_and_shadow:
+        'Embers casting tiny warm lights, so the effect lights the target and casts believable local light.',
+      texture_and_material:
+        'Glowing ember particles with trails, with physically plausible motion, density and falloff.',
+      camera_and_composition:
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+      atmosphere_and_mood:
+        'Melancholic, warm, fading and magical, coming from the effect rather than added scenery.',
+      rendering_and_quality:
+        'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ember Drift as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'rising embers; warm trails; contained around the target',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP09-101',
+    name: 'Ink Cloud in Water',
+    displayName: 'Ink Cloud in Water',
+    styleAnchors: ['Ink Cloud in Water', 'ink diffusion in water', 'billowing ink plumes'],
+    category: '5. Elemental And FX',
+    domain: 'ink diffusion in water',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, unrequested disaster or event, effect filling the whole scene, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Snow (Powder) behaves like a controlled elemental effect layer: start from Fresh snowfall, Fluffy, and Compression, then turn motion, temperature, particles, translucency, refraction, glow, and transient energy behavior into portable surface behavior rather than a literal material sample.',
+        'Ink in water: dark ink blooming into billowing clouds from the target underwater.',
       subject_treatment:
-        'Transform any prompt subject through Soft mounds: preserve identity and pose while letting forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+        'Contain the effect on or immediately around the target named in the prompt (object, figure, hand, weapon or surface), keeping the target, its pose and the setting; the effect never becomes a new event or fills the scene: ink blooms from the target into billowing clouds in clear water.',
       color_and_tone:
-        "Use White, Blue shadow as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+        'Black, indigo or crimson ink clouds, concentrated around the target while the rest of the scene keeps its palette.',
       lighting_and_shadow:
-        'Let Subsurface scattering define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Snow (Powder) without hiding the prompt subject.',
+        'Backlit clear water, so the effect lights the target and casts believable local light.',
       texture_and_material:
-        'Render Fluffy through flow direction, particle density, turbulence, glow falloff, splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+        'Billowing ink plumes and filaments, with physically plausible motion, density and falloff.',
       camera_and_composition:
-        'Compose around Compression as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
       atmosphere_and_mood:
-        "Keep the mood Quiet, cold by using movement, danger, spectacle, instability, temperature, and sensory intensity; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+        'Mysterious, slow, elegant and dark, coming from the effect rather than added scenery.',
       rendering_and_quality:
-        'Finish with Winter, soft material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
-      key_features: 'Fresh snowfall; Soft mounds; Fluffy; Subsurface scattering; Compression',
+        'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
       creative_brief:
-        "Route any subject through Snow (Powder) as a transferable elemental/FX visual system while preserving the prompt's subject, action, and setting. Compose the soft geometry of fresh powder snow mounding in gentle drifts, where subsurface scattering turns the white into pale blue in the shadows and each flake catches a microscopic sparkle of winter light. The surface must feel cold and fluffy, a blanket of frozen silence that softens every edge it touches. Capture the quiet of new snow, the world rendered in a single note of white. Use Snow as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ink Cloud in Water as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'billowing ink plumes; clear water; contained around the target',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP09-102',
+    name: 'Aurora Ribbons',
+    displayName: 'Aurora Ribbons',
+    styleAnchors: ['Aurora Ribbons', 'aurora light ribbons', 'aurora light ribbons'],
+    category: '5. Elemental And FX',
+    domain: 'aurora light ribbons',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, unrequested disaster or event, effect filling the whole scene, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Aurora ribbons: shimmering green and violet light ribbons wrapping the target.',
+      subject_treatment:
+        'Contain the effect on or immediately around the target named in the prompt (object, figure, hand, weapon or surface), keeping the target, its pose and the setting; the effect never becomes a new event or fills the scene: ribbons of aurora light wrap loosely around the target.',
+      color_and_tone:
+        'Green, teal and violet glow, concentrated around the target while the rest of the scene keeps its palette.',
+      lighting_and_shadow:
+        'Soft self-illuminating glow, so the effect lights the target and casts believable local light.',
+      texture_and_material:
+        'Translucent curtain-like light ribbons, with physically plausible motion, density and falloff.',
+      camera_and_composition:
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+      atmosphere_and_mood:
+        'Magical, serene, cold and wondrous, coming from the effect rather than added scenery.',
+      rendering_and_quality:
+        'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Aurora Ribbons as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'aurora light ribbons; translucent glow; contained around the target',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP09-103',
+    name: 'Ice Shard Burst',
+    displayName: 'Ice Shard Burst',
+    styleAnchors: ['Ice Shard Burst', 'ice shard explosion', 'ice shard burst'],
+    category: '5. Elemental And FX',
+    domain: 'ice shard explosion',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, unrequested disaster or event, effect filling the whole scene, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ice shard burst: sharp ice crystals exploding outward from a point on the target.',
+      subject_treatment:
+        'Contain the effect on or immediately around the target named in the prompt (object, figure, hand, weapon or surface), keeping the target, its pose and the setting; the effect never becomes a new event or fills the scene: ice shards burst from a point on the target, frozen mid-flight.',
+      color_and_tone:
+        'Clear and blue ice with white frost, concentrated around the target while the rest of the scene keeps its palette.',
+      lighting_and_shadow:
+        'Cold backlight on shards, so the effect lights the target and casts believable local light.',
+      texture_and_material:
+        'Sharp ice crystals and frost dust, with physically plausible motion, density and falloff.',
+      camera_and_composition:
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+      atmosphere_and_mood:
+        'Violent, cold, crystalline and sharp, coming from the effect rather than added scenery.',
+      rendering_and_quality:
+        'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ice Shard Burst as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'ice shard burst; frost dust; contained around the target',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP09-104',
+    name: 'Pollen and Spores',
+    displayName: 'Pollen and Spores',
+    styleAnchors: ['Pollen and Spores', 'glowing pollen and spores', 'glowing pollen clouds'],
+    category: '5. Elemental And FX',
+    domain: 'glowing pollen and spores',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, unrequested disaster or event, effect filling the whole scene, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pollen and spores: clouds of fine glowing pollen or spores puffing from the target.',
+      subject_treatment:
+        'Contain the effect on or immediately around the target named in the prompt (object, figure, hand, weapon or surface), keeping the target, its pose and the setting; the effect never becomes a new event or fills the scene: puffs of fine pollen or spores drift from the target.',
+      color_and_tone:
+        'Golden pollen or pale green spores, concentrated around the target while the rest of the scene keeps its palette.',
+      lighting_and_shadow:
+        'Backlight making particles glow, so the effect lights the target and casts believable local light.',
+      texture_and_material:
+        'Fine drifting particle clouds, with physically plausible motion, density and falloff.',
+      camera_and_composition:
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+      atmosphere_and_mood:
+        'Organic, dreamy, alive and strange, coming from the effect rather than added scenery.',
+      rendering_and_quality:
+        'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pollen and Spores as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'glowing pollen clouds; drifting spores; contained around the target',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP09-105',
+    name: 'Shadow Tendrils',
+    displayName: 'Shadow Tendrils',
+    styleAnchors: ['Shadow Tendrils', 'shadow tendrils', 'black shadow tendrils'],
+    category: '5. Elemental And FX',
+    domain: 'shadow tendrils',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, unrequested disaster or event, effect filling the whole scene, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Shadow tendrils: black smoky tendrils reaching out from the target.',
+      subject_treatment:
+        'Contain the effect on or immediately around the target named in the prompt (object, figure, hand, weapon or surface), keeping the target, its pose and the setting; the effect never becomes a new event or fills the scene: dark tendrils reach from the target like living smoke.',
+      color_and_tone:
+        'Deep black with violet edges, concentrated around the target while the rest of the scene keeps its palette.',
+      lighting_and_shadow:
+        'Contrast light making tendrils read, so the effect lights the target and casts believable local light.',
+      texture_and_material:
+        'Smoky tendrils with soft edges, with physically plausible motion, density and falloff.',
+      camera_and_composition:
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+      atmosphere_and_mood:
+        'Ominous, dark, supernatural and creeping, coming from the effect rather than added scenery.',
+      rendering_and_quality:
+        'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Shadow Tendrils as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'black shadow tendrils; violet edges; contained around the target',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP09-106',
+    name: 'Sandstorm Veil',
+    displayName: 'Sandstorm Veil',
+    styleAnchors: ['Sandstorm Veil', 'swirling sand veil', 'spiraling sand veil'],
+    category: '5. Elemental And FX',
+    domain: 'swirling sand veil',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, unrequested disaster or event, effect filling the whole scene, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Sandstorm veil: a tight swirl of sand spiraling around the target.',
+      subject_treatment:
+        'Contain the effect on or immediately around the target named in the prompt (object, figure, hand, weapon or surface), keeping the target, its pose and the setting; the effect never becomes a new event or fills the scene: a tight spiral of blowing sand wraps around the target.',
+      color_and_tone:
+        'Ochre and tan sand, concentrated around the target while the rest of the scene keeps its palette.',
+      lighting_and_shadow:
+        'Warm light filtering through sand, so the effect lights the target and casts believable local light.',
+      texture_and_material:
+        'Blowing sand grains in spiral motion, with physically plausible motion, density and falloff.',
+      camera_and_composition:
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+      atmosphere_and_mood:
+        'Harsh, mysterious, arid and wild, coming from the effect rather than added scenery.',
+      rendering_and_quality:
+        'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sandstorm Veil as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'spiraling sand veil; blowing grains; contained around the target',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP09-107',
+    name: 'Petal Storm',
+    displayName: 'Petal Storm',
+    styleAnchors: ['Petal Storm', 'swirling flower petals', 'swirling petals'],
+    category: '5. Elemental And FX',
+    domain: 'swirling flower petals',
+    negativePrompt:
+      'material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, unrequested disaster or event, effect filling the whole scene, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic: 'Petal storm: a swirl of flower petals spiraling around the target.',
+      subject_treatment:
+        'Contain the effect on or immediately around the target named in the prompt (object, figure, hand, weapon or surface), keeping the target, its pose and the setting; the effect never becomes a new event or fills the scene: petals swirl in a spiral around the target, some resting on it.',
+      color_and_tone:
+        'Pink, white or crimson petals, concentrated around the target while the rest of the scene keeps its palette.',
+      lighting_and_shadow:
+        'Soft backlight on petals, so the effect lights the target and casts believable local light.',
+      texture_and_material:
+        'Floating petals with motion, with physically plausible motion, density and falloff.',
+      camera_and_composition:
+        'Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.',
+      atmosphere_and_mood:
+        'Romantic, graceful, fleeting and poetic, coming from the effect rather than added scenery.',
+      rendering_and_quality:
+        'Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Petal Storm as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features: 'swirling petals; spiral motion; contained around the target',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

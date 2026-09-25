@@ -3,7 +3,7 @@
     {
       "id": "pack_09",
       "name": "Texture & Materiality",
-      "presetCount": 99
+      "presetCount": 107
     }
   ],
   "presets": [
@@ -1232,7 +1232,119 @@
       "tags": ["texture-and-materiality", "elemental-and-fx"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp09-067 snow (powder) 5. elemental and fx elemental effects pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
+    },
+    {
+      "id": "SP09-100",
+      "name": "Ember Drift",
+      "styleAnchors": ["Ember Drift", "drifting ember particles", "rising embers"],
+      "ref": "pack_09/SP09-100.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "elemental-and-fx",
+      "categoryName": "5. Elemental And FX",
+      "domain": "drifting ember particles",
+      "tags": ["texture-and-materiality", "elemental-and-fx", "drifting-ember-particles"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-100 ember drift drifting ember particles rising embers 5. elemental and fx elemental effects drifting ember particles pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx drifting-ember-particles"
+    },
+    {
+      "id": "SP09-101",
+      "name": "Ink Cloud in Water",
+      "styleAnchors": ["Ink Cloud in Water", "ink diffusion in water", "billowing ink plumes"],
+      "ref": "pack_09/SP09-101.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "elemental-and-fx",
+      "categoryName": "5. Elemental And FX",
+      "domain": "ink diffusion in water",
+      "tags": ["texture-and-materiality", "elemental-and-fx", "ink-diffusion-in-water"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-101 ink cloud in water ink diffusion in water billowing ink plumes 5. elemental and fx elemental effects ink diffusion in water pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx ink-diffusion-in-water"
+    },
+    {
+      "id": "SP09-102",
+      "name": "Aurora Ribbons",
+      "styleAnchors": ["Aurora Ribbons", "aurora light ribbons", "aurora light ribbons"],
+      "ref": "pack_09/SP09-102.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "elemental-and-fx",
+      "categoryName": "5. Elemental And FX",
+      "domain": "aurora light ribbons",
+      "tags": ["texture-and-materiality", "elemental-and-fx", "aurora-light-ribbons"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-102 aurora ribbons aurora light ribbons 5. elemental and fx elemental effects aurora light ribbons pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx aurora-light-ribbons"
+    },
+    {
+      "id": "SP09-103",
+      "name": "Ice Shard Burst",
+      "styleAnchors": ["Ice Shard Burst", "ice shard explosion", "ice shard burst"],
+      "ref": "pack_09/SP09-103.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "elemental-and-fx",
+      "categoryName": "5. Elemental And FX",
+      "domain": "ice shard explosion",
+      "tags": ["texture-and-materiality", "elemental-and-fx", "ice-shard-explosion"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-103 ice shard burst ice shard explosion ice shard burst 5. elemental and fx elemental effects ice shard explosion pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx ice-shard-explosion"
+    },
+    {
+      "id": "SP09-104",
+      "name": "Pollen and Spores",
+      "styleAnchors": ["Pollen and Spores", "glowing pollen and spores", "glowing pollen clouds"],
+      "ref": "pack_09/SP09-104.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "elemental-and-fx",
+      "categoryName": "5. Elemental And FX",
+      "domain": "glowing pollen and spores",
+      "tags": ["texture-and-materiality", "elemental-and-fx", "glowing-pollen-and-spores"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-104 pollen and spores glowing pollen and spores glowing pollen clouds 5. elemental and fx elemental effects glowing pollen and spores pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx glowing-pollen-and-spores"
+    },
+    {
+      "id": "SP09-105",
+      "name": "Shadow Tendrils",
+      "styleAnchors": ["Shadow Tendrils", "shadow tendrils", "black shadow tendrils"],
+      "ref": "pack_09/SP09-105.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "elemental-and-fx",
+      "categoryName": "5. Elemental And FX",
+      "domain": "shadow tendrils",
+      "tags": ["texture-and-materiality", "elemental-and-fx", "shadow-tendrils"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-105 shadow tendrils shadow tendrils black shadow tendrils 5. elemental and fx elemental effects shadow tendrils pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx shadow-tendrils"
+    },
+    {
+      "id": "SP09-106",
+      "name": "Sandstorm Veil",
+      "styleAnchors": ["Sandstorm Veil", "swirling sand veil", "spiraling sand veil"],
+      "ref": "pack_09/SP09-106.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "elemental-and-fx",
+      "categoryName": "5. Elemental And FX",
+      "domain": "swirling sand veil",
+      "tags": ["texture-and-materiality", "elemental-and-fx", "swirling-sand-veil"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-106 sandstorm veil swirling sand veil spiraling sand veil 5. elemental and fx elemental effects swirling sand veil pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx swirling-sand-veil"
+    },
+    {
+      "id": "SP09-107",
+      "name": "Petal Storm",
+      "styleAnchors": ["Petal Storm", "swirling flower petals", "swirling petals"],
+      "ref": "pack_09/SP09-107.yaml",
+      "packId": "pack_09",
+      "packName": "Texture & Materiality",
+      "categoryId": "elemental-and-fx",
+      "categoryName": "5. Elemental And FX",
+      "domain": "swirling flower petals",
+      "tags": ["texture-and-materiality", "elemental-and-fx", "swirling-flower-petals"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp09-107 petal storm swirling flower petals swirling petals 5. elemental and fx elemental effects swirling flower petals pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx swirling-flower-petals"
     }
   ],
-  "totalPresetCount": 99
+  "totalPresetCount": 107
 }

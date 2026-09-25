@@ -108,7 +108,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
       'A deep dive into realistic materials, surfaces, and elemental effects, perfect for 3D artists and texture generation.',
     cardTitle: 'Texture Material',
     cardDescription: 'Materials, surfaces, texture, wear, procedural FX.',
-    presetCount: 99,
+    presetCount: 107,
   },
   {
     id: 'pack_10',

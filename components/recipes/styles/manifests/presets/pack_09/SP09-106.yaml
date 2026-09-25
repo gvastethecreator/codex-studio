@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP09-106
+packId: pack_09
+name: Sandstorm Veil
+styleAnchors:
+  - Sandstorm Veil
+  - swirling sand veil
+  - spiraling sand veil
+displayName: Sandstorm Veil
+category: 5. Elemental And FX
+domain: swirling sand veil
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+  - sand
+  - swirl
+  - elemental
+visualDna:
+  aesthetic: 'Sandstorm veil: a tight swirl of sand spiraling around the target.'
+  subject_treatment: 'Contain the effect on or immediately around the target named in the prompt (object, figure, hand, weapon or surface), keeping the target, its pose and the setting; the effect never becomes a new event or fills the scene: a tight spiral of blowing sand wraps around the target.'
+  color_and_tone: Ochre and tan sand, concentrated around the target while the rest of the scene keeps its palette.
+  lighting_and_shadow: Warm light filtering through sand, so the effect lights the target and casts believable local light.
+  texture_and_material: Blowing sand grains in spiral motion, with physically plausible motion, density and falloff.
+  camera_and_composition: Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.
+  atmosphere_and_mood: Harsh, mysterious, arid and wild, coming from the effect rather than added scenery.
+  rendering_and_quality: Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sandstorm Veil as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: spiraling sand veil; blowing grains; contained around the target
+avoidRules:
+  - material applied to the background instead of the target
+  - unrequested sample object or habitat
+  - readable text
+  - logo
+  - muddy noisy texture
+  - unrequested disaster or event
+  - effect filling the whole scene
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, unrequested disaster or event, effect filling the whole scene, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_09
+  packName: Texture & Materiality
+  categoryId: elemental-and-fx
+  categoryName: 5. Elemental And FX
+  tags:
+    - texture-and-materiality
+    - elemental-and-fx
+    - sand
+    - swirl
+    - elemental
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: swirling sand veil

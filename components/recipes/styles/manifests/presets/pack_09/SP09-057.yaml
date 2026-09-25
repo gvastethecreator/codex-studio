@@ -3,7 +3,7 @@ id: SP09-057
 packId: pack_09
 name: Oil on Water
 category: 5. Elemental And FX
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,58 +12,39 @@ tags:
   - texture-and-materiality
   - elemental-and-fx
 visualDna:
-  aesthetic: >-
-    Oil on Water behaves like a controlled elemental effect layer: start from Puddle rainbow,
-    Liquid, and Fluid, then turn motion, temperature, particles, translucency, refraction, glow, and
-    transient energy behavior into portable surface behavior rather than a literal material sample.
-  subject_treatment: >-
-    Transform any prompt subject through Swirls: preserve identity and pose while letting forms
-    emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup,
-    thickness, contact marks, and detail scale.
-  color_and_tone: >-
-    Use Thin film interference as the material palette, with controlled value separation, local
-    color variation, and hue shifts that follow the subject's form rather than flattening it into a
-    pasted texture.
-  lighting_and_shadow: >-
-    Let Reflective define the light response: highlights, occlusion, translucency, specular scatter,
-    matte falloff, or rim behavior should reveal Oil on Water without hiding the prompt subject.
-  texture_and_material: >-
-    Render Liquid through flow direction, particle density, turbulence, glow falloff, splashes,
-    trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface
-    tension coherent across the whole image.
-  camera_and_composition: >-
-    Compose around Fluid as reusable material rhythm: macro-friendly for texture tasks, but able to
-    wrap objects, figures, environments, and props without forcing one sample view.
-  atmosphere_and_mood: >-
-    Keep the mood Dirty but pretty by using movement, danger, spectacle, instability, temperature,
-    and sensory intensity; the material should color the scene's feeling while preserving the user's
-    requested subject and setting.
-  rendering_and_quality: >-
-    Finish with Iridescent, fluid material clarity: physically coherent reflectance, clean contact
-    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
-    overlay.
-  key_features: Puddle rainbow; Swirls; Liquid; Reflective; Fluid
-  creative_brief: >-
-    Route any subject through Oil on Water as a transferable elemental/FX visual system while
-    preserving the prompt's subject, action, and setting. Compose oil-on-water interference as fluid
-    color behavior over the input: thin-film rainbow swirls, magenta-cyan-gold calligraphy, dark
-    liquid underlayer, and mesmerizing surface contamination. If puddle, water, street, or
-    industrial context exists, reinforce it; otherwise use iridescent film as abstract overlay
-    without forcing parking lot or gutter. Use Oil on Water as portable surface/render behavior over
-    any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto
-    the subject instead of requiring a literal material sample, macro tile, wall, landscape, source
-    object, or scene where the material naturally appears.
+  aesthetic: 'Oil on water: iridescent oil film swirling over water around the target.'
+  subject_treatment: 'Contain the effect on or immediately around the target named in the prompt (object, figure, hand, weapon or surface), keeping the target, its pose and the setting; the effect never becomes a new event or fills the scene: rainbow oil-film swirls spread on water around the target.'
+  color_and_tone: Iridescent rainbow film over dark water, concentrated around the target while the rest of the scene keeps its palette.
+  lighting_and_shadow: Soft light for thin-film iridescence, so the effect lights the target and casts believable local light.
+  texture_and_material: Thin oil film with swirling interference colors, with physically plausible motion, density and falloff.
+  camera_and_composition: Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.
+  atmosphere_and_mood: Toxic, beautiful, eerie and slick, coming from the effect rather than added scenery.
+  rendering_and_quality: Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.
+  key_features: iridescent oil swirls; thin-film color; contained around the target
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Oil on Water as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - material applied to the background instead of the target
+  - unrequested sample object or habitat
+  - readable text
+  - logo
+  - muddy noisy texture
+  - unrequested disaster or event
+  - effect filling the whole scene
   - clean water
   - wrong material
   - generic stock texture
   - muddy noise
   - watermark
-  - readable text
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-057.webp
 attributes:
-  negativePrompt: clean water, wrong material, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, unrequested disaster or event, effect filling the whole scene, clean water, wrong material, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

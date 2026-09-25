@@ -119,6 +119,14 @@ categories:
       - pack_09/SP09-061.yaml
       - pack_09/SP09-062.yaml
       - pack_09/SP09-067.yaml
+      - pack_09/SP09-100.yaml
+      - pack_09/SP09-101.yaml
+      - pack_09/SP09-102.yaml
+      - pack_09/SP09-103.yaml
+      - pack_09/SP09-104.yaml
+      - pack_09/SP09-105.yaml
+      - pack_09/SP09-106.yaml
+      - pack_09/SP09-107.yaml
 presetRefs:
   - pack_09/SP09-001.yaml
   - pack_09/SP09-002.yaml
@@ -219,3 +227,11 @@ presetRefs:
   - pack_09/SP09-061.yaml
   - pack_09/SP09-062.yaml
   - pack_09/SP09-067.yaml
+  - pack_09/SP09-100.yaml
+  - pack_09/SP09-101.yaml
+  - pack_09/SP09-102.yaml
+  - pack_09/SP09-103.yaml
+  - pack_09/SP09-104.yaml
+  - pack_09/SP09-105.yaml
+  - pack_09/SP09-106.yaml
+  - pack_09/SP09-107.yaml

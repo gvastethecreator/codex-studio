@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP09-100
+packId: pack_09
+name: Ember Drift
+styleAnchors:
+  - Ember Drift
+  - drifting ember particles
+  - rising embers
+displayName: Ember Drift
+category: 5. Elemental And FX
+domain: drifting ember particles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - texture-and-materiality
+  - elemental-and-fx
+  - embers
+  - particles
+  - elemental
+visualDna:
+  aesthetic: 'Ember drift: glowing embers rising and drifting slowly from the target.'
+  subject_treatment: 'Contain the effect on or immediately around the target named in the prompt (object, figure, hand, weapon or surface), keeping the target, its pose and the setting; the effect never becomes a new event or fills the scene: glowing embers rise from the target and drift upward.'
+  color_and_tone: Orange and gold embers against dark, concentrated around the target while the rest of the scene keeps its palette.
+  lighting_and_shadow: Embers casting tiny warm lights, so the effect lights the target and casts believable local light.
+  texture_and_material: Glowing ember particles with trails, with physically plausible motion, density and falloff.
+  camera_and_composition: Keep the prompt framing; place the effect where it interacts with the target so its shape and motion read at card size.
+  atmosphere_and_mood: Melancholic, warm, fading and magical, coming from the effect rather than added scenery.
+  rendering_and_quality: Photoreal or cinematic VFX quality with clean edges, readable motion and no noisy haze over the whole frame.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ember Drift as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: rising embers; warm trails; contained around the target
+avoidRules:
+  - material applied to the background instead of the target
+  - unrequested sample object or habitat
+  - readable text
+  - logo
+  - muddy noisy texture
+  - unrequested disaster or event
+  - effect filling the whole scene
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: material applied to the background instead of the target, unrequested sample object or habitat, readable text, logo, muddy noisy texture, unrequested disaster or event, effect filling the whole scene, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_09
+  packName: Texture & Materiality
+  categoryId: elemental-and-fx
+  categoryName: 5. Elemental And FX
+  tags:
+    - texture-and-materiality
+    - elemental-and-fx
+    - embers
+    - particles
+    - elemental
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: drifting ember particles

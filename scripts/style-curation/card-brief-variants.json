@@ -3852,8 +3852,8 @@
     "Crystal-grown architecture applied to a municipal water tower: tank, legs and ladder kept, but grown from clustered hexagonal quartz prisms, the water visible glowing inside the translucent tank. No text or logo."
   ],
   "SP07-059": [
-    "Earth-sheltered pastoral architecture: a cider cellar dug under an apple orchard, its round door flanked by barrels and lime-plastered walls, fallen apples on the turf roof, seen at dusk. No text or logo.",
-    "Earth-sheltered pastoral architecture applied to a village post office: counter window, parcel shelves and mailbox kept, housed under a turf mound behind a round green door with an adzed oak lintel. No readable text or logo."
+    "Earth-sheltered pastoral architecture in a snowy alpine valley at dusk: a turf-roofed cheese cellar dug into the hillside, round door of banded iron and weathered larch, lanterns on either side, snow piled on the mound. No green doors or brass knobs. No text or logo.",
+    "Earth-sheltered pastoral architecture in a red desert: a bermed caravanserai of adobe mounds with round wooden doors under painted arches, date palms on top, long evening shadows. No green doors or English cottage details. No readable text or logo."
   ],
   "SP07-060": [
     "Cartoon haunted architecture: a squashed and twisting windmill in a thunderstorm, its sails bent like rubber, lightning frozen in flat lime, seen from a steep low angle. No text or logo.",
@@ -3861,11 +3861,11 @@
   ],
   "SP07-061": [
     "Glacial ice architecture: an ice harbour gate between two frozen headlands with ships locked in the sea ice below, trapped bubble streams visible in its columns, long blue shadows across the snow. No text or logo.",
-    "Glacial ice architecture applied to a football stadium: stands, floodlight masts and pitch kept, the whole bowl carved from clear and blue ice with faceted buttresses behind the stands. No readable signage or logo."
+    "Glacial ice architecture applied to a covered market hall: stalls, lanterns and a vaulted roof kept, the whole hall carved from clear and blue glacier ice with faceted buttresses and frost on every beam, merchants in furs. No readable signage or logo."
   ],
   "SP07-062": [
-    "Canopy rope vernacular: a night watch post in the crown of a huge tree at dusk, seen from far below between trunks, a single woven hut swaying on catenary ropes above a sea of dark leaves. No text or logo.",
-    "Canopy rope vernacular applied to a small village bakery: oven, counter and bread racks kept, built on a lashed platform between two trunks with woven walls and a rope-hung delivery basket. No readable signage or logo."
+    "Canopy rope vernacular at dusk: a lookout hut of woven reeds hanging on catenary ropes in the crown of a giant tree, lanterns glowing, seen from far below between huge trunks. No text or logo.",
+    "Canopy rope vernacular applied to a small bakery: oven, counter and bread racks kept, built on a lashed platform between two trunks with woven walls and a rope-hung basket lowering loaves to the ground. No readable signage or logo."
   ],
   "SP07-063": [
     "Sepulchral civic monumentalism: an avenue of mausoleum-like ministries receding in rain, identical black facades repeating to a vanishing point, pale green glow behind narrow slit windows. No text or logo.",
@@ -4910,5 +4910,85 @@
   "SP09-099": [
     "Photograph of a pebbled leather dragon. No text or logo.",
     "Photograph of a pebbled leather throne. No text or logo."
+  ],
+  "SP09-043": [
+    "Photograph of a crown oozing violet slime on a velvet cushion. No text or logo.",
+    "Photograph of a hand pulling slime strands from a treasure chest. No text or logo."
+  ],
+  "SP09-051": [
+    "Photograph of a stone golem fist with glowing magma veins. No text or logo.",
+    "Photograph of a magma-cracked egg in a nest of ash. No text or logo."
+  ],
+  "SP09-052": [
+    "Photograph of a violin with electric arcs jumping between its strings. No text or logo.",
+    "Photograph of a raven with lightning crawling across its feathers. No text or logo."
+  ],
+  "SP09-053": [
+    "Photograph of a teapot pouring smoke instead of tea. No text or logo.",
+    "Photograph of a crown wrapped in slow grey smoke. No text or logo."
+  ],
+  "SP09-054": [
+    "Photograph of a crown dropped into a bowl, water splash frozen. No text or logo.",
+    "Photograph of a horse's hoof hitting a puddle, splash frozen. No text or logo."
+  ],
+  "SP09-056": [
+    "Photograph of a staff tip glowing with cyan plasma filaments. No text or logo.",
+    "Photograph of a knight's visor leaking magenta energy. No text or logo."
+  ],
+  "SP09-057": [
+    "Photograph of a rowboat in rainbow oil-film water. No text or logo.",
+    "Photograph of a swan swimming through oil-film swirls. No text or logo."
+  ],
+  "SP09-058": [
+    "Photograph of sparks trailing from a dragon's claws on stone. No text or logo.",
+    "Photograph of sparks fountaining from a knight's shield hit by a blade. No text or logo."
+  ],
+  "SP09-059": [
+    "Photograph of a dragon exhaling a stream of soap bubbles. No text or logo.",
+    "Photograph of a crown with bubbles clinging to it. No text or logo."
+  ],
+  "SP09-061": [
+    "Photograph of a coffin with fog pouring from under its lid. No text or logo.",
+    "Photograph of a throne with fog flowing down its steps. No text or logo."
+  ],
+  "SP09-062": [
+    "Photograph of a skeleton wearing a party hat in a confetti shower. No text or logo.",
+    "Photograph of a dragon sneezing confetti. No text or logo."
+  ],
+  "SP09-067": [
+    "Photograph of a snow-dusted crown on a stone. No text or logo.",
+    "Photograph of a piano with snow drifting on its lid. No text or logo."
+  ],
+  "SP09-100": [
+    "Photograph of a fallen knight's cloak smoldering with embers. No text or logo.",
+    "Photograph of a phoenix feather shedding embers. No text or logo."
+  ],
+  "SP09-101": [
+    "Photograph of a crown sinking and trailing crimson ink. No text or logo.",
+    "Photograph of a quill releasing indigo ink clouds underwater. No text or logo."
+  ],
+  "SP09-102": [
+    "Photograph of a knight's sword wrapped in violet aurora light. No text or logo.",
+    "Photograph of a lantern emitting aurora ribbons. No text or logo."
+  ],
+  "SP09-103": [
+    "Photograph of an ice burst from a staff tip. No text or logo.",
+    "Photograph of a stone floor bursting with ice shards under a boot. No text or logo."
+  ],
+  "SP09-104": [
+    "Photograph of a flower-shaped lantern puffing golden pollen. No text or logo.",
+    "Photograph of a deer shaking spores from its antlers. No text or logo."
+  ],
+  "SP09-105": [
+    "Photograph of a knight's cloak dissolving into reaching shadow tendrils. No text or logo.",
+    "Photograph of a mirror with shadow tendrils creeping out. No text or logo."
+  ],
+  "SP09-106": [
+    "Photograph of a nomad's lantern inside a sand swirl. No text or logo.",
+    "Photograph of a camel skull with sand spiraling around it. No text or logo."
+  ],
+  "SP09-107": [
+    "Photograph of a sword thrust through a spiral of crimson petals. No text or logo.",
+    "Photograph of a white horse in a petal storm. No text or logo."
   ]
 }
