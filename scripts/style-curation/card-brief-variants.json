@@ -1422,5 +1422,85 @@
   "SP03-097": [
     "CGI amber study of a chess queen made of cognac-colored resin with a dried rose inside. No text or logo.",
     "CGI amber study of a hand mirror frame in honey amber with small bubbles and flow lines. No text or logo."
+  ],
+  "SP03-031": [
+    "CGI global illumination render of a white spiral staircase inside a lighthouse tower, sunlight bouncing down floor after floor. No text or logo.",
+    "CGI global illumination render of a red-lacquered tea room, the crimson walls bleeding color onto the white paper lanterns and floor mats. No text or logo."
+  ],
+  "SP03-032": [
+    "CGI volumetric fog render of a forest path lit by a single lantern hanging from a branch, the light cone full of drifting wisps. No text or logo.",
+    "CGI volumetric fog render of a shipyard at night, floodlights carving cones through the mist around a half-built hull. No text or logo."
+  ],
+  "SP03-034": [
+    "CGI three-point lit render of a leather-bound adventurer's satchel with buckles, clean separation from the background. No text or logo.",
+    "CGI three-point lit render of a carved wooden chess rook, back light tracing its crenellations. No text or logo."
+  ],
+  "SP03-035": [
+    "CGI render of a glass-and-brass orrery lit by an overcast courtyard HDRI, soft grey light and window reflections. No text or logo.",
+    "CGI render of a lacquered music box lit by a tungsten interior HDRI, lamp hotspots in its black lacquer. No text or logo."
+  ],
+  "SP03-037": [
+    "Ambient occlusion pass of a gothic stone tracery window, darkness pooling in every carved recess. No text or logo.",
+    "Ambient occlusion pass of a bowl of stacked seashells, occlusion gathering inside each spiral. No text or logo."
+  ],
+  "SP03-038": [
+    "CGI rim-light render of a crow with spread wings, cyan edge light on every feather tip. No text or logo.",
+    "CGI rim-light render of a twisted iron candelabra, white rim lines along its curls against black. No text or logo."
+  ],
+  "SP03-041": [
+    "CGI render of a treasure vault seen through a cracked door, a blade of light crossing piles of coins. No text or logo.",
+    "CGI render of a sunken ship interior underwater, beams through broken hull planks. No text or logo."
+  ],
+  "SP03-042": [
+    "CGI diorama-lit render of a mountain monastery on a crag with flocked moss, a soft overhead key and warm lantern dots. No text or logo.",
+    "CGI diorama-lit render of a snowy crossroads inn with a tiny glowing sign shape without letters and footprints in plaster snow. No text or logo."
+  ],
+  "SP03-098": [
+    "CGI render of a sleek motorcycle in a dark garage lit only by a ring of orange emissive tubes. No text or logo.",
+    "CGI render of a crystal forest cave lit only by glowing pink crystals. No text or logo."
+  ],
+  "SP03-099": [
+    "CGI render of a modern crypt corridor with uplights grazing rough stone columns. No text or logo.",
+    "CGI render of a wine cellar vault with warm cone pools falling on the barrel ends. No text or logo."
+  ],
+  "SP03-100": [
+    "CGI render of a desert obelisk at noon under a physical sky, deep blue overhead and pale near the horizon. No text or logo.",
+    "CGI render of a windmill on a plain just after sunset, pink scattering band above the horizon. No text or logo."
+  ],
+  "SP03-101": [
+    "CGI render of a sailing ship on open sea beneath dark cloud cores with a single gap spilling light onto the waves. No text or logo.",
+    "CGI render of a walled city on a plain with patchy sunlight from gaps in billowing cumulus. No text or logo."
+  ],
+  "SP03-102": [
+    "CGI render of an armchair and side table with leaf-pattern light falling over them from an unseen tree. No text or logo.",
+    "CGI render of a bronze bust with prison-bar stripes of light across its face. No text or logo."
+  ],
+  "SP03-103": [
+    "CGI render of a white ballerina figurine on a stage floor with three colored shadows spreading behind her. No text or logo.",
+    "CGI render of a white paper crane with rainbow-colored shadows overlapping on a wall. No text or logo."
+  ],
+  "SP03-104": [
+    "CGI render of a stack of books and an apple with banded light and a warm orange terminator. No readable titles or logo.",
+    "CGI render of a sleeping fox with three flat light bands across its fur. No text or logo."
+  ],
+  "SP03-105": [
+    "CGI render of a wooden fishing boat pulled up on a pebble beach under a flat grey sky. No text or logo.",
+    "CGI render of a moss-covered statue in a quiet garden, evenly lit with no sun. No text or logo."
+  ],
+  "SP03-106": [
+    "CGI render of a stone well in a village square at noon, a black disc of shadow under its roof. No text or logo.",
+    "CGI render of a lone camel standing still at midday with its shadow pooled under its belly. No text or logo."
+  ],
+  "SP03-107": [
+    "CGI render of a chess board laid on a floodlit field, each giant piece with radiating shadows. No text or logo.",
+    "CGI render of a single oak tree in a floodlit courtyard, its shadow split into five. No text or logo."
+  ],
+  "SP03-108": [
+    "CGI render of a frozen waterfall under a pink-fringed aurora, soft colored light on the ice. No text or logo.",
+    "CGI render of a sled and dog team resting on a snowfield under a green sky. No text or logo."
+  ],
+  "SP03-109": [
+    "CGI render of a watchtower on a hill during an eclipse, crows frozen in the indigo sky. No text or logo.",
+    "CGI render of a harbor full of still boats under an eclipse, the horizon glowing like sunset in every direction. No text or logo."
   ]
 }

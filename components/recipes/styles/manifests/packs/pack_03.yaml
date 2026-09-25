@@ -62,6 +62,18 @@ categories:
       - pack_03/SP03-038.yaml
       - pack_03/SP03-041.yaml
       - pack_03/SP03-042.yaml
+      - pack_03/SP03-098.yaml
+      - pack_03/SP03-099.yaml
+      - pack_03/SP03-100.yaml
+      - pack_03/SP03-101.yaml
+      - pack_03/SP03-102.yaml
+      - pack_03/SP03-103.yaml
+      - pack_03/SP03-104.yaml
+      - pack_03/SP03-105.yaml
+      - pack_03/SP03-106.yaml
+      - pack_03/SP03-107.yaml
+      - pack_03/SP03-108.yaml
+      - pack_03/SP03-109.yaml
   - id: 3d-styles
     name: 4. 3D Styles
     presetRefs:
@@ -175,6 +187,18 @@ presetRefs:
   - pack_03/SP03-038.yaml
   - pack_03/SP03-041.yaml
   - pack_03/SP03-042.yaml
+  - pack_03/SP03-098.yaml
+  - pack_03/SP03-099.yaml
+  - pack_03/SP03-100.yaml
+  - pack_03/SP03-101.yaml
+  - pack_03/SP03-102.yaml
+  - pack_03/SP03-103.yaml
+  - pack_03/SP03-104.yaml
+  - pack_03/SP03-105.yaml
+  - pack_03/SP03-106.yaml
+  - pack_03/SP03-107.yaml
+  - pack_03/SP03-108.yaml
+  - pack_03/SP03-109.yaml
   - pack_03/SP03-015.yaml
   - pack_03/SP03-021.yaml
   - pack_03/SP03-022.yaml

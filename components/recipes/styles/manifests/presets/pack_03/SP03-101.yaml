@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP03-101
+packId: pack_03
+name: Volumetric Cloud Silver Lining
+styleAnchors:
+  - Volumetric Cloud Silver Lining
+  - volumetric cloud lighting
+  - silver-lined cloud edges
+displayName: Volumetric Cloud Silver Lining
+category: 3. Lighting And Atmosphere
+domain: volumetric cloud lighting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - lighting-and-atmosphere
+  - volumetric-clouds
+  - silver-lining
+  - cgi-lighting
+visualDna:
+  aesthetic: 'Volumetric cloud lighting: rendered clouds with dense cores and backlit edges glowing silver, casting moving shadows across the land.'
+  subject_treatment: Keep the prompt subject, geometry and camera; the sky above the existing setting becomes rendered volumetric clouds that shape the light.
+  color_and_tone: Dark blue-grey cloud cores, silver and gold edges, patchy sunlit ground.
+  lighting_and_shadow: Sun behind clouds; bright silver linings, crepuscular gaps, cloud shadows on the ground.
+  texture_and_material: Billowing cumulus detail, wispy edges, sun breaking through holes.
+  camera_and_composition: Keep the requested framing; a slice of sky and the shadowed ground.
+  atmosphere_and_mood: Dramatic and changing, weather deciding what is lit.
+  rendering_and_quality: High-detail volumetric clouds with fine wisps and no blocky noise.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Volumetric Cloud Silver Lining as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: silver-lined cloud edges; dark cores; cloud shadows on the ground; sun through gaps; billowing detail
+avoidRules:
+  - changing the geometry
+  - adding a new environment
+  - adding fog the preset does not own
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: lighting-and-atmosphere
+  categoryName: 3. Lighting And Atmosphere
+  tags:
+    - 3d-and-cgi-rendering
+    - lighting-and-atmosphere
+    - volumetric-clouds
+    - silver-lining
+    - cgi-lighting
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: volumetric cloud lighting

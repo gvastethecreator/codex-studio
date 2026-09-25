@@ -8,28 +8,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Global Illumination',
     category: '3. Lighting And Atmosphere',
     negativePrompt:
-      'direct flash, harsh shadows, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, flat lighting, random glow overlay, crushed black, no shadow logic',
+      'changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, direct flash, harsh shadows, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, flat lighting, random glow overlay, crushed black, no shadow logic, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Global Illumination acts as a transferable CGI-style router: start from Soft bounced light, Soft shadows, indirect fill and lighting and atmosphere system built from transport passes, volumetric density, bounce logic, occlusion, rim separation, and miniature scale cues, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Global illumination lighting: light bouncing between surfaces so shadows fill softly and colors bleed from one surface to the next.',
       subject_treatment:
-        'Transform any prompt subject through Color bleeding; preserve the prompt subject while letting light, fog, occlusion, HDRI, or atmosphere define silhouette and spatial depth, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, geometry, setting and camera unchanged; replace only the CGI lighting setup and its render behavior, without adding a new environment.',
       color_and_tone:
-        'Build color with Natural gradients, color bleed realism; treat color as light temperature, atmospheric scattering, indirect bounce, fog color, HDRI influence, and exposure-managed contrast, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Natural gradients, warm or cool bounce tinting nearby surfaces, gentle contrast.',
       lighting_and_shadow:
-        'Handle light through Ambient occlusion, bounce card lighting; make the named light behavior visible through beams, bounced fill, contact shadows, edge halos, volume density, or three-point separation, so value structure supports the renderer and does not overwrite the requested content.',
+        'One main source plus multiple indirect bounces; open soft shadows, darkening only in tight corners.',
       texture_and_material:
-        'Render Soft, light responsive; surface response should reveal air particles, shadow contact, glossy reflections, haze thickness, scale cues, and render-pass clarity, keeping material scale coherent and avoiding noisy filler texture.',
+        'Materials read clearly in both lit and bounced areas; no crushed blacks.',
       camera_and_composition:
-        'Structure the image through Lighting study camera for Global Illumination: stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline; compose around the light event through depth layers, contact points, miniature isolation, rim edges, or atmospheric shafts without forcing a fixed locale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Calm, realistic, naturally lit; derive mood from realism, wonder, product polish, sacred glow, softness, technical pass clarity, or spatial immersion, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested framing; interiors and enclosed spaces show the bounce best.',
+      atmosphere_and_mood: 'Calm and natural, a space breathing with soft reflected light.',
       rendering_and_quality:
-        'Finish with Realistic, architectural, path trace beauty; finish with controlled exposure, clean shadow gradients, believable atmosphere, and no random glow or crushed darkness, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Fully converged multi-bounce render, never a flat constant ambient fill.',
       key_features:
-        'Soft bounced light; Soft shadows, indirect fill; Natural gradients, color bleed realism; Soft, light responsive; Lighting study camera for Global Illumination: stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline',
+        'multi-bounce indirect light; color bleeding; soft open shadows; darker tight corners; natural gradients',
       creative_brief:
-        "Apply Global Illumination as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Soft bounced light, Soft shadows, indirect fill, Soft, light responsive without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Global Illumination as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +36,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Volumetric Fog',
     category: '3. Lighting And Atmosphere',
     negativePrompt:
-      'clear, vacuum, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, flat lighting, random glow overlay, crushed black, no shadow logic',
+      'changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, clear, vacuum, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, flat lighting, random glow overlay, crushed black, no shadow logic, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Volumetric Fog acts as a transferable CGI-style router: start from Light beams in air, Light shafts, air density sculpting and lighting and atmosphere system built from transport passes, volumetric density, bounce logic, occlusion, rim separation, and miniature scale cues, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Volumetric fog lighting: participating media fills the scene, so every light becomes a visible cone and depth fades into haze.',
       subject_treatment:
-        'Transform any prompt subject through God rays; preserve the prompt subject while letting light, fog, occlusion, HDRI, or atmosphere define silhouette and spatial depth, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        'Keep the prompt subject, geometry, setting and camera; add a controlled volume of fog in which the existing lights become visible, without inventing new scenery.',
       color_and_tone:
-        'Build color with Hazy, desaturated depth; treat color as light temperature, atmospheric scattering, indirect bounce, fog color, HDRI influence, and exposure-managed contrast, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Desaturated hazy distance, glowing light cones, darker foreground silhouettes.',
       lighting_and_shadow:
-        'Handle light through Scattered light, god ray projection; make the named light behavior visible through beams, bounced fill, contact shadows, edge halos, volume density, or three-point separation, so value structure supports the renderer and does not overwrite the requested content.',
-      texture_and_material:
-        'Render Fog density, volumetric depth; surface response should reveal air particles, shadow contact, glossy reflections, haze thickness, scale cues, and render-pass clarity, keeping material scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Lighting study camera for Volumetric Fog: stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline; compose around the light event through depth layers, contact points, miniature isolation, rim edges, or atmospheric shafts without forcing a fixed locale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Mysterious, epic, volumetric scale; derive mood from realism, wonder, product polish, sacred glow, softness, technical pass clarity, or spatial immersion, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Spot and point lights carving visible cones; objects casting shadow beams through the fog.',
+      texture_and_material: 'Density variation, drifting wisps and noise in the volume.',
+      camera_and_composition: 'Keep the requested framing; layers of depth fading into the fog.',
+      atmosphere_and_mood: 'Mysterious and deep, space measured by fading haze.',
       rendering_and_quality:
-        'Finish with Cinematic, atmospheric, immersive mystery; finish with controlled exposure, clean shadow gradients, believable atmosphere, and no random glow or crushed darkness, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Clean volumetric scattering with smooth density, free of banding or blotches.',
       key_features:
-        'Light beams in air; Light shafts, air density sculpting; Hazy, desaturated depth; Fog density, volumetric depth; Lighting study camera for Volumetric Fog: stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline',
+        'visible light cones; atmospheric depth fade; shadow beams through fog; drifting wisps; silhouetted foreground',
       creative_brief:
-        "Apply Volumetric Fog as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Light beams in air, Light shafts, air density sculpting, Fog density, volumetric depth without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Volumetric Fog as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +62,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Studio Lighting (3 Point)',
     category: '3. Lighting And Atmosphere',
     negativePrompt:
-      'flat, outdoor, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, flat lighting, random glow overlay, crushed black, no shadow logic',
+      'changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, marble bust, flat, outdoor, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, flat lighting, random glow overlay, crushed black, no shadow logic, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Studio Lighting (3 Point) acts as a transferable CGI-style router: start from Perfect product/portrait, Rim light, three point separation and lighting and atmosphere system built from transport passes, volumetric density, bounce logic, occlusion, rim separation, and miniature scale cues, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Three-point CGI lighting rig: a key, a fill and a back light placed around the subject for clean shape, separation and balanced exposure.',
       subject_treatment:
-        'Transform any prompt subject through Key, Fill, Rim; preserve the prompt subject while letting light, fog, occlusion, HDRI, or atmosphere define silhouette and spatial depth, keeping the requested identity, silhouette, pose, object function, or environment legible.',
-      color_and_tone:
-        'Build color with Balanced, broadcast safe; treat color as light temperature, atmospheric scattering, indirect bounce, fog color, HDRI influence, and exposure-managed contrast, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Keep the prompt subject, geometry, setting and camera unchanged; replace only the CGI lighting setup and its render behavior, without adding a new environment.',
+      color_and_tone: 'Neutral balanced color, clean whites and a controlled, moderate contrast.',
       lighting_and_shadow:
-        'Handle light through Controlled, key fill rim triangle; make the named light behavior visible through beams, bounced fill, contact shadows, edge halos, volume density, or three-point separation, so value structure supports the renderer and does not overwrite the requested content.',
+        'Soft key 45 degrees to the side, dimmer fill opposite, bright back light outlining the edge.',
       texture_and_material:
-        'Render Clean, studio perfect; surface response should reveal air particles, shadow contact, glossy reflections, haze thickness, scale cues, and render-pass clarity, keeping material scale coherent and avoiding noisy filler texture.',
+        'Material detail clearly readable on the key side, separated from the background.',
       camera_and_composition:
-        'Structure the image through Lighting study camera for Studio Lighting (3 Point): stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline; compose around the light event through depth layers, contact points, miniature isolation, rim edges, or atmospheric shafts without forcing a fixed locale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Professional, polished confidence; derive mood from realism, wonder, product polish, sacred glow, softness, technical pass clarity, or spatial immersion, letting the renderer alter interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Commercial, professional, portrait ready; finish with controlled exposure, clean shadow gradients, believable atmosphere, and no random glow or crushed darkness, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Keep the requested framing; subject clearly separated from a darker backdrop.',
+      atmosphere_and_mood: 'Clear and professional, the subject presented at its best.',
+      rendering_and_quality: 'Clean studio lighting with no clutter in the light setup.',
       key_features:
-        'Perfect product/portrait; Rim light, three point separation; Balanced, broadcast safe; Clean, studio perfect; Lighting study camera for Studio Lighting (3 Point): stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline',
+        'key, fill and back light; 45-degree key; edge separation; balanced exposure; dark backdrop',
       creative_brief:
-        "Apply Studio Lighting (3 Point) as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Perfect product/portrait, Rim light, three point separation, Clean, studio perfect without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Studio Lighting (3 Point) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +88,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'HDRI Environment',
     category: '3. Lighting And Atmosphere',
     negativePrompt:
-      'studio background, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, flat lighting, random glow overlay, crushed black, no shadow logic',
+      'changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, studio background, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, flat lighting, random glow overlay, crushed black, no shadow logic, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'HDRI Environment acts as a transferable CGI-style router: start from HDRI matched light integration, Matched lighting, reflection authenticity and lighting and atmosphere system built from transport passes, volumetric density, bounce logic, occlusion, rim separation, and miniature scale cues, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'HDRI environment lighting: a captured 360-degree environment lights the subject and appears in every reflection, so light and reflections match a real place.',
       subject_treatment:
-        'Transform any prompt subject through Realistic reflections; preserve the prompt subject while letting light, fog, occlusion, HDRI, or atmosphere define silhouette and spatial depth, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+        "Keep the prompt subject, geometry, setting and camera; light it with an environment map that fits the prompt's setting, visible mainly in reflections, not as a new backdrop.",
       color_and_tone:
-        'Build color with Natural, environment derived; treat color as light temperature, atmospheric scattering, indirect bounce, fog color, HDRI influence, and exposure-managed contrast, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Color and warmth taken from the environment — sunset gold, overcast grey or interior tungsten.',
       lighting_and_shadow:
-        'Handle light through Image based lighting, spherical harmony; make the named light behavior visible through beams, bounced fill, contact shadows, edge halos, volume density, or three-point separation, so value structure supports the renderer and does not overwrite the requested content.',
+        'Soft sky light plus a sun or window hotspot; shadows matching the environment.',
       texture_and_material:
-        'Render Real world reflection, ambient integration; surface response should reveal air particles, shadow contact, glossy reflections, haze thickness, scale cues, and render-pass clarity, keeping material scale coherent and avoiding noisy filler texture.',
+        'Reflective surfaces mirroring the environment with recognizable windows or sky.',
       camera_and_composition:
-        'Structure the image through Lighting study camera for HDRI Environment: stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline; compose around the light event through depth layers, contact points, miniature isolation, rim edges, or atmospheric shafts without forcing a fixed locale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Grounded, location accurate; derive mood from realism, wonder, product polish, sacred glow, softness, technical pass clarity, or spatial immersion, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested framing; glossy surfaces placed to catch the reflections.',
+      atmosphere_and_mood: 'Grounded and believable, the object truly belonging somewhere.',
       rendering_and_quality:
-        'Finish with Photorealistic integration, composited realism; finish with controlled exposure, clean shadow gradients, believable atmosphere, and no random glow or crushed darkness, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Image-based lighting with correct reflections; no mismatched studio look.',
       key_features:
-        'HDRI matched light integration; Matched lighting, reflection authenticity; Natural, environment derived; Real world reflection, ambient integration; Lighting study camera for HDRI Environment: stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline',
+        'image-based lighting; environment in reflections; matched sun hotspot; environment-derived color; grounded shadows',
       creative_brief:
-        "Apply HDRI Environment as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through HDRI matched light integration, Matched lighting, reflection authenticity, Real world reflection, ambient integration without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies HDRI Environment as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,86 +116,81 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ambient Occlusion Pass',
     category: '3. Lighting And Atmosphere',
     negativePrompt:
-      'color, light, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, flat lighting, random glow overlay, crushed black, no shadow logic',
+      'changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, directional shadows, color, light, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, flat lighting, random glow overlay, crushed black, no shadow logic, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Ambient Occlusion Pass acts as a transferable CGI-style router: start from Contact shadows only, Corner shadows, contact darkness and lighting and atmosphere system built from transport passes, volumetric density, bounce logic, occlusion, rim separation, and miniature scale cues, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Ambient occlusion pass: a render where only contact darkness shows — corners, creases and touching surfaces darken while everything else stays near white.',
       subject_treatment:
-        'Transform any prompt subject through Soft gradients in corners; preserve the prompt subject while letting light, fog, occlusion, HDRI, or atmosphere define silhouette and spatial depth, keeping the requested identity, silhouette, pose, object function, or environment legible.',
-      color_and_tone:
-        'Build color with White and Grey, contact depth tones; treat color as light temperature, atmospheric scattering, indirect bounce, fog color, HDRI influence, and exposure-managed contrast, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Keep the prompt subject, geometry, setting and camera unchanged; replace only the CGI lighting setup and its render behavior, without adding a new environment.',
+      color_and_tone: 'White and light grey with soft charcoal gradients in crevices; no color.',
       lighting_and_shadow:
-        'Handle light through Occlusion, uniform ambient skylight; make the named light behavior visible through beams, bounced fill, contact shadows, edge halos, volume density, or three-point separation, so value structure supports the renderer and does not overwrite the requested content.',
+        'Uniform sky with no direction; darkening where surfaces are close to each other.',
       texture_and_material:
-        'Render Clay, matte sculpting base; surface response should reveal air particles, shadow contact, glossy reflections, haze thickness, scale cues, and render-pass clarity, keeping material scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Lighting study camera for Ambient Occlusion Pass: stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline; compose around the light event through depth layers, contact points, miniature isolation, rim edges, or atmospheric shafts without forcing a fixed locale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Neutral, shape focus, pure geometry; derive mood from realism, wonder, product polish, sacred glow, softness, technical pass clarity, or spatial immersion, letting the renderer alter interpretation without demanding a specific story, location, or character.',
-      rendering_and_quality:
-        'Finish with Technical, form study, sculpt review; finish with controlled exposure, clean shadow gradients, believable atmosphere, and no random glow or crushed darkness, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'All materials reduced to matte white; geometric detail read only through occlusion.',
+      camera_and_composition: 'Keep the requested framing; complex geometry shows the effect best.',
+      atmosphere_and_mood: 'Quiet and sculptural, form revealed by where things touch.',
+      rendering_and_quality: 'Clean AO pass without directional shadows or color.',
       key_features:
-        'Contact shadows only; Corner shadows, contact darkness; White and Grey, contact depth tones; Clay, matte sculpting base; Lighting study camera for Ambient Occlusion Pass: stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline',
+        'contact darkness only; white matte surfaces; soft crevice gradients; no light direction; geometry-driven shading',
       creative_brief:
-        "Apply Ambient Occlusion Pass as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Contact shadows only, Corner shadows, contact darkness, Clay, matte sculpting base without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ambient Occlusion Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP03-038',
-    name: 'Rim Lighting',
+    name: 'Rendered Rim Light Rig',
+    displayName: 'Rendered Rim Light Rig',
+    styleAnchors: ['Rendered Rim Light Rig', 'Rim Lighting'],
     category: '3. Lighting And Atmosphere',
     negativePrompt:
-      'front light, flat, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, flat lighting, random glow overlay, crushed black, no shadow logic',
+      'changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, front light, flat, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, flat lighting, random glow overlay, crushed black, no shadow logic, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Rim Lighting acts as a transferable CGI-style router: start from Silhouette with edge glow, Edge highlight, halo definition and lighting and atmosphere system built from transport passes, volumetric density, bounce logic, occlusion, rim separation, and miniature scale cues, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Rendered rim light rig: CGI back lights placed behind the subject so a thin bright edge traces its silhouette against a dark background.',
       subject_treatment:
-        'Transform any prompt subject through Glowing outline; preserve the prompt subject while letting light, fog, occlusion, HDRI, or atmosphere define silhouette and spatial depth, keeping the requested identity, silhouette, pose, object function, or environment legible.',
-      color_and_tone:
-        'Build color with Dark subject, bright edge, silhouette contrast; treat color as light temperature, atmospheric scattering, indirect bounce, fog color, HDRI influence, and exposure-managed contrast, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Keep the prompt subject, geometry, setting and camera unchanged; replace only the CGI lighting setup and its render behavior, without adding a new environment.',
+      color_and_tone: 'Dark subject and background, bright white, gold or cyan edge line.',
       lighting_and_shadow:
-        'Handle light through Backlight, edge rim accent; make the named light behavior visible through beams, bounced fill, contact shadows, edge halos, volume density, or three-point separation, so value structure supports the renderer and does not overwrite the requested content.',
+        'Two strong back lights with barely any front fill; fresnel-bright edges.',
       texture_and_material:
-        'Render Contrast, rim catch surfaces; surface response should reveal air particles, shadow contact, glossy reflections, haze thickness, scale cues, and render-pass clarity, keeping material scale coherent and avoiding noisy filler texture.',
+        'Edges of fur, cloth, metal and hair catching the rim; front surfaces dim.',
       camera_and_composition:
-        'Structure the image through Lighting study camera for Rim Lighting: stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline; compose around the light event through depth layers, contact points, miniature isolation, rim edges, or atmospheric shafts without forcing a fixed locale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Mysterious, epic, cinematic tension; derive mood from realism, wonder, product polish, sacred glow, softness, technical pass clarity, or spatial immersion, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested framing; the silhouette against the darkest area.',
+      atmosphere_and_mood: 'Dramatic and sleek, form drawn with a single line of light.',
       rendering_and_quality:
-        'Finish with Dramatic, moody, hero reveal; finish with controlled exposure, clean shadow gradients, believable atmosphere, and no random glow or crushed darkness, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Clean CG rim with controlled bloom; the cinematic rim light lives in pack_02.',
       key_features:
-        'Silhouette with edge glow; Edge highlight, halo definition; Dark subject, bright edge, silhouette contrast; Contrast, rim catch surfaces; Lighting study camera for Rim Lighting: stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline',
+        'thin bright silhouette edge; dark subject; twin back lights; fresnel edges; controlled bloom',
       creative_brief:
-        "Apply Rim Lighting as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Silhouette with edge glow, Edge highlight, halo definition, Contrast, rim catch surfaces without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rendered Rim Light Rig as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP03-041',
-    name: 'God Rays (Volumetric)',
+    name: 'Rendered Volumetric Shafts',
+    displayName: 'Rendered Volumetric Shafts',
+    styleAnchors: ['Rendered Volumetric Shafts', 'God Rays (Volumetric)'],
     category: '3. Lighting And Atmosphere',
     negativePrompt:
-      'clear, sharp, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, flat lighting, random glow overlay, crushed black, no shadow logic',
+      'changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, clear, sharp, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, flat lighting, random glow overlay, crushed black, no shadow logic, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'God Rays (Volumetric) acts as a transferable CGI-style router: start from Volumetric light shaft rendering, Light beams, atmospheric scattering and lighting and atmosphere system built from transport passes, volumetric density, bounce logic, occlusion, rim separation, and miniature scale cues, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Rendered volumetric shafts: a strong light behind an occluder rendered through a participating medium, producing crisp beams with dust particles.',
       subject_treatment:
-        'Transform any prompt subject through Shafts of light; preserve the prompt subject while letting light, fog, occlusion, HDRI, or atmosphere define silhouette and spatial depth, keeping the requested identity, silhouette, pose, object function, or environment legible.',
-      color_and_tone:
-        'Build color with Warm or Cool beams, gradient shafts; treat color as light temperature, atmospheric scattering, indirect bounce, fog color, HDRI influence, and exposure-managed contrast, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Keep the prompt subject, geometry, setting and camera; add only a light source behind an existing occluder and a thin medium so its beams become visible.',
+      color_and_tone: 'Warm or cool beams against darker surroundings, lifted haze in the shafts.',
       lighting_and_shadow:
-        'Handle light through Directional, atmosphere piercing; make the named light behavior visible through beams, bounced fill, contact shadows, edge halos, volume density, or three-point separation, so value structure supports the renderer and does not overwrite the requested content.',
-      texture_and_material:
-        'Render Dust motes, particulate volume; surface response should reveal air particles, shadow contact, glossy reflections, haze thickness, scale cues, and render-pass clarity, keeping material scale coherent and avoiding noisy filler texture.',
+        'Parallel or radiating shafts with sharp edges, subject cut by light and shadow bands.',
+      texture_and_material: 'Dust particles, sparkling motes, slight noise in the medium.',
       camera_and_composition:
-        'Structure the image through Lighting study camera for God Rays (Volumetric): stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline; compose around the light event through depth layers, contact points, miniature isolation, rim edges, or atmospheric shafts without forcing a fixed locale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Hopeful, grand, transcendent awe; derive mood from realism, wonder, product polish, sacred glow, softness, technical pass clarity, or spatial immersion, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Keep the requested framing; beams crossing diagonally toward the subject.',
+      atmosphere_and_mood: 'Sacred and dramatic, light made solid in the air.',
       rendering_and_quality:
-        'Finish with Epic volumetric scattering, spiritual scale; finish with controlled exposure, clean shadow gradients, believable atmosphere, and no random glow or crushed darkness, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Clean rendered volumes; the photographic and cinematic shafts live in pack_01 and pack_02.',
       key_features:
-        'Volumetric light shaft rendering; Light beams, atmospheric scattering; Warm or Cool beams, gradient shafts; Dust motes, particulate volume; Lighting study camera for God Rays (Volumetric): stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline',
+        'crisp rendered beams; occluder pattern; dust particles; diagonal shafts; lifted haze',
       creative_brief:
-        "Apply God Rays (Volumetric) as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Volumetric light shaft rendering, Light beams, atmospheric scattering, Dust motes, particulate volume without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rendered Volumetric Shafts as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -211,28 +198,434 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Diorama Lighting',
     category: '3. Lighting And Atmosphere',
     negativePrompt:
-      'flat, realistic scale, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, flat lighting, random glow overlay, crushed black, no shadow logic',
+      'changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, flat, realistic scale, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, flat lighting, random glow overlay, crushed black, no shadow logic, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Diorama Lighting acts as a transferable CGI-style router: start from Miniature tilt shift treatment, Miniature, depth of field isolation and lighting and atmosphere system built from transport passes, volumetric density, bounce logic, occlusion, rim separation, and miniature scale cues, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+        'Diorama lighting: small warm lights and a soft key scaled to a miniature, with shallow macro depth of field that makes any scene read as a handmade model.',
       subject_treatment:
-        'Transform any prompt subject through Tilt shift blur; preserve the prompt subject while letting light, fog, occlusion, HDRI, or atmosphere define silhouette and spatial depth, keeping the requested identity, silhouette, pose, object function, or environment legible.',
-      color_and_tone:
-        'Build color with Saturated, cozy, miniature palette; treat color as light temperature, atmospheric scattering, indirect bounce, fog color, HDRI influence, and exposure-managed contrast, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+        'Keep the prompt subject, geometry, setting and camera unchanged; replace only the CGI lighting setup and its render behavior, without adding a new environment.',
+      color_and_tone: 'Cozy saturated palette, warm practical dots, soft cool fill.',
       lighting_and_shadow:
-        'Handle light through Warm, close, macro lighting; make the named light behavior visible through beams, bounced fill, contact shadows, edge halos, volume density, or three-point separation, so value structure supports the renderer and does not overwrite the requested content.',
+        'Tiny point lights in windows and lamps, a soft overhead key, short soft shadows.',
       texture_and_material:
-        'Render Handmade feel, model kit texture; surface response should reveal air particles, shadow contact, glossy reflections, haze thickness, scale cues, and render-pass clarity, keeping material scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Lighting study camera for Diorama Lighting: stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline; compose around the light event through depth layers, contact points, miniature isolation, rim edges, or atmospheric shafts without forcing a fixed locale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Playful, tiny, tabletop wonder; derive mood from realism, wonder, product polish, sacred glow, softness, technical pass clarity, or spatial immersion, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+        'Surfaces read as painted model materials: flocked grass, resin water, plaster rock.',
+      camera_and_composition: 'Keep the requested framing; macro focus falloff at the edges.',
+      atmosphere_and_mood: 'Cozy and toy-like, a world you could hold in your hands.',
       rendering_and_quality:
-        'Finish with Cute, small, tilt shift magic; finish with controlled exposure, clean shadow gradients, believable atmosphere, and no random glow or crushed darkness, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+        'Miniature lighting and macro depth; geometry itself stays as requested.',
       key_features:
-        'Miniature tilt shift treatment; Miniature, depth of field isolation; Saturated, cozy, miniature palette; Handmade feel, model kit texture; Lighting study camera for Diorama Lighting: stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline',
+        'miniature-scaled lights; macro depth falloff; cozy saturated palette; model-kit materials; tiny window glows',
       creative_brief:
-        "Apply Diorama Lighting as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Miniature tilt shift treatment, Miniature, depth of field isolation, Handmade feel, model kit texture without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Diorama Lighting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP03-098',
+    name: 'Emissive Neon Geometry',
+    displayName: 'Emissive Neon Geometry',
+    styleAnchors: [
+      'Emissive Neon Geometry',
+      'emissive-only CGI lighting',
+      'emissive shapes as only light',
+    ],
+    category: '3. Lighting And Atmosphere',
+    domain: 'emissive-only CGI lighting',
+    negativePrompt:
+      'changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Emissive-only lighting: the scene lit solely by glowing emissive shapes — tubes, panels and trims — with no other lights at all.',
+      subject_treatment:
+        'Keep the prompt subject, geometry, setting and camera unchanged; replace only the CGI lighting setup and its render behavior, without adding a new environment.',
+      color_and_tone: 'Saturated emissive colors on dark surfaces, colored reflections and bounce.',
+      lighting_and_shadow:
+        'Soft shadows from long light shapes, glossy floors reflecting each emitter.',
+      texture_and_material:
+        'Glossy and metallic surfaces picking up colored streaks from the emitters.',
+      camera_and_composition: 'Keep the requested framing; emissive shapes visible in frame.',
+      atmosphere_and_mood: 'Moody and electric, darkness drawn with glowing lines.',
+      rendering_and_quality: 'Clean emissive GI with bloom; no readable signage.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Emissive Neon Geometry as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'emissive shapes as only light; colored glossy reflections; soft long shadows; dark surfaces; bloom',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-099',
+    name: 'IES Profile Wall Wash',
+    displayName: 'IES Profile Wall Wash',
+    styleAnchors: [
+      'IES Profile Wall Wash',
+      'photometric architectural lighting',
+      'scalloped light pools',
+    ],
+    category: '3. Lighting And Atmosphere',
+    domain: 'photometric architectural lighting',
+    negativePrompt:
+      'changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'IES profile wall wash: photometric light fixtures casting their characteristic scalloped and cone patterns onto walls, as in architectural visualization.',
+      subject_treatment:
+        'Keep the prompt subject, geometry, setting and camera unchanged; replace only the CGI lighting setup and its render behavior, without adding a new environment.',
+      color_and_tone:
+        'Warm 2700–3000 K fixture light on neutral walls, dark gaps between the pools.',
+      lighting_and_shadow:
+        'Repeating scalloped light shapes from downlights and uplights, crisp pool edges.',
+      texture_and_material: 'Wall textures and stone revealed by grazing fixture light.',
+      camera_and_composition:
+        'Keep the requested framing; walls or columns receiving the light patterns.',
+      atmosphere_and_mood: 'Elegant and calm, rhythm made of light.',
+      rendering_and_quality:
+        'Accurate photometric light distributions, with no readable labels on any fixture.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies IES Profile Wall Wash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'scalloped light pools; repeating fixture rhythm; warm color temperature; grazing wall texture; crisp pool edges',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-100',
+    name: 'Physical Sky Scattering',
+    displayName: 'Physical Sky Scattering',
+    styleAnchors: [
+      'Physical Sky Scattering',
+      'physical atmosphere sky model',
+      'sun-angle sky gradients',
+    ],
+    category: '3. Lighting And Atmosphere',
+    domain: 'physical atmosphere sky model',
+    negativePrompt:
+      'changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Physical sky scattering: a simulated atmosphere where sun angle sets the sky color through Rayleigh and Mie scattering, from deep blue noon to red dusk.',
+      subject_treatment:
+        'Keep the prompt subject, geometry, setting and camera unchanged; replace only the CGI lighting setup and its render behavior, without adding a new environment.',
+      color_and_tone:
+        'Sky gradients driven by sun height: blue overhead, orange-pink at the horizon, aerial perspective haze.',
+      lighting_and_shadow: 'Directional sun plus sky dome light; long colored shadows at low sun.',
+      texture_and_material: 'Distant objects fading into blue haze; sun disk with a soft glow.',
+      camera_and_composition:
+        'Keep the requested framing; some sky or distance to show the scattering.',
+      atmosphere_and_mood: 'Vast and airy, the whole atmosphere doing the lighting.',
+      rendering_and_quality:
+        'Physically based sky gradients rendered smoothly, without HDR banding or halos.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Physical Sky Scattering as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'sun-angle sky gradients; aerial perspective haze; directional sun with sky dome; colored long shadows; soft sun disk',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-101',
+    name: 'Volumetric Cloud Silver Lining',
+    displayName: 'Volumetric Cloud Silver Lining',
+    styleAnchors: [
+      'Volumetric Cloud Silver Lining',
+      'volumetric cloud lighting',
+      'silver-lined cloud edges',
+    ],
+    category: '3. Lighting And Atmosphere',
+    domain: 'volumetric cloud lighting',
+    negativePrompt:
+      'changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Volumetric cloud lighting: rendered clouds with dense cores and backlit edges glowing silver, casting moving shadows across the land.',
+      subject_treatment:
+        'Keep the prompt subject, geometry and camera; the sky above the existing setting becomes rendered volumetric clouds that shape the light.',
+      color_and_tone: 'Dark blue-grey cloud cores, silver and gold edges, patchy sunlit ground.',
+      lighting_and_shadow:
+        'Sun behind clouds; bright silver linings, crepuscular gaps, cloud shadows on the ground.',
+      texture_and_material: 'Billowing cumulus detail, wispy edges, sun breaking through holes.',
+      camera_and_composition: 'Keep the requested framing; a slice of sky and the shadowed ground.',
+      atmosphere_and_mood: 'Dramatic and changing, weather deciding what is lit.',
+      rendering_and_quality: 'High-detail volumetric clouds with fine wisps and no blocky noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Volumetric Cloud Silver Lining as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'silver-lined cloud edges; dark cores; cloud shadows on the ground; sun through gaps; billowing detail',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-102',
+    name: 'Gobo Pattern Shadows',
+    displayName: 'Gobo Pattern Shadows',
+    styleAnchors: ['Gobo Pattern Shadows', 'gobo cookie lighting', 'cut-out pattern shadows'],
+    category: '3. Lighting And Atmosphere',
+    domain: 'gobo cookie lighting',
+    negativePrompt:
+      'changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gobo pattern lighting: a spotlight through a cut-out cookie projecting shaped shadows — leaves, window bars, lattice — across the subject and set.',
+      subject_treatment:
+        'Keep the prompt subject, geometry, setting and camera unchanged; replace only the CGI lighting setup and its render behavior, without adding a new environment.',
+      color_and_tone: 'Warm or cool spot color on a darker ambient, patterned light and shadow.',
+      lighting_and_shadow:
+        'Hard or softened pattern edges depending on focus, shapes wrapping over forms.',
+      texture_and_material:
+        'The projected pattern bends across every surface, revealing its curvature.',
+      camera_and_composition:
+        'Keep the requested framing; the pattern falling across the main subject.',
+      atmosphere_and_mood:
+        'Theatrical and intimate, the light telling a story of an unseen window.',
+      rendering_and_quality:
+        'Clean projected pattern without image content; distinct from projector imagery.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gobo Pattern Shadows as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'cut-out pattern shadows; spotlight cookie; pattern wrapping forms; theatrical dark ambient; focusable edges',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-103',
+    name: 'RGB Colored Shadows',
+    displayName: 'RGB Colored Shadows',
+    styleAnchors: [
+      'RGB Colored Shadows',
+      'additive colored light rig',
+      'red, green and blue lights',
+    ],
+    category: '3. Lighting And Atmosphere',
+    domain: 'additive colored light rig',
+    negativePrompt:
+      'changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'RGB colored shadows: three lights in red, green and blue from different directions, so white surfaces glow neutral while each shadow turns a vivid color.',
+      subject_treatment:
+        'Keep the prompt subject, geometry, setting and camera unchanged; replace only the CGI lighting setup and its render behavior, without adding a new environment.',
+      color_and_tone:
+        'White-lit areas neutral, shadows in cyan, magenta and yellow where one light is blocked.',
+      lighting_and_shadow:
+        'Three hard point lights; overlapping colored shadows fanning out behind objects.',
+      texture_and_material: 'Matte white or pale surfaces show the colored shadows best.',
+      camera_and_composition: 'Keep the requested framing; shadows falling on a floor or wall.',
+      atmosphere_and_mood: 'Playful and scientific, color born from light itself.',
+      rendering_and_quality: 'Accurate additive color mixing; not colored gels on a dark scene.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies RGB Colored Shadows as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'red, green and blue lights; cyan-magenta-yellow shadows; white neutral lit areas; fanned shadows; additive mixing',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-104',
+    name: 'Two-Tone Ramp Lighting',
+    displayName: 'Two-Tone Ramp Lighting',
+    styleAnchors: ['Two-Tone Ramp Lighting', 'banded ramp lighting', 'two or three light bands'],
+    category: '3. Lighting And Atmosphere',
+    domain: 'banded ramp lighting',
+    negativePrompt:
+      'changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Two-tone ramp lighting: realistic 3D forms lit through a stepped ramp, so light and shadow snap into two or three clean bands with a colored terminator.',
+      subject_treatment:
+        'Keep the prompt subject, geometry, setting and camera unchanged; replace only the CGI lighting setup and its render behavior, without adding a new environment.',
+      color_and_tone: 'Lit band, shadow band and a thin saturated terminator line between them.',
+      lighting_and_shadow: 'One key light; hard banded transitions instead of smooth gradients.',
+      texture_and_material: 'Materials keep their color but lose soft shading.',
+      camera_and_composition: 'Keep the requested framing; forms turned to show the band edges.',
+      atmosphere_and_mood: 'Graphic and stylish, reality simplified into shapes of light.',
+      rendering_and_quality: 'Crisp banded lighting on 3D forms; no outlines unless requested.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Two-Tone Ramp Lighting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'two or three light bands; saturated terminator line; hard transitions; single key; graphic 3D forms',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-105',
+    name: 'Overcast Dome Light',
+    displayName: 'Overcast Dome Light',
+    styleAnchors: ['Overcast Dome Light', 'overcast sky dome lighting', 'uniform white sky dome'],
+    category: '3. Lighting And Atmosphere',
+    domain: 'overcast sky dome lighting',
+    negativePrompt:
+      'changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Overcast dome lighting: a uniform white sky dome lighting everything from above with no sun, like a grey cloudy day.',
+      subject_treatment:
+        'Keep the prompt subject, geometry, setting and camera unchanged; replace only the CGI lighting setup and its render behavior, without adding a new environment.',
+      color_and_tone: 'Soft neutral grey-white light, gentle saturation, low contrast.',
+      lighting_and_shadow: 'No directional shadows; soft darkening under objects and in recesses.',
+      texture_and_material: 'Matte and glossy surfaces reflect a bright featureless sky.',
+      camera_and_composition: 'Keep the requested framing; even detail across the whole frame.',
+      atmosphere_and_mood: 'Quiet and melancholic, a calm grey day with nothing hidden.',
+      rendering_and_quality: 'Even dome lighting; not the ambient occlusion pass look.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Overcast Dome Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'uniform white sky dome; no directional shadows; soft contact darkening; low contrast; even detail',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-106',
+    name: 'Hard Noon Sun',
+    displayName: 'Hard Noon Sun',
+    styleAnchors: ['Hard Noon Sun', 'overhead noon sunlight', 'sun directly overhead'],
+    category: '3. Lighting And Atmosphere',
+    domain: 'overhead noon sunlight',
+    negativePrompt:
+      'changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hard noon sun: a single tiny sun directly overhead, casting short black shadows straight down and bleaching the tops of every surface.',
+      subject_treatment:
+        'Keep the prompt subject, geometry, setting and camera unchanged; replace only the CGI lighting setup and its render behavior, without adding a new environment.',
+      color_and_tone:
+        'Bright bleached tops, deep blue sky, saturated but harsh colors, black undersides.',
+      lighting_and_shadow:
+        'Very short hard shadows pooled under objects; eye sockets and overhangs black.',
+      texture_and_material:
+        'Top surfaces blown bright, side textures crisp, heat shimmer in the distance.',
+      camera_and_composition:
+        'Keep the requested framing; the pooled shadows visible under objects.',
+      atmosphere_and_mood: 'Harsh and still, heat pressing down from above.',
+      rendering_and_quality:
+        'Crisp single-source lighting with no fill light softening the shadows.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hard Noon Sun as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'sun directly overhead; short black pooled shadows; bleached tops; deep blue sky; no fill',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-107',
+    name: 'Stadium Floodlight Multi-Shadow',
+    displayName: 'Stadium Floodlight Multi-Shadow',
+    styleAnchors: [
+      'Stadium Floodlight Multi-Shadow',
+      'multi-source floodlighting',
+      'several crossed shadows per object',
+    ],
+    category: '3. Lighting And Atmosphere',
+    domain: 'multi-source floodlighting',
+    negativePrompt:
+      'changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Stadium floodlight lighting: four or more powerful lights from high corners, giving every object several crossed shadows radiating in different directions.',
+      subject_treatment:
+        'Keep the prompt subject, geometry, setting and camera unchanged; replace only the CGI lighting setup and its render behavior, without adding a new environment.',
+      color_and_tone: 'Cool white light, deep night sky, slightly green-tinted grass or ground.',
+      lighting_and_shadow:
+        'Multiple hard shadows forming a star under each object, bright even ground.',
+      texture_and_material: 'Sharp detail everywhere, faint glare halos around the lamps.',
+      camera_and_composition:
+        'Keep the requested framing; the star-shaped shadows visible on the ground.',
+      atmosphere_and_mood: 'Charged and exposed, everything on display under the lights.',
+      rendering_and_quality:
+        'Crisp overlapping multi-source shadows with a slight glare around each lamp.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stadium Floodlight Multi-Shadow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'several crossed shadows per object; high corner lights; cool white glare; bright even ground; night sky',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-108',
+    name: 'Aurora Sky Light',
+    displayName: 'Aurora Sky Light',
+    styleAnchors: [
+      'Aurora Sky Light',
+      'auroral ambient lighting',
+      'green and violet aurora curtains',
+    ],
+    category: '3. Lighting And Atmosphere',
+    domain: 'auroral ambient lighting',
+    negativePrompt:
+      'changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Aurora sky lighting: the night lit by curtains of green, violet and pink aurora, casting a soft shifting colored glow onto snow, water and faces.',
+      subject_treatment:
+        'Keep the prompt subject, geometry, setting and camera unchanged; replace only the CGI lighting setup and its render behavior, without adding a new environment.',
+      color_and_tone:
+        'Green and violet ambient light on snow, deep navy sky, pink fringes on the curtains.',
+      lighting_and_shadow:
+        'Very soft diffuse colored light from above, almost shadowless, reflections on water and ice.',
+      texture_and_material:
+        'Snow and ice picking up green sheen; stars visible between the curtains.',
+      camera_and_composition:
+        'Keep the requested framing; enough sky for the curtains when possible.',
+      atmosphere_and_mood: 'Silent and otherworldly, the sky breathing colored light.',
+      rendering_and_quality:
+        'Clean, noise-free night render with smooth auroral gradients across the sky.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Aurora Sky Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'green and violet aurora curtains; colored ambient on snow; nearly shadowless; stars; reflections on ice',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP03-109',
+    name: 'Eclipse Corona Light',
+    displayName: 'Eclipse Corona Light',
+    styleAnchors: ['Eclipse Corona Light', 'total eclipse lighting', 'black sun with white corona'],
+    category: '3. Lighting And Atmosphere',
+    domain: 'total eclipse lighting',
+    negativePrompt:
+      'changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Total eclipse lighting: the sun hidden behind the moon, a white corona ring in a dark sky, and a strange dim 360-degree sunset glow along the horizon.',
+      subject_treatment:
+        'Keep the prompt subject, geometry, setting and camera unchanged; replace only the CGI lighting setup and its render behavior, without adding a new environment.',
+      color_and_tone:
+        'Deep indigo sky, white corona, orange-pink glow all around the horizon, desaturated land.',
+      lighting_and_shadow: 'Very dim flat light, faint shadows, warm rim from the horizon glow.',
+      texture_and_material: 'Surfaces muted and cool, highlights only toward the horizon.',
+      camera_and_composition:
+        'Keep the requested framing; include the corona or horizon glow when the sky is visible.',
+      atmosphere_and_mood: 'Eerie and awe-struck, day turned wrong for a few minutes.',
+      rendering_and_quality:
+        'Clean low-light eclipse render with smooth gradients and no visible noise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Eclipse Corona Light as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'black sun with white corona; indigo daytime sky; 360-degree horizon glow; dim flat light; eerie mood',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

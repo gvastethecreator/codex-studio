@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP03-102
+packId: pack_03
+name: Gobo Pattern Shadows
+styleAnchors:
+  - Gobo Pattern Shadows
+  - gobo cookie lighting
+  - cut-out pattern shadows
+displayName: Gobo Pattern Shadows
+category: 3. Lighting And Atmosphere
+domain: gobo cookie lighting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - lighting-and-atmosphere
+  - gobo
+  - cookie
+  - cgi-lighting
+visualDna:
+  aesthetic: 'Gobo pattern lighting: a spotlight through a cut-out cookie projecting shaped shadows — leaves, window bars, lattice — across the subject and set.'
+  subject_treatment: Keep the prompt subject, geometry, setting and camera unchanged; replace only the CGI lighting setup and its render behavior, without adding a new environment.
+  color_and_tone: Warm or cool spot color on a darker ambient, patterned light and shadow.
+  lighting_and_shadow: Hard or softened pattern edges depending on focus, shapes wrapping over forms.
+  texture_and_material: The projected pattern bends across every surface, revealing its curvature.
+  camera_and_composition: Keep the requested framing; the pattern falling across the main subject.
+  atmosphere_and_mood: Theatrical and intimate, the light telling a story of an unseen window.
+  rendering_and_quality: Clean projected pattern without image content; distinct from projector imagery.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gobo Pattern Shadows as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: cut-out pattern shadows; spotlight cookie; pattern wrapping forms; theatrical dark ambient; focusable edges
+avoidRules:
+  - changing the geometry
+  - adding a new environment
+  - adding fog the preset does not own
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: lighting-and-atmosphere
+  categoryName: 3. Lighting And Atmosphere
+  tags:
+    - 3d-and-cgi-rendering
+    - lighting-and-atmosphere
+    - gobo
+    - cookie
+    - cgi-lighting
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: gobo cookie lighting

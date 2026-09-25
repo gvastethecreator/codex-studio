@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP03-103
+packId: pack_03
+name: RGB Colored Shadows
+styleAnchors:
+  - RGB Colored Shadows
+  - additive colored light rig
+  - red, green and blue lights
+displayName: RGB Colored Shadows
+category: 3. Lighting And Atmosphere
+domain: additive colored light rig
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - lighting-and-atmosphere
+  - rgb-light
+  - colored-shadows
+  - cgi-lighting
+visualDna:
+  aesthetic: 'RGB colored shadows: three lights in red, green and blue from different directions, so white surfaces glow neutral while each shadow turns a vivid color.'
+  subject_treatment: Keep the prompt subject, geometry, setting and camera unchanged; replace only the CGI lighting setup and its render behavior, without adding a new environment.
+  color_and_tone: White-lit areas neutral, shadows in cyan, magenta and yellow where one light is blocked.
+  lighting_and_shadow: Three hard point lights; overlapping colored shadows fanning out behind objects.
+  texture_and_material: Matte white or pale surfaces show the colored shadows best.
+  camera_and_composition: Keep the requested framing; shadows falling on a floor or wall.
+  atmosphere_and_mood: Playful and scientific, color born from light itself.
+  rendering_and_quality: Accurate additive color mixing; not colored gels on a dark scene.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies RGB Colored Shadows as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: red, green and blue lights; cyan-magenta-yellow shadows; white neutral lit areas; fanned shadows; additive mixing
+avoidRules:
+  - changing the geometry
+  - adding a new environment
+  - adding fog the preset does not own
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: lighting-and-atmosphere
+  categoryName: 3. Lighting And Atmosphere
+  tags:
+    - 3d-and-cgi-rendering
+    - lighting-and-atmosphere
+    - rgb-light
+    - colored-shadows
+    - cgi-lighting
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: additive colored light rig

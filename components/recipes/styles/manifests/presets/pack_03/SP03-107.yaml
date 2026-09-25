@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP03-107
+packId: pack_03
+name: Stadium Floodlight Multi-Shadow
+styleAnchors:
+  - Stadium Floodlight Multi-Shadow
+  - multi-source floodlighting
+  - several crossed shadows per object
+displayName: Stadium Floodlight Multi-Shadow
+category: 3. Lighting And Atmosphere
+domain: multi-source floodlighting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - 3d-and-cgi-rendering
+  - lighting-and-atmosphere
+  - floodlights
+  - multi-shadow
+  - cgi-lighting
+visualDna:
+  aesthetic: 'Stadium floodlight lighting: four or more powerful lights from high corners, giving every object several crossed shadows radiating in different directions.'
+  subject_treatment: Keep the prompt subject, geometry, setting and camera unchanged; replace only the CGI lighting setup and its render behavior, without adding a new environment.
+  color_and_tone: Cool white light, deep night sky, slightly green-tinted grass or ground.
+  lighting_and_shadow: Multiple hard shadows forming a star under each object, bright even ground.
+  texture_and_material: Sharp detail everywhere, faint glare halos around the lamps.
+  camera_and_composition: Keep the requested framing; the star-shaped shadows visible on the ground.
+  atmosphere_and_mood: Charged and exposed, everything on display under the lights.
+  rendering_and_quality: Crisp overlapping multi-source shadows with a slight glare around each lamp.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Stadium Floodlight Multi-Shadow as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: several crossed shadows per object; high corner lights; cool white glare; bright even ground; night sky
+avoidRules:
+  - changing the geometry
+  - adding a new environment
+  - adding fog the preset does not own
+  - readable text
+  - logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_03
+  packName: 3D & CGI Rendering
+  categoryId: lighting-and-atmosphere
+  categoryName: 3. Lighting And Atmosphere
+  tags:
+    - 3d-and-cgi-rendering
+    - lighting-and-atmosphere
+    - floodlights
+    - multi-shadow
+    - cgi-lighting
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: multi-source floodlighting

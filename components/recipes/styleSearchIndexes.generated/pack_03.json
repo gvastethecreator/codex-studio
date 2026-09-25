@@ -3,7 +3,7 @@
     {
       "id": "pack_03",
       "name": "3D & CGI Rendering",
-      "presetCount": 97
+      "presetCount": 109
     }
   ],
   "presets": [
@@ -635,7 +635,8 @@
     },
     {
       "id": "SP03-038",
-      "name": "Rim Lighting",
+      "name": "Rendered Rim Light Rig",
+      "styleAnchors": ["Rendered Rim Light Rig", "Rim Lighting"],
       "ref": "pack_03/SP03-038.yaml",
       "packId": "pack_03",
       "packName": "3D & CGI Rendering",
@@ -643,11 +644,12 @@
       "categoryName": "3. Lighting And Atmosphere",
       "tags": ["3d-and-cgi-rendering", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-038 rim lighting 3. lighting and atmosphere cgi light pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere"
+      "searchableText": "sp03-038 rendered rim light rig rim lighting 3. lighting and atmosphere cgi light pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere"
     },
     {
       "id": "SP03-041",
-      "name": "God Rays (Volumetric)",
+      "name": "Rendered Volumetric Shafts",
+      "styleAnchors": ["Rendered Volumetric Shafts", "God Rays (Volumetric)"],
       "ref": "pack_03/SP03-041.yaml",
       "packId": "pack_03",
       "packName": "3D & CGI Rendering",
@@ -655,7 +657,7 @@
       "categoryName": "3. Lighting And Atmosphere",
       "tags": ["3d-and-cgi-rendering", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-041 god rays (volumetric) 3. lighting and atmosphere cgi light pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere"
+      "searchableText": "sp03-041 rendered volumetric shafts god rays (volumetric) 3. lighting and atmosphere cgi light pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere"
     },
     {
       "id": "SP03-042",
@@ -668,6 +670,218 @@
       "tags": ["3d-and-cgi-rendering", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp03-042 diorama lighting 3. lighting and atmosphere cgi light pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere"
+    },
+    {
+      "id": "SP03-098",
+      "name": "Emissive Neon Geometry",
+      "styleAnchors": [
+        "Emissive Neon Geometry",
+        "emissive-only CGI lighting",
+        "emissive shapes as only light"
+      ],
+      "ref": "pack_03/SP03-098.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "lighting-and-atmosphere",
+      "categoryName": "3. Lighting And Atmosphere",
+      "domain": "emissive-only CGI lighting",
+      "tags": ["3d-and-cgi-rendering", "lighting-and-atmosphere", "emissive-only-cgi-lighting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-098 emissive neon geometry emissive-only cgi lighting emissive shapes as only light 3. lighting and atmosphere cgi light emissive-only cgi lighting pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere emissive-only-cgi-lighting"
+    },
+    {
+      "id": "SP03-099",
+      "name": "IES Profile Wall Wash",
+      "styleAnchors": [
+        "IES Profile Wall Wash",
+        "photometric architectural lighting",
+        "scalloped light pools"
+      ],
+      "ref": "pack_03/SP03-099.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "lighting-and-atmosphere",
+      "categoryName": "3. Lighting And Atmosphere",
+      "domain": "photometric architectural lighting",
+      "tags": [
+        "3d-and-cgi-rendering",
+        "lighting-and-atmosphere",
+        "photometric-architectural-lighting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-099 ies profile wall wash photometric architectural lighting scalloped light pools 3. lighting and atmosphere cgi light photometric architectural lighting pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere photometric-architectural-lighting"
+    },
+    {
+      "id": "SP03-100",
+      "name": "Physical Sky Scattering",
+      "styleAnchors": [
+        "Physical Sky Scattering",
+        "physical atmosphere sky model",
+        "sun-angle sky gradients"
+      ],
+      "ref": "pack_03/SP03-100.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "lighting-and-atmosphere",
+      "categoryName": "3. Lighting And Atmosphere",
+      "domain": "physical atmosphere sky model",
+      "tags": ["3d-and-cgi-rendering", "lighting-and-atmosphere", "physical-atmosphere-sky-model"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-100 physical sky scattering physical atmosphere sky model sun-angle sky gradients 3. lighting and atmosphere cgi light physical atmosphere sky model pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere physical-atmosphere-sky-model"
+    },
+    {
+      "id": "SP03-101",
+      "name": "Volumetric Cloud Silver Lining",
+      "styleAnchors": [
+        "Volumetric Cloud Silver Lining",
+        "volumetric cloud lighting",
+        "silver-lined cloud edges"
+      ],
+      "ref": "pack_03/SP03-101.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "lighting-and-atmosphere",
+      "categoryName": "3. Lighting And Atmosphere",
+      "domain": "volumetric cloud lighting",
+      "tags": ["3d-and-cgi-rendering", "lighting-and-atmosphere", "volumetric-cloud-lighting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-101 volumetric cloud silver lining volumetric cloud lighting silver-lined cloud edges 3. lighting and atmosphere cgi light volumetric cloud lighting pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere volumetric-cloud-lighting"
+    },
+    {
+      "id": "SP03-102",
+      "name": "Gobo Pattern Shadows",
+      "styleAnchors": ["Gobo Pattern Shadows", "gobo cookie lighting", "cut-out pattern shadows"],
+      "ref": "pack_03/SP03-102.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "lighting-and-atmosphere",
+      "categoryName": "3. Lighting And Atmosphere",
+      "domain": "gobo cookie lighting",
+      "tags": ["3d-and-cgi-rendering", "lighting-and-atmosphere", "gobo-cookie-lighting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-102 gobo pattern shadows gobo cookie lighting cut-out pattern shadows 3. lighting and atmosphere cgi light gobo cookie lighting pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere gobo-cookie-lighting"
+    },
+    {
+      "id": "SP03-103",
+      "name": "RGB Colored Shadows",
+      "styleAnchors": [
+        "RGB Colored Shadows",
+        "additive colored light rig",
+        "red, green and blue lights"
+      ],
+      "ref": "pack_03/SP03-103.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "lighting-and-atmosphere",
+      "categoryName": "3. Lighting And Atmosphere",
+      "domain": "additive colored light rig",
+      "tags": ["3d-and-cgi-rendering", "lighting-and-atmosphere", "additive-colored-light-rig"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-103 rgb colored shadows additive colored light rig red, green and blue lights 3. lighting and atmosphere cgi light additive colored light rig pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere additive-colored-light-rig"
+    },
+    {
+      "id": "SP03-104",
+      "name": "Two-Tone Ramp Lighting",
+      "styleAnchors": [
+        "Two-Tone Ramp Lighting",
+        "banded ramp lighting",
+        "two or three light bands"
+      ],
+      "ref": "pack_03/SP03-104.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "lighting-and-atmosphere",
+      "categoryName": "3. Lighting And Atmosphere",
+      "domain": "banded ramp lighting",
+      "tags": ["3d-and-cgi-rendering", "lighting-and-atmosphere", "banded-ramp-lighting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-104 two-tone ramp lighting banded ramp lighting two or three light bands 3. lighting and atmosphere cgi light banded ramp lighting pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere banded-ramp-lighting"
+    },
+    {
+      "id": "SP03-105",
+      "name": "Overcast Dome Light",
+      "styleAnchors": [
+        "Overcast Dome Light",
+        "overcast sky dome lighting",
+        "uniform white sky dome"
+      ],
+      "ref": "pack_03/SP03-105.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "lighting-and-atmosphere",
+      "categoryName": "3. Lighting And Atmosphere",
+      "domain": "overcast sky dome lighting",
+      "tags": ["3d-and-cgi-rendering", "lighting-and-atmosphere", "overcast-sky-dome-lighting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-105 overcast dome light overcast sky dome lighting uniform white sky dome 3. lighting and atmosphere cgi light overcast sky dome lighting pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere overcast-sky-dome-lighting"
+    },
+    {
+      "id": "SP03-106",
+      "name": "Hard Noon Sun",
+      "styleAnchors": ["Hard Noon Sun", "overhead noon sunlight", "sun directly overhead"],
+      "ref": "pack_03/SP03-106.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "lighting-and-atmosphere",
+      "categoryName": "3. Lighting And Atmosphere",
+      "domain": "overhead noon sunlight",
+      "tags": ["3d-and-cgi-rendering", "lighting-and-atmosphere", "overhead-noon-sunlight"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-106 hard noon sun overhead noon sunlight sun directly overhead 3. lighting and atmosphere cgi light overhead noon sunlight pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere overhead-noon-sunlight"
+    },
+    {
+      "id": "SP03-107",
+      "name": "Stadium Floodlight Multi-Shadow",
+      "styleAnchors": [
+        "Stadium Floodlight Multi-Shadow",
+        "multi-source floodlighting",
+        "several crossed shadows per object"
+      ],
+      "ref": "pack_03/SP03-107.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "lighting-and-atmosphere",
+      "categoryName": "3. Lighting And Atmosphere",
+      "domain": "multi-source floodlighting",
+      "tags": ["3d-and-cgi-rendering", "lighting-and-atmosphere", "multi-source-floodlighting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-107 stadium floodlight multi-shadow multi-source floodlighting several crossed shadows per object 3. lighting and atmosphere cgi light multi-source floodlighting pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere multi-source-floodlighting"
+    },
+    {
+      "id": "SP03-108",
+      "name": "Aurora Sky Light",
+      "styleAnchors": [
+        "Aurora Sky Light",
+        "auroral ambient lighting",
+        "green and violet aurora curtains"
+      ],
+      "ref": "pack_03/SP03-108.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "lighting-and-atmosphere",
+      "categoryName": "3. Lighting And Atmosphere",
+      "domain": "auroral ambient lighting",
+      "tags": ["3d-and-cgi-rendering", "lighting-and-atmosphere", "auroral-ambient-lighting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-108 aurora sky light auroral ambient lighting green and violet aurora curtains 3. lighting and atmosphere cgi light auroral ambient lighting pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere auroral-ambient-lighting"
+    },
+    {
+      "id": "SP03-109",
+      "name": "Eclipse Corona Light",
+      "styleAnchors": [
+        "Eclipse Corona Light",
+        "total eclipse lighting",
+        "black sun with white corona"
+      ],
+      "ref": "pack_03/SP03-109.yaml",
+      "packId": "pack_03",
+      "packName": "3D & CGI Rendering",
+      "categoryId": "lighting-and-atmosphere",
+      "categoryName": "3. Lighting And Atmosphere",
+      "domain": "total eclipse lighting",
+      "tags": ["3d-and-cgi-rendering", "lighting-and-atmosphere", "total-eclipse-lighting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp03-109 eclipse corona light total eclipse lighting black sun with white corona 3. lighting and atmosphere cgi light total eclipse lighting pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere total-eclipse-lighting"
     },
     {
       "id": "SP03-015",
@@ -1258,5 +1472,5 @@
       "searchableText": "sp03-044 thermal vision 8. sensor and technical shaders technical shaders pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders"
     }
   ],
-  "totalPresetCount": 97
+  "totalPresetCount": 109
 }

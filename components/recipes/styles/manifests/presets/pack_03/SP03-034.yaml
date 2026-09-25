@@ -3,7 +3,7 @@ id: SP03-034
 packId: pack_03
 name: Studio Lighting (3 Point)
 category: 3. Lighting And Atmosphere
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,55 +12,23 @@ tags:
   - 3d-and-cgi-rendering
   - lighting-and-atmosphere
 visualDna:
-  aesthetic: >-
-    Studio Lighting (3 Point) acts as a transferable CGI-style router: start from Perfect
-    product/portrait, Rim light, three point separation and lighting and atmosphere system built
-    from transport passes, volumetric density, bounce logic, occlusion, rim separation, and
-    miniature scale cues, then apply the 3D/render behavior to prompt X instead of recreating a
-    fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Key, Fill, Rim; preserve the prompt subject while letting
-    light, fog, occlusion, HDRI, or atmosphere define silhouette and spatial depth, keeping the
-    requested identity, silhouette, pose, object function, or environment legible.
-  color_and_tone: >-
-    Build color with Balanced, broadcast safe; treat color as light temperature, atmospheric
-    scattering, indirect bounce, fog color, HDRI influence, and exposure-managed contrast, with
-    deliberate value grouping, exposure control, and medium-specific limits rather than generic
-    color wash.
-  lighting_and_shadow: >-
-    Handle light through Controlled, key fill rim triangle; make the named light behavior visible
-    through beams, bounced fill, contact shadows, edge halos, volume density, or three-point
-    separation, so value structure supports the renderer and does not overwrite the requested
-    content.
-  texture_and_material: >-
-    Render Clean, studio perfect; surface response should reveal air particles, shadow contact,
-    glossy reflections, haze thickness, scale cues, and render-pass clarity, keeping material scale
-    coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Lighting study camera for Studio Lighting (3 Point): stable three
-    quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition
-    discipline; compose around the light event through depth layers, contact points, miniature
-    isolation, rim edges, or atmospheric shafts without forcing a fixed locale, with scale, spacing,
-    edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Professional, polished confidence; derive mood from realism, wonder, product
-    polish, sacred glow, softness, technical pass clarity, or spatial immersion, letting the
-    renderer alter interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Commercial, professional, portrait ready; finish with controlled exposure, clean
-    shadow gradients, believable atmosphere, and no random glow or crushed darkness, clean denoised
-    surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.
-  key_features: >-
-    Perfect product/portrait; Rim light, three point separation; Balanced, broadcast safe; Clean,
-    studio perfect; Lighting study camera for Studio Lighting (3 Point): stable three quarter
-    framing, visible depth layers, clear shadow planes, and an optional vertical composition
-    discipline
-  creative_brief: >-
-    Apply Studio Lighting (3 Point) as a CGI/render preset over prompt X: preserve the user's
-    requested subject, then route modeling, shader response, lighting, material scale, composition,
-    mood, and final render craft through Perfect product/portrait, Rim light, three point
-    separation, Clean, studio perfect without requiring the card image's original subject.
+  aesthetic: 'Three-point CGI lighting rig: a key, a fill and a back light placed around the subject for clean shape, separation and balanced exposure.'
+  subject_treatment: Keep the prompt subject, geometry, setting and camera unchanged; replace only the CGI lighting setup and its render behavior, without adding a new environment.
+  color_and_tone: Neutral balanced color, clean whites and a controlled, moderate contrast.
+  lighting_and_shadow: Soft key 45 degrees to the side, dimmer fill opposite, bright back light outlining the edge.
+  texture_and_material: Material detail clearly readable on the key side, separated from the background.
+  camera_and_composition: Keep the requested framing; subject clearly separated from a darker backdrop.
+  atmosphere_and_mood: Clear and professional, the subject presented at its best.
+  rendering_and_quality: Clean studio lighting with no clutter in the light setup.
+  key_features: key, fill and back light; 45-degree key; edge separation; balanced exposure; dark backdrop
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Studio Lighting (3 Point) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - changing the geometry
+  - adding a new environment
+  - adding fog the preset does not own
+  - readable text
+  - logo
+  - marble bust
   - flat
   - outdoor
   - wrong medium
@@ -68,19 +36,21 @@ avoidRules:
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - flat lighting
   - random glow overlay
   - crushed black
   - no shadow logic
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-034.webp
 attributes:
-  negativePrompt: >-
-    flat, outdoor, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
-    watermark, readable text, signature, flat lighting, random glow overlay, crushed black, no
-    shadow logic
+  negativePrompt: changing the geometry, adding a new environment, adding fog the preset does not own, readable text, logo, marble bust, flat, outdoor, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, flat lighting, random glow overlay, crushed black, no shadow logic, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
