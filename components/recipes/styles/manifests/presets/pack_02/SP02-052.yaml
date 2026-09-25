@@ -3,7 +3,7 @@ id: SP02-052
 packId: pack_02
 name: Lomography
 category: 4. Photography Eras
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,70 +12,32 @@ tags:
   - cinematic-and-media
   - photography-eras
 visualDna:
-  aesthetic: >-
-    Lomography acts as a transferable cinematic-media router: start from Toy camera (Holga),
-    Lomography historical camera process, emulsion behavior, lens constraints, print surface, and
-    era-specific exposure artifacts, Light leaks, sprocket holes, film rebate, double-exposure ghost
-    and historical photographic process system built from camera constraints, emulsion chemistry,
-    lens softness, exposure timing, print surface, and era-specific color response, then apply the
-    media behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
-    under Lomography: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4.
-    Photography Eras cinematic and broadcast grammar without locking to one plot beat; preserve the
-    requested subject while making it feel captured through the era process: sitter stillness, flash
-    harshness, instant-film intimacy, chemical plate tactility, or early digital sensor behavior,
-    keeping the requested identity, silhouette, action, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Cross processed, color-shifted, purple drift, green cast, unpredictable
-    palette; treat color as historical capture chemistry: silver plate, hand-tinted autochrome
-    grain, Kodachrome warmth, Polaroid dyes, disposable flash color, or cyan chemistry, with
-    deliberate value grouping, accent control, and process-specific limits rather than generic color
-    wash.
-  lighting_and_shadow: >-
-    Handle light through Leak, light-struck frame, accidental exposure, red window; make light
-    follow camera limitations through long exposure, flash falloff, lens vignetting, plate
-    reflectance, daylight softness, or early-sensor clipping, so exposure and shadow structure
-    support the media process without overwriting the requested content.
-  texture_and_material: >-
-    Render Plastic lens blur, toy-optics softness, zone focus mush; surface detail should reveal
-    plate metal, paper border, dye cloud, film grain, dust, chemical streak, plastic-lens softness,
-    instant emulsion, or sensor noise, keeping artifact scale coherent and avoiding noisy filler
-    texture.
-  camera_and_composition: >-
-    Structure the image through Vignette blur, edge falloff, tunnel softness; compose through period
-    camera distance, portrait stillness, casual snapshot crop, square instant frame, pinhole drift,
-    or documentary era framing without requiring period costumes, with frame rhythm, spacing, edge
-    hierarchy, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Experimental, fun, rule-breaking, analog play; derive mood from memory, archival
-    strangeness, family snapshot intimacy, laboratory chemistry, nostalgic color, or historical
-    camera patience, letting the media style alter interpretation without demanding a specific
-    story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Artsy, weird, lo-fi aesthetic, happy accident; finish as credible photographic
-    process with controlled grain and exposure artifacts, avoiding fake vintage filter overlays and
-    readable border text, clean denoised surfaces where appropriate, and enough process evidence to
-    make the style recognizable.
-  key_features: >-
-    Toy camera (Holga), Lomography historical camera process, emulsion behavior, lens constraints,
-    print surface, and era-specific exposure artifacts; Light leaks, sprocket holes, film rebate,
-    double-exposure ghost; Cross processed, color-shifted, purple drift, green cast, unpredictable
-    palette; Plastic lens blur, toy-optics softness, zone focus mush; Vignette blur, edge falloff,
-    tunnel softness
-  creative_brief: >-
-    Apply Lomography as a cinematic-media preset over prompt X: preserve the user's requested
-    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
-    and final media craft through Toy camera (Holga), Lomography historical camera process, emulsion
-    behavior, lens constraints, print surface, and era-specific exposure artifacts, Light leaks,
-    sprocket holes, film rebate, double-exposure ghost, Plastic lens blur, toy-optics softness, zone
-    focus mush without requiring the card image's original subject.
+  aesthetic: 'Holga toy-camera lomography: a plastic 120 camera with a leaky body and a soft plastic lens, often shot on 35 mm so the sprocket holes are exposed.'
+  subject_treatment: Keep the prompt subject, action and setting as they are; add only the toy-camera artifacts — leaks, rebate, vignette — never period props.
+  color_and_tone: Oversaturated cross-shifted color, red-orange light leaks, dark heavy corners.
+  lighting_and_shadow: Whatever light is there, with orange leaks burning in from one edge.
+  texture_and_material: Exposed sprocket-hole rebate along an edge, soft blur, overlapping frame edges.
+  camera_and_composition: Square-ish frame, heavy vignette, occasional overlap with the neighboring frame.
+  atmosphere_and_mood: Spontaneous and experimental, every happy accident gladly embraced.
+  rendering_and_quality: Toy-camera artifacts in the negative; distinct from the Lomo LC-A lens look in pack_01.
+  key_features: red-orange light leaks; exposed sprocket rebate; heavy vignette; plastic-lens blur; overlapping frames
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lomography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - illustration
+  - painting
+  - cartoon
+  - 3d render
+  - digital sharpness
+  - unrequested period wardrobe or props
+  - historical setting added without request
+  - generic stock-photo face
+  - celebrity likeness
+  - readable fake text
   - correct color
+  - bicycle
   - official card scene
   - fixed thumbnail subject
   - prompt replaced by sample image
-  - readable fake text
   - watermark
   - logo clutter
   - generic stock footage
@@ -84,13 +46,17 @@ avoidRules:
   - readable border text
   - modern phone clarity
   - wrong camera process
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-052.webp
 attributes:
-  negativePrompt: >-
-    correct color, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, fake
-    vintage filter, readable border text, modern phone clarity, wrong camera process
+  negativePrompt: illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, correct color, bicycle, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

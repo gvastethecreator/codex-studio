@@ -3,7 +3,7 @@
     {
       "id": "pack_02",
       "name": "Cinematic & Media",
-      "presetCount": 138
+      "presetCount": 145
     }
   ],
   "presets": [
@@ -985,6 +985,128 @@
       "searchableText": "sp02-129 silver plate tonality 4. photography eras historic photo processes pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
     },
     {
+      "id": "SP02-139",
+      "name": "Salt Print Calotype",
+      "styleAnchors": [
+        "Salt Print Calotype",
+        "calotype paper negative process",
+        "paper-negative fiber texture"
+      ],
+      "ref": "pack_02/SP02-139.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "photography-eras",
+      "categoryName": "4. Photography Eras",
+      "domain": "calotype paper negative process",
+      "tags": ["cinematic-and-media", "photography-eras", "calotype-paper-negative-process"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-139 salt print calotype calotype paper negative process paper-negative fiber texture 4. photography eras historic photo processes calotype paper negative process pack_02 cinematic & media photography-eras cinematic-and-media photography-eras calotype-paper-negative-process"
+    },
+    {
+      "id": "SP02-140",
+      "name": "Albumen Carte de Visite",
+      "styleAnchors": [
+        "Albumen Carte de Visite",
+        "albumen card portrait",
+        "glossy sepia-purple albumen"
+      ],
+      "ref": "pack_02/SP02-140.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "photography-eras",
+      "categoryName": "4. Photography Eras",
+      "domain": "albumen card portrait",
+      "tags": ["cinematic-and-media", "photography-eras", "albumen-card-portrait"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-140 albumen carte de visite albumen card portrait glossy sepia-purple albumen 4. photography eras historic photo processes albumen card portrait pack_02 cinematic & media photography-eras cinematic-and-media photography-eras albumen-card-portrait"
+    },
+    {
+      "id": "SP02-141",
+      "name": "Pictorialist Platinum Print",
+      "styleAnchors": [
+        "Pictorialist Platinum Print",
+        "pictorialist platinum printing",
+        "soft-focus bloom"
+      ],
+      "ref": "pack_02/SP02-141.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "photography-eras",
+      "categoryName": "4. Photography Eras",
+      "domain": "pictorialist platinum printing",
+      "tags": ["cinematic-and-media", "photography-eras", "pictorialist-platinum-printing"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-141 pictorialist platinum print pictorialist platinum printing soft-focus bloom 4. photography eras historic photo processes pictorialist platinum printing pack_02 cinematic & media photography-eras cinematic-and-media photography-eras pictorialist-platinum-printing"
+    },
+    {
+      "id": "SP02-142",
+      "name": "Hand-Colored Lantern Slide",
+      "styleAnchors": [
+        "Hand-Colored Lantern Slide",
+        "hand-tinted glass lantern slide",
+        "hand-tinted transparent dyes"
+      ],
+      "ref": "pack_02/SP02-142.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "photography-eras",
+      "categoryName": "4. Photography Eras",
+      "domain": "hand-tinted glass lantern slide",
+      "tags": ["cinematic-and-media", "photography-eras", "hand-tinted-glass-lantern-slide"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-142 hand-colored lantern slide hand-tinted glass lantern slide hand-tinted transparent dyes 4. photography eras historic photo processes hand-tinted glass lantern slide pack_02 cinematic & media photography-eras cinematic-and-media photography-eras hand-tinted-glass-lantern-slide"
+    },
+    {
+      "id": "SP02-143",
+      "name": "Mammoth Plate Landscape",
+      "styleAnchors": [
+        "Mammoth Plate Landscape",
+        "mammoth plate landscape photography",
+        "blank white sky"
+      ],
+      "ref": "pack_02/SP02-143.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "photography-eras",
+      "categoryName": "4. Photography Eras",
+      "domain": "mammoth plate landscape photography",
+      "tags": ["cinematic-and-media", "photography-eras", "mammoth-plate-landscape-photography"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-143 mammoth plate landscape mammoth plate landscape photography blank white sky 4. photography eras historic photo processes mammoth plate landscape photography pack_02 cinematic & media photography-eras cinematic-and-media photography-eras mammoth-plate-landscape-photography"
+    },
+    {
+      "id": "SP02-144",
+      "name": "1970s Faded Color Print",
+      "styleAnchors": [
+        "1970s Faded Color Print",
+        "faded 1970s chromogenic print",
+        "faded cyan dye"
+      ],
+      "ref": "pack_02/SP02-144.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "photography-eras",
+      "categoryName": "4. Photography Eras",
+      "domain": "faded 1970s chromogenic print",
+      "tags": ["cinematic-and-media", "photography-eras", "faded-1970s-chromogenic-print"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-144 1970s faded color print faded 1970s chromogenic print faded cyan dye 4. photography eras historic photo processes faded 1970s chromogenic print pack_02 cinematic & media photography-eras cinematic-and-media photography-eras faded-1970s-chromogenic-print"
+    },
+    {
+      "id": "SP02-145",
+      "name": "1980s Pocket Instamatic",
+      "styleAnchors": ["1980s Pocket Instamatic", "110 pocket camera snapshot", "heavy 110 grain"],
+      "ref": "pack_02/SP02-145.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "photography-eras",
+      "categoryName": "4. Photography Eras",
+      "domain": "110 pocket camera snapshot",
+      "tags": ["cinematic-and-media", "photography-eras", "110-pocket-camera-snapshot"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-145 1980s pocket instamatic 110 pocket camera snapshot heavy 110 grain 4. photography eras historic photo processes 110 pocket camera snapshot pack_02 cinematic & media photography-eras cinematic-and-media photography-eras 110-pocket-camera-snapshot"
+    },
+    {
       "id": "SP02-061",
       "name": "Golden Hour",
       "ref": "pack_02/SP02-061.yaml",
@@ -1729,5 +1851,5 @@
       "searchableText": "sp02-099 punk zine cut-and-paste 8. hand-drawn and diy media diy drawing surfaces pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media"
     }
   ],
-  "totalPresetCount": 138
+  "totalPresetCount": 145
 }

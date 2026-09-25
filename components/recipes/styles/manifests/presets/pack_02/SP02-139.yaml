@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP02-139
+packId: pack_02
+name: Salt Print Calotype
+styleAnchors:
+  - Salt Print Calotype
+  - calotype paper negative process
+  - paper-negative fiber texture
+displayName: Salt Print Calotype
+category: 4. Photography Eras
+domain: calotype paper negative process
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - photography-eras
+  - salt-print
+  - calotype
+  - 1840s
+visualDna:
+  aesthetic: 'Salt print from a calotype: an 1840s paper negative printed on salted paper, soft and fibrous, with warm matte tones sunk into the paper.'
+  subject_treatment: Keep the prompt subject, action and setting as they are — a modern object stays modern; change only the photographic process, print surface and tonal response of the era, never the clothing, props or scenery.
+  color_and_tone: Warm reddish-brown to lavender-purple tones, low contrast, creamy paper highlights.
+  lighting_and_shadow: Bright daylight softened by the paper negative; broad masses of light and shade.
+  texture_and_material: Paper fibers printed through the image, matte surface, soft edges.
+  camera_and_composition: Keep the requested framing; broad simple masses rather than fine detail.
+  atmosphere_and_mood: Soft and painterly, an early photograph still halfway to a drawing.
+  rendering_and_quality: Matte salted-paper print; not glossy albumen and not a metal plate.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Salt Print Calotype as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: paper-negative fiber texture; warm brown-lavender tones; matte salted paper; soft broad masses; low contrast
+avoidRules:
+  - illustration
+  - painting
+  - cartoon
+  - 3d render
+  - digital sharpness
+  - unrequested period wardrobe or props
+  - historical setting added without request
+  - generic stock-photo face
+  - celebrity likeness
+  - readable fake text
+  - glossy surface
+  - crisp fine detail
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, glossy surface, crisp fine detail, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: photography-eras
+  categoryName: 4. Photography Eras
+  tags:
+    - cinematic-and-media
+    - photography-eras
+    - salt-print
+    - calotype
+    - 1840s
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: calotype paper negative process

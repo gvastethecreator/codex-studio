@@ -3,7 +3,7 @@ id: SP02-048
 packId: pack_02
 name: Autochrome (1900s)
 category: 4. Photography Eras
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,72 +12,33 @@ tags:
   - cinematic-and-media
   - photography-eras
 visualDna:
-  aesthetic: >-
-    Autochrome (1900s) acts as a transferable cinematic-media router: start from First color photo,
-    Autochrome (1900s) historical camera process, emulsion behavior, lens constraints, print
-    surface, and era-specific exposure artifacts, Grainy color, starch-speckle, luminous pastels and
-    historical photographic process system built from camera constraints, emulsion chemistry, lens
-    softness, exposure timing, print surface, and era-specific color response, then apply the media
-    behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
-    under Autochrome (1900s): casting, wardrobe, props, motion cues, and silhouette hierarchy follow
-    4. Photography Eras cinematic and broadcast grammar without locking to one plot beat; preserve
-    the requested subject while making it feel captured through the era process: sitter stillness,
-    flash harshness, instant-film intimacy, chemical plate tactility, or early digital sensor
-    behavior, keeping the requested identity, silhouette, action, object function, or setting
-    legible.
-  color_and_tone: >-
-    Build color with Pointillist grain, stippled pastel, lavender, rose, moss; treat color as
-    historical capture chemistry: silver plate, hand-tinted autochrome grain, Kodachrome warmth,
-    Polaroid dyes, disposable flash color, or cyan chemistry, with deliberate value grouping, accent
-    control, and process-specific limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Soft, dreamy, diffuse daylight, window glow; make light follow camera
-    limitations through long exposure, flash falloff, lens vignetting, plate reflectance, daylight
-    softness, or early-sensor clipping, so exposure and shadow structure support the media process
-    without overwriting the requested content.
-  texture_and_material: >-
-    Render Potato starch grain, dyed starch, random RGB mosaic; surface detail should reveal plate
-    metal, paper border, dye cloud, film grain, dust, chemical streak, plastic-lens softness,
-    instant emulsion, or sensor noise, keeping artifact scale coherent and avoiding noisy filler
-    texture.
-  camera_and_composition: >-
-    Structure the image through Camera language native to Autochrome (1900s): genre-aware framing,
-    lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose
-    through period camera distance, portrait stillness, casual snapshot crop, square instant frame,
-    pinhole drift, or documentary era framing without requiring period costumes, with frame rhythm,
-    spacing, edge hierarchy, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Dreamy, vintage, Belle Epoque warmth, first-color wonder; derive mood from memory,
-    archival strangeness, family snapshot intimacy, laboratory chemistry, nostalgic color, or
-    historical camera patience, letting the media style alter interpretation without demanding a
-    specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Impressionist photo, pointillism, painterly light capture; finish as credible
-    photographic process with controlled grain and exposure artifacts, avoiding fake vintage filter
-    overlays and readable border text, clean denoised surfaces where appropriate, and enough process
-    evidence to make the style recognizable.
-  key_features: >-
-    First color photo, Autochrome (1900s) historical camera process, emulsion behavior, lens
-    constraints, print surface, and era-specific exposure artifacts; Grainy color, starch-speckle,
-    luminous pastels; Pointillist grain, stippled pastel, lavender, rose, moss; Potato starch grain,
-    dyed starch, random RGB mosaic; Camera language native to Autochrome (1900s): genre-aware
-    framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition
-  creative_brief: >-
-    Apply Autochrome (1900s) as a cinematic-media preset over prompt X: preserve the user's
-    requested subject, then route lens behavior, palette, light, signal or film texture,
-    composition, mood, and final media craft through First color photo, Autochrome (1900s)
-    historical camera process, emulsion behavior, lens constraints, print surface, and era-specific
-    exposure artifacts, Grainy color, starch-speckle, luminous pastels, Potato starch grain, dyed
-    starch, random RGB mosaic without requiring the card image's original subject.
+  aesthetic: 'Autochrome: an early color glass plate whose image is built from a mosaic of dyed potato-starch grains, soft and pointillist.'
+  subject_treatment: Keep the prompt subject, action and setting as they are — a modern object stays modern; change only the photographic process, print surface and tonal response of the era, never the clothing, props or scenery.
+  color_and_tone: Soft muted pastels — dusty rose, sage, violet, ochre — grainy color speckle, dim luminous highlights.
+  lighting_and_shadow: Bright daylight for long exposures; soft shadows and gentle glow.
+  texture_and_material: Visible starch-grain color speckle, slight softness and dark clumps of grains.
+  camera_and_composition: Keep the requested framing; still subjects for the long exposure.
+  atmosphere_and_mood: Dreamy and tender, color remembered rather than seen.
+  rendering_and_quality: Pointillist color-screen look on glass; no modern saturated color.
+  key_features: starch-grain color mosaic; muted pastel palette; soft pointillist speckle; dim glow; glass plate softness
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Autochrome (1900s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - illustration
+  - painting
+  - cartoon
+  - 3d render
+  - digital sharpness
+  - unrequested period wardrobe or props
+  - historical setting added without request
+  - generic stock-photo face
+  - celebrity likeness
+  - readable fake text
+  - sharp modern color
   - sharp
   - digital color
   - official card scene
   - fixed thumbnail subject
   - prompt replaced by sample image
-  - readable fake text
   - watermark
   - logo clutter
   - generic stock footage
@@ -86,13 +47,17 @@ avoidRules:
   - readable border text
   - modern phone clarity
   - wrong camera process
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-048.webp
 attributes:
-  negativePrompt: >-
-    sharp, digital color, official card scene, fixed thumbnail subject, prompt replaced by sample
-    image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise,
-    fake vintage filter, readable border text, modern phone clarity, wrong camera process
+  negativePrompt: illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, sharp modern color, sharp, digital color, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

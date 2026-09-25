@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP02-142
+packId: pack_02
+name: Hand-Colored Lantern Slide
+styleAnchors:
+  - Hand-Colored Lantern Slide
+  - hand-tinted glass lantern slide
+  - hand-tinted transparent dyes
+displayName: Hand-Colored Lantern Slide
+category: 4. Photography Eras
+domain: hand-tinted glass lantern slide
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - photography-eras
+  - lantern-slide
+  - hand-colored
+  - 1910s
+visualDna:
+  aesthetic: 'Hand-colored lantern slide: a black-and-white positive on glass tinted by hand with transparent dyes and projected by a magic lantern.'
+  subject_treatment: Keep the prompt subject, action and setting as they are — a modern object stays modern; change only the photographic process, print surface and tonal response of the era, never the clothing, props or scenery.
+  color_and_tone: Monochrome base with delicate transparent washes — sky blue, rose, leaf green, amber — that do not quite follow the edges.
+  lighting_and_shadow: Projected glow through the glass, bright center and soft falloff.
+  texture_and_material: Dye pooling, slightly misaligned tints, glass cover plate, a round or arched mask.
+  camera_and_composition: Keep the requested framing inside a rounded mask shape, lit from behind.
+  atmosphere_and_mood: Wondrous and old-fashioned, a travel lecture in a darkened hall.
+  rendering_and_quality: Hand-tinted projected glass look; not modern color photography.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hand-Colored Lantern Slide as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: hand-tinted transparent dyes; monochrome base; projected glow; rounded mask; tints slipping past edges
+avoidRules:
+  - illustration
+  - painting
+  - cartoon
+  - 3d render
+  - digital sharpness
+  - unrequested period wardrobe or props
+  - historical setting added without request
+  - generic stock-photo face
+  - celebrity likeness
+  - readable fake text
+  - full modern color
+  - readable caption
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, full modern color, readable caption, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: photography-eras
+  categoryName: 4. Photography Eras
+  tags:
+    - cinematic-and-media
+    - photography-eras
+    - lantern-slide
+    - hand-colored
+    - 1910s
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: hand-tinted glass lantern slide

@@ -3,7 +3,7 @@ id: SP02-055
 packId: pack_02
 name: Cyanotype (Photo)
 category: 4. Photography Eras
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,73 +12,32 @@ tags:
   - cinematic-and-media
   - photography-eras
 visualDna:
-  aesthetic: >-
-    Cyanotype (Photo) acts as a transferable cinematic-media router: start from Blue print photo,
-    Cyanotype (Photo) historical camera process, emulsion behavior, lens constraints, print surface,
-    and era-specific exposure artifacts, Monochrome blue, contact-print silhouette, paper fiber, UV
-    exposure edge, Prussian wash and historical photographic process system built from camera
-    constraints, emulsion chemistry, lens softness, exposure timing, print surface, and era-specific
-    color response, then apply the media behavior to prompt X instead of recreating a fixed demo
-    image.
-  subject_treatment: >-
-    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
-    under Cyanotype (Photo): casting, wardrobe, props, motion cues, and silhouette hierarchy follow
-    4. Photography Eras cinematic and broadcast grammar without locking to one plot beat; preserve
-    the requested subject while making it feel captured through the era process: sitter stillness,
-    flash harshness, instant-film intimacy, chemical plate tactility, or early digital sensor
-    behavior, keeping the requested identity, silhouette, action, object function, or setting
-    legible.
-  color_and_tone: >-
-    Build color with Prussian Blue/White, deep indigo, cerulean, paper-white; treat color as
-    historical capture chemistry: silver plate, hand-tinted autochrome grain, Kodachrome warmth,
-    Polaroid dyes, disposable flash color, or cyan chemistry, with deliberate value grouping, accent
-    control, and process-specific limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Sunlight, UV exposure, contact-print daylight; make light follow camera
-    limitations through long exposure, flash falloff, lens vignetting, plate reflectance, daylight
-    softness, or early-sensor clipping, so exposure and shadow structure support the media process
-    without overwriting the requested content.
-  texture_and_material: >-
-    Render Paper fiber, watercolor paper, pulp grain; surface detail should reveal plate metal,
-    paper border, dye cloud, film grain, dust, chemical streak, plastic-lens softness, instant
-    emulsion, or sensor noise, keeping artifact scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Camera language native to Cyanotype (Photo): genre-aware framing,
-    lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose
-    through period camera distance, portrait stillness, casual snapshot crop, square instant frame,
-    pinhole drift, or documentary era framing without requiring period costumes, with frame rhythm,
-    spacing, edge hierarchy, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Calm, blue, scientific, contemplative, mood carried by Cyanotype (Photo) media
-    process, signal pressure, and visual restraint; derive mood from memory, archival strangeness,
-    family snapshot intimacy, laboratory chemistry, nostalgic color, or historical camera patience,
-    letting the media style alter interpretation without demanding a specific story, location, or
-    actor.
-  rendering_and_quality: >-
-    Finish with Blueprint, art, scientific aesthetic, photogram precision; finish as credible
-    photographic process with controlled grain and exposure artifacts, avoiding fake vintage filter
-    overlays and readable border text, clean denoised surfaces where appropriate, and enough process
-    evidence to make the style recognizable.
-  key_features: >-
-    Blue print photo, Cyanotype (Photo) historical camera process, emulsion behavior, lens
-    constraints, print surface, and era-specific exposure artifacts; Monochrome blue, contact-print
-    silhouette, paper fiber, UV exposure edge, Prussian wash; Prussian Blue/White, deep indigo,
-    cerulean, paper-white; Paper fiber, watercolor paper, pulp grain; Camera language native to
-    Cyanotype (Photo): genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and
-    style-led vertical composition
-  creative_brief: >-
-    Apply Cyanotype (Photo) as a cinematic-media preset over prompt X: preserve the user's requested
-    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
-    and final media craft through Blue print photo, Cyanotype (Photo) historical camera process,
-    emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts,
-    Monochrome blue, contact-print silhouette, paper fiber, UV exposure edge, Prussian wash, Paper
-    fiber, watercolor paper, pulp grain without requiring the card image's original subject.
+  aesthetic: 'Cyanotype photographic print: an iron-salt print exposed by sunlight under a negative, giving a Prussian-blue image on watercolor paper.'
+  subject_treatment: Keep the prompt subject, action and setting as they are — a modern object stays modern; change only the photographic process, print surface and tonal response of the era, never the clothing, props or scenery.
+  color_and_tone: Prussian blue shadows to paper-white highlights, no other color.
+  lighting_and_shadow: The original scene light translated into blue values; soft highlight edges.
+  texture_and_material: Watercolor paper tooth, brushed coating edges, slight uneven wash.
+  camera_and_composition: Keep the requested framing; brushed coating visible at the margins.
+  atmosphere_and_mood: Cool and contemplative, a blue memory printed by the sun.
+  rendering_and_quality: Contact-print photographic cyanotype, not a botanical photogram or blueprint.
+  key_features: Prussian blue monochrome; watercolor paper tooth; brushed coating edges; sun-printed tones; white highlights
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cyanotype (Photo) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - illustration
+  - painting
+  - cartoon
+  - 3d render
+  - digital sharpness
+  - unrequested period wardrobe or props
+  - historical setting added without request
+  - generic stock-photo face
+  - celebrity likeness
+  - readable fake text
   - color
+  - bicycle wheel
   - official card scene
   - fixed thumbnail subject
   - prompt replaced by sample image
-  - readable fake text
   - watermark
   - logo clutter
   - generic stock footage
@@ -87,13 +46,17 @@ avoidRules:
   - readable border text
   - modern phone clarity
   - wrong camera process
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-055.webp
 attributes:
-  negativePrompt: >-
-    color, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable
-    fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage
-    filter, readable border text, modern phone clarity, wrong camera process
+  negativePrompt: illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, color, bicycle wheel, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

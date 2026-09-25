@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP02-144
+packId: pack_02
+name: 1970s Faded Color Print
+styleAnchors:
+  - 1970s Faded Color Print
+  - faded 1970s chromogenic print
+  - faded cyan dye
+displayName: 1970s Faded Color Print
+category: 4. Photography Eras
+domain: faded 1970s chromogenic print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - photography-eras
+  - faded-print
+  - chromogenic
+  - 1970s
+visualDna:
+  aesthetic: '1970s faded color print: a family snapshot on chromogenic paper whose cyan dye has faded, leaving a warm magenta-orange cast.'
+  subject_treatment: Keep the prompt subject, action and setting as they are — a modern object stays modern; change only the photographic process, print surface and tonal response of the era, never the clothing, props or scenery.
+  color_and_tone: Magenta and orange dominance, weak cyan, washed-out skies, yellowed whites.
+  lighting_and_shadow: Sunny daylight or flash; shadows lifted and slightly brownish.
+  texture_and_material: Satin print surface, soft grain, slight fading at the edges.
+  camera_and_composition: Keep the requested framing with a casual, slightly off-center family snapshot composition.
+  atmosphere_and_mood: Warm and bittersweet, a summer kept in an old album.
+  rendering_and_quality: Dye-fading in the print; not an overall sepia filter.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 1970s Faded Color Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: faded cyan dye; magenta-orange cast; yellowed whites; satin print surface; snapshot framing
+avoidRules:
+  - illustration
+  - painting
+  - cartoon
+  - 3d render
+  - digital sharpness
+  - unrequested period wardrobe or props
+  - historical setting added without request
+  - generic stock-photo face
+  - celebrity likeness
+  - readable fake text
+  - neutral balanced color
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, neutral balanced color, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: photography-eras
+  categoryName: 4. Photography Eras
+  tags:
+    - cinematic-and-media
+    - photography-eras
+    - faded-print
+    - chromogenic
+    - 1970s
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: faded 1970s chromogenic print

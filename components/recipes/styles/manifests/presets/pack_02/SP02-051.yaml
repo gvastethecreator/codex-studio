@@ -3,7 +3,7 @@ id: SP02-051
 packId: pack_02
 name: Disposable Camera (90s)
 category: 4. Photography Eras
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,72 +12,32 @@ tags:
   - cinematic-and-media
   - photography-eras
 visualDna:
-  aesthetic: >-
-    Disposable Camera (90s) acts as a transferable cinematic-media router: start from Disposable 90s
-    snapshot, Disposable Camera (90s) historical camera process, emulsion behavior, lens
-    constraints, print surface, and era-specific exposure artifacts, Vignette, flash hotspot,
-    crooked horizon, plastic-lens softness, lab-scan grain and historical photographic process
-    system built from camera constraints, emulsion chemistry, lens softness, exposure timing, print
-    surface, and era-specific color response, then apply the media behavior to prompt X instead of
-    recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
-    under Disposable Camera (90s): casting, wardrobe, props, motion cues, and silhouette hierarchy
-    follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat;
-    preserve the requested subject while making it feel captured through the era process: sitter
-    stillness, flash harshness, instant-film intimacy, chemical plate tactility, or early digital
-    sensor behavior, keeping the requested identity, silhouette, action, object function, or setting
-    legible.
-  color_and_tone: >-
-    Build color with High contrast, punchy saturation, blown highlights, muddy shadow, cheap lab
-    color; treat color as historical capture chemistry: silver plate, hand-tinted autochrome grain,
-    Kodachrome warmth, Polaroid dyes, disposable flash color, or cyan chemistry, with deliberate
-    value grouping, accent control, and process-specific limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Harsh flash, direct frontal, overexposed 3-feet-away; make light follow
-    camera limitations through long exposure, flash falloff, lens vignetting, plate reflectance,
-    daylight softness, or early-sensor clipping, so exposure and shadow structure support the media
-    process without overwriting the requested content.
-  texture_and_material: >-
-    Render Grainy 400 ISO, plastic-lens softness, color fringe; surface detail should reveal plate
-    metal, paper border, dye cloud, film grain, dust, chemical streak, plastic-lens softness,
-    instant emulsion, or sensor noise, keeping artifact scale coherent and avoiding noisy filler
-    texture.
-  camera_and_composition: >-
-    Structure the image through Flash reflection, red-edge glare, plastic lens warp; compose through
-    period camera distance, portrait stillness, casual snapshot crop, square instant frame, pinhole
-    drift, or documentary era framing without requiring period costumes, with frame rhythm, spacing,
-    edge hierarchy, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Memory, casual, 90s, disposable immediacy; derive mood from memory, archival
-    strangeness, family snapshot intimacy, laboratory chemistry, nostalgic color, or historical
-    camera patience, letting the media style alter interpretation without demanding a specific
-    story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Candid, unposed, cheap-lens spontaneity, one-roll urgency; finish as credible
-    photographic process with controlled grain and exposure artifacts, avoiding fake vintage filter
-    overlays and readable border text, clean denoised surfaces where appropriate, and enough process
-    evidence to make the style recognizable.
-  key_features: >-
-    Disposable 90s snapshot, Disposable Camera (90s) historical camera process, emulsion behavior,
-    lens constraints, print surface, and era-specific exposure artifacts; Vignette, flash hotspot,
-    crooked horizon, plastic-lens softness, lab-scan grain; High contrast, punchy saturation, blown
-    highlights, muddy shadow, cheap lab color; Grainy 400 ISO, plastic-lens softness, color fringe;
-    Flash reflection, red-edge glare, plastic lens warp
-  creative_brief: >-
-    Apply Disposable Camera (90s) as a cinematic-media preset over prompt X: preserve the user's
-    requested subject, then route lens behavior, palette, light, signal or film texture,
-    composition, mood, and final media craft through Disposable 90s snapshot, Disposable Camera
-    (90s) historical camera process, emulsion behavior, lens constraints, print surface, and
-    era-specific exposure artifacts, Vignette, flash hotspot, crooked horizon, plastic-lens
-    softness, lab-scan grain, Grainy 400 ISO, plastic-lens softness, color fringe without requiring
-    the card image's original subject.
+  aesthetic: '90s disposable-camera lab print: a 4x6 drugstore print from a single-use camera, with flash, warm lab color and a slightly off exposure.'
+  subject_treatment: Keep the prompt subject, action and setting as they are — a modern object stays modern; change only the photographic process, print surface and tonal response of the era, never the clothing, props or scenery.
+  color_and_tone: Warm orange-magenta lab cast, punchy reds, green-tinted shadows, blown flash faces.
+  lighting_and_shadow: Built-in flash at night, harsh falloff; or bright hazy daylight.
+  texture_and_material: Visible grain, soft plastic lens, slightly crooked horizon, matte print surface.
+  camera_and_composition: Snapshot framing, subjects cut at the edges, horizon tilted.
+  atmosphere_and_mood: Carefree and chaotic, the best night of a 90s summer.
+  rendering_and_quality: Drugstore print look with no date stamp; distinct from the modern single-use look in pack_01.
+  key_features: warm lab print cast; flash-blown faces; grain; tilted snapshot framing; matte 4x6 surface
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Disposable Camera (90s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - illustration
+  - painting
+  - cartoon
+  - 3d render
+  - digital sharpness
+  - unrequested period wardrobe or props
+  - historical setting added without request
+  - generic stock-photo face
+  - celebrity likeness
+  - readable fake text
   - professional lighting
+  - date stamp
   - official card scene
   - fixed thumbnail subject
   - prompt replaced by sample image
-  - readable fake text
   - watermark
   - logo clutter
   - generic stock footage
@@ -86,13 +46,17 @@ avoidRules:
   - readable border text
   - modern phone clarity
   - wrong camera process
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-051.webp
 attributes:
-  negativePrompt: >-
-    professional lighting, official card scene, fixed thumbnail subject, prompt replaced by sample
-    image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise,
-    fake vintage filter, readable border text, modern phone clarity, wrong camera process
+  negativePrompt: illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, professional lighting, date stamp, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

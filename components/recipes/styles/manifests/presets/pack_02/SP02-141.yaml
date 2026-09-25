@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP02-141
+packId: pack_02
+name: Pictorialist Platinum Print
+styleAnchors:
+  - Pictorialist Platinum Print
+  - pictorialist platinum printing
+  - soft-focus bloom
+displayName: Pictorialist Platinum Print
+category: 4. Photography Eras
+domain: pictorialist platinum printing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - photography-eras
+  - pictorialism
+  - platinum-print
+  - 1900s
+visualDna:
+  aesthetic: 'Pictorialist platinum print: an early-1900s art photograph made with a soft-focus lens and printed in platinum on matte paper to look like a painting.'
+  subject_treatment: Keep the prompt subject, action and setting as they are — a modern object stays modern; change only the photographic process, print surface and tonal response of the era, never the clothing, props or scenery.
+  color_and_tone: Long, delicate scale of warm silver greys, velvety blacks, no harsh whites.
+  lighting_and_shadow: Mist, backlight and diffuse window light; glowing halated highlights.
+  texture_and_material: Matte paper absorbing the image, soft-focus bloom around every edge.
+  camera_and_composition: Keep the requested framing; asymmetric painterly composition with atmosphere.
+  atmosphere_and_mood: Poetic and hushed, the world softened into a reverie.
+  rendering_and_quality: Platinum-print tonality with soft-focus glow; not crisp documentary.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pictorialist Platinum Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: soft-focus bloom; long warm grey scale; matte platinum paper; misty backlight; painterly composition
+avoidRules:
+  - illustration
+  - painting
+  - cartoon
+  - 3d render
+  - digital sharpness
+  - unrequested period wardrobe or props
+  - historical setting added without request
+  - generic stock-photo face
+  - celebrity likeness
+  - readable fake text
+  - crisp documentary sharpness
+  - high contrast
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, crisp documentary sharpness, high contrast, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: photography-eras
+  categoryName: 4. Photography Eras
+  tags:
+    - cinematic-and-media
+    - photography-eras
+    - pictorialism
+    - platinum-print
+    - 1900s
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: pictorialist platinum printing

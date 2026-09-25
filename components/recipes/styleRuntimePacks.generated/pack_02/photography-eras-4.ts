@@ -8,28 +8,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Daguerreotype (1840s)',
     category: '4. Photography Eras',
     negativePrompt:
-      'color, paper, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process',
+      'illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, color, paper texture, bicycle, paper, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Daguerreotype (1840s) acts as a transferable cinematic-media router: start from Silver plate photo, Daguerreotype (1840s) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts, Vignette, brass frame, chemical bloom, tarnished edge and historical photographic process system built from camera constraints, emulsion chemistry, lens softness, exposure timing, print surface, and era-specific color response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Daguerreotype: a one-of-a-kind image on a mirror-polished silver-plated copper plate, finely detailed and flipping between positive and negative as the viewing angle changes.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Daguerreotype (1840s): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while making it feel captured through the era process: sitter stillness, flash harshness, instant-film intimacy, chemical plate tactility, or early digital sensor behavior, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting as they are — a modern object stays modern; change only the photographic process, print surface and tonal response of the era, never the clothing, props or scenery.',
       color_and_tone:
-        'Build color with Metallic B&W, mirrored silver, smoky shadow, mercury gleam; treat color as historical capture chemistry: silver plate, hand-tinted autochrome grain, Kodachrome warmth, Polaroid dyes, disposable flash color, or cyan chemistry, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Cool silver greys with mirror-dark shadows; a blue, rose and gold tarnish halo creeping in from the plate edges.',
       lighting_and_shadow:
-        'Handle light through Long exposure, skylight studio, minutes-long stillness; make light follow camera limitations through long exposure, flash falloff, lens vignetting, plate reflectance, daylight softness, or early-sensor clipping, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Very bright skylight for a long exposure; soft even modeling, luminous highlights.',
       texture_and_material:
-        'Render Scratches, tarnish, silver plate, copper backing; surface detail should reveal plate metal, paper border, dye cloud, film grain, dust, chemical streak, plastic-lens softness, instant emulsion, or sensor noise, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Mirror sheen, microscopic detail, fine hairline scratches, tarnish bloom and a brass mat edge.',
       camera_and_composition:
-        'Structure the image through Long-exposure drift, breath ghost, mirrored plate depth; compose through period camera distance, portrait stillness, casual snapshot crop, square instant frame, pinhole drift, or documentary era framing without requiring period costumes, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Haunting, history, frozen time, Victorian silence; derive mood from memory, archival strangeness, family snapshot intimacy, laboratory chemistry, nostalgic color, or historical camera patience, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Keep the requested framing inside a small oval or rounded plate; subjects still enough for a long exposure.',
+      atmosphere_and_mood: 'Ghostly and precious, a reflection frozen in polished silver.',
       rendering_and_quality:
-        'Finish with Ghostly, ancient, mirror-reflection depth, 1840s stillness; finish as credible photographic process with controlled grain and exposure artifacts, avoiding fake vintage filter overlays and readable border text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Silver-plate look with positive-negative ambiguity in the shadows; no paper texture.',
       key_features:
-        'Silver plate photo, Daguerreotype (1840s) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts; Vignette, brass frame, chemical bloom, tarnished edge; Metallic B&W, mirrored silver, smoky shadow, mercury gleam; Scratches, tarnish, silver plate, copper backing; Long-exposure drift, breath ghost, mirrored plate depth',
+        'mirror silver plate; iridescent tarnish halo; extreme fine detail; brass mat edge; positive-negative shimmer',
       creative_brief:
-        "Apply Daguerreotype (1840s) as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Silver plate photo, Daguerreotype (1840s) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts, Vignette, brass frame, chemical bloom, tarnished edge, Scratches, tarnish, silver plate, copper backing without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Daguerreotype (1840s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +36,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Tintype (Civil War)',
     category: '4. Photography Eras',
     negativePrompt:
-      'clean, white, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process',
+      'illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, clean white paper, clean, white, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Tintype (Civil War) acts as a transferable cinematic-media router: start from Metal plate photo, Tintype (Civil War) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts, Black edges, iron oxidation, thumb-mark, plate wear and historical photographic process system built from camera constraints, emulsion chemistry, lens softness, exposure timing, print surface, and era-specific color response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Tintype: a collodion positive on a thin black-lacquered iron plate, fast, cheap and made in a portable darkroom.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Tintype (Civil War): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while making it feel captured through the era process: sitter stillness, flash harshness, instant-film intimacy, chemical plate tactility, or early digital sensor behavior, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting as they are — a modern object stays modern; change only the photographic process, print surface and tonal response of the era, never the clothing, props or scenery.',
       color_and_tone:
-        'Build color with Dark Sepia, iron grey, chocolate brown, muddy cream; treat color as historical capture chemistry: silver plate, hand-tinted autochrome grain, Kodachrome warmth, Polaroid dyes, disposable flash color, or cyan chemistry, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Flat daylight, harsh skylight, no fill, stark contrast; make light follow camera limitations through long exposure, flash falloff, lens vignetting, plate reflectance, daylight softness, or early-sensor clipping, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Creamy olive-grey highlights on a dark brown-black ground; orthochromatic dark reds and pale blues.',
+      lighting_and_shadow: 'Hard daylight or skylight, strong falloff at the plate edges.',
       texture_and_material:
-        'Render Chemical stains, iron plate, collodion pour, hand-poured edge; surface detail should reveal plate metal, paper border, dye cloud, film grain, dust, chemical streak, plastic-lens softness, instant emulsion, or sensor noise, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Black lacquered edges where the collodion stops, pour lines, scratches, rust spots and dents.',
       camera_and_composition:
-        'Structure the image through Camera language native to Tintype (Civil War): genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose through period camera distance, portrait stillness, casual snapshot crop, square instant frame, pinhole drift, or documentary era framing without requiring period costumes, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Serious, old, stoic endurance, documentary gravity; derive mood from memory, archival strangeness, family snapshot intimacy, laboratory chemistry, nostalgic color, or historical camera patience, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Keep the requested framing; a Petzval lens with a sharp center and soft swirl.',
+      atmosphere_and_mood: 'Stoic and raw, a hard-won portrait on a scrap of metal.',
       rendering_and_quality:
-        'Finish with Rough, historic, iron-plate authenticity, unvarnished truth; finish as credible photographic process with controlled grain and exposure artifacts, avoiding fake vintage filter overlays and readable border text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Iron-plate collodion look on dark metal; not a glass plate and not a paper print.',
       key_features:
-        'Metal plate photo, Tintype (Civil War) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts; Black edges, iron oxidation, thumb-mark, plate wear; Dark Sepia, iron grey, chocolate brown, muddy cream; Chemical stains, iron plate, collodion pour, hand-poured edge; Camera language native to Tintype (Civil War): genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
+        'black iron plate; olive-grey creamy highlights; lacquered edges and pour lines; rust and scratches; Petzval swirl',
       creative_brief:
-        "Apply Tintype (Civil War) as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Metal plate photo, Tintype (Civil War) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts, Black edges, iron oxidation, thumb-mark, plate wear, Chemical stains, iron plate, collodion pour, hand-poured edge without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tintype (Civil War) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +63,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Autochrome (1900s)',
     category: '4. Photography Eras',
     negativePrompt:
-      'sharp, digital color, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process',
+      'illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, sharp modern color, sharp, digital color, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Autochrome (1900s) acts as a transferable cinematic-media router: start from First color photo, Autochrome (1900s) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts, Grainy color, starch-speckle, luminous pastels and historical photographic process system built from camera constraints, emulsion chemistry, lens softness, exposure timing, print surface, and era-specific color response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Autochrome: an early color glass plate whose image is built from a mosaic of dyed potato-starch grains, soft and pointillist.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Autochrome (1900s): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while making it feel captured through the era process: sitter stillness, flash harshness, instant-film intimacy, chemical plate tactility, or early digital sensor behavior, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting as they are — a modern object stays modern; change only the photographic process, print surface and tonal response of the era, never the clothing, props or scenery.',
       color_and_tone:
-        'Build color with Pointillist grain, stippled pastel, lavender, rose, moss; treat color as historical capture chemistry: silver plate, hand-tinted autochrome grain, Kodachrome warmth, Polaroid dyes, disposable flash color, or cyan chemistry, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Soft, dreamy, diffuse daylight, window glow; make light follow camera limitations through long exposure, flash falloff, lens vignetting, plate reflectance, daylight softness, or early-sensor clipping, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Soft muted pastels — dusty rose, sage, violet, ochre — grainy color speckle, dim luminous highlights.',
+      lighting_and_shadow: 'Bright daylight for long exposures; soft shadows and gentle glow.',
       texture_and_material:
-        'Render Potato starch grain, dyed starch, random RGB mosaic; surface detail should reveal plate metal, paper border, dye cloud, film grain, dust, chemical streak, plastic-lens softness, instant emulsion, or sensor noise, keeping artifact scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Camera language native to Autochrome (1900s): genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose through period camera distance, portrait stillness, casual snapshot crop, square instant frame, pinhole drift, or documentary era framing without requiring period costumes, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Dreamy, vintage, Belle Epoque warmth, first-color wonder; derive mood from memory, archival strangeness, family snapshot intimacy, laboratory chemistry, nostalgic color, or historical camera patience, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Impressionist photo, pointillism, painterly light capture; finish as credible photographic process with controlled grain and exposure artifacts, avoiding fake vintage filter overlays and readable border text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Visible starch-grain color speckle, slight softness and dark clumps of grains.',
+      camera_and_composition: 'Keep the requested framing; still subjects for the long exposure.',
+      atmosphere_and_mood: 'Dreamy and tender, color remembered rather than seen.',
+      rendering_and_quality: 'Pointillist color-screen look on glass; no modern saturated color.',
       key_features:
-        'First color photo, Autochrome (1900s) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts; Grainy color, starch-speckle, luminous pastels; Pointillist grain, stippled pastel, lavender, rose, moss; Potato starch grain, dyed starch, random RGB mosaic; Camera language native to Autochrome (1900s): genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
+        'starch-grain color mosaic; muted pastel palette; soft pointillist speckle; dim glow; glass plate softness',
       creative_brief:
-        "Apply Autochrome (1900s) as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through First color photo, Autochrome (1900s) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts, Grainy color, starch-speckle, luminous pastels, Potato starch grain, dyed starch, random RGB mosaic without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Autochrome (1900s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +88,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Kodachrome (50s)',
     category: '4. Photography Eras',
     negativePrompt:
-      'faded, digital, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process',
+      'illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, faded print, digital, faded, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Kodachrome (50s) acts as a transferable cinematic-media router: start from National Geographic slide, Kodachrome (50s) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts, Deep blacks, red pop, golden highlights, fine grain, projected slide glow and historical photographic process system built from camera constraints, emulsion chemistry, lens softness, exposure timing, print surface, and era-specific color response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Projected 1950s Kodachrome slide: mid-century reversal color seen as a lit transparency, with projector glow, slight vignetting and dust on the slide.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Kodachrome (50s): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while making it feel captured through the era process: sitter stillness, flash harshness, instant-film intimacy, chemical plate tactility, or early digital sensor behavior, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting as they are — a modern object stays modern; change only the photographic process, print surface and tonal response of the era, never the clothing, props or scenery.',
       color_and_tone:
-        'Build color with Rich Red/Yellow, Kodachrome red, golden wheat, azure sky; treat color as historical capture chemistry: silver plate, hand-tinted autochrome grain, Kodachrome warmth, Polaroid dyes, disposable flash color, or cyan chemistry, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through High contrast sun, travel-magazine daylight, crisp shadow; make light follow camera limitations through long exposure, flash falloff, lens vignetting, plate reflectance, daylight softness, or early-sensor clipping, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Rich reds, deep blues and warm golden highlights; dense blacks; slightly warm projector cast.',
+      lighting_and_shadow: 'Bright sunny daylight in the image; projector hot spot in the center.',
       texture_and_material:
-        'Render Fine grain, dye-cloud smooth, archival stability; surface detail should reveal plate metal, paper border, dye cloud, film grain, dust, chemical streak, plastic-lens softness, instant emulsion, or sensor noise, keeping artifact scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Camera language native to Kodachrome (50s): genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose through period camera distance, portrait stillness, casual snapshot crop, square instant frame, pinhole drift, or documentary era framing without requiring period costumes, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Sunny, classic, optimistic, slide-projector memory; derive mood from memory, archival strangeness, family snapshot intimacy, laboratory chemistry, nostalgic color, or historical camera patience, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Very fine grain, a few dust specks and a hair on the slide, soft corner falloff.',
+      camera_and_composition: 'Keep the requested framing; the image glows as projected light.',
+      atmosphere_and_mood: 'Sunny and nostalgic, a family slide show on a summer evening.',
       rendering_and_quality:
-        'Finish with Vivid, nostalgic, mid-century optimism, slide-projector glow; finish as credible photographic process with controlled grain and exposure artifacts, avoiding fake vintage filter overlays and readable border text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Projected-transparency glow; the stock response itself belongs to Kodachrome 64 in pack_01.',
       key_features:
-        'National Geographic slide, Kodachrome (50s) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts; Deep blacks, red pop, golden highlights, fine grain, projected slide glow; Rich Red/Yellow, Kodachrome red, golden wheat, azure sky; Fine grain, dye-cloud smooth, archival stability; Camera language native to Kodachrome (50s): genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
+        'projected slide glow; red and blue dye richness; center hot spot; dust specks on the slide; warm projector cast',
       creative_brief:
-        "Apply Kodachrome (50s) as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through National Geographic slide, Kodachrome (50s) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts, Deep blacks, red pop, golden highlights, fine grain, projected slide glow, Fine grain, dye-cloud smooth, archival stability without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kodachrome (50s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +114,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Polaroid (Instant)',
     category: '4. Photography Eras',
     negativePrompt:
-      'sharp, hd, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process',
+      'illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, sharp hd, readable handwriting on the frame, sharp, hd, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Polaroid (Instant) acts as a transferable cinematic-media router: start from Instant film, Polaroid (Instant) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts, White border, square format, chemical fog, developer smear, soft plastic-lens focus and historical photographic process system built from camera constraints, emulsion chemistry, lens softness, exposure timing, print surface, and era-specific color response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Polaroid instant print: the whole physical print, with its square image, wide white frame thicker at the bottom and instant-film chemistry.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Polaroid (Instant): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while making it feel captured through the era process: sitter stillness, flash harshness, instant-film intimacy, chemical plate tactility, or early digital sensor behavior, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting as they are; present them as the image inside a white-framed instant print, never adding period clothes or props.',
       color_and_tone:
-        'Build color with Green/Blue cast, cool shift, muted pastel, cream border; treat color as historical capture chemistry: silver plate, hand-tinted autochrome grain, Kodachrome warmth, Polaroid dyes, disposable flash color, or cyan chemistry, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Flash, direct pop, close-range glare, redeye bounce; make light follow camera limitations through long exposure, flash falloff, lens vignetting, plate reflectance, daylight softness, or early-sensor clipping, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Soft creamy color, cyan-green shadows, warm highlights, slightly faded blacks.',
+      lighting_and_shadow: 'Built-in flash or bright daylight; close flash falloff.',
       texture_and_material:
-        'Render Soft focus, plastic lens, diffusion, chemical developer; surface detail should reveal plate metal, paper border, dye cloud, film grain, dust, chemical streak, plastic-lens softness, instant emulsion, or sensor noise, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'White plastic frame, developer spread marks along the edges, soft plastic-lens focus.',
       camera_and_composition:
-        'Structure the image through Chemical leak, developer smear, edge imperfection; compose through period camera distance, portrait stillness, casual snapshot crop, square instant frame, pinhole drift, or documentary era framing without requiring period costumes, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Nostalgic, fun, tactile memory, scrapbook intimacy; derive mood from memory, archival strangeness, family snapshot intimacy, laboratory chemistry, nostalgic color, or historical camera patience, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Square image centered in a frame with a wider bottom border, shown flat.',
+      atmosphere_and_mood: 'Intimate and playful, a moment you can hold in your hand.',
       rendering_and_quality:
-        'Finish with Personal, memory, snapshot intimacy, instant nostalgia; finish as credible photographic process with controlled grain and exposure artifacts, avoiding fake vintage filter overlays and readable border text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Physical instant print object; the emulsion look alone belongs to Polaroid 600 in pack_01.',
       key_features:
-        'Instant film, Polaroid (Instant) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts; White border, square format, chemical fog, developer smear, soft plastic-lens focus; Green/Blue cast, cool shift, muted pastel, cream border; Soft focus, plastic lens, diffusion, chemical developer; Chemical leak, developer smear, edge imperfection',
+        'white frame with wide bottom; square image; developer spread marks; cyan-green shadows; close flash',
       creative_brief:
-        "Apply Polaroid (Instant) as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Instant film, Polaroid (Instant) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts, White border, square format, chemical fog, developer smear, soft plastic-lens focus, Soft focus, plastic lens, diffusion, chemical developer without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Polaroid (Instant) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +141,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Disposable Camera (90s)',
     category: '4. Photography Eras',
     negativePrompt:
-      'professional lighting, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process',
+      'illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, professional lighting, date stamp, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Disposable Camera (90s) acts as a transferable cinematic-media router: start from Disposable 90s snapshot, Disposable Camera (90s) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts, Vignette, flash hotspot, crooked horizon, plastic-lens softness, lab-scan grain and historical photographic process system built from camera constraints, emulsion chemistry, lens softness, exposure timing, print surface, and era-specific color response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        '90s disposable-camera lab print: a 4x6 drugstore print from a single-use camera, with flash, warm lab color and a slightly off exposure.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Disposable Camera (90s): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while making it feel captured through the era process: sitter stillness, flash harshness, instant-film intimacy, chemical plate tactility, or early digital sensor behavior, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting as they are — a modern object stays modern; change only the photographic process, print surface and tonal response of the era, never the clothing, props or scenery.',
       color_and_tone:
-        'Build color with High contrast, punchy saturation, blown highlights, muddy shadow, cheap lab color; treat color as historical capture chemistry: silver plate, hand-tinted autochrome grain, Kodachrome warmth, Polaroid dyes, disposable flash color, or cyan chemistry, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Harsh flash, direct frontal, overexposed 3-feet-away; make light follow camera limitations through long exposure, flash falloff, lens vignetting, plate reflectance, daylight softness, or early-sensor clipping, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Warm orange-magenta lab cast, punchy reds, green-tinted shadows, blown flash faces.',
+      lighting_and_shadow: 'Built-in flash at night, harsh falloff; or bright hazy daylight.',
       texture_and_material:
-        'Render Grainy 400 ISO, plastic-lens softness, color fringe; surface detail should reveal plate metal, paper border, dye cloud, film grain, dust, chemical streak, plastic-lens softness, instant emulsion, or sensor noise, keeping artifact scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Flash reflection, red-edge glare, plastic lens warp; compose through period camera distance, portrait stillness, casual snapshot crop, square instant frame, pinhole drift, or documentary era framing without requiring period costumes, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Memory, casual, 90s, disposable immediacy; derive mood from memory, archival strangeness, family snapshot intimacy, laboratory chemistry, nostalgic color, or historical camera patience, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Visible grain, soft plastic lens, slightly crooked horizon, matte print surface.',
+      camera_and_composition: 'Snapshot framing, subjects cut at the edges, horizon tilted.',
+      atmosphere_and_mood: 'Carefree and chaotic, the best night of a 90s summer.',
       rendering_and_quality:
-        'Finish with Candid, unposed, cheap-lens spontaneity, one-roll urgency; finish as credible photographic process with controlled grain and exposure artifacts, avoiding fake vintage filter overlays and readable border text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Drugstore print look with no date stamp; distinct from the modern single-use look in pack_01.',
       key_features:
-        'Disposable 90s snapshot, Disposable Camera (90s) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts; Vignette, flash hotspot, crooked horizon, plastic-lens softness, lab-scan grain; High contrast, punchy saturation, blown highlights, muddy shadow, cheap lab color; Grainy 400 ISO, plastic-lens softness, color fringe; Flash reflection, red-edge glare, plastic lens warp',
+        'warm lab print cast; flash-blown faces; grain; tilted snapshot framing; matte 4x6 surface',
       creative_brief:
-        "Apply Disposable Camera (90s) as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Disposable 90s snapshot, Disposable Camera (90s) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts, Vignette, flash hotspot, crooked horizon, plastic-lens softness, lab-scan grain, Grainy 400 ISO, plastic-lens softness, color fringe without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Disposable Camera (90s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,28 +167,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Lomography',
     category: '4. Photography Eras',
     negativePrompt:
-      'correct color, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process',
+      'illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, correct color, bicycle, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Lomography acts as a transferable cinematic-media router: start from Toy camera (Holga), Lomography historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts, Light leaks, sprocket holes, film rebate, double-exposure ghost and historical photographic process system built from camera constraints, emulsion chemistry, lens softness, exposure timing, print surface, and era-specific color response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Holga toy-camera lomography: a plastic 120 camera with a leaky body and a soft plastic lens, often shot on 35 mm so the sprocket holes are exposed.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Lomography: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while making it feel captured through the era process: sitter stillness, flash harshness, instant-film intimacy, chemical plate tactility, or early digital sensor behavior, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting as they are; add only the toy-camera artifacts — leaks, rebate, vignette — never period props.',
       color_and_tone:
-        'Build color with Cross processed, color-shifted, purple drift, green cast, unpredictable palette; treat color as historical capture chemistry: silver plate, hand-tinted autochrome grain, Kodachrome warmth, Polaroid dyes, disposable flash color, or cyan chemistry, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Leak, light-struck frame, accidental exposure, red window; make light follow camera limitations through long exposure, flash falloff, lens vignetting, plate reflectance, daylight softness, or early-sensor clipping, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Oversaturated cross-shifted color, red-orange light leaks, dark heavy corners.',
+      lighting_and_shadow: 'Whatever light is there, with orange leaks burning in from one edge.',
       texture_and_material:
-        'Render Plastic lens blur, toy-optics softness, zone focus mush; surface detail should reveal plate metal, paper border, dye cloud, film grain, dust, chemical streak, plastic-lens softness, instant emulsion, or sensor noise, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Exposed sprocket-hole rebate along an edge, soft blur, overlapping frame edges.',
       camera_and_composition:
-        'Structure the image through Vignette blur, edge falloff, tunnel softness; compose through period camera distance, portrait stillness, casual snapshot crop, square instant frame, pinhole drift, or documentary era framing without requiring period costumes, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Experimental, fun, rule-breaking, analog play; derive mood from memory, archival strangeness, family snapshot intimacy, laboratory chemistry, nostalgic color, or historical camera patience, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Square-ish frame, heavy vignette, occasional overlap with the neighboring frame.',
+      atmosphere_and_mood: 'Spontaneous and experimental, every happy accident gladly embraced.',
       rendering_and_quality:
-        'Finish with Artsy, weird, lo-fi aesthetic, happy accident; finish as credible photographic process with controlled grain and exposure artifacts, avoiding fake vintage filter overlays and readable border text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Toy-camera artifacts in the negative; distinct from the Lomo LC-A lens look in pack_01.',
       key_features:
-        'Toy camera (Holga), Lomography historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts; Light leaks, sprocket holes, film rebate, double-exposure ghost; Cross processed, color-shifted, purple drift, green cast, unpredictable palette; Plastic lens blur, toy-optics softness, zone focus mush; Vignette blur, edge falloff, tunnel softness',
+        'red-orange light leaks; exposed sprocket rebate; heavy vignette; plastic-lens blur; overlapping frames',
       creative_brief:
-        "Apply Lomography as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Toy camera (Holga), Lomography historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts, Light leaks, sprocket holes, film rebate, double-exposure ghost, Plastic lens blur, toy-optics softness, zone focus mush without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lomography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -211,28 +194,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Wet Plate Collodion',
     category: '4. Photography Eras',
     negativePrompt:
-      'clean, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process',
+      'illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, clean edges, clean, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Wet Plate Collodion acts as a transferable cinematic-media router: start from Glass plate negative, Wet Plate Collodion historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts, Focus falloff, petzval swirl, glass-plate negative and historical photographic process system built from camera constraints, emulsion chemistry, lens softness, exposure timing, print surface, and era-specific color response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Wet plate glass negative: a collodion negative on glass, printed or scanned into a positive, with the chipped edges and pour marks of the plate itself.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Wet Plate Collodion: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while making it feel captured through the era process: sitter stillness, flash harshness, instant-film intimacy, chemical plate tactility, or early digital sensor behavior, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting as they are — a modern object stays modern; change only the photographic process, print surface and tonal response of the era, never the clothing, props or scenery.',
       color_and_tone:
-        'Build color with Cream/Black, warm ivory, amber shadow, silver nitrate; treat color as historical capture chemistry: silver plate, hand-tinted autochrome grain, Kodachrome warmth, Polaroid dyes, disposable flash color, or cyan chemistry, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Shallow DOF, wide-open brass lens, thin focal plane; make light follow camera limitations through long exposure, flash falloff, lens vignetting, plate reflectance, daylight softness, or early-sensor clipping, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Warm neutral monochrome with deep blacks; orthochromatic dark reds and pale skies.',
+      lighting_and_shadow: 'Large skylight or daylight, several-second exposures, soft modeling.',
       texture_and_material:
-        'Render Chemical swirls, collodion pour, edge imperfection, hand-coating; surface detail should reveal plate metal, paper border, dye cloud, film grain, dust, chemical streak, plastic-lens softness, instant emulsion, or sensor noise, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Chipped glass corners, silvering at the edges, collodion pour marks, fine cracks and dust.',
       camera_and_composition:
-        'Structure the image through Peeling emulsion, lifted edge, craquelure decay; compose through period camera distance, portrait stillness, casual snapshot crop, square instant frame, pinhole drift, or documentary era framing without requiring period costumes, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Timeless, alchemical, eternal stillness, process-haunted; derive mood from memory, archival strangeness, family snapshot intimacy, laboratory chemistry, nostalgic color, or historical camera patience, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Keep the requested framing; a large-format view camera with Petzval falloff.',
+      atmosphere_and_mood: 'Documentary and weathered, a record that survived on fragile glass.',
       rendering_and_quality:
-        'Finish with Handmade, fine art, alchemical process, one-of-one artifact; finish as credible photographic process with controlled grain and exposure artifacts, avoiding fake vintage filter overlays and readable border text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Glass-negative print look with plate edges visible; distinct from the black-backed ambrotype in pack_01.',
       key_features:
-        'Glass plate negative, Wet Plate Collodion historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts; Focus falloff, petzval swirl, glass-plate negative; Cream/Black, warm ivory, amber shadow, silver nitrate; Chemical swirls, collodion pour, edge imperfection, hand-coating; Peeling emulsion, lifted edge, craquelure decay',
+        'glass plate edges; chipped corners and silvering; collodion pour marks; orthochromatic tones; view-camera falloff',
       creative_brief:
-        "Apply Wet Plate Collodion as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Glass plate negative, Wet Plate Collodion historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts, Focus falloff, petzval swirl, glass-plate negative, Chemical swirls, collodion pour, edge imperfection, hand-coating without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wet Plate Collodion as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -240,28 +221,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Infrared Film (Aerochrome)',
     category: '4. Photography Eras',
     negativePrompt:
-      'natural color, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process',
+      'illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, natural green foliage, natural color, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Infrared Film (Aerochrome) acts as a transferable cinematic-media router: start from False color IR, Infrared Film (Aerochrome) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts, False-color mapping, infrared reflectance, cyan-magenta split, spectral white bloom and historical photographic process system built from camera constraints, emulsion chemistry, lens softness, exposure timing, print surface, and era-specific color response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Aerochrome color infrared: a false-color reversal film where healthy foliage turns red and magenta and skies go deep cyan-blue.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Infrared Film (Aerochrome): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while making it feel captured through the era process: sitter stillness, flash harshness, instant-film intimacy, chemical plate tactility, or early digital sensor behavior, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting as they are — a modern object stays modern; change only the photographic process, print surface and tonal response of the era, never the clothing, props or scenery.',
       color_and_tone:
-        'Build color with False-color magenta, coral red, cyan shadow, white infrared response, spectral pink; treat color as historical capture chemistry: silver plate, hand-tinted autochrome grain, Kodachrome warmth, Polaroid dyes, disposable flash color, or cyan chemistry, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Hot pink, crimson and magenta vegetation, deep teal sky and water, pale yellow skin.',
       lighting_and_shadow:
-        'Handle light through Surreal, invisible-spectrum, infrared reflectance, process-led exposure structure, readable highlights, and style-specific shadow behavior; make light follow camera limitations through long exposure, flash falloff, lens vignetting, plate reflectance, daylight softness, or early-sensor clipping, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Bright sunlight with a yellow filter; glowing infrared-reflective foliage.',
       texture_and_material:
-        'Render Grainy, false-color emulsion, IR-sensitive layer; surface detail should reveal plate metal, paper border, dye cloud, film grain, dust, chemical streak, plastic-lens softness, instant emulsion, or sensor noise, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Fine grain, slightly soft infrared focus, white bloom on the brightest leaves.',
       camera_and_composition:
-        'Structure the image through Camera language native to Infrared Film (Aerochrome): genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and spectral color emphasis; compose through period camera distance, portrait stillness, casual snapshot crop, square instant frame, pinhole drift, or documentary era framing without requiring period costumes, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Alien, dream, invisible-spectrum hallucination, mood carried by Infrared Film (Aerochrome) media process, signal pressure, and visual restraint; derive mood from memory, archival strangeness, family snapshot intimacy, laboratory chemistry, nostalgic color, or historical camera patience, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Keep the requested framing; vegetation or sky visible where possible.',
+      atmosphere_and_mood: 'Psychedelic and uncanny, the familiar world recolored.',
       rendering_and_quality:
-        'Finish with Psychedelic, weird, alien biosphere, dreamscape; finish as credible photographic process with controlled grain and exposure artifacts, avoiding fake vintage filter overlays and readable border text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'False-color film look; the black-and-white infrared belongs to pack_01.',
       key_features:
-        'False color IR, Infrared Film (Aerochrome) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts; False-color mapping, infrared reflectance, cyan-magenta split, spectral white bloom; False-color magenta, coral red, cyan shadow, white infrared response, spectral pink; Grainy, false-color emulsion, IR-sensitive layer; Camera language native to Infrared Film (Aerochrome): genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and spectral color emphasis',
+        'magenta and red foliage; deep cyan sky; pale yellow skin; infrared bloom; false-color reversal',
       creative_brief:
-        "Apply Infrared Film (Aerochrome) as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through False color IR, Infrared Film (Aerochrome) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts, False-color mapping, infrared reflectance, cyan-magenta split, spectral white bloom, Grainy, false-color emulsion, IR-sensitive layer without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Infrared Film (Aerochrome) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -269,28 +249,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cyanotype (Photo)',
     category: '4. Photography Eras',
     negativePrompt:
-      'color, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process',
+      'illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, color, bicycle wheel, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Cyanotype (Photo) acts as a transferable cinematic-media router: start from Blue print photo, Cyanotype (Photo) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts, Monochrome blue, contact-print silhouette, paper fiber, UV exposure edge, Prussian wash and historical photographic process system built from camera constraints, emulsion chemistry, lens softness, exposure timing, print surface, and era-specific color response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Cyanotype photographic print: an iron-salt print exposed by sunlight under a negative, giving a Prussian-blue image on watercolor paper.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Cyanotype (Photo): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while making it feel captured through the era process: sitter stillness, flash harshness, instant-film intimacy, chemical plate tactility, or early digital sensor behavior, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Prussian Blue/White, deep indigo, cerulean, paper-white; treat color as historical capture chemistry: silver plate, hand-tinted autochrome grain, Kodachrome warmth, Polaroid dyes, disposable flash color, or cyan chemistry, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Keep the prompt subject, action and setting as they are — a modern object stays modern; change only the photographic process, print surface and tonal response of the era, never the clothing, props or scenery.',
+      color_and_tone: 'Prussian blue shadows to paper-white highlights, no other color.',
       lighting_and_shadow:
-        'Handle light through Sunlight, UV exposure, contact-print daylight; make light follow camera limitations through long exposure, flash falloff, lens vignetting, plate reflectance, daylight softness, or early-sensor clipping, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render Paper fiber, watercolor paper, pulp grain; surface detail should reveal plate metal, paper border, dye cloud, film grain, dust, chemical streak, plastic-lens softness, instant emulsion, or sensor noise, keeping artifact scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Camera language native to Cyanotype (Photo): genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose through period camera distance, portrait stillness, casual snapshot crop, square instant frame, pinhole drift, or documentary era framing without requiring period costumes, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Calm, blue, scientific, contemplative, mood carried by Cyanotype (Photo) media process, signal pressure, and visual restraint; derive mood from memory, archival strangeness, family snapshot intimacy, laboratory chemistry, nostalgic color, or historical camera patience, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'The original scene light translated into blue values; soft highlight edges.',
+      texture_and_material: 'Watercolor paper tooth, brushed coating edges, slight uneven wash.',
+      camera_and_composition: 'Keep the requested framing; brushed coating visible at the margins.',
+      atmosphere_and_mood: 'Cool and contemplative, a blue memory printed by the sun.',
       rendering_and_quality:
-        'Finish with Blueprint, art, scientific aesthetic, photogram precision; finish as credible photographic process with controlled grain and exposure artifacts, avoiding fake vintage filter overlays and readable border text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Contact-print photographic cyanotype, not a botanical photogram or blueprint.',
       key_features:
-        'Blue print photo, Cyanotype (Photo) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts; Monochrome blue, contact-print silhouette, paper fiber, UV exposure edge, Prussian wash; Prussian Blue/White, deep indigo, cerulean, paper-white; Paper fiber, watercolor paper, pulp grain; Camera language native to Cyanotype (Photo): genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
+        'Prussian blue monochrome; watercolor paper tooth; brushed coating edges; sun-printed tones; white highlights',
       creative_brief:
-        "Apply Cyanotype (Photo) as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Blue print photo, Cyanotype (Photo) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts, Monochrome blue, contact-print silhouette, paper fiber, UV exposure edge, Prussian wash, Paper fiber, watercolor paper, pulp grain without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cyanotype (Photo) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -298,28 +274,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Early Digital (2000s)',
     category: '4. Photography Eras',
     negativePrompt:
-      'film grain, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process',
+      'illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, film grain, readable date overlay, bus, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Early Digital (2000s) acts as a transferable cinematic-media router: start from 2 Megapixel camera, Early Digital (2000s) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts, Low resolution, compression blocks, purple fringing, clipped highlights, noisy shadow and historical photographic process system built from camera constraints, emulsion chemistry, lens softness, exposure timing, print surface, and era-specific color response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Early digital compact camera: a 2–3 megapixel point-and-shoot from the early 2000s with a tiny sensor, harsh flash and heavy JPEG compression.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Early Digital (2000s): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while making it feel captured through the era process: sitter stillness, flash harshness, instant-film intimacy, chemical plate tactility, or early digital sensor behavior, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting as they are — a modern object stays modern; change only the photographic process, print surface and tonal response of the era, never the clothing, props or scenery.',
       color_and_tone:
-        'Build color with Noisy shadows, purple fringing, CCD magenta, muddy chroma; treat color as historical capture chemistry: silver plate, hand-tinted autochrome grain, Kodachrome warmth, Polaroid dyes, disposable flash color, or cyan chemistry, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Cool or yellowish white balance errors, clipped highlights, noisy muddy shadows.',
       lighting_and_shadow:
-        'Handle light through Flat, pop-up flash, no dynamic range; make light follow camera limitations through long exposure, flash falloff, lens vignetting, plate reflectance, daylight softness, or early-sensor clipping, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Harsh on-camera flash at night, flat bright subjects, black backgrounds.',
       texture_and_material:
-        'Render Jpeg artifacts, compression blocks, color banding; surface detail should reveal plate metal, paper border, dye cloud, film grain, dust, chemical streak, plastic-lens softness, instant emulsion, or sensor noise, keeping artifact scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Pixelation, stair-step edge, aliasing jaggies; compose through period camera distance, portrait stillness, casual snapshot crop, square instant frame, pinhole drift, or documentary era framing without requiring period costumes, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Y2K, candid, early-upload memory, digital infancy; derive mood from memory, archival strangeness, family snapshot intimacy, laboratory chemistry, nostalgic color, or historical camera patience, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Low res, nostalgic, 2MP chunky, digital infancy; finish as credible photographic process with controlled grain and exposure artifacts, avoiding fake vintage filter overlays and readable border text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'JPEG block artifacts, purple fringing on bright edges, oversharpening halos.',
+      camera_and_composition: 'Snapshot framing, deep focus, subjects centered, slight red-eye.',
+      atmosphere_and_mood: 'Awkward and nostalgic, the early days of posting everything.',
+      rendering_and_quality: 'Low-resolution digital compact look with no readable date overlay.',
       key_features:
-        '2 Megapixel camera, Early Digital (2000s) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts; Low resolution, compression blocks, purple fringing, clipped highlights, noisy shadow; Noisy shadows, purple fringing, CCD magenta, muddy chroma; Jpeg artifacts, compression blocks, color banding; Pixelation, stair-step edge, aliasing jaggies',
+        'tiny-sensor noise; harsh on-camera flash; JPEG blocks; purple fringing; clipped highlights',
       creative_brief:
-        "Apply Early Digital (2000s) as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through 2 Megapixel camera, Early Digital (2000s) historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts, Low resolution, compression blocks, purple fringing, clipped highlights, noisy shadow, Jpeg artifacts, compression blocks, color banding without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Early Digital (2000s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -327,28 +300,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Pinhole Camera',
     category: '4. Photography Eras',
     negativePrompt:
-      'sharp focus, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process',
+      'illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, sharp focus, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage filter, readable border text, modern phone clarity, wrong camera process, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Pinhole Camera acts as a transferable cinematic-media router: start from Pinhole Camera historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts and historical photographic process system built from camera constraints, emulsion chemistry, lens softness, exposure timing, print surface, and era-specific color response, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        "Paper-negative pinhole print: a box camera with a pinhole exposing photographic paper, contact-printed into a positive with the paper negative's texture.",
       subject_treatment:
-        'Transform any prompt subject through Define Pinhole Camera through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene; preserve the requested subject while making it feel captured through the era process: sitter stillness, flash harshness, instant-film intimacy, chemical plate tactility, or early digital sensor behavior, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with process-native palette relationships, deliberate contrast, and signal or film color logic for Pinhole Camera; treat color as historical capture chemistry: silver plate, hand-tinted autochrome grain, Kodachrome warmth, Polaroid dyes, disposable flash color, or cyan chemistry, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through process-led exposure structure, readable highlights, and style-specific shadow behavior; make light follow camera limitations through long exposure, flash falloff, lens vignetting, plate reflectance, daylight softness, or early-sensor clipping, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Keep the prompt subject, action and setting as they are — a modern object stays modern; change only the photographic process, print surface and tonal response of the era, never the clothing, props or scenery.',
+      color_and_tone: 'Warm sepia or neutral grey, soft low contrast, dark corners.',
+      lighting_and_shadow: 'Long daylight exposure; moving things ghosted or missing.',
       texture_and_material:
-        'Render historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts; surface detail should reveal plate metal, paper border, dye cloud, film grain, dust, chemical streak, plastic-lens softness, instant emulsion, or sensor noise, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Paper fiber pattern printed through, uniform softness, curved-plane stretching.',
       camera_and_composition:
-        'Structure the image through scale rhythm, frame hierarchy, lens distance, and composition rules specific to Pinhole Camera; compose through period camera distance, portrait stillness, casual snapshot crop, square instant frame, pinhole drift, or documentary era framing without requiring period costumes, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood mood carried by Pinhole Camera media process, signal pressure, and visual restraint; derive mood from memory, archival strangeness, family snapshot intimacy, laboratory chemistry, nostalgic color, or historical camera patience, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Keep the requested framing; wide stretched edges from a curved paper plane.',
+      atmosphere_and_mood: 'Quiet and handmade, a slow image from a box and a needle hole.',
       rendering_and_quality:
-        'Finish with finished Pinhole Camera media craft with clear process evidence and controlled detail; finish as credible photographic process with controlled grain and exposure artifacts, avoiding fake vintage filter overlays and readable border text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Contact-printed paper-negative look; distinct from the modern long-exposure pinhole in pack_01.',
       key_features:
-        'Pinhole Camera historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts; process-native palette relationships, deliberate contrast, and signal or film color logic for Pinhole Camera; scale rhythm, frame hierarchy, lens distance, and composition rules specific to Pinhole Camera',
+        'paper-negative fiber texture; uniform pinhole softness; curved-plane stretch; dark corners; ghosted motion',
       creative_brief:
-        "Apply Pinhole Camera as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Pinhole Camera historical camera process, emulsion behavior, lens constraints, print surface, and era-specific exposure artifacts without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pinhole Camera as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -379,6 +349,245 @@ export const GENERATED_STYLE_PRESETS = [
       kind: 'modifier',
       derivedFrom: ['SP02-046'],
       visualEvaluation: 'pending',
+    },
+  },
+  {
+    id: 'SP02-139',
+    name: 'Salt Print Calotype',
+    displayName: 'Salt Print Calotype',
+    styleAnchors: [
+      'Salt Print Calotype',
+      'calotype paper negative process',
+      'paper-negative fiber texture',
+    ],
+    category: '4. Photography Eras',
+    domain: 'calotype paper negative process',
+    negativePrompt:
+      'illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, glossy surface, crisp fine detail, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Salt print from a calotype: an 1840s paper negative printed on salted paper, soft and fibrous, with warm matte tones sunk into the paper.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting as they are — a modern object stays modern; change only the photographic process, print surface and tonal response of the era, never the clothing, props or scenery.',
+      color_and_tone:
+        'Warm reddish-brown to lavender-purple tones, low contrast, creamy paper highlights.',
+      lighting_and_shadow:
+        'Bright daylight softened by the paper negative; broad masses of light and shade.',
+      texture_and_material: 'Paper fibers printed through the image, matte surface, soft edges.',
+      camera_and_composition:
+        'Keep the requested framing; broad simple masses rather than fine detail.',
+      atmosphere_and_mood: 'Soft and painterly, an early photograph still halfway to a drawing.',
+      rendering_and_quality: 'Matte salted-paper print; not glossy albumen and not a metal plate.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Salt Print Calotype as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'paper-negative fiber texture; warm brown-lavender tones; matte salted paper; soft broad masses; low contrast',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-140',
+    name: 'Albumen Carte de Visite',
+    displayName: 'Albumen Carte de Visite',
+    styleAnchors: [
+      'Albumen Carte de Visite',
+      'albumen card portrait',
+      'glossy sepia-purple albumen',
+    ],
+    category: '4. Photography Eras',
+    domain: 'albumen card portrait',
+    negativePrompt:
+      'illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, matte paper, readable studio imprint, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Albumen carte de visite: an 1860s small card portrait printed on egg-white-coated paper and mounted on a card, with a painted studio backdrop.',
+      subject_treatment:
+        'Keep the prompt subject and action as they are; present them as a mounted albumen card print, posing still, without changing their clothes or adding period props.',
+      color_and_tone:
+        'Glossy sepia-purple to warm brown, yellowed highlights, slight fading at the edges.',
+      lighting_and_shadow: 'Soft skylight from a studio glass roof, gentle modeling.',
+      texture_and_material:
+        'Fine albumen gloss, tiny surface cracks, rounded card corners, foxing spots.',
+      camera_and_composition:
+        'Full-length or three-quarter figure before a painted balustrade or drapery backdrop, small format card.',
+      atmosphere_and_mood: 'Formal and charming, a calling card meant to be traded.',
+      rendering_and_quality: 'Glossy albumen card look; not a salt print and not a tintype.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Albumen Carte de Visite as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'glossy sepia-purple albumen; mounted card with rounded corners; painted studio backdrop; foxing; formal pose',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-141',
+    name: 'Pictorialist Platinum Print',
+    displayName: 'Pictorialist Platinum Print',
+    styleAnchors: [
+      'Pictorialist Platinum Print',
+      'pictorialist platinum printing',
+      'soft-focus bloom',
+    ],
+    category: '4. Photography Eras',
+    domain: 'pictorialist platinum printing',
+    negativePrompt:
+      'illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, crisp documentary sharpness, high contrast, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pictorialist platinum print: an early-1900s art photograph made with a soft-focus lens and printed in platinum on matte paper to look like a painting.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting as they are — a modern object stays modern; change only the photographic process, print surface and tonal response of the era, never the clothing, props or scenery.',
+      color_and_tone: 'Long, delicate scale of warm silver greys, velvety blacks, no harsh whites.',
+      lighting_and_shadow: 'Mist, backlight and diffuse window light; glowing halated highlights.',
+      texture_and_material: 'Matte paper absorbing the image, soft-focus bloom around every edge.',
+      camera_and_composition:
+        'Keep the requested framing; asymmetric painterly composition with atmosphere.',
+      atmosphere_and_mood: 'Poetic and hushed, the world softened into a reverie.',
+      rendering_and_quality: 'Platinum-print tonality with soft-focus glow; not crisp documentary.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pictorialist Platinum Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'soft-focus bloom; long warm grey scale; matte platinum paper; misty backlight; painterly composition',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-142',
+    name: 'Hand-Colored Lantern Slide',
+    displayName: 'Hand-Colored Lantern Slide',
+    styleAnchors: [
+      'Hand-Colored Lantern Slide',
+      'hand-tinted glass lantern slide',
+      'hand-tinted transparent dyes',
+    ],
+    category: '4. Photography Eras',
+    domain: 'hand-tinted glass lantern slide',
+    negativePrompt:
+      'illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, full modern color, readable caption, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hand-colored lantern slide: a black-and-white positive on glass tinted by hand with transparent dyes and projected by a magic lantern.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting as they are — a modern object stays modern; change only the photographic process, print surface and tonal response of the era, never the clothing, props or scenery.',
+      color_and_tone:
+        'Monochrome base with delicate transparent washes — sky blue, rose, leaf green, amber — that do not quite follow the edges.',
+      lighting_and_shadow: 'Projected glow through the glass, bright center and soft falloff.',
+      texture_and_material:
+        'Dye pooling, slightly misaligned tints, glass cover plate, a round or arched mask.',
+      camera_and_composition:
+        'Keep the requested framing inside a rounded mask shape, lit from behind.',
+      atmosphere_and_mood: 'Wondrous and old-fashioned, a travel lecture in a darkened hall.',
+      rendering_and_quality: 'Hand-tinted projected glass look; not modern color photography.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hand-Colored Lantern Slide as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'hand-tinted transparent dyes; monochrome base; projected glow; rounded mask; tints slipping past edges',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-143',
+    name: 'Mammoth Plate Landscape',
+    displayName: 'Mammoth Plate Landscape',
+    styleAnchors: [
+      'Mammoth Plate Landscape',
+      'mammoth plate landscape photography',
+      'blank white sky',
+    ],
+    category: '4. Photography Eras',
+    domain: 'mammoth plate landscape photography',
+    negativePrompt:
+      'illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, dramatic clouds, saturated color, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Mammoth plate landscape: 1870s survey photographs on enormous glass negatives, extraordinarily detailed, with skies burned to blank white by blue-sensitive emulsion.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting as they are — a modern object stays modern; change only the photographic process, print surface and tonal response of the era, never the clothing, props or scenery.',
+      color_and_tone: 'Warm brown albumen tones, detailed land, featureless white sky.',
+      lighting_and_shadow: 'Hard clear daylight; long exposures smoothing moving water.',
+      texture_and_material:
+        'Extreme detail in rock, trees and structures; water turned to soft mist.',
+      camera_and_composition:
+        'Keep the requested framing; grand wide views from a high vantage, perfectly level horizon.',
+      atmosphere_and_mood: 'Monumental and silent, a new land measured on glass.',
+      rendering_and_quality:
+        'Large-plate albumen print with blank skies; not a modern HDR landscape.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mammoth Plate Landscape as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'blank white sky; extreme land detail; warm albumen browns; misted moving water; high vantage survey view',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-144',
+    name: '1970s Faded Color Print',
+    displayName: '1970s Faded Color Print',
+    styleAnchors: ['1970s Faded Color Print', 'faded 1970s chromogenic print', 'faded cyan dye'],
+    category: '4. Photography Eras',
+    domain: 'faded 1970s chromogenic print',
+    negativePrompt:
+      'illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, neutral balanced color, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        '1970s faded color print: a family snapshot on chromogenic paper whose cyan dye has faded, leaving a warm magenta-orange cast.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting as they are — a modern object stays modern; change only the photographic process, print surface and tonal response of the era, never the clothing, props or scenery.',
+      color_and_tone: 'Magenta and orange dominance, weak cyan, washed-out skies, yellowed whites.',
+      lighting_and_shadow: 'Sunny daylight or flash; shadows lifted and slightly brownish.',
+      texture_and_material: 'Satin print surface, soft grain, slight fading at the edges.',
+      camera_and_composition:
+        'Keep the requested framing with a casual, slightly off-center family snapshot composition.',
+      atmosphere_and_mood: 'Warm and bittersweet, a summer kept in an old album.',
+      rendering_and_quality: 'Dye-fading in the print; not an overall sepia filter.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 1970s Faded Color Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'faded cyan dye; magenta-orange cast; yellowed whites; satin print surface; snapshot framing',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-145',
+    name: '1980s Pocket Instamatic',
+    displayName: '1980s Pocket Instamatic',
+    styleAnchors: ['1980s Pocket Instamatic', '110 pocket camera snapshot', 'heavy 110 grain'],
+    category: '4. Photography Eras',
+    domain: '110 pocket camera snapshot',
+    negativePrompt:
+      'illustration, painting, cartoon, 3d render, digital sharpness, unrequested period wardrobe or props, historical setting added without request, generic stock-photo face, celebrity likeness, readable fake text, sharp detail, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        '1980s pocket Instamatic: a tiny 110 negative enlarged into a small grainy print, with a flash bar and fixed-focus lens.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting as they are — a modern object stays modern; change only the photographic process, print surface and tonal response of the era, never the clothing, props or scenery.',
+      color_and_tone: 'Saturated but slightly muddy color, warm skin, cool shadows, glossy print.',
+      lighting_and_shadow: 'Flash bar at close range, bright center, dark falloff.',
+      texture_and_material:
+        'Heavy grain from the tiny negative, soft overall focus, glossy surface.',
+      camera_and_composition:
+        'Keep the requested framing; subjects centered and a little too far away.',
+      atmosphere_and_mood: 'Everyday and affectionate, a small memory in a shoebox.',
+      rendering_and_quality: 'Tiny-negative enlargement look; softer than 35 mm film.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 1980s Pocket Instamatic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'heavy 110 grain; soft fixed focus; flash bar hot center; saturated muddy color; glossy small print',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];
