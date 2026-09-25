@@ -122,7 +122,9 @@ for (const [id, update] of Object.entries(spec.updates)) {
   }
   briefs[id] = update.briefs[0];
   variantBriefs[id] = [update.briefs[1], update.briefs[2]];
-  if (!dry) writeFileSync(file, yaml.dump(doc, dumpOpts));
+  // Briefs-only updates leave the manifest untouched, so its formatting does not churn.
+  const manifestChanged = Boolean(update.name || update.dna || update.avoid || update.dropAvoid);
+  if (!dry && manifestChanged) writeFileSync(file, yaml.dump(doc, dumpOpts));
   report.push(`updated ${id}${update.dna ? ` v${doc.version}` : ''}`);
 }
 
