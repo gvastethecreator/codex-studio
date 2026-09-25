@@ -17,6 +17,8 @@ import {
   IconFolders as Folders,
   IconHeart as Heart,
   IconLayoutGrid as LayoutGrid,
+  IconMaximize as Maximize,
+  IconMinimize as Minimize,
   IconStack as Layers,
   IconPencil as PenTool,
   IconPlayerPlay as Play,
@@ -779,8 +781,16 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
     'styles-grid-columns-v2',
     'auto',
   );
-  const fitColumns = fitStyleGridColumns(styleScrollWidth);
-  const gridColumns = resolveStyleGridColumns(gridColumnPref, fitColumns);
+  const [catalogExpanded, setCatalogExpanded] = useState(false);
+  const [explorerColumnPref, setExplorerColumnPref] = useLocalStorage<number | 'auto'>(
+    'styles-explorer-columns-v1',
+    'auto',
+  );
+  const fitColumns = fitStyleGridColumns(styleScrollWidth, catalogExpanded ? 240 : undefined);
+  const gridColumns = resolveStyleGridColumns(
+    catalogExpanded ? explorerColumnPref : gridColumnPref,
+    fitColumns,
+  );
   const [isSortDropdownOpen, setIsSortDropdownOpen] = useState(false);
   const [isManageStylesOpen, setIsManageStylesOpen] = useState(false);
   const manageStylesButtonRef = useRef<HTMLButtonElement>(null);
@@ -794,6 +804,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
   const advancedPanelRef = useRef<HTMLDivElement>(null);
   const catalogRootRef = useRef<HTMLDivElement>(null);
   const closeStyleCatalog = useCallback(() => {
+    setCatalogExpanded(false);
     setExplorerOpen(false);
     const compactHash = compactStyleRecipeHash();
     if (window.location.hash !== compactHash) {
@@ -875,6 +886,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
     const syncExplorerFromHash = () => {
       const tab = readStyleTabIdFromRouteHash(window.location.hash, STYLE_TAB_ROUTE_OPTIONS);
       setExplorerOpen(tab !== null);
+      if (tab === null) setCatalogExpanded(false);
     };
     syncExplorerFromHash();
     window.addEventListener('hashchange', syncExplorerFromHash);
@@ -1529,8 +1541,9 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
       setPreviousPrompt(config.prompt ?? '');
       updateConfig('prompt', buildStylePromptText(preset));
       setPromptNotice('Style added as prompt.');
+      if (catalogExpanded) closeStyleCatalog();
     },
-    [config.prompt, updateConfig],
+    [catalogExpanded, closeStyleCatalog, config.prompt, updateConfig],
   );
   const handleCatalogPrompt = async (
     result: StylePresetCatalogSearchResult,
@@ -1612,6 +1625,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
           sourceProvenance={styleSourceByPresetId.get(preset.id)}
           visualState={eagerPresetVisualStateById.get(preset.id) ?? getPresetVisualState(preset)}
           active={selectedStyleIds.has(preset.id)}
+          previewOnClick={catalogExpanded}
           selectionDisabled={
             selectedStyles.length >= MAX_SELECTED_STYLE_SLOTS && !selectedStyleIds.has(preset.id)
           }
@@ -1628,6 +1642,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
       );
     },
     [
+      catalogExpanded,
       selectedStyleIds,
       selectedStyles.length,
       copiedStyleId,
@@ -1777,7 +1792,10 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
       <RecipeSidePanel>
         <AnimatePresence>
           {explorerOpen ? (
-            <div className="studio-surface create-side-panel-dialog styles-catalog-panel">
+            <div
+              className="studio-surface create-side-panel-dialog styles-catalog-panel"
+              data-workspace-expanded={catalogExpanded}
+            >
               <div
                 ref={catalogRootRef}
                 data-style-browser-root
@@ -1796,7 +1814,9 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
               >
                 <div className="styles-catalog-chrome">
                   <div className="styles-catalog-header">
-                    <h2 className="styles-catalog-title">Styles</h2>
+                    <h2 className="styles-catalog-title">
+                      {catalogExpanded ? 'Style explorer' : 'Styles'}
+                    </h2>
                     <label className="styles-catalog-search">
                       <Search size={16} aria-hidden="true" />
                       <input
@@ -1815,6 +1835,29 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                         }}
                       />
                     </label>
+                    <button
+                      type="button"
+                      className="styles-catalog-expand"
+                      aria-label={
+                        catalogExpanded ? 'Use compact style catalog' : 'Expand style catalog'
+                      }
+                      aria-pressed={catalogExpanded}
+                      onClick={() => setCatalogExpanded((expanded) => !expanded)}
+                    >
+                      {catalogExpanded ? <Minimize size={16} /> : <Maximize size={16} />}
+                      <span>{catalogExpanded ? 'Compact view' : 'Explore'}</span>
+                    </button>
+                    {catalogExpanded && (
+                      <button
+                        type="button"
+                        className="styles-explorer-done"
+                        onClick={closeStyleCatalog}
+                      >
+                        {selectedStyles.length > 0
+                          ? `Use ${selectedStyles.length} selected`
+                          : 'Back to create'}
+                      </button>
+                    )}
                     <button
                       type="button"
                       className="styles-catalog-close"
@@ -2187,7 +2230,11 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                               max={Math.max(1, fitColumns)}
                               step={1}
                               value={gridColumns}
-                              onChange={(e) => setGridColumnPref(Number(e.target.value))}
+                              onChange={(e) =>
+                                (catalogExpanded ? setExplorerColumnPref : setGridColumnPref)(
+                                  Number(e.target.value),
+                                )
+                              }
                               className="h-1.5 w-20 accent-white"
                               aria-label="Style grid zoom"
                               data-tooltip="Style card columns"

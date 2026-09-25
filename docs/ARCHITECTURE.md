@@ -239,6 +239,7 @@ Heavy or optional UI must mount only when it is visible or the user asks for it:
 
 - recipe pages are route-lazy
 - style catalog search mounts on demand
+- The style catalog can expand over the workspace. It keeps the same filters and selection, with a separate card-size preference. The editor and results remain mounted but inert while the explorer is expanded; panel exit restores their interaction before the closing animation finishes.
 - Style Pack data loads through one cached single-flight runtime registry. Rejected loads are evicted so the visible retry action can recover.
 - heavy catalog data, YAML parsing, ZIP export, and Three.js are lazy-loaded
 - settings, diagnostics, activity, and provider internals open from explicit surfaces

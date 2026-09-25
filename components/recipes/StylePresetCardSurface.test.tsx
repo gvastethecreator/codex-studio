@@ -1,11 +1,16 @@
 /** @vitest-environment jsdom */
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
-import { afterEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 import type { StyleRuntimePreset } from './styles/runtimeTypes';
 import { StylePresetCard } from './StylePresetCardSurface';
 
 afterEach(cleanup);
+beforeEach(() => {
+  HTMLDialogElement.prototype.showModal = function () {
+    this.setAttribute('open', '');
+  };
+});
 
 const PRESET: StyleRuntimePreset = {
   id: 'SP09-006',
@@ -25,9 +30,6 @@ const PRESET: StyleRuntimePreset = {
 
 describe('StylePresetCard', () => {
   it('shows the active image label while cycling provider variants', () => {
-    HTMLDialogElement.prototype.showModal = function () {
-      this.setAttribute('open', '');
-    };
     const onApply = vi.fn();
     const onUsePrompt = vi.fn();
     const onCopy = vi.fn();
@@ -100,6 +102,7 @@ describe('StylePresetCard', () => {
         }}
         active={false}
         selectionDisabled
+        previewOnClick
         copied={false}
         favorite={false}
         theme={{
@@ -124,6 +127,9 @@ describe('StylePresetCard', () => {
       expect((action as HTMLButtonElement).disabled).toBe(true);
       fireEvent.click(action);
     }
+    expect(onApply).not.toHaveBeenCalled();
+    fireEvent.click(screen.getByRole('button', { name: 'Preview style Polished Glass' }));
+    expect(screen.getByRole('dialog', { name: 'Information about Polished Glass' })).toBeTruthy();
     expect(onApply).not.toHaveBeenCalled();
   });
 });

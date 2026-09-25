@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "source_commit": "9c6b8fc44fcbc1b75182bc966c8ae8e0d3b2d9f9",
+  "source_commit": "27043c5ac6013dca910513aea7c540d0335a561d",
   "working_tree_dirty": true,
-  "generated_at": "2026-09-24T23:55:12Z",
-  "generation_id": "7916c6115a27cfb3c6eb39389717fe4b611a9506d3670bc24139243dd8e97af3",
+  "generated_at": "2026-09-25T00:19:27Z",
+  "generation_id": "6e17549a1460fc355d0a58e9b010cc1ce1a011d5bb0e3de97058fc30604adb13",
   "analysis": {
     "version": "syntax-1",
     "digest": "f254907343def68e42baabf08b179db9817a145bc24eaad26add0adf05d75581"
@@ -2062,15 +2062,15 @@
         "path": "components/create/CreateWorkspace.test.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "02d0d9108635988ea2d465ba16be34607803b2ff5fc85c0ccc491b24db714651",
-        "size": 7562
+        "digest": "3b0db224da21a83a68cf7ff982d80743c90555ac6d05d29aea3ec99dcbaf990a",
+        "size": 8061
       },
       {
         "path": "components/create/CreateWorkspace.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "d2f5b9a9f7f121c59829bc39c0e5f3d365f426710d5d35c9f1a40d4392c54714",
-        "size": 6167
+        "digest": "d243071a36a16ead58f194adf6124a7ef44f4715c9162dfa547c470cc23f4449",
+        "size": 7162
       },
       {
         "path": "components/header/ProviderQuickSwitch.test.tsx",
@@ -2321,15 +2321,15 @@
         "path": "components/recipes/StylePresetCardSurface.test.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "9ba56fe616e320f7e99a966b0fb58f0e2b1f8785ce1872938df7037a7177e1f7",
-        "size": 4688
+        "digest": "a39a9de7527616cb86781e3ce52bf86b964fcade4e3fafe083f97ea3376b9484",
+        "size": 4974
       },
       {
         "path": "components/recipes/StylePresetCardSurface.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "3851967240ede7ad91a8cd7adb883a4a5826c0450b66004da1bc6b437fde2228",
-        "size": 14659
+        "digest": "028c7f7fbb7ebe084915e2676708beb5458c5d6f6a609d107dac2074d9d91118",
+        "size": 14952
       },
       {
         "path": "components/recipes/StylePresetCatalogSearchSurface.test.tsx",
@@ -2356,8 +2356,8 @@
         "path": "components/recipes/StylesBrowser.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "9177306f253f26b554f11d95bc423a9c57aa4a81cc5e670aec8c854ec8a6ac64",
-        "size": 109397
+        "digest": "d246f5d453e44f487e1f12db51d91dc95f0ded5f44ab86e8bc30d53605d0c108",
+        "size": 111416
       },
       {
         "path": "components/recipes/StylesRecipe.tsx",
@@ -8310,12 +8310,12 @@
         "size": 710
       }
     ],
-    "digest": "3461d3ce262f31d19143ff744f25b708355a77f4aaed2744a942f93020392461"
+    "digest": "7d1e411d7b70836776aa27cc4705447ba80cacacf05ae47332c667a3f69a96c2"
   },
-  "source_digest": "e20f3b3d7e1bd4a8450963967a0712fcde5e6c215af9bf2d8df40f3f15f9b1d5",
+  "source_digest": "707a42264ed62ad6746bbb1253dfe82d08d28b7259b751d25a3e09dd7b9c84a9",
   "artifact_hashes": {
-    "codemap.json": "7ab33e2487ae0dbae754d9fd3fa018b332eb5d44fc6e2e657616c61010374693",
-    "codemap.md": "86346a7f89c7f7aa0e80f1eab9048b9fd8d3cfb59def2d17663b6074a7b15bfd",
-    "codemap.html": "165c54363789c34970a1fd8d212a56659406e94d4643e05320bd3489d796506d"
+    "codemap.json": "2b9cdb7c710d165f5668aba25dc526076f8867f2bd4aca2056a4902b9f48f966",
+    "codemap.md": "ea06947028ef624ea0641748577a6eb0925315be7d90b3e5947c9385d65b7754",
+    "codemap.html": "f062bca61a264ae8f93ee57735218c94a7087ac728f922b2780e8a7731060fd1"
   }
 }

@@ -3391,6 +3391,104 @@ react-scan-overlay,
   container-type: inline-size;
   container-name: result-stage;
 }
+
+/* Expanded catalogs cover the workspace while its draft and results stay mounted. */
+.create-workspace[data-layout][data-catalog-expanded='true'] .create-tray-stack {
+  display: contents;
+}
+.create-workspace[data-layout][data-catalog-pane][data-catalog-expanded='true']
+  .create-pane-switch {
+  display: none;
+}
+.create-workspace[data-catalog-expanded='true'] :is(.create-tools, .create-stage) {
+  visibility: hidden;
+  pointer-events: none;
+}
+.create-workspace[data-layout][data-catalog-expanded='true'] .create-side-panel:not(:empty) {
+  display: flex;
+  position: absolute;
+  inset: 8px 12px 12px;
+  width: auto;
+  height: auto;
+  box-shadow: none;
+}
+.styles-catalog-expand,
+.styles-explorer-done {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 5px 9px;
+  border: 1px solid var(--wb-line);
+  border-radius: var(--wb-radius);
+  background: var(--wb-panel);
+  color: var(--wb-ink);
+  font-size: var(--wbp-label, 12px);
+}
+.styles-explorer-done {
+  background: var(--wb-ink);
+  color: var(--wb-panel);
+}
+.styles-catalog-panel[data-workspace-expanded='true'] {
+  flex: 1;
+  min-width: 0;
+  animation: style-explorer-enter 180ms ease-out;
+  box-shadow: none;
+}
+.styles-catalog-panel[data-workspace-expanded='true'] .styles-catalog-header {
+  gap: 10px;
+  padding: 12px 16px;
+}
+.styles-catalog-panel[data-workspace-expanded='true'] .styles-catalog-title {
+  display: block;
+  font-size: 16px;
+}
+.styles-catalog-panel[data-workspace-expanded='true'] .styles-catalog-search {
+  height: 36px;
+  flex-basis: 240px;
+  max-width: none;
+}
+.styles-catalog-panel[data-workspace-expanded='true'] .styles-catalog-map-select {
+  max-width: 360px;
+}
+.styles-catalog-panel[data-workspace-expanded='true'] [aria-label='Style grid zoom'] {
+  width: 96px;
+}
+.styles-catalog-panel[data-workspace-expanded='true'] .styles-catalog-tabs {
+  padding-top: 4px;
+}
+.styles-catalog-panel[data-workspace-expanded='true'] .styles-catalog-tab {
+  height: 32px;
+  padding-inline: 10px;
+}
+@keyframes style-explorer-enter {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .styles-catalog-panel[data-workspace-expanded='true'] {
+    animation: none;
+  }
+}
+@container style-catalog (max-width: 760px) {
+  .styles-catalog-panel[data-workspace-expanded='true'] .styles-catalog-search {
+    order: 2;
+    flex-basis: 100%;
+  }
+}
+@container style-catalog (max-width: 450px) {
+  .styles-catalog-expand span {
+    display: none;
+  }
+}
 .recipe-result-toolbar-row {
   flex-wrap: wrap;
   gap: 6px;

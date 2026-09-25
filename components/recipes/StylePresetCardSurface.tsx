@@ -62,6 +62,7 @@ export interface StylePresetCardProps {
   sourceProvenance?: StylePresetSourceProvenance;
   visualState: StylePresetVisualState | undefined;
   active: boolean;
+  previewOnClick?: boolean;
   selectionDisabled?: boolean;
   copied: boolean;
   favorite: boolean;
@@ -96,6 +97,7 @@ interface StylePresetResultButtonProps {
   selectionDisabled: boolean;
   FadeImageComponent: StylePresetFadeImageComponent;
   onApply: (preset: StyleRuntimePreset) => void;
+  onPreview?: () => void;
 }
 
 function StylePresetResultButton({
@@ -105,16 +107,19 @@ function StylePresetResultButton({
   selectionDisabled,
   FadeImageComponent,
   onApply,
+  onPreview,
 }: StylePresetResultButtonProps) {
   const name = getStyleRuntimePresetDisplayName(preset);
   return (
     <button
       type="button"
       className="style-card-image-hit"
-      aria-label={`${active ? 'Remove' : 'Select'} style ${name}`}
-      aria-pressed={active}
-      disabled={selectionDisabled}
-      onClick={() => onApply(preset)}
+      aria-label={
+        onPreview ? `Preview style ${name}` : `${active ? 'Remove' : 'Select'} style ${name}`
+      }
+      aria-pressed={onPreview ? undefined : active}
+      disabled={!onPreview && selectionDisabled}
+      onClick={() => (onPreview ? onPreview() : onApply(preset))}
     >
       {activeCardImage ? (
         <FadeImageComponent
@@ -154,6 +159,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
   sourceProvenance,
   visualState,
   active,
+  previewOnClick = false,
   selectionDisabled = false,
   copied,
   favorite,
@@ -273,6 +279,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
             selectionDisabled={selectionDisabled}
             FadeImageComponent={FadeImageComponent}
             onApply={onApply}
+            onPreview={previewOnClick ? () => setPreviewOpen(true) : undefined}
           />
         </div>
 

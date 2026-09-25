@@ -1,7 +1,7 @@
 # Code map: codex-studio
 
-Generated: 2026-09-24T23:55:12Z | Commit: `9c6b8fc44fcb` | Schema: 2
-Generation: `7916c6115a27cfb3c6eb39389717fe4b611a9506d3670bc24139243dd8e97af3`
+Generated: 2026-09-25T00:19:27Z | Commit: `27043c5ac601` | Schema: 2
+Generation: `6e17549a1460fc355d0a58e9b010cc1ce1a011d5bb0e3de97058fc30604adb13`
 Scope: . | Inventory: working-tree
 Nodes: 1249 | Edges: 6321 | Flows: 5
 
@@ -9,7 +9,7 @@ Nodes: 1249 | Edges: 6321 | Flows: 5
 
 - Analysis: **partial**; 1169 analyzed of 1181 included files.
 - Configuration files: 7; omitted untracked files: 0.
-- Unresolved references and analysis limits: 3329.
+- Unresolved references and analysis limits: 3334.
 - Static references and call paths do not prove runtime execution or test coverage.
 
 ## Modules

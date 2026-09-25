@@ -69,6 +69,7 @@ export const CreateWorkspace: React.FC<CreateWorkspaceProps> = ({
   const workspaceRef = useRef<HTMLDivElement>(null);
   const [layout, setLayout] = useState<'wide' | 'split' | 'single'>('split');
   const [catalogPane, setCatalogPane] = useState(true);
+  const [panelExpanded, setPanelExpanded] = useState(false);
   useLayoutEffect(() => {
     const element = workspaceRef.current;
     if (!element) return;
@@ -81,13 +82,32 @@ export const CreateWorkspace: React.FC<CreateWorkspaceProps> = ({
     const observer = new ResizeObserver(resize);
     observer.observe(element);
     const panel = element.querySelector('.create-side-panel');
-    const contentObserver = new MutationObserver(() => {
+    const syncExpanded = () => {
+      const expanded = panel?.querySelector('[data-workspace-expanded="true"]');
+      setPanelExpanded(Boolean(expanded && !expanded.closest('[inert]')));
+    };
+    const expansionObserver = new MutationObserver(syncExpanded);
+    const syncPanel = () => {
       if (panel?.childElementCount) setCatalogPane(true);
-    });
-    if (panel) contentObserver.observe(panel, { childList: true });
+      syncExpanded();
+    };
+    const contentObserver = new MutationObserver(syncPanel);
+    if (panel) {
+      contentObserver.observe(panel, { childList: true });
+      // Portals may contain presence wrappers. Release the workspace as soon as
+      // an exiting panel becomes inert, before its animation removes the DOM.
+      expansionObserver.observe(panel, {
+        childList: true,
+        subtree: true,
+        attributes: true,
+        attributeFilter: ['data-workspace-expanded', 'inert'],
+      });
+    }
+    syncPanel();
     return () => {
       observer.disconnect();
       contentObserver.disconnect();
+      expansionObserver.disconnect();
     };
   }, [onNarrowChange]);
   const stageImages = images ?? recipePageProps.imagesWithConfig;
@@ -105,10 +125,16 @@ export const CreateWorkspace: React.FC<CreateWorkspaceProps> = ({
       data-route-key={routeKey}
       data-layout={layout}
       data-catalog-pane={catalogPane}
+      data-catalog-expanded={panelExpanded}
       data-workspace-view={workspaceTab}
     >
       <div className="create-tray-stack">
-        <div className="create-pane-switch" role="group" aria-label="Configure panel">
+        <div
+          className="create-pane-switch"
+          role="group"
+          aria-label="Configure panel"
+          inert={panelExpanded}
+        >
           <button type="button" aria-pressed={!catalogPane} onClick={() => setCatalogPane(false)}>
             Configure
           </button>
@@ -119,6 +145,7 @@ export const CreateWorkspace: React.FC<CreateWorkspaceProps> = ({
         <aside
           className={`create-tools studio-surface${tools ? ' workbench-config' : ''}`}
           aria-label="Create tools"
+          inert={panelExpanded}
         >
           {hasGenerationDock ? (
             <Suspense fallback={<StudioGenerationDockFallback />}>
@@ -135,7 +162,11 @@ export const CreateWorkspace: React.FC<CreateWorkspaceProps> = ({
         </aside>
         <div ref={onSidePanelTarget} className="create-side-panel" />
       </div>
-      <section className="create-stage studio-well" aria-label="Create canvas">
+      <section
+        className="create-stage studio-well"
+        aria-label="Create canvas"
+        inert={panelExpanded}
+      >
         {stage ?? (
           <CreateResults
             recipePageProps={recipePageProps}

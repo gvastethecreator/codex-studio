@@ -187,8 +187,19 @@ describe('CreateWorkspace', () => {
     fireEvent.click(trigger);
     const panel = screen.getByRole('dialog', { name: 'Frame details' });
     expect(document.activeElement).toBe(panel);
+    panel.setAttribute('data-workspace-expanded', 'true');
+    const canvas = screen.getByRole('region', { name: 'Create canvas' });
+    await waitFor(() => {
+      expect(rail.hasAttribute('inert')).toBe(true);
+      expect(canvas.hasAttribute('inert')).toBe(true);
+    });
+    expect(screen.getByRole('textbox', { name: 'Editor draft' })).toBeTruthy();
     fireEvent.keyDown(panel, { key: 'Escape' });
     expect(screen.queryByRole('dialog')).toBeNull();
+    await waitFor(() => {
+      expect(rail.hasAttribute('inert')).toBe(false);
+      expect(canvas.hasAttribute('inert')).toBe(false);
+    });
     expect(document.activeElement).toBe(trigger);
     fireEvent.change(screen.getByRole('textbox', { name: 'Editor draft' }), {
       target: { value: 'Edited draft' },
