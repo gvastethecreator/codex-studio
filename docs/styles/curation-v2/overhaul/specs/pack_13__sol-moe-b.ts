@@ -8,8 +8,8 @@ const spec: Spec = {
   updates: {
     'SP05-206': {
       briefs: [
-        'Gesture intimacy anime frame of an older sister braiding her little sister hair by a window at dawn, fine contour detail concentrated where fingers meet hair, every neighboring edge soft and economical. No readable text or logo.',
-        'Gesture anime frame of a healer wrapping a bandage around a knight scarred hand, fine detail only where their hands touch, soft economical edges on armor and room. No readable text or logo.',
+        "Gesture intimacy anime frame of an older sister braiding her little sister's hair by a window at dawn, fine contour detail concentrated where fingers meet hair, every neighboring edge soft and economical. No readable text or logo.",
+        "Gesture anime frame of a healer wrapping a bandage around a knight's scarred hand, fine detail only where their hands touch, soft economical edges on armor and room. No readable text or logo.",
         'Gesture anime frame of an old man and a small fox spirit touching foreheads on a snowy porch, fine contour at the point of contact, soft simple shapes around it. No readable text or logo.',
       ],
     },
