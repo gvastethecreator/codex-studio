@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-239
+packId: pack_15
+name: Karaokepunk
+styleAnchors:
+  - Karaokepunk
+  - karaoke box culture punk
+  - glitter microphones
+displayName: Karaokepunk
+category: 7. Media, Vapor & Glitch Punks
+domain: karaoke box culture punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - media-vapor-and-glitch-punks
+  - karaokepunk
+  - punk
+  - media
+visualDna:
+  aesthetic: 'Karaokepunk: late-night karaoke rooms and bars, with glitter microphones, disco lights, tambourines, velvet sofas and friends singing with total commitment.'
+  subject_treatment: Keep the prompt's subject and setting; turn it into a late-night karaoke scene with microphones, disco lights and dramatic singers.
+  color_and_tone: Hot pink, purple and blue disco light with glitter gold and velvet deep tones.
+  lighting_and_shadow: Spinning disco light spots and screen glow in small dark rooms.
+  texture_and_material: Glitter microphones, velvet sofas, tambourines, drinks and mirrored balls.
+  camera_and_composition: Close dramatic singing poses with friends crowded around.
+  atmosphere_and_mood: Silly, heartfelt and loud, everyone is a star for three minutes.
+  rendering_and_quality: Colorful glowing illustration with disco light spots and glitter.
+  creative_brief: "Karaokepunk: late-night karaoke rooms and bars, with glitter microphones, disco lights, tambourines, velvet sofas and friends singing with total commitment. Carry it through glitter microphones, disco lights, velvet rooms, dramatic singers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: glitter microphones; disco lights; velvet rooms; dramatic singers
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - readable interface text or numerals
+  - real celebrity likeness
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text or numerals, real celebrity likeness, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: media-vapor-and-glitch-punks
+  categoryName: 7. Media, Vapor & Glitch Punks
+  tags:
+    - curation-v2
+    - media-vapor-and-glitch-punks
+    - karaokepunk
+    - punk
+    - media
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: karaoke box culture punk

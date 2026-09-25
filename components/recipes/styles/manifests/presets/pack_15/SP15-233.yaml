@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-233
+packId: pack_15
+name: Hologrampunk
+styleAnchors:
+  - Hologrampunk
+  - cheap hologram foil punk
+  - rainbow diffraction
+displayName: Hologrampunk
+category: 7. Media, Vapor & Glitch Punks
+domain: cheap hologram foil punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - media-vapor-and-glitch-punks
+  - hologrampunk
+  - punk
+  - media
+visualDna:
+  aesthetic: 'Hologrampunk: a world covered in cheap holographic foil and lenticular prints, with rainbow diffraction shifts, shimmering stickers and images that change as you move.'
+  subject_treatment: Keep the prompt's subject and setting; render its surfaces as shimmering holographic foil and lenticular prints with rainbow shifts.
+  color_and_tone: Rainbow diffraction over silver foil with shifting cyan, magenta and gold bands.
+  lighting_and_shadow: Sharp point light creating rainbow flares and shifting bands on foil.
+  texture_and_material: Holographic foil, lenticular ridges, diffraction patterns and glossy laminate.
+  camera_and_composition: Close views of shimmering surfaces with images appearing to shift angle.
+  atmosphere_and_mood: Dazzling, cheap and magical, a trick of light you want to keep.
+  rendering_and_quality: Crisp iridescent rendering with diffraction rainbows and fine ridges.
+  creative_brief: "Hologrampunk: a world covered in cheap holographic foil and lenticular prints, with rainbow diffraction shifts, shimmering stickers and images that change as you move. Carry it through rainbow diffraction, lenticular ridges, silver foil, shifting images. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: rainbow diffraction; lenticular ridges; silver foil; shifting images
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - readable interface text or numerals
+  - real celebrity likeness
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text or numerals, real celebrity likeness, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: media-vapor-and-glitch-punks
+  categoryName: 7. Media, Vapor & Glitch Punks
+  tags:
+    - curation-v2
+    - media-vapor-and-glitch-punks
+    - hologrampunk
+    - punk
+    - media
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: cheap hologram foil punk

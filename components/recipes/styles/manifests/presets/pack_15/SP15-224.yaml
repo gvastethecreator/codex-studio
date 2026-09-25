@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-224
+packId: pack_15
+name: Filmpunk
+styleAnchors:
+  - Filmpunk
+  - celluloid projection culture punk
+  - projector beams
+displayName: Filmpunk
+category: 7. Media, Vapor & Glitch Punks
+domain: celluloid projection culture punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - media-vapor-and-glitch-punks
+  - filmpunk
+  - punk
+  - media
+visualDna:
+  aesthetic: 'Filmpunk: a culture built around physical celluloid, with projection booths, film strips hung like laundry, splicing benches and beams of light through dust.'
+  subject_treatment: Keep the prompt's subject and setting; surround it with reels, hanging film strips, projectors and projected beams of light.
+  color_and_tone: Warm amber projector light, deep cinema reds and blacks with sepia celluloid tones.
+  lighting_and_shadow: A single bright projector beam cutting through dusty darkness.
+  texture_and_material: Celluloid strips, metal reels, brass projectors, velvet seats, floating dust.
+  camera_and_composition: Dark rooms crossed by beams, with film strips looping through the frame.
+  atmosphere_and_mood: Romantic, flickering and nostalgic, dreams made of light and plastic.
+  rendering_and_quality: Warm cinematic illustration with light beams and fine dust particles.
+  creative_brief: "Filmpunk: a culture built around physical celluloid, with projection booths, film strips hung like laundry, splicing benches and beams of light through dust. Carry it through projector beams, hanging film strips, splicing benches, floating dust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: projector beams; hanging film strips; splicing benches; floating dust
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - readable interface text or numerals
+  - real celebrity likeness
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text or numerals, real celebrity likeness, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: media-vapor-and-glitch-punks
+  categoryName: 7. Media, Vapor & Glitch Punks
+  tags:
+    - curation-v2
+    - media-vapor-and-glitch-punks
+    - filmpunk
+    - punk
+    - media
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: celluloid projection culture punk

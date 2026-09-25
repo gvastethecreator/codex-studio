@@ -152,6 +152,22 @@ categories:
       - pack_15/SP15-108.yaml
       - pack_15/SP15-109.yaml
       - pack_15/SP15-110.yaml
+      - pack_15/SP15-224.yaml
+      - pack_15/SP15-225.yaml
+      - pack_15/SP15-226.yaml
+      - pack_15/SP15-227.yaml
+      - pack_15/SP15-228.yaml
+      - pack_15/SP15-229.yaml
+      - pack_15/SP15-230.yaml
+      - pack_15/SP15-231.yaml
+      - pack_15/SP15-232.yaml
+      - pack_15/SP15-233.yaml
+      - pack_15/SP15-234.yaml
+      - pack_15/SP15-235.yaml
+      - pack_15/SP15-236.yaml
+      - pack_15/SP15-237.yaml
+      - pack_15/SP15-238.yaml
+      - pack_15/SP15-239.yaml
   - id: occult-myth-and-gothic-punks
     name: 8. Occult, Myth & Gothic Punks
     presetRefs:
@@ -298,6 +314,22 @@ presetRefs:
   - pack_15/SP15-108.yaml
   - pack_15/SP15-109.yaml
   - pack_15/SP15-110.yaml
+  - pack_15/SP15-224.yaml
+  - pack_15/SP15-225.yaml
+  - pack_15/SP15-226.yaml
+  - pack_15/SP15-227.yaml
+  - pack_15/SP15-228.yaml
+  - pack_15/SP15-229.yaml
+  - pack_15/SP15-230.yaml
+  - pack_15/SP15-231.yaml
+  - pack_15/SP15-232.yaml
+  - pack_15/SP15-233.yaml
+  - pack_15/SP15-234.yaml
+  - pack_15/SP15-235.yaml
+  - pack_15/SP15-236.yaml
+  - pack_15/SP15-237.yaml
+  - pack_15/SP15-238.yaml
+  - pack_15/SP15-239.yaml
   - pack_15/SP15-111.yaml
   - pack_15/SP15-112.yaml
   - pack_15/SP15-113.yaml

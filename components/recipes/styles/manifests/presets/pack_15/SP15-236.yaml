@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-236
+packId: pack_15
+name: Screensaverpunk
+styleAnchors:
+  - Screensaverpunk
+  - idle-screen screensaver punk
+  - pipe mazes
+displayName: Screensaverpunk
+category: 7. Media, Vapor & Glitch Punks
+domain: idle-screen screensaver punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - media-vapor-and-glitch-punks
+  - screensaverpunk
+  - punk
+  - media
+visualDna:
+  aesthetic: 'Screensaverpunk: the dreaming world of idle old computers, with endless pipe mazes, flying starfields, bouncing shapes and 3D forms drifting in black space.'
+  subject_treatment: Keep the prompt's subject and setting; render it as an early 3D screensaver scene with shiny primitive shapes drifting in black space.
+  color_and_tone: Black backgrounds with shiny primary colored 3D primitives and white starfields.
+  lighting_and_shadow: Simple early 3D shading with bright hard specular highlights.
+  texture_and_material: Glossy low-poly pipes, chrome spheres, smooth gradients and starfield dots.
+  camera_and_composition: Endless looping motion through black space with shapes filling the frame.
+  atmosphere_and_mood: Hypnotic, lonely and dreamy, machines dreaming while nobody watches.
+  rendering_and_quality: Early 3D rendering with simple shading and glossy highlights.
+  creative_brief: "Screensaverpunk: the dreaming world of idle old computers, with endless pipe mazes, flying starfields, bouncing shapes and 3D forms drifting in black space. Carry it through pipe mazes, starfields, bouncing shapes, black space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: pipe mazes; starfields; bouncing shapes; black space
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - readable interface text or numerals
+  - real celebrity likeness
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text or numerals, real celebrity likeness, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: media-vapor-and-glitch-punks
+  categoryName: 7. Media, Vapor & Glitch Punks
+  tags:
+    - curation-v2
+    - media-vapor-and-glitch-punks
+    - screensaverpunk
+    - punk
+    - media
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: idle-screen screensaver punk

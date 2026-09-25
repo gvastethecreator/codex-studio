@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-227
+packId: pack_15
+name: Teletextpunk
+styleAnchors:
+  - Teletextpunk
+  - chunky mosaic broadcast page punk
+  - coarse mosaic cells
+displayName: Teletextpunk
+category: 7. Media, Vapor & Glitch Punks
+domain: chunky mosaic broadcast page punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - media-vapor-and-glitch-punks
+  - teletextpunk
+  - punk
+  - media
+visualDna:
+  aesthetic: 'Teletextpunk: everything built from chunky blocky mosaic graphics of old broadcast pages, with eight flat colors, stepped edges and black backgrounds.'
+  subject_treatment: Keep the prompt's subject and setting; reduce it to coarse block mosaic shapes of eight flat colors on black, without letters.
+  color_and_tone: Pure black backgrounds with saturated red, green, yellow, blue, magenta, cyan and white blocks.
+  lighting_and_shadow: Flat screen glow with no shading, only solid mosaic cells.
+  texture_and_material: Coarse rectangular mosaic cells, stepped diagonals and slight screen glow.
+  camera_and_composition: Flat centered page-like compositions made entirely of large blocks.
+  atmosphere_and_mood: Charming, crude and futuristic, a past idea of the digital future.
+  rendering_and_quality: Strict coarse mosaic rendering with solid cells and glowing edges.
+  creative_brief: "Teletextpunk: everything built from chunky blocky mosaic graphics of old broadcast pages, with eight flat colors, stepped edges and black backgrounds. Carry it through coarse mosaic cells, eight flat colors, black background, stepped edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: coarse mosaic cells; eight flat colors; black background; stepped edges
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - readable interface text or numerals
+  - real celebrity likeness
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text or numerals, real celebrity likeness, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: media-vapor-and-glitch-punks
+  categoryName: 7. Media, Vapor & Glitch Punks
+  tags:
+    - curation-v2
+    - media-vapor-and-glitch-punks
+    - teletextpunk
+    - punk
+    - media
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: chunky mosaic broadcast page punk

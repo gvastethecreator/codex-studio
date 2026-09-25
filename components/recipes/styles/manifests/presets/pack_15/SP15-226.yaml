@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-226
+packId: pack_15
+name: Dialuppunk
+styleAnchors:
+  - Dialuppunk
+  - early internet dial-up punk
+  - beige towers
+displayName: Dialuppunk
+category: 7. Media, Vapor & Glitch Punks
+domain: early internet dial-up punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - media-vapor-and-glitch-punks
+  - dialuppunk
+  - punk
+  - media
+visualDna:
+  aesthetic: 'Dialuppunk: the early home internet, with beige tower computers, glowing modem lights, tangled phone cords, clunky 3D avatars and bedrooms lit by a single monitor.'
+  subject_treatment: Keep the prompt's subject and setting; surround it with beige computers, modems, phone cords and early low-poly virtual worlds.
+  color_and_tone: Beige plastic, CRT blue glow and dark bedrooms with bright primary low-poly colors.
+  lighting_and_shadow: Faces lit only by a blue monitor glow and small green modem lights.
+  texture_and_material: Beige plastic, coiled phone cords, keyboard grime, low-poly shapes and dithering.
+  camera_and_composition: Cramped bedroom desks at night and chunky early virtual spaces.
+  atmosphere_and_mood: Lonely, curious and exciting, the first time the whole world connected.
+  rendering_and_quality: Nostalgic illustration mixing warm room detail with dithered low-poly worlds.
+  creative_brief: "Dialuppunk: the early home internet, with beige tower computers, glowing modem lights, tangled phone cords, clunky 3D avatars and bedrooms lit by a single monitor. Carry it through beige towers, modem lights, tangled cords, low-poly avatars. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: beige towers; modem lights; tangled cords; low-poly avatars
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - readable interface text or numerals
+  - real celebrity likeness
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text or numerals, real celebrity likeness, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: media-vapor-and-glitch-punks
+  categoryName: 7. Media, Vapor & Glitch Punks
+  tags:
+    - curation-v2
+    - media-vapor-and-glitch-punks
+    - dialuppunk
+    - punk
+    - media
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: early internet dial-up punk

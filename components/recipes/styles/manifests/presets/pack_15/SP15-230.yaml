@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-230
+packId: pack_15
+name: Faxpunk
+styleAnchors:
+  - Faxpunk
+  - thermal fax paper punk
+  - curling thermal paper
+displayName: Faxpunk
+category: 7. Media, Vapor & Glitch Punks
+domain: thermal fax paper punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - media-vapor-and-glitch-punks
+  - faxpunk
+  - punk
+  - media
+visualDna:
+  aesthetic: 'Faxpunk: a world transmitted by fax, with curling thermal paper, streaky grey scan lines, crushed contrast and endless paper spilling from machines.'
+  subject_treatment: Keep the prompt's subject and setting; render it as a streaky fax transmission on curling thermal paper, spilling from a machine.
+  color_and_tone: Faded grey and black on warm thermal paper white, with fading brown edges.
+  lighting_and_shadow: Harsh office fluorescent light with crushed fax contrast in the image itself.
+  texture_and_material: Curling thermal paper, streaky horizontal scan lines, toner speckle and grain.
+  camera_and_composition: Images emerging line by line from machines, paper piling on office floors.
+  atmosphere_and_mood: Urgent and bureaucratic, messages from far away arriving slowly.
+  rendering_and_quality: Low-fidelity fax rendering with streaks, speckle and crushed tones.
+  creative_brief: "Faxpunk: a world transmitted by fax, with curling thermal paper, streaky grey scan lines, crushed contrast and endless paper spilling from machines. Carry it through curling thermal paper, scan streaks, crushed contrast, spilling paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: curling thermal paper; scan streaks; crushed contrast; spilling paper
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - readable interface text or numerals
+  - real celebrity likeness
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text or numerals, real celebrity likeness, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: media-vapor-and-glitch-punks
+  categoryName: 7. Media, Vapor & Glitch Punks
+  tags:
+    - curation-v2
+    - media-vapor-and-glitch-punks
+    - faxpunk
+    - punk
+    - media
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: thermal fax paper punk

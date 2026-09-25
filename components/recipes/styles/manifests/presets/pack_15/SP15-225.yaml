@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-225
+packId: pack_15
+name: Camcorderpunk
+styleAnchors:
+  - Camcorderpunk
+  - home video camcorder punk
+  - shaky handheld framing
+displayName: Camcorderpunk
+category: 7. Media, Vapor & Glitch Punks
+domain: home video camcorder punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - media-vapor-and-glitch-punks
+  - camcorder
+  - punk
+  - media
+visualDna:
+  aesthetic: 'Camcorderpunk: the world through a 1990s home camcorder, with shaky handheld framing, soft video blur, blown highlights, tape tracking lines and family-event chaos.'
+  subject_treatment: Keep the prompt's subject and setting; show it as handheld home video footage, shaky, softly blurred and badly exposed.
+  color_and_tone: Oversaturated warm video colors, blown whites and muddy shadows with slight color bleed.
+  lighting_and_shadow: Harsh on-camera light or blown window light, flat and unflattering.
+  texture_and_material: Video noise, tracking lines, soft focus, chromatic bleed and interlace texture.
+  camera_and_composition: Tilted handheld framing, awkward zooms and subjects half out of frame.
+  atmosphere_and_mood: Chaotic, intimate and funny, memories nobody meant to make beautiful.
+  rendering_and_quality: Authentic low-resolution video rendering with noise, bleed and tracking lines.
+  creative_brief: "Camcorderpunk: the world through a 1990s home camcorder, with shaky handheld framing, soft video blur, blown highlights, tape tracking lines and family-event chaos. Carry it through shaky handheld framing, tracking lines, blown highlights, color bleed. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: shaky handheld framing; tracking lines; blown highlights; color bleed
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real brand or company logo
+  - readable interface text or numerals
+  - real celebrity likeness
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real brand or company logo, readable interface text or numerals, real celebrity likeness, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: media-vapor-and-glitch-punks
+  categoryName: 7. Media, Vapor & Glitch Punks
+  tags:
+    - curation-v2
+    - media-vapor-and-glitch-punks
+    - camcorder
+    - punk
+    - media
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: home video camcorder punk

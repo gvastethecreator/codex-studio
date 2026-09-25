@@ -3,7 +3,7 @@
     {
       "id": "pack_15",
       "name": "Punk Spectrum Vault",
-      "presetCount": 136
+      "presetCount": 152
     }
   ],
   "presets": [
@@ -1754,6 +1754,262 @@
       "searchableText": "sp15-110 glitchpunk 7. media, vapor & glitch punks media futures pack_15 punk spectrum vault media-vapor-and-glitch-punks punk-spectrum-vault media-vapor-and-glitch-punks"
     },
     {
+      "id": "SP15-224",
+      "name": "Filmpunk",
+      "styleAnchors": ["Filmpunk", "celluloid projection culture punk", "projector beams"],
+      "ref": "pack_15/SP15-224.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "media-vapor-and-glitch-punks",
+      "categoryName": "7. Media, Vapor & Glitch Punks",
+      "domain": "celluloid projection culture punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "media-vapor-and-glitch-punks",
+        "celluloid-projection-culture-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-224 filmpunk celluloid projection culture punk projector beams 7. media, vapor & glitch punks media futures celluloid projection culture punk pack_15 punk spectrum vault media-vapor-and-glitch-punks punk-spectrum-vault media-vapor-and-glitch-punks celluloid-projection-culture-punk"
+    },
+    {
+      "id": "SP15-225",
+      "name": "Camcorderpunk",
+      "styleAnchors": ["Camcorderpunk", "home video camcorder punk", "shaky handheld framing"],
+      "ref": "pack_15/SP15-225.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "media-vapor-and-glitch-punks",
+      "categoryName": "7. Media, Vapor & Glitch Punks",
+      "domain": "home video camcorder punk",
+      "tags": ["punk-spectrum-vault", "media-vapor-and-glitch-punks", "home-video-camcorder-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-225 camcorderpunk home video camcorder punk shaky handheld framing 7. media, vapor & glitch punks media futures home video camcorder punk pack_15 punk spectrum vault media-vapor-and-glitch-punks punk-spectrum-vault media-vapor-and-glitch-punks home-video-camcorder-punk"
+    },
+    {
+      "id": "SP15-226",
+      "name": "Dialuppunk",
+      "styleAnchors": ["Dialuppunk", "early internet dial-up punk", "beige towers"],
+      "ref": "pack_15/SP15-226.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "media-vapor-and-glitch-punks",
+      "categoryName": "7. Media, Vapor & Glitch Punks",
+      "domain": "early internet dial-up punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "media-vapor-and-glitch-punks",
+        "early-internet-dial-up-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-226 dialuppunk early internet dial-up punk beige towers 7. media, vapor & glitch punks media futures early internet dial-up punk pack_15 punk spectrum vault media-vapor-and-glitch-punks punk-spectrum-vault media-vapor-and-glitch-punks early-internet-dial-up-punk"
+    },
+    {
+      "id": "SP15-227",
+      "name": "Teletextpunk",
+      "styleAnchors": ["Teletextpunk", "chunky mosaic broadcast page punk", "coarse mosaic cells"],
+      "ref": "pack_15/SP15-227.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "media-vapor-and-glitch-punks",
+      "categoryName": "7. Media, Vapor & Glitch Punks",
+      "domain": "chunky mosaic broadcast page punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "media-vapor-and-glitch-punks",
+        "chunky-mosaic-broadcast-page-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-227 teletextpunk chunky mosaic broadcast page punk coarse mosaic cells 7. media, vapor & glitch punks media futures chunky mosaic broadcast page punk pack_15 punk spectrum vault media-vapor-and-glitch-punks punk-spectrum-vault media-vapor-and-glitch-punks chunky-mosaic-broadcast-page-punk"
+    },
+    {
+      "id": "SP15-228",
+      "name": "Y2Kpunk",
+      "styleAnchors": ["Y2Kpunk", "millennium chrome future punk", "liquid chrome"],
+      "ref": "pack_15/SP15-228.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "media-vapor-and-glitch-punks",
+      "categoryName": "7. Media, Vapor & Glitch Punks",
+      "domain": "millennium chrome future punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "media-vapor-and-glitch-punks",
+        "millennium-chrome-future-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-228 y2kpunk millennium chrome future punk liquid chrome 7. media, vapor & glitch punks media futures millennium chrome future punk pack_15 punk spectrum vault media-vapor-and-glitch-punks punk-spectrum-vault media-vapor-and-glitch-punks millennium-chrome-future-punk"
+    },
+    {
+      "id": "SP15-229",
+      "name": "Idolpunk",
+      "styleAnchors": ["Idolpunk", "manufactured pop idol media punk", "holographic stages"],
+      "ref": "pack_15/SP15-229.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "media-vapor-and-glitch-punks",
+      "categoryName": "7. Media, Vapor & Glitch Punks",
+      "domain": "manufactured pop idol media punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "media-vapor-and-glitch-punks",
+        "manufactured-pop-idol-media-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-229 idolpunk manufactured pop idol media punk holographic stages 7. media, vapor & glitch punks media futures manufactured pop idol media punk pack_15 punk spectrum vault media-vapor-and-glitch-punks punk-spectrum-vault media-vapor-and-glitch-punks manufactured-pop-idol-media-punk"
+    },
+    {
+      "id": "SP15-230",
+      "name": "Faxpunk",
+      "styleAnchors": ["Faxpunk", "thermal fax paper punk", "curling thermal paper"],
+      "ref": "pack_15/SP15-230.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "media-vapor-and-glitch-punks",
+      "categoryName": "7. Media, Vapor & Glitch Punks",
+      "domain": "thermal fax paper punk",
+      "tags": ["punk-spectrum-vault", "media-vapor-and-glitch-punks", "thermal-fax-paper-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-230 faxpunk thermal fax paper punk curling thermal paper 7. media, vapor & glitch punks media futures thermal fax paper punk pack_15 punk spectrum vault media-vapor-and-glitch-punks punk-spectrum-vault media-vapor-and-glitch-punks thermal-fax-paper-punk"
+    },
+    {
+      "id": "SP15-231",
+      "name": "Microfichepunk",
+      "styleAnchors": ["Microfichepunk", "microfiche archive punk", "glowing reader screens"],
+      "ref": "pack_15/SP15-231.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "media-vapor-and-glitch-punks",
+      "categoryName": "7. Media, Vapor & Glitch Punks",
+      "domain": "microfiche archive punk",
+      "tags": ["punk-spectrum-vault", "media-vapor-and-glitch-punks", "microfiche-archive-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-231 microfichepunk microfiche archive punk glowing reader screens 7. media, vapor & glitch punks media futures microfiche archive punk pack_15 punk spectrum vault media-vapor-and-glitch-punks punk-spectrum-vault media-vapor-and-glitch-punks microfiche-archive-punk"
+    },
+    {
+      "id": "SP15-232",
+      "name": "Jukeboxpunk",
+      "styleAnchors": ["Jukeboxpunk", "jukebox diner culture punk", "glowing jukeboxes"],
+      "ref": "pack_15/SP15-232.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "media-vapor-and-glitch-punks",
+      "categoryName": "7. Media, Vapor & Glitch Punks",
+      "domain": "jukebox diner culture punk",
+      "tags": ["punk-spectrum-vault", "media-vapor-and-glitch-punks", "jukebox-diner-culture-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-232 jukeboxpunk jukebox diner culture punk glowing jukeboxes 7. media, vapor & glitch punks media futures jukebox diner culture punk pack_15 punk spectrum vault media-vapor-and-glitch-punks punk-spectrum-vault media-vapor-and-glitch-punks jukebox-diner-culture-punk"
+    },
+    {
+      "id": "SP15-233",
+      "name": "Hologrampunk",
+      "styleAnchors": ["Hologrampunk", "cheap hologram foil punk", "rainbow diffraction"],
+      "ref": "pack_15/SP15-233.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "media-vapor-and-glitch-punks",
+      "categoryName": "7. Media, Vapor & Glitch Punks",
+      "domain": "cheap hologram foil punk",
+      "tags": ["punk-spectrum-vault", "media-vapor-and-glitch-punks", "cheap-hologram-foil-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-233 hologrampunk cheap hologram foil punk rainbow diffraction 7. media, vapor & glitch punks media futures cheap hologram foil punk pack_15 punk spectrum vault media-vapor-and-glitch-punks punk-spectrum-vault media-vapor-and-glitch-punks cheap-hologram-foil-punk"
+    },
+    {
+      "id": "SP15-234",
+      "name": "Photoboothpunk",
+      "styleAnchors": ["Photoboothpunk", "photo booth strip culture punk", "four-frame strips"],
+      "ref": "pack_15/SP15-234.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "media-vapor-and-glitch-punks",
+      "categoryName": "7. Media, Vapor & Glitch Punks",
+      "domain": "photo booth strip culture punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "media-vapor-and-glitch-punks",
+        "photo-booth-strip-culture-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-234 photoboothpunk photo booth strip culture punk four-frame strips 7. media, vapor & glitch punks media futures photo booth strip culture punk pack_15 punk spectrum vault media-vapor-and-glitch-punks punk-spectrum-vault media-vapor-and-glitch-punks photo-booth-strip-culture-punk"
+    },
+    {
+      "id": "SP15-235",
+      "name": "Carouselpunk",
+      "styleAnchors": ["Carouselpunk", "slide projector memory punk", "projected slides"],
+      "ref": "pack_15/SP15-235.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "media-vapor-and-glitch-punks",
+      "categoryName": "7. Media, Vapor & Glitch Punks",
+      "domain": "slide projector memory punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "media-vapor-and-glitch-punks",
+        "slide-projector-memory-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-235 carouselpunk slide projector memory punk projected slides 7. media, vapor & glitch punks media futures slide projector memory punk pack_15 punk spectrum vault media-vapor-and-glitch-punks punk-spectrum-vault media-vapor-and-glitch-punks slide-projector-memory-punk"
+    },
+    {
+      "id": "SP15-236",
+      "name": "Screensaverpunk",
+      "styleAnchors": ["Screensaverpunk", "idle-screen screensaver punk", "pipe mazes"],
+      "ref": "pack_15/SP15-236.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "media-vapor-and-glitch-punks",
+      "categoryName": "7. Media, Vapor & Glitch Punks",
+      "domain": "idle-screen screensaver punk",
+      "tags": [
+        "punk-spectrum-vault",
+        "media-vapor-and-glitch-punks",
+        "idle-screen-screensaver-punk"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-236 screensaverpunk idle-screen screensaver punk pipe mazes 7. media, vapor & glitch punks media futures idle-screen screensaver punk pack_15 punk spectrum vault media-vapor-and-glitch-punks punk-spectrum-vault media-vapor-and-glitch-punks idle-screen-screensaver-punk"
+    },
+    {
+      "id": "SP15-237",
+      "name": "Vinylpunk",
+      "styleAnchors": ["Vinylpunk", "record culture vinyl punk", "spinning grooves"],
+      "ref": "pack_15/SP15-237.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "media-vapor-and-glitch-punks",
+      "categoryName": "7. Media, Vapor & Glitch Punks",
+      "domain": "record culture vinyl punk",
+      "tags": ["punk-spectrum-vault", "media-vapor-and-glitch-punks", "record-culture-vinyl-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-237 vinylpunk record culture vinyl punk spinning grooves 7. media, vapor & glitch punks media futures record culture vinyl punk pack_15 punk spectrum vault media-vapor-and-glitch-punks punk-spectrum-vault media-vapor-and-glitch-punks record-culture-vinyl-punk"
+    },
+    {
+      "id": "SP15-238",
+      "name": "Pinballpunk",
+      "styleAnchors": ["Pinballpunk", "pinball machine world punk", "flippers and bumpers"],
+      "ref": "pack_15/SP15-238.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "media-vapor-and-glitch-punks",
+      "categoryName": "7. Media, Vapor & Glitch Punks",
+      "domain": "pinball machine world punk",
+      "tags": ["punk-spectrum-vault", "media-vapor-and-glitch-punks", "pinball-machine-world-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-238 pinballpunk pinball machine world punk flippers and bumpers 7. media, vapor & glitch punks media futures pinball machine world punk pack_15 punk spectrum vault media-vapor-and-glitch-punks punk-spectrum-vault media-vapor-and-glitch-punks pinball-machine-world-punk"
+    },
+    {
+      "id": "SP15-239",
+      "name": "Karaokepunk",
+      "styleAnchors": ["Karaokepunk", "karaoke box culture punk", "glitter microphones"],
+      "ref": "pack_15/SP15-239.yaml",
+      "packId": "pack_15",
+      "packName": "Punk Spectrum Vault",
+      "categoryId": "media-vapor-and-glitch-punks",
+      "categoryName": "7. Media, Vapor & Glitch Punks",
+      "domain": "karaoke box culture punk",
+      "tags": ["punk-spectrum-vault", "media-vapor-and-glitch-punks", "karaoke-box-culture-punk"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp15-239 karaokepunk karaoke box culture punk glitter microphones 7. media, vapor & glitch punks media futures karaoke box culture punk pack_15 punk spectrum vault media-vapor-and-glitch-punks punk-spectrum-vault media-vapor-and-glitch-punks karaoke-box-culture-punk"
+    },
+    {
       "id": "SP15-111",
       "name": "Witchpunk",
       "ref": "pack_15/SP15-111.yaml",
@@ -1898,5 +2154,5 @@
       "searchableText": "sp15-122 low-tech punk 10. primitive, stone & salvage punks primitive & salvage futures pack_15 punk spectrum vault primitive-stone-and-salvage-punks punk-spectrum-vault primitive-stone-and-salvage-punks"
     }
   ],
-  "totalPresetCount": 136
+  "totalPresetCount": 152
 }
