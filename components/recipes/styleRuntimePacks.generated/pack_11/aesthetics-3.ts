@@ -80,7 +80,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP11-012',
-    name: 'Solarpunk',
+    name: 'Solarpunk Community Aesthetic',
     category: '3. Aesthetics',
     negativePrompt:
       'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, dark, industrial, pollution, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
@@ -107,7 +107,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP11-013',
-    name: 'Dieselpunk',
+    name: 'Dieselpunk Monument Aesthetic',
     category: '3. Aesthetics',
     negativePrompt:
       'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real war insignia, clean, digital, plastic, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
@@ -221,7 +221,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP11-037',
-    name: 'Steampunk',
+    name: 'Steampunk Inventor Aesthetic',
     category: '3. Aesthetics',
     negativePrompt:
       'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, plastic, digital, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
@@ -249,7 +249,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP11-038',
-    name: 'Biopunk',
+    name: 'Biopunk Flesh-Tech Aesthetic',
     category: '3. Aesthetics',
     negativePrompt:
       'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, metal, dry, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',

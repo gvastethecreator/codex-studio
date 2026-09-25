@@ -66,6 +66,7 @@ const spec: Spec = {
       ],
     },
     'SP11-012': {
+      name: 'Solarpunk Community Aesthetic',
       dna: style(
         'Solarpunk: hopeful green-tech communities where plants, solar glass and handmade repair live together.',
         'set in a lived-in green city: terraces of gardens, solar canopies, wind sails, stained-glass panels and people working together.',
@@ -85,6 +86,7 @@ const spec: Spec = {
       ],
     },
     'SP11-013': {
+      name: 'Dieselpunk Monument Aesthetic',
       dna: style(
         'Dieselpunk: 1930s-40s heavy industry retrofuturism, huge riveted machines, smoke and searchlights.',
         'set in a world of riveted steel, diesel engines, zeppelins and war-era propaganda-poster weight.',
@@ -162,6 +164,7 @@ const spec: Spec = {
       ],
     },
     'SP11-037': {
+      name: 'Steampunk Inventor Aesthetic',
       dna: style(
         'Steampunk: Victorian brass-and-steam invention, gears, gauges, goggles and airships.',
         'fitted with brass gears, pressure gauges, copper pipes and steam vents, dressed in Victorian clothing.',
@@ -181,6 +184,7 @@ const spec: Spec = {
       ],
     },
     'SP11-038': {
+      name: 'Biopunk Flesh-Tech Aesthetic',
       dna: style(
         'Biopunk: living technology grown from flesh, veins and tissue in wet labs and organic cities.',
         'fused with grown organic machinery: veins, tendons, membranes, growth vats and pulsing tubes.',

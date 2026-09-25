@@ -565,7 +565,7 @@
     },
     {
       "id": "SP11-012",
-      "name": "Solarpunk",
+      "name": "Solarpunk Community Aesthetic",
       "ref": "pack_11/SP11-012.yaml",
       "packId": "pack_11",
       "packName": "Miscellaneous & Fun",
@@ -573,11 +573,11 @@
       "categoryName": "3. Aesthetics",
       "tags": ["miscellaneous-and-fun", "aesthetics"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp11-012 solarpunk 3. aesthetics digital aesthetics pack_11 miscellaneous & fun aesthetics miscellaneous-and-fun aesthetics"
+      "searchableText": "sp11-012 solarpunk community aesthetic 3. aesthetics digital aesthetics pack_11 miscellaneous & fun aesthetics miscellaneous-and-fun aesthetics"
     },
     {
       "id": "SP11-013",
-      "name": "Dieselpunk",
+      "name": "Dieselpunk Monument Aesthetic",
       "ref": "pack_11/SP11-013.yaml",
       "packId": "pack_11",
       "packName": "Miscellaneous & Fun",
@@ -585,7 +585,7 @@
       "categoryName": "3. Aesthetics",
       "tags": ["miscellaneous-and-fun", "aesthetics"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp11-013 dieselpunk 3. aesthetics digital aesthetics pack_11 miscellaneous & fun aesthetics miscellaneous-and-fun aesthetics"
+      "searchableText": "sp11-013 dieselpunk monument aesthetic 3. aesthetics digital aesthetics pack_11 miscellaneous & fun aesthetics miscellaneous-and-fun aesthetics"
     },
     {
       "id": "SP11-014",
@@ -626,7 +626,7 @@
     },
     {
       "id": "SP11-037",
-      "name": "Steampunk",
+      "name": "Steampunk Inventor Aesthetic",
       "ref": "pack_11/SP11-037.yaml",
       "packId": "pack_11",
       "packName": "Miscellaneous & Fun",
@@ -634,11 +634,11 @@
       "categoryName": "3. Aesthetics",
       "tags": ["miscellaneous-and-fun", "aesthetics"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp11-037 steampunk 3. aesthetics digital aesthetics pack_11 miscellaneous & fun aesthetics miscellaneous-and-fun aesthetics"
+      "searchableText": "sp11-037 steampunk inventor aesthetic 3. aesthetics digital aesthetics pack_11 miscellaneous & fun aesthetics miscellaneous-and-fun aesthetics"
     },
     {
       "id": "SP11-038",
-      "name": "Biopunk",
+      "name": "Biopunk Flesh-Tech Aesthetic",
       "ref": "pack_11/SP11-038.yaml",
       "packId": "pack_11",
       "packName": "Miscellaneous & Fun",
@@ -646,7 +646,7 @@
       "categoryName": "3. Aesthetics",
       "tags": ["miscellaneous-and-fun", "aesthetics"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp11-038 biopunk 3. aesthetics digital aesthetics pack_11 miscellaneous & fun aesthetics miscellaneous-and-fun aesthetics"
+      "searchableText": "sp11-038 biopunk flesh-tech aesthetic 3. aesthetics digital aesthetics pack_11 miscellaneous & fun aesthetics miscellaneous-and-fun aesthetics"
     },
     {
       "id": "SP11-039",
