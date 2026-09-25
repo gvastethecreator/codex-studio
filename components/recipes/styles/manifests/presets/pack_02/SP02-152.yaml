@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP02-152
+packId: pack_02
+name: Synthetic Aperture Radar
+styleAnchors:
+  - Synthetic Aperture Radar
+  - SAR satellite imaging
+  - speckled greyscale
+displayName: Synthetic Aperture Radar
+category: 7. Sensor And Technical Imaging
+domain: SAR satellite imaging
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - sensor-and-technical-imaging
+  - sar
+  - radar
+  - remote-sensing
+visualDna:
+  aesthetic: 'Synthetic aperture radar: a satellite radar image in grainy greyscale where rough and metal surfaces return bright and smooth water stays black.'
+  subject_treatment: Keep the prompt subject, action and setting as the thing being imaged; this preset replaces visible-light appearance with what the sensor records, and adds no readable readout, label or diagnosis.
+  color_and_tone: Salt-and-pepper greyscale, black calm water, bright white metal and cliffs.
+  lighting_and_shadow: 'Side-looking radar illumination: slopes facing the satellite bright, back slopes in radar shadow.'
+  texture_and_material: Heavy speckle, geometric layover distortion on mountains, bright corner reflectors.
+  camera_and_composition: Orbital view, subject as landscape-scale texture and bright points.
+  atmosphere_and_mood: Cold and technical, the world seen through storm and night alike.
+  rendering_and_quality: Credible SAR speckle look; no labels or scale bars.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Synthetic Aperture Radar as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: speckled greyscale; black smooth water; bright metal returns; radar shadow on slopes; layover distortion
+avoidRules:
+  - readable readouts
+  - fake UI text
+  - diagnostic label
+  - invented medical claim
+  - normal color photo
+  - celebrity likeness
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: sensor-and-technical-imaging
+  categoryName: 7. Sensor And Technical Imaging
+  tags:
+    - cinematic-and-media
+    - sensor-and-technical-imaging
+    - sar
+    - radar
+    - remote-sensing
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: SAR satellite imaging

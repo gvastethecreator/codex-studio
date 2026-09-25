@@ -165,6 +165,23 @@ categories:
       - pack_02/SP02-058.yaml
       - pack_02/SP02-059.yaml
       - pack_02/SP02-060.yaml
+      - pack_02/SP02-146.yaml
+      - pack_02/SP02-147.yaml
+      - pack_02/SP02-148.yaml
+      - pack_02/SP02-149.yaml
+      - pack_02/SP02-150.yaml
+      - pack_02/SP02-151.yaml
+      - pack_02/SP02-152.yaml
+      - pack_02/SP02-153.yaml
+      - pack_02/SP02-154.yaml
+      - pack_02/SP02-155.yaml
+      - pack_02/SP02-156.yaml
+      - pack_02/SP02-157.yaml
+      - pack_02/SP02-158.yaml
+      - pack_02/SP02-159.yaml
+      - pack_02/SP02-160.yaml
+      - pack_02/SP02-161.yaml
+      - pack_02/SP02-162.yaml
   - id: hand-drawn-and-diy-media
     name: 8. Hand-Drawn And DIY Media
     presetRefs:
@@ -314,6 +331,23 @@ presetRefs:
   - pack_02/SP02-058.yaml
   - pack_02/SP02-059.yaml
   - pack_02/SP02-060.yaml
+  - pack_02/SP02-146.yaml
+  - pack_02/SP02-147.yaml
+  - pack_02/SP02-148.yaml
+  - pack_02/SP02-149.yaml
+  - pack_02/SP02-150.yaml
+  - pack_02/SP02-151.yaml
+  - pack_02/SP02-152.yaml
+  - pack_02/SP02-153.yaml
+  - pack_02/SP02-154.yaml
+  - pack_02/SP02-155.yaml
+  - pack_02/SP02-156.yaml
+  - pack_02/SP02-157.yaml
+  - pack_02/SP02-158.yaml
+  - pack_02/SP02-159.yaml
+  - pack_02/SP02-160.yaml
+  - pack_02/SP02-161.yaml
+  - pack_02/SP02-162.yaml
   - pack_02/SP02-091.yaml
   - pack_02/SP02-092.yaml
   - pack_02/SP02-093.yaml

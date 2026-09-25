@@ -1102,5 +1102,85 @@
   "SP02-120": [
     "Toxic marker doodle of a pencil sharpener chewing pencils, correction accents. No text or logo.",
     "Toxic marker doodle of a lunchbox with teeth snapping at a sandwich. No text or logo."
+  ],
+  "SP02-058": [
+    "X-ray radiograph of an antique pocket watch revealing every gear, spring and jewel inside the case as layered translucent shapes. No labels or text.",
+    "X-ray radiograph of a violin showing the bass bar, sound post and hidden repair pins inside the translucent wooden body. No labels or text."
+  ],
+  "SP02-059": [
+    "White-hot thermal image of adult villagers gathered around a bonfire, the fire a blinding white bloom and the faces bright grey, the night black. No readouts or text.",
+    "White-hot thermal image of a horse-drawn carriage on a dark road, the horses glowing white, the wooden wheels cold grey. No readouts or text."
+  ],
+  "SP02-060": [
+    "Night-vision image of an owl on a bare branch staring at the lens, its eyes shining bright green, scintillation noise in the sky. No readouts or text.",
+    "Night-vision image of red deer grazing in a forest clearing, their eyes glowing, grainy gain and soft tube edges. No readouts or text."
+  ],
+  "SP02-146": [
+    "Medical ultrasound image of a heart's four chambers in cross-section, bright valve lines, dark blood spaces and grainy speckle. No labels or text.",
+    "Ultrasound-style sector image of a whale calf swimming beside its mother, both grainy grey echoes in the black sea. No labels or text."
+  ],
+  "SP02-147": [
+    "MRI slice through a pomegranate, hundreds of seed chambers bright against the dark rind structure. No labels or text.",
+    "Axial MRI slice through an adult knee, cartilage and ligaments in soft grey tones, bone dark. No labels or text."
+  ],
+  "SP02-148": [
+    "CT volume rendering of an ancient bronze helmet, corrosion layers peeled away in translucent blue to show the thin metal beneath. No labels or text.",
+    "CT volume rendering of a sealed clay jar revealing a hoard of coins stacked inside as ivory discs. No labels or text."
+  ],
+  "SP02-149": [
+    "Side-scan sonar image of the long coiled shadow of a sea serpent stretched along the seafloor, streaky scan lines. No text.",
+    "Side-scan sonar image of a drowned village street, rows of roofless stone houses as amber blocks with black shadows. No text."
+  ],
+  "SP02-150": [
+    "Radar scope showing a storm front as a speckled band and a flock of birds as a faint moving smudge, amber phosphor. No numbers or text.",
+    "Radar scope showing a single huge unknown echo circling an island, its fading trail spiraling across the glass. No numbers or text."
+  ],
+  "SP02-151": [
+    "Multispectral false-color image of a volcanic island with dark lava flows cutting through red forest. No labels or text.",
+    "Multispectral false-color image of circular irrigated fields in a desert, red discs on tan ground. No labels or text."
+  ],
+  "SP02-152": [
+    "Synthetic aperture radar image of a harbor with ships as bright white points on black water. No labels or text.",
+    "Synthetic aperture radar image of an ice sheet torn by crevasses, grey speckled texture with bright fracture lines. No labels or text."
+  ],
+  "SP02-153": [
+    "Starlight camera image of a castle courtyard at night with a patrolling guard, a single torch blown out to white. No text.",
+    "Starlight camera image of a fox trotting across a snowy field, its motion smeared, grey-blue grain. No text."
+  ],
+  "SP02-154": [
+    "Scintigraphy image of a pair of hands showing tracer glowing in the knuckles, blurry low-resolution outline. No labels or text.",
+    "Scintigraphy heart image as a glowing red-yellow ring on black, grainy and soft. No labels or text."
+  ],
+  "SP02-155": [
+    "Hyperspectral data cube of a coral reef, the reef on the top face and the sides glowing in band gradients. No axes or text.",
+    "Hyperspectral data cube of a hillside vineyard in rows, spectral striations along the edges. No axes or text."
+  ],
+  "SP02-156": [
+    "Seismic reflection section revealing a buried river channel as a lens-shaped cut in black-and-white wiggle traces. No numbers or text.",
+    "Seismic reflection section of an ancient impact crater buried under flat layers, the bowl bending the bands. No numbers or text."
+  ],
+  "SP02-157": [
+    "Ground-penetrating radar profile across a church floor revealing a hidden crypt as a dark void with bright ringing arcs. No scales or text.",
+    "Ground-penetrating radar profile over a buried chest, one strong hyperbola among faint arcs of stones. No scales or text."
+  ],
+  "SP02-158": [
+    "Cloud chamber photograph of a single long straight muon track slicing across a field of faint wisps. No labels or text.",
+    "Cloud chamber photograph of an electron spiraling in a magnetic field, its white trail curling inward. No labels or text."
+  ],
+  "SP02-159": [
+    "Bubble chamber photograph of a V-shaped decay appearing out of nowhere beside a tight spiral, cyan-tinted archival film. No numbers or text.",
+    "Bubble chamber photograph of a spray of tracks fanning out from a high-energy event. No numbers or text."
+  ],
+  "SP02-160": [
+    "Retinal fundus photograph centered on the optic disc, vessels radiating like rivers, soft reflex sheen. No labels or text.",
+    "Retinal fundus photograph of a cat's eye, its reflective layer shimmering green-gold above the red lower retina. No labels or text."
+  ],
+  "SP02-161": [
+    "Confocal fluorescence micrograph of a moss leaf, rows of cells with red glowing chloroplasts and cyan walls. No scale bar or text.",
+    "Confocal fluorescence micrograph of a tiny transparent fish embryo, its spine and eyes glowing in green and red channels. No scale bar or text."
+  ],
+  "SP02-162": [
+    "Satellite night-lights image of a winding river valley traced by a chain of glowing towns. No labels or text.",
+    "Satellite night-lights image of a mountain-ringed kingdom's cities glowing along a single trade road, dark peaks all around. No labels or text."
   ]
 }

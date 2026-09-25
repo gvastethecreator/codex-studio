@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP02-149
+packId: pack_02
+name: Side-Scan Sonar
+styleAnchors:
+  - Side-Scan Sonar
+  - side-scan sonar imaging
+  - amber acoustic relief
+displayName: Side-Scan Sonar
+category: 7. Sensor And Technical Imaging
+domain: side-scan sonar imaging
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - sensor-and-technical-imaging
+  - sonar
+  - seafloor
+  - sensor
+visualDna:
+  aesthetic: 'Side-scan sonar: acoustic strips of the seafloor recorded from a towed fish, turning shapes into amber reliefs with long black acoustic shadows.'
+  subject_treatment: Keep the prompt subject, action and setting as the thing being imaged; this preset replaces visible-light appearance with what the sensor records, and adds no readable readout, label or diagnosis.
+  color_and_tone: Amber, copper and brown tones, dark water column stripe down the center, black shadows.
+  lighting_and_shadow: 'Pseudo-light from one side: objects bright where facing the sonar and cast long black shadows away.'
+  texture_and_material: Sediment ripples, speckle, streaky scan lines, soft blur along the track.
+  camera_and_composition: Top-down swath with a dark vertical nadir band and objects to its sides.
+  atmosphere_and_mood: Deep and ghostly, lost things found in the dark.
+  rendering_and_quality: Credible sonar mosaic; no coordinates or grid text.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Side-Scan Sonar as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: amber acoustic relief; long black shadows; central nadir stripe; scan-line texture; top-down swath
+avoidRules:
+  - readable readouts
+  - fake UI text
+  - diagnostic label
+  - invented medical claim
+  - normal color photo
+  - celebrity likeness
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: sensor-and-technical-imaging
+  categoryName: 7. Sensor And Technical Imaging
+  tags:
+    - cinematic-and-media
+    - sensor-and-technical-imaging
+    - sonar
+    - seafloor
+    - sensor
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: side-scan sonar imaging

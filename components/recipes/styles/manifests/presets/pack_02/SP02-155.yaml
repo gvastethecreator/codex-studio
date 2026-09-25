@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP02-155
+packId: pack_02
+name: Hyperspectral Data Cube
+styleAnchors:
+  - Hyperspectral Data Cube
+  - hyperspectral imaging
+  - isometric data cube
+displayName: Hyperspectral Data Cube
+category: 7. Sensor And Technical Imaging
+domain: hyperspectral imaging
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - sensor-and-technical-imaging
+  - hyperspectral
+  - data-cube
+  - remote-sensing
+visualDna:
+  aesthetic: 'Hyperspectral data cube: an image shown as the top face of a 3D block whose sides display hundreds of spectral bands as rainbow streaks.'
+  subject_treatment: Keep the prompt subject, action and setting as the thing being imaged; this preset replaces visible-light appearance with what the sensor records, and adds no readable readout, label or diagnosis.
+  color_and_tone: Natural or false-color top face, rainbow band gradients on the cube sides, dark background.
+  lighting_and_shadow: Flat scientific presentation with slight shading to show the cube form.
+  texture_and_material: Fine band striations on the cube edges, pixelated spectral detail.
+  camera_and_composition: Isometric cube view, the subject on the top face.
+  atmosphere_and_mood: Analytical and beautiful, a scene opened up into its light.
+  rendering_and_quality: Clean scientific visualization without any axes, numbers, legends or captions.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hyperspectral Data Cube as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: isometric data cube; subject on the top face; rainbow spectral sides; band striations; dark background
+avoidRules:
+  - readable readouts
+  - fake UI text
+  - diagnostic label
+  - invented medical claim
+  - normal color photo
+  - celebrity likeness
+  - axis labels
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, axis labels, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: sensor-and-technical-imaging
+  categoryName: 7. Sensor And Technical Imaging
+  tags:
+    - cinematic-and-media
+    - sensor-and-technical-imaging
+    - hyperspectral
+    - data-cube
+    - remote-sensing
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: hyperspectral imaging

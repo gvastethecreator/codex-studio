@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP02-150
+packId: pack_02
+name: Radar PPI Scope
+styleAnchors:
+  - Radar PPI Scope
+  - plan position indicator radar
+  - rotating sweep line
+displayName: Radar PPI Scope
+category: 7. Sensor And Technical Imaging
+domain: plan position indicator radar
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - sensor-and-technical-imaging
+  - radar
+  - phosphor-display
+  - sensor
+visualDna:
+  aesthetic: 'Radar plan-position scope: a round phosphor display where a rotating sweep paints echoes of ships, land and weather that slowly fade.'
+  subject_treatment: Keep the prompt subject, action and setting as the thing being imaged; this preset replaces visible-light appearance with what the sensor records, and adds no readable readout, label or diagnosis.
+  color_and_tone: Green or amber phosphor on black glass, brighter fresh echoes, dimmer fading trails.
+  lighting_and_shadow: Screen glow only; the sweep line brightest, old returns decaying.
+  texture_and_material: Phosphor bloom, curved glass reflections, faint range rings without numbers.
+  camera_and_composition: Circular scope centered, subject translated into echo blips and land shapes.
+  atmosphere_and_mood: Tense and watchful, something approaching in the sweep.
+  rendering_and_quality: Analog radar display look; no readable numbers or bearings.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Radar PPI Scope as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: rotating sweep line; fading phosphor echoes; round scope; range rings; green glow on black
+avoidRules:
+  - readable readouts
+  - fake UI text
+  - diagnostic label
+  - invented medical claim
+  - normal color photo
+  - celebrity likeness
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: sensor-and-technical-imaging
+  categoryName: 7. Sensor And Technical Imaging
+  tags:
+    - cinematic-and-media
+    - sensor-and-technical-imaging
+    - radar
+    - phosphor-display
+    - sensor
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: plan position indicator radar

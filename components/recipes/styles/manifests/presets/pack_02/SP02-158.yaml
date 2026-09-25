@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP02-158
+packId: pack_02
+name: Cloud Chamber Particle Tracks
+styleAnchors:
+  - Cloud Chamber Particle Tracks
+  - cloud chamber detection
+  - white vapor trails on black
+displayName: Cloud Chamber Particle Tracks
+category: 7. Sensor And Technical Imaging
+domain: cloud chamber detection
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - sensor-and-technical-imaging
+  - cloud-chamber
+  - particle-physics
+  - detector
+visualDna:
+  aesthetic: 'Cloud chamber: supersaturated vapor inside a dark chamber where passing particles leave thin white condensation trails.'
+  subject_treatment: Keep the prompt subject as the source or theme of the event; render the image as particle tracks in a cloud chamber, never adding readable labels.
+  color_and_tone: Black background with white and silvery-blue vapor trails.
+  lighting_and_shadow: Side light raking through the chamber so the trails glow.
+  texture_and_material: Thin wispy tracks, short fat alpha streaks, long straight muon lines, curling electrons.
+  camera_and_composition: Looking down into the chamber, tracks radiating or crossing the frame.
+  atmosphere_and_mood: Awe-struck and quiet, invisible rain made visible.
+  rendering_and_quality: Real cloud-chamber photograph look; not a digital particle effect.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cloud Chamber Particle Tracks as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: white vapor trails on black; raking side light; straight and curling tracks; fat alpha streaks; top-down chamber view
+avoidRules:
+  - readable readouts
+  - fake UI text
+  - diagnostic label
+  - invented medical claim
+  - normal color photo
+  - celebrity likeness
+  - digital particle effect
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, digital particle effect, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: sensor-and-technical-imaging
+  categoryName: 7. Sensor And Technical Imaging
+  tags:
+    - cinematic-and-media
+    - sensor-and-technical-imaging
+    - cloud-chamber
+    - particle-physics
+    - detector
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: cloud chamber detection

@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP02-148
+packId: pack_02
+name: CT Volume Rendering
+styleAnchors:
+  - CT Volume Rendering
+  - computed tomography volume
+  - ivory reconstructed solids
+displayName: CT Volume Rendering
+category: 7. Sensor And Technical Imaging
+domain: computed tomography volume
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - sensor-and-technical-imaging
+  - ct-scan
+  - volume-rendering
+  - sensor
+visualDna:
+  aesthetic: 'CT volume rendering: a stack of X-ray slices reconstructed into a 3D view where dense materials appear as ivory solids and softer layers as translucent shells.'
+  subject_treatment: Keep the prompt subject, action and setting as the thing being imaged; this preset replaces visible-light appearance with what the sensor records, and adds no readable readout, label or diagnosis.
+  color_and_tone: Ivory and bone white for dense parts, translucent amber or blue for softer layers, black ground.
+  lighting_and_shadow: Soft virtual lighting on reconstructed surfaces, subtle ambient occlusion.
+  texture_and_material: Slightly stepped surfaces from slice reconstruction, porous bone and corrosion detail.
+  camera_and_composition: Three-quarter view of the object with the outer layer cut away to reveal the inside.
+  atmosphere_and_mood: Archaeological and uncanny, secrets revealed without opening anything.
+  rendering_and_quality: Scientific volume render with no labels, scale bars or measurements.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies CT Volume Rendering as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: ivory reconstructed solids; translucent outer shell; cut-away reveal; slice stepping; black background
+avoidRules:
+  - readable readouts
+  - fake UI text
+  - diagnostic label
+  - invented medical claim
+  - normal color photo
+  - celebrity likeness
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: sensor-and-technical-imaging
+  categoryName: 7. Sensor And Technical Imaging
+  tags:
+    - cinematic-and-media
+    - sensor-and-technical-imaging
+    - ct-scan
+    - volume-rendering
+    - sensor
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: computed tomography volume

@@ -8,28 +8,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'X-Ray Photography',
     category: '7. Sensor And Technical Imaging',
     negativePrompt:
-      'surface detail, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, normal color photo, fake UI labels, medical-only subject, decorative glow',
+      'readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, surface detail, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, fake UI labels, medical-only subject, decorative glow, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'X-Ray Photography acts as a transferable cinematic-media router: start from Internal structure, radiographic x-ray imaging with translucent density mapping, phosphor-sheet glow, skeletal/interior structure logic, and clinical negative contrast, Inverted density map, translucent layers, phosphor glow, radiographic negative and sensor-imaging system built from non-visible spectrum capture, diagnostic mapping, device artifacts, false color, and technical exposure constraints, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'X-ray radiograph: dense material blocks the beam and shows bright, thin material lets it through and stays dark, revealing the inside of the subject as a glowing negative.',
       subject_treatment:
-        'Transform any prompt subject through Bones/Structure, internal-structure translation, translucent silhouette density, and diagnostic layer hierarchy without requiring bones or a medical subject; preserve the requested subject while translating visible surfaces into internal structure, heat zones, night-vision gain, phosphor glow, or diagnostic density maps, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting as the thing being imaged; this preset replaces visible-light appearance with what the sensor records, and adds no readable readout, label or diagnosis.',
       color_and_tone:
-        'Build color with Black/White/Blue, indigo ghost, bone-white, translucent cyan; use color as sensor output: radiographic blues, thermal gradients, phosphor green, blackbody heat, scan density, or device-limited monochrome, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Blue-black film base with bone-white and pale cyan densities; no other color.',
       lighting_and_shadow:
-        'Handle light through Translucent, backlit negative, see-through glow; make illumination feel device-derived through backlit density, infrared gain, emissive heat, phosphor bloom, noise amplification, or translucent structure, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'No surface light at all; brightness equals material density along the beam.',
       texture_and_material:
-        'Render Film, radiographic sheet, phosphor plate; surface detail should reveal film sheet grain, sensor noise, edge halos, interior silhouettes, heat speckle, phosphor streak, or diagnostic plate texture, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Translucent overlapping layers, crisp edges on metal and bone, faint film grain and scatter haze.',
       camera_and_composition:
-        'Structure the image through Transparency, density mapping, interior-only view; compose through scan-plane clarity, central diagnostic readability, density hierarchy, technical crop, and device perspective without requiring medical subject matter, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Clinical, spooky, diagnostic, hidden structure; derive mood from clinical exposure, hidden structure, surveillance unease, spectral unreality, or technical discovery, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Flat projection straight through the subject, centered on a dark film sheet.',
+      atmosphere_and_mood: 'Clinical and eerie, the hidden inside of familiar things laid bare.',
       rendering_and_quality:
-        'Finish with Medical, scientific, diagnostic clarity, ghostly penetration; finish as credible sensor output with readable mapped structures, controlled noise, and no normal-color photo fallback or fake UI labels, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Credible radiograph film look; a shader version lives in pack_03 and a playful one in pack_11.',
       key_features:
-        'Internal structure, radiographic x-ray imaging with translucent density mapping, phosphor-sheet glow, skeletal/interior structure logic, and clinical negative contrast; Inverted density map, translucent layers, phosphor glow, radiographic negative; Black/White/Blue, indigo ghost, bone-white, translucent cyan; Film, radiographic sheet, phosphor plate; Transparency, density mapping, interior-only view',
+        'density shown as brightness; blue-black film; bone-white metal and bone; overlapping translucency; interior structure',
       creative_brief:
-        "Apply X-Ray Photography as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Internal structure, radiographic x-ray imaging with translucent density mapping, phosphor-sheet glow, skeletal/interior structure logic, and clinical negative contrast, Inverted density map, translucent layers, phosphor glow, radiographic negative, Film, radiographic sheet, phosphor plate without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies X-Ray Photography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +36,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Thermal Camera',
     category: '7. Sensor And Technical Imaging',
     negativePrompt:
-      'visible light, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, normal color photo, fake UI labels, medical-only subject, decorative glow',
+      'readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, ironbow color palette, visible light, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, fake UI labels, medical-only subject, decorative glow, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Thermal Camera acts as a transferable cinematic-media router: start from Heat map, Thermal Camera sensor modality, false-color mapping, diagnostic density, device noise, and non-visible-spectrum exposure, White-hot peaks, black-cold lows, ironbow gradient, microbolometer noise, heat-edge bloom and sensor-imaging system built from non-visible spectrum capture, diagnostic mapping, device artifacts, false color, and technical exposure constraints, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'White-hot thermal feed: a surveillance-grade infrared camera shown in greyscale, where heat is white and cold is black, with a slightly soft, noisy sensor image.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Thermal Camera: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while translating visible surfaces into internal structure, heat zones, night-vision gain, phosphor glow, or diagnostic density maps, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting as the thing being imaged; this preset replaces visible-light appearance with what the sensor records, and adds no readable readout, label or diagnosis.',
       color_and_tone:
-        'Build color with Ironbow (Purple to Yellow), white-hot, cool-to-warm gradient, black-cold; use color as sensor output: radiographic blues, thermal gradients, phosphor green, blackbody heat, scan density, or device-limited monochrome, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Greyscale only: warm bodies bright white, cool ground mid grey, sky and water black.',
       lighting_and_shadow:
-        'Handle light through Emissive heat, self-illumination, temperature glow; make illumination feel device-derived through backlit density, infrared gain, emissive heat, phosphor bloom, noise amplification, or translucent structure, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'No visible-light shading; heat bleeds softly into its surroundings as a glow.',
       texture_and_material:
-        'Render Digital, sensor noise, microbolometer grid; surface detail should reveal film sheet grain, sensor noise, edge halos, interior silhouettes, heat speckle, phosphor streak, or diagnostic plate texture, keeping artifact scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Camera language native to Thermal Camera: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose through scan-plane clarity, central diagnostic readability, density hierarchy, technical crop, and device perspective without requiring medical subject matter, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Tech, analytical, sensor-vision, invisible-energy, mood carried by Thermal Camera media process, signal pressure, and visual restraint; derive mood from clinical exposure, hidden structure, surveillance unease, spectral unreality, or technical discovery, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Low resolution, faint sensor grid, residual heat trails where subjects have been.',
+      camera_and_composition: 'Wide surveillance or tracking view, subjects small and glowing.',
+      atmosphere_and_mood: 'Cold and watchful, living warmth tracked across the dark.',
       rendering_and_quality:
-        'Finish with FLIR aesthetic, sensor-driven, heat-signature mapping, diagnostic clarity; finish as credible sensor output with readable mapped structures, controlled noise, and no normal-color photo fallback or fake UI labels, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'White-hot greyscale thermal; the color ironbow palette belongs to pack_01.',
       key_features:
-        'Heat map, Thermal Camera sensor modality, false-color mapping, diagnostic density, device noise, and non-visible-spectrum exposure; White-hot peaks, black-cold lows, ironbow gradient, microbolometer noise, heat-edge bloom; Ironbow (Purple to Yellow), white-hot, cool-to-warm gradient, black-cold; Digital, sensor noise, microbolometer grid; Camera language native to Thermal Camera: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
+        'white-hot greyscale; black cold background; soft heat bloom; residual heat trails; low-resolution sensor',
       creative_brief:
-        "Apply Thermal Camera as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Heat map, Thermal Camera sensor modality, false-color mapping, diagnostic density, device noise, and non-visible-spectrum exposure, White-hot peaks, black-cold lows, ironbow gradient, microbolometer noise, heat-edge bloom, Digital, sensor noise, microbolometer grid without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thermal Camera as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +63,602 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Night Vision (Green)',
     category: '7. Sensor And Technical Imaging',
     negativePrompt:
-      'color, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, normal color photo, fake UI labels, medical-only subject, decorative glow',
+      'readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, full color, color, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, fake UI labels, medical-only subject, decorative glow, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Night Vision (Green) acts as a transferable cinematic-media router: start from Intensifier tube, Night Vision (Green) sensor modality, false-color mapping, diagnostic density, device noise, and non-visible-spectrum exposure, Monochrome green, scintillation noise, tube halo, gain grain, phosphor bloom and sensor-imaging system built from non-visible spectrum capture, diagnostic mapping, device artifacts, false color, and technical exposure constraints, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Night-vision intensifier: starlight amplified by an image tube and shown in phosphor green inside a round eyepiece view.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Night Vision (Green): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while translating visible surfaces into internal structure, heat zones, night-vision gain, phosphor glow, or diagnostic density maps, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Phosphor Green, monochrome green, bright-green highlight, black-green shadow; use color as sensor output: radiographic blues, thermal gradients, phosphor green, blackbody heat, scan density, or device-limited monochrome, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Keep the prompt subject, action and setting as the thing being imaged; this preset replaces visible-light appearance with what the sensor records, and adds no readable readout, label or diagnosis.',
+      color_and_tone: 'Monochrome phosphor green, bright green highlights, black-green shadows.',
       lighting_and_shadow:
-        'Handle light through Grainy gain, image intensifier, amplified starlight; make illumination feel device-derived through backlit density, infrared gain, emissive heat, phosphor bloom, noise amplification, or translucent structure, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render Scintillation noise, electron cascade, static snow; surface detail should reveal film sheet grain, sensor noise, edge halos, interior silhouettes, heat speckle, phosphor streak, or diagnostic plate texture, keeping artifact scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Bloom, tube flare, halo around bright sources; compose through scan-plane clarity, central diagnostic readability, density hierarchy, technical crop, and device perspective without requiring medical subject matter, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Hidden, nocturnal, phosphor eerie, low-light uncanny; derive mood from clinical exposure, hidden structure, surveillance unease, spectral unreality, or technical discovery, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Amplified faint light; any real light source blooms into a halo; eyes of animals shine brightly.',
+      texture_and_material: 'Scintillation noise, grainy gain, slight blur at the tube edges.',
+      camera_and_composition: 'Circular eyepiece vignette, subject within the bright center.',
+      atmosphere_and_mood: 'Hidden and tense, the dark seen through someone watching it.',
       rendering_and_quality:
-        'Finish with Low-light clarity, intensifier artifacts, amplified-starlight detail; finish as credible sensor output with readable mapped structures, controlled noise, and no normal-color photo fallback or fake UI labels, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Intensifier-tube look with noise and bloom; no crosshair text or numbers.',
       key_features:
-        'Intensifier tube, Night Vision (Green) sensor modality, false-color mapping, diagnostic density, device noise, and non-visible-spectrum exposure; Monochrome green, scintillation noise, tube halo, gain grain, phosphor bloom; Phosphor Green, monochrome green, bright-green highlight, black-green shadow; Scintillation noise, electron cascade, static snow; Bloom, tube flare, halo around bright sources',
+        'phosphor green monochrome; round eyepiece vignette; scintillation noise; bloom halos; eyeshine',
       creative_brief:
-        "Apply Night Vision (Green) as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Intensifier tube, Night Vision (Green) sensor modality, false-color mapping, diagnostic density, device noise, and non-visible-spectrum exposure, Monochrome green, scintillation noise, tube halo, gain grain, phosphor bloom, Scintillation noise, electron cascade, static snow without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Night Vision (Green) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP02-146',
+    name: 'Medical Ultrasound Scan',
+    displayName: 'Medical Ultrasound Scan',
+    styleAnchors: ['Medical Ultrasound Scan', 'ultrasound imaging', 'fan-shaped sector'],
+    category: '7. Sensor And Technical Imaging',
+    domain: 'ultrasound imaging',
+    negativePrompt:
+      'readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Medical ultrasound: sound echoes drawn as a grainy greyscale fan-shaped image, with bright reflective boundaries and dark fluid spaces.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting as the thing being imaged; this preset replaces visible-light appearance with what the sensor records, and adds no readable readout, label or diagnosis.',
+      color_and_tone:
+        'Black background, speckled greys, bright white echo boundaries, occasional warm sepia tint.',
+      lighting_and_shadow:
+        'No light; brightness is echo strength, with dark acoustic shadows behind dense objects.',
+      texture_and_material: 'Heavy speckle noise, soft blurred edges, reverberation bands.',
+      camera_and_composition:
+        'Fan- or sector-shaped image narrowing to the top, subject in cross-section.',
+      atmosphere_and_mood: 'Intimate and mysterious, a shape half glimpsed through sound.',
+      rendering_and_quality: 'Credible ultrasound speckle; no measurement text or medical labels.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Medical Ultrasound Scan as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'fan-shaped sector; speckle noise; bright echo boundaries; dark fluid spaces; acoustic shadows',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-147',
+    name: 'MRI Slice',
+    displayName: 'MRI Slice',
+    styleAnchors: ['MRI Slice', 'magnetic resonance imaging', 'thin cross-section slice'],
+    category: '7. Sensor And Technical Imaging',
+    domain: 'magnetic resonance imaging',
+    negativePrompt:
+      'readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'MRI slice: a thin cross-section through the subject where soft tissues separate into smooth grey tones, water bright or dark depending on the weighting.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting as the thing being imaged; this preset replaces visible-light appearance with what the sensor records, and adds no readable readout, label or diagnosis.',
+      color_and_tone: 'Smooth greyscale with bright fat or fluid, dark air and bone, no color.',
+      lighting_and_shadow: 'No surface light; contrast comes from tissue signal.',
+      texture_and_material:
+        'Soft internal structures, clean edges, faint ringing or motion artifacts at borders.',
+      camera_and_composition:
+        'Straight sagittal, axial or coronal slice, subject centered on black.',
+      atmosphere_and_mood: 'Calm and revealing, a quiet map of an inside.',
+      rendering_and_quality: 'Clinical MRI look with no text, markers or diagnosis.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies MRI Slice as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'thin cross-section slice; smooth greyscale soft tissue; black background; sagittal or axial view; faint ringing',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-148',
+    name: 'CT Volume Rendering',
+    displayName: 'CT Volume Rendering',
+    styleAnchors: [
+      'CT Volume Rendering',
+      'computed tomography volume',
+      'ivory reconstructed solids',
+    ],
+    category: '7. Sensor And Technical Imaging',
+    domain: 'computed tomography volume',
+    negativePrompt:
+      'readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'CT volume rendering: a stack of X-ray slices reconstructed into a 3D view where dense materials appear as ivory solids and softer layers as translucent shells.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting as the thing being imaged; this preset replaces visible-light appearance with what the sensor records, and adds no readable readout, label or diagnosis.',
+      color_and_tone:
+        'Ivory and bone white for dense parts, translucent amber or blue for softer layers, black ground.',
+      lighting_and_shadow:
+        'Soft virtual lighting on reconstructed surfaces, subtle ambient occlusion.',
+      texture_and_material:
+        'Slightly stepped surfaces from slice reconstruction, porous bone and corrosion detail.',
+      camera_and_composition:
+        'Three-quarter view of the object with the outer layer cut away to reveal the inside.',
+      atmosphere_and_mood: 'Archaeological and uncanny, secrets revealed without opening anything.',
+      rendering_and_quality: 'Scientific volume render with no labels, scale bars or measurements.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies CT Volume Rendering as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'ivory reconstructed solids; translucent outer shell; cut-away reveal; slice stepping; black background',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-149',
+    name: 'Side-Scan Sonar',
+    displayName: 'Side-Scan Sonar',
+    styleAnchors: ['Side-Scan Sonar', 'side-scan sonar imaging', 'amber acoustic relief'],
+    category: '7. Sensor And Technical Imaging',
+    domain: 'side-scan sonar imaging',
+    negativePrompt:
+      'readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Side-scan sonar: acoustic strips of the seafloor recorded from a towed fish, turning shapes into amber reliefs with long black acoustic shadows.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting as the thing being imaged; this preset replaces visible-light appearance with what the sensor records, and adds no readable readout, label or diagnosis.',
+      color_and_tone:
+        'Amber, copper and brown tones, dark water column stripe down the center, black shadows.',
+      lighting_and_shadow:
+        'Pseudo-light from one side: objects bright where facing the sonar and cast long black shadows away.',
+      texture_and_material:
+        'Sediment ripples, speckle, streaky scan lines, soft blur along the track.',
+      camera_and_composition:
+        'Top-down swath with a dark vertical nadir band and objects to its sides.',
+      atmosphere_and_mood: 'Deep and ghostly, lost things found in the dark.',
+      rendering_and_quality: 'Credible sonar mosaic; no coordinates or grid text.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Side-Scan Sonar as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'amber acoustic relief; long black shadows; central nadir stripe; scan-line texture; top-down swath',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-150',
+    name: 'Radar PPI Scope',
+    displayName: 'Radar PPI Scope',
+    styleAnchors: ['Radar PPI Scope', 'plan position indicator radar', 'rotating sweep line'],
+    category: '7. Sensor And Technical Imaging',
+    domain: 'plan position indicator radar',
+    negativePrompt:
+      'readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Radar plan-position scope: a round phosphor display where a rotating sweep paints echoes of ships, land and weather that slowly fade.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting as the thing being imaged; this preset replaces visible-light appearance with what the sensor records, and adds no readable readout, label or diagnosis.',
+      color_and_tone:
+        'Green or amber phosphor on black glass, brighter fresh echoes, dimmer fading trails.',
+      lighting_and_shadow: 'Screen glow only; the sweep line brightest, old returns decaying.',
+      texture_and_material:
+        'Phosphor bloom, curved glass reflections, faint range rings without numbers.',
+      camera_and_composition:
+        'Circular scope centered, subject translated into echo blips and land shapes.',
+      atmosphere_and_mood: 'Tense and watchful, something approaching in the sweep.',
+      rendering_and_quality: 'Analog radar display look; no readable numbers or bearings.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Radar PPI Scope as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'rotating sweep line; fading phosphor echoes; round scope; range rings; green glow on black',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-151',
+    name: 'Multispectral Satellite False Color',
+    displayName: 'Multispectral Satellite False Color',
+    styleAnchors: [
+      'Multispectral Satellite False Color',
+      'multispectral remote sensing',
+      'red vegetation',
+    ],
+    category: '7. Sensor And Technical Imaging',
+    domain: 'multispectral remote sensing',
+    negativePrompt:
+      'readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, map labels, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Multispectral satellite false color: near-infrared mapped to red so healthy vegetation blazes red, water turns black-blue and cities cyan-grey.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting as the thing being imaged; this preset replaces visible-light appearance with what the sensor records, and adds no readable readout, label or diagnosis.',
+      color_and_tone:
+        'Bright red vegetation, dark blue-black water, cyan and grey built areas, tan bare soil.',
+      lighting_and_shadow: 'High sun from orbit, minimal shadows, cloud shadows as dark patches.',
+      texture_and_material: 'Field patterns, river meanders and terrain at orbital scale.',
+      camera_and_composition:
+        'Straight down from orbit, the subject seen as landscape-scale pattern.',
+      atmosphere_and_mood: 'Detached and revealing, the planet seen in invisible light.',
+      rendering_and_quality: 'Remote-sensing false-color composite; no map labels or borders.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Multispectral Satellite False Color as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'red vegetation; black-blue water; cyan cities; orbital top-down; near-infrared false color',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-152',
+    name: 'Synthetic Aperture Radar',
+    displayName: 'Synthetic Aperture Radar',
+    styleAnchors: ['Synthetic Aperture Radar', 'SAR satellite imaging', 'speckled greyscale'],
+    category: '7. Sensor And Technical Imaging',
+    domain: 'SAR satellite imaging',
+    negativePrompt:
+      'readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Synthetic aperture radar: a satellite radar image in grainy greyscale where rough and metal surfaces return bright and smooth water stays black.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting as the thing being imaged; this preset replaces visible-light appearance with what the sensor records, and adds no readable readout, label or diagnosis.',
+      color_and_tone: 'Salt-and-pepper greyscale, black calm water, bright white metal and cliffs.',
+      lighting_and_shadow:
+        'Side-looking radar illumination: slopes facing the satellite bright, back slopes in radar shadow.',
+      texture_and_material:
+        'Heavy speckle, geometric layover distortion on mountains, bright corner reflectors.',
+      camera_and_composition: 'Orbital view, subject as landscape-scale texture and bright points.',
+      atmosphere_and_mood: 'Cold and technical, the world seen through storm and night alike.',
+      rendering_and_quality: 'Credible SAR speckle look; no labels or scale bars.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Synthetic Aperture Radar as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'speckled greyscale; black smooth water; bright metal returns; radar shadow on slopes; layover distortion',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-153',
+    name: 'Starlight Low-Light Camera',
+    displayName: 'Starlight Low-Light Camera',
+    styleAnchors: [
+      'Starlight Low-Light Camera',
+      'starlight EMCCD camera',
+      'moonless night made grey daylight',
+    ],
+    category: '7. Sensor And Technical Imaging',
+    domain: 'starlight EMCCD camera',
+    negativePrompt:
+      'readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, green phosphor tint, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Starlight low-light camera: an ultra-sensitive sensor that turns a moonless night into a grainy, washed grey daylight.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting as the thing being imaged; this preset replaces visible-light appearance with what the sensor records, and adds no readable readout, label or diagnosis.',
+      color_and_tone:
+        'Desaturated grey-blue near-monochrome, black sky full of stars, faint color noise.',
+      lighting_and_shadow:
+        'Flat amplified starlight with almost no shadows; any lamp blows out completely.',
+      texture_and_material: 'Heavy fine grain, smeared motion on moving subjects, soft detail.',
+      camera_and_composition: 'Wide surveillance or wildlife view, stars visible in the sky.',
+      atmosphere_and_mood: 'Uncanny and hushed, night that looks wrongly like day.',
+      rendering_and_quality:
+        'Low-light sensor look without green tint; distinct from tube night vision.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Starlight Low-Light Camera as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'moonless night made grey daylight; heavy grain; stars visible; blown lamps; no green tint',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-154',
+    name: 'Nuclear Scintigraphy',
+    displayName: 'Nuclear Scintigraphy',
+    styleAnchors: ['Nuclear Scintigraphy', 'gamma camera imaging', 'tracer hot spots'],
+    category: '7. Sensor And Technical Imaging',
+    domain: 'gamma camera imaging',
+    negativePrompt:
+      'readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Nuclear scintigraphy: a gamma camera image of where a tracer gathers, shown as soft blurry dots and hot spots on black or white.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting as the thing being imaged; this preset replaces visible-light appearance with what the sensor records, and adds no readable readout, label or diagnosis.',
+      color_and_tone:
+        'Inverted greyscale or a black-to-red-yellow heat scale for tracer intensity.',
+      lighting_and_shadow:
+        'No conventional light at all; brightness shows only how much tracer gathered.',
+      texture_and_material:
+        'Coarse counting noise, blurry low-resolution outlines, glowing hot spots.',
+      camera_and_composition: 'Frontal and back whole-body or organ views side by side.',
+      atmosphere_and_mood: 'Quiet and diagnostic, the body mapped as faint light.',
+      rendering_and_quality: 'Gamma-camera noise and blur; no labels, arrows or diagnoses.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Nuclear Scintigraphy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'tracer hot spots; coarse counting noise; blurry outline; paired front and back views; heat-scale color',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-155',
+    name: 'Hyperspectral Data Cube',
+    displayName: 'Hyperspectral Data Cube',
+    styleAnchors: ['Hyperspectral Data Cube', 'hyperspectral imaging', 'isometric data cube'],
+    category: '7. Sensor And Technical Imaging',
+    domain: 'hyperspectral imaging',
+    negativePrompt:
+      'readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, axis labels, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hyperspectral data cube: an image shown as the top face of a 3D block whose sides display hundreds of spectral bands as rainbow streaks.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting as the thing being imaged; this preset replaces visible-light appearance with what the sensor records, and adds no readable readout, label or diagnosis.',
+      color_and_tone:
+        'Natural or false-color top face, rainbow band gradients on the cube sides, dark background.',
+      lighting_and_shadow:
+        'Flat scientific presentation with slight shading to show the cube form.',
+      texture_and_material: 'Fine band striations on the cube edges, pixelated spectral detail.',
+      camera_and_composition: 'Isometric cube view, the subject on the top face.',
+      atmosphere_and_mood: 'Analytical and beautiful, a scene opened up into its light.',
+      rendering_and_quality:
+        'Clean scientific visualization without any axes, numbers, legends or captions.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hyperspectral Data Cube as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'isometric data cube; subject on the top face; rainbow spectral sides; band striations; dark background',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-156',
+    name: 'Seismic Reflection Section',
+    displayName: 'Seismic Reflection Section',
+    styleAnchors: [
+      'Seismic Reflection Section',
+      'seismic reflection imaging',
+      'stacked reflection bands',
+    ],
+    category: '7. Sensor And Technical Imaging',
+    domain: 'seismic reflection imaging',
+    negativePrompt:
+      'readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Seismic reflection section: a vertical slice of the ground built from echo traces, showing rock layers as stacked wiggly bands.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting as the thing being imaged; this preset replaces visible-light appearance with what the sensor records, and adds no readable readout, label or diagnosis.',
+      color_and_tone: 'Black-and-white wiggle traces or a red-white-blue polarity scale.',
+      lighting_and_shadow:
+        'No conventional light; band strength shows only how strongly each layer reflects.',
+      texture_and_material:
+        'Dense horizontal striping, faults as offsets, domes and channels bending the layers.',
+      camera_and_composition:
+        'Wide horizontal cross-section of the ground with depth increasing downward.',
+      atmosphere_and_mood: 'Deep and geological, hidden history pressed into layers.',
+      rendering_and_quality: 'Credible seismic profile with no depth numbers or annotations.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Seismic Reflection Section as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'stacked reflection bands; wiggle traces; fault offsets; red-white-blue polarity; wide cross-section',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-157',
+    name: 'Ground-Penetrating Radar',
+    displayName: 'Ground-Penetrating Radar',
+    styleAnchors: [
+      'Ground-Penetrating Radar',
+      'ground-penetrating radar',
+      'hyperbola arcs over buried objects',
+    ],
+    category: '7. Sensor And Technical Imaging',
+    domain: 'ground-penetrating radar',
+    negativePrompt:
+      'readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ground-penetrating radar profile: a grey radargram where buried objects appear as bright hyperbola arcs and buried surfaces as bands.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting as the thing being imaged; this preset replaces visible-light appearance with what the sensor records, and adds no readable readout, label or diagnosis.',
+      color_and_tone:
+        'Grey banded background with black-and-white hyperbolas; sometimes a copper tint.',
+      lighting_and_shadow:
+        'No conventional light; brightness shows only how strongly the buried material reflects.',
+      texture_and_material: 'Horizontal ringing bands, crisp arcs over pipes, stones and cavities.',
+      camera_and_composition: 'Long horizontal profile, surface along the top, depth downward.',
+      atmosphere_and_mood: 'Curious and archaeological, secrets just beneath the feet.',
+      rendering_and_quality:
+        'Credible field radargram look without any depth scales, grids or text.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ground-Penetrating Radar as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'hyperbola arcs over buried objects; banded background; horizontal profile; void reflections; grey radargram',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-158',
+    name: 'Cloud Chamber Particle Tracks',
+    displayName: 'Cloud Chamber Particle Tracks',
+    styleAnchors: [
+      'Cloud Chamber Particle Tracks',
+      'cloud chamber detection',
+      'white vapor trails on black',
+    ],
+    category: '7. Sensor And Technical Imaging',
+    domain: 'cloud chamber detection',
+    negativePrompt:
+      'readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, digital particle effect, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cloud chamber: supersaturated vapor inside a dark chamber where passing particles leave thin white condensation trails.',
+      subject_treatment:
+        'Keep the prompt subject as the source or theme of the event; render the image as particle tracks in a cloud chamber, never adding readable labels.',
+      color_and_tone: 'Black background with white and silvery-blue vapor trails.',
+      lighting_and_shadow: 'Side light raking through the chamber so the trails glow.',
+      texture_and_material:
+        'Thin wispy tracks, short fat alpha streaks, long straight muon lines, curling electrons.',
+      camera_and_composition:
+        'Looking down into the chamber, tracks radiating or crossing the frame.',
+      atmosphere_and_mood: 'Awe-struck and quiet, invisible rain made visible.',
+      rendering_and_quality: 'Real cloud-chamber photograph look; not a digital particle effect.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cloud Chamber Particle Tracks as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'white vapor trails on black; raking side light; straight and curling tracks; fat alpha streaks; top-down chamber view',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-159',
+    name: 'Bubble Chamber Photograph',
+    displayName: 'Bubble Chamber Photograph',
+    styleAnchors: ['Bubble Chamber Photograph', 'bubble chamber detection', 'dotted bubble tracks'],
+    category: '7. Sensor And Technical Imaging',
+    domain: 'bubble chamber detection',
+    negativePrompt:
+      'readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bubble chamber photograph: a mid-century particle-physics record of tiny bubble tracks in liquid, curving and spiraling in a magnetic field.',
+      subject_treatment:
+        'Keep the prompt subject as the theme of the event; render the image as bubble-chamber tracks, never adding readable labels or fiducial numbers.',
+      color_and_tone:
+        'Black-and-white or cyan-tinted film, thin dark or bright tracks, grey liquid background.',
+      lighting_and_shadow: 'Flash-lit bubbles along each track; even background illumination.',
+      texture_and_material:
+        'Dotted bubble lines, tight spirals, V-shaped decays and fiducial crosses.',
+      camera_and_composition:
+        'Wide film frame with tracks entering from one side and exploding outward.',
+      atmosphere_and_mood: 'Elegant and explosive, a hidden collision drawn in lines.',
+      rendering_and_quality: 'Archival film look; no numbers or text on the frame.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bubble Chamber Photograph as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'dotted bubble tracks; tight spirals; V-shaped decays; fiducial crosses; archival film frame',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-160',
+    name: 'Retinal Fundus Image',
+    displayName: 'Retinal Fundus Image',
+    styleAnchors: [
+      'Retinal Fundus Image',
+      'ophthalmic fundus photography',
+      'orange-red retinal disc',
+    ],
+    category: '7. Sensor And Technical Imaging',
+    domain: 'ophthalmic fundus photography',
+    negativePrompt:
+      'readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Retinal fundus photograph: the inside back of an eye seen through the pupil, a glowing orange-red disc with branching vessels and a bright optic disc.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting as the thing being imaged; this preset replaces visible-light appearance with what the sensor records, and adds no readable readout, label or diagnosis.',
+      color_and_tone:
+        'Orange, red and amber field, pale yellow optic disc, dark red vessels, black circular surround.',
+      lighting_and_shadow:
+        'Flash through the pupil lighting the retina evenly with a bright center.',
+      texture_and_material: 'Branching vessel trees, fine choroidal texture, subtle reflex sheen.',
+      camera_and_composition:
+        'Circular image on black, optic disc off to one side, vessels arching across.',
+      atmosphere_and_mood: 'Intimate and cosmic, a planet hidden inside an eye.',
+      rendering_and_quality:
+        'Clinical fundus photograph look without any markings, arrows or diagnosis.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Retinal Fundus Image as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'orange-red retinal disc; branching vessels; pale optic disc; black circular surround; flash center',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-161',
+    name: 'Confocal Fluorescence Microscopy',
+    displayName: 'Confocal Fluorescence Microscopy',
+    styleAnchors: [
+      'Confocal Fluorescence Microscopy',
+      'fluorescence microscopy',
+      'glowing colored channels',
+    ],
+    category: '7. Sensor And Technical Imaging',
+    domain: 'fluorescence microscopy',
+    negativePrompt:
+      'readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, scale bar, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Confocal fluorescence microscopy: stained structures glowing in separate colored channels against black, sharp in thin optical sections.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting as the thing being imaged; this preset replaces visible-light appearance with what the sensor records, and adds no readable readout, label or diagnosis.',
+      color_and_tone:
+        'Glowing green, magenta, cyan and red channels on pure black, overlaps turning white or yellow.',
+      lighting_and_shadow:
+        'Laser-excited emission from the stains themselves, with no conventional light or shadow.',
+      texture_and_material:
+        'Fine filaments, nuclei, membranes and branching cells with crisp edges.',
+      camera_and_composition: 'Microscope field of view, cells filling the frame, no ground.',
+      atmosphere_and_mood: 'Luminous and alive, a hidden neon forest inside living things.',
+      rendering_and_quality: 'Scientific micrograph look; no scale bars or labels.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Confocal Fluorescence Microscopy as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'glowing colored channels; black background; thin optical section; filament and nucleus detail; channel overlap',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-162',
+    name: 'Satellite Night Lights',
+    displayName: 'Satellite Night Lights',
+    styleAnchors: [
+      'Satellite Night Lights',
+      'night-time orbital imaging',
+      'gold city lights on black',
+    ],
+    category: '7. Sensor And Technical Imaging',
+    domain: 'night-time orbital imaging',
+    negativePrompt:
+      'readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, map borders, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Satellite night lights: the dark side of the Earth seen from orbit, with settlements as gold and white light clusters threaded by roads.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting as the thing being imaged; this preset replaces visible-light appearance with what the sensor records, and adds no readable readout, label or diagnosis.',
+      color_and_tone:
+        'Black land and sea, amber and white city lights, faint blue airglow at the limb.',
+      lighting_and_shadow:
+        'Only artificial lights on the ground and a few faint moonlit clouds above them.',
+      texture_and_material: 'Glowing dots and webs of roads, dark gaps of mountains and forests.',
+      camera_and_composition: 'Orbital view, the subject expressed as a pattern of light.',
+      atmosphere_and_mood: 'Quiet and vast, human life drawn in scattered light.',
+      rendering_and_quality: 'Orbital night imagery with no borders, labels or map lines.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Satellite Night Lights as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'gold city lights on black; road webs; dark mountain gaps; blue limb airglow; orbital view',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

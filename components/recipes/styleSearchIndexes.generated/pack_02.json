@@ -3,7 +3,7 @@
     {
       "id": "pack_02",
       "name": "Cinematic & Media",
-      "presetCount": 145
+      "presetCount": 162
     }
   ],
   "presets": [
@@ -1821,6 +1821,296 @@
       "searchableText": "sp02-060 night vision (green) 7. sensor and technical imaging sensor looks pack_02 cinematic & media sensor-and-technical-imaging cinematic-and-media sensor-and-technical-imaging"
     },
     {
+      "id": "SP02-146",
+      "name": "Medical Ultrasound Scan",
+      "styleAnchors": ["Medical Ultrasound Scan", "ultrasound imaging", "fan-shaped sector"],
+      "ref": "pack_02/SP02-146.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "7. Sensor And Technical Imaging",
+      "domain": "ultrasound imaging",
+      "tags": ["cinematic-and-media", "sensor-and-technical-imaging", "ultrasound-imaging"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-146 medical ultrasound scan ultrasound imaging fan-shaped sector 7. sensor and technical imaging sensor looks ultrasound imaging pack_02 cinematic & media sensor-and-technical-imaging cinematic-and-media sensor-and-technical-imaging ultrasound-imaging"
+    },
+    {
+      "id": "SP02-147",
+      "name": "MRI Slice",
+      "styleAnchors": ["MRI Slice", "magnetic resonance imaging", "thin cross-section slice"],
+      "ref": "pack_02/SP02-147.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "7. Sensor And Technical Imaging",
+      "domain": "magnetic resonance imaging",
+      "tags": ["cinematic-and-media", "sensor-and-technical-imaging", "magnetic-resonance-imaging"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-147 mri slice magnetic resonance imaging thin cross-section slice 7. sensor and technical imaging sensor looks magnetic resonance imaging pack_02 cinematic & media sensor-and-technical-imaging cinematic-and-media sensor-and-technical-imaging magnetic-resonance-imaging"
+    },
+    {
+      "id": "SP02-148",
+      "name": "CT Volume Rendering",
+      "styleAnchors": [
+        "CT Volume Rendering",
+        "computed tomography volume",
+        "ivory reconstructed solids"
+      ],
+      "ref": "pack_02/SP02-148.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "7. Sensor And Technical Imaging",
+      "domain": "computed tomography volume",
+      "tags": ["cinematic-and-media", "sensor-and-technical-imaging", "computed-tomography-volume"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-148 ct volume rendering computed tomography volume ivory reconstructed solids 7. sensor and technical imaging sensor looks computed tomography volume pack_02 cinematic & media sensor-and-technical-imaging cinematic-and-media sensor-and-technical-imaging computed-tomography-volume"
+    },
+    {
+      "id": "SP02-149",
+      "name": "Side-Scan Sonar",
+      "styleAnchors": ["Side-Scan Sonar", "side-scan sonar imaging", "amber acoustic relief"],
+      "ref": "pack_02/SP02-149.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "7. Sensor And Technical Imaging",
+      "domain": "side-scan sonar imaging",
+      "tags": ["cinematic-and-media", "sensor-and-technical-imaging", "side-scan-sonar-imaging"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-149 side-scan sonar side-scan sonar imaging amber acoustic relief 7. sensor and technical imaging sensor looks side-scan sonar imaging pack_02 cinematic & media sensor-and-technical-imaging cinematic-and-media sensor-and-technical-imaging side-scan-sonar-imaging"
+    },
+    {
+      "id": "SP02-150",
+      "name": "Radar PPI Scope",
+      "styleAnchors": ["Radar PPI Scope", "plan position indicator radar", "rotating sweep line"],
+      "ref": "pack_02/SP02-150.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "7. Sensor And Technical Imaging",
+      "domain": "plan position indicator radar",
+      "tags": [
+        "cinematic-and-media",
+        "sensor-and-technical-imaging",
+        "plan-position-indicator-radar"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-150 radar ppi scope plan position indicator radar rotating sweep line 7. sensor and technical imaging sensor looks plan position indicator radar pack_02 cinematic & media sensor-and-technical-imaging cinematic-and-media sensor-and-technical-imaging plan-position-indicator-radar"
+    },
+    {
+      "id": "SP02-151",
+      "name": "Multispectral Satellite False Color",
+      "styleAnchors": [
+        "Multispectral Satellite False Color",
+        "multispectral remote sensing",
+        "red vegetation"
+      ],
+      "ref": "pack_02/SP02-151.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "7. Sensor And Technical Imaging",
+      "domain": "multispectral remote sensing",
+      "tags": [
+        "cinematic-and-media",
+        "sensor-and-technical-imaging",
+        "multispectral-remote-sensing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-151 multispectral satellite false color multispectral remote sensing red vegetation 7. sensor and technical imaging sensor looks multispectral remote sensing pack_02 cinematic & media sensor-and-technical-imaging cinematic-and-media sensor-and-technical-imaging multispectral-remote-sensing"
+    },
+    {
+      "id": "SP02-152",
+      "name": "Synthetic Aperture Radar",
+      "styleAnchors": ["Synthetic Aperture Radar", "SAR satellite imaging", "speckled greyscale"],
+      "ref": "pack_02/SP02-152.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "7. Sensor And Technical Imaging",
+      "domain": "SAR satellite imaging",
+      "tags": ["cinematic-and-media", "sensor-and-technical-imaging", "sar-satellite-imaging"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-152 synthetic aperture radar sar satellite imaging speckled greyscale 7. sensor and technical imaging sensor looks sar satellite imaging pack_02 cinematic & media sensor-and-technical-imaging cinematic-and-media sensor-and-technical-imaging sar-satellite-imaging"
+    },
+    {
+      "id": "SP02-153",
+      "name": "Starlight Low-Light Camera",
+      "styleAnchors": [
+        "Starlight Low-Light Camera",
+        "starlight EMCCD camera",
+        "moonless night made grey daylight"
+      ],
+      "ref": "pack_02/SP02-153.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "7. Sensor And Technical Imaging",
+      "domain": "starlight EMCCD camera",
+      "tags": ["cinematic-and-media", "sensor-and-technical-imaging", "starlight-emccd-camera"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-153 starlight low-light camera starlight emccd camera moonless night made grey daylight 7. sensor and technical imaging sensor looks starlight emccd camera pack_02 cinematic & media sensor-and-technical-imaging cinematic-and-media sensor-and-technical-imaging starlight-emccd-camera"
+    },
+    {
+      "id": "SP02-154",
+      "name": "Nuclear Scintigraphy",
+      "styleAnchors": ["Nuclear Scintigraphy", "gamma camera imaging", "tracer hot spots"],
+      "ref": "pack_02/SP02-154.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "7. Sensor And Technical Imaging",
+      "domain": "gamma camera imaging",
+      "tags": ["cinematic-and-media", "sensor-and-technical-imaging", "gamma-camera-imaging"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-154 nuclear scintigraphy gamma camera imaging tracer hot spots 7. sensor and technical imaging sensor looks gamma camera imaging pack_02 cinematic & media sensor-and-technical-imaging cinematic-and-media sensor-and-technical-imaging gamma-camera-imaging"
+    },
+    {
+      "id": "SP02-155",
+      "name": "Hyperspectral Data Cube",
+      "styleAnchors": ["Hyperspectral Data Cube", "hyperspectral imaging", "isometric data cube"],
+      "ref": "pack_02/SP02-155.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "7. Sensor And Technical Imaging",
+      "domain": "hyperspectral imaging",
+      "tags": ["cinematic-and-media", "sensor-and-technical-imaging", "hyperspectral-imaging"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-155 hyperspectral data cube hyperspectral imaging isometric data cube 7. sensor and technical imaging sensor looks hyperspectral imaging pack_02 cinematic & media sensor-and-technical-imaging cinematic-and-media sensor-and-technical-imaging hyperspectral-imaging"
+    },
+    {
+      "id": "SP02-156",
+      "name": "Seismic Reflection Section",
+      "styleAnchors": [
+        "Seismic Reflection Section",
+        "seismic reflection imaging",
+        "stacked reflection bands"
+      ],
+      "ref": "pack_02/SP02-156.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "7. Sensor And Technical Imaging",
+      "domain": "seismic reflection imaging",
+      "tags": ["cinematic-and-media", "sensor-and-technical-imaging", "seismic-reflection-imaging"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-156 seismic reflection section seismic reflection imaging stacked reflection bands 7. sensor and technical imaging sensor looks seismic reflection imaging pack_02 cinematic & media sensor-and-technical-imaging cinematic-and-media sensor-and-technical-imaging seismic-reflection-imaging"
+    },
+    {
+      "id": "SP02-157",
+      "name": "Ground-Penetrating Radar",
+      "styleAnchors": [
+        "Ground-Penetrating Radar",
+        "ground-penetrating radar",
+        "hyperbola arcs over buried objects"
+      ],
+      "ref": "pack_02/SP02-157.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "7. Sensor And Technical Imaging",
+      "domain": "ground-penetrating radar",
+      "tags": ["cinematic-and-media", "sensor-and-technical-imaging", "ground-penetrating-radar"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-157 ground-penetrating radar ground-penetrating radar hyperbola arcs over buried objects 7. sensor and technical imaging sensor looks ground-penetrating radar pack_02 cinematic & media sensor-and-technical-imaging cinematic-and-media sensor-and-technical-imaging ground-penetrating-radar"
+    },
+    {
+      "id": "SP02-158",
+      "name": "Cloud Chamber Particle Tracks",
+      "styleAnchors": [
+        "Cloud Chamber Particle Tracks",
+        "cloud chamber detection",
+        "white vapor trails on black"
+      ],
+      "ref": "pack_02/SP02-158.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "7. Sensor And Technical Imaging",
+      "domain": "cloud chamber detection",
+      "tags": ["cinematic-and-media", "sensor-and-technical-imaging", "cloud-chamber-detection"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-158 cloud chamber particle tracks cloud chamber detection white vapor trails on black 7. sensor and technical imaging sensor looks cloud chamber detection pack_02 cinematic & media sensor-and-technical-imaging cinematic-and-media sensor-and-technical-imaging cloud-chamber-detection"
+    },
+    {
+      "id": "SP02-159",
+      "name": "Bubble Chamber Photograph",
+      "styleAnchors": [
+        "Bubble Chamber Photograph",
+        "bubble chamber detection",
+        "dotted bubble tracks"
+      ],
+      "ref": "pack_02/SP02-159.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "7. Sensor And Technical Imaging",
+      "domain": "bubble chamber detection",
+      "tags": ["cinematic-and-media", "sensor-and-technical-imaging", "bubble-chamber-detection"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-159 bubble chamber photograph bubble chamber detection dotted bubble tracks 7. sensor and technical imaging sensor looks bubble chamber detection pack_02 cinematic & media sensor-and-technical-imaging cinematic-and-media sensor-and-technical-imaging bubble-chamber-detection"
+    },
+    {
+      "id": "SP02-160",
+      "name": "Retinal Fundus Image",
+      "styleAnchors": [
+        "Retinal Fundus Image",
+        "ophthalmic fundus photography",
+        "orange-red retinal disc"
+      ],
+      "ref": "pack_02/SP02-160.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "7. Sensor And Technical Imaging",
+      "domain": "ophthalmic fundus photography",
+      "tags": [
+        "cinematic-and-media",
+        "sensor-and-technical-imaging",
+        "ophthalmic-fundus-photography"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-160 retinal fundus image ophthalmic fundus photography orange-red retinal disc 7. sensor and technical imaging sensor looks ophthalmic fundus photography pack_02 cinematic & media sensor-and-technical-imaging cinematic-and-media sensor-and-technical-imaging ophthalmic-fundus-photography"
+    },
+    {
+      "id": "SP02-161",
+      "name": "Confocal Fluorescence Microscopy",
+      "styleAnchors": [
+        "Confocal Fluorescence Microscopy",
+        "fluorescence microscopy",
+        "glowing colored channels"
+      ],
+      "ref": "pack_02/SP02-161.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "7. Sensor And Technical Imaging",
+      "domain": "fluorescence microscopy",
+      "tags": ["cinematic-and-media", "sensor-and-technical-imaging", "fluorescence-microscopy"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-161 confocal fluorescence microscopy fluorescence microscopy glowing colored channels 7. sensor and technical imaging sensor looks fluorescence microscopy pack_02 cinematic & media sensor-and-technical-imaging cinematic-and-media sensor-and-technical-imaging fluorescence-microscopy"
+    },
+    {
+      "id": "SP02-162",
+      "name": "Satellite Night Lights",
+      "styleAnchors": [
+        "Satellite Night Lights",
+        "night-time orbital imaging",
+        "gold city lights on black"
+      ],
+      "ref": "pack_02/SP02-162.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "sensor-and-technical-imaging",
+      "categoryName": "7. Sensor And Technical Imaging",
+      "domain": "night-time orbital imaging",
+      "tags": ["cinematic-and-media", "sensor-and-technical-imaging", "night-time-orbital-imaging"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-162 satellite night lights night-time orbital imaging gold city lights on black 7. sensor and technical imaging sensor looks night-time orbital imaging pack_02 cinematic & media sensor-and-technical-imaging cinematic-and-media sensor-and-technical-imaging night-time-orbital-imaging"
+    },
+    {
       "id": "SP02-091",
       "name": "Office Whiteboard Doodle",
       "ref": "pack_02/SP02-091.yaml",
@@ -1893,5 +2183,5 @@
       "searchableText": "sp02-099 punk zine cut-and-paste 8. hand-drawn and diy media diy drawing surfaces pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media"
     }
   ],
-  "totalPresetCount": 145
+  "totalPresetCount": 162
 }

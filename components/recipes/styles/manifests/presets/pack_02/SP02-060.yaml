@@ -3,7 +3,7 @@ id: SP02-060
 packId: pack_02
 name: Night Vision (Green)
 category: 7. Sensor And Technical Imaging
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,64 +12,24 @@ tags:
   - cinematic-and-media
   - sensor-and-technical-imaging
 visualDna:
-  aesthetic: >-
-    Night Vision (Green) acts as a transferable cinematic-media router: start from Intensifier tube,
-    Night Vision (Green) sensor modality, false-color mapping, diagnostic density, device noise, and
-    non-visible-spectrum exposure, Monochrome green, scintillation noise, tube halo, gain grain,
-    phosphor bloom and sensor-imaging system built from non-visible spectrum capture, diagnostic
-    mapping, device artifacts, false color, and technical exposure constraints, then apply the media
-    behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
-    under Night Vision (Green): casting, wardrobe, props, motion cues, and silhouette hierarchy
-    follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat;
-    preserve the requested subject while translating visible surfaces into internal structure, heat
-    zones, night-vision gain, phosphor glow, or diagnostic density maps, keeping the requested
-    identity, silhouette, action, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Phosphor Green, monochrome green, bright-green highlight, black-green shadow;
-    use color as sensor output: radiographic blues, thermal gradients, phosphor green, blackbody
-    heat, scan density, or device-limited monochrome, with deliberate value grouping, accent
-    control, and process-specific limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Grainy gain, image intensifier, amplified starlight; make illumination feel
-    device-derived through backlit density, infrared gain, emissive heat, phosphor bloom, noise
-    amplification, or translucent structure, so exposure and shadow structure support the media
-    process without overwriting the requested content.
-  texture_and_material: >-
-    Render Scintillation noise, electron cascade, static snow; surface detail should reveal film
-    sheet grain, sensor noise, edge halos, interior silhouettes, heat speckle, phosphor streak, or
-    diagnostic plate texture, keeping artifact scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Bloom, tube flare, halo around bright sources; compose through
-    scan-plane clarity, central diagnostic readability, density hierarchy, technical crop, and
-    device perspective without requiring medical subject matter, with frame rhythm, spacing, edge
-    hierarchy, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Hidden, nocturnal, phosphor eerie, low-light uncanny; derive mood from clinical
-    exposure, hidden structure, surveillance unease, spectral unreality, or technical discovery,
-    letting the media style alter interpretation without demanding a specific story, location, or
-    actor.
-  rendering_and_quality: >-
-    Finish with Low-light clarity, intensifier artifacts, amplified-starlight detail; finish as
-    credible sensor output with readable mapped structures, controlled noise, and no normal-color
-    photo fallback or fake UI labels, clean denoised surfaces where appropriate, and enough process
-    evidence to make the style recognizable.
-  key_features: >-
-    Intensifier tube, Night Vision (Green) sensor modality, false-color mapping, diagnostic density,
-    device noise, and non-visible-spectrum exposure; Monochrome green, scintillation noise, tube
-    halo, gain grain, phosphor bloom; Phosphor Green, monochrome green, bright-green highlight,
-    black-green shadow; Scintillation noise, electron cascade, static snow; Bloom, tube flare, halo
-    around bright sources
-  creative_brief: >-
-    Apply Night Vision (Green) as a cinematic-media preset over prompt X: preserve the user's
-    requested subject, then route lens behavior, palette, light, signal or film texture,
-    composition, mood, and final media craft through Intensifier tube, Night Vision (Green) sensor
-    modality, false-color mapping, diagnostic density, device noise, and non-visible-spectrum
-    exposure, Monochrome green, scintillation noise, tube halo, gain grain, phosphor bloom,
-    Scintillation noise, electron cascade, static snow without requiring the card image's original
-    subject.
+  aesthetic: 'Night-vision intensifier: starlight amplified by an image tube and shown in phosphor green inside a round eyepiece view.'
+  subject_treatment: Keep the prompt subject, action and setting as the thing being imaged; this preset replaces visible-light appearance with what the sensor records, and adds no readable readout, label or diagnosis.
+  color_and_tone: Monochrome phosphor green, bright green highlights, black-green shadows.
+  lighting_and_shadow: Amplified faint light; any real light source blooms into a halo; eyes of animals shine brightly.
+  texture_and_material: Scintillation noise, grainy gain, slight blur at the tube edges.
+  camera_and_composition: Circular eyepiece vignette, subject within the bright center.
+  atmosphere_and_mood: Hidden and tense, the dark seen through someone watching it.
+  rendering_and_quality: Intensifier-tube look with noise and bloom; no crosshair text or numbers.
+  key_features: phosphor green monochrome; round eyepiece vignette; scintillation noise; bloom halos; eyeshine
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Night Vision (Green) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable readouts
+  - fake UI text
+  - diagnostic label
+  - invented medical claim
+  - normal color photo
+  - celebrity likeness
+  - full color
   - color
   - official card scene
   - fixed thumbnail subject
@@ -79,17 +39,20 @@ avoidRules:
   - logo clutter
   - generic stock footage
   - uncontrolled noise
-  - normal color photo
   - fake UI labels
   - medical-only subject
   - decorative glow
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-060.webp
 attributes:
-  negativePrompt: >-
-    color, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable
-    fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, normal color
-    photo, fake UI labels, medical-only subject, decorative glow
+  negativePrompt: readable readouts, fake UI text, diagnostic label, invented medical claim, normal color photo, celebrity likeness, full color, color, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, fake UI labels, medical-only subject, decorative glow, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
