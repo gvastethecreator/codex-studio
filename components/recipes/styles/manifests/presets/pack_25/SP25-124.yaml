@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-124
+packId: pack_25
+name: Wraparound Story Bands
+styleAnchors:
+  - Wraparound Story Bands
+  - wraparound narrative band packaging
+  - wraparound bands
+displayName: Wraparound Story Bands
+category: 7. Packaging & Label Design
+domain: wraparound narrative band packaging
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - packaging-and-label-design
+  - wraparound-band
+  - applied-design
+  - packaging
+  - r-pkg-04
+  - requested-text
+visualDna:
+  aesthetic: 'Wraparound Story Bands: graphic bands lead the eye around the package face by face through rhythm and continuity.'
+  subject_treatment: Lead reading around the prompt's package with bands that alternate image, pause and information, keeping the name and any supplied copy exact.
+  color_and_tone: Reduced palette with one dominant band and a resting ground.
+  lighting_and_shadow: Even light on review views that keeps every word clear of glare.
+  texture_and_material: Flat ink bands with clean edges on a sober stock.
+  camera_and_composition: One main path around the package with a recognizable front entry.
+  atmosphere_and_mood: Sequence and gradual discovery as the package turns in the hand.
+  rendering_and_quality: The reading order holds both on the flat dieline and when assembled.
+  creative_brief: "Wraparound Story Bands: graphic bands lead the eye around the package face by face through rhythm and continuity. Carry it through wraparound bands, face-to-face sequence, front entry, resting ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: wraparound bands; face-to-face sequence; front entry; resting ground
+avoidRules:
+  - invented story
+  - band covering information
+  - repeating decoration with no sequence
+  - invented ingredients, certifications or legal text
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: invented story, band covering information, repeating decoration with no sequence, invented ingredients, certifications or legal text, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: packaging-and-label-design
+  categoryName: 7. Packaging & Label Design
+  domain: wraparound narrative band packaging
+  tags:
+    - curation-v2
+    - packaging-and-label-design
+    - wraparound-band
+    - applied-design
+    - packaging
+    - r-pkg-04
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

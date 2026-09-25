@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-133
+packId: pack_25
+name: Cut-Paper Shelf Graphics
+styleAnchors:
+  - Cut-Paper Shelf Graphics
+  - flat cut-shape family packaging
+  - big cut silhouettes
+displayName: Cut-Paper Shelf Graphics
+category: 7. Packaging & Label Design
+domain: flat cut-shape family packaging
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - packaging-and-label-design
+  - cut-paper-shelf
+  - applied-design
+  - packaging
+  - r-pkg-13
+  - requested-text
+visualDna:
+  aesthetic: 'Cut-Paper Shelf Graphics: big flat cut-out silhouettes and color fields build a product family that reads from across the aisle.'
+  subject_treatment: Build the prompt's product family from large flat cut-out silhouettes and fields, one per variant, with the name kept exact and in the same place.
+  color_and_tone: Two or three well-separated colors, the main figure clear in greyscale.
+  lighting_and_shadow: Flat graphic cut shapes on a neutral board, printed rather than collaged.
+  texture_and_material: Deliberately simple edges, clean and flat like freshly printed paper.
+  camera_and_composition: One big motif and a stable name, the cut shapes continuing onto the sides.
+  atmosphere_and_mood: Graphic energy and strong shelf presence, bold and friendly.
+  rendering_and_quality: The main silhouette reads even as a tiny shelf thumbnail.
+  creative_brief: "Cut-Paper Shelf Graphics: big flat cut-out silhouettes and color fields build a product family that reads from across the aisle. Carry it through big cut silhouettes, flat fields, shelf readability, stable name. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: big cut silhouettes; flat fields; shelf readability; stable name
+avoidRules:
+  - tiny cut-outs
+  - collage with no hierarchy
+  - color as the only difference
+  - invented ingredients, certifications or legal text
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: tiny cut-outs, collage with no hierarchy, color as the only difference, invented ingredients, certifications or legal text, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: packaging-and-label-design
+  categoryName: 7. Packaging & Label Design
+  domain: flat cut-shape family packaging
+  tags:
+    - curation-v2
+    - packaging-and-label-design
+    - cut-paper-shelf
+    - applied-design
+    - packaging
+    - r-pkg-13
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

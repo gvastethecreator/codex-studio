@@ -2458,5 +2458,20 @@
     "evidencePresetIds": ["SP25-101", "SP25-102", "SP25-103"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_25",
+    "category": "7. Packaging & Label Design",
+    "displayCategory": "Packaging & labels",
+    "kind": "mixed",
+    "expectedCount": 20,
+    "baselineHash": "cc7d97ce5b7deb58076163d9d9407976bc9e4f96e5e8acef89c04f5d8f07f597",
+    "problem": "Packaging styles must change how a package carries its brand without banning the requested name and copy, and without inventing ingredients, certifications, legal text, barcodes or real brands.",
+    "preserve": "Requested brand names, variant names, codes and supplied copy stay exact; each style keeps its construction (type across faces, specimen hierarchy, die-cut window, wraparound bands, oversized type with small block, label edge, interlocking color fields, quiet diagram, bold engraving, type on a path, transparent layers, info panels, cut shapes, index rhythm, blind emboss).",
+    "proposedAction": "Applied-design import: 15 packaging styles, tear-line and collector-insert profiles, and the peel-reveal, shelf-family and finish-separation recipes as sheet profiles; requested-text policy with a no-invented-claims negative, and three new fictional-brand briefs per preset instead of the fixture brand.",
+    "validation": "Generate each card, then test transfer on a box, a bottle label, a three-variant family, a flat dieline next to the assembled pack and a long product name; check spelling and that no claims or codes were invented.",
+    "evidencePresetIds": ["SP25-121", "SP25-122", "SP25-123"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

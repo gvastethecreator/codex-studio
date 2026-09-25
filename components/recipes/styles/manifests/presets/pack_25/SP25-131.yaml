@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-131
+packId: pack_25
+name: Transparent Layer Registers
+styleAnchors:
+  - Transparent Layer Registers
+  - layered transparent sleeve packaging
+  - transparent sleeve
+displayName: Transparent Layer Registers
+category: 7. Packaging & Label Design
+domain: layered transparent sleeve packaging
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - packaging-and-label-design
+  - transparent-layer
+  - applied-design
+  - packaging
+  - r-pkg-11
+  - requested-text
+visualDna:
+  aesthetic: 'Transparent Layer Registers: printed transparent layers line up over an inner box so the parts complete one image together.'
+  subject_treatment: Align printed elements on a transparent sleeve and an inner box so the prompt's package reads as one combined image, the name kept exact on one opaque layer.
+  color_and_tone: Values and colors that separate layers and overlaps, with text kept fully legible.
+  lighting_and_shadow: Soft light with contained reflections on the transparent surfaces.
+  texture_and_material: Thin clear layers with declared transparency and a checkable register.
+  camera_and_composition: Layers shown together and apart, the main reading stable on one layer.
+  atmosphere_and_mood: Discovery through overlap and precision, clever and satisfying.
+  rendering_and_quality: Each layer holds defined content and the overlap never invents letters.
+  creative_brief: "Transparent Layer Registers: printed transparent layers line up over an inner box so the parts complete one image together. Carry it through transparent sleeve, inner box, combined image, exact name layer. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: transparent sleeve; inner box; combined image; exact name layer
+avoidRules:
+  - text illegible when overlapped
+  - impossible register
+  - transparency with no function
+  - invented ingredients, certifications or legal text
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: text illegible when overlapped, impossible register, transparency with no function, invented ingredients, certifications or legal text, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: packaging-and-label-design
+  categoryName: 7. Packaging & Label Design
+  domain: layered transparent sleeve packaging
+  tags:
+    - curation-v2
+    - packaging-and-label-design
+    - transparent-layer
+    - applied-design
+    - packaging
+    - r-pkg-11
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -3,7 +3,7 @@
     {
       "id": "pack_25",
       "name": "Applied Design",
-      "presetCount": 120
+      "presetCount": 140
     }
   ],
   "presets": [
@@ -2014,7 +2014,395 @@
       "tags": ["applied-design", "industrial-and-product-design", "repair-access-sequence-profile"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp25-120 repair-access concept repair access sequence profile three-step sequence 6. industrial & product design industrial & product design repair access sequence profile pack_25 applied design industrial-and-product-design applied-design industrial-and-product-design repair-access-sequence-profile"
+    },
+    {
+      "id": "SP25-121",
+      "name": "Seam-Spanning Type",
+      "styleAnchors": [
+        "Seam-Spanning Type",
+        "type wrapping across package faces",
+        "type across faces"
+      ],
+      "ref": "pack_25/SP25-121.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "packaging-and-label-design",
+      "categoryName": "7. Packaging & Label Design",
+      "domain": "type wrapping across package faces",
+      "tags": [
+        "applied-design",
+        "packaging-and-label-design",
+        "type-wrapping-across-package-faces"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-121 seam-spanning type type wrapping across package faces type across faces 7. packaging & label design packaging & labels type wrapping across package faces pack_25 applied design packaging-and-label-design applied-design packaging-and-label-design type-wrapping-across-package-faces"
+    },
+    {
+      "id": "SP25-122",
+      "name": "Taxonomic Label Systems",
+      "styleAnchors": [
+        "Taxonomic Label Systems",
+        "indexed variant label system",
+        "specimen hierarchy"
+      ],
+      "ref": "pack_25/SP25-122.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "packaging-and-label-design",
+      "categoryName": "7. Packaging & Label Design",
+      "domain": "indexed variant label system",
+      "tags": ["applied-design", "packaging-and-label-design", "indexed-variant-label-system"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-122 taxonomic label systems indexed variant label system specimen hierarchy 7. packaging & label design packaging & labels indexed variant label system pack_25 applied design packaging-and-label-design applied-design packaging-and-label-design indexed-variant-label-system"
+    },
+    {
+      "id": "SP25-123",
+      "name": "Window-Counterform Packaging",
+      "styleAnchors": [
+        "Window-Counterform Packaging",
+        "die-cut window motif package",
+        "die-cut window"
+      ],
+      "ref": "pack_25/SP25-123.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "packaging-and-label-design",
+      "categoryName": "7. Packaging & Label Design",
+      "domain": "die-cut window motif package",
+      "tags": ["applied-design", "packaging-and-label-design", "die-cut-window-motif-package"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-123 window-counterform packaging die-cut window motif package die-cut window 7. packaging & label design packaging & labels die-cut window motif package pack_25 applied design packaging-and-label-design applied-design packaging-and-label-design die-cut-window-motif-package"
+    },
+    {
+      "id": "SP25-124",
+      "name": "Wraparound Story Bands",
+      "styleAnchors": [
+        "Wraparound Story Bands",
+        "wraparound narrative band packaging",
+        "wraparound bands"
+      ],
+      "ref": "pack_25/SP25-124.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "packaging-and-label-design",
+      "categoryName": "7. Packaging & Label Design",
+      "domain": "wraparound narrative band packaging",
+      "tags": [
+        "applied-design",
+        "packaging-and-label-design",
+        "wraparound-narrative-band-packaging"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-124 wraparound story bands wraparound narrative band packaging wraparound bands 7. packaging & label design packaging & labels wraparound narrative band packaging pack_25 applied design packaging-and-label-design applied-design packaging-and-label-design wraparound-narrative-band-packaging"
+    },
+    {
+      "id": "SP25-125",
+      "name": "Overscale Microtype Contrast",
+      "styleAnchors": [
+        "Overscale Microtype Contrast",
+        "giant type with small info packaging",
+        "oversized title"
+      ],
+      "ref": "pack_25/SP25-125.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "packaging-and-label-design",
+      "categoryName": "7. Packaging & Label Design",
+      "domain": "giant type with small info packaging",
+      "tags": [
+        "applied-design",
+        "packaging-and-label-design",
+        "giant-type-with-small-info-packaging"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-125 overscale microtype contrast giant type with small info packaging oversized title 7. packaging & label design packaging & labels giant type with small info packaging pack_25 applied design packaging-and-label-design applied-design packaging-and-label-design giant-type-with-small-info-packaging"
+    },
+    {
+      "id": "SP25-126",
+      "name": "Material-Edge Labels",
+      "styleAnchors": [
+        "Material-Edge Labels",
+        "label edge meets substrate packaging",
+        "label edge as motif"
+      ],
+      "ref": "pack_25/SP25-126.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "packaging-and-label-design",
+      "categoryName": "7. Packaging & Label Design",
+      "domain": "label edge meets substrate packaging",
+      "tags": [
+        "applied-design",
+        "packaging-and-label-design",
+        "label-edge-meets-substrate-packaging"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-126 material-edge labels label edge meets substrate packaging label edge as motif 7. packaging & label design packaging & labels label edge meets substrate packaging pack_25 applied design packaging-and-label-design applied-design packaging-and-label-design label-edge-meets-substrate-packaging"
+    },
+    {
+      "id": "SP25-127",
+      "name": "Interlocking Color Families",
+      "styleAnchors": [
+        "Interlocking Color Families",
+        "interlocking color field product family",
+        "interlocking fields"
+      ],
+      "ref": "pack_25/SP25-127.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "packaging-and-label-design",
+      "categoryName": "7. Packaging & Label Design",
+      "domain": "interlocking color field product family",
+      "tags": [
+        "applied-design",
+        "packaging-and-label-design",
+        "interlocking-color-field-product-family"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-127 interlocking color families interlocking color field product family interlocking fields 7. packaging & label design packaging & labels interlocking color field product family pack_25 applied design packaging-and-label-design applied-design packaging-and-label-design interlocking-color-field-product-family"
+    },
+    {
+      "id": "SP25-128",
+      "name": "Quiet Diagram Packaging",
+      "styleAnchors": [
+        "Quiet Diagram Packaging",
+        "simple use-diagram packaging",
+        "simple use diagram"
+      ],
+      "ref": "pack_25/SP25-128.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "packaging-and-label-design",
+      "categoryName": "7. Packaging & Label Design",
+      "domain": "simple use-diagram packaging",
+      "tags": ["applied-design", "packaging-and-label-design", "simple-use-diagram-packaging"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-128 quiet diagram packaging simple use-diagram packaging simple use diagram 7. packaging & label design packaging & labels simple use-diagram packaging pack_25 applied design packaging-and-label-design applied-design packaging-and-label-design simple-use-diagram-packaging"
+    },
+    {
+      "id": "SP25-129",
+      "name": "Engraved Mass Labels",
+      "styleAnchors": [
+        "Engraved Mass Labels",
+        "bold engraving label packaging",
+        "bold engraved masses"
+      ],
+      "ref": "pack_25/SP25-129.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "packaging-and-label-design",
+      "categoryName": "7. Packaging & Label Design",
+      "domain": "bold engraving label packaging",
+      "tags": ["applied-design", "packaging-and-label-design", "bold-engraving-label-packaging"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-129 engraved mass labels bold engraving label packaging bold engraved masses 7. packaging & label design packaging & labels bold engraving label packaging pack_25 applied design packaging-and-label-design applied-design packaging-and-label-design bold-engraving-label-packaging"
+    },
+    {
+      "id": "SP25-130",
+      "name": "Typographic Path Packaging",
+      "styleAnchors": [
+        "Typographic Path Packaging",
+        "type following package volume",
+        "type on a path"
+      ],
+      "ref": "pack_25/SP25-130.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "packaging-and-label-design",
+      "categoryName": "7. Packaging & Label Design",
+      "domain": "type following package volume",
+      "tags": ["applied-design", "packaging-and-label-design", "type-following-package-volume"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-130 typographic path packaging type following package volume type on a path 7. packaging & label design packaging & labels type following package volume pack_25 applied design packaging-and-label-design applied-design packaging-and-label-design type-following-package-volume"
+    },
+    {
+      "id": "SP25-131",
+      "name": "Transparent Layer Registers",
+      "styleAnchors": [
+        "Transparent Layer Registers",
+        "layered transparent sleeve packaging",
+        "transparent sleeve"
+      ],
+      "ref": "pack_25/SP25-131.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "packaging-and-label-design",
+      "categoryName": "7. Packaging & Label Design",
+      "domain": "layered transparent sleeve packaging",
+      "tags": [
+        "applied-design",
+        "packaging-and-label-design",
+        "layered-transparent-sleeve-packaging"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-131 transparent layer registers layered transparent sleeve packaging transparent sleeve 7. packaging & label design packaging & labels layered transparent sleeve packaging pack_25 applied design packaging-and-label-design applied-design packaging-and-label-design layered-transparent-sleeve-packaging"
+    },
+    {
+      "id": "SP25-132",
+      "name": "Patchwork Information Panels",
+      "styleAnchors": [
+        "Patchwork Information Panels",
+        "modular info panel packaging",
+        "modular panels"
+      ],
+      "ref": "pack_25/SP25-132.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "packaging-and-label-design",
+      "categoryName": "7. Packaging & Label Design",
+      "domain": "modular info panel packaging",
+      "tags": ["applied-design", "packaging-and-label-design", "modular-info-panel-packaging"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-132 patchwork information panels modular info panel packaging modular panels 7. packaging & label design packaging & labels modular info panel packaging pack_25 applied design packaging-and-label-design applied-design packaging-and-label-design modular-info-panel-packaging"
+    },
+    {
+      "id": "SP25-133",
+      "name": "Cut-Paper Shelf Graphics",
+      "styleAnchors": [
+        "Cut-Paper Shelf Graphics",
+        "flat cut-shape family packaging",
+        "big cut silhouettes"
+      ],
+      "ref": "pack_25/SP25-133.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "packaging-and-label-design",
+      "categoryName": "7. Packaging & Label Design",
+      "domain": "flat cut-shape family packaging",
+      "tags": ["applied-design", "packaging-and-label-design", "flat-cut-shape-family-packaging"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-133 cut-paper shelf graphics flat cut-shape family packaging big cut silhouettes 7. packaging & label design packaging & labels flat cut-shape family packaging pack_25 applied design packaging-and-label-design applied-design packaging-and-label-design flat-cut-shape-family-packaging"
+    },
+    {
+      "id": "SP25-134",
+      "name": "Serial Number Rhythm",
+      "styleAnchors": [
+        "Serial Number Rhythm",
+        "index number rhythm packaging",
+        "giant index numbers"
+      ],
+      "ref": "pack_25/SP25-134.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "packaging-and-label-design",
+      "categoryName": "7. Packaging & Label Design",
+      "domain": "index number rhythm packaging",
+      "tags": ["applied-design", "packaging-and-label-design", "index-number-rhythm-packaging"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-134 serial number rhythm index number rhythm packaging giant index numbers 7. packaging & label design packaging & labels index number rhythm packaging pack_25 applied design packaging-and-label-design applied-design packaging-and-label-design index-number-rhythm-packaging"
+    },
+    {
+      "id": "SP25-135",
+      "name": "Embossed Void Identity",
+      "styleAnchors": ["Embossed Void Identity", "blind emboss and void packaging", "blind emboss"],
+      "ref": "pack_25/SP25-135.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "packaging-and-label-design",
+      "categoryName": "7. Packaging & Label Design",
+      "domain": "blind emboss and void packaging",
+      "tags": ["applied-design", "packaging-and-label-design", "blind-emboss-and-void-packaging"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-135 embossed void identity blind emboss and void packaging blind emboss 7. packaging & label design packaging & labels blind emboss and void packaging pack_25 applied design packaging-and-label-design applied-design packaging-and-label-design blind-emboss-and-void-packaging"
+    },
+    {
+      "id": "SP25-136",
+      "name": "Tear-Line Narratives",
+      "styleAnchors": [
+        "Tear-Line Narratives",
+        "tear-open reveal package profile",
+        "planned tear line"
+      ],
+      "ref": "pack_25/SP25-136.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "packaging-and-label-design",
+      "categoryName": "7. Packaging & Label Design",
+      "domain": "tear-open reveal package profile",
+      "tags": ["applied-design", "packaging-and-label-design", "tear-open-reveal-package-profile"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-136 tear-line narratives tear-open reveal package profile planned tear line 7. packaging & label design packaging & labels tear-open reveal package profile pack_25 applied design packaging-and-label-design applied-design packaging-and-label-design tear-open-reveal-package-profile"
+    },
+    {
+      "id": "SP25-137",
+      "name": "Collector Insert Architecture",
+      "styleAnchors": [
+        "Collector Insert Architecture",
+        "unboxing insert layout profile",
+        "layered trays"
+      ],
+      "ref": "pack_25/SP25-137.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "packaging-and-label-design",
+      "categoryName": "7. Packaging & Label Design",
+      "domain": "unboxing insert layout profile",
+      "tags": ["applied-design", "packaging-and-label-design", "unboxing-insert-layout-profile"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-137 collector insert architecture unboxing insert layout profile layered trays 7. packaging & label design packaging & labels unboxing insert layout profile pack_25 applied design packaging-and-label-design applied-design packaging-and-label-design unboxing-insert-layout-profile"
+    },
+    {
+      "id": "SP25-138",
+      "name": "Peel-Reveal Sequence",
+      "styleAnchors": [
+        "Peel-Reveal Sequence",
+        "peel-back reveal sequence profile",
+        "three peel states"
+      ],
+      "ref": "pack_25/SP25-138.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "packaging-and-label-design",
+      "categoryName": "7. Packaging & Label Design",
+      "domain": "peel-back reveal sequence profile",
+      "tags": ["applied-design", "packaging-and-label-design", "peel-back-reveal-sequence-profile"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-138 peel-reveal sequence peel-back reveal sequence profile three peel states 7. packaging & label design packaging & labels peel-back reveal sequence profile pack_25 applied design packaging-and-label-design applied-design packaging-and-label-design peel-back-reveal-sequence-profile"
+    },
+    {
+      "id": "SP25-139",
+      "name": "Shelf Family Comparison",
+      "styleAnchors": [
+        "Shelf Family Comparison",
+        "product family shelf comparison profile",
+        "equal-scale fronts"
+      ],
+      "ref": "pack_25/SP25-139.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "packaging-and-label-design",
+      "categoryName": "7. Packaging & Label Design",
+      "domain": "product family shelf comparison profile",
+      "tags": [
+        "applied-design",
+        "packaging-and-label-design",
+        "product-family-shelf-comparison-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-139 shelf family comparison product family shelf comparison profile equal-scale fronts 7. packaging & label design packaging & labels product family shelf comparison profile pack_25 applied design packaging-and-label-design applied-design packaging-and-label-design product-family-shelf-comparison-profile"
+    },
+    {
+      "id": "SP25-140",
+      "name": "Finish Separation Preview",
+      "styleAnchors": [
+        "Finish Separation Preview",
+        "print finish separation sheet profile",
+        "separated finish layers"
+      ],
+      "ref": "pack_25/SP25-140.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "packaging-and-label-design",
+      "categoryName": "7. Packaging & Label Design",
+      "domain": "print finish separation sheet profile",
+      "tags": [
+        "applied-design",
+        "packaging-and-label-design",
+        "print-finish-separation-sheet-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-140 finish separation preview print finish separation sheet profile separated finish layers 7. packaging & label design packaging & labels print finish separation sheet profile pack_25 applied design packaging-and-label-design applied-design packaging-and-label-design print-finish-separation-sheet-profile"
     }
   ],
-  "totalPresetCount": 120
+  "totalPresetCount": 140
 }

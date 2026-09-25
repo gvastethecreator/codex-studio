@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-121
+packId: pack_25
+name: Seam-Spanning Type
+styleAnchors:
+  - Seam-Spanning Type
+  - type wrapping across package faces
+  - type across faces
+displayName: Seam-Spanning Type
+category: 7. Packaging & Label Design
+domain: type wrapping across package faces
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - packaging-and-label-design
+  - seam-spanning-type
+  - applied-design
+  - packaging
+  - r-pkg-01
+  - requested-text
+visualDna:
+  aesthetic: 'Seam-Spanning Type: the brand name crosses from one face of the package onto the next, staying readable across planned folds.'
+  subject_treatment: Run the prompt's requested name across authorized faces of the package with planned continuity, every character kept exact and the front still readable.
+  color_and_tone: Strong text-to-board contrast, each letter keeping one color as it turns a corner.
+  lighting_and_shadow: Flat artwork view plus soft light on the assembled box that shows every fold.
+  texture_and_material: Clean ink on a sober board with crisp, well-defined edges and folds.
+  camera_and_composition: Complete front hierarchy with a side continuation that adds rhythm.
+  atmosphere_and_mood: Editorial movement around the object, bold yet controlled.
+  rendering_and_quality: Text checked flat and assembled, especially at corners and flaps.
+  creative_brief: "Seam-Spanning Type: the brand name crosses from one face of the package onto the next, staying readable across planned folds. Carry it through type across faces, planned folds, readable front, flat and assembled views. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: type across faces; planned folds; readable front; flat and assembled views
+avoidRules:
+  - text cut with no intent
+  - folds that alter letters
+  - label added like a patch
+  - invented ingredients, certifications or legal text
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: text cut with no intent, folds that alter letters, label added like a patch, invented ingredients, certifications or legal text, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: packaging-and-label-design
+  categoryName: 7. Packaging & Label Design
+  domain: type wrapping across package faces
+  tags:
+    - curation-v2
+    - packaging-and-label-design
+    - seam-spanning-type
+    - applied-design
+    - packaging
+    - r-pkg-01
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

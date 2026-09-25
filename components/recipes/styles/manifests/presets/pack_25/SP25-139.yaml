@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP25-139
+packId: pack_25
+name: Shelf Family Comparison
+styleAnchors:
+  - Shelf Family Comparison
+  - product family shelf comparison profile
+  - equal-scale fronts
+displayName: Shelf Family Comparison
+category: 7. Packaging & Label Design
+domain: product family shelf comparison profile
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - packaging-and-label-design
+  - shelf-family
+  - applied-design
+  - packaging
+  - profile
+  - r-pkg-19
+  - requested-text
+visualDna:
+  aesthetic: 'Shelf Family Comparison: a whole product family shown front-on at one scale, same hierarchy and light, to judge how well the variants stand apart.'
+  subject_treatment: Show the prompt's product variants side by side at one scale with one shared hierarchy, names and codes exact, plus a small shelf-distance view.
+  color_and_tone: Family palette with redundant names and codes per variant.
+  lighting_and_shadow: Identical light and exposure across the whole family.
+  texture_and_material: Same materials and finishes so only the graphics change.
+  camera_and_composition: Fronts at equal scale and distance with one shelf-thumbnail control.
+  atmosphere_and_mood: Recognizable kinship and an easy choice between variants.
+  rendering_and_quality: Each variant keeps its own data and reads without the small text.
+  creative_brief: "Shelf Family Comparison: a whole product family shown front-on at one scale, same hierarchy and light, to judge how well the variants stand apart. Carry it through equal-scale fronts, shared hierarchy, shelf thumbnail, exact names. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: equal-scale fronts; shared hierarchy; shelf thumbnail; exact names
+avoidRules:
+  - identical variants
+  - changed data
+  - different scales between products
+  - invented ingredients, certifications or legal text
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: identical variants, changed data, different scales between products, invented ingredients, certifications or legal text, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: packaging-and-label-design
+  categoryName: 7. Packaging & Label Design
+  domain: product family shelf comparison profile
+  tags:
+    - curation-v2
+    - packaging-and-label-design
+    - shelf-family
+    - applied-design
+    - packaging
+    - profile
+    - r-pkg-19
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

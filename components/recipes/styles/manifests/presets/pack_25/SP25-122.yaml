@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP25-122
+packId: pack_25
+name: Taxonomic Label Systems
+styleAnchors:
+  - Taxonomic Label Systems
+  - indexed variant label system
+  - specimen hierarchy
+displayName: Taxonomic Label Systems
+category: 7. Packaging & Label Design
+domain: indexed variant label system
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - packaging-and-label-design
+  - taxonomic-label
+  - applied-design
+  - packaging
+  - r-pkg-02
+  - requested-text
+visualDna:
+  aesthetic: 'Taxonomic Label Systems: indexes, codes and modular hierarchies organize a range of variants like a specimen collection, without literal illustration.'
+  subject_treatment: Organize the prompt's brand, variant names and supplied codes in one modular hierarchy, every name and code kept exact and nothing invented.
+  color_and_tone: Short family palette with one redundant code per variant.
+  lighting_and_shadow: Neutral even light for reading, clean and quietly precise.
+  texture_and_material: Sober stocks and crisp-edged ink with the information kept clear.
+  camera_and_composition: Aligned modules, codes under the name and room left for future data.
+  atmosphere_and_mood: Archive precision and calm differentiation across the range.
+  rendering_and_quality: Every code matches its variant, with no numbers invented to fill the grid.
+  creative_brief: "Taxonomic Label Systems: indexes, codes and modular hierarchies organize a range of variants like a specimen collection, without literal illustration. Carry it through specimen hierarchy, variant codes, modular grid, short palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: specimen hierarchy; variant codes; modular grid; short palette
+avoidRules:
+  - fake certifications
+  - ornamental code
+  - illegible secondary type
+  - invented ingredients, certifications or legal text
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: fake certifications, ornamental code, illegible secondary type, invented ingredients, certifications or legal text, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: packaging-and-label-design
+  categoryName: 7. Packaging & Label Design
+  domain: indexed variant label system
+  tags:
+    - curation-v2
+    - packaging-and-label-design
+    - taxonomic-label
+    - applied-design
+    - packaging
+    - r-pkg-02
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

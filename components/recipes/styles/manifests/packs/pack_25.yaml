@@ -147,6 +147,29 @@ categories:
       - pack_25/SP25-118.yaml
       - pack_25/SP25-119.yaml
       - pack_25/SP25-120.yaml
+  - id: packaging-and-label-design
+    name: 7. Packaging & Label Design
+    presetRefs:
+      - pack_25/SP25-121.yaml
+      - pack_25/SP25-122.yaml
+      - pack_25/SP25-123.yaml
+      - pack_25/SP25-124.yaml
+      - pack_25/SP25-125.yaml
+      - pack_25/SP25-126.yaml
+      - pack_25/SP25-127.yaml
+      - pack_25/SP25-128.yaml
+      - pack_25/SP25-129.yaml
+      - pack_25/SP25-130.yaml
+      - pack_25/SP25-131.yaml
+      - pack_25/SP25-132.yaml
+      - pack_25/SP25-133.yaml
+      - pack_25/SP25-134.yaml
+      - pack_25/SP25-135.yaml
+      - pack_25/SP25-136.yaml
+      - pack_25/SP25-137.yaml
+      - pack_25/SP25-138.yaml
+      - pack_25/SP25-139.yaml
+      - pack_25/SP25-140.yaml
 presetRefs:
   - pack_25/SP25-001.yaml
   - pack_25/SP25-002.yaml
@@ -268,3 +291,23 @@ presetRefs:
   - pack_25/SP25-118.yaml
   - pack_25/SP25-119.yaml
   - pack_25/SP25-120.yaml
+  - pack_25/SP25-121.yaml
+  - pack_25/SP25-122.yaml
+  - pack_25/SP25-123.yaml
+  - pack_25/SP25-124.yaml
+  - pack_25/SP25-125.yaml
+  - pack_25/SP25-126.yaml
+  - pack_25/SP25-127.yaml
+  - pack_25/SP25-128.yaml
+  - pack_25/SP25-129.yaml
+  - pack_25/SP25-130.yaml
+  - pack_25/SP25-131.yaml
+  - pack_25/SP25-132.yaml
+  - pack_25/SP25-133.yaml
+  - pack_25/SP25-134.yaml
+  - pack_25/SP25-135.yaml
+  - pack_25/SP25-136.yaml
+  - pack_25/SP25-137.yaml
+  - pack_25/SP25-138.yaml
+  - pack_25/SP25-139.yaml
+  - pack_25/SP25-140.yaml

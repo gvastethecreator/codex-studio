@@ -721,64 +721,124 @@
       "category": "6. Industrial & Product Design"
     },
     "R-PKG-01": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-121",
+      "name": "Seam-Spanning Type",
+      "category": "7. Packaging & Label Design"
     },
     "R-PKG-02": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-122",
+      "name": "Taxonomic Label Systems",
+      "category": "7. Packaging & Label Design"
     },
     "R-PKG-03": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-123",
+      "name": "Window-Counterform Packaging",
+      "category": "7. Packaging & Label Design"
     },
     "R-PKG-04": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-124",
+      "name": "Wraparound Story Bands",
+      "category": "7. Packaging & Label Design"
     },
     "R-PKG-05": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-125",
+      "name": "Overscale Microtype Contrast",
+      "category": "7. Packaging & Label Design"
     },
     "R-PKG-06": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-126",
+      "name": "Material-Edge Labels",
+      "category": "7. Packaging & Label Design"
     },
     "R-PKG-07": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-127",
+      "name": "Interlocking Color Families",
+      "category": "7. Packaging & Label Design"
     },
     "R-PKG-08": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-128",
+      "name": "Quiet Diagram Packaging",
+      "category": "7. Packaging & Label Design"
     },
     "R-PKG-09": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-129",
+      "name": "Engraved Mass Labels",
+      "category": "7. Packaging & Label Design"
     },
     "R-PKG-10": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-130",
+      "name": "Typographic Path Packaging",
+      "category": "7. Packaging & Label Design"
     },
     "R-PKG-11": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-131",
+      "name": "Transparent Layer Registers",
+      "category": "7. Packaging & Label Design"
     },
     "R-PKG-12": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-132",
+      "name": "Patchwork Information Panels",
+      "category": "7. Packaging & Label Design"
     },
     "R-PKG-13": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-133",
+      "name": "Cut-Paper Shelf Graphics",
+      "category": "7. Packaging & Label Design"
     },
     "R-PKG-14": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-134",
+      "name": "Serial Number Rhythm",
+      "category": "7. Packaging & Label Design"
     },
     "R-PKG-15": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-135",
+      "name": "Embossed Void Identity",
+      "category": "7. Packaging & Label Design"
     },
     "R-PKG-16": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-136",
+      "name": "Tear-Line Narratives",
+      "category": "7. Packaging & Label Design"
     },
     "R-PKG-17": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-137",
+      "name": "Collector Insert Architecture",
+      "category": "7. Packaging & Label Design"
     },
     "R-PKG-18": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-138",
+      "name": "Peel-Reveal Sequence",
+      "category": "7. Packaging & Label Design"
     },
     "R-PKG-19": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-139",
+      "name": "Shelf Family Comparison",
+      "category": "7. Packaging & Label Design"
     },
     "R-PKG-20": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-140",
+      "name": "Finish Separation Preview",
+      "category": "7. Packaging & Label Design"
     },
     "R-MCK-01": {
       "status": "pending"
