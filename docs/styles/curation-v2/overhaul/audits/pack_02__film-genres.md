@@ -5,7 +5,7 @@ Audited 2026-09-25 from the contact sheet (16 primaries) and full manifests.
 ## Category-wide defects
 
 - All 16 DNA blocks were the "transferable cinematic-media router" template with the same "lens grammar, film stock behavior, genre blocking, projection texture" filler.
-- **Real people and franchises in active fields**: "Sergio Leone style", "Morricone mood" (SP02-002), "Blade Runner aesthetic" (SP02-003), "Godzilla 1954" (SP02-009), "Ghost in the Shell style" (SP02-011), "rebel olive, droid beige" (SP02-016), plus real names in two preset names (SP02-010 "Shaw Brothers", SP02-012 "Wes Anderson"). Preset names are injected into the prompt through `creative_brief`, so these asked for the originals.
+- **Real people and franchises in active fields**: "Sergio Leone style", "Morricone mood" (SP02-002), "Blade Runner aesthetic" (SP02-003), "Godzilla 1954" (SP02-009), "Ghost in the Shell style" (SP02-011), "rebel olive, droid beige" (SP02-016), plus real names in two preset names (SP02-010 "Shaw Brothers", SP02-012 "Wes Anderson"). The card generator puts `preset.name` into every card prompt (`scripts/generate-style-defaults.ts`), so these names asked the image model for the originals; the user-facing generation prompt carries only the eight DNA fields.
 - **Card likeness violations**: SP02-007 Silent Film shows a recognizable tramp comedian; SP02-009 shows a Godzilla-like monster.
 - Genre DNA added costumes, sets and plot by default, against the review rule that a domestic activity keeps its setting under noir.
 - Repeated subjects: a lighthouse in SP02-001 and SP02-013; a wet street with a car and neon in SP02-006 (trope).
@@ -43,3 +43,4 @@ Audited 2026-09-25 from the contact sheet (16 primaries) and full manifests.
 ## Pending (local session)
 
 - Regenerate the cards; SP02-007 and SP02-009 must be regenerated before anything else because their current cards are likeness violations.
+- Old names are kept as a second `styleAnchors` entry for search; `styleAnchors` does not reach the provider prompt or the card prompt.

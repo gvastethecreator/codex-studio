@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP02-036
 packId: pack_02
-name: Fleischer Rubber Hose Cartoon
+name: 1930s Rubber Hose Cartoon
 category: 3. Animation Styles
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,83 +12,45 @@ tags:
   - cinematic-and-media
   - animation-styles
 visualDna:
-  aesthetic: >-
-    Fleischer Rubber Hose Cartoon acts as a transferable cinematic-media router: start from 1930s
-    monochrome bounce-cartoon, Fleischer-era rubber-hose surrealism, pie-cut graphic language,
-    looping rhythm, Rubber-hose curves, pie-cut graphics, bouncing syncopation, surreal morph logic
-    and animation-production system built from motion-era drawing, cel paint, CG polish, stop-motion
-    material, vector layers, camera multiplane, and shape acting, then apply the media behavior to
-    prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Thick, bouncy, adapt the requested subject through
-    animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and
-    production-era finish while preserving prompt identity; preserve the requested subject while
-    translating it through cel shapes, squash, puppet material, vector rigs, CG feature polish,
-    rotoscoped trace, or painted-frame continuity, keeping the requested identity, silhouette,
-    action, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Black and White, charcoal fill, cream paper, no grey; use color as animation
-    pipeline evidence: cel palettes, painted backgrounds, limited UPA flats, stop-motion set tones,
-    digital compositing, or comic-offset halftone, with deliberate value grouping, accent control,
-    and process-specific limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Flat monochrome, stark graphic contrast; make light follow the animation
-    method through cel shadows, painted depth, puppet set lighting, CG bounce, flat graphic value,
-    or rotoscope edge shimmer, so exposure and shadow structure support the media process without
-    overwriting the requested content.
-  texture_and_material: >-
-    Render Film grain, nitrate flicker, hand-painted cel; surface detail should reveal acetate
-    grain, paper line, clay/fabric puppet material, vector fills, oil smears, pixel cells, or CG
-    shader smoothness when named, keeping artifact scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Noodle limbs, rubber-hose arms, boneless contortion; compose through
-    animation readability, pose clarity, painted-plate rhythm, squash arcs, graphic staging,
-    multiplane depth, or frame-by-frame motion logic, with frame rhythm, spacing, edge hierarchy,
-    and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Happy, weird, vaudeville rhythm, early-talkie energy; derive mood from feature
-    warmth, rubber-hose chaos, stop-motion tactility, graphic modernism, anime atmosphere, or
-    experimental motion craft, letting the media style alter interpretation without demanding a
-    specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Retro, bouncy, surreal rubber-band motion, hypnotic loop; finish with
-    production-faithful animation surfaces, readable shapes, controlled artifacts, and no exact
-    studio-character copy or random cartoon face substitution, clean denoised surfaces where
-    appropriate, and enough process evidence to make the style recognizable.
-  key_features: >-
-    1930s monochrome bounce-cartoon, Fleischer-era rubber-hose surrealism, pie-cut graphic language,
-    looping rhythm; Rubber-hose curves, pie-cut graphics, bouncing syncopation, surreal morph logic;
-    Black and White, charcoal fill, cream paper, no grey; Film grain, nitrate flicker, hand-painted
-    cel; Noodle limbs, rubber-hose arms, boneless contortion
-  creative_brief: >-
-    Apply Fleischer Rubber Hose Cartoon as a cinematic-media preset over prompt X: preserve the
-    user's requested subject, then route lens behavior, palette, light, signal or film texture,
-    composition, mood, and final media craft through 1930s monochrome bounce-cartoon, Fleischer-era
-    rubber-hose surrealism, pie-cut graphic language, looping rhythm, Rubber-hose curves, pie-cut
-    graphics, bouncing syncopation, surreal morph logic, Film grain, nitrate flicker, hand-painted
-    cel without requiring the card image's original subject.
+  aesthetic: '1930s rubber-hose cartoon: black-and-white animation with boneless bouncing limbs, pie-cut eyes and everything alive and dancing to the beat.'
+  subject_treatment: Keep the prompt subject, action and setting and redraw them in this animation medium; a non-character subject keeps its identity and no studio-like cast or mascot is added.
+  color_and_tone: Black, white and grey on aged cream, high contrast, slight film flicker.
+  lighting_and_shadow: No rendered light; flat fills and occasional grey tone.
+  texture_and_material: Thick uniform ink lines, white gloves, film grain, scratches and gate weave.
+  camera_and_composition: Characters bouncing in rhythm, objects with faces joining the dance, simple stage-like settings.
+  atmosphere_and_mood: Bouncy and surreal, a cheerful world with a strange undertone.
+  rendering_and_quality: Vintage 1930s print texture; original characters, no mouse or cat mascots.
+  key_features: boneless rubber-hose limbs; pie-cut eyes; black and white; objects with faces dancing; film flicker
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 1930s Rubber Hose Cartoon as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - exact studio character copy
+  - franchise likeness
+  - mascot likeness
+  - celebrity likeness
+  - readable fake text
+  - adding a studio-like cast the prompt did not ask for
   - color
   - modern
   - official card scene
   - fixed thumbnail subject
   - prompt replaced by sample image
-  - readable fake text
   - watermark
   - logo clutter
   - generic stock footage
   - uncontrolled noise
-  - exact studio character copy
   - random cartoon face
   - unreadable motion smear
   - fake subtitles
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-036.webp
 attributes:
-  negativePrompt: >-
-    color, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact
-    studio character copy, random cartoon face, unreadable motion smear, fake subtitles
+  negativePrompt: exact studio character copy, franchise likeness, mascot likeness, celebrity likeness, readable fake text, adding a studio-like cast the prompt did not ask for, color, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random cartoon face, unreadable motion smear, fake subtitles, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
@@ -102,3 +64,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: 1930s Rubber Hose Cartoon
+styleAnchors:
+  - 1930s Rubber Hose Cartoon
+  - Fleischer Rubber Hose Cartoon

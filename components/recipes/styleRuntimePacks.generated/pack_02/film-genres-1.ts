@@ -257,7 +257,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP02-010',
     name: '70s Kung Fu Studio Epic',
     displayName: '70s Kung Fu Studio Epic',
-    styleAnchors: ['70s Kung Fu Studio Epic'],
+    styleAnchors: ['70s Kung Fu Studio Epic', 'Kung Fu Studio Epic (Shaw Brothers)'],
     category: '1. Film Genres',
     negativePrompt:
       'watermark, readable fake text, logo clutter, franchise likeness, recognizable film character, real actor likeness, celebrity likeness, adding genre costumes or plot the prompt did not ask for, modern action grade, shaky cam, modern action, official card scene, fixed thumbnail subject, prompt replaced by sample image, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
@@ -314,7 +314,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP02-012',
     name: 'Symmetrical Storybook Cinema',
     displayName: 'Symmetrical Storybook Cinema',
-    styleAnchors: ['Symmetrical Storybook Cinema'],
+    styleAnchors: ['Symmetrical Storybook Cinema', 'Wes Anderson Symmetrical Storybook Cinema'],
     category: '1. Film Genres',
     negativePrompt:
       'watermark, readable fake text, logo clutter, franchise likeness, recognizable film character, real actor likeness, celebrity likeness, adding genre costumes or plot the prompt did not ask for, asymmetrical, messy handheld, messy, official card scene, fixed thumbnail subject, prompt replaced by sample image, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',

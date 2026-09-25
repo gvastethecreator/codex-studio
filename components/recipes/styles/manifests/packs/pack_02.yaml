@@ -72,6 +72,11 @@ categories:
       - pack_02/SP02-043.yaml
       - pack_02/SP02-044.yaml
       - pack_02/SP02-045.yaml
+      - pack_02/SP02-134.yaml
+      - pack_02/SP02-135.yaml
+      - pack_02/SP02-136.yaml
+      - pack_02/SP02-137.yaml
+      - pack_02/SP02-138.yaml
   - id: photography-eras
     name: 4. Photography Eras
     presetRefs:
@@ -221,6 +226,11 @@ presetRefs:
   - pack_02/SP02-043.yaml
   - pack_02/SP02-044.yaml
   - pack_02/SP02-045.yaml
+  - pack_02/SP02-134.yaml
+  - pack_02/SP02-135.yaml
+  - pack_02/SP02-136.yaml
+  - pack_02/SP02-137.yaml
+  - pack_02/SP02-138.yaml
   - pack_02/SP02-046.yaml
   - pack_02/SP02-047.yaml
   - pack_02/SP02-048.yaml

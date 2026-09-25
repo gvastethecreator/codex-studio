@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP02-136
+packId: pack_02
+name: Charcoal Erasure Animation
+styleAnchors:
+  - Charcoal Erasure Animation
+  - charcoal erase-and-redraw animation
+  - ghost traces of earlier frames
+displayName: Charcoal Erasure Animation
+category: 3. Animation Styles
+domain: charcoal erase-and-redraw animation
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - animation-styles
+  - charcoal
+  - erasure
+  - experimental-animation
+visualDna:
+  aesthetic: 'Charcoal erasure animation: a single charcoal drawing altered, erased and redrawn under the camera, leaving ghost traces of every earlier frame.'
+  subject_treatment: Keep the prompt subject, action and setting and redraw them in this animation medium; a non-character subject keeps its identity and no studio-like cast or mascot is added.
+  color_and_tone: Charcoal black and smudged greys on off-white paper, occasional pale blue pastel accent.
+  lighting_and_shadow: Drawn tone only; light made by erasing into the charcoal.
+  texture_and_material: Smudges, eraser streaks, ghosted previous positions, paper tooth.
+  camera_and_composition: Fixed paper under the camera, moving elements trailing their own erased ghosts.
+  atmosphere_and_mood: Melancholic and restless, memory that never quite disappears.
+  rendering_and_quality: Real charcoal on paper look; not a clean pencil sketch.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Charcoal Erasure Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: ghost traces of earlier frames; eraser streaks; smudged charcoal; paper tooth; fixed drawing under camera
+avoidRules:
+  - exact studio character copy
+  - franchise likeness
+  - mascot likeness
+  - celebrity likeness
+  - readable fake text
+  - adding a studio-like cast the prompt did not ask for
+  - clean line art
+  - color fills
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: exact studio character copy, franchise likeness, mascot likeness, celebrity likeness, readable fake text, adding a studio-like cast the prompt did not ask for, clean line art, color fills, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: animation-styles
+  categoryName: 3. Animation Styles
+  tags:
+    - cinematic-and-media
+    - animation-styles
+    - charcoal
+    - erasure
+    - experimental-animation
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: charcoal erase-and-redraw animation

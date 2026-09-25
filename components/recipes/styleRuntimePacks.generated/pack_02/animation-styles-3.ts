@@ -5,176 +5,179 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP02-031',
-    name: 'Classic Disney Golden Age Cel Feature',
+    name: 'Golden Age Multiplane Cel Feature',
+    displayName: 'Golden Age Multiplane Cel Feature',
+    styleAnchors: ['Golden Age Multiplane Cel Feature', 'Classic Disney Golden Age Cel Feature'],
     category: '3. Animation Styles',
     negativePrompt:
-      '3d, digital, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact studio character copy, random cartoon face, unreadable motion smear, fake subtitles',
+      'exact studio character copy, franchise likeness, mascot likeness, celebrity likeness, readable fake text, adding a studio-like cast the prompt did not ask for, 3d, digital vector, digital, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random cartoon face, unreadable motion smear, fake subtitles, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Classic Disney Golden Age Cel Feature acts as a transferable cinematic-media router: start from Hand-inked storybook cel animation, Snow White style, multiplane depth, painted fairy-tale finish, Multiplane depth, inked contour, painted depth field layers, luminous cel separation and animation-production system built from motion-era drawing, cel paint, CG polish, stop-motion material, vector layers, camera multiplane, and shape acting, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Golden-age cel feature animation: hand-inked characters on clear cels over lush watercolor and gouache backgrounds, shot through a multiplane camera for layered depth.',
       subject_treatment:
-        'Transform any prompt subject through Hand inked, adapt the requested subject through animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era finish while preserving prompt identity; preserve the requested subject while translating it through cel shapes, squash, puppet material, vector rigs, CG feature polish, rotoscoped trace, or painted-frame continuity, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting and redraw them in this animation medium; a non-character subject keeps its identity and no studio-like cast or mascot is added.',
       color_and_tone:
-        'Build color with Technicolor paint, jewel tones, royal purple, lacquer red, warm gold, deep green accent; use color as animation pipeline evidence: cel palettes, painted backgrounds, limited UPA flats, stop-motion set tones, digital compositing, or comic-offset halftone, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Rich storybook palette: deep forest greens, dusk violets, warm lantern golds; cels flat and luminous against softer painted backgrounds.',
       lighting_and_shadow:
-        'Handle light through Multiplane camera, dimensional depth, parallax lighting; make light follow the animation method through cel shadows, painted depth, puppet set lighting, CG bounce, flat graphic value, or rotoscope edge shimmer, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Painted light in the backgrounds, soft airbrushed shadow tones on the cels, glowing highlights on lanterns and eyes.',
       texture_and_material:
-        'Render Cel paint, hand-inked acetate, watercolor depth field wash; surface detail should reveal acetate grain, paper line, clay/fabric puppet material, vector fills, oil smears, pixel cells, or CG shader smoothness when named, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Clean ink contours with thin-thick variation, gouache and watercolor granulation in backgrounds.',
       camera_and_composition:
-        'Structure the image through Squash and stretch, elastic weight, cartoon physics; compose through animation readability, pose clarity, painted-plate rhythm, squash arcs, graphic staging, multiplane depth, or frame-by-frame motion logic, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Magical, classic, storybook sincerity, ceremonial wonder; derive mood from feature warmth, rubber-hose chaos, stop-motion tactility, graphic modernism, anime atmosphere, or experimental motion craft, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Multiplane depth: blurred foreground foliage, crisp midground action, hazy painted distance.',
+      atmosphere_and_mood: 'Enchanted and tender, a fairy tale unfolding in painted layers.',
       rendering_and_quality:
-        'Finish with Masterpiece, fluid, full-animation, in-between perfection; finish with production-faithful animation surfaces, readable shapes, controlled artifacts, and no exact studio-character copy or random cartoon face substitution, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Hand-made 35 mm cel feature finish; original designs only, no studio characters.',
       key_features:
-        'Hand-inked storybook cel animation, Snow White style, multiplane depth, painted fairy-tale finish; Multiplane depth, inked contour, painted depth field layers, luminous cel separation; Technicolor paint, jewel tones, royal purple, lacquer red, warm gold, deep green accent; Cel paint, hand-inked acetate, watercolor depth field wash; Squash and stretch, elastic weight, cartoon physics',
+        'inked cels over painted backgrounds; multiplane depth; storybook palette; airbrushed cel shadow; luminous highlights',
       creative_brief:
-        "Apply Classic Disney Golden Age Cel Feature as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Hand-inked storybook cel animation, Snow White style, multiplane depth, painted fairy-tale finish, Multiplane depth, inked contour, painted depth field layers, luminous cel separation, Cel paint, hand-inked acetate, watercolor depth field wash without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Golden Age Multiplane Cel Feature as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP02-032',
-    name: 'Studio Ghibli Painterly Nature Anime',
+    name: 'Painterly Nature Anime Feature',
+    displayName: 'Painterly Nature Anime Feature',
+    styleAnchors: ['Painterly Nature Anime Feature', 'Studio Ghibli Painterly Nature Anime'],
     category: '3. Animation Styles',
     negativePrompt:
-      'ugly, dark, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact studio character copy, random cartoon face, unreadable motion smear, fake subtitles',
+      'exact studio character copy, franchise likeness, mascot likeness, celebrity likeness, readable fake text, adding a studio-like cast the prompt did not ask for, harsh digital gloss, ugly, dark, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random cartoon face, unreadable motion smear, fake subtitles, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Studio Ghibli Painterly Nature Anime acts as a transferable cinematic-media router: start from Hand-painted nature-forward animated feature, Miyazaki film wonder, dappled memory, everyday magic, breathable stillness, Dappled light, watercolor air, pencil underdraw, soft cel overlay, observed micro-detail and animation-production system built from motion-era drawing, cel paint, CG polish, stop-motion material, vector layers, camera multiplane, and shape acting, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Painterly nature anime feature: simple cel characters set inside richly hand-painted, breathing landscapes of grass, cloud and forest.',
       subject_treatment:
-        'Transform any prompt subject through Delicate, adapt the requested subject through animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era finish while preserving prompt identity; preserve the requested subject while translating it through cel shapes, squash, puppet material, vector rigs, CG feature polish, rotoscoped trace, or painted-frame continuity, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting and redraw them in this animation medium; a non-character subject keeps its identity and no studio-like cast or mascot is added.',
       color_and_tone:
-        'Build color with Natural, mineral green, sky blue, warm cream, cherry-blossom pink, earth brown; use color as animation pipeline evidence: cel palettes, painted backgrounds, limited UPA flats, stop-motion set tones, digital compositing, or comic-offset halftone, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Fresh greens, high summer blues, warm dappled golds; cels in soft flat color over dense watercolor-gouache backgrounds.',
       lighting_and_shadow:
-        'Handle light through Dappled sunlight, leaf-filtered glow, golden late-afternoon; make light follow the animation method through cel shadows, painted depth, puppet set lighting, CG bounce, flat graphic value, or rotoscope edge shimmer, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Dappled sunlight through leaves, towering bright cumulus, soft two-tone cel shadow.',
       texture_and_material:
-        'Render Watercolor depth field, soft wash, pencil underdraw, cel overlay; surface detail should reveal acetate grain, paper line, clay/fabric puppet material, vector fills, oil smears, pixel cells, or CG shader smoothness when named, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Visible brush texture in grass, bark and cloud; delicate pencil lines on characters.',
       camera_and_composition:
-        'Structure the image through Camera language native to Studio Ghibli Painterly Nature Anime: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose through animation readability, pose clarity, painted-plate rhythm, squash arcs, graphic staging, multiplane depth, or frame-by-frame motion logic, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Nostalgic, peaceful, bittersweet wonder, human-scale awe; derive mood from feature warmth, rubber-hose chaos, stop-motion tactility, graphic modernism, anime atmosphere, or experimental motion craft, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Luminous, lovingly observed, detailed stillness, hand-painted atmospheric depth; finish with production-faithful animation surfaces, readable shapes, controlled artifacts, and no exact studio-character copy or random cartoon face substitution, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Wide landscape with small figures, wind visible in grass and hair, quiet pauses in the frame.',
+      atmosphere_and_mood: 'Gentle and wondrous, everyday magic breathing in the wind.',
+      rendering_and_quality: 'Hand-painted feature finish; original characters, no studio designs.',
       key_features:
-        'Hand-painted nature-forward animated feature, Miyazaki film wonder, dappled memory, everyday magic, breathable stillness; Dappled light, watercolor air, pencil underdraw, soft cel overlay, observed micro-detail; Natural, mineral green, sky blue, warm cream, cherry-blossom pink, earth brown; Watercolor depth field, soft wash, pencil underdraw, cel overlay; Camera language native to Studio Ghibli Painterly Nature Anime: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
+        'hand-painted landscapes; small cel figures; wind in grass; dappled light; towering cumulus',
       creative_brief:
-        "Apply Studio Ghibli Painterly Nature Anime as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Hand-painted nature-forward animated feature, Miyazaki film wonder, dappled memory, everyday magic, breathable stillness, Dappled light, watercolor air, pencil underdraw, soft cel overlay, observed micro-detail, Watercolor depth field, soft wash, pencil underdraw, cel overlay without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Painterly Nature Anime Feature as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP02-033',
-    name: 'Pixar Style Family Feature CG',
+    name: 'Family Feature CG Animation',
+    displayName: 'Family Feature CG Animation',
+    styleAnchors: ['Family Feature CG Animation', 'Pixar Style Family Feature CG'],
     category: '3. Animation Styles',
     negativePrompt:
-      '2d, anime, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact studio character copy, random cartoon face, unreadable motion smear, fake subtitles',
+      'exact studio character copy, franchise likeness, mascot likeness, celebrity likeness, readable fake text, adding a studio-like cast the prompt did not ask for, 2d, photoreal, anime, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random cartoon face, unreadable motion smear, fake subtitles, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Pixar Style Family Feature CG acts as a transferable cinematic-media router: start from Stylized family-animation CG, Pixar-era warmth, emotional precision, lovable imperfection, Soft shadows, appeal silhouette, rounded bevels, warm bounce light, material storytelling and animation-production system built from motion-era drawing, cel paint, CG polish, stop-motion material, vector layers, camera multiplane, and shape acting, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Family feature CG animation: stylized 3D characters with appealing rounded shapes, expressive faces and warm cinematic lighting.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Pixar Style Family Feature CG: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 3. Animation Styles cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while translating it through cel shapes, squash, puppet material, vector rigs, CG feature polish, rotoscoped trace, or painted-frame continuity, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting and redraw them in this animation medium; a non-character subject keeps its identity and no studio-like cast or mascot is added.',
       color_and_tone:
-        'Build color with Vibrant, subsurface, warm bounce, saturated primaries, soft pastel accent; use color as animation pipeline evidence: cel palettes, painted backgrounds, limited UPA flats, stop-motion set tones, digital compositing, or comic-offset halftone, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Vibrant but harmonious color, warm bounce light, saturated accents, soft blue fill.',
       lighting_and_shadow:
-        'Handle light through Cinematic 3D, global illumination, soft bounce, ambient occlusion; make light follow the animation method through cel shadows, painted depth, puppet set lighting, CG bounce, flat graphic value, or rotoscope edge shimmer, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Soft key with warm bounce and subsurface glow in skin, gentle rim light separating silhouettes.',
       texture_and_material:
-        'Render Stylized realism, clay-model surface, fabric nap, polished plastic, soft subsurface; surface detail should reveal acetate grain, paper line, clay/fabric puppet material, vector fills, oil smears, pixel cells, or CG shader smoothness when named, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Rounded bevels, slightly soft fabrics, subtle surface imperfections that make materials tactile.',
       camera_and_composition:
-        'Structure the image through Soft exaggeration, rounded forms, expressive proportions, appeal-focused silhouette; compose through animation readability, pose clarity, painted-plate rhythm, squash arcs, graphic staging, multiplane depth, or frame-by-frame motion logic, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Heartwarming, fun, sincere, emotionally readable; derive mood from feature warmth, rubber-hose chaos, stop-motion tactility, graphic modernism, anime atmosphere, or experimental motion craft, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Cinematic framing at character eye level, clear silhouettes, shallow depth of field.',
+      atmosphere_and_mood: 'Warm and funny, emotional storytelling with lovable imperfection.',
       rendering_and_quality:
-        'Finish with High budget, cute, emotionally precise, technically invisible; finish with production-faithful animation surfaces, readable shapes, controlled artifacts, and no exact studio-character copy or random cartoon face substitution, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Polished feature-film CG; original characters only, no studio designs.',
       key_features:
-        'Stylized family-animation CG, Pixar-era warmth, emotional precision, lovable imperfection; Soft shadows, appeal silhouette, rounded bevels, warm bounce light, material storytelling; Vibrant, subsurface, warm bounce, saturated primaries, soft pastel accent; Stylized realism, clay-model surface, fabric nap, polished plastic, soft subsurface; Soft exaggeration, rounded forms, expressive proportions, appeal-focused silhouette',
+        'rounded appealing CG shapes; warm bounce light; subsurface skin glow; expressive faces; shallow cinematic depth',
       creative_brief:
-        "Apply Pixar Style Family Feature CG as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Stylized family-animation CG, Pixar-era warmth, emotional precision, lovable imperfection, Soft shadows, appeal silhouette, rounded bevels, warm bounce light, material storytelling, Stylized realism, clay-model surface, fabric nap, polished plastic, soft subsurface without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Family Feature CG Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP02-034',
-    name: 'Laika Moody Stop-Motion',
+    name: 'Moody Miniature Stop-Motion',
+    displayName: 'Moody Miniature Stop-Motion',
+    styleAnchors: ['Moody Miniature Stop-Motion', 'Laika Moody Stop-Motion'],
     category: '3. Animation Styles',
     negativePrompt:
-      'smooth 3d, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact studio character copy, random cartoon face, unreadable motion smear, fake subtitles',
+      'exact studio character copy, franchise likeness, mascot likeness, celebrity likeness, readable fake text, adding a studio-like cast the prompt did not ask for, smooth 3d, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random cartoon face, unreadable motion smear, fake subtitles, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Laika Moody Stop-Motion acts as a transferable cinematic-media router: start from Moody miniature stop-motion fantasy, Laika-style handcrafted dread, tactile miniature craft, replacement animation, Fingerprint texture, miniature scale, seam detail, practical studio shadow, tactile imperfection and animation-production system built from motion-era drawing, cel paint, CG polish, stop-motion material, vector layers, camera multiplane, and shape acting, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Moody miniature stop-motion: handcrafted puppets with replacement faces animated frame by frame in dark, detailed miniature sets.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Laika Moody Stop-Motion: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 3. Animation Styles cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while translating it through cel shapes, squash, puppet material, vector rigs, CG feature polish, rotoscoped trace, or painted-frame continuity, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Texture rich, muted jewel, deep violet, moss green, rust orange; use color as animation pipeline evidence: cel palettes, painted backgrounds, limited UPA flats, stop-motion set tones, digital compositing, or comic-offset halftone, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Keep the prompt subject, action and setting and redraw them in this animation medium; a non-character subject keeps its identity and no studio-like cast or mascot is added.',
+      color_and_tone: 'Muted teal, plum and ochre with warm practical lights; deep shadows.',
       lighting_and_shadow:
-        'Handle light through Miniature studio, practical dollhouse, keyed drama, soft fill; make light follow the animation method through cel shadows, painted depth, puppet set lighting, CG bounce, flat graphic value, or rotoscope edge shimmer, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Tiny practical lamps and hard studio spots at miniature scale, crisp shadows, pools of warm light.',
       texture_and_material:
-        'Render Fabric fiber, 3D print striation, wool knit, silicone, painted resin, real hair texture; surface detail should reveal acetate grain, paper line, clay/fabric puppet material, vector fills, oil smears, pixel cells, or CG shader smoothness when named, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Fingerprints in clay, knitted and felted costumes, carved wood, visible seams on faces.',
       camera_and_composition:
-        'Structure the image through Replacement seams, expression-swap geometry, incremental sculpt, miniature scale cues; compose through animation readability, pose clarity, painted-plate rhythm, squash arcs, graphic staging, multiplane depth, or frame-by-frame motion logic, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Dark, handmade, gothic whimsy, craft unease; derive mood from feature warmth, rubber-hose chaos, stop-motion tactility, graphic modernism, anime atmosphere, or experimental motion craft, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Tactile, creepy, frame-by-frame labor, physical imperfection; finish with production-faithful animation surfaces, readable shapes, controlled artifacts, and no exact studio-character copy or random cartoon face substitution, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Shallow macro depth of field that reveals the miniature scale, low angles among the sets.',
+      atmosphere_and_mood: 'Eerie and tender, handmade dread with a beating heart.',
+      rendering_and_quality: 'Physical stop-motion look with slight frame jitter; not smooth CG.',
       key_features:
-        'Moody miniature stop-motion fantasy, Laika-style handcrafted dread, tactile miniature craft, replacement animation; Fingerprint texture, miniature scale, seam detail, practical studio shadow, tactile imperfection; Texture rich, muted jewel, deep violet, moss green, rust orange; Fabric fiber, 3D print striation, wool knit, silicone, painted resin, real hair texture; Replacement seams, expression-swap geometry, incremental sculpt, miniature scale cues',
+        'handcrafted puppets; replacement-face seams; miniature practical lights; macro shallow focus; tactile fabrics',
       creative_brief:
-        "Apply Laika Moody Stop-Motion as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Moody miniature stop-motion fantasy, Laika-style handcrafted dread, tactile miniature craft, replacement animation, Fingerprint texture, miniature scale, seam detail, practical studio shadow, tactile imperfection, Fabric fiber, 3D print striation, wool knit, silicone, painted resin, real hair texture without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Moody Miniature Stop-Motion as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP02-035',
-    name: 'Looney Tunes Chuck Jones Golden Age Cartoon Frenzy',
+    name: 'Golden Age Slapstick Cartoon',
+    displayName: 'Golden Age Slapstick Cartoon',
+    styleAnchors: [
+      'Golden Age Slapstick Cartoon',
+      'Looney Tunes Chuck Jones Golden Age Cartoon Frenzy',
+    ],
     category: '3. Animation Styles',
     negativePrompt:
-      'realistic, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact studio character copy, random cartoon face, unreadable motion smear, fake subtitles',
+      'exact studio character copy, franchise likeness, mascot likeness, celebrity likeness, readable fake text, adding a studio-like cast the prompt did not ask for, realistic, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random cartoon face, unreadable motion smear, fake subtitles, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Looney Tunes Chuck Jones Golden Age Cartoon Frenzy acts as a transferable cinematic-media router: start from Elastic golden-age studio cartoon, Chuck Jones timing, painted depth field, graphic slapstick energy, Abstract painted backdrop, held smear, squash-stretch deformation, crisp cel silhouette and animation-production system built from motion-era drawing, cel paint, CG polish, stop-motion material, vector layers, camera multiplane, and shape acting, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Golden-age slapstick cartoon: elastic cel characters with extreme squash-and-stretch and smear frames against stylized painted backgrounds.',
       subject_treatment:
-        'Transform any prompt subject through Thick black, adapt the requested subject through animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era finish while preserving prompt identity; preserve the requested subject while translating it through cel shapes, squash, puppet material, vector rigs, CG feature polish, rotoscoped trace, or painted-frame continuity, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting and redraw them in this animation medium; a non-character subject keeps its identity and no studio-like cast or mascot is added.',
       color_and_tone:
-        'Build color with Flat, primary pop, canary yellow, ACME red, sky cel blue; use color as animation pipeline evidence: cel palettes, painted backgrounds, limited UPA flats, stop-motion set tones, digital compositing, or comic-offset halftone, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Flat cel color, no shading, graphic clarity; make light follow the animation method through cel shadows, painted depth, puppet set lighting, CG bounce, flat graphic value, or rotoscope edge shimmer, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Bright saturated character colors against softer painted desert, sky or interior backgrounds.',
+      lighting_and_shadow: 'Flat cel color with minimal shadow; backgrounds carry painted light.',
       texture_and_material:
-        'Render Cel, painted acetate, glossy finish, gouache depth field; surface detail should reveal acetate grain, paper line, clay/fabric puppet material, vector fills, oil smears, pixel cells, or CG shader smoothness when named, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Crisp ink outlines, smear and multiple-limb frames, dust clouds and impact stars.',
       camera_and_composition:
-        'Structure the image through Extreme squash/stretch, full-body deformation, eye-pop take; compose through animation readability, pose clarity, painted-plate rhythm, squash arcs, graphic staging, multiplane depth, or frame-by-frame motion logic, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Funny, anarchic, elastic, gag-driven, mood carried by Looney Tunes Chuck Jones Golden Age Cartoon Frenzy media process, signal pressure, and visual restraint; derive mood from feature warmth, rubber-hose chaos, stop-motion tactility, graphic modernism, anime atmosphere, or experimental motion craft, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Strong horizontal chase staging, poses held at the peak of a take, graphic backgrounds with abstract shapes.',
+      atmosphere_and_mood: 'Frantic and comic, timing sharpened into a single perfect gag.',
       rendering_and_quality:
-        'Finish with Zany, fast, breakneck timing, held-smear blur; finish with production-faithful animation surfaces, readable shapes, controlled artifacts, and no exact studio-character copy or random cartoon face substitution, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Classic theatrical cartoon finish; original characters only, no studio mascots.',
       key_features:
-        'Elastic golden-age studio cartoon, Chuck Jones timing, painted depth field, graphic slapstick energy; Abstract painted backdrop, held smear, squash-stretch deformation, crisp cel silhouette; Flat, primary pop, canary yellow, ACME red, sky cel blue; Cel, painted acetate, glossy finish, gouache depth field; Extreme squash/stretch, full-body deformation, eye-pop take',
+        'squash-and-stretch; smear frames; painted stylized backgrounds; held take poses; dust-cloud impacts',
       creative_brief:
-        "Apply Looney Tunes Chuck Jones Golden Age Cartoon Frenzy as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Elastic golden-age studio cartoon, Chuck Jones timing, painted depth field, graphic slapstick energy, Abstract painted backdrop, held smear, squash-stretch deformation, crisp cel silhouette, Cel, painted acetate, glossy finish, gouache depth field without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Golden Age Slapstick Cartoon as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP02-036',
-    name: 'Fleischer Rubber Hose Cartoon',
+    name: '1930s Rubber Hose Cartoon',
+    displayName: '1930s Rubber Hose Cartoon',
+    styleAnchors: ['1930s Rubber Hose Cartoon', 'Fleischer Rubber Hose Cartoon'],
     category: '3. Animation Styles',
     negativePrompt:
-      'color, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact studio character copy, random cartoon face, unreadable motion smear, fake subtitles',
+      'exact studio character copy, franchise likeness, mascot likeness, celebrity likeness, readable fake text, adding a studio-like cast the prompt did not ask for, color, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random cartoon face, unreadable motion smear, fake subtitles, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Fleischer Rubber Hose Cartoon acts as a transferable cinematic-media router: start from 1930s monochrome bounce-cartoon, Fleischer-era rubber-hose surrealism, pie-cut graphic language, looping rhythm, Rubber-hose curves, pie-cut graphics, bouncing syncopation, surreal morph logic and animation-production system built from motion-era drawing, cel paint, CG polish, stop-motion material, vector layers, camera multiplane, and shape acting, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        '1930s rubber-hose cartoon: black-and-white animation with boneless bouncing limbs, pie-cut eyes and everything alive and dancing to the beat.',
       subject_treatment:
-        'Transform any prompt subject through Thick, bouncy, adapt the requested subject through animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era finish while preserving prompt identity; preserve the requested subject while translating it through cel shapes, squash, puppet material, vector rigs, CG feature polish, rotoscoped trace, or painted-frame continuity, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Black and White, charcoal fill, cream paper, no grey; use color as animation pipeline evidence: cel palettes, painted backgrounds, limited UPA flats, stop-motion set tones, digital compositing, or comic-offset halftone, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Flat monochrome, stark graphic contrast; make light follow the animation method through cel shadows, painted depth, puppet set lighting, CG bounce, flat graphic value, or rotoscope edge shimmer, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Keep the prompt subject, action and setting and redraw them in this animation medium; a non-character subject keeps its identity and no studio-like cast or mascot is added.',
+      color_and_tone: 'Black, white and grey on aged cream, high contrast, slight film flicker.',
+      lighting_and_shadow: 'No rendered light; flat fills and occasional grey tone.',
       texture_and_material:
-        'Render Film grain, nitrate flicker, hand-painted cel; surface detail should reveal acetate grain, paper line, clay/fabric puppet material, vector fills, oil smears, pixel cells, or CG shader smoothness when named, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Thick uniform ink lines, white gloves, film grain, scratches and gate weave.',
       camera_and_composition:
-        'Structure the image through Noodle limbs, rubber-hose arms, boneless contortion; compose through animation readability, pose clarity, painted-plate rhythm, squash arcs, graphic staging, multiplane depth, or frame-by-frame motion logic, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Happy, weird, vaudeville rhythm, early-talkie energy; derive mood from feature warmth, rubber-hose chaos, stop-motion tactility, graphic modernism, anime atmosphere, or experimental motion craft, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Characters bouncing in rhythm, objects with faces joining the dance, simple stage-like settings.',
+      atmosphere_and_mood: 'Bouncy and surreal, a cheerful world with a strange undertone.',
       rendering_and_quality:
-        'Finish with Retro, bouncy, surreal rubber-band motion, hypnotic loop; finish with production-faithful animation surfaces, readable shapes, controlled artifacts, and no exact studio-character copy or random cartoon face substitution, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Vintage 1930s print texture; original characters, no mouse or cat mascots.',
       key_features:
-        '1930s monochrome bounce-cartoon, Fleischer-era rubber-hose surrealism, pie-cut graphic language, looping rhythm; Rubber-hose curves, pie-cut graphics, bouncing syncopation, surreal morph logic; Black and White, charcoal fill, cream paper, no grey; Film grain, nitrate flicker, hand-painted cel; Noodle limbs, rubber-hose arms, boneless contortion',
+        'boneless rubber-hose limbs; pie-cut eyes; black and white; objects with faces dancing; film flicker',
       creative_brief:
-        "Apply Fleischer Rubber Hose Cartoon as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through 1930s monochrome bounce-cartoon, Fleischer-era rubber-hose surrealism, pie-cut graphic language, looping rhythm, Rubber-hose curves, pie-cut graphics, bouncing syncopation, surreal morph logic, Film grain, nitrate flicker, hand-painted cel without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 1930s Rubber Hose Cartoon as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,115 +185,112 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Anime (90s Aesthetic)',
     category: '3. Animation Styles',
     negativePrompt:
-      'modern digital, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact studio character copy, random cartoon face, unreadable motion smear, fake subtitles',
+      'exact studio character copy, franchise likeness, mascot likeness, celebrity likeness, readable fake text, adding a studio-like cast the prompt did not ask for, modern digital anime, modern digital, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random cartoon face, unreadable motion smear, fake subtitles, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Anime (90s Aesthetic) acts as a transferable cinematic-media router: start from Pastel-neon retro anime blend, Sailor Moon/Eva aesthetic, cel-painted nostalgia, VHS broadcast grain, Cel bloom, sparkle overlay, speed-line energy, VHS crawl, painted acetate texture and animation-production system built from motion-era drawing, cel paint, CG polish, stop-motion material, vector layers, camera multiplane, and shape acting, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        '90s TV anime: hand-painted cel animation with pastel-and-neon color, sparkle overlays and the soft grain of a broadcast tape.',
       subject_treatment:
-        'Transform any prompt subject through Cel outline, adapt the requested subject through animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era finish while preserving prompt identity; preserve the requested subject while translating it through cel shapes, squash, puppet material, vector rigs, CG feature polish, rotoscoped trace, or painted-frame continuity, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting and redraw them in this animation medium; a non-character subject keeps its identity and no studio-like cast or mascot is added.',
       color_and_tone:
-        'Build color with Pastel/Neon, bubblegum pink, electric cyan, lavender, coral; use color as animation pipeline evidence: cel palettes, painted backgrounds, limited UPA flats, stop-motion set tones, digital compositing, or comic-offset halftone, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Pastel pinks, lilacs and sky blues with neon accents, soft airbrushed gradients.',
       lighting_and_shadow:
-        'Handle light through Hard shadows, cel-shading contrast, dramatic underlight; make light follow the animation method through cel shadows, painted depth, puppet set lighting, CG bounce, flat graphic value, or rotoscope edge shimmer, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render Film grain, cel texture, painted acetate, analogue warmth; surface detail should reveal acetate grain, paper line, clay/fabric puppet material, vector fills, oil smears, pixel cells, or CG shader smoothness when named, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Two-tone cel shading with airbrushed highlights, backlit rim glows, sunset skies.',
+      texture_and_material: 'Cel paint texture, sparkle and speed-line overlays, VHS softness.',
       camera_and_composition:
-        'Structure the image through Reflective highlight shapes, expression exaggeration, angular cel simplification, volume accents; compose through animation readability, pose clarity, painted-plate rhythm, squash arcs, graphic staging, multiplane depth, or frame-by-frame motion logic, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Nostalgic, aesthetic, shojo romance, mechanized form language melancholy, 90s optimism; derive mood from feature warmth, rubber-hose chaos, stop-motion tactility, graphic modernism, anime atmosphere, or experimental motion craft, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Dramatic diagonal poses, hair and ribbons flowing, painted skies behind.',
+      atmosphere_and_mood: 'Nostalgic and romantic, sparkle and melancholy in one frame.',
       rendering_and_quality:
-        'Finish with Retro anime, cel-painted, VHS broadcast, handcrafted depth; finish with production-faithful animation surfaces, readable shapes, controlled artifacts, and no exact studio-character copy or random cartoon face substitution, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Broadcast cel look with slight grain; original characters, no franchise designs.',
       key_features:
-        'Pastel-neon retro anime blend, Sailor Moon/Eva aesthetic, cel-painted nostalgia, VHS broadcast grain; Cel bloom, sparkle overlay, speed-line energy, VHS crawl, painted acetate texture; Pastel/Neon, bubblegum pink, electric cyan, lavender, coral; Film grain, cel texture, painted acetate, analogue warmth; Reflective highlight shapes, expression exaggeration, angular cel simplification, volume accents',
+        'pastel-neon cel palette; airbrushed highlights; sparkle overlays; flowing hair; VHS softness',
       creative_brief:
-        "Apply Anime (90s Aesthetic) as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Pastel-neon retro anime blend, Sailor Moon/Eva aesthetic, cel-painted nostalgia, VHS broadcast grain, Cel bloom, sparkle overlay, speed-line energy, VHS crawl, painted acetate texture, Film grain, cel texture, painted acetate, analogue warmth without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Anime (90s Aesthetic) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP02-038',
-    name: 'Spider-Verse Comic Offset 3D',
+    name: 'Comic Offset 3D Animation',
+    displayName: 'Comic Offset 3D Animation',
+    styleAnchors: ['Comic Offset 3D Animation', 'Spider-Verse Comic Offset 3D'],
     category: '3. Animation Styles',
     negativePrompt:
-      'smooth 3d, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact studio character copy, random cartoon face, unreadable motion smear, fake subtitles',
+      'exact studio character copy, franchise likeness, mascot likeness, celebrity likeness, readable fake text, adding a studio-like cast the prompt did not ask for, smooth 3d gradients, smooth 3d, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random cartoon face, unreadable motion smear, fake subtitles, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Spider-Verse Comic Offset 3D acts as a transferable cinematic-media router: start from Comic book 3D, Spider-Verse Comic Offset 3D animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era finish, Low framerate feel, halftone breakup, registration offset, panel rhythm, motion lines and animation-production system built from motion-era drawing, cel paint, CG polish, stop-motion material, vector layers, camera multiplane, and shape acting, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Comic offset 3D animation: 3D characters and cities finished like a printed comic page, with halftone dots, ink lines and off-register color.',
       subject_treatment:
-        'Transform any prompt subject through Ink lines on 3D, adapt the requested subject through animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era finish while preserving prompt identity; preserve the requested subject while translating it through cel shapes, squash, puppet material, vector rigs, CG feature polish, rotoscoped trace, or painted-frame continuity, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting and redraw them in this animation medium; a non-character subject keeps its identity and no studio-like cast or mascot is added.',
       color_and_tone:
-        'Build color with Halftone dots, CMYK offset, Ben-Day texture, pop art primaries; use color as animation pipeline evidence: cel palettes, painted backgrounds, limited UPA flats, stop-motion set tones, digital compositing, or comic-offset halftone, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Saturated CMYK color, magenta and cyan misregistration fringes, bold black shadows.',
       lighting_and_shadow:
-        'Handle light through Pop art, flat graphic, comic panel direction; make light follow the animation method through cel shadows, painted depth, puppet set lighting, CG bounce, flat graphic value, or rotoscope edge shimmer, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Shadows built from hatching and halftone dots instead of smooth gradients.',
       texture_and_material:
-        'Render Paper grain, ink bleed, newsprint, screen-print texture; surface detail should reveal acetate grain, paper line, clay/fabric puppet material, vector fills, oil smears, pixel cells, or CG shader smoothness when named, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Ben-Day dots, printed ink lines drawn over 3D forms, paper grain and slight print shift.',
       camera_and_composition:
-        'Structure the image through Chromatic aberration, misregistration, color fringe, RGB split; compose through animation readability, pose clarity, painted-plate rhythm, squash arcs, graphic staging, multiplane depth, or frame-by-frame motion logic, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Energetic, modern, comic-panel momentum, multiverse chaos; derive mood from feature warmth, rubber-hose chaos, stop-motion tactility, graphic modernism, anime atmosphere, or experimental motion craft, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Dynamic low angles and extreme perspective, stepped low-frame-rate motion, action-panel framing.',
+      atmosphere_and_mood: 'Kinetic and graphic, a comic page coming alive.',
       rendering_and_quality:
-        'Finish with Dynamic, glitch, stylized keyframe, stepped animation, frame-drop stutter; finish with production-faithful animation surfaces, readable shapes, controlled artifacts, and no exact studio-character copy or random cartoon face substitution, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Hybrid 3D and print finish; original characters, no superhero franchise designs.',
       key_features:
-        'Comic book 3D, Spider-Verse Comic Offset 3D animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era finish; Low framerate feel, halftone breakup, registration offset, panel rhythm, motion lines; Halftone dots, CMYK offset, Ben-Day texture, pop art primaries; Paper grain, ink bleed, newsprint, screen-print texture; Chromatic aberration, misregistration, color fringe, RGB split',
+        'halftone dot shading; off-register color fringes; ink lines over 3D; stepped frame rate; extreme perspective',
       creative_brief:
-        "Apply Spider-Verse Comic Offset 3D as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Comic book 3D, Spider-Verse Comic Offset 3D animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era finish, Low framerate feel, halftone breakup, registration offset, panel rhythm, motion lines, Paper grain, ink bleed, newsprint, screen-print texture without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Comic Offset 3D Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP02-039',
-    name: 'UPA Style (Mid-Century)',
+    name: 'Mid-Century Modernist Animation',
+    displayName: 'Mid-Century Modernist Animation',
+    styleAnchors: ['Mid-Century Modernist Animation', 'UPA Style (Mid-Century)'],
     category: '3. Animation Styles',
     negativePrompt:
-      'realistic, 3d, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact studio character copy, random cartoon face, unreadable motion smear, fake subtitles',
+      'exact studio character copy, franchise likeness, mascot likeness, celebrity likeness, readable fake text, adding a studio-like cast the prompt did not ask for, realistic, 3d, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random cartoon face, unreadable motion smear, fake subtitles, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'UPA Style (Mid-Century) acts as a transferable cinematic-media router: start from 50s minimalism, UPA mid-century animation design with flat geometric reduction, jazz-era negative space, angular silhouettes, and limited modernist color, Flatness, limited animation, graphic silhouette and animation-production system built from motion-era drawing, cel paint, CG polish, stop-motion material, vector layers, camera multiplane, and shape acting, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Mid-century modernist animation: 1950s design-led cartoons with flat geometric shapes, angular silhouettes and limited movement.',
       subject_treatment:
-        'Transform any prompt subject through Graphic, graphic shape simplification, crisp abstract contour, and minimal animation-ready construction that keeps the prompt readable; preserve the requested subject while translating it through cel shapes, squash, puppet material, vector rigs, CG feature polish, rotoscoped trace, or painted-frame continuity, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Offset blocks, teal, mustard, brick red, charcoal, cream; use color as animation pipeline evidence: cel palettes, painted backgrounds, limited UPA flats, stop-motion set tones, digital compositing, or comic-offset halftone, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Flat graphic, negative space contrast; make light follow the animation method through cel shadows, painted depth, puppet set lighting, CG bounce, flat graphic value, or rotoscope edge shimmer, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render Paper, matte, poster-print, graphic-design surface; surface detail should reveal acetate grain, paper line, clay/fabric puppet material, vector fills, oil smears, pixel cells, or CG shader smoothness when named, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Keep the prompt subject, action and setting and redraw them in this animation medium; a non-character subject keeps its identity and no studio-like cast or mascot is added.',
+      color_and_tone: 'Limited palette of mustard, teal, coral and black on off-white, flat fills.',
+      lighting_and_shadow: 'No modeled light; shadows as flat geometric shapes.',
+      texture_and_material: 'Dry brush textures, printed-paper grain, thin expressive lines.',
       camera_and_composition:
-        'Structure the image through Abstract shapes, geometric reduction, angular stylization; compose through animation readability, pose clarity, painted-plate rhythm, squash arcs, graphic staging, multiplane depth, or frame-by-frame motion logic, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Jazz, modern, mid-century optimism, cool intellectual; derive mood from feature warmth, rubber-hose chaos, stop-motion tactility, graphic modernism, anime atmosphere, or experimental motion craft, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Design, flat, modernist composition, elegant simplicity; finish with production-faithful animation surfaces, readable shapes, controlled artifacts, and no exact studio-character copy or random cartoon face substitution, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Flat staging with lots of negative space, characters as angular silhouettes, abstract background shapes.',
+      atmosphere_and_mood: 'Witty and cool, jazz-age rhythm in a few elegant shapes.',
+      rendering_and_quality: 'Mid-century graphic design finish; not realistic or 3D.',
       key_features:
-        '50s minimalism, UPA mid-century animation design with flat geometric reduction, jazz-era negative space, angular silhouettes, and limited modernist color; Flatness, limited animation, graphic silhouette; Offset blocks, teal, mustard, brick red, charcoal, cream; Paper, matte, poster-print, graphic-design surface; Abstract shapes, geometric reduction, angular stylization',
+        'flat geometric reduction; angular silhouettes; limited mustard-teal palette; negative space; dry brush texture',
       creative_brief:
-        "Apply UPA Style (Mid-Century) as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through 50s minimalism, UPA mid-century animation design with flat geometric reduction, jazz-era negative space, angular silhouettes, and limited modernist color, Flatness, limited animation, graphic silhouette, Paper, matte, poster-print, graphic-design surface without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mid-Century Modernist Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP02-040',
-    name: 'South Park Style',
+    name: 'Construction Paper Cutout Cartoon',
+    displayName: 'Construction Paper Cutout Cartoon',
+    styleAnchors: ['Construction Paper Cutout Cartoon', 'South Park Style'],
     category: '3. Animation Styles',
     negativePrompt:
-      'drawn, 3d, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact studio character copy, random cartoon face, unreadable motion smear, fake subtitles',
+      'exact studio character copy, franchise likeness, mascot likeness, celebrity likeness, readable fake text, adding a studio-like cast the prompt did not ask for, drawn line art, 3d, drawn, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random cartoon face, unreadable motion smear, fake subtitles, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'South Park Style acts as a transferable cinematic-media router: start from Construction paper, South Park Style animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era finish, Cutout layers, paper edge, flat drop shadow, simple geometric construction, limited joints and animation-production system built from motion-era drawing, cel paint, CG polish, stop-motion material, vector layers, camera multiplane, and shape acting, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Construction-paper cutout cartoon: flat pieces of colored paper cut with scissors and moved frame by frame, casting small drop shadows.',
       subject_treatment:
-        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under South Park Style: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 3. Animation Styles cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while translating it through cel shapes, squash, puppet material, vector rigs, CG feature polish, rotoscoped trace, or painted-frame continuity, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting and redraw them in this animation medium; a non-character subject keeps its identity and no studio-like cast or mascot is added.',
       color_and_tone:
-        'Build color with Flat paper, primary crayon, construction-paper tones, snow white; use color as animation pipeline evidence: cel palettes, painted backgrounds, limited UPA flats, stop-motion set tones, digital compositing, or comic-offset halftone, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Flat construction-paper colors — primary red, blue, green, brown — slightly faded.',
       lighting_and_shadow:
-        'Handle light through Drop shadow, paper-cut separation, simple depth; make light follow the animation method through cel shadows, painted depth, puppet set lighting, CG bounce, flat graphic value, or rotoscope edge shimmer, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Flat overhead light with small soft drop shadows under each paper layer.',
       texture_and_material:
-        'Render Paper texture, cutout edge, construction-paper grain; surface detail should reveal acetate grain, paper line, clay/fabric puppet material, vector fills, oil smears, pixel cells, or CG shader smoothness when named, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Visible paper fibers, uneven scissor-cut edges and slightly curled corners.',
       camera_and_composition:
-        'Structure the image through Waddle, paper-doll walk cycle, limited joint movement; compose through animation readability, pose clarity, painted-plate rhythm, squash arcs, graphic staging, multiplane depth, or frame-by-frame motion logic, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Satire, simple, blunt, intentionally crude; derive mood from feature warmth, rubber-hose chaos, stop-motion tactility, graphic modernism, anime atmosphere, or experimental motion craft, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Flat frontal staging, characters in profile or facing forward, simple layered backgrounds.',
+      atmosphere_and_mood: 'Crude and cheeky, homemade simplicity with comic timing.',
       rendering_and_quality:
-        'Finish with Crude, funny, intentionally cheap, deadpan delivery; finish with production-faithful animation surfaces, readable shapes, controlled artifacts, and no exact studio-character copy or random cartoon face substitution, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        "Tactile paper-cutout finish; original figure designs, not any existing show's characters.",
       key_features:
-        'Construction paper, South Park Style animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era finish; Cutout layers, paper edge, flat drop shadow, simple geometric construction, limited joints; Flat paper, primary crayon, construction-paper tones, snow white; Paper texture, cutout edge, construction-paper grain; Waddle, paper-doll walk cycle, limited joint movement',
+        'flat construction-paper pieces; scissor edges; small drop shadows; frontal staging; paper fibers',
       creative_brief:
-        "Apply South Park Style as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Construction paper, South Park Style animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era finish, Cutout layers, paper edge, flat drop shadow, simple geometric construction, limited joints, Paper texture, cutout edge, construction-paper grain without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Construction Paper Cutout Cartoon as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -298,28 +298,23 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rotoscoping',
     category: '3. Animation Styles',
     negativePrompt:
-      'smooth, 3d, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact studio character copy, random cartoon face, unreadable motion smear, fake subtitles',
+      'exact studio character copy, franchise likeness, mascot likeness, celebrity likeness, readable fake text, adding a studio-like cast the prompt did not ask for, smooth 3d, bicycle, smooth, 3d, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random cartoon face, unreadable motion smear, fake subtitles, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Rotoscoping acts as a transferable cinematic-media router: start from Posterized traced live action, A Scanner Darkly style, wobbly reality, digital uncanny valley, Jitter, boil, line tremble, frame-to-frame instability and animation-production system built from motion-era drawing, cel paint, CG polish, stop-motion material, vector layers, camera multiplane, and shape acting, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Rotoscoped animation: live-action footage traced frame by frame into posterized flat shapes with trembling outlines.',
       subject_treatment:
-        'Transform any prompt subject through Wobbly trace, adapt the requested subject through animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era finish while preserving prompt identity; preserve the requested subject while translating it through cel shapes, squash, puppet material, vector rigs, CG feature polish, rotoscoped trace, or painted-frame continuity, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Flat blocks, posterized palette, unnatural local color, comic-book reduction; use color as animation pipeline evidence: cel palettes, painted backgrounds, limited UPA flats, stop-motion set tones, digital compositing, or comic-offset halftone, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Realistic (traced), live-action source, practical on-set; make light follow the animation method through cel shadows, painted depth, puppet set lighting, CG bounce, flat graphic value, or rotoscope edge shimmer, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render Digital paint, vector fill, smooth gradient zone; surface detail should reveal acetate grain, paper line, clay/fabric puppet material, vector fills, oil smears, pixel cells, or CG shader smoothness when named, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Keep the prompt subject, action and setting and redraw them in this animation medium; a non-character subject keeps its identity and no studio-like cast or mascot is added.',
+      color_and_tone: 'Posterized color blocks with slightly unnatural hues, few gradients.',
+      lighting_and_shadow: 'Real footage lighting reduced to two or three flat shadow bands.',
+      texture_and_material: 'Line boil, wobbling contours and shifting fills from frame to frame.',
       camera_and_composition:
-        'Structure the image through Floating shapes, paint-drift, unstable outline, image swim; compose through animation readability, pose clarity, painted-plate rhythm, squash arcs, graphic staging, multiplane depth, or frame-by-frame motion logic, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Surreal, trippy, unstable, psychological unease; derive mood from feature warmth, rubber-hose chaos, stop-motion tactility, graphic modernism, anime atmosphere, or experimental motion craft, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Uncanny, dream, floating-reality disconnect, liquid edge; finish with production-faithful animation surfaces, readable shapes, controlled artifacts, and no exact studio-character copy or random cartoon face substitution, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Live-action camera framing and realistic movement, traced into drawing.',
+      atmosphere_and_mood: 'Uncanny and dreamy, as if reality itself were slightly unstable.',
+      rendering_and_quality: 'Traced-over realism with flat shapes; not smooth 3D or clean vector.',
       key_features:
-        'Posterized traced live action, A Scanner Darkly style, wobbly reality, digital uncanny valley; Jitter, boil, line tremble, frame-to-frame instability; Flat blocks, posterized palette, unnatural local color, comic-book reduction; Digital paint, vector fill, smooth gradient zone; Floating shapes, paint-drift, unstable outline, image swim',
+        'traced live-action motion; posterized color blocks; line boil; flat shadow bands; uncanny realism',
       creative_brief:
-        "Apply Rotoscoping as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Posterized traced live action, A Scanner Darkly style, wobbly reality, digital uncanny valley, Jitter, boil, line tremble, frame-to-frame instability, Digital paint, vector fill, smooth gradient zone without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rotoscoping as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -327,28 +322,23 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Papercraft Animation',
     category: '3. Animation Styles',
     negativePrompt:
-      'drawn, 3d, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact studio character copy, random cartoon face, unreadable motion smear, fake subtitles',
+      'exact studio character copy, franchise likeness, mascot likeness, celebrity likeness, readable fake text, adding a studio-like cast the prompt did not ask for, drawn line art, smooth 3d, drawn, 3d, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random cartoon face, unreadable motion smear, fake subtitles, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Papercraft Animation acts as a transferable cinematic-media router: start from Folded paper animation, Papercraft Animation animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era finish, Folds, crease shadow, paper thickness, fibrous edge, handmade pulp and animation-production system built from motion-era drawing, cel paint, CG polish, stop-motion material, vector layers, camera multiplane, and shape acting, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Papercraft animation: folded and cut paper models animated in stop motion, with creases, thickness and soft paper shadows.',
       subject_treatment:
-        'Transform any prompt subject through Fold lines, adapt the requested subject through animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era finish while preserving prompt identity; preserve the requested subject while translating it through cel shapes, squash, puppet material, vector rigs, CG feature polish, rotoscoped trace, or painted-frame continuity, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Origami paper, washi tones, muted coral, indigo, rice white; use color as animation pipeline evidence: cel palettes, painted backgrounds, limited UPA flats, stop-motion set tones, digital compositing, or comic-offset halftone, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Keep the prompt subject, action and setting and redraw them in this animation medium; a non-character subject keeps its identity and no studio-like cast or mascot is added.',
+      color_and_tone: 'Soft matte paper colors, pastel and earthy tones, white paper highlights.',
       lighting_and_shadow:
-        'Handle light through Soft studio, gentle fill, paper-diffuse bounce; make light follow the animation method through cel shadows, painted depth, puppet set lighting, CG bounce, flat graphic value, or rotoscope edge shimmer, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render Paper grain, fold crease, fibrous edge, handmade pulp; surface detail should reveal acetate grain, paper line, clay/fabric puppet material, vector fills, oil smears, pixel cells, or CG shader smoothness when named, keeping artifact scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Low poly (paper), geometric faceting, crease-driven planes; compose through animation readability, pose clarity, painted-plate rhythm, squash arcs, graphic staging, multiplane depth, or frame-by-frame motion logic, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Handmade, precise, storybook craft, gentle wonder; derive mood from feature warmth, rubber-hose chaos, stop-motion tactility, graphic modernism, anime atmosphere, or experimental motion craft, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Delicate, craft, handmade patience, precision folding; finish with production-faithful animation surfaces, readable shapes, controlled artifacts, and no exact studio-character copy or random cartoon face substitution, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Soft directional light revealing folds, crease shadows and paper translucency.',
+      texture_and_material: 'Folds, creases, visible paper thickness and slight fiber texture.',
+      camera_and_composition: 'Miniature diorama framing with shallow depth of field.',
+      atmosphere_and_mood: 'Delicate and whimsical, a world folded by hand.',
+      rendering_and_quality: 'Tactile papercraft finish; not flat drawing and not smooth CG.',
       key_features:
-        'Folded paper animation, Papercraft Animation animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era finish; Folds, crease shadow, paper thickness, fibrous edge, handmade pulp; Origami paper, washi tones, muted coral, indigo, rice white; Paper grain, fold crease, fibrous edge, handmade pulp; Low poly (paper), geometric faceting, crease-driven planes',
+        'folded paper models; crease shadows; visible paper thickness; soft directional light; diorama depth',
       creative_brief:
-        "Apply Papercraft Animation as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Folded paper animation, Papercraft Animation animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era finish, Folds, crease shadow, paper thickness, fibrous edge, handmade pulp, Paper grain, fold crease, fibrous edge, handmade pulp without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Papercraft Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -356,28 +346,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Flash Animation (2000s)',
     category: '3. Animation Styles',
     negativePrompt:
-      'textured, soft, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact studio character copy, random cartoon face, unreadable motion smear, fake subtitles',
+      'exact studio character copy, franchise likeness, mascot likeness, celebrity likeness, readable fake text, adding a studio-like cast the prompt did not ask for, textured, soft painterly, soft, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random cartoon face, unreadable motion smear, fake subtitles, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Flash Animation (2000s) acts as a transferable cinematic-media router: start from Flash-era web animation, Newgrounds style, vector crude, 2000s internet, tweened rebellion, Symbol reuse, tween trails, vector morphs, radial gradients, hard anti-aliased edges and animation-production system built from motion-era drawing, cel paint, CG polish, stop-motion material, vector layers, camera multiplane, and shape acting, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        '2000s Flash web animation: vector characters built from reusable symbols, tweened motion, radial gradients and crisp anti-aliased edges.',
       subject_treatment:
-        'Transform any prompt subject through Thick vector, adapt the requested subject through animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era finish while preserving prompt identity; preserve the requested subject while translating it through cel shapes, squash, puppet material, vector rigs, CG feature polish, rotoscoped trace, or painted-frame continuity, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Web safe colors, 216 palette, lime green, hot pink, electric blue; use color as animation pipeline evidence: cel palettes, painted backgrounds, limited UPA flats, stop-motion set tones, digital compositing, or comic-offset halftone, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Keep the prompt subject, action and setting and redraw them in this animation medium; a non-character subject keeps its identity and no studio-like cast or mascot is added.',
+      color_and_tone: 'Bright web colors, glossy radial gradients, flat backgrounds.',
       lighting_and_shadow:
-        'Handle light through Gradient tool, radial fill, linear ramp, flat vector; make light follow the animation method through cel shadows, painted depth, puppet set lighting, CG bounce, flat graphic value, or rotoscope edge shimmer, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render Vector smooth, anti-aliased edge, Flash player crisp; surface detail should reveal acetate grain, paper line, clay/fabric puppet material, vector fills, oil smears, pixel cells, or CG shader smoothness when named, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Gradient-filled highlights and simple flat shadow shapes under each symbol.',
+      texture_and_material: 'Clean vector edges, visible symbol reuse, tween motion trails.',
       camera_and_composition:
-        'Structure the image through Tweening, linear interpolation, shape morph, motion guide; compose through animation readability, pose clarity, painted-plate rhythm, squash arcs, graphic staging, multiplane depth, or frame-by-frame motion logic, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Nostalgic, simple, dial-up rebellion, forum culture; derive mood from feature warmth, rubber-hose chaos, stop-motion tactility, graphic modernism, anime atmosphere, or experimental motion craft, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Internet, crude, preload-bar aesthetic, tween-driven motion; finish with production-faithful animation surfaces, readable shapes, controlled artifacts, and no exact studio-character copy or random cartoon face substitution, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Simple side-on staging, bold silhouettes, exaggerated tweened poses.',
+      atmosphere_and_mood: 'Scrappy and irreverent, full of early internet energy and jokes.',
+      rendering_and_quality: 'Vector web-animation look; no textures, no painterly softness.',
       key_features:
-        'Flash-era web animation, Newgrounds style, vector crude, 2000s internet, tweened rebellion; Symbol reuse, tween trails, vector morphs, radial gradients, hard anti-aliased edges; Web safe colors, 216 palette, lime green, hot pink, electric blue; Vector smooth, anti-aliased edge, Flash player crisp; Tweening, linear interpolation, shape morph, motion guide',
+        'vector symbols; tweened motion trails; radial gradients; crisp anti-aliased edges; side-on staging',
       creative_brief:
-        "Apply Flash Animation (2000s) as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Flash-era web animation, Newgrounds style, vector crude, 2000s internet, tweened rebellion, Symbol reuse, tween trails, vector morphs, radial gradients, hard anti-aliased edges, Vector smooth, anti-aliased edge, Flash player crisp without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Flash Animation (2000s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -385,28 +371,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Oil Paint Animation',
     category: '3. Animation Styles',
     negativePrompt:
-      'digital, sharp, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact studio character copy, random cartoon face, unreadable motion smear, fake subtitles',
+      'exact studio character copy, franchise likeness, mascot likeness, celebrity likeness, readable fake text, adding a studio-like cast the prompt did not ask for, digital filter, copied famous painting, digital, sharp, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random cartoon face, unreadable motion smear, fake subtitles, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Oil Paint Animation acts as a transferable cinematic-media router: start from Moving oil-paint canvas, Loving Vincent style, impasto frame by frame, brushstroke life, sheer artistic devotion, Brush direction, visible stroke, canvas weave, palette texture and animation-production system built from motion-era drawing, cel paint, CG polish, stop-motion material, vector layers, camera multiplane, and shape acting, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Oil-paint animation: every frame painted in thick oils on canvas, so brushstrokes move and swirl from frame to frame.',
       subject_treatment:
-        'Transform any prompt subject through Brush strokes, adapt the requested subject through animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era finish while preserving prompt identity; preserve the requested subject while translating it through cel shapes, squash, puppet material, vector rigs, CG feature polish, rotoscoped trace, or painted-frame continuity, keeping the requested identity, silhouette, action, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Impressionist, sunlit yellow, cobalt shadow, viridian green, violet dusk; use color as animation pipeline evidence: cel palettes, painted backgrounds, limited UPA flats, stop-motion set tones, digital compositing, or comic-offset halftone, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
-      lighting_and_shadow:
-        'Handle light through Painted light, brush-rendered glow, canvas-luminosity; make light follow the animation method through cel shadows, painted depth, puppet set lighting, CG bounce, flat graphic value, or rotoscope edge shimmer, so exposure and shadow structure support the media process without overwriting the requested content.',
+        'Keep the prompt subject, action and setting and redraw them in this animation medium; a non-character subject keeps its identity and no studio-like cast or mascot is added.',
+      color_and_tone: 'Rich oil color, strong complementary contrasts, blended impasto highlights.',
+      lighting_and_shadow: 'Painted light and shadow with directional strokes following form.',
       texture_and_material:
-        'Render Thick impasto, palette-knife ridges, bristle strokes, layered scumble; surface detail should reveal acetate grain, paper line, clay/fabric puppet material, vector fills, oil smears, pixel cells, or CG shader smoothness when named, keeping artifact scale coherent and avoiding noisy filler texture.',
-      camera_and_composition:
-        'Structure the image through Swirling brush current, paint-flow drift, animated impasto displacement; compose through animation readability, pose clarity, painted-plate rhythm, squash arcs, graphic staging, multiplane depth, or frame-by-frame motion logic, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Artistic, emotional, painterly devotion, melancholic beauty; derive mood from feature warmth, rubber-hose chaos, stop-motion tactility, graphic modernism, anime atmosphere, or experimental motion craft, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+        'Visible canvas weave, thick impasto ridges, strokes shifting between frames.',
+      camera_and_composition: 'Film framing painted over, with brush direction following motion.',
+      atmosphere_and_mood: 'Vivid and devoted, a painting that breathes.',
       rendering_and_quality:
-        'Finish with Masterpiece, moving art, frame-by-frame painting, gallery-grade; finish with production-faithful animation surfaces, readable shapes, controlled artifacts, and no exact studio-character copy or random cartoon face substitution, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Hand-painted frame look; not a digital oil filter; no famous paintings copied.',
       key_features:
-        'Moving oil-paint canvas, Loving Vincent style, impasto frame by frame, brushstroke life, sheer artistic devotion; Brush direction, visible stroke, canvas weave, palette texture; Impressionist, sunlit yellow, cobalt shadow, viridian green, violet dusk; Thick impasto, palette-knife ridges, bristle strokes, layered scumble; Swirling brush current, paint-flow drift, animated impasto displacement',
+        'painted frame by frame; swirling brush direction; impasto ridges; canvas weave; complementary color',
       creative_brief:
-        "Apply Oil Paint Animation as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Moving oil-paint canvas, Loving Vincent style, impasto frame by frame, brushstroke life, sheer artistic devotion, Brush direction, visible stroke, canvas weave, palette texture, Thick impasto, palette-knife ridges, bristle strokes, layered scumble without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Oil Paint Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -414,28 +396,205 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Pixel Art Animation',
     category: '3. Animation Styles',
     negativePrompt:
-      'vector, smooth, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact studio character copy, random cartoon face, unreadable motion smear, fake subtitles',
+      'exact studio character copy, franchise likeness, mascot likeness, celebrity likeness, readable fake text, adding a studio-like cast the prompt did not ask for, vector, smooth gradients, smooth, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, logo clutter, generic stock footage, uncontrolled noise, random cartoon face, unreadable motion smear, fake subtitles, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Pixel Art Animation acts as a transferable cinematic-media router: start from 16-bit pixel animation, Pixel Art Animation animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era finish, Grid lock, pixel-perfect edges, indexed palette, dither ramps, CRT phosphor and animation-production system built from motion-era drawing, cel paint, CG polish, stop-motion material, vector layers, camera multiplane, and shape acting, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+        'Pixel-art animation: 16-bit sprites and tiles with a limited indexed palette, animated in a few hand-placed frames.',
       subject_treatment:
-        'Transform any prompt subject through Pixel outline, adapt the requested subject through animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era finish while preserving prompt identity; preserve the requested subject while translating it through cel shapes, squash, puppet material, vector rigs, CG feature polish, rotoscoped trace, or painted-frame continuity, keeping the requested identity, silhouette, action, object function, or setting legible.',
+        'Keep the prompt subject, action and setting and redraw them in this animation medium; a non-character subject keeps its identity and no studio-like cast or mascot is added.',
       color_and_tone:
-        'Build color with Limited palette, 16-color, SNES spec, indexed shades, CRT phosphor; use color as animation pipeline evidence: cel palettes, painted backgrounds, limited UPA flats, stop-motion set tones, digital compositing, or comic-offset halftone, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+        'Indexed palette of 16–32 colors, stepped shading ramps, crisp dark outlines.',
       lighting_and_shadow:
-        'Handle light through Dithered, checkerboard blend, 50% pattern, sprite highlight; make light follow the animation method through cel shadows, painted depth, puppet set lighting, CG bounce, flat graphic value, or rotoscope edge shimmer, so exposure and shadow structure support the media process without overwriting the requested content.',
-      texture_and_material:
-        'Render Pixel grid, visible aliasing, blocky charm, scanline overlay; surface detail should reveal acetate grain, paper line, clay/fabric puppet material, vector fills, oil smears, pixel cells, or CG shader smoothness when named, keeping artifact scale coherent and avoiding noisy filler texture.',
+        'Light built from stepped color ramps and dithering; flickering light as palette cycling.',
+      texture_and_material: 'Pixel-perfect edges on a strict grid, dithering for gradients.',
       camera_and_composition:
-        'Structure the image through Sprite squash, 8-direction limitation, walk-cycle snap; compose through animation readability, pose clarity, painted-plate rhythm, squash arcs, graphic staging, multiplane depth, or frame-by-frame motion logic, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Nostalgic, game, 16-bit constraint, handcrafted sprite logic; derive mood from feature warmth, rubber-hose chaos, stop-motion tactility, graphic modernism, anime atmosphere, or experimental motion craft, letting the media style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Retro game, sprite-sheet precision, tile-map aesthetic; finish with production-faithful animation surfaces, readable shapes, controlled artifacts, and no exact studio-character copy or random cartoon face substitution, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Side-view or three-quarter game scene, sprite centered, tiled background.',
+      atmosphere_and_mood: 'Nostalgic and playful, a game world alive in few pixels.',
+      rendering_and_quality: 'Clean pixel grid with no anti-aliasing or blur.',
       key_features:
-        '16-bit pixel animation, Pixel Art Animation animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era finish; Grid lock, pixel-perfect edges, indexed palette, dither ramps, CRT phosphor; Limited palette, 16-color, SNES spec, indexed shades, CRT phosphor; Pixel grid, visible aliasing, blocky charm, scanline overlay; Sprite squash, 8-direction limitation, walk-cycle snap',
+        'indexed palette; pixel grid; stepped shading ramps; dithering; sprite animation frames',
       creative_brief:
-        "Apply Pixel Art Animation as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through 16-bit pixel animation, Pixel Art Animation animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era finish, Grid lock, pixel-perfect edges, indexed palette, dither ramps, CRT phosphor, Pixel grid, visible aliasing, blocky charm, scanline overlay without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pixel Art Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP02-134',
+    name: 'Shadow-Puppet Silhouette Animation',
+    displayName: 'Shadow-Puppet Silhouette Animation',
+    styleAnchors: [
+      'Shadow-Puppet Silhouette Animation',
+      'silhouette cutout animation',
+      'jointed black paper figures',
+    ],
+    category: '3. Animation Styles',
+    domain: 'silhouette cutout animation',
+    negativePrompt:
+      'exact studio character copy, franchise likeness, mascot likeness, celebrity likeness, readable fake text, adding a studio-like cast the prompt did not ask for, interior detail on figures, photographic backlight, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Silhouette cutout animation: jointed black paper figures cut with fine lace-like detail, animated on a backlit glass table against glowing color.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting and redraw them in this animation medium; a non-character subject keeps its identity and no studio-like cast or mascot is added.',
+      color_and_tone:
+        'Pure black silhouettes over glowing gradients of orange, rose, teal or violet.',
+      lighting_and_shadow:
+        'Backlight only; figures are solid black with no interior detail except cut-outs.',
+      texture_and_material:
+        'Intricate scissor-cut lace, hinged joints, delicate filigree trees and ornaments.',
+      camera_and_composition:
+        'Strict side profile, figures on a ground line, layered silhouette scenery.',
+      atmosphere_and_mood: 'Fairy-tale and graceful, drama told through outline alone.',
+      rendering_and_quality:
+        'Crisp cut-paper edges on a luminous ground; not a photographic silhouette.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Shadow-Puppet Silhouette Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'jointed black paper figures; backlit color gradient; lace-cut detail; strict profiles; layered silhouette scenery',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-135',
+    name: 'Pinscreen Animation',
+    displayName: 'Pinscreen Animation',
+    styleAnchors: ['Pinscreen Animation', 'pinscreen shadow animation', 'pin-shadow tones'],
+    category: '3. Animation Styles',
+    domain: 'pinscreen shadow animation',
+    negativePrompt:
+      'exact studio character copy, franchise likeness, mascot likeness, celebrity likeness, readable fake text, adding a studio-like cast the prompt did not ask for, hard outlines, color, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pinscreen animation: an image formed by thousands of pins pushed to different depths and lit from the side, so their shadows create soft grey tones.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting and redraw them in this animation medium; a non-character subject keeps its identity and no studio-like cast or mascot is added.',
+      color_and_tone:
+        'Monochrome silver greys from white to deep black, velvety and engraving-like.',
+      lighting_and_shadow:
+        'Oblique light casting pin shadows; darkness where pins stand out, light where they sink.',
+      texture_and_material: 'Fine stippled grain of pin tips, soft transitions like mezzotint.',
+      camera_and_composition:
+        'Frontal framing of the screen, forms emerging and dissolving into darkness.',
+      atmosphere_and_mood: 'Haunting and dreamlike, memories surfacing out of shadow.',
+      rendering_and_quality:
+        'Pinscreen tonality with no hard outlines; not a photograph or drawing.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pinscreen Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'pin-shadow tones; velvety grey stipple; forms emerging from darkness; no outlines; oblique light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-136',
+    name: 'Charcoal Erasure Animation',
+    displayName: 'Charcoal Erasure Animation',
+    styleAnchors: [
+      'Charcoal Erasure Animation',
+      'charcoal erase-and-redraw animation',
+      'ghost traces of earlier frames',
+    ],
+    category: '3. Animation Styles',
+    domain: 'charcoal erase-and-redraw animation',
+    negativePrompt:
+      'exact studio character copy, franchise likeness, mascot likeness, celebrity likeness, readable fake text, adding a studio-like cast the prompt did not ask for, clean line art, color fills, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Charcoal erasure animation: a single charcoal drawing altered, erased and redrawn under the camera, leaving ghost traces of every earlier frame.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting and redraw them in this animation medium; a non-character subject keeps its identity and no studio-like cast or mascot is added.',
+      color_and_tone:
+        'Charcoal black and smudged greys on off-white paper, occasional pale blue pastel accent.',
+      lighting_and_shadow: 'Drawn tone only; light made by erasing into the charcoal.',
+      texture_and_material: 'Smudges, eraser streaks, ghosted previous positions, paper tooth.',
+      camera_and_composition:
+        'Fixed paper under the camera, moving elements trailing their own erased ghosts.',
+      atmosphere_and_mood: 'Melancholic and restless, memory that never quite disappears.',
+      rendering_and_quality: 'Real charcoal on paper look; not a clean pencil sketch.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Charcoal Erasure Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'ghost traces of earlier frames; eraser streaks; smudged charcoal; paper tooth; fixed drawing under camera',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-137',
+    name: '70s Limited TV Animation',
+    displayName: '70s Limited TV Animation',
+    styleAnchors: [
+      '70s Limited TV Animation',
+      'limited television animation',
+      'held cels with moving mouths',
+    ],
+    category: '3. Animation Styles',
+    domain: 'limited television animation',
+    negativePrompt:
+      'exact studio character copy, franchise likeness, mascot likeness, celebrity likeness, readable fake text, adding a studio-like cast the prompt did not ask for, fluid full animation, 3d, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        '70s limited TV animation: budget television cartoons with held cels, only mouths and eyes moving, thick outlines and painted backgrounds that repeat in pans.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting and redraw them in this animation medium; a non-character subject keeps its identity and no studio-like cast or mascot is added.',
+      color_and_tone:
+        'Flat saturated cel colors, muted painted backgrounds in greens, browns and dusk blues.',
+      lighting_and_shadow: 'No cel shading; night shown by blue-tinted backgrounds.',
+      texture_and_material:
+        'Thick uniform outlines, visible cel dust, slightly different color on moving parts.',
+      camera_and_composition:
+        'Characters in a row facing camera or in profile, a repeating painted background behind a chase.',
+      atmosphere_and_mood: 'Goofy and cozy, Saturday-morning adventure on a tight budget.',
+      rendering_and_quality:
+        'Broadcast cel look with slight dust; original characters, no existing show designs.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 70s Limited TV Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'held cels with moving mouths; thick outlines; repeating painted background; flat saturated color; cel dust',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP02-138',
+    name: 'Direct-on-Film Scratch Animation',
+    displayName: 'Direct-on-Film Scratch Animation',
+    styleAnchors: [
+      'Direct-on-Film Scratch Animation',
+      'cameraless film animation',
+      'scratched white lines on black',
+    ],
+    category: '3. Animation Styles',
+    domain: 'cameraless film animation',
+    negativePrompt:
+      'exact studio character copy, franchise likeness, mascot likeness, celebrity likeness, readable fake text, adding a studio-like cast the prompt did not ask for, sprocket holes, digital vector, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Direct-on-film animation: images scratched, painted and inked straight onto celluloid without a camera, so every frame vibrates with hand-made marks.',
+      subject_treatment:
+        'Keep the prompt subject, action and setting and redraw them in this animation medium; a non-character subject keeps its identity and no studio-like cast or mascot is added.',
+      color_and_tone:
+        'White scratches on black emulsion, or translucent dyes in saturated red, yellow and blue.',
+      lighting_and_shadow:
+        'Projector light through the film; bright lines glowing out of the dark.',
+      texture_and_material: 'Jittering scratched lines, dye blotches, dust and emulsion flakes.',
+      camera_and_composition:
+        'Simple bold figures centered on the strip, energetic abstract marks around them.',
+      atmosphere_and_mood: 'Raw and musical, marks dancing to an unheard rhythm.',
+      rendering_and_quality:
+        'Handmade celluloid texture; no sprocket holes drawn and no digital vector.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Direct-on-Film Scratch Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'scratched white lines on black; translucent dyes; jittering hand marks; projector glow; bold simple figures',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -33,3 +33,4 @@ Audited 2026-09-25 from the contact sheet (23 primaries + 1 variant) and full ma
 ## Pending (local session)
 
 - Regenerate all cards; the old primaries of each pair are near-identical and should be replaced first.
+- Old names are kept as a second `styleAnchors` entry for search; `styleAnchors` does not reach the provider prompt or the card prompt.

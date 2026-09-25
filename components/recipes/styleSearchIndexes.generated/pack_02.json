@@ -3,7 +3,7 @@
     {
       "id": "pack_02",
       "name": "Cinematic & Media",
-      "presetCount": 133
+      "presetCount": 138
     }
   ],
   "presets": [
@@ -118,7 +118,7 @@
     {
       "id": "SP02-010",
       "name": "70s Kung Fu Studio Epic",
-      "styleAnchors": ["70s Kung Fu Studio Epic"],
+      "styleAnchors": ["70s Kung Fu Studio Epic", "Kung Fu Studio Epic (Shaw Brothers)"],
       "ref": "pack_02/SP02-010.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -126,7 +126,7 @@
       "categoryName": "1. Film Genres",
       "tags": ["cinematic-and-media", "film-genres"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-010 70s kung fu studio epic 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
+      "searchableText": "sp02-010 70s kung fu studio epic kung fu studio epic (shaw brothers) 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
     },
     {
       "id": "SP02-011",
@@ -143,7 +143,7 @@
     {
       "id": "SP02-012",
       "name": "Symmetrical Storybook Cinema",
-      "styleAnchors": ["Symmetrical Storybook Cinema"],
+      "styleAnchors": ["Symmetrical Storybook Cinema", "Wes Anderson Symmetrical Storybook Cinema"],
       "ref": "pack_02/SP02-012.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -151,7 +151,7 @@
       "categoryName": "1. Film Genres",
       "tags": ["cinematic-and-media", "film-genres"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-012 symmetrical storybook cinema 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
+      "searchableText": "sp02-012 symmetrical storybook cinema wes anderson symmetrical storybook cinema 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
     },
     {
       "id": "SP02-013",
@@ -316,7 +316,7 @@
     {
       "id": "SP02-021",
       "name": "Fisheye Glam Music Video",
-      "styleAnchors": ["Fisheye Glam Music Video"],
+      "styleAnchors": ["Fisheye Glam Music Video", "Hype Williams Fisheye Glam Video"],
       "ref": "pack_02/SP02-021.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -324,7 +324,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-021 fisheye glam music video 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-021 fisheye glam music video hype williams fisheye glam video 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-022",
@@ -401,7 +401,7 @@
     {
       "id": "SP02-028",
       "name": "90s Grunge Music Video",
-      "styleAnchors": ["90s Grunge Music Video"],
+      "styleAnchors": ["90s Grunge Music Video", "MTV 90s Grunge Broadcast"],
       "ref": "pack_02/SP02-028.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -409,7 +409,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-028 90s grunge music video 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-028 90s grunge music video mtv 90s grunge broadcast 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-029",
@@ -438,7 +438,10 @@
     {
       "id": "SP02-115",
       "name": "Marker-Edge Improvised Sitcom Cartoon",
-      "styleAnchors": ["Marker-Edge Improvised Sitcom Cartoon"],
+      "styleAnchors": [
+        "Marker-Edge Improvised Sitcom Cartoon",
+        "Home Movies - Marker-Edge Improvised Sitcom"
+      ],
       "ref": "pack_02/SP02-115.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -446,7 +449,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-115 marker-edge improvised sitcom cartoon 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-115 marker-edge improvised sitcom cartoon home movies - marker-edge improvised sitcom 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-121",
@@ -546,7 +549,11 @@
     },
     {
       "id": "SP02-031",
-      "name": "Classic Disney Golden Age Cel Feature",
+      "name": "Golden Age Multiplane Cel Feature",
+      "styleAnchors": [
+        "Golden Age Multiplane Cel Feature",
+        "Classic Disney Golden Age Cel Feature"
+      ],
       "ref": "pack_02/SP02-031.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -554,11 +561,12 @@
       "categoryName": "3. Animation Styles",
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-031 classic disney golden age cel feature 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+      "searchableText": "sp02-031 golden age multiplane cel feature classic disney golden age cel feature 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
     },
     {
       "id": "SP02-032",
-      "name": "Studio Ghibli Painterly Nature Anime",
+      "name": "Painterly Nature Anime Feature",
+      "styleAnchors": ["Painterly Nature Anime Feature", "Studio Ghibli Painterly Nature Anime"],
       "ref": "pack_02/SP02-032.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -566,11 +574,12 @@
       "categoryName": "3. Animation Styles",
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-032 studio ghibli painterly nature anime 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+      "searchableText": "sp02-032 painterly nature anime feature studio ghibli painterly nature anime 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
     },
     {
       "id": "SP02-033",
-      "name": "Pixar Style Family Feature CG",
+      "name": "Family Feature CG Animation",
+      "styleAnchors": ["Family Feature CG Animation", "Pixar Style Family Feature CG"],
       "ref": "pack_02/SP02-033.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -578,11 +587,12 @@
       "categoryName": "3. Animation Styles",
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-033 pixar style family feature cg 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+      "searchableText": "sp02-033 family feature cg animation pixar style family feature cg 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
     },
     {
       "id": "SP02-034",
-      "name": "Laika Moody Stop-Motion",
+      "name": "Moody Miniature Stop-Motion",
+      "styleAnchors": ["Moody Miniature Stop-Motion", "Laika Moody Stop-Motion"],
       "ref": "pack_02/SP02-034.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -590,11 +600,15 @@
       "categoryName": "3. Animation Styles",
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-034 laika moody stop-motion 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+      "searchableText": "sp02-034 moody miniature stop-motion laika moody stop-motion 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
     },
     {
       "id": "SP02-035",
-      "name": "Looney Tunes Chuck Jones Golden Age Cartoon Frenzy",
+      "name": "Golden Age Slapstick Cartoon",
+      "styleAnchors": [
+        "Golden Age Slapstick Cartoon",
+        "Looney Tunes Chuck Jones Golden Age Cartoon Frenzy"
+      ],
       "ref": "pack_02/SP02-035.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -602,11 +616,12 @@
       "categoryName": "3. Animation Styles",
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-035 looney tunes chuck jones golden age cartoon frenzy 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+      "searchableText": "sp02-035 golden age slapstick cartoon looney tunes chuck jones golden age cartoon frenzy 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
     },
     {
       "id": "SP02-036",
-      "name": "Fleischer Rubber Hose Cartoon",
+      "name": "1930s Rubber Hose Cartoon",
+      "styleAnchors": ["1930s Rubber Hose Cartoon", "Fleischer Rubber Hose Cartoon"],
       "ref": "pack_02/SP02-036.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -614,7 +629,7 @@
       "categoryName": "3. Animation Styles",
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-036 fleischer rubber hose cartoon 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+      "searchableText": "sp02-036 1930s rubber hose cartoon fleischer rubber hose cartoon 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
     },
     {
       "id": "SP02-037",
@@ -630,7 +645,8 @@
     },
     {
       "id": "SP02-038",
-      "name": "Spider-Verse Comic Offset 3D",
+      "name": "Comic Offset 3D Animation",
+      "styleAnchors": ["Comic Offset 3D Animation", "Spider-Verse Comic Offset 3D"],
       "ref": "pack_02/SP02-038.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -638,11 +654,12 @@
       "categoryName": "3. Animation Styles",
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-038 spider-verse comic offset 3d 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+      "searchableText": "sp02-038 comic offset 3d animation spider-verse comic offset 3d 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
     },
     {
       "id": "SP02-039",
-      "name": "UPA Style (Mid-Century)",
+      "name": "Mid-Century Modernist Animation",
+      "styleAnchors": ["Mid-Century Modernist Animation", "UPA Style (Mid-Century)"],
       "ref": "pack_02/SP02-039.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -650,11 +667,12 @@
       "categoryName": "3. Animation Styles",
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-039 upa style (mid-century) 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+      "searchableText": "sp02-039 mid-century modernist animation upa style (mid-century) 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
     },
     {
       "id": "SP02-040",
-      "name": "South Park Style",
+      "name": "Construction Paper Cutout Cartoon",
+      "styleAnchors": ["Construction Paper Cutout Cartoon", "South Park Style"],
       "ref": "pack_02/SP02-040.yaml",
       "packId": "pack_02",
       "packName": "Cinematic & Media",
@@ -662,7 +680,7 @@
       "categoryName": "3. Animation Styles",
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-040 south park style 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+      "searchableText": "sp02-040 construction paper cutout cartoon south park style 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
     },
     {
       "id": "SP02-041",
@@ -723,6 +741,92 @@
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp02-045 pixel art animation 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+    },
+    {
+      "id": "SP02-134",
+      "name": "Shadow-Puppet Silhouette Animation",
+      "styleAnchors": [
+        "Shadow-Puppet Silhouette Animation",
+        "silhouette cutout animation",
+        "jointed black paper figures"
+      ],
+      "ref": "pack_02/SP02-134.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "animation-styles",
+      "categoryName": "3. Animation Styles",
+      "domain": "silhouette cutout animation",
+      "tags": ["cinematic-and-media", "animation-styles", "silhouette-cutout-animation"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-134 shadow-puppet silhouette animation silhouette cutout animation jointed black paper figures 3. animation styles animation craft silhouette cutout animation pack_02 cinematic & media animation-styles cinematic-and-media animation-styles silhouette-cutout-animation"
+    },
+    {
+      "id": "SP02-135",
+      "name": "Pinscreen Animation",
+      "styleAnchors": ["Pinscreen Animation", "pinscreen shadow animation", "pin-shadow tones"],
+      "ref": "pack_02/SP02-135.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "animation-styles",
+      "categoryName": "3. Animation Styles",
+      "domain": "pinscreen shadow animation",
+      "tags": ["cinematic-and-media", "animation-styles", "pinscreen-shadow-animation"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-135 pinscreen animation pinscreen shadow animation pin-shadow tones 3. animation styles animation craft pinscreen shadow animation pack_02 cinematic & media animation-styles cinematic-and-media animation-styles pinscreen-shadow-animation"
+    },
+    {
+      "id": "SP02-136",
+      "name": "Charcoal Erasure Animation",
+      "styleAnchors": [
+        "Charcoal Erasure Animation",
+        "charcoal erase-and-redraw animation",
+        "ghost traces of earlier frames"
+      ],
+      "ref": "pack_02/SP02-136.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "animation-styles",
+      "categoryName": "3. Animation Styles",
+      "domain": "charcoal erase-and-redraw animation",
+      "tags": ["cinematic-and-media", "animation-styles", "charcoal-erase-and-redraw-animation"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-136 charcoal erasure animation charcoal erase-and-redraw animation ghost traces of earlier frames 3. animation styles animation craft charcoal erase-and-redraw animation pack_02 cinematic & media animation-styles cinematic-and-media animation-styles charcoal-erase-and-redraw-animation"
+    },
+    {
+      "id": "SP02-137",
+      "name": "70s Limited TV Animation",
+      "styleAnchors": [
+        "70s Limited TV Animation",
+        "limited television animation",
+        "held cels with moving mouths"
+      ],
+      "ref": "pack_02/SP02-137.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "animation-styles",
+      "categoryName": "3. Animation Styles",
+      "domain": "limited television animation",
+      "tags": ["cinematic-and-media", "animation-styles", "limited-television-animation"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-137 70s limited tv animation limited television animation held cels with moving mouths 3. animation styles animation craft limited television animation pack_02 cinematic & media animation-styles cinematic-and-media animation-styles limited-television-animation"
+    },
+    {
+      "id": "SP02-138",
+      "name": "Direct-on-Film Scratch Animation",
+      "styleAnchors": [
+        "Direct-on-Film Scratch Animation",
+        "cameraless film animation",
+        "scratched white lines on black"
+      ],
+      "ref": "pack_02/SP02-138.yaml",
+      "packId": "pack_02",
+      "packName": "Cinematic & Media",
+      "categoryId": "animation-styles",
+      "categoryName": "3. Animation Styles",
+      "domain": "cameraless film animation",
+      "tags": ["cinematic-and-media", "animation-styles", "cameraless-film-animation"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp02-138 direct-on-film scratch animation cameraless film animation scratched white lines on black 3. animation styles animation craft cameraless film animation pack_02 cinematic & media animation-styles cinematic-and-media animation-styles cameraless-film-animation"
     },
     {
       "id": "SP02-046",
@@ -1625,5 +1729,5 @@
       "searchableText": "sp02-099 punk zine cut-and-paste 8. hand-drawn and diy media diy drawing surfaces pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media"
     }
   ],
-  "totalPresetCount": 133
+  "totalPresetCount": 138
 }

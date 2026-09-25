@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP02-134
+packId: pack_02
+name: Shadow-Puppet Silhouette Animation
+styleAnchors:
+  - Shadow-Puppet Silhouette Animation
+  - silhouette cutout animation
+  - jointed black paper figures
+displayName: Shadow-Puppet Silhouette Animation
+category: 3. Animation Styles
+domain: silhouette cutout animation
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - animation-styles
+  - silhouette
+  - cutout-animation
+  - shadow-puppet
+visualDna:
+  aesthetic: 'Silhouette cutout animation: jointed black paper figures cut with fine lace-like detail, animated on a backlit glass table against glowing color.'
+  subject_treatment: Keep the prompt subject, action and setting and redraw them in this animation medium; a non-character subject keeps its identity and no studio-like cast or mascot is added.
+  color_and_tone: Pure black silhouettes over glowing gradients of orange, rose, teal or violet.
+  lighting_and_shadow: Backlight only; figures are solid black with no interior detail except cut-outs.
+  texture_and_material: Intricate scissor-cut lace, hinged joints, delicate filigree trees and ornaments.
+  camera_and_composition: Strict side profile, figures on a ground line, layered silhouette scenery.
+  atmosphere_and_mood: Fairy-tale and graceful, drama told through outline alone.
+  rendering_and_quality: Crisp cut-paper edges on a luminous ground; not a photographic silhouette.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Shadow-Puppet Silhouette Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: jointed black paper figures; backlit color gradient; lace-cut detail; strict profiles; layered silhouette scenery
+avoidRules:
+  - exact studio character copy
+  - franchise likeness
+  - mascot likeness
+  - celebrity likeness
+  - readable fake text
+  - adding a studio-like cast the prompt did not ask for
+  - interior detail on figures
+  - photographic backlight
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: exact studio character copy, franchise likeness, mascot likeness, celebrity likeness, readable fake text, adding a studio-like cast the prompt did not ask for, interior detail on figures, photographic backlight, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: animation-styles
+  categoryName: 3. Animation Styles
+  tags:
+    - cinematic-and-media
+    - animation-styles
+    - silhouette
+    - cutout-animation
+    - shadow-puppet
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: silhouette cutout animation

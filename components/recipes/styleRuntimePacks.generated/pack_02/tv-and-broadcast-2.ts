@@ -116,7 +116,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP02-021',
     name: 'Fisheye Glam Music Video',
     displayName: 'Fisheye Glam Music Video',
-    styleAnchors: ['Fisheye Glam Music Video'],
+    styleAnchors: ['Fisheye Glam Music Video', 'Hype Williams Fisheye Glam Video'],
     category: '2. TV And Broadcast',
     negativePrompt:
       'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, boring framing, rectilinear lens, boring, normal, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
@@ -305,7 +305,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP02-028',
     name: '90s Grunge Music Video',
     displayName: '90s Grunge Music Video',
-    styleAnchors: ['90s Grunge Music Video'],
+    styleAnchors: ['90s Grunge Music Video', 'MTV 90s Grunge Broadcast'],
     category: '2. TV And Broadcast',
     negativePrompt:
       'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, clean polish, channel logo, clean, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
@@ -386,7 +386,10 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP02-115',
     name: 'Marker-Edge Improvised Sitcom Cartoon',
     displayName: 'Marker-Edge Improvised Sitcom Cartoon',
-    styleAnchors: ['Marker-Edge Improvised Sitcom Cartoon'],
+    styleAnchors: [
+      'Marker-Edge Improvised Sitcom Cartoon',
+      'Home Movies - Marker-Edge Improvised Sitcom',
+    ],
     category: '2. TV And Broadcast',
     negativePrompt:
       'readable fake text, readable ticker, logo clutter, real presenter likeness, celebrity likeness, franchise likeness, adding a presenter or host the prompt did not ask for, digital slick vector, 3d, realistic, digital, HD, smooth, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, watermark, generic stock footage, uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',

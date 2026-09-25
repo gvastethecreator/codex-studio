@@ -58,6 +58,7 @@ Pack order, skipping pack_12 and pack_17: pack_01 → pack_24, then pack_12, pac
 | pack_01::7. Technical And Specialist Imaging | done  | done | done   | 8 (SP01-133…140)  | pending (local)     | see git log        |
 | pack_02::1. Film Genres                      | done  | done | done   | 4 (SP02-130…133)  | pending (local)     | see git log        |
 | pack_02::2. TV And Broadcast                 | done  | done | done   | 0 (already 23)    | pending (local)     | see git log        |
+| pack_02::3. Animation Styles                 | done  | done | done   | 5 (SP02-134…138)  | pending (local)     | see git log        |
 
 ## Open risks
 

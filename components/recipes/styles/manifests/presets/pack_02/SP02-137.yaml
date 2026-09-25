@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP02-137
+packId: pack_02
+name: 70s Limited TV Animation
+styleAnchors:
+  - 70s Limited TV Animation
+  - limited television animation
+  - held cels with moving mouths
+displayName: 70s Limited TV Animation
+category: 3. Animation Styles
+domain: limited television animation
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - cinematic-and-media
+  - animation-styles
+  - limited-animation
+  - saturday-morning
+  - cel
+visualDna:
+  aesthetic: '70s limited TV animation: budget television cartoons with held cels, only mouths and eyes moving, thick outlines and painted backgrounds that repeat in pans.'
+  subject_treatment: Keep the prompt subject, action and setting and redraw them in this animation medium; a non-character subject keeps its identity and no studio-like cast or mascot is added.
+  color_and_tone: Flat saturated cel colors, muted painted backgrounds in greens, browns and dusk blues.
+  lighting_and_shadow: No cel shading; night shown by blue-tinted backgrounds.
+  texture_and_material: Thick uniform outlines, visible cel dust, slightly different color on moving parts.
+  camera_and_composition: Characters in a row facing camera or in profile, a repeating painted background behind a chase.
+  atmosphere_and_mood: Goofy and cozy, Saturday-morning adventure on a tight budget.
+  rendering_and_quality: Broadcast cel look with slight dust; original characters, no existing show designs.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 70s Limited TV Animation as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: held cels with moving mouths; thick outlines; repeating painted background; flat saturated color; cel dust
+avoidRules:
+  - exact studio character copy
+  - franchise likeness
+  - mascot likeness
+  - celebrity likeness
+  - readable fake text
+  - adding a studio-like cast the prompt did not ask for
+  - fluid full animation
+  - 3d
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: exact studio character copy, franchise likeness, mascot likeness, celebrity likeness, readable fake text, adding a studio-like cast the prompt did not ask for, fluid full animation, 3d, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_02
+  packName: Cinematic & Media
+  categoryId: animation-styles
+  categoryName: 3. Animation Styles
+  tags:
+    - cinematic-and-media
+    - animation-styles
+    - limited-animation
+    - saturday-morning
+    - cel
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: limited television animation

@@ -7,7 +7,7 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP01-047',
     name: 'Zone System Landscape',
     displayName: 'Zone System Landscape',
-    styleAnchors: ['Zone System Landscape'],
+    styleAnchors: ['Zone System Landscape', 'Landscape (Ansel Adams)'],
     category: '6. Nature And Wildlife',
     negativePrompt:
       'zoo snapshot, oversaturated postcard, plastic foliage, substituting a landscape or animal the prompt did not ask for, color, flat grey tones, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake wildlife pose, friendly nature cliche, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',

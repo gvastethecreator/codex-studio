@@ -1415,7 +1415,7 @@
     {
       "id": "SP01-047",
       "name": "Zone System Landscape",
-      "styleAnchors": ["Zone System Landscape"],
+      "styleAnchors": ["Zone System Landscape", "Landscape (Ansel Adams)"],
       "ref": "pack_01/SP01-047.yaml",
       "packId": "pack_01",
       "packName": "Photography & Realism",
@@ -1423,7 +1423,7 @@
       "categoryName": "6. Nature And Wildlife",
       "tags": ["photography-and-realism", "nature-and-wildlife"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp01-047 zone system landscape 6. nature and wildlife nature imaging pack_01 photography & realism nature-and-wildlife photography-and-realism nature-and-wildlife"
+      "searchableText": "sp01-047 zone system landscape landscape (ansel adams) 6. nature and wildlife nature imaging pack_01 photography & realism nature-and-wildlife photography-and-realism nature-and-wildlife"
     },
     {
       "id": "SP01-048",
