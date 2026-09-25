@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP11-001
 packId: pack_11
-name: Lego Toy Brick Build
+name: Interlocking Brick Build
 category: 1. Toys And Crafts
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,66 +12,22 @@ tags:
   - miscellaneous-and-fun
   - toys-and-crafts
 visualDna:
-  aesthetic: >-
-    Lego Toy Brick Build operates as a portable source-router layer: combine Modular toy-brick
-    construction style with systemized assembly logic, playful engineering clarity, and colorful
-    constructive energy with hand-built object logic with toy scale, assembly marks, tactile charm,
-    and playful construction, so the preset supplies visual behavior rather than a fixed card scene
-    or literal sample.
-  subject_treatment: >-
-    Preserve the prompt's subject plus requested motion and context while letting forms simplify,
-    assemble, soften, hinge, stitch, fold, carve, or snap together through Interlocking grid
-    geometry, stud-and-tube articulation, right-angle modular silhouettes, and seam-aware structural
-    rhythm; identity stays readable through construction grammar, proportion, edge logic, and detail
-    scale as this preset is applied.
-  color_and_tone: >-
-    Map color through material-native color blocks, toy-safe saturation, handmade variance, and
-    clean separation between parts; keep hue roles intentional, value separation clear, and palette
-    behavior attached to the subject's forms instead of pasted decoration.
-  lighting_and_shadow: >-
-    Use Product-style key/rim reflection control with crisp specular highlights and clear modular
-    edge readability plus small-scale object lighting, crisp edge readability, soft contact shadows,
-    and material-specific highlights as the light-response contract, with readable hierarchy,
-    controlled contact detail, and no lighting choice that erases the user's requested content.
-  texture_and_material: >-
-    Render Injection-molded ABS sheen, stud micro-relief, seam-line precision, and polished
-    toy-surface finish plus plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread, sand,
-    or carved surface behavior; surface scale, residue, gloss, grain, fiber, pores, edges, or signal
-    artifacts must remain coherent across figures, objects, and environments.
-  camera_and_composition: >-
-    Compose with Cubic abstraction with snap-grid proportional logic and minifigure-scale spatial
-    simplification plus object-scale staging, modular silhouette rhythm, clear construction reads,
-    and tactile detail hierarchy as reusable framing grammar, allowing cards, portraits, objects,
-    scenes, and abstract prompts to inherit the style without one required layout.
-  atmosphere_and_mood: >-
-    Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and
-    physical charm; the emotional tone should feel specific to Lego Toy Brick Build while still
-    obeying the prompt's subject and context.
-  rendering_and_quality: >-
-    Finish with clean craft detail, readable construction, deliberate imperfections, and no
-    accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled
-    detail, and a finished image with no watermark, fake text, or accidental UI.
-  key_features: >-
-    Modular toy-brick construction style with systemized assembly logic, playful engineering
-    clarity, and colorful constructive energy; Interlocking grid geometry, stud-and-tube
-    articulation, right-angle modular silhouettes, and seam-aware structural rhythm;
-    Injection-molded ABS sheen, stud micro-relief, seam-line precision, and polished toy-surface
-    finish; Product-style key/rim reflection control with crisp specular highlights and clear
-    modular edge readability; Cubic abstraction with snap-grid proportional logic and
-    minifigure-scale spatial simplification
-  creative_brief: >-
-    Use Lego Toy Brick Build after prompt X as a transferable style layer: prompt X supplies
-    subject, action, and setting, while the preset supplies Modular toy-brick construction style
-    with systemized assembly logic, playful engineering clarity, and colorful constructive energy,
-    Interlocking grid geometry, stud-and-tube articulation, right-angle modular silhouettes, and
-    seam-aware structural rhythm, Injection-molded ABS sheen, stud micro-relief, seam-line
-    precision, and polished toy-surface finish, Product-style key/rim reflection control with crisp
-    specular highlights and clear modular edge readability, Cubic abstraction with snap-grid
-    proportional logic and minifigure-scale spatial simplification plus clearly expressed joins,
-    simplified proportions, craft tolerances, modular parts, and maker-process evidence, palette
-    behavior, light response, material treatment, and finish discipline without requiring one
-    specimen, prop bundle, product still, or card composition.
+  aesthetic: 'Interlocking brick build: the subject assembled from studded plastic building bricks.'
+  subject_treatment: "Rebuild the prompt's subject as a physical crafted object made this way, keeping its identity, pose and action readable: built from studded interlocking plastic bricks with visible studs, stepped curves and right-angle blocks."
+  color_and_tone: 'Primary brick colors: red, yellow, blue, grey, black, true to the craft material rather than the original subject palette.'
+  lighting_and_shadow: Bright studio light with plastic highlights, like a tabletop product or studio photograph of the craft object.
+  texture_and_material: Glossy ABS bricks with studs and seams, showing how the object was actually made.
+  camera_and_composition: Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at card size.
+  atmosphere_and_mood: Playful, constructive, nostalgic and bright, coming from the handmade or toy quality.
+  rendering_and_quality: Photoreal craft-object rendering with believable scale, material detail and construction evidence.
+  key_features: studded bricks; stepped curves; plastic gloss
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Interlocking Brick Build as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - brand logo or trademarked toy likeness
+  - readable packaging text
+  - real character likeness
+  - generic plastic render
+  - muddy noisy texture
   - melted
   - smooth
   - organic
@@ -84,12 +40,17 @@ avoidRules:
   - muddy noise
   - watermark
   - readable text
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-001.webp
 attributes:
-  negativePrompt: >-
-    melted, smooth, organic, melted craft, generic toy render, featureless plastic, fixed specimen,
-    literal card scene, generic stock texture, muddy noise, watermark, readable text
+  negativePrompt: brand logo or trademarked toy likeness, readable packaging text, real character likeness, generic plastic render, muddy noisy texture, melted, smooth, organic, melted craft, generic toy render, featureless plastic, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
@@ -103,3 +64,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Interlocking Brick Build
+styleAnchors:
+  - Interlocking Brick Build

@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP11-082
+packId: pack_11
+name: Resin Garage Kit
+styleAnchors:
+  - Resin Garage Kit
+  - hand-painted resin kit
+  - hand-painted resin
+displayName: Resin Garage Kit
+category: 1. Toys And Crafts
+domain: hand-painted resin kit
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - miscellaneous-and-fun
+  - toys-and-crafts
+  - resin-kit
+  - model
+  - craft
+visualDna:
+  aesthetic: 'Resin garage kit: hand-painted resin model on a sculpted base with fine brushwork.'
+  subject_treatment: "Rebuild the prompt's subject as a physical crafted object made this way, keeping its identity, pose and action readable: a cast resin model assembled and hand-painted with washes and drybrush on a sculpted base."
+  color_and_tone: Hand-painted model colors with washes, true to the craft material rather than the original subject palette.
+  lighting_and_shadow: Studio light, like a tabletop product or studio photograph of the craft object.
+  texture_and_material: Resin with brushwork, washes and base, showing how the object was actually made.
+  camera_and_composition: Tabletop or studio framing at the craft object's real scale, close enough that joins, stitches or seams read at card size.
+  atmosphere_and_mood: Crafted, detailed, collectible and dramatic, coming from the handmade or toy quality.
+  rendering_and_quality: Photoreal craft-object rendering with believable scale, material detail and construction evidence.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Resin Garage Kit as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: hand-painted resin; washes; sculpted base
+avoidRules:
+  - brand logo or trademarked toy likeness
+  - readable packaging text
+  - real character likeness
+  - generic plastic render
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: brand logo or trademarked toy likeness, readable packaging text, real character likeness, generic plastic render, muddy noisy texture, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_11
+  packName: Miscellaneous & Fun
+  categoryId: toys-and-crafts
+  categoryName: 1. Toys And Crafts
+  tags:
+    - miscellaneous-and-fun
+    - toys-and-crafts
+    - resin-kit
+    - model
+    - craft
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: hand-painted resin kit

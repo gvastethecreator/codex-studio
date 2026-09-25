@@ -3,13 +3,14 @@
     {
       "id": "pack_11",
       "name": "Miscellaneous & Fun",
-      "presetCount": 80
+      "presetCount": 82
     }
   ],
   "presets": [
     {
       "id": "SP11-001",
-      "name": "Lego Toy Brick Build",
+      "name": "Interlocking Brick Build",
+      "styleAnchors": ["Interlocking Brick Build"],
       "ref": "pack_11/SP11-001.yaml",
       "packId": "pack_11",
       "packName": "Miscellaneous & Fun",
@@ -17,11 +18,12 @@
       "categoryName": "1. Toys And Crafts",
       "tags": ["miscellaneous-and-fun", "toys-and-crafts"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp11-001 lego toy brick build 1. toys and crafts craft & miniatures pack_11 miscellaneous & fun toys-and-crafts miscellaneous-and-fun toys-and-crafts"
+      "searchableText": "sp11-001 interlocking brick build 1. toys and crafts craft & miniatures pack_11 miscellaneous & fun toys-and-crafts miscellaneous-and-fun toys-and-crafts"
     },
     {
       "id": "SP11-002",
-      "name": "Funko Pop Vinyl Collectible Figure",
+      "name": "Big-Head Vinyl Collectible",
+      "styleAnchors": ["Big-Head Vinyl Collectible"],
       "ref": "pack_11/SP11-002.yaml",
       "packId": "pack_11",
       "packName": "Miscellaneous & Fun",
@@ -29,11 +31,12 @@
       "categoryName": "1. Toys And Crafts",
       "tags": ["miscellaneous-and-fun", "toys-and-crafts"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp11-002 funko pop vinyl collectible figure 1. toys and crafts craft & miniatures pack_11 miscellaneous & fun toys-and-crafts miscellaneous-and-fun toys-and-crafts"
+      "searchableText": "sp11-002 big-head vinyl collectible 1. toys and crafts craft & miniatures pack_11 miscellaneous & fun toys-and-crafts miscellaneous-and-fun toys-and-crafts"
     },
     {
       "id": "SP11-003",
-      "name": "Play-Doh Clay",
+      "name": "Modeling Dough Clay",
+      "styleAnchors": ["Modeling Dough Clay"],
       "ref": "pack_11/SP11-003.yaml",
       "packId": "pack_11",
       "packName": "Miscellaneous & Fun",
@@ -41,7 +44,7 @@
       "categoryName": "1. Toys And Crafts",
       "tags": ["miscellaneous-and-fun", "toys-and-crafts"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp11-003 play-doh clay 1. toys and crafts craft & miniatures pack_11 miscellaneous & fun toys-and-crafts miscellaneous-and-fun toys-and-crafts"
+      "searchableText": "sp11-003 modeling dough clay 1. toys and crafts craft & miniatures pack_11 miscellaneous & fun toys-and-crafts miscellaneous-and-fun toys-and-crafts"
     },
     {
       "id": "SP11-004",
@@ -222,6 +225,34 @@
       "tags": ["miscellaneous-and-fun", "toys-and-crafts"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp11-031 ice carving 1. toys and crafts craft & miniatures pack_11 miscellaneous & fun toys-and-crafts miscellaneous-and-fun toys-and-crafts"
+    },
+    {
+      "id": "SP11-081",
+      "name": "Paper Theater Puppets",
+      "styleAnchors": ["Paper Theater Puppets", "toy paper theater", "flat card cut-outs"],
+      "ref": "pack_11/SP11-081.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "toys-and-crafts",
+      "categoryName": "1. Toys And Crafts",
+      "domain": "toy paper theater",
+      "tags": ["miscellaneous-and-fun", "toys-and-crafts", "toy-paper-theater"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-081 paper theater puppets toy paper theater flat card cut-outs 1. toys and crafts craft & miniatures toy paper theater pack_11 miscellaneous & fun toys-and-crafts miscellaneous-and-fun toys-and-crafts toy-paper-theater"
+    },
+    {
+      "id": "SP11-082",
+      "name": "Resin Garage Kit",
+      "styleAnchors": ["Resin Garage Kit", "hand-painted resin kit", "hand-painted resin"],
+      "ref": "pack_11/SP11-082.yaml",
+      "packId": "pack_11",
+      "packName": "Miscellaneous & Fun",
+      "categoryId": "toys-and-crafts",
+      "categoryName": "1. Toys And Crafts",
+      "domain": "hand-painted resin kit",
+      "tags": ["miscellaneous-and-fun", "toys-and-crafts", "hand-painted-resin-kit"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp11-082 resin garage kit hand-painted resin kit hand-painted resin 1. toys and crafts craft & miniatures hand-painted resin kit pack_11 miscellaneous & fun toys-and-crafts miscellaneous-and-fun toys-and-crafts hand-painted-resin-kit"
     },
     {
       "id": "SP11-006",
@@ -968,5 +999,5 @@
       "searchableText": "sp11-033 blueprint 7. diagram and technical drawing blueprint drawing pack_11 miscellaneous & fun diagram-and-technical-drawing miscellaneous-and-fun diagram-and-technical-drawing"
     }
   ],
-  "totalPresetCount": 80
+  "totalPresetCount": 82
 }
