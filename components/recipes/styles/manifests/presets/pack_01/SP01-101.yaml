@@ -1,0 +1,85 @@
+schemaVersion: 1
+id: SP01-101
+packId: pack_01
+name: Film Soup
+styleAnchors:
+  - Film Soup
+  - chemically pre-soaked film
+  - chemical color blooms
+displayName: Film Soup
+category: 3. Film And Analog Process
+domain: chemically pre-soaked film
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - film-and-analog-process
+  - film-soup
+  - experimental-film
+  - film
+visualDna:
+  aesthetic: 'Film soup: color film soaked in household chemicals before shooting, so the damaged emulsion erupts in blooms, bubbles and saturated color stains over a readable photo.'
+  subject_treatment: Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.
+  color_and_tone: Magenta, cyan, acid yellow and electric green blotches blooming out of otherwise normal color; shifts strongest in skies and flat areas.
+  lighting_and_shadow: Normal photographic light underneath; stains glow as if lit from within.
+  texture_and_material: Round bubble craters, dissolved emulsion patches, speckles and dendritic blooms, concentrated toward edges and sky, leaving the main subject readable.
+  camera_and_composition: Keep the requested framing; the damage frames the subject rather than covering it.
+  atmosphere_and_mood: Psychedelic and eerie, a calm picture slowly being eaten by color.
+  rendering_and_quality: Organic chemical damage in the emulsion, not a digital glitch, overlay texture or double exposure.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Film Soup as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: chemical color blooms; bubble craters; dissolved emulsion patches; readable subject; stained sky
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - synthetic CGI
+  - plastic render
+  - digital HDR overprocessing
+  - oversharpened clarity
+  - generic vintage filter
+  - fake film border
+  - sprocket holes
+  - clean digital sensor look
+  - generic stock-photo face
+  - celebrity likeness
+  - changing the requested setting
+  - aging props or costume to match the film
+  - digital glitch
+  - subject hidden by damage
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, digital HDR overprocessing, oversharpened clarity, generic vintage filter, fake film border, sprocket holes, clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, digital glitch, subject hidden by damage, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: film-and-analog-process
+  categoryName: 3. Film And Analog Process
+  tags:
+    - photography-and-realism
+    - film-and-analog-process
+    - film-soup
+    - experimental-film
+    - film
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: chemically pre-soaked film

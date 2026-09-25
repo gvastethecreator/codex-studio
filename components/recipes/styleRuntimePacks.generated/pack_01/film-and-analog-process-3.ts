@@ -8,28 +8,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Kodak Portra 400',
     category: '3. Film And Analog Process',
     negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter',
+      'clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, crushed blacks, neon saturation, illustration, painting, drawing, 3d render, cartoon, anime, sketch, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Kodak Portra 400 acts as a transferable photographic style router: begin from Warm analog film look, Yellow/Red bias, and analog photographic process system built from film stock response, lens imperfection, chemical artifact, grain, and exposure latitude, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Kodak Portra 400 color negative: a forgiving portrait stock rated at 400 and usually overexposed by a stop, giving creamy low-contrast color and flattering skin.',
       subject_treatment:
-        'Treat any prompt subject through Soft but sharp; preserve the prompt scene while routing detail through stock softness, halation, vignetting, motion softness, or large-format clarity, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.',
       color_and_tone:
-        'Grade with Warm neutrals, pastel highlights; let palette come from emulsion bias, slide-film saturation, monochrome silver values, aged dye shift, or instant-film chemistry, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Peach and apricot skin, warm neutral whites, pastel highlights that roll off instead of clipping, soft sage greens and muted blues; shadows lifted and slightly warm.',
       lighting_and_shadow:
-        'Use Natural, forgiving; shape highlights and shadows through film latitude, flash falloff, long exposure, tungsten balance, or chemical rolloff, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Wide latitude: bright skies and faces both hold detail; shadows open rather than crushed, highlight shoulder gentle.',
       texture_and_material:
-        'Render Fine grain; render grain, dust, dye clouds, soft lens corners, wet-plate artifacts, borderless instant texture, or scan softness as process evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Fine, even, tight grain visible in flat midtones and skies; no digital smoothing on skin.',
       camera_and_composition:
-        'Compose through Kodak Portra 400 analog stock character, emulsion color bias, real grain, and process-specific camera behavior; use camera format, crop, lens character, depth of field, view-camera stillness, toy-camera distortion, or accidental snapshot framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Nostalgic, warm; derive mood from memory, imperfection, tactile chemistry, nostalgia, scientific strangeness, or disposable-camera immediacy, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Keep the requested framing; 35 mm or 120 rendering with natural lens falloff and modest depth of field.',
+      atmosphere_and_mood: 'Tender and unhurried, warmth and softness keeping every edge gentle.',
       rendering_and_quality:
-        'Finish with Professional film; finish as believable analog capture with coherent grain scale, restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Lab-scanned negative look: soft contrast curve, fine grain across the frame, no HDR clarity or oversaturation.',
       key_features:
-        'Warm analog film look; Yellow/Red bias; Warm neutrals, pastel highlights; Natural, forgiving; Kodak Portra 400 analog stock character, emulsion color bias, real grain, and process-specific camera behavior',
+        'overexposed color negative; peach skin tones; pastel highlight rolloff; lifted warm shadows; fine even grain',
       creative_brief:
-        "Apply Kodak Portra 400 as a photographic preset over prompt X: preserve the user's requested subject, then route Warm analog film look, Warm neutrals, pastel highlights, Natural, forgiving, Fine grain, and Kodak Portra 400 analog stock character, emulsion color bias, real grain, and process-specific camera behavior through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kodak Portra 400 as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +36,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Fujifilm Velvia 50',
     category: '3. Film And Analog Process',
     negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter',
+      'clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, lifted matte blacks, desaturated palette, illustration, painting, drawing, 3d render, cartoon, anime, sketch, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Fujifilm Velvia 50 acts as a transferable photographic style router: begin from High saturation slide film, Magenta bias, and analog photographic process system built from film stock response, lens imperfection, chemical artifact, grain, and exposure latitude, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Fujifilm Velvia 50 color slide: a slow, ultra-saturated landscape reversal film shot on a tripod, with dense blacks and almost no exposure latitude.',
       subject_treatment:
-        'Treat any prompt subject through High contrast; preserve the prompt scene while routing detail through stock softness, halation, vignetting, motion softness, or large-format clarity, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.',
       color_and_tone:
-        'Grade with Vivid Green, Blue, Red; let palette come from emulsion bias, slide-film saturation, monochrome silver values, aged dye shift, or instant-film chemistry, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Electric greens, deep cobalt skies, scarlet and magenta reds pushed hard; warm-magenta bias in dawn and dusk light; shadows fall to rich black.',
       lighting_and_shadow:
-        'Use Daylight; shape highlights and shadows through film latitude, flash falloff, long exposure, tungsten balance, or chemical rolloff, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Narrow latitude: highlights hold only where exposure is exact, shadows block to black; best under soft dawn light or low sun after rain.',
       texture_and_material:
-        'Render Very fine grain; render grain, dust, dye clouds, soft lens corners, wet-plate artifacts, borderless instant texture, or scan softness as process evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Almost invisible fine grain; crisp micro-detail in leaves, rock and water; wet surfaces glossy and saturated.',
       camera_and_composition:
-        'Compose through Crushed blacks; use camera format, crop, lens character, depth of field, view-camera stillness, toy-camera distortion, or accidental snapshot framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+        'Keep the requested framing; tripod-still sharpness front to back, as if shot at a small aperture.',
       atmosphere_and_mood:
-        'Keep the mood Vibrant, punchy; derive mood from memory, imperfection, tactile chemistry, nostalgia, scientific strangeness, or disposable-camera immediacy, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Vivid and dramatic, saturated color pushing against dense black shadow.',
       rendering_and_quality:
-        'Finish with Fine-grain slide realism; finish as believable analog capture with coherent grain scale, restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Projected-slide intensity: high contrast, saturated but clean color, no HDR halos or digital clarity.',
       key_features:
-        'High saturation slide film; Magenta bias; Vivid Green, Blue, Red; Daylight; Crushed blacks',
+        'ultra-saturated slide; electric greens; magenta dawn bias; crushed black shadows; near-invisible grain',
       creative_brief:
-        "Apply Fujifilm Velvia 50 as a photographic preset over prompt X: preserve the user's requested subject, then route High saturation slide film, Vivid Green, Blue, Red, Daylight, Very fine grain, and Crushed blacks through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fujifilm Velvia 50 as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +65,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ilford HP5 Plus',
     category: '3. Film And Analog Process',
     negativePrompt:
-      'color, chromatic aberration, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter',
+      'clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, sepia toning, blocked shadows, color, chromatic aberration, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Ilford HP5 Plus acts as a transferable photographic style router: begin from Black and White film, Monochrome, and analog photographic process system built from film stock response, lens imperfection, chemical artifact, grain, and exposure latitude, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Ilford HP5 Plus at box speed 400: classic black-and-white documentary negative with a long, even grey scale and honest, moderate grain.',
       subject_treatment:
-        'Treat any prompt subject through Medium contrast; preserve the prompt scene while routing detail through stock softness, halation, vignetting, motion softness, or large-format clarity, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.',
       color_and_tone:
-        'Grade with Greyscale; let palette come from emulsion bias, slide-film saturation, monochrome silver values, aged dye shift, or instant-film chemistry, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Pure monochrome; full range from paper-white to deep black with generous midtone greys; neutral, untoned.',
       lighting_and_shadow:
-        'Use Versatile; shape highlights and shadows through film latitude, flash falloff, long exposure, tungsten balance, or chemical rolloff, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Medium contrast with open shadows; available light rendered as it falls, skies slightly light without a filter.',
       texture_and_material:
-        'Render Visible grain; render grain, dust, dye clouds, soft lens corners, wet-plate artifacts, borderless instant texture, or scan softness as process evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Visible, soft-edged grain even in midtones; skin, wool, stone and wood keep real texture.',
       camera_and_composition:
-        'Compose through Ilford HP5 Plus analog stock character, emulsion color bias, real grain, and process-specific camera behavior; use camera format, crop, lens character, depth of field, view-camera stillness, toy-camera distortion, or accidental snapshot framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Classic, gritty; derive mood from memory, imperfection, tactile chemistry, nostalgia, scientific strangeness, or disposable-camera immediacy, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Keep the requested framing; 35 mm documentary rendering with natural lens falloff.',
+      atmosphere_and_mood: 'Observant and sober, an even grey calm that lets the moment speak.',
       rendering_and_quality:
-        'Finish with Documentary film; finish as believable analog capture with coherent grain scale, restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Darkroom-print look on neutral fiber paper; no crushed shadows, no push-processing grit, no digital clarity.',
       key_features:
-        'Black and White film; Monochrome; Greyscale; Versatile; Ilford HP5 Plus analog stock character, emulsion color bias, real grain, and process-specific camera behavior',
+        'box-speed black-and-white; long neutral grey scale; moderate soft grain; open shadows; documentary honesty',
       creative_brief:
-        "Apply Ilford HP5 Plus as a photographic preset over prompt X: preserve the user's requested subject, then route Black and White film, Greyscale, Versatile, Visible grain, and Ilford HP5 Plus analog stock character, emulsion color bias, real grain, and process-specific camera behavior through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ilford HP5 Plus as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +93,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cinestill 800T',
     category: '3. Film And Analog Process',
     negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter',
+      'clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, daylight white balance, painted glow overlay, illustration, painting, drawing, 3d render, cartoon, anime, sketch, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Cinestill 800T acts as a transferable photographic style router: begin from Night photography film, Red halos, and analog photographic process system built from film stock response, lens imperfection, chemical artifact, grain, and exposure latitude, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Cinestill 800T: tungsten-balanced motion-picture stock with its anti-halation layer removed, so every bright light blooms with a red-orange halo.',
       subject_treatment:
-        'Treat any prompt subject through Halation around lights; preserve the prompt scene while routing detail through stock softness, halation, vignetting, motion softness, or large-format clarity, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.',
       color_and_tone:
-        'Grade with Cool tungsten balance; let palette come from emulsion bias, slide-film saturation, monochrome silver values, aged dye shift, or instant-film chemistry, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Cool teal and cyan shadows from the tungsten balance, warm amber practicals, and saturated red-orange halation rings; daylight turns bluish.',
       lighting_and_shadow:
-        'Use Artificial light; shape highlights and shadows through film latitude, flash falloff, long exposure, tungsten balance, or chemical rolloff, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Night and interior practicals — lamps, lanterns, bulbs, fire — as point sources; halation glows around each one and around bright edges.',
       texture_and_material:
-        'Render Medium grain; render grain, dust, dye clouds, soft lens corners, wet-plate artifacts, borderless instant texture, or scan softness as process evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Medium, visible grain from the fast emulsion; soft glow on glossy surfaces near lights.',
       camera_and_composition:
-        'Compose through Red halation glow; use camera format, crop, lens character, depth of field, view-camera stillness, toy-camera distortion, or accidental snapshot framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+        'Keep the requested framing; include at least one practical light so its red halo shows.',
       atmosphere_and_mood:
-        'Keep the mood Nocturnal, moody; derive mood from memory, imperfection, tactile chemistry, nostalgia, scientific strangeness, or disposable-camera immediacy, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Nocturnal and melancholic, warm halos glowing against cool empty shadow.',
       rendering_and_quality:
-        'Finish with Cinematic, moody; finish as believable analog capture with coherent grain scale, restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Motion-picture negative look: soft rolloff, halation in-camera rather than painted glow, no digital bloom filter.',
       key_features:
-        'Night photography film; Red halos; Cool tungsten balance; Artificial light; Red halation glow',
+        'red-orange halation halos; tungsten teal shadows; amber practicals; fast-film grain; night cinema stock',
       creative_brief:
-        "Apply Cinestill 800T as a photographic preset over prompt X: preserve the user's requested subject, then route Night photography film, Cool tungsten balance, Artificial light, Medium grain, and Red halation glow through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cinestill 800T as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +122,26 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Kodachrome 64',
     category: '3. Film And Analog Process',
     negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter',
+      'clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, pastel washed color, mid-century props not in the prompt, illustration, painting, drawing, 3d render, cartoon, anime, sketch, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Kodachrome 64 acts as a transferable photographic style router: begin from Vintage slide film, Red pop, and analog photographic process system built from film stock response, lens imperfection, chemical artifact, grain, and exposure latitude, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Kodachrome 64 color slide: a slow, sharp reversal stock with dense dye layers, famous for rich reds, deep blues and weighty blacks.',
       subject_treatment:
-        'Treat any prompt subject through Sharp, archival; preserve the prompt scene while routing detail through stock softness, halation, vignetting, motion softness, or large-format clarity, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.',
       color_and_tone:
-        'Grade with Rich reds, realistic; let palette come from emulsion bias, slide-film saturation, monochrome silver values, aged dye shift, or instant-film chemistry, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Cardinal and tomato reds that pop, deep saturated blues, warm golden highlights, and dense near-black shadows; skin warm and slightly ruddy.',
       lighting_and_shadow:
-        'Use Clean direct light; shape highlights and shadows through film latitude, flash falloff, long exposure, tungsten balance, or chemical rolloff, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Bright, direct daylight suits it best; contrast is high, shadows heavy and inky, highlights clean.',
       texture_and_material:
-        'Render Fine grain; render grain, dust, dye clouds, soft lens corners, wet-plate artifacts, borderless instant texture, or scan softness as process evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Very fine grain and crisp detail; paint, fabric and feathers look dense and solid.',
       camera_and_composition:
-        'Compose through High contrast; use camera format, crop, lens character, depth of field, view-camera stillness, toy-camera distortion, or accidental snapshot framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Historic, vivid; derive mood from memory, imperfection, tactile chemistry, nostalgia, scientific strangeness, or disposable-camera immediacy, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Keep the requested framing; 35 mm slide sharpness with a slightly warm projected glow.',
+      atmosphere_and_mood: 'Confident and vivid, bold reds anchored by heavy inky shadows.',
       rendering_and_quality:
-        'Finish with Archival documentary slide; finish as believable analog capture with coherent grain scale, restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
-      key_features:
-        'Vintage slide film; Red pop; Rich reds, realistic; Clean direct light; High contrast',
+        'Slide-film density and color separation; modern subjects stay modern — no mid-century costume or props unless asked.',
+      key_features: 'dense slide dyes; cardinal red pop; deep blues; inky shadows; very fine grain',
       creative_brief:
-        "Apply Kodachrome 64 as a photographic preset over prompt X: preserve the user's requested subject, then route Vintage slide film, Rich reds, realistic, Clean direct light, Fine grain, and High contrast through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kodachrome 64 as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +149,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Polaroid 600',
     category: '3. Film And Analog Process',
     negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter',
+      'clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, white instant-print frame, illustration, painting, drawing, 3d render, cartoon, anime, sketch, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Polaroid 600 acts as a transferable photographic style router: begin from Instant film photo, Square crop, and analog photographic process system built from film stock response, lens imperfection, chemical artifact, grain, and exposure latitude, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Polaroid 600 integral instant film: a soft plastic-lens snapshot with built-in flash and the washed, dreamy color of instant chemistry — the emulsion look, not the print frame.',
       subject_treatment:
-        'Treat any prompt subject through Soft focus; preserve the prompt scene while routing detail through stock softness, halation, vignetting, motion softness, or large-format clarity, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.',
       color_and_tone:
-        'Grade with Washed out, color shift; let palette come from emulsion bias, slide-film saturation, monochrome silver values, aged dye shift, or instant-film chemistry, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Low-contrast creamy highlights, cyan-green cast in the shadows, warm skin under flash, gently faded saturation; blacks never quite black.',
       lighting_and_shadow:
-        'Use Direct flash; shape highlights and shadows through film latitude, flash falloff, long exposure, tungsten balance, or chemical rolloff, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Built-in flash close to the lens: bright soft subject, quick falloff into a dim background, small flash reflections in eyes and glossy surfaces.',
       texture_and_material:
-        'Render Chemical spread marks; render grain, dust, dye clouds, soft lens corners, wet-plate artifacts, borderless instant texture, or scan softness as process evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Soft overall focus, slightly mottled dye clouds, faint chemical spread unevenness at the image edges; no border drawn.',
       camera_and_composition:
-        'Compose through Vignette; use camera format, crop, lens character, depth of field, view-camera stillness, toy-camera distortion, or accidental snapshot framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Memory, retro; derive mood from memory, imperfection, tactile chemistry, nostalgia, scientific strangeness, or disposable-camera immediacy, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Keep the requested framing; square-ish crop welcome, subject within a few meters of the flash.',
+      atmosphere_and_mood: 'Intimate and playful, a close flash moment already fading into memory.',
       rendering_and_quality:
-        'Finish with Vintage, casual; finish as believable analog capture with coherent grain scale, restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Instant-film softness and faded chemistry; no crisp digital detail and no drawn white frame.',
       key_features:
-        'Instant film photo; Square crop; Washed out, color shift; Direct flash; Vignette',
+        'integral instant color; cyan-green shadows; creamy low-contrast highlights; close flash falloff; soft plastic lens',
       creative_brief:
-        "Apply Polaroid 600 as a photographic preset over prompt X: preserve the user's requested subject, then route Instant film photo, Washed out, color shift, Direct flash, Chemical spread marks, and Vignette through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Polaroid 600 as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,86 +177,89 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Lomo LC-A',
     category: '3. Film And Analog Process',
     negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter',
+      'clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, light leaks, cross-processed colors, illustration, painting, drawing, 3d render, cartoon, anime, sketch, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Lomo LC-A acts as a transferable photographic style router: begin from Toy camera film, Tunnel vision, and analog photographic process system built from film stock response, lens imperfection, chemical artifact, grain, and exposure latitude, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Lomo LC-A snapshot: a compact zone-focus camera with a wide 32 mm lens, shot fast from the hip on saturated color negative, known for its tunnel vignette.',
       subject_treatment:
-        'Treat any prompt subject through Soft warped edges; preserve the prompt scene while routing detail through stock softness, halation, vignetting, motion softness, or large-format clarity, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.',
       color_and_tone:
-        'Grade with Cross-processed, saturated; let palette come from emulsion bias, slide-film saturation, monochrome silver values, aged dye shift, or instant-film chemistry, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Punchy saturated center — deep blues, hot reds, vivid greens — with corners darkened almost to black.',
       lighting_and_shadow:
-        'Use Vignette; shape highlights and shadows through film latitude, flash falloff, long exposure, tungsten balance, or chemical rolloff, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Auto exposure that favors the center; corners underexposed; night shots with long, slightly shaky exposure.',
       texture_and_material:
-        'Render Light leaks; render grain, dust, dye clouds, soft lens corners, wet-plate artifacts, borderless instant texture, or scan softness as process evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Medium grain, soft edges, sharpish center, occasional zone-focus miss.',
       camera_and_composition:
-        'Compose through Heavy vignette; use camera format, crop, lens character, depth of field, view-camera stillness, toy-camera distortion, or accidental snapshot framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+        'Keep the requested subject and setting; wide close perspective, slightly tilted horizon, subject centered in the bright tunnel.',
       atmosphere_and_mood:
-        'Keep the mood Fun, unpredictable; derive mood from memory, imperfection, tactile chemistry, nostalgia, scientific strangeness, or disposable-camera immediacy, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Spontaneous and reckless, bright center energy squeezed by dark corners.',
       rendering_and_quality:
-        'Finish with Lo-fi analog experiment; finish as believable analog capture with coherent grain scale, restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Heavy optical vignette and saturated negative color; no light leaks, sprocket holes or cross-processing (other presets own those).',
       key_features:
-        'Toy camera film; Tunnel vision; Cross-processed, saturated; Vignette; Heavy vignette',
+        'tunnel vignette; saturated center; wide 32 mm closeness; tilted hip-shot horizon; soft corners',
       creative_brief:
-        "Apply Lomo LC-A as a photographic preset over prompt X: preserve the user's requested subject, then route Toy camera film, Cross-processed, saturated, Vignette, Light leaks, and Heavy vignette through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lomo LC-A as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP01-018',
-    name: 'Wet Plate Collodion',
+    name: 'Wet Plate Ambrotype',
+    displayName: 'Wet Plate Ambrotype',
+    styleAnchors: ['Wet Plate Ambrotype'],
     category: '3. Film And Analog Process',
     negativePrompt:
-      'color, modern, digital, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter',
+      'clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, tintype metal plate, sepia paper print, color, digital, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Wet Plate Collodion acts as a transferable photographic style router: begin from 19th century tintype, Chemical artifacts, and analog photographic process system built from film stock response, lens imperfection, chemical artifact, grain, and exposure latitude, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Wet plate ambrotype: a collodion negative on clear glass backed with black varnish so it reads as a positive, with ivory highlights floating on a deep black ground.',
       subject_treatment:
-        'Treat any prompt subject through Extremely shallow focus; preserve the prompt scene while routing detail through stock softness, halation, vignetting, motion softness, or large-format clarity, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.',
       color_and_tone:
-        'Grade with Sepia, silver; let palette come from emulsion bias, slide-film saturation, monochrome silver values, aged dye shift, or instant-film chemistry, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Monochrome ivory, warm grey and velvet black; orthochromatic response — blue skies and eyes go pale, reds and lips go dark.',
       lighting_and_shadow:
-        'Use Long exposure; shape highlights and shadows through film latitude, flash falloff, long exposure, tungsten balance, or chemical rolloff, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Large soft daylight source and exposures of several seconds; highlights creamy and luminous, shadows dissolving into the black backing.',
       texture_and_material:
-        'Render Chemical pours, scratches; render grain, dust, dye clouds, soft lens corners, wet-plate artifacts, borderless instant texture, or scan softness as process evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Glassy depth, subtle collodion pour ripples and small comet marks near the margins; no film grain, surface faintly silvery.',
       camera_and_composition:
-        'Compose through Blurry edges (Petzval); use camera format, crop, lens character, depth of field, view-camera stillness, toy-camera distortion, or accidental snapshot framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Ghostly, ancient; derive mood from memory, imperfection, tactile chemistry, nostalgia, scientific strangeness, or disposable-camera immediacy, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Keep the requested framing; Petzval-style lens with a sharp center, swirling soft edges and very shallow focus.',
+      atmosphere_and_mood: 'Still and solemn, luminous faces floating out of a velvet void.',
       rendering_and_quality:
-        'Finish with Antique, haunting; finish as believable analog capture with coherent grain scale, restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Positive-on-glass look, not a tintype plate or a paper print; modern subjects stay modern (an appliance stays an appliance).',
       key_features:
-        '19th century tintype; Chemical artifacts; Sepia, silver; Long exposure; Blurry edges (Petzval)',
+        'ivory on black glass; orthochromatic tones; Petzval swirl; collodion pour ripples; long-exposure stillness',
       creative_brief:
-        "Apply Wet Plate Collodion as a photographic preset over prompt X: preserve the user's requested subject, then route 19th century tintype, Sepia, silver, Long exposure, Chemical pours, scratches, and Blurry edges (Petzval) through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wet Plate Ambrotype as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP01-019',
-    name: 'Infrared Film',
+    name: 'Black-and-White Infrared Film',
+    displayName: 'Black-and-White Infrared Film',
+    styleAnchors: ['Black-and-White Infrared Film'],
     category: '3. Film And Analog Process',
     negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter',
+      'clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, pink or red false-color foliage, full color, illustration, painting, drawing, 3d render, cartoon, anime, sketch, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Infrared Film acts as a transferable photographic style router: begin from Aerochrome style, False-color infrared response, and analog photographic process system built from film stock response, lens imperfection, chemical artifact, grain, and exposure latitude, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Black-and-white infrared film behind a deep red filter: living foliage glows white, clear skies turn nearly black, and highlights bloom with soft halation.',
       subject_treatment:
-        'Treat any prompt subject through Glowing infrared edges; preserve the prompt scene while routing detail through stock softness, halation, vignetting, motion softness, or large-format clarity, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.',
       color_and_tone:
-        'Grade with Pink/Red highlights, dark cyan shadows; let palette come from emulsion bias, slide-film saturation, monochrome silver values, aged dye shift, or instant-film chemistry, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Monochrome with inverted landscape values: snow-white leaves and grass, near-black sky and water, luminous milky skin; no false color.',
       lighting_and_shadow:
-        'Use Surreal; shape highlights and shadows through film latitude, flash falloff, long exposure, tungsten balance, or chemical rolloff, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Strong sunlight works best; bright infrared reflectors glow and spread light into their surroundings; shadows deep but soft-edged.',
       texture_and_material:
-        'Render Grainy; render grain, dust, dye clouds, soft lens corners, wet-plate artifacts, borderless instant texture, or scan softness as process evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Pronounced grain, a dreamy bloom around white foliage, skin smoothed to porcelain by infrared penetration, dark veins sometimes visible.',
       camera_and_composition:
-        'Compose through False color; use camera format, crop, lens character, depth of field, view-camera stillness, toy-camera distortion, or accidental snapshot framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+        'Keep the requested framing; include vegetation or sky where the prompt allows so the value inversion reads.',
       atmosphere_and_mood:
-        'Keep the mood Alien, dreamlike; derive mood from memory, imperfection, tactile chemistry, nostalgia, scientific strangeness, or disposable-camera immediacy, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Otherworldly and frozen, familiar landscapes turned pale as ghost light.',
       rendering_and_quality:
-        'Finish with Psychedelic, scientific; finish as believable analog capture with coherent grain scale, restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Monochrome infrared negative look; not the pink-and-cyan color infrared owned by Photography Eras.',
       key_features:
-        'Aerochrome style; False-color infrared response; Pink/Red highlights, dark cyan shadows; Surreal; False color',
+        'white glowing foliage; near-black sky; halation bloom; milky skin; pronounced grain',
       creative_brief:
-        "Apply Infrared Film as a photographic preset over prompt X: preserve the user's requested subject, then route Aerochrome style, Pink/Red highlights, dark cyan shadows, Surreal, Grainy, and False color through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Black-and-White Infrared Film as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -269,27 +267,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Expired Film',
     category: '3. Film And Analog Process',
     negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter',
+      'clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, crisp saturated color, overlay scratches, illustration, painting, drawing, 3d render, cartoon, anime, sketch, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Expired Film acts as a transferable photographic style router: begin from Damaged film stock, Color shift, and analog photographic process system built from film stock response, lens imperfection, chemical artifact, grain, and exposure latitude, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Expired color negative: film long past its date, fogged by age and heat, with a lifted base, drifting color casts and weak contrast.',
       subject_treatment:
-        'Treat any prompt subject through Soft unstable edges; preserve the prompt scene while routing detail through stock softness, halation, vignetting, motion softness, or large-format clarity, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.',
       color_and_tone:
-        'Grade with Green/Magenta shift; let palette come from emulsion bias, slide-film saturation, monochrome silver values, aged dye shift, or instant-film chemistry, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Milky lifted blacks, overall green, magenta or brown cast that drifts across the frame, faded saturation, muddy but readable skin.',
       lighting_and_shadow:
-        'Use Fogged; shape highlights and shadows through film latitude, flash falloff, long exposure, tungsten balance, or chemical rolloff, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Low contrast; shadows fogged grey, highlights dull; best when overexposed so the image survives the fog.',
       texture_and_material:
-        'Render Heavy grain, mold; render grain, dust, dye clouds, soft lens corners, wet-plate artifacts, borderless instant texture, or scan softness as process evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Coarse clumped grain, blotchy dye clouds, occasional faint mottling; no scratches drawn as overlay.',
       camera_and_composition:
-        'Compose through Color cast; use camera format, crop, lens character, depth of field, view-camera stillness, toy-camera distortion, or accidental snapshot framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Decay, lost memory; derive mood from memory, imperfection, tactile chemistry, nostalgia, scientific strangeness, or disposable-camera immediacy, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Keep the requested framing; no borders, light leaks only if faint and at an edge.',
+      atmosphere_and_mood: 'Wistful and unreliable, the image half dissolved like an old memory.',
       rendering_and_quality:
-        'Finish with Grungy, broken; finish as believable analog capture with coherent grain scale, restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
-      key_features: 'Damaged film stock; Color shift; Green/Magenta shift; Fogged; Color cast',
+        'Chemical aging in the emulsion itself, not a generic vintage filter or a torn-paper texture.',
+      key_features:
+        'fogged lifted blacks; drifting color cast; coarse clumped grain; low contrast; faded dyes',
       creative_brief:
-        "Apply Expired Film as a photographic preset over prompt X: preserve the user's requested subject, then route Damaged film stock, Green/Magenta shift, Fogged, Heavy grain, mold, and Color cast through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Expired Film as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -297,28 +295,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Large Format (4x5)',
     category: '3. Film And Analog Process',
     negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter',
+      'clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, converging verticals, wide-angle distortion, illustration, painting, drawing, 3d render, cartoon, anime, sketch, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Large Format (4x5) acts as a transferable photographic style router: begin from View camera photo, Extreme resolution, and analog photographic process system built from film stock response, lens imperfection, chemical artifact, grain, and exposure latitude, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Large-format 4x5 sheet film: a view camera on a tripod recording extraordinary detail with smooth, seamless tonal gradation.',
       subject_treatment:
-        'Treat any prompt subject through Incredible detail; preserve the prompt scene while routing detail through stock softness, halation, vignetting, motion softness, or large-format clarity, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.',
       color_and_tone:
-        'Grade with Rich, smooth tones; let palette come from emulsion bias, slide-film saturation, monochrome silver values, aged dye shift, or instant-film chemistry, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Rich, smooth tonal transitions, natural restrained color or deep neutral monochrome, subtle highlight rolloff.',
       lighting_and_shadow:
-        'Use Controlled; shape highlights and shadows through film latitude, flash falloff, long exposure, tungsten balance, or chemical rolloff, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Slow, deliberate exposure in natural or window light; full shadow detail and delicate highlights.',
       texture_and_material:
-        'Render Zero grain; render grain, dust, dye clouds, soft lens corners, wet-plate artifacts, borderless instant texture, or scan softness as process evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Grain practically invisible; every stone joint, feather, thread and pore resolved.',
       camera_and_composition:
-        'Compose through Tilt-shift potential; use camera format, crop, lens character, depth of field, view-camera stillness, toy-camera distortion, or accidental snapshot framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+        'Keep the requested framing; corrected vertical lines, and a tilted plane of focus that can run along the subject while the rest falls away.',
       atmosphere_and_mood:
-        'Keep the mood Grand, still; derive mood from memory, imperfection, tactile chemistry, nostalgia, scientific strangeness, or disposable-camera immediacy, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Monumental and contemplative, slow precision that invites long looking.',
       rendering_and_quality:
-        'Finish with Fine-art view camera; finish as believable analog capture with coherent grain scale, restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Sheet-film clarity and tonality without digital sharpening halos or HDR; depth rendered through lens movements.',
       key_features:
-        'View camera photo; Extreme resolution; Rich, smooth tones; Controlled; Tilt-shift potential',
+        'view-camera detail; seamless tonal gradation; corrected verticals; tilted focus plane; invisible grain',
       creative_brief:
-        "Apply Large Format (4x5) as a photographic preset over prompt X: preserve the user's requested subject, then route View camera photo, Rich, smooth tones, Controlled, Zero grain, and Tilt-shift potential through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Large Format (4x5) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -326,57 +324,304 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Disposable Camera',
     category: '3. Film And Analog Process',
     negativePrompt:
-      'illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter',
+      'clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, date stamp, studio lighting, illustration, painting, drawing, 3d render, cartoon, anime, sketch, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Disposable Camera acts as a transferable photographic style router: begin from Cheap plastic lens photo, Flash falloff, and analog photographic process system built from film stock response, lens imperfection, chemical artifact, grain, and exposure latitude, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Disposable single-use camera: a fixed-focus plastic lens, a weak built-in flash and fast consumer film, used without thought at close range.',
       subject_treatment:
-        'Treat any prompt subject through Soft corners; preserve the prompt scene while routing detail through stock softness, halation, vignetting, motion softness, or large-format clarity, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.',
       color_and_tone:
-        'Grade with High contrast, cheap flash; let palette come from emulsion bias, slide-film saturation, monochrome silver values, aged dye shift, or instant-film chemistry, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Contrasty consumer color, flash-warmed skin, slightly green fluorescent or orange tungsten background casts, and a hot center.',
       lighting_and_shadow:
-        'Use Direct flash; shape highlights and shadows through film latitude, flash falloff, long exposure, tungsten balance, or chemical rolloff, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Built-in flash blasting the nearest subject, harsh falloff within two meters, dark background, occasional red-eye and hard shadow outline.',
       texture_and_material:
-        'Render Grainy; render grain, dust, dye clouds, soft lens corners, wet-plate artifacts, borderless instant texture, or scan softness as process evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Noticeable grain, soft plastic-lens edges, chromatic fringing in the corners, slight motion blur in the background.',
       camera_and_composition:
-        'Compose through Chromatic aberration; use camera format, crop, lens character, depth of field, view-camera stillness, toy-camera distortion, or accidental snapshot framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+        'Keep the requested subject and setting; eye-level snapshot, slightly off-level, subjects too close or cut at the edges.',
       atmosphere_and_mood:
-        'Keep the mood Fun, cheap; derive mood from memory, imperfection, tactile chemistry, nostalgia, scientific strangeness, or disposable-camera immediacy, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Candid and funny, blasted bright foregrounds against sudden careless darkness.',
       rendering_and_quality:
-        'Finish with Casual flash snapshot; finish as believable analog capture with coherent grain scale, restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Cheap-camera honesty — flash hotspot, grain, soft corners — without a drawn date stamp or border.',
       key_features:
-        'Cheap plastic lens photo; Flash falloff; High contrast, cheap flash; Direct flash; Chromatic aberration',
+        'built-in flash hotspot; harsh falloff; plastic-lens softness; corner fringing; consumer film grain',
       creative_brief:
-        "Apply Disposable Camera as a photographic preset over prompt X: preserve the user's requested subject, then route Cheap plastic lens photo, High contrast, cheap flash, Direct flash, Grainy, and Chromatic aberration through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Disposable Camera as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
     id: 'SP01-026',
-    name: 'Pinhole Camera',
+    name: 'Pinhole Long Exposure',
+    displayName: 'Pinhole Long Exposure',
+    styleAnchors: ['Pinhole Long Exposure'],
     category: '3. Film And Analog Process',
     negativePrompt:
-      'sharp, lens flare, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter',
+      'clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, selective focus bokeh, crisp detail, sharp, lens flare, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Pinhole Camera acts as a transferable photographic style router: begin from Lensless photography, Soft focus, and analog photographic process system built from film stock response, lens imperfection, chemical artifact, grain, and exposure latitude, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+        'Pinhole camera long exposure: a lensless box with a tiny aperture, so everything is equally soft and exposures run from seconds to minutes.',
       subject_treatment:
-        'Treat any prompt subject through Soft everywhere; preserve the prompt scene while routing detail through stock softness, halation, vignetting, motion softness, or large-format clarity, keeping the original subject, pose, species, object, or environment legible.',
+        'Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.',
       color_and_tone:
-        'Grade with Vignetted; let palette come from emulsion bias, slide-film saturation, monochrome silver values, aged dye shift, or instant-film chemistry, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+        'Muted, slightly warm color or soft monochrome; heavy natural darkening toward the corners.',
       lighting_and_shadow:
-        'Use Long exposure motion blur; shape highlights and shadows through film latitude, flash falloff, long exposure, tungsten balance, or chemical rolloff, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+        'Long daylight exposure: static light evenly built up, moving light sources smeared into trails.',
       texture_and_material:
-        'Render Diffraction blur; render grain, dust, dye clouds, soft lens corners, wet-plate artifacts, borderless instant texture, or scan softness as process evidence, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+        'Soft focus everywhere with no sharp plane, gentle diffraction glow; moving people, animals and water ghosted or erased.',
       camera_and_composition:
-        'Compose through Infinite depth of field (soft); use camera format, crop, lens character, depth of field, view-camera stillness, toy-camera distortion, or accidental snapshot framing, with lens distance, depth, timing, and focal hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Surreal, time passing; derive mood from memory, imperfection, tactile chemistry, nostalgia, scientific strangeness, or disposable-camera immediacy, so the preset changes interpretation without demanding a specific story, location, or character.',
+        'Keep the requested subject and setting; infinite soft depth, wide stretched perspective at the edges, strong vignette.',
+      atmosphere_and_mood: 'Dreamy and haunted, time made visible as soft ghosts and smears.',
       rendering_and_quality:
-        'Finish with Dreamy, experimental; finish as believable analog capture with coherent grain scale, restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+        'Uniform lensless softness and time blur, not a tilt-shift or a blurred digital background.',
       key_features:
-        'Lensless photography; Soft focus; Vignetted; Long exposure motion blur; Infinite depth of field (soft)',
+        'lensless uniform softness; ghosted motion; heavy corner vignette; infinite soft depth; minutes-long exposure',
       creative_brief:
-        "Apply Pinhole Camera as a photographic preset over prompt X: preserve the user's requested subject, then route Lensless photography, Vignetted, Long exposure motion blur, Diffraction blur, and Infinite depth of field (soft) through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pinhole Long Exposure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+    },
+  },
+  {
+    id: 'SP01-095',
+    name: 'Redscale Film',
+    displayName: 'Redscale Film',
+    styleAnchors: ['Redscale Film', 'reversed color negative', 'red-orange-amber palette'],
+    category: '3. Film And Analog Process',
+    domain: 'reversed color negative',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, digital HDR overprocessing, oversharpened clarity, generic vintage filter, fake film border, sprocket holes, clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, blue sky, flat red duotone, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Redscale film: color negative loaded backwards and exposed through its base, so the red-sensitive layer dominates and the whole scene burns red, orange and amber.',
+      subject_treatment:
+        'Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.',
+      color_and_tone:
+        'Brick red shadows, orange midtones, yellow to cream highlights, almost no blue or green; more exposure shifts the image toward yellow.',
+      lighting_and_shadow:
+        'Needs generous light and overexposure; bright skies turn pale yellow, shadows dense rust-brown.',
+      texture_and_material:
+        'Grainy, slightly soft emulsion with warm dye clouds; the scene reads as if shot through heat.',
+      camera_and_composition:
+        'Keep the requested framing; bright open scenes and skies show the red-to-yellow shift best.',
+      atmosphere_and_mood: 'Scorched and strange, a familiar scene seen through burning heat.',
+      rendering_and_quality:
+        'In-camera reversed-film color, not a red duotone filter; tonal range preserved inside the warm band.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Redscale Film as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'red-orange-amber palette; yellow highlights; rust-brown shadows; no blues; warm grain',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-096',
+    name: 'Super 8 Home-Movie Film',
+    displayName: 'Super 8 Home-Movie Film',
+    styleAnchors: [
+      'Super 8 Home-Movie Film',
+      'Super 8 reversal home movie',
+      'coarse home-movie grain',
+    ],
+    category: '3. Film And Analog Process',
+    domain: 'Super 8 reversal home movie',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, digital HDR overprocessing, oversharpened clarity, generic vintage filter, fake film border, sprocket holes, clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, crisp frozen motion, overlay scratches, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Super 8 home movie: a single frame pulled from a tiny-gauge reversal film shot at 18 frames per second on a handheld family camera.',
+      subject_treatment:
+        'Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.',
+      color_and_tone:
+        'Warm saturated reversal color, strong reds and yellows, slightly magenta skin, milky highlights and a faint exposure flicker across the frame.',
+      lighting_and_shadow:
+        'Available daylight or a harsh movie light; auto-exposure swings leave one side slightly brighter.',
+      texture_and_material:
+        'Coarse, dancing grain relative to the tiny frame, soft focus, motion smear on anything moving, faint dust specks.',
+      camera_and_composition:
+        'Keep the requested subject and setting; handheld 4:3-feeling framing, slight tilt, subject caught mid-movement.',
+      atmosphere_and_mood: 'Tender and far away, flickering joy caught between two blurred frames.',
+      rendering_and_quality:
+        'Projected home-movie look without sprocket holes, gate edges, frame counters or scratches drawn as overlay.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Super 8 Home-Movie Film as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'coarse home-movie grain; 18 fps motion smear; warm reversal color; exposure flicker; handheld softness',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-097',
+    name: 'Kodak Tri-X Pushed',
+    displayName: 'Kodak Tri-X Pushed',
+    styleAnchors: ['Kodak Tri-X Pushed', 'push-processed black-and-white', 'push-processed grit'],
+    category: '3. Film And Analog Process',
+    domain: 'push-processed black-and-white',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, digital HDR overprocessing, oversharpened clarity, generic vintage filter, fake film border, sprocket holes, clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, color, smooth fine grain, open shadows, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Kodak Tri-X pushed to 1600–3200: black-and-white film underexposed in low light and overdeveloped, giving hard contrast and gritty, clumped grain.',
+      subject_treatment:
+        'Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.',
+      color_and_tone:
+        'Monochrome with chalky whites, few midtones, and shadows blocked to solid black.',
+      lighting_and_shadow:
+        'Scarce available light — one bulb, a fire, a doorway — with deep falloff; highlights burn, shadows lose all detail.',
+      texture_and_material:
+        'Coarse, clumped, sharp-edged grain across the whole frame, strongest in midtone greys; slight motion blur tolerated.',
+      camera_and_composition: 'Keep the requested framing; handheld 35 mm closeness.',
+      atmosphere_and_mood: 'Raw and urgent, grit and blackness crowding every scrap of light.',
+      rendering_and_quality:
+        'Push-processed darkroom print: high contrast and grit, not a clean box-speed tonal scale.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kodak Tri-X Pushed as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'push-processed grit; clumped coarse grain; blocked black shadows; chalky highlights; low available light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-098',
+    name: 'Cross-Processed Slide',
+    displayName: 'Cross-Processed Slide',
+    styleAnchors: [
+      'Cross-Processed Slide',
+      'E-6 slide film in C-41 chemistry',
+      'cyan-green shadows',
+    ],
+    category: '3. Film And Analog Process',
+    domain: 'E-6 slide film in C-41 chemistry',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, digital HDR overprocessing, oversharpened clarity, generic vintage filter, fake film border, sprocket holes, clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, natural color balance, heavy vignette, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cross-processed slide film: E-6 reversal film developed in C-41 negative chemistry, giving harsh contrast and violently shifted color.',
+      subject_treatment:
+        'Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.',
+      color_and_tone:
+        'Cyan-green shadows, acid yellow highlights, boosted saturation, skin shifted toward yellow-orange or magenta; whites often blown.',
+      lighting_and_shadow:
+        'Bright sun and high contrast; highlights clip early, shadows go deep cyan-black.',
+      texture_and_material:
+        'Punchy medium grain, crisp edges, flat blown areas in skies and skin highlights.',
+      camera_and_composition:
+        'Keep the requested framing; sunlit subjects and open sky show the color clash most clearly.',
+      atmosphere_and_mood: 'Loud and sunburnt, rebellious color clashing in harsh bright sun.',
+      rendering_and_quality:
+        'Chemical color shift in the emulsion, not an Instagram split-tone; no vignette or light leaks unless asked.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cross-Processed Slide as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'cyan-green shadows; acid yellow highlights; blown whites; boosted saturation; harsh contrast',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-099',
+    name: 'Bleach Bypass Print',
+    displayName: 'Bleach Bypass Print',
+    styleAnchors: ['Bleach Bypass Print', 'silver-retention processing', 'half-drained color'],
+    category: '3. Film And Analog Process',
+    domain: 'silver-retention processing',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, digital HDR overprocessing, oversharpened clarity, generic vintage filter, fake film border, sprocket holes, clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, vivid saturated color, teal and orange grade, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bleach bypass: the bleach step skipped so silver stays in the image alongside the color dyes, as in gritty war and crime films.',
+      subject_treatment:
+        'Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.',
+      color_and_tone:
+        'Color drained to about half saturation, steely grey-green cast, skin pallid, blacks deep and metallic, highlights hard and bright.',
+      lighting_and_shadow:
+        'High contrast; overcast or hard side light both harden, shadows heavy with silver density.',
+      texture_and_material:
+        'Gritty visible grain, silvery sheen on wet and metal surfaces, skin texture and dirt emphasized.',
+      camera_and_composition:
+        'Keep the requested framing; faces, metal and wet surfaces carry the silver sheen.',
+      atmosphere_and_mood: 'Grim and exhausted, color drained away under heavy silver weight.',
+      rendering_and_quality:
+        'Silver-retained print look — desaturated but contrasty — not simple black-and-white or a teal-orange grade.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bleach Bypass Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'half-drained color; silver-dense blacks; steely sheen; hard contrast; gritty grain',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-100',
+    name: 'Lith Print',
+    displayName: 'Lith Print',
+    styleAnchors: ['Lith Print', 'lith-developed darkroom print', 'peppery black shadows'],
+    category: '3. Film And Analog Process',
+    domain: 'lith-developed darkroom print',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, digital HDR overprocessing, oversharpened clarity, generic vintage filter, fake film border, sprocket holes, clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, full color, even sepia wash, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Lith print: a heavily overexposed darkroom print developed in dilute lith developer, pulled at the last second, giving peppery black shadows and soft, warm highlights.',
+      subject_treatment:
+        'Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.',
+      color_and_tone:
+        'Warm monochrome: salmon, peach and cream highlights against cold charcoal-black shadows — a natural split tone from one print.',
+      lighting_and_shadow:
+        'Hard, grainy shadows with sudden edges; highlights soft, low contrast and glowing.',
+      texture_and_material:
+        'Coarse "infectious" pepper grain in the darks, smooth creamy highlights, matte fiber-paper surface.',
+      camera_and_composition:
+        'Keep the requested framing; enlarger-print look with slightly soft, burned-in corners.',
+      atmosphere_and_mood:
+        'Moody and intimate, soft glowing lights against gritty handmade darkness.',
+      rendering_and_quality:
+        'Darkroom paper print look, not a sepia filter; each tone zone behaves differently (pepper shadows, soft highlights).',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lith Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'peppery black shadows; salmon-cream highlights; natural split tone; matte fiber paper; darkroom unpredictability',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP01-101',
+    name: 'Film Soup',
+    displayName: 'Film Soup',
+    styleAnchors: ['Film Soup', 'chemically pre-soaked film', 'chemical color blooms'],
+    category: '3. Film And Analog Process',
+    domain: 'chemically pre-soaked film',
+    negativePrompt:
+      'illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, digital HDR overprocessing, oversharpened clarity, generic vintage filter, fake film border, sprocket holes, clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, digital glitch, subject hidden by damage, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Film soup: color film soaked in household chemicals before shooting, so the damaged emulsion erupts in blooms, bubbles and saturated color stains over a readable photo.',
+      subject_treatment:
+        'Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.',
+      color_and_tone:
+        'Magenta, cyan, acid yellow and electric green blotches blooming out of otherwise normal color; shifts strongest in skies and flat areas.',
+      lighting_and_shadow:
+        'Normal photographic light underneath; stains glow as if lit from within.',
+      texture_and_material:
+        'Round bubble craters, dissolved emulsion patches, speckles and dendritic blooms, concentrated toward edges and sky, leaving the main subject readable.',
+      camera_and_composition:
+        'Keep the requested framing; the damage frames the subject rather than covering it.',
+      atmosphere_and_mood: 'Psychedelic and eerie, a calm picture slowly being eaten by color.',
+      rendering_and_quality:
+        'Organic chemical damage in the emulsion, not a digital glitch, overlay texture or double exposure.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Film Soup as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
+      key_features:
+        'chemical color blooms; bubble craters; dissolved emulsion patches; readable subject; stained sky',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

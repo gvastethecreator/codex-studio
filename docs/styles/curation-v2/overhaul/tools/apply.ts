@@ -23,6 +23,7 @@ export interface Update {
   name?: string;
   dna?: Partial<Dna>;
   avoid?: string[]; // replaces the preset-specific head of avoidRules (common tail is kept/added)
+  dropAvoid?: string[]; // inherited rules that contradict the technique (e.g. "noisy" on a grain stock)
   briefs: [string, string, string];
 }
 export interface Create {
@@ -108,8 +109,12 @@ for (const [id, update] of Object.entries(spec.updates)) {
     doc.visualDna.creative_brief = creativeBrief(doc.name);
     doc.version = Number(doc.version ?? 1) + 1;
   }
-  if (update.avoid) {
-    doc.avoidRules = mergeAvoid(update.avoid, doc.avoidRules);
+  if (update.avoid || update.dropAvoid) {
+    const drop = new Set((update.dropAvoid ?? []).map((rule) => rule.toLowerCase()));
+    const kept = (doc.avoidRules ?? []).filter((rule: string) => !drop.has(rule.toLowerCase()));
+    doc.avoidRules = mergeAvoid(update.avoid ?? [], kept).filter(
+      (rule) => !drop.has(rule.toLowerCase()),
+    );
     doc.attributes = {
       ...doc.attributes,
       negativePrompt: `${doc.avoidRules.join(', ')}, noisy compression artifacts`,

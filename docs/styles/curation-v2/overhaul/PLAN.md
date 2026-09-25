@@ -47,10 +47,11 @@ Pack order, skipping pack_12 and pack_17: pack_01 → pack_24, then pack_12, pac
 
 ## Progress
 
-| Category                        | Audit | DNA  | Briefs | New presets       | Cards               | Commit             |
-| ------------------------------- | ----- | ---- | ------ | ----------------- | ------------------- | ------------------ |
-| pack_01::1. Portrait And Studio | done  | done | done   | 2 (SP01-088, 089) | generated, reviewed | 58808ede, b12dd6f5 |
-| pack_01::2. Lighting Techniques | done  | done | done   | 5 (SP01-090…094)  | pending (local)     | 3adb6717 + fix     |
+| Category                            | Audit | DNA  | Briefs | New presets       | Cards               | Commit             |
+| ----------------------------------- | ----- | ---- | ------ | ----------------- | ------------------- | ------------------ |
+| pack_01::1. Portrait And Studio     | done  | done | done   | 2 (SP01-088, 089) | generated, reviewed | 58808ede, b12dd6f5 |
+| pack_01::2. Lighting Techniques     | done  | done | done   | 5 (SP01-090…094)  | pending (local)     | 3adb6717 + fix     |
+| pack_01::3. Film And Analog Process | done  | done | done   | 7 (SP01-095…101)  | pending (local)     | see git log        |
 
 ## Open risks
 

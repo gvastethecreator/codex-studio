@@ -3,7 +3,7 @@ id: SP01-021
 packId: pack_01
 name: Large Format (4x5)
 category: 3. Film And Analog Process
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,46 +12,24 @@ tags:
   - photography-and-realism
   - film-and-analog-process
 visualDna:
-  aesthetic: >-
-    Large Format (4x5) acts as a transferable photographic style router: begin from View camera
-    photo, Extreme resolution, and analog photographic process system built from film stock
-    response, lens imperfection, chemical artifact, grain, and exposure latitude, then apply the
-    photographic behavior to prompt X instead of recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through Incredible detail; preserve the prompt scene while routing
-    detail through stock softness, halation, vignetting, motion softness, or large-format clarity,
-    keeping the original subject, pose, species, object, or environment legible.
-  color_and_tone: >-
-    Grade with Rich, smooth tones; let palette come from emulsion bias, slide-film saturation,
-    monochrome silver values, aged dye shift, or instant-film chemistry, with value separation and
-    white balance choices that feel captured in-camera rather than painted over.
-  lighting_and_shadow: >-
-    Use Controlled; shape highlights and shadows through film latitude, flash falloff, long
-    exposure, tungsten balance, or chemical rolloff, preserving believable exposure, shadow density,
-    highlight rolloff, and source motivation.
-  texture_and_material: >-
-    Render Zero grain; render grain, dust, dye clouds, soft lens corners, wet-plate artifacts,
-    borderless instant texture, or scan softness as process evidence, avoiding both waxy smoothing
-    and noisy texture overlays that hide the prompt content.
-  camera_and_composition: >-
-    Compose through Tilt-shift potential; use camera format, crop, lens character, depth of field,
-    view-camera stillness, toy-camera distortion, or accidental snapshot framing, with lens
-    distance, depth, timing, and focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Grand, still; derive mood from memory, imperfection, tactile chemistry, nostalgia,
-    scientific strangeness, or disposable-camera immediacy, so the preset changes interpretation
-    without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Fine-art view camera; finish as believable analog capture with coherent grain scale,
-    restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and
-    disciplined denoise without losing natural grain where the preset needs it.
-  key_features: View camera photo; Extreme resolution; Rich, smooth tones; Controlled; Tilt-shift potential
-  creative_brief: >-
-    Apply Large Format (4x5) as a photographic preset over prompt X: preserve the user's requested
-    subject, then route View camera photo, Rich, smooth tones, Controlled, Zero grain, and
-    Tilt-shift potential through optics, exposure, palette, surface response, timing, and finish
-    without requiring the card image's original subject.
+  aesthetic: 'Large-format 4x5 sheet film: a view camera on a tripod recording extraordinary detail with smooth, seamless tonal gradation.'
+  subject_treatment: Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.
+  color_and_tone: Rich, smooth tonal transitions, natural restrained color or deep neutral monochrome, subtle highlight rolloff.
+  lighting_and_shadow: Slow, deliberate exposure in natural or window light; full shadow detail and delicate highlights.
+  texture_and_material: Grain practically invisible; every stone joint, feather, thread and pore resolved.
+  camera_and_composition: Keep the requested framing; corrected vertical lines, and a tilted plane of focus that can run along the subject while the rest falls away.
+  atmosphere_and_mood: Monumental and contemplative, slow precision that invites long looking.
+  rendering_and_quality: Sheet-film clarity and tonality without digital sharpening halos or HDR; depth rendered through lens movements.
+  key_features: view-camera detail; seamless tonal gradation; corrected verticals; tilted focus plane; invisible grain
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Large Format (4x5) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - clean digital sensor look
+  - generic stock-photo face
+  - celebrity likeness
+  - changing the requested setting
+  - aging props or costume to match the film
+  - converging verticals
+  - wide-angle distortion
   - illustration
   - painting
   - drawing
@@ -59,8 +37,6 @@ avoidRules:
   - cartoon
   - anime
   - sketch
-  - blurry
-  - noisy
   - low resolution
   - watermark
   - text
@@ -75,14 +51,16 @@ avoidRules:
   - fake film border
   - oversharpened clarity
   - generic vintage filter
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-021.webp
 attributes:
-  negativePrompt: >-
-    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low
-    resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render,
-    readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened
-    clarity, generic vintage filter
+  negativePrompt: clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, converging verticals, wide-angle distortion, illustration, painting, drawing, 3d render, cartoon, anime, sketch, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

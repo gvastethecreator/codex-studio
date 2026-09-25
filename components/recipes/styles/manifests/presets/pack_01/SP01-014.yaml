@@ -3,7 +3,7 @@ id: SP01-014
 packId: pack_01
 name: Cinestill 800T
 category: 3. Film And Analog Process
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,46 +12,24 @@ tags:
   - photography-and-realism
   - film-and-analog-process
 visualDna:
-  aesthetic: >-
-    Cinestill 800T acts as a transferable photographic style router: begin from Night photography
-    film, Red halos, and analog photographic process system built from film stock response, lens
-    imperfection, chemical artifact, grain, and exposure latitude, then apply the photographic
-    behavior to prompt X instead of recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through Halation around lights; preserve the prompt scene while routing
-    detail through stock softness, halation, vignetting, motion softness, or large-format clarity,
-    keeping the original subject, pose, species, object, or environment legible.
-  color_and_tone: >-
-    Grade with Cool tungsten balance; let palette come from emulsion bias, slide-film saturation,
-    monochrome silver values, aged dye shift, or instant-film chemistry, with value separation and
-    white balance choices that feel captured in-camera rather than painted over.
-  lighting_and_shadow: >-
-    Use Artificial light; shape highlights and shadows through film latitude, flash falloff, long
-    exposure, tungsten balance, or chemical rolloff, preserving believable exposure, shadow density,
-    highlight rolloff, and source motivation.
-  texture_and_material: >-
-    Render Medium grain; render grain, dust, dye clouds, soft lens corners, wet-plate artifacts,
-    borderless instant texture, or scan softness as process evidence, avoiding both waxy smoothing
-    and noisy texture overlays that hide the prompt content.
-  camera_and_composition: >-
-    Compose through Red halation glow; use camera format, crop, lens character, depth of field,
-    view-camera stillness, toy-camera distortion, or accidental snapshot framing, with lens
-    distance, depth, timing, and focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Nocturnal, moody; derive mood from memory, imperfection, tactile chemistry,
-    nostalgia, scientific strangeness, or disposable-camera immediacy, so the preset changes
-    interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Cinematic, moody; finish as believable analog capture with coherent grain scale,
-    restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and
-    disciplined denoise without losing natural grain where the preset needs it.
-  key_features: Night photography film; Red halos; Cool tungsten balance; Artificial light; Red halation glow
-  creative_brief: >-
-    Apply Cinestill 800T as a photographic preset over prompt X: preserve the user's requested
-    subject, then route Night photography film, Cool tungsten balance, Artificial light, Medium
-    grain, and Red halation glow through optics, exposure, palette, surface response, timing, and
-    finish without requiring the card image's original subject.
+  aesthetic: 'Cinestill 800T: tungsten-balanced motion-picture stock with its anti-halation layer removed, so every bright light blooms with a red-orange halo.'
+  subject_treatment: Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.
+  color_and_tone: Cool teal and cyan shadows from the tungsten balance, warm amber practicals, and saturated red-orange halation rings; daylight turns bluish.
+  lighting_and_shadow: Night and interior practicals — lamps, lanterns, bulbs, fire — as point sources; halation glows around each one and around bright edges.
+  texture_and_material: Medium, visible grain from the fast emulsion; soft glow on glossy surfaces near lights.
+  camera_and_composition: Keep the requested framing; include at least one practical light so its red halo shows.
+  atmosphere_and_mood: Nocturnal and melancholic, warm halos glowing against cool empty shadow.
+  rendering_and_quality: 'Motion-picture negative look: soft rolloff, halation in-camera rather than painted glow, no digital bloom filter.'
+  key_features: red-orange halation halos; tungsten teal shadows; amber practicals; fast-film grain; night cinema stock
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cinestill 800T as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - clean digital sensor look
+  - generic stock-photo face
+  - celebrity likeness
+  - changing the requested setting
+  - aging props or costume to match the film
+  - daylight white balance
+  - painted glow overlay
   - illustration
   - painting
   - drawing
@@ -59,8 +37,6 @@ avoidRules:
   - cartoon
   - anime
   - sketch
-  - blurry
-  - noisy
   - low resolution
   - watermark
   - text
@@ -75,14 +51,16 @@ avoidRules:
   - fake film border
   - oversharpened clarity
   - generic vintage filter
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-014.webp
 attributes:
-  negativePrompt: >-
-    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low
-    resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render,
-    readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened
-    clarity, generic vintage filter
+  negativePrompt: clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, daylight white balance, painted glow overlay, illustration, painting, drawing, 3d render, cartoon, anime, sketch, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

@@ -1,0 +1,88 @@
+schemaVersion: 1
+id: SP01-097
+packId: pack_01
+name: Kodak Tri-X Pushed
+styleAnchors:
+  - Kodak Tri-X Pushed
+  - push-processed black-and-white
+  - push-processed grit
+displayName: Kodak Tri-X Pushed
+category: 3. Film And Analog Process
+domain: push-processed black-and-white
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - film-and-analog-process
+  - tri-x
+  - push-processing
+  - black-and-white
+  - film
+visualDna:
+  aesthetic: 'Kodak Tri-X pushed to 1600–3200: black-and-white film underexposed in low light and overdeveloped, giving hard contrast and gritty, clumped grain.'
+  subject_treatment: Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.
+  color_and_tone: Monochrome with chalky whites, few midtones, and shadows blocked to solid black.
+  lighting_and_shadow: Scarce available light — one bulb, a fire, a doorway — with deep falloff; highlights burn, shadows lose all detail.
+  texture_and_material: Coarse, clumped, sharp-edged grain across the whole frame, strongest in midtone greys; slight motion blur tolerated.
+  camera_and_composition: Keep the requested framing; handheld 35 mm closeness.
+  atmosphere_and_mood: Raw and urgent, grit and blackness crowding every scrap of light.
+  rendering_and_quality: 'Push-processed darkroom print: high contrast and grit, not a clean box-speed tonal scale.'
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kodak Tri-X Pushed as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: push-processed grit; clumped coarse grain; blocked black shadows; chalky highlights; low available light
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - synthetic CGI
+  - plastic render
+  - digital HDR overprocessing
+  - oversharpened clarity
+  - generic vintage filter
+  - fake film border
+  - sprocket holes
+  - clean digital sensor look
+  - generic stock-photo face
+  - celebrity likeness
+  - changing the requested setting
+  - aging props or costume to match the film
+  - color
+  - smooth fine grain
+  - open shadows
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, digital HDR overprocessing, oversharpened clarity, generic vintage filter, fake film border, sprocket holes, clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, color, smooth fine grain, open shadows, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: film-and-analog-process
+  categoryName: 3. Film And Analog Process
+  tags:
+    - photography-and-realism
+    - film-and-analog-process
+    - tri-x
+    - push-processing
+    - black-and-white
+    - film
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: push-processed black-and-white

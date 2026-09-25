@@ -67,6 +67,13 @@ categories:
       - pack_01/SP01-021.yaml
       - pack_01/SP01-022.yaml
       - pack_01/SP01-026.yaml
+      - pack_01/SP01-095.yaml
+      - pack_01/SP01-096.yaml
+      - pack_01/SP01-097.yaml
+      - pack_01/SP01-098.yaml
+      - pack_01/SP01-099.yaml
+      - pack_01/SP01-100.yaml
+      - pack_01/SP01-101.yaml
   - id: documentary-and-street
     name: 4. Documentary And Street
     presetRefs:
@@ -174,6 +181,13 @@ presetRefs:
   - pack_01/SP01-021.yaml
   - pack_01/SP01-022.yaml
   - pack_01/SP01-026.yaml
+  - pack_01/SP01-095.yaml
+  - pack_01/SP01-096.yaml
+  - pack_01/SP01-097.yaml
+  - pack_01/SP01-098.yaml
+  - pack_01/SP01-099.yaml
+  - pack_01/SP01-100.yaml
+  - pack_01/SP01-101.yaml
   - pack_01/SP01-023.yaml
   - pack_01/SP01-024.yaml
   - pack_01/SP01-046.yaml

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP01-026
 packId: pack_01
-name: Pinhole Camera
+name: Pinhole Long Exposure
 category: 3. Film And Analog Process
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,48 +12,24 @@ tags:
   - photography-and-realism
   - film-and-analog-process
 visualDna:
-  aesthetic: >-
-    Pinhole Camera acts as a transferable photographic style router: begin from Lensless
-    photography, Soft focus, and analog photographic process system built from film stock response,
-    lens imperfection, chemical artifact, grain, and exposure latitude, then apply the photographic
-    behavior to prompt X instead of recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through Soft everywhere; preserve the prompt scene while routing detail
-    through stock softness, halation, vignetting, motion softness, or large-format clarity, keeping
-    the original subject, pose, species, object, or environment legible.
-  color_and_tone: >-
-    Grade with Vignetted; let palette come from emulsion bias, slide-film saturation, monochrome
-    silver values, aged dye shift, or instant-film chemistry, with value separation and white
-    balance choices that feel captured in-camera rather than painted over.
-  lighting_and_shadow: >-
-    Use Long exposure motion blur; shape highlights and shadows through film latitude, flash
-    falloff, long exposure, tungsten balance, or chemical rolloff, preserving believable exposure,
-    shadow density, highlight rolloff, and source motivation.
-  texture_and_material: >-
-    Render Diffraction blur; render grain, dust, dye clouds, soft lens corners, wet-plate artifacts,
-    borderless instant texture, or scan softness as process evidence, avoiding both waxy smoothing
-    and noisy texture overlays that hide the prompt content.
-  camera_and_composition: >-
-    Compose through Infinite depth of field (soft); use camera format, crop, lens character, depth
-    of field, view-camera stillness, toy-camera distortion, or accidental snapshot framing, with
-    lens distance, depth, timing, and focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Surreal, time passing; derive mood from memory, imperfection, tactile chemistry,
-    nostalgia, scientific strangeness, or disposable-camera immediacy, so the preset changes
-    interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Dreamy, experimental; finish as believable analog capture with coherent grain scale,
-    restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and
-    disciplined denoise without losing natural grain where the preset needs it.
-  key_features: >-
-    Lensless photography; Soft focus; Vignetted; Long exposure motion blur; Infinite depth of field
-    (soft)
-  creative_brief: >-
-    Apply Pinhole Camera as a photographic preset over prompt X: preserve the user's requested
-    subject, then route Lensless photography, Vignetted, Long exposure motion blur, Diffraction
-    blur, and Infinite depth of field (soft) through optics, exposure, palette, surface response,
-    timing, and finish without requiring the card image's original subject.
+  aesthetic: 'Pinhole camera long exposure: a lensless box with a tiny aperture, so everything is equally soft and exposures run from seconds to minutes.'
+  subject_treatment: Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.
+  color_and_tone: Muted, slightly warm color or soft monochrome; heavy natural darkening toward the corners.
+  lighting_and_shadow: 'Long daylight exposure: static light evenly built up, moving light sources smeared into trails.'
+  texture_and_material: Soft focus everywhere with no sharp plane, gentle diffraction glow; moving people, animals and water ghosted or erased.
+  camera_and_composition: Keep the requested subject and setting; infinite soft depth, wide stretched perspective at the edges, strong vignette.
+  atmosphere_and_mood: Dreamy and haunted, time made visible as soft ghosts and smears.
+  rendering_and_quality: Uniform lensless softness and time blur, not a tilt-shift or a blurred digital background.
+  key_features: lensless uniform softness; ghosted motion; heavy corner vignette; infinite soft depth; minutes-long exposure
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pinhole Long Exposure as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - clean digital sensor look
+  - generic stock-photo face
+  - celebrity likeness
+  - changing the requested setting
+  - aging props or costume to match the film
+  - selective focus bokeh
+  - crisp detail
   - sharp
   - lens flare
   - illustration
@@ -74,13 +50,17 @@ avoidRules:
   - fake film border
   - oversharpened clarity
   - generic vintage filter
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-026.webp
 attributes:
-  negativePrompt: >-
-    sharp, lens flare, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic
-    CGI, plastic render, watermark, readable text, signature, low resolution, digital HDR
-    overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter
+  negativePrompt: clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, selective focus bokeh, crisp detail, sharp, lens flare, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism
@@ -94,3 +74,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Pinhole Long Exposure
+styleAnchors:
+  - Pinhole Long Exposure

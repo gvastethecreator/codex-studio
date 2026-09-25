@@ -3,7 +3,7 @@
     {
       "id": "pack_01",
       "name": "Photography & Realism",
-      "presetCount": 94
+      "presetCount": 101
     }
   ],
   "presets": [
@@ -603,7 +603,8 @@
     },
     {
       "id": "SP01-018",
-      "name": "Wet Plate Collodion",
+      "name": "Wet Plate Ambrotype",
+      "styleAnchors": ["Wet Plate Ambrotype"],
       "ref": "pack_01/SP01-018.yaml",
       "packId": "pack_01",
       "packName": "Photography & Realism",
@@ -611,11 +612,12 @@
       "categoryName": "3. Film And Analog Process",
       "tags": ["photography-and-realism", "film-and-analog-process"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp01-018 wet plate collodion 3. film and analog process film response pack_01 photography & realism film-and-analog-process photography-and-realism film-and-analog-process"
+      "searchableText": "sp01-018 wet plate ambrotype 3. film and analog process film response pack_01 photography & realism film-and-analog-process photography-and-realism film-and-analog-process"
     },
     {
       "id": "SP01-019",
-      "name": "Infrared Film",
+      "name": "Black-and-White Infrared Film",
+      "styleAnchors": ["Black-and-White Infrared Film"],
       "ref": "pack_01/SP01-019.yaml",
       "packId": "pack_01",
       "packName": "Photography & Realism",
@@ -623,7 +625,7 @@
       "categoryName": "3. Film And Analog Process",
       "tags": ["photography-and-realism", "film-and-analog-process"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp01-019 infrared film 3. film and analog process film response pack_01 photography & realism film-and-analog-process photography-and-realism film-and-analog-process"
+      "searchableText": "sp01-019 black-and-white infrared film 3. film and analog process film response pack_01 photography & realism film-and-analog-process photography-and-realism film-and-analog-process"
     },
     {
       "id": "SP01-020",
@@ -663,7 +665,8 @@
     },
     {
       "id": "SP01-026",
-      "name": "Pinhole Camera",
+      "name": "Pinhole Long Exposure",
+      "styleAnchors": ["Pinhole Long Exposure"],
       "ref": "pack_01/SP01-026.yaml",
       "packId": "pack_01",
       "packName": "Photography & Realism",
@@ -671,7 +674,129 @@
       "categoryName": "3. Film And Analog Process",
       "tags": ["photography-and-realism", "film-and-analog-process"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp01-026 pinhole camera 3. film and analog process film response pack_01 photography & realism film-and-analog-process photography-and-realism film-and-analog-process"
+      "searchableText": "sp01-026 pinhole long exposure 3. film and analog process film response pack_01 photography & realism film-and-analog-process photography-and-realism film-and-analog-process"
+    },
+    {
+      "id": "SP01-095",
+      "name": "Redscale Film",
+      "styleAnchors": ["Redscale Film", "reversed color negative", "red-orange-amber palette"],
+      "ref": "pack_01/SP01-095.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "film-and-analog-process",
+      "categoryName": "3. Film And Analog Process",
+      "domain": "reversed color negative",
+      "tags": ["photography-and-realism", "film-and-analog-process", "reversed-color-negative"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-095 redscale film reversed color negative red-orange-amber palette 3. film and analog process film response reversed color negative pack_01 photography & realism film-and-analog-process photography-and-realism film-and-analog-process reversed-color-negative"
+    },
+    {
+      "id": "SP01-096",
+      "name": "Super 8 Home-Movie Film",
+      "styleAnchors": [
+        "Super 8 Home-Movie Film",
+        "Super 8 reversal home movie",
+        "coarse home-movie grain"
+      ],
+      "ref": "pack_01/SP01-096.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "film-and-analog-process",
+      "categoryName": "3. Film And Analog Process",
+      "domain": "Super 8 reversal home movie",
+      "tags": ["photography-and-realism", "film-and-analog-process", "super-8-reversal-home-movie"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-096 super 8 home-movie film super 8 reversal home movie coarse home-movie grain 3. film and analog process film response super 8 reversal home movie pack_01 photography & realism film-and-analog-process photography-and-realism film-and-analog-process super-8-reversal-home-movie"
+    },
+    {
+      "id": "SP01-097",
+      "name": "Kodak Tri-X Pushed",
+      "styleAnchors": [
+        "Kodak Tri-X Pushed",
+        "push-processed black-and-white",
+        "push-processed grit"
+      ],
+      "ref": "pack_01/SP01-097.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "film-and-analog-process",
+      "categoryName": "3. Film And Analog Process",
+      "domain": "push-processed black-and-white",
+      "tags": [
+        "photography-and-realism",
+        "film-and-analog-process",
+        "push-processed-black-and-white"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-097 kodak tri-x pushed push-processed black-and-white push-processed grit 3. film and analog process film response push-processed black-and-white pack_01 photography & realism film-and-analog-process photography-and-realism film-and-analog-process push-processed-black-and-white"
+    },
+    {
+      "id": "SP01-098",
+      "name": "Cross-Processed Slide",
+      "styleAnchors": [
+        "Cross-Processed Slide",
+        "E-6 slide film in C-41 chemistry",
+        "cyan-green shadows"
+      ],
+      "ref": "pack_01/SP01-098.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "film-and-analog-process",
+      "categoryName": "3. Film And Analog Process",
+      "domain": "E-6 slide film in C-41 chemistry",
+      "tags": [
+        "photography-and-realism",
+        "film-and-analog-process",
+        "e-6-slide-film-in-c-41-chemistry"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-098 cross-processed slide e-6 slide film in c-41 chemistry cyan-green shadows 3. film and analog process film response e-6 slide film in c-41 chemistry pack_01 photography & realism film-and-analog-process photography-and-realism film-and-analog-process e-6-slide-film-in-c-41-chemistry"
+    },
+    {
+      "id": "SP01-099",
+      "name": "Bleach Bypass Print",
+      "styleAnchors": ["Bleach Bypass Print", "silver-retention processing", "half-drained color"],
+      "ref": "pack_01/SP01-099.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "film-and-analog-process",
+      "categoryName": "3. Film And Analog Process",
+      "domain": "silver-retention processing",
+      "tags": ["photography-and-realism", "film-and-analog-process", "silver-retention-processing"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-099 bleach bypass print silver-retention processing half-drained color 3. film and analog process film response silver-retention processing pack_01 photography & realism film-and-analog-process photography-and-realism film-and-analog-process silver-retention-processing"
+    },
+    {
+      "id": "SP01-100",
+      "name": "Lith Print",
+      "styleAnchors": ["Lith Print", "lith-developed darkroom print", "peppery black shadows"],
+      "ref": "pack_01/SP01-100.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "film-and-analog-process",
+      "categoryName": "3. Film And Analog Process",
+      "domain": "lith-developed darkroom print",
+      "tags": [
+        "photography-and-realism",
+        "film-and-analog-process",
+        "lith-developed-darkroom-print"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-100 lith print lith-developed darkroom print peppery black shadows 3. film and analog process film response lith-developed darkroom print pack_01 photography & realism film-and-analog-process photography-and-realism film-and-analog-process lith-developed-darkroom-print"
+    },
+    {
+      "id": "SP01-101",
+      "name": "Film Soup",
+      "styleAnchors": ["Film Soup", "chemically pre-soaked film", "chemical color blooms"],
+      "ref": "pack_01/SP01-101.yaml",
+      "packId": "pack_01",
+      "packName": "Photography & Realism",
+      "categoryId": "film-and-analog-process",
+      "categoryName": "3. Film And Analog Process",
+      "domain": "chemically pre-soaked film",
+      "tags": ["photography-and-realism", "film-and-analog-process", "chemically-pre-soaked-film"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp01-101 film soup chemically pre-soaked film chemical color blooms 3. film and analog process film response chemically pre-soaked film pack_01 photography & realism film-and-analog-process photography-and-realism film-and-analog-process chemically-pre-soaked-film"
     },
     {
       "id": "SP01-023",
@@ -1166,5 +1291,5 @@
       "searchableText": "sp01-077 medical photography 7. technical and specialist imaging technical capture pack_01 photography & realism technical-and-specialist-imaging photography-and-realism technical-and-specialist-imaging"
     }
   ],
-  "totalPresetCount": 94
+  "totalPresetCount": 101
 }

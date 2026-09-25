@@ -3,7 +3,7 @@ id: SP01-011
 packId: pack_01
 name: Kodak Portra 400
 category: 3. Film And Analog Process
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,51 +12,24 @@ tags:
   - photography-and-realism
   - film-and-analog-process
 visualDna:
-  aesthetic: >-
-    Kodak Portra 400 acts as a transferable photographic style router: begin from Warm analog film
-    look, Yellow/Red bias, and analog photographic process system built from film stock response,
-    lens imperfection, chemical artifact, grain, and exposure latitude, then apply the photographic
-    behavior to prompt X instead of recreating a fixed card scene.
-  subject_treatment: >-
-    Treat any prompt subject through Soft but sharp; preserve the prompt scene while routing detail
-    through stock softness, halation, vignetting, motion softness, or large-format clarity, keeping
-    the original subject, pose, species, object, or environment legible.
-  color_and_tone: >-
-    Grade with Warm neutrals, pastel highlights; let palette come from emulsion bias, slide-film
-    saturation, monochrome silver values, aged dye shift, or instant-film chemistry, with value
-    separation and white balance choices that feel captured in-camera rather than painted over.
-  lighting_and_shadow: >-
-    Use Natural, forgiving; shape highlights and shadows through film latitude, flash falloff, long
-    exposure, tungsten balance, or chemical rolloff, preserving believable exposure, shadow density,
-    highlight rolloff, and source motivation.
-  texture_and_material: >-
-    Render Fine grain; render grain, dust, dye clouds, soft lens corners, wet-plate artifacts,
-    borderless instant texture, or scan softness as process evidence, avoiding both waxy smoothing
-    and noisy texture overlays that hide the prompt content.
-  camera_and_composition: >-
-    Compose through Kodak Portra 400 analog stock character, emulsion color bias, real grain, and
-    process-specific camera behavior; use camera format, crop, lens character, depth of field,
-    view-camera stillness, toy-camera distortion, or accidental snapshot framing, with lens
-    distance, depth, timing, and focal hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Nostalgic, warm; derive mood from memory, imperfection, tactile chemistry,
-    nostalgia, scientific strangeness, or disposable-camera immediacy, so the preset changes
-    interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with Professional film; finish as believable analog capture with coherent grain scale,
-    restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and
-    disciplined denoise without losing natural grain where the preset needs it.
-  key_features: >-
-    Warm analog film look; Yellow/Red bias; Warm neutrals, pastel highlights; Natural, forgiving;
-    Kodak Portra 400 analog stock character, emulsion color bias, real grain, and process-specific
-    camera behavior
-  creative_brief: >-
-    Apply Kodak Portra 400 as a photographic preset over prompt X: preserve the user's requested
-    subject, then route Warm analog film look, Warm neutrals, pastel highlights, Natural, forgiving,
-    Fine grain, and Kodak Portra 400 analog stock character, emulsion color bias, real grain, and
-    process-specific camera behavior through optics, exposure, palette, surface response, timing,
-    and finish without requiring the card image's original subject.
+  aesthetic: 'Kodak Portra 400 color negative: a forgiving portrait stock rated at 400 and usually overexposed by a stop, giving creamy low-contrast color and flattering skin.'
+  subject_treatment: Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.
+  color_and_tone: Peach and apricot skin, warm neutral whites, pastel highlights that roll off instead of clipping, soft sage greens and muted blues; shadows lifted and slightly warm.
+  lighting_and_shadow: 'Wide latitude: bright skies and faces both hold detail; shadows open rather than crushed, highlight shoulder gentle.'
+  texture_and_material: Fine, even, tight grain visible in flat midtones and skies; no digital smoothing on skin.
+  camera_and_composition: Keep the requested framing; 35 mm or 120 rendering with natural lens falloff and modest depth of field.
+  atmosphere_and_mood: Tender and unhurried, warmth and softness keeping every edge gentle.
+  rendering_and_quality: 'Lab-scanned negative look: soft contrast curve, fine grain across the frame, no HDR clarity or oversaturation.'
+  key_features: overexposed color negative; peach skin tones; pastel highlight rolloff; lifted warm shadows; fine even grain
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kodak Portra 400 as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - clean digital sensor look
+  - generic stock-photo face
+  - celebrity likeness
+  - changing the requested setting
+  - aging props or costume to match the film
+  - crushed blacks
+  - neon saturation
   - illustration
   - painting
   - drawing
@@ -64,8 +37,6 @@ avoidRules:
   - cartoon
   - anime
   - sketch
-  - blurry
-  - noisy
   - low resolution
   - watermark
   - text
@@ -80,14 +51,16 @@ avoidRules:
   - fake film border
   - oversharpened clarity
   - generic vintage filter
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-011.webp
 attributes:
-  negativePrompt: >-
-    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low
-    resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render,
-    readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened
-    clarity, generic vintage filter
+  negativePrompt: clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, crushed blacks, neon saturation, illustration, painting, drawing, 3d render, cartoon, anime, sketch, low resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

@@ -1,0 +1,85 @@
+schemaVersion: 1
+id: SP01-099
+packId: pack_01
+name: Bleach Bypass Print
+styleAnchors:
+  - Bleach Bypass Print
+  - silver-retention processing
+  - half-drained color
+displayName: Bleach Bypass Print
+category: 3. Film And Analog Process
+domain: silver-retention processing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - photography-and-realism
+  - film-and-analog-process
+  - bleach-bypass
+  - silver-retention
+  - film
+visualDna:
+  aesthetic: 'Bleach bypass: the bleach step skipped so silver stays in the image alongside the color dyes, as in gritty war and crime films.'
+  subject_treatment: Keep the prompt subject, action, setting and framing; change only the capture — emulsion color, grain, contrast curve, halation and lens behavior — so the named film or process is the first read. Do not age the costume, props or setting to match the film, and do not add frame borders, rebates or sprocket holes.
+  color_and_tone: Color drained to about half saturation, steely grey-green cast, skin pallid, blacks deep and metallic, highlights hard and bright.
+  lighting_and_shadow: High contrast; overcast or hard side light both harden, shadows heavy with silver density.
+  texture_and_material: Gritty visible grain, silvery sheen on wet and metal surfaces, skin texture and dirt emphasized.
+  camera_and_composition: Keep the requested framing; faces, metal and wet surfaces carry the silver sheen.
+  atmosphere_and_mood: Grim and exhausted, color drained away under heavy silver weight.
+  rendering_and_quality: Silver-retained print look — desaturated but contrasty — not simple black-and-white or a teal-orange grade.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bleach Bypass Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
+  key_features: half-drained color; silver-dense blacks; steely sheen; hard contrast; gritty grain
+avoidRules:
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - synthetic CGI
+  - plastic render
+  - digital HDR overprocessing
+  - oversharpened clarity
+  - generic vintage filter
+  - fake film border
+  - sprocket holes
+  - clean digital sensor look
+  - generic stock-photo face
+  - celebrity likeness
+  - changing the requested setting
+  - aging props or costume to match the film
+  - vivid saturated color
+  - teal and orange grade
+  - watermark
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illustration, painting, drawing, 3d render, cartoon, anime, synthetic CGI, plastic render, digital HDR overprocessing, oversharpened clarity, generic vintage filter, fake film border, sprocket holes, clean digital sensor look, generic stock-photo face, celebrity likeness, changing the requested setting, aging props or costume to match the film, vivid saturated color, teal and orange grade, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_01
+  packName: Photography & Realism
+  categoryId: film-and-analog-process
+  categoryName: 3. Film And Analog Process
+  tags:
+    - photography-and-realism
+    - film-and-analog-process
+    - bleach-bypass
+    - silver-retention
+    - film
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: silver-retention processing
