@@ -3,7 +3,7 @@ id: SP03-015
 packId: pack_03
 name: Claymation (Stop Motion)
 category: 4. 3D Styles
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,68 +12,23 @@ tags:
   - 3d-and-cgi-rendering
   - 3d-styles
 visualDna:
-  aesthetic: >-
-    Claymation (Stop Motion) acts as a transferable CGI-style router: start from Claymation (Stop
-    Motion) fingerprinted clay, stop-motion pose increments, miniature set lighting, handmade
-    material charm and 3D style system built from modeling language, mesh abstraction, projection
-    rules, topology display, toy material, paper logic, or stylized shader constraints, then apply
-    the 3D/render behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through adapt the requested subject through fingerprinted clay,
-    stop-motion pose increments, miniature set lighting, handmade material charm while preserving
-    its identity; preserve the prompt subject while rebuilding it through the preset-specific 3D
-    language; use facets, voxels, topology lines, clay, paper folds, toon bands, or procedural
-    motion forms only when the preset calls for them, keeping the requested identity, silhouette,
-    pose, object function, or environment legible.
-  color_and_tone: >-
-    Build color with palette and exposure choices that support fingerprinted clay, stop-motion pose
-    increments, miniature set lighting, handmade material charm; use color through material
-    simplification, cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or
-    procedural motion accents, with deliberate value grouping, exposure control, and medium-specific
-    limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through light behavior that reveals fingerprinted clay, stop-motion pose
-    increments, miniature set lighting, handmade material charm; shape light through the style
-    constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold
-    light, or retro speculars, so value structure supports the renderer and does not overwrite the
-    requested content.
-  texture_and_material: >-
-    Render fingerprinted clay, stop-motion pose increments, miniature set lighting, handmade
-    material charm; surface detail should show the named construction system; cube faces, mesh
-    edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or low-poly facets
-    should appear only when they belong to the preset, keeping material scale coherent and avoiding
-    noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through scale rhythm, spacing, and composition rules shaped by fingerprinted
-    clay, stop-motion pose increments, miniature set lighting, handmade material charm; compose
-    through projection, topology readability, object grouping, axis discipline, exploded or arranged
-    parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing
-    the style work.
-  atmosphere_and_mood: >-
-    Keep the mood mood carried by fingerprinted clay, stop-motion pose increments, miniature set
-    lighting, handmade material charm; derive mood from toy-like clarity, technical breakdown,
-    handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical wonder,
-    letting the renderer alter interpretation without demanding a specific story, location, or
-    character.
-  rendering_and_quality: >-
-    Finish with finished Claymation (Stop Motion) CGI with fingerprinted clay, stop-motion pose
-    increments, miniature set lighting, handmade material charm and controlled detail; finish with
-    intentional stylization, clean geometry, stable silhouettes, and no accidental photoreal
-    overwrite unless the preset asks for it, clean denoised surfaces where appropriate, and enough
-    shader evidence to make the CGI mode recognizable.
-  key_features: >-
-    Claymation (Stop Motion) fingerprinted clay, stop-motion pose increments, miniature set
-    lighting, handmade material charm; palette and exposure choices that support fingerprinted clay,
-    stop-motion pose increments, miniature set lighting, handmade material charm; scale rhythm,
-    spacing, and composition rules shaped by fingerprinted clay, stop-motion pose increments,
-    miniature set lighting, handmade material charm
-  creative_brief: >-
-    Apply Claymation (Stop Motion) as a CGI/render preset over prompt X: preserve the user's
-    requested subject, then route modeling, shader response, lighting, material scale, composition,
-    mood, and final render craft through Claymation (Stop Motion) fingerprinted clay, stop-motion
-    pose increments, miniature set lighting, handmade material charm without requiring the card
-    image's original subject.
+  aesthetic: 'Claymation stop-motion: the subject sculpted in plasticine and posed on a miniature set, with fingerprints, tool marks and slight frame-to-frame boil.'
+  subject_treatment: Keep the prompt subject, action, setting and camera view; rebuild them in this 3D medium without changing the requested view.
+  color_and_tone: Saturated but slightly chalky plasticine colors, warm miniature set lighting.
+  lighting_and_shadow: Small hard studio lamps with soft fill, crisp little shadows on the set.
+  texture_and_material: Fingerprints, smoothing marks, tiny cracks and wire armature bulges in soft clay.
+  camera_and_composition: Keep the requested view; macro depth of field reveals the miniature scale.
+  atmosphere_and_mood: Handmade and charming, a world pressed together by patient fingers.
+  rendering_and_quality: Physical plasticine look with visible handling marks, never smooth plastic CG.
+  key_features: plasticine with fingerprints; miniature set; small hard lamps; macro depth; handmade imperfection
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Claymation (Stop Motion) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - brand logo
+  - franchise likeness
+  - readable text
+  - readable letters
+  - changing the requested camera view
+  - tram
   - smooth
   - digital
   - wrong medium
@@ -81,19 +36,21 @@ avoidRules:
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - accidental photorealism
   - generic smooth mesh
   - wrong geometry language
   - messy topology
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-015.webp
 attributes:
-  negativePrompt: >-
-    smooth, digital, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
-    watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong
-    geometry language, messy topology
+  negativePrompt: brand logo, franchise likeness, readable text, readable letters, changing the requested camera view, tram, smooth, digital, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

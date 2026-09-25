@@ -1101,7 +1101,8 @@
     },
     {
       "id": "SP03-077",
-      "name": "Lego Brick-Built 3D",
+      "name": "Toy Brick-Built 3D",
+      "styleAnchors": ["Toy Brick-Built 3D", "Lego Brick-Built 3D"],
       "ref": "pack_03/SP03-077.yaml",
       "packId": "pack_03",
       "packName": "3D & CGI Rendering",
@@ -1109,7 +1110,7 @@
       "categoryName": "4. 3D Styles",
       "tags": ["3d-and-cgi-rendering", "3d-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-077 lego brick-built 3d 4. 3d styles stylized 3d pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
+      "searchableText": "sp03-077 toy brick-built 3d lego brick-built 3d 4. 3d styles stylized 3d pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
     },
     {
       "id": "SP03-078",

@@ -3,7 +3,7 @@ id: SP03-023
 packId: pack_03
 name: Isometric 3D
 category: 4. 3D Styles
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,59 +12,22 @@ tags:
   - 3d-and-cgi-rendering
   - 3d-styles
 visualDna:
-  aesthetic: >-
-    Isometric 3D acts as a transferable CGI-style router: start from Orthographic projection, 30
-    degree angle, parallel projection and 3D style system built from modeling language, mesh
-    abstraction, projection rules, topology display, toy material, paper logic, or stylized shader
-    constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo
-    image.
-  subject_treatment: >-
-    Transform any prompt subject through Parallel lines; preserve the prompt subject while
-    rebuilding it through the preset-specific 3D language; use facets, voxels, topology lines, clay,
-    paper folds, toon bands, or procedural motion forms only when the preset calls for them, keeping
-    the requested identity, silhouette, pose, object function, or environment legible.
-  color_and_tone: >-
-    Build color with Pastel, clean, gradient friendly; use color through material simplification,
-    cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion
-    accents, with deliberate value grouping, exposure control, and medium-specific limits rather
-    than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Soft studio, shadow casting consistency; shape light through the style
-    constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold
-    light, or retro speculars, so value structure supports the renderer and does not overwrite the
-    requested content.
-  texture_and_material: >-
-    Render Smooth, isometric unity feel; surface detail should show the named construction system;
-    cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or
-    low-poly facets should appear only when they belong to the preset, keeping material scale
-    coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Lookdev camera for Isometric 3D: three quarter or orthographic
-    framing, clean silhouette read, material highlights, controlled depth, and vertical card
-    composition; compose through projection, topology readability, object grouping, axis discipline,
-    exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and
-    visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Organized, tiny, isometric clarity; derive mood from toy-like clarity, technical
-    breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical
-    wonder, letting the renderer alter interpretation without demanding a specific story, location,
-    or character.
-  rendering_and_quality: >-
-    Finish with Mobile game, icon, asset store ready; finish with intentional stylization, clean
-    geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for
-    it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode
-    recognizable.
-  key_features: >-
-    Orthographic projection; 30 degree angle, parallel projection; Pastel, clean, gradient friendly;
-    Smooth, isometric unity feel; Lookdev camera for Isometric 3D: three quarter or orthographic
-    framing, clean silhouette read, material highlights, controlled depth, and vertical card
-    composition
-  creative_brief: >-
-    Apply Isometric 3D as a CGI/render preset over prompt X: preserve the user's requested subject,
-    then route modeling, shader response, lighting, material scale, composition, mood, and final
-    render craft through Orthographic projection, 30 degree angle, parallel projection, Smooth,
-    isometric unity feel without requiring the card image's original subject.
+  aesthetic: 'Isometric 3D: the scene seen through a parallel orthographic camera at the classic isometric angle, usually as a neat cutaway block.'
+  subject_treatment: Keep the prompt subject and action; this preset owns the isometric orthographic camera and cutaway block framing, the explicit exception to keeping the requested view, and nothing else about the request changes.
+  color_and_tone: Clean pastel or saturated palette, soft gradients, gentle shadows.
+  lighting_and_shadow: Soft top-left key with ambient fill; small crisp contact shadows.
+  texture_and_material: Tidy simplified materials with clear separation between every object.
+  camera_and_composition: Parallel projection with no perspective, 30-degree axes, the scene cut into a square block.
+  atmosphere_and_mood: Orderly and inviting, a tiny world you can take in at a glance.
+  rendering_and_quality: Clean isometric render with parallel lines and no perspective distortion at all.
+  key_features: isometric orthographic camera; cutaway square block; no perspective; soft top-left key; tidy detail
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Isometric 3D as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - brand logo
+  - franchise likeness
+  - readable text
+  - readable letters
+  - perspective distortion
   - perspective
   - distortion
   - wrong medium
@@ -72,19 +35,21 @@ avoidRules:
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - accidental photorealism
   - generic smooth mesh
   - wrong geometry language
   - messy topology
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-023.webp
 attributes:
-  negativePrompt: >-
-    perspective, distortion, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture
-    chatter, watermark, readable text, signature, accidental photorealism, generic smooth mesh,
-    wrong geometry language, messy topology
+  negativePrompt: brand logo, franchise likeness, readable text, readable letters, perspective distortion, perspective, distortion, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

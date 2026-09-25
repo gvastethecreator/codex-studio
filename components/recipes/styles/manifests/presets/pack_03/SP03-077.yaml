@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP03-077
 packId: pack_03
-name: Lego Brick-Built 3D
+name: Toy Brick-Built 3D
 category: 4. 3D Styles
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,55 +12,23 @@ tags:
   - 3d-and-cgi-rendering
   - 3d-styles
 visualDna:
-  aesthetic: >-
-    Lego Brick-Built 3D acts as a transferable CGI-style router: start from Toy brick construction,
-    stud and tube logic, Studs on top, clutch power and 3D style system built from modeling
-    language, mesh abstraction, projection rules, topology display, toy material, paper logic, or
-    stylized shader constraints, then apply the 3D/render behavior to prompt X instead of recreating
-    a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Studs; preserve the prompt subject while rebuilding it
-    through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds,
-    toon bands, or procedural motion forms only when the preset calls for them, keeping the
-    requested identity, silhouette, pose, object function, or environment legible.
-  color_and_tone: >-
-    Build color with Plastic primary colors, brick bright palette; use color through material
-    simplification, cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or
-    procedural motion accents, with deliberate value grouping, exposure control, and medium-specific
-    limits rather than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Plastic gloss, animated film lighting; shape light through the style
-    constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold
-    light, or retro speculars, so value structure supports the renderer and does not overwrite the
-    requested content.
-  texture_and_material: >-
-    Render Plastic, fingerprints, ABS material; surface detail should show the named construction
-    system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural
-    blobs, or low-poly facets should appear only when they belong to the preset, keeping material
-    scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Brick steps; compose through projection, topology readability,
-    object grouping, axis discipline, exploded or arranged parts, or stylized scale rhythm, with
-    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Playful, constructive, brick by brick magic; derive mood from toy-like clarity,
-    technical breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural
-    mathematical wonder, letting the renderer alter interpretation without demanding a specific
-    story, location, or character.
-  rendering_and_quality: >-
-    Finish with Lego Movie toy brick feature energy, everything is awesome; finish with intentional
-    stylization, clean geometry, stable silhouettes, and no accidental photoreal overwrite unless
-    the preset asks for it, clean denoised surfaces where appropriate, and enough shader evidence to
-    make the CGI mode recognizable.
-  key_features: >-
-    Toy brick construction, stud and tube logic; Studs on top, clutch power; Plastic primary colors,
-    brick bright palette; Plastic, fingerprints, ABS material; Brick steps
-  creative_brief: >-
-    Apply Lego Brick-Built 3D as a CGI/render preset over prompt X: preserve the user's requested
-    subject, then route modeling, shader response, lighting, material scale, composition, mood, and
-    final render craft through Toy brick construction, stud and tube logic, Studs on top, clutch
-    power, Plastic, fingerprints, ABS material without requiring the card image's original subject.
+  aesthetic: 'Toy brick-built 3D: the subject constructed from interlocking plastic building bricks with studs on top, in bright primary colors.'
+  subject_treatment: Keep the prompt subject, action, setting and camera view; rebuild them in this 3D medium without changing the requested view.
+  color_and_tone: Bright red, blue, yellow, green, black and white plastic, glossy highlights.
+  lighting_and_shadow: Soft studio light or daylight with crisp little shadows around each stud.
+  texture_and_material: Glossy ABS plastic, studs, seams between bricks, slight fingerprints.
+  camera_and_composition: Keep the requested view; the brick scale visible in the details.
+  atmosphere_and_mood: Playful and inventive, built piece by piece.
+  rendering_and_quality: Clean toy-brick render with no brand name on the studs.
+  key_features: interlocking studded bricks; primary plastic colors; glossy ABS; brick seams; stud shadows
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Toy Brick-Built 3D as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - brand logo
+  - franchise likeness
+  - readable text
+  - readable letters
+  - changing the requested camera view
+  - brand name on studs
   - smooth
   - melted
   - wrong medium
@@ -68,19 +36,21 @@ avoidRules:
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - accidental photorealism
   - generic smooth mesh
   - wrong geometry language
   - messy topology
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-077.webp
 attributes:
-  negativePrompt: >-
-    smooth, melted, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
-    watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong
-    geometry language, messy topology
+  negativePrompt: brand logo, franchise likeness, readable text, readable letters, changing the requested camera view, brand name on studs, smooth, melted, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
@@ -94,3 +64,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Toy Brick-Built 3D
+styleAnchors:
+  - Toy Brick-Built 3D
+  - Lego Brick-Built 3D

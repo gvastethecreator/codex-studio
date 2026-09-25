@@ -3,7 +3,7 @@ id: SP03-058
 packId: pack_03
 name: 3D Typography
 category: 4. 3D Styles
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,78 +12,42 @@ tags:
   - 3d-and-cgi-rendering
   - 3d-styles
 visualDna:
-  aesthetic: >-
-    3D Typography acts as a transferable CGI-style router: start from Letters made of objects,
-    Readable, letterform sculpting and 3D style system built from modeling language, mesh
-    abstraction, projection rules, topology display, toy material, paper logic, or stylized shader
-    constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo
-    image.
-  subject_treatment: >-
-    Transform any prompt subject through Bold font; preserve the prompt subject while rebuilding it
-    through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds,
-    toon bands, or procedural motion forms only when the preset calls for them, keeping the
-    requested identity, silhouette, pose, object function, or environment legible.
-  color_and_tone: >-
-    Build color with Vibrant, brand expression hues; use color through material simplification, cel
-    ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion
-    accents, with deliberate value grouping, exposure control, and medium-specific limits rather
-    than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Studio, typographic readability; shape light through the style constraint:
-    simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or
-    retro speculars, so value structure supports the renderer and does not overwrite the requested
-    content.
-  texture_and_material: >-
-    Render Material letters, physical texture; surface detail should show the named construction
-    system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural
-    blobs, or low-poly facets should appear only when they belong to the preset, keeping material
-    scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Lookdev camera for 3D Typography: three quarter or orthographic
-    framing, clean silhouette read, material highlights, controlled depth, and vertical card
-    composition; compose through projection, topology readability, object grouping, axis discipline,
-    exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and
-    visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Bold, message, visual proclamation; derive mood from toy-like clarity, technical
-    breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical
-    wonder, letting the renderer alter interpretation without demanding a specific story, location,
-    or character.
-  rendering_and_quality: >-
-    Finish with Adobe, design, headline striking; finish with intentional stylization, clean
-    geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for
-    it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode
-    recognizable.
-  key_features: >-
-    Letters made of objects; Readable, letterform sculpting; Vibrant, brand expression hues;
-    Material letters, physical texture; Lookdev camera for 3D Typography: three quarter or
-    orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical
-    card composition
-  creative_brief: >-
-    Apply 3D Typography as a CGI/render preset over prompt X: preserve the user's requested subject,
-    then route modeling, shader response, lighting, material scale, composition, mood, and final
-    render craft through Letters made of objects, Readable, letterform sculpting, Material letters,
-    physical texture without requiring the card image's original subject.
+  aesthetic: '3D typography: sculptural letter-like glyphs built from real materials and objects, lit as physical objects.'
+  subject_treatment: Keep the prompt subject and setting; express it through a sculpted glyph shape, using invented ornamental glyphs rather than readable letters unless the prompt supplies the exact text.
+  color_and_tone: Bold material colors against a clean or atmospheric backdrop.
+  lighting_and_shadow: Studio lighting that reveals depth and bevels, soft shadow on the ground.
+  texture_and_material: Glyphs made of vines, candles, stone, metal or stacked objects.
+  camera_and_composition: Glyph centered as a freestanding sculpture in a three-quarter view.
+  atmosphere_and_mood: Expressive and crafted, a symbol as an object.
+  rendering_and_quality: Physical-looking glyph sculpture; no readable words invented by the preset.
+  key_features: sculpted glyph object; material-built letterform; studio depth lighting; centered sculpture; invented ornamental shape
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 3D Typography as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - brand logo
+  - franchise likeness
+  - readable text
+  - readable letters
   - flat text
   - wrong medium
   - flat 2d paintover
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - accidental photorealism
   - generic smooth mesh
   - wrong geometry language
   - messy topology
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-058.webp
 attributes:
-  negativePrompt: >-
-    flat text, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
-    watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong
-    geometry language, messy topology
+  negativePrompt: brand logo, franchise likeness, readable text, readable letters, flat text, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

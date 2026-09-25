@@ -3,7 +3,7 @@ id: SP03-070
 packId: pack_03
 name: Retro CGI (90s)
 category: 4. 3D Styles
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,67 +12,22 @@ tags:
   - 3d-and-cgi-rendering
   - 3d-styles
 visualDna:
-  aesthetic: >-
-    Retro CGI (90s) acts as a transferable CGI-style router: start from Retro CGI (90s) 1990s CGI
-    primitives, chrome spheres, simple raytraced gradients, nostalgic render novelty and 3D style
-    system built from modeling language, mesh abstraction, projection rules, topology display, toy
-    material, paper logic, or stylized shader constraints, then apply the 3D/render behavior to
-    prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through adapt the requested subject through 1990s CGI primitives,
-    chrome spheres, simple raytraced gradients, nostalgic render novelty while preserving its
-    identity; preserve the prompt subject while rebuilding it through the preset-specific 3D
-    language; use facets, voxels, topology lines, clay, paper folds, toon bands, or procedural
-    motion forms only when the preset calls for them, keeping the requested identity, silhouette,
-    pose, object function, or environment legible.
-  color_and_tone: >-
-    Build color with palette and exposure choices that support 1990s CGI primitives, chrome spheres,
-    simple raytraced gradients, nostalgic render novelty; use color through material simplification,
-    cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion
-    accents, with deliberate value grouping, exposure control, and medium-specific limits rather
-    than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through light behavior that reveals 1990s CGI primitives, chrome spheres, simple
-    raytraced gradients, nostalgic render novelty; shape light through the style constraint:
-    simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or
-    retro speculars, so value structure supports the renderer and does not overwrite the requested
-    content.
-  texture_and_material: >-
-    Render 1990s CGI primitives, chrome spheres, simple raytraced gradients, nostalgic render
-    novelty; surface detail should show the named construction system; cube faces, mesh edges, fold
-    creases, clay fingerprints, topology overlays, procedural blobs, or low-poly facets should
-    appear only when they belong to the preset, keeping material scale coherent and avoiding noisy
-    filler texture.
-  camera_and_composition: >-
-    Structure the image through scale rhythm, spacing, and composition rules shaped by 1990s CGI
-    primitives, chrome spheres, simple raytraced gradients, nostalgic render novelty; compose
-    through projection, topology readability, object grouping, axis discipline, exploded or arranged
-    parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing
-    the style work.
-  atmosphere_and_mood: >-
-    Keep the mood mood carried by 1990s CGI primitives, chrome spheres, simple raytraced gradients,
-    nostalgic render novelty; derive mood from toy-like clarity, technical breakdown, handmade
-    stop-motion, abstract motion, retro CGI novelty, or procedural mathematical wonder, letting the
-    renderer alter interpretation without demanding a specific story, location, or character.
-  rendering_and_quality: >-
-    Finish with finished Retro CGI (90s) CGI with 1990s CGI primitives, chrome spheres, simple
-    raytraced gradients, nostalgic render novelty and controlled detail; finish with intentional
-    stylization, clean geometry, stable silhouettes, and no accidental photoreal overwrite unless
-    the preset asks for it, clean denoised surfaces where appropriate, and enough shader evidence to
-    make the CGI mode recognizable.
-  key_features: >-
-    Retro CGI (90s) 1990s CGI primitives, chrome spheres, simple raytraced gradients, nostalgic
-    render novelty; palette and exposure choices that support 1990s CGI primitives, chrome spheres,
-    simple raytraced gradients, nostalgic render novelty; scale rhythm, spacing, and composition
-    rules shaped by 1990s CGI primitives, chrome spheres, simple raytraced gradients, nostalgic
-    render novelty
-  creative_brief: >-
-    Apply Retro CGI (90s) as a CGI/render preset over prompt X: preserve the user's requested
-    subject, then route modeling, shader response, lighting, material scale, composition, mood, and
-    final render craft through Retro CGI (90s) 1990s CGI primitives, chrome spheres, simple
-    raytraced gradients, nostalgic render novelty without requiring the card image's original
-    subject.
+  aesthetic: '90s pre-rendered CD-ROM scene: lonely surreal places rendered offline for early multimedia games, with soft fog, dithered color and eerie stillness.'
+  subject_treatment: Keep the prompt subject, action, setting and camera view; rebuild them in this 3D medium without changing the requested view.
+  color_and_tone: Muted teal, rust and ochre, dithered gradients, slightly posterized skies.
+  lighting_and_shadow: Soft early raytraced shadows, volumetric fog as flat haze, glowing windows.
+  texture_and_material: Low-resolution stretched textures, clean primitive geometry, occasional dither pattern.
+  camera_and_composition: Keep the requested view; empty spaces with a single mysterious structure.
+  atmosphere_and_mood: Lonely and puzzling, a place waiting for someone to click.
+  rendering_and_quality: Pre-rendered 640x480-era look; distinct from the 90s scanline and raytracer renderer presets.
+  key_features: pre-rendered surreal emptiness; dithered color; flat fog haze; stretched low-res textures; mysterious lone structure
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Retro CGI (90s) as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - brand logo
+  - franchise likeness
+  - readable text
+  - readable letters
+  - changing the requested camera view
   - modern
   - ambient occlusion
   - wrong medium
@@ -80,19 +35,21 @@ avoidRules:
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - accidental photorealism
   - generic smooth mesh
   - wrong geometry language
   - messy topology
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-070.webp
 attributes:
-  negativePrompt: >-
-    modern, ambient occlusion, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture
-    chatter, watermark, readable text, signature, accidental photorealism, generic smooth mesh,
-    wrong geometry language, messy topology
+  negativePrompt: brand logo, franchise likeness, readable text, readable letters, changing the requested camera view, modern, ambient occlusion, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

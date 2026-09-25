@@ -3,7 +3,7 @@ id: SP03-065
 packId: pack_03
 name: 3D Icon
 category: 4. 3D Styles
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,53 +12,21 @@ tags:
   - 3d-and-cgi-rendering
   - 3d-styles
 visualDna:
-  aesthetic: >-
-    3D Icon acts as a transferable CGI-style router: start from App icon render, Front facing, soft
-    shadow base and 3D style system built from modeling language, mesh abstraction, projection
-    rules, topology display, toy material, paper logic, or stylized shader constraints, then apply
-    the 3D/render behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Rounded corners; preserve the prompt subject while
-    rebuilding it through the preset-specific 3D language; use facets, voxels, topology lines, clay,
-    paper folds, toon bands, or procedural motion forms only when the preset calls for them, keeping
-    the requested identity, silhouette, pose, object function, or environment legible.
-  color_and_tone: >-
-    Build color with Vibrant, gradient; use color through material simplification, cel ramps, toy
-    plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion accents, with
-    deliberate value grouping, exposure control, and medium-specific limits rather than generic
-    color wash.
-  lighting_and_shadow: >-
-    Handle light through Soft studio; shape light through the style constraint: simplified GI, toon
-    bands, clay softness, wire visibility, toy shadows, paper fold light, or retro speculars, so
-    value structure supports the renderer and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Smooth plastic/glass, UI grade finish; surface detail should show the named construction
-    system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural
-    blobs, or low-poly facets should appear only when they belong to the preset, keeping material
-    scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Squircle; compose through projection, topology readability, object
-    grouping, axis discipline, exploded or arranged parts, or stylized scale rhythm, with scale,
-    spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Friendly, UI, app store ready; derive mood from toy-like clarity, technical
-    breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical
-    wonder, letting the renderer alter interpretation without demanding a specific story, location,
-    or character.
-  rendering_and_quality: >-
-    Finish with macOS Big Sur glossy modern platform icon, squircle elegance; finish with
-    intentional stylization, clean geometry, stable silhouettes, and no accidental photoreal
-    overwrite unless the preset asks for it, clean denoised surfaces where appropriate, and enough
-    shader evidence to make the CGI mode recognizable.
-  key_features: >-
-    App icon render; Front facing, soft shadow base; Vibrant, gradient; Smooth plastic/glass, UI
-    grade finish; Squircle
-  creative_brief: >-
-    Apply 3D Icon as a CGI/render preset over prompt X: preserve the user's requested subject, then
-    route modeling, shader response, lighting, material scale, composition, mood, and final render
-    craft through App icon render, Front facing, soft shadow base, Smooth plastic/glass, UI grade
-    finish without requiring the card image's original subject.
+  aesthetic: '3D app icon: the subject simplified into a glossy rounded object inside a soft squircle tile, readable at tiny size.'
+  subject_treatment: Keep the prompt subject and action; this preset owns the front-facing squircle icon framing, and nothing else about the request changes.
+  color_and_tone: Vibrant gradients on soft pastel backgrounds with clean glossy highlights.
+  lighting_and_shadow: Soft top light, subtle inner glow and a small drop shadow under the tile.
+  texture_and_material: Smooth plastic, glass and soft matte clay; no fine noise.
+  camera_and_composition: Front-facing centered squircle with the simplified subject inside.
+  atmosphere_and_mood: Friendly and polished, instantly recognizable at a glance.
+  rendering_and_quality: UI-grade icon render with no text or brand marks.
+  key_features: squircle tile; simplified glossy subject; soft top light; vibrant gradient; small drop shadow
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies 3D Icon as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - brand logo
+  - franchise likeness
+  - readable text
+  - readable letters
   - flat
   - 2d icon
   - wrong medium
@@ -66,19 +34,21 @@ avoidRules:
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - accidental photorealism
   - generic smooth mesh
   - wrong geometry language
   - messy topology
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-065.webp
 attributes:
-  negativePrompt: >-
-    flat, 2d icon, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
-    watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong
-    geometry language, messy topology
+  negativePrompt: brand logo, franchise likeness, readable text, readable letters, flat, 2d icon, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

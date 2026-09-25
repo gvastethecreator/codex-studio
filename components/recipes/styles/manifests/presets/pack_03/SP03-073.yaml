@@ -3,7 +3,7 @@ id: SP03-073
 packId: pack_03
 name: Papercraft 3D
 category: 4. 3D Styles
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,57 +12,22 @@ tags:
   - 3d-and-cgi-rendering
   - 3d-styles
 visualDna:
-  aesthetic: >-
-    Papercraft 3D acts as a transferable CGI-style router: start from Virtual paper, Layered depth,
-    fold crease definition and 3D style system built from modeling language, mesh abstraction,
-    projection rules, topology display, toy material, paper logic, or stylized shader constraints,
-    then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Fold lines; preserve the prompt subject while rebuilding it
-    through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds,
-    toon bands, or procedural motion forms only when the preset calls for them, keeping the
-    requested identity, silhouette, pose, object function, or environment legible.
-  color_and_tone: >-
-    Build color with Paper texture, craft material tones; use color through material simplification,
-    cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion
-    accents, with deliberate value grouping, exposure control, and medium-specific limits rather
-    than generic color wash.
-  lighting_and_shadow: >-
-    Handle light through Shadows between layers, folded depth; shape light through the style
-    constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold
-    light, or retro speculars, so value structure supports the renderer and does not overwrite the
-    requested content.
-  texture_and_material: >-
-    Render Paper grain, craft cardstock; surface detail should show the named construction system;
-    cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or
-    low-poly facets should appear only when they belong to the preset, keeping material scale
-    coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Lookdev camera for Papercraft 3D: three quarter or orthographic
-    framing, clean silhouette read, material highlights, controlled depth, and vertical card
-    composition; compose through projection, topology readability, object grouping, axis discipline,
-    exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and
-    visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Creative, delicate, art project warmth; derive mood from toy-like clarity,
-    technical breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural
-    mathematical wonder, letting the renderer alter interpretation without demanding a specific
-    story, location, or character.
-  rendering_and_quality: >-
-    Finish with Craft, handmade feel, origami precision; finish with intentional stylization, clean
-    geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for
-    it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode
-    recognizable.
-  key_features: >-
-    Virtual paper; Layered depth, fold crease definition; Paper texture, craft material tones; Paper
-    grain, craft cardstock; Lookdev camera for Papercraft 3D: three quarter or orthographic framing,
-    clean silhouette read, material highlights, controlled depth, and vertical card composition
-  creative_brief: >-
-    Apply Papercraft 3D as a CGI/render preset over prompt X: preserve the user's requested subject,
-    then route modeling, shader response, lighting, material scale, composition, mood, and final
-    render craft through Virtual paper, Layered depth, fold crease definition, Paper grain, craft
-    cardstock without requiring the card image's original subject.
+  aesthetic: 'Papercraft 3D: the subject built from cut and layered cardstock, with visible paper thickness, folds and glue tabs.'
+  subject_treatment: Keep the prompt subject, action, setting and camera view; rebuild them in this 3D medium without changing the requested view.
+  color_and_tone: Matte craft-paper colors, soft pastels and earth tones, white cut edges.
+  lighting_and_shadow: Soft directional light revealing layers and fold shadows.
+  texture_and_material: Paper grain, cut edges, layered depth, slightly curled pieces.
+  camera_and_composition: Keep the requested view; shallow depth shows the craft scale.
+  atmosphere_and_mood: Handmade and gentle, a world cut from paper.
+  rendering_and_quality: Tactile papercraft render with cuts and glue, distinct from folded-only origami.
+  key_features: layered cardstock; visible paper thickness; cut edges; fold shadows; paper grain
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Papercraft 3D as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - brand logo
+  - franchise likeness
+  - readable text
+  - readable letters
+  - changing the requested camera view
   - realistic
   - fluid
   - wrong medium
@@ -70,19 +35,21 @@ avoidRules:
   - muddy AI noise
   - uncontrolled texture chatter
   - watermark
-  - readable text
   - signature
   - accidental photorealism
   - generic smooth mesh
   - wrong geometry language
   - messy topology
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-073.webp
 attributes:
-  negativePrompt: >-
-    realistic, fluid, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
-    watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong
-    geometry language, messy topology
+  negativePrompt: brand logo, franchise likeness, readable text, readable letters, changing the requested camera view, realistic, fluid, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
