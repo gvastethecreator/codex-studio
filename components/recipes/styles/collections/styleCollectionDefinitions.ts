@@ -736,6 +736,18 @@ export const STYLE_COLLECTIONS = [
     facets: { domain: ['architecture', 'interiors', 'places'] },
   },
   {
+    id: 'applied_design_systems',
+    title: 'Applied Design',
+    familyId: 'design_assets_materials',
+    description:
+      'Logos, icons, interfaces, products, packaging, type, editorial, data, textiles, merch, wayfinding and motion styleframes. Requested words, marks and data stay exact.',
+    icon: 'layers',
+    order: 55,
+    sourcePackIds: ['pack_25'],
+    entries: [{ id: 'applied-design-pack', kind: 'pack', packId: 'pack_25' }],
+    facets: { workflow: ['image', 'edit'] },
+  },
+  {
     id: 'games_ui_worlds',
     title: 'Game Formats & UI',
     familyId: 'design_assets_materials',

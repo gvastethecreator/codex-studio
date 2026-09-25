@@ -1,7 +1,7 @@
 // Apply one category spec: rewrite preset DNA, set card briefs, create new presets, register refs.
 // Usage: bun .local/style-curation/overhaul/tools/apply.ts <spec.ts> [--dry]
 import { createRequire } from 'node:module';
-import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { creativeBriefFromDna } from './creative-brief';
 
@@ -25,6 +25,7 @@ export interface Update {
   dna?: Partial<Dna>;
   avoid?: string[]; // replaces the preset-specific head of avoidRules (common tail is kept/added)
   dropAvoid?: string[]; // inherited rules that contradict the technique (e.g. "noisy" on a grain stock)
+  textPolicy?: 'requested'; // see Create.textPolicy
   briefs: [string, string, string];
 }
 export interface Create {
@@ -33,11 +34,16 @@ export interface Create {
   tags: string[];
   dna: Dna;
   avoid: string[];
+  // 'requested' keeps the requested words, marks and interface visible: the common text, logo and
+  // UI negatives are left out. Only for design presets whose output is lettering, a mark or a UI.
+  textPolicy?: 'requested';
   briefs: [string, string, string];
 }
 export interface Spec {
   pack: string;
   category: string;
+  // Registers the category when the pack does not have it yet (no anchor preset needed).
+  newCategory?: { id: string };
   updates: Record<string, Update>;
   creates?: Create[];
 }
@@ -55,9 +61,15 @@ const COMMON_AVOID = [
 const dumpOpts = { lineWidth: -1, noRefs: true, sortKeys: false };
 const presetsRoot = path.join(repo, 'components/recipes/styles/manifests/presets');
 
-function mergeAvoid(specific: string[], existing: string[] = []) {
+const REQUESTED_TEXT_RULES = new Set(['text', 'readable labels', 'logo', 'ui overlay']);
+
+function mergeAvoid(specific: string[], existing: string[] = [], textPolicy?: 'requested') {
+  const common =
+    textPolicy === 'requested'
+      ? COMMON_AVOID.filter((rule) => !REQUESTED_TEXT_RULES.has(rule.toLowerCase()))
+      : COMMON_AVOID;
   const out: string[] = [];
-  for (const rule of [...specific, ...existing, ...COMMON_AVOID]) {
+  for (const rule of [...specific, ...existing, ...common]) {
     if (!out.some((r) => r.toLowerCase() === rule.toLowerCase())) out.push(rule);
   }
   return out;
@@ -82,9 +94,11 @@ const spec: Spec = (await import(specPath)).default;
 const packFile = path.join(repo, `components/recipes/styles/manifests/packs/${spec.pack}.yaml`);
 const packText = readFileSync(packFile, 'utf8');
 const packDoc = yaml.load(packText);
-const cat = packDoc.categories.find((c: { name: string }) => c.name === spec.category);
-if (!cat) throw new Error(`No category ${spec.pack}::${spec.category}`);
-const refs: string[] = cat.presetRefs;
+const cat = (packDoc.categories ?? []).find((c: { name: string }) => c.name === spec.category);
+if (!cat && !spec.newCategory) throw new Error(`No category ${spec.pack}::${spec.category}`);
+if (cat && spec.newCategory)
+  throw new Error(`${spec.pack}::${spec.category} exists; drop newCategory`);
+const refs: string[] = cat?.presetRefs ?? [];
 const briefsFile = path.join(repo, 'scripts/style-curation/card-briefs.json');
 const variantsFile = path.join(repo, 'scripts/style-curation/card-brief-variants.json');
 const briefs = JSON.parse(readFileSync(briefsFile, 'utf8'));
@@ -109,7 +123,7 @@ for (const [id, update] of Object.entries(spec.updates)) {
   if (update.avoid || update.dropAvoid) {
     const drop = new Set((update.dropAvoid ?? []).map((rule) => rule.toLowerCase()));
     const kept = (doc.avoidRules ?? []).filter((rule: string) => !drop.has(rule.toLowerCase()));
-    doc.avoidRules = mergeAvoid(update.avoid ?? [], kept).filter(
+    doc.avoidRules = mergeAvoid(update.avoid ?? [], kept, update.textPolicy).filter(
       (rule) => !drop.has(rule.toLowerCase()),
     );
     doc.attributes = {
@@ -127,11 +141,24 @@ for (const [id, update] of Object.entries(spec.updates)) {
 
 if (spec.creates?.length) {
   const taken = allPresetIds();
-  const prefix = refs[0] ? path.basename(refs[0], '.yaml').slice(0, 5) : '';
+  const prefix = refs[0] ? path.basename(refs[0], '.yaml').slice(0, 5) : `SP${spec.pack.slice(5)}-`;
   let n = Math.max(
+    0,
     ...[...taken].filter((id) => id.startsWith(prefix)).map((id) => Number(id.slice(5))),
   );
-  const first = refs[0] && yaml.load(readFileSync(path.join(presetsRoot, refs[0]), 'utf8'));
+  // A new category has no anchor preset: its taxonomy comes from the pack and the spec.
+  const first = refs[0]
+    ? yaml.load(readFileSync(path.join(presetsRoot, refs[0]), 'utf8'))
+    : {
+        tags: ['curation-v2'],
+        supportedTasks: ['image_generate', 'image_edit', 'style_preset_card'],
+        taxonomy: {
+          packId: spec.pack,
+          packName: packDoc.name,
+          categoryId: spec.newCategory!.id,
+          categoryName: spec.category,
+        },
+      };
   const newRefs: string[] = [];
   const existingNames = new Set(
     refs.map((ref) => yaml.load(readFileSync(path.join(presetsRoot, ref), 'utf8')).name),
@@ -142,8 +169,13 @@ if (spec.creates?.length) {
     n += 1;
     const id = `${prefix}${String(n).padStart(3, '0')}`;
     if (taken.has(id)) throw new Error(`ID taken ${id}`);
-    const tags = [first.tags[0], first.taxonomy.categoryId, ...create.tags];
-    const avoidRules = mergeAvoid(create.avoid);
+    const tags = [
+      first.tags[0],
+      first.taxonomy.categoryId,
+      ...create.tags,
+      ...(create.textPolicy === 'requested' ? ['requested-text'] : []),
+    ];
+    const avoidRules = mergeAvoid(create.avoid, [], create.textPolicy);
     const doc = {
       schemaVersion: 1,
       id,
@@ -183,21 +215,40 @@ if (spec.creates?.length) {
     if (existsSync(file)) throw new Error(`exists ${file}`);
     briefs[id] = create.briefs[0];
     variantBriefs[id] = [create.briefs[1], create.briefs[2]];
-    if (!dry) writeFileSync(file, yaml.dump(doc, dumpOpts));
+    if (!dry) {
+      mkdirSync(path.dirname(file), { recursive: true });
+      writeFileSync(file, yaml.dump(doc, dumpOpts));
+    }
     newRefs.push(ref);
     report.push(`created ${id} ${create.name}`);
   }
-  // Insert after the category's last ref in both the category list and the flat list.
-  const anchor = refs[refs.length - 1];
   let text = packText;
-  const catLine = `      - ${anchor}\n`;
-  const flatLine = `\n  - ${anchor}\n`;
-  if (text.split(catLine).length !== 2) throw new Error(`category anchor ${anchor}`);
-  text = text.replace(catLine, catLine + newRefs.map((r) => `      - ${r}\n`).join(''));
-  const at = text.indexOf(flatLine);
-  if (at < 0 || text.lastIndexOf(flatLine) !== at) throw new Error(`flat anchor ${anchor}`);
-  const end = at + flatLine.length;
-  text = text.slice(0, end) + newRefs.map((r) => `  - ${r}\n`).join('') + text.slice(end);
+  if (!refs.length) {
+    // New category: append its block to `categories:` and its refs to the end of the flat
+    // `presetRefs:` list, which must be the last key of the pack file.
+    text = text
+      .replace(/^categories: \[\]$/m, 'categories:')
+      .replace(/^presetRefs: \[\]$/m, 'presetRefs:');
+    const flatAt = text.search(/^presetRefs:$/m);
+    if (flatAt < 0 || /^\S/m.test(text.slice(flatAt + 'presetRefs:'.length)))
+      throw new Error(`${spec.pack}: presetRefs must be the last key`);
+    const block =
+      `  - id: ${spec.newCategory!.id}\n    name: ${spec.category}\n    presetRefs:\n` +
+      newRefs.map((r) => `      - ${r}\n`).join('');
+    text = text.slice(0, flatAt) + block + text.slice(flatAt);
+    text = `${text.replace(/\n*$/, '\n')}${newRefs.map((r) => `  - ${r}\n`).join('')}`;
+  } else {
+    // Insert after the category's last ref in both the category list and the flat list.
+    const anchor = refs[refs.length - 1];
+    const catLine = `      - ${anchor}\n`;
+    const flatLine = `\n  - ${anchor}\n`;
+    if (text.split(catLine).length !== 2) throw new Error(`category anchor ${anchor}`);
+    text = text.replace(catLine, catLine + newRefs.map((r) => `      - ${r}\n`).join(''));
+    const at = text.indexOf(flatLine);
+    if (at < 0 || text.lastIndexOf(flatLine) !== at) throw new Error(`flat anchor ${anchor}`);
+    const end = at + flatLine.length;
+    text = text.slice(0, end) + newRefs.map((r) => `  - ${r}\n`).join('') + text.slice(end);
+  }
   if (!dry) writeFileSync(packFile, text);
 }
 

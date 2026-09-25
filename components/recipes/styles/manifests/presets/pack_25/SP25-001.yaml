@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-001
+packId: pack_25
+name: Chisel Counterforms
+styleAnchors:
+  - Chisel Counterforms
+  - negative-space logo construction
+  - carved meaningful void
+displayName: Chisel Counterforms
+category: 1. Logo & Symbol Systems
+domain: negative-space logo construction
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - logo-and-symbol-systems
+  - chisel-counterforms
+  - applied-design
+  - logo
+  - r-log-01
+  - requested-text
+visualDna:
+  aesthetic: 'Chisel Counterforms: a few compact masses opened by one carved void that gives the mark an essential second reading.'
+  subject_treatment: Design the prompt's subject as a mark of two solid masses and one continuous void that carries its own meaning; set any requested name exactly.
+  color_and_tone: Binary one-ink contrast, with the background flowing into the figure as the second image.
+  lighting_and_shadow: Completely flat graphic rendering, where the cut void alone creates depth and reading.
+  texture_and_material: Crisp cut edges and uniform solid surfaces, like shapes chiselled from one block.
+  camera_and_composition: Heavy mass balanced by an opposite opening, with neck, joins and optical center protected.
+  atmosphere_and_mood: Tension between a stable block and an unexpected opening that is discovered a moment later.
+  rendering_and_quality: Vector-clean mark that survives filled, inverted and reduced while both readings remain clear.
+  creative_brief: "Chisel Counterforms: a few compact masses opened by one carved void that gives the mark an essential second reading. Carry it through carved meaningful void, two-mass figure, one-ink contrast, second reading. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: carved meaningful void; two-mass figure; one-ink contrast; second reading
+avoidRules:
+  - ornamental void
+  - figure built from too many pieces
+  - second reading that depends on a shadow
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: ornamental void, figure built from too many pieces, second reading that depends on a shadow, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: logo-and-symbol-systems
+  categoryName: 1. Logo & Symbol Systems
+  domain: negative-space logo construction
+  tags:
+    - curation-v2
+    - logo-and-symbol-systems
+    - chisel-counterforms
+    - applied-design
+    - logo
+    - r-log-01
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

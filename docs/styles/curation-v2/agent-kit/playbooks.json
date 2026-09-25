@@ -160,7 +160,8 @@
     "pack_23::9. Painted RPG & Tactics": "paint",
     "pack_23::10. Tabletop Illustration Studies": "deliverable",
     "pack_23::11. Modern Visual Techniques": "diagram",
-    "pack_23::12. Hybrid Visual Studies": "craft"
+    "pack_23::12. Hybrid Visual Studies": "craft",
+    "pack_25::1. Logo & Symbol Systems": "applied-design"
   },
   "playbooks": {
     "photo": {
@@ -509,6 +510,22 @@
         "Revisar también negativos y campos de atmósfera; no basta con limpiar aesthetic."
       ],
       "extraBenchmark": "neutral-interior"
+    },
+    "applied-design": {
+      "title": "Diseño aplicado",
+      "decision": "Separar la construcción del sistema de diseño del contenido pedido: texto, marca, datos e interfaz se conservan exactos.",
+      "preserve": [
+        "Texto exacto, marca existente, valores de datos, estados de interfaz y formato de entrega cuando se solicitan."
+      ],
+      "doNot": [
+        "No prohibir texto, logo o UI cuando son el resultado pedido; no inventar palabras, cifras ni marcas reales.",
+        "No contar un perfil, un ajuste de intensidad o un proceso de verificación como un estilo nuevo."
+      ],
+      "steps": [
+        "Comprobar que el entregable (marca, icono, pantalla, envase, página, gráfico, prenda, señal o frame) coincide con la tarea.",
+        "Comparar con presets vecinos del catálogo antes de aprobar: tipografía, diagramas, patrones, producto y mockup."
+      ],
+      "extraBenchmark": "requested-text"
     }
   }
 }

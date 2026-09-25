@@ -222,6 +222,16 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     cardDescription: 'Psychological horror, tactical brushwork, and industrial solitude.',
     presetCount: 6,
   },
+  {
+    id: 'pack_25',
+    name: 'Applied Design',
+    description:
+      'Design systems for real deliverables: marks, icon families, app and game interfaces, product forms, packaging, campaigns, lettering, publications, information graphics, surface repeats, apparel graphics, signage and broadcast styleframes. Requested words, marks and interface content stay exact; each style changes construction, not the brief.',
+    cardTitle: 'Applied Design',
+    cardDescription:
+      'Logos, icons, interfaces, products, packaging, type, editorial, data, textiles, merch, wayfinding and motion.',
+    presetCount: 20,
+  },
 ] as GeneratedStyleRuntimePackSummary[];
 
 const GENERATED_STYLE_RUNTIME_PACK_LOADERS: Record<string, () => Promise<StyleRuntimePack>> = {
@@ -315,6 +325,10 @@ const GENERATED_STYLE_RUNTIME_PACK_LOADERS: Record<string, () => Promise<StyleRu
     ),
   pack_24: () =>
     import('./styleRuntimePacks.generated/pack_24').then((module) =>
+      module.loadGeneratedStyleRuntimePack(),
+    ),
+  pack_25: () =>
+    import('./styleRuntimePacks.generated/pack_25').then((module) =>
       module.loadGeneratedStyleRuntimePack(),
     ),
 };

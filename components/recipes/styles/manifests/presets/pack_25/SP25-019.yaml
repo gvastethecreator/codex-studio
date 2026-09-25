@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP25-019
+packId: pack_25
+name: Responsive Mark Set
+styleAnchors:
+  - Responsive Mark Set
+  - responsive logo size sheet
+  - three size tiers
+displayName: Responsive Mark Set
+category: 1. Logo & Symbol Systems
+domain: responsive logo size sheet
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - logo-and-symbol-systems
+  - responsive-mark
+  - applied-design
+  - logo
+  - profile
+  - r-log-19
+  - requested-text
+visualDna:
+  aesthetic: 'Responsive Mark Set: one identity shown as a primary, a reduced and a minimal version side by side, with the same proportions and core traits.'
+  subject_treatment: Present the prompt's subject mark in three sizes, primary, reduced and minimal, removing only detail that the small sizes cannot hold; keep requested text exact.
+  color_and_tone: Source colors kept in every version, with a monochrome test row beneath.
+  lighting_and_shadow: Flat presentation of the artwork, identical in every size.
+  texture_and_material: Source edges and proportions kept, with only authorized apertures widened for reduction.
+  camera_and_composition: Rows of primary, reduced and minimal marks at declared scales with optical alignment.
+  atmosphere_and_mood: Continuity of identity across scales, confident and systematic.
+  rendering_and_quality: Each simplification visibly improves reading at its own size.
+  creative_brief: "Responsive Mark Set: one identity shown as a primary, a reduced and a minimal version side by side, with the same proportions and core traits. Carry it through three size tiers, monochrome test row, aligned scales, kept identity. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: three size tiers; monochrome test row; aligned scales; kept identity
+avoidRules:
+  - silent redesign
+  - minimal version that becomes another mark
+  - automatic scaling shown as optical correction
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: silent redesign, minimal version that becomes another mark, automatic scaling shown as optical correction, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: logo-and-symbol-systems
+  categoryName: 1. Logo & Symbol Systems
+  domain: responsive logo size sheet
+  tags:
+    - curation-v2
+    - logo-and-symbol-systems
+    - responsive-mark
+    - applied-design
+    - logo
+    - profile
+    - r-log-19
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

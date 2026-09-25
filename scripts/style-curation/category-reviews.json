@@ -2368,5 +2368,20 @@
     "evidencePresetIds": ["SP24-005", "SP24-006"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_25",
+    "category": "1. Logo & Symbol Systems",
+    "displayCategory": "Logo & symbol systems",
+    "kind": "mixed",
+    "expectedCount": 20,
+    "baselineHash": "38d61f1dd0b6cb67bbf6672cd60b4a00a4a60b7a1ec4a910501047d5fc29a6eb",
+    "problem": "Logo styles must change how a mark is constructed without banning the requested name, initials or symbol, and without copying real trademarks.",
+    "preserve": "Requested words, initials, language and locked colors stay exact; each style keeps one construction rule (void, hinge, split contour, interlace, module, loop, ligature, ribbon, aperture, stack, gesture, counters, radial break, fold, open frame, dual scale, stroke economy).",
+    "proposedAction": "Applied-design import: 17 construction styles from the research package plus the family-of-marks grid, responsive size set and ambigram study as sheet profiles; DNA rewritten in English as positive construction rules, requested-text policy instead of text and logo negatives, three new striking briefs per preset.",
+    "validation": "Generate each card, then test transfer on an exact wordmark, a two-letter monogram, a symbol with no text, a one-ink mark and a locked-color mark; check spelling and reduction.",
+    "evidencePresetIds": ["SP25-001", "SP25-002", "SP25-003"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

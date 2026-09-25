@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-007
+packId: pack_25
+name: Compressed Ligature Blocks
+styleAnchors:
+  - Compressed Ligature Blocks
+  - compact ligature wordmark
+  - shared-stroke pairs
+displayName: Compressed Ligature Blocks
+category: 1. Logo & Symbol Systems
+domain: compact ligature wordmark
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - logo-and-symbol-systems
+  - compressed-ligature
+  - applied-design
+  - logo
+  - r-log-07
+  - requested-text
+visualDna:
+  aesthetic: 'Compressed Ligature Blocks: selected letter pairs of the exact word fuse through shared strokes into a dense block that still reads in order.'
+  subject_treatment: Set the requested word exactly and compress only compatible pairs through shared strokes, leaving unjoined letters as reading pauses.
+  color_and_tone: One-ink masses with counters open enough to separate every letter group.
+  lighting_and_shadow: Neutral flat rendering, with separations drawn in the letterforms themselves.
+  texture_and_material: Firm terminals, smooth joins and solid ink surfaces across the whole block.
+  camera_and_composition: Pairs or trios grouped along one continuous reading axis, with free overall shape.
+  atmosphere_and_mood: Deliberate density with small rhythmic releases, compact and confident.
+  rendering_and_quality: Localized compression that clearly beats an unligated version for width and reading.
+  creative_brief: "Compressed Ligature Blocks: selected letter pairs of the exact word fuse through shared strokes into a dense block that still reads in order. Carry it through shared-stroke pairs, dense block, reading pauses, one ink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: shared-stroke pairs; dense block; reading pauses; one ink
+avoidRules:
+  - global horizontal squash
+  - closed counters
+  - illegible letters rescued only by context
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: global horizontal squash, closed counters, illegible letters rescued only by context, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: logo-and-symbol-systems
+  categoryName: 1. Logo & Symbol Systems
+  domain: compact ligature wordmark
+  tags:
+    - curation-v2
+    - logo-and-symbol-systems
+    - compressed-ligature
+    - applied-design
+    - logo
+    - r-log-07
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

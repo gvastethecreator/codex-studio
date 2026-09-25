@@ -1,0 +1,328 @@
+{
+  "packs": [
+    {
+      "id": "pack_25",
+      "name": "Applied Design",
+      "presetCount": 20
+    }
+  ],
+  "presets": [
+    {
+      "id": "SP25-001",
+      "name": "Chisel Counterforms",
+      "styleAnchors": [
+        "Chisel Counterforms",
+        "negative-space logo construction",
+        "carved meaningful void"
+      ],
+      "ref": "pack_25/SP25-001.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "logo-and-symbol-systems",
+      "categoryName": "1. Logo & Symbol Systems",
+      "domain": "negative-space logo construction",
+      "tags": ["applied-design", "logo-and-symbol-systems", "negative-space-logo-construction"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-001 chisel counterforms negative-space logo construction carved meaningful void 1. logo & symbol systems logo & symbol systems negative-space logo construction pack_25 applied design logo-and-symbol-systems applied-design logo-and-symbol-systems negative-space-logo-construction"
+    },
+    {
+      "id": "SP25-002",
+      "name": "Hinged Monograms",
+      "styleAnchors": [
+        "Hinged Monograms",
+        "articulated monogram construction",
+        "shared hinge stroke"
+      ],
+      "ref": "pack_25/SP25-002.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "logo-and-symbol-systems",
+      "categoryName": "1. Logo & Symbol Systems",
+      "domain": "articulated monogram construction",
+      "tags": ["applied-design", "logo-and-symbol-systems", "articulated-monogram-construction"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-002 hinged monograms articulated monogram construction shared hinge stroke 1. logo & symbol systems logo & symbol systems articulated monogram construction pack_25 applied design logo-and-symbol-systems applied-design logo-and-symbol-systems articulated-monogram-construction"
+    },
+    {
+      "id": "SP25-003",
+      "name": "Split-Contour Marks",
+      "styleAnchors": [
+        "Split-Contour Marks",
+        "complementary open-outline logo",
+        "two open outlines"
+      ],
+      "ref": "pack_25/SP25-003.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "logo-and-symbol-systems",
+      "categoryName": "1. Logo & Symbol Systems",
+      "domain": "complementary open-outline logo",
+      "tags": ["applied-design", "logo-and-symbol-systems", "complementary-open-outline-logo"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-003 split-contour marks complementary open-outline logo two open outlines 1. logo & symbol systems logo & symbol systems complementary open-outline logo pack_25 applied design logo-and-symbol-systems applied-design logo-and-symbol-systems complementary-open-outline-logo"
+    },
+    {
+      "id": "SP25-004",
+      "name": "Woven Junction Symbols",
+      "styleAnchors": [
+        "Woven Junction Symbols",
+        "over-under interlace logo",
+        "over-under crossings"
+      ],
+      "ref": "pack_25/SP25-004.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "logo-and-symbol-systems",
+      "categoryName": "1. Logo & Symbol Systems",
+      "domain": "over-under interlace logo",
+      "tags": ["applied-design", "logo-and-symbol-systems", "over-under-interlace-logo"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-004 woven junction symbols over-under interlace logo over-under crossings 1. logo & symbol systems logo & symbol systems over-under interlace logo pack_25 applied design logo-and-symbol-systems applied-design logo-and-symbol-systems over-under-interlace-logo"
+    },
+    {
+      "id": "SP25-005",
+      "name": "Asymmetric Module Families",
+      "styleAnchors": [
+        "Asymmetric Module Families",
+        "asymmetric module identity family",
+        "lopsided module"
+      ],
+      "ref": "pack_25/SP25-005.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "logo-and-symbol-systems",
+      "categoryName": "1. Logo & Symbol Systems",
+      "domain": "asymmetric module identity family",
+      "tags": ["applied-design", "logo-and-symbol-systems", "asymmetric-module-identity-family"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-005 asymmetric module families asymmetric module identity family lopsided module 1. logo & symbol systems logo & symbol systems asymmetric module identity family pack_25 applied design logo-and-symbol-systems applied-design logo-and-symbol-systems asymmetric-module-identity-family"
+    },
+    {
+      "id": "SP25-006",
+      "name": "Elastic Loop Wordmarks",
+      "styleAnchors": ["Elastic Loop Wordmarks", "looped connected wordmark", "controlled loops"],
+      "ref": "pack_25/SP25-006.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "logo-and-symbol-systems",
+      "categoryName": "1. Logo & Symbol Systems",
+      "domain": "looped connected wordmark",
+      "tags": ["applied-design", "logo-and-symbol-systems", "looped-connected-wordmark"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-006 elastic loop wordmarks looped connected wordmark controlled loops 1. logo & symbol systems logo & symbol systems looped connected wordmark pack_25 applied design logo-and-symbol-systems applied-design logo-and-symbol-systems looped-connected-wordmark"
+    },
+    {
+      "id": "SP25-007",
+      "name": "Compressed Ligature Blocks",
+      "styleAnchors": [
+        "Compressed Ligature Blocks",
+        "compact ligature wordmark",
+        "shared-stroke pairs"
+      ],
+      "ref": "pack_25/SP25-007.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "logo-and-symbol-systems",
+      "categoryName": "1. Logo & Symbol Systems",
+      "domain": "compact ligature wordmark",
+      "tags": ["applied-design", "logo-and-symbol-systems", "compact-ligature-wordmark"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-007 compressed ligature blocks compact ligature wordmark shared-stroke pairs 1. logo & symbol systems logo & symbol systems compact ligature wordmark pack_25 applied design logo-and-symbol-systems applied-design logo-and-symbol-systems compact-ligature-wordmark"
+    },
+    {
+      "id": "SP25-008",
+      "name": "Cut-End Ribbon Signs",
+      "styleAnchors": ["Cut-End Ribbon Signs", "folded flat ribbon mark", "flat folding band"],
+      "ref": "pack_25/SP25-008.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "logo-and-symbol-systems",
+      "categoryName": "1. Logo & Symbol Systems",
+      "domain": "folded flat ribbon mark",
+      "tags": ["applied-design", "logo-and-symbol-systems", "folded-flat-ribbon-mark"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-008 cut-end ribbon signs folded flat ribbon mark flat folding band 1. logo & symbol systems logo & symbol systems folded flat ribbon mark pack_25 applied design logo-and-symbol-systems applied-design logo-and-symbol-systems folded-flat-ribbon-mark"
+    },
+    {
+      "id": "SP25-009",
+      "name": "Staggered Aperture Marks",
+      "styleAnchors": ["Staggered Aperture Marks", "offset-cut rhythm mark", "staggered cuts"],
+      "ref": "pack_25/SP25-009.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "logo-and-symbol-systems",
+      "categoryName": "1. Logo & Symbol Systems",
+      "domain": "offset-cut rhythm mark",
+      "tags": ["applied-design", "logo-and-symbol-systems", "offset-cut-rhythm-mark"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-009 staggered aperture marks offset-cut rhythm mark staggered cuts 1. logo & symbol systems logo & symbol systems offset-cut rhythm mark pack_25 applied design logo-and-symbol-systems applied-design logo-and-symbol-systems offset-cut-rhythm-mark"
+    },
+    {
+      "id": "SP25-010",
+      "name": "Stacked Silhouette Emblems",
+      "styleAnchors": [
+        "Stacked Silhouette Emblems",
+        "nested silhouette emblem",
+        "nested silhouettes"
+      ],
+      "ref": "pack_25/SP25-010.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "logo-and-symbol-systems",
+      "categoryName": "1. Logo & Symbol Systems",
+      "domain": "nested silhouette emblem",
+      "tags": ["applied-design", "logo-and-symbol-systems", "nested-silhouette-emblem"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-010 stacked silhouette emblems nested silhouette emblem nested silhouettes 1. logo & symbol systems logo & symbol systems nested silhouette emblem pack_25 applied design logo-and-symbol-systems applied-design logo-and-symbol-systems nested-silhouette-emblem"
+    },
+    {
+      "id": "SP25-011",
+      "name": "Gesture-to-Geometry Marks",
+      "styleAnchors": ["Gesture-to-Geometry Marks", "reduced gesture logo", "two taut curves"],
+      "ref": "pack_25/SP25-011.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "logo-and-symbol-systems",
+      "categoryName": "1. Logo & Symbol Systems",
+      "domain": "reduced gesture logo",
+      "tags": ["applied-design", "logo-and-symbol-systems", "reduced-gesture-logo"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-011 gesture-to-geometry marks reduced gesture logo two taut curves 1. logo & symbol systems logo & symbol systems reduced gesture logo pack_25 applied design logo-and-symbol-systems applied-design logo-and-symbol-systems reduced-gesture-logo"
+    },
+    {
+      "id": "SP25-012",
+      "name": "Interlocked Counters",
+      "styleAnchors": [
+        "Interlocked Counters",
+        "coordinated counterform wordmark",
+        "coordinated counters"
+      ],
+      "ref": "pack_25/SP25-012.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "logo-and-symbol-systems",
+      "categoryName": "1. Logo & Symbol Systems",
+      "domain": "coordinated counterform wordmark",
+      "tags": ["applied-design", "logo-and-symbol-systems", "coordinated-counterform-wordmark"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-012 interlocked counters coordinated counterform wordmark coordinated counters 1. logo & symbol systems logo & symbol systems coordinated counterform wordmark pack_25 applied design logo-and-symbol-systems applied-design logo-and-symbol-systems coordinated-counterform-wordmark"
+    },
+    {
+      "id": "SP25-013",
+      "name": "Interrupted Radial Seals",
+      "styleAnchors": ["Interrupted Radial Seals", "broken radial seal mark", "radial units"],
+      "ref": "pack_25/SP25-013.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "logo-and-symbol-systems",
+      "categoryName": "1. Logo & Symbol Systems",
+      "domain": "broken radial seal mark",
+      "tags": ["applied-design", "logo-and-symbol-systems", "broken-radial-seal-mark"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-013 interrupted radial seals broken radial seal mark radial units 1. logo & symbol systems logo & symbol systems broken radial seal mark pack_25 applied design logo-and-symbol-systems applied-design logo-and-symbol-systems broken-radial-seal-mark"
+    },
+    {
+      "id": "SP25-014",
+      "name": "Fold-Edge Insignia",
+      "styleAnchors": ["Fold-Edge Insignia", "folded-plane insignia", "folded sheet"],
+      "ref": "pack_25/SP25-014.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "logo-and-symbol-systems",
+      "categoryName": "1. Logo & Symbol Systems",
+      "domain": "folded-plane insignia",
+      "tags": ["applied-design", "logo-and-symbol-systems", "folded-plane-insignia"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-014 fold-edge insignia folded-plane insignia folded sheet 1. logo & symbol systems logo & symbol systems folded-plane insignia pack_25 applied design logo-and-symbol-systems applied-design logo-and-symbol-systems folded-plane-insignia"
+    },
+    {
+      "id": "SP25-015",
+      "name": "Open-Frame Wordmarks",
+      "styleAnchors": ["Open-Frame Wordmarks", "open-contour wordmark", "open letter outlines"],
+      "ref": "pack_25/SP25-015.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "logo-and-symbol-systems",
+      "categoryName": "1. Logo & Symbol Systems",
+      "domain": "open-contour wordmark",
+      "tags": ["applied-design", "logo-and-symbol-systems", "open-contour-wordmark"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-015 open-frame wordmarks open-contour wordmark open letter outlines 1. logo & symbol systems logo & symbol systems open-contour wordmark pack_25 applied design logo-and-symbol-systems applied-design logo-and-symbol-systems open-contour-wordmark"
+    },
+    {
+      "id": "SP25-016",
+      "name": "Dual-Scale Symbols",
+      "styleAnchors": ["Dual-Scale Symbols", "two-scale detail symbol", "bold outer silhouette"],
+      "ref": "pack_25/SP25-016.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "logo-and-symbol-systems",
+      "categoryName": "1. Logo & Symbol Systems",
+      "domain": "two-scale detail symbol",
+      "tags": ["applied-design", "logo-and-symbol-systems", "two-scale-detail-symbol"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-016 dual-scale symbols two-scale detail symbol bold outer silhouette 1. logo & symbol systems logo & symbol systems two-scale detail symbol pack_25 applied design logo-and-symbol-systems applied-design logo-and-symbol-systems two-scale-detail-symbol"
+    },
+    {
+      "id": "SP25-017",
+      "name": "Pictorial Stroke Economy",
+      "styleAnchors": [
+        "Pictorial Stroke Economy",
+        "minimal-stroke pictogram mark",
+        "few shared strokes"
+      ],
+      "ref": "pack_25/SP25-017.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "logo-and-symbol-systems",
+      "categoryName": "1. Logo & Symbol Systems",
+      "domain": "minimal-stroke pictogram mark",
+      "tags": ["applied-design", "logo-and-symbol-systems", "minimal-stroke-pictogram-mark"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-017 pictorial stroke economy minimal-stroke pictogram mark few shared strokes 1. logo & symbol systems logo & symbol systems minimal-stroke pictogram mark pack_25 applied design logo-and-symbol-systems applied-design logo-and-symbol-systems minimal-stroke-pictogram-mark"
+    },
+    {
+      "id": "SP25-018",
+      "name": "Family-of-Marks Grid",
+      "styleAnchors": ["Family-of-Marks Grid", "logo family system sheet", "shared primitives"],
+      "ref": "pack_25/SP25-018.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "logo-and-symbol-systems",
+      "categoryName": "1. Logo & Symbol Systems",
+      "domain": "logo family system sheet",
+      "tags": ["applied-design", "logo-and-symbol-systems", "logo-family-system-sheet"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-018 family-of-marks grid logo family system sheet shared primitives 1. logo & symbol systems logo & symbol systems logo family system sheet pack_25 applied design logo-and-symbol-systems applied-design logo-and-symbol-systems logo-family-system-sheet"
+    },
+    {
+      "id": "SP25-019",
+      "name": "Responsive Mark Set",
+      "styleAnchors": ["Responsive Mark Set", "responsive logo size sheet", "three size tiers"],
+      "ref": "pack_25/SP25-019.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "logo-and-symbol-systems",
+      "categoryName": "1. Logo & Symbol Systems",
+      "domain": "responsive logo size sheet",
+      "tags": ["applied-design", "logo-and-symbol-systems", "responsive-logo-size-sheet"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-019 responsive mark set responsive logo size sheet three size tiers 1. logo & symbol systems logo & symbol systems responsive logo size sheet pack_25 applied design logo-and-symbol-systems applied-design logo-and-symbol-systems responsive-logo-size-sheet"
+    },
+    {
+      "id": "SP25-020",
+      "name": "Optical Ambigram Study",
+      "styleAnchors": ["Optical Ambigram Study", "ambigram lettering study", "double reading"],
+      "ref": "pack_25/SP25-020.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "logo-and-symbol-systems",
+      "categoryName": "1. Logo & Symbol Systems",
+      "domain": "ambigram lettering study",
+      "tags": ["applied-design", "logo-and-symbol-systems", "ambigram-lettering-study"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-020 optical ambigram study ambigram lettering study double reading 1. logo & symbol systems logo & symbol systems ambigram lettering study pack_25 applied design logo-and-symbol-systems applied-design logo-and-symbol-systems ambigram-lettering-study"
+    }
+  ],
+  "totalPresetCount": 20
+}

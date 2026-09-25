@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-006
+packId: pack_25
+name: Elastic Loop Wordmarks
+styleAnchors:
+  - Elastic Loop Wordmarks
+  - looped connected wordmark
+  - controlled loops
+displayName: Elastic Loop Wordmarks
+category: 1. Logo & Symbol Systems
+domain: looped connected wordmark
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - logo-and-symbol-systems
+  - elastic-loop
+  - applied-design
+  - logo
+  - r-log-06
+  - requested-text
+visualDna:
+  aesthetic: 'Elastic Loop Wordmarks: letters of the exact requested word connected by one or two controlled loops that keep rhythm and counters open.'
+  subject_treatment: Set the requested word exactly and connect a few letters with one or two loops that grow out of compatible strokes, keeping the full letter skeletons.
+  color_and_tone: One dominant ink with generous open counters and clear separation inside each loop.
+  lighting_and_shadow: Flat reading, with elasticity expressed through curve tension and stroke changes.
+  texture_and_material: Clean curves, contained terminals and continuous weight, with local optical tuning.
+  camera_and_composition: Linked zones alternate with resting spaces, keeping word spaces clearly open.
+  atmosphere_and_mood: Elastic and friendly, with one expansive gesture that never floods the whole word.
+  rendering_and_quality: The word reads first, and the path of the loop is discovered a moment later.
+  creative_brief: "Elastic Loop Wordmarks: letters of the exact requested word connected by one or two controlled loops that keep rhythm and counters open. Carry it through controlled loops, exact word, open counters, one expansive gesture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: controlled loops; exact word; open counters; one expansive gesture
+avoidRules:
+  - letters replaced by loops
+  - ligatures that change the reading
+  - uniformly cramped spacing
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: letters replaced by loops, ligatures that change the reading, uniformly cramped spacing, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: logo-and-symbol-systems
+  categoryName: 1. Logo & Symbol Systems
+  domain: looped connected wordmark
+  tags:
+    - curation-v2
+    - logo-and-symbol-systems
+    - elastic-loop
+    - applied-design
+    - logo
+    - r-log-06
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

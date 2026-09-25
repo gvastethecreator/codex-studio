@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-011
+packId: pack_25
+name: Gesture-to-Geometry Marks
+styleAnchors:
+  - Gesture-to-Geometry Marks
+  - reduced gesture logo
+  - two taut curves
+displayName: Gesture-to-Geometry Marks
+category: 1. Logo & Symbol Systems
+domain: reduced gesture logo
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - logo-and-symbol-systems
+  - gesture-geometry
+  - applied-design
+  - logo
+  - r-log-11
+  - requested-text
+visualDna:
+  aesthetic: 'Gesture-to-Geometry Marks: one continuous gesture reduced to two taut curves and a single controlled break with a rhythmic signature.'
+  subject_treatment: Reduce the prompt's subject to one movement of two tense curves and one characteristic break that keeps the original direction; set requested text exactly.
+  color_and_tone: One ink at a steady weight, with expression carried by the path itself.
+  lighting_and_shadow: Flat graphic rendering, where apparent speed comes from the path and its terminals.
+  texture_and_material: Clean edges and minimal stroke swell, crisp enough to cut from vinyl.
+  camera_and_composition: Off-center inflection point balanced by a wide empty region beside the gesture.
+  atmosphere_and_mood: Held energy in a rhythmic signature, disciplined rather than spontaneous.
+  rendering_and_quality: The small version keeps the same number of inflections and the same direction.
+  creative_brief: "Gesture-to-Geometry Marks: one continuous gesture reduced to two taut curves and a single controlled break with a rhythmic signature. Carry it through two taut curves, single break, off-center inflection, held energy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: two taut curves; single break; off-center inflection; held energy
+avoidRules:
+  - scribble without a rule
+  - too many inflection points
+  - texture as the only identity
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: scribble without a rule, too many inflection points, texture as the only identity, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: logo-and-symbol-systems
+  categoryName: 1. Logo & Symbol Systems
+  domain: reduced gesture logo
+  tags:
+    - curation-v2
+    - logo-and-symbol-systems
+    - gesture-geometry
+    - applied-design
+    - logo
+    - r-log-11
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

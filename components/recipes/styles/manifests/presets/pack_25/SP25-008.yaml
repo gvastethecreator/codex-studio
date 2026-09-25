@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-008
+packId: pack_25
+name: Cut-End Ribbon Signs
+styleAnchors:
+  - Cut-End Ribbon Signs
+  - folded flat ribbon mark
+  - flat folding band
+displayName: Cut-End Ribbon Signs
+category: 1. Logo & Symbol Systems
+domain: folded flat ribbon mark
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - logo-and-symbol-systems
+  - cut-end-ribbon
+  - applied-design
+  - logo
+  - r-log-08
+  - requested-text
+visualDna:
+  aesthetic: 'Cut-End Ribbon Signs: a flat band of consistent width folds a few times, both cut ends clearly visible, to form the mark.'
+  subject_treatment: Draw the prompt's subject as one flat ribbon of related width with both ends shown and folds resolved as clear breaks; set requested text exactly.
+  color_and_tone: Two optional values for the ribbon faces, with a silhouette that holds in one ink.
+  lighting_and_shadow: Faces separated graphically by folds and occlusion, with shading kept optional.
+  texture_and_material: Smooth matte band, graphic and flat, its folds doing all the work.
+  camera_and_composition: One traceable path, with at most two planes crossing at any point.
+  atmosphere_and_mood: Continuity in motion with a clear beginning and an unmistakable end.
+  rendering_and_quality: Every face change corresponds to a real fold, drawn with clean vector geometry.
+  creative_brief: "Cut-End Ribbon Signs: a flat band of consistent width folds a few times, both cut ends clearly visible, to form the mark. Carry it through flat folding band, visible cut ends, clear fold breaks, traceable path. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: flat folding band; visible cut ends; clear fold breaks; traceable path
+avoidRules:
+  - infinite ribbon by default
+  - hidden ends
+  - physically incoherent folds
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: infinite ribbon by default, hidden ends, physically incoherent folds, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: logo-and-symbol-systems
+  categoryName: 1. Logo & Symbol Systems
+  domain: folded flat ribbon mark
+  tags:
+    - curation-v2
+    - logo-and-symbol-systems
+    - cut-end-ribbon
+    - applied-design
+    - logo
+    - r-log-08
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

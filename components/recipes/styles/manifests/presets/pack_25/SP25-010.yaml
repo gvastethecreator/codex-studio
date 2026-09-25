@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-010
+packId: pack_25
+name: Stacked Silhouette Emblems
+styleAnchors:
+  - Stacked Silhouette Emblems
+  - nested silhouette emblem
+  - nested silhouettes
+displayName: Stacked Silhouette Emblems
+category: 1. Logo & Symbol Systems
+domain: nested silhouette emblem
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - logo-and-symbol-systems
+  - stacked-silhouette
+  - applied-design
+  - logo
+  - r-log-10
+  - requested-text
+visualDna:
+  aesthetic: 'Stacked Silhouette Emblems: two or three silhouettes stack and nest through complementary edges with generous breathing space.'
+  subject_treatment: Stack the prompt's subject with one or two related silhouettes whose edges complete each other, one reading dominant; set requested text exactly.
+  color_and_tone: Levels separated by value only when needed, with recognition checked in one ink.
+  lighting_and_shadow: Flat planes where every contact between pieces is resolved in the drawing.
+  texture_and_material: Solid graphic surfaces with shared complementary edges and no secondary ornament.
+  camera_and_composition: Stacked by the hierarchy of the idea, with weight growing toward the base.
+  atmosphere_and_mood: Support and cooperation, the pieces holding each other up.
+  rendering_and_quality: Shared edges keep both readings intact even when the pieces are pulled apart.
+  creative_brief: "Stacked Silhouette Emblems: two or three silhouettes stack and nest through complementary edges with generous breathing space. Carry it through nested silhouettes, complementary edges, weighted base, breathing gaps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: nested silhouettes; complementary edges; weighted base; breathing gaps
+avoidRules:
+  - shield shape forced on every emblem
+  - decorative filler pieces
+  - fits that change what a figure is
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: shield shape forced on every emblem, decorative filler pieces, fits that change what a figure is, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: logo-and-symbol-systems
+  categoryName: 1. Logo & Symbol Systems
+  domain: nested silhouette emblem
+  tags:
+    - curation-v2
+    - logo-and-symbol-systems
+    - stacked-silhouette
+    - applied-design
+    - logo
+    - r-log-10
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

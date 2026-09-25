@@ -1,0 +1,55 @@
+schemaVersion: 1
+id: pack_25
+name: Applied Design
+cardTitle: Applied Design
+cardDescription: Logos, icons, interfaces, products, packaging, type, editorial, data, textiles, merch, wayfinding and motion.
+description: >-
+  Design systems for real deliverables: marks, icon families, app and game interfaces, product
+  forms, packaging, campaigns, lettering, publications, information graphics, surface repeats,
+  apparel graphics, signage and broadcast styleframes. Requested words, marks and interface
+  content stay exact; each style changes construction, not the brief.
+categories:
+  - id: logo-and-symbol-systems
+    name: 1. Logo & Symbol Systems
+    presetRefs:
+      - pack_25/SP25-001.yaml
+      - pack_25/SP25-002.yaml
+      - pack_25/SP25-003.yaml
+      - pack_25/SP25-004.yaml
+      - pack_25/SP25-005.yaml
+      - pack_25/SP25-006.yaml
+      - pack_25/SP25-007.yaml
+      - pack_25/SP25-008.yaml
+      - pack_25/SP25-009.yaml
+      - pack_25/SP25-010.yaml
+      - pack_25/SP25-011.yaml
+      - pack_25/SP25-012.yaml
+      - pack_25/SP25-013.yaml
+      - pack_25/SP25-014.yaml
+      - pack_25/SP25-015.yaml
+      - pack_25/SP25-016.yaml
+      - pack_25/SP25-017.yaml
+      - pack_25/SP25-018.yaml
+      - pack_25/SP25-019.yaml
+      - pack_25/SP25-020.yaml
+presetRefs:
+  - pack_25/SP25-001.yaml
+  - pack_25/SP25-002.yaml
+  - pack_25/SP25-003.yaml
+  - pack_25/SP25-004.yaml
+  - pack_25/SP25-005.yaml
+  - pack_25/SP25-006.yaml
+  - pack_25/SP25-007.yaml
+  - pack_25/SP25-008.yaml
+  - pack_25/SP25-009.yaml
+  - pack_25/SP25-010.yaml
+  - pack_25/SP25-011.yaml
+  - pack_25/SP25-012.yaml
+  - pack_25/SP25-013.yaml
+  - pack_25/SP25-014.yaml
+  - pack_25/SP25-015.yaml
+  - pack_25/SP25-016.yaml
+  - pack_25/SP25-017.yaml
+  - pack_25/SP25-018.yaml
+  - pack_25/SP25-019.yaml
+  - pack_25/SP25-020.yaml

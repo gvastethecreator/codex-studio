@@ -33,6 +33,7 @@ export const STYLE_PRESET_CATALOG_PACK_IDS = [
   'pack_22',
   'pack_23',
   'pack_24',
+  'pack_25',
 ] as const;
 
 export type StylePresetCatalogPackId = (typeof STYLE_PRESET_CATALOG_PACK_IDS)[number];
@@ -131,6 +132,10 @@ const catalogPackDataLoaders: Record<
     ),
   pack_24: () =>
     import('./stylePresetCatalogData.pack_24').then((module) =>
+      module.loadStylePresetCatalogPackData(),
+    ),
+  pack_25: () =>
+    import('./stylePresetCatalogData.pack_25').then((module) =>
       module.loadStylePresetCatalogPackData(),
     ),
 };

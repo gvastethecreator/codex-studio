@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP25-018
+packId: pack_25
+name: Family-of-Marks Grid
+styleAnchors:
+  - Family-of-Marks Grid
+  - logo family system sheet
+  - shared primitives
+displayName: Family-of-Marks Grid
+category: 1. Logo & Symbol Systems
+domain: logo family system sheet
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - logo-and-symbol-systems
+  - family-of-marks
+  - applied-design
+  - logo
+  - profile
+  - r-log-18
+  - requested-text
+visualDna:
+  aesthetic: 'Family-of-Marks Grid: one grid and a small set of primitives generate a family of related signs for a single organization, shown as a system sheet.'
+  subject_treatment: Present the prompt's subject or requested sections as a family of signs built from the same primitives, anchors and optical tolerances; set every requested name exactly.
+  color_and_tone: One shared palette, with every member also checked in a single ink.
+  lighting_and_shadow: Flat graphic presentation with identical treatment across every member.
+  texture_and_material: Flat editable geometry built from a very small repertoire of pieces.
+  camera_and_composition: Comparison sheet of equal boxes, marks balanced by optical weight, with a faint grid.
+  atmosphere_and_mood: Cohesion without sameness, every sign sharing rules yet holding one unmistakable trait.
+  rendering_and_quality: Module, anchors and exceptions recorded clearly, annotations kept outside the artwork.
+  creative_brief: "Family-of-Marks Grid: one grid and a small set of primitives generate a family of related signs for a single organization, shown as a system sheet. Carry it through shared primitives, equal comparison boxes, optical balance, faint grid. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: shared primitives; equal comparison boxes; optical balance; faint grid
+avoidRules:
+  - family of clones
+  - grid used only as decoration
+  - variants that differ only by color
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: family of clones, grid used only as decoration, variants that differ only by color, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: logo-and-symbol-systems
+  categoryName: 1. Logo & Symbol Systems
+  domain: logo family system sheet
+  tags:
+    - curation-v2
+    - logo-and-symbol-systems
+    - family-of-marks
+    - applied-design
+    - logo
+    - profile
+    - r-log-18
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

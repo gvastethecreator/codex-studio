@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP25-020
+packId: pack_25
+name: Optical Ambigram Study
+styleAnchors:
+  - Optical Ambigram Study
+  - ambigram lettering study
+  - double reading
+displayName: Optical Ambigram Study
+category: 1. Logo & Symbol Systems
+domain: ambigram lettering study
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - logo-and-symbol-systems
+  - ambigram
+  - applied-design
+  - logo
+  - profile
+  - r-log-20
+  - requested-text
+visualDna:
+  aesthetic: 'Optical Ambigram Study: requested words drawn so they read again after a declared rotation or reflection, shown in both orientations.'
+  subject_treatment: Letter the requested word so it reads after a 180-degree turn or mirror, choosing the transformation that keeps both readings exact, and show both orientations.
+  color_and_tone: One ink on a neutral ground so every reading problem stays visible.
+  lighting_and_shadow: Flat rendering with no perspective or shading that favors one orientation.
+  texture_and_material: Deliberately drawn contours with every stroke shared by both readings.
+  camera_and_composition: Original and transformed views placed side by side at comparable positions.
+  atmosphere_and_mood: Optical surprise that stays subordinate to legibility, clever and contained.
+  rendering_and_quality: Both readings checked separately, with the requested text kept exact.
+  creative_brief: "Optical Ambigram Study: requested words drawn so they read again after a declared rotation or reflection, shown in both orientations. Carry it through double reading, declared rotation, side-by-side orientations, exact word. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: double reading; declared rotation; side-by-side orientations; exact word
+avoidRules:
+  - only one valid reading
+  - transformation different from the declared one
+  - swapped characters that fake success
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: only one valid reading, transformation different from the declared one, swapped characters that fake success, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: logo-and-symbol-systems
+  categoryName: 1. Logo & Symbol Systems
+  domain: ambigram lettering study
+  tags:
+    - curation-v2
+    - logo-and-symbol-systems
+    - ambigram
+    - applied-design
+    - logo
+    - profile
+    - r-log-20
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

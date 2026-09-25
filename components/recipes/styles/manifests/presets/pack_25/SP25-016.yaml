@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-016
+packId: pack_25
+name: Dual-Scale Symbols
+styleAnchors:
+  - Dual-Scale Symbols
+  - two-scale detail symbol
+  - bold outer silhouette
+displayName: Dual-Scale Symbols
+category: 1. Logo & Symbol Systems
+domain: two-scale detail symbol
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - logo-and-symbol-systems
+  - dual-scale
+  - applied-design
+  - logo
+  - r-log-16
+  - requested-text
+visualDna:
+  aesthetic: 'Dual-Scale Symbols: a bold primary silhouette holds a second inner structure that appears only at large sizes and never harms reduction.'
+  subject_treatment: Design the prompt's subject as a self-sufficient primary silhouette plus a secondary inner structure that adds meaning when enlarged; set requested text exactly.
+  color_and_tone: Robust main contrast, with lower contrast reserved for the large-scale inner detail.
+  lighting_and_shadow: Flat graphic rendering, with both scales living in the drawing itself.
+  texture_and_material: Simple main edges, with detail grouped in one zone rather than spread as texture.
+  camera_and_composition: Global and inner scales kept separate, detail away from critical contour zones.
+  atmosphere_and_mood: Instant recognition followed by slow discovery, like a secret in plain sight.
+  rendering_and_quality: A small version may drop the inner layer without changing the main meaning.
+  creative_brief: "Dual-Scale Symbols: a bold primary silhouette holds a second inner structure that appears only at large sizes and never harms reduction. Carry it through bold outer silhouette, hidden inner layer, scale discovery, clean reduction. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: bold outer silhouette; hidden inner layer; scale discovery; clean reduction
+avoidRules:
+  - illegible miniature
+  - ornamental micro-detail
+  - second scale that contradicts the first
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: illegible miniature, ornamental micro-detail, second scale that contradicts the first, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: logo-and-symbol-systems
+  categoryName: 1. Logo & Symbol Systems
+  domain: two-scale detail symbol
+  tags:
+    - curation-v2
+    - logo-and-symbol-systems
+    - dual-scale
+    - applied-design
+    - logo
+    - r-log-16
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

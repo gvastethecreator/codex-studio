@@ -1,0 +1,1053 @@
+{
+  "schema": "applied-design-integration-map",
+  "source": "Codex_Studio_Fichas_Completas_2026-09-25",
+  "pack": "pack_25",
+  "cards": {
+    "R-LOG-01": {
+      "status": "preset",
+      "preset": "SP25-001",
+      "name": "Chisel Counterforms",
+      "category": "1. Logo & Symbol Systems"
+    },
+    "R-LOG-02": {
+      "status": "preset",
+      "preset": "SP25-002",
+      "name": "Hinged Monograms",
+      "category": "1. Logo & Symbol Systems"
+    },
+    "R-LOG-03": {
+      "status": "preset",
+      "preset": "SP25-003",
+      "name": "Split-Contour Marks",
+      "category": "1. Logo & Symbol Systems"
+    },
+    "R-LOG-04": {
+      "status": "preset",
+      "preset": "SP25-004",
+      "name": "Woven Junction Symbols",
+      "category": "1. Logo & Symbol Systems"
+    },
+    "R-LOG-05": {
+      "status": "preset",
+      "preset": "SP25-005",
+      "name": "Asymmetric Module Families",
+      "category": "1. Logo & Symbol Systems"
+    },
+    "R-LOG-06": {
+      "status": "preset",
+      "preset": "SP25-006",
+      "name": "Elastic Loop Wordmarks",
+      "category": "1. Logo & Symbol Systems"
+    },
+    "R-LOG-07": {
+      "status": "preset",
+      "preset": "SP25-007",
+      "name": "Compressed Ligature Blocks",
+      "category": "1. Logo & Symbol Systems"
+    },
+    "R-LOG-08": {
+      "status": "preset",
+      "preset": "SP25-008",
+      "name": "Cut-End Ribbon Signs",
+      "category": "1. Logo & Symbol Systems"
+    },
+    "R-LOG-09": {
+      "status": "preset",
+      "preset": "SP25-009",
+      "name": "Staggered Aperture Marks",
+      "category": "1. Logo & Symbol Systems"
+    },
+    "R-LOG-10": {
+      "status": "preset",
+      "preset": "SP25-010",
+      "name": "Stacked Silhouette Emblems",
+      "category": "1. Logo & Symbol Systems"
+    },
+    "R-LOG-11": {
+      "status": "preset",
+      "preset": "SP25-011",
+      "name": "Gesture-to-Geometry Marks",
+      "category": "1. Logo & Symbol Systems"
+    },
+    "R-LOG-12": {
+      "status": "preset",
+      "preset": "SP25-012",
+      "name": "Interlocked Counters",
+      "category": "1. Logo & Symbol Systems"
+    },
+    "R-LOG-13": {
+      "status": "preset",
+      "preset": "SP25-013",
+      "name": "Interrupted Radial Seals",
+      "category": "1. Logo & Symbol Systems"
+    },
+    "R-LOG-14": {
+      "status": "preset",
+      "preset": "SP25-014",
+      "name": "Fold-Edge Insignia",
+      "category": "1. Logo & Symbol Systems"
+    },
+    "R-LOG-15": {
+      "status": "preset",
+      "preset": "SP25-015",
+      "name": "Open-Frame Wordmarks",
+      "category": "1. Logo & Symbol Systems"
+    },
+    "R-LOG-16": {
+      "status": "preset",
+      "preset": "SP25-016",
+      "name": "Dual-Scale Symbols",
+      "category": "1. Logo & Symbol Systems"
+    },
+    "R-LOG-17": {
+      "status": "preset",
+      "preset": "SP25-017",
+      "name": "Pictorial Stroke Economy",
+      "category": "1. Logo & Symbol Systems"
+    },
+    "R-LOG-18": {
+      "status": "preset",
+      "preset": "SP25-018",
+      "name": "Family-of-Marks Grid",
+      "category": "1. Logo & Symbol Systems"
+    },
+    "R-LOG-19": {
+      "status": "preset",
+      "preset": "SP25-019",
+      "name": "Responsive Mark Set",
+      "category": "1. Logo & Symbol Systems"
+    },
+    "R-LOG-20": {
+      "status": "preset",
+      "preset": "SP25-020",
+      "name": "Optical Ambigram Study",
+      "category": "1. Logo & Symbol Systems"
+    },
+    "R-ICO-01": {
+      "status": "pending"
+    },
+    "R-ICO-02": {
+      "status": "pending"
+    },
+    "R-ICO-03": {
+      "status": "pending"
+    },
+    "R-ICO-04": {
+      "status": "pending"
+    },
+    "R-ICO-05": {
+      "status": "pending"
+    },
+    "R-ICO-06": {
+      "status": "pending"
+    },
+    "R-ICO-07": {
+      "status": "pending"
+    },
+    "R-ICO-08": {
+      "status": "pending"
+    },
+    "R-ICO-09": {
+      "status": "pending"
+    },
+    "R-ICO-10": {
+      "status": "pending"
+    },
+    "R-ICO-11": {
+      "status": "pending"
+    },
+    "R-ICO-12": {
+      "status": "pending"
+    },
+    "R-ICO-13": {
+      "status": "pending"
+    },
+    "R-ICO-14": {
+      "status": "pending"
+    },
+    "R-ICO-15": {
+      "status": "pending"
+    },
+    "R-ICO-16": {
+      "status": "pending"
+    },
+    "R-ICO-17": {
+      "status": "pending"
+    },
+    "R-ICO-18": {
+      "status": "pending"
+    },
+    "R-ICO-19": {
+      "status": "qa-protocol",
+      "note": "Small-size optical repair is a verification pass.",
+      "doc": "QA-PROTOCOLS.md"
+    },
+    "R-ICO-20": {
+      "status": "pending"
+    },
+    "R-APP-01": {
+      "status": "pending"
+    },
+    "R-APP-02": {
+      "status": "pending"
+    },
+    "R-APP-03": {
+      "status": "pending"
+    },
+    "R-APP-04": {
+      "status": "pending"
+    },
+    "R-APP-05": {
+      "status": "pending"
+    },
+    "R-APP-06": {
+      "status": "pending"
+    },
+    "R-APP-07": {
+      "status": "pending"
+    },
+    "R-APP-08": {
+      "status": "pending"
+    },
+    "R-APP-09": {
+      "status": "pending"
+    },
+    "R-APP-10": {
+      "status": "pending"
+    },
+    "R-APP-11": {
+      "status": "pending"
+    },
+    "R-APP-12": {
+      "status": "pending"
+    },
+    "R-APP-13": {
+      "status": "pending"
+    },
+    "R-APP-14": {
+      "status": "pending"
+    },
+    "R-APP-15": {
+      "status": "pending"
+    },
+    "R-APP-16": {
+      "status": "pending"
+    },
+    "R-APP-17": {
+      "status": "pending"
+    },
+    "R-APP-18": {
+      "status": "pending"
+    },
+    "R-APP-19": {
+      "status": "pending"
+    },
+    "R-APP-20": {
+      "status": "pending"
+    },
+    "R-UI-01": {
+      "status": "pending"
+    },
+    "R-UI-02": {
+      "status": "pending"
+    },
+    "R-UI-03": {
+      "status": "pending"
+    },
+    "R-UI-04": {
+      "status": "pending"
+    },
+    "R-UI-05": {
+      "status": "pending"
+    },
+    "R-UI-06": {
+      "status": "pending"
+    },
+    "R-UI-07": {
+      "status": "pending"
+    },
+    "R-UI-08": {
+      "status": "pending"
+    },
+    "R-UI-09": {
+      "status": "pending"
+    },
+    "R-UI-10": {
+      "status": "pending"
+    },
+    "R-UI-11": {
+      "status": "pending"
+    },
+    "R-UI-12": {
+      "status": "pending"
+    },
+    "R-UI-13": {
+      "status": "pending"
+    },
+    "R-UI-14": {
+      "status": "pending"
+    },
+    "R-UI-15": {
+      "status": "pending"
+    },
+    "R-UI-16": {
+      "status": "pending"
+    },
+    "R-UI-17": {
+      "status": "pending"
+    },
+    "R-UI-18": {
+      "status": "pending"
+    },
+    "R-UI-19": {
+      "status": "pending"
+    },
+    "R-UI-20": {
+      "status": "pending"
+    },
+    "R-HUD-01": {
+      "status": "pending"
+    },
+    "R-HUD-02": {
+      "status": "pending"
+    },
+    "R-HUD-03": {
+      "status": "pending"
+    },
+    "R-HUD-04": {
+      "status": "pending"
+    },
+    "R-HUD-05": {
+      "status": "pending"
+    },
+    "R-HUD-06": {
+      "status": "pending"
+    },
+    "R-HUD-07": {
+      "status": "pending"
+    },
+    "R-HUD-08": {
+      "status": "pending"
+    },
+    "R-HUD-09": {
+      "status": "pending"
+    },
+    "R-HUD-10": {
+      "status": "pending"
+    },
+    "R-HUD-11": {
+      "status": "pending"
+    },
+    "R-HUD-12": {
+      "status": "pending"
+    },
+    "R-HUD-13": {
+      "status": "pending"
+    },
+    "R-HUD-14": {
+      "status": "pending"
+    },
+    "R-HUD-15": {
+      "status": "pending"
+    },
+    "R-HUD-16": {
+      "status": "pending"
+    },
+    "R-HUD-17": {
+      "status": "pending"
+    },
+    "R-HUD-18": {
+      "status": "pending"
+    },
+    "R-HUD-19": {
+      "status": "pending"
+    },
+    "R-HUD-20": {
+      "status": "qa-protocol",
+      "note": "Telemetry consistency trial is a verification pass.",
+      "doc": "QA-PROTOCOLS.md"
+    },
+    "R-PRD-01": {
+      "status": "pending"
+    },
+    "R-PRD-02": {
+      "status": "pending"
+    },
+    "R-PRD-03": {
+      "status": "pending"
+    },
+    "R-PRD-04": {
+      "status": "pending"
+    },
+    "R-PRD-05": {
+      "status": "pending"
+    },
+    "R-PRD-06": {
+      "status": "pending"
+    },
+    "R-PRD-07": {
+      "status": "pending"
+    },
+    "R-PRD-08": {
+      "status": "pending"
+    },
+    "R-PRD-09": {
+      "status": "pending"
+    },
+    "R-PRD-10": {
+      "status": "pending"
+    },
+    "R-PRD-11": {
+      "status": "pending"
+    },
+    "R-PRD-12": {
+      "status": "pending"
+    },
+    "R-PRD-13": {
+      "status": "pending"
+    },
+    "R-PRD-14": {
+      "status": "pending"
+    },
+    "R-PRD-15": {
+      "status": "pending"
+    },
+    "R-PRD-16": {
+      "status": "pending"
+    },
+    "R-PRD-17": {
+      "status": "pending"
+    },
+    "R-PRD-18": {
+      "status": "pending"
+    },
+    "R-PRD-19": {
+      "status": "qa-protocol",
+      "note": "Three-view consistency; pack_04 Three-View Recognition Chart covers the sheet.",
+      "doc": "QA-PROTOCOLS.md"
+    },
+    "R-PRD-20": {
+      "status": "pending"
+    },
+    "R-PKG-01": {
+      "status": "pending"
+    },
+    "R-PKG-02": {
+      "status": "pending"
+    },
+    "R-PKG-03": {
+      "status": "pending"
+    },
+    "R-PKG-04": {
+      "status": "pending"
+    },
+    "R-PKG-05": {
+      "status": "pending"
+    },
+    "R-PKG-06": {
+      "status": "pending"
+    },
+    "R-PKG-07": {
+      "status": "pending"
+    },
+    "R-PKG-08": {
+      "status": "pending"
+    },
+    "R-PKG-09": {
+      "status": "pending"
+    },
+    "R-PKG-10": {
+      "status": "pending"
+    },
+    "R-PKG-11": {
+      "status": "pending"
+    },
+    "R-PKG-12": {
+      "status": "pending"
+    },
+    "R-PKG-13": {
+      "status": "pending"
+    },
+    "R-PKG-14": {
+      "status": "pending"
+    },
+    "R-PKG-15": {
+      "status": "pending"
+    },
+    "R-PKG-16": {
+      "status": "pending"
+    },
+    "R-PKG-17": {
+      "status": "pending"
+    },
+    "R-PKG-18": {
+      "status": "pending"
+    },
+    "R-PKG-19": {
+      "status": "pending"
+    },
+    "R-PKG-20": {
+      "status": "pending"
+    },
+    "R-MCK-01": {
+      "status": "pending"
+    },
+    "R-MCK-02": {
+      "status": "pending"
+    },
+    "R-MCK-03": {
+      "status": "replaced",
+      "note": "Overlaps pack_01 Seamless Packshot / E-Commerce White Sweep.",
+      "doc": "AUDIT.md"
+    },
+    "R-MCK-04": {
+      "status": "pending"
+    },
+    "R-MCK-05": {
+      "status": "pending"
+    },
+    "R-MCK-06": {
+      "status": "pending"
+    },
+    "R-MCK-07": {
+      "status": "pending"
+    },
+    "R-MCK-08": {
+      "status": "pending"
+    },
+    "R-MCK-09": {
+      "status": "replaced",
+      "note": "Overlaps pack_01 Lifestyle In-Hand Product.",
+      "doc": "AUDIT.md"
+    },
+    "R-MCK-10": {
+      "status": "pending"
+    },
+    "R-MCK-11": {
+      "status": "pending"
+    },
+    "R-MCK-12": {
+      "status": "pending"
+    },
+    "R-MCK-13": {
+      "status": "pending"
+    },
+    "R-MCK-14": {
+      "status": "replaced",
+      "note": "Overlaps pack_01 Ghost Mannequin Apparel.",
+      "doc": "AUDIT.md"
+    },
+    "R-MCK-15": {
+      "status": "pending"
+    },
+    "R-MCK-16": {
+      "status": "pending"
+    },
+    "R-MCK-17": {
+      "status": "pending"
+    },
+    "R-MCK-18": {
+      "status": "pending"
+    },
+    "R-MCK-19": {
+      "status": "qa-protocol",
+      "note": "Surface refraction check is a verification pass.",
+      "doc": "QA-PROTOCOLS.md"
+    },
+    "R-MCK-20": {
+      "status": "pending"
+    },
+    "R-ADV-01": {
+      "status": "pending"
+    },
+    "R-ADV-02": {
+      "status": "pending"
+    },
+    "R-ADV-03": {
+      "status": "pending"
+    },
+    "R-ADV-04": {
+      "status": "pending"
+    },
+    "R-ADV-05": {
+      "status": "pending"
+    },
+    "R-ADV-06": {
+      "status": "pending"
+    },
+    "R-ADV-07": {
+      "status": "pending"
+    },
+    "R-ADV-08": {
+      "status": "pending"
+    },
+    "R-ADV-09": {
+      "status": "pending"
+    },
+    "R-ADV-10": {
+      "status": "pending"
+    },
+    "R-ADV-11": {
+      "status": "pending"
+    },
+    "R-ADV-12": {
+      "status": "pending"
+    },
+    "R-ADV-13": {
+      "status": "pending"
+    },
+    "R-ADV-14": {
+      "status": "pending"
+    },
+    "R-ADV-15": {
+      "status": "pending"
+    },
+    "R-ADV-16": {
+      "status": "pending"
+    },
+    "R-ADV-17": {
+      "status": "pending"
+    },
+    "R-ADV-18": {
+      "status": "pending"
+    },
+    "R-ADV-19": {
+      "status": "pending"
+    },
+    "R-ADV-20": {
+      "status": "pending"
+    },
+    "R-TYP-01": {
+      "status": "pending"
+    },
+    "R-TYP-02": {
+      "status": "pending"
+    },
+    "R-TYP-03": {
+      "status": "pending"
+    },
+    "R-TYP-04": {
+      "status": "pending"
+    },
+    "R-TYP-05": {
+      "status": "pending"
+    },
+    "R-TYP-06": {
+      "status": "pending"
+    },
+    "R-TYP-07": {
+      "status": "pending"
+    },
+    "R-TYP-08": {
+      "status": "pending"
+    },
+    "R-TYP-09": {
+      "status": "pending"
+    },
+    "R-TYP-10": {
+      "status": "pending"
+    },
+    "R-TYP-11": {
+      "status": "pending"
+    },
+    "R-TYP-12": {
+      "status": "pending"
+    },
+    "R-TYP-13": {
+      "status": "pending"
+    },
+    "R-TYP-14": {
+      "status": "pending"
+    },
+    "R-TYP-15": {
+      "status": "pending"
+    },
+    "R-TYP-16": {
+      "status": "pending"
+    },
+    "R-TYP-17": {
+      "status": "pending"
+    },
+    "R-TYP-18": {
+      "status": "pending"
+    },
+    "R-TYP-19": {
+      "status": "qa-protocol",
+      "note": "Exact-copy lettering proof is a verification pass.",
+      "doc": "QA-PROTOCOLS.md"
+    },
+    "R-TYP-20": {
+      "status": "pending"
+    },
+    "R-EDT-01": {
+      "status": "pending"
+    },
+    "R-EDT-02": {
+      "status": "pending"
+    },
+    "R-EDT-03": {
+      "status": "pending"
+    },
+    "R-EDT-04": {
+      "status": "pending"
+    },
+    "R-EDT-05": {
+      "status": "pending"
+    },
+    "R-EDT-06": {
+      "status": "pending"
+    },
+    "R-EDT-07": {
+      "status": "pending"
+    },
+    "R-EDT-08": {
+      "status": "pending"
+    },
+    "R-EDT-09": {
+      "status": "pending"
+    },
+    "R-EDT-10": {
+      "status": "pending"
+    },
+    "R-EDT-11": {
+      "status": "pending"
+    },
+    "R-EDT-12": {
+      "status": "pending"
+    },
+    "R-EDT-13": {
+      "status": "pending"
+    },
+    "R-EDT-14": {
+      "status": "pending"
+    },
+    "R-EDT-15": {
+      "status": "pending"
+    },
+    "R-EDT-16": {
+      "status": "pending"
+    },
+    "R-EDT-17": {
+      "status": "pending"
+    },
+    "R-EDT-18": {
+      "status": "pending"
+    },
+    "R-EDT-19": {
+      "status": "pending"
+    },
+    "R-EDT-20": {
+      "status": "pending"
+    },
+    "R-DAT-01": {
+      "status": "pending"
+    },
+    "R-DAT-02": {
+      "status": "pending"
+    },
+    "R-DAT-03": {
+      "status": "pending"
+    },
+    "R-DAT-04": {
+      "status": "pending"
+    },
+    "R-DAT-05": {
+      "status": "pending"
+    },
+    "R-DAT-06": {
+      "status": "pending"
+    },
+    "R-DAT-07": {
+      "status": "pending"
+    },
+    "R-DAT-08": {
+      "status": "pending"
+    },
+    "R-DAT-09": {
+      "status": "pending"
+    },
+    "R-DAT-10": {
+      "status": "pending"
+    },
+    "R-DAT-11": {
+      "status": "pending"
+    },
+    "R-DAT-12": {
+      "status": "pending"
+    },
+    "R-DAT-13": {
+      "status": "replaced",
+      "note": "Overlaps pack_10 Transit Map Diagram.",
+      "doc": "AUDIT.md"
+    },
+    "R-DAT-14": {
+      "status": "pending"
+    },
+    "R-DAT-15": {
+      "status": "pending"
+    },
+    "R-DAT-16": {
+      "status": "pending"
+    },
+    "R-DAT-17": {
+      "status": "pending"
+    },
+    "R-DAT-18": {
+      "status": "pending"
+    },
+    "R-DAT-19": {
+      "status": "qa-protocol",
+      "note": "Data-locked styling pass is a verification pass.",
+      "doc": "QA-PROTOCOLS.md"
+    },
+    "R-DAT-20": {
+      "status": "qa-protocol",
+      "note": "Explanation consistency audit is a verification pass.",
+      "doc": "QA-PROTOCOLS.md"
+    },
+    "R-PAT-01": {
+      "status": "pending"
+    },
+    "R-PAT-02": {
+      "status": "pending"
+    },
+    "R-PAT-03": {
+      "status": "pending"
+    },
+    "R-PAT-04": {
+      "status": "pending"
+    },
+    "R-PAT-05": {
+      "status": "pending"
+    },
+    "R-PAT-06": {
+      "status": "pending"
+    },
+    "R-PAT-07": {
+      "status": "pending"
+    },
+    "R-PAT-08": {
+      "status": "pending"
+    },
+    "R-PAT-09": {
+      "status": "pending"
+    },
+    "R-PAT-10": {
+      "status": "pending"
+    },
+    "R-PAT-11": {
+      "status": "pending"
+    },
+    "R-PAT-12": {
+      "status": "pending"
+    },
+    "R-PAT-13": {
+      "status": "pending"
+    },
+    "R-PAT-14": {
+      "status": "pending"
+    },
+    "R-PAT-15": {
+      "status": "pending"
+    },
+    "R-PAT-16": {
+      "status": "pending"
+    },
+    "R-PAT-17": {
+      "status": "pending"
+    },
+    "R-PAT-18": {
+      "status": "pending"
+    },
+    "R-PAT-19": {
+      "status": "pending"
+    },
+    "R-PAT-20": {
+      "status": "pending"
+    },
+    "R-MER-01": {
+      "status": "pending"
+    },
+    "R-MER-02": {
+      "status": "pending"
+    },
+    "R-MER-03": {
+      "status": "pending"
+    },
+    "R-MER-04": {
+      "status": "pending"
+    },
+    "R-MER-05": {
+      "status": "pending"
+    },
+    "R-MER-06": {
+      "status": "pending"
+    },
+    "R-MER-07": {
+      "status": "pending"
+    },
+    "R-MER-08": {
+      "status": "pending"
+    },
+    "R-MER-09": {
+      "status": "pending"
+    },
+    "R-MER-10": {
+      "status": "pending"
+    },
+    "R-MER-11": {
+      "status": "pending"
+    },
+    "R-MER-12": {
+      "status": "pending"
+    },
+    "R-MER-13": {
+      "status": "pending"
+    },
+    "R-MER-14": {
+      "status": "pending"
+    },
+    "R-MER-15": {
+      "status": "pending"
+    },
+    "R-MER-16": {
+      "status": "pending"
+    },
+    "R-MER-17": {
+      "status": "pending"
+    },
+    "R-MER-18": {
+      "status": "pending"
+    },
+    "R-MER-19": {
+      "status": "pending"
+    },
+    "R-MER-20": {
+      "status": "pending"
+    },
+    "R-ENV-01": {
+      "status": "pending"
+    },
+    "R-ENV-02": {
+      "status": "pending"
+    },
+    "R-ENV-03": {
+      "status": "pending"
+    },
+    "R-ENV-04": {
+      "status": "pending"
+    },
+    "R-ENV-05": {
+      "status": "pending"
+    },
+    "R-ENV-06": {
+      "status": "pending"
+    },
+    "R-ENV-07": {
+      "status": "pending"
+    },
+    "R-ENV-08": {
+      "status": "pending"
+    },
+    "R-ENV-09": {
+      "status": "pending"
+    },
+    "R-ENV-10": {
+      "status": "pending"
+    },
+    "R-ENV-11": {
+      "status": "pending"
+    },
+    "R-ENV-12": {
+      "status": "pending"
+    },
+    "R-ENV-13": {
+      "status": "pending"
+    },
+    "R-ENV-14": {
+      "status": "pending"
+    },
+    "R-ENV-15": {
+      "status": "pending"
+    },
+    "R-ENV-16": {
+      "status": "pending"
+    },
+    "R-ENV-17": {
+      "status": "pending"
+    },
+    "R-ENV-18": {
+      "status": "pending"
+    },
+    "R-ENV-19": {
+      "status": "qa-protocol",
+      "note": "Route walkthrough audit is a verification pass.",
+      "doc": "QA-PROTOCOLS.md"
+    },
+    "R-ENV-20": {
+      "status": "pending"
+    },
+    "R-MOT-01": {
+      "status": "pending"
+    },
+    "R-MOT-02": {
+      "status": "pending"
+    },
+    "R-MOT-03": {
+      "status": "pending"
+    },
+    "R-MOT-04": {
+      "status": "pending"
+    },
+    "R-MOT-05": {
+      "status": "pending"
+    },
+    "R-MOT-06": {
+      "status": "pending"
+    },
+    "R-MOT-07": {
+      "status": "pending"
+    },
+    "R-MOT-08": {
+      "status": "pending"
+    },
+    "R-MOT-09": {
+      "status": "pending"
+    },
+    "R-MOT-10": {
+      "status": "pending"
+    },
+    "R-MOT-11": {
+      "status": "pending"
+    },
+    "R-MOT-12": {
+      "status": "pending"
+    },
+    "R-MOT-13": {
+      "status": "pending"
+    },
+    "R-MOT-14": {
+      "status": "pending"
+    },
+    "R-MOT-15": {
+      "status": "pending"
+    },
+    "R-MOT-16": {
+      "status": "pending"
+    },
+    "R-MOT-17": {
+      "status": "pending"
+    },
+    "R-MOT-18": {
+      "status": "pending"
+    },
+    "R-MOT-19": {
+      "status": "pending"
+    },
+    "R-MOT-20": {
+      "status": "qa-protocol",
+      "note": "Reduced-motion companion is an accessibility check.",
+      "doc": "QA-PROTOCOLS.md"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-003
+packId: pack_25
+name: Split-Contour Marks
+styleAnchors:
+  - Split-Contour Marks
+  - complementary open-outline logo
+  - two open outlines
+displayName: Split-Contour Marks
+category: 1. Logo & Symbol Systems
+domain: complementary open-outline logo
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - logo-and-symbol-systems
+  - split-contour
+  - applied-design
+  - logo
+  - r-log-03
+  - requested-text
+visualDna:
+  aesthetic: 'Split-Contour Marks: two open outlines complete each other without touching, together forming one recognizable silhouette.'
+  subject_treatment: Split the prompt's subject silhouette between two open paths, each insufficient alone and complete only with its partner; set requested text exactly.
+  color_and_tone: One ink as the final test, with a second value allowed only while studying the two halves.
+  lighting_and_shadow: Depthless graphic surface where the gap between strokes is a real separation.
+  texture_and_material: Continuous contours with deliberate terminals and a single clean line per edge.
+  camera_and_composition: Breaks placed in different zones so the two paths never face each other directly.
+  atmosphere_and_mood: Dialogue and approach without contact, a central pause that keeps the tension alive.
+  rendering_and_quality: The eye closes the shape through perceptual continuity, with no added bridges between the paths.
+  creative_brief: "Split-Contour Marks: two open outlines complete each other without touching, together forming one recognizable silhouette. Carry it through two open outlines, perceptual closure, alternating breaks, untouched gap. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: two open outlines; perceptual closure; alternating breaks; untouched gap
+avoidRules:
+  - two redundant outlines
+  - silhouette accidentally closed
+  - breaks too small to perceive
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: two redundant outlines, silhouette accidentally closed, breaks too small to perceive, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: logo-and-symbol-systems
+  categoryName: 1. Logo & Symbol Systems
+  domain: complementary open-outline logo
+  tags:
+    - curation-v2
+    - logo-and-symbol-systems
+    - split-contour
+    - applied-design
+    - logo
+    - r-log-03
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

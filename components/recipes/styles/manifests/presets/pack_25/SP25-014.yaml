@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-014
+packId: pack_25
+name: Fold-Edge Insignia
+styleAnchors:
+  - Fold-Edge Insignia
+  - folded-plane insignia
+  - folded sheet
+displayName: Fold-Edge Insignia
+category: 1. Logo & Symbol Systems
+domain: folded-plane insignia
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - logo-and-symbol-systems
+  - fold-edge
+  - applied-design
+  - logo
+  - r-log-14
+  - requested-text
+visualDna:
+  aesthetic: 'Fold-Edge Insignia: changes of direction read as the edges of one folded sheet, the plane and its crease defining the sign.'
+  subject_treatment: Form the prompt's subject from one broad sheet with a few changes of plane, letting folded edges rather than a band define the sign; set requested text exactly.
+  color_and_tone: Two complementary plane values plus a silhouette that holds in solid black.
+  lighting_and_shadow: Very limited optional shading, the fold edge always present in the flat construction.
+  texture_and_material: Clean sheet with minimal visual thickness and deliberate crisp corners.
+  camera_and_composition: Main plane facing the viewer, the second plane working as a counterweight.
+  atmosphere_and_mood: Stability with a surprise at the edge, like a figure about to unfold.
+  rendering_and_quality: Every drawn edge corresponds to a plane, with purposeful facets only.
+  creative_brief: "Fold-Edge Insignia: changes of direction read as the edges of one folded sheet, the plane and its crease defining the sign. Carry it through folded sheet, crease edges, two-plane contrast, counterweight plane. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: folded sheet; crease edges; two-plane contrast; counterweight plane
+avoidRules:
+  - ribbon instead of a sheet
+  - triangulation without function
+  - shadows that invent thickness
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: ribbon instead of a sheet, triangulation without function, shadows that invent thickness, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: logo-and-symbol-systems
+  categoryName: 1. Logo & Symbol Systems
+  domain: folded-plane insignia
+  tags:
+    - curation-v2
+    - logo-and-symbol-systems
+    - fold-edge
+    - applied-design
+    - logo
+    - r-log-14
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-017
+packId: pack_25
+name: Pictorial Stroke Economy
+styleAnchors:
+  - Pictorial Stroke Economy
+  - minimal-stroke pictogram mark
+  - few shared strokes
+displayName: Pictorial Stroke Economy
+category: 1. Logo & Symbol Systems
+domain: minimal-stroke pictogram mark
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - logo-and-symbol-systems
+  - stroke-economy
+  - applied-design
+  - logo
+  - r-log-17
+  - requested-text
+visualDna:
+  aesthetic: 'Pictorial Stroke Economy: figurative marks built from very few strokes that share segments between parts of the figure.'
+  subject_treatment: Draw the prompt's subject with the fewest strokes possible, sharing segments between compatible parts while keeping its essential traits; set requested text exactly.
+  color_and_tone: One high-contrast ink with solid strokes carrying every trait of the figure.
+  lighting_and_shadow: Even graphic rendering, with every limb and part drawn by a stroke.
+  texture_and_material: Firm contours with little weight variation and clean open interiors.
+  camera_and_composition: One main figure with dominant free space and its distinctive orientation kept.
+  atmosphere_and_mood: Clarity with a surprisingly economical gesture that keeps full identity.
+  rendering_and_quality: The subject reads without a caption and shared strokes never create impossible anatomy.
+  creative_brief: "Pictorial Stroke Economy: figurative marks built from very few strokes that share segments between parts of the figure. Carry it through few shared strokes, figurative clarity, open space, economical gesture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: few shared strokes; figurative clarity; open space; economical gesture
+avoidRules:
+  - generic pictogram
+  - fused limbs
+  - details that only make sense with a caption
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: generic pictogram, fused limbs, details that only make sense with a caption, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: logo-and-symbol-systems
+  categoryName: 1. Logo & Symbol Systems
+  domain: minimal-stroke pictogram mark
+  tags:
+    - curation-v2
+    - logo-and-symbol-systems
+    - stroke-economy
+    - applied-design
+    - logo
+    - r-log-17
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

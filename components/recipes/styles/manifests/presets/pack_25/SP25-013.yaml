@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-013
+packId: pack_25
+name: Interrupted Radial Seals
+styleAnchors:
+  - Interrupted Radial Seals
+  - broken radial seal mark
+  - radial units
+displayName: Interrupted Radial Seals
+category: 1. Logo & Symbol Systems
+domain: broken radial seal mark
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - logo-and-symbol-systems
+  - interrupted-radial
+  - applied-design
+  - logo
+  - r-log-13
+  - requested-text
+visualDna:
+  aesthetic: 'Interrupted Radial Seals: units arranged around a center with one dominant interruption and smaller pauses, breaking ornamental symmetry.'
+  subject_treatment: Arrange the prompt's subject as radial units around a center with one main open sector and a few secondary pauses, with any outline shape allowed; set requested text exactly.
+  color_and_tone: Contrast between units and void, with one optional accent on the main interruption.
+  lighting_and_shadow: Flat graphic rendering, with hierarchy built from the missing sector itself.
+  texture_and_material: Units of related size with defined edges and solid ink surfaces.
+  camera_and_composition: Optical center slightly shifted when useful, one open sector ruling the others.
+  atmosphere_and_mood: Order with a deliberate deviation, confident rather than solemn.
+  rendering_and_quality: The mark reads with few units, and the missing sector stays obvious when small.
+  creative_brief: "Interrupted Radial Seals: units arranged around a center with one dominant interruption and smaller pauses, breaking ornamental symmetry. Carry it through radial units, dominant open sector, asymmetric pauses, shifted center. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: radial units; dominant open sector; asymmetric pauses; shifted center
+avoidRules:
+  - bureaucratic stock seal
+  - invented laurels or dates
+  - uniform symmetry with no focus
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: bureaucratic stock seal, invented laurels or dates, uniform symmetry with no focus, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: logo-and-symbol-systems
+  categoryName: 1. Logo & Symbol Systems
+  domain: broken radial seal mark
+  tags:
+    - curation-v2
+    - logo-and-symbol-systems
+    - interrupted-radial
+    - applied-design
+    - logo
+    - r-log-13
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
