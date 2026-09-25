@@ -70,6 +70,10 @@ export interface StudioShellController {
     isVisible: boolean;
     props: HeaderToolbarProps;
   };
+  support: {
+    isOpen: boolean;
+    close: () => void;
+  };
   viewport: {
     routeView: AppPageView;
     direction: number;
@@ -96,6 +100,7 @@ export interface StudioShellController {
  */
 export function useStudioShell(): StudioShellController {
   const [catalogQuery, setCatalogQuery] = useState('');
+  const [isSupportOpen, setSupportOpen] = useState(false);
   const deferredCatalogQuery = useDeferredValue(catalogQuery);
   // Selective subscriptions: workspace + toast + stable log actions only.
   // Runtime log *list* updates must not re-render this shell (log-list hook is overlay-only).
@@ -193,7 +198,7 @@ export function useStudioShell(): StudioShellController {
     const preflight = studioSettings.data.providerDomain.runtimePreflight?.providers.find(
       (provider) =>
         provider.providerId ===
-        (studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'codex'),
+        (studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'chatgpt'),
     );
     if (!preflight?.availableRuntimeKinds) return undefined;
     return preflight.availableRuntimeKinds.filter(
@@ -300,7 +305,7 @@ export function useStudioShell(): StudioShellController {
     onRecipeSelection: handleRecipeSelection,
     onViewChange: handleViewChange,
     onEditSettled,
-    activeProviderId: studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'codex',
+    activeProviderId: studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'chatgpt',
     defaultCodexTransport: codexDefaultTransport,
     activeRecipe: recipe.activeRecipe,
     grokCanExecute: resolveGrokCanExecute({
@@ -459,10 +464,10 @@ export function useStudioShell(): StudioShellController {
           handleExecuteEdit,
           isEditingImage,
           imageEditNotice: describeGrokImagineEditNotice(
-            studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'codex',
+            studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'chatgpt',
           ),
           requireMask: resolveImageEditorRequiresMask(
-            studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'codex',
+            studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'chatgpt',
           ),
         },
         chrome: {
@@ -603,7 +608,7 @@ export function useStudioShell(): StudioShellController {
       isGenerating: pipeline.isGenerating,
       imagesWithConfig,
       openModal: handleOpenModal,
-      activeProviderId: studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'codex',
+      activeProviderId: studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'chatgpt',
       grokCanExecute: resolveGrokCanExecute({
         canExecute: studioSettings.data.providerDomain.capabilities?.providers.find(
           (provider) => provider.providerId === 'grok',
@@ -752,7 +757,8 @@ export function useStudioShell(): StudioShellController {
         verifyCodexSession: studioRuntime.maintenance.verifyCodexSession,
       },
       provider: {
-        activeProviderId: studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'codex',
+        activeProviderId:
+          studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'chatgpt',
         commandCenter: buildStudioCommandCenterProjection({
           settings: studioSettings.data.settingsDomain.settings,
           providerCapabilities: studioSettings.data.providerDomain.capabilities,
@@ -871,6 +877,7 @@ export function useStudioShell(): StudioShellController {
         overlays: {
           onOpenDashboard: viewState.overlays.dashboard.open,
           openOnboarding: studioRuntime.onboarding.open,
+          onOpenSupport: () => setSupportOpen(true),
           onOpenChat: viewState.overlays.chat.open,
           onOpenTrash: viewState.overlays.trash.open,
           trashCount: catalogTrashGroups.length,
@@ -961,6 +968,10 @@ export function useStudioShell(): StudioShellController {
         isVisible: !isUiChromeSuppressed,
         props: headerToolbarProps,
       },
+      support: {
+        isOpen: isSupportOpen,
+        close: () => setSupportOpen(false),
+      },
       viewport: viewportController.viewport,
       generationDock: {
         ...viewportController.generationDock,
@@ -979,6 +990,7 @@ export function useStudioShell(): StudioShellController {
       onMainClick,
       isUiChromeSuppressed,
       headerToolbarProps,
+      isSupportOpen,
       viewportController,
       overlayController,
     ],

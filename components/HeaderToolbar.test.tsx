@@ -85,6 +85,7 @@ function renderHeader(
     onCloseRecipe: vi.fn(),
     onOpenDashboard: vi.fn(),
     onOpenOnboarding: vi.fn(),
+    onOpenSupport: vi.fn(),
     onOpenChat: vi.fn(),
     onOpenTrash: vi.fn(),
     trashCount: 0,

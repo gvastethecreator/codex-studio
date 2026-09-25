@@ -4,6 +4,7 @@ import { useStudioShell } from '../hooks/useStudioShell';
 import { hasMountedStudioOverlay } from '../lib/studioOverlayVisibility';
 
 import { HeaderToolbar } from './HeaderToolbar';
+import { SupportProjectPage } from './SupportProjectPage';
 import { StudioOperationsRail } from './studio/StudioOperationsRail';
 import { StudioViewport } from './shell/StudioViewport';
 import { ErrorBoundary } from './ErrorBoundary';
@@ -138,6 +139,7 @@ export const AppContent: React.FC = () => {
         <ControlTooltips />
 
         {shell.headerToolbar.isVisible && <HeaderToolbar {...shell.headerToolbar.props} />}
+        <SupportProjectPage isOpen={shell.support.isOpen} onClose={shell.support.close} />
 
         {isWorkspace && (
           <div

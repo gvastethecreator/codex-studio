@@ -41,6 +41,7 @@ describe('buildStudioHeaderToolbarProps', () => {
       overlays: {
         onOpenDashboard: () => calls.push('openDashboard'),
         openOnboarding: () => calls.push('openOnboarding'),
+        onOpenSupport: () => calls.push('openSupport'),
         onOpenChat: () => calls.push('openChat'),
         onOpenTrash: () => calls.push('openTrash'),
         trashCount: 2,

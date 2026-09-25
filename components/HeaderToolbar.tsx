@@ -42,6 +42,7 @@ export interface HeaderToolbarProps {
   onCloseRecipe: () => void;
   onOpenDashboard: () => void;
   onOpenOnboarding: () => void;
+  onOpenSupport: () => void;
   onOpenChat: () => void;
   onOpenTrash: () => void;
   trashCount: number;
@@ -71,6 +72,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
   activeRecipeAliasId = null,
   onCloseRecipe,
   onOpenOnboarding,
+  onOpenSupport,
   onOpenTrash,
   trashCount,
   onToggleDebug,
@@ -264,6 +266,19 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 className="studio-menu-item rounded p-2 text-left"
                 onClick={() => {
                   setIsToolsOpen(false);
+                  onOpenSupport();
+                }}
+                aria-label="Support this project"
+              >
+                Support this project
+              </button>
+              <button
+                type="button"
+                role="menuitem"
+                data-dropdown-item
+                className="studio-menu-item rounded p-2 text-left"
+                onClick={() => {
+                  setIsToolsOpen(false);
                   onToggleDebug();
                 }}
                 aria-label="Open studio activity"
@@ -379,6 +394,15 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 >
                   <CircleHelp size={15} />
                   Help
+                </button>
+                <button
+                  type="button"
+                  aria-label="Support this project"
+                  data-dropdown-item
+                  onClick={() => runMobileCommand(onOpenSupport)}
+                  className="studio-ghost-control flex min-h-12 w-full items-center gap-2 px-3 text-left"
+                >
+                  Support
                 </button>
               </div>
             </DemandMountedGsapDropdown>
