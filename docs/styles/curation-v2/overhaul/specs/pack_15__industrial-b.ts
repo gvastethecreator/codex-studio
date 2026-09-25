@@ -49,9 +49,9 @@ const spec: Spec = {
         key_features: 'patched envelopes; wicker gondolas; tethers; burner glow',
       },
       [
-        'Balloonpunk illustration of a floating market of patched striped balloons tethered together above the clouds, traders passing baskets between wicker gondolas on ropes, burner flames glowing inside the envelopes and sandbags hanging below. No readable text or logo.',
-        'Balloonpunk illustration of a postal balloonist dropping parcels on tiny parachutes to a mountain village far below, wind snapping the ribbons on her gondola. No readable text or logo.',
-        'Balloonpunk illustration of a race of home-made balloons over a river valley at dawn, each basket crewed by a different family waving flags without symbols. No readable text or logo.',
+        'A war of hot-air balloons over a burning vineyard, gondola crews hurling barrels of wine at each other while the patched envelopes of both fleets glow orange against the smoke. No readable text or logo.',
+        'A wedding held in a floating wicker gondola above the clouds goes wrong when the cake counts as ballast and gets thrown overboard. No readable text or logo.',
+        'A lone balloon with its burner out drifts silently above a moonlit sea of clouds, a sleeping child and a lantern its only passengers. No readable text or logo.',
       ],
     ),
     punk(
@@ -76,9 +76,9 @@ const spec: Spec = {
         key_features: 'copper hard hats; air hoses; diving bells; riveted stations',
       },
       [
-        'Diverpunk illustration of hard-hat divers in canvas suits building a riveted underwater station on the seabed, copper helmets gleaming in surface sunbeams, air hoses rising to a barge far above and fish drifting past. No readable text or logo.',
-        'Diverpunk illustration of a riveted diving bell lowered into a sunken cathedral, lamplight revealing flooded pews, drifting hymn books and a curious octopus on the altar rail. No readable text or logo.',
-        'Diverpunk illustration of a diver shaking hands with a giant turtle beside a shipwreck, bubbles rising from his helmet valve. No readable text or logo.',
+        'Hard-hat divers in copper helmets hold a candlelit funeral for a leviathan on the seabed, their air hoses rising like pillars toward the distant surface light. No readable text or logo.',
+        'A diver in a copper helmet tries to politely return a stolen pocket watch to a very offended giant crab on a shipwreck. No readable text or logo.',
+        'Inside a riveted undersea station, a diver finds his own helmet already hanging on the wall, still wet, with a bundle of seaweed tied to it. No readable text or logo.',
       ],
     ),
     punk(
@@ -104,9 +104,9 @@ const spec: Spec = {
         key_features: 'overhead wire webs; poles and insulators; telegraph keys; signal sparks',
       },
       [
-        'Telegraphpunk illustration of a busy city street beneath a dense web of telegraph wires strung between tall wooden poles, tiny blue signal sparks racing along the lines while messenger boys cycle below. No readable text or logo.',
-        'Telegraphpunk illustration of a lone operator at a relay hut on the prairie tapping a brass key at night, wires humming overhead. No readable text or logo.',
-        'Telegraphpunk illustration of line workers repairing a snapped wire on a pole during a snowstorm, sparks dancing at the break. No readable text or logo.',
+        'Telegraph lines strung across a continent start carrying messages from the dead, and operators in a candlelit relay station stare as the brass keys tap by themselves. No readable text or logo.',
+        'A crow colony has learned to tap the telegraph wires and now runs a gossip network across the valley, one crow wearing a tiny visor. No readable text or logo.',
+        "A lonely lineman on a snowbound pole listens to two lovers' messages crossing the wire in the dark, sparks racing past his gloves. No readable text or logo.",
       ],
     ),
     punk(
@@ -131,9 +131,9 @@ const spec: Spec = {
         key_features: 'steam ice crawlers; frost; fur parkas; lantern-lit tents',
       },
       [
-        'Polar expedition punk illustration of a steam-powered ice crawler hauling sledges across an endless white plain, its chimney puffing black smoke, fur-clad explorers walking beside it and a frozen ship locked in the ice behind. No readable text or logo.',
-        'Polar expedition illustration of explorers huddled in a heated canvas tent, a small boiler glowing and frost on the inside walls. No readable text or logo.',
-        'Polar expedition illustration of a lone explorer in a fur parka planting an expedition pole on a glacier summit under green aurora, a steam crawler waiting far below. No readable text or logo.',
+        "A steam-powered ice crawler breaks through the frozen sea and finds a lost expedition's ship perfectly preserved in a cavern of blue ice, lanterns still hanging from its masts. No readable text or logo.",
+        'A polar explorer tries to teach a penguin colony to pull his supply sledge, the penguins clearly unionizing. No readable text or logo.',
+        'Inside a frosted canvas tent, the last explorer writes by boiler light while a white figure waits patiently outside the flap. No readable text or logo.',
       ],
     ),
     punk(
@@ -159,9 +159,9 @@ const spec: Spec = {
         key_features: 'wooden derricks; gushers; pipelines; flare glow',
       },
       [
-        'Petropunk illustration of a black gusher erupting over a forest of wooden derricks on a dusty plain, oil raining down on cheering workers, riveted tanks and pipelines stretching to a flaring refinery. No readable text or logo.',
-        'Petropunk illustration of a boomtown main street at night lit by roaring gas flares, oil-stained wagons, saloons with swinging doors and workers counting pay under a lantern. No readable text or logo.',
-        'Petropunk illustration of a pipeline crawler machine walking on iron stilts across a red canyon, a black pipeline unrolling behind it and roughnecks riding on top. No readable text or logo.',
+        'A black gusher erupts in the middle of a frontier cathedral during a sermon, oil raining over the pews as the congregation drops to its knees in joy and horror. No readable text or logo.',
+        'Two oil barons duel with wooden derricks like giant jousting lances on a dusty plain while roughnecks sell popcorn. No readable text or logo.',
+        'A rusted pumpjack still nods alone in a ghost town at dusk, a coyote asleep in its shadow. No readable text or logo.',
       ],
     ),
     punk(
@@ -187,9 +187,9 @@ const spec: Spec = {
         key_features: 'rotary presses; hanging sheets; ink rollers; blank posters',
       },
       [
-        'Printpunk illustration of a secret print shop in a cellar at night, a giant iron rotary press spinning out blank broadsheets, apprentices hanging wet sheets on lines overhead and ink rollers glistening. No readable text or logo.',
-        'Printpunk illustration of a paper airship drifting over a city square and dropping thousands of blank pamphlets that swirl down onto a surprised crowd. No readable text or logo.',
-        'Printpunk illustration of a typesetter arranging metal blocks by candlelight in a cramped workshop, ink on her fingers and wet sheets hanging overhead. No readable text or logo.',
+        "A rebel press prints ten thousand blank posters that come alive as paper birds and swarm the tyrant's palace at dawn, apprentices cheering from the cellar stairs. No readable text or logo.",
+        'A typesetter accidentally sets the entire newspaper upside down and the whole town starts reading while standing on its head. No readable text or logo.',
+        "In an abandoned print shop, the rotary press turns by itself at midnight, printing faces of people who haven't been born yet. No readable text or logo.",
       ],
     ),
     punk(
@@ -215,9 +215,9 @@ const spec: Spec = {
         key_features: 'water wheels; windmill sails; wooden gearing; millstones',
       },
       [
-        'Millpunk illustration of a riverside village where giant wooden water wheels drive saws, looms and a millstone through visible wooden gearing, spray glittering in the sun and children fishing from the wheel housing. No readable text or logo.',
-        'Millpunk illustration of a windmill-powered drawbridge lifting its wooden deck to let a barge pass, sails turning and villagers waiting with carts on both banks. No readable text or logo.',
-        'Millpunk illustration of a miller oiling huge wooden cogs inside a creaking windmill at dusk, flour dust glowing in the last light through a small window. No readable text or logo.',
+        "A windmill giant walks across flooded fields during a storm, its four sails spinning as arms, carrying a whole village's grain on its back to high ground. No readable text or logo.",
+        'A miller hires a family of bears to push his broken millstone around while he fixes the water wheel, the bears unexpectedly efficient. No readable text or logo.',
+        "At midnight an old water mill grinds starlight instead of grain, the miller's daughter catching the glowing flour in a sack. No readable text or logo.",
       ],
     ),
     punk(
@@ -242,9 +242,9 @@ const spec: Spec = {
         key_features: 'porcelain automata; rococo salon; open panels; candlelight',
       },
       [
-        'Automaton salonpunk illustration of a candlelit rococo salon where a porcelain-faced automaton in silk plays a harpsichord for powdered guests, a panel on its back open to show fine brass mechanisms, gilt mirrors reflecting the candles. No readable text or logo.',
-        'Automaton salon illustration of an afternoon tea party served by mechanical footmen with porcelain hands and silk livery, aristocrats watching a tray balance perfectly on a gear-driven wrist. No readable text or logo.',
-        'Automaton salon illustration of an inventor winding a life-size dancer automaton in a gilded workshop, its back panel open and a small audience peeking through the door. No readable text or logo.',
+        'At a masked ball, the porcelain automata quietly lock the doors and begin a waltz of their own while the aristocrats freeze against the gilded walls. No readable text or logo.',
+        'A clockwork footman attempts to serve tea during an earthquake with perfect composure, cups flying around him while every guest screams. No readable text or logo.',
+        "An inventor's widow dances alone in her salon with the automaton he built in his own likeness, its porcelain face cracked. No readable text or logo.",
       ],
     ),
     punk(
@@ -270,9 +270,9 @@ const spec: Spec = {
         key_features: 'paddle wheels; twin smokestacks; river docks; lantern decks',
       },
       [
-        'Paddlewheelpunk illustration of a towering four-deck paddle steamer churning down a wide brown river at sunset, twin smokestacks puffing, a brass calliope playing on deck and a dock town waving from the bank. No readable text or logo.',
-        'Paddlewheelpunk illustration of a floating casino steamboat lit by hundreds of lanterns on a misty river night, music drifting across the water and rowboats ferrying guests. No readable text or logo.',
-        'Paddlewheelpunk illustration of a mechanical river fortress with four giant paddle wheels guarding a marshy delta at dawn, flags without symbols snapping above its turrets. No readable text or logo.',
+        'A paddle steamer carrying a traveling circus runs aground on the back of a sleeping river leviathan, elephants and acrobats staring as the island begins to breathe. No readable text or logo.',
+        'A riverboat card game gets heated when the dealer is revealed to be a very large catfish in a waistcoat. No readable text or logo.',
+        'A sunken paddle wheel still turns slowly underwater in a flooded delta, fish swimming through its lanterns at night. No readable text or logo.',
       ],
     ),
     punk(
@@ -298,9 +298,9 @@ const spec: Spec = {
         key_features: 'lock staircases; aqueducts; narrowboats; still reflections',
       },
       [
-        'Canalpunk illustration of a staircase of brick locks climbing a green hillside, painted narrowboats rising step by step while lock keepers turn iron winding gear and a horse waits on the towpath. No readable text or logo.',
-        'Canalpunk illustration of a long brick aqueduct carrying a canal high over a misty valley at sunrise, a painted narrowboat crossing and sheep grazing far below. No readable text or logo.',
-        'Canalpunk illustration of a giant rotating boat lift raising a narrowboat between two canal levels, iron arms turning slowly and families watching from a stone terrace. No readable text or logo.',
+        'A staircase of canal locks climbs into the clouds to a floating reservoir city, narrowboats rising step by step past waterfalls as lock keepers work the gears in the mist. No readable text or logo.',
+        'A narrowboat family discovers their towpath horse has been quietly replaced by a unicorn, which is terrible at pulling. No readable text or logo.',
+        'In a drained canal at night, a lock keeper finds hundreds of lost wedding rings glinting in the mud under his lamp. No readable text or logo.',
       ],
     ),
   ] satisfies Create[],

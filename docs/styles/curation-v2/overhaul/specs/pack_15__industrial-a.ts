@@ -27,23 +27,23 @@ const spec: Spec = {
   updates: {
     'SP15-081': {
       briefs: [
-        'Steampunk illustration of a lady cartographer adjusting the brass sextant of a mapping dirigible above a foggy harbor city, sepia-lithograph linework, matte gouache color and riveted Victorian machinery with visible pressure gauges and steam valves. No readable text or logo.',
-        'Steampunk illustration of a clockwork elephant carrying a mobile library through a desert caravan, pistons in its legs, a librarian reading on its back under a canvas awning. No readable text or logo.',
-        'Steampunk illustration of a Victorian submarine surfacing beside a lighthouse at dawn, portholes glowing, crew in brass diving helmets climbing onto the hull. No readable text or logo.',
+        'A duchess in a whalebone corset pilots a steam-powered mechanical kraken through the flooded ballroom of her own sinking manor, champagne glasses floating past its brass tentacles while the orchestra keeps playing on the balcony. No readable text or logo.',
+        'A disgraced inventor tries to sell a clockwork horse to a dragon at a smoky country fair, the dragon suspiciously sniffing the boiler while a crowd in top hats places bets. No readable text or logo.',
+        'In a Victorian orphanage attic at midnight, a girl secretly repairs a broken brass angel that has fallen from the cathedral spire, its steam heart ticking faintly in her lap. No readable text or logo.',
       ],
     },
     'SP15-082': {
       briefs: [
-        'Dieselpunk illustration of a streamlined interwar flying boat landing on a grey sea beside a fortified refinery island, compact engine masses, pressed steel panels, piston rhythm and exhaust smudging the sky. No readable text or logo.',
-        'Dieselpunk illustration of a mechanic with oil-streaked arms tuning a colossal radial engine in a hangar lit by sodium lamps. No readable text or logo.',
-        'Dieselpunk illustration of an armored land train crossing a frozen steppe at night under sweeping searchlights, smokestacks roaring, gun turrets turning and soldiers in greatcoats on the roof platforms. No readable text or logo.',
+        'A cathedral-sized armored zeppelin drops a thousand paper lanterns over a besieged harbor city instead of bombs, its riveted gondola lit from inside by a jazz band playing for the enemy. No readable text or logo.',
+        'An oil-stained mechanic in overalls argues with a sulking giant robot who refuses to leave the hangar in the rain, both drinking coffee from enormous and tiny cups. No readable text or logo.',
+        'A lone switchman in a gas mask walks the roof of an endless armored train at dawn, fog swallowing the tracks ahead and a crow riding on his shoulder. No readable text or logo.',
       ],
     },
     'SP15-083': {
       briefs: [
-        'Clockpunk folio drawing of a Renaissance inventor testing a spring-driven flying machine from a tower balcony, fine ink construction lines, visible escapements and wound springs, apprentices holding ropes below. No readable text or logo.',
-        'Clockpunk folio drawing of a clockwork knight automaton seated at a chessboard, its chest open to show the gear train. No readable text or logo.',
-        'Clockpunk folio drawing of a canal city whose stone bridges rotate on huge exposed clock mechanisms at noon, boats waiting, ink construction lines showing every escapement and spring. No readable text or logo.',
+        'A Renaissance queen lies in state inside a glass clock whose gears keep her heart turning, courtiers in black kneeling as the great pendulum swings across the chapel. No readable text or logo.',
+        'Two rival watchmakers settle a feud with a race of spring-driven mechanical snails across a Florentine piazza, pigeons refereeing from the fountain. No readable text or logo.',
+        'A tiny clockwork nightingale sings alone in the ruins of a burned palace library, winding itself with its own beak. No readable text or logo.',
       ],
     },
   },
@@ -72,9 +72,9 @@ const spec: Spec = {
         key_features: 'tesla coils; violet arcs; glass insulators; copper wiring',
       },
       [
-        'Teslapunk illustration of a woman inventor standing between two towering coils in a stone laboratory at night, violet-white arcs leaping over her head to a caged glass globe, copper wiring and porcelain insulators everywhere. No readable text or logo.',
-        'Teslapunk illustration of an electric tram pulling a glowing carriage through a rainy Victorian street, sparks spraying from the overhead wire and passengers lit by amber filament bulbs. No readable text or logo.',
-        'Teslapunk illustration of a lighthouse powered by a giant coil on a cliff, arcs dancing between its tip and the storm clouds while keepers shelter behind glass. No readable text or logo.',
+        'Two rival inventors duel inside a flooded gothic cathedral turned laboratory, their tesla coils facing each other across the nave, lightning forking into the organ pipes while a bride in rubber gloves calmly reads in the front pew. No readable text or logo.',
+        'A frazzled village doctor revives a thunderstruck ox with a hand-cranked coil in a barn, the farmers hiding behind hay bales with their hair standing straight up. No readable text or logo.',
+        'At the edge of a salt marsh, a lighthouse keeper feeds bottled lightning to a glowing jellyfish-like creature that lives inside the lamp. No readable text or logo.',
       ],
     ),
     punk(
@@ -101,9 +101,9 @@ const spec: Spec = {
         key_features: 'gaslight pools; thick fog; cobbled lanes; hidden magic',
       },
       [
-        'Gaslamp fantasy illustration of a lamplighter on a ladder lighting a gas lamp in a foggy cobbled lane, tiny winged fae gathering in the new glow while a hansom cab passes below, soot brick and soft haloes of light. No readable text or logo.',
-        'Gaslamp fantasy illustration of a night market under railway arches where a goblin sells glowing jars beside a chestnut roaster, fog drifting between the stalls. No readable text or logo.',
-        'Gaslamp fantasy illustration of a detective in a bowler hat examining footprints of frost on a warm summer pavement under a gas lamp. No readable text or logo.',
+        'A funeral procession of lamplighters carries a coffin full of burning gas flames through a fog-drowned city, every street lamp going dark as they pass, fae mourners following on the rooftops. No readable text or logo.',
+        "A pickpocket accidentally steals a tiny sleeping dragon from a gentleman's waistcoat and panics in a crowded gaslit omnibus as it starts to wake. No readable text or logo.",
+        'A widow in a black veil sets two teacups every night for the ghost who knocks inside her gas lamp, the flame bending toward the empty chair. No readable text or logo.',
       ],
     ),
     punk(
@@ -130,9 +130,9 @@ const spec: Spec = {
         key_features: 'sails everywhere; rope rigging; wind power; glowing canvas',
       },
       [
-        'Sailpunk illustration of a wind-powered land ship with three masts racing across a salt flat, sails glowing in the sun, crew hauling ropes and pennants snapping, tarred wooden wheels leaving tracks. No readable text or logo.',
-        'Sailpunk illustration of a harbor city whose windmill-sailed towers pump water and grind grain, rope bridges between them and ships in the bay. No readable text or logo.',
-        'Sailpunk illustration of a young navigator riding a kite-drawn skiff over waves at dawn, the huge kite pulling her lines taut. No readable text or logo.',
+        'An armada of land-ships with patchwork sails charges across a desert of white salt toward a walled city on stilts, pirate flags without symbols snapping and sand spraying from giant wooden wheels. No readable text or logo.',
+        "A grandmother rigs a bedsheet sail to her rocking chair on a windy cliff and races the local children's kite-carts down the hill, shawl flying. No readable text or logo.",
+        'A becalmed sail-city drifts silent in fog, its thousand canvas sails hanging limp while the citizens sit on the rooftops whistling for wind. No readable text or logo.',
       ],
     ),
     punk(
@@ -159,9 +159,9 @@ const spec: Spec = {
         key_features: 'molten pours; cast iron; furnace glow; sand molds',
       },
       [
-        'Foundrypunk illustration of workers pouring a river of molten iron from a giant ladle into sand molds for a cast-iron bridge, orange-white glow lighting their leather aprons and goggles, blast furnaces roaring behind. No readable text or logo.',
-        'Foundrypunk illustration of a cast-iron city of arched bridges and towers at night, every joint still glowing faintly from casting. No readable text or logo.',
-        'Foundrypunk illustration of a young molder pressing a pattern of a lion into sand, a cooling iron lion statue beside her. No readable text or logo.',
+        'A foundry god made of cooling iron rises from the casting pit as the workers finish pouring it, glowing cracks still running through its chest, the ladle crew bowing in their leather aprons. No readable text or logo.',
+        'A proud blacksmith family casts a life-size iron statue of their grumpy cat, who sits beside the mold supervising with extreme disapproval. No readable text or logo.',
+        'At night an abandoned foundry glows again for one hour, a ghost crew pouring molten light into molds that nobody collects. No readable text or logo.',
       ],
     ),
     punk(
@@ -187,9 +187,9 @@ const spec: Spec = {
         key_features: 'converging tracks; locomotive fortresses; steam; station cathedrals',
       },
       [
-        'Railpunk illustration of a walled city built on the flatbeds of an immense slow train crossing a snowy plain, houses, chimneys and a church spire riding on carriages, a locomotive the size of a fortress pulling it all. No readable text or logo.',
-        'Railpunk illustration of a cathedral-like station hall with a glass roof where trains arrive from every direction in clouds of steam. No readable text or logo.',
-        'Railpunk illustration of a signalwoman alone in a brick tower at a vast junction, pulling iron levers to switch tracks during a thunderstorm while two locomotives approach through the rain. No readable text or logo.',
+        'A cathedral on rails, spire and all, thunders across a frozen steppe pulled by six locomotives while wolves race alongside and a bishop rings the bell from the moving belfry. No readable text or logo.',
+        'A furious stationmaster tries to issue a ticket to an enormous migrating tortoise that has walked onto the platform and refuses to move off the tracks. No readable text or logo.',
+        'Deep in a forest, a lost train from a hundred years ago still waits at an overgrown platform, lamps lit, passengers asleep in their seats. No readable text or logo.',
       ],
     ),
     punk(
@@ -214,9 +214,9 @@ const spec: Spec = {
         key_features: 'punch-card looms; warp threads; mill windows; woven patterns',
       },
       [
-        'Loompunk illustration of a vast mill hall where punch-card looms weave a giant tapestry map of the city, threads rising to the ceiling, mill girls feeding chains of cards while light beams cross the dusty air. No readable text or logo.',
-        'Loompunk illustration of a weaver-engineer reading a pattern encoded in a long chain of punch cards draped over her shoulders. No readable text or logo.',
-        'Loompunk illustration of a suspension bridge being woven from steel cable on a colossal loom that straddles a river gorge, weavers on scaffolds guiding the shuttle through the gap. No readable text or logo.',
+        'The last surviving loom of a burned city weaves a new sky from salvaged thread, workers on scaffolds feeding punch cards while a tapestry of stars unrolls over the ruins. No readable text or logo.',
+        "A mill girl discovers the punch-card loom has been secretly weaving portraits of the foreman's cat instead of cloth for three weeks. No readable text or logo.",
+        'An old weaver unravels her own shadow thread by thread on a loom in a moonlit attic, her silhouette on the wall getting thinner. No readable text or logo.',
       ],
     ),
     punk(
@@ -241,9 +241,9 @@ const spec: Spec = {
         key_features: 'lamp pools; coal seams; timber props; soot',
       },
       [
-        'Coalpunk illustration of miners riding a cart down a steep underground rail into a vast cavern city, helmet lamps making small circles of light on coal seams and timber props, a huge pumping engine breathing in the dark. No readable text or logo.',
-        'Coalpunk illustration of a canary in a cage hanging in a tunnel beside a miner reading the flame of his safety lamp. No readable text or logo.',
-        'Coalpunk illustration of a mining town at shift change, soot-faced workers walking home under a smoky black sky, lamps swinging and children running to meet them at the pithead gate. No readable text or logo.',
+        'Miners break through a coal seam into the ribcage of an enormous fossilized dragon glowing faintly underground, their helmet lamps tiny against the dark bones. No readable text or logo.',
+        'A pit pony with a helmet lamp leads a panicked group of lost miners back to the lift, clearly having done this many times before. No readable text or logo.',
+        'A canary in a cage sings for a single miner who never left the deep shaft, his lamp still burning after decades. No readable text or logo.',
       ],
     ),
   ] satisfies Create[],
