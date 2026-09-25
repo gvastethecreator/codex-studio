@@ -123,4 +123,499 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP15-254',
+    name: 'Orbitalpunk',
+    displayName: 'Orbitalpunk',
+    styleAnchors: ['Orbitalpunk', 'orbital ring habitat punk', 'spinning habitat rings'],
+    category: '9. Space, Atomic & Ray Punks',
+    domain: 'orbital ring habitat punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real space agency insignia, real brand or company logo, franchise spaceship design, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Orbitalpunk: working-class life on crowded orbital rings and stations, with spinning habitat wheels, patched modules, laundry in zero wind and the planet always below.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; move it onto a crowded spinning orbital habitat with the planet curving below the windows.",
+      color_and_tone:
+        'Worn white and grey modules, blue planet glow and warm interior lights against black space.',
+      lighting_and_shadow:
+        'Hard unfiltered sunlight and deep space shadow, softened by planet glow.',
+      texture_and_material:
+        'Scuffed composite panels, patched insulation, handrails, cables and small portholes.',
+      camera_and_composition:
+        'Curved horizons of habitat rings with the planet filling half the frame.',
+      atmosphere_and_mood: 'Cramped, lively and fragile, a neighborhood spinning above the world.',
+      rendering_and_quality: 'Clean detailed illustration with crisp hard light and planet glow.',
+      creative_brief:
+        "Orbitalpunk: working-class life on crowded orbital rings and stations, with spinning habitat wheels, patched modules, laundry in zero wind and the planet always below. Carry it through spinning habitat rings, patched modules, planet below, crowded neighborhoods. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'spinning habitat rings; patched modules; planet below; crowded neighborhoods',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-255',
+    name: 'Marspunk',
+    displayName: 'Marspunk',
+    styleAnchors: ['Marspunk', 'red planet frontier punk', 'dust-caked domes'],
+    category: '9. Space, Atomic & Ray Punks',
+    domain: 'red planet frontier punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real space agency insignia, real brand or company logo, franchise spaceship design, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Marspunk: a rough frontier culture on the red planet, with dust-caked domes, pressure-suit cowboys, rover caravans, rust storms and a tiny blue Earth in a pink sky.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; set it on the red Martian frontier, with domes, rovers, rust dust and pressure suits.",
+      color_and_tone:
+        'Rust red, ochre and butterscotch sky with dusty whites and cold blue Martian sunsets.',
+      lighting_and_shadow: 'Dim hazy sunlight through dust, blue sunsets and dome glow at night.',
+      texture_and_material:
+        'Rust dust, cracked regolith, scuffed suit fabric, dome glass and rover tires.',
+      camera_and_composition:
+        'Wide frontier landscapes with small domes and caravans under huge skies.',
+      atmosphere_and_mood: 'Tough, lonely and pioneering, a wild west under a pink sky.',
+      rendering_and_quality: 'Dusty cinematic illustration with hazy depth and fine rust grain.',
+      creative_brief:
+        "Marspunk: a rough frontier culture on the red planet, with dust-caked domes, pressure-suit cowboys, rover caravans, rust storms and a tiny blue Earth in a pink sky. Carry it through dust-caked domes, rover caravans, rust storms, tiny blue Earth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'dust-caked domes; rover caravans; rust storms; tiny blue Earth',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-256',
+    name: 'Asteroidpunk',
+    displayName: 'Asteroidpunk',
+    styleAnchors: ['Asteroidpunk', 'asteroid miner punk', 'tethered drill crews'],
+    category: '9. Space, Atomic & Ray Punks',
+    domain: 'asteroid miner punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real space agency insignia, real brand or company logo, franchise spaceship design, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Asteroidpunk: gritty asteroid miners, with tethered drill crews, ore-hauling tugs, spinning rocks, dust clouds and makeshift bars carved into hollow asteroids.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; move it into an asteroid field with tethered miners, drills, tugs and floating rock dust.",
+      color_and_tone:
+        'Charcoal and iron rock with dusty ochre, harsh white work lights and dark space.',
+      lighting_and_shadow: 'Harsh floodlights and hard sun on tumbling rocks, deep black shadows.',
+      texture_and_material:
+        'Pitted rock, metallic ore veins, grimy suits, drills, tethers and dust.',
+      camera_and_composition: 'Tumbling rocks at many depths with small crews tethered to them.',
+      atmosphere_and_mood: 'Dangerous, grimy and blue-collar, hard work at the edge of nothing.',
+      rendering_and_quality:
+        'Gritty high-contrast illustration with floating dust particles and harsh work light.',
+      creative_brief:
+        "Asteroidpunk: gritty asteroid miners, with tethered drill crews, ore-hauling tugs, spinning rocks, dust clouds and makeshift bars carved into hollow asteroids. Carry it through tethered drill crews, tumbling asteroids, ore tugs, floating dust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'tethered drill crews; tumbling asteroids; ore tugs; floating dust',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-257',
+    name: 'Cosmonautpunk',
+    displayName: 'Cosmonautpunk',
+    styleAnchors: ['Cosmonautpunk', 'retro space program punk', 'orange pressure suits'],
+    category: '9. Space, Atomic & Ray Punks',
+    domain: 'retro space program punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real space agency insignia, real brand or company logo, franchise spaceship design, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cosmonautpunk: a bold retro space program built on grit, with orange pressure suits, round capsule hatches, heroic poster-like compositions and brutal launch complexes.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; give it retro space-program gear, capsule hardware and heroic launch complexes.",
+      color_and_tone:
+        'Signal orange suits, olive and steel grey hardware with red accents and pale sky.',
+      lighting_and_shadow: 'Strong flat daylight or launch flames lighting figures from below.',
+      texture_and_material:
+        'Canvas pressure suits, riveted capsules, round portholes, concrete and steel.',
+      camera_and_composition: 'Low heroic angles with figures looking up at towering rockets.',
+      atmosphere_and_mood: 'Heroic, stubborn and brave, space reached with hammers and courage.',
+      rendering_and_quality: 'Bold graphic illustration with poster-like heroic framing and grit.',
+      creative_brief:
+        "Cosmonautpunk: a bold retro space program built on grit, with orange pressure suits, round capsule hatches, heroic poster-like compositions and brutal launch complexes. Carry it through orange pressure suits, round capsule hatches, heroic angles, launch complexes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'orange pressure suits; round capsule hatches; heroic angles; launch complexes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-258',
+    name: 'Megastructurepunk',
+    displayName: 'Megastructurepunk',
+    styleAnchors: ['Megastructurepunk', 'space megastructure punk', 'ring worlds'],
+    category: '9. Space, Atomic & Ray Punks',
+    domain: 'space megastructure punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real space agency insignia, real brand or company logo, franchise spaceship design, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Megastructurepunk: life on and inside colossal space megastructures, with ring worlds, star-sized shells, endless trusses and cities built into the seams.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; place it on or inside a colossal space megastructure that dwarfs everything.",
+      color_and_tone:
+        'Steel grey and bronze structure against star light with deep blue space and warm city glows.',
+      lighting_and_shadow:
+        'Starlight raking across enormous trusses, cities glowing in the shadows.',
+      texture_and_material:
+        'Endless trusses, hull plating, cables, landscapes laid on metal and haze.',
+      camera_and_composition:
+        'Impossible scale with horizons curving up into the sky and tiny figures.',
+      atmosphere_and_mood: 'Overwhelming and humbling, people as dust on the work of giants.',
+      rendering_and_quality:
+        'Epic detailed illustration with atmospheric scale and fine structure.',
+      creative_brief:
+        "Megastructurepunk: life on and inside colossal space megastructures, with ring worlds, star-sized shells, endless trusses and cities built into the seams. Carry it through ring worlds, endless trusses, upward-curving horizons, cities in seams. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'ring worlds; endless trusses; upward-curving horizons; cities in seams',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-259',
+    name: 'Cometpunk',
+    displayName: 'Cometpunk',
+    styleAnchors: ['Cometpunk', 'comet rider punk', 'comet villages'],
+    category: '9. Space, Atomic & Ray Punks',
+    domain: 'comet rider punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real space agency insignia, real brand or company logo, franchise spaceship design, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cometpunk: nomads who ride and live on comets, with ice-cave homes, glowing tails, anchor harpoons and villages carried through the solar system.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; set it on a comet's icy surface or glowing tail, with nomad camps and harpoon anchors.",
+      color_and_tone:
+        'Icy white and cold blue with glowing cyan and gold tails against deep space.',
+      lighting_and_shadow: 'Blazing sun on ice, glowing tail light washing across the surface.',
+      texture_and_material: 'Dirty ice, dust jets, frost-crusted gear, harpoon cables and tents.',
+      camera_and_composition: 'Figures on the comet with the tail streaming dramatically behind.',
+      atmosphere_and_mood: 'Wild, free and wandering, a village on a shooting star.',
+      rendering_and_quality: 'Luminous illustration with glowing tail streams and icy detail.',
+      creative_brief:
+        "Cometpunk: nomads who ride and live on comets, with ice-cave homes, glowing tails, anchor harpoons and villages carried through the solar system. Carry it through comet villages, glowing tails, ice caves, harpoon anchors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'comet villages; glowing tails; ice caves; harpoon anchors',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-260',
+    name: 'Zero-G Punk',
+    displayName: 'Zero-G Punk',
+    styleAnchors: ['Zero-G Punk', 'weightless life punk', 'floating objects'],
+    category: '9. Space, Atomic & Ray Punks',
+    domain: 'weightless life punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real space agency insignia, real brand or company logo, franchise spaceship design, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Zero-G Punk: a culture born in weightlessness, with floating hair, drifting objects, strap tethers, spherical rooms and people living upside down and sideways.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; make it weightless, with figures, liquids and objects floating freely in every direction.",
+      color_and_tone:
+        'Soft whites and pale greys with bright floating objects and blue Earth light.',
+      lighting_and_shadow:
+        'Soft even interior light with floating objects casting small scattered shadows.',
+      texture_and_material: 'Floating water spheres, loose hair, fabric, tethers and padded walls.',
+      camera_and_composition:
+        'Rotated compositions with no clear up or down and objects everywhere.',
+      atmosphere_and_mood: 'Playful, dreamy and strange, a life without a floor.',
+      rendering_and_quality: 'Clean airy illustration with floating objects and water spheres.',
+      creative_brief:
+        "Zero-G Punk: a culture born in weightlessness, with floating hair, drifting objects, strap tethers, spherical rooms and people living upside down and sideways. Carry it through floating objects, drifting hair, water spheres, no up or down. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'floating objects; drifting hair; water spheres; no up or down',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-261',
+    name: 'Solarsailpunk',
+    displayName: 'Solarsailpunk',
+    styleAnchors: ['Solarsailpunk', 'solar sail voyager punk', 'mirror sails'],
+    category: '9. Space, Atomic & Ray Punks',
+    domain: 'solar sail voyager punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real space agency insignia, real brand or company logo, franchise spaceship design, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Solarsailpunk: voyagers who cross space on vast solar sails, with gossamer mirror sheets, rigging lines, sail-crews in harnesses and ships pushed by sunlight.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; bring in vast shimmering solar sails, rigging lines and crews working the sails in space.",
+      color_and_tone:
+        'Shimmering gold and silver sails with deep space black and bright sun white.',
+      lighting_and_shadow: 'Blazing sunlight reflecting off vast mirror sails, rim-lit crews.',
+      texture_and_material:
+        'Gossamer mirror film, thin rigging, harnesses, carbon spars and starlight.',
+      camera_and_composition:
+        'Huge sails filling the frame with tiny crew figures along the rigging.',
+      atmosphere_and_mood: 'Graceful, romantic and adventurous, sailing the sea of light.',
+      rendering_and_quality:
+        'Luminous elegant illustration with reflective sails and fine rigging.',
+      creative_brief:
+        "Solarsailpunk: voyagers who cross space on vast solar sails, with gossamer mirror sheets, rigging lines, sail-crews in harnesses and ships pushed by sunlight. Carry it through mirror sails, fine rigging, harnessed sail crews, sun-pushed ships. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'mirror sails; fine rigging; harnessed sail crews; sun-pushed ships',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-262',
+    name: 'Nebulapunk',
+    displayName: 'Nebulapunk',
+    styleAnchors: ['Nebulapunk', 'nebula-dwelling cosmic punk', 'glowing gas clouds'],
+    category: '9. Space, Atomic & Ray Punks',
+    domain: 'nebula-dwelling cosmic punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real space agency insignia, real brand or company logo, franchise spaceship design, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Nebulapunk: drifters living inside glowing nebulae, with gas-harvesting ships, cloud-lit stations, star nurseries and skies of swirling cosmic color.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; immerse it inside a glowing nebula, with gas clouds, newborn stars and drifting ships.",
+      color_and_tone:
+        'Vivid magenta, teal, violet and gold gas clouds with bright white newborn stars.',
+      lighting_and_shadow:
+        'Soft glowing light from all directions through colored gas, bright star points.',
+      texture_and_material:
+        'Billowing gas, dust lanes, sparkling star fields and smooth ship hulls.',
+      camera_and_composition: 'Vast cloud pillars with small ships and stations for scale.',
+      atmosphere_and_mood: 'Dreamlike and cosmic, living inside the birthplace of stars.',
+      rendering_and_quality:
+        'Luminous painterly illustration with glowing gas and fine star detail.',
+      creative_brief:
+        "Nebulapunk: drifters living inside glowing nebulae, with gas-harvesting ships, cloud-lit stations, star nurseries and skies of swirling cosmic color. Carry it through glowing gas clouds, newborn stars, drifting ships, cosmic color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'glowing gas clouds; newborn stars; drifting ships; cosmic color',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-263',
+    name: 'Space Truckerpunk',
+    displayName: 'Space Truckerpunk',
+    styleAnchors: ['Space Truckerpunk', 'interplanetary hauler punk', 'cargo rigs'],
+    category: '9. Space, Atomic & Ray Punks',
+    domain: 'interplanetary hauler punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real space agency insignia, real brand or company logo, franchise spaceship design, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Space Truckerpunk: blue-collar haulers of the space lanes, with battered cargo rigs, cab kitchens, truck-stop stations, coffee in zero-g and long lonely routes.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; turn it into interplanetary hauling life with battered cargo rigs, cabs and truck-stop stations.",
+      color_and_tone: 'Scuffed industrial yellow and grey with warm cab lights and cold starlight.',
+      lighting_and_shadow: 'Warm dashboard glow inside cabs, harsh work lights outside.',
+      texture_and_material:
+        'Scratched hull paint, cargo containers, worn seats, coffee stains and cables.',
+      camera_and_composition:
+        'Cab interiors with windows full of space and long rigs pulling cargo.',
+      atmosphere_and_mood: 'Lonely, funny and hardworking, truckers of the stars.',
+      rendering_and_quality: 'Gritty warm illustration with lived-in cab detail and starlight.',
+      creative_brief:
+        "Space Truckerpunk: blue-collar haulers of the space lanes, with battered cargo rigs, cab kitchens, truck-stop stations, coffee in zero-g and long lonely routes. Carry it through cargo rigs, cab kitchens, truck-stop stations, long routes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'cargo rigs; cab kitchens; truck-stop stations; long routes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-264',
+    name: 'Terraformpunk',
+    displayName: 'Terraformpunk',
+    styleAnchors: ['Terraformpunk', 'planet terraforming punk', 'atmosphere factories'],
+    category: '9. Space, Atomic & Ray Punks',
+    domain: 'planet terraforming punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real space agency insignia, real brand or company logo, franchise spaceship design, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Terraformpunk: engineers remaking dead worlds, with atmosphere factories, first rains, seeded forests, comet-ice lakes and colossal weather machines.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; set it on a world mid-terraform, half dead rock and half new life and weather.",
+      color_and_tone:
+        'Barren rust and grey meeting fresh green, new blue water and hazy young skies.',
+      lighting_and_shadow: 'Hazy young sunlight through forming clouds, first rain glints.',
+      texture_and_material: 'Barren rock, moss spreading, factory towers, new water and mist.',
+      camera_and_composition:
+        'Split landscapes with dead and living halves meeting across the frame.',
+      atmosphere_and_mood: 'Hopeful and colossal, a whole world being born by hand.',
+      rendering_and_quality: 'Epic detailed illustration with contrasting landscapes and weather.',
+      creative_brief:
+        "Terraformpunk: engineers remaking dead worlds, with atmosphere factories, first rains, seeded forests, comet-ice lakes and colossal weather machines. Carry it through atmosphere factories, first rain, spreading green, weather machines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'atmosphere factories; first rain; spreading green; weather machines',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-265',
+    name: 'Gas Giantpunk',
+    displayName: 'Gas Giantpunk',
+    styleAnchors: ['Gas Giantpunk', 'gas giant refinery punk', 'floating refineries'],
+    category: '9. Space, Atomic & Ray Punks',
+    domain: 'gas giant refinery punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real space agency insignia, real brand or company logo, franchise spaceship design, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gas Giantpunk: floating refinery towns in the endless clouds of gas giants, with balloon platforms, lightning harvesters and storms the size of planets below.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; float it among the vast banded clouds of a gas giant, on balloon platforms and refineries.",
+      color_and_tone:
+        'Banded ochre, cream, rust and storm orange clouds with deep shadowed depths.',
+      lighting_and_shadow:
+        'Warm diffused light through thick clouds and flashes of deep lightning.',
+      texture_and_material:
+        'Billowing clouds, balloon fabric, refinery pipes, cables and wet metal.',
+      camera_and_composition:
+        'Floating platforms with endless cloud horizons and giant storms below.',
+      atmosphere_and_mood: 'Dizzying and industrial, towns floating over a bottomless sky.',
+      rendering_and_quality: 'Painterly atmospheric illustration with banded clouds and scale.',
+      creative_brief:
+        "Gas Giantpunk: floating refinery towns in the endless clouds of gas giants, with balloon platforms, lightning harvesters and storms the size of planets below. Carry it through floating refineries, banded clouds, lightning harvesters, endless depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'floating refineries; banded clouds; lightning harvesters; endless depth',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-266',
+    name: 'Launchpadpunk',
+    displayName: 'Launchpadpunk',
+    styleAnchors: ['Launchpadpunk', 'rocket launch culture punk', 'steel gantries'],
+    category: '9. Space, Atomic & Ray Punks',
+    domain: 'rocket launch culture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real space agency insignia, real brand or company logo, franchise spaceship design, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Launchpadpunk: towns built around rocket launch sites, with steel gantries, exhaust plumes, crowds on beaches, countdown rituals and roaring ignitions.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; place it near a rocket launch, with gantries, exhaust plumes and watching crowds.",
+      color_and_tone:
+        'Blinding white-orange exhaust against blue sky, steel grey gantries and sandy tones.',
+      lighting_and_shadow:
+        'Intense exhaust glow lighting faces and landscapes from below and behind.',
+      texture_and_material:
+        'Steel gantries, billowing smoke, frost-covered tanks, sand and concrete.',
+      camera_and_composition: 'Low wide views of rockets rising above crowds and plumes.',
+      atmosphere_and_mood: 'Thundering, hopeful and emotional, everyone looking up at once.',
+      rendering_and_quality: 'Dramatic illustration with glowing plumes and powerful scale.',
+      creative_brief:
+        "Launchpadpunk: towns built around rocket launch sites, with steel gantries, exhaust plumes, crowds on beaches, countdown rituals and roaring ignitions. Carry it through steel gantries, exhaust plumes, watching crowds, roaring ignition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'steel gantries; exhaust plumes; watching crowds; roaring ignition',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-267',
+    name: 'Generation Shippunk',
+    displayName: 'Generation Shippunk',
+    styleAnchors: ['Generation Shippunk', 'multi-generation ark ship punk', 'farm decks'],
+    category: '9. Space, Atomic & Ray Punks',
+    domain: 'multi-generation ark ship punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real space agency insignia, real brand or company logo, franchise spaceship design, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Generation Shippunk: life inside vast ark ships traveling for centuries, with farm decks, forgotten corridors, ship-born cultures and a destination nobody alive will see.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; set it inside a huge centuries-old ark ship with farm decks, worn corridors and ship-born people.",
+      color_and_tone: 'Aged metal greys and warm grow-light gold with lush greens and faded paint.',
+      lighting_and_shadow:
+        'Artificial daylight panels over farms and dim flickering corridors beyond.',
+      texture_and_material:
+        'Worn metal decks, soil beds, handmade repairs, faded murals and vines.',
+      camera_and_composition: 'Long interior perspectives and cylinder farms curving overhead.',
+      atmosphere_and_mood: 'Melancholy and resilient, a world inside a journey.',
+      rendering_and_quality:
+        'Richly detailed illustration with deep interiors and warm grow-light.',
+      creative_brief:
+        "Generation Shippunk: life inside vast ark ships traveling for centuries, with farm decks, forgotten corridors, ship-born cultures and a destination nobody alive will see. Carry it through farm decks, worn corridors, ship-born cultures, curving interiors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'farm decks; worn corridors; ship-born cultures; curving interiors',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-268',
+    name: 'Bunkerpunk',
+    displayName: 'Bunkerpunk',
+    styleAnchors: ['Bunkerpunk', 'atomic fallout shelter punk', 'concrete bunkers'],
+    category: '9. Space, Atomic & Ray Punks',
+    domain: 'atomic fallout shelter punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real space agency insignia, real brand or company logo, franchise spaceship design, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bunkerpunk: atomic-age fallout shelter culture, with concrete bunkers, canned-food walls, periscopes, hand-crank radios and families waiting underground.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; move it underground into a mid-century fallout shelter full of cans, bunks and crank machines.",
+      color_and_tone: 'Concrete grey, army green and mustard yellow with warm bulb light and rust.',
+      lighting_and_shadow: 'A single bulb or lantern in a low concrete room, deep corners.',
+      texture_and_material:
+        'Poured concrete, canned goods, steel bunks, wool blankets and heavy doors.',
+      camera_and_composition: 'Low cramped rooms with families gathered around a small light.',
+      atmosphere_and_mood: 'Tense, cozy and absurd, waiting out the end of the world.',
+      rendering_and_quality: 'Warm gritty mid-century illustration with dense shelter detail.',
+      creative_brief:
+        "Bunkerpunk: atomic-age fallout shelter culture, with concrete bunkers, canned-food walls, periscopes, hand-crank radios and families waiting underground. Carry it through concrete bunkers, canned-food walls, periscopes, crank radios. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'concrete bunkers; canned-food walls; periscopes; crank radios',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-269',
+    name: 'Reactorpunk',
+    displayName: 'Reactorpunk',
+    styleAnchors: ['Reactorpunk', 'atomic reactor culture punk', 'Cherenkov blue glow'],
+    category: '9. Space, Atomic & Ray Punks',
+    domain: 'atomic reactor culture punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real space agency insignia, real brand or company logo, franchise spaceship design, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Reactorpunk: a culture built around glowing reactors, with blue Cherenkov pools, heavy radiation suits, control rods, cooling towers and reverent technicians.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; bring in glowing reactor pools, radiation suits, control rods and cooling towers.",
+      color_and_tone:
+        'Intense Cherenkov blue glow against steel grey, hazard yellow and white suits.',
+      lighting_and_shadow: 'Eerie blue underwater glow lighting faces and huge steel halls.',
+      texture_and_material:
+        'Deep clear water, steel grating, lead doors, rubber suits and concrete.',
+      camera_and_composition: 'Looking down into glowing pools or up at vast cooling towers.',
+      atmosphere_and_mood: 'Awe-struck and dangerous, a temple built around a caged star.',
+      rendering_and_quality:
+        'High-contrast glowing illustration with crisp industrial detail and blue glow.',
+      creative_brief:
+        "Reactorpunk: a culture built around glowing reactors, with blue Cherenkov pools, heavy radiation suits, control rods, cooling towers and reverent technicians. Carry it through Cherenkov blue glow, radiation suits, control rods, cooling towers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Cherenkov blue glow; radiation suits; control rods; cooling towers',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

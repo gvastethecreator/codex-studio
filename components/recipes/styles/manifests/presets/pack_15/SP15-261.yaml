@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-261
+packId: pack_15
+name: Solarsailpunk
+styleAnchors:
+  - Solarsailpunk
+  - solar sail voyager punk
+  - mirror sails
+displayName: Solarsailpunk
+category: 9. Space, Atomic & Ray Punks
+domain: solar sail voyager punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - space-atomic-and-ray-punks
+  - solarsailpunk
+  - punk
+  - space
+visualDna:
+  aesthetic: 'Solarsailpunk: voyagers who cross space on vast solar sails, with gossamer mirror sheets, rigging lines, sail-crews in harnesses and ships pushed by sunlight.'
+  subject_treatment: Keep the prompt's subject and setting; bring in vast shimmering solar sails, rigging lines and crews working the sails in space.
+  color_and_tone: Shimmering gold and silver sails with deep space black and bright sun white.
+  lighting_and_shadow: Blazing sunlight reflecting off vast mirror sails, rim-lit crews.
+  texture_and_material: Gossamer mirror film, thin rigging, harnesses, carbon spars and starlight.
+  camera_and_composition: Huge sails filling the frame with tiny crew figures along the rigging.
+  atmosphere_and_mood: Graceful, romantic and adventurous, sailing the sea of light.
+  rendering_and_quality: Luminous elegant illustration with reflective sails and fine rigging.
+  creative_brief: "Solarsailpunk: voyagers who cross space on vast solar sails, with gossamer mirror sheets, rigging lines, sail-crews in harnesses and ships pushed by sunlight. Carry it through mirror sails, fine rigging, harnessed sail crews, sun-pushed ships. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: mirror sails; fine rigging; harnessed sail crews; sun-pushed ships
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real space agency insignia
+  - real brand or company logo
+  - franchise spaceship design
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real space agency insignia, real brand or company logo, franchise spaceship design, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: space-atomic-and-ray-punks
+  categoryName: 9. Space, Atomic & Ray Punks
+  tags:
+    - curation-v2
+    - space-atomic-and-ray-punks
+    - solarsailpunk
+    - punk
+    - space
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: solar sail voyager punk

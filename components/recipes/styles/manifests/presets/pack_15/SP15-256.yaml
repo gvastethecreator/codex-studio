@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-256
+packId: pack_15
+name: Asteroidpunk
+styleAnchors:
+  - Asteroidpunk
+  - asteroid miner punk
+  - tethered drill crews
+displayName: Asteroidpunk
+category: 9. Space, Atomic & Ray Punks
+domain: asteroid miner punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - space-atomic-and-ray-punks
+  - asteroidpunk
+  - punk
+  - space
+visualDna:
+  aesthetic: 'Asteroidpunk: gritty asteroid miners, with tethered drill crews, ore-hauling tugs, spinning rocks, dust clouds and makeshift bars carved into hollow asteroids.'
+  subject_treatment: Keep the prompt's subject and setting; move it into an asteroid field with tethered miners, drills, tugs and floating rock dust.
+  color_and_tone: Charcoal and iron rock with dusty ochre, harsh white work lights and dark space.
+  lighting_and_shadow: Harsh floodlights and hard sun on tumbling rocks, deep black shadows.
+  texture_and_material: Pitted rock, metallic ore veins, grimy suits, drills, tethers and dust.
+  camera_and_composition: Tumbling rocks at many depths with small crews tethered to them.
+  atmosphere_and_mood: Dangerous, grimy and blue-collar, hard work at the edge of nothing.
+  rendering_and_quality: Gritty high-contrast illustration with floating dust particles and harsh work light.
+  creative_brief: "Asteroidpunk: gritty asteroid miners, with tethered drill crews, ore-hauling tugs, spinning rocks, dust clouds and makeshift bars carved into hollow asteroids. Carry it through tethered drill crews, tumbling asteroids, ore tugs, floating dust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: tethered drill crews; tumbling asteroids; ore tugs; floating dust
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real space agency insignia
+  - real brand or company logo
+  - franchise spaceship design
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real space agency insignia, real brand or company logo, franchise spaceship design, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: space-atomic-and-ray-punks
+  categoryName: 9. Space, Atomic & Ray Punks
+  tags:
+    - curation-v2
+    - space-atomic-and-ray-punks
+    - asteroidpunk
+    - punk
+    - space
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: asteroid miner punk

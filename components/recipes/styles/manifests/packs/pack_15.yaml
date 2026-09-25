@@ -198,6 +198,22 @@ categories:
       - pack_15/SP15-118.yaml
       - pack_15/SP15-119.yaml
       - pack_15/SP15-120.yaml
+      - pack_15/SP15-254.yaml
+      - pack_15/SP15-255.yaml
+      - pack_15/SP15-256.yaml
+      - pack_15/SP15-257.yaml
+      - pack_15/SP15-258.yaml
+      - pack_15/SP15-259.yaml
+      - pack_15/SP15-260.yaml
+      - pack_15/SP15-261.yaml
+      - pack_15/SP15-262.yaml
+      - pack_15/SP15-263.yaml
+      - pack_15/SP15-264.yaml
+      - pack_15/SP15-265.yaml
+      - pack_15/SP15-266.yaml
+      - pack_15/SP15-267.yaml
+      - pack_15/SP15-268.yaml
+      - pack_15/SP15-269.yaml
   - id: primitive-stone-and-salvage-punks
     name: 10. Primitive, Stone & Salvage Punks
     presetRefs:
@@ -368,5 +384,21 @@ presetRefs:
   - pack_15/SP15-118.yaml
   - pack_15/SP15-119.yaml
   - pack_15/SP15-120.yaml
+  - pack_15/SP15-254.yaml
+  - pack_15/SP15-255.yaml
+  - pack_15/SP15-256.yaml
+  - pack_15/SP15-257.yaml
+  - pack_15/SP15-258.yaml
+  - pack_15/SP15-259.yaml
+  - pack_15/SP15-260.yaml
+  - pack_15/SP15-261.yaml
+  - pack_15/SP15-262.yaml
+  - pack_15/SP15-263.yaml
+  - pack_15/SP15-264.yaml
+  - pack_15/SP15-265.yaml
+  - pack_15/SP15-266.yaml
+  - pack_15/SP15-267.yaml
+  - pack_15/SP15-268.yaml
+  - pack_15/SP15-269.yaml
   - pack_15/SP15-121.yaml
   - pack_15/SP15-122.yaml

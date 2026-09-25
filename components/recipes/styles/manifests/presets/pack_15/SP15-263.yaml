@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-263
+packId: pack_15
+name: Space Truckerpunk
+styleAnchors:
+  - Space Truckerpunk
+  - interplanetary hauler punk
+  - cargo rigs
+displayName: Space Truckerpunk
+category: 9. Space, Atomic & Ray Punks
+domain: interplanetary hauler punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - space-atomic-and-ray-punks
+  - space-trucker
+  - punk
+  - space
+visualDna:
+  aesthetic: 'Space Truckerpunk: blue-collar haulers of the space lanes, with battered cargo rigs, cab kitchens, truck-stop stations, coffee in zero-g and long lonely routes.'
+  subject_treatment: Keep the prompt's subject and setting; turn it into interplanetary hauling life with battered cargo rigs, cabs and truck-stop stations.
+  color_and_tone: Scuffed industrial yellow and grey with warm cab lights and cold starlight.
+  lighting_and_shadow: Warm dashboard glow inside cabs, harsh work lights outside.
+  texture_and_material: Scratched hull paint, cargo containers, worn seats, coffee stains and cables.
+  camera_and_composition: Cab interiors with windows full of space and long rigs pulling cargo.
+  atmosphere_and_mood: Lonely, funny and hardworking, truckers of the stars.
+  rendering_and_quality: Gritty warm illustration with lived-in cab detail and starlight.
+  creative_brief: "Space Truckerpunk: blue-collar haulers of the space lanes, with battered cargo rigs, cab kitchens, truck-stop stations, coffee in zero-g and long lonely routes. Carry it through cargo rigs, cab kitchens, truck-stop stations, long routes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: cargo rigs; cab kitchens; truck-stop stations; long routes
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real space agency insignia
+  - real brand or company logo
+  - franchise spaceship design
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real space agency insignia, real brand or company logo, franchise spaceship design, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: space-atomic-and-ray-punks
+  categoryName: 9. Space, Atomic & Ray Punks
+  tags:
+    - curation-v2
+    - space-atomic-and-ray-punks
+    - space-trucker
+    - punk
+    - space
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: interplanetary hauler punk

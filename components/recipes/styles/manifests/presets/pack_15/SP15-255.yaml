@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-255
+packId: pack_15
+name: Marspunk
+styleAnchors:
+  - Marspunk
+  - red planet frontier punk
+  - dust-caked domes
+displayName: Marspunk
+category: 9. Space, Atomic & Ray Punks
+domain: red planet frontier punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - space-atomic-and-ray-punks
+  - marspunk
+  - punk
+  - space
+visualDna:
+  aesthetic: 'Marspunk: a rough frontier culture on the red planet, with dust-caked domes, pressure-suit cowboys, rover caravans, rust storms and a tiny blue Earth in a pink sky.'
+  subject_treatment: Keep the prompt's subject and setting; set it on the red Martian frontier, with domes, rovers, rust dust and pressure suits.
+  color_and_tone: Rust red, ochre and butterscotch sky with dusty whites and cold blue Martian sunsets.
+  lighting_and_shadow: Dim hazy sunlight through dust, blue sunsets and dome glow at night.
+  texture_and_material: Rust dust, cracked regolith, scuffed suit fabric, dome glass and rover tires.
+  camera_and_composition: Wide frontier landscapes with small domes and caravans under huge skies.
+  atmosphere_and_mood: Tough, lonely and pioneering, a wild west under a pink sky.
+  rendering_and_quality: Dusty cinematic illustration with hazy depth and fine rust grain.
+  creative_brief: "Marspunk: a rough frontier culture on the red planet, with dust-caked domes, pressure-suit cowboys, rover caravans, rust storms and a tiny blue Earth in a pink sky. Carry it through dust-caked domes, rover caravans, rust storms, tiny blue Earth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: dust-caked domes; rover caravans; rust storms; tiny blue Earth
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real space agency insignia
+  - real brand or company logo
+  - franchise spaceship design
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real space agency insignia, real brand or company logo, franchise spaceship design, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: space-atomic-and-ray-punks
+  categoryName: 9. Space, Atomic & Ray Punks
+  tags:
+    - curation-v2
+    - space-atomic-and-ray-punks
+    - marspunk
+    - punk
+    - space
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: red planet frontier punk

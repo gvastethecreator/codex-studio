@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-254
+packId: pack_15
+name: Orbitalpunk
+styleAnchors:
+  - Orbitalpunk
+  - orbital ring habitat punk
+  - spinning habitat rings
+displayName: Orbitalpunk
+category: 9. Space, Atomic & Ray Punks
+domain: orbital ring habitat punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - space-atomic-and-ray-punks
+  - orbitalpunk
+  - punk
+  - space
+visualDna:
+  aesthetic: 'Orbitalpunk: working-class life on crowded orbital rings and stations, with spinning habitat wheels, patched modules, laundry in zero wind and the planet always below.'
+  subject_treatment: Keep the prompt's subject and setting; move it onto a crowded spinning orbital habitat with the planet curving below the windows.
+  color_and_tone: Worn white and grey modules, blue planet glow and warm interior lights against black space.
+  lighting_and_shadow: Hard unfiltered sunlight and deep space shadow, softened by planet glow.
+  texture_and_material: Scuffed composite panels, patched insulation, handrails, cables and small portholes.
+  camera_and_composition: Curved horizons of habitat rings with the planet filling half the frame.
+  atmosphere_and_mood: Cramped, lively and fragile, a neighborhood spinning above the world.
+  rendering_and_quality: Clean detailed illustration with crisp hard light and planet glow.
+  creative_brief: "Orbitalpunk: working-class life on crowded orbital rings and stations, with spinning habitat wheels, patched modules, laundry in zero wind and the planet always below. Carry it through spinning habitat rings, patched modules, planet below, crowded neighborhoods. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: spinning habitat rings; patched modules; planet below; crowded neighborhoods
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real space agency insignia
+  - real brand or company logo
+  - franchise spaceship design
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real space agency insignia, real brand or company logo, franchise spaceship design, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: space-atomic-and-ray-punks
+  categoryName: 9. Space, Atomic & Ray Punks
+  tags:
+    - curation-v2
+    - space-atomic-and-ray-punks
+    - orbitalpunk
+    - punk
+    - space
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: orbital ring habitat punk

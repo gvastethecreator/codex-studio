@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP15-264
+packId: pack_15
+name: Terraformpunk
+styleAnchors:
+  - Terraformpunk
+  - planet terraforming punk
+  - atmosphere factories
+displayName: Terraformpunk
+category: 9. Space, Atomic & Ray Punks
+domain: planet terraforming punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - space-atomic-and-ray-punks
+  - terraformpunk
+  - punk
+  - space
+visualDna:
+  aesthetic: 'Terraformpunk: engineers remaking dead worlds, with atmosphere factories, first rains, seeded forests, comet-ice lakes and colossal weather machines.'
+  subject_treatment: Keep the prompt's subject and setting; set it on a world mid-terraform, half dead rock and half new life and weather.
+  color_and_tone: Barren rust and grey meeting fresh green, new blue water and hazy young skies.
+  lighting_and_shadow: Hazy young sunlight through forming clouds, first rain glints.
+  texture_and_material: Barren rock, moss spreading, factory towers, new water and mist.
+  camera_and_composition: Split landscapes with dead and living halves meeting across the frame.
+  atmosphere_and_mood: Hopeful and colossal, a whole world being born by hand.
+  rendering_and_quality: Epic detailed illustration with contrasting landscapes and weather.
+  creative_brief: "Terraformpunk: engineers remaking dead worlds, with atmosphere factories, first rains, seeded forests, comet-ice lakes and colossal weather machines. Carry it through atmosphere factories, first rain, spreading green, weather machines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: atmosphere factories; first rain; spreading green; weather machines
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - real space agency insignia
+  - real brand or company logo
+  - franchise spaceship design
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, real space agency insignia, real brand or company logo, franchise spaceship design, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: space-atomic-and-ray-punks
+  categoryName: 9. Space, Atomic & Ray Punks
+  tags:
+    - curation-v2
+    - space-atomic-and-ray-punks
+    - terraformpunk
+    - punk
+    - space
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: planet terraforming punk
